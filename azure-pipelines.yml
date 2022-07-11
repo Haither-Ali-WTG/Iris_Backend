@@ -1,0 +1,29 @@
+---
+# Configuration for Azure DevOps build pipeline
+trigger: none
+
+variables:
+- template: artifacts.yml
+
+stages:
+- stage: Tests_and_lint
+  pool: cicd
+  jobs:
+  - job: Tests_and_lint
+    steps:
+    - script: |
+        set -euxo pipefail
+        pip install -r requirements.txt
+      displayName: 'Install requirements'
+
+
+- stage: Simulations
+  dependsOn: [Tests_and_lint]
+  pool: simulations
+  jobs:
+  - job: Simulation
+    steps:
+    - script: |
+        set -euxo pipefail
+        pip install -r requirements.txt
+      displayName: 'Install requirements'
