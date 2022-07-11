@@ -1,0 +1,15 @@
+# required for Iris run
+ansible
+
+# required for tests:
+ansible-lint
+bandit
+mypy
+nose
+pylint
+safety
+yamllint
+
+# required for shell scripts
+jq
+yq
