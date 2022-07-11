@@ -1,0 +1,4 @@
+---
+- name: List of Buckets to add
+  debug:
+    msg: Config will live here

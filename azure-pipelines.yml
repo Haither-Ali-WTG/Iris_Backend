@@ -6,20 +6,20 @@ variables:
 - template: artifacts.yml
 
 stages:
-- stage: Tests_and_lint
-  pool: cicd
-  jobs:
-  - job: Tests_and_lint
-    steps:
-    - script: |
-        set -euxo pipefail
-        pip install -r requirements.txt
-      displayName: 'Install requirements'
+# - stage: Tests_and_lint
+#   pool: cicd
+#   jobs:
+#   - job: Tests_and_lint
+#     steps:
+#     - script: |
+#         set -euxo pipefail
+#         pip install -r requirements.txt
+#       displayName: 'Install requirements'
 
 
 - stage: Simulations
-  dependsOn: [Tests_and_lint]
-  pool: simulations
+  # dependsOn: [Tests_and_lint]
+  pool: cicd
   jobs:
   - job: Simulation
     steps:
@@ -27,3 +27,16 @@ stages:
         set -euxo pipefail
         pip install -r requirements.txt
       displayName: 'Install requirements'
+
+    - task: Ansible@0
+      displayName: 'Test haproxy'
+      inputs:
+        ansibleInterface: 'agentMachine'
+        playbookPathOnAgentMachine: 'ansible/test_haproxy.yaml'
+        inventoriesAgentMachine: 'file'
+        failOnStdErr: false
+        args: >-
+          -u $(user) --diff
+          -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+          -i instances/au1-prod-frontend-1.yml
+          -i instances/au2-prod-ceph-1.ym
