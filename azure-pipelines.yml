@@ -6,6 +6,8 @@ variables:
 - template: artifacts.yml
 - name: user
   value: dante
+- name: inventories
+  value: ~
 
 stages:
 # - stage: Tests_and_lint
@@ -32,13 +34,14 @@ stages:
       displayName: 'Install requirements'
 
     - script: |
-        inventory_list = ""
+        inventory_list=""
         inventory_dir=instances
         for entry in "$inventory_dir"/*
         do
           inventory_list="${inventory_list} -i ${entry}"
         done
-        echo $inventory_list
+        echo ${inventory_list}
+        echo "##vso[task.setvariable variable=inventories]$inventory_list"
       displayName: Read all inventory files from instances folder
 
     - task: Ansible@0
@@ -50,7 +53,7 @@ stages:
         args: >-
           -u $(user) --diff
           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          $(inventory_list)
+          $(inventories)
 
         # -i instances/au1-prod-frontend-1.yml
         # -i instances/au2-prod-ceph-1.yml
