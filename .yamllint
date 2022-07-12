@@ -10,7 +10,8 @@ rules:
       - 'true'
       - 'false'
   indentation:
-    indent-sequences: consistent
+    spaces: consistent
+    indent-sequences: true
   octal-values:
     forbid-implicit-octal: true
     forbid-explicit-octal: false
