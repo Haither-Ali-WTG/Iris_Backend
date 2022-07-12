@@ -67,7 +67,7 @@ stages:
 
   - stage: Simulations
     dependsOn: [Tests_and_lint]
-    pool: simulations
+    pool: cicd
     jobs:
       - job: Simulation
         steps:
