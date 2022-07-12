@@ -4,6 +4,8 @@ trigger: none
 
 variables:
 - template: artifacts.yml
+- name: user
+  value: dante
 
 stages:
 # - stage: Tests_and_lint
