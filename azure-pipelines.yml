@@ -35,7 +35,6 @@ stages:
       inputs:
         ansibleInterface: 'agentMachine'
         playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
-        inventoriesAgentMachine: 'file'
         failOnStdErr: false
         args: >-
           -u $(user) --diff
