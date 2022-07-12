@@ -34,7 +34,7 @@ stages:
       displayName: 'Test haproxy'
       inputs:
         ansibleInterface: 'agentMachine'
-        playbookPathOnAgentMachine: 'ansible/test_haproxy.yaml'
+        playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
         inventoriesAgentMachine: 'file'
         failOnStdErr: false
         args: >-
