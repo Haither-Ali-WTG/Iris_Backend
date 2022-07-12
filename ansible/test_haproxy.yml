@@ -1,0 +1,6 @@
+---
+- hosts: all
+  strategy: free
+  gather_facts: no
+  roles:
+    - generate_config

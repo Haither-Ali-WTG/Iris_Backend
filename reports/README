@@ -1,0 +1,4 @@
+This directory contains the reports from tests, lint etc.
+
+- nosetests.xml: Test result.
+- coverage.xml: Test coverage summary.
