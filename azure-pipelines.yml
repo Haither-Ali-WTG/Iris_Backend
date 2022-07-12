@@ -35,7 +35,7 @@ stages:
 
     - script: |
         inventory_dir=instances
-        for entry in "$search_dir"/*
+        for entry in "$inventory_dir"/*
         do
           echo "$entry"
         done    
