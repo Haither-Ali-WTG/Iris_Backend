@@ -41,5 +41,3 @@ stages:
         args: >-
           -u $(user) --diff
           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          -i instances/au1-prod-frontend-1.yml
-          -i instances/au2-prod-ceph-1.yml
