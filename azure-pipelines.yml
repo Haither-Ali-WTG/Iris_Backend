@@ -26,10 +26,10 @@ stages:
   jobs:
   - job: Simulation
     steps:
-    # - script: |
-    #     set -euxo pipefail
-    #     pip install -r requirements.txt
-    #   displayName: 'Install requirements'
+    - script: |
+        set -euxo pipefail
+        pip install -r requirements.txt
+      displayName: 'Install requirements'
 
     - script: |
         inventory_list = ""
@@ -39,24 +39,18 @@ stages:
           inventory_list="${inventory_list} -i ${entry}"
         done
         echo $inventory_list
-      displayName: First variable pass
+      displayName: Read all inventory files from instances folder
 
-    # - bash: echo "##vso[task.setvariable variable=inventory_list]secondValue"
-    #   displayName: Set new variable value
+    - task: Ansible@0
+      displayName: 'Test haproxy'
+      inputs:
+        ansibleInterface: 'agentMachine'
+        playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+        failOnStdErr: false
+        args: >-
+          -u $(user) --diff
+          -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+          $(inventory_list)
 
-    # - script: |
-    #     echo $(inventory_list)
-    #   displayName: Second variable pass
-
-
-    # - task: Ansible@0
-    #   displayName: 'Test haproxy'
-    #   inputs:
-    #     ansibleInterface: 'agentMachine'
-    #     playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
-    #     failOnStdErr: false
-    #     args: >-
-    #       -u $(user) --diff
-    #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-    #       -i instances/au1-prod-frontend-1.yml
-    #       -i instances/au2-prod-ceph-1.yml
+        # -i instances/au1-prod-frontend-1.yml
+        # -i instances/au2-prod-ceph-1.yml
