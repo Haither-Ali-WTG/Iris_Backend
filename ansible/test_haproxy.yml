@@ -1,4 +1,12 @@
 ---
 - hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: Add host to hypervisor group
+    add_host:
+      name: "{{ hypervisor | default('localhost') }}"
+      groups: hypervisor
+
+- hosts: hypervisor
   roles:
   - deploy_test_machines

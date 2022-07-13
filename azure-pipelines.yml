@@ -104,6 +104,12 @@ stages:
               sourceFolder: dante
               targetFolder: ansible
 
+          - task: InstallSSHKey@0
+            displayName: 'Install an SSH key'
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'              
+
           - task: Ansible@0
             displayName: 'Test haproxy'
             inputs:
