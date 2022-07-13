@@ -5,7 +5,7 @@ variables:
   #
   # Merge pull request 7053 from dante_artifact_upgrade into master
   # 51af7ec28ecb17c86d8cf0416a06bc8d5814f188
-  dante_build_id: '232237'
+  dante_build_id: '280985'
 
   # virgil 20220704.16
   # Mon Jul  4 05:02:41 UTC 2022 -- Mon Jul  4 15:02:41 AEST 2022

@@ -1,6 +1,5 @@
 ---
-- hosts: all
-  strategy: free
+- hosts: localhost
   gather_facts: no
   roles:
-    - generate_config
+  - deploy_test_machines

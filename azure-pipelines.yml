@@ -101,8 +101,8 @@ stages:
           - task: CopyFiles@2
             displayName: 'Merge artifacts to a single roles folder'
             inputs:
-              sourceFolder: nested_virt
-              targetFolder: ansible-bundle
+              sourceFolder: dante
+              targetFolder: ansible
 
           - task: Ansible@0
             displayName: 'Test haproxy'

@@ -1,0 +1,18 @@
+---
+# - debug:
+#     var: ansible_inventory_sources
+- name: Set simulation parameters
+  set_fact:
+    images_folder: "/mnt/storage"
+
+- include_role:
+    name: ceph_connection_setup
+  vars:
+    proxy_host: "192.168.255.254"
+    proxy_port: "3128"
+
+- name: Download qcow2 required simulation
+  command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+  with_items:
+    - "{{ rhel_hypervisor_image }}"
+    - "{{ ubuntu_hypervisor_image }}"

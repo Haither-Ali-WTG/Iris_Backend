@@ -1,4 +1,5 @@
 ---
 all:
-  hosts:
-    10.61.140.59
+  hosts: ~
+vars:
+  os: ubuntu2204

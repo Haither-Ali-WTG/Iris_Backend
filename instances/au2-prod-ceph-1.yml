@@ -1,4 +1,5 @@
 ---
 all:
-  hosts:
-    10.61.194.16
+  hosts: ~
+vars:
+  os: rhel8
