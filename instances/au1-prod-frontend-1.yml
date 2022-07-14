@@ -1,8 +1,7 @@
 ---
 all:
   children:
-    # Do not change group name. it will be automatically replaced with instance name.
-    dynamic_group_name:
+    au1-prod-frontend-1:
       hosts:
         frontend: ~
       vars:
