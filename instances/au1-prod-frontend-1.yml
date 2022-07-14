@@ -1,7 +1,7 @@
 ---
 all:
   children:
-    au1-prod-frontend-1:
+    au1prodfrontend1:
       hosts:
         frontend: ~
       vars:
