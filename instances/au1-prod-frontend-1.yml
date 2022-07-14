@@ -4,6 +4,6 @@ all:
     # Do not change group name. it will be automatically replaced with instance name.
     dynamic_group_name:
       hosts:
-        frontend:
+        frontend: ~
       vars:
         os: ubuntu2204
