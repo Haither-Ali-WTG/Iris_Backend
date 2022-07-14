@@ -1,8 +1,7 @@
 ---
 all:
   children:
-    # Do not change group name. it will be automatically replaced with instance name.
-    dynamic_group_name:
+    au2-prod-ceph-1:
       hosts:
         ceph: ~
         ceph2: ~
