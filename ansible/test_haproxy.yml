@@ -20,7 +20,8 @@
 
 - hosts: hypervisor
   tasks:
-    - include_role:
+    - name: Setup ceph connection 
+      include_role:
         name: ceph_connection_setup
       vars:
         proxy_host: "192.168.255.254"
@@ -31,12 +32,14 @@
       with_items:
         - "{{ rhel_hypervisor_image }}"
         - "{{ ubuntu_hypervisor_image }}"
+      changed_when: true
 
 
 - hosts: tdd
   gather_facts: no
   tasks:
-    - include_role:
+    - name: Deploy test machines
+      include_role:
         name: deploy_test_machines
         apply:
           delegate_to: "{{ groups['hypervisor'][0] }}"
