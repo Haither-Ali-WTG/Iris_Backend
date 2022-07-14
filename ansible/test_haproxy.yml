@@ -2,41 +2,41 @@
 - hosts: localhost
   gather_facts: no
   tasks:
-  - name: Create group with test machine based on inventory name
-    add_host:
-      name: "{{ item }}"
-      groups: tdd
-      ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-    when: item not in ['all', 'ungrouped']
-    with_items: "{{ groups.keys() }}"
+    - name: Create group with test machine based on inventory name
+      add_host:
+        name: "{{ item }}"
+        groups: tdd
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+      when: item not in ['all', 'ungrouped']
+      with_items: "{{ groups.keys() }}"
 
-  - name: Add host to hypervisor group
-    add_host:
-      name: "{{ hypervisor | default('localhost') }}"
-      groups: hypervisor
-      ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-      images_folder: "/mnt/storage"
+    - name: Add host to hypervisor group
+      add_host:
+        name: "{{ hypervisor | default('localhost') }}"
+        groups: hypervisor
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        images_folder: "/mnt/storage"
 
 
 - hosts: hypervisor
   tasks:
-  - include_role:
-      name: ceph_connection_setup
-    vars:
-      proxy_host: "192.168.255.254"
-      proxy_port: "3128"
+    - include_role:
+        name: ceph_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
 
-  - name: Download qcow2 required simulation
-    command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
-    with_items:
-      - "{{ rhel_hypervisor_image }}"
-      - "{{ ubuntu_hypervisor_image }}"
+    - name: Download qcow2 required simulation
+      command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+      with_items:
+        - "{{ rhel_hypervisor_image }}"
+        - "{{ ubuntu_hypervisor_image }}"
 
 
 - hosts: tdd
   gather_facts: no
   tasks:
-  - include_role:
-      name: deploy_test_machines
-      apply:
-        delegate_to: "{{ groups['hypervisor'][0] }}"
+    - include_role:
+        name: deploy_test_machines
+        apply:
+          delegate_to: "{{ groups['hypervisor'][0] }}"
