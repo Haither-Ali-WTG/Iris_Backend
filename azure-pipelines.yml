@@ -67,7 +67,7 @@ stages:
 
   - stage: Simulations
     dependsOn: [Tests_and_lint]
-    pool: cicd
+    pool: simulations
     jobs:
       - job: Simulation
         steps:
@@ -76,16 +76,43 @@ stages:
               pip install -r requirements.txt
             displayName: 'Install requirements'
 
+          # We replace dynamic_group_name in inventory with file name
+          # This is done to minimise probability of human error.
+          # The alternative would be to ask people to use unique group names for each inventory
           - script: |
               inventory_list=""
               inventory_dir=instances
               for entry in "$inventory_dir"/*
               do
                 inventory_list="${inventory_list} -i ${entry}"
+                sed -i "s/dynamic_group_name/${entry##*/}/" ${entry}
               done
               echo ${inventory_list}
               echo "##vso[task.setvariable variable=inventories]$inventory_list"
-            displayName: Read all inventory files from instances folder
+            displayName: Patch inventory group names with filename
+
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
+
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: dante
+              targetFolder: ansible
+
+          - task: InstallSSHKey@0
+            displayName: 'Install an SSH key'
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'
 
           - task: Ansible@0
             displayName: 'Test haproxy'

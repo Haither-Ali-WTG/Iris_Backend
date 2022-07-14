@@ -1,6 +1,45 @@
 ---
-- hosts: all
-  strategy: free
+- hosts: localhost
   gather_facts: no
-  roles:
-    - generate_config
+  tasks:
+    - name: Create group with test machine based on inventory name
+      add_host:
+        name: "{{ item }}"
+        groups: tdd
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+      when: item not in ['all', 'ungrouped']
+      with_items: "{{ groups.keys() }}"
+
+    - name: Add host to hypervisor group
+      add_host:
+        name: "{{ hypervisor | default('localhost') }}"
+        groups: hypervisor
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        images_folder: "/mnt/storage"
+
+
+- hosts: hypervisor
+  tasks:
+    - name: Setup ceph connection
+      include_role:
+        name: ceph_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
+
+    - name: Download qcow2 required simulation
+      command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+      with_items:
+        - "{{ rhel_hypervisor_image }}"
+        - "{{ ubuntu_hypervisor_image }}"
+      changed_when: true
+
+
+- hosts: tdd
+  gather_facts: no
+  tasks:
+    - name: Deploy test machines
+      include_role:
+        name: deploy_test_machines
+        apply:
+          delegate_to: "{{ groups['hypervisor'][0] }}"
