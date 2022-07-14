@@ -19,7 +19,6 @@
 
 
 - hosts: hypervisor
-  gather_facts: no
   tasks:
   - include_role:
       name: ceph_connection_setup
