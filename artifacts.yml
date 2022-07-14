@@ -5,11 +5,6 @@ variables:
   #
   # Merge pull request 7053 from dante_artifact_upgrade into master
   # 51af7ec28ecb17c86d8cf0416a06bc8d5814f188
-  dante_build_id: '280985'
 
-  # virgil 20220704.16
-  # Mon Jul  4 05:02:41 UTC 2022 -- Mon Jul  4 15:02:41 AEST 2022
-  #
-  # Merged PR 7542: add ssh keys
-  # 451fab838f74456cd42b19eba8dd87b02202320e
-  virgil_build_id: '272299'
+  # WARNING: Artifact is manually updated for the time of development.
+  dante_build_id: '280985'

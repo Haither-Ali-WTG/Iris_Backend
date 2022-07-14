@@ -1,5 +1,10 @@
 ---
 all:
-  hosts: ~
-vars:
-  os: rhel8
+  children:
+    # Do not change group name. it will be automatically replaced with instance name.
+    dynamic_group_name:
+      hosts:
+        ceph:
+        ceph2:
+      vars:
+        os: rhel8

@@ -87,6 +87,21 @@ stages:
               echo "##vso[task.setvariable variable=inventories]$inventory_list"
             displayName: Read all inventory files from instances folder
 
+          # We replace dynamic_group_name in inventory with file name
+          # This is done to minimise probability of human error.
+          # The alternative would be to ask people to use unique group names for each inventory
+          - script: |
+              inventory_list=""
+              inventory_dir=instances
+              for entry in "$inventory_dir"/*
+              do
+                inventory_list="${inventory_list} -i ${entry}"
+                sed -i "s/dynamic_group_name/${entry##*/}/" ${entry}
+              done
+              echo ${inventory_list}
+              echo "##vso[task.setvariable variable=inventories]$inventory_list"
+            displayName: Patch inventory group names with filename
+
           - task: DownloadPipelineArtifact@2
             displayName: 'Download dante artifact'
             inputs:
