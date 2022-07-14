@@ -7,7 +7,6 @@
       name: "{{ item }}"
       groups: tdd
       ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-      images_folder: "/mnt/storage"
     when: item not in ['all', 'ungrouped']
     with_items: "{{ groups.keys() }}"
 
@@ -16,6 +15,7 @@
       name: "{{ hypervisor | default('localhost') }}"
       groups: hypervisor
       ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+      images_folder: "/mnt/storage"
 
 
 - hosts: hypervisor
