@@ -1,0 +1,15 @@
+---
+skip_list:
+  # We do not intend to publish any roles to Ansible Galaxy
+  - 701  # No 'galaxy_info' found
+  # We have over a thousand of these, won'tfix
+  - fqcn-builtins  # Use FQCN for builtin actions.
+
+# Ansible-lint will take into account the Ansible folder structure (i.e. vars, handlers dirs)
+# ... and override all uncategorised yaml files as playbooks - see config.py and utils.py
+# ... See: https://github.com/ansible-community/ansible-lint/issues/1398
+# ... and https://ansible-lint.readthedocs.io/en/latest/usage.html#linting-playbooks-and-roles
+# TODO: Along removing lint checks above, check if there's a way to a) replace find, b) somehow parse our dir structure
+#
+kinds:
+  - vars: "**/files/*.{yaml,yml}"
