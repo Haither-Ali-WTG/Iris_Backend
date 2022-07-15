@@ -5,19 +5,6 @@ skip_list:
   # We have over a thousand of these, won'tfix
   - fqcn-builtins  # Use FQCN for builtin actions.
 
-# TODO: Remove to deal with these lint errors later in a separate PR
-warn_list:
-  - command-instead-of-module
-  - unnamed-task
-  - no-handler
-  - package-latest
-  - risky-file-permissions
-  - risky-shell-pipe
-  - var-naming
-  - var-spacing
-  - ignore-errors
-  - schema
-
 # Ansible-lint will take into account the Ansible folder structure (i.e. vars, handlers dirs)
 # ... and override all uncategorised yaml files as playbooks - see config.py and utils.py
 # ... See: https://github.com/ansible-community/ansible-lint/issues/1398
@@ -26,4 +13,3 @@ warn_list:
 #
 kinds:
   - vars: "**/files/*.{yaml,yml}"
-  - vars: "**/molecule/*/molecule.{yaml,yml}"
