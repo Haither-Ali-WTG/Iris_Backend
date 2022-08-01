@@ -22,7 +22,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              nosetests
+              pytest
             displayName: 'Python tests'
 
           - task: PublishTestResults@2

@@ -313,6 +313,10 @@ python-magic==0.4.26
     # via s3cmd
 python-slugify==6.1.2
     # via cookiecutter
+pytest==7.1.2
+    # added manually
+pytest-cov==3.0.0
+    # added manually
 pywinrm==0.4.3
     # via -r requirements.in
 pyyaml==5.4.1
