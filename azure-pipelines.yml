@@ -101,7 +101,7 @@ stages:
           - task: CopyFiles@2
             displayName: 'Merge artifacts to a single roles folder'
             inputs:
-              sourceFolder: dante
+              sourceFolder: nested_virt
               targetFolder: ansible
 
           - task: InstallSSHKey@0
