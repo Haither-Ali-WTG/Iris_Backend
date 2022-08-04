@@ -1,10 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220522.1
-  # Sun May 22 00:06:15 UTC 2022 -- Sun May 22 10:06:15 AEST 2022
+  # dante build artifact 20220804.1
+  # Thu Aug  4 00:25:22 UTC 2022 -- Thu Aug  4 10:25:22 AEST 2022
   #
-  # Merge pull request 7053 from dante_artifact_upgrade into master
-  # 51af7ec28ecb17c86d8cf0416a06bc8d5814f188
+  # Merge pull request 7894 from dante_artifact_upgrade into master
+  # de61133e60a69be0da1f7391b265ef40b8fb5882
+  dante_build_id: '301972'
 
-  # WARNING: Artifact is manually updated for the time of development.
-  dante_build_id: '280985'
+  # virgil 20220803.13
+  # Wed Aug  3 02:01:01 UTC 2022 -- Wed Aug  3 12:01:01 AEST 2022
+  #
+  # Merged PR 7881: Split adds.yaml file into forest and domain files
+  # 08f5a6c7c371a63109b2ef846b178a42a5f4c47a
+  virgil_build_id: '300967'
