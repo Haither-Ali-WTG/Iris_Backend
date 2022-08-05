@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220804.1
-  # Thu Aug  4 00:25:22 UTC 2022 -- Thu Aug  4 10:25:22 AEST 2022
+  # dante build artifact 20220805.5
+  # Fri Aug  5 04:31:03 UTC 2022 -- Fri Aug  5 14:31:03 AEST 2022
   #
-  # Merge pull request 7894 from dante_artifact_upgrade into master
-  # de61133e60a69be0da1f7391b265ef40b8fb5882
-  dante_build_id: '301972'
+  # Merged PR 7920: Do not install eatmydata on cumulus
+  # 7a079f8d462c57537b82214d334f53b8645cf38d
+  dante_build_id: '303280'
 
-  # virgil 20220803.13
-  # Wed Aug  3 02:01:01 UTC 2022 -- Wed Aug  3 12:01:01 AEST 2022
+  # virgil 20220805.8
+  # Fri Aug  5 01:11:07 UTC 2022 -- Fri Aug  5 11:11:07 AEST 2022
   #
-  # Merged PR 7881: Split adds.yaml file into forest and domain files
-  # 08f5a6c7c371a63109b2ef846b178a42a5f4c47a
-  virgil_build_id: '300967'
+  # Merged PR 7934: Export AD Forest with node
+  # 0c080dd64bc8047dffb947ad6f73d9c82f5fe11d
+  virgil_build_id: '303103'
