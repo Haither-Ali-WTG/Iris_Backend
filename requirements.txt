@@ -103,8 +103,6 @@ cryptography==37.0.2
     #   requests-ntlm
 cvpysdk @ git+https://Ken.Zhang:rtxk5xvjsl27rauxdymjlter6hecg5r24mlzyc35jejqrcanw4zq@dev.azure.com/WTGOps/InfrastructureAutomation/_git/cvpysdk_clone
     # via -r lampades/requirements.txt
-demjson==2.2.4
-    # via -r requirements.in
 deprecated==1.2.13
     # via
     #   -r lampades/requirements.txt
