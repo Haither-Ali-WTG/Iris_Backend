@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220805.6
-  # Fri Aug  5 05:41:11 UTC 2022 -- Fri Aug  5 15:41:11 AEST 2022
+  # dante build artifact 20220808.3
+  # Mon Aug  8 04:08:06 UTC 2022 -- Mon Aug  8 14:08:06 AEST 2022
   #
-  # Merged PR 7866: Switch from nosetests to pytest
-  # 3406cf499a8282303e7714f1c02dd057d395cb25
-  dante_build_id: '303333'
+  # Merged PR 7917: migrate ansible filbeat role from eye to dante
+  # 8eb2023a3e64afce22f80af0d7ba79c499565eda
+  dante_build_id: '306026'
 
-  # virgil 20220808.10
-  # Mon Aug  8 00:27:59 UTC 2022 -- Mon Aug  8 10:27:59 AEST 2022
+  # virgil 20220808.13
+  # Mon Aug  8 03:40:53 UTC 2022 -- Mon Aug  8 13:40:53 AEST 2022
   #
-  # Merged PR 7945: CCHAIN Tenant Networks US2
-  # 14bc260825729f08956ce5e6568d87db9d81e6fa
-  virgil_build_id: '305819'
+  # Merged PR 7888: New tenant networks
+  # 0c29272f8267cc9cf441ea9f68e767ff6243c430
+  virgil_build_id: '306003'
