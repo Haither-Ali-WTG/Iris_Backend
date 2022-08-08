@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220805.5
-  # Fri Aug  5 04:31:03 UTC 2022 -- Fri Aug  5 14:31:03 AEST 2022
+  # dante build artifact 20220805.6
+  # Fri Aug  5 05:41:11 UTC 2022 -- Fri Aug  5 15:41:11 AEST 2022
   #
-  # Merged PR 7920: Do not install eatmydata on cumulus
-  # 7a079f8d462c57537b82214d334f53b8645cf38d
-  dante_build_id: '303280'
+  # Merged PR 7866: Switch from nosetests to pytest
+  # 3406cf499a8282303e7714f1c02dd057d395cb25
+  dante_build_id: '303333'
 
-  # virgil 20220805.8
-  # Fri Aug  5 01:11:07 UTC 2022 -- Fri Aug  5 11:11:07 AEST 2022
+  # virgil 20220808.10
+  # Mon Aug  8 00:27:59 UTC 2022 -- Mon Aug  8 10:27:59 AEST 2022
   #
-  # Merged PR 7934: Export AD Forest with node
-  # 0c080dd64bc8047dffb947ad6f73d9c82f5fe11d
-  virgil_build_id: '303103'
+  # Merged PR 7945: CCHAIN Tenant Networks US2
+  # 14bc260825729f08956ce5e6568d87db9d81e6fa
+  virgil_build_id: '305819'
