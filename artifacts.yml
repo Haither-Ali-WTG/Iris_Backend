@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220808.3
-  # Mon Aug  8 04:08:06 UTC 2022 -- Mon Aug  8 14:08:06 AEST 2022
+  # dante build artifact 20220808.4
+  # Mon Aug  8 06:37:00 UTC 2022 -- Mon Aug  8 16:37:00 AEST 2022
   #
-  # Merged PR 7917: migrate ansible filbeat role from eye to dante
-  # 8eb2023a3e64afce22f80af0d7ba79c499565eda
-  dante_build_id: '306026'
+  # Merged PR 7929: Disable the Basic Authentication
+  # 38aad236aa7566587aa45d318f1fc813b3201351
+  dante_build_id: '306152'
 
   # virgil 20220808.13
   # Mon Aug  8 03:40:53 UTC 2022 -- Mon Aug  8 13:40:53 AEST 2022
