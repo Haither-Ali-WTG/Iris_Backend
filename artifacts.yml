@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220808.4
-  # Mon Aug  8 06:37:00 UTC 2022 -- Mon Aug  8 16:37:00 AEST 2022
+  # dante build artifact 20220809.1
+  # Tue Aug  9 00:26:50 UTC 2022 -- Tue Aug  9 00:26:50 Australia 2022
   #
-  # Merged PR 7929: Disable the Basic Authentication
-  # 38aad236aa7566587aa45d318f1fc813b3201351
-  dante_build_id: '306152'
+  # Merged PR 7969: init files for wtg soe collection
+  # 71107260e12f20c0b1f9a35f7fccdde258d888be
+  dante_build_id: '306851'
 
-  # virgil 20220808.13
-  # Mon Aug  8 03:40:53 UTC 2022 -- Mon Aug  8 13:40:53 AEST 2022
+  # virgil 20220809.5
+  # Mon Aug  8 23:57:48 UTC 2022 -- Mon Aug  8 23:57:48 Australia 2022
   #
-  # Merged PR 7888: New tenant networks
-  # 0c29272f8267cc9cf441ea9f68e767ff6243c430
-  virgil_build_id: '306003'
+  # Merge pull request 7975 from virgil_python_upgrade into master
+  # d10a7e1fb46e055f047ecac6248898662b17f406
+  virgil_build_id: '306818'
