@@ -20,6 +20,12 @@
 
 - hosts: hypervisor
   tasks:
+    - name: "Install s3cmd"
+      apt:
+        name: "s3cmd"
+        state: present
+      become: yes
+
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
