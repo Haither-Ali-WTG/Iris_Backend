@@ -7,9 +7,9 @@ variables:
   # 71107260e12f20c0b1f9a35f7fccdde258d888be
   dante_build_id: '306851'
 
-  # virgil 20220809.5
-  # Mon Aug  8 23:57:48 UTC 2022 -- Mon Aug  8 23:57:48 Australia 2022
+  # virgil 20220809.9
+  # Tue Aug  9 02:08:31 UTC 2022 -- Tue Aug  9 02:08:31 Australia 2022
   #
-  # Merge pull request 7975 from virgil_python_upgrade into master
-  # d10a7e1fb46e055f047ecac6248898662b17f406
-  virgil_build_id: '306818'
+  # Merged PR 7974: Disable bonds on ports with vmware_all profile
+  # 835fbb8b3574d568c9c41490ea265dbf3a55ecfb
+  virgil_build_id: '306952'
