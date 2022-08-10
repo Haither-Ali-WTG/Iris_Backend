@@ -42,7 +42,7 @@ cryptography==37.0.4
     # via ansible-core
 dill==0.3.5.1
     # via pylint
-dparse==0.5.1
+dparse==0.5.2
     # via safety
 enrich==1.2.7
     # via ansible-lint
@@ -114,7 +114,6 @@ pyyaml==6.0
     #   ansible-core
     #   ansible-lint
     #   bandit
-    #   dparse
     #   yamllint
     #   yq
 requests==2.28.1
@@ -149,7 +148,7 @@ tomli==2.0.1
     #   mypy
     #   pylint
     #   pytest
-tomlkit==0.11.2
+tomlkit==0.11.3
     # via pylint
 typing-extensions==4.3.0
     # via mypy
