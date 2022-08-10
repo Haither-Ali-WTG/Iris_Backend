@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220809.3
-  # Tue Aug  9 05:33:56 UTC 2022 -- Tue Aug  9 05:33:56 Australia 2022
+  # dante build artifact 20220810.5
+  # Wed Aug 10 09:33:25 UTC 2022 -- Wed Aug 10 09:33:25 Australia 2022
   #
-  # Merged PR 7989: kvm_start_nodes role added to dante artifact for Iris consumption
-  # d95f96a5aa9451f26932f3c70dde54c0be278ce1
-  dante_build_id: '307107'
+  # Merged PR 7993: Remove eatmydata
+  # 80eeab3f4005c26074e93ff7432353177195f02d
+  dante_build_id: '308481'
 
-  # virgil 20220810.2
-  # Wed Aug 10 00:26:52 UTC 2022 -- Wed Aug 10 00:26:52 Australia 2022
+  # virgil 20220810.10
+  # Wed Aug 10 06:02:16 UTC 2022 -- Wed Aug 10 06:02:16 Australia 2022
   #
-  # Merge pull request 7996 from virgil_python_upgrade into master
-  # ebe115e30c3f0d498ec22dd761f29732a820a600
-  virgil_build_id: '307991'
+  # Merge pull request 8010 from virgil_python_upgrade into master
+  # adeb4c70f45346b473d6c55729558de90fdaaf5a
+  virgil_build_id: '308323'
