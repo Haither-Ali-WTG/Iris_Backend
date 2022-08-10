@@ -7,9 +7,9 @@ variables:
   # d95f96a5aa9451f26932f3c70dde54c0be278ce1
   dante_build_id: '307107'
 
-  # virgil 20220809.11
-  # Tue Aug  9 03:44:24 UTC 2022 -- Tue Aug  9 03:44:24 Australia 2022
+  # virgil 20220810.2
+  # Wed Aug 10 00:26:52 UTC 2022 -- Wed Aug 10 00:26:52 Australia 2022
   #
-  # Merged PR 7966: Export ADDomain from Virgil
-  # 793fe3d2dcba7b9ce023348aaf53bfa0c054ca9d
-  virgil_build_id: '307018'
+  # Merge pull request 7996 from virgil_python_upgrade into master
+  # ebe115e30c3f0d498ec22dd761f29732a820a600
+  virgil_build_id: '307991'
