@@ -83,7 +83,7 @@ packaging==21.3
     #   safety
 pathspec==0.9.0
     # via yamllint
-pbr==5.9.0
+pbr==5.10.0
     # via stevedore
 platformdirs==2.5.2
     # via pylint
