@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220810.5
-  # Wed Aug 10 09:33:25 UTC 2022 -- Wed Aug 10 09:33:25 Australia 2022
+  # dante build artifact 20220811.1
+  # Thu Aug 11 00:45:37 UTC 2022 -- Thu Aug 11 00:45:37 Australia 2022
   #
-  # Merged PR 7993: Remove eatmydata
-  # 80eeab3f4005c26074e93ff7432353177195f02d
-  dante_build_id: '308481'
+  # Merged PR 7980: Dante - Rebuild once a week only
+  # eb801ee9bb81cca2400c53f0a43f15e4b5ed8b10
+  dante_build_id: '309056'
 
   # virgil 20220810.10
   # Wed Aug 10 06:02:16 UTC 2022 -- Wed Aug 10 06:02:16 Australia 2022
