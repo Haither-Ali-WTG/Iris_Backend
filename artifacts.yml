@@ -7,9 +7,9 @@ variables:
   # 3d72b611ab6a3ac50f6181d5959169bbe86b3ba0
   dante_build_id: '309297'
 
-  # virgil 20220811.3
-  # Thu Aug 11 02:57:40 UTC 2022 -- Thu Aug 11 02:57:40 Australia 2022
+  # virgil 20220812.3
+  # Thu Aug 11 23:20:16 UTC 2022 -- Thu Aug 11 23:20:16 Australia 2022
   #
-  # Merged PR 8017: update and add CCHAIN - AU2
-  # 9b8e5e520d240c025db22d87188e339d932304fc
-  virgil_build_id: '309187'
+  # Merged PR 8019: update and add CCHAIN - US2
+  # 13364423dfd24403dd6f44fcdb28f757c56004e8
+  virgil_build_id: '309999'
