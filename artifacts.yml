@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220811.4
-  # Thu Aug 11 04:54:16 UTC 2022 -- Thu Aug 11 04:54:16 Australia 2022
+  # dante build artifact 20220812.2
+  # Fri Aug 12 03:13:24 UTC 2022 -- Fri Aug 12 03:13:24 Australia 2022
   #
-  # Merged PR 8027: Clear all cache before starting run
-  # 3d72b611ab6a3ac50f6181d5959169bbe86b3ba0
-  dante_build_id: '309297'
+  # Merge pull request 7963 from dante_artifact_upgrade into master
+  # 9798c8af277f5609ccd1fd764c911af12e297ac2
+  dante_build_id: '310211'
 
-  # virgil 20220812.3
-  # Thu Aug 11 23:20:16 UTC 2022 -- Thu Aug 11 23:20:16 Australia 2022
+  # virgil 20220812.7
+  # Fri Aug 12 02:02:15 UTC 2022 -- Fri Aug 12 02:02:15 Australia 2022
   #
-  # Merged PR 8019: update and add CCHAIN - US2
-  # 13364423dfd24403dd6f44fcdb28f757c56004e8
-  virgil_build_id: '309999'
+  # Merged PR 8065: revert Alan US2 changes
+  # 4efea839e79c1991b5a1c1cc8472df4612674bce
+  virgil_build_id: '310163'
