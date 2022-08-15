@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220815.2
-  # Mon Aug 15 01:02:20 UTC 2022 -- Mon Aug 15 01:02:20 Australia 2022
+  # dante build artifact 20220816.1
+  # Mon Aug 15 15:16:23 UTC 2022 -- Mon Aug 15 15:16:23 Australia 2022
   #
-  # Merged PR 8071: remove call to monitoring agents role
-  # be349c0d14f7b407e7a5ef100321ecc6c98882a7
-  dante_build_id: '313093'
+  # Merge pull request 8083 from dante_artifact_upgrade into master
+  # d5a271b4b88e4c430a8660a971310da0a3da0c54
+  dante_build_id: '313800'
 
-  # virgil 20220815.5
-  # Sun Aug 14 23:36:34 UTC 2022 -- Sun Aug 14 23:36:34 Australia 2022
+  # virgil 20220815.8
+  # Mon Aug 15 07:16:29 UTC 2022 -- Mon Aug 15 07:16:29 Australia 2022
   #
-  # Merge pull request 8079 from virgil_python_upgrade into master
-  # 1af55e6a94a293d1a0789f290553ee927dbecd88
-  virgil_build_id: '313015'
+  # Merged PR 8042: Virgil schema for new settings in addomain.yaml
+  # 0f41816b6d4c2cb3eab9a15a97d4c789020a8367
+  virgil_build_id: '313406'
