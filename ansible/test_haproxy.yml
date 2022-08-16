@@ -7,8 +7,11 @@
         name: "{{ item }}"
         groups: tdd
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        test: "{{ ansible_loop.index }}"
       when: item not in ['all', 'ungrouped']
-      with_items: "{{ groups.keys() }}"
+      loop: "{{ groups.keys() }}"
+      loop_control:
+        extended: yes
 
     - name: Add host to hypervisor group
       add_host:
