@@ -53,14 +53,14 @@
 - hosts: tdd
   gather_facts: no
   tasks:
-  - name: Set images for simulation OS
-    vars:
-      os_image:
-        ubuntu2004: "{{ ubuntu2004_image }}"
-        rhel8: "{{ rhel8_image }}"
-    set_fact:
-      image: "{{ images_folder }}/{{ os_image[os] }}"
-  
+    - name: Set images for simulation OS
+      vars:
+        os_image:
+          ubuntu2004: "{{ ubuntu2004_image }}"
+          rhel8: "{{ rhel8_image }}"
+      set_fact:
+        image: "{{ images_folder }}/{{ os_image[os] }}"
+
     - name: Deploy test machines
       include_role:
         name: deploy_test_machines
