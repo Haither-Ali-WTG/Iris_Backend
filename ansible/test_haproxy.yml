@@ -8,6 +8,7 @@
         groups: tdd
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
         virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
+        pool: /mnt/storage/test_pool
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
@@ -21,8 +22,9 @@
         images_folder: "/mnt/storage"
 
 
-# - hosts: hypervisor
-#   tasks:
+- hosts: hypervisor
+  gather_facts: no
+  tasks:
 #     - name: "Install s3cmd"
 #       apt:
 #         name: "s3cmd"
