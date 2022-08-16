@@ -1,7 +1,4 @@
 ---
-- debug:
-    var: image
-
 - include_role:
     name: kvm_start_nodes
   vars:
