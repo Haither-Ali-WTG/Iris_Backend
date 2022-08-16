@@ -17,6 +17,7 @@
         virgil_os_variant: "{{ hostvars[groups[item][0]]['os'] }}"
         virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
         virgil_groups: ['mgmt']
+        simulation_proxy: "http://172.31.255.254:3128"
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
