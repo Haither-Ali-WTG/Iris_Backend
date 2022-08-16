@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220816.1
-  # Mon Aug 15 15:16:23 UTC 2022 -- Mon Aug 15 15:16:23 Australia 2022
+  # dante build artifact 20220817.1
+  # Tue Aug 16 23:12:20 UTC 2022 -- Tue Aug 16 23:12:20 Australia 2022
   #
-  # Merge pull request 8083 from dante_artifact_upgrade into master
-  # d5a271b4b88e4c430a8660a971310da0a3da0c54
-  dante_build_id: '313800'
+  # Merge pull request 8106 from dante_artifact_upgrade into master
+  # 2f28f735eb7736ed0352d8510b23fbd9253cdf13
+  dante_build_id: '315199'
 
-  # virgil 20220816.8
-  # Tue Aug 16 00:54:55 UTC 2022 -- Tue Aug 16 00:54:55 Australia 2022
+  # virgil 20220817.7
+  # Tue Aug 16 23:16:16 UTC 2022 -- Tue Aug 16 23:16:16 Australia 2022
   #
-  # Merged PR 8097: add apex 23 and 24
-  # 5a704b256241db6b3d5e812fa65d0293864de4ad
-  virgil_build_id: '314204'
+  # Merged PR 8113: Export Domain Computer Config and DNS Zones
+  # a8a156a7b0ec658f957b54bad7d6bd0d9ef9e018
+  virgil_build_id: '315204'
