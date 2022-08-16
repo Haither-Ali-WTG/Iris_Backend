@@ -22,9 +22,8 @@
         images_folder: "/mnt/storage"
 
 
-- hosts: hypervisor
-  gather_facts: no
-  tasks:
+# - hosts: hypervisor
+#   tasks:
 #     - name: "Install s3cmd"
 #       apt:
 #         name: "s3cmd"
