@@ -15,6 +15,7 @@
         use_iso: false
         images_folder: "/mnt/storage"
         virgil_os_variant: "{{ hostvars[groups[item][0]]['os'] }}"
+        virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
