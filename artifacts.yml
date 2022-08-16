@@ -7,9 +7,9 @@ variables:
   # d5a271b4b88e4c430a8660a971310da0a3da0c54
   dante_build_id: '313800'
 
-  # virgil 20220815.8
-  # Mon Aug 15 07:16:29 UTC 2022 -- Mon Aug 15 07:16:29 Australia 2022
+  # virgil 20220816.8
+  # Tue Aug 16 00:54:55 UTC 2022 -- Tue Aug 16 00:54:55 Australia 2022
   #
-  # Merged PR 8042: Virgil schema for new settings in addomain.yaml
-  # 0f41816b6d4c2cb3eab9a15a97d4c789020a8367
-  virgil_build_id: '313406'
+  # Merged PR 8097: add apex 23 and 24
+  # 5a704b256241db6b3d5e812fa65d0293864de4ad
+  virgil_build_id: '314204'
