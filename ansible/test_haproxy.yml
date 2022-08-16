@@ -10,6 +10,7 @@
         virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
+        virgil_mac_oob_dante: '...'
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
