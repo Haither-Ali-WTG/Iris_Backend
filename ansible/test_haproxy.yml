@@ -14,7 +14,7 @@
         virgil_hostname: "{{ item }}"
         use_iso: false
         images_folder: "/mnt/storage"
-        os: "{{ hostvars[groups[item][0]]['os'] }}"
+        virgil_os_variant: "{{ hostvars[groups[item][0]]['os'] }}"
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
@@ -60,7 +60,7 @@
           ubuntu2204: "{{ ubuntu_hypervisor_image }}"
           rhel8: "{{ rhel_hypervisor_image }}"
       set_fact:
-        image: "{{ images_folder }}/{{ os_image[os] }}"
+        image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
 
     - name: Deploy test machines
       include_role:
