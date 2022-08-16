@@ -7,7 +7,7 @@
         name: "{{ item }}"
         groups: tdd
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-        test: "{{ ansible_loop.index }}"
+        virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
@@ -21,27 +21,27 @@
         images_folder: "/mnt/storage"
 
 
-- hosts: hypervisor
-  tasks:
-    - name: "Install s3cmd"
-      apt:
-        name: "s3cmd"
-        state: present
-      become: yes
+# - hosts: hypervisor
+#   tasks:
+#     - name: "Install s3cmd"
+#       apt:
+#         name: "s3cmd"
+#         state: present
+#       become: yes
 
-    - name: Setup ceph connection
-      include_role:
-        name: ceph_connection_setup
-      vars:
-        proxy_host: "192.168.255.254"
-        proxy_port: "3128"
+#     - name: Setup ceph connection
+#       include_role:
+#         name: ceph_connection_setup
+#       vars:
+#         proxy_host: "192.168.255.254"
+#         proxy_port: "3128"
 
-    - name: Download qcow2 required simulation
-      command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
-      with_items:
-        - "{{ rhel_hypervisor_image }}"
-        - "{{ ubuntu_hypervisor_image }}"
-      changed_when: true
+#     - name: Download qcow2 required simulation
+#       command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+#       with_items:
+#         - "{{ rhel_hypervisor_image }}"
+#         - "{{ ubuntu_hypervisor_image }}"
+#       changed_when: true
 
 
 - hosts: tdd
