@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220817.1
-  # Tue Aug 16 23:12:20 UTC 2022 -- Tue Aug 16 23:12:20 Australia 2022
+  # dante build artifact 20220817.2
+  # Wed Aug 17 01:02:03 UTC 2022 -- Wed Aug 17 01:02:03 Australia 2022
   #
-  # Merge pull request 8106 from dante_artifact_upgrade into master
-  # 2f28f735eb7736ed0352d8510b23fbd9253cdf13
-  dante_build_id: '315199'
+  # Merged PR 8116: Ease client access via zkCLI.sh
+  # ca781782fa007e0375a6ee431931695edd22824a
+  dante_build_id: '315352'
 
-  # virgil 20220817.7
-  # Tue Aug 16 23:16:16 UTC 2022 -- Tue Aug 16 23:16:16 Australia 2022
+  # virgil 20220817.11
+  # Wed Aug 17 00:48:37 UTC 2022 -- Wed Aug 17 00:48:37 Australia 2022
   #
-  # Merged PR 8113: Export Domain Computer Config and DNS Zones
-  # a8a156a7b0ec658f957b54bad7d6bd0d9ef9e018
-  virgil_build_id: '315204'
+  # Merged PR 8007: Add more settings
+  # 3c45c7c67b36a3de0326c770597103f5ae96a5b6
+  virgil_build_id: '315329'
