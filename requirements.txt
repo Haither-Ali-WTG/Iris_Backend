@@ -74,6 +74,8 @@ mypy==0.971
     # via -r requirements.in
 mypy-extensions==0.4.3
     # via mypy
+netaddr==0.8.0
+    # via -r requirements.in
 packaging==21.3
     # via
     #   ansible-core
