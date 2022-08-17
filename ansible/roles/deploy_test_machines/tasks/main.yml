@@ -3,6 +3,3 @@
     name: kvm_start_nodes
   vars:
     add_drivers: no
-    default_drives:
-    - name: ''
-      size_mi: 30720

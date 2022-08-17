@@ -6,8 +6,7 @@
       add_host:
         name: "{{ item }}"
         groups: tdd
-        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-        virgil_ip_oob_dante: "172.24.0.{{ ansible_loop.index }}"
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"        
         virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
@@ -62,6 +61,10 @@
 - hosts: tdd
   gather_facts: no
   tasks:
+    - name: Set additional facts
+      set_fact:
+        virgil_ip_oob_dante: "{{ virgil_ip_dante }}"
+
     - name: Set images for simulation OS
       vars:
         os_image:
