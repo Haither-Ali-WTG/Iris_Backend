@@ -6,7 +6,7 @@
       add_host:
         name: "{{ item }}"
         groups: tdd
-        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"        
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
         virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
