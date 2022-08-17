@@ -19,7 +19,6 @@
         virgil_groups: ['mgmt']
         simulation_proxy: "http://172.31.255.254:3128"
         virgil_port_oob_dante: eth0
-        links_ports: []
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:

@@ -5,7 +5,7 @@ variables:
   #
   # Merge pull request 8083 from dante_artifact_upgrade into master
   # d5a271b4b88e4c430a8660a971310da0a3da0c54
-  dante_build_id: '314506'
+  dante_build_id: '315391'
 
   # virgil 20220815.8
   # Mon Aug 15 07:16:29 UTC 2022 -- Mon Aug 15 07:16:29 Australia 2022
