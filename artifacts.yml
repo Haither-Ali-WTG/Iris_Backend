@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220817.2
-  # Wed Aug 17 01:02:03 UTC 2022 -- Wed Aug 17 01:02:03 Australia 2022
+  # dante build artifact 20220817.4
+  # Wed Aug 17 03:12:41 UTC 2022 -- Wed Aug 17 03:12:41 Australia 2022
   #
-  # Merged PR 8116: Ease client access via zkCLI.sh
-  # ca781782fa007e0375a6ee431931695edd22824a
-  dante_build_id: '315352'
+  # Merge pull request 8134 from dante_artifact_upgrade into master
+  # 4e16ca22aef9bcbaa5610008c359c13b24864843
+  dante_build_id: '315486'
 
   # virgil 20220817.11
   # Wed Aug 17 00:48:37 UTC 2022 -- Wed Aug 17 00:48:37 Australia 2022
