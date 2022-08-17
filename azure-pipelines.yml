@@ -122,7 +122,7 @@ stages:
                 $(inventories)
 
           - task: Ansible@0
-            displayName: 'Cleanup $(dc) hall $(hall)'
+            displayName: 'Cleanup'
             inputs:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
