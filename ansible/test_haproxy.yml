@@ -20,6 +20,8 @@
         simulation_proxy: "http://172.31.255.254:3128"
         virgil_port_oob_dante: eth0
         virgil_internal_fqdn: "{{ item }}"
+        cpu: 4
+        ram: 8192
       when: item not in ['all', 'ungrouped']
       loop: "{{ groups.keys() }}"
       loop_control:
