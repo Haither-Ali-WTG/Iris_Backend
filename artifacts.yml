@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220817.4
-  # Wed Aug 17 03:12:41 UTC 2022 -- Wed Aug 17 03:12:41 Australia 2022
+  # dante build artifact 20220817.10
+  # Wed Aug 17 08:48:36 UTC 2022 -- Wed Aug 17 08:48:36 Australia 2022
   #
-  # Merge pull request 8134 from dante_artifact_upgrade into master
-  # 4e16ca22aef9bcbaa5610008c359c13b24864843
-  dante_build_id: '315486'
+  # Merged PR 8148: Roles added for Iris
+  # 4549adaa013a1d63d0bf8f596ef0c65b850d3c86
+  dante_build_id: '315776'
 
-  # virgil 20220817.11
-  # Wed Aug 17 00:48:37 UTC 2022 -- Wed Aug 17 00:48:37 Australia 2022
+  # virgil 20220817.16
+  # Wed Aug 17 07:16:53 UTC 2022 -- Wed Aug 17 07:16:53 Australia 2022
   #
-  # Merged PR 8007: Add more settings
-  # 3c45c7c67b36a3de0326c770597103f5ae96a5b6
-  virgil_build_id: '315329'
+  # Merged PR 8138: Export ADDomain Site data per DC
+  # 54dcb2395f212aca00e3c35bd80656b50718028d
+  virgil_build_id: '315697'
