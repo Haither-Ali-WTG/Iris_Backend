@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220817.10
-  # Wed Aug 17 08:48:36 UTC 2022 -- Wed Aug 17 08:48:36 Australia 2022
+  # dante build artifact 20220818.1
+  # Thu Aug 18 01:31:05 UTC 2022 -- Thu Aug 18 01:31:05 Australia 2022
   #
-  # Merged PR 8148: Roles added for Iris
-  # 4549adaa013a1d63d0bf8f596ef0c65b850d3c86
-  dante_build_id: '315776'
+  # Merge pull request 8146 from dante_artifact_upgrade into master
+  # 7acf8ad2ac1de2a8ee992fd3ca990c5470bbb8f8
+  dante_build_id: '316510'
 
   # virgil 20220818.6
   # Thu Aug 18 00:04:34 UTC 2022 -- Thu Aug 18 00:04:34 Australia 2022
