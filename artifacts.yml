@@ -7,9 +7,9 @@ variables:
   # 4549adaa013a1d63d0bf8f596ef0c65b850d3c86
   dante_build_id: '315776'
 
-  # virgil 20220817.16
-  # Wed Aug 17 07:16:53 UTC 2022 -- Wed Aug 17 07:16:53 Australia 2022
+  # virgil 20220818.6
+  # Thu Aug 18 00:04:34 UTC 2022 -- Thu Aug 18 00:04:34 Australia 2022
   #
-  # Merged PR 8138: Export ADDomain Site data per DC
-  # 54dcb2395f212aca00e3c35bd80656b50718028d
-  virgil_build_id: '315697'
+  # Merged PR 8174: Export domain join user and secret
+  # 1cab6a71fb4cc53ea1b41fb6872747e8012f103a
+  virgil_build_id: '316428'
