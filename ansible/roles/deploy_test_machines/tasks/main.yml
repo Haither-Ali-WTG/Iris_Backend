@@ -1,4 +1,6 @@
 ---
-- name: Startup tasks
-  debug:
-    msg: "Startup to be implemented"
+- name: Start nodes
+  include_role:
+    name: kvm_start_nodes
+  vars:
+    add_drivers: no

@@ -6,4 +6,4 @@ all:
         ceph: ~
         ceph2: ~
       vars:
-        os: rhel8
+        os: rhel

@@ -14,3 +14,6 @@ yamllint
 # required for shell scripts
 jq
 yq
+
+# required for simulation
+netaddr

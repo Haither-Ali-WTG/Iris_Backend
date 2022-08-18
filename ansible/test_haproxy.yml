@@ -7,8 +7,25 @@
         name: "{{ item }}"
         groups: tdd
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
+        pool: /mnt/storage/test_pool
+        virgil_os_family: linux
+        virgil_mac_oob_dante: '...'
+        virgil_hostname: "{{ item }}"
+        use_iso: false
+        images_folder: "/mnt/storage"
+        virgil_os_variant: "{{ hostvars[groups[item][0]]['os'] }}"
+        virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
+        virgil_groups: ['mgmt']
+        simulation_proxy: "http://172.31.255.254:3128"
+        virgil_port_oob_dante: eth0
+        virgil_internal_fqdn: "{{ item }}"
+        cpu: 4
+        ram: 8192
       when: item not in ['all', 'ungrouped']
-      with_items: "{{ groups.keys() }}"
+      loop: "{{ groups.keys() }}"
+      loop_control:
+        extended: yes
 
     - name: Add host to hypervisor group
       add_host:
@@ -44,6 +61,18 @@
 - hosts: tdd
   gather_facts: no
   tasks:
+    - name: Set additional facts
+      set_fact:
+        virgil_ip_oob_dante: "{{ virgil_ip_dante }}"
+
+    - name: Set images for simulation OS
+      vars:
+        os_image:
+          ubuntu: "{{ ubuntu_hypervisor_image }}"
+          rhel: "{{ rhel_hypervisor_image }}"
+      set_fact:
+        image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
+
     - name: Deploy test machines
       include_role:
         name: deploy_test_machines
