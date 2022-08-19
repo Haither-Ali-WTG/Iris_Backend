@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220818.3
-  # Thu Aug 18 13:39:58 UTC 2022 -- Thu Aug 18 13:39:58 Australia 2022
+  # dante build artifact 20220819.1
+  # Fri Aug 19 00:20:02 UTC 2022 -- Fri Aug 19 00:20:02 Australia 2022
   #
-  # Merged PR 8188: remove original monitoring agents role
-  # 0b4391e6a54586e68a44b044608d3201214895f9
-  dante_build_id: '317044'
+  # Merged PR 8182: SCCM Client Installation Part 1
+  # eed1e04b588746e1d83de68fca1dd42d34272be2
+  dante_build_id: '317478'
 
   # virgil 20220819.4
   # Thu Aug 18 23:16:19 UTC 2022 -- Thu Aug 18 23:16:19 Australia 2022
