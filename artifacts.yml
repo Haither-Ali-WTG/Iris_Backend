@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220818.2
-  # Thu Aug 18 06:26:38 UTC 2022 -- Thu Aug 18 06:26:38 Australia 2022
+  # dante build artifact 20220818.3
+  # Thu Aug 18 13:39:58 UTC 2022 -- Thu Aug 18 13:39:58 Australia 2022
   #
-  # Merged PR 8183: remove unnecessary call to monitoring agents
-  # cfb332523bebe986b07189e6af8627a271da89c1
-  dante_build_id: '316746'
+  # Merged PR 8188: remove original monitoring agents role
+  # 0b4391e6a54586e68a44b044608d3201214895f9
+  dante_build_id: '317044'
 
-  # virgil 20220818.6
-  # Thu Aug 18 00:04:34 UTC 2022 -- Thu Aug 18 00:04:34 Australia 2022
+  # virgil 20220819.4
+  # Thu Aug 18 23:16:19 UTC 2022 -- Thu Aug 18 23:16:19 Australia 2022
   #
-  # Merged PR 8174: Export domain join user and secret
-  # 1cab6a71fb4cc53ea1b41fb6872747e8012f103a
-  virgil_build_id: '316428'
+  # Merged PR 8191: Move ous-to-join to site-wide computer config
+  # ca8817e476bde77752aae8c51368334eb9150ba4
+  virgil_build_id: '317426'
