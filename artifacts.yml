@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220819.1
-  # Fri Aug 19 00:20:02 UTC 2022 -- Fri Aug 19 00:20:02 Australia 2022
+  # dante build artifact 20220821.1
+  # Sun Aug 21 02:18:51 UTC 2022 -- Sun Aug 21 02:18:51 Australia 2022
   #
-  # Merged PR 8182: SCCM Client Installation Part 1
-  # eed1e04b588746e1d83de68fca1dd42d34272be2
-  dante_build_id: '317478'
+  # Merge pull request 8193 from dante_artifact_upgrade into master
+  # f8b1bd235f552b23e57a74b6dbeff19d98a69599
+  dante_build_id: '319427'
 
-  # virgil 20220819.4
-  # Thu Aug 18 23:16:19 UTC 2022 -- Thu Aug 18 23:16:19 Australia 2022
+  # virgil 20220820.2
+  # Sat Aug 20 13:27:13 UTC 2022 -- Sat Aug 20 13:27:13 Australia 2022
   #
-  # Merged PR 8191: Move ous-to-join to site-wide computer config
-  # ca8817e476bde77752aae8c51368334eb9150ba4
-  virgil_build_id: '317426'
+  # Merged PR 8202: Updated gurbir ssh pub keys for new laptop
+  # ef6bc0d27cfbb4ca0683125e0a5783e175f277f9
+  virgil_build_id: '318939'
