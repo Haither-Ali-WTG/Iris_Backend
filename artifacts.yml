@@ -7,9 +7,9 @@ variables:
   # f8b1bd235f552b23e57a74b6dbeff19d98a69599
   dante_build_id: '319427'
 
-  # virgil 20220820.2
-  # Sat Aug 20 13:27:13 UTC 2022 -- Sat Aug 20 13:27:13 Australia 2022
+  # virgil 20220822.2
+  # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
   #
-  # Merged PR 8202: Updated gurbir ssh pub keys for new laptop
-  # ef6bc0d27cfbb4ca0683125e0a5783e175f277f9
-  virgil_build_id: '318939'
+  # Merge pull request 8203 from virgil_python_upgrade into master
+  # 4de106075c23817a4b4a8173b7bad3f72d28e037
+  virgil_build_id: '320230'
