@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220821.1
-  # Sun Aug 21 02:18:51 UTC 2022 -- Sun Aug 21 02:18:51 Australia 2022
+  # dante build artifact 20220822.1
+  # Sun Aug 21 23:48:18 UTC 2022 -- Sun Aug 21 23:48:18 Australia 2022
   #
-  # Merge pull request 8193 from dante_artifact_upgrade into master
-  # f8b1bd235f552b23e57a74b6dbeff19d98a69599
-  dante_build_id: '319427'
+  # Merged PR 7995: WIP: Create Domain from Virgil Data
+  # ac83fcf049ade3371eb1190ba8857baf4aeca978
+  dante_build_id: '320256'
 
   # virgil 20220822.2
   # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
