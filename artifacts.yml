@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220822.4
-  # Mon Aug 22 05:57:19 UTC 2022 -- Mon Aug 22 05:57:19 Australia 2022
+  # dante build artifact 20220822.8
+  # Mon Aug 22 11:25:44 UTC 2022 -- Mon Aug 22 11:25:44 Australia 2022
   #
-  # Merged PR 8094: Dante - Remove NVIDIA VMA Installation
-  # 8f36a992cea2ebfd2b11cc14ce9ac510b7d0a1a0
-  dante_build_id: '320536'
+  # Merge pull request 8209 from dante_artifact_upgrade into master
+  # 834df0cb4ebb45378e913824d397fe54d0ad0f41
+  dante_build_id: '320777'
 
   # virgil 20220822.2
   # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
