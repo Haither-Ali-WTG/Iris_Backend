@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220822.1
-  # Sun Aug 21 23:48:18 UTC 2022 -- Sun Aug 21 23:48:18 Australia 2022
+  # dante build artifact 20220822.2
+  # Mon Aug 22 01:05:02 UTC 2022 -- Mon Aug 22 01:05:02 Australia 2022
   #
-  # Merged PR 7995: WIP: Create Domain from Virgil Data
-  # ac83fcf049ade3371eb1190ba8857baf4aeca978
-  dante_build_id: '320256'
+  # Merged PR 8086: Fold "configure packages" call into the system_repos_packages role
+  # c637e95b9d753807908f9e07d203f199db46acb4
+  dante_build_id: '320321'
 
   # virgil 20220822.2
   # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
