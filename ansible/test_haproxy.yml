@@ -14,7 +14,6 @@
         virgil_hostname: "{{ item }}"
         use_iso: false
         images_folder: "/mnt/storage"
-        virgil_os_variant: "{{ hostvars[groups[item][0]]['os'] }}"
         virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
         virgil_groups: ['mgmt']
         simulation_proxy: "http://172.31.255.254:3128"
@@ -61,9 +60,21 @@
 - hosts: tdd
   gather_facts: no
   tasks:
+    - name: Copy all group variables
+      set_fact:
+        "{{ item.key }}": "{{ item.value }}"
+      loop: "{{ hostvars[groups[inventory_hostname][0]] | dict2items }}"
+      # Excluding ansible specific variables
+      when:
+        - "item.key != 'omit'"
+        - "'ansible' not in item.key"
+        - "'inventory' not in item.key"
+        - "'group' not in item.key"
+
     - name: Set additional facts
       set_fact:
         virgil_ip_oob_dante: "{{ virgil_ip_dante }}"
+        virgil_os_variant: "{{ os }}"
 
     - name: Set images for simulation OS
       vars:
