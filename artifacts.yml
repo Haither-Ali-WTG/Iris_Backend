@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220822.2
-  # Mon Aug 22 01:05:02 UTC 2022 -- Mon Aug 22 01:05:02 Australia 2022
+  # dante build artifact 20220822.3
+  # Mon Aug 22 03:40:20 UTC 2022 -- Mon Aug 22 03:40:20 Australia 2022
   #
-  # Merged PR 8086: Fold "configure packages" call into the system_repos_packages role
-  # c637e95b9d753807908f9e07d203f199db46acb4
-  dante_build_id: '320321'
+  # Merged PR 8089: Cumulus updates
+  # 3c22e2bf11d7beaea053742830364785b191a8c2
+  dante_build_id: '320437'
 
   # virgil 20220822.2
   # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
