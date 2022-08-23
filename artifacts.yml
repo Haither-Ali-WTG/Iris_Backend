@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220822.8
-  # Mon Aug 22 11:25:44 UTC 2022 -- Mon Aug 22 11:25:44 Australia 2022
+  # dante build artifact 20220823.2
+  # Tue Aug 23 01:19:49 UTC 2022 -- Tue Aug 23 01:19:49 Australia 2022
   #
-  # Merge pull request 8209 from dante_artifact_upgrade into master
-  # 834df0cb4ebb45378e913824d397fe54d0ad0f41
-  dante_build_id: '320777'
+  # Merged PR 8221: Generate and apply new luks password when default password is valid
+  # b02d00db70e31b61f695f116605d3c650f3a7e77
+  dante_build_id: '321359'
 
-  # virgil 20220822.2
-  # Sun Aug 21 23:16:00 UTC 2022 -- Sun Aug 21 23:16:00 Australia 2022
+  # virgil 20220823.2
+  # Tue Aug 23 01:16:55 UTC 2022 -- Tue Aug 23 01:16:55 Australia 2022
   #
-  # Merge pull request 8203 from virgil_python_upgrade into master
-  # 4de106075c23817a4b4a8173b7bad3f72d28e037
-  virgil_build_id: '320230'
+  # Merge pull request 8227 from virgil_python_upgrade into master
+  # 3689adcbecc42453707f5f10a8a55da78d843d10
+  virgil_build_id: '321355'
