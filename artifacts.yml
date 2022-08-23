@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220823.2
-  # Tue Aug 23 01:19:49 UTC 2022 -- Tue Aug 23 01:19:49 Australia 2022
+  # dante build artifact 20220823.3
+  # Tue Aug 23 02:37:03 UTC 2022 -- Tue Aug 23 02:37:03 Australia 2022
   #
-  # Merged PR 8221: Generate and apply new luks password when default password is valid
-  # b02d00db70e31b61f695f116605d3c650f3a7e77
-  dante_build_id: '321359'
+  # Merged PR 8217: Use Virgil Data for PC and CA Windows VMs
+  # 264cf398f2aa8f9c3c6d591cc39cd0f3dd2b124d
+  dante_build_id: '321424'
 
   # virgil 20220823.2
   # Tue Aug 23 01:16:55 UTC 2022 -- Tue Aug 23 01:16:55 Australia 2022
