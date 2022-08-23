@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220823.3
-  # Tue Aug 23 02:37:03 UTC 2022 -- Tue Aug 23 02:37:03 Australia 2022
+  # dante build artifact 20220823.4
+  # Tue Aug 23 06:10:48 UTC 2022 -- Tue Aug 23 06:10:48 Australia 2022
   #
-  # Merged PR 8217: Use Virgil Data for PC and CA Windows VMs
-  # 264cf398f2aa8f9c3c6d591cc39cd0f3dd2b124d
-  dante_build_id: '321424'
+  # Merged PR 8152: Filebeat Haproxy config
+  # 6434ab5457ab2e9fd85fc34af9d751519d814c40
+  dante_build_id: '321568'
 
   # virgil 20220823.2
   # Tue Aug 23 01:16:55 UTC 2022 -- Tue Aug 23 01:16:55 Australia 2022
