@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220825.1
-  # Thu Aug 25 00:22:02 UTC 2022 -- Thu Aug 25 00:22:02 Australia 2022
+  # dante build artifact 20220825.3
+  # Thu Aug 25 04:28:05 UTC 2022 -- Thu Aug 25 04:28:05 Australia 2022
   #
-  # Merged PR 8240: Ignore new ansible-lint check
-  # f01c677de5916cdefbe6d3540a96e7700fecc334
-  dante_build_id: '323305'
+  # Merged PR 8239: Generate user passwords for linux
+  # 6ee8ac12a90920cfa7e2d2c962723a39b2b9af9b
+  dante_build_id: '323497'
 
   # virgil 20220825.2
   # Thu Aug 25 00:02:11 UTC 2022 -- Thu Aug 25 00:02:11 Australia 2022
