@@ -75,7 +75,7 @@
 
     - name: Set additional facts
       set_fact:
-        virgil_ip_oob_dante: "{{ virgil_ip_dante }}"
+        virgil_ip_oob_dante: "{{ ansible_host }}"
         virgil_os_variant: "{{ os }}"
         virgil_ip_dante: "{{ ansible_host }}"
 
