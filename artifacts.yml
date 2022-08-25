@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220825.3
-  # Thu Aug 25 04:28:05 UTC 2022 -- Thu Aug 25 04:28:05 Australia 2022
+  # dante build artifact 20220826.1
+  # Thu Aug 25 14:25:01 UTC 2022 -- Thu Aug 25 14:25:01 Australia 2022
   #
-  # Merged PR 8239: Generate user passwords for linux
-  # 6ee8ac12a90920cfa7e2d2c962723a39b2b9af9b
-  dante_build_id: '323497'
+  # Merged PR 8241: Improve jinja spacing per ansible-lint suggestions
+  # 422bfe65a69916b22d7ebe09570a8c6cfe2003d4
+  dante_build_id: '323909'
 
-  # virgil 20220825.2
-  # Thu Aug 25 00:02:11 UTC 2022 -- Thu Aug 25 00:02:11 Australia 2022
+  # virgil 20220825.6
+  # Thu Aug 25 12:56:53 UTC 2022 -- Thu Aug 25 12:56:53 Australia 2022
   #
-  # Merged PR 8247: Remove the unused hosts
-  # 1826953b2bf7fd32ac98a429fa03ce895bc57aa2
-  virgil_build_id: '323296'
+  # Merged PR 8264: WI00526633 - CertConnect Migration
+  # 96a9f57d6baf7be4d65217cb468b04f19d55abfa
+  virgil_build_id: '323843'
