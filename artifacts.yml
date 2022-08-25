@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220824.7
-  # Wed Aug 24 09:52:27 UTC 2022 -- Wed Aug 24 09:52:27 Australia 2022
+  # dante build artifact 20220825.1
+  # Thu Aug 25 00:22:02 UTC 2022 -- Thu Aug 25 00:22:02 Australia 2022
   #
-  # Merged PR 8237: Restrict "ping compute and storage" check to L3
-  # a8338787f47a35984effb86cf90a83bc25d047bc
-  dante_build_id: '322744'
+  # Merged PR 8240: Ignore new ansible-lint check
+  # f01c677de5916cdefbe6d3540a96e7700fecc334
+  dante_build_id: '323305'
 
-  # virgil 20220824.6
-  # Wed Aug 24 07:29:05 UTC 2022 -- Wed Aug 24 07:29:05 Australia 2022
+  # virgil 20220825.2
+  # Thu Aug 25 00:02:11 UTC 2022 -- Thu Aug 25 00:02:11 Australia 2022
   #
-  # Merged PR 8242: Add missing media agent
-  # f56f98f2939de043a81ccc1d85806e19474d1e1d
-  virgil_build_id: '322639'
+  # Merged PR 8247: Remove the unused hosts
+  # 1826953b2bf7fd32ac98a429fa03ce895bc57aa2
+  virgil_build_id: '323296'
