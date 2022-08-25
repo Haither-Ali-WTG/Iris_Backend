@@ -92,4 +92,3 @@
         name: deploy_test_machines
         apply:
           delegate_to: "{{ groups['hypervisor'][0] }}"
-
