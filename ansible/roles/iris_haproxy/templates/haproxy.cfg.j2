@@ -32,7 +32,7 @@ log 127.0.0.1 local7
 
 ssl-default-bind-ciphersuites {{ cipher.suites | join(':') }}
 ssl-default-bind-ciphers {{ cipher.ciphers | join(':') }}
-ssl-default-bind-options no-sslv3 no-tlsv10 no-tlsv11 no-tls-tickets
+ssl-default-bind-options {{ cipher.bind_options | join(' ') }}
 
 ssl-default-server-options ssl-min-ver {{ cipher.ssl_min }} ssl-max-ver {{ cipher.ssl_max }}
 
@@ -59,17 +59,7 @@ defaults
 mode    {{ proxy.mode }}
 log 127.0.0.1 local7
 
-# Timeouts; we should configure these by profiles and/or defaults with overrides, since
-# they're mostly uniform. 
-
-timeout client          60s
-timeout connect         60s
-timeout server         300s
-timeout tunnel        3600s
-timeout http-keep-alive  1s
-timeout http-request    60s
-timeout queue           30s
-timeout tarpit          60s
+# Timeouts; we will configure these by profiles, potentially with overrides
 
 timeout client          {{ "%4d" | format(timeout.client) }}s
 timeout connect         {{ "%4d" | format(timeout.connect) }}s
