@@ -7,7 +7,7 @@
         name: "{{ item }}"
         groups: tdd
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-        virgil_ip_dante: "172.24.0.{{ ansible_loop.index }}"
+        ansible_host: "172.24.0.{{ ansible_loop.index }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
         virgil_mac_oob_dante: '...'
@@ -75,8 +75,9 @@
 
     - name: Set additional facts
       set_fact:
-        virgil_ip_oob_dante: "{{ virgil_ip_dante }}"
+        virgil_ip_oob_dante: "{{ ansible_host }}"
         virgil_os_variant: "{{ os }}"
+        virgil_ip_dante: "{{ ansible_host }}"
 
     - name: Set images for simulation OS
       vars:
