@@ -1,9 +1,11 @@
 ---
-all:
-  children:
-    au2prodceph1:
-      hosts:
-        ceph: ~
-        ceph2: ~
-      vars:
-        os: rhel
+clusters:
+  au2prodceph1:
+    # per-cluster settins go here, for example:
+    proxy:
+      maxconn: 20000
+    cluster_machines:
+      au2_machine1: ~
+      # per-machine settings would go here
+      #  haproxy_version: x.y.z
+      au2_machine2: ~
