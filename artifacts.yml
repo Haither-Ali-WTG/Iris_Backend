@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220826.1
-  # Thu Aug 25 14:25:01 UTC 2022 -- Thu Aug 25 14:25:01 Australia 2022
+  # dante build artifact 20220829.1
+  # Mon Aug 29 01:07:17 UTC 2022 -- Mon Aug 29 01:07:17 Australia 2022
   #
-  # Merged PR 8241: Improve jinja spacing per ansible-lint suggestions
-  # 422bfe65a69916b22d7ebe09570a8c6cfe2003d4
-  dante_build_id: '323909'
+  # Merged PR 8234: Dante - Kafka Broker Tuning For Replica Fetchers
+  # f55f911fdbcc3d211505bd7fd87b1c3ad9c88683
+  dante_build_id: '327179'
 
-  # virgil 20220825.6
-  # Thu Aug 25 12:56:53 UTC 2022 -- Thu Aug 25 12:56:53 Australia 2022
+  # virgil 20220829.2
+  # Sun Aug 28 23:12:38 UTC 2022 -- Sun Aug 28 23:12:38 Australia 2022
   #
-  # Merged PR 8264: WI00526633 - CertConnect Migration
-  # 96a9f57d6baf7be4d65217cb468b04f19d55abfa
-  virgil_build_id: '323843'
+  # Merge pull request 8294 from virgil_python_upgrade into master
+  # 051ea5bb996b12c4de8f507ff6c85000502d1928
+  virgil_build_id: '327076'
