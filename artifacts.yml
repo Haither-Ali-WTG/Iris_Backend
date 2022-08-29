@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220829.1
-  # Mon Aug 29 01:07:17 UTC 2022 -- Mon Aug 29 01:07:17 Australia 2022
+  # dante build artifact 20220829.2
+  # Mon Aug 29 04:29:44 UTC 2022 -- Mon Aug 29 04:29:44 Australia 2022
   #
-  # Merged PR 8234: Dante - Kafka Broker Tuning For Replica Fetchers
-  # f55f911fdbcc3d211505bd7fd87b1c3ad9c88683
-  dante_build_id: '327179'
+  # Merged PR 8302: fix to molecule lint bypass
+  # a63fb8ae971be7282abef5dc20577ed0b58e8eae
+  dante_build_id: '327335'
 
-  # virgil 20220829.2
-  # Sun Aug 28 23:12:38 UTC 2022 -- Sun Aug 28 23:12:38 Australia 2022
+  # virgil 20220829.9
+  # Mon Aug 29 03:24:46 UTC 2022 -- Mon Aug 29 03:24:46 Australia 2022
   #
-  # Merge pull request 8294 from virgil_python_upgrade into master
-  # 051ea5bb996b12c4de8f507ff6c85000502d1928
-  virgil_build_id: '327076'
+  # Merged PR 8301: Virgil - Teardown all VMs for KVM Maintenance Pipeline
+  # 6d2bfe5b5c5b1a15c919278878cab729ec7be94c
+  virgil_build_id: '327283'
