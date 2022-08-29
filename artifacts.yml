@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220829.5
-  # Mon Aug 29 13:07:55 UTC 2022 -- Mon Aug 29 13:07:55 Australia 2022
+  # dante build artifact 20220830.1
+  # Mon Aug 29 23:46:57 UTC 2022 -- Mon Aug 29 23:46:57 Australia 2022
   #
-  # Merge pull request 8299 from dante_artifact_upgrade into master
-  # 825a2fc09f6806dc09b132d83495a5e1eeebea08
-  dante_build_id: '327729'
+  # Merge pull request 8320 from dante_python_upgrade into master
+  # 6c2b6534820e13c14e6183c23c18020ce45db5e8
+  dante_build_id: '328161'
 
-  # virgil 20220829.9
-  # Mon Aug 29 03:24:46 UTC 2022 -- Mon Aug 29 03:24:46 Australia 2022
+  # virgil 20220830.4
+  # Mon Aug 29 23:17:56 UTC 2022 -- Mon Aug 29 23:17:56 Australia 2022
   #
-  # Merged PR 8301: Virgil - Teardown all VMs for KVM Maintenance Pipeline
-  # 6d2bfe5b5c5b1a15c919278878cab729ec7be94c
-  virgil_build_id: '327283'
+  # Merged PR 8303: Virgil - # of Partitions in Queues have to be explicitly specified + Adding Replica Field
+  # 761949d0bbe764d092a16b03128f3029fcbb0307
+  virgil_build_id: '328128'
