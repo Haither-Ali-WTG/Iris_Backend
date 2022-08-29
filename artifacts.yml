@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220829.2
-  # Mon Aug 29 04:29:44 UTC 2022 -- Mon Aug 29 04:29:44 Australia 2022
+  # dante build artifact 20220829.5
+  # Mon Aug 29 13:07:55 UTC 2022 -- Mon Aug 29 13:07:55 Australia 2022
   #
-  # Merged PR 8302: fix to molecule lint bypass
-  # a63fb8ae971be7282abef5dc20577ed0b58e8eae
-  dante_build_id: '327335'
+  # Merge pull request 8299 from dante_artifact_upgrade into master
+  # 825a2fc09f6806dc09b132d83495a5e1eeebea08
+  dante_build_id: '327729'
 
   # virgil 20220829.9
   # Mon Aug 29 03:24:46 UTC 2022 -- Mon Aug 29 03:24:46 Australia 2022
