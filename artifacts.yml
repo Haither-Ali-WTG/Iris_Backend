@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220830.1
-  # Mon Aug 29 23:46:57 UTC 2022 -- Mon Aug 29 23:46:57 Australia 2022
+  # dante build artifact 20220830.2
+  # Tue Aug 30 01:14:35 UTC 2022 -- Tue Aug 30 01:14:35 Australia 2022
   #
-  # Merge pull request 8320 from dante_python_upgrade into master
-  # 6c2b6534820e13c14e6183c23c18020ce45db5e8
-  dante_build_id: '328161'
+  # Merged PR 8289: Install SCCM Client on Windows VMs
+  # 369147cad97f3f15dbcf87af2b75d8ba793742be
+  dante_build_id: '328255'
 
   # virgil 20220830.4
   # Mon Aug 29 23:17:56 UTC 2022 -- Mon Aug 29 23:17:56 Australia 2022
