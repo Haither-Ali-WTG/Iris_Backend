@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220830.3
-  # Tue Aug 30 04:52:10 UTC 2022 -- Tue Aug 30 04:52:10 Australia 2022
+  # dante build artifact 20220831.1
+  # Tue Aug 30 22:56:45 UTC 2022 -- Tue Aug 30 22:56:45 Australia 2022
   #
-  # Merged PR 8291: Filebeat - fix dest filename for cisco module
-  # c0dcdb24f0a206bb8f4bbb154864b7c1d7708ae6
-  dante_build_id: '328458'
+  # Merged PR 8312: Install Filebeat kafka module
+  # 378eb3c0b52c915325df5b8a00d199024d0fb999
+  dante_build_id: '329226'
 
   # virgil 20220830.4
   # Mon Aug 29 23:17:56 UTC 2022 -- Mon Aug 29 23:17:56 Australia 2022
