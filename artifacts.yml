@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220830.2
-  # Tue Aug 30 01:14:35 UTC 2022 -- Tue Aug 30 01:14:35 Australia 2022
+  # dante build artifact 20220830.3
+  # Tue Aug 30 04:52:10 UTC 2022 -- Tue Aug 30 04:52:10 Australia 2022
   #
-  # Merged PR 8289: Install SCCM Client on Windows VMs
-  # 369147cad97f3f15dbcf87af2b75d8ba793742be
-  dante_build_id: '328255'
+  # Merged PR 8291: Filebeat - fix dest filename for cisco module
+  # c0dcdb24f0a206bb8f4bbb154864b7c1d7708ae6
+  dante_build_id: '328458'
 
   # virgil 20220830.4
   # Mon Aug 29 23:17:56 UTC 2022 -- Mon Aug 29 23:17:56 Australia 2022
