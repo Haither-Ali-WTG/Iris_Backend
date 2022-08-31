@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220831.2
-  # Wed Aug 31 01:59:56 UTC 2022 -- Wed Aug 31 01:59:56 Australia 2022
+  # dante build artifact 20220831.5
+  # Wed Aug 31 08:44:41 UTC 2022 -- Wed Aug 31 08:44:41 Australia 2022
   #
-  # Merged PR 8328: Release cumulus logs continuous A side
-  # bb0c82bfa29b944b2979ec3e583352dc700c1361
-  dante_build_id: '329381'
+  # Merged PR 8350: Filebeat zookeeper module
+  # 0decbb4280961ba046268b93dcd625e23a5abdf0
+  dante_build_id: '329700'
 
   # virgil 20220831.3
   # Wed Aug 31 00:57:43 UTC 2022 -- Wed Aug 31 00:57:43 Australia 2022
