@@ -1,0 +1,71 @@
+---
+# TODO: most or all of these should come from the inventory
+
+instance:
+    name: default-instance-name
+    processes: 1
+    threads: 8
+    maxconn: 200000
+    stats_ports:
+        socket: /var/run/haproxy/haproxy.sock
+        web: 8001
+    certificates: []
+    frontend_ports:
+        http:
+            plaintext: [80]
+            ssl: [443]
+
+instances: {}
+
+cipher:
+    suites: TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+    ciphers: ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES256-GCM-SHA384
+    bind_options: no-sslv3 no-tlsv10 no-tlsv11 no-tls-tickets
+    ssl_min: TLSv1.0
+    ssl_max: TLSv1.3
+
+proxy:
+    mode: http
+    maxconn: 200000
+    fullconn: 5000
+    balance: leastconn
+    acls: []
+        # - description: ...
+        #   name: ... 
+        #   criterion: ... 
+        #   flags: ... 
+        #   operator: ... 
+        #   value: ...
+
+    rules: []
+        # - description: ...
+        #   name: ... 
+        #   criterion: ... 
+        #   flags: ... 
+        #   operator: ... 
+        #   value: ...
+
+timeout:
+    client: 60
+    connect: 60
+    server: 300
+    tunnel: 3600
+    http_keep_alive: 1
+    http_request: 60
+    queue: 30
+    tarpit: 60
+
+datacentre: AU2
+env: sand
+context: demo
+function: demo
+
+backends: []
+    # - name: ...
+    #   balance: ...
+    #   healthCheck: ...
+    #   hostname: ...
+    #   check_expect: 200|401|403|302|405
+    #   cookie: ...
+    #   servers:
+    #     - ...
