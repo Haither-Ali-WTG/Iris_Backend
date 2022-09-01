@@ -20,7 +20,7 @@ daemon
 # which uses 32 processes (and no nbthread setting).
 
 nbproc {{ instance.processes | default(1) }}
-nbthread {{ instance.threads | default(8) ||
+nbthread {{ instance.threads | default(8) }}
 
 # Logging directive; in some cases, we need to extend the log line length to 4096.
 
@@ -126,7 +126,7 @@ listen l7Frontend
 #max number of connections to be sent to this frontend
 maxconn {{ proxy.maxconn }}
 #needs full conn to instance the dynamic backend
-fullconn {{ proxy.fullconn}
+fullconn {{ proxy.fullconn }}
 
 
 
@@ -145,7 +145,7 @@ http-response set-header X-Content-Type-Options nosniff
 #breaks Exchange Web
 #http-response set-header X-Frame-Options DENY
 
-log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ instances[item]['function'] }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
+log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
 
 # TODO escape values appropriately for JSON, particularly those that come from the
 # remote end. HAProxy has a ##json()## converter for this purpose.
@@ -229,7 +229,7 @@ use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
 
 {% for backend in backends %}
 backend {{ backend.name }}
-{% if backend.balance'] %}balance {{ backend.balance }}
+{% if backend.balance %}balance {{ backend.balance }}
 {% endif %}
 option httpchk HEAD {{ backend.healthCheck }} HTTP/1.1\r\nHost:\ {{ backend.hostname }}
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
@@ -239,7 +239,7 @@ cookie {{ backend.cookie }} insert indirect nocache dynamic
 default-server inter 10000 {%- if backend.encryption %} ssl{% endif %}
 
 {%     for server in backend.servers %}
-server {{ server }} {{ backend.servers[server] }}:{{ backend.config['port }} check
+server {{ server.name }} {{ backend.ip }}:{{ backend.port }} check
 {%     endfor %}
 
 {% endfor %}
