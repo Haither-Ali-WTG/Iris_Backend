@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220831.5
-  # Wed Aug 31 08:44:41 UTC 2022 -- Wed Aug 31 08:44:41 Australia 2022
+  # dante build artifact 20220901.1
+  # Wed Aug 31 23:56:44 UTC 2022 -- Wed Aug 31 23:56:44 Australia 2022
   #
-  # Merged PR 8350: Filebeat zookeeper module
-  # 0decbb4280961ba046268b93dcd625e23a5abdf0
-  dante_build_id: '329700'
+  # Merge pull request 8339 from dante_python_upgrade into master
+  # c8065adb0ff4f7ab7b1f9f4e25481a644e027d6c
+  dante_build_id: '330289'
 
-  # virgil 20220831.3
-  # Wed Aug 31 00:57:43 UTC 2022 -- Wed Aug 31 00:57:43 Australia 2022
+  # virgil 20220901.3
+  # Wed Aug 31 23:34:04 UTC 2022 -- Wed Aug 31 23:34:04 Australia 2022
   #
-  # Merge pull request 8338 from virgil_python_upgrade into master
-  # 12f135ca1b5fdc9af5c7643bd28a2b2b90f7ee60
-  virgil_build_id: '329322'
+  # Merge pull request 8355 from virgil_python_upgrade into master
+  # 1992ff982845af2ab424e6f53e3324109528fcf2
+  virgil_build_id: '330276'
