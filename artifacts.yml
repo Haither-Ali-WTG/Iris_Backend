@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220901.1
-  # Wed Aug 31 23:56:44 UTC 2022 -- Wed Aug 31 23:56:44 Australia 2022
+  # dante build artifact 20220902.1
+  # Fri Sep  2 04:07:36 UTC 2022 -- Fri Sep  2 04:07:36 Australia 2022
   #
-  # Merge pull request 8339 from dante_python_upgrade into master
-  # c8065adb0ff4f7ab7b1f9f4e25481a644e027d6c
-  dante_build_id: '330289'
+  # Merge pull request 8377 from dante_artifact_upgrade into master
+  # a1225f986645f880167f3a7f3e2dbc174f03f2a1
+  dante_build_id: '331629'
 
-  # virgil 20220901.3
-  # Wed Aug 31 23:34:04 UTC 2022 -- Wed Aug 31 23:34:04 Australia 2022
+  # virgil 20220902.8
+  # Thu Sep  1 23:03:06 UTC 2022 -- Thu Sep  1 23:03:06 Australia 2022
   #
-  # Merge pull request 8355 from virgil_python_upgrade into master
-  # 1992ff982845af2ab424e6f53e3324109528fcf2
-  virgil_build_id: '330276'
+  # Merged PR 8375: Add SN2010 apexes for storage VLAN 1029
+  # 42c81c2de8a70a9fc93f37368826fe39be0fe6bb
+  virgil_build_id: '331382'
