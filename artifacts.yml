@@ -7,9 +7,9 @@ variables:
   # 7634a65f5ae8054781a058d3ce32392331de9781
   dante_build_id: '334263'
 
-  # virgil 20220902.11
-  # Fri Sep  2 07:44:03 UTC 2022 -- Fri Sep  2 07:44:03 Australia 2022
+  # virgil 20220905.2
+  # Sun Sep  4 23:36:35 UTC 2022 -- Sun Sep  4 23:36:35 Australia 2022
   #
-  # Merged PR 8366: blazor corp app vlan
-  # 845abfe73c41b18d3386004f3d9cdf4984e19d41
-  virgil_build_id: '331823'
+  # Merge pull request 8385 from virgil_python_upgrade into master
+  # 89b9c9d9c0bf0732c8c82d91e95da0aec85d96b6
+  virgil_build_id: '334284'
