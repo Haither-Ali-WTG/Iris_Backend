@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220902.1
-  # Fri Sep  2 04:07:36 UTC 2022 -- Fri Sep  2 04:07:36 Australia 2022
+  # dante build artifact 20220905.1
+  # Sun Sep  4 23:20:18 UTC 2022 -- Sun Sep  4 23:20:18 Australia 2022
   #
-  # Merge pull request 8377 from dante_artifact_upgrade into master
-  # a1225f986645f880167f3a7f3e2dbc174f03f2a1
-  dante_build_id: '331629'
+  # Merged PR 8378: Full Simulation of Certificate Authority
+  # 7634a65f5ae8054781a058d3ce32392331de9781
+  dante_build_id: '334263'
 
-  # virgil 20220902.8
-  # Thu Sep  1 23:03:06 UTC 2022 -- Thu Sep  1 23:03:06 Australia 2022
+  # virgil 20220902.11
+  # Fri Sep  2 07:44:03 UTC 2022 -- Fri Sep  2 07:44:03 Australia 2022
   #
-  # Merged PR 8375: Add SN2010 apexes for storage VLAN 1029
-  # 42c81c2de8a70a9fc93f37368826fe39be0fe6bb
-  virgil_build_id: '331382'
+  # Merged PR 8366: blazor corp app vlan
+  # 845abfe73c41b18d3386004f3d9cdf4984e19d41
+  virgil_build_id: '331823'
