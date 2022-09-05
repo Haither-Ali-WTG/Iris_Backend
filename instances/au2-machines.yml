@@ -1,0 +1,9 @@
+---
+machines:
+  hosts:
+    au2_machine1:
+      os: rhel
+    au2_machine2:
+      os: ubuntu
+    au2_machine3:
+      os: rhel

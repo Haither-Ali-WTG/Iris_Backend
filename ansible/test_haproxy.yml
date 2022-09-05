@@ -1,31 +1,31 @@
 ---
-- hosts: localhost
+- name: Set simulation facts
+  hosts: machines
   gather_facts: no
   tasks:
-    - name: Create group with test machine based on inventory name
-      add_host:
-        name: "{{ item }}"
-        groups: tdd
+    - name: Set additional facts for simulating the machines
+      # TODO many of these will go into the inventory or will be calculated differently
+      set_fact:
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-        ansible_host: "172.24.0.{{ ansible_loop.index }}"
+        ansible_host: "172.24.0.{{ ansible_play_hosts_all.index(inventory_hostname) + 1 }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
         virgil_mac_oob_dante: '...'
-        virgil_hostname: "{{ item }}"
+        virgil_hostname: "{{ inventory_hostname }}"
         use_iso: false
         images_folder: "/mnt/storage"
         virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
         virgil_groups: ['mgmt']
         simulation_proxy: "http://172.31.255.254:3128"
         virgil_port_oob_dante: eth0
-        virgil_internal_fqdn: "{{ item }}"
+        virgil_internal_fqdn: "{{ inventory_hostname }}"
         cpu: 4
         ram: 8192
-      when: item not in ['all', 'ungrouped']
-      loop: "{{ groups.keys() }}"
-      loop_control:
-        extended: yes
 
+- name: Create hypervisor group
+  hosts: localhost
+  gather_facts: no
+  tasks:
     - name: Add host to hypervisor group
       add_host:
         name: "{{ hypervisor | default('localhost') }}"
@@ -33,8 +33,8 @@
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
         images_folder: "/mnt/storage"
 
-
-- hosts: hypervisor
+- name: Configure hypervisor
+  hosts: hypervisor
   tasks:
     - name: "Install s3cmd"
       apt:
@@ -57,22 +57,10 @@
       changed_when: true
 
 
-- hosts: tdd
+- name: Deploy simulated machines
+  hosts: machines
   gather_facts: no
   tasks:
-    # We are building test VMs which need to have all variables from each inventory
-    # This is needed because each inventory may have multiple frontends with common group vars
-    - name: Copy all group variables
-      set_fact:
-        "{{ item.key }}": "{{ item.value }}"
-      loop: "{{ hostvars[groups[inventory_hostname][0]] | dict2items }}"
-      # Excluding ansible specific variables
-      when:
-        - "item.key != 'omit'"
-        - "'ansible' not in item.key"
-        - "'inventory' not in item.key"
-        - "'group' not in item.key"
-
     - name: Set additional facts
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
