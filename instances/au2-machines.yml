@@ -3,10 +3,7 @@ machines:
   hosts:
     au2_machine1:
       os: rhel
-      ansible_host: 172.24.0.1
     au2_machine2:
       os: ubuntu
-      ansible_host: 172.24.0.2
     au2_machine3:
       os: rhel
-      ansible_host: 172.24.0.3
