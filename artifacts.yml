@@ -7,9 +7,9 @@ variables:
   # 7634a65f5ae8054781a058d3ce32392331de9781
   dante_build_id: '334263'
 
-  # virgil 20220905.2
-  # Sun Sep  4 23:36:35 UTC 2022 -- Sun Sep  4 23:36:35 Australia 2022
+  # virgil 20220905.10
+  # Mon Sep  5 05:41:47 UTC 2022 -- Mon Sep  5 05:41:47 Australia 2022
   #
-  # Merge pull request 8385 from virgil_python_upgrade into master
-  # 89b9c9d9c0bf0732c8c82d91e95da0aec85d96b6
-  virgil_build_id: '334284'
+  # Merged PR 8393: Export SCOM Config for PROD domain
+  # 6a5d031963fe0855ee41f01d0afc967bd334bf2b
+  virgil_build_id: '334580'
