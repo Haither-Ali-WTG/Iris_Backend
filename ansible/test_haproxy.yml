@@ -60,19 +60,6 @@
   hosts: machines
   gather_facts: no
   tasks:
-    # We are building test VMs which need to have all variables from each inventory
-    # This is needed because each inventory may have multiple frontends with common group vars
-    - name: Copy all group variables
-      set_fact:
-        "{{ item.key }}": "{{ item.value }}"
-      loop: "{{ hostvars[groups[inventory_hostname][0]] | dict2items }}"
-      # Excluding ansible specific variables
-      when:
-        - "item.key != 'omit'"
-        - "'ansible' not in item.key"
-        - "'inventory' not in item.key"
-        - "'group' not in item.key"
-
     - name: Set additional facts
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
