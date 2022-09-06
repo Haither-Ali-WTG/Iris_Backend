@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220906.1
-  # Tue Sep  6 01:35:19 UTC 2022 -- Tue Sep  6 01:35:19 Australia 2022
+  # dante build artifact 20220906.2
+  # Tue Sep  6 03:04:51 UTC 2022 -- Tue Sep  6 03:04:51 Australia 2022
   #
-  # Merged PR 8380: Enroll CA Certificate explicitly if not auto-enrolled by GPO
-  # 5d8a5cba0fe31defe4b238103d684ebbdac738bb
-  dante_build_id: '335389'
+  # Merged PR 8401: Updated Ubuntu 22.04 ISO to 22.04.1
+  # 0a8acce42106046dea36f18e96de24cc2fc1582b
+  dante_build_id: '335457'
 
   # virgil 20220906.2
   # Tue Sep  6 01:00:44 UTC 2022 -- Tue Sep  6 01:00:44 Australia 2022
