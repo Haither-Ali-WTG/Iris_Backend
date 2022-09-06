@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220905.1
-  # Sun Sep  4 23:20:18 UTC 2022 -- Sun Sep  4 23:20:18 Australia 2022
+  # dante build artifact 20220906.1
+  # Tue Sep  6 01:35:19 UTC 2022 -- Tue Sep  6 01:35:19 Australia 2022
   #
-  # Merged PR 8378: Full Simulation of Certificate Authority
-  # 7634a65f5ae8054781a058d3ce32392331de9781
-  dante_build_id: '334263'
+  # Merged PR 8380: Enroll CA Certificate explicitly if not auto-enrolled by GPO
+  # 5d8a5cba0fe31defe4b238103d684ebbdac738bb
+  dante_build_id: '335389'
 
-  # virgil 20220905.10
-  # Mon Sep  5 05:41:47 UTC 2022 -- Mon Sep  5 05:41:47 Australia 2022
+  # virgil 20220906.2
+  # Tue Sep  6 01:00:44 UTC 2022 -- Tue Sep  6 01:00:44 Australia 2022
   #
-  # Merged PR 8393: Export SCOM Config for PROD domain
-  # 6a5d031963fe0855ee41f01d0afc967bd334bf2b
-  virgil_build_id: '334580'
+  # Merge pull request 8405 from virgil_python_upgrade into master
+  # 4b8740bc2343dc39d648fa558b6596ad84e93528
+  virgil_build_id: '335359'
