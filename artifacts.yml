@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220906.2
-  # Tue Sep  6 03:04:51 UTC 2022 -- Tue Sep  6 03:04:51 Australia 2022
+  # dante build artifact 20220906.3
+  # Tue Sep  6 05:06:20 UTC 2022 -- Tue Sep  6 05:06:20 Australia 2022
   #
-  # Merged PR 8401: Updated Ubuntu 22.04 ISO to 22.04.1
-  # 0a8acce42106046dea36f18e96de24cc2fc1582b
-  dante_build_id: '335457'
+  # Merge pull request 8374 from dante_python_upgrade into master
+  # 1e6dff391fcaf275cf3543a991abf981e4e21d61
+  dante_build_id: '335548'
 
-  # virgil 20220906.2
-  # Tue Sep  6 01:00:44 UTC 2022 -- Tue Sep  6 01:00:44 Australia 2022
+  # virgil 20220906.8
+  # Tue Sep  6 05:18:00 UTC 2022 -- Tue Sep  6 05:18:00 Australia 2022
   #
-  # Merge pull request 8405 from virgil_python_upgrade into master
-  # 4b8740bc2343dc39d648fa558b6596ad84e93528
-  virgil_build_id: '335359'
+  # Merged PR 8120: Add KVM hosts
+  # 6cb3d5d459a78a283519834006817799f8456c61
+  virgil_build_id: '335559'
