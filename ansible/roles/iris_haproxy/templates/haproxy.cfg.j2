@@ -1,0 +1,250 @@
+# ### This file is deployed by Iris ###
+
+# HAProxy configuration for {{ instance.name }}
+
+
+# Global settings
+# ###############
+
+########################################
+###### GLOBAL AND DEFAULT SETTINGS #####
+########################################
+
+
+
+global
+#########
+daemon
+
+# Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
+# which uses 32 processes (and no nbthread setting).
+
+nbproc {{ instance.processes | default(1) }}
+nbthread {{ instance.threads | default(8) }}
+
+# Logging directive; in some cases, we need to extend the log line length to 4096.
+
+
+#hard-stop-after 1s #affects streams (RDP?), avoid it
+log 127.0.0.1 local7
+
+# The cipher profile.
+
+ssl-default-bind-ciphersuites {{ cipher.suites | join(':') }}
+ssl-default-bind-ciphers {{ cipher.ciphers | join(':') }}
+ssl-default-bind-options {{ cipher.bind_options | join(' ') }}
+
+ssl-default-server-options ssl-min-ver {{ cipher.ssl_min }} ssl-max-ver {{ cipher.ssl_max }}
+
+tune.ssl.default-dh-param 4096
+ssl-server-verify none
+
+# Various other settings, mostly uniform although maxconn is sometimes higher.
+
+maxconn {{ instance.maxconn | default(200000) }}
+stats socket /var/run/haproxy/haproxy.sock mode 660 expose-fd listeners level admin
+server-state-file /var/run/haproxy/global-state
+stats socket 127.0.0.1:{{ instance.stats_ports.socket }} level admin
+stats timeout 2m
+
+
+
+defaults
+#########
+
+# Mode http or tcp:
+
+
+
+mode    {{ proxy.mode }}
+log 127.0.0.1 local7
+
+# Timeouts; we will configure these by profiles, potentially with overrides
+
+timeout client          {{ "%4d" | format(timeout.client) }}s
+timeout connect         {{ "%4d" | format(timeout.connect) }}s
+timeout server          {{ "%4d" | format(timeout.server) }}s
+timeout tunnel          {{ "%4d" | format(timeout.tunnel) }}s
+timeout http-keep-alive {{ "%4d" | format(timeout.http_keep_alive) }}s
+timeout http-request    {{ "%4d" | format(timeout.http_request) }}s
+timeout queue           {{ "%4d" | format(timeout.queue) }}s
+timeout tarpit          {{ "%4d" | format(timeout.tarpit) }}s
+
+# Proxying options, including balance leastconn vs roundrobin and the like.
+
+fullconn {{ proxy.fullconn }}
+option redispatch
+balance {{ proxy.balance }}
+option httplog
+option forwardfor
+option allbackups
+retries 3
+default-server inter 3s rise 2 fall 3 maxconn 5000 resolve-prefer ipv4 check init-addr libc,last
+load-server-state-from-file none
+dynamic-cookie-key WTGLB
+#option http-server-close #breaks login keep it disabled
+
+# Note: The ##haproxy-prod-sqlreadonly.cfg.j2## config in US2 appends ",none" to the
+# ##default-server## line to ensure that the simulations pass even if the backends are
+# unreachable/down as the current simulations cannot resolve hostnames against our BIND
+# instances. This will likely be different in the new, isolated simulations.
+
+
+########################################
+###### STATS ###########################
+########################################
+
+
+
+listen stats
+bind :{{ instance.stats_ports.web }}
+mode http
+stats enable
+stats show-node
+stats realm Haproxy\ Statistics
+stats uri /
+#stats refresh 10s
+stats show-legends
+
+{% if instance.processes | default(1) > 1 %}
+bind-process 1
+{% endif %}
+
+# This should also have a log-format directive, the same as an http main frontend (or the
+# log directive may be global).
+
+
+#######################################
+###### FRONTEND #######################
+#######################################
+
+# We use a full proxy rather than a frontend in order to XXXXX
+
+
+
+listen l7Frontend
+#max number of connections to be sent to this frontend
+maxconn {{ proxy.maxconn }}
+#needs full conn to instance the dynamic backend
+fullconn {{ proxy.fullconn }}
+
+
+
+errorfile 403 /usr/local/etc/haproxy/sorry.http
+errorfile 503 /usr/local/etc/haproxy/sorry.http
+
+
+
+capture request header Host len 32
+capture request header user-agent len 150
+http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
+http-response set-header X-Content-Type-Options nosniff
+
+
+
+#breaks Exchange Web
+#http-response set-header X-Frame-Options DENY
+
+log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
+
+# TODO escape values appropriately for JSON, particularly those that come from the
+# remote end. HAProxy has a ##json()## converter for this purpose.
+
+
+
+
+bind {% for item in instance.frontend_ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %}
+
+bind {% for item in instance.frontend_ports.http.ssl %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %} {% for item in instance.certificates %} ssl crt /usr/local/etc/haproxy/certs/{{ item }}/bundle.pem {% endfor %} alpn h2,http/1.1
+
+# TODO: the certificates currently cause problems with the line length limit, use a
+# certificate directory instead.
+
+
+# ACLs and rules
+# ##############
+
+# CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
+http-request deny if { req.hdr_cnt(content-length) gt 1 }
+http-response deny if { res.hdr_cnt(content-length) gt 1 }
+
+
+{% set ns = namespace(prev_description=none) %}
+{% for acl in proxy.acls %}
+{% if loop.first or acl.description != ns.prev_description %}
+
+# {{ acl.description }}
+{% set ns.prev_description = acl.description %}
+{% endif %}
+acl {{ acl.name }} {{ acl.criterion }} {{ acl.flags }} {{ acl.operator }} {{ acl.value }}
+{% endfor %}
+
+
+### HTTP Requests Manipulation
+## Enforce X-Forwarded-Proto
+http-request set-header X-Forwarded-Proto https if { ssl_fc }
+http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
+## Enforce X-Forwarded-Host
+http-request set-header X-Forwarded-Host %[req.hdr(Host)]
+
+# Rarely, also set other headers
+
+#Attributes required from client cert - TODO work with customer to ensure SHA1 isn't in use:
+http-request set-header X-SSL                       %[ssl_fc]
+http-request set-header X-SSL-Client-Verify         %[ssl_c_verify]
+http-request set-header X-SSL-Client-SHA1           %{+Q}[ssl_c_sha1,hex]
+http-request set-header X-SSL-Client-DN             %{+Q}[ssl_c_s_dn]
+http-request set-header X-SSL-Client-CN             %{+Q}[ssl_c_s_dn(cn)]
+http-request set-header X-SSL-Issuer                %{+Q}[ssl_c_i_dn]
+http-request set-header X-SSL-Client-Not-Before     %{+Q}[ssl_c_notbefore]
+http-request set-header X-SSL-Client-Serial         %{+Q}[ssl_c_serial,hex]
+http-request set-header X-SSL-Client-Version        %{+Q}[ssl_c_version]
+
+
+
+{% for rule in proxy.rules %}
+{% if loop.first or rule.description != ns.prev_description %}
+
+# {{ rule.description }}
+{% set ns.prev_description = rule.description %}
+{% endif %}
+rule {{ rule.name }} {{ rule.criterion }} {{ rule.flags }} {{ rule.operator }} {{ rule.value }}
+{% endfor %}
+
+
+### HTTP to HTTPS REDIRECTS (worth redirecting http to https for the domains covered by wildcard certificates) *** THESE ONES GO AS LAST REDIRECTS ***
+redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+
+# If no other backend has been selected, use the host name (with . replaced by _); in a
+# generated config, we could either retain this or generate individual "use backend if"
+# rules.
+
+#### Default Backend Selection
+use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
+
+
+# Backends
+# ########
+
+
+{% for backend in backends %}
+backend {{ backend.name }}
+{% if backend.balance %}balance {{ backend.balance }}
+{% endif %}
+option httpchk HEAD {{ backend.healthCheck }} HTTP/1.1\r\nHost:\ {{ backend.hostname }}
+http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
+{% if backend.cookie %}
+cookie {{ backend.cookie }} insert indirect nocache dynamic
+{% endif %}
+default-server inter 10000 {%- if backend.encryption %} ssl{% endif %}
+
+{%     for server in backend.servers %}
+server {{ server.name }} {{ backend.ip }}:{{ backend.port }} check
+{%     endfor %}
+
+{% endfor %}
+
+
+# Note that the connections to the server backends are unencrypted, to allow the Palo
+# Altos to inspect traffic. This is a trade-off; best practices would suggest encrypting
+# the traffic to the backends, but then the Palos wouldn't be able to inspect it.
