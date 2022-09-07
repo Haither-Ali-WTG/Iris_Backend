@@ -26,7 +26,7 @@ nbthread {{ instance.threads | default(8) }}
 
 
 #hard-stop-after 1s #affects streams (RDP?), avoid it
-log 127.0.0.1 local7
+log 127.0.0.1 len 4096 local7
 
 # The cipher profile.
 
@@ -53,11 +53,8 @@ defaults
 #########
 
 # Mode http or tcp:
-
-
-
 mode    {{ proxy.mode }}
-log 127.0.0.1 local7
+
 
 # Timeouts; we will configure these by profiles, potentially with overrides
 
@@ -75,7 +72,6 @@ timeout tarpit          {{ "%4d" | format(timeout.tarpit) }}s
 fullconn {{ proxy.fullconn }}
 option redispatch
 balance {{ proxy.balance }}
-option httplog
 option forwardfor
 option allbackups
 retries 3
@@ -88,6 +84,18 @@ dynamic-cookie-key WTGLB
 # ##default-server## line to ensure that the simulations pass even if the backends are
 # unreachable/down as the current simulations cannot resolve hostnames against our BIND
 # instances. This will likely be different in the new, isolated simulations.
+
+
+# Logging configuration
+log global
+{% if proxy.mode == 'http' %}
+log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
+{% else %}
+log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s",  "Tw" : "%Tw", "Tc" : "%Tc", "Tt" : "%Tt", "termination_state" : "%ts", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl"}'
+{% endif %}
+
+# TODO escape values appropriately for JSON, particularly those that come from the
+# remote end. HAProxy has a ##json()## converter for this purpose.
 
 
 ########################################
@@ -144,11 +152,6 @@ http-response set-header X-Content-Type-Options nosniff
 
 #breaks Exchange Web
 #http-response set-header X-Frame-Options DENY
-
-log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
-
-# TODO escape values appropriately for JSON, particularly those that come from the
-# remote end. HAProxy has a ##json()## converter for this purpose.
 
 
 
