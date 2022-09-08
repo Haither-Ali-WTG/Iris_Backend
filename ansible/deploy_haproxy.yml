@@ -1,0 +1,52 @@
+---
+- name: Generate the "instance" inventory entries
+  hosts: clusters
+  strategy: linear
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Create instance inventory entry
+      add_host:
+        name: inst_{{ inventory_hostname }}_{{ item.key }}
+        groups:
+          - instances
+          - "instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
+        cluster_overrides: "{{ item.value or {} }}"
+        # TODO: machine overrides
+        # TODO: groups from cluster and machine settings
+        # TODO: ansible_host from machine
+      with_dict: "{{ cluster_machines }}"
+      loop_control:
+        index_var: i
+        label: "{{ item.key }}"
+
+- name: Setup on the machines
+  hosts: machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: msg
+      debug:
+        msg: per-machine setup
+
+- name: Setup the instances
+  hosts: instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: msg
+      debug:
+        msg: per-instance setup
+
+- name: Per-cluster setup (if needed)
+  hosts: clusters
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: msg
+      debug:
+        msg: per-cluster setup
