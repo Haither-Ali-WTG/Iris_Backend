@@ -82,7 +82,7 @@
           delegate_to: "{{ groups['hypervisor'][0] }}"
 
 - name: Deploy haproxy on simulated machines
-  include_playbook: deploy_haproxy.yml
+  import_playbook: deploy_haproxy.yml
 
 - name: Check haproxy
   import_playbook: check_haproxy.yml
