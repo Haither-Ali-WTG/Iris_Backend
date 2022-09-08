@@ -1,4 +1,31 @@
 ---
+- name: Set container engine
+  include_role:
+    name: container_runner
+    tasks_from: define_engine.yml
+
+- name: "Get list of containers"
+  command: >-
+    {{ engine }} ps -a
+  changed_when: false
+  become: yes
+  register: container_list
+
+- name: Dump out list of containers
+  debug:
+    var: container_list
+
+- name: Get logs for container
+  command: >-
+    {{ engine }} logs iris_{{ inventory_hostname }}
+  changed_when: false
+  become: yes
+  register: container_logs
+
+- name: Dump out logs of container
+  debug:
+    var: container_logs
+
 - name: Retrieve the stats page
   uri:
     url: http://{{ ansible_host }}:{{ instance.stats_ports.web }}/;json
