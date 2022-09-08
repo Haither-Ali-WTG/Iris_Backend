@@ -1,0 +1,12 @@
+---
+- name: Retrieve the stats page
+  uri:
+    url: http://{{ ansible_host }}:{{ instance.stats_ports.web }}/;json
+    use_proxy: no
+  register: stats
+
+- name: Dump out the stats
+  debug:
+    var: stats.json
+
+# TODO more checks to come

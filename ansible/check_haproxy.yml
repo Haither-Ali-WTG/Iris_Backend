@@ -1,0 +1,32 @@
+---
+- name: Checks on the machines
+  hosts: machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: msg
+      debug:
+        msg: per-machine checks
+
+- name: Checks on the instances
+  hosts: instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Check the instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: check_instances.yml
+
+- name: Per-cluster checks
+  hosts: clusters
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: msg
+      debug:
+        msg: per-cluster checks
