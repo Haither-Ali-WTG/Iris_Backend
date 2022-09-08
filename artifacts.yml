@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220906.3
-  # Tue Sep  6 05:06:20 UTC 2022 -- Tue Sep  6 05:06:20 Australia 2022
+  # dante build artifact 20220908.1
+  # Thu Sep  8 05:55:07 UTC 2022 -- Thu Sep  8 05:55:07 Australia 2022
   #
-  # Merge pull request 8374 from dante_python_upgrade into master
-  # 1e6dff391fcaf275cf3543a991abf981e4e21d61
-  dante_build_id: '335548'
+  # Merged PR 8423: Refactoring to remove false fatal messages in simulation
+  # 909f3ccb65714e733a9e3ec34e1127d7b9845ad0
+  dante_build_id: '337687'
 
-  # virgil 20220906.8
-  # Tue Sep  6 05:18:00 UTC 2022 -- Tue Sep  6 05:18:00 Australia 2022
+  # virgil 20220908.8
+  # Thu Sep  8 03:28:34 UTC 2022 -- Thu Sep  8 03:28:34 Australia 2022
   #
-  # Merged PR 8120: Add KVM hosts
-  # 6cb3d5d459a78a283519834006817799f8456c61
-  virgil_build_id: '335559'
+  # Merged PR 8441: Virgil - Revert Ubuntu OS to 22.04 for Test Node Only
+  # 7873b46e5ce7bc22b1925f9598fc7f6acdcb03a9
+  virgil_build_id: '337578'
