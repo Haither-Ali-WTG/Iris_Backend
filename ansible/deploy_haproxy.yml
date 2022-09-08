@@ -37,9 +37,10 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: msg
-      debug:
-        msg: per-instance setup
+    - name: Deploy the instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: instances.yml
 
 - name: Per-cluster setup (if needed)
   hosts: clusters
