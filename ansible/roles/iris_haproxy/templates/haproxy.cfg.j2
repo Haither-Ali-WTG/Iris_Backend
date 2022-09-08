@@ -42,7 +42,7 @@ ssl-server-verify none
 # Various other settings, mostly uniform although maxconn is sometimes higher.
 
 maxconn {{ instance.maxconn | default(200000) }}
-stats socket /var/run/haproxy/haproxy.sock mode 660 expose-fd listeners level admin
+stats socket {{ instance.stats_ports.file }} mode 660 expose-fd listeners level admin
 server-state-file /var/run/haproxy/global-state
 stats socket 127.0.0.1:{{ instance.stats_ports.socket }} level admin
 stats timeout 2m
@@ -216,7 +216,8 @@ rule {{ rule.name }} {{ rule.criterion }} {{ rule.flags }} {{ rule.operator }} {
 
 
 ### HTTP to HTTPS REDIRECTS (worth redirecting http to https for the domains covered by wildcard certificates) *** THESE ONES GO AS LAST REDIRECTS ***
-redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+# TODO reinstate in some way
+#redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
 
 # If no other backend has been selected, use the host name (with . replaced by _); in a
 # generated config, we could either retain this or generate individual "use backend if"
