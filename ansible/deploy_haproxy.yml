@@ -6,6 +6,8 @@
   force_handlers: yes
   tasks:
     - name: Create instance inventory entry
+      vars:
+        machine: "{{ hostvars[item.key] }}"
       add_host:
         name: inst_{{ inventory_hostname }}_{{ item.key }}
         groups:
@@ -14,7 +16,12 @@
         cluster_overrides: "{{ item.value or {} }}"
         # TODO: machine overrides
         # TODO: groups from cluster and machine settings
-        # TODO: ansible_host from machine
+        ansible_host: "{{ machine.ansible_host }}"
+
+        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+        virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
+        virgil_os_variant: "{{ machine.virgil_os_variant }}"
+
       with_dict: "{{ cluster_machines }}"
       loop_control:
         index_var: i
@@ -27,14 +34,16 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: msg
-      debug:
-        msg: per-machine setup
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
 
 - name: Setup the instances
   hosts: instances
   strategy: free
-  gather_facts: no
+  gather_facts: yes
+  gather_subset: [min]
   force_handlers: yes
   tasks:
     - name: Deploy the instances

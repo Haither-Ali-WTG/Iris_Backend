@@ -20,6 +20,15 @@
   # TODO: validate
   register: haproxy_config
 
+- name: Template out the sorry page
+  template:
+    src: sorry.http.j2
+    dest: "{{ instance_dir }}/etc/sorry.http"
+    mode: u=r,go=
+  become: yes
+  # TODO: validate
+  register: sorry_page
+
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
@@ -27,9 +36,10 @@
     name: "iris_{{ inventory_hostname }}"
     workload: deployment
     image: wtgopstools.azurecr.io/dante/haproxy:2.1.4  # TODO configurable
-    restart: "{{ haproxy_config.changed }}"
+    restart: "{{ haproxy_config.changed or sorry_page.changed }}"
     environ:
       - "iris_haproxy_config_checksum={{ haproxy_config.checksum }}"
+      - "iris_sorry_page_checksum={{ sorry_page.checksum }}"
     volumes:
       - "{{ instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ instance_dir }}/run:/var/run/haproxy:z"
