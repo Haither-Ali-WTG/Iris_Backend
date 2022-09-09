@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220908.1
-  # Thu Sep  8 05:55:07 UTC 2022 -- Thu Sep  8 05:55:07 Australia 2022
+  # dante build artifact 20220909.1
+  # Thu Sep  8 23:33:17 UTC 2022 -- Thu Sep  8 23:33:17 Australia 2022
   #
-  # Merged PR 8423: Refactoring to remove false fatal messages in simulation
-  # 909f3ccb65714e733a9e3ec34e1127d7b9845ad0
-  dante_build_id: '337687'
+  # Merged PR 8456: Update dante-agent to the new image
+  # e694ea947b1973e8cd1c062019e7b847053c04b0
+  dante_build_id: '338397'
 
-  # virgil 20220908.8
-  # Thu Sep  8 03:28:34 UTC 2022 -- Thu Sep  8 03:28:34 Australia 2022
+  # virgil 20220909.2
+  # Thu Sep  8 18:06:19 UTC 2022 -- Thu Sep  8 18:06:19 Australia 2022
   #
-  # Merged PR 8441: Virgil - Revert Ubuntu OS to 22.04 for Test Node Only
-  # 7873b46e5ce7bc22b1925f9598fc7f6acdcb03a9
-  virgil_build_id: '337578'
+  # Merged PR 8449: Change Forward from FOR to AG0
+  # 3235521fcd2aad6098b61b0e1f7913fef2ba893d
+  virgil_build_id: '338186'
