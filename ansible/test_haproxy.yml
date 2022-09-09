@@ -80,3 +80,6 @@
         name: deploy_test_machines
         apply:
           delegate_to: "{{ groups['hypervisor'][0] }}"
+
+- name: Check haproxy
+  import_playbook: check_haproxy.yml
