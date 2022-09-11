@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220909.1
-  # Thu Sep  8 23:33:17 UTC 2022 -- Thu Sep  8 23:33:17 Australia 2022
+  # dante build artifact 20220911.1
+  # Sun Sep 11 12:07:27 UTC 2022 -- Sun Sep 11 12:07:27 Australia 2022
   #
-  # Merged PR 8456: Update dante-agent to the new image
-  # e694ea947b1973e8cd1c062019e7b847053c04b0
-  dante_build_id: '338397'
+  # Merge pull request 8464 from dante_python_upgrade into master
+  # 18b6058b55d373fe68c27d1b32061fdffad8f30d
+  dante_build_id: '340704'
 
   # virgil 20220909.2
   # Thu Sep  8 18:06:19 UTC 2022 -- Thu Sep  8 18:06:19 Australia 2022
