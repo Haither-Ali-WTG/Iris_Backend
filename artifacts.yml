@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220912.1
-  # Mon Sep 12 01:20:20 UTC 2022 -- Mon Sep 12 01:20:20 Australia 2022
+  # dante build artifact 20220912.2
+  # Mon Sep 12 02:25:05 UTC 2022 -- Mon Sep 12 02:25:05 Australia 2022
   #
-  # Merge pull request 8474 from dante_python_upgrade into master
-  # c48858a96abd0f4b894429095150ccbfd397392d
-  dante_build_id: '341213'
+  # Merged PR 8352: WIP: Dante - Kafka Pre-Checks #1
+  # 5ee44a0b9677ae4c3bfd85da3d1015fe271eb863
+  dante_build_id: '341270'
 
   # virgil 20220912.2
   # Mon Sep 12 01:09:36 UTC 2022 -- Mon Sep 12 01:09:36 Australia 2022
