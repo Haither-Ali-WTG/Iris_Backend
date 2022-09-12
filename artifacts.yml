@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220911.1
-  # Sun Sep 11 12:07:27 UTC 2022 -- Sun Sep 11 12:07:27 Australia 2022
+  # dante build artifact 20220912.1
+  # Mon Sep 12 01:20:20 UTC 2022 -- Mon Sep 12 01:20:20 Australia 2022
   #
-  # Merge pull request 8464 from dante_python_upgrade into master
-  # 18b6058b55d373fe68c27d1b32061fdffad8f30d
-  dante_build_id: '340704'
+  # Merge pull request 8474 from dante_python_upgrade into master
+  # c48858a96abd0f4b894429095150ccbfd397392d
+  dante_build_id: '341213'
 
-  # virgil 20220909.2
-  # Thu Sep  8 18:06:19 UTC 2022 -- Thu Sep  8 18:06:19 Australia 2022
+  # virgil 20220912.2
+  # Mon Sep 12 01:09:36 UTC 2022 -- Mon Sep 12 01:09:36 Australia 2022
   #
-  # Merged PR 8449: Change Forward from FOR to AG0
-  # 3235521fcd2aad6098b61b0e1f7913fef2ba893d
-  virgil_build_id: '338186'
+  # Merge pull request 8472 from virgil_python_upgrade into master
+  # 8806e243fc709133747e601af88389e1602c7185
+  virgil_build_id: '341201'
