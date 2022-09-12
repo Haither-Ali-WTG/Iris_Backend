@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220912.2
-  # Mon Sep 12 02:25:05 UTC 2022 -- Mon Sep 12 02:25:05 Australia 2022
+  # dante build artifact 20220913.1
+  # Mon Sep 12 15:09:03 UTC 2022 -- Mon Sep 12 15:09:03 Australia 2022
   #
-  # Merged PR 8352: WIP: Dante - Kafka Pre-Checks #1
-  # 5ee44a0b9677ae4c3bfd85da3d1015fe271eb863
-  dante_build_id: '341270'
+  # Merge pull request 8479 from dante_artifact_upgrade into master
+  # cca240dceecd5acd0ee6782a81d6be536ac91c6a
+  dante_build_id: '341860'
 
-  # virgil 20220912.2
-  # Mon Sep 12 01:09:36 UTC 2022 -- Mon Sep 12 01:09:36 Australia 2022
+  # virgil 20220912.7
+  # Mon Sep 12 04:05:32 UTC 2022 -- Mon Sep 12 04:05:32 Australia 2022
   #
-  # Merge pull request 8472 from virgil_python_upgrade into master
-  # 8806e243fc709133747e601af88389e1602c7185
-  virgil_build_id: '341201'
+  # Merged PR 8485: Update Media Agents in Virgil / Disable Bond
+  # e7946b9c027c6cbe71b39b5b28a132288c8b505b
+  virgil_build_id: '341353'
