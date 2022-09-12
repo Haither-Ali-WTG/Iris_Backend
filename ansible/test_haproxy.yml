@@ -81,5 +81,14 @@
         apply:
           delegate_to: "{{ groups['hypervisor'][0] }}"
 
+    - name: Actually wait 600 seconds for nodes to come up
+      # TODO clarify why this doesn't happen within the `deploy_test_machines` role
+      wait_for_connection:
+        connect_timeout: 5
+        timeout: 600
+
+- name: Deploy haproxy on simulated machines
+  import_playbook: deploy_haproxy.yml
+
 - name: Check haproxy
   import_playbook: check_haproxy.yml
