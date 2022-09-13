@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220913.3
-  # Tue Sep 13 03:18:37 UTC 2022 -- Tue Sep 13 03:18:37 Australia 2022
+  # dante build artifact 20220913.4
+  # Tue Sep 13 04:35:10 UTC 2022 -- Tue Sep 13 04:35:10 Australia 2022
   #
-  # Merged PR 7967: enable basic molecule tests for filebeat
-  # 952a674b941a2a216e8798130bd8f188452ace19
-  dante_build_id: '342463'
+  # Merged PR 7968: enable molecule testing for auditd
+  # 07d6e32c693193e609177a952b0aacb377cfe373
+  dante_build_id: '342543'
 
   # virgil 20220913.5
   # Tue Sep 13 01:12:18 UTC 2022 -- Tue Sep 13 01:12:18 Australia 2022
