@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220913.5
-  # Tue Sep 13 05:36:07 UTC 2022 -- Tue Sep 13 05:36:07 Australia 2022
+  # dante build artifact 20220913.6
+  # Tue Sep 13 06:49:28 UTC 2022 -- Tue Sep 13 06:49:28 Australia 2022
   #
-  # Merged PR 8507: Rolled back agent image because latest one can't establish ssl connection
-  # c30d077ca9ed2cbc63790187a9d64cb82c6eb9db
-  dante_build_id: '342594'
+  # Merged PR 8508: Remove config replacement in the dante agent dockerfile
+  # 04715682734f27ed4c92a082496cbd7396ced428
+  dante_build_id: '342658'
 
   # virgil 20220913.5
   # Tue Sep 13 01:12:18 UTC 2022 -- Tue Sep 13 01:12:18 Australia 2022
