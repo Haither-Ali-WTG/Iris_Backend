@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220913.1
-  # Mon Sep 12 15:09:03 UTC 2022 -- Mon Sep 12 15:09:03 Australia 2022
+  # dante build artifact 20220913.2
+  # Tue Sep 13 01:17:43 UTC 2022 -- Tue Sep 13 01:17:43 Australia 2022
   #
-  # Merge pull request 8479 from dante_artifact_upgrade into master
-  # cca240dceecd5acd0ee6782a81d6be536ac91c6a
-  dante_build_id: '341860'
+  # Merged PR 8006: enable basic molecule testing for metricbeat
+  # 208d8b777b2b69ee3290e64dce80a30f053f0b5b
+  dante_build_id: '342333'
 
-  # virgil 20220912.7
-  # Mon Sep 12 04:05:32 UTC 2022 -- Mon Sep 12 04:05:32 Australia 2022
+  # virgil 20220913.5
+  # Tue Sep 13 01:12:18 UTC 2022 -- Tue Sep 13 01:12:18 Australia 2022
   #
-  # Merged PR 8485: Update Media Agents in Virgil / Disable Bond
-  # e7946b9c027c6cbe71b39b5b28a132288c8b505b
-  virgil_build_id: '341353'
+  # Merge pull request 8495 from virgil_python_upgrade into master
+  # 79e2a0212cfed287f220a8856e015b66ee9e27a0
+  virgil_build_id: '342326'
