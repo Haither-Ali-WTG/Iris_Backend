@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220913.4
-  # Tue Sep 13 04:35:10 UTC 2022 -- Tue Sep 13 04:35:10 Australia 2022
+  # dante build artifact 20220913.5
+  # Tue Sep 13 05:36:07 UTC 2022 -- Tue Sep 13 05:36:07 Australia 2022
   #
-  # Merged PR 7968: enable molecule testing for auditd
-  # 07d6e32c693193e609177a952b0aacb377cfe373
-  dante_build_id: '342543'
+  # Merged PR 8507: Rolled back agent image because latest one can't establish ssl connection
+  # c30d077ca9ed2cbc63790187a9d64cb82c6eb9db
+  dante_build_id: '342594'
 
   # virgil 20220913.5
   # Tue Sep 13 01:12:18 UTC 2022 -- Tue Sep 13 01:12:18 Australia 2022
