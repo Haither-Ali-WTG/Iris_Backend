@@ -8,7 +8,7 @@ ansible==6.3.0
     # via -r requirements.in
 ansible-compat==2.2.0
     # via ansible-lint
-ansible-core==2.13.3
+ansible-core==2.13.4
     # via
     #   ansible
     #   ansible-lint
@@ -174,7 +174,7 @@ wrapt==1.14.1
     # via astroid
 xmltodict==0.13.0
     # via yq
-yamllint==1.27.1
+yamllint==1.28.0
     # via
     #   -r requirements.in
     #   ansible-lint
