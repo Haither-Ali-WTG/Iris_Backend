@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220914.2
-  # Wed Sep 14 02:31:00 UTC 2022 -- Wed Sep 14 02:31:00 Australia 2022
+  # dante build artifact 20220914.3
+  # Wed Sep 14 06:00:32 UTC 2022 -- Wed Sep 14 06:00:32 Australia 2022
   #
-  # Merged PR 8526: Install Kerberos client for Windows.
-  # 870e5a6490c33f0531ec1ff74814db9c75c18e9f
-  dante_build_id: '343474'
+  # Merged PR 8528: Enable Dante-agent with Kerberos client installed
+  # cac71717f1d3285ff8145072c440a0d15e4d5e4c
+  dante_build_id: '343640'
 
-  # virgil 20220914.3
-  # Wed Sep 14 02:34:58 UTC 2022 -- Wed Sep 14 02:34:58 Australia 2022
+  # virgil 20220914.5
+  # Wed Sep 14 05:27:39 UTC 2022 -- Wed Sep 14 05:27:39 Australia 2022
   #
-  # Merged PR 8524: Suppress multiple VLAN IP test for dante-disabled nodes
-  # 7d60946d35ad11a9203d7976ff12b8edce5b5380
-  virgil_build_id: '343478'
+  # Merged PR 8516: AU2 Updated Windows Media Agents
+  # 96c15f83daf1e087d2e72eb9986c0b8ef0d5df23
+  virgil_build_id: '343601'
