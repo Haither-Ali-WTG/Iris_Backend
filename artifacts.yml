@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220914.3
-  # Wed Sep 14 06:00:32 UTC 2022 -- Wed Sep 14 06:00:32 Australia 2022
+  # dante build artifact 20220914.5
+  # Wed Sep 14 11:51:27 UTC 2022 -- Wed Sep 14 11:51:27 Australia 2022
   #
-  # Merged PR 8528: Enable Dante-agent with Kerberos client installed
-  # cac71717f1d3285ff8145072c440a0d15e4d5e4c
-  dante_build_id: '343640'
+  # Merge pull request 8527 from dante_artifact_upgrade into master
+  # 07152631c91858938f7fb354f3c1229884a3886f
+  dante_build_id: '343873'
 
   # virgil 20220914.5
   # Wed Sep 14 05:27:39 UTC 2022 -- Wed Sep 14 05:27:39 Australia 2022
