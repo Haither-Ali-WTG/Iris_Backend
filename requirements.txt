@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-ansible==6.3.0
+ansible==6.4.0
     # via -r requirements.in
 ansible-compat==2.2.0
     # via ansible-lint
@@ -28,7 +28,7 @@ black==22.8.0
     # via ansible-lint
 bracex==2.3.post1
     # via wcmatch
-certifi==2022.6.15.2
+certifi==2022.9.14
     # via requests
 cffi==1.15.1
     # via cryptography
