@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220914.5
-  # Wed Sep 14 11:51:27 UTC 2022 -- Wed Sep 14 11:51:27 Australia 2022
+  # dante build artifact 20220915.3
+  # Thu Sep 15 06:27:28 UTC 2022 -- Thu Sep 15 06:27:28 Australia 2022
   #
-  # Merge pull request 8527 from dante_artifact_upgrade into master
-  # 07152631c91858938f7fb354f3c1229884a3886f
-  dante_build_id: '343873'
+  # Merged PR 8546: Dante - Install Drivers to use --eth-only
+  # 9234ffd5201f1e352d38558e585b44306a96006e
+  dante_build_id: '344654'
 
-  # virgil 20220914.5
-  # Wed Sep 14 05:27:39 UTC 2022 -- Wed Sep 14 05:27:39 Australia 2022
+  # virgil 20220915.2
+  # Thu Sep 15 00:40:10 UTC 2022 -- Thu Sep 15 00:40:10 Australia 2022
   #
-  # Merged PR 8516: AU2 Updated Windows Media Agents
-  # 96c15f83daf1e087d2e72eb9986c0b8ef0d5df23
-  virgil_build_id: '343601'
+  # Merge pull request 8538 from virgil_python_upgrade into master
+  # bceab04959bede569655ee7a6ea0b83e88e965d0
+  virgil_build_id: '344395'
