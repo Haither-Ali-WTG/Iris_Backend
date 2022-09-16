@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220915.3
-  # Thu Sep 15 06:27:28 UTC 2022 -- Thu Sep 15 06:27:28 Australia 2022
+  # dante build artifact 20220916.1
+  # Fri Sep 16 01:15:13 UTC 2022 -- Fri Sep 16 01:15:13 Australia 2022
   #
-  # Merged PR 8546: Dante - Install Drivers to use --eth-only
-  # 9234ffd5201f1e352d38558e585b44306a96006e
-  dante_build_id: '344654'
+  # Merged PR 8534: Add some characters to satisfy xcc password requirement
+  # 9de8ef6d468e1973040b8c1148fe569533ca372b
+  dante_build_id: '345431'
 
   # virgil 20220916.2
   # Thu Sep 15 23:47:56 UTC 2022 -- Thu Sep 15 23:47:56 Australia 2022
