@@ -56,6 +56,9 @@
         - "{{ ubuntu_hypervisor_image }}"
       changed_when: true
 
+    - include_role:
+        name: collect_sites
+        tasks_from: enable_legacy_hashes_for_ssl.yml
 
 - name: Deploy simulated machines
   hosts: machines
