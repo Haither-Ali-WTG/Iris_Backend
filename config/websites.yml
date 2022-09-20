@@ -8,7 +8,7 @@
   balance: first
   cookie:
     enabled: no
-  maintenance_page: http://example.html
+  maintenance_page: example.html
 - name_like:
     - services
     - accounting
