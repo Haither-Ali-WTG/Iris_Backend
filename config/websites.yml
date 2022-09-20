@@ -18,7 +18,7 @@
   port: 443
   cookie:
     enabled: no
-- nameLike:
+- name_like:
     - neo-
   starts_with: neo-
   encryption: yes
