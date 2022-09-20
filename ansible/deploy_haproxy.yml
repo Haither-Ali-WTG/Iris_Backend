@@ -57,6 +57,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: msg
+    - name: Placeholder
       debug:
         msg: per-cluster setup
