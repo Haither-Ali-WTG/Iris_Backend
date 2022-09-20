@@ -6,7 +6,7 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: msg
+    - name: Placeholder
       debug:
         msg: per-machine checks
 
@@ -27,6 +27,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: msg
+    - name: Placeholder
       debug:
         msg: per-cluster checks
