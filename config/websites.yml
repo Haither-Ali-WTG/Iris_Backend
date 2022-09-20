@@ -1,0 +1,30 @@
+---
+- name_like:
+  - glow
+  starts_with: www-
+  encryption: yes
+  health_check: /Glow/wtg/ready
+  port: 443
+  balance: first
+  cookie:
+    enabled: no
+  maintenance_page: http://example.html
+- name_like:
+  - services
+  - accounting
+  starts_with: svc-
+  encryption: yes
+  health_check: "/"
+  port: 443
+  cookie:
+    enabled: no
+- nameLike:
+  - neo-
+  starts_with: neo-
+  encryption: yes
+  health_check: "/Glow/wtg/ready"
+  port: 443
+  balance: first
+  cookie:
+    enabled: yes
+    name: glow
