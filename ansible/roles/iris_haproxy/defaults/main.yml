@@ -50,7 +50,7 @@ proxy:
   #   operator: ...
   #   value: ...
 
-timeout:
+timeouts:
   client: 60
   connect: 60
   server: 300

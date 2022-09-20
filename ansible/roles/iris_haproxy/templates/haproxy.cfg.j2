@@ -58,14 +58,14 @@ mode    {{ proxy.mode }}
 
 # Timeouts; we will configure these by profiles, potentially with overrides
 
-timeout client          {{ "%4d" | format(timeout.client) }}s
-timeout connect         {{ "%4d" | format(timeout.connect) }}s
-timeout server          {{ "%4d" | format(timeout.server) }}s
-timeout tunnel          {{ "%4d" | format(timeout.tunnel) }}s
-timeout http-keep-alive {{ "%4d" | format(timeout.http_keep_alive) }}s
-timeout http-request    {{ "%4d" | format(timeout.http_request) }}s
-timeout queue           {{ "%4d" | format(timeout.queue) }}s
-timeout tarpit          {{ "%4d" | format(timeout.tarpit) }}s
+timeout client          {{ "%4d" | format(timeouts.client) }}s
+timeout connect         {{ "%4d" | format(timeouts.connect) }}s
+timeout server          {{ "%4d" | format(timeouts.server) }}s
+timeout tunnel          {{ "%4d" | format(timeouts.tunnel) }}s
+timeout http-keep-alive {{ "%4d" | format(timeouts.http_keep_alive) }}s
+timeout http-request    {{ "%4d" | format(timeouts.http_request) }}s
+timeout queue           {{ "%4d" | format(timeouts.queue) }}s
+timeout tarpit          {{ "%4d" | format(timeouts.tarpit) }}s
 
 # Proxying options, including balance leastconn vs roundrobin and the like.
 
