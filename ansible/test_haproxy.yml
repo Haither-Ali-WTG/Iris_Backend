@@ -14,7 +14,8 @@
         virgil_hostname: "{{ inventory_hostname }}"
         use_iso: false
         images_folder: "/mnt/storage"
-        virgil_ssh_authorized_keys: "{{ lookup('file', 'test_ssh_keys/id_rsa.pub') }}"
+        virgil_ssh_authorized_keys: >-
+            {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
         virgil_groups: ['mgmt']
         simulation_proxy: "http://172.31.255.254:3128"
         virgil_port_oob_dante: eth0
