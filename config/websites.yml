@@ -1,6 +1,6 @@
 ---
 - name_like:
-  - glow
+    - glow
   starts_with: www-
   encryption: yes
   health_check: /Glow/wtg/ready
@@ -10,8 +10,8 @@
     enabled: no
   maintenance_page: http://example.html
 - name_like:
-  - services
-  - accounting
+    - services
+    - accounting
   starts_with: svc-
   encryption: yes
   health_check: "/"
@@ -19,7 +19,7 @@
   cookie:
     enabled: no
 - nameLike:
-  - neo-
+    - neo-
   starts_with: neo-
   encryption: yes
   health_check: "/Glow/wtg/ready"

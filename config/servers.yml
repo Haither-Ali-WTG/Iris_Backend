@@ -1,25 +1,25 @@
 ---
 - computer_name_prefixes:
-  - syd
+    - syd
   domain_name: wg.cargowise.com
 - computer_name_prefixes:
-  - wg
+    - wg
   domain_name: wg.cargowise.com
 - computer_name_prefixes:
-  - lonwp
-  - sydwp
-  - au2wp
-  - ordwp
-  - us2wp
-  - de1wp
-  - cn1wp
+    - lonwp
+    - sydwp
+    - au2wp
+    - ordwp
+    - us2wp
+    - de1wp
+    - cn1wp
   domain_name: wisecloud.zone
 - computer_name_prefixes:
-  - lonwp
-  - sydwp
-  - au2wp
-  - ordwp
-  - us2wp
-  - de1wp
-  - cn1wp
+    - lonwp
+    - sydwp
+    - au2wp
+    - ordwp
+    - us2wp
+    - de1wp
+    - cn1wp
   domain_name: test.wisecloud.zone
