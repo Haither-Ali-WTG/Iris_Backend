@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220920.2
-  # Tue Sep 20 06:46:28 UTC 2022 -- Tue Sep 20 06:46:28 Australia 2022
+  # dante build artifact 20220923.1
+  # Fri Sep 23 00:43:59 UTC 2022 -- Fri Sep 23 00:43:59 Australia 2022
   #
-  # Merge pull request 8598 from dante_artifact_upgrade into master
-  # 3eb7e21912e628c97edeba05b3ed319681008f06
-  dante_build_id: '349484'
+  # Merged PR 8613: Mark new ansible errors as warnings
+  # 08cd47bac5c3d964236bb2b0cb4463180670d474
+  dante_build_id: '352184'
 
-  # virgil 20220921.2
-  # Wed Sep 21 00:02:15 UTC 2022 -- Wed Sep 21 00:02:15 Australia 2022
+  # virgil 20220923.1
+  # Fri Sep 23 00:28:31 UTC 2022 -- Fri Sep 23 00:28:31 Australia 2022
   #
-  # Merge pull request 8614 from virgil_python_upgrade into master
-  # 33fae644c40357ab22fb0965ae390be80b07b10c
-  virgil_build_id: '350193'
+  # Merged PR 8628: Fix BMC MAC for US2WP-SVIR-13
+  # 48ce6aeff451149ac51646aa3ad955fb328f7356
+  virgil_build_id: '352159'
