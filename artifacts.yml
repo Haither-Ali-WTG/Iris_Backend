@@ -7,9 +7,9 @@ variables:
   # 08cd47bac5c3d964236bb2b0cb4463180670d474
   dante_build_id: '352184'
 
-  # virgil 20220923.1
-  # Fri Sep 23 00:28:31 UTC 2022 -- Fri Sep 23 00:28:31 Australia 2022
+  # virgil 20220926.3
+  # Sun Sep 25 23:07:43 UTC 2022 -- Sun Sep 25 23:07:43 Australia 2022
   #
-  # Merged PR 8628: Fix BMC MAC for US2WP-SVIR-13
-  # 48ce6aeff451149ac51646aa3ad955fb328f7356
-  virgil_build_id: '352159'
+  # Merged PR 8611: updated switch ports for new au2 host
+  # 193bb353dc6e4a666aa90d25c5cc35b8cddec335
+  virgil_build_id: '354866'
