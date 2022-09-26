@@ -1,0 +1,157 @@
+"""
+Collect sites data from IIS machines using winrm
+
+Script collects data from all IIS machines using winrm module
+"""
+
+import argparse
+import yaml
+import concurrent.futures
+import re
+import sys
+import logging
+import os
+
+from datetime import datetime
+from winrm.protocol import Protocol
+
+def load_yaml_from_file(file_name):
+    result = dict()
+    with open(file_name, 'r') as stream:
+        try:
+            result = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+    return result
+
+def get_websites_with_parameters(sites_list, website_config, logger):
+    websites = dict()
+
+    for site_name in sites_list:
+        site_name = site_name.lower()
+        # This regular expression copied directly from Nico bash script
+        if not re.match(r'(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)',
+                        site_name):
+            logger.info('%s: Site name contains an illegal character. Skipping................',
+                        site_name)
+            continue
+
+        for config in website_config:
+            if (site_name.startswith(tuple(config['starts_with']))
+                 or any(map(site_name.__contains__, config['name_like']))):
+               websites[site_name] = config
+
+    return websites
+
+def get_websites_list(server_name, user_name, password, validate_ca):
+    p = Protocol(
+        endpoint='https://' + server_name +':5986/wsman',
+        transport='ntlm',
+        username=user_name,
+        password=password,
+        server_cert_validation=validate_ca)
+    shell_id = p.open_shell()
+    command_id = p.run_command(shell_id, '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
+                               ['list sites /serverAutoStart:true /text:name'])
+    std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
+    p.close_shell(shell_id)
+    if std_err:
+        raise ValueError("Error when executing AppCmd.exe: {0}".format(str(std_err)))
+
+    #some minor manipulations required with output
+    raw_output = std_out.decode("utf-8")
+    #split string output by new lines
+    sites_list = raw_output.split('\r\n')
+
+    #because of new line at the end of raw output, check and cut last element as well
+    if not sites_list[-1]:
+        del sites_list[-1]
+    sites_list.sort()
+    return sites_list
+
+def process_server(server_name, user_name, # pylint: disable=too-many-arguments
+                   password, website_config, output_path, validate_ca, logger):
+    try:
+        sites_list = get_websites_list(server_name, user_name, password, validate_ca)
+    except Exception as err:  # pylint: disable=broad-except
+        logger.info("%s: ERROR: %s", server_name, str(err))
+        return
+    if len(sites_list) == 0:
+        return
+
+    websites = get_websites_with_parameters(sites_list, website_config, logger)
+
+    with open("{0}/{1}".format(output_path, server_name), 'w') as outfile:
+        yaml.dump(websites, outfile, default_flow_style=False)
+
+    ##############################################################################################
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
+                        type=str)
+    parser.add_argument('--server_config_file', '-sc', help="File with servers configuration",
+                        type=str, default='config/servers.yml')
+    parser.add_argument('--website_config_file', '-wc', help="File with websites configuration",
+                        type=str, default='config/websites.yml')
+    parser.add_argument('--threads', '-t', help="Number of parallel executions",
+                        type=int, default='20')
+    parser.add_argument('--output_path', '-o', help="Output file path",
+                        type=str, default='servers')
+    # TODO: make check certificate default behavior
+    parser.add_argument('--validate_ca', '-ca', help="validate CA",
+                        type=str, default='ignore')
+    parser.add_argument('--user_name', '-u', help="User name",
+                        type=str, default='s_lbwinrmquerier')
+    parser.add_argument('--password', '-p', help="Password",
+                        type=str)
+    parser.add_argument('--debug_output', '-do', help="Output debug info",
+                        type=int, default=1)
+    args = parser.parse_args()
+
+    logging.basicConfig(level=logging.DEBUG if args.debug_output else logging.INFO,
+                        format="%(name)s - %(levelname)s - %(message)s")
+
+    logger = logging.getLogger("collect IIS sites data")
+    logger.info('Server list: %s', args.server_list)
+    logger.info('threads: %s', args.threads)
+    logger.info('Server Config File: %s', args.server_config_file)
+    logger.info('Website Config File: %s', args.website_config_file)
+    logger.info('Output Path: %s', args.output_path)
+    logger.info('Validating CA: %s', args.validate_ca)
+    logger.info('Username: %s', args.user_name)
+
+    start_time = datetime.now()
+    server_list = args.server_list.lower().split(',')
+
+    server_config = load_yaml_from_file(args.server_config_file)
+    websites_config = load_yaml_from_file(args.website_config_file)
+
+    if not os.path.exists(args.output_path):
+        os.mkdir(args.output_path)
+
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=args.threads)
+    results = []
+
+    for server in server_list:
+        server = server.strip()
+        if not server.startswith(tuple(server_config['computer_name_prefixes'])):
+            logger.info("%s: Server name not matching template. Skipping...............",
+                        server)
+            continue
+
+        logger.info("Adding to processing: %s", server)
+        results.append(executor.submit(process_server, server, args.user_name, args.password,
+                                       websites_config, args.output_path, args.validate_ca,
+                                       logger))
+
+    for future in concurrent.futures.as_completed(results):
+        try:
+            future.result()
+        except Exception as err:  # pylint: disable=broad-except
+            logger.info("ERROR while processing server: %s", str(err))
+
+    logger.info("Execution duration: %s", str(datetime.now() - start_time))
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,9 +1,10 @@
 ---
-- computer_name_prefixes:
+computer_name_prefixes:
     - syd
     - wg
     - lonwp
     - au2wp
+    - au2wt
     - ordwp
     - us2wp
     - de1wp
