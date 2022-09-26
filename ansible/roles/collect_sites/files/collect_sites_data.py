@@ -81,7 +81,7 @@ def process_server(server_name, user_name, # pylint: disable=too-many-arguments
 
     websites = get_websites_with_parameters(sites_list, website_config, logger)
 
-    with open("{0}/{1}".format(output_path, server_name), 'w') as outfile:
+    with open("{0}/{1}.yml".format(output_path, server_name), 'w') as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
 
     ##############################################################################################
