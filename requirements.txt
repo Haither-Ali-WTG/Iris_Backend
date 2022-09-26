@@ -111,6 +111,8 @@ pygments==2.13.0
     # via rich
 pylint==2.15.2
     # via -r requirements.in
+pymongo==4.0
+    # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
 pyrsistent==0.18.1
@@ -120,6 +122,8 @@ pytest==7.1.3
     #   -r requirements.in
     #   pytest-cov
 pytest-cov==3.0.0
+    # via -r requirements.in
+pywinrm==0.4.2
     # via -r requirements.in
 pyyaml==6.0
     # via
