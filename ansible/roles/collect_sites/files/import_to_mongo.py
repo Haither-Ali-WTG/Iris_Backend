@@ -1,5 +1,5 @@
 """
-Script imports data from json files to mongo
+Script imports data from yml files to mongo
 """
 
 import argparse
