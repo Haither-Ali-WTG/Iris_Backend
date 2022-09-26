@@ -3,16 +3,15 @@ Script imports data from json files to mongo
 """
 
 import argparse
-import sys
 import logging
-import codecs
 import socket
+import sys
+import yaml
 
 from glob import glob
 from datetime import datetime
 from os import path
 
-import yaml
 from pymongo import MongoClient
 
 def main():
