@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220923.1
-  # Fri Sep 23 00:43:59 UTC 2022 -- Fri Sep 23 00:43:59 Australia 2022
+  # dante build artifact 20220926.3
+  # Mon Sep 26 06:58:03 UTC 2022 -- Mon Sep 26 06:58:03 Australia 2022
   #
-  # Merged PR 8613: Mark new ansible errors as warnings
-  # 08cd47bac5c3d964236bb2b0cb4463180670d474
-  dante_build_id: '352184'
+  # Merged PR 8586: WIP: Dante - Mellanox Driver Changes - Use APT
+  # 7c643cbed356e51264f65154c2227d6d59d9d422
+  dante_build_id: '355224'
 
-  # virgil 20220926.3
-  # Sun Sep 25 23:07:43 UTC 2022 -- Sun Sep 25 23:07:43 Australia 2022
+  # virgil 20220926.5
+  # Sun Sep 25 23:56:26 UTC 2022 -- Sun Sep 25 23:56:26 Australia 2022
   #
-  # Merged PR 8611: updated switch ports for new au2 host
-  # 193bb353dc6e4a666aa90d25c5cc35b8cddec335
-  virgil_build_id: '354866'
+  # Merge pull request 8637 from virgil_python_upgrade into master
+  # c0667bf9461a28287b605ca8c55f7411ca788112
+  virgil_build_id: '354899'
