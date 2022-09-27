@@ -55,7 +55,7 @@ def get_websites_with_parameters(sites_list, website_config, logger):
                         site_name)
 
         if name_matched_times > 1:
-            logger.warning('%s: Site name matched more than one config. Using last one. Check manually',
+            logger.warning('%s: Site name matched more than one config. Using last one.......',
                         site_name)
 
     return websites
