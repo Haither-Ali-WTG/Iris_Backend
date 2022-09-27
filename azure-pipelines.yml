@@ -30,7 +30,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              pylint --rcfile=setup.cfg tests/
+              pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
             displayName: 'Python lint'
             condition: succeededOrFailed()
 

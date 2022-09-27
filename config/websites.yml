@@ -1,7 +1,8 @@
 ---
 - name_like:
     - glow
-  starts_with: www-
+  starts_with:
+    - www-
   encryption: yes
   health_check: /Glow/wtg/ready
   port: 443
@@ -12,7 +13,8 @@
 - name_like:
     - services
     - accounting
-  starts_with: svc-
+  starts_with:
+    - svc-
   encryption: yes
   health_check: "/"
   port: 443
@@ -20,7 +22,8 @@
     enabled: no
 - name_like:
     - neo-
-  starts_with: neo-
+  starts_with:
+    - neo-
   encryption: yes
   health_check: "/Glow/wtg/ready"
   port: 443

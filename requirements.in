@@ -1,6 +1,7 @@
 # required for Iris run
 ansible
 pymongo
+pywinrm
 
 # required for tests:
 ansible-lint

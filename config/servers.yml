@@ -1,10 +1,11 @@
 ---
-- computer_name_prefixes:
-    - syd
-    - wg
-    - lonwp
-    - au2wp
-    - ordwp
-    - us2wp
-    - de1wp
-    - cn1wp
+computer_name_prefixes:
+  - syd
+  - wg
+  - lonwp
+  - au2wp
+  - au2wt
+  - ordwp
+  - us2wp
+  - de1wp
+  - cn1wp
