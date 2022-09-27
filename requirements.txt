@@ -111,6 +111,8 @@ pygments==2.13.0
     # via rich
 pylint==2.15.3
     # via -r requirements.in
+pymongo==4.0
+    # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
 pyrsistent==0.18.1
