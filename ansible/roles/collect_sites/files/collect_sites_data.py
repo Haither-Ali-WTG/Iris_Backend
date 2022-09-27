@@ -6,23 +6,23 @@ Script collects data from all IIS machines using winrm module
 
 import argparse
 import concurrent.futures
+from datetime import datetime
 import logging
 import os
 import re
 import sys
 import yaml
 
-from datetime import datetime
 from winrm.protocol import Protocol
 
 def load_yaml_from_file(file_name):
-    result = dict()
-    with open(file_name, 'r') as stream:
-        result = yaml.safe_load(stream)
-    return result
+    """Loading yaml file to dictionary."""
+    with open(file_name, 'r', encoding="utf8") as stream:
+        return yaml.safe_load(stream)
 
 def get_websites_with_parameters(sites_list, website_config, logger):
-    websites = dict()
+    """Combine sites list with correspondent configuration from websites.yml"""
+    websites = {}
 
     for site_name in sites_list:
         site_name = site_name.lower()
@@ -36,11 +36,12 @@ def get_websites_with_parameters(sites_list, website_config, logger):
         for config in website_config:
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
-               websites[site_name] = config
+                websites[site_name] = config
 
     return websites
 
 def get_websites_list(server_name, user_name, password, validate_ca):
+    """Read sites list from IIS box using winrm"""
     p = Protocol(
         endpoint='https://' + server_name +':5986/wsman',
         transport='ntlm',
@@ -68,6 +69,7 @@ def get_websites_list(server_name, user_name, password, validate_ca):
 
 def process_server(server_name, user_name, # pylint: disable=too-many-arguments
                    password, website_config, output_path, validate_ca, logger):
+    """Read and process all websites data from give IIS box"""
     try:
         sites_list = get_websites_list(server_name, user_name, password, validate_ca)
     except Exception as err:  # pylint: disable=broad-except
@@ -78,7 +80,7 @@ def process_server(server_name, user_name, # pylint: disable=too-many-arguments
 
     websites = get_websites_with_parameters(sites_list, website_config, logger)
 
-    with open("{0}/{1}.yml".format(output_path, server_name), 'w') as outfile:
+    with open("{0}/{1}.yml".format(output_path, server_name), 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
 
     ##############################################################################################
