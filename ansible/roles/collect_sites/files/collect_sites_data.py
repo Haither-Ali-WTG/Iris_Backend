@@ -43,15 +43,19 @@ def get_websites_with_parameters(sites_list, website_config, logger):
                         site_name)
             continue
 
-        name_matched = False
+        name_matched_times = 0
         for config in website_config:
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
                 websites[site_name] = config
-                name_matched = True
+                name_matched_times += 1
 
-        if not name_matched:
+        if name_matched_times == 0:
             logger.info('%s: Site name does not match any config. Skipping................',
+                        site_name)
+
+        if name_matched_times > 1:
+            logger.warning('%s: Site name matched more than one config. Using last one. Check manually',
                         site_name)
 
     return websites
