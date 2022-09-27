@@ -11,10 +11,10 @@ from datetime import datetime
 import logging
 import os
 import re
-import requests
 import sys
 import yaml
 
+import requests
 from winrm.protocol import Protocol
 from winrm.exceptions import InvalidCredentialsError
 
