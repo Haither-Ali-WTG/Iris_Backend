@@ -62,10 +62,7 @@ def main():
 
             server_data = dict()
             with open(config, 'r') as stream:
-                try:
-                    server_data['services'] = yaml.safe_load(stream)
-                except yaml.YAMLError as exc:
-                    print(exc)
+                server_data['services'] = yaml.safe_load(stream)
 
             server_data['server_name'] = server_name
             try:
