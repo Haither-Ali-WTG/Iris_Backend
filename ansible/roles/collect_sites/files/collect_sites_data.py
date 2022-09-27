@@ -47,6 +47,9 @@ def get_websites_with_parameters(sites_list, website_config, logger):
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
                 websites[site_name] = config
+            else:
+                logger.info('%s: Site name does not match any config. Skipping................',
+                            site_name)
 
     return websites
 
