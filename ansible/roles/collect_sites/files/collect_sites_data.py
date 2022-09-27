@@ -146,10 +146,7 @@ def main():
                                        logger))
 
     for future in concurrent.futures.as_completed(results):
-        try:
-            future.result()
-        except Exception as err:  # pylint: disable=broad-except
-            logger.info("ERROR while processing server: %s", str(err))
+        future.result()
 
     logger.info("Execution duration: %s", str(datetime.now() - start_time))
     return 0
