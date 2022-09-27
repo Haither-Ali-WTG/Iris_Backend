@@ -11,7 +11,7 @@ from datetime import datetime
 import logging
 import os
 import re
-from requests.exceptions import ConnectionError
+import requests
 import sys
 import yaml
 
@@ -20,6 +20,7 @@ from winrm.exceptions import InvalidCredentialsError
 
 @dataclass
 class ConnectionParameters:
+    """Dataclass to store basic connection parameters"""
     user_name: str
     password: str
     validate_ca: str
@@ -80,7 +81,7 @@ def process_server(server_name, connection_params, website_config, output_path, 
     """Read and process all websites data from give IIS box"""
     try:
         sites_list = get_websites_list(server_name, connection_params)
-    except (ValueError, InvalidCredentialsError, ConnectionError) as err:
+    except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
         logger.info("%s: ERROR: %s", server_name, str(err))
         return
     if len(sites_list) == 0:
@@ -150,7 +151,8 @@ def main():
 
         logger.info("Adding to processing: %s", server)
         results.append(executor.submit(process_server, server,
-                                       ConnectionParameters(args.user_name, args.password, args.validate_ca),
+                                       ConnectionParameters(args.user_name, args.password,
+                                       args.validate_ca),
                                        websites_config, args.output_path, logger))
 
     for future in concurrent.futures.as_completed(results):
