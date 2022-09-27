@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220926.3
-  # Mon Sep 26 06:58:03 UTC 2022 -- Mon Sep 26 06:58:03 Australia 2022
+  # dante build artifact 20220927.1
+  # Mon Sep 26 23:51:34 UTC 2022 -- Mon Sep 26 23:51:34 Australia 2022
   #
-  # Merged PR 8586: WIP: Dante - Mellanox Driver Changes - Use APT
-  # 7c643cbed356e51264f65154c2227d6d59d9d422
-  dante_build_id: '355224'
+  # Merged PR 8651: Enable K8s addons on 3 nodes.
+  # 2facdf51a93f666ac3e104a417700c625d987dd9
+  dante_build_id: '355871'
 
-  # virgil 20220926.5
-  # Sun Sep 25 23:56:26 UTC 2022 -- Sun Sep 25 23:56:26 Australia 2022
+  # virgil 20220927.2
+  # Tue Sep 27 01:28:59 UTC 2022 -- Tue Sep 27 01:28:59 Australia 2022
   #
-  # Merge pull request 8637 from virgil_python_upgrade into master
-  # c0667bf9461a28287b605ca8c55f7411ca788112
-  virgil_build_id: '354899'
+  # Merge pull request 8653 from virgil_python_upgrade into master
+  # f0150fd51d55059cf606c295cc742e6bb1bc94a8
+  virgil_build_id: '355967'
