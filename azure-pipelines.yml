@@ -30,7 +30,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
+              pylint --rcfile=setup.cfg tests/
             displayName: 'Python lint'
             condition: succeededOrFailed()
 
@@ -62,3 +62,60 @@ stages:
               ansible-lint $(find ansible -iname '*.y*ml')
             displayName: 'Ansible lint'
             condition: succeededOrFailed()
+
+  - stage: Simulations
+    dependsOn: [Tests_and_lint]
+    pool: simulations
+    jobs:
+      - job: Simulation
+        steps:
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
+
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
+
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
+
+          - task: InstallSSHKey@0
+            displayName: 'Install an SSH key'
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'
+
+          - task: Ansible@0
+            displayName: 'Test haproxy'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="simulation=true"
+
+          - task: Ansible@0
+            displayName: 'Cleanup'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
+            condition: always()
