@@ -5,12 +5,12 @@ Script collects data from all IIS machines using winrm module
 """
 
 import argparse
-import yaml
 import concurrent.futures
-import re
-import sys
 import logging
 import os
+import re
+import sys
+import yaml
 
 from datetime import datetime
 from winrm.protocol import Protocol
