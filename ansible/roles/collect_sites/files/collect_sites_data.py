@@ -18,10 +18,7 @@ from winrm.protocol import Protocol
 def load_yaml_from_file(file_name):
     result = dict()
     with open(file_name, 'r') as stream:
-        try:
-            result = yaml.safe_load(stream)
-        except yaml.YAMLError as exc:
-            print(exc)
+        result = yaml.safe_load(stream)
     return result
 
 def get_websites_with_parameters(sites_list, website_config, logger):
