@@ -54,7 +54,7 @@ def get_websites_list(server_name, user_name, password, validate_ca):
     std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
     p.close_shell(shell_id)
     if std_err:
-        raise ValueError("Error when executing AppCmd.exe: {0}".format(str(std_err)))
+        raise ValueError(f"Error when executing AppCmd.exe: {str(std_err)}")
 
     #some minor manipulations required with output
     raw_output = std_out.decode("utf-8")
@@ -80,11 +80,13 @@ def process_server(server_name, user_name, # pylint: disable=too-many-arguments
 
     websites = get_websites_with_parameters(sites_list, website_config, logger)
 
-    with open("{0}/{1}.yml".format(output_path, server_name), 'w', encoding="utf8") as outfile:
+    with open(f"{output_path}/{server_name}.yml", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
 
     ##############################################################################################
 def main():
+    """Function collects all websites from all IIS boxes, applies configuration from website.yml
+    and dumps data to file named server_name.yml in servers folder"""
     parser = argparse.ArgumentParser()
     parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
                         type=str)
