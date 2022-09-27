@@ -3,18 +3,18 @@ Script imports data from yml files to mongo
 """
 
 import argparse
+from datetime import datetime
+from glob import glob
 import logging
+from os import path
 import socket
 import sys
-import yaml
-
-from glob import glob
-from datetime import datetime
-from os import path
 
 from pymongo import MongoClient
+import yaml
 
 def main():
+    """Function reads yml files with server data and imports to mongodb"""
     parser = argparse.ArgumentParser()
     parser.add_argument('--servers_config_wildcard', type=str, default='servers/*.yml')
     parser.add_argument('--host', type=str, default="lethe.dante.wtg.ws")
@@ -44,7 +44,7 @@ def main():
 
     start_time = datetime.now()
 
-    with MongoClient("mongodb://{0}:{1}/".format(args.host, args.port),
+    with MongoClient(f"mongodb://{args.host}:{args.port}/",
                      username=args.username,
                      password=args.password,
                      authSource=args.authenticationDatabase,
@@ -60,8 +60,8 @@ def main():
             server_name = path.basename(config)
             server_name = path.splitext(server_name)[0]
 
-            server_data = dict()
-            with open(config, 'r') as stream:
+            server_data = {}
+            with open(config, 'r', encoding="utf8") as stream:
                 server_data['services'] = yaml.safe_load(stream)
 
             server_data['server_name'] = server_name
