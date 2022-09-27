@@ -50,7 +50,7 @@ def main():
 
     servers = {}
 
-    with MongoClient("mongodb://{0}:{1}/".format(args.host, args.port),
+    with MongoClient(f"mongodb://{args.host}:{args.port}/",
                      username=args.username,
                      password=args.password,
                      authSource=args.authenticationDatabase,
