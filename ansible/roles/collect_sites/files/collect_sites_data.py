@@ -35,7 +35,7 @@ def get_websites_with_parameters(sites_list, website_config, logger):
 
         for config in website_config:
             if (site_name.startswith(tuple(config['starts_with']))
-                 or any(map(site_name.__contains__, config['name_like']))):
+                 or any(like in site_name for like in config['name_like'])):
                websites[site_name] = config
 
     return websites
