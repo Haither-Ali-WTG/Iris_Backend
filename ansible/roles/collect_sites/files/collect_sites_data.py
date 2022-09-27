@@ -52,17 +52,22 @@ def get_websites_with_parameters(sites_list, website_config, logger):
 
 def get_websites_list(server_name, connection_params):
     """Read sites list from IIS box using winrm"""
-    p = Protocol(
-        endpoint='https://' + server_name +':5986/wsman',
-        transport='ntlm',
-        username=connection_params.user_name,
-        password=connection_params.password,
-        server_cert_validation=connection_params.validate_ca)
-    shell_id = p.open_shell()
-    command_id = p.run_command(shell_id, '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
-                               ['list sites /serverAutoStart:true /text:name'])
-    std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
-    p.close_shell(shell_id)
+    shell_id = None
+    try:
+        p = Protocol(
+            endpoint='https://' + server_name +':5986/wsman',
+            transport='ntlm',
+            username=connection_params.user_name,
+            password=connection_params.password,
+            server_cert_validation=connection_params.validate_ca)
+        shell_id = p.open_shell()
+        command_id = p.run_command(shell_id, '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
+                                ['list sites /serverAutoStart:true /text:name'])
+        std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
+        p.cleanup_command(shell_id, command_id)
+    finally:
+        p.close_shell(shell_id)
+
     if std_err:
         raise ValueError(f"Error when executing AppCmd.exe: {str(std_err)}")
 
