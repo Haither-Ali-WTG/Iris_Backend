@@ -85,7 +85,7 @@ def process_server(server_name, user_name, # pylint: disable=too-many-arguments
 
     ##############################################################################################
 def main():
-    """Function collects all websites from all IIS boxes, applies configuration from website.yml
+    """Function collects all websites from all IIS boxes, applies configuration from websites.yml
     and dumps data to file named server_name.yml in servers folder"""
     parser = argparse.ArgumentParser()
     parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
