@@ -3,7 +3,7 @@
   set_fact:
     instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
 
-- name: Create {{ item }} directory
+- name: Create directory {{ item }}
   file:
     dest: "{{ instance_dir }}/{{ item }}"
     state: directory

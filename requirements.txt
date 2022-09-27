@@ -6,13 +6,13 @@
 #
 ansible==6.4.0
     # via -r requirements.in
-ansible-compat==2.2.0
+ansible-compat==2.2.1
     # via ansible-lint
 ansible-core==2.13.4
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.5.2
+ansible-lint==6.7.0
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
@@ -28,7 +28,7 @@ black==22.8.0
     # via ansible-lint
 bracex==2.3.post1
     # via wcmatch
-certifi==2022.9.14
+certifi==2022.9.24
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -46,7 +46,7 @@ cryptography==38.0.1
     # via ansible-core
 dill==0.3.5.1
     # via pylint
-dparse==0.6.0
+dparse==0.6.2
     # via safety
 enrich==1.2.7
     # via ansible-lint
@@ -64,7 +64,7 @@ isort==5.10.1
     # via pylint
 jinja2==3.1.2
     # via ansible-core
-jq==1.2.3
+jq==1.3.0
     # via -r requirements.in
 jsonschema==4.16.0
     # via
@@ -109,7 +109,9 @@ pycparser==2.21
     # via cffi
 pygments==2.13.0
     # via rich
-pylint==2.15.2
+pylint==2.15.3
+    # via -r requirements.in
+pymongo==4.0
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
@@ -145,7 +147,7 @@ ruamel-yaml==0.17.21
     #   safety
 ruamel-yaml-clib==0.2.6
     # via ruamel-yaml
-safety==2.1.1
+safety==2.2.0
     # via -r requirements.in
 smmap==5.0.0
     # via gitdb
@@ -170,7 +172,7 @@ typing-extensions==4.3.0
     # via mypy
 urllib3==1.26.12
     # via requests
-wcmatch==8.4
+wcmatch==8.4.1
     # via ansible-lint
 wrapt==1.14.1
     # via astroid
