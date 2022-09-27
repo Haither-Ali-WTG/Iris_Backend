@@ -6,14 +6,23 @@ Script collects data from all IIS machines using winrm module
 
 import argparse
 import concurrent.futures
+from dataclasses import dataclass
 from datetime import datetime
 import logging
 import os
 import re
+from requests.exceptions import ConnectionError
 import sys
 import yaml
 
 from winrm.protocol import Protocol
+from winrm.exceptions import InvalidCredentialsError
+
+@dataclass
+class ConnectionParameters:
+    user_name: str
+    password: str
+    validate_ca: str
 
 def load_yaml_from_file(file_name):
     """Loading yaml file to dictionary."""
@@ -40,14 +49,14 @@ def get_websites_with_parameters(sites_list, website_config, logger):
 
     return websites
 
-def get_websites_list(server_name, user_name, password, validate_ca):
+def get_websites_list(server_name, connection_params):
     """Read sites list from IIS box using winrm"""
     p = Protocol(
         endpoint='https://' + server_name +':5986/wsman',
         transport='ntlm',
-        username=user_name,
-        password=password,
-        server_cert_validation=validate_ca)
+        username=connection_params.user_name,
+        password=connection_params.password,
+        server_cert_validation=connection_params.validate_ca)
     shell_id = p.open_shell()
     command_id = p.run_command(shell_id, '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
                                ['list sites /serverAutoStart:true /text:name'])
@@ -67,12 +76,11 @@ def get_websites_list(server_name, user_name, password, validate_ca):
     sites_list.sort()
     return sites_list
 
-def process_server(server_name, user_name, # pylint: disable=too-many-arguments
-                   password, website_config, output_path, validate_ca, logger):
+def process_server(server_name, connection_params, website_config, output_path, logger):
     """Read and process all websites data from give IIS box"""
     try:
-        sites_list = get_websites_list(server_name, user_name, password, validate_ca)
-    except Exception as err:  # pylint: disable=broad-except
+        sites_list = get_websites_list(server_name, connection_params)
+    except (ValueError, InvalidCredentialsError, ConnectionError) as err:
         logger.info("%s: ERROR: %s", server_name, str(err))
         return
     if len(sites_list) == 0:
@@ -141,9 +149,9 @@ def main():
             continue
 
         logger.info("Adding to processing: %s", server)
-        results.append(executor.submit(process_server, server, args.user_name, args.password,
-                                       websites_config, args.output_path, args.validate_ca,
-                                       logger))
+        results.append(executor.submit(process_server, server,
+                                       ConnectionParameters(args.user_name, args.password, args.validate_ca),
+                                       websites_config, args.output_path, logger))
 
     for future in concurrent.futures.as_completed(results):
         future.result()
