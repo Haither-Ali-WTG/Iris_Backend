@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20220927.2
-  # Tue Sep 27 07:16:10 UTC 2022 -- Tue Sep 27 07:16:10 Australia 2022
+  # dante build artifact 20220927.3
+  # Tue Sep 27 10:23:57 UTC 2022 -- Tue Sep 27 10:23:57 Australia 2022
   #
-  # Merged PR 8656: cri-o updated to 1.25
-  # 3cdf74d43286db22fc10a102952ecf042c42380c
-  dante_build_id: '356250'
+  # Merged PR 8645: Reorder "block" last per ansible-lint recommendation
+  # a0465541552718e30093c0d5fb4ed034059e9b8e
+  dante_build_id: '356378'
 
   # virgil 20220927.2
   # Tue Sep 27 01:28:59 UTC 2022 -- Tue Sep 27 01:28:59 Australia 2022
