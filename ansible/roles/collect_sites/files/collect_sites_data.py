@@ -93,7 +93,7 @@ def process_server(server_name, connection_params, website_config, output_path, 
     try:
         sites_list = get_websites_list(server_name, connection_params)
     except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
-        logger.info("%s: ERROR: %s", server_name, str(err))
+        logger.error("%s: ERROR: %s", server_name, str(err))
         return
     if len(sites_list) == 0:
         return
