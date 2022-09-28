@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220927.3
-  # Tue Sep 27 10:23:57 UTC 2022 -- Tue Sep 27 10:23:57 Australia 2022
+  # dante build artifact 20220928.1
+  # Wed Sep 28 00:10:58 UTC 2022 -- Wed Sep 28 00:10:58 Australia 2022
   #
-  # Merged PR 8645: Reorder "block" last per ansible-lint recommendation
-  # a0465541552718e30093c0d5fb4ed034059e9b8e
-  dante_build_id: '356378'
+  # Merge pull request 8578 from dante_python_upgrade into master
+  # 4a3ed470886d90072208641eeb23e23e435378de
+  dante_build_id: '356931'
 
-  # virgil 20220927.2
-  # Tue Sep 27 01:28:59 UTC 2022 -- Tue Sep 27 01:28:59 Australia 2022
+  # virgil 20220928.2
+  # Tue Sep 27 23:48:43 UTC 2022 -- Tue Sep 27 23:48:43 Australia 2022
   #
-  # Merge pull request 8653 from virgil_python_upgrade into master
-  # f0150fd51d55059cf606c295cc742e6bb1bc94a8
-  virgil_build_id: '355967'
+  # Merge pull request 8668 from virgil_python_upgrade into master
+  # 3f9a60f9f81ddc8627b0520ffc4180ba82a3f949
+  virgil_build_id: '356902'
