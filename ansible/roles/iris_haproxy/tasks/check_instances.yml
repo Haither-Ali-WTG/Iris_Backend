@@ -40,8 +40,8 @@
   vars:
     counts: >-
       {
-        {% for svname in converted | map(attribute='svname') | unique %}
-          "{{ svname }}": {{ converted | selectattr('svname', 'eq', svname) | count }},
+        {% for svname in stats | map(attribute='svname') | unique %}
+          "{{ svname }}": {{ stats | selectattr('svname', 'eq', svname) | count }},
         {% endfor %}
       }
     expected_counts:
@@ -55,7 +55,7 @@
       {% for svname in counts | list | union(expected_counts | list) | unique -%}
       {% if counts[svname] | default(0) != expected_counts[svname] | default(0) -%}
       There are {{ counts[svname] | default(0) }} {{ svname | lower }}s
-      ({{ converted | selectattr('svname', 'eq', svname) | map(attribute='pxname') | join(', ') }});
+      ({{ stats | selectattr('svname', 'eq', svname) | map(attribute='pxname') | join(', ') }});
       expected {{ expected_counts[svname] | default(0) }}.
       {% endif -%}
       {% endfor -%}
@@ -72,7 +72,7 @@
     fail_msg: >-
         Expected status {{ expected_status[row.svname] }}
         but {{ description }} is {{ row.status }}
-  loop: "{{ converted }}"
+  loop: "{{ stats }}"
   loop_control:
     label: "{{ description }}"
     loop_var: row
