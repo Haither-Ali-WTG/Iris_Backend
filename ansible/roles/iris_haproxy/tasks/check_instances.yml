@@ -60,7 +60,7 @@
       {% endif -%}
       {% endfor -%}
 
-- name: Check the status
+- name: Check the statuses in the stats
   vars:
     expected_status:
       FRONTEND: OPEN
