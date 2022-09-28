@@ -30,10 +30,23 @@
   uri:
     url: http://{{ ansible_host }}:{{ instance.stats_ports.web }}/;json
     use_proxy: no
-  register: stats
+  register: stats_page
+
+- name: Convert stats
+  set_fact:
+    stats: >-
+      [
+        {% for row in stats_page.json %}
+          {
+            {% for col in row %}
+              {{ "{!r}".format(col['field']['name']) }}: {{ "{!r}".format(col['value']['value']) }},
+            {% endfor %}
+          },
+        {% endfor %}
+      ]
 
 - name: Dump out the stats
   debug:
-    var: stats.json
+    var: stats
 
 # TODO more checks to come
