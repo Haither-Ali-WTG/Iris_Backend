@@ -2,8 +2,14 @@
 machines:
   hosts:
     au2_machine1:
+      # fake IP to be replaced with prod
+      ansible_host: 192.168.100.100
       os: rhel
     au2_machine2:
+      # fake IP to be replaced with prod
+      ansible_host: 192.168.100.101
       os: ubuntu
     au2_machine3:
+      # fake IP to be replaced with prod
+      ansible_host: 192.168.100.101
       os: rhel
