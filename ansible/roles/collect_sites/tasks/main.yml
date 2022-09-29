@@ -1,4 +1,4 @@
 ---
 - name: Collect sites data
   debug:
-    msg: hello
+    msg: "{{ iis_servers | join(',') }}"
