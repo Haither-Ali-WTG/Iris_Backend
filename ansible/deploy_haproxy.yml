@@ -20,7 +20,7 @@
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
-        virgil_os_variant: "{{ machine.virgil_os_variant }}"
+        virgil_os_variant: "{{ machine.os }}"
 
       with_dict: "{{ cluster_machines }}"
       loop_control:
@@ -38,18 +38,21 @@
       include_role:
         name: container_runner
         tasks_from: setup.yml
+      # TODO: remove when actual prod machines availabel
+      when: simulation is defined
 
 - name: Setup the instances
   hosts: instances
   strategy: free
-  gather_facts: yes
-  gather_subset: [min]
+  gather_facts: no
   force_handlers: yes
   tasks:
     - name: Deploy the instances
       include_role:
         name: iris_haproxy
         tasks_from: instances.yml
+      # TODO: remove when actual prod machines availabel
+      when: simulation is defined
 
 - name: Per-cluster setup (if needed)
   hosts: clusters
