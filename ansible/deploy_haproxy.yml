@@ -62,7 +62,6 @@
 
 - name: Setup localhost for s3
   hosts: localhost
-  gather_facts: no
   tasks:
   - name: Enable legacy hashes for openssl
     include_role:
@@ -72,9 +71,6 @@
   - name: Setup ceph connection
     include_role:
       name: ceph_connection_setup
-    vars:
-      proxy_host: "192.168.255.254"
-      proxy_port: "3128"
 
 - name: Per-cluster setup (if needed)
   hosts: clusters
