@@ -2,10 +2,10 @@
 trigger: none
 
 stages:
-  - stage: Deploy Haproxy
+  - stage: Deploy_Haproxy
     pool: cicd
     jobs:
-      - job: Deploy Haproxy
+      - job: Deploy_Haproxy
         steps:
           - script: |
               set -euxo pipefail
