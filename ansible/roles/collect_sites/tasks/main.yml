@@ -6,7 +6,7 @@
         python3 collect_sites_data.py
         --server_list {{ iis_servers | join(',') }}
         --password {{ winrm_password }}
-        --output_path {{ ansible_hostname }}
+        --output_path {{ inventory_hostname }}
   register: collect_sites_data_output
   when:
     - not simulation
