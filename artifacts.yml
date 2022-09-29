@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220928.2
-  # Wed Sep 28 07:48:42 UTC 2022 -- Wed Sep 28 07:48:42 Australia 2022
+  # dante build artifact 20220929.2
+  # Thu Sep 29 04:51:30 UTC 2022 -- Thu Sep 29 04:51:30 Australia 2022
   #
-  # Merge pull request 8612 from dante_artifact_upgrade into master
-  # 8600bc549a5239e49aa0fb3b8ed1751c40d278e0
-  dante_build_id: '357258'
+  # Merged PR 8224: Dante - BMC Controller - Set BIOS Values that are not used
+  # 9a5bc386d883fc8d8f5c149ff04426ba933f8728
+  dante_build_id: '358178'
 
-  # virgil 20220928.2
-  # Tue Sep 27 23:48:43 UTC 2022 -- Tue Sep 27 23:48:43 Australia 2022
+  # virgil 20220929.7
+  # Thu Sep 29 03:44:41 UTC 2022 -- Thu Sep 29 03:44:41 Australia 2022
   #
-  # Merge pull request 8668 from virgil_python_upgrade into master
-  # 3f9a60f9f81ddc8627b0520ffc4180ba82a3f949
-  virgil_build_id: '356902'
+  # Merged PR 8636: AU2-StorageReplicationNetwork
+  # 3399c9f03cc66599acdefc5c8389d45061bfd1b0
+  virgil_build_id: '358112'
