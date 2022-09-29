@@ -34,8 +34,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - debug:
-        var: simulation 
     - name: Setup docker
       include_role:
         name: container_runner
