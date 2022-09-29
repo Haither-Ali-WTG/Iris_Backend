@@ -60,6 +60,22 @@
       # TODO: remove when actual prod machines are available
       when: simulation
 
+- name: Setup localhost for s3
+  hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: Enable legacy hashes for openssl
+    include_role:
+      name: collect_sites
+      tasks_from: enable_legacy_hashes_for_ssl.yml
+
+  - name: Setup ceph connection
+    include_role:
+      name: ceph_connection_setup
+    vars:
+      proxy_host: "192.168.255.254"
+      proxy_port: "3128"
+
 - name: Per-cluster setup (if needed)
   hosts: clusters
   strategy: free
