@@ -34,12 +34,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Collect only facts returned by facter
-      ansible.builtin.setup:
-        gather_subset: min
-      # TODO: remove when actual prod machines are available
-      when: simulation
-
     - name: Setup docker
       include_role:
         name: container_runner
@@ -53,6 +47,12 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
+      # TODO: remove when actual prod machines are available
+      when: simulation
+  
     - name: Deploy the instances
       include_role:
         name: iris_haproxy
