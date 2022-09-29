@@ -1,6 +1,11 @@
 ---
 trigger: none
 
+variables:
+  - template: artifacts.yml
+  - name: user
+    value: dante
+
 stages:
   - stage: Deploy_Haproxy
     pool: cicd
@@ -46,4 +51,3 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true"
