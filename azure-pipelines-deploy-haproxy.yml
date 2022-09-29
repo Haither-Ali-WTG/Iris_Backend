@@ -6,6 +6,7 @@ variables:
   - name: user
     value: dante
   - name: simulation
+    type: boolean
     value: false
 
 stages:
