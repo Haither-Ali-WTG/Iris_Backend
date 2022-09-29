@@ -52,7 +52,7 @@
         gather_subset: min
       # TODO: remove when actual prod machines are available
       when: simulation
-  
+
     - name: Deploy the instances
       include_role:
         name: iris_haproxy
