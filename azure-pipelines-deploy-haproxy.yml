@@ -5,6 +5,8 @@ variables:
   - template: artifacts.yml
   - name: user
     value: dante
+  - name: simulation
+    value: false
 
 stages:
   - stage: Deploy_Haproxy
@@ -28,11 +30,11 @@ stages:
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
 
-          # - task: CopyFiles@2
-          #   displayName: 'Merge artifacts to a single roles folder'
-          #   inputs:
-          #     sourceFolder: nested_virt
-          #     targetFolder: ansible
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
 
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
@@ -51,3 +53,4 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="simulation=$(simulation)"

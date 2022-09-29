@@ -41,7 +41,7 @@
         name: container_runner
         tasks_from: setup.yml
       # TODO: remove when actual prod machines are available
-      when: simulation is defined
+      when: simulation
 
 - name: Setup the instances
   hosts: instances
@@ -54,7 +54,7 @@
         name: iris_haproxy
         tasks_from: instances.yml
       # TODO: remove when actual prod machines are available
-      when: simulation is defined
+      when: simulation
 
 - name: Per-cluster setup (if needed)
   hosts: clusters
