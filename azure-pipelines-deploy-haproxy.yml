@@ -34,11 +34,11 @@ stages:
               sourceFolder: nested_virt
               targetFolder: ansible
 
-          # - task: InstallSSHKey@0
-          #   displayName: 'Install an SSH key'
-          #   inputs:
-          #     knownHostsEntry: 'StrictHostKeyChecking no'
-          #     sshKeySecureFile: 'id_rsa'
+          - task: InstallSSHKey@0
+            displayName: 'Install an SSH key'
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'
 
           - task: Ansible@0
             displayName: 'Deploy haproxy'

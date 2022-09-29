@@ -36,32 +36,32 @@
   tasks:
     - debug:
         var: simulation 
-#     - name: Setup docker
-#       include_role:
-#         name: container_runner
-#         tasks_from: setup.yml
-#       # TODO: remove when actual prod machines are available
-#       when: simulation
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
+      # TODO: remove when actual prod machines are available
+      when: simulation is defined
 
-# - name: Setup the instances
-#   hosts: instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Deploy the instances
-#       include_role:
-#         name: iris_haproxy
-#         tasks_from: instances.yml
-#       # TODO: remove when actual prod machines are available
-#       when: simulation
+- name: Setup the instances
+  hosts: instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Deploy the instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: instances.yml
+      # TODO: remove when actual prod machines are available
+      when: simulation is defined
 
-# - name: Per-cluster setup (if needed)
-#   hosts: clusters
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Placeholder
-#       debug:
-#         msg: per-cluster setup
+- name: Per-cluster setup (if needed)
+  hosts: clusters
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Placeholder
+      debug:
+        msg: per-cluster setup
