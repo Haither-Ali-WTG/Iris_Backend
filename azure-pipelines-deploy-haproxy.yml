@@ -5,8 +5,6 @@ variables:
   - template: artifacts.yml
   - name: user
     value: dante
-  - name: simulation
-    value: false
 
 stages:
   - stage: Deploy_Haproxy
