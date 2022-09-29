@@ -28,11 +28,11 @@ stages:
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
 
-          # - task: CopyFiles@2
-          #   displayName: 'Merge artifacts to a single roles folder'
-          #   inputs:
-          #     sourceFolder: nested_virt
-          #     targetFolder: ansible
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
 
           # - task: InstallSSHKey@0
           #   displayName: 'Install an SSH key'
