@@ -9,7 +9,7 @@
         --output_path {{ ansible_hostname }}
   register: collect_sites_data_output
   when:
-    - not simultaion
+    - not simulation
     - iis_servers is defined
 
 - name: Outpit colect sites data output
