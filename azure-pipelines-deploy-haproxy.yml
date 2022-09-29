@@ -53,4 +53,4 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="{simulation:false}"
+                -e="simulation="
