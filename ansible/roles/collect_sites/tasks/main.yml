@@ -1,4 +1,18 @@
 ---
-- name: Collect sites data
+- name: "Collect sites data via winrm for {{ instance_name }}"
+  changed_when: true
+  delegate_to: localhost
+  command: >
+        python3 collect_sites_data.py
+        --server_list {{ iis_servers | join(',') }}
+        --password {{ winrm_password }}
+        --output_path {{ ansible_hostname }}
+  register: collect_sites_data_output
+  when:
+    - not simultaion
+    - iis_servers is defined
+
+- name: Outpit colect sites data output
   debug:
-    msg: "{{ iis_servers | join(',') }}"
+    var: collect_sites_data_output
+  when: collect_sites_data_output is defined

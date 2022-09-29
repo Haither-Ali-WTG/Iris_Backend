@@ -52,3 +52,4 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation="
+                -e="winrm_password=$(winrm_password)"
