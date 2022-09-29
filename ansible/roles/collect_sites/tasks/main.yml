@@ -1,4 +1,12 @@
 ---
+- name: Enable legacy hashes for openssl
+  include_role:
+    name: collect_sites
+    tasks_from: enable_legacy_hashes_for_ssl.yml
+  apply:
+    delegate_to: localhost
+    run_once: true
+
 - name: "Collect sites data via winrm for {{ instance_name }}"
   changed_when: true
   delegate_to: localhost
