@@ -1,0 +1,4 @@
+---
+- name: Collect sites data
+  debug:
+    msg: hello

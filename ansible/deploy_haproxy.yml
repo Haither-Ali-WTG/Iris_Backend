@@ -66,6 +66,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Placeholder
-      debug:
-        msg: per-cluster setup
+    - name: Collect and publish IIS data to ceph
+      include_role:
+        name: collect_sites
