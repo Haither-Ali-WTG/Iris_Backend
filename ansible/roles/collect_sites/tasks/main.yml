@@ -4,6 +4,8 @@
   delegate_to: localhost
   command: >
         python3 {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py
+        --server_config_file {{ playbook_dir }}/config/servers.yml
+        --website_config_file {{ playbook_dir }}/config/websites.yml
         --server_list {{ iis_servers | join(',') }}
         --password {{ winrm_password }}
         --output_path {{ inventory_hostname }}
