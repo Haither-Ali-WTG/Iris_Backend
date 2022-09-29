@@ -17,28 +17,28 @@ stages:
               pip install -r requirements.txt
             displayName: 'Install requirements'
 
-          - task: DownloadPipelineArtifact@2
-            displayName: 'Download dante artifact'
-            inputs:
-              buildType: 'specific'
-              project: 'InfrastructureAutomation'
-              # dante build artifact pipeline Id
-              pipeline: 26
-              buildVersionToDownload: 'specific'
-              buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)
+          # - task: DownloadPipelineArtifact@2
+          #   displayName: 'Download dante artifact'
+          #   inputs:
+          #     buildType: 'specific'
+          #     project: 'InfrastructureAutomation'
+          #     # dante build artifact pipeline Id
+          #     pipeline: 26
+          #     buildVersionToDownload: 'specific'
+          #     buildId: '$(dante_build_id)'
+          #     path: $(Build.SourcesDirectory)
 
-          - task: CopyFiles@2
-            displayName: 'Merge artifacts to a single roles folder'
-            inputs:
-              sourceFolder: nested_virt
-              targetFolder: ansible
+          # - task: CopyFiles@2
+          #   displayName: 'Merge artifacts to a single roles folder'
+          #   inputs:
+          #     sourceFolder: nested_virt
+          #     targetFolder: ansible
 
-          - task: InstallSSHKey@0
-            displayName: 'Install an SSH key'
-            inputs:
-              knownHostsEntry: 'StrictHostKeyChecking no'
-              sshKeySecureFile: 'id_rsa'
+          # - task: InstallSSHKey@0
+          #   displayName: 'Install an SSH key'
+          #   inputs:
+          #     knownHostsEntry: 'StrictHostKeyChecking no'
+          #     sshKeySecureFile: 'id_rsa'
 
           - task: Ansible@0
             displayName: 'Deploy haproxy'
@@ -51,4 +51,3 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=false"
