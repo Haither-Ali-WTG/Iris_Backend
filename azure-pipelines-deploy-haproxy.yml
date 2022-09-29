@@ -8,7 +8,7 @@ variables:
 
 stages:
   - stage: Deploy_Haproxy
-    pool: purgatory
+    pool: cicd
     jobs:
       - job: Deploy_Haproxy
         steps:
