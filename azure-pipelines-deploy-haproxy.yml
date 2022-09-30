@@ -54,4 +54,5 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation="
                 -e="winrm_password=$(winrm_password)"
-                -e="s3_host=au2s3-1.wtg.ws" -e="s3_access_key=$(au2s3_access_key)" -e="s3_secret_key=$(au2s3_secret_key)"
+                -e="s3_host=au2s3-1.wtg.ws" -e="s3_access_key=$(au2s3_access_key)"
+                -e="s3_secret_key=$(au2s3_secret_key)"
