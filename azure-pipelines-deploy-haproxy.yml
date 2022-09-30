@@ -5,6 +5,13 @@ variables:
   - template: artifacts.yml
   - name: user
     value: dante
+  # TODO: Support otjer DCs
+  - name: s3_host
+    value: au2s3-1.wtg.ws
+  - name: s3_access_key
+    value: : $(au2s3_access_key)
+  - name: s3_secret_key
+    value: $(au2s3_secret_key)
 
 stages:
   - stage: Deploy_Haproxy
@@ -53,3 +60,4 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation="
                 -e="winrm_password=$(winrm_password)"
+                -e="s3_host=$(s3_host)" -e="s3_access_key=$(s3_access_key)" -e="s3_secret_key=$(s3_secret_key)"
