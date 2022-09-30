@@ -8,7 +8,7 @@
         --website_config_file {{ playbook_dir }}/../config/websites.yml
         --server_list {{ iis_servers | join(',') }}
         --password {{ winrm_password }}
-        --output_path {{ playbook_dir }}/{{ inventory_hostname }}
+        --output_path {{ inventory_hostname }}
   register: collect_sites_data_output
   when:
     - not simulation
@@ -20,5 +20,6 @@
   when: collect_sites_data_output is defined
 
 - name: Upload IIS data to ceph
-  command: s3cmd put --recursive {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py {{ s3_iris_bucket }}
+  command: s3cmd put --recursive {{ inventory_hostname }} {{ s3_iris_bucket }}
   changed_when: true
+  delegate_to: localhost
