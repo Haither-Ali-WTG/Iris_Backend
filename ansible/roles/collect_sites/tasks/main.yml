@@ -20,5 +20,5 @@
   when: collect_sites_data_output is defined
 
 - name: Upload IIS data to ceph
-  command: s3cmd put --recursive {{ playbook_dir }}/{{ inventory_hostname }} {{ s3_iris_bucket }}
+  command: s3cmd put --recursive {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py {{ s3_iris_bucket }}
   changed_when: true
