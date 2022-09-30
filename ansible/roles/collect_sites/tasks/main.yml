@@ -10,9 +10,7 @@
         --password {{ winrm_password }}
         --output_path {{ inventory_hostname }}
   register: collect_sites_data_output
-  when:
-    - not simulation
-    - iis_servers is defined
+  when: iis_servers is defined
 
 - name: Outpit colect sites data output
   debug:
