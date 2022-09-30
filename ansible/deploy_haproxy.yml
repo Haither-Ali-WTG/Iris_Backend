@@ -63,14 +63,14 @@
 - name: Setup localhost for s3
   hosts: localhost
   tasks:
-  - name: Enable legacy hashes for openssl
-    include_role:
-      name: collect_sites
-      tasks_from: enable_legacy_hashes_for_ssl.yml
+    - name: Enable legacy hashes for openssl
+      include_role:
+        name: collect_sites
+        tasks_from: enable_legacy_hashes_for_ssl.yml
 
-  - name: Setup ceph connection
-    include_role:
-      name: ceph_connection_setup
+    - name: Setup ceph connection
+      include_role:
+        name: ceph_connection_setup
 
 - name: Per-cluster setup (if needed)
   hosts: clusters
