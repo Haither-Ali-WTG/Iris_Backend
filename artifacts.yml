@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220929.2
-  # Thu Sep 29 04:51:30 UTC 2022 -- Thu Sep 29 04:51:30 Australia 2022
+  # dante build artifact 20220930.4
+  # Fri Sep 30 10:34:03 UTC 2022 -- Fri Sep 30 10:34:03 Australia 2022
   #
-  # Merged PR 8224: Dante - BMC Controller - Set BIOS Values that are not used
-  # 9a5bc386d883fc8d8f5c149ff04426ba933f8728
-  dante_build_id: '358178'
+  # Merged PR 8680: Add libkrb5-dev
+  # 1eef34ec1aabf914367af3dfb74dfc94d7ba56b1
+  dante_build_id: '359539'
 
-  # virgil 20220929.7
-  # Thu Sep 29 03:44:41 UTC 2022 -- Thu Sep 29 03:44:41 Australia 2022
+  # virgil 20220930.10
+  # Fri Sep 30 07:58:18 UTC 2022 -- Fri Sep 30 07:58:18 Australia 2022
   #
-  # Merged PR 8636: AU2-StorageReplicationNetwork
-  # 3399c9f03cc66599acdefc5c8389d45061bfd1b0
-  virgil_build_id: '358112'
+  # Merged PR 8702: US2StorageReplNetwork
+  # 90ad0d21f05513029adc4da4ccbfc830a354e4f4
+  virgil_build_id: '359423'
