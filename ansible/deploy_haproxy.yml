@@ -16,7 +16,7 @@
       register: temp_path
 
     - name: Download IIS data from ceph
-      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path }}
+      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
       with_items:
         - "{{ rhel_hypervisor_image }}"
         - "{{ ubuntu_hypervisor_image }}"
