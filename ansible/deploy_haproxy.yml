@@ -2,6 +2,7 @@
 - name: Download and initialize instances IIS data
   hosts: localhost
   gather_facts: no
+  run_once: true
   tasks:
     - name: Setup ceph connection
       include_role:
