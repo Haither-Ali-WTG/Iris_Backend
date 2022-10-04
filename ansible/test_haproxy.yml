@@ -90,5 +90,5 @@
 - name: Deploy haproxy on simulated machines
   import_playbook: deploy_haproxy.yml
 
-- name: Check haproxy
-  import_playbook: check_haproxy.yml
+# - name: Check haproxy
+#   import_playbook: check_haproxy.yml
