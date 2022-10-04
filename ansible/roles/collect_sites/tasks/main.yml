@@ -1,0 +1,24 @@
+---
+- name: "Collect sites data via winrm for {{ instance_name }}"
+  changed_when: true
+  delegate_to: localhost
+  command: >
+        python3 {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py
+        --server_config_file {{ playbook_dir }}/../config/servers.yml
+        --website_config_file {{ playbook_dir }}/../config/websites.yml
+        --server_list {{ iis_servers | join(',') }}
+        --password {{ winrm_password }}
+        --output_path {{ inventory_hostname }}
+  register: collect_sites_data_output
+  when: iis_servers is defined
+
+- name: Output colect sites data output
+  debug:
+    var: collect_sites_data_output
+  when: collect_sites_data_output is defined
+
+- name: Upload IIS data to ceph
+  command: s3cmd put --recursive {{ inventory_hostname }} {{ s3_iris_bucket }}
+  changed_when: true
+  delegate_to: localhost
+  when: collect_sites_data_output is defined
