@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20220930.4
-  # Fri Sep 30 10:34:03 UTC 2022 -- Fri Sep 30 10:34:03 Australia 2022
+  # dante build artifact 20221005.1
+  # Tue Oct  4 21:44:44 UTC 2022 -- Tue Oct  4 21:44:44 Australia 2022
   #
-  # Merged PR 8680: Add libkrb5-dev
-  # 1eef34ec1aabf914367af3dfb74dfc94d7ba56b1
-  dante_build_id: '359539'
+  # Merged PR 8751: bugfix kafka variable name
+  # f24d88fcdc0cfd6a12a7dcbcde2440c1193d4117
+  dante_build_id: '363701'
 
-  # virgil 20220930.10
-  # Fri Sep 30 07:58:18 UTC 2022 -- Fri Sep 30 07:58:18 Australia 2022
+  # virgil 20221004.2
+  # Mon Oct  3 23:33:43 UTC 2022 -- Mon Oct  3 23:33:43 Australia 2022
   #
-  # Merged PR 8702: US2StorageReplNetwork
-  # 90ad0d21f05513029adc4da4ccbfc830a354e4f4
-  virgil_build_id: '359423'
+  # Merge pull request 8740 from virgil_python_upgrade into master
+  # 388a944547c07851a9cf6431829f759237ca6aff
+  virgil_build_id: '362793'
