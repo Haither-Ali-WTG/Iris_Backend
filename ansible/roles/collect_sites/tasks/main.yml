@@ -21,3 +21,4 @@
   command: s3cmd put --recursive {{ inventory_hostname }} {{ s3_iris_bucket }}
   changed_when: true
   delegate_to: localhost
+  when: collect_sites_data_output is defined
