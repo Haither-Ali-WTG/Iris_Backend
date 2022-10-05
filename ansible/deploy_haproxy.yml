@@ -19,86 +19,98 @@
       command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
 
-# - name: Generate the "instance" inventory entries
-#   hosts: clusters
-#   strategy: linear
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Create instance inventory entry
-#       vars:
-#         machine: "{{ hostvars[item.key] }}"
-#       add_host:
-#         name: inst_{{ inventory_hostname }}_{{ item.key }}
-#         groups:
-#           - instances
-#           - "instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
-#         cluster_overrides: "{{ item.value or {} }}"
-#         # TODO: machine overrides
-#         # TODO: groups from cluster and machine settings
-#         ansible_host: "{{ machine.ansible_host }}"
+    - name: Recursively find all IIS data files
+      ansible.builtin.find:
+        paths: "{{ temp_path.path }}"
+        recurse: yes
+      register: folders
 
-#         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-#         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
-#         virgil_os_variant: "{{ machine.os }}"
+    - name: Include vars of IIS sites to instance_name variable
+      ansible.builtin.include_vars:
+        file: "{{ item.path }}"
+        name: "{{ (item.path | split('/'))[-2] }}"
+      loop: "{{ folders.files }}"
 
-#       with_dict: "{{ cluster_machines }}"
-#       loop_control:
-#         index_var: i
-#         label: "{{ item.key }}"
+- name: Generate the "instance" inventory entries
+  hosts: clusters
+  strategy: linear
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Create instance inventory entry
+      vars:
+        machine: "{{ hostvars[item.key] }}"
+      add_host:
+        name: inst_{{ inventory_hostname }}_{{ item.key }}
+        groups:
+          - instances
+          - "instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
+        cluster_overrides: "{{ item.value or {} }}"
+        # TODO: machine overrides
+        # TODO: groups from cluster and machine settings
+        ansible_host: "{{ machine.ansible_host }}"
 
-# - name: Setup on the machines
-#   hosts: machines
-#   strategy: free
-#   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Setup docker
-#       include_role:
-#         name: container_runner
-#         tasks_from: setup.yml
-#       # TODO: remove when actual prod machines are available
-#       when: simulation
+        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+        virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
+        virgil_os_variant: "{{ machine.os }}"
 
-# - name: Setup the instances
-#   hosts: instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Collect min facts
-#       ansible.builtin.setup:
-#         gather_subset: min
-#       # TODO: remove when actual prod machines are available
-#       when: simulation
+      with_dict: "{{ cluster_machines }}"
+      loop_control:
+        index_var: i
+        label: "{{ item.key }}"
 
-#     - name: Deploy the instances
-#       include_role:
-#         name: iris_haproxy
-#         tasks_from: instances.yml
-#       # TODO: remove when actual prod machines are available
-#       when: simulation
+- name: Setup on the machines
+  hosts: machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
+      # TODO: remove when actual prod machines are available
+      when: simulation
 
-# - name: Setup localhost for s3
-#   hosts: localhost
-#   tasks:
-#     - name: Enable legacy hashes for openssl
-#       include_role:
-#         name: collect_sites
-#         tasks_from: enable_legacy_hashes_for_ssl.yml
+- name: Setup the instances
+  hosts: instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
+      # TODO: remove when actual prod machines are available
+      when: simulation
 
-#     - name: Setup ceph connection
-#       include_role:
-#         name: ceph_connection_setup
+    - name: Deploy the instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: instances.yml
+      # TODO: remove when actual prod machines are available
+      when: simulation
 
-# - name: Per-cluster setup (if needed)
-#   hosts: clusters
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Collect and publish IIS data to ceph
-#       include_role:
-#         name: collect_sites
-#       when: not simulation
+- name: Setup localhost for s3
+  hosts: localhost
+  tasks:
+    - name: Enable legacy hashes for openssl
+      include_role:
+        name: collect_sites
+        tasks_from: enable_legacy_hashes_for_ssl.yml
+
+    - name: Setup ceph connection
+      include_role:
+        name: ceph_connection_setup
+
+- name: Per-cluster setup (if needed)
+  hosts: clusters
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Collect and publish IIS data to ceph
+      include_role:
+        name: collect_sites
+      when: not simulation
