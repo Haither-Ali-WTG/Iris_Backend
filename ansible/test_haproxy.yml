@@ -57,35 +57,35 @@
         - "{{ ubuntu_hypervisor_image }}"
       changed_when: true
 
-- name: Deploy simulated machines
-  hosts: machines
-  gather_facts: no
-  tasks:
-    - name: Set additional facts
-      set_fact:
-        virgil_ip_oob_dante: "{{ ansible_host }}"
-        virgil_os_variant: "{{ os }}"
-        virgil_ip_dante: "{{ ansible_host }}"
+# - name: Deploy simulated machines
+#   hosts: machines
+#   gather_facts: no
+#   tasks:
+#     - name: Set additional facts
+#       set_fact:
+#         virgil_ip_oob_dante: "{{ ansible_host }}"
+#         virgil_os_variant: "{{ os }}"
+#         virgil_ip_dante: "{{ ansible_host }}"
 
-    - name: Set images for simulation OS
-      vars:
-        os_image:
-          ubuntu: "{{ ubuntu_hypervisor_image }}"
-          rhel: "{{ rhel_hypervisor_image }}"
-      set_fact:
-        image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
+#     - name: Set images for simulation OS
+#       vars:
+#         os_image:
+#           ubuntu: "{{ ubuntu_hypervisor_image }}"
+#           rhel: "{{ rhel_hypervisor_image }}"
+#       set_fact:
+#         image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
 
-    - name: Deploy test machines
-      include_role:
-        name: deploy_test_machines
-        apply:
-          delegate_to: "{{ groups['hypervisor'][0] }}"
+#     - name: Deploy test machines
+#       include_role:
+#         name: deploy_test_machines
+#         apply:
+#           delegate_to: "{{ groups['hypervisor'][0] }}"
 
-    - name: Actually wait 600 seconds for nodes to come up
-      # TODO clarify why this doesn't happen within the `deploy_test_machines` role
-      wait_for_connection:
-        connect_timeout: 5
-        timeout: 600
+#     - name: Actually wait 600 seconds for nodes to come up
+#       # TODO clarify why this doesn't happen within the `deploy_test_machines` role
+#       wait_for_connection:
+#         connect_timeout: 5
+#         timeout: 600
 
 - name: Deploy haproxy on simulated machines
   import_playbook: deploy_haproxy.yml
