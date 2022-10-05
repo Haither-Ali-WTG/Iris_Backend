@@ -1,14 +1,11 @@
 ---
 - name: Download and initialize instances IIS data
   hosts: localhost
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
-      vars:
-        proxy_host: "192.168.255.254"
-        proxy_port: "3128"
 
     - name: Create a directory to store IIS data
       ansible.builtin.file:
