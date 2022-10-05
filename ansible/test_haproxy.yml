@@ -23,16 +23,16 @@
         cpu: 4
         ram: 8192
 
-- name: Create hypervisor group
-  hosts: localhost
-  gather_facts: no
-  tasks:
-    - name: Add host to hypervisor group
-      add_host:
-        name: "{{ hypervisor | default('localhost') }}"
-        groups: hypervisor
-        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-        images_folder: "/mnt/storage"
+# - name: Create hypervisor group
+#   hosts: localhost
+#   gather_facts: no
+#   tasks:
+#     - name: Add host to hypervisor group
+#       add_host:
+#         name: "{{ hypervisor | default('localhost') }}"
+#         groups: hypervisor
+#         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+#         images_folder: "/mnt/storage"
 
 
 - name: Download and initialize instances IIS data
@@ -49,26 +49,22 @@
       tempfile:
         state: directory
       register: temp_path
-      delegate_to: localhost
 
     - name: Download IIS data from ceph
       command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
-      delegate_to: localhost
 
     - name: Recursively find all IIS data files
       ansible.builtin.find:
         paths: "{{ temp_path.path }}"
         recurse: yes
       register: iis_files
-      delegate_to: localhost
 
     - name: Include vars of IIS sites to instance_name variable
       ansible.builtin.include_vars:
         file: "{{ item.path }}"
         name: "{{ (item.path | split('/'))[-2] }}"
       loop: "{{ iis_files.files }}"
-      delegate_to: localhost
 
 # - name: Configure hypervisor
 #   hosts: hypervisor
