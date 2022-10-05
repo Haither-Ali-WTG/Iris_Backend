@@ -11,15 +11,9 @@
   become: yes
   loop: [etc, run]
 
-- debug:
-    var: original_instance_name
-
 - name: Populate backends variable for instance
   set_fact:
     backends: "{{ hostvars['localhost'][original_instance_name] }}"
-
-- debug:
-    var: backends
 
 - name: Template out the haproxy config
   template:
