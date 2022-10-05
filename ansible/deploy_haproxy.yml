@@ -1,7 +1,6 @@
 ---
 - name: Download and initialize instances IIS data
   hosts: localhost
-  gather_facts: no
   tasks:
     - name: Setup ceph connection
       include_role:
@@ -23,13 +22,13 @@
       ansible.builtin.find:
         paths: "{{ temp_path.path }}"
         recurse: yes
-      register: folders
+      register: iis_files
 
     - name: Include vars of IIS sites to instance_name variable
       ansible.builtin.include_vars:
         file: "{{ item.path }}"
         name: "{{ (item.path | split('/'))[-2] }}"
-      loop: "{{ folders.files }}"
+      loop: "{{ iis_files.files }}"
 
 - name: Generate the "instance" inventory entries
   hosts: clusters

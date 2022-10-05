@@ -1,8 +1,48 @@
 ---
-- name: Download and initialize instances IIS data
-  hosts: localhost
-  gather_facts: yes
+- name: Set simulation facts
+  hosts: machines
+  gather_facts: no
   tasks:
+    - name: Set additional facts for simulating the machines
+      # TODO many of these will go into the inventory or will be calculated differently
+      set_fact:
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        ansible_host: "172.24.0.{{ ansible_play_hosts_all.index(inventory_hostname) + 1 }}"
+        pool: /mnt/storage/test_pool
+        virgil_os_family: linux
+        virgil_mac_oob_dante: '...'
+        virgil_hostname: "{{ inventory_hostname }}"
+        use_iso: false
+        images_folder: "/mnt/storage"
+        virgil_ssh_authorized_keys: >-
+            {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
+        virgil_groups: ['mgmt']
+        simulation_proxy: "http://172.31.255.254:3128"
+        virgil_port_oob_dante: eth0
+        virgil_internal_fqdn: "{{ inventory_hostname }}"
+        cpu: 4
+        ram: 8192
+
+- name: Create hypervisor group
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Add host to hypervisor group
+      add_host:
+        name: "{{ hypervisor | default('localhost') }}"
+        groups: hypervisor
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        images_folder: "/mnt/storage"
+
+- name: Configure hypervisor
+  hosts: hypervisor
+  tasks:
+    - name: "Install s3cmd"
+      apt:
+        name: "s3cmd"
+        state: present
+      become: yes
+
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
@@ -10,117 +50,45 @@
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
 
-    - name: Create temporary directory
-      tempfile:
-        state: directory
-      register: temp_path
-
-    - name: Download IIS data from ceph
-      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
+    - name: Download qcow2 required simulation
+      command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+      with_items:
+        - "{{ rhel_hypervisor_image }}"
+        - "{{ ubuntu_hypervisor_image }}"
       changed_when: true
 
-    - name: Recursively find all IIS data files
-      ansible.builtin.find:
-        paths: "{{ temp_path.path }}"
-        recurse: yes
-      register: iis_files
+- name: Deploy simulated machines
+  hosts: machines
+  gather_facts: no
+  tasks:
+    - name: Set additional facts
+      set_fact:
+        virgil_ip_oob_dante: "{{ ansible_host }}"
+        virgil_os_variant: "{{ os }}"
+        virgil_ip_dante: "{{ ansible_host }}"
 
-    - name: Include vars of IIS sites to instance_name variable
-      ansible.builtin.include_vars:
-        file: "{{ item.path }}"
-        name: "{{ (item.path | split('/'))[-2] }}"
-      loop: "{{ iis_files.files }}"
+    - name: Set images for simulation OS
+      vars:
+        os_image:
+          ubuntu: "{{ ubuntu_hypervisor_image }}"
+          rhel: "{{ rhel_hypervisor_image }}"
+      set_fact:
+        image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
 
-# - name: Set simulation facts
-#   hosts: machines
-#   gather_facts: no
-#   tasks:
-#     - name: Set additional facts for simulating the machines
-#       # TODO many of these will go into the inventory or will be calculated differently
-#       set_fact:
-#         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-#         ansible_host: "172.24.0.{{ ansible_play_hosts_all.index(inventory_hostname) + 1 }}"
-#         pool: /mnt/storage/test_pool
-#         virgil_os_family: linux
-#         virgil_mac_oob_dante: '...'
-#         virgil_hostname: "{{ inventory_hostname }}"
-#         use_iso: false
-#         images_folder: "/mnt/storage"
-#         virgil_ssh_authorized_keys: >-
-#             {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
-#         virgil_groups: ['mgmt']
-#         simulation_proxy: "http://172.31.255.254:3128"
-#         virgil_port_oob_dante: eth0
-#         virgil_internal_fqdn: "{{ inventory_hostname }}"
-#         cpu: 4
-#         ram: 8192
+    - name: Deploy test machines
+      include_role:
+        name: deploy_test_machines
+        apply:
+          delegate_to: "{{ groups['hypervisor'][0] }}"
 
-# - name: Create hypervisor group
-#   hosts: localhost
-#   gather_facts: no
-#   tasks:
-#     - name: Add host to hypervisor group
-#       add_host:
-#         name: "{{ hypervisor | default('localhost') }}"
-#         groups: hypervisor
-#         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-#         images_folder: "/mnt/storage"
+    - name: Actually wait 600 seconds for nodes to come up
+      # TODO clarify why this doesn't happen within the `deploy_test_machines` role
+      wait_for_connection:
+        connect_timeout: 5
+        timeout: 600
 
-# - name: Configure hypervisor
-#   hosts: hypervisor
-#   tasks:
-#     - name: "Install s3cmd"
-#       apt:
-#         name: "s3cmd"
-#         state: present
-#       become: yes
+- name: Deploy haproxy on simulated machines
+  import_playbook: deploy_haproxy.yml
 
-#     - name: Setup ceph connection
-#       include_role:
-#         name: ceph_connection_setup
-#       vars:
-#         proxy_host: "192.168.255.254"
-#         proxy_port: "3128"
-
-#     - name: Download qcow2 required simulation
-#       command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
-#       with_items:
-#         - "{{ rhel_hypervisor_image }}"
-#         - "{{ ubuntu_hypervisor_image }}"
-#       changed_when: true
-
-# - name: Deploy simulated machines
-#   hosts: machines
-#   gather_facts: no
-#   tasks:
-#     - name: Set additional facts
-#       set_fact:
-#         virgil_ip_oob_dante: "{{ ansible_host }}"
-#         virgil_os_variant: "{{ os }}"
-#         virgil_ip_dante: "{{ ansible_host }}"
-
-#     - name: Set images for simulation OS
-#       vars:
-#         os_image:
-#           ubuntu: "{{ ubuntu_hypervisor_image }}"
-#           rhel: "{{ rhel_hypervisor_image }}"
-#       set_fact:
-#         image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
-
-#     - name: Deploy test machines
-#       include_role:
-#         name: deploy_test_machines
-#         apply:
-#           delegate_to: "{{ groups['hypervisor'][0] }}"
-
-#     - name: Actually wait 600 seconds for nodes to come up
-#       # TODO clarify why this doesn't happen within the `deploy_test_machines` role
-#       wait_for_connection:
-#         connect_timeout: 5
-#         timeout: 600
-
-# - name: Deploy haproxy on simulated machines
-#   import_playbook: deploy_haproxy.yml
-
-# - name: Check haproxy
-#   import_playbook: check_haproxy.yml
+- name: Check haproxy
+  import_playbook: check_haproxy.yml

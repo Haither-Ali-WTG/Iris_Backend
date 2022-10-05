@@ -110,12 +110,12 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true"
 
-          # - task: Ansible@0
-          #   displayName: 'Cleanup'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
-          #   condition: always()
+          - task: Ansible@0
+            displayName: 'Cleanup'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
+            condition: always()
