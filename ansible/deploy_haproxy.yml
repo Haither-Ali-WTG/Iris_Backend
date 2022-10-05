@@ -10,28 +10,26 @@
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
 
-    - name: Create a directory to store IIS data
-      ansible.builtin.file:
-        path: iis_data
+    - name: Create temporary directory
+      tempfile:
         state: directory
-        mode: a=rwx
-      register: iis_directory
+      register: temp_path
 
     - name: Download IIS data from ceph
-      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ iis_directory.path }}
+      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
 
     - name: Recursively find all IIS data files
       ansible.builtin.find:
-        paths: "{{ iis_directory.path }}"
+        paths: "{{ temp_path.path }}"
         recurse: yes
-      register: iis_files
+      register: folders
 
     - name: Include vars of IIS sites to instance_name variable
       ansible.builtin.include_vars:
         file: "{{ item.path }}"
         name: "{{ (item.path | split('/'))[-2] }}"
-      loop: "{{ iis_files.files }}"
+      loop: "{{ folders.files }}"
 
 - name: Generate the "instance" inventory entries
   hosts: clusters
