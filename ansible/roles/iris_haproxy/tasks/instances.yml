@@ -15,6 +15,9 @@
   set_fact:
     backends: "{{ hostvars['localhost'].inventory_hostname }}"
 
+- debug:
+    var: backends
+
 - name: Template out the haproxy config
   template:
     src: haproxy.cfg.j2
