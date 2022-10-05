@@ -6,6 +6,9 @@
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
 
     - name: Create temporary directory
       tempfile:
