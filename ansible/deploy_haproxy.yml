@@ -2,7 +2,6 @@
 - name: Download and initialize instances IIS data
   hosts: localhost
   gather_facts: no
-  run_once: true
   tasks:
     - name: Setup ceph connection
       include_role:
@@ -18,9 +17,6 @@
 
     - name: Download IIS data from ceph
       command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
-      with_items:
-        - "{{ rhel_hypervisor_image }}"
-        - "{{ ubuntu_hypervisor_image }}"
       changed_when: true
 
 # - name: Generate the "instance" inventory entries
