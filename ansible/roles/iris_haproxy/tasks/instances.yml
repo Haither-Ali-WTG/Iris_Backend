@@ -13,7 +13,7 @@
 
 - name: Populate backends variable for instance
   set_fact:
-    backends: "{{ hostvars['localhost'].inventory_hostname }}"
+    backends: "{{ hostvars['localhost'].original_instance_name }}"
 
 - debug:
     var: backends

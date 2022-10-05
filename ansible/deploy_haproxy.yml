@@ -21,6 +21,7 @@
         # TODO: machine overrides
         # TODO: groups from cluster and machine settings
         ansible_host: "{{ machine.ansible_host }}"
+        original_instance_name: "{{ inventory_hostname }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
