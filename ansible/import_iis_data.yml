@@ -1,0 +1,31 @@
+---
+- name: Download and initialize instances IIS data
+  hosts: localhost
+  tasks:
+    - name: Setup ceph connection
+      include_role:
+        name: ceph_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
+
+    - name: Create temporary directory
+      tempfile:
+        state: directory
+      register: temp_path
+
+    - name: Download IIS data from ceph
+      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
+      changed_when: true
+
+    - name: Recursively find all IIS data files
+      ansible.builtin.find:
+        paths: "{{ temp_path.path }}"
+        recurse: yes
+      register: iis_files
+
+    - name: Include vars of IIS sites to instance_name variable
+      ansible.builtin.include_vars:
+        file: "{{ item.path }}"
+        name: "{{ (item.path | split('/'))[-2] }}"
+      loop: "{{ iis_files.files }}"

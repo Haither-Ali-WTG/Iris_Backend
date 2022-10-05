@@ -23,6 +23,9 @@
         cpu: 4
         ram: 8192
 
+- name: Import IIS data
+  import_playbook: import_iis_data.yml
+
 - name: Create hypervisor group
   hosts: localhost
   gather_facts: no

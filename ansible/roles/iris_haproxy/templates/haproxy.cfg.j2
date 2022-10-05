@@ -231,20 +231,22 @@ use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
 # ########
 
 
-{% for backend in backends %}
-backend {{ backend.name }}
-{% if backend.balance %}balance {{ backend.balance }}
+{% for name,backend in backends.items() %}
+backend {{ name | replace(".", "_") }}
+{% if backend.balance is defined %}balance {{ backend.balance }}
 {% endif %}
-option httpchk HEAD {{ backend.healthCheck }} HTTP/1.1\r\nHost:\ {{ backend.hostname }}
+option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
 {% if backend.cookie %}
-cookie {{ backend.cookie }} insert indirect nocache dynamic
+cookie {{ backend.cookie is defined }} insert indirect nocache dynamic
 {% endif %}
-default-server inter 10000 {%- if backend.encryption %} ssl{% endif %}
+default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
 
+{# TODO: add support for multiple servers. To be done in separate PR
 {%     for server in backend.servers %}
 server {{ server.name }} {{ backend.ip }}:{{ backend.port }} check
 {%     endfor %}
+#}
 
 {% endfor %}
 
