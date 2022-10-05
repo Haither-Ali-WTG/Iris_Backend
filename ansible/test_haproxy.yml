@@ -27,14 +27,12 @@
   hosts: localhost
   gather_facts: no
   tasks:
-    - debug:
-        msg: hello
-#     - name: Add host to hypervisor group
-#       add_host:
-#         name: "{{ hypervisor | default('localhost') }}"
-#         groups: hypervisor
-#         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-#         images_folder: "/mnt/storage"
+    - name: Add host to hypervisor group
+      add_host:
+        name: "{{ hypervisor | default('localhost') }}"
+        groups: hypervisor
+        # ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        # images_folder: "/mnt/storage"
 
 # - name: Configure hypervisor
 #   hosts: hypervisor
