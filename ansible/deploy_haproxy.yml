@@ -1,4 +1,8 @@
 ---
+- name: Import IIS data
+  import_playbook: import_iis_data.yml
+  when: not simulation
+
 - name: Download and initialize instances IIS data
   hosts: localhost
   tasks:
