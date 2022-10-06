@@ -104,7 +104,7 @@ def process_server(server_name, connection_params, website_config, output_path, 
 
     websites = get_websites_with_parameters(sites_list, website_config, logger)
 
-    with open(f"{output_path}/{server_name}.yml", 'w', encoding="utf8") as outfile:
+    with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
 
     ##############################################################################################
