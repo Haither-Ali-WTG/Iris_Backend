@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221005.1
-  # Tue Oct  4 21:44:44 UTC 2022 -- Tue Oct  4 21:44:44 Australia 2022
+  # dante build artifact 20221006.1
+  # Thu Oct  6 03:22:16 UTC 2022 -- Thu Oct  6 03:22:16 Australia 2022
   #
-  # Merged PR 8751: bugfix kafka variable name
-  # f24d88fcdc0cfd6a12a7dcbcde2440c1193d4117
-  dante_build_id: '363701'
+  # Merged PR 8777: bug fix and readme update
+  # f200617f77e9ed00e97c10f5620452feff4cc74f
+  dante_build_id: '365038'
 
   # virgil 20221004.2
   # Mon Oct  3 23:33:43 UTC 2022 -- Mon Oct  3 23:33:43 Australia 2022
