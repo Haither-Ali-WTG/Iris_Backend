@@ -6,8 +6,8 @@
       include_role:
         name: ceph_connection_setup
       vars:
-        proxy_host: "192.168.255.254"
-        proxy_port: "3128"
+        proxy_host: "{% if simulation %}192.168.255.254{% endif %}"
+        proxy_port: "{% if simulation %}3128{% endif %}"
 
     - name: Create temporary directory
       tempfile:
