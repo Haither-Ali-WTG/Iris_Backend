@@ -11,6 +11,7 @@ from datetime import datetime
 import logging
 import os
 import re
+import socket
 import sys
 import yaml
 
@@ -30,7 +31,7 @@ def load_yaml_from_file(file_name):
     with open(file_name, 'r', encoding="utf8") as stream:
         return yaml.safe_load(stream)
 
-def get_websites_with_parameters(sites_list, website_config, logger):
+def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
     """Combine sites list with correspondent configuration from websites.yml"""
     websites = {}
 
@@ -48,6 +49,7 @@ def get_websites_with_parameters(sites_list, website_config, logger):
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
                 websites[site_name] = config
+                websites[site_name]['server_ip'] = server_ip
                 name_matched_times += 1
 
         if name_matched_times == 0:
@@ -102,7 +104,8 @@ def process_server(server_name, connection_params, website_config, output_path, 
     if len(sites_list) == 0:
         return
 
-    websites = get_websites_with_parameters(sites_list, website_config, logger)
+    server_ip = socket.gethostbyname(server_name)
+    websites = get_websites_with_parameters(sites_list, website_config, server_ip, logger)
 
     with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
