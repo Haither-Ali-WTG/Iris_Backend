@@ -15,8 +15,8 @@
   set_fact:
     backends: "{{ hostvars['localhost'].complete_iis_data.instances[original_instance_name] }}"
   when:
-    - "original_instance_name in hostvars['localhost'].complete_iis_data.instances"
     - "'complete_iis_data' in hostvars['localhost']"
+    - "original_instance_name in hostvars['localhost'].complete_iis_data.instances"
 
 - name: Template out the haproxy config
   template:
