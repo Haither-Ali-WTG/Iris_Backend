@@ -18,6 +18,12 @@
       command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
 
+    - name: Recursively find all IIS data files
+      ansible.builtin.find:
+        paths: "{{ temp_path.path }}"
+        recurse: yes
+      register: iis_files
+
     - name: Find all instances
       ansible.builtin.find:
         paths: "{{ temp_path.path }}"
