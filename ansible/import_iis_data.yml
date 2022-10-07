@@ -25,6 +25,11 @@
         file_type: directory
       register: instance_folders
 
+    - name: Calculate instances name
+      set_fact:
+        instance_names: "{{ instance_names | default([]) + [(item.path | split('/'))[-1]] }}"
+      loop: "{{ instance_folders.files }}"
+
     - name: Include vars of IIS sites to instance_name variable
       set_fact: 
         complete_iis_data: "{{ lookup('template','roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
