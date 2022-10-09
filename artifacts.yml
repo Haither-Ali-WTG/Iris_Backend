@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221006.1
-  # Thu Oct  6 03:22:16 UTC 2022 -- Thu Oct  6 03:22:16 Australia 2022
+  # dante build artifact 20221006.3
+  # Thu Oct  6 11:12:25 UTC 2022 -- Thu Oct  6 11:12:25 Australia 2022
   #
-  # Merged PR 8777: bug fix and readme update
-  # f200617f77e9ed00e97c10f5620452feff4cc74f
-  dante_build_id: '365038'
+  # Merge pull request 8736 from dante_artifact_upgrade into master
+  # ba36015ef98fab3bcbaff5d92a8668a993e84ecd
+  dante_build_id: '365376'
 
-  # virgil 20221004.2
-  # Mon Oct  3 23:33:43 UTC 2022 -- Mon Oct  3 23:33:43 Australia 2022
+  # virgil 20221007.4
+  # Thu Oct  6 23:49:57 UTC 2022 -- Thu Oct  6 23:49:57 Australia 2022
   #
-  # Merge pull request 8740 from virgil_python_upgrade into master
-  # 388a944547c07851a9cf6431829f759237ca6aff
-  virgil_build_id: '362793'
+  # Merged PR 8754: Increase cargowise-logs partitions
+  # e3bbed08e7e80b8c23faa544719deb181b2d0784
+  virgil_build_id: '365894'
