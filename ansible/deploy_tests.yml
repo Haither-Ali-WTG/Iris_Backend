@@ -4,7 +4,5 @@
   strategy: free
   gather_facts: no
   force_handlers: yes
-  tasks:
-    - name: Collect min facts
-      ansible.builtin.setup:
-        gather_subset: min
+  roles:
+  - fakeserver
