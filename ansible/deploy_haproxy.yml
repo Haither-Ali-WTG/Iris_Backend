@@ -23,7 +23,7 @@
         # TODO: cluster overrides
         # TODO: groups from cluster and machine settings
         ansible_host: "{{ machine.ansible_host }}"
-        original_instance_name: "{{ cluster_name }}"
+        original_instance_name: "{{ item.cluster_name }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
