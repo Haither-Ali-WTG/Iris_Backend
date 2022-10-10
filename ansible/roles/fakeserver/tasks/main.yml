@@ -13,11 +13,13 @@
   template:
     src: nginx.conf.j2
     dest: "{{ working_dir }}/config/nginx.conf"
+    mode: a=r
 
 - name: Copy index.hmtl
   copy:
     src: index.html
     dest: "{{ working_dir }}/public/index.html"
+    mode: a=r
 
 - name: Deploy the fakeserver container
   include_role:
