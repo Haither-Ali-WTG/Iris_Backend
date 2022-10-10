@@ -16,7 +16,7 @@ ansible-lint==6.8.0
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
-astroid==2.12.10
+astroid==2.12.11
     # via pylint
 attrs==22.1.0
     # via
@@ -111,7 +111,7 @@ pycparser==2.21
     # via cffi
 pygments==2.13.0
     # via rich
-pylint==2.15.3
+pylint==2.15.4
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
