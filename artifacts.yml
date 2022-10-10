@@ -7,9 +7,9 @@ variables:
   # ba36015ef98fab3bcbaff5d92a8668a993e84ecd
   dante_build_id: '365376'
 
-  # virgil 20221007.4
-  # Thu Oct  6 23:49:57 UTC 2022 -- Thu Oct  6 23:49:57 Australia 2022
+  # virgil 20221010.2
+  # Sun Oct  9 22:27:40 UTC 2022 -- Sun Oct  9 22:27:40 Australia 2022
   #
-  # Merged PR 8754: Increase cargowise-logs partitions
-  # e3bbed08e7e80b8c23faa544719deb181b2d0784
-  virgil_build_id: '365894'
+  # Merge pull request 8805 from virgil_python_upgrade into master
+  # 03cc693556f95e87a5233ef109a9461ca9e7e6c6
+  virgil_build_id: '368614'
