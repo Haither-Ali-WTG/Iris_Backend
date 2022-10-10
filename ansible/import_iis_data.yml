@@ -24,8 +24,18 @@
         recurse: yes
       register: iis_files
 
+    - name: Find all instances
+      ansible.builtin.find:
+        paths: "{{ temp_path.path }}"
+        recurse: no
+        file_type: directory
+      register: instance_folders
+
+    - name: Calculate instances name
+      set_fact:
+        instance_names: "{{ instance_names | default([]) + [(item.path | split('/'))[-1]] }}"
+      loop: "{{ instance_folders.files }}"
+
     - name: Include vars of IIS sites to instance_name variable
-      ansible.builtin.include_vars:
-        file: "{{ item.path }}"
-        name: "{{ (item.path | split('/'))[-2] }}"
-      loop: "{{ iis_files.files }}"
+      set_fact:
+        complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"

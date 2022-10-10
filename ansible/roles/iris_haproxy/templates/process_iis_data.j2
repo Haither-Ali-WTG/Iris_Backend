@@ -1,0 +1,10 @@
+instances:
+{% for instance in instance_names %}
+  {{ instance }}:
+{%  for file in iis_files.files %}
+{%    if instance in (file.path | split('/')) %}
+    {{ file.path | split('/') | last }}:
+      {{ lookup('file', file.path) | from_yaml }}
+{%    endif %}
+{%  endfor %}
+{% endfor %}
