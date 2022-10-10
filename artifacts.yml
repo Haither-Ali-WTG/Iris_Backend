@@ -7,9 +7,9 @@ variables:
   # ba36015ef98fab3bcbaff5d92a8668a993e84ecd
   dante_build_id: '365376'
 
-  # virgil 20221010.2
-  # Sun Oct  9 22:27:40 UTC 2022 -- Sun Oct  9 22:27:40 Australia 2022
+  # virgil 20221010.11
+  # Mon Oct 10 05:12:31 UTC 2022 -- Mon Oct 10 05:12:31 Australia 2022
   #
-  # Merge pull request 8805 from virgil_python_upgrade into master
-  # 03cc693556f95e87a5233ef109a9461ca9e7e6c6
-  virgil_build_id: '368614'
+  # Merged PR 8801: Virgil - Stage Changes For Kafka Queue Partitions - Only in US2
+  # 041d99199221130078dd054b537c472252c421bb
+  virgil_build_id: '368925'
