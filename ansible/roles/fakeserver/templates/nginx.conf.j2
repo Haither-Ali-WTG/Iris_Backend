@@ -1,0 +1,11 @@
+error_log  /etc/nginx/error.log;
+worker_rlimit_nofile 8192;
+
+events {
+  worker_connections  4096;  ## Default: 1024
+}
+
+http {
+  index    index.html;
+
+}
