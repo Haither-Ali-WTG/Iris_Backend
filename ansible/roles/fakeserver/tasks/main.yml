@@ -24,6 +24,7 @@
     name: container_runner
   vars:
     name: fakeserver
+    workload: deployment
     image: "{{ fakeserver_image }}"
     volumes:
       - "{{ working_dir }}/config:/etc/nginx:z"
