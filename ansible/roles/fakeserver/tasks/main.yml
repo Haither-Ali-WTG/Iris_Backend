@@ -1,5 +1,5 @@
 ---
-- name: Create fakesrerver directory
+- name: Create fakeserver directory
   file:
     dest: "{{ working_dir }}/{{ item }}"
     state: directory
@@ -31,7 +31,7 @@
     volumes:
       - "{{ working_dir }}/config:/etc/nginx:z"
       - "{{ working_dir }}/public:/public:z"
-    container_dir: "{{ instance_dir }}"
+    container_dir: "{{ working_dir }}"
     resources:
       simulation:
         cpu: 1000m
