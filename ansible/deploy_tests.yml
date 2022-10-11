@@ -1,6 +1,6 @@
 ---
-- name: Setup the instances
-  hosts: instances
+- name: Setup the machines
+  hosts: machines
   strategy: free
   gather_facts: no
   force_handlers: yes
