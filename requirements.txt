@@ -8,11 +8,11 @@ ansible==6.4.0
     # via -r requirements.in
 ansible-compat==2.2.1
     # via ansible-lint
-ansible-core==2.13.4
+ansible-core==2.13.5
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.8.0
+ansible-lint==6.8.1
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
@@ -54,7 +54,7 @@ filelock==3.8.0
     # via ansible-lint
 gitdb==4.0.9
     # via gitpython
-gitpython==3.1.28
+gitpython==3.1.29
     # via bandit
 idna==3.4
     # via requests
