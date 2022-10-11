@@ -1,8 +1,8 @@
 ---
-- name: Setup the instances
-  hosts: instances
+- name: Setup the machines
+  hosts: machines
   strategy: free
-  gather_facts: no
+  gather_facts: yes
   force_handlers: yes
   roles:
     - fakeserver
