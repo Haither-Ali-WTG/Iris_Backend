@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221006.3
-  # Thu Oct  6 11:12:25 UTC 2022 -- Thu Oct  6 11:12:25 Australia 2022
+  # dante build artifact 20221011.1
+  # Tue Oct 11 07:08:41 UTC 2022 -- Tue Oct 11 07:08:41 Australia 2022
   #
-  # Merge pull request 8736 from dante_artifact_upgrade into master
-  # ba36015ef98fab3bcbaff5d92a8668a993e84ecd
-  dante_build_id: '365376'
+  # Merged PR 8755: Dante - Remove plain text password
+  # 8fcea6a84d023349c7baf6e424289b85e265e793
+  dante_build_id: '370090'
 
   # virgil 20221011.7
   # Mon Oct 10 23:17:24 UTC 2022 -- Mon Oct 10 23:17:24 Australia 2022
