@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221012.3
-  # Wed Oct 12 02:30:38 UTC 2022 -- Wed Oct 12 02:30:38 Australia 2022
+  # dante build artifact 20221013.1
+  # Wed Oct 12 23:16:21 UTC 2022 -- Wed Oct 12 23:16:21 Australia 2022
   #
-  # Merged PR 8708: Dante - Rename files and use same checks for pre and post flight -- 2/2
-  # a0f98a09a45ea9409160cbf351073ec21052aca6
-  dante_build_id: '370910'
+  # Merged PR 8856: (Bug fix) Enable restart always for podman
+  # cc0a7cde27371dba0f99fd738b66c81a367f4e46
+  dante_build_id: '371720'
 
   # virgil 20221012.2
   # Tue Oct 11 22:54:33 UTC 2022 -- Tue Oct 11 22:54:33 Australia 2022
