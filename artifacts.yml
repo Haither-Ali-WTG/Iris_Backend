@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221011.1
-  # Tue Oct 11 07:08:41 UTC 2022 -- Tue Oct 11 07:08:41 Australia 2022
+  # dante build artifact 20221012.3
+  # Wed Oct 12 02:30:38 UTC 2022 -- Wed Oct 12 02:30:38 Australia 2022
   #
-  # Merged PR 8755: Dante - Remove plain text password
-  # 8fcea6a84d023349c7baf6e424289b85e265e793
-  dante_build_id: '370090'
+  # Merged PR 8708: Dante - Rename files and use same checks for pre and post flight -- 2/2
+  # a0f98a09a45ea9409160cbf351073ec21052aca6
+  dante_build_id: '370910'
 
-  # virgil 20221011.7
-  # Mon Oct 10 23:17:24 UTC 2022 -- Mon Oct 10 23:17:24 Australia 2022
+  # virgil 20221012.2
+  # Tue Oct 11 22:54:33 UTC 2022 -- Tue Oct 11 22:54:33 Australia 2022
   #
-  # Merged PR 8827: 3x new Eye nodes
-  # b7db7ae37a9422cc194a02ae605ec4dbcad32c95
-  virgil_build_id: '369702'
+  # Merge pull request 8848 from virgil_python_upgrade into master
+  # 00ab40fff488c84d72c7ed789bfe4c607e676acb
+  virgil_build_id: '370732'
