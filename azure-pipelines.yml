@@ -75,47 +75,48 @@ stages:
               azureSubscription: 'sc-azuredevops2dante-vaults'
               KeyVaultName: kv-wtg-test
               SecretsFilter: '*'
-              RunAsPreJob: false        
-          # - script: |
-          #     set -euxo pipefail
-          #     pip install -r requirements.txt
-          #   displayName: 'Install requirements'
+              RunAsPreJob: false
 
-          # - task: DownloadPipelineArtifact@2
-          #   displayName: 'Download dante artifact'
-          #   inputs:
-          #     buildType: 'specific'
-          #     project: 'InfrastructureAutomation'
-          #     # dante build artifact pipeline Id
-          #     pipeline: 26
-          #     buildVersionToDownload: 'specific'
-          #     buildId: '$(dante_build_id)'
-          #     path: $(Build.SourcesDirectory)
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
 
-          # - task: CopyFiles@2
-          #   displayName: 'Merge artifacts to a single roles folder'
-          #   inputs:
-          #     sourceFolder: nested_virt
-          #     targetFolder: ansible
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
 
-          # - task: InstallSSHKey@0
-          #   displayName: 'Install an SSH key'
-          #   inputs:
-          #     knownHostsEntry: 'StrictHostKeyChecking no'
-          #     sshKeySecureFile: 'id_rsa'
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
 
-          # - task: Ansible@0
-          #   displayName: 'Test haproxy'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
-          #     inventoriesAgentMachine: 'file'
-          #     inventoryFileOnAgentMachine: 'instances'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff
-          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          #       -e="simulation=true"
+          - task: InstallSSHKey@0
+            displayName: 'Install an SSH key'
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'
+
+          - task: Ansible@0
+            displayName: 'Test haproxy'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="simulation=true"
 
           # - task: Ansible@0
           #   displayName: 'Cleanup'
