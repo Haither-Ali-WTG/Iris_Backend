@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-ansible==6.4.0
+ansible==6.5.0
     # via -r requirements.in
 ansible-compat==2.2.1
     # via ansible-lint
@@ -12,7 +12,7 @@ ansible-core==2.13.5
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.8.1
+ansible-lint==6.8.2
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
@@ -164,7 +164,7 @@ six==1.16.0
     #   pywinrm
 smmap==5.0.0
     # via gitdb
-stevedore==4.0.0
+stevedore==4.0.1
     # via bandit
 subprocess-tee==0.3.5
     # via ansible-compat
