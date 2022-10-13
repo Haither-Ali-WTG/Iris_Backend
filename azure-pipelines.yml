@@ -69,12 +69,12 @@ stages:
     jobs:
       - job: Simulation
         steps:
-        - task: AzureKeyVault@2
-          displayName: 'Get secret to authenticate to key vault from ansible'
-          inputs:
-            azureSubscription: 'sc-azuredevops2dante-vaults'
-            KeyVaultName: kv-wtg-dante-sim
-            SecretsFilter: secretAppIdDf4b4604e176
+          - task: AzureKeyVault@2
+            displayName: 'Get secret to authenticate to key vault from ansible'
+            inputs:
+              azureSubscription: 'sc-azuredevops2dante-vaults'
+              KeyVaultName: kv-wtg-dante-sim
+              SecretsFilter: secretAppIdDf4b4604e176
 
           - script: |
               set -euxo pipefail
