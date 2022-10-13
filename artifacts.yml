@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221013.1
-  # Wed Oct 12 23:16:21 UTC 2022 -- Wed Oct 12 23:16:21 Australia 2022
+  # dante build artifact 20221013.5
+  # Thu Oct 13 10:00:41 UTC 2022 -- Thu Oct 13 10:00:41 Australia 2022
   #
-  # Merged PR 8856: (Bug fix) Enable restart always for podman
-  # cc0a7cde27371dba0f99fd738b66c81a367f4e46
-  dante_build_id: '371720'
+  # Merge pull request 8877 from dante_artifact_upgrade into master
+  # 9023b5c29c25acc9ba426cc580c7048871abf298
+  dante_build_id: '372258'
 
-  # virgil 20221012.2
-  # Tue Oct 11 22:54:33 UTC 2022 -- Tue Oct 11 22:54:33 Australia 2022
+  # virgil 20221013.8
+  # Thu Oct 13 05:55:19 UTC 2022 -- Thu Oct 13 05:55:19 Australia 2022
   #
-  # Merge pull request 8848 from virgil_python_upgrade into master
-  # 00ab40fff488c84d72c7ed789bfe4c607e676acb
-  virgil_build_id: '370732'
+  # Merged PR 8874: Virgil - All Kafka Hosts back to Ubuntu 20.04 (important!)
+  # cf3a566b36bc4558d8fbd68bdd495c0c73aa6e7f
+  virgil_build_id: '372079'
