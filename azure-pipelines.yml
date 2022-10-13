@@ -82,6 +82,12 @@ stages:
               targetType: 'inline'
               script: 'env | sort'
 
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                echo "##vso"
+
           # - script: |
           #     set -euxo pipefail
           #     pip install -r requirements.txt
