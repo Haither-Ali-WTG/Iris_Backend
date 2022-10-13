@@ -33,11 +33,7 @@
   tasks:
     - name: Basic usage
       ansible.builtin.debug:
-        msg: "'{{ lookup('ansible.builtin.env', 'ahwprd-webtracker-carozplus-com') }}'"    
-
-    - name: Pause for 5 minutes to build app cache
-      ansible.builtin.pause:
-        minutes: 5
+        msg: "'{{ lookup('ansible.builtin.env', 'secretAppIdDf4b4604e176') }}'"    
 
     # - name: Add host to hypervisor group
     #   add_host:
