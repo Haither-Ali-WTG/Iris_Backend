@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221014.1
-  # Fri Oct 14 02:53:49 UTC 2022 -- Fri Oct 14 02:53:49 Australia 2022
+  # dante build artifact 20221014.3
+  # Fri Oct 14 10:41:46 UTC 2022 -- Fri Oct 14 10:41:46 Australia 2022
   #
-  # Merge pull request 8884 from dante_artifact_upgrade into master
-  # 06beed9ce12feeab0978e68ffb406d63d63d56c2
-  dante_build_id: '372918'
+  # Merged PR 8609: Minor ansible-lint tweaks
+  # 5c02b22a88e0172b98d2e166c3dc7ef1c847469a
+  dante_build_id: '373237'
 
   # virgil 20221014.6
   # Fri Oct 14 03:34:20 UTC 2022 -- Fri Oct 14 03:34:20 Australia 2022
