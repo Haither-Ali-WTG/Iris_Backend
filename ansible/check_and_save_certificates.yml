@@ -12,4 +12,5 @@
         tasks_from: get_secret.yml        
       vars:
         azure_kv_secret_name: ahwprd-webtracker-carozplus-com
-        curl.retries: 2
+        curl:
+          retries: 2
