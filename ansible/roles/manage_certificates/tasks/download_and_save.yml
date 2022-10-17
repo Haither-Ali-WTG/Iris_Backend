@@ -10,12 +10,13 @@
   include_role:
     name: azure_keyvault
     tasks_from: get_secret.yml
+    apply:
+      delegate_to: localhost
   vars:
     azure_kv_secret_name: certificate_name
     curl:
       retries: 2
       delay: 5
-  delegate_to: localhost
 
 - debug:
     var: return_secret_value

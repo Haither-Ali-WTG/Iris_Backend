@@ -10,3 +10,4 @@
       loop: "{{ certificates }}"
       loop_control:
         loop_var: certificate_name
+      when: certificates is defined
