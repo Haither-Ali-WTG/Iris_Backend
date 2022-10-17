@@ -18,11 +18,9 @@
       retries: 2
       delay: 5
 
-- debug:
-    var: return_secret_value
-
 - name: Save certificate to file
   copy:
     dest: "certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
     content: "{{ return_secret_value }}"
   delegate_to: localhost
+  no_log: true
