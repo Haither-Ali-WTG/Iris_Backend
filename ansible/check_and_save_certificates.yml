@@ -3,15 +3,13 @@
   import_playbook: calculate_instances.yml
 
 - name: Check and save certificates
-  hosts: localhost
-  gather_facts: yes
+  hosts: instances
+  gather_facts: no
   tasks:
-    - name: Get certificates
+    - name: Get certificate
       include_role:
-        name: azure_keyvault
-        tasks_from: get_secret.yml        
-      vars:
-        azure_kv_secret_name: ahwprd-webtracker-carozplus-com
-        curl:
-          retries: 2
-          delay: 5
+        name: manage_certificates
+        tasks_from: download_and_save.yml
+      loop: "{{ certificates }}"
+      loop_control:
+        loop_var: certificate_name

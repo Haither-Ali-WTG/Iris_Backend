@@ -1,0 +1,26 @@
+---
+- name: Create certificates directory
+  file:
+    dest: "certificates/{{ inventory_hostname }}"
+    state: directory
+    mode: u=rw,go=
+  delegate_to: localhost
+
+- name: Get certificate
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: certificate_name
+    curl:
+      retries: 2
+      delay: 5
+
+- debug:
+    var: return_secret_value
+
+  - name: SAave certificate to file
+    copy:
+      dest: "certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
+      content: "{{ return_secret_value }}"
+  delegate_to: localhost
