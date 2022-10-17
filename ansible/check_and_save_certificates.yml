@@ -1,0 +1,13 @@
+---
+- name: Check and save certificates
+  hosts: clusters
+  gather_facts: no
+  tasks:
+    - name: Get certificate
+      include_role:
+        name: manage_certificates
+        tasks_from: download_and_save.yml
+      loop: "{{ certificates }}"
+      loop_control:
+        loop_var: certificate_name
+      when: certificates is defined
