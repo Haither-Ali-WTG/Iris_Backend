@@ -14,3 +14,4 @@
         azure_kv_secret_name: ahwprd-webtracker-carozplus-com
         curl:
           retries: 2
+          delay: 5
