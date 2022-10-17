@@ -1,9 +1,6 @@
 ---
-- name: Calculate instance inventory entrance
-  import_playbook: calculate_instances.yml
-
 - name: Check and save certificates
-  hosts: instances
+  hosts: clusters
   gather_facts: no
   tasks:
     - name: Get certificate
