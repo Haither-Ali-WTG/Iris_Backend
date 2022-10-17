@@ -6,6 +6,8 @@ variables:
   - template: artifacts.yml
   - name: user
     value: dante
+  - name: azure_kv_name
+    value: kv-wtg-test
 
 stages:
   # - stage: Tests_and_lint
@@ -105,19 +107,32 @@ stages:
               sshKeySecureFile: 'id_rsa'
 
           - task: Ansible@0
-            displayName: 'Test haproxy'
+            displayName: 'Check and save certificates'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
               inventoriesAgentMachine: 'file'
               inventoryFileOnAgentMachine: 'instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true"
+                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
+          # - task: Ansible@0
+          #   displayName: 'Test haproxy'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+          #     inventoriesAgentMachine: 'file'
+          #     inventoryFileOnAgentMachine: 'instances'
+          #     failOnStdErr: false
+          #     args: >-
+          #       -u $(user) --diff
+          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+          #       -e="simulation=true"
 
           # - task: Ansible@0
           #   displayName: 'Cleanup'
