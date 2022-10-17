@@ -13,7 +13,7 @@
     apply:
       delegate_to: localhost
   vars:
-    azure_kv_secret_name: certificate_name
+    azure_kv_secret_name: "{{ certificate_name }}"
     curl:
       retries: 2
       delay: 5
