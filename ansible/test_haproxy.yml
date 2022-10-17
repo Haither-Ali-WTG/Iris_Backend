@@ -28,23 +28,8 @@
 
 - name: Create hypervisor group
   hosts: localhost
-  gather_facts: yes
+  gather_facts: no
   tasks:
-    - name: Basic usage
-      ansible.builtin.debug:
-        msg: "'{{ lookup('ansible.builtin.env', 'secretAppIdDf4b4604e176') }}'"
-
-    - include_role:
-        name: azure_keyvault
-        tasks_from: get_secret.yml        
-      vars:
-        azure_kv_name: kv-wtg-test
-        azure_kv_secret_name: ahwprd-webtracker-carozplus-com
-
-    - debug:
-        var: return_secret_value
-
-
     - name: Add host to hypervisor group
       add_host:
         name: "{{ hypervisor | default('localhost') }}"
