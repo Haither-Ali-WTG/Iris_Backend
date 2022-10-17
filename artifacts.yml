@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221017.2
-  # Mon Oct 17 04:43:15 UTC 2022 -- Mon Oct 17 04:43:15 Australia 2022
+  # dante build artifact 20221017.3
+  # Mon Oct 17 06:37:55 UTC 2022 -- Mon Oct 17 06:37:55 Australia 2022
   #
-  # Merged PR 8892: azure_keyvault role added to artifact build
-  # b81a96c8420a69beb1e446af0f932ef20d7f37f0
-  dante_build_id: '375756'
+  # Merged PR 8811: notice cv bucket deleteion - new subcluent structure
+  # 1eeba2b9c0beeb29a9c6c213efed92eff5a7a264
+  dante_build_id: '375873'
 
-  # virgil 20221017.2
-  # Mon Oct 17 00:17:01 UTC 2022 -- Mon Oct 17 00:17:01 Australia 2022
+  # virgil 20221017.4
+  # Mon Oct 17 05:17:05 UTC 2022 -- Mon Oct 17 05:17:05 Australia 2022
   #
-  # Merge pull request 8890 from virgil_python_upgrade into master
-  # 348bf460f67128067934ef0a500c9c6fc5ac97a0
-  virgil_build_id: '375563'
+  # Merged PR 8869: BrocadeSWmgmtConnection
+  # 89c97bde6af1b04747d756cb9c0b21bd48735651
+  virgil_build_id: '375796'
