@@ -3,7 +3,7 @@
   file:
     dest: "certificates/{{ inventory_hostname }}"
     state: directory
-    mode: u=rw,go=
+    mode: u=rwx,go=
   delegate_to: localhost
 
 - name: Get certificate
