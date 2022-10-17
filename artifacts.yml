@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221014.1
-  # Fri Oct 14 02:53:49 UTC 2022 -- Fri Oct 14 02:53:49 Australia 2022
+  # dante build artifact 20221014.3
+  # Fri Oct 14 10:41:46 UTC 2022 -- Fri Oct 14 10:41:46 Australia 2022
   #
-  # Merge pull request 8884 from dante_artifact_upgrade into master
-  # 06beed9ce12feeab0978e68ffb406d63d63d56c2
-  dante_build_id: '372918'
+  # Merged PR 8609: Minor ansible-lint tweaks
+  # 5c02b22a88e0172b98d2e166c3dc7ef1c847469a
+  dante_build_id: '373237'
 
-  # virgil 20221014.6
-  # Fri Oct 14 03:34:20 UTC 2022 -- Fri Oct 14 03:34:20 Australia 2022
+  # virgil 20221017.2
+  # Mon Oct 17 00:17:01 UTC 2022 -- Mon Oct 17 00:17:01 Australia 2022
   #
-  # Merged PR 8886: Expand docstring for VLAN IP address allocation policy check
-  # 202550b0a22adb526931d676c47d4300db0d62b7
-  virgil_build_id: '372955'
+  # Merge pull request 8890 from virgil_python_upgrade into master
+  # 348bf460f67128067934ef0a500c9c6fc5ac97a0
+  virgil_build_id: '375563'
