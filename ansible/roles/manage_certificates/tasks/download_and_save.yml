@@ -21,7 +21,7 @@
 - name: Check that certificate exists in key vault
   assert:
     that: return_secret_value
-    fail_msg: "{{ certificate_name }} does not exist in key vaukt"
+    fail_msg: "{{ certificate_name }} does not exist in key vault"
 
 - name: Save certificate to file
   copy:

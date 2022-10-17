@@ -17,7 +17,6 @@ clusters:
       certificates:
         - ahwprd-webtracker-carozplus-com
         - customers-commercialcustoms-com-au
-        - test
 
     au2prodceph1:
       # per-cluster settings (overrides) go here, for example:
