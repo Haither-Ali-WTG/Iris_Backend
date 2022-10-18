@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221018.2
-  # Tue Oct 18 04:11:46 UTC 2022 -- Tue Oct 18 04:11:46 Australia 2022
+  # dante build artifact 20221018.3
+  # Tue Oct 18 07:56:50 UTC 2022 -- Tue Oct 18 07:56:50 Australia 2022
   #
-  # Merge pull request 8692 from dante_python_upgrade into master
-  # 6c130a7d48d5f096ea9ae3d8eed11efbb9752929
-  dante_build_id: '376810'
+  # Merged PR 8782: spelling fix
+  # b2ce6928324bf2e033d3c51917ff03cfc9ec8f0b
+  dante_build_id: '376968'
 
   # virgil 20221017.4
   # Mon Oct 17 05:17:05 UTC 2022 -- Mon Oct 17 05:17:05 Australia 2022
