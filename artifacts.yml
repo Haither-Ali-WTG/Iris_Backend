@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221017.3
-  # Mon Oct 17 06:37:55 UTC 2022 -- Mon Oct 17 06:37:55 Australia 2022
+  # dante build artifact 20221018.2
+  # Tue Oct 18 04:11:46 UTC 2022 -- Tue Oct 18 04:11:46 Australia 2022
   #
-  # Merged PR 8811: notice cv bucket deleteion - new subcluent structure
-  # 1eeba2b9c0beeb29a9c6c213efed92eff5a7a264
-  dante_build_id: '375873'
+  # Merge pull request 8692 from dante_python_upgrade into master
+  # 6c130a7d48d5f096ea9ae3d8eed11efbb9752929
+  dante_build_id: '376810'
 
   # virgil 20221017.4
   # Mon Oct 17 05:17:05 UTC 2022 -- Mon Oct 17 05:17:05 Australia 2022
