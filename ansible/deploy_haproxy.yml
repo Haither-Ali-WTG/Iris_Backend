@@ -68,12 +68,14 @@
   tasks:
     - name: Calculate instance settings
       vars:
+        the_instance: "{{ hostvars[inventory_hostname] }}"
         machine: "{{ hostvars[machine_name] }}"
         cluster: "{{ hostvars[cluster_name] }}"
       set_fact:
         "{{ item }}": >-
           {{
-            cluster[item] | default({})
+            the_instance[item]
+            | combine(cluster[item] | default({}), recursive=true)
             | combine(machine[item] | default({}), recursive=true)
             | combine(cluster_machine_overrides[item] | default({}), recursive=true)
           }}
