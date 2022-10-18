@@ -7,9 +7,9 @@ variables:
   # b2ce6928324bf2e033d3c51917ff03cfc9ec8f0b
   dante_build_id: '376968'
 
-  # virgil 20221017.4
-  # Mon Oct 17 05:17:05 UTC 2022 -- Mon Oct 17 05:17:05 Australia 2022
+  # virgil 20221019.2
+  # Tue Oct 18 22:18:08 UTC 2022 -- Tue Oct 18 22:18:08 Australia 2022
   #
-  # Merged PR 8869: BrocadeSWmgmtConnection
-  # 89c97bde6af1b04747d756cb9c0b21bd48735651
-  virgil_build_id: '375796'
+  # Merge pull request 8906 from virgil_python_upgrade into master
+  # cb67b2749b408e88e66a6e91708e4669aa85decf
+  virgil_build_id: '377526'
