@@ -1,6 +1,9 @@
 ---
 instance:
   name: default-instance-name
+  # TODO: this should probably just be the name?
+  # log_name: datacentre - env - context - function
+  log_name: AU2-sand-demo-demo
   processes: 1
   threads: 8
   maxconn: 200000
@@ -55,8 +58,3 @@ timeouts:
   http_request: 60
   queue: 30
   tarpit: 60
-
-datacentre: AU2
-env: sand
-context: demo
-function: demo
