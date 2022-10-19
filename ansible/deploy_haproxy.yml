@@ -19,8 +19,8 @@
           - instances
           - "instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
         cluster_machine_overrides: "{{ item.cluster_machine_overrides or {} }}"
-        # TODO: machine overrides
-        # TODO: cluster overrides
+        machine_name: "{{ item.machine_name }}"
+        cluster_name: "{{ item.cluster_name }}"
         # TODO: groups from cluster and machine settings
         ansible_host: "{{ machine.ansible_host }}"
         original_instance_name: "{{ item.cluster_name }}"
@@ -66,6 +66,21 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Calculate instance settings
+      vars:
+        the_instance: "{{ hostvars[inventory_hostname] }}"
+        machine: "{{ hostvars[machine_name] }}"
+        cluster: "{{ hostvars[cluster_name] }}"
+      set_fact:
+        "{{ item }}": >-
+          {{
+            the_instance[item]
+            | combine(cluster[item] | default({}), recursive=true)
+            | combine(machine[item] | default({}), recursive=true)
+            | combine(cluster_machine_overrides[item] | default({}), recursive=true)
+          }}
+      loop: [instance, cipher, proxy, timeouts]
+
     - name: Collect min facts
       ansible.builtin.setup:
         gather_subset: min
