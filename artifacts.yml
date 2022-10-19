@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221019.1
-  # Tue Oct 18 23:51:56 UTC 2022 -- Tue Oct 18 23:51:56 Australia 2022
+  # dante build artifact 20221019.3
+  # Wed Oct 19 03:01:38 UTC 2022 -- Wed Oct 19 03:01:38 Australia 2022
   #
-  # Merged PR 8903: Fix ISO Build Pipeline
-  # 4fd83ce4d25463b9cbe469c96a64ea23380830c3
-  dante_build_id: '377619'
+  # Merged PR 8764: Sync mirror for PR 8674
+  # 37e080771a09fce0e408c3b5e2f63725f8c9581e
+  dante_build_id: '377769'
 
-  # virgil 20221019.2
-  # Tue Oct 18 22:18:08 UTC 2022 -- Tue Oct 18 22:18:08 Australia 2022
+  # virgil 20221019.4
+  # Wed Oct 19 00:49:49 UTC 2022 -- Wed Oct 19 00:49:49 Australia 2022
   #
-  # Merge pull request 8906 from virgil_python_upgrade into master
-  # cb67b2749b408e88e66a6e91708e4669aa85decf
-  virgil_build_id: '377526'
+  # Merged PR 8650: Updated teardowns.yaml
+  # 0cc9f23c44791865fe0e67d5a7c790bca67ce1a5
+  virgil_build_id: '377665'
