@@ -33,7 +33,7 @@
 
 - name: Call certificate validation command
   command: "openssl rsa -noout -check -in certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
-  changed_when: False
+  changed_when: false
   register: cert_check_result
 
 - name: Check that certificate is valid
