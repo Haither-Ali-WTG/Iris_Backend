@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221019.4
-  # Wed Oct 19 05:02:20 UTC 2022 -- Wed Oct 19 05:02:20 Australia 2022
+  # dante build artifact 20221019.6
+  # Wed Oct 19 07:37:13 UTC 2022 -- Wed Oct 19 07:37:13 Australia 2022
   #
-  # Merged PR 8839: Correctly disable IPv6 for NTP on switches
-  # 388315ecf0f5f021d66bdf33b4b1617b3dad7b92
-  dante_build_id: '377859'
+  # Merged PR 8838: Ansible lint tweaks, including setting file perms
+  # e351d51d1f968edf31b92c679e997feb2073f2c3
+  dante_build_id: '377978'
 
   # virgil 20221019.4
   # Wed Oct 19 00:49:49 UTC 2022 -- Wed Oct 19 00:49:49 Australia 2022
