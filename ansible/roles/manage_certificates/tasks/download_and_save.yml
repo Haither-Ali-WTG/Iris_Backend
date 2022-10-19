@@ -30,3 +30,16 @@
     mode: u=rw,go=
   delegate_to: localhost
   no_log: true
+
+- name: Call certificate validation command
+  command: "openssl rsa -noout -check -in certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
+  changed_when: false
+  register: cert_check_result
+  delegate_to: localhost
+
+- name: Check that certificate is valid
+  assert:
+    that:
+      - cert_check_result.stdout is defined
+      - "'RSA key ok' in cert_check_result.stdout"
+    fail_msg: "{{ cert_check_result.stderr }}"
