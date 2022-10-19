@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221019.3
-  # Wed Oct 19 03:01:38 UTC 2022 -- Wed Oct 19 03:01:38 Australia 2022
+  # dante build artifact 20221019.4
+  # Wed Oct 19 05:02:20 UTC 2022 -- Wed Oct 19 05:02:20 Australia 2022
   #
-  # Merged PR 8764: Sync mirror for PR 8674
-  # 37e080771a09fce0e408c3b5e2f63725f8c9581e
-  dante_build_id: '377769'
+  # Merged PR 8839: Correctly disable IPv6 for NTP on switches
+  # 388315ecf0f5f021d66bdf33b4b1617b3dad7b92
+  dante_build_id: '377859'
 
   # virgil 20221019.4
   # Wed Oct 19 00:49:49 UTC 2022 -- Wed Oct 19 00:49:49 Australia 2022
