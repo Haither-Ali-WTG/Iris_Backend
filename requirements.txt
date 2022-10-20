@@ -97,7 +97,7 @@ pathspec==0.10.1
     # via
     #   black
     #   yamllint
-pbr==5.10.0
+pbr==5.11.0
     # via stevedore
 platformdirs==2.5.2
     # via
@@ -152,7 +152,7 @@ ruamel-yaml==0.17.21
     # via
     #   ansible-lint
     #   safety
-ruamel-yaml-clib==0.2.6
+ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
 s3cmd==2.3.0
     # via -r requirements.in
@@ -164,7 +164,7 @@ six==1.16.0
     #   pywinrm
 smmap==5.0.0
     # via gitdb
-stevedore==4.0.1
+stevedore==4.1.0
     # via bandit
 subprocess-tee==0.3.5
     # via ansible-compat
