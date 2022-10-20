@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221020.2
-  # Thu Oct 20 02:57:48 UTC 2022 -- Thu Oct 20 02:57:48 Australia 2022
+  # dante build artifact 20221020.3
+  # Thu Oct 20 05:44:23 UTC 2022 -- Thu Oct 20 05:44:23 Australia 2022
   #
-  # Merged PR 8901: Dante - Kernel Tuning Parameters on Container + KVM Nodes
-  # 3b29e5c77570781bfa6da1a0e1de0e7dc2890625
-  dante_build_id: '378740'
+  # Merged PR 8873: Fixed permissions for docker kafka files and quotted parameters
+  # fd61e814df812f697f5a96dca6f9d734dc122a41
+  dante_build_id: '378861'
 
   # virgil 20221020.5
   # Thu Oct 20 00:45:28 UTC 2022 -- Thu Oct 20 00:45:28 Australia 2022
