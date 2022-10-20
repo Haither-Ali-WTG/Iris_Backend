@@ -240,7 +240,7 @@ backend {{ name | replace(".", "_") }}
 option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
 {%       if backend.cookie %}
-cookie {{ backend.cookie is defined }} insert indirect nocache dynamic
+cookie {{ backend.cookie }} insert indirect nocache dynamic
 {%       endif %}
 default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
 
