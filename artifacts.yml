@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221019.6
-  # Wed Oct 19 07:37:13 UTC 2022 -- Wed Oct 19 07:37:13 Australia 2022
+  # dante build artifact 20221020.2
+  # Thu Oct 20 02:57:48 UTC 2022 -- Thu Oct 20 02:57:48 Australia 2022
   #
-  # Merged PR 8838: Ansible lint tweaks, including setting file perms
-  # e351d51d1f968edf31b92c679e997feb2073f2c3
-  dante_build_id: '377978'
+  # Merged PR 8901: Dante - Kernel Tuning Parameters on Container + KVM Nodes
+  # 3b29e5c77570781bfa6da1a0e1de0e7dc2890625
+  dante_build_id: '378740'
 
-  # virgil 20221020.2
-  # Wed Oct 19 23:00:13 UTC 2022 -- Wed Oct 19 23:00:13 Australia 2022
+  # virgil 20221020.5
+  # Thu Oct 20 00:45:28 UTC 2022 -- Thu Oct 20 00:45:28 Australia 2022
   #
-  # Merge pull request 8920 from virgil_python_upgrade into master
-  # 4dadeb23fd22a2e343f14864c33435f382a149c1
-  virgil_build_id: '378564'
+  # Merged PR 8925: Set ceph nodes in de1/us2 to disabled to align with au2
+  # 38599a3961a6c8c437ea67cb98487c92da3027b8
+  virgil_build_id: '378649'
