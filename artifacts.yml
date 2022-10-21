@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221020.3
-  # Thu Oct 20 05:44:23 UTC 2022 -- Thu Oct 20 05:44:23 Australia 2022
+  # dante build artifact 20221021.4
+  # Fri Oct 21 03:21:08 UTC 2022 -- Fri Oct 21 03:21:08 Australia 2022
   #
-  # Merged PR 8873: Fixed permissions for docker kafka files and quotted parameters
-  # fd61e814df812f697f5a96dca6f9d734dc122a41
-  dante_build_id: '378861'
+  # Merged PR 8927: Updated dante agent on staged
+  # 17e7149896d5048d3c27214af86fdd20bd85f78f
+  dante_build_id: '379776'
 
-  # virgil 20221020.5
-  # Thu Oct 20 00:45:28 UTC 2022 -- Thu Oct 20 00:45:28 Australia 2022
+  # virgil 20221021.4
+  # Fri Oct 21 07:14:30 UTC 2022 -- Fri Oct 21 07:14:30 Australia 2022
   #
-  # Merged PR 8925: Set ceph nodes in de1/us2 to disabled to align with au2
-  # 38599a3961a6c8c437ea67cb98487c92da3027b8
-  virgil_build_id: '378649'
+  # Merge pull request 8935 from virgil_python_upgrade into master
+  # f1fba91cf21a03626f6b6221138f3a662eec9ad5
+  virgil_build_id: '379932'
