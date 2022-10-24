@@ -8,7 +8,7 @@ clusters:
           ssl: yes
           statuses: [200]
         - host: fms.wisegrid.net
-          path: /api/v1/airevents/ping          
+          path: /api/v1/airevents/ping
           ssl: yes
           statuses: [200]
 
