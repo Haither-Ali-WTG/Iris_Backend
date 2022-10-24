@@ -46,7 +46,7 @@ cryptography==38.0.1
     # via
     #   ansible-core
     #   requests-ntlm
-dill==0.3.5.1
+dill==0.3.6
     # via pylint
 dparse==0.6.2
     # via safety
