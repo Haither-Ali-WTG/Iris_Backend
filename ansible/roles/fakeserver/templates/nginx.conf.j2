@@ -8,4 +8,17 @@ events {
 http {
   index    index.html;
 
+{% for status in status_codes %}
+  server { 
+    listen 80;
+    server_name fakeserver
+    {%- for test in tests_list | default([]) -%}
+      {%- if status in test.statuses %} {{ test.host }}
+      {%- endif -%}
+    {%- endfor -%};
+    root /public;
+    allow all;
+    return {{ status }};
+  }
+{% endfor %}
 }

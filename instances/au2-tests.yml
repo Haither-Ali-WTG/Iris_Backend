@@ -3,21 +3,22 @@ clusters:
   hosts:
     au1prodfrontend1:
       tests:
-        - name: AUCloud3
-          host: aucloud3.wisegrid.net
+        - host: aucloud3.wisegrid.net
           path: /
           ssl: yes
-          status: [200]
+          statuses: [200]
+        - host: fms.wisegrid.net
+          path: /api/v1/airevents/ping          
+          ssl: yes
+          statuses: [200]
 
     au2prodceph1:
       tests:
-        - name: WTG WebSite
-          host: www.cargowise.com
+        - host: www.cargowise.com
           path: /healthcheck
           ssl: yes
-          status: [400, 302]
-        - name: WTG WebSite
-          host: cargowise.com
+          statuses: [400, 302]
+        - host: cargowise.com
           path: /healthcheck
           ssl: no
-          status: [200, 302]
+          statuses: [200, 302]
