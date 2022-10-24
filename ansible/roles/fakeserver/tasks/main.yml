@@ -14,7 +14,7 @@
   copy:
     src: "certificates/{{ item }}"
     dest: "{{ working_dir }}/certs/"
-    mode: ug=rx,o=
+    mode: ug=r,o=
   when:
     - inventory_hostname in hostvars[item].cluster_machines
     - '"certificates" in hostvars[item]'
