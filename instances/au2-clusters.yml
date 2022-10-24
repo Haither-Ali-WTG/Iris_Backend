@@ -30,3 +30,6 @@ clusters:
       iis_servers:
         - au2wt-sweb-003.test.wisecloud.zone
         - au2wt-sweb-004.test.wisecloud.zone
+      certificates:
+        - ahwprd-webtracker-carozplus-com
+        - customers-commercialcustoms-com-au

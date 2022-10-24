@@ -8,6 +8,16 @@
   with_items:
     - config
     - public
+    - certs
+
+- name: Copy certificates for cluster
+  copy:
+    src: "certificates/{{ item }}"
+    dest: "{{ working_dir }}/certs/"
+  when:
+    - inventory_hostname in hostvars[item].cluster_machines
+    - '"certificates" in hostvars[item]'
+  loop: "{{ groups['clusters'] }}"
 
 - name: Calculate tests for the machine
   set_fact:
@@ -59,6 +69,7 @@
     volumes:
       - "{{ working_dir }}/config:/etc/nginx:z"
       - "{{ working_dir }}/public:/public:z"
+      - "{{ working_dir }}/certs:/certs:z"
     container_dir: "{{ working_dir }}"
     resources:
       simulation:
