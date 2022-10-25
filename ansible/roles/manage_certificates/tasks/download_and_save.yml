@@ -1,17 +1,14 @@
 ---
 - name: Create certificates directory
   file:
-    dest: "certificates/{{ inventory_hostname }}"
+    dest: "certificates/"
     state: directory
     mode: u=rwx,go=
-  delegate_to: localhost
 
 - name: Get certificate
   include_role:
     name: azure_keyvault
     tasks_from: get_secret.yml
-    apply:
-      delegate_to: localhost
   vars:
     azure_kv_secret_name: "{{ certificate_name }}"
     curl:
@@ -25,14 +22,13 @@
 
 - name: Save certificate to file
   copy:
-    dest: "certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
+    dest: "certificates/{{ certificate_name }}.pem"
     content: "{{ return_secret_value }}"
     mode: u=rw,go=
-  delegate_to: localhost
   no_log: true
 
 - name: Call certificate validation command
-  command: "openssl rsa -noout -check -in certificates/{{ inventory_hostname }}/{{ certificate_name }}.pem"
+  command: "openssl rsa -noout -check -in certificates/{{ certificate_name }}.pem"
   changed_when: false
   register: cert_check_result
   delegate_to: localhost

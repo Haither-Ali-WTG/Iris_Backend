@@ -1,13 +1,18 @@
 ---
 - name: Check and save certificates
-  hosts: clusters
+  hosts: localhost
   gather_facts: no
   tasks:
+    - name: Calculate certificates to download
+      set_fact:
+        certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
+      when: '"certificates" in hostvars[item]'
+      loop: "{{ groups['clusters'] }}"
+
     - name: Get certificate
       include_role:
         name: manage_certificates
         tasks_from: download_and_save.yml
-      loop: "{{ certificates }}"
+      loop: "{{ certs_list | default([]) }}"
       loop_control:
         loop_var: certificate_name
-      when: certificates is defined

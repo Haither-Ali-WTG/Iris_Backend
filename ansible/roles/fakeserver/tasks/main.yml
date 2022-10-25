@@ -10,15 +10,20 @@
     - public
     - certs
 
-- name: Copy certificates for cluster
-  copy:
-    src: "certificates/{{ item }}"
-    dest: "{{ working_dir }}/certs/"
-    mode: ug=r,o=
+- name: Calculate certificates for the machine
+  set_fact:
+    certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
   when:
     - inventory_hostname in hostvars[item].cluster_machines
     - '"certificates" in hostvars[item]'
   loop: "{{ groups['clusters'] }}"
+
+- name: Copy certificates for cluster
+  copy:
+    src: "certificates/{{ item }}.pem"
+    dest: "{{ working_dir }}/certs/"
+    mode: ug=r,o=
+  loop: "{{ certs_list | default([]) }}"
 
 - name: Calculate tests for the machine
   set_fact:
