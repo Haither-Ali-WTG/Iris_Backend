@@ -226,9 +226,12 @@ rule {{ rule.name }} {{ rule.criterion }} {{ rule.flags }} {{ rule.operator }} {
 #### Default Backend Selection
 use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
 
+#######################################
+###### BACKENDS #######################
+#######################################
 
-# Backends
-# ########
+# Dynamic Backends
+# ################
 
 
 {% for server_name,server_content in backends.items() %}
@@ -253,6 +256,27 @@ server {{ iterating_server_name | split('.') | first }} {{ iterating_server_cont
 
 {%     endif %}
 {%   endfor %}
+{% endfor %}
+
+
+# Static Backends
+# ###############
+
+{% for backend in static_backends %}
+backend {{ backend.name }}
+{% if backend.balance %}balance {{ backend.balance }}
+{% endif %}
+option httpchk HEAD {{ backend.healthCheck }} HTTP/1.1\r\nHost:\ {{ backend.hostname }}
+http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
+{% if backend.cookie %}
+cookie {{ backend.cookie }} insert indirect nocache dynamic
+{% endif %}
+default-server inter 10000 {%- if backend.encryption %} ssl{% endif %}
+
+{%     for server in backend.servers %}
+server {{ server.name }} {{ backend.ip }}:{{ backend.port }} check
+{%     endfor %}
+
 {% endfor %}
 
 
