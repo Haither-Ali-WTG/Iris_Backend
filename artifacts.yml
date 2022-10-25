@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221025.1
-  # Tue Oct 25 01:28:48 UTC 2022 -- Tue Oct 25 01:28:48 Australia 2022
+  # dante build artifact 20221025.3
+  # Tue Oct 25 05:22:20 UTC 2022 -- Tue Oct 25 05:22:20 Australia 2022
   #
-  # Merge pull request 8888 from dante_artifact_upgrade into master
-  # 0bb2b40b0eced699589ce6c1d3d59e0a339c7b3b
-  dante_build_id: '383401'
+  # Merged PR 8965: Overlay network with port mounts supported in container runner
+  # f1c9789774096f11f45b21105a636b2604081994
+  dante_build_id: '383596'
 
   # virgil 20221025.6
   # Mon Oct 24 23:25:11 UTC 2022 -- Mon Oct 24 23:25:11 Australia 2022
