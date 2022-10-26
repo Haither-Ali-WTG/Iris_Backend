@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221026.1
-  # Wed Oct 26 00:08:38 UTC 2022 -- Wed Oct 26 00:08:38 Australia 2022
+  # dante build artifact 20221026.2
+  # Wed Oct 26 01:33:30 UTC 2022 -- Wed Oct 26 01:33:30 Australia 2022
   #
-  # Merged PR 8973: Remove regex anchors
-  # 201b93053fe105865e2c046386da30d38ae51b8d
-  dante_build_id: '384383'
+  # Merge pull request 8907 from dante_python_upgrade into master
+  # 6e33098fecf758ea9acfa14f07abccc177bc2d2c
+  dante_build_id: '384445'
 
   # virgil 20221026.2
   # Tue Oct 25 22:33:39 UTC 2022 -- Tue Oct 25 22:33:39 Australia 2022
