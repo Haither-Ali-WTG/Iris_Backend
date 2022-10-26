@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221026.3
-  # Wed Oct 26 02:51:03 UTC 2022 -- Wed Oct 26 02:51:03 Australia 2022
+  # dante build artifact 20221026.4
+  # Wed Oct 26 04:47:11 UTC 2022 -- Wed Oct 26 04:47:11 Australia 2022
   #
-  # Merged PR 8854: elastic_module role
-  # 933f5f064f781a593833b91f086bb7b4823c3831
-  dante_build_id: '384505'
+  # Merged PR 8984: disable WJH on cumulus switches
+  # 37ecac34f00b97f91ed835a2cd21099299697cd7
+  dante_build_id: '384620'
 
   # virgil 20221026.4
   # Wed Oct 26 02:37:20 UTC 2022 -- Wed Oct 26 02:37:20 Australia 2022
