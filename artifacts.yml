@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221025.5
-  # Tue Oct 25 12:18:47 UTC 2022 -- Tue Oct 25 12:18:47 Australia 2022
+  # dante build artifact 20221026.1
+  # Wed Oct 26 00:08:38 UTC 2022 -- Wed Oct 26 00:08:38 Australia 2022
   #
-  # Merged PR 8962: WI00527909 - add secretKafkaCw1Processcontrollerlogstest
-  # 84aaec41176a7a34f852ebc4172f984c240ed149
-  dante_build_id: '383895'
+  # Merged PR 8973: Remove regex anchors
+  # 201b93053fe105865e2c046386da30d38ae51b8d
+  dante_build_id: '384383'
 
-  # virgil 20221025.6
-  # Mon Oct 24 23:25:11 UTC 2022 -- Mon Oct 24 23:25:11 Australia 2022
+  # virgil 20221026.2
+  # Tue Oct 25 22:33:39 UTC 2022 -- Tue Oct 25 22:33:39 Australia 2022
   #
-  # Merged PR 8959: WI00527909 - add test topic for cargowise-logs
-  # 6ea865fbbccf91c8e2abf0dc4553e1f3b3abbcdd
-  virgil_build_id: '383311'
+  # Merge pull request 8974 from virgil_python_upgrade into master
+  # 556f138a0e0bd5e49ad1de9e136c1d5e96cb36ff
+  virgil_build_id: '384303'
