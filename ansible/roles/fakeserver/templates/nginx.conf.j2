@@ -8,10 +8,10 @@ events {
 http {
   index    index.html;
 
-{% for status in status_codes %}
+{% for status in status_codes if status in [200, 400, '200', '400'] %}
   server { 
     listen 80;
-    server_name fakeserver
+    server_name
     {%- for test in tests_list | default([]) -%}
       {%- if status in test.statuses %} {{ test.host }}
       {%- endif -%}

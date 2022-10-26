@@ -76,6 +76,10 @@
       - "{{ working_dir }}/config:/etc/nginx:z"
       - "{{ working_dir }}/public:/public:z"
       - "{{ working_dir }}/certs:/certs:ro,z"
+    ports:
+      - 8081:80
+      - 8082:443
+    net_host: no
     container_dir: "{{ working_dir }}"
     resources:
       simulation:
