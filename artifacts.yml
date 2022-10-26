@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221026.2
-  # Wed Oct 26 01:33:30 UTC 2022 -- Wed Oct 26 01:33:30 Australia 2022
+  # dante build artifact 20221026.3
+  # Wed Oct 26 02:51:03 UTC 2022 -- Wed Oct 26 02:51:03 Australia 2022
   #
-  # Merge pull request 8907 from dante_python_upgrade into master
-  # 6e33098fecf758ea9acfa14f07abccc177bc2d2c
-  dante_build_id: '384445'
+  # Merged PR 8854: elastic_module role
+  # 933f5f064f781a593833b91f086bb7b4823c3831
+  dante_build_id: '384505'
 
-  # virgil 20221026.2
-  # Tue Oct 25 22:33:39 UTC 2022 -- Tue Oct 25 22:33:39 Australia 2022
+  # virgil 20221026.4
+  # Wed Oct 26 02:37:20 UTC 2022 -- Wed Oct 26 02:37:20 Australia 2022
   #
-  # Merge pull request 8974 from virgil_python_upgrade into master
-  # 556f138a0e0bd5e49ad1de9e136c1d5e96cb36ff
-  virgil_build_id: '384303'
+  # Merged PR 8571: (minor) Virgil - Correct OS Version for 3 hosts
+  # 536e6d373e2201638f4a3699335edb9ed9353bbd
+  virgil_build_id: '384491'
