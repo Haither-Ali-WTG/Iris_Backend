@@ -262,19 +262,19 @@ server {{ iterating_server_name | split('.') | first }} {{ iterating_server_cont
 # Static Backends
 # ###############
 
-{% for backend in static_backends %}
-backend {{ backend.name }}
-{%   if backend.balance %}balance {{ backend.balance }}
+{% for name, backend in static_backends.items() %}
+backend {{ name | replace(".", "_") }}
+{%   if backend.balance is defined %}balance {{ backend.balance }}
 {%   endif %}
-option httpchk HEAD {{ backend.healthCheck }} HTTP/1.1\r\nHost:\ {{ backend.hostname }}
+option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
 {%   if backend.cookie %}
-cookie {{ backend.cookie }} insert indirect nocache dynamic
+cookie {{ backend.cookie.name }} insert indirect nocache dynamic
 {%   endif %}
-default-server inter 10000 {%- if backend.encryption %} ssl{% endif %}
+default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% endif %}
 
 {%   for server in backend.servers %}
-server {{ server.name }} {{ backend.ip }}:{{ backend.port }} check
+server {{ server.name }} {{ server.ip }}:{{ server.port }} check
 {%   endfor %}
 
 {% endfor %}
