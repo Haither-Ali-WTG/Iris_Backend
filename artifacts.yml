@@ -7,9 +7,9 @@ variables:
   # 64cd89ee26399bbb1b7d2a80ef6c67ba3fbb9c8a
   dante_build_id: '384682'
 
-  # virgil 20221026.4
-  # Wed Oct 26 02:37:20 UTC 2022 -- Wed Oct 26 02:37:20 Australia 2022
+  # virgil 20221027.2
+  # Wed Oct 26 22:47:56 UTC 2022 -- Wed Oct 26 22:47:56 Australia 2022
   #
-  # Merged PR 8571: (minor) Virgil - Correct OS Version for 3 hosts
-  # 536e6d373e2201638f4a3699335edb9ed9353bbd
-  virgil_build_id: '384491'
+  # Merge pull request 8995 from virgil_python_upgrade into master
+  # 07c7c3a245e5678906d0b392c833900632e5baf9
+  virgil_build_id: '385330'
