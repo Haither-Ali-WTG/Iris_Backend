@@ -1,0 +1,10 @@
+---
+app-test.borderwise.com:
+  clusters: [au1prodfrontend1]
+  cookie:
+    name: BOT
+  health_check: /wtg/status
+  servers:
+    - name: SYDWP-SBOT-3
+      ip: 10.61.179.150
+      port: 50135
