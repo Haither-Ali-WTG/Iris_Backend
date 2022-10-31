@@ -29,6 +29,9 @@
 - name: Load static backend configuration
   import_playbook: load_backends.yaml
 
+- name: Load ACLs
+  import_playbook: load_acls.yaml
+
 - name: Create hypervisor group
   hosts: localhost
   gather_facts: no

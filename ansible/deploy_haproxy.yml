@@ -7,6 +7,10 @@
   import_playbook: load_backends.yaml
   when: not simulation
 
+- name: Load ACLs
+  import_playbook: load_acls.yaml
+  when: not simulation
+
 - name: Generate the "instance" inventory entries
   hosts: localhost
   strategy: linear
@@ -29,6 +33,7 @@
         ansible_host: "{{ machine.ansible_host }}"
 
         static_backends: "{{ cluster.static_backends | default({}) }}"
+        acls: "{{ cluster.acls }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
