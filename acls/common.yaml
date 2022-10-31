@@ -1,28 +1,27 @@
 ---
 # common ACLs
 wtg_src:
-    description: source IP is WiseTech (internal or external network)
-    tests:
-      # internal network
-      - src 10.0.0.0/8
-      # external WiseTech Networks
-      - src 213.229.115.0/24
-      - src 217.156.148.0/24
-      - src 180.235.156.0/24
-      - src 180.235.157.0/24
-      - src 180.235.158.0/24
-      - src 180.235.159.0/24
-      - src 78.41.196.0/24
-      - src 68.61.196.0/24
-      - src 69.61.196.0/24
-      - src 203.62.208.0/24
-      - src 203.62.209.0/24
-      - src 203.62.210.0/24
-      - src 203.62.211.0/24
-      - src 203.62.212.0/24
-      - src 203.62.213.0/24
-      - src 203.62.214.0/24
-      - src 203.62.215.0/24
-      - src 196.41.78.0/24
-      - src 196.61.68.0/22
-
+  description: source IP is WiseTech (internal or external network)
+  tests:
+    # internal network
+    - src 10.0.0.0/8
+    # external WiseTech Networks
+    - src 213.229.115.0/24
+    - src 217.156.148.0/24
+    - src 180.235.156.0/24
+    - src 180.235.157.0/24
+    - src 180.235.158.0/24
+    - src 180.235.159.0/24
+    - src 78.41.196.0/24
+    - src 68.61.196.0/24
+    - src 69.61.196.0/24
+    - src 203.62.208.0/24
+    - src 203.62.209.0/24
+    - src 203.62.210.0/24
+    - src 203.62.211.0/24
+    - src 203.62.212.0/24
+    - src 203.62.213.0/24
+    - src 203.62.214.0/24
+    - src 203.62.215.0/24
+    - src 196.41.78.0/24
+    - src 196.61.68.0/22
