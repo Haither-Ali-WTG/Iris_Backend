@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221026.5
-  # Wed Oct 26 06:07:23 UTC 2022 -- Wed Oct 26 06:07:23 Australia 2022
+  # dante build artifact 20221031.1
+  # Mon Oct 31 01:19:56 UTC 2022 -- Mon Oct 31 01:19:56 Australia 2022
   #
-  # Merged PR 8961: Dante - Fix Kafka Checks
-  # 64cd89ee26399bbb1b7d2a80ef6c67ba3fbb9c8a
-  dante_build_id: '384682'
+  # Merged PR 8457: (minor) Dante - Rebuild Hosts - Select host with earliest installation time
+  # fd4375269dc2f1695395c527fde5a1cecab7f666
+  dante_build_id: '389194'
 
-  # virgil 20221028.2
-  # Thu Oct 27 23:16:08 UTC 2022 -- Thu Oct 27 23:16:08 Australia 2022
+  # virgil 20221031.1
+  # Mon Oct 31 01:36:04 UTC 2022 -- Mon Oct 31 01:36:04 Australia 2022
   #
-  # Merge pull request 9012 from virgil_python_upgrade into master
-  # c7eff8211e895182a1524846535eed00220fa84a
-  virgil_build_id: '386292'
+  # Merged PR 9018: WI00540765 - ILS topic migration TEST
+  # 2608d941c0aa0cce5531183b4ddf0d8372c7e7cd
+  virgil_build_id: '389215'
