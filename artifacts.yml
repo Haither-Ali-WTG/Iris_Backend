@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221031.1
-  # Mon Oct 31 01:19:56 UTC 2022 -- Mon Oct 31 01:19:56 Australia 2022
+  # dante build artifact 20221031.2
+  # Mon Oct 31 05:05:02 UTC 2022 -- Mon Oct 31 05:05:02 Australia 2022
   #
-  # Merged PR 8457: (minor) Dante - Rebuild Hosts - Select host with earliest installation time
-  # fd4375269dc2f1695395c527fde5a1cecab7f666
-  dante_build_id: '389194'
+  # Merge pull request 8982 from dante_artifact_upgrade into master
+  # 16c01b5370829875f3f86de0873abe8508a6b40c
+  dante_build_id: '389388'
 
-  # virgil 20221031.3
-  # Mon Oct 31 03:48:58 UTC 2022 -- Mon Oct 31 03:48:58 Australia 2022
+  # virgil 20221101.2
+  # Mon Oct 31 13:46:15 UTC 2022 -- Mon Oct 31 13:46:15 Australia 2022
   #
-  # Merged PR 8943: Virgil (minor) - Setup commands in README
-  # ca9d0984725980c8656c2af8166eb2d3d426a794
-  virgil_build_id: '389311'
+  # Merged PR 9023: Add US2WP-SVIR-15
+  # 33499afaf960b8537d308fc7d8e6a5d5aed0b2ce
+  virgil_build_id: '389767'
