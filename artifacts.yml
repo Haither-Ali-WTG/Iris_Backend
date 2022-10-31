@@ -7,9 +7,9 @@ variables:
   # fd4375269dc2f1695395c527fde5a1cecab7f666
   dante_build_id: '389194'
 
-  # virgil 20221031.1
-  # Mon Oct 31 01:36:04 UTC 2022 -- Mon Oct 31 01:36:04 Australia 2022
+  # virgil 20221031.3
+  # Mon Oct 31 03:48:58 UTC 2022 -- Mon Oct 31 03:48:58 Australia 2022
   #
-  # Merged PR 9018: WI00540765 - ILS topic migration TEST
-  # 2608d941c0aa0cce5531183b4ddf0d8372c7e7cd
-  virgil_build_id: '389215'
+  # Merged PR 8943: Virgil (minor) - Setup commands in README
+  # ca9d0984725980c8656c2af8166eb2d3d426a794
+  virgil_build_id: '389311'
