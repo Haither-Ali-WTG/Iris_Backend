@@ -1,0 +1,4 @@
+127.0.1.1 {{ inventory_hostname }} localhost
+127.0.0.1
+{%- for test in tests_list %} {{ test.host }}
+{%- endfor -%}

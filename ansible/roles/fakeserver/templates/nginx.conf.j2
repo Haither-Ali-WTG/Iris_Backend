@@ -8,12 +8,12 @@ events {
 http {
   index    index.html;
 
-{% for status in status_codes if status in [200, 400, '200', '400'] %}
-  server { 
+{% for status in status_codes | default([]) if status in [200, 400, '200', '400'] %}
+  server {
     listen 80;
     server_name
     {%- for test in tests_list | default([]) -%}
-      {%- if status in test.statuses %} {{ test.host }}
+      {%- if status in test.statuses and not test.ssl %} {{ test.host }}
       {%- endif -%}
     {%- endfor -%};
     root /public;
@@ -21,4 +21,18 @@ http {
     return {{ status }};
   }
 {% endfor %}
+  server {
+    listen 443 ssl;
+    server_name
+    {%- for test in tests_list | default([]) -%}
+      {%- if test.ssl %} {{ test.host }}
+      {%- endif -%}
+    {%- endfor -%};
+    {% for cert in certs_list -%}
+    ssl_certificate /certs/{{ cert }}.pem;
+    ssl_certificate_key /certs/{{ cert }}.pem;
+    {% endfor -%}
+    root /public;
+    allow all;
+  }
 }
