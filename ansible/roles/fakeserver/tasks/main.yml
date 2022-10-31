@@ -66,6 +66,13 @@
     dest: "{{ working_dir }}/public/index.html"
     mode: a=r
 
+- name: Generate hosts file for tests
+  template:
+    src: hosts.j2
+    dest: "/etc/hosts"
+    mode: ug=rw,o=r
+  become: yes
+
 - name: Deploy the fakeserver container
   include_role:
     name: container_runner
