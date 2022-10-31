@@ -171,15 +171,13 @@ bind {% for item in instance.frontend_ports.http.ssl %}:{{item}}{% if loop.index
 http-request deny if { req.hdr_cnt(content-length) gt 1 }
 http-response deny if { res.hdr_cnt(content-length) gt 1 }
 
+{% for name, acl in acls.items() %}
+# {{ name }} ACL ({{ acl.fname }})
+{{ acl.description | comment }}
+{% for test in acl.tests %}
+acl {{ name }} {{ test }}
+{% endfor %}
 
-{% set ns = namespace(prev_description=none) %}
-{% for acl in proxy.acls %}
-{% if loop.first or acl.description != ns.prev_description %}
-
-# {{ acl.description }}
-{% set ns.prev_description = acl.description %}
-{% endif %}
-acl {{ acl.name }} {{ acl.criterion }} {{ acl.flags }} {{ acl.operator }} {{ acl.value }}
 {% endfor %}
 
 
