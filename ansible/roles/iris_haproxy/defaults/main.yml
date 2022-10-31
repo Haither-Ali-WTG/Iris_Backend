@@ -2,5 +2,3 @@
 # TODO: these should probably be set elsewhere, perhaps becoming mandatory parameters
 
 instances: {}
-
-static_backends: []

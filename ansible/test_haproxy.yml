@@ -26,6 +26,9 @@
 - name: Import IIS data
   import_playbook: import_iis_data.yml
 
+- name: Load static backend configuration
+  import_playbook: load_backends.yaml
+
 - name: Create hypervisor group
   hosts: localhost
   gather_facts: no

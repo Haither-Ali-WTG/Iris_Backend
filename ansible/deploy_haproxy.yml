@@ -3,6 +3,10 @@
   import_playbook: import_iis_data.yml
   when: not simulation
 
+- name: Load static backend configuration
+  import_playbook: load_backends.yaml
+  when: not simulation
+
 - name: Generate the "instance" inventory entries
   hosts: localhost
   strategy: linear
@@ -23,6 +27,8 @@
         cluster_name: "{{ item.cluster_name }}"
         # TODO: groups from cluster and machine settings
         ansible_host: "{{ machine.ansible_host }}"
+
+        static_backends: "{{ cluster.static_backends | default({}) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
