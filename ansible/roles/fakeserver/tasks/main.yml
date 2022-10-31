@@ -24,6 +24,7 @@
     dest: "{{ working_dir }}/certs/"
     mode: ug=r,o=
   loop: "{{ certs_list | default([]) }}"
+  no_log: true
 
 - name: Calculate tests for the machine
   set_fact:
@@ -93,3 +94,17 @@
       simulation:
         cpu: 1000m
         memory: 200Mi
+
+- name: Set container engine
+  include_role:
+    name: container_runner
+    tasks_from: define_engine.yml
+
+- name: Wait for fakeserver to come online
+  command: "{{ engine }} ps --filter name=fakeserver --filter status=running"
+  register: result
+  changed_when: false
+  retries: 10
+  delay: 5
+  until: (result.stdout_lines | length) > 1
+  become: yes
