@@ -36,6 +36,7 @@
 - name: Calculate all status codes to return
   set_fact:
     status_codes: "{{ (status_codes | default([]) + item.statuses) | unique }}"
+  when: not item.ssl
   loop: "{{ tests_list | default([]) }}"
 
 - name: Create directories for tests
