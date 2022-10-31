@@ -94,8 +94,13 @@
         cpu: 1000m
         memory: 200Mi
 
+- name: Set container engine
+  include_role:
+    name: container_runner
+    tasks_from: define_engine.yml
+
 - name: Wait for fakeserver to come online
-  command: docker ps --filter name=fakeserver --filter status=running
+  command: "{{ engine }} ps --filter name=fakeserver --filter status=running"
   register: result
   changed_when: false
   retries: 10
