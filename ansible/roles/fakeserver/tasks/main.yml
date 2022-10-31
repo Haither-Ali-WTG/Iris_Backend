@@ -93,3 +93,11 @@
       simulation:
         cpu: 1000m
         memory: 200Mi
+
+- name: Wait for fakeserver to come online
+  command: docker ps --filter name=fakeserver --filter status=running
+  register: result
+  changed_when: false
+  retries: 10
+  delay: 5
+  until: (result.stdout_lines | length) > 1
