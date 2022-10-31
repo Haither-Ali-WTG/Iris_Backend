@@ -107,3 +107,4 @@
   retries: 10
   delay: 5
   until: (result.stdout_lines | length) > 1
+  become: yes
