@@ -8,3 +8,12 @@ app-test.borderwise.com:
     - name: SYDWP-SBOT-3
       ip: 10.61.179.150
       port: 50135
+
+fms.wisegrid.net:
+  clusters: [au1prodfrontend1]
+  health_check: /api/v1/airevents/ping
+  encryption: true
+  servers:
+    - name: SYDWP-SBOT-4
+      ip: 10.61.179.151
+      port: 50135
