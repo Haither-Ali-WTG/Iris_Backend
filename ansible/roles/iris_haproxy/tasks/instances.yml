@@ -9,7 +9,7 @@
     state: directory
     mode: a=rx
   become: yes
-  loop: [etc, run]
+  loop: [etc/certs, run]
 
 - name: Populate backends variable for instance
   set_fact:
@@ -35,6 +35,15 @@
   become: yes
   # TODO: validate
   register: sorry_page
+
+- name: Copy certificates for instance
+  copy:
+    src: "certificates/{{ item }}.pem"
+    dest: "{{ instance_dir }}/etc/certs/"
+    mode: ug=r,o=
+  become: yes
+  loop: "{{ certificates | default([]) }}"
+  no_log: true
 
 - name: Deploy the haproxy container
   include_role:

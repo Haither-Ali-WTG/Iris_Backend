@@ -34,6 +34,7 @@
 
         static_backends: "{{ cluster.static_backends | default({}) }}"
         acls: "{{ cluster.acls }}"
+        certificates: "{{ cluster.certificates }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"

@@ -158,7 +158,7 @@ http-response set-header X-Content-Type-Options nosniff
 
 bind {% for item in instance.frontend_ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %}
 
-bind {% for item in instance.frontend_ports.http.ssl %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %} {% for item in instance.certificates %} ssl crt /usr/local/etc/haproxy/certs/{{ item }}/bundle.pem {% endfor %} alpn h2,http/1.1
+bind :443 ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
 
 # TODO: the certificates currently cause problems with the line length limit, use a
 # certificate directory instead.
