@@ -156,7 +156,7 @@ http-response set-header X-Content-Type-Options nosniff
 
 
 
-bind :{{ haproxy_https_port }}
+bind :{{ haproxy_http_port }}
 
 bind :{{ haproxy_https_port }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
 
