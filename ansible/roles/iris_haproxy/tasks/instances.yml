@@ -41,6 +41,7 @@
     src: "certificates/{{ item }}.pem"
     dest: "{{ instance_dir }}/etc/certs/"
     mode: ug=r,o=
+  become: yes
   loop: "{{ certificates | default([]) }}"
   no_log: true
 
