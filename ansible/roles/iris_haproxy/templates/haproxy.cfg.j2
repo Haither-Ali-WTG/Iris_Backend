@@ -231,8 +231,8 @@ use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
 # Dynamic Backends
 # ################
 
-
-{% for server_name,server_content in backends.items() %}
+{% if backends is defined %}
+{% for server_name,server_content in backends.items()%}
 {%   for name,backend in server_content.items() %}
 {%     if backend.visited is not defined %}
 backend {{ name | replace(".", "_") }}
@@ -255,6 +255,7 @@ server {{ iterating_server_name | split('.') | first }} {{ iterating_server_cont
 {%     endif %}
 {%   endfor %}
 {% endfor %}
+{% endif %}
 
 
 # Static Backends
@@ -266,13 +267,22 @@ backend {{ name | replace(".", "_") }}
 {%   endif %}
 option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
-{%   if backend.cookie %}
+{%   if backend.cookie is defined %}
 cookie {{ backend.cookie.name }} insert indirect nocache dynamic
 {%   endif %}
 default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% endif %}
 
 {%   for server in backend.servers %}
-server {{ server.name }} {{ server.ip }}:{{ server.port }} check
+server {{ server.name }}
+{%-    if simulation %} 127.0.0.1:
+{%-      if backend.encryption | default(false) -%}
+8082 check
+{%       else -%}
+8081 check
+{%       endif -%}
+{%-    else -%}
+{{ server.ip }}:{{ server.port }} check
+{%     endif %}
 {%   endfor %}
 
 {% endfor %}
