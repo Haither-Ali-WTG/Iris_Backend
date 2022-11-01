@@ -7,9 +7,9 @@ variables:
   # 16c01b5370829875f3f86de0873abe8508a6b40c
   dante_build_id: '389388'
 
-  # virgil 20221101.2
-  # Mon Oct 31 13:46:15 UTC 2022 -- Mon Oct 31 13:46:15 Australia 2022
+  # virgil 20221102.2
+  # Tue Nov  1 22:43:28 UTC 2022 -- Tue Nov  1 22:43:28 Australia 2022
   #
-  # Merged PR 9023: Add US2WP-SVIR-15
-  # 33499afaf960b8537d308fc7d8e6a5d5aed0b2ce
-  virgil_build_id: '389767'
+  # Merge pull request 9057 from virgil_python_upgrade into master
+  # db64a25d54917de2443f4bb18bcb506a560fd0f9
+  virgil_build_id: '391078'
