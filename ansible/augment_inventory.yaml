@@ -1,0 +1,12 @@
+---
+- name: Import IIS data
+  import_playbook: import_iis_data.yml
+
+- name: Load static backend configuration
+  import_playbook: load_backends.yaml
+
+- name: Load ACLs
+  import_playbook: load_acls.yaml
+
+- name: Generate the "instance" inventory entries
+  import_playbook: generate_instances.yaml

@@ -23,14 +23,8 @@
         cpu: 4
         ram: 8192
 
-- name: Import IIS data
-  import_playbook: import_iis_data.yml
-
-- name: Load static backend configuration
-  import_playbook: load_backends.yaml
-
-- name: Load ACLs
-  import_playbook: load_acls.yaml
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
 
 - name: Create hypervisor group
   hosts: localhost
