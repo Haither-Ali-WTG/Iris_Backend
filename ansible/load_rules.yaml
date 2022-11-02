@@ -1,0 +1,36 @@
+---
+- name: Load rules
+  hosts: clusters
+  strategy: linear  # we use run_once
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Load common rules
+      vars:
+        fname: common.yaml
+        read: >-
+          {{ lookup('file', '../rules/' + fname) | from_yaml }}
+        labelled: >-
+          {{
+            read.keys()
+            | zip(read.values() | map('combine', {'fname': fname}))
+            | items2dict(key_name=0, value_name=1)
+          }}
+      set_fact:
+        common_rules: "{{ labelled }}"
+      run_once: yes
+
+    - name: Load cluster rules
+      vars:
+        fname: "{{ inventory_hostname }}.yaml"
+        read: >-
+          {{ lookup('file', '../rules/' + fname) | from_yaml }}
+        labelled: >-
+          {{
+            read.keys()
+            | zip(read.values() | map('combine', {'fname': fname}))
+            | items2dict(key_name=0, value_name=1)
+          }}
+      set_fact:
+        rules: >-
+          {{ common_rules | combine(labelled) }}
