@@ -1,5 +1,5 @@
 ---
-- name: "Perform tests"
+- name: Perform tests
   uri:
     follow_redirects: yes
     use_proxy: 'no'
