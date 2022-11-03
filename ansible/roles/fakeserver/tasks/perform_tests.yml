@@ -17,6 +17,6 @@
   environment:
     no_proxy: "{{ inventory_hostname }},{{ item.host }},{{ item.host }}"
   register: test_result
-  until: 
-  - test_result
-  - test_result.status == 200
+  until:
+    - test_result
+    - test_result.status == 200
