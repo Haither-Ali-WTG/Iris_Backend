@@ -116,7 +116,7 @@ pylint==2.15.5
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
-pyrsistent==0.19.1
+pyrsistent==0.19.2
     # via jsonschema
 pytest==7.2.0
     # via
