@@ -1,5 +1,5 @@
 ---
-- name: "Perform test {{ item.host }}"
+- name: "Perform tests"
   uri:
     follow_redirects: yes
     use_proxy: 'no'
