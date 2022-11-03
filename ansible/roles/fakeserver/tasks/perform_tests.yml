@@ -1,0 +1,22 @@
+---
+- name: Perform tests
+  uri:
+    follow_redirects: yes
+    use_proxy: 'no'
+    url: >-
+      http{{ 's' if item.ssl else '' }}://{{ item.host }}:{{
+        haproxy_https_port if item.ssl else haproxy_http_port }}{{ item.path }}
+    method: GET
+    headers:
+      Host: "{{ item.host }}"
+    validate_certs: 'yes'
+    status_code: "200"
+  retries: 5
+  delay: 1
+  loop: "{{ tests }}"
+  environment:
+    no_proxy: "{{ inventory_hostname }},{{ item.host }},{{ item.host }}"
+  register: test_result
+  until:
+    - test_result
+    - test_result.status == 200
