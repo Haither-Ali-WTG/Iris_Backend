@@ -42,7 +42,7 @@
 
 - name: Create directories for tests
   file:
-    path: "/tmp/public{{ item.path | dirname }}"
+    path: "{{ working_dir }}/public{{ item.path | dirname }}"
     state: directory
     recurse: true
     mode: a=rwx
@@ -50,7 +50,7 @@
 
 - name: Create empty files for tests
   file:
-    path: "/tmp/public{{ item.path }}"
+    path: "{{ working_dir }}/public{{ item.path }}"
     state: touch
     mode: a=rwx
   loop: "{{ tests_list | default([]) }}"

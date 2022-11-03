@@ -4,5 +4,12 @@
   strategy: free
   gather_facts: yes
   force_handlers: yes
-  roles:
-    - fakeserver
+  tasks:
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
+
+    - name: Setup fakeserver
+      include_role:
+        name: fakeserver

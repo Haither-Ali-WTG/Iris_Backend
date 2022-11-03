@@ -14,8 +14,7 @@
       include_role:
         name: container_runner
         tasks_from: setup.yml
-      # TODO: remove when actual prod machines are available
-      when: simulation
+      when: not simulation
 
 - name: Setup the instances
   hosts: instances
