@@ -17,3 +17,30 @@ fms.wisegrid.net:
     - name: SYDWP-SBOT-4
       ip: 10.61.179.151
       port: 50135
+
+aucloud3.wisegrid.net:
+  clusters: [au1prodfrontend1]
+  health_check: /
+  encryption: true
+  servers:
+    - name: SYDWP-SBOT-4
+      ip: 10.61.179.151
+      port: 50136
+
+www.cargowise.com:
+  clusters: [au2prodceph1]
+  health_check: /healthcheck
+  encryption: true
+  servers:
+    - name: SYDWP-SBOT-4
+      ip: 10.61.179.151
+      port: 50137
+
+cargowise.com:
+  clusters: [au2prodceph1]
+  health_check: /healthcheck
+  encryption: false
+  servers:
+    - name: SYDWP-SBOT-4
+      ip: 10.61.179.152
+      port: 50138
