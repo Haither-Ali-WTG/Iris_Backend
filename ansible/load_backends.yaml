@@ -21,6 +21,6 @@
         static_backends: >-
           {{ all_static_backends | dict2items | selectattr('value.clusters', 'contains', item) | items2dict }}
       delegate_to: "{{ item }}"
-      delegate_facts: true
+      delegate_facts: yes
       loop: >-
         {{ all_static_backends | dict2items | map(attribute='value.clusters') | flatten | unique }}
