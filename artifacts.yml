@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221104.1
-  # Thu Nov  3 22:18:44 UTC 2022 -- Thu Nov  3 22:18:44 Australia 2022
+  # dante build artifact 20221104.3
+  # Fri Nov  4 02:17:54 UTC 2022 -- Fri Nov  4 02:17:54 Australia 2022
   #
-  # Merge pull request 9046 from dante_artifact_upgrade into master
-  # 2212b0a0d2132cdd5667241c028ad11061fc60df
-  dante_build_id: '393126'
+  # Merged PR 8765: Deleted check_subclient_disabled.py
+  # 85f25614a66ab742a09614605c44f0921adf0be0
+  dante_build_id: '393315'
 
   # virgil 20221103.4
   # Thu Nov  3 07:05:11 UTC 2022 -- Thu Nov  3 07:05:11 Australia 2022
