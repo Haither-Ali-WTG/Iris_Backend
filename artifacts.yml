@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221104.3
-  # Fri Nov  4 02:17:54 UTC 2022 -- Fri Nov  4 02:17:54 Australia 2022
+  # dante build artifact 20221104.4
+  # Fri Nov  4 03:26:43 UTC 2022 -- Fri Nov  4 03:26:43 Australia 2022
   #
-  # Merged PR 8765: Deleted check_subclient_disabled.py
-  # 85f25614a66ab742a09614605c44f0921adf0be0
-  dante_build_id: '393315'
+  # Merged PR 9038: Bug fix on the azp_agent_name
+  # 8cd0dc8100efb92b4e9a54f0d57f914db1f9b890
+  dante_build_id: '393362'
 
   # virgil 20221103.4
   # Thu Nov  3 07:05:11 UTC 2022 -- Thu Nov  3 07:05:11 Australia 2022
