@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221104.4
-  # Fri Nov  4 03:26:43 UTC 2022 -- Fri Nov  4 03:26:43 Australia 2022
+  # dante build artifact 20221107.1
+  # Sun Nov  6 23:11:39 UTC 2022 -- Sun Nov  6 23:11:39 Australia 2022
   #
-  # Merged PR 9038: Bug fix on the azp_agent_name
-  # 8cd0dc8100efb92b4e9a54f0d57f914db1f9b890
-  dante_build_id: '393362'
+  # Merged PR 9035: WI00540765 - ILS topics users
+  # c010eefa45eba818ead208c4ee5178ed0ce6fb46
+  dante_build_id: '396037'
 
   # virgil 20221107.2
   # Sun Nov  6 22:14:02 UTC 2022 -- Sun Nov  6 22:14:02 Australia 2022
