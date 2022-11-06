@@ -7,9 +7,9 @@ variables:
   # 8cd0dc8100efb92b4e9a54f0d57f914db1f9b890
   dante_build_id: '393362'
 
-  # virgil 20221103.4
-  # Thu Nov  3 07:05:11 UTC 2022 -- Thu Nov  3 07:05:11 Australia 2022
+  # virgil 20221107.2
+  # Sun Nov  6 22:14:02 UTC 2022 -- Sun Nov  6 22:14:02 Australia 2022
   #
-  # Merged PR 9071: Added 4x Hyper-V nodes in DE1
-  # fa89d39e4d9128a4c2102b8a0c1540f157332c1f
-  virgil_build_id: '392542'
+  # Merge pull request 9098 from virgil_python_upgrade into master
+  # 0a42e83f9081a354921cd8a4035dfc81523ff86d
+  virgil_build_id: '395983'
