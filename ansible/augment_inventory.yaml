@@ -8,5 +8,8 @@
 - name: Load ACLs
   import_playbook: load_acls.yaml
 
+- name: Load rules
+  import_playbook: load_rules.yaml
+
 - name: Generate the "instance" inventory entries
   import_playbook: generate_instances.yaml
