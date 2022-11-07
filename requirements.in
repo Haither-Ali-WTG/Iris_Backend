@@ -5,6 +5,7 @@ pywinrm
 # required for tests:
 ansible-lint
 bandit
+kafka-python
 mypy
 pylint
 pytest
