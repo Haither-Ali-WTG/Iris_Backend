@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221107.5
-  # Mon Nov  7 04:30:38 UTC 2022 -- Mon Nov  7 04:30:38 Australia 2022
+  # dante build artifact 20221107.11
+  # Mon Nov  7 12:45:07 UTC 2022 -- Mon Nov  7 12:45:07 Australia 2022
   #
-  # Merged PR 9028: Skip the run_once lint, too many false positives
-  # 31c7f4ae1300bf274c12ff085098c10171790019
-  dante_build_id: '396285'
+  # Merged PR 9052: download_secret script
+  # fb4d92bdeceef70afcaa4115655c20883cff8592
+  dante_build_id: '396656'
 
   # virgil 20221107.4
   # Mon Nov  7 04:19:09 UTC 2022 -- Mon Nov  7 04:19:09 Australia 2022
