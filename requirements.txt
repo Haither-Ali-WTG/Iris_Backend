@@ -72,6 +72,8 @@ jsonschema==4.17.0
     # via
     #   ansible-compat
     #   ansible-lint
+kafka-python==2.0.2
+    # via -r requirements.in
 lazy-object-proxy==1.8.0
     # via astroid
 markupsafe==2.1.1
