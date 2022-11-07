@@ -2,18 +2,21 @@
 Script data to specified kafka topic
 """
 import argparse
+import codecs
 import sys
 import json
 import logging
 
-from kafka import KafkaProducer
 from ssl import create_default_context
+from kafka import KafkaProducer
 
 class KafkaSender:
+    """Class to send data to Kafka"""
     def __init__(self, brokers, cert_path):
         """Init Kafka producer"""
         self.brokers = brokers
         self.cert_path = cert_path
+        self.producer = None
 
     def __enter__(self):
         """Runs on creation after init"""
@@ -26,10 +29,12 @@ class KafkaSender:
 
     def __exit__(self, exception_type: None, exception_value: None, traceback: None):
         """Runs on exit to clean up"""
-        self.producer.flush()
-        self.producer.close()                
+        if self.producer:
+            self.producer.flush()
+            self.producer.close()
 
     def send_data(self, topic, message):
+        """Actual data"""
         self.producer.send(topic, message)
 
 def main():
@@ -53,7 +58,7 @@ def main():
     logger.info('Message file: %s', args.message_file)
 
     with KafkaSender(args.brokers, args.kafka_cert) as kafka_producer:
-        with open(args.message_file) as message_file:
+        with codecs.open(args.message_file, 'r', 'utf-8-sig') as message_file:
             message = json.load(message_file)
             kafka_producer.send_data(args.topic, message)
 
