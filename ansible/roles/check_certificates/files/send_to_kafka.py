@@ -34,7 +34,7 @@ class KafkaSender:
             self.producer.close()
 
     def send_data(self, topic, message):
-        """Actual data"""
+        """Actual data sending"""
         self.producer.send(topic, message)
 
 def main():
