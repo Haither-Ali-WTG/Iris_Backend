@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221108.2
-  # Tue Nov  8 01:52:45 UTC 2022 -- Tue Nov  8 01:52:45 Australia 2022
+  # dante build artifact 20221108.3
+  # Tue Nov  8 04:21:31 UTC 2022 -- Tue Nov  8 04:21:31 Australia 2022
   #
-  # Merged PR 9139: Added retrieval of all secrets from key vault
-  # 8103fdf7de7fe7bd7cadb6ab1ef3ec9f9d41b427
-  dante_build_id: '397219'
+  # Merged PR 9144: Move away from implicit Optional
+  # 391df60f80c6554af50cef988c90e0f7cd693740
+  dante_build_id: '397337'
 
   # virgil 20221108.9
   # Tue Nov  8 02:48:38 UTC 2022 -- Tue Nov  8 02:48:38 Australia 2022
