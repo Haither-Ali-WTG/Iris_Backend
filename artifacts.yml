@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221107.11
-  # Mon Nov  7 12:45:07 UTC 2022 -- Mon Nov  7 12:45:07 Australia 2022
+  # dante build artifact 20221108.1
+  # Mon Nov  7 23:20:31 UTC 2022 -- Mon Nov  7 23:20:31 Australia 2022
   #
-  # Merged PR 9052: download_secret script
-  # fb4d92bdeceef70afcaa4115655c20883cff8592
-  dante_build_id: '396656'
+  # Merged PR 8989: Updated staging node to au2chl00081
+  # 4c6e7251208fce4c1710635c428efb36f4fa6700
+  dante_build_id: '397081'
 
   # virgil 20221107.4
   # Mon Nov  7 04:19:09 UTC 2022 -- Mon Nov  7 04:19:09 Australia 2022
