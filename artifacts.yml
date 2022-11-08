@@ -7,9 +7,9 @@ variables:
   # 8103fdf7de7fe7bd7cadb6ab1ef3ec9f9d41b427
   dante_build_id: '397219'
 
-  # virgil 20221107.4
-  # Mon Nov  7 04:19:09 UTC 2022 -- Mon Nov  7 04:19:09 Australia 2022
+  # virgil 20221108.5
+  # Tue Nov  8 02:25:54 UTC 2022 -- Tue Nov  8 02:25:54 Australia 2022
   #
-  # Merged PR 9111: New key for Jiri
-  # df4dbb0ed4f62553c4565939aba0cfd43d5f232e
-  virgil_build_id: '396265'
+  # Merged PR 9138: CS01118667 New Kafka topics for Data Science
+  # aa5e627445bef4a66185b6cc1946b017c8b25c56
+  virgil_build_id: '397243'
