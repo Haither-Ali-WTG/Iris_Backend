@@ -7,9 +7,9 @@ variables:
   # 8103fdf7de7fe7bd7cadb6ab1ef3ec9f9d41b427
   dante_build_id: '397219'
 
-  # virgil 20221108.5
-  # Tue Nov  8 02:25:54 UTC 2022 -- Tue Nov  8 02:25:54 Australia 2022
+  # virgil 20221108.9
+  # Tue Nov  8 02:48:38 UTC 2022 -- Tue Nov  8 02:48:38 Australia 2022
   #
-  # Merged PR 9138: CS01118667 New Kafka topics for Data Science
-  # aa5e627445bef4a66185b6cc1946b017c8b25c56
-  virgil_build_id: '397243'
+  # Merge pull request 9121 from virgil_python_upgrade into master
+  # 8e33ec792c681f9f377bdad8bad3f675b90f7f1b
+  virgil_build_id: '397270'
