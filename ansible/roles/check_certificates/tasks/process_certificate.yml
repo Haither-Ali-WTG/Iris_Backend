@@ -25,7 +25,7 @@
   register: check_result
   when: certificate_valid
 
-- name: Calculate certificate details
+- name: Calculate raw certificate details
   set_fact:
     certificate_details_raw: >-
       {{ certificate_details_raw | default({}) |
@@ -33,37 +33,30 @@
   loop: "{{ check_result.stdout_lines }}"
   when: certificate_valid
 
-- name: Convert datetime to iso format
-  set_fact:
-    certificate_details:
-      server:
-        x509:
-          issuer:
-            distinguished_name: "{{ certificate_details_raw['issuer'] }}"
-          not_before: "{{ certificate_details_raw['notBefore'] }}"
-          not_after: "{{ certificate_details_raw['notAfter'] }}"
-          serial_number: "{{ certificate_details_raw['serial'] }}"
-          subject:
-            distinguished_name: "{{ certificate_details_raw['subject'] }}"
-  when: certificate_valid
-
 - name: Collect current datetime
   ansible.builtin.setup:
     gather_subset: min
 
-- name: Form certificate message for kafka
+- name: Calculate certificate details
   set_fact:
     kafka_message:
       '@timestamp': "{{ ansible_date_time.iso8601 }}"
       name: "{{ certificate_name }}"
       tls:
         is_valid: "{{ certificate_valid }}"
-
-- name: Add certificate details to kafka message
-  set_fact:
-    kafka_message:
-      tls: "{{ kafka_message.tls | combine(certificate_details) }}"
-  when: certificate_valid
+        server:
+          x509:
+            issuer:
+              distinguished_name: "{{ certificate_details_raw['issuer'] if certificate_valid else '' }}"
+            not_before: >-
+              {{ (certificate_details_raw['notBefore'] | to_datetime('%b %d %H:%M:%S %Y GMT')).isoformat()
+              if certificate_valid else '' }}
+            not_after: >-
+              {{ (certificate_details_raw['notAfter'] | to_datetime('%b %d %H:%M:%S %Y GMT')).isoformat()
+              if certificate_valid else '' }}
+            serial_number: "{{ certificate_details_raw['serial'] if certificate_valid else '' }}"
+            subject:
+              distinguished_name: "{{ certificate_details_raw['subject'] if certificate_valid else '' }}"
 
 - name: Save kafka message as json
   copy:
