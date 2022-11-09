@@ -145,8 +145,6 @@ errorfile 503 /usr/local/etc/haproxy/sorry.http
 
 capture request header Host len 32
 capture request header user-agent len 150
-http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
-http-response set-header X-Content-Type-Options nosniff
 
 
 
@@ -169,10 +167,6 @@ bind :{{ haproxy_https_port }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,htt
 # ACLs and rules
 # ##############
 
-# CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
-http-request deny if { req.hdr_cnt(content-length) gt 1 }
-http-response deny if { res.hdr_cnt(content-length) gt 1 }
-
 {% for name, acl in acls.items() %}
 # {{ name }} ACL ({{ acl.fname }})
 {{ acl.description | comment }}
@@ -181,16 +175,6 @@ acl {{ name }} {{ test }}
 {% endfor %}
 
 {% endfor %}
-
-
-### HTTP Requests Manipulation
-## Enforce X-Forwarded-Proto
-http-request set-header X-Forwarded-Proto https if { ssl_fc }
-http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
-## Enforce X-Forwarded-Host
-http-request set-header X-Forwarded-Host %[req.hdr(Host)]
-
-# Rarely, also set other headers
 
 
 {% for name, ruleset in rules.items() | sort %}

@@ -1,5 +1,27 @@
 ---
 # common rules
+02-transport-security:
+  description: |-
+    Transport security options
+  rules:
+    - http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
+    - http-response set-header X-Content-Type-Options nosniff
+
+05-single-content-length:
+  description: |-
+    CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
+  rules:
+    - http-request deny if { req.hdr_cnt(content-length) gt 1 }
+    - http-response deny if { res.hdr_cnt(content-length) gt 1 }
+
+08-forwarded-headers:
+  description: |-
+    Enforce X-Forwarded-Proto and X-Forwarded-Host
+  rules:
+    - http-request set-header X-Forwarded-Proto https if { ssl_fc }
+    - http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
+    - http-request set-header X-Forwarded-Host %[req.hdr(Host)]
+
 10-client-cert:
   description: |-
     Attributes required from client cert
