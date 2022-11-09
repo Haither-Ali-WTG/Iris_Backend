@@ -24,7 +24,7 @@
 
         static_backends: "{{ cluster.static_backends | default({}) }}"
         acls: "{{ cluster.acls }}"
-        rules: "{{ cluster.rules }}"
+        actions: "{{ cluster.actions }}"
         certificates: "{{ cluster.certificates }}"
         tests: "{{ cluster.tests }}"
 
