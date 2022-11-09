@@ -1,6 +1,8 @@
 ---
 - name: Validate certificate
   include_tasks: validate_certificate.yml
+  vars:
+    check_only: true
 
 - name: Set certificate invalid parameter
   set_fact:
