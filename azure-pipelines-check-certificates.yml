@@ -9,6 +9,9 @@ schedules:
       include:
         - master
 
+variables:
+  - template: artifacts.yml
+
 pool: cicd
 
 steps:
