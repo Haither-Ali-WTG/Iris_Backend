@@ -23,4 +23,4 @@ steps:
       ansibleInterface: 'agentMachine'
       playbookPathOnAgentMachine: 'ansible/check_certificates.yaml'
       failOnStdErr: false
-      args: '--diff'
+      args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
