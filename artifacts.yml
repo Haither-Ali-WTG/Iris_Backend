@@ -7,9 +7,9 @@ variables:
   # 391df60f80c6554af50cef988c90e0f7cd693740
   dante_build_id: '397337'
 
-  # virgil 20221108.9
-  # Tue Nov  8 02:48:38 UTC 2022 -- Tue Nov  8 02:48:38 Australia 2022
+  # virgil 20221109.1
+  # Tue Nov  8 23:20:07 UTC 2022 -- Tue Nov  8 23:20:07 Australia 2022
   #
-  # Merge pull request 9121 from virgil_python_upgrade into master
-  # 8e33ec792c681f9f377bdad8bad3f675b90f7f1b
-  virgil_build_id: '397270'
+  # Merged PR 9006: Updated teardowns.yaml
+  # 2d4aa7fd5ea5eb2d3fc113df9b1dd9e9424d06f7
+  virgil_build_id: '398089'
