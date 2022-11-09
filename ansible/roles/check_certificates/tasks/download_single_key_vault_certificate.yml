@@ -1,0 +1,12 @@
+---
+- name: Get certificate
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: "{{ certificate_name }}"
+
+- name: Download certificate
+  include_tasks: download_and_save.yml
+  vars:
+    check_only: true

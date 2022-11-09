@@ -6,11 +6,11 @@
     mode: u=rwx,go=rx
 
 - name: Download key vault certificates
-  include_tasks: download_key_vault_certificates.yml
+  include_tasks: download_all_key_vault_certificates.yml
   when: azure_kv_name is defined
 
-- name: Process certificate
-  include_tasks: process_certificate.yml
-  vars:
-    certificate_name: "{{ item.split('/') | last }}"
-  loop: "{{ secrets_list }}"
+# - name: Process certificate
+#   include_tasks: process_certificate.yml
+#   vars:
+#     certificate_name: "{{ item.split('/') | last }}"
+#   loop: "{{ secrets_list }}"
