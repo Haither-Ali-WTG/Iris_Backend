@@ -42,6 +42,8 @@
     kafka_message:
       '@timestamp': "{{ ansible_date_time.iso8601 }}"
       name: "{{ certificate_name }}"
+      url:
+        full: "{{ ('keyvault-' + certificate_details_raw['subject']) if certificate_valid else '' }}"
       tls:
         is_valid: "{{ certificate_valid }}"
         server:
