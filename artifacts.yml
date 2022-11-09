@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221108.3
-  # Tue Nov  8 04:21:31 UTC 2022 -- Tue Nov  8 04:21:31 Australia 2022
+  # dante build artifact 20221110.2
+  # Wed Nov  9 23:33:42 UTC 2022 -- Wed Nov  9 23:33:42 Australia 2022
   #
-  # Merged PR 9144: Move away from implicit Optional
-  # 391df60f80c6554af50cef988c90e0f7cd693740
-  dante_build_id: '397337'
+  # Merge pull request 9105 from dante_artifact_upgrade into master
+  # 5894c7bfc09e41014b6584d05914d8df92c06b56
+  dante_build_id: '399094'
 
-  # virgil 20221109.1
-  # Tue Nov  8 23:20:07 UTC 2022 -- Tue Nov  8 23:20:07 Australia 2022
+  # virgil 20221109.3
+  # Wed Nov  9 06:09:28 UTC 2022 -- Wed Nov  9 06:09:28 Australia 2022
   #
-  # Merged PR 9006: Updated teardowns.yaml
-  # 2d4aa7fd5ea5eb2d3fc113df9b1dd9e9424d06f7
-  virgil_build_id: '398089'
+  # Merged PR 9165: New ip for au1anl010541
+  # dceb571db562f8e29ab399d6260883ba9cfd16a5
+  virgil_build_id: '398398'
