@@ -17,6 +17,23 @@ steps:
       pip install -r requirements.txt
     displayName: 'Install Dante requirements'
 
+  - task: DownloadPipelineArtifact@2
+    displayName: 'Download dante artifact'
+    inputs:
+      buildType: 'specific'
+      project: 'InfrastructureAutomation'
+      # dante build artifact pipeline Id
+      pipeline: 26
+      buildVersionToDownload: 'specific'
+      buildId: '$(dante_build_id)'
+      path: $(Build.SourcesDirectory)
+
+  - task: CopyFiles@2
+    displayName: 'Merge artifacts to a single roles folder'
+    inputs:
+      sourceFolder: nested_virt
+      targetFolder: ansible
+
   - task: Ansible@0
     displayName: 'Check certificates'
     inputs:
