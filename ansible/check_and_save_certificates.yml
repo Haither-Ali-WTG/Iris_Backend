@@ -16,3 +16,11 @@
       loop: "{{ certs_list | default([]) }}"
       loop_control:
         loop_var: certificate_name
+
+    - name: Validate certificate
+      include_role:
+        name: check_certificates
+        tasks_from: validate_certificate.yml
+      loop: "{{ certs_list | default([]) }}"
+      loop_control:
+        loop_var: certificate_name
