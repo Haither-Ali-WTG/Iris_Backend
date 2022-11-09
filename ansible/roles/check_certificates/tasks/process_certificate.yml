@@ -47,9 +47,14 @@
             distinguished_name: "{{ certificate_details_raw['subject'] }}"
   when: certificate_valid
 
+- name: Collect current datetime
+  ansible.builtin.setup:
+    gather_subset: min
+
 - name: Form certificate message for kafka
   set_fact:
     kafka_message:
+      '@timestamp': "{{ ansible_date_time.iso8601 }}"
       name: "{{ certificate_name }}"
       tls:
         is_valid: "{{ certificate_valid }}"
