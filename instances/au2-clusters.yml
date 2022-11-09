@@ -36,4 +36,14 @@ clusters:
         - ahwprd-webtracker-carozplus-com
         - customers-commercialcustoms-com-au
         - star-cargowise-com
-        - star-wisegrid-net
+
+    au2corprdg:
+      # per-cluster settings (overrides) go here, for example:
+      proxy:
+        maxconn: 20000
+      cluster_machines:
+        au2_machine1: ~
+        au2_machine3: ~
+      iis_servers: []
+      certificates: []
+      tests: []  # TODO remove before review
