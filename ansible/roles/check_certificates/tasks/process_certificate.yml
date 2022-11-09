@@ -7,9 +7,7 @@
     azure_kv_secret_name: "{{ certificate_name }}"
 
 - name: Download certificate
-  include_role:
-    name: manage_certificates
-    tasks_from: download_and_save.yml
+  include_tasks: download_and_save.yml
   vars:
     check_only: true
 
