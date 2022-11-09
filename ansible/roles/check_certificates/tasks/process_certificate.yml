@@ -9,7 +9,7 @@
 
 - name: Get certificate details
   command: >-
-    openssl x509 -noout -enddate -startdate -subject -issuer -serial -in certificates/{{ certificate_name }}.pem
+    openssl x509 -noout -enddate -startdate -subject -issuer -serial -in {{ certs_folder }}/{{ certificate_name }}.pem
   changed_when: false
   register: check_result
   when: certificate_valid

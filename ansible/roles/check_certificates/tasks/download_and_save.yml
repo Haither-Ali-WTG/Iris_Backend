@@ -1,7 +1,7 @@
 ---
 - name: Create certificates directory
   file:
-    dest: "certificates/"
+    dest: "{{ certs_folder }}/"
     state: directory
     mode: u=rwx,go=
 
@@ -22,7 +22,7 @@
 
 - name: Save certificate to file
   copy:
-    dest: "certificates/{{ certificate_name }}.pem"
+    dest: "{{ certs_folder }}/{{ certificate_name }}.pem"
     content: "{{ return_secret_value }}"
     mode: u=rw,go=
   no_log: true

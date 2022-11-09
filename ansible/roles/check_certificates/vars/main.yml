@@ -1,3 +1,5 @@
 ---
 kafka_brokers: 1.au1-test-1.kafka.wtg.ws:9093,2.au1-test-1.kafka.wtg.ws:9093,3.au1-test-1.kafka.wtg.ws:9093
 kafka_topic: topic-au1-test-heartbeat-test
+
+certs_folder: certificates
