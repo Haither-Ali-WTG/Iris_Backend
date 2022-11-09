@@ -1,0 +1,76 @@
+---
+- name: Get certificate
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: "{{ certificate_name }}"
+
+- name: Download certificate
+  include_role:
+    name: manage_certificates
+    tasks_from: download_and_save.yml
+  vars:
+    check_only: true
+
+- name: Set certificate invalid parameter
+  set_fact:
+    certificate_valid: >-
+      {{ false if (cert_check_result.failed or cert_validation_result.failed) else true }}
+
+- name: Get certificate details
+  command: >-
+    openssl x509 -noout -enddate -startdate -subject -issuer -serial -in certificates/{{ certificate_name }}.pem
+  changed_when: false
+  register: check_result
+  when: certificate_valid
+
+- name: Calculate raw certificate details
+  set_fact:
+    certificate_details_raw: >-
+      {{ certificate_details_raw | default({}) |
+      combine({item.split('=') | first: item.split('=')[1:] | join('=')}) }}
+  loop: "{{ check_result.stdout_lines }}"
+  when: certificate_valid
+
+- name: Collect current datetime
+  ansible.builtin.setup:
+    gather_subset: min
+
+- name: Calculate certificate details
+  set_fact:
+    kafka_message:
+      '@timestamp': "{{ ansible_date_time.iso8601 }}"
+      name: "{{ certificate_name }}"
+      url:
+        full: "{{ ('keyvault-' + certificate_details_raw['subject']) if certificate_valid else '' }}"
+      tls:
+        is_valid: "{{ certificate_valid }}"
+        server:
+          x509:
+            issuer:
+              distinguished_name: "{{ certificate_details_raw['issuer'] if certificate_valid else '' }}"
+            not_before: >-
+              {{ (certificate_details_raw['notBefore'] | to_datetime('%b %d %H:%M:%S %Y GMT')).isoformat()
+              if certificate_valid else '' }}
+            not_after: >-
+              {{ (certificate_details_raw['notAfter'] | to_datetime('%b %d %H:%M:%S %Y GMT')).isoformat()
+              if certificate_valid else '' }}
+            serial_number: "{{ certificate_details_raw['serial'] if certificate_valid else '' }}"
+            subject:
+              distinguished_name: "{{ certificate_details_raw['subject'] if certificate_valid else '' }}"
+
+- name: Save kafka message as json
+  copy:
+    dest: "kafka_messages/{{ certificate_name }}.json"
+    content: "{{ kafka_message | to_nice_json }}"
+    mode: u=rw,go=r
+
+- name: "Send message to kafka"
+  changed_when: true
+  command: >
+        python3 {{ playbook_dir }}/roles/check_certificates/files/send_to_kafka.py
+        --brokers {{ kafka_brokers }}
+        --topic {{ kafka_topic }}
+        --kafka_cert {{ playbook_dir }}/roles/check_certificates/files/certificate.pem
+        --message_file kafka_messages/{{ certificate_name }}.json

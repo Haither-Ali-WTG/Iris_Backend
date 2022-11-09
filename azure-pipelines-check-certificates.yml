@@ -1,0 +1,55 @@
+---
+trigger: none
+
+schedules:
+  - cron: "0 9 * * *"  # 9am in UTC time = 7pm Sydney time
+    displayName: Certificates Iris check
+    always: true
+    branches:
+      include:
+        - master
+
+variables:
+  - template: artifacts.yml
+
+pool: cicd
+
+steps:
+  - script: |
+      set -euxo pipefail
+      pip install -r requirements.txt
+    displayName: 'Install Dante requirements'
+
+  - task: AzureKeyVault@2
+    displayName: 'Get secret to authenticate to key vault from ansible'
+    inputs:
+      azureSubscription: 'sc-azuredevops2dante-vaults'
+      KeyVaultName: kv-wtg-dante-sim
+      SecretsFilter: secretAppIdDf4b4604e176
+
+  - task: DownloadPipelineArtifact@2
+    displayName: 'Download dante artifact'
+    inputs:
+      buildType: 'specific'
+      project: 'InfrastructureAutomation'
+      # dante build artifact pipeline Id
+      pipeline: 26
+      buildVersionToDownload: 'specific'
+      buildId: '$(dante_build_id)'
+      path: $(Build.SourcesDirectory)
+
+  - task: CopyFiles@2
+    displayName: 'Merge artifacts to a single roles folder'
+    inputs:
+      sourceFolder: nested_virt
+      targetFolder: ansible
+
+  - task: Ansible@0
+    displayName: 'Check certificates'
+    inputs:
+      ansibleInterface: 'agentMachine'
+      playbookPathOnAgentMachine: 'ansible/check_certificates.yaml'
+      failOnStdErr: false
+      args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
+    env:
+      secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
