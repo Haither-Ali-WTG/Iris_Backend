@@ -269,7 +269,7 @@ server {{ server.name }}
 8081 check
 {%       endif -%}
 {%-    else -%}
-{{ server.ip }}:{{ server.port }} check
+{{ server.ip }}:{{ server.port }} {{ server.settings | default('check') }}
 {%     endif %}
 {%   endfor %}
 
