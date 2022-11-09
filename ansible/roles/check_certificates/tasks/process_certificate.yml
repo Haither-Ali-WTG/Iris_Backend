@@ -62,6 +62,7 @@
   copy:
     dest: "kafka_messages/{{ certificate_name }}.json"
     content: "{{ kafka_message | to_nice_json }}"
+    mode: u=rw,go=r
 
 - name: "Send message to kafka"
   changed_when: true
