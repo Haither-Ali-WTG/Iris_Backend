@@ -1,6 +1,6 @@
 ---
 - name: Call certificate validation command
-  command: "openssl rsa -noout -check -in {{ certs_folder }}/{{ certificate_name }}.pem"
+  command: "openssl rsa -noout -check -in {{ certs_folder }}/{{ certificate_name }}"
   changed_when: false
   register: cert_check_result
   delegate_to: localhost
