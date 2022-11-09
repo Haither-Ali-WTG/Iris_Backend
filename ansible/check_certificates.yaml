@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+- name: Check certificates
+  hosts: localhost
   gather_facts: no
   tasks:
     - name: Check certificates
