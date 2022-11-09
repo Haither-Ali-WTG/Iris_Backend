@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: Check certificates
+    include_role:
+      name: check_certificates

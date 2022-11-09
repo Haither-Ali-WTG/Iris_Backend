@@ -1,0 +1,26 @@
+---
+trigger: none
+
+schedules:
+  - cron: "0 9 * * *"  # 9am in UTC time = 7pm Sydney time
+    displayName: Certificates Iris check
+    always: true
+    branches:
+      include:
+        - master
+
+pool: cicd
+
+steps:
+  - script: |
+      set -euxo pipefail
+      pip install -r requirements.txt
+    displayName: 'Install Dante requirements'
+
+  - task: Ansible@0
+    displayName: 'Check certificates'
+    inputs:
+      ansibleInterface: 'agentMachine'
+      playbookPathOnAgentMachine: 'ansible/check_certificates.yaml'
+      failOnStdErr: false
+      args: '--diff'
