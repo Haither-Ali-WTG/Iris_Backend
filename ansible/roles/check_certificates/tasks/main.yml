@@ -17,6 +17,5 @@
 - name: Process certificate
   include_tasks: process_certificate.yml
   vars:
-    certificate_name: "ahwprd-webtracker-carozplus-com"
-    # certificate_name: "{{ item.split('/') | last }}"
-  # loop: "{{ secrets_list }}"
+    certificate_name: "{{ item.split('/') | last }}"
+  loop: "{{ secrets_list }}"
