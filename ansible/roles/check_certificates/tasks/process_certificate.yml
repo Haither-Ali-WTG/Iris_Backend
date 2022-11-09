@@ -29,7 +29,7 @@
   set_fact:
     certificate_details_raw: >-
       {{ certificate_details_raw | default({}) |
-      combine({item.split('=') | first: item.split('=')[1:] | join('=') }) }}
+      combine({item.split('=') | first: item.split('=')[1:] | join('=')}) }}
   loop: "{{ check_result.stdout_lines }}"
   when: certificate_valid
 
