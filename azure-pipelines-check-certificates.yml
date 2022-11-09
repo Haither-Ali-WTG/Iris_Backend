@@ -51,3 +51,5 @@ steps:
       playbookPathOnAgentMachine: 'ansible/check_certificates.yaml'
       failOnStdErr: false
       args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
+    env:
+      secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
