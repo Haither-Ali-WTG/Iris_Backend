@@ -32,6 +32,7 @@
   changed_when: false
   register: cert_check_result
   delegate_to: localhost
+  ignore_errors: "{{ check_only | default(false) }}"
 
 - name: Check that certificate is valid
   assert:
@@ -39,3 +40,5 @@
       - cert_check_result.stdout is defined
       - "'RSA key ok' in cert_check_result.stdout"
     fail_msg: "{{ cert_check_result.stderr }}"
+  register: cert_validation_result
+  ignore_errors: "{{ check_only | default(false) }}"

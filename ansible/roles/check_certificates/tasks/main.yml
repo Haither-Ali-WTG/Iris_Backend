@@ -1,0 +1,22 @@
+---
+- name: Create directory for kafka messages
+  file:
+    dest: "kafka_messages/"
+    state: directory
+    mode: u=rwx,go=rx
+
+- name: Get certificates list
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secrets_list.yml
+  vars:
+    curl:
+      retries: 0
+      delay: 5
+  
+- name: Process certificate
+  include_tasks: process_certificate.yml
+  vars:
+    certificate_name: "ahwprd-webtracker-carozplus-com"
+    # certificate_name: "{{ item.split('/') | last }}"
+  # loop: "{{ secrets_list }}"
