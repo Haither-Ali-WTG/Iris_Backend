@@ -164,8 +164,8 @@ bind :{{ haproxy_https_port }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,htt
 # certificate directory instead.
 
 
-# ACLs and rules
-# ##############
+# ACLs and actions
+# ################
 
 {% for name, acl in acls.items() %}
 # {{ name }} ACL ({{ acl.fname }})
@@ -177,11 +177,11 @@ acl {{ name }} {{ test }}
 {% endfor %}
 
 
-{% for name, ruleset in rules.items() | sort %}
-# {{ name }} ({{ ruleset.fname }})
-{{ ruleset.description | comment }}
-{% for rule in ruleset.rules %}
-{{ rule }}
+{% for name, actionset in actions.items() | sort %}
+# {{ name }} ({{ actionset.fname }})
+{{ actionset.description | comment }}
+{% for action in actionset.actions %}
+{{ action }}
 {% endfor %}
 
 {% endfor %}
@@ -193,7 +193,7 @@ acl {{ name }} {{ test }}
 
 # If no other backend has been selected, use the host name (with . replaced by _); in a
 # generated config, we could either retain this or generate individual "use backend if"
-# rules.
+# actions.
 
 
 #######################################
