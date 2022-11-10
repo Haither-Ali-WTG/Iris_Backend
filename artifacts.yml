@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221110.3
-  # Thu Nov 10 01:18:57 UTC 2022 -- Thu Nov 10 01:18:57 Australia 2022
+  # dante build artifact 20221110.4
+  # Thu Nov 10 02:43:03 UTC 2022 -- Thu Nov 10 02:43:03 Australia 2022
   #
-  # Merged PR 9119: Remove systemd unit file after disable service
-  # ee647547754a1c8bb53bb163ee7ca8ffe1331600
-  dante_build_id: '399196'
+  # Merged PR 9181: mongo running out of memory. Increased from2Gb to 6Gb
+  # 2525987f0d894e89c41ec6251cd618a16f191a86
+  dante_build_id: '399258'
 
   # virgil 20221109.3
   # Wed Nov  9 06:09:28 UTC 2022 -- Wed Nov  9 06:09:28 Australia 2022
