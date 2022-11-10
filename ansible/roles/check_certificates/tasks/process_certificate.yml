@@ -1,13 +1,6 @@
 ---
-- name: Get certificate
-  include_role:
-    name: azure_keyvault
-    tasks_from: get_secret.yml
-  vars:
-    azure_kv_secret_name: "{{ certificate_name }}"
-
-- name: Download certificate
-  include_tasks: download_and_save.yml
+- name: Validate certificate
+  include_tasks: validate_certificate.yml
   vars:
     check_only: true
 
@@ -18,7 +11,7 @@
 
 - name: Get certificate details
   command: >-
-    openssl x509 -noout -enddate -startdate -subject -issuer -serial -in certificates/{{ certificate_name }}.pem
+    openssl x509 -noout -enddate -startdate -subject -issuer -serial -in {{ certs_folder }}/{{ certificate_name }}
   changed_when: false
   register: check_result
   when: certificate_valid

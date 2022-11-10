@@ -1,7 +1,7 @@
 ---
 - name: Create certificates directory
   file:
-    dest: "certificates/"
+    dest: "{{ certs_folder }}/"
     state: directory
     mode: u=rwx,go=
 
@@ -22,23 +22,7 @@
 
 - name: Save certificate to file
   copy:
-    dest: "certificates/{{ certificate_name }}.pem"
+    dest: "{{ certs_folder }}/{{ certificate_name }}.pem"
     content: "{{ return_secret_value }}"
     mode: u=rw,go=
   no_log: true
-
-- name: Call certificate validation command
-  command: "openssl rsa -noout -check -in certificates/{{ certificate_name }}.pem"
-  changed_when: false
-  register: cert_check_result
-  delegate_to: localhost
-  ignore_errors: "{{ check_only | default(false) }}"
-
-- name: Check that certificate is valid
-  assert:
-    that:
-      - cert_check_result.stdout is defined
-      - "'RSA key ok' in cert_check_result.stdout"
-    fail_msg: "{{ cert_check_result.stderr }}"
-  register: cert_validation_result
-  ignore_errors: "{{ check_only | default(false) }}"
