@@ -2,7 +2,7 @@
 - name: Append .pem extension if not exist
   set_fact:
     certificate_file_name: >-
-      "{{ certificate_name }}{{ '.pem' if (certificate_name.split('.') | last != 'pem') else '' }}"
+      {{ certificate_name }}{{ '.pem' if (certificate_name.split('.') | last != 'pem') else '' }}
 
 - debug:
     var: certificate_file_name
