@@ -1,8 +1,11 @@
 ---
-- name: Check append .pem extension if not exist
+- name: Append .pem extension if not exist
   set_fact:
     certificate_name: "{{ certificate_name }}.pem"
   when: "certificate_name.split('.') | last != 'pem'"
+
+- debug:
+    var: certificate_name
 
 - name: Call certificate validation command
   command: "openssl rsa -noout -check -in {{ certs_folder }}/{{ certificate_name }}"
