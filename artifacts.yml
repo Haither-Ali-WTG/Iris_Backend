@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221110.4
-  # Thu Nov 10 02:43:03 UTC 2022 -- Thu Nov 10 02:43:03 Australia 2022
+  # dante build artifact 20221111.2
+  # Thu Nov 10 22:45:43 UTC 2022 -- Thu Nov 10 22:45:43 Australia 2022
   #
-  # Merged PR 9181: mongo running out of memory. Increased from2Gb to 6Gb
-  # 2525987f0d894e89c41ec6251cd618a16f191a86
-  dante_build_id: '399258'
+  # Merged PR 9187: Migration of check_certificates role from Iris to dante
+  # d9855a52cac07fb2a3af2db2b7c82a87668ebfb7
+  dante_build_id: '400164'
 
-  # virgil 20221109.3
-  # Wed Nov  9 06:09:28 UTC 2022 -- Wed Nov  9 06:09:28 Australia 2022
+  # virgil 20221110.4
+  # Thu Nov 10 05:18:59 UTC 2022 -- Thu Nov 10 05:18:59 Australia 2022
   #
-  # Merged PR 9165: New ip for au1anl010541
-  # dceb571db562f8e29ab399d6260883ba9cfd16a5
-  virgil_build_id: '398398'
+  # Merged PR 9186: New IP for au1anl010542
+  # 3d59aa7aef78b22d16de0e82bea8b28c9c0d0acb
+  virgil_build_id: '399396'
