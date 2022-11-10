@@ -46,4 +46,3 @@ clusters:
         au2_machine3: ~
       iis_servers: []
       certificates: []
-      tests: []  # TODO remove before review
