@@ -22,5 +22,7 @@
         name: check_certificates
         tasks_from: validate_certificate.yml
       loop: "{{ certs_list | default([]) }}"
+      var:
+        certificate_name: "{{ certificate_name }}.pem"
       loop_control:
         loop_var: certificate_name
