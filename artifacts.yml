@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221111.2
-  # Thu Nov 10 22:45:43 UTC 2022 -- Thu Nov 10 22:45:43 Australia 2022
+  # dante build artifact 20221111.4
+  # Fri Nov 11 00:46:43 UTC 2022 -- Fri Nov 11 00:46:43 Australia 2022
   #
-  # Merged PR 9187: Migration of check_certificates role from Iris to dante
-  # d9855a52cac07fb2a3af2db2b7c82a87668ebfb7
-  dante_build_id: '400164'
+  # Merged PR 9200: Fixed paths for roles
+  # 6d69c63e8408779820c136315fc2d24d39416795
+  dante_build_id: '400298'
 
-  # virgil 20221110.4
-  # Thu Nov 10 05:18:59 UTC 2022 -- Thu Nov 10 05:18:59 Australia 2022
+  # virgil 20221111.6
+  # Thu Nov 10 23:24:52 UTC 2022 -- Thu Nov 10 23:24:52 Australia 2022
   #
-  # Merged PR 9186: New IP for au1anl010542
-  # 3d59aa7aef78b22d16de0e82bea8b28c9c0d0acb
-  virgil_build_id: '399396'
+  # Merged PR 9197: Add cabinet 209
+  # 0bb1309f8b25a73ea24fb73942803672e871d38f
+  virgil_build_id: '400204'
