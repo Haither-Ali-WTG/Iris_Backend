@@ -98,13 +98,13 @@ packaging==21.3
     #   dparse
     #   pytest
     #   safety
-pathspec==0.10.1
+pathspec==0.10.2
     # via
     #   black
     #   yamllint
 pbr==5.11.0
     # via stevedore
-platformdirs==2.5.3
+platformdirs==2.5.4
     # via
     #   black
     #   pylint
