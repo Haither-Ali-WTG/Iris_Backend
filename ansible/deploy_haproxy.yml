@@ -16,21 +16,21 @@
         tasks_from: setup.yml
       when: not simulation
 
-- name: Setup the instances
-  hosts: instances
+- name: Setup the workers
+  hosts: workers
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Calculate instance settings
+    - name: Calculate worker settings
       vars:
-        the_instance: "{{ hostvars[inventory_hostname] }}"
+        the_worker: "{{ hostvars[inventory_hostname] }}"
         machine: "{{ hostvars[machine_name] }}"
         cluster: "{{ hostvars[cluster_name] }}"
       set_fact:
         "{{ item }}": >-
           {{
-            the_instance[item]
+            the_worker[item]
             | combine(cluster[item] | default({}), recursive=true)
             | combine(machine[item] | default({}), recursive=true)
             | combine(cluster_machine_overrides[item] | default({}), recursive=true)
@@ -43,10 +43,10 @@
       # TODO: remove when actual prod machines are available
       when: simulation
 
-    - name: Deploy the instances
+    - name: Deploy the workers
       include_role:
         name: iris_haproxy
-        tasks_from: instances.yml
+        tasks_from: workers.yml
       # TODO: remove when actual prod machines are available
       when: simulation
 
