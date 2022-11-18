@@ -4,14 +4,14 @@
     certificate_file_name: >-
       {{ certificate_name }}{{ '.pem' if (certificate_name.split('.') | last != 'pem') else '' }}
 
-- name: Call certificate validation command
+- name: "Call certificate validation command for {{ certificate_name }}"
   command: "openssl rsa -noout -check -in {{ certs_folder }}/{{ certificate_file_name }}"
   changed_when: false
   register: cert_check_result
   delegate_to: localhost
   ignore_errors: "{{ check_only | default(false) }}"
 
-- name: Check that certificate is valid
+- name: "Check that certificate is valid for {{ certificate_name }}"
   assert:
     that:
       - cert_check_result.stdout is defined
