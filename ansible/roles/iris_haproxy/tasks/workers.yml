@@ -1,17 +1,17 @@
 ---
-- name: Calculate instance facts
+- name: Calculate worker facts
   set_fact:
-    instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
+    worker_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
 
 - name: Create directory {{ item }}
   file:
-    dest: "{{ instance_dir }}/{{ item }}"
+    dest: "{{ worker_dir }}/{{ item }}"
     state: directory
     mode: a=rx
   become: yes
   loop: [etc/certs, run]
 
-- name: Populate backends variable for instance
+- name: Populate backends variable for worker
   set_fact:
     backends: "{{ hostvars['localhost'].complete_iis_data.instances[cluster_name] }}"
   when:
@@ -21,7 +21,7 @@
 - name: Template out the haproxy config
   template:
     src: haproxy.cfg.j2
-    dest: "{{ instance_dir }}/etc/haproxy.cfg"
+    dest: "{{ worker_dir }}/etc/haproxy.cfg"
     mode: u=r,go=
   become: yes
   # TODO: validate
@@ -30,16 +30,16 @@
 - name: Template out the sorry page
   template:
     src: sorry.http.j2
-    dest: "{{ instance_dir }}/etc/sorry.http"
+    dest: "{{ worker_dir }}/etc/sorry.http"
     mode: u=r,go=
   become: yes
   # TODO: validate
   register: sorry_page
 
-- name: Copy certificates for instance
+- name: Copy certificates for worker
   copy:
     src: "certificates/{{ item }}.pem"
-    dest: "{{ instance_dir }}/etc/certs/"
+    dest: "{{ worker_dir }}/etc/certs/"
     mode: ug=r,o=
   become: yes
   loop: "{{ certificates | default([]) }}"
@@ -57,9 +57,9 @@
       - "iris_haproxy_config_checksum={{ haproxy_config.checksum }}"
       - "iris_sorry_page_checksum={{ sorry_page.checksum }}"
     volumes:
-      - "{{ instance_dir }}/etc:/usr/local/etc/haproxy:z"
-      - "{{ instance_dir }}/run:/var/run/haproxy:z"
-    container_dir: "{{ instance_dir }}"
+      - "{{ worker_dir }}/etc:/usr/local/etc/haproxy:z"
+      - "{{ worker_dir }}/run:/var/run/haproxy:z"
+    container_dir: "{{ worker_dir }}"
     resources:  # TODO review, probably make configurable
       production:
         cpu: 1000m

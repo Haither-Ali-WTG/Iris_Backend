@@ -1,19 +1,19 @@
 ---
-- name: Generate the "instance" inventory entries
+- name: Generate the "worker" inventory entries
   hosts: localhost
   strategy: linear
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Create instance inventory entry
+    - name: Create worker inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
         cluster: "{{ hostvars[item.cluster_name] }}"
       add_host:
-        name: "{{ item.instance_name }}"
+        name: "{{ item.worker_name }}"
         groups:
-          - instances
-          - "instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
+          - workers
+          - "workers_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
         cluster_machine_overrides: "{{ item.cluster_machine_overrides or {} }}"
         machine_name: "{{ item.machine_name }}"
         cluster_name: "{{ item.cluster_name }}"
@@ -40,11 +40,11 @@
                 'machine_name': '{{ machine_name }}',
                 'cluster_name': '{{ cluster_name }}',
                 'cluster_machine_overrides': {{ machine_overrides | to_json }},
-                'instance_name': 'inst_{{ cluster_name }}_{{ machine_name }}',
+                'worker_name': 'worker_{{ cluster_name }}_{{ machine_name }}',
               },
             {% endfor %}
           {% endfor %}
         ]
       loop_control:
         index_var: i
-        label: "{{ item.instance_name }}"
+        label: "{{ item.worker_name }}"
