@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221114.1
-  # Mon Nov 14 00:21:06 UTC 2022 -- Mon Nov 14 00:21:06 Australia 2022
+  # dante build artifact 20221118.1
+  # Fri Nov 18 00:01:40 UTC 2022 -- Fri Nov 18 00:01:40 Australia 2022
   #
-  # Merged PR 9094: Update setting name callback_whitelist -> callbacks_enabled
-  # 4f08d3df74569cde179b0666b2d37164c2ea505a
-  dante_build_id: '403099'
+  # Merged PR 9248: Temporarily disable RAID configuration due to a bug in factory installed xClarity Firmware
+  # 22180628bb76a85a6fc9631f91d510cf2f23775b
+  dante_build_id: '407158'
 
-  # virgil 20221114.2
-  # Sun Nov 13 22:39:57 UTC 2022 -- Sun Nov 13 22:39:57 Australia 2022
+  # virgil 20221117.4
+  # Thu Nov 17 04:07:40 UTC 2022 -- Thu Nov 17 04:07:40 Australia 2022
   #
-  # Merge pull request 9217 from virgil_python_upgrade into master
-  # 814bc02d96009e95414352205cd1ee53aa355af8
-  virgil_build_id: '403029'
+  # Merged PR 9271: Disabling bonds for VMware hosts C-00034, C-00035 & C-00036
+  # 0f6eb98482b501e24fec02382dcc347c44ba350b
+  virgil_build_id: '406320'
