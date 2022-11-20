@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221118.2
-  # Fri Nov 18 06:06:53 UTC 2022 -- Fri Nov 18 06:06:53 Australia 2022
+  # dante build artifact 20221121.1
+  # Sun Nov 20 22:20:12 UTC 2022 -- Sun Nov 20 22:20:12 Australia 2022
   #
-  # Merge pull request 9193 from dante_python_upgrade into master
-  # 8514eda33560a27381cf6760e3417f880866fdd8
-  dante_build_id: '407480'
+  # Merge pull request 9283 from dante_artifact_upgrade into master
+  # 1e7c20c416fce8150edacbf1594434e9ee133a40
+  dante_build_id: '409925'
 
-  # virgil 20221119.2
-  # Fri Nov 18 14:11:55 UTC 2022 -- Fri Nov 18 14:11:55 Australia 2022
+  # virgil 20221121.2
+  # Sun Nov 20 22:10:57 UTC 2022 -- Sun Nov 20 22:10:57 Australia 2022
   #
-  # Merged PR 6275: Prepare us2kvl00204 for automated rebuild
-  # 03caf42e497b598cc3bb9a45b91c4f9d5394f03f
-  virgil_build_id: '407790'
+  # Merge pull request 9288 from virgil_python_upgrade into master
+  # c7ecafbf63fc68b6ee840cdff66a1becde986cba
+  virgil_build_id: '409916'
