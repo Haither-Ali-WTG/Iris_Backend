@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221121.2
-  # Mon Nov 21 00:41:25 UTC 2022 -- Mon Nov 21 00:41:25 Australia 2022
+  # dante build artifact 20221122.1
+  # Mon Nov 21 22:25:53 UTC 2022 -- Mon Nov 21 22:25:53 Australia 2022
   #
-  # Merge pull request 9293 from dante_python_upgrade into master
-  # fe41e11b43aa11f3eaedaf86187bf82060b8ef63
-  dante_build_id: '410039'
+  # Merge pull request 9315 from dante_python_upgrade into master
+  # e43ef2e9793a03fd82a2ca0dede9d0f3077291bf
+  dante_build_id: '410997'
 
-  # virgil 20221121.4
-  # Sun Nov 20 23:40:36 UTC 2022 -- Sun Nov 20 23:40:36 Australia 2022
+  # virgil 20221122.1
+  # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
   #
-  # Merged PR 9297: CS01096963 Kafka topics for ILS team
-  # 6d4398a49131ed72a65bddc6c4bbf07cae62c6ce
-  virgil_build_id: '409996'
+  # Merged PR 9287: Updated teardowns.yaml
+  # cfda28d90062fe8c313acaaaf16467e3feadaaca
+  virgil_build_id: '410990'
