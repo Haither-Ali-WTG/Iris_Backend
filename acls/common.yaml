@@ -25,3 +25,13 @@ wtg_src:
     - src 203.62.215.0/24
     - src 196.41.78.0/24
     - src 196.61.68.0/22
+
+https:
+  description: SSL
+  tests:
+    - ssl_fc
+
+secured_cookie:
+  description: Cookie is secure
+  tests:
+    - res.hdr(Set-Cookie),lower -m sub secure
