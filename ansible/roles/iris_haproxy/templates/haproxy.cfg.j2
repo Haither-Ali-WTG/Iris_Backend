@@ -158,7 +158,9 @@ bind {% for item in instance.frontend_ports.http.plaintext %}:{{item}}{% if loop
 {% else %}
 bind :{{ haproxy_http_port }}
 {% endif %}
+{% if certificates | default([]) %}
 bind :{{ haproxy_https_port }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
+{% endif %}
 
 # TODO: the certificates currently cause problems with the line length limit, use a
 # certificate directory instead.
