@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221122.3
-  # Tue Nov 22 01:52:38 UTC 2022 -- Tue Nov 22 01:52:38 Australia 2022
+  # dante build artifact 20221122.6
+  # Tue Nov 22 04:57:43 UTC 2022 -- Tue Nov 22 04:57:43 Australia 2022
   #
-  # Merge pull request 9317 from dante_artifact_upgrade into master
-  # eb9a6d97e4ab96137b75163eba8653ae6e8f3f20
-  dante_build_id: '411164'
+  # Merged PR 9308: Fix agent name in simluation hypervisor
+  # 1788299a4f2d13624c391ccd3eae124fa9936cea
+  dante_build_id: '411314'
 
   # virgil 20221122.1
   # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
