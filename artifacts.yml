@@ -5,7 +5,7 @@ variables:
   #
   # Merge pull request 9317 from dante_artifact_upgrade into master
   # eb9a6d97e4ab96137b75163eba8653ae6e8f3f20
-  dante_build_id: '411343'
+  dante_build_id: '411348'
 
   # virgil 20221122.1
   # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
