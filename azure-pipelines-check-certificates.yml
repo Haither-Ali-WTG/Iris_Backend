@@ -12,11 +12,7 @@ schedules:
 variables:
   - template: artifacts.yml
 
-pool:
-  name: dante
-  demands:
-  - WTG_DC -equals AU2
-  - WTG_HALL -equals A
+pool: cicd
 
 steps:
   - script: |
