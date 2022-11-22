@@ -159,7 +159,7 @@ ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
 s3cmd==2.3.0
     # via -r requirements.in
-safety==2.3.1
+safety==2.3.2
     # via -r requirements.in
 six==1.16.0
     # via
