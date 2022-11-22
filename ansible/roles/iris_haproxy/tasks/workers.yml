@@ -59,6 +59,7 @@
     volumes:
       - "{{ worker_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ worker_dir }}/run:/var/run/haproxy:z"
+    run_as_user: root
     container_dir: "{{ worker_dir }}"
     resources:  # TODO review, probably make configurable
       production:
