@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221122.6
-  # Tue Nov 22 04:57:43 UTC 2022 -- Tue Nov 22 04:57:43 Australia 2022
+  # dante build artifact 20221122.11
+  # Tue Nov 22 06:51:50 UTC 2022 -- Tue Nov 22 06:51:50 Australia 2022
   #
-  # Merged PR 9308: Fix agent name in simluation hypervisor
-  # 1788299a4f2d13624c391ccd3eae124fa9936cea
-  dante_build_id: '411314'
+  # Merged PR 9267: (WIP) Dante - Kafka Restarts Refactor #3
+  # 7d4506ade8d00b6b430e5bb93128be42a2be0dbb
+  dante_build_id: '411422'
 
   # virgil 20221122.1
   # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
