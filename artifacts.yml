@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221122.11
-  # Tue Nov 22 06:51:50 UTC 2022 -- Tue Nov 22 06:51:50 Australia 2022
+  # dante build artifact 20221123.1
+  # Tue Nov 22 22:44:34 UTC 2022 -- Tue Nov 22 22:44:34 Australia 2022
   #
-  # Merged PR 9267: (WIP) Dante - Kafka Restarts Refactor #3
-  # 7d4506ade8d00b6b430e5bb93128be42a2be0dbb
-  dante_build_id: '411422'
+  # Merge pull request 9340 from dante_python_upgrade into master
+  # cafca58a025624d703e6823289bec3b2c256eee1
+  dante_build_id: '412063'
 
-  # virgil 20221122.1
-  # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
+  # virgil 20221123.2
+  # Tue Nov 22 22:34:07 UTC 2022 -- Tue Nov 22 22:34:07 Australia 2022
   #
-  # Merged PR 9287: Updated teardowns.yaml
-  # cfda28d90062fe8c313acaaaf16467e3feadaaca
-  virgil_build_id: '410990'
+  # Merge pull request 9339 from virgil_python_upgrade into master
+  # 7349dd1b7d75c663ac2ec9879f66e7981ceae44b
+  virgil_build_id: '412051'
