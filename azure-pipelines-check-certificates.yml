@@ -25,10 +25,7 @@ steps:
     inputs:
       azureSubscription: 'sc-azuredevops2dante-vaults'
       KeyVaultName: kv-wtg-dante-sim
-      SecretsFilter: |
-        secretAppIdDf4b4604e176,
-        secretKafkaHeartbeatTest,
-        secretKafkaHeartbeatProd
+      SecretsFilter: secretAppIdDf4b4604e176
 
   - task: DownloadPipelineArtifact@2
     displayName: 'Download dante artifact'
@@ -56,5 +53,3 @@ steps:
       args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-      secretKafkaHeartbeatProd: $(secretKafkaHeartbeatProd)
-      secretKafkaHeartbeatTest: $(secretKafkaHeartbeatTest)
