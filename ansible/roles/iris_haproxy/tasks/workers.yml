@@ -51,7 +51,7 @@
   vars:
     name: "iris_{{ inventory_hostname }}"
     workload: deployment
-    image: wtgopstools.azurecr.io/dante/haproxy:2.1.4  # TODO configurable
+    image: "wtgopstools.azurecr.io/dante/haproxy:{{ haproxy_version }}" # TODO configurable
     restart: "{{ haproxy_config.changed or sorry_page.changed }}"
     environ:
       - "iris_haproxy_config_checksum={{ haproxy_config.checksum }}"
