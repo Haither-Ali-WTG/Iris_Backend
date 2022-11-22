@@ -1,7 +1,6 @@
 ---
 worker_defaults:
   instance:
-    name: default-instance-name
     # TODO: this should probably just be the name?
     # log_name: datacentre - env - context - function
     log_name: AU2-sand-demo-demo
