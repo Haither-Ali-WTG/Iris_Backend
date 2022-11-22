@@ -48,3 +48,25 @@
       loop_control:
         index_var: i
         label: "{{ item.worker_name }}"
+
+- name: Apply overrides for the workers
+  hosts: workers
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Apply overrides for the workers
+      set_fact:
+        "{{ item }}": >-
+          {{
+            worker_defaults[item] | default({})
+            | combine(hostvars[cluster_name][item] | default({}), recursive=true)
+            | combine(hostvars[machine_name][item] | default({}), recursive=true)
+            | combine(cluster_machine_overrides[item] | default({}), recursive=true)
+            | combine(hostvars[inventory_hostname][item] | default({}), recursive=true)
+          }}
+      loop:
+        - instance
+        - cipher
+        - proxy
+        - timeouts
