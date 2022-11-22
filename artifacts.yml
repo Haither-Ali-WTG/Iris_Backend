@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221122.2
-  # Tue Nov 22 00:32:28 UTC 2022 -- Tue Nov 22 00:32:28 Australia 2022
+  # dante build artifact 20221122.3
+  # Tue Nov 22 01:52:38 UTC 2022 -- Tue Nov 22 01:52:38 Australia 2022
   #
-  # Merged PR 9258: Certificate check - add username & password vars
-  # 4b3643d852d2c0c6afe2c5b4740c514b6ec23953
-  dante_build_id: '411106'
+  # Merge pull request 9317 from dante_artifact_upgrade into master
+  # eb9a6d97e4ab96137b75163eba8653ae6e8f3f20
+  dante_build_id: '411164'
 
   # virgil 20221122.1
   # Mon Nov 21 22:18:48 UTC 2022 -- Mon Nov 21 22:18:48 Australia 2022
