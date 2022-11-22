@@ -19,6 +19,7 @@
   loop:
     - global-state
     - haproxy.sock
+  become: yes
 
 - name: Populate backends variable for worker
   set_fact:
