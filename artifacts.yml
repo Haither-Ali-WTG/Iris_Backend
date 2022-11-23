@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221123.4
-  # Wed Nov 23 03:35:02 UTC 2022 -- Wed Nov 23 03:35:02 Australia 2022
+  # dante build artifact 20221124.1
+  # Wed Nov 23 14:39:33 UTC 2022 -- Wed Nov 23 14:39:33 Australia 2022
   #
-  # Merged PR 9333: Container user support for container runner
-  # 2ef44ccee65f78575d2da09fb344040072d3acdd
-  dante_build_id: '412365'
+  # Merge pull request 9367 from dante_artifact_upgrade into master
+  # 462f9902c10f6d4303aff6a79b783aedc44c2955
+  dante_build_id: '412843'
 
   # virgil 20221123.6
   # Wed Nov 23 03:23:28 UTC 2022 -- Wed Nov 23 03:23:28 Australia 2022
