@@ -7,9 +7,9 @@ variables:
   # cafca58a025624d703e6823289bec3b2c256eee1
   dante_build_id: '412063'
 
-  # virgil 20221123.2
-  # Tue Nov 22 22:34:07 UTC 2022 -- Tue Nov 22 22:34:07 Australia 2022
+  # virgil 20221123.4
+  # Tue Nov 22 23:39:47 UTC 2022 -- Tue Nov 22 23:39:47 Australia 2022
   #
-  # Merge pull request 9339 from virgil_python_upgrade into master
-  # 7349dd1b7d75c663ac2ec9879f66e7981ceae44b
-  virgil_build_id: '412051'
+  # Merged PR 9349: fix topic name - topic-au2-prod-heartbeat-prod
+  # 5d6cb3a1959277fb6c161bda3ee96e26587d3808
+  virgil_build_id: '412126'
