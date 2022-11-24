@@ -13,6 +13,11 @@ fms.wisegrid.net:
   clusters: [au1prodfrontend1]
   health_check: /api/v1/airevents/ping
   encryption: true
+  sorry_pages:
+    - file: fms_wisegrid_sorry_404.html
+      code: 404
+    - file: fms_wisegrid_sorry_503.html
+      code: 503
   servers:
     - name: SYDWP-SBOT-4
       ip: 10.61.179.151
@@ -31,6 +36,9 @@ www.cargowise.com:
   clusters: [au2prodceph1]
   health_check: /healthcheck
   encryption: true
+  sorry_pages:
+    - file: www_cargowise_sorry.html
+      code: 404
   servers:
     - name: SYDWP-SBOT-4
       ip: 10.61.179.151
