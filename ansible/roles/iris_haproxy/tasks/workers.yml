@@ -14,13 +14,16 @@
     - etc/sorry_pages
     - run
 
+- debug:
+    var: static_backends
+
 - name: Copy sorry pages to destination
   copy:
-    src: "../backends/sorry_pages/{{ item.sorry_page }}"
+    src: "../backends/sorry_pages/{{ static_backends[item].sorry_page }}"
     dest: "{{ worker_dir }}/etc/sorry_pages/"
     mode: a=r
-  when: item.sorry_page is defined
-  loop: "{{ static_backends.items() }}"
+  when: "'sorry_page' in static_backends[item]"
+  loop: "{{ static_backends }}"
 
 - name: Create socket and global-state files
   file:
