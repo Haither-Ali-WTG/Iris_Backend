@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221124.3
-  # Thu Nov 24 02:50:05 UTC 2022 -- Thu Nov 24 02:50:05 Australia 2022
+  # dante build artifact 20221124.4
+  # Thu Nov 24 05:39:51 UTC 2022 -- Thu Nov 24 05:39:51 Australia 2022
   #
-  # Merged PR 9381: Add more kafka nodes to bind systemd.
-  # dc5ba30b27c9e843a2526b4cc8e1883fced184d1
-  dante_build_id: '413436'
+  # Merged PR 9331: Do not deploy lampades
+  # e65dc11498d5245405cebd8de913ded140e44d50
+  dante_build_id: '413579'
 
   # virgil 20221123.6
   # Wed Nov 23 03:23:28 UTC 2022 -- Wed Nov 23 03:23:28 Australia 2022
