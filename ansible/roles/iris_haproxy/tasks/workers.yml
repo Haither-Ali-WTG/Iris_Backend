@@ -9,7 +9,7 @@
     state: directory
     mode: a=rx
   become: yes
-  loop: 
+  loop:
     - etc/certs
     - etc/sorry_pages
     - run
