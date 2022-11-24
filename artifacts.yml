@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221124.2
-  # Thu Nov 24 01:14:21 UTC 2022 -- Thu Nov 24 01:14:21 Australia 2022
+  # dante build artifact 20221124.3
+  # Thu Nov 24 02:50:05 UTC 2022 -- Thu Nov 24 02:50:05 Australia 2022
   #
-  # Merge pull request 9375 from dante_python_upgrade into master
-  # 8291489b35ad565b6832dc1ba84c4b69df54e743
-  dante_build_id: '413347'
+  # Merged PR 9381: Add more kafka nodes to bind systemd.
+  # dc5ba30b27c9e843a2526b4cc8e1883fced184d1
+  dante_build_id: '413436'
 
   # virgil 20221123.6
   # Wed Nov 23 03:23:28 UTC 2022 -- Wed Nov 23 03:23:28 Australia 2022
