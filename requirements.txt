@@ -12,7 +12,7 @@ ansible-core==2.14.0
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.8.7
+ansible-lint==6.9.0
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
@@ -54,7 +54,7 @@ exceptiongroup==1.0.4
     # via pytest
 filelock==3.8.0
     # via ansible-lint
-gitdb==4.0.9
+gitdb==4.0.10
     # via gitpython
 gitpython==3.1.29
     # via bandit
@@ -186,7 +186,7 @@ tomlkit==0.11.6
     # via pylint
 typing-extensions==4.4.0
     # via mypy
-urllib3==1.26.12
+urllib3==1.26.13
     # via requests
 wcmatch==8.4.1
     # via ansible-lint
