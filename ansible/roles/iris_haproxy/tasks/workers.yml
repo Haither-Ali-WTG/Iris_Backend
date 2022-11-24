@@ -16,7 +16,7 @@
 
 - name: Copy sorry pages to destination
   include_tasks: copy_sorry_pages.yml
-  var:
+  vars:
     sorry_pages_list: "{{ item.value.sorry_pages }}"
   when: "'sorry_pages' in item.value"
   loop: "{{ static_backends | dict2items }}"
