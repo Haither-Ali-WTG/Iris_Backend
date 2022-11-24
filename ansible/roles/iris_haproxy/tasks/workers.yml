@@ -14,9 +14,6 @@
     - etc/sorry_pages
     - run
 
-- debug:
-    var: static_backends
-
 - name: Copy sorry pages to destination
   copy:
     src: "../backends/sorry_pages/{{ item.value.sorry_page }}"
