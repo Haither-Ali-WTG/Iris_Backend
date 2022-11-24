@@ -9,7 +9,18 @@
     state: directory
     mode: a=rx
   become: yes
-  loop: [etc/certs, run]
+  loop: 
+    - etc/certs
+    - etc/sorry_pages
+    - run
+
+- name: Copy sorry pages to destination
+  copy:
+    src: "../backends/sorry_pages/{{ item.sorry_page }}"
+    dest: "{{ worker_dir }}/etc/sorry_pages/"
+    mode: a=r
+  when: item.sorry_page is defined
+  loop: "{{ static_backends.items() }}"
 
 - name: Create socket and global-state files
   file:
