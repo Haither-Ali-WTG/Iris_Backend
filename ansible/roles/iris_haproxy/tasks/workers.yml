@@ -19,11 +19,11 @@
 
 - name: Copy sorry pages to destination
   copy:
-    src: "../backends/sorry_pages/{{ static_backends[item].sorry_page }}"
+    src: "../backends/sorry_pages/{{ item.value.sorry_page }}"
     dest: "{{ worker_dir }}/etc/sorry_pages/"
     mode: a=r
-  when: "'sorry_page' in static_backends[item]"
-  loop: "{{ static_backends }}"
+  when: "'sorry_page' in item.value"
+  loop: "{{ static_backends | dict2items }}"
 
 - name: Create socket and global-state files
   file:
