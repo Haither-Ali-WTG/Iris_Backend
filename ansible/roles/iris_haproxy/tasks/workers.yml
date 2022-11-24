@@ -22,6 +22,7 @@
     src: "../backends/sorry_pages/{{ item.value.sorry_page }}"
     dest: "{{ worker_dir }}/etc/sorry_pages/"
     mode: a=r
+  become: yes
   when: "'sorry_page' in item.value"
   loop: "{{ static_backends | dict2items }}"
 
