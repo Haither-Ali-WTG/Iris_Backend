@@ -10,63 +10,63 @@ variables:
     value: kv-wtg-test
 
 stages:
-  # - stage: Tests_and_lint
-  #   pool: cicd
-  #   jobs:
-  #     - job: Tests_and_lint
-  #       steps:
-  #         - script: |
-  #             set -euxo pipefail
-  #             pip install -r requirements.txt
-  #           displayName: 'Install requirements'
+  - stage: Tests_and_lint
+    pool: cicd
+    jobs:
+      - job: Tests_and_lint
+        steps:
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pytest
-  #           displayName: 'Python tests'
+          - script: |
+              set -euxo pipefail
+              pytest
+            displayName: 'Python tests'
 
-  #         - task: PublishTestResults@2
-  #           condition: succeededOrFailed()
-  #           inputs:
-  #             testResultsFiles: 'reports/nosetests.xml'
+          - task: PublishTestResults@2
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFiles: 'reports/nosetests.xml'
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
-  #           displayName: 'Python lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
+            displayName: 'Python lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             safety check --full-report -i 42923 -i 42926
-  #           # Ignored reports:
-  #           #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
-  #           #   Ansible async tasks can be leaked to malicious non-privileged users
-  #           #   on the target machine, under some circumstances. However, we do not
-  #           #   have any async tasks in this repo.
-  #           displayName: 'Python Safety vulnerability check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              safety check --full-report -i 42923 -i 42926
+            # Ignored reports:
+            #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
+            #   Ansible async tasks can be leaked to malicious non-privileged users
+            #   on the target machine, under some circumstances. However, we do not
+            #   have any async tasks in this repo.
+            displayName: 'Python Safety vulnerability check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             yamllint -s .
-  #           displayName: 'YAML lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              yamllint -s .
+            displayName: 'YAML lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             bandit -r .
-  #           displayName: 'Bandit security check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              bandit -r .
+            displayName: 'Bandit security check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             ansible-lint $(find ansible -iname '*.y*ml')
-  #           displayName: 'Ansible lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              ansible-lint $(find ansible -iname '*.y*ml')
+            displayName: 'Ansible lint'
+            condition: succeededOrFailed()
 
   - stage: Simulations
-    # dependsOn: [Tests_and_lint]
+    dependsOn: [Tests_and_lint]
     pool: test-pool
     jobs:
       - job: Simulation
@@ -134,12 +134,12 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true"
 
-          # - task: Ansible@0
-          #   displayName: 'Cleanup'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
-          #   condition: always()
+          - task: Ansible@0
+            displayName: 'Cleanup'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
+            condition: always()
