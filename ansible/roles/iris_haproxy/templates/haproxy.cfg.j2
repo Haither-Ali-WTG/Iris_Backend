@@ -256,9 +256,9 @@ default-server {{ backend.default_server -}}
 default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% endif %}
 {% endif %}
 
-{% if backend.sorry_page is defined %}
-{%   for page_code in backend.sorry_page_codes %}
-errorfile {{ page_code }} /usr/local/etc/haproxy/sorry_pages/{{ backend.sorry_page }}
+{% if backend.sorry_pages is defined %}
+{%   for sorry_page in backend.sorry_pages %}
+errorfile {{ sorry_page.code }} /usr/local/etc/haproxy/sorry_pages/{{ sorry_page.file }}
 {%   endfor %}
 {% endif -%}
 

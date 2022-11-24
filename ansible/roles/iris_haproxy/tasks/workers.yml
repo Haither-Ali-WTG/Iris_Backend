@@ -15,13 +15,11 @@
     - run
 
 - name: Copy sorry pages to destination
-  copy:
-    src: "../backends/sorry_pages/{{ item.value.sorry_page }}"
-    dest: "{{ worker_dir }}/etc/sorry_pages/"
-    mode: a=r
-  become: yes
-  when: "'sorry_page' in item.value"
+  include_tasks: copy_sorry_pages.yml
+  when: "'sorry_pages' in item.value"
   loop: "{{ static_backends | dict2items }}"
+  loop_control:
+    loop_var: sorry_pages_list
 
 - name: Create socket and global-state files
   file:
