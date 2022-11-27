@@ -169,7 +169,7 @@ smmap==5.0.0
     # via gitdb
 stevedore==4.1.1
     # via bandit
-subprocess-tee==0.3.5
+subprocess-tee==0.4.0
     # via ansible-compat
 toml==0.10.2
     # via
