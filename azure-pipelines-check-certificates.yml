@@ -27,15 +27,6 @@ steps:
       KeyVaultName: kv-wtg-dante-sim
       SecretsFilter: secretAppIdDf4b4604e176
 
-  - task: AzureKeyVault@2
-    displayName: 'Get secret to authenticate to kafka'
-    inputs:
-      azureSubscription: 'sc-azuredevops2dante-vaults'
-      KeyVaultName: kv-wtg-dante-prod
-      SecretsFilter: |
-        secretKafkaHeartbeatTest,
-        secretKafkaHeartbeatProd
-
   - task: DownloadPipelineArtifact@2
     displayName: 'Download dante artifact'
     inputs:
@@ -62,5 +53,3 @@ steps:
       args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-      secretKafkaHeartbeatProd: $(secretKafkaHeartbeatProd)
-      secretKafkaHeartbeatTest: $(secretKafkaHeartbeatTest)
