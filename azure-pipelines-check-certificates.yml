@@ -12,7 +12,7 @@ schedules:
 variables:
   - template: artifacts.yml
   - name: mgmt_keyvault_name
-    value: sc-azuredevops2dante-vaults
+    value: kv-wtg-dante-sim
 
 pool: cicd
 
