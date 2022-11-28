@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221128.8
-  # Mon Nov 28 03:53:04 UTC 2022 -- Mon Nov 28 03:53:04 Australia 2022
+  # dante build artifact 20221128.13
+  # Mon Nov 28 05:04:24 UTC 2022 -- Mon Nov 28 05:04:24 Australia 2022
   #
-  # Merged PR 9418: Updated cri-o apt key url
-  # 11119f56a5f4e75a296015006a1eb52fea4cfcf1
-  dante_build_id: '417277'
+  # Merged PR 9395: More secrets - re CS01096963
+  # 1ea50709f42ea5c22feb35ec54f301083db4b617
+  dante_build_id: '417360'
 
   # virgil 20221125.2
   # Thu Nov 24 22:37:56 UTC 2022 -- Thu Nov 24 22:37:56 Australia 2022
