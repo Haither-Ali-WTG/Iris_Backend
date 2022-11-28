@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221128.13
-  # Mon Nov 28 05:04:24 UTC 2022 -- Mon Nov 28 05:04:24 Australia 2022
+  # dante build artifact 20221128.17
+  # Mon Nov 28 10:55:05 UTC 2022 -- Mon Nov 28 10:55:05 Australia 2022
   #
-  # Merged PR 9395: More secrets - re CS01096963
-  # 1ea50709f42ea5c22feb35ec54f301083db4b617
-  dante_build_id: '417360'
+  # Merged PR 9337: Dante - Change image styx - 1/2
+  # b1b7d450da0e4d94e27fa294232655398da21eed
+  dante_build_id: '417621'
 
   # virgil 20221125.2
   # Thu Nov 24 22:37:56 UTC 2022 -- Thu Nov 24 22:37:56 Australia 2022
