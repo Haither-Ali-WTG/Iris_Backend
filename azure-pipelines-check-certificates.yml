@@ -54,7 +54,7 @@ steps:
       failOnStdErr: false
       args: >-
         --diff
-        -e="azure_kv_name=$(azure_kv_name)"
+        -e="check_key_vault_name=$(check_key_vault_name)"
         -e="mgmt_keyvault_name=$(mgmt_keyvault_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
