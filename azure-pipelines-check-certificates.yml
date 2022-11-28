@@ -11,6 +11,8 @@ schedules:
 
 variables:
   - template: artifacts.yml
+  - name: mgmt_keyvault_name
+    value: sc-azuredevops2dante-vaults
 
 pool: cicd
 
@@ -50,6 +52,9 @@ steps:
       ansibleInterface: 'agentMachine'
       playbookPathOnAgentMachine: 'ansible/check_certificates.yaml'
       failOnStdErr: false
-      args: '--diff -e="azure_kv_name=$(azure_kv_name)"'
+      args: >-
+        --diff
+        -e="azure_kv_name=$(azure_kv_name)"
+        -e="mgmt_keyvault_name=$(mgmt_keyvault_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
