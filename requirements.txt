@@ -42,7 +42,7 @@ commonmark==0.9.1
     # via rich
 coverage[toml]==6.5.0
     # via pytest-cov
-cryptography==38.0.3
+cryptography==38.0.4
     # via
     #   ansible-core
     #   requests-ntlm
@@ -159,7 +159,7 @@ ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
 s3cmd==2.3.0
     # via -r requirements.in
-safety==2.3.2
+safety==2.3.3
     # via -r requirements.in
 six==1.16.0
     # via
