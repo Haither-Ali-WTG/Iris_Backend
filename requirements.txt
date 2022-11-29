@@ -114,7 +114,7 @@ pycparser==2.21
     # via cffi
 pygments==2.13.0
     # via rich
-pylint==2.15.6
+pylint==2.15.7
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
