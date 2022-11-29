@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221128.17
-  # Mon Nov 28 10:55:05 UTC 2022 -- Mon Nov 28 10:55:05 Australia 2022
+  # dante build artifact 20221129.1
+  # Mon Nov 28 23:07:25 UTC 2022 -- Mon Nov 28 23:07:25 Australia 2022
   #
-  # Merged PR 9337: Dante - Change image styx - 1/2
-  # b1b7d450da0e4d94e27fa294232655398da21eed
-  dante_build_id: '417621'
+  # Merge pull request 9431 from dante_python_upgrade into master
+  # a11cb1c7146ffe526754ae3e60e2a59734a41f7e
+  dante_build_id: '418120'
 
-  # virgil 20221125.2
-  # Thu Nov 24 22:37:56 UTC 2022 -- Thu Nov 24 22:37:56 Australia 2022
+  # virgil 20221129.14
+  # Tue Nov 29 00:14:07 UTC 2022 -- Tue Nov 29 00:14:07 Australia 2022
   #
-  # Merge pull request 9398 from virgil_python_upgrade into master
-  # 11acc852624544414be7daece544da9f63e0d52b
-  virgil_build_id: '414255'
+  # Merged PR 9439: Allow mixed static route list
+  # 7ad49a3f1db9ce2ff8abfd5e1cd1efbf5faaa900
+  virgil_build_id: '418185'
