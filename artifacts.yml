@@ -7,9 +7,9 @@ variables:
   # a11cb1c7146ffe526754ae3e60e2a59734a41f7e
   dante_build_id: '418120'
 
-  # virgil 20221129.14
-  # Tue Nov 29 00:14:07 UTC 2022 -- Tue Nov 29 00:14:07 Australia 2022
+  # virgil 20221129.18
+  # Tue Nov 29 00:43:44 UTC 2022 -- Tue Nov 29 00:43:44 Australia 2022
   #
-  # Merged PR 9439: Allow mixed static route list
-  # 7ad49a3f1db9ce2ff8abfd5e1cd1efbf5faaa900
-  virgil_build_id: '418185'
+  # Merged PR 9438: New ILS topics in Q0
+  # 154f3e6db7ca60b02bf13a13577e1d31b84bc5e4
+  virgil_build_id: '418214'
