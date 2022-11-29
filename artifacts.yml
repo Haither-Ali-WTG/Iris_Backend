@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221129.9
-  # Tue Nov 29 04:01:50 UTC 2022 -- Tue Nov 29 04:01:50 Australia 2022
+  # dante build artifact 20221129.14
+  # Tue Nov 29 11:51:43 UTC 2022 -- Tue Nov 29 11:51:43 Australia 2022
   #
-  # Merged PR 9335: Add telegraf in dante collection
-  # 2688eb83cad1fc77a35b3a80793351cca02e31d1
-  dante_build_id: '418429'
+  # Merged PR 9336: Dante - Change Styx Calls to use JSON - 2/2
+  # 5725c929bca6e493c0e03b2f7d5e4bf558db900b
+  dante_build_id: '418758'
 
-  # virgil 20221129.28
-  # Tue Nov 29 03:16:19 UTC 2022 -- Tue Nov 29 03:16:19 Australia 2022
+  # virgil 20221130.2
+  # Tue Nov 29 22:32:55 UTC 2022 -- Tue Nov 29 22:32:55 Australia 2022
   #
-  # Merged PR 9444: Disallow "..." as specification of ports on OOB network
-  # 80c239c6ce06a5c55829e42d0ff36586dd90e47f
-  virgil_build_id: '418385'
+  # Merge pull request 9456 from virgil_python_upgrade into master
+  # 8ff04ba13c59b28e45dd433ebe07e6dfa51b3ba0
+  virgil_build_id: '419180'
