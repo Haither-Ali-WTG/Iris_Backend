@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221130.3
-  # Wed Nov 30 05:23:45 UTC 2022 -- Wed Nov 30 05:23:45 Australia 2022
+  # dante build artifact 20221130.6
+  # Wed Nov 30 11:40:20 UTC 2022 -- Wed Nov 30 11:40:20 Australia 2022
   #
-  # Merged PR 9419: Advertise Static routes into BGP
-  # 5b7d2ba4baa05fc46262acdd3e3d6a59808871e5
-  dante_build_id: '419514'
+  # Merged PR 9451: Dante - Rename Cluster Tasks + Delete Zookeeper Service - 1/4
+  # 6c41191b937671cf6e24ed46b476230725bff819
+  dante_build_id: '419781'
 
   # virgil 20221130.4
   # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
