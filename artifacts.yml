@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221130.2
-  # Wed Nov 30 01:36:23 UTC 2022 -- Wed Nov 30 01:36:23 Australia 2022
+  # dante build artifact 20221130.3
+  # Wed Nov 30 05:23:45 UTC 2022 -- Wed Nov 30 05:23:45 Australia 2022
   #
-  # Merge pull request 9436 from dante_artifact_upgrade into master
-  # b446002cdbf2ccf093d35b5c87bb39240b128a82
-  dante_build_id: '419342'
+  # Merged PR 9419: Advertise Static routes into BGP
+  # 5b7d2ba4baa05fc46262acdd3e3d6a59808871e5
+  dante_build_id: '419514'
 
   # virgil 20221130.4
   # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
