@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221201.2
-  # Thu Dec  1 03:58:33 UTC 2022 -- Thu Dec  1 03:58:33 Australia 2022
+  # dante build artifact 20221201.4
+  # Thu Dec  1 08:41:11 UTC 2022 -- Thu Dec  1 08:41:11 Australia 2022
   #
-  # Merged PR 9478: CS01124572 - More secrets
-  # c5718e5e343c644d14c678aeb90a317d8154a608
-  dante_build_id: '420431'
+  # Merged PR 9448: Clean apt cache when building docker images to reduce layer size
+  # d02f72d8acdce64c6f1c25324ce71d305130957c
+  dante_build_id: '420666'
 
   # virgil 20221130.4
   # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
