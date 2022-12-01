@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221130.6
-  # Wed Nov 30 11:40:20 UTC 2022 -- Wed Nov 30 11:40:20 Australia 2022
+  # dante build artifact 20221201.1
+  # Thu Dec  1 01:09:18 UTC 2022 -- Thu Dec  1 01:09:18 Australia 2022
   #
-  # Merged PR 9451: Dante - Rename Cluster Tasks + Delete Zookeeper Service - 1/4
-  # 6c41191b937671cf6e24ed46b476230725bff819
-  dante_build_id: '419781'
+  # Merged PR 9443: Add previous_hostname in rebuild server pipeline
+  # 3fd709e6b1d72d747aca80e93c76ac865c1c9781
+  dante_build_id: '420306'
 
   # virgil 20221130.4
   # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
