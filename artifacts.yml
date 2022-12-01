@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221201.4
-  # Thu Dec  1 08:41:11 UTC 2022 -- Thu Dec  1 08:41:11 Australia 2022
+  # dante build artifact 20221202.1
+  # Thu Dec  1 23:01:32 UTC 2022 -- Thu Dec  1 23:01:32 Australia 2022
   #
-  # Merged PR 9448: Clean apt cache when building docker images to reduce layer size
-  # d02f72d8acdce64c6f1c25324ce71d305130957c
-  dante_build_id: '420666'
+  # Merged PR 9505: reinstate  secretKafkaHeartbeatProd:  & secretKafkaHeartbeatTest:
+  # ce90a67a4b81418b398c91b2a8f375fd3f8c56f9
+  dante_build_id: '421234'
 
-  # virgil 20221130.4
-  # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
+  # virgil 20221202.6
+  # Thu Dec  1 22:53:47 UTC 2022 -- Thu Dec  1 22:53:47 Australia 2022
   #
-  # Merged PR 9462: new topics CS01124572
-  # ad667543b83e65d12c593fe6863d2c2e3dafa16c
-  virgil_build_id: '419191'
+  # Merged PR 9509: Improve error message for missing VLAN
+  # 64a20295e325462cf426a8c5106034a29e14f646
+  virgil_build_id: '421213'
