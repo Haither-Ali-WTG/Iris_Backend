@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221201.1
-  # Thu Dec  1 01:09:18 UTC 2022 -- Thu Dec  1 01:09:18 Australia 2022
+  # dante build artifact 20221201.2
+  # Thu Dec  1 03:58:33 UTC 2022 -- Thu Dec  1 03:58:33 Australia 2022
   #
-  # Merged PR 9443: Add previous_hostname in rebuild server pipeline
-  # 3fd709e6b1d72d747aca80e93c76ac865c1c9781
-  dante_build_id: '420306'
+  # Merged PR 9478: CS01124572 - More secrets
+  # c5718e5e343c644d14c678aeb90a317d8154a608
+  dante_build_id: '420431'
 
   # virgil 20221130.4
   # Tue Nov 29 22:41:52 UTC 2022 -- Tue Nov 29 22:41:52 Australia 2022
