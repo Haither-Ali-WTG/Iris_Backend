@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221202.3
-  # Fri Dec  2 04:57:54 UTC 2022 -- Fri Dec  2 04:57:54 Australia 2022
+  # dante build artifact 20221202.4
+  # Fri Dec  2 07:57:45 UTC 2022 -- Fri Dec  2 07:57:45 Australia 2022
   #
-  # Merge pull request 9517 from dante_artifact_upgrade into master
-  # b8ef36fdbdcdacb8c220d989b92852d65af3d62f
-  dante_build_id: '421480'
+  # Merged PR 9453: Dante - Zookeeper Refactor for Restarts - 3/3
+  # 9e583e29fbe42533c283b2133d26f8864edaf50a
+  dante_build_id: '421609'
 
-  # virgil 20221202.13
-  # Fri Dec  2 02:27:30 UTC 2022 -- Fri Dec  2 02:27:30 Australia 2022
+  # virgil 20221202.17
+  # Fri Dec  2 07:13:26 UTC 2022 -- Fri Dec  2 07:13:26 Australia 2022
   #
-  # Merged PR 9503: Virgil - Add jvm agent field to Virgil queues.yaml
-  # cc22fbccc6bb60941fc5c0a6f355183956375e2f
-  virgil_build_id: '421378'
+  # Merged PR 9515: Provision new ESXi hosts
+  # 1f035bf68c2abeb9c32ad53556c2822518116a43
+  virgil_build_id: '421583'
