@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221205.2
-  # Mon Dec  5 01:41:47 UTC 2022 -- Mon Dec  5 01:41:47 Australia 2022
+  # dante build artifact 20221205.4
+  # Mon Dec  5 07:19:24 UTC 2022 -- Mon Dec  5 07:19:24 Australia 2022
   #
-  # Merged PR 9479: Add TODO for personal token in code
-  # d5eea73cfe750a929ac66375b40fe7deeb78627c
-  dante_build_id: '424135'
+  # Merged PR 9532: Update dante agent on stage
+  # 1261c099c0defd434cbefea28426296bc6bd05f2
+  dante_build_id: '424376'
 
   # virgil 20221205.2
   # Sun Dec  4 22:48:04 UTC 2022 -- Sun Dec  4 22:48:04 Australia 2022
