@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221202.4
-  # Fri Dec  2 07:57:45 UTC 2022 -- Fri Dec  2 07:57:45 Australia 2022
+  # dante build artifact 20221205.1
+  # Sun Dec  4 23:53:14 UTC 2022 -- Sun Dec  4 23:53:14 Australia 2022
   #
-  # Merged PR 9453: Dante - Zookeeper Refactor for Restarts - 3/3
-  # 9e583e29fbe42533c283b2133d26f8864edaf50a
-  dante_build_id: '421609'
+  # Merged PR 9518: (PR to fix PR 9458: Automated Dante Python Upgrade) add types-python-dateutil to requirenments
+  # 8e605042a3bb9252079c6ff98b6db9125a897731
+  dante_build_id: '424049'
 
-  # virgil 20221202.17
-  # Fri Dec  2 07:13:26 UTC 2022 -- Fri Dec  2 07:13:26 Australia 2022
+  # virgil 20221205.2
+  # Sun Dec  4 22:48:04 UTC 2022 -- Sun Dec  4 22:48:04 Australia 2022
   #
-  # Merged PR 9515: Provision new ESXi hosts
-  # 1f035bf68c2abeb9c32ad53556c2822518116a43
-  virgil_build_id: '421583'
+  # Merged PR 9474: Virgil - Put Kafka Hosts on demand for rebuilds
+  # b22d83e5e9afdcf26d1bebe8a49596503cc676b8
+  virgil_build_id: '423998'
