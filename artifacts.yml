@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221205.1
-  # Sun Dec  4 23:53:14 UTC 2022 -- Sun Dec  4 23:53:14 Australia 2022
+  # dante build artifact 20221205.2
+  # Mon Dec  5 01:41:47 UTC 2022 -- Mon Dec  5 01:41:47 Australia 2022
   #
-  # Merged PR 9518: (PR to fix PR 9458: Automated Dante Python Upgrade) add types-python-dateutil to requirenments
-  # 8e605042a3bb9252079c6ff98b6db9125a897731
-  dante_build_id: '424049'
+  # Merged PR 9479: Add TODO for personal token in code
+  # d5eea73cfe750a929ac66375b40fe7deeb78627c
+  dante_build_id: '424135'
 
   # virgil 20221205.2
   # Sun Dec  4 22:48:04 UTC 2022 -- Sun Dec  4 22:48:04 Australia 2022
