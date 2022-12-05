@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221205.4
-  # Mon Dec  5 07:19:24 UTC 2022 -- Mon Dec  5 07:19:24 Australia 2022
+  # dante build artifact 20221206.1
+  # Mon Dec  5 22:40:21 UTC 2022 -- Mon Dec  5 22:40:21 Australia 2022
   #
-  # Merged PR 9532: Update dante agent on stage
-  # 1261c099c0defd434cbefea28426296bc6bd05f2
-  dante_build_id: '424376'
+  # Merge pull request 9458 from dante_python_upgrade into master
+  # 5acd33bcd8a884353c140f386600a6a305870f7a
+  dante_build_id: '425012'
 
-  # virgil 20221205.2
-  # Sun Dec  4 22:48:04 UTC 2022 -- Sun Dec  4 22:48:04 Australia 2022
+  # virgil 20221206.5
+  # Mon Dec  5 22:47:35 UTC 2022 -- Mon Dec  5 22:47:35 Australia 2022
   #
-  # Merged PR 9474: Virgil - Put Kafka Hosts on demand for rebuilds
-  # b22d83e5e9afdcf26d1bebe8a49596503cc676b8
-  virgil_build_id: '423998'
+  # Merged PR 9548: Specify ports for C-00126
+  # 30b8d4e0a01d9090e6062f5de0df7729ce9e8665
+  virgil_build_id: '425022'
