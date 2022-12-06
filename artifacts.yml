@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221206.1
-  # Mon Dec  5 22:40:21 UTC 2022 -- Mon Dec  5 22:40:21 Australia 2022
+  # dante build artifact 20221206.2
+  # Tue Dec  6 00:30:30 UTC 2022 -- Tue Dec  6 00:30:30 Australia 2022
   #
-  # Merge pull request 9458 from dante_python_upgrade into master
-  # 5acd33bcd8a884353c140f386600a6a305870f7a
-  dante_build_id: '425012'
+  # Merged PR 9540: Dante - Fix Zookeeper Restarts
+  # 3aca31c48ede6d9b45ab3fe6e950839c1467fe46
+  dante_build_id: '425118'
 
   # virgil 20221206.5
   # Mon Dec  5 22:47:35 UTC 2022 -- Mon Dec  5 22:47:35 Australia 2022
