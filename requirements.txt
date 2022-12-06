@@ -52,7 +52,7 @@ dparse==0.6.2
     # via safety
 exceptiongroup==1.0.4
     # via pytest
-filelock==3.8.1
+filelock==3.8.2
     # via ansible-lint
 gitdb==4.0.10
     # via gitpython
