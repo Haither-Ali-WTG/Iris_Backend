@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221206.2
-  # Tue Dec  6 00:30:30 UTC 2022 -- Tue Dec  6 00:30:30 Australia 2022
+  # dante build artifact 20221206.3
+  # Tue Dec  6 02:50:05 UTC 2022 -- Tue Dec  6 02:50:05 Australia 2022
   #
-  # Merged PR 9540: Dante - Fix Zookeeper Restarts
-  # 3aca31c48ede6d9b45ab3fe6e950839c1467fe46
-  dante_build_id: '425118'
+  # Merged PR 9552: Conditionally fail on absent keys in key vault
+  # c7f0362cff80904db91386c539f1c3686d9a2d88
+  dante_build_id: '425215'
 
   # virgil 20221206.5
   # Mon Dec  5 22:47:35 UTC 2022 -- Mon Dec  5 22:47:35 Australia 2022
