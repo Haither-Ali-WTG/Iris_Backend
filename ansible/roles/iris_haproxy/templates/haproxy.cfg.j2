@@ -179,8 +179,8 @@ acl {{ name }} {{ test }}
 {% endfor %}
 
 
-{% for name, actionset in actions.items() | sort %}
-# {{ name }} ({{ actionset.fname }})
+{% for name, actionset in actions.items() | sort(attribute='1.order') %}
+# {{ name }} ({{ actionset.fname }}; order: {{ actionset.order }})
 {{ actionset.description | comment }}
 {% for action in actionset.actions %}
 {{ action }}
