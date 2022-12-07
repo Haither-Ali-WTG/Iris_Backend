@@ -7,9 +7,9 @@ variables:
   # 4e1d100bcb812bed95054b108d904fae273bab3b
   dante_build_id: '425686'
 
-  # virgil 20221206.5
-  # Mon Dec  5 22:47:35 UTC 2022 -- Mon Dec  5 22:47:35 Australia 2022
+  # virgil 20221207.7
+  # Wed Dec  7 02:19:12 UTC 2022 -- Wed Dec  7 02:19:12 Australia 2022
   #
-  # Merged PR 9548: Specify ports for C-00126
-  # 30b8d4e0a01d9090e6062f5de0df7729ce9e8665
-  virgil_build_id: '425022'
+  # Merged PR 9473: Virgil - Kafka AU2 Q1 to continuous
+  # 8358780db2f5b180e5959b9da2a7929ef36ee739
+  virgil_build_id: '426271'
