@@ -7,9 +7,9 @@ variables:
   # 4e1d100bcb812bed95054b108d904fae273bab3b
   dante_build_id: '425686'
 
-  # virgil 20221208.10
-  # Wed Dec  7 22:39:48 UTC 2022 -- Wed Dec  7 22:39:48 Australia 2022
+  # virgil 20221208.12
+  # Wed Dec  7 23:47:58 UTC 2022 -- Wed Dec  7 23:47:58 Australia 2022
   #
-  # Merge pull request 9585 from virgil_python_upgrade into master
-  # 21d1699ff7766e381c542864a6ebf25e26ecdd9c
-  virgil_build_id: '427077'
+  # Merged PR 9583: Add KVM profiles for US2
+  # b436da85e0478be80875b96491f5d8d41b52531b
+  virgil_build_id: '427138'
