@@ -28,7 +28,7 @@
 
 - name: Retrieve the stats page
   uri:
-    url: http://{{ ansible_host }}:{{ instance.stats_ports.web }}/;json
+    url: http://{{ ansible_host }}:{{ stats.ports.web }}/;json
     use_proxy: no
   register: stats_page
 
