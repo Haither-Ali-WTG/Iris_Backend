@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221208.4
-  # Thu Dec  8 03:30:05 UTC 2022 -- Thu Dec  8 03:30:05 Australia 2022
+  # dante build artifact 20221208.5
+  # Thu Dec  8 04:55:05 UTC 2022 -- Thu Dec  8 04:55:05 Australia 2022
   #
-  # Merged PR 9594: Attempt to workaround expired cri-o gpg key
-  # a602b9c5074a3510219a09d6a48e10ee91b2a993
-  dante_build_id: '427301'
+  # Merged PR 9567: Remove secrets from pipelines in dante
+  # 1c6369b4ad585b36e76f464a9f5e662c0895e5c3
+  dante_build_id: '427370'
 
   # virgil 20221208.14
   # Thu Dec  8 00:53:36 UTC 2022 -- Thu Dec  8 00:53:36 Australia 2022
