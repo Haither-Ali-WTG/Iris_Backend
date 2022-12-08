@@ -67,6 +67,7 @@
           }}
       loop:
         - instance
+        - stats
         - cipher
         - proxy
         - timeouts
