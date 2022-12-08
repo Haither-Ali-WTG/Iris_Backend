@@ -16,6 +16,10 @@
         tasks_from: setup.yml
       when: not simulation
 
+    - name: Setup rsyslog
+      include_role:
+        name: rsyslog
+
 - name: Setup the workers
   hosts: workers
   strategy: free
