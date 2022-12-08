@@ -1,5 +1,5 @@
 ---
-- name: "Collect sites data via winrm for {{ instance_name }}"
+- name: "Collect sites data via winrm for {{ cluster_name }}"
   changed_when: true
   delegate_to: localhost
   command: >
