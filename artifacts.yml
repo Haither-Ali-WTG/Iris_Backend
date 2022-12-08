@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221208.5
-  # Thu Dec  8 04:55:05 UTC 2022 -- Thu Dec  8 04:55:05 Australia 2022
+  # dante build artifact 20221209.1
+  # Thu Dec  8 16:26:21 UTC 2022 -- Thu Dec  8 16:26:21 Australia 2022
   #
-  # Merged PR 9567: Remove secrets from pipelines in dante
-  # 1c6369b4ad585b36e76f464a9f5e662c0895e5c3
-  dante_build_id: '427370'
+  # Merged PR 9533: Add DNS checks for mgmt RR records from Virgil
+  # 9e10ea364772108616309ed3bd7478899a39a026
+  dante_build_id: '427884'
 
-  # virgil 20221208.14
-  # Thu Dec  8 00:53:36 UTC 2022 -- Thu Dec  8 00:53:36 Australia 2022
+  # virgil 20221208.17
+  # Thu Dec  8 06:08:11 UTC 2022 -- Thu Dec  8 06:08:11 Australia 2022
   #
-  # Merged PR 9581: add new vlans for sand
-  # ee5621a368e4efa1f4ce32994a87c6b2528a849e
-  virgil_build_id: '427184'
+  # Merged PR 9589: Add OOB switches in cabs 209 and 210
+  # de064c73f549195fd4731a72daae5815e6e8c3a9
+  virgil_build_id: '427461'
