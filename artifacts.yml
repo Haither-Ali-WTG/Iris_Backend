@@ -7,9 +7,9 @@ variables:
   # 4e1d100bcb812bed95054b108d904fae273bab3b
   dante_build_id: '425686'
 
-  # virgil 20221208.12
-  # Wed Dec  7 23:47:58 UTC 2022 -- Wed Dec  7 23:47:58 Australia 2022
+  # virgil 20221208.14
+  # Thu Dec  8 00:53:36 UTC 2022 -- Thu Dec  8 00:53:36 Australia 2022
   #
-  # Merged PR 9583: Add KVM profiles for US2
-  # b436da85e0478be80875b96491f5d8d41b52531b
-  virgil_build_id: '427138'
+  # Merged PR 9581: add new vlans for sand
+  # ee5621a368e4efa1f4ce32994a87c6b2528a849e
+  virgil_build_id: '427184'
