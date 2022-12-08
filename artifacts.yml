@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221209.1
-  # Thu Dec  8 16:26:21 UTC 2022 -- Thu Dec  8 16:26:21 Australia 2022
+  # dante build artifact 20221209.2
+  # Thu Dec  8 22:28:45 UTC 2022 -- Thu Dec  8 22:28:45 Australia 2022
   #
-  # Merged PR 9533: Add DNS checks for mgmt RR records from Virgil
-  # 9e10ea364772108616309ed3bd7478899a39a026
-  dante_build_id: '427884'
+  # Merged PR 9599: Reverted expired crio gpg key workaround
+  # 3e26119ad052480834574fd11efa305fb2252327
+  dante_build_id: '428130'
 
-  # virgil 20221208.17
-  # Thu Dec  8 06:08:11 UTC 2022 -- Thu Dec  8 06:08:11 Australia 2022
+  # virgil 20221209.6
+  # Thu Dec  8 22:36:30 UTC 2022 -- Thu Dec  8 22:36:30 Australia 2022
   #
-  # Merged PR 9589: Add OOB switches in cabs 209 and 210
-  # de064c73f549195fd4731a72daae5815e6e8c3a9
-  virgil_build_id: '427461'
+  # Merge pull request 9612 from virgil_python_upgrade into master
+  # d4330cda6217429da2c87889764df8675b265e62
+  virgil_build_id: '428156'
