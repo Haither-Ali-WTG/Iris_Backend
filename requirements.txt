@@ -28,7 +28,7 @@ black==22.10.0
     # via ansible-lint
 bracex==2.3.post1
     # via wcmatch
-certifi==2022.9.24
+certifi==2022.12.7
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -90,7 +90,7 @@ netaddr==0.8.0
     # via -r requirements.in
 ntlm-auth==1.5.0
     # via requests-ntlm
-packaging==21.3
+packaging==22.0
     # via
     #   ansible-compat
     #   ansible-core
@@ -116,8 +116,6 @@ pygments==2.13.0
     # via rich
 pylint==2.15.8
     # via -r requirements.in
-pyparsing==3.0.9
-    # via packaging
 pyrsistent==0.19.2
     # via jsonschema
 pytest==7.2.0
@@ -159,7 +157,7 @@ ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
 s3cmd==2.3.0
     # via -r requirements.in
-safety==2.3.3
+safety==2.3.4
     # via -r requirements.in
 six==1.16.0
     # via
