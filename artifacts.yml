@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221209.3
-  # Fri Dec  9 02:04:48 UTC 2022 -- Fri Dec  9 02:04:48 Australia 2022
+  # dante build artifact 20221210.1
+  # Fri Dec  9 16:38:07 UTC 2022 -- Fri Dec  9 16:38:07 Australia 2022
   #
-  # Merged PR 9576: Increase ISO Builder disk size
-  # eda89681ff968f1feaaf3741386e2aef16af1a5a
-  dante_build_id: '428314'
+  # Merged PR 9541: (minor) Fix broken pipeline
+  # fd58fca7f047f33a7a936b04facf4a6781c212fe
+  dante_build_id: '428892'
 
-  # virgil 20221209.10
-  # Fri Dec  9 00:25:21 UTC 2022 -- Fri Dec  9 00:25:21 Australia 2022
+  # virgil 20221209.12
+  # Fri Dec  9 06:35:46 UTC 2022 -- Fri Dec  9 06:35:46 Australia 2022
   #
-  # Merged PR 9621: Set Edge Core swp53 / swp54 to 10G speed as a workaround
-  # 329c677976906337e6fcd5838d44b5ae175d58f4
-  virgil_build_id: '428232'
+  # Merged PR 9595: Updated Teardownlist
+  # 1e999f9eaf1588d91c7f03a86e73026bf7c93546
+  virgil_build_id: '428500'
