@@ -35,10 +35,10 @@
 
 - name: Populate dynamic backends variable for worker
   set_fact:
-    dynamic_backends: "{{ hostvars['localhost'].complete_iis_data.instances[cluster_name] }}"
+    dynamic_backends: "{{ hostvars['localhost'].complete_iis_data.clusters[cluster_name] }}"
   when:
     - "'complete_iis_data' in hostvars['localhost']"
-    - "cluster_name in hostvars['localhost'].complete_iis_data.instances"
+    - "cluster_name in hostvars['localhost'].complete_iis_data.clusters"
 
 - name: Template out the haproxy config
   template:
