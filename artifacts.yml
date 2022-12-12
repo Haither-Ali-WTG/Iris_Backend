@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221210.1
-  # Fri Dec  9 16:38:07 UTC 2022 -- Fri Dec  9 16:38:07 Australia 2022
+  # dante build artifact 20221212.1
+  # Mon Dec 12 01:23:26 UTC 2022 -- Mon Dec 12 01:23:26 Australia 2022
   #
-  # Merged PR 9541: (minor) Fix broken pipeline
-  # fd58fca7f047f33a7a936b04facf4a6781c212fe
-  dante_build_id: '428892'
+  # Merged PR 9641: Fix kubeadm init dependency issue
+  # ddaad412313ed5837f9a16d4ba9e6dca7172cb1e
+  dante_build_id: '431201'
 
   # virgil 20221212.4
   # Sun Dec 11 22:51:42 UTC 2022 -- Sun Dec 11 22:51:42 Australia 2022
