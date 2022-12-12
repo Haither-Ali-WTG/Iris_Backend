@@ -42,9 +42,9 @@ ssl-server-verify none
 # Various other settings, mostly uniform although maxconn is sometimes higher.
 
 maxconn {{ instance.maxconn | default(200000) }}
-stats socket {{ instance.stats_ports.file }} mode 660 expose-fd listeners level admin
+stats socket {{ stats.ports.file }} mode 660 expose-fd listeners level admin
 server-state-file /var/run/haproxy/global-state
-stats socket 127.0.0.1:{{ instance.stats_ports.socket }} level admin
+stats socket 127.0.0.1:{{ stats.ports.socket }} level admin
 stats timeout 2m
 
 
@@ -105,7 +105,7 @@ log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ func
 
 
 listen stats
-bind :{{ instance.stats_ports.web }}
+bind :{{ stats.ports.web }}
 mode http
 stats enable
 stats show-node
@@ -154,7 +154,7 @@ capture request header user-agent len 150
 
 
 {% if not simulation %}
-bind {% for item in instance.frontend_ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %}
+bind {% for item in proxy.ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %}
 {% else %}
 bind :{{ haproxy_http_port }}
 {% endif %}

@@ -39,7 +39,7 @@
             | combine(machine[item] | default({}), recursive=true)
             | combine(cluster_machine_overrides[item] | default({}), recursive=true)
           }}
-      loop: [instance, cipher, proxy, timeouts]
+      loop: [instance, stats, cipher, proxy, timeouts]
 
     - name: Collect min facts
       ansible.builtin.setup:

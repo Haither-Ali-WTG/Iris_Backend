@@ -7,15 +7,12 @@ worker_defaults:
     processes: 1
     threads: 8
     maxconn: 200000
-    stats_ports:
+
+  stats:
+    ports:
       file: /var/run/haproxy/haproxy.sock
       socket: 81
       web: 8001
-    certificates: []
-    frontend_ports:
-      http:
-        plaintext: [80]
-        ssl: [443]
 
   cipher:
     suites: [TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256]
@@ -30,24 +27,13 @@ worker_defaults:
 
   proxy:
     mode: http
+    ports:
+      http:
+        plaintext: [80]
+        ssl: [443]
     maxconn: 200000
     fullconn: 5000
     balance: leastconn
-    acls: []
-    # - description: ...
-    #   name: ...
-    #   criterion: ...
-    #   flags: ...
-    #   operator: ...
-    #   value: ...
-
-    actions: []
-    # - description: ...
-    #   name: ...
-    #   criterion: ...
-    #   flags: ...
-    #   operator: ...
-    #   value: ...
 
   timeouts:
     client: 60
