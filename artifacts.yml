@@ -7,9 +7,9 @@ variables:
   # ddaad412313ed5837f9a16d4ba9e6dca7172cb1e
   dante_build_id: '431201'
 
-  # virgil 20221212.4
-  # Sun Dec 11 22:51:42 UTC 2022 -- Sun Dec 11 22:51:42 Australia 2022
+  # virgil 20221213.7
+  # Mon Dec 12 22:46:51 UTC 2022 -- Mon Dec 12 22:46:51 Australia 2022
   #
-  # Merged PR 9633: Correct BMC MAC/SN of C-00280
-  # de63b299ed9da422a633ddf0613a7967703e3e39
-  virgil_build_id: '431091'
+  # Merged PR 9644: Add-vlan-for-security
+  # af334b4c51dc017d279b5f3ab2bab12a61e9c71d
+  virgil_build_id: '432077'
