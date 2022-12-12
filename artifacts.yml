@@ -7,9 +7,9 @@ variables:
   # fd58fca7f047f33a7a936b04facf4a6781c212fe
   dante_build_id: '428892'
 
-  # virgil 20221209.12
-  # Fri Dec  9 06:35:46 UTC 2022 -- Fri Dec  9 06:35:46 Australia 2022
+  # virgil 20221212.4
+  # Sun Dec 11 22:51:42 UTC 2022 -- Sun Dec 11 22:51:42 Australia 2022
   #
-  # Merged PR 9595: Updated Teardownlist
-  # 1e999f9eaf1588d91c7f03a86e73026bf7c93546
-  virgil_build_id: '428500'
+  # Merged PR 9633: Correct BMC MAC/SN of C-00280
+  # de63b299ed9da422a633ddf0613a7967703e3e39
+  virgil_build_id: '431091'
