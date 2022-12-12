@@ -1,5 +1,5 @@
 ---
-- name: Load backends
+- name: Load static backends
   hosts: localhost
   strategy: free
   gather_facts: no
