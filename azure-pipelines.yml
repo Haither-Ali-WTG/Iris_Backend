@@ -8,6 +8,8 @@ variables:
     value: dante
   - name: azure_kv_name
     value: kv-wtg-test
+  - name: mgmt_keyvault_name
+    value: kv-wtg-dante-sim
 
 stages:
   - stage: Tests_and_lint
@@ -132,7 +134,9 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true"
+                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - task: Ansible@0
             displayName: 'Cleanup'
