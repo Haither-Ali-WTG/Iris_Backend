@@ -133,6 +133,8 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - task: Ansible@0
             displayName: 'Cleanup'
