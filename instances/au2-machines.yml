@@ -9,6 +9,8 @@ machines:
       # fake IP to be replaced with prod
       ansible_host: 192.168.100.101
       os: ubuntu
+      sysctl_values:
+        net.ipv4.tcp_synack_retries: 4
     au2_machine3:
       # fake IP to be replaced with prod
       ansible_host: 192.168.100.101
