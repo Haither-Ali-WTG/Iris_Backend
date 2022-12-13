@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221212.1
-  # Mon Dec 12 01:23:26 UTC 2022 -- Mon Dec 12 01:23:26 Australia 2022
+  # dante build artifact 20221213.2
+  # Tue Dec 13 01:41:22 UTC 2022 -- Tue Dec 13 12:41:22 AEDT 2022
   #
-  # Merged PR 9641: Fix kubeadm init dependency issue
-  # ddaad412313ed5837f9a16d4ba9e6dca7172cb1e
-  dante_build_id: '431201'
+  # Merged PR 9620: Removed environment variables from pipelines
+  # f4ddbcfea539df3b27727868dd772425b7e9d8fe
+  dante_build_id: '432230'
 
-  # virgil 20221213.7
-  # Mon Dec 12 22:46:51 UTC 2022 -- Mon Dec 12 22:46:51 Australia 2022
+  # virgil 20221213.16
+  # Tue Dec 13 01:31:44 UTC 2022 -- Tue Dec 13 12:31:44 AEDT 2022
   #
-  # Merged PR 9644: Add-vlan-for-security
-  # af334b4c51dc017d279b5f3ab2bab12a61e9c71d
-  virgil_build_id: '432077'
+  # Merged PR 9577: Virgil - Kafka Queue Q0 AU2 to continuous
+  # cdfc2d51f7fc259c3327e2754a267038412be007
+  virgil_build_id: '432225'
