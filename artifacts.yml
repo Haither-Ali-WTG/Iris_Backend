@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221214.1
-  # Tue Dec 13 21:40:34 UTC 2022 -- Wed Dec 14 08:40:34 AEDT 2022
+  # dante build artifact 20221214.2
+  # Wed Dec 14 03:35:15 UTC 2022 -- Wed Dec 14 14:35:15 AEDT 2022
   #
-  # Merged PR 9661: Fix rebuild agents pipeline
-  # 0fa5941c4acea4ee5d26931330a729dec8f7d766
-  dante_build_id: '433041'
+  # Merged PR 9574: Keyvault certificate checker - adjust fields
+  # 71c798ede175502e1b3aa483553c82fbf85a053c
+  dante_build_id: '433322'
 
   # virgil 20221214.7
   # Wed Dec 14 01:24:25 UTC 2022 -- Wed Dec 14 12:24:25 AEDT 2022
