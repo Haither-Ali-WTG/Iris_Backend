@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221213.2
-  # Tue Dec 13 01:41:22 UTC 2022 -- Tue Dec 13 12:41:22 AEDT 2022
+  # dante build artifact 20221214.1
+  # Tue Dec 13 21:40:34 UTC 2022 -- Wed Dec 14 08:40:34 AEDT 2022
   #
-  # Merged PR 9620: Removed environment variables from pipelines
-  # f4ddbcfea539df3b27727868dd772425b7e9d8fe
-  dante_build_id: '432230'
+  # Merged PR 9661: Fix rebuild agents pipeline
+  # 0fa5941c4acea4ee5d26931330a729dec8f7d766
+  dante_build_id: '433041'
 
-  # virgil 20221213.16
-  # Tue Dec 13 01:31:44 UTC 2022 -- Tue Dec 13 12:31:44 AEDT 2022
+  # virgil 20221214.4
+  # Tue Dec 13 22:46:04 UTC 2022 -- Wed Dec 14 09:46:04 AEDT 2022
   #
-  # Merged PR 9577: Virgil - Kafka Queue Q0 AU2 to continuous
-  # cdfc2d51f7fc259c3327e2754a267038412be007
-  virgil_build_id: '432225'
+  # Merged PR 9658: Update Ubuntu version
+  # 351f0d3d71e3bf91fd8e499d45e4dcb40a8d5a4c
+  virgil_build_id: '433094'
