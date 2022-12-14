@@ -7,9 +7,9 @@ variables:
   # 0fa5941c4acea4ee5d26931330a729dec8f7d766
   dante_build_id: '433041'
 
-  # virgil 20221214.4
-  # Tue Dec 13 22:46:04 UTC 2022 -- Wed Dec 14 09:46:04 AEDT 2022
+  # virgil 20221214.7
+  # Wed Dec 14 01:24:25 UTC 2022 -- Wed Dec 14 12:24:25 AEDT 2022
   #
-  # Merged PR 9658: Update Ubuntu version
-  # 351f0d3d71e3bf91fd8e499d45e4dcb40a8d5a4c
-  virgil_build_id: '433094'
+  # Merged PR 9664: Disable bonds on C-00042 and C-00056 VMware hosts
+  # f823f326c2810eb1c34594ac10e113489a2a54fa
+  virgil_build_id: '433213'
