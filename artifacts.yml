@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221214.2
-  # Wed Dec 14 03:35:15 UTC 2022 -- Wed Dec 14 14:35:15 AEDT 2022
+  # dante build artifact 20221215.2
+  # Thu Dec 15 02:19:04 UTC 2022 -- Thu Dec 15 13:19:04 AEDT 2022
   #
-  # Merged PR 9574: Keyvault certificate checker - adjust fields
-  # 71c798ede175502e1b3aa483553c82fbf85a053c
-  dante_build_id: '433322'
+  # Merged PR 9683: Use Virgil Data for TPM Config
+  # f9a417e21252d63ce135568700458613a149e2de
+  dante_build_id: '434260'
 
-  # virgil 20221214.19
-  # Wed Dec 14 07:38:03 UTC 2022 -- Wed Dec 14 18:38:03 AEDT 2022
+  # virgil 20221215.7
+  # Thu Dec 15 01:15:07 UTC 2022 -- Thu Dec 15 12:15:07 AEDT 2022
   #
-  # Merged PR 9681: Move TPM Config Ops to Virgil
-  # a6b39ef6ba7466646338fd7a5d1a8b9835744197
-  virgil_build_id: '433497'
+  # Merged PR 9685: Make pytest a little more verbose
+  # e0a8a3cc4db7ce175c0c84ce426ca0d1cedec01a
+  virgil_build_id: '434211'
