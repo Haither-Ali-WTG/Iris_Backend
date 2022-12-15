@@ -69,5 +69,5 @@ worker_defaults:
       net.netfilter.nf_conntrack_tcp_timeout_fin_wait: 60
       net.netfilter.nf_conntrack_tcp_timeout_time_wait: 60
       net.netfilter.nf_conntrack_max: 524288
-    rhel: ~
-    ubuntu: ~
+    rhel: {}
+    ubuntu: {}

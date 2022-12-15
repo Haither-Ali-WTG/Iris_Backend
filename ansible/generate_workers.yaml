@@ -31,7 +31,7 @@
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
         virgil_os_variant: "{{ machine.os }}"
-        sysctl_values: "{{ machine.sysctl_values | default([]) }}"
+        sysctl_values: "{{ machine.sysctl_values | default({}) }}"
 
       loop: >-
         [
