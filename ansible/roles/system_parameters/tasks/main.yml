@@ -6,6 +6,9 @@
     state: present
     sysctl_set: true
   loop: "{{ worker_defaults.sysctl_values.common | dict2items }}"
+  when:
+    - item.key not in worker_defaults.sysctl_values[virgil_os_variant]
+    - item.key not in sysctl_values
   become: yes
 
 - name: Deploy os specific sysctl values
@@ -15,6 +18,7 @@
     state: present
     sysctl_set: true
   loop: "{{ worker_defaults.sysctl_values[virgil_os_variant] | dict2items }}"
+  when: item.key not in sysctl_values
   become: yes
 
 - name: Deploy machine specific sysctl values
