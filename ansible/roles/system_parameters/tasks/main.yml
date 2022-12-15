@@ -1,6 +1,6 @@
 ---
 - name: Deploy common sysctl values
-  sysctl:
+  ansible.posix.sysctl:
     name: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
@@ -9,7 +9,7 @@
   become: yes
 
 - name: Deploy os specific sysctl values
-  sysctl:
+  ansible.posix.sysctl:
     name: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
@@ -18,7 +18,7 @@
   become: yes
 
 - name: Deploy machine specific sysctl values
-  sysctl:
+  ansible.posix.sysctl:
     name: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
