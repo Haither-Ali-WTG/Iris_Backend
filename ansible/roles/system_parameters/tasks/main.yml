@@ -10,5 +10,5 @@
       worker_defaults.sysctl_values.common
       | combine(worker_defaults.sysctl_values[virgil_os_variant])
       | dict2items
-    }}  
+    }}
   become: yes
