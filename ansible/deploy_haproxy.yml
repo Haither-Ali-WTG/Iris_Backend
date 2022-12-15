@@ -20,6 +20,10 @@
       include_role:
         name: rsyslog
 
+    - name: Apply system parameters
+      include_role:
+        name: system_parameters
+
 - name: Setup the workers
   hosts: workers
   strategy: free

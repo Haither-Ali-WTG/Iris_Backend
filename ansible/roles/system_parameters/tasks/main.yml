@@ -1,0 +1,15 @@
+---
+- name: Deploy sysctl values
+  ansible.posix.sysctl:
+    name: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+    sysctl_set: true
+  loop: >-
+    {{
+      global_sysctl_values.common
+      | combine(global_sysctl_values[os])
+      | combine(sysctl_values | default({}))
+      | dict2items
+    }}
+  become: yes
