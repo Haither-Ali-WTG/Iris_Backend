@@ -1,31 +1,14 @@
 ---
-- name: Deploy common sysctl values
+- name: Deploy sysctl values
   ansible.posix.sysctl:
     name: "{{ item.key }}"
     value: "{{ item.value }}"
     state: present
     sysctl_set: true
-  loop: "{{ worker_defaults.sysctl_values.common | dict2items }}"
-  when:
-    - item.key not in worker_defaults.sysctl_values[virgil_os_variant]
-    - item.key not in sysctl_values
-  become: yes
-
-- name: Deploy os specific sysctl values
-  ansible.posix.sysctl:
-    name: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-    sysctl_set: true
-  loop: "{{ worker_defaults.sysctl_values[virgil_os_variant] | dict2items }}"
-  when: item.key not in sysctl_values
-  become: yes
-
-- name: Deploy machine specific sysctl values
-  ansible.posix.sysctl:
-    name: "{{ item.key }}"
-    value: "{{ item.value }}"
-    state: present
-    sysctl_set: true
-  loop: "{{ sysctl_values | dict2items }}"
+  loop: >-
+    {{
+      worker_defaults.sysctl_values.common
+      | combine(worker_defaults.sysctl_values[virgil_os_variant])
+      | dict2items
+    }}  
   become: yes
