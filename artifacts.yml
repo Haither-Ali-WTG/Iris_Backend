@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221215.2
-  # Thu Dec 15 02:19:04 UTC 2022 -- Thu Dec 15 13:19:04 AEDT 2022
+  # dante build artifact 20221216.3
+  # Thu Dec 15 19:13:04 UTC 2022 -- Fri Dec 16 06:13:04 AEDT 2022
   #
-  # Merged PR 9683: Use Virgil Data for TPM Config
-  # f9a417e21252d63ce135568700458613a149e2de
-  dante_build_id: '434260'
+  # Merged PR 9619: Fixed typo in rsyslog readme
+  # f7e99257a0e3c9707d166f129cd58a112e99cee9
+  dante_build_id: '435005'
 
-  # virgil 20221215.7
-  # Thu Dec 15 01:15:07 UTC 2022 -- Thu Dec 15 12:15:07 AEDT 2022
+  # virgil 20221216.2
+  # Thu Dec 15 16:10:01 UTC 2022 -- Fri Dec 16 03:10:01 AEDT 2022
   #
-  # Merged PR 9685: Make pytest a little more verbose
-  # e0a8a3cc4db7ce175c0c84ce426ca0d1cedec01a
-  virgil_build_id: '434211'
+  # Merged PR 9652: New vlan-security-US2
+  # 374d57a72ab695699a6aafe6dcc5c30910a7cfb4
+  virgil_build_id: '434877'
