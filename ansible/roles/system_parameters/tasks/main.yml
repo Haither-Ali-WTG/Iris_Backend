@@ -1,0 +1,27 @@
+---
+- name: Deploy common sysctl values
+  sysctl:
+    name: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+    sysctl_set: true
+  loop: "{{ worker_defaults.sysctl_values.common | dict2items }}"
+  become: yes
+
+- name: Deploy os specific sysctl values
+  sysctl:
+    name: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+    sysctl_set: true
+  loop: "{{ worker_defaults.sysctl_values[virgil_os_variant] | dict2items }}"
+  become: yes
+
+- name: Deploy os specific sysctl values
+  sysctl:
+    name: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+    sysctl_set: true
+  loop: "{{ sysctl_values | dict2items }}"
+  become: yes
