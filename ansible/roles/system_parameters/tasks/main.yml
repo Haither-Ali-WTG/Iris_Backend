@@ -17,7 +17,7 @@
   loop: "{{ worker_defaults.sysctl_values[virgil_os_variant] | dict2items }}"
   become: yes
 
-- name: Deploy os specific sysctl values
+- name: Deploy machine specific sysctl values
   sysctl:
     name: "{{ item.key }}"
     value: "{{ item.value }}"
