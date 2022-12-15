@@ -7,9 +7,9 @@
     sysctl_set: true
   loop: >-
     {{
-      worker_defaults.sysctl_values.common
-      | combine(worker_defaults.sysctl_values[virgil_os_variant])
-      | combine(sysctl_values)
+      global_sysctl_values.common
+      | combine(global_sysctl_values[os])
+      | combine(sysctl_values | default({}))
       | dict2items
     }}
   become: yes
