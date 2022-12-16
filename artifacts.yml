@@ -7,9 +7,9 @@ variables:
   # b858d93c566b072f12e3c095abce858777851b84
   dante_build_id: '435252'
 
-  # virgil 20221216.7
-  # Fri Dec 16 01:36:39 UTC 2022 -- Fri Dec 16 12:36:39 AEDT 2022
+  # virgil 20221216.9
+  # Fri Dec 16 01:53:59 UTC 2022 -- Fri Dec 16 12:53:59 AEDT 2022
   #
-  # Merged PR 9708: TPM Ops for C54
-  # e936efb4d39b47d7e1bb81cf2e8af63f2aaff925
-  virgil_build_id: '435270'
+  # Merged PR 9702: Correct MACs for C-00315 and C-00316
+  # 4e442753bf43c3505bb7571c3c394fa3c1adf601
+  virgil_build_id: '435293'
