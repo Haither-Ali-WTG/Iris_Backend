@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221216.3
-  # Thu Dec 15 19:13:04 UTC 2022 -- Fri Dec 16 06:13:04 AEDT 2022
+  # dante build artifact 20221216.4
+  # Fri Dec 16 01:20:59 UTC 2022 -- Fri Dec 16 12:20:59 AEDT 2022
   #
-  # Merged PR 9619: Fixed typo in rsyslog readme
-  # f7e99257a0e3c9707d166f129cd58a112e99cee9
-  dante_build_id: '435005'
+  # Merge pull request 9695 from dante_artifact_upgrade into master
+  # b858d93c566b072f12e3c095abce858777851b84
+  dante_build_id: '435252'
 
-  # virgil 20221216.2
-  # Thu Dec 15 16:10:01 UTC 2022 -- Fri Dec 16 03:10:01 AEDT 2022
+  # virgil 20221216.7
+  # Fri Dec 16 01:36:39 UTC 2022 -- Fri Dec 16 12:36:39 AEDT 2022
   #
-  # Merged PR 9652: New vlan-security-US2
-  # 374d57a72ab695699a6aafe6dcc5c30910a7cfb4
-  virgil_build_id: '434877'
+  # Merged PR 9708: TPM Ops for C54
+  # e936efb4d39b47d7e1bb81cf2e8af63f2aaff925
+  virgil_build_id: '435270'
