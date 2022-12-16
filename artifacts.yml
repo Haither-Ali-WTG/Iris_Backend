@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221216.4
-  # Fri Dec 16 01:20:59 UTC 2022 -- Fri Dec 16 12:20:59 AEDT 2022
+  # dante build artifact 20221216.5
+  # Fri Dec 16 03:14:38 UTC 2022 -- Fri Dec 16 14:14:38 AEDT 2022
   #
-  # Merge pull request 9695 from dante_artifact_upgrade into master
-  # b858d93c566b072f12e3c095abce858777851b84
-  dante_build_id: '435252'
+  # Merged PR 9397: Dante - Kafka Add Jolokia Agent Metrics
+  # 3df621294f36f64207d7128775ad380e8e641a8e
+  dante_build_id: '435357'
 
   # virgil 20221216.9
   # Fri Dec 16 01:53:59 UTC 2022 -- Fri Dec 16 12:53:59 AEDT 2022
