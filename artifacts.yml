@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221220.4
-  # Tue Dec 20 04:53:11 UTC 2022 -- Tue Dec 20 15:53:11 AEDT 2022
+  # dante build artifact 20221220.5
+  # Tue Dec 20 08:12:17 UTC 2022 -- Tue Dec 20 19:12:17 AEDT 2022
   #
-  # Merged PR 9741: Install krb5 dev libraries for python env on mgmt nodes
-  # 6ba2c3fd48f3273f38f02bc697fff5e2b58f18c7
-  dante_build_id: '439246'
+  # Merged PR 9675: Bind fixes - Delete k8s deployment + duplicate listen-on
+  # 5002c771edf9669f637486b360c9abf6419da774
+  dante_build_id: '439409'
 
   # virgil 20221220.4
   # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
