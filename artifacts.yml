@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221220.3
-  # Tue Dec 20 03:18:22 UTC 2022 -- Tue Dec 20 14:18:22 AEDT 2022
+  # dante build artifact 20221220.4
+  # Tue Dec 20 04:53:11 UTC 2022 -- Tue Dec 20 15:53:11 AEDT 2022
   #
-  # Merged PR 9730: Dante - Remove schedule from container rebuild pipeline + Add descriptions
-  # 8999d268347182ec6521799a409b3a65d4b7d910
-  dante_build_id: '439169'
+  # Merged PR 9741: Install krb5 dev libraries for python env on mgmt nodes
+  # 6ba2c3fd48f3273f38f02bc697fff5e2b58f18c7
+  dante_build_id: '439246'
 
   # virgil 20221220.4
   # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
