@@ -35,7 +35,8 @@
       loop: >-
         [
           {% for clustered_instance_name in groups['clustered_instances'] %}
-            {% for machine_name, machine_overrides in hostvars[clustered_instance_name].clustered_instance_machines.items() %}
+            {% for machine_name, machine_overrides
+               in hostvars[clustered_instance_name].clustered_instance_machines.items() %}
               {
                 'machine_name': '{{ machine_name }}',
                 'clustered_instance_name': '{{ clustered_instance_name }}',

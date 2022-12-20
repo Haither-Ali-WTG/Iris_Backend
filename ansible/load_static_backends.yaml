@@ -19,7 +19,8 @@
     - name: Distribute static backends to clustered instances
       set_fact:
         static_backends: >-
-          {{ all_static_backends | dict2items | selectattr('value.clustered_instances', 'contains', item) | items2dict }}
+          {{ all_static_backends | dict2items
+             | selectattr('value.clustered_instances', 'contains', item) | items2dict }}
       delegate_to: "{{ item }}"
       delegate_facts: yes
       loop: >-
