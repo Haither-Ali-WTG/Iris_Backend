@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221220.1
-  # Mon Dec 19 23:17:53 UTC 2022 -- Tue Dec 20 10:17:53 AEDT 2022
+  # dante build artifact 20221220.2
+  # Tue Dec 20 00:53:29 UTC 2022 -- Tue Dec 20 11:53:29 AEDT 2022
   #
-  # Merge pull request 9737 from dante_python_upgrade into master
-  # 3e6d9f84fb66ea8492c9019d6de3fb702fe7fb77
-  dante_build_id: '438971'
+  # Merged PR 9729: Dante - Remote Secret Logging in Container Runner
+  # 2414454f33a8f56c5733f872ae97b91a65893d0b
+  dante_build_id: '439043'
 
-  # virgil 20221220.2
-  # Mon Dec 19 22:49:58 UTC 2022 -- Tue Dec 20 09:49:58 AEDT 2022
+  # virgil 20221220.4
+  # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
   #
-  # Merge pull request 9734 from virgil_python_upgrade into master
-  # 19eec312426a877f21e2c8f52080792298b52334
-  virgil_build_id: '438944'
+  # Merged PR 9713: Disable bond on vmware hosts Group D
+  # f19812e59bdd68c0b9dc7ff857d33ff82de2cdf2
+  virgil_build_id: '439068'
