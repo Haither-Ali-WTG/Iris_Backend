@@ -7,7 +7,7 @@
       set_fact:
         certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
       when: '"certificates" in hostvars[item]'
-      loop: "{{ groups['clusters'] }}"
+      loop: "{{ groups['clustered_instances'] }}"
 
     - name: Get certificate
       include_role:

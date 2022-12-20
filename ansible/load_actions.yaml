@@ -1,6 +1,6 @@
 ---
 - name: Load actions
-  hosts: clusters
+  hosts: clustered_instances
   strategy: linear  # we use run_once
   gather_facts: no
   force_handlers: yes
@@ -20,7 +20,7 @@
         common_actions: "{{ labelled }}"
       run_once: yes
 
-    - name: Load cluster actions
+    - name: Load clustered instance actions
       vars:
         fname: "{{ inventory_hostname }}.yaml"
         read: >-

@@ -1,6 +1,6 @@
 ---
 - name: Load ACLs
-  hosts: clusters
+  hosts: clustered_instances
   strategy: linear  # we use run_once
   gather_facts: no
   force_handlers: yes
@@ -20,7 +20,7 @@
         common_acls: "{{ labelled }}"
       run_once: yes
 
-    - name: Load cluster ACLs
+    - name: Load clustered instance ACLs
       vars:
         fname: "{{ inventory_hostname }}.yaml"
         read: >-

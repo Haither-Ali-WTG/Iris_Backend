@@ -1,12 +1,12 @@
 ---
 # TODO figure out how to spread the definition over multiple files
-clusters:
+clustered_instances:
   hosts:
     au1prodfrontend1:
-      # per-cluster settings (overrides) go here, for example:
+      # per-clustered-instance settings (overrides) go here, for example:
       proxy:
         maxconn: 20000
-      cluster_machines:
+      clustered_instance_machines:
         au2_machine2: ~
         # per-machine settings (overrides) would go here
         #  haproxy_version: x.y.z
@@ -21,10 +21,10 @@ clusters:
         - star-wisegrid-net
 
     au2prodceph1:
-      # per-cluster settings (overrides) go here, for example:
+      # per-clustered-instance settings (overrides) go here, for example:
       proxy:
         maxconn: 20000
-      cluster_machines:
+      clustered_instance_machines:
         au2_machine1: ~
         # per-machine settings (overrides) would go here
         #  haproxy_version: x.y.z
@@ -38,10 +38,10 @@ clusters:
         - star-cargowise-com
 
     au2corprdg:
-      # per-cluster settings (overrides) go here, for example:
+      # per-clustered-instance settings (overrides) go here, for example:
       proxy:
         maxconn: 20000
-      cluster_machines:
+      clustered_instance_machines:
         au2_machine1: ~
         au2_machine3: ~
       iis_servers: []

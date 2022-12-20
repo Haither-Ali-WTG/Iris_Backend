@@ -14,11 +14,11 @@
   set_fact:
     certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
   when:
-    - inventory_hostname in hostvars[item].cluster_machines
+    - inventory_hostname in hostvars[item].clustered_instance_machines
     - '"certificates" in hostvars[item]'
-  loop: "{{ groups['clusters'] }}"
+  loop: "{{ groups['clustered_instances'] }}"
 
-- name: Copy certificates for cluster
+- name: Copy certificates for clustered instance
   copy:
     src: "certificates/{{ item }}.pem"
     dest: "{{ working_dir }}/certs/"
@@ -30,9 +30,9 @@
   set_fact:
     tests_list: "{{ tests_list | default([]) + hostvars[item].tests }}"
   when:
-    - inventory_hostname in hostvars[item].cluster_machines
+    - inventory_hostname in hostvars[item].clustered_instance_machines
     - '"tests" in hostvars[item]'
-  loop: "{{ groups['clusters'] }}"
+  loop: "{{ groups['clustered_instances'] }}"
 
 - name: Calculate all status codes to return
   set_fact:

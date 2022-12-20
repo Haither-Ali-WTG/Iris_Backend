@@ -21,12 +21,12 @@
         name: iris_haproxy
         tasks_from: check_workers.yml
 
-- name: Per-cluster checks
-  hosts: clusters
+- name: Per-clustered-instance checks
+  hosts: clustered_instances
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
     - name: Placeholder
       debug:
-        msg: per-cluster checks
+        msg: per-clustered_instance checks

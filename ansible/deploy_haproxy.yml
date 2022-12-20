@@ -34,14 +34,14 @@
       vars:
         the_worker: "{{ hostvars[inventory_hostname] }}"
         machine: "{{ hostvars[machine_name] }}"
-        cluster: "{{ hostvars[cluster_name] }}"
+        clustered_instance: "{{ hostvars[clustered_instance_name] }}"
       set_fact:
         "{{ item }}": >-
           {{
             the_worker[item]
-            | combine(cluster[item] | default({}), recursive=true)
+            | combine(clustered_instance[item] | default({}), recursive=true)
             | combine(machine[item] | default({}), recursive=true)
-            | combine(cluster_machine_overrides[item] | default({}), recursive=true)
+            | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
           }}
       loop: [instance, stats, cipher, proxy, timeouts]
 
@@ -70,8 +70,8 @@
       include_role:
         name: ceph_connection_setup
 
-- name: Per-cluster setup (if needed)
-  hosts: clusters
+- name: Per-clustered-instance setup (if needed)
+  hosts: clustered_instances
   strategy: free
   gather_facts: no
   force_handlers: yes

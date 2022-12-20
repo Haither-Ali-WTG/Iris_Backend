@@ -1,6 +1,6 @@
 ---
 rdg.wisetechglobal.com:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
@@ -20,7 +20,7 @@ rdg.wisetechglobal.com:
       port: 80
 
 rdg-au2.wisetechglobal.com:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
@@ -39,7 +39,7 @@ rdg-au2.wisetechglobal.com:
       port: 80
 
 rdg-au2.wisetechglobal.cn:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
@@ -58,7 +58,7 @@ rdg-au2.wisetechglobal.cn:
       port: 80
 
 rdg.wisetechglobal.cn:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
@@ -77,7 +77,7 @@ rdg.wisetechglobal.cn:
       port: 80
 
 rdgapps.wisetechglobal.com:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   balance: source
   fullconn: 1000
@@ -96,7 +96,7 @@ rdgapps.wisetechglobal.com:
       settings: check ssl backup
 
 sandtsg.wtg.zone:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
@@ -110,7 +110,7 @@ sandtsg.wtg.zone:
       port: 80
 
 sandtsg-token-based.wtg.zone:
-  clusters: [au2corprdg]
+  clustered_instances: [au2corprdg]
   health_check: /
   cookie:
     name: RDPWEB
