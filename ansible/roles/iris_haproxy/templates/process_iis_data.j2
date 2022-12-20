@@ -1,8 +1,8 @@
-clusters:
-{% for cluster in cluster_names %}
-  {{ cluster }}:
+clustered_instances:
+{% for clustered_instance in clustered_instance_names %}
+  {{ clustered_instance }}:
 {%  for file in iis_files.files %}
-{%    if cluster in (file.path | split('/')) %}
+{%    if clustered_instance in (file.path | split('/')) %}
     {{ file.path | split('/') | last }}:
       {{ lookup('file', file.path) | from_yaml }}
 {%    endif %}

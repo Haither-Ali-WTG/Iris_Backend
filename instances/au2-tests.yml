@@ -1,5 +1,5 @@
 ---
-clusters:
+clustered_instances:
   hosts:
     au1prodfrontend1:
       tests:

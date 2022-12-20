@@ -8,25 +8,25 @@
     - name: Create worker inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
-        cluster: "{{ hostvars[item.cluster_name] }}"
+        clustered_instance: "{{ hostvars[item.clustered_instance_name] }}"
       add_host:
         name: "{{ item.worker_name }}"
         groups:
           - workers
           - "workers_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
-        cluster_machine_overrides: "{{ item.cluster_machine_overrides or {} }}"
+        clustered_instance_machine_overrides: "{{ item.clustered_instance_machine_overrides or {} }}"
         machine_name: "{{ item.machine_name }}"
-        cluster_name: "{{ item.cluster_name }}"
-        # TODO: groups from cluster and machine settings
+        clustered_instance_name: "{{ item.clustered_instance_name }}"
+        # TODO: groups from clustered instance and machine settings
         ansible_host: "{{ machine.ansible_host }}"
         haproxy_http_port: "{{ (2000 + i * 2) if simulation else 80 }}"
         haproxy_https_port: "{{ (2000 + i * 2 + 1) if simulation else 443 }}"
 
-        static_backends: "{{ cluster.static_backends | default({}) }}"
-        acls: "{{ cluster.acls }}"
-        actions: "{{ cluster.actions }}"
-        certificates: "{{ cluster.certificates }}"
-        tests: "{{ cluster.tests | default([]) }}"
+        static_backends: "{{ clustered_instance.static_backends | default({}) }}"
+        acls: "{{ clustered_instance.acls }}"
+        actions: "{{ clustered_instance.actions }}"
+        certificates: "{{ clustered_instance.certificates }}"
+        tests: "{{ clustered_instance.tests | default([]) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
@@ -34,13 +34,13 @@
 
       loop: >-
         [
-          {% for cluster_name in groups['clusters'] %}
-            {% for machine_name, machine_overrides in hostvars[cluster_name].cluster_machines.items() %}
+          {% for clustered_instance_name in groups['clustered_instances'] %}
+            {% for machine_name, machine_overrides in hostvars[clustered_instance_name].clustered_instance_machines.items() %}
               {
                 'machine_name': '{{ machine_name }}',
-                'cluster_name': '{{ cluster_name }}',
-                'cluster_machine_overrides': {{ machine_overrides | to_json }},
-                'worker_name': 'worker_{{ cluster_name }}_{{ machine_name }}',
+                'clustered_instance_name': '{{ clustered_instance_name }}',
+                'clustered_instance_machine_overrides': {{ machine_overrides | to_json }},
+                'worker_name': 'worker_{{ clustered_instance_name }}_{{ machine_name }}',
               },
             {% endfor %}
           {% endfor %}
@@ -60,9 +60,9 @@
         "{{ item }}": >-
           {{
             worker_defaults[item] | default({})
-            | combine(hostvars[cluster_name][item] | default({}), recursive=true)
+            | combine(hostvars[clustered_instance_name][item] | default({}), recursive=true)
             | combine(hostvars[machine_name][item] | default({}), recursive=true)
-            | combine(cluster_machine_overrides[item] | default({}), recursive=true)
+            | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
             | combine(hostvars[inventory_hostname][item] | default({}), recursive=true)
           }}
       loop:

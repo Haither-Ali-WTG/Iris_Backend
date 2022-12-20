@@ -1,6 +1,6 @@
 ---
 app-test.borderwise.com:
-  clusters: [au1prodfrontend1]
+  clustered_instances: [au1prodfrontend1]
   cookie:
     name: BOT
   health_check: /wtg/status
@@ -10,7 +10,7 @@ app-test.borderwise.com:
       port: 50135
 
 fms.wisegrid.net:
-  clusters: [au1prodfrontend1]
+  clustered_instances: [au1prodfrontend1]
   health_check: /api/v1/airevents/ping
   encryption: true
   sorry_pages:
@@ -24,7 +24,7 @@ fms.wisegrid.net:
       port: 50135
 
 aucloud3.wisegrid.net:
-  clusters: [au1prodfrontend1]
+  clustered_instances: [au1prodfrontend1]
   health_check: /
   encryption: true
   servers:
@@ -33,7 +33,7 @@ aucloud3.wisegrid.net:
       port: 50136
 
 www.cargowise.com:
-  clusters: [au2prodceph1]
+  clustered_instances: [au2prodceph1]
   health_check: /healthcheck
   encryption: true
   sorry_pages:
@@ -45,7 +45,7 @@ www.cargowise.com:
       port: 50137
 
 cargowise.com:
-  clusters: [au2prodceph1]
+  clustered_instances: [au2prodceph1]
   health_check: /healthcheck
   encryption: false
   servers:
