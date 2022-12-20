@@ -1,5 +1,5 @@
 ---
-worker_defaults:
+individual_instance_defaults:
   instance:
     # TODO: this should probably just be the name?
     # log_name: datacentre - env - context - function

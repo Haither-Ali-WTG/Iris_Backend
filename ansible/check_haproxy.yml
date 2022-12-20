@@ -10,16 +10,16 @@
       debug:
         msg: per-machine checks
 
-- name: Checks on the workers
-  hosts: workers
+- name: Checks on the individual instances
+  hosts: individual_instances
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Check the workers
+    - name: Check the individual_instances
       include_role:
         name: iris_haproxy
-        tasks_from: check_workers.yml
+        tasks_from: check_individual_instances.yml
 
 - name: Per-clustered-instance checks
   hosts: clustered_instances
