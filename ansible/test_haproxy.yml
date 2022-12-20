@@ -102,7 +102,7 @@
   import_playbook: check_haproxy.yml
 
 - name: Check URLs
-  hosts: workers
+  hosts: individual_instances
   strategy: free
   gather_facts: yes
   force_handlers: yes

@@ -24,21 +24,21 @@
       include_role:
         name: system_parameters
 
-- name: Setup the workers
-  hosts: workers
+- name: Setup the individual instances
+  hosts: individual_instances
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Calculate worker settings
+    - name: Calculate individual instance settings
       vars:
-        the_worker: "{{ hostvars[inventory_hostname] }}"
+        the_individual_instance: "{{ hostvars[inventory_hostname] }}"
         machine: "{{ hostvars[machine_name] }}"
         clustered_instance: "{{ hostvars[clustered_instance_name] }}"
       set_fact:
         "{{ item }}": >-
           {{
-            the_worker[item]
+            the_individual_instance[item]
             | combine(clustered_instance[item] | default({}), recursive=true)
             | combine(machine[item] | default({}), recursive=true)
             | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
@@ -51,10 +51,10 @@
       # TODO: remove when actual prod machines are available
       when: simulation
 
-    - name: Deploy the workers
+    - name: Deploy the individual instances
       include_role:
         name: iris_haproxy
-        tasks_from: workers.yml
+        tasks_from: individual_instances.yml
       # TODO: remove when actual prod machines are available
       when: simulation
 

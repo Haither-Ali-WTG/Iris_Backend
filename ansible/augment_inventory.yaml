@@ -11,5 +11,5 @@
 - name: Load actions
   import_playbook: load_actions.yaml
 
-- name: Generate the "worker" inventory entries
-  import_playbook: generate_workers.yaml
+- name: Generate the individual instance inventory entries
+  import_playbook: generate_individual_instances.yaml

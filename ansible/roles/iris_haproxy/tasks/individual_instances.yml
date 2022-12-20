@@ -1,11 +1,11 @@
 ---
-- name: Calculate worker facts
+- name: Calculate individual instance facts
   set_fact:
-    worker_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
+    individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
 
 - name: Create directory {{ item }}
   file:
-    dest: "{{ worker_dir }}/{{ item }}"
+    dest: "{{ individual_instance_dir }}/{{ item }}"
     state: directory
     mode: a=rx
   become: yes
@@ -25,7 +25,7 @@
 
 - name: Create socket and global-state files
   file:
-    path: "{{ worker_dir }}/run/{{ item }}"
+    path: "{{ individual_instance_dir }}/run/{{ item }}"
     state: touch
     mode: u=rw,go=r
   loop:
@@ -33,7 +33,7 @@
     - haproxy.sock
   become: yes
 
-- name: Populate dynamic backends variable for worker
+- name: Populate dynamic backends variable for individual instance
   set_fact:
     dynamic_backends: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
   when:
@@ -43,7 +43,7 @@
 - name: Template out the haproxy config
   template:
     src: haproxy.cfg.j2
-    dest: "{{ worker_dir }}/etc/haproxy.cfg"
+    dest: "{{ individual_instance_dir }}/etc/haproxy.cfg"
     mode: u=r,go=
   become: yes
   # TODO: validate
@@ -52,16 +52,16 @@
 - name: Template out the sorry page
   template:
     src: sorry.http.j2
-    dest: "{{ worker_dir }}/etc/sorry.http"
+    dest: "{{ individual_instance_dir }}/etc/sorry.http"
     mode: u=r,go=
   become: yes
   # TODO: validate
   register: sorry_page
 
-- name: Copy certificates for worker
+- name: Copy certificates for individual instance
   copy:
     src: "certificates/{{ item }}.pem"
-    dest: "{{ worker_dir }}/etc/certs/"
+    dest: "{{ individual_instance_dir }}/etc/certs/"
     mode: ug=r,o=
   become: yes
   loop: "{{ certificates | default([]) }}"
@@ -79,10 +79,10 @@
       - "iris_haproxy_config_checksum={{ haproxy_config.checksum }}"
       - "iris_sorry_page_checksum={{ sorry_page.checksum }}"
     volumes:
-      - "{{ worker_dir }}/etc:/usr/local/etc/haproxy:z"
-      - "{{ worker_dir }}/run:/var/run/haproxy:z"
+      - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
+      - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     container_user: root
-    container_dir: "{{ worker_dir }}"
+    container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
       production:
         cpu: 1000m
