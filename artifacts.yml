@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221220.2
-  # Tue Dec 20 00:53:29 UTC 2022 -- Tue Dec 20 11:53:29 AEDT 2022
+  # dante build artifact 20221220.3
+  # Tue Dec 20 03:18:22 UTC 2022 -- Tue Dec 20 14:18:22 AEDT 2022
   #
-  # Merged PR 9729: Dante - Remote Secret Logging in Container Runner
-  # 2414454f33a8f56c5733f872ae97b91a65893d0b
-  dante_build_id: '439043'
+  # Merged PR 9730: Dante - Remove schedule from container rebuild pipeline + Add descriptions
+  # 8999d268347182ec6521799a409b3a65d4b7d910
+  dante_build_id: '439169'
 
   # virgil 20221220.4
   # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
