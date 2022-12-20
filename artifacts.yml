@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221220.5
-  # Tue Dec 20 08:12:17 UTC 2022 -- Tue Dec 20 19:12:17 AEDT 2022
+  # dante build artifact 20221221.1
+  # Tue Dec 20 23:04:36 UTC 2022 -- Wed Dec 21 10:04:36 AEDT 2022
   #
-  # Merged PR 9675: Bind fixes - Delete k8s deployment + duplicate listen-on
-  # 5002c771edf9669f637486b360c9abf6419da774
-  dante_build_id: '439409'
+  # Merge pull request 9724 from dante_artifact_upgrade into master
+  # 9a38172eebfb87648cd7411d3e4236758fa652d1
+  dante_build_id: '439993'
 
   # virgil 20221220.4
   # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
