@@ -1,5 +1,5 @@
 ---
-# Note: group_vars/all must a directory, as we have other group_vars/all/*.yaml files
+# Note: group_vars/all must be a directory, as we have other group_vars/all/*.yaml files
 # from the `nested_virt` artifact
 
 s3_iris_bucket: s3://dante-iris/
