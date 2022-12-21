@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221221.2
-  # Wed Dec 21 02:07:36 UTC 2022 -- Wed Dec 21 13:07:36 AEDT 2022
+  # dante build artifact 20221221.3
+  # Wed Dec 21 05:49:33 UTC 2022 -- Wed Dec 21 16:49:33 AEDT 2022
   #
-  # Merged PR 9751: Get secretDanteAgentWtgadmin from key vault
-  # 71048a64c81517e25f89a575f7ad5200fd795493
-  dante_build_id: '440132'
+  # Merged PR 9580: Deploy telegraf to monitor DNS (stage 1)
+  # cc9673bfb0cf75918dc20df514b6fcf7f802c1a3
+  dante_build_id: '440273'
 
-  # virgil 20221220.4
-  # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
+  # virgil 20221222.2
+  # Wed Dec 21 22:22:29 UTC 2022 -- Thu Dec 22 09:22:29 AEDT 2022
   #
-  # Merged PR 9713: Disable bond on vmware hosts Group D
-  # f19812e59bdd68c0b9dc7ff857d33ff82de2cdf2
-  virgil_build_id: '439068'
+  # Merge pull request 9762 from virgil_python_upgrade into master
+  # 10486ebb9b7359d460bb97efa55fa482496f76e0
+  virgil_build_id: '440916'
