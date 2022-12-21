@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20221221.1
-  # Tue Dec 20 23:04:36 UTC 2022 -- Wed Dec 21 10:04:36 AEDT 2022
+  # dante build artifact 20221221.2
+  # Wed Dec 21 02:07:36 UTC 2022 -- Wed Dec 21 13:07:36 AEDT 2022
   #
-  # Merge pull request 9724 from dante_artifact_upgrade into master
-  # 9a38172eebfb87648cd7411d3e4236758fa652d1
-  dante_build_id: '439993'
+  # Merged PR 9751: Get secretDanteAgentWtgadmin from key vault
+  # 71048a64c81517e25f89a575f7ad5200fd795493
+  dante_build_id: '440132'
 
   # virgil 20221220.4
   # Tue Dec 20 01:19:03 UTC 2022 -- Tue Dec 20 12:19:03 AEDT 2022
