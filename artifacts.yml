@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221223.1
-  # Fri Dec 23 01:08:59 UTC 2022 -- Fri Dec 23 12:08:59 AEDT 2022
+  # dante build artifact 20221223.2
+  # Fri Dec 23 05:02:01 UTC 2022 -- Fri Dec 23 16:02:01 AEDT 2022
   #
-  # Merged PR 9780: Fix python-devel for rhel7 on AU2 mgmt nodes
-  # 085084c839f603f2ed01b63fdfa5bde741b72d16
-  dante_build_id: '441983'
+  # Merge pull request 9767 from dante_artifact_upgrade into master
+  # edbdae637d52f3a1daa62090efea598e67952490
+  dante_build_id: '442146'
 
-  # virgil 20221223.5
-  # Thu Dec 22 22:42:02 UTC 2022 -- Fri Dec 23 09:42:02 AEDT 2022
+  # virgil 20221223.7
+  # Fri Dec 23 03:23:49 UTC 2022 -- Fri Dec 23 14:23:49 AEDT 2022
   #
-  # Merge pull request 9775 from virgil_python_upgrade into master
-  # 8dc5d9bb18c57e7e8507178a4a99bc9dda809ab1
-  virgil_build_id: '441879'
+  # Merged PR 9782: Add new LB ip's and nodes to virt.wtg.ws
+  # 7ef8bfd29f98bc160b2085bdbb9c592609b448ba
+  virgil_build_id: '442068'
