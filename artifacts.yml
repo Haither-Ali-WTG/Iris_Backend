@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20221228.5
-  # Wed Dec 28 10:55:08 UTC 2022 -- Wed Dec 28 21:55:08 AEDT 2022
+  # dante build artifact 20221230.1
+  # Fri Dec 30 04:52:50 UTC 2022 -- Fri Dec 30 15:52:50 AEDT 2022
   #
-  # Merged PR 9727: Dante - Ceph credentials hide in log
-  # df7fdb80f8295e201f76695c0c9d5f592d494b78
-  dante_build_id: '446932'
+  # Merge pull request 9798 from dante_artifact_upgrade into master
+  # f96a8a26de72676169a7ce7cf1689f3b0c154817
+  dante_build_id: '448623'
 
-  # virgil 20221230.11
-  # Fri Dec 30 00:43:22 UTC 2022 -- Fri Dec 30 11:43:22 AEDT 2022
+  # virgil 20221230.13
+  # Fri Dec 30 05:01:18 UTC 2022 -- Fri Dec 30 16:01:18 AEDT 2022
   #
-  # Merged PR 9774: Add Greg Ivaska's key
-  # 6e9cb8c8bf6c21ccf60391c63ff1f44dd03e618b
-  virgil_build_id: '448457'
+  # Merge pull request 9816 from virgil_python_upgrade into master
+  # 07d6c4969371828c6207f83b22bdf6151ced5b70
+  virgil_build_id: '448642'
