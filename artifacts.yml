@@ -7,9 +7,9 @@ variables:
   # df7fdb80f8295e201f76695c0c9d5f592d494b78
   dante_build_id: '446932'
 
-  # virgil 20221229.16
-  # Thu Dec 29 03:54:46 UTC 2022 -- Thu Dec 29 14:54:46 AEDT 2022
+  # virgil 20221230.11
+  # Fri Dec 30 00:43:22 UTC 2022 -- Fri Dec 30 11:43:22 AEDT 2022
   #
-  # Merge pull request 9802 from virgil_python_upgrade into master
-  # 511d1c6af0fe53551b1cdc0e4e0a941d4e99b9ea
-  virgil_build_id: '447629'
+  # Merged PR 9774: Add Greg Ivaska's key
+  # 6e9cb8c8bf6c21ccf60391c63ff1f44dd03e618b
+  virgil_build_id: '448457'
