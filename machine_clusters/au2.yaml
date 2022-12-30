@@ -1,27 +1,27 @@
 ---
 au2-prod-frontend-1:
-    machines:
-        au2_machine1: ~
-        au2_machine2: ~
-        au2_machine3: ~
-    floating_ips:
-        - description: WiseCloud RDP (PROD)
-          ip: 10.2.64.131
-          preempt: no
-          priority: [au2_machine1, au2_machine2, au2_machine3]
-        - description: ediProd RDP (CORP)
-          ip: 10.2.64.132
-          preempt: no
-          priority: [au2_machine2, au2_machine1, au2_machine3]
-        - description: webservices
-          ip: 10.2.64.133
-          preempt: yes
-          priority: [au2_machine1, au2_machine2, au2_machine3]
-        - description: webservices
-          ip: 10.2.64.134
-          preempt: yes
-          priority: [au2_machine2, au2_machine3, au2_machine1]
-        - description: webservices
-          ip: 10.2.64.135
-          preempt: yes
-          priority: [au2_machine3, au2_machine1, au2_machine2]
+  machines:
+    au2_machine1: ~
+    au2_machine2: ~
+    au2_machine3: ~
+  floating_ips:
+    - description: WiseCloud RDP (PROD)
+      ip: 10.2.64.131
+      preempt: no
+      priority: [au2_machine1, au2_machine2, au2_machine3]
+    - description: ediProd RDP (CORP)
+      ip: 10.2.64.132
+      preempt: no
+      priority: [au2_machine2, au2_machine1, au2_machine3]
+    - description: webservices
+      ip: 10.2.64.133
+      preempt: yes
+      priority: [au2_machine1, au2_machine2, au2_machine3]
+    - description: webservices
+      ip: 10.2.64.134
+      preempt: yes
+      priority: [au2_machine2, au2_machine3, au2_machine1]
+    - description: webservices
+      ip: 10.2.64.135
+      preempt: yes
+      priority: [au2_machine3, au2_machine1, au2_machine2]
