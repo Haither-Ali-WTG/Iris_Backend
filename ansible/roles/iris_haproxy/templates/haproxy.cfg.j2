@@ -30,8 +30,12 @@ log 127.0.0.1 len 4096 local7
 
 # The cipher profile.
 
+{% if cipher.ciphers_TLSv1_3 is not none %}
 ssl-default-bind-ciphersuites {{ cipher.ciphers_TLSv1_3 | join(':') }}
+{% endif %}
+{% if cipher.ciphers_upto_TLSv1_2 is not none %}
 ssl-default-bind-ciphers {{ cipher.ciphers_upto_TLSv1_2 | join(':') }}
+{% endif %}
 ssl-default-bind-options {{ cipher.bind_options | join(' ') }}
 
 ssl-default-server-options ssl-min-ver {{ cipher.ssl_min }} ssl-max-ver {{ cipher.ssl_max }}
