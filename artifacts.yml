@@ -7,9 +7,9 @@ variables:
   # f96a8a26de72676169a7ce7cf1689f3b0c154817
   dante_build_id: '448623'
 
-  # virgil 20221230.13
-  # Fri Dec 30 05:01:18 UTC 2022 -- Fri Dec 30 16:01:18 AEDT 2022
+  # virgil 20230103.2
+  # Mon Jan  2 22:44:07 UTC 2023 -- Tue Jan  3 09:44:07 AEDT 2023
   #
-  # Merge pull request 9816 from virgil_python_upgrade into master
-  # 07d6c4969371828c6207f83b22bdf6151ced5b70
-  virgil_build_id: '448642'
+  # Merge pull request 9825 from virgil_python_upgrade into master
+  # 80d61f8fa7addecd49d4242d5c43d3ca876c4411
+  virgil_build_id: '452010'
