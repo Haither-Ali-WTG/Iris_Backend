@@ -118,9 +118,9 @@ def main():
     parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
                         type=str)
     parser.add_argument('--server_config_file', '-sc', help="File with servers configuration",
-                        type=str, default='config/servers.yml')
+                        type=str, default='dynamic_backends/servers.yml')
     parser.add_argument('--website_config_file', '-wc', help="File with websites configuration",
-                        type=str, default='config/websites.yml')
+                        type=str, default='dynamic_backends/websites.yml')
     parser.add_argument('--threads', '-t', help="Number of parallel executions",
                         type=int, default='20')
     parser.add_argument('--output_path', '-o', help="Output file path",

@@ -1,7 +1,7 @@
 ---
 - name: Copy sorry pages to destination
   copy:
-    src: "../backends/sorry_pages/{{ item.file }}"
+    src: "../static_backends/sorry_pages/{{ item.file }}"
     dest: "{{ individual_instance_dir }}/etc/sorry_pages/"
     mode: a=r
   become: yes
