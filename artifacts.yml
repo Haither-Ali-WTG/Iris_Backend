@@ -7,9 +7,9 @@ variables:
   # 53aa6128a9ed17002880051f48810c8f266ee32c
   dante_build_id: '452178'
 
-  # virgil 20230103.2
-  # Mon Jan  2 22:44:07 UTC 2023 -- Tue Jan  3 09:44:07 AEDT 2023
+  # virgil 20230104.6
+  # Tue Jan  3 22:11:18 UTC 2023 -- Wed Jan  4 09:11:18 AEDT 2023
   #
-  # Merge pull request 9825 from virgil_python_upgrade into master
-  # 80d61f8fa7addecd49d4242d5c43d3ca876c4411
-  virgil_build_id: '452010'
+  # Merged PR 9810: Switch DE1 exits to use port profiles
+  # 991ff5bd3080ce1d4cca1d91fe7ba643661b563c
+  virgil_build_id: '452959'
