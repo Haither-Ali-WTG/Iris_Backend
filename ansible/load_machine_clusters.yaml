@@ -1,0 +1,17 @@
+---
+- name: Load machine clusters
+  hosts: localhost
+  strategy: linear  # we use run_once
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Load machine clusters
+      vars:
+        content: >-
+          {{ lookup('file', fname) | from_yaml }}
+      set_fact:
+        all_machine_clusters: >-
+          {{ all_machine_clusters | default({}) | combine(content) }}
+      loop: "{{ lookup('fileglob', '../machine_clusters/*.y*ml', wantlist=True) }}"
+      loop_control:
+        loop_var: fname
