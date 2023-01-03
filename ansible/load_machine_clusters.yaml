@@ -1,6 +1,6 @@
 ---
 - name: Load machine clusters
-  hosts: localhost
+  hosts: localhost:machines
   strategy: linear  # we use run_once
   gather_facts: no
   force_handlers: yes
