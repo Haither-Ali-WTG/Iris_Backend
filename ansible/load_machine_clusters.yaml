@@ -1,6 +1,6 @@
 ---
 - name: Load machine clusters
-  hosts: localhost:machines
+  hosts: localhost
   strategy: linear  # we use run_once
   gather_facts: no
   force_handlers: yes
@@ -15,3 +15,16 @@
       loop: "{{ lookup('fileglob', '../machine_clusters/*.y*ml', wantlist=True) }}"
       loop_control:
         loop_var: fname
+
+    - name: Distribute machine clusters info to machines
+      set_fact:
+        machine_clusters: >-
+          {{
+            all_machine_clusters
+            | dict2items
+            | selectattr('value.machines', 'contains', item)
+            | items2dict
+          }}
+      delegate_to: "{{ item }}"
+      delegate_facts: yes
+      loop: "{{ groups['machines'] }}"
