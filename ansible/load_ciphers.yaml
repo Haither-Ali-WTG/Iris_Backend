@@ -1,0 +1,9 @@
+---
+- name: Load ciphers
+  hosts: clustered_instances
+  gather_facts: no
+  tasks:
+    - name: Load cipher profiles
+      set_fact:
+        cipher_profiles: >-
+          {{ lookup('file', '../ciphers/cipher_profiles.yml') | from_yaml }}

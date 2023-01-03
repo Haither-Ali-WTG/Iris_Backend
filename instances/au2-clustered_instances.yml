@@ -20,11 +20,8 @@ clustered_instances:
         - star-cargowise-com
         - star-wisegrid-net
       cipher:
-        ciphers_TLSv1_3:
-          - TLS_AES_256_GCM_SHA384
-        ciphers_upto_TLSv1_2:
-          - ECDHE-RSA-CHACHA20-POLY1305
-          - DHE-RSA-AES256-GCM-SHA384
+        profiles:
+          - best_practice_2023
 
     au2prodceph1:
       # per-clustered-instance settings (overrides) go here, for example:

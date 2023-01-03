@@ -11,5 +11,8 @@
 - name: Load actions
   import_playbook: load_actions.yaml
 
+- name: Load ciphers
+  import_playbook: load_ciphers.yaml
+
 - name: Generate the individual instance inventory entries
   import_playbook: generate_individual_instances.yaml

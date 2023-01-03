@@ -27,6 +27,7 @@
         actions: "{{ clustered_instance.actions }}"
         certificates: "{{ clustered_instance.certificates }}"
         tests: "{{ clustered_instance.tests | default([]) }}"
+        cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
@@ -72,3 +73,11 @@
         - cipher
         - proxy
         - timeouts
+
+    - name: Combine ciphers from all profiles
+      set_fact:
+        ciphers_upto_TLSv1_2: >-
+          {{ (ciphers_upto_TLSv1_2 | default([]) + cipher_profiles[item].ciphers_upto_TLSv1_2) | unique() }}
+        ciphers_TLSv1_3: >-
+          {{ (ciphers_TLSv1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique() }}
+      loop: "{{ cipher.profiles }}"
