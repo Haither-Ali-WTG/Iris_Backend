@@ -30,11 +30,11 @@ log 127.0.0.1 len 4096 local7
 
 # The cipher profile.
 
-{% if ciphers_TLSv1_3 | length > 0 %}
-ssl-default-bind-ciphersuites {{ ciphers_TLSv1_3 | join(':') }}
+{% if ciphers_tls_v1_3 | length > 0 %}
+ssl-default-bind-ciphersuites {{ ciphers_tls_v1_3 | join(':') }}
 {% endif %}
-{% if ciphers_upto_TLSv1_2 | length > 0  %}
-ssl-default-bind-ciphers {{ ciphers_upto_TLSv1_2 | join(':') }}
+{% if ciphers_upto_tls_v1_2 | length > 0  %}
+ssl-default-bind-ciphers {{ ciphers_upto_tls_v1_2 | join(':') }}
 {% endif %}
 ssl-default-bind-options {{ cipher.bind_options | join(' ') }}
 
