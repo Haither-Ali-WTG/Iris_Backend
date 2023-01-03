@@ -15,14 +15,9 @@ individual_instance_defaults:
       web: 8001
 
   cipher:
-    ciphers_TLSv1_3:
-      - TLS_AES_256_GCM_SHA384
-      - TLS_CHACHA20_POLY1305_SHA256
-    ciphers_upto_TLSv1_2:
-      - ECDHE-RSA-AES256-GCM-SHA384
-      - ECDHE-ECDSA-CHACHA20-POLY1305
-      - ECDHE-RSA-CHACHA20-POLY1305
-      - DHE-RSA-AES256-GCM-SHA384
+    profiles:
+      - best_practice_2023
+      - best_practice_1999
     bind_options: [no-sslv3, no-tlsv10, no-tlsv11, no-tls-tickets]
     ssl_min: TLSv1.0
     ssl_max: TLSv1.3

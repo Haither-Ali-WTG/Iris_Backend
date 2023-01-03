@@ -19,6 +19,9 @@ clustered_instances:
         - customers-commercialcustoms-com-au
         - star-cargowise-com
         - star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
 
     au2prodceph1:
       # per-clustered-instance settings (overrides) go here, for example:
