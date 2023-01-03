@@ -1,0 +1,40 @@
+---
+- name: Configure keepalived
+  vars:
+    machine_clusters: >-
+      {{
+        all_machine_clusters
+        | dict2items
+        | selectattr('value.machines', 'contains', inventory_hostname)
+        | items2dict
+      }}
+    priority_list: [250, 200, 150, 100, 50]
+    vrrp_instances: >-
+      [
+        {% for machine_cluster_name, machine_cluster_config in machine_clusters.items() %}
+        {% for floating_ip in machine_cluster_config.floating_ips %}
+          {
+            'machine_cluster_name': {{ machine_cluster_name | to_json }},
+            'config': {{ floating_ip | to_json }},
+            'calculated_priority': {{
+              (
+                floating_ip.priority
+                | zip(priority_list)
+                | selectattr('0', 'eq', inventory_hostname)
+                | first
+              )[1],
+            }},
+            'virtual_router_id': {{
+                floating_ip.virtual_router_id | default(
+                  floating_ip.ip | ipaddr('int') % 256
+                )
+            }},
+          },
+        {% endfor %}
+        {% endfor %}
+      ]
+  template:
+    src: keepalived.conf.j2
+    dest: /etc/keepalived/keepalived.conf
+    mode: u=rw,go=r
+  become: yes
