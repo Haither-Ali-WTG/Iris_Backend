@@ -8,25 +8,25 @@ global_defs {
     vrrp_garp_master_refresh 60
 }
 
-{% for instance in vrrp_instances %}
-vrrp_instance FIP{{ instance.virtual_router_id }} {
-    # {{ instance.description }}
-    # cluster {{ instance.machine_cluster_name }}
+{% for vrrp_instance in vrrp_instances %}
+vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
+    # {{ vrrp_instance.description }}
+    # cluster {{ vrrp_instance.machine_cluster_name }}
 
     state BACKUP
     interface prod0
-    virtual_router_id {{ instance.virtual_router_id }}
-    priority {{ instance.calculated_priority }}
+    virtual_router_id {{ vrrp_instance.virtual_router_id }}
+    priority {{ vrrp_instance.calculated_priority }}
     advert_int 1
-    {% if instance.config.preempt %}
+    {% if vrrp_instance.config.preempt %}
     preempt
     {% else %}
     nopreempt
     {% endif %}
-    use_vmac vrrp{{ instance.virtual_router_id }}
+    use_vmac vrrp{{ vrrp_instance.virtual_router_id }}
     vmac_xmit_base
     virtual_ipaddress {
-        {{ instance.config.ip }}
+        {{ vrrp_instance.config.ip }}
     }
 }
 
