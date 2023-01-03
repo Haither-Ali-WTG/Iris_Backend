@@ -77,7 +77,7 @@
     - name: Combine ciphers from all profiles
       set_fact:
         ciphers_upto_tls_v1_2: >-
-          {{ (ciphers_upto_tls_v1_2 | default([]) + cipher_profiles[item].ciphers_upto_TLSv1_2) | unique() }}
+          {{ (ciphers_upto_tls_v1_2 | default([]) + cipher_profiles[item].ciphers_upto_TLSv1_2) | unique }}
         ciphers_tls_v1_3: >-
-          {{ (ciphers_tls_v1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique() }}
+          {{ (ciphers_tls_v1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique }}
       loop: "{{ cipher.profiles }}"
