@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230103.1
-  # Tue Jan  3 00:22:05 UTC 2023 -- Tue Jan  3 11:22:05 AEDT 2023
+  # dante build artifact 20230103.2
+  # Tue Jan  3 02:22:44 UTC 2023 -- Tue Jan  3 13:22:44 AEDT 2023
   #
-  # Merge pull request 9779 from dante_python_upgrade into master
-  # 5fcc9c9612abeb214f2738a1e264f1c685b77fdb
-  dante_build_id: '452092'
+  # Merged PR 9771: Update telegraf doc
+  # 53aa6128a9ed17002880051f48810c8f266ee32c
+  dante_build_id: '452178'
 
   # virgil 20230103.2
   # Mon Jan  2 22:44:07 UTC 2023 -- Tue Jan  3 09:44:07 AEDT 2023
