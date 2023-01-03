@@ -1,13 +1,6 @@
 ---
 - name: Configure keepalived
   vars:
-    machine_clusters: >-
-      {{
-        all_machine_clusters
-        | dict2items
-        | selectattr('value.machines', 'contains', inventory_hostname)
-        | items2dict
-      }}
     priority_list: [250, 200, 150, 100, 50]
     vrrp_instances: >-
       [
