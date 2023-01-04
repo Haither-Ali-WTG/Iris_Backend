@@ -24,6 +24,10 @@
       include_role:
         name: system_parameters
 
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
+
 - name: Setup the individual instances
   hosts: individual_instances
   strategy: free
