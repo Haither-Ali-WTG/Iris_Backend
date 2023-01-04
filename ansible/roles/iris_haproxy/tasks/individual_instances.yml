@@ -103,11 +103,10 @@
 - name: Reload haproxy container
   vars:
     name: "{{ container_name }}"
-    sugnal: HUP
+    signal: HUP
   include_role:
     name: container_runner
     tasks_from: send_signal.yml
-  when: >-
-    haproxy_config.changed
-    or sorry_page.changed
-    or copy_certificates.changed
+  when:
+    - container_exists
+    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
