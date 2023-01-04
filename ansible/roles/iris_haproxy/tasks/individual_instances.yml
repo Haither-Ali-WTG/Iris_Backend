@@ -68,7 +68,13 @@
   no_log: true
   register: copy_certificates
 
-- name: Set container engine
+- name: Set container name
+  set_fact:
+    container_name: "iris_{{ inventory_hostname }}"
+
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
   include_role:
     name: container_runner
     tasks_from: check_container_exists.yml
@@ -77,7 +83,7 @@
   include_role:
     name: container_runner
   vars:
-    name: "iris_{{ inventory_hostname }}"
+    name: "{{ container_name }}"
     workload: deployment
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ haproxy_version }}"  # TODO configurable
     restart: no
@@ -95,12 +101,12 @@
         memory: 100Mi
 
 - name: Reload haproxy container
+  vars:
+    name: "{{ container_name }}"
+    sugnal: HUP
   include_role:
     name: container_runner
     tasks_from: send_signal.yml
-  vars:
-    name: "iris_{{ inventory_hostname }}"
-    sugnal: HUP
   when: >-
     haproxy_config.changed
     or sorry_page.changed
