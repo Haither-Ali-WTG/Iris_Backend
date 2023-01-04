@@ -66,18 +66,27 @@
   become: yes
   loop: "{{ certificates | default([]) }}"
   no_log: true
+  register: copy_certificates
+
+- name: Set container name
+  set_fact:
+    container_name: "iris_{{ inventory_hostname }}"
+
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
 
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
   vars:
-    name: "iris_{{ inventory_hostname }}"
+    name: "{{ container_name }}"
     workload: deployment
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ haproxy_version }}"  # TODO configurable
-    restart: "{{ haproxy_config.changed or sorry_page.changed }}"
-    environ:
-      - "iris_haproxy_config_checksum={{ haproxy_config.checksum }}"
-      - "iris_sorry_page_checksum={{ sorry_page.checksum }}"
+    restart: no
     volumes:
       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
@@ -90,3 +99,14 @@
       simulation:
         cpu: 200m
         memory: 100Mi
+
+- name: Reload haproxy container
+  vars:
+    name: "{{ container_name }}"
+    signal: HUP
+  include_role:
+    name: container_runner
+    tasks_from: send_signal.yml
+  when:
+    - container_exists
+    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
