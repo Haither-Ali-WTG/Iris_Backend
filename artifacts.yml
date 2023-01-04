@@ -5,7 +5,7 @@ variables:
   #
   # Merged PR 9771: Update telegraf doc
   # 53aa6128a9ed17002880051f48810c8f266ee32c
-  dante_build_id: '452178'
+  dante_build_id: '453197'
 
   # virgil 20230104.8
   # Tue Jan  3 23:31:44 UTC 2023 -- Wed Jan  4 10:31:44 AEDT 2023
