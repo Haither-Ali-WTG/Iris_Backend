@@ -14,7 +14,7 @@
   set_fact:
     certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
   when:
-    - inventory_hostname in hostvars[item].clustered_instance_machines
+    - hostvars[item].machine_cluster in machine_clusters
     - '"certificates" in hostvars[item]'
   loop: "{{ groups['clustered_instances'] }}"
 
@@ -30,7 +30,7 @@
   set_fact:
     tests_list: "{{ tests_list | default([]) + hostvars[item].tests }}"
   when:
-    - inventory_hostname in hostvars[item].clustered_instance_machines
+    - hostvars[item].machine_cluster in machine_clusters
     - '"tests" in hostvars[item]'
   loop: "{{ groups['clustered_instances'] }}"
 
