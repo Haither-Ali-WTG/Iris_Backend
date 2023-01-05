@@ -2,6 +2,9 @@
 - name: Import IIS data
   import_playbook: import_iis_data.yml
 
+- name: Load machine clusters configuration
+  import_playbook: load_machine_clusters.yaml
+
 - name: Load static backend configuration
   import_playbook: load_static_backends.yaml
 
