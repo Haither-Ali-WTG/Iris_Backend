@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230105.1
-  # Wed Jan  4 23:29:22 UTC 2023 -- Thu Jan  5 10:29:22 AEDT 2023
+  # dante build artifact 20230105.2
+  # Thu Jan  5 02:20:45 UTC 2023 -- Thu Jan  5 13:20:45 AEDT 2023
   #
-  # Merged PR 9852: Support for send signal to container
-  # 1c2027d8509662f79059872670b77f1a6ab6a81b
-  dante_build_id: '453974'
+  # Merge pull request 9824 from dante_artifact_upgrade into master
+  # 7bf9cafbce552aa38490463027084d16fc5a72a9
+  dante_build_id: '454112'
 
   # virgil 20230105.3
   # Wed Jan  4 23:24:30 UTC 2023 -- Thu Jan  5 10:24:30 AEDT 2023
