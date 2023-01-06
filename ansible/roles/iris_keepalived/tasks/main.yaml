@@ -15,7 +15,7 @@
                 | zip(priority_list)
                 | selectattr('0', 'eq', inventory_hostname)
                 | first
-              )[1],
+              )[1]
             }},
             'virtual_router_id': {{
                 floating_ip.virtual_router_id | default(
