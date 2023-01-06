@@ -10,19 +10,24 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Setup docker
-      include_role:
-        name: container_runner
-        tasks_from: setup.yml
-      when: not simulation
+    # TODO: Enable when actual prod machines are available
+    # - name: Setup docker
+    #   include_role:
+    #     name: container_runner
+    #     tasks_from: setup.yml
+    #   when: not simulation
 
     - name: Setup rsyslog
       include_role:
         name: rsyslog
+      # TODO: remove when actual prod machines are available
+      when: simulation
 
     - name: Apply system parameters
       include_role:
         name: system_parameters
+      # TODO: remove when actual prod machines are available
+      when: simulation
 
 - name: Setup the individual instances
   hosts: individual_instances
@@ -79,4 +84,6 @@
     - name: Collect and publish IIS data to ceph
       include_role:
         name: collect_sites
-      when: not simulation
+      when:
+        - not simulation
+        - iis_servers | length > 0
