@@ -84,4 +84,6 @@
     - name: Collect and publish IIS data to ceph
       include_role:
         name: collect_sites
-      when: not simulation
+      when:
+        - not simulation
+        - iis_servers | length > 0
