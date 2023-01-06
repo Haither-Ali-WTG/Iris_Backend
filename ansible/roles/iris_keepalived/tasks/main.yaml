@@ -1,4 +1,10 @@
 ---
+- name: Install keepalived
+  package:
+    name: keepalived
+    state: present
+  become: yes
+
 - name: Configure keepalived
   vars:
     priority_list: [250, 200, 150, 100, 50]
@@ -30,4 +36,12 @@
     src: keepalived.conf.j2
     dest: /etc/keepalived/keepalived.conf
     mode: u=rw,go=r
+  become: yes
+  notify: Reload keepalived
+
+- name: Start and enable keepalived
+  service:
+    name: keepalived
+    state: started
+    enabled: yes
   become: yes
