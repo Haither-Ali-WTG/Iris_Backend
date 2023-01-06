@@ -1,0 +1,4 @@
+---
+- name: Unregister Red Hat subscription
+  command: subscription-manager unregister
+  become: yes

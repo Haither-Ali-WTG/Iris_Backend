@@ -1,0 +1,13 @@
+---
+- name: Prepare simulation
+  import_playbook: prepare_simulation.yaml
+
+- name: Unregister Red Hat nodes
+  hosts: machines
+  gather_facts: no
+  tasks:
+    - name: Unregister Red Hat nodes
+      include_role:
+        name: kvm_cleanup
+        tasks_from: unregister_rhel.yml
+      when: 'os == "rhel"'
