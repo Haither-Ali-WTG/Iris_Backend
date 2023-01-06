@@ -1,4 +1,11 @@
 ---
+- name: Register test Red Hat license (simulation only)
+  include_role:
+    name: test_license_rhel
+  when:
+    - simulation
+    - 'os == "rhel"'
+
 - name: Install keepalived
   package:
     name: keepalived
