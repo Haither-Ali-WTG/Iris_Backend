@@ -10,7 +10,7 @@ global_defs {
 
 {% for vrrp_instance in vrrp_instances %}
 vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
-    # {{ vrrp_instance.description }}
+    # {{ vrrp_instance.config.description }}
     # cluster {{ vrrp_instance.machine_cluster_name }}
 
     state BACKUP
