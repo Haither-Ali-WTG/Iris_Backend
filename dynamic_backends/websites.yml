@@ -11,16 +11,6 @@
     enabled: no
   maintenance_page: example.html
 - name_like:
-    - glow
-  starts_with:
-    - www-
-  encryption: yes
-  health_check: /Glow/wtg/another_healthcheck
-  port: 443
-  balance: first
-  cookie:
-    enabled: no
-- name_like:
     - services
     - accounting
   starts_with:
