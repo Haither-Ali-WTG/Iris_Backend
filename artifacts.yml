@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230106.2
-  # Fri Jan  6 04:40:23 UTC 2023 -- Fri Jan  6 15:40:23 AEDT 2023
+  # dante build artifact 20230106.3
+  # Fri Jan  6 07:26:42 UTC 2023 -- Fri Jan  6 18:26:42 AEDT 2023
   #
-  # Merged PR 9875: Ignore gitpython CVE-2022-24439 - not vulnerable
-  # ca61ed9f176deff14ba9abaa1e01ba47204f0f08
-  dante_build_id: '455207'
+  # Merge pull request 9871 from dante_artifact_upgrade into master
+  # abb133c87591a1bf8be25444456f75c1ef38fdb5
+  dante_build_id: '455324'
 
   # virgil 20230106.2
   # Thu Jan  5 22:45:11 UTC 2023 -- Fri Jan  6 09:45:11 AEDT 2023
