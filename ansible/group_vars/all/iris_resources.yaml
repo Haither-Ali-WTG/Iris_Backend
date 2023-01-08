@@ -2,7 +2,7 @@
 # Note: group_vars/all must be a directory, as we have other group_vars/all/*.yaml files
 # from the `nested_virt` artifact
 
-s3_iris_bucket: s3://dante-iris/test/
+s3_iris_bucket: s3://dante-iris/
 
 fakeserver_image: >-
   wtgopstools.azurecr.io/dante/nginx@sha256:b3a676a9145dc005062d5e79b92d90574fb3bf2396f4913dc1732f9065f55c4b
