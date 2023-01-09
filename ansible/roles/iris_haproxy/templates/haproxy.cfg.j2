@@ -210,31 +210,11 @@ acl {{ name }} {{ test }}
 # ################
 
 {% if dynamic_backends is defined %}
-{% for server_name,server_content in dynamic_backends.items()%}
-{%   for name,backends_list in server_content.items() %}
-{%     for backend in backends_list %}
-{%       if backend.visited is not defined %}
-backend {{ name | replace(".", "_") }}
-{%         if backend.balance is defined %}balance {{ backend.balance }}
-{%         endif %}
-option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
-http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
-{%         if backend.cookie.enabled %}
-cookie {{ backend.cookie.name | upper }} insert indirect nocache dynamic
-{%         endif %}
-default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
+{%   for server_name,server_content in dynamic_backends.items()%}
+{%     for name,backends_list in server_content.items() %}
 
-{%         for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
-{%           if name in iterating_server_content %}
-
-{%             set x=iterating_server_content[name].__setitem__("visited", "True") %}
-{%           endif %}
-{%         endfor %}
-
-{%       endif %}
 {%     endfor %}
 {%   endfor %}
-{% endfor %}
 {% endif %}
 
 
