@@ -214,7 +214,7 @@ acl {{ name }} {{ test }}
 {%     for name,backends_list in server_content.items() %}
 {%       for backend in backends_list %}
 {%         if backend.visited is not defined %}
-backend {{ name | replace(".", "_") }}
+backend {{ name | replace(".", "_") }}{% if loop.index > 1 %}}-{{ loop.index }}{% endif %}
 {%           if backend.balance is defined %}balance {{ backend.balance }}
 {%           endif %}
 option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
