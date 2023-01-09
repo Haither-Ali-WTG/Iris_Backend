@@ -214,7 +214,7 @@ acl {{ name }} {{ test }}
 {%     for name,backends_list in server_content.items() %}
 {%       for backend in backends_list %}
 {%         if backend.visited is not defined %}
-backend {{ name | replace(".", "_") }}{% if loop.index > 1 %}}_backend{{ loop.index }}{% endif %}
+backend {{ name | replace(".", "_") }}{% if loop.index > 1 %}-backend{{ loop.index }}{% endif %}
 
 {%           if backend.balance is defined %}balance {{ backend.balance }}
 {%           endif %}
