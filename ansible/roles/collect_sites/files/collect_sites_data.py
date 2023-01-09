@@ -50,7 +50,7 @@ def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
                  or any(like in site_name for like in config['name_like'])):
                 if site_name not in websites:
                     websites[site_name] = []
-                websites['server_ip'] = server_ip
+                config['server_ip'] = server_ip
                 websites[site_name].append(config)
                 name_matched_times += 1
 
