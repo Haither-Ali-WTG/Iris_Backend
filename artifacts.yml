@@ -7,9 +7,9 @@ variables:
   # d4edf694bf78ffeebfd18a0fbddad0a87a98f5c7
   dante_build_id: '458792'
 
-  # virgil 20230109.11
-  # Mon Jan  9 05:59:52 UTC 2023 -- Mon Jan  9 16:59:52 AEDT 2023
+  # virgil 20230110.5
+  # Mon Jan  9 22:31:09 UTC 2023 -- Tue Jan 10 09:31:09 AEDT 2023
   #
-  # Merged PR 9792: Updated teardowns.yaml
-  # b5b6a507b8833734b3d9bf56889f9ccb05d1ae89
-  virgil_build_id: '458149'
+  # Merged PR 9913: Correct slots in cabinet 208
+  # b6deb26658c1abf6129fc184ffc1c0e0d345f369
+  virgil_build_id: '458817'
