@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230106.3
-  # Fri Jan  6 07:26:42 UTC 2023 -- Fri Jan  6 18:26:42 AEDT 2023
+  # dante build artifact 20230109.1
+  # Mon Jan  9 01:56:19 UTC 2023 -- Mon Jan  9 12:56:19 AEDT 2023
   #
-  # Merge pull request 9871 from dante_artifact_upgrade into master
-  # abb133c87591a1bf8be25444456f75c1ef38fdb5
-  dante_build_id: '455324'
+  # Merge pull request 9893 from dante_artifact_upgrade into master
+  # 925ff70494f9804fc9080fea60bed11d99facca6
+  dante_build_id: '457894'
 
-  # virgil 20230106.2
-  # Thu Jan  5 22:45:11 UTC 2023 -- Fri Jan  6 09:45:11 AEDT 2023
+  # virgil 20230109.8
+  # Mon Jan  9 00:14:05 UTC 2023 -- Mon Jan  9 11:14:05 AEDT 2023
   #
-  # Merge pull request 9866 from virgil_python_upgrade into master
-  # cfff6b14c14b967c25ebac97da09cb95160980cc
-  virgil_build_id: '454908'
+  # Merged PR 9880: Make InfoSec servers maintainable
+  # 3f15d5f7dc04e2658e33becf8e5feb7d6454bf81
+  virgil_build_id: '457822'
