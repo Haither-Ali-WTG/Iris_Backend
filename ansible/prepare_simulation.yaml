@@ -10,6 +10,7 @@
         ansible_host: "172.24.0.{{ ansible_play_hosts_all.index(inventory_hostname) + 1 }}"
         pool: /mnt/storage/test_pool
         virgil_os_family: linux
+        virgil_os_variant: "{{ os }}"
         virgil_mac_oob_dante: '...'
         virgil_hostname: "{{ inventory_hostname }}"
         use_iso: false
