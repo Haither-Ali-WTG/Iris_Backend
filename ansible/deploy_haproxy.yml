@@ -86,4 +86,4 @@
         name: iris_haproxy
         tasks_from: individual_instances.yml
       # TODO: remove when actual prod machines are available
-      when: simulation
+      # when: simulation

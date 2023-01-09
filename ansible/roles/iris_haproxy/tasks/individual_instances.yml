@@ -13,25 +13,26 @@
     - etc/certs
     - etc/sorry_pages
     - run
+  delegate_to: localhost
 
-- name: Copy sorry pages to destination
-  include_tasks: copy_sorry_pages.yml
-  vars:
-    sorry_pages_list: "{{ backend_item.value.sorry_pages }}"
-  when: "'sorry_pages' in backend_item.value"
-  loop: "{{ static_backends | dict2items }}"
-  loop_control:
-    loop_var: backend_item
+# - name: Copy sorry pages to destination
+#   include_tasks: copy_sorry_pages.yml
+#   vars:
+#     sorry_pages_list: "{{ backend_item.value.sorry_pages }}"
+#   when: "'sorry_pages' in backend_item.value"
+#   loop: "{{ static_backends | dict2items }}"
+#   loop_control:
+#     loop_var: backend_item
 
-- name: Create socket and global-state files
-  file:
-    path: "{{ individual_instance_dir }}/run/{{ item }}"
-    state: touch
-    mode: u=rw,go=r
-  loop:
-    - global-state
-    - haproxy.sock
-  become: yes
+# - name: Create socket and global-state files
+#   file:
+#     path: "{{ individual_instance_dir }}/run/{{ item }}"
+#     state: touch
+#     mode: u=rw,go=r
+#   loop:
+#     - global-state
+#     - haproxy.sock
+#   become: yes
 
 - name: Populate dynamic backends variable for individual instance
   set_fact:
@@ -48,65 +49,69 @@
   become: yes
   # TODO: validate
   register: haproxy_config
+  delegate_to: localhost
 
-- name: Template out the sorry page
-  template:
-    src: sorry.http.j2
-    dest: "{{ individual_instance_dir }}/etc/sorry.http"
-    mode: u=r,go=
-  become: yes
-  # TODO: validate
-  register: sorry_page
+- debug:
+    var: haproxy_config
 
-- name: Copy certificates for individual instance
-  copy:
-    src: "certificates/{{ item }}.pem"
-    dest: "{{ individual_instance_dir }}/etc/certs/"
-    mode: ug=r,o=
-  become: yes
-  loop: "{{ certificates | default([]) }}"
-  no_log: true
-  register: copy_certificates
+# - name: Template out the sorry page
+#   template:
+#     src: sorry.http.j2
+#     dest: "{{ individual_instance_dir }}/etc/sorry.http"
+#     mode: u=r,go=
+#   become: yes
+#   # TODO: validate
+#   register: sorry_page
 
-- name: Set container name
-  set_fact:
-    container_name: "iris_{{ inventory_hostname }}"
+# - name: Copy certificates for individual instance
+#   copy:
+#     src: "certificates/{{ item }}.pem"
+#     dest: "{{ individual_instance_dir }}/etc/certs/"
+#     mode: ug=r,o=
+#   become: yes
+#   loop: "{{ certificates | default([]) }}"
+#   no_log: true
+#   register: copy_certificates
 
-- name: Check if container exists
-  vars:
-    name: "{{ container_name }}"
-  include_role:
-    name: container_runner
-    tasks_from: check_container_exists.yml
+# - name: Set container name
+#   set_fact:
+#     container_name: "iris_{{ inventory_hostname }}"
 
-- name: Deploy the haproxy container
-  include_role:
-    name: container_runner
-  vars:
-    name: "{{ container_name }}"
-    workload: deployment
-    image: "wtgopstools.azurecr.io/dante/haproxy:{{ haproxy_version }}"  # TODO configurable
-    restart: no
-    volumes:
-      - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
-      - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
-    container_user: root
-    container_dir: "{{ individual_instance_dir }}"
-    resources:  # TODO review, probably make configurable
-      production:
-        cpu: 1000m
-        memory: 1000Mi
-      simulation:
-        cpu: 200m
-        memory: 100Mi
+# - name: Check if container exists
+#   vars:
+#     name: "{{ container_name }}"
+#   include_role:
+#     name: container_runner
+#     tasks_from: check_container_exists.yml
 
-- name: Reload haproxy container
-  vars:
-    name: "{{ container_name }}"
-    signal: HUP
-  include_role:
-    name: container_runner
-    tasks_from: send_signal.yml
-  when:
-    - container_exists
-    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
+# - name: Deploy the haproxy container
+#   include_role:
+#     name: container_runner
+#   vars:
+#     name: "{{ container_name }}"
+#     workload: deployment
+#     image: "wtgopstools.azurecr.io/dante/haproxy:{{ haproxy_version }}"  # TODO configurable
+#     restart: no
+#     volumes:
+#       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
+#       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
+#     container_user: root
+#     container_dir: "{{ individual_instance_dir }}"
+#     resources:  # TODO review, probably make configurable
+#       production:
+#         cpu: 1000m
+#         memory: 1000Mi
+#       simulation:
+#         cpu: 200m
+#         memory: 100Mi
+
+# - name: Reload haproxy container
+#   vars:
+#     name: "{{ container_name }}"
+#     signal: HUP
+#   include_role:
+#     name: container_runner
+#     tasks_from: send_signal.yml
+#   when:
+#     - container_exists
+    # - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
