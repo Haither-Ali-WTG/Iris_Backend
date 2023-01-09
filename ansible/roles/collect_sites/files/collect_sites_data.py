@@ -48,8 +48,8 @@ def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
         for config in website_config:
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
-                websites[site_name] = config
-                websites[site_name]['server_ip'] = server_ip
+                config['server_ip'] = server_ip
+                websites[site_name] += [config]
                 name_matched_times += 1
 
         if name_matched_times == 0:
@@ -57,8 +57,8 @@ def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
                         site_name)
 
         if name_matched_times > 1:
-            logger.warning('%s: Site name matched more than one config. Using last one.......',
-                        site_name)
+            logger.info('%s: Site name matched %s configs.......',
+                        site_name, name_matched_times)
 
     return websites
 
