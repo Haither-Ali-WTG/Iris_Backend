@@ -1,16 +1,27 @@
 ---
-- name: Register test Red Hat license (simulation only)
-  include_role:
-    name: test_license_rhel
-  when:
-    - simulation
-    - 'os == "rhel"'
+- name: Install keepalived, registering if needed
+  block:
+    - name: Register test Red Hat license (simulation only)
+      include_role:
+        name: system_license
+      when:
+        - simulation
+        - 'os == "rhel"'
 
-- name: Install keepalived
-  package:
-    name: keepalived
-    state: present
-  become: yes
+    - name: Install keepalived
+      package:
+        name: keepalived
+        state: present
+      become: yes
+
+  always:
+    - name: Unregister test Red Hat license (simulation only)
+      include_role:
+        name: kvm_cleanup
+        tasks_from: unregister_rhel.yml
+      when:
+        - simulation
+        - 'os == "rhel"'
 
 - name: Configure keepalived
   vars:

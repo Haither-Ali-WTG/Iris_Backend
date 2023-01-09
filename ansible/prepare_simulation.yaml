@@ -1,0 +1,25 @@
+---
+- name: Set simulation facts
+  hosts: machines
+  gather_facts: no
+  tasks:
+    - name: Set additional facts for simulating the machines
+      # TODO many of these will go into the inventory or will be calculated differently
+      set_fact:
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        ansible_host: "172.24.0.{{ ansible_play_hosts_all.index(inventory_hostname) + 1 }}"
+        pool: /mnt/storage/test_pool
+        virgil_os_family: linux
+        virgil_os_variant: "{{ os }}"
+        virgil_mac_oob_dante: '...'
+        virgil_hostname: "{{ inventory_hostname }}"
+        use_iso: false
+        images_folder: "/mnt/storage"
+        virgil_ssh_authorized_keys: >-
+            {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
+        virgil_groups: ['mgmt']
+        simulation_proxy: "http://172.31.255.254:3128"
+        virgil_port_oob_dante: eth0
+        virgil_internal_fqdn: "{{ inventory_hostname }}"
+        cpu: 4
+        ram: 8192

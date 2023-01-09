@@ -139,6 +139,22 @@ stages:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - task: Ansible@0
+            displayName: 'Unregister nodes'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+            condition: always()
+
+          - task: Ansible@0
             displayName: 'Cleanup'
             inputs:
               ansibleInterface: 'agentMachine'
