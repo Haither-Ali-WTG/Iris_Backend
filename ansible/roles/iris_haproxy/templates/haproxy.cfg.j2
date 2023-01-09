@@ -212,7 +212,9 @@ acl {{ name }} {{ test }}
 {% if dynamic_backends is defined %}
 {%   for server_name,server_content in dynamic_backends.items()%}
 {%     for name,backends_list in server_content.items() %}
+{%       for backend in backends_list %}
 
+{%       endfor %}
 {%     endfor %}
 {%   endfor %}
 {% endif %}
