@@ -16,7 +16,7 @@
     - www-
   encryption: yes
   health_check: /Glow/wtg/another_healthcheck
-  port: 443
+  port: 4443
   balance: first
   cookie:
     enabled: no
