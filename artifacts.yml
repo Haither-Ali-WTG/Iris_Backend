@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230110.1
-  # Mon Jan  9 22:22:14 UTC 2023 -- Tue Jan 10 09:22:14 AEDT 2023
+  # dante build artifact 20230110.2
+  # Tue Jan 10 00:14:10 UTC 2023 -- Tue Jan 10 11:14:10 AEDT 2023
   #
-  # Merged PR 9899: Create user for various xcc version
-  # d4edf694bf78ffeebfd18a0fbddad0a87a98f5c7
-  dante_build_id: '458792'
+  # Merged PR 9902: Export the system_license role, for use in Iris
+  # 56e18a143d9526b017a1100d0bb364cbbf615655
+  dante_build_id: '458922'
 
-  # virgil 20230110.5
-  # Mon Jan  9 22:31:09 UTC 2023 -- Tue Jan 10 09:31:09 AEDT 2023
+  # virgil 20230110.8
+  # Tue Jan 10 00:16:39 UTC 2023 -- Tue Jan 10 11:16:39 AEDT 2023
   #
-  # Merged PR 9913: Correct slots in cabinet 208
-  # b6deb26658c1abf6129fc184ffc1c0e0d345f369
-  virgil_build_id: '458817'
+  # Merged PR 9918: Update RAID size for C54
+  # 1f452b28e3059903377391ab4383aab987d858e3
+  virgil_build_id: '458926'
