@@ -210,7 +210,7 @@ acl {{ name }} {{ test }}
 # ################
 
 {% if dynamic_backends is defined %}
-{%   for server_name,server_content in dynamic_backends.items()%}
+{%   for server_name,server_content in dynamic_backends.items() | dictsort%}
 {%     for name,backends_list in server_content.items() %}
 {%       for backend in backends_list %}
 {%         if backend.visited is not defined %}
@@ -225,17 +225,20 @@ cookie {{ backend.cookie.name | upper }} insert indirect nocache dynamic
 {%           endif %}
 default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
 
-{%           for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
-{%             if name in iterating_server_content %}
-{%               for iterating_backend in iterating_server_content[name] %}
-{%                 if iterating_backend == backend or ('visited' in backend and iterating_backend == backend.pop('visited')) %}
+server {{ server_name | split('.') | first }}-0 {{ backend.server_ip }}:{{ backend.port }} check
+{%           for iterating_server_name,iterating_server_content in dynamic_backends.items() | dictsort %}
+{%             if iterating_server_name != server_name %}
+{%               if name in iterating_server_content %}
+{%                 for iterating_backend in iterating_server_content[name] %}
+{%                   if iterating_backend == backend or ('visited' in backend and iterating_backend == backend.pop('visited')) %}
 server {{ iterating_server_name | split('.') | first }}-{{ loop.index }} {{ iterating_backend.server_ip }}:{{ iterating_backend.port }} check
-{%                   set x=iterating_backend.__setitem__("visited", "True") %}
-{%                 endif %}
-{%               endfor %}
+{%                     set x=iterating_backend.__setitem__("visited", "True") %}
+{%                   endif %}
+{%                 endfor %}
+{%               endif %}
 {%             endif %}
 {%           endfor %}
-
+{%           set x=backend.__setitem__("visited", "True") %}
 {%         endif %}
 {%       endfor %}
 {%     endfor %}
