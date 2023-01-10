@@ -226,11 +226,12 @@ cookie {{ backend.cookie.name | upper }} insert indirect nocache dynamic
 default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
 
 server {{ server_name | split('.') | first }}-0 {{ backend.server_ip }}:{{ backend.port }} check
+
 {%           for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
 {%             if iterating_server_name != server_name %}
 {%               if name in iterating_server_content %}
 {%                 for iterating_backend in iterating_server_content[name] %}
-{%                   if iterating_backend == backend or ('visited' in backend and iterating_backend == backend.pop('visited')) %}
+{%                   if iterating_backend == backend %}
 server {{ iterating_server_name | split('.') | first }}-{{ loop.index }} {{ iterating_backend.server_ip }}:{{ iterating_backend.port }} check
 {%                     set x=iterating_backend.__setitem__("visited", "True") %}
 {%                   endif %}
