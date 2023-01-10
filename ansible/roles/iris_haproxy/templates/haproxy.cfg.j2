@@ -231,8 +231,10 @@ server {{ server_name | split('.') | first }}-0 {{ backend.server_ip }}:{{ backe
 {%             if iterating_server_name != server_name %}
 {%               if name in iterating_server_content %}
 {%                 for iterating_backend in iterating_server_content[name] %}
+{%                   if iterating_backend == backend %}
 server {{ iterating_server_name | split('.') | first }}-{{ loop.index }} {{ iterating_backend.server_ip }}:{{ iterating_backend.port }} check
 {%                     set x=iterating_backend.__setitem__("visited", "True") %}
+{%                   endif %}
 {%                 endfor %}
 {%               endif %}
 {%             endif %}
