@@ -29,6 +29,10 @@
       # TODO: remove when actual prod machines are available
       when: simulation
 
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
+
 - name: Setup the individual instances
   hosts: individual_instances
   strategy: free
