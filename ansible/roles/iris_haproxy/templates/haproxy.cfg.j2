@@ -210,7 +210,7 @@ acl {{ name }} {{ test }}
 # ################
 
 {% if dynamic_backends is defined %}
-{%   for server_name,server_content in dynamic_backends.items() | dictsort%}
+{%   for server_name,server_content in dynamic_backends.items() %}
 {%     for name,backends_list in server_content.items() %}
 {%       for backend in backends_list %}
 {%         if backend.visited is not defined %}
@@ -226,7 +226,7 @@ cookie {{ backend.cookie.name | upper }} insert indirect nocache dynamic
 default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
 
 server {{ server_name | split('.') | first }}-0 {{ backend.server_ip }}:{{ backend.port }} check
-{%           for iterating_server_name,iterating_server_content in dynamic_backends.items() | dictsort %}
+{%           for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
 {%             if iterating_server_name != server_name %}
 {%               if name in iterating_server_content %}
 {%                 for iterating_backend in iterating_server_content[name] %}
