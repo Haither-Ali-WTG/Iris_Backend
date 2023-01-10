@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230110.3
-  # Tue Jan 10 02:13:31 UTC 2023 -- Tue Jan 10 13:13:31 AEDT 2023
+  # dante build artifact 20230110.4
+  # Tue Jan 10 04:42:37 UTC 2023 -- Tue Jan 10 15:42:37 AEDT 2023
   #
-  # Merge pull request 9907 from dante_artifact_upgrade into master
-  # 30e187878e496787728ca12a3a384ed2f68949be
-  dante_build_id: '459028'
+  # Merged PR 9923: Removed obsolet env variables from AU2 and DE1
+  # be833bf16de2ed741fd3f9537fc33e255f59ada0
+  dante_build_id: '459156'
 
   # virgil 20230110.8
   # Tue Jan 10 00:16:39 UTC 2023 -- Tue Jan 10 11:16:39 AEDT 2023
