@@ -43,7 +43,7 @@
             }},
             'virtual_router_id': {{
                 floating_ip.virtual_router_id | default(
-                  floating_ip.ip | ipaddr('int') % 256
+                  floating_ip.ip | ansible.utils.ipaddr('int') % 256
                 )
             }},
           },
