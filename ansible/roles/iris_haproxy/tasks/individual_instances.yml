@@ -49,7 +49,8 @@
   # TODO: validate
   register: haproxy_config
 
-- debug:
+- name: Debug output
+  debug:
     var: haproxy_config
 
 - name: Template out the sorry page
