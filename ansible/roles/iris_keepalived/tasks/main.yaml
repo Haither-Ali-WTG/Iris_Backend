@@ -8,6 +8,15 @@
         - simulation
         - 'os == "rhel"'
 
+    - name: Refresh apt cache (Ubuntu only)
+      apt:
+        update_cache: yes
+        autoclean: yes
+      become: yes
+      when:
+        - simulation
+        - 'os == "ubuntu"'
+
     - name: Install keepalived
       package:
         name: keepalived
