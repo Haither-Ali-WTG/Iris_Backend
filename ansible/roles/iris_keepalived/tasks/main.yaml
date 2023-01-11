@@ -12,6 +12,7 @@
       apt:
         update_cache: yes
         autoclean: yes
+      become: yes
       when:
         - simulation
         - 'os == "ubuntu"'
