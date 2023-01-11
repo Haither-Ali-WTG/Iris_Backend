@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230110.4
-  # Tue Jan 10 04:42:37 UTC 2023 -- Tue Jan 10 15:42:37 AEDT 2023
+  # dante build artifact 20230112.4
+  # Wed Jan 11 19:03:19 UTC 2023 -- Thu Jan 12 06:03:19 AEDT 2023
   #
-  # Merged PR 9923: Removed obsolet env variables from AU2 and DE1
-  # be833bf16de2ed741fd3f9537fc33e255f59ada0
-  dante_build_id: '459156'
+  # Merged PR 9915: (minor) Dante - Minor typo for -e="simulation="
+  # ab7ff03c69879062eefd50e6e72e5dc18791cd6d
+  dante_build_id: '460778'
 
-  # virgil 20230110.8
-  # Tue Jan 10 00:16:39 UTC 2023 -- Tue Jan 10 11:16:39 AEDT 2023
+  # virgil 20230112.5
+  # Wed Jan 11 22:52:26 UTC 2023 -- Thu Jan 12 09:52:26 AEDT 2023
   #
-  # Merged PR 9918: Update RAID size for C54
-  # 1f452b28e3059903377391ab4383aab987d858e3
-  virgil_build_id: '458926'
+  # Merge pull request 9950 from virgil_python_upgrade into master
+  # a17f7756ce6d360eb944e2e0ffd95f419f48c0ca
+  virgil_build_id: '460935'
