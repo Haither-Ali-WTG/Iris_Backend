@@ -228,18 +228,10 @@ default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %
 {%           for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
 {%             if name in iterating_server_content %}
 {%               for iterating_backend in iterating_server_content[name] %}
-
-
-{{ iterating_backend }}
-next
-{{ backend }}
-
-
 {%                 if iterating_backend == backend %}
 server {{ iterating_server_name | split('.') | first }}-{{ loop.index }} {{ iterating_backend.server_ip }}:{{ iterating_backend.port }} check
 {%                   if iterating_server_name != server_name %}
 {%                     set x=iterating_backend.__setitem__("visited", "True") %}
-{{
 {%                   endif %}
 {%                 endif %}
 {%               endfor %}
