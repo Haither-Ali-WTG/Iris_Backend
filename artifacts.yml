@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230112.5
-  # Thu Jan 12 00:27:37 UTC 2023 -- Thu Jan 12 11:27:37 AEDT 2023
+  # dante build artifact 20230112.6
+  # Thu Jan 12 04:09:20 UTC 2023 -- Thu Jan 12 15:09:20 AEDT 2023
   #
-  # Merged PR 9922: Get telegraf info from Virgil
-  # 29324f5db1e040635a13d5658aba2242f390a23f
-  dante_build_id: '461009'
+  # Merge pull request 9948 from dante_artifact_upgrade into master
+  # c568868fb94b134c699ebe92c84a83f650ad8168
+  dante_build_id: '461196'
 
   # virgil 20230112.10
   # Thu Jan 12 00:41:15 UTC 2023 -- Thu Jan 12 11:41:15 AEDT 2023
