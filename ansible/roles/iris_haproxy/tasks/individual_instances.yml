@@ -49,10 +49,6 @@
   # TODO: validate
   register: haproxy_config
 
-- name: Debug output
-  debug:
-    var: haproxy_config
-
 - name: Template out the sorry page
   template:
     src: sorry.http.j2
