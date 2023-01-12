@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230112.4
-  # Wed Jan 11 19:03:19 UTC 2023 -- Thu Jan 12 06:03:19 AEDT 2023
+  # dante build artifact 20230112.5
+  # Thu Jan 12 00:27:37 UTC 2023 -- Thu Jan 12 11:27:37 AEDT 2023
   #
-  # Merged PR 9915: (minor) Dante - Minor typo for -e="simulation="
-  # ab7ff03c69879062eefd50e6e72e5dc18791cd6d
-  dante_build_id: '460778'
+  # Merged PR 9922: Get telegraf info from Virgil
+  # 29324f5db1e040635a13d5658aba2242f390a23f
+  dante_build_id: '461009'
 
-  # virgil 20230112.5
-  # Wed Jan 11 22:52:26 UTC 2023 -- Thu Jan 12 09:52:26 AEDT 2023
+  # virgil 20230112.10
+  # Thu Jan 12 00:41:15 UTC 2023 -- Thu Jan 12 11:41:15 AEDT 2023
   #
-  # Merge pull request 9950 from virgil_python_upgrade into master
-  # a17f7756ce6d360eb944e2e0ffd95f419f48c0ca
-  virgil_build_id: '460935'
+  # Merged PR 9947: Consolidate multiple domain_name schema
+  # b009ec773d542f6343001dcc78fe20d800dff0a8
+  virgil_build_id: '461033'
