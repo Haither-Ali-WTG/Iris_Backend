@@ -210,39 +210,30 @@ acl {{ name }} {{ test }}
 # ################
 
 {% if dynamic_backends is defined %}
-{% for server_name,server_content in dynamic_backends.items()%}
-{%   for name,backends_list in server_content['websites_list'].items() %}
-{%     for backend in backends_list %}
-{%       if backend.visited is not defined %}
-backend {{ name | replace(".", "_") }}{% if loop.index > 1 %}-backend{{ loop.index }}{% endif %}
-
-{%         if backend.balance is defined %}balance {{ backend.balance }}
-{%         endif %}
-option httpchk HEAD {{ backend.health_check }} HTTP/1.1\r\nHost:\ {{ name }}
-http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
-{%         if backend.cookie.enabled %}
-cookie {{ backend.cookie.name | upper }} insert indirect nocache dynamic
-{%         endif %}
-default-server inter 10000 {%- if backend.encryption is defined %} ssl{% endif %}
-
-{%         for iterating_server_name,iterating_server_content in dynamic_backends.items() %}
-{%           if name in iterating_server_content['websites_list'] %}
-{%             for iterating_backend in iterating_server_content['websites_list'][name] %}
-{%               if iterating_backend == backend %}
-server {{ iterating_server_name | split('.') | first }} {{ iterating_server_content.server_ip }}:{{ iterating_backend.port }} check
-
-{%                 if iterating_server_name != server_name %}
-{%                   set  x=iterating_backend.__setitem__("visited", "True") %}
-{%                 endif %}
-{%               endif %}
-{%             endfor %}
-{%           endif %}
-{%         endfor %}
+{%   for backend_name,config_list in dynamic_backends.items() %}
+{%     for config in config_list %}
+backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
+{%       if config.balance is defined %}balance {{ config.balance }}
 {%       endif %}
-{%       set  x=backend.__setitem__("visited", "True") %}
+option httpchk HEAD {{ config.health_check }} HTTP/1.1\r\nHost:\ {{ backend_name }}
+http-check expect rstatus {{ config.check_expect | default('200|401|403|302|405') }}
+{%       if config.cookie.enabled %}
+cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic
+{%       endif %}
+default-server inter 10000 {%- if config.encryption is defined %} ssl{% endif %}
+
+{%       for server_name,server_content in servers_data.items() %}
+{%         if backend_name in server_content['websites_list'] %}
+{%           for iterating_config in server_content['websites_list'][backend_name] %}
+{%             if iterating_config == config %}
+server {{ server_name | split('.') | first }} {{ server_content.server_ip }}:{{ iterating_config.port }} check
+{%             endif %}
+{%           endfor %}
+{%         endif %}
+{%       endfor %}
+
 {%     endfor %}
 {%   endfor %}
-{% endfor %}
 {% endif %}
 
 
