@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230112.6
-  # Thu Jan 12 04:09:20 UTC 2023 -- Thu Jan 12 15:09:20 AEDT 2023
+  # dante build artifact 20230113.1
+  # Thu Jan 12 14:21:59 UTC 2023 -- Fri Jan 13 01:21:59 AEDT 2023
   #
-  # Merge pull request 9948 from dante_artifact_upgrade into master
-  # c568868fb94b134c699ebe92c84a83f650ad8168
-  dante_build_id: '461196'
+  # Merged PR 9728: Dante - Change KVM Rebuild Schedule + Cluster Checks
+  # 24d50a1d405370a0adeb7f99727cc31f641857cb
+  dante_build_id: '461639'
 
-  # virgil 20230112.10
-  # Thu Jan 12 00:41:15 UTC 2023 -- Thu Jan 12 11:41:15 AEDT 2023
+  # virgil 20230113.2
+  # Thu Jan 12 22:46:36 UTC 2023 -- Fri Jan 13 09:46:36 AEDT 2023
   #
-  # Merged PR 9947: Consolidate multiple domain_name schema
-  # b009ec773d542f6343001dcc78fe20d800dff0a8
-  virgil_build_id: '461033'
+  # Merge pull request 9968 from virgil_python_upgrade into master
+  # 07351ce2e35a75d33ac0ebf81893ceb43d626c89
+  virgil_build_id: '461982'

@@ -135,6 +135,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="s3_host=au2s3-1.wtg.ws"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
