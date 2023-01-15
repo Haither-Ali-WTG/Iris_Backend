@@ -35,7 +35,7 @@
 
 - name: Populate servers data variable for individual instance
   set_fact:
-    servers_data: "{{ complete_iis_data.clustered_instances[clustered_instance_name] }}"
+    servers_data: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
   when:
     - "'complete_iis_data' in hostvars['localhost']"
     - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
