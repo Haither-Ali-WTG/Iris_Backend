@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230113.3
-  # Fri Jan 13 02:51:22 UTC 2023 -- Fri Jan 13 13:51:22 AEDT 2023
+  # dante build artifact 20230113.5
+  # Fri Jan 13 07:57:47 UTC 2023 -- Fri Jan 13 18:57:47 AEDT 2023
   #
-  # Merged PR 9975: Dante - Kafka Scheduled rebuilds
-  # 77437d5df2a4106ef185299209502e7238736378
-  dante_build_id: '462174'
+  # Merged PR 9979: WI00566746 Dante - Move K8 Secrets to Azure Key Vault
+  # 5cc625cf1082c14b462677b7061c771e1f112563
+  dante_build_id: '462380'
 
-  # virgil 20230113.2
-  # Thu Jan 12 22:46:36 UTC 2023 -- Fri Jan 13 09:46:36 AEDT 2023
+  # virgil 20230116.2
+  # Sun Jan 15 22:00:33 UTC 2023 -- Mon Jan 16 09:00:33 AEDT 2023
   #
-  # Merge pull request 9968 from virgil_python_upgrade into master
-  # 07351ce2e35a75d33ac0ebf81893ceb43d626c89
-  virgil_build_id: '461982'
+  # Merge pull request 9989 from virgil_python_upgrade into master
+  # f9354dbfd5238e5b7ba9855dbe2771fd9ea2be5f
+  virgil_build_id: '464739'
