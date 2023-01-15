@@ -120,7 +120,7 @@ pyparsing==3.0.9
     # via packaging
 pyrsistent==0.19.3
     # via jsonschema
-pytest==7.2.0
+pytest==7.2.1
     # via
     #   -r requirements.in
     #   pytest-cov
@@ -149,7 +149,7 @@ requests-ntlm==1.1.0
     # via pywinrm
 resolvelib==0.8.1
     # via ansible-core
-rich==13.0.1
+rich==13.1.0
     # via ansible-lint
 ruamel-yaml==0.17.21
     # via
