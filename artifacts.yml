@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230113.5
-  # Fri Jan 13 07:57:47 UTC 2023 -- Fri Jan 13 18:57:47 AEDT 2023
+  # dante build artifact 20230116.1
+  # Mon Jan 16 01:25:51 UTC 2023 -- Mon Jan 16 12:25:51 AEDT 2023
   #
-  # Merged PR 9979: WI00566746 Dante - Move K8 Secrets to Azure Key Vault
-  # 5cc625cf1082c14b462677b7061c771e1f112563
-  dante_build_id: '462380'
+  # Merged PR 9993: s3_host variable added to fix the pipeline
+  # 1257143c33dd3c9fc83c04cf83fc0a6584984673
+  dante_build_id: '464897'
 
   # virgil 20230116.2
   # Sun Jan 15 22:00:33 UTC 2023 -- Mon Jan 16 09:00:33 AEDT 2023
