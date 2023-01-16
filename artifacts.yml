@@ -7,9 +7,9 @@ variables:
   # bd52e91c9b283c52825eb47eb25d9e422f28d175
   dante_build_id: '465032'
 
-  # virgil 20230116.10
-  # Mon Jan 16 02:15:41 UTC 2023 -- Mon Jan 16 13:15:41 AEDT 2023
+  # virgil 20230116.13
+  # Mon Jan 16 05:00:26 UTC 2023 -- Mon Jan 16 16:00:26 AEDT 2023
   #
-  # Merged PR 9566: Re-instate Windows VMs
-  # 15ab006217db920aa848150391ed68a4561ed046
-  virgil_build_id: '464960'
+  # Merged PR 9998: Add 8 new VMware hosts for SQL in AU2
+  # ab04cd6c544b8f7bb11e7ed8833d360d26d4fb1c
+  virgil_build_id: '465120'
