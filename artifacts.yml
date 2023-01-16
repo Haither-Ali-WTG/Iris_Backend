@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230116.1
-  # Mon Jan 16 01:25:51 UTC 2023 -- Mon Jan 16 12:25:51 AEDT 2023
+  # dante build artifact 20230116.2
+  # Mon Jan 16 03:16:27 UTC 2023 -- Mon Jan 16 14:16:27 AEDT 2023
   #
-  # Merged PR 9993: s3_host variable added to fix the pipeline
-  # 1257143c33dd3c9fc83c04cf83fc0a6584984673
-  dante_build_id: '464897'
+  # Merged PR 9957: Dante Python - Pin selinux package
+  # bd52e91c9b283c52825eb47eb25d9e422f28d175
+  dante_build_id: '465032'
 
   # virgil 20230116.10
   # Mon Jan 16 02:15:41 UTC 2023 -- Mon Jan 16 13:15:41 AEDT 2023
