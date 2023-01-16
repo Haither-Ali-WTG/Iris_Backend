@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230116.2
-  # Mon Jan 16 03:16:27 UTC 2023 -- Mon Jan 16 14:16:27 AEDT 2023
+  # dante build artifact 20230116.3
+  # Mon Jan 16 11:34:24 UTC 2023 -- Mon Jan 16 22:34:24 AEDT 2023
   #
-  # Merged PR 9957: Dante Python - Pin selinux package
-  # bd52e91c9b283c52825eb47eb25d9e422f28d175
-  dante_build_id: '465032'
+  # Merge pull request 9992 from dante_artifact_upgrade into master
+  # ce711f94b37acdfa8ae567ac59bf1486ac477256
+  dante_build_id: '465397'
 
   # virgil 20230116.13
   # Mon Jan 16 05:00:26 UTC 2023 -- Mon Jan 16 16:00:26 AEDT 2023
