@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230116.3
-  # Mon Jan 16 11:34:24 UTC 2023 -- Mon Jan 16 22:34:24 AEDT 2023
+  # dante build artifact 20230117.1
+  # Mon Jan 16 22:59:55 UTC 2023 -- Tue Jan 17 09:59:55 AEDT 2023
   #
-  # Merge pull request 9992 from dante_artifact_upgrade into master
-  # ce711f94b37acdfa8ae567ac59bf1486ac477256
-  dante_build_id: '465397'
+  # Merge pull request 10014 from dante_python_upgrade into master
+  # d94ab06fd3852cc937beb1fbb08669a9f19ac61e
+  dante_build_id: '465832'
 
-  # virgil 20230116.13
-  # Mon Jan 16 05:00:26 UTC 2023 -- Mon Jan 16 16:00:26 AEDT 2023
+  # virgil 20230117.3
+  # Mon Jan 16 22:57:42 UTC 2023 -- Tue Jan 17 09:57:42 AEDT 2023
   #
-  # Merged PR 9998: Add 8 new VMware hosts for SQL in AU2
-  # ab04cd6c544b8f7bb11e7ed8833d360d26d4fb1c
-  virgil_build_id: '465120'
+  # Merged PR 10012: Add new RDSH VLANs to Hyper-V BE
+  # 793e09ddd9008d29fcf945c367a9c1f5ad5250bb
+  virgil_build_id: '465829'
