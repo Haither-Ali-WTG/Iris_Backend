@@ -33,7 +33,7 @@ def load_yaml_from_file(file_name):
 
 def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
     """Combine sites list with correspondent configuration from websites.yml"""
-    websites = {}
+    websites = {'server_ip': server_ip, 'websites_list': {}}
 
     for site_name in sites_list:
         site_name = site_name.lower()
@@ -48,8 +48,9 @@ def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
         for config in website_config:
             if (site_name.startswith(tuple(config['starts_with']))
                  or any(like in site_name for like in config['name_like'])):
-                websites[site_name] = config
-                websites[site_name]['server_ip'] = server_ip
+                if site_name not in websites['websites_list']:
+                    websites['websites_list'][site_name] = []
+                websites['websites_list'][site_name].append(config)
                 name_matched_times += 1
 
         if name_matched_times == 0:
@@ -57,8 +58,8 @@ def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
                         site_name)
 
         if name_matched_times > 1:
-            logger.warning('%s: Site name matched more than one config. Using last one.......',
-                        site_name)
+            logger.info('%s: Site name matched %s configs.......',
+                        site_name, name_matched_times)
 
     return websites
 

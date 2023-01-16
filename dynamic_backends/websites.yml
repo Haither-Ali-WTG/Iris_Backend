@@ -10,6 +10,18 @@
   cookie:
     enabled: no
   maintenance_page: example.html
+  name_suffix: ''
+- name_like:
+    - glow
+  starts_with:
+    - www-
+  encryption: yes
+  health_check: /Glow/wtg/another_healthcheck
+  port: 4443
+  balance: first
+  cookie:
+    enabled: no
+  name_suffix: '-backend2'
 - name_like:
     - services
     - accounting
@@ -20,6 +32,7 @@
   port: 443
   cookie:
     enabled: no
+  name_suffix: ''
 - name_like:
     - neo-
   starts_with:
@@ -31,3 +44,4 @@
   cookie:
     enabled: yes
     name: glow
+  name_suffix: ''
