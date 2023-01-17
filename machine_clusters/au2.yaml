@@ -6,22 +6,22 @@ au2-prod-frontend-1:
     au2_machine3: ~
   floating_ips:
     - description: WiseCloud RDP (PROD)
-      ip: 10.2.64.131
+      ip: 10.2.64.135
       preempt: no
       priority: [au2_machine1, au2_machine2, au2_machine3]
     - description: ediProd RDP (CORP)
-      ip: 10.2.64.132
+      ip: 10.2.64.136
       preempt: no
       priority: [au2_machine2, au2_machine1, au2_machine3]
     - description: webservices
-      ip: 10.2.64.133
+      ip: 10.2.64.137
       preempt: yes
       priority: [au2_machine1, au2_machine2, au2_machine3]
     - description: webservices
-      ip: 10.2.64.134
+      ip: 10.2.64.138
       preempt: yes
       priority: [au2_machine2, au2_machine3, au2_machine1]
     - description: webservices
-      ip: 10.2.64.135
+      ip: 10.2.64.139
       preempt: yes
       priority: [au2_machine3, au2_machine1, au2_machine2]
