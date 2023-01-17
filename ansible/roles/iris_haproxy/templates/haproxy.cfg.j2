@@ -215,6 +215,8 @@ acl {{ name }} {{ test }}
 backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
 {%       if config.balance is defined %}balance {{ config.balance }}
 {%       endif %}
+{%   if config.fullconn is defined %}fullconn {{ config.fullconn }}
+{%   endif %}
 option httpchk HEAD {{ config.health_check }} HTTP/1.1\r\nHost:\ {{ backend_name }}
 http-check expect rstatus {{ config.check_expect | default('200|401|403|302|405') }}
 {%       if config.cookie.enabled %}
