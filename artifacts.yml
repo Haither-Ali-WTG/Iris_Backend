@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230117.3
-  # Tue Jan 17 03:21:12 UTC 2023 -- Tue Jan 17 14:21:12 AEDT 2023
+  # dante build artifact 20230118.1
+  # Tue Jan 17 14:07:54 UTC 2023 -- Wed Jan 18 01:07:54 AEDT 2023
   #
-  # Merge pull request 10018 from dante_artifact_upgrade into master
-  # 7543425eec281cbf677c4e52772db08bc5ea61c7
-  dante_build_id: '466076'
+  # Merged PR 10025: (very minor) Dante - Minos check comment for clusters
+  # 4a2dc6dc7f6a68d2b36be9fec2c42cfd109ee869
+  dante_build_id: '466546'
 
-  # virgil 20230117.5
-  # Mon Jan 16 23:53:09 UTC 2023 -- Tue Jan 17 10:53:09 AEDT 2023
+  # virgil 20230118.2
+  # Tue Jan 17 22:36:07 UTC 2023 -- Wed Jan 18 09:36:07 AEDT 2023
   #
-  # Merged PR 10015: Add new VLAN 1064 load balancer
-  # f8af0eb8ea92e387c7d80ca88239cf8b065e7165
-  virgil_build_id: '465893'
+  # Merged PR 10032: Remove LACP config for de1wp-svir-003
+  # cb4cfa5876c8888e962c382d216ad1d954edc920
+  virgil_build_id: '466858'
