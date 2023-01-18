@@ -7,9 +7,9 @@ variables:
   # 65cf2e0578639f3067314543b52a8c354d4e9aff
   dante_build_id: '466947'
 
-  # virgil 20230118.2
-  # Tue Jan 17 22:36:07 UTC 2023 -- Wed Jan 18 09:36:07 AEDT 2023
+  # virgil 20230118.4
+  # Wed Jan 18 03:27:29 UTC 2023 -- Wed Jan 18 14:27:29 AEDT 2023
   #
-  # Merged PR 10032: Remove LACP config for de1wp-svir-003
-  # cb4cfa5876c8888e962c382d216ad1d954edc920
-  virgil_build_id: '466858'
+  # Merged PR 10024: Add-new-servers-for-haproxy-and-hyperv
+  # fe24a54a66e966ce84f43541ffcc0eeebc41f651
+  virgil_build_id: '467115'
