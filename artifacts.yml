@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230118.3
-  # Wed Jan 18 06:45:05 UTC 2023 -- Wed Jan 18 17:45:05 AEDT 2023
+  # dante build artifact 20230118.6
+  # Wed Jan 18 10:05:14 UTC 2023 -- Wed Jan 18 21:05:14 AEDT 2023
   #
-  # Merged PR 10049: Apply selinux context to mongo scripts folder
-  # 9a4d5dc0e90d545d1c0b6ace4380bb210e1d2bb0
-  dante_build_id: '467266'
+  # Merged PR 10053: Apply selinux context to mongo scripts folder
+  # e924316aa733b129cf047d6a23b5940eaf7bbb60
+  dante_build_id: '467425'
 
   # virgil 20230118.4
   # Wed Jan 18 03:27:29 UTC 2023 -- Wed Jan 18 14:27:29 AEDT 2023
