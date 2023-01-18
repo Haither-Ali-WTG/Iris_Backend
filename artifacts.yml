@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230118.2
-  # Wed Jan 18 00:11:38 UTC 2023 -- Wed Jan 18 11:11:38 AEDT 2023
+  # dante build artifact 20230118.3
+  # Wed Jan 18 06:45:05 UTC 2023 -- Wed Jan 18 17:45:05 AEDT 2023
   #
-  # Merged PR 9997: Expand the fcqn lint won'tfix to a variant rule
-  # 65cf2e0578639f3067314543b52a8c354d4e9aff
-  dante_build_id: '466947'
+  # Merged PR 10049: Apply selinux context to mongo scripts folder
+  # 9a4d5dc0e90d545d1c0b6ace4380bb210e1d2bb0
+  dante_build_id: '467266'
 
   # virgil 20230118.4
   # Wed Jan 18 03:27:29 UTC 2023 -- Wed Jan 18 14:27:29 AEDT 2023
