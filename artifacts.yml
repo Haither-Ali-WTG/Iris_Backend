@@ -1,11 +1,11 @@
 ---
 variables:
-  # dante build artifact 20230118.1
-  # Tue Jan 17 14:07:54 UTC 2023 -- Wed Jan 18 01:07:54 AEDT 2023
+  # dante build artifact 20230118.2
+  # Wed Jan 18 00:11:38 UTC 2023 -- Wed Jan 18 11:11:38 AEDT 2023
   #
-  # Merged PR 10025: (very minor) Dante - Minos check comment for clusters
-  # 4a2dc6dc7f6a68d2b36be9fec2c42cfd109ee869
-  dante_build_id: '466546'
+  # Merged PR 9997: Expand the fcqn lint won'tfix to a variant rule
+  # 65cf2e0578639f3067314543b52a8c354d4e9aff
+  dante_build_id: '466947'
 
   # virgil 20230118.2
   # Tue Jan 17 22:36:07 UTC 2023 -- Wed Jan 18 09:36:07 AEDT 2023
