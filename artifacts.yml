@@ -1,15 +1,15 @@
 ---
 variables:
-  # dante build artifact 20230118.6
-  # Wed Jan 18 10:05:14 UTC 2023 -- Wed Jan 18 21:05:14 AEDT 2023
+  # dante build artifact 20230119.1
+  # Wed Jan 18 23:15:40 UTC 2023 -- Thu Jan 19 10:15:40 AEDT 2023
   #
-  # Merged PR 10053: Apply selinux context to mongo scripts folder
-  # e924316aa733b129cf047d6a23b5940eaf7bbb60
-  dante_build_id: '467425'
+  # Merged PR 10050: Lethe dump fixed
+  # e6ac377ac3ab11829f9c10aaffe4885d256ec984
+  dante_build_id: '467956'
 
-  # virgil 20230118.4
-  # Wed Jan 18 03:27:29 UTC 2023 -- Wed Jan 18 14:27:29 AEDT 2023
+  # virgil 20230119.6
+  # Wed Jan 18 23:26:20 UTC 2023 -- Thu Jan 19 10:26:20 AEDT 2023
   #
-  # Merged PR 10024: Add-new-servers-for-haproxy-and-hyperv
-  # fe24a54a66e966ce84f43541ffcc0eeebc41f651
-  virgil_build_id: '467115'
+  # Merged PR 10065: Update future fronend-2 nodes
+  # 97bcc8471d0ce9c97b010ef05905c3a13f1356c1
+  virgil_build_id: '467969'
