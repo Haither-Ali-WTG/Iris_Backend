@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230119.2
-  # Thu Jan 19 01:04:20 UTC 2023 -- Thu Jan 19 12:04:20 AEDT 2023
+  # Dante Build Artifact 20230119.3
+  # Thu Jan 19 02:58:03 UTC 2023 -- Thu Jan 19 13:58:03 AEDT 2023
   #
-  # Merged PR 10007: Dante - Redo Kafka restart logic
-  # 06e0ab76d0cf458c4c2e5196ee51fa1969324b1c
-  dante_build_id: '468068'
+  # Merged PR 10066: Acknowledge new ansible-lint warning (no changelog for the SOE)
+  # d22bd242441873ec0019815b1495cc8d072916de
+  dante_build_id: '468154'
 
   # virgil 20230119.8
   # Thu Jan 19 00:37:02 UTC 2023 -- Thu Jan 19 11:37:02 AEDT 2023
