@@ -13,3 +13,12 @@
       | dict2items
     }}
   become: yes
+
+- name: Deploy ulimit limits
+  copy:
+    dest: /etc/security/limits.conf
+    src: limits.conf
+    owner: root
+    group: root
+    mode: u=rw,go=r
+  become: yes
