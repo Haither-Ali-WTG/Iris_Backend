@@ -7,9 +7,9 @@ variables:
   # d22bd242441873ec0019815b1495cc8d072916de
   dante_build_id: '468154'
 
-  # virgil 20230119.8
-  # Thu Jan 19 00:37:02 UTC 2023 -- Thu Jan 19 11:37:02 AEDT 2023
+  # virgil 20230119.10
+  # Thu Jan 19 04:16:16 UTC 2023 -- Thu Jan 19 15:16:16 AEDT 2023
   #
-  # Merged PR 10068: Adding new san au2san11 mgt interfaces
-  # 9b537656b4e9a9b0cdcadafa26b2ad2a7aff9f90
-  virgil_build_id: '468030'
+  # Merged PR 10073: CS01114839 secrets
+  # ca73b7e691ab2a3290d3ab16a2d89c90cf6c9fa4
+  virgil_build_id: '468236'
