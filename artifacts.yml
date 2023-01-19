@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230119.3
-  # Thu Jan 19 02:58:03 UTC 2023 -- Thu Jan 19 13:58:03 AEDT 2023
+  # Dante Build Artifact 20230120.2
+  # Thu Jan 19 23:53:11 UTC 2023 -- Fri Jan 20 10:53:11 AEDT 2023
   #
-  # Merged PR 10066: Acknowledge new ansible-lint warning (no changelog for the SOE)
-  # d22bd242441873ec0019815b1495cc8d072916de
-  dante_build_id: '468154'
+  # Merge pull request 10084 from dante_python_upgrade into master
+  # d80fb657e084034b4e9ca6356480bfe0a847c221
+  dante_build_id: '469047'
 
-  # virgil 20230119.10
-  # Thu Jan 19 04:16:16 UTC 2023 -- Thu Jan 19 15:16:16 AEDT 2023
+  # virgil 20230120.4
+  # Thu Jan 19 23:20:22 UTC 2023 -- Fri Jan 20 10:20:22 AEDT 2023
   #
-  # Merged PR 10073: CS01114839 secrets
-  # ca73b7e691ab2a3290d3ab16a2d89c90cf6c9fa4
-  virgil_build_id: '468236'
+  # Merged PR 10054: New-vlan-for-sand-management
+  # b688987d157bea55f43848793c47f7a91ad4699a
+  virgil_build_id: '469008'
