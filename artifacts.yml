@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230120.4
-  # Fri Jan 20 03:44:43 UTC 2023 -- Fri Jan 20 14:44:43 AEDT 2023
+  # Dante Build Artifact 20230120.5
+  # Fri Jan 20 05:25:13 UTC 2023 -- Fri Jan 20 16:25:13 AEDT 2023
   #
-  # Merged PR 10040: Kafka - Omit variable if not simulation
-  # c8680f4686f6b9571692e82aaea7b2178af6473f
-  dante_build_id: '469217'
+  # Merged PR 10005: Dante - Kafka Wait for deployments
+  # 48ff3fdeb26b0964422a5404dc6aa9bada17042c
+  dante_build_id: '469309'
 
   # virgil 20230120.6
   # Fri Jan 20 03:25:27 UTC 2023 -- Fri Jan 20 14:25:27 AEDT 2023
