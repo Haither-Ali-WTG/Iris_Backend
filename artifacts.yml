@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230120.5
-  # Fri Jan 20 05:25:13 UTC 2023 -- Fri Jan 20 16:25:13 AEDT 2023
+  # Dante Build Artifact 20230123.1
+  # Sun Jan 22 22:22:51 UTC 2023 -- Mon Jan 23 09:22:51 AEDT 2023
   #
-  # Merged PR 10005: Dante - Kafka Wait for deployments
-  # 48ff3fdeb26b0964422a5404dc6aa9bada17042c
-  dante_build_id: '469309'
+  # Merged PR 10097: (fix) - Dante - Remove omit from if else statement
+  # c3d16e249beb82be60a6a4721f6ff84d0ab0b3a1
+  dante_build_id: '471518'
 
-  # virgil 20230120.6
-  # Fri Jan 20 03:25:27 UTC 2023 -- Fri Jan 20 14:25:27 AEDT 2023
+  # virgil 20230123.2
+  # Sun Jan 22 22:19:49 UTC 2023 -- Mon Jan 23 09:19:49 AEDT 2023
   #
-  # Merged PR 10081: Kafka streams - Idempotent & Transactional.id
-  # eeaa36873ad300e84377fb0b79a3bac0e26614c5
-  virgil_build_id: '469196'
+  # Merge pull request 10101 from virgil_python_upgrade into master
+  # 43b133c2bac482a7e0637013503cce289f19cff3
+  virgil_build_id: '471515'
