@@ -10,7 +10,7 @@
     headers:
       Host: "{{ item.host }}"
     validate_certs: 'yes'
-    status_code: "{{ item.status }}"
+    status_code: "{{ item.status | int }}"
   retries: 5
   delay: 1
   loop: "{{ tests }}"
