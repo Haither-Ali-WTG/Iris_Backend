@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230123.1
-  # Sun Jan 22 22:22:51 UTC 2023 -- Mon Jan 23 09:22:51 AEDT 2023
+  # Dante Build Artifact 20230123.3
+  # Mon Jan 23 06:30:02 UTC 2023 -- Mon Jan 23 17:30:02 AEDT 2023
   #
-  # Merged PR 10097: (fix) - Dante - Remove omit from if else statement
-  # c3d16e249beb82be60a6a4721f6ff84d0ab0b3a1
-  dante_build_id: '471518'
+  # Merge pull request 10082 from dante_artifact_upgrade into master
+  # f8ef3724f157b64df6d0b1cf3520c3ea4b3d16c1
+  dante_build_id: '471869'
 
   # virgil 20230123.2
   # Sun Jan 22 22:19:49 UTC 2023 -- Mon Jan 23 09:19:49 AEDT 2023
