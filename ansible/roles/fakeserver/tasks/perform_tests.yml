@@ -1,7 +1,7 @@
 ---
 - name: Perform tests
   uri:
-    follow_redirects: yes
+    follow_redirects: no
     use_proxy: 'no'
     url: >-
       http{{ 's' if item.ssl else '' }}://{{ item.host }}:{{
