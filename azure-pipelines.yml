@@ -71,7 +71,7 @@ stages:
 
   - stage: Simulations
     # dependsOn: [Tests_and_lint]
-    pool: simulations
+    pool: test-pool
     jobs:
       - job: Simulation
         steps:

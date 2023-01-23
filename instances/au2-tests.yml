@@ -36,8 +36,8 @@ clustered_instances:
         - host: rdg.wisetechglobal.com
           path: /
           ssl: no
-          statuses: [200]
+          statuses: [302]
         - host: sandtsg.wtg.zone
           path: /
           ssl: no
-          statuses: [200]
+          statuses: [302]
