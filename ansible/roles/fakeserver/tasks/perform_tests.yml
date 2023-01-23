@@ -10,7 +10,7 @@
     headers:
       Host: "{{ item.host }}"
     validate_certs: 'yes'
-    status_code: "200"
+    status_code: "{{ item.status }}"
   retries: 5
   delay: 1
   loop: "{{ tests }}"
@@ -19,4 +19,4 @@
   register: test_result
   until:
     - test_result
-    - test_result.status == 200
+    - test_result.status == item.status
