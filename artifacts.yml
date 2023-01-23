@@ -7,9 +7,9 @@ variables:
   # f8ef3724f157b64df6d0b1cf3520c3ea4b3d16c1
   dante_build_id: '471869'
 
-  # virgil 20230123.2
-  # Sun Jan 22 22:19:49 UTC 2023 -- Mon Jan 23 09:19:49 AEDT 2023
+  # virgil 20230124.5
+  # Mon Jan 23 23:07:29 UTC 2023 -- Tue Jan 24 10:07:29 AEDT 2023
   #
-  # Merge pull request 10101 from virgil_python_upgrade into master
-  # 43b133c2bac482a7e0637013503cce289f19cff3
-  virgil_build_id: '471515'
+  # Merged PR 10117: Add VLAN 1088 to US2 VMware profile
+  # e50699dc1a44014787925f3208d2eee54ca9943a
+  virgil_build_id: '472456'
