@@ -157,12 +157,12 @@ stages:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
             condition: always()
 
-          - task: Ansible@0
-            displayName: 'Cleanup'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
-              failOnStdErr: false
-              args: >-
-                -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
-            condition: always()
+          # - task: Ansible@0
+          #   displayName: 'Cleanup'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+          #     failOnStdErr: false
+          #     args: >-
+          #       -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
+          #   condition: always()
