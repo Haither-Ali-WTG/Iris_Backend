@@ -41,4 +41,11 @@ clustered_instances:
         maxconn: 20000
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - star-wisetechglobal-com
+        - star-wisetechglobal-cn
+        - star-wtg-zone
+      stats:
+        ports:
+          web: 2037
+          socket: 2036

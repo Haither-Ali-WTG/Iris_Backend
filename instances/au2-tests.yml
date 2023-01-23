@@ -22,3 +22,22 @@ clustered_instances:
           path: /healthcheck
           ssl: no
           statuses: [200]
+
+    au2corprdg:
+      tests:
+        - host: rdg.wisetechglobal.com
+          path: /
+          ssl: yes
+          statuses: [200]
+        - host: sandtsg.wtg.zone
+          path: /
+          ssl: yes
+          statuses: [200]
+        - host: rdg.wisetechglobal.com
+          path: /
+          ssl: no
+          statuses: [302]
+        - host: sandtsg.wtg.zone
+          path: /
+          ssl: no
+          statuses: [302]
