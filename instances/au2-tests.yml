@@ -28,11 +28,11 @@ clustered_instances:
         - host: rdg.wisetechglobal.com
           path: /
           ssl: yes
-          status: 200
+          status: 302
         - host: sandtsg.wtg.zone
           path: /
           ssl: yes
-          status: 200
+          status: 302
         - host: rdg.wisetechglobal.com
           path: /
           ssl: no
