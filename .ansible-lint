@@ -6,8 +6,6 @@ skip_list:
   # that they're being used together, so they give a lot of false positives.
   - run_once[play]  # Avoid "strategy: free"
   - run_once[task]  # Avoid "run_once: yes"
-  # There is an issue currently with url module accepting int only for status_code. lynt can't convert str to int
-  - args[module]  # Validating module arguments.
 
 # make warnings fatal
 warn_list: []

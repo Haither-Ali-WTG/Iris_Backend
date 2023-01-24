@@ -1,5 +1,6 @@
 ---
-- name: Perform tests
+# There is an issue currently with url module accepting int only for status_code. lynt can't convert str to int
+- name: Perform tests  # noqa args[module]
   uri:
     follow_redirects: no
     use_proxy: 'no'
@@ -10,7 +11,7 @@
     headers:
       Host: "{{ item.host }}"
     validate_certs: 'yes'
-    status_code: "{{ item.status | string }}"
+    status_code: "{{ item.status }}"
   retries: 5
   delay: 1
   loop: "{{ tests }}"
