@@ -17,7 +17,6 @@ individual_instance_defaults:
   cipher:
     profiles:
       - best_practice_2023
-      - best_practice_1999
     bind_options: [no-sslv3, no-tlsv10, no-tlsv11, no-tls-tickets]
     ssl_min: TLSv1.0
     ssl_max: TLSv1.3
