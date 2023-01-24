@@ -7,9 +7,9 @@ variables:
   # f8ef3724f157b64df6d0b1cf3520c3ea4b3d16c1
   dante_build_id: '471869'
 
-  # virgil 20230124.5
-  # Mon Jan 23 23:07:29 UTC 2023 -- Tue Jan 24 10:07:29 AEDT 2023
+  # virgil 20230124.18
+  # Tue Jan 24 03:58:13 UTC 2023 -- Tue Jan 24 14:58:13 AEDT 2023
   #
-  # Merged PR 10117: Add VLAN 1088 to US2 VMware profile
-  # e50699dc1a44014787925f3208d2eee54ca9943a
-  virgil_build_id: '472456'
+  # Merged PR 10126: CS01184793 - new queues
+  # b44228d90b2a57d41b237ca45d145ff859c174fe
+  virgil_build_id: '472663'
