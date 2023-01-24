@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230123.3
-  # Mon Jan 23 06:30:02 UTC 2023 -- Mon Jan 23 17:30:02 AEDT 2023
+  # Dante Build Artifact 20230124.1
+  # Tue Jan 24 08:26:53 UTC 2023 -- Tue Jan 24 19:26:53 AEDT 2023
   #
-  # Merge pull request 10082 from dante_artifact_upgrade into master
-  # f8ef3724f157b64df6d0b1cf3520c3ea4b3d16c1
-  dante_build_id: '471869'
+  # Merged PR 10078: Define dns_query output json in telegraf
+  # 51b1a12462571cdf7460ce059fa79c6c4b580569
+  dante_build_id: '472828'
 
   # virgil 20230124.18
   # Tue Jan 24 03:58:13 UTC 2023 -- Tue Jan 24 14:58:13 AEDT 2023
