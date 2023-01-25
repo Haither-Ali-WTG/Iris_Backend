@@ -7,9 +7,9 @@ variables:
   # 51b1a12462571cdf7460ce059fa79c6c4b580569
   dante_build_id: '472828'
 
-  # virgil 20230124.18
-  # Tue Jan 24 03:58:13 UTC 2023 -- Tue Jan 24 14:58:13 AEDT 2023
+  # virgil 20230125.14
+  # Wed Jan 25 04:30:24 UTC 2023 -- Wed Jan 25 15:30:24 AEDT 2023
   #
-  # Merged PR 10126: CS01184793 - new queues
-  # b44228d90b2a57d41b237ca45d145ff859c174fe
-  virgil_build_id: '472663'
+  # Merged PR 10140: Add TPE to allowed networks
+  # efda25fd8908765ae88ba11f349e80dcc84af22f
+  virgil_build_id: '473572'
