@@ -8,12 +8,12 @@ events {
 http {
   index    index.html;
 
-{% for status in status_codes | default([]) if status in [200, 400, '200', '400'] %}
+{% for status in status_codes | default([]) %}
   server {
     listen 80;
     server_name
     {%- for test in tests_list | default([]) -%}
-      {%- if status in test.statuses and not test.ssl %} {{ test.host }}
+      {%- if status == test.status and not test.ssl %} {{ test.host }}
       {%- endif -%}
     {%- endfor -%};
     root /public;
