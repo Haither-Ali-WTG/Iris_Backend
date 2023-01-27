@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230124.1
-  # Tue Jan 24 08:26:53 UTC 2023 -- Tue Jan 24 19:26:53 AEDT 2023
+  # Dante Build Artifact 20230126.2
+  # Wed Jan 25 17:47:21 UTC 2023 -- Thu Jan 26 04:47:21 AEDT 2023
   #
-  # Merged PR 10078: Define dns_query output json in telegraf
-  # 51b1a12462571cdf7460ce059fa79c6c4b580569
-  dante_build_id: '472828'
+  # Merged PR 10076: Dante - Cluster - Cluster_checks variable declared as boolean
+  # 75a1fa57fc259fb3b8c72493d8b8f606f0514aef
+  dante_build_id: '474056'
 
-  # virgil 20230125.17
-  # Wed Jan 25 05:37:45 UTC 2023 -- Wed Jan 25 16:37:45 AEDT 2023
+  # virgil 20230127.1
+  # Fri Jan 27 00:42:20 UTC 2023 -- Fri Jan 27 11:42:20 AEDT 2023
   #
-  # Merged PR 10095: Add new SAND servers for HAProxy and Hyper-V
-  # ffd9b459735250962ca32f1b160ed19cba80f6df
-  virgil_build_id: '473618'
+  # Merge pull request 10149 from virgil_python_upgrade into master
+  # 1cfd5fbd7338b7d11789aec51c8437a14ecd84d4
+  virgil_build_id: '475138'
