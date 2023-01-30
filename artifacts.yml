@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230130.1
-  # Mon Jan 30 04:40:04 UTC 2023 -- Mon Jan 30 15:40:04 AEDT 2023
+  # Dante Build Artifact 20230130.4
+  # Mon Jan 30 12:37:48 UTC 2023 -- Mon Jan 30 23:37:48 AEDT 2023
   #
-  # Merged PR 10164: Update signing key for influxdb (rhel)
-  # 8927e3e8396fc74afa091d6766efb02beac4d7fd
-  dante_build_id: '477770'
+  # Merged PR 10136: Dante - Rebuild - Adjust parallel jobs to 4
+  # b16d665528c56a3431c975462497901c466511c1
+  dante_build_id: '478081'
 
   # virgil 20230130.21
   # Mon Jan 30 05:07:36 UTC 2023 -- Mon Jan 30 16:07:36 AEDT 2023
