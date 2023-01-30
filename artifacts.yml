@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230126.2
-  # Wed Jan 25 17:47:21 UTC 2023 -- Thu Jan 26 04:47:21 AEDT 2023
+  # Dante Build Artifact 20230130.1
+  # Mon Jan 30 04:40:04 UTC 2023 -- Mon Jan 30 15:40:04 AEDT 2023
   #
-  # Merged PR 10076: Dante - Cluster - Cluster_checks variable declared as boolean
-  # 75a1fa57fc259fb3b8c72493d8b8f606f0514aef
-  dante_build_id: '474056'
+  # Merged PR 10164: Update signing key for influxdb (rhel)
+  # 8927e3e8396fc74afa091d6766efb02beac4d7fd
+  dante_build_id: '477770'
 
-  # virgil 20230130.10
-  # Mon Jan 30 01:09:12 UTC 2023 -- Mon Jan 30 12:09:12 AEDT 2023
+  # virgil 20230130.21
+  # Mon Jan 30 05:07:36 UTC 2023 -- Mon Jan 30 16:07:36 AEDT 2023
   #
-  # Merged PR 10107: Virgil - small tweak for windows and Readme
-  # f869215a9a923c5b5b6e960324008f136accc218
-  virgil_build_id: '477633'
+  # Merged PR 10155: New-host-for-xclarity
+  # a39faa5626e643f4be4540a4a755872df576c958
+  virgil_build_id: '477794'
