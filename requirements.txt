@@ -8,7 +8,7 @@ ansible==7.1.0
     # via -r requirements.in
 ansible-compat==2.2.7
     # via ansible-lint
-ansible-core==2.14.1
+ansible-core==2.14.2
     # via
     #   ansible
     #   ansible-lint
