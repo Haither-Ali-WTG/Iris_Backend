@@ -6,17 +6,18 @@
 #
 ansible==7.1.0
     # via -r requirements.in
-ansible-compat==2.2.7
+ansible-compat==3.0.0
     # via ansible-lint
 ansible-core==2.14.2
     # via
     #   ansible
+    #   ansible-compat
     #   ansible-lint
 ansible-lint==6.11.0
     # via -r requirements.in
 argcomplete==2.0.0
     # via yq
-astroid==2.13.3
+astroid==2.13.4
     # via pylint
 attrs==22.2.0
     # via
