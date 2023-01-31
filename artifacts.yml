@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230131.2
-  # Tue Jan 31 03:05:28 UTC 2023 -- Tue Jan 31 14:05:28 AEDT 2023
+  # Dante Build Artifact 20230201.3
+  # Tue Jan 31 21:53:39 UTC 2023 -- Wed Feb  1 08:53:39 AEDT 2023
   #
-  # Merged PR 10171: Fix WIM Sync pipeline
-  # 3b8c1c5cb99564f784a42b015e4453bd591c91a4
-  dante_build_id: '478687'
+  # Merged PR 10166: Update signing key for influxdb (ubuntu)
+  # c68dd5925b71290619bc237bd9be05c4a9ad165a
+  dante_build_id: '479442'
 
-  # virgil 20230131.14
-  # Tue Jan 31 04:01:00 UTC 2023 -- Tue Jan 31 15:01:00 AEDT 2023
+  # virgil 20230131.27
+  # Tue Jan 31 10:22:29 UTC 2023 -- Tue Jan 31 21:22:29 AEDT 2023
   #
-  # Merged PR 10161: Add Kuberenetes pod running state profile to virgil
-  # 77d0c0118ac353612cb892080a386a52695ed461
-  virgil_build_id: '478736'
+  # Merged PR 10192: mac updated for au2lb00157 replacement host
+  # 0e648d99d3a909caaf10bee69cd0acd1f3a2daad
+  virgil_build_id: '479008'
