@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230130.4
-  # Mon Jan 30 12:37:48 UTC 2023 -- Mon Jan 30 23:37:48 AEDT 2023
+  # Dante Build Artifact 20230131.1
+  # Tue Jan 31 00:12:24 UTC 2023 -- Tue Jan 31 11:12:24 AEDT 2023
   #
-  # Merged PR 10136: Dante - Rebuild - Adjust parallel jobs to 4
-  # b16d665528c56a3431c975462497901c466511c1
-  dante_build_id: '478081'
+  # Merged PR 10154: Bugfix - Keep ISO files for builder VM
+  # e7a53e527f3708790754eeac4fe33ebd8a6eef03
+  dante_build_id: '478565'
 
-  # virgil 20230130.21
-  # Mon Jan 30 05:07:36 UTC 2023 -- Mon Jan 30 16:07:36 AEDT 2023
+  # virgil 20230131.5
+  # Mon Jan 30 23:31:01 UTC 2023 -- Tue Jan 31 10:31:01 AEDT 2023
   #
-  # Merged PR 10155: New-host-for-xclarity
-  # a39faa5626e643f4be4540a4a755872df576c958
-  virgil_build_id: '477794'
+  # Merged PR 10175: Add VLAN 1088 to exits 3 and 4
+  # a08a96bdcd9de62c99bbc34e43c12b7aaaef31e8
+  virgil_build_id: '478512'
