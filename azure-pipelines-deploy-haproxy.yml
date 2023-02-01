@@ -51,6 +51,21 @@ stages:
               RunAsPreJob: false
 
           - task: Ansible@0
+            displayName: 'Check and save certificates'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
+          - task: Ansible@0
             displayName: 'Deploy haproxy'
             inputs:
               ansibleInterface: 'agentMachine'
