@@ -12,7 +12,11 @@ variables:
 
 stages:
   - stage: Deploy_Haproxy
-    pool: cicd
+    pool:
+      name: dante
+      demands:
+        - WTG_DC -equals AU2
+        - WTG_HALL -equals A
     jobs:
       - job: Deploy_Haproxy
         steps:
