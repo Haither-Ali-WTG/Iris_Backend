@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230201.3
-  # Tue Jan 31 21:53:39 UTC 2023 -- Wed Feb  1 08:53:39 AEDT 2023
+  # Dante Build Artifact 20230201.4
+  # Wed Feb  1 00:13:33 UTC 2023 -- Wed Feb  1 11:13:33 AEDT 2023
   #
-  # Merged PR 10166: Update signing key for influxdb (ubuntu)
-  # c68dd5925b71290619bc237bd9be05c4a9ad165a
-  dante_build_id: '479442'
+  # Merged PR 10167: Unattended Windows - New Playbook and pipeline files
+  # 185a19c3ae157a78991186ae2f2dc805465ccf76
+  dante_build_id: '479549'
 
-  # virgil 20230131.27
-  # Tue Jan 31 10:22:29 UTC 2023 -- Tue Jan 31 21:22:29 AEDT 2023
+  # virgil 20230201.5
+  # Tue Jan 31 23:59:50 UTC 2023 -- Wed Feb  1 10:59:50 AEDT 2023
   #
-  # Merged PR 10192: mac updated for au2lb00157 replacement host
-  # 0e648d99d3a909caaf10bee69cd0acd1f3a2daad
-  virgil_build_id: '479008'
+  # Merged PR 10188: Add storage configuration for C23
+  # 165dc2f5b9089412e1d114a5ba89b09698303688
+  virgil_build_id: '479527'
