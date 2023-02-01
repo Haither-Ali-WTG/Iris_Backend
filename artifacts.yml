@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230201.4
-  # Wed Feb  1 00:13:33 UTC 2023 -- Wed Feb  1 11:13:33 AEDT 2023
+  # Dante Build Artifact 20230202.1
+  # Wed Feb  1 16:16:54 UTC 2023 -- Thu Feb  2 03:16:54 AEDT 2023
   #
-  # Merged PR 10167: Unattended Windows - New Playbook and pipeline files
-  # 185a19c3ae157a78991186ae2f2dc805465ccf76
-  dante_build_id: '479549'
+  # Merged PR 10182: Copy shell script to specified path & machine for telegraf.
+  # c2be38acbb30a938b38e381355e80ceaa79d8dff
+  dante_build_id: '480224'
 
-  # virgil 20230201.5
-  # Tue Jan 31 23:59:50 UTC 2023 -- Wed Feb  1 10:59:50 AEDT 2023
+  # virgil 20230201.24
+  # Wed Feb  1 11:58:53 UTC 2023 -- Wed Feb  1 22:58:53 AEDT 2023
   #
-  # Merged PR 10188: Add storage configuration for C23
-  # 165dc2f5b9089412e1d114a5ba89b09698303688
-  virgil_build_id: '479527'
+  # Merged PR 10194: Remove LACP for DE1WP-SVIR-6 & 7
+  # 573adb0327ce30b750bfb461467b5170fcdfc3e8
+  virgil_build_id: '480062'
