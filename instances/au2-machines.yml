@@ -1,17 +1,7 @@
 ---
 machines:
   hosts:
-    au2_machine1:
-      # fake IP to be replaced with prod
-      ansible_host: 192.168.100.100
-      os: rhel
-    au2_machine2:
-      # fake IP to be replaced with prod
-      ansible_host: 192.168.100.101
+    au2lbl00345:
+      os: ubuntu  # TODO: make one of these RHEL
+    au2lbl00346:
       os: ubuntu
-      sysctl_values:
-        net.ipv4.tcp_synack_retries: 4
-    au2_machine3:
-      # fake IP to be replaced with prod
-      ansible_host: 192.168.100.101
-      os: rhel
