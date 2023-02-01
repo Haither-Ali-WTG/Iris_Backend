@@ -5,6 +5,8 @@ variables:
   - template: artifacts.yml
   - name: user
     value: dante
+  - name: cert_kv_name
+    value: kv-wtg-test  # TODO use the real KV
   - name: s3_host
     value: au2s3-1.wtg.ws
   - name: key_vault_name
@@ -61,7 +63,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="simulation=true" -e="azure_kv_name=$(cert_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
