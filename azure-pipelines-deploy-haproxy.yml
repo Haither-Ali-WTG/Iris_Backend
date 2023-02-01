@@ -50,12 +50,6 @@ stages:
               SecretsFilter: secretAppIdDf4b4604e176
               RunAsPreJob: false
 
-          - task: InstallSSHKey@0
-            displayName: 'Install an SSH key'
-            inputs:
-              knownHostsEntry: 'StrictHostKeyChecking no'
-              sshKeySecureFile: 'id_rsa'
-
           - task: Ansible@0
             displayName: 'Deploy haproxy'
             inputs:
