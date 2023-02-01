@@ -1,27 +1,27 @@
 ---
 au2-prod-frontend-1:
   machines:
-    au2_machine1: ~
-    au2_machine2: ~
-    au2_machine3: ~
+    au2lbl00345: ~
+    au2lbl00346: ~
   floating_ips:
     - description: WiseCloud RDP (PROD)
       ip: 10.2.64.135
       preempt: no
-      priority: [au2_machine1, au2_machine2, au2_machine3]
+      priority: [au2lbl00345, au2lbl00346]
     - description: ediProd RDP (CORP)
       ip: 10.2.64.136
       preempt: no
-      priority: [au2_machine2, au2_machine1, au2_machine3]
+      priority: [au2lbl00346, au2lbl00345]
     - description: webservices
       ip: 10.2.64.137
       preempt: yes
-      priority: [au2_machine1, au2_machine2, au2_machine3]
+      priority: [au2lbl00345, au2lbl00346]
     - description: webservices
       ip: 10.2.64.138
       preempt: yes
-      priority: [au2_machine2, au2_machine3, au2_machine1]
+      priority: [au2lbl00346, au2lbl00345]
     - description: webservices
       ip: 10.2.64.139
       preempt: yes
-      priority: [au2_machine3, au2_machine1, au2_machine2]
+      # TODO: when we get the third machine, it'll be first in the priority for .139
+      priority: [au2lbl00345, au2lbl00346]

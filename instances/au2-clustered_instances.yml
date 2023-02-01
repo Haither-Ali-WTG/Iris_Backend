@@ -8,7 +8,7 @@ clustered_instances:
         maxconn: 20000
       machine_cluster: au2-prod-frontend-1
       # machine_overrides:
-      #   au2_machine2:
+      #   au2lbl00346:
       #      haproxy_version: x.y.z
       iis_servers:
         - au2wt-sweb-001.test.wisecloud.zone
