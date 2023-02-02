@@ -158,7 +158,7 @@ capture request header user-agent len 150
 
 
 {% if not simulation %}
-bind {% for item in proxy.ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor %}
+bind {% for item in proxy.ports.http.plaintext %}:{{item}}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
 {% else %}
 bind :{{ haproxy_http_port }}
 {% endif %}
@@ -279,8 +279,8 @@ server {{ server.name }}
 {%       else -%}
 8081 check
 {%       endif -%}
-{%-    else -%}
-{{ server.ip }}:{{ server.port }} {{ server.settings | default('check') }}
+{%-    else %}
+ {{ server.ip }}:{{ server.port }} {{ server.settings | default('check') }}
 {%     endif %}
 {%   endfor %}
 

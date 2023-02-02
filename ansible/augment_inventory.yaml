@@ -1,4 +1,18 @@
 ---
+- name: Set Virgil-like facts for the machines
+  hosts: machines
+  gather_facts: no
+  tasks:
+    - name: Set Virgil-like facts for the machines
+      set_fact:
+        virgil_os_family: linux
+        virgil_os_variant: "{{ os }}"
+        virgil_mac_oob_dante: '...'
+        virgil_hostname: "{{ inventory_hostname }}"
+        virgil_groups: ['mgmt']  # TODO: confirm
+        virgil_port_oob_dante: eth0
+        virgil_internal_fqdn: "{{ inventory_hostname }}"
+
 - name: Import IIS data
   import_playbook: import_iis_data.yml
 

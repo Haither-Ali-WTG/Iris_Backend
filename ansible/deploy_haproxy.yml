@@ -35,24 +35,19 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    # TODO: Enable when actual prod machines are available
-    # - name: Setup docker
-    #   include_role:
-    #     name: container_runner
-    #     tasks_from: setup.yml
-    #   when: not simulation
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
+      when: not simulation
 
     - name: Setup rsyslog
       include_role:
         name: rsyslog
-      # TODO: remove when actual prod machines are available
-      when: simulation
 
     - name: Apply system parameters
       include_role:
         name: system_parameters
-      # TODO: remove when actual prod machines are available
-      when: simulation
 
     - name: Setup keepalived (VRRP)
       include_role:
@@ -82,12 +77,8 @@
     - name: Collect min facts
       ansible.builtin.setup:
         gather_subset: min
-      # TODO: remove when actual prod machines are available
-      when: simulation
 
     - name: Deploy the individual instances
       include_role:
         name: iris_haproxy
         tasks_from: individual_instances.yml
-      # TODO: remove when actual prod machines are available
-      when: simulation
