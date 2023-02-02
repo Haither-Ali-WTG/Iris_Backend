@@ -182,10 +182,14 @@ def main():
         for future in concurrent.futures.as_completed(results)
     ]
 
-    print(json.dumps({
-        'results': finished_results,
-        'wrote_files': any(result['status'] == 'ok' for result in finished_results),
-    }, indent=4))
+    json.dump(
+        {
+            'results': finished_results,
+            'wrote_files': any(result['status'] == 'ok' for result in finished_results),
+        },
+        sys.stdout,
+        indent=4,
+    )
 
     logger.info("Execution duration: %s", str(datetime.now() - start_time))
     return 0
