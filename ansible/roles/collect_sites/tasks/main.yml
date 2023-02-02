@@ -23,4 +23,4 @@
   delegate_to: localhost
   when:
     - collect_sites_data_output is defined
-    - (collect_sites_data_output | from_json).wrote_files
+    - (collect_sites_data_output.stdout | from_json).wrote_files
