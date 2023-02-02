@@ -101,15 +101,17 @@ def process_server(server_name, connection_params, website_config, output_path, 
         sites_list = get_websites_list(server_name, connection_params)
     except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
         logger.error("%s: ERROR: %s", server_name, str(err))
-        return
+        return {'status': 'error', 'server': server_name, 'error': str(err)}
     if len(sites_list) == 0:
-        return
+        return {'status': 'empty', 'server': server_name, 'sites_count': 0}
 
     server_ip = socket.gethostbyname(server_name)
     websites = get_websites_with_parameters(sites_list, website_config, server_ip, logger)
 
     with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
+
+    return {'status': 'ok', 'server': server_name, 'sites_count': len(sites_list)}
 
     ##############################################################################################
 def main():
@@ -174,8 +176,15 @@ def main():
                                        args.validate_ca),
                                        websites_config, args.output_path, logger))
 
-    for future in concurrent.futures.as_completed(results):
+    finished_results = [
         future.result()
+        for future in concurrent.futures.as_completed(results)
+    ]
+
+    print(json.dumps({
+        'results': finished_results,
+        'wrote_files': any(result['status'] == 'ok' for result in finished_results),
+    }, indent=4))
 
     logger.info("Execution duration: %s", str(datetime.now() - start_time))
     return 0
