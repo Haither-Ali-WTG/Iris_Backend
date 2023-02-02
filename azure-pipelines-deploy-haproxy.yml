@@ -27,6 +27,11 @@ stages:
               pip install -r requirements.txt
             displayName: 'Install requirements'
 
+          - script: |
+              set -euxo pipefail
+              test "$(Build.SourceBranchName)" = "master"
+            displayName: 'Prepare to run playbooks'
+
           - task: DownloadPipelineArtifact@2
             displayName: 'Download dante artifact'
             inputs:
