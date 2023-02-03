@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230202.1
-  # Wed Feb  1 16:16:54 UTC 2023 -- Thu Feb  2 03:16:54 AEDT 2023
+  # Dante Build Artifact 20230203.3
+  # Fri Feb  3 00:21:02 UTC 2023 -- Fri Feb  3 11:21:02 AEDT 2023
   #
-  # Merged PR 10182: Copy shell script to specified path & machine for telegraf.
-  # c2be38acbb30a938b38e381355e80ceaa79d8dff
-  dante_build_id: '480224'
+  # Merged PR 10233: Add task to create SECENG users into SECENG nodes
+  # bd9bc45012c85ec7c6fa2ad3dde504bfa6f47f49
+  dante_build_id: '481556'
 
-  # virgil 20230201.24
-  # Wed Feb  1 11:58:53 UTC 2023 -- Wed Feb  1 22:58:53 AEDT 2023
+  # virgil 20230203.5
+  # Thu Feb  2 23:15:39 UTC 2023 -- Fri Feb  3 10:15:39 AEDT 2023
   #
-  # Merged PR 10194: Remove LACP for DE1WP-SVIR-6 & 7
-  # 573adb0327ce30b750bfb461467b5170fcdfc3e8
-  virgil_build_id: '480062'
+  # Merged PR 10217: Swap uplinks on C-00345 to match reality
+  # 7a33006a2880b16685a2b444f93438ce1a5919d1
+  virgil_build_id: '481511'
