@@ -61,7 +61,7 @@
     dest: "{{ working_dir }}/config/nginx.conf"
     mode: a=r
 
-- name: Copy index.hmtl
+- name: Copy index.html
   copy:
     src: index.html
     dest: "{{ working_dir }}/public/index.html"

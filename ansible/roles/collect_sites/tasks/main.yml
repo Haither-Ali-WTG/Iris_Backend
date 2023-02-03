@@ -12,7 +12,7 @@
   register: collect_sites_data_output
   when: iis_servers is defined
 
-- name: Output colect sites data output
+- name: Output collect sites data output
   debug:
     var: collect_sites_data_output
   when: collect_sites_data_output is defined
