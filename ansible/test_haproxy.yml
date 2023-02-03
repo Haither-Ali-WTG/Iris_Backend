@@ -32,7 +32,7 @@
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
 
-    - name: Download qcow2 required simulation
+    - name: Download qcow2 required for simulation
       command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
       with_items:
         - "{{ rhel_hypervisor_image }}"
