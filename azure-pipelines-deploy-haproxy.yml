@@ -1,5 +1,6 @@
 ---
-trigger: none
+trigger:
+  - master
 
 variables:
   - template: artifacts.yml
