@@ -7,9 +7,9 @@ variables:
   # 38d6e86f51522c41e76aa4aab98707ff0579f9d4
   dante_build_id: '483995'
 
-  # virgil 20230206.2
-  # Sun Feb  5 22:31:15 UTC 2023 -- Mon Feb  6 09:31:15 AEDT 2023
+  # virgil 20230206.5
+  # Mon Feb  6 02:54:58 UTC 2023 -- Mon Feb  6 13:54:58 AEDT 2023
   #
-  # Merge pull request 10260 from virgil_python_upgrade into master
-  # 49da1e5a36767954a301ea66343eed87abeffaee
-  virgil_build_id: '483973'
+  # Merged PR 10263: CS01141547 allow idempotent producer for eservices-message-events topics
+  # 0b4ae42a51470404a728269f8d5376a1e295ea95
+  virgil_build_id: '484126'
