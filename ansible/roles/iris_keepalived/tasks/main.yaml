@@ -32,6 +32,20 @@
         - simulation
         - 'os == "rhel"'
 
+- name: Keepalived warm-up
+  vars:
+    warm_up: "{{ 8 * 60 }}"  # 8 minutes wait before daemon start
+    start_up: 90  # default 90s timeout for daemon start-up
+  copy:
+    content: |
+      ### This file is deployed by Iris ###
+      [Service]
+      ExecStartPre=/bin/sleep {{ warm_up }}
+      TimeoutStartSec={{ warm_up + start_up }}
+    dest: /lib/systemd/system/keepalived.service.d/keepalived-overrides.conf
+    mode: u=rw,go=r
+  become: yes
+
 - name: Configure keepalived
   vars:
     priority_list: [250, 200, 150, 100, 50]
