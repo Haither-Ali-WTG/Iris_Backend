@@ -41,7 +41,7 @@
       ### This file is deployed by Iris ###
       [Service]
       ExecStartPre=/bin/sleep {{ warm_up }}
-      TimeoutStartSec={{ warm_up + start_up }}
+      TimeoutStartSec={{ warm_up | int + start_up }}
     dest: /lib/systemd/system/keepalived.service.d/keepalived-overrides.conf
     mode: u=rw,go=r
   become: yes
