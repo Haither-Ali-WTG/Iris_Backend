@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230206.1
-  # Sun Feb  5 23:14:13 UTC 2023 -- Mon Feb  6 10:14:13 AEDT 2023
+  # Dante Build Artifact 20230207.1
+  # Tue Feb  7 05:25:14 UTC 2023 -- Tue Feb  7 16:25:14 AEDT 2023
   #
-  # Merged PR 10250: Dante - Kafka Fix extra bracket
-  # 38d6e86f51522c41e76aa4aab98707ff0579f9d4
-  dante_build_id: '483995'
+  # Merged PR 10264: Ensure script path exist before copy.
+  # aec4cc51bdb17932470b261ac5b7cee99ddb77ef
+  dante_build_id: '485114'
 
-  # virgil 20230207.3
-  # Tue Feb  7 00:38:55 UTC 2023 -- Tue Feb  7 11:38:55 AEDT 2023
+  # virgil 20230207.5
+  # Tue Feb  7 05:02:34 UTC 2023 -- Tue Feb  7 16:02:34 AEDT 2023
   #
-  # Merged PR 10278: Permit numeric non-initial role identifier segments
-  # 5d351c6deffab3620c14ad1077f47ab0660e3a5b
-  virgil_build_id: '484918'
+  # Merged PR 10000: Powershell Jumphost for AD controllers
+  # f5ebb8de520486ad7717b51fc70751d730e17f6c
+  virgil_build_id: '485097'
