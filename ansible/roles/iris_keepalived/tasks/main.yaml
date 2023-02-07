@@ -32,6 +32,13 @@
         - simulation
         - 'os == "rhel"'
 
+- name: Keepalived systemd override directory
+  file:
+    dest: /lib/systemd/system/keepalived.service.d
+    state: directory
+    mode: a=rx
+  become: yes
+
 - name: Keepalived warm-up
   vars:
     warm_up: "{{ 8 * 60 }}"  # 8 minutes wait before daemon start
