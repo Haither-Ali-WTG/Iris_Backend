@@ -7,9 +7,9 @@ variables:
   # 38d6e86f51522c41e76aa4aab98707ff0579f9d4
   dante_build_id: '483995'
 
-  # virgil 20230206.5
-  # Mon Feb  6 02:54:58 UTC 2023 -- Mon Feb  6 13:54:58 AEDT 2023
+  # virgil 20230207.3
+  # Tue Feb  7 00:38:55 UTC 2023 -- Tue Feb  7 11:38:55 AEDT 2023
   #
-  # Merged PR 10263: CS01141547 allow idempotent producer for eservices-message-events topics
-  # 0b4ae42a51470404a728269f8d5376a1e295ea95
-  virgil_build_id: '484126'
+  # Merged PR 10278: Permit numeric non-initial role identifier segments
+  # 5d351c6deffab3620c14ad1077f47ab0660e3a5b
+  virgil_build_id: '484918'
