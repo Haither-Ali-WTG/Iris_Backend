@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230208.1
-  # Wed Feb  8 00:17:51 UTC 2023 -- Wed Feb  8 11:17:51 AEDT 2023
+  # Dante Build Artifact 20230208.2
+  # Wed Feb  8 03:04:07 UTC 2023 -- Wed Feb  8 14:04:07 AEDT 2023
   #
-  # Merged PR 10269: Disable "ini" inventories which we don't use
-  # 34b5024256424beaffe62705993dc13a465ee378
-  dante_build_id: '485789'
+  # Merged PR 10294: Add pyinstaller into requirements.txt
+  # 24229b093211cfe7324eadf52338a7d28be3c225
+  dante_build_id: '485938'
 
   # virgil 20230208.8
   # Wed Feb  8 00:48:02 UTC 2023 -- Wed Feb  8 11:48:02 AEDT 2023
