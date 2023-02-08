@@ -1,5 +1,5 @@
 ---
 # pseudo-cluster for instances that should not (yet) be deployed anywhere
 nowhere:
-  machines: []
+  machines: {}
   floating_ips: []
