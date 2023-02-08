@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230208.2
-  # Wed Feb  8 03:04:07 UTC 2023 -- Wed Feb  8 14:04:07 AEDT 2023
+  # Dante Build Artifact 20230209.3
+  # Wed Feb  8 19:00:26 UTC 2023 -- Thu Feb  9 06:00:26 AEDT 2023
   #
-  # Merged PR 10294: Add pyinstaller into requirements.txt
-  # 24229b093211cfe7324eadf52338a7d28be3c225
-  dante_build_id: '485938'
+  # Merged PR 10308: Fix copy-paste error in comment
+  # 5be1887ad2ea084809ea639bef9943716c0b4713
+  dante_build_id: '486556'
 
-  # virgil 20230208.8
-  # Wed Feb  8 00:48:02 UTC 2023 -- Wed Feb  8 11:48:02 AEDT 2023
+  # virgil 20230208.19
+  # Wed Feb  8 06:58:16 UTC 2023 -- Wed Feb  8 17:58:16 AEDT 2023
   #
-  # Merged PR 10276: Distinguish Iris server_loadbalancer from the old 2020 devops-managed ones
-  # b02d650fd768c5c656194a24f616de4b55120c3e
-  virgil_build_id: '485826'
+  # Merged PR 10322: Remove test k8s telegraf profile from US2 mgmt1
+  # 8df8ff5b47321dd230209c30fe2f7ee0687cdf64
+  virgil_build_id: '486109'
