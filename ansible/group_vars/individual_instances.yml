@@ -18,7 +18,7 @@ individual_instance_defaults:
     profiles:
       - best_practice_2023
     bind_options: [no-sslv3, no-tlsv10, no-tlsv11, no-tls-tickets]
-    ssl_min: TLSv1.0
+    ssl_min: TLSv1.2
     ssl_max: TLSv1.3
 
   proxy:
