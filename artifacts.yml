@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230207.1
-  # Tue Feb  7 05:25:14 UTC 2023 -- Tue Feb  7 16:25:14 AEDT 2023
+  # Dante Build Artifact 20230208.1
+  # Wed Feb  8 00:17:51 UTC 2023 -- Wed Feb  8 11:17:51 AEDT 2023
   #
-  # Merged PR 10264: Ensure script path exist before copy.
-  # aec4cc51bdb17932470b261ac5b7cee99ddb77ef
-  dante_build_id: '485114'
+  # Merged PR 10269: Disable "ini" inventories which we don't use
+  # 34b5024256424beaffe62705993dc13a465ee378
+  dante_build_id: '485789'
 
-  # virgil 20230207.5
-  # Tue Feb  7 05:02:34 UTC 2023 -- Tue Feb  7 16:02:34 AEDT 2023
+  # virgil 20230208.8
+  # Wed Feb  8 00:48:02 UTC 2023 -- Wed Feb  8 11:48:02 AEDT 2023
   #
-  # Merged PR 10000: Powershell Jumphost for AD controllers
-  # f5ebb8de520486ad7717b51fc70751d730e17f6c
-  virgil_build_id: '485097'
+  # Merged PR 10276: Distinguish Iris server_loadbalancer from the old 2020 devops-managed ones
+  # b02d650fd768c5c656194a24f616de4b55120c3e
+  virgil_build_id: '485826'
