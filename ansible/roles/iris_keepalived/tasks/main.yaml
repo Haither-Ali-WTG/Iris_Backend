@@ -89,7 +89,7 @@
   notify: Reload keepalived
 
 - name: Start and enable keepalived
-  service:
+  systemd:
     name: keepalived
     state: started
     enabled: yes
