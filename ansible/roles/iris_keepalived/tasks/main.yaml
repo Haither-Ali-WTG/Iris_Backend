@@ -52,6 +52,7 @@
     dest: /lib/systemd/system/keepalived.service.d/keepalived-overrides.conf
     mode: u=rw,go=r
   become: yes
+  register: keepalived_warmup
 
 - name: Configure keepalived
   vars:
@@ -92,4 +93,5 @@
     name: keepalived
     state: started
     enabled: yes
+    daemon_reload: "{{ keepalived_warmup is changed }}"
   become: yes
