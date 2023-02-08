@@ -9,7 +9,8 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       # machine_overrides:
       #   au2lbl00346:
-      #      haproxy_version: x.y.z
+      #      instance:
+      #        haproxy_version: x.y.z
       iis_servers:
         - au2wt-sweb-001.test.wisecloud.zone
         - au2wt-sweb-002.test.wisecloud.zone

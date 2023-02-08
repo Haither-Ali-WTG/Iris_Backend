@@ -7,6 +7,7 @@ individual_instance_defaults:
     processes: 1
     threads: 8
     maxconn: 200000
+    haproxy_version: "2.4.19"
 
   stats:
     ports:
