@@ -7,9 +7,9 @@ variables:
   # 4c7bf2be4393ab96dd661c8f5e753954a62ae2f9
   dante_build_id: '486948'
 
-  # virgil 20230209.18
-  # Thu Feb  9 03:00:22 UTC 2023 -- Thu Feb  9 14:00:22 AEDT 2023
+  # virgil 20230209.20
+  # Thu Feb  9 04:44:14 UTC 2023 -- Thu Feb  9 15:44:14 AEDT 2023
   #
-  # Merged PR 10331: addAPEX197and198
-  # 5c3854d8749fd6a0f48cb96d9c01b701129d1d53
-  virgil_build_id: '486922'
+  # Merged PR 10298: Distinguish telegraf config for prod and sim
+  # f1818fa4424fcb4bfbbb0b05ebac8f9b19ae48e2
+  virgil_build_id: '487002'
