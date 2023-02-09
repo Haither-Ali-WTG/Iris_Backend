@@ -32,6 +32,28 @@
         - simulation
         - 'os == "rhel"'
 
+- name: Keepalived systemd override directory
+  file:
+    dest: /lib/systemd/system/keepalived.service.d
+    state: directory
+    mode: a=rx
+  become: yes
+
+- name: Keepalived warm-up
+  vars:
+    warm_up: "{{ 8 * 60 }}"  # 8 minutes wait before daemon start
+    start_up: 90  # default 90s timeout for daemon start-up
+  copy:
+    content: |
+      ### This file is deployed by Iris ###
+      [Service]
+      ExecStartPre=/bin/sleep {{ warm_up }}
+      TimeoutStartSec={{ warm_up | int + start_up }}
+    dest: /lib/systemd/system/keepalived.service.d/keepalived-overrides.conf
+    mode: u=rw,go=r
+  become: yes
+  register: keepalived_warmup
+
 - name: Configure keepalived
   vars:
     priority_list: [250, 200, 150, 100, 50]
@@ -67,8 +89,9 @@
   notify: Reload keepalived
 
 - name: Start and enable keepalived
-  service:
+  systemd:
     name: keepalived
     state: started
     enabled: yes
+    daemon_reload: "{{ keepalived_warmup is changed }}"
   become: yes
