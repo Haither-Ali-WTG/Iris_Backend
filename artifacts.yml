@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230209.5
-  # Thu Feb  9 03:26:32 UTC 2023 -- Thu Feb  9 14:26:32 AEDT 2023
+  # Dante Build Artifact 20230210.1
+  # Thu Feb  9 22:48:21 UTC 2023 -- Fri Feb 10 09:48:21 AEDT 2023
   #
-  # Merged PR 10243: Rotate xcc passwords in maintenance pipeline
-  # 4c7bf2be4393ab96dd661c8f5e753954a62ae2f9
-  dante_build_id: '486948'
+  # Merged PR 10345: Pass key_vault_name in Rebuild xClarity host build ISO stage
+  # 23ab1a2a6416deb0e3778de902f71e90f38353eb
+  dante_build_id: '487702'
 
-  # virgil 20230209.20
-  # Thu Feb  9 04:44:14 UTC 2023 -- Thu Feb  9 15:44:14 AEDT 2023
+  # virgil 20230210.4
+  # Fri Feb 10 04:25:48 UTC 2023 -- Fri Feb 10 15:25:48 AEDT 2023
   #
-  # Merged PR 10298: Distinguish telegraf config for prod and sim
-  # f1818fa4424fcb4bfbbb0b05ebac8f9b19ae48e2
-  virgil_build_id: '487002'
+  # Merged PR 10351: Add us2 kafka brokers into telegraf
+  # 9a03ee1013847794ef7c72892ae5337d8606bf60
+  virgil_build_id: '487929'
