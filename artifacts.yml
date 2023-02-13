@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230210.1
-  # Thu Feb  9 22:48:21 UTC 2023 -- Fri Feb 10 09:48:21 AEDT 2023
+  # Dante Build Artifact 20230213.2
+  # Mon Feb 13 03:09:39 UTC 2023 -- Mon Feb 13 14:09:39 AEDT 2023
   #
-  # Merged PR 10345: Pass key_vault_name in Rebuild xClarity host build ISO stage
-  # 23ab1a2a6416deb0e3778de902f71e90f38353eb
-  dante_build_id: '487702'
+  # Merged PR 10290: (minor) Dante - k8s role to build artifact
+  # 43b2fd2f0fa9d300b60a875414ac993b3f7ea9fe
+  dante_build_id: '490298'
 
   # virgil 20230213.4
   # Sun Feb 12 22:33:23 UTC 2023 -- Mon Feb 13 09:33:23 AEDT 2023
