@@ -7,9 +7,9 @@ variables:
   # 43b2fd2f0fa9d300b60a875414ac993b3f7ea9fe
   dante_build_id: '490298'
 
-  # virgil 20230213.4
-  # Sun Feb 12 22:33:23 UTC 2023 -- Mon Feb 13 09:33:23 AEDT 2023
+  # virgil 20230213.15
+  # Mon Feb 13 04:33:35 UTC 2023 -- Mon Feb 13 15:33:35 AEDT 2023
   #
-  # Merged PR 10359: Remove LACP for DE1WP-SVIR-9 & 10
-  # f09443324944dcfd12f1aa8cb75855e6ce4a9651
-  virgil_build_id: '490077'
+  # Merged PR 10357: Add telegraf profiles to us2 mgmt1
+  # 1b6ed35398f2459a167e980102d7b2cfc109dc3e
+  virgil_build_id: '490375'
