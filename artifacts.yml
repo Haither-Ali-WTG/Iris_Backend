@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230213.3
-  # Mon Feb 13 05:20:31 UTC 2023 -- Mon Feb 13 16:20:31 AEDT 2023
+  # Dante Build Artifact 20230214.1
+  # Mon Feb 13 14:37:34 UTC 2023 -- Tue Feb 14 01:37:34 AEDT 2023
   #
-  # Merged PR 10328: Dante - BMC Unmount More retries
-  # a5df94d314fcefec016b17010d51be9d02b8a32f
-  dante_build_id: '490404'
+  # Merged PR 10370: Turn redfish_url dict into individual variables to avoid undefined variable
+  # b8a4ff81509a565579db4c23f3da30a153e331b8
+  dante_build_id: '490751'
 
   # virgil 20230213.15
   # Mon Feb 13 04:33:35 UTC 2023 -- Mon Feb 13 15:33:35 AEDT 2023
