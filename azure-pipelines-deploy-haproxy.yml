@@ -30,9 +30,9 @@ stages:
 
           - script: |
               set -euxo pipefail
-              test "$(Build.SourceBranchName)" = "master"
               cp ansible/ansible.cfg .
             displayName: 'Prepare to run playbooks'
+              # test "$(Build.SourceBranchName)" = "master"
 
           - task: DownloadPipelineArtifact@2
             displayName: 'Download dante artifact'
