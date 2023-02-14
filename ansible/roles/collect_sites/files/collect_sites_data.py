@@ -32,38 +32,6 @@ def load_yaml_from_file(file_name):
     with open(file_name, 'r', encoding="utf8") as stream:
         return yaml.safe_load(stream)
 
-def get_websites_with_parameters(sites_list, website_config, server_ip, logger):
-    """Combine sites list with correspondent configuration from websites.yml"""
-    websites = {'server_ip': server_ip, 'websites_list': {}}
-
-    for site_name in sites_list:
-        site_name = site_name.lower()
-        # This regular expression copied directly from Nico bash script
-        if not re.match(r'(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)',
-                        site_name):
-            logger.info('%s: Site name contains an illegal character. Skipping................',
-                        site_name)
-            continue
-
-        name_matched_times = 0
-        for config in website_config:
-            if (site_name.startswith(tuple(config['starts_with']))
-                 or any(like in site_name for like in config['name_like'])):
-                if site_name not in websites['websites_list']:
-                    websites['websites_list'][site_name] = []
-                websites['websites_list'][site_name].append(config)
-                name_matched_times += 1
-
-        if name_matched_times == 0:
-            logger.info('%s: Site name does not match any config. Skipping................',
-                        site_name)
-
-        if name_matched_times > 1:
-            logger.info('%s: Site name matched %s configs.......',
-                        site_name, name_matched_times)
-
-    return websites
-
 def get_websites_list(server_name, connection_params):
     """Read sites list from IIS box using winrm"""
     p = Protocol(
@@ -96,7 +64,7 @@ def get_websites_list(server_name, connection_params):
     sites_list.sort()
     return sites_list
 
-def process_server(server_name, connection_params, website_config, output_path, logger):
+def process_server(server_name, connection_params, output_path, logger):
     """Read and process all websites data from give IIS box"""
     try:
         sites_list = get_websites_list(server_name, connection_params)
@@ -107,7 +75,7 @@ def process_server(server_name, connection_params, website_config, output_path, 
         return {'status': 'empty', 'server': server_name, 'sites_count': 0}
 
     server_ip = socket.gethostbyname(server_name)
-    websites = get_websites_with_parameters(sites_list, website_config, server_ip, logger)
+    websites = {'server_ip': server_ip, 'websites_list': sites_list}
 
     with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
@@ -121,10 +89,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
                         type=str)
-    parser.add_argument('--server_config_file', '-sc', help="File with servers configuration",
-                        type=str, default='dynamic_backends/servers.yml')
-    parser.add_argument('--website_config_file', '-wc', help="File with websites configuration",
-                        type=str, default='dynamic_backends/websites.yml')
     parser.add_argument('--threads', '-t', help="Number of parallel executions",
                         type=int, default='20')
     parser.add_argument('--output_path', '-o', help="Output file path",
@@ -146,17 +110,12 @@ def main():
     logger = logging.getLogger("collect IIS sites data")
     logger.info('Server list: %s', args.server_list)
     logger.info('threads: %s', args.threads)
-    logger.info('Server Config File: %s', args.server_config_file)
-    logger.info('Website Config File: %s', args.website_config_file)
     logger.info('Output Path: %s', args.output_path)
     logger.info('Validating CA: %s', args.validate_ca)
     logger.info('Username: %s', args.user_name)
 
     start_time = datetime.now()
     server_list = args.server_list.lower().split(',')
-
-    server_config = load_yaml_from_file(args.server_config_file)
-    websites_config = load_yaml_from_file(args.website_config_file)
 
     if not os.path.exists(args.output_path):
         os.mkdir(args.output_path)
@@ -166,16 +125,11 @@ def main():
 
     for server in server_list:
         server = server.strip()
-        if not server.startswith(tuple(server_config['computer_name_prefixes'])):
-            logger.info("%s: Server name not matching template. Skipping...............",
-                        server)
-            continue
-
         logger.info("Adding to processing: %s", server)
         results.append(executor.submit(process_server, server,
                                        ConnectionParameters(args.user_name, args.password,
                                        args.validate_ca),
-                                       websites_config, args.output_path, logger))
+                                       args.output_path, logger))
 
     finished_results = [
         future.result()
