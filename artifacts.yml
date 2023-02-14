@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230214.1
-  # Mon Feb 13 14:37:34 UTC 2023 -- Tue Feb 14 01:37:34 AEDT 2023
+  # Dante Build Artifact 20230214.2
+  # Tue Feb 14 00:54:53 UTC 2023 -- Tue Feb 14 11:54:53 AEDT 2023
   #
-  # Merged PR 10370: Turn redfish_url dict into individual variables to avoid undefined variable
-  # b8a4ff81509a565579db4c23f3da30a153e331b8
-  dante_build_id: '490751'
+  # Merge pull request 10393 from dante_artifact_upgrade into master
+  # 5119c1ce578ae8cb1cb7fad428b679fa64d4950c
+  dante_build_id: '491143'
 
   # virgil 20230214.2
   # Mon Feb 13 22:39:23 UTC 2023 -- Tue Feb 14 09:39:23 AEDT 2023
