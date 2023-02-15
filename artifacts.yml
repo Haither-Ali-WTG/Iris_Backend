@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230215.2
-  # Tue Feb 14 22:50:34 UTC 2023 -- Wed Feb 15 09:50:34 AEDT 2023
+  # Dante Build Artifact 20230215.3
+  # Wed Feb 15 05:30:17 UTC 2023 -- Wed Feb 15 16:30:17 AEDT 2023
   #
-  # Merged PR 10401: Fix missing bmc_ip variable
-  # 6bbbbc56652a381f03d71b8af7aec8d16ac1d918
-  dante_build_id: '491962'
+  # Merged PR 10409: Update xcc-password after changed it
+  # a0755143dd81b12e4833c63acff1d3c401e3e91f
+  dante_build_id: '492249'
 
   # virgil 20230215.3
   # Wed Feb 15 03:40:20 UTC 2023 -- Wed Feb 15 14:40:20 AEDT 2023
