@@ -7,9 +7,9 @@ variables:
   # 6bbbbc56652a381f03d71b8af7aec8d16ac1d918
   dante_build_id: '491962'
 
-  # virgil 20230214.2
-  # Mon Feb 13 22:39:23 UTC 2023 -- Tue Feb 14 09:39:23 AEDT 2023
+  # virgil 20230215.3
+  # Wed Feb 15 03:40:20 UTC 2023 -- Wed Feb 15 14:40:20 AEDT 2023
   #
-  # Merge pull request 10386 from virgil_python_upgrade into master
-  # 5d344eea5fd8fe226d1a61c399fa2e4c2c6e6464
-  virgil_build_id: '491024'
+  # Merged PR 10374: Switch windows simulation to CORP
+  # c9e9c9b8a9b6dd5967ec628f56e217064c6c704c
+  virgil_build_id: '492172'
