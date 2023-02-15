@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230214.2
-  # Tue Feb 14 00:54:53 UTC 2023 -- Tue Feb 14 11:54:53 AEDT 2023
+  # Dante Build Artifact 20230215.2
+  # Tue Feb 14 22:50:34 UTC 2023 -- Wed Feb 15 09:50:34 AEDT 2023
   #
-  # Merge pull request 10393 from dante_artifact_upgrade into master
-  # 5119c1ce578ae8cb1cb7fad428b679fa64d4950c
-  dante_build_id: '491143'
+  # Merged PR 10401: Fix missing bmc_ip variable
+  # 6bbbbc56652a381f03d71b8af7aec8d16ac1d918
+  dante_build_id: '491962'
 
   # virgil 20230214.2
   # Mon Feb 13 22:39:23 UTC 2023 -- Tue Feb 14 09:39:23 AEDT 2023
