@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230215.3
-  # Wed Feb 15 05:30:17 UTC 2023 -- Wed Feb 15 16:30:17 AEDT 2023
+  # Dante Build Artifact 20230215.4
+  # Wed Feb 15 08:22:25 UTC 2023 -- Wed Feb 15 19:22:25 AEDT 2023
   #
-  # Merged PR 10409: Update xcc-password after changed it
-  # a0755143dd81b12e4833c63acff1d3c401e3e91f
-  dante_build_id: '492249'
+  # Merged PR 10378: Add file plugin for telegraf
+  # c81ed594324ecb53fbbd7d0b52de9a2ad1ecaa09
+  dante_build_id: '492355'
 
-  # virgil 20230215.3
-  # Wed Feb 15 03:40:20 UTC 2023 -- Wed Feb 15 14:40:20 AEDT 2023
+  # virgil 20230216.6
+  # Wed Feb 15 23:23:32 UTC 2023 -- Thu Feb 16 10:23:32 AEDT 2023
   #
-  # Merged PR 10374: Switch windows simulation to CORP
-  # c9e9c9b8a9b6dd5967ec628f56e217064c6c704c
-  virgil_build_id: '492172'
+  # Merge pull request 10422 from virgil_python_upgrade into master
+  # fa2f4d2f94bd8ca0ceebb9045c77fcc710acb457
+  virgil_build_id: '492853'
