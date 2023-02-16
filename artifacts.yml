@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230215.4
-  # Wed Feb 15 08:22:25 UTC 2023 -- Wed Feb 15 19:22:25 AEDT 2023
+  # Dante Build Artifact 20230216.1
+  # Thu Feb 16 03:36:22 UTC 2023 -- Thu Feb 16 14:36:22 AEDT 2023
   #
-  # Merged PR 10378: Add file plugin for telegraf
-  # c81ed594324ecb53fbbd7d0b52de9a2ad1ecaa09
-  dante_build_id: '492355'
+  # Merged PR 10226: Logstash role for Dante
+  # db071eb73e9a6ffa6d2521cf8a7ca88f4e091e60
+  dante_build_id: '493089'
 
   # virgil 20230216.6
   # Wed Feb 15 23:23:32 UTC 2023 -- Thu Feb 16 10:23:32 AEDT 2023
