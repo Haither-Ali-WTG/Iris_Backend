@@ -6,7 +6,7 @@ clustered_instances:
       # per-clustered-instance settings (overrides) go here, for example:
       proxy:
         maxconn: 20000
-      machine_cluster: nowhere  # au2-prod-frontend-1
+      machine_cluster: au2-prod-frontend-1
       # machine_overrides:
       #   au2lbl00346:
       #      instance:
