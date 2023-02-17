@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230217.3
-  # Fri Feb 17 00:49:00 UTC 2023 -- Fri Feb 17 11:49:00 AEDT 2023
+  # Dante Build Artifact 20230217.4
+  # Fri Feb 17 02:53:24 UTC 2023 -- Fri Feb 17 13:53:24 AEDT 2023
   #
-  # Merged PR 10408: Telegraf config refactor
-  # 27ae037ceda233e80bc3dafc344394743aaf648e
-  dante_build_id: '493896'
+  # Merged PR 10420: Setup directory for Ansible local facts in Windows
+  # 92fd799a8da4afb40fbd8035a95dd8488754f7f1
+  dante_build_id: '494003'
 
   # virgil 20230217.6
   # Thu Feb 16 22:47:37 UTC 2023 -- Fri Feb 17 09:47:37 AEDT 2023
