@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230217.2
-  # Thu Feb 16 18:31:01 UTC 2023 -- Fri Feb 17 05:31:01 AEDT 2023
+  # Dante Build Artifact 20230217.3
+  # Fri Feb 17 00:49:00 UTC 2023 -- Fri Feb 17 11:49:00 AEDT 2023
   #
-  # Merged PR 10418: glb.wtg.ws AWS zone move
-  # b033d3c3356d453075f23148c1fb0c3696dc67f4
-  dante_build_id: '493651'
+  # Merged PR 10408: Telegraf config refactor
+  # 27ae037ceda233e80bc3dafc344394743aaf648e
+  dante_build_id: '493896'
 
-  # virgil 20230217.4
-  # Thu Feb 16 22:27:34 UTC 2023 -- Fri Feb 17 09:27:34 AEDT 2023
+  # virgil 20230217.6
+  # Thu Feb 16 22:47:37 UTC 2023 -- Fri Feb 17 09:47:37 AEDT 2023
   #
-  # Merge pull request 10449 from virgil_python_upgrade into master
-  # 7eddc18e07501c94f309fba76984036d6273de63
-  virgil_build_id: '493770'
+  # Merged PR 10437: Export AD Domain name as Virgil Group
+  # a85b92fc1a463d4a295f25cae03c73cd43a09800
+  virgil_build_id: '493794'
