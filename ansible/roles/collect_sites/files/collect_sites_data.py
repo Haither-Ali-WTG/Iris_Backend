@@ -62,7 +62,7 @@ def get_websites_list(server_name, connection_params):
     if not sites_list[-1]:
         del sites_list[-1]
     sites_list.sort()
-    return {sites_list[i]: {} for i in range(0, len(sites_list))}
+    return sites_list
 
 def process_server(server_name, connection_params, output_path, logger):
     """Read and process all websites data from give IIS box"""
