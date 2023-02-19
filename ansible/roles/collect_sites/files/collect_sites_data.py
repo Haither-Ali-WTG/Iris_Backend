@@ -75,10 +75,7 @@ def process_server(server_name, connection_params, output_path, logger):
         return {'status': 'empty', 'server': server_name, 'sites_count': 0}
 
     server_ip = socket.gethostbyname(server_name)
-
-    websites = {}
-    for site in sites_list:
-        websites[site] = [server_ip]
+    websites = {'server_ip': server_ip, 'websites_list': sites_list}
 
     with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
