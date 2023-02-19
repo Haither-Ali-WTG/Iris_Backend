@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230218.1
-  # Fri Feb 17 14:14:06 UTC 2023 -- Sat Feb 18 01:14:06 AEDT 2023
+  # Dante Build Artifact 20230220.1
+  # Sun Feb 19 22:50:51 UTC 2023 -- Mon Feb 20 09:50:51 AEDT 2023
   #
-  # Merge pull request 10444 from dante_artifact_upgrade into master
-  # 88a0a0d55b6493039d39ec08407f17f297114c1d
-  dante_build_id: '494412'
+  # Merged PR 10446: Monitor Production OU for Session Hosts to be maintained
+  # dcb08298f8734781cd932068dc61c10a8071dbd4
+  dante_build_id: '496217'
 
-  # virgil 20230218.2
-  # Fri Feb 17 15:16:34 UTC 2023 -- Sat Feb 18 02:16:34 AEDT 2023
+  # virgil 20230220.2
+  # Sun Feb 19 22:29:47 UTC 2023 -- Mon Feb 20 09:29:47 AEDT 2023
   #
-  # Merged PR 10448: Provision trunk for us2nas11
-  # f49d200d9f68afb6cbb38e5eeaf12e733203a818
-  virgil_build_id: '494452'
+  # Merge pull request 10474 from virgil_python_upgrade into master
+  # 808b6bbe3b44832bd00d43fba34259f3ebc939da
+  virgil_build_id: '496197'
