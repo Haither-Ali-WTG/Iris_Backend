@@ -24,61 +24,61 @@
         - not simulation
         - iis_servers | length > 0
 
-# - name: Augment the inventory
-#   import_playbook: augment_inventory.yaml
-#   when: not simulation
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  when: not simulation
 
-# - name: Setup on the machines
-#   hosts: machines
-#   strategy: free
-#   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Setup docker
-#       include_role:
-#         name: container_runner
-#         tasks_from: setup.yml
-#       when: not simulation
+- name: Setup on the machines
+  hosts: machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
+      when: not simulation
 
-#     - name: Setup rsyslog
-#       include_role:
-#         name: rsyslog
+    - name: Setup rsyslog
+      include_role:
+        name: rsyslog
 
-#     - name: Apply system parameters
-#       include_role:
-#         name: system_parameters
+    - name: Apply system parameters
+      include_role:
+        name: system_parameters
 
-#     - name: Setup keepalived (VRRP)
-#       include_role:
-#         name: iris_keepalived
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
 
-# - name: Setup the individual instances
-#   hosts: individual_instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Calculate individual instance settings
-#       vars:
-#         the_individual_instance: "{{ hostvars[inventory_hostname] }}"
-#         machine: "{{ hostvars[machine_name] }}"
-#         clustered_instance: "{{ hostvars[clustered_instance_name] }}"
-#       set_fact:
-#         "{{ item }}": >-
-#           {{
-#             the_individual_instance[item]
-#             | combine(clustered_instance[item] | default({}), recursive=true)
-#             | combine(machine[item] | default({}), recursive=true)
-#             | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
-#           }}
-#       loop: [instance, stats, cipher, proxy, timeouts]
+- name: Setup the individual instances
+  hosts: individual_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Calculate individual instance settings
+      vars:
+        the_individual_instance: "{{ hostvars[inventory_hostname] }}"
+        machine: "{{ hostvars[machine_name] }}"
+        clustered_instance: "{{ hostvars[clustered_instance_name] }}"
+      set_fact:
+        "{{ item }}": >-
+          {{
+            the_individual_instance[item]
+            | combine(clustered_instance[item] | default({}), recursive=true)
+            | combine(machine[item] | default({}), recursive=true)
+            | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
+          }}
+      loop: [instance, stats, cipher, proxy, timeouts]
 
-#     - name: Collect min facts
-#       ansible.builtin.setup:
-#         gather_subset: min
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
 
-#     - name: Deploy the individual instances
-#       include_role:
-#         name: iris_haproxy
-#         tasks_from: individual_instances.yml
+    - name: Deploy the individual instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: individual_instances.yml
