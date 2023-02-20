@@ -7,9 +7,9 @@ variables:
   # dcb08298f8734781cd932068dc61c10a8071dbd4
   dante_build_id: '496217'
 
-  # virgil 20230220.2
-  # Sun Feb 19 22:29:47 UTC 2023 -- Mon Feb 20 09:29:47 AEDT 2023
+  # virgil 20230220.4
+  # Mon Feb 20 03:22:24 UTC 2023 -- Mon Feb 20 14:22:24 AEDT 2023
   #
-  # Merge pull request 10474 from virgil_python_upgrade into master
-  # 808b6bbe3b44832bd00d43fba34259f3ebc939da
-  virgil_build_id: '496197'
+  # Merged PR 10482: Add topics for s3 data events
+  # 01c04ac4e7e96db916bcf24382ccb14e43935e65
+  virgil_build_id: '496425'
