@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230220.1
-  # Sun Feb 19 22:50:51 UTC 2023 -- Mon Feb 20 09:50:51 AEDT 2023
+  # Dante Build Artifact 20230220.2
+  # Mon Feb 20 06:06:58 UTC 2023 -- Mon Feb 20 17:06:58 AEDT 2023
   #
-  # Merged PR 10446: Monitor Production OU for Session Hosts to be maintained
-  # dcb08298f8734781cd932068dc61c10a8071dbd4
-  dante_build_id: '496217'
+  # Merge pull request 10472 from dante_artifact_upgrade into master
+  # c175c4004c9f6aaafa1fde2bde9836b132532a24
+  dante_build_id: '496546'
 
-  # virgil 20230220.4
-  # Mon Feb 20 03:22:24 UTC 2023 -- Mon Feb 20 14:22:24 AEDT 2023
+  # virgil 20230220.7
+  # Mon Feb 20 12:26:07 UTC 2023 -- Mon Feb 20 23:26:07 AEDT 2023
   #
-  # Merged PR 10482: Add topics for s3 data events
-  # 01c04ac4e7e96db916bcf24382ccb14e43935e65
-  virgil_build_id: '496425'
+  # Merged PR 10438: Reconfigure KVM hosts with new Apexes
+  # fadfba4e00ce069e57f064dabe7e87286d9d163d
+  virgil_build_id: '496749'
