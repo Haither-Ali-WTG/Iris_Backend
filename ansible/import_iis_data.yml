@@ -55,7 +55,7 @@
           {%- set result = [] -%}
           {%- for file in iis_files.files -%}
           {%-   for prefix in server_config['computer_name_prefixes'] -%}
-          {%-     if prefix == (file.path.split('/') | last)[:(prefix | length)] -%}
+          {%-     if prefix == (file.path.split('/') | last)[: (prefix | length)] -%}
           {%-       set x = result.append(file.path) -%}
           {%-     endif -%}
           {%-   endfor -%}
