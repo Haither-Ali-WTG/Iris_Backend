@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230221.3
-  # Tue Feb 21 04:53:14 UTC 2023 -- Tue Feb 21 15:53:14 AEDT 2023
+  # Dante Build Artifact 20230221.6
+  # Tue Feb 21 12:05:52 UTC 2023 -- Tue Feb 21 23:05:52 AEDT 2023
   #
-  # Merged PR 10490: Refactoring WIM File Sync pipeline to separate CORP and PROD images
-  # 29fb9e0e2593c6bdd0adf7adf52e1e78c4833957
-  dante_build_id: '497407'
+  # Merged PR 10471: Top-level overview of Dante roles
+  # 7bc631296330023c5c7cda82f16a5634f3b0a355
+  dante_build_id: '497727'
 
   # virgil 20230221.2
   # Tue Feb 21 03:16:08 UTC 2023 -- Tue Feb 21 14:16:08 AEDT 2023
