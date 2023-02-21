@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230221.1
-  # Mon Feb 20 22:25:38 UTC 2023 -- Tue Feb 21 09:25:38 AEDT 2023
+  # Dante Build Artifact 20230221.2
+  # Tue Feb 21 01:57:03 UTC 2023 -- Tue Feb 21 12:57:03 AEDT 2023
   #
-  # Merge pull request 10493 from dante_artifact_upgrade into master
-  # e8073035addf5198df3003c676645561413ede6e
-  dante_build_id: '497108'
+  # Merged PR 10498: Adding new key
+  # effc8ca927ad4164c6788582a26c9941c580ef31
+  dante_build_id: '497250'
 
-  # virgil 20230220.7
-  # Mon Feb 20 12:26:07 UTC 2023 -- Mon Feb 20 23:26:07 AEDT 2023
+  # virgil 20230221.2
+  # Tue Feb 21 03:16:08 UTC 2023 -- Tue Feb 21 14:16:08 AEDT 2023
   #
-  # Merged PR 10438: Reconfigure KVM hosts with new Apexes
-  # fadfba4e00ce069e57f064dabe7e87286d9d163d
-  virgil_build_id: '496749'
+  # Merged PR 10504: Monitor NS5 from mgmt 2 in AU2
+  # 1c470c75caff08dfe6bb3e8145fb070c98e477a7
+  virgil_build_id: '497314'
