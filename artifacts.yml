@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230222.2
-  # Wed Feb 22 02:46:59 UTC 2023 -- Wed Feb 22 13:46:59 AEDT 2023
+  # Dante Build Artifact 20230222.6
+  # Wed Feb 22 09:43:08 UTC 2023 -- Wed Feb 22 20:43:08 AEDT 2023
   #
-  # Merged PR 10500: Create separate Windows ISOs for CORP and PROD
-  # 65e43433f7660f61234ebaf99bd525a1f165ae28
-  dante_build_id: '498281'
+  # Merge pull request 10541 from dante_artifact_upgrade into master
+  # 288fb573dbef244d034bb174db0d71c10c5b6ec5
+  dante_build_id: '498588'
 
   # virgil 20230222.14
   # Wed Feb 22 05:07:18 UTC 2023 -- Wed Feb 22 16:07:18 AEDT 2023
