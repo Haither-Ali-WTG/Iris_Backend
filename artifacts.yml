@@ -7,9 +7,9 @@ variables:
   # 65e43433f7660f61234ebaf99bd525a1f165ae28
   dante_build_id: '498281'
 
-  # virgil 20230222.2
-  # Tue Feb 21 22:23:33 UTC 2023 -- Wed Feb 22 09:23:33 AEDT 2023
+  # virgil 20230222.14
+  # Wed Feb 22 05:07:18 UTC 2023 -- Wed Feb 22 16:07:18 AEDT 2023
   #
-  # Merge pull request 10518 from virgil_python_upgrade into master
-  # 58d179db6958c45c1eb41c75a42638a67b9444d6
-  virgil_build_id: '498055'
+  # Merged PR 10529: Add other DNS servers to AU2
+  # 23ec997c0091d967321e6e75f7225ed7a94873bc
+  virgil_build_id: '498411'
