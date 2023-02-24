@@ -100,21 +100,19 @@
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     net_host: no
     ports: >-
-      {{
-        [
-          '7999:{{ stats.ports.web }}',
-          {% if not simulation %}
-          {% for item in proxy.ports.http.plaintext %}
-          '{{ 8000 + loop.index }}:{{ item }}',
-          {% endfor %}
-          {% else %}
-          '8000:{{ haproxy_http_port }}',
-          {% endif %}
-          {% if certificates | default([]) %}
-          '8888:{{ haproxy_https_port }}',
-          {% endif %}
-        ]
-      }}
+      [
+        '7999:{{ stats.ports.web }}',
+        {% if not simulation %}
+        {% for item in proxy.ports.http.plaintext %}
+        '{{ 8000 + loop.index }}:{{ item }}',
+        {% endfor %}
+        {% else %}
+        '8000:{{ haproxy_http_port }}',
+        {% endif %}
+        {% if certificates | default([]) %}
+        '8888:{{ haproxy_https_port }}',
+        {% endif %}
+      ]
     container_user: root
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
