@@ -4,8 +4,10 @@ skip_list:
   - fqcn-builtins  # Use FQCN for builtin actions.
   # The run_once rules just forbid "stragety: free" and "run_once: yes" without checking
   # that they're being used together, so they give a lot of false positives.
-  - run_once[play]  # Avoid "strategy: free"
-  - run_once[task]  # Avoid "run_once: yes"
+  - run-once[play]  # Avoid "strategy: free"
+  - run-once[task]  # Avoid "run_once: yes"
+  # This seems to be biting off more than it can chew.
+  - jinja[invalid]
 
 # make warnings fatal
 warn_list: []
