@@ -105,7 +105,7 @@
           '7999:{{ stats.ports.web }}',
           {% if not simulation %}
           {% for item in proxy.ports.http.plaintext %}
-          '{{ 8000 + loop.index }}:{{item}}',
+          '{{ 8000 + loop.index }}:{{ item }}',
           {% endfor %}
           {% else %}
           '8000:{{ haproxy_http_port }}',
