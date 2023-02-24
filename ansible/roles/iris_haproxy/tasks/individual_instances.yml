@@ -101,16 +101,16 @@
     net_host: no
     ports: >-
       [
-        '7999:{{ stats.ports.web }}',
+        '{{ stats.ports.web }}:7999',
         {% if not simulation %}
         {% for item in proxy.ports.http.plaintext %}
-        '{{ 8000 + loop.index }}:{{ item }}',
+        '{{ item }}:{{ 8000 + loop.index }}',
         {% endfor %}
         {% else %}
-        '8000:{{ haproxy_http_port }}',
+        '{{ haproxy_http_port }}:8000',
         {% endif %}
         {% if certificates | default([]) %}
-        '8888:{{ haproxy_https_port }}',
+        '{{ haproxy_https_port }}:8888',
         {% endif %}
       ]
     container_user: root
