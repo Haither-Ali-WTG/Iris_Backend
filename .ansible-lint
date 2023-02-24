@@ -10,5 +10,12 @@ skip_list:
 # make warnings fatal
 warn_list: []
 
+# opt-in to most of the optional checks, other than name[prefix]
+enable_list:
+  - args
+  - empty-string-compare
+  - no-log-password
+  - no-same-owner
+
 kinds:
   - playbook: "**/ansible/*.{yaml,yml}"
