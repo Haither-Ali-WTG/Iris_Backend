@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230223.3
-  # Thu Feb 23 02:27:56 UTC 2023 -- Thu Feb 23 13:27:56 AEDT 2023
+  # Dante Build Artifact 20230224.10
+  # Fri Feb 24 01:36:12 UTC 2023 -- Fri Feb 24 12:36:12 AEDT 2023
   #
-  # Merged PR 10530: Publish domain specific qcow images for windows
-  # 93646e1fae55dceea1288ad13fe7d1377c3f12af
-  dante_build_id: '499271'
+  # Merge pull request 10575 from dante_artifact_upgrade into master
+  # a05a6d7566b694714f5afe18174124762712fa85
+  dante_build_id: '500261'
 
-  # virgil 20230223.6
-  # Thu Feb 23 00:29:03 UTC 2023 -- Thu Feb 23 11:29:03 AEDT 2023
+  # virgil 20230224.1
+  # Thu Feb 23 22:01:48 UTC 2023 -- Fri Feb 24 09:01:48 AEDT 2023
   #
-  # Merged PR 10258: Updated teardowns.yaml
-  # 88a41b134253888bb8d811d8a675440450720f57
-  virgil_build_id: '499153'
+  # Merged PR 10576: Add first batch of DE1 ESX hosts in gen004 to Virgil
+  # 3b525114ce21d1188fa4666635b18fdf95367f47
+  virgil_build_id: '500069'
