@@ -111,7 +111,7 @@
           '8000:{{ haproxy_http_port }}',
           {% endif %}
           {% if certificates | default([]) %}
-          '8888::{{ haproxy_https_port }}',
+          '8888:{{ haproxy_https_port }}',
           {% endif %}
         ]
       }}
