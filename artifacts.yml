@@ -7,9 +7,9 @@ variables:
   # a05a6d7566b694714f5afe18174124762712fa85
   dante_build_id: '500261'
 
-  # virgil 20230224.13
-  # Fri Feb 24 03:09:47 UTC 2023 -- Fri Feb 24 14:09:47 AEDT 2023
+  # virgil 20230224.15
+  # Fri Feb 24 04:02:00 UTC 2023 -- Fri Feb 24 15:02:00 AEDT 2023
   #
-  # Merged PR 10563: VLAN Profile re-assignment for KVM Nodes
-  # 1700bbb17b58cdcc81aee0b01d615ac6db143f2d
-  virgil_build_id: '500353'
+  # Merged PR 10585: Added server_hyperv test machine
+  # 5940d964af1d0cdd12429b30450bd617adb27904
+  virgil_build_id: '500398'
