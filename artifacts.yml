@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230224.10
-  # Fri Feb 24 01:36:12 UTC 2023 -- Fri Feb 24 12:36:12 AEDT 2023
+  # Dante Build Artifact 20230224.11
+  # Fri Feb 24 04:58:00 UTC 2023 -- Fri Feb 24 15:58:00 AEDT 2023
   #
-  # Merge pull request 10575 from dante_artifact_upgrade into master
-  # a05a6d7566b694714f5afe18174124762712fa85
-  dante_build_id: '500261'
+  # Merged PR 10478: Trigger Iris pipeline after Dante run
+  # 320c7a95845a59a95a76f8debe36b3f8a0842f2d
+  dante_build_id: '500437'
 
   # virgil 20230224.15
   # Fri Feb 24 04:02:00 UTC 2023 -- Fri Feb 24 15:02:00 AEDT 2023
