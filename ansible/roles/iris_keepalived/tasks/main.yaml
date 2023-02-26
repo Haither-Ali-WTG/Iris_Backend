@@ -41,7 +41,7 @@
 
 - name: Keepalived warm-up
   vars:
-    warm_up: "{{ 8 * 60 }}"  # 8 minutes wait before daemon start
+    warm_up: "{{ 3 if simulation else 8 * 60 }}"  # 8 minutes wait before daemon start
     start_up: 90  # default 90s timeout for daemon start-up
   copy:
     content: |
