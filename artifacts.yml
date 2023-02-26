@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230224.11
-  # Fri Feb 24 04:58:00 UTC 2023 -- Fri Feb 24 15:58:00 AEDT 2023
+  # Dante Build Artifact 20230225.1
+  # Fri Feb 24 14:17:37 UTC 2023 -- Sat Feb 25 01:17:37 AEDT 2023
   #
-  # Merged PR 10478: Trigger Iris pipeline after Dante run
-  # 320c7a95845a59a95a76f8debe36b3f8a0842f2d
-  dante_build_id: '500437'
+  # Merge pull request 10594 from dante_artifact_upgrade into master
+  # 23dbada7175692cb69d410f694a0e64b44dd083d
+  dante_build_id: '500783'
 
-  # virgil 20230224.15
-  # Fri Feb 24 04:02:00 UTC 2023 -- Fri Feb 24 15:02:00 AEDT 2023
+  # virgil 20230227.2
+  # Sun Feb 26 22:19:59 UTC 2023 -- Mon Feb 27 09:19:59 AEDT 2023
   #
-  # Merged PR 10585: Added server_hyperv test machine
-  # 5940d964af1d0cdd12429b30450bd617adb27904
-  virgil_build_id: '500398'
+  # Merge pull request 10609 from virgil_python_upgrade into master
+  # b7a2c71ac2a02a9deb913a147145347d9fa57b67
+  virgil_build_id: '502726'
