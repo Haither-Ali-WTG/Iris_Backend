@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230225.1
-  # Fri Feb 24 14:17:37 UTC 2023 -- Sat Feb 25 01:17:37 AEDT 2023
+  # Dante Build Artifact 20230227.2
+  # Mon Feb 27 01:37:44 UTC 2023 -- Mon Feb 27 12:37:44 AEDT 2023
   #
-  # Merge pull request 10594 from dante_artifact_upgrade into master
-  # 23dbada7175692cb69d410f694a0e64b44dd083d
-  dante_build_id: '500783'
+  # Merged PR 10619: Hosting google k8s apt key locally
+  # 8210e9f2ad82e8cf36c0a641e145c9b2b029d491
+  dante_build_id: '502893'
 
   # virgil 20230227.4
   # Sun Feb 26 23:03:06 UTC 2023 -- Mon Feb 27 10:03:06 AEDT 2023
