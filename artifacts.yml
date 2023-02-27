@@ -7,9 +7,9 @@ variables:
   # 23dbada7175692cb69d410f694a0e64b44dd083d
   dante_build_id: '500783'
 
-  # virgil 20230227.2
-  # Sun Feb 26 22:19:59 UTC 2023 -- Mon Feb 27 09:19:59 AEDT 2023
+  # virgil 20230227.4
+  # Sun Feb 26 23:03:06 UTC 2023 -- Mon Feb 27 10:03:06 AEDT 2023
   #
-  # Merge pull request 10609 from virgil_python_upgrade into master
-  # b7a2c71ac2a02a9deb913a147145347d9fa57b67
-  virgil_build_id: '502726'
+  # Merged PR 10430: Virgil: Remove k8s orchestrator from kvm nodes
+  # d4f33e178f25dcb21b25a528cae4235daf43990c
+  virgil_build_id: '502769'
