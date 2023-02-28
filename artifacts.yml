@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230228.5
-  # Tue Feb 28 00:33:09 UTC 2023 -- Tue Feb 28 11:33:09 AEDT 2023
+  # Dante Build Artifact 20230228.8
+  # Tue Feb 28 07:46:42 UTC 2023 -- Tue Feb 28 18:46:42 AEDT 2023
   #
-  # Merge pull request 10636 from dante_artifact_upgrade into master
-  # 71b48083e89a84f2f43c61c3fd8df355841edc40
-  dante_build_id: '503876'
+  # Merged PR 10515: README file for the access_ssh role
+  # a1d6f86e367d32c8d388464dc8f215977fe6eea8
+  dante_build_id: '504221'
 
   # virgil 20230228.10
   # Tue Feb 28 01:03:14 UTC 2023 -- Tue Feb 28 12:03:14 AEDT 2023
