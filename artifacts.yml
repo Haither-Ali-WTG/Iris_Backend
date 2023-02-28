@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230228.8
-  # Tue Feb 28 07:46:42 UTC 2023 -- Tue Feb 28 18:46:42 AEDT 2023
+  # Dante Build Artifact 20230301.1
+  # Tue Feb 28 23:05:24 UTC 2023 -- Wed Mar  1 10:05:24 AEDT 2023
   #
-  # Merged PR 10515: README file for the access_ssh role
-  # a1d6f86e367d32c8d388464dc8f215977fe6eea8
-  dante_build_id: '504221'
+  # Merged PR 10653: Added Windows mellanox drivers to ISO
+  # 89f5ddb446d18402b8c7282ab9d47b0064c3bdd7
+  dante_build_id: '504776'
 
   # virgil 20230301.2
   # Tue Feb 28 22:38:32 UTC 2023 -- Wed Mar  1 09:38:32 AEDT 2023
