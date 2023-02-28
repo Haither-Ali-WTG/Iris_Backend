@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230227.2
-  # Mon Feb 27 01:37:44 UTC 2023 -- Mon Feb 27 12:37:44 AEDT 2023
+  # Dante Build Artifact 20230228.5
+  # Tue Feb 28 00:33:09 UTC 2023 -- Tue Feb 28 11:33:09 AEDT 2023
   #
-  # Merged PR 10619: Hosting google k8s apt key locally
-  # 8210e9f2ad82e8cf36c0a641e145c9b2b029d491
-  dante_build_id: '502893'
+  # Merge pull request 10636 from dante_artifact_upgrade into master
+  # 71b48083e89a84f2f43c61c3fd8df355841edc40
+  dante_build_id: '503876'
 
-  # virgil 20230227.4
-  # Sun Feb 26 23:03:06 UTC 2023 -- Mon Feb 27 10:03:06 AEDT 2023
+  # virgil 20230228.10
+  # Tue Feb 28 01:03:14 UTC 2023 -- Tue Feb 28 12:03:14 AEDT 2023
   #
-  # Merged PR 10430: Virgil: Remove k8s orchestrator from kvm nodes
-  # d4f33e178f25dcb21b25a528cae4235daf43990c
-  virgil_build_id: '502769'
+  # Merged PR 10646: Server converted to Windows 2019
+  # 31480b1d399a5c659dda9ce1b1349d23e6b501da
+  virgil_build_id: '503918'
