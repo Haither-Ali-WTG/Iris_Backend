@@ -7,9 +7,9 @@ variables:
   # a1d6f86e367d32c8d388464dc8f215977fe6eea8
   dante_build_id: '504221'
 
-  # virgil 20230228.10
-  # Tue Feb 28 01:03:14 UTC 2023 -- Tue Feb 28 12:03:14 AEDT 2023
+  # virgil 20230301.2
+  # Tue Feb 28 22:38:32 UTC 2023 -- Wed Mar  1 09:38:32 AEDT 2023
   #
-  # Merged PR 10646: Server converted to Windows 2019
-  # 31480b1d399a5c659dda9ce1b1349d23e6b501da
-  virgil_build_id: '503918'
+  # Merge pull request 10661 from virgil_python_upgrade into master
+  # b4f220f3ba07d944856939800c1d048e42ee2911
+  virgil_build_id: '504747'
