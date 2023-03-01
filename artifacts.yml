@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230301.5
-  # Wed Mar  1 01:29:07 UTC 2023 -- Wed Mar  1 12:29:07 AEDT 2023
+  # Dante Build Artifact 20230301.7
+  # Wed Mar  1 03:37:23 UTC 2023 -- Wed Mar  1 14:37:23 AEDT 2023
   #
-  # Merged PR 10625: Change KVM cluster name from p0 to c0
-  # 8dea4f473b59a3a653d01b2c7932dc5170bde54d
-  dante_build_id: '504890'
+  # Merged PR 10469: Monitor Maintenance OU for Session Hosts to be destroyed
+  # 92ba1b0171c612adf8f9e61e15e6f9a135a52c51
+  dante_build_id: '505020'
 
   # virgil 20230301.2
   # Tue Feb 28 22:38:32 UTC 2023 -- Wed Mar  1 09:38:32 AEDT 2023
