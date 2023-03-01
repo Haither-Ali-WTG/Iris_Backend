@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230301.7
-  # Wed Mar  1 03:37:23 UTC 2023 -- Wed Mar  1 14:37:23 AEDT 2023
+  # Dante Build Artifact 20230301.10
+  # Wed Mar  1 06:19:51 UTC 2023 -- Wed Mar  1 17:19:51 AEDT 2023
   #
-  # Merged PR 10469: Monitor Maintenance OU for Session Hosts to be destroyed
-  # 92ba1b0171c612adf8f9e61e15e6f9a135a52c51
-  dante_build_id: '505020'
+  # Merged PR 10669: Pass ad_domain to simulation setup in dev sim
+  # c9f955c74a895f4e07177e12c038db8132bc2c4a
+  dante_build_id: '505153'
 
-  # virgil 20230301.2
-  # Tue Feb 28 22:38:32 UTC 2023 -- Wed Mar  1 09:38:32 AEDT 2023
+  # virgil 20230301.4
+  # Wed Mar  1 04:31:15 UTC 2023 -- Wed Mar  1 15:31:15 AEDT 2023
   #
-  # Merge pull request 10661 from virgil_python_upgrade into master
-  # b4f220f3ba07d944856939800c1d048e42ee2911
-  virgil_build_id: '504747'
+  # Merged PR 10538: Add-sand-vlan-to-hyperv-be-and-fe-profile
+  # b67791ace052ad2670a0c4030d28790eb1708de4
+  virgil_build_id: '505081'
