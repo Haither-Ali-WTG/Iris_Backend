@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230301.10
-  # Wed Mar  1 06:19:51 UTC 2023 -- Wed Mar  1 17:19:51 AEDT 2023
+  # Dante Build Artifact 20230302.11
+  # Thu Mar  2 12:40:16 UTC 2023 -- Thu Mar  2 23:40:16 AEDT 2023
   #
-  # Merged PR 10669: Pass ad_domain to simulation setup in dev sim
-  # c9f955c74a895f4e07177e12c038db8132bc2c4a
-  dante_build_id: '505153'
+  # Merge pull request 10648 from dante_artifact_upgrade into master
+  # fde330bb15ada3704e824f0f194844dd22809d6f
+  dante_build_id: '506455'
 
-  # virgil 20230301.4
-  # Wed Mar  1 04:31:15 UTC 2023 -- Wed Mar  1 15:31:15 AEDT 2023
+  # virgil 20230302.17
+  # Thu Mar  2 05:28:18 UTC 2023 -- Thu Mar  2 16:28:18 AEDT 2023
   #
-  # Merged PR 10538: Add-sand-vlan-to-hyperv-be-and-fe-profile
-  # b67791ace052ad2670a0c4030d28790eb1708de4
-  virgil_build_id: '505081'
+  # Merged PR 10695: Pseudo host for CORP powershell jumphost
+  # 5040f907daf952a0e9735eefa289fc082c0058d8
+  virgil_build_id: '506128'
