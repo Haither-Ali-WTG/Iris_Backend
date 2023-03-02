@@ -279,7 +279,7 @@ errorfile {{ sorry_page.code }} /usr/local/etc/haproxy/sorry_pages/{{ sorry_page
 
 {%   for server in backend.servers %}
 server {{ server.name }}
-{%-    if simulation %} 127.0.0.1:
+{%-    if simulation %} {{ ansible_host }}:
 {%-      if backend.encryption | default(false) -%}
 8082 check
 {%       else -%}
