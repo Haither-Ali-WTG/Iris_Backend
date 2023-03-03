@@ -98,6 +98,21 @@
     volumes:
       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
+    net_host: no
+    ports: >-
+      [
+        '{{ stats.ports.web }}:7999',
+        {% if not simulation %}
+        {% for item in proxy.ports.http.plaintext %}
+        '{{ item }}:{{ 8000 + loop.index }}',
+        {% endfor %}
+        {% else %}
+        '{{ haproxy_http_port }}:8000',
+        {% endif %}
+        {% if certificates | default([]) %}
+        '{{ haproxy_https_port }}:8888',
+        {% endif %}
+      ]
     container_user: root
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
