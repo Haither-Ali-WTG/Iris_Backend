@@ -164,12 +164,12 @@ bind {% for item in proxy.ports.http.plaintext %}:{{ 8000 + loop.index }}{% if l
 # port {{ 8000 + loop.index }} mapped to {{ item }} on host
 {% endfor %}
 {% else %}
-bind :{{ 8000 }}
-# port {{ 8000 }} mapped to {{ haproxy_http_port }} on host
+bind :8000
+# port 8000 mapped to {{ haproxy_http_port }} on host
 {% endif %}
 {% if certificates | default([]) %}
-bind :{{ 8888 }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
-# port {{ 8888 }} mapped to {{ haproxy_https_port }} on host
+bind :8888 ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
+# port 8888 mapped to {{ haproxy_https_port }} on host
 {% endif %}
 
 
