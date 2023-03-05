@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230302.11
-  # Thu Mar  2 12:40:16 UTC 2023 -- Thu Mar  2 23:40:16 AEDT 2023
+  # Dante Build Artifact 20230303.8
+  # Fri Mar  3 09:43:35 UTC 2023 -- Fri Mar  3 20:43:35 AEDT 2023
   #
-  # Merge pull request 10648 from dante_artifact_upgrade into master
-  # fde330bb15ada3704e824f0f194844dd22809d6f
-  dante_build_id: '506455'
+  # Merged PR 10721: frr installation fixed for layer 3 ubuntu 22.04
+  # d3581d53ebc50a5d18bb580c270316dc1f98f530
+  dante_build_id: '507326'
 
-  # virgil 20230302.17
-  # Thu Mar  2 05:28:18 UTC 2023 -- Thu Mar  2 16:28:18 AEDT 2023
+  # virgil 20230306.9
+  # Sun Mar  5 22:39:32 UTC 2023 -- Mon Mar  6 09:39:32 AEDT 2023
   #
-  # Merged PR 10695: Pseudo host for CORP powershell jumphost
-  # 5040f907daf952a0e9735eefa289fc082c0058d8
-  virgil_build_id: '506128'
+  # Merged PR 10710: Upgrade AU2 Iris servers to Ubuntu 22.04
+  # 5a69d5e156607b1c8e2cf2721b62f235c0489683
+  virgil_build_id: '509542'
