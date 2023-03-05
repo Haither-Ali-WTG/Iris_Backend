@@ -10,9 +10,9 @@ ansible-core==2.14.3
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.13.1
+ansible-lint==6.14.0
     # via -r requirements.in
-argcomplete==2.0.0
+argcomplete==2.0.5
     # via yq
 astroid==2.14.2
     # via pylint
@@ -38,7 +38,7 @@ click==8.1.3
     #   safety
 coverage[toml]==7.2.1
     # via pytest-cov
-cryptography==39.0.1
+cryptography==39.0.2
     # via
     #   ansible-core
     #   pyspnego
@@ -100,7 +100,7 @@ pathspec==0.11.0
     #   yamllint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.0.0
+platformdirs==3.1.0
     # via
     #   black
     #   pylint
@@ -110,7 +110,7 @@ pycparser==2.21
     # via cffi
 pygments==2.14.0
     # via rich
-pylint==2.16.2
+pylint==2.16.3
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
@@ -118,7 +118,7 @@ pyrsistent==0.19.3
     # via jsonschema
 pyspnego==0.8.0
     # via requests-ntlm
-pytest==7.2.1
+pytest==7.2.2
     # via
     #   -r requirements.in
     #   pytest-cov
@@ -146,7 +146,7 @@ requests-ntlm==1.2.0
     # via pywinrm
 resolvelib==0.8.1
     # via ansible-core
-rich==13.3.1
+rich==13.3.2
     # via ansible-lint
 ruamel-yaml==0.17.21
     # via
