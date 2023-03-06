@@ -7,9 +7,9 @@ variables:
   # 3c3d923ea8524aa5f5dee34d0b9f1c3fa43b8078
   dante_build_id: '510676'
 
-  # virgil 20230306.25
-  # Mon Mar  6 08:05:52 UTC 2023 -- Mon Mar  6 19:05:52 AEDT 2023
+  # virgil 20230307.12
+  # Mon Mar  6 23:06:28 UTC 2023 -- Tue Mar  7 10:06:28 AEDT 2023
   #
-  # Merged PR 10711: Repurpose de1col200306, de1col200307 for Iris
-  # 9548407da0b474ed63621b7ec03d1a116d27423e
-  virgil_build_id: '510054'
+  # Merged PR 10783: Enabled management node 3 for simulation
+  # ee4fb0fac8f6a214d03e25b705a02f2f86b25c84
+  virgil_build_id: '510718'
