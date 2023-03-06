@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230306.1
-  # Sun Mar  5 23:12:18 UTC 2023 -- Mon Mar  6 10:12:18 AEDT 2023
+  # Dante Build Artifact 20230306.3
+  # Mon Mar  6 02:19:21 UTC 2023 -- Mon Mar  6 13:19:21 AEDT 2023
   #
-  # Merged PR 10725: Dante - Artifact Add missing ssh tunnel file
-  # e1c9415c7508870c2945519b766bcb64bd27d909
-  dante_build_id: '509577'
+  # Merged PR 10580: Dante - Correct typo mercury_repo
+  # dbe2009cbe374bceacf8bcfb72eb5d7b97dc60a8
+  dante_build_id: '509767'
 
-  # virgil 20230306.20
-  # Mon Mar  6 01:09:49 UTC 2023 -- Mon Mar  6 12:09:49 AEDT 2023
+  # virgil 20230306.23
+  # Mon Mar  6 03:21:35 UTC 2023 -- Mon Mar  6 14:21:35 AEDT 2023
   #
-  # Merged PR 10743: Disabling aliases for node 3
-  # 255ca410ba5ff26b9fe193c53f0aa05773cccd81
-  virgil_build_id: '509706'
+  # Merge pull request 10757 from virgil_python_upgrade into master
+  # 9cce08b6a80b2539c6efed338a272b470bbf3c27
+  virgil_build_id: '509827'
