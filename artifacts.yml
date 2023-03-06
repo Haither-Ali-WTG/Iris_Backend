@@ -7,9 +7,9 @@ variables:
   # e1c9415c7508870c2945519b766bcb64bd27d909
   dante_build_id: '509577'
 
-  # virgil 20230306.15
-  # Mon Mar  6 00:19:56 UTC 2023 -- Mon Mar  6 11:19:56 AEDT 2023
+  # virgil 20230306.20
+  # Mon Mar  6 01:09:49 UTC 2023 -- Mon Mar  6 12:09:49 AEDT 2023
   #
-  # Merged PR 10723: Expand comment on virgil_mgmt_nodes
-  # 5a86c06d94795e8a0ad44ec8e5b1d38d8b4de945
-  virgil_build_id: '509630'
+  # Merged PR 10743: Disabling aliases for node 3
+  # 255ca410ba5ff26b9fe193c53f0aa05773cccd81
+  virgil_build_id: '509706'
