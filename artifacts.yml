@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230307.2
-  # Mon Mar  6 22:44:12 UTC 2023 -- Tue Mar  7 09:44:12 AEDT 2023
+  # Dante Build Artifact 20230307.3
+  # Tue Mar  7 03:44:57 UTC 2023 -- Tue Mar  7 14:44:57 AEDT 2023
   #
-  # Merged PR 10765: oob udev rules support for ubuntu management nodes
-  # 3c3d923ea8524aa5f5dee34d0b9f1c3fa43b8078
-  dante_build_id: '510676'
+  # Merged PR 10749: Windows Physical server build support
+  # 3fa9d2021fbad49ab776450a5518e00c70bafae6
+  dante_build_id: '510951'
 
   # virgil 20230307.15
   # Mon Mar  6 23:47:38 UTC 2023 -- Tue Mar  7 10:47:38 AEDT 2023
