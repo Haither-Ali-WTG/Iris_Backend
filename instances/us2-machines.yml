@@ -1,0 +1,12 @@
+---
+machines:
+  hosts:
+    us2lbl00384:
+      ansible_host: 10.3.64.21
+      os: ubuntu
+    us2lbl00385:
+      ansible_host: 10.3.64.22
+      os: ubuntu
+    us2lbl00386:
+      ansible_host: 10.3.64.23
+      os: ubuntu
