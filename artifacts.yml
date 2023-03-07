@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230307.3
-  # Tue Mar  7 03:44:57 UTC 2023 -- Tue Mar  7 14:44:57 AEDT 2023
+  # Dante Build Artifact 20230308.1
+  # Tue Mar  7 16:00:39 UTC 2023 -- Wed Mar  8 03:00:39 AEDT 2023
   #
-  # Merged PR 10749: Windows Physical server build support
-  # 3fa9d2021fbad49ab776450a5518e00c70bafae6
-  dante_build_id: '510951'
+  # Merged PR 10649: Python upgrade with lint fixes
+  # cc201719cdbfe21e681d6de9be6d596e03cfb7e0
+  dante_build_id: '511456'
 
   # virgil 20230307.15
   # Mon Mar  6 23:47:38 UTC 2023 -- Tue Mar  7 10:47:38 AEDT 2023
