@@ -10,9 +10,9 @@ ansible-core==2.14.3
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.14.0
+ansible-lint==6.14.1
     # via -r requirements.in
-argcomplete==2.0.6
+argcomplete==2.1.1
     # via yq
 astroid==2.15.0
     # via pylint
@@ -79,7 +79,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-mypy==1.0.1
+mypy==1.1.1
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
