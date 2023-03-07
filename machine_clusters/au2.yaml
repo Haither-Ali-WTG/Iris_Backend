@@ -23,5 +23,6 @@ au2-prod-frontend-1:
     - description: webservices
       ip: 10.2.64.139
       preempt: yes
-      # TODO: when we get the third machine, it'll be first in the priority for .139
+      # TODO: when we get the third machine, it'll be first in the priority for .139;
+      # compare DE1 and US2
       priority: [au2lbl00345, au2lbl00346]
