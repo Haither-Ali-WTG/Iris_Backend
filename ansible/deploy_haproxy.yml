@@ -49,10 +49,6 @@
       include_role:
         name: system_parameters
 
-    - name: Setup keepalived (VRRP)
-      include_role:
-        name: iris_keepalived
-
 - name: Setup the individual instances
   hosts: individual_instances
   strategy: free
@@ -82,3 +78,13 @@
       include_role:
         name: iris_haproxy
         tasks_from: individual_instances.yml
+
+- name: Activate keepalived
+  hosts: machines
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
