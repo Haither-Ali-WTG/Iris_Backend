@@ -1,0 +1,26 @@
+---
+de1-prod-frontend-1:
+  machines:
+    de1lbl00306: ~
+    de1lbl00307: ~
+  floating_ips:
+    - description: WiseCloud RDP (PROD)
+      ip: 10.3.64.135
+      preempt: no
+      priority: [de1lbl00306, de1lbl00307, de1lbl00387]
+    - description: ediProd RDP (CORP)
+      ip: 10.3.64.136
+      preempt: no
+      priority: [de1lbl00307, de1lbl00306, de1lbl00387]
+    - description: webservices
+      ip: 10.3.64.137
+      preempt: yes
+      priority: [de1lbl00306, de1lbl00307, de1lbl00387]
+    - description: webservices
+      ip: 10.3.64.138
+      preempt: yes
+      priority: [de1lbl00307, de1lbl00387, de1lbl00306]
+    - description: webservices
+      ip: 10.3.64.139
+      preempt: yes
+      priority: [de1lbl00387, de1lbl00306, de1lbl00307]
