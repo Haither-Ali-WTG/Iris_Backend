@@ -7,9 +7,9 @@ variables:
   # 387bc7d481f4c86024280530d5af851702ba8b9c
   dante_build_id: '512278'
 
-  # virgil 20230308.5
-  # Tue Mar  7 22:48:14 UTC 2023 -- Wed Mar  8 09:48:14 AEDT 2023
+  # virgil 20230309.2
+  # Wed Mar  8 22:55:34 UTC 2023 -- Thu Mar  9 09:55:34 AEDT 2023
   #
-  # Merged PR 10812: Change C-00343 OS to rhel8
-  # bf466b3a69ef61c7a2275b3dd48a3208440d857c
-  virgil_build_id: '511728'
+  # Merge pull request 10843 from virgil_python_upgrade into master
+  # ed2d0d79c3d9654b91992214c292c16c0b69218b
+  virgil_build_id: '512878'
