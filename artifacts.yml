@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230308.2
-  # Tue Mar  7 23:22:25 UTC 2023 -- Wed Mar  8 10:22:25 AEDT 2023
+  # Dante Build Artifact 20230308.10
+  # Wed Mar  8 02:11:53 UTC 2023 -- Wed Mar  8 13:11:53 AEDT 2023
   #
-  # Merge pull request 10643 from dante_python_upgrade into master
-  # 48ad4ef437e2bf67a3b750b524c75b2e20c46704
-  dante_build_id: '511771'
+  # Merged PR 10687: (Do not merge) Dante - Removal of Clusters (Kafka) from Dante
+  # 034ed7474932507426cb8375a679db7d49ed72b1
+  dante_build_id: '511925'
 
   # virgil 20230308.5
   # Tue Mar  7 22:48:14 UTC 2023 -- Wed Mar  8 09:48:14 AEDT 2023
