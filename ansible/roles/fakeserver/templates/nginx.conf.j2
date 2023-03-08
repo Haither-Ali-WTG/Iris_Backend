@@ -28,7 +28,7 @@ http {
       {%- if test.ssl %} {{ test.host }}
       {%- endif -%}
     {%- endfor -%};
-    {% for cert in certs_list -%}
+    {% for cert in certs_list | default([]) -%}
     ssl_certificate /certs/{{ cert }}.pem;
     ssl_certificate_key /certs/{{ cert }}.pem;
     {% endfor -%}
