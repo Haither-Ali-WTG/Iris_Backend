@@ -3,6 +3,7 @@ de1-prod-frontend-1:
   machines:
     de1lbl00306: ~
     de1lbl00307: ~
+    de1lbl00387: ~
   floating_ips:
     - description: WiseCloud RDP (PROD)
       ip: 10.3.64.135
