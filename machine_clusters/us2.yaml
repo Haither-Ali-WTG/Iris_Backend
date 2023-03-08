@@ -3,6 +3,7 @@ us2-prod-frontend-1:
   machines:
     us2lbl00384: ~
     us2lbl00385: ~
+    us2lbl00386: ~
   floating_ips:
     - description: WiseCloud RDP (PROD)
       ip: 10.4.64.135
