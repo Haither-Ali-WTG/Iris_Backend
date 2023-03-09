@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230308.26
-  # Wed Mar  8 08:54:21 UTC 2023 -- Wed Mar  8 19:54:21 AEDT 2023
+  # Dante Build Artifact 20230309.1
+  # Thu Mar  9 01:04:51 UTC 2023 -- Thu Mar  9 12:04:51 AEDT 2023
   #
-  # Merged PR 10815: Add the "soe" tag to our SOE collection
-  # 387bc7d481f4c86024280530d5af851702ba8b9c
-  dante_build_id: '512278'
+  # Merged PR 10826: Download autoinstall iso for windows installation
+  # 906cf42fed7a4cbda1f9641fa8fe10fd11562db3
+  dante_build_id: '512983'
 
   # virgil 20230309.2
   # Wed Mar  8 22:55:34 UTC 2023 -- Thu Mar  9 09:55:34 AEDT 2023
