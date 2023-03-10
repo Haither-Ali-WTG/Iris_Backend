@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230310.1
-  # Thu Mar  9 22:45:12 UTC 2023 -- Fri Mar 10 09:45:12 AEDT 2023
+  # Dante Build Artifact 20230310.2
+  # Fri Mar 10 00:03:45 UTC 2023 -- Fri Mar 10 11:03:45 AEDT 2023
   #
-  # Merged PR 10865: Fix error in rebuild server pipeline
-  # c2b753ebc47b741dc1d7898af557887caa740a0e
-  dante_build_id: '513905'
+  # Merged PR 10863: Remove obsolete comments
+  # a886c233b416cda30d9c5ead4b576f5d599a9f87
+  dante_build_id: '513978'
 
   # virgil 20230310.2
   # Thu Mar  9 22:50:19 UTC 2023 -- Fri Mar 10 09:50:19 AEDT 2023
