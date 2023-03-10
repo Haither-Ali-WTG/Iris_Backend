@@ -8,6 +8,7 @@ individual_instance_defaults:
     threads: 8
     maxconn: 200000
     haproxy_version: "2.4.19"
+    haproxy_os: bullseye  # Debian bullseye, used for the haproxy image tag
 
   stats:
     ports:
