@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230310.4
-  # Fri Mar 10 04:23:42 UTC 2023 -- Fri Mar 10 15:23:42 AEDT 2023
+  # Dante Build Artifact 20230313.1
+  # Sun Mar 12 22:04:38 UTC 2023 -- Mon Mar 13 09:04:38 AEDT 2023
   #
-  # Merged PR 10861: Dante - Trigger Next Pipeline - Add dc and hall in json api POST
-  # cbf1431e61368ea665664055caafb726ac0e046c
-  dante_build_id: '514196'
+  # Merge pull request 10889 from dante_artifact_upgrade into master
+  # 2238857facd8151e47a03f8db32dd6f6616f6cba
+  dante_build_id: '516595'
 
-  # virgil 20230313.1
-  # Sun Mar 12 13:09:55 UTC 2023 -- Mon Mar 13 00:09:55 AEDT 2023
+  # virgil 20230313.7
+  # Sun Mar 12 22:55:39 UTC 2023 -- Mon Mar 13 09:55:39 AEDT 2023
   #
-  # Merged PR 10887: AU2-GEN-004 - C56 - Cluster Expansion
-  # 541be5e019ed990c976885e918d1045c764b7eb2
-  virgil_build_id: '516240'
+  # Merged PR 10879: Flag to choose how to install bind - container or systemd
+  # 84056d8e493645dec97a8f8a41f3bf1206d04e41
+  virgil_build_id: '516631'
