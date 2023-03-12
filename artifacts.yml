@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230310.2
-  # Fri Mar 10 00:03:45 UTC 2023 -- Fri Mar 10 11:03:45 AEDT 2023
+  # Dante Build Artifact 20230310.4
+  # Fri Mar 10 04:23:42 UTC 2023 -- Fri Mar 10 15:23:42 AEDT 2023
   #
-  # Merged PR 10863: Remove obsolete comments
-  # a886c233b416cda30d9c5ead4b576f5d599a9f87
-  dante_build_id: '513978'
+  # Merged PR 10861: Dante - Trigger Next Pipeline - Add dc and hall in json api POST
+  # cbf1431e61368ea665664055caafb726ac0e046c
+  dante_build_id: '514196'
 
-  # virgil 20230310.2
-  # Thu Mar  9 22:50:19 UTC 2023 -- Fri Mar 10 09:50:19 AEDT 2023
+  # virgil 20230313.1
+  # Sun Mar 12 13:09:55 UTC 2023 -- Mon Mar 13 00:09:55 AEDT 2023
   #
-  # Merge pull request 10868 from virgil_python_upgrade into master
-  # 037586c75fe78406b9878f5303df56d2afb48dae
-  virgil_build_id: '513914'
+  # Merged PR 10887: AU2-GEN-004 - C56 - Cluster Expansion
+  # 541be5e019ed990c976885e918d1045c764b7eb2
+  virgil_build_id: '516240'
