@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230313.3
-  # Mon Mar 13 02:05:31 UTC 2023 -- Mon Mar 13 13:05:31 AEDT 2023
+  # Dante Build Artifact 20230314.1
+  # Mon Mar 13 23:02:17 UTC 2023 -- Tue Mar 14 10:02:17 AEDT 2023
   #
-  # Merge pull request 10898 from dante_artifact_upgrade into master
-  # 5ef314a3b6fa3acdd323649baea5bceeded7fb17
-  dante_build_id: '516793'
+  # Merged PR 10911: Dante - Fix filebeat deployment for enabled nodes
+  # 42ca59e7111223042fb5472138b0a0283a6c69c1
+  dante_build_id: '517687'
 
-  # virgil 20230313.7
-  # Sun Mar 12 22:55:39 UTC 2023 -- Mon Mar 13 09:55:39 AEDT 2023
+  # virgil 20230314.3
+  # Mon Mar 13 22:27:44 UTC 2023 -- Tue Mar 14 09:27:44 AEDT 2023
   #
-  # Merged PR 10879: Flag to choose how to install bind - container or systemd
-  # 84056d8e493645dec97a8f8a41f3bf1206d04e41
-  virgil_build_id: '516631'
+  # Merge pull request 10914 from virgil_python_upgrade into master
+  # a3ce323759d4af95ed20676b2f4b20bfac9266f1
+  virgil_build_id: '517638'
