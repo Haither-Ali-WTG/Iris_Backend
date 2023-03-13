@@ -47,7 +47,7 @@ dill==0.3.6
     # via pylint
 dparse==0.6.2
     # via safety
-exceptiongroup==1.1.0
+exceptiongroup==1.1.1
     # via pytest
 filelock==3.9.0
     # via ansible-lint
