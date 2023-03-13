@@ -17,6 +17,7 @@ rules:
     forbid-explicit-octal: false
   line-length:
     max: 120
+    ignore: /artifacts.yml
   empty-values:
     forbid-in-block-mappings: true
     forbid-in-flow-mappings: true
