@@ -164,12 +164,12 @@ bind {% for item in proxy.ports.http.plaintext %}:{{ all_port_map[item] }}{% if 
 # port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
 {% else %}
-bind :{{ all_port_map[haproxy_http_port] }}
-# port {{ all_port_map[haproxy_http_port] }} mapped to {{ haproxy_http_port }} on host
+bind :{{ all_port_map[haproxy_http_port | int] }}
+# port {{ all_port_map[haproxy_http_port | int] }} mapped to {{ haproxy_http_port }} on host
 {% endif %}
 {% if certificates | default([]) %}
-bind :{{ all_port_map[haproxy_https_port] }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
-# port {{ all_port_map[haproxy_https_port] }} mapped to {{ haproxy_https_port }} on host
+bind :{{ all_port_map[haproxy_https_port | int] }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
+# port {{ all_port_map[haproxy_https_port | int] }} mapped to {{ haproxy_https_port }} on host
 {% endif %}
 
 
