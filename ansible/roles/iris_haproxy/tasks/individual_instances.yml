@@ -99,12 +99,7 @@
       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     net_host: no
-    ports: >-
-      [
-        {% for host_port, container_port in all_port_map.items() %}
-        '{{ host_port }}:{{ container_port }}',
-        {% endfor %}
-      ]
+    # no ports are mapped here; we configure NAT directly via iptables
     container_user: root
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
