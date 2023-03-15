@@ -94,7 +94,7 @@ packaging==21.3
     #   dparse
     #   pytest
     #   safety
-pathspec==0.11.0
+pathspec==0.11.1
     # via
     #   black
     #   yamllint
