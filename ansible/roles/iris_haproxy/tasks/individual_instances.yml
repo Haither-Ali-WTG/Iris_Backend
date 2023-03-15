@@ -120,3 +120,20 @@
   when:
     - container_exists
     - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
+
+- name: Retrieve container details
+  command: "{{ docker_engine }} inspect {{ container_name }}"
+  register: container_details
+  changed_when: false
+
+- name: Map ports via iptables - temporary script
+  # TODO - replace this with a templated file for iptables-restore on the host level
+  vars:
+    container_ip: "{{ (container_details.stdout | from_json).0.NetworkSettings.IPAddress }}"
+  shell: |
+    set -euxo pipefail
+    {% for host_port, container_port in all_port_map.items() %}
+    iptables -t nat -A PREROUTING  -p tcp --dport {{ host_port }} -j DNAT --to {{ container_ip }}:{{ container_port }}
+    {% endfor %}
+    iptables -P FORWARD ACCEPT
+  bacome: yes
