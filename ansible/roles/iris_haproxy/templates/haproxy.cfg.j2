@@ -109,8 +109,8 @@ log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ func
 
 
 listen stats
-bind :7999
-# port 7999 mapped to {{ stats.ports.web }} on host
+bind :{{ all_port_map[stats.ports.web] }}
+# port {{ all_port_map[stats.ports.web] }} mapped to {{ stats.ports.web }} on host
 mode http
 stats enable
 stats show-node
@@ -159,17 +159,17 @@ capture request header user-agent len 150
 
 
 {% if not simulation %}
-bind {% for item in proxy.ports.http.plaintext %}:{{ 8000 + loop.index }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
+bind {% for item in proxy.ports.http.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
 {% for item in proxy.ports.http.plaintext %}
-# port {{ 8000 + loop.index }} mapped to {{ item }} on host
+# port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
 {% else %}
-bind :8000
-# port 8000 mapped to {{ haproxy_http_port }} on host
+bind :{{ all_port_map[haproxy_http_port] }}
+# port {{ all_port_map[haproxy_http_port] }} mapped to {{ haproxy_http_port }} on host
 {% endif %}
 {% if certificates | default([]) %}
-bind :8888 ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
-# port 8888 mapped to {{ haproxy_https_port }} on host
+bind :{{ all_port_map[haproxy_https_port] }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
+# port {{ all_port_map[haproxy_https_port] }} mapped to {{ haproxy_https_port }} on host
 {% endif %}
 
 
