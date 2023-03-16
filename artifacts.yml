@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230314.1
-  # Mon Mar 13 23:02:17 UTC 2023 -- Tue Mar 14 10:02:17 AEDT 2023
+  # Dante Build Artifact 20230316.3
+  # Thu Mar 16 03:16:50 UTC 2023 -- Thu Mar 16 14:16:50 AEDT 2023
   #
-  # Merged PR 10911: Dante - Fix filebeat deployment for enabled nodes
-  # 42ca59e7111223042fb5472138b0a0283a6c69c1
-  dante_build_id: '517687'
+  # Merged PR 10932: Clean up the retired pods in the mgmt nodes
+  # 488671843e1c492a7a34608c9e6a54fa8e758dae
+  dante_build_id: '519999'
 
-  # virgil 20230314.3
-  # Mon Mar 13 22:27:44 UTC 2023 -- Tue Mar 14 09:27:44 AEDT 2023
+  # virgil 20230316.17
+  # Thu Mar 16 04:56:57 UTC 2023 -- Thu Mar 16 15:56:57 AEDT 2023
   #
-  # Merge pull request 10914 from virgil_python_upgrade into master
-  # a3ce323759d4af95ed20676b2f4b20bfac9266f1
-  virgil_build_id: '517638'
+  # Merged PR 10964: Add Standalone ESX host for Testing
+  # c9bd90b3ce93ee4b4f2f762f3ac37a43068be4f8
+  virgil_build_id: '520091'
