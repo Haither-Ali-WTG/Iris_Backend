@@ -137,5 +137,7 @@
     iptables -t nat -A PREROUTING  -p tcp --dport {{ host_port }} -j DNAT --to {{ container_ip }}:{{ container_port }}
     {% endfor %}
     iptables -P FORWARD ACCEPT
+  args:
+    executable: /bin/bash
   become: yes
   changed_when: true
