@@ -122,7 +122,7 @@
     - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
 
 - name: Retrieve container details
-  command: "{{ docker_engine }} inspect {{ container_name }}"
+  command: "{{ engine }} inspect {{ container_name }}"
   register: container_details
   changed_when: false
 
