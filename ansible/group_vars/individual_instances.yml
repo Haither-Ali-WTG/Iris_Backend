@@ -9,6 +9,10 @@ individual_instance_defaults:
     maxconn: 200000
     haproxy_version: "2.4.19"
     haproxy_os: bullseye  # Debian bullseye, used for the haproxy image tag
+    port_map:  # convention: backwards starting from 80: 8000
+      80: 8000
+      81: 7999
+      443: 7637
 
   stats:
     ports:

@@ -84,3 +84,27 @@
         ciphers_tls_v1_3: >-
           {{ (ciphers_tls_v1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique }}
       loop: "{{ cipher.profiles }}"
+
+    - name: Calculate port mapping
+      vars:
+        all_host_ports: >-
+          [
+            {{ stats.ports.web }},
+            {% if not simulation %}
+            {% for port in proxy.ports.http.plaintext %}
+            {{ port }},
+            {% endfor %}
+            {% else %}
+            {{ haproxy_http_port }},
+            {% endif %}
+            {% if certificates | default([]) %}
+            {{ haproxy_https_port }},
+            {% endif %}
+          ]
+      set_fact:
+        all_port_map: >-
+          {
+            {% for host_port in all_host_ports %}
+            {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
+            {% endfor %}
+          }
