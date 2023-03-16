@@ -10,12 +10,14 @@
     path: "{{ openssl_config }}"
     regexp: '# providers = provider_sect'
     line: 'providers = provider_sect'
+  become: yes
 
 - name: Add legacy section reference
   lineinfile:
     path: "{{ openssl_config }}"
     insertafter: 'default = default_sect'
     line: "legacy = legacy_sect"
+  become: yes
 
 - name: Activate default section
   lineinfile:
@@ -23,6 +25,7 @@
     insertafter: '[default_sect]'
     regexp: '# activate = 1'
     line: 'activate = 1'
+  become: yes
 
 - name: Add and activate legacy section
   blockinfile:
@@ -30,3 +33,4 @@
     content: |
       [legacy_sect]
       activate = 1
+  become: yes
