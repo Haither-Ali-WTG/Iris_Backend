@@ -99,12 +99,7 @@
       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     net_host: no
-    ports: >-
-      [
-        {% for host_port, container_port in all_port_map.items() %}
-        '{{ host_port }}:{{ container_port }}',
-        {% endfor %}
-      ]
+    # no ports are mapped here; we configure NAT directly via iptables
     container_user: root
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
@@ -125,3 +120,24 @@
   when:
     - container_exists
     - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
+
+- name: Retrieve container details
+  command: "{{ engine }} inspect {{ container_name }}"
+  register: container_details
+  changed_when: false
+  become: yes
+
+- name: Map ports via iptables - temporary script
+  # TODO - replace this with a templated file for iptables-restore on the host level
+  vars:
+    container_ip: "{{ (container_details.stdout | from_json).0.NetworkSettings.IPAddress }}"
+  shell: |
+    set -euxo pipefail
+    {% for host_port, container_port in all_port_map.items() %}
+    iptables -t nat -A PREROUTING  -p tcp --dport {{ host_port }} -j DNAT --to {{ container_ip }}:{{ container_port }}
+    {% endfor %}
+    iptables -P FORWARD ACCEPT
+  args:
+    executable: /bin/bash
+  become: yes
+  changed_when: true
