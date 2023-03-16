@@ -125,6 +125,7 @@
   command: "{{ engine }} inspect {{ container_name }}"
   register: container_details
   changed_when: false
+  become: yes
 
 - name: Map ports via iptables - temporary script
   # TODO - replace this with a templated file for iptables-restore on the host level
