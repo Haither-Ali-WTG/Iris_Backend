@@ -79,12 +79,16 @@
         name: iris_haproxy
         tasks_from: individual_instances.yml
 
-- name: Activate keepalived
+- name: Finalise setup on the machines
   hosts: machines
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Configure iptables
+      include_role:
+        name: iris_iptables
+
     - name: Setup keepalived (VRRP)
       include_role:
         name: iris_keepalived
