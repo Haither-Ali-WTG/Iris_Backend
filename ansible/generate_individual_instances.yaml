@@ -108,3 +108,19 @@
             {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
             {% endfor %}
           }
+
+- name: Calculate individual instances on each machine
+  hosts: machines
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Calculate individual instances on each machine
+      set_fact:
+        individual_instances: >-
+          [
+            {% for individual_instance in groups.individual_instances
+               if hostvars[individual_instance].machine_name == inventory_hostname %}
+            "{{ individual_instance }}",
+            {% endfor %}
+          ]
