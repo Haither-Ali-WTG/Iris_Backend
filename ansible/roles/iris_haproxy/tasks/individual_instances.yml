@@ -134,7 +134,8 @@
   shell: |
     set -euxo pipefail
     {% for host_port, container_port in all_port_map.items() %}
-    iptables -t nat -A PREROUTING -p tcp -d {{ ansible_host }} --dport {{ host_port }} -j DNAT --to {{ container_ip }}:{{ container_port }}
+    iptables -t nat -A PREROUTING -p tcp -d {{ ansible_host }} --dport {{ host_port }} \
+      -j DNAT --to {{ container_ip }}:{{ container_port }}
     {% endfor %}
     iptables -P FORWARD ACCEPT
   args:
