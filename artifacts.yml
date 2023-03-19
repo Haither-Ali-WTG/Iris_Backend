@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230316.7
-  # Thu Mar 16 12:02:45 UTC 2023 -- Thu Mar 16 23:02:45 AEDT 2023
+  # Dante Build Artifact 20230317.7
+  # Fri Mar 17 08:40:56 UTC 2023 -- Fri Mar 17 19:40:56 AEDT 2023
   #
-  # Merge pull request 10969 from dante_artifact_upgrade into master
-  # 9118c919985c6866d3c89bb7d375634773785d16
-  dante_build_id: '520428'
+  # Merged PR 10718: Dante - Remove selection run from container maintenance pipeline
+  # 74e952295dadbb473f3d4229c75319cb4c169451
+  dante_build_id: '521328'
 
-  # virgil 20230316.17
-  # Thu Mar 16 04:56:57 UTC 2023 -- Thu Mar 16 15:56:57 AEDT 2023
+  # virgil 20230320.2
+  # Sun Mar 19 23:01:14 UTC 2023 -- Mon Mar 20 10:01:14 AEDT 2023
   #
-  # Merged PR 10964: Add Standalone ESX host for Testing
-  # c9bd90b3ce93ee4b4f2f762f3ac37a43068be4f8
-  virgil_build_id: '520091'
+  # Merged PR 10984: New VLAN SAND CORP FE
+  # 94954970d5e868159279ac9a39f0c32b0a2f35d7
+  virgil_build_id: '523613'
