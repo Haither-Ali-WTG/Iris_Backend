@@ -3,6 +3,15 @@
   hosts: machines
   gather_facts: no
   tasks:
+    - name: Check for ambiguous simulation
+      # Check for misleading values such as the strings "no" or "false" or "0".
+      # To pass a false value from the command line, use -e"simulation=" or -e"{simulation: false}"
+      assert:
+        that: simulation | bool
+        fail_msg: "Ambiguous non-boolean value for simulation {{ '%r' | format(simulation) }}"
+        quiet: yes
+      when: simulation
+
     - name: Set additional facts for simulating the machines
       set_fact:
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
