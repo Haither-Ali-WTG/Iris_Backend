@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230320.5
-  # Mon Mar 20 07:18:40 UTC 2023 -- Mon Mar 20 18:18:40 AEDT 2023
+  # Dante Build Artifact 20230321.1
+  # Mon Mar 20 23:07:33 UTC 2023 -- Tue Mar 21 10:07:33 AEDT 2023
   #
-  # Merge pull request 11001 from dante_artifact_upgrade into master
-  # 53bc561f9d4d654ac010370084a3dc043109db19
-  dante_build_id: '524020'
+  # Merged PR 11002: Bypass HAProxy for ZTP also in AU2
+  # a7ee3be9a9e774f735effd9472866856d240ac1e
+  dante_build_id: '524645'
 
   # virgil 20230321.2
   # Mon Mar 20 22:05:47 UTC 2023 -- Tue Mar 21 09:05:47 AEDT 2023
