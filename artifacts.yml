@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230317.7
-  # Fri Mar 17 08:40:56 UTC 2023 -- Fri Mar 17 19:40:56 AEDT 2023
+  # Dante Build Artifact 20230320.1
+  # Mon Mar 20 00:04:55 UTC 2023 -- Mon Mar 20 11:04:55 AEDT 2023
   #
-  # Merged PR 10718: Dante - Remove selection run from container maintenance pipeline
-  # 74e952295dadbb473f3d4229c75319cb4c169451
-  dante_build_id: '521328'
+  # Merged PR 10941: Parameterize user and secret name for Powershell Host connection
+  # c95a260a8798fc3138f6744d5ae405c28c3fca63
+  dante_build_id: '523670'
 
   # virgil 20230320.2
   # Sun Mar 19 23:01:14 UTC 2023 -- Mon Mar 20 10:01:14 AEDT 2023
