@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230320.2
-  # Mon Mar 20 02:59:26 UTC 2023 -- Mon Mar 20 13:59:26 AEDT 2023
+  # Dante Build Artifact 20230320.5
+  # Mon Mar 20 07:18:40 UTC 2023 -- Mon Mar 20 18:18:40 AEDT 2023
   #
-  # Merged PR 11018: Corrected zone nad log paths for systemd bind
-  # 01135b20ff3401899252b648abcee6509d062478
-  dante_build_id: '523795'
+  # Merge pull request 11001 from dante_artifact_upgrade into master
+  # 53bc561f9d4d654ac010370084a3dc043109db19
+  dante_build_id: '524020'
 
-  # virgil 20230320.2
-  # Sun Mar 19 23:01:14 UTC 2023 -- Mon Mar 20 10:01:14 AEDT 2023
+  # virgil 20230321.2
+  # Mon Mar 20 22:05:47 UTC 2023 -- Tue Mar 21 09:05:47 AEDT 2023
   #
-  # Merged PR 10984: New VLAN SAND CORP FE
-  # 94954970d5e868159279ac9a39f0c32b0a2f35d7
-  virgil_build_id: '523613'
+  # Merged PR 10801: Updated teardowns.yaml
+  # 40ddb43667b191ba35e1093c3530d953839dfdf1
+  virgil_build_id: '524569'
