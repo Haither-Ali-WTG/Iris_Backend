@@ -35,6 +35,10 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Adjust installed packages
+      include_role:
+        name: iris_os_packages
+
     - name: Setup docker
       include_role:
         name: container_runner
