@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230321.4
-  # Tue Mar 21 04:36:08 UTC 2023 -- Tue Mar 21 15:36:08 AEDT 2023
+  # Dante Build Artifact 20230321.5
+  # Tue Mar 21 06:05:27 UTC 2023 -- Tue Mar 21 17:05:27 AEDT 2023
   #
-  # Merge pull request 11049 from dante_artifact_upgrade into master
-  # aec8593a4bb208bea401bcbdbf580fbafdaa3274
-  dante_build_id: '524920'
+  # Merge pull request 11016 from dante_python_upgrade into master
+  # 0fb16971b04a48a2df1b8072e7c5611f883b2120
+  dante_build_id: '525003'
 
-  # virgil 20230321.19
-  # Tue Mar 21 03:08:51 UTC 2023 -- Tue Mar 21 14:08:51 AEDT 2023
+  # virgil 20230321.26
+  # Tue Mar 21 06:23:39 UTC 2023 -- Tue Mar 21 17:23:39 AEDT 2023
   #
-  # Merged PR 10948: Add S-00064
-  # 565b7965ed7902c6f6a3e15288945a442fec1174
-  virgil_build_id: '524847'
+  # Merged PR 11043: Updated DE1 management node 2 to use ubuntu 22.04
+  # ee79da56dbb740e9f9a43a39f594360e318d20a6
+  virgil_build_id: '525014'
