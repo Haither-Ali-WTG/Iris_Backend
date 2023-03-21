@@ -1,0 +1,12 @@
+---
+- name: "Uninstall unwanted packages - {{ unwanted[os] | join(', ') }}"
+  vars:
+    unwanted:
+      ubuntu:
+        - ufw  # Uncomplicated Firewall - we manage iptables directly
+      rhel:
+        - firewalld  # firewall - we manage iptables directly
+  package:
+    name: "{{ unwanted[os] }}"
+    state: absent
+  become: yes
