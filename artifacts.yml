@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230321.5
-  # Tue Mar 21 06:05:27 UTC 2023 -- Tue Mar 21 17:05:27 AEDT 2023
+  # Dante Build Artifact 20230322.1
+  # Tue Mar 21 23:20:39 UTC 2023 -- Wed Mar 22 10:20:39 AEDT 2023
   #
-  # Merge pull request 11016 from dante_python_upgrade into master
-  # 0fb16971b04a48a2df1b8072e7c5611f883b2120
-  dante_build_id: '525003'
+  # Merge pull request 11065 from dante_python_upgrade into master
+  # a4f9a25825f134c58cc5930f4c37480bd35b754d
+  dante_build_id: '525677'
 
-  # virgil 20230321.26
-  # Tue Mar 21 06:23:39 UTC 2023 -- Tue Mar 21 17:23:39 AEDT 2023
+  # virgil 20230322.8
+  # Tue Mar 21 23:17:02 UTC 2023 -- Wed Mar 22 10:17:02 AEDT 2023
   #
-  # Merged PR 11043: Updated DE1 management node 2 to use ubuntu 22.04
-  # ee79da56dbb740e9f9a43a39f594360e318d20a6
-  virgil_build_id: '525014'
+  # Merged PR 11072: Add certificate name to addomain rdsh computer role
+  # 59f61e3c056d03d76e3cfc583b582b647f684a15
+  virgil_build_id: '525673'
