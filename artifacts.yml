@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230321.2
-  # Tue Mar 21 00:59:44 UTC 2023 -- Tue Mar 21 11:59:44 AEDT 2023
+  # Dante Build Artifact 20230321.3
+  # Tue Mar 21 02:35:52 UTC 2023 -- Tue Mar 21 13:35:52 AEDT 2023
   #
-  # Merged PR 11029: Remove squid from using haproxy
-  # 1cf67d72c99660cb501230c2fbbba4c248d78244
-  dante_build_id: '524727'
+  # Merge pull request 11033 from dante_artifact_upgrade into master
+  # c4e8b619abb97d22f1bc5308f3aae74bfb1ca3fd
+  dante_build_id: '524810'
 
-  # virgil 20230321.2
-  # Mon Mar 20 22:05:47 UTC 2023 -- Tue Mar 21 09:05:47 AEDT 2023
+  # virgil 20230321.19
+  # Tue Mar 21 03:08:51 UTC 2023 -- Tue Mar 21 14:08:51 AEDT 2023
   #
-  # Merged PR 10801: Updated teardowns.yaml
-  # 40ddb43667b191ba35e1093c3530d953839dfdf1
-  virgil_build_id: '524569'
+  # Merged PR 10948: Add S-00064
+  # 565b7965ed7902c6f6a3e15288945a442fec1174
+  virgil_build_id: '524847'
