@@ -94,7 +94,7 @@
     name: "{{ container_name }}"
     workload: deployment
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ instance.haproxy_version }}-{{ instance.haproxy_os }}"
-    restart: no
+    restart: never
     volumes:
       - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
@@ -110,7 +110,11 @@
         cpu: 200m
         memory: 100Mi
 
-- name: Reload haproxy container
+- name: Assert no restart needed
+  assert:
+    that: not need_restart
+
+- name: Reload haproxy
   vars:
     name: "{{ container_name }}"
     signal: HUP
