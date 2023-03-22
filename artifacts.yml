@@ -7,9 +7,9 @@ variables:
   # a4f9a25825f134c58cc5930f4c37480bd35b754d
   dante_build_id: '525677'
 
-  # virgil 20230322.8
-  # Tue Mar 21 23:17:02 UTC 2023 -- Wed Mar 22 10:17:02 AEDT 2023
+  # virgil 20230322.14
+  # Wed Mar 22 04:17:13 UTC 2023 -- Wed Mar 22 15:17:13 AEDT 2023
   #
-  # Merged PR 11072: Add certificate name to addomain rdsh computer role
-  # 59f61e3c056d03d76e3cfc583b582b647f684a15
-  virgil_build_id: '525673'
+  # Merged PR 11046: Enable AU2 node 3
+  # 445891e30535529896fd3c96d8e1d6e6b661a43f
+  virgil_build_id: '525927'
