@@ -16,7 +16,7 @@ COMMIT
 {% for individual_instance in individual_instances %}
 # Port mapping for {{ individual_instance }}
 {% for host_port, container_port in hostvars[individual_instance].all_port_map.items() %}
--A PREROUTING -d {{ ansible_host }}/32 -p tcp -m tcp --dport {{ host_port }} -j DNAT --to-destination {{ hostvars[individual_instance].container_ip }}:{{ container_port }}
+-A PREROUTING -m addrtype --dst-type LOCAL -p tcp -m tcp --dport {{ host_port }} -j DNAT --to-destination {{ hostvars[individual_instance].container_ip }}:{{ container_port }}
 {% endfor %}
 
 {% endfor %}
