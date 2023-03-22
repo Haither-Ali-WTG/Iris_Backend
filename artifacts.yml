@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230322.1
-  # Tue Mar 21 23:20:39 UTC 2023 -- Wed Mar 22 10:20:39 AEDT 2023
+  # Dante Build Artifact 20230322.2
+  # Wed Mar 22 06:39:40 UTC 2023 -- Wed Mar 22 17:39:40 AEDT 2023
   #
-  # Merge pull request 11065 from dante_python_upgrade into master
-  # a4f9a25825f134c58cc5930f4c37480bd35b754d
-  dante_build_id: '525677'
+  # Merged PR 11055: Replace the disused frontlb alias in DNS checks
+  # 33531757df7959138b3d05ba674ad8598004b386
+  dante_build_id: '526057'
 
-  # virgil 20230322.14
-  # Wed Mar 22 04:17:13 UTC 2023 -- Wed Mar 22 15:17:13 AEDT 2023
+  # virgil 20230323.1
+  # Wed Mar 22 17:03:31 UTC 2023 -- Thu Mar 23 04:03:31 AEDT 2023
   #
-  # Merged PR 11046: Enable AU2 node 3
-  # 445891e30535529896fd3c96d8e1d6e6b661a43f
-  virgil_build_id: '525927'
+  # Merged PR 11067: Remove LACP for DE1WP-SVIR-14 & 15
+  # cacbbadc571044d873e1b99aff523f422f4aa589
+  virgil_build_id: '526443'
