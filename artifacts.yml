@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230322.2
-  # Wed Mar 22 06:39:40 UTC 2023 -- Wed Mar 22 17:39:40 AEDT 2023
+  # Dante Build Artifact 20230323.5
+  # Thu Mar 23 07:35:03 UTC 2023 -- Thu Mar 23 18:35:03 AEDT 2023
   #
-  # Merged PR 11055: Replace the disused frontlb alias in DNS checks
-  # 33531757df7959138b3d05ba674ad8598004b386
-  dante_build_id: '526057'
+  # Merged PR 11023: (minor) Check run_as_user is available before using it
+  # f8d63e37480e7856db72957b999307ad242e7b68
+  dante_build_id: '527093'
 
-  # virgil 20230323.3
-  # Wed Mar 22 23:24:52 UTC 2023 -- Thu Mar 23 10:24:52 AEDT 2023
+  # virgil 20230324.8
+  # Thu Mar 23 22:25:32 UTC 2023 -- Fri Mar 24 09:25:32 AEDT 2023
   #
-  # Merge pull request 11097 from virgil_python_upgrade into master
-  # a9dfcd1abe7d6f1a02a0c7f0467c9ad27f8def29
-  virgil_build_id: '526698'
+  # Merged PR 11090: Update EYE Hosts
+  # f79cf422c4d5fdb33d23efb8b6771ad014800611
+  virgil_build_id: '527649'
