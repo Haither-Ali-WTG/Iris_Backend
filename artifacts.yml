@@ -7,9 +7,9 @@ variables:
   # 33531757df7959138b3d05ba674ad8598004b386
   dante_build_id: '526057'
 
-  # virgil 20230323.1
-  # Wed Mar 22 17:03:31 UTC 2023 -- Thu Mar 23 04:03:31 AEDT 2023
+  # virgil 20230323.3
+  # Wed Mar 22 23:24:52 UTC 2023 -- Thu Mar 23 10:24:52 AEDT 2023
   #
-  # Merged PR 11067: Remove LACP for DE1WP-SVIR-14 & 15
-  # cacbbadc571044d873e1b99aff523f422f4aa589
-  virgil_build_id: '526443'
+  # Merge pull request 11097 from virgil_python_upgrade into master
+  # a9dfcd1abe7d6f1a02a0c7f0467c9ad27f8def29
+  virgil_build_id: '526698'
