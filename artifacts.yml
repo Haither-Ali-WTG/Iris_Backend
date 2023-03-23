@@ -7,9 +7,9 @@ variables:
   # f8d63e37480e7856db72957b999307ad242e7b68
   dante_build_id: '527093'
 
-  # virgil 20230324.8
-  # Thu Mar 23 22:25:32 UTC 2023 -- Fri Mar 24 09:25:32 AEDT 2023
+  # virgil 20230324.12
+  # Thu Mar 23 23:03:52 UTC 2023 -- Fri Mar 24 10:03:52 AEDT 2023
   #
-  # Merged PR 11090: Update EYE Hosts
-  # f79cf422c4d5fdb33d23efb8b6771ad014800611
-  virgil_build_id: '527649'
+  # Merge pull request 11122 from virgil_python_upgrade into master
+  # 84829e195c328e3689d73e86e275edaacfbe4124
+  virgil_build_id: '527699'
