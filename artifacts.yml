@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230323.5
-  # Thu Mar 23 07:35:03 UTC 2023 -- Thu Mar 23 18:35:03 AEDT 2023
+  # Dante Build Artifact 20230324.2
+  # Fri Mar 24 01:39:46 UTC 2023 -- Fri Mar 24 12:39:46 AEDT 2023
   #
-  # Merged PR 11023: (minor) Check run_as_user is available before using it
-  # f8d63e37480e7856db72957b999307ad242e7b68
-  dante_build_id: '527093'
+  # Merged PR 11105: Add provisioned_since fact at the time of VM provisioning
+  # 7c11937af70a508407cb46d24ae9ae9015d492ef
+  dante_build_id: '527827'
 
-  # virgil 20230324.12
-  # Thu Mar 23 23:03:52 UTC 2023 -- Fri Mar 24 10:03:52 AEDT 2023
+  # virgil 20230324.14
+  # Thu Mar 23 23:51:21 UTC 2023 -- Fri Mar 24 10:51:21 AEDT 2023
   #
-  # Merge pull request 11122 from virgil_python_upgrade into master
-  # 84829e195c328e3689d73e86e275edaacfbe4124
-  virgil_build_id: '527699'
+  # Merged PR 11118: Remove unused ports after reshuffle.
+  # b31b5adaf70a9f2938dfb9b020498d09e5e5d778
+  virgil_build_id: '527747'
