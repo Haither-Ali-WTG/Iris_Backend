@@ -89,10 +89,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Configure iptables
-      include_role:
-        name: iris_iptables
-
     - name: Setup keepalived (VRRP)
       include_role:
         name: iris_keepalived
