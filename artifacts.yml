@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230324.2
-  # Fri Mar 24 01:39:46 UTC 2023 -- Fri Mar 24 12:39:46 AEDT 2023
+  # Dante Build Artifact 20230324.4
+  # Fri Mar 24 08:55:10 UTC 2023 -- Fri Mar 24 19:55:10 AEDT 2023
   #
-  # Merged PR 11105: Add provisioned_since fact at the time of VM provisioning
-  # 7c11937af70a508407cb46d24ae9ae9015d492ef
-  dante_build_id: '527827'
+  # Merged PR 10978: Fix the missing NetworkManager service errors
+  # af0992e498aaaf3d05fe0f99e0a87642ea22961e
+  dante_build_id: '528130'
 
-  # virgil 20230324.14
-  # Thu Mar 23 23:51:21 UTC 2023 -- Fri Mar 24 10:51:21 AEDT 2023
+  # virgil 20230327.2
+  # Sun Mar 26 21:31:37 UTC 2023 -- Mon Mar 27 08:31:37 AEDT 2023
   #
-  # Merged PR 11118: Remove unused ports after reshuffle.
-  # b31b5adaf70a9f2938dfb9b020498d09e5e5d778
-  virgil_build_id: '527747'
+  # Merged PR 11133: Disabled node 3 for now
+  # 2536d7d11453b2c9ffc46d36689ce3e3f57a32d2
+  virgil_build_id: '530359'
