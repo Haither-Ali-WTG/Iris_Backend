@@ -7,9 +7,9 @@ variables:
   # af0992e498aaaf3d05fe0f99e0a87642ea22961e
   dante_build_id: '528130'
 
-  # virgil 20230327.2
-  # Sun Mar 26 21:31:37 UTC 2023 -- Mon Mar 27 08:31:37 AEDT 2023
+  # virgil 20230327.4
+  # Sun Mar 26 22:30:49 UTC 2023 -- Mon Mar 27 09:30:49 AEDT 2023
   #
-  # Merged PR 11133: Disabled node 3 for now
-  # 2536d7d11453b2c9ffc46d36689ce3e3f57a32d2
-  virgil_build_id: '530359'
+  # Merge pull request 11143 from virgil_python_upgrade into master
+  # 554bda6679588cc8072fef9453053d0967e7d77e
+  virgil_build_id: '530408'
