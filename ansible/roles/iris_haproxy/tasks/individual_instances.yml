@@ -124,13 +124,3 @@
   when:
     - container_exists
     - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
-
-- name: Retrieve container details
-  command: "{{ engine }} inspect {{ container_name }}"
-  register: container_details
-  changed_when: false
-  become: yes
-
-- name: Calculate the container IP
-  set_fact:
-    container_ip: "{{ (container_details.stdout | from_json).0.NetworkSettings.IPAddress }}"
