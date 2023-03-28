@@ -1,4 +1,7 @@
 ---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
 - name: Setup localhost for s3
   hosts: localhost
   tasks:

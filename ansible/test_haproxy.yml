@@ -1,4 +1,7 @@
 ---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
 - name: Prepare simulation
   import_playbook: prepare_simulation.yaml
 
