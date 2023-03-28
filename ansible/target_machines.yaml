@@ -1,3 +1,4 @@
+---
 - name: Prepare to target the machines
   hosts: machines
   gather_facts: no
@@ -11,4 +12,3 @@
         groups: target_machines
       loop: "{{ ansible_play_hosts }}"
       when: target_dc | default('all') in [machine.dc, 'all']
-
