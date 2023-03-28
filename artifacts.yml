@@ -7,9 +7,9 @@ variables:
   # 1ea23c00b894d2df1a2426ad65fb7facc446cedc
   dante_build_id: '531725'
 
-  # virgil 20230328.13
-  # Tue Mar 28 01:09:52 UTC 2023 -- Tue Mar 28 12:09:52 AEDT 2023
+  # virgil 20230328.23
+  # Tue Mar 28 05:17:34 UTC 2023 -- Tue Mar 28 16:17:34 AEDT 2023
   #
-  # Merged PR 11161: allocate subnet and vxlan for vmware cloudlab VMs
-  # 83e506ff43a9bf05524ee38d1b5d621838daf416
-  virgil_build_id: '531571'
+  # Merged PR 11185: Added Will Olive Ssh Key
+  # 96391758630dc76cc29c0c0876589356792a0325
+  virgil_build_id: '531802'
