@@ -4,9 +4,12 @@ machines:
     de1lbl00306:
       ansible_host: 10.3.64.13
       os: ubuntu
+      dc: DE1
     de1lbl00307:
       ansible_host: 10.3.64.14
       os: ubuntu
+      dc: DE1
     de1lbl00387:
       ansible_host: 10.3.64.15
       os: ubuntu
+      dc: DE1
