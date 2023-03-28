@@ -40,7 +40,7 @@
       changed_when: true
 
 - name: Deploy simulated machines
-  hosts: machines
+  hosts: target_machines
   gather_facts: no
   tasks:
     - name: Set additional facts

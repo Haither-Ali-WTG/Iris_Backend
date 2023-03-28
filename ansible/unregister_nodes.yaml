@@ -3,7 +3,7 @@
   import_playbook: prepare_simulation.yaml
 
 - name: Unregister Red Hat nodes
-  hosts: machines
+  hosts: target_machines
   gather_facts: no
   tasks:
     - name: Unregister Red Hat nodes

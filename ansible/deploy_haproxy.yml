@@ -29,7 +29,7 @@
   when: not simulation
 
 - name: Setup on the machines
-  hosts: machines
+  hosts: target_machines
   strategy: free
   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
   gather_facts: no
@@ -84,7 +84,7 @@
         tasks_from: individual_instances.yml
 
 - name: Finalise setup on the machines
-  hosts: machines
+  hosts: target_machines
   strategy: free
   gather_facts: no
   force_handlers: yes

@@ -1,8 +1,18 @@
 ---
-- name: Set Virgil-like facts for the machines
+- name: Prepare to target the machines
   hosts: machines
   gather_facts: no
+  strategy: linear
   tasks:
+    - name: Target machines
+      vars:
+        machine: "{{ hostvars[item] }}"
+      add_host:
+        name: "{{ item }}"
+        groups: target_machines
+      loop: "{{ ansible_play_hosts }}"
+      when: target_dc | default('all') in [machine.dc, 'all']
+
     - name: Set Virgil-like facts for the machines
       set_fact:
         virgil_os_family: linux

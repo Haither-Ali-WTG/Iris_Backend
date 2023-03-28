@@ -52,6 +52,7 @@
       loop_control:
         index_var: i
         label: "{{ item.individual_instance_name }}"
+      when: item.machine_name in groups['target_machines']
 
 - name: Apply overrides for the individual instances
   hosts: individual_instances
@@ -110,7 +111,7 @@
           }
 
 - name: Calculate individual instances on each machine
-  hosts: machines
+  hosts: target_machines
   strategy: free
   gather_facts: no
   force_handlers: yes
