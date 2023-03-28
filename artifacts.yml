@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230328.2
-  # Tue Mar 28 01:39:24 UTC 2023 -- Tue Mar 28 12:39:24 AEDT 2023
+  # Dante Build Artifact 20230328.3
+  # Tue Mar 28 03:58:09 UTC 2023 -- Tue Mar 28 14:58:09 AEDT 2023
   #
-  # Merged PR 11141: Make CORP VM ready to deploy
-  # 69bfcaaa6df497c9a325900a7a0da656f60f5539
-  dante_build_id: '531612'
+  # Merge pull request 11179 from dante_artifact_upgrade into master
+  # 1ea23c00b894d2df1a2426ad65fb7facc446cedc
+  dante_build_id: '531725'
 
   # virgil 20230328.13
   # Tue Mar 28 01:09:52 UTC 2023 -- Tue Mar 28 12:09:52 AEDT 2023
