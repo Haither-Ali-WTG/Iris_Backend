@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230328.4
-  # Tue Mar 28 05:44:31 UTC 2023 -- Tue Mar 28 16:44:31 AEDT 2023
+  # Dante Build Artifact 20230329.4
+  # Wed Mar 29 05:38:37 UTC 2023 -- Wed Mar 29 16:38:37 AEDT 2023
   #
-  # Merged PR 11151: (minor) Fix invalid value in k8s template
-  # 93169f0eef1c07bc8ed81c5d181d776aa2369538
-  dante_build_id: '531833'
+  # Merged PR 11184: Throttle powershell tasks for the powershell host
+  # 0b5255c208e3c5f26ef1d8c1359e0f5f347c01dd
+  dante_build_id: '532811'
 
-  # virgil 20230328.25
-  # Tue Mar 28 05:41:21 UTC 2023 -- Tue Mar 28 16:41:21 AEDT 2023
+  # virgil 20230329.21
+  # Wed Mar 29 05:10:58 UTC 2023 -- Wed Mar 29 16:10:58 AEDT 2023
   #
-  # Merged PR 11170: Adding Mario SSH key
-  # e55bae26447695e1723553d7633484aff298aa7b
-  virgil_build_id: '531831'
+  # Merged PR 11214: Added New ESX hosts in Upstairs DC
+  # 0198e756c8448d58eeeddfb62d2a9497a7d9f3bc
+  virgil_build_id: '532786'
