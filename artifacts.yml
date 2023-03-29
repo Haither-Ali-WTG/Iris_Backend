@@ -7,9 +7,9 @@ variables:
   # cf86cb298dd85f91a676e8fd323a9ad9bb03eed4
   dante_build_id: '533464'
 
-  # virgil 20230329.21
-  # Wed Mar 29 05:10:58 UTC 2023 -- Wed Mar 29 16:10:58 AEDT 2023
+  # virgil 20230330.2
+  # Wed Mar 29 22:54:03 UTC 2023 -- Thu Mar 30 09:54:03 AEDT 2023
   #
-  # Merged PR 11214: Added New ESX hosts in Upstairs DC
-  # 0198e756c8448d58eeeddfb62d2a9497a7d9f3bc
-  virgil_build_id: '532786'
+  # Merged PR 11227: Enable management node 3 in AU2
+  # 218fe3d01895010e44e0dc2d105621c20dbd2f07
+  virgil_build_id: '533469'
