@@ -88,7 +88,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(cert_kv_name)"
-                -e="agent_dc=$(agent_dc)"
+                -e="target_dc=$(agent_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
             condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
@@ -109,7 +109,7 @@ stages:
                 -e="winrm_password=$(winrm_password)"
                 -e="s3_host=$(s3_host)"
                 -e="key_vault_name=$(key_vault_name)"
-                -e="agent_dc=$(agent_dc)"
+                -e="target_dc=$(agent_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
             condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))

@@ -1,6 +1,6 @@
 ---
 - name: Set simulation facts
-  hosts: machines
+  hosts: target_machines
   gather_facts: no
   tasks:
     - name: Check for ambiguous simulation

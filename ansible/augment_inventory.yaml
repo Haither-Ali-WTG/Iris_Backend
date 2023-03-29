@@ -1,6 +1,6 @@
 ---
 - name: Set Virgil-like facts for the machines
-  hosts: machines
+  hosts: target_machines
   gather_facts: no
   tasks:
     - name: Set Virgil-like facts for the machines

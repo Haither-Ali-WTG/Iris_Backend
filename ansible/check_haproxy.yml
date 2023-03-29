@@ -1,6 +1,6 @@
 ---
 - name: Checks on the machines
-  hosts: machines
+  hosts: target_machines
   strategy: free
   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
   gather_facts: no

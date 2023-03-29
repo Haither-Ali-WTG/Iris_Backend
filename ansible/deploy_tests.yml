@@ -1,6 +1,6 @@
 ---
 - name: Setup the machines
-  hosts: machines
+  hosts: target_machines
   strategy: free
   gather_facts: yes
   force_handlers: yes
