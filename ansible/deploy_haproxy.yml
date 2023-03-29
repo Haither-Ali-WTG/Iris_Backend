@@ -11,7 +11,7 @@
       include_role:
         name: ceph_connection_setup
 
-- name: Per-clustered-instance setup (if needed)
+- name: Collect and publish IIS data to ceph
   hosts: clustered_instances
   strategy: free
   gather_facts: no
@@ -27,6 +27,13 @@
 - name: Augment the inventory
   import_playbook: augment_inventory.yaml
   when: not simulation
+
+- name: Per-clustered-instance setup (if needed)
+  hosts: clustered_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks: []
 
 - name: Setup on the machines
   hosts: machines
