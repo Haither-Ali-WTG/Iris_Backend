@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230329.4
-  # Wed Mar 29 05:38:37 UTC 2023 -- Wed Mar 29 16:38:37 AEDT 2023
+  # Dante Build Artifact 20230329.5
+  # Wed Mar 29 08:38:24 UTC 2023 -- Wed Mar 29 19:38:24 AEDT 2023
   #
-  # Merged PR 11184: Throttle powershell tasks for the powershell host
-  # 0b5255c208e3c5f26ef1d8c1359e0f5f347c01dd
-  dante_build_id: '532811'
+  # Merge pull request 11213 from dante_artifact_upgrade into master
+  # b4346efe1240247bf686585e344b65345e03dfc9
+  dante_build_id: '532936'
 
   # virgil 20230329.21
   # Wed Mar 29 05:10:58 UTC 2023 -- Wed Mar 29 16:10:58 AEDT 2023
