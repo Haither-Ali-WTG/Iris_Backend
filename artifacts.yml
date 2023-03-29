@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230329.5
-  # Wed Mar 29 08:38:24 UTC 2023 -- Wed Mar 29 19:38:24 AEDT 2023
+  # Dante Build Artifact 20230330.1
+  # Wed Mar 29 22:47:59 UTC 2023 -- Thu Mar 30 09:47:59 AEDT 2023
   #
-  # Merge pull request 11213 from dante_artifact_upgrade into master
-  # b4346efe1240247bf686585e344b65345e03dfc9
-  dante_build_id: '532936'
+  # Merged PR 11188: Fixed paths for qcow2 builder after merging windows installation and packages ISOs
+  # cf86cb298dd85f91a676e8fd323a9ad9bb03eed4
+  dante_build_id: '533464'
 
   # virgil 20230329.21
   # Wed Mar 29 05:10:58 UTC 2023 -- Wed Mar 29 16:10:58 AEDT 2023
