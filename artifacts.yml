@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230330.2
-  # Thu Mar 30 01:54:15 UTC 2023 -- Thu Mar 30 12:54:15 AEDT 2023
+  # Dante Build Artifact 20230330.3
+  # Thu Mar 30 04:49:23 UTC 2023 -- Thu Mar 30 15:49:23 AEDT 2023
   #
-  # Merged PR 11233: Enable management node 3 and adjust test for bind 9.18
-  # 59cc918c497fd0a793ca073d8d2d9689f5cd9008
-  dante_build_id: '533612'
+  # Merged PR 11238: Squid to listen on 2 ports on management nodes
+  # 646a8a80530ac48dd0eed967be5964abf8f91650
+  dante_build_id: '533743'
 
   # virgil 20230330.2
   # Wed Mar 29 22:54:03 UTC 2023 -- Thu Mar 30 09:54:03 AEDT 2023
