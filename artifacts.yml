@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230330.3
-  # Thu Mar 30 04:49:23 UTC 2023 -- Thu Mar 30 15:49:23 AEDT 2023
+  # Dante Build Artifact 20230330.4
+  # Thu Mar 30 07:21:07 UTC 2023 -- Thu Mar 30 18:21:07 AEDT 2023
   #
-  # Merged PR 11238: Squid to listen on 2 ports on management nodes
-  # 646a8a80530ac48dd0eed967be5964abf8f91650
-  dante_build_id: '533743'
+  # Merged PR 11074: Add hostname comments for NTP configs
+  # c7f3e858602f74d852dac8ea364f424a926d2809
+  dante_build_id: '533871'
 
-  # virgil 20230330.2
-  # Wed Mar 29 22:54:03 UTC 2023 -- Thu Mar 30 09:54:03 AEDT 2023
+  # virgil 20230331.4
+  # Thu Mar 30 21:57:24 UTC 2023 -- Fri Mar 31 08:57:24 AEDT 2023
   #
-  # Merged PR 11227: Enable management node 3 in AU2
-  # 218fe3d01895010e44e0dc2d105621c20dbd2f07
-  virgil_build_id: '533469'
+  # Merged PR 11243: Replaced US2 management node 2 in virgil
+  # 0c47a403761030e3bf18dd68a60f8c14bff90453
+  virgil_build_id: '534492'
