@@ -7,9 +7,9 @@ variables:
   # 56b202c0ccd1dde57398875f6794bb61ed42d5c9
   dante_build_id: '534723'
 
-  # virgil 20230331.13
-  # Fri Mar 31 02:14:55 UTC 2023 -- Fri Mar 31 13:14:55 AEDT 2023
+  # virgil 20230331.15
+  # Fri Mar 31 03:21:03 UTC 2023 -- Fri Mar 31 14:21:03 AEDT 2023
   #
-  # Merged PR 11260: Free up 10.2.64.13
-  # 665a813b6ad6d596d94b404d34ac1142404b39fa
-  virgil_build_id: '534725'
+  # Merged PR 11256: Make Iris IP addresses .2n - AU2 - Virgil
+  # fec8cffe2abb75283140793099168cbb9b654f21
+  virgil_build_id: '534785'
