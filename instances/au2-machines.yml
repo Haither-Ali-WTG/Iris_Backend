@@ -2,7 +2,7 @@
 machines:
   hosts:
     au2lbl00345:
-      ansible_host: 10.2.64.13
+      ansible_host: 10.2.64.15
       os: ubuntu  # TODO: make one of these RHEL
       dc: AU2
     au2lbl00346:
