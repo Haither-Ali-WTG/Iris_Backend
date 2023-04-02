@@ -147,7 +147,7 @@
         that: not bad_ports
         quiet: yes
         fail_msg: >-
-	  Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
+          Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
 
 - name: Calculate individual instances on each machine
   hosts: target_machines
