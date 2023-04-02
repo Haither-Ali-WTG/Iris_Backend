@@ -102,6 +102,26 @@
             {{ haproxy_https_port }},
             {% endif %}
           ]
+        port_prealloc_pairs: >-
+          [
+            {% for item in port_prealloc %}
+            {% if item is string and '-' in item %}
+            {{ item | split('-') | map('int') }},
+            {% else %}
+            [{{ item | int }}, {{ item | int }}],
+            {% endif %}
+            {% endfor %}
+          ]
+        ports_in_prealloc: >-
+          [
+            {% for port in all_host_ports %}
+            {% for start, end in port_prealloc_pairs if start <= port <= end %}
+            {{ port }},
+            {% endfor %}
+            {% endfor %}
+          ]
+        ports_to_map_individually: >-
+          {{ all_host_ports | difference(ports_in_prealloc) }}
       set_fact:
         all_port_map: >-
           {
@@ -109,6 +129,25 @@
             {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
             {% endfor %}
           }
+        docker_port_map: >-
+          {
+            {% for host_port in ports_to_map_individually %}
+            {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
+            {% endfor %}
+
+            {% for prealloc in port_prealloc %}
+            {{ prealloc }}: {{ prealloc }},
+            {% endfor %}
+          }
+        bad_ports: >-
+          {{ ports_in_prealloc | intersect(instance.port_map) }}
+
+    - name: Check for port map and port preallocation conflict
+      assert:
+        that: not bad_ports
+        quiet: yes
+        fail_msg: >-
+	  Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
 
 - name: Calculate individual instances on each machine
   hosts: target_machines
