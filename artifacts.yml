@@ -7,9 +7,9 @@ variables:
   # 112355aaa5c0b85cefa4d84568037481e1b89a05
   dante_build_id: '535677'
 
-  # virgil 20230331.25
-  # Fri Mar 31 10:35:42 UTC 2023 -- Fri Mar 31 21:35:42 AEDT 2023
+  # virgil 20230403.1
+  # Sun Apr  2 23:15:25 UTC 2023 -- Mon Apr  3 09:15:25 AEST 2023
   #
-  # Merged PR 11262: Make also the third DE1 Iris IP address .2n
-  # 668fec888b9bfca5543651fe3fac6f4e9e742e17
-  virgil_build_id: '535132'
+  # Merged PR 11275: Remove unused configuration of BMC creds
+  # 5d45b10f91d9b22468c297c2cc1fa267b555e751
+  virgil_build_id: '537346'
