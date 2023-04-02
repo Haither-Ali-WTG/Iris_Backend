@@ -104,7 +104,7 @@
           ]
         port_prealloc_pairs: >-
           [
-            {% for item in port_prealloc %}
+            {% for item in instance.port_prealloc %}
             {% if item is string and '-' in item %}
             {{ item | split('-') | map('int') }},
             {% else %}
@@ -135,7 +135,7 @@
             {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
             {% endfor %}
 
-            {% for prealloc in port_prealloc %}
+            {% for prealloc in instance.port_prealloc %}
             {{ prealloc }}: {{ prealloc }},
             {% endfor %}
           }
