@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230331.2
-  # Fri Mar 31 02:13:22 UTC 2023 -- Fri Mar 31 13:13:22 AEDT 2023
+  # Dante Build Artifact 20230401.2
+  # Sat Apr  1 00:56:08 UTC 2023 -- Sat Apr  1 11:56:08 AEDT 2023
   #
-  # Merged PR 11245: Delete computer object after VM destroyed
-  # 56b202c0ccd1dde57398875f6794bb61ed42d5c9
-  dante_build_id: '534723'
+  # Merged PR 11271: C22 create user template added
+  # 112355aaa5c0b85cefa4d84568037481e1b89a05
+  dante_build_id: '535677'
 
-  # virgil 20230331.19
-  # Fri Mar 31 05:22:38 UTC 2023 -- Fri Mar 31 16:22:38 AEDT 2023
+  # virgil 20230331.25
+  # Fri Mar 31 10:35:42 UTC 2023 -- Fri Mar 31 21:35:42 AEDT 2023
   #
-  # Merged PR 11269: C22 hardware type storage and network added
-  # e4d7147942c80d13c26dc0d5a2c296dd55b8701a
-  virgil_build_id: '534889'
+  # Merged PR 11262: Make also the third DE1 Iris IP address .2n
+  # 668fec888b9bfca5543651fe3fac6f4e9e742e17
+  virgil_build_id: '535132'
