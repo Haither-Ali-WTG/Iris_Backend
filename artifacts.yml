@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230403.1
-  # Mon Apr  3 01:03:56 UTC 2023 -- Mon Apr  3 11:03:56 AEST 2023
+  # Dante Build Artifact 20230403.2
+  # Mon Apr  3 04:31:52 UTC 2023 -- Mon Apr  3 14:31:52 AEST 2023
   #
-  # Merged PR 11293: Exclude currently rebuilt node from ztp servers list
-  # 5f24b06e737c700a91984b8d56804dae30a830ef
-  dante_build_id: '537457'
+  # Merged PR 11171: Dante - Native VLANs on bonds and switch ports
+  # a02f7049994f86f23c66afb90c881f1dc649efa5
+  dante_build_id: '537630'
 
   # virgil 20230403.1
   # Sun Apr  2 23:15:25 UTC 2023 -- Mon Apr  3 09:15:25 AEST 2023
