@@ -7,9 +7,9 @@ variables:
   # a02f7049994f86f23c66afb90c881f1dc649efa5
   dante_build_id: '537630'
 
-  # virgil 20230403.1
-  # Sun Apr  2 23:15:25 UTC 2023 -- Mon Apr  3 09:15:25 AEST 2023
+  # virgil 20230403.3
+  # Mon Apr  3 04:47:13 UTC 2023 -- Mon Apr  3 14:47:13 AEST 2023
   #
-  # Merged PR 11275: Remove unused configuration of BMC creds
-  # 5d45b10f91d9b22468c297c2cc1fa267b555e751
-  virgil_build_id: '537346'
+  # Merged PR 11300: Enabling continuous fo DE1 node 2 and changing hardware for node 1
+  # 00bd87eab913bc74cc0bac8cfe617c94c4fb62ca
+  virgil_build_id: '537641'
