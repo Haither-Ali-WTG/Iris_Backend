@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230404.3
-  # Tue Apr  4 05:28:56 UTC 2023 -- Tue Apr  4 15:28:56 AEST 2023
+  # Dante Build Artifact 20230404.5
+  # Tue Apr  4 11:03:55 UTC 2023 -- Tue Apr  4 21:03:55 AEST 2023
   #
-  # Merged PR 11295: Updated remove DNS record playbooks.
-  # 3a65faa24cd7e8af3872a1a265d95fdc889b1489
-  dante_build_id: '538741'
+  # Merged PR 11324: Only copy image to the one relevant ZTP server
+  # f043bafd40fee364db50a3cf8200102418d7783c
+  dante_build_id: '539019'
 
-  # virgil 20230404.19
-  # Tue Apr  4 05:07:54 UTC 2023 -- Tue Apr  4 15:07:54 AEST 2023
+  # virgil 20230405.2
+  # Tue Apr  4 23:26:46 UTC 2023 -- Wed Apr  5 09:26:46 AEST 2023
   #
-  # Merged PR 11335: add third node to au2-prod-frontend-1 cluster
-  # 4ce6f9b5ca4aca1058e397f64307676b7afb7620
-  virgil_build_id: '538726'
+  # Merged PR 11364: DE1 node 1 rebuild
+  # f9d07147e64731ea3caa02d1a37ec4cf73ee194a
+  virgil_build_id: '539510'
