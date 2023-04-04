@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230404.2
-  # Tue Apr  4 02:18:32 UTC 2023 -- Tue Apr  4 12:18:32 AEST 2023
+  # Dante Build Artifact 20230404.3
+  # Tue Apr  4 05:28:56 UTC 2023 -- Tue Apr  4 15:28:56 AEST 2023
   #
-  # Merged PR 11273: Config awscli for Windows
-  # 8f87146066d6a2431c52a75444ba906e78f1b221
-  dante_build_id: '538581'
+  # Merged PR 11295: Updated remove DNS record playbooks.
+  # 3a65faa24cd7e8af3872a1a265d95fdc889b1489
+  dante_build_id: '538741'
 
-  # virgil 20230404.11
-  # Tue Apr  4 01:49:20 UTC 2023 -- Tue Apr  4 11:49:20 AEST 2023
+  # virgil 20230404.19
+  # Tue Apr  4 05:07:54 UTC 2023 -- Tue Apr  4 15:07:54 AEST 2023
   #
-  # Merged PR 11328: au2-new-vlan-security
-  # 350555fc23ffa3478086852120ad2030dfc0fc45
-  virgil_build_id: '538546'
+  # Merged PR 11335: add third node to au2-prod-frontend-1 cluster
+  # 4ce6f9b5ca4aca1058e397f64307676b7afb7620
+  virgil_build_id: '538726'
