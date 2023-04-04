@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230403.2
-  # Mon Apr  3 04:31:52 UTC 2023 -- Mon Apr  3 14:31:52 AEST 2023
+  # Dante Build Artifact 20230404.2
+  # Tue Apr  4 02:18:32 UTC 2023 -- Tue Apr  4 12:18:32 AEST 2023
   #
-  # Merged PR 11171: Dante - Native VLANs on bonds and switch ports
-  # a02f7049994f86f23c66afb90c881f1dc649efa5
-  dante_build_id: '537630'
+  # Merged PR 11273: Config awscli for Windows
+  # 8f87146066d6a2431c52a75444ba906e78f1b221
+  dante_build_id: '538581'
 
-  # virgil 20230403.3
-  # Mon Apr  3 04:47:13 UTC 2023 -- Mon Apr  3 14:47:13 AEST 2023
+  # virgil 20230404.11
+  # Tue Apr  4 01:49:20 UTC 2023 -- Tue Apr  4 11:49:20 AEST 2023
   #
-  # Merged PR 11300: Enabling continuous fo DE1 node 2 and changing hardware for node 1
-  # 00bd87eab913bc74cc0bac8cfe617c94c4fb62ca
-  virgil_build_id: '537641'
+  # Merged PR 11328: au2-new-vlan-security
+  # 350555fc23ffa3478086852120ad2030dfc0fc45
+  virgil_build_id: '538546'
