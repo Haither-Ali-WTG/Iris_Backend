@@ -13,6 +13,7 @@ individual_instance_defaults:
       80: 8000
       81: 7999
       443: 7637
+    port_prealloc: []  # pre-allocated ports, eg. [1100-1199, 1500-1699, 8080]
 
   stats:
     ports:
