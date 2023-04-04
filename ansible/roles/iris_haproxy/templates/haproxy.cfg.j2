@@ -114,6 +114,7 @@ bind :{{ all_port_map[stats.ports.web] }}
 mode http
 stats enable
 stats show-node
+stats show-desc {{ clustered_instance_name }} on {{ machine_name }} ({{ ansible_host }})
 stats realm Haproxy\ Statistics
 stats uri /
 #stats refresh 10s
