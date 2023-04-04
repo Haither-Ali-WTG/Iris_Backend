@@ -171,9 +171,7 @@ stevedore==5.0.0
 subprocess-tee==0.4.1
     # via ansible-lint
 toml==0.10.2
-    # via
-    #   dparse
-    #   yq
+    # via dparse
 tomli==2.0.1
     # via
     #   black
@@ -182,7 +180,9 @@ tomli==2.0.1
     #   pylint
     #   pytest
 tomlkit==0.11.7
-    # via pylint
+    # via
+    #   pylint
+    #   yq
 typing-extensions==4.5.0
     # via
     #   astroid
@@ -201,7 +201,7 @@ yamllint==1.30.0
     # via
     #   -r requirements.in
     #   ansible-lint
-yq==3.1.1
+yq==3.2.0
     # via -r requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
