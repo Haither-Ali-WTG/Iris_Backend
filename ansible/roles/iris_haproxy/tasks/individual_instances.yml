@@ -6,7 +6,7 @@
 
 - name: Create directory {{ item }}
   file:
-    dest: "{{ individual_instance_path }}/{{ item.path }}"
+    dest: "{{ individual_instance_dir }}/{{ item.path }}"
     state: directory
     mode: "{{ item.mode }}"
     owner: "{{ user.uid }}"
