@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230404.5
-  # Tue Apr  4 11:03:55 UTC 2023 -- Tue Apr  4 21:03:55 AEST 2023
+  # Dante Build Artifact 20230405.1
+  # Wed Apr  5 00:48:19 UTC 2023 -- Wed Apr  5 10:48:19 AEST 2023
   #
-  # Merged PR 11324: Only copy image to the one relevant ZTP server
-  # f043bafd40fee364db50a3cf8200102418d7783c
-  dante_build_id: '539019'
+  # Merge pull request 11356 from dante_artifact_upgrade into master
+  # 317a0dbbee2d3f1b32e7312d6be263dfd1b6dab1
+  dante_build_id: '539599'
 
   # virgil 20230405.2
   # Tue Apr  4 23:26:46 UTC 2023 -- Wed Apr  5 09:26:46 AEST 2023
