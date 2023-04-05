@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230405.5
-  # Wed Apr  5 05:38:37 UTC 2023 -- Wed Apr  5 15:38:37 AEST 2023
+  # Dante Build Artifact 20230406.2
+  # Wed Apr  5 15:53:55 UTC 2023 -- Thu Apr  6 01:53:55 AEST 2023
   #
-  # Merged PR 11327: Modify the owner and group of the Telegraf script directory.
-  # 7c348708bf69ece38eb765959347d0cd02ac4ea6
-  dante_build_id: '539848'
+  # Merge pull request 11321 from dante_python_upgrade into master
+  # b37bac3d9078aff0c3ac9dede33ae3f850ad125e
+  dante_build_id: '540330'
 
-  # virgil 20230405.5
-  # Wed Apr  5 04:31:11 UTC 2023 -- Wed Apr  5 14:31:11 AEST 2023
+  # virgil 20230406.1
+  # Wed Apr  5 23:40:58 UTC 2023 -- Thu Apr  6 09:40:58 AEST 2023
   #
-  # Merged PR 11373: Add sandeep to ops
-  # 5795bcfa0871fcc68f4b6d3d9a373feb529de46e
-  virgil_build_id: '539798'
+  # Merged PR 11378: Assign CORP specific VLAN and IP addresses to HyperV servers
+  # 08b1453f944bbc6f70421affdf863aab7e15cae5
+  virgil_build_id: '540644'
