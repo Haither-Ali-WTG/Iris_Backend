@@ -2,17 +2,20 @@
 - name: Calculate individual instance facts
   set_fact:
     individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
+    user: "{{ hostvars[machine_name].haproxy_user }}"
 
 - name: Create directory {{ item }}
   file:
-    dest: "{{ individual_instance_dir }}/{{ item }}"
+    dest: "{{ individual_instance_dir }}/{{ item.0 }}"
     state: directory
-    mode: a=rx
+    mode: a={{ item.1 }}
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
   become: yes
   loop:
-    - etc/certs
-    - etc/sorry_pages
-    - run
+    - [etc/certs, rx]
+    - [etc/sorry_pages, rx]
+    - [run, rwx]
 
 - name: Copy sorry pages to destination
   include_tasks: copy_sorry_pages.yml
@@ -28,6 +31,8 @@
     path: "{{ individual_instance_dir }}/run/{{ item }}"
     state: touch
     mode: u=rw,go=r
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
   loop:
     - global-state
     - haproxy.sock
@@ -53,6 +58,8 @@
     src: haproxy.cfg.j2
     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
     mode: u=r,go=
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
   become: yes
   # TODO: validate
   register: haproxy_config
@@ -62,6 +69,8 @@
     src: sorry.http.j2
     dest: "{{ individual_instance_dir }}/etc/sorry.http"
     mode: u=r,go=
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
   become: yes
   # TODO: validate
   register: sorry_page
@@ -71,6 +80,8 @@
     src: "certificates/{{ item }}.pem"
     dest: "{{ individual_instance_dir }}/etc/certs/"
     mode: ug=r,o=
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
   become: yes
   loop: "{{ certificates | default([]) }}"
   no_log: true
@@ -107,7 +118,7 @@
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
-    container_user: root
+    container_user: "{{ user.uid }}:{{ user.group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
       production:
