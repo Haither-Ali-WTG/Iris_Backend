@@ -8,14 +8,14 @@
   file:
     dest: "{{ individual_instance_dir }}/{{ item.0 }}"
     state: directory
-    mode: a={{ item.1 }}
+    mode: "{{ item.1 }}"
     owner: "{{ user.uid }}"
     group: "{{ user.group }}"
   become: yes
   loop:
-    - [etc/certs, rx]
-    - [etc/sorry_pages, rx]
-    - [run, rwx]
+    - [etc/certs, u=rx,go=]
+    - [etc/sorry_pages, a=rx]
+    - [run, u=rwx,go=]
 
 - name: Copy sorry pages to destination
   include_tasks: copy_sorry_pages.yml
