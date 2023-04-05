@@ -6,16 +6,19 @@
 
 - name: Create directory {{ item }}
   file:
-    dest: "{{ individual_instance_dir }}/{{ item.0 }}"
+    dest: "{{ individual_instance_path }}/{{ item.path }}"
     state: directory
-    mode: "{{ item.1 }}"
+    mode: "{{ item.mode }}"
     owner: "{{ user.uid }}"
     group: "{{ user.group }}"
   become: yes
   loop:
-    - [etc/certs, u=rx,go=]
-    - [etc/sorry_pages, a=rx]
-    - [run, u=rwx,go=]
+    - path: etc/certs
+      mode: u=rx,go=
+    - path: etc/sorry_pages
+      mode: a=rx
+    - path: run
+      mode: u=rwx,go=
 
 - name: Copy sorry pages to destination
   include_tasks: copy_sorry_pages.yml
