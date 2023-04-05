@@ -201,7 +201,7 @@ yamllint==1.30.0
     # via
     #   -r requirements.in
     #   ansible-lint
-yq==3.2.0
+yq==3.2.1
     # via -r requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
