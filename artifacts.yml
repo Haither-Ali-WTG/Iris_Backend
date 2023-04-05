@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230405.1
-  # Wed Apr  5 00:48:19 UTC 2023 -- Wed Apr  5 10:48:19 AEST 2023
+  # Dante Build Artifact 20230405.5
+  # Wed Apr  5 05:38:37 UTC 2023 -- Wed Apr  5 15:38:37 AEST 2023
   #
-  # Merge pull request 11356 from dante_artifact_upgrade into master
-  # 317a0dbbee2d3f1b32e7312d6be263dfd1b6dab1
-  dante_build_id: '539599'
+  # Merged PR 11327: Modify the owner and group of the Telegraf script directory.
+  # 7c348708bf69ece38eb765959347d0cd02ac4ea6
+  dante_build_id: '539848'
 
-  # virgil 20230405.2
-  # Tue Apr  4 23:26:46 UTC 2023 -- Wed Apr  5 09:26:46 AEST 2023
+  # virgil 20230405.5
+  # Wed Apr  5 04:31:11 UTC 2023 -- Wed Apr  5 14:31:11 AEST 2023
   #
-  # Merged PR 11364: DE1 node 1 rebuild
-  # f9d07147e64731ea3caa02d1a37ec4cf73ee194a
-  virgil_build_id: '539510'
+  # Merged PR 11373: Add sandeep to ops
+  # 5795bcfa0871fcc68f4b6d3d9a373feb529de46e
+  virgil_build_id: '539798'
