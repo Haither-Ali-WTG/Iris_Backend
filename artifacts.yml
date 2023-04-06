@@ -7,9 +7,9 @@ variables:
   # b37bac3d9078aff0c3ac9dede33ae3f850ad125e
   dante_build_id: '540330'
 
-  # virgil 20230406.1
-  # Wed Apr  5 23:40:58 UTC 2023 -- Thu Apr  6 09:40:58 AEST 2023
+  # virgil 20230406.3
+  # Wed Apr  5 23:59:09 UTC 2023 -- Thu Apr  6 09:59:09 AEST 2023
   #
-  # Merged PR 11378: Assign CORP specific VLAN and IP addresses to HyperV servers
-  # 08b1453f944bbc6f70421affdf863aab7e15cae5
-  virgil_build_id: '540644'
+  # Merged PR 11384: Identify dante key in the comment field
+  # c0b38560873d6e2238d669d5fd6335878e501bba
+  virgil_build_id: '540659'
