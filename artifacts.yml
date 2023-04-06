@@ -7,9 +7,9 @@ variables:
   # b37bac3d9078aff0c3ac9dede33ae3f850ad125e
   dante_build_id: '540330'
 
-  # virgil 20230405.5
-  # Wed Apr  5 04:31:11 UTC 2023 -- Wed Apr  5 14:31:11 AEST 2023
+  # virgil 20230406.1
+  # Wed Apr  5 23:40:58 UTC 2023 -- Thu Apr  6 09:40:58 AEST 2023
   #
-  # Merged PR 11373: Add sandeep to ops
-  # 5795bcfa0871fcc68f4b6d3d9a373feb529de46e
-  virgil_build_id: '539798'
+  # Merged PR 11378: Assign CORP specific VLAN and IP addresses to HyperV servers
+  # 08b1453f944bbc6f70421affdf863aab7e15cae5
+  virgil_build_id: '540644'
