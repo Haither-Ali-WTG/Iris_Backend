@@ -1,6 +1,7 @@
 ---
 - name: Calculate individual instance facts
   set_fact:
+    container_name: "iris_{{ inventory_hostname }}"
     individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
 
 - name: Create directory {{ item }}
@@ -75,10 +76,6 @@
   loop: "{{ certificates | default([]) }}"
   no_log: true
   register: copy_certificates
-
-- name: Set container name
-  set_fact:
-    container_name: "iris_{{ inventory_hostname }}"
 
 - name: Check if container exists
   vars:
