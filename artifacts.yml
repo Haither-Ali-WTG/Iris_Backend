@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230406.2
-  # Wed Apr  5 15:53:55 UTC 2023 -- Thu Apr  6 01:53:55 AEST 2023
+  # Dante Build Artifact 20230406.4
+  # Thu Apr  6 04:58:01 UTC 2023 -- Thu Apr  6 14:58:01 AEST 2023
   #
-  # Merge pull request 11321 from dante_python_upgrade into master
-  # b37bac3d9078aff0c3ac9dede33ae3f850ad125e
-  dante_build_id: '540330'
+  # Merged PR 11402: Install Hyper-v management tools
+  # f427930eb3c77530c413670fcb3d256b6d2442f2
+  dante_build_id: '540957'
 
-  # virgil 20230406.3
-  # Wed Apr  5 23:59:09 UTC 2023 -- Thu Apr  6 09:59:09 AEST 2023
+  # virgil 20230406.7
+  # Thu Apr  6 04:59:59 UTC 2023 -- Thu Apr  6 14:59:59 AEST 2023
   #
-  # Merged PR 11384: Identify dante key in the comment field
-  # c0b38560873d6e2238d669d5fd6335878e501bba
-  virgil_build_id: '540659'
+  # Merged PR 11405: changed IP addresses to reflect new architecture
+  # df2047de58ebce2817c8042ee541c562c9c5af4a
+  virgil_build_id: '540961'
