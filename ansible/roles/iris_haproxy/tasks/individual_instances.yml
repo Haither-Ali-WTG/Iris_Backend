@@ -106,10 +106,10 @@
     workload: deployment
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ instance.haproxy_version }}-{{ instance.haproxy_os }}"
     startup_command: >-
-      -f /usr/local/etc/haproxy/{{ clustered_instance_name }}.cfg
+      -f /etc/haproxy/{{ clustered_instance_name }}.cfg
     restart: never
     volumes:
-      - "{{ individual_instance_dir }}/etc:/usr/local/etc/haproxy:z"
+      - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     net_host: no
     ports: >-

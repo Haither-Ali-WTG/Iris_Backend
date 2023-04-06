@@ -144,8 +144,8 @@ fullconn {{ proxy.fullconn }}
 
 
 
-errorfile 403 /usr/local/etc/haproxy/sorry.http
-errorfile 503 /usr/local/etc/haproxy/sorry.http
+errorfile 403 /etc/haproxy/sorry.http
+errorfile 503 /etc/haproxy/sorry.http
 
 
 
@@ -169,7 +169,7 @@ bind :{{ all_port_map[haproxy_http_port | int] }}
 # port {{ all_port_map[haproxy_http_port | int] }} mapped to {{ haproxy_http_port }} on host
 {% endif %}
 {% if certificates | default([]) %}
-bind :{{ all_port_map[haproxy_https_port | int] }} ssl crt /usr/local/etc/haproxy/certs/ alpn h2,http/1.1
+bind :{{ all_port_map[haproxy_https_port | int] }} ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
 # port {{ all_port_map[haproxy_https_port | int] }} mapped to {{ haproxy_https_port }} on host
 {% endif %}
 
@@ -274,7 +274,7 @@ default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% e
 
 {% if backend.sorry_pages is defined %}
 {%   for sorry_page in backend.sorry_pages %}
-errorfile {{ sorry_page.code }} /usr/local/etc/haproxy/sorry_pages/{{ sorry_page.file }}
+errorfile {{ sorry_page.code }} /etc/haproxy/sorry_pages/{{ sorry_page.file }}
 {%   endfor %}
 {% endif -%}
 
