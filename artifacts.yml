@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230413.1
-  # Wed Apr 12 23:44:56 UTC 2023 -- Thu Apr 13 09:44:56 AEST 2023
+  # Dante Build Artifact 20230413.2
+  # Thu Apr 13 00:57:06 UTC 2023 -- Thu Apr 13 10:57:06 AEST 2023
   #
-  # Merge pull request 11469 from dante_artifact_upgrade into master
-  # db3140d4458c364182149c716b9a744da90305f1
-  dante_build_id: '547387'
+  # Merged PR 11376: Remove styx in windows_startup.ps1
+  # 25e1b60e5990bf9926c18ac073768dc9a2dee36e
+  dante_build_id: '547458'
 
   # virgil 20230413.1
   # Wed Apr 12 22:18:52 UTC 2023 -- Thu Apr 13 08:18:52 AEST 2023
