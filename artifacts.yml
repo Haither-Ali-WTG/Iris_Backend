@@ -7,9 +7,9 @@ variables:
   # 25e1b60e5990bf9926c18ac073768dc9a2dee36e
   dante_build_id: '547458'
 
-  # virgil 20230413.1
-  # Wed Apr 12 22:18:52 UTC 2023 -- Thu Apr 13 08:18:52 AEST 2023
+  # virgil 20230413.5
+  # Thu Apr 13 05:38:42 UTC 2023 -- Thu Apr 13 15:38:42 AEST 2023
   #
-  # Merged PR 11438: Reconfigure AU2 management node 2 for rebuild
-  # db1cbe9df87bac6985a336c06befba435e273f4d
-  virgil_build_id: '547311'
+  # Merged PR 11478: Update OOB MAC addresses for poc
+  # f083053036bb1503f70593c38aa39078e4d2dccb
+  virgil_build_id: '547703'
