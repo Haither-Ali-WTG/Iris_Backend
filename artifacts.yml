@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230406.5
-  # Thu Apr  6 09:22:16 UTC 2023 -- Thu Apr  6 19:22:16 AEST 2023
+  # Dante Build Artifact 20230413.1
+  # Wed Apr 12 23:44:56 UTC 2023 -- Thu Apr 13 09:44:56 AEST 2023
   #
-  # Merge pull request 11395 from dante_python_upgrade into master
-  # 05805406406e34b60244cb96946110031fc4b347
-  dante_build_id: '541205'
+  # Merge pull request 11469 from dante_artifact_upgrade into master
+  # db3140d4458c364182149c716b9a744da90305f1
+  dante_build_id: '547387'
 
-  # virgil 20230411.7
-  # Tue Apr 11 00:03:19 UTC 2023 -- Tue Apr 11 10:03:19 AEST 2023
+  # virgil 20230413.1
+  # Wed Apr 12 22:18:52 UTC 2023 -- Thu Apr 13 08:18:52 AEST 2023
   #
-  # Merged PR 11425: fix d13 CNAMEs
-  # 8db8fe36dcb91fb3c16159ba3c3d7ddb6e541c19
-  virgil_build_id: '545243'
+  # Merged PR 11438: Reconfigure AU2 management node 2 for rebuild
+  # db1cbe9df87bac6985a336c06befba435e273f4d
+  virgil_build_id: '547311'
