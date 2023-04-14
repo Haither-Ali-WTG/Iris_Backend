@@ -7,9 +7,9 @@ variables:
   # 56240c9390c9ee5f12cdd6cf636f52a68920f540
   dante_build_id: '548364'
 
-  # virgil 20230413.7
-  # Thu Apr 13 05:48:28 UTC 2023 -- Thu Apr 13 15:48:28 AEST 2023
+  # virgil 20230414.2
+  # Fri Apr 14 00:41:32 UTC 2023 -- Fri Apr 14 10:41:32 AEST 2023
   #
-  # Merged PR 11461: Updated teardowns.yaml with new buckets
-  # 356d099d03301a5a868989dde5e42800412a95fd
-  virgil_build_id: '547710'
+  # Merged PR 11486: Created a new profile for Sec Eng lab server C-00329
+  # 6552e30c9c99f46cc14edcccb0a74ef955a4e363
+  virgil_build_id: '548435'
