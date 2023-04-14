@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230414.1
-  # Thu Apr 13 23:19:44 UTC 2023 -- Fri Apr 14 09:19:44 AEST 2023
+  # Dante Build Artifact 20230414.6
+  # Fri Apr 14 09:24:24 UTC 2023 -- Fri Apr 14 19:24:24 AEST 2023
   #
-  # Merge pull request 11483 from dante_artifact_upgrade into master
-  # 56240c9390c9ee5f12cdd6cf636f52a68920f540
-  dante_build_id: '548364'
+  # Merge pull request 11491 from dante_artifact_upgrade into master
+  # 71bf93f43d19380ea9e3640ed3b6fd70263b20b0
+  dante_build_id: '548836'
 
-  # virgil 20230414.2
-  # Fri Apr 14 00:41:32 UTC 2023 -- Fri Apr 14 10:41:32 AEST 2023
+  # virgil 20230414.6
+  # Fri Apr 14 03:28:30 UTC 2023 -- Fri Apr 14 13:28:30 AEST 2023
   #
-  # Merged PR 11486: Created a new profile for Sec Eng lab server C-00329
-  # 6552e30c9c99f46cc14edcccb0a74ef955a4e363
-  virgil_build_id: '548435'
+  # Merged PR 11493: Add domain info for server_virt_hyperv
+  # d36193cc10712c2877b5cbab56b652e4b1d3c898
+  virgil_build_id: '548557'
