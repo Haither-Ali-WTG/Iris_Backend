@@ -7,9 +7,9 @@ variables:
   # 71bf93f43d19380ea9e3640ed3b6fd70263b20b0
   dante_build_id: '548836'
 
-  # virgil 20230414.6
-  # Fri Apr 14 03:28:30 UTC 2023 -- Fri Apr 14 13:28:30 AEST 2023
+  # virgil 20230417.2
+  # Sun Apr 16 23:16:21 UTC 2023 -- Mon Apr 17 09:16:21 AEST 2023
   #
-  # Merged PR 11493: Add domain info for server_virt_hyperv
-  # d36193cc10712c2877b5cbab56b652e4b1d3c898
-  virgil_build_id: '548557'
+  # Merge pull request 11500 from virgil_python_upgrade into master
+  # 78ec5815e43bc82ffaf126e2bd3408262357dcd2
+  virgil_build_id: '551076'
