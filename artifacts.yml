@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230417.2
-  # Mon Apr 17 04:14:42 UTC 2023 -- Mon Apr 17 14:14:42 AEST 2023
+  # Dante Build Artifact 20230417.3
+  # Mon Apr 17 06:28:47 UTC 2023 -- Mon Apr 17 16:28:47 AEST 2023
   #
-  # Merged PR 11454: (minor) Dante - Hide secrets from log
-  # 23ef090fe64be13a6f0638f4fa47c793e1ff53f4
-  dante_build_id: '551329'
+  # Merged PR 11410: Dante - VM Provisioning - Add a simple ping check
+  # 4b6edec2838830080a566926bebee011d4fe5725
+  dante_build_id: '551439'
 
   # virgil 20230417.11
   # Mon Apr 17 02:59:42 UTC 2023 -- Mon Apr 17 12:59:42 AEST 2023
