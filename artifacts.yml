@@ -7,9 +7,9 @@ variables:
   # 71bf93f43d19380ea9e3640ed3b6fd70263b20b0
   dante_build_id: '548836'
 
-  # virgil 20230417.7
-  # Mon Apr 17 00:01:22 UTC 2023 -- Mon Apr 17 10:01:22 AEST 2023
+  # virgil 20230417.9
+  # Mon Apr 17 00:53:27 UTC 2023 -- Mon Apr 17 10:53:27 AEST 2023
   #
-  # Merged PR 11415: Iris nodes need to be layer 2 - changes on nodes
-  # ff923a50aa3ba9dedeb6135394808a99efbdc005
-  virgil_build_id: '551131'
+  # Merged PR 11444: Add telegraf to kafka nodes.
+  # 2957bf69c2d7b5c092e2234ef3f24f7baf7ee4bd
+  virgil_build_id: '551169'
