@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230417.3
-  # Mon Apr 17 06:28:47 UTC 2023 -- Mon Apr 17 16:28:47 AEST 2023
+  # Dante Build Artifact 20230417.8
+  # Mon Apr 17 13:30:03 UTC 2023 -- Mon Apr 17 23:30:03 AEST 2023
   #
-  # Merged PR 11410: Dante - VM Provisioning - Add a simple ping check
-  # 4b6edec2838830080a566926bebee011d4fe5725
-  dante_build_id: '551439'
+  # Merged PR 11312: (WIP) Dante - Add RDSH Installs for CORP
+  # 015a2c8cea36be1e57ff1383ea1e49d8ab42335a
+  dante_build_id: '551803'
 
-  # virgil 20230417.11
-  # Mon Apr 17 02:59:42 UTC 2023 -- Mon Apr 17 12:59:42 AEST 2023
+  # virgil 20230417.13
+  # Mon Apr 17 08:59:02 UTC 2023 -- Mon Apr 17 18:59:02 AEST 2023
   #
-  # Merged PR 11492: Virgil - Reorder files and start writing small guides to virgil
-  # ccde242a81d081b19475e3dba132ac6aaeaf1332
-  virgil_build_id: '551266'
+  # Merged PR 11416: The C-00387 is C23 hardware
+  # c24120823662da68055a525e61302fbb94637935
+  virgil_build_id: '551605'
