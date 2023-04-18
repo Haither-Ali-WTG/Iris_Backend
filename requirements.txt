@@ -14,7 +14,7 @@ ansible-lint==6.14.6
     # via -r requirements.in
 argcomplete==3.0.5
     # via yq
-astroid==2.15.2
+astroid==2.15.3
     # via pylint
 attrs==23.1.0
     # via jsonschema
