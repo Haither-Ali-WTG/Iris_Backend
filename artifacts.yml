@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230418.4
-  # Tue Apr 18 07:23:01 UTC 2023 -- Tue Apr 18 17:23:01 AEST 2023
+  # Dante Build Artifact 20230419.1
+  # Wed Apr 19 00:45:51 UTC 2023 -- Wed Apr 19 10:45:51 AEST 2023
   #
-  # Merged PR 11539: Telegraf config update & set proper permission for log directory
-  # aab93ec796041ad8e0e84a6d009d6938b0e90374
-  dante_build_id: '552568'
+  # Merged PR 11543: Dante - Remove Dry Run Functionality
+  # e1d18c1929d27610d1f85ea4124936d0dc7fca1e
+  dante_build_id: '553279'
 
   # virgil 20230418.2
   # Tue Apr 18 01:03:05 UTC 2023 -- Tue Apr 18 11:03:05 AEST 2023
