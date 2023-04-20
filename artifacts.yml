@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230419.5
-  # Wed Apr 19 09:23:22 UTC 2023 -- Wed Apr 19 19:23:22 AEST 2023
+  # Dante Build Artifact 20230420.1
+  # Thu Apr 20 05:27:37 UTC 2023 -- Thu Apr 20 15:27:37 AEST 2023
   #
-  # Merged PR 10977: WI00585923 - Removing pipeline secrets from 'Build - Windows qcow2'
-  # 375fa4654a40a80a921726e845d02d48e8936b79
-  dante_build_id: '553824'
+  # Merge pull request 11587 from dante_artifact_upgrade into master
+  # 5412ffe2d43114dbd822edf3254b6e58de516f17
+  dante_build_id: '554726'
 
   # virgil 20230420.9
   # Thu Apr 20 03:19:37 UTC 2023 -- Thu Apr 20 13:19:37 AEST 2023
