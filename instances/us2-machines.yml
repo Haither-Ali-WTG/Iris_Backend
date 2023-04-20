@@ -2,14 +2,14 @@
 machines:
   hosts:
     us2lbl00384:
-      ansible_host: 10.3.64.21
+      ansible_host: 10.4.64.21
       os: ubuntu
       dc: US2
     us2lbl00385:
-      ansible_host: 10.3.64.22
+      ansible_host: 10.4.64.22
       os: ubuntu
       dc: US2
     us2lbl00386:
-      ansible_host: 10.3.64.23
+      ansible_host: 10.4.64.23
       os: ubuntu
       dc: US2
