@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230420.1
-  # Thu Apr 20 05:27:37 UTC 2023 -- Thu Apr 20 15:27:37 AEST 2023
+  # Dante Build Artifact 20230421.2
+  # Thu Apr 20 19:32:12 UTC 2023 -- Fri Apr 21 05:32:12 AEST 2023
   #
-  # Merge pull request 11587 from dante_artifact_upgrade into master
-  # 5412ffe2d43114dbd822edf3254b6e58de516f17
-  dante_build_id: '554726'
+  # Merged PR 11518: Perform pre-production tests for RDSH Hosts
+  # 72d9d4fb811d141a3e81ec2c6adf29e6fe366d82
+  dante_build_id: '555389'
 
   # virgil 20230420.9
   # Thu Apr 20 03:19:37 UTC 2023 -- Thu Apr 20 13:19:37 AEST 2023
