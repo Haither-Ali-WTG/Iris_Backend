@@ -31,10 +31,14 @@
         file_type: directory
       register: clustered_instance_folders
 
-    - name: Calculate clustered_instances name
+    - name: Calculate clustered_instances_names
       set_fact:
-        clustered_instance_names: "{{ clustered_instance_names | default([]) + [(item.path | split('/'))[-1]] }}"
-      loop: "{{ clustered_instance_folders.files }}"
+        clustered_instance_names: >-
+          [
+            {% for item in clustered_instance_folders.files %}
+            {{ (item.path | split('/'))[-1] | to_json }},
+            {% endfor %}
+          ]
 
     - name: Load configs
       set_fact:
