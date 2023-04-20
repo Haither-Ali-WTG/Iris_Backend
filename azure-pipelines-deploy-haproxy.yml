@@ -7,7 +7,7 @@ variables:
   - name: user
     value: dante
   - name: cert_kv_name
-    value: kv-wtg-test  # TODO use the real KV
+    value: lb-certificates
   - name: key_vault_name
     value: kv-wtg-dante-prod
 
