@@ -74,6 +74,14 @@ stages:
     pool: simulations
     jobs:
       - job: Simulation
+        strategy:
+          matrix:
+            AU2:
+              simulation_dc: AU2
+            DE1:
+              simulation_dc: DE1
+            US2:
+              simulation_dc: US2
         steps:
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
@@ -143,6 +151,7 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
                 -e="s3_host=$(s3_host)"
+                -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
@@ -158,6 +167,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
             condition: always()
