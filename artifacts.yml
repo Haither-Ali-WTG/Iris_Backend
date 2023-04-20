@@ -7,9 +7,9 @@ variables:
   # 375fa4654a40a80a921726e845d02d48e8936b79
   dante_build_id: '553824'
 
-  # virgil 20230420.3
-  # Wed Apr 19 23:02:37 UTC 2023 -- Thu Apr 20 09:02:37 AEST 2023
+  # virgil 20230420.7
+  # Thu Apr 20 01:05:51 UTC 2023 -- Thu Apr 20 11:05:51 AEST 2023
   #
-  # Merged PR 11496: Reconfigure AU2 management node 1 for rebuild
-  # 427e9f1acd7205f403146fb47a82efc0fdb4f4b8
-  virgil_build_id: '554345'
+  # Merge pull request 11584 from virgil_python_upgrade into master
+  # 3f18329a97f53e546d2e5892b25f8f78d4be774b
+  virgil_build_id: '554474'
