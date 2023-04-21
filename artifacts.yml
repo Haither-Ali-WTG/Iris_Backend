@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230421.3
-  # Fri Apr 21 00:19:21 UTC 2023 -- Fri Apr 21 10:19:21 AEST 2023
+  # Dante Build Artifact 20230421.4
+  # Fri Apr 21 02:01:36 UTC 2023 -- Fri Apr 21 12:01:36 AEST 2023
   #
-  # Merged PR 11562: Detect windows_package path
-  # 106c73258d54d94918adafad63d2fd1f74a327a2
-  dante_build_id: '555582'
+  # Merged PR 11618: Setup WinRM Connection to Windows nodes
+  # af884c1ef75a14c5e407b1194c3a753f0728f881
+  dante_build_id: '555714'
 
   # virgil 20230421.2
   # Fri Apr 21 00:46:08 UTC 2023 -- Fri Apr 21 10:46:08 AEST 2023
