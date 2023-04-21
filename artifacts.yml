@@ -7,9 +7,9 @@ variables:
   # 106c73258d54d94918adafad63d2fd1f74a327a2
   dante_build_id: '555582'
 
-  # virgil 20230420.9
-  # Thu Apr 20 03:19:37 UTC 2023 -- Thu Apr 20 13:19:37 AEST 2023
+  # virgil 20230421.2
+  # Fri Apr 21 00:46:08 UTC 2023 -- Fri Apr 21 10:46:08 AEST 2023
   #
-  # Merged PR 11599: Rolled back node 1 rebuild
-  # 1c0ad042020f81f79d5e336bc29f75ccfa2f4ce9
-  virgil_build_id: '554600'
+  # Merged PR 11561: Correct RDSH Group for CORP session hosts
+  # 70e08a10c68b719064f37b0c3ad6d24071e41f44
+  virgil_build_id: '555620'
