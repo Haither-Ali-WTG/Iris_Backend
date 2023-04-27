@@ -7,7 +7,7 @@ variables:
   - name: user
     value: dante
   - name: azure_kv_name
-    value: lb-certificates
+    value: kv-wtg-iris-prod
   - name: mgmt_keyvault_name
     value: kv-wtg-dante-sim
   - name: s3_host

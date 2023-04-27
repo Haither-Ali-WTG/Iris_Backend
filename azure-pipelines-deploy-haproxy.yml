@@ -7,7 +7,7 @@ variables:
   - name: user
     value: dante
   - name: cert_kv_name
-    value: lb-certificates
+    value: kv-wtg-iris-prod
   - name: key_vault_name
     value: kv-wtg-dante-prod
 
