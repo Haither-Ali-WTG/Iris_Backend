@@ -5,7 +5,7 @@
     state: directory
     mode: a=rwx
   become: yes
-  with_items:
+  loop:
     - config
     - public
     - certs
