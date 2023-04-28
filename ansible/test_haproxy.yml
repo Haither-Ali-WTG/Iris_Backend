@@ -37,7 +37,7 @@
 
     - name: Download qcow2 required for simulation
       command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
-      with_items:
+      loop:
         - "{{ rhel_hypervisor_image }}"
         - "{{ ubuntu_hypervisor_image }}"
       changed_when: true
