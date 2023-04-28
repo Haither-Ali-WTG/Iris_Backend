@@ -55,9 +55,9 @@
         tasks_from: setup.yml
       when: not simulation
 
-    - name: Setup rsyslog
+    - name: Setup rsyslog for Iris
       include_role:
-        name: rsyslog
+        name: iris_rsyslog
 
     - name: Apply system parameters
       include_role:
