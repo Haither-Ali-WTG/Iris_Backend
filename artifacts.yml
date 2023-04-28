@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230421.4
-  # Fri Apr 21 02:01:36 UTC 2023 -- Fri Apr 21 12:01:36 AEST 2023
+  # Dante Build Artifact 20230428.2
+  # Fri Apr 28 05:08:14 UTC 2023 -- Fri Apr 28 15:08:14 AEST 2023
   #
-  # Merged PR 11618: Setup WinRM Connection to Windows nodes
-  # af884c1ef75a14c5e407b1194c3a753f0728f881
-  dante_build_id: '555714'
+  # Merged PR 11625: Pin azure-devops to 6.0.0b4 and manually upgrade packages
+  # 18cb3d51efa2bb2c31f804f3737f20c4ceba27e7
+  dante_build_id: '562652'
 
-  # virgil 20230421.2
-  # Fri Apr 21 00:46:08 UTC 2023 -- Fri Apr 21 10:46:08 AEST 2023
+  # virgil 20230428.8
+  # Fri Apr 28 05:35:12 UTC 2023 -- Fri Apr 28 15:35:12 AEST 2023
   #
-  # Merged PR 11561: Correct RDSH Group for CORP session hosts
-  # 70e08a10c68b719064f37b0c3ad6d24071e41f44
-  virgil_build_id: '555620'
+  # Merged PR 11714: HyperV Cluster Support
+  # ba19e29979e1a11f1ae216b5ac0aeb4addf7e42d
+  virgil_build_id: '562684'
