@@ -42,12 +42,21 @@ stages:
 
           - script: |
               set -euxo pipefail
-              safety check --full-report -i 42923 -i 42926
+              safety check --full-report -i 42923 -i 42926 -i 54229 -i 54230
             # Ignored reports:
             #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
             #   Ansible async tasks can be leaked to malicious non-privileged users
             #   on the target machine, under some circumstances. However, we do not
             #   have any async tasks in this repo.
+            #   - 54229 - CVE-2020-25636 - A flaw was found in Ansible Base when using
+            #   the aws_ssm connection plugin as there is no namespace separation for
+            #   file transfers.  Files are written directly to the root bucket, making
+            #   possible to have collisions when running multiple ansible processes.
+            #   This issue affects mainly the service availability.
+            #   - 54230 - CVE-2020-25635 - A flaw was found in Ansible Base when using
+            #   the aws_ssm connection plugin as garbage collector is not happening
+            #   after playbook run is completed. Files would remain in the bucket
+            #   exposing the data. This issue affects directly data confidentiality.
             displayName: 'Python Safety vulnerability check'
             condition: succeededOrFailed()
 
