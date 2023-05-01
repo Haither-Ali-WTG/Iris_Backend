@@ -26,7 +26,7 @@ nbthread {{ instance.threads | default(8) }}
 
 
 #hard-stop-after 1s #affects streams (RDP?), avoid it
-log 127.0.0.1 len 4096 local7
+log 172.17.0.1 len 4096 local7
 
 # The cipher profile.
 
