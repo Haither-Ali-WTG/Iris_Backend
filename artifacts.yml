@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230502.3
-  # Tue May  2 04:53:11 UTC 2023 -- Tue May  2 14:53:11 AEST 2023
+  # Dante Build Artifact 20230503.1
+  # Tue May  2 23:28:55 UTC 2023 -- Wed May  3 09:28:55 AEST 2023
   #
-  # Merge pull request 11720 from dante_artifact_upgrade into master
-  # e364816fe3736e73668858d18a08c95499f56427
-  dante_build_id: '566673'
+  # Merged PR 11770: Point kubernetes to use /etc/resolv.conf
+  # 03125a982ec7509e9fa8b3836272dcb39f982d01
+  dante_build_id: '567450'
 
   # virgil 20230502.4
   # Tue May  2 03:27:10 UTC 2023 -- Tue May  2 13:27:10 AEST 2023
