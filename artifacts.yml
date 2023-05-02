@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230501.16
-  # Mon May  1 13:12:37 UTC 2023 -- Mon May  1 23:12:37 AEST 2023
+  # Dante Build Artifact 20230502.2
+  # Tue May  2 01:29:37 UTC 2023 -- Tue May  2 11:29:37 AEST 2023
   #
-  # Merged PR 11696: Dante - Remove password from telegraf deployment logs
-  # 648351209ea44941fd0aa35d952796bb540192b6
-  dante_build_id: '565963'
+  # Merged PR 11767: Fixed developer simulation
+  # 27bc2f1e8d67ef7eab1de1411d2f1a08029c2ec0
+  dante_build_id: '566476'
 
-  # virgil 20230501.4
-  # Mon May  1 02:06:27 UTC 2023 -- Mon May  1 12:06:27 AEST 2023
+  # virgil 20230502.1
+  # Tue May  2 01:23:12 UTC 2023 -- Tue May  2 11:23:12 AEST 2023
   #
-  # Merged PR 11746: Copy the Virgil Yamale extensions into artifact
-  # 1facb6809d71247ac607679d24f92a44d1be3ad9
-  virgil_build_id: '565367'
+  # Merged PR 11755: Add 'r' records for new eye-test nodes
+  # f65f3037ace62041ad77cf66a7253a28f0944199
+  virgil_build_id: '566474'
