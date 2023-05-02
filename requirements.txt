@@ -148,7 +148,7 @@ rich==13.3.5
     # via
     #   ansible-lint
     #   bandit
-ruamel-yaml==0.17.21
+ruamel-yaml==0.17.22
     # via
     #   ansible-lint
     #   safety
