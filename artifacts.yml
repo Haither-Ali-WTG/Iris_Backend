@@ -7,9 +7,9 @@ variables:
   # 03125a982ec7509e9fa8b3836272dcb39f982d01
   dante_build_id: '567450'
 
-  # virgil 20230502.4
-  # Tue May  2 03:27:10 UTC 2023 -- Tue May  2 13:27:10 AEST 2023
+  # virgil 20230503.2
+  # Tue May  2 23:31:14 UTC 2023 -- Wed May  3 09:31:14 AEST 2023
   #
-  # Merged PR 11774: kafka OS upgraded to Ubuntu 22.04
-  # 1905a3a92a47ea63f71e7bfda8e1c539285d6d1d
-  virgil_build_id: '566587'
+  # Merge pull request 11801 from virgil_python_upgrade into master
+  # dbc0d98a72ac53ade1717e1ae214daa5278a5a9a
+  virgil_build_id: '567468'
