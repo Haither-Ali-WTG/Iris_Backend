@@ -1,9 +1,7 @@
 ---
 individual_instance_defaults:
   instance:
-    # TODO: this should probably just be the name?
-    # log_name: datacentre - env - context - function
-    log_name: iris-default-instance-name
+    log_name: "{{ inventory_hostname }}"
     processes: 1
     threads: 8
     maxconn: 200000
