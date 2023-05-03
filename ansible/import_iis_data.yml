@@ -42,7 +42,6 @@
 
     - name: Load configs
       set_fact:
-        server_config: "{{ lookup('file', '{{ playbook_dir }}/../dynamic_backends/servers.yml') | from_yaml }}"
         website_config: "{{ lookup('file', '{{ playbook_dir }}/../dynamic_backends/websites.yml') | from_yaml }}"
 
     - name: Report IIS counts
@@ -53,18 +52,9 @@
       debug:
         var: stats
 
-    - name: Filter valid server names
+    - name: Map files to paths
       set_fact:
-        iis_files: >-
-          {%- set result = [] -%}
-          {%- for file in iis_files.files -%}
-          {%-   for prefix in server_config['computer_name_prefixes'] -%}
-          {%-     if prefix == (file.path.split('/') | last)[: (prefix | length)] -%}
-          {%-       set x = result.append(file.path) -%}
-          {%-     endif -%}
-          {%-   endfor -%}
-          {%- endfor -%}
-          {{ result | unique }}
+        iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
