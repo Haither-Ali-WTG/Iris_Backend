@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230503.5
-  # Wed May  3 06:00:42 UTC 2023 -- Wed May  3 16:00:42 AEST 2023
+  # Dante Build Artifact 20230504.1
+  # Wed May  3 15:09:35 UTC 2023 -- Thu May  4 01:09:35 AEST 2023
   #
-  # Merged PR 11684: Disables SNMP and SNMP Trap on all DCs
-  # 2931fc9bdbe57de43cf3441c2961abebee4176dd
-  dante_build_id: '567908'
+  # Merge pull request 11827 from dante_artifact_upgrade into master
+  # dc90d410317e1d9bb6c0b517035fc2181125b658
+  dante_build_id: '568335'
 
   # virgil 20230503.4
   # Wed May  3 04:52:28 UTC 2023 -- Wed May  3 14:52:28 AEST 2023
