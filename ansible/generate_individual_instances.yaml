@@ -43,7 +43,7 @@
               {
                 'machine_name': '{{ machine_name }}',
                 'clustered_instance_name': '{{ clustered_instance_name }}',
-                'individual_instance_name': 'individual_instance_{{ clustered_instance_name }}_{{ machine_name }}',
+                'individual_instance_name': '{{ clustered_instance_name }}_{{ machine_name }}',
                 'machine_cluster_machine_overrides': {{ machine_cluster_machine_overrides | to_json }}
               },
             {% endfor %}
