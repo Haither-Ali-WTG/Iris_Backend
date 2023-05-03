@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230503.3
-  # Wed May  3 02:51:11 UTC 2023 -- Wed May  3 12:51:11 AEST 2023
+  # Dante Build Artifact 20230503.5
+  # Wed May  3 06:00:42 UTC 2023 -- Wed May  3 16:00:42 AEST 2023
   #
-  # Merge pull request 11808 from dante_artifact_upgrade into master
-  # bd6279a6f039779309882f88e936f4f06bc6cb52
-  dante_build_id: '567700'
+  # Merged PR 11684: Disables SNMP and SNMP Trap on all DCs
+  # 2931fc9bdbe57de43cf3441c2961abebee4176dd
+  dante_build_id: '567908'
 
-  # virgil 20230503.2
-  # Tue May  2 23:31:14 UTC 2023 -- Wed May  3 09:31:14 AEST 2023
+  # virgil 20230503.4
+  # Wed May  3 04:52:28 UTC 2023 -- Wed May  3 14:52:28 AEST 2023
   #
-  # Merge pull request 11801 from virgil_python_upgrade into master
-  # dbc0d98a72ac53ade1717e1ae214daa5278a5a9a
-  virgil_build_id: '567468'
+  # Merged PR 11823: Put US2 management node 1 to continuous
+  # 7f43eb507aaf3a8a07c9c14ba6e6924da2cd8031
+  virgil_build_id: '567821'
