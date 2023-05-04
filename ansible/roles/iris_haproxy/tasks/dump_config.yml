@@ -25,3 +25,4 @@
     src: haproxy.cfg.j2
     dest: "configs/{{ inventory_hostname }}.cfg"
     mode: a=r
+  delegate_to: localhost
