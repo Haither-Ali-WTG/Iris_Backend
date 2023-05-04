@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230504.1
-  # Wed May  3 15:09:35 UTC 2023 -- Thu May  4 01:09:35 AEST 2023
+  # Dante Build Artifact 20230504.3
+  # Thu May  4 00:53:34 UTC 2023 -- Thu May  4 10:53:34 AEST 2023
   #
-  # Merge pull request 11827 from dante_artifact_upgrade into master
-  # dc90d410317e1d9bb6c0b517035fc2181125b658
-  dante_build_id: '568335'
+  # Merged PR 11836: VM Provisioning bugfix
+  # b312ad12efd2189041dd9a7fc621137a539f9153
+  dante_build_id: '568748'
 
-  # virgil 20230503.4
-  # Wed May  3 04:52:28 UTC 2023 -- Wed May  3 14:52:28 AEST 2023
+  # virgil 20230504.3
+  # Wed May  3 23:41:43 UTC 2023 -- Thu May  4 09:41:43 AEST 2023
   #
-  # Merged PR 11823: Put US2 management node 1 to continuous
-  # 7f43eb507aaf3a8a07c9c14ba6e6924da2cd8031
-  virgil_build_id: '567821'
+  # Merge pull request 11846 from virgil_python_upgrade into master
+  # 0f6c62b0dac02fa50ce22d4b7ea364d08f5ae74d
+  virgil_build_id: '568676'
