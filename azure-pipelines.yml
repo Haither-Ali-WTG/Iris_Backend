@@ -79,7 +79,7 @@ stages:
             condition: succeededOrFailed()
 
   - stage: Dump_configs
-    dependsOn: [Tests_and_lint]
+    dependsOn: []
     pool: simulations
     jobs:
       - job: Dump_configs
