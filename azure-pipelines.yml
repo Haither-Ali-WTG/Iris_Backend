@@ -78,6 +78,47 @@ stages:
             displayName: 'Ansible lint'
             condition: succeededOrFailed()
 
+          - script: |
+              set -euxo pipefail
+              cp ansible/ansible.cfg .
+            displayName: 'Prepare to run playbooks'
+
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
+
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
+
+          - task: Ansible@0
+            displayName: 'Dump configs'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="s3_host=$(s3_host)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
+          - publish: $(System.DefaultWorkingDirectory)/ansible/configs
+            artifact: configs
+            displayName: 'Publish configs'
+
   - stage: Simulations
     dependsOn: [Tests_and_lint]
     pool: simulations
