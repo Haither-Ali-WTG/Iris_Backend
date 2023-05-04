@@ -3,7 +3,8 @@ clustered_instances:
   {{ clustered_instance }}:
 {%  for file in iis_files %}
 {%    if clustered_instance in (file | split('/')) %}
-    {{ file | split('/') | last }}:
+{%      set server = file | split('/') | last %}
+    {{ server }}:
 {%      set file_content = lookup('file', file) | from_yaml %}
       server_ip: {{ file_content.server_ip }}
       websites_list:
@@ -11,20 +12,22 @@ clustered_instances:
 {%        if website is regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') %}
 {%          set website_with_config = [] %}
 {%          for config in website_config %}
-{%            for name_like in config.name_like %}
-{%              if name_like in website %}
-{%                if config not in website_with_config %}
-{%                  set x = website_with_config.append(config) %}
+{%            if server is regex(config.get('server_regex', '.*'), ignorecase=True) %}
+{%              for name_like in config.name_like %}
+{%                if name_like in website %}
+{%                  if config not in website_with_config %}
+{%                    set x = website_with_config.append(config) %}
+{%                  endif %}
 {%                endif %}
-{%              endif %}
-{%            endfor %}
-{%            for starts_with in config.starts_with %}
-{%              if (starts_with | length <= website | length) and (starts_with == website[:(starts_with | length)]) %}
-{%                if config not in website_with_config %}
-{%                  set x = website_with_config.append(config) %}
+{%              endfor %}
+{%              for starts_with in config.starts_with %}
+{%                if (starts_with | length <= website | length) and (starts_with == website[:(starts_with | length)]) %}
+{%                  if config not in website_with_config %}
+{%                    set x = website_with_config.append(config) %}
+{%                  endif %}
 {%                endif %}
-{%              endif %}
-{%            endfor %}
+{%              endfor %}
+{%            endif %}
 {%          endfor %}
 {%          if website_with_config | length > 0 %}
         {{ website }}:
