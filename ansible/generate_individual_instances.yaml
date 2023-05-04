@@ -35,6 +35,8 @@
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
         virgil_os_variant: "{{ machine.os }}"
 
+        ok: ~  # set to `yes` once deployment of instance succeeds
+
       loop: >-
         [
           {% for clustered_instance_name in groups['clustered_instances'] %}
