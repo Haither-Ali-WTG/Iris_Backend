@@ -3,9 +3,6 @@
 # HAProxy configuration for {{ clustered_instance_name }} on {{ machine_name }} ({{ inventory_hostname }})
 
 
-# Global settings
-# ###############
-
 ########################################
 ###### GLOBAL AND DEFAULT SETTINGS #####
 ########################################
@@ -14,6 +11,7 @@
 
 global
 #########
+
 daemon
 
 # Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
