@@ -112,7 +112,7 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Assert all instances on {{ inventory_hostname }} are successful
+    - name: Assert all instances on the machine are successful
       vars:
         failed_instance_names: >-
           {{
