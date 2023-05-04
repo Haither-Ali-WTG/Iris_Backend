@@ -7,9 +7,9 @@ variables:
   # b312ad12efd2189041dd9a7fc621137a539f9153
   dante_build_id: '568748'
 
-  # virgil 20230504.3
-  # Wed May  3 23:41:43 UTC 2023 -- Thu May  4 09:41:43 AEST 2023
+  # virgil 20230504.6
+  # Thu May  4 01:41:52 UTC 2023 -- Thu May  4 11:41:52 AEST 2023
   #
-  # Merge pull request 11846 from virgil_python_upgrade into master
-  # 0f6c62b0dac02fa50ce22d4b7ea364d08f5ae74d
-  virgil_build_id: '568676'
+  # Merged PR 11831: sand-haproxy-update
+  # 87fb1eead1c29f4077b24082669985e43b273864
+  virgil_build_id: '568811'
