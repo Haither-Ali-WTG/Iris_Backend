@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230504.3
-  # Thu May  4 00:53:34 UTC 2023 -- Thu May  4 10:53:34 AEST 2023
+  # Dante Build Artifact 20230504.4
+  # Thu May  4 07:31:48 UTC 2023 -- Thu May  4 17:31:48 AEST 2023
   #
-  # Merged PR 11836: VM Provisioning bugfix
-  # b312ad12efd2189041dd9a7fc621137a539f9153
-  dante_build_id: '568748'
+  # Merged PR 11832: Deploy the filebeat haproxy module for Iris
+  # 370f6817b4619dc832b0e35ca94d0f0b97097094
+  dante_build_id: '569152'
 
-  # virgil 20230504.6
-  # Thu May  4 01:41:52 UTC 2023 -- Thu May  4 11:41:52 AEST 2023
+  # virgil 20230504.11
+  # Thu May  4 09:44:03 UTC 2023 -- Thu May  4 19:44:03 AEST 2023
   #
-  # Merged PR 11831: sand-haproxy-update
-  # 87fb1eead1c29f4077b24082669985e43b273864
-  virgil_build_id: '568811'
+  # Merged PR 11842: Add common write account for wisecloud accessor topics
+  # 12757f52b50bd516d6ebb780b4c3dc9e9894d9f3
+  virgil_build_id: '569237'
