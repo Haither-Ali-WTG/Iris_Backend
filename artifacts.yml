@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230505.2
-  # Fri May  5 01:23:25 UTC 2023 -- Fri May  5 11:23:25 AEST 2023
+  # Dante Build Artifact 20230505.3
+  # Fri May  5 03:17:23 UTC 2023 -- Fri May  5 13:17:23 AEST 2023
   #
-  # Merge pull request 11877 from dante_artifact_upgrade into master
-  # a507fd49ae5c414af026cd31b2b499104bc4ebaf
-  dante_build_id: '569849'
+  # Merged PR 11728: Setup JEA with service account s_RDSH_JEA on rdsh
+  # cdf302c5efec2a1e84621245542d05824d40589a
+  dante_build_id: '569952'
 
   # virgil 20230505.3
   # Thu May  4 23:48:11 UTC 2023 -- Fri May  5 09:48:11 AEST 2023
