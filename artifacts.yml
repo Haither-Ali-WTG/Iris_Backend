@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230505.3
-  # Fri May  5 03:17:23 UTC 2023 -- Fri May  5 13:17:23 AEST 2023
+  # Dante Build Artifact 20230505.4
+  # Fri May  5 11:44:25 UTC 2023 -- Fri May  5 21:44:25 AEST 2023
   #
-  # Merged PR 11728: Setup JEA with service account s_RDSH_JEA on rdsh
-  # cdf302c5efec2a1e84621245542d05824d40589a
-  dante_build_id: '569952'
+  # Merged PR 11866: Set computer name for physical host
+  # 549e7d1265706ba217fdc90ec3a178359cd706ab
+  dante_build_id: '570345'
 
-  # virgil 20230505.3
-  # Thu May  4 23:48:11 UTC 2023 -- Fri May  5 09:48:11 AEST 2023
+  # virgil 20230505.7
+  # Fri May  5 06:51:21 UTC 2023 -- Fri May  5 16:51:21 AEST 2023
   #
-  # Merge pull request 11870 from virgil_python_upgrade into master
-  # e15cfe24243c640d16e71bdaac39cabd92a1cbde
-  virgil_build_id: '569761'
+  # Merged PR 11890: CS01278449 dns check devops.wisetechglobal.com
+  # f3c3bbf6ad7a8d0ded668c4a4dddcc709a7f1fdf
+  virgil_build_id: '570133'
