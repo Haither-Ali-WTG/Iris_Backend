@@ -24,7 +24,7 @@ black==22.12.0
     # via ansible-lint
 bracex==2.3.post1
     # via wcmatch
-certifi==2022.12.7
+certifi==2023.5.7
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -108,7 +108,7 @@ pycparser==2.21
     # via cffi
 pygments==2.15.1
     # via rich
-pylint==2.17.3
+pylint==2.17.4
     # via -r requirements.in
 pyparsing==3.0.9
     # via packaging
@@ -148,7 +148,7 @@ rich==13.3.5
     # via
     #   ansible-lint
     #   bandit
-ruamel-yaml==0.17.22
+ruamel-yaml==0.17.24
     # via
     #   ansible-lint
     #   safety
