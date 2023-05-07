@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230505.4
-  # Fri May  5 11:44:25 UTC 2023 -- Fri May  5 21:44:25 AEST 2023
+  # Dante Build Artifact 20230508.1
+  # Sun May  7 23:32:10 UTC 2023 -- Mon May  8 09:32:10 AEST 2023
   #
-  # Merged PR 11866: Set computer name for physical host
-  # 549e7d1265706ba217fdc90ec3a178359cd706ab
-  dante_build_id: '570345'
+  # Merge pull request 11847 from dante_python_upgrade into master
+  # 165bf501f24699ae2718d2e6274e0cac8f0c0dec
+  dante_build_id: '572518'
 
-  # virgil 20230505.7
-  # Fri May  5 06:51:21 UTC 2023 -- Fri May  5 16:51:21 AEST 2023
+  # virgil 20230508.4
+  # Sun May  7 23:39:51 UTC 2023 -- Mon May  8 09:39:51 AEST 2023
   #
-  # Merged PR 11890: CS01278449 dns check devops.wisetechglobal.com
-  # f3c3bbf6ad7a8d0ded668c4a4dddcc709a7f1fdf
-  virgil_build_id: '570133'
+  # Merged PR 11830: Separate local_groups by server role
+  # eff3e6d979ab8f791ce25e64fb303f4541fdf772
+  virgil_build_id: '572529'
