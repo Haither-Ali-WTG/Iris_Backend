@@ -40,6 +40,10 @@ clustered_instances:
       # per-clustered-instance settings (overrides) go here, for example:
       proxy:
         maxconn: 20000
+	ports:
+	  http:
+	    plaintext: [2003]
+	    ssl: [2004]
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
