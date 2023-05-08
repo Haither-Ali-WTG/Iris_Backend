@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230508.3
-  # Mon May  8 02:58:40 UTC 2023 -- Mon May  8 12:58:40 AEST 2023
+  # Dante Build Artifact 20230508.4
+  # Mon May  8 13:29:50 UTC 2023 -- Mon May  8 23:29:50 AEST 2023
   #
-  # Merged PR 11694: Dante - Dry Run Functionality
-  # b07b77040bfcac6b03f9b14ecde3c1278210622e
-  dante_build_id: '572690'
+  # Merge pull request 11920 from dante_artifact_upgrade into master
+  # 5855614a2edeaf8dc8de1914dee145dc634d97db
+  dante_build_id: '573157'
 
-  # virgil 20230508.4
-  # Sun May  7 23:39:51 UTC 2023 -- Mon May  8 09:39:51 AEST 2023
+  # virgil 20230508.12
+  # Mon May  8 11:01:59 UTC 2023 -- Mon May  8 21:01:59 AEST 2023
   #
-  # Merged PR 11830: Separate local_groups by server role
-  # eff3e6d979ab8f791ce25e64fb303f4541fdf772
-  virgil_build_id: '572529'
+  # Merged PR 11925: Remove old r.au1-test-1.es.wtg.ws
+  # 9cd06c31b904cdf0f391662bd96458f5b0e2314e
+  virgil_build_id: '573066'
