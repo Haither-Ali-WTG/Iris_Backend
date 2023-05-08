@@ -128,7 +128,7 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
-                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
                 -e="s3_host=$(s3_host)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
