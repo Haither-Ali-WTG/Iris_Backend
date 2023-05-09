@@ -7,9 +7,9 @@ variables:
   # ca09e5f0a72a5e4ce0a3b610892d2c3a47301447
   dante_build_id: '573883'
 
-  # virgil 20230509.6
-  # Tue May  9 01:18:02 UTC 2023 -- Tue May  9 11:18:02 AEST 2023
+  # virgil 20230509.13
+  # Tue May  9 06:13:26 UTC 2023 -- Tue May  9 16:13:26 AEST 2023
   #
-  # Merged PR 11939: Added Topic and creds for China Rongjin Call backservice
-  # 8dd62f83c7339fa4d5f95462560134d678def9e3
-  virgil_build_id: '573677'
+  # Merged PR 11949: Update MAC on server after hardware replacement
+  # 0a0666dda57000fb45bc4232ccf359dbc71dc3cb
+  virgil_build_id: '573960'
