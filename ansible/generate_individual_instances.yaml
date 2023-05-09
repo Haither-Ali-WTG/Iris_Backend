@@ -75,7 +75,7 @@
           }}
       loop:
         - container
-        - global
+        - global_
         - stats
         - defaults
         - frontend

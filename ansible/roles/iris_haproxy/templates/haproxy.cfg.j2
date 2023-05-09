@@ -17,8 +17,8 @@ daemon
 # Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
 # which uses 32 processes (and no nbthread setting).
 
-nbproc {{ global.processes | default(1) }}
-nbthread {{ global.threads | default(8) }}
+nbproc {{ global_.processes | default(1) }}
+nbthread {{ global_.threads | default(8) }}
 
 # Logging directive; in some cases, we need to extend the log line length to 4096.
 
@@ -43,7 +43,7 @@ ssl-server-verify none
 
 # Various other settings, mostly uniform although maxconn is sometimes higher.
 
-maxconn {{ global.maxconn | default(200000) }}
+maxconn {{ global_.maxconn | default(200000) }}
 stats socket {{ stats.ports.file }} mode 660 expose-fd listeners level admin
 server-state-file /var/run/haproxy/global-state
 stats socket 127.0.0.1:{{ stats.ports.socket }} level admin
@@ -118,7 +118,7 @@ stats uri /
 #stats refresh 10s
 stats show-legends
 
-{% if global.processes | default(1) > 1 %}
+{% if global_.processes | default(1) > 1 %}
 bind-process 1
 {% endif %}
 
