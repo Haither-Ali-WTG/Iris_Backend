@@ -4,12 +4,12 @@ clustered_instances:
   hosts:
     au1prodfrontend1:
       # per-clustered-instance settings (overrides) go here, for example:
-      proxy:
+      frontend:
         maxconn: 20000
       machine_cluster: nowhere  # au2-prod-frontend-1
       # machine_overrides:
       #   au2lbl00346:
-      #      instance:
+      #      container:
       #        haproxy_version: x.y.z
       iis_servers:
         - au2wt-sweb-001.test.wisecloud.zone
@@ -25,7 +25,7 @@ clustered_instances:
 
     au2prodceph1:
       # per-clustered-instance settings (overrides) go here, for example:
-      proxy:
+      frontend:
         maxconn: 20000
       machine_cluster: nowhere  # au2-prod-frontend-1
       iis_servers:
@@ -38,7 +38,7 @@ clustered_instances:
 
     au2corprdg:
       # per-clustered-instance settings (overrides) go here, for example:
-      proxy:
+      frontend:
         maxconn: 20000
         ports:
           http:
