@@ -1,0 +1,53 @@
+---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+
+- name: Create target directory
+  hosts: localhost
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Create target directory
+      file:
+        dest: "configs"
+        state: directory
+        mode: u=rwx,go=rx
+
+- name: Set dummy values for machines
+  hosts: target_machines
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Set dummy values
+      set_fact:
+        haproxy_user: ~
+
+- name: Dump the configs
+  hosts: individual_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Calculate individual instance settings
+      vars:
+        the_individual_instance: "{{ hostvars[inventory_hostname] }}"
+        machine: "{{ hostvars[machine_name] }}"
+        clustered_instance: "{{ hostvars[clustered_instance_name] }}"
+      set_fact:
+        "{{ item }}": >-
+          {{
+            the_individual_instance[item]
+            | combine(clustered_instance[item] | default({}), recursive=true)
+            | combine(machine[item] | default({}), recursive=true)
+            | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
+          }}
+      loop: [instance, stats, cipher, proxy, timeouts]
+
+    - name: Deploy the individual instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: dump_config.yml
