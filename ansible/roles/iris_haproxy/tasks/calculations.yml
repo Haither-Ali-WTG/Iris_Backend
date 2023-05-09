@@ -15,10 +15,15 @@
   loop: [container, global_, stats, defaults, frontend, cipher, timeouts]
 
 - name: Calculate individual instance facts
+  vars:
+    frontend_names:
+      http: l7Frontend
+      tcp: l4Frontend
   set_fact:
     container_name: "iris_{{ inventory_hostname }}"
     individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
     user: "{{ hostvars[machine_name].haproxy_user }}"
+    frontend_name: "{{ frontend_names[defaults.mode] }}"
 
 - name: Populate servers data variable for individual instance
   set_fact:
