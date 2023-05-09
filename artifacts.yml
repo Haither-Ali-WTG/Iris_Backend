@@ -7,9 +7,9 @@ variables:
   # 5855614a2edeaf8dc8de1914dee145dc634d97db
   dante_build_id: '573157'
 
-  # virgil 20230508.12
-  # Mon May  8 11:01:59 UTC 2023 -- Mon May  8 21:01:59 AEST 2023
+  # virgil 20230509.6
+  # Tue May  9 01:18:02 UTC 2023 -- Tue May  9 11:18:02 AEST 2023
   #
-  # Merged PR 11925: Remove old r.au1-test-1.es.wtg.ws
-  # 9cd06c31b904cdf0f391662bd96458f5b0e2314e
-  virgil_build_id: '573066'
+  # Merged PR 11939: Added Topic and creds for China Rongjin Call backservice
+  # 8dd62f83c7339fa4d5f95462560134d678def9e3
+  virgil_build_id: '573677'
