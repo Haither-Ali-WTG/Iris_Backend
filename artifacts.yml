@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230509.1
-  # Tue May  9 05:02:12 UTC 2023 -- Tue May  9 15:02:12 AEST 2023
+  # Dante Build Artifact 20230510.1
+  # Tue May  9 22:25:52 UTC 2023 -- Wed May 10 08:25:52 AEST 2023
   #
-  # Merge pull request 11937 from dante_artifact_upgrade into master
-  # ca09e5f0a72a5e4ce0a3b610892d2c3a47301447
-  dante_build_id: '573883'
+  # Merge pull request 11965 from dante_artifact_upgrade into master
+  # ea3e77d287cb2107adf41a5c580a2f098bbe04d1
+  dante_build_id: '574622'
 
-  # virgil 20230509.13
-  # Tue May  9 06:13:26 UTC 2023 -- Tue May  9 16:13:26 AEST 2023
+  # virgil 20230509.16
+  # Tue May  9 11:07:11 UTC 2023 -- Tue May  9 21:07:11 AEST 2023
   #
-  # Merged PR 11949: Update MAC on server after hardware replacement
-  # 0a0666dda57000fb45bc4232ccf359dbc71dc3cb
-  virgil_build_id: '573960'
+  # Merged PR 11960: Eye-test Kafka remove 4,5,6 repoint 3
+  # c46d0b97520ab7f45feb53aa8dbf72f5bb154016
+  virgil_build_id: '574194'
