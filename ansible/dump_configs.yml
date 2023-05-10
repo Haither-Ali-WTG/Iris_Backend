@@ -45,7 +45,7 @@
             | combine(machine[item] | default({}), recursive=true)
             | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
           }}
-      loop: [instance, stats, cipher, proxy, timeouts]
+      loop: [container, global_, stats, defaults, frontend, cipher, timeouts]
 
     - name: Deploy the individual instances
       include_role:
