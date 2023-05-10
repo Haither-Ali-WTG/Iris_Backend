@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230510.2
-  # Wed May 10 00:52:25 UTC 2023 -- Wed May 10 10:52:25 AEST 2023
+  # Dante Build Artifact 20230510.3
+  # Wed May 10 02:57:50 UTC 2023 -- Wed May 10 12:57:50 AEST 2023
   #
-  # Merge pull request 11974 from dante_python_upgrade into master
-  # 849243b1b7eac4b57d69d82bb0bb45a29d128711
-  dante_build_id: '574765'
+  # Merge pull request 11977 from dante_artifact_upgrade into master
+  # a56d487ffd2f52eb8c618fc6b2d1a8a11f80f829
+  dante_build_id: '574875'
 
-  # virgil 20230510.4
-  # Wed May 10 00:31:40 UTC 2023 -- Wed May 10 10:31:40 AEST 2023
+  # virgil 20230510.6
+  # Wed May 10 01:24:40 UTC 2023 -- Wed May 10 11:24:40 AEST 2023
   #
-  # Merged PR 11955: Added Topic and Creds for China Rongjin Callback Service - Prod
-  # c60adaeb9fad8310424db1d1dadcd4741b56ca84
-  virgil_build_id: '574744'
+  # Merged PR 11982: add missing .
+  # 9bf7abb89ae753b85c1feba4fcca04135bc375e6
+  virgil_build_id: '574803'
