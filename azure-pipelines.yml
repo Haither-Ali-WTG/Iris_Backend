@@ -78,23 +78,12 @@ stages:
             displayName: 'Ansible lint'
             condition: succeededOrFailed()
 
-  - stage: Dump_configs
-    dependsOn: []
-    pool: simulations
-    jobs:
-      - job: Dump_configs
-        steps:
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
             inputs:
               azureSubscription: 'sc-azuredevops2dante-vaults'
               KeyVaultName: kv-wtg-dante-sim
               SecretsFilter: secretAppIdDf4b4604e176
-
-          - script: |
-              set -euxo pipefail
-              pip install -r requirements.txt
-            displayName: 'Install requirements'
 
           - script: |
               set -euxo pipefail
@@ -129,7 +118,6 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
-                -e="ceph_proxy_host=192.168.255.254" -e="ceph_proxy_port=3128"
                 -e="s3_host=$(s3_host)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
