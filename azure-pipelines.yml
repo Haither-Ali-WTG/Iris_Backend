@@ -118,7 +118,6 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
-                -e="ceph_proxy_host=192.168.255.254" -e="ceph_proxy_port=3128"
                 -e="s3_host=$(s3_host)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
