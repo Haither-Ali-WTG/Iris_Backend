@@ -6,6 +6,8 @@ individual_instance_defaults:
     processes: 1
     threads: 8
     maxconn: 200000
+    fullconn: 5000
+    balance: leastconn
 
   container:
     haproxy_version: "2.4.19"
@@ -36,7 +38,6 @@ individual_instance_defaults:
         ssl: [443]
     maxconn: 200000
     fullconn: 5000
-    balance: leastconn
 
   timeouts:
     client: 60
