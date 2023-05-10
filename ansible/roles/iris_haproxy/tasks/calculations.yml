@@ -1,0 +1,36 @@
+---
+- name: Calculate individual instance settings
+  vars:
+    the_individual_instance: "{{ hostvars[inventory_hostname] }}"
+    machine: "{{ hostvars[machine_name] }}"
+    clustered_instance: "{{ hostvars[clustered_instance_name] }}"
+  set_fact:
+    "{{ item }}": >-
+      {{
+        the_individual_instance[item]
+        | combine(clustered_instance[item] | default({}), recursive=true)
+        | combine(machine[item] | default({}), recursive=true)
+        | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
+      }}
+  loop: [container, global_, stats, defaults, frontend, cipher, timeouts]
+
+- name: Calculate individual instance facts
+  set_fact:
+    container_name: "iris_{{ inventory_hostname }}"
+    individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
+    user: "{{ hostvars[machine_name].haproxy_user }}"
+
+- name: Populate servers data variable for individual instance
+  set_fact:
+    servers_data: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
+  when:
+    - "'complete_iis_data' in hostvars['localhost']"
+    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
+
+- name: Populate dynamic backends variable for individual instance
+  set_fact:
+    dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
+  loop: "{{ servers_data | dict2items }}"
+  when:
+    - "'complete_iis_data' in hostvars['localhost']"
+    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
