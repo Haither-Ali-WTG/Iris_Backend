@@ -7,9 +7,9 @@ variables:
   # 1a6f65c2691a9b95a41b3060e26261d5b5ceabca
   dante_build_id: '575054'
 
-  # virgil 20230510.6
-  # Wed May 10 01:24:40 UTC 2023 -- Wed May 10 11:24:40 AEST 2023
+  # virgil 20230511.6
+  # Wed May 10 22:50:09 UTC 2023 -- Thu May 11 08:50:09 AEST 2023
   #
-  # Merged PR 11982: add missing .
-  # 9bf7abb89ae753b85c1feba4fcca04135bc375e6
-  virgil_build_id: '574803'
+  # Merged PR 11988: Rebuilding DE1 management node 3 - primary
+  # aa03d52194efef79b8b3042ae74137de09988dac
+  virgil_build_id: '575739'
