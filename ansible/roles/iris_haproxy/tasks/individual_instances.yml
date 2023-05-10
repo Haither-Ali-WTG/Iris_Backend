@@ -116,6 +116,7 @@
     that: not need_restart
 
 - name: Reload haproxy
+  # This cannot be a handler as `include_role` is not supported in handlers
   vars:
     name: "{{ container_name }}"
     signal: HUP
@@ -124,4 +125,4 @@
     tasks_from: send_signal.yml
   when:
     - container_exists
-    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed
+    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed  # noqa: no-handler
