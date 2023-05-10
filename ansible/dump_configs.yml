@@ -32,21 +32,6 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Calculate individual instance settings
-      vars:
-        the_individual_instance: "{{ hostvars[inventory_hostname] }}"
-        machine: "{{ hostvars[machine_name] }}"
-        clustered_instance: "{{ hostvars[clustered_instance_name] }}"
-      set_fact:
-        "{{ item }}": >-
-          {{
-            the_individual_instance[item]
-            | combine(clustered_instance[item] | default({}), recursive=true)
-            | combine(machine[item] | default({}), recursive=true)
-            | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
-          }}
-      loop: [container, global_, stats, defaults, frontend, cipher, timeouts]
-
     - name: Deploy the individual instances
       include_role:
         name: iris_haproxy

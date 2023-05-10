@@ -1,9 +1,6 @@
 ---
-- name: Calculate individual instance facts
-  set_fact:
-    container_name: "iris_{{ inventory_hostname }}"
-    individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
-    user: "{{ hostvars[machine_name].haproxy_user }}"
+- name: Calculate and populate individual instance facts
+  include_tasks: calculations.yml
 
 - name: Create directory {{ item }}
   file:
@@ -42,20 +39,6 @@
     - haproxy.sock
   become: yes
 
-- name: Populate servers data variable for individual instance
-  set_fact:
-    servers_data: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
-  when:
-    - "'complete_iis_data' in hostvars['localhost']"
-    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
-
-- name: Populate dynamic backends variable for individual instance
-  set_fact:
-    dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
-  loop: "{{ servers_data | dict2items }}"
-  when:
-    - "'complete_iis_data' in hostvars['localhost']"
-    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
 
 - name: Template out the haproxy config
   template:
