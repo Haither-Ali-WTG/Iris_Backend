@@ -1,10 +1,15 @@
 ---
 individual_instance_defaults:
-  instance:
+  defaults:
+    mode: http
     log_name: "{{ inventory_hostname }}"
     processes: 1
     threads: 8
     maxconn: 200000
+    fullconn: 5000
+    balance: leastconn
+
+  container:
     haproxy_version: "2.4.19"
     haproxy_os: bullseye  # Debian bullseye, used for the haproxy image tag
     port_map:  # convention: backwards starting from 80: 8000
@@ -26,15 +31,13 @@ individual_instance_defaults:
     ssl_min: TLSv1.2
     ssl_max: TLSv1.3
 
-  proxy:
-    mode: http
+  frontend:
     ports:
       http:
         plaintext: [80]
         ssl: [443]
     maxconn: 200000
     fullconn: 5000
-    balance: leastconn
 
   timeouts:
     client: 60

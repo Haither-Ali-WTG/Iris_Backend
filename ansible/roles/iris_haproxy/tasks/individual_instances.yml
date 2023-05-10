@@ -104,7 +104,7 @@
   vars:
     name: "{{ container_name }}"
     workload: deployment
-    image: "wtgopstools.azurecr.io/dante/haproxy:{{ instance.haproxy_version }}-{{ instance.haproxy_os }}"
+    image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_version }}-{{ container.haproxy_os }}"
     startup_command: >-
       -f /etc/haproxy/{{ clustered_instance_name }}.cfg
     restart: never

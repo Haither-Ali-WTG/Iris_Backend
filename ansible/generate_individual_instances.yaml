@@ -74,10 +74,12 @@
             | combine(hostvars[inventory_hostname][item] | default({}), recursive=true)
           }}
       loop:
-        - instance
+        - container
+        - global_
         - stats
+        - defaults
+        - frontend
         - cipher
-        - proxy
         - timeouts
 
     - name: Combine ciphers from all profiles
@@ -94,7 +96,7 @@
           [
             {{ stats.ports.web }},
             {% if not simulation %}
-            {% for port in proxy.ports.http.plaintext %}
+            {% for port in frontend.ports.http.plaintext %}
             {{ port }},
             {% endfor %}
             {% else %}
@@ -106,7 +108,7 @@
           ]
         port_prealloc_pairs: >-
           [
-            {% for item in instance.port_prealloc %}
+            {% for item in container.port_prealloc %}
             {% if item is string and '-' in item %}
             {{ item | split('-') | map('int') }},
             {% else %}
@@ -128,21 +130,21 @@
         all_port_map: >-
           {
             {% for host_port in all_host_ports %}
-            {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
+            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
             {% endfor %}
           }
         docker_port_map: >-
           {
             {% for host_port in ports_to_map_individually %}
-            {{ host_port }}: {{ instance.port_map.get(host_port, host_port) }},
+            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
             {% endfor %}
 
-            {% for prealloc in instance.port_prealloc %}
+            {% for prealloc in container.port_prealloc %}
             {{ prealloc }}: {{ prealloc }},
             {% endfor %}
           }
         bad_ports: >-
-          {{ ports_in_prealloc | intersect(instance.port_map) }}
+          {{ ports_in_prealloc | intersect(container.port_map) }}
 
     - name: Check for port map and port preallocation conflict
       assert:

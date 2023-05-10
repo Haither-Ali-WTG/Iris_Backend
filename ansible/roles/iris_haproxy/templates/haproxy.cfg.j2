@@ -17,8 +17,8 @@ daemon
 # Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
 # which uses 32 processes (and no nbthread setting).
 
-nbproc {{ instance.processes | default(1) }}
-nbthread {{ instance.threads | default(8) }}
+nbproc {{ global_.processes | default(1) }}
+nbthread {{ global_.threads | default(8) }}
 
 # Logging directive; in some cases, we need to extend the log line length to 4096.
 
@@ -43,7 +43,7 @@ ssl-server-verify none
 
 # Various other settings, mostly uniform although maxconn is sometimes higher.
 
-maxconn {{ instance.maxconn | default(200000) }}
+maxconn {{ global_.maxconn | default(200000) }}
 stats socket {{ stats.ports.file }} mode 660 expose-fd listeners level admin
 server-state-file /var/run/haproxy/global-state
 stats socket 127.0.0.1:{{ stats.ports.socket }} level admin
@@ -55,7 +55,7 @@ defaults
 #########
 
 # Mode http or tcp:
-mode    {{ proxy.mode }}
+mode    {{ defaults.mode }}
 
 
 # Timeouts; we will configure these by profiles, potentially with overrides
@@ -71,9 +71,9 @@ timeout tarpit          {{ "%4d" | format(timeouts.tarpit) }}s
 
 # Proxying options, including balance leastconn vs roundrobin and the like.
 
-fullconn {{ proxy.fullconn }}
+fullconn {{ defaults.fullconn }}
 option redispatch
-balance {{ proxy.balance }}
+balance {{ defaults.balance }}
 option forwardfor
 option allbackups
 retries 3
@@ -90,8 +90,8 @@ dynamic-cookie-key WTGLB
 
 # Logging configuration
 log global
-{% if proxy.mode == 'http' %}
-log-format '{"instance_name" : "{{ instance.log_name }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
+{% if defaults.mode == 'http' %}
+log-format '{"instance_name" : "{{ defaults.log_name }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv"}'
 {% else %}
 log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s",  "Tw" : "%Tw", "Tc" : "%Tc", "Tt" : "%Tt", "termination_state" : "%ts", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl"}'
 {% endif %}
@@ -118,7 +118,7 @@ stats uri /
 #stats refresh 10s
 stats show-legends
 
-{% if instance.processes | default(1) > 1 %}
+{% if global_.processes | default(1) > 1 %}
 bind-process 1
 {% endif %}
 
@@ -136,9 +136,9 @@ bind-process 1
 
 listen l7Frontend
 #max number of connections to be sent to this frontend
-maxconn {{ proxy.maxconn }}
+maxconn {{ frontend.maxconn }}
 #needs full conn to instance the dynamic backend
-fullconn {{ proxy.fullconn }}
+fullconn {{ frontend.fullconn }}
 
 
 
@@ -158,8 +158,8 @@ capture request header user-agent len 150
 
 
 {% if not simulation %}
-bind {% for item in proxy.ports.http.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
-{% for item in proxy.ports.http.plaintext %}
+bind {% for item in frontend.ports.http.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
+{% for item in frontend.ports.http.plaintext %}
 # port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
 {% else %}
