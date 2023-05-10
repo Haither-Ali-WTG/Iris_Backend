@@ -7,9 +7,9 @@ variables:
   # ea3e77d287cb2107adf41a5c580a2f098bbe04d1
   dante_build_id: '574622'
 
-  # virgil 20230509.16
-  # Tue May  9 11:07:11 UTC 2023 -- Tue May  9 21:07:11 AEST 2023
+  # virgil 20230510.2
+  # Tue May  9 23:30:34 UTC 2023 -- Wed May 10 09:30:34 AEST 2023
   #
-  # Merged PR 11960: Eye-test Kafka remove 4,5,6 repoint 3
-  # c46d0b97520ab7f45feb53aa8dbf72f5bb154016
-  virgil_build_id: '574194'
+  # Merge pull request 11968 from virgil_python_upgrade into master
+  # 676493ebe258266ff697edbc4e18b314cf8857d0
+  virgil_build_id: '574686'
