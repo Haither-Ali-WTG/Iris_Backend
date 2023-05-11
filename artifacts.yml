@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230511.3
-  # Thu May 11 02:45:53 UTC 2023 -- Thu May 11 12:45:53 AEST 2023
+  # Dante Build Artifact 20230511.4
+  # Thu May 11 04:38:49 UTC 2023 -- Thu May 11 14:38:49 AEST 2023
   #
-  # Merged PR 11953: Dante - Xclarity change password on cmd line
-  # c649fa5f896f9d4c7661004b3f8b24e0de1b29c9
-  dante_build_id: '576003'
+  # Merged PR 11991: Added the unattended upgrades task for ubuntu security updates
+  # ed1c90df79b1b46d524d64190ac2e6e2476ad5e7
+  dante_build_id: '576097'
 
   # virgil 20230511.12
   # Thu May 11 00:43:35 UTC 2023 -- Thu May 11 10:43:35 AEST 2023
