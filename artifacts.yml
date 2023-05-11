@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230510.4
-  # Wed May 10 05:57:28 UTC 2023 -- Wed May 10 15:57:28 AEST 2023
+  # Dante Build Artifact 20230511.1
+  # Thu May 11 00:25:01 UTC 2023 -- Thu May 11 10:25:01 AEST 2023
   #
-  # Merged PR 11957: Dante - Xclarity change password policies
-  # 1a6f65c2691a9b95a41b3060e26261d5b5ceabca
-  dante_build_id: '575054'
+  # Merge pull request 12006 from dante_artifact_upgrade into master
+  # c58608d1635f72d238cc8174a0c16877c60f0dc7
+  dante_build_id: '575840'
 
-  # virgil 20230511.6
-  # Wed May 10 22:50:09 UTC 2023 -- Thu May 11 08:50:09 AEST 2023
+  # virgil 20230511.12
+  # Thu May 11 00:43:35 UTC 2023 -- Thu May 11 10:43:35 AEST 2023
   #
-  # Merged PR 11988: Rebuilding DE1 management node 3 - primary
-  # aa03d52194efef79b8b3042ae74137de09988dac
-  virgil_build_id: '575739'
+  # Merge pull request 11997 from virgil_python_upgrade into master
+  # c6b98874054912156dc08fd4dff1b25044e8be31
+  virgil_build_id: '575884'
