@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230511.2
-  # Thu May 11 01:47:10 UTC 2023 -- Thu May 11 11:47:10 AEST 2023
+  # Dante Build Artifact 20230511.3
+  # Thu May 11 02:45:53 UTC 2023 -- Thu May 11 12:45:53 AEST 2023
   #
-  # Merge pull request 11999 from dante_python_upgrade into master
-  # 001281d5d874812e73c2888b49bf204a645e4a32
-  dante_build_id: '575948'
+  # Merged PR 11953: Dante - Xclarity change password on cmd line
+  # c649fa5f896f9d4c7661004b3f8b24e0de1b29c9
+  dante_build_id: '576003'
 
   # virgil 20230511.12
   # Thu May 11 00:43:35 UTC 2023 -- Thu May 11 10:43:35 AEST 2023
