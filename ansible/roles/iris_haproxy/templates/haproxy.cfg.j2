@@ -134,7 +134,7 @@ bind-process 1
 
 
 
-listen l7Frontend
+listen {{ frontend_name }}
 #max number of connections to be sent to this frontend
 maxconn {{ frontend.maxconn }}
 #needs full conn to instance the dynamic backend
