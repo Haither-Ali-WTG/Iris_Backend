@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230512.1
-  # Thu May 11 22:31:41 UTC 2023 -- Fri May 12 08:31:41 AEST 2023
+  # Dante Build Artifact 20230512.5
+  # Fri May 12 06:27:40 UTC 2023 -- Fri May 12 16:27:40 AEST 2023
   #
-  # Merge pull request 12029 from dante_artifact_upgrade into master
-  # ab140e65ae97262021c64709838ea123ada4492e
-  dante_build_id: '576875'
+  # Merged PR 12025: Deleted ubuntu_security_unattended_upgrades
+  # 15202dd7ec24434f626e45d239d2683528812764
+  dante_build_id: '577273'
 
-  # virgil 20230511.18
-  # Thu May 11 11:52:29 UTC 2023 -- Thu May 11 21:52:29 AEST 2023
+  # virgil 20230513.2
+  # Fri May 12 16:39:02 UTC 2023 -- Sat May 13 02:39:02 AEST 2023
   #
-  # Merged PR 12034: Eye-test repoint 1.au1-test-1.kafka.wtg.ws
-  # a3046c2d0c919664825fbbe851f11251659dae77
-  virgil_build_id: '576475'
+  # Merged PR 12002: Correct 2 media agent configs
+  # 36b3ae0efb7501029cbaa96d0c515c3d51a72d8c
+  virgil_build_id: '577684'
