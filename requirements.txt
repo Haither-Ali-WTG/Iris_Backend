@@ -14,7 +14,7 @@ ansible-lint==6.16.0
     # via -r requirements.in
 argcomplete==3.0.8
     # via yq
-astroid==2.15.4
+astroid==2.15.5
     # via pylint
 attrs==23.1.0
     # via jsonschema
@@ -98,7 +98,7 @@ pathspec==0.11.1
     #   yamllint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.5.0
+platformdirs==3.5.1
     # via
     #   black
     #   pylint
