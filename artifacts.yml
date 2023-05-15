@@ -7,9 +7,9 @@ variables:
   # 15202dd7ec24434f626e45d239d2683528812764
   dante_build_id: '577273'
 
-  # virgil 20230513.2
-  # Fri May 12 16:39:02 UTC 2023 -- Sat May 13 02:39:02 AEST 2023
+  # virgil 20230515.2
+  # Sun May 14 23:08:33 UTC 2023 -- Mon May 15 09:08:33 AEST 2023
   #
-  # Merged PR 12002: Correct 2 media agent configs
-  # 36b3ae0efb7501029cbaa96d0c515c3d51a72d8c
-  virgil_build_id: '577684'
+  # Merge pull request 12056 from virgil_python_upgrade into master
+  # d69259157b91a9f29548ed28ca870a7b2a2cab2b
+  virgil_build_id: '579657'
