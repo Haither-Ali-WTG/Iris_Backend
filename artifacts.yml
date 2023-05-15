@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230512.5
-  # Fri May 12 06:27:40 UTC 2023 -- Fri May 12 16:27:40 AEST 2023
+  # Dante Build Artifact 20230515.2
+  # Mon May 15 04:06:53 UTC 2023 -- Mon May 15 14:06:53 AEST 2023
   #
-  # Merged PR 12025: Deleted ubuntu_security_unattended_upgrades
-  # 15202dd7ec24434f626e45d239d2683528812764
-  dante_build_id: '577273'
+  # Merge pull request 12053 from dante_artifact_upgrade into master
+  # 1579fe9c5f54cd70d371fc8e68677f4655c1208f
+  dante_build_id: '579904'
 
   # virgil 20230515.2
   # Sun May 14 23:08:33 UTC 2023 -- Mon May 15 09:08:33 AEST 2023
