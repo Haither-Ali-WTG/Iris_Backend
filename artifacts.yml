@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230516.2
-  # Tue May 16 02:44:26 UTC 2023 -- Tue May 16 12:44:26 AEST 2023
+  # Dante Build Artifact 20230516.3
+  # Tue May 16 05:30:57 UTC 2023 -- Tue May 16 15:30:57 AEST 2023
   #
-  # Merged PR 12064: Disabled DE1 Bucket teardown as CV indices problem.
-  # eab09f36a76b6906ef2de9a166d4606212c96942
-  dante_build_id: '580840'
+  # Merged PR 12091: Dante Simulation - Remove vars into pipeline variables
+  # 355672876f8387bb296765990cb22aff31168694
+  dante_build_id: '580998'
 
-  # virgil 20230516.6
-  # Tue May 16 01:03:49 UTC 2023 -- Tue May 16 11:03:49 AEST 2023
+  # virgil 20230516.9
+  # Tue May 16 06:47:24 UTC 2023 -- Tue May 16 16:47:24 AEST 2023
   #
-  # Merged PR 12087: Remove decommissioned eye-test records
-  # 2ae5ee5ba4da948173efd5f9a6e9d211b045c150
-  virgil_build_id: '580755'
+  # Merged PR 12093: add new os variant for cumulus s/w
+  # e84c4e18ffad246bfc446b5a0f692f7a84a46e1b
+  virgil_build_id: '581054'
