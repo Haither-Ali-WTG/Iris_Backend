@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230515.3
-  # Mon May 15 08:50:51 UTC 2023 -- Mon May 15 18:50:51 AEST 2023
+  # Dante Build Artifact 20230516.1
+  # Tue May 16 00:06:12 UTC 2023 -- Tue May 16 10:06:12 AEST 2023
   #
-  # Merged PR 12047: Create AD users before config group members
-  # 3427575ba583cd018dacc2fa34c4f3041c82cc63
-  dante_build_id: '580102'
+  # Merge pull request 12079 from dante_python_upgrade into master
+  # 300b306ff049718932c9b952a26811cbd77c9f76
+  dante_build_id: '580698'
 
   # virgil 20230516.2
   # Mon May 15 23:25:10 UTC 2023 -- Tue May 16 09:25:10 AEST 2023
