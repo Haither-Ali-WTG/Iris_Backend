@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230517.2
-  # Wed May 17 02:02:18 UTC 2023 -- Wed May 17 12:02:18 AEST 2023
+  # Dante Build Artifact 20230517.5
+  # Wed May 17 08:44:30 UTC 2023 -- Wed May 17 18:44:30 AEST 2023
   #
-  # Merge pull request 12084 from dante_artifact_upgrade into master
-  # c8559af40824e2d77521455e1297fea204093f9a
-  dante_build_id: '581854'
+  # Merge pull request 12105 from dante_python_upgrade into master
+  # abed743f924be1ca458dc3b71cf1c47c2ba7a5ab
+  dante_build_id: '582213'
 
-  # virgil 20230517.2
-  # Wed May 17 00:38:23 UTC 2023 -- Wed May 17 10:38:23 AEST 2023
+  # virgil 20230518.2
+  # Wed May 17 22:28:55 UTC 2023 -- Thu May 18 08:28:55 AEST 2023
   #
-  # Merged PR 12100: Update forwarders in us2 for test.wisecloud.zone
-  # 7b898358615e9839092ef099bdab58a55187ff88
-  virgil_build_id: '581761'
+  # Merged PR 12114: Replacing US2 management node 3 - primary
+  # 59e94a44628c48ba80ae424dcf0f647de6a4df62
+  virgil_build_id: '582733'
