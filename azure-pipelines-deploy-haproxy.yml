@@ -11,108 +11,100 @@ variables:
   - name: key_vault_name
     value: kv-wtg-dante-prod
 
+parameters:
+  - name: matrix
+    type: object
+    default:
+      - agent_dc: AU2
+        agent_hall: A
+        s3_host: au2s3-1.wtg.ws
+      - agent_dc: DE1
+        agent_hall: A
+        s3_host: de1s3-1.wtg.ws
+      - agent_dc: US2
+        agent_hall: A
+        s3_host: us2s3-1.wtg.ws
+  
 stages:
-  - stage: Deploy_Haproxy
-    pool:
-      name: dante
-      demands:
-        - WTG_DC -equals $(agent_dc)
-        - WTG_HALL -equals $(agent_hall)
-    jobs:
-      - job: Deploy_Haproxy
-        strategy:
-          matrix:
-            AU2:
-              agent_dc: AU2
-              agent_hall: A
-              s3_host: au2s3-1.wtg.ws
-            DE1:
-              agent_dc: DE1
-              agent_hall: A
-              s3_host: de1s3-1.wtg.ws
-            US2:
-              agent_dc: US2
-              agent_hall: A
-              s3_host: us2s3-1.wtg.ws
-        steps:
-          - checkout: self
-            condition: or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all'))
+  - ${{ run in matrix }} :
+    - ${{ if or(eq(run.agent_dc, variables['dc']), eq(variables['dc'], 'all')) }} :
+      - stage: Deploy_Haproxy_${{ run.agent_dc }}
+        pool:
+          name: dante
+          demands:
+            - WTG_DC -equals ${{ run.agent_dc }}
+            - WTG_HALL -equals ${{ run.agent_hall }}
+        jobs:
+          - job: Deploy_Haproxy_${{ run.agent_dc }}
+            steps:
+              - script: |
+                  set -euxo pipefail
+                  pip install -r requirements.txt
+                displayName: 'Install requirements'
 
-          - script: |
-              set -euxo pipefail
-              pip install -r requirements.txt
-            displayName: 'Install requirements'
-            condition: or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all'))
+              - script: |
+                  set -euxo pipefail
+                  test "$(Build.SourceBranchName)" = "master"
+                  cp ansible/ansible.cfg .
+                displayName: 'Prepare to run playbooks'
 
-          - script: |
-              set -euxo pipefail
-              test "$(Build.SourceBranchName)" = "master"
-              cp ansible/ansible.cfg .
-            displayName: 'Prepare to run playbooks'
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
+              - task: DownloadPipelineArtifact@2
+                displayName: 'Download dante artifact'
+                inputs:
+                  buildType: 'specific'
+                  project: 'InfrastructureAutomation'
+                  # dante build artifact pipeline Id
+                  pipeline: 26
+                  buildVersionToDownload: 'specific'
+                  buildId: '$(dante_build_id)'
+                  path: $(Build.SourcesDirectory)
 
-          - task: DownloadPipelineArtifact@2
-            displayName: 'Download dante artifact'
-            inputs:
-              buildType: 'specific'
-              project: 'InfrastructureAutomation'
-              # dante build artifact pipeline Id
-              pipeline: 26
-              buildVersionToDownload: 'specific'
-              buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
+              - task: CopyFiles@2
+                displayName: 'Merge artifacts to a single roles folder'
+                inputs:
+                  sourceFolder: nested_virt
+                  targetFolder: ansible
 
-          - task: CopyFiles@2
-            displayName: 'Merge artifacts to a single roles folder'
-            inputs:
-              sourceFolder: nested_virt
-              targetFolder: ansible
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
+              - task: AzureKeyVault@2
+                displayName: 'Get secrets from Azure KV'
+                inputs:
+                  azureSubscription: 'sc-azuredevops2dante-vaults'
+                  KeyVaultName: '$(key_vault_name)'
+                  SecretsFilter: secretAppIdDf4b4604e176
+                  RunAsPreJob: false
 
-          - task: AzureKeyVault@2
-            displayName: 'Get secrets from Azure KV'
-            inputs:
-              azureSubscription: 'sc-azuredevops2dante-vaults'
-              KeyVaultName: '$(key_vault_name)'
-              SecretsFilter: secretAppIdDf4b4604e176
-              RunAsPreJob: false
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
+              - task: Ansible@0
+                displayName: 'Check and save certificates'
+                inputs:
+                  ansibleInterface: 'agentMachine'
+                  playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
+                  inventoriesAgentMachine: 'file'
+                  inventoryFileOnAgentMachine: 'instances'
+                  failOnStdErr: false
+                  args: >-
+                    -u $(user) --diff
+                    -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                    -e="simulation=true" -e="azure_kv_name=$(cert_kv_name)"
+                    -e="target_dc=${{ run.agent_dc }}"
+                env:
+                  secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-          - task: Ansible@0
-            displayName: 'Check and save certificates'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
-              failOnStdErr: false
-              args: >-
-                -u $(user) --diff
-                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(cert_kv_name)"
-                -e="target_dc=$(agent_dc)"
-            env:
-              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
-
-          - task: Ansible@0
-            displayName: 'Deploy haproxy'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/deploy_haproxy.yml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
-              failOnStdErr: false
-              # TODO: Support other DCs
-              args: >-
-                -u $(user) --diff
-                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation="
-                -e="winrm_password=$(winrm_password)"
-                -e="s3_host=$(s3_host)"
-                -e="key_vault_name=$(key_vault_name)"
-                -e="target_dc=$(agent_dc)"
-            env:
-              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-            condition: and(succeeded(), or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all')))
+              - task: Ansible@0
+                displayName: 'Deploy haproxy'
+                inputs:
+                  ansibleInterface: 'agentMachine'
+                  playbookPathOnAgentMachine: 'ansible/deploy_haproxy.yml'
+                  inventoriesAgentMachine: 'file'
+                  inventoryFileOnAgentMachine: 'instances'
+                  failOnStdErr: false
+                  # TODO: Support other DCs
+                  args: >-
+                    -u $(user) --diff
+                    -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                    -e="simulation="
+                    -e="winrm_password=$(winrm_password)"
+                    -e="s3_host=${{ run.s3_host }}"
+                    -e="key_vault_name=$(key_vault_name)"
+                    -e="target_dc=${{ run.agent_dc }}"
+                env:
+                  secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
