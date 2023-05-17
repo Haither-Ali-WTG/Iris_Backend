@@ -111,9 +111,22 @@
         cpu: 200m
         memory: 100Mi
 
-- name: Assert no restart needed
+- name: Mark as needs-restart if needed
+  template:
+    src: needs_restart.j2
+    dest: "{{ needs_restart_marker }}"
+    mode: a=r
+  become: yes
+  when: need_restart
+
+- name: Check for needs-restart marker
+  stat:
+    path: "{{ needs_restart_marker }}"
+  register: needs_restart_stat
+
+- name: Assert no restart needed (now or on a previous run)
   assert:
-    that: not need_restart
+    that: not needs_restart_stat.stat.exists
 
 - name: Reload haproxy
   # This cannot be a handler as `include_role` is not supported in handlers

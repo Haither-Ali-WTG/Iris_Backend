@@ -1,0 +1,36 @@
+### This file is deployed by Iris ###
+
+The container {{ container_name }} needs to be deleted and recreated
+due to a change in the {{ engine }} run command line.
+
+
+{% if run_command_file.diff is defined %}
+Previous command line:
+{{ run_command_file.diff.0.before }}
+
+New command line:
+{{ run_command_file.diff.0.after }}
+{% endif %}
+
+
+Steps to delete and recreate manually:
+
+- Ensure that an outage is acceptable!
+
+- Delete the container
+
+  {{ engine }} rm -f {{ container_name }}
+
+- Start the new container:
+
+  source {{ run_command_file.dest }}
+
+- Delete this marker file:
+
+  rm {{ needs_restart_marker }}
+
+
+Alternately, rebuild the machine {{ machine_name }}
+using the "Rebuild xClarity Host" pipeline
+
+https://dev.azure.com/WTGOps/InfrastructureAutomation/_build?definitionId=37
