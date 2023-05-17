@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230517.1
-  # Wed May 17 00:39:51 UTC 2023 -- Wed May 17 10:39:51 AEST 2023
+  # Dante Build Artifact 20230517.2
+  # Wed May 17 02:02:18 UTC 2023 -- Wed May 17 12:02:18 AEST 2023
   #
-  # Merged PR 12043: Remove bucket path from the commvault after teardown
-  # b7b0d7d74f69546a068c206654679f7f9131df31
-  dante_build_id: '581764'
+  # Merge pull request 12084 from dante_artifact_upgrade into master
+  # c8559af40824e2d77521455e1297fea204093f9a
+  dante_build_id: '581854'
 
   # virgil 20230517.2
   # Wed May 17 00:38:23 UTC 2023 -- Wed May 17 10:38:23 AEST 2023
