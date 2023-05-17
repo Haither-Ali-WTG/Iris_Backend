@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230516.3
-  # Tue May 16 05:30:57 UTC 2023 -- Tue May 16 15:30:57 AEST 2023
+  # Dante Build Artifact 20230517.1
+  # Wed May 17 00:39:51 UTC 2023 -- Wed May 17 10:39:51 AEST 2023
   #
-  # Merged PR 12091: Dante Simulation - Remove vars into pipeline variables
-  # 355672876f8387bb296765990cb22aff31168694
-  dante_build_id: '580998'
+  # Merged PR 12043: Remove bucket path from the commvault after teardown
+  # b7b0d7d74f69546a068c206654679f7f9131df31
+  dante_build_id: '581764'
 
-  # virgil 20230516.9
-  # Tue May 16 06:47:24 UTC 2023 -- Tue May 16 16:47:24 AEST 2023
+  # virgil 20230517.2
+  # Wed May 17 00:38:23 UTC 2023 -- Wed May 17 10:38:23 AEST 2023
   #
-  # Merged PR 12093: add new os variant for cumulus s/w
-  # e84c4e18ffad246bfc446b5a0f692f7a84a46e1b
-  virgil_build_id: '581054'
+  # Merged PR 12100: Update forwarders in us2 for test.wisecloud.zone
+  # 7b898358615e9839092ef099bdab58a55187ff88
+  virgil_build_id: '581761'
