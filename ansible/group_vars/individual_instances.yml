@@ -3,11 +3,13 @@ individual_instance_defaults:
   defaults:
     mode: http
     log_name: "{{ inventory_hostname }}"
+    fullconn: 5000
+    balance: leastconn
+
+  global_:
     processes: 1
     threads: 8
     maxconn: 200000
-    fullconn: 5000
-    balance: leastconn
 
   container:
     haproxy_version: "2.4.19"
