@@ -1,5 +1,6 @@
 ---
 - name: Calculate individual instance settings
+  # noqa var-naming[no-jinja]  # we do, in fact, intend Jinja for the fact name
   vars:
     the_individual_instance: "{{ hostvars[inventory_hostname] }}"
     machine: "{{ hostvars[machine_name] }}"

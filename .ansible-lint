@@ -2,6 +2,8 @@
 skip_list:
   # We have over a thousand of these, won'tfix
   - fqcn-builtins  # Use FQCN for builtin actions.
+  # We have dozens of these, won'tfix
+  - var-naming[no-role-prefix]
   # The run_once rules just forbid "stragety: free" and "run_once: yes" without checking
   # that they're being used together, so they give a lot of false positives.
   - run-once[play]  # Avoid "strategy: free"
