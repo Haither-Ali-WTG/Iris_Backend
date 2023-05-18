@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230518.1
-  # Thu May 18 02:04:57 UTC 2023 -- Thu May 18 12:04:57 AEST 2023
+  # Dante Build Artifact 20230518.2
+  # Thu May 18 05:56:35 UTC 2023 -- Thu May 18 15:56:35 AEST 2023
   #
-  # Merge pull request 12130 from dante_artifact_upgrade into master
-  # e953339d2442665d73876c735dda2d8036b2bdde
-  dante_build_id: '582922'
+  # Merged PR 12092: Different cumulus version in same simulation supported
+  # bbfcb10028f893e99e4eb7acabfe59d2ba84408a
+  dante_build_id: '583078'
 
-  # virgil 20230518.2
-  # Wed May 17 22:28:55 UTC 2023 -- Thu May 18 08:28:55 AEST 2023
+  # virgil 20230518.8
+  # Thu May 18 05:57:09 UTC 2023 -- Thu May 18 15:57:09 AEST 2023
   #
-  # Merged PR 12114: Replacing US2 management node 3 - primary
-  # 59e94a44628c48ba80ae424dcf0f647de6a4df62
-  virgil_build_id: '582733'
+  # Merged PR 12139: Updated queues.yaml - Added HRM Topics for test and prod
+  # 63e40e61d7892110fb311ef7c65ce9026deccef5
+  virgil_build_id: '583081'
