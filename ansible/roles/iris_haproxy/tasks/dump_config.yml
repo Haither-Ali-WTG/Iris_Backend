@@ -1,3 +1,10 @@
 ---
 - name: Calculate and populate individual instance facts
   include_tasks: calculations.yml
+
+- name: Template out the haproxy config
+  template:
+    src: haproxy.cfg.j2
+    dest: "configs/{{ inventory_hostname }}.cfg"
+    mode: a=r
+  delegate_to: localhost
