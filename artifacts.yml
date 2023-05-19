@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230518.2
-  # Thu May 18 05:56:35 UTC 2023 -- Thu May 18 15:56:35 AEST 2023
+  # Dante Build Artifact 20230519.1
+  # Fri May 19 00:39:28 UTC 2023 -- Fri May 19 10:39:28 AEST 2023
   #
-  # Merged PR 12092: Different cumulus version in same simulation supported
-  # bbfcb10028f893e99e4eb7acabfe59d2ba84408a
-  dante_build_id: '583078'
+  # Merged PR 12137: S3 Bucket deletion, added serial: 1
+  # f53d81566d78d51e63e09b059d26056139bac94a
+  dante_build_id: '583852'
 
   # virgil 20230518.8
   # Thu May 18 05:57:09 UTC 2023 -- Thu May 18 15:57:09 AEST 2023
