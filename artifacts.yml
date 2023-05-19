@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230519.1
-  # Fri May 19 00:39:28 UTC 2023 -- Fri May 19 10:39:28 AEST 2023
+  # Dante Build Artifact 20230519.2
+  # Fri May 19 01:51:51 UTC 2023 -- Fri May 19 11:51:51 AEST 2023
   #
-  # Merged PR 12137: S3 Bucket deletion, added serial: 1
-  # f53d81566d78d51e63e09b059d26056139bac94a
-  dante_build_id: '583852'
+  # Merge pull request 12153 from dante_python_upgrade into master
+  # 04001d371059d535ac394a7e186d07647af5631a
+  dante_build_id: '583959'
 
-  # virgil 20230518.8
-  # Thu May 18 05:57:09 UTC 2023 -- Thu May 18 15:57:09 AEST 2023
+  # virgil 20230519.4
+  # Fri May 19 01:36:12 UTC 2023 -- Fri May 19 11:36:12 AEST 2023
   #
-  # Merged PR 12139: Updated queues.yaml - Added HRM Topics for test and prod
-  # 63e40e61d7892110fb311ef7c65ce9026deccef5
-  virgil_build_id: '583081'
+  # Merged PR 12161: Updated queues.yaml- Added Topics for Domestic Carrier Messaging Buss (Domest...
+  # 710a74eb1f5f5adabe597b1861dff7bf990a02da
+  virgil_build_id: '583943'
