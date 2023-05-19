@@ -36,7 +36,7 @@ stages:
         dependsOn: []
         jobs:
           - job: Deploy_Haproxy_${{ run.agent_dc }}
-            condition: or(eq(variables['agent_dc'], variables['dc']), eq(variables['dc'], 'all'))
+            condition: or(eq('${{ run.agent_dc }}', variables['dc']), eq(variables['dc'], 'all'))
             steps:
               - script: |
                   set -euxo pipefail
