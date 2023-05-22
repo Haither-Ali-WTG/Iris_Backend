@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230522.1
-  # Mon May 22 00:24:04 UTC 2023 -- Mon May 22 10:24:04 AEST 2023
+  # Dante Build Artifact 20230522.10
+  # Mon May 22 05:45:59 UTC 2023 -- Mon May 22 15:45:59 AEST 2023
   #
-  # Merged PR 12188: Move install task among others
-  # 8deb27d30e86e7c5e6f951da397a84fd1173de1a
-  dante_build_id: '586634'
+  # Merge pull request 12200 from dante_artifact_upgrade into master
+  # 31ff559defff2584aadbb07c3e31131832c59412
+  dante_build_id: '586996'
 
   # virgil 20230522.2
   # Mon May 22 03:39:54 UTC 2023 -- Mon May 22 13:39:54 AEST 2023
