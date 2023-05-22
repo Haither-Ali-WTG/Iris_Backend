@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230519.5
-  # Fri May 19 05:53:39 UTC 2023 -- Fri May 19 15:53:39 AEST 2023
+  # Dante Build Artifact 20230522.1
+  # Mon May 22 00:24:04 UTC 2023 -- Mon May 22 10:24:04 AEST 2023
   #
-  # Merged PR 12147: Dante - Hide dante agent secret from log
-  # 3d8d415227feb3d0c327258ddd40b2d78913beb4
-  dante_build_id: '584179'
+  # Merged PR 12188: Move install task among others
+  # 8deb27d30e86e7c5e6f951da397a84fd1173de1a
+  dante_build_id: '586634'
 
   # virgil 20230519.8
   # Fri May 19 05:09:46 UTC 2023 -- Fri May 19 15:09:46 AEST 2023
