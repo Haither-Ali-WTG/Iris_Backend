@@ -7,9 +7,9 @@ variables:
   # 8deb27d30e86e7c5e6f951da397a84fd1173de1a
   dante_build_id: '586634'
 
-  # virgil 20230519.8
-  # Fri May 19 05:09:46 UTC 2023 -- Fri May 19 15:09:46 AEST 2023
+  # virgil 20230522.2
+  # Mon May 22 03:39:54 UTC 2023 -- Mon May 22 13:39:54 AEST 2023
   #
-  # Merged PR 12168: addapex195&196
-  # c334b0b690013e6e486eb9874d7ca1441d77b29c
-  virgil_build_id: '584138'
+  # Merged PR 12007: Added telegraf for DE1 all k8s nodes
+  # a9dfdc8e3cd47bb835983121f6ec8ae466f8be33
+  virgil_build_id: '586851'
