@@ -7,9 +7,9 @@ variables:
   # 31ff559defff2584aadbb07c3e31131832c59412
   dante_build_id: '586996'
 
-  # virgil 20230522.2
-  # Mon May 22 03:39:54 UTC 2023 -- Mon May 22 13:39:54 AEST 2023
+  # virgil 20230523.2
+  # Mon May 22 23:46:23 UTC 2023 -- Tue May 23 09:46:23 AEST 2023
   #
-  # Merged PR 12007: Added telegraf for DE1 all k8s nodes
-  # a9dfdc8e3cd47bb835983121f6ec8ae466f8be33
-  virgil_build_id: '586851'
+  # Merge pull request 12212 from virgil_python_upgrade into master
+  # c79d2be59b862a0529fd6cc685043ea5798fb7fa
+  virgil_build_id: '587743'
