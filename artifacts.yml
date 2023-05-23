@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230522.10
-  # Mon May 22 05:45:59 UTC 2023 -- Mon May 22 15:45:59 AEST 2023
+  # Dante Build Artifact 20230523.6
+  # Tue May 23 02:02:50 UTC 2023 -- Tue May 23 12:02:50 AEST 2023
   #
-  # Merge pull request 12200 from dante_artifact_upgrade into master
-  # 31ff559defff2584aadbb07c3e31131832c59412
-  dante_build_id: '586996'
+  # Merged PR 12225: Roles for Hyperv VMs build
+  # 6df893a98f645e9a8079c81e5d255b6b477133c7
+  dante_build_id: '587896'
 
   # virgil 20230523.2
   # Mon May 22 23:46:23 UTC 2023 -- Tue May 23 09:46:23 AEST 2023
