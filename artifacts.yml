@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230524.4
-  # Wed May 24 03:23:08 UTC 2023 -- Wed May 24 13:23:08 AEST 2023
+  # Dante Build Artifact 20230524.5
+  # Wed May 24 04:41:32 UTC 2023 -- Wed May 24 14:41:32 AEST 2023
   #
-  # Merged PR 12259: Roles added for standalone_hypervisor
-  # c40070ad6a0e0a74df6bf7c058fbb4f36d52ed5d
-  dante_build_id: '589094'
+  # Merged PR 12179: Refactoring JEA Setup to temporarily limit to simulation only
+  # 21c9a1990e2b6e35d6c6448f13b44a7811964361
+  dante_build_id: '589165'
 
   # virgil 20230524.4
   # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
