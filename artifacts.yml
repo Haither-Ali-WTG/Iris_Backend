@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230524.7
-  # Wed May 24 05:51:59 UTC 2023 -- Wed May 24 15:51:59 AEST 2023
+  # Dante Build Artifact 20230524.8
+  # Wed May 24 11:39:56 UTC 2023 -- Wed May 24 21:39:56 AEST 2023
   #
-  # Merge pull request 12217 from dante_python_upgrade into master
-  # e8638a8ccc7f87ca9718571c6f3d55146d11cfa0
-  dante_build_id: '589229'
+  # Merged PR 12149: Add AD groups for HyperV host in simulation env
+  # 9c677e8f77ab324d8ae47b4cb7e33ecba4c3a887
+  dante_build_id: '589506'
 
   # virgil 20230524.4
   # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
