@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230524.5
-  # Wed May 24 04:41:32 UTC 2023 -- Wed May 24 14:41:32 AEST 2023
+  # Dante Build Artifact 20230524.7
+  # Wed May 24 05:51:59 UTC 2023 -- Wed May 24 15:51:59 AEST 2023
   #
-  # Merged PR 12179: Refactoring JEA Setup to temporarily limit to simulation only
-  # 21c9a1990e2b6e35d6c6448f13b44a7811964361
-  dante_build_id: '589165'
+  # Merge pull request 12217 from dante_python_upgrade into master
+  # e8638a8ccc7f87ca9718571c6f3d55146d11cfa0
+  dante_build_id: '589229'
 
   # virgil 20230524.4
   # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
