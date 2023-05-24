@@ -67,7 +67,6 @@ clustered_instances:
       iis_servers: []
       certificates:
         - star-wisetechglobal-com
-        - star-wisetechglobal-cn
         - star-wtg-zone
       stats:
         ports:
