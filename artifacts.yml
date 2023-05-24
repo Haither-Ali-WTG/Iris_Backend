@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230524.2
-  # Wed May 24 00:28:13 UTC 2023 -- Wed May 24 10:28:13 AEST 2023
+  # Dante Build Artifact 20230524.4
+  # Wed May 24 03:23:08 UTC 2023 -- Wed May 24 13:23:08 AEST 2023
   #
-  # Merged PR 12253: replace-nclu-module-use-with-net-show-cumulus
-  # 8541222c32d696f9b2755f57ad973213d651b084
-  dante_build_id: '588940'
+  # Merged PR 12259: Roles added for standalone_hypervisor
+  # c40070ad6a0e0a74df6bf7c058fbb4f36d52ed5d
+  dante_build_id: '589094'
 
   # virgil 20230524.4
   # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
