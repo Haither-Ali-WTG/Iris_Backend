@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230523.8
-  # Tue May 23 05:57:27 UTC 2023 -- Tue May 23 15:57:27 AEST 2023
+  # Dante Build Artifact 20230524.2
+  # Wed May 24 00:28:13 UTC 2023 -- Wed May 24 10:28:13 AEST 2023
   #
-  # Merge pull request 12221 from dante_artifact_upgrade into master
-  # 9078fab054d9e5a5e2a80d511df249d2c9aa0783
-  dante_build_id: '588114'
+  # Merged PR 12253: replace-nclu-module-use-with-net-show-cumulus
+  # 8541222c32d696f9b2755f57ad973213d651b084
+  dante_build_id: '588940'
 
   # virgil 20230524.4
   # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
