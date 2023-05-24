@@ -7,9 +7,9 @@ variables:
   # 9078fab054d9e5a5e2a80d511df249d2c9aa0783
   dante_build_id: '588114'
 
-  # virgil 20230524.2
-  # Tue May 23 22:33:24 UTC 2023 -- Wed May 24 08:33:24 AEST 2023
+  # virgil 20230524.4
+  # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
   #
-  # Merged PR 12252: Remove deprecated vRops remote collectors
-  # 5eb9f83a9795203c69f2f8d9ebff61e509ea20de
-  virgil_build_id: '588804'
+  # Merge pull request 12254 from virgil_python_upgrade into master
+  # d3c3ef8eedec244cf0a2672331d2559c340ec33a
+  virgil_build_id: '588896'
