@@ -26,3 +26,16 @@ au2-prod-frontend-1:
       # TODO: when we get the third machine, it'll be first in the priority for .139;
       # compare DE1 and US2
       priority: [au2lbl00345, au2lbl00346]
+au2-sand-internal-1:
+  machines:
+    au2lbl00345: ~
+    au2lbl00346: ~
+  floating_ips:
+    - description: webservices (SAND)
+      ip: 10.2.136.137
+      preempt: no
+      priority: [au2lbl00416, au2lbl00417]
+    - description: webservices
+      ip: 10.2.136.138
+      preempt: yes
+      priority: [au2lbl00417, au2lbl00416]

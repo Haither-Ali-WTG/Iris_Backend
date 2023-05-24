@@ -54,3 +54,22 @@ clustered_instances:
         ports:
           web: 2037
           socket: 2036
+
+    au2sandinternal1:
+      # per-clustered-instance settings (overrides) go here, for example:
+      frontend:
+        maxconn: 20000
+        ports:
+          http:
+            plaintext: [2007]
+            ssl: [2008]
+      machine_cluster: au2-sand-internal-1
+      iis_servers: []
+      certificates:
+        - star-wisetechglobal-com
+        - star-wisetechglobal-cn
+        - star-wtg-zone
+      stats:
+        ports:
+          web: 2047
+          socket: 2046
