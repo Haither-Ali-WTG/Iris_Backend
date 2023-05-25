@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230525.8
-  # Thu May 25 02:32:57 UTC 2023 -- Thu May 25 12:32:57 AEST 2023
+  # Dante Build Artifact 20230525.10
+  # Thu May 25 06:21:36 UTC 2023 -- Thu May 25 16:21:36 AEST 2023
   #
-  # Merged PR 12284: Run Register JEA task fully async and wait for its status later
-  # e8e3a54f13f3c90c6db8be72e2cfe3a9e45c57f0
-  dante_build_id: '590147'
+  # Merged PR 12312: Configure NVUE on Cumulus 5.2.1
+  # a619703281c6d566c60ee8e08c5dfa6d04820c56
+  dante_build_id: '590348'
 
-  # virgil 20230525.2
-  # Thu May 25 00:14:15 UTC 2023 -- Thu May 25 10:14:15 AEST 2023
+  # virgil 20230526.3
+  # Thu May 25 22:56:11 UTC 2023 -- Fri May 26 08:56:11 AEST 2023
   #
-  # Merge pull request 12291 from virgil_python_upgrade into master
-  # cb8159d5559820c4c466776b6240c4d9f11545af
-  virgil_build_id: '589988'
+  # Merged PR 12228: changed cumulus to cumulus521 for au2nsl00195/196
+  # d6f1f3c907ab9e8e52eb1e3f48a5bbcaa3f3e2db
+  virgil_build_id: '591000'
