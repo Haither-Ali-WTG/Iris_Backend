@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230525.1
-  # Thu May 25 00:15:18 UTC 2023 -- Thu May 25 10:15:18 AEST 2023
+  # Dante Build Artifact 20230525.8
+  # Thu May 25 02:32:57 UTC 2023 -- Thu May 25 12:32:57 AEST 2023
   #
-  # Merged PR 12283: change ifupdown validation to variable check for switch primary/oob interface configuration
-  # f7471de6463d0b4de236febcd5d88c5cb028c53f
-  dante_build_id: '589993'
+  # Merged PR 12284: Run Register JEA task fully async and wait for its status later
+  # e8e3a54f13f3c90c6db8be72e2cfe3a9e45c57f0
+  dante_build_id: '590147'
 
   # virgil 20230525.2
   # Thu May 25 00:14:15 UTC 2023 -- Thu May 25 10:14:15 AEST 2023
