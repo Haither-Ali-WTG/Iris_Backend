@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230524.8
-  # Wed May 24 11:39:56 UTC 2023 -- Wed May 24 21:39:56 AEST 2023
+  # Dante Build Artifact 20230525.1
+  # Thu May 25 00:15:18 UTC 2023 -- Thu May 25 10:15:18 AEST 2023
   #
-  # Merged PR 12149: Add AD groups for HyperV host in simulation env
-  # 9c677e8f77ab324d8ae47b4cb7e33ecba4c3a887
-  dante_build_id: '589506'
+  # Merged PR 12283: change ifupdown validation to variable check for switch primary/oob interface configuration
+  # f7471de6463d0b4de236febcd5d88c5cb028c53f
+  dante_build_id: '589993'
 
-  # virgil 20230524.4
-  # Tue May 23 23:41:12 UTC 2023 -- Wed May 24 09:41:12 AEST 2023
+  # virgil 20230525.2
+  # Thu May 25 00:14:15 UTC 2023 -- Thu May 25 10:14:15 AEST 2023
   #
-  # Merge pull request 12254 from virgil_python_upgrade into master
-  # d3c3ef8eedec244cf0a2672331d2559c340ec33a
-  virgil_build_id: '588896'
+  # Merge pull request 12291 from virgil_python_upgrade into master
+  # cb8159d5559820c4c466776b6240c4d9f11545af
+  virgil_build_id: '589988'
