@@ -7,9 +7,9 @@ variables:
   # a619703281c6d566c60ee8e08c5dfa6d04820c56
   dante_build_id: '590348'
 
-  # virgil 20230526.3
-  # Thu May 25 22:56:11 UTC 2023 -- Fri May 26 08:56:11 AEST 2023
+  # virgil 20230526.5
+  # Thu May 25 23:56:07 UTC 2023 -- Fri May 26 09:56:07 AEST 2023
   #
-  # Merged PR 12228: changed cumulus to cumulus521 for au2nsl00195/196
-  # d6f1f3c907ab9e8e52eb1e3f48a5bbcaa3f3e2db
-  virgil_build_id: '591000'
+  # Merge pull request 12317 from virgil_python_upgrade into master
+  # 174958f756f9e05bf0ccc2f52e7e3a06c3b4af98
+  virgil_build_id: '591048'
