@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230525.10
-  # Thu May 25 06:21:36 UTC 2023 -- Thu May 25 16:21:36 AEST 2023
+  # Dante Build Artifact 20230526.5
+  # Fri May 26 06:34:07 UTC 2023 -- Fri May 26 16:34:07 AEST 2023
   #
-  # Merged PR 12312: Configure NVUE on Cumulus 5.2.1
-  # a619703281c6d566c60ee8e08c5dfa6d04820c56
-  dante_build_id: '590348'
+  # Merged PR 12146: Dante - Remove exception for AU mgmt hosts frr deployment
+  # 71735949eed153d575b4cfc0997e5da375f0dd0e
+  dante_build_id: '591418'
 
-  # virgil 20230526.5
-  # Thu May 25 23:56:07 UTC 2023 -- Fri May 26 09:56:07 AEST 2023
+  # virgil 20230529.4
+  # Sun May 28 22:45:54 UTC 2023 -- Mon May 29 08:45:54 AEST 2023
   #
-  # Merge pull request 12317 from virgil_python_upgrade into master
-  # 174958f756f9e05bf0ccc2f52e7e3a06c3b4af98
-  virgil_build_id: '591048'
+  # Merged PR 12342: added two networks for Xware
+  # a675fd4b487370b464b93ecac856333e86cba955
+  virgil_build_id: '593752'
