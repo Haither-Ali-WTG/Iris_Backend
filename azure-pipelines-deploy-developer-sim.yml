@@ -43,6 +43,19 @@ stages:
             displayName: 'Prepare to run playbooks'
 
           - task: DownloadPipelineArtifact@2
+            displayName: 'Download Virgil inventories'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # virgil pipeline Id
+              pipeline: 4
+              artifact: inventories
+              buildVersionToDownload: 'specific'
+              buildId: '$(virgil_build_id)'
+              path: $(Build.SourcesDirectory)/inventories
+              patterns: all_ssh_authorized_keys
+
+          - task: DownloadPipelineArtifact@2
             displayName: 'Download dante artifact'
             inputs:
               buildType: 'specific'
@@ -52,6 +65,7 @@ stages:
               buildVersionToDownload: 'specific'
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
+              patterns: nested_virt
 
           - task: CopyFiles@2
             displayName: 'Merge artifacts to a single roles folder'
