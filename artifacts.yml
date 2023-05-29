@@ -5,7 +5,7 @@ variables:
   #
   # Merged PR 12146: Dante - Remove exception for AU mgmt hosts frr deployment
   # 71735949eed153d575b4cfc0997e5da375f0dd0e
-  dante_build_id: '593982'
+  dante_build_id: '593984'
 
   # virgil 20230529.4
   # Sun May 28 22:45:54 UTC 2023 -- Mon May 29 08:45:54 AEST 2023
