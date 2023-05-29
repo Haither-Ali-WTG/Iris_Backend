@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230529.9
-  # Mon May 29 04:14:04 UTC 2023 -- Mon May 29 14:14:04 AEST 2023
+  # Dante Build Artifact 20230529.10
+  # Mon May 29 07:22:28 UTC 2023 -- Mon May 29 17:22:28 AEST 2023
   #
-  # Merged PR 12332: qcow2 builder migrated to standalone-hypervisors
-  # 9d415a0ed25085d1bd2bd807a7d727fd8d364fe3
-  dante_build_id: '594017'
+  # Merged PR 12148: Change the connection info after joined AD
+  # 5d6cd4d6582ab681f4a2447d9a8386884fe07e83
+  dante_build_id: '594192'
 
-  # virgil 20230529.4
-  # Sun May 28 22:45:54 UTC 2023 -- Mon May 29 08:45:54 AEST 2023
+  # virgil 20230530.2
+  # Mon May 29 23:08:54 UTC 2023 -- Tue May 30 09:08:54 AEST 2023
   #
-  # Merged PR 12342: added two networks for Xware
-  # a675fd4b487370b464b93ecac856333e86cba955
-  virgil_build_id: '593752'
+  # Merged PR 12136: Add Hyper-V hosts for AU2 SAND
+  # cc1dfee71c6f1ab54293db5f4aa62976255e3a00
+  virgil_build_id: '594806'
