@@ -12,4 +12,4 @@ variables:
   #
   # Merged PR 12342: added two networks for Xware
   # a675fd4b487370b464b93ecac856333e86cba955
-  virgil_build_id: '593955'
+  virgil_build_id: '593973'
