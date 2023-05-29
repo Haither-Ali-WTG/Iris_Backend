@@ -61,7 +61,9 @@ stages:
 
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
-            inputs:secretCephSecretKeyAU2
+            inputs:
+              knownHostsEntry: 'StrictHostKeyChecking no'
+              sshKeySecureFile: 'id_rsa'
 
           - task: Ansible@0
             displayName: 'Calculate simulation host to use'
