@@ -61,9 +61,7 @@ stages:
 
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
-            inputs:
-              knownHostsEntry: 'StrictHostKeyChecking no'
-              sshKeySecureFile: 'id_rsa'
+            inputs:secretCephSecretKeyAU2
 
           - task: Ansible@0
             displayName: 'Calculate simulation host to use'
@@ -87,7 +85,7 @@ stages:
                 -u $(user) --diff -e="pool=/mnt/data1/test_pool"
                 -e="@ansible/hypervisor.yaml" -e="@ansible/build_id.yaml"
                 -e="use_cicd_pool=$(use_cicd_pool)"
-                -e="key_vault_name=$(key_vault_name)"
+                -e="key_vault_name=$(mgmt_keyvault_name)"
                 -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
             env:
