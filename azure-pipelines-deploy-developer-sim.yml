@@ -88,6 +88,7 @@ stages:
                 -e="@ansible/hypervisor.yaml" -e="@ansible/build_id.yaml"
                 -e="use_cicd_pool=$(use_cicd_pool)"
                 -e="key_vault_name=$(key_vault_name)"
+                -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
