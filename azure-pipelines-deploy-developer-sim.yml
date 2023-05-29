@@ -79,7 +79,7 @@ stages:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/simulation_setup_circle1.yaml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'inventories/simulation-$(simulation_dc)-$(hall).yaml'
+              inventoryFileOnAgentMachine: 'instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff -e="pool=/mnt/data1/test_pool"
