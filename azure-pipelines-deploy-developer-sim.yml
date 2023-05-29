@@ -103,6 +103,7 @@ stages:
                 -e="key_vault_name=$(mgmt_keyvault_name)"
                 -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
+                -e="skip_configure_firewall=True"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
