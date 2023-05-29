@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230529.1
-  # Mon May 29 00:04:08 UTC 2023 -- Mon May 29 10:04:08 AEST 2023
+  # Dante Build Artifact 20230529.2
+  # Mon May 29 01:29:04 UTC 2023 -- Mon May 29 11:29:04 AEST 2023
   #
-  # Merge pull request 12348 from dante_artifact_upgrade into master
-  # ecb5215c78bacf73255f28f2adc07172e0ee31c7
-  dante_build_id: '593808'
+  # Merged PR 12328: Addef files needed for developer simulation
+  # 3d0914c6f7755c1731a75d6490cc75ea463fdf65
+  dante_build_id: '593871'
 
   # virgil 20230529.4
   # Sun May 28 22:45:54 UTC 2023 -- Mon May 29 08:45:54 AEST 2023
