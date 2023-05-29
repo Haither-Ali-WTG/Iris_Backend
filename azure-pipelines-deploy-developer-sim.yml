@@ -23,6 +23,8 @@ stages:
     jobs:
       - job: Simulation
         steps:
+          - checkout: self
+
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
             inputs:
