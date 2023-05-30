@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230530.1
-  # Tue May 30 00:01:42 UTC 2023 -- Tue May 30 10:01:42 AEST 2023
+  # Dante Build Artifact 20230530.3
+  # Tue May 30 03:15:27 UTC 2023 -- Tue May 30 13:15:27 AEST 2023
   #
-  # Merged PR 12355: Roles needed for Iris developer simulation
-  # 5dec360116ecb2c3862ec5339c4dcaf6285de3f3
-  dante_build_id: '594871'
+  # Merged PR 12341: Update styx image to add new_host field
+  # 99bdad63ddf5edd6e7368983b392b412938f3b37
+  dante_build_id: '595042'
 
-  # virgil 20230530.2
-  # Mon May 29 23:08:54 UTC 2023 -- Tue May 30 09:08:54 AEST 2023
+  # virgil 20230530.6
+  # Tue May 30 01:05:39 UTC 2023 -- Tue May 30 11:05:39 AEST 2023
   #
-  # Merged PR 12136: Add Hyper-V hosts for AU2 SAND
-  # cc1dfee71c6f1ab54293db5f4aa62976255e3a00
-  virgil_build_id: '594806'
+  # Merged PR 12208: Telegraf - Remove the word test as it is ready for prod
+  # 31b3949699c19992ec2d526888fcbad09821cfcf
+  virgil_build_id: '594939'
