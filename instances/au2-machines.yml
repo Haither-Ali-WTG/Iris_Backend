@@ -9,3 +9,11 @@ machines:
       ansible_host: 10.2.64.22
       os: ubuntu
       dc: AU2
+    au2lbl00416:
+      ansible_host: 10.2.136.11
+      os: ubuntu
+      dc: AU2
+    au2lbl00417:
+      ansible_host: 10.2.136.12
+      os: ubuntu
+      dc: AU2
