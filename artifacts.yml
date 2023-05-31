@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230531.1
-  # Wed May 31 00:32:41 UTC 2023 -- Wed May 31 10:32:41 AEST 2023
+  # Dante Build Artifact 20230531.2
+  # Wed May 31 01:58:09 UTC 2023 -- Wed May 31 11:58:09 AEST 2023
   #
-  # Merged PR 12373: Copy config to work dir separately
-  # c2057f855606ebc86ad2138f367bb09ebd3822cd
-  dante_build_id: '595918'
+  # Merge pull request 12385 from dante_python_upgrade into master
+  # dcb723857657b5c495ef105331d6d9bdbdd96f29
+  dante_build_id: '596007'
 
   # virgil 20230530.6
   # Tue May 30 01:05:39 UTC 2023 -- Tue May 30 11:05:39 AEST 2023
