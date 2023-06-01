@@ -7,9 +7,9 @@ variables:
   # 378e6c219a50fce0c4849e302a30e3671de9c0ea
   dante_build_id: '596377'
 
-  # virgil 20230530.6
-  # Tue May 30 01:05:39 UTC 2023 -- Tue May 30 11:05:39 AEST 2023
+  # virgil 20230601.4
+  # Thu Jun  1 03:10:58 UTC 2023 -- Thu Jun  1 13:10:58 AEST 2023
   #
-  # Merged PR 12208: Telegraf - Remove the word test as it is ready for prod
-  # 31b3949699c19992ec2d526888fcbad09821cfcf
-  virgil_build_id: '594939'
+  # Merged PR 11941: Update teardown list
+  # 81ea723f75af05c4cb2d701369f19224111466d7
+  virgil_build_id: '597168'
