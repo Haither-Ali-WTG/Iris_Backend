@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230531.5
-  # Wed May 31 08:56:46 UTC 2023 -- Wed May 31 18:56:46 AEST 2023
+  # Dante Build Artifact 20230601.1
+  # Thu Jun  1 05:38:37 UTC 2023 -- Thu Jun  1 15:38:37 AEST 2023
   #
-  # Merged PR 12316: Update uwsgi in styx
-  # 378e6c219a50fce0c4849e302a30e3671de9c0ea
-  dante_build_id: '596377'
+  # Merge pull request 12404 from dante_python_upgrade into master
+  # cca26351ceb26f926b02a2f7128fda2c6ce1fa1c
+  dante_build_id: '597297'
 
-  # virgil 20230601.4
-  # Thu Jun  1 03:10:58 UTC 2023 -- Thu Jun  1 13:10:58 AEST 2023
+  # virgil 20230601.7
+  # Thu Jun  1 04:54:17 UTC 2023 -- Thu Jun  1 14:54:17 AEST 2023
   #
-  # Merged PR 11941: Update teardown list
-  # 81ea723f75af05c4cb2d701369f19224111466d7
-  virgil_build_id: '597168'
+  # Merged PR 12368: New-vlan-for-corp-sql
+  # 8ba0663902208346f62235ab6cadfa7d37e278d5
+  virgil_build_id: '597257'
