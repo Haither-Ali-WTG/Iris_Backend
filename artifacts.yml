@@ -7,9 +7,9 @@ variables:
   # 272767ca46e9cadd1a49c285fe47b2d3bf561174
   dante_build_id: '597401'
 
-  # virgil 20230601.7
-  # Thu Jun  1 04:54:17 UTC 2023 -- Thu Jun  1 14:54:17 AEST 2023
+  # virgil 20230602.6
+  # Thu Jun  1 23:33:09 UTC 2023 -- Fri Jun  2 09:33:09 AEST 2023
   #
-  # Merged PR 12368: New-vlan-for-corp-sql
-  # 8ba0663902208346f62235ab6cadfa7d37e278d5
-  virgil_build_id: '597257'
+  # Merge pull request 12383 from virgil_python_upgrade into master
+  # d7d94cd8b8ed4aacb3a0cc3f33f3f81c3899b263
+  virgil_build_id: '598010'
