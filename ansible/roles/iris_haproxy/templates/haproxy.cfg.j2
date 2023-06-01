@@ -118,6 +118,8 @@ stats uri /
 #stats refresh 10s
 stats show-legends
 
+http-request use-service prometheus-exporter if { path /metrics }
+
 {% if global_.processes | default(1) > 1 %}
 bind-process 1
 {% endif %}
