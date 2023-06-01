@@ -6,7 +6,8 @@
     use_proxy: 'no'
     url: >-
       http{{ 's' if item.ssl else '' }}://{{ item.host }}:{{
-        haproxy_https_port if item.ssl else haproxy_http_port }}{{ item.path }}
+        simulation_ports.http.ssl[0] if item.ssl else simulation_ports.http.plaintext[0]
+      }}{{ item.path }}
     method: GET
     headers:
       Host: "{{ item.host }}"

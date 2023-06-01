@@ -1,20 +1,4 @@
 ---
-- name: Calculate individual instance settings
-  # noqa var-naming[no-jinja]  # we do, in fact, intend Jinja for the fact name
-  vars:
-    the_individual_instance: "{{ hostvars[inventory_hostname] }}"
-    machine: "{{ hostvars[machine_name] }}"
-    clustered_instance: "{{ hostvars[clustered_instance_name] }}"
-  set_fact:
-    "{{ item }}": >-
-      {{
-        the_individual_instance[item]
-        | combine(clustered_instance[item] | default({}), recursive=true)
-        | combine(machine[item] | default({}), recursive=true)
-        | combine(clustered_instance_machine_overrides[item] | default({}), recursive=true)
-      }}
-  loop: [container, global_, stats, defaults, frontend, cipher, timeouts]
-
 - name: Calculate individual instance facts
   vars:
     frontend_names:
