@@ -7,9 +7,9 @@ variables:
   # fcca980c67a58a91494ad24aff16c3609ef32206
   dante_build_id: '598737'
 
-  # virgil 20230602.9
-  # Fri Jun  2 03:35:59 UTC 2023 -- Fri Jun  2 13:35:59 AEST 2023
+  # virgil 20230605.2
+  # Sun Jun  4 23:16:42 UTC 2023 -- Mon Jun  5 09:16:42 AEST 2023
   #
-  # Merged PR 12425: Adding new leaf and apex switches to pod 1
-  # a2e87382934d40eb7d52a17cf7684ec90dcbfb27
-  virgil_build_id: '598235'
+  # Merge pull request 12450 from virgil_python_upgrade into master
+  # d98006f662ed12f66f6ab102830129c2a62add54
+  virgil_build_id: '600780'
