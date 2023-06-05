@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230605.1
-  # Mon Jun  5 01:05:43 UTC 2023 -- Mon Jun  5 11:05:43 AEST 2023
+  # Dante Build Artifact 20230605.4
+  # Mon Jun  5 04:44:31 UTC 2023 -- Mon Jun  5 14:44:31 AEST 2023
   #
-  # Merged PR 12456: Ack CVE-2023-30861 - session handling in flask
-  # 064cd421527240eab16bb44a2345c12a77354ba2
-  dante_build_id: '600873'
+  # Merged PR 11822: WI00548368 Automate SSL Certificate Renewal
+  # 0bf51aa5b7c7848e63f4cb12575807e989bfd26f
+  dante_build_id: '601084'
 
-  # virgil 20230605.2
-  # Sun Jun  4 23:16:42 UTC 2023 -- Mon Jun  5 09:16:42 AEST 2023
+  # virgil 20230605.12
+  # Mon Jun  5 04:08:10 UTC 2023 -- Mon Jun  5 14:08:10 AEST 2023
   #
-  # Merge pull request 12450 from virgil_python_upgrade into master
-  # d98006f662ed12f66f6ab102830129c2a62add54
-  virgil_build_id: '600780'
+  # Merged PR 12464: Pin ruamel.yaml to 0.17.28
+  # 8055255051f61dcc151753033950877b1ad3ef43
+  virgil_build_id: '601038'
