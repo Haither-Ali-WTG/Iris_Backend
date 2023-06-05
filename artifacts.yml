@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230605.4
-  # Mon Jun  5 04:44:31 UTC 2023 -- Mon Jun  5 14:44:31 AEST 2023
+  # Dante Build Artifact 20230606.1
+  # Mon Jun  5 14:50:10 UTC 2023 -- Tue Jun  6 00:50:10 AEST 2023
   #
-  # Merged PR 11822: WI00548368 Automate SSL Certificate Renewal
-  # 0bf51aa5b7c7848e63f4cb12575807e989bfd26f
-  dante_build_id: '601084'
+  # Merge pull request 12452 from dante_python_upgrade into master
+  # 2be4194be2542c41e3fb629d8c1d802dc3275b07
+  dante_build_id: '601517'
 
   # virgil 20230605.12
   # Mon Jun  5 04:08:10 UTC 2023 -- Mon Jun  5 14:08:10 AEST 2023
