@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230603.1
-  # Fri Jun  2 15:16:07 UTC 2023 -- Sat Jun  3 01:16:07 AEST 2023
+  # Dante Build Artifact 20230605.1
+  # Mon Jun  5 01:05:43 UTC 2023 -- Mon Jun  5 11:05:43 AEST 2023
   #
-  # Merge pull request 12424 from dante_python_upgrade into master
-  # fcca980c67a58a91494ad24aff16c3609ef32206
-  dante_build_id: '598737'
+  # Merged PR 12456: Ack CVE-2023-30861 - session handling in flask
+  # 064cd421527240eab16bb44a2345c12a77354ba2
+  dante_build_id: '600873'
 
   # virgil 20230605.2
   # Sun Jun  4 23:16:42 UTC 2023 -- Mon Jun  5 09:16:42 AEST 2023
