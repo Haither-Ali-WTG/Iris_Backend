@@ -159,18 +159,15 @@ capture request header user-agent len 150
 
 
 
-{% if not simulation %}
 bind {% for item in frontend.ports.http.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
 {% for item in frontend.ports.http.plaintext %}
 # port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
-{% else %}
-bind :{{ all_port_map[haproxy_http_port | int] }}
-# port {{ all_port_map[haproxy_http_port | int] }} mapped to {{ haproxy_http_port }} on host
-{% endif %}
 {% if certificates | default([]) %}
-bind :{{ all_port_map[haproxy_https_port | int] }} ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
-# port {{ all_port_map[haproxy_https_port | int] }} mapped to {{ haproxy_https_port }} on host
+bind {% for item in frontend.ports.http.ssl %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor %} ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
+{% for item in frontend.ports.http.ssl %}
+# port {{ all_port_map[item] }} mapped to {{ item }} on host
+{% endfor %}
 {% endif %}
 
 

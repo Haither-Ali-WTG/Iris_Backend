@@ -21,8 +21,10 @@
         clustered_instance_name: "{{ item.clustered_instance_name }}"
         # TODO: groups from clustered instance and machine settings
         ansible_host: "{{ machine.ansible_host }}"
-        haproxy_http_port: "{{ (2000 + i * 2) if simulation else 80 }}"
-        haproxy_https_port: "{{ (2000 + i * 2 + 1) if simulation else 443 }}"
+        simulation_ports:
+          http:
+            plaintext: "{{ [(2000 + i * 2)] }}"
+            ssl: "{{ [(2000 + i * 2 + 1)] }}"
 
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
@@ -91,20 +93,26 @@
           {{ (ciphers_tls_v1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique }}
       loop: "{{ cipher.profiles }}"
 
+    - name: Override ports in simulation
+      vars:
+        simulation_frontend:
+          ports: "{{ simulation_ports }}"
+      set_fact:
+        frontend: "{{ frontend | combine(simulation_frontend, recursive=true) }}"
+      when: simulation
+
     - name: Calculate port mapping
       vars:
         all_host_ports: >-
           [
             {{ stats.ports.web }},
-            {% if not simulation %}
             {% for port in frontend.ports.http.plaintext %}
             {{ port }},
             {% endfor %}
-            {% else %}
-            {{ haproxy_http_port }},
-            {% endif %}
             {% if certificates | default([]) %}
-            {{ haproxy_https_port }},
+            {% for port in frontend.ports.http.ssl %}
+            {{ port }},
+            {% endfor %}
             {% endif %}
           ]
         port_prealloc_pairs: >-
