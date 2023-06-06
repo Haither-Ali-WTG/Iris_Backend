@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230606.4
-  # Tue Jun  6 03:57:09 UTC 2023 -- Tue Jun  6 13:57:09 AEST 2023
+  # Dante Build Artifact 20230606.5
+  # Tue Jun  6 05:21:15 UTC 2023 -- Tue Jun  6 15:21:15 AEST 2023
   #
-  # Merged PR 12433: New host check in network routing role
-  # f2e829c61284fcc641fbffef8b9d77bb1128dd21
-  dante_build_id: '602096'
+  # Merge pull request 12490 from dante_artifact_upgrade into master
+  # 652964f3b20eb10446eaff08f9241c0960c2d5e6
+  dante_build_id: '602179'
 
   # virgil 20230606.12
   # Tue Jun  6 03:47:30 UTC 2023 -- Tue Jun  6 13:47:30 AEST 2023
