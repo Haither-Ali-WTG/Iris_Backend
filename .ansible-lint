@@ -4,6 +4,8 @@ skip_list:
   - fqcn-builtins  # Use FQCN for builtin actions.
   # We have dozens of these, won'tfix
   - var-naming[no-role-prefix]
+  # This is triggering for the "name" parameter for the container_runner role from Dante... won'tfix
+  - var-naming[no-reserved]
   # The run_once rules just forbid "stragety: free" and "run_once: yes" without checking
   # that they're being used together, so they give a lot of false positives.
   - run-once[play]  # Avoid "strategy: free"
