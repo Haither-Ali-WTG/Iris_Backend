@@ -7,7 +7,7 @@
   set_fact:
     container_name: "iris_{{ inventory_hostname }}"
     individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
-    needs_restart_marker: "/mnt/data1/containers/iris_{{ inventory_hostname }}_NEEDS_RESTART"
+    needs_restart_marker: "{{ individual_instance_dir }}/iris_{{ inventory_hostname }}_NEEDS_RESTART"
     user: "{{ hostvars[machine_name].haproxy_user }}"
     frontend_name: "{{ frontend_names[defaults.mode] }}"
 
