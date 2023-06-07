@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230606.7
-  # Tue Jun  6 09:19:59 UTC 2023 -- Tue Jun  6 19:19:59 AEST 2023
+  # Dante Build Artifact 20230607.4
+  # Wed Jun  7 01:21:23 UTC 2023 -- Wed Jun  7 11:21:23 AEST 2023
   #
-  # Merged PR 12493: Windows 2022 support for ISO builder
-  # 27484f159fc1cb05a11786eaaef53594e9af956b
-  dante_build_id: '602394'
+  # Merge pull request 12509 from dante_artifact_upgrade into master
+  # bf82907d8bdf5338017c59bc4bda69955dd5ee00
+  dante_build_id: '603043'
 
   # virgil 20230606.14
   # Tue Jun  6 06:25:58 UTC 2023 -- Tue Jun  6 16:25:58 AEST 2023
