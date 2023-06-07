@@ -195,7 +195,7 @@ typing-extensions==4.6.3
     # via
     #   astroid
     #   mypy
-urllib3==2.0.2
+urllib3==2.0.3
     # via requests
 wcmatch==8.4.1
     # via ansible-lint
