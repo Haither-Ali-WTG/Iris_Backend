@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230607.10
-  # Wed Jun  7 08:35:31 UTC 2023 -- Wed Jun  7 18:35:31 AEST 2023
+  # Dante Build Artifact 20230608.1
+  # Thu Jun  8 01:42:03 UTC 2023 -- Thu Jun  8 11:42:03 AEST 2023
   #
-  # Merged PR 12488: Delay to connect after joined Windows Domain
-  # 6e4d4a31a24d8d39e8f669a401c7de3a020a648d
-  dante_build_id: '603398'
+  # Merge pull request 12521 from dante_artifact_upgrade into master
+  # 248ea7af9b0bc647c3edc72bcdd2703e7916b370
+  dante_build_id: '604094'
 
   # virgil 20230608.2
   # Wed Jun  7 23:36:56 UTC 2023 -- Thu Jun  8 09:36:56 AEST 2023
