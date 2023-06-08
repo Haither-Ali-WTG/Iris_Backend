@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230608.1
-  # Thu Jun  8 01:42:03 UTC 2023 -- Thu Jun  8 11:42:03 AEST 2023
+  # Dante Build Artifact 20230608.4
+  # Thu Jun  8 05:15:57 UTC 2023 -- Thu Jun  8 15:15:57 AEST 2023
   #
-  # Merge pull request 12521 from dante_artifact_upgrade into master
-  # 248ea7af9b0bc647c3edc72bcdd2703e7916b370
-  dante_build_id: '604094'
+  # Merged PR 12526: Add Lenovo SR630v2 (7Z71) drivers into Windows ISO
+  # 56a31b132e851a823ed56791ef6a4b773dd2787c
+  dante_build_id: '604304'
 
-  # virgil 20230608.2
-  # Wed Jun  7 23:36:56 UTC 2023 -- Thu Jun  8 09:36:56 AEST 2023
+  # virgil 20230608.6
+  # Thu Jun  8 03:51:51 UTC 2023 -- Thu Jun  8 13:51:51 AEST 2023
   #
-  # Merge pull request 12533 from virgil_python_upgrade into master
-  # def6cc7143ca86e2ee323eb41fc768418e9f7fba
-  virgil_build_id: '603994'
+  # Merged PR 12547: add dell apex5/6 replacement switches
+  # 4e36da793b83f9af93d67a04c56f82321a223f9d
+  virgil_build_id: '604211'
