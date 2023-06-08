@@ -4,10 +4,11 @@
     frontend_names:
       http: l7Frontend
       tcp: l4Frontend
+    path_prefix: /mnt/data1/containers
   set_fact:
     container_name: "iris_{{ inventory_hostname }}"
-    individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
-    needs_restart_marker: "/mnt/data1/containers/iris_{{ inventory_hostname }}_NEEDS_RESTART"
+    individual_instance_dir: "{{ path_prefix }}/iris_{{ inventory_hostname }}"
+    needs_restart_marker: "{{ path_prefix }}/iris_{{ inventory_hostname }}/iris_{{ inventory_hostname }}_NEEDS_RESTART"
     user: "{{ hostvars[machine_name].haproxy_user }}"
     frontend_name: "{{ frontend_names[defaults.mode] }}"
 

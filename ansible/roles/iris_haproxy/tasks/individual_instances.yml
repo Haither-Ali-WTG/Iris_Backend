@@ -11,6 +11,8 @@
     group: "{{ user.group }}"
   become: yes
   loop:
+    - path: ''
+      mode: a=rx
     - path: etc/certs
       mode: u=rx,go=
     - path: etc/sorry_pages
