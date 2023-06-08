@@ -7,9 +7,9 @@ variables:
   # 56a31b132e851a823ed56791ef6a4b773dd2787c
   dante_build_id: '604304'
 
-  # virgil 20230608.6
-  # Thu Jun  8 03:51:51 UTC 2023 -- Thu Jun  8 13:51:51 AEST 2023
+  # virgil 20230608.8
+  # Thu Jun  8 05:58:56 UTC 2023 -- Thu Jun  8 15:58:56 AEST 2023
   #
-  # Merged PR 12547: add dell apex5/6 replacement switches
-  # 4e36da793b83f9af93d67a04c56f82321a223f9d
-  virgil_build_id: '604211'
+  # Merged PR 12551: simulation disable for replacement switches
+  # f6d1a2d15270618bc9647042f203360139db41f6
+  virgil_build_id: '604339'
