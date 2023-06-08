@@ -7,9 +7,9 @@ variables:
   # 6e4d4a31a24d8d39e8f669a401c7de3a020a648d
   dante_build_id: '603398'
 
-  # virgil 20230607.9
-  # Wed Jun  7 06:53:24 UTC 2023 -- Wed Jun  7 16:53:24 AEST 2023
+  # virgil 20230608.2
+  # Wed Jun  7 23:36:56 UTC 2023 -- Thu Jun  8 09:36:56 AEST 2023
   #
-  # Merged PR 12510: Export inventories in JSON
-  # c4f1ff45434150cb56ff096d902ab6df1a358f61
-  virgil_build_id: '603317'
+  # Merge pull request 12533 from virgil_python_upgrade into master
+  # def6cc7143ca86e2ee323eb41fc768418e9f7fba
+  virgil_build_id: '603994'
