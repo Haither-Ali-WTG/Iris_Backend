@@ -6,22 +6,27 @@ au2-prod-frontend-1:
   floating_ips:
     - description: WiseCloud RDP (PROD)
       ip: 10.2.64.135
+      vlan: 1064
       preempt: no
       priority: [au2lbl00345, au2lbl00346]
     - description: ediProd RDP (CORP)
       ip: 10.2.64.136
+      vlan: 1064
       preempt: no
       priority: [au2lbl00346, au2lbl00345]
     - description: webservices
       ip: 10.2.64.137
+      vlan: 1064
       preempt: yes
       priority: [au2lbl00345, au2lbl00346]
     - description: webservices
       ip: 10.2.64.138
+      vlan: 1064
       preempt: yes
       priority: [au2lbl00346, au2lbl00345]
     - description: webservices
       ip: 10.2.64.139
+      vlan: 1064
       preempt: yes
       # TODO: when we get the third machine, it'll be first in the priority for .139;
       # compare DE1 and US2
@@ -34,9 +39,11 @@ au2-sand-internal-1:
   floating_ips:
     - description: webservices (SAND)
       ip: 10.2.136.137
+      vlan: 1136
       preempt: no
       priority: [au2lbl00416, au2lbl00417]
     - description: webservices
       ip: 10.2.136.138
+      vlan: 1136
       preempt: yes
       priority: [au2lbl00417, au2lbl00416]
