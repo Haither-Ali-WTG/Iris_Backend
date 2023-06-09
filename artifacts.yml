@@ -7,9 +7,9 @@ variables:
   # 212fcc0fbed99ee801ca185ee99e558a4a5e3700
   dante_build_id: '604657'
 
-  # virgil 20230608.8
-  # Thu Jun  8 05:58:56 UTC 2023 -- Thu Jun  8 15:58:56 AEST 2023
+  # virgil 20230609.2
+  # Thu Jun  8 23:46:06 UTC 2023 -- Fri Jun  9 09:46:06 AEST 2023
   #
-  # Merged PR 12551: simulation disable for replacement switches
-  # f6d1a2d15270618bc9647042f203360139db41f6
-  virgil_build_id: '604339'
+  # Merged PR 12563: reimage-replacement-switch-toversion-521
+  # 1ee895687b7d20cee6441f7c96994ab37b8ddf99
+  virgil_build_id: '605108'
