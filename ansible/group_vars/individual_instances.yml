@@ -35,9 +35,8 @@ individual_instance_defaults:
 
   frontend:
     ports:
-      http:
-        plaintext: [80]
-        ssl: [443]
+      plaintext: [80]
+      ssl: [443]
     maxconn: 200000
     fullconn: 5000
 
