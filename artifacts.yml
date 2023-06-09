@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230608.5
-  # Thu Jun  8 12:48:13 UTC 2023 -- Thu Jun  8 22:48:13 AEST 2023
+  # Dante Build Artifact 20230609.3
+  # Fri Jun  9 03:31:18 UTC 2023 -- Fri Jun  9 13:31:18 AEST 2023
   #
-  # Merge pull request 12548 from dante_artifact_upgrade into master
-  # 212fcc0fbed99ee801ca185ee99e558a4a5e3700
-  dante_build_id: '604657'
+  # Merged PR 12529: (minor) Set hostname to xclarity
+  # 5b0065b8ef86ce85203a5b4681c075c6bcfe5424
+  dante_build_id: '605353'
 
   # virgil 20230609.2
   # Thu Jun  8 23:46:06 UTC 2023 -- Fri Jun  9 09:46:06 AEST 2023
