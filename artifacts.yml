@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230609.3
-  # Fri Jun  9 03:31:18 UTC 2023 -- Fri Jun  9 13:31:18 AEST 2023
+  # Dante Build Artifact 20230610.1
+  # Sat Jun 10 13:26:32 UTC 2023 -- Sat Jun 10 23:26:32 AEST 2023
   #
-  # Merged PR 12529: (minor) Set hostname to xclarity
-  # 5b0065b8ef86ce85203a5b4681c075c6bcfe5424
-  dante_build_id: '605353'
+  # Merge pull request 12593 from dante_artifact_upgrade into master
+  # 171a72d07f37b01d7ad62264a8aff39510973eec
+  dante_build_id: '606624'
 
-  # virgil 20230609.2
-  # Thu Jun  8 23:46:06 UTC 2023 -- Fri Jun  9 09:46:06 AEST 2023
+  # virgil 20230610.2
+  # Sat Jun 10 12:19:18 UTC 2023 -- Sat Jun 10 22:19:18 AEST 2023
   #
-  # Merged PR 12563: reimage-replacement-switch-toversion-521
-  # 1ee895687b7d20cee6441f7c96994ab37b8ddf99
-  virgil_build_id: '605108'
+  # Merged PR 12591: udpate cumulus version apex1/197/198
+  # ae01a68e6cd8ab2a1f4635f6daa689b146af2dee
+  virgil_build_id: '606578'
