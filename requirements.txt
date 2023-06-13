@@ -13,7 +13,7 @@ ansible-core==2.15.0
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.17.0
+ansible-lint==6.17.1
     # via -r requirements.in
 argcomplete==3.1.1
     # via yq
@@ -50,7 +50,7 @@ dparse==0.6.2
     # via safety
 exceptiongroup==1.1.1
     # via pytest
-filelock==3.12.1
+filelock==3.12.2
     # via ansible-lint
 gitdb==4.0.10
     # via gitpython
@@ -145,6 +145,7 @@ pyyaml==6.0
     #   yq
 requests==2.31.0
     # via
+    #   ansible-lint
     #   pywinrm
     #   requests-ntlm
     #   safety
