@@ -7,9 +7,9 @@ variables:
   # 171a72d07f37b01d7ad62264a8aff39510973eec
   dante_build_id: '606624'
 
-  # virgil 20230610.2
-  # Sat Jun 10 12:19:18 UTC 2023 -- Sat Jun 10 22:19:18 AEST 2023
+  # virgil 20230613.1
+  # Mon Jun 12 23:44:14 UTC 2023 -- Tue Jun 13 09:44:14 AEST 2023
   #
-  # Merged PR 12591: udpate cumulus version apex1/197/198
-  # ae01a68e6cd8ab2a1f4635f6daa689b146af2dee
-  virgil_build_id: '606578'
+  # Merge pull request 12595 from virgil_python_upgrade into master
+  # 465fec379032948782df14099ca777f0226e36ab
+  virgil_build_id: '608755'
