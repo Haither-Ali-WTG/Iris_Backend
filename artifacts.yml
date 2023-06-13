@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230613.1
-  # Tue Jun 13 01:04:52 UTC 2023 -- Tue Jun 13 11:04:52 AEST 2023
+  # Dante Build Artifact 20230614.2
+  # Tue Jun 13 23:16:51 UTC 2023 -- Wed Jun 14 09:16:51 AEST 2023
   #
-  # Merged PR 12603: DNS repo added to auto upgrades
-  # e1afc9ed99266c2c4c8e45d710d635f8a5e4a6a1
-  dante_build_id: '608831'
+  # Merge pull request 12601 from dante_artifact_upgrade into master
+  # 784a6a65ed5bf4bc5d7f134825db26274add8d6e
+  dante_build_id: '609727'
 
-  # virgil 20230613.1
-  # Mon Jun 12 23:44:14 UTC 2023 -- Tue Jun 13 09:44:14 AEST 2023
+  # virgil 20230614.2
+  # Tue Jun 13 23:32:47 UTC 2023 -- Wed Jun 14 09:32:47 AEST 2023
   #
-  # Merge pull request 12595 from virgil_python_upgrade into master
-  # 465fec379032948782df14099ca777f0226e36ab
-  virgil_build_id: '608755'
+  # Merged PR 12622: Updated queues.yaml - Added Queues for Cargowise Compliance
+  # ce6ca668fb6880465d916a6fd23ffd6a43757cab
+  virgil_build_id: '609753'
