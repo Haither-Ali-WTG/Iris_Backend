@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230610.1
-  # Sat Jun 10 13:26:32 UTC 2023 -- Sat Jun 10 23:26:32 AEST 2023
+  # Dante Build Artifact 20230613.1
+  # Tue Jun 13 01:04:52 UTC 2023 -- Tue Jun 13 11:04:52 AEST 2023
   #
-  # Merge pull request 12593 from dante_artifact_upgrade into master
-  # 171a72d07f37b01d7ad62264a8aff39510973eec
-  dante_build_id: '606624'
+  # Merged PR 12603: DNS repo added to auto upgrades
+  # e1afc9ed99266c2c4c8e45d710d635f8a5e4a6a1
+  dante_build_id: '608831'
 
   # virgil 20230613.1
   # Mon Jun 12 23:44:14 UTC 2023 -- Tue Jun 13 09:44:14 AEST 2023
