@@ -7,9 +7,9 @@ variables:
   # 784a6a65ed5bf4bc5d7f134825db26274add8d6e
   dante_build_id: '609727'
 
-  # virgil 20230614.2
-  # Tue Jun 13 23:32:47 UTC 2023 -- Wed Jun 14 09:32:47 AEST 2023
+  # virgil 20230614.9
+  # Wed Jun 14 01:07:08 UTC 2023 -- Wed Jun 14 11:07:08 AEST 2023
   #
-  # Merged PR 12622: Updated queues.yaml - Added Queues for Cargowise Compliance
-  # ce6ca668fb6880465d916a6fd23ffd6a43757cab
-  virgil_build_id: '609753'
+  # Merged PR 12610: Virgil - Upgrade US and DE Kafka clusters to Ubuntu 2204
+  # 46741a1248c4d5a14973b2709a20a9d8de721924
+  virgil_build_id: '609860'
