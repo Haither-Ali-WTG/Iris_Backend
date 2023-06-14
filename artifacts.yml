@@ -7,9 +7,9 @@ variables:
   # 1ec95823687891d63fc3c9d1cfb2c56f4825c54f
   dante_build_id: '610018'
 
-  # virgil 20230614.9
-  # Wed Jun 14 01:07:08 UTC 2023 -- Wed Jun 14 11:07:08 AEST 2023
+  # virgil 20230615.2
+  # Wed Jun 14 23:18:33 UTC 2023 -- Thu Jun 15 09:18:33 AEST 2023
   #
-  # Merged PR 12610: Virgil - Upgrade US and DE Kafka clusters to Ubuntu 2204
-  # 46741a1248c4d5a14973b2709a20a9d8de721924
-  virgil_build_id: '609860'
+  # Merged PR 12649: Enable some Hyepr-V ports in cabinet 110
+  # 7fe213628858db6ad5ad1fed64f585ccc7021a2e
+  virgil_build_id: '610777'
