@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230614.3
-  # Wed Jun 14 04:43:30 UTC 2023 -- Wed Jun 14 14:43:30 AEST 2023
+  # Dante Build Artifact 20230615.1
+  # Thu Jun 15 00:26:47 UTC 2023 -- Thu Jun 15 10:26:47 AEST 2023
   #
-  # Merged PR 12585: Dante - Change scripts and tasks that call and use styx -- 2/2
-  # 1ec95823687891d63fc3c9d1cfb2c56f4825c54f
-  dante_build_id: '610018'
+  # Merge pull request 12628 from dante_artifact_upgrade into master
+  # ee4303dee56a62420db7ed65680f41dfa822f60d
+  dante_build_id: '610834'
 
   # virgil 20230615.2
   # Wed Jun 14 23:18:33 UTC 2023 -- Thu Jun 15 09:18:33 AEST 2023
