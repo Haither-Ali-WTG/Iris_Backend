@@ -22,9 +22,8 @@
         # TODO: groups from clustered instance and machine settings
         ansible_host: "{{ machine.ansible_host }}"
         simulation_ports:
-          http:
-            plaintext: "{{ [(2000 + i * 2)] }}"
-            ssl: "{{ [(2000 + i * 2 + 1)] }}"
+          plaintext: "{{ [(2000 + i * 2)] }}"
+          ssl: "{{ [(2000 + i * 2 + 1)] }}"
 
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
@@ -106,11 +105,11 @@
         all_host_ports: >-
           [
             {{ stats.ports.web }},
-            {% for port in frontend.ports.http.plaintext %}
+            {% for port in frontend.ports.plaintext %}
             {{ port }},
             {% endfor %}
             {% if certificates | default([]) %}
-            {% for port in frontend.ports.http.ssl %}
+            {% for port in frontend.ports.ssl %}
             {{ port }},
             {% endfor %}
             {% endif %}
