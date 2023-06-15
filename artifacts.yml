@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230615.2
-  # Thu Jun 15 05:56:25 UTC 2023 -- Thu Jun 15 15:56:25 AEST 2023
+  # Dante Build Artifact 20230615.4
+  # Thu Jun 15 09:09:40 UTC 2023 -- Thu Jun 15 19:09:40 AEST 2023
   #
-  # Merged PR 12615: L2 downlinks initially DOWN on new host - au2nsl00197 only
-  # dfa59e1df27ea28ae6836c1009684dd3e2491099
-  dante_build_id: '611087'
+  # Merged PR 10626: Kafka Metricbeat Module
+  # 2b817a85517061954b62d49ef48ab36b0f7c36e1
+  dante_build_id: '611248'
 
-  # virgil 20230615.2
-  # Wed Jun 14 23:18:33 UTC 2023 -- Thu Jun 15 09:18:33 AEST 2023
+  # virgil 20230615.4
+  # Thu Jun 15 06:28:43 UTC 2023 -- Thu Jun 15 16:28:43 AEST 2023
   #
-  # Merged PR 12649: Enable some Hyepr-V ports in cabinet 110
-  # 7fe213628858db6ad5ad1fed64f585ccc7021a2e
-  virgil_build_id: '610777'
+  # Merged PR 12633: AU2 mgmt1 and mgmt2 are cabled the other way
+  # f33a7ee1cd54405d76b681d2b408ea82f64eae3d
+  virgil_build_id: '611115'
