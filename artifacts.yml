@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230615.4
-  # Thu Jun 15 09:09:40 UTC 2023 -- Thu Jun 15 19:09:40 AEST 2023
+  # Dante Build Artifact 20230616.4
+  # Fri Jun 16 05:29:07 UTC 2023 -- Fri Jun 16 15:29:07 AEST 2023
   #
-  # Merged PR 10626: Kafka Metricbeat Module
-  # 2b817a85517061954b62d49ef48ab36b0f7c36e1
-  dante_build_id: '611248'
+  # Merge pull request 12673 from dante_artifact_upgrade into master
+  # 6ef0287fc48fb041acfde53f10c90adcf8b27901
+  dante_build_id: '612030'
 
   # virgil 20230615.4
   # Thu Jun 15 06:28:43 UTC 2023 -- Thu Jun 15 16:28:43 AEST 2023
