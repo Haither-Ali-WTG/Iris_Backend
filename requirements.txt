@@ -107,7 +107,7 @@ pathspec==0.11.1
     #   yamllint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.5.3
+platformdirs==3.6.0
     # via
     #   black
     #   pylint
@@ -159,7 +159,7 @@ rich==13.4.2
     # via
     #   ansible-lint
     #   bandit
-ruamel-yaml==0.17.31
+ruamel-yaml==0.17.32
     # via
     #   ansible-lint
     #   safety
