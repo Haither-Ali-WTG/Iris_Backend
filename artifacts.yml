@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230616.4
-  # Fri Jun 16 05:29:07 UTC 2023 -- Fri Jun 16 15:29:07 AEST 2023
+  # Dante Build Artifact 20230619.2
+  # Mon Jun 19 04:44:49 UTC 2023 -- Mon Jun 19 14:44:49 AEST 2023
   #
-  # Merge pull request 12673 from dante_artifact_upgrade into master
-  # 6ef0287fc48fb041acfde53f10c90adcf8b27901
-  dante_build_id: '612030'
+  # Merged PR 12657: Change to confluent-kafka in send_to_kafka.py
+  # 44fdf876343494cf7399c8ca9e1500aeacd19b07
+  dante_build_id: '614806'
 
-  # virgil 20230615.4
-  # Thu Jun 15 06:28:43 UTC 2023 -- Thu Jun 15 16:28:43 AEST 2023
+  # virgil 20230619.6
+  # Mon Jun 19 00:10:03 UTC 2023 -- Mon Jun 19 10:10:03 AEST 2023
   #
-  # Merged PR 12633: AU2 mgmt1 and mgmt2 are cabled the other way
-  # f33a7ee1cd54405d76b681d2b408ea82f64eae3d
-  virgil_build_id: '611115'
+  # Merged PR 12474: Updated teardowns.yaml
+  # 10d03a89b8cbcb4fcb145a40179442c8e0c8b844
+  virgil_build_id: '614568'
