@@ -7,9 +7,9 @@ variables:
   # 44fdf876343494cf7399c8ca9e1500aeacd19b07
   dante_build_id: '614806'
 
-  # virgil 20230620.5
-  # Tue Jun 20 03:08:27 UTC 2023 -- Tue Jun 20 13:08:27 AEST 2023
+  # virgil 20230620.11
+  # Tue Jun 20 05:26:01 UTC 2023 -- Tue Jun 20 15:26:01 AEST 2023
   #
-  # Merged PR 12112: Switch to new AD/DNS servers in us2
-  # fff8b11d06c5634b091abed65787be0b96fa045a
-  virgil_build_id: '615740'
+  # Merged PR 12727: Correctly use a/an in error message
+  # 3c715bc0387eb424efec55514b791abc83a2876d
+  virgil_build_id: '615868'
