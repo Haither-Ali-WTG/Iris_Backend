@@ -7,9 +7,9 @@ variables:
   # 44fdf876343494cf7399c8ca9e1500aeacd19b07
   dante_build_id: '614806'
 
-  # virgil 20230619.6
-  # Mon Jun 19 00:10:03 UTC 2023 -- Mon Jun 19 10:10:03 AEST 2023
+  # virgil 20230620.2
+  # Mon Jun 19 23:58:14 UTC 2023 -- Tue Jun 20 09:58:14 AEST 2023
   #
-  # Merged PR 12474: Updated teardowns.yaml
-  # 10d03a89b8cbcb4fcb145a40179442c8e0c8b844
-  virgil_build_id: '614568'
+  # Merge pull request 12704 from virgil_python_upgrade into master
+  # 482908c30900336d32247650c7708b6e8fb46ead
+  virgil_build_id: '615543'
