@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230620.1
-  # Tue Jun 20 06:22:42 UTC 2023 -- Tue Jun 20 16:22:42 AEST 2023
+  # Dante Build Artifact 20230620.2
+  # Tue Jun 20 10:15:47 UTC 2023 -- Tue Jun 20 20:15:47 AEST 2023
   #
-  # Merged PR 12719: Remove service_checks from artifact export
-  # 285150eec2b5c64bf8d9c7674f2a39f6aebfb961
-  dante_build_id: '615924'
+  # Merge pull request 12697 from dante_artifact_upgrade into master
+  # 21086379d53ba2c1807277c275b1721ec63fc13b
+  dante_build_id: '616095'
 
-  # virgil 20230620.11
-  # Tue Jun 20 05:26:01 UTC 2023 -- Tue Jun 20 15:26:01 AEST 2023
+  # virgil 20230621.2
+  # Tue Jun 20 23:48:54 UTC 2023 -- Wed Jun 21 09:48:54 AEST 2023
   #
-  # Merged PR 12727: Correctly use a/an in error message
-  # 3c715bc0387eb424efec55514b791abc83a2876d
-  virgil_build_id: '615868'
+  # Merge pull request 12748 from virgil_python_upgrade into master
+  # ee3f9af27978f3be0d53418e28907f6f1c292c46
+  virgil_build_id: '616628'
