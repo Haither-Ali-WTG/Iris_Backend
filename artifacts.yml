@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230621.2
-  # Wed Jun 21 01:50:18 UTC 2023 -- Wed Jun 21 11:50:18 AEST 2023
+  # Dante Build Artifact 20230621.3
+  # Wed Jun 21 04:26:21 UTC 2023 -- Wed Jun 21 14:26:21 AEST 2023
   #
-  # Merged PR 12723: kafka metricbeat - template stats password
-  # 4fa2d6ffc08452df6ed9a48b691ff915807741cd
-  dante_build_id: '616776'
+  # Merged PR 12708: Calculate disk ID for windows installation
+  # 1da68f0bc603e833553abd1aac1fd25ca7f259f7
+  dante_build_id: '616943'
 
-  # virgil 20230621.4
-  # Wed Jun 21 02:57:28 UTC 2023 -- Wed Jun 21 12:57:28 AEST 2023
+  # virgil 20230621.6
+  # Wed Jun 21 04:01:24 UTC 2023 -- Wed Jun 21 14:01:24 AEST 2023
   #
-  # Merged PR 12764: Add missing port config
-  # 414e2fae95bb4cbf95f74b451b90edc6f1406d00
-  virgil_build_id: '616852'
+  # Merged PR 12770: Export a list of standalone ports for VLAN bridge config
+  # a62b56695250dc875ec2359ddca1b7ec703df199
+  virgil_build_id: '616929'
