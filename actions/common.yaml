@@ -8,6 +8,15 @@ transport-security:
     - http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
     - http-response set-header X-Content-Type-Options nosniff
 
+omit-unnecessary-info:
+  description: |-
+    Remove X-Powered-By and Server headers, which are optional and leak information
+    about our webservers that could potentially be used by attackers.
+  order: 3
+  actions:
+    - http-response del-header X-Powered-By
+    - http-response del-header Server
+
 single-content-length:
   description: |-
     CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
