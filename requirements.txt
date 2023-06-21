@@ -107,11 +107,11 @@ pathspec==0.11.1
     #   yamllint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.6.0
+platformdirs==3.7.0
     # via
     #   black
     #   pylint
-pluggy==1.0.0
+pluggy==1.2.0
     # via pytest
 pycparser==2.21
     # via cffi
