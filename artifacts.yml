@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230621.4
-  # Wed Jun 21 06:17:33 UTC 2023 -- Wed Jun 21 16:17:33 AEST 2023
+  # Dante Build Artifact 20230621.7
+  # Wed Jun 21 13:24:55 UTC 2023 -- Wed Jun 21 23:24:55 AEST 2023
   #
-  # Merge pull request 12766 from dante_artifact_upgrade into master
-  # b0235e8ce28e6bece75b0f381610a66ea1aaf4fe
-  dante_build_id: '617035'
+  # Merged PR 12720: Dante  - Styx new image
+  # 38caac3a4e3bc2fcebe6a46b1f6298cd99ccefda
+  dante_build_id: '617380'
 
-  # virgil 20230621.6
-  # Wed Jun 21 04:01:24 UTC 2023 -- Wed Jun 21 14:01:24 AEST 2023
+  # virgil 20230622.4
+  # Wed Jun 21 23:34:01 UTC 2023 -- Thu Jun 22 09:34:01 AEST 2023
   #
-  # Merged PR 12770: Export a list of standalone ports for VLAN bridge config
-  # a62b56695250dc875ec2359ddca1b7ec703df199
-  virgil_build_id: '616929'
+  # Merge pull request 12790 from virgil_python_upgrade into master
+  # 9096adf5f2ebe82a9520a2b5602ce9178d77391b
+  virgil_build_id: '617787'
