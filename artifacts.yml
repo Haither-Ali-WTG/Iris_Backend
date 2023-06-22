@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230621.7
-  # Wed Jun 21 13:24:55 UTC 2023 -- Wed Jun 21 23:24:55 AEST 2023
+  # Dante Build Artifact 20230622.1
+  # Thu Jun 22 00:24:51 UTC 2023 -- Thu Jun 22 10:24:51 AEST 2023
   #
-  # Merged PR 12720: Dante  - Styx new image
-  # 38caac3a4e3bc2fcebe6a46b1f6298cd99ccefda
-  dante_build_id: '617380'
+  # Merged PR 12416: Dante - Download k8s key to apt mirror
+  # af9b87184fc1d34b05fb50fb63896d98ba5f43d9
+  dante_build_id: '617826'
 
   # virgil 20230622.4
   # Wed Jun 21 23:34:01 UTC 2023 -- Thu Jun 22 09:34:01 AEST 2023
