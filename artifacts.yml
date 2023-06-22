@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230622.3
-  # Thu Jun 22 03:53:58 UTC 2023 -- Thu Jun 22 13:53:58 AEST 2023
+  # Dante Build Artifact 20230622.4
+  # Thu Jun 22 05:05:46 UTC 2023 -- Thu Jun 22 15:05:46 AEST 2023
   #
-  # Merged PR 12762: Dante - Check for ambiguous force_restart variable
-  # f48256ead6062659e7cd835a0a5ff7a90f63bb3a
-  dante_build_id: '618066'
+  # Merged PR 12779: Remove kafka-python from dante repo
+  # 331e8e9b369bbb0fac72cc269063d4abecf06f51
+  dante_build_id: '618155'
 
   # virgil 20230622.4
   # Wed Jun 21 23:34:01 UTC 2023 -- Thu Jun 22 09:34:01 AEST 2023
