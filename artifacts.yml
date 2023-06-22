@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230622.1
-  # Thu Jun 22 00:24:51 UTC 2023 -- Thu Jun 22 10:24:51 AEST 2023
+  # Dante Build Artifact 20230622.3
+  # Thu Jun 22 03:53:58 UTC 2023 -- Thu Jun 22 13:53:58 AEST 2023
   #
-  # Merged PR 12416: Dante - Download k8s key to apt mirror
-  # af9b87184fc1d34b05fb50fb63896d98ba5f43d9
-  dante_build_id: '617826'
+  # Merged PR 12762: Dante - Check for ambiguous force_restart variable
+  # f48256ead6062659e7cd835a0a5ff7a90f63bb3a
+  dante_build_id: '618066'
 
   # virgil 20230622.4
   # Wed Jun 21 23:34:01 UTC 2023 -- Thu Jun 22 09:34:01 AEST 2023
