@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230623.2
-  # Fri Jun 23 03:08:55 UTC 2023 -- Fri Jun 23 13:08:55 AEST 2023
+  # Dante Build Artifact 20230623.3
+  # Fri Jun 23 04:30:42 UTC 2023 -- Fri Jun 23 14:30:42 AEST 2023
   #
-  # Merged PR 12825: Only standalone ports initially down - au2nsl00197 only
-  # cf1f214be2ce78711c35886792745fadbc5b7deb
-  dante_build_id: '619088'
+  # Merged PR 12811: Added Artifacts Upgrade to Monitoring Agents
+  # 0c308d3d1dd5aeab3630894a20ef7459dc8afcbf
+  dante_build_id: '619158'
 
   # virgil 20230622.4
   # Wed Jun 21 23:34:01 UTC 2023 -- Thu Jun 22 09:34:01 AEST 2023
