@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230625.1
-  # Sun Jun 25 01:41:27 UTC 2023 -- Sun Jun 25 11:41:27 AEST 2023
+  # Dante Build Artifact 20230626.1
+  # Mon Jun 26 00:23:47 UTC 2023 -- Mon Jun 26 10:23:47 AEST 2023
   #
-  # Merge pull request 12854 from dante_artifact_upgrade into master
-  # 9814708c497edc453eea950bdfb6384fbdfac6e7
-  dante_build_id: '620917'
+  # Merged PR 12756: Dante Python Upgrade + remove no-longer-needed "type: ignore"
+  # 2845e4a35bb84ba8405eef782ab7cb905958093d
+  dante_build_id: '621776'
 
-  # virgil 20230625.5
-  # Sun Jun 25 00:28:54 UTC 2023 -- Sun Jun 25 10:28:54 AEST 2023
+  # virgil 20230626.4
+  # Sun Jun 25 23:35:42 UTC 2023 -- Mon Jun 26 09:35:42 AEST 2023
   #
-  # Merged PR 12861: Narrower upgrade of Cumulus version
-  # 4f517566a1a6170aadb9755b848759bf32439f44
-  virgil_build_id: '620858'
+  # Merged PR 12831: Removed systemd flag for bind
+  # 156170ea50060ef5f6ac3b1f2618568386b93ce3
+  virgil_build_id: '621741'
