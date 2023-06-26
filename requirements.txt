@@ -48,7 +48,7 @@ cryptography==41.0.1
     #   requests-ntlm
 dill==0.3.6
     # via pylint
-dparse==0.6.2
+dparse==0.6.3
     # via safety
 exceptiongroup==1.1.1
     # via pytest
@@ -82,7 +82,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-mypy==1.4.0
+mypy==1.4.1
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
@@ -179,12 +179,11 @@ subprocess-tee==0.4.1
     # via
     #   ansible-compat
     #   ansible-lint
-toml==0.10.2
-    # via dparse
 tomli==2.0.1
     # via
     #   black
     #   coverage
+    #   dparse
     #   mypy
     #   pylint
     #   pytest
