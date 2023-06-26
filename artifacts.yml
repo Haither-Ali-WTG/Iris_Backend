@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230626.1
-  # Mon Jun 26 00:23:47 UTC 2023 -- Mon Jun 26 10:23:47 AEST 2023
+  # Dante Build Artifact 20230627.1
+  # Mon Jun 26 23:47:36 UTC 2023 -- Tue Jun 27 09:47:36 AEST 2023
   #
-  # Merged PR 12756: Dante Python Upgrade + remove no-longer-needed "type: ignore"
-  # 2845e4a35bb84ba8405eef782ab7cb905958093d
-  dante_build_id: '621776'
+  # Merge pull request 12696 from dante_python_upgrade into master
+  # 78cc6afe03366d7b7625a560fa5ec8b5085b30c9
+  dante_build_id: '622776'
 
-  # virgil 20230626.4
-  # Sun Jun 25 23:35:42 UTC 2023 -- Mon Jun 26 09:35:42 AEST 2023
+  # virgil 20230627.5
+  # Mon Jun 26 23:37:25 UTC 2023 -- Tue Jun 27 09:37:25 AEST 2023
   #
-  # Merged PR 12831: Removed systemd flag for bind
-  # 156170ea50060ef5f6ac3b1f2618568386b93ce3
-  virgil_build_id: '621741'
+  # Merge pull request 12888 from virgil_python_upgrade into master
+  # e44ee9f5f2146ad2d81d6e89c220c5244e16f6c8
+  virgil_build_id: '622766'
