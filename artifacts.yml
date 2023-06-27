@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230627.3
-  # Tue Jun 27 04:48:06 UTC 2023 -- Tue Jun 27 14:48:06 AEST 2023
+  # Dante Build Artifact 20230627.5
+  # Tue Jun 27 07:16:53 UTC 2023 -- Tue Jun 27 17:16:53 AEST 2023
   #
-  # Merged PR 12862: Move initial run BGP graceful shutdown inside router
-  # d3083d5692dd8e08cc15086c831e0c13f7b3484c
-  dante_build_id: '623007'
+  # Merged PR 12900: Left only one server_containerhost and server_virt_kvm host per DC in simulation
+  # e552260c42c974eb4f105b3ea81d0d69c84e0d38
+  dante_build_id: '623135'
 
   # virgil 20230627.7
   # Tue Jun 27 02:08:21 UTC 2023 -- Tue Jun 27 12:08:21 AEST 2023
