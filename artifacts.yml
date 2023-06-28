@@ -7,9 +7,9 @@ variables:
   # e552260c42c974eb4f105b3ea81d0d69c84e0d38
   dante_build_id: '623135'
 
-  # virgil 20230627.7
-  # Tue Jun 27 02:08:21 UTC 2023 -- Tue Jun 27 12:08:21 AEST 2023
+  # virgil 20230628.3
+  # Wed Jun 28 01:06:50 UTC 2023 -- Wed Jun 28 11:06:50 AEST 2023
   #
-  # Merged PR 12887: Add storage services vlan to vmware profile
-  # fcd0e452cf0e617cf93f6af2a408ea09e7b1a2c4
-  virgil_build_id: '622895'
+  # Merged PR 12913: US2 management node 1 is plugged in reverse order
+  # e78b2be776672aa95132917831d0088f714e7f6e
+  virgil_build_id: '623844'
