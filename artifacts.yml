@@ -7,9 +7,9 @@ variables:
   # 839bbb12fe7d07bcdee5da09f71a48d429f7dbf3
   dante_build_id: '623891'
 
-  # virgil 20230628.3
-  # Wed Jun 28 01:06:50 UTC 2023 -- Wed Jun 28 11:06:50 AEST 2023
+  # virgil 20230628.5
+  # Wed Jun 28 03:27:35 UTC 2023 -- Wed Jun 28 13:27:35 AEST 2023
   #
-  # Merged PR 12913: US2 management node 1 is plugged in reverse order
-  # e78b2be776672aa95132917831d0088f714e7f6e
-  virgil_build_id: '623844'
+  # Merged PR 12924: Fixed US2 management nodes 2 and 3 cabling
+  # eff315b45a048d8975a2c085dff20ce11fad868a
+  virgil_build_id: '624000'
