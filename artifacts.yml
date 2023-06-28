@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230627.5
-  # Tue Jun 27 07:16:53 UTC 2023 -- Tue Jun 27 17:16:53 AEST 2023
+  # Dante Build Artifact 20230628.1
+  # Wed Jun 28 02:05:38 UTC 2023 -- Wed Jun 28 12:05:38 AEST 2023
   #
-  # Merged PR 12900: Left only one server_containerhost and server_virt_kvm host per DC in simulation
-  # e552260c42c974eb4f105b3ea81d0d69c84e0d38
-  dante_build_id: '623135'
+  # Merge pull request 12905 from dante_artifact_upgrade into master
+  # 839bbb12fe7d07bcdee5da09f71a48d429f7dbf3
+  dante_build_id: '623891'
 
   # virgil 20230628.3
   # Wed Jun 28 01:06:50 UTC 2023 -- Wed Jun 28 11:06:50 AEST 2023
