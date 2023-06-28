@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230628.2
-  # Wed Jun 28 04:23:33 UTC 2023 -- Wed Jun 28 14:23:33 AEST 2023
+  # Dante Build Artifact 20230628.3
+  # Wed Jun 28 05:53:17 UTC 2023 -- Wed Jun 28 15:53:17 AEST 2023
   #
-  # Merge pull request 12930 from dante_artifact_upgrade into master
-  # dea071b9849275d956907e5b75eb0b23ca6e201b
-  dante_build_id: '624064'
+  # Merged PR 12935: Targeting dante simulation run on heavy load capable nodes only
+  # 6f101f5a6711da417d687dc167dc1884ceaa3c80
+  dante_build_id: '624157'
 
   # virgil 20230628.5
   # Wed Jun 28 03:27:35 UTC 2023 -- Wed Jun 28 13:27:35 AEST 2023
