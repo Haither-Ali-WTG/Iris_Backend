@@ -7,9 +7,9 @@ variables:
   # fe3552d8acb6c9b5a394363de3628bab6d39698e
   dante_build_id: '624839'
 
-  # virgil 20230629.2
-  # Wed Jun 28 16:53:03 UTC 2023 -- Thu Jun 29 02:53:03 AEST 2023
+  # virgil 20230629.6
+  # Thu Jun 29 07:22:11 UTC 2023 -- Thu Jun 29 17:22:11 AEST 2023
   #
-  # Merged PR 12859: Move one hypervisor, add media agents
-  # ee32ffadf9fbadc2725b2e81c730b63c4185f157
-  virgil_build_id: '624582'
+  # Merged PR 12957: Revert "upgrade cumulus apex15/16/19/20-22 leaf2/4"
+  # c5fa0f21b3b71eec5f6d60e550915736f57d54d1
+  virgil_build_id: '625194'
