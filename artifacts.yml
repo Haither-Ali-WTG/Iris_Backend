@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230630.2
-  # Thu Jun 29 23:42:05 UTC 2023 -- Fri Jun 30 09:42:05 AEST 2023
+  # Dante Build Artifact 20230630.3
+  # Fri Jun 30 01:10:14 UTC 2023 -- Fri Jun 30 11:10:14 AEST 2023
   #
-  # Merged PR 12932: Improve check for open SSH port before attempting Unregister RHEL
-  # ee06db8b93764708e320a9f505ab6c7a14da9fef
-  dante_build_id: '625808'
+  # Merge pull request 12947 from dante_python_upgrade into master
+  # 51bbae24e7c5ef4bd10c96d753680b5f39246442
+  dante_build_id: '625898'
 
   # virgil 20230629.6
   # Thu Jun 29 07:22:11 UTC 2023 -- Thu Jun 29 17:22:11 AEST 2023
