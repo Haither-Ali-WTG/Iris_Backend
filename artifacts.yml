@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230629.1
-  # Wed Jun 28 23:21:09 UTC 2023 -- Thu Jun 29 09:21:09 AEST 2023
+  # Dante Build Artifact 20230630.2
+  # Thu Jun 29 23:42:05 UTC 2023 -- Fri Jun 30 09:42:05 AEST 2023
   #
-  # Merged PR 12925: Allow heavy loads capability for simulation agents
-  # fe3552d8acb6c9b5a394363de3628bab6d39698e
-  dante_build_id: '624839'
+  # Merged PR 12932: Improve check for open SSH port before attempting Unregister RHEL
+  # ee06db8b93764708e320a9f505ab6c7a14da9fef
+  dante_build_id: '625808'
 
   # virgil 20230629.6
   # Thu Jun 29 07:22:11 UTC 2023 -- Thu Jun 29 17:22:11 AEST 2023
