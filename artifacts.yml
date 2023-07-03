@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230703.1
-  # Mon Jul  3 00:46:30 UTC 2023 -- Mon Jul  3 10:46:30 AEST 2023
+  # Dante Build Artifact 20230703.2
+  # Mon Jul  3 04:54:48 UTC 2023 -- Mon Jul  3 14:54:48 AEST 2023
   #
-  # Merged PR 12784: Dante - Restart Services AU2, Manual Intervention after Dry run -- 1/2
-  # 6039b87af3f1226b645d4af34de307dde09f7604
-  dante_build_id: '628541'
+  # Merged PR 12981: (Fix windows pipeline) Get disk ID from Virgil
+  # f058ed8d4b1095ff9b529c5af2932e3016f4c5e4
+  dante_build_id: '628719'
 
-  # virgil 20230703.5
-  # Mon Jul  3 02:29:57 UTC 2023 -- Mon Jul  3 12:29:57 AEST 2023
+  # virgil 20230704.4
+  # Mon Jul  3 22:01:23 UTC 2023 -- Tue Jul  4 08:01:23 AEST 2023
   #
-  # Merged PR 12980: (fix windows pipeline) Get disk ID for OS installation
-  # 01edb1601ec972fc01840780ef9482330405876c
-  virgil_build_id: '628617'
+  # Merged PR 12983: Move some hypervisors to pod 1
+  # 615f9cca9252a7d77416d3d7047dbb15af2bea7d
+  virgil_build_id: '629375'
