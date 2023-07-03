@@ -7,9 +7,9 @@ variables:
   # 6039b87af3f1226b645d4af34de307dde09f7604
   dante_build_id: '628541'
 
-  # virgil 20230703.2
-  # Sun Jul  2 23:17:22 UTC 2023 -- Mon Jul  3 09:17:22 AEST 2023
+  # virgil 20230703.5
+  # Mon Jul  3 02:29:57 UTC 2023 -- Mon Jul  3 12:29:57 AEST 2023
   #
-  # Merge pull request 12984 from virgil_python_upgrade into master
-  # a7d5e574c4700d5f721fc8df36829b7c7743dc2d
-  virgil_build_id: '628469'
+  # Merged PR 12980: (fix windows pipeline) Get disk ID for OS installation
+  # 01edb1601ec972fc01840780ef9482330405876c
+  virgil_build_id: '628617'
