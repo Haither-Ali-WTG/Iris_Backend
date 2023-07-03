@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230630.3
-  # Fri Jun 30 01:10:14 UTC 2023 -- Fri Jun 30 11:10:14 AEST 2023
+  # Dante Build Artifact 20230703.1
+  # Mon Jul  3 00:46:30 UTC 2023 -- Mon Jul  3 10:46:30 AEST 2023
   #
-  # Merge pull request 12947 from dante_python_upgrade into master
-  # 51bbae24e7c5ef4bd10c96d753680b5f39246442
-  dante_build_id: '625898'
+  # Merged PR 12784: Dante - Restart Services AU2, Manual Intervention after Dry run -- 1/2
+  # 6039b87af3f1226b645d4af34de307dde09f7604
+  dante_build_id: '628541'
 
-  # virgil 20230629.6
-  # Thu Jun 29 07:22:11 UTC 2023 -- Thu Jun 29 17:22:11 AEST 2023
+  # virgil 20230703.2
+  # Sun Jul  2 23:17:22 UTC 2023 -- Mon Jul  3 09:17:22 AEST 2023
   #
-  # Merged PR 12957: Revert "upgrade cumulus apex15/16/19/20-22 leaf2/4"
-  # c5fa0f21b3b71eec5f6d60e550915736f57d54d1
-  virgil_build_id: '625194'
+  # Merge pull request 12984 from virgil_python_upgrade into master
+  # a7d5e574c4700d5f721fc8df36829b7c7743dc2d
+  virgil_build_id: '628469'
