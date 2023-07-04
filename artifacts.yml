@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230704.2
-  # Tue Jul  4 01:47:33 UTC 2023 -- Tue Jul  4 11:47:33 AEST 2023
+  # Dante Build Artifact 20230704.5
+  # Tue Jul  4 06:06:24 UTC 2023 -- Tue Jul  4 16:06:24 AEST 2023
   #
-  # Merge pull request 12991 from dante_artifact_upgrade into master
-  # 55656d1a6883e775282cdc8a10bacc9e2a405328
-  dante_build_id: '629603'
+  # Merged PR 13039: Dante - Rollback Dante Deployment pipeline changes
+  # a3e3decebbfdd02eee65342f28dc19e87fd7167c
+  dante_build_id: '629869'
 
-  # virgil 20230704.16
-  # Tue Jul  4 03:52:47 UTC 2023 -- Tue Jul  4 13:52:47 AEST 2023
+  # virgil 20230704.18
+  # Tue Jul  4 05:05:51 UTC 2023 -- Tue Jul  4 15:05:51 AEST 2023
   #
-  # Merged PR 12702: Added new buckets to Teardown List
-  # d00a91aa06a1bbcd6af3dffb76edf9eeda050469
-  virgil_build_id: '629730'
+  # Merged PR 13034: Eye-prod new master records
+  # 0df9218d060c8edcda99a333690d43fa6ee614a6
+  virgil_build_id: '629802'
