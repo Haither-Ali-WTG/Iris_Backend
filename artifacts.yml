@@ -7,9 +7,9 @@ variables:
   # 55656d1a6883e775282cdc8a10bacc9e2a405328
   dante_build_id: '629603'
 
-  # virgil 20230704.9
-  # Tue Jul  4 00:08:07 UTC 2023 -- Tue Jul  4 10:08:07 AEST 2023
+  # virgil 20230704.14
+  # Tue Jul  4 01:55:48 UTC 2023 -- Tue Jul  4 11:55:48 AEST 2023
   #
-  # Merged PR 10924: Adding 4x/24 blocks in AU2 for Kubernetes
-  # 6aba2f712a758faee8c1102bd7d924fe402c12d3
-  virgil_build_id: '629515'
+  # Merged PR 12999: Add machine type to hardware profiles for server rebuilds
+  # 1931f4854a12a3956e6ee05bbcf502a931f930a1
+  virgil_build_id: '629616'
