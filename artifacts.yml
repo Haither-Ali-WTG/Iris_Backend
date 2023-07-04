@@ -7,9 +7,9 @@ variables:
   # f058ed8d4b1095ff9b529c5af2932e3016f4c5e4
   dante_build_id: '628719'
 
-  # virgil 20230704.7
-  # Mon Jul  3 23:14:26 UTC 2023 -- Tue Jul  4 09:14:26 AEST 2023
+  # virgil 20230704.9
+  # Tue Jul  4 00:08:07 UTC 2023 -- Tue Jul  4 10:08:07 AEST 2023
   #
-  # Merge pull request 13010 from virgil_python_upgrade into master
-  # 65cbd3a436485b5e13d4f53eaff42becdc1e27ed
-  virgil_build_id: '629450'
+  # Merged PR 10924: Adding 4x/24 blocks in AU2 for Kubernetes
+  # 6aba2f712a758faee8c1102bd7d924fe402c12d3
+  virgil_build_id: '629515'
