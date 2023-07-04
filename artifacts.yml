@@ -7,9 +7,9 @@ variables:
   # a3e3decebbfdd02eee65342f28dc19e87fd7167c
   dante_build_id: '629869'
 
-  # virgil 20230704.18
-  # Tue Jul  4 05:05:51 UTC 2023 -- Tue Jul  4 15:05:51 AEST 2023
+  # virgil 20230705.3
+  # Tue Jul  4 23:37:31 UTC 2023 -- Wed Jul  5 09:37:31 AEST 2023
   #
-  # Merged PR 13034: Eye-prod new master records
-  # 0df9218d060c8edcda99a333690d43fa6ee614a6
-  virgil_build_id: '629802'
+  # Merge pull request 13051 from virgil_python_upgrade into master
+  # 076c9884e19377507306b75acbc689149e175b2d
+  virgil_build_id: '630522'
