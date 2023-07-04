@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230703.2
-  # Mon Jul  3 04:54:48 UTC 2023 -- Mon Jul  3 14:54:48 AEST 2023
+  # Dante Build Artifact 20230704.2
+  # Tue Jul  4 01:47:33 UTC 2023 -- Tue Jul  4 11:47:33 AEST 2023
   #
-  # Merged PR 12981: (Fix windows pipeline) Get disk ID from Virgil
-  # f058ed8d4b1095ff9b529c5af2932e3016f4c5e4
-  dante_build_id: '628719'
+  # Merge pull request 12991 from dante_artifact_upgrade into master
+  # 55656d1a6883e775282cdc8a10bacc9e2a405328
+  dante_build_id: '629603'
 
   # virgil 20230704.9
   # Tue Jul  4 00:08:07 UTC 2023 -- Tue Jul  4 10:08:07 AEST 2023
