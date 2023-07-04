@@ -7,9 +7,9 @@ variables:
   # 55656d1a6883e775282cdc8a10bacc9e2a405328
   dante_build_id: '629603'
 
-  # virgil 20230704.14
-  # Tue Jul  4 01:55:48 UTC 2023 -- Tue Jul  4 11:55:48 AEST 2023
+  # virgil 20230704.16
+  # Tue Jul  4 03:52:47 UTC 2023 -- Tue Jul  4 13:52:47 AEST 2023
   #
-  # Merged PR 12999: Add machine type to hardware profiles for server rebuilds
-  # 1931f4854a12a3956e6ee05bbcf502a931f930a1
-  virgil_build_id: '629616'
+  # Merged PR 12702: Added new buckets to Teardown List
+  # d00a91aa06a1bbcd6af3dffb76edf9eeda050469
+  virgil_build_id: '629730'
