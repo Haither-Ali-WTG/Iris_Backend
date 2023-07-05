@@ -7,9 +7,9 @@ variables:
   # 929583b688dd66799db97f5fe70c9bce131cf1ce
   dante_build_id: '630875'
 
-  # virgil 20230705.3
-  # Tue Jul  4 23:37:31 UTC 2023 -- Wed Jul  5 09:37:31 AEST 2023
+  # virgil 20230705.5
+  # Wed Jul  5 09:15:14 UTC 2023 -- Wed Jul  5 19:15:14 AEST 2023
   #
-  # Merge pull request 13051 from virgil_python_upgrade into master
-  # 076c9884e19377507306b75acbc689149e175b2d
-  virgil_build_id: '630522'
+  # Merged PR 13009: CS01335333 - New Kafka topics for new International Logistics index's
+  # ab44c43bbf185576c74044a422ef95db90647cda
+  virgil_build_id: '631009'
