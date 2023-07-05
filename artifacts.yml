@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230705.2
-  # Wed Jul  5 00:54:57 UTC 2023 -- Wed Jul  5 10:54:57 AEST 2023
+  # Dante Build Artifact 20230705.3
+  # Wed Jul  5 02:30:42 UTC 2023 -- Wed Jul  5 12:30:42 AEST 2023
   #
-  # Merged PR 13049: Install aws cli on mgmt nodes
-  # 6f8fc7ac75595371a5049659f0aa714247e7b710
-  dante_build_id: '630594'
+  # Merged PR 13005: Detect XCC Version and machine type for BIOS Settings
+  # de7c3288b0c7683f4e62983eb07f8f1d84887b87
+  dante_build_id: '630691'
 
   # virgil 20230705.3
   # Tue Jul  4 23:37:31 UTC 2023 -- Wed Jul  5 09:37:31 AEST 2023
