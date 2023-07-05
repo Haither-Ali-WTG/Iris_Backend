@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230704.5
-  # Tue Jul  4 06:06:24 UTC 2023 -- Tue Jul  4 16:06:24 AEST 2023
+  # Dante Build Artifact 20230705.1
+  # Tue Jul  4 23:56:16 UTC 2023 -- Wed Jul  5 09:56:16 AEST 2023
   #
-  # Merged PR 13039: Dante - Rollback Dante Deployment pipeline changes
-  # a3e3decebbfdd02eee65342f28dc19e87fd7167c
-  dante_build_id: '629869'
+  # Merge pull request 12987 from dante_python_upgrade into master
+  # a251f3f927cff7c52120d205f72293e9dc2468e0
+  dante_build_id: '630538'
 
   # virgil 20230705.3
   # Tue Jul  4 23:37:31 UTC 2023 -- Wed Jul  5 09:37:31 AEST 2023
