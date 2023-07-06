@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230705.10
-  # Wed Jul  5 06:04:58 UTC 2023 -- Wed Jul  5 16:04:58 AEST 2023
+  # Dante Build Artifact 20230706.1
+  # Thu Jul  6 05:01:58 UTC 2023 -- Thu Jul  6 15:01:58 AEST 2023
   #
-  # Merged PR 13071: Artifact upgrades added for bare-metal
-  # 929583b688dd66799db97f5fe70c9bce131cf1ce
-  dante_build_id: '630875'
+  # Merge pull request 13094 from dante_artifact_upgrade into master
+  # 5d3b0699b10f55069df35134c1ca0502d09f0219
+  dante_build_id: '631826'
 
-  # virgil 20230705.5
-  # Wed Jul  5 09:15:14 UTC 2023 -- Wed Jul  5 19:15:14 AEST 2023
+  # virgil 20230706.3
+  # Thu Jul  6 05:21:48 UTC 2023 -- Thu Jul  6 15:21:48 AEST 2023
   #
-  # Merged PR 13009: CS01335333 - New Kafka topics for new International Logistics index's
-  # ab44c43bbf185576c74044a422ef95db90647cda
-  virgil_build_id: '631009'
+  # Merged PR 13114: Extend topic retention on sql-cpu-monitoring-outbound
+  # 15688f0b303ee096c617fb8c17a0e395d0a0f195
+  virgil_build_id: '631844'
