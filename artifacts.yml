@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230706.1
-  # Thu Jul  6 05:01:58 UTC 2023 -- Thu Jul  6 15:01:58 AEST 2023
+  # Dante Build Artifact 20230707.1
+  # Thu Jul  6 23:47:48 UTC 2023 -- Fri Jul  7 09:47:48 AEST 2023
   #
-  # Merge pull request 13094 from dante_artifact_upgrade into master
-  # 5d3b0699b10f55069df35134c1ca0502d09f0219
-  dante_build_id: '631826'
+  # Merge pull request 13117 from dante_artifact_upgrade into master
+  # c46773bf073131fd9aed541f2a0d8f8660f0024e
+  dante_build_id: '632572'
 
-  # virgil 20230706.3
-  # Thu Jul  6 05:21:48 UTC 2023 -- Thu Jul  6 15:21:48 AEST 2023
+  # virgil 20230710.2
+  # Sun Jul  9 22:42:05 UTC 2023 -- Mon Jul 10 08:42:05 AEST 2023
   #
-  # Merged PR 13114: Extend topic retention on sql-cpu-monitoring-outbound
-  # 15688f0b303ee096c617fb8c17a0e395d0a0f195
-  virgil_build_id: '631844'
+  # Merged PR 13099: Add one C54 to facilitate R640 removal
+  # 7287a21aa0e3367776d6c36d09d816024dfa329b
+  virgil_build_id: '635193'
