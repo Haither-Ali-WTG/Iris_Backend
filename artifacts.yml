@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230707.1
-  # Thu Jul  6 23:47:48 UTC 2023 -- Fri Jul  7 09:47:48 AEST 2023
+  # Dante Build Artifact 20230710.1
+  # Mon Jul 10 05:22:24 UTC 2023 -- Mon Jul 10 15:22:24 AEST 2023
   #
-  # Merge pull request 13117 from dante_artifact_upgrade into master
-  # c46773bf073131fd9aed541f2a0d8f8660f0024e
-  dante_build_id: '632572'
+  # Merged PR 13160: Filebeat - dissect %ADJCHANGE messages from syslog input
+  # b2636b89df2b3aef1f3a44e488f733ffc611e4ea
+  dante_build_id: '635569'
 
-  # virgil 20230710.2
-  # Sun Jul  9 22:42:05 UTC 2023 -- Mon Jul 10 08:42:05 AEST 2023
+  # virgil 20230710.4
+  # Sun Jul  9 23:42:23 UTC 2023 -- Mon Jul 10 09:42:23 AEST 2023
   #
-  # Merged PR 13099: Add one C54 to facilitate R640 removal
-  # 7287a21aa0e3367776d6c36d09d816024dfa329b
-  virgil_build_id: '635193'
+  # Merge pull request 13144 from virgil_python_upgrade into master
+  # 4ebbe15141bf1980ba178f4ec9292f4d35a68008
+  virgil_build_id: '635256'
