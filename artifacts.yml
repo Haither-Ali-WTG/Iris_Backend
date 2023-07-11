@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230711.1
-  # Mon Jul 10 23:33:00 UTC 2023 -- Tue Jul 11 09:33:00 AEST 2023
+  # Dante Build Artifact 20230711.3
+  # Tue Jul 11 03:34:52 UTC 2023 -- Tue Jul 11 13:34:52 AEST 2023
   #
-  # Merged PR 13163: Publish Windows ISOs during nightly build process instead of each Windows server rebuild
-  # 0fb599fdc9c5bfd595f9a865e77b7a24cee791a5
-  dante_build_id: '636273'
+  # Merged PR 13176: Removed xclarity exports for standalone-hypervisors
+  # c16b11c1c29174381c26caed76bae69650d3678f
+  dante_build_id: '636508'
 
   # virgil 20230710.4
   # Sun Jul  9 23:42:23 UTC 2023 -- Mon Jul 10 09:42:23 AEST 2023
