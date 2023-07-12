@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230712.4
-  # Wed Jul 12 01:21:19 UTC 2023 -- Wed Jul 12 11:21:19 AEST 2023
+  # Dante Build Artifact 20230713.1
+  # Wed Jul 12 23:21:24 UTC 2023 -- Thu Jul 13 09:21:24 AEST 2023
   #
-  # Merged PR 13110: Include bare-metal as trigger for automatic artifact upgrades
-  # d398179e43ca33ae4fb00fbd58165faa47530c91
-  dante_build_id: '637379'
+  # Merged PR 13208: syslog processor template format
+  # 7f8c3c49813bbff9e705f841e18fd515c08ea9a2
+  dante_build_id: '638228'
 
   # virgil 20230712.3
   # Wed Jul 12 00:07:18 UTC 2023 -- Wed Jul 12 10:07:18 AEST 2023
