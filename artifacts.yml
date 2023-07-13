@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230713.1
-  # Wed Jul 12 23:21:24 UTC 2023 -- Thu Jul 13 09:21:24 AEST 2023
+  # Dante Build Artifact 20230713.2
+  # Thu Jul 13 01:45:11 UTC 2023 -- Thu Jul 13 11:45:11 AEST 2023
   #
-  # Merged PR 13208: syslog processor template format
-  # 7f8c3c49813bbff9e705f841e18fd515c08ea9a2
-  dante_build_id: '638228'
+  # Merged PR 13207: Update for common artifact for dante run.
+  # 599e177ba70d3511370a3151d4ba72c77cc4b511
+  dante_build_id: '638351'
 
   # virgil 20230712.3
   # Wed Jul 12 00:07:18 UTC 2023 -- Wed Jul 12 10:07:18 AEST 2023
