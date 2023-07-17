@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230713.3
-  # Thu Jul 13 04:37:52 UTC 2023 -- Thu Jul 13 14:37:52 AEST 2023
+  # Dante Build Artifact 20230717.2
+  # Mon Jul 17 00:44:38 UTC 2023 -- Mon Jul 17 10:44:38 AEST 2023
   #
-  # Merged PR 13225: Code Cleanup - Rebuild XCC Server role
-  # 332aee61994d5bfe4c7fd66ed381f08769c08f41
-  dante_build_id: '638529'
+  # Merged PR 13239: Migrate-in the Azure Pipeline to queue expired builds
+  # 459d8605104a2ac68099f3922c93d3d25ea7d93b
+  dante_build_id: '642078'
 
-  # virgil 20230714.2
-  # Thu Jul 13 23:45:52 UTC 2023 -- Fri Jul 14 09:45:52 AEST 2023
+  # virgil 20230717.2
+  # Sun Jul 16 23:56:37 UTC 2023 -- Mon Jul 17 09:56:37 AEST 2023
   #
-  # Merge pull request 13243 from virgil_python_upgrade into master
-  # 3787853d075719c4c80ee70588f198d24af3b10e
-  virgil_build_id: '639259'
+  # Merge pull request 13272 from virgil_python_upgrade into master
+  # 1a84505c0bae9e3c60caa6230be5c2c3e251a6eb
+  virgil_build_id: '642013'
