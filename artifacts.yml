@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230717.2
-  # Mon Jul 17 00:44:38 UTC 2023 -- Mon Jul 17 10:44:38 AEST 2023
+  # Dante Build Artifact 20230717.4
+  # Mon Jul 17 04:03:23 UTC 2023 -- Mon Jul 17 14:03:23 AEST 2023
   #
-  # Merged PR 13239: Migrate-in the Azure Pipeline to queue expired builds
-  # 459d8605104a2ac68099f3922c93d3d25ea7d93b
-  dante_build_id: '642078'
+  # Merged PR 13258: bgp processor regexp single quote
+  # 0c7f1cac498333533e78af954b720fc3ed56261f
+  dante_build_id: '642289'
 
-  # virgil 20230717.2
-  # Sun Jul 16 23:56:37 UTC 2023 -- Mon Jul 17 09:56:37 AEST 2023
+  # virgil 20230717.26
+  # Mon Jul 17 05:34:27 UTC 2023 -- Mon Jul 17 15:34:27 AEST 2023
   #
-  # Merge pull request 13272 from virgil_python_upgrade into master
-  # 1a84505c0bae9e3c60caa6230be5c2c3e251a6eb
-  virgil_build_id: '642013'
+  # Merged PR 13306: Corrected C-00067 links to be same as in production
+  # 1043a00f7d9a7c88277f7497b9a79771be77e745
+  virgil_build_id: '642402'
