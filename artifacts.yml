@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230717.4
-  # Mon Jul 17 04:03:23 UTC 2023 -- Mon Jul 17 14:03:23 AEST 2023
+  # Dante Build Artifact 20230717.7
+  # Mon Jul 17 08:25:08 UTC 2023 -- Mon Jul 17 18:25:08 AEST 2023
   #
-  # Merged PR 13258: bgp processor regexp single quote
-  # 0c7f1cac498333533e78af954b720fc3ed56261f
-  dante_build_id: '642289'
+  # Merge pull request 13299 from dante_artifact_upgrade into master
+  # 0e146ed00c377f5a0cf4d51e75f99ac9fcdcb3eb
+  dante_build_id: '642553'
 
-  # virgil 20230717.26
-  # Mon Jul 17 05:34:27 UTC 2023 -- Mon Jul 17 15:34:27 AEST 2023
+  # virgil 20230717.30
+  # Mon Jul 17 06:28:40 UTC 2023 -- Mon Jul 17 16:28:40 AEST 2023
   #
-  # Merged PR 13306: Corrected C-00067 links to be same as in production
-  # 1043a00f7d9a7c88277f7497b9a79771be77e745
-  virgil_build_id: '642402'
+  # Merged PR 13262: Virgil - Write notes at the top of file for queues
+  # dc086792819084e357d188f3f07557507a783a6d
+  virgil_build_id: '642458'
