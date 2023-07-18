@@ -7,9 +7,9 @@ variables:
   # 838c661c6c0f7764a4f811338274ab36cb09e7a6
   dante_build_id: '643140'
 
-  # virgil 20230718.2
-  # Tue Jul 18 00:52:09 UTC 2023 -- Tue Jul 18 10:52:09 AEST 2023
+  # virgil 20230718.4
+  # Tue Jul 18 04:04:40 UTC 2023 -- Tue Jul 18 14:04:40 AEST 2023
   #
-  # Merged PR 13282: Rename routed and nonrouted port profiles - AU2
-  # 6ad86aa3af054b9b12a5e242d2dc8a92d9503ce0
-  virgil_build_id: '643202'
+  # Merged PR 13335: Disabled ceph load balancer node from dante runs
+  # 1e885a135306f39d1d63bfa293136a09b83a995b
+  virgil_build_id: '643383'
