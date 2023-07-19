@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230718.3
-  # Tue Jul 18 08:26:19 UTC 2023 -- Tue Jul 18 18:26:19 AEST 2023
+  # Dante Build Artifact 20230719.1
+  # Wed Jul 19 00:35:17 UTC 2023 -- Wed Jul 19 10:35:17 AEST 2023
   #
-  # Merged PR 13331: filebeat bgpd message parser
-  # 0591d12c02c75e5c36a1219c6b903c05a4bc73d1
-  dante_build_id: '643623'
+  # Merge pull request 13365 from dante_python_upgrade into master
+  # 171653fbf7cc2bb970ab2589369c4dc63183bbf5
+  dante_build_id: '644307'
 
   # virgil 20230719.5
   # Tue Jul 18 23:38:09 UTC 2023 -- Wed Jul 19 09:38:09 AEST 2023
