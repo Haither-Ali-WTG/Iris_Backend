@@ -35,7 +35,7 @@ cffi==1.15.1
     # via cryptography
 charset-normalizer==3.2.0
     # via requests
-click==8.1.5
+click==8.1.6
     # via
     #   black
     #   safety
@@ -205,7 +205,7 @@ typing-extensions==4.7.1
     # via
     #   astroid
     #   mypy
-urllib3==2.0.3
+urllib3==2.0.4
     # via requests
 wcmatch==8.4.1
     # via ansible-lint
