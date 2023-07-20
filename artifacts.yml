@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230719.4
-  # Wed Jul 19 04:22:32 UTC 2023 -- Wed Jul 19 14:22:32 AEST 2023
+  # Dante Build Artifact 20230719.5
+  # Wed Jul 19 12:28:18 UTC 2023 -- Wed Jul 19 22:28:18 AEST 2023
   #
-  # Merge pull request 13386 from dante_artifact_upgrade into master
-  # 41ebec02b8195bf1a5cda58f17498279dee0f385
-  dante_build_id: '644527'
+  # Merged PR 13372: Clarify detected info in ~/dante_docs/basic_info.txt
+  # dfb2ff076ed9b6f0f5cf427a649aaba1e09a9127
+  dante_build_id: '644867'
 
-  # virgil 20230719.7
-  # Wed Jul 19 03:23:06 UTC 2023 -- Wed Jul 19 13:23:06 AEST 2023
+  # virgil 20230720.8
+  # Thu Jul 20 00:04:55 UTC 2023 -- Thu Jul 20 10:04:55 AEST 2023
   #
-  # Merged PR 13384: Fixed au2kvl00014 cabling
-  # d082345c94f432ff5e51bb4d12396846a88e0af6
-  virgil_build_id: '644479'
+  # Merge pull request 13405 from virgil_python_upgrade into master
+  # cee59040c730c1f2655ac82de4ae7fff29b623f9
+  virgil_build_id: '645339'
