@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230720.1
-  # Thu Jul 20 01:05:42 UTC 2023 -- Thu Jul 20 11:05:42 AEST 2023
+  # Dante Build Artifact 20230720.3
+  # Thu Jul 20 04:01:15 UTC 2023 -- Thu Jul 20 14:01:15 AEST 2023
   #
-  # Merge pull request 13400 from dante_artifact_upgrade into master
-  # cfc36a77dd33d29256951bb0c52a1aeb3b6d8cc5
-  dante_build_id: '645405'
+  # Merged PR 13411: Disabled ES0BE2 vrf from DE1 network checks
+  # 43b9616903de406d250582ec0932a729007205a8
+  dante_build_id: '645561'
 
   # virgil 20230720.8
   # Thu Jul 20 00:04:55 UTC 2023 -- Thu Jul 20 10:04:55 AEST 2023
