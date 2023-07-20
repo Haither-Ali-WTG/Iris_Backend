@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230720.3
-  # Thu Jul 20 04:01:15 UTC 2023 -- Thu Jul 20 14:01:15 AEST 2023
+  # Dante Build Artifact 20230720.4
+  # Thu Jul 20 04:54:45 UTC 2023 -- Thu Jul 20 14:54:45 AEST 2023
   #
-  # Merged PR 13411: Disabled ES0BE2 vrf from DE1 network checks
-  # 43b9616903de406d250582ec0932a729007205a8
-  dante_build_id: '645561'
+  # Merged PR 13383: Do not perform ipmitool changes on non maintainable nodes
+  # 5455508010cb3cb498fa7944b4f312a29398c711
+  dante_build_id: '645604'
 
   # virgil 20230720.8
   # Thu Jul 20 00:04:55 UTC 2023 -- Thu Jul 20 10:04:55 AEST 2023
