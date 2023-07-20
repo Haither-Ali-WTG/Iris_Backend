@@ -7,9 +7,9 @@ variables:
   # 5455508010cb3cb498fa7944b4f312a29398c711
   dante_build_id: '645604'
 
-  # virgil 20230720.8
-  # Thu Jul 20 00:04:55 UTC 2023 -- Thu Jul 20 10:04:55 AEST 2023
+  # virgil 20230720.10
+  # Thu Jul 20 06:03:37 UTC 2023 -- Thu Jul 20 16:03:37 AEST 2023
   #
-  # Merge pull request 13405 from virgil_python_upgrade into master
-  # cee59040c730c1f2655ac82de4ae7fff29b623f9
-  virgil_build_id: '645339'
+  # Merged PR 13429: Disabled load balancers, kvm and esx nodes in AU2
+  # 1919cf465f655b526b6e09f515cce4493417d10a
+  virgil_build_id: '645685'
