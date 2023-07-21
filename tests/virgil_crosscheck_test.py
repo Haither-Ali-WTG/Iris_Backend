@@ -48,13 +48,13 @@ class TestVirgilCrosscheck(TestCase):
                         self.assertEqual(
                             iris_config["ansible_host"],
                             virgil_info["virgil_ip_primary"],
-                            f"Mismatched IP address compared to Virgil",
+                            "Mismatched IP address compared to Virgil",
                         )
 
                         self.assertEqual(
                             iris_config["os"],
                             virgil_info["virgil_os_variant"],
-                            f"Mismatched OS compared to Virgil",
+                            "Mismatched OS compared to Virgil",
                         )
 
                         self.assertEqual(
@@ -66,5 +66,5 @@ class TestVirgilCrosscheck(TestCase):
                         self.assertEqual(
                             virgil_info["virgil_role"],
                             "server_loadbalancer_iris",
-                            f"Virgil role must be server_loadbalancer_iris",
+                            "Virgil role must be server_loadbalancer_iris",
                         )
