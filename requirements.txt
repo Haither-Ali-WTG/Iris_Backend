@@ -129,6 +129,8 @@ pytest==7.4.0
     # via
     #   -r requirements.in
     #   pytest-cov
+pytest-subtests==0.11.0
+    # added manually
 pytest-cov==4.1.0
     # via -r requirements.in
 python-dateutil==2.8.2
