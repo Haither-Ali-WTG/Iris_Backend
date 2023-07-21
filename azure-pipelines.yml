@@ -31,6 +31,7 @@ stages:
               project: 'InfrastructureAutomation'
               # virgil pipeline Id
               pipeline: 4
+              artifact: inventories
               buildVersionToDownload: 'specific'
               buildId: '$(virgil_build_id)'
               path: $(Build.SourcesDirectory)/inventories
