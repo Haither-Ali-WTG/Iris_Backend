@@ -7,9 +7,9 @@ variables:
   # d2d613c38674cefe7a7d9fa3fceb908743bf1777
   dante_build_id: '646503'
 
-  # virgil 20230720.10
-  # Thu Jul 20 06:03:37 UTC 2023 -- Thu Jul 20 16:03:37 AEST 2023
+  # virgil 20230721.5
+  # Fri Jul 21 04:08:26 UTC 2023 -- Fri Jul 21 14:08:26 AEST 2023
   #
-  # Merged PR 13429: Disabled load balancers, kvm and esx nodes in AU2
-  # 1919cf465f655b526b6e09f515cce4493417d10a
-  virgil_build_id: '645685'
+  # Merged PR 13452: add new switches apex3 and 4 replacement
+  # dccaed686bb6940e69b8b3486a75267af9c711d8
+  virgil_build_id: '646608'
