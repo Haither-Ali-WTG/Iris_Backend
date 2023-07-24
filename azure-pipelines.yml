@@ -24,6 +24,19 @@ stages:
               pip install -r requirements.txt
             displayName: 'Install requirements'
 
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download virgil inventories'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # virgil pipeline Id
+              pipeline: 4
+              artifact: inventories
+              buildVersionToDownload: 'specific'
+              buildId: '$(virgil_build_id)'
+              path: $(Build.SourcesDirectory)/inventories
+              patterns: inventory-*-A.yaml
+
           - script: |
               set -euxo pipefail
               pytest
