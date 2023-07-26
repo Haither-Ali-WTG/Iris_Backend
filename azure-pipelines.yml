@@ -39,7 +39,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              pytest
+              pytest --tb=short
             displayName: 'Python tests'
 
           - task: PublishTestResults@2
