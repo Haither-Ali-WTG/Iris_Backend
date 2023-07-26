@@ -34,7 +34,7 @@ class TestSchema(VirgilYamaleTestCase):
 
     base_dir = ''  # for the VirgilYamaleTestCase class
 
-    def test(self):
+    def test(self) -> None:
         """
         Check the configuration files against Yamale schemas
         """
@@ -72,7 +72,7 @@ class TestSchema(VirgilYamaleTestCase):
 
         with open('tests/schema_common.yaml', encoding='utf-8') as fh:
             yaml = ruamel.yaml.YAML(typ='safe', pure=True)
-            self.common = list(yaml.load_all(fh))
+            TestSchema.common = list(yaml.load_all(fh))
 
         for kind, fnames in by_kind.items():
             with self.subTest(kind=kind):
