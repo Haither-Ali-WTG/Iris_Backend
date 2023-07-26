@@ -215,6 +215,8 @@ xmltodict==0.13.0
     # via
     #   pywinrm
     #   yq
+yamale==4.0.4
+    # added manually
 yamllint==1.32.0
     # via
     #   -r requirements.in
