@@ -52,6 +52,7 @@ class TestSchema(VirgilYamaleTestCase):
                 dirs.remove('.git')
                 dirs.remove('ansible')  # only one config file, hard-coded above
                 dirs.remove('inventories')
+                dirs.remove('reports')
                 dirs.remove('tests')
 
             for file in files:
