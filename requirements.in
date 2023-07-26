@@ -12,6 +12,7 @@ pytest
 pytest-cov
 pytest-subtests
 safety
+yamale
 yamllint
 
 # required for shell scripts

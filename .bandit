@@ -1,0 +1,6 @@
+[bandit]
+skips=B101,B701
+# - B101 - Use of assert detected.
+#
+#   This is only a problem if optimised byte code is used; nevertheless, we
+#   should probably avoid it (TODO).
