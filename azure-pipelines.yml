@@ -35,7 +35,7 @@ stages:
               buildVersionToDownload: 'specific'
               buildId: '$(virgil_build_id)'
               path: $(Build.SourcesDirectory)/inventories
-              patterns:
+              patterns: |
                 inventory-*-A.yaml
                 virgil_yamale.py
 
