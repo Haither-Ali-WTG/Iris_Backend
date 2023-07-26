@@ -12,6 +12,8 @@ pytest
 pytest-cov
 pytest-subtests
 safety
+types-PyYAML
+types-requests
 yamale
 yamllint
 

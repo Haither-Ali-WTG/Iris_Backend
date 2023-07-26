@@ -22,7 +22,7 @@ class TestVirgilCrosscheck(TestCase):
             with self.subTest(file=fname):
                 m = fname_pat.match(fname)
                 self.assertIsNotNone(m)
-                dc = m.group(1).upper()
+                dc = m.group(1).upper()  # type: ignore  # false positive
 
                 with open(fname, encoding="utf8") as fh:
                     iris_file = yaml.load(fh)

@@ -203,6 +203,12 @@ tomlkit==0.11.8
     # via
     #   pylint
     #   yq
+types-PyYAML==6.0.12.11
+    # added manually
+types-requests==2.31.0.2
+    # added manually
+types-urllib3==1.26.25.14
+    # added manually
 typing-extensions==4.7.1
     # via
     #   astroid
