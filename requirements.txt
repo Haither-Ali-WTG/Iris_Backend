@@ -202,16 +202,16 @@ tomli==2.0.1
     #   mypy
     #   pylint
     #   pytest
-tomlkit==0.11.8
+tomlkit==0.12.1
     # via
     #   pylint
     #   yq
-types-PyYAML==6.0.12.11
-    # added manually
+types-pyyaml==6.0.12.11
+    # via -r requirements.in
 types-requests==2.31.0.2
-    # added manually
+    # via -r requirements.in
 types-urllib3==1.26.25.14
-    # added manually
+    # via types-requests
 typing-extensions==4.7.1
     # via
     #   astroid
