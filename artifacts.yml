@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230725.1
-  # Tue Jul 25 08:34:25 UTC 2023 -- Tue Jul 25 18:34:25 AEST 2023
+  # Dante Build Artifact 20230727.1
+  # Thu Jul 27 00:37:40 UTC 2023 -- Thu Jul 27 10:37:40 AEST 2023
   #
-  # Merge pull request 13497 from dante_artifact_upgrade into master
-  # 839cea7e097eac13c1c156a6bf56cf3b0fd2915a
-  dante_build_id: '650567'
+  # Merged PR 13569: Fixed Windows DVD drive detection when Autoinstalling
+  # 6112d353aa151acc7fe61d34cf38da4a59413fc4
+  dante_build_id: '652215'
 
-  # virgil 20230726.4
-  # Wed Jul 26 00:13:48 UTC 2023 -- Wed Jul 26 10:13:48 AEST 2023
+  # virgil 20230726.10
+  # Wed Jul 26 12:13:05 UTC 2023 -- Wed Jul 26 22:13:05 AEST 2023
   #
-  # Merge pull request 13537 from virgil_python_upgrade into master
-  # d57e62728d799de73ea656d1836a308b0ec0cfec
-  virgil_build_id: '651169'
+  # Merged PR 13562: Corrected International Logistics Queues from au1-test to au2-prod
+  # 5fdeee8137a5e0a3362d42e169cb3c4d76119b08
+  virgil_build_id: '651728'
