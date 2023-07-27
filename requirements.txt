@@ -22,6 +22,7 @@ astroid==2.15.6
 attrs==23.1.0
     # via
     #   jsonschema
+    #   pytest-subtests
     #   referencing
 bandit==1.7.5
     # via -r requirements.in
@@ -119,7 +120,7 @@ pycparser==2.21
     # via cffi
 pygments==2.15.1
     # via rich
-pylint==2.17.4
+pylint==2.17.5
     # via -r requirements.in
 pyparsing==3.1.0
     # via packaging
@@ -129,9 +130,10 @@ pytest==7.4.0
     # via
     #   -r requirements.in
     #   pytest-cov
-pytest-subtests==0.11.0
-    # added manually
+    #   pytest-subtests
 pytest-cov==4.1.0
+    # via -r requirements.in
+pytest-subtests==0.11.0
     # via -r requirements.in
 python-dateutil==2.8.2
     # via s3cmd
@@ -145,6 +147,7 @@ pyyaml==6.0.1
     #   ansible-core
     #   ansible-lint
     #   bandit
+    #   yamale
     #   yamllint
     #   yq
 referencing==0.30.0
@@ -224,7 +227,7 @@ xmltodict==0.13.0
     #   pywinrm
     #   yq
 yamale==4.0.4
-    # added manually
+    # via -r requirements.in
 yamllint==1.32.0
     # via
     #   -r requirements.in
