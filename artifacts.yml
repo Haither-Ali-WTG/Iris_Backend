@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230727.2
-  # Thu Jul 27 03:48:42 UTC 2023 -- Thu Jul 27 13:48:42 AEST 2023
+  # Dante Build Artifact 20230728.1
+  # Thu Jul 27 23:12:26 UTC 2023 -- Fri Jul 28 09:12:26 AEST 2023
   #
-  # Merged PR 13577: Disabled SE0BE1 vlan from network checks in DE1
-  # 41a12f96ba7f9cc5c8352059f27176920d66e994
-  dante_build_id: '652382'
+  # Merged PR 13586: Make cumulus430 to use standard cumulus 4.1.1 image
+  # 608c7bf99001f867aad4914e3c31dfb470c2398b
+  dante_build_id: '653236'
 
-  # virgil 20230727.2
-  # Thu Jul 27 01:00:51 UTC 2023 -- Thu Jul 27 11:00:51 AEST 2023
+  # virgil 20230728.7
+  # Thu Jul 27 23:14:14 UTC 2023 -- Fri Jul 28 09:14:14 AEST 2023
   #
-  # Merge pull request 13564 from virgil_python_upgrade into master
-  # 6da063b0bfd37388b3a139e3e686aa311b02a191
-  virgil_build_id: '652253'
+  # Merged PR 13585: Cumulus version corrected on several US switches
+  # 493d782dba5c9a82ef0d375b6c9a5898d3233bc5
+  virgil_build_id: '653238'
