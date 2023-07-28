@@ -7,9 +7,9 @@ variables:
   # 608c7bf99001f867aad4914e3c31dfb470c2398b
   dante_build_id: '653236'
 
-  # virgil 20230728.7
-  # Thu Jul 27 23:14:14 UTC 2023 -- Fri Jul 28 09:14:14 AEST 2023
+  # virgil 20230728.15
+  # Fri Jul 28 00:45:31 UTC 2023 -- Fri Jul 28 10:45:31 AEST 2023
   #
-  # Merged PR 13585: Cumulus version corrected on several US switches
-  # 493d782dba5c9a82ef0d375b6c9a5898d3233bc5
-  virgil_build_id: '653238'
+  # Merged PR 13461: Add access ports upstairs
+  # 00c5a080c62f027a27f723eb565d90b674135064
+  virgil_build_id: '653348'
