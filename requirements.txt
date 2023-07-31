@@ -103,14 +103,14 @@ packaging==21.3
     #   dparse
     #   pytest
     #   safety
-pathspec==0.11.1
+pathspec==0.11.2
     # via
     #   ansible-lint
     #   black
     #   yamllint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.9.1
+platformdirs==3.10.0
     # via
     #   black
     #   pylint
@@ -122,7 +122,7 @@ pygments==2.15.1
     # via rich
 pylint==2.17.5
     # via -r requirements.in
-pyparsing==3.1.0
+pyparsing==3.1.1
     # via packaging
 pyspnego==0.9.1
     # via requests-ntlm
@@ -164,7 +164,7 @@ requests-ntlm==1.2.0
     # via pywinrm
 resolvelib==1.0.1
     # via ansible-core
-rich==13.4.2
+rich==13.5.0
     # via
     #   ansible-lint
     #   bandit
