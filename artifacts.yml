@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230801.3
-  # Tue Aug  1 03:51:02 UTC 2023 -- Tue Aug  1 13:51:02 AEST 2023
+  # Dante Build Artifact 20230801.4
+  # Tue Aug  1 06:17:12 UTC 2023 -- Tue Aug  1 16:17:12 AEST 2023
   #
-  # Merge pull request 13687 from dante_artifact_upgrade into master
-  # b7527927233ea1e1c1cd768d1a04d3d10ae61600
-  dante_build_id: '657333'
+  # Merged PR 13638: Ensure NTP is running on switches
+  # 924938942cb34b19e9becf18fb1d593df5410f27
+  dante_build_id: '657501'
 
-  # virgil 20230801.28
-  # Tue Aug  1 05:43:14 UTC 2023 -- Tue Aug  1 15:43:14 AEST 2023
+  # virgil 20230801.32
+  # Tue Aug  1 06:23:05 UTC 2023 -- Tue Aug  1 16:23:05 AEST 2023
   #
-  # Merged PR 13286: Dave from SRE public ssh key -> dave.pub
-  # 16f9772773f7c1babb1a010c54454814e7ef59f5
-  virgil_build_id: '657465'
+  # Merged PR 13696: Clarify allow_mgmt_traffic configuration on firewalls
+  # 2d28e78c034472b9cc17d161075507fe5453ffbf
+  virgil_build_id: '657514'
