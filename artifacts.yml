@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230731.3
-  # Mon Jul 31 05:08:50 UTC 2023 -- Mon Jul 31 15:08:50 AEST 2023
+  # Dante Build Artifact 20230801.1
+  # Mon Jul 31 23:16:49 UTC 2023 -- Tue Aug  1 09:16:49 AEST 2023
   #
-  # Merged PR 13639: Disablded OS version check for 3 US switches while waiting for upgrade
-  # 72e02db2362c41497c9071cb6f7d72ddcad73872
-  dante_build_id: '656298'
+  # Merge pull request 13636 from dante_artifact_upgrade into master
+  # 551a5564bbd87fcd4a96be542783d2c170191e17
+  dante_build_id: '657047'
 
-  # virgil 20230731.2
-  # Mon Jul 31 00:50:37 UTC 2023 -- Mon Jul 31 10:50:37 AEST 2023
+  # virgil 20230801.8
+  # Mon Jul 31 17:01:30 UTC 2023 -- Tue Aug  1 03:01:30 AEST 2023
   #
-  # Merge pull request 13628 from virgil_python_upgrade into master
-  # d3dacb81817cc00fb0774a5a0b5a7595dc93512d
-  virgil_build_id: '656036'
+  # Merged PR 13623: Add storage network to VMware profile in US2
+  # 5c63ed37e33d9f559c0785dbdd01e9a914b8176d
+  virgil_build_id: '656805'
