@@ -164,7 +164,7 @@ requests-ntlm==1.2.0
     # via pywinrm
 resolvelib==1.0.1
     # via ansible-core
-rich==13.5.1
+rich==13.5.2
     # via
     #   ansible-lint
     #   bandit
