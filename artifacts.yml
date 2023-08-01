@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230801.4
-  # Tue Aug  1 06:17:12 UTC 2023 -- Tue Aug  1 16:17:12 AEST 2023
+  # Dante Build Artifact 20230801.5
+  # Tue Aug  1 07:48:03 UTC 2023 -- Tue Aug  1 17:48:03 AEST 2023
   #
-  # Merged PR 13638: Ensure NTP is running on switches
-  # 924938942cb34b19e9becf18fb1d593df5410f27
-  dante_build_id: '657501'
+  # Merged PR 13704: WI00469795 - Elastic SIEM Improvement Program - added new topics to Filebeat to meet various retention requirements
+  # eba21201ab85d7a5fdb8f900eb8130b03e5872b3
+  dante_build_id: '657587'
 
-  # virgil 20230801.32
-  # Tue Aug  1 06:23:05 UTC 2023 -- Tue Aug  1 16:23:05 AEST 2023
+  # virgil 20230802.1
+  # Tue Aug  1 21:03:38 UTC 2023 -- Wed Aug  2 07:03:38 AEST 2023
   #
-  # Merged PR 13696: Clarify allow_mgmt_traffic configuration on firewalls
-  # 2d28e78c034472b9cc17d161075507fe5453ffbf
-  virgil_build_id: '657514'
+  # Merged PR 13723: Correct hardware model
+  # af0da99cf0ed4ec1a3b4fc1ed61f919530c6105d
+  virgil_build_id: '658113'
