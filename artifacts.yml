@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230802.4
-  # Wed Aug  2 09:42:26 UTC 2023 -- Wed Aug  2 19:42:26 AEST 2023
+  # Dante Build Artifact 20230802.6
+  # Wed Aug  2 11:45:53 UTC 2023 -- Wed Aug  2 21:45:53 AEST 2023
   #
-  # Merged PR 13758: New AppID
-  # ed1c609b8f0039c266a5c6979b9ac7dd8cd6035c
-  dante_build_id: '658789'
+  # Merge pull request 13763 from dante_artifact_upgrade into master
+  # 3f997cab5ae38756d5e35fd063175e30c608ac5c
+  dante_build_id: '658906'
 
-  # virgil 20230802.17
-  # Wed Aug  2 09:22:13 UTC 2023 -- Wed Aug  2 19:22:13 AEST 2023
+  # virgil 20230802.23
+  # Wed Aug  2 10:39:34 UTC 2023 -- Wed Aug  2 20:39:34 AEST 2023
   #
-  # Merged PR 13751: WI00614951 remove old R records
-  # 2b306891c80c9c481dc3777f8426bc2c3cd54e02
-  virgil_build_id: '658764'
+  # Merged PR 13764: Virgil - Place compute au2 on demand due to waiting on Lenovo
+  # cdfbebc13d69abbcbbe02a3fe9a6a96bae752f73
+  virgil_build_id: '658852'
