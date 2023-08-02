@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230802.2
-  # Wed Aug  2 03:05:45 UTC 2023 -- Wed Aug  2 13:05:45 AEST 2023
+  # Dante Build Artifact 20230802.3
+  # Wed Aug  2 04:25:30 UTC 2023 -- Wed Aug  2 14:25:30 AEST 2023
   #
-  # Merge pull request 13707 from dante_artifact_upgrade into master
-  # 005bea34622c2e82e3c2d642a75908c42f72fe17
-  dante_build_id: '658424'
+  # Merged PR 13731: SIEM: Updating Syslog to support more listeners
+  # 155add2b8988acf465243d8b38bc560d58cd8636
+  dante_build_id: '658500'
 
   # virgil 20230802.1
   # Tue Aug  1 21:03:38 UTC 2023 -- Wed Aug  2 07:03:38 AEST 2023
