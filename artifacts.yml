@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230802.1
-  # Wed Aug  2 01:32:13 UTC 2023 -- Wed Aug  2 11:32:13 AEST 2023
+  # Dante Build Artifact 20230802.2
+  # Wed Aug  2 03:05:45 UTC 2023 -- Wed Aug  2 13:05:45 AEST 2023
   #
-  # Merged PR 13705: added elastic for v 8 packages
-  # 578fe68e143dfe64a1e2bfe9a80baa584f6874f9
-  dante_build_id: '658336'
+  # Merge pull request 13707 from dante_artifact_upgrade into master
+  # 005bea34622c2e82e3c2d642a75908c42f72fe17
+  dante_build_id: '658424'
 
   # virgil 20230802.1
   # Tue Aug  1 21:03:38 UTC 2023 -- Wed Aug  2 07:03:38 AEST 2023
