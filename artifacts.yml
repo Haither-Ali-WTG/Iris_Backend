@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230801.5
-  # Tue Aug  1 07:48:03 UTC 2023 -- Tue Aug  1 17:48:03 AEST 2023
+  # Dante Build Artifact 20230802.1
+  # Wed Aug  2 01:32:13 UTC 2023 -- Wed Aug  2 11:32:13 AEST 2023
   #
-  # Merged PR 13704: WI00469795 - Elastic SIEM Improvement Program - added new topics to Filebeat to meet various retention requirements
-  # eba21201ab85d7a5fdb8f900eb8130b03e5872b3
-  dante_build_id: '657587'
+  # Merged PR 13705: added elastic for v 8 packages
+  # 578fe68e143dfe64a1e2bfe9a80baa584f6874f9
+  dante_build_id: '658336'
 
   # virgil 20230802.1
   # Tue Aug  1 21:03:38 UTC 2023 -- Wed Aug  2 07:03:38 AEST 2023
