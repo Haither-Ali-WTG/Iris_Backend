@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230803.2
-  # Thu Aug  3 03:10:42 UTC 2023 -- Thu Aug  3 13:10:42 AEST 2023
+  # Dante Build Artifact 20230804.1
+  # Thu Aug  3 22:03:49 UTC 2023 -- Fri Aug  4 08:03:49 AEST 2023
   #
-  # Merge pull request 13778 from dante_python_upgrade into master
-  # 32f6527f6baa2d93106ce394baf4f9ad359f49ce
-  dante_build_id: '659572'
+  # Merge pull request 13796 from dante_artifact_upgrade into master
+  # dbc8547852606060856ff29912bd5c6722b78747
+  dante_build_id: '660417'
 
-  # virgil 20230803.13
-  # Thu Aug  3 04:28:44 UTC 2023 -- Thu Aug  3 14:28:44 AEST 2023
+  # virgil 20230803.26
+  # Thu Aug  3 08:07:21 UTC 2023 -- Thu Aug  3 18:07:21 AEST 2023
   #
-  # Merged PR 13741: add new exits 5&6 to the fabric
-  # 64141305d72b6ae805f5982f5c791e8ce4334db5
-  virgil_build_id: '659643'
+  # Merged PR 11867: Update security vlan in US2 and DE1 to match AU2
+  # 4ce6597ae1aca96528ad0392b90ccd33909296e3
+  virgil_build_id: '659862'
