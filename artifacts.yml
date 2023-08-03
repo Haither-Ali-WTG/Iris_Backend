@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230802.6
-  # Wed Aug  2 11:45:53 UTC 2023 -- Wed Aug  2 21:45:53 AEST 2023
+  # Dante Build Artifact 20230803.2
+  # Thu Aug  3 03:10:42 UTC 2023 -- Thu Aug  3 13:10:42 AEST 2023
   #
-  # Merge pull request 13763 from dante_artifact_upgrade into master
-  # 3f997cab5ae38756d5e35fd063175e30c608ac5c
-  dante_build_id: '658906'
+  # Merge pull request 13778 from dante_python_upgrade into master
+  # 32f6527f6baa2d93106ce394baf4f9ad359f49ce
+  dante_build_id: '659572'
 
-  # virgil 20230803.5
-  # Thu Aug  3 00:11:07 UTC 2023 -- Thu Aug  3 10:11:07 AEST 2023
+  # virgil 20230803.10
+  # Thu Aug  3 04:04:22 UTC 2023 -- Thu Aug  3 14:04:22 AEST 2023
   #
-  # Merge pull request 13776 from virgil_python_upgrade into master
-  # 5c8aaef05cfe5a1f7bee6895f8069873ae5085ca
-  virgil_build_id: '659397'
+  # Merged PR 13747: Temporarily allow exits with no static routes
+  # 83759ad429f187cbe47092562bb7556ea92136e3
+  virgil_build_id: '659620'
