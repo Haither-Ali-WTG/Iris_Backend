@@ -7,9 +7,9 @@ variables:
   # 3f997cab5ae38756d5e35fd063175e30c608ac5c
   dante_build_id: '658906'
 
-  # virgil 20230802.23
-  # Wed Aug  2 10:39:34 UTC 2023 -- Wed Aug  2 20:39:34 AEST 2023
+  # virgil 20230803.5
+  # Thu Aug  3 00:11:07 UTC 2023 -- Thu Aug  3 10:11:07 AEST 2023
   #
-  # Merged PR 13764: Virgil - Place compute au2 on demand due to waiting on Lenovo
-  # cdfbebc13d69abbcbbe02a3fe9a6a96bae752f73
-  virgil_build_id: '658852'
+  # Merge pull request 13776 from virgil_python_upgrade into master
+  # 5c8aaef05cfe5a1f7bee6895f8069873ae5085ca
+  virgil_build_id: '659397'
