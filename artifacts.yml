@@ -7,9 +7,9 @@ variables:
   # 32f6527f6baa2d93106ce394baf4f9ad359f49ce
   dante_build_id: '659572'
 
-  # virgil 20230803.10
-  # Thu Aug  3 04:04:22 UTC 2023 -- Thu Aug  3 14:04:22 AEST 2023
+  # virgil 20230803.13
+  # Thu Aug  3 04:28:44 UTC 2023 -- Thu Aug  3 14:28:44 AEST 2023
   #
-  # Merged PR 13747: Temporarily allow exits with no static routes
-  # 83759ad429f187cbe47092562bb7556ea92136e3
-  virgil_build_id: '659620'
+  # Merged PR 13741: add new exits 5&6 to the fabric
+  # 64141305d72b6ae805f5982f5c791e8ce4334db5
+  virgil_build_id: '659643'
