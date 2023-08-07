@@ -7,9 +7,9 @@ variables:
   # 42f53b6787ea2768cc957b7237e225104b313789
   dante_build_id: '660582'
 
-  # virgil 20230804.8
-  # Fri Aug  4 00:44:22 UTC 2023 -- Fri Aug  4 10:44:22 AEST 2023
+  # virgil 20230807.10
+  # Mon Aug  7 05:36:12 UTC 2023 -- Mon Aug  7 15:36:12 AEST 2023
   #
-  # Merged PR 13826: Reinstate exit5 and exit6 - no cable to firewall option
-  # 92b85ef8be7f10bbcceaac9cf4c0f77b23edf119
-  virgil_build_id: '660531'
+  # Merged PR 13592: Remove confusing "auto" advertising of BGP default route - variant B
+  # 9976d59cff05683f304063ad16c210567f271b9f
+  virgil_build_id: '663543'
