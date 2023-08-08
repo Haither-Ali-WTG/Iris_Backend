@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230808.1
-  # Mon Aug  7 23:21:53 UTC 2023 -- Tue Aug  8 09:21:53 AEST 2023
+  # Dante Build Artifact 20230808.3
+  # Tue Aug  8 03:36:14 UTC 2023 -- Tue Aug  8 13:36:14 AEST 2023
   #
-  # Merge pull request 13885 from dante_python_upgrade into master
-  # 7457f587d72d8258b7789cdb204a1e1f8ba1c84a
-  dante_build_id: '664280'
+  # Merged PR 13897: Enabled check for failed systemd units in dante and minos
+  # 02864e76632234c5801f8950da0dcb0c2faf0bd5
+  dante_build_id: '664536'
 
-  # virgil 20230808.8
-  # Tue Aug  8 00:55:04 UTC 2023 -- Tue Aug  8 10:55:04 AEST 2023
+  # virgil 20230808.13
+  # Tue Aug  8 03:21:58 UTC 2023 -- Tue Aug  8 13:21:58 AEST 2023
   #
-  # Merged PR 13887: Disabled kvm nodes from rebuild and test
-  # ea9b02a4b957041d80b294667aa09d5fb1e193db
-  virgil_build_id: '664366'
+  # Merged PR 13900: WI00614951 repoint 5.kafka
+  # 64fd2ee6e38f26f15f8cfcb0aba5069017c26cc8
+  virgil_build_id: '664514'
