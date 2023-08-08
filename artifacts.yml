@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230808.3
-  # Tue Aug  8 03:36:14 UTC 2023 -- Tue Aug  8 13:36:14 AEST 2023
+  # Dante Build Artifact 20230808.4
+  # Tue Aug  8 05:46:41 UTC 2023 -- Tue Aug  8 15:46:41 AEST 2023
   #
-  # Merged PR 13897: Enabled check for failed systemd units in dante and minos
-  # 02864e76632234c5801f8950da0dcb0c2faf0bd5
-  dante_build_id: '664536'
+  # Merge pull request 13898 from dante_artifact_upgrade into master
+  # a1e9ffad3de2a57ea418437e7c97f9593696db9f
+  dante_build_id: '664646'
 
   # virgil 20230808.15
   # Tue Aug  8 03:55:50 UTC 2023 -- Tue Aug  8 13:55:50 AEST 2023
