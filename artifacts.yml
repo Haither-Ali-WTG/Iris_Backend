@@ -7,9 +7,9 @@ variables:
   # 7457f587d72d8258b7789cdb204a1e1f8ba1c84a
   dante_build_id: '664280'
 
-  # virgil 20230807.14
-  # Mon Aug  7 08:02:18 UTC 2023 -- Mon Aug  7 18:02:18 AEST 2023
+  # virgil 20230808.8
+  # Tue Aug  8 00:55:04 UTC 2023 -- Tue Aug  8 10:55:04 AEST 2023
   #
-  # Merged PR 13844: Duplicate AU2 VLANs 1058/1059 in US2
-  # f80ebb4602c62b1d62f36df0edfdcd8225e7c400
-  virgil_build_id: '663702'
+  # Merged PR 13887: Disabled kvm nodes from rebuild and test
+  # ea9b02a4b957041d80b294667aa09d5fb1e193db
+  virgil_build_id: '664366'
