@@ -7,9 +7,9 @@ variables:
   # a1e9ffad3de2a57ea418437e7c97f9593696db9f
   dante_build_id: '664646'
 
-  # virgil 20230808.15
-  # Tue Aug  8 03:55:50 UTC 2023 -- Tue Aug  8 13:55:50 AEST 2023
+  # virgil 20230808.19
+  # Tue Aug  8 10:20:56 UTC 2023 -- Tue Aug  8 20:20:56 AEST 2023
   #
-  # Merged PR 13748: Reinstate check for exits with no static routes
-  # ad64a1cbbde4271ee162ccce080709f1427a95cd
-  virgil_build_id: '664553'
+  # Merged PR 13919: WI00614951 Repoint 3.prod-1.kafka
+  # ec7016e903afcb539a10de53f5f04cf9f94e331b
+  virgil_build_id: '664847'
