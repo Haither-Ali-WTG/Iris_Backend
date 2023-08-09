@@ -7,9 +7,9 @@ variables:
   # a1e9ffad3de2a57ea418437e7c97f9593696db9f
   dante_build_id: '664646'
 
-  # virgil 20230808.19
-  # Tue Aug  8 10:20:56 UTC 2023 -- Tue Aug  8 20:20:56 AEST 2023
+  # virgil 20230809.5
+  # Wed Aug  9 02:48:48 UTC 2023 -- Wed Aug  9 12:48:48 AEST 2023
   #
-  # Merged PR 13919: WI00614951 Repoint 3.prod-1.kafka
-  # ec7016e903afcb539a10de53f5f04cf9f94e331b
-  virgil_build_id: '664847'
+  # Merged PR 13939: WI00614951 repoint 1.prod-1.kafka.wtg.ws
+  # 0e06ce48fc4a9fc7fa2c0548d1c05be97aa89fb6
+  virgil_build_id: '665542'
