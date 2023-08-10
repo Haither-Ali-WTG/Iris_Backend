@@ -7,9 +7,9 @@ variables:
   # 5955c4d04b513676f73f30131bfd02b5689a82c5
   dante_build_id: '665844'
 
-  # virgil 20230809.5
-  # Wed Aug  9 02:48:48 UTC 2023 -- Wed Aug  9 12:48:48 AEST 2023
+  # virgil 20230810.4
+  # Thu Aug 10 00:10:12 UTC 2023 -- Thu Aug 10 10:10:12 AEST 2023
   #
-  # Merged PR 13939: WI00614951 repoint 1.prod-1.kafka.wtg.ws
-  # 0e06ce48fc4a9fc7fa2c0548d1c05be97aa89fb6
-  virgil_build_id: '665542'
+  # Merge pull request 13959 from virgil_python_upgrade into master
+  # 506790efe2715cde57e7df88a4d28f177e05a38b
+  virgil_build_id: '666420'
