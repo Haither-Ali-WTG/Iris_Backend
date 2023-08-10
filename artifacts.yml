@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230810.1
-  # Thu Aug 10 00:47:39 UTC 2023 -- Thu Aug 10 10:47:39 AEST 2023
+  # Dante Build Artifact 20230810.6
+  # Thu Aug 10 08:51:20 UTC 2023 -- Thu Aug 10 18:51:20 AEST 2023
   #
-  # Merge pull request 13961 from dante_python_upgrade into master
-  # a3521cdff374b95caffcada76150bbe1976795e8
-  dante_build_id: '666464'
+  # Merge pull request 13992 from dante_artifact_upgrade into master
+  # 906e7a1bbe54338120bbe9b6195cc962590a02d2
+  dante_build_id: '666881'
 
-  # virgil 20230810.8
-  # Thu Aug 10 02:20:04 UTC 2023 -- Thu Aug 10 12:20:04 AEST 2023
+  # virgil 20230810.13
+  # Thu Aug 10 07:35:04 UTC 2023 -- Thu Aug 10 17:35:04 AEST 2023
   #
-  # Merged PR 13976: add apex27 and apex28
-  # 30a3d1a180ba838a35b295d008c9cd6f4afddfb2
-  virgil_build_id: '666550'
+  # Merged PR 13989: change rack number for new switches
+  # be601ccb812a177487958ef322a133711a977a92
+  virgil_build_id: '666819'
