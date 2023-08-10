@@ -7,9 +7,9 @@ variables:
   # a3521cdff374b95caffcada76150bbe1976795e8
   dante_build_id: '666464'
 
-  # virgil 20230810.4
-  # Thu Aug 10 00:10:12 UTC 2023 -- Thu Aug 10 10:10:12 AEST 2023
+  # virgil 20230810.8
+  # Thu Aug 10 02:20:04 UTC 2023 -- Thu Aug 10 12:20:04 AEST 2023
   #
-  # Merge pull request 13959 from virgil_python_upgrade into master
-  # 506790efe2715cde57e7df88a4d28f177e05a38b
-  virgil_build_id: '666420'
+  # Merged PR 13976: add apex27 and apex28
+  # 30a3d1a180ba838a35b295d008c9cd6f4afddfb2
+  virgil_build_id: '666550'
