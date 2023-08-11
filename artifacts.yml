@@ -7,9 +7,9 @@ variables:
   # 906e7a1bbe54338120bbe9b6195cc962590a02d2
   dante_build_id: '666881'
 
-  # virgil 20230811.3
-  # Thu Aug 10 23:21:03 UTC 2023 -- Fri Aug 11 09:21:03 AEST 2023
+  # virgil 20230811.11
+  # Fri Aug 11 05:34:22 UTC 2023 -- Fri Aug 11 15:34:22 AEST 2023
   #
-  # Merge pull request 13996 from virgil_python_upgrade into master
-  # 680897434ea97aa85e877d4226731bc534a4a2bf
-  virgil_build_id: '667438'
+  # Merged PR 14007: Minos mode implementation
+  # b70f7b695d63b972a7e1c6d01fd4e03e1019b49e
+  virgil_build_id: '667712'
