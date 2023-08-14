@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230814.1
-  # Sun Aug 13 23:34:27 UTC 2023 -- Mon Aug 14 09:34:27 AEST 2023
+  # Dante Build Artifact 20230814.2
+  # Mon Aug 14 02:29:22 UTC 2023 -- Mon Aug 14 12:29:22 AEST 2023
   #
-  # Merge pull request 14000 from dante_python_upgrade into master
-  # 5228cef45bb20f8f25c7b7e2532d5b5c5fdf6686
-  dante_build_id: '670237'
+  # Merged PR 14036: Pre-provisioning mode check for switches
+  # a4267eb9af68676401ad31fecd9241a1f9229933
+  dante_build_id: '670419'
 
-  # virgil 20230814.10
-  # Mon Aug 14 01:21:06 UTC 2023 -- Mon Aug 14 11:21:06 AEST 2023
+  # virgil 20230814.13
+  # Mon Aug 14 02:08:02 UTC 2023 -- Mon Aug 14 12:08:02 AEST 2023
   #
-  # Merged PR 14010: Add topics for Minos logging
-  # e92d24b8cd2c9d0ce8b16cde88a0dd7492e8d70a
-  virgil_build_id: '670356'
+  # Merged PR 13665: WI00612055 - Containerchain Network - US
+  # d81e33d83fa9ca11869faa16e8d337241d80ebdb
+  virgil_build_id: '670404'
