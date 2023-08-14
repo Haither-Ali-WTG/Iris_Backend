@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230814.3
-  # Mon Aug 14 04:21:42 UTC 2023 -- Mon Aug 14 14:21:42 AEST 2023
+  # Dante Build Artifact 20230814.4
+  # Mon Aug 14 06:21:05 UTC 2023 -- Mon Aug 14 16:21:05 AEST 2023
   #
-  # Merged PR 13139: Change s3cmd to awscli
-  # 3a7eb95ba267563c60fadb120617c35398dc471a
-  dante_build_id: '670510'
+  # Merged PR 13949: Dante - APT Remove dependency to external mirror from sim
+  # 6e1232e4b7a3cf3daa97afb51c6b6ae76c04dd69
+  dante_build_id: '670614'
 
   # virgil 20230814.13
   # Mon Aug 14 02:08:02 UTC 2023 -- Mon Aug 14 12:08:02 AEST 2023
