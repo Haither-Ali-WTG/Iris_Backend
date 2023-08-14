@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230814.2
-  # Mon Aug 14 02:29:22 UTC 2023 -- Mon Aug 14 12:29:22 AEST 2023
+  # Dante Build Artifact 20230814.3
+  # Mon Aug 14 04:21:42 UTC 2023 -- Mon Aug 14 14:21:42 AEST 2023
   #
-  # Merged PR 14036: Pre-provisioning mode check for switches
-  # a4267eb9af68676401ad31fecd9241a1f9229933
-  dante_build_id: '670419'
+  # Merged PR 13139: Change s3cmd to awscli
+  # 3a7eb95ba267563c60fadb120617c35398dc471a
+  dante_build_id: '670510'
 
   # virgil 20230814.13
   # Mon Aug 14 02:08:02 UTC 2023 -- Mon Aug 14 12:08:02 AEST 2023
