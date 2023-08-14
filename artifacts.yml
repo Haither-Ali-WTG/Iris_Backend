@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230810.6
-  # Thu Aug 10 08:51:20 UTC 2023 -- Thu Aug 10 18:51:20 AEST 2023
+  # Dante Build Artifact 20230814.1
+  # Sun Aug 13 23:34:27 UTC 2023 -- Mon Aug 14 09:34:27 AEST 2023
   #
-  # Merge pull request 13992 from dante_artifact_upgrade into master
-  # 906e7a1bbe54338120bbe9b6195cc962590a02d2
-  dante_build_id: '666881'
+  # Merge pull request 14000 from dante_python_upgrade into master
+  # 5228cef45bb20f8f25c7b7e2532d5b5c5fdf6686
+  dante_build_id: '670237'
 
-  # virgil 20230811.11
-  # Fri Aug 11 05:34:22 UTC 2023 -- Fri Aug 11 15:34:22 AEST 2023
+  # virgil 20230814.6
+  # Sun Aug 13 23:41:10 UTC 2023 -- Mon Aug 14 09:41:10 AEST 2023
   #
-  # Merged PR 14007: Minos mode implementation
-  # b70f7b695d63b972a7e1c6d01fd4e03e1019b49e
-  virgil_build_id: '667712'
+  # Merged PR 14026: Use cluster_id ASN override, not fake rack number
+  # b0348be6261d20f862b21240e2d67626a90fe917
+  virgil_build_id: '670250'
