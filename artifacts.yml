@@ -7,9 +7,9 @@ variables:
   # 5228cef45bb20f8f25c7b7e2532d5b5c5fdf6686
   dante_build_id: '670237'
 
-  # virgil 20230814.6
-  # Sun Aug 13 23:41:10 UTC 2023 -- Mon Aug 14 09:41:10 AEST 2023
+  # virgil 20230814.10
+  # Mon Aug 14 01:21:06 UTC 2023 -- Mon Aug 14 11:21:06 AEST 2023
   #
-  # Merged PR 14026: Use cluster_id ASN override, not fake rack number
-  # b0348be6261d20f862b21240e2d67626a90fe917
-  virgil_build_id: '670250'
+  # Merged PR 14010: Add topics for Minos logging
+  # e92d24b8cd2c9d0ce8b16cde88a0dd7492e8d70a
+  virgil_build_id: '670356'
