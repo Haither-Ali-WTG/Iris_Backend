@@ -7,9 +7,9 @@ variables:
   # dab22983e85771f1a9e0d2d16290dbf68d9b18d1
   dante_build_id: '671388'
 
-  # virgil 20230815.9
-  # Tue Aug 15 03:58:24 UTC 2023 -- Tue Aug 15 13:58:24 AEST 2023
+  # virgil 20230815.12
+  # Tue Aug 15 05:29:06 UTC 2023 -- Tue Aug 15 15:29:06 AEST 2023
   #
-  # Merged PR 13664: WI00612055 - Containerchain Network - DE
-  # 01fd3c981ad4aaa5d8cdcfaf400bd5b94d329d77
-  virgil_build_id: '671540'
+  # Merged PR 13941: Rename advertise_default to default_originate_to within Virgil
+  # a17710f5bdc16eb7bc20a06700fe8ed70c9e3522
+  virgil_build_id: '671609'
