@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230814.4
-  # Mon Aug 14 06:21:05 UTC 2023 -- Mon Aug 14 16:21:05 AEST 2023
+  # Dante Build Artifact 20230815.1
+  # Mon Aug 14 23:40:21 UTC 2023 -- Tue Aug 15 09:40:21 AEST 2023
   #
-  # Merged PR 13949: Dante - APT Remove dependency to external mirror from sim
-  # 6e1232e4b7a3cf3daa97afb51c6b6ae76c04dd69
-  dante_build_id: '670614'
+  # Merge pull request 14079 from dante_python_upgrade into master
+  # 7a4dfc466b6d52dc8c77ff3c663aeb65c9bad0d9
+  dante_build_id: '671307'
 
-  # virgil 20230814.13
-  # Mon Aug 14 02:08:02 UTC 2023 -- Mon Aug 14 12:08:02 AEST 2023
+  # virgil 20230815.5
+  # Mon Aug 14 23:31:05 UTC 2023 -- Tue Aug 15 09:31:05 AEST 2023
   #
-  # Merged PR 13665: WI00612055 - Containerchain Network - US
-  # d81e33d83fa9ca11869faa16e8d337241d80ebdb
-  virgil_build_id: '670404'
+  # Merge pull request 14075 from virgil_python_upgrade into master
+  # b8de1a35600a1207fe8ec1d0785979da99da65a3
+  virgil_build_id: '671298'
