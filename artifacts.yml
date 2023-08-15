@@ -7,9 +7,9 @@ variables:
   # dab22983e85771f1a9e0d2d16290dbf68d9b18d1
   dante_build_id: '671388'
 
-  # virgil 20230815.5
-  # Mon Aug 14 23:31:05 UTC 2023 -- Tue Aug 15 09:31:05 AEST 2023
+  # virgil 20230815.9
+  # Tue Aug 15 03:58:24 UTC 2023 -- Tue Aug 15 13:58:24 AEST 2023
   #
-  # Merge pull request 14075 from virgil_python_upgrade into master
-  # b8de1a35600a1207fe8ec1d0785979da99da65a3
-  virgil_build_id: '671298'
+  # Merged PR 13664: WI00612055 - Containerchain Network - DE
+  # 01fd3c981ad4aaa5d8cdcfaf400bd5b94d329d77
+  virgil_build_id: '671540'
