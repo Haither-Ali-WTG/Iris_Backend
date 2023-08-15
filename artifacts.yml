@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230815.1
-  # Mon Aug 14 23:40:21 UTC 2023 -- Tue Aug 15 09:40:21 AEST 2023
+  # Dante Build Artifact 20230815.2
+  # Tue Aug 15 01:03:19 UTC 2023 -- Tue Aug 15 11:03:19 AEST 2023
   #
-  # Merge pull request 14079 from dante_python_upgrade into master
-  # 7a4dfc466b6d52dc8c77ff3c663aeb65c9bad0d9
-  dante_build_id: '671307'
+  # Merged PR 14027: Only download the relevant secret for Minos
+  # dab22983e85771f1a9e0d2d16290dbf68d9b18d1
+  dante_build_id: '671388'
 
   # virgil 20230815.5
   # Mon Aug 14 23:31:05 UTC 2023 -- Tue Aug 15 09:31:05 AEST 2023
