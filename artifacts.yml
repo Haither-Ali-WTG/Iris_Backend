@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230815.2
-  # Tue Aug 15 01:03:19 UTC 2023 -- Tue Aug 15 11:03:19 AEST 2023
+  # Dante Build Artifact 20230817.3
+  # Thu Aug 17 05:42:23 UTC 2023 -- Thu Aug 17 15:42:23 AEST 2023
   #
-  # Merged PR 14027: Only download the relevant secret for Minos
-  # dab22983e85771f1a9e0d2d16290dbf68d9b18d1
-  dante_build_id: '671388'
+  # Merged PR 14117: Fix error in pipeline "Windows - Sync WIM Files"
+  # a97c9d23999b816230cbc02fff6df71cdd0158fd
+  dante_build_id: '673715'
 
-  # virgil 20230815.12
-  # Tue Aug 15 05:29:06 UTC 2023 -- Tue Aug 15 15:29:06 AEST 2023
+  # virgil 20230817.16
+  # Thu Aug 17 02:11:52 UTC 2023 -- Thu Aug 17 12:11:52 AEST 2023
   #
-  # Merged PR 13941: Rename advertise_default to default_originate_to within Virgil
-  # a17710f5bdc16eb7bc20a06700fe8ed70c9e3522
-  virgil_build_id: '671609'
+  # Merged PR 14102: WI00636039 - Refactor the teardown list - sort the code based on alphabet order
+  # 93052531fd351ed15dfb1d44dc7a0583b9103680
+  virgil_build_id: '673494'
