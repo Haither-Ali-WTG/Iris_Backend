@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230817.3
-  # Thu Aug 17 05:42:23 UTC 2023 -- Thu Aug 17 15:42:23 AEST 2023
+  # Dante Build Artifact 20230818.1
+  # Thu Aug 17 23:57:51 UTC 2023 -- Fri Aug 18 09:57:51 AEST 2023
   #
-  # Merged PR 14117: Fix error in pipeline "Windows - Sync WIM Files"
-  # a97c9d23999b816230cbc02fff6df71cdd0158fd
-  dante_build_id: '673715'
+  # Merge pull request 14171 from dante_python_upgrade into master
+  # cff782b1c15b5dc27961255e584c33248a9952cf
+  dante_build_id: '674451'
 
-  # virgil 20230817.16
-  # Thu Aug 17 02:11:52 UTC 2023 -- Thu Aug 17 12:11:52 AEST 2023
+  # virgil 20230818.7
+  # Thu Aug 17 23:54:31 UTC 2023 -- Fri Aug 18 09:54:31 AEST 2023
   #
-  # Merged PR 14102: WI00636039 - Refactor the teardown list - sort the code based on alphabet order
-  # 93052531fd351ed15dfb1d44dc7a0583b9103680
-  virgil_build_id: '673494'
+  # Merge pull request 14164 from virgil_python_upgrade into master
+  # 4707d08a44aae352e3d1e27d2155634c912a5ccf
+  virgil_build_id: '674446'
