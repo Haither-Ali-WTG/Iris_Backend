@@ -1,2 +1,10 @@
 ---
-any()
+map(include('acl'), key=regex('^[a-z][a-z0-9_]+$', name='lowercase label with underscores'))
+---
+acl:
+  description: str()
+  # order can be any number, but let's keep it whole numbers 1..99 for now;
+  # we can relax the range and/or make it float in the future if needed
+  order: int(min=1, max=99)
+  actions: list(include('action'))
+action: regex('^[ -~]+$', name='action')
