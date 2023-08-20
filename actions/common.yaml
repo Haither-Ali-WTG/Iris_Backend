@@ -1,6 +1,6 @@
 ---
 # common actions
-transport-security:
+transport_security:
   description: |-
     Transport security options
   order: 2
@@ -8,7 +8,7 @@ transport-security:
     - http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
     - http-response set-header X-Content-Type-Options nosniff
 
-omit-unnecessary-info:
+omit_unnecessary_info:
   description: |-
     Remove X-Powered-By and Server headers, which are optional and leak information
     about our webservers that could potentially be used by attackers.
@@ -17,7 +17,7 @@ omit-unnecessary-info:
     - http-response del-header X-Powered-By
     - http-response del-header Server
 
-single-content-length:
+single_content_length:
   description: |-
     CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
   order: 5
@@ -25,7 +25,7 @@ single-content-length:
     - http-request deny if { req.hdr_cnt(content-length) gt 1 }
     - http-response deny if { res.hdr_cnt(content-length) gt 1 }
 
-forwarded-headers:
+forwarded_headers:
   description: |-
     Enforce X-Forwarded-Proto and X-Forwarded-Host
   order: 8
@@ -34,7 +34,7 @@ forwarded-headers:
     - http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
     - http-request set-header X-Forwarded-Host %[req.hdr(Host)]
 
-client-cert:
+client_cert:
   description: |-
     Attributes required from client cert
     TODO work with customer to ensure SHA1 isn't in use
@@ -50,7 +50,7 @@ client-cert:
     - http-request set-header X-SSL-Client-Serial         %{+Q}[ssl_c_serial,hex]
     - http-request set-header X-SSL-Client-Version        %{+Q}[ssl_c_version]
 
-default-backend:
+default_backend:
   description: Default backend selection
   order: 99
   actions:
