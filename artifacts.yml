@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230818.3
-  # Fri Aug 18 07:20:14 UTC 2023 -- Fri Aug 18 17:20:14 AEST 2023
+  # Dante Build Artifact 20230821.2
+  # Mon Aug 21 05:57:43 UTC 2023 -- Mon Aug 21 15:57:43 AEST 2023
   #
-  # Merge pull request 14188 from dante_artifact_upgrade into master
-  # 1ed34e48e633c3eafefb33e49f0f7946ba2a3429
-  dante_build_id: '674852'
+  # Merge pull request 14222 from dante_artifact_upgrade into master
+  # 7387a8ccd3a08a5784debfd87e9fbbf137f91f0a
+  dante_build_id: '677486'
 
-  # virgil 20230821.10
-  # Mon Aug 21 04:11:34 UTC 2023 -- Mon Aug 21 14:11:34 AEST 2023
+  # virgil 20230821.13
+  # Mon Aug 21 05:59:58 UTC 2023 -- Mon Aug 21 15:59:58 AEST 2023
   #
-  # Merged PR 14204: Updated topic names for ds-content-suggestion topics
-  # bc99c3e2e3ac5f67320c59207a0f19bc1ea311b9
-  virgil_build_id: '677405'
+  # Merge pull request 14216 from virgil_python_upgrade into master
+  # 65679bff903868f5ed5bb04b2f0e281bf24a6a4c
+  virgil_build_id: '677488'
