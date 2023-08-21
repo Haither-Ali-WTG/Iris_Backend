@@ -4,7 +4,7 @@ rdg.wisetechglobal.com:
   health_check: /
   cookie:
     name: RDPWEB
-    secure: yes
+    secure: true
   servers:
     - name: au2co-srdg-1.wtg.zone
       ip: 10.2.68.17
@@ -83,7 +83,7 @@ rdgapps.wisetechglobal.com:
   fullconn: 1000
   cookie:
     name: RDPWEBL
-    secure: yes
+    secure: true
   default_server: inter 15s rise 2 fall 2 maxconn 1000
   servers:
     - name: SYDCO-SRDG-100
