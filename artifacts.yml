@@ -7,9 +7,9 @@ variables:
   # 1ed34e48e633c3eafefb33e49f0f7946ba2a3429
   dante_build_id: '674852'
 
-  # virgil 20230818.9
-  # Fri Aug 18 04:48:22 UTC 2023 -- Fri Aug 18 14:48:22 AEST 2023
+  # virgil 20230821.10
+  # Mon Aug 21 04:11:34 UTC 2023 -- Mon Aug 21 14:11:34 AEST 2023
   #
-  # Merged PR 14174: Formalize the message output - teardown test
-  # ab8e0cb3b1ea3269910a5ed4792f06c98fd8c838
-  virgil_build_id: '674722'
+  # Merged PR 14204: Updated topic names for ds-content-suggestion topics
+  # bc99c3e2e3ac5f67320c59207a0f19bc1ea311b9
+  virgil_build_id: '677405'
