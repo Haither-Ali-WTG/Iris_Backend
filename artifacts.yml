@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230821.2
-  # Mon Aug 21 05:57:43 UTC 2023 -- Mon Aug 21 15:57:43 AEST 2023
+  # Dante Build Artifact 20230822.2
+  # Tue Aug 22 01:16:38 UTC 2023 -- Tue Aug 22 11:16:38 AEST 2023
   #
-  # Merge pull request 14222 from dante_artifact_upgrade into master
-  # 7387a8ccd3a08a5784debfd87e9fbbf137f91f0a
-  dante_build_id: '677486'
+  # Merge pull request 14250 from dante_artifact_upgrade into master
+  # e5d1ae8b76b963f37db9146a1cd66c8c9a22ff23
+  dante_build_id: '678290'
 
-  # virgil 20230821.13
-  # Mon Aug 21 05:59:58 UTC 2023 -- Mon Aug 21 15:59:58 AEST 2023
+  # virgil 20230822.3
+  # Tue Aug 22 00:08:46 UTC 2023 -- Tue Aug 22 10:08:46 AEST 2023
   #
-  # Merge pull request 14216 from virgil_python_upgrade into master
-  # 65679bff903868f5ed5bb04b2f0e281bf24a6a4c
-  virgil_build_id: '677488'
+  # Merged PR 14193: Add link_fec tag to bonded ports
+  # 6e4b42dd24ad5d991264a4190a2cb16dfde9e5f5
+  virgil_build_id: '678235'
