@@ -1,2 +1,8 @@
 ---
-any()
+map(include('cipher_profile'), key=regex('^[a-z][a-z0-9_]+$', name='lowercase label with underscores'))
+---
+cipher_profile:
+  ciphers_TLSv1_3:
+    list(regex('^[A-Z0-9_]+$', name='cipher label for TLSv1.3 (with underscores)'))
+  ciphers_upto_TLSv1_2:
+    list(regex('^[A-Z0-9-]+$', name='cipher label for TLSv1.3 (with dashes)'))
