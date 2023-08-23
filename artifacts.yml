@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230822.3
-  # Tue Aug 22 08:19:16 UTC 2023 -- Tue Aug 22 18:19:16 AEST 2023
+  # Dante Build Artifact 20230823.4
+  # Wed Aug 23 04:48:49 UTC 2023 -- Wed Aug 23 14:48:49 AEST 2023
   #
-  # Merged PR 14194: Upgrade firmware in "Maintenance KVM Hosts" pipeline
-  # 6e6336f5648369863033a05713086aa9c44c5296
-  dante_build_id: '678609'
+  # Merged PR 14289: Support Windows Server Core installation
+  # 98c63b44a9d50d1697033f02032e2d69d96a540e
+  dante_build_id: '679514'
 
   # virgil 20230822.5
   # Tue Aug 22 06:11:45 UTC 2023 -- Tue Aug 22 16:11:45 AEST 2023
