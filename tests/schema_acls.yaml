@@ -1,2 +1,7 @@
 ---
-any()
+map(include('acl'), key=regex('^[a-z][a-z0-9_]+$', name='lowercase label with underscores'))
+---
+acl:
+  description: str()
+  tests: list(include('test'))
+test: regex('^[ -~]+$', name='ACL test')
