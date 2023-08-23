@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230822.2
-  # Tue Aug 22 01:16:38 UTC 2023 -- Tue Aug 22 11:16:38 AEST 2023
+  # Dante Build Artifact 20230822.3
+  # Tue Aug 22 08:19:16 UTC 2023 -- Tue Aug 22 18:19:16 AEST 2023
   #
-  # Merge pull request 14250 from dante_artifact_upgrade into master
-  # e5d1ae8b76b963f37db9146a1cd66c8c9a22ff23
-  dante_build_id: '678290'
+  # Merged PR 14194: Upgrade firmware in "Maintenance KVM Hosts" pipeline
+  # 6e6336f5648369863033a05713086aa9c44c5296
+  dante_build_id: '678609'
 
-  # virgil 20230822.3
-  # Tue Aug 22 00:08:46 UTC 2023 -- Tue Aug 22 10:08:46 AEST 2023
+  # virgil 20230822.5
+  # Tue Aug 22 06:11:45 UTC 2023 -- Tue Aug 22 16:11:45 AEST 2023
   #
-  # Merged PR 14193: Add link_fec tag to bonded ports
-  # 6e4b42dd24ad5d991264a4190a2cb16dfde9e5f5
-  virgil_build_id: '678235'
+  # Merged PR 14247: US2 - Add Blume+Envase tenants
+  # 8d537792dec385c638b5bea04f481a0066eb97bb
+  virgil_build_id: '678515'
