@@ -13,7 +13,7 @@ ansible-core==2.15.3
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.17.2
+ansible-lint==6.18.0
     # via -r requirements.in
 argcomplete==3.1.1
     # via yq
