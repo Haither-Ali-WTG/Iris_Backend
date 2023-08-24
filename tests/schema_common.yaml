@@ -1,2 +1,57 @@
 ---
-{}
+haproxy_settings:
+  container: include('haproxy_container_settings', required=False)
+  global_: include('haproxy_global__settings', required=False)
+  stats: include('haproxy_stats_settings', required=False)
+  defaults: include('haproxy_defaults_settings', required=False)
+  frontend: include('haproxy_frontend_settings', required=False)
+  cipher: include('haproxy_cipher_settings', required=False)
+  timeouts: include('haproxy_timeouts_settings', required=False)
+
+haproxy_defaults_settings:
+  mode: enum('http', 'tcp')
+  log_name: any(regex('^[a-z0-9_-]+$', name='label for log'), const('{{ inventory_hostname }}'))
+  fullconn: int(min=1)
+  balance: enum('leastconn', 'roundrobin', 'source', 'first')
+
+haproxy_global__settings:
+  processes: int(min=1)
+  threads: int(min=1)
+  maxconn: int(min=1)
+
+haproxy_container_settings:
+  haproxy_version: regex('^[0-9a-z.]+$', name="dotted version number")
+  haproxy_os: regex('^[a-z]+$', name='OS label')  # eg. "bullseye"
+  port_map: map(include('port'), key=int(min=1, max=65535))
+  port_prealloc: list(any(int(min=1, max=65535), regex('^[0-9]+(-[0-9]+)?$', name='port range')))
+
+haproxy_stats_settings:
+  ports:
+    file: regex('^(/[a-z0-9.]+)+$', name='pathname')
+    socket: include('port')
+    web: include('port')
+
+haproxy_cipher_settings:
+  profiles: list(foreign_key('ciphers/cipher_profiles.yml'))
+  bind_options: list(regex('^[a-z0-9-]+$', name="bind option"))
+  ssl_min: enum('TLSv1.2')
+  ssl_max: enum('TLSv1.3')
+
+haproxy_frontend_settings:
+  ports:
+    plaintext: list(int(min=1, max=65535))
+    ssl: list(int(min=1, max=65535))
+  maxconn: int(min=1)
+  fullconn: int(min=1)
+
+haproxy_timeouts_settings:
+  client: int(min=1)
+  connect: int(min=1)
+  server: int(min=1)
+  tunnel: int(min=1)
+  http_keep_alive: int(min=1)
+  http_request: int(min=1)
+  queue: int(min=1)
+  tarpit: int(min=1)
+---
+port: int(min=1, max=65535)

@@ -1,2 +1,2 @@
 ---
-any()
+individual_instance_defaults: include('haproxy_settings')
