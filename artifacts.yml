@@ -7,9 +7,9 @@ variables:
   # e9574fa0db2fc7e5fb7503f048c7774f0a5ef511
   dante_build_id: '679793'
 
-  # virgil 20230822.5
-  # Tue Aug 22 06:11:45 UTC 2023 -- Tue Aug 22 16:11:45 AEST 2023
+  # virgil 20230824.3
+  # Thu Aug 24 00:10:53 UTC 2023 -- Thu Aug 24 10:10:53 AEST 2023
   #
-  # Merged PR 14247: US2 - Add Blume+Envase tenants
-  # 8d537792dec385c638b5bea04f481a0066eb97bb
-  virgil_build_id: '678515'
+  # Merged PR 14320: Put two new apexes to pre-provision in DE1
+  # 42d80bbaeb2827e3a65aa6d1e8c73e5f41c9c99f
+  virgil_build_id: '680330'
