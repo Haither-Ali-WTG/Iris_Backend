@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230824.3
-  # Thu Aug 24 05:12:26 UTC 2023 -- Thu Aug 24 15:12:26 AEST 2023
+  # Dante Build Artifact 20230824.4
+  # Thu Aug 24 10:54:37 UTC 2023 -- Thu Aug 24 20:54:37 AEST 2023
   #
-  # Merge pull request 14327 from dante_artifact_upgrade into master
-  # 0d57e44df1b9bb9384fbfdbc30e0f5effd1d64d8
-  dante_build_id: '680678'
+  # Merge pull request 14358 from dante_artifact_upgrade into master
+  # 8fa9ddd08c9a5ace46114a6563ac36c268cedd0c
+  dante_build_id: '680911'
 
-  # virgil 20230824.3
-  # Thu Aug 24 00:10:53 UTC 2023 -- Thu Aug 24 10:10:53 AEST 2023
+  # virgil 20230824.5
+  # Thu Aug 24 06:11:05 UTC 2023 -- Thu Aug 24 16:11:05 AEST 2023
   #
-  # Merged PR 14320: Put two new apexes to pre-provision in DE1
-  # 42d80bbaeb2827e3a65aa6d1e8c73e5f41c9c99f
-  virgil_build_id: '680330'
+  # Merged PR 14352: update cumulus version DE1 Round 2
+  # 7725e011a9f59210da556baf261a86b0d00cf2a7
+  virgil_build_id: '680735'
