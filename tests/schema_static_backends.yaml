@@ -16,7 +16,7 @@ cookie:
   name: regex('^[A-Z][A-Z0-9]+$', name='uppercase cookie name')
   secure: bool(required=False)
 sorry_page:
-  file: regex('^[a-z0-9_]+\.html$', name='sorry page filename')
+  file: regex(r'^[a-z0-9_]+\.html$', name='sorry page filename')
   code: int(min=400, max=599)
 server:
   name: regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')
