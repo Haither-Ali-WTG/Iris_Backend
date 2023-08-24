@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230824.2
-  # Thu Aug 24 02:20:33 UTC 2023 -- Thu Aug 24 12:20:33 AEST 2023
+  # Dante Build Artifact 20230824.3
+  # Thu Aug 24 05:12:26 UTC 2023 -- Thu Aug 24 15:12:26 AEST 2023
   #
-  # Merged PR 13709: Ensure NTP is running on switches - globally
-  # 319bbdd693b9bfccde5a1d377e538244bbd49aaf
-  dante_build_id: '680475'
+  # Merge pull request 14327 from dante_artifact_upgrade into master
+  # 0d57e44df1b9bb9384fbfdbc30e0f5effd1d64d8
+  dante_build_id: '680678'
 
   # virgil 20230824.3
   # Thu Aug 24 00:10:53 UTC 2023 -- Thu Aug 24 10:10:53 AEST 2023
