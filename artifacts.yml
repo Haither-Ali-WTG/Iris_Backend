@@ -7,9 +7,9 @@ variables:
   # 8fa9ddd08c9a5ace46114a6563ac36c268cedd0c
   dante_build_id: '680911'
 
-  # virgil 20230824.5
-  # Thu Aug 24 06:11:05 UTC 2023 -- Thu Aug 24 16:11:05 AEST 2023
+  # virgil 20230825.2
+  # Thu Aug 24 23:18:44 UTC 2023 -- Fri Aug 25 09:18:44 AEST 2023
   #
-  # Merged PR 14352: update cumulus version DE1 Round 2
-  # 7725e011a9f59210da556baf261a86b0d00cf2a7
-  virgil_build_id: '680735'
+  # Merge pull request 14365 from virgil_python_upgrade into master
+  # e30646d0cb349fa3dba5b7ccaf2b8929e4caa14a
+  virgil_build_id: '681375'
