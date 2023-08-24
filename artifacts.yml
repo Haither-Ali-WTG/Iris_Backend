@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230823.4
-  # Wed Aug 23 04:48:49 UTC 2023 -- Wed Aug 23 14:48:49 AEST 2023
+  # Dante Build Artifact 20230823.6
+  # Wed Aug 23 10:26:12 UTC 2023 -- Wed Aug 23 20:26:12 AEST 2023
   #
-  # Merged PR 14289: Support Windows Server Core installation
-  # 98c63b44a9d50d1697033f02032e2d69d96a540e
-  dante_build_id: '679514'
+  # Merge pull request 14281 from dante_python_upgrade into master
+  # e9574fa0db2fc7e5fb7503f048c7774f0a5ef511
+  dante_build_id: '679793'
 
   # virgil 20230822.5
   # Tue Aug 22 06:11:45 UTC 2023 -- Tue Aug 22 16:11:45 AEST 2023
