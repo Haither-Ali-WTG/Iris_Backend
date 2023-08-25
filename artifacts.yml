@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230825.2
-  # Fri Aug 25 03:18:46 UTC 2023 -- Fri Aug 25 13:18:46 AEST 2023
+  # Dante Build Artifact 20230825.3
+  # Fri Aug 25 04:31:13 UTC 2023 -- Fri Aug 25 14:31:13 AEST 2023
   #
-  # Merge pull request 14371 from dante_artifact_upgrade into master
-  # e728e1724e8c573ad1d76c01fe1e548939c69b3f
-  dante_build_id: '681596'
+  # Merged PR 14189: WIP: Detect failed hosts in Minos run
+  # 9065bfa587dd077361068fbf18250dcab7e3722d
+  dante_build_id: '681665'
 
   # virgil 20230825.7
   # Fri Aug 25 01:12:48 UTC 2023 -- Fri Aug 25 11:12:48 AEST 2023
