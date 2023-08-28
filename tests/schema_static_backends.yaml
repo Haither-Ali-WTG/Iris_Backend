@@ -5,14 +5,14 @@ static_backend:
   clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
   health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
   balance: enum('leastconn', 'source', required=False)
-  cookie: include('cookie', required=False)
+  cookie: include('static_cookie', required=False)
   encryption: bool(required=False)
   fullconn: int(min=1, required=False)
   default_server: regex('^[a-z0-9 ]+$', name='default_server options', required=False)
   sorry_pages: list(include('sorry_page'), required=False)
   servers: list(include('server'))
 ---
-cookie:
+static_cookie:
   name: regex('^[A-Z][A-Z0-9]+$', name='uppercase cookie name')
   secure: bool(required=False)
 sorry_page:
