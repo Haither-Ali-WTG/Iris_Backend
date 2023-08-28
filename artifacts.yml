@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230828.1
-  # Mon Aug 28 01:29:34 UTC 2023 -- Mon Aug 28 11:29:34 AEST 2023
+  # Dante Build Artifact 20230828.3
+  # Mon Aug 28 05:31:32 UTC 2023 -- Mon Aug 28 15:31:32 AEST 2023
   #
-  # Merge pull request 14408 from dante_artifact_upgrade into master
-  # 4ecc5fd9254e19409a2e49e6f88f1b316042ffb6
-  dante_build_id: '684278'
+  # Merged PR 14417: Fixed wrong time check in Minos
+  # 4e559880f47c827f7992b96691070d19b48bd713
+  dante_build_id: '684553'
 
-  # virgil 20230828.4
-  # Sun Aug 27 23:47:21 UTC 2023 -- Mon Aug 28 09:47:21 AEST 2023
+  # virgil 20230828.7
+  # Mon Aug 28 05:03:52 UTC 2023 -- Mon Aug 28 15:03:52 AEST 2023
   #
-  # Merged PR 14389: WI00633651 - Decommission Elastic Super Micro Nodes
-  # fb8515e8c2b8752f15334e590714df3d60817e23
-  virgil_build_id: '684185'
+  # Merged PR 14211: Add jeremyvisser to operators list
+  # 3a151e4c1513c0c0ebfcc55d871770fa77bf6f79
+  virgil_build_id: '684521'
