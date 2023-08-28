@@ -3,45 +3,45 @@
     - glow
   starts_with:
     - www-
-  encryption: yes
+  encryption: true
   health_check: /Glow/wtg/ready
   port: 443
   balance: first
   cookie:
-    enabled: no
+    enabled: false
   maintenance_page: example.html
   name_suffix: ''
 - name_like:
     - glow
   starts_with:
     - www-
-  encryption: yes
+  encryption: true
   health_check: /Glow/wtg/another_healthcheck
   port: 4443
   balance: first
   cookie:
-    enabled: no
+    enabled: false
   name_suffix: '-backend2'
 - name_like:
     - services
     - accounting
   starts_with:
     - svc-
-  encryption: yes
+  encryption: true
   health_check: "/"
   port: 443
   cookie:
-    enabled: no
+    enabled: false
   name_suffix: ''
 - name_like:
     - neo-
   starts_with:
     - neo-
-  encryption: yes
+  encryption: true
   health_check: "/Glow/wtg/ready"
   port: 443
   balance: first
   cookie:
-    enabled: yes
-    name: glow
+    enabled: true
+    name: GLOW
   name_suffix: ''
