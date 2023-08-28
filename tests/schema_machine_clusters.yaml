@@ -1,2 +1,14 @@
 ---
-any()
+map(include('machine_cluster'),
+            key=regex('^[a-z0-9-]+$', name='machine cluster label (lowercase with dashes)'))
+---
+machine_cluster:
+  machines: map(any(null(), include('haproxy_settings')),
+                key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'))
+  floating_ips: list(include('floating_ip'))
+floating_ip:
+  description: str()
+  ip: ip(version=4)
+  vlan: int(min=1, max=4096)
+  preempt: bool()
+  priority: list(regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'))
