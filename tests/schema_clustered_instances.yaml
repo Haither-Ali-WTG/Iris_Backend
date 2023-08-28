@@ -1,2 +1,19 @@
 ---
-any()
+clustered_instances:
+  hosts: map(include('clustered_instance'),
+             key=regex('^[a-z0-9]+$', name='clustered instance label'))
+---
+clustered_instance:
+  container: include('haproxy_container_settings', required=False)
+  global_: include('haproxy_global__settings', required=False)
+  stats: include('haproxy_stats_settings', required=False)
+  defaults: include('haproxy_defaults_settings', required=False)
+  frontend: include('haproxy_frontend_settings', required=False)
+  cipher: include('haproxy_cipher_settings', required=False)
+  timeouts: include('haproxy_timeouts_settings', required=False)
+  machine_cluster: regex('^[a-z0-9-]+$', name='machine cluster label (lowercase with dashes)')
+  machine_overrides: map(include('haproxy_settings'),
+                         key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'),
+                         required=False)
+  iis_servers: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=False)
+  certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=False)
