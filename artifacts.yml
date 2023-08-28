@@ -7,9 +7,9 @@ variables:
   # 9065bfa587dd077361068fbf18250dcab7e3722d
   dante_build_id: '681665'
 
-  # virgil 20230825.7
-  # Fri Aug 25 01:12:48 UTC 2023 -- Fri Aug 25 11:12:48 AEST 2023
+  # virgil 20230828.4
+  # Sun Aug 27 23:47:21 UTC 2023 -- Mon Aug 28 09:47:21 AEST 2023
   #
-  # Merged PR 14372: us2 cumulus upgrade round 1 version update
-  # 15758f055486d01c121104fecd247823bdf07c0d
-  virgil_build_id: '681480'
+  # Merged PR 14389: WI00633651 - Decommission Elastic Super Micro Nodes
+  # fb8515e8c2b8752f15334e590714df3d60817e23
+  virgil_build_id: '684185'
