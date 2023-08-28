@@ -8,25 +8,25 @@ us2-prod-frontend-1:
     - description: WiseCloud RDP (PROD)
       ip: 10.4.64.135
       vlan: 1064
-      preempt: no
+      preempt: false
       priority: [us2lbl00384, us2lbl00385, us2lbl00386]
     - description: ediProd RDP (CORP)
       ip: 10.4.64.136
       vlan: 1064
-      preempt: no
+      preempt: false
       priority: [us2lbl00385, us2lbl00384, us2lbl00386]
     - description: webservices
       ip: 10.4.64.137
       vlan: 1064
-      preempt: yes
+      preempt: true
       priority: [us2lbl00384, us2lbl00385, us2lbl00386]
     - description: webservices
       ip: 10.4.64.138
       vlan: 1064
-      preempt: yes
+      preempt: true
       priority: [us2lbl00385, us2lbl00386, us2lbl00384]
     - description: webservices
       ip: 10.4.64.139
       vlan: 1064
-      preempt: yes
+      preempt: true
       priority: [us2lbl00386, us2lbl00384, us2lbl00385]
