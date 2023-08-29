@@ -1,2 +1,13 @@
 ---
-any()
+clustered_instances:
+  hosts: map(include('instance_test'),
+             key=regex('^[a-z0-9]+$', name='clustered instance label'))
+---
+instance_test:
+  tests: list(include('one_instance_test'))
+---
+one_instance_test:
+  host: regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')
+  path: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='URL path with optional query')
+  ssl: bool()
+  status: int(min=100, max=599)
