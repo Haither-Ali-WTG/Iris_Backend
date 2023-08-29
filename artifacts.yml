@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230829.1
-  # Tue Aug 29 00:10:17 UTC 2023 -- Tue Aug 29 10:10:17 AEST 2023
+  # Dante Build Artifact 20230829.3
+  # Tue Aug 29 03:42:08 UTC 2023 -- Tue Aug 29 13:42:08 AEST 2023
   #
-  # Merge pull request 14450 from dante_python_upgrade into master
-  # 71f0d1f2fef6a80db52a3bdecd09787207d3b93b
-  dante_build_id: '685377'
+  # Merged PR 14451: Enable periodic minos runs
+  # 9d35370f26324001dc91a255683e48fcb5bba547
+  dante_build_id: '685575'
 
-  # virgil 20230829.5
-  # Tue Aug 29 00:28:32 UTC 2023 -- Tue Aug 29 10:28:32 AEST 2023
+  # virgil 20230829.7
+  # Tue Aug 29 02:22:14 UTC 2023 -- Tue Aug 29 12:22:14 AEST 2023
   #
-  # Merged PR 14394: US2 - add cabinet 108 and 308 switches
-  # 8d2f947984bf424b14dd57071c0e5f42a4ec3601
-  virgil_build_id: '685395'
+  # Merged PR 13492: Virgil - Add a fabric routed boolean field
+  # c1fdd8727c5bd1db2e939945924db3b166621173
+  virgil_build_id: '685511'
