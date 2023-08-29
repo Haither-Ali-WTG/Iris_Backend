@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230828.3
-  # Mon Aug 28 05:31:32 UTC 2023 -- Mon Aug 28 15:31:32 AEST 2023
+  # Dante Build Artifact 20230829.1
+  # Tue Aug 29 00:10:17 UTC 2023 -- Tue Aug 29 10:10:17 AEST 2023
   #
-  # Merged PR 14417: Fixed wrong time check in Minos
-  # 4e559880f47c827f7992b96691070d19b48bd713
-  dante_build_id: '684553'
+  # Merge pull request 14450 from dante_python_upgrade into master
+  # 71f0d1f2fef6a80db52a3bdecd09787207d3b93b
+  dante_build_id: '685377'
 
-  # virgil 20230828.7
-  # Mon Aug 28 05:03:52 UTC 2023 -- Mon Aug 28 15:03:52 AEST 2023
+  # virgil 20230829.3
+  # Mon Aug 28 23:49:07 UTC 2023 -- Tue Aug 29 09:49:07 AEST 2023
   #
-  # Merged PR 14211: Add jeremyvisser to operators list
-  # 3a151e4c1513c0c0ebfcc55d871770fa77bf6f79
-  virgil_build_id: '684521'
+  # Merge pull request 14445 from virgil_python_upgrade into master
+  # 5371642453115e0d0638c02cdcd901cfea659d3e
+  virgil_build_id: '685325'
