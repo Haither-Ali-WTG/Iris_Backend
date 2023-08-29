@@ -5,39 +5,39 @@ clustered_instances:
       tests:
         - host: aucloud3.wisegrid.net
           path: /
-          ssl: yes
+          ssl: true
           status: 200
         - host: fms.wisegrid.net
           path: /api/v1/airevents/ping
-          ssl: yes
+          ssl: true
           status: 200
 
     au2prodceph1:
       tests:
         - host: www.cargowise.com
           path: /healthcheck
-          ssl: yes
+          ssl: true
           status: 200
         - host: cargowise.com
           path: /healthcheck
-          ssl: no
+          ssl: false
           status: 200
 
     au2corprdg:
       tests:
         - host: rdg.wisetechglobal.com
           path: /
-          ssl: yes
+          ssl: true
           status: 302
         - host: sandtsg.wtg.zone
           path: /
-          ssl: yes
+          ssl: true
           status: 302
         - host: rdg.wisetechglobal.com
           path: /
-          ssl: no
+          ssl: false
           status: 302
         - host: sandtsg.wtg.zone
           path: /
-          ssl: no
+          ssl: false
           status: 302
