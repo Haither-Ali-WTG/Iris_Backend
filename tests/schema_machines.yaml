@@ -1,2 +1,8 @@
 ---
-any()
+machines:
+  hosts: map(include('machine'), key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'))
+---
+machine:
+  ansible_host: ip(version=4)
+  os: enum('rhel', 'ubuntu')
+  dc: regex('^[A-Z]{2}[0-9]$', name='data centre (uppercase)')
