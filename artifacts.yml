@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230830.2
-  # Wed Aug 30 02:30:21 UTC 2023 -- Wed Aug 30 12:30:21 AEST 2023
+  # Dante Build Artifact 20230830.5
+  # Wed Aug 30 07:03:20 UTC 2023 -- Wed Aug 30 17:03:20 AEST 2023
   #
-  # Merged PR 14271: Set AWS CLI read timeout to 5mins
-  # ee022487ad296eea158ea770a25b046253671388
-  dante_build_id: '686577'
+  # Merge pull request 14486 from dante_artifact_upgrade into master
+  # 2d3d23082622c4ff48a0c7a7e6dfc95f076f57c6
+  dante_build_id: '686823'
 
   # virgil 20230830.9
   # Wed Aug 30 05:56:58 UTC 2023 -- Wed Aug 30 15:56:58 AEST 2023
