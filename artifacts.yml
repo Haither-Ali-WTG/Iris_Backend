@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230829.4
-  # Tue Aug 29 05:14:35 UTC 2023 -- Tue Aug 29 15:14:35 AEST 2023
+  # Dante Build Artifact 20230830.2
+  # Wed Aug 30 02:30:21 UTC 2023 -- Wed Aug 30 12:30:21 AEST 2023
   #
-  # Merged PR 14391: WI004332967 - Network ports check
-  # 4d8a5e2d0ee18401c7d3c39a0c7e1e42a8522d39
-  dante_build_id: '685655'
+  # Merged PR 14271: Set AWS CLI read timeout to 5mins
+  # ee022487ad296eea158ea770a25b046253671388
+  dante_build_id: '686577'
 
-  # virgil 20230829.7
-  # Tue Aug 29 02:22:14 UTC 2023 -- Tue Aug 29 12:22:14 AEST 2023
+  # virgil 20230830.4
+  # Wed Aug 30 00:12:25 UTC 2023 -- Wed Aug 30 10:12:25 AEST 2023
   #
-  # Merged PR 13492: Virgil - Add a fabric routed boolean field
-  # c1fdd8727c5bd1db2e939945924db3b166621173
-  virgil_build_id: '685511'
+  # Merged PR 14485: US2 Elastic Tweaks.
+  # 43d5595803b5038af109122c2f3265646e944561
+  virgil_build_id: '686460'
