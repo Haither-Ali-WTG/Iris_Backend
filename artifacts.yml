@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230831.2
-  # Thu Aug 31 01:21:21 UTC 2023 -- Thu Aug 31 11:21:21 AEST 2023
+  # Dante Build Artifact 20230831.3
+  # Thu Aug 31 04:41:21 UTC 2023 -- Thu Aug 31 14:41:21 AEST 2023
   #
-  # Merge pull request 14530 from dante_artifact_upgrade into master
-  # 093fea988e783beb8631456f5b6bcd170a81ba01
-  dante_build_id: '687600'
+  # Merged PR 14531: (WI00608735) Added primary DNS for initial name resolution by system_dns
+  # 841ddb48106c73eb10da07b8afbe957bab2d1230
+  dante_build_id: '687777'
 
-  # virgil 20230831.4
-  # Wed Aug 30 23:45:51 UTC 2023 -- Thu Aug 31 09:45:51 AEST 2023
+  # virgil 20230831.7
+  # Thu Aug 31 04:46:09 UTC 2023 -- Thu Aug 31 14:46:09 AEST 2023
   #
-  # Merged PR 14524: Change US2 switches back to on demand
-  # e5ab3442d2d33d87d142b3caac5a527607838489
-  virgil_build_id: '687522'
+  # Merged PR 14541: configure replacement switch apex28
+  # 6ec0eb4c3007f09c3cb78462626d15d7cb2d6e30
+  virgil_build_id: '687788'
