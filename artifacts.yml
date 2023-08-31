@@ -7,9 +7,9 @@ variables:
   # 2d3d23082622c4ff48a0c7a7e6dfc95f076f57c6
   dante_build_id: '686823'
 
-  # virgil 20230830.9
-  # Wed Aug 30 05:56:58 UTC 2023 -- Wed Aug 30 15:56:58 AEST 2023
+  # virgil 20230831.4
+  # Wed Aug 30 23:45:51 UTC 2023 -- Thu Aug 31 09:45:51 AEST 2023
   #
-  # Merged PR 14509: Disabled unplugged switches in th US
-  # 436d959e9c0dfd46a45102d2281e8e351b2f8796
-  virgil_build_id: '686754'
+  # Merged PR 14524: Change US2 switches back to on demand
+  # e5ab3442d2d33d87d142b3caac5a527607838489
+  virgil_build_id: '687522'
