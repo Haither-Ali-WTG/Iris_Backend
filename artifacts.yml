@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230831.3
-  # Thu Aug 31 04:41:21 UTC 2023 -- Thu Aug 31 14:41:21 AEST 2023
+  # Dante Build Artifact 20230831.5
+  # Thu Aug 31 08:06:05 UTC 2023 -- Thu Aug 31 18:06:05 AEST 2023
   #
-  # Merged PR 14531: (WI00608735) Added primary DNS for initial name resolution by system_dns
-  # 841ddb48106c73eb10da07b8afbe957bab2d1230
-  dante_build_id: '687777'
+  # Merged PR 14507: Refactoring to unify send messages to kafka from minos and certificates checker
+  # 3dbaa1f8f017f22c0ff4c5b9be0772b8624ff130
+  dante_build_id: '687970'
 
   # virgil 20230831.7
   # Thu Aug 31 04:46:09 UTC 2023 -- Thu Aug 31 14:46:09 AEST 2023
