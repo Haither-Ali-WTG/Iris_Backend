@@ -7,9 +7,9 @@ variables:
   # 3dbaa1f8f017f22c0ff4c5b9be0772b8624ff130
   dante_build_id: '687970'
 
-  # virgil 20230831.7
-  # Thu Aug 31 04:46:09 UTC 2023 -- Thu Aug 31 14:46:09 AEST 2023
+  # virgil 20230901.3
+  # Fri Sep  1 03:08:09 UTC 2023 -- Fri Sep  1 13:08:09 AEST 2023
   #
-  # Merged PR 14541: configure replacement switch apex28
-  # 6ec0eb4c3007f09c3cb78462626d15d7cb2d6e30
-  virgil_build_id: '687788'
+  # Merge pull request 14555 from virgil_python_upgrade into master
+  # e3326ad03e0494ddbe443608193caae3d475e38b
+  virgil_build_id: '688725'
