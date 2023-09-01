@@ -69,7 +69,7 @@ isort==5.12.0
     # via pylint
 jinja2==3.1.2
     # via ansible-core
-jq==1.4.1
+jq==1.5.0
     # via -r requirements.in
 jsonschema==4.19.0
     # via
@@ -219,7 +219,7 @@ typing-extensions==4.7.1
     #   mypy
 urllib3==2.0.4
     # via requests
-wcmatch==8.4.1
+wcmatch==8.5
     # via ansible-lint
 wrapt==1.15.0
     # via astroid
