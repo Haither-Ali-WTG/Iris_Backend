@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230831.5
-  # Thu Aug 31 08:06:05 UTC 2023 -- Thu Aug 31 18:06:05 AEST 2023
+  # Dante Build Artifact 20230904.1
+  # Sun Sep  3 23:18:32 UTC 2023 -- Mon Sep  4 09:18:32 AEST 2023
   #
-  # Merged PR 14507: Refactoring to unify send messages to kafka from minos and certificates checker
-  # 3dbaa1f8f017f22c0ff4c5b9be0772b8624ff130
-  dante_build_id: '687970'
+  # Merge pull request 14590 from dante_python_upgrade into master
+  # da708a5b9ce9738830871571a8c527c5cf18f19e
+  dante_build_id: '691305'
 
-  # virgil 20230901.3
-  # Fri Sep  1 03:08:09 UTC 2023 -- Fri Sep  1 13:08:09 AEST 2023
+  # virgil 20230904.7
+  # Sun Sep  3 23:23:29 UTC 2023 -- Mon Sep  4 09:23:29 AEST 2023
   #
-  # Merge pull request 14555 from virgil_python_upgrade into master
-  # e3326ad03e0494ddbe443608193caae3d475e38b
-  virgil_build_id: '688725'
+  # Merged PR 14561: Migrating three hypervisors to pod 1
+  # 29a633df04d4da5999585e329652d0858d92bcc6
+  virgil_build_id: '691319'
