@@ -7,9 +7,9 @@ variables:
   # da708a5b9ce9738830871571a8c527c5cf18f19e
   dante_build_id: '691305'
 
-  # virgil 20230904.7
-  # Sun Sep  3 23:23:29 UTC 2023 -- Mon Sep  4 09:23:29 AEST 2023
+  # virgil 20230904.33
+  # Mon Sep  4 04:03:34 UTC 2023 -- Mon Sep  4 14:03:34 AEST 2023
   #
-  # Merged PR 14561: Migrating three hypervisors to pod 1
-  # 29a633df04d4da5999585e329652d0858d92bcc6
-  virgil_build_id: '691319'
+  # Merged PR 14598: (WI00535979) Drivers versions added to virgil to remove from dante in the next step
+  # cd87248ccf8e67e0c9cf942759e0f3e833145303
+  virgil_build_id: '691626'
