@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230904.1
-  # Sun Sep  3 23:18:32 UTC 2023 -- Mon Sep  4 09:18:32 AEST 2023
+  # Dante Build Artifact 20230904.2
+  # Mon Sep  4 05:54:27 UTC 2023 -- Mon Sep  4 15:54:27 AEST 2023
   #
-  # Merge pull request 14590 from dante_python_upgrade into master
-  # da708a5b9ce9738830871571a8c527c5cf18f19e
-  dante_build_id: '691305'
+  # Merged PR 14600: Retrieve kafka password from key vault only whe not set prior
+  # b225be0fa972c5eed35dcd39a799cc61e66d194e
+  dante_build_id: '691714'
 
   # virgil 20230904.33
   # Mon Sep  4 04:03:34 UTC 2023 -- Mon Sep  4 14:03:34 AEST 2023
