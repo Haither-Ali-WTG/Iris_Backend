@@ -168,7 +168,7 @@ rich==13.5.2
     # via
     #   ansible-lint
     #   bandit
-rpds-py==0.10.0
+rpds-py==0.10.2
     # via
     #   jsonschema
     #   referencing
