@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230904.3
-  # Mon Sep  4 07:12:41 UTC 2023 -- Mon Sep  4 17:12:41 AEST 2023
+  # Dante Build Artifact 20230905.1
+  # Tue Sep  5 00:12:36 UTC 2023 -- Tue Sep  5 10:12:36 AEST 2023
   #
-  # Merge pull request 14592 from dante_artifact_upgrade into master
-  # 075dea39d6f8bda40d1f3cf7e409a9495bda0ed7
-  dante_build_id: '691795'
+  # Merge pull request 14629 from dante_python_upgrade into master
+  # 5eedc5ca6fc902a0b2362ee930a8da035b1ebbf1
+  dante_build_id: '692444'
 
-  # virgil 20230904.33
-  # Mon Sep  4 04:03:34 UTC 2023 -- Mon Sep  4 14:03:34 AEST 2023
+  # virgil 20230905.2
+  # Tue Sep  5 00:59:34 UTC 2023 -- Tue Sep  5 10:59:34 AEST 2023
   #
-  # Merged PR 14598: (WI00535979) Drivers versions added to virgil to remove from dante in the next step
-  # cd87248ccf8e67e0c9cf942759e0f3e833145303
-  virgil_build_id: '691626'
+  # Merged PR 14572: Add new hyperv host for corp
+  # 03c2436d1f4f74d5c4dc068fc4c428fdf31947c1
+  virgil_build_id: '692478'
