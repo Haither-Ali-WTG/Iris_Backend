@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230905.6
-  # Tue Sep  5 10:13:49 UTC 2023 -- Tue Sep  5 20:13:49 AEST 2023
+  # Dante Build Artifact 20230906.1
+  # Tue Sep  5 23:51:57 UTC 2023 -- Wed Sep  6 09:51:57 AEST 2023
   #
-  # Merged PR 14642: Added Elastic public signing key for mirror
-  # 4f2647785f1673ac3ba2d307b2321bee4ab1a36e
-  dante_build_id: '692958'
+  # Merge pull request 14673 from dante_python_upgrade into master
+  # b62a12cd8a3bf49ba379c7b99c681957e587096a
+  dante_build_id: '693477'
 
   # virgil 20230905.2
   # Tue Sep  5 00:59:34 UTC 2023 -- Tue Sep  5 10:59:34 AEST 2023
