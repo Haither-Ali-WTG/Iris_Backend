@@ -7,9 +7,9 @@ variables:
   # b62a12cd8a3bf49ba379c7b99c681957e587096a
   dante_build_id: '693477'
 
-  # virgil 20230905.2
-  # Tue Sep  5 00:59:34 UTC 2023 -- Tue Sep  5 10:59:34 AEST 2023
+  # virgil 20230906.9
+  # Wed Sep  6 03:43:35 UTC 2023 -- Wed Sep  6 13:43:35 AEST 2023
   #
-  # Merged PR 14572: Add new hyperv host for corp
-  # 03c2436d1f4f74d5c4dc068fc4c428fdf31947c1
-  virgil_build_id: '692478'
+  # Merged PR 14686: Export global info from Virgil
+  # 7fed2c57ede4c0b7282921c2efd95a6be6976c34
+  virgil_build_id: '693700'
