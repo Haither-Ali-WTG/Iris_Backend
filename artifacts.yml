@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230906.1
-  # Tue Sep  5 23:51:57 UTC 2023 -- Wed Sep  6 09:51:57 AEST 2023
+  # Dante Build Artifact 20230906.4
+  # Wed Sep  6 10:30:37 UTC 2023 -- Wed Sep  6 20:30:37 AEST 2023
   #
-  # Merge pull request 14673 from dante_python_upgrade into master
-  # b62a12cd8a3bf49ba379c7b99c681957e587096a
-  dante_build_id: '693477'
+  # Merged PR 14640: Added network ports check with debug but not assert
+  # ff6cb3228132b3f5f144e395beed673456ec9757
+  dante_build_id: '694049'
 
   # virgil 20230906.9
   # Wed Sep  6 03:43:35 UTC 2023 -- Wed Sep  6 13:43:35 AEST 2023
