@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230906.4
-  # Wed Sep  6 10:30:37 UTC 2023 -- Wed Sep  6 20:30:37 AEST 2023
+  # Dante Build Artifact 20230907.2
+  # Thu Sep  7 03:08:06 UTC 2023 -- Thu Sep  7 13:08:06 AEST 2023
   #
-  # Merged PR 14640: Added network ports check with debug but not assert
-  # ff6cb3228132b3f5f144e395beed673456ec9757
-  dante_build_id: '694049'
+  # Merged PR 14659: (WI00535979) Dante - Consume mellanos drivers from virgil
+  # ba847d895f509c94968fad8ccc1ea6e8f15cb0c4
+  dante_build_id: '694808'
 
-  # virgil 20230907.6
-  # Thu Sep  7 00:29:36 UTC 2023 -- Thu Sep  7 10:29:36 AEST 2023
+  # virgil 20230907.14
+  # Thu Sep  7 02:38:56 UTC 2023 -- Thu Sep  7 12:38:56 AEST 2023
   #
-  # Merge pull request 14716 from virgil_python_upgrade into master
-  # e106a5eb0c4c9f04cbd2c3ea84ce5c0ee399c02d
-  virgil_build_id: '694612'
+  # Merged PR 14751: Export os drivers to global info
+  # d1a4fcb9585425ea87f0d5d32dc4a0c39009db53
+  virgil_build_id: '694777'
