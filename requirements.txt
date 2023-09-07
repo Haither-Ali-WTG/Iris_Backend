@@ -6,14 +6,14 @@
 #
 ansible==8.3.0
     # via -r requirements.in
-ansible-compat==4.1.9
+ansible-compat==4.1.10
     # via ansible-lint
 ansible-core==2.15.3
     # via
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.18.0
+ansible-lint==6.19.0
     # via -r requirements.in
 argcomplete==3.1.1
     # via yq
@@ -42,7 +42,7 @@ click==8.1.7
     #   safety
 confluent-kafka==2.2.0
     # via -r requirements.in
-coverage[toml]==7.3.0
+coverage[toml]==7.3.1
     # via pytest-cov
 cryptography==41.0.3
     # via
