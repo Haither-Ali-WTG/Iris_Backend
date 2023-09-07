@@ -59,7 +59,7 @@ filelock==3.12.3
     # via ansible-lint
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.34
+gitpython==3.1.35
     # via bandit
 idna==3.4
     # via requests
