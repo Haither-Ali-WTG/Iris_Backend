@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230907.6
-  # Thu Sep  7 11:25:24 UTC 2023 -- Thu Sep  7 21:25:24 AEST 2023
+  # Dante Build Artifact 20230908.1
+  # Fri Sep  8 02:58:51 UTC 2023 -- Fri Sep  8 12:58:51 AEST 2023
   #
-  # Merged PR 14745: Fix mirror sync by making sure directory exists before downloading the key
-  # 2d5122ea372b9eedbced4fb3d5e92d675b16d10b
-  dante_build_id: '695217'
+  # Merged PR 14759: Dante - Fix sshd run dir timing issue
+  # 3e5eb7715af37fcf1ce4f62f51cc9546f2cbb522
+  dante_build_id: '695881'
 
   # virgil 20230908.2
   # Thu Sep  7 23:42:35 UTC 2023 -- Fri Sep  8 09:42:35 AEST 2023
