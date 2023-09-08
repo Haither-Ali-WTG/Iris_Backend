@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230908.1
-  # Fri Sep  8 02:58:51 UTC 2023 -- Fri Sep  8 12:58:51 AEST 2023
+  # Dante Build Artifact 20230908.2
+  # Fri Sep  8 05:12:07 UTC 2023 -- Fri Sep  8 15:12:07 AEST 2023
   #
-  # Merged PR 14759: Dante - Fix sshd run dir timing issue
-  # 3e5eb7715af37fcf1ce4f62f51cc9546f2cbb522
-  dante_build_id: '695881'
+  # Merged PR 14763: (WI00535979) Use OS drivers from virgil instead of dante
+  # 738d9997cc643701bb6555307a61ebd2f8d934c4
+  dante_build_id: '696003'
 
   # virgil 20230908.2
   # Thu Sep  7 23:42:35 UTC 2023 -- Fri Sep  8 09:42:35 AEST 2023
