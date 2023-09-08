@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230907.2
-  # Thu Sep  7 03:08:06 UTC 2023 -- Thu Sep  7 13:08:06 AEST 2023
+  # Dante Build Artifact 20230907.6
+  # Thu Sep  7 11:25:24 UTC 2023 -- Thu Sep  7 21:25:24 AEST 2023
   #
-  # Merged PR 14659: (WI00535979) Dante - Consume mellanos drivers from virgil
-  # ba847d895f509c94968fad8ccc1ea6e8f15cb0c4
-  dante_build_id: '694808'
+  # Merged PR 14745: Fix mirror sync by making sure directory exists before downloading the key
+  # 2d5122ea372b9eedbced4fb3d5e92d675b16d10b
+  dante_build_id: '695217'
 
-  # virgil 20230907.14
-  # Thu Sep  7 02:38:56 UTC 2023 -- Thu Sep  7 12:38:56 AEST 2023
+  # virgil 20230908.2
+  # Thu Sep  7 23:42:35 UTC 2023 -- Fri Sep  8 09:42:35 AEST 2023
   #
-  # Merged PR 14751: Export os drivers to global info
-  # d1a4fcb9585425ea87f0d5d32dc4a0c39009db53
-  virgil_build_id: '694777'
+  # Merge pull request 14777 from virgil_python_upgrade into master
+  # 8ef1f1ec5efa22bbce6be5398d9298a2c9bcd9f8
+  virgil_build_id: '695689'
