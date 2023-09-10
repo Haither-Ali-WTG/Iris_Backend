@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230908.2
-  # Fri Sep  8 05:12:07 UTC 2023 -- Fri Sep  8 15:12:07 AEST 2023
+  # Dante Build Artifact 20230908.4
+  # Fri Sep  8 10:16:19 UTC 2023 -- Fri Sep  8 20:16:19 AEST 2023
   #
-  # Merged PR 14763: (WI00535979) Use OS drivers from virgil instead of dante
-  # 738d9997cc643701bb6555307a61ebd2f8d934c4
-  dante_build_id: '696003'
+  # Merge pull request 14768 from dante_artifact_upgrade into master
+  # adad27a82d3b8a61de3a49e11b515dc3ca764df7
+  dante_build_id: '696271'
 
-  # virgil 20230908.2
-  # Thu Sep  7 23:42:35 UTC 2023 -- Fri Sep  8 09:42:35 AEST 2023
+  # virgil 20230908.11
+  # Fri Sep  8 07:23:01 UTC 2023 -- Fri Sep  8 17:23:01 AEST 2023
   #
-  # Merge pull request 14777 from virgil_python_upgrade into master
-  # 8ef1f1ec5efa22bbce6be5398d9298a2c9bcd9f8
-  virgil_build_id: '695689'
+  # Merged PR 14775: Update de1adw310852 to de1co-sads-402
+  # 64b305d4a775bbdbb59a7aae88f92d6f478b632b
+  virgil_build_id: '696138'
