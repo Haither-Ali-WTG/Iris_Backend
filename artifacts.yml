@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230911.1
-  # Sun Sep 10 23:46:36 UTC 2023 -- Mon Sep 11 09:46:36 AEST 2023
+  # Dante Build Artifact 20230911.4
+  # Mon Sep 11 02:10:13 UTC 2023 -- Mon Sep 11 12:10:13 AEST 2023
   #
-  # Merge pull request 14831 from dante_python_upgrade into master
-  # 7a35c6e13444764c410d91811aefc4f8eb25e7aa
-  dante_build_id: '698555'
+  # Merged PR 14794: Remove telegraf from dante
+  # 18ab61afa93d3cc846fe883750cda5803cd6ebb1
+  dante_build_id: '698704'
 
-  # virgil 20230911.6
-  # Sun Sep 10 23:41:53 UTC 2023 -- Mon Sep 11 09:41:53 AEST 2023
+  # virgil 20230911.8
+  # Mon Sep 11 01:13:58 UTC 2023 -- Mon Sep 11 11:13:58 AEST 2023
   #
-  # Merge pull request 14828 from virgil_python_upgrade into master
-  # 6e1e300888bdd7edd78be6859607655fa55b4f2c
-  virgil_build_id: '698548'
+  # Merged PR 14821: More cabinet 108 C54s
+  # 4b9985b15fc2ce80df7a7213883e26e60b349327
+  virgil_build_id: '698652'
