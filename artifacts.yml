@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230911.5
-  # Mon Sep 11 04:23:12 UTC 2023 -- Mon Sep 11 14:23:12 AEST 2023
+  # Dante Build Artifact 20230911.6
+  # Mon Sep 11 06:33:41 UTC 2023 -- Mon Sep 11 16:33:41 AEST 2023
   #
-  # Merged PR 14822: The failed_hosts field should be a list, not a string
-  # b48e162b747f141a767d9140619eaed1e9f31fa8
-  dante_build_id: '698813'
+  # Merge pull request 14845 from dante_artifact_upgrade into master
+  # 42a02e548f4bc739e30ae11f7074afe6a8309725
+  dante_build_id: '698952'
 
   # virgil 20230911.13
   # Mon Sep 11 04:25:34 UTC 2023 -- Mon Sep 11 14:25:34 AEST 2023
