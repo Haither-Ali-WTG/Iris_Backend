@@ -8,7 +8,7 @@ machine_cluster:
   floating_ips: list(include('floating_ip'))
 floating_ip:
   description: str()
-  ip: ip(version=4)
+  ip: ip(version=4, unique='LB address')
   vlan: int(min=1, max=4096)
   preempt: bool()
   priority: list(regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'))
