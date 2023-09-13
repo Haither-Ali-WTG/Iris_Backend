@@ -7,9 +7,9 @@ variables:
   # f0f9834ba2313b110bf50af1733810990c6b611a
   dante_build_id: '700024'
 
-  # virgil 20230913.6
-  # Wed Sep 13 01:53:50 UTC 2023 -- Wed Sep 13 11:53:50 AEST 2023
+  # virgil 20230913.9
+  # Wed Sep 13 04:59:41 UTC 2023 -- Wed Sep 13 14:59:41 AEST 2023
   #
-  # Merged PR 14874: add HyperV hostname connected to apex19 20
-  # 58a824d1e9c5ca53c612ec21a17187f6323fe45a
-  virgil_build_id: '700741'
+  # Merged PR 14866: Updated teardowns.yaml
+  # e856cf3fda5f907b697a2bb70213e17ea61a5c27
+  virgil_build_id: '700906'
