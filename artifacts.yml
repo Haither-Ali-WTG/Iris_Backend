@@ -7,9 +7,9 @@ variables:
   # f0f9834ba2313b110bf50af1733810990c6b611a
   dante_build_id: '700024'
 
-  # virgil 20230913.9
-  # Wed Sep 13 04:59:41 UTC 2023 -- Wed Sep 13 14:59:41 AEST 2023
+  # virgil 20230914.2
+  # Wed Sep 13 23:54:48 UTC 2023 -- Thu Sep 14 09:54:48 AEST 2023
   #
-  # Merged PR 14866: Updated teardowns.yaml
-  # e856cf3fda5f907b697a2bb70213e17ea61a5c27
-  virgil_build_id: '700906'
+  # Merged PR 14935: US2 New VMware Computer
+  # 507b722c91fa6427b262f254a72f5b1e2f125f88
+  virgil_build_id: '701701'
