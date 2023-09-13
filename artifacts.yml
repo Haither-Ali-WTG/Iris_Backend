@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230912.1
-  # Tue Sep 12 00:16:28 UTC 2023 -- Tue Sep 12 10:16:28 AEST 2023
+  # Dante Build Artifact 20230912.3
+  # Tue Sep 12 07:49:07 UTC 2023 -- Tue Sep 12 17:49:07 AEST 2023
   #
-  # Merge pull request 14873 from dante_python_upgrade into master
-  # 644a2f7728da703dc4b8f8a51cc3d6e9245754d9
-  dante_build_id: '699638'
+  # Merged PR 14865: Run s3 proxy on mgmt nodes
+  # f0f9834ba2313b110bf50af1733810990c6b611a
+  dante_build_id: '700024'
 
-  # virgil 20230911.13
-  # Mon Sep 11 04:25:34 UTC 2023 -- Mon Sep 11 14:25:34 AEST 2023
+  # virgil 20230913.6
+  # Wed Sep 13 01:53:50 UTC 2023 -- Wed Sep 13 11:53:50 AEST 2023
   #
-  # Merged PR 14855: Revert "Upgrade US2 exits 3 and 4 to Cumulus 5.2.1"
-  # aa0838ef4f14f27a3f37e08280797741838548a6
-  virgil_build_id: '698816'
+  # Merged PR 14874: add HyperV hostname connected to apex19 20
+  # 58a824d1e9c5ca53c612ec21a17187f6323fe45a
+  virgil_build_id: '700741'
