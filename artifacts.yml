@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230912.3
-  # Tue Sep 12 07:49:07 UTC 2023 -- Tue Sep 12 17:49:07 AEST 2023
+  # Dante Build Artifact 20230914.5
+  # Thu Sep 14 09:35:00 UTC 2023 -- Thu Sep 14 19:35:00 AEST 2023
   #
-  # Merged PR 14865: Run s3 proxy on mgmt nodes
-  # f0f9834ba2313b110bf50af1733810990c6b611a
-  dante_build_id: '700024'
+  # Merge pull request 14900 from dante_artifact_upgrade into master
+  # 3a5faab6ce2418831c18aafbdbc7ce256426f53a
+  dante_build_id: '702235'
 
-  # virgil 20230914.2
-  # Wed Sep 13 23:54:48 UTC 2023 -- Thu Sep 14 09:54:48 AEST 2023
+  # virgil 20230914.7
+  # Thu Sep 14 10:02:55 UTC 2023 -- Thu Sep 14 20:02:55 AEST 2023
   #
-  # Merged PR 14935: US2 New VMware Computer
-  # 507b722c91fa6427b262f254a72f5b1e2f125f88
-  virgil_build_id: '701701'
+  # Merge pull request 14950 from virgil_python_upgrade into master
+  # ec5cbf242458ef1f6a9c1b44bb864b46b1b27d24
+  virgil_build_id: '702264'
