@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230914.5
-  # Thu Sep 14 09:35:00 UTC 2023 -- Thu Sep 14 19:35:00 AEST 2023
+  # Dante Build Artifact 20230915.1
+  # Thu Sep 14 23:37:06 UTC 2023 -- Fri Sep 15 09:37:06 AEST 2023
   #
-  # Merge pull request 14900 from dante_artifact_upgrade into master
-  # 3a5faab6ce2418831c18aafbdbc7ce256426f53a
-  dante_build_id: '702235'
+  # Merge pull request 14963 from dante_artifact_upgrade into master
+  # 9f709ed049a7a09b97c5c5eb45b784ffaf05c9e7
+  dante_build_id: '702758'
 
-  # virgil 20230914.7
-  # Thu Sep 14 10:02:55 UTC 2023 -- Thu Sep 14 20:02:55 AEST 2023
+  # virgil 20230915.2
+  # Thu Sep 14 23:40:26 UTC 2023 -- Fri Sep 15 09:40:26 AEST 2023
   #
-  # Merge pull request 14950 from virgil_python_upgrade into master
-  # ec5cbf242458ef1f6a9c1b44bb864b46b1b27d24
-  virgil_build_id: '702264'
+  # Merged PR 14952: update cumulus version us2 exits
+  # 79663186666efe783a2030af37ccde80bb8c55b1
+  virgil_build_id: '702780'
