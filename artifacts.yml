@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230915.2
-  # Fri Sep 15 00:52:48 UTC 2023 -- Fri Sep 15 10:52:48 AEST 2023
+  # Dante Build Artifact 20230915.3
+  # Fri Sep 15 02:16:42 UTC 2023 -- Fri Sep 15 12:16:42 AEST 2023
   #
-  # Merge pull request 14970 from dante_artifact_upgrade into master
-  # 547917665d6586b9ac676f5839890e573317f192
-  dante_build_id: '702861'
+  # Merged PR 14971: Login to Azure devops via env variable
+  # 9e364911150e73ad7e98ccb5cf6df5ee040c476c
+  dante_build_id: '702959'
 
   # virgil 20230915.2
   # Thu Sep 14 23:40:26 UTC 2023 -- Fri Sep 15 09:40:26 AEST 2023
