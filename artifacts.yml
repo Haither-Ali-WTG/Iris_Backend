@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230915.3
-  # Fri Sep 15 02:16:42 UTC 2023 -- Fri Sep 15 12:16:42 AEST 2023
+  # Dante Build Artifact 20230915.4
+  # Fri Sep 15 03:49:54 UTC 2023 -- Fri Sep 15 13:49:54 AEST 2023
   #
-  # Merged PR 14971: Login to Azure devops via env variable
-  # 9e364911150e73ad7e98ccb5cf6df5ee040c476c
-  dante_build_id: '702959'
+  # Merged PR 14973: Unpin iniconfig, we no longer use Python 3.6 / RHEL7 on mgmt nodes
+  # b7834ecd4506fbaf99bf32e6bd6078715a464ea3
+  dante_build_id: '703040'
 
-  # virgil 20230915.2
-  # Thu Sep 14 23:40:26 UTC 2023 -- Fri Sep 15 09:40:26 AEST 2023
+  # virgil 20230915.6
+  # Fri Sep 15 03:15:17 UTC 2023 -- Fri Sep 15 13:15:17 AEST 2023
   #
-  # Merged PR 14952: update cumulus version us2 exits
-  # 79663186666efe783a2030af37ccde80bb8c55b1
-  virgil_build_id: '702780'
+  # Merged PR 14982: upgrade de1 exit  switches
+  # 8ab1a121463df0448bb8230b11081814a197461b
+  virgil_build_id: '703010'
