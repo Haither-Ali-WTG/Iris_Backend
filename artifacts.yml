@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230915.5
-  # Fri Sep 15 08:27:32 UTC 2023 -- Fri Sep 15 18:27:32 AEST 2023
+  # Dante Build Artifact 20230918.1
+  # Sun Sep 17 23:15:59 UTC 2023 -- Mon Sep 18 09:15:59 AEST 2023
   #
-  # Merge pull request 14994 from dante_artifact_upgrade into master
-  # 9cd31aaaa42c4cb466cc7b83ba22dfd3acd5678a
-  dante_build_id: '703268'
+  # Merge pull request 15014 from dante_python_upgrade into master
+  # 86f73557b8ac1713b3f4c35ed56a7a4a6e9171c4
+  dante_build_id: '705562'
 
-  # virgil 20230915.6
-  # Fri Sep 15 03:15:17 UTC 2023 -- Fri Sep 15 13:15:17 AEST 2023
+  # virgil 20230918.2
+  # Sun Sep 17 23:19:20 UTC 2023 -- Mon Sep 18 09:19:20 AEST 2023
   #
-  # Merged PR 14982: upgrade de1 exit  switches
-  # 8ab1a121463df0448bb8230b11081814a197461b
-  virgil_build_id: '703010'
+  # Merge pull request 15011 from virgil_python_upgrade into master
+  # ca09665b1d1a3d4374832f36f34e8ffe0de66d18
+  virgil_build_id: '705569'
