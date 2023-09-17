@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230915.4
-  # Fri Sep 15 03:49:54 UTC 2023 -- Fri Sep 15 13:49:54 AEST 2023
+  # Dante Build Artifact 20230915.5
+  # Fri Sep 15 08:27:32 UTC 2023 -- Fri Sep 15 18:27:32 AEST 2023
   #
-  # Merged PR 14973: Unpin iniconfig, we no longer use Python 3.6 / RHEL7 on mgmt nodes
-  # b7834ecd4506fbaf99bf32e6bd6078715a464ea3
-  dante_build_id: '703040'
+  # Merge pull request 14994 from dante_artifact_upgrade into master
+  # 9cd31aaaa42c4cb466cc7b83ba22dfd3acd5678a
+  dante_build_id: '703268'
 
   # virgil 20230915.6
   # Fri Sep 15 03:15:17 UTC 2023 -- Fri Sep 15 13:15:17 AEST 2023
