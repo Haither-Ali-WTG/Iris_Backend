@@ -3,6 +3,7 @@
 import re
 from glob import glob
 import json
+from typing import Any, Mapping
 from unittest import TestCase
 
 import ruamel.yaml
@@ -12,6 +13,18 @@ class TestVirgilCrosscheck(TestCase):
     """
     Cross-check our machine configuration against Virgil information.
     """
+
+    virgil_machines: Mapping[str, Any]
+
+    @classmethod
+    def setUpClass(cls):
+        cls.virgil_machines = {}
+        for fname in glob("inventories/inventory-*-*.yaml"):
+            with open(fname, encoding="utf8") as fh:
+                # Note: these files are nominally YAML, but in practice they're JSON and
+                # loading them as JSON is much faster
+                virgil_file = json.load(fh)
+                cls.virgil_machines.update(virgil_file["all"]["hosts"])
 
     def test(self):
         """Cross-check our machine configuration against Virgil information."""
