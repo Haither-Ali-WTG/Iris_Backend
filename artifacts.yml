@@ -7,9 +7,9 @@ variables:
   # 3eb533447bf325f8fd28e893a4803e2a7554600c
   dante_build_id: '705641'
 
-  # virgil 20230918.2
-  # Sun Sep 17 23:19:20 UTC 2023 -- Mon Sep 18 09:19:20 AEST 2023
+  # virgil 20230918.6
+  # Mon Sep 18 04:19:58 UTC 2023 -- Mon Sep 18 14:19:58 AEST 2023
   #
-  # Merge pull request 15011 from virgil_python_upgrade into master
-  # ca09665b1d1a3d4374832f36f34e8ffe0de66d18
-  virgil_build_id: '705569'
+  # Merged PR 15032: Updated queues.yaml - Added topics for WTA index's
+  # 8d25599e94a655e6bddf059ca8822640bac2c08d
+  virgil_build_id: '705858'
