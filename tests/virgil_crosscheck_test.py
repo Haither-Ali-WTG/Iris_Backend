@@ -7,7 +7,7 @@ import json
 from typing import Any, Mapping
 from unittest import TestCase
 
-from more_itertools import only
+from more_itertools import one
 import ruamel.yaml
 
 
@@ -87,7 +87,6 @@ class TestVirgilCrosscheck(TestCase):
     def test_machine_clusters(self):
         """Cross-check machine cluster configuration against Virgil."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
-        fname_pat = re.compile(r"^instances/([a-z]{2}[0-9])-machines\.yml$")
 
         for fname in glob("machine_clusters/*.yaml"):
             with self.subTest(file=fname):
@@ -103,7 +102,7 @@ class TestVirgilCrosscheck(TestCase):
                             self.virgil_machines[name]["virgil_mgmt_vlan"]
                             for name in config["machines"]
                         )
-                        virgil_vlan, subnet = only({
+                        virgil_vlan, subnet = one({
                             (virgil_vlan["id"], virgil_vlan["subnet"])
                             for virgil_vlan in virgil_vlans
                         })
