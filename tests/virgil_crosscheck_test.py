@@ -26,7 +26,7 @@ class TestVirgilCrosscheck(TestCase):
                 virgil_file = json.load(fh)
                 cls.virgil_machines.update(virgil_file["all"]["hosts"])
 
-    def test(self):
+    def test_against_virgil(self):
         """Cross-check our machine configuration against Virgil information."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
         fname_pat = re.compile(r"^instances/([a-z]{2}[0-9])-machines\.yml$")
