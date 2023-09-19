@@ -7,9 +7,9 @@ variables:
   # b2651557ca4b624a9a06f37dad4a3057abc42c42
   dante_build_id: '706725'
 
-  # virgil 20230919.12
-  # Tue Sep 19 02:03:02 UTC 2023 -- Tue Sep 19 12:03:02 AEST 2023
+  # virgil 20230919.14
+  # Tue Sep 19 02:28:10 UTC 2023 -- Tue Sep 19 12:28:10 AEST 2023
   #
-  # Merge pull request 15060 from virgil_python_upgrade into master
-  # 5095bc90b73ecc6efc1ccd210734427abe8cea41
-  virgil_build_id: '706873'
+  # Merged PR 15065: Add apexes 23 and 24
+  # 5010cc0789fad2f4b47018fb7f87b03728101fee
+  virgil_build_id: '706893'
