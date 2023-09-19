@@ -7,9 +7,9 @@ variables:
   # a616ac18d4ccdc556eb45a005a585b62ce050fa1
   dante_build_id: '706972'
 
-  # virgil 20230919.14
-  # Tue Sep 19 02:28:10 UTC 2023 -- Tue Sep 19 12:28:10 AEST 2023
+  # virgil 20230919.19
+  # Tue Sep 19 05:40:30 UTC 2023 -- Tue Sep 19 15:40:30 AEST 2023
   #
-  # Merged PR 15065: Add apexes 23 and 24
-  # 5010cc0789fad2f4b47018fb7f87b03728101fee
-  virgil_build_id: '706893'
+  # Merged PR 15101: Updated teardown list based on PRJ00043941
+  # 10ca29c05cf60ce6387abe74c2ba9272c11f3515
+  virgil_build_id: '707096'
