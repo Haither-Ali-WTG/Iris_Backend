@@ -2,10 +2,12 @@
 
 import re
 from glob import glob
+from ipaddress import IPv4Address, IPv4Network
 import json
 from typing import Any, Mapping
 from unittest import TestCase
 
+from more_itertools import one
 import ruamel.yaml
 
 
@@ -80,4 +82,61 @@ class TestVirgilCrosscheck(TestCase):
                             virgil_info["virgil_role"],
                             "server_loadbalancer_iris",
                             "Virgil role must be server_loadbalancer_iris",
+                        )
+
+    def test_machine_clusters(self):
+        """Cross-check machine cluster configuration against Virgil."""
+        yaml = ruamel.yaml.YAML(typ="safe", pure=True)
+
+        for fname in glob("machine_clusters/*.yaml"):
+            with self.subTest(file=fname):
+                with open(fname, encoding="utf8") as fh:
+                    iris_file = yaml.load(fh)
+
+                for cluster, config in iris_file.items():
+                    if not config["machines"]:
+                        if config["floating_ips"]:
+                            raise ValueError("Non-empty config for empty cluster!")
+
+                        continue
+
+                    with self.subTest(cluster=cluster):
+                        virgil_vlans = {
+                            (virgil_vlan["id"], virgil_vlan["subnet"])
+                            for virgil_vlan in (
+                                self.virgil_machines[name]["virgil_mgmt_vlan"]
+                                for name in config["machines"]
+                            )
+                        }
+                        virgil_vlan, subnet = one(
+                            virgil_vlans,
+                            too_long=ValueError(
+                                f"Machines across multiple VLANs: {sorted(virgil_vlans)}"
+                            ),
+                        )
+                        virgil_subnet = IPv4Network(subnet)
+
+                    for floating_ip in config["floating_ips"]:
+                        self.assertEqual(
+                            floating_ip["vlan"],
+                            virgil_vlan,
+                            f"Floating IP VLAN {floating_ip['vlan']} "
+                            f"does not match machine VLAN {virgil_vlan}",
+                        )
+                        self.assertIn(
+                            IPv4Address(floating_ip["ip"]),
+                            virgil_subnet,
+                            f"Floating IP {floating_ip['ip']} "
+                            f"is not in the VLAN subnet {virgil_subnet}",
+                        )
+                        self.assertCountEqual(
+                            floating_ip["priority"],
+                            set(floating_ip["priority"]),
+                            f"Priority list has repeats: {floating_ip['priority']}",
+                        )
+                        self.assertLessEqual(
+                            set(floating_ip["priority"]),
+                            set(config["machines"]),
+                            "Priority list has machines not in cluster: "
+                            "{set(floating_ip['priority']) - set(config['machines'])}",
                         )

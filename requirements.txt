@@ -87,6 +87,8 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
+more-itertools==10.1.0
+    # added manually
 mypy==1.5.1
     # via -r requirements.in
 mypy-extensions==1.0.0

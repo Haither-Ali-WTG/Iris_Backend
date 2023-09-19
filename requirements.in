@@ -6,6 +6,7 @@ pywinrm
 ansible-lint
 bandit
 confluent-kafka
+more-itertools
 mypy
 pylint
 pytest
