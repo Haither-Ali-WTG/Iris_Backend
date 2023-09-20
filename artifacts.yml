@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230919.6
-  # Tue Sep 19 11:24:43 UTC 2023 -- Tue Sep 19 21:24:43 AEST 2023
+  # Dante Build Artifact 20230920.1
+  # Wed Sep 20 01:21:04 UTC 2023 -- Wed Sep 20 11:21:04 AEST 2023
   #
-  # Merge pull request 15107 from dante_artifact_upgrade into master
-  # 0b43da9409afea05f3246b476f8a51eee37e4639
-  dante_build_id: '707425'
+  # Merged PR 15150: Added empty PR list check
+  # 3b0a5245efd6903a8b93b64f94091cfd046c9739
+  dante_build_id: '708093'
 
   # virgil 20230920.17
   # Wed Sep 20 00:38:01 UTC 2023 -- Wed Sep 20 10:38:01 AEST 2023
