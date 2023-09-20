@@ -44,7 +44,7 @@ confluent-kafka==2.2.0
     # via -r requirements.in
 coverage[toml]==7.3.1
     # via pytest-cov
-cryptography==41.0.3
+cryptography==41.0.4
     # via
     #   ansible-core
     #   pyspnego
@@ -88,14 +88,14 @@ mccabe==0.7.0
 mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.1.0
-    # added manually
+    # via -r requirements.in
 mypy==1.5.1
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-netaddr==0.8.0
+netaddr==0.9.0
     # via -r requirements.in
 packaging==21.3
     # via
