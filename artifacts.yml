@@ -7,9 +7,9 @@ variables:
   # 0b43da9409afea05f3246b476f8a51eee37e4639
   dante_build_id: '707425'
 
-  # virgil 20230919.19
-  # Tue Sep 19 05:40:30 UTC 2023 -- Tue Sep 19 15:40:30 AEST 2023
+  # virgil 20230920.8
+  # Tue Sep 19 23:49:43 UTC 2023 -- Wed Sep 20 09:49:43 AEST 2023
   #
-  # Merged PR 15101: Updated teardown list based on PRJ00043941
-  # 10ca29c05cf60ce6387abe74c2ba9272c11f3515
-  virgil_build_id: '707096'
+  # Merged PR 15136: Updated queues.yaml - Added comments to topics to be removed and added correc...
+  # 58e04bd534c8377fa4596a10dbb08079f6115642
+  virgil_build_id: '707961'
