@@ -13,7 +13,7 @@ ansible-core==2.15.4
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.19.0
+ansible-lint==6.20.0
     # via -r requirements.in
 argcomplete==3.1.2
     # via yq
@@ -71,7 +71,7 @@ jinja2==3.1.2
     # via ansible-core
 jq==1.6.0
     # via -r requirements.in
-jsonschema==4.19.0
+jsonschema==4.19.1
     # via
     #   ansible-compat
     #   ansible-lint
@@ -210,7 +210,7 @@ tomlkit==0.12.1
     #   yq
 types-pyyaml==6.0.12.11
     # via -r requirements.in
-types-requests==2.31.0.2
+types-requests==2.31.0.3
     # via -r requirements.in
 types-urllib3==1.26.25.14
     # via types-requests
@@ -218,7 +218,7 @@ typing-extensions==4.8.0
     # via
     #   astroid
     #   mypy
-urllib3==2.0.4
+urllib3==2.0.5
     # via requests
 wcmatch==8.5
     # via ansible-lint
