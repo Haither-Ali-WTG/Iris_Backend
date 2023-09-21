@@ -7,9 +7,9 @@ variables:
   # 862ca7a18ec9108361d7fda09996862b8047be08
   dante_build_id: '708375'
 
-  # virgil 20230920.17
-  # Wed Sep 20 00:38:01 UTC 2023 -- Wed Sep 20 10:38:01 AEST 2023
+  # virgil 20230921.2
+  # Thu Sep 21 00:09:16 UTC 2023 -- Thu Sep 21 10:09:16 AEST 2023
   #
-  # Merged PR 15145: Add Kafka topic for danubedata ais (staging)
-  # 7b2af29a541a4a026c1bfa9b72e3092bef280b8a
-  virgil_build_id: '708053'
+  # Merge pull request 15181 from virgil_python_upgrade into master
+  # f563b2f5a83367c3074919c9ec1f5a1b94e7973e
+  virgil_build_id: '709141'
