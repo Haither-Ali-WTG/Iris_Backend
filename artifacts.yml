@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230921.6
-  # Thu Sep 21 08:50:05 UTC 2023 -- Thu Sep 21 18:50:05 AEST 2023
+  # Dante Build Artifact 20230921.7
+  # Thu Sep 21 10:06:07 UTC 2023 -- Thu Sep 21 20:06:07 AEST 2023
   #
-  # Merged PR 15086: Add missed parameter in node maintenance pipeline
-  # 275cca43b6c764dc2d54c2a08c5c530d6cdc7635
-  dante_build_id: '709664'
+  # Merged PR 15116: A couple of minor simplifications for requeue_expired
+  # 1283ba2fdd4c0c72e3d8738c76e71c778d134ac5
+  dante_build_id: '709745'
 
   # virgil 20230921.7
   # Thu Sep 21 07:59:05 UTC 2023 -- Thu Sep 21 17:59:05 AEST 2023
