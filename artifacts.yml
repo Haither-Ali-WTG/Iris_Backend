@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230921.5
-  # Thu Sep 21 07:44:56 UTC 2023 -- Thu Sep 21 17:44:56 AEST 2023
+  # Dante Build Artifact 20230921.6
+  # Thu Sep 21 08:50:05 UTC 2023 -- Thu Sep 21 18:50:05 AEST 2023
   #
-  # Merged PR 14942: Dante Developer Sim -  Dante Sim run only
-  # dc041d14295dccd20f28d504c669b6986827ad18
-  dante_build_id: '709584'
+  # Merged PR 15086: Add missed parameter in node maintenance pipeline
+  # 275cca43b6c764dc2d54c2a08c5c530d6cdc7635
+  dante_build_id: '709664'
 
   # virgil 20230921.7
   # Thu Sep 21 07:59:05 UTC 2023 -- Thu Sep 21 17:59:05 AEST 2023
