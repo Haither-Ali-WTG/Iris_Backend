@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230921.3
-  # Thu Sep 21 05:05:39 UTC 2023 -- Thu Sep 21 15:05:39 AEST 2023
+  # Dante Build Artifact 20230921.4
+  # Thu Sep 21 06:12:36 UTC 2023 -- Thu Sep 21 16:12:36 AEST 2023
   #
-  # Merge pull request 15194 from dante_artifact_upgrade into master
-  # d49174ce233d6c45c5574a4b862bdee2ea92842f
-  dante_build_id: '709416'
+  # Merged PR 15200: (WI00651211) Use only UP ports in NIC team
+  # f367bdf7aa1ca7d9c0018f62a1f1326f94b0d4f4
+  dante_build_id: '709491'
 
-  # virgil 20230921.2
-  # Thu Sep 21 00:09:16 UTC 2023 -- Thu Sep 21 10:09:16 AEST 2023
+  # virgil 20230921.4
+  # Thu Sep 21 05:57:55 UTC 2023 -- Thu Sep 21 15:57:55 AEST 2023
   #
-  # Merge pull request 15181 from virgil_python_upgrade into master
-  # f563b2f5a83367c3074919c9ec1f5a1b94e7973e
-  virgil_build_id: '709141'
+  # Merged PR 15203: Virgil - Add billing prod to queues - Move from Eye
+  # fc5527f9d2113583538069834bde14f136681aba
+  virgil_build_id: '709465'
