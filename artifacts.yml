@@ -7,9 +7,9 @@ variables:
   # 95d8dcc5403643ccf769473b291fef176d4187fb
   dante_build_id: '710358'
 
-  # virgil 20230922.2
-  # Thu Sep 21 23:08:10 UTC 2023 -- Fri Sep 22 09:08:10 AEST 2023
+  # virgil 20230922.4
+  # Fri Sep 22 00:57:41 UTC 2023 -- Fri Sep 22 10:57:41 AEST 2023
   #
-  # Merged PR 15239: Replace apex 24
-  # e989f3b872449fb0d7a33d23e677fdec49565106
-  virgil_build_id: '710279'
+  # Merged PR 14867: Updated teardowns.yaml
+  # 8bbf3414e7001c5d7a72cd071f3711203f54d49a
+  virgil_build_id: '710393'
