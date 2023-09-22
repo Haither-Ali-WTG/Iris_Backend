@@ -34,6 +34,7 @@ stages:
 
           - script: |
               set -euxo pipefail
+              pip install awscli
               pip install -r requirements.txt
             displayName: 'Install requirements'
 

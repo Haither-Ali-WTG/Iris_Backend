@@ -15,7 +15,10 @@
       register: temp_path
 
     - name: Download IIS data from ceph
-      command: s3cmd get --recursive  --no-preserve {{ s3_iris_bucket }} {{ temp_path.path }}
+      command: >-
+        aws --endpoint-url=https://{{ s3_host }}
+        s3 cp --recursive
+        {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
 
     - name: Recursively find all IIS data files

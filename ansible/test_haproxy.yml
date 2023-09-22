@@ -28,6 +28,14 @@
         state: present
       become: yes
 
+    - name: "Install awscli"
+      apt:
+        name: "awscli"
+        state: present
+      environment:
+        DEBIAN_FRONTEND: noninteractive
+      become: yes
+
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
@@ -36,7 +44,11 @@
         proxy_port: "3128"
 
     - name: Download qcow2 required for simulation
-      command: s3cmd sync --no-preserve {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+      command: >-
+        aws --endpoint-url=https://{{ s3_host }}
+        s3 sync {{ qcow2_ceph_path }}/ {{ images_folder }}/
+        --cli-read-timeout {{ s3_read_timeout }}
+        --exclude "*" --include {{ item }}
       loop:
         - "{{ rhel_hypervisor_image }}"
         - "{{ ubuntu_hypervisor_image }}"
