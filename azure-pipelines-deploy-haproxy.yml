@@ -47,6 +47,8 @@ stages:
                   steps:
                     - checkout: self
 
+                    # TODO: After botocore resolved the conflict issue, we can move awscli
+                    # into requirements (https://github.com/boto/botocore/issues/2926)
                     - script: |
                         set -euxo pipefail
                         pip install awscli

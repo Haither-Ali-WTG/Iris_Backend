@@ -19,6 +19,8 @@ stages:
     jobs:
       - job: Tests_and_lint
         steps:
+          # TODO: After botocore resolved the conflict issue, we can move awscli
+          # into requirements (https://github.com/boto/botocore/issues/2926)
           - script: |
               set -euxo pipefail
               pip install awscli
@@ -171,6 +173,8 @@ stages:
               KeyVaultName: kv-wtg-dante-sim
               SecretsFilter: secretAppIdDf4b4604e176
 
+          # TODO: After botocore resolved the conflict issue, we can move awscli
+          # into requirements (https://github.com/boto/botocore/issues/2926)
           - script: |
               set -euxo pipefail
               pip install awscli
