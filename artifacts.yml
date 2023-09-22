@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230921.7
-  # Thu Sep 21 10:06:07 UTC 2023 -- Thu Sep 21 20:06:07 AEST 2023
+  # Dante Build Artifact 20230922.1
+  # Fri Sep 22 00:25:14 UTC 2023 -- Fri Sep 22 10:25:14 AEST 2023
   #
-  # Merged PR 15116: A couple of minor simplifications for requeue_expired
-  # 1283ba2fdd4c0c72e3d8738c76e71c778d134ac5
-  dante_build_id: '709745'
+  # Merge pull request 15215 from dante_artifact_upgrade into master
+  # 95d8dcc5403643ccf769473b291fef176d4187fb
+  dante_build_id: '710358'
 
   # virgil 20230922.2
   # Thu Sep 21 23:08:10 UTC 2023 -- Fri Sep 22 09:08:10 AEST 2023
