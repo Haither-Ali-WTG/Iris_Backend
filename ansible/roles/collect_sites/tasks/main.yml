@@ -16,7 +16,10 @@
   when: collect_sites_data_output is defined
 
 - name: Upload IIS data to ceph
-  command: s3cmd put --recursive {{ inventory_hostname }} {{ s3_iris_bucket }}
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp --recursive
+    {{ inventory_hostname }} {{ s3_iris_bucket }}/{{ inventory_hostname }}
   changed_when: true
   delegate_to: localhost
   when:
