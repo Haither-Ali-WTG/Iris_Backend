@@ -7,9 +7,9 @@ variables:
   # b486515fcd92e3d6ca70c139ac567440b0eda92d
   dante_build_id: '713617'
 
-  # virgil 20230925.2
-  # Sun Sep 24 23:45:34 UTC 2023 -- Mon Sep 25 09:45:34 AEST 2023
+  # virgil 20230925.10
+  # Mon Sep 25 12:48:04 UTC 2023 -- Mon Sep 25 22:48:04 AEST 2023
   #
-  # Merge pull request 15282 from virgil_python_upgrade into master
-  # b880fcbd7336fe95986f0895a8ad2d9138bed70e
-  virgil_build_id: '713287'
+  # Merged PR 15055: Adding 12 new C43 Analytics servers (de1co-selk-001 to de1co-selk-012) to DE1
+  # ecbec1a37870d674650e615472cb0bea4b9162dd
+  virgil_build_id: '713981'
