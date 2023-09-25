@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230925.2
-  # Mon Sep 25 02:23:49 UTC 2023 -- Mon Sep 25 12:23:49 AEST 2023
+  # Dante Build Artifact 20230925.3
+  # Mon Sep 25 04:39:39 UTC 2023 -- Mon Sep 25 14:39:39 AEST 2023
   #
-  # Merged PR 15134: Add exclude for mdatp rules to prevent forwarding to elastic
-  # 47119cdffbf440e522fadf5d76292c1eb7c50dce
-  dante_build_id: '713455'
+  # Merge pull request 15287 from dante_python_upgrade into master
+  # b486515fcd92e3d6ca70c139ac567440b0eda92d
+  dante_build_id: '713617'
 
   # virgil 20230925.2
   # Sun Sep 24 23:45:34 UTC 2023 -- Mon Sep 25 09:45:34 AEST 2023
