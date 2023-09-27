@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230926.3
-  # Tue Sep 26 07:25:08 UTC 2023 -- Tue Sep 26 17:25:08 AEST 2023
+  # Dante Build Artifact 20230927.1
+  # Wed Sep 27 02:45:29 UTC 2023 -- Wed Sep 27 12:45:29 AEST 2023
   #
-  # Merge pull request 15375 from dante_artifact_upgrade into master
-  # aab520b7e36e046cfe3a196e59b92e70eb3ae48e
-  dante_build_id: '714921'
+  # Merged PR 15217: Reactivation of DE1 Bucket Teardown Following CV Issue Resolution
+  # 76e6d75560c33fdc9e7550bdb398ff09e63bd03d
+  dante_build_id: '715781'
 
-  # virgil 20230926.10
-  # Tue Sep 26 06:02:02 UTC 2023 -- Tue Sep 26 16:02:02 AEST 2023
+  # virgil 20230927.10
+  # Wed Sep 27 02:43:50 UTC 2023 -- Wed Sep 27 12:43:50 AEST 2023
   #
-  # Merged PR 15364: Minor improvement of phrasing of error
-  # 0e3320f7277c0f21c90cfa86959aab48cd9151c3
-  virgil_build_id: '714864'
+  # Merge pull request 15386 from virgil_python_upgrade into master
+  # cb669b073f4c1ff18bda5b5c2947d88cd7274af4
+  virgil_build_id: '715777'
