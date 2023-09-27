@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230927.2
-  # Wed Sep 27 04:06:25 UTC 2023 -- Wed Sep 27 14:06:25 AEST 2023
+  # Dante Build Artifact 20230927.4
+  # Wed Sep 27 06:53:03 UTC 2023 -- Wed Sep 27 16:53:03 AEST 2023
   #
-  # Merge pull request 15396 from dante_artifact_upgrade into master
-  # 438352475c463e0a63c3ddbbf7be535f8af19dc6
-  dante_build_id: '715878'
+  # Merged PR 15376: Ensure hw-management-tc service is running on Cumulus 5.2.1 - globally
+  # 94d8a49fa66e9a5ccd714f433566b2c18c94968c
+  dante_build_id: '716054'
 
   # virgil 20230927.17
   # Wed Sep 27 06:05:56 UTC 2023 -- Wed Sep 27 16:05:56 AEST 2023
