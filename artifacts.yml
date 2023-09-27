@@ -7,9 +7,9 @@ variables:
   # 94d8a49fa66e9a5ccd714f433566b2c18c94968c
   dante_build_id: '716054'
 
-  # virgil 20230927.17
-  # Wed Sep 27 06:05:56 UTC 2023 -- Wed Sep 27 16:05:56 AEST 2023
+  # virgil 20230927.20
+  # Wed Sep 27 08:07:18 UTC 2023 -- Wed Sep 27 18:07:18 AEST 2023
   #
-  # Merged PR 15414: Change-apex195/196-hardware-model-to-N4
-  # f98efc783a39b9162de46f81035e9033d3b05b09
-  virgil_build_id: '716012'
+  # Merged PR 15397: apex195-196 relocation
+  # 341e0cd0a66a8e36ad9a499695bab2ccd13e2335
+  virgil_build_id: '716137'
