@@ -7,9 +7,9 @@ variables:
   # 438352475c463e0a63c3ddbbf7be535f8af19dc6
   dante_build_id: '715878'
 
-  # virgil 20230927.10
-  # Wed Sep 27 02:43:50 UTC 2023 -- Wed Sep 27 12:43:50 AEST 2023
+  # virgil 20230927.17
+  # Wed Sep 27 06:05:56 UTC 2023 -- Wed Sep 27 16:05:56 AEST 2023
   #
-  # Merge pull request 15386 from virgil_python_upgrade into master
-  # cb669b073f4c1ff18bda5b5c2947d88cd7274af4
-  virgil_build_id: '715777'
+  # Merged PR 15414: Change-apex195/196-hardware-model-to-N4
+  # f98efc783a39b9162de46f81035e9033d3b05b09
+  virgil_build_id: '716012'
