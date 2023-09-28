@@ -87,11 +87,19 @@
   validate: apparmor_parser -Q %s
   register: apparmor_profile_config
 
+- name: Check if apparmor profile is loaded
+  command: apparmor_status --json
+  become: yes
+  changed_when: no
+  register: apparmor_status
+
 - name: Immediately load apparmor profile
   command: "apparmor_parser -r -W {{ individual_instance_dir }}/apparmor_profile"
   become: yes
   changed_when: yes
-  when: apparmor_profile_config is changed  # noqa: no-handler
+  when: >-  # noqa: no-handler
+    apparmor_profile_config is changed
+    or container_name not in (apparmor_status | from_json).profiles
 
 - name: Check if container exists
   vars:
