@@ -90,7 +90,8 @@
 - name: Immediately load apparmor profile
   command: "apparmor_parser -r -W {{ individual_instance_dir }}/apparmor_profile"
   become: yes
-  when: apparmor_profile_config is changed
+  changed_when: yes
+  when: apparmor_profile_config is changed  # noqa: no-handler
 
 - name: Check if container exists
   vars:
