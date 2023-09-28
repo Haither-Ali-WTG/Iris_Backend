@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230928.1
-  # Thu Sep 28 01:48:04 UTC 2023 -- Thu Sep 28 11:48:04 AEST 2023
+  # Dante Build Artifact 20230928.2
+  # Thu Sep 28 04:25:12 UTC 2023 -- Thu Sep 28 14:25:12 AEST 2023
   #
-  # Merged PR 15435: Increase s3 read timeout
-  # 8422bd6e65782b3a4df64f9435df51fb72e99a92
-  dante_build_id: '716868'
+  # Merge pull request 15420 from dante_artifact_upgrade into master
+  # a10efa20e809c3e7f2eb7bd288cf4538410ee505
+  dante_build_id: '717032'
 
   # virgil 20230928.4
   # Thu Sep 28 01:50:16 UTC 2023 -- Thu Sep 28 11:50:16 AEST 2023
