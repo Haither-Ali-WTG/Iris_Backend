@@ -92,6 +92,7 @@
   become: yes
   changed_when: no
   register: apparmor_status
+  when: apparmor_profile_config is not changed
 
 - name: Immediately load apparmor profile
   command: "apparmor_parser -r -W {{ individual_instance_dir }}/apparmor_profile"
