@@ -7,9 +7,9 @@ variables:
   # a10efa20e809c3e7f2eb7bd288cf4538410ee505
   dante_build_id: '717032'
 
-  # virgil 20230928.4
-  # Thu Sep 28 01:50:16 UTC 2023 -- Thu Sep 28 11:50:16 AEST 2023
+  # virgil 20230928.6
+  # Thu Sep 28 07:01:05 UTC 2023 -- Thu Sep 28 17:01:05 AEST 2023
   #
-  # Merged PR 15411: apex195-196 Vmware ports config
-  # 5cb479be183afe26d8666a4d1359d4b3626b3758
-  virgil_build_id: '716870'
+  # Merged PR 15452: Virgil - Revert CORP and sand management backend fabric_routed
+  # b8e129a1691f6c7fd9ac03841a590baf491f34e0
+  virgil_build_id: '717211'
