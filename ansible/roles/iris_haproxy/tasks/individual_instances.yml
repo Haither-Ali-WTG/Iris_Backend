@@ -78,7 +78,7 @@
 
 - name: Template out the apparmor profile
   template:
-    src: apparmor_profile.cfg.j2
+    src: apparmor_profile.j2
     dest: "{{ individual_instance_dir }}/apparmor_profile"
     mode: u=r,go=
     owner: "{{ user.uid }}"
