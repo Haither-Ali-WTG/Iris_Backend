@@ -7,9 +7,9 @@ variables:
   # b200eb5566d877bdfa8ee89ca6ad1aecdf9bb32e
   dante_build_id: '717280'
 
-  # virgil 20230928.6
-  # Thu Sep 28 07:01:05 UTC 2023 -- Thu Sep 28 17:01:05 AEST 2023
+  # virgil 20230929.3
+  # Thu Sep 28 23:22:02 UTC 2023 -- Fri Sep 29 09:22:02 AEST 2023
   #
-  # Merged PR 15452: Virgil - Revert CORP and sand management backend fabric_routed
-  # b8e129a1691f6c7fd9ac03841a590baf491f34e0
-  virgil_build_id: '717211'
+  # Merged PR 15476: Add native vlan to US2 apex21/22 swp17
+  # 303591a434a785ec4fbe508f199703747f2fab7c
+  virgil_build_id: '717945'
