@@ -100,7 +100,7 @@
   changed_when: yes
   when: >-  # noqa: no-handler
     apparmor_profile_config is changed
-    or container_name not in (apparmor_status | from_json).profiles
+    or container_name not in (apparmor_status.stdout | from_json).profiles
 
 - name: Check if container exists
   vars:
