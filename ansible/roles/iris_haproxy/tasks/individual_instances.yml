@@ -83,8 +83,8 @@
     mode: u=r,go=
     owner: "{{ user.uid }}"
     group: "{{ user.group }}"
+    validate: apparmor_parser -Q %s
   become: yes
-  validate: apparmor_parser -Q %s
   register: apparmor_profile_config
 
 - name: Check if apparmor profile is loaded
