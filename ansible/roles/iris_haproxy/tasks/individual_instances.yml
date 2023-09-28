@@ -76,6 +76,22 @@
   no_log: true
   register: copy_certificates
 
+- name: Template out the apparmor profile
+  template:
+    src: apparmor_profile.cfg.j2
+    dest: "{{ individual_instance_dir }}/apparmor_profile"
+    mode: u=r,go=
+    owner: "{{ user.uid }}"
+    group: "{{ user.group }}"
+  become: yes
+  validate: apparmor_parser -Q %s
+  register: apparmor_profile_config
+
+- name: Immediately load apparmor profile
+  command: "apparmor_parser -r -W {{ individual_instance_dir }}/apparmor_profile"
+  become: yes
+  when: apparmor_profile_config is changed
+
 - name: Check if container exists
   vars:
     name: "{{ container_name }}"
@@ -103,6 +119,7 @@
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
+    apparmor_profile: "{{ container_name }}"
     container_user: "{{ user.uid }}:{{ user.group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
