@@ -27,13 +27,15 @@ class TestVirgilCrosscheck(TestCase):
                 # loading them as JSON is much faster
                 virgil_file = json.load(fh)
                 cls.virgil_machines.update(virgil_file["all"]["hosts"])
+        if not cls.virgil_machines:
+            raise ValueError("Virgil inventories empty or failed to load")
 
     def test_against_virgil(self):
         """Cross-check our machine configuration against Virgil information."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
-        fname_pat = re.compile(r"^instances/([a-z]{2}[0-9])-machines\.yml$")
+        fname_pat = re.compile(r"^data/instances/([a-z]{2}[0-9])-machines\.yml$")
 
-        for fname in glob("instances/*-machines.yml"):
+        for fname in glob("data/instances/*-machines.yml"):
             with self.subTest(file=fname):
                 m = fname_pat.match(fname)
                 self.assertIsNotNone(m)
@@ -88,7 +90,7 @@ class TestVirgilCrosscheck(TestCase):
         """Cross-check machine cluster configuration against Virgil."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
 
-        for fname in glob("machine_clusters/*.yaml"):
+        for fname in glob("data/machine_clusters/*.yaml"):
             with self.subTest(file=fname):
                 with open(fname, encoding="utf8") as fh:
                     iris_file = yaml.load(fh)

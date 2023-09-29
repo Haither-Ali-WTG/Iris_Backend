@@ -8,22 +8,19 @@ import ruamel.yaml
 
 from inventories.virgil_yamale import VirgilYamaleTestCase
 
-BASE_CONFIG_DIR = '.'
-CONFIG_DIRS = ['acls', 'actions', 'ciphers', 'dynamic_backends', 'instances',
-               'inventories', 'machine_clusters', 'static_backends', 'test']
+BASE_CONFIG_DIR = 'data'
 CONFIG_PATTERNS = [
-    ('acls/*.yaml', 'acls'),
-    ('actions/*.yaml', 'actions'),
     ('ansible/group_vars/individual_instances.yml', 'individual_instances'),
-    ('artifacts.yml', None),
-    ('azure-pipelines*.yml', None),
-    ('ciphers/cipher_profiles.yml', 'cipher_profiles'),
-    ('dynamic_backends/websites.yml', 'websites'),
-    ('instances/*-clustered_instances.yml', 'clustered_instances'),
-    ('instances/*-machines.yml', 'machines'),
-    ('instances/*-tests.yml', 'instance_tests'),
-    ('machine_clusters/*.yaml', 'machine_clusters'),
-    ('static_backends/*.yaml', 'static_backends'),
+    ('data/acls/*.yaml', 'acls'),
+    ('data/actions/*.yaml', 'actions'),
+    ('data/ciphers/cipher_profiles.yml', 'cipher_profiles'),
+    ('data/dynamic_backends/websites.yml', 'websites'),
+    ('data/instances/*-clustered_instances.yml', 'clustered_instances'),
+    ('data/instances/*-machines.yml', 'machines'),
+    ('data/instances/*-tests.yml', 'instance_tests'),
+    ('data/machine_clusters/*.yaml', 'machine_clusters'),
+    ('data/static_backends/*.yaml', 'static_backends'),
+    ('data/static_backends/sorry_pages/*.html', None)
 ]
 
 
@@ -38,26 +35,13 @@ class TestSchema(VirgilYamaleTestCase):
         """
         Check the configuration files against Yamale schemas
         """
-        config_paths = {
-            os.path.join(BASE_CONFIG_DIR, config_dir)
-            for config_dir in CONFIG_DIRS
-        }
         config_files = [
-            # This is the only file to be checked under the ansible directory,
-            # which is otherwise skipped
+            # This is the only file to be checked outside the data directory
             'ansible/group_vars/individual_instances.yml',
         ]
-        for path, dirs, files in os.walk(BASE_CONFIG_DIR):
-            if path == BASE_CONFIG_DIR:
-                dirs.remove('.git')
-                dirs.remove('ansible')  # only one config file, hard-coded above
-                dirs.remove('inventories')
-                dirs.remove('reports')
-                dirs.remove('tests')
-
+        for path, _dirs, files in os.walk(BASE_CONFIG_DIR):
             for file in files:
-                if path in config_paths or os.path.splitext(file)[1] in ('.yml', '.yaml'):
-                    config_files.append(os.path.normpath(os.path.join(path, file)))
+                config_files.append(os.path.normpath(os.path.join(path, file)))
 
         by_kind = defaultdict(set)
         for fname in config_files:
