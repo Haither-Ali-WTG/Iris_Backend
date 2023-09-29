@@ -7,9 +7,9 @@ variables:
   # 04878e13534a059d638dc2c05a004e575200edb1
   dante_build_id: '718237'
 
-  # virgil 20230929.13
-  # Fri Sep 29 04:26:12 UTC 2023 -- Fri Sep 29 14:26:12 AEST 2023
+  # virgil 20230929.15
+  # Fri Sep 29 05:40:56 UTC 2023 -- Fri Sep 29 15:40:56 AEST 2023
   #
-  # Merged PR 15507: enable more ESXi ports on 3700 switches
-  # a37976c5b7bd3c211a5bf89bb97b9d4feca15858
-  virgil_build_id: '718290'
+  # Merged PR 15523: native vlan1033 added for switch ports
+  # bbf05e91d3dc488ef730d6d94f84f1c10fbb4b02
+  virgil_build_id: '718361'
