@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20230929.4
-  # Fri Sep 29 03:56:00 UTC 2023 -- Fri Sep 29 13:56:00 AEST 2023
+  # Dante Build Artifact 20230929.6
+  # Fri Sep 29 06:51:56 UTC 2023 -- Fri Sep 29 16:51:56 AEST 2023
   #
-  # Merged PR 15263: Change s3cmd to awscli (dante)
-  # 04878e13534a059d638dc2c05a004e575200edb1
-  dante_build_id: '718237'
+  # Merge pull request 15508 from dante_artifact_upgrade into master
+  # f073d654f40433cb162869e70042edeb68557c16
+  dante_build_id: '718428'
 
   # virgil 20230929.15
   # Fri Sep 29 05:40:56 UTC 2023 -- Fri Sep 29 15:40:56 AEST 2023
