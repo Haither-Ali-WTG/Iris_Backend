@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230929.1
-  # Fri Sep 29 00:44:58 UTC 2023 -- Fri Sep 29 10:44:58 AEST 2023
+  # Dante Build Artifact 20230929.2
+  # Fri Sep 29 02:22:46 UTC 2023 -- Fri Sep 29 12:22:46 AEST 2023
   #
-  # Merge pull request 15490 from dante_artifact_upgrade into master
-  # 40328c8d1c5f9e88dcf7562fc4b012a9c9648de5
-  dante_build_id: '718027'
+  # Merged PR 15464: Add an apparmor_profile parameter for container runner
+  # 4b1ceb165c985cc5165d4db99cbfaf003c0179de
+  dante_build_id: '718139'
 
-  # virgil 20230929.3
-  # Thu Sep 28 23:22:02 UTC 2023 -- Fri Sep 29 09:22:02 AEST 2023
+  # virgil 20230929.6
+  # Fri Sep 29 02:03:43 UTC 2023 -- Fri Sep 29 12:03:43 AEST 2023
   #
-  # Merged PR 15476: Add native vlan to US2 apex21/22 swp17
-  # 303591a434a785ec4fbe508f199703747f2fab7c
-  virgil_build_id: '717945'
+  # Merge pull request 15479 from virgil_python_upgrade into master
+  # ff3b37396129ae395c8ee14f21aae0594e25c26b
+  virgil_build_id: '718119'
