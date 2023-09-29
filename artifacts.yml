@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230929.2
-  # Fri Sep 29 02:22:46 UTC 2023 -- Fri Sep 29 12:22:46 AEST 2023
+  # Dante Build Artifact 20230929.4
+  # Fri Sep 29 03:56:00 UTC 2023 -- Fri Sep 29 13:56:00 AEST 2023
   #
-  # Merged PR 15464: Add an apparmor_profile parameter for container runner
-  # 4b1ceb165c985cc5165d4db99cbfaf003c0179de
-  dante_build_id: '718139'
+  # Merged PR 15263: Change s3cmd to awscli (dante)
+  # 04878e13534a059d638dc2c05a004e575200edb1
+  dante_build_id: '718237'
 
-  # virgil 20230929.6
-  # Fri Sep 29 02:03:43 UTC 2023 -- Fri Sep 29 12:03:43 AEST 2023
+  # virgil 20230929.13
+  # Fri Sep 29 04:26:12 UTC 2023 -- Fri Sep 29 14:26:12 AEST 2023
   #
-  # Merge pull request 15479 from virgil_python_upgrade into master
-  # ff3b37396129ae395c8ee14f21aae0594e25c26b
-  virgil_build_id: '718119'
+  # Merged PR 15507: enable more ESXi ports on 3700 switches
+  # a37976c5b7bd3c211a5bf89bb97b9d4feca15858
+  virgil_build_id: '718290'
