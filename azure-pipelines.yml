@@ -139,7 +139,7 @@ stages:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
+              inventoryFileOnAgentMachine: 'data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
@@ -215,7 +215,7 @@ stages:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
+              inventoryFileOnAgentMachine: 'data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
@@ -230,7 +230,7 @@ stages:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
+              inventoryFileOnAgentMachine: 'data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
@@ -248,7 +248,7 @@ stages:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'instances'
+              inventoryFileOnAgentMachine: 'data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff

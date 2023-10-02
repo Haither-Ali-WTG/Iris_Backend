@@ -32,7 +32,7 @@ haproxy_stats_settings:
     web: include('port', required=False)
 
 haproxy_cipher_settings:
-  profiles: list(foreign_key('ciphers/cipher_profiles.yml'), required=False)
+  profiles: list(foreign_key('data/ciphers/cipher_profiles.yml'), required=False)
   bind_options: list(regex('^[a-z0-9-]+$', name="bind option"), required=False)
   ssl_min: enum('TLSv1.2', required=False)
   ssl_max: enum('TLSv1.3', required=False)

@@ -92,7 +92,7 @@ stages:
                         ansibleInterface: 'agentMachine'
                         playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
                         inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'instances'
+                        inventoryFileOnAgentMachine: 'data/instances'
                         failOnStdErr: false
                         args: >-
                           -u $(user) --diff
@@ -108,7 +108,7 @@ stages:
                         ansibleInterface: 'agentMachine'
                         playbookPathOnAgentMachine: 'ansible/deploy_haproxy.yml'
                         inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'instances'
+                        inventoryFileOnAgentMachine: 'data/instances'
                         failOnStdErr: false
                         # TODO: Support other DCs
                         args: >-
