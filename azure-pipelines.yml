@@ -148,7 +148,7 @@ stages:
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-          - publish: $(System.DefaultWorkingDirectory)/ansible/configs
+          - publish: $(System.DefaultWorkingDirectory)/generated_configs
             artifact: configs
             displayName: 'Publish configs'
 
