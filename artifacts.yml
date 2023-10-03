@@ -7,9 +7,9 @@ variables:
   # afaea5c1978dfe68470b9947a952d63c0b75f94a
   dante_build_id: '722087'
 
-  # virgil 20231003.13
-  # Tue Oct  3 00:58:22 UTC 2023 -- Tue Oct  3 11:58:22 AEDT 2023
+  # virgil 20231003.18
+  # Tue Oct  3 01:39:33 UTC 2023 -- Tue Oct  3 12:39:33 AEDT 2023
   #
-  # Merge pull request 15540 from virgil_python_upgrade into master
-  # 4f5c4f38e82bdd20e11b1c65057307952ba29d9a
-  virgil_build_id: '722091'
+  # Merged PR 15570: change flashblade links to single au2snas01 bond
+  # 89052892f024da7c345f26f098cb1fcdf0dc049c
+  virgil_build_id: '722152'
