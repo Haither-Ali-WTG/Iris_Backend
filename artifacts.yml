@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231003.5
-  # Tue Oct  3 05:05:42 UTC 2023 -- Tue Oct  3 16:05:42 AEDT 2023
+  # Dante Build Artifact 20231003.6
+  # Tue Oct  3 06:20:40 UTC 2023 -- Tue Oct  3 17:20:40 AEDT 2023
   #
-  # Merge pull request 15561 from dante_artifact_upgrade into master
-  # dc2712b2434bda05edd74e7c4ce24938d8656920
-  dante_build_id: '722411'
+  # Merged PR 15491: WI00405715: Added serial number to dante docs.
+  # 2ea9d4ebefdf48ffa493e2cdfde2bfb58a457327
+  dante_build_id: '722487'
 
   # virgil 20231003.18
   # Tue Oct  3 01:39:33 UTC 2023 -- Tue Oct  3 12:39:33 AEDT 2023
