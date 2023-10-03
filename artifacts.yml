@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231003.2
-  # Tue Oct  3 00:55:36 UTC 2023 -- Tue Oct  3 11:55:36 AEDT 2023
+  # Dante Build Artifact 20231003.3
+  # Tue Oct  3 02:07:29 UTC 2023 -- Tue Oct  3 13:07:29 AEDT 2023
   #
-  # Merged PR 15529: Pass s3_host to the upgrade firmware playbook
-  # afaea5c1978dfe68470b9947a952d63c0b75f94a
-  dante_build_id: '722087'
+  # Merged PR 15274: Automatically re queue expired Automatic Artifact upgrade builds
+  # 3941961f91862ea33c4c8680aac93e3e97664ac7
+  dante_build_id: '722185'
 
   # virgil 20231003.18
   # Tue Oct  3 01:39:33 UTC 2023 -- Tue Oct  3 12:39:33 AEDT 2023
