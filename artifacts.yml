@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231003.4
-  # Tue Oct  3 03:20:48 UTC 2023 -- Tue Oct  3 14:20:48 AEDT 2023
+  # Dante Build Artifact 20231003.5
+  # Tue Oct  3 05:05:42 UTC 2023 -- Tue Oct  3 16:05:42 AEDT 2023
   #
-  # Merged PR 15383: Specify DNS resolver in S3 proxy
-  # 4640ff2f74e64fa28c88110c83bb39d4870a7c68
-  dante_build_id: '722267'
+  # Merge pull request 15561 from dante_artifact_upgrade into master
+  # dc2712b2434bda05edd74e7c4ce24938d8656920
+  dante_build_id: '722411'
 
   # virgil 20231003.18
   # Tue Oct  3 01:39:33 UTC 2023 -- Tue Oct  3 12:39:33 AEDT 2023
