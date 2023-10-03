@@ -7,9 +7,9 @@ variables:
   # 2ea9d4ebefdf48ffa493e2cdfde2bfb58a457327
   dante_build_id: '722487'
 
-  # virgil 20231004.15
-  # Tue Oct  3 20:31:09 UTC 2023 -- Wed Oct  4 07:31:09 AEDT 2023
+  # virgil 20231004.23
+  # Tue Oct  3 21:18:45 UTC 2023 -- Wed Oct  4 08:18:45 AEDT 2023
   #
-  # Merged PR 15278: Updated teardowns.yaml
-  # 165f2e84b07c96d6a407e9fe6645795492ac2055
-  virgil_build_id: '723132'
+  # Merged PR 15582: Warn on Python vulnerabilities
+  # db4ddf053a1f397ab5375eb528da3e89f25bdb8d
+  virgil_build_id: '723198'
