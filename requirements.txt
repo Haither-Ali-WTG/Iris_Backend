@@ -13,7 +13,7 @@ ansible-core==2.15.4
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.20.2
+ansible-lint==6.20.3
     # via -r requirements.in
 argcomplete==3.1.2
     # via yq
@@ -42,7 +42,7 @@ click==8.1.7
     #   safety
 confluent-kafka==2.2.0
     # via -r requirements.in
-coverage[toml]==7.3.1
+coverage[toml]==7.3.2
     # via pytest-cov
 cryptography==41.0.4
     # via
@@ -124,7 +124,7 @@ pylint==3.0.0
     # via -r requirements.in
 pyparsing==3.1.1
     # via packaging
-pyspnego==0.10.1
+pyspnego==0.10.2
     # via requests-ntlm
 pytest==7.4.2
     # via
