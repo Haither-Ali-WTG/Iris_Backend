@@ -1,0 +1,33 @@
+This directory contains the generated configs from the dump_configs.yml playbook
+
+
+To generate them, there are three options:
+
+- In any Iris pull request, we can click on the build, then in the "Summary" section in
+  the "Related" column, we see "1 published". Click on this, then either download an
+  individual config file, or all the config files together in a zip file.
+
+
+- Locally, it's easiest to run this with the dynamic backends disabled, like this:
+
+  ```
+  ansible-playbook -i data/instances ansible/dump_configs.yml -eenable_dynamic_backends= -esimulation=
+  ```
+
+  The `-eenable_dynamic_backends=` turns off processing of dynamic backends, which are
+  stored in Ceph, so processing them would need Ceph credentials and roles from Dante.
+
+  The `-esimulation=` specifies that we want production (not simulation) configs.
+
+  The configs will be dumped into this directory.
+
+
+- Alternately, we can set up the imported Dante roles and the Ceph access, then run:
+
+  ```
+  ansible-playbook -i data/instances ansible/dump_configs.yml -esimulation=
+  ```
+
+
+Note that the configs in this directory are **not used for anything**; they're purely
+for human review.
