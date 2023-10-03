@@ -13,7 +13,7 @@
   tasks:
     - name: Create target directory
       file:
-        dest: "configs"
+        dest: "../generated_configs"
         state: directory
         mode: u=rwx,go=rx
 
