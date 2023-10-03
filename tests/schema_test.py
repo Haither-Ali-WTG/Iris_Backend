@@ -19,6 +19,7 @@ CONFIG_PATTERNS = [
     ('data/instances/*-machines.yml', 'machines'),
     ('data/instances/*-tests.yml', 'instance_tests'),
     ('data/machine_clusters/*.yaml', 'machine_clusters'),
+    ('data/README', None),
     ('data/static_backends/*.yaml', 'static_backends'),
     ('data/static_backends/sorry_pages/*.html', None)
 ]
