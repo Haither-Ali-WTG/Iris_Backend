@@ -7,9 +7,9 @@ variables:
   # 2ea9d4ebefdf48ffa493e2cdfde2bfb58a457327
   dante_build_id: '722487'
 
-  # virgil 20231003.18
-  # Tue Oct  3 01:39:33 UTC 2023 -- Tue Oct  3 12:39:33 AEDT 2023
+  # virgil 20231004.15
+  # Tue Oct  3 20:31:09 UTC 2023 -- Wed Oct  4 07:31:09 AEDT 2023
   #
-  # Merged PR 15570: change flashblade links to single au2snas01 bond
-  # 89052892f024da7c345f26f098cb1fcdf0dc049c
-  virgil_build_id: '722152'
+  # Merged PR 15278: Updated teardowns.yaml
+  # 165f2e84b07c96d6a407e9fe6645795492ac2055
+  virgil_build_id: '723132'
