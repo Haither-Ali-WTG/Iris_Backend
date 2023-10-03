@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231003.6
-  # Tue Oct  3 06:20:40 UTC 2023 -- Tue Oct  3 17:20:40 AEDT 2023
+  # Dante Build Artifact 20231004.1
+  # Tue Oct  3 22:28:22 UTC 2023 -- Wed Oct  4 09:28:22 AEDT 2023
   #
-  # Merged PR 15491: WI00405715: Added serial number to dante docs.
-  # 2ea9d4ebefdf48ffa493e2cdfde2bfb58a457327
-  dante_build_id: '722487'
+  # Merged PR 15543: For new version of pylint (3.0.0). Cancel the duplicate-code check.
+  # 3cb106c70dff033128162a39fb8d102a8537565e
+  dante_build_id: '723252'
 
   # virgil 20231004.23
   # Tue Oct  3 21:18:45 UTC 2023 -- Wed Oct  4 08:18:45 AEDT 2023
