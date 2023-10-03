@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20230929.6
-  # Fri Sep 29 06:51:56 UTC 2023 -- Fri Sep 29 16:51:56 AEST 2023
+  # Dante Build Artifact 20231003.1
+  # Mon Oct  2 23:34:23 UTC 2023 -- Tue Oct  3 10:34:23 AEDT 2023
   #
-  # Merge pull request 15508 from dante_artifact_upgrade into master
-  # f073d654f40433cb162869e70042edeb68557c16
-  dante_build_id: '718428'
+  # Merged PR 15542: Fix up stray reference to global variable
+  # 22366f5b51d784721d8b0cd16c52c0805151b4bc
+  dante_build_id: '722001'
 
-  # virgil 20230929.15
-  # Fri Sep 29 05:40:56 UTC 2023 -- Fri Sep 29 15:40:56 AEST 2023
+  # virgil 20231003.9
+  # Tue Oct  3 00:02:08 UTC 2023 -- Tue Oct  3 11:02:08 AEDT 2023
   #
-  # Merged PR 15523: native vlan1033 added for switch ports
-  # bbf05e91d3dc488ef730d6d94f84f1c10fbb4b02
-  virgil_build_id: '718361'
+  # Merged PR 15079: Virgil - Add docs for VRF and ssh access
+  # 9312cb15c1a6315c72dfd60bbd30cfe5a93fd5f2
+  virgil_build_id: '722041'
