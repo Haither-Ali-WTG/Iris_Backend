@@ -19,31 +19,39 @@ import requests
 from winrm.protocol import Protocol
 from winrm.exceptions import InvalidCredentialsError
 
+
 @dataclass
 class ConnectionParameters:
     """Dataclass to store basic connection parameters"""
+
     user_name: str
     password: str
     validate_ca: str
+
 
 def load_yaml_from_file(file_name):
     """Loading yaml file to dictionary."""
     with open(file_name, 'r', encoding="utf8") as stream:
         return yaml.safe_load(stream)
 
+
 def get_websites_list(server_name, connection_params):
     """Read sites list from IIS box using winrm"""
     p = Protocol(
-        endpoint='https://' + server_name +':5986/wsman',
+        endpoint='https://' + server_name + ':5986/wsman',
         transport='ntlm',
         username=connection_params.user_name,
         password=connection_params.password,
-        server_cert_validation=connection_params.validate_ca)
+        server_cert_validation=connection_params.validate_ca,
+    )
     shell_id = None
     try:
         shell_id = p.open_shell()
-        command_id = p.run_command(shell_id, '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
-                                ['list sites /serverAutoStart:true /text:name'])
+        command_id = p.run_command(
+            shell_id,
+            '%systemroot%\\system32\\inetsrv\\AppCmd.exe',
+            ['list sites /serverAutoStart:true /text:name'],
+        )
         std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
         p.cleanup_command(shell_id, command_id)
     finally:
@@ -52,16 +60,17 @@ def get_websites_list(server_name, connection_params):
     if std_err:
         raise ValueError(f"Error when executing AppCmd.exe: {str(std_err)}")
 
-    #some minor manipulations required with output
+    # some minor manipulations required with output
     raw_output = std_out.decode("utf-8")
-    #split string output by new lines
+    # split string output by new lines
     sites_list = raw_output.split('\r\n')
 
-    #because of new line at the end of raw output, check and cut last element as well
+    # because of new line at the end of raw output, check and cut last element as well
     if not sites_list[-1]:
         del sites_list[-1]
     sites_list.sort()
     return sites_list
+
 
 def process_server(server_name, connection_params, output_path, logger):
     """Read and process all websites data from give IIS box"""
@@ -82,6 +91,8 @@ def process_server(server_name, connection_params, output_path, logger):
     return {'status': 'ok', 'server': server_name, 'sites_count': len(sites_list)}
 
     ##############################################################################################
+
+
 def main():
     """Function collects all websites from all IIS boxes, applies configuration from websites.yml
     and dumps data to file named server_name.yml in servers folder"""
@@ -103,8 +114,10 @@ def main():
                         type=int, default=1)
     args = parser.parse_args()
 
-    logging.basicConfig(level=logging.DEBUG if args.debug_output else logging.INFO,
-                        format="%(name)s - %(levelname)s - %(message)s")
+    logging.basicConfig(
+        level=logging.DEBUG if args.debug_output else logging.INFO,
+        format="%(name)s - %(levelname)s - %(message)s",
+    )
 
     logger = logging.getLogger("collect IIS sites data")
     logger.info('Server list: %s', args.server_list)
@@ -125,10 +138,15 @@ def main():
     for server in server_list:
         server = server.strip()
         logger.info("Adding to processing: %s", server)
-        results.append(executor.submit(process_server, server,
-                                       ConnectionParameters(args.user_name, args.password,
-                                       args.validate_ca),
-                                       args.output_path, logger))
+        results.append(
+            executor.submit(
+                process_server,
+                server,
+                ConnectionParameters(args.user_name, args.password, args.validate_ca),
+                args.output_path,
+                logger,
+            )
+        )
 
     finished_results = [
         future.result()
@@ -146,6 +164,7 @@ def main():
 
     logger.info("Execution duration: %s", str(datetime.now() - start_time))
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
