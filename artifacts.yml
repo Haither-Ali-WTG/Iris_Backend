@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231004.1
-  # Tue Oct  3 22:28:22 UTC 2023 -- Wed Oct  4 09:28:22 AEDT 2023
+  # Dante Build Artifact 20231004.2
+  # Wed Oct  4 00:05:59 UTC 2023 -- Wed Oct  4 11:05:59 AEDT 2023
   #
-  # Merged PR 15543: For new version of pylint (3.0.0). Cancel the duplicate-code check.
-  # 3cb106c70dff033128162a39fb8d102a8537565e
-  dante_build_id: '723252'
+  # Merge pull request 15618 from dante_artifact_upgrade into master
+  # 063a51a47f4697da59286c20ab35762e1277f227
+  dante_build_id: '723362'
 
-  # virgil 20231004.23
-  # Tue Oct  3 21:18:45 UTC 2023 -- Wed Oct  4 08:18:45 AEDT 2023
+  # virgil 20231004.27
+  # Wed Oct  4 00:22:07 UTC 2023 -- Wed Oct  4 11:22:07 AEDT 2023
   #
-  # Merged PR 15582: Warn on Python vulnerabilities
-  # db4ddf053a1f397ab5375eb528da3e89f25bdb8d
-  virgil_build_id: '723198'
+  # Merge pull request 15606 from virgil_python_upgrade into master
+  # a10cf71c129272b377c53becba5f391871d65d8b
+  virgil_build_id: '723383'
