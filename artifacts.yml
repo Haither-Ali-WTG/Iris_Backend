@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231004.3
-  # Wed Oct  4 02:03:10 UTC 2023 -- Wed Oct  4 13:03:10 AEDT 2023
+  # Dante Build Artifact 20231004.4
+  # Wed Oct  4 03:24:27 UTC 2023 -- Wed Oct  4 14:24:27 AEDT 2023
   #
-  # Merged PR 15592: Re queue expired builds
-  # 6ddb3ea15e6d2bc5aa7dc9f2192fc2d4782ad89f
-  dante_build_id: '723528'
+  # Merged PR 15583: Warn on Python vulnerabilities
+  # cc2e7472c1ce3fe9e380861cb99539897d0b4d8f
+  dante_build_id: '723611'
 
   # virgil 20231004.31
   # Wed Oct  4 01:25:24 UTC 2023 -- Wed Oct  4 12:25:24 AEDT 2023
