@@ -66,7 +66,7 @@ clustered_instances:
       certificates:
         - star-wisetechglobal-com
         - star-wtg-zone
-        - star-sand-wtg-zone
+        - star-testrig3-sand-wtg-zone
       stats:
         ports:
           web: 2047
