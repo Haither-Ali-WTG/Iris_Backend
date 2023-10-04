@@ -1,0 +1,2 @@
+This directory contains all the data to configure the HAProxy instances in Iris, other
+than the dynamic backends (which are collected dynamically and stored in Ceph).
