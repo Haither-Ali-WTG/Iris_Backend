@@ -1,14 +1,14 @@
 """ Example of a test module. """
 
+import json
 import re
 from glob import glob
 from ipaddress import IPv4Address, IPv4Network
-import json
 from typing import Any, Mapping
 from unittest import TestCase
 
-from more_itertools import one
 import ruamel.yaml
+from more_itertools import one
 
 
 class TestVirgilCrosscheck(TestCase):

@@ -5,7 +5,6 @@ from collections import defaultdict
 from fnmatch import fnmatch
 
 import ruamel.yaml
-
 from inventories.virgil_yamale import VirgilYamaleTestCase
 
 BASE_CONFIG_DIR = 'data'
