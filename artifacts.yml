@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231004.5
-  # Wed Oct  4 05:45:31 UTC 2023 -- Wed Oct  4 16:45:31 AEDT 2023
+  # Dante Build Artifact 20231005.1
+  # Wed Oct  4 22:53:22 UTC 2023 -- Thu Oct  5 09:53:22 AEDT 2023
   #
-  # Merge pull request 15640 from dante_artifact_upgrade into master
-  # a93d2436ff5ccb93ed3d689a124fc5617cf19ee5
-  dante_build_id: '723749'
+  # Merged PR 15698: Fixed error when no Automatic artifact upgrade PRs available
+  # 6ed1410f4b47f8e313047ab56c7e52b54450e74f
+  dante_build_id: '724445'
 
-  # virgil 20231004.36
-  # Wed Oct  4 04:17:29 UTC 2023 -- Wed Oct  4 15:17:29 AEDT 2023
+  # virgil 20231005.9
+  # Wed Oct  4 22:53:40 UTC 2023 -- Thu Oct  5 09:53:40 AEDT 2023
   #
-  # Merged PR 15384: Updated teardowns.yaml
-  # 1ed737f0e9bdf4b9039ed036cfb24da519bacef1
-  virgil_build_id: '723668'
+  # Merged PR 15686: Virgil - Implement new hardware profile for new disks - C44
+  # d3dde9d91f654ff1de46637fe388c90afed00aeb
+  virgil_build_id: '724446'
