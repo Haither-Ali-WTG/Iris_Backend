@@ -7,9 +7,9 @@ variables:
   # 063a51a47f4697da59286c20ab35762e1277f227
   dante_build_id: '723362'
 
-  # virgil 20231004.29
-  # Wed Oct  4 01:04:46 UTC 2023 -- Wed Oct  4 12:04:46 AEDT 2023
+  # virgil 20231004.31
+  # Wed Oct  4 01:25:24 UTC 2023 -- Wed Oct  4 12:25:24 AEDT 2023
   #
-  # Merged PR 15633: Create kafka topic gss-port-call-updates
-  # dcf01d96f97cca7c5292522eb151522056661d8a
-  virgil_build_id: '723456'
+  # Merged PR 15604: US2 Add 3 servers to 108
+  # 395076568831d2d0987b0a22a2825fa439d85079
+  virgil_build_id: '723475'
