@@ -172,11 +172,11 @@ rpds-py==0.10.3
     # via
     #   jsonschema
     #   referencing
-ruamel-yaml==0.17.33
+ruamel-yaml==0.17.35
     # via
     #   ansible-lint
     #   safety
-ruamel-yaml-clib==0.2.7
+ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
 s3cmd==2.3.0
     # via -r requirements.in
