@@ -7,9 +7,9 @@ variables:
   # 063a51a47f4697da59286c20ab35762e1277f227
   dante_build_id: '723362'
 
-  # virgil 20231004.27
-  # Wed Oct  4 00:22:07 UTC 2023 -- Wed Oct  4 11:22:07 AEDT 2023
+  # virgil 20231004.29
+  # Wed Oct  4 01:04:46 UTC 2023 -- Wed Oct  4 12:04:46 AEDT 2023
   #
-  # Merge pull request 15606 from virgil_python_upgrade into master
-  # a10cf71c129272b377c53becba5f391871d65d8b
-  virgil_build_id: '723383'
+  # Merged PR 15633: Create kafka topic gss-port-call-updates
+  # dcf01d96f97cca7c5292522eb151522056661d8a
+  virgil_build_id: '723456'
