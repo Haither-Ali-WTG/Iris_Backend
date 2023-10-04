@@ -7,9 +7,9 @@ variables:
   # 6ed1410f4b47f8e313047ab56c7e52b54450e74f
   dante_build_id: '724445'
 
-  # virgil 20231005.9
-  # Wed Oct  4 22:53:40 UTC 2023 -- Thu Oct  5 09:53:40 AEDT 2023
+  # virgil 20231005.11
+  # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
   #
-  # Merged PR 15686: Virgil - Implement new hardware profile for new disks - C44
-  # d3dde9d91f654ff1de46637fe388c90afed00aeb
-  virgil_build_id: '724446'
+  # Merged PR 15660: Sort import sections (with isort)
+  # 2f429fda33a321c3442bb9ae2f4046d55bbab4de
+  virgil_build_id: '724495'
