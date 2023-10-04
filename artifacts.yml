@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231004.4
-  # Wed Oct  4 03:24:27 UTC 2023 -- Wed Oct  4 14:24:27 AEDT 2023
+  # Dante Build Artifact 20231004.5
+  # Wed Oct  4 05:45:31 UTC 2023 -- Wed Oct  4 16:45:31 AEDT 2023
   #
-  # Merged PR 15583: Warn on Python vulnerabilities
-  # cc2e7472c1ce3fe9e380861cb99539897d0b4d8f
-  dante_build_id: '723611'
+  # Merge pull request 15640 from dante_artifact_upgrade into master
+  # a93d2436ff5ccb93ed3d689a124fc5617cf19ee5
+  dante_build_id: '723749'
 
   # virgil 20231004.36
   # Wed Oct  4 04:17:29 UTC 2023 -- Wed Oct  4 15:17:29 AEDT 2023
