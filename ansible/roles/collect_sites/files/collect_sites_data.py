@@ -6,18 +6,18 @@ Script collects data from all IIS machines using winrm module
 
 import argparse
 import concurrent.futures
-from dataclasses import dataclass
-from datetime import datetime
 import json
 import logging
 import os
 import socket
 import sys
-import yaml
+from dataclasses import dataclass
+from datetime import datetime
 
 import requests
-from winrm.protocol import Protocol
+import yaml
 from winrm.exceptions import InvalidCredentialsError
+from winrm.protocol import Protocol
 
 
 @dataclass
