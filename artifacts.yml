@@ -7,9 +7,9 @@ variables:
   # cc2e7472c1ce3fe9e380861cb99539897d0b4d8f
   dante_build_id: '723611'
 
-  # virgil 20231004.31
-  # Wed Oct  4 01:25:24 UTC 2023 -- Wed Oct  4 12:25:24 AEDT 2023
+  # virgil 20231004.36
+  # Wed Oct  4 04:17:29 UTC 2023 -- Wed Oct  4 15:17:29 AEDT 2023
   #
-  # Merged PR 15604: US2 Add 3 servers to 108
-  # 395076568831d2d0987b0a22a2825fa439d85079
-  virgil_build_id: '723475'
+  # Merged PR 15384: Updated teardowns.yaml
+  # 1ed737f0e9bdf4b9039ed036cfb24da519bacef1
+  virgil_build_id: '723668'
