@@ -1,0 +1,15 @@
+---
+wi00625171-wiserates-testrig3-sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: TESTSITE001
+    secure: true
+  servers:
+    - name: 
+      ip: 10.2.69.77 #  au2sp-siis-402a
+      port: 80
+    - name: 
+      ip: 10.2.69.78 #  au2sp-siis-402b
+      port: 80
