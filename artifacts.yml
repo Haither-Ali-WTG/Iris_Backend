@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231005.5
-  # Thu Oct  5 03:14:12 UTC 2023 -- Thu Oct  5 14:14:12 AEDT 2023
+  # Dante Build Artifact 20231005.6
+  # Thu Oct  5 04:28:11 UTC 2023 -- Thu Oct  5 15:28:11 AEDT 2023
   #
-  # Merged PR 15727: Queue expired PRs
-  # e239e958a92458b6995312af0e15b1e19fa48a94
-  dante_build_id: '724745'
+  # Merged PR 15729: Increase number of dante agents on AU2 mgmt node 3 to 12
+  # f16eda875d42e00b5c78069d190329e5ad162a35
+  dante_build_id: '724811'
 
   # virgil 20231005.11
   # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
