@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231005.1
-  # Wed Oct  4 22:53:22 UTC 2023 -- Thu Oct  5 09:53:22 AEDT 2023
+  # Dante Build Artifact 20231005.2
+  # Thu Oct  5 00:17:33 UTC 2023 -- Thu Oct  5 11:17:33 AEDT 2023
   #
-  # Merged PR 15698: Fixed error when no Automatic artifact upgrade PRs available
-  # 6ed1410f4b47f8e313047ab56c7e52b54450e74f
-  dante_build_id: '724445'
+  # Merged PR 15661: Sort import sections (with isort)
+  # a115cbbb26bb5d0dc49567249df05b21c1686a65
+  dante_build_id: '724567'
 
   # virgil 20231005.11
   # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
