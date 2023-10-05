@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231005.4
-  # Thu Oct  5 02:04:43 UTC 2023 -- Thu Oct  5 13:04:43 AEDT 2023
+  # Dante Build Artifact 20231005.5
+  # Thu Oct  5 03:14:12 UTC 2023 -- Thu Oct  5 14:14:12 AEDT 2023
   #
-  # Merged PR 15642: Pin werkzeug to match pinned version of flask and upgrade packages
-  # 5d517df19fbef58121545b1c9af342fb2ab33539
-  dante_build_id: '724683'
+  # Merged PR 15727: Queue expired PRs
+  # e239e958a92458b6995312af0e15b1e19fa48a94
+  dante_build_id: '724745'
 
   # virgil 20231005.11
   # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
