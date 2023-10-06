@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231006.3
-  # Fri Oct  6 05:59:39 UTC 2023 -- Fri Oct  6 16:59:39 AEDT 2023
+  # Dante Build Artifact 20231006.4
+  # Fri Oct  6 07:15:02 UTC 2023 -- Fri Oct  6 18:15:02 AEDT 2023
   #
-  # Merged PR 15763: Dante - Add new C44 to commands
-  # ca5b1c55b30f6a023f239c41afd90b5b7f023b3f
-  dante_build_id: '725895'
+  # Merge pull request 15341 from dante_python_upgrade into master
+  # e58a5573865a09196db830e0a8fb184f3a56553f
+  dante_build_id: '725970'
 
   # virgil 20231005.11
   # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
