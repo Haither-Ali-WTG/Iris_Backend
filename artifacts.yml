@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231006.2
-  # Fri Oct  6 02:10:51 UTC 2023 -- Fri Oct  6 13:10:51 AEDT 2023
+  # Dante Build Artifact 20231006.3
+  # Fri Oct  6 05:59:39 UTC 2023 -- Fri Oct  6 16:59:39 AEDT 2023
   #
-  # Merged PR 15767: Configure ceph connection on agent
-  # 09b54dbe2200b4857ac833fff1e1494c17209eb5
-  dante_build_id: '725672'
+  # Merged PR 15763: Dante - Add new C44 to commands
+  # ca5b1c55b30f6a023f239c41afd90b5b7f023b3f
+  dante_build_id: '725895'
 
   # virgil 20231005.11
   # Wed Oct  4 23:22:32 UTC 2023 -- Thu Oct  5 10:22:32 AEDT 2023
