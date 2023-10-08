@@ -7,9 +7,9 @@ variables:
   # e58a5573865a09196db830e0a8fb184f3a56553f
   dante_build_id: '725970'
 
-  # virgil 20231009.2
-  # Sun Oct  8 22:22:38 UTC 2023 -- Mon Oct  9 09:22:38 AEDT 2023
+  # virgil 20231009.4
+  # Sun Oct  8 23:28:32 UTC 2023 -- Mon Oct  9 10:28:32 AEDT 2023
   #
-  # Merge pull request 15803 from virgil_python_upgrade into master
-  # 92e8063392888f9ffe83cd58d7d32f7d49989a45
-  virgil_build_id: '728107'
+  # Merged PR 15815: Virgil - Change hardware profile to add more storage
+  # 16dbc8f037e7a6179729c9751819d0c8e107f5e5
+  virgil_build_id: '728159'
