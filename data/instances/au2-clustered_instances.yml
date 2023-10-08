@@ -62,7 +62,13 @@ clustered_instances:
           plaintext: [2007]
           ssl: [2008]
       machine_cluster: au2-sand-internal-1
-      iis_servers: []
+      iis_servers:
+        - au2sp-tweb-403a.sand.wtg.zone
+        - au2sp-tweb-403b.sand.wtg.zone
+        - au2sp-tweb-404a.sand.wtg.zone
+        - au2sp-tweb-404b.sand.wtg.zone
+        - au2sp-tweb-405a.sand.wtg.zone
+        - au2sp-tweb-405b.sand.wtg.zone
       certificates:
         - star-wisetechglobal-com
         - star-wtg-zone
