@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231006.4
-  # Fri Oct  6 07:15:02 UTC 2023 -- Fri Oct  6 18:15:02 AEDT 2023
+  # Dante Build Artifact 20231009.1
+  # Mon Oct  9 00:36:00 UTC 2023 -- Mon Oct  9 11:36:00 AEDT 2023
   #
-  # Merge pull request 15341 from dante_python_upgrade into master
-  # e58a5573865a09196db830e0a8fb184f3a56553f
-  dante_build_id: '725970'
+  # Merged PR 15818: Fix the variable in windows
+  # 939c46f54df62921999a4cb228329a76ee97f74e
+  dante_build_id: '728244'
 
   # virgil 20231009.4
   # Sun Oct  8 23:28:32 UTC 2023 -- Mon Oct  9 10:28:32 AEDT 2023
