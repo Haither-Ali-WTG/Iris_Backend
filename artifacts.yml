@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231009.4
-  # Mon Oct  9 04:18:46 UTC 2023 -- Mon Oct  9 15:18:46 AEDT 2023
+  # Dante Build Artifact 20231010.1
+  # Mon Oct  9 23:45:00 UTC 2023 -- Tue Oct 10 10:45:00 AEDT 2023
   #
-  # Merge pull request 15806 from dante_python_upgrade into master
-  # e79f5293d38dc8b6de1ddac097887da8f8ff2684
-  dante_build_id: '728481'
+  # Merge pull request 15877 from dante_artifact_upgrade into master
+  # 5cbc5fa464fd786651d57a10084f3d44a52fd2b0
+  dante_build_id: '729242'
 
   # virgil 20231010.3
   # Mon Oct  9 22:30:20 UTC 2023 -- Tue Oct 10 09:30:20 AEDT 2023
