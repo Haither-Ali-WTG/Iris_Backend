@@ -7,9 +7,9 @@ variables:
   # e79f5293d38dc8b6de1ddac097887da8f8ff2684
   dante_build_id: '728481'
 
-  # virgil 20231009.4
-  # Sun Oct  8 23:28:32 UTC 2023 -- Mon Oct  9 10:28:32 AEDT 2023
+  # virgil 20231010.3
+  # Mon Oct  9 22:30:20 UTC 2023 -- Tue Oct 10 09:30:20 AEDT 2023
   #
-  # Merged PR 15815: Virgil - Change hardware profile to add more storage
-  # 16dbc8f037e7a6179729c9751819d0c8e107f5e5
-  virgil_build_id: '728159'
+  # Merged PR 15871: Add another C23, clean formatting
+  # 751e774c456f0e81c253d2107b9077f40d87958c
+  virgil_build_id: '729179'
