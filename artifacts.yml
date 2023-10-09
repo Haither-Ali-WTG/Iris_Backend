@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231009.1
-  # Mon Oct  9 00:36:00 UTC 2023 -- Mon Oct  9 11:36:00 AEDT 2023
+  # Dante Build Artifact 20231009.2
+  # Mon Oct  9 01:55:58 UTC 2023 -- Mon Oct  9 12:55:58 AEDT 2023
   #
-  # Merged PR 15818: Fix the variable in windows
-  # 939c46f54df62921999a4cb228329a76ee97f74e
-  dante_build_id: '728244'
+  # Merged PR 15784: Dante - Add more C44 related commands
+  # 5f1db1f17e3be915b50fdd2147ddf59170fe068a
+  dante_build_id: '728317'
 
   # virgil 20231009.4
   # Sun Oct  8 23:28:32 UTC 2023 -- Mon Oct  9 10:28:32 AEDT 2023
