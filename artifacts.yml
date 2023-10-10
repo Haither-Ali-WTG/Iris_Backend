@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231010.2
-  # Tue Oct 10 01:31:47 UTC 2023 -- Tue Oct 10 12:31:47 AEDT 2023
+  # Dante Build Artifact 20231010.3
+  # Tue Oct 10 02:41:21 UTC 2023 -- Tue Oct 10 13:41:21 AEDT 2023
   #
-  # Merged PR 15679: More useful curl output for non-interactive use
-  # 357d3a6486420e7def9301f93009c3b0cfb49b17
-  dante_build_id: '729376'
+  # Merged PR 15886: Fixed automatic builds queuing
+  # 826d153dd08cd5b760c8a4756e7767c058aa33ed
+  dante_build_id: '729454'
 
   # virgil 20231010.3
   # Mon Oct  9 22:30:20 UTC 2023 -- Tue Oct 10 09:30:20 AEDT 2023
