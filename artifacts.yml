@@ -7,9 +7,9 @@ variables:
   # 826d153dd08cd5b760c8a4756e7767c058aa33ed
   dante_build_id: '729454'
 
-  # virgil 20231010.3
-  # Mon Oct  9 22:30:20 UTC 2023 -- Tue Oct 10 09:30:20 AEDT 2023
+  # virgil 20231011.6
+  # Tue Oct 10 22:57:35 UTC 2023 -- Wed Oct 11 09:57:35 AEDT 2023
   #
-  # Merged PR 15871: Add another C23, clean formatting
-  # 751e774c456f0e81c253d2107b9077f40d87958c
-  virgil_build_id: '729179'
+  # Merge pull request 15910 from virgil_python_upgrade into master
+  # a3762cf9da6ed5c5169aca9732fdb716783fa91f
+  virgil_build_id: '730252'
