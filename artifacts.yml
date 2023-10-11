@@ -7,9 +7,9 @@ variables:
   # 4cb6e0a889d5b8be28a1d5a1dd5106472928c1d3
   dante_build_id: '730425'
 
-  # virgil 20231011.6
-  # Tue Oct 10 22:57:35 UTC 2023 -- Wed Oct 11 09:57:35 AEDT 2023
+  # virgil 20231012.6
+  # Wed Oct 11 22:04:46 UTC 2023 -- Thu Oct 12 09:04:46 AEDT 2023
   #
-  # Merge pull request 15910 from virgil_python_upgrade into master
-  # a3762cf9da6ed5c5169aca9732fdb716783fa91f
-  virgil_build_id: '730252'
+  # Merged PR 15941: CS01419252 - New topics for ILS
+  # 5bf511748ef78f2ff43ea2ecd28e8b17d04b1431
+  virgil_build_id: '731171'
