@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231012.1
-  # Wed Oct 11 23:15:27 UTC 2023 -- Thu Oct 12 10:15:27 AEDT 2023
+  # Dante Build Artifact 20231012.2
+  # Thu Oct 12 00:34:52 UTC 2023 -- Thu Oct 12 11:34:52 AEDT 2023
   #
-  # Merged PR 15900: Include the repo name in re-queueing debug message
-  # 1e23f5c8177b0eb9f7bcfd108bd60ccb84479d40
-  dante_build_id: '731220'
+  # Merged PR 15943: Descrease s3 concurrent requests for awscli
+  # 148a051837a2b7820418f6f7f0d5bd0b35627ca5
+  dante_build_id: '731315'
 
-  # virgil 20231012.6
-  # Wed Oct 11 22:04:46 UTC 2023 -- Thu Oct 12 09:04:46 AEDT 2023
+  # virgil 20231012.8
+  # Wed Oct 11 23:54:55 UTC 2023 -- Thu Oct 12 10:54:55 AEDT 2023
   #
-  # Merged PR 15941: CS01419252 - New topics for ILS
-  # 5bf511748ef78f2ff43ea2ecd28e8b17d04b1431
-  virgil_build_id: '731171'
+  # Merged PR 15939: AddEquinixSY5Cumulus
+  # 94529bd58453a4200e31cb465d13b21fdd2a9bd7
+  virgil_build_id: '731266'
