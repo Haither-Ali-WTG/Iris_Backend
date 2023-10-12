@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231012.5
-  # Thu Oct 12 05:25:14 UTC 2023 -- Thu Oct 12 16:25:14 AEDT 2023
+  # Dante Build Artifact 20231012.6
+  # Thu Oct 12 06:54:48 UTC 2023 -- Thu Oct 12 17:54:48 AEDT 2023
   #
-  # Merge pull request 15961 from dante_artifact_upgrade into master
-  # af58260808d59352ce86d395a91d7270e934925c
-  dante_build_id: '731589'
+  # Merged PR 15986: Update the key name for ascalaphus base image.
+  # 5fd62872b66e8c617d76ff2cf7b7fec8d57ac456
+  dante_build_id: '731668'
 
   # virgil 20231012.8
   # Wed Oct 11 23:54:55 UTC 2023 -- Thu Oct 12 10:54:55 AEDT 2023
