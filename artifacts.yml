@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231012.2
-  # Thu Oct 12 00:34:52 UTC 2023 -- Thu Oct 12 11:34:52 AEDT 2023
+  # Dante Build Artifact 20231012.3
+  # Thu Oct 12 01:46:54 UTC 2023 -- Thu Oct 12 12:46:54 AEDT 2023
   #
-  # Merged PR 15943: Descrease s3 concurrent requests for awscli
-  # 148a051837a2b7820418f6f7f0d5bd0b35627ca5
-  dante_build_id: '731315'
+  # Merged PR 15813: WI00572346 - Preventing return out of dated data from ascalaphus - 1 day threshold
+  # f1de5bbce9797f77d3feadda4211dd8bcc68d173
+  dante_build_id: '731401'
 
   # virgil 20231012.8
   # Wed Oct 11 23:54:55 UTC 2023 -- Thu Oct 12 10:54:55 AEDT 2023
