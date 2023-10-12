@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231012.3
-  # Thu Oct 12 01:46:54 UTC 2023 -- Thu Oct 12 12:46:54 AEDT 2023
+  # Dante Build Artifact 20231012.4
+  # Thu Oct 12 03:48:26 UTC 2023 -- Thu Oct 12 14:48:26 AEDT 2023
   #
-  # Merged PR 15813: WI00572346 - Preventing return out of dated data from ascalaphus - 1 day threshold
-  # f1de5bbce9797f77d3feadda4211dd8bcc68d173
-  dante_build_id: '731401'
+  # Merged PR 15945: Replace s3 download with sync on hypervisor
+  # c6f1765351a2bb8d5739aeee2960717fb5d6ab2a
+  dante_build_id: '731503'
 
   # virgil 20231012.8
   # Wed Oct 11 23:54:55 UTC 2023 -- Thu Oct 12 10:54:55 AEDT 2023
