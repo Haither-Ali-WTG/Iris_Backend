@@ -7,9 +7,9 @@ variables:
   # 5fd62872b66e8c617d76ff2cf7b7fec8d57ac456
   dante_build_id: '731668'
 
-  # virgil 20231013.1
-  # Thu Oct 12 22:22:54 UTC 2023 -- Fri Oct 13 09:22:54 AEDT 2023
+  # virgil 20231013.3
+  # Thu Oct 12 23:09:50 UTC 2023 -- Fri Oct 13 10:09:50 AEDT 2023
   #
-  # Merged PR 16008: new-vlan-for-sql
-  # bb40625442cda61d42b36052b90bbdcea1140715
-  virgil_build_id: '732230'
+  # Merged PR 16020: Set the sy5 switches to minos pre-provisioning mode
+  # ad7a9111e94ca22634e7163a5ac1f09245258a4f
+  virgil_build_id: '732277'
