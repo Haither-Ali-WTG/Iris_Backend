@@ -7,9 +7,9 @@ variables:
   # 5fd62872b66e8c617d76ff2cf7b7fec8d57ac456
   dante_build_id: '731668'
 
-  # virgil 20231012.8
-  # Wed Oct 11 23:54:55 UTC 2023 -- Thu Oct 12 10:54:55 AEDT 2023
+  # virgil 20231013.1
+  # Thu Oct 12 22:22:54 UTC 2023 -- Fri Oct 13 09:22:54 AEDT 2023
   #
-  # Merged PR 15939: AddEquinixSY5Cumulus
-  # 94529bd58453a4200e31cb465d13b21fdd2a9bd7
-  virgil_build_id: '731266'
+  # Merged PR 16008: new-vlan-for-sql
+  # bb40625442cda61d42b36052b90bbdcea1140715
+  virgil_build_id: '732230'
