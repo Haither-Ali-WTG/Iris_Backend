@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231013.1
-  # Fri Oct 13 00:44:55 UTC 2023 -- Fri Oct 13 11:44:55 AEDT 2023
+  # Dante Build Artifact 20231013.2
+  # Fri Oct 13 01:57:11 UTC 2023 -- Fri Oct 13 12:57:11 AEDT 2023
   #
-  # Merge pull request 16017 from dante_artifact_upgrade into master
-  # f9b5269840a7aa0820da5a6a578ced0a0168137e
-  dante_build_id: '732363'
+  # Merged PR 16025: Fix the wrong s3 path in simulation setup
+  # d29e13f27c445a58467d10c03a6af2bc77249c1d
+  dante_build_id: '732448'
 
-  # virgil 20231013.3
-  # Thu Oct 12 23:09:50 UTC 2023 -- Fri Oct 13 10:09:50 AEDT 2023
+  # virgil 20231013.6
+  # Fri Oct 13 01:48:08 UTC 2023 -- Fri Oct 13 12:48:08 AEDT 2023
   #
-  # Merged PR 16020: Set the sy5 switches to minos pre-provisioning mode
-  # ad7a9111e94ca22634e7163a5ac1f09245258a4f
-  virgil_build_id: '732277'
+  # Merged PR 15947: Prepare to move C-00348
+  # ac1a35c62bbeda380ed8ac84998d3e42a1e3fe5f
+  virgil_build_id: '732439'
