@@ -208,7 +208,7 @@ tomlkit==0.12.1
     #   yq
 types-pyyaml==6.0.12.12
     # via -r requirements.in
-types-requests==2.31.0.8
+types-requests==2.31.0.9
     # via -r requirements.in
 typing-extensions==4.8.0
     # via
