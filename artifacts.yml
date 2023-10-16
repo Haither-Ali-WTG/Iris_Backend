@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231016.1
-  # Sun Oct 15 23:28:44 UTC 2023 -- Mon Oct 16 10:28:44 AEDT 2023
+  # Dante Build Artifact 20231016.2
+  # Mon Oct 16 01:13:55 UTC 2023 -- Mon Oct 16 12:13:55 AEDT 2023
   #
-  # Merged PR 16054: Update ascalaphus base image.
-  # 657353872077476f4e1da31968b538a6bbe13b4b
-  dante_build_id: '734934'
+  # Merged PR 16044: WI00642033 - Maintenance mode pipeline
+  # be5e5e5edb211e860e48070046a0d574ab42bf0f
+  dante_build_id: '735055'
 
   # virgil 20231016.3
   # Mon Oct 16 00:04:22 UTC 2023 -- Mon Oct 16 11:04:22 AEDT 2023
