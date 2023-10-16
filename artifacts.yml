@@ -7,9 +7,9 @@ variables:
   # 6e41a86a9864c5943d784a068580c5ad15e8f817
   dante_build_id: '735277'
 
-  # virgil 20231016.3
-  # Mon Oct 16 00:04:22 UTC 2023 -- Mon Oct 16 11:04:22 AEDT 2023
+  # virgil 20231017.4
+  # Mon Oct 16 23:32:11 UTC 2023 -- Tue Oct 17 10:32:11 AEDT 2023
   #
-  # Merged PR 16071: Added new topics - CS01435628
-  # b19e504e04f61ce0b924f7d33986380e890d6802
-  virgil_build_id: '734988'
+  # Merge pull request 16115 from virgil_python_upgrade into master
+  # 23c53293ac110a0045b409a6ca6a75ff3363e815
+  virgil_build_id: '735924'
