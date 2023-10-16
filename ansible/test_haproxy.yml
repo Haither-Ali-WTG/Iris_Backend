@@ -22,12 +22,6 @@
 - name: Configure hypervisor
   hosts: hypervisor
   tasks:
-    - name: "Install s3cmd"
-      apt:
-        name: "s3cmd"
-        state: present
-      become: yes
-
     - name: "Install awscli"
       apt:
         name: "awscli"

@@ -135,10 +135,6 @@ pytest-cov==4.1.0
     # via -r requirements.in
 pytest-subtests==0.11.0
     # via -r requirements.in
-python-dateutil==2.8.2
-    # via s3cmd
-python-magic==0.4.27
-    # via s3cmd
 pywinrm==0.4.3
     # via -r requirements.in
 pyyaml==6.0.1
@@ -178,14 +174,10 @@ ruamel-yaml==0.17.35
     #   safety
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
-s3cmd==2.3.0
-    # via -r requirements.in
 safety==2.3.5
     # via -r requirements.in
 six==1.16.0
-    # via
-    #   python-dateutil
-    #   pywinrm
+    # via pywinrm
 smmap==5.0.1
     # via gitdb
 stevedore==5.1.0
