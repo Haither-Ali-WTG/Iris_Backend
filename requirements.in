@@ -24,6 +24,3 @@ yq
 
 # required for simulation
 netaddr
-
-# required for ceph communication
-s3cmd
