@@ -7,9 +7,9 @@ variables:
   # 657353872077476f4e1da31968b538a6bbe13b4b
   dante_build_id: '734934'
 
-  # virgil 20231013.8
-  # Fri Oct 13 04:21:49 UTC 2023 -- Fri Oct 13 15:21:49 AEDT 2023
+  # virgil 20231016.3
+  # Mon Oct 16 00:04:22 UTC 2023 -- Mon Oct 16 11:04:22 AEDT 2023
   #
-  # Merged PR 16042: Virgil - Remove deprecated kafka queues - cleanup
-  # 3389a592482ba625967f59005f4729283df99da6
-  virgil_build_id: '732603'
+  # Merged PR 16071: Added new topics - CS01435628
+  # b19e504e04f61ce0b924f7d33986380e890d6802
+  virgil_build_id: '734988'
