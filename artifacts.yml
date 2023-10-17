@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231017.4
-  # Tue Oct 17 05:39:57 UTC 2023 -- Tue Oct 17 16:39:57 AEDT 2023
+  # Dante Build Artifact 20231018.1
+  # Tue Oct 17 22:25:09 UTC 2023 -- Wed Oct 18 09:25:09 AEDT 2023
   #
-  # Merged PR 15766: Ensure hw-management-tc service is running on Cumulus 5.2.1 - globally
-  # fcecc06e0726751b9b3f48d5b92c75485914f980
-  dante_build_id: '736254'
+  # Merge pull request 16173 from dante_artifact_upgrade into master
+  # 9f3a3dfcbe9363baf450e475482becaf4b767f45
+  dante_build_id: '736897'
 
-  # virgil 20231018.2
-  # Tue Oct 17 20:58:47 UTC 2023 -- Wed Oct 18 07:58:47 AEDT 2023
+  # virgil 20231018.4
+  # Tue Oct 17 22:27:17 UTC 2023 -- Wed Oct 18 09:27:17 AEDT 2023
   #
-  # Merged PR 16114: Add new VLANs for BlumeSource per CS01436389
-  # 09363de93bf4ff86f634c99eeb89c5ea9cb39ffa
-  virgil_build_id: '736830'
+  # Merged PR 16148: CS01419222 - wisetech academy adminpro
+  # 1b0e962c25e60936e9be991b18c5c2572819dd10
+  virgil_build_id: '736899'
