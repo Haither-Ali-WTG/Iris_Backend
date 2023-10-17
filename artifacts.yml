@@ -7,9 +7,9 @@ variables:
   # fcecc06e0726751b9b3f48d5b92c75485914f980
   dante_build_id: '736254'
 
-  # virgil 20231017.4
-  # Mon Oct 16 23:32:11 UTC 2023 -- Tue Oct 17 10:32:11 AEDT 2023
+  # virgil 20231018.2
+  # Tue Oct 17 20:58:47 UTC 2023 -- Wed Oct 18 07:58:47 AEDT 2023
   #
-  # Merge pull request 16115 from virgil_python_upgrade into master
-  # 23c53293ac110a0045b409a6ca6a75ff3363e815
-  virgil_build_id: '735924'
+  # Merged PR 16114: Add new VLANs for BlumeSource per CS01436389
+  # 09363de93bf4ff86f634c99eeb89c5ea9cb39ffa
+  virgil_build_id: '736830'
