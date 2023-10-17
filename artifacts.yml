@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231016.4
-  # Mon Oct 16 06:14:25 UTC 2023 -- Mon Oct 16 17:14:25 AEDT 2023
+  # Dante Build Artifact 20231017.1
+  # Tue Oct 17 00:32:46 UTC 2023 -- Tue Oct 17 11:32:46 AEDT 2023
   #
-  # Merge pull request 16066 from dante_python_upgrade into master
-  # 6e41a86a9864c5943d784a068580c5ad15e8f817
-  dante_build_id: '735277'
+  # Merged PR 16043: Remove s3cmd installation and config
+  # 1211c108321409edce0928283a2b21f3e0053269
+  dante_build_id: '735976'
 
   # virgil 20231017.4
   # Mon Oct 16 23:32:11 UTC 2023 -- Tue Oct 17 10:32:11 AEDT 2023
