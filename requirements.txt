@@ -13,7 +13,7 @@ ansible-core==2.15.5
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.20.3
+ansible-lint==6.21.0
     # via -r requirements.in
 argcomplete==3.1.2
     # via yq
@@ -59,7 +59,7 @@ filelock==3.12.4
     # via ansible-lint
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.38
+gitpython==3.1.40
     # via bandit
 idna==3.4
     # via requests
@@ -87,7 +87,7 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.1.0
     # via -r requirements.in
-mypy==1.6.0
+mypy==1.6.1
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
@@ -200,7 +200,7 @@ tomlkit==0.12.1
     #   yq
 types-pyyaml==6.0.12.12
     # via -r requirements.in
-types-requests==2.31.0.9
+types-requests==2.31.0.10
     # via -r requirements.in
 typing-extensions==4.8.0
     # via
