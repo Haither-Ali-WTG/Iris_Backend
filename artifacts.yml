@@ -7,9 +7,9 @@ variables:
   # 4603977f92bf2f9b4f35ce1f9489b6efa7b9d778
   dante_build_id: '737353'
 
-  # virgil 20231018.8
-  # Wed Oct 18 09:45:48 UTC 2023 -- Wed Oct 18 20:45:48 AEDT 2023
+  # virgil 20231019.4
+  # Wed Oct 18 22:33:36 UTC 2023 -- Thu Oct 19 09:33:36 AEDT 2023
   #
-  # Merged PR 16202: Virgil - Put KVM and Windows hosts to maintenance on demand
-  # 4822ec6ac6505a14aab267b8a9675beb60ec03e0
-  virgil_build_id: '737517'
+  # Merged PR 16226: Move and reconfigure C22s
+  # 43fc1fc3f532eda0b7e7c787866d0dcbb92176a2
+  virgil_build_id: '737976'
