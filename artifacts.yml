@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231018.2
-  # Tue Oct 17 23:45:29 UTC 2023 -- Wed Oct 18 10:45:29 AEDT 2023
+  # Dante Build Artifact 20231018.3
+  # Wed Oct 18 00:53:47 UTC 2023 -- Wed Oct 18 11:53:47 AEDT 2023
   #
-  # Merged PR 16121: WI00642033 - Consume maintenance flag in Minos
-  # 88afd94f1e0ded6f996fb1cedd526a943b27740d
-  dante_build_id: '736996'
+  # Merged PR 16139: WI00642033 - DE1 and US2 support for maintenance mode
+  # c0dc3dcfbefde97d1bfeace58b128555a6540a70
+  dante_build_id: '737086'
 
   # virgil 20231018.6
   # Tue Oct 17 23:40:48 UTC 2023 -- Wed Oct 18 10:40:48 AEDT 2023
