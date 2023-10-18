@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231018.1
-  # Tue Oct 17 22:25:09 UTC 2023 -- Wed Oct 18 09:25:09 AEDT 2023
+  # Dante Build Artifact 20231018.2
+  # Tue Oct 17 23:45:29 UTC 2023 -- Wed Oct 18 10:45:29 AEDT 2023
   #
-  # Merge pull request 16173 from dante_artifact_upgrade into master
-  # 9f3a3dfcbe9363baf450e475482becaf4b767f45
-  dante_build_id: '736897'
+  # Merged PR 16121: WI00642033 - Consume maintenance flag in Minos
+  # 88afd94f1e0ded6f996fb1cedd526a943b27740d
+  dante_build_id: '736996'
 
-  # virgil 20231018.4
-  # Tue Oct 17 22:27:17 UTC 2023 -- Wed Oct 18 09:27:17 AEDT 2023
+  # virgil 20231018.6
+  # Tue Oct 17 23:40:48 UTC 2023 -- Wed Oct 18 10:40:48 AEDT 2023
   #
-  # Merged PR 16148: CS01419222 - wisetech academy adminpro
-  # 1b0e962c25e60936e9be991b18c5c2572819dd10
-  virgil_build_id: '736899'
+  # Merge pull request 16160 from virgil_python_upgrade into master
+  # 41464fcb70f5d40dfba356fa71e1cbb84ac03ddf
+  virgil_build_id: '736989'
