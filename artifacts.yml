@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231019.6
-  # Thu Oct 19 08:49:07 UTC 2023 -- Thu Oct 19 19:49:07 AEDT 2023
+  # Dante Build Artifact 20231019.7
+  # Thu Oct 19 09:55:46 UTC 2023 -- Thu Oct 19 20:55:46 AEDT 2023
   #
-  # Merged PR 16240: Fix the simulation nqcow images downloading issues - After manually tested.
-  # c61869c3e63ed3191c7c559cf51108137d201830
-  dante_build_id: '738548'
+  # Merged PR 16192: WI00642033 - Remove Minos network checks from peers in maintenance mode
+  # 1011580959723ec1a8ae6931ac27ca9dac53bd35
+  dante_build_id: '738617'
 
   # virgil 20231019.6
   # Thu Oct 19 03:01:44 UTC 2023 -- Thu Oct 19 14:01:44 AEDT 2023
