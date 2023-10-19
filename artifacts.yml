@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231019.2
-  # Thu Oct 19 03:09:26 UTC 2023 -- Thu Oct 19 14:09:26 AEDT 2023
+  # Dante Build Artifact 20231019.3
+  # Thu Oct 19 04:45:17 UTC 2023 -- Thu Oct 19 15:45:17 AEDT 2023
   #
-  # Merged PR 16232: Enable maintenance mode when building xclarity host
-  # 7314799cdf9bb774c5c947e63d29801662303867
-  dante_build_id: '738232'
+  # Merge pull request 16247 from dante_artifact_upgrade into master
+  # 5c7f8489f777f2da782d3a238415d4ef3b9b3ba7
+  dante_build_id: '738315'
 
   # virgil 20231019.6
   # Thu Oct 19 03:01:44 UTC 2023 -- Thu Oct 19 14:01:44 AEDT 2023
