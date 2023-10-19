@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231019.5
-  # Thu Oct 19 06:53:41 UTC 2023 -- Thu Oct 19 17:53:41 AEDT 2023
+  # Dante Build Artifact 20231019.6
+  # Thu Oct 19 08:49:07 UTC 2023 -- Thu Oct 19 19:49:07 AEDT 2023
   #
-  # Merged PR 16233: Avoid --no-progress-meter
-  # 574d469001b5e77010c045a95f6ae835e8a0f6d5
-  dante_build_id: '738436'
+  # Merged PR 16240: Fix the simulation nqcow images downloading issues - After manually tested.
+  # c61869c3e63ed3191c7c559cf51108137d201830
+  dante_build_id: '738548'
 
   # virgil 20231019.6
   # Thu Oct 19 03:01:44 UTC 2023 -- Thu Oct 19 14:01:44 AEDT 2023
