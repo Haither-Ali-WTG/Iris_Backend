@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231019.1
-  # Thu Oct 19 01:25:20 UTC 2023 -- Thu Oct 19 12:25:20 AEDT 2023
+  # Dante Build Artifact 20231019.2
+  # Thu Oct 19 03:09:26 UTC 2023 -- Thu Oct 19 14:09:26 AEDT 2023
   #
-  # Merge pull request 16217 from dante_artifact_upgrade into master
-  # d3f1f1e7240ad12cced9da723abd4be61ea9bb9c
-  dante_build_id: '738117'
+  # Merged PR 16232: Enable maintenance mode when building xclarity host
+  # 7314799cdf9bb774c5c947e63d29801662303867
+  dante_build_id: '738232'
 
-  # virgil 20231019.4
-  # Wed Oct 18 22:33:36 UTC 2023 -- Thu Oct 19 09:33:36 AEDT 2023
+  # virgil 20231019.6
+  # Thu Oct 19 03:01:44 UTC 2023 -- Thu Oct 19 14:01:44 AEDT 2023
   #
-  # Merged PR 16226: Move and reconfigure C22s
-  # 43fc1fc3f532eda0b7e7c787866d0dcbb92176a2
-  virgil_build_id: '737976'
+  # Merge pull request 16222 from virgil_python_upgrade into master
+  # b3d1a346e141fa32de024d1a7b1091b6887ee376
+  virgil_build_id: '738220'
