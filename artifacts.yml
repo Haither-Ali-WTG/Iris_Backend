@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231023.1
-  # Mon Oct 23 03:42:30 UTC 2023 -- Mon Oct 23 14:42:30 AEDT 2023
+  # Dante Build Artifact 20231023.2
+  # Mon Oct 23 04:58:00 UTC 2023 -- Mon Oct 23 15:58:00 AEDT 2023
   #
-  # Merged PR 16303: Move awscli installation into requirements.txt
-  # 9b8c24a0c6484e7361d8fb2c5cb677471c5b98d4
-  dante_build_id: '741867'
+  # Merge pull request 16289 from dante_python_upgrade into master
+  # 4a0dd4dcc1cdf970f84b406febee0922194d11f8
+  dante_build_id: '741938'
 
   # virgil 20231023.2
   # Mon Oct 23 03:25:50 UTC 2023 -- Mon Oct 23 14:25:50 AEDT 2023
