@@ -22,5 +22,8 @@ yamllint
 jq
 yq
 
+# required for ceph communication
+awscli
+
 # required for simulation
 netaddr
