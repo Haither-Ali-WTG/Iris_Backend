@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231019.7
-  # Thu Oct 19 09:55:46 UTC 2023 -- Thu Oct 19 20:55:46 AEDT 2023
+  # Dante Build Artifact 20231023.1
+  # Mon Oct 23 03:42:30 UTC 2023 -- Mon Oct 23 14:42:30 AEDT 2023
   #
-  # Merged PR 16192: WI00642033 - Remove Minos network checks from peers in maintenance mode
-  # 1011580959723ec1a8ae6931ac27ca9dac53bd35
-  dante_build_id: '738617'
+  # Merged PR 16303: Move awscli installation into requirements.txt
+  # 9b8c24a0c6484e7361d8fb2c5cb677471c5b98d4
+  dante_build_id: '741867'
 
-  # virgil 20231019.6
-  # Thu Oct 19 03:01:44 UTC 2023 -- Thu Oct 19 14:01:44 AEDT 2023
+  # virgil 20231023.2
+  # Mon Oct 23 03:25:50 UTC 2023 -- Mon Oct 23 14:25:50 AEDT 2023
   #
-  # Merge pull request 16222 from virgil_python_upgrade into master
-  # b3d1a346e141fa32de024d1a7b1091b6887ee376
-  virgil_build_id: '738220'
+  # Merge pull request 16301 from virgil_python_upgrade into master
+  # a881f37f96628f40f1e4bb9474386d2ad9204929
+  virgil_build_id: '741842'
