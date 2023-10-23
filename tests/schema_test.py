@@ -1,8 +1,8 @@
 """ Check the configuration files against Yamale schemas """
 
 import os
-from collections import defaultdict
 from fnmatch import fnmatch
+from typing import Mapping, Set
 
 import ruamel.yaml
 from inventories.virgil_yamale import VirgilYamaleTestCase
@@ -43,7 +43,11 @@ class TestSchema(VirgilYamaleTestCase):
             for file in files:
                 config_files.append(os.path.normpath(os.path.join(path, file)))
 
-        by_kind = defaultdict(set)
+        by_kind: Mapping[str, Set[str]] = {
+            kind: set()
+            for _pattern, kind in CONFIG_PATTERNS
+            if kind is not None
+        }
         for fname in config_files:
             for pattern, kind in CONFIG_PATTERNS:
                 if fnmatch(fname, pattern):
@@ -60,5 +64,7 @@ class TestSchema(VirgilYamaleTestCase):
 
         for kind, fnames in by_kind.items():
             with self.subTest(kind=kind):
+                if not fnames:
+                    self.fail(f"No '{kind}' configuration files found")
                 schema = f"tests/schema_{kind}.yaml"
                 self.validate(schema, fnames)
