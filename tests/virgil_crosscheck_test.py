@@ -12,7 +12,7 @@ from more_itertools import one
 
 
 def checked_glob(pathname: str) -> List[str]:
-    """ Calls glob, checking that at least one file matched """
+    """ Call glob, checking that at least one file matched """
     res = glob(pathname)
     if not res:
         raise ValueError(f"{pathname} did not match any files")
