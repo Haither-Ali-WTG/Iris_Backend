@@ -7,9 +7,9 @@ variables:
   # c5e836885e68fa455b420243b102325a1bdad1da
   dante_build_id: '743022'
 
-  # virgil 20231024.3
-  # Tue Oct 24 03:52:58 UTC 2023 -- Tue Oct 24 14:52:58 AEDT 2023
+  # virgil 20231024.7
+  # Tue Oct 24 09:32:45 UTC 2023 -- Tue Oct 24 20:32:45 AEDT 2023
   #
-  # Merged PR 16299: Add Envase product-specific VLANs
-  # 5f628b8a64a20962fc2f5a67528ae3d5c3010521
-  virgil_build_id: '742858'
+  # Merged PR 16359: CS01438249  multicopy topics
+  # 050f90f8ce326e5b2d1ac9576381bb0a9370d91c
+  virgil_build_id: '743138'
