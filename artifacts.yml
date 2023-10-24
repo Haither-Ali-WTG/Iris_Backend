@@ -7,9 +7,9 @@ variables:
   # 17b9d14a86a93562aab5a6a2702aadf40ae5fed1
   dante_build_id: '742786'
 
-  # virgil 20231024.1
-  # Tue Oct 24 01:23:23 UTC 2023 -- Tue Oct 24 12:23:23 AEDT 2023
+  # virgil 20231024.3
+  # Tue Oct 24 03:52:58 UTC 2023 -- Tue Oct 24 14:52:58 AEDT 2023
   #
-  # Merged PR 16328: Omit L3 VNI vids from the bridge - stage I
-  # 58495ff014c55fca2b760abcf900012c61426fbb
-  virgil_build_id: '742728'
+  # Merged PR 16299: Add Envase product-specific VLANs
+  # 5f628b8a64a20962fc2f5a67528ae3d5c3010521
+  virgil_build_id: '742858'
