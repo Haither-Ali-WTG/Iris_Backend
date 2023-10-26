@@ -231,7 +231,7 @@ cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic
 default-server inter 10000 {%- if config.encryption is defined %} ssl{% endif %}
 
 {%       for server_name,server_content in servers_data.items() %}
-{%         if backend_name in server_content['websites_list'] %}
+{%         if backend_name in (server_content['websites_list'] or {}) %}
 {%           for iterating_config in server_content['websites_list'][backend_name] %}
 {%             if iterating_config == config %}
 server {{ server_name | split('.') | first }} {{ server_content.server_ip }}:{{ iterating_config.port }} check
