@@ -251,6 +251,11 @@ server {{ server_name | split('.') | first }} {{ server_content.server_ip }}:{{ 
 {% for name, backend in static_backends.items() %}
 # {{ name }}
 #
+{% if backend.full_override is defined %}
+### FULL OVERRIDE ###
+#
+{{ backend.full_override }}
+{% else %}
 backend {{ name | replace(".", "_") }}
 {%   if backend.balance is defined %}balance {{ backend.balance }}
 {%   endif %}
@@ -288,6 +293,7 @@ server {{ server.name }}
 {%     endif %}
 {%   endfor %}
 
+{% endif %}
 {% endfor %}
 
 

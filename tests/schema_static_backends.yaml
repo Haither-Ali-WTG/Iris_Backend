@@ -1,7 +1,9 @@
 ---
 map(include('static_backend'), key=regex('^[a-z0-9.-]{1,253}$', name='domain name'))
 ---
-static_backend:
+static_backend: any(include('static_backend_normal'), include('static_backend_full_override'))
+---
+static_backend_normal:
   clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
   health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
   balance: enum('leastconn', 'source', required=False)
@@ -11,6 +13,10 @@ static_backend:
   default_server: regex('^[a-z0-9 ]+$', name='default_server options', required=False)
   sorry_pages: list(include('sorry_page'), required=False)
   servers: list(include('server'))
+---
+static_backend_full_override:
+  clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
+  full_override: str()
 ---
 static_cookie:
   name: regex('^[A-Z][A-Z0-9]+$', name='uppercase cookie name')
