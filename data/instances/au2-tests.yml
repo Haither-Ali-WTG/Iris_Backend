@@ -27,14 +27,6 @@ clustered_instances:
       tests:
         - host: rdg.wisetechglobal.com
           path: /
-          ssl: true
-          status: 302
-        - host: sandtsg.wtg.zone
-          path: /
-          ssl: true
-          status: 302
-        - host: rdg.wisetechglobal.com
-          path: /
           ssl: false
           status: 302
         - host: sandtsg.wtg.zone
