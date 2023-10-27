@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231024.3
-  # Tue Oct 24 10:45:32 UTC 2023 -- Tue Oct 24 21:45:32 AEDT 2023
+  # Dante Build Artifact 20231027.5
+  # Fri Oct 27 06:45:06 UTC 2023 -- Fri Oct 27 17:45:06 AEDT 2023
   #
-  # Merge pull request 16372 from dante_artifact_upgrade into master
-  # 7ec05dd9e7163d2437c57eb84bb88dc7a574979b
-  dante_build_id: '743184'
+  # Merge pull request 16501 from dante_artifact_upgrade into master
+  # 580193cf2a3323c2883f103682853a56a7d04eaf
+  dante_build_id: '746071'
 
-  # virgil 20231024.7
-  # Tue Oct 24 09:32:45 UTC 2023 -- Tue Oct 24 20:32:45 AEDT 2023
+  # virgil 20231027.3
+  # Fri Oct 27 05:20:57 UTC 2023 -- Fri Oct 27 16:20:57 AEDT 2023
   #
-  # Merged PR 16359: CS01438249  multicopy topics
-  # 050f90f8ce326e5b2d1ac9576381bb0a9370d91c
-  virgil_build_id: '743138'
+  # Merged PR 16481: update-vlan-1088-in-de1
+  # 1f09652b07b0ff3c332d4e12a04633ac06f497f4
+  virgil_build_id: '745971'
