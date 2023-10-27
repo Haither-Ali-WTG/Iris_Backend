@@ -59,7 +59,8 @@ clustered_instances:
       frontend:
         maxconn: 20000
         ports:
-          plaintext: [2007, 2008]
+          plaintext: [2007]
+          ssl: [2008]
       machine_cluster: au2-sand-internal-1
       iis_servers:
         - au2sp-tweb-403a.sand.wtg.zone
@@ -70,6 +71,7 @@ clustered_instances:
         - au2sp-tweb-405b.sand.wtg.zone
       certificates:
         - star-wisetechglobal-com
+        - star-wtg-zone
         - star-testrig3-sand-wtg-zone
       stats:
         ports:
