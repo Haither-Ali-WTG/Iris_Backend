@@ -7,9 +7,9 @@ variables:
   # 580193cf2a3323c2883f103682853a56a7d04eaf
   dante_build_id: '746071'
 
-  # virgil 20231027.3
-  # Fri Oct 27 05:20:57 UTC 2023 -- Fri Oct 27 16:20:57 AEDT 2023
+  # virgil 20231029.2
+  # Sat Oct 28 23:22:57 UTC 2023 -- Sun Oct 29 10:22:57 AEDT 2023
   #
-  # Merged PR 16481: update-vlan-1088-in-de1
-  # 1f09652b07b0ff3c332d4e12a04633ac06f497f4
-  virgil_build_id: '745971'
+  # Merged PR 16514: update cumulus version spine2
+  # 8fdaf38ccfd545a751cf3f1a6d41b125496eef9e
+  virgil_build_id: '747446'
