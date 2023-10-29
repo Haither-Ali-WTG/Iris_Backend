@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.29.69
+awscli==1.29.73
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.31.69
+botocore==1.31.73
     # via
     #   awscli
     #   s3transfer
@@ -48,7 +48,7 @@ click==8.1.7
     #   safety
 colorama==0.4.4
     # via awscli
-confluent-kafka==2.2.0
+confluent-kafka==2.3.0
     # via -r requirements.in
 coverage[toml]==7.3.2
     # via pytest-cov
@@ -65,7 +65,7 @@ dparse==0.6.3
     # via safety
 exceptiongroup==1.1.3
     # via pytest
-filelock==3.12.4
+filelock==3.13.0
     # via ansible-lint
 gitdb==4.0.11
     # via gitpython
@@ -140,7 +140,7 @@ pyparsing==3.1.1
     # via packaging
 pyspnego==0.10.2
     # via requests-ntlm
-pytest==7.4.2
+pytest==7.4.3
     # via
     #   -r requirements.in
     #   pytest-cov
