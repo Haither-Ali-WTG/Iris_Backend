@@ -45,3 +45,15 @@
     enabled: true
     name: GLOW
   name_suffix: ''
+
+- name_like:
+    - iris-test-
+  starts_with:
+    - iris-test-
+  encryption: false
+  health_check: "/ready"
+  port: 80
+  balance: first
+  cookie:
+    enabled: false
+  name_suffix: ''
