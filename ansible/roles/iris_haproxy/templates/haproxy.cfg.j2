@@ -216,7 +216,7 @@ acl {{ name }} {{ test }}
 # ################
 
 {% if dynamic_backends is defined %}
-{%   for backend_name,config_list in dynamic_backends.items() %}
+{%   for backend_name, config_list in dynamic_backends.items() %}
 {%     for config in config_list %}
 backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
 {%       if config.balance is defined %}balance {{ config.balance }}
@@ -230,7 +230,7 @@ cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic
 {%       endif %}
 default-server inter 10000 {%- if config.encryption is defined %} ssl{% endif %}
 
-{%       for server_name,server_content in servers_data.items() %}
+{%       for server_name, server_content in servers_data.items() %}
 {%         if backend_name in (server_content['websites_list'] or {}) %}
 {%           for iterating_config in server_content['websites_list'][backend_name] %}
 {%             if iterating_config == config %}
