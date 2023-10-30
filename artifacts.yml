@@ -7,9 +7,9 @@ variables:
   # fc421dd9c8064348a29d8dd12d00dfc12797a14a
   dante_build_id: '748479'
 
-  # virgil 20231030.12
-  # Mon Oct 30 00:31:29 UTC 2023 -- Mon Oct 30 11:31:29 AEDT 2023
+  # virgil 20231030.27
+  # Mon Oct 30 02:32:41 UTC 2023 -- Mon Oct 30 13:32:41 AEDT 2023
   #
-  # Merged PR 16462: Use standard library cached_property instead of backports
-  # 83467850500dc90788f2bfea6207179d062da85e
-  virgil_build_id: '748427'
+  # Merged PR 16401: Minor fixes from the "bugbear" flake8 extensions
+  # 406be465a5cb4d113c109280265c4689cb1a6b1d
+  virgil_build_id: '748597'
