@@ -97,21 +97,18 @@ def main():
     """Function collects all websites from all IIS boxes, applies configuration from websites.yml
     and dumps data to file named server_name.yml in servers folder"""
     parser = argparse.ArgumentParser()
-    parser.add_argument('--server_list', '-sl', help="Comma separated list of servers to process",
-                        type=str)
-    parser.add_argument('--threads', '-t', help="Number of parallel executions",
-                        type=int, default='20')
-    parser.add_argument('--output_path', '-o', help="Output file path",
-                        type=str, default='servers')
+    parser.add_argument(
+        '--server_list', '-sl', help="Comma separated list of servers to process", type=str
+    )
+    parser.add_argument(
+        '--threads', '-t', help="Number of parallel executions", type=int, default='20'
+    )
+    parser.add_argument('--output_path', '-o', help="Output file path", type=str, default='servers')
     # TODO: make check certificate default behavior
-    parser.add_argument('--validate_ca', '-ca', help="validate CA",
-                        type=str, default='ignore')
-    parser.add_argument('--user_name', '-u', help="User name",
-                        type=str, default='s_lbwinrmquerier')
-    parser.add_argument('--password', '-p', help="Password",
-                        type=str)
-    parser.add_argument('--debug_output', '-do', help="Output debug info",
-                        type=int, default=1)
+    parser.add_argument('--validate_ca', '-ca', help="validate CA", type=str, default='ignore')
+    parser.add_argument('--user_name', '-u', help="User name", type=str, default='s_lbwinrmquerier')
+    parser.add_argument('--password', '-p', help="Password", type=str)
+    parser.add_argument('--debug_output', '-do', help="Output debug info", type=int, default=1)
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -148,10 +145,7 @@ def main():
             )
         )
 
-    finished_results = [
-        future.result()
-        for future in concurrent.futures.as_completed(results)
-    ]
+    finished_results = [future.result() for future in concurrent.futures.as_completed(results)]
 
     json.dump(
         {
