@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231030.2
-  # Mon Oct 30 01:05:28 UTC 2023 -- Mon Oct 30 12:05:28 AEDT 2023
+  # Dante Build Artifact 20231030.3
+  # Mon Oct 30 03:45:13 UTC 2023 -- Mon Oct 30 14:45:13 AEDT 2023
   #
-  # Merged PR 16475: Add README for the dante_agent role
-  # fc421dd9c8064348a29d8dd12d00dfc12797a14a
-  dante_build_id: '748479'
+  # Merge pull request 16541 from dante_artifact_upgrade into master
+  # 9d8a8593ea4ae211cb75a2dff010fd4a32032636
+  dante_build_id: '748660'
 
   # virgil 20231030.27
   # Mon Oct 30 02:32:41 UTC 2023 -- Mon Oct 30 13:32:41 AEDT 2023
