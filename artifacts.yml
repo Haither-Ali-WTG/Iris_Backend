@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231030.6
-  # Mon Oct 30 04:53:35 UTC 2023 -- Mon Oct 30 15:53:35 AEDT 2023
+  # Dante Build Artifact 20231030.7
+  # Mon Oct 30 07:10:31 UTC 2023 -- Mon Oct 30 18:10:31 AEDT 2023
   #
-  # Merged PR 16295: Add TODO for refactoring seceng ssh keys
-  # e82d3568dd54f6736d026de59eb2313c0f08e2ac
-  dante_build_id: '748739'
+  # Merged PR 16570: WI00672121: Move awscli from agent to simmulation hypervisor for haproxy
+  # 2efc84eb4e56411f116856b3ca5692f34c24c94a
+  dante_build_id: '748872'
 
   # virgil 20231030.27
   # Mon Oct 30 02:32:41 UTC 2023 -- Mon Oct 30 13:32:41 AEDT 2023
