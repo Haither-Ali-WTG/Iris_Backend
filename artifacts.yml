@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231030.3
-  # Mon Oct 30 03:45:13 UTC 2023 -- Mon Oct 30 14:45:13 AEDT 2023
+  # Dante Build Artifact 20231030.6
+  # Mon Oct 30 04:53:35 UTC 2023 -- Mon Oct 30 15:53:35 AEDT 2023
   #
-  # Merge pull request 16541 from dante_artifact_upgrade into master
-  # 9d8a8593ea4ae211cb75a2dff010fd4a32032636
-  dante_build_id: '748660'
+  # Merged PR 16295: Add TODO for refactoring seceng ssh keys
+  # e82d3568dd54f6736d026de59eb2313c0f08e2ac
+  dante_build_id: '748739'
 
   # virgil 20231030.27
   # Mon Oct 30 02:32:41 UTC 2023 -- Mon Oct 30 13:32:41 AEDT 2023
