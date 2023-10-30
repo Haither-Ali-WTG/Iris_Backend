@@ -11,6 +11,7 @@ import logging
 import os
 import socket
 import sys
+import threading
 from dataclasses import dataclass
 from datetime import datetime
 
@@ -74,6 +75,7 @@ def get_websites_list(server_name, connection_params):
 
 def process_server(server_name, connection_params, output_path, logger):
     """Read and process all websites data from give IIS box"""
+    threading.current_thread().name = server_name
     try:
         sites_list = get_websites_list(server_name, connection_params)
     except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
@@ -113,7 +115,7 @@ def main():
 
     logging.basicConfig(
         level=logging.DEBUG if args.debug_output else logging.INFO,
-        format="%(name)s - %(levelname)s - %(message)s",
+        format="%(name)s - %(levelname)s - %(threadName)s - %(message)s",
     )
 
     logger = logging.getLogger("collect IIS sites data")
