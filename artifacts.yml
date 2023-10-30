@@ -7,9 +7,9 @@ variables:
   # 2efc84eb4e56411f116856b3ca5692f34c24c94a
   dante_build_id: '748872'
 
-  # virgil 20231030.27
-  # Mon Oct 30 02:32:41 UTC 2023 -- Mon Oct 30 13:32:41 AEDT 2023
+  # virgil 20231030.41
+  # Mon Oct 30 11:51:42 UTC 2023 -- Mon Oct 30 22:51:42 AEDT 2023
   #
-  # Merged PR 16401: Minor fixes from the "bugbear" flake8 extensions
-  # 406be465a5cb4d113c109280265c4689cb1a6b1d
-  virgil_build_id: '748597'
+  # Merged PR 16413: Set US2 layer-3 apexes to continuous deployment
+  # b43619916390f1c8b9a011eb1b144a3ea7903f08
+  virgil_build_id: '749080'
