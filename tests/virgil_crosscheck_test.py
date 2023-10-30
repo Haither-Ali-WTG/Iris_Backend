@@ -4,11 +4,19 @@ import json
 import re
 from glob import glob
 from ipaddress import IPv4Address, IPv4Network
-from typing import Any, Mapping
+from typing import Any, List, Mapping
 from unittest import TestCase
 
 import ruamel.yaml
 from more_itertools import one
+
+
+def checked_glob(pathname: str) -> List[str]:
+    """ Call glob, checking that at least one file matched """
+    res = glob(pathname)
+    if not res:
+        raise ValueError(f"{pathname} did not match any files")
+    return res
 
 
 class TestVirgilCrosscheck(TestCase):
@@ -21,7 +29,7 @@ class TestVirgilCrosscheck(TestCase):
     @classmethod
     def setUpClass(cls):
         cls.virgil_machines = {}
-        for fname in glob("inventories/inventory-*-*.yaml"):
+        for fname in checked_glob("inventories/inventory-*-*.yaml"):
             with open(fname, encoding="utf8") as fh:
                 # Note: these files are nominally YAML, but in practice they're JSON and
                 # loading them as JSON is much faster
@@ -35,7 +43,7 @@ class TestVirgilCrosscheck(TestCase):
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
         fname_pat = re.compile(r"^data/instances/([a-z]{2}[0-9])-machines\.yml$")
 
-        for fname in glob("data/instances/*-machines.yml"):
+        for fname in checked_glob("data/instances/*-machines.yml"):
             with self.subTest(file=fname):
                 m = fname_pat.match(fname)
                 self.assertIsNotNone(m)
@@ -90,7 +98,7 @@ class TestVirgilCrosscheck(TestCase):
         """Cross-check machine cluster configuration against Virgil."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
 
-        for fname in glob("data/machine_clusters/*.yaml"):
+        for fname in checked_glob("data/machine_clusters/*.yaml"):
             with self.subTest(file=fname):
                 with open(fname, encoding="utf8") as fh:
                     iris_file = yaml.load(fh)
