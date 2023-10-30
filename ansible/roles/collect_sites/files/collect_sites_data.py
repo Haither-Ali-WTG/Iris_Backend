@@ -79,9 +79,10 @@ def process_server(server_name, connection_params, output_path, logger):
     try:
         sites_list = get_websites_list(server_name, connection_params)
     except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
-        logger.error("%s: ERROR: %s", server_name, str(err))
+        logger.exception("error collecting sites")
         return {'status': 'error', 'server': server_name, 'error': str(err)}
     if len(sites_list) == 0:
+        logger.warning("collected no sites, server empty")
         return {'status': 'empty', 'server': server_name, 'sites_count': 0}
 
     server_ip = socket.gethostbyname(server_name)
@@ -90,6 +91,7 @@ def process_server(server_name, connection_params, output_path, logger):
     with open(f"{output_path}/{server_name}", 'w', encoding="utf8") as outfile:
         yaml.dump(websites, outfile, default_flow_style=False)
 
+    logger.info("collected %d sites", len(sites_list))
     return {'status': 'ok', 'server': server_name, 'sites_count': len(sites_list)}
 
     ##############################################################################################
@@ -110,7 +112,7 @@ def main():
     parser.add_argument('--validate_ca', '-ca', help="validate CA", type=str, default='ignore')
     parser.add_argument('--user_name', '-u', help="User name", type=str, default='s_lbwinrmquerier')
     parser.add_argument('--password', '-p', help="Password", type=str)
-    parser.add_argument('--debug_output', '-do', help="Output debug info", type=int, default=1)
+    parser.add_argument('--debug_output', '-do', help="Output debug info", action='store_true')
     args = parser.parse_args()
 
     logging.basicConfig(
