@@ -1,3 +1,4 @@
+{% set warnings = [] %}
 clustered_instances:
 {% for clustered_instance in clustered_instance_names %}
   {{ clustered_instance }}:
@@ -9,7 +10,9 @@ clustered_instances:
       server_ip: {{ file_content.server_ip }}
       websites_list:
 {%      for website in file_content.websites_list %}
-{%        if website is regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') %}
+{%        if website is not regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') %}
+{%          set x = warnings.append((clustered_instance, server, website, "is not a domain name")) %}
+{%        else %}
 {%          set website_with_config = [] %}
 {%          for config in website_config %}
 {%            if server is regex(config.get('server_regex', '.*'), ignorecase=True) %}
@@ -29,7 +32,9 @@ clustered_instances:
 {%              endfor %}
 {%            endif %}
 {%          endfor %}
-{%          if website_with_config | length > 0 %}
+{%          if website_with_config | length == 0 %}
+{%            set x = warnings.append((clustered_instance, server, website, "matched no website config")) %}
+{%          else %}
         {{ website }}:
 {%            for cfg in (website_with_config | unique) %}
           - {{ cfg }}
@@ -40,3 +45,4 @@ clustered_instances:
 {%    endif %}
 {%  endfor %}
 {% endfor %}
+warnings: {{ warnings | to_json }}
