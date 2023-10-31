@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231031.1
-  # Mon Oct 30 13:25:30 UTC 2023 -- Tue Oct 31 00:25:30 AEDT 2023
+  # Dante Build Artifact 20231031.2
+  # Mon Oct 30 23:41:50 UTC 2023 -- Tue Oct 31 10:41:50 AEDT 2023
   #
-  # Merge pull request 16591 from dante_artifact_upgrade into master
-  # 372437c91f1903743d4cc89c87474ba3aa0999f9
-  dante_build_id: '749167'
+  # Merged PR 16605: adding cassandra to sync mirror
+  # ed54aa9712462f541cfa032e3ead4132ca157d63
+  dante_build_id: '749611'
 
-  # virgil 20231030.41
-  # Mon Oct 30 11:51:42 UTC 2023 -- Mon Oct 30 22:51:42 AEDT 2023
+  # virgil 20231031.7
+  # Mon Oct 30 23:54:52 UTC 2023 -- Tue Oct 31 10:54:52 AEDT 2023
   #
-  # Merged PR 16413: Set US2 layer-3 apexes to continuous deployment
-  # b43619916390f1c8b9a011eb1b144a3ea7903f08
-  virgil_build_id: '749080'
+  # Merged PR 16389: Minor style fixes to virgil.py
+  # 1e18fafc693772c91caa9eb1e4fe64673ac61a76
+  virgil_build_id: '749633'
