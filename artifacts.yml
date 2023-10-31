@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231031.2
-  # Mon Oct 30 23:41:50 UTC 2023 -- Tue Oct 31 10:41:50 AEDT 2023
+  # Dante Build Artifact 20231031.3
+  # Tue Oct 31 01:24:42 UTC 2023 -- Tue Oct 31 12:24:42 AEDT 2023
   #
-  # Merged PR 16605: adding cassandra to sync mirror
-  # ed54aa9712462f541cfa032e3ead4132ca157d63
-  dante_build_id: '749611'
+  # Merge pull request 16613 from dante_artifact_upgrade into master
+  # c862e844c152af50967acfd39fba7bbd105a0e51
+  dante_build_id: '749738'
 
   # virgil 20231031.7
   # Mon Oct 30 23:54:52 UTC 2023 -- Tue Oct 31 10:54:52 AEDT 2023
