@@ -7,9 +7,9 @@ variables:
   # 8b608e7424c0ccbc4847c0481b59128f797c2c07
   dante_build_id: '751766'
 
-  # virgil 20231102.6
-  # Wed Nov  1 22:24:17 UTC 2023 -- Thu Nov  2 09:24:17 AEDT 2023
+  # virgil 20231102.11
+  # Wed Nov  1 23:36:52 UTC 2023 -- Thu Nov  2 10:36:52 AEDT 2023
   #
-  # Merge pull request 16725 from virgil_python_upgrade into master
-  # 218c65d6350dfe7419c79f9d5a0355219f02e939
-  virgil_build_id: '751735'
+  # Merged PR 16053: Virgil - How-to doc for adding a queue
+  # e6b34e908d36e7fe109dfe9b9c0992f1c62e8168
+  virgil_build_id: '751827'
