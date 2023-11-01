@@ -7,9 +7,9 @@ variables:
   # e554bfce04b8540e81471c78c9a1fb548a3a93ed
   dante_build_id: '750735'
 
-  # virgil 20231101.18
-  # Wed Nov  1 01:48:14 UTC 2023 -- Wed Nov  1 12:48:14 AEDT 2023
+  # virgil 20231101.23
+  # Wed Nov  1 02:10:32 UTC 2023 -- Wed Nov  1 13:10:32 AEDT 2023
   #
-  # Merged PR 16650: Support configuration of no IP for VXLAN at layer 2 apex
-  # c7f99d2e4c0eee2c7342de7818aab6e10d688328
-  virgil_build_id: '750736'
+  # Merged PR 16571: remove apex11/12
+  # f0df83beee4cde6e37ec8e7e29d375f914bd6dcc
+  virgil_build_id: '750777'
