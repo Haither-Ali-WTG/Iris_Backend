@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231101.1
-  # Wed Nov  1 01:47:46 UTC 2023 -- Wed Nov  1 12:47:46 AEDT 2023
+  # Dante Build Artifact 20231101.2
+  # Wed Nov  1 03:08:39 UTC 2023 -- Wed Nov  1 14:08:39 AEDT 2023
   #
-  # Merged PR 16651: If we get no physical_ip for a vlan, do not configure it
-  # e554bfce04b8540e81471c78c9a1fb548a3a93ed
-  dante_build_id: '750735'
+  # Merged PR 16662: Fixed missing variables for test agent hypervisor
+  # 9256f606de501130c74d04c3e54140b13d3a0193
+  dante_build_id: '750854'
 
   # virgil 20231101.26
   # Wed Nov  1 02:42:07 UTC 2023 -- Wed Nov  1 13:42:07 AEDT 2023
