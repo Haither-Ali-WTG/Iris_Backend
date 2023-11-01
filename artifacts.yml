@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231101.5
-  # Wed Nov  1 08:04:03 UTC 2023 -- Wed Nov  1 19:04:03 AEDT 2023
+  # Dante Build Artifact 20231101.6
+  # Wed Nov  1 09:16:29 UTC 2023 -- Wed Nov  1 20:16:29 AEDT 2023
   #
-  # Merged PR 16454: Dante - Turn ip forward off for fabric routing flag
-  # da62705dafd1a2172bc63eec83dff1ef7f61102d
-  dante_build_id: '751163'
+  # Merge pull request 16336 from dante_python_upgrade into master
+  # 50d3a20c78911acce69dbae374058f6939b1d591
+  dante_build_id: '751225'
 
   # virgil 20231101.26
   # Wed Nov  1 02:42:07 UTC 2023 -- Wed Nov  1 13:42:07 AEDT 2023
