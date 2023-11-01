@@ -2,8 +2,8 @@
 list(include('website'))
 ---
 website:
-  name_like: list(include('name_fragment'))
-  starts_with: list(include('name_fragment'))
+  name_regex: include('regex')
+  server_regex: include('regex', required=False)
   health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
   balance: enum('leastconn', 'source', 'first', required=False)
   cookie: any(include('dynamic_cookie_on'), include('dynamic_cookie_off'))
@@ -13,7 +13,6 @@ website:
   maintenance_page: regex(r'^[a-z0-9_]+\.html$', name='sorry page filename', required=False)
   name_suffix: any(const(''), regex('^-[a-z0-9]+$', name='site name suffix'))
 ---
-name_fragment: regex('^[a-z0-9_-]+$', name='site name fragment')
 dynamic_cookie_off:
   enabled: const(False)
 dynamic_cookie_on:

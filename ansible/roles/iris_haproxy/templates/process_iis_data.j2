@@ -15,21 +15,9 @@ clustered_instances:
 {%        else %}
 {%          set website_with_config = [] %}
 {%          for config in website_config %}
-{%            if server is regex(config.get('server_regex', '.*'), ignorecase=True) %}
-{%              for name_like in config.name_like %}
-{%                if name_like in website %}
-{%                  if config not in website_with_config %}
-{%                    set x = website_with_config.append(config) %}
-{%                  endif %}
-{%                endif %}
-{%              endfor %}
-{%              for starts_with in config.starts_with %}
-{%                if (starts_with | length <= website | length) and (starts_with == website[:(starts_with | length)]) %}
-{%                  if config not in website_with_config %}
-{%                    set x = website_with_config.append(config) %}
-{%                  endif %}
-{%                endif %}
-{%              endfor %}
+{%            if server is regex(config.get('server_regex', '.*'), ignorecase=True)
+                 and website is regex(config.name_regex, ignorecase=True) %}
+{%                set x = website_with_config.append(config) %}
 {%            endif %}
 {%          endfor %}
 {%          if website_with_config | length == 0 %}

@@ -57,3 +57,4 @@ haproxy_timeouts_settings:
   tarpit: int(min=1, required=False)
 ---
 port: int(min=1, max=65535, required=False)
+regex: regex('^[ -~]+$', name='regular expression')
