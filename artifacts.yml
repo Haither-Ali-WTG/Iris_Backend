@@ -7,9 +7,9 @@ variables:
   # 50d3a20c78911acce69dbae374058f6939b1d591
   dante_build_id: '751225'
 
-  # virgil 20231101.26
-  # Wed Nov  1 02:42:07 UTC 2023 -- Wed Nov  1 13:42:07 AEDT 2023
+  # virgil 20231101.31
+  # Wed Nov  1 10:35:07 UTC 2023 -- Wed Nov  1 21:35:07 AEDT 2023
   #
-  # Merged PR 16667: Remove fake MAC, use "..."
-  # 12fd6c16870127caca2a9abc49fecf2166ba4b12
-  virgil_build_id: '750821'
+  # Merged PR 16578: Override fabric_routed on a node level
+  # bc0bb42dcad7233b050dea6ef6bfb8b319eda0a7
+  virgil_build_id: '751297'
