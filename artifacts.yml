@@ -7,9 +7,9 @@ variables:
   # c0ac38f99194cf06346b32cd40f6e82cebc59969
   dante_build_id: '751345'
 
-  # virgil 20231101.31
-  # Wed Nov  1 10:35:07 UTC 2023 -- Wed Nov  1 21:35:07 AEDT 2023
+  # virgil 20231102.6
+  # Wed Nov  1 22:24:17 UTC 2023 -- Thu Nov  2 09:24:17 AEDT 2023
   #
-  # Merged PR 16578: Override fabric_routed on a node level
-  # bc0bb42dcad7233b050dea6ef6bfb8b319eda0a7
-  virgil_build_id: '751297'
+  # Merge pull request 16725 from virgil_python_upgrade into master
+  # 218c65d6350dfe7419c79f9d5a0355219f02e939
+  virgil_build_id: '751735'
