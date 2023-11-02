@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231102.1
-  # Wed Nov  1 22:51:28 UTC 2023 -- Thu Nov  2 09:51:28 AEDT 2023
+  # Dante Build Artifact 20231102.2
+  # Thu Nov  2 02:00:47 UTC 2023 -- Thu Nov  2 13:00:47 AEDT 2023
   #
-  # Merge pull request 16731 from dante_python_upgrade into master
-  # 8b608e7424c0ccbc4847c0481b59128f797c2c07
-  dante_build_id: '751766'
+  # Merged PR 16689: WI00433303 - Fail PTM check on missing cables
+  # 672b8ade5e513ccbfff453c58855890fd5fc2392
+  dante_build_id: '751991'
 
   # virgil 20231102.20
   # Thu Nov  2 00:19:19 UTC 2023 -- Thu Nov  2 11:19:19 AEDT 2023
