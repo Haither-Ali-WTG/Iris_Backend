@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231103.1
-  # Thu Nov  2 15:08:00 UTC 2023 -- Fri Nov  3 02:08:00 AEDT 2023
+  # Dante Build Artifact 20231103.2
+  # Thu Nov  2 22:25:50 UTC 2023 -- Fri Nov  3 09:25:50 AEDT 2023
   #
-  # Merge pull request 16822 from dante_artifact_upgrade into master
-  # 29d1d8e3402bdd79ef1ca79ef2bd947f94ecd5c8
-  dante_build_id: '752713'
+  # Merged PR 16759: OOB Interface MTU setting
+  # bf521f0defbdbc3ca65a374242a0ab9ba4b18351
+  dante_build_id: '752984'
 
   # virgil 20231103.2
   # Thu Nov  2 13:54:39 UTC 2023 -- Fri Nov  3 00:54:39 AEDT 2023
