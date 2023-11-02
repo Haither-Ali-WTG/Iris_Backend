@@ -7,9 +7,9 @@ variables:
   # 8b608e7424c0ccbc4847c0481b59128f797c2c07
   dante_build_id: '751766'
 
-  # virgil 20231102.11
-  # Wed Nov  1 23:36:52 UTC 2023 -- Thu Nov  2 10:36:52 AEDT 2023
+  # virgil 20231102.20
+  # Thu Nov  2 00:19:19 UTC 2023 -- Thu Nov  2 11:19:19 AEDT 2023
   #
-  # Merged PR 16053: Virgil - How-to doc for adding a queue
-  # e6b34e908d36e7fe109dfe9b9c0992f1c62e8168
-  virgil_build_id: '751827'
+  # Merged PR 16753: config swp for test server in SY5
+  # 72242fdd399d89e2307be6a61c4134fd52428921
+  virgil_build_id: '751881'
