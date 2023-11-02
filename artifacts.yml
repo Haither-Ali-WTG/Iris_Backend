@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231102.3
-  # Thu Nov  2 03:46:02 UTC 2023 -- Thu Nov  2 14:46:02 AEDT 2023
+  # Dante Build Artifact 20231102.4
+  # Thu Nov  2 05:24:59 UTC 2023 -- Thu Nov  2 16:24:59 AEDT 2023
   #
-  # Merged PR 16760: Typo fix - physical_ip is not none
-  # e4cd9a5f09d05e8148cb3def7ae37df2756ed71a
-  dante_build_id: '752087'
+  # Merge pull request 16739 from dante_artifact_upgrade into master
+  # d2f23da4a78ba8d20b299544fc11e1f8c3e2fecf
+  dante_build_id: '752217'
 
-  # virgil 20231102.25
-  # Thu Nov  2 04:06:25 UTC 2023 -- Thu Nov  2 15:06:25 AEDT 2023
+  # virgil 20231102.30
+  # Thu Nov  2 05:28:28 UTC 2023 -- Thu Nov  2 16:28:28 AEDT 2023
   #
-  # Merged PR 16761: Fine tune OOB MTU field
-  # e0e7f90803381501618d32c047065658fd1cfa5c
-  virgil_build_id: '752118'
+  # Merged PR 16784: Set AU2 leaf switches to on demand deployment
+  # 0323e6cd29cdb52f8ff15571a861fc1338b2eec9
+  virgil_build_id: '752219'
