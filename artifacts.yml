@@ -7,9 +7,9 @@ variables:
   # e4cd9a5f09d05e8148cb3def7ae37df2756ed71a
   dante_build_id: '752087'
 
-  # virgil 20231102.20
-  # Thu Nov  2 00:19:19 UTC 2023 -- Thu Nov  2 11:19:19 AEDT 2023
+  # virgil 20231102.25
+  # Thu Nov  2 04:06:25 UTC 2023 -- Thu Nov  2 15:06:25 AEDT 2023
   #
-  # Merged PR 16753: config swp for test server in SY5
-  # 72242fdd399d89e2307be6a61c4134fd52428921
-  virgil_build_id: '751881'
+  # Merged PR 16761: Fine tune OOB MTU field
+  # e0e7f90803381501618d32c047065658fd1cfa5c
+  virgil_build_id: '752118'
