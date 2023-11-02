@@ -7,9 +7,9 @@ variables:
   # 4fc68ba5a1528bbc8fe1269ef61ddf77fc97dd11
   dante_build_id: '752566'
 
-  # virgil 20231102.32
-  # Thu Nov  2 05:46:28 UTC 2023 -- Thu Nov  2 16:46:28 AEDT 2023
+  # virgil 20231103.2
+  # Thu Nov  2 13:54:39 UTC 2023 -- Fri Nov  3 00:54:39 AEDT 2023
   #
-  # Merged PR 16783: Set US2 layer-3 apexes to on demand deployment
-  # 38a518922012a653d8fd65a2404aefeb605ec6a7
-  virgil_build_id: '752253'
+  # Merged PR 16733: Update US2 CORP DC IPs
+  # 8439be934863ce9e38279acceea0c863b021aa73
+  virgil_build_id: '752654'
