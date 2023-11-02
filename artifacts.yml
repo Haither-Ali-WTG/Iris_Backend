@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231102.7
-  # Thu Nov  2 12:03:47 UTC 2023 -- Thu Nov  2 23:03:47 AEDT 2023
+  # Dante Build Artifact 20231103.1
+  # Thu Nov  2 15:08:00 UTC 2023 -- Fri Nov  3 02:08:00 AEDT 2023
   #
-  # Merged PR 16754: OOB DHCP server interface MTU setting
-  # 4fc68ba5a1528bbc8fe1269ef61ddf77fc97dd11
-  dante_build_id: '752566'
+  # Merge pull request 16822 from dante_artifact_upgrade into master
+  # 29d1d8e3402bdd79ef1ca79ef2bd947f94ecd5c8
+  dante_build_id: '752713'
 
   # virgil 20231103.2
   # Thu Nov  2 13:54:39 UTC 2023 -- Fri Nov  3 00:54:39 AEDT 2023
