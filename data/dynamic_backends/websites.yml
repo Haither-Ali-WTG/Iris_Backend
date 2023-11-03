@@ -44,3 +44,13 @@
   cookie:
     enabled: false
   name_suffix: ''
+
+- name_regex: '\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp'
+  encryption: false
+  health_check: "/ready"
+  port: 80
+  balance: first
+  cookie:
+    enabled: false
+  name_suffix: ''
