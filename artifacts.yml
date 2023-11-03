@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231103.5
-  # Fri Nov  3 02:12:59 UTC 2023 -- Fri Nov  3 13:12:59 AEDT 2023
+  # Dante Build Artifact 20231103.6
+  # Fri Nov  3 04:33:42 UTC 2023 -- Fri Nov  3 15:33:42 AEDT 2023
   #
-  # Merge pull request 16837 from dante_python_upgrade into master
-  # 52b5387e90e415d54415db93d4bd7e0c602d6e23
-  dante_build_id: '753279'
+  # Merge pull request 16876 from dante_artifact_upgrade into master
+  # bc5c87b293eebb73ab9d39a4b13b981e31c63e68
+  dante_build_id: '753489'
 
-  # virgil 20231103.21
-  # Fri Nov  3 03:26:16 UTC 2023 -- Fri Nov  3 14:26:16 AEDT 2023
+  # virgil 20231103.24
+  # Fri Nov  3 04:39:59 UTC 2023 -- Fri Nov  3 15:39:59 AEDT 2023
   #
-  # Merged PR 16879: updateSY5apexIP
-  # 21884bb365ffe8667391ee9f880c97e1b8b970de
-  virgil_build_id: '753401'
+  # Merge pull request 16830 from virgil_python_upgrade into master
+  # 119138bae065853223d82a87b93b065fd333bec9
+  virgil_build_id: '753501'
