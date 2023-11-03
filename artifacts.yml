@@ -7,9 +7,9 @@ variables:
   # 52b5387e90e415d54415db93d4bd7e0c602d6e23
   dante_build_id: '753279'
 
-  # virgil 20231103.15
-  # Fri Nov  3 02:47:01 UTC 2023 -- Fri Nov  3 13:47:01 AEDT 2023
+  # virgil 20231103.21
+  # Fri Nov  3 03:26:16 UTC 2023 -- Fri Nov  3 14:26:16 AEDT 2023
   #
-  # Merged PR 16873: update mtu on SY5 switches
-  # f38d9145398da0e6baea452ea142c5e152483e39
-  virgil_build_id: '753356'
+  # Merged PR 16879: updateSY5apexIP
+  # 21884bb365ffe8667391ee9f880c97e1b8b970de
+  virgil_build_id: '753401'
