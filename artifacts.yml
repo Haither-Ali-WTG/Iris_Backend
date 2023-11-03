@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231103.3
-  # Thu Nov  2 23:48:11 UTC 2023 -- Fri Nov  3 10:48:11 AEDT 2023
+  # Dante Build Artifact 20231103.4
+  # Fri Nov  3 00:52:47 UTC 2023 -- Fri Nov  3 11:52:47 AEDT 2023
   #
-  # Merged PR 16823: Jinja Line eater syntax fix dhcp service
-  # f4bb33fcf6fefc189aa7e26e3114df1b4fee73a8
-  dante_build_id: '753110'
+  # Merge pull request 16856 from dante_artifact_upgrade into master
+  # 0e0d85c868f2d547ba16b5c4ecc4cd7cc2cbe102
+  dante_build_id: '753188'
 
   # virgil 20231103.7
   # Thu Nov  2 23:43:43 UTC 2023 -- Fri Nov  3 10:43:43 AEDT 2023
