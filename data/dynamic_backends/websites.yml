@@ -62,7 +62,7 @@
   name_suffix: ''
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  server_regex: '^au2sp*'
+  server_regex: '^au2sp'
   encryption: false
   health_check: "/ready"
   port: 80
