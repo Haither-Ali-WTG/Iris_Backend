@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231103.2
-  # Thu Nov  2 22:25:50 UTC 2023 -- Fri Nov  3 09:25:50 AEDT 2023
+  # Dante Build Artifact 20231103.3
+  # Thu Nov  2 23:48:11 UTC 2023 -- Fri Nov  3 10:48:11 AEDT 2023
   #
-  # Merged PR 16759: OOB Interface MTU setting
-  # bf521f0defbdbc3ca65a374242a0ab9ba4b18351
-  dante_build_id: '752984'
+  # Merged PR 16823: Jinja Line eater syntax fix dhcp service
+  # f4bb33fcf6fefc189aa7e26e3114df1b4fee73a8
+  dante_build_id: '753110'
 
-  # virgil 20231103.2
-  # Thu Nov  2 13:54:39 UTC 2023 -- Fri Nov  3 00:54:39 AEDT 2023
+  # virgil 20231103.7
+  # Thu Nov  2 23:43:43 UTC 2023 -- Fri Nov  3 10:43:43 AEDT 2023
   #
-  # Merged PR 16733: Update US2 CORP DC IPs
-  # 8439be934863ce9e38279acceea0c863b021aa73
-  virgil_build_id: '752654'
+  # Merged PR 16845: mtu change on SY5 switches
+  # 49f3aac6ca43f6164261e218d18cedada1dfd0cf
+  virgil_build_id: '753102'
