@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231103.7
-  # Fri Nov  3 05:43:21 UTC 2023 -- Fri Nov  3 16:43:21 AEDT 2023
+  # Dante Build Artifact 20231105.1
+  # Sun Nov  5 02:31:00 UTC 2023 -- Sun Nov  5 13:31:00 AEDT 2023
   #
-  # Merged PR 16866: WI00673258: Start Ubuntu node from latest ISO without virgil usage
-  # f71aa2cbb9f6022e26af6a28b7119aab91f2ce33
-  dante_build_id: '753597'
+  # Merged PR 16918: Upgrade ruamel.yaml from withdrawn/missing version
+  # 1ac78a77158058b1a2f257e6e0a4ce85e01e2dc1
+  dante_build_id: '755171'
 
-  # virgil 20231103.24
-  # Fri Nov  3 04:39:59 UTC 2023 -- Fri Nov  3 15:39:59 AEDT 2023
+  # virgil 20231104.1
+  # Sat Nov  4 07:28:55 UTC 2023 -- Sat Nov  4 18:28:55 AEDT 2023
   #
-  # Merge pull request 16830 from virgil_python_upgrade into master
-  # 119138bae065853223d82a87b93b065fd333bec9
-  virgil_build_id: '753501'
+  # Merged PR 16915: Adding swp config for HyperV srever in Rack101
+  # d3ec8017b6122de0b16b2fe663d4bff86c82086e
+  virgil_build_id: '754526'
