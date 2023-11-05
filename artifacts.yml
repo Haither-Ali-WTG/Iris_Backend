@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231105.1
-  # Sun Nov  5 02:31:00 UTC 2023 -- Sun Nov  5 13:31:00 AEDT 2023
+  # Dante Build Artifact 20231105.2
+  # Sun Nov  5 04:06:46 UTC 2023 -- Sun Nov  5 15:06:46 AEDT 2023
   #
-  # Merged PR 16918: Upgrade ruamel.yaml from withdrawn/missing version
-  # 1ac78a77158058b1a2f257e6e0a4ce85e01e2dc1
-  dante_build_id: '755171'
+  # Merge pull request 16923 from dante_artifact_upgrade into master
+  # 1b6016eb0bc1ba7cdca6809c69600790c2f1c110
+  dante_build_id: '755253'
 
-  # virgil 20231104.1
-  # Sat Nov  4 07:28:55 UTC 2023 -- Sat Nov  4 18:28:55 AEDT 2023
+  # virgil 20231105.2
+  # Sun Nov  5 02:40:57 UTC 2023 -- Sun Nov  5 13:40:57 AEDT 2023
   #
-  # Merged PR 16915: Adding swp config for HyperV srever in Rack101
-  # d3ec8017b6122de0b16b2fe663d4bff86c82086e
-  virgil_build_id: '754526'
+  # Merged PR 16894: add VMware ports apex65/66
+  # 713412b7a7e55cc66c48b1ea54e0ee0d02f3190a
+  virgil_build_id: '755184'
