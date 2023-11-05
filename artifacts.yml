@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231105.2
-  # Sun Nov  5 04:06:46 UTC 2023 -- Sun Nov  5 15:06:46 AEDT 2023
+  # Dante Build Artifact 20231106.1
+  # Sun Nov  5 22:40:43 UTC 2023 -- Mon Nov  6 09:40:43 AEDT 2023
   #
-  # Merge pull request 16923 from dante_artifact_upgrade into master
-  # 1b6016eb0bc1ba7cdca6809c69600790c2f1c110
-  dante_build_id: '755253'
+  # Merge pull request 16932 from dante_python_upgrade into master
+  # 5ce3fb87387a18708346fdbad4c5904a7997594a
+  dante_build_id: '755928'
 
-  # virgil 20231105.2
-  # Sun Nov  5 02:40:57 UTC 2023 -- Sun Nov  5 13:40:57 AEDT 2023
+  # virgil 20231106.5
+  # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
   #
-  # Merged PR 16894: add VMware ports apex65/66
-  # 713412b7a7e55cc66c48b1ea54e0ee0d02f3190a
-  virgil_build_id: '755184'
+  # Merged PR 16933: configure vmware ports apex67/68
+  # 19849a67c6b290b4db333b3377edfe435e0dca59
+  virgil_build_id: '755942'
