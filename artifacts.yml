@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231106.3
-  # Mon Nov  6 03:55:34 UTC 2023 -- Mon Nov  6 14:55:34 AEDT 2023
+  # Dante Build Artifact 20231106.4
+  # Mon Nov  6 05:18:05 UTC 2023 -- Mon Nov  6 16:18:05 AEDT 2023
   #
-  # Merged PR 16948: WI00433303 - Fail PTM check on missing cables (Part II)
-  # aa59e2f4feee03f8e39a4766509e89befc4cf117
-  dante_build_id: '756172'
+  # Merged PR 16896: DNS Packetbeat deployment
+  # 697ac67356d5d1d7c6ec0d4c2e09cb73229566e6
+  dante_build_id: '756278'
 
   # virgil 20231106.5
   # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
