@@ -1,3 +1,4 @@
+---
 - name: Create haproxy user
   user:
     name: haproxy
@@ -8,7 +9,7 @@
   become: yes
 
 - name: Retrieve subuid file
-  read_csv:
+  community.general.read_csv:
     path: '/etc/subuid'
     delimiter: ":"
     fieldnames: [user, subuid, count]
@@ -17,7 +18,7 @@
   register: subuid_file
 
 - name: Retrieve subgid file
-  read_csv:
+  community.general.read_csv:
     path: '/etc/subgid'
     delimiter: ":"
     fieldnames: [user, subgid, count]
