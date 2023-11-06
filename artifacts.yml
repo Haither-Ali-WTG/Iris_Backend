@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231106.4
-  # Mon Nov  6 05:18:05 UTC 2023 -- Mon Nov  6 16:18:05 AEDT 2023
+  # Dante Build Artifact 20231106.5
+  # Mon Nov  6 06:48:10 UTC 2023 -- Mon Nov  6 17:48:10 AEDT 2023
   #
-  # Merged PR 16896: DNS Packetbeat deployment
-  # 697ac67356d5d1d7c6ec0d4c2e09cb73229566e6
-  dante_build_id: '756278'
+  # Merged PR 16960: Fixed error when building ISO and missing udev rules
+  # 9986d7844c4e95492768ee2d9f002ac06604c75a
+  dante_build_id: '756370'
 
   # virgil 20231106.5
   # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
