@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231106.5
-  # Mon Nov  6 06:48:10 UTC 2023 -- Mon Nov  6 17:48:10 AEDT 2023
+  # Dante Build Artifact 20231106.6
+  # Mon Nov  6 09:33:34 UTC 2023 -- Mon Nov  6 20:33:34 AEDT 2023
   #
-  # Merged PR 16960: Fixed error when building ISO and missing udev rules
-  # 9986d7844c4e95492768ee2d9f002ac06604c75a
-  dante_build_id: '756370'
+  # Merged PR 16952: Add options to container runner in support of namespaces
+  # bffac7e53fa5be7607c16373f15f801f352aa306
+  dante_build_id: '756501'
 
   # virgil 20231106.5
   # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
