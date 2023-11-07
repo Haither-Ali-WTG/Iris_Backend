@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231107.3
-  # Tue Nov  7 07:05:21 UTC 2023 -- Tue Nov  7 18:05:21 AEDT 2023
+  # Dante Build Artifact 20231107.4
+  # Tue Nov  7 08:58:22 UTC 2023 -- Tue Nov  7 19:58:22 AEDT 2023
   #
-  # Merge pull request 17033 from dante_artifact_upgrade into master
-  # 95c7c184339449e725e06e2a348a21998293ec00
-  dante_build_id: '757547'
+  # Merged PR 17016: No PTM on Iris nodes
+  # 45982a5724284e5393c56eea41e6b759066c4618
+  dante_build_id: '757661'
 
-  # virgil 20231107.20
-  # Tue Nov  7 05:30:14 UTC 2023 -- Tue Nov  7 16:30:14 AEDT 2023
+  # virgil 20231107.28
+  # Tue Nov  7 08:51:45 UTC 2023 -- Tue Nov  7 19:51:45 AEDT 2023
   #
-  # Merged PR 17034: updateapex71to74mtu
-  # a2d166e5d69264eb62010bf17e118e353f49b261
-  virgil_build_id: '757436'
+  # Merged PR 17004: Adding SY5 new HyperV rack101 first two entries
+  # 6fad728acaf400474d81247c3354159d9d1d66fb
+  virgil_build_id: '757650'
