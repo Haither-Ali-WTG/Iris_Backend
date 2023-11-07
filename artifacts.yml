@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231106.6
-  # Mon Nov  6 09:33:34 UTC 2023 -- Mon Nov  6 20:33:34 AEDT 2023
+  # Dante Build Artifact 20231107.1
+  # Tue Nov  7 00:13:34 UTC 2023 -- Tue Nov  7 11:13:34 AEDT 2023
   #
-  # Merged PR 16952: Add options to container runner in support of namespaces
-  # bffac7e53fa5be7607c16373f15f801f352aa306
-  dante_build_id: '756501'
+  # Merged PR 16902: Dante - Clean up service names
+  # 24c32b32a8a65d16cdaed722c5eed47b251f0938
+  dante_build_id: '757087'
 
   # virgil 20231106.5
   # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
