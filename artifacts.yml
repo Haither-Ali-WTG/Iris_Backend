@@ -7,9 +7,9 @@ variables:
   # 6fe3c54b071d19f7b65fbaeac58c522647863250
   dante_build_id: '757264'
 
-  # virgil 20231107.4
-  # Tue Nov  7 01:16:11 UTC 2023 -- Tue Nov  7 12:16:11 AEDT 2023
+  # virgil 20231107.17
+  # Tue Nov  7 05:11:15 UTC 2023 -- Tue Nov  7 16:11:15 AEDT 2023
   #
-  # Merged PR 17005: addapex71to74
-  # fda5d5a700ec69b9130ac5fd14b3f2dae2248f37
-  virgil_build_id: '757175'
+  # Merged PR 17027: Removes fabric routing capability for L2 VXLAN backed VLANs on SY5 Fabric switches
+  # c5aa40f2302a75d1e7aba32acbe34614fc8b398e
+  virgil_build_id: '757415'
