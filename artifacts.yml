@@ -7,9 +7,9 @@ variables:
   # 24c32b32a8a65d16cdaed722c5eed47b251f0938
   dante_build_id: '757087'
 
-  # virgil 20231106.5
-  # Sun Nov  5 22:59:22 UTC 2023 -- Mon Nov  6 09:59:22 AEDT 2023
+  # virgil 20231107.4
+  # Tue Nov  7 01:16:11 UTC 2023 -- Tue Nov  7 12:16:11 AEDT 2023
   #
-  # Merged PR 16933: configure vmware ports apex67/68
-  # 19849a67c6b290b4db333b3377edfe435e0dca59
-  virgil_build_id: '755942'
+  # Merged PR 17005: addapex71to74
+  # fda5d5a700ec69b9130ac5fd14b3f2dae2248f37
+  virgil_build_id: '757175'
