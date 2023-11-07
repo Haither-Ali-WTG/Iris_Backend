@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231107.4
-  # Tue Nov  7 08:58:22 UTC 2023 -- Tue Nov  7 19:58:22 AEDT 2023
+  # Dante Build Artifact 20231107.5
+  # Tue Nov  7 10:26:28 UTC 2023 -- Tue Nov  7 21:26:28 AEDT 2023
   #
-  # Merged PR 17016: No PTM on Iris nodes
-  # 45982a5724284e5393c56eea41e6b759066c4618
-  dante_build_id: '757661'
+  # Merge pull request 17051 from dante_artifact_upgrade into master
+  # 99ecc6ef1c589e3221d8aaa0768556cc37b353cf
+  dante_build_id: '757743'
 
   # virgil 20231107.28
   # Tue Nov  7 08:51:45 UTC 2023 -- Tue Nov  7 19:51:45 AEDT 2023
