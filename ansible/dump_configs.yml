@@ -25,6 +25,7 @@
     - name: Set dummy values
       set_fact:
         haproxy_user: ~
+        haproxy_subuser: ~
 
 - name: Dump the configs
   hosts: individual_instances
