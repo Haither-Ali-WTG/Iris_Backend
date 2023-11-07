@@ -63,14 +63,9 @@
       include_role:
         name: system_parameters
 
-    - name: Create haproxy user
-      user:
-        name: haproxy
-        comment: HAProxy user
-        create_home: no
-        password_lock: yes
-      register: haproxy_user
-      become: yes
+    - name: Create haproxy user and retrieve subuser info
+      include_role:
+        name: haproxy_user
 
 - name: Setup the individual instances
   hosts: individual_instances

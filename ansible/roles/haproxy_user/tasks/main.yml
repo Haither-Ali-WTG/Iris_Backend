@@ -1,0 +1,36 @@
+---
+- name: Create haproxy user
+  user:
+    name: haproxy
+    comment: HAProxy user
+    create_home: no
+    password_lock: yes
+  register: haproxy_user
+  become: yes
+
+- name: Retrieve subuid file
+  community.general.read_csv:
+    path: '/etc/subuid'
+    delimiter: ":"
+    fieldnames: [user, subuid, count]
+    key: user
+    strict: yes
+  register: subuid_file
+
+- name: Retrieve subgid file
+  community.general.read_csv:
+    path: '/etc/subgid'
+    delimiter: ":"
+    fieldnames: [user, subgid, count]
+    key: user
+    strict: yes
+  register: subgid_file
+
+- name: Calculate mapped information
+  vars:
+    subuid_offset: "{{ subuid_file.dict.haproxy.subuid }}"
+    subgid_offset: "{{ subgid_file.dict.haproxy.subgid }}"
+  set_fact:
+    haproxy_subuser:
+      subuid: "{{ subuid_offset | int + haproxy_user.uid }}"
+      subgid: "{{ subgid_offset | int + haproxy_user.group }}"
