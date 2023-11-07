@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231107.1
-  # Tue Nov  7 00:13:34 UTC 2023 -- Tue Nov  7 11:13:34 AEDT 2023
+  # Dante Build Artifact 20231107.2
+  # Tue Nov  7 02:46:33 UTC 2023 -- Tue Nov  7 13:46:33 AEDT 2023
   #
-  # Merged PR 16902: Dante - Clean up service names
-  # 24c32b32a8a65d16cdaed722c5eed47b251f0938
-  dante_build_id: '757087'
+  # Merge pull request 17012 from dante_artifact_upgrade into master
+  # 6fe3c54b071d19f7b65fbaeac58c522647863250
+  dante_build_id: '757264'
 
   # virgil 20231107.4
   # Tue Nov  7 01:16:11 UTC 2023 -- Tue Nov  7 12:16:11 AEDT 2023
