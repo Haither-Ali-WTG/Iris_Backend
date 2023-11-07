@@ -7,9 +7,9 @@ variables:
   # 99ecc6ef1c589e3221d8aaa0768556cc37b353cf
   dante_build_id: '757743'
 
-  # virgil 20231107.28
-  # Tue Nov  7 08:51:45 UTC 2023 -- Tue Nov  7 19:51:45 AEDT 2023
+  # virgil 20231108.1
+  # Tue Nov  7 23:24:35 UTC 2023 -- Wed Nov  8 10:24:35 AEDT 2023
   #
-  # Merged PR 17004: Adding SY5 new HyperV rack101 first two entries
-  # 6fad728acaf400474d81247c3354159d9d1d66fb
-  virgil_build_id: '757650'
+  # Merged PR 17058: add breakout port conf apex
+  # 1d63d977b730137ae84692e91b6a49c2d556e9c4
+  virgil_build_id: '758224'
