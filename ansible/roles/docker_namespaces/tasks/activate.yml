@@ -3,6 +3,7 @@
   command: >-
     {{ engine }} ps --format="{{ '{{.Names}}' }}"
   changed_when: false
+  become: yes
   register: docker_ps
 
 - name: Check that no critical containers are running
