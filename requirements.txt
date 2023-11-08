@@ -4,16 +4,16 @@
 #
 #    pip-compile requirements.in
 #
-ansible==8.5.0
+ansible==8.6.0
     # via -r requirements.in
 ansible-compat==4.1.10
     # via ansible-lint
-ansible-core==2.15.5
+ansible-core==2.15.6
     # via
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.21.1
+ansible-lint==6.22.0
     # via -r requirements.in
 argcomplete==3.1.4
     # via yq
@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.29.78
+awscli==1.29.79
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.31.78
+botocore==1.31.79
     # via
     #   awscli
     #   s3transfer
@@ -187,7 +187,7 @@ rpds-py==0.12.0
     #   referencing
 rsa==4.7.2
     # via awscli
-ruamel-yaml==0.17.40
+ruamel-yaml==0.18.5
     # via
     #   ansible-lint
     #   safety
