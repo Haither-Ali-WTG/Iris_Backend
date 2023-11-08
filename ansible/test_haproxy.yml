@@ -40,8 +40,9 @@
     - name: Download qcow2 required for simulation
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
-        s3 cp {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
+        s3 sync {{ qcow2_ceph_path }} {{ images_folder }}/
         --cli-read-timeout {{ s3_read_timeout }}
+        --exclude "*" --include {{ item }}
       loop:
         - "{{ rhel_hypervisor_image }}"
         - "{{ ubuntu_hypervisor_image }}"
@@ -79,11 +80,11 @@
         connect_timeout: 5
         timeout: 600
 
-- name: Deploy tests on simulated machines
-  import_playbook: deploy_tests.yml
-
 - name: Deploy haproxy on simulated machines
   import_playbook: deploy_haproxy.yml
+
+- name: Deploy tests on simulated machines
+  import_playbook: deploy_tests.yml
 
 - name: Check haproxy
   import_playbook: check_haproxy.yml
