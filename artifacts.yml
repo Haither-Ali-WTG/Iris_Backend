@@ -7,9 +7,9 @@ variables:
   # 412bb3062fe1d40e0fb8cc82ddf2ce667aeeade5
   dante_build_id: '758559'
 
-  # virgil 20231108.1
-  # Tue Nov  7 23:24:35 UTC 2023 -- Wed Nov  8 10:24:35 AEDT 2023
+  # virgil 20231108.4
+  # Wed Nov  8 04:51:58 UTC 2023 -- Wed Nov  8 15:51:58 AEDT 2023
   #
-  # Merged PR 17058: add breakout port conf apex
-  # 1d63d977b730137ae84692e91b6a49c2d556e9c4
-  virgil_build_id: '758224'
+  # Merged PR 17106: add breakout config to apex73-74
+  # 2686d33aed86964ab49e7ff42fcdae0bd6f2085a
+  virgil_build_id: '758600'
