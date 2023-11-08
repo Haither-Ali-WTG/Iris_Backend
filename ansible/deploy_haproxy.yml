@@ -55,6 +55,10 @@
         tasks_from: setup.yml
       when: not simulation
 
+    - name: Setup docker namespaces
+      include_role:
+        name: docker_namespaces
+
     - name: Setup rsyslog for Iris
       include_role:
         name: iris_rsyslog
