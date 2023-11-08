@@ -54,6 +54,11 @@
         name: container_runner
         tasks_from: setup.yml
 
+    - name: Set container engine
+      include_role:
+        name: container_runner
+        tasks_from: define_engine.yml
+
     - name: Setup rsyslog for Iris
       include_role:
         name: iris_rsyslog
