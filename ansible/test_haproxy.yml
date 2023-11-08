@@ -80,11 +80,11 @@
         connect_timeout: 5
         timeout: 600
 
-- name: Deploy tests on simulated machines
-  import_playbook: deploy_tests.yml
-
 - name: Deploy haproxy on simulated machines
   import_playbook: deploy_haproxy.yml
+
+- name: Deploy tests on simulated machines
+  import_playbook: deploy_tests.yml
 
 - name: Check haproxy
   import_playbook: check_haproxy.yml
