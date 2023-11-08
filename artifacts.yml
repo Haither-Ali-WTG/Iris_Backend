@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231107.5
-  # Tue Nov  7 10:26:28 UTC 2023 -- Tue Nov  7 21:26:28 AEDT 2023
+  # Dante Build Artifact 20231108.2
+  # Wed Nov  8 01:02:04 UTC 2023 -- Wed Nov  8 12:02:04 AEDT 2023
   #
-  # Merge pull request 17051 from dante_artifact_upgrade into master
-  # 99ecc6ef1c589e3221d8aaa0768556cc37b353cf
-  dante_build_id: '757743'
+  # Merged PR 16953: WI00673258: Prepare upgraded Ubuntu qcow2 image for tests and upload
+  # e92af9ae8d570c3f690ff6841ff9df704d94098f
+  dante_build_id: '758335'
 
   # virgil 20231108.1
   # Tue Nov  7 23:24:35 UTC 2023 -- Wed Nov  8 10:24:35 AEDT 2023
