@@ -40,7 +40,7 @@
     - name: Download qcow2 required for simulation
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
-        s3 cp {{ qcow2_ceph_path }}/{{ item }} {{ images_folder }}/
+        s3 cp {{ qcow2_ceph_path }}{{ item }} {{ images_folder }}/
         --cli-read-timeout {{ s3_read_timeout }}
       loop:
         - "{{ rhel_hypervisor_image }}"
