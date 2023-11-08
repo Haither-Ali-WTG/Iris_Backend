@@ -55,10 +55,6 @@
         tasks_from: setup.yml
       when: not simulation
 
-    - name: Setup docker namespaces
-      include_role:
-        name: docker_namespaces
-
     - name: Setup rsyslog for Iris
       include_role:
         name: iris_rsyslog
@@ -75,6 +71,10 @@
         password_lock: yes
       register: haproxy_user
       become: yes
+
+    - name: Setup docker namespaces
+      include_role:
+        name: docker_namespaces
 
 - name: Setup the individual instances
   hosts: individual_instances
