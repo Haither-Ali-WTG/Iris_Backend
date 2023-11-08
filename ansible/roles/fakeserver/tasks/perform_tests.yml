@@ -13,7 +13,7 @@
       Host: "{{ item.host }}"
     validate_certs: 'yes'
     status_code: "{{ item.status }}"
-  retries: "{{ 20 if index == 0 else 5 }}"
+  retries: "{{ 50 if index == 0 else 5 }}"
   delay: 1
   loop: "{{ tests }}"
   loop_control:
