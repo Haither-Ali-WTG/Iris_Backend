@@ -1,0 +1,32 @@
+---
+- name: List containers
+  command: >-
+    {{ engine }} ps --format="{{ '{{.Names}}' }}"
+  changed_when: false
+  become: yes
+  register: docker_ps
+
+- name: Check that no critical containers are running
+  vars:
+    noncritical_containers:
+      - ptmctl
+    critical_containers: >-
+      {{ docker_ps.stdout_lines | difference(noncritical_containers) }}
+  assert:
+    that: not critical_containers
+    quiet: "{{ not critical_containers }}"
+    msg: "Cannot restart docker, {{ critical_containers | join(', ') }} running"
+
+- name: Copy the daemon config file
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    mode: a=r
+  become: yes
+
+- name: Immediately restart docker
+  service:
+    name: docker
+    state: restarted
+  become: yes

@@ -1,0 +1,13 @@
+---
+- name: Check the daemon config file
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    mode: a=r
+  check_mode: yes
+  register: result
+
+- name: Activate docker namespaces
+  include_tasks: activate.yml
+  when: result is changed  # noqa: no-handler

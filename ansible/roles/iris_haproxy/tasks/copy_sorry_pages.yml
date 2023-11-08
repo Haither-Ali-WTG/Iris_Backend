@@ -4,7 +4,7 @@
     src: "../static_backends/sorry_pages/{{ item.file }}"
     dest: "{{ individual_instance_dir }}/etc/sorry_pages/"
     mode: a=r
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   become: yes
   loop: "{{ sorry_pages_list }}"

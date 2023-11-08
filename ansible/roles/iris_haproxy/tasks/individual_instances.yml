@@ -7,8 +7,8 @@
     dest: "{{ individual_instance_dir }}/{{ item.path }}"
     state: directory
     mode: "{{ item.mode }}"
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   become: yes
   loop:
     - path: ''
@@ -34,8 +34,8 @@
     path: "{{ individual_instance_dir }}/run/{{ item }}"
     state: touch
     mode: u=rw,go=r
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   loop:
     - global-state
     - haproxy.sock
@@ -47,8 +47,8 @@
     src: haproxy.cfg.j2
     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
     mode: u=r,go=
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   become: yes
   # TODO: validate
   register: haproxy_config
@@ -58,8 +58,8 @@
     src: sorry.http.j2
     dest: "{{ individual_instance_dir }}/etc/sorry.http"
     mode: u=r,go=
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   become: yes
   # TODO: validate
   register: sorry_page
@@ -69,8 +69,8 @@
     src: "certificates/{{ item }}.pem"
     dest: "{{ individual_instance_dir }}/etc/certs/"
     mode: ug=r,o=
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
   become: yes
   loop: "{{ certificates | default([]) }}"
   no_log: true
