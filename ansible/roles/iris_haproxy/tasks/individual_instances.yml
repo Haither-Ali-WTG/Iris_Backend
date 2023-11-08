@@ -81,8 +81,8 @@
     src: apparmor_profile.j2
     dest: "{{ individual_instance_dir }}/apparmor_profile"
     mode: u=r,go=
-    owner: "{{ user.uid }}"
-    group: "{{ user.group }}"
+    owner: root
+    group: root
     validate: apparmor_parser -Q %s
   become: yes
   register: apparmor_profile_config
