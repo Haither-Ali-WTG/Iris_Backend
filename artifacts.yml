@@ -7,9 +7,9 @@ variables:
   # 422dbb5b739b84afe3d98ba2b9dab2f7319b05d8
   dante_build_id: '760051'
 
-  # virgil 20231109.22
-  # Thu Nov  9 05:37:08 UTC 2023 -- Thu Nov  9 16:37:08 AEDT 2023
+  # virgil 20231110.7
+  # Thu Nov  9 18:04:03 UTC 2023 -- Fri Nov 10 05:04:03 AEDT 2023
   #
-  # Merged PR 17167: Config Rack102 Apex65,66 for HyperV hosts:
-  # c82a9cadcceea23ad93911be0c6e8a2ddb575b5a
-  virgil_build_id: '759755'
+  # Merged PR 16513: Updated teardowns.yaml
+  # 90e39441c55da4ab4db3cc94f7ecf864a2d9bd17
+  virgil_build_id: '760328'
