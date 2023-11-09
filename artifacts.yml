@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231109.6
-  # Thu Nov  9 08:50:10 UTC 2023 -- Thu Nov  9 19:50:10 AEDT 2023
+  # Dante Build Artifact 20231109.7
+  # Thu Nov  9 11:35:14 UTC 2023 -- Thu Nov  9 22:35:14 AEDT 2023
   #
-  # Merged PR 17166: WI00673258: Test qcow2 image with full dante and minos run
-  # e600ab3c9963583c2dda91ab5d951565afa4757e
-  dante_build_id: '759931'
+  # Merge pull request 17176 from dante_artifact_upgrade into master
+  # 422dbb5b739b84afe3d98ba2b9dab2f7319b05d8
+  dante_build_id: '760051'
 
   # virgil 20231109.22
   # Thu Nov  9 05:37:08 UTC 2023 -- Thu Nov  9 16:37:08 AEDT 2023
