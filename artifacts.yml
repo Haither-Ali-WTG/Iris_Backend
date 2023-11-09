@@ -7,9 +7,9 @@ variables:
   # 422dbb5b739b84afe3d98ba2b9dab2f7319b05d8
   dante_build_id: '760051'
 
-  # virgil 20231110.7
-  # Thu Nov  9 18:04:03 UTC 2023 -- Fri Nov 10 05:04:03 AEDT 2023
+  # virgil 20231110.13
+  # Thu Nov  9 22:27:36 UTC 2023 -- Fri Nov 10 09:27:36 AEDT 2023
   #
-  # Merged PR 16513: Updated teardowns.yaml
-  # 90e39441c55da4ab4db3cc94f7ecf864a2d9bd17
-  virgil_build_id: '760328'
+  # Merged PR 17203: add vlan1031 for Flashblades apex73/74
+  # 089a3525c3a572b6071440b2db24f2568dbe47a9
+  virgil_build_id: '760500'
