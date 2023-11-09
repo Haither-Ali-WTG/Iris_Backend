@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.29.80
+awscli==1.29.82
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.31.80
+botocore==1.31.82
     # via
     #   awscli
     #   s3transfer
@@ -242,7 +242,7 @@ xmltodict==0.13.0
     #   yq
 yamale==4.0.4
     # via -r requirements.in
-yamllint==1.32.0
+yamllint==1.33.0
     # via
     #   -r requirements.in
     #   ansible-lint
