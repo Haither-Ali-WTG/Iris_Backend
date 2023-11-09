@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231109.5
-  # Thu Nov  9 06:17:57 UTC 2023 -- Thu Nov  9 17:17:57 AEDT 2023
+  # Dante Build Artifact 20231109.6
+  # Thu Nov  9 08:50:10 UTC 2023 -- Thu Nov  9 19:50:10 AEDT 2023
   #
-  # Merged PR 17015: WI00433303 - Exclude maintenance nodes from ptm cable check.
-  # af9377b59d85bc7f5b9973f239c26be1ae84e8ea
-  dante_build_id: '759794'
+  # Merged PR 17166: WI00673258: Test qcow2 image with full dante and minos run
+  # e600ab3c9963583c2dda91ab5d951565afa4757e
+  dante_build_id: '759931'
 
   # virgil 20231109.22
   # Thu Nov  9 05:37:08 UTC 2023 -- Thu Nov  9 16:37:08 AEDT 2023
