@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231108.6
-  # Wed Nov  8 08:07:48 UTC 2023 -- Wed Nov  8 19:07:48 AEDT 2023
+  # Dante Build Artifact 20231109.2
+  # Thu Nov  9 01:59:06 UTC 2023 -- Thu Nov  9 12:59:06 AEDT 2023
   #
-  # Merge pull request 17111 from dante_artifact_upgrade into master
-  # e4e5089cefd9a58f7e101f008509abdfa81a11e6
-  dante_build_id: '758778'
+  # Merge pull request 17139 from dante_python_upgrade into master
+  # 79e10e6031dbacbbc8551ddb6192b024c2f607ff
+  dante_build_id: '759502'
 
-  # virgil 20231108.4
-  # Wed Nov  8 04:51:58 UTC 2023 -- Wed Nov  8 15:51:58 AEDT 2023
+  # virgil 20231109.10
+  # Thu Nov  9 02:01:50 UTC 2023 -- Thu Nov  9 13:01:50 AEDT 2023
   #
-  # Merged PR 17106: add breakout config to apex73-74
-  # 2686d33aed86964ab49e7ff42fcdae0bd6f2085a
-  virgil_build_id: '758600'
+  # Merged PR 17153: disable fabric routing SY5 switches
+  # 65db6f26eca5c8179708ed3bed8107302b881d67
+  virgil_build_id: '759518'
