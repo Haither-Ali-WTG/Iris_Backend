@@ -1,15 +1,14 @@
 ---
 variables:
-  # Dante Build Artifact 20231110.3
-  # Fri Nov 10 03:43:19 UTC 2023 -- Fri Nov 10 14:43:19 AEDT 2023
+  # Dante Build Artifact 20231113.3
+  # Mon Nov 13 03:01:13 UTC 2023 -- Mon Nov 13 14:01:13 AEDT 2023
   #
-  # Merged PR 17230: Fixed deploy simulation hypervisor piepline
-  # 67d6d6b9cf9ccafd7cf6c73bf35c4a5ef4947ebc
-  dante_build_id: '760841'
-
-  # virgil 20231110.18
-  # Fri Nov 10 00:38:53 UTC 2023 -- Fri Nov 10 11:38:53 AEDT 2023
+  # Merged PR 17262: WI00673258: Rebuild qcow2 images nightly
+  # 4ced1e2ab400b959f87d1b39e474aca01d7abca7
+  dante_build_id: '763714'
+  # virgil 20231113.5
+  # Sun Nov 12 23:31:46 UTC 2023 -- Mon Nov 13 10:31:46 AEDT 2023
   #
-  # Merged PR 16796: Virgil - Nodes to dante: disable if ports are undefined
-  # 992f87378a96aac47cf158b88258294f734f1336
-  virgil_build_id: '760670'
+  # Merge pull request 17244 from virgil_python_upgrade into master
+  # 72eefe1e2e5fef8b9b5cec17d387c55e8044ad22
+  virgil_build_id: '763465'
