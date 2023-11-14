@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-ansible==8.6.0
+ansible==8.6.1
     # via -r requirements.in
 ansible-compat==4.1.10
     # via ansible-lint
@@ -15,7 +15,7 @@ ansible-core==2.15.6
     #   ansible-lint
 ansible-lint==6.22.0
     # via -r requirements.in
-argcomplete==3.1.4
+argcomplete==3.1.6
     # via yq
 astroid==3.0.1
     # via pylint
@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.29.82
+awscli==1.29.84
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.31.82
+botocore==1.31.84
     # via
     #   awscli
     #   s3transfer
@@ -99,7 +99,7 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.1.0
     # via -r requirements.in
-mypy==1.6.1
+mypy==1.7.0
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
@@ -122,7 +122,7 @@ pathspec==0.11.2
     #   yamllint
 pbr==6.0.0
     # via stevedore
-platformdirs==3.11.0
+platformdirs==4.0.0
     # via
     #   black
     #   pylint
