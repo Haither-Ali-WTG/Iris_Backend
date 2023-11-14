@@ -3,6 +3,7 @@ list(include('website'))
 ---
 website:
   name_regex: include('regex')
+  name_exclude_regex: include('regex', required=False)
   server_regex: include('regex', required=False)
   health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
   balance: enum('leastconn', 'source', 'first', required=False)
