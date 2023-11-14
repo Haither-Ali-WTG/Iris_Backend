@@ -5,6 +5,10 @@
   gather_facts: yes
   force_handlers: yes
   tasks:
+    - name: Create haproxy user and retrieve subuser info
+      include_role:
+        name: haproxy_user
+
     - name: Setup fakeserver
       include_role:
         name: fakeserver
