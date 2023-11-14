@@ -1,14 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231113.3
-  # Mon Nov 13 03:01:13 UTC 2023 -- Mon Nov 13 14:01:13 AEDT 2023
+  # Dante Build Artifact 20231114.1
+  # Tue Nov 14 02:37:12 UTC 2023 -- Tue Nov 14 13:37:12 AEDT 2023
   #
-  # Merged PR 17262: WI00673258: Rebuild qcow2 images nightly
-  # 4ced1e2ab400b959f87d1b39e474aca01d7abca7
-  dante_build_id: '763714'
-  # virgil 20231113.5
-  # Sun Nov 12 23:31:46 UTC 2023 -- Mon Nov 13 10:31:46 AEDT 2023
+  # Merged PR 17281: WI00673258: Copy all simulation files when building simulation agents
+  # 080207189b80467b6142380c88733965f4aa810c
+  dante_build_id: '764776'
+
+  # virgil 20231114.5
+  # Tue Nov 14 05:52:38 UTC 2023 -- Tue Nov 14 16:52:38 AEDT 2023
   #
-  # Merge pull request 17244 from virgil_python_upgrade into master
-  # 72eefe1e2e5fef8b9b5cec17d387c55e8044ad22
-  virgil_build_id: '763465'
+  # Merged PR 17317: updateapex7475swp56
+  # 41af28c91688113798a1a546b2ac4b33c78e3686
+  virgil_build_id: '764951'
