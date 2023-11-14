@@ -27,7 +27,7 @@
     group: "{{ haproxy_subuser.subgid }}"
   become: yes
   loop: "{{ certs_list | default([]) }}"
-  no_log: true
+  # no_log: true
 
 - name: Calculate tests for the machine
   set_fact:
