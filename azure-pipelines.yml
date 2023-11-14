@@ -14,143 +14,143 @@ variables:
     value: au2s3-1.wtg.ws
 
 stages:
-  # - stage: Tests_and_lint
-  #   pool: cicd
-  #   jobs:
-  #     - job: Tests_and_lint
-  #       steps:
-  #         - script: |
-  #             set -euxo pipefail
-  #             pip install -r requirements.txt
-  #           displayName: 'Install requirements'
+  - stage: Tests_and_lint
+    pool: cicd
+    jobs:
+      - job: Tests_and_lint
+        steps:
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
 
-  #         - task: DownloadPipelineArtifact@2
-  #           displayName: 'Download virgil inventories and yamale extensions'
-  #           inputs:
-  #             buildType: 'specific'
-  #             project: 'InfrastructureAutomation'
-  #             # virgil pipeline Id
-  #             pipeline: 4
-  #             artifact: inventories
-  #             buildVersionToDownload: 'specific'
-  #             buildId: '$(virgil_build_id)'
-  #             path: $(Build.SourcesDirectory)/inventories
-  #             patterns: |
-  #               inventory-*-A.yaml
-  #               virgil_yamale.py
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download virgil inventories and yamale extensions'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # virgil pipeline Id
+              pipeline: 4
+              artifact: inventories
+              buildVersionToDownload: 'specific'
+              buildId: '$(virgil_build_id)'
+              path: $(Build.SourcesDirectory)/inventories
+              patterns: |
+                inventory-*-A.yaml
+                virgil_yamale.py
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pytest --tb=short
-  #           displayName: 'Python tests'
+          - script: |
+              set -euxo pipefail
+              pytest --tb=short
+            displayName: 'Python tests'
 
-  #         - task: PublishTestResults@2
-  #           condition: succeededOrFailed()
-  #           inputs:
-  #             testResultsFiles: 'reports/nosetests.xml'
+          - task: PublishTestResults@2
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFiles: 'reports/nosetests.xml'
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
-  #           displayName: 'Python lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
+            displayName: 'Python lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             mypy tests/ ansible/roles/collect_sites/files/
-  #           displayName: 'Mypy type check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              mypy tests/ ansible/roles/collect_sites/files/
+            displayName: 'Mypy type check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             safety check --full-report -i 42188 -i 42923 -i 42926 -i 54229 -i 54230
-  #           # Ignored reports:
-  #           #   - 42188 - Yamale does not protect against intentionally malicious
-  #           #   schemas. Our schemas are all controlled by us (and indeed in this repo).
-  #           #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
-  #           #   Ansible async tasks can be leaked to malicious non-privileged users
-  #           #   on the target machine, under some circumstances. However, we do not
-  #           #   have any async tasks in this repo.
-  #           #   - 54229 - CVE-2020-25636 - A flaw was found in Ansible Base when using
-  #           #   the aws_ssm connection plugin as there is no namespace separation for
-  #           #   file transfers.  Files are written directly to the root bucket, making
-  #           #   possible to have collisions when running multiple ansible processes.
-  #           #   This issue affects mainly the service availability.
-  #           #   - 54230 - CVE-2020-25635 - A flaw was found in Ansible Base when using
-  #           #   the aws_ssm connection plugin as garbage collector is not happening
-  #           #   after playbook run is completed. Files would remain in the bucket
-  #           #   exposing the data. This issue affects directly data confidentiality.
-  #           displayName: 'Python Safety vulnerability check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              safety check --full-report -i 42188 -i 42923 -i 42926 -i 54229 -i 54230
+            # Ignored reports:
+            #   - 42188 - Yamale does not protect against intentionally malicious
+            #   schemas. Our schemas are all controlled by us (and indeed in this repo).
+            #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
+            #   Ansible async tasks can be leaked to malicious non-privileged users
+            #   on the target machine, under some circumstances. However, we do not
+            #   have any async tasks in this repo.
+            #   - 54229 - CVE-2020-25636 - A flaw was found in Ansible Base when using
+            #   the aws_ssm connection plugin as there is no namespace separation for
+            #   file transfers.  Files are written directly to the root bucket, making
+            #   possible to have collisions when running multiple ansible processes.
+            #   This issue affects mainly the service availability.
+            #   - 54230 - CVE-2020-25635 - A flaw was found in Ansible Base when using
+            #   the aws_ssm connection plugin as garbage collector is not happening
+            #   after playbook run is completed. Files would remain in the bucket
+            #   exposing the data. This issue affects directly data confidentiality.
+            displayName: 'Python Safety vulnerability check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             yamllint -s .
-  #           displayName: 'YAML lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              yamllint -s .
+            displayName: 'YAML lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             bandit -r .
-  #           displayName: 'Bandit security check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              bandit -r .
+            displayName: 'Bandit security check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             ansible-lint $(find ansible -iname '*.y*ml')
-  #           displayName: 'Ansible lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              ansible-lint $(find ansible -iname '*.y*ml')
+            displayName: 'Ansible lint'
+            condition: succeededOrFailed()
 
-  #         - task: AzureKeyVault@2
-  #           displayName: 'Get secret to authenticate to key vault from ansible'
-  #           inputs:
-  #             azureSubscription: 'sc-azuredevops2dante-vaults'
-  #             KeyVaultName: kv-wtg-dante-sim
-  #             SecretsFilter: secretAppIdDf4b4604e176
+          - task: AzureKeyVault@2
+            displayName: 'Get secret to authenticate to key vault from ansible'
+            inputs:
+              azureSubscription: 'sc-azuredevops2dante-vaults'
+              KeyVaultName: kv-wtg-dante-sim
+              SecretsFilter: secretAppIdDf4b4604e176
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             cp ansible/ansible.cfg .
-  #           displayName: 'Prepare to run playbooks'
+          - script: |
+              set -euxo pipefail
+              cp ansible/ansible.cfg .
+            displayName: 'Prepare to run playbooks'
 
-  #         - task: DownloadPipelineArtifact@2
-  #           displayName: 'Download dante artifact'
-  #           inputs:
-  #             buildType: 'specific'
-  #             project: 'InfrastructureAutomation'
-  #             # dante build artifact pipeline Id
-  #             pipeline: 26
-  #             buildVersionToDownload: 'specific'
-  #             buildId: '$(dante_build_id)'
-  #             path: $(Build.SourcesDirectory)
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
 
-  #         - task: CopyFiles@2
-  #           displayName: 'Merge artifacts to a single roles folder'
-  #           inputs:
-  #             sourceFolder: nested_virt
-  #             targetFolder: ansible
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: nested_virt
+              targetFolder: ansible
 
-  #         - task: Ansible@0
-  #           displayName: 'Dump configs'
-  #           inputs:
-  #             ansibleInterface: 'agentMachine'
-  #             playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
-  #             inventoriesAgentMachine: 'file'
-  #             inventoryFileOnAgentMachine: 'data/instances'
-  #             failOnStdErr: false
-  #             args: >-
-  #               -u $(user) --diff
-  #               -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
-  #               -e="s3_host=$(s3_host)"
-  #           env:
-  #             secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+          - task: Ansible@0
+            displayName: 'Dump configs'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'data/instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="s3_host=$(s3_host)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-  #         - publish: $(System.DefaultWorkingDirectory)/generated_configs
-  #           artifact: configs
-  #           displayName: 'Publish configs'
+          - publish: $(System.DefaultWorkingDirectory)/generated_configs
+            artifact: configs
+            displayName: 'Publish configs'
 
   - stage: Simulations
-    # dependsOn: [Tests_and_lint]
+    dependsOn: [Tests_and_lint]
     pool: simulations
     jobs:
       - job: Simulation
@@ -158,10 +158,10 @@ stages:
           matrix:
             AU2:
               simulation_dc: AU2
-            # DE1:
-            #   simulation_dc: DE1
-            # US2:
-            #   simulation_dc: US2
+            DE1:
+              simulation_dc: DE1
+            US2:
+              simulation_dc: US2
         steps:
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
