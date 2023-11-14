@@ -7,9 +7,9 @@ variables:
   # 4f1b92ec50a7624b853f8682a7d438e92f7544f4
   dante_build_id: '765034'
 
-  # virgil 20231114.5
-  # Tue Nov 14 05:52:38 UTC 2023 -- Tue Nov 14 16:52:38 AEDT 2023
+  # virgil 20231114.10
+  # Tue Nov 14 12:31:12 UTC 2023 -- Tue Nov 14 23:31:12 AEDT 2023
   #
-  # Merged PR 17317: updateapex7475swp56
-  # 41af28c91688113798a1a546b2ac4b33c78e3686
-  virgil_build_id: '764951'
+  # Merged PR 17329: addapex71/72swp5/6Vlan250
+  # 0c04d40d6375e086e2b946716db46fb4d5b5c4f8
+  virgil_build_id: '765257'
