@@ -150,7 +150,7 @@ stages:
   #           displayName: 'Publish configs'
 
   - stage: Simulations
-    dependsOn: [Tests_and_lint]
+    # dependsOn: [Tests_and_lint]
     pool: simulations
     jobs:
       - job: Simulation
