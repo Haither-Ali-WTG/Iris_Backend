@@ -16,7 +16,8 @@ clustered_instances:
 {%          set website_with_config = [] %}
 {%          for config in website_config %}
 {%            if server is regex(config.get('server_regex', '.*'), ignorecase=True)
-                 and website is regex(config.name_regex, ignorecase=True) %}
+                 and website is regex(config.name_regex, ignorecase=True) 
+                 and (config.name_exclude_regex not in config or website is not regex(config.name_exclude_regex, ignorecase=True) ) %}
 {%                set x = website_with_config.append(config) %}
 {%            endif %}
 {%          endfor %}

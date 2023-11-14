@@ -1,5 +1,6 @@
 ---
 - name_regex: glow|^www-
+  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
   health_check: /Glow/wtg/ready
   port: 443
@@ -10,6 +11,7 @@
   name_suffix: ''
 
 - name_regex: glow|^www-
+  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
   health_check: /Glow/wtg/another_healthcheck
   port: 4443
@@ -19,6 +21,7 @@
   name_suffix: '-backend2'
 
 - name_regex: services|accounting|^svc-
+  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
   health_check: "/"
   port: 443
@@ -27,6 +30,7 @@
   name_suffix: ''
 
 - name_regex: neo-
+  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
   health_check: "/Glow/wtg/ready"
   port: 443
@@ -37,6 +41,7 @@
   name_suffix: ''
 
 - name_regex: iris-test-
+  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: false
   health_check: "/ready"
   port: 80
@@ -45,13 +50,12 @@
     enabled: false
   name_suffix: ''
 
-# TODO: implement excludes and enable
-# - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
-#   server_regex: '^au2sp'
-#   encryption: false
-#   health_check: "/ready"
-#   port: 80
-#   balance: first
-#   cookie:
-#     enabled: false
-#   name_suffix: ''
+- name_regex: '\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp'
+  encryption: false
+  health_check: "/ready"
+  port: 80
+  balance: first
+  cookie:
+    enabled: false
+  name_suffix: ''
