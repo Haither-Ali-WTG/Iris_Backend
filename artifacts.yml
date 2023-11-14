@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231114.1
-  # Tue Nov 14 02:37:12 UTC 2023 -- Tue Nov 14 13:37:12 AEDT 2023
+  # Dante Build Artifact 20231114.2
+  # Tue Nov 14 07:45:05 UTC 2023 -- Tue Nov 14 18:45:05 AEDT 2023
   #
-  # Merged PR 17281: WI00673258: Copy all simulation files when building simulation agents
-  # 080207189b80467b6142380c88733965f4aa810c
-  dante_build_id: '764776'
+  # Merge pull request 17323 from dante_artifact_upgrade into master
+  # 4f1b92ec50a7624b853f8682a7d438e92f7544f4
+  dante_build_id: '765034'
 
   # virgil 20231114.5
   # Tue Nov 14 05:52:38 UTC 2023 -- Tue Nov 14 16:52:38 AEDT 2023
