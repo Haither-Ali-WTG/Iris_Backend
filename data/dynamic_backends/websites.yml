@@ -45,6 +45,7 @@
     enabled: false
   name_suffix: ''
 
+# TODO: implement excludes and enable
 # - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
 #   server_regex: '^au2sp'
 #   encryption: false
