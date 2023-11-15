@@ -27,96 +27,96 @@
         - not simulation
         - iis_servers | length > 0
 
-# - name: Augment the inventory
-#   import_playbook: augment_inventory.yaml
-#   when: not simulation
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  when: not simulation
 
-# - name: Per-clustered-instance setup (if needed)
-#   hosts: clustered_instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks: []
+- name: Per-clustered-instance setup (if needed)
+  hosts: clustered_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks: []
 
-# - name: Setup on the machines
-#   hosts: target_machines
-#   strategy: free
-#   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Adjust installed packages
-#       include_role:
-#         name: iris_os_packages
+- name: Setup on the machines
+  hosts: target_machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Adjust installed packages
+      include_role:
+        name: iris_os_packages
 
-#     - name: Setup docker
-#       include_role:
-#         name: container_runner
-#         tasks_from: setup.yml
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
 
-#     - name: Set container engine
-#       include_role:
-#         name: container_runner
-#         tasks_from: define_engine.yml
+    - name: Set container engine
+      include_role:
+        name: container_runner
+        tasks_from: define_engine.yml
 
-#     - name: Setup rsyslog for Iris
-#       include_role:
-#         name: iris_rsyslog
+    - name: Setup rsyslog for Iris
+      include_role:
+        name: iris_rsyslog
 
-#     - name: Apply system parameters
-#       include_role:
-#         name: system_parameters
+    - name: Apply system parameters
+      include_role:
+        name: system_parameters
 
-#     - name: Create haproxy user and retrieve subuser info
-#       include_role:
-#         name: haproxy_user
+    - name: Create haproxy user and retrieve subuser info
+      include_role:
+        name: haproxy_user
 
-#     - name: Setup docker namespaces
-#       include_role:
-#         name: docker_namespaces
+    - name: Setup docker namespaces
+      include_role:
+        name: docker_namespaces
 
-# - name: Setup the individual instances
-#   hosts: individual_instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Collect min facts
-#       ansible.builtin.setup:
-#         gather_subset: min
+- name: Setup the individual instances
+  hosts: individual_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
 
-#     - name: Deploy the individual instances
-#       include_role:
-#         name: iris_haproxy
-#         tasks_from: individual_instances.yml
+    - name: Deploy the individual instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: individual_instances.yml
 
-#     - name: Mark instance as successful
-#       set_fact:
-#         ok: yes
+    - name: Mark instance as successful
+      set_fact:
+        ok: yes
 
-# - name: Finalise setup on the machines
-#   hosts: target_machines
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks:
-#     - name: Assert all instances on the machine are successful
-#       vars:
-#         failed_instance_names: >-
-#           {{
-#             individual_instances
-#             | map('extract', hostvars)
-#             | rejectattr('ok')
-#             | map(attribute='inventory_hostname')
-#             | list
-#           }}
-#       assert:
-#         that: not failed_instance_names
-#         quiet: yes
-#         fail_msg: >-
-#           Aborting machine {{ inventory_hostname }} due to failed individual instances
-#           {{ failed_instance_names | join(' and ') }}
+- name: Finalise setup on the machines
+  hosts: target_machines
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Assert all instances on the machine are successful
+      vars:
+        failed_instance_names: >-
+          {{
+            individual_instances
+            | map('extract', hostvars)
+            | rejectattr('ok')
+            | map(attribute='inventory_hostname')
+            | list
+          }}
+      assert:
+        that: not failed_instance_names
+        quiet: yes
+        fail_msg: >-
+          Aborting machine {{ inventory_hostname }} due to failed individual instances
+          {{ failed_instance_names | join(' and ') }}
 
-#     - name: Setup keepalived (VRRP)
-#       include_role:
-#         name: iris_keepalived
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
