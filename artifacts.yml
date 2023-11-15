@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231115.5
-  # Wed Nov 15 06:14:34 UTC 2023 -- Wed Nov 15 17:14:34 AEDT 2023
+  # Dante Build Artifact 20231115.6
+  # Wed Nov 15 07:45:40 UTC 2023 -- Wed Nov 15 18:45:40 AEDT 2023
   #
-  # Merged PR 17350: Dante: Update secret value for styx
-  # b65ac71096dad8c8532a3b06f7bd981669684945
-  dante_build_id: '766183'
+  # Merge pull request 17376 from dante_artifact_upgrade into master
+  # a47f042629c37807de84dda3b495985553bcbf5f
+  dante_build_id: '766286'
 
   # virgil 20231115.17
   # Wed Nov 15 05:54:01 UTC 2023 -- Wed Nov 15 16:54:01 AEDT 2023
