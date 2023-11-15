@@ -14,6 +14,7 @@ clustered_instances:
       iis_servers:
         - au2wt-sweb-001.test.wisecloud.zone
         - au2wt-sweb-002.test.wisecloud.zone
+      iis_user: s_lbwinrmquerier
       certificates:
         - ahwprd-webtracker-carozplus-com
         - customers-commercialcustoms-com-au
@@ -31,6 +32,7 @@ clustered_instances:
       iis_servers:
         - au2wt-sweb-003.test.wisecloud.zone
         - au2wt-sweb-004.test.wisecloud.zone
+      iis_user: s_lbwinrmquerier
       certificates:
         - ahwprd-webtracker-carozplus-com
         - customers-commercialcustoms-com-au
@@ -69,6 +71,7 @@ clustered_instances:
         - au2sp-tweb-404b.sand.wtg.zone
         - au2sp-tweb-405a.sand.wtg.zone
         - au2sp-tweb-405b.sand.wtg.zone
+      iis_user: s_lbwinrmquerier
       certificates:
         - star-wisetechglobal-com
         - star-wtg-zone
