@@ -66,7 +66,7 @@ clustered_instances:
       machine_cluster: au2-sand-internal-1
       iis_servers:
         - au2sp-tweb-405a.sand.wtg.zone
-      iis_user: s_lbwinrmquerier1
+      iis_user: s_lbwinrmquerier1@sand.wtg.zone
       certificates:
         - star-wisetechglobal-com
         - star-wtg-zone
