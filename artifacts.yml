@@ -7,9 +7,9 @@ variables:
   # a47f042629c37807de84dda3b495985553bcbf5f
   dante_build_id: '766286'
 
-  # virgil 20231115.17
-  # Wed Nov 15 05:54:01 UTC 2023 -- Wed Nov 15 16:54:01 AEDT 2023
+  # virgil 20231115.21
+  # Wed Nov 15 10:05:59 UTC 2023 -- Wed Nov 15 21:05:59 AEDT 2023
   #
-  # Merged PR 17378: Update HAProxy config on SY5
-  # e8f96b1de0cb8a026e2665db1a6e0e8ec40f43a4
-  virgil_build_id: '766136'
+  # Merged PR 17379: Moving test server from apex197/197 to apex199/200 to allow apex to move to SY5
+  # c367e3ed7db0015505bfa3a73d90564b8c3b74b9
+  virgil_build_id: '766409'
