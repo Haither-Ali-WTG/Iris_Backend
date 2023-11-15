@@ -1,5 +1,5 @@
 ---
-- name: "Get password fromr key vault for user {{ iis_user }}"
+- name: "Get password from key vault for user {{ iis_user }}"
   include_role:
     name: azure_keyvault
     tasks_from: get_secret.yml
@@ -9,7 +9,7 @@
     azure_kv_secret_name: "{{ iis_user | replace('_', '-') }}"    
   when: iis_servers | default([]) | length > 0
 
-- name: "Collect sites data via winrm for {{ inventory_hsotname }}"
+- name: "Collect sites data via winrm for {{ inventory_hostname }}"
   changed_when: true
   delegate_to: localhost
   command: >
