@@ -26,12 +26,12 @@ parameters:
       - agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-1.wtg.ws
-      - agent_dc: DE1
-        agent_hall: A
-        s3_host: de1s3-1.wtg.ws
-      - agent_dc: US2
-        agent_hall: A
-        s3_host: us2s3-1.wtg.ws
+      # - agent_dc: DE1
+      #   agent_hall: A
+      #   s3_host: de1s3-1.wtg.ws
+      # - agent_dc: US2
+      #   agent_hall: A
+      #   s3_host: us2s3-1.wtg.ws
 
 stages:
   - ${{ each run in parameters.matrix }}:
