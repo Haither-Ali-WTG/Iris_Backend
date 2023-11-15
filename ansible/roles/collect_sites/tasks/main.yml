@@ -1,14 +1,25 @@
 ---
+- name: "Get password fromr key vault for user {{ iis_user }}"
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_name: "{{ key_vault_name }}"
+    # username must have "_" by Domain policy, however key vault supports only '-'
+    azure_kv_secret_name: "{{ iis_user | replace('_', '-') }}"    
+  when: iis_servers | default([]) | length > 0
+
 - name: "Collect sites data via winrm for {{ inventory_hsotname }}"
   changed_when: true
   delegate_to: localhost
   command: >
         python3 {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py
         --server_list {{ iis_servers | join(',') }}
-        --password {{ winrm_password }}
+        --user_name {{ iis_user }}
+        --password {{ return_secret_value }}
         --output_path {{ inventory_hostname }}
   register: collect_sites_data_output
-  when: iis_servers is defined
+  when: iis_servers | default([]) | length > 0
 
 - name: Output collect sites data output
   vars:
