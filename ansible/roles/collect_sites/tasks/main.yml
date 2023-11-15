@@ -8,6 +8,7 @@
   vars:
     azure_kv_name: "{{ key_vault_name }}"
     # username must have "_" by Domain policy, however key vault supports only '-'
+    # we also omit domain when looking for key vault value
     azure_kv_secret_name: "{{ iis_user | replace('_', '-') | split('@') | first }}"    
   when: iis_servers | default([]) | length > 0
 
