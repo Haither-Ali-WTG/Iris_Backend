@@ -7,9 +7,9 @@ variables:
   # f389011929674f1c3c811464cf16ab9f285ae847
   dante_build_id: '765838'
 
-  # virgil 20231115.6
-  # Wed Nov 15 00:13:11 UTC 2023 -- Wed Nov 15 11:13:11 AEDT 2023
+  # virgil 20231115.8
+  # Wed Nov 15 03:19:53 UTC 2023 -- Wed Nov 15 14:19:53 AEDT 2023
   #
-  # Merged PR 17343: updateVlan1031/250ForFlashBlade
-  # ba2cf3b255efa650d9ecdacab6eb0b0f5a0d0d69
-  virgil_build_id: '765783'
+  # Merged PR 17237: Remove Jiri's public ssh key
+  # 67412d511b49468df7d9e57c2f4a9e997f5ff18c
+  virgil_build_id: '765968'
