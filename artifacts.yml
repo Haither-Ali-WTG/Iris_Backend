@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231115.4
-  # Wed Nov 15 04:46:00 UTC 2023 -- Wed Nov 15 15:46:00 AEDT 2023
+  # Dante Build Artifact 20231115.5
+  # Wed Nov 15 06:14:34 UTC 2023 -- Wed Nov 15 17:14:34 AEDT 2023
   #
-  # Merge pull request 17366 from dante_artifact_upgrade into master
-  # 5cf61b5ce03ba7f75f37e7fe51d64a238e5a4be1
-  dante_build_id: '766046'
+  # Merged PR 17350: Dante: Update secret value for styx
+  # b65ac71096dad8c8532a3b06f7bd981669684945
+  dante_build_id: '766183'
 
-  # virgil 20231115.12
-  # Wed Nov 15 04:52:53 UTC 2023 -- Wed Nov 15 15:52:53 AEDT 2023
+  # virgil 20231115.17
+  # Wed Nov 15 05:54:01 UTC 2023 -- Wed Nov 15 16:54:01 AEDT 2023
   #
-  # Merged PR 17369: UpdateSY5Rack204vSAN
-  # fc26281c0067a7d987d59c55efd9e3f914f1679a
-  virgil_build_id: '766057'
+  # Merged PR 17378: Update HAProxy config on SY5
+  # e8f96b1de0cb8a026e2665db1a6e0e8ec40f43a4
+  virgil_build_id: '766136'
