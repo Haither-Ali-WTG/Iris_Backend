@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231115.7
-  # Wed Nov 15 11:24:57 UTC 2023 -- Wed Nov 15 22:24:57 AEDT 2023
+  # Dante Build Artifact 20231116.1
+  # Thu Nov 16 00:30:25 UTC 2023 -- Thu Nov 16 11:30:25 AEDT 2023
   #
-  # Merge pull request 17400 from dante_artifact_upgrade into master
-  # d178e8f08148319d2b89f7cee8a4f32b97ae0ff8
-  dante_build_id: '766463'
+  # Merged PR 17401: Dante - Put no logging on Styx secret
+  # b7c722d2c8c1d7f7f13604d7e6798c3a79649e40
+  dante_build_id: '767017'
 
-  # virgil 20231115.21
-  # Wed Nov 15 10:05:59 UTC 2023 -- Wed Nov 15 21:05:59 AEDT 2023
+  # virgil 20231116.2
+  # Thu Nov 16 00:02:22 UTC 2023 -- Thu Nov 16 11:02:22 AEDT 2023
   #
-  # Merged PR 17379: Moving test server from apex197/197 to apex199/200 to allow apex to move to SY5
-  # c367e3ed7db0015505bfa3a73d90564b8c3b74b9
-  virgil_build_id: '766409'
+  # Merge pull request 17290 from virgil_python_upgrade into master
+  # 67824fd9c04aee86d4c25f062baf2e47f2001065
+  virgil_build_id: '766990'
