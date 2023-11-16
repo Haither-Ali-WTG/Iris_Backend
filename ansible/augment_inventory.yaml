@@ -17,20 +17,20 @@
   import_playbook: import_iis_data.yml
   when: enable_dynamic_backends | default(true)
 
-- name: Load machine clusters configuration
-  import_playbook: load_machine_clusters.yaml
+# - name: Load machine clusters configuration
+#   import_playbook: load_machine_clusters.yaml
 
-- name: Load static backend configuration
-  import_playbook: load_static_backends.yaml
+# - name: Load static backend configuration
+#   import_playbook: load_static_backends.yaml
 
-- name: Load ACLs
-  import_playbook: load_acls.yaml
+# - name: Load ACLs
+#   import_playbook: load_acls.yaml
 
-- name: Load actions
-  import_playbook: load_actions.yaml
+# - name: Load actions
+#   import_playbook: load_actions.yaml
 
-- name: Load ciphers
-  import_playbook: load_ciphers.yaml
+# - name: Load ciphers
+#   import_playbook: load_ciphers.yaml
 
-- name: Generate the individual instance inventory entries
-  import_playbook: generate_individual_instances.yaml
+# - name: Generate the individual instance inventory entries
+#   import_playbook: generate_individual_instances.yaml

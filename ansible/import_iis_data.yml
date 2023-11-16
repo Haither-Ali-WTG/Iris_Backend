@@ -66,3 +66,7 @@
     - name: Show warnings
       debug:
         var: complete_iis_data.warnings
+
+    - name: print websites
+      debug:
+        var: website_config
