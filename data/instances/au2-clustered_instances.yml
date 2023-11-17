@@ -16,6 +16,7 @@ clustered_instances:
         - au2wt-sweb-002.test.wisecloud.zone
       # Key vault secret should be same as username without domain and replacing '_' with '-'
       iis_user: s_lbwinrmquerier
+      websites_config: websites.yaml
       certificates:
         - ahwprd-webtracker-carozplus-com
         - customers-commercialcustoms-com-au
@@ -73,6 +74,7 @@ clustered_instances:
         - au2sp-tweb-405a.sand.wtg.zone
         - au2sp-tweb-405b.sand.wtg.zone
       iis_user: s_lbwinrmquerier1@sand.wtg.zone
+      websites_config: websites_internal.yaml
       certificates:
         - star-wisetechglobal-com
         - star-wtg-zone

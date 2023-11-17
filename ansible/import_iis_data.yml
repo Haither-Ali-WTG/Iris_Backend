@@ -43,9 +43,9 @@
             {% endfor %}
           ]
 
-    - name: Load configs
-      set_fact:
-        website_config: "{{ lookup('file', '{{ playbook_dir }}/../data/dynamic_backends/websites.yml') | from_yaml }}"
+    # - name: Load configs
+    #   set_fact:
+    #     website_config: "{{ lookup('file', '{{ playbook_dir }}/../data/dynamic_backends/websites.yml') | from_yaml }}"
 
     - name: Report IIS counts
       vars:
