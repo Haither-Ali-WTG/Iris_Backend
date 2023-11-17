@@ -15,7 +15,7 @@
 
     - name: Display all variables/facts known for a host
       debug:
-        var: hostvars[inventory_hostname]
+        var: hostvars['au1prodfrontend1']
 
 # - name: Import IIS data
 #   import_playbook: import_iis_data.yml
