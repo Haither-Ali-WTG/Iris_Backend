@@ -7,9 +7,9 @@ variables:
   # 3f820ae9e0c55a7bf31e2efa9390e6d8d9367db3
   dante_build_id: '768062'
 
-  # virgil 20231117.3
-  # Thu Nov 16 22:47:25 UTC 2023 -- Fri Nov 17 09:47:25 AEDT 2023
+  # virgil 20231119.1
+  # Sat Nov 18 21:35:56 UTC 2023 -- Sun Nov 19 08:35:56 AEDT 2023
   #
-  # Merged PR 17446: Add 3 more C54s for UPS
-  # 246601e84cbd56fe0c17ca800ca29c2ad00e51c6
-  virgil_build_id: '767990'
+  # Merged PR 17424: Virgil - Remove Bridge VLAN include all apex
+  # 4d6dd51c2610e88d3f82fb62ba22e281a1c34172
+  virgil_build_id: '769725'
