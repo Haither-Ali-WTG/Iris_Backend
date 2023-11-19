@@ -7,9 +7,9 @@ variables:
   # e3deaf34fab6f74b60aa017b4f5cf52445dfd81f
   dante_build_id: '769787'
 
-  # virgil 20231119.1
-  # Sat Nov 18 21:35:56 UTC 2023 -- Sun Nov 19 08:35:56 AEDT 2023
+  # virgil 20231120.5
+  # Sun Nov 19 22:58:21 UTC 2023 -- Mon Nov 20 09:58:21 AEDT 2023
   #
-  # Merged PR 17424: Virgil - Remove Bridge VLAN include all apex
-  # 4d6dd51c2610e88d3f82fb62ba22e281a1c34172
-  virgil_build_id: '769725'
+  # Merge pull request 17492 from virgil_python_upgrade into master
+  # 0af55b66f9f4d8151e69fa5e5ebe109bbac7c13f
+  virgil_build_id: '770610'
