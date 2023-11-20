@@ -7,9 +7,9 @@ variables:
   # 1cf0d65db922bbbf8d6fe941ecc3aabd4f79ee49
   dante_build_id: '770860'
 
-  # virgil 20231120.7
-  # Mon Nov 20 00:57:47 UTC 2023 -- Mon Nov 20 11:57:47 AEDT 2023
+  # virgil 20231121.6
+  # Mon Nov 20 22:28:23 UTC 2023 -- Tue Nov 21 09:28:23 AEDT 2023
   #
-  # Merge pull request 17501 from virgil_python_upgrade into master
-  # 0949379168a585412952b920d6c2faf55065a50d
-  virgil_build_id: '770707'
+  # Merged PR 17476: Config for 4x Hyper-V nodes in DE1
+  # 4efe3c1a4d1e5594f1d6181dded4d3ccba00a370
+  virgil_build_id: '771582'
