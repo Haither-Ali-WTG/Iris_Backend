@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231121.1
-  # Mon Nov 20 23:42:14 UTC 2023 -- Tue Nov 21 10:42:14 AEDT 2023
+  # Dante Build Artifact 20231121.2
+  # Tue Nov 21 03:11:58 UTC 2023 -- Tue Nov 21 14:11:58 AEDT 2023
   #
-  # Merged PR 17433: Dante - Remove schedule from renewal of ssl certificates
-  # 3052d73a3d5530e00f0703450a26b276541d34c9
-  dante_build_id: '771671'
+  # Merged PR 17549: Removed Ubuntu 20.04 ISO build, rhel 8 iso, removed windows from US and DE
+  # df766fc0786e8f69bb8b6c432fcab852e72240ad
+  dante_build_id: '771852'
 
-  # virgil 20231121.10
-  # Tue Nov 21 01:46:11 UTC 2023 -- Tue Nov 21 12:46:11 AEDT 2023
+  # virgil 20231121.14
+  # Tue Nov 21 03:49:58 UTC 2023 -- Tue Nov 21 14:49:58 AEDT 2023
   #
-  # Merged PR 17532: Replacement C23s for Ceph HAProxy
-  # 7670daa57dffa8ef7ef0c94fe981569b1d61b2bd
-  virgil_build_id: '771776'
+  # Merged PR 17562: Put dante to on demand for C-00538
+  # 274df7b15d6323783ed176f7faa248b4c603b482
+  virgil_build_id: '771899'
