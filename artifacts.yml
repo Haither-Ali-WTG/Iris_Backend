@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231121.3
-  # Tue Nov 21 05:25:31 UTC 2023 -- Tue Nov 21 16:25:31 AEDT 2023
+  # Dante Build Artifact 20231122.1
+  # Tue Nov 21 23:06:24 UTC 2023 -- Wed Nov 22 10:06:24 AEDT 2023
   #
-  # Merge pull request 17539 from dante_artifact_upgrade into master
-  # 37309a4376397adf1d8adda57f1e3ac9468975c5
-  dante_build_id: '772004'
+  # Merge pull request 17591 from dante_artifact_upgrade into master
+  # c7b60132c251a58d8916587910a17388f9b5a283
+  dante_build_id: '772790'
 
-  # virgil 20231121.14
-  # Tue Nov 21 03:49:58 UTC 2023 -- Tue Nov 21 14:49:58 AEDT 2023
+  # virgil 20231122.3
+  # Tue Nov 21 21:33:20 UTC 2023 -- Wed Nov 22 08:33:20 AEDT 2023
   #
-  # Merged PR 17562: Put dante to on demand for C-00538
-  # 274df7b15d6323783ed176f7faa248b4c603b482
-  virgil_build_id: '771899'
+  # Merged PR 17587: Add test server on Layer3 apex for frr test
+  # fc573f2ff80c754adb6ad9690caa9bbf54f515f5
+  virgil_build_id: '772705'
