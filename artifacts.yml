@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231121.2
-  # Tue Nov 21 03:11:58 UTC 2023 -- Tue Nov 21 14:11:58 AEDT 2023
+  # Dante Build Artifact 20231121.3
+  # Tue Nov 21 05:25:31 UTC 2023 -- Tue Nov 21 16:25:31 AEDT 2023
   #
-  # Merged PR 17549: Removed Ubuntu 20.04 ISO build, rhel 8 iso, removed windows from US and DE
-  # df766fc0786e8f69bb8b6c432fcab852e72240ad
-  dante_build_id: '771852'
+  # Merge pull request 17539 from dante_artifact_upgrade into master
+  # 37309a4376397adf1d8adda57f1e3ac9468975c5
+  dante_build_id: '772004'
 
   # virgil 20231121.14
   # Tue Nov 21 03:49:58 UTC 2023 -- Tue Nov 21 14:49:58 AEDT 2023
