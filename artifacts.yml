@@ -7,9 +7,9 @@ variables:
   # 3052d73a3d5530e00f0703450a26b276541d34c9
   dante_build_id: '771671'
 
-  # virgil 20231121.6
-  # Mon Nov 20 22:28:23 UTC 2023 -- Tue Nov 21 09:28:23 AEDT 2023
+  # virgil 20231121.10
+  # Tue Nov 21 01:46:11 UTC 2023 -- Tue Nov 21 12:46:11 AEDT 2023
   #
-  # Merged PR 17476: Config for 4x Hyper-V nodes in DE1
-  # 4efe3c1a4d1e5594f1d6181dded4d3ccba00a370
-  virgil_build_id: '771582'
+  # Merged PR 17532: Replacement C23s for Ceph HAProxy
+  # 7670daa57dffa8ef7ef0c94fe981569b1d61b2bd
+  virgil_build_id: '771776'
