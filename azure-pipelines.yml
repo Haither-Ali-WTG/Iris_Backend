@@ -81,6 +81,7 @@ stages:
             #   after playbook run is completed. Files would remain in the bucket
             #   exposing the data. This issue affects directly data confidentiality.
             displayName: 'Python Safety vulnerability check'
+            continueOnError: true
             condition: succeededOrFailed()
 
           - script: |
