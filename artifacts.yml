@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231122.2
-  # Wed Nov 22 01:07:20 UTC 2023 -- Wed Nov 22 12:07:20 AEDT 2023
+  # Dante Build Artifact 20231122.3
+  # Wed Nov 22 04:47:00 UTC 2023 -- Wed Nov 22 15:47:00 AEDT 2023
   #
-  # Merge pull request 17603 from dante_artifact_upgrade into master
-  # c5e339b7bb5b7ef751c38a256e11a01bcb866d0b
-  dante_build_id: '772915'
+  # Merge pull request 17616 from dante_artifact_upgrade into master
+  # 62769527d3ca7e4fedd5cd087099d3ffa30dbbbc
+  dante_build_id: '773144'
 
-  # virgil 20231122.12
-  # Wed Nov 22 03:14:41 UTC 2023 -- Wed Nov 22 14:14:41 AEDT 2023
+  # virgil 20231122.14
+  # Wed Nov 22 04:56:22 UTC 2023 -- Wed Nov 22 15:56:22 AEDT 2023
   #
-  # Merged PR 15800: Updated teardowns.yaml
-  # 48a6972cb4cbce22ab6a152fd63659a7c8393e78
-  virgil_build_id: '773062'
+  # Merge pull request 17580 from virgil_python_upgrade into master
+  # fdb8cc4ba04f17b6ec69114a5ee174b8e5512478
+  virgil_build_id: '773177'
