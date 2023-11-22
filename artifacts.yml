@@ -7,9 +7,9 @@ variables:
   # c7b60132c251a58d8916587910a17388f9b5a283
   dante_build_id: '772790'
 
-  # virgil 20231122.3
-  # Tue Nov 21 21:33:20 UTC 2023 -- Wed Nov 22 08:33:20 AEDT 2023
+  # virgil 20231122.7
+  # Tue Nov 21 23:36:57 UTC 2023 -- Wed Nov 22 10:36:57 AEDT 2023
   #
-  # Merged PR 17587: Add test server on Layer3 apex for frr test
-  # fc573f2ff80c754adb6ad9690caa9bbf54f515f5
-  virgil_build_id: '772705'
+  # Merged PR 17588: Put dummy config in for all ports to be configured
+  # 609d795ba710f742d1352dbb41cab5f5a7c2921d
+  virgil_build_id: '772825'
