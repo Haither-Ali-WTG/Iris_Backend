@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231122.3
-  # Wed Nov 22 04:47:00 UTC 2023 -- Wed Nov 22 15:47:00 AEDT 2023
+  # Dante Build Artifact 20231122.4
+  # Wed Nov 22 11:16:35 UTC 2023 -- Wed Nov 22 22:16:35 AEDT 2023
   #
-  # Merge pull request 17616 from dante_artifact_upgrade into master
-  # 62769527d3ca7e4fedd5cd087099d3ffa30dbbbc
-  dante_build_id: '773144'
+  # Merged PR 17622: Download latest simulation images nightly
+  # e6c7d1d6bccd7a7fce01c41f27976277ca3da2a5
+  dante_build_id: '773480'
 
-  # virgil 20231122.14
-  # Wed Nov 22 04:56:22 UTC 2023 -- Wed Nov 22 15:56:22 AEDT 2023
+  # virgil 20231123.11
+  # Wed Nov 22 22:44:57 UTC 2023 -- Thu Nov 23 09:44:57 AEDT 2023
   #
-  # Merge pull request 17580 from virgil_python_upgrade into master
-  # fdb8cc4ba04f17b6ec69114a5ee174b8e5512478
-  virgil_build_id: '773177'
+  # Merged PR 17643: Adjust node C00141..143 for generic connecitvity
+  # 6c58819ff622bff64ef6bfc649012eea507bc5b5
+  virgil_build_id: '773950'
