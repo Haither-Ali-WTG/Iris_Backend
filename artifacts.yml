@@ -7,9 +7,9 @@ variables:
   # c5e339b7bb5b7ef751c38a256e11a01bcb866d0b
   dante_build_id: '772915'
 
-  # virgil 20231122.7
-  # Tue Nov 21 23:36:57 UTC 2023 -- Wed Nov 22 10:36:57 AEDT 2023
+  # virgil 20231122.10
+  # Wed Nov 22 02:18:20 UTC 2023 -- Wed Nov 22 13:18:20 AEDT 2023
   #
-  # Merged PR 17588: Put dummy config in for all ports to be configured
-  # 609d795ba710f742d1352dbb41cab5f5a7c2921d
-  virgil_build_id: '772825'
+  # Merged PR 16059: Updated teardowns.yaml
+  # 103bbbe01591d6ab8d8e0997aa1083106dfda807
+  virgil_build_id: '773001'
