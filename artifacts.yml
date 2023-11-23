@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231124.1
-  # Thu Nov 23 21:10:44 UTC 2023 -- Fri Nov 24 08:10:44 AEDT 2023
+  # Dante Build Artifact 20231124.2
+  # Thu Nov 23 23:19:29 UTC 2023 -- Fri Nov 24 10:19:29 AEDT 2023
   #
-  # Merged PR 17658: Removed files download to speedup simulation
-  # c20107bcc84bb7abef35fb989df6217346947137
-  dante_build_id: '775019'
+  # Merged PR 17598: Build management nodes from qcow2 and removed servers
+  # 0a0eb3a80bae1ae99c17013c76119be991201faf
+  dante_build_id: '775154'
 
-  # virgil 20231124.2
-  # Thu Nov 23 21:59:03 UTC 2023 -- Fri Nov 24 08:59:03 AEDT 2023
+  # virgil 20231124.4
+  # Thu Nov 23 22:34:48 UTC 2023 -- Fri Nov 24 09:34:48 AEDT 2023
   #
-  # Merged PR 17671: addapexforRack203and201
-  # e5e6389d06e680b9950f62d42edfa04cbb99bdb3
-  virgil_build_id: '775064'
+  # Merge pull request 17676 from virgil_python_upgrade into master
+  # b912dfdeda51b9177a501210f8a67969d346f7d5
+  virgil_build_id: '775112'
