@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231122.4
-  # Wed Nov 22 11:16:35 UTC 2023 -- Wed Nov 22 22:16:35 AEDT 2023
+  # Dante Build Artifact 20231123.4
+  # Thu Nov 23 00:04:12 UTC 2023 -- Thu Nov 23 11:04:12 AEDT 2023
   #
-  # Merged PR 17622: Download latest simulation images nightly
-  # e6c7d1d6bccd7a7fce01c41f27976277ca3da2a5
-  dante_build_id: '773480'
+  # Merged PR 17650: Publish playbook to download simulation files for another repos
+  # eec24edab2cca9daf487da2ea47d7e09fb7dcd49
+  dante_build_id: '774040'
 
   # virgil 20231123.11
   # Wed Nov 22 22:44:57 UTC 2023 -- Thu Nov 23 09:44:57 AEDT 2023
