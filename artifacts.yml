@@ -7,9 +7,9 @@ variables:
   # c20107bcc84bb7abef35fb989df6217346947137
   dante_build_id: '775019'
 
-  # virgil 20231123.11
-  # Wed Nov 22 22:44:57 UTC 2023 -- Thu Nov 23 09:44:57 AEDT 2023
+  # virgil 20231124.2
+  # Thu Nov 23 21:59:03 UTC 2023 -- Fri Nov 24 08:59:03 AEDT 2023
   #
-  # Merged PR 17643: Adjust node C00141..143 for generic connecitvity
-  # 6c58819ff622bff64ef6bfc649012eea507bc5b5
-  virgil_build_id: '773950'
+  # Merged PR 17671: addapexforRack203and201
+  # e5e6389d06e680b9950f62d42edfa04cbb99bdb3
+  virgil_build_id: '775064'
