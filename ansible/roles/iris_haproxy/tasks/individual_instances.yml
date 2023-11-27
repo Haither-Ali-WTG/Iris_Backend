@@ -111,7 +111,7 @@
 
 - name: Pront ports
   debug:
-    msg: >-
+    var: >-
       [
         {% for host_port, container_port in docker_port_map.items() %}
         '{{ host_port }}:{{ container_port }}',
