@@ -125,7 +125,7 @@
     net_host: no
     ports: >-
       [
-        {% for host_port, container_port in docker_port_map.items() %}
+        {% for host_port, container_port in docker_port_map.items() | sort %}
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
