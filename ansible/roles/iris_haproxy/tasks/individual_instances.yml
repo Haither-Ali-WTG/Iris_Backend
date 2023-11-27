@@ -111,12 +111,12 @@
 
 - name: Pront ports
   debug:
-    var: >-
+    msg: >-
       [
         {% for host_port, container_port in docker_port_map.items() %}
         '{{ host_port }}:{{ container_port }}',
-        {% endfor %}
-      ] | sort(attribute='key', reverse=true)
+        {% endfor %} | sort
+      ]
 
 - name: Deploy the haproxy container
   include_role:
