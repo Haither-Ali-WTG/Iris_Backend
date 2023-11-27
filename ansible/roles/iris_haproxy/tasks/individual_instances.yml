@@ -109,15 +109,6 @@
     name: container_runner
     tasks_from: check_container_exists.yml
 
-- name: Pront ports
-  debug:
-    msg: >-
-      [
-        {% for host_port, container_port in docker_port_map.items() | sort %}
-        '{{ host_port }}:{{ container_port }}',
-        {% endfor %}
-      ]
-
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
