@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.30.6
+awscli==1.30.7
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.32.6
+botocore==1.32.7
     # via
     #   awscli
     #   s3transfer
@@ -71,7 +71,7 @@ gitdb==4.0.11
     # via gitpython
 gitpython==3.1.40
     # via bandit
-idna==3.4
+idna==3.6
     # via requests
 iniconfig==2.0.0
     # via pytest
@@ -193,7 +193,7 @@ ruamel-yaml==0.18.5
     #   safety
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
-s3transfer==0.7.0
+s3transfer==0.8.0
     # via awscli
 safety==2.3.5
     # via -r requirements.in
