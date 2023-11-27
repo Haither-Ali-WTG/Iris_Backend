@@ -116,7 +116,7 @@
         {% for host_port, container_port in docker_port_map.items() %}
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
-      ] | sort
+      ] | sort(attribute='key', reverse=true)
 
 - name: Deploy the haproxy container
   include_role:
