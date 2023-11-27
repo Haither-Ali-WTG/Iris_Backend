@@ -113,9 +113,9 @@
   debug:
     msg: >-
       [
-        {% for host_port, container_port in docker_port_map.items() %}
+        {% for host_port, container_port in docker_port_map.items() | sort %}
         '{{ host_port }}:{{ container_port }}',
-        {% endfor %} | sort
+        {% endfor %}
       ]
 
 - name: Deploy the haproxy container
@@ -134,10 +134,10 @@
     net_host: no
     ports: >-
       [
-        {% for host_port, container_port in docker_port_map.items() %}
+        {% for host_port, container_port in docker_port_map.items() | sort %}
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
-      ] | sort
+      ]
     apparmor_profile: "{{ container_name }}"
     container_user: "{{ user.uid }}:{{ user.group }}"
     container_dir: "{{ individual_instance_dir }}"
