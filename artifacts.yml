@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231124.5
-  # Fri Nov 24 05:10:19 UTC 2023 -- Fri Nov 24 16:10:19 AEDT 2023
+  # Dante Build Artifact 20231128.1
+  # Tue Nov 28 03:13:40 UTC 2023 -- Tue Nov 28 14:13:40 AEDT 2023
   #
-  # Merged PR 16993: WI00433303 - Remove ignore_errors
-  # c0082c7d425cc6cb89e977bc5ed2c35a9c71f6bb
-  dante_build_id: '775517'
+  # Merged PR 17746: Dante - Add liveness probe to workload.yml file for k8s
+  # 07145ff111aac39e492f64f80bc4f561b34a6ce1
+  dante_build_id: '779282'
 
   # virgil 20231124.8
   # Fri Nov 24 01:42:02 UTC 2023 -- Fri Nov 24 12:42:02 AEDT 2023
