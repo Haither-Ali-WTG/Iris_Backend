@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231128.1
-  # Tue Nov 28 03:13:40 UTC 2023 -- Tue Nov 28 14:13:40 AEDT 2023
+  # Dante Build Artifact 20231128.2
+  # Tue Nov 28 05:06:21 UTC 2023 -- Tue Nov 28 16:06:21 AEDT 2023
   #
-  # Merged PR 17746: Dante - Add liveness probe to workload.yml file for k8s
-  # 07145ff111aac39e492f64f80bc4f561b34a6ce1
-  dante_build_id: '779282'
+  # Merged PR 17758: Added Cumulus 4.1.1 image to download before the simulation
+  # ad7866627ffd4e4e58a06e239ff48fc92a953a0b
+  dante_build_id: '779398'
 
   # virgil 20231124.8
   # Fri Nov 24 01:42:02 UTC 2023 -- Fri Nov 24 12:42:02 AEDT 2023
