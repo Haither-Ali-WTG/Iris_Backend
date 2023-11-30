@@ -7,9 +7,9 @@ variables:
   # 9aad3251b7d20d7e7cea31275031bf4ff59ccca7
   dante_build_id: '782135'
 
-  # virgil 20231124.8
-  # Fri Nov 24 01:42:02 UTC 2023 -- Fri Nov 24 12:42:02 AEDT 2023
+  # virgil 20231201.4
+  # Thu Nov 30 23:17:27 UTC 2023 -- Fri Dec  1 10:17:27 AEDT 2023
   #
-  # Merged PR 17706: updateMTUforSY5Rack201/203Apex
-  # d505bb3eee38785dda848cd9406ea2e7291684b7
-  virgil_build_id: '775306'
+  # Merged PR 17830: UpdateApex73/74Forau2nas02Bond
+  # 8bae8b70614a6d135253bdbeac7056a394ffc6ae
+  virgil_build_id: '782270'
