@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.31.2
+awscli==1.31.4
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.33.2
+botocore==1.33.4
     # via
     #   awscli
     #   s3transfer
@@ -51,7 +51,9 @@ colorama==0.4.4
 confluent-kafka==2.3.0
     # via -r requirements.in
 coverage[toml]==7.3.2
-    # via pytest-cov
+    # via
+    #   coverage
+    #   pytest-cov
 cryptography==41.0.7
     # via
     #   ansible-core
@@ -87,7 +89,7 @@ jsonschema==4.20.0
     # via
     #   ansible-compat
     #   ansible-lint
-jsonschema-specifications==2023.11.1
+jsonschema-specifications==2023.11.2
     # via jsonschema
 markdown-it-py==3.0.0
     # via rich
@@ -163,7 +165,7 @@ pyyaml==6.0.1
     #   yamale
     #   yamllint
     #   yq
-referencing==0.31.0
+referencing==0.31.1
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -181,7 +183,7 @@ rich==13.7.0
     # via
     #   ansible-lint
     #   bandit
-rpds-py==0.13.1
+rpds-py==0.13.2
     # via
     #   jsonschema
     #   referencing
@@ -193,7 +195,7 @@ ruamel-yaml==0.18.5
     #   safety
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
-s3transfer==0.8.1
+s3transfer==0.8.2
     # via awscli
 safety==2.3.5
     # via -r requirements.in
