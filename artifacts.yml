@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231130.1
-  # Wed Nov 29 22:54:00 UTC 2023 -- Thu Nov 30 09:54:00 AEDT 2023
+  # Dante Build Artifact 20231130.2
+  # Thu Nov 30 03:43:45 UTC 2023 -- Thu Nov 30 14:43:45 AEDT 2023
   #
-  # Merged PR 17798: Simulation speedup - move mgmt node to separate step
-  # 3721e0b5623eca2ccae2b656c2bff78f3719cdf2
-  dante_build_id: '781185'
+  # Merged PR 17817: Simulation speed up - removed forks from simulation completely.
+  # 26b171f01a843f869fe056f6f57e3310a3c0d857
+  dante_build_id: '781435'
 
   # virgil 20231124.8
   # Fri Nov 24 01:42:02 UTC 2023 -- Fri Nov 24 12:42:02 AEDT 2023
