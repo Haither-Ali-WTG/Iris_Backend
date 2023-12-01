@@ -7,9 +7,9 @@ variables:
   # cf0799a2d7d6ce3f98df4f148068216467c08519
   dante_build_id: '782319'
 
-  # virgil 20231201.4
-  # Thu Nov 30 23:17:27 UTC 2023 -- Fri Dec  1 10:17:27 AEDT 2023
+  # virgil 20231201.14
+  # Fri Dec  1 02:29:55 UTC 2023 -- Fri Dec  1 13:29:55 AEDT 2023
   #
-  # Merged PR 17830: UpdateApex73/74Forau2nas02Bond
-  # 8bae8b70614a6d135253bdbeac7056a394ffc6ae
-  virgil_build_id: '782270'
+  # Merge pull request 17833 from virgil_python_upgrade into master
+  # eb3a3cb90803f40f62b3d98d7e17ef86e6e82844
+  virgil_build_id: '782439'
