@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231201.1
-  # Thu Nov 30 20:33:44 UTC 2023 -- Fri Dec  1 07:33:44 AEDT 2023
+  # Dante Build Artifact 20231201.2
+  # Fri Dec  1 00:08:46 UTC 2023 -- Fri Dec  1 11:08:46 AEDT 2023
   #
-  # Merged PR 17825: Simulation speed up - Added eslint to simultion agent
-  # 9aad3251b7d20d7e7cea31275031bf4ff59ccca7
-  dante_build_id: '782135'
+  # Merge pull request 17844 from dante_artifact_upgrade into master
+  # cf0799a2d7d6ce3f98df4f148068216467c08519
+  dante_build_id: '782319'
 
   # virgil 20231201.4
   # Thu Nov 30 23:17:27 UTC 2023 -- Fri Dec  1 10:17:27 AEDT 2023
