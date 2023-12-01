@@ -7,9 +7,9 @@ variables:
   # 53f18049ea49429d47684925394893ea47745c42
   dante_build_id: '782659'
 
-  # virgil 20231201.19
-  # Fri Dec  1 04:57:48 UTC 2023 -- Fri Dec  1 15:57:48 AEDT 2023
+  # virgil 20231201.23
+  # Fri Dec  1 07:17:28 UTC 2023 -- Fri Dec  1 18:17:28 AEDT 2023
   #
-  # Merged PR 17851: addConfigonApex71/72ForKafka
-  # f5c9c3318f8f6aac0329bb95e2fb7637be5456bc
-  virgil_build_id: '782607'
+  # Merged PR 17831: Removed LACP for DE1WP-SVIR-012 & 017
+  # 06c0290f5ac6929b966a27617435ced7d37138e7
+  virgil_build_id: '782741'
