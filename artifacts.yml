@@ -7,9 +7,9 @@ variables:
   # 96dfc3aecb1d36d03c68ff22aca3687eecc7d445
   dante_build_id: '782507'
 
-  # virgil 20231201.14
-  # Fri Dec  1 02:29:55 UTC 2023 -- Fri Dec  1 13:29:55 AEDT 2023
+  # virgil 20231201.19
+  # Fri Dec  1 04:57:48 UTC 2023 -- Fri Dec  1 15:57:48 AEDT 2023
   #
-  # Merge pull request 17833 from virgil_python_upgrade into master
-  # eb3a3cb90803f40f62b3d98d7e17ef86e6e82844
-  virgil_build_id: '782439'
+  # Merged PR 17851: addConfigonApex71/72ForKafka
+  # f5c9c3318f8f6aac0329bb95e2fb7637be5456bc
+  virgil_build_id: '782607'
