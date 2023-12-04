@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231204.1
-  # Sun Dec  3 21:46:04 UTC 2023 -- Mon Dec  4 08:46:04 AEDT 2023
+  # Dante Build Artifact 20231204.2
+  # Mon Dec  4 07:45:45 UTC 2023 -- Mon Dec  4 18:45:45 AEDT 2023
   #
-  # Merged PR 17809: feat(WI00681634): check in a working version of a Selenium scrape to download
-  # 7e1d7935d8b1b0d6401474a71d662bdba37773d0
-  dante_build_id: '785138'
+  # Merge pull request 17922 from dante_artifact_upgrade into master
+  # b6c53b27bb077b8494f06089eaed09357059a1e9
+  dante_build_id: '785601'
 
   # virgil 20231204.7
   # Mon Dec  4 06:41:29 UTC 2023 -- Mon Dec  4 17:41:29 AEDT 2023
