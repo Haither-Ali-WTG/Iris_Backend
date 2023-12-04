@@ -7,9 +7,9 @@ variables:
   # 7e1d7935d8b1b0d6401474a71d662bdba37773d0
   dante_build_id: '785138'
 
-  # virgil 20231204.3
-  # Mon Dec  4 05:46:31 UTC 2023 -- Mon Dec  4 16:46:31 AEDT 2023
+  # virgil 20231204.5
+  # Mon Dec  4 06:10:01 UTC 2023 -- Mon Dec  4 17:10:01 AEDT 2023
   #
-  # Merged PR 17915: remove svi IP addresses from apex15-16
-  # 5d4f06376f52f3796979028c1020bb5e0c52a7a4
-  virgil_build_id: '785491'
+  # Merged PR 17802: Virgil - Add neighmgr address for duplicate IP address issue -- 1/2
+  # 485185d3b396e811fda3c420bf552403f1287c0a
+  virgil_build_id: '785517'
