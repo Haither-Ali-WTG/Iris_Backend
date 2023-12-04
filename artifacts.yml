@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231204.2
-  # Mon Dec  4 07:45:45 UTC 2023 -- Mon Dec  4 18:45:45 AEDT 2023
+  # Dante Build Artifact 20231204.3
+  # Mon Dec  4 09:34:08 UTC 2023 -- Mon Dec  4 20:34:08 AEDT 2023
   #
-  # Merge pull request 17922 from dante_artifact_upgrade into master
-  # b6c53b27bb077b8494f06089eaed09357059a1e9
-  dante_build_id: '785601'
+  # Merged PR 17803: Dante - Add neighmgr address for duplicate IP address issue -- 2/2
+  # 121a935da6bd7c82012e76e4fe85cb2c0dce61f8
+  dante_build_id: '785701'
 
   # virgil 20231204.7
   # Mon Dec  4 06:41:29 UTC 2023 -- Mon Dec  4 17:41:29 AEDT 2023
