@@ -124,7 +124,7 @@ pathspec==0.11.2
     #   yamllint
 pbr==6.0.0
     # via stevedore
-platformdirs==4.0.0
+platformdirs==4.1.0
     # via
     #   black
     #   pylint
