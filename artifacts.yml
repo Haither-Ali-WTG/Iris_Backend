@@ -7,9 +7,9 @@ variables:
   # 7e1d7935d8b1b0d6401474a71d662bdba37773d0
   dante_build_id: '785138'
 
-  # virgil 20231204.5
-  # Mon Dec  4 06:10:01 UTC 2023 -- Mon Dec  4 17:10:01 AEDT 2023
+  # virgil 20231204.7
+  # Mon Dec  4 06:41:29 UTC 2023 -- Mon Dec  4 17:41:29 AEDT 2023
   #
-  # Merged PR 17802: Virgil - Add neighmgr address for duplicate IP address issue -- 1/2
-  # 485185d3b396e811fda3c420bf552403f1287c0a
-  virgil_build_id: '785517'
+  # Merged PR 17826: no LACP
+  # 7f340d9e48bd6a1af2a46cb21ac038e97b1a59e5
+  virgil_build_id: '785551'
