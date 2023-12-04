@@ -7,9 +7,9 @@ variables:
   # 7e1d7935d8b1b0d6401474a71d662bdba37773d0
   dante_build_id: '785138'
 
-  # virgil 20231201.23
-  # Fri Dec  1 07:17:28 UTC 2023 -- Fri Dec  1 18:17:28 AEDT 2023
+  # virgil 20231204.3
+  # Mon Dec  4 05:46:31 UTC 2023 -- Mon Dec  4 16:46:31 AEDT 2023
   #
-  # Merged PR 17831: Removed LACP for DE1WP-SVIR-012 & 017
-  # 06c0290f5ac6929b966a27617435ced7d37138e7
-  virgil_build_id: '782741'
+  # Merged PR 17915: remove svi IP addresses from apex15-16
+  # 5d4f06376f52f3796979028c1020bb5e0c52a7a4
+  virgil_build_id: '785491'
