@@ -7,9 +7,9 @@ variables:
   # 2aa3db834495be8f07b1264e588a13c574dd64f2
   dante_build_id: '786655'
 
-  # virgil 20231205.9
-  # Tue Dec  5 03:02:46 UTC 2023 -- Tue Dec  5 14:02:46 AEDT 2023
+  # virgil 20231206.2
+  # Tue Dec  5 21:57:54 UTC 2023 -- Wed Dec  6 08:57:54 AEDT 2023
   #
-  # Merged PR 17966: SY6-BUNKER-ConfigOnApex71/72
-  # ae4d62bff5c152855136697da41c5a507e3b9813
-  virgil_build_id: '786539'
+  # Merged PR 17992: Remove LACP for DE1WP-SVIR-004 & 018
+  # 82e1226300288795336e90e5633d39398f9bebfd
+  virgil_build_id: '787336'
