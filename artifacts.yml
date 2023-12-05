@@ -7,9 +7,9 @@ variables:
   # f576a230cdcfdc573feabedb67cd65fea87a5382
   dante_build_id: '786348'
 
-  # virgil 20231205.5
-  # Mon Dec  4 22:51:16 UTC 2023 -- Tue Dec  5 09:51:16 AEDT 2023
+  # virgil 20231205.9
+  # Tue Dec  5 03:02:46 UTC 2023 -- Tue Dec  5 14:02:46 AEDT 2023
   #
-  # Merge pull request 17946 from virgil_python_upgrade into master
-  # 02fe6c0776d51e0b77e379306a0a47355197eb76
-  virgil_build_id: '786272'
+  # Merged PR 17966: SY6-BUNKER-ConfigOnApex71/72
+  # ae4d62bff5c152855136697da41c5a507e3b9813
+  virgil_build_id: '786539'
