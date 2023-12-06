@@ -8,7 +8,7 @@ ansible==9.0.1
     # via -r requirements.in
 ansible-compat==4.1.10
     # via ansible-lint
-ansible-core==2.16.0
+ansible-core==2.16.1
     # via
     #   ansible
     #   ansible-compat
@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.31.6
+awscli==1.31.7
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.33.6
+botocore==1.33.7
     # via
     #   awscli
     #   s3transfer
