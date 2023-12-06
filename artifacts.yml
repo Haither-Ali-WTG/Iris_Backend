@@ -7,9 +7,9 @@ variables:
   # bcfa7134cc18a96b6ce2520ce3e012be077d9b53
   dante_build_id: '787813'
 
-  # virgil 20231206.18
-  # Wed Dec  6 03:33:51 UTC 2023 -- Wed Dec  6 14:33:51 AEDT 2023
+  # virgil 20231207.9
+  # Wed Dec  6 23:11:04 UTC 2023 -- Thu Dec  7 10:11:04 AEDT 2023
   #
-  # Merge pull request 17996 from virgil_python_upgrade into master
-  # b3c22c147c09fc627bfd9647e3b4bab73b008d76
-  virgil_build_id: '787756'
+  # Merged PR 18052: Add Bunker port config for FR7 link
+  # bc902f6440aa2f1b41e43b687e874deee20b3a4c
+  virgil_build_id: '788580'
