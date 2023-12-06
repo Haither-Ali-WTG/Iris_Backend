@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-ansible==9.0.1
+ansible==9.1.0
     # via -r requirements.in
 ansible-compat==4.1.10
     # via ansible-lint
@@ -24,13 +24,13 @@ attrs==23.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-awscli==1.31.7
+awscli==1.31.8
     # via -r requirements.in
 bandit==1.7.5
     # via -r requirements.in
 black==22.12.0
     # via ansible-lint
-botocore==1.33.7
+botocore==1.33.8
     # via
     #   awscli
     #   s3transfer
