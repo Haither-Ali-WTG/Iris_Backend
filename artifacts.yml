@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231206.1
-  # Tue Dec  5 23:45:47 UTC 2023 -- Wed Dec  6 10:45:47 AEDT 2023
+  # Dante Build Artifact 20231206.2
+  # Wed Dec  6 00:31:03 UTC 2023 -- Wed Dec  6 11:31:03 AEDT 2023
   #
-  # Merge pull request 18005 from dante_artifact_upgrade into master
-  # 539362af6caae6c4d81ae679874deae45824b690
-  dante_build_id: '787435'
+  # Merged PR 17999: Configure neighmgr IP to SY5 L2 Apex switches
+  # 7673799d097000f774f479d3109478724c7a10c0
+  dante_build_id: '787504'
 
   # virgil 20231206.2
   # Tue Dec  5 21:57:54 UTC 2023 -- Wed Dec  6 08:57:54 AEDT 2023
