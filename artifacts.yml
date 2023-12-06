@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231206.3
-  # Wed Dec  6 02:38:05 UTC 2023 -- Wed Dec  6 13:38:05 AEDT 2023
+  # Dante Build Artifact 20231206.4
+  # Wed Dec  6 04:27:20 UTC 2023 -- Wed Dec  6 15:27:20 AEDT 2023
   #
-  # Merged PR 17867: Dante - Sync Ubuntu mirror twice a month
-  # 2b6a268fbbac977234cb025d6b0124a2a9f78636
-  dante_build_id: '787653'
+  # Merge pull request 18027 from dante_artifact_upgrade into master
+  # bcfa7134cc18a96b6ce2520ce3e012be077d9b53
+  dante_build_id: '787813'
 
   # virgil 20231206.18
   # Wed Dec  6 03:33:51 UTC 2023 -- Wed Dec  6 14:33:51 AEDT 2023
