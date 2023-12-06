@@ -7,9 +7,9 @@ variables:
   # 2b6a268fbbac977234cb025d6b0124a2a9f78636
   dante_build_id: '787653'
 
-  # virgil 20231206.8
-  # Wed Dec  6 02:02:23 UTC 2023 -- Wed Dec  6 13:02:23 AEDT 2023
+  # virgil 20231206.18
+  # Wed Dec  6 03:33:51 UTC 2023 -- Wed Dec  6 14:33:51 AEDT 2023
   #
-  # Merged PR 17978: Virgil - Add a system / network reserved subnet to all DCs
-  # bd6dfb8606077c940563a78a33d7628ede3269a9
-  virgil_build_id: '787614'
+  # Merge pull request 17996 from virgil_python_upgrade into master
+  # b3c22c147c09fc627bfd9647e3b4bab73b008d76
+  virgil_build_id: '787756'
