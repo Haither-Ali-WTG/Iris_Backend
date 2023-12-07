@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231207.3
-  # Thu Dec  7 05:28:40 UTC 2023 -- Thu Dec  7 16:28:40 AEDT 2023
+  # Dante Build Artifact 20231207.4
+  # Thu Dec  7 06:47:16 UTC 2023 -- Thu Dec  7 17:47:16 AEDT 2023
   #
-  # Merged PR 18042: Add Microsoft GPG key and conversion tasks
-  # fee2d9d6801557ec4175646fe84a6eb3fcc1e02c
-  dante_build_id: '788914'
+  # Merge pull request 18092 from dante_artifact_upgrade into master
+  # 552a51bcbcb3312a6b496fdfeca9430639062e41
+  dante_build_id: '789010'
 
   # virgil 20231207.18
   # Thu Dec  7 05:25:37 UTC 2023 -- Thu Dec  7 16:25:37 AEDT 2023
