@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231207.2
-  # Thu Dec  7 04:25:08 UTC 2023 -- Thu Dec  7 15:25:08 AEDT 2023
+  # Dante Build Artifact 20231207.3
+  # Thu Dec  7 05:28:40 UTC 2023 -- Thu Dec  7 16:28:40 AEDT 2023
   #
-  # Merge pull request 18078 from dante_artifact_upgrade into master
-  # 9d9a9138f4e6016a847624b74d45b9a26cc9f6c9
-  dante_build_id: '788837'
+  # Merged PR 18042: Add Microsoft GPG key and conversion tasks
+  # fee2d9d6801557ec4175646fe84a6eb3fcc1e02c
+  dante_build_id: '788914'
 
-  # virgil 20231207.14
-  # Thu Dec  7 03:25:30 UTC 2023 -- Thu Dec  7 14:25:30 AEDT 2023
+  # virgil 20231207.18
+  # Thu Dec  7 05:25:37 UTC 2023 -- Thu Dec  7 16:25:37 AEDT 2023
   #
-  # Merged PR 17774: Virgil - De-provision broken C-00024 node and provision C-00111
-  # 427d5088cd24de5bfa5d646686c5a12d4fddf6a8
-  virgil_build_id: '788789'
+  # Merged PR 18085: Reconfig Apex73/74 swp24 for Ha proxy Prod
+  # 79ed26a9e03379df340b62d372e49cdf92a5229d
+  virgil_build_id: '788911'
