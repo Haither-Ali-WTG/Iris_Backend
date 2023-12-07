@@ -7,9 +7,9 @@ variables:
   # 14f2f8bfa4d5c679391938b4acf9b3f375c969d2
   dante_build_id: '788636'
 
-  # virgil 20231207.9
-  # Wed Dec  6 23:11:04 UTC 2023 -- Thu Dec  7 10:11:04 AEDT 2023
+  # virgil 20231207.14
+  # Thu Dec  7 03:25:30 UTC 2023 -- Thu Dec  7 14:25:30 AEDT 2023
   #
-  # Merged PR 18052: Add Bunker port config for FR7 link
-  # bc902f6440aa2f1b41e43b687e874deee20b3a4c
-  virgil_build_id: '788580'
+  # Merged PR 17774: Virgil - De-provision broken C-00024 node and provision C-00111
+  # 427d5088cd24de5bfa5d646686c5a12d4fddf6a8
+  virgil_build_id: '788789'
