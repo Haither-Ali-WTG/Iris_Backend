@@ -7,9 +7,9 @@ variables:
   # cf4e2037b61c3bcc9f4f4e34621cd59a5cc5e64b
   dante_build_id: '789657'
 
-  # virgil 20231207.18
-  # Thu Dec  7 05:25:37 UTC 2023 -- Thu Dec  7 16:25:37 AEDT 2023
+  # virgil 20231208.6
+  # Fri Dec  8 02:14:22 UTC 2023 -- Fri Dec  8 13:14:22 AEDT 2023
   #
-  # Merged PR 18085: Reconfig Apex73/74 swp24 for Ha proxy Prod
-  # 79ed26a9e03379df340b62d372e49cdf92a5229d
-  virgil_build_id: '788911'
+  # Merged PR 18118: SimulationNodesMoveToSY5
+  # 60090182e57b48c7b1480c44d4061d77df073000
+  virgil_build_id: '789944'
