@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231208.1
-  # Thu Dec  7 21:51:56 UTC 2023 -- Fri Dec  8 08:51:56 AEDT 2023
+  # Dante Build Artifact 20231208.2
+  # Fri Dec  8 03:08:15 UTC 2023 -- Fri Dec  8 14:08:15 AEDT 2023
   #
-  # Merged PR 18087: fix: change screen locators to match service account
-  # cf4e2037b61c3bcc9f4f4e34621cd59a5cc5e64b
-  dante_build_id: '789657'
+  # Merge pull request 18126 from dante_artifact_upgrade into master
+  # 2d3d30cbdfab120fd1dd2e59da2d6b7bff2d0046
+  dante_build_id: '789992'
 
   # virgil 20231208.6
   # Fri Dec  8 02:14:22 UTC 2023 -- Fri Dec  8 13:14:22 AEDT 2023
