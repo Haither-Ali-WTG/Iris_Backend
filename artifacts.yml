@@ -7,9 +7,9 @@ variables:
   # 2d3d30cbdfab120fd1dd2e59da2d6b7bff2d0046
   dante_build_id: '789992'
 
-  # virgil 20231208.6
-  # Fri Dec  8 02:14:22 UTC 2023 -- Fri Dec  8 13:14:22 AEDT 2023
+  # virgil 20231210.1
+  # Sat Dec  9 22:50:06 UTC 2023 -- Sun Dec 10 09:50:06 AEDT 2023
   #
-  # Merged PR 18118: SimulationNodesMoveToSY5
-  # 60090182e57b48c7b1480c44d4061d77df073000
-  virgil_build_id: '789944'
+  # Merged PR 18128: remove L3vni associated vids  from EXITs
+  # 1b1864534a37fc27a011df3f52e2226879dbe774
+  virgil_build_id: '791664'
