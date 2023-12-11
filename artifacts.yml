@@ -7,9 +7,9 @@ variables:
   # 5cab833c36b8736df48715bd0eae33394d7bf8f5
   dante_build_id: '792641'
 
-  # virgil 20231211.13
-  # Mon Dec 11 00:20:59 UTC 2023 -- Mon Dec 11 11:20:59 AEDT 2023
+  # virgil 20231212.4
+  # Mon Dec 11 23:21:48 UTC 2023 -- Tue Dec 12 10:21:48 AEDT 2023
   #
-  # Merged PR 18168: Update DNS to new AD but not AD forwarders
-  # 2a0519bda6cce716da2ed228b2b78a73675dfe9d
-  virgil_build_id: '792724'
+  # Merge pull request 18200 from virgil_python_upgrade into master
+  # 9f3fddc1a193415157bcb7ee7e15c14d9ee6660a
+  virgil_build_id: '793662'
