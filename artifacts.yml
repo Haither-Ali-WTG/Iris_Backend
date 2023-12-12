@@ -7,9 +7,9 @@ variables:
   # 4ec85917300e1e47717e9a5bca2d96aec1de1024
   dante_build_id: '794390'
 
-  # virgil 20231212.19
-  # Tue Dec 12 11:23:45 UTC 2023 -- Tue Dec 12 22:23:45 AEDT 2023
+  # virgil 20231213.5
+  # Tue Dec 12 23:04:02 UTC 2023 -- Wed Dec 13 10:04:02 AEDT 2023
   #
-  # Merged PR 18195: addSY6MgmtNetwork
-  # 69d0da37fadcba914080e1a40736f2b1eae3eea1
-  virgil_build_id: '794340'
+  # Merged PR 18172: (minor) Virgil - Change slot numbers
+  # 3e7461db4e8212019ea06a74bf43daf9e7545957
+  virgil_build_id: '794853'
