@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231212.1
-  # Tue Dec 12 01:42:13 UTC 2023 -- Tue Dec 12 12:42:13 AEDT 2023
+  # Dante Build Artifact 20231212.2
+  # Tue Dec 12 03:04:06 UTC 2023 -- Tue Dec 12 14:04:06 AEDT 2023
   #
-  # Merged PR 18215: ISO and qcow2 builds twice a month
-  # b21126e48459b2ccb3adeddeb6a712baa27c35b3
-  dante_build_id: '793815'
+  # Merged PR 18222: Upgrade Ubuntu ISO to 22.04.3 and update grub to allow autoinstall from different sources
+  # cf600cc746c6d3b8741d0338f88b2a2f1c05dc1c
+  dante_build_id: '793904'
 
   # virgil 20231212.4
   # Mon Dec 11 23:21:48 UTC 2023 -- Tue Dec 12 10:21:48 AEDT 2023
