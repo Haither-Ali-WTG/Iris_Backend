@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20231212.2
-  # Tue Dec 12 03:04:06 UTC 2023 -- Tue Dec 12 14:04:06 AEDT 2023
+  # Dante Build Artifact 20231212.3
+  # Tue Dec 12 06:06:23 UTC 2023 -- Tue Dec 12 17:06:23 AEDT 2023
   #
-  # Merged PR 18222: Upgrade Ubuntu ISO to 22.04.3 and update grub to allow autoinstall from different sources
-  # cf600cc746c6d3b8741d0338f88b2a2f1c05dc1c
-  dante_build_id: '793904'
+  # Merge pull request 18177 from dante_artifact_upgrade into master
+  # 8e39b7dcf52b48dac09d91208b5f517651087015
+  dante_build_id: '794060'
 
-  # virgil 20231212.4
-  # Mon Dec 11 23:21:48 UTC 2023 -- Tue Dec 12 10:21:48 AEDT 2023
+  # virgil 20231212.13
+  # Tue Dec 12 06:21:54 UTC 2023 -- Tue Dec 12 17:21:54 AEDT 2023
   #
-  # Merge pull request 18200 from virgil_python_upgrade into master
-  # 9f3fddc1a193415157bcb7ee7e15c14d9ee6660a
-  virgil_build_id: '793662'
+  # Merged PR 18231: Virgil - Create test topic for internal use - Q0 and Q1
+  # 4ca21bb9acfc2cf28c196eda54b2efa59cf99499
+  virgil_build_id: '794078'
