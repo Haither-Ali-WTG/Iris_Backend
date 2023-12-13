@@ -7,9 +7,9 @@ variables:
   # d196371679df1bb965fcad4318c9ba5a50abfc3c
   dante_build_id: '794928'
 
-  # virgil 20231213.27
-  # Wed Dec 13 03:27:47 UTC 2023 -- Wed Dec 13 14:27:47 AEDT 2023
+  # virgil 20231213.33
+  # Wed Dec 13 09:32:46 UTC 2023 -- Wed Dec 13 20:32:46 AEDT 2023
   #
-  # Merged PR 18229: add new subnet for PROD blazor servers
-  # ecb807849886cec83f442031f2d2102186451ea4
-  virgil_build_id: '795098'
+  # Merged PR 18247: Removed LACP for DE1WP-SVIR-008 & 019
+  # 2ad5777db50135e526420fa82297ca5f73d86fea
+  virgil_build_id: '795397'
