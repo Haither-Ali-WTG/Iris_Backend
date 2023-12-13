@@ -7,9 +7,9 @@ variables:
   # d196371679df1bb965fcad4318c9ba5a50abfc3c
   dante_build_id: '794928'
 
-  # virgil 20231213.12
-  # Tue Dec 12 23:27:13 UTC 2023 -- Wed Dec 13 10:27:13 AEDT 2023
+  # virgil 20231213.27
+  # Wed Dec 13 03:27:47 UTC 2023 -- Wed Dec 13 14:27:47 AEDT 2023
   #
-  # Merged PR 18267: addAPEX74swp3ForSY6oob
-  # fae79124d30cfea7b83fc27e80323caa1adb23ea
-  virgil_build_id: '794872'
+  # Merged PR 18229: add new subnet for PROD blazor servers
+  # ecb807849886cec83f442031f2d2102186451ea4
+  virgil_build_id: '795098'
