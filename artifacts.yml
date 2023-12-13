@@ -7,9 +7,9 @@ variables:
   # 4769a1462bb222d36b335b7709e3cb43db75bbb7
   dante_build_id: '795465'
 
-  # virgil 20231213.33
-  # Wed Dec 13 09:32:46 UTC 2023 -- Wed Dec 13 20:32:46 AEDT 2023
+  # virgil 20231214.3
+  # Wed Dec 13 22:41:37 UTC 2023 -- Thu Dec 14 09:41:37 AEDT 2023
   #
-  # Merged PR 18247: Removed LACP for DE1WP-SVIR-008 & 019
-  # 2ad5777db50135e526420fa82297ca5f73d86fea
-  virgil_build_id: '795397'
+  # Merged PR 18109: Port config for de1nas02
+  # 029fba1543a47ca9c00e5429db6c6c70bf73791d
+  virgil_build_id: '795960'
