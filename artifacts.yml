@@ -7,9 +7,9 @@ variables:
   # 4769a1462bb222d36b335b7709e3cb43db75bbb7
   dante_build_id: '795465'
 
-  # virgil 20231214.10
-  # Wed Dec 13 23:39:02 UTC 2023 -- Thu Dec 14 10:39:02 AEDT 2023
+  # virgil 20231214.15
+  # Thu Dec 14 04:51:41 UTC 2023 -- Thu Dec 14 15:51:41 AEDT 2023
   #
-  # Merge pull request 18260 from virgil_python_upgrade into master
-  # 86a8ff2ebfca628eac392ea081fbb9100a776c71
-  virgil_build_id: '796015'
+  # Merged PR 18329: UpdateApex71to74Swp3Config
+  # 3f72c1b2a37d50507ec52a5c63384ec0c853e60c
+  virgil_build_id: '796252'
