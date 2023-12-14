@@ -7,9 +7,9 @@ variables:
   # 4769a1462bb222d36b335b7709e3cb43db75bbb7
   dante_build_id: '795465'
 
-  # virgil 20231214.3
-  # Wed Dec 13 22:41:37 UTC 2023 -- Thu Dec 14 09:41:37 AEDT 2023
+  # virgil 20231214.10
+  # Wed Dec 13 23:39:02 UTC 2023 -- Thu Dec 14 10:39:02 AEDT 2023
   #
-  # Merged PR 18109: Port config for de1nas02
-  # 029fba1543a47ca9c00e5429db6c6c70bf73791d
-  virgil_build_id: '795960'
+  # Merge pull request 18260 from virgil_python_upgrade into master
+  # 86a8ff2ebfca628eac392ea081fbb9100a776c71
+  virgil_build_id: '796015'
