@@ -7,9 +7,9 @@ variables:
   # bb5062c0d92b536806c8af02e9dd1f9e2425fcab
   dante_build_id: '796678'
 
-  # virgil 20231214.15
-  # Thu Dec 14 04:51:41 UTC 2023 -- Thu Dec 14 15:51:41 AEDT 2023
+  # virgil 20231215.3
+  # Thu Dec 14 23:14:50 UTC 2023 -- Fri Dec 15 10:14:50 AEDT 2023
   #
-  # Merged PR 18329: UpdateApex71to74Swp3Config
-  # 3f72c1b2a37d50507ec52a5c63384ec0c853e60c
-  virgil_build_id: '796252'
+  # Merged PR 18347: updateApex71/72flashbladeBond
+  # ce1cf107c3dc5b4703364751993f4ba0d8e9ac2f
+  virgil_build_id: '797022'
