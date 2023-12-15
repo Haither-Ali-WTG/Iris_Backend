@@ -7,9 +7,9 @@ variables:
   # bb5062c0d92b536806c8af02e9dd1f9e2425fcab
   dante_build_id: '796678'
 
-  # virgil 20231215.3
-  # Thu Dec 14 23:14:50 UTC 2023 -- Fri Dec 15 10:14:50 AEDT 2023
+  # virgil 20231215.8
+  # Fri Dec 15 00:01:41 UTC 2023 -- Fri Dec 15 11:01:41 AEDT 2023
   #
-  # Merged PR 18347: updateApex71/72flashbladeBond
-  # ce1cf107c3dc5b4703364751993f4ba0d8e9ac2f
-  virgil_build_id: '797022'
+  # Merge pull request 18345 from virgil_python_upgrade into master
+  # 17d044c7e61021d2a15f6b1df49fd64ebf609236
+  virgil_build_id: '797083'
