@@ -7,9 +7,9 @@ variables:
   # 54bb5dcd66ec8f37cb17f70fdbb498d581c4755f
   dante_build_id: '797339'
 
-  # virgil 20231215.14
-  # Fri Dec 15 01:32:02 UTC 2023 -- Fri Dec 15 12:32:02 AEDT 2023
+  # virgil 20231215.20
+  # Fri Dec 15 10:32:19 UTC 2023 -- Fri Dec 15 21:32:19 AEDT 2023
   #
-  # Merged PR 18362: Virgil - Queues for CustomConnector Application - CS01479129
-  # e58852c24d5240d06b35d2e20bb5ba66ea07a82f
-  virgil_build_id: '797190'
+  # Merged PR 18387: Removed LACP for DE1WP-SVIR-016 & 020
+  # c3f71c9e2a9d13adb00c8f4c53c1fd08940e4e27
+  virgil_build_id: '797638'
