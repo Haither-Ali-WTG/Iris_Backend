@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231215.4
-  # Fri Dec 15 01:06:42 UTC 2023 -- Fri Dec 15 12:06:42 AEDT 2023
+  # Dante Build Artifact 20231215.6
+  # Fri Dec 15 04:24:21 UTC 2023 -- Fri Dec 15 15:24:21 AEDT 2023
   #
-  # Merge pull request 18354 from dante_artifact_upgrade into master
-  # 263aa442f7c3b98119d0406c354d5d0cfe0d6c6e
-  dante_build_id: '797147'
+  # Merged PR 18376: Network config for Windows media server support
+  # 54bb5dcd66ec8f37cb17f70fdbb498d581c4755f
+  dante_build_id: '797339'
 
   # virgil 20231215.14
   # Fri Dec 15 01:32:02 UTC 2023 -- Fri Dec 15 12:32:02 AEDT 2023
