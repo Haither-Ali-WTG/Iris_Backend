@@ -7,9 +7,9 @@ variables:
   # 263aa442f7c3b98119d0406c354d5d0cfe0d6c6e
   dante_build_id: '797147'
 
-  # virgil 20231215.8
-  # Fri Dec 15 00:01:41 UTC 2023 -- Fri Dec 15 11:01:41 AEDT 2023
+  # virgil 20231215.14
+  # Fri Dec 15 01:32:02 UTC 2023 -- Fri Dec 15 12:32:02 AEDT 2023
   #
-  # Merge pull request 18345 from virgil_python_upgrade into master
-  # 17d044c7e61021d2a15f6b1df49fd64ebf609236
-  virgil_build_id: '797083'
+  # Merged PR 18362: Virgil - Queues for CustomConnector Application - CS01479129
+  # e58852c24d5240d06b35d2e20bb5ba66ea07a82f
+  virgil_build_id: '797190'
