@@ -7,9 +7,9 @@ variables:
   # e7cf0d89d64bbcaf90731e3341151b70a19060c9
   dante_build_id: '800222'
 
-  # virgil 20231218.4
-  # Mon Dec 18 03:28:32 UTC 2023 -- Mon Dec 18 14:28:32 AEDT 2023
+  # virgil 20231218.12
+  # Mon Dec 18 12:11:43 UTC 2023 -- Mon Dec 18 23:11:43 AEDT 2023
   #
-  # Merged PR 18409: Hardware profile for ThinkSystem SR650v2 added
-  # f2dca5987c6cd885293d24ee7a39dc1686db1698
-  virgil_build_id: '800145'
+  # Merged PR 18438: Update port settings
+  # e0652794d54b6e0fdb0b466ef6bc97062d5e1e5a
+  virgil_build_id: '800536'
