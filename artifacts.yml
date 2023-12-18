@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231218.2
-  # Mon Dec 18 03:38:38 UTC 2023 -- Mon Dec 18 14:38:38 AEDT 2023
+  # Dante Build Artifact 20231218.3
+  # Mon Dec 18 04:28:01 UTC 2023 -- Mon Dec 18 15:28:01 AEDT 2023
   #
-  # Merged PR 18419: Add crio 1.27 mirror
-  # e80e40a20caa779495049b6762a07acf8eccb851
-  dante_build_id: '800169'
+  # Merge pull request 18425 from dante_artifact_upgrade into master
+  # e7cf0d89d64bbcaf90731e3341151b70a19060c9
+  dante_build_id: '800222'
 
   # virgil 20231218.4
   # Mon Dec 18 03:28:32 UTC 2023 -- Mon Dec 18 14:28:32 AEDT 2023
