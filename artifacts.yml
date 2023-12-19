@@ -7,9 +7,9 @@ variables:
   # 192b3741a9a478031bbc5db2f04b2bf1ae985579
   dante_build_id: '801131'
 
-  # virgil 20231218.12
-  # Mon Dec 18 12:11:43 UTC 2023 -- Mon Dec 18 23:11:43 AEDT 2023
+  # virgil 20231219.5
+  # Tue Dec 19 01:28:59 UTC 2023 -- Tue Dec 19 12:28:59 AEDT 2023
   #
-  # Merged PR 18438: Update port settings
-  # e0652794d54b6e0fdb0b466ef6bc97062d5e1e5a
-  virgil_build_id: '800536'
+  # Merged PR 18461: ebableswp31/32onApex63/64
+  # b4f45a52e119dc1382224964ba03894e2c564d51
+  virgil_build_id: '801168'
