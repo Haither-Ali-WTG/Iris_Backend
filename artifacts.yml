@@ -7,9 +7,9 @@ variables:
   # 9442086a27a15cd59ea964bf485b7e64c798ac4d
   dante_build_id: '801414'
 
-  # virgil 20231219.18
-  # Tue Dec 19 03:08:58 UTC 2023 -- Tue Dec 19 14:08:58 AEDT 2023
+  # virgil 20231220.2
+  # Tue Dec 19 16:34:24 UTC 2023 -- Wed Dec 20 03:34:24 AEDT 2023
   #
-  # Merged PR 18485: configure ports for NTP appliances on apex17/18
-  # 183db1f84ad12e64d2fb9ccba4270b7685abcbdd
-  virgil_build_id: '801332'
+  # Merged PR 17725: Updated teardowns.yaml
+  # b92f25571394c36b2fcdef60dc33a7ed7e65ec2c
+  virgil_build_id: '801982'
