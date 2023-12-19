@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231219.2
-  # Mon Dec 18 23:47:02 UTC 2023 -- Tue Dec 19 10:47:02 AEDT 2023
+  # Dante Build Artifact 20231219.3
+  # Tue Dec 19 01:00:44 UTC 2023 -- Tue Dec 19 12:00:44 AEDT 2023
   #
-  # Merge pull request 18441 from dante_artifact_upgrade into master
-  # 0367bb456cbbb02120087794266b7bbff67b5a11
-  dante_build_id: '801036'
+  # Merged PR 18452: Added Commvault media agent drivers to Windows ISO
+  # 192b3741a9a478031bbc5db2f04b2bf1ae985579
+  dante_build_id: '801131'
 
   # virgil 20231218.12
   # Mon Dec 18 12:11:43 UTC 2023 -- Mon Dec 18 23:11:43 AEDT 2023
