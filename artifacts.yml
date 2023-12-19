@@ -7,9 +7,9 @@ variables:
   # 6bb55e3cdbd03ca551bf6fefe976b9dbb72c9abd
   dante_build_id: '801254'
 
-  # virgil 20231219.11
-  # Tue Dec 19 02:21:42 UTC 2023 -- Tue Dec 19 13:21:42 AEDT 2023
+  # virgil 20231219.18
+  # Tue Dec 19 03:08:58 UTC 2023 -- Tue Dec 19 14:08:58 AEDT 2023
   #
-  # Merged PR 18469: New Elastic nodes
-  # 4a37ecd600a582ed906c9318561904af05ea2d04
-  virgil_build_id: '801246'
+  # Merged PR 18485: configure ports for NTP appliances on apex17/18
+  # 183db1f84ad12e64d2fb9ccba4270b7685abcbdd
+  virgil_build_id: '801332'
