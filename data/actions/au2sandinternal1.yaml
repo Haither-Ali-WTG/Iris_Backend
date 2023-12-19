@@ -14,3 +14,12 @@ https_redirect:
   actions:
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_bolero_sand_wtg_zone !{ ssl_fc }
+
+bolero_backend_redirect:
+  description: |-
+    Redirect bolero webservices to the correct port based on hostname
+    requests to *5001.bolero.sand.wtg.zone should go to the 5001 backend and so on
+  order: 90
+  actions:
+    - use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("^.*(50[0-9]{2}_)","\1")'] if star_bolero_sand_wtg_zone
