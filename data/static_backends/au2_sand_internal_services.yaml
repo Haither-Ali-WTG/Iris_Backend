@@ -13,3 +13,153 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
     - name: AU2SP-SIIS-402B
       ip: 10.2.69.78
       port: 80
+
+5001.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5001
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5001
+
+5002.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5002
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5002
+
+5003.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5003
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5003
+5004.bolero.sand.wtg.zone:
+
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5004
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5004
+
+5005.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5005
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5005
+
+5006.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5006
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5006
+
+5007.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5007
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5007
+
+5008.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5008
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5008
+
+5009.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5009
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5009
+
+5010.bolero.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: BOL
+    secure: true
+  servers:
+    - name: AU2SP-SBOL-401
+      ip: 10.2.118.10
+      port: 5010
+    - name: AU2SP-SBOL-402
+      ip: 10.2.118.19
+      port: 5010

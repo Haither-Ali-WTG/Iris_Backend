@@ -8,3 +8,8 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
+
+star_bolero_sand_wtg_zone:
+  description: "*.bolero.sand.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?bolero\.sand\.wtg\.zone$
