@@ -81,6 +81,7 @@ clustered_instances:
         - star-wtg-zone
         - star-testrig3-sand-wtg-zone
         - star-testrig-sand-wtg-zone
+        - star-bolero-sand-wtg-zone
       stats:
         ports:
           web: 2047
