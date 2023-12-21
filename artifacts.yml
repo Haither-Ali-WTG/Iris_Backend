@@ -7,9 +7,9 @@ variables:
   # f6e5eb465b977c661715e2b97b319d9e7011103c
   dante_build_id: '803449'
 
-  # virgil 20231221.3
-  # Wed Dec 20 23:09:47 UTC 2023 -- Thu Dec 21 10:09:47 AEDT 2023
+  # virgil 20231221.12
+  # Thu Dec 21 02:38:32 UTC 2023 -- Thu Dec 21 13:38:32 AEDT 2023
   #
-  # Merge pull request 18542 from virgil_python_upgrade into master
-  # 9f8db2908c211d94001c531691d51378cd969d89
-  virgil_build_id: '803377'
+  # Merged PR 18561: Add kafka topic for ediprod audit billing (CS01489819)
+  # 8a180c600c698cdddaf0ee7ae7bb879701146318
+  virgil_build_id: '803592'
