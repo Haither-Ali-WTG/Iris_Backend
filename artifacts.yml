@@ -7,9 +7,9 @@ variables:
   # 55dbc5de719606956f8194f56f437f150c259a0e
   dante_build_id: '809097'
 
-  # virgil 20231227.1
-  # Tue Dec 26 22:39:41 UTC 2023 -- Wed Dec 27 09:39:41 AEDT 2023
+  # virgil 20231228.3
+  # Thu Dec 28 05:37:21 UTC 2023 -- Thu Dec 28 16:37:21 AEDT 2023
   #
-  # Merge pull request 18593 from virgil_python_upgrade into master
-  # 5705574fdd434a4b4977ce452dabf9f50b9b42c0
-  virgil_build_id: '809009'
+  # Merged PR 18600: update-iris-node-port
+  # d5db94b6877dce398a48c34b087a7736dbbf10ba
+  virgil_build_id: '810390'
