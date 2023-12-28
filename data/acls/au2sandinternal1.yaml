@@ -13,3 +13,17 @@ star_bolero_sand_wtg_zone:
   description: "*.bolero.sand.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?bolero\.sand\.wtg\.zone$
+
+star_testrig_sand_wtg_zone:
+  description: |-
+    *.testrig.sand.wtg.zone
+    *.testrig3.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?testrig3?\.sand\.wtg\.zone$
+
+excluded_from_redirect_paths:
+  description: |-
+    Paths that should be excluded from the HTTPS redirect because
+    the webservices don't support HTTPS
+  tests:
+    - path_beg -i /Warehouse/webservice
