@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20231231.1
-  # Sun Dec 31 00:47:09 UTC 2023 -- Sun Dec 31 11:47:09 AEDT 2023
+  # Dante Build Artifact 20240102.1
+  # Tue Jan  2 01:48:19 UTC 2024 -- Tue Jan  2 12:48:19 AEDT 2024
   #
-  # Merge pull request 18658 from dante_artifact_upgrade into master
-  # e611bf1dbfc58ad93315fd4ccc8f043d7701cee8
-  dante_build_id: '813012'
+  # Merged PR 18675: Supported offline install fro Ubuntu 22.04.3
+  # 20ac6ce3a7dfd137d17ad2349d83d7a1df862279
+  dante_build_id: '814920'
 
   # virgil 20231231.1
   # Sat Dec 30 23:34:24 UTC 2023 -- Sun Dec 31 10:34:24 AEDT 2023
