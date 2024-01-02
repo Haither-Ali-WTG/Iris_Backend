@@ -7,9 +7,9 @@ variables:
   # 20ac6ce3a7dfd137d17ad2349d83d7a1df862279
   dante_build_id: '814920'
 
-  # virgil 20231231.1
-  # Sat Dec 30 23:34:24 UTC 2023 -- Sun Dec 31 10:34:24 AEDT 2023
+  # virgil 20240102.3
+  # Tue Jan  2 06:03:43 UTC 2024 -- Tue Jan  2 17:03:43 AEDT 2024
   #
-  # Merged PR 18652: Pre-provision more ports
-  # a576afbba535f2bf3601a1861e0ad9c297ddbec9
-  virgil_build_id: '812955'
+  # Merged PR 18650: CS01479129 - Virgil - Add customs collector topics
+  # 5b2d3cdff7bef03ce9d6fbe6187ee23a351b0507
+  virgil_build_id: '815194'
