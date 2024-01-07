@@ -7,9 +7,9 @@ variables:
   # beea65495d2a930d8d487afabc19613ee4a98f5f
   dante_build_id: '816829'
 
-  # virgil 20240103.4
-  # Wed Jan  3 00:49:09 UTC 2024 -- Wed Jan  3 11:49:09 AEDT 2024
+  # virgil 20240108.1
+  # Sun Jan  7 22:42:32 UTC 2024 -- Mon Jan  8 09:42:32 AEDT 2024
   #
-  # Merged PR 18705: Virgil - Put dante on demand due to broken hardware on 77 and 81
-  # ffc4bca5dc5799c5cac1db7075f6d95f5b1b7592
-  virgil_build_id: '815978'
+  # Merge pull request 18668 from virgil_python_upgrade into master
+  # 84da62e567320412ca9f17248dcc1b9bd9b618eb
+  virgil_build_id: '820655'
