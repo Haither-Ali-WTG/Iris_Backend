@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240104.1
-  # Wed Jan  3 21:52:28 UTC 2024 -- Thu Jan  4 08:52:28 AEDT 2024
+  # Dante Build Artifact 20240108.1
+  # Sun Jan  7 23:45:17 UTC 2024 -- Mon Jan  8 10:45:17 AEDT 2024
   #
-  # Merged PR 18704: Add all virgil ssh keys to simulation nodes
-  # beea65495d2a930d8d487afabc19613ee4a98f5f
-  dante_build_id: '816829'
+  # Merge pull request 18769 from dante_artifact_upgrade into master
+  # 1dcfe742068c4f89b9491f9eec3d0616f10599c7
+  dante_build_id: '820731'
 
   # virgil 20240108.1
   # Sun Jan  7 22:42:32 UTC 2024 -- Mon Jan  8 09:42:32 AEDT 2024
