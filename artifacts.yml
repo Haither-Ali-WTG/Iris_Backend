@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240109.3
-  # Tue Jan  9 05:05:15 UTC 2024 -- Tue Jan  9 16:05:15 AEDT 2024
+  # Dante Build Artifact 20240109.4
+  # Tue Jan  9 06:45:33 UTC 2024 -- Tue Jan  9 17:45:33 AEDT 2024
   #
-  # Merged PR 18712: Dante - Remove firmware upgrade from rebuild
-  # e45bfe5a658732dafa89875e79ac6416eadfe042
-  dante_build_id: '822090'
+  # Merge pull request 18837 from dante_artifact_upgrade into master
+  # a49733b4caf06e142267c3f7e12c2ade26cd645a
+  dante_build_id: '822209'
 
   # virgil 20240109.14
   # Tue Jan  9 05:40:34 UTC 2024 -- Tue Jan  9 16:40:34 AEDT 2024
