@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240109.1
-  # Mon Jan  8 22:06:55 UTC 2024 -- Tue Jan  9 09:06:55 AEDT 2024
+  # Dante Build Artifact 20240109.2
+  # Tue Jan  9 02:25:34 UTC 2024 -- Tue Jan  9 13:25:34 AEDT 2024
   #
-  # Merged PR 18781: Add brandshelter into automated upgrade python
-  # fa9dd6013094db013598e0e8279b4cd12db5d121
-  dante_build_id: '821711'
+  # Merge pull request 18815 from dante_artifact_upgrade into master
+  # a5e29b3b477a1782fb2da3ce8ec6f3470e868a0e
+  dante_build_id: '821937'
 
   # virgil 20240109.2
   # Tue Jan  9 01:18:22 UTC 2024 -- Tue Jan  9 12:18:22 AEDT 2024
