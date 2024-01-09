@@ -7,9 +7,9 @@ variables:
   # fa9dd6013094db013598e0e8279b4cd12db5d121
   dante_build_id: '821711'
 
-  # virgil 20240108.7
-  # Mon Jan  8 00:45:45 UTC 2024 -- Mon Jan  8 11:45:45 AEDT 2024
+  # virgil 20240109.2
+  # Tue Jan  9 01:18:22 UTC 2024 -- Tue Jan  9 12:18:22 AEDT 2024
   #
-  # Merged PR 18780: Updated teardowns.yaml by removing incorrectly added instances.
-  # 3208d1a10b3af7f7a623307022dbddff0b2573f8
-  virgil_build_id: '820816'
+  # Merged PR 18788: corp-hyperv-sy5
+  # 2956b140a52fdafd791141b957cd7235884d3a98
+  virgil_build_id: '821879'
