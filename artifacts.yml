@@ -7,9 +7,9 @@ variables:
   # e45bfe5a658732dafa89875e79ac6416eadfe042
   dante_build_id: '822090'
 
-  # virgil 20240109.2
-  # Tue Jan  9 01:18:22 UTC 2024 -- Tue Jan  9 12:18:22 AEDT 2024
+  # virgil 20240109.14
+  # Tue Jan  9 05:40:34 UTC 2024 -- Tue Jan  9 16:40:34 AEDT 2024
   #
-  # Merged PR 18788: corp-hyperv-sy5
-  # 2956b140a52fdafd791141b957cd7235884d3a98
-  virgil_build_id: '821879'
+  # Merge pull request 18801 from virgil_python_upgrade into master
+  # cc63e4280271c994422e778a1eac9f770d1d576b
+  virgil_build_id: '822132'
