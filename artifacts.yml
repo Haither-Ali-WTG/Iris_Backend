@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240110.2
-  # Wed Jan 10 02:18:29 UTC 2024 -- Wed Jan 10 13:18:29 AEDT 2024
+  # Dante Build Artifact 20240110.3
+  # Wed Jan 10 05:25:35 UTC 2024 -- Wed Jan 10 16:25:35 AEDT 2024
   #
-  # Merged PR 18849: Unpin the python lib versions in brandshelter
-  # c3bf17203189b28f05849abc6a96e59616cdc6ce
-  dante_build_id: '823050'
+  # Merge pull request 18868 from dante_artifact_upgrade into master
+  # 0c20ea6a4433a83bc222096be1f447e65b876441
+  dante_build_id: '823227'
 
-  # virgil 20240110.5
-  # Wed Jan 10 04:25:06 UTC 2024 -- Wed Jan 10 15:25:06 AEDT 2024
+  # virgil 20240110.12
+  # Wed Jan 10 05:28:46 UTC 2024 -- Wed Jan 10 16:28:46 AEDT 2024
   #
-  # Merged PR 18847: Adding aliases for Platform Core Docs DNS entries
-  # da2b74c88492b38c6249b4d536e92379c0fea85d
-  virgil_build_id: '823163'
+  # Merged PR 18120: Support decommission a Node in Virgil
+  # 0e13df3c4c82e013fc7e521ad409550e1510acd8
+  virgil_build_id: '823231'
