@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240109.4
-  # Tue Jan  9 06:45:33 UTC 2024 -- Tue Jan  9 17:45:33 AEDT 2024
+  # Dante Build Artifact 20240110.1
+  # Wed Jan 10 01:25:47 UTC 2024 -- Wed Jan 10 12:25:47 AEDT 2024
   #
-  # Merge pull request 18837 from dante_artifact_upgrade into master
-  # a49733b4caf06e142267c3f7e12c2ade26cd645a
-  dante_build_id: '822209'
+  # Merged PR 18845: Python lib cryptography upgrade
+  # 50f52b292d39b19095a645e260b7c6ad96926ee9
+  dante_build_id: '822983'
 
   # virgil 20240109.14
   # Tue Jan  9 05:40:34 UTC 2024 -- Tue Jan  9 16:40:34 AEDT 2024
