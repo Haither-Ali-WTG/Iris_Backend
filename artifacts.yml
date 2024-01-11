@@ -7,9 +7,9 @@ variables:
   # 99baf7de96e8c35fc27455f6dbbb78f6bce60366
   dante_build_id: '823314'
 
-  # virgil 20240110.19
-  # Wed Jan 10 06:21:08 UTC 2024 -- Wed Jan 10 17:21:08 AEDT 2024
+  # virgil 20240111.13
+  # Thu Jan 11 01:16:48 UTC 2024 -- Thu Jan 11 12:16:48 AEDT 2024
   #
-  # Merge pull request 18858 from virgil_python_upgrade into master
-  # d1d9e28a2a53c43c56e1a98a044f78a00d4dc7c6
-  virgil_build_id: '823308'
+  # Merged PR 18896: addNewDATnetwork
+  # 91d21befea09c96e8af89cc8b197130ed107fb4b
+  virgil_build_id: '824121'
