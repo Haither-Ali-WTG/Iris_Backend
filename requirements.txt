@@ -6,7 +6,7 @@
 #
 ansible==9.1.0
     # via -r requirements.in
-ansible-compat==4.1.10
+ansible-compat==4.1.11
     # via ansible-lint
 ansible-core==2.16.2
     # via
@@ -71,7 +71,7 @@ filelock==3.13.1
     # via ansible-lint
 gitdb==4.0.11
     # via gitpython
-gitpython==3.1.40
+gitpython==3.1.41
     # via bandit
 idna==3.6
     # via requests
