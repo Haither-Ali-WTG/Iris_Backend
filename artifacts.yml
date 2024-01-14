@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240112.2
-  # Fri Jan 12 05:36:21 UTC 2024 -- Fri Jan 12 16:36:21 AEDT 2024
+  # Dante Build Artifact 20240115.1
+  # Sun Jan 14 23:01:18 UTC 2024 -- Mon Jan 15 10:01:18 AEDT 2024
   #
-  # Merged PR 18958: K8s/dpkg - Handle error from hold packages - Ubuntu
-  # 4af4f03d6ff72aa2657e3dd0fca3a5df29ad7281
-  dante_build_id: '825506'
+  # Merge pull request 18975 from dante_artifact_upgrade into master
+  # e2a73e9aede5eae477b69c0d5e610ab3ab967735
+  dante_build_id: '828034'
 
   # virgil 20240115.2
   # Sun Jan 14 21:48:32 UTC 2024 -- Mon Jan 15 08:48:32 AEDT 2024
