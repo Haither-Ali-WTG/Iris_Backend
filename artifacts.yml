@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240115.2
-  # Sun Jan 14 23:52:10 UTC 2024 -- Mon Jan 15 10:52:10 AEDT 2024
+  # Dante Build Artifact 20240115.3
+  # Mon Jan 15 01:32:01 UTC 2024 -- Mon Jan 15 12:32:01 AEDT 2024
   #
-  # Merged PR 18982: Renew wtg.ws - remove redundant checks
-  # 192477cd5cbeac0c9f89602e79c6d3516576e232
-  dante_build_id: '828103'
+  # Merged PR 18981: Change key vault for wtg.ws to prod
+  # 69ad758b747ca8fdb9bed46e2802d2d8d230ba38
+  dante_build_id: '828239'
 
   # virgil 20240115.2
   # Sun Jan 14 21:48:32 UTC 2024 -- Mon Jan 15 08:48:32 AEDT 2024
