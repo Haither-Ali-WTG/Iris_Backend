@@ -7,9 +7,9 @@ variables:
   # 69ad758b747ca8fdb9bed46e2802d2d8d230ba38
   dante_build_id: '828239'
 
-  # virgil 20240115.2
-  # Sun Jan 14 21:48:32 UTC 2024 -- Mon Jan 15 08:48:32 AEDT 2024
+  # virgil 20240115.7
+  # Mon Jan 15 04:57:15 UTC 2024 -- Mon Jan 15 15:57:15 AEDT 2024
   #
-  # Merge pull request 18944 from virgil_python_upgrade into master
-  # af3aab69d1f818aa48d88961449d5a74031d511f
-  virgil_build_id: '827921'
+  # Merged PR 18957: Virgil - Move Q1 Kafka Queues back to continuous
+  # ee9c8cdb5e278b799c047ebd91051421312ee2e3
+  virgil_build_id: '828404'
