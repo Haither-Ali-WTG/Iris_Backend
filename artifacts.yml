@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240115.3
-  # Mon Jan 15 01:32:01 UTC 2024 -- Mon Jan 15 12:32:01 AEDT 2024
+  # Dante Build Artifact 20240116.2
+  # Tue Jan 16 06:27:25 UTC 2024 -- Tue Jan 16 17:27:25 AEDT 2024
   #
-  # Merged PR 18981: Change key vault for wtg.ws to prod
-  # 69ad758b747ca8fdb9bed46e2802d2d8d230ba38
-  dante_build_id: '828239'
+  # Merge pull request 19043 from dante_artifact_upgrade into master
+  # 460d64d047cc948983810b1c1eb8caaca7b3253f
+  dante_build_id: '829519'
 
-  # virgil 20240115.7
-  # Mon Jan 15 04:57:15 UTC 2024 -- Mon Jan 15 15:57:15 AEDT 2024
+  # virgil 20240116.1
+  # Tue Jan 16 05:23:25 UTC 2024 -- Tue Jan 16 16:23:25 AEDT 2024
   #
-  # Merged PR 18957: Virgil - Move Q1 Kafka Queues back to continuous
-  # ee9c8cdb5e278b799c047ebd91051421312ee2e3
-  virgil_build_id: '828404'
+  # Merged PR 18799: DEC2023  Updated teardowns.yaml
+  # 0cec795389e2521b18a7332781b90e556d8baa15
+  virgil_build_id: '829467'
