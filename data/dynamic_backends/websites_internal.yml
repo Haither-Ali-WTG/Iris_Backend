@@ -54,6 +54,7 @@
   server_regex: '^au2sp'
   encryption: false
   health_check: "/"
+  check_expect: '200|401|403|302|405|500'
   port: 80
   balance: first
   cookie:
