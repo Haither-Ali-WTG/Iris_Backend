@@ -6,7 +6,7 @@ website:
   name_exclude_regex: include('regex', required=False)
   server_regex: include('regex', required=False)
   health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
-  check_expect: regex('^([0-9]{3}[|]?)+', name='health check status code', required=False)
+  check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)
   balance: enum('leastconn', 'source', 'first', required=False)
   cookie: any(include('dynamic_cookie_on'), include('dynamic_cookie_off'))
   encryption: bool(required=False)
