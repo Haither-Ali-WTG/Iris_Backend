@@ -10,16 +10,6 @@
   maintenance_page: example.html
   name_suffix: ''
 
-- name_regex: glow|^www-
-  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  encryption: true
-  health_check: /Glow/wtg/another_healthcheck
-  port: 4443
-  balance: first
-  cookie:
-    enabled: false
-  name_suffix: '-backend2'
-
 - name_regex: services|accounting|^svc-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
