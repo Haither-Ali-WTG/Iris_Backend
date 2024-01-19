@@ -4,6 +4,7 @@ clustered_instances:
   hosts:
     au2prodfrontend1prodservices:
       # au2-prod-frontend-1-prod-services
+      dc: AU2
       frontend:
         maxconn: 20000
         ports:
@@ -77,6 +78,7 @@ clustered_instances:
           - best_practice_2023
     au1prodfrontend1:
       # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
       frontend:
         maxconn: 20000
       machine_cluster: nowhere  # au2-prod-frontend-1
@@ -101,6 +103,7 @@ clustered_instances:
 
     au2prodceph1:
       # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
       frontend:
         maxconn: 20000
       machine_cluster: nowhere  # au2-prod-frontend-1
@@ -116,6 +119,7 @@ clustered_instances:
 
     au2corprdg:
       # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
       frontend:
         maxconn: 20000
         ports:
@@ -134,6 +138,7 @@ clustered_instances:
 
     au2sandinternal1:
       # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
       frontend:
         maxconn: 20000
         ports:
