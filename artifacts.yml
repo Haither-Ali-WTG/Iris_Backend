@@ -7,9 +7,9 @@ variables:
   # 460d64d047cc948983810b1c1eb8caaca7b3253f
   dante_build_id: '829519'
 
-  # virgil 20240116.1
-  # Tue Jan 16 05:23:25 UTC 2024 -- Tue Jan 16 16:23:25 AEDT 2024
+  # virgil 20240119.4
+  # Fri Jan 19 03:15:51 UTC 2024 -- Fri Jan 19 14:15:51 AEDT 2024
   #
-  # Merged PR 18799: DEC2023  Updated teardowns.yaml
-  # 0cec795389e2521b18a7332781b90e556d8baa15
-  virgil_build_id: '829467'
+  # Merged PR 19085: added topics for identityproviderservice
+  # e564a01c91049eef158eaed4715054ecbe39722e
+  virgil_build_id: '832184'
