@@ -7,9 +7,9 @@ variables:
   # 4f710347085ba2665dfa2f83d372298642b142ee
   dante_build_id: '832237'
 
-  # virgil 20240119.4
-  # Fri Jan 19 03:15:51 UTC 2024 -- Fri Jan 19 14:15:51 AEDT 2024
+  # virgil 20240121.1
+  # Sun Jan 21 00:09:21 UTC 2024 -- Sun Jan 21 11:09:21 AEDT 2024
   #
-  # Merged PR 19085: added topics for identityproviderservice
-  # e564a01c91049eef158eaed4715054ecbe39722e
-  virgil_build_id: '832184'
+  # Merged PR 19099: Replace us2-leaf6-a due to boot drive failure
+  # 273b9e3aaca11d00bff4faa01ec4c4b8ca290105
+  virgil_build_id: '833639'
