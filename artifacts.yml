@@ -7,9 +7,9 @@ variables:
   # cc37784d03a75e29893e704904ae6ee37902adc6
   dante_build_id: '833685'
 
-  # virgil 20240121.1
-  # Sun Jan 21 00:09:21 UTC 2024 -- Sun Jan 21 11:09:21 AEDT 2024
+  # virgil 20240122.2
+  # Sun Jan 21 22:24:06 UTC 2024 -- Mon Jan 22 09:24:06 AEDT 2024
   #
-  # Merged PR 19099: Replace us2-leaf6-a due to boot drive failure
-  # 273b9e3aaca11d00bff4faa01ec4c4b8ca290105
-  virgil_build_id: '833639'
+  # Merge pull request 19076 from virgil_python_upgrade into master
+  # 2543e840cadf046e0c70ff483558f2f96cdef62d
+  virgil_build_id: '834367'
