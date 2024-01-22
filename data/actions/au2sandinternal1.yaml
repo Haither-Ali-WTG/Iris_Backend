@@ -26,3 +26,13 @@ bolero_backend_redirect:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("^.*(50[0-9]{2}_)","\1")']
         if star_bolero_sand_wtg_zone
+
+token_validation_service_backend:
+  description: |-
+    Use token validation service backend when requests come to 
+    login.wisetechglobal.com/certificates/
+  order: 90
+  actions:
+    - >-
+        use_backend token_validation_service_staging
+        if login-staging_wisetechglobal_com token_validation_service_path

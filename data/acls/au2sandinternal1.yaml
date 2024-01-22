@@ -27,3 +27,15 @@ excluded_from_redirect_paths:
     the webservices don't support HTTPS
   tests:
     - path_beg -i /Warehouse/webservice
+
+token_validation_service_path:
+  description: |-
+    Token Validation Service owned by the security and identity 
+    team
+  tests:
+    - path_beg -i /certificates/
+
+login-staging_wisetechglobal_com:
+  description: "login-staging.wisetechglobal.com"
+  tests:
+    - hdr(host) -m reg -i ^login-staging\.wisetechglobal\.com$
