@@ -29,7 +29,7 @@ bolero_backend_redirect:
 
 token_validation_service_backend:
   description: |-
-    Use token validation service backend when requests come to 
+    Use token validation service backend when requests come to
     login.wisetechglobal.com/certificates/
   order: 90
   actions:

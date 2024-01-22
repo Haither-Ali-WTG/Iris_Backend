@@ -30,7 +30,7 @@ excluded_from_redirect_paths:
 
 token_validation_service_path:
   description: |-
-    Token Validation Service owned by the security and identity 
+    Token Validation Service owned by the security and identity
     team
   tests:
     - path_beg -i /certificates/
