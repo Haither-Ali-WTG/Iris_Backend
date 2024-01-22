@@ -35,7 +35,7 @@ token_validation_service_path:
   tests:
     - path_beg -i /certificates/
 
-login-staging_wisetechglobal_com:
+login-staging_wisetechglobal_com_host:
   description: "login-staging.wisetechglobal.com"
   tests:
     - hdr(host) -m reg -i ^login-staging\.wisetechglobal\.com$
