@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240123.2
-  # Tue Jan 23 06:05:41 UTC 2024 -- Tue Jan 23 17:05:41 AEDT 2024
+  # Dante Build Artifact 20240123.3
+  # Tue Jan 23 11:12:20 UTC 2024 -- Tue Jan 23 22:12:20 AEDT 2024
   #
-  # Merged PR 18922: Change the Kerberos KDC address
-  # 825ab710caecec95845bbe3c48fb609b7a1a3cce
-  dante_build_id: '835640'
+  # Merged PR 19142: PFX Certificate Management
+  # dbcd4013b71492f41aa9efb2609673c403ad587d
+  dante_build_id: '835819'
 
   # virgil 20240122.2
   # Sun Jan 21 22:24:06 UTC 2024 -- Mon Jan 22 09:24:06 AEDT 2024
