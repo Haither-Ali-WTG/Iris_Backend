@@ -34,5 +34,5 @@ token_validation_service_backend:
   order: 90
   actions:
     - >-
-        use_backend token_validation_service_staging
+        use_backend token-validation-service-staging
         if login-staging_wisetechglobal_com_host token_validation_service_path
