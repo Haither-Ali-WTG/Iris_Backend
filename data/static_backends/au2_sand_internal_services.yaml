@@ -163,3 +163,18 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
     - name: AU2SP-SBOL-402
       ip: 10.2.118.19
       port: 5010
+
+token-validation-service-staging:
+  clustered_instances: [au2sandinternal1]
+  health_check: /certificates/wtg/ready
+  encryption: false
+  cookie:
+    name: TVSP
+    secure: true
+  servers:
+    - name: AU2SP-SISS-401
+      ip: 10.2.118.25
+      port: 5000
+    - name: AU2SP-SISS-402
+      ip: 10.2.118.32
+      port: 5000
