@@ -1,0 +1,33 @@
+---
+- name: Backup the server states file
+  copy:
+    remote_src: true
+    src: "{{ states_file }}"
+    dest: "{{ states_file }}.bak"
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  changed_when: false
+
+- name: Copy update_globalstate.py to target node
+  copy:
+    src: update_globalstate.py
+    dest: "{{ individual_instance_dir }}/update_globalstate.py"
+    mode: u=rx,go=
+  become: yes
+
+- name: Execute the python script to update state file
+  command: >
+    python3 {{ individual_instance_dir }}/update_globalstate.py
+    --config {{ cfg_file }}
+    --state_file {{ states_file }}
+  register: script_output
+  become: yes
+  changed_when: false
+
+- name: Output the log of script
+  debug:
+    var: script_output.stdout_lines
+  changed_when: true
+  when: script_output.stdout_lines | length > 0

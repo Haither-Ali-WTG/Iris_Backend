@@ -157,6 +157,29 @@
   assert:
     that: not needs_restart_stat.stat.exists
 
+- name: Save Global state to allow faster reloads
+  shell:
+    cmd: |
+      set -o pipefail
+      echo 'show servers state' \
+      | nc -U {{ individual_instance_dir }}/run/haproxy.sock \
+      > {{ individual_instance_dir }}/run/global-state
+    executable: /bin/bash
+  become: yes
+  changed_when: true
+  when:
+    - container_exists
+    - haproxy_config.changed
+
+- name: Update server states file
+  include_tasks: update_states_file.yml
+  vars:
+    cfg_file: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+    states_file: "{{ individual_instance_dir }}/run/global-state"
+  when:
+    - container_exists
+    - haproxy_config.changed
+
 - name: Reload haproxy
   # This cannot be a handler as `include_role` is not supported in handlers
   vars:
