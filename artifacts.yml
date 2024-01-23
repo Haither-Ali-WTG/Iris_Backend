@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240122.2
-  # Mon Jan 22 05:44:39 UTC 2024 -- Mon Jan 22 16:44:39 AEDT 2024
+  # Dante Build Artifact 20240123.1
+  # Tue Jan 23 04:20:53 UTC 2024 -- Tue Jan 23 15:20:53 AEDT 2024
   #
-  # Merged PR 19128: Notify Teams about stalled haproxy PRs older than 48 hours
-  # 2dc97204232f21802b4d12fb1603b6242000b194
-  dante_build_id: '834702'
+  # Merged PR 19143: Fixed check for 48 hours old PR for haproxy notifier
+  # 23b74b4355183affe8b4e21a4147ddef1992196d
+  dante_build_id: '835534'
 
   # virgil 20240122.2
   # Sun Jan 21 22:24:06 UTC 2024 -- Mon Jan 22 09:24:06 AEDT 2024
