@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240124.1
-  # Tue Jan 23 23:06:54 UTC 2024 -- Wed Jan 24 10:06:54 AEDT 2024
+  # Dante Build Artifact 20240124.2
+  # Wed Jan 24 01:05:55 UTC 2024 -- Wed Jan 24 12:05:55 AEDT 2024
   #
-  # Merged PR 19072: Schedule deploy certificates 4 times a day
-  # 3467ee42fe9a34a3af708ecffed37dc69edbc448
-  dante_build_id: '836254'
+  # Merge pull request 19184 from dante_artifact_upgrade into master
+  # f239cd69443f741fecccf0f1d362a8ebbe61cd82
+  dante_build_id: '836389'
 
   # virgil 20240124.9
   # Tue Jan 23 23:48:20 UTC 2024 -- Wed Jan 24 10:48:20 AEDT 2024
