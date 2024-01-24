@@ -7,9 +7,9 @@ variables:
   # f239cd69443f741fecccf0f1d362a8ebbe61cd82
   dante_build_id: '836389'
 
-  # virgil 20240124.9
-  # Tue Jan 23 23:48:20 UTC 2024 -- Wed Jan 24 10:48:20 AEDT 2024
+  # virgil 20240124.18
+  # Wed Jan 24 04:50:22 UTC 2024 -- Wed Jan 24 15:50:22 AEDT 2024
   #
-  # Merged PR 19189: Creating topics for customs connector application
-  # 5b21f83d212b234935fe4491a54706dab22e75e5
-  virgil_build_id: '836305'
+  # Merged PR 19209: Virgil - Create 2 queues and modify a queue for eservices
+  # ee1d630c9f660e6a92b938b53c1919e7905b71ef
+  virgil_build_id: '836589'
