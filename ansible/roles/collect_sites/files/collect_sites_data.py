@@ -70,7 +70,7 @@ def get_websites_list(server_name, connection_params):
     if not sites_list[-1]:
         del sites_list[-1]
     sites_list.sort()
-    return sites_list
+    return [item.lower() for item in sites_list]
 
 
 def process_server(server_name, connection_params, output_path, logger):
