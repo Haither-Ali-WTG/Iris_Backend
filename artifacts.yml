@@ -7,9 +7,9 @@ variables:
   # 3467ee42fe9a34a3af708ecffed37dc69edbc448
   dante_build_id: '836254'
 
-  # virgil 20240124.2
-  # Tue Jan 23 22:38:30 UTC 2024 -- Wed Jan 24 09:38:30 AEDT 2024
+  # virgil 20240124.9
+  # Tue Jan 23 23:48:20 UTC 2024 -- Wed Jan 24 10:48:20 AEDT 2024
   #
-  # Merge pull request 19175 from virgil_python_upgrade into master
-  # 4efbdac96b5953ad88adf6c665658fe316adce3b
-  virgil_build_id: '836215'
+  # Merged PR 19189: Creating topics for customs connector application
+  # 5b21f83d212b234935fe4491a54706dab22e75e5
+  virgil_build_id: '836305'
