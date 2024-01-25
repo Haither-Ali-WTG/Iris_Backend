@@ -7,9 +7,9 @@ variables:
   # 2b051ceb864e8d4eb3946454d3e57f0b36d4ee32
   dante_build_id: '836670'
 
-  # virgil 20240124.18
-  # Wed Jan 24 04:50:22 UTC 2024 -- Wed Jan 24 15:50:22 AEDT 2024
+  # virgil 20240125.2
+  # Thu Jan 25 00:29:14 UTC 2024 -- Thu Jan 25 11:29:14 AEDT 2024
   #
-  # Merged PR 19209: Virgil - Create 2 queues and modify a queue for eservices
-  # ee1d630c9f660e6a92b938b53c1919e7905b71ef
-  virgil_build_id: '836589'
+  # Merge pull request 19228 from virgil_python_upgrade into master
+  # 6fef54512ada8d0eff665d0984ec03d16e245997
+  virgil_build_id: '837396'
