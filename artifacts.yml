@@ -7,9 +7,9 @@ variables:
   # 9b02f54c912ec88e798d8c1867e67416297f638d
   dante_build_id: '837615'
 
-  # virgil 20240125.7
-  # Thu Jan 25 03:22:45 UTC 2024 -- Thu Jan 25 14:22:45 AEDT 2024
+  # virgil 20240129.3
+  # Sun Jan 28 22:59:55 UTC 2024 -- Mon Jan 29 09:59:55 AEDT 2024
   #
-  # Merged PR 19157: CS01514582 - New Topics for MheService
-  # dd4760d7a9c88e8cf2bd5afc8f8a906d0af13497
-  virgil_build_id: '837564'
+  # Merge pull request 19272 from virgil_python_upgrade into master
+  # 1670fe5fa80b31cc25c0b70f7cdbe7997fc88706
+  virgil_build_id: '840924'
