@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240129.2
-  # Mon Jan 29 01:56:30 UTC 2024 -- Mon Jan 29 12:56:30 AEDT 2024
+  # Dante Build Artifact 20240129.3
+  # Mon Jan 29 03:02:35 UTC 2024 -- Mon Jan 29 14:02:35 AEDT 2024
   #
-  # Merged PR 19289: Bug fix: Use the processed variable "subject_parsed" rather than the origin variable "...
-  # df823b5b0736d5e0c0e53958a1585a7d1386856b
-  dante_build_id: '841073'
+  # Merged PR 19297: Bug fix: Added "failOnStdErr: false".
+  # 0cdcb1f94af46f29530d9fdb578b70c00c63d94c
+  dante_build_id: '841166'
 
   # virgil 20240129.3
   # Sun Jan 28 22:59:55 UTC 2024 -- Mon Jan 29 09:59:55 AEDT 2024
