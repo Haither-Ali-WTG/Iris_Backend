@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240125.2
-  # Thu Jan 25 04:29:07 UTC 2024 -- Thu Jan 25 15:29:07 AEDT 2024
+  # Dante Build Artifact 20240129.1
+  # Sun Jan 28 23:51:23 UTC 2024 -- Mon Jan 29 10:51:23 AEDT 2024
   #
-  # Merge pull request 19258 from dante_artifact_upgrade into master
-  # 9b02f54c912ec88e798d8c1867e67416297f638d
-  dante_build_id: '837615'
+  # Merged PR 19217: Bug fix for the PFX certificate deployment.
+  # 3fd887858b9b4d7aba846e4986ef55c9bb5a004a
+  dante_build_id: '840971'
 
   # virgil 20240129.3
   # Sun Jan 28 22:59:55 UTC 2024 -- Mon Jan 29 09:59:55 AEDT 2024
