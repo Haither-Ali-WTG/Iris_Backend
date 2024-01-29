@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240129.1
-  # Sun Jan 28 23:51:23 UTC 2024 -- Mon Jan 29 10:51:23 AEDT 2024
+  # Dante Build Artifact 20240129.2
+  # Mon Jan 29 01:56:30 UTC 2024 -- Mon Jan 29 12:56:30 AEDT 2024
   #
-  # Merged PR 19217: Bug fix for the PFX certificate deployment.
-  # 3fd887858b9b4d7aba846e4986ef55c9bb5a004a
-  dante_build_id: '840971'
+  # Merged PR 19289: Bug fix: Use the processed variable "subject_parsed" rather than the origin variable "...
+  # df823b5b0736d5e0c0e53958a1585a7d1386856b
+  dante_build_id: '841073'
 
   # virgil 20240129.3
   # Sun Jan 28 22:59:55 UTC 2024 -- Mon Jan 29 09:59:55 AEDT 2024
