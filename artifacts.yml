@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240130.2
-  # Tue Jan 30 00:58:29 UTC 2024 -- Tue Jan 30 11:58:29 AEDT 2024
+  # Dante Build Artifact 20240130.3
+  # Tue Jan 30 04:27:31 UTC 2024 -- Tue Jan 30 15:27:31 AEDT 2024
   #
-  # Merged PR 19298: Added defaults for possible mising build ID
-  # d6966e08f2a42db51d4830259490f83815f385a4
-  dante_build_id: '842089'
+  # Merge pull request 19282 from dante_artifact_upgrade into master
+  # b552bef51e66959ec68940bfb62d53d04a02bb0f
+  dante_build_id: '842304'
 
   # virgil 20240130.6
   # Tue Jan 30 03:29:31 UTC 2024 -- Tue Jan 30 14:29:31 AEDT 2024
