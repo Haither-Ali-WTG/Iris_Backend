@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240129.3
-  # Mon Jan 29 03:02:35 UTC 2024 -- Mon Jan 29 14:02:35 AEDT 2024
+  # Dante Build Artifact 20240130.2
+  # Tue Jan 30 00:58:29 UTC 2024 -- Tue Jan 30 11:58:29 AEDT 2024
   #
-  # Merged PR 19297: Bug fix: Added "failOnStdErr: false".
-  # 0cdcb1f94af46f29530d9fdb578b70c00c63d94c
-  dante_build_id: '841166'
+  # Merged PR 19298: Added defaults for possible mising build ID
+  # d6966e08f2a42db51d4830259490f83815f385a4
+  dante_build_id: '842089'
 
   # virgil 20240129.3
   # Sun Jan 28 22:59:55 UTC 2024 -- Mon Jan 29 09:59:55 AEDT 2024
