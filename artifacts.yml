@@ -7,9 +7,9 @@ variables:
   # b552bef51e66959ec68940bfb62d53d04a02bb0f
   dante_build_id: '842304'
 
-  # virgil 20240130.6
-  # Tue Jan 30 03:29:31 UTC 2024 -- Tue Jan 30 14:29:31 AEDT 2024
+  # virgil 20240130.12
+  # Tue Jan 30 08:26:41 UTC 2024 -- Tue Jan 30 19:26:41 AEDT 2024
   #
-  # Merge pull request 19313 from virgil_python_upgrade into master
-  # c38841c0c88c2463e1743585f7c902d585b00b34
-  virgil_build_id: '842247'
+  # Merged PR 19310: de1-apex21/22/25/26-a will be removed from HH1 r107 and r207
+  # 267f6e503550064b211953136ad9ddd4ceb3eb96
+  virgil_build_id: '842467'
