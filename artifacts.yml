@@ -7,9 +7,9 @@ variables:
   # d3ee2393f97c8fc3592e7f498fd1553f7715b2a3
   dante_build_id: '842526'
 
-  # virgil 20240130.12
-  # Tue Jan 30 08:26:41 UTC 2024 -- Tue Jan 30 19:26:41 AEDT 2024
+  # virgil 20240131.3
+  # Tue Jan 30 21:54:58 UTC 2024 -- Wed Jan 31 08:54:58 AEDT 2024
   #
-  # Merged PR 19310: de1-apex21/22/25/26-a will be removed from HH1 r107 and r207
-  # 267f6e503550064b211953136ad9ddd4ceb3eb96
-  virgil_build_id: '842467'
+  # Merged PR 19375: Added time.wtg.ws for AU and US
+  # d670194cc7d266d5fe68391f4d00d27d61c14932
+  virgil_build_id: '842948'
