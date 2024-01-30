@@ -16,7 +16,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5001.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -31,7 +31,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5002.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -46,7 +46,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5003.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -61,7 +61,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5004.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -76,7 +76,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5005.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -91,7 +91,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5006.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -106,7 +106,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5007.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -121,7 +121,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5008.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -136,7 +136,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5009.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -151,7 +151,7 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5010.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -164,9 +164,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
       ip: 10.2.118.32
       port: 5010
 
-token-validation-service-staging:
+identity-temp-staging.wisetechglobal.com:
   clustered_instances: [au2sandinternal1]
-  health_check: /certificates/wtg/ready
+  health_check: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -174,7 +174,7 @@ token-validation-service-staging:
   servers:
     - name: AU2SP-SISS-401
       ip: 10.2.118.25
-      port: 5000
+      port: 80
     - name: AU2SP-SISS-402
       ip: 10.2.118.32
-      port: 5000
+      port: 80
