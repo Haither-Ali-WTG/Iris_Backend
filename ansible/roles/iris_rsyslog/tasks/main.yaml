@@ -3,7 +3,7 @@
   include_role:
     name: rsyslog  # from the Dante SOE
   vars:
-    rsyslog_udp_listen_addr: "127.0.0.1,172.17.0.1"
+    rsyslog_udp_listen_addr: "172.17.0.1"
 
 - name: Rsyslog rules for haproxy logs
   copy:
