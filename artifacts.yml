@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240131.2
-  # Wed Jan 31 02:45:34 UTC 2024 -- Wed Jan 31 13:45:34 AEDT 2024
+  # Dante Build Artifact 20240131.3
+  # Wed Jan 31 06:29:43 UTC 2024 -- Wed Jan 31 17:29:43 AEDT 2024
   #
-  # Merge pull request 19397 from dante_artifact_upgrade into master
-  # 23a4c62f7b73b2e1cc0611194acf5279f53ec932
-  dante_build_id: '843227'
+  # Merged PR 19410: Update directive for rsyslog
+  # 5e18d4f477d80535614e8b296150af03e91ea22e
+  dante_build_id: '843429'
 
   # virgil 20240131.10
   # Wed Jan 31 01:29:29 UTC 2024 -- Wed Jan 31 12:29:29 AEDT 2024
