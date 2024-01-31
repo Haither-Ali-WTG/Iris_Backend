@@ -7,9 +7,9 @@ variables:
   # 58a0219dc5f50f2e0dc43ea22bb517b99b31ad8c
   dante_build_id: '843020'
 
-  # virgil 20240131.3
-  # Tue Jan 30 21:54:58 UTC 2024 -- Wed Jan 31 08:54:58 AEDT 2024
+  # virgil 20240131.10
+  # Wed Jan 31 01:29:29 UTC 2024 -- Wed Jan 31 12:29:29 AEDT 2024
   #
-  # Merged PR 19375: Added time.wtg.ws for AU and US
-  # d670194cc7d266d5fe68391f4d00d27d61c14932
-  virgil_build_id: '842948'
+  # Merged PR 19389: Create kafka topic for CS01527593
+  # 192ba6500c398d1475ff54712951af9f8dfd8bb7
+  virgil_build_id: '843146'
