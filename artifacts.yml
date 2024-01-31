@@ -7,9 +7,9 @@ variables:
   # 5e18d4f477d80535614e8b296150af03e91ea22e
   dante_build_id: '843429'
 
-  # virgil 20240131.10
-  # Wed Jan 31 01:29:29 UTC 2024 -- Wed Jan 31 12:29:29 AEDT 2024
+  # virgil 20240201.17
+  # Wed Jan 31 21:50:40 UTC 2024 -- Thu Feb  1 08:50:40 AEDT 2024
   #
-  # Merged PR 19389: Create kafka topic for CS01527593
-  # 192ba6500c398d1475ff54712951af9f8dfd8bb7
-  virgil_build_id: '843146'
+  # Merged PR 19309: Added mobin.pub to /data/ssh_authorized_keys
+  # 1e3e1a2630fb475046e41f42f1c03c5fe7965318
+  virgil_build_id: '844052'
