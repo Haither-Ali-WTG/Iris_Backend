@@ -7,9 +7,9 @@ variables:
   # d73476a6a59506e4629f43729abf256f51417777
   dante_build_id: '844328'
 
-  # virgil 20240201.17
-  # Wed Jan 31 21:50:40 UTC 2024 -- Thu Feb  1 08:50:40 AEDT 2024
+  # virgil 20240202.3
+  # Thu Feb  1 21:58:49 UTC 2024 -- Fri Feb  2 08:58:49 AEDT 2024
   #
-  # Merged PR 19309: Added mobin.pub to /data/ssh_authorized_keys
-  # 1e3e1a2630fb475046e41f42f1c03c5fe7965318
-  virgil_build_id: '844052'
+  # Merged PR 19422: Add KVM servers + backup target
+  # 9953971651e3aa8523842f6e3b023a18f4946515
+  virgil_build_id: '845068'
