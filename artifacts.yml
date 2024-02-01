@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240201.3
-  # Thu Feb  1 02:50:14 UTC 2024 -- Thu Feb  1 13:50:14 AEDT 2024
+  # Dante Build Artifact 20240202.1
+  # Thu Feb  1 23:05:49 UTC 2024 -- Fri Feb  2 10:05:49 AEDT 2024
   #
-  # Merged PR 19437: Fixed wrong ssh key used to clear squid
-  # d73476a6a59506e4629f43729abf256f51417777
-  dante_build_id: '844328'
+  # Merge pull request 19475 from dante_artifact_upgrade into master
+  # e0dc8cbd08b1b36f1a717d99ce2141a8f181ac38
+  dante_build_id: '845139'
 
   # virgil 20240202.3
   # Thu Feb  1 21:58:49 UTC 2024 -- Fri Feb  2 08:58:49 AEDT 2024
