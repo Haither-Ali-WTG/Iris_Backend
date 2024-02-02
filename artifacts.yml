@@ -7,9 +7,9 @@ variables:
   # 753cc5303bc082ab714fda22fc9ec1e998bcaa13
   dante_build_id: '845221'
 
-  # virgil 20240202.3
-  # Thu Feb  1 21:58:49 UTC 2024 -- Fri Feb  2 08:58:49 AEDT 2024
+  # virgil 20240202.19
+  # Fri Feb  2 02:16:36 UTC 2024 -- Fri Feb  2 13:16:36 AEDT 2024
   #
-  # Merged PR 19422: Add KVM servers + backup target
-  # 9953971651e3aa8523842f6e3b023a18f4946515
-  virgil_build_id: '845068'
+  # Merged PR 19489: Added time.wtg.ws to views
+  # 8bb08b1d27da6c5d309f8d12719defc126942d73
+  virgil_build_id: '845346'
