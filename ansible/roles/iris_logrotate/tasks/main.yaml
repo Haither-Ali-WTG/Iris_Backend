@@ -1,0 +1,7 @@
+---
+- name: The logrotate config for haproxy logs
+  copy:
+    src: logrotate.haproxy
+    dest: /etc/logrotate.d/haproxy
+    mode: u=rw,go=r
+  become: yes
