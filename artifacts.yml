@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240202.2
-  # Fri Feb  2 00:44:38 UTC 2024 -- Fri Feb  2 11:44:38 AEDT 2024
+  # Dante Build Artifact 20240202.3
+  # Fri Feb  2 06:09:40 UTC 2024 -- Fri Feb  2 17:09:40 AEDT 2024
   #
-  # Merged PR 19482: Unpin ansible for dante
-  # 753cc5303bc082ab714fda22fc9ec1e998bcaa13
-  dante_build_id: '845221'
+  # Merge pull request 19496 from dante_artifact_upgrade into master
+  # 714ff7cfb642dc52da7a62f688bc876135fe1ec1
+  dante_build_id: '845560'
 
   # virgil 20240202.25
   # Fri Feb  2 05:30:23 UTC 2024 -- Fri Feb  2 16:30:23 AEDT 2024
