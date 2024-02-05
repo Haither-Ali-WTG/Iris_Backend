@@ -7,9 +7,9 @@ variables:
   # f5030ecfaa19ac251e632168a358ae2503aa35a3
   dante_build_id: '848161'
 
-  # virgil 20240205.26
-  # Mon Feb  5 05:30:38 UTC 2024 -- Mon Feb  5 16:30:38 AEDT 2024
+  # virgil 20240205.34
+  # Mon Feb  5 08:47:35 UTC 2024 -- Mon Feb  5 19:47:35 AEDT 2024
   #
-  # Merged PR 19553: WI00707434  - Decommission 14 Elastic Nodes in Alexandria
-  # a68f8fecc13c906161b23d1635b155958134d30f
-  virgil_build_id: '848331'
+  # Merged PR 19570: 5 New SR630v2 ELK Swing Kit
+  # e28fe4c4200141ba30bc28c33b7c4c31a901cc50
+  virgil_build_id: '848501'
