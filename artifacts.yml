@@ -7,9 +7,9 @@ variables:
   # 714ff7cfb642dc52da7a62f688bc876135fe1ec1
   dante_build_id: '845560'
 
-  # virgil 20240202.25
-  # Fri Feb  2 05:30:23 UTC 2024 -- Fri Feb  2 16:30:23 AEDT 2024
+  # virgil 20240205.7
+  # Mon Feb  5 01:04:17 UTC 2024 -- Mon Feb  5 12:04:17 AEDT 2024
   #
-  # Merged PR 19502: Updated queues.yaml - add new eservices Application Topics
-  # eeb24694aecc3a40c303387636962552cad55941
-  virgil_build_id: '845520'
+  # Merged PR 19527: Clean up kafka topic for CS01487932-1
+  # 3466ebcbcc88350d0e23646186b086d40e2c5b44
+  virgil_build_id: '848009'
