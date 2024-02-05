@@ -7,9 +7,9 @@ variables:
   # f5030ecfaa19ac251e632168a358ae2503aa35a3
   dante_build_id: '848161'
 
-  # virgil 20240205.34
-  # Mon Feb  5 08:47:35 UTC 2024 -- Mon Feb  5 19:47:35 AEDT 2024
+  # virgil 20240205.39
+  # Mon Feb  5 10:18:42 UTC 2024 -- Mon Feb  5 21:18:42 AEDT 2024
   #
-  # Merged PR 19570: 5 New SR630v2 ELK Swing Kit
-  # e28fe4c4200141ba30bc28c33b7c4c31a901cc50
-  virgil_build_id: '848501'
+  # Merged PR 19569: recreate kafka topic for CS01487932
+  # a793e1d6b5978c9b91d37d042dd0fbff1193a406
+  virgil_build_id: '848572'
