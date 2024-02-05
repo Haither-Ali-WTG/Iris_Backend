@@ -59,6 +59,10 @@
       include_role:
         name: iris_rsyslog
 
+    - name: Setup logrotate for Iris
+      include_role:
+        name: iris_logrotate
+
     - name: Apply system parameters
       include_role:
         name: system_parameters
