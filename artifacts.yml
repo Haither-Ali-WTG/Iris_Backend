@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240205.3
-  # Mon Feb  5 11:08:56 UTC 2024 -- Mon Feb  5 22:08:56 AEDT 2024
+  # Dante Build Artifact 20240206.1
+  # Mon Feb  5 21:42:33 UTC 2024 -- Tue Feb  6 08:42:33 AEDT 2024
   #
-  # Merge pull request 19564 from dante_artifact_upgrade into master
-  # a1d52eec86e0038b2171b5b5df1aa280adbcd971
-  dante_build_id: '848628'
+  # Merged PR 19497: Change rsyslog config for Iris
+  # 23d3faded9d8387c8301c240bb45d41559d6b32d
+  dante_build_id: '849057'
 
   # virgil 20240205.39
   # Mon Feb  5 10:18:42 UTC 2024 -- Mon Feb  5 21:18:42 AEDT 2024
