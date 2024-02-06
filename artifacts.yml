@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240206.1
-  # Mon Feb  5 21:42:33 UTC 2024 -- Tue Feb  6 08:42:33 AEDT 2024
+  # Dante Build Artifact 20240206.2
+  # Tue Feb  6 00:24:56 UTC 2024 -- Tue Feb  6 11:24:56 AEDT 2024
   #
-  # Merged PR 19497: Change rsyslog config for Iris
-  # 23d3faded9d8387c8301c240bb45d41559d6b32d
-  dante_build_id: '849057'
+  # Merge pull request 19601 from dante_artifact_upgrade into master
+  # 58753b2a1d27c424255b4d81dbcb0cf8d9915be3
+  dante_build_id: '849226'
 
-  # virgil 20240205.39
-  # Mon Feb  5 10:18:42 UTC 2024 -- Mon Feb  5 21:18:42 AEDT 2024
+  # virgil 20240206.3
+  # Mon Feb  5 23:42:36 UTC 2024 -- Tue Feb  6 10:42:36 AEDT 2024
   #
-  # Merged PR 19569: recreate kafka topic for CS01487932
-  # a793e1d6b5978c9b91d37d042dd0fbff1193a406
-  virgil_build_id: '848572'
+  # Merge pull request 19367 from virgil_python_upgrade into master
+  # 5ca7d93deb8449ac8b020c0f0aafe332172bf0a8
+  virgil_build_id: '849171'
