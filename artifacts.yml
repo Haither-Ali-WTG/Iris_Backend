@@ -7,9 +7,9 @@ variables:
   # e02f283f01f0ede51e122609d286935a1e9d164a
   dante_build_id: '849382'
 
-  # virgil 20240206.8
-  # Tue Feb  6 01:02:46 UTC 2024 -- Tue Feb  6 12:02:46 AEDT 2024
+  # virgil 20240207.2
+  # Tue Feb  6 22:46:34 UTC 2024 -- Wed Feb  7 09:46:34 AEDT 2024
   #
-  # Merged PR 19593: WI00695523- Temporarily make mgmt nodes On Demand
-  # 939667fea521d3a1e3bae7eb406b8add372913a1
-  virgil_build_id: '849295'
+  # Merge pull request 19631 from virgil_python_upgrade into master
+  # 85551847a199621e10f0af698a36ed0482bad445
+  virgil_build_id: '850145'
