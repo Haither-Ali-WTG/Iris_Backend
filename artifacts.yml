@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240206.2
-  # Tue Feb  6 00:24:56 UTC 2024 -- Tue Feb  6 11:24:56 AEDT 2024
+  # Dante Build Artifact 20240206.3
+  # Tue Feb  6 02:47:08 UTC 2024 -- Tue Feb  6 13:47:08 AEDT 2024
   #
-  # Merge pull request 19601 from dante_artifact_upgrade into master
-  # 58753b2a1d27c424255b4d81dbcb0cf8d9915be3
-  dante_build_id: '849226'
+  # Merge pull request 19612 from dante_artifact_upgrade into master
+  # e02f283f01f0ede51e122609d286935a1e9d164a
+  dante_build_id: '849382'
 
-  # virgil 20240206.3
-  # Mon Feb  5 23:42:36 UTC 2024 -- Tue Feb  6 10:42:36 AEDT 2024
+  # virgil 20240206.8
+  # Tue Feb  6 01:02:46 UTC 2024 -- Tue Feb  6 12:02:46 AEDT 2024
   #
-  # Merge pull request 19367 from virgil_python_upgrade into master
-  # 5ca7d93deb8449ac8b020c0f0aafe332172bf0a8
-  virgil_build_id: '849171'
+  # Merged PR 19593: WI00695523- Temporarily make mgmt nodes On Demand
+  # 939667fea521d3a1e3bae7eb406b8add372913a1
+  virgil_build_id: '849295'
