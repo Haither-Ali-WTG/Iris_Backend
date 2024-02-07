@@ -178,3 +178,15 @@ identity-temp-staging.wisetechglobal.com:
     - name: AU2SP-SISS-402
       ip: 10.2.118.32
       port: 80
+
+sandwcatoken.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /
+  encryption: false
+  servers:
+    - name: AU2SP-SWFE-1
+      ip: 10.2.118.12
+      port: 80
+    - name: AU2SP-SWFE-403
+      ip: 10.2.118.54
+      port: 80
