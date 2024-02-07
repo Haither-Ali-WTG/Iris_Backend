@@ -7,9 +7,9 @@ variables:
   # 3a9faa131bac7d044590203145919a470607d6b9
   dante_build_id: '850715'
 
-  # virgil 20240207.14
-  # Wed Feb  7 05:13:04 UTC 2024 -- Wed Feb  7 16:13:04 AEDT 2024
+  # virgil 20240208.1
+  # Wed Feb  7 20:22:47 UTC 2024 -- Thu Feb  8 07:22:47 AEDT 2024
   #
-  # Merged PR 19625: Updated teardowns.yaml
-  # c9a665c99e0c278bcfd45749c0b09c390f895547
-  virgil_build_id: '850536'
+  # Merged PR 19656: add-DAT-vlan-to-vmware-profile
+  # d66791d4cb9d29f6926d06d8608a82379c6235c4
+  virgil_build_id: '851179'
