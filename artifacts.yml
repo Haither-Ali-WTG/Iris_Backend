@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240207.3
-  # Wed Feb  7 05:47:43 UTC 2024 -- Wed Feb  7 16:47:43 AEDT 2024
+  # Dante Build Artifact 20240207.4
+  # Wed Feb  7 08:56:01 UTC 2024 -- Wed Feb  7 19:56:01 AEDT 2024
   #
-  # Merge pull request 19677 from dante_artifact_upgrade into master
-  # a5638ad0b23b590cc0ada5fb607964d6ceaad11c
-  dante_build_id: '850573'
+  # Merged PR 19670: added kubernetes v1.29 and cri-o v1.28 as well as new repo for cri-o v1.29
+  # 3a9faa131bac7d044590203145919a470607d6b9
+  dante_build_id: '850715'
 
   # virgil 20240207.14
   # Wed Feb  7 05:13:04 UTC 2024 -- Wed Feb  7 16:13:04 AEDT 2024
