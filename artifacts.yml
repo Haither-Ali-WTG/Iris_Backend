@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240208.2
-  # Wed Feb  7 22:06:15 UTC 2024 -- Thu Feb  8 09:06:15 AEDT 2024
+  # Dante Build Artifact 20240208.4
+  # Wed Feb  7 23:40:43 UTC 2024 -- Thu Feb  8 10:40:43 AEDT 2024
   #
-  # Merge pull request 19710 from dante_artifact_upgrade into master
-  # f9c090a155fdbac517d86e82dea324ec7954573e
-  dante_build_id: '851298'
+  # Merged PR 19664: WI00708954: Trying to ignore nvued restart error in simulation
+  # 7949e7d9bfa542af1f5a139a56c44c532a1ab755
+  dante_build_id: '851427'
 
-  # virgil 20240208.8
-  # Wed Feb  7 21:19:35 UTC 2024 -- Thu Feb  8 08:19:35 AEDT 2024
+  # virgil 20240208.13
+  # Wed Feb  7 23:02:50 UTC 2024 -- Thu Feb  8 10:02:50 AEDT 2024
   #
-  # Merged PR 19703: Reconfig Rack12 apex19/20 switch vxlan and swp for new Kafka q1 server
-  # 5379f2ba771304ad292876147d7a601ff7b190aa
-  virgil_build_id: '851240'
+  # Merged PR 19683: Adding subnets for Bolero (DE1)
+  # 5d325e1f4b72e69caff828b3fc0d1662f5c53c05
+  virgil_build_id: '851381'
