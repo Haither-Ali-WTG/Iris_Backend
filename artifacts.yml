@@ -7,9 +7,9 @@ variables:
   # f21986f0c67d7ce12be47cfa43f2453b4e4076d2
   dante_build_id: '850284'
 
-  # virgil 20240207.2
-  # Tue Feb  6 22:46:34 UTC 2024 -- Wed Feb  7 09:46:34 AEDT 2024
+  # virgil 20240207.8
+  # Wed Feb  7 02:07:05 UTC 2024 -- Wed Feb  7 13:07:05 AEDT 2024
   #
-  # Merge pull request 19631 from virgil_python_upgrade into master
-  # 85551847a199621e10f0af698a36ed0482bad445
-  virgil_build_id: '850145'
+  # Merged PR 19651: Make secondary mgmt nodes continuous again
+  # 081b543c0fbb42b7839fbf9202681a534b646ef7
+  virgil_build_id: '850348'
