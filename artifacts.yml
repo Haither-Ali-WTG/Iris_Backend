@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240206.3
-  # Tue Feb  6 02:47:08 UTC 2024 -- Tue Feb  6 13:47:08 AEDT 2024
+  # Dante Build Artifact 20240207.1
+  # Wed Feb  7 01:17:57 UTC 2024 -- Wed Feb  7 12:17:57 AEDT 2024
   #
-  # Merge pull request 19612 from dante_artifact_upgrade into master
-  # e02f283f01f0ede51e122609d286935a1e9d164a
-  dante_build_id: '849382'
+  # Merged PR 19054: Disable DHCP on OOB ports of the mgmt nodes
+  # f21986f0c67d7ce12be47cfa43f2453b4e4076d2
+  dante_build_id: '850284'
 
   # virgil 20240207.2
   # Tue Feb  6 22:46:34 UTC 2024 -- Wed Feb  7 09:46:34 AEDT 2024
