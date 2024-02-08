@@ -13,7 +13,7 @@ ansible-core==2.16.3
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.22.2
+ansible-lint==24.2.0
     # via -r requirements.in
 argcomplete==3.2.2
     # via yq
@@ -26,13 +26,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.35
+awscli==1.32.36
     # via -r requirements.in
 bandit==1.7.7
     # via -r requirements.in
 black==24.1.1
     # via ansible-lint
-botocore==1.34.35
+botocore==1.34.36
     # via
     #   awscli
     #   s3transfer
@@ -115,7 +115,7 @@ mypy-extensions==1.0.0
     #   mypy
 netaddr==0.10.1
     # via -r requirements.in
-packaging==23.0
+packaging==23.2
     # via
     #   ansible-compat
     #   ansible-core
@@ -200,7 +200,7 @@ rpds-py==0.17.1
     #   referencing
 rsa==4.7.2
     # via awscli
-ruamel-yaml==0.18.5
+ruamel-yaml==0.18.6
     # via
     #   ansible-lint
     #   safety
@@ -211,7 +211,7 @@ s3transfer==0.10.0
     # via awscli
 safety==3.0.1
     # via -r requirements.in
-safety-schemas==0.0.1
+safety-schemas==0.0.2
     # via safety
 six==1.16.0
     # via
