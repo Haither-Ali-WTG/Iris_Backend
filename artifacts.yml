@@ -7,9 +7,9 @@ variables:
   # 1d640bab14f6e0c7839a1851b2289fa99f3c14da
   dante_build_id: '851633'
 
-  # virgil 20240208.13
-  # Wed Feb  7 23:02:50 UTC 2024 -- Thu Feb  8 10:02:50 AEDT 2024
+  # virgil 20240208.22
+  # Thu Feb  8 04:24:31 UTC 2024 -- Thu Feb  8 15:24:31 AEDT 2024
   #
-  # Merged PR 19683: Adding subnets for Bolero (DE1)
-  # 5d325e1f4b72e69caff828b3fc0d1662f5c53c05
-  virgil_build_id: '851381'
+  # Merged PR 19745: au2-apex19-20-replacement
+  # 2f90f7c995cb88fee74cf7fa237c578077ba0212
+  virgil_build_id: '851729'
