@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240208.4
-  # Wed Feb  7 23:40:43 UTC 2024 -- Thu Feb  8 10:40:43 AEDT 2024
+  # Dante Build Artifact 20240208.5
+  # Thu Feb  8 00:26:12 UTC 2024 -- Thu Feb  8 11:26:12 AEDT 2024
   #
-  # Merged PR 19664: WI00708954: Trying to ignore nvued restart error in simulation
-  # 7949e7d9bfa542af1f5a139a56c44c532a1ab755
-  dante_build_id: '851427'
+  # Merge pull request 19723 from dante_artifact_upgrade into master
+  # cd470a30f7e8c7c6c9c200708346c868887aaae8
+  dante_build_id: '851482'
 
   # virgil 20240208.13
   # Wed Feb  7 23:02:50 UTC 2024 -- Thu Feb  8 10:02:50 AEDT 2024
