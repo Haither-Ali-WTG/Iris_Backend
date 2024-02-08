@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240208.7
-  # Thu Feb  8 06:05:58 UTC 2024 -- Thu Feb  8 17:05:58 AEDT 2024
+  # Dante Build Artifact 20240209.1
+  # Thu Feb  8 23:06:37 UTC 2024 -- Fri Feb  9 10:06:37 AEDT 2024
   #
-  # Merge pull request 19751 from dante_artifact_upgrade into master
-  # 22512abef9d9547c0c0b70964cfa90e39010b89f
-  dante_build_id: '851861'
+  # Merge pull request 19773 from dante_artifact_upgrade into master
+  # 9a3431afd258ec34aad44ebefdf76d3fce9fc869
+  dante_build_id: '852532'
 
-  # virgil 20240208.30
-  # Thu Feb  8 05:28:31 UTC 2024 -- Thu Feb  8 16:28:31 AEDT 2024
+  # virgil 20240209.8
+  # Thu Feb  8 23:24:24 UTC 2024 -- Fri Feb  9 10:24:24 AEDT 2024
   #
-  # Merged PR 19734: Updated teardowns.yaml
-  # 2accc784c5267f6915a92a87a7fc40762f4fc2fb
-  virgil_build_id: '851800'
+  # Merged PR 19774: re-correct-pod2-id
+  # 8f0d1502e1ee8f082cdbfa358f96ec1950c70c30
+  virgil_build_id: '852550'
