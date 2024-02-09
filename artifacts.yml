@@ -7,9 +7,9 @@ variables:
   # 25bf6328832509e6acd430a7612960320a67d28f
   dante_build_id: '852604'
 
-  # virgil 20240209.8
-  # Thu Feb  8 23:24:24 UTC 2024 -- Fri Feb  9 10:24:24 AEDT 2024
+  # virgil 20240209.14
+  # Fri Feb  9 03:03:59 UTC 2024 -- Fri Feb  9 14:03:59 AEDT 2024
   #
-  # Merged PR 19774: re-correct-pod2-id
-  # 8f0d1502e1ee8f082cdbfa358f96ec1950c70c30
-  virgil_build_id: '852550'
+  # Merged PR 19787: Virgil - Put Ehubgateway logs in Q0 Kafka
+  # b9864bfde5a9a6308662ec7127280435ec54dd09
+  virgil_build_id: '852776'
