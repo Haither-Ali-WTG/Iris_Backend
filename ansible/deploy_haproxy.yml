@@ -63,6 +63,13 @@
       include_role:
         name: iris_logrotate
 
+    - name: Setup metricbeat for Iris
+      include_role:
+        name: metricbeat  # from the Dante SOE
+      vars:
+        module_prometheus: true
+        endpoint_ports: "{{ stats_web_ports }}"
+
     - name: Apply system parameters
       include_role:
         name: system_parameters
