@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240212.1
-  # Mon Feb 12 03:11:16 UTC 2024 -- Mon Feb 12 14:11:16 AEDT 2024
+  # Dante Build Artifact 20240212.2
+  # Mon Feb 12 05:05:30 UTC 2024 -- Mon Feb 12 16:05:30 AEDT 2024
   #
-  # Merged PR 19830: DHCP server build files moved from automation to dante as-is
-  # 1d1bfc656ff520c3d847c3fcc985ba87c0bcc7ba
-  dante_build_id: '855488'
+  # Merged PR 19791: Add prometheus.yml in metricbeat role
+  # 73da5a850fe45b89316da57f312a500b49ce28ee
+  dante_build_id: '855592'
 
   # virgil 20240209.14
   # Fri Feb  9 03:03:59 UTC 2024 -- Fri Feb  9 14:03:59 AEDT 2024
