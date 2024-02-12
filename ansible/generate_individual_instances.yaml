@@ -178,6 +178,7 @@
           ]
 
     - name: Calculate stats web ports on each machine
+      set_fact:
         stats_web_ports: >-
           [
             {% for individual_instance in groups.individual_instances | default([])
