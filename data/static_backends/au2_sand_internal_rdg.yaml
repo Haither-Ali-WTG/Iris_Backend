@@ -1,0 +1,15 @@
+---
+sandtsg-token-based.wtg.zone:
+  clustered_instances: [au2sandinternalrdg]
+  health_check: /
+  encryption: false
+  cookie:
+    name: RDPWEB
+    secure: true
+  servers:
+    - name: AU2SP-SRDG-401
+      ip: 10.2.68.23
+      port: 80
+    - name: AU2SP-SRDG-402
+      ip: 10.2.68.24
+      port: 80
