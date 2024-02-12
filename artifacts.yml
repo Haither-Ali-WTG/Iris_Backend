@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240209.3
-  # Fri Feb  9 03:46:16 UTC 2024 -- Fri Feb  9 14:46:16 AEDT 2024
+  # Dante Build Artifact 20240212.1
+  # Mon Feb 12 03:11:16 UTC 2024 -- Mon Feb 12 14:11:16 AEDT 2024
   #
-  # Merge pull request 19797 from dante_artifact_upgrade into master
-  # 1fa1f10994579e12837d89be637f97175bd0c1aa
-  dante_build_id: '852816'
+  # Merged PR 19830: DHCP server build files moved from automation to dante as-is
+  # 1d1bfc656ff520c3d847c3fcc985ba87c0bcc7ba
+  dante_build_id: '855488'
 
   # virgil 20240209.14
   # Fri Feb  9 03:03:59 UTC 2024 -- Fri Feb  9 14:03:59 AEDT 2024
