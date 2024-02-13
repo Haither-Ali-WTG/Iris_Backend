@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.1
-  # Tue Feb 13 00:11:10 UTC 2024 -- Tue Feb 13 11:11:10 AEDT 2024
+  # Dante Build Artifact 20240213.3
+  # Tue Feb 13 01:41:00 UTC 2024 -- Tue Feb 13 12:41:00 AEDT 2024
   #
-  # Merged PR 19826: Upgrade ptmctl image to debian:buster (10.13)
-  # dba55fafa309046b9430d6dc17c965602ef47089
-  dante_build_id: '856375'
+  # Merged PR 19874: Removed opentelemetry-collector-contrib image
+  # 953ef5e7f95a7479980a8a4df8a311488521eb7a
+  dante_build_id: '856487'
 
   # virgil 20240213.2
   # Mon Feb 12 23:34:09 UTC 2024 -- Tue Feb 13 10:34:09 AEDT 2024
