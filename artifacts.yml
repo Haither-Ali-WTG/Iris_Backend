@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.7
-  # Tue Feb 13 05:26:29 UTC 2024 -- Tue Feb 13 16:26:29 AEDT 2024
+  # Dante Build Artifact 20240213.8
+  # Tue Feb 13 06:10:49 UTC 2024 -- Tue Feb 13 17:10:49 AEDT 2024
   #
-  # Merge pull request 19903 from dante_artifact_upgrade into master
-  # 5aca7a8121a12ad08e0ff362b20db43d9ca6b223
-  dante_build_id: '856780'
+  # Merged PR 19914: Create prometheus.yml if it is not exist
+  # a08694e6ea34a2cb8669c8d63fd225a6deefdb6f
+  dante_build_id: '856861'
 
   # virgil 20240213.7
   # Tue Feb 13 03:56:53 UTC 2024 -- Tue Feb 13 14:56:53 AEDT 2024
