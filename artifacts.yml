@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.9
-  # Tue Feb 13 06:48:53 UTC 2024 -- Tue Feb 13 17:48:53 AEDT 2024
+  # Dante Build Artifact 20240213.10
+  # Tue Feb 13 07:35:32 UTC 2024 -- Tue Feb 13 18:35:32 AEDT 2024
   #
-  # Merged PR 19915: Fix deploy certificates pipeline
-  # 1b3b3ef2dc624b2db8816250f3fa7097322a4243
-  dante_build_id: '856913'
+  # Merged PR 19862: Added new deploy-remote script.
+  # f789982cca6eb60a8c0459dd54cb6578ad28ca1a
+  dante_build_id: '856962'
 
   # virgil 20240213.7
   # Tue Feb 13 03:56:53 UTC 2024 -- Tue Feb 13 14:56:53 AEDT 2024
