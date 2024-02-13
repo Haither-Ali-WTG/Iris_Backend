@@ -1,44 +1,24 @@
 ---
-- name_regex: glow|^www-
-  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  encryption: true
-  health_check: /Glow/wtg/ready
-  port: 443
-  balance: first
-  cookie:
-    enabled: false
-  maintenance_page: example.html
-  name_suffix: ''
-
-- name_regex: services|accounting|^svc-
-  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  encryption: true
-  health_check: "/"
-  port: 443
-  cookie:
-    enabled: false
-  name_suffix: ''
-
-- name_regex: neo-
-  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  encryption: true
-  health_check: "/Glow/wtg/ready"
-  port: 443
-  balance: first
-  cookie:
-    enabled: true
-    name: GLOW
-  name_suffix: ''
-
-- name_regex: iris-test-
-  name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
+- name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: false
-  health_check: "/ready"
+  health_check: /Glow/wtg/ready
+  check_expect: '200'
   port: 80
   balance: first
   cookie:
-    enabled: false
-  name_suffix: ''
+    enabled: true
+  maintenance_page: example.html
+  name_suffix: '_glow'
+
+- name_regex: '\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-tweb'
+  encryption: true
+  health_check: "/"
+  check_expect: '200|401|403|302|405|500'
+  port: 443
+  cookie:
+    enabled: true
+  name_suffix: '_services'
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp'
