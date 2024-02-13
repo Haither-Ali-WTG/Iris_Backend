@@ -7,8 +7,9 @@
   balance: first
   cookie:
     enabled: true
+    name: 'CW1'
   maintenance_page: example.html
-  name_suffix: '_glow'
+  name_suffix: '-glow'
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp-tweb'
@@ -18,7 +19,8 @@
   port: 443
   cookie:
     enabled: true
-  name_suffix: '_services'
+    name: 'CW1'
+  name_suffix: '-services'
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp'
