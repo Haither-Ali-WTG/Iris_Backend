@@ -34,4 +34,4 @@ cw1_use_services_backend:
   actions:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),]-services
-        if cw1_webservice_path_services
+        if cw1_webservice_path_services star_testrig_sand_wtg_zone
