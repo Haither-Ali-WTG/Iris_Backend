@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.6
-  # Tue Feb 13 04:17:59 UTC 2024 -- Tue Feb 13 15:17:59 AEDT 2024
+  # Dante Build Artifact 20240213.7
+  # Tue Feb 13 05:26:29 UTC 2024 -- Tue Feb 13 16:26:29 AEDT 2024
   #
-  # Merged PR 19887: Support enabled dhcp in simulation
-  # 03ac2c344f165c16d8551199b5bac66408aa0ddb
-  dante_build_id: '856701'
+  # Merge pull request 19903 from dante_artifact_upgrade into master
+  # 5aca7a8121a12ad08e0ff362b20db43d9ca6b223
+  dante_build_id: '856780'
 
   # virgil 20240213.7
   # Tue Feb 13 03:56:53 UTC 2024 -- Tue Feb 13 14:56:53 AEDT 2024
