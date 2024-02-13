@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240212.2
-  # Mon Feb 12 05:05:30 UTC 2024 -- Mon Feb 12 16:05:30 AEDT 2024
+  # Dante Build Artifact 20240213.1
+  # Tue Feb 13 00:11:10 UTC 2024 -- Tue Feb 13 11:11:10 AEDT 2024
   #
-  # Merged PR 19791: Add prometheus.yml in metricbeat role
-  # 73da5a850fe45b89316da57f312a500b49ce28ee
-  dante_build_id: '855592'
+  # Merged PR 19826: Upgrade ptmctl image to debian:buster (10.13)
+  # dba55fafa309046b9430d6dc17c965602ef47089
+  dante_build_id: '856375'
 
-  # virgil 20240209.14
-  # Fri Feb  9 03:03:59 UTC 2024 -- Fri Feb  9 14:03:59 AEDT 2024
+  # virgil 20240213.2
+  # Mon Feb 12 23:34:09 UTC 2024 -- Tue Feb 13 10:34:09 AEDT 2024
   #
-  # Merged PR 19787: Virgil - Put Ehubgateway logs in Q0 Kafka
-  # b9864bfde5a9a6308662ec7127280435ec54dd09
-  virgil_build_id: '852776'
+  # Merged PR 19822: Add C-00126 to us2kvl-v0 cluster
+  # 5da220661ec33d96a664f7abae2ea3c07389bb27
+  virgil_build_id: '856328'
