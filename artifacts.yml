@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.3
-  # Tue Feb 13 01:41:00 UTC 2024 -- Tue Feb 13 12:41:00 AEDT 2024
+  # Dante Build Artifact 20240213.4
+  # Tue Feb 13 03:18:09 UTC 2024 -- Tue Feb 13 14:18:09 AEDT 2024
   #
-  # Merged PR 19874: Removed opentelemetry-collector-contrib image
-  # 953ef5e7f95a7479980a8a4df8a311488521eb7a
-  dante_build_id: '856487'
+  # Merged PR 19853: Add metricbeat to artifact for Iris
+  # 371828aab928a95a6a27be757644bfa0f7fa125f
+  dante_build_id: '856600'
 
   # virgil 20240213.2
   # Mon Feb 12 23:34:09 UTC 2024 -- Tue Feb 13 10:34:09 AEDT 2024
