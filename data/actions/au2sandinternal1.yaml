@@ -33,5 +33,5 @@ cw1_use_services_backend:
   order: 80
   actions:
     - >-
-        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),]_services
+        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),]-services
         if cw1_webservice_path_services
