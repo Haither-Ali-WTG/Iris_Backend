@@ -38,7 +38,7 @@
   hosts: target_machines
   strategy: free
   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
-  gather_facts: no
+  gather_facts: yes
   force_handlers: yes
   tasks:
     - name: Adjust installed packages
@@ -62,6 +62,13 @@
     - name: Setup logrotate for Iris
       include_role:
         name: iris_logrotate
+
+    - name: Setup metricbeat for Iris
+      include_role:
+        name: metricbeat  # from the Dante SOE
+      vars:
+        module_prometheus: true
+        endpoint_ports: "{{ stats_web_ports }}"
 
     - name: Apply system parameters
       include_role:

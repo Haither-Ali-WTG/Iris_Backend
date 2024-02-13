@@ -161,7 +161,7 @@
         fail_msg: >-
           Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
 
-- name: Calculate individual instances on each machine
+- name: Set facts on each machine
   hosts: target_machines
   strategy: free
   gather_facts: no
@@ -176,3 +176,9 @@
             "{{ individual_instance }}",
             {% endfor %}
           ]
+
+    - name: Calculate stats web ports on each machine
+      set_fact:
+        stats_web_ports: "{{ stats_web_ports | default([]) + [hostvars[item].stats.ports.web] }}"
+      loop: "{{ groups.individual_instances | default([]) }}"
+      when: hostvars[item].machine_name == inventory_hostname
