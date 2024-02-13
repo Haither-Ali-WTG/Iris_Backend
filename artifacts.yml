@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240213.10
-  # Tue Feb 13 07:35:32 UTC 2024 -- Tue Feb 13 18:35:32 AEDT 2024
+  # Dante Build Artifact 20240214.1
+  # Tue Feb 13 22:09:46 UTC 2024 -- Wed Feb 14 09:09:46 AEDT 2024
   #
-  # Merged PR 19862: Added new deploy-remote script.
-  # f789982cca6eb60a8c0459dd54cb6578ad28ca1a
-  dante_build_id: '856962'
+  # Merged PR 19868: Added the deployment script / PFX certificate transportation script.
+  # e827b1200ee35ca2aa0f43cf14f9fbaee3030ea0
+  dante_build_id: '857532'
 
-  # virgil 20240213.7
-  # Tue Feb 13 03:56:53 UTC 2024 -- Tue Feb 13 14:56:53 AEDT 2024
+  # virgil 20240214.2
+  # Tue Feb 13 22:06:11 UTC 2024 -- Wed Feb 14 09:06:11 AEDT 2024
   #
-  # Merged PR 19806: au2-apex19/20 replacement
-  # 46894d70268e5125dc72fc41de6b9aec138f5a14
-  virgil_build_id: '856669'
+  # Merged PR 19932: Renaming VRFs: Bolero from GB4 to GB5, and Pierbridge from DE4 to GB4
+  # c29d000874c7b2534e5222ac37439931efd74624
+  virgil_build_id: '857528'
