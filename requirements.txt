@@ -26,13 +26,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.40
+awscli==1.32.41
     # via -r requirements.in
 bandit==1.7.7
     # via -r requirements.in
 black==24.2.0
     # via ansible-lint
-botocore==1.34.40
+botocore==1.34.41
     # via
     #   awscli
     #   s3transfer
@@ -194,7 +194,7 @@ rich==13.7.0
     #   ansible-lint
     #   bandit
     #   safety
-rpds-py==0.17.1
+rpds-py==0.18.0
     # via
     #   jsonschema
     #   referencing
