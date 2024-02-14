@@ -27,3 +27,10 @@ excluded_from_redirect_paths:
     the webservices don't support HTTPS
   tests:
     - path_beg -i /Warehouse/webservice
+
+cw1_webservice_path_services:
+  description: |-
+    Paths that should be excluded from the HTTPS redirect because
+    the webservices don't support HTTPS
+  tests:
+    - path_beg -i /Services/
