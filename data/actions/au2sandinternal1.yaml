@@ -33,5 +33,5 @@ cw1_use_services_backend:
   order: 80
   actions:
     - >-
-        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-%[path,field(2,\/),lower]
+        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-%[path,field(2,/),lower]
         if cw1_webservice_path_services star_testrig_sand_wtg_zone
