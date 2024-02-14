@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240214.6
-  # Wed Feb 14 02:29:32 UTC 2024 -- Wed Feb 14 13:29:32 AEDT 2024
+  # Dante Build Artifact 20240214.7
+  # Wed Feb 14 03:43:01 UTC 2024 -- Wed Feb 14 14:43:01 AEDT 2024
   #
-  # Merged PR 19960: Move unused code to archive.
-  # f801cca1d678bca809c6761204ab9f8c9ca3103f
-  dante_build_id: '857924'
+  # Merged PR 19962: Change the certificate source from ca.wtg.zone to Key Vault
+  # de0686a4fa23f79d8a624b8611f2ad0588e7aa1a
+  dante_build_id: '858005'
 
   # virgil 20240214.10
   # Wed Feb 14 00:55:54 UTC 2024 -- Wed Feb 14 11:55:54 AEDT 2024
