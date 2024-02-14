@@ -77,8 +77,9 @@ balance {{ defaults.balance }}
 option forwardfor
 option allbackups
 retries 3
+# Review 3s interval between healthchecks
 default-server inter 3s rise 2 fall 3 maxconn 5000 resolve-prefer ipv4 check init-addr libc,last
-load-server-state-from-file none
+load-server-state-from-file global
 dynamic-cookie-key WTGLB
 #option http-server-close #breaks login keep it disabled
 
@@ -228,6 +229,7 @@ http-check expect rstatus {{ config.check_expect | default('200|401|403|302|405'
 {%       if config.cookie.enabled %}
 cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic
 {%       endif %}
+{# TODO: Support override interval #}
 default-server inter 10000 {%- if config.encryption | default(false) %} ssl{% endif %}
 
 {%       for server_name, server_content in servers_data.items() %}
@@ -271,6 +273,7 @@ cookie {{ backend.cookie.name }} insert indirect nocache dynamic
 {% if backend.default_server is defined %}
 default-server {{ backend.default_server -}}
 {% else %}
+{# TODO: Support override interval #}
 default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% endif %}
 {% endif %}
 
