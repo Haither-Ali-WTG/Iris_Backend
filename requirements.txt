@@ -26,13 +26,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.41
+awscli==1.32.42
     # via -r requirements.in
 bandit==1.7.7
     # via -r requirements.in
 black==24.2.0
     # via ansible-lint
-botocore==1.34.41
+botocore==1.34.42
     # via
     #   awscli
     #   s3transfer
@@ -113,7 +113,7 @@ mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-netaddr==1.0.0
+netaddr==1.1.0
     # via -r requirements.in
 packaging==23.2
     # via
@@ -264,7 +264,7 @@ xmltodict==0.13.0
     #   yq
 yamale==4.0.4
     # via -r requirements.in
-yamllint==1.34.0
+yamllint==1.35.0
     # via
     #   -r requirements.in
     #   ansible-lint
