@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240215.1
-  # Wed Feb 14 23:11:35 UTC 2024 -- Thu Feb 15 10:11:35 AEDT 2024
+  # Dante Build Artifact 20240215.3
+  # Thu Feb 15 02:56:35 UTC 2024 -- Thu Feb 15 13:56:35 AEDT 2024
   #
-  # Merged PR 19828: WI00710676: Upgrade ptmctl to latest debian buster based image
-  # 5c112e37a6118b01889e36dae308785d24cd3bc6
-  dante_build_id: '858841'
+  # Merged PR 20002: Updated parameters for the new PFX certificate deployment playbook.
+  # 8b82f3aaece78611b520ebbc5c7e4943ba920af7
+  dante_build_id: '859057'
 
   # virgil 20240215.3
   # Thu Feb 15 01:33:45 UTC 2024 -- Thu Feb 15 12:33:45 AEDT 2024
