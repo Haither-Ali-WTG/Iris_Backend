@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240215.3
-  # Thu Feb 15 02:56:35 UTC 2024 -- Thu Feb 15 13:56:35 AEDT 2024
+  # Dante Build Artifact 20240215.4
+  # Thu Feb 15 07:14:39 UTC 2024 -- Thu Feb 15 18:14:39 AEDT 2024
   #
-  # Merged PR 20002: Updated parameters for the new PFX certificate deployment playbook.
-  # 8b82f3aaece78611b520ebbc5c7e4943ba920af7
-  dante_build_id: '859057'
+  # Merged PR 20000: Teardown the certificate && scripts on the dante spsh host.
+  # d41f65d942c6c9eeef0555da5f748b685b078434
+  dante_build_id: '859302'
 
   # virgil 20240215.3
   # Thu Feb 15 01:33:45 UTC 2024 -- Thu Feb 15 12:33:45 AEDT 2024
