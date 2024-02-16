@@ -7,9 +7,9 @@ variables:
   # d41f65d942c6c9eeef0555da5f748b685b078434
   dante_build_id: '859302'
 
-  # virgil 20240216.12
-  # Fri Feb 16 01:38:24 UTC 2024 -- Fri Feb 16 12:38:24 AEDT 2024
+  # virgil 20240216.18
+  # Fri Feb 16 04:27:14 UTC 2024 -- Fri Feb 16 15:27:14 AEDT 2024
   #
-  # Merged PR 20099: Virgil - Allow all read write topics to read-write and describe topics and get configs and metadata
-  # a3b6ff0a39b6981166b85efef460628f5d300b3f
-  virgil_build_id: '859971'
+  # Merged PR 19607: Allocate base DNS records for the first OpenShift cluster
+  # 5e922580cc7ac12e04bbf5a48343fd90b2eb1e1f
+  virgil_build_id: '860100'
