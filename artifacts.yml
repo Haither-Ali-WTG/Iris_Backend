@@ -7,9 +7,9 @@ variables:
   # d41f65d942c6c9eeef0555da5f748b685b078434
   dante_build_id: '859302'
 
-  # virgil 20240216.2
-  # Thu Feb 15 22:37:27 UTC 2024 -- Fri Feb 16 09:37:27 AEDT 2024
+  # virgil 20240216.12
+  # Fri Feb 16 01:38:24 UTC 2024 -- Fri Feb 16 12:38:24 AEDT 2024
   #
-  # Merge pull request 20082 from virgil_python_upgrade into master
-  # 3d25d0f9d648d2dbdfbb3393ff628cb8c87139b1
-  virgil_build_id: '859827'
+  # Merged PR 20099: Virgil - Allow all read write topics to read-write and describe topics and get configs and metadata
+  # a3b6ff0a39b6981166b85efef460628f5d300b3f
+  virgil_build_id: '859971'
