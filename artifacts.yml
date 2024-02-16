@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240215.4
-  # Thu Feb 15 07:14:39 UTC 2024 -- Thu Feb 15 18:14:39 AEDT 2024
+  # Dante Build Artifact 20240216.3
+  # Fri Feb 16 05:27:18 UTC 2024 -- Fri Feb 16 16:27:18 AEDT 2024
   #
-  # Merged PR 20000: Teardown the certificate && scripts on the dante spsh host.
-  # d41f65d942c6c9eeef0555da5f748b685b078434
-  dante_build_id: '859302'
+  # Merge pull request 20092 from dante_artifact_upgrade into master
+  # ab6d9c7a573cde89f51d7dadfb21791d9f2ffacd
+  dante_build_id: '860152'
 
   # virgil 20240216.18
   # Fri Feb 16 04:27:14 UTC 2024 -- Fri Feb 16 15:27:14 AEDT 2024
