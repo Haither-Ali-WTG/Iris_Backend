@@ -7,9 +7,9 @@ variables:
   # ab6d9c7a573cde89f51d7dadfb21791d9f2ffacd
   dante_build_id: '860152'
 
-  # virgil 20240216.18
-  # Fri Feb 16 04:27:14 UTC 2024 -- Fri Feb 16 15:27:14 AEDT 2024
+  # virgil 20240219.2
+  # Sun Feb 18 22:16:44 UTC 2024 -- Mon Feb 19 09:16:44 AEDT 2024
   #
-  # Merged PR 19607: Allocate base DNS records for the first OpenShift cluster
-  # 5e922580cc7ac12e04bbf5a48343fd90b2eb1e1f
-  virgil_build_id: '860100'
+  # Merge pull request 20126 from virgil_python_upgrade into master
+  # 568966d26e2f1d47677b6b9f0f1aa75b0cc57a0e
+  virgil_build_id: '862521'
