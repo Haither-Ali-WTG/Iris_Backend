@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240219.2
-  # Mon Feb 19 03:25:45 UTC 2024 -- Mon Feb 19 14:25:45 AEDT 2024
+  # Dante Build Artifact 20240219.4
+  # Mon Feb 19 06:06:01 UTC 2024 -- Mon Feb 19 17:06:01 AEDT 2024
   #
-  # Merge pull request 20138 from dante_artifact_upgrade into master
-  # fcd7683913f50957a5782ba601c446f898feef18
-  dante_build_id: '862849'
+  # Merge pull request 20164 from dante_artifact_upgrade into master
+  # d543c29f6ecf941724a520d438a9e46ca3ae7b8a
+  dante_build_id: '863031'
 
-  # virgil 20240219.16
-  # Mon Feb 19 04:46:24 UTC 2024 -- Mon Feb 19 15:46:24 AEDT 2024
+  # virgil 20240219.24
+  # Mon Feb 19 05:21:10 UTC 2024 -- Mon Feb 19 16:21:10 AEDT 2024
   #
-  # Merged PR 20152: Added topics for Ehub
-  # bbf536aa49a1c4dc1641ff215cf2cd0ef01f8d7f
-  virgil_build_id: '862933'
+  # Merged PR 20158: Adding a fake hardware server to reserve static IP
+  # f7eaaaacf609ec3d4baaa43498c902cb42bedf92
+  virgil_build_id: '862969'
