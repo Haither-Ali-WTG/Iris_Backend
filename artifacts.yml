@@ -7,9 +7,9 @@ variables:
   # fcd7683913f50957a5782ba601c446f898feef18
   dante_build_id: '862849'
 
-  # virgil 20240219.2
-  # Sun Feb 18 22:16:44 UTC 2024 -- Mon Feb 19 09:16:44 AEDT 2024
+  # virgil 20240219.16
+  # Mon Feb 19 04:46:24 UTC 2024 -- Mon Feb 19 15:46:24 AEDT 2024
   #
-  # Merge pull request 20126 from virgil_python_upgrade into master
-  # 568966d26e2f1d47677b6b9f0f1aa75b0cc57a0e
-  virgil_build_id: '862521'
+  # Merged PR 20152: Added topics for Ehub
+  # bbf536aa49a1c4dc1641ff215cf2cd0ef01f8d7f
+  virgil_build_id: '862933'
