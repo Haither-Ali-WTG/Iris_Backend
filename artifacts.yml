@@ -7,9 +7,9 @@ variables:
   # bd463f1831f8ae172883a545122d1502193126b2
   dante_build_id: '863713'
 
-  # virgil 20240219.24
-  # Mon Feb 19 05:21:10 UTC 2024 -- Mon Feb 19 16:21:10 AEDT 2024
+  # virgil 20240220.2
+  # Tue Feb 20 03:25:24 UTC 2024 -- Tue Feb 20 14:25:24 AEDT 2024
   #
-  # Merged PR 20158: Adding a fake hardware server to reserve static IP
-  # f7eaaaacf609ec3d4baaa43498c902cb42bedf92
-  virgil_build_id: '862969'
+  # Merged PR 20195: adding topics
+  # 38288a05b77329ab154be91dbe08cce823fc2722
+  virgil_build_id: '863959'
