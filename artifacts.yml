@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240220.5
-  # Tue Feb 20 06:53:58 UTC 2024 -- Tue Feb 20 17:53:58 AEDT 2024
+  # Dante Build Artifact 20240221.1
+  # Tue Feb 20 22:47:42 UTC 2024 -- Wed Feb 21 09:47:42 AEDT 2024
   #
-  # Merged PR 20215: Restart ptmd in simulation in case service doesn't give response with cabling status
-  # 01a4edc2f606d4068943c72a4632bda16b204d58
-  dante_build_id: '864227'
+  # Merge pull request 20247 from dante_artifact_upgrade into master
+  # f9288220c5f5c66d0ed301c0d686ea2044753b31
+  dante_build_id: '864842'
 
   # virgil 20240221.2
   # Tue Feb 20 21:52:16 UTC 2024 -- Wed Feb 21 08:52:16 AEDT 2024
