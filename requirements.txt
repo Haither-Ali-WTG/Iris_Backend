@@ -26,13 +26,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.44
+awscli==1.32.45
     # via -r requirements.in
 bandit==1.7.7
     # via -r requirements.in
 black==24.2.0
     # via ansible-lint
-botocore==1.34.44
+botocore==1.34.45
     # via
     #   awscli
     #   s3transfer
@@ -254,7 +254,7 @@ urllib3==2.0.7
     #   requests
     #   safety
     #   types-requests
-wcmatch==8.5
+wcmatch==8.5.1
     # via ansible-lint
 xmltodict==0.13.0
     # via
