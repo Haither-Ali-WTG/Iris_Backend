@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240220.4
-  # Tue Feb 20 06:21:08 UTC 2024 -- Tue Feb 20 17:21:08 AEDT 2024
+  # Dante Build Artifact 20240220.5
+  # Tue Feb 20 06:53:58 UTC 2024 -- Tue Feb 20 17:53:58 AEDT 2024
   #
-  # Merged PR 20192: Workaround for US2 stuck deployment agents
-  # 5529ffbac3c0805e2c99a4a5d98251570db644c1
-  dante_build_id: '864185'
+  # Merged PR 20215: Restart ptmd in simulation in case service doesn't give response with cabling status
+  # 01a4edc2f606d4068943c72a4632bda16b204d58
+  dante_build_id: '864227'
 
   # virgil 20240220.8
   # Tue Feb 20 04:25:43 UTC 2024 -- Tue Feb 20 15:25:43 AEDT 2024
