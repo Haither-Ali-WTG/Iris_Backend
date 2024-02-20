@@ -7,9 +7,9 @@ variables:
   # 01a4edc2f606d4068943c72a4632bda16b204d58
   dante_build_id: '864227'
 
-  # virgil 20240220.8
-  # Tue Feb 20 04:25:43 UTC 2024 -- Tue Feb 20 15:25:43 AEDT 2024
+  # virgil 20240221.2
+  # Tue Feb 20 21:52:16 UTC 2024 -- Wed Feb 21 08:52:16 AEDT 2024
   #
-  # Merged PR 20159: Virgil - Create 2 new nodes for Kafka Q1
-  # 96c7fd6660b3d6ec47d99a5ed5bccbdb007b9f8b
-  virgil_build_id: '864035'
+  # Merged PR 20197: (very minor) - Add more permissions comments to the Virgil queues.yaml file
+  # d0210a6358deec5fa5291d65bac9ed85ccd01aa0
+  virgil_build_id: '864792'
