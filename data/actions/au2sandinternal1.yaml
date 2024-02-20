@@ -14,6 +14,7 @@ https_redirect:
   actions:
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_bolero_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_testrig_sand_wtg_zone !{ ssl_fc } !excluded_from_redirect_paths
 

@@ -190,3 +190,15 @@ sandwcatoken.wtg.zone:
     - name: AU2SP-SWFE-403
       ip: 10.2.118.54
       port: 80
+
+cprportal-uat.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-405A
+      ip: 10.2.118.47
+      port: 80
+    - name: AU2SP-SIIS-405B
+      ip: 10.2.118.48
+      port: 80
