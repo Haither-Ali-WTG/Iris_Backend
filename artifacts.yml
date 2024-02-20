@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240220.1
-  # Mon Feb 19 23:01:17 UTC 2024 -- Tue Feb 20 10:01:17 AEDT 2024
+  # Dante Build Artifact 20240220.2
+  # Tue Feb 20 04:07:01 UTC 2024 -- Tue Feb 20 15:07:01 AEDT 2024
   #
-  # Merged PR 20139: WI00711518: Upgrade dhcp-server on primary management nodes
-  # bd463f1831f8ae172883a545122d1502193126b2
-  dante_build_id: '863713'
+  # Merge pull request 20203 from dante_artifact_upgrade into master
+  # 56514e8c7af19e11c754f0bbf7ef49d5c87fa08a
+  dante_build_id: '864015'
 
-  # virgil 20240220.2
-  # Tue Feb 20 03:25:24 UTC 2024 -- Tue Feb 20 14:25:24 AEDT 2024
+  # virgil 20240220.8
+  # Tue Feb 20 04:25:43 UTC 2024 -- Tue Feb 20 15:25:43 AEDT 2024
   #
-  # Merged PR 20195: adding topics
-  # 38288a05b77329ab154be91dbe08cce823fc2722
-  virgil_build_id: '863959'
+  # Merged PR 20159: Virgil - Create 2 new nodes for Kafka Q1
+  # 96c7fd6660b3d6ec47d99a5ed5bccbdb007b9f8b
+  virgil_build_id: '864035'
