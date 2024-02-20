@@ -34,3 +34,8 @@ cw1_webservice_path_services:
     the webservices don't support HTTPS
   tests:
     - path_beg -i /Services/
+
+star_sand_wtg_zone:
+  description: "*.sand.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sand\.wtg\.zone$
