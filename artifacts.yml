@@ -7,9 +7,9 @@ variables:
   # f9288220c5f5c66d0ed301c0d686ea2044753b31
   dante_build_id: '864842'
 
-  # virgil 20240221.2
-  # Tue Feb 20 21:52:16 UTC 2024 -- Wed Feb 21 08:52:16 AEDT 2024
+  # virgil 20240221.8
+  # Wed Feb 21 02:25:45 UTC 2024 -- Wed Feb 21 13:25:45 AEDT 2024
   #
-  # Merged PR 20197: (very minor) - Add more permissions comments to the Virgil queues.yaml file
-  # d0210a6358deec5fa5291d65bac9ed85ccd01aa0
-  virgil_build_id: '864792'
+  # Merged PR 20254: Virgil - Add new nodes to the cluster in queues.yaml
+  # 45faafcfe164400d39c1f26e76e40e7bfbff2bd9
+  virgil_build_id: '865043'
