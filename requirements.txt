@@ -26,13 +26,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.45
+awscli==1.32.46
     # via -r requirements.in
 bandit==1.7.7
     # via -r requirements.in
 black==24.2.0
     # via ansible-lint
-botocore==1.34.45
+botocore==1.34.46
     # via
     #   awscli
     #   s3transfer
@@ -53,9 +53,9 @@ colorama==0.4.4
     # via awscli
 confluent-kafka==2.3.0
     # via -r requirements.in
-coverage[toml]==7.4.1
+coverage[toml]==7.4.2
     # via pytest-cov
-cryptography==42.0.3
+cryptography==42.0.4
     # via
     #   ansible-core
     #   authlib
