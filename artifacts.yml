@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240221.1
-  # Tue Feb 20 22:47:42 UTC 2024 -- Wed Feb 21 09:47:42 AEDT 2024
+  # Dante Build Artifact 20240221.2
+  # Wed Feb 21 03:06:15 UTC 2024 -- Wed Feb 21 14:06:15 AEDT 2024
   #
-  # Merge pull request 20247 from dante_artifact_upgrade into master
-  # f9288220c5f5c66d0ed301c0d686ea2044753b31
-  dante_build_id: '864842'
+  # Merge pull request 20263 from dante_artifact_upgrade into master
+  # 4a569f0e71be3ceeb23c13df83d6058f236d57e1
+  dante_build_id: '865103'
 
-  # virgil 20240221.8
-  # Wed Feb 21 02:25:45 UTC 2024 -- Wed Feb 21 13:25:45 AEDT 2024
+  # virgil 20240221.16
+  # Wed Feb 21 03:08:04 UTC 2024 -- Wed Feb 21 14:08:04 AEDT 2024
   #
-  # Merged PR 20254: Virgil - Add new nodes to the cluster in queues.yaml
-  # 45faafcfe164400d39c1f26e76e40e7bfbff2bd9
-  virgil_build_id: '865043'
+  # Merged PR 20110: Virgil - Kafka Nodes moved to SY5
+  # 07d44d579f7790876b15bad69803e75b7a0222e4
+  virgil_build_id: '865106'
