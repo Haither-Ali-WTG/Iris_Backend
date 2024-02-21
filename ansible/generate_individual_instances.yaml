@@ -31,6 +31,7 @@
         certificates: "{{ clustered_instance.certificates }}"
         tests: "{{ clustered_instance.tests | default([]) }}"
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
+        custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
@@ -80,6 +81,7 @@
         - global_
         - stats
         - defaults
+        - custom_defaults
         - frontend
         - cipher
         - timeouts
