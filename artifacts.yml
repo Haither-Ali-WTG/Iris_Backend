@@ -7,9 +7,9 @@ variables:
   # 854fc7ed1e85f48cfc331c8f236bd615d1802288
   dante_build_id: '865185'
 
-  # virgil 20240221.16
-  # Wed Feb 21 03:08:04 UTC 2024 -- Wed Feb 21 14:08:04 AEDT 2024
+  # virgil 20240221.26
+  # Wed Feb 21 05:18:15 UTC 2024 -- Wed Feb 21 16:18:15 AEDT 2024
   #
-  # Merged PR 20110: Virgil - Kafka Nodes moved to SY5
-  # 07d44d579f7790876b15bad69803e75b7a0222e4
-  virgil_build_id: '865106'
+  # Merged PR 20288: Virgil - Change hw type on 782 and 783
+  # cc6fe922469a7424cec0afd5753bd395db812dac
+  virgil_build_id: '865286'
