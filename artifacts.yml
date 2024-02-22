@@ -7,9 +7,9 @@ variables:
   # fe460f30a964b6861644906fbd13f797918f6f73
   dante_build_id: '866065'
 
-  # virgil 20240222.2
-  # Wed Feb 21 23:11:03 UTC 2024 -- Thu Feb 22 10:11:03 AEDT 2024
+  # virgil 20240222.6
+  # Thu Feb 22 01:16:08 UTC 2024 -- Thu Feb 22 12:16:08 AEDT 2024
   #
-  # Merge pull request 20302 from virgil_python_upgrade into master
-  # 4568a2493e6f8047125a908e170eea2659070df2
-  virgil_build_id: '865996'
+  # Merged PR 18212: Virgil - Completely remove C-00024
+  # 45a8cbf3445b733a252d076e536cdfaac638a205
+  virgil_build_id: '866137'
