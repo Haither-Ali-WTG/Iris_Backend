@@ -97,6 +97,10 @@ log-format '{"instance_name" : "{{ defaults.log_name }}", "client_ip" : "%ci", "
 log-format '{"instance_name" : "{{ datacentre }}-{{ env }}-{{ context }}-{{ function }}", "client_ip" : "%ci", "timestamp" : "%T", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s",  "Tw" : "%Tw", "Tc" : "%Tc", "Tt" : "%Tt", "termination_state" : "%ts", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl"}'
 {% endif %}
 
+{% for key, value in custom_defaults.items() %}
+{{ key }} {{ value }}
+{% endfor %}
+
 # TODO escape values appropriately for JSON, particularly those that come from the
 # remote end. HAProxy has a ##json()## converter for this purpose.
 

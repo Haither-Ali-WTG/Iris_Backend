@@ -8,6 +8,7 @@ clustered_instance:
   global_: include('haproxy_global__settings', required=False)
   stats: include('haproxy_stats_settings', required=False)
   defaults: include('haproxy_defaults_settings', required=False)
+  custom_defaults: map(nested=False, required=False)
   frontend: include('haproxy_frontend_settings', required=False)
   cipher: include('haproxy_cipher_settings', required=False)
   timeouts: include('haproxy_timeouts_settings', required=False)
