@@ -15,7 +15,7 @@ clustered_instances:
           web: 2031
           socket: 2030
       machine_cluster: au2-prod-frontend-1
-      iis_servers:
+      iis_servers: []
       # Key vault secret should be same as username without domain and replacing '_' with '-'
       iis_user: s_lbwinrmquerier
       websites_config: websites.yml
