@@ -14,6 +14,7 @@ website:
   port: include('port')
   maintenance_page: regex(r'^[a-z0-9_]+\.html$', name='sorry page filename', required=False)
   name_suffix: any(const(''), regex('^-[a-z0-9]+$', name='site name suffix'))
+  hdr_healthcheck_https: bool(required=False)
 ---
 dynamic_cookie_off:
   enabled: const(False)
