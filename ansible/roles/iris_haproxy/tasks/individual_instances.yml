@@ -49,6 +49,8 @@
     tasks_from: check_container_exists.yml
 
 - name: Template out and validate the haproxy config
+  vars:
+    container_engine: "{{ 'podman' if (ansible_facts['os_family']|lower == 'redhat') else 'docker' }}"
   template:
     src: haproxy.cfg.j2
     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
