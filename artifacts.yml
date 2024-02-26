@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240222.2
-  # Thu Feb 22 02:09:21 UTC 2024 -- Thu Feb 22 13:09:21 AEDT 2024
+  # Dante Build Artifact 20240227.1
+  # Mon Feb 26 22:34:06 UTC 2024 -- Tue Feb 27 09:34:06 AEDT 2024
   #
-  # Merge pull request 20336 from dante_artifact_upgrade into master
-  # 689ed0fa04ae48cd8b90996e81a14b024e573bd6
-  dante_build_id: '866186'
+  # Merged PR 20437: Upgrade this manually. Theres something wrong with upgrade-artifacts or API
+  # fbedaeba41483a88f2dff6b5c084022be61cfd8f
+  dante_build_id: '870897'
 
   # virgil 20240222.6
   # Thu Feb 22 01:16:08 UTC 2024 -- Thu Feb 22 12:16:08 AEDT 2024
