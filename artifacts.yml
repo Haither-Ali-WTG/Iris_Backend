@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240227.6
-  # Tue Feb 27 08:12:43 UTC 2024 -- Tue Feb 27 19:12:43 AEDT 2024
+  # Dante Build Artifact 20240228.1
+  # Tue Feb 27 23:20:15 UTC 2024 -- Wed Feb 28 10:20:15 AEDT 2024
   #
-  # Merged PR 20506: Small change in team creation for Windows
-  # e31365997e270d42396a27bdf75fdd9a6cef6606
-  dante_build_id: '871550'
+  # Merged PR 20471: syncing cri-o v1.28 from pkgs.k8s.io
+  # 87d1e04afbd6b9c9036c54d3dbbb4ef2437372ad
+  dante_build_id: '872175'
 
   # virgil 20240228.2
   # Tue Feb 27 22:48:01 UTC 2024 -- Wed Feb 28 09:48:01 AEDT 2024
