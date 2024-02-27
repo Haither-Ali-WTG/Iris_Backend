@@ -7,9 +7,9 @@ variables:
   # e31365997e270d42396a27bdf75fdd9a6cef6606
   dante_build_id: '871550'
 
-  # virgil 20240227.30
-  # Tue Feb 27 02:56:52 UTC 2024 -- Tue Feb 27 13:56:52 AEDT 2024
+  # virgil 20240228.2
+  # Tue Feb 27 22:48:01 UTC 2024 -- Wed Feb 28 09:48:01 AEDT 2024
   #
-  # Merged PR 20427: Add workload cluster network configuration
-  # 7f578dcf3084cd473e0c24a618a85d07d7c9ca92
-  virgil_build_id: '871222'
+  # Merge pull request 20522 from virgil_python_upgrade into master
+  # 920022adbdf092b2a6b04ec818ac753e9be21d9a
+  virgil_build_id: '872127'
