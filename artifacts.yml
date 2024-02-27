@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240227.1
-  # Mon Feb 26 22:34:06 UTC 2024 -- Tue Feb 27 09:34:06 AEDT 2024
+  # Dante Build Artifact 20240227.3
+  # Tue Feb 27 00:25:07 UTC 2024 -- Tue Feb 27 11:25:07 AEDT 2024
   #
-  # Merged PR 20437: Upgrade this manually. Theres something wrong with upgrade-artifacts or API
-  # fbedaeba41483a88f2dff6b5c084022be61cfd8f
-  dante_build_id: '870897'
+  # Merge pull request 20465 from dante_artifact_upgrade into master
+  # bd919b5ec4f2608dd0b3c6c68fb287d13933a772
+  dante_build_id: '871080'
 
-  # virgil 20240222.6
-  # Thu Feb 22 01:16:08 UTC 2024 -- Thu Feb 22 12:16:08 AEDT 2024
+  # virgil 20240227.22
+  # Mon Feb 26 23:36:32 UTC 2024 -- Tue Feb 27 10:36:32 AEDT 2024
   #
-  # Merged PR 18212: Virgil - Completely remove C-00024
-  # 45a8cbf3445b733a252d076e536cdfaac638a205
-  virgil_build_id: '866137'
+  # Merged PR 20455: Acknowledge ECDSA Vulnerability
+  # 9e2a746edbbe841d931fe78ce24f76c0005e2586
+  virgil_build_id: '871009'
