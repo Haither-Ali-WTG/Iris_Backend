@@ -229,7 +229,7 @@ tomli==2.0.1
     #   mypy
     #   pylint
     #   pytest
-tomlkit==0.12.3
+tomlkit==0.12.4
     # via
     #   pylint
     #   yq
