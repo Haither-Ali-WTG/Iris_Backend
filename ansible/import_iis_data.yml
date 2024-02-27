@@ -62,6 +62,6 @@
     - debug:
         var: complete_iis_data
 
-    - name: Show warnings
-      debug:
-        var: complete_iis_data.warnings
+    # - name: Show warnings
+    #   debug:
+    #     var: complete_iis_data.warnings
