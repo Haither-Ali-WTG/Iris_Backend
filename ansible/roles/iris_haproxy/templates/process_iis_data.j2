@@ -3,7 +3,7 @@ clustered_instances:
 {% for clustered_instance in clustered_instance_names %}
   {{ clustered_instance }}:
 {%  for file in iis_files %}
-{%    if clustered_instance in (file | split('/')) %}
+{%    if clustered_instance in (file | split('/')) and (file | split('/') | last) in groups['clustered_instances'][clustered_instance][iis_servers] %}
 {%      set server = file | split('/') | last %}
     {{ server }}:
 {%      set file_content = lookup('file', file) | from_yaml %}
