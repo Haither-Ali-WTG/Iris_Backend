@@ -3,7 +3,12 @@
 clustered_instances:
   hosts:
     au2prodfrontend1prodservices:
-      # au2-prod-frontend-1-prod-services
+      # au2-prod-frontend-1-prod-services   
+      machine_overrides:
+        au2lbl00345:
+          container:
+            haproxy_version: 2.4.25
+            haproxy_os: bookworm
       dc: AU2
       frontend:
         maxconn: 20000
