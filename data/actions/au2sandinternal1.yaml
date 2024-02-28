@@ -31,7 +31,7 @@ bolero_backend_redirect:
 cw1_use_dynamic_backend_path:
   description: |-
     Redirect testrig webservices eadaptor/Glow/Portals requests to the correct backend based on path
-    Exclude requests to healthchecks which will go to the default backend so even if portals or glow 
+    Exclude requests to healthchecks which will go to the default backend so even if portals or glow
     is marked down devs can still troubleshoot
   order: 80
   actions:
