@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240229.1
-  # Wed Feb 28 22:40:45 UTC 2024 -- Thu Feb 29 09:40:45 AEDT 2024
+  # Dante Build Artifact 20240229.2
+  # Wed Feb 28 23:19:37 UTC 2024 -- Thu Feb 29 10:19:37 AEDT 2024
   #
-  # Merged PR 20559: Created nginx with uwsgi base image
-  # 90d3038afebf00dedd608dde5fcfd4ebc4843aff
-  dante_build_id: '873251'
+  # Merged PR 20558: Dockerfile to upgrade botticelli to the latest python image
+  # c0df0fcc11f1ea4cb41d178aea67ad771f340319
+  dante_build_id: '873304'
 
   # virgil 20240229.2
   # Wed Feb 28 22:27:44 UTC 2024 -- Thu Feb 29 09:27:44 AEDT 2024
