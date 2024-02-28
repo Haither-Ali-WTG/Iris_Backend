@@ -30,10 +30,11 @@ excluded_from_redirect_paths:
 
 cw1_webservice_path_services:
   description: |-
-    Paths that should be excluded from the HTTPS redirect because
-    the webservices don't support HTTPS
+    CW1 webservice paths that get routed to specific dynamic backends
   tests:
     - path_beg -i /Services/
+    - path_beg -i /Glow/
+    - path_beg -i /Portals/
 
 star_sand_wtg_zone:
   description: "*.sand.wtg.zone"
