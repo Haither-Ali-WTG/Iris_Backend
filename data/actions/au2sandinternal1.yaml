@@ -28,11 +28,13 @@ bolero_backend_redirect:
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("^.*(50[0-9]{2}_)","\1")']
         if star_bolero_sand_wtg_zone
 
-cw1_use_services_backend:
+cw1_use_dynamic_backend_path:
   description: |-
-    Redirect testrig webservices eadaptor requests to the correct backend based on path
+    Redirect testrig webservices eadaptor/Glow/Portals requests to the correct backend based on path
+    Exclude requests to healthchecks which will go to the default backend so even if portals or glow 
+    is marked down devs can still troubleshoot
   order: 80
   actions:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-%[path,field(2,/),lower]
-        if cw1_webservice_path_services star_testrig_sand_wtg_zone
+        if cw1_dynamic_backend_webservice_path star_testrig_sand_wtg_zone !testrig_healthcheck

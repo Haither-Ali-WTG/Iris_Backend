@@ -28,13 +28,21 @@ excluded_from_redirect_paths:
   tests:
     - path_beg -i /Warehouse/webservice
 
-cw1_webservice_path_services:
+cw1_dynamic_backend_webservice_path:
   description: |-
     CW1 webservice paths that get routed to specific dynamic backends
   tests:
     - path_beg -i /Services/
     - path_beg -i /Glow/
     - path_beg -i /Portals/
+
+testrig_healthcheck:
+  description: |-
+    Route healthchecks for testrig to default backend so even if a service goes down
+    the healthcheck can still be reached for troubleshooting
+  tests:
+    - path_end -i /wtg/ready
+    - path_end -i /wtg/status
 
 star_sand_wtg_zone:
   description: "*.sand.wtg.zone"
