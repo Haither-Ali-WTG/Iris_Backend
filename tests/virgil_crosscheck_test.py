@@ -151,7 +151,10 @@ class TestVirgilCrosscheck(TestCase):
                             "{set(floating_ip['priority']) - set(config['machines'])}",
                         )
 
-                    virtual_router_ids = [floating_ip["virtual_router_id"] for floating_ip in config["floating_ips"]]
+                    virtual_router_ids = [
+                        floating_ip["virtual_router_id"]
+                        for floating_ip in config["floating_ips"]
+                        ]
                     self.assertCountEqual(
                             virtual_router_ids,
                             set(virtual_router_ids),
