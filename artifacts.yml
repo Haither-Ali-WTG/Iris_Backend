@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240228.2
-  # Wed Feb 28 04:51:39 UTC 2024 -- Wed Feb 28 15:51:39 AEDT 2024
+  # Dante Build Artifact 20240228.3
+  # Wed Feb 28 05:45:14 UTC 2024 -- Wed Feb 28 16:45:14 AEDT 2024
   #
-  # Merged PR 20557: included the cri-o repo this time
-  # 468b16d787da0a63422762be670cb233baec9fee
-  dante_build_id: '872467'
+  # Merge pull request 20539 from dante_artifact_upgrade into master
+  # cb67fbe409bb06541915438fb14485c541dc75fe
+  dante_build_id: '872550'
 
   # virgil 20240228.9
   # Wed Feb 28 04:59:20 UTC 2024 -- Wed Feb 28 15:59:20 AEDT 2024
