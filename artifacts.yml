@@ -7,9 +7,9 @@ variables:
   # 468b16d787da0a63422762be670cb233baec9fee
   dante_build_id: '872467'
 
-  # virgil 20240228.2
-  # Tue Feb 27 22:48:01 UTC 2024 -- Wed Feb 28 09:48:01 AEDT 2024
+  # virgil 20240228.9
+  # Wed Feb 28 04:59:20 UTC 2024 -- Wed Feb 28 15:59:20 AEDT 2024
   #
-  # Merge pull request 20522 from virgil_python_upgrade into master
-  # 920022adbdf092b2a6b04ec818ac753e9be21d9a
-  virgil_build_id: '872127'
+  # Merged PR 20413: Updated domains.yaml - update wisecloud.zone and test.wisecloud.zone DNS forw...
+  # 49e96ce1cbaae52cfc08eb214c14d7c825c34e20
+  virgil_build_id: '872478'
