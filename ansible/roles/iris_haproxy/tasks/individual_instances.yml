@@ -58,7 +58,7 @@
     owner: "{{ subuser.subuid }}"
     group: "{{ subuser.subgid }}"
     validate: >-
-      {{ container_engine }} run exec {{ container_name }}
+      {{ container_engine }} exec {{ container_name }}
       /usr/local/sbin/haproxy -c -f %s
   become: yes
   register: haproxy_config
