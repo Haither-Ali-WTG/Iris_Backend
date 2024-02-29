@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240229.3
-  # Thu Feb 29 00:07:13 UTC 2024 -- Thu Feb 29 11:07:13 AEDT 2024
+  # Dante Build Artifact 20240229.4
+  # Thu Feb 29 00:42:33 UTC 2024 -- Thu Feb 29 11:42:33 AEDT 2024
   #
-  # Merge pull request 20603 from dante_artifact_upgrade into master
-  # eff3647e632a3055803eac90aef1f53ced333b00
-  dante_build_id: '873365'
+  # Merged PR 20615: Upgrade botticelli container on management nodes
+  # 90b3d373a8060f51065ada5fbda41798542262b8
+  dante_build_id: '873397'
 
   # virgil 20240229.2
   # Wed Feb 28 22:27:44 UTC 2024 -- Thu Feb 29 09:27:44 AEDT 2024
