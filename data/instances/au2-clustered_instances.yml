@@ -105,6 +105,11 @@ clustered_instances:
     au2sandinternal1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
+      machine_overrides:
+        au2lbl00416:
+          container:
+            haproxy_version: 2.4.25
+            haproxy_os: bookworm
       frontend:
         maxconn: 20000
         ports:
