@@ -9,24 +9,29 @@ us2-prod-frontend-1:
       ip: 10.4.64.135
       vlan: 1064
       preempt: false
+      virtual_router_id: 12
       priority: [us2lbl00384, us2lbl00385, us2lbl00386]
     - description: ediProd RDP (CORP)
       ip: 10.4.64.136
       vlan: 1064
       preempt: false
+      virtual_router_id: 13
       priority: [us2lbl00385, us2lbl00384, us2lbl00386]
     - description: webservices
       ip: 10.4.64.137
       vlan: 1064
       preempt: true
+      virtual_router_id: 14
       priority: [us2lbl00384, us2lbl00385, us2lbl00386]
     - description: webservices
       ip: 10.4.64.138
       vlan: 1064
       preempt: true
+      virtual_router_id: 15
       priority: [us2lbl00385, us2lbl00386, us2lbl00384]
     - description: webservices
       ip: 10.4.64.139
       vlan: 1064
       preempt: true
+      virtual_router_id: 16
       priority: [us2lbl00386, us2lbl00384, us2lbl00385]
