@@ -7,9 +7,9 @@ variables:
   # 7bfc7e1d455bfb79c6fd07e3986ad0a6a7b864f2
   dante_build_id: '873541'
 
-  # virgil 20240229.8
-  # Thu Feb 29 02:13:09 UTC 2024 -- Thu Feb 29 13:13:09 AEDT 2024
+  # virgil 20240301.14
+  # Fri Mar  1 00:37:31 UTC 2024 -- Fri Mar  1 11:37:31 AEDT 2024
   #
-  # Merged PR 20552: WIP: Virgil: Put support in for DNS for Kafka nodes
-  # 96d8281ef6daad5d2c5bf0119b8d530ee44a2b7a
-  virgil_build_id: '873481'
+  # Merged PR 20656: Add new zones to au2 views
+  # c6142c5ff444d1538dd95557b84a51447e2c122a
+  virgil_build_id: '874427'
