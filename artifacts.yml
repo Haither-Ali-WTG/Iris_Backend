@@ -7,9 +7,9 @@ variables:
   # 345b8c1ec1b721398b2107d6c21d97ea547fdd7a
   dante_build_id: '874470'
 
-  # virgil 20240301.14
-  # Fri Mar  1 00:37:31 UTC 2024 -- Fri Mar  1 11:37:31 AEDT 2024
+  # virgil 20240304.8
+  # Mon Mar  4 01:38:21 UTC 2024 -- Mon Mar  4 12:38:21 AEDT 2024
   #
-  # Merged PR 20656: Add new zones to au2 views
-  # c6142c5ff444d1538dd95557b84a51447e2c122a
-  virgil_build_id: '874427'
+  # Merged PR 20551: CS01508045 - repoint kafka node 1
+  # dfc54502eb0f86c65030f42ad253de27db8a8582
+  virgil_build_id: '877151'
