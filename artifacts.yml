@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240304.1
-  # Mon Mar  4 03:47:58 UTC 2024 -- Mon Mar  4 14:47:58 AEDT 2024
+  # Dante Build Artifact 20240304.2
+  # Mon Mar  4 04:58:06 UTC 2024 -- Mon Mar  4 15:58:06 AEDT 2024
   #
-  # Merge pull request 20694 from dante_artifact_upgrade into master
-  # 9e4cbc974959206e23045b9d0dea8693d8f1669a
-  dante_build_id: '877269'
+  # Merged PR 20698: Upgraded styx code for Azure devops v7
+  # ff4e165e19560f347690b0d14d6dd3b478cacd0d
+  dante_build_id: '877340'
 
-  # virgil 20240304.8
-  # Mon Mar  4 01:38:21 UTC 2024 -- Mon Mar  4 12:38:21 AEDT 2024
+  # virgil 20240304.16
+  # Mon Mar  4 04:32:05 UTC 2024 -- Mon Mar  4 15:32:05 AEDT 2024
   #
-  # Merged PR 20551: CS01508045 - repoint kafka node 1
-  # dfc54502eb0f86c65030f42ad253de27db8a8582
-  virgil_build_id: '877151'
+  # Merged PR 20652: Provision SN2010 ports for US2 NTP devices
+  # 3b807c9e1d90cc6974eb60f93d507c7f525b53d4
+  virgil_build_id: '877326'
