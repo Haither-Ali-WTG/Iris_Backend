@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240304.4
-  # Mon Mar  4 06:46:32 UTC 2024 -- Mon Mar  4 17:46:32 AEDT 2024
+  # Dante Build Artifact 20240305.1
+  # Mon Mar  4 21:05:14 UTC 2024 -- Tue Mar  5 08:05:14 AEDT 2024
   #
-  # Merge pull request 20723 from dante_artifact_upgrade into master
-  # 4de170d0d3b4a131c0a064c62f9ead226844a73a
-  dante_build_id: '877482'
+  # Merge pull request 20736 from dante_artifact_upgrade into master
+  # bffa02271e2725ddc12c241abf58d4c0b89e8d6e
+  dante_build_id: '878054'
 
   # virgil 20240305.2
   # Mon Mar  4 20:23:46 UTC 2024 -- Tue Mar  5 07:23:46 AEDT 2024
