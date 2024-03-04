@@ -49,29 +49,32 @@
     tasks_from: check_container_exists.yml
 
 - name: Template out and validate the haproxy config
-  vars:
-    container_engine: "{{ 'podman' if (ansible_facts['os_family'] | lower == 'redhat') else 'docker' }}"
-  template:
-    src: haproxy.cfg.j2
-    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-    validate: >-
-      bash -c
-      'cp %s {{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp
-      && {{ container_engine }} exec {{ container_name }} /usr/local/sbin/haproxy
-      -c -f /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp'
-  become: yes
-  register: haproxy_config
   when: container_exists
+  block:
+    - name: Template out and validate the haproxy config
+      vars:
+        container_engine: "{{ 'podman' if (ansible_facts['os_family'] | lower == 'redhat') else 'docker' }}"
+      template:
+        src: haproxy.cfg.j2
+        dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+        mode: u=r,go=
+        owner: "{{ subuser.subuid }}"
+        group: "{{ subuser.subgid }}"
+        validate: >-
+          bash -c
+          'cp -p %s {{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp
+          && {{ container_engine }} exec {{ container_name }} /usr/local/sbin/haproxy
+          -c -f /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp'
+      become: yes
+      register: haproxy_config
 
-- name: Delete the temporary file
-  file:
-    path: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp"
-    state: absent
-  become: yes
-  when: container_exists
+  always:
+    - name: Delete the temporary file
+      file:
+        path: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp"
+        state: absent
+      become: yes
+      when: container_exists
 
 - name: Template out the haproxy config
   template:
