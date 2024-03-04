@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240304.2
-  # Mon Mar  4 04:58:06 UTC 2024 -- Mon Mar  4 15:58:06 AEDT 2024
+  # Dante Build Artifact 20240304.3
+  # Mon Mar  4 06:06:19 UTC 2024 -- Mon Mar  4 17:06:19 AEDT 2024
   #
-  # Merged PR 20698: Upgraded styx code for Azure devops v7
-  # ff4e165e19560f347690b0d14d6dd3b478cacd0d
-  dante_build_id: '877340'
+  # Merge pull request 20709 from dante_artifact_upgrade into master
+  # 24bb719780a3046c509e2c5cd4b21e7db050bd93
+  dante_build_id: '877435'
 
-  # virgil 20240304.21
-  # Mon Mar  4 05:26:54 UTC 2024 -- Mon Mar  4 16:26:54 AEDT 2024
+  # virgil 20240304.25
+  # Mon Mar  4 06:04:49 UTC 2024 -- Mon Mar  4 17:04:49 AEDT 2024
   #
-  # Merged PR 20687: Add au pool for NTP nodes
-  # 7c381d3daac21d593bc75562ce7489250d9c76ab
-  virgil_build_id: '877372'
+  # Merged PR 20697: CS01508045 repoint kafka node 2
+  # c8f1d9af9c97c10fb56cf1b17edba4c4bf5f6992
+  virgil_build_id: '877432'
