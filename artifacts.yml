@@ -7,9 +7,9 @@ variables:
   # 4de170d0d3b4a131c0a064c62f9ead226844a73a
   dante_build_id: '877482'
 
-  # virgil 20240304.25
-  # Mon Mar  4 06:04:49 UTC 2024 -- Mon Mar  4 17:04:49 AEDT 2024
+  # virgil 20240305.2
+  # Mon Mar  4 20:23:46 UTC 2024 -- Tue Mar  5 07:23:46 AEDT 2024
   #
-  # Merged PR 20697: CS01508045 repoint kafka node 2
-  # c8f1d9af9c97c10fb56cf1b17edba4c4bf5f6992
-  virgil_build_id: '877432'
+  # Merged PR 20695: Updated new us2 ceph haproxy server details post cutover
+  # 415b172e9b2914cb80d078af08087e269328084f
+  virgil_build_id: '877999'
