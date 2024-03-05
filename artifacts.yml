@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240305.1
-  # Mon Mar  4 21:05:14 UTC 2024 -- Tue Mar  5 08:05:14 AEDT 2024
+  # Dante Build Artifact 20240305.2
+  # Tue Mar  5 00:24:41 UTC 2024 -- Tue Mar  5 11:24:41 AEDT 2024
   #
-  # Merge pull request 20736 from dante_artifact_upgrade into master
-  # bffa02271e2725ddc12c241abf58d4c0b89e8d6e
-  dante_build_id: '878054'
+  # Merged PR 20745: Removed 10.2 network jump from ssh config on cicd agent
+  # d6094cd81133c561662effabd977a6c109428b4b
+  dante_build_id: '878248'
 
-  # virgil 20240305.2
-  # Mon Mar  4 20:23:46 UTC 2024 -- Tue Mar  5 07:23:46 AEDT 2024
+  # virgil 20240305.6
+  # Tue Mar  5 00:27:20 UTC 2024 -- Tue Mar  5 11:27:20 AEDT 2024
   #
-  # Merged PR 20695: Updated new us2 ceph haproxy server details post cutover
-  # 415b172e9b2914cb80d078af08087e269328084f
-  virgil_build_id: '877999'
+  # Merged PR 20753: created topic for postfix
+  # d8edd3198ac1b182702324251a4de823f34d74dd
+  virgil_build_id: '878251'
