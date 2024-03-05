@@ -74,7 +74,6 @@
         path: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp"
         state: absent
       become: yes
-      when: container_exists
 
 - name: Template out the haproxy config
   template:
