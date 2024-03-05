@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240305.2
-  # Tue Mar  5 00:24:41 UTC 2024 -- Tue Mar  5 11:24:41 AEDT 2024
+  # Dante Build Artifact 20240305.3
+  # Tue Mar  5 01:05:30 UTC 2024 -- Tue Mar  5 12:05:30 AEDT 2024
   #
-  # Merged PR 20745: Removed 10.2 network jump from ssh config on cicd agent
-  # d6094cd81133c561662effabd977a6c109428b4b
-  dante_build_id: '878248'
+  # Merge pull request 20762 from dante_artifact_upgrade into master
+  # 2d45acc2e06d861915e77c1ec760a55694c90f4a
+  dante_build_id: '878312'
 
   # virgil 20240305.6
   # Tue Mar  5 00:27:20 UTC 2024 -- Tue Mar  5 11:27:20 AEDT 2024
