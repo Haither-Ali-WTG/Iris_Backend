@@ -41,6 +41,39 @@
     - haproxy.sock
   become: yes
 
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
+
+- name: Template out and validate the haproxy config
+  when: container_exists
+  block:
+    - name: Template out and validate the haproxy config
+      vars:
+        container_engine: "{{ 'podman' if (ansible_facts['os_family'] | lower == 'redhat') else 'docker' }}"
+      template:
+        src: haproxy.cfg.j2
+        dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+        mode: u=r,go=
+        owner: "{{ subuser.subuid }}"
+        group: "{{ subuser.subgid }}"
+        validate: >-
+          bash -c
+          'cp -p %s {{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp
+          && {{ container_engine }} exec {{ container_name }} /usr/local/sbin/haproxy
+          -c -f /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp'
+      become: yes
+      register: haproxy_config
+
+  always:
+    - name: Delete the temporary file
+      file:
+        path: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp"
+        state: absent
+      become: yes
 
 - name: Template out the haproxy config
   template:
@@ -50,8 +83,8 @@
     owner: "{{ subuser.subuid }}"
     group: "{{ subuser.subgid }}"
   become: yes
-  # TODO: validate
   register: haproxy_config
+  when: not container_exists
 
 - name: Template out the sorry page
   template:
@@ -101,13 +134,6 @@
   when: >-  # noqa: no-handler
     apparmor_profile_config is changed
     or container_name not in (apparmor_status.stdout | from_json).profiles
-
-- name: Check if container exists
-  vars:
-    name: "{{ container_name }}"
-  include_role:
-    name: container_runner
-    tasks_from: check_container_exists.yml
 
 - name: Deploy the haproxy container
   include_role:
