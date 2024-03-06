@@ -7,9 +7,9 @@ variables:
   # 0db8416cba37cb6663bf61d4b2f20b89c810ca05
   dante_build_id: '879561'
 
-  # virgil 20240306.5
-  # Wed Mar  6 06:20:37 UTC 2024 -- Wed Mar  6 17:20:37 AEDT 2024
+  # virgil 20240307.5
+  # Wed Mar  6 22:54:27 UTC 2024 -- Thu Mar  7 09:54:27 AEDT 2024
   #
-  # Merged PR 20781: Virgil - Increase partition across brokers of single topic for testing
-  # 6883c582cea1dac7efd61a027121446b822b9e1a
-  virgil_build_id: '879519'
+  # Merged PR 20806: WI00718038 - Virgil: Deprecate netmask and create netmasks for a single DC
+  # c13ed71608fbcfea4a439cca42ce28ac3f376472
+  virgil_build_id: '880162'
