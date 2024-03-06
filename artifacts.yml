@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240305.4
-  # Tue Mar  5 02:06:19 UTC 2024 -- Tue Mar  5 13:06:19 AEDT 2024
+  # Dante Build Artifact 20240306.1
+  # Wed Mar  6 07:07:53 UTC 2024 -- Wed Mar  6 18:07:53 AEDT 2024
   #
-  # Merged PR 20751: Upgrade styx to use latest docker image
-  # c0e1a74c0a55809f01580770934249deafd4b0e8
-  dante_build_id: '878388'
+  # Merge pull request 20810 from dante_artifact_upgrade into master
+  # 0db8416cba37cb6663bf61d4b2f20b89c810ca05
+  dante_build_id: '879561'
 
   # virgil 20240306.5
   # Wed Mar  6 06:20:37 UTC 2024 -- Wed Mar  6 17:20:37 AEDT 2024
