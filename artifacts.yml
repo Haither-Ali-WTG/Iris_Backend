@@ -7,9 +7,9 @@ variables:
   # c0e1a74c0a55809f01580770934249deafd4b0e8
   dante_build_id: '878388'
 
-  # virgil 20240305.6
-  # Tue Mar  5 00:27:20 UTC 2024 -- Tue Mar  5 11:27:20 AEDT 2024
+  # virgil 20240306.5
+  # Wed Mar  6 06:20:37 UTC 2024 -- Wed Mar  6 17:20:37 AEDT 2024
   #
-  # Merged PR 20753: created topic for postfix
-  # d8edd3198ac1b182702324251a4de823f34d74dd
-  virgil_build_id: '878251'
+  # Merged PR 20781: Virgil - Increase partition across brokers of single topic for testing
+  # 6883c582cea1dac7efd61a027121446b822b9e1a
+  virgil_build_id: '879519'
