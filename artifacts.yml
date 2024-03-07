@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240307.3
-  # Thu Mar  7 01:29:39 UTC 2024 -- Thu Mar  7 12:29:39 AEDT 2024
+  # Dante Build Artifact 20240307.5
+  # Thu Mar  7 03:06:28 UTC 2024 -- Thu Mar  7 14:06:28 AEDT 2024
   #
-  # Merged PR 20763: Upgrade styx image
-  # c6adac211860975075cc3922803d254fc1c5f075
-  dante_build_id: '880347'
+  # Merge pull request 20842 from dante_artifact_upgrade into master
+  # 55ae11100384a424f361c7a6df92746d59bc203a
+  dante_build_id: '880483'
 
-  # virgil 20240307.9
-  # Thu Mar  7 00:47:36 UTC 2024 -- Thu Mar  7 11:47:36 AEDT 2024
+  # virgil 20240307.16
+  # Thu Mar  7 02:58:25 UTC 2024 -- Thu Mar  7 13:58:25 AEDT 2024
   #
-  # Merged PR 20823: CS01508045 - Decommissioned remaining SR630v1's used by Elastic.
-  # 2020cbf1c123b3079c13c2489600be9a94e16bbc
-  virgil_build_id: '880290'
+  # Merged PR 20852: Created Various Kafka Topics
+  # 594e5163541f170e6d8e77a6272f3f3288df7f13
+  virgil_build_id: '880459'
