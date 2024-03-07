@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240307.1
-  # Wed Mar  6 23:46:20 UTC 2024 -- Thu Mar  7 10:46:20 AEDT 2024
+  # Dante Build Artifact 20240307.2
+  # Thu Mar  7 01:04:40 UTC 2024 -- Thu Mar  7 12:04:40 AEDT 2024
   #
-  # Merge pull request 20829 from dante_artifact_upgrade into master
-  # afe9945ab26961666b247c7f3df79fd7f13212c2
-  dante_build_id: '880219'
+  # Merged PR 20797: Added new time format for supporting AWS S3 buckets.
+  # 50bd6709a2bd02ad21e963b98e6c534eb5003c2d
+  dante_build_id: '880321'
 
   # virgil 20240307.9
   # Thu Mar  7 00:47:36 UTC 2024 -- Thu Mar  7 11:47:36 AEDT 2024
