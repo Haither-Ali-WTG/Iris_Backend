@@ -66,7 +66,7 @@
           && {{ container_engine }} exec {{ container_name }} /usr/local/sbin/haproxy
           -c -f /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp'
       become: yes
-      register: haproxy_config
+      register: config_with_container
 
   always:
     - name: Delete the temporary file
@@ -83,8 +83,12 @@
     owner: "{{ subuser.subuid }}"
     group: "{{ subuser.subgid }}"
   become: yes
-  register: haproxy_config
+  register: config_without_container
   when: not container_exists
+
+- name: Set haproxy_config_changed
+  set_fact:
+    haproxy_config_changed: "{{ config_with_container.changed or config_without_container.changed }}"
 
 - name: Template out the sorry page
   template:
@@ -195,7 +199,7 @@
   changed_when: true
   when:
     - container_exists
-    - haproxy_config.changed
+    - haproxy_config_changed
 
 - name: Update server states file
   include_tasks: update_states_file.yml
@@ -204,7 +208,7 @@
     states_file: "{{ individual_instance_dir }}/run/global-state"
   when:
     - container_exists
-    - haproxy_config.changed
+    - haproxy_config_changed
 
 - name: Reload haproxy
   # This cannot be a handler as `include_role` is not supported in handlers
@@ -216,4 +220,4 @@
     tasks_from: send_signal.yml
   when:
     - container_exists
-    - haproxy_config.changed or sorry_page.changed or copy_certificates.changed  # noqa: no-handler
+    - haproxy_config_changed or sorry_page.changed or copy_certificates.changed  # noqa: no-handler
