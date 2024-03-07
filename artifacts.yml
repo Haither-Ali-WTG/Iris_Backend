@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240307.2
-  # Thu Mar  7 01:04:40 UTC 2024 -- Thu Mar  7 12:04:40 AEDT 2024
+  # Dante Build Artifact 20240307.3
+  # Thu Mar  7 01:29:39 UTC 2024 -- Thu Mar  7 12:29:39 AEDT 2024
   #
-  # Merged PR 20797: Added new time format for supporting AWS S3 buckets.
-  # 50bd6709a2bd02ad21e963b98e6c534eb5003c2d
-  dante_build_id: '880321'
+  # Merged PR 20763: Upgrade styx image
+  # c6adac211860975075cc3922803d254fc1c5f075
+  dante_build_id: '880347'
 
   # virgil 20240307.9
   # Thu Mar  7 00:47:36 UTC 2024 -- Thu Mar  7 11:47:36 AEDT 2024
