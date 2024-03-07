@@ -7,9 +7,9 @@ variables:
   # 353388767c77a97345e05d664d8463d4dfd430e6
   dante_build_id: '880578'
 
-  # virgil 20240307.21
-  # Thu Mar  7 03:27:23 UTC 2024 -- Thu Mar  7 14:27:23 AEDT 2024
+  # virgil 20240308.1
+  # Thu Mar  7 22:53:23 UTC 2024 -- Fri Mar  8 09:53:23 AEDT 2024
   #
-  # Merged PR 20844: CS01508045  - au2anl00241 - rebuild with new OS / RAID Config
-  # afa4f2fd9506afc9ab50fa5bf3591881a781723f
-  virgil_build_id: '880508'
+  # Merged PR 20865: creating topic for certconnect
+  # 7fa2b85d22c3b4ba01ab6881eb66810d0554aaed
+  virgil_build_id: '881321'
