@@ -235,9 +235,9 @@ tomlkit==0.12.4
     #   yq
 typer==0.9.0
     # via safety
-types-pyyaml==6.0.12.12
+types-pyyaml==6.0.12.20240311
     # via -r requirements.in
-types-requests==2.31.0.20240310
+types-requests==2.31.0.20240311
     # via -r requirements.in
 typing-extensions==4.10.0
     # via
