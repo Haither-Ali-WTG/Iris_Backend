@@ -7,9 +7,9 @@ variables:
   # 199d99863baf0bb0c63e7ba77bbbbd01df1e2512
   dante_build_id: '884347'
 
-  # virgil 20240311.8
-  # Mon Mar 11 00:23:57 UTC 2024 -- Mon Mar 11 11:23:57 AEDT 2024
+  # virgil 20240312.2
+  # Tue Mar 12 03:07:43 UTC 2024 -- Tue Mar 12 14:07:43 AEDT 2024
   #
-  # Merged PR 20096: Virgil - Remove custom-connector topics
-  # 96809c887e2710edbc1a26caf267953fe149af06
-  virgil_build_id: '884226'
+  # Merged PR 21011: CS01508045  - au2anl00242 - rebuild with new OS / RAID Config
+  # d5f7768ea164ee5b36bf682792d3a2c4b34b93ed
+  virgil_build_id: '885406'
