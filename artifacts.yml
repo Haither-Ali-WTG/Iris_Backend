@@ -7,9 +7,9 @@ variables:
   # 2e97a36bac7b7ca69f3deb1280af7dfeded8fc3b
   dante_build_id: '885582'
 
-  # virgil 20240312.2
-  # Tue Mar 12 03:07:43 UTC 2024 -- Tue Mar 12 14:07:43 AEDT 2024
+  # virgil 20240313.2
+  # Tue Mar 12 22:11:17 UTC 2024 -- Wed Mar 13 09:11:17 AEDT 2024
   #
-  # Merged PR 21011: CS01508045  - au2anl00242 - rebuild with new OS / RAID Config
-  # d5f7768ea164ee5b36bf682792d3a2c4b34b93ed
-  virgil_build_id: '885406'
+  # Merged PR 20681: Updated teardowns.yaml
+  # ddebefe9f746f33c1015e82b3562358fc0a6f957
+  virgil_build_id: '886230'
