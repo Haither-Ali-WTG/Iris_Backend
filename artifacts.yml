@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240312.2
-  # Tue Mar 12 05:44:10 UTC 2024 -- Tue Mar 12 16:44:10 AEDT 2024
+  # Dante Build Artifact 20240313.1
+  # Tue Mar 12 23:06:02 UTC 2024 -- Wed Mar 13 10:06:02 AEDT 2024
   #
-  # Merged PR 21021: WIP: Gather all tags assosiated with "latest" image on Dockerhub
-  # 2e97a36bac7b7ca69f3deb1280af7dfeded8fc3b
-  dante_build_id: '885582'
+  # Merge pull request 21047 from dante_artifact_upgrade into master
+  # bc8c8b9923ee449daa2b5b7715d7e9b55d6430d4
+  dante_build_id: '886280'
 
   # virgil 20240313.2
   # Tue Mar 12 22:11:17 UTC 2024 -- Wed Mar 13 09:11:17 AEDT 2024
