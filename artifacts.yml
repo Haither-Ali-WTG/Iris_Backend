@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240313.2
-  # Wed Mar 13 00:09:39 UTC 2024 -- Wed Mar 13 11:09:39 AEDT 2024
+  # Dante Build Artifact 20240313.3
+  # Wed Mar 13 05:32:33 UTC 2024 -- Wed Mar 13 16:32:33 AEDT 2024
   #
-  # Merge pull request 21056 from dante_artifact_upgrade into master
-  # 83d6504b9aab5b581b74c10bbf9fd2ecfcdff015
-  dante_build_id: '886355'
+  # Merged PR 21060: Tag and publish latest docker image to Azure registry
+  # e7de4af4449e50fc3cfbd80f97ae6f12f633f818
+  dante_build_id: '886620'
 
   # virgil 20240313.5
   # Tue Mar 12 23:22:30 UTC 2024 -- Wed Mar 13 10:22:30 AEDT 2024
