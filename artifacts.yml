@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240314.1
-  # Wed Mar 13 22:05:52 UTC 2024 -- Thu Mar 14 09:05:52 AEDT 2024
+  # Dante Build Artifact 20240314.2
+  # Wed Mar 13 23:06:07 UTC 2024 -- Thu Mar 14 10:06:07 AEDT 2024
   #
-  # Merge pull request 21109 from dante_artifact_upgrade into master
-  # 71a2fcbb0a47ec00666ab62b9fc899b9a4cf1651
-  dante_build_id: '887313'
+  # Merged PR 20849: Dante - Implement a timeout an retries on US2 DC tasks
+  # dbb4942522006cb13be5d7aaf5fe955d9d41d1d1
+  dante_build_id: '887397'
 
-  # virgil 20240314.10
-  # Wed Mar 13 21:09:56 UTC 2024 -- Thu Mar 14 08:09:56 AEDT 2024
+  # virgil 20240314.14
+  # Wed Mar 13 22:55:57 UTC 2024 -- Thu Mar 14 09:55:57 AEDT 2024
   #
-  # Merged PR 21069: Updated domains.yaml - Add NTP for US and DE
-  # 1d8df946399bef262247d449dd3b8bb3e569861a
-  virgil_build_id: '887256'
+  # Merged PR 20388: Provision 3 new nodes for Kafka Q1
+  # a72b7eda14967a20b872934ea15f0574b83330a3
+  virgil_build_id: '887363'
