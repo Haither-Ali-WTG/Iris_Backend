@@ -7,9 +7,9 @@ variables:
   # 46ad7c019656841b2c922e2a0864ccd23b1d7f2d
   dante_build_id: '886700'
 
-  # virgil 20240313.12
-  # Wed Mar 13 05:48:11 UTC 2024 -- Wed Mar 13 16:48:11 AEDT 2024
+  # virgil 20240314.10
+  # Wed Mar 13 21:09:56 UTC 2024 -- Thu Mar 14 08:09:56 AEDT 2024
   #
-  # Merged PR 21068: reconfig apex15 and 16 swp28 for Edge LB move n rebuild
-  # 1b568dca735bb98e0cb6c289cbe76949caec8fea
-  virgil_build_id: '886636'
+  # Merged PR 21069: Updated domains.yaml - Add NTP for US and DE
+  # 1d8df946399bef262247d449dd3b8bb3e569861a
+  virgil_build_id: '887256'
