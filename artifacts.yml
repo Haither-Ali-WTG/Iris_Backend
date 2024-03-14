@@ -7,9 +7,9 @@ variables:
   # dbb4942522006cb13be5d7aaf5fe955d9d41d1d1
   dante_build_id: '887397'
 
-  # virgil 20240314.14
-  # Wed Mar 13 22:55:57 UTC 2024 -- Thu Mar 14 09:55:57 AEDT 2024
+  # virgil 20240314.17
+  # Wed Mar 13 23:39:42 UTC 2024 -- Thu Mar 14 10:39:42 AEDT 2024
   #
-  # Merged PR 20388: Provision 3 new nodes for Kafka Q1
-  # a72b7eda14967a20b872934ea15f0574b83330a3
-  virgil_build_id: '887363'
+  # Merged PR 20983: CS01539292 - Created Kafka Topics for Winzor E2E Integration Testing
+  # ca6679cd45e75b66284d67d1fbbab1c03b94a7ff
+  virgil_build_id: '887432'
