@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240314.2
-  # Wed Mar 13 23:06:07 UTC 2024 -- Thu Mar 14 10:06:07 AEDT 2024
+  # Dante Build Artifact 20240314.3
+  # Thu Mar 14 04:25:47 UTC 2024 -- Thu Mar 14 15:25:47 AEDT 2024
   #
-  # Merged PR 20849: Dante - Implement a timeout an retries on US2 DC tasks
-  # dbb4942522006cb13be5d7aaf5fe955d9d41d1d1
-  dante_build_id: '887397'
+  # Merge pull request 21124 from dante_artifact_upgrade into master
+  # 243f235d814b8518e49edb90ab25827fd17a7d4a
+  dante_build_id: '887717'
 
   # virgil 20240314.20
   # Thu Mar 14 03:31:15 UTC 2024 -- Thu Mar 14 14:31:15 AEDT 2024
