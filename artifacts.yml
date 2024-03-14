@@ -7,9 +7,9 @@ variables:
   # dbb4942522006cb13be5d7aaf5fe955d9d41d1d1
   dante_build_id: '887397'
 
-  # virgil 20240314.17
-  # Wed Mar 13 23:39:42 UTC 2024 -- Thu Mar 14 10:39:42 AEDT 2024
+  # virgil 20240314.20
+  # Thu Mar 14 03:31:15 UTC 2024 -- Thu Mar 14 14:31:15 AEDT 2024
   #
-  # Merged PR 20983: CS01539292 - Created Kafka Topics for Winzor E2E Integration Testing
-  # ca6679cd45e75b66284d67d1fbbab1c03b94a7ff
-  virgil_build_id: '887432'
+  # Merged PR 21136: Added the information for the network clock servers.
+  # e11d60827c8cf94eadd3566837ebba8ab1f07929
+  virgil_build_id: '887661'
