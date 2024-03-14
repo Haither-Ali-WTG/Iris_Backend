@@ -7,9 +7,9 @@ variables:
   # 243f235d814b8518e49edb90ab25827fd17a7d4a
   dante_build_id: '887717'
 
-  # virgil 20240314.20
-  # Thu Mar 14 03:31:15 UTC 2024 -- Thu Mar 14 14:31:15 AEDT 2024
+  # virgil 20240315.2
+  # Thu Mar 14 21:07:57 UTC 2024 -- Fri Mar 15 08:07:57 AEDT 2024
   #
-  # Merged PR 21136: Added the information for the network clock servers.
-  # e11d60827c8cf94eadd3566837ebba8ab1f07929
-  virgil_build_id: '887661'
+  # Merged PR 21097: Add nodes to us2kvl-v0
+  # e52e6b12b71897e421830c7c06ff8b623740f675
+  virgil_build_id: '888364'
