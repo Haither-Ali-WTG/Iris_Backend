@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240315.3
-  # Fri Mar 15 03:36:04 UTC 2024 -- Fri Mar 15 14:36:04 AEDT 2024
+  # Dante Build Artifact 20240315.4
+  # Fri Mar 15 04:31:08 UTC 2024 -- Fri Mar 15 15:31:08 AEDT 2024
   #
-  # Merged PR 21179: Update the NTP address to SEL-2488 Clock
-  # c101d9828e477e8b7a2337652daa61d983aa927c
-  dante_build_id: '888735'
+  # Merged PR 21191: Quick Rollback the ntp config
+  # fc30b9831075fd5d01c327a615d1b9d2e7ab465b
+  dante_build_id: '888802'
 
   # virgil 20240315.2
   # Thu Mar 14 21:07:57 UTC 2024 -- Fri Mar 15 08:07:57 AEDT 2024
