@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240315.2
-  # Thu Mar 14 23:40:50 UTC 2024 -- Fri Mar 15 10:40:50 AEDT 2024
+  # Dante Build Artifact 20240315.3
+  # Fri Mar 15 03:36:04 UTC 2024 -- Fri Mar 15 14:36:04 AEDT 2024
   #
-  # Merged PR 21063: Upgrade nginx to version 1.25.4
-  # fb69438e148504c6b230cd5b0e0b5cc32a5e8e9e
-  dante_build_id: '888505'
+  # Merged PR 21179: Update the NTP address to SEL-2488 Clock
+  # c101d9828e477e8b7a2337652daa61d983aa927c
+  dante_build_id: '888735'
 
   # virgil 20240315.2
   # Thu Mar 14 21:07:57 UTC 2024 -- Fri Mar 15 08:07:57 AEDT 2024
