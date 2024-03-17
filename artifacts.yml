@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240315.4
-  # Fri Mar 15 04:31:08 UTC 2024 -- Fri Mar 15 15:31:08 AEDT 2024
+  # Dante Build Artifact 20240318.1
+  # Sun Mar 17 22:40:30 UTC 2024 -- Mon Mar 18 09:40:30 AEDT 2024
   #
-  # Merged PR 21191: Quick Rollback the ntp config
-  # fc30b9831075fd5d01c327a615d1b9d2e7ab465b
-  dante_build_id: '888802'
+  # Merged PR 21177: Pipeline for tagging and publishing docker images
+  # 25ff80dedb45ddd8c066ffcb939f562f5e2fd93d
+  dante_build_id: '891225'
 
-  # virgil 20240315.2
-  # Thu Mar 14 21:07:57 UTC 2024 -- Fri Mar 15 08:07:57 AEDT 2024
+  # virgil 20240318.4
+  # Sun Mar 17 22:45:46 UTC 2024 -- Mon Mar 18 09:45:46 AEDT 2024
   #
-  # Merged PR 21097: Add nodes to us2kvl-v0
-  # e52e6b12b71897e421830c7c06ff8b623740f675
-  virgil_build_id: '888364'
+  # Merge pull request 21208 from virgil_python_upgrade into master
+  # 0128ed1dc4dae34a320914c12050c5061450360d
+  virgil_build_id: '891243'
