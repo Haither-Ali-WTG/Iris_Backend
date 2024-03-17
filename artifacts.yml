@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240318.1
-  # Sun Mar 17 22:40:30 UTC 2024 -- Mon Mar 18 09:40:30 AEDT 2024
+  # Dante Build Artifact 20240318.2
+  # Sun Mar 17 23:47:27 UTC 2024 -- Mon Mar 18 10:47:27 AEDT 2024
   #
-  # Merged PR 21177: Pipeline for tagging and publishing docker images
-  # 25ff80dedb45ddd8c066ffcb939f562f5e2fd93d
-  dante_build_id: '891225'
+  # Merge pull request 21222 from dante_artifact_upgrade into master
+  # c2a0b8d74ac3dfe9969151fde9ce72dc54e6535e
+  dante_build_id: '891308'
 
-  # virgil 20240318.4
-  # Sun Mar 17 22:45:46 UTC 2024 -- Mon Mar 18 09:45:46 AEDT 2024
+  # virgil 20240318.6
+  # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
   #
-  # Merge pull request 21208 from virgil_python_upgrade into master
-  # 0128ed1dc4dae34a320914c12050c5061450360d
-  virgil_build_id: '891243'
+  # Merged PR 21223: Change the network clock IP from the 172 IP to 10 IP.
+  # 60565ddb275cb69c5969a5ab829e93c186a771e1
+  virgil_build_id: '891297'
