@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240318.3
-  # Mon Mar 18 01:58:58 UTC 2024 -- Mon Mar 18 12:58:58 AEDT 2024
+  # Dante Build Artifact 20240318.4
+  # Mon Mar 18 04:58:25 UTC 2024 -- Mon Mar 18 15:58:25 AEDT 2024
   #
-  # Merged PR 21233: increase 'retries' for package installation
-  # 64480671f7672a2ab93c1405c54066fae7404aea
-  dante_build_id: '891428'
+  # Merged PR 21243: Added Docker images namespace support.
+  # 6c8c6041d048c6b730aafc198f4cd153786377fa
+  dante_build_id: '891587'
 
   # virgil 20240318.6
   # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
