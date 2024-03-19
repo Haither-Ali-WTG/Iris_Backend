@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240319.5
-  # Tue Mar 19 00:47:05 UTC 2024 -- Tue Mar 19 11:47:05 AEDT 2024
+  # Dante Build Artifact 20240319.6
+  # Tue Mar 19 01:54:19 UTC 2024 -- Tue Mar 19 12:54:19 AEDT 2024
   #
-  # Merged PR 21268: Add variable install_package_for_testing
-  # c0a4944c02e272192de7e087e55d68d3c7151a61
-  dante_build_id: '892427'
+  # Merged PR 21270: Dante - ipmitool apt update on building new host
+  # ae8662bf6a5422ad8d12d766105c0d71aa8e67c4
+  dante_build_id: '892494'
 
   # virgil 20240318.6
   # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
