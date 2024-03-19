@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240319.6
-  # Tue Mar 19 01:54:19 UTC 2024 -- Tue Mar 19 12:54:19 AEDT 2024
+  # Dante Build Artifact 20240320.1
+  # Tue Mar 19 15:07:45 UTC 2024 -- Wed Mar 20 02:07:45 AEDT 2024
   #
-  # Merged PR 21270: Dante - ipmitool apt update on building new host
-  # ae8662bf6a5422ad8d12d766105c0d71aa8e67c4
-  dante_build_id: '892494'
+  # Merge pull request 21230 from dante_artifact_upgrade into master
+  # d030ba14eef84c95d666517e4b949303a0aa8ded
+  dante_build_id: '893035'
 
   # virgil 20240320.1
   # Tue Mar 19 14:25:34 UTC 2024 -- Wed Mar 20 01:25:34 AEDT 2024
