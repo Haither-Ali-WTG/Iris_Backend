@@ -7,9 +7,9 @@ variables:
   # ae8662bf6a5422ad8d12d766105c0d71aa8e67c4
   dante_build_id: '892494'
 
-  # virgil 20240318.6
-  # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
+  # virgil 20240320.1
+  # Tue Mar 19 14:25:34 UTC 2024 -- Wed Mar 20 01:25:34 AEDT 2024
   #
-  # Merged PR 21223: Change the network clock IP from the 172 IP to 10 IP.
-  # 60565ddb275cb69c5969a5ab829e93c186a771e1
-  virgil_build_id: '891297'
+  # Merged PR 21255: Add US2 pfSense machines
+  # fb63a9047d7716706b6fd2d1c179b9cf4233d64f
+  virgil_build_id: '892993'
