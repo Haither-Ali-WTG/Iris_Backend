@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240319.1
-  # Mon Mar 18 20:15:57 UTC 2024 -- Tue Mar 19 07:15:57 AEDT 2024
+  # Dante Build Artifact 20240319.4
+  # Tue Mar 19 00:06:08 UTC 2024 -- Tue Mar 19 11:06:08 AEDT 2024
   #
-  # Merged PR 21252: Add var skip_configure_host
-  # 743b94fcadd18696b451ef153d4e5e4bb2ebf328
-  dante_build_id: '892195'
+  # Merged PR 21267: Automated Push of dante_artifact_upgrade - Manually Rebased
+  # 0f3729a0d0787c12ab8b058344901121c1f737b4
+  dante_build_id: '892372'
 
   # virgil 20240318.6
   # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
