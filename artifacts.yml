@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240320.2
-  # Tue Mar 19 23:01:25 UTC 2024 -- Wed Mar 20 10:01:25 AEDT 2024
+  # Dante Build Artifact 20240320.3
+  # Tue Mar 19 23:44:55 UTC 2024 -- Wed Mar 20 10:44:55 AEDT 2024
   #
-  # Merged PR 21288: Build dante deployment agent based on Azure ofccical documentation
-  # 5d5faf5b558209d41d862f1b599de9d74c9199b7
-  dante_build_id: '893369'
+  # Merged PR 21254: Dante - Fix UEFI firmware update issue
+  # 3315c05c9bf3c5c22bcbbcf5f5e00bc446ef4b7d
+  dante_build_id: '893417'
 
-  # virgil 20240320.1
-  # Tue Mar 19 14:25:34 UTC 2024 -- Wed Mar 20 01:25:34 AEDT 2024
+  # virgil 20240320.4
+  # Tue Mar 19 23:49:58 UTC 2024 -- Wed Mar 20 10:49:58 AEDT 2024
   #
-  # Merged PR 21255: Add US2 pfSense machines
-  # fb63a9047d7716706b6fd2d1c179b9cf4233d64f
-  virgil_build_id: '892993'
+  # Merged PR 21070: Virgil - Add DNS records to the 3 new nodes
+  # 70e105ec412c5141c18fa681d0f3d2a87c2b3df9
+  virgil_build_id: '893425'
