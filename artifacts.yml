@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240319.4
-  # Tue Mar 19 00:06:08 UTC 2024 -- Tue Mar 19 11:06:08 AEDT 2024
+  # Dante Build Artifact 20240319.5
+  # Tue Mar 19 00:47:05 UTC 2024 -- Tue Mar 19 11:47:05 AEDT 2024
   #
-  # Merged PR 21267: Automated Push of dante_artifact_upgrade - Manually Rebased
-  # 0f3729a0d0787c12ab8b058344901121c1f737b4
-  dante_build_id: '892372'
+  # Merged PR 21268: Add variable install_package_for_testing
+  # c0a4944c02e272192de7e087e55d68d3c7151a61
+  dante_build_id: '892427'
 
   # virgil 20240318.6
   # Sun Mar 17 23:41:56 UTC 2024 -- Mon Mar 18 10:41:56 AEDT 2024
