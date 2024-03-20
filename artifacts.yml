@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240320.4
-  # Wed Mar 20 00:48:02 UTC 2024 -- Wed Mar 20 11:48:02 AEDT 2024
+  # Dante Build Artifact 20240320.5
+  # Wed Mar 20 01:51:00 UTC 2024 -- Wed Mar 20 12:51:00 AEDT 2024
   #
-  # Merge pull request 21320 from dante_artifact_upgrade into master
-  # 98b9fcc8d11770fc805b88cd6f1c80cfbaa45542
-  dante_build_id: '893533'
+  # Merged PR 21276: Update the chrony config on au2mal00003 to use the SEL-2488 Clock.
+  # c13af3d143b79d73adc39fa3d6fcf1f84b618eea
+  dante_build_id: '893614'
 
   # virgil 20240320.4
   # Tue Mar 19 23:49:58 UTC 2024 -- Wed Mar 20 10:49:58 AEDT 2024
