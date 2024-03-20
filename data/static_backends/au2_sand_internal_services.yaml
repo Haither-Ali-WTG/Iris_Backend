@@ -202,3 +202,12 @@ cprportal-uat.sand.wtg.zone:
     - name: AU2SP-SIIS-405B
       ip: 10.2.118.48
       port: 80
+
+gbccspoutbound-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  health_check: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-403
+      ip: 10.2.118.45
+      port: 80
