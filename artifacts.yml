@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240320.3
-  # Tue Mar 19 23:44:55 UTC 2024 -- Wed Mar 20 10:44:55 AEDT 2024
+  # Dante Build Artifact 20240320.4
+  # Wed Mar 20 00:48:02 UTC 2024 -- Wed Mar 20 11:48:02 AEDT 2024
   #
-  # Merged PR 21254: Dante - Fix UEFI firmware update issue
-  # 3315c05c9bf3c5c22bcbbcf5f5e00bc446ef4b7d
-  dante_build_id: '893417'
+  # Merge pull request 21320 from dante_artifact_upgrade into master
+  # 98b9fcc8d11770fc805b88cd6f1c80cfbaa45542
+  dante_build_id: '893533'
 
   # virgil 20240320.4
   # Tue Mar 19 23:49:58 UTC 2024 -- Wed Mar 20 10:49:58 AEDT 2024
