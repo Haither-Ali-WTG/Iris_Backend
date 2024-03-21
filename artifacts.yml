@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240321.2
-  # Thu Mar 21 00:38:52 UTC 2024 -- Thu Mar 21 11:38:52 AEDT 2024
+  # Dante Build Artifact 20240321.3
+  # Thu Mar 21 01:44:59 UTC 2024 -- Thu Mar 21 12:44:59 AEDT 2024
   #
-  # Merged PR 21366: Added mongo packages to agent for haproxy support
-  # 4b071f6606550811ce7b0ee7736da6a1759e51f9
-  dante_build_id: '894599'
+  # Merge pull request 21372 from dante_artifact_upgrade into master
+  # b1c3cfe39c0f177aca8943e6a79d8bacc0347acb
+  dante_build_id: '894671'
 
   # virgil 20240321.14
   # Thu Mar 21 00:45:50 UTC 2024 -- Thu Mar 21 11:45:50 AEDT 2024
