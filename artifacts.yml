@@ -1,14 +1,14 @@
 ---
 variables:
-  # Dante Build Artifact 20240320.5
-  # Wed Mar 20 01:51:00 UTC 2024 -- Wed Mar 20 12:51:00 AEDT 2024
+  # Dante Build Artifact 20240321.1
+  # Wed Mar 20 23:13:50 UTC 2024 -- Wed Mar 20 23:13:50 Australia 2024
   #
-  # Merged PR 21276: Update the chrony config on au2mal00003 to use the SEL-2488 Clock.
-  # c13af3d143b79d73adc39fa3d6fcf1f84b618eea
-  dante_build_id: '893614'
+  # Merged PR 21341: Apply the network clock to the AU2 cluster & clear empty lines.
+  # 93d935bb370c646046058d95751de272e83260c6
+  dante_build_id: '894489'
 
   # virgil 20240320.4
-  # Tue Mar 19 23:49:58 UTC 2024 -- Wed Mar 20 10:49:58 AEDT 2024
+  # Tue Mar 19 23:49:58 UTC 2024 -- Tue Mar 19 23:49:58 Australia 2024
   #
   # Merged PR 21070: Virgil - Add DNS records to the 3 new nodes
   # 70e105ec412c5141c18fa681d0f3d2a87c2b3df9
