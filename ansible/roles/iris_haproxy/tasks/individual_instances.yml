@@ -198,7 +198,7 @@
   block:
     - name: Find all delay restart markers
       find:
-        paths: "{{ path_prefix }}/iris_{{ inventory_hostname }}"
+        paths: "{{ individual_instance_dir }}"
         patterns: "DELAY_RESTART-*"
       register: files_to_delete
 
