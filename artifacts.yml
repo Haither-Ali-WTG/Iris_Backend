@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240321.1
-  # Wed Mar 20 23:13:50 UTC 2024 -- Wed Mar 20 23:13:50 Australia 2024
+  # Dante Build Artifact 20240321.2
+  # Thu Mar 21 00:38:52 UTC 2024 -- Thu Mar 21 11:38:52 AEDT 2024
   #
-  # Merged PR 21341: Apply the network clock to the AU2 cluster & clear empty lines.
-  # 93d935bb370c646046058d95751de272e83260c6
-  dante_build_id: '894489'
+  # Merged PR 21366: Added mongo packages to agent for haproxy support
+  # 4b071f6606550811ce7b0ee7736da6a1759e51f9
+  dante_build_id: '894599'
 
-  # virgil 20240320.4
-  # Tue Mar 19 23:49:58 UTC 2024 -- Tue Mar 19 23:49:58 Australia 2024
+  # virgil 20240321.14
+  # Thu Mar 21 00:45:50 UTC 2024 -- Thu Mar 21 11:45:50 AEDT 2024
   #
-  # Merged PR 21070: Virgil - Add DNS records to the 3 new nodes
-  # 70e105ec412c5141c18fa681d0f3d2a87c2b3df9
-  virgil_build_id: '893425'
+  # Merged PR 21375: Remove deprecation warning and need to use roor user as a result
+  # 8fab548cceb4f5858241d7dcf305459deb711a7f
+  virgil_build_id: '894613'
