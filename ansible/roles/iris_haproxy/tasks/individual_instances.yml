@@ -1,4 +1,15 @@
 ---
+- name: Check the instance_auto_restart_allowed parameter
+  vars:
+    valid_values:
+      - true
+      - false
+  assert:
+    that: instance_auto_restart_allowed in valid_values
+    fail_msg: >-
+      Expected instance_auto_restart_allowed to be one of {{ valid_values }},
+      got {{ instance_auto_restart_allowed | default('UNDEFINED') }}
+
 - name: Calculate and populate individual instance facts
   include_tasks: calculations.yml
 
@@ -148,7 +159,7 @@
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_version }}-{{ container.haproxy_os }}"
     startup_command: >-
       -f /etc/haproxy/{{ clustered_instance_name }}.cfg
-    restart: never
+    restart: "{{ false if instance_auto_restart_allowed else 'never' }}" # 'false' means restart if needed
     volumes:
       - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
@@ -170,22 +181,32 @@
         cpu: 200m
         memory: 100Mi
 
-- name: Mark as needs-restart if needed
+- name: Generate delay restart marker
   template:
-    src: needs_restart.j2
-    dest: "{{ needs_restart_marker }}"
+    src: delay_restart.j2
+    dest: "{{ delay_restart_marker }}"
     mode: a=r
   become: yes
-  when: need_restart
+  when:
+    - need_restart
+    - not instance_auto_restart_allowed
 
-- name: Check for needs-restart marker
-  stat:
-    path: "{{ needs_restart_marker }}"
-  register: needs_restart_stat
+- name: Delete old delay restart markers after restarted
+  when:
+    - need_restart
+    - instance_auto_restart_allowed
+  block:
+    - name: Find all delay restart markers
+      find:
+        paths: "{{ path_prefix }}/iris_{{ inventory_hostname }}"
+        patterns: "DELAY_RESTART-*"
+      register: files_to_delete
 
-- name: Assert no restart needed (now or on a previous run)
-  assert:
-    that: not needs_restart_stat.stat.exists
+    - name: Delete files
+      file:
+        path: "{{ item.path }}"
+        state: absent
+      loop: "{{ files_to_delete.files }}"
 
 - name: Save Global state to allow faster reloads
   shell:

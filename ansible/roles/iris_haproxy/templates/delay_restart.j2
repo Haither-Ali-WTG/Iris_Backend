@@ -25,9 +25,9 @@ Steps to delete and recreate manually:
 
   source {{ run_command_file.dest }}
 
-- Delete this marker file:
+- Delete all delay restart marker files:
 
-  rm {{ needs_restart_marker }}
+  rm DELAY_RESTART-*
 
 
 Alternately, rebuild the machine {{ machine_name }}
