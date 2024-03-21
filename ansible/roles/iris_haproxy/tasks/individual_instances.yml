@@ -184,7 +184,7 @@
 - name: Generate delay restart marker
   template:
     src: delay_restart.j2
-    dest: "{{ delay_restart_marker }}"
+    dest: "{{ individual_instance_dir }}/DELAY_RESTART-{{ ansible_date_time.iso8601 }}"
     mode: a=r
   become: yes
   when:
