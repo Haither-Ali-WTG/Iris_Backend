@@ -8,7 +8,8 @@
   set_fact:
     container_name: "iris_{{ inventory_hostname }}"
     individual_instance_dir: "{{ path_prefix }}/iris_{{ inventory_hostname }}"
-    delay_restart_marker: "{{ path_prefix }}/iris_{{ inventory_hostname }}/DELAY_RESTART-{{ ansible_date_time.iso8601 }}"
+    delay_restart_marker: >-
+      {{ path_prefix }}/iris_{{ inventory_hostname }}/DELAY_RESTART-{{ ansible_date_time.iso8601 }}
     user: "{{ hostvars[machine_name].haproxy_user }}"
     subuser: "{{ hostvars[machine_name].haproxy_subuser }}"
     frontend_name: "{{ frontend_names[defaults.mode] }}"

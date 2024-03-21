@@ -159,7 +159,7 @@
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_version }}-{{ container.haproxy_os }}"
     startup_command: >-
       -f /etc/haproxy/{{ clustered_instance_name }}.cfg
-    restart: "{{ false if instance_auto_restart_allowed else 'never' }}" # 'false' means restart if needed
+    restart: "{{ false if instance_auto_restart_allowed else 'never' }}"  # 'false' means restart if needed
     volumes:
       - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
