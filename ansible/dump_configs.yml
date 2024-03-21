@@ -33,6 +33,10 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
+
     - name: Deploy the individual instances
       include_role:
         name: iris_haproxy
