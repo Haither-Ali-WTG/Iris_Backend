@@ -7,9 +7,9 @@ variables:
   # b1c3cfe39c0f177aca8943e6a79d8bacc0347acb
   dante_build_id: '894671'
 
-  # virgil 20240321.14
-  # Thu Mar 21 00:45:50 UTC 2024 -- Thu Mar 21 11:45:50 AEDT 2024
+  # virgil 20240321.22
+  # Thu Mar 21 04:15:56 UTC 2024 -- Thu Mar 21 15:15:56 AEDT 2024
   #
-  # Merged PR 21375: Remove deprecation warning and need to use roor user as a result
-  # 8fab548cceb4f5858241d7dcf305459deb711a7f
-  virgil_build_id: '894613'
+  # Merged PR 21388: Virgil - Increase partition of internal test queues
+  # 0241e2acc1195aaa4a6752ac792467e3e8a4b856
+  virgil_build_id: '894810'
