@@ -123,6 +123,7 @@ stages:
                           -e="winrm_password=$(winrm_password)"
                           -e="s3_host=${{ run.s3_host }}"
                           -e="key_vault_name=$(key_vault_name)"
+                          -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                           -e="target_dc=${{ run.agent_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
