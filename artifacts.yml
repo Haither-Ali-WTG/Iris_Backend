@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240322.2
-  # Fri Mar 22 00:22:34 UTC 2024 -- Fri Mar 22 11:22:34 AEDT 2024
+  # Dante Build Artifact 20240322.3
+  # Fri Mar 22 04:05:17 UTC 2024 -- Fri Mar 22 15:05:17 AEDT 2024
   #
-  # Merged PR 21447: Add comment in container_runner
-  # 20910eeca27fde7132bb24c42fb5a5c884c40eaf
-  dante_build_id: '895766'
+  # Merged PR 21432: Fix ascalaphus.
+  # c659eebc9d5c04dfced07a372feee56b73e8b8e6
+  dante_build_id: '895984'
 
-  # virgil 20240322.11
-  # Fri Mar 22 03:25:20 UTC 2024 -- Fri Mar 22 14:25:20 AEDT 2024
+  # virgil 20240322.14
+  # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 15:04:06 AEDT 2024
   #
-  # Merged PR 21457: apex19/20Decommed
-  # ed2b24c7119bc1cde0af00167fd14fb77dee433e
-  virgil_build_id: '895922'
+  # Merged PR 21468: remove APEX31/32 SVI ip
+  # 10ba0b1abb5bf78940f8725b588f1e3f31bba857
+  virgil_build_id: '895982'
