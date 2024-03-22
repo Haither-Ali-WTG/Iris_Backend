@@ -108,8 +108,8 @@ clustered_instances:
       machine_overrides:
         au2lbl00416:
           container:
-            haproxy_version: 2.4.25
-            haproxy_os: bookworm
+            haproxy_version: 2.4.19
+            haproxy_os: bullseye
       frontend:
         maxconn: 20000
         ports:
