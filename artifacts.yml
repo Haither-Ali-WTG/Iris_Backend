@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240322.3
-  # Fri Mar 22 04:05:17 UTC 2024 -- Fri Mar 22 15:05:17 AEDT 2024
+  # Dante Build Artifact 20240322.4
+  # Fri Mar 22 04:47:01 UTC 2024 -- Fri Mar 22 15:47:01 AEDT 2024
   #
-  # Merged PR 21432: Fix ascalaphus.
-  # c659eebc9d5c04dfced07a372feee56b73e8b8e6
-  dante_build_id: '895984'
+  # Merge pull request 21467 from dante_artifact_upgrade into master
+  # 6d725e885c0e2d8e5048ef4615d96eb08feef68d
+  dante_build_id: '896031'
 
   # virgil 20240322.14
   # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 15:04:06 AEDT 2024
