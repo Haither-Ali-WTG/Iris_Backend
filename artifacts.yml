@@ -7,9 +7,9 @@ variables:
   # 20910eeca27fde7132bb24c42fb5a5c884c40eaf
   dante_build_id: '895766'
 
-  # virgil 20240322.2
-  # Thu Mar 21 22:47:09 UTC 2024 -- Fri Mar 22 09:47:09 AEDT 2024
+  # virgil 20240322.11
+  # Fri Mar 22 03:25:20 UTC 2024 -- Fri Mar 22 14:25:20 AEDT 2024
   #
-  # Merged PR 21433: Adding au2-esx-1a-136-139 on Apex77/78
-  # 30644f64fde3db99dfda0c9fcd8f04d1a432be0c
-  virgil_build_id: '895639'
+  # Merged PR 21457: apex19/20Decommed
+  # ed2b24c7119bc1cde0af00167fd14fb77dee433e
+  virgil_build_id: '895922'
