@@ -1,14 +1,14 @@
 ---
 variables:
   # Dante Build Artifact 20240322.5
-  # Fri Mar 22 05:39:08 UTC 2024 -- Fri Mar 22 16:39:08 AEDT 2024
+  # Fri Mar 22 05:39:08 UTC 2024 -- Fri Mar 22 05:39:08 Australia 2024
   #
   # Merged PR 21443: Build and publish upgraded docker images
   # 2198e5c271fe28d76cb741209cb4cd630cd10640
   dante_build_id: '896100'
 
   # virgil 20240322.14
-  # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 15:04:06 AEDT 2024
+  # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 04:04:06 Australia 2024
   #
   # Merged PR 21468: remove APEX31/32 SVI ip
   # 10ba0b1abb5bf78940f8725b588f1e3f31bba857
