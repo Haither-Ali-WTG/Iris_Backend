@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240322.5
-  # Fri Mar 22 05:39:08 UTC 2024 -- Fri Mar 22 05:39:08 Australia 2024
+  # Dante Build Artifact 20240325.1
+  # Sun Mar 24 23:21:12 UTC 2024 -- Sun Mar 24 23:21:12 Australia 2024
   #
-  # Merged PR 21443: Build and publish upgraded docker images
-  # 2198e5c271fe28d76cb741209cb4cd630cd10640
-  dante_build_id: '896100'
+  # Merged PR 21182: Dante - Remove US2 workaround
+  # 2f1d5e5bbab860043e2d1395993583e575d53ade
+  dante_build_id: '898514'
 
   # virgil 20240322.14
   # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 04:04:06 Australia 2024
