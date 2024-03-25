@@ -165,8 +165,7 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext: [2013]
-      certificates:
-        - star-wtg-zone
+      certificates: []
       machine_cluster: au2-sand-internal-1
       stats:
         ports:
