@@ -1,0 +1,16 @@
+---
+testtcp.sand.wtg.zone:
+  clustered_instances: [au2sandinternaltcp]
+  default_server: inter 300s rise 2 fall 2
+  health_check: /wtg/ready
+  encryption: false
+  cookie:
+    name: TVSP
+    secure: true
+  servers:
+    - name: AU2SP-SISS-401
+      ip: 10.2.118.25
+      port: 5001
+    - name: AU2SP-SISS-402
+      ip: 10.2.118.32
+      port: 5001
