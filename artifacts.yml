@@ -7,9 +7,9 @@ variables:
   # 3ccb84154b8179acf42fd0c95a360191af326358
   dante_build_id: '898625'
 
-  # virgil 20240322.14
-  # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 04:04:06 Australia 2024
+  # virgil 20240325.4
+  # Mon Mar 25 02:08:19 UTC 2024 -- Mon Mar 25 02:08:19 Australia 2024
   #
-  # Merged PR 21468: remove APEX31/32 SVI ip
-  # 10ba0b1abb5bf78940f8725b588f1e3f31bba857
-  virgil_build_id: '895982'
+  # Merged PR 21442: Virgil - Kafka Remove old queue names
+  # 5b74bdfc188560533ca6b7cf45909ccf88a22ac9
+  virgil_build_id: '898706'
