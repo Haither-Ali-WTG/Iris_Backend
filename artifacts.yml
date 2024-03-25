@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240325.4
-  # Mon Mar 25 06:06:12 UTC 2024 -- Mon Mar 25 06:06:12 Australia 2024
+  # Dante Build Artifact 20240326.1
+  # Mon Mar 25 22:26:03 UTC 2024 -- Mon Mar 25 22:26:03 Australia 2024
   #
-  # Merged PR 21529: Unset http_proxy settings in Dockerfile at the end of the build
-  # 48b278ef593fb375e657f8df6023be834bdb04f1
-  dante_build_id: '898945'
+  # Merge pull request 21559 from dante_artifact_upgrade into master
+  # f320b1fc096232d85883859c793896f89157063f
+  dante_build_id: '899654'
 
   # virgil 20240326.2
   # Mon Mar 25 21:36:27 UTC 2024 -- Mon Mar 25 21:36:27 Australia 2024
