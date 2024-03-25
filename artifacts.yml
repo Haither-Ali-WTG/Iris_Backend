@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240325.1
-  # Sun Mar 24 23:21:12 UTC 2024 -- Sun Mar 24 23:21:12 Australia 2024
+  # Dante Build Artifact 20240325.2
+  # Mon Mar 25 01:06:48 UTC 2024 -- Mon Mar 25 01:06:48 Australia 2024
   #
-  # Merged PR 21182: Dante - Remove US2 workaround
-  # 2f1d5e5bbab860043e2d1395993583e575d53ade
-  dante_build_id: '898514'
+  # Merge pull request 21508 from dante_artifact_upgrade into master
+  # 3ccb84154b8179acf42fd0c95a360191af326358
+  dante_build_id: '898625'
 
   # virgil 20240322.14
   # Fri Mar 22 04:04:06 UTC 2024 -- Fri Mar 22 04:04:06 Australia 2024
