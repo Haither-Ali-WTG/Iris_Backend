@@ -7,9 +7,9 @@ variables:
   # 48b278ef593fb375e657f8df6023be834bdb04f1
   dante_build_id: '898945'
 
-  # virgil 20240325.4
-  # Mon Mar 25 02:08:19 UTC 2024 -- Mon Mar 25 02:08:19 Australia 2024
+  # virgil 20240326.2
+  # Mon Mar 25 21:36:27 UTC 2024 -- Mon Mar 25 21:36:27 Australia 2024
   #
-  # Merged PR 21442: Virgil - Kafka Remove old queue names
-  # 5b74bdfc188560533ca6b7cf45909ccf88a22ac9
-  virgil_build_id: '898706'
+  # Merged PR 21262: fix typo in blazor subnet naming
+  # 1f43380735484dd5a0f9c4f4f4763ffe11dd1604
+  virgil_build_id: '899617'
