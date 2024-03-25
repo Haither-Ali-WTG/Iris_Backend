@@ -1,6 +1,7 @@
 ---
 testtcp.sand.wtg.zone:
   clustered_instances: [au2sandinternaltcp]
+  default_server: inter 300s rise 2 fall 2
   health_check: /wtg/ready
   encryption: false
   cookie:

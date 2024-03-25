@@ -164,7 +164,9 @@ clustered_instances:
       frontend:
         maxconn: 20000
         ports:
-          plaintext: [2013]
+          plaintext:
+            - 2013
+            - 2014
       certificates: []
       machine_cluster: au2-sand-internal-1
       stats:
