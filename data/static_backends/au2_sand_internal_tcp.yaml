@@ -1,5 +1,5 @@
 ---
-5001.bolero.sand.wtg.zone:
+testtcp.sand.wtg.zone:
   clustered_instances: [au2sandinternaltcp]
   health_check: /wtg/ready
   encryption: false
