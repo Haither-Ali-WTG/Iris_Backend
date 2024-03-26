@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240326.4
-  # Tue Mar 26 04:48:20 UTC 2024 -- Tue Mar 26 04:48:20 Australia 2024
+  # Dante Build Artifact 20240327.1
+  # Tue Mar 26 23:46:11 UTC 2024 -- Tue Mar 26 23:46:11 Australia 2024
   #
-  # Merge pull request 21592 from dante_artifact_upgrade into master
-  # d0d32cd7f0d068cf47509ace9f77e95b19843a2d
-  dante_build_id: '900053'
+  # Merged PR 21602: Dante - Remove security vuln exceptions and add in an exception
+  # e846ac8c2d8384523dd2de5bb342b0fd38c2586d
+  dante_build_id: '900861'
 
-  # virgil 20240326.4
-  # Tue Mar 26 03:56:51 UTC 2024 -- Tue Mar 26 03:56:51 Australia 2024
+  # virgil 20240327.4
+  # Tue Mar 26 23:41:51 UTC 2024 -- Tue Mar 26 23:41:51 Australia 2024
   #
-  # Merged PR 21585: Deploy the telegraf chrony monitoring in simulation
-  # 38d2c26e14ad71533ef02df3ffb8407fc2ac0353
-  virgil_build_id: '899984'
+  # Merge pull request 21502 from virgil_python_upgrade into master
+  # ec760cde5e0bd1dad35ac9da6ab38694b0719d19
+  virgil_build_id: '900849'
