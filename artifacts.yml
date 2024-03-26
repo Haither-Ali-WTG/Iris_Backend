@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240326.3
-  # Tue Mar 26 02:56:51 UTC 2024 -- Tue Mar 26 02:56:51 Australia 2024
+  # Dante Build Artifact 20240326.4
+  # Tue Mar 26 04:48:20 UTC 2024 -- Tue Mar 26 04:48:20 Australia 2024
   #
-  # Merged PR 21574: Added StrictHostKeyChecking=no to simulation pipeline
-  # a81cce79d76b8b715a11c746846b004cb3d48b99
-  dante_build_id: '899907'
+  # Merge pull request 21592 from dante_artifact_upgrade into master
+  # d0d32cd7f0d068cf47509ace9f77e95b19843a2d
+  dante_build_id: '900053'
 
   # virgil 20240326.4
   # Tue Mar 26 03:56:51 UTC 2024 -- Tue Mar 26 03:56:51 Australia 2024
