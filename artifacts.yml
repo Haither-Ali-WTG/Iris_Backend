@@ -7,9 +7,9 @@ variables:
   # e846ac8c2d8384523dd2de5bb342b0fd38c2586d
   dante_build_id: '900861'
 
-  # virgil 20240327.4
-  # Tue Mar 26 23:41:51 UTC 2024 -- Tue Mar 26 23:41:51 Australia 2024
+  # virgil 20240327.13
+  # Wed Mar 27 00:44:21 UTC 2024 -- Wed Mar 27 00:44:21 Australia 2024
   #
-  # Merge pull request 21502 from virgil_python_upgrade into master
-  # ec760cde5e0bd1dad35ac9da6ab38694b0719d19
-  virgil_build_id: '900849'
+  # Merged PR 21539: Add au2prod2 hardware to virgil
+  # a6f084d3b3b097a2e26d3836a4ed96a825ef2143
+  virgil_build_id: '900965'
