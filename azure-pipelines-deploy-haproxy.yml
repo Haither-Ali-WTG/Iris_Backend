@@ -55,6 +55,12 @@ stages:
                   steps:
                     - checkout: self
 
+                    - task: InstallSSHKey@0
+                      displayName: 'Install an SSH key'
+                      inputs:
+                        knownHostsEntry: 'StrictHostKeyChecking no'
+                        sshKeySecureFile: 'id_rsa_dante'
+
                     - script: |
                         set -euxo pipefail
                         pip install -r requirements.txt
