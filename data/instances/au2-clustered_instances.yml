@@ -48,10 +48,6 @@ clustered_instances:
       frontend:
         maxconn: 20000
       machine_cluster: nowhere  # au2-prod-frontend-1
-      # machine_overrides:
-      #   au2lbl00346:
-      #      container:
-      #        haproxy_version: x.y.z
       iis_servers:
         - au2wt-sweb-001.test.wisecloud.zone
         - au2wt-sweb-002.test.wisecloud.zone
@@ -108,8 +104,7 @@ clustered_instances:
       machine_overrides:
         au2lbl00416:
           container:
-            haproxy_version: 2.4.25
-            haproxy_os: bookworm
+            haproxy_image_tag: 2.4.25-bookworm
       frontend:
         maxconn: 20000
         ports:
