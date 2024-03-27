@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240327.3
-  # Wed Mar 27 02:25:56 UTC 2024 -- Wed Mar 27 02:25:56 Australia 2024
+  # Dante Build Artifact 20240327.4
+  # Wed Mar 27 04:45:55 UTC 2024 -- Wed Mar 27 04:45:55 Australia 2024
   #
-  # Merge pull request 21618 from dante_artifact_upgrade into master
-  # e551acaf228d3439dbf5de3ccf0366494d3a352d
-  dante_build_id: '901093'
+  # Merge pull request 21657 from dante_artifact_upgrade into master
+  # 416c65ce0c4264bd16458d29215d26292032e0f9
+  dante_build_id: '901282'
 
-  # virgil 20240327.15
-  # Wed Mar 27 03:50:35 UTC 2024 -- Wed Mar 27 03:50:35 Australia 2024
+  # virgil 20240327.17
+  # Wed Mar 27 04:39:54 UTC 2024 -- Wed Mar 27 04:39:54 Australia 2024
   #
-  # Merged PR 21653: (Fix) Kafka queues - Change queues from 4w to 30d
-  # bd19beebe06299710d161d895683fc9a20a9c370
-  virgil_build_id: '901209'
+  # Merged PR 21662: Create kafka topic for CS01582948
+  # aac1f17a3fb78726caf0e491e0a6c3ad94d39fa6
+  virgil_build_id: '901274'
