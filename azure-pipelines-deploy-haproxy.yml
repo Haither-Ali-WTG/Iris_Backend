@@ -68,6 +68,7 @@ stages:
 
                     - script: |
                         set -euxo pipefail
+                        test "$(Build.SourceBranchName)" = "master"
                         cp ansible/ansible.cfg .
                       displayName: 'Prepare to run playbooks'
 
