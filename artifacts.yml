@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240327.2
-  # Wed Mar 27 01:21:36 UTC 2024 -- Wed Mar 27 01:21:36 Australia 2024
+  # Dante Build Artifact 20240327.3
+  # Wed Mar 27 02:25:56 UTC 2024 -- Wed Mar 27 02:25:56 Australia 2024
   #
-  # Merged PR 21629: Updated list of simulation nodes
-  # fe70807a33748ff256c6211415bae05d722fdf31
-  dante_build_id: '901015'
+  # Merge pull request 21618 from dante_artifact_upgrade into master
+  # e551acaf228d3439dbf5de3ccf0366494d3a352d
+  dante_build_id: '901093'
 
   # virgil 20240327.13
   # Wed Mar 27 00:44:21 UTC 2024 -- Wed Mar 27 00:44:21 Australia 2024
