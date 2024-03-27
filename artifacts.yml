@@ -7,9 +7,9 @@ variables:
   # e551acaf228d3439dbf5de3ccf0366494d3a352d
   dante_build_id: '901093'
 
-  # virgil 20240327.13
-  # Wed Mar 27 00:44:21 UTC 2024 -- Wed Mar 27 00:44:21 Australia 2024
+  # virgil 20240327.15
+  # Wed Mar 27 03:50:35 UTC 2024 -- Wed Mar 27 03:50:35 Australia 2024
   #
-  # Merged PR 21539: Add au2prod2 hardware to virgil
-  # a6f084d3b3b097a2e26d3836a4ed96a825ef2143
-  virgil_build_id: '900965'
+  # Merged PR 21653: (Fix) Kafka queues - Change queues from 4w to 30d
+  # bd19beebe06299710d161d895683fc9a20a9c370
+  virgil_build_id: '901209'
