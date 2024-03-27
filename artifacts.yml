@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240327.4
-  # Wed Mar 27 04:45:55 UTC 2024 -- Wed Mar 27 04:45:55 Australia 2024
+  # Dante Build Artifact 20240328.1
+  # Wed Mar 27 22:23:45 UTC 2024 -- Wed Mar 27 22:23:45 Australia 2024
   #
-  # Merge pull request 21657 from dante_artifact_upgrade into master
-  # 416c65ce0c4264bd16458d29215d26292032e0f9
-  dante_build_id: '901282'
+  # Merge pull request 21214 from dante_python_upgrade into master
+  # 5354d40258f7ab7ab6bc4766e447c9e042d9b501
+  dante_build_id: '902087'
 
-  # virgil 20240327.17
-  # Wed Mar 27 04:39:54 UTC 2024 -- Wed Mar 27 04:39:54 Australia 2024
+  # virgil 20240328.2
+  # Wed Mar 27 22:24:52 UTC 2024 -- Wed Mar 27 22:24:52 Australia 2024
   #
-  # Merged PR 21662: Create kafka topic for CS01582948
-  # aac1f17a3fb78726caf0e491e0a6c3ad94d39fa6
-  virgil_build_id: '901274'
+  # Merge pull request 21677 from virgil_python_upgrade into master
+  # 6c7f345a1e78e725493e52f78a084bc41f0afb63
+  virgil_build_id: '902092'
