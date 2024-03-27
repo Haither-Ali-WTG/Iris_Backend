@@ -16,8 +16,8 @@ clustered_instance:
   machine_overrides: map(include('haproxy_settings'),
                          key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'),
                          required=False)
-  iis_servers: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=False)
+  iis_servers: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=True)
   iis_user: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
-  certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=False)
+  certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=True)
   dc: enum('AU2', 'DE1', 'US2', required=True)
