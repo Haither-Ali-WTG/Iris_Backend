@@ -20,8 +20,7 @@ haproxy_global__settings:
   maxconn: int(min=1, required=False)
 
 haproxy_container_settings:
-  haproxy_version: regex('^[0-9a-z.]+$', name="dotted version number", required=False)
-  haproxy_os: regex('^[a-z]+$', name='OS label')  # eg. "bullseye"
+  haproxy_image_tag: regex('^[a-zA-Z0-9._-]+$', name="haproxy image tag", required=False)
   port_map: map(include('port'), key=int(min=1, max=65535), required=False)
   port_prealloc: list(any(int(min=1, max=65535), regex('^[0-9]+(-[0-9]+)?$', name='port range')), required=False)
 
