@@ -10,5 +10,6 @@
       add_host:
         name: "{{ item }}"
         groups: target_machines
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
       loop: "{{ ansible_play_hosts }}"
       when: target_dc | default('all') in [machine.dc, 'all']
