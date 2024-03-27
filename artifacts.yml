@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240327.1
-  # Tue Mar 26 23:46:11 UTC 2024 -- Tue Mar 26 23:46:11 Australia 2024
+  # Dante Build Artifact 20240327.2
+  # Wed Mar 27 01:21:36 UTC 2024 -- Wed Mar 27 01:21:36 Australia 2024
   #
-  # Merged PR 21602: Dante - Remove security vuln exceptions and add in an exception
-  # e846ac8c2d8384523dd2de5bb342b0fd38c2586d
-  dante_build_id: '900861'
+  # Merged PR 21629: Updated list of simulation nodes
+  # fe70807a33748ff256c6211415bae05d722fdf31
+  dante_build_id: '901015'
 
   # virgil 20240327.13
   # Wed Mar 27 00:44:21 UTC 2024 -- Wed Mar 27 00:44:21 Australia 2024
