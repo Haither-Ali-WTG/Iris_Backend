@@ -276,8 +276,8 @@ http-check send meth HEAD uri {{ backend.health_check }} ver HTTP/1.1 hdr Host {
 
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
 {%   if backend.cookie is defined %}
-cookie {{ backend.cookie.name }} insert indirect nocache dynamic httponly secure attr "SameSite=None"
-{%- if backend.cookie.secure | default(false) %} secure{% endif %}
+cookie {{ backend.cookie.name }} insert indirect nocache dynamic httponly attr "SameSite=None"
+{%- if backend.cookie.secure | default(true) %} secure{% endif %}
 
 {%   endif %}
 {% if backend.default_server is defined %}
