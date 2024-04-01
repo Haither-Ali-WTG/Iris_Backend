@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240328.3
-  # Thu Mar 28 04:35:13 UTC 2024 -- Thu Mar 28 04:35:13 Australia 2024
+  # Dante Build Artifact 20240402.1
+  # Mon Apr  1 22:39:24 UTC 2024 -- Mon Apr  1 22:39:24 Australia 2024
   #
-  # Merged PR 21648: Update the path of the kerberos config file.
-  # 95adaea1aa5a70aa87467ca8d7dbde69aedd2dc9
-  dante_build_id: '902481'
+  # Merge pull request 21720 from dante_python_upgrade into master
+  # 405b0763b89ebfff247d198d2ee93a6bf20798f0
+  dante_build_id: '906844'
 
-  # virgil 20240328.2
-  # Wed Mar 27 22:24:52 UTC 2024 -- Wed Mar 27 22:24:52 Australia 2024
+  # virgil 20240402.3
+  # Mon Apr  1 22:43:13 UTC 2024 -- Mon Apr  1 22:43:13 Australia 2024
   #
-  # Merge pull request 21677 from virgil_python_upgrade into master
-  # 6c7f345a1e78e725493e52f78a084bc41f0afb63
-  virgil_build_id: '902092'
+  # Merged PR 21721: Add VLANs 1170, 1172, and 1187 to kvm_v0 profile
+  # d7619e8223ef46bc4b22a000d64a65c189c953ad
+  virgil_build_id: '906855'
