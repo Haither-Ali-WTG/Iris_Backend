@@ -63,7 +63,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              safety check --full-report -i 42188 -i 42923 -i 42926 -i 54229 -i 54230
+              safety check --full-report -i 42188 -i 42923 -i 42926 -i 54229 -i 54230 -i 54564
             # Ignored reports:
             #   - 42188 - Yamale does not protect against intentionally malicious
             #   schemas. Our schemas are all controlled by us (and indeed in this repo).
@@ -80,6 +80,10 @@ stages:
             #   the aws_ssm connection plugin as garbage collector is not happening
             #   after playbook run is completed. Files would remain in the bucket
             #   exposing the data. This issue affects directly data confidentiality.
+            #   - 54564 - CVE-2020-25635 - A flaw was found in Ansible in the amazon.aws collection
+            #   when using the `tower_callback` parameter from the `amazon.aws.ec2_instance` module.
+            #   This is not applicable since we don't use aws module outside of our internal s3 sync
+            #   and cp calls and this is not client-facing code
             displayName: 'Python Safety vulnerability check'
             continueOnError: true
             condition: succeededOrFailed()
