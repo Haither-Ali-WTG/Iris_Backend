@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240403.4
-  # Wed Apr  3 03:17:48 UTC 2024 -- Wed Apr  3 03:17:48 Australia 2024
+  # Dante Build Artifact 20240404.1
+  # Wed Apr  3 22:49:52 UTC 2024 -- Wed Apr  3 22:49:52 Australia 2024
   #
-  # Merged PR 21763: Dante - Ignore aws python vulnerability
-  # f2905a83abec502ec4389e3472d77ae74e6984f3
-  dante_build_id: '908210'
+  # Merge pull request 21798 from dante_python_upgrade into master
+  # 96d83a3302a316171afa2bcbcc96f66fa1772693
+  dante_build_id: '909049'
 
   # virgil 20240402.3
   # Mon Apr  1 22:43:13 UTC 2024 -- Mon Apr  1 22:43:13 Australia 2024
