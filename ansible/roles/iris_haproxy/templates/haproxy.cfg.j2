@@ -228,9 +228,12 @@ backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
 {%       endif %}
 {%   if config.fullconn is defined %}fullconn {{ config.fullconn }}
 {%   endif %}
+{%   if defaults.mode == 'http' %}
 option httpchk
 http-check send meth HEAD uri {{ config.health_check }} ver HTTP/1.1 hdr Host {{ backend_name }}
-{%- if config.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https{% endif %}
+{%-    if config.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https
+{%     endif %}
+{%   endif %}
 
 http-check expect rstatus {{ config.check_expect | default('200|401|403|302|405') }}
 {%       if config.cookie.enabled %}
@@ -270,9 +273,12 @@ backend {{ name | replace(".", "_") }}
 {%   endif %}
 {%   if backend.fullconn is defined %}fullconn {{ backend.fullconn }}
 {%   endif %}
+{%   if defaults.mode == 'http' %}
 option httpchk
 http-check send meth HEAD uri {{ backend.health_check }} ver HTTP/1.1 hdr Host {{ name }}
-{%- if backend.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https{% endif %}
+{%-    if backend.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https
+{%     endif %}
+{%   endif %}
 
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
 {%   if backend.cookie is defined %}
