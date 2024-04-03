@@ -121,12 +121,32 @@ clustered_instances:
       iis_user: s_lbwinrmquerier1@sand.wtg.zone
       websites_config: websites_internal.yml
       certificates:
+        - ahwprd-webtracker-carozplus-com
+        - customers-commercialcustoms-com-au
+        - ediweb-oceanbridge-co-nz
+        - star-bolero-sand-wtg-zone
+        - star-borderwise-com
+        - star-cargowise-com
+        - star-cargowise-net
+        - star-cfs-wisegrid-net
+        - star-cww-nonprd-wisegrid-net
+        - star-cww-wisegrid-net
+        - star-sand-wtg-zone
+        - star-spweb-wisegrid-net
+        - star-testrig-sand-wtg-zone
+        - star-testrig3-sand-wtg-zone
+        - star-webcampaign-wisegrid-net
+        - star-webprint-wisegrid-net
+        - star-webtracker-wisegrid-net
+        - star-wisegrid-net
+        - star-wisetechacademy-com
+        - star-wisetechglobal-cn
         - star-wisetechglobal-com
         - star-wtg-zone
-        - star-sand-wtg-zone
-        - star-testrig3-sand-wtg-zone
-        - star-testrig-sand-wtg-zone
-        - star-bolero-sand-wtg-zone
+        - tracking-bcr-com-au
+        - tracking-eplint-com
+        - tracking-pcfs-com-au
+        - webtracking-sila-net-au
       stats:
         ports:
           web: 2047
