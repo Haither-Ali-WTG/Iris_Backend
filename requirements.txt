@@ -28,13 +28,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.75
+awscli==1.32.76
     # via -r requirements.in
 bandit==1.7.8
     # via -r requirements.in
 black==24.3.0
     # via ansible-lint
-botocore==1.34.75
+botocore==1.34.76
     # via
     #   awscli
     #   s3transfer
@@ -250,7 +250,7 @@ typer-slim[standard]==0.12.0
     #   typer-cli
 types-pyyaml==6.0.12.20240311
     # via -r requirements.in
-types-requests==2.31.0.20240402
+types-requests==2.31.0.20240403
     # via -r requirements.in
 typing-extensions==4.10.0
     # via
