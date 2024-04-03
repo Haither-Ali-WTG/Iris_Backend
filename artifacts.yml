@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240403.3
-  # Wed Apr  3 01:18:49 UTC 2024 -- Wed Apr  3 01:18:49 Australia 2024
+  # Dante Build Artifact 20240403.4
+  # Wed Apr  3 03:17:48 UTC 2024 -- Wed Apr  3 03:17:48 Australia 2024
   #
-  # Merged PR 21785: Avoid using root on agent
-  # b336200ad4c6cbbd3601edbe7e592dd629780583
-  dante_build_id: '908082'
+  # Merged PR 21763: Dante - Ignore aws python vulnerability
+  # f2905a83abec502ec4389e3472d77ae74e6984f3
+  dante_build_id: '908210'
 
   # virgil 20240402.3
   # Mon Apr  1 22:43:13 UTC 2024 -- Mon Apr  1 22:43:13 Australia 2024
