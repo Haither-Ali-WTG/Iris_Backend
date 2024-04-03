@@ -233,9 +233,8 @@ option httpchk
 http-check send meth HEAD uri {{ config.health_check }} ver HTTP/1.1 hdr Host {{ backend_name }}
 {%-    if config.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https
 {%     endif %}
-{%   endif %}
-
 http-check expect rstatus {{ config.check_expect | default('200|401|403|302|405') }}
+{%   endif %}
 {%       if config.cookie.enabled %}
 cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic httponly secure attr "SameSite=None"
 {%       endif %}
@@ -278,9 +277,8 @@ option httpchk
 http-check send meth HEAD uri {{ backend.health_check }} ver HTTP/1.1 hdr Host {{ name }}
 {%-    if backend.hdr_healthcheck_https | default(true) %} hdr X-Forwarded-Proto https
 {%     endif %}
-{%   endif %}
-
 http-check expect rstatus {{ backend.check_expect | default('200|401|403|302|405') }}
+{%   endif %}
 {%   if backend.cookie is defined %}
 cookie {{ backend.cookie.name }} insert indirect nocache dynamic httponly attr "SameSite=None"
 {%- if backend.cookie.secure | default(true) %} secure{% endif %}
