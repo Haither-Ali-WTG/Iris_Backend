@@ -5,7 +5,7 @@ static_backend: any(include('static_backend_normal'), include('static_backend_fu
 ---
 static_backend_normal:
   clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
-  health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
+  health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path', required=False)
   balance: enum('leastconn', 'source', required=False)
   cookie: include('static_cookie', required=False)
   encryption: bool(required=False)
