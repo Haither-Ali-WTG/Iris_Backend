@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240404.3
-  # Thu Apr  4 04:12:14 UTC 2024 -- Thu Apr  4 04:12:14 Australia 2024
+  # Dante Build Artifact 20240404.4
+  # Thu Apr  4 04:55:31 UTC 2024 -- Thu Apr  4 04:55:31 Australia 2024
   #
-  # Merged PR 21509: Add updated ascalaphus image.
-  # 2c80c7456581407bb1f9642be7663b979525ceed
-  dante_build_id: '909363'
+  # Merged PR 20365: [Quick fix for the high CPU load on external DNS server]: Teardown entries within 6 months.
+  # c7c5a1aef499c1871a46f974e4fc4590096b9174
+  dante_build_id: '909417'
 
   # virgil 20240402.3
   # Mon Apr  1 22:43:13 UTC 2024 -- Mon Apr  1 22:43:13 Australia 2024
