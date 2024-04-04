@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240404.4
-  # Thu Apr  4 04:55:31 UTC 2024 -- Thu Apr  4 04:55:31 Australia 2024
+  # Dante Build Artifact 20240404.5
+  # Thu Apr  4 07:27:26 UTC 2024 -- Thu Apr  4 07:27:26 Australia 2024
   #
-  # Merged PR 20365: [Quick fix for the high CPU load on external DNS server]: Teardown entries within 6 months.
-  # c7c5a1aef499c1871a46f974e4fc4590096b9174
-  dante_build_id: '909417'
+  # Merge pull request 21851 from dante_artifact_upgrade into master
+  # 9b84d4728b7495738788efb9a9f7062c842cf24a
+  dante_build_id: '909555'
 
   # virgil 20240404.8
   # Thu Apr  4 06:26:17 UTC 2024 -- Thu Apr  4 06:26:17 Australia 2024
