@@ -7,9 +7,9 @@ variables:
   # c7c5a1aef499c1871a46f974e4fc4590096b9174
   dante_build_id: '909417'
 
-  # virgil 20240402.3
-  # Mon Apr  1 22:43:13 UTC 2024 -- Mon Apr  1 22:43:13 Australia 2024
+  # virgil 20240404.8
+  # Thu Apr  4 06:26:17 UTC 2024 -- Thu Apr  4 06:26:17 Australia 2024
   #
-  # Merged PR 21721: Add VLANs 1170, 1172, and 1187 to kvm_v0 profile
-  # d7619e8223ef46bc4b22a000d64a65c189c953ad
-  virgil_build_id: '906855'
+  # Merged PR 21812: Add pfSense hosts to DE1
+  # 73ffcbef8f3fa9a4a38b8662a1ca4281553c8d32
+  virgil_build_id: '909504'
