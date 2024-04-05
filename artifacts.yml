@@ -7,9 +7,9 @@ variables:
   # c2abbd0a78f59249625ce440d8181ee726c4177b
   dante_build_id: '909875'
 
-  # virgil 20240404.8
-  # Thu Apr  4 06:26:17 UTC 2024 -- Thu Apr  4 06:26:17 Australia 2024
+  # virgil 20240405.3
+  # Fri Apr  5 00:28:51 UTC 2024 -- Fri Apr  5 00:28:51 Australia 2024
   #
-  # Merged PR 21812: Add pfSense hosts to DE1
-  # 73ffcbef8f3fa9a4a38b8662a1ca4281553c8d32
-  virgil_build_id: '909504'
+  # Merged PR 21748: Deploy chrony monitoring to all mgmt nodes (AU2).
+  # 0861c05af8ce37c671c14357fed102f0dff3ace3
+  virgil_build_id: '910264'
