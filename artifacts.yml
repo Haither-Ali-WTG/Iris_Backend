@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240405.1
-  # Thu Apr  4 15:04:54 UTC 2024 -- Thu Apr  4 15:04:54 Australia 2024
+  # Dante Build Artifact 20240405.2
+  # Fri Apr  5 01:25:33 UTC 2024 -- Fri Apr  5 01:25:33 Australia 2024
   #
-  # Merged PR 21810: Add comments to auto upgrades pipeline
-  # c2abbd0a78f59249625ce440d8181ee726c4177b
-  dante_build_id: '909875'
+  # Merge pull request 21876 from dante_artifact_upgrade into master
+  # a8b71956ede3978bc4f6f556bbb30de3ebb23a00
+  dante_build_id: '910318'
 
   # virgil 20240405.3
   # Fri Apr  5 00:28:51 UTC 2024 -- Fri Apr  5 00:28:51 Australia 2024
