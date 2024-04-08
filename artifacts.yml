@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240408.1
-  # Mon Apr  8 05:47:37 UTC 2024 -- Mon Apr  8 05:47:37 Australia 2024
+  # Dante Build Artifact 20240409.1
+  # Mon Apr  8 23:47:04 UTC 2024 -- Mon Apr  8 23:47:04 Australia 2024
   #
-  # Merge pull request 21917 from dante_artifact_upgrade into master
-  # e864185203856e526c6a77a9add09425dcf49fdd
-  dante_build_id: '913331'
+  # Merged PR 21878: Monitor failed pipepine for haproxy deployments
+  # b7ee0c35d18eb6672859b29350e49bcb730ea03d
+  dante_build_id: '914132'
 
   # virgil 20240408.3
   # Mon Apr  8 04:58:59 UTC 2024 -- Mon Apr  8 04:58:59 Australia 2024
