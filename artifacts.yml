@@ -7,9 +7,9 @@ variables:
   # 629224fc22038686ec62265024748f350ae244e6
   dante_build_id: '910510'
 
-  # virgil 20240405.5
-  # Fri Apr  5 04:26:53 UTC 2024 -- Fri Apr  5 04:26:53 Australia 2024
+  # virgil 20240408.3
+  # Mon Apr  8 04:58:59 UTC 2024 -- Mon Apr  8 04:58:59 Australia 2024
   #
-  # Merged PR 21869: Replace C-00071 with a new machine
-  # ee61df44c6eb418a69ca26bfe7a3b693f88f38e7
-  virgil_build_id: '910458'
+  # Merged PR 21911: Created new topics for callback service
+  # 82fcd0259c6d927b84163c864646b5d55a01a8b9
+  virgil_build_id: '913278'
