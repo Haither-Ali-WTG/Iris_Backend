@@ -7,9 +7,9 @@ variables:
   # b7ee0c35d18eb6672859b29350e49bcb730ea03d
   dante_build_id: '914132'
 
-  # virgil 20240408.3
-  # Mon Apr  8 04:58:59 UTC 2024 -- Mon Apr  8 04:58:59 Australia 2024
+  # virgil 20240409.2
+  # Tue Apr  9 06:56:20 UTC 2024 -- Tue Apr  9 06:56:20 Australia 2024
   #
-  # Merged PR 21911: Created new topics for callback service
-  # 82fcd0259c6d927b84163c864646b5d55a01a8b9
-  virgil_build_id: '913278'
+  # Merged PR 21934: DE1-Add-CiscoDirectors-Mgmt-Ports
+  # 0a9e94b3a7e752d6c8d9aac648f836d68908a84d
+  virgil_build_id: '914542'
