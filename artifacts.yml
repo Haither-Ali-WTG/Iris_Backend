@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240410.1
-  # Wed Apr 10 00:39:44 UTC 2024 -- Wed Apr 10 00:39:44 Australia 2024
+  # Dante Build Artifact 20240410.2
+  # Wed Apr 10 01:13:23 UTC 2024 -- Wed Apr 10 01:13:23 Australia 2024
   #
-  # Merged PR 21956: Reorganized tags on image to prevent deletion by update
-  # 36a85219732bc78a2fb30038ea296d44f3732a15
-  dante_build_id: '915354'
+  # Merge pull request 21868 from dante_python_upgrade into master
+  # 318ce9b7eef1686f4f8bd1aeb27a3fcbf51e989d
+  dante_build_id: '915409'
 
   # virgil 20240410.2
   # Wed Apr 10 00:40:05 UTC 2024 -- Wed Apr 10 00:40:05 Australia 2024
