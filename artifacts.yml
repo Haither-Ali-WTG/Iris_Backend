@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240410.3
-  # Wed Apr 10 02:27:56 UTC 2024 -- Wed Apr 10 02:27:56 Australia 2024
+  # Dante Build Artifact 20240410.4
+  # Wed Apr 10 03:46:46 UTC 2024 -- Wed Apr 10 03:46:46 Australia 2024
   #
-  # Merge pull request 21980 from dante_artifact_upgrade into master
-  # d225bbbdb1971e7aff09ab6d708273b5ef5497d9
-  dante_build_id: '915489'
+  # Merged PR 21985: Fix SSL Cert Pipeline to not run with sudo
+  # 2db86f3f62810ce1a806bd452b2af8f5e4a404f9
+  dante_build_id: '915576'
 
   # virgil 20240410.2
   # Wed Apr 10 00:40:05 UTC 2024 -- Wed Apr 10 00:40:05 Australia 2024
