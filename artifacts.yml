@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240409.5
-  # Tue Apr  9 08:06:12 UTC 2024 -- Tue Apr  9 08:06:12 Australia 2024
+  # Dante Build Artifact 20240410.1
+  # Wed Apr 10 00:39:44 UTC 2024 -- Wed Apr 10 00:39:44 Australia 2024
   #
-  # Merge pull request 21963 from dante_artifact_upgrade into master
-  # b325c056d2b93d00c3c9d4bd27b12f695691f2a2
-  dante_build_id: '914614'
+  # Merged PR 21956: Reorganized tags on image to prevent deletion by update
+  # 36a85219732bc78a2fb30038ea296d44f3732a15
+  dante_build_id: '915354'
 
-  # virgil 20240409.2
-  # Tue Apr  9 06:56:20 UTC 2024 -- Tue Apr  9 06:56:20 Australia 2024
+  # virgil 20240410.2
+  # Wed Apr 10 00:40:05 UTC 2024 -- Wed Apr 10 00:40:05 Australia 2024
   #
-  # Merged PR 21934: DE1-Add-CiscoDirectors-Mgmt-Ports
-  # 0a9e94b3a7e752d6c8d9aac648f836d68908a84d
-  virgil_build_id: '914542'
+  # Merge pull request 21898 from virgil_python_upgrade into master
+  # 9e1fd7b851c15b9ce041c596c043578ed51244ca
+  virgil_build_id: '915357'
