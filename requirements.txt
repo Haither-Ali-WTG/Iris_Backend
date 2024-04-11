@@ -28,13 +28,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.80
+awscli==1.32.81
     # via -r requirements.in
 bandit==1.7.8
     # via -r requirements.in
 black==24.3.0
     # via ansible-lint
-botocore==1.34.80
+botocore==1.34.81
     # via
     #   awscli
     #   s3transfer
