@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240411.2
-  # Thu Apr 11 01:01:40 UTC 2024 -- Thu Apr 11 01:01:40 Australia 2024
+  # Dante Build Artifact 20240411.3
+  # Thu Apr 11 08:08:35 UTC 2024 -- Thu Apr 11 08:08:35 Australia 2024
   #
-  # Merged PR 21955: Support PFX in IRIS (CS01584217)
-  # 523763a87a10a97242a57c6cffa9b490bd27f597
-  dante_build_id: '916489'
+  # Merge pull request 22043 from dante_artifact_upgrade into master
+  # b1fd23b00d7b4933a14225bfd8400986af1f445b
+  dante_build_id: '916842'
 
   # virgil 20240411.2
   # Thu Apr 11 07:18:04 UTC 2024 -- Thu Apr 11 07:18:04 Australia 2024
