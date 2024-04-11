@@ -7,9 +7,9 @@ variables:
   # 523763a87a10a97242a57c6cffa9b490bd27f597
   dante_build_id: '916489'
 
-  # virgil 20240410.2
-  # Wed Apr 10 00:40:05 UTC 2024 -- Wed Apr 10 00:40:05 Australia 2024
+  # virgil 20240411.2
+  # Thu Apr 11 07:18:04 UTC 2024 -- Thu Apr 11 07:18:04 Australia 2024
   #
-  # Merge pull request 21898 from virgil_python_upgrade into master
-  # 9e1fd7b851c15b9ce041c596c043578ed51244ca
-  virgil_build_id: '915357'
+  # Merged PR 22034: Updated domains.yaml - added pool.time.wtg.ws for the root domain controllers.
+  # 7030f0d0df7ca407e4f75f9786ca941bc030c354
+  virgil_build_id: '916795'
