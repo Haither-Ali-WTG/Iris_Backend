@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240411.3
-  # Thu Apr 11 08:08:35 UTC 2024 -- Thu Apr 11 08:08:35 Australia 2024
+  # Dante Build Artifact 20240412.3
+  # Fri Apr 12 00:07:10 UTC 2024 -- Fri Apr 12 00:07:10 Australia 2024
   #
-  # Merge pull request 22043 from dante_artifact_upgrade into master
-  # b1fd23b00d7b4933a14225bfd8400986af1f445b
-  dante_build_id: '916842'
+  # Merge pull request 22010 from dante_python_upgrade into master
+  # d0f878bc751dccbf5e4b78b173f858708cc5f2c0
+  dante_build_id: '917547'
 
-  # virgil 20240411.2
-  # Thu Apr 11 07:18:04 UTC 2024 -- Thu Apr 11 07:18:04 Australia 2024
+  # virgil 20240412.4
+  # Fri Apr 12 00:12:44 UTC 2024 -- Fri Apr 12 00:12:44 Australia 2024
   #
-  # Merged PR 22034: Updated domains.yaml - added pool.time.wtg.ws for the root domain controllers.
-  # 7030f0d0df7ca407e4f75f9786ca941bc030c354
-  virgil_build_id: '916795'
+  # Merged PR 22060: Add all regional pools to all management DNS
+  # 7e5164e24562435e8a1d4c516a4a28564a5631a3
+  virgil_build_id: '917557'
