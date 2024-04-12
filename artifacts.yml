@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240412.7
-  # Fri Apr 12 03:10:36 UTC 2024 -- Fri Apr 12 03:10:36 Australia 2024
+  # Dante Build Artifact 20240412.8
+  # Fri Apr 12 04:07:33 UTC 2024 -- Fri Apr 12 04:07:33 Australia 2024
   #
-  # Merged PR 22058: Skip cert check for trinium4fuel
-  # f453987864b6c8514e28bec39a145d9fa65f3f65
-  dante_build_id: '917820'
+  # Merge pull request 22082 from dante_artifact_upgrade into master
+  # db5517bba1b721cdeb81bb792a1ccc0831e397ec
+  dante_build_id: '917886'
 
   # virgil 20240412.6
   # Fri Apr 12 01:42:30 UTC 2024 -- Fri Apr 12 01:42:30 Australia 2024
