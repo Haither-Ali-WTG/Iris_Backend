@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240412.6
-  # Fri Apr 12 02:22:17 UTC 2024 -- Fri Apr 12 02:22:17 Australia 2024
+  # Dante Build Artifact 20240412.7
+  # Fri Apr 12 03:10:36 UTC 2024 -- Fri Apr 12 03:10:36 Australia 2024
   #
-  # Merged PR 22020: Introduce linear startegy with serial 1 for production switches
-  # fd1804dcf7176abcac9c4b3b47dc46b607eaed59
-  dante_build_id: '917750'
+  # Merged PR 22058: Skip cert check for trinium4fuel
+  # f453987864b6c8514e28bec39a145d9fa65f3f65
+  dante_build_id: '917820'
 
   # virgil 20240412.6
   # Fri Apr 12 01:42:30 UTC 2024 -- Fri Apr 12 01:42:30 Australia 2024
