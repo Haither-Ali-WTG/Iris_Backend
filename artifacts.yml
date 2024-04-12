@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240412.5
-  # Fri Apr 12 01:43:58 UTC 2024 -- Fri Apr 12 01:43:58 Australia 2024
+  # Dante Build Artifact 20240412.6
+  # Fri Apr 12 02:22:17 UTC 2024 -- Fri Apr 12 02:22:17 Australia 2024
   #
-  # Merged PR 22032: Basic switches systemd daemons check
-  # 251bb5322f1c1025155fc3a2a2400e26411a8457
-  dante_build_id: '917692'
+  # Merged PR 22020: Introduce linear startegy with serial 1 for production switches
+  # fd1804dcf7176abcac9c4b3b47dc46b607eaed59
+  dante_build_id: '917750'
 
   # virgil 20240412.6
   # Fri Apr 12 01:42:30 UTC 2024 -- Fri Apr 12 01:42:30 Australia 2024
