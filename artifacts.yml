@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240412.4
-  # Fri Apr 12 00:46:11 UTC 2024 -- Fri Apr 12 00:46:11 Australia 2024
+  # Dante Build Artifact 20240412.5
+  # Fri Apr 12 01:43:58 UTC 2024 -- Fri Apr 12 01:43:58 Australia 2024
   #
-  # Merge pull request 22068 from dante_artifact_upgrade into master
-  # e62687ebb0ccae6d6087c7716d35f9518db8f38e
-  dante_build_id: '917604'
+  # Merged PR 22032: Basic switches systemd daemons check
+  # 251bb5322f1c1025155fc3a2a2400e26411a8457
+  dante_build_id: '917692'
 
-  # virgil 20240412.4
-  # Fri Apr 12 00:12:44 UTC 2024 -- Fri Apr 12 00:12:44 Australia 2024
+  # virgil 20240412.6
+  # Fri Apr 12 01:42:30 UTC 2024 -- Fri Apr 12 01:42:30 Australia 2024
   #
-  # Merged PR 22060: Add all regional pools to all management DNS
-  # 7e5164e24562435e8a1d4c516a4a28564a5631a3
-  virgil_build_id: '917557'
+  # Merged PR 22075: Delete the test topic test-topic-internal
+  # d9ce2d3fa223a909f479250aab3878d4598a5c4f
+  virgil_build_id: '917690'
