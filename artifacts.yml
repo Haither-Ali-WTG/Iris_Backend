@@ -7,9 +7,9 @@ variables:
   # 82f163f16962196f46687f0aa403844b1f0235eb
   dante_build_id: '920547'
 
-  # virgil 20240412.6
-  # Fri Apr 12 01:42:30 UTC 2024 -- Fri Apr 12 01:42:30 Australia 2024
+  # virgil 20240415.2
+  # Mon Apr 15 06:31:53 UTC 2024 -- Mon Apr 15 06:31:53 Australia 2024
   #
-  # Merged PR 22075: Delete the test topic test-topic-internal
-  # d9ce2d3fa223a909f479250aab3878d4598a5c4f
-  virgil_build_id: '917690'
+  # Merged PR 22111: Replace C-00072 and C-00073 with newer hardware
+  # 2371ae3c3b5a980004af545a2688b29b790f84d2
+  virgil_build_id: '920860'
