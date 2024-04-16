@@ -10,7 +10,7 @@ ansible==9.4.0
     # via -r requirements.in
 ansible-compat==4.1.11
     # via ansible-lint
-ansible-core==2.16.5
+ansible-core==2.16.6
     # via
     #   ansible
     #   ansible-compat
@@ -274,7 +274,7 @@ yamllint==1.35.1
     # via
     #   -r requirements.in
     #   ansible-lint
-yq==3.3.0
+yq==3.3.1
     # via -r requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
