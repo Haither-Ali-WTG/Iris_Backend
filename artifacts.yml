@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240416.5
-  # Tue Apr 16 06:32:22 UTC 2024 -- Tue Apr 16 06:32:22 Australia 2024
+  # Dante Build Artifact 20240416.6
+  # Tue Apr 16 07:04:54 UTC 2024 -- Tue Apr 16 07:04:54 Australia 2024
   #
-  # Merged PR 22186: Fix the pipeline by adding extra ssh args.
-  # 4ea95bc81af136e0ba2d77c48d4f965c0e840948
-  dante_build_id: '921975'
+  # Merged PR 22182: Tests updated: wait for load average and free memory check
+  # 5c9136d3d1b19a1c58a2b5d4d6098085c44e3ad4
+  dante_build_id: '922011'
 
-  # virgil 20240416.4
-  # Tue Apr 16 01:16:22 UTC 2024 -- Tue Apr 16 01:16:22 Australia 2024
+  # virgil 20240416.9
+  # Tue Apr 16 08:09:20 UTC 2024 -- Tue Apr 16 08:09:20 Australia 2024
   #
-  # Merged PR 22110: Remove C-00782~786 nodes
-  # 6a113f132323db1d156b37e9bc45625ef09d7736
-  virgil_build_id: '921668'
+  # Merged PR 22138: Move de1wp-svir-028 from FE Trunk to BE Trunk
+  # f83e72387af59d4d141ff2aa66214c19231b95ea
+  virgil_build_id: '922070'
