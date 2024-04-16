@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240416.6
-  # Tue Apr 16 07:04:54 UTC 2024 -- Tue Apr 16 07:04:54 Australia 2024
+  # Dante Build Artifact 20240416.7
+  # Tue Apr 16 09:08:24 UTC 2024 -- Tue Apr 16 09:08:24 Australia 2024
   #
-  # Merged PR 22182: Tests updated: wait for load average and free memory check
-  # 5c9136d3d1b19a1c58a2b5d4d6098085c44e3ad4
-  dante_build_id: '922011'
+  # Merge pull request 22213 from dante_artifact_upgrade into master
+  # cc14fd210ba64a45c7eb6d5bb187cadf37db2e3f
+  dante_build_id: '922119'
 
   # virgil 20240416.9
   # Tue Apr 16 08:09:20 UTC 2024 -- Tue Apr 16 08:09:20 Australia 2024
