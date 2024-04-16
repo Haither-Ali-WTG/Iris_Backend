@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240416.4
-  # Tue Apr 16 05:24:34 UTC 2024 -- Tue Apr 16 05:24:34 Australia 2024
+  # Dante Build Artifact 20240416.5
+  # Tue Apr 16 06:32:22 UTC 2024 -- Tue Apr 16 06:32:22 Australia 2024
   #
-  # Merge pull request 22173 from dante_python_upgrade into master
-  # c56679d554f18e40225c2d2d06e413c32eec492e
-  dante_build_id: '921889'
+  # Merged PR 22186: Fix the pipeline by adding extra ssh args.
+  # 4ea95bc81af136e0ba2d77c48d4f965c0e840948
+  dante_build_id: '921975'
 
   # virgil 20240416.4
   # Tue Apr 16 01:16:22 UTC 2024 -- Tue Apr 16 01:16:22 Australia 2024
