@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240416.2
-  # Tue Apr 16 00:23:42 UTC 2024 -- Tue Apr 16 00:23:42 Australia 2024
+  # Dante Build Artifact 20240416.3
+  # Tue Apr 16 02:01:19 UTC 2024 -- Tue Apr 16 02:01:19 Australia 2024
   #
-  # Merged PR 22087: Switches file system, cpu and memory checks
-  # 60b18d01b5abe250449b48e1986fd4dd39ee8cb7
-  dante_build_id: '921618'
+  # Merged PR 22155: Fix the pipeline access to the ceph monitor node
+  # e911c1f15b0cc3674ceaf3f382c32a1f4ac222c4
+  dante_build_id: '921715'
 
-  # virgil 20240415.2
-  # Mon Apr 15 06:31:53 UTC 2024 -- Mon Apr 15 06:31:53 Australia 2024
+  # virgil 20240416.4
+  # Tue Apr 16 01:16:22 UTC 2024 -- Tue Apr 16 01:16:22 Australia 2024
   #
-  # Merged PR 22111: Replace C-00072 and C-00073 with newer hardware
-  # 2371ae3c3b5a980004af545a2688b29b790f84d2
-  virgil_build_id: '920860'
+  # Merged PR 22110: Remove C-00782~786 nodes
+  # 6a113f132323db1d156b37e9bc45625ef09d7736
+  virgil_build_id: '921668'
