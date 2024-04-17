@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240417.1
-  # Wed Apr 17 02:06:57 UTC 2024 -- Wed Apr 17 02:06:57 Australia 2024
+  # Dante Build Artifact 20240417.2
+  # Wed Apr 17 06:08:17 UTC 2024 -- Wed Apr 17 06:08:17 Australia 2024
   #
-  # Merge pull request 22227 from dante_artifact_upgrade into master
-  # 5a469bd1aa4d86c4daaaaa96ac58ba325ce5e283
-  dante_build_id: '922854'
+  # Merged PR 22229: Switches: Changed memory and free space checks to rely on sysmonitor
+  # 1938b927c4b17a35933bb0709b90b32b6fe8a8ef
+  dante_build_id: '923069'
 
   # virgil 20240417.2
   # Wed Apr 17 01:13:37 UTC 2024 -- Wed Apr 17 01:13:37 Australia 2024
