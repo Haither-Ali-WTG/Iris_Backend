@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240417.2
-  # Wed Apr 17 06:08:17 UTC 2024 -- Wed Apr 17 06:08:17 Australia 2024
+  # Dante Build Artifact 20240418.1
+  # Wed Apr 17 23:29:03 UTC 2024 -- Wed Apr 17 23:29:03 Australia 2024
   #
-  # Merged PR 22229: Switches: Changed memory and free space checks to rely on sysmonitor
-  # 1938b927c4b17a35933bb0709b90b32b6fe8a8ef
-  dante_build_id: '923069'
+  # Merge pull request 22253 from dante_python_upgrade into master
+  # 48b2859c6166df9064bbaf1b20bab15c2108de55
+  dante_build_id: '923752'
 
-  # virgil 20240417.2
-  # Wed Apr 17 01:13:37 UTC 2024 -- Wed Apr 17 01:13:37 Australia 2024
+  # virgil 20240418.2
+  # Wed Apr 17 23:29:13 UTC 2024 -- Wed Apr 17 23:29:13 Australia 2024
   #
-  # Merged PR 22198: Swap C-00077 and C-00782 for migrating Q1-AU2
-  # 1c7db87b572cc7107a521b8060a5cdb9de1b8143
-  virgil_build_id: '922799'
+  # Merge pull request 22249 from virgil_python_upgrade into master
+  # c5b991700b000df91c10f92d47231c74e8b20949
+  virgil_build_id: '923755'
