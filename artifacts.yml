@@ -7,9 +7,9 @@ variables:
   # cc14fd210ba64a45c7eb6d5bb187cadf37db2e3f
   dante_build_id: '922119'
 
-  # virgil 20240416.9
-  # Tue Apr 16 08:09:20 UTC 2024 -- Tue Apr 16 08:09:20 Australia 2024
+  # virgil 20240417.2
+  # Wed Apr 17 01:13:37 UTC 2024 -- Wed Apr 17 01:13:37 Australia 2024
   #
-  # Merged PR 22138: Move de1wp-svir-028 from FE Trunk to BE Trunk
-  # f83e72387af59d4d141ff2aa66214c19231b95ea
-  virgil_build_id: '922070'
+  # Merged PR 22198: Swap C-00077 and C-00782 for migrating Q1-AU2
+  # 1c7db87b572cc7107a521b8060a5cdb9de1b8143
+  virgil_build_id: '922799'
