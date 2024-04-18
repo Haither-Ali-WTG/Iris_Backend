@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240418.3
-  # Thu Apr 18 02:10:26 UTC 2024 -- Thu Apr 18 02:10:26 Australia 2024
+  # Dante Build Artifact 20240418.4
+  # Thu Apr 18 05:08:47 UTC 2024 -- Thu Apr 18 05:08:47 Australia 2024
   #
-  # Merged PR 22267: Added  switch routes checks
-  # 601115949990c22ee7cf7a14eb561892984801a4
-  dante_build_id: '923948'
+  # Merged PR 22276: Check clag status on switches
+  # 37a39f8c78f72555295604651877414e7761a17c
+  dante_build_id: '924110'
 
-  # virgil 20240418.2
-  # Wed Apr 17 23:29:13 UTC 2024 -- Wed Apr 17 23:29:13 Australia 2024
+  # virgil 20240418.6
+  # Thu Apr 18 04:56:28 UTC 2024 -- Thu Apr 18 04:56:28 Australia 2024
   #
-  # Merge pull request 22249 from virgil_python_upgrade into master
-  # c5b991700b000df91c10f92d47231c74e8b20949
-  virgil_build_id: '923755'
+  # Merged PR 22280: Set dante "on demand" for Kafka 77 node
+  # 59a5efb8e97882acff37c094b277a86a4aede59c
+  virgil_build_id: '924087'
