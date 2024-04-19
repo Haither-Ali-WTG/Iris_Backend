@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240418.4
-  # Thu Apr 18 05:08:47 UTC 2024 -- Thu Apr 18 05:08:47 Australia 2024
+  # Dante Build Artifact 20240419.1
+  # Thu Apr 18 23:56:58 UTC 2024 -- Thu Apr 18 23:56:58 Australia 2024
   #
-  # Merged PR 22276: Check clag status on switches
-  # 37a39f8c78f72555295604651877414e7761a17c
-  dante_build_id: '924110'
+  # Merged PR 22289: Set StrictHostKeyChecking=no to rebuild server pipeline
+  # f175d71544219dacecba96cac42bf1ca51800a72
+  dante_build_id: '924905'
 
   # virgil 20240418.6
   # Thu Apr 18 04:56:28 UTC 2024 -- Thu Apr 18 04:56:28 Australia 2024
