@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240423.3
-  # Tue Apr 23 05:47:12 UTC 2024 -- Tue Apr 23 05:47:12 Australia 2024
+  # Dante Build Artifact 20240424.1
+  # Tue Apr 23 23:27:27 UTC 2024 -- Tue Apr 23 23:27:27 Australia 2024
   #
-  # Merge pull request 22397 from dante_artifact_upgrade into master
-  # 300ae79c17daea4d847404f633564652e163630a
-  dante_build_id: '929202'
+  # Merged PR 22371: Add switch checks for exits in simulation and deploy all switches in one go in simulation
+  # b3bd57181d777492f75e06b8733437c43aa13260
+  dante_build_id: '929961'
 
-  # virgil 20240423.10
-  # Tue Apr 23 04:34:52 UTC 2024 -- Tue Apr 23 04:34:52 Australia 2024
+  # virgil 20240424.3
+  # Tue Apr 23 23:21:33 UTC 2024 -- Tue Apr 23 23:21:33 Australia 2024
   #
-  # Merged PR 22390: Create kafka test topic in Q1-AU2
-  # 8ced882910600b058d9168cd62bf1d381e2fbe9c
-  virgil_build_id: '929145'
+  # Merged PR 22408: Correct OOB MAC for C-00791
+  # 76c3dfbf2d8b1574ed2cfbf4792bbcf6b594e42c
+  virgil_build_id: '929958'
