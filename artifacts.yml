@@ -7,9 +7,9 @@ variables:
   # 4f8229a00ae5f9b382996bd8af0b4ed61ab9dbcc
   dante_build_id: '929033'
 
-  # virgil 20240423.3
-  # Tue Apr 23 01:38:05 UTC 2024 -- Tue Apr 23 01:38:05 Australia 2024
+  # virgil 20240423.10
+  # Tue Apr 23 04:34:52 UTC 2024 -- Tue Apr 23 04:34:52 Australia 2024
   #
-  # Merged PR 22333: Set au2chl00077 to dante continuous
-  # b9baec5e54088f652c63847472698c0be7326e75
-  virgil_build_id: '928952'
+  # Merged PR 22390: Create kafka test topic in Q1-AU2
+  # 8ced882910600b058d9168cd62bf1d381e2fbe9c
+  virgil_build_id: '929145'
