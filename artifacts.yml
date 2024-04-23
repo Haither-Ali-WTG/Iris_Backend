@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240419.1
-  # Thu Apr 18 23:56:58 UTC 2024 -- Thu Apr 18 23:56:58 Australia 2024
+  # Dante Build Artifact 20240423.1
+  # Tue Apr 23 00:29:55 UTC 2024 -- Tue Apr 23 00:29:55 Australia 2024
   #
-  # Merged PR 22289: Set StrictHostKeyChecking=no to rebuild server pipeline
-  # f175d71544219dacecba96cac42bf1ca51800a72
-  dante_build_id: '924905'
+  # Merged PR 22334: Deploy secondary layer 2 switches before primary
+  # 6531630b8314b77a4fe7411545763db5b9df6a3b
+  dante_build_id: '928836'
 
-  # virgil 20240418.6
-  # Thu Apr 18 04:56:28 UTC 2024 -- Thu Apr 18 04:56:28 Australia 2024
+  # virgil 20240423.3
+  # Tue Apr 23 01:38:05 UTC 2024 -- Tue Apr 23 01:38:05 Australia 2024
   #
-  # Merged PR 22280: Set dante "on demand" for Kafka 77 node
-  # 59a5efb8e97882acff37c094b277a86a4aede59c
-  virgil_build_id: '924087'
+  # Merged PR 22333: Set au2chl00077 to dante continuous
+  # b9baec5e54088f652c63847472698c0be7326e75
+  virgil_build_id: '928952'
