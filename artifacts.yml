@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240423.1
-  # Tue Apr 23 00:29:55 UTC 2024 -- Tue Apr 23 00:29:55 Australia 2024
+  # Dante Build Artifact 20240423.2
+  # Tue Apr 23 02:45:59 UTC 2024 -- Tue Apr 23 02:45:59 Australia 2024
   #
-  # Merged PR 22334: Deploy secondary layer 2 switches before primary
-  # 6531630b8314b77a4fe7411545763db5b9df6a3b
-  dante_build_id: '928836'
+  # Merge pull request 22367 from dante_artifact_upgrade into master
+  # 4f8229a00ae5f9b382996bd8af0b4ed61ab9dbcc
+  dante_build_id: '929033'
 
   # virgil 20240423.3
   # Tue Apr 23 01:38:05 UTC 2024 -- Tue Apr 23 01:38:05 Australia 2024
