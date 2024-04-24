@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240424.1
-  # Tue Apr 23 23:27:27 UTC 2024 -- Tue Apr 23 23:27:27 Australia 2024
+  # Dante Build Artifact 20240424.2
+  # Wed Apr 24 00:28:02 UTC 2024 -- Wed Apr 24 00:28:02 Australia 2024
   #
-  # Merged PR 22371: Add switch checks for exits in simulation and deploy all switches in one go in simulation
-  # b3bd57181d777492f75e06b8733437c43aa13260
-  dante_build_id: '929961'
+  # Merge pull request 22415 from dante_artifact_upgrade into master
+  # 0d3ab137a36d7acad65cf73e74461b3d4b2e26a0
+  dante_build_id: '930026'
 
   # virgil 20240424.3
   # Tue Apr 23 23:21:33 UTC 2024 -- Tue Apr 23 23:21:33 Australia 2024
