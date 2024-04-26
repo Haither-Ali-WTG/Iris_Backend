@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240426.1
-  # Fri Apr 26 13:47:41 UTC 2024 -- Fri Apr 26 13:47:41 Australia 2024
+  # Dante Build Artifact 20240427.1
+  # Fri Apr 26 15:09:10 UTC 2024 -- Fri Apr 26 15:09:10 Australia 2024
   #
-  # Merge pull request 22484 from dante_artifact_upgrade into master
-  # 2bf5ad5e450abb30647112e241acc20b196a3c4b
-  dante_build_id: '932639'
+  # Merge pull request 22497 from dante_artifact_upgrade into master
+  # 7ece2928da99cbaa83a49ee2a522c83ea0b93597
+  dante_build_id: '932733'
 
-  # virgil 20240427.2
-  # Fri Apr 26 14:14:39 UTC 2024 -- Fri Apr 26 14:14:39 Australia 2024
+  # virgil 20240427.9
+  # Fri Apr 26 15:19:45 UTC 2024 -- Fri Apr 26 15:19:45 Australia 2024
   #
-  # Merged PR 22470: Replace C-00075 and 76 with C58s
-  # fbcf1f1796207008417b9f29982fc3b54f57f9e9
-  virgil_build_id: '932670'
+  # Merged PR 22498: Update MAC address
+  # bdda052b59e007af6b5d995eb1d3a633c7b0340b
+  virgil_build_id: '932751'
