@@ -7,9 +7,9 @@ variables:
   # 2bf5ad5e450abb30647112e241acc20b196a3c4b
   dante_build_id: '932639'
 
-  # virgil 20240426.8
-  # Fri Apr 26 12:46:11 UTC 2024 -- Fri Apr 26 12:46:11 Australia 2024
+  # virgil 20240427.2
+  # Fri Apr 26 14:14:39 UTC 2024 -- Fri Apr 26 14:14:39 Australia 2024
   #
-  # Merged PR 22479: Update MAC address
-  # c9a638f3506d402968ec18d96434dd5306b19495
-  virgil_build_id: '932587'
+  # Merged PR 22470: Replace C-00075 and 76 with C58s
+  # fbcf1f1796207008417b9f29982fc3b54f57f9e9
+  virgil_build_id: '932670'
