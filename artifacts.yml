@@ -7,9 +7,9 @@ variables:
   # 02ac5cd0f0be57767996bddfdcd59bbdefa20311
   dante_build_id: '930308'
 
-  # virgil 20240424.5
-  # Wed Apr 24 05:34:19 UTC 2024 -- Wed Apr 24 05:34:19 Australia 2024
+  # virgil 20240426.8
+  # Fri Apr 26 12:46:11 UTC 2024 -- Fri Apr 26 12:46:11 Australia 2024
   #
-  # Merged PR 22376: Adding fat pipe for au2nas04 for AU2CO SQL NAS SBAK replacement
-  # 3e1918fe0ee5e4e4ec3406f650f928930817b300
-  virgil_build_id: '930273'
+  # Merged PR 22479: Update MAC address
+  # c9a638f3506d402968ec18d96434dd5306b19495
+  virgil_build_id: '932587'
