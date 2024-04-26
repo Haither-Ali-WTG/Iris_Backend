@@ -6,15 +6,24 @@ import os
 import sys
 import filecmp
 import shutil
-from typing import Dict
+import re
+from typing import Dict, List
 
 
 def parse_haproxy_config(filename: str) -> Dict[str, int]:
     """
     Parse the haproxy config.
-    Concatenate the backend name and server name as the key, and the port as the value.
+    Concatenate the backend name and server name as the key, value is a list
+    of server port and check port.
+    sample:
+        backend test_com
+        server srv1 10.0.0.1:443 check
+        server srv2 10.0.0.2:443 check port 8080
+        server srv3 10.0.0.3:443 weight 8 check port 8080
+        server srv4 10.0.0.4:443 check port 8080 send-proxy
     """
     result_dict = {}
+    check_port_pattern = r".*check\s+port\s+(\d+)"
 
     with open(filename, 'r') as file:
         current_backend = None
@@ -26,12 +35,18 @@ def parse_haproxy_config(filename: str) -> Dict[str, int]:
                 current_backend = line.split(" ")[1]  # Extract the backend name
             elif line.startswith("server "):
                 server_name = line.split(" ")[1]  # Extract the server name
-                _, port = line.split(" ")[2].split(":")  # Get the port
-                result_dict[f"{current_backend}/{server_name}"] = port
+                _, server_port = line.split(" ")[2].split(":")  # Get the port
+
+                key = f"{current_backend}/{server_name}"
+                match_result = re.match(check_port_pattern, line)
+                if match_result:
+                    result_dict[key] = [server_port, match_result.group(1)]
+                else:
+                    result_dict[key] = [server_port]
 
     return result_dict
 
-def check_and_generate_state(config_info: Dict[str, int], state_file: str, new_state: str) -> None:
+def check_and_generate_state(config_info: Dict[str, List[int]], state_file: str, new_state: str) -> None:
     """
     According to the config info, filter out the lines where the port has changed,
     and save the remains to a new file.
@@ -46,7 +61,10 @@ def check_and_generate_state(config_info: Dict[str, int], state_file: str, new_s
                 # columns[1] and columns[3] are backend name and server name
                 key_to_check = f"{columns[1]}/{columns[3]}"
                 
-                if key_to_check in config_info and config_info[key_to_check] != columns[18]:
+                # srv_port[18] and srv_port[21] are srv_port and srv_check_port
+                if (key_to_check in config_info and 
+                    (config_info[key_to_check][0] != columns[18] or
+                    (len(config_info[key_to_check]) == 2 and config_info[key_to_check][1] != columns[21]))):
                     print(f"Removed: {line}")
                     continue
             output_file.write(line)
