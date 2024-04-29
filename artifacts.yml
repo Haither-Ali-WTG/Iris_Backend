@@ -7,9 +7,9 @@ variables:
   # 2bbce1c2c6bd2b009cb235fa7e88de20ad54804c
   dante_build_id: '935236'
 
-  # virgil 20240427.9
-  # Fri Apr 26 15:19:45 UTC 2024 -- Fri Apr 26 15:19:45 Australia 2024
+  # virgil 20240430.1
+  # Mon Apr 29 22:36:31 UTC 2024 -- Mon Apr 29 22:36:31 Australia 2024
   #
-  # Merged PR 22498: Update MAC address
-  # bdda052b59e007af6b5d995eb1d3a633c7b0340b
-  virgil_build_id: '932751'
+  # Merged PR 22520: Change ESXi management port to native VLAN 1033
+  # ffc3c812c2423ce28ff57d86022dfecb5150ebbe
+  virgil_build_id: '936000'
