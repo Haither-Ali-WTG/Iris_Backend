@@ -1,0 +1,15 @@
+1
+# be_id be_name srv_id srv_name srv_addr srv_op_state srv_admin_state srv_uweight srv_iweight srv_time_since_last_change srv_check_status srv_check_result srv_check_health srv_check_state srv_agent_state bk_f_forced_id srv_f_forced_id srv_fqdn srv_port srvrecord srv_use_ssl srv_check_port srv_check_addr srv_agent_addr srv_agent_port
+4 wi12345_testrig_sand_wtg_zone-glow 1 au2sp-tweb-test1 10.1.2.1 0 0 1 1 1162031 17 2 0 6 0 0 0 - 80 - 0 0 - - 0
+5 wi12345_testrig_sand_wtg_zone-glow 2 au2sp-tweb-test2 10.1.2.2 0 0 1 1 1162031 17 2 0 6 0 0 0 - 80 - 0 0 - - 0
+6 changed1_testrig_sand_wtg_zone-glow 1 au2sp-tweb-change-ip 10.1.2.1 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 0 - - 0
+7 changed1_testrig_sand_wtg_zone-glow 2 au2sp-tweb-no-change 10.1.3.2 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 0 - - 0
+8 changed2_testrig_sand_wtg_zone-glow 1 au2sp-tweb-no-change 10.1.3.1 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 0 - - 0
+9 changed2_testrig_sand_wtg_zone-glow 2 au2sp-tweb-port-change1 10.1.3.2 2 0 1 1 548482 15 3 4 6 0 0 0 - 443 - 1 0 - - 0
+10 changed2_testrig_sand_wtg_zone-glow 3 au2sp-tweb-port-change2 10.1.3.3 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 0 - - 0
+11 changed2_testrig_sand_wtg_zone-glow 4 au2sp-tweb-port-change3 10.1.3.4 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 8081 - - 0
+12 changed2_testrig_sand_wtg_zone-glow 5 au2sp-tweb-port-change4 10.1.3.5 2 0 1 1 548482 15 3 4 6 0 0 0 - 8080 - 1 8081 - - 0
+13 changed2_testrig_sand_wtg_zone-glow 6 au2sp-tweb-port-change5 10.1.3.6 2 0 1 1 548482 15 3 4 6 0 0 0 - 8080 - 1 8081 - - 0
+14 changed2_testrig_sand_wtg_zone-glow 7 au2sp-tweb-port-change6 10.1.3.7 2 0 1 1 548482 15 3 4 6 0 0 0 - 80 - 1 8080 - - 0
+15 wi123456_testrig_sand_wtg_zone-portals 1 au2sp-tweb-test1 10.1.4.1 0 0 1 1 1162031 17 2 0 6 0 0 0 - 80 - 0 0 - - 0
+16 wi123456_testrig_sand_wtg_zone-portals 2 au2sp-tweb-test2 10.1.4.2 0 0 1 1 1162031 17 2 0 6 0 0 0 - 80 - 0 0 - - 0
