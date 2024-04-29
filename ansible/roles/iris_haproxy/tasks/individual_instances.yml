@@ -214,7 +214,7 @@
       set -o pipefail
       echo 'show servers state' \
       | nc -U {{ individual_instance_dir }}/run/haproxy.sock \
-      > {{ individual_instance_dir }}/run/global-state
+      > {{ individual_instance_dir }}/global-state
     executable: /bin/bash
   become: yes
   changed_when: true
@@ -226,7 +226,7 @@
   include_tasks: update_states_file.yml
   vars:
     cfg_file: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
-    states_file: "{{ individual_instance_dir }}/run/global-state"
+    states_file: "{{ individual_instance_dir }}/global-state"
   when:
     - container_exists
     - haproxy_config_changed
