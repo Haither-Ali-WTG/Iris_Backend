@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240429.1
-  # Mon Apr 29 00:35:13 UTC 2024 -- Mon Apr 29 00:35:13 Australia 2024
+  # Dante Build Artifact 20240429.2
+  # Mon Apr 29 03:55:13 UTC 2024 -- Mon Apr 29 03:55:13 Australia 2024
   #
-  # Merged PR 22477: Enable virgil-overrides for AU2
-  # e732dca22e8066888e6b73f4f85ec0cf3f7e2440
-  dante_build_id: '935047'
+  # Merged PR 22512: Skip nvued check in simulation
+  # 2bbce1c2c6bd2b009cb235fa7e88de20ad54804c
+  dante_build_id: '935236'
 
   # virgil 20240427.9
   # Fri Apr 26 15:19:45 UTC 2024 -- Fri Apr 26 15:19:45 Australia 2024
