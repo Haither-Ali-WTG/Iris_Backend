@@ -13,8 +13,7 @@ from typing import Dict, List
 def parse_haproxy_config(filename: str) -> Dict[str, int]:
     """
     Parse the haproxy config.
-    Concatenate the backend name and server name as the key, value is a list
-    of server port and check port.
+    Concatenate the backend name and server name as the key, value is [server port, check port].
     sample:
         backend test_com
         server srv1 10.0.0.1:443 check
@@ -40,9 +39,9 @@ def parse_haproxy_config(filename: str) -> Dict[str, int]:
                 key = f"{current_backend}/{server_name}"
                 match_result = re.match(check_port_pattern, line)
                 if match_result:
-                    result_dict[key] = [server_port, match_result.group(1)]
+                    result_dict[key] = [str(server_port), str(match_result.group(1))]
                 else:
-                    result_dict[key] = [server_port]
+                    result_dict[key] = [str(server_port), "0"]
 
     return result_dict
 
@@ -62,9 +61,9 @@ def check_and_generate_state(config_info: Dict[str, List[int]], state_file: str,
                 key_to_check = f"{columns[1]}/{columns[3]}"
                 
                 # srv_port[18] and srv_port[21] are srv_port and srv_check_port
-                if (key_to_check in config_info and 
+                if (key_to_check in config_info and
                     (config_info[key_to_check][0] != columns[18] or
-                    (len(config_info[key_to_check]) == 2 and config_info[key_to_check][1] != columns[21]))):
+                    (config_info[key_to_check][1] != columns[21]))):
                     print(f"Removed: {line}")
                     continue
             output_file.write(line)
