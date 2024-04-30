@@ -1,12 +1,14 @@
 """ Test module for update_globalstate.py """
 
-import subprocess
 from unittest import TestCase
+from update_globalstate import StateFileUpdater
 
 class TestUpdateStateFile(TestCase):
-    @classmethod
-    def setUpClass(cls):
-        cls.check_strings = [
+    """
+    Tests that check StateFileUpdater can delete the lines in state file
+    """
+    def setUp(self):
+        self.check_strings = [
             "changed2_testrig_sand_wtg_zone-glow 2 au2sp-tweb-port-change1",
             "changed2_testrig_sand_wtg_zone-glow 3 au2sp-tweb-port-change2",
             "changed2_testrig_sand_wtg_zone-glow 4 au2sp-tweb-port-change3",
@@ -14,22 +16,29 @@ class TestUpdateStateFile(TestCase):
             "changed2_testrig_sand_wtg_zone-glow 6 au2sp-tweb-port-change5",
             ]
 
-    def test_update_statefile(self):
-        # Run update_statefile.py
-        process = subprocess.Popen(['python3',
-                                    '../ansible/roles/iris_haproxy/files/update_globalstate.py',
-                                    '--config', 'mock.cfg',
-                                    '--state_file', 'mock_state'],
-                                    stdout=subprocess.PIPE)
-        output, _ = process.communicate()
-        output = output.decode("utf-8")
+    def test(self):
+        """
+        Tests that check StateFileUpdater can delete the lines in state file
+        """
+        state_file_updater = StateFileUpdater(state_file='tests/mock_state',
+                                              config_file='tests/mock.cfg')
+        removed_lines = state_file_updater.update()
 
-        # All strings in check_strings should in output
+        self.assertEqual(len(self.check_strings), len(removed_lines),
+                         "The number of lines was not match")
+
+        # Check if check_strings were removed
         for string in self.check_strings:
-            self.assertIn(string, output)
+            found = False
+            for removed_line in removed_lines:
+                if string in removed_line:
+                    found = True
+                    break
+            self.assertTrue(found, f"{string} not found in removed strings")
 
-        # All strings in check_strings should not in updated mock_state file
-        with open('mock_state', 'r') as f:
+        # Check if check_strings are not in mock_state file
+        with open('tests/mock_state', 'r', encoding='ascii') as f:
             state_file_content = f.read()
             for string in self.check_strings:
-                self.assertNotIn(string, state_file_content)
+                self.assertNotIn(string, state_file_content,
+                                 f"{string} found in state file")
