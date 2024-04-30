@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240429.2
-  # Mon Apr 29 03:55:13 UTC 2024 -- Mon Apr 29 03:55:13 Australia 2024
+  # Dante Build Artifact 20240430.1
+  # Tue Apr 30 00:10:15 UTC 2024 -- Tue Apr 30 00:10:15 Australia 2024
   #
-  # Merged PR 22512: Skip nvued check in simulation
-  # 2bbce1c2c6bd2b009cb235fa7e88de20ad54804c
-  dante_build_id: '935236'
+  # Merge pull request 22547 from dante_artifact_upgrade into master
+  # 5e37df98f1229b568e45c4f3687afa0e0571a007
+  dante_build_id: '936094'
 
-  # virgil 20240430.1
-  # Mon Apr 29 22:36:31 UTC 2024 -- Mon Apr 29 22:36:31 Australia 2024
+  # virgil 20240430.3
+  # Mon Apr 29 23:10:49 UTC 2024 -- Mon Apr 29 23:10:49 Australia 2024
   #
-  # Merged PR 22520: Change ESXi management port to native VLAN 1033
-  # ffc3c812c2423ce28ff57d86022dfecb5150ebbe
-  virgil_build_id: '936000'
+  # Merge pull request 22509 from virgil_python_upgrade into master
+  # 7a11fda1aa4344015fe62d41cfe14cee13fd8e08
+  virgil_build_id: '936033'
