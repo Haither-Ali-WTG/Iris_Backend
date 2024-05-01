@@ -51,7 +51,9 @@ stages:
 
           - script: |
               set -euxo pipefail
-              pylint --rcfile=setup.cfg tests/ ansible/roles/collect_sites/files/*.py
+              pylint --rcfile=setup.cfg \
+              --disable=redefined-outer-name \
+              tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
             displayName: 'Python lint'
             condition: succeededOrFailed()
 
