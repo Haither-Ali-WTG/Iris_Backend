@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240430.2
-  # Tue Apr 30 09:08:48 UTC 2024 -- Tue Apr 30 09:08:48 Australia 2024
+  # Dante Build Artifact 20240501.1
+  # Wed May  1 03:21:06 UTC 2024 -- Wed May  1 03:21:06 Australia 2024
   #
-  # Merge pull request 22578 from dante_artifact_upgrade into master
-  # badd8ebbb08fc3fd456444057a187118119ddf75
-  dante_build_id: '936515'
+  # Merged PR 22593: Enable virgil overrides for DE1 and US2
+  # 7f5a1487b329323a032f845aa2137210967476c9
+  dante_build_id: '937314'
 
   # virgil 20240430.5
   # Tue Apr 30 08:12:54 UTC 2024 -- Tue Apr 30 08:12:54 Australia 2024
