@@ -7,9 +7,9 @@ variables:
   # 02f5b70cab4dcfa4f0d1d9fce9f9abbc90975d01
   dante_build_id: '937725'
 
-  # virgil 20240501.9
-  # Wed May  1 03:57:04 UTC 2024 -- Wed May  1 03:57:04 Australia 2024
+  # virgil 20240502.2
+  # Wed May  1 23:36:27 UTC 2024 -- Wed May  1 23:36:27 Australia 2024
   #
-  # Merged PR 22608: FlashArray is not FlashBlade, LACP must be on-1 controller, not cross controllers
-  # b766a31e1b7b391b75b9452e247119da2cc7dc4d
-  virgil_build_id: '937351'
+  # Merged PR 22655: FlashArrayUplinksRe-arrange
+  # bd2ff6b0fa0b5c949ee9f64ddc744b60d521dda1
+  virgil_build_id: '938262'
