@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240502.1
-  # Thu May  2 00:12:51 UTC 2024 -- Thu May  2 00:12:51 Australia 2024
+  # Dante Build Artifact 20240502.3
+  # Thu May  2 03:15:43 UTC 2024 -- Thu May  2 03:15:43 Australia 2024
   #
-  # Merged PR 22614: Renamed bind to have same name as on dockerhub
-  # 5d5a1f0e1cec3b332109b27d4faac0c205cd8eec
-  dante_build_id: '938302'
+  # Merged PR 22671: Sort and remove comments from images.yaml file
+  # 0431eb726a0743bdf7e81909984f85843843a604
+  dante_build_id: '938545'
 
   # virgil 20240502.2
   # Wed May  1 23:36:27 UTC 2024 -- Wed May  1 23:36:27 Australia 2024
