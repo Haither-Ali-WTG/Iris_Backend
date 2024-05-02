@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240501.3
-  # Wed May  1 10:31:05 UTC 2024 -- Wed May  1 10:31:05 Australia 2024
+  # Dante Build Artifact 20240502.1
+  # Thu May  2 00:12:51 UTC 2024 -- Thu May  2 00:12:51 Australia 2024
   #
-  # Merge pull request 22297 from dante_python_upgrade into master
-  # 02f5b70cab4dcfa4f0d1d9fce9f9abbc90975d01
-  dante_build_id: '937725'
+  # Merged PR 22614: Renamed bind to have same name as on dockerhub
+  # 5d5a1f0e1cec3b332109b27d4faac0c205cd8eec
+  dante_build_id: '938302'
 
   # virgil 20240502.2
   # Wed May  1 23:36:27 UTC 2024 -- Wed May  1 23:36:27 Australia 2024
