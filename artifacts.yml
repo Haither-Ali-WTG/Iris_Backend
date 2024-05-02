@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240502.3
-  # Thu May  2 03:15:43 UTC 2024 -- Thu May  2 03:15:43 Australia 2024
+  # Dante Build Artifact 20240502.4
+  # Thu May  2 07:26:00 UTC 2024 -- Thu May  2 07:26:00 Australia 2024
   #
-  # Merged PR 22671: Sort and remove comments from images.yaml file
-  # 0431eb726a0743bdf7e81909984f85843843a604
-  dante_build_id: '938545'
+  # Merge pull request 22697 from dante_artifact_upgrade into master
+  # a39527149f252b0690be7261eb813b0d7df9373c
+  dante_build_id: '938766'
 
   # virgil 20240502.5
   # Thu May  2 05:41:58 UTC 2024 -- Thu May  2 05:41:58 Australia 2024
