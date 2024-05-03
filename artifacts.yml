@@ -7,9 +7,9 @@ variables:
   # a39527149f252b0690be7261eb813b0d7df9373c
   dante_build_id: '938766'
 
-  # virgil 20240502.5
-  # Thu May  2 05:41:58 UTC 2024 -- Thu May  2 05:41:58 Australia 2024
+  # virgil 20240503.5
+  # Thu May  2 23:28:05 UTC 2024 -- Thu May  2 23:28:05 Australia 2024
   #
-  # Merged PR 22689: Apply old IP on new 77 node
-  # f287037bcf373b9a7a60f7797d880b7fe7e24b30
-  virgil_build_id: '938674'
+  # Merge pull request 22711 from virgil_python_upgrade into master
+  # 230ef017b76219f291069dae8849ca82e07a3552
+  virgil_build_id: '939501'
