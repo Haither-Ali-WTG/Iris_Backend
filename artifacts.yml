@@ -7,9 +7,9 @@ variables:
   # 7f8a40679c4ba8b65fd5f1e1fb937bbcf5f47e9f
   dante_build_id: '939554'
 
-  # virgil 20240503.5
-  # Thu May  2 23:28:05 UTC 2024 -- Thu May  2 23:28:05 Australia 2024
+  # virgil 20240503.12
+  # Fri May  3 01:25:22 UTC 2024 -- Fri May  3 01:25:22 Australia 2024
   #
-  # Merge pull request 22711 from virgil_python_upgrade into master
-  # 230ef017b76219f291069dae8849ca82e07a3552
-  virgil_build_id: '939501'
+  # Merged PR 22728: Change 782 node to Dante ondemand
+  # 88c126557bfb4b7ef8aad52d59c86648a38057a7
+  virgil_build_id: '939638'
