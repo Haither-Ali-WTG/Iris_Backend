@@ -7,9 +7,9 @@ variables:
   # c932255738f82a456377d7ba72f209dbf146f1fe
   dante_build_id: '939783'
 
-  # virgil 20240503.12
-  # Fri May  3 01:25:22 UTC 2024 -- Fri May  3 01:25:22 Australia 2024
+  # virgil 20240503.22
+  # Fri May  3 04:02:16 UTC 2024 -- Fri May  3 04:02:16 Australia 2024
   #
-  # Merged PR 22728: Change 782 node to Dante ondemand
-  # 88c126557bfb4b7ef8aad52d59c86648a38057a7
-  virgil_build_id: '939638'
+  # Merged PR 22714: add exit5 and 6
+  # 363ae421821d7b6fd51a021241467b786080af96
+  virgil_build_id: '939854'
