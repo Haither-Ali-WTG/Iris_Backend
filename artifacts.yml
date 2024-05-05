@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240503.4
-  # Fri May  3 05:08:45 UTC 2024 -- Fri May  3 05:08:45 Australia 2024
+  # Dante Build Artifact 20240506.1
+  # Sun May  5 22:59:07 UTC 2024 -- Sun May  5 22:59:07 Australia 2024
   #
-  # Merge pull request 22757 from dante_artifact_upgrade into master
-  # 67fb767ba1e785d0faaab798a5486905a8d0db63
-  dante_build_id: '939923'
+  # Merge pull request 22778 from dante_python_upgrade into master
+  # dcf90bd6cb29de3313c2233128c4bf1a07b36294
+  dante_build_id: '942489'
 
-  # virgil 20240503.22
-  # Fri May  3 04:02:16 UTC 2024 -- Fri May  3 04:02:16 Australia 2024
+  # virgil 20240506.7
+  # Sun May  5 23:03:29 UTC 2024 -- Sun May  5 23:03:29 Australia 2024
   #
-  # Merged PR 22714: add exit5 and 6
-  # 363ae421821d7b6fd51a021241467b786080af96
-  virgil_build_id: '939854'
+  # Merged PR 22769: Add a C56 to us2-gen-001
+  # 635c79dfb70885573c70b588e3c5fb6427d7c5c2
+  virgil_build_id: '942514'
