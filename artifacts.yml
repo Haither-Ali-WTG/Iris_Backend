@@ -7,9 +7,9 @@ variables:
   # 8ad3866f28fd3c3ecedd1d9a948d4d72b09a8b7f
   dante_build_id: '943131'
 
-  # virgil 20240506.7
-  # Sun May  5 23:03:29 UTC 2024 -- Sun May  5 23:03:29 Australia 2024
+  # virgil 20240507.2
+  # Mon May  6 21:18:35 UTC 2024 -- Mon May  6 21:18:35 Australia 2024
   #
-  # Merged PR 22769: Add a C56 to us2-gen-001
-  # 635c79dfb70885573c70b588e3c5fb6427d7c5c2
-  virgil_build_id: '942514'
+  # Merged PR 22822: Swap C-00079 and C-00784 for migrating Q1-AU2
+  # 5907e9f40d3902a9220495f761736d92baf9e90e
+  virgil_build_id: '943626'
