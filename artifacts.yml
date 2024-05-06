@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240506.3
-  # Mon May  6 00:49:53 UTC 2024 -- Mon May  6 00:49:53 Australia 2024
+  # Dante Build Artifact 20240506.5
+  # Mon May  6 07:15:55 UTC 2024 -- Mon May  6 07:15:55 Australia 2024
   #
-  # Merged PR 22758: Create Pull request for automated docker images upgrade
-  # c50078babec37cb52b3e8f36f35838ecea5429db
-  dante_build_id: '942653'
+  # Merged PR 22817: Add k8s and crio version 1.30
+  # 947b9850ad9e0dc108a0d8fe46c02f962e40a9d1
+  dante_build_id: '943054'
 
   # virgil 20240506.7
   # Sun May  5 23:03:29 UTC 2024 -- Sun May  5 23:03:29 Australia 2024
