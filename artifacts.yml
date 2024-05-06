@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240506.5
-  # Mon May  6 07:15:55 UTC 2024 -- Mon May  6 07:15:55 Australia 2024
+  # Dante Build Artifact 20240506.6
+  # Mon May  6 08:43:14 UTC 2024 -- Mon May  6 08:43:14 Australia 2024
   #
-  # Merged PR 22817: Add k8s and crio version 1.30
-  # 947b9850ad9e0dc108a0d8fe46c02f962e40a9d1
-  dante_build_id: '943054'
+  # Merged PR 22812: Disable "become: true" from a task delegated to localhost (agent)
+  # 8ad3866f28fd3c3ecedd1d9a948d4d72b09a8b7f
+  dante_build_id: '943131'
 
   # virgil 20240506.7
   # Sun May  5 23:03:29 UTC 2024 -- Sun May  5 23:03:29 Australia 2024
