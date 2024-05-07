@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240507.1
-  # Tue May  7 00:09:41 UTC 2024 -- Tue May  7 00:09:41 Australia 2024
+  # Dante Build Artifact 20240507.2
+  # Tue May  7 02:11:23 UTC 2024 -- Tue May  7 02:11:23 Australia 2024
   #
-  # Merged PR 22821: Publish PR for every new docker image built
-  # ce4168bb6f806a891fb07d68b179edfa75df67c9
-  dante_build_id: '943796'
+  # Merge pull request 22859 from dante_artifact_upgrade into master
+  # 8a053c04804092c24b9a3f9223cc9828f3404c74
+  dante_build_id: '943955'
 
   # virgil 20240507.5
   # Mon May  6 23:40:04 UTC 2024 -- Mon May  6 23:40:04 Australia 2024
