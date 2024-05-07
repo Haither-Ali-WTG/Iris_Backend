@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240506.6
-  # Mon May  6 08:43:14 UTC 2024 -- Mon May  6 08:43:14 Australia 2024
+  # Dante Build Artifact 20240507.1
+  # Tue May  7 00:09:41 UTC 2024 -- Tue May  7 00:09:41 Australia 2024
   #
-  # Merged PR 22812: Disable "become: true" from a task delegated to localhost (agent)
-  # 8ad3866f28fd3c3ecedd1d9a948d4d72b09a8b7f
-  dante_build_id: '943131'
+  # Merged PR 22821: Publish PR for every new docker image built
+  # ce4168bb6f806a891fb07d68b179edfa75df67c9
+  dante_build_id: '943796'
 
   # virgil 20240507.5
   # Mon May  6 23:40:04 UTC 2024 -- Mon May  6 23:40:04 Australia 2024
