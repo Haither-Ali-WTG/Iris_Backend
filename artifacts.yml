@@ -7,9 +7,9 @@ variables:
   # 8a053c04804092c24b9a3f9223cc9828f3404c74
   dante_build_id: '943955'
 
-  # virgil 20240507.5
-  # Mon May  6 23:40:04 UTC 2024 -- Mon May  6 23:40:04 Australia 2024
+  # virgil 20240507.8
+  # Tue May  7 04:39:03 UTC 2024 -- Tue May  7 04:39:03 Australia 2024
   #
-  # Merge pull request 22849 from virgil_python_upgrade into master
-  # fd29faa878433a3aa19f27ca5e95188c8866d7fe
-  virgil_build_id: '943751'
+  # Merged PR 22882: updated 0043/0044 swp19/20 to native vlan 1033
+  # 80a9f72bb91441a5d4b25d34a826abddeb71bc43
+  virgil_build_id: '944105'
