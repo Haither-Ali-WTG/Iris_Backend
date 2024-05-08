@@ -7,9 +7,9 @@ variables:
   # eef9532c9b12e9ac42f1a0bb3b32655cd8cad98b
   dante_build_id: '945581'
 
-  # virgil 20240508.11
-  # Wed May  8 06:01:50 UTC 2024 -- Wed May  8 06:01:50 Australia 2024
+  # virgil 20240509.3
+  # Wed May  8 20:45:55 UTC 2024 -- Wed May  8 20:45:55 Australia 2024
   #
-  # Merged PR 22971: add new underlay subnet and EXITs in DE1
-  # b2f043a1957458dcc086a3d3831cf1538ad489b1
-  virgil_build_id: '945508'
+  # Merged PR 22977: Swap C-00081 and C-00786 for migrating Q1-AU2
+  # 9f15da4290f256d215fb9440ea05f64dbb6e4628
+  virgil_build_id: '946226'
