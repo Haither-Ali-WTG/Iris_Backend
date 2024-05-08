@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240508.1
-  # Tue May  7 22:25:56 UTC 2024 -- Tue May  7 22:25:56 Australia 2024
+  # Dante Build Artifact 20240508.2
+  # Wed May  8 00:05:49 UTC 2024 -- Wed May  8 00:05:49 Australia 2024
   #
-  # Merge pull request 22925 from dante_artifact_upgrade into master
-  # 95531520ebc9f9b80bcefa203410ec7bffa8d0db
-  dante_build_id: '944927'
+  # Merged PR 22880: Added ztp and s3_proxy nginx server tests
+  # 1e33953c8e2455a83d16704070a89f392414a555
+  dante_build_id: '945062'
 
-  # virgil 20240508.1
-  # Tue May  7 21:17:43 UTC 2024 -- Tue May  7 21:17:43 Australia 2024
+  # virgil 20240508.3
+  # Wed May  8 00:22:55 UTC 2024 -- Wed May  8 00:22:55 Australia 2024
   #
-  # Merged PR 22895: Swap C-00080 and C-00785 for migrating Q1-AU2
-  # 964949631c73e5b32bab5ef96cc35ec3f4b48ca6
-  virgil_build_id: '944875'
+  # Merged PR 22597: EnvaseTailwindVlanExpansion
+  # bf8e90831af91fef07d219e7bab5eb288e4fe6c0
+  virgil_build_id: '945092'
