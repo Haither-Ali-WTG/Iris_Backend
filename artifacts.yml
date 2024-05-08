@@ -7,9 +7,9 @@ variables:
   # 5ae96f938b90d2820ab37df532efde37f71b8025
   dante_build_id: '946287'
 
-  # virgil 20240509.3
-  # Wed May  8 20:45:55 UTC 2024 -- Wed May  8 20:45:55 Australia 2024
+  # virgil 20240509.5
+  # Wed May  8 22:49:33 UTC 2024 -- Wed May  8 22:49:33 Australia 2024
   #
-  # Merged PR 22977: Swap C-00081 and C-00786 for migrating Q1-AU2
-  # 9f15da4290f256d215fb9440ea05f64dbb6e4628
-  virgil_build_id: '946226'
+  # Merge pull request 23012 from virgil_python_upgrade into master
+  # 333db451c61e3185a76dec9ef1a8869595625ed9
+  virgil_build_id: '946361'
