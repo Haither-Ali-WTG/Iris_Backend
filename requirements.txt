@@ -28,13 +28,13 @@ attrs==23.2.0
     #   referencing
 authlib==1.3.0
     # via safety
-awscli==1.32.99
+awscli==1.32.100
     # via -r requirements.in
 bandit==1.7.8
     # via -r requirements.in
 black==24.4.2
     # via ansible-lint
-botocore==1.34.99
+botocore==1.34.100
     # via
     #   awscli
     #   s3transfer
@@ -236,7 +236,7 @@ tomli==2.0.1
     #   mypy
     #   pylint
     #   pytest
-tomlkit==0.12.4
+tomlkit==0.12.5
     # via
     #   pylint
     #   yq
