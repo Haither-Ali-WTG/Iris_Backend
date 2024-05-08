@@ -7,9 +7,9 @@ variables:
   # b9c5ac92d860ba54f387c513ac39e0534ae283df
   dante_build_id: '945451'
 
-  # virgil 20240508.5
-  # Wed May  8 04:19:33 UTC 2024 -- Wed May  8 04:19:33 Australia 2024
+  # virgil 20240508.11
+  # Wed May  8 06:01:50 UTC 2024 -- Wed May  8 06:01:50 Australia 2024
   #
-  # Merged PR 22963: WI00742897 updated 0043/0044 swp21/22 to native vlan 1033
-  # 0ace7becbac3bd5ee786d92c22e771aab551f01a
-  virgil_build_id: '945379'
+  # Merged PR 22971: add new underlay subnet and EXITs in DE1
+  # b2f043a1957458dcc086a3d3831cf1538ad489b1
+  virgil_build_id: '945508'
