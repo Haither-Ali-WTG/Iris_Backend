@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240508.2
-  # Wed May  8 00:05:49 UTC 2024 -- Wed May  8 00:05:49 Australia 2024
+  # Dante Build Artifact 20240508.3
+  # Wed May  8 00:54:38 UTC 2024 -- Wed May  8 00:54:38 Australia 2024
   #
-  # Merged PR 22880: Added ztp and s3_proxy nginx server tests
-  # 1e33953c8e2455a83d16704070a89f392414a555
-  dante_build_id: '945062'
+  # Merge pull request 22918 from dante_python_upgrade into master
+  # f8caefafeef2389880b7d08b75b2c4e6522ca933
+  dante_build_id: '945129'
 
   # virgil 20240508.3
   # Wed May  8 00:22:55 UTC 2024 -- Wed May  8 00:22:55 Australia 2024
