@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240508.4
-  # Wed May  8 02:09:08 UTC 2024 -- Wed May  8 02:09:08 Australia 2024
+  # Dante Build Artifact 20240508.5
+  # Wed May  8 03:20:28 UTC 2024 -- Wed May  8 03:20:28 Australia 2024
   #
-  # Merge pull request 22941 from dante_artifact_upgrade into master
-  # 326303db603a29f9242ced8aeb7a02ce76d8b638
-  dante_build_id: '945221'
+  # Merged PR 22940: Added checks for squid and styx
+  # 7a5dc511006947166c8268ff186542ef69e26949
+  dante_build_id: '945302'
 
-  # virgil 20240508.3
-  # Wed May  8 00:22:55 UTC 2024 -- Wed May  8 00:22:55 Australia 2024
+  # virgil 20240508.5
+  # Wed May  8 04:19:33 UTC 2024 -- Wed May  8 04:19:33 Australia 2024
   #
-  # Merged PR 22597: EnvaseTailwindVlanExpansion
-  # bf8e90831af91fef07d219e7bab5eb288e4fe6c0
-  virgil_build_id: '945092'
+  # Merged PR 22963: WI00742897 updated 0043/0044 swp21/22 to native vlan 1033
+  # 0ace7becbac3bd5ee786d92c22e771aab551f01a
+  virgil_build_id: '945379'
