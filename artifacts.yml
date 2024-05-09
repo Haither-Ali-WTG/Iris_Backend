@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240509.6
-  # Thu May  9 05:25:09 UTC 2024 -- Thu May  9 05:25:09 Australia 2024
+  # Dante Build Artifact 20240509.7
+  # Thu May  9 06:09:22 UTC 2024 -- Thu May  9 06:09:22 Australia 2024
   #
-  # Merge pull request 23063 from automatic_nginx_image_upgrade into master
-  # a15199ec5002de20587519116febe6f161ff674c
-  dante_build_id: '946873'
+  # Merge pull request 23065 from automatic_styx_image_upgrade into master
+  # 64a24829b4a9e2bc5e093b1e1921e4f4976aa8b9
+  dante_build_id: '946946'
 
   # virgil 20240509.11
   # Thu May  9 05:25:49 UTC 2024 -- Thu May  9 05:25:49 Australia 2024
