@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240509.5
-  # Thu May  9 04:27:28 UTC 2024 -- Thu May  9 04:27:28 Australia 2024
+  # Dante Build Artifact 20240509.6
+  # Thu May  9 05:25:09 UTC 2024 -- Thu May  9 05:25:09 Australia 2024
   #
-  # Merged PR 23051: Added apt_mirror parameter to Minos
-  # d919fae43f4d0295e96a5103abe64a2ef0f6700b
-  dante_build_id: '946789'
+  # Merge pull request 23063 from automatic_nginx_image_upgrade into master
+  # a15199ec5002de20587519116febe6f161ff674c
+  dante_build_id: '946873'
 
-  # virgil 20240509.5
-  # Wed May  8 22:49:33 UTC 2024 -- Wed May  8 22:49:33 Australia 2024
+  # virgil 20240509.11
+  # Thu May  9 05:25:49 UTC 2024 -- Thu May  9 05:25:49 Australia 2024
   #
-  # Merge pull request 23012 from virgil_python_upgrade into master
-  # 333db451c61e3185a76dec9ef1a8869595625ed9
-  virgil_build_id: '946361'
+  # Merged PR 22999: Virgil - Flatten and split Kafka queues
+  # 57619d6a2a404a9550b04a5ccd11733267580314
+  virgil_build_id: '946874'
