@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240509.4
-  # Thu May  9 01:42:34 UTC 2024 -- Thu May  9 01:42:34 Australia 2024
+  # Dante Build Artifact 20240509.5
+  # Thu May  9 04:27:28 UTC 2024 -- Thu May  9 04:27:28 Australia 2024
   #
-  # Merged PR 22998: Dante - Put back virgil-overrides and fix error -- 2/2
-  # 66a0b7afa84bd30e081bc165a14812f096be6fc9
-  dante_build_id: '946604'
+  # Merged PR 23051: Added apt_mirror parameter to Minos
+  # d919fae43f4d0295e96a5103abe64a2ef0f6700b
+  dante_build_id: '946789'
 
   # virgil 20240509.5
   # Wed May  8 22:49:33 UTC 2024 -- Wed May  8 22:49:33 Australia 2024
