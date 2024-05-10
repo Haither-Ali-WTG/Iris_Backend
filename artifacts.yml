@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240510.2
-  # Fri May 10 00:38:49 UTC 2024 -- Fri May 10 00:38:49 Australia 2024
+  # Dante Build Artifact 20240510.3
+  # Fri May 10 01:27:23 UTC 2024 -- Fri May 10 01:27:23 Australia 2024
   #
-  # Merged PR 23062: Cleanup old automatically built docker images
-  # d4b2304462539116f937701d04fbc9a014c318f0
-  dante_build_id: '947833'
+  # Merged PR 23121: Schedule docker images upgrade monthly on 2nd
+  # 3d61e1d698c57848fa2cbe40ad21f7d1898e5ed8
+  dante_build_id: '947900'
 
   # virgil 20240510.10
   # Fri May 10 00:13:00 UTC 2024 -- Fri May 10 00:13:00 Australia 2024
