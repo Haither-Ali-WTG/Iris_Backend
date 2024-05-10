@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240510.4
-  # Fri May 10 02:45:38 UTC 2024 -- Fri May 10 02:45:38 Australia 2024
+  # Dante Build Artifact 20240510.5
+  # Fri May 10 06:07:18 UTC 2024 -- Fri May 10 06:07:18 Australia 2024
   #
-  # Merge pull request 23114 from dante_artifact_upgrade into master
-  # 3291c983e2eb4ee5b36d5eb61faf2f4b8369b3db
-  dante_build_id: '948014'
+  # Merge pull request 23152 from dante_artifact_upgrade into master
+  # 872a40b2d887643c8655dc517b28f5d3269a0a37
+  dante_build_id: '948223'
 
-  # virgil 20240510.21
-  # Fri May 10 05:14:28 UTC 2024 -- Fri May 10 05:14:28 Australia 2024
+  # virgil 20240510.23
+  # Fri May 10 07:59:54 UTC 2024 -- Fri May 10 07:59:54 Australia 2024
   #
-  # Merged PR 23144: Changed Cert Connect Queue to Q1
-  # 57abbad395f915b4cf53f7783604bf7b02b90826
-  virgil_build_id: '948170'
+  # Merged PR 23055: teardown s3 bucket PRJ00046289_PRJ00046294_PRJ00046430
+  # b4d5dbe595b650abdda41f8cac526abed8bea657
+  virgil_build_id: '948318'
