@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240513.3
-  # Mon May 13 01:16:35 UTC 2024 -- Mon May 13 01:16:35 Australia 2024
+  # Dante Build Artifact 20240514.1
+  # Mon May 13 22:18:44 UTC 2024 -- Mon May 13 22:18:44 Australia 2024
   #
-  # Merge pull request 23180 from automatic_squid_image_upgrade into master
-  # 18e7fbe2aaa82d25bb3d9ed733a5fa50e8727c70
-  dante_build_id: '950943'
+  # Merged PR 23208: WI00737156 - Develop the CMS client to download the keys and certificates [Key Vault Part]
+  # 5c05f2777e153f0be9270489778920ea77f2158b
+  dante_build_id: '951899'
 
   # virgil 20240510.23
   # Fri May 10 07:59:54 UTC 2024 -- Fri May 10 07:59:54 Australia 2024
