@@ -131,7 +131,7 @@ def main():
     server_list = args.server_list.lower().split(',')
 
     if not os.path.exists(args.output_path):
-        os.mkdir(args.output_path)
+        os.makedirs(args.output_path)
 
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=args.threads)
     results = []
