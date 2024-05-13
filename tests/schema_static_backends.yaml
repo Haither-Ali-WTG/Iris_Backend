@@ -28,4 +28,5 @@ server:
   name: regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')
   ip: ip(required=True)
   port: int(min=1, max=65535)
+  check_port: int(min=1, max=65535, required=False)
   settings: regex('^[a-z0-9 ]+$', name='additional server options', required=False)

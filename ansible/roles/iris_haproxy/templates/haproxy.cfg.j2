@@ -306,7 +306,12 @@ server {{ server.name }}
 8081 check
 {%       endif -%}
 {%-    else %}
- {{ server.ip }}:{{ server.port }} {{ server.settings | default('check') }}
+ {{ server.ip }}:{{ server.port }}
+{%-      if server.check_port is defined %}
+ check port {{ server.check_port }} {{ server.settings | default('') }}
+{%-      else %}
+ {{ server.settings | default('check') }}
+{%-      endif %}
 {%     endif %}
 {%   endfor %}
 
