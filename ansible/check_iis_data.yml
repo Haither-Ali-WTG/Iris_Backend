@@ -25,6 +25,7 @@
       file:
         path: iis_sites
         state: directory
+        mode: u=rwx
 
     - name: Create temporary directory
       tempfile:
