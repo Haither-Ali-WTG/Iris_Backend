@@ -6,8 +6,8 @@
     azure_devops_token: "{{ lookup('env', 'azure_devops_token') }}"
   uri:
     url: >-
-        https://dev.azure.com/{{ pipeline.organization }}/{{ pipeline.project -}}
-        /_apis/pipelines/{{ pipeline.id }}/runs?api-version=7.0
+      https://dev.azure.com/{{ pipeline.organization }}/{{ pipeline.project -}}
+      /_apis/pipelines/{{ pipeline.id }}/runs?api-version=7.0
     method: POST
     body: "{{ lookup('template', 'azure_pipelines_api.json.j2') }}"
     body_format: json
