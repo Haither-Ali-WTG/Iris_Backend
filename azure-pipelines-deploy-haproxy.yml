@@ -2,14 +2,6 @@
 trigger:
   - master
 
-schedules:
-  - cron: "*/15 * * * *"
-    displayName: Every 15 minutes deployment run for dynamic backends
-    always: true
-    branches:
-      include:
-        - master
-
 variables:
   - template: artifacts.yml
   - name: user
