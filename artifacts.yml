@@ -7,9 +7,9 @@ variables:
   # b096fa5d8bd4e71e3690440d45f908146f1902da
   dante_build_id: '952677'
 
-  # virgil 20240514.7
-  # Tue May 14 07:02:30 UTC 2024 -- Tue May 14 07:02:30 Australia 2024
+  # virgil 20240515.3
+  # Tue May 14 22:04:59 UTC 2024 -- Tue May 14 22:04:59 Australia 2024
   #
-  # Merged PR 23281: Virgil - Remove safety exception continueOnError and put in a disable for 67599
-  # 25310e0b75351fdb968a5fee1eb9845a2c4810a8
-  virgil_build_id: '952624'
+  # Merged PR 23294: Remove decommissioned physical SQL ports and add OOB hypervisor standalone
+  # 32dcec17da2ab908a7c554ef98e899df4e98825a
+  virgil_build_id: '953266'
