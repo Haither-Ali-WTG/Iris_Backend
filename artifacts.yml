@@ -7,9 +7,9 @@ variables:
   # feacdb131efd36b0b47245c371f188b68681fa2e
   dante_build_id: '952545'
 
-  # virgil 20240510.23
-  # Fri May 10 07:59:54 UTC 2024 -- Fri May 10 07:59:54 Australia 2024
+  # virgil 20240514.7
+  # Tue May 14 07:02:30 UTC 2024 -- Tue May 14 07:02:30 Australia 2024
   #
-  # Merged PR 23055: teardown s3 bucket PRJ00046289_PRJ00046294_PRJ00046430
-  # b4d5dbe595b650abdda41f8cac526abed8bea657
-  virgil_build_id: '948318'
+  # Merged PR 23281: Virgil - Remove safety exception continueOnError and put in a disable for 67599
+  # 25310e0b75351fdb968a5fee1eb9845a2c4810a8
+  virgil_build_id: '952624'
