@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240514.7
-  # Tue May 14 04:29:21 UTC 2024 -- Tue May 14 04:29:21 Australia 2024
+  # Dante Build Artifact 20240514.8
+  # Tue May 14 06:15:59 UTC 2024 -- Tue May 14 06:15:59 Australia 2024
   #
-  # Merged PR 23232: Replace the source of the certificate from the original Key Vault to CMS managed Key Vault.
-  # 4625134f5fea05ac52a7b067ae8376eab509292d
-  dante_build_id: '952390'
+  # Merged PR 23263: Dante - Comment out overrides inventory until we can deploy changes
+  # feacdb131efd36b0b47245c371f188b68681fa2e
+  dante_build_id: '952545'
 
   # virgil 20240510.23
   # Fri May 10 07:59:54 UTC 2024 -- Fri May 10 07:59:54 Australia 2024
