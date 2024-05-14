@@ -312,7 +312,7 @@ server {{ server.name }}
 {%-      else %}
  {{ server.settings | default('check') }}
 {%-      endif %}
-{%     endif %}
+{%     endif +%}
 {%   endfor %}
 
 {% endif %}
