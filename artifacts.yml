@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240515.2
-  # Wed May 15 04:06:35 UTC 2024 -- Wed May 15 04:06:35 Australia 2024
+  # Dante Build Artifact 20240515.3
+  # Wed May 15 05:43:26 UTC 2024 -- Wed May 15 05:43:26 Australia 2024
   #
-  # Merge pull request 23309 from dante_artifact_upgrade into master
-  # be3e8f8ab0ea335f036e33f6cbd3f9f456274673
-  dante_build_id: '953593'
+  # Merged PR 23336: Support the PFX deployment on Session Host
+  # f79d98458e418609bc0b79632a7bf28ae60f2c2f
+  dante_build_id: '953681'
 
   # virgil 20240515.6
   # Wed May 15 03:13:36 UTC 2024 -- Wed May 15 03:13:36 Australia 2024
