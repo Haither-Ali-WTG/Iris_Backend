@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240514.9
-  # Tue May 14 08:07:47 UTC 2024 -- Tue May 14 08:07:47 Australia 2024
+  # Dante Build Artifact 20240515.1
+  # Wed May 15 00:48:16 UTC 2024 -- Wed May 15 00:48:16 Australia 2024
   #
-  # Merge pull request 23287 from dante_artifact_upgrade into master
-  # b096fa5d8bd4e71e3690440d45f908146f1902da
-  dante_build_id: '952677'
+  # Merge pull request 23218 from dante_python_upgrade into master
+  # aa1e6bdb91b9535474d2e618fff9cfdc88094a0b
+  dante_build_id: '953399'
 
-  # virgil 20240515.3
-  # Tue May 14 22:04:59 UTC 2024 -- Tue May 14 22:04:59 Australia 2024
+  # virgil 20240515.6
+  # Wed May 15 03:13:36 UTC 2024 -- Wed May 15 03:13:36 Australia 2024
   #
-  # Merged PR 23294: Remove decommissioned physical SQL ports and add OOB hypervisor standalone
-  # 32dcec17da2ab908a7c554ef98e899df4e98825a
-  virgil_build_id: '953266'
+  # Merged PR 23323: Virgil - Virgil Python Upgrade (manual) put exceptions and change to a call to use get
+  # 3f607d326f35584a596b768374bb9e99c1c69e5e
+  virgil_build_id: '953539'
