@@ -1,7 +1,8 @@
 ---
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: false
-  health_check: /Glow/wtg/ready
+  http_health_check:
+    enabled: false
   check_expect: '200'
   port: 80
   cookie:
@@ -11,8 +12,8 @@
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: false
-  health_check: /Portals/wtg/ready
-  check_expect: '200'
+  http_health_check:
+    enabled: false
   port: 80
   cookie:
     enabled: true
@@ -22,8 +23,8 @@
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp-tweb'
   encryption: true
-  health_check: "/"
-  check_expect: '200|401|403|302|405|500'
+  http_health_check:
+    enabled: false
   port: 443
   cookie:
     enabled: true
@@ -33,8 +34,8 @@
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp'
   encryption: false
-  health_check: "/"
-  check_expect: '200|401|403|302|405|500'
+  http_health_check:
+    enabled: false
   port: 80
   balance: first
   cookie:

@@ -5,8 +5,7 @@ website:
   name_regex: include('regex')
   name_exclude_regex: include('regex', required=False)
   server_regex: include('regex', required=False)
-  health_check: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
-  check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)
+  http_health_check: any(include('healthcheck_disabled'), include('healthcheck_enabled'))
   balance: enum('leastconn', 'source', 'first', required=False)
   cookie: any(include('dynamic_cookie_on'), include('dynamic_cookie_off'))
   encryption: bool(required=False)
@@ -14,10 +13,20 @@ website:
   port: include('port')
   maintenance_page: regex(r'^[a-z0-9_]+\.html$', name='sorry page filename', required=False)
   name_suffix: any(const(''), regex('^-[a-z0-9]+$', name='site name suffix'))
-  hdr_healthcheck_https: bool(required=False)
 ---
 dynamic_cookie_off:
   enabled: const(False)
 dynamic_cookie_on:
   enabled: const(True)
   name: regex('^[A-Z][A-Z0-9]+$', name='uppercase cookie name')
+---
+healthcheck_disabled:
+  enabled: const(False)
+  http_path: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path', required=False)
+  xforwardedproto_header: bool(required=False)
+  check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)
+healthcheck_enabled:
+  enabled: const(True)
+  http_path: regex('^(/|(/[a-zA-Z0-9?=&_-]+)+)$', name='health check path')
+  xforwardedproto_header: bool(required=False)
+  check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)

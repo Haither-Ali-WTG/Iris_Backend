@@ -1,7 +1,9 @@
 ---
 sandtsg-token-based.wtg.zone:
   clustered_instances: [au2sandinternalrdg]
-  health_check: /
+  http_health_check:
+    enabled: true
+    http_path: /
   encryption: false
   cookie:
     name: RDPWEB
