@@ -118,6 +118,7 @@ class TestVirgilCrosscheck(TestCase):
                                 for name in config["machines"]
                             )
                         }
+                        # pylint: disable=unpacking-non-sequence
                         virgil_vlan, subnet = one(
                             virgil_vlans,
                             too_long=ValueError(
