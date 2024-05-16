@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240515.3
-  # Wed May 15 05:43:26 UTC 2024 -- Wed May 15 05:43:26 Australia 2024
+  # Dante Build Artifact 20240516.1
+  # Thu May 16 00:26:33 UTC 2024 -- Thu May 16 00:26:33 Australia 2024
   #
-  # Merged PR 23336: Support the PFX deployment on Session Host
-  # f79d98458e418609bc0b79632a7bf28ae60f2c2f
-  dante_build_id: '953681'
+  # Merge pull request 23357 from dante_artifact_upgrade into master
+  # e233cf2ac1b162d55794fab286171654c2f7c7e4
+  dante_build_id: '954509'
 
-  # virgil 20240515.6
-  # Wed May 15 03:13:36 UTC 2024 -- Wed May 15 03:13:36 Australia 2024
+  # virgil 20240516.2
+  # Wed May 15 23:32:06 UTC 2024 -- Wed May 15 23:32:06 Australia 2024
   #
-  # Merged PR 23323: Virgil - Virgil Python Upgrade (manual) put exceptions and change to a call to use get
-  # 3f607d326f35584a596b768374bb9e99c1c69e5e
-  virgil_build_id: '953539'
+  # Merge pull request 23295 from virgil_python_upgrade into master
+  # d39637b3c0811c74f676d60a70beafb903f85460
+  virgil_build_id: '954461'
