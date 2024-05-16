@@ -7,9 +7,9 @@ variables:
   # e233cf2ac1b162d55794fab286171654c2f7c7e4
   dante_build_id: '954509'
 
-  # virgil 20240516.2
-  # Wed May 15 23:32:06 UTC 2024 -- Wed May 15 23:32:06 Australia 2024
+  # virgil 20240517.9
+  # Thu May 16 21:38:53 UTC 2024 -- Thu May 16 21:38:53 Australia 2024
   #
-  # Merge pull request 23295 from virgil_python_upgrade into master
-  # d39637b3c0811c74f676d60a70beafb903f85460
-  virgil_build_id: '954461'
+  # Merged PR 23381: Add port config for new Cisco MDS9710 management ports.
+  # 0ab66557e3fe7dbb2154ffd937007f45162254b3
+  virgil_build_id: '955509'
