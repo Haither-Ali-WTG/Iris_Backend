@@ -1,0 +1,21 @@
+---
+# TODO: Refactor the 'finish_run' role within Dante to make it a generic role
+- name: Trigger IRIS deployment pipeline
+  vars:
+    pipeline: "{{ pipeline_info.pipeline }}"
+    azure_devops_token: "{{ lookup('env', 'azure_devops_token') }}"
+  uri:
+    url: >-
+      https://dev.azure.com/{{ pipeline.organization }}/{{ pipeline.project -}}
+      /_apis/pipelines/{{ pipeline.id }}/runs?api-version=7.0
+    method: POST
+    body: "{{ lookup('template', 'azure_pipelines_api.json.j2') }}"
+    body_format: json
+    return_content: yes
+    headers:
+      Authorization: "Bearer {{ azure_devops_token }}"
+    status_code:
+      - 200
+    use_proxy: "{{ use_proxy | default(true) }}"
+  no_log: true
+  delegate_to: localhost

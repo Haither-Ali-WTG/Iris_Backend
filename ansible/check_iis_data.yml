@@ -21,6 +21,12 @@
 - name: Download IIS data and check
   hosts: localhost
   tasks:
+    - name: Create iis_sites if collect_sites didn't create it
+      file:
+        path: iis_sites
+        state: directory
+        mode: u=rwx
+
     - name: Create temporary directory
       tempfile:
         state: directory
@@ -40,7 +46,7 @@
       changed_when: true
       ignore_errors: yes
 
-    - name: TODO trigger IRIS deployment
-      debug:
-        msg: "{{ diff_output.stdout }}"
+    - name: Trigger IRIS deployment pipeline
+      include_role:
+        name: trigger_iris_pipeline
       when: diff_output.rc != 0
