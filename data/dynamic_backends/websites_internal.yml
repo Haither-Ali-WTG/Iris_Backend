@@ -3,7 +3,6 @@
   encryption: false
   http_health_check:
     enabled: false
-  check_expect: '200'
   port: 80
   cookie:
     enabled: true

@@ -1,6 +1,8 @@
 ---
 testtcp.sand.wtg.zone:
   clustered_instances: [au2sandinternaltcp]
+  http_health_check:
+    enabled: false
   servers:
     - name: AU2SP-SISS-401
       ip: 10.2.118.25
