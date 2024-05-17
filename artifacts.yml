@@ -7,9 +7,9 @@ variables:
   # 938d5d4a0c822676381950dc045fae2987f0a42d
   dante_build_id: '955566'
 
-  # virgil 20240517.9
-  # Thu May 16 21:38:53 UTC 2024 -- Thu May 16 21:38:53 Australia 2024
+  # virgil 20240517.20
+  # Fri May 17 00:11:27 UTC 2024 -- Fri May 17 00:11:27 Australia 2024
   #
-  # Merged PR 23381: Add port config for new Cisco MDS9710 management ports.
-  # 0ab66557e3fe7dbb2154ffd937007f45162254b3
-  virgil_build_id: '955509'
+  # Merged PR 23395: Added cumulus 5.8 to virgil known OS list
+  # 579deb96fabd32863c76c76751c9de1dbd870bed
+  virgil_build_id: '955677'
