@@ -7,9 +7,9 @@ variables:
   # bfff02e96a443a34c813e15264fcf1770ed76825
   dante_build_id: '955906'
 
-  # virgil 20240517.20
-  # Fri May 17 00:11:27 UTC 2024 -- Fri May 17 00:11:27 Australia 2024
+  # virgil 20240517.24
+  # Fri May 17 11:06:28 UTC 2024 -- Fri May 17 11:06:28 Australia 2024
   #
-  # Merged PR 23395: Added cumulus 5.8 to virgil known OS list
-  # 579deb96fabd32863c76c76751c9de1dbd870bed
-  virgil_build_id: '955677'
+  # Merged PR 23174: Teardown S3 Buckets - 37 teardowns
+  # f1ffc07892030f4c8fbc7a5924fa662c8a4d91af
+  virgil_build_id: '956365'
