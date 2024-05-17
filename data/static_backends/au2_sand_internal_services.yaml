@@ -1,7 +1,9 @@
 ---
 wi00625171-wiserates.testrig3.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TESTSITE001
@@ -16,7 +18,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5001.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -31,7 +35,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5002.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -46,7 +52,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5003.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -61,7 +69,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5004.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -76,7 +86,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5005.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -91,7 +103,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5006.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -106,7 +120,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5007.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -121,7 +137,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5008.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -136,7 +154,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5009.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -151,7 +171,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 5010.bolero.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -166,7 +188,9 @@ wi00625171-wiserates.testrig3.sand.wtg.zone:
 
 identity-temp-staging.wisetechglobal.com:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   cookie:
     name: TVSP
@@ -181,7 +205,9 @@ identity-temp-staging.wisetechglobal.com:
 
 sandwcatoken.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /
+  http_health_check:
+    enabled: true
+    http_path: /
   encryption: false
   servers:
     - name: AU2SP-SWFE-1
@@ -193,7 +219,9 @@ sandwcatoken.wtg.zone:
 
 cprportal-uat.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/status
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
   encryption: false
   servers:
     - name: AU2SP-SIIS-405A
@@ -205,7 +233,9 @@ cprportal-uat.sand.wtg.zone:
 
 gbccspoutbound-test.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/status
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
   encryption: false
   servers:
     - name: AU2SP-SIIS-403
@@ -214,7 +244,9 @@ gbccspoutbound-test.sand.wtg.zone:
 
 testwca.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   servers:
     - name: au2co-swca-402
@@ -223,7 +255,9 @@ testwca.wtg.zone:
 
 testwcatoken.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   servers:
     - name: au2co-swca-402
@@ -232,7 +266,9 @@ testwcatoken.wtg.zone:
 
 testwcabackend.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   servers:
     - name: au2co-swca-402
@@ -241,7 +277,9 @@ testwcabackend.wtg.zone:
 
 testwcabackendpassword.wtg.zone:
   clustered_instances: [au2sandinternal1]
-  health_check: /wtg/ready
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   encryption: false
   servers:
     - name: au2co-swca-402

@@ -3,7 +3,9 @@ app-test.borderwise.com:
   clustered_instances: [au1prodfrontend1]
   cookie:
     name: BOT
-  health_check: /wtg/status
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
   servers:
     - name: SYDWP-SBOT-3
       ip: 10.61.179.150
@@ -11,7 +13,9 @@ app-test.borderwise.com:
 
 fms.wisegrid.net:
   clustered_instances: [au1prodfrontend1]
-  health_check: /api/v1/airevents/ping
+  http_health_check:
+    enabled: true
+    http_path: /api/v1/airevents/ping
   encryption: true
   sorry_pages:
     - file: fms_wisegrid_sorry_404.html
@@ -25,7 +29,9 @@ fms.wisegrid.net:
 
 aucloud3.wisegrid.net:
   clustered_instances: [au1prodfrontend1]
-  health_check: /
+  http_health_check:
+    enabled: true
+    http_path: /
   encryption: true
   servers:
     - name: SYDWP-SBOT-4
@@ -34,7 +40,9 @@ aucloud3.wisegrid.net:
 
 www.cargowise.com:
   clustered_instances: [au2prodceph1]
-  health_check: /healthcheck
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
   encryption: true
   sorry_pages:
     - file: www_cargowise_sorry.html
@@ -46,7 +54,9 @@ www.cargowise.com:
 
 cargowise.com:
   clustered_instances: [au2prodceph1]
-  health_check: /healthcheck
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
   encryption: false
   servers:
     - name: SYDWP-SBOT-4

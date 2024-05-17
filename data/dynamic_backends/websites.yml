@@ -2,7 +2,9 @@
 - name_regex: glow|^www-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
-  health_check: /Glow/wtg/ready
+  http_health_check:
+    enabled: false
+    http_path: /Glow/wtg/ready
   port: 443
   balance: first
   cookie:
@@ -13,7 +15,9 @@
 - name_regex: glow|^www-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
-  health_check: /Glow/wtg/another_healthcheck
+  http_health_check:
+    enabled: false
+    http_path: /Glow/wtg/another_healthcheck
   port: 4443
   balance: first
   cookie:
@@ -23,7 +27,9 @@
 - name_regex: services|accounting|^svc-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
-  health_check: "/"
+  http_health_check:
+    enabled: false
+    http_path: "/"
   port: 443
   cookie:
     enabled: false
@@ -32,7 +38,9 @@
 - name_regex: neo-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: true
-  health_check: "/Glow/wtg/ready"
+  http_health_check:
+    enabled: false
+    http_path: "/Glow/wtg/ready"
   port: 443
   balance: first
   cookie:
@@ -43,7 +51,9 @@
 - name_regex: iris-test-
   name_exclude_regex: '\.testrig.*\.sand\.wtg\.zone$'
   encryption: false
-  health_check: "/ready"
+  http_health_check:
+    enabled: false
+    http_path: "/ready"
   port: 80
   balance: first
   cookie:
@@ -53,7 +63,9 @@
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp'
   encryption: false
-  health_check: "/"
+  http_health_check:
+    enabled: false
+    http_path: "/"
   port: 80
   balance: first
   cookie:
