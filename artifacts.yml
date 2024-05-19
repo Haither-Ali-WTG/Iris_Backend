@@ -7,9 +7,9 @@ variables:
   # f992d5e2eb9a39bb6d4eca44583c6e059cc204a2
   dante_build_id: '956419'
 
-  # virgil 20240517.24
-  # Fri May 17 11:06:28 UTC 2024 -- Fri May 17 11:06:28 Australia 2024
+  # virgil 20240520.2
+  # Sun May 19 23:07:41 UTC 2024 -- Sun May 19 23:07:41 Australia 2024
   #
-  # Merged PR 23174: Teardown S3 Buckets - 37 teardowns
-  # f1ffc07892030f4c8fbc7a5924fa662c8a4d91af
-  virgil_build_id: '956365'
+  # Merge pull request 23444 from virgil_python_upgrade into master
+  # 6c2de1696d91ecff217630676b526c8813f88146
+  virgil_build_id: '958757'
