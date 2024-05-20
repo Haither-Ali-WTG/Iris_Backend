@@ -11,4 +11,4 @@
     dest: /etc/rsyslog.d/30-iris.conf
     mode: u=rw,go=r
   become: yes
-  notify: restart rsyslog  # from the Dante SOE
+  notify: restart rsyslog  # noqa: name[casing] - from the Dante SOE
