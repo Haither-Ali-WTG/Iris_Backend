@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240517.4
-  # Fri May 17 12:07:59 UTC 2024 -- Fri May 17 12:07:59 Australia 2024
+  # Dante Build Artifact 20240520.1
+  # Sun May 19 23:48:11 UTC 2024 -- Sun May 19 23:48:11 Australia 2024
   #
-  # Merge pull request 23402 from dante_artifact_upgrade into master
-  # f992d5e2eb9a39bb6d4eca44583c6e059cc204a2
-  dante_build_id: '956419'
+  # Merge pull request 23447 from dante_python_upgrade into master
+  # 3b08373f8b7305aef5d5a98d51fc89c0ec8bf396
+  dante_build_id: '958794'
 
-  # virgil 20240520.2
-  # Sun May 19 23:07:41 UTC 2024 -- Sun May 19 23:07:41 Australia 2024
+  # virgil 20240520.5
+  # Sun May 19 23:52:42 UTC 2024 -- Sun May 19 23:52:42 Australia 2024
   #
-  # Merge pull request 23444 from virgil_python_upgrade into master
-  # 6c2de1696d91ecff217630676b526c8813f88146
-  virgil_build_id: '958757'
+  # Merged PR 23442: Replace C-00200 and C-00201 with C58s
+  # 1b5a6c92219d27f6fffbdb1efd5d8b9c4fe716c4
+  virgil_build_id: '958799'
