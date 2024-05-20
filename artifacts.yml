@@ -7,9 +7,9 @@ variables:
   # 7e5c63eb0e1409dde6eec439bc4a619e6bd462bf
   dante_build_id: '959026'
 
-  # virgil 20240520.8
-  # Mon May 20 02:03:11 UTC 2024 -- Mon May 20 02:03:11 Australia 2024
+  # virgil 20240520.22
+  # Mon May 20 09:33:35 UTC 2024 -- Mon May 20 09:33:35 Australia 2024
   #
-  # Merged PR 23473: WI00430304 - Add CNAMEs for new EYE-Test node
-  # 44a1826400903f1448606618584f94cf089dee40
-  virgil_build_id: '958973'
+  # Merged PR 23502: removed swp24 with reference to vlan1087 from LAB switches
+  # 786db1daa2ee824f45927c05d24d85f3563bd1b4
+  virgil_build_id: '959413'
