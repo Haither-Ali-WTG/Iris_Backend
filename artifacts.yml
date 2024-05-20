@@ -7,9 +7,9 @@ variables:
   # eb1f1c2dc1d420109a51e3dfbdead44acaa5141d
   dante_build_id: '958902'
 
-  # virgil 20240520.5
-  # Sun May 19 23:52:42 UTC 2024 -- Sun May 19 23:52:42 Australia 2024
+  # virgil 20240520.8
+  # Mon May 20 02:03:11 UTC 2024 -- Mon May 20 02:03:11 Australia 2024
   #
-  # Merged PR 23442: Replace C-00200 and C-00201 with C58s
-  # 1b5a6c92219d27f6fffbdb1efd5d8b9c4fe716c4
-  virgil_build_id: '958799'
+  # Merged PR 23473: WI00430304 - Add CNAMEs for new EYE-Test node
+  # 44a1826400903f1448606618584f94cf089dee40
+  virgil_build_id: '958973'
