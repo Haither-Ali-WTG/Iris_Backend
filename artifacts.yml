@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240521.4
-  # Tue May 21 04:13:48 UTC 2024 -- Tue May 21 04:13:48 Australia 2024
+  # Dante Build Artifact 20240521.5
+  # Tue May 21 05:41:47 UTC 2024 -- Tue May 21 05:41:47 Australia 2024
   #
-  # Merged PR 23428: Dante Switch - Disable ports.conf in sim and hardcode ports.conf from cumulus 5.4+
-  # 7a8c070333ca7623992496b0ab4fc6d7b4325fad
-  dante_build_id: '960361'
+  # Merge pull request 23554 from dante_artifact_upgrade into master
+  # 4a2bfbb0f51253d89255a962ecc29373f01ee832
+  dante_build_id: '960483'
 
   # virgil 20240521.6
   # Tue May 21 03:50:19 UTC 2024 -- Tue May 21 03:50:19 Australia 2024
