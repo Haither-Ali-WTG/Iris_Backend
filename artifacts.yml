@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240520.3
-  # Mon May 20 03:08:53 UTC 2024 -- Mon May 20 03:08:53 Australia 2024
+  # Dante Build Artifact 20240521.1
+  # Mon May 20 23:30:12 UTC 2024 -- Mon May 20 23:30:12 Australia 2024
   #
-  # Merge pull request 23480 from dante_artifact_upgrade into master
-  # 7e5c63eb0e1409dde6eec439bc4a619e6bd462bf
-  dante_build_id: '959026'
+  # Merge pull request 23515 from dante_python_upgrade into master
+  # b648241cc5f7cca1269307287af1db2e045fb920
+  dante_build_id: '959990'
 
-  # virgil 20240520.22
-  # Mon May 20 09:33:35 UTC 2024 -- Mon May 20 09:33:35 Australia 2024
+  # virgil 20240521.2
+  # Mon May 20 23:14:30 UTC 2024 -- Mon May 20 23:14:30 Australia 2024
   #
-  # Merged PR 23502: removed swp24 with reference to vlan1087 from LAB switches
-  # 786db1daa2ee824f45927c05d24d85f3563bd1b4
-  virgil_build_id: '959413'
+  # Merge pull request 23511 from virgil_python_upgrade into master
+  # 8a48b1b8fc8cd4f6c112f1397cfcb89e2a7c5c55
+  virgil_build_id: '959971'
