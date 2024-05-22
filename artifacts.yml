@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240522.1
-  # Tue May 21 22:48:20 UTC 2024 -- Tue May 21 22:48:20 Australia 2024
+  # Dante Build Artifact 20240522.2
+  # Wed May 22 00:30:28 UTC 2024 -- Wed May 22 00:30:28 Australia 2024
   #
-  # Merged PR 23546: Dante - Add comment about new_host
-  # 529deb52f5cfda1cac029611cfaed0e363a36570
-  dante_build_id: '961308'
+  # Merged PR 23562: Process every error in Minos logs and send detailed error message to eye
+  # 4a9c0f42fc171de4d66e36e03e3731c1378f3f5b
+  dante_build_id: '961460'
 
-  # virgil 20240521.6
-  # Tue May 21 03:50:19 UTC 2024 -- Tue May 21 03:50:19 Australia 2024
+  # virgil 20240522.8
+  # Wed May 22 00:15:02 UTC 2024 -- Wed May 22 00:15:02 Australia 2024
   #
-  # Merged PR 23545: upgrade one lab switch to 5.8
-  # 074f246836a7d9b1184ccb51d126e82dc540842b
-  virgil_build_id: '960326'
+  # Merged PR 23136: Virgil - Kafka qt0 cluster for network changes - 2/2
+  # aa2610fae89e2c0a02723d5461230d4f67193495
+  virgil_build_id: '961437'
