@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240522.2
-  # Wed May 22 00:30:28 UTC 2024 -- Wed May 22 00:30:28 Australia 2024
+  # Dante Build Artifact 20240522.3
+  # Wed May 22 01:27:27 UTC 2024 -- Wed May 22 01:27:27 Australia 2024
   #
-  # Merged PR 23562: Process every error in Minos logs and send detailed error message to eye
-  # 4a9c0f42fc171de4d66e36e03e3731c1378f3f5b
-  dante_build_id: '961460'
+  # Merge pull request 23600 from dante_artifact_upgrade into master
+  # d569c907f214f1fdf3375fd0648bb96dfdf6b9e8
+  dante_build_id: '961534'
 
   # virgil 20240522.8
   # Wed May 22 00:15:02 UTC 2024 -- Wed May 22 00:15:02 Australia 2024
