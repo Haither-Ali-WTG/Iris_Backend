@@ -7,9 +7,9 @@ variables:
   # d569c907f214f1fdf3375fd0648bb96dfdf6b9e8
   dante_build_id: '961534'
 
-  # virgil 20240522.8
-  # Wed May 22 00:15:02 UTC 2024 -- Wed May 22 00:15:02 Australia 2024
+  # virgil 20240522.10
+  # Wed May 22 01:43:41 UTC 2024 -- Wed May 22 01:43:41 Australia 2024
   #
-  # Merged PR 23136: Virgil - Kafka qt0 cluster for network changes - 2/2
-  # aa2610fae89e2c0a02723d5461230d4f67193495
-  virgil_build_id: '961437'
+  # Merged PR 23613: update os to cumulus580
+  # 034f37c50200b31811b568ebf2bcdb75437357f1
+  virgil_build_id: '961570'
