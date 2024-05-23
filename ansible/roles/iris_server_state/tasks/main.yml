@@ -15,4 +15,6 @@
     haproxy_sock_file: "/mnt/data1/containers/iris_{{ clustered_instance_name }}_{{ machine_name }}/run/haproxy.sock"
   when:
     - machine_name in hostname_list
-    - clustered_instance_name in instance_name_list or (instance_name_list | length == 1 and instance_name_list[0] == '*')
+    - >-
+      clustered_instance_name in instance_name_list
+      or (instance_name_list | length == 1 and instance_name_list[0] == '*')
