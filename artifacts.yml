@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240522.5
-  # Wed May 22 03:46:02 UTC 2024 -- Wed May 22 03:46:02 Australia 2024
+  # Dante Build Artifact 20240523.1
+  # Thu May 23 01:08:15 UTC 2024 -- Thu May 23 01:08:15 Australia 2024
   #
-  # Merge pull request 23622 from dante_artifact_upgrade into master
-  # 473bd61526f2c4213940455e526a54ec0fb703dc
-  dante_build_id: '961728'
+  # Merge pull request 23652 from dante_python_upgrade into master
+  # 3a8ebba3698ffc353bd31d27142d00d93feef4d3
+  dante_build_id: '962783'
 
-  # virgil 20240522.10
-  # Wed May 22 01:43:41 UTC 2024 -- Wed May 22 01:43:41 Australia 2024
+  # virgil 20240523.10
+  # Thu May 23 01:09:39 UTC 2024 -- Thu May 23 01:09:39 Australia 2024
   #
-  # Merged PR 23613: update os to cumulus580
-  # 034f37c50200b31811b568ebf2bcdb75437357f1
-  virgil_build_id: '961570'
+  # Merged PR 23643: Change lab 2 switch version to Cumulus 5.80
+  # e46b5b4e65e47c034bc901ee1387e2deee499bc7
+  virgil_build_id: '962785'
