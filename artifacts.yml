@@ -7,9 +7,9 @@ variables:
   # faf0f43478068bb0c570c795752a8c3ef839427e
   dante_build_id: '962883'
 
-  # virgil 20240523.10
-  # Thu May 23 01:09:39 UTC 2024 -- Thu May 23 01:09:39 Australia 2024
+  # virgil 20240523.18
+  # Thu May 23 05:33:48 UTC 2024 -- Thu May 23 05:33:48 Australia 2024
   #
-  # Merged PR 23643: Change lab 2 switch version to Cumulus 5.80
-  # e46b5b4e65e47c034bc901ee1387e2deee499bc7
-  virgil_build_id: '962785'
+  # Merged PR 23686: Change billing user and password to match
+  # c54c496b896bfb4f12f40ac98c1ac35e93395b27
+  virgil_build_id: '963094'
