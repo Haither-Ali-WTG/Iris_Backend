@@ -1,0 +1,20 @@
+---
+- name: Check variables
+  include_tasks: check_vars.yml
+
+- name: Convert string to list
+  set_fact:
+    backend_list: "{{ backends.split(',') | map('trim') | list }}"
+    backend_server_list: "{{ backend_servers.split(',') | map('trim') | list }}"
+    instance_name_list: "{{ instance_names.split(',') | map('trim') | list }}"
+    hostname_list: "{{ hostnames.split(',') | map('trim') | list }}"
+
+- name: Set server state
+  include_tasks: set_state.yml
+  vars:
+    haproxy_sock_file: "/mnt/data1/containers/iris_{{ clustered_instance_name }}_{{ machine_name }}/run/haproxy.sock"
+  when:
+    - machine_name in hostname_list
+    - >-
+      clustered_instance_name in instance_name_list
+      or (instance_name_list | length == 1 and instance_name_list[0] == '*')

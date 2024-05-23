@@ -1,0 +1,18 @@
+---
+- name: Ensure required variables are non-empty strings
+  fail:
+    msg: "'{{ item }}' must be defined and be a non-empty string."
+  when:
+    vars[item] is undefined or vars[item] | default('') | length == 0
+  loop:
+    - backends
+    - backend_servers
+    - instance_names
+    - hostnames
+    - operation
+
+- name: Ensure 'operation' is in ['ready', 'drain', 'maint']
+  assert:
+    that:
+      - operation in ['ready', 'drain', 'maint']
+    fail_msg: "'operation' must be in ['ready', 'drain', 'maint']."

@@ -1,0 +1,15 @@
+---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+
+- name: Set the server state
+  hosts: individual_instances
+  strategy: free
+  gather_facts: no
+  tasks:
+    - name: Set the server state
+      include_role:
+        name: iris_server_state
