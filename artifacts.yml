@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240524.1
-  # Thu May 23 23:50:12 UTC 2024 -- Thu May 23 23:50:12 Australia 2024
+  # Dante Build Artifact 20240524.2
+  # Fri May 24 01:45:37 UTC 2024 -- Fri May 24 01:45:37 Australia 2024
   #
-  # Merge pull request 23699 from dante_python_upgrade into master
-  # 57aeeec77a1c380b321a5c5757160b403b6feaf7
-  dante_build_id: '963853'
+  # Merged PR 23707: Allow deploying switches separately in dev sim
+  # 1f41984043aced1408d39dc95eb54ccd237141ea
+  dante_build_id: '963977'
 
   # virgil 20240523.18
   # Thu May 23 05:33:48 UTC 2024 -- Thu May 23 05:33:48 Australia 2024
