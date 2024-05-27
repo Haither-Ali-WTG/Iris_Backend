@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240527.5
-  # Mon May 27 04:49:06 UTC 2024 -- Mon May 27 04:49:06 Australia 2024
+  # Dante Build Artifact 20240527.6
+  # Mon May 27 05:44:49 UTC 2024 -- Mon May 27 05:44:49 Australia 2024
   #
-  # Merged PR 23671: Dante - Fix deploy certs pipeline
-  # fa8f086e8c226200cfb7ad27cab567a49d346760
-  dante_build_id: '967105'
+  # Merged PR 20674: WI00718038 - Use virgil_dc_primary_network_cidr for prod related changes
+  # 6355b19f5aa3db45351e10ff836db224d4b5127e
+  dante_build_id: '967169'
 
   # virgil 20240527.5
   # Mon May 27 01:25:32 UTC 2024 -- Mon May 27 01:25:32 Australia 2024
