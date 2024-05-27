@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240524.2
-  # Fri May 24 01:45:37 UTC 2024 -- Fri May 24 01:45:37 Australia 2024
+  # Dante Build Artifact 20240527.1
+  # Mon May 27 00:17:22 UTC 2024 -- Mon May 27 00:17:22 Australia 2024
   #
-  # Merged PR 23707: Allow deploying switches separately in dev sim
-  # 1f41984043aced1408d39dc95eb54ccd237141ea
-  dante_build_id: '963977'
+  # Merge pull request 23736 from dante_python_upgrade into master
+  # d32b59813112dbd520847f19c18bbf973878f966
+  dante_build_id: '966738'
 
-  # virgil 20240523.18
-  # Thu May 23 05:33:48 UTC 2024 -- Thu May 23 05:33:48 Australia 2024
+  # virgil 20240527.2
+  # Mon May 27 00:12:04 UTC 2024 -- Mon May 27 00:12:04 Australia 2024
   #
-  # Merged PR 23686: Change billing user and password to match
-  # c54c496b896bfb4f12f40ac98c1ac35e93395b27
-  virgil_build_id: '963094'
+  # Merge pull request 23732 from virgil_python_upgrade into master
+  # 78b8d812a071f671c452118f7e04ba908e18b2e5
+  virgil_build_id: '966728'
