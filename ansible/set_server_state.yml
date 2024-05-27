@@ -13,3 +13,4 @@
     - name: Set the server state
       include_role:
         name: iris_server_state
+      when: target_dc == dc
