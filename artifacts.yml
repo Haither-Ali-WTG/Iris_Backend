@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240527.2
-  # Mon May 27 01:07:17 UTC 2024 -- Mon May 27 01:07:17 Australia 2024
+  # Dante Build Artifact 20240527.3
+  # Mon May 27 02:04:42 UTC 2024 -- Mon May 27 02:04:42 Australia 2024
   #
-  # Merge pull request 23743 from dante_artifact_upgrade into master
-  # 498d1c0f37efacdee598886e7c53218f6c09cdbe
-  dante_build_id: '966803'
+  # Merged PR 23749: Ubuntu 24.04 added ro mirror
+  # 79468fee751473a5b617d66d61b84fa230c8a4d3
+  dante_build_id: '966889'
 
-  # virgil 20240527.2
-  # Mon May 27 00:12:04 UTC 2024 -- Mon May 27 00:12:04 Australia 2024
+  # virgil 20240527.5
+  # Mon May 27 01:25:32 UTC 2024 -- Mon May 27 01:25:32 Australia 2024
   #
-  # Merge pull request 23732 from virgil_python_upgrade into master
-  # 78b8d812a071f671c452118f7e04ba908e18b2e5
-  virgil_build_id: '966728'
+  # Merged PR 23614: Virgil - Remove host that has been returned
+  # a5b8b4d5663779fd30e9db1628123964c9e01a37
+  virgil_build_id: '966823'
