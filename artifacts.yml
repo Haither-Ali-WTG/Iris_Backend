@@ -7,9 +7,9 @@ variables:
   # 6355b19f5aa3db45351e10ff836db224d4b5127e
   dante_build_id: '967169'
 
-  # virgil 20240527.5
-  # Mon May 27 01:25:32 UTC 2024 -- Mon May 27 01:25:32 Australia 2024
+  # virgil 20240528.2
+  # Mon May 27 23:32:02 UTC 2024 -- Mon May 27 23:32:02 Australia 2024
   #
-  # Merged PR 23614: Virgil - Remove host that has been returned
-  # a5b8b4d5663779fd30e9db1628123964c9e01a37
-  virgil_build_id: '966823'
+  # Merged PR 21396: WI00718038 - Virgil - Add 10.8 subnet to cidrs field in AU2
+  # 5cb26ee191ed68ad69f34a64dd519390be246a6b
+  virgil_build_id: '967933'
