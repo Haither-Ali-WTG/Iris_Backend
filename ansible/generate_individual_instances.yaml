@@ -21,6 +21,7 @@
         clustered_instance_name: "{{ item.clustered_instance_name }}"
         # TODO: groups from clustered instance and machine settings
         ansible_host: "{{ machine.ansible_host }}"
+        dc: "{{ clustered_instance.dc }}"
         simulation_ports:
           plaintext: "{{ [(2000 + i * 2)] }}"
           ssl: "{{ [(2000 + i * 2 + 1)] }}"

@@ -87,10 +87,11 @@ stages:
                 -u $(user) --diff
                 -e="ansible_ssh_extra_args='-o StrictHostKeyChecking=no'"
                 -e="s3_host=$(s3_host)" -e="azure_kv_name=$(key_vault_name)"
-                -e="backends=$(backends)"
-                -e="backend_servers=$(backend_servers)"
-                -e="instance_names=$(instance_names)"
-                -e="hostnames=$(hostnames)"
+                -e="target_dc=$(dc)"
+                -e="backends='$(backends)'"
+                -e="backend_servers='$(backend_servers)'"
+                -e="instance_names='$(instance_names)'"
+                -e="hostnames='$(hostnames)'"
                 -e="operation=$(operation)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
