@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240528.1
-  # Tue May 28 00:12:29 UTC 2024 -- Tue May 28 00:12:29 Australia 2024
+  # Dante Build Artifact 20240528.3
+  # Tue May 28 02:18:32 UTC 2024 -- Tue May 28 02:18:32 Australia 2024
   #
-  # Merged PR 23635: Dante - Restrict switch runs to when only the virgil OS version matches switch version
-  # 9f5657a25e0b03b8fa6f1e492d9988cae4d6ce11
-  dante_build_id: '967976'
+  # Merged PR 23787: DHCP server upgraded to use Ubuntu 24.04 LTS
+  # 2659bccbce68f109c4273e7e490639782226b320
+  dante_build_id: '968165'
 
   # virgil 20240528.2
   # Mon May 27 23:32:02 UTC 2024 -- Mon May 27 23:32:02 Australia 2024
