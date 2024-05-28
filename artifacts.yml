@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240528.3
-  # Tue May 28 02:18:32 UTC 2024 -- Tue May 28 02:18:32 Australia 2024
+  # Dante Build Artifact 20240528.4
+  # Tue May 28 04:14:04 UTC 2024 -- Tue May 28 04:14:04 Australia 2024
   #
-  # Merged PR 23787: DHCP server upgraded to use Ubuntu 24.04 LTS
-  # 2659bccbce68f109c4273e7e490639782226b320
-  dante_build_id: '968165'
+  # Merge pull request 23805 from automatic_dhcp_server_image_upgrade into master
+  # 8826c2c1700be1a58dd0db6ead3c90b50fd8a875
+  dante_build_id: '968333'
 
-  # virgil 20240528.2
-  # Mon May 27 23:32:02 UTC 2024 -- Mon May 27 23:32:02 Australia 2024
+  # virgil 20240528.6
+  # Tue May 28 04:22:43 UTC 2024 -- Tue May 28 04:22:43 Australia 2024
   #
-  # Merged PR 21396: WI00718038 - Virgil - Add 10.8 subnet to cidrs field in AU2
-  # 5cb26ee191ed68ad69f34a64dd519390be246a6b
-  virgil_build_id: '967933'
+  # Merged PR 23809: Virgil - 1 - Replace Kafka node procedure test
+  # ff970df03a17ac74d2590a7c48d106d5f4b370c3
+  virgil_build_id: '968351'
