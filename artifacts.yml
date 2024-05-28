@@ -7,9 +7,9 @@ variables:
   # 8826c2c1700be1a58dd0db6ead3c90b50fd8a875
   dante_build_id: '968333'
 
-  # virgil 20240528.6
-  # Tue May 28 04:22:43 UTC 2024 -- Tue May 28 04:22:43 Australia 2024
+  # virgil 20240528.11
+  # Tue May 28 05:12:10 UTC 2024 -- Tue May 28 05:12:10 Australia 2024
   #
-  # Merged PR 23809: Virgil - 1 - Replace Kafka node procedure test
-  # ff970df03a17ac74d2590a7c48d106d5f4b370c3
-  virgil_build_id: '968351'
+  # Merged PR 23814: Change compute node
+  # dc012efb80405b2ff6f0cfc1db3d281b44e15da7
+  virgil_build_id: '968441'
