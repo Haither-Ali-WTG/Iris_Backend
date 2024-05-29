@@ -7,9 +7,9 @@ variables:
   # 6f6902704748546313b367f9ec0d429e8b4ed5b5
   dante_build_id: '969802'
 
-  # virgil 20240529.6
-  # Wed May 29 04:20:15 UTC 2024 -- Wed May 29 04:20:15 Australia 2024
+  # virgil 20240530.2
+  # Wed May 29 20:40:30 UTC 2024 -- Wed May 29 20:40:30 Australia 2024
   #
-  # Merged PR 23831: update hardware type for new DE1 exits
-  # 7a915cd1458508debe5cc53ea0d08ec61e1ef912
-  virgil_build_id: '969616'
+  # Merged PR 23721: Replace some US2 physical boxes
+  # c3caca07790e16176c2bf773048380dc0e4dedd1
+  virgil_build_id: '970438'
