@@ -7,9 +7,9 @@ variables:
   # 696017b5c989948829bf9407eb2e82add539f272
   dante_build_id: '968525'
 
-  # virgil 20240528.11
-  # Tue May 28 05:12:10 UTC 2024 -- Tue May 28 05:12:10 Australia 2024
+  # virgil 20240529.2
+  # Wed May 29 00:10:12 UTC 2024 -- Wed May 29 00:10:12 Australia 2024
   #
-  # Merged PR 23814: Change compute node
-  # dc012efb80405b2ff6f0cfc1db3d281b44e15da7
-  virgil_build_id: '968441'
+  # Merge pull request 23838 from virgil_python_upgrade into master
+  # 1a5e7766d2fb87f47a1129467149a106f1951102
+  virgil_build_id: '969343'
