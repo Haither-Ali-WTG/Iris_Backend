@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240529.4
-  # Wed May 29 06:46:13 UTC 2024 -- Wed May 29 06:46:13 Australia 2024
+  # Dante Build Artifact 20240530.1
+  # Wed May 29 21:46:25 UTC 2024 -- Wed May 29 21:46:25 Australia 2024
   #
-  # Merged PR 23804: Updated allowance subnet for AU2
-  # 6f6902704748546313b367f9ec0d429e8b4ed5b5
-  dante_build_id: '969802'
+  # Merge pull request 23907 from dante_artifact_upgrade into master
+  # 37921ef3ebcdf9588913013a695608fed94f0ee2
+  dante_build_id: '970492'
 
   # virgil 20240530.2
   # Wed May 29 20:40:30 UTC 2024 -- Wed May 29 20:40:30 Australia 2024
