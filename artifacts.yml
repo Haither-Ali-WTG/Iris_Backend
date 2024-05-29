@@ -7,9 +7,9 @@ variables:
   # fa3f764c566a64b5022091de042f651875149c32
   dante_build_id: '969493'
 
-  # virgil 20240529.2
-  # Wed May 29 00:10:12 UTC 2024 -- Wed May 29 00:10:12 Australia 2024
+  # virgil 20240529.6
+  # Wed May 29 04:20:15 UTC 2024 -- Wed May 29 04:20:15 Australia 2024
   #
-  # Merge pull request 23838 from virgil_python_upgrade into master
-  # 1a5e7766d2fb87f47a1129467149a106f1951102
-  virgil_build_id: '969343'
+  # Merged PR 23831: update hardware type for new DE1 exits
+  # 7a915cd1458508debe5cc53ea0d08ec61e1ef912
+  virgil_build_id: '969616'
