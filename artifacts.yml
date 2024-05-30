@@ -7,9 +7,9 @@ variables:
   # f2a43e934a8fd16fbd39d0b732309eb89d191e8c
   dante_build_id: '970791'
 
-  # virgil 20240530.8
-  # Thu May 30 01:13:07 UTC 2024 -- Thu May 30 01:13:07 Australia 2024
+  # virgil 20240530.20
+  # Thu May 30 04:43:03 UTC 2024 -- Thu May 30 04:43:03 Australia 2024
   #
-  # Merge pull request 23897 from virgil_python_upgrade into master
-  # 2013af78228332944d83fd7d15e5ae6523c5dc78
-  virgil_build_id: '970711'
+  # Merged PR 23927: Lab switches - Remove VMware profile + change version to cumulus 5.21
+  # b2c597bab576dbdc88fe54ba86f73be10e9f457b
+  virgil_build_id: '970983'
