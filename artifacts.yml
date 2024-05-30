@@ -7,9 +7,9 @@ variables:
   # 159aeaecec290148f5efd1eacc0257d4d9c46605
   dante_build_id: '971021'
 
-  # virgil 20240530.20
-  # Thu May 30 04:43:03 UTC 2024 -- Thu May 30 04:43:03 Australia 2024
+  # virgil 20240530.25
+  # Thu May 30 06:27:32 UTC 2024 -- Thu May 30 06:27:32 Australia 2024
   #
-  # Merged PR 23927: Lab switches - Remove VMware profile + change version to cumulus 5.21
-  # b2c597bab576dbdc88fe54ba86f73be10e9f457b
-  virgil_build_id: '970983'
+  # Merged PR 23944: 4 - Virgil Switch configurations back to normal
+  # 506409a91bf0f9b0eb19049b354998035a7e1bc9
+  virgil_build_id: '971115'
