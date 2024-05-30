@@ -7,9 +7,9 @@ variables:
   # 0b7a27c6a93e03ae9ba13e5917b84cec69cd7c79
   dante_build_id: '971252'
 
-  # virgil 20240530.25
-  # Thu May 30 06:27:32 UTC 2024 -- Thu May 30 06:27:32 Australia 2024
+  # virgil 20240530.28
+  # Thu May 30 10:44:54 UTC 2024 -- Thu May 30 10:44:54 Australia 2024
   #
-  # Merged PR 23944: 4 - Virgil Switch configurations back to normal
-  # 506409a91bf0f9b0eb19049b354998035a7e1bc9
-  virgil_build_id: '971115'
+  # Merged PR 23615: Add Bastian vlan for Containerchain PROD in DE1 and US2
+  # 0ecdf226b74b69ea70b1c9c925dcac4b23f93863
+  virgil_build_id: '971385'
