@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240530.3
-  # Thu May 30 05:15:00 UTC 2024 -- Thu May 30 05:15:00 Australia 2024
+  # Dante Build Artifact 20240530.4
+  # Thu May 30 07:28:28 UTC 2024 -- Thu May 30 07:28:28 Australia 2024
   #
-  # Merged PR 23823: Dante - Add variable to skip links ports
-  # 159aeaecec290148f5efd1eacc0257d4d9c46605
-  dante_build_id: '971021'
+  # Merge pull request 23935 from dante_artifact_upgrade into master
+  # a3e1dc5dcd5c765b0c9aee44f438af7bcfbd404b
+  dante_build_id: '971171'
 
   # virgil 20240530.25
   # Thu May 30 06:27:32 UTC 2024 -- Thu May 30 06:27:32 Australia 2024
