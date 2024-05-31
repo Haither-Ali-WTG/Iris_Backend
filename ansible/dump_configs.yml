@@ -41,10 +41,6 @@
         name: iris_haproxy
         tasks_from: dump_config.yml
 
-    - name: Output path
-      debug:
-        msg: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
-
     - name: Fetch the current working config from target machine
       fetch:
         src: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
