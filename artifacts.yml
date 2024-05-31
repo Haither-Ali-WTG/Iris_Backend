@@ -7,9 +7,9 @@ variables:
   # dcfcb55d5fb5c7b123cbdd706a2b905de6b3672e
   dante_build_id: '971974'
 
-  # virgil 20240530.28
-  # Thu May 30 10:44:54 UTC 2024 -- Thu May 30 10:44:54 Australia 2024
+  # virgil 20240531.19
+  # Fri May 31 03:41:40 UTC 2024 -- Fri May 31 03:41:40 Australia 2024
   #
-  # Merged PR 23615: Add Bastian vlan for Containerchain PROD in DE1 and US2
-  # 0ecdf226b74b69ea70b1c9c925dcac4b23f93863
-  virgil_build_id: '971385'
+  # Merged PR 23977: Prepare virgil pipeline for Ubuntu 24.04 migration
+  # 1813ee58a582bddf04f31cca5b95c76e890affac
+  virgil_build_id: '972196'
