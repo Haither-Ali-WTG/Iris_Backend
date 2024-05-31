@@ -7,9 +7,9 @@ variables:
   # 2cb9cba6541c2f855b9db92a61c6c3d16d921544
   dante_build_id: '972263'
 
-  # virgil 20240531.19
-  # Fri May 31 03:41:40 UTC 2024 -- Fri May 31 03:41:40 Australia 2024
+  # virgil 20240531.22
+  # Fri May 31 06:47:12 UTC 2024 -- Fri May 31 06:47:12 Australia 2024
   #
-  # Merged PR 23977: Prepare virgil pipeline for Ubuntu 24.04 migration
-  # 1813ee58a582bddf04f31cca5b95c76e890affac
-  virgil_build_id: '972196'
+  # Merged PR 23995: upgrade DAT switch pairs to 5.8.0
+  # 7945f0f0ca880e7f88106edff56eba1aee2bf650
+  virgil_build_id: '972380'
