@@ -182,6 +182,7 @@ stages:
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_HOST_KEY_CHECKING: false
+              ANSIBLE_MAX_DIFF_SIZE: 1000000  # Default: 104448
 
           - publish: $(System.DefaultWorkingDirectory)/generated_configs
             artifact: configs
