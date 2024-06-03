@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240603.7
-  # Mon Jun  3 03:27:10 UTC 2024 -- Mon Jun  3 03:27:10 Australia 2024
+  # Dante Build Artifact 20240603.8
+  # Mon Jun  3 04:12:58 UTC 2024 -- Mon Jun  3 04:12:58 Australia 2024
   #
-  # Merged PR 24039: Python 3.12+ tests support
-  # 2bddab30fcd98a896df60c030f190f60755ff0e6
-  dante_build_id: '975322'
+  # Merge pull request 24029 from dante_python_upgrade into master
+  # 8de63650a7824c8685686ffb38be5880b339d662
+  dante_build_id: '975394'
 
   # virgil 20240603.8
   # Mon Jun  3 03:42:26 UTC 2024 -- Mon Jun  3 03:42:26 Australia 2024
