@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240603.6
-  # Mon Jun  3 02:33:14 UTC 2024 -- Mon Jun  3 02:33:14 Australia 2024
+  # Dante Build Artifact 20240603.7
+  # Mon Jun  3 03:27:10 UTC 2024 -- Mon Jun  3 03:27:10 Australia 2024
   #
-  # Merge pull request 24016 from automatic_ascalaphus_image_upgrade into master
-  # 66570c3aa5d15c7857b2a5e533ea3f44549a77c1
-  dante_build_id: '975263'
+  # Merged PR 24039: Python 3.12+ tests support
+  # 2bddab30fcd98a896df60c030f190f60755ff0e6
+  dante_build_id: '975322'
 
-  # virgil 20240531.22
-  # Fri May 31 06:47:12 UTC 2024 -- Fri May 31 06:47:12 Australia 2024
+  # virgil 20240603.8
+  # Mon Jun  3 03:42:26 UTC 2024 -- Mon Jun  3 03:42:26 Australia 2024
   #
-  # Merged PR 23995: upgrade DAT switch pairs to 5.8.0
-  # 7945f0f0ca880e7f88106edff56eba1aee2bf650
-  virgil_build_id: '972380'
+  # Merged PR 24052: CS016322804 - Added prod/test topics
+  # db372d5f8407e923e640fbbd89afb4b9aa8b8967
+  virgil_build_id: '975351'
