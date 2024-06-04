@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240604.1
-  # Tue Jun  4 04:26:24 UTC 2024 -- Tue Jun  4 04:26:24 Australia 2024
+  # Dante Build Artifact 20240604.2
+  # Tue Jun  4 05:45:55 UTC 2024 -- Tue Jun  4 05:45:55 Australia 2024
   #
-  # Merged PR 24094: Disable automatic python upgrades
-  # bbab6f26dfcc80dd2dbde1f8a50369b5fa07ad5f
-  dante_build_id: '976632'
+  # Merge pull request 24064 from dante_artifact_upgrade into master
+  # 69d13212cd11db4e0a2ee9bfcf8345bf74e5722e
+  dante_build_id: '976745'
 
   # virgil 20240604.14
   # Tue Jun  4 04:37:59 UTC 2024 -- Tue Jun  4 04:37:59 Australia 2024
