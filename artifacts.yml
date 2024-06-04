@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240603.9
-  # Mon Jun  3 05:23:56 UTC 2024 -- Mon Jun  3 05:23:56 Australia 2024
+  # Dante Build Artifact 20240604.1
+  # Tue Jun  4 04:26:24 UTC 2024 -- Tue Jun  4 04:26:24 Australia 2024
   #
-  # Merge pull request 24055 from automatic_nginx_image_upgrade into master
-  # d686a8063544b2bd077a1472b9d98883edf40711
-  dante_build_id: '975477'
+  # Merged PR 24094: Disable automatic python upgrades
+  # bbab6f26dfcc80dd2dbde1f8a50369b5fa07ad5f
+  dante_build_id: '976632'
 
-  # virgil 20240603.8
-  # Mon Jun  3 03:42:26 UTC 2024 -- Mon Jun  3 03:42:26 Australia 2024
+  # virgil 20240604.14
+  # Tue Jun  4 04:37:59 UTC 2024 -- Tue Jun  4 04:37:59 Australia 2024
   #
-  # Merged PR 24052: CS016322804 - Added prod/test topics
-  # db372d5f8407e923e640fbbd89afb4b9aa8b8967
-  virgil_build_id: '975351'
+  # Merged PR 24089: and another lab apex pair to Virgil
+  # 96808e61074bd7334075bf651e0fcbaac73ab3f3
+  virgil_build_id: '976663'
