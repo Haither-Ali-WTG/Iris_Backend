@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240605.1
-  # Wed Jun  5 04:26:08 UTC 2024 -- Wed Jun  5 04:26:08 Australia 2024
+  # Dante Build Artifact 20240606.1
+  # Wed Jun  5 22:02:14 UTC 2024 -- Wed Jun  5 22:02:14 Australia 2024
   #
-  # Merge pull request 24124 from dante_artifact_upgrade into master
-  # c4a9cec811d3d465fb804b2fee55fc8909c69849
-  dante_build_id: '977805'
+  # Merged PR 24128: Stop and disable netq on cumulus 5.8.0
+  # 6d8a2cfc37fed3dafde3265da05efb7cc77df6f4
+  dante_build_id: '978611'
 
   # virgil 20240605.8
   # Wed Jun  5 03:19:07 UTC 2024 -- Wed Jun  5 03:19:07 Australia 2024
