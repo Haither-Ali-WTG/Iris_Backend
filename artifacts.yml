@@ -7,9 +7,9 @@ variables:
   # 6d8a2cfc37fed3dafde3265da05efb7cc77df6f4
   dante_build_id: '978611'
 
-  # virgil 20240605.8
-  # Wed Jun  5 03:19:07 UTC 2024 -- Wed Jun  5 03:19:07 Australia 2024
+  # virgil 20240606.2
+  # Thu Jun  6 06:28:50 UTC 2024 -- Thu Jun  6 06:28:50 Australia 2024
   #
-  # Merged PR 24125: update bridge-vids list under bridge interface to target apex and specific exit switches only
-  # 85d9ca31636b4223a0c9d09238f2e52dd23d5062
-  virgil_build_id: '977745'
+  # Merged PR 24159: update labapex1 to 580
+  # 02285e73b430c100c351d5039a5224a9d04de26c
+  virgil_build_id: '979021'
