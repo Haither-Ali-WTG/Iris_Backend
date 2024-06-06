@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240606.1
-  # Wed Jun  5 22:02:14 UTC 2024 -- Wed Jun  5 22:02:14 Australia 2024
+  # Dante Build Artifact 20240606.2
+  # Thu Jun  6 08:06:31 UTC 2024 -- Thu Jun  6 08:06:31 Australia 2024
   #
-  # Merged PR 24128: Stop and disable netq on cumulus 5.8.0
-  # 6d8a2cfc37fed3dafde3265da05efb7cc77df6f4
-  dante_build_id: '978611'
+  # Merge pull request 24166 from dante_artifact_upgrade into master
+  # 1706bd5995f4babbc8b6a0c7dff145635466d03c
+  dante_build_id: '979120'
 
-  # virgil 20240606.2
-  # Thu Jun  6 06:28:50 UTC 2024 -- Thu Jun  6 06:28:50 Australia 2024
+  # virgil 20240606.5
+  # Thu Jun  6 07:00:54 UTC 2024 -- Thu Jun  6 07:00:54 Australia 2024
   #
-  # Merged PR 24159: update labapex1 to 580
-  # 02285e73b430c100c351d5039a5224a9d04de26c
-  virgil_build_id: '979021'
+  # Merged PR 24077: Subnet names updated for DE and US
+  # 15febacefb67690b60c954b6e4142986add6734f
+  virgil_build_id: '979068'
