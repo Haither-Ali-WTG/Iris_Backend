@@ -7,9 +7,9 @@ variables:
   # f9b1386208125fe9e3b165df570fd28f646cbafa
   dante_build_id: '980021'
 
-  # virgil 20240607.5
-  # Fri Jun  7 02:09:47 UTC 2024 -- Fri Jun  7 02:09:47 Australia 2024
+  # virgil 20240607.12
+  # Fri Jun  7 03:35:58 UTC 2024 -- Fri Jun  7 03:35:58 Australia 2024
   #
-  # Merged PR 24182: Add_AU2_IDP_Network
-  # 5a33633d4edd49fe8323342847388ac6ad26b6f2
-  virgil_build_id: '979943'
+  # Merged PR 24183: addDE1IDPNetwork
+  # 89d97dd25b2e8565759db9360ab915424f86eb2e
+  virgil_build_id: '980049'
