@@ -7,9 +7,9 @@ variables:
   # fa253ef4be56a2b50976ca7221ca209c7cc90ce9
   dante_build_id: '979805'
 
-  # virgil 20240606.5
-  # Thu Jun  6 07:00:54 UTC 2024 -- Thu Jun  6 07:00:54 Australia 2024
+  # virgil 20240607.5
+  # Fri Jun  7 02:09:47 UTC 2024 -- Fri Jun  7 02:09:47 Australia 2024
   #
-  # Merged PR 24077: Subnet names updated for DE and US
-  # 15febacefb67690b60c954b6e4142986add6734f
-  virgil_build_id: '979068'
+  # Merged PR 24182: Add_AU2_IDP_Network
+  # 5a33633d4edd49fe8323342847388ac6ad26b6f2
+  virgil_build_id: '979943'
