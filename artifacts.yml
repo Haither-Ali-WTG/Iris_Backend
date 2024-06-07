@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240607.1
-  # Fri Jun  7 00:07:36 UTC 2024 -- Fri Jun  7 00:07:36 Australia 2024
+  # Dante Build Artifact 20240607.2
+  # Fri Jun  7 03:25:42 UTC 2024 -- Fri Jun  7 03:25:42 Australia 2024
   #
-  # Merged PR 24158: Enabled Windows ISO builds for US2
-  # fa253ef4be56a2b50976ca7221ca209c7cc90ce9
-  dante_build_id: '979805'
+  # Merge pull request 24190 from dante_artifact_upgrade into master
+  # f9b1386208125fe9e3b165df570fd28f646cbafa
+  dante_build_id: '980021'
 
   # virgil 20240607.5
   # Fri Jun  7 02:09:47 UTC 2024 -- Fri Jun  7 02:09:47 Australia 2024
