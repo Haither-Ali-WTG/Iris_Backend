@@ -1,14 +1,14 @@
 ---
 variables:
   # Dante Build Artifact 20240608.1
-  # Fri Jun  7 15:09:32 UTC 2024 -- Fri Jun  7 15:09:32 Australia 2024
+  # Fri Jun  7 15:09:32 UTC 2024 -- Sat Jun  8 01:09:32 AEST 2024
   #
   # Merge pull request 24221 from dante_artifact_upgrade into master
   # 47cf157751d2c905676df80170564bdcbc87ef93
   dante_build_id: '980709'
 
   # virgil 20240608.1
-  # Fri Jun  7 14:21:07 UTC 2024 -- Fri Jun  7 14:21:07 Australia 2024
+  # Fri Jun  7 14:21:07 UTC 2024 -- Sat Jun  8 00:21:07 AEST 2024
   #
   # Merged PR 23833: remove US2 exit3/4 config details from Virgil
   # e5ecd7afbe7d2141a55941e0be65074fcdd33e69
