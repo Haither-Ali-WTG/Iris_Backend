@@ -1,7 +1,7 @@
 ---
 clustered_instances:
   hosts: map(include('clustered_instance'),
-             key=regex('^[a-z0-9]+$', name='clustered instance label'))
+             key=regex('^(au|de|us)[0-9](prod|corp|sand)[a-z0-9]+$', name='clustered instance label'))
 ---
 clustered_instance:
   container: include('haproxy_container_settings', required=False)
