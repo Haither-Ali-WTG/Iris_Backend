@@ -1,0 +1,14 @@
+---
+- name: Find certificates in a directory
+  find:
+    paths: "{{ certs_folder }}"
+    file_type: file
+  register: downloaded_certificates
+
+- name: Call certificate validation command
+  command: "openssl rsa -noout -check -in {{ item.path }}"
+  changed_when: false
+  failed_when: openssl_result.rc != 0
+  loop: "{{ downloaded_certificates.files }}"
+  register: openssl_result
+  delegate_to: localhost

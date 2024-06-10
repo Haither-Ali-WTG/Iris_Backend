@@ -1,0 +1,54 @@
+---
+- name: Create certificates directory
+  file:
+    dest: "{{ certs_folder }}/"
+    state: directory
+    mode: u=rwx,go=
+
+- name: Get certificate
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: "{{ certificate_name }}"
+    azure_kv_name: "{{ key_vault_name }}"
+    curl:
+      retries: 2
+      delay: 5
+
+- name: Save certificate to file
+  copy:
+    dest: "{{ certs_folder }}/{{ certificate_name }}.pem"
+    content: "{{ return_secret_value }}"
+    mode: u=rw,go=
+  no_log: true
+
+- name: Check if the certificate is already in PEM format
+  command: "openssl x509 -in {{ certs_folder }}/{{ certificate_name }}.pem -noout"
+  register: pem_check
+  ignore_errors: true
+  changed_when: false
+
+- name: Convert PFX to PEM format
+  when: pem_check.rc != 0
+  block:
+    - name: Base64 decode the certificate to pkcs12 format
+      command: >-
+        openssl base64 -d -A
+        -in {{ certs_folder }}/{{ certificate_name }}.pem
+        -out {{ certs_folder }}/{{ certificate_name }}.pkcs12
+      changed_when: false
+
+    - name: Convert pkcs12 to PEM format
+      command: >-
+        openssl pkcs12
+        -in {{ certs_folder }}/{{ certificate_name }}.pkcs12
+        -out {{ certs_folder }}/{{ certificate_name }}.pem
+        -nodes -passin pass:
+      changed_when: false
+
+    - name: Remove temporary pkcs12 file
+      ansible.builtin.file:
+        path: "{{ certs_folder }}/{{ certificate_name }}.pkcs12"
+        state: absent
+      changed_when: false

@@ -1,0 +1,52 @@
+---
+- name: Create certificates directory
+  file:
+    dest: "{{ certs_folder }}/"
+    state: directory
+    mode: u=rwx,go=
+
+- name: Get certificate
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: "{{ certificate_name }}"
+    azure_kv_name: "{{ key_vault_name }}"
+    curl:
+      retries: 2
+      delay: 5
+
+- name: Get intermediate certificate if required
+  uri:
+    url: "https://cms.gis.wtg.zone/cms/v1/certificate/{{ certificate_domain }}/{{ real_certificate_name }}"
+    method: GET
+    headers:
+      Content-Type: application/json
+    status_code:
+      - 200
+      - 201
+      - 404
+    use_proxy: "{{ use_proxy | default(true) }}"
+  register: cms_service_output
+  retries: 24
+  delay: 5
+  until: not cms_service_output.failed
+  when:
+    - intermediate | bool
+    - "key_vault_name != 'kv-wtg-iris-prod'"
+
+- name: Append intermediate certificate
+  set_fact:
+    return_secret_value: >-
+      {{ return_secret_value |
+         append_intermediate_certificate(cms_service_output.json.certificate) }}
+  when:
+    - intermediate | bool
+    - "key_vault_name != 'kv-wtg-iris-prod'"
+
+- name: Save certificate to file
+  copy:
+    dest: "{{ certs_folder }}/{{ real_certificate_name }}.pem"
+    content: "{{ return_secret_value }}"
+    mode: u=rw,go=
+  no_log: true
