@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240611.5
-  # Tue Jun 11 03:50:41 UTC 2024 -- Tue Jun 11 13:50:41 AEST 2024
+  # Dante Build Artifact 20240611.6
+  # Tue Jun 11 05:27:05 UTC 2024 -- Tue Jun 11 15:27:05 AEST 2024
   #
-  # Merged PR 24112: Python - Create filter to sort ports in human sorting order
-  # 674ae078a84da5ea1f561f7999fe13db7aeee25c
-  dante_build_id: '984209'
+  # Merge pull request 24265 from dante_artifact_upgrade into master
+  # 447e094592025a4b98cab0d2733ab8727ccdfc43
+  dante_build_id: '984300'
 
   # virgil 20240611.6
   # Tue Jun 11 03:15:59 UTC 2024 -- Tue Jun 11 13:15:59 AEST 2024
