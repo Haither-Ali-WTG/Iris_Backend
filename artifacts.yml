@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240611.2
-  # Tue Jun 11 00:28:13 UTC 2024 -- Tue Jun 11 10:28:13 AEST 2024
+  # Dante Build Artifact 20240611.3
+  # Tue Jun 11 01:43:48 UTC 2024 -- Tue Jun 11 11:43:48 AEST 2024
   #
-  # Merge pull request 24237 from dante_artifact_upgrade into master
-  # 4e64ed06b1ad816af77c6f1d6ec2f0f553e29e33
-  dante_build_id: '983956'
+  # Merged PR 24248: Fixed qcow2 images build
+  # fc64abd5897ab41b9fa609ec14feee89b6bd8140
+  dante_build_id: '984046'
 
   # virgil 20240611.3
   # Tue Jun 11 00:46:44 UTC 2024 -- Tue Jun 11 10:46:44 AEST 2024
