@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240608.1
-  # Fri Jun  7 15:09:32 UTC 2024 -- Sat Jun  8 01:09:32 AEST 2024
+  # Dante Build Artifact 20240611.1
+  # Mon Jun 10 23:38:22 UTC 2024 -- Tue Jun 11 09:38:22 AEST 2024
   #
-  # Merge pull request 24221 from dante_artifact_upgrade into master
-  # 47cf157751d2c905676df80170564bdcbc87ef93
-  dante_build_id: '980709'
+  # Merged PR 24236: Use Ubuntu 24.04 with python 3.12.3 as base image for Azure devops agend
+  # 5b013fcd248598e3125b4a666004f451a6f8bdbb
+  dante_build_id: '983897'
 
   # virgil 20240608.1
   # Fri Jun  7 14:21:07 UTC 2024 -- Sat Jun  8 00:21:07 AEST 2024
