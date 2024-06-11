@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240611.3
-  # Tue Jun 11 01:43:48 UTC 2024 -- Tue Jun 11 11:43:48 AEST 2024
+  # Dante Build Artifact 20240611.4
+  # Tue Jun 11 02:48:49 UTC 2024 -- Tue Jun 11 12:48:49 AEST 2024
   #
-  # Merged PR 24248: Fixed qcow2 images build
-  # fc64abd5897ab41b9fa609ec14feee89b6bd8140
-  dante_build_id: '984046'
+  # Merge pull request 24251 from dante_artifact_upgrade into master
+  # fa22c28331731c77d0dd159dca2551eaf63ebfb6
+  dante_build_id: '984137'
 
-  # virgil 20240611.3
-  # Tue Jun 11 00:46:44 UTC 2024 -- Tue Jun 11 10:46:44 AEST 2024
+  # virgil 20240611.6
+  # Tue Jun 11 03:15:59 UTC 2024 -- Tue Jun 11 13:15:59 AEST 2024
   #
-  # Merged PR 24230: Remove ordwp-sbak-4
-  # 7a6fd56efab61d9f49a975f76bcab31d7c6ea816
-  virgil_build_id: '983989'
+  # Merged PR 24192: IDP US ranges
+  # a8a26e81d800050bb0bb62904c90ce1274aef798
+  virgil_build_id: '984172'
