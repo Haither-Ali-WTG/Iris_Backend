@@ -7,9 +7,9 @@ variables:
   # 447e094592025a4b98cab0d2733ab8727ccdfc43
   dante_build_id: '984300'
 
-  # virgil 20240611.6
-  # Tue Jun 11 03:15:59 UTC 2024 -- Tue Jun 11 13:15:59 AEST 2024
+  # virgil 20240612.1
+  # Wed Jun 12 00:53:57 UTC 2024 -- Wed Jun 12 10:53:57 AEST 2024
   #
-  # Merged PR 24192: IDP US ranges
-  # a8a26e81d800050bb0bb62904c90ce1274aef798
-  virgil_build_id: '984172'
+  # Merged PR 24266: Virgil - Switch kafka queue back to continuous
+  # 24bd4398c2778dd2c7900dc25713534bdcee7d90
+  virgil_build_id: '985158'
