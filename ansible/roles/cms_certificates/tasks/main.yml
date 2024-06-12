@@ -11,6 +11,7 @@
   vars:
     proxy_host: "{{ ceph_proxy_host | default('') }}"
     proxy_port: "{{ ceph_proxy_port | default('') }}"
+    s3_client_config_path: /tmp
 
 - name: Create temporary directory
   tempfile:
