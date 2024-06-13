@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240613.2
-  # Thu Jun 13 01:48:36 UTC 2024 -- Thu Jun 13 11:48:36 AEST 2024
+  # Dante Build Artifact 20240613.3
+  # Thu Jun 13 04:44:17 UTC 2024 -- Thu Jun 13 14:44:17 AEST 2024
   #
-  # Merge pull request 24325 from dante_artifact_upgrade into master
-  # fe90fba1abcb7f75c1b2b7adbab654ac2ca9133b
-  dante_build_id: '986366'
+  # Merged PR 24334: Enable automatic python upgrades after agents update
+  # 065c6209ce69f7e870b880ace19fe8d541f4706e
+  dante_build_id: '986566'
 
-  # virgil 20240613.3
-  # Thu Jun 13 00:30:43 UTC 2024 -- Thu Jun 13 10:30:43 AEST 2024
+  # virgil 20240613.8
+  # Thu Jun 13 04:37:21 UTC 2024 -- Thu Jun 13 14:37:21 AEST 2024
   #
-  # Merged PR 24317: Replace C-00063 with a C56
-  # a4a972eb246f3b333eed7485bc64bac44b80199b
-  virgil_build_id: '986279'
+  # Merged PR 24337: idp-au2-update
+  # cfa875a5cd13a3979b5f1511f0897b2c91a97dac
+  virgil_build_id: '986562'
