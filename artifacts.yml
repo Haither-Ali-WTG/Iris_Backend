@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240612.1
-  # Wed Jun 12 01:49:05 UTC 2024 -- Wed Jun 12 11:49:05 AEST 2024
+  # Dante Build Artifact 20240613.2
+  # Thu Jun 13 01:48:36 UTC 2024 -- Thu Jun 13 11:48:36 AEST 2024
   #
-  # Merge pull request 24300 from dante_artifact_upgrade into master
-  # f7bfd7d523c0c2881ed16e812e4615ee4cc95aa8
-  dante_build_id: '985230'
+  # Merge pull request 24325 from dante_artifact_upgrade into master
+  # fe90fba1abcb7f75c1b2b7adbab654ac2ca9133b
+  dante_build_id: '986366'
 
-  # virgil 20240612.1
-  # Wed Jun 12 00:53:57 UTC 2024 -- Wed Jun 12 10:53:57 AEST 2024
+  # virgil 20240613.3
+  # Thu Jun 13 00:30:43 UTC 2024 -- Thu Jun 13 10:30:43 AEST 2024
   #
-  # Merged PR 24266: Virgil - Switch kafka queue back to continuous
-  # 24bd4398c2778dd2c7900dc25713534bdcee7d90
-  virgil_build_id: '985158'
+  # Merged PR 24317: Replace C-00063 with a C56
+  # a4a972eb246f3b333eed7485bc64bac44b80199b
+  virgil_build_id: '986279'
