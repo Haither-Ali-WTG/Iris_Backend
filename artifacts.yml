@@ -7,9 +7,9 @@ variables:
   # 5ff640412bfbd5b7e71a3b8607aec39fa8976a05
   dante_build_id: '987952'
 
-  # virgil 20240614.12
-  # Fri Jun 14 06:07:45 UTC 2024 -- Fri Jun 14 16:07:45 AEST 2024
+  # virgil 20240614.20
+  # Fri Jun 14 13:40:34 UTC 2024 -- Fri Jun 14 23:40:34 AEST 2024
   #
-  # Merged PR 24405: CS01593504 - longer kafka retention for xt-archive-outbound-prod
-  # a8df50f676fe6b8ce2dc0f7c6358eeab355af87f
-  virgil_build_id: '987891'
+  # Merged PR 24366: de1-idp-network-update
+  # 6f4512a67fd34e3e006b9f6cad3dcc3cc4caabec
+  virgil_build_id: '988234'
