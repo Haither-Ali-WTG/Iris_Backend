@@ -7,9 +7,9 @@ variables:
   # 17277f46906ec70d55b2a5ed647ba212f4bb227a
   dante_build_id: '987562'
 
-  # virgil 20240613.20
-  # Thu Jun 13 05:49:48 UTC 2024 -- Thu Jun 13 15:49:48 AEST 2024
+  # virgil 20240614.2
+  # Fri Jun 14 00:46:28 UTC 2024 -- Fri Jun 14 10:46:28 AEST 2024
   #
-  # Merge pull request 24356 from virgil_python_upgrade into master
-  # 5963f68d63948209ee2ea19623594bf17355cf22
-  virgil_build_id: '986687'
+  # Merged PR 24359: us2-idp-subnet-update
+  # 418f1d03c5d9fc5c46de7652b3f5ddcdcf5542d0
+  virgil_build_id: '987592'
