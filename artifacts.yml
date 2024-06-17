@@ -7,9 +7,9 @@ variables:
   # 5296042b02af91bef60218a6f820cae8e5a04b3a
   dante_build_id: '988292'
 
-  # virgil 20240614.20
-  # Fri Jun 14 13:40:34 UTC 2024 -- Fri Jun 14 23:40:34 AEST 2024
+  # virgil 20240617.1
+  # Mon Jun 17 00:04:57 UTC 2024 -- Mon Jun 17 10:04:57 AEST 2024
   #
-  # Merged PR 24366: de1-idp-network-update
-  # 6f4512a67fd34e3e006b9f6cad3dcc3cc4caabec
-  virgil_build_id: '988234'
+  # Merged PR 24398: passwordstate-au2-setup
+  # 15397d692c7f5c75d25e3f861ff598f8f73cf262
+  virgil_build_id: '990565'
