@@ -7,9 +7,9 @@ variables:
   # d30c4b82004c62b812f142ea590c885717404bc8
   dante_build_id: '990965'
 
-  # virgil 20240617.6
-  # Mon Jun 17 06:03:14 UTC 2024 -- Mon Jun 17 16:03:14 AEST 2024
+  # virgil 20240618.2
+  # Mon Jun 17 23:18:11 UTC 2024 -- Tue Jun 18 09:18:11 AEST 2024
   #
-  # Merged PR 24448: DE1 Passwordstate Subnets
-  # 13f84f10f333f33d01a45451b9fb4625ee5d4328
-  virgil_build_id: '990895'
+  # Merge pull request 24467 from virgil_python_upgrade into master
+  # 11e1fbb49ba0be7e15f7c8bfa7a93209f72a7760
+  virgil_build_id: '991687'
