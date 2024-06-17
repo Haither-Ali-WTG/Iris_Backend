@@ -7,9 +7,9 @@ variables:
   # 09254ed20e43e0f531eda5a6aebf9beeeb2c5381
   dante_build_id: '990630'
 
-  # virgil 20240617.1
-  # Mon Jun 17 00:04:57 UTC 2024 -- Mon Jun 17 10:04:57 AEST 2024
+  # virgil 20240617.6
+  # Mon Jun 17 06:03:14 UTC 2024 -- Mon Jun 17 16:03:14 AEST 2024
   #
-  # Merged PR 24398: passwordstate-au2-setup
-  # 15397d692c7f5c75d25e3f861ff598f8f73cf262
-  virgil_build_id: '990565'
+  # Merged PR 24448: DE1 Passwordstate Subnets
+  # 13f84f10f333f33d01a45451b9fb4625ee5d4328
+  virgil_build_id: '990895'
