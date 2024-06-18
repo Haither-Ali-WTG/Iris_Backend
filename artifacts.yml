@@ -7,9 +7,9 @@ variables:
   # fa011b9537ba4d4935fd5b59af6321a4f03d213f
   dante_build_id: '991960'
 
-  # virgil 20240618.9
-  # Tue Jun 18 01:32:11 UTC 2024 -- Tue Jun 18 11:32:11 AEST 2024
+  # virgil 20240618.14
+  # Tue Jun 18 06:26:09 UTC 2024 -- Tue Jun 18 16:26:09 AEST 2024
   #
-  # Merged PR 24402: passwordstate-us2
-  # 82c55fbff5e0f2738e303e06d21ae75f269721f9
-  virgil_build_id: '991878'
+  # Merged PR 24382: Updated native VLAN for multiple ESXi hosts
+  # 609934b5c1f01b5ef72890e0dfe2b48d3e770306
+  virgil_build_id: '992151'
