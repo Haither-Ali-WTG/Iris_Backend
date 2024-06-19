@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240619.1
-  # Wed Jun 19 01:01:24 UTC 2024 -- Wed Jun 19 11:01:24 AEST 2024
+  # Dante Build Artifact 20240619.2
+  # Wed Jun 19 05:49:10 UTC 2024 -- Wed Jun 19 15:49:10 AEST 2024
   #
-  # Merged PR 24503: Update the NTP allowance list for DE1 && US2
-  # c0839d7dba8df346d76c10be6af074979fefa07f
-  dante_build_id: '993001'
+  # Merge pull request 24547 from dante_artifact_upgrade into master
+  # 1a29abb8df66aebbba4efbde4b2394a2c380cbbb
+  dante_build_id: '993304'
 
   # virgil 20240619.2
   # Wed Jun 19 05:00:33 UTC 2024 -- Wed Jun 19 15:00:33 AEST 2024
