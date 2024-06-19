@@ -7,9 +7,9 @@ variables:
   # 1a29abb8df66aebbba4efbde4b2394a2c380cbbb
   dante_build_id: '993304'
 
-  # virgil 20240619.2
-  # Wed Jun 19 05:00:33 UTC 2024 -- Wed Jun 19 15:00:33 AEST 2024
+  # virgil 20240619.8
+  # Wed Jun 19 06:32:31 UTC 2024 -- Wed Jun 19 16:32:31 AEST 2024
   #
-  # Merged PR 24502: Virgil - Change Kafka test queues
-  # 2add8d4982fa7ac6a5c80a68f04d77a884115a69
-  virgil_build_id: '993260'
+  # Merged PR 24548: New Topics for Pelican Project
+  # 8f5c08f0b41da634f67f31808ed6aef76913fd72
+  virgil_build_id: '993373'
