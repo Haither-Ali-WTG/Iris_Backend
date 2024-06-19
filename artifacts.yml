@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240619.4
-  # Wed Jun 19 09:08:52 UTC 2024 -- Wed Jun 19 19:08:52 AEST 2024
+  # Dante Build Artifact 20240619.5
+  # Wed Jun 19 09:46:11 UTC 2024 -- Wed Jun 19 19:46:11 AEST 2024
   #
-  # Merge pull request 24568 from dante_artifact_upgrade into master
-  # eb5d5a4104ac41e9de8b1a04acc73d4c63acb58e
-  dante_build_id: '993552'
+  # Merged PR 24538: Deploy updated NTP config on us2mal00402.
+  # 478492459bea3f93c55ff5cf1eae0fc00672a564
+  dante_build_id: '993599'
 
   # virgil 20240619.17
   # Wed Jun 19 07:51:13 UTC 2024 -- Wed Jun 19 17:51:13 AEST 2024
