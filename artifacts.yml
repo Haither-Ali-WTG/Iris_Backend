@@ -7,9 +7,9 @@ variables:
   # c0839d7dba8df346d76c10be6af074979fefa07f
   dante_build_id: '993001'
 
-  # virgil 20240618.14
-  # Tue Jun 18 06:26:09 UTC 2024 -- Tue Jun 18 16:26:09 AEST 2024
+  # virgil 20240619.2
+  # Wed Jun 19 05:00:33 UTC 2024 -- Wed Jun 19 15:00:33 AEST 2024
   #
-  # Merged PR 24382: Updated native VLAN for multiple ESXi hosts
-  # 609934b5c1f01b5ef72890e0dfe2b48d3e770306
-  virgil_build_id: '992151'
+  # Merged PR 24502: Virgil - Change Kafka test queues
+  # 2add8d4982fa7ac6a5c80a68f04d77a884115a69
+  virgil_build_id: '993260'
