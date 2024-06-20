@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240620.4
-  # Thu Jun 20 05:03:46 UTC 2024 -- Thu Jun 20 15:03:46 AEST 2024
+  # Dante Build Artifact 20240620.5
+  # Thu Jun 20 06:48:58 UTC 2024 -- Thu Jun 20 16:48:58 AEST 2024
   #
-  # Merged PR 24508: Automate the subclient content creation for "/xt-archive-prod" buckets.
-  # 86c982f7a53204dbf1cae642c4680ecf8fc37964
-  dante_build_id: '994653'
+  # Merge pull request 24616 from dante_artifact_upgrade into master
+  # b002555ac6bcaa3f94ad2111724fca1c8585c4ff
+  dante_build_id: '994784'
 
   # virgil 20240620.31
   # Thu Jun 20 05:27:36 UTC 2024 -- Thu Jun 20 15:27:36 AEST 2024
