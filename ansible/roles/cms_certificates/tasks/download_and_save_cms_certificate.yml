@@ -18,7 +18,7 @@
 
 - name: Get intermediate certificate if required
   uri:
-    url: "https://cms.gis.wtg.zone/cms/v1/certificate/{{ certificate_domain }}/{{ real_certificate_name }}"
+    url: "https://{{ cms_endpoint }}/cms/v1/certificate/{{ certificate_domain }}/{{ real_certificate_name }}"
     method: GET
     headers:
       Content-Type: application/json
