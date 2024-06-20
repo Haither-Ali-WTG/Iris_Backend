@@ -111,13 +111,14 @@ stages:
             displayName: 'Check and save certificates'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates.yml'
+              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates_cms.yml'
               inventoriesAgentMachine: 'file'
               inventoryFileOnAgentMachine: 'data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="intermediate=false" -e="s3_host=$(s3_host)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
