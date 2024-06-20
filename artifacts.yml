@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240619.5
-  # Wed Jun 19 09:46:11 UTC 2024 -- Wed Jun 19 19:46:11 AEST 2024
+  # Dante Build Artifact 20240620.1
+  # Thu Jun 20 00:21:10 UTC 2024 -- Thu Jun 20 10:21:10 AEST 2024
   #
-  # Merged PR 24538: Deploy updated NTP config on us2mal00402.
-  # 478492459bea3f93c55ff5cf1eae0fc00672a564
-  dante_build_id: '993599'
+  # Merged PR 24580: Update the NTP time source to SEL-2488 from au2mal00402 to all US2 mgmt nodes.
+  # 8b8dd04508b7140620665493d196674b52e4a778
+  dante_build_id: '994284'
 
-  # virgil 20240619.17
-  # Wed Jun 19 07:51:13 UTC 2024 -- Wed Jun 19 17:51:13 AEST 2024
+  # virgil 20240620.6
+  # Thu Jun 20 00:14:24 UTC 2024 -- Thu Jun 20 10:14:24 AEST 2024
   #
-  # Merged PR 24218: S3TearDown202405.yaml
-  # d77d81909e1a50354b1a7caa1bcd134fe0202f56
-  virgil_build_id: '993463'
+  # Merged PR 24554: biztalk-network-update
+  # b1a4254a7267f112bec7b1c6e3e87493f63240d1
+  virgil_build_id: '994261'
