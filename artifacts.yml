@@ -7,9 +7,9 @@ variables:
   # b002555ac6bcaa3f94ad2111724fca1c8585c4ff
   dante_build_id: '994784'
 
-  # virgil 20240620.31
-  # Thu Jun 20 05:27:36 UTC 2024 -- Thu Jun 20 15:27:36 AEST 2024
+  # virgil 20240620.37
+  # Thu Jun 20 09:20:03 UTC 2024 -- Thu Jun 20 19:20:03 AEST 2024
   #
-  # Merged PR 24612: feature - adding packages.core.wtg.ws DNS entry
-  # bf0b8a7b6bcabddd202f247c829250682789d51e
-  virgil_build_id: '994690'
+  # Merged PR 24637: update de1mal00303 port config
+  # 16eab6bdb93622fc481cb1804f5511f5c0f6b928
+  virgil_build_id: '994919'
