@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240620.1
-  # Thu Jun 20 00:21:10 UTC 2024 -- Thu Jun 20 10:21:10 AEST 2024
+  # Dante Build Artifact 20240620.2
+  # Thu Jun 20 01:28:34 UTC 2024 -- Thu Jun 20 11:28:34 AEST 2024
   #
-  # Merged PR 24580: Update the NTP time source to SEL-2488 from au2mal00402 to all US2 mgmt nodes.
-  # 8b8dd04508b7140620665493d196674b52e4a778
-  dante_build_id: '994284'
+  # Merge pull request 24588 from dante_artifact_upgrade into master
+  # 284df3ce0d4dbb2fd215cf6789163ac8000173dc
+  dante_build_id: '994374'
 
   # virgil 20240620.6
   # Thu Jun 20 00:14:24 UTC 2024 -- Thu Jun 20 10:14:24 AEST 2024
