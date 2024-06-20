@@ -7,9 +7,9 @@ variables:
   # 284df3ce0d4dbb2fd215cf6789163ac8000173dc
   dante_build_id: '994374'
 
-  # virgil 20240620.6
-  # Thu Jun 20 00:14:24 UTC 2024 -- Thu Jun 20 10:14:24 AEST 2024
+  # virgil 20240620.19
+  # Thu Jun 20 02:12:47 UTC 2024 -- Thu Jun 20 12:12:47 AEST 2024
   #
-  # Merged PR 24554: biztalk-network-update
-  # b1a4254a7267f112bec7b1c6e3e87493f63240d1
-  virgil_build_id: '994261'
+  # Merged PR 24589: UpdateAU2IDPZoneName
+  # 4bb5d52671d15792a8fb62ed39f75051b8ab1433
+  virgil_build_id: '994447'
