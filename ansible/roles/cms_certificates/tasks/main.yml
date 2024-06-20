@@ -1,4 +1,8 @@
 ---
+- name: Set the CMS endpoint
+  set_fact:
+    cms_endpoint: "{{ 'cms.lab.gis.wtg.zone' if simulation else 'cms.gis.wtg.zone' }}"
+
 - name: Calculate certificates to be downloaded
   set_fact:
     certs_data: "{{ certs_data | default([]) | from_iris_inventory_to_certs_data(item, hostvars[item].certificates) }}"

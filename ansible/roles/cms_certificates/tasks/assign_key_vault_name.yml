@@ -1,7 +1,7 @@
 ---
 - name: Get the Key Vault Name
   uri:
-    url: "https://cms.gis.wtg.zone/cms/v1/certificate/{{ cert.domain }}/{{ cert.name }}"
+    url: "https://{{ cms_endpoint }}/cms/v1/certificate/{{ cert.domain }}/{{ cert.name }}"
     method: GET
     headers:
       Content-Type: application/json
