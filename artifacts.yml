@@ -7,9 +7,9 @@ variables:
   # ed59e50813beac2673eeb9a5f813e04c69f10e7a
   dante_build_id: '994528'
 
-  # virgil 20240620.19
-  # Thu Jun 20 02:12:47 UTC 2024 -- Thu Jun 20 12:12:47 AEST 2024
+  # virgil 20240620.27
+  # Thu Jun 20 04:26:00 UTC 2024 -- Thu Jun 20 14:26:00 AEST 2024
   #
-  # Merged PR 24589: UpdateAU2IDPZoneName
-  # 4bb5d52671d15792a8fb62ed39f75051b8ab1433
-  virgil_build_id: '994447'
+  # Merged PR 24610: updateBizTalkToVMwareProfile
+  # f90ad9db9fcc0960f0e7cf169318b9508511e8bb
+  virgil_build_id: '994601'
