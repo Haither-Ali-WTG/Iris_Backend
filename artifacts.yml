@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240620.3
-  # Thu Jun 20 03:26:24 UTC 2024 -- Thu Jun 20 13:26:24 AEST 2024
+  # Dante Build Artifact 20240620.4
+  # Thu Jun 20 05:03:46 UTC 2024 -- Thu Jun 20 15:03:46 AEST 2024
   #
-  # Merge pull request 24602 from dante_artifact_upgrade into master
-  # ed59e50813beac2673eeb9a5f813e04c69f10e7a
-  dante_build_id: '994528'
+  # Merged PR 24508: Automate the subclient content creation for "/xt-archive-prod" buckets.
+  # 86c982f7a53204dbf1cae642c4680ecf8fc37964
+  dante_build_id: '994653'
 
-  # virgil 20240620.19
-  # Thu Jun 20 02:12:47 UTC 2024 -- Thu Jun 20 12:12:47 AEST 2024
+  # virgil 20240620.27
+  # Thu Jun 20 04:26:00 UTC 2024 -- Thu Jun 20 14:26:00 AEST 2024
   #
-  # Merged PR 24589: UpdateAU2IDPZoneName
-  # 4bb5d52671d15792a8fb62ed39f75051b8ab1433
-  virgil_build_id: '994447'
+  # Merged PR 24610: updateBizTalkToVMwareProfile
+  # f90ad9db9fcc0960f0e7cf169318b9508511e8bb
+  virgil_build_id: '994601'
