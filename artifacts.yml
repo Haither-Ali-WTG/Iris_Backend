@@ -7,9 +7,9 @@ variables:
   # 21d79ef5c38a04dca79faab43ccf80c9c3e40295
   dante_build_id: '994979'
 
-  # virgil 20240620.37
-  # Thu Jun 20 09:20:03 UTC 2024 -- Thu Jun 20 19:20:03 AEST 2024
+  # virgil 20240621.7
+  # Thu Jun 20 23:39:05 UTC 2024 -- Fri Jun 21 09:39:05 AEST 2024
   #
-  # Merged PR 24637: update de1mal00303 port config
-  # 16eab6bdb93622fc481cb1804f5511f5c0f6b928
-  virgil_build_id: '994919'
+  # Merged PR 24604: Ubuntu 24.04 support and simulation nodes rename
+  # 5693e8ae9a18171164cfd8a72929a5ae01443752
+  virgil_build_id: '995571'
