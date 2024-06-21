@@ -7,9 +7,9 @@ variables:
   # 57ab58075de478250b2015fdc6a93948b8398442
   dante_build_id: '995782'
 
-  # virgil 20240621.12
-  # Fri Jun 21 01:55:21 UTC 2024 -- Fri Jun 21 11:55:21 AEST 2024
+  # virgil 20240621.16
+  # Fri Jun 21 03:27:44 UTC 2024 -- Fri Jun 21 13:27:44 AEST 2024
   #
-  # Merged PR 24660: CS01632804 - Fixed Typo in Topic Name
-  # 82f2c42fe4e62e0112bfc769d02a9f644f92296c
-  virgil_build_id: '995739'
+  # Merged PR 23722: Alvin's pub key
+  # eb318958d3d0c7fc6ea4fd8f1735bea847180149
+  virgil_build_id: '995859'
