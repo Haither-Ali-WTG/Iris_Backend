@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240621.2
-  # Fri Jun 21 02:29:14 UTC 2024 -- Fri Jun 21 12:29:14 AEST 2024
+  # Dante Build Artifact 20240621.3
+  # Fri Jun 21 04:28:11 UTC 2024 -- Fri Jun 21 14:28:11 AEST 2024
   #
-  # Merged PR 24669: enable snmp on switches running cumulus 580
-  # 57ab58075de478250b2015fdc6a93948b8398442
-  dante_build_id: '995782'
+  # Merge pull request 24675 from dante_artifact_upgrade into master
+  # 8e41b4d0f125033d701c21259372c1693586e492
+  dante_build_id: '995918'
 
   # virgil 20240621.16
   # Fri Jun 21 03:27:44 UTC 2024 -- Fri Jun 21 13:27:44 AEST 2024
