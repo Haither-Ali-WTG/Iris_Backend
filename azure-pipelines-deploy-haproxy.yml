@@ -100,7 +100,7 @@ stages:
                         args: >-
                           -u $(user) --diff
                           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                          -e="intermediate=false" -e="s3_host=$(s3_host)"
+                          -e="intermediate=false" -e="s3_host=${{ run.s3_host }}"
                           -e="simulation=true" -e="azure_kv_name=$(cert_kv_name)"
                           -e="target_dc=${{ run.agent_dc }}"
                       env:
