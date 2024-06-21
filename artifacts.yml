@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240621.4
-  # Fri Jun 21 05:03:48 UTC 2024 -- Fri Jun 21 15:03:48 AEST 2024
+  # Dante Build Artifact 20240621.5
+  # Fri Jun 21 06:46:32 UTC 2024 -- Fri Jun 21 16:46:32 AEST 2024
   #
-  # Merged PR 24160: rollout neighmgt to AU2 MLAG switches
-  # 5b1d75d31dbc9e33c4d4ac07e1d764461d752ab4
-  dante_build_id: '995979'
+  # Merge pull request 24699 from dante_artifact_upgrade into master
+  # 03fcce8a464af45616d7ebdcf726c5bd856b5f67
+  dante_build_id: '996083'
 
   # virgil 20240621.19
   # Fri Jun 21 05:38:33 UTC 2024 -- Fri Jun 21 15:38:33 AEST 2024
