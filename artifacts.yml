@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240624.7
-  # Mon Jun 24 07:51:13 UTC 2024 -- Mon Jun 24 17:51:13 AEST 2024
+  # Dante Build Artifact 20240624.8
+  # Mon Jun 24 08:56:26 UTC 2024 -- Mon Jun 24 18:56:26 AEST 2024
   #
-  # Merged PR 24734: Create the pipeline for daily xt-archive-prod Commvault subclient update tasks.
-  # a07f3f024008e4ec3dc78beb41e65324b9e24eac
-  dante_build_id: '999371'
+  # Merged PR 24748: Ubuntui 24.04 ISO build support
+  # b718b350f72094d8ec6ed319b54b3f2a23b09ca2
+  dante_build_id: '999440'
 
   # virgil 20240624.11
   # Mon Jun 24 05:42:34 UTC 2024 -- Mon Jun 24 15:42:34 AEST 2024
