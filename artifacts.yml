@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240624.6
-  # Mon Jun 24 06:49:28 UTC 2024 -- Mon Jun 24 16:49:28 AEST 2024
+  # Dante Build Artifact 20240624.7
+  # Mon Jun 24 07:51:13 UTC 2024 -- Mon Jun 24 17:51:13 AEST 2024
   #
-  # Merge pull request 24755 from dante_artifact_upgrade into master
-  # b597e265ac4c469b59d933bbed25aa5e42d1c387
-  dante_build_id: '999295'
+  # Merged PR 24734: Create the pipeline for daily xt-archive-prod Commvault subclient update tasks.
+  # a07f3f024008e4ec3dc78beb41e65324b9e24eac
+  dante_build_id: '999371'
 
   # virgil 20240624.11
   # Mon Jun 24 05:42:34 UTC 2024 -- Mon Jun 24 15:42:34 AEST 2024
