@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240625.7
-  # Tue Jun 25 06:29:39 UTC 2024 -- Tue Jun 25 16:29:39 AEST 2024
+  # Dante Build Artifact 20240625.8
+  # Tue Jun 25 08:27:27 UTC 2024 -- Tue Jun 25 18:27:27 AEST 2024
   #
-  # Merged PR 24803: Updated cleanup old ISOs for Ubuntu 24.04
-  # 2a521850368d51dd5325f0c5e8b2e659b3257f60
-  dante_build_id: '1000573'
+  # Merge pull request 24814 from dante_artifact_upgrade into master
+  # 3facf1afd2dff6db20b600368cad85e679d49cab
+  dante_build_id: '1000684'
 
   # virgil 20240625.6
   # Tue Jun 25 06:08:04 UTC 2024 -- Tue Jun 25 16:08:04 AEST 2024
