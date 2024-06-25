@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240625.6
-  # Tue Jun 25 05:37:49 UTC 2024 -- Tue Jun 25 15:37:49 AEST 2024
+  # Dante Build Artifact 20240625.7
+  # Tue Jun 25 06:29:39 UTC 2024 -- Tue Jun 25 16:29:39 AEST 2024
   #
-  # Merged PR 24788: Fix the pipeline job name.
-  # d877d57c84b1f978d40189304fe160d5cdc4f4d3
-  dante_build_id: '1000505'
+  # Merged PR 24803: Updated cleanup old ISOs for Ubuntu 24.04
+  # 2a521850368d51dd5325f0c5e8b2e659b3257f60
+  dante_build_id: '1000573'
 
-  # virgil 20240625.2
-  # Tue Jun 25 00:48:12 UTC 2024 -- Tue Jun 25 10:48:12 AEST 2024
+  # virgil 20240625.6
+  # Tue Jun 25 06:08:04 UTC 2024 -- Tue Jun 25 16:08:04 AEST 2024
   #
-  # Merged PR 23928: Virgil - Change network related test cases
-  # cc58811941bd33c8ff72a80d06beab54a319f8c7
-  virgil_build_id: '1000164'
+  # Merged PR 23880: Virgil - Add support for 10.8 on lab switches
+  # 47fc672f664b1e3a760861aff9a670ffb7f6ce8a
+  virgil_build_id: '1000556'
