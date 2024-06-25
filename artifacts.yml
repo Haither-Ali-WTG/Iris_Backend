@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240625.3
-  # Tue Jun 25 02:48:35 UTC 2024 -- Tue Jun 25 12:48:35 AEST 2024
+  # Dante Build Artifact 20240625.5
+  # Tue Jun 25 04:12:06 UTC 2024 -- Tue Jun 25 14:12:06 AEST 2024
   #
-  # Merge pull request 24787 from dante_artifact_upgrade into master
-  # 16437a327bb61f3800630d75dacb9817ac02c162
-  dante_build_id: '1000320'
+  # Merged PR 24799: ISO builder ubuntu 24.04 support
+  # f12a803ba0c010c70c3b962ae5312f51465112a6
+  dante_build_id: '1000404'
 
   # virgil 20240625.2
   # Tue Jun 25 00:48:12 UTC 2024 -- Tue Jun 25 10:48:12 AEST 2024
