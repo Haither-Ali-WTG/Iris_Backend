@@ -7,9 +7,9 @@ variables:
   # 3facf1afd2dff6db20b600368cad85e679d49cab
   dante_build_id: '1000684'
 
-  # virgil 20240625.6
-  # Tue Jun 25 06:08:04 UTC 2024 -- Tue Jun 25 16:08:04 AEST 2024
+  # virgil 20240626.2
+  # Tue Jun 25 22:41:52 UTC 2024 -- Wed Jun 26 08:41:52 AEST 2024
   #
-  # Merged PR 23880: Virgil - Add support for 10.8 on lab switches
-  # 47fc672f664b1e3a760861aff9a670ffb7f6ce8a
-  virgil_build_id: '1000556'
+  # Merge pull request 24836 from virgil_python_upgrade into master
+  # 74236c5b5f4b5bc23c7194a366571f98274083b8
+  virgil_build_id: '1001306'
