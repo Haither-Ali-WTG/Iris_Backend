@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240625.5
-  # Tue Jun 25 04:12:06 UTC 2024 -- Tue Jun 25 14:12:06 AEST 2024
+  # Dante Build Artifact 20240625.6
+  # Tue Jun 25 05:37:49 UTC 2024 -- Tue Jun 25 15:37:49 AEST 2024
   #
-  # Merged PR 24799: ISO builder ubuntu 24.04 support
-  # f12a803ba0c010c70c3b962ae5312f51465112a6
-  dante_build_id: '1000404'
+  # Merged PR 24788: Fix the pipeline job name.
+  # d877d57c84b1f978d40189304fe160d5cdc4f4d3
+  dante_build_id: '1000505'
 
   # virgil 20240625.2
   # Tue Jun 25 00:48:12 UTC 2024 -- Tue Jun 25 10:48:12 AEST 2024
