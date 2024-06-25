@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240625.2
-  # Tue Jun 25 01:32:12 UTC 2024 -- Tue Jun 25 11:32:12 AEST 2024
+  # Dante Build Artifact 20240625.3
+  # Tue Jun 25 02:48:35 UTC 2024 -- Tue Jun 25 12:48:35 AEST 2024
   #
-  # Merged PR 23321: WI00641099 - Minos check for signal strength
-  # a2d517a336cef831592afcb04af650e6bb028ab3
-  dante_build_id: '1000241'
+  # Merge pull request 24787 from dante_artifact_upgrade into master
+  # 16437a327bb61f3800630d75dacb9817ac02c162
+  dante_build_id: '1000320'
 
   # virgil 20240625.2
   # Tue Jun 25 00:48:12 UTC 2024 -- Tue Jun 25 10:48:12 AEST 2024
