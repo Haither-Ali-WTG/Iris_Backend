@@ -7,9 +7,9 @@ variables:
   # abdf35fc6eff8bb1ff5d07e8687f5338503443bc
   dante_build_id: '1000109'
 
-  # virgil 20240624.11
-  # Mon Jun 24 05:42:34 UTC 2024 -- Mon Jun 24 15:42:34 AEST 2024
+  # virgil 20240625.2
+  # Tue Jun 25 00:48:12 UTC 2024 -- Tue Jun 25 10:48:12 AEST 2024
   #
-  # Merged PR 24706: Remove the incorrect US2 IDP vrfs
-  # 874f7943b8fe89280271215093e40de6ee773e75
-  virgil_build_id: '999220'
+  # Merged PR 23928: Virgil - Change network related test cases
+  # cc58811941bd33c8ff72a80d06beab54a319f8c7
+  virgil_build_id: '1000164'
