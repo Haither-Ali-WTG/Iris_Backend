@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240626.4
-  # Wed Jun 26 03:02:17 UTC 2024 -- Wed Jun 26 13:02:17 AEST 2024
+  # Dante Build Artifact 20240626.5
+  # Wed Jun 26 04:06:58 UTC 2024 -- Wed Jun 26 14:06:58 AEST 2024
   #
-  # Merged PR 24854: Added temperature check for switch ports
-  # 7245147cdce4ed6b33f3e55d2b200009cab78cd1
-  dante_build_id: '1001651'
+  # Merge pull request 24875 from dante_artifact_upgrade into master
+  # 024f1bba3d1ef1e21fafb1f6f222fffbc10a5c3d
+  dante_build_id: '1001721'
 
   # virgil 20240626.5
   # Wed Jun 26 01:54:32 UTC 2024 -- Wed Jun 26 11:54:32 AEST 2024
