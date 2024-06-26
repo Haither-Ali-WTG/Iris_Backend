@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240626.5
-  # Wed Jun 26 04:06:58 UTC 2024 -- Wed Jun 26 14:06:58 AEST 2024
+  # Dante Build Artifact 20240626.6
+  # Wed Jun 26 05:52:58 UTC 2024 -- Wed Jun 26 15:52:58 AEST 2024
   #
-  # Merge pull request 24875 from dante_artifact_upgrade into master
-  # 024f1bba3d1ef1e21fafb1f6f222fffbc10a5c3d
-  dante_build_id: '1001721'
+  # Merged PR 24888: Only trigger next pipelines when the host is a new host
+  # 96b0755ba1d5c7c72be692aef5e0d4b726cab18b
+  dante_build_id: '1001827'
 
   # virgil 20240626.5
   # Wed Jun 26 01:54:32 UTC 2024 -- Wed Jun 26 11:54:32 AEST 2024
