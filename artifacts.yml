@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240626.3
-  # Wed Jun 26 01:53:43 UTC 2024 -- Wed Jun 26 11:53:43 AEST 2024
+  # Dante Build Artifact 20240626.4
+  # Wed Jun 26 03:02:17 UTC 2024 -- Wed Jun 26 13:02:17 AEST 2024
   #
-  # Merged PR 24856: WI00764259 - Fix the commvault connection.
-  # a186cbc878ae992122b3c971ac70d641da191f4b
-  dante_build_id: '1001539'
+  # Merged PR 24854: Added temperature check for switch ports
+  # 7245147cdce4ed6b33f3e55d2b200009cab78cd1
+  dante_build_id: '1001651'
 
   # virgil 20240626.5
   # Wed Jun 26 01:54:32 UTC 2024 -- Wed Jun 26 11:54:32 AEST 2024
