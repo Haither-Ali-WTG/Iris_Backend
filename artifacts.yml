@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240626.8
-  # Wed Jun 26 07:19:59 UTC 2024 -- Wed Jun 26 17:19:59 AEST 2024
+  # Dante Build Artifact 20240626.9
+  # Wed Jun 26 08:46:55 UTC 2024 -- Wed Jun 26 18:46:55 AEST 2024
   #
-  # Merged PR 24883: Changed back repo setup for Ubuntu 24.04 and forced it to use regular sources.list
-  # 20b8723e3b38ad63a59b1bcd16048afb6bf79bed
-  dante_build_id: '1001928'
+  # Merge pull request 24911 from dante_artifact_upgrade into master
+  # 7c9f2673b69a39fe531f75482c811cfb91c8d476
+  dante_build_id: '1002029'
 
   # virgil 20240626.10
   # Wed Jun 26 07:38:07 UTC 2024 -- Wed Jun 26 17:38:07 AEST 2024
