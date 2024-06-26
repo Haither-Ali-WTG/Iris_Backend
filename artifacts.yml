@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240626.7
-  # Wed Jun 26 06:44:21 UTC 2024 -- Wed Jun 26 16:44:21 AEST 2024
+  # Dante Build Artifact 20240626.8
+  # Wed Jun 26 07:19:59 UTC 2024 -- Wed Jun 26 17:19:59 AEST 2024
   #
-  # Merged PR 24894: Force cache update or python apt packages
-  # 036d0c8fefdebb1068fe2dd68cc615e3fb840ea1
-  dante_build_id: '1001879'
+  # Merged PR 24883: Changed back repo setup for Ubuntu 24.04 and forced it to use regular sources.list
+  # 20b8723e3b38ad63a59b1bcd16048afb6bf79bed
+  dante_build_id: '1001928'
 
-  # virgil 20240626.5
-  # Wed Jun 26 01:54:32 UTC 2024 -- Wed Jun 26 11:54:32 AEST 2024
+  # virgil 20240626.10
+  # Wed Jun 26 07:38:07 UTC 2024 -- Wed Jun 26 17:38:07 AEST 2024
   #
-  # Merged PR 24866: add smb backup network
-  # c9200ad35dd90c7367ad0bdf4f355fefa4e558bc
-  virgil_build_id: '1001542'
+  # Merged PR 24891: add vlan1150 to apex13/14 in DE1
+  # 18ab1d360759952de5d531e262307ec04db3f702
+  virgil_build_id: '1001950'
