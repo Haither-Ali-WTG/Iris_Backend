@@ -7,9 +7,9 @@ variables:
   # 55140992951ed055e7c95ddfd3f9a992582b03c8
   dante_build_id: '1003174'
 
-  # virgil 20240627.11
-  # Thu Jun 27 04:31:37 UTC 2024 -- Thu Jun 27 14:31:37 AEST 2024
+  # virgil 20240628.3
+  # Thu Jun 27 23:20:40 UTC 2024 -- Fri Jun 28 09:20:40 AEST 2024
   #
-  # Merged PR 24307: updating downstream server names on apex15,16
-  # abe4a5bb1b7886cd72d483963f6e4d73b8958090
-  virgil_build_id: '1003022'
+  # Merged PR 24972: DE1 add Native VLAN to ESXi nodes
+  # 5a82fc3ef297a7dd7a7d25450f62db484dbef83f
+  virgil_build_id: '1003891'
