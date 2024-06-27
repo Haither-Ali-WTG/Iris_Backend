@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240627.2
-  # Thu Jun 27 02:49:21 UTC 2024 -- Thu Jun 27 12:49:21 AEST 2024
+  # Dante Build Artifact 20240627.3
+  # Thu Jun 27 04:28:34 UTC 2024 -- Thu Jun 27 14:28:34 AEST 2024
   #
-  # Merge pull request 24926 from dante_python_upgrade into master
-  # b7f0b152551dbc958988aa108cd8874fff1fcea7
-  dante_build_id: '1002900'
+  # Merge pull request 24943 from dante_artifact_upgrade into master
+  # 9b4b2bbcb6ae45e91441ba6b377d8c8836fd85db
+  dante_build_id: '1003004'
 
-  # virgil 20240627.9
-  # Thu Jun 27 02:19:38 UTC 2024 -- Thu Jun 27 12:19:38 AEST 2024
+  # virgil 20240627.11
+  # Thu Jun 27 04:31:37 UTC 2024 -- Thu Jun 27 14:31:37 AEST 2024
   #
-  # Merged PR 24917: Config switch port #26 on apex29/30, rack 12 for backup return server
-  # 4483a5671f71bebf380b4e716b1583f39c95645e
-  virgil_build_id: '1002853'
+  # Merged PR 24307: updating downstream server names on apex15,16
+  # abe4a5bb1b7886cd72d483963f6e4d73b8958090
+  virgil_build_id: '1003022'
