@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240627.4
-  # Thu Jun 27 05:48:55 UTC 2024 -- Thu Jun 27 15:48:55 AEST 2024
+  # Dante Build Artifact 20240627.5
+  # Thu Jun 27 06:51:52 UTC 2024 -- Thu Jun 27 16:51:52 AEST 2024
   #
-  # Merge pull request 24957 from dante_artifact_upgrade into master
-  # 44794a4032a9236c4d7fd02d294d93c805d12840
-  dante_build_id: '1003108'
+  # Merged PR 24959: Qcow2 builder support for Ubuntu 24.04
+  # 55140992951ed055e7c95ddfd3f9a992582b03c8
+  dante_build_id: '1003174'
 
   # virgil 20240627.11
   # Thu Jun 27 04:31:37 UTC 2024 -- Thu Jun 27 14:31:37 AEST 2024
