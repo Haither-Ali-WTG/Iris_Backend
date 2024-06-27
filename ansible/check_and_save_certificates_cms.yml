@@ -1,6 +1,5 @@
 ---
 - name: Check and save certificates
   hosts: localhost
-  gather_facts: no
   roles:
     - cms_certificates
