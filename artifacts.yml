@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240628.2
-  # Fri Jun 28 03:46:39 UTC 2024 -- Fri Jun 28 13:46:39 AEST 2024
+  # Dante Build Artifact 20240628.3
+  # Fri Jun 28 05:13:54 UTC 2024 -- Fri Jun 28 15:13:54 AEST 2024
   #
-  # Merge pull request 25002 from dante_artifact_upgrade into master
-  # 8d48806b19843b3f5eacf45e0bfcb8c8e8200f7a
-  dante_build_id: '1004173'
+  # Merged PR 25006: Added 10.91 (Bengaluru) office network to the AU2 NTP allowance list.
+  # 756772ea7431e653c0dafa460d9cf02d04c6deb8
+  dante_build_id: '1004273'
 
   # virgil 20240628.13
   # Fri Jun 28 02:35:37 UTC 2024 -- Fri Jun 28 12:35:37 AEST 2024
