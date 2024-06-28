@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240628.4
-  # Fri Jun 28 06:17:43 UTC 2024 -- Fri Jun 28 16:17:43 AEST 2024
+  # Dante Build Artifact 20240628.5
+  # Fri Jun 28 07:46:52 UTC 2024 -- Fri Jun 28 17:46:52 AEST 2024
   #
-  # Merged PR 25021: Update the NTP allowance to include the AU1 and US1 network CIDR.
-  # f127a9e2cdf7ba01afb530acfc54ed42b641a6b8
-  dante_build_id: '1004345'
+  # Merge pull request 25028 from dante_artifact_upgrade into master
+  # 4db3e933a61b3013f14d2fa3764788f0b885f456
+  dante_build_id: '1004435'
 
   # virgil 20240628.18
   # Fri Jun 28 06:37:55 UTC 2024 -- Fri Jun 28 16:37:55 AEST 2024
