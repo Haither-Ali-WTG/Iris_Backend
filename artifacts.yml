@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240628.3
-  # Fri Jun 28 05:13:54 UTC 2024 -- Fri Jun 28 15:13:54 AEST 2024
+  # Dante Build Artifact 20240628.4
+  # Fri Jun 28 06:17:43 UTC 2024 -- Fri Jun 28 16:17:43 AEST 2024
   #
-  # Merged PR 25006: Added 10.91 (Bengaluru) office network to the AU2 NTP allowance list.
-  # 756772ea7431e653c0dafa460d9cf02d04c6deb8
-  dante_build_id: '1004273'
+  # Merged PR 25021: Update the NTP allowance to include the AU1 and US1 network CIDR.
+  # f127a9e2cdf7ba01afb530acfc54ed42b641a6b8
+  dante_build_id: '1004345'
 
-  # virgil 20240628.13
-  # Fri Jun 28 02:35:37 UTC 2024 -- Fri Jun 28 12:35:37 AEST 2024
+  # virgil 20240628.18
+  # Fri Jun 28 06:37:55 UTC 2024 -- Fri Jun 28 16:37:55 AEST 2024
   #
-  # Merged PR 24989: upgrade mlag pairs  AU2
-  # f58a425c767b1adca95aeb7d5059b2974cef5fdf
-  virgil_build_id: '1004112'
+  # Merged PR 25020: recorrectDE1IDPZoneNames
+  # 5b2e278a1e500a6fde4b5941a9a2dfdfcaacd06b
+  virgil_build_id: '1004368'
