@@ -7,9 +7,9 @@ variables:
   # 66f4d841a0c8655ee61d976682ab35879856dd8b
   dante_build_id: '1003957'
 
-  # virgil 20240628.7
-  # Fri Jun 28 00:21:36 UTC 2024 -- Fri Jun 28 10:21:36 AEST 2024
+  # virgil 20240628.13
+  # Fri Jun 28 02:35:37 UTC 2024 -- Fri Jun 28 12:35:37 AEST 2024
   #
-  # Merged PR 24981: Replace C-00064
-  # aaf81ddd104482922c42ca429b2203f6cccb685a
-  virgil_build_id: '1003952'
+  # Merged PR 24989: upgrade mlag pairs  AU2
+  # f58a425c767b1adca95aeb7d5059b2974cef5fdf
+  virgil_build_id: '1004112'
