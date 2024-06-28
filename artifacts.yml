@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240627.5
-  # Thu Jun 27 06:51:52 UTC 2024 -- Thu Jun 27 16:51:52 AEST 2024
+  # Dante Build Artifact 20240628.1
+  # Fri Jun 28 00:26:23 UTC 2024 -- Fri Jun 28 10:26:23 AEST 2024
   #
-  # Merged PR 24959: Qcow2 builder support for Ubuntu 24.04
-  # 55140992951ed055e7c95ddfd3f9a992582b03c8
-  dante_build_id: '1003174'
+  # Merge pull request 24987 from dante_artifact_upgrade into master
+  # 66f4d841a0c8655ee61d976682ab35879856dd8b
+  dante_build_id: '1003957'
 
-  # virgil 20240628.3
-  # Thu Jun 27 23:20:40 UTC 2024 -- Fri Jun 28 09:20:40 AEST 2024
+  # virgil 20240628.7
+  # Fri Jun 28 00:21:36 UTC 2024 -- Fri Jun 28 10:21:36 AEST 2024
   #
-  # Merged PR 24972: DE1 add Native VLAN to ESXi nodes
-  # 5a82fc3ef297a7dd7a7d25450f62db484dbef83f
-  virgil_build_id: '1003891'
+  # Merged PR 24981: Replace C-00064
+  # aaf81ddd104482922c42ca429b2203f6cccb685a
+  virgil_build_id: '1003952'
