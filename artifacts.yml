@@ -7,9 +7,9 @@ variables:
   # 4db3e933a61b3013f14d2fa3764788f0b885f456
   dante_build_id: '1004435'
 
-  # virgil 20240628.18
-  # Fri Jun 28 06:37:55 UTC 2024 -- Fri Jun 28 16:37:55 AEST 2024
+  # virgil 20240701.2
+  # Sun Jun 30 22:55:28 UTC 2024 -- Mon Jul  1 08:55:28 AEST 2024
   #
-  # Merged PR 25020: recorrectDE1IDPZoneNames
-  # 5b2e278a1e500a6fde4b5941a9a2dfdfcaacd06b
-  virgil_build_id: '1004368'
+  # Merge pull request 25036 from virgil_python_upgrade into master
+  # eb268dcc5f93fd987d320f39fe4d24a1140055ac
+  virgil_build_id: '1006953'
