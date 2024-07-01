@@ -7,9 +7,9 @@ variables:
   # 3ff18bce5a9162ae78a90c8fe5a65021d6813e2f
   dante_build_id: '1007093'
 
-  # virgil 20240701.2
-  # Sun Jun 30 22:55:28 UTC 2024 -- Mon Jul  1 08:55:28 AEST 2024
+  # virgil 20240702.1
+  # Mon Jul  1 17:59:06 UTC 2024 -- Tue Jul  2 03:59:06 AEST 2024
   #
-  # Merge pull request 25036 from virgil_python_upgrade into master
-  # eb268dcc5f93fd987d320f39fe4d24a1140055ac
-  virgil_build_id: '1006953'
+  # Merged PR 25015: Removing ordwt mail servers
+  # 949b8e32a0b5a4a792ecc3e479aee44ace741639
+  virgil_build_id: '1007851'
