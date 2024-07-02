@@ -7,9 +7,9 @@ variables:
   # fc1159458cf1dd1157e2f2591674e462706ec26a
   dante_build_id: '1008512'
 
-  # virgil 20240702.5
-  # Tue Jul  2 04:08:40 UTC 2024 -- Tue Jul  2 14:08:40 AEST 2024
+  # virgil 20240702.8
+  # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
   #
-  # Merged PR 25108: CS01667567 - Kafka Topics for Cargowise Cloud General
-  # 86cc27c2b35a8d04fa5317a3ef6fa3543dc81f45
-  virgil_build_id: '1008443'
+  # Merged PR 25121: SBRT, no untag VLAN
+  # be8d6407f923bbe1ed8e74b08ee0ac937e753368
+  virgil_build_id: '1008604'
