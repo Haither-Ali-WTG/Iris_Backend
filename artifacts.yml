@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240703.3
-  # Wed Jul  3 01:38:26 UTC 2024 -- Wed Jul  3 11:38:26 AEST 2024
+  # Dante Build Artifact 20240703.4
+  # Wed Jul  3 02:41:48 UTC 2024 -- Wed Jul  3 12:41:48 AEST 2024
   #
-  # Merge pull request 25138 from automatic_ascalaphus_image_upgrade into master
-  # c31ac81e15ec35e04eed46c75e590b22884baa4a
-  dante_build_id: '1009541'
+  # Merged PR 25165: Removed python packages installation from Dockerfile
+  # 306481e9b8b5445c5e4a5f2b55034324da244595
+  dante_build_id: '1009613'
 
   # virgil 20240702.8
   # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
