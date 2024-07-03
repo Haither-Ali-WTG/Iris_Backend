@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240703.2
-  # Wed Jul  3 00:37:58 UTC 2024 -- Wed Jul  3 10:37:58 AEST 2024
+  # Dante Build Artifact 20240703.3
+  # Wed Jul  3 01:38:26 UTC 2024 -- Wed Jul  3 11:38:26 AEST 2024
   #
-  # Merge pull request 25139 from automatic_botticelli_image_upgrade into master
-  # bdb6e1e4bcdff75422b8f9a968f6f107ba806c75
-  dante_build_id: '1009470'
+  # Merge pull request 25138 from automatic_ascalaphus_image_upgrade into master
+  # c31ac81e15ec35e04eed46c75e590b22884baa4a
+  dante_build_id: '1009541'
 
   # virgil 20240702.8
   # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
