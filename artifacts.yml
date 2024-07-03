@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240703.4
-  # Wed Jul  3 02:41:48 UTC 2024 -- Wed Jul  3 12:41:48 AEST 2024
+  # Dante Build Artifact 20240703.5
+  # Wed Jul  3 03:24:00 UTC 2024 -- Wed Jul  3 13:24:00 AEST 2024
   #
-  # Merged PR 25165: Removed python packages installation from Dockerfile
-  # 306481e9b8b5445c5e4a5f2b55034324da244595
-  dante_build_id: '1009613'
+  # Merge pull request 25153 from automatic_ptmctl_image_upgrade into master
+  # 8505c37157e3392041b43d56c826d1f4c90a0fb5
+  dante_build_id: '1009661'
 
   # virgil 20240702.8
   # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
