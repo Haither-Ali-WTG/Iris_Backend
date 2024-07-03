@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240703.6
-  # Wed Jul  3 04:20:58 UTC 2024 -- Wed Jul  3 14:20:58 AEST 2024
+  # Dante Build Artifact 20240703.8
+  # Wed Jul  3 05:29:57 UTC 2024 -- Wed Jul  3 15:29:57 AEST 2024
   #
-  # Merge pull request 25154 from automatic_dhcp_server_image_upgrade into master
-  # 2427b36c25ecdcea2d8a2bc933f70272febacef6
-  dante_build_id: '1009729'
+  # Merge pull request 25137 from automatic_styx_image_upgrade into master
+  # 2b28f0fc72f27662fe78f07ae47728293aa51e24
+  dante_build_id: '1009820'
 
   # virgil 20240702.8
   # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
