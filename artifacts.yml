@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240703.10
-  # Wed Jul  3 06:40:48 UTC 2024 -- Wed Jul  3 16:40:48 AEST 2024
+  # Dante Build Artifact 20240704.1
+  # Thu Jul  4 00:15:13 UTC 2024 -- Thu Jul  4 10:15:13 AEST 2024
   #
-  # Merged PR 25122: Dump configurations of switch into a separate dir
-  # 1a7d55ed491a432e087ff37f5a939de3cee4e202
-  dante_build_id: '1009928'
+  # Merged PR 25180: Avoid redundant pipeline runs
+  # 2c5e43836fc80ff2d7607cdd83090f295a238bda
+  dante_build_id: '1010793'
 
-  # virgil 20240702.8
-  # Tue Jul  2 06:54:02 UTC 2024 -- Tue Jul  2 16:54:02 AEST 2024
+  # virgil 20240704.3
+  # Wed Jul  3 23:46:25 UTC 2024 -- Thu Jul  4 09:46:25 AEST 2024
   #
-  # Merged PR 25121: SBRT, no untag VLAN
-  # be8d6407f923bbe1ed8e74b08ee0ac937e753368
-  virgil_build_id: '1008604'
+  # Merged PR 25197: Add 4 C53 test hypervisors
+  # c5143e1cace282100ba7fc758e914b666c11870f
+  virgil_build_id: '1010760'
