@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240705.3
-  # Fri Jul  5 01:30:28 UTC 2024 -- Fri Jul  5 11:30:28 AEST 2024
+  # Dante Build Artifact 20240705.4
+  # Fri Jul  5 02:24:58 UTC 2024 -- Fri Jul  5 12:24:58 AEST 2024
   #
-  # Merged PR 25244: Drop additional SANs for s3 endpoints
-  # a027058c0bc2658a655e17a34a2b02ccda33b264
-  dante_build_id: '1012074'
+  # Merge pull request 25134 from automatic_squid_image_upgrade into master
+  # f2542ae68a044db22c1ec9de96c99567cf22e63b
+  dante_build_id: '1012132'
 
   # virgil 20240705.2
   # Thu Jul  4 23:11:46 UTC 2024 -- Fri Jul  5 09:11:46 AEST 2024
