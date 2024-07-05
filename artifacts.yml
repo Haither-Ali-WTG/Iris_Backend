@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240705.6
-  # Fri Jul  5 04:23:07 UTC 2024 -- Fri Jul  5 14:23:07 AEST 2024
+  # Dante Build Artifact 20240705.7
+  # Fri Jul  5 05:15:34 UTC 2024 -- Fri Jul  5 15:15:34 AEST 2024
   #
-  # Merged PR 25238: Remove redundant code
-  # 9fe23ee2f794d9280a53ead1ea3dbc0a08a8b638
-  dante_build_id: '1012281'
+  # Merge pull request 25135 from automatic_bind9_image_upgrade into master
+  # bf7bade2d0d5db8ce21174abe5495d354a8c9841
+  dante_build_id: '1012355'
 
   # virgil 20240705.2
   # Thu Jul  4 23:11:46 UTC 2024 -- Fri Jul  5 09:11:46 AEST 2024
