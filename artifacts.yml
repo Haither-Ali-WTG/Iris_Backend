@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240708.6
-  # Mon Jul  8 06:08:40 UTC 2024 -- Mon Jul  8 16:08:40 AEST 2024
+  # Dante Build Artifact 20240708.9
+  # Mon Jul  8 07:38:18 UTC 2024 -- Mon Jul  8 17:38:18 AEST 2024
   #
-  # Merge pull request 25324 from dante_artifact_upgrade into master
-  # dab73731d0c2710f3610abe3a894c6de7028ddd7
-  dante_build_id: '1015633'
+  # Merged PR 25343: DNS-01 challenge comment on certs in *.wtg.ws domain
+  # 0d851081429ddc94bfa2fc0e9be443fb2e768bd8
+  dante_build_id: '1015747'
 
   # virgil 20240708.4
   # Mon Jul  8 03:09:02 UTC 2024 -- Mon Jul  8 13:09:02 AEST 2024
