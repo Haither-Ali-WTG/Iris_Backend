@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240708.10
-  # Mon Jul  8 08:37:38 UTC 2024 -- Mon Jul  8 18:37:38 AEST 2024
+  # Dante Build Artifact 20240709.1
+  # Mon Jul  8 21:48:36 UTC 2024 -- Tue Jul  9 07:48:36 AEST 2024
   #
-  # Merged PR 25321: Monthly mginx image upgrade
-  # 2a53e8197def0aecf7ad98a5bdbd928c71746b17
-  dante_build_id: '1015811'
+  # Merged PR 25336: Add additional SANs for s3 endpoints
+  # b444aab9ec8212ae651ff730187a209858bdf617
+  dante_build_id: '1016382'
 
   # virgil 20240708.4
   # Mon Jul  8 03:09:02 UTC 2024 -- Mon Jul  8 13:09:02 AEST 2024
