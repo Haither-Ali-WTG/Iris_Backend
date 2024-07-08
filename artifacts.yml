@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240708.1
-  # Mon Jul  8 00:36:04 UTC 2024 -- Mon Jul  8 10:36:04 AEST 2024
+  # Dante Build Artifact 20240708.2
+  # Mon Jul  8 02:30:00 UTC 2024 -- Mon Jul  8 12:30:00 AEST 2024
   #
-  # Merged PR 25246: Add schedule to wtg.ws certificate run
-  # 41e77bdf8780c4a6a950fbd810e5c5f2047bcd23
-  dante_build_id: '1015202'
+  # Merge pull request 25305 from dante_artifact_upgrade into master
+  # 3a6592ec406d428d5b5f89363bd863217979c9a7
+  dante_build_id: '1015351'
 
-  # virgil 20240708.2
-  # Mon Jul  8 00:17:32 UTC 2024 -- Mon Jul  8 10:17:32 AEST 2024
+  # virgil 20240708.4
+  # Mon Jul  8 03:09:02 UTC 2024 -- Mon Jul  8 13:09:02 AEST 2024
   #
-  # Merge pull request 25293 from virgil_python_upgrade into master
-  # 3bd105a91a98181fea4cb4511b562fef47b322e1
-  virgil_build_id: '1015176'
+  # Merged PR 25281: Add two new C56s to US2
+  # 628e79c7eac448450341b2791ba5beea4b4aae16
+  virgil_build_id: '1015403'
