@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240709.10
-  # Tue Jul  9 05:56:54 UTC 2024 -- Tue Jul  9 15:56:54 AEST 2024
+  # Dante Build Artifact 20240709.16
+  # Tue Jul  9 07:06:31 UTC 2024 -- Tue Jul  9 17:06:31 AEST 2024
   #
-  # Merged PR 25410: Add pipeline call for automated registry certificate upgrade
-  # 4662ed3471706fd05382de59432f76c0f30988ef
-  dante_build_id: '1016954'
+  # Merge pull request 25415 from dante_artifact_upgrade into master
+  # 19634d74bb87fa41e4790b10f22935cbfc90cd12
+  dante_build_id: '1017061'
 
   # virgil 20240709.5
   # Tue Jul  9 04:59:10 UTC 2024 -- Tue Jul  9 14:59:10 AEST 2024
