@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240709.5
-  # Tue Jul  9 03:30:23 UTC 2024 -- Tue Jul  9 13:30:23 AEST 2024
+  # Dante Build Artifact 20240709.6
+  # Tue Jul  9 04:24:21 UTC 2024 -- Tue Jul  9 14:24:21 AEST 2024
   #
-  # Merged PR 25331: Playbook for update the container registry certificate
-  # 5e9428bd5d997e2e62b929dc017ccf09915b9b2d
-  dante_build_id: '1016772'
+  # Merged PR 25387: Add manual option for cert renewal
+  # 36bb07b4c81a8f087b7dec2b23754cea90309680
+  dante_build_id: '1016848'
 
-  # virgil 20240709.3
-  # Tue Jul  9 00:38:36 UTC 2024 -- Tue Jul  9 10:38:36 AEST 2024
+  # virgil 20240709.5
+  # Tue Jul  9 04:59:10 UTC 2024 -- Tue Jul  9 14:59:10 AEST 2024
   #
-  # Merged PR 25380: Add pure s3 endpoints to dns
-  # d70edd1e745a62b89873200fa755af05ed8964e8
-  virgil_build_id: '1016545'
+  # Merged PR 25403: Include top record for new zones
+  # e5d33d15a0510623afcecc12b94f685cc85c9be1
+  virgil_build_id: '1016893'
