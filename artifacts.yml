@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240709.2
-  # Tue Jul  9 01:43:16 UTC 2024 -- Tue Jul  9 11:43:16 AEST 2024
+  # Dante Build Artifact 20240709.3
+  # Tue Jul  9 02:29:49 UTC 2024 -- Tue Jul  9 12:29:49 AEST 2024
   #
-  # Merged PR 25346: Check pipeline title instead of branch name
-  # d68547e7784ae2cad73fb15754d15921e89d9536
-  dante_build_id: '1016628'
+  # Merge pull request 25386 from dante_artifact_upgrade into master
+  # 002417123c722deea0468152a1d05d84a4f00a1b
+  dante_build_id: '1016691'
 
   # virgil 20240709.3
   # Tue Jul  9 00:38:36 UTC 2024 -- Tue Jul  9 10:38:36 AEST 2024
