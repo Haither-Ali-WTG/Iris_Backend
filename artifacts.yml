@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240709.17
-  # Tue Jul  9 07:56:28 UTC 2024 -- Tue Jul  9 17:56:28 AEST 2024
+  # Dante Build Artifact 20240709.18
+  # Tue Jul  9 08:55:54 UTC 2024 -- Tue Jul  9 18:55:54 AEST 2024
   #
-  # Merged PR 25422: Small bug fixes.
-  # 1c60068db6152652bacfa02d28a349896d676871
-  dante_build_id: '1017107'
+  # Merged PR 25416: Teardown a teardown project :)
+  # baf5ad5ab2f1c6d97d669348c333c2f37d789855
+  dante_build_id: '1017173'
 
   # virgil 20240709.5
   # Tue Jul  9 04:59:10 UTC 2024 -- Tue Jul  9 14:59:10 AEST 2024
