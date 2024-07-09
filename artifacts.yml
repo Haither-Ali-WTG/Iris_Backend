@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240709.1
-  # Mon Jul  8 21:48:36 UTC 2024 -- Tue Jul  9 07:48:36 AEST 2024
+  # Dante Build Artifact 20240709.2
+  # Tue Jul  9 01:43:16 UTC 2024 -- Tue Jul  9 11:43:16 AEST 2024
   #
-  # Merged PR 25336: Add additional SANs for s3 endpoints
-  # b444aab9ec8212ae651ff730187a209858bdf617
-  dante_build_id: '1016382'
+  # Merged PR 25346: Check pipeline title instead of branch name
+  # d68547e7784ae2cad73fb15754d15921e89d9536
+  dante_build_id: '1016628'
 
-  # virgil 20240708.4
-  # Mon Jul  8 03:09:02 UTC 2024 -- Mon Jul  8 13:09:02 AEST 2024
+  # virgil 20240709.3
+  # Tue Jul  9 00:38:36 UTC 2024 -- Tue Jul  9 10:38:36 AEST 2024
   #
-  # Merged PR 25281: Add two new C56s to US2
-  # 628e79c7eac448450341b2791ba5beea4b4aae16
-  virgil_build_id: '1015403'
+  # Merged PR 25380: Add pure s3 endpoints to dns
+  # d70edd1e745a62b89873200fa755af05ed8964e8
+  virgil_build_id: '1016545'
