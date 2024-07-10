@@ -7,9 +7,9 @@ variables:
   # baf5ad5ab2f1c6d97d669348c333c2f37d789855
   dante_build_id: '1017173'
 
-  # virgil 20240709.5
-  # Tue Jul  9 04:59:10 UTC 2024 -- Tue Jul  9 14:59:10 AEST 2024
+  # virgil 20240710.2
+  # Wed Jul 10 00:03:00 UTC 2024 -- Wed Jul 10 10:03:00 AEST 2024
   #
-  # Merged PR 25403: Include top record for new zones
-  # e5d33d15a0510623afcecc12b94f685cc85c9be1
-  virgil_build_id: '1016893'
+  # Merged PR 25371: Update C-00221 BMC MAC
+  # e95fb7e660cc6b92b7f15737cc9d2dbb566cd11c
+  virgil_build_id: '1017852'
