@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240710.5
-  # Wed Jul 10 04:51:45 UTC 2024 -- Wed Jul 10 14:51:45 AEST 2024
+  # Dante Build Artifact 20240710.6
+  # Wed Jul 10 05:36:08 UTC 2024 -- Wed Jul 10 15:36:08 AEST 2024
   #
-  # Merged PR 25473: Add missing become:yes
-  # edb72aaa5e84f0d702a32129f94403bdf1832c23
-  dante_build_id: '1018200'
+  # Merged PR 25424: Fix the build artifact pipeline
+  # 1c5c81fa1aff08ad2b47e6e5b41adf8b67c67665
+  dante_build_id: '1018271'
 
-  # virgil 20240710.2
-  # Wed Jul 10 00:03:00 UTC 2024 -- Wed Jul 10 10:03:00 AEST 2024
+  # virgil 20240710.4
+  # Wed Jul 10 05:56:23 UTC 2024 -- Wed Jul 10 15:56:23 AEST 2024
   #
-  # Merged PR 25371: Update C-00221 BMC MAC
-  # e95fb7e660cc6b92b7f15737cc9d2dbb566cd11c
-  virgil_build_id: '1017852'
+  # Merged PR 25474: test DPM server
+  # dd4c749cd03d8a7d1fbd668b718e4755fdbe91ad
+  virgil_build_id: '1018287'
