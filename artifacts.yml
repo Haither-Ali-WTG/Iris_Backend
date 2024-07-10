@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240710.4
-  # Wed Jul 10 04:05:20 UTC 2024 -- Wed Jul 10 14:05:20 AEST 2024
+  # Dante Build Artifact 20240710.5
+  # Wed Jul 10 04:51:45 UTC 2024 -- Wed Jul 10 14:51:45 AEST 2024
   #
-  # Merged PR 25462: Set Ansible SSH args for delegation tasks.
-  # 6bb53d868826aaa7fda84578f2f132ab5499ed9b
-  dante_build_id: '1018150'
+  # Merged PR 25473: Add missing become:yes
+  # edb72aaa5e84f0d702a32129f94403bdf1832c23
+  dante_build_id: '1018200'
 
   # virgil 20240710.2
   # Wed Jul 10 00:03:00 UTC 2024 -- Wed Jul 10 10:03:00 AEST 2024
