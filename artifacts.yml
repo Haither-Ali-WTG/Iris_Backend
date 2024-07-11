@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240710.6
-  # Wed Jul 10 05:36:08 UTC 2024 -- Wed Jul 10 15:36:08 AEST 2024
+  # Dante Build Artifact 20240711.1
+  # Thu Jul 11 02:06:58 UTC 2024 -- Thu Jul 11 12:06:58 AEST 2024
   #
-  # Merged PR 25424: Fix the build artifact pipeline
-  # 1c5c81fa1aff08ad2b47e6e5b41adf8b67c67665
-  dante_build_id: '1018271'
+  # Merge pull request 25509 from dante_artifact_upgrade into master
+  # a094397a924ff4b658a965def9743c05fa19ddb2
+  dante_build_id: '1019201'
 
-  # virgil 20240710.4
-  # Wed Jul 10 05:56:23 UTC 2024 -- Wed Jul 10 15:56:23 AEST 2024
+  # virgil 20240711.2
+  # Thu Jul 11 00:57:21 UTC 2024 -- Thu Jul 11 10:57:21 AEST 2024
   #
-  # Merged PR 25474: test DPM server
-  # dd4c749cd03d8a7d1fbd668b718e4755fdbe91ad
-  virgil_build_id: '1018287'
+  # Merge pull request 25494 from virgil_python_upgrade into master
+  # a59cb85e4f7355cce44f125d4acf0877954fa0b6
+  virgil_build_id: '1019129'
