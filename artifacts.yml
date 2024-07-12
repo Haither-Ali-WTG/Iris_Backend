@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240711.1
-  # Thu Jul 11 02:06:58 UTC 2024 -- Thu Jul 11 12:06:58 AEST 2024
+  # Dante Build Artifact 20240712.1
+  # Fri Jul 12 00:41:03 UTC 2024 -- Fri Jul 12 10:41:03 AEST 2024
   #
-  # Merge pull request 25509 from dante_artifact_upgrade into master
-  # a094397a924ff4b658a965def9743c05fa19ddb2
-  dante_build_id: '1019201'
+  # Merged PR 25527: Update the NTP allowance list for bengaluru office.
+  # 1edcc205f0b935d6cebbe84e5894b134f21e2be5
+  dante_build_id: '1020196'
 
-  # virgil 20240711.2
-  # Thu Jul 11 00:57:21 UTC 2024 -- Thu Jul 11 10:57:21 AEST 2024
+  # virgil 20240712.4
+  # Fri Jul 12 00:57:18 UTC 2024 -- Fri Jul 12 10:57:18 AEST 2024
   #
-  # Merge pull request 25494 from virgil_python_upgrade into master
-  # a59cb85e4f7355cce44f125d4acf0877954fa0b6
-  virgil_build_id: '1019129'
+  # Merged PR 25529: WI00768896 upgrade au2 switches to CL580
+  # d297d15c3a5b8306526be5118e39854fee5a52bb
+  virgil_build_id: '1020208'
