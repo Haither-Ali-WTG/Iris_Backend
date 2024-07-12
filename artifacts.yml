@@ -7,9 +7,9 @@ variables:
   # 21e7c126a74f8be9bdc4fb68710a01ce130ddf13
   dante_build_id: '1020346'
 
-  # virgil 20240712.6
-  # Fri Jul 12 01:21:54 UTC 2024 -- Fri Jul 12 11:21:54 AEST 2024
+  # virgil 20240712.8
+  # Fri Jul 12 04:59:35 UTC 2024 -- Fri Jul 12 14:59:35 AEST 2024
   #
-  # Merged PR 25493: DE1 add Native VLAN to ESXi nodes
-  # 81d840f18a1766787ebcce6ac18e34bbd2649473
-  virgil_build_id: '1020257'
+  # Merge pull request 25524 from virgil_python_upgrade into master
+  # b8adc800ba87a191302b3cb258e14eebc2888aab
+  virgil_build_id: '1020470'
