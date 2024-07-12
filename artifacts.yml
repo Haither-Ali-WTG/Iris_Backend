@@ -7,9 +7,9 @@ variables:
   # 67c4ec20dab1bf0c8708abdb2b8a86afd530f17f
   dante_build_id: '1020544'
 
-  # virgil 20240712.8
-  # Fri Jul 12 04:59:35 UTC 2024 -- Fri Jul 12 14:59:35 AEST 2024
+  # virgil 20240712.12
+  # Fri Jul 12 10:27:28 UTC 2024 -- Fri Jul 12 20:27:28 AEST 2024
   #
-  # Merge pull request 25524 from virgil_python_upgrade into master
-  # b8adc800ba87a191302b3cb258e14eebc2888aab
-  virgil_build_id: '1020470'
+  # Merged PR 25561: add new switches apex33/34 upstairs for DAT
+  # 5cc8860e461f6ffc5549646f31a69a58bacdcaa3
+  virgil_build_id: '1020750'
