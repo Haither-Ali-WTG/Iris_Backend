@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240712.1
-  # Fri Jul 12 00:41:03 UTC 2024 -- Fri Jul 12 10:41:03 AEST 2024
+  # Dante Build Artifact 20240712.2
+  # Fri Jul 12 02:46:56 UTC 2024 -- Fri Jul 12 12:46:56 AEST 2024
   #
-  # Merged PR 25527: Update the NTP allowance list for bengaluru office.
-  # 1edcc205f0b935d6cebbe84e5894b134f21e2be5
-  dante_build_id: '1020196'
+  # Merge pull request 25538 from dante_artifact_upgrade into master
+  # 21e7c126a74f8be9bdc4fb68710a01ce130ddf13
+  dante_build_id: '1020346'
 
-  # virgil 20240712.4
-  # Fri Jul 12 00:57:18 UTC 2024 -- Fri Jul 12 10:57:18 AEST 2024
+  # virgil 20240712.6
+  # Fri Jul 12 01:21:54 UTC 2024 -- Fri Jul 12 11:21:54 AEST 2024
   #
-  # Merged PR 25529: WI00768896 upgrade au2 switches to CL580
-  # d297d15c3a5b8306526be5118e39854fee5a52bb
-  virgil_build_id: '1020208'
+  # Merged PR 25493: DE1 add Native VLAN to ESXi nodes
+  # 81d840f18a1766787ebcce6ac18e34bbd2649473
+  virgil_build_id: '1020257'
