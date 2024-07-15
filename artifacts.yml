@@ -7,9 +7,9 @@ variables:
   # dca3096778fc900fc486e346ac1e2a414db34990
   dante_build_id: '1023513'
 
-  # virgil 20240712.12
-  # Fri Jul 12 10:27:28 UTC 2024 -- Fri Jul 12 20:27:28 AEST 2024
+  # virgil 20240716.3
+  # Mon Jul 15 20:56:00 UTC 2024 -- Tue Jul 16 06:56:00 AEST 2024
   #
-  # Merged PR 25561: add new switches apex33/34 upstairs for DAT
-  # 5cc8860e461f6ffc5549646f31a69a58bacdcaa3
-  virgil_build_id: '1020750'
+  # Merged PR 25584: New apexes, new DAT server, removed old server name from template
+  # c93aeb2175313679c6674a16504613ca523d0c35
+  virgil_build_id: '1024173'
