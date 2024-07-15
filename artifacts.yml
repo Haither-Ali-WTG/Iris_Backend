@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240715.2
-  # Mon Jul 15 05:50:33 UTC 2024 -- Mon Jul 15 15:50:33 AEST 2024
+  # Dante Build Artifact 20240716.1
+  # Mon Jul 15 22:07:03 UTC 2024 -- Tue Jul 16 08:07:03 AEST 2024
   #
-  # Merged PR 25581: Use updated azure_keyvault role on certificate update tasks.
-  # dca3096778fc900fc486e346ac1e2a414db34990
-  dante_build_id: '1023513'
+  # Merge pull request 25604 from dante_artifact_upgrade into master
+  # 0c64558d5ca245cdf07e07bebf655681ce7ac7b5
+  dante_build_id: '1024241'
 
   # virgil 20240716.3
   # Mon Jul 15 20:56:00 UTC 2024 -- Tue Jul 16 06:56:00 AEST 2024
