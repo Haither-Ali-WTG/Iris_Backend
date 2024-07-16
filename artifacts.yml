@@ -7,9 +7,9 @@ variables:
   # c2648a2306e6971c619f2ad3ff50c8e16980e821
   dante_build_id: '1024688'
 
-  # virgil 20240716.5
-  # Tue Jul 16 03:04:34 UTC 2024 -- Tue Jul 16 13:04:34 AEST 2024
+  # virgil 20240717.3
+  # Tue Jul 16 21:03:07 UTC 2024 -- Wed Jul 17 07:03:07 AEST 2024
   #
-  # Merged PR 25615: DPM replacement server placement within 10.2.80. range
-  # 0a5d876830b234a05c10eb72d66016afce1cf5c8
-  virgil_build_id: '1024508'
+  # Merged PR 25522: Add Sistemas Casa to US2
+  # 233aef45a8a1c3fa8cce3a9a4e44c5f4afc79681
+  virgil_build_id: '1025393'
