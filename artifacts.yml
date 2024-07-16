@@ -7,9 +7,9 @@ variables:
   # 0c64558d5ca245cdf07e07bebf655681ce7ac7b5
   dante_build_id: '1024241'
 
-  # virgil 20240716.3
-  # Mon Jul 15 20:56:00 UTC 2024 -- Tue Jul 16 06:56:00 AEST 2024
+  # virgil 20240716.5
+  # Tue Jul 16 03:04:34 UTC 2024 -- Tue Jul 16 13:04:34 AEST 2024
   #
-  # Merged PR 25584: New apexes, new DAT server, removed old server name from template
-  # c93aeb2175313679c6674a16504613ca523d0c35
-  virgil_build_id: '1024173'
+  # Merged PR 25615: DPM replacement server placement within 10.2.80. range
+  # 0a5d876830b234a05c10eb72d66016afce1cf5c8
+  virgil_build_id: '1024508'
