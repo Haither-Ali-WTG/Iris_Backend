@@ -7,9 +7,9 @@ variables:
   # 80809fc9288d758ee47e81542c511bbc8f04d263
   dante_build_id: '1025443'
 
-  # virgil 20240717.3
-  # Tue Jul 16 21:03:07 UTC 2024 -- Wed Jul 17 07:03:07 AEST 2024
+  # virgil 20240718.2
+  # Wed Jul 17 20:59:32 UTC 2024 -- Thu Jul 18 06:59:32 AEST 2024
   #
-  # Merged PR 25522: Add Sistemas Casa to US2
-  # 233aef45a8a1c3fa8cce3a9a4e44c5f4afc79681
-  virgil_build_id: '1025393'
+  # Merged PR 25645: Rebuild 2 C54s in US2
+  # e0315a5890812bd788cb61de6064fdf85bfdbb86
+  virgil_build_id: '1026448'
