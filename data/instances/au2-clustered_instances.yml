@@ -171,3 +171,23 @@ clustered_instances:
         ports:
           web: 2043
           socket: 2042
+
+    au2prodfrontend1prodidp:
+      # au2-prod-frontend-1-prod-idp
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2007]
+          ssl: [2008]
+      stats:
+        ports:
+          web: 2047
+          socket: 2046
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - star-wisetechglobal-com
+      cipher:
+        profiles:
+          - best_practice_2023
