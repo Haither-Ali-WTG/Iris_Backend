@@ -7,9 +7,9 @@ variables:
   # 950f75adc68ef34d83e324b30524e8d745f7db59
   dante_build_id: '1026514'
 
-  # virgil 20240718.2
-  # Wed Jul 17 20:59:32 UTC 2024 -- Thu Jul 18 06:59:32 AEST 2024
+  # virgil 20240718.4
+  # Wed Jul 17 23:35:44 UTC 2024 -- Thu Jul 18 09:35:44 AEST 2024
   #
-  # Merged PR 25645: Rebuild 2 C54s in US2
-  # e0315a5890812bd788cb61de6064fdf85bfdbb86
-  virgil_build_id: '1026448'
+  # Merge pull request 25598 from virgil_python_upgrade into master
+  # b33bfd77ff0477baffc2bad90b591158cd631ee6
+  virgil_build_id: '1026597'
