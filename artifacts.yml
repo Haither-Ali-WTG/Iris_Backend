@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240722.2
-  # Mon Jul 22 07:28:22 UTC 2024 -- Mon Jul 22 17:28:22 AEST 2024
+  # Dante Build Artifact 20240723.1
+  # Tue Jul 23 00:27:11 UTC 2024 -- Tue Jul 23 10:27:11 AEST 2024
   #
-  # Merge pull request 25746 from dante_artifact_upgrade into master
-  # 6ae053af3f16e93cd4352591a976d28a91663b42
-  dante_build_id: '1031134'
+  # Merge pull request 25721 from dante_python_upgrade into master
+  # 332553d34db84bbea84438ae7963303568b959ec
+  dante_build_id: '1031948'
 
-  # virgil 20240722.7
-  # Mon Jul 22 06:23:38 UTC 2024 -- Mon Jul 22 16:23:38 AEST 2024
+  # virgil 20240723.4
+  # Tue Jul 23 00:19:05 UTC 2024 -- Tue Jul 23 10:19:05 AEST 2024
   #
-  # Merged PR 25738: Create queue for eservices team - CS0164097
-  # b7d5265065a8e70b23e17d443a69d6be49703dc4
-  virgil_build_id: '1031076'
+  # Merged PR 25752: DE1 decommissioned old Dell swiches and old ESXi nodes(SR650)
+  # b3b882ad5e7eb7f83abf9ce00c1298bca4ff0ac9
+  virgil_build_id: '1031940'
