@@ -38,6 +38,7 @@ def load_yaml_from_file(file_name):
 
 def get_websites_list(server_name, connection_params):
     """Read sites list from IIS box using winrm"""
+    shell_id: str
     p = Protocol(
         endpoint='https://' + server_name + ':5986/wsman',
         transport='ntlm',
@@ -45,7 +46,7 @@ def get_websites_list(server_name, connection_params):
         password=connection_params.password,
         server_cert_validation=connection_params.validate_ca,
     )
-    shell_id = None
+
     try:
         shell_id = p.open_shell()
         command_id = p.run_command(
