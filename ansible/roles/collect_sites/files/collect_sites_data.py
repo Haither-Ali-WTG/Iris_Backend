@@ -45,7 +45,7 @@ def get_websites_list(server_name, connection_params):
         password=connection_params.password,
         server_cert_validation=connection_params.validate_ca,
     )
-    shell_id = None
+    shell_id: str
     try:
         shell_id = p.open_shell()
         command_id = p.run_command(
