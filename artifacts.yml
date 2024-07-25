@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240724.2
-  # Wed Jul 24 01:27:29 UTC 2024 -- Wed Jul 24 11:27:29 AEST 2024
+  # Dante Build Artifact 20240725.1
+  # Thu Jul 25 00:07:31 UTC 2024 -- Thu Jul 25 10:07:31 AEST 2024
   #
-  # Merge pull request 25763 from dante_artifact_upgrade into master
-  # 06c03a37d2c74a13607a270a30e922cf86b8510a
-  dante_build_id: '1033148'
+  # Merged PR 25807: Haproxy image added to automatic sync from Dockerhub
+  # c547f6e887c03242f1b823b5466f3bf88ff1d5b3
+  dante_build_id: '1034204'
 
-  # virgil 20240723.4
-  # Tue Jul 23 00:19:05 UTC 2024 -- Tue Jul 23 10:19:05 AEST 2024
+  # virgil 20240725.2
+  # Thu Jul 25 00:09:19 UTC 2024 -- Thu Jul 25 10:09:19 AEST 2024
   #
-  # Merged PR 25752: DE1 decommissioned old Dell swiches and old ESXi nodes(SR650)
-  # b3b882ad5e7eb7f83abf9ce00c1298bca4ff0ac9
-  virgil_build_id: '1031940'
+  # Merged PR 25825: Adding new DNS entries for AAP
+  # de221434af51c8d4779de906472ad6b00c54e7cf
+  virgil_build_id: '1034209'
