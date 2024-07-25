@@ -8,10 +8,9 @@
 - name: Get certificate
   include_role:
     name: azure_keyvault
-    tasks_from: get_secret.yml
+    tasks_from: get_secret_cms.yml
   vars:
-    azure_kv_secret_name: "{{ certificate_name }}"
-    azure_kv_name: "{{ key_vault_name }}"
+    azure_cms_kv_name: "{{ key_vault_name }}"
     curl:
       retries: 2
       delay: 5
