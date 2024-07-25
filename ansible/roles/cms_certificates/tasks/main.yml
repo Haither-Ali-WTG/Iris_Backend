@@ -78,7 +78,7 @@
 - name: Download the certificate - CMS
   include_tasks: download_and_save_cms_certificate.yml
   vars:
-    cms_key_vault_name: "{{ item.key_vault_name }}"
+    key_vault_name: "{{ item.key_vault_name }}"
     real_certificate_name: "{{ item.name }}"
     certificate_domain: "{{ item.domain }}"
     certificate_name: 'certificate'
