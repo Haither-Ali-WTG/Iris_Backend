@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240725.1
-  # Thu Jul 25 00:07:31 UTC 2024 -- Thu Jul 25 10:07:31 AEST 2024
+  # Dante Build Artifact 20240725.2
+  # Thu Jul 25 00:59:30 UTC 2024 -- Thu Jul 25 10:59:30 AEST 2024
   #
-  # Merged PR 25807: Haproxy image added to automatic sync from Dockerhub
-  # c547f6e887c03242f1b823b5466f3bf88ff1d5b3
-  dante_build_id: '1034204'
+  # Merge pull request 25823 from dante_python_upgrade into master
+  # 127d49f83aabecbc0eba28be0798a5e4acc1ba35
+  dante_build_id: '1034267'
 
   # virgil 20240725.2
   # Thu Jul 25 00:09:19 UTC 2024 -- Thu Jul 25 10:09:19 AEST 2024
