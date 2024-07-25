@@ -11,7 +11,7 @@
 
 - name: Prepare CMS cache data
   when: use_cache | default(true)
-  block: 
+  block:
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
