@@ -28,6 +28,7 @@
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp
     "s3://dante-iris-cms-certificates/cache.json" {{ temp_path.path }}
+  changed_when: true
   when: use_cache | default(true) | bool
 
 - name: Read data from the JSON cache file
@@ -63,6 +64,7 @@
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp
     {{ temp_path.path }}/cache.json "s3://dante-iris-cms-certificates/cache.json"
+  changed_when: true
   when: use_cache | default(true) | bool
 
 - name: Download the certificate - Iris KV
