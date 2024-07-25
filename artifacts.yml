@@ -7,9 +7,9 @@ variables:
   # c6e511138db9e0668796f4024b8c77954e5a19be
   dante_build_id: '1034757'
 
-  # virgil 20240725.7
-  # Thu Jul 25 04:54:13 UTC 2024 -- Thu Jul 25 14:54:13 AEST 2024
+  # virgil 20240726.2
+  # Thu Jul 25 23:19:32 UTC 2024 -- Fri Jul 26 09:19:32 AEST 2024
   #
-  # Merged PR 25845: NewSubnetForTriniumDataReplication
-  # 7b945aa5fbe75f0dc8ede63356b7905e996b1ffd
-  virgil_build_id: '1034533'
+  # Merge pull request 25876 from virgil_python_upgrade into master
+  # e093742820c2f68b1f5ab7b29e46e9e6424edc60
+  virgil_build_id: '1035460'
