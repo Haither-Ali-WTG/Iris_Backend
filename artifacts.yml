@@ -7,9 +7,9 @@ variables:
   # 9a615854da58352aff604d701f1989bfbf37a95f
   dante_build_id: '1034372'
 
-  # virgil 20240725.2
-  # Thu Jul 25 00:09:19 UTC 2024 -- Thu Jul 25 10:09:19 AEST 2024
+  # virgil 20240725.7
+  # Thu Jul 25 04:54:13 UTC 2024 -- Thu Jul 25 14:54:13 AEST 2024
   #
-  # Merged PR 25825: Adding new DNS entries for AAP
-  # de221434af51c8d4779de906472ad6b00c54e7cf
-  virgil_build_id: '1034209'
+  # Merged PR 25845: NewSubnetForTriniumDataReplication
+  # 7b945aa5fbe75f0dc8ede63356b7905e996b1ffd
+  virgil_build_id: '1034533'
