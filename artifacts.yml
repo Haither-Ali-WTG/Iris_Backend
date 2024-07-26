@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240726.3
-  # Fri Jul 26 02:14:15 UTC 2024 -- Fri Jul 26 12:14:15 AEST 2024
+  # Dante Build Artifact 20240726.4
+  # Fri Jul 26 02:58:28 UTC 2024 -- Fri Jul 26 12:58:28 AEST 2024
   #
-  # Merge pull request 25887 from dante_artifact_upgrade into master
-  # 49241f2c16ec868b4c63efbf35c640266fc6d529
-  dante_build_id: '1035675'
+  # Merged PR 25899: Python vulnerability check: Added rest of the repos and daily schedule
+  # 0f50c10432dee817934c918781a4ab1a1d8c8271
+  dante_build_id: '1035722'
 
   # virgil 20240726.2
   # Thu Jul 25 23:19:32 UTC 2024 -- Fri Jul 26 09:19:32 AEST 2024
