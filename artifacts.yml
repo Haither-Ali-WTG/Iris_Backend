@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240725.5
-  # Thu Jul 25 07:22:22 UTC 2024 -- Thu Jul 25 17:22:22 AEST 2024
+  # Dante Build Artifact 20240726.2
+  # Fri Jul 26 00:53:05 UTC 2024 -- Fri Jul 26 10:53:05 AEST 2024
   #
-  # Merged PR 25856: Make "get_secret_cms.yml" specifically for CMS managed key vault.
-  # c6e511138db9e0668796f4024b8c77954e5a19be
-  dante_build_id: '1034757'
+  # Merged PR 25890: WIP: Scan repos for python vulnerabilities
+  # 14ccbfeb7ed163ff7856d9768349951f8b8f11e3
+  dante_build_id: '1035582'
 
   # virgil 20240726.2
   # Thu Jul 25 23:19:32 UTC 2024 -- Fri Jul 26 09:19:32 AEST 2024
