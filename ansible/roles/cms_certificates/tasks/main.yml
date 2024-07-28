@@ -9,32 +9,35 @@
   when: '"certificates" in hostvars[item]'
   loop: "{{ groups['clustered_instances'] }}"
 
-- name: Setup ceph connection
-  include_role:
-    name: ceph_connection_setup
-  vars:
-    proxy_host: "{{ ceph_proxy_host | default('') }}"
-    proxy_port: "{{ ceph_proxy_port | default('') }}"
+- name: Prepare CMS cache data
+  when: use_cache | default(true)
+  block:
+    - name: Setup ceph connection
+      include_role:
+        name: ceph_connection_setup
+      vars:
+        proxy_host: "{{ ceph_proxy_host | default('') }}"
+        proxy_port: "{{ ceph_proxy_port | default('') }}"
 
-- name: Create temporary directory
-  tempfile:
-    state: directory
-  register: temp_path
+    - name: Create temporary directory
+      tempfile:
+        state: directory
+      register: temp_path
 
-- name: Download JSON cache file from ceph
-  command: >-
-    aws --endpoint-url=https://{{ s3_host }}
-    s3 cp
-    "s3://dante-iris-cms-certificates/cache.json" {{ temp_path.path }}
-  changed_when: true
+    - name: Download JSON cache file from ceph
+      command: >-
+        aws --endpoint-url=https://{{ s3_host }}
+        s3 cp
+        "s3://dante-iris-cms-certificates/cache.json" {{ temp_path.path }}
+      changed_when: true
 
-- name: Read data from the JSON cache file
-  set_fact:
-    json_cache: "{{ lookup('file', temp_path.path + '/' + 'cache.json') | from_json }}"
+    - name: Read data from the JSON cache file
+      set_fact:
+        json_cache: "{{ lookup('file', temp_path.path + '/' + 'cache.json') | from_json }}"
 
-- name: Read JSON cache file to certs_data
-  set_fact:
-    certs_data: "{{ certs_data | assign_key_vault_name_from_cache(json_cache) }}"
+    - name: Read JSON cache file to certs_data
+      set_fact:
+        certs_data: "{{ certs_data | assign_key_vault_name_from_cache(json_cache) }}"
 
 - name: Assign key_vault_name for certs_data from CMS queries (Default 'kv-wtg-iris-prod')
   include_tasks: assign_key_vault_name.yml
@@ -42,22 +45,25 @@
   loop_control:
     loop_var: cert
 
-- name: Update the JSON cache
-  set_fact:
-    json_cache: "{{ json_cache | update_cache(updated_certs) }}"
+- name: Write back cache data
+  when: use_cache | default(true)
+  block:
+    - name: Update the JSON cache
+      set_fact:
+        json_cache: "{{ json_cache | update_cache(updated_certs) }}"
 
-- name: Write the JSON cache file to prepare the uploading
-  copy:
-    content: "{{ json_cache }}"
-    dest: "{{ temp_path.path }}/cache.json"
-    mode: u=rw,go=r
+    - name: Write the JSON cache file to prepare the uploading
+      copy:
+        content: "{{ json_cache }}"
+        dest: "{{ temp_path.path }}/cache.json"
+        mode: u=rw,go=r
 
-- name: Upload cache data to ceph
-  command: >-
-    aws --endpoint-url=https://{{ s3_host }}
-    s3 cp
-    {{ temp_path.path }}/cache.json "s3://dante-iris-cms-certificates/cache.json"
-  changed_when: true
+    - name: Upload cache data to ceph
+      command: >-
+        aws --endpoint-url=https://{{ s3_host }}
+        s3 cp
+        {{ temp_path.path }}/cache.json "s3://dante-iris-cms-certificates/cache.json"
+      changed_when: true
 
 - name: Download the certificate - Iris KV
   include_tasks: download_and_save_iris_certificate.yml
