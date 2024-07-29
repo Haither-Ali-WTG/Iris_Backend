@@ -4,10 +4,11 @@
   gather_facts: no
   tasks:
     - name: Set Virgil-like facts for the machines
-      os_variant:
-        ubuntu2204: ubuntu
-        ubuntu2404: ubuntu
-        rhel: rhel
+      vars:
+        os_variant:
+          ubuntu2204: ubuntu
+          ubuntu2404: ubuntu
+          rhel: rhel
       set_fact:
         virgil_os_family: linux
         virgil_os_variant: "{{ os_variant[os] }}"
