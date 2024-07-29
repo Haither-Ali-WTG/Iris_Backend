@@ -191,7 +191,7 @@ stages:
   #           displayName: 'Publish configs'
 
   - stage: Simulations
-    dependsOn: [Dump_configs_and_check_changes, Tests_and_lint]
+    # dependsOn: [Dump_configs_and_check_changes, Tests_and_lint]
     pool: simulations
     jobs:
       - job: Simulation
