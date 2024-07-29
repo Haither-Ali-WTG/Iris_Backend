@@ -64,7 +64,7 @@
       vars:
         os_image:
           # TODO: use proper image
-          ubuntu2204: "{{ ubuntu_hypervisor_image }}"          
+          ubuntu2204: "{{ ubuntu_hypervisor_image }}"
           ubuntu2404: "{{ ubuntu_hypervisor_image }}"
           rhel: "{{ rhel_hypervisor_image }}"
       set_fact:
