@@ -3,13 +3,13 @@ machines:
   hosts:
     de1lbl00306:
       ansible_host: 10.3.64.21
-      os: ubuntu
+      os: ubuntu2204
       dc: DE1
     de1lbl00307:
       ansible_host: 10.3.64.22
-      os: ubuntu
+      os: ubuntu2204
       dc: DE1
     de1lbl00387:
       ansible_host: 10.3.64.23
-      os: ubuntu
+      os: ubuntu2204
       dc: DE1
