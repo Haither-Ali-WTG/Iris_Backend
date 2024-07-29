@@ -7,9 +7,9 @@ variables:
   # 80a436c394b85f5b8aaaf18ed735a480079b0d30
   dante_build_id: '1035781'
 
-  # virgil 20240726.2
-  # Thu Jul 25 23:19:32 UTC 2024 -- Fri Jul 26 09:19:32 AEST 2024
+  # virgil 20240729.3
+  # Sun Jul 28 23:53:55 UTC 2024 -- Mon Jul 29 09:53:55 AEST 2024
   #
-  # Merge pull request 25876 from virgil_python_upgrade into master
-  # e093742820c2f68b1f5ab7b29e46e9e6424edc60
-  virgil_build_id: '1035460'
+  # Merged PR 25920: Config for new US2 esx hosts
+  # a065573e503785caebad4876d1a3de8580194bc7
+  virgil_build_id: '1038494'
