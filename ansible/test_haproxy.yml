@@ -63,7 +63,9 @@
     - name: Set images for simulation OS
       vars:
         os_image:
-          ubuntu: "{{ ubuntu_hypervisor_image }}"
+          # TODO: use proper image
+          ubuntu2204: "{{ ubuntu_hypervisor_image }}"          
+          ubuntu2404: "{{ ubuntu_hypervisor_image }}"
           rhel: "{{ rhel_hypervisor_image }}"
       set_fact:
         image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"

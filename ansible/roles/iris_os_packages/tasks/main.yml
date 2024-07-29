@@ -2,7 +2,9 @@
 - name: "Uninstall unwanted packages - {{ unwanted[os] | join(', ') }}"
   vars:
     unwanted:
-      ubuntu:
+      ubuntu2204:
+        - ufw  # Uncomplicated Firewall - we manage iptables directly
+      ubuntu2404:
         - ufw  # Uncomplicated Firewall - we manage iptables directly
       rhel:
         - firewalld  # firewall - we manage iptables directly
