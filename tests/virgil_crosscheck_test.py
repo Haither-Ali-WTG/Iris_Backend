@@ -72,7 +72,7 @@ class TestVirgilCrosscheck(TestCase):
 
                         self.assertEqual(
                             iris_config["os"],
-                            virgil_info["virgil_os_variant"],
+                            virgil_info["virgil_os_name"],
                             "Mismatched OS compared to Virgil",
                         )
 
