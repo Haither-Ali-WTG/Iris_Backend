@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240729.1
-  # Mon Jul 29 00:27:54 UTC 2024 -- Mon Jul 29 10:27:54 AEST 2024
+  # Dante Build Artifact 20240729.2
+  # Mon Jul 29 02:49:32 UTC 2024 -- Mon Jul 29 12:49:32 AEST 2024
   #
-  # Merge pull request 25924 from dante_python_upgrade into master
-  # fab7eba3097c1ef8fcef1a4c3350af46904e868f
-  dante_build_id: '1038538'
+  # Merge pull request 25931 from dante_artifact_upgrade into master
+  # c49b38a2f43068e247a041ee988a08bea480406b
+  dante_build_id: '1038690'
 
-  # virgil 20240729.3
-  # Sun Jul 28 23:53:55 UTC 2024 -- Mon Jul 29 09:53:55 AEST 2024
+  # virgil 20240729.5
+  # Mon Jul 29 01:34:54 UTC 2024 -- Mon Jul 29 11:34:54 AEST 2024
   #
-  # Merged PR 25920: Config for new US2 esx hosts
-  # a065573e503785caebad4876d1a3de8580194bc7
-  virgil_build_id: '1038494'
+  # Merged PR 25925: RemoveDE1TempUsedSubnets
+  # 0fa5ec5f1a13caa839a12b46828131c8353e25a6
+  virgil_build_id: '1038623'
