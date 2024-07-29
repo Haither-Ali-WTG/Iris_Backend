@@ -55,7 +55,7 @@
     - name: Set additional facts
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
-        virgil_os_variant: "{{ os }}"
+        virgil_os_name: "{{ os }}"
         virgil_ip_dante: "{{ ansible_host }}"
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
@@ -63,10 +63,17 @@
     - name: Set images for simulation OS
       vars:
         os_image:
-          ubuntu: "{{ ubuntu_hypervisor_image }}"
+          # TODO: use proper image
+          ubuntu2204: "{{ ubuntu_hypervisor_image }}"
+          ubuntu2404: "{{ ubuntu_hypervisor_image }}"
           rhel: "{{ rhel_hypervisor_image }}"
+        os_variant:
+          ubuntu2204: ubuntu
+          ubuntu2404: ubuntu
+          rhel: rhel
       set_fact:
-        image: "{{ images_folder }}/{{ os_image[virgil_os_variant] }}"
+        image: "{{ images_folder }}/{{ os_image[virgil_os_name] }}"
+        virgil_os_variant: "{{ os_variant[virgil_os_name] }}"
 
     - name: Deploy test machines
       include_role:
