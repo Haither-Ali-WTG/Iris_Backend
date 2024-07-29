@@ -75,9 +75,6 @@
         image: "{{ images_folder }}/{{ os_image[virgil_os_name] }}"
         virgil_os_variant: "{{ os_variant[virgil_os_name] }}"
 
-    - name: Print  virgil_os_variant
-      debug:
-        var: virgil_os_variant
     - name: Deploy test machines
       include_role:
         name: deploy_test_machines
