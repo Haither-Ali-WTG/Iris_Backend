@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240729.2
-  # Mon Jul 29 02:49:32 UTC 2024 -- Mon Jul 29 12:49:32 AEST 2024
+  # Dante Build Artifact 20240730.1
+  # Tue Jul 30 00:28:48 UTC 2024 -- Tue Jul 30 10:28:48 AEST 2024
   #
-  # Merge pull request 25931 from dante_artifact_upgrade into master
-  # c49b38a2f43068e247a041ee988a08bea480406b
-  dante_build_id: '1038690'
+  # Merge pull request 25967 from dante_artifact_upgrade into master
+  # ea9dc8531aabd6bd7cd27f82ce7054d2ccd79db7
+  dante_build_id: '1039700'
 
-  # virgil 20240729.5
-  # Mon Jul 29 01:34:54 UTC 2024 -- Mon Jul 29 11:34:54 AEST 2024
+  # virgil 20240730.2
+  # Mon Jul 29 23:25:47 UTC 2024 -- Tue Jul 30 09:25:47 AEST 2024
   #
-  # Merged PR 25925: RemoveDE1TempUsedSubnets
-  # 0fa5ec5f1a13caa839a12b46828131c8353e25a6
-  virgil_build_id: '1038623'
+  # Merge pull request 25962 from virgil_python_upgrade into master
+  # ee86c38d804b0b8738c72fc5b643a4802e5cb870
+  virgil_build_id: '1039638'
