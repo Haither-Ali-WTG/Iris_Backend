@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240730.1
-  # Tue Jul 30 00:28:48 UTC 2024 -- Tue Jul 30 10:28:48 AEST 2024
+  # Dante Build Artifact 20240730.2
+  # Tue Jul 30 01:57:46 UTC 2024 -- Tue Jul 30 11:57:46 AEST 2024
   #
-  # Merge pull request 25967 from dante_artifact_upgrade into master
-  # ea9dc8531aabd6bd7cd27f82ce7054d2ccd79db7
-  dante_build_id: '1039700'
+  # Merged PR 25977: Disable simulation8711 for rebuild
+  # 3a5859d94d0f0ae810ba3b307754077dac2f906d
+  dante_build_id: '1039810'
 
   # virgil 20240730.2
   # Mon Jul 29 23:25:47 UTC 2024 -- Tue Jul 30 09:25:47 AEST 2024
