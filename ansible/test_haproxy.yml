@@ -37,17 +37,6 @@
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
 
-    - name: Download qcow2 required for simulation
-      command: >-
-        aws --endpoint-url=https://{{ s3_host }}
-        s3 sync {{ qcow2_ceph_path }} {{ images_folder }}/
-        --cli-read-timeout {{ s3_read_timeout }}
-        --exclude "*" --include {{ item }}
-      loop:
-        - "{{ rhel_hypervisor_image }}"
-        - "{{ ubuntu_hypervisor_image }}"
-      changed_when: true
-
 - name: Deploy simulated machines
   hosts: target_machines
   gather_facts: no
