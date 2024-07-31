@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240731.2
-  # Wed Jul 31 01:28:41 UTC 2024 -- Wed Jul 31 11:28:41 AEST 2024
+  # Dante Build Artifact 20240731.3
+  # Wed Jul 31 02:19:42 UTC 2024 -- Wed Jul 31 12:19:42 AEST 2024
   #
-  # Merge pull request 26025 from dante_artifact_upgrade into master
-  # d122d790aaf6ea29fe18546acce6947db4ef175a
-  dante_build_id: '1040980'
+  # Merged PR 26013: Removed python vulnerability check
+  # de577a67851aa2147acc99e33bce54f093edc970
+  dante_build_id: '1041056'
 
-  # virgil 20240731.4
-  # Wed Jul 31 00:28:48 UTC 2024 -- Wed Jul 31 10:28:48 AEST 2024
+  # virgil 20240731.6
+  # Wed Jul 31 02:26:13 UTC 2024 -- Wed Jul 31 12:26:13 AEST 2024
   #
-  # Merged PR 26026: CS01691745 new topics
-  # a8eead646de811539976887317885c82514503a3
-  virgil_build_id: '1040894'
+  # Merged PR 26044: Removed python vulnerability check
+  # 40635db982204d90e04522b51b8091f4d366a201
+  virgil_build_id: '1041065'
