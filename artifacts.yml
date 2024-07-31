@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240731.3
-  # Wed Jul 31 02:19:42 UTC 2024 -- Wed Jul 31 12:19:42 AEST 2024
+  # Dante Build Artifact 20240731.5
+  # Wed Jul 31 03:43:04 UTC 2024 -- Wed Jul 31 13:43:04 AEST 2024
   #
-  # Merged PR 26013: Removed python vulnerability check
-  # de577a67851aa2147acc99e33bce54f093edc970
-  dante_build_id: '1041056'
+  # Merged PR 26001: Support multiple users in aws cli credential file
+  # f5b6be0a61e7bc1aa440f6006b6aef71ce1315e3
+  dante_build_id: '1041160'
 
   # virgil 20240731.6
   # Wed Jul 31 02:26:13 UTC 2024 -- Wed Jul 31 12:26:13 AEST 2024
