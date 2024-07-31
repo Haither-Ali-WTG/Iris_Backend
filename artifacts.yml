@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240731.7
-  # Wed Jul 31 04:39:09 UTC 2024 -- Wed Jul 31 14:39:09 AEST 2024
+  # Dante Build Artifact 20240731.13
+  # Wed Jul 31 06:37:44 UTC 2024 -- Wed Jul 31 16:37:44 AEST 2024
   #
-  # Merged PR 26059: Build pure_connection_setup into dante artifact
-  # 73e6d0a669ddcd83ab6fdeda09409174c490fc26
-  dante_build_id: '1041243'
+  # Merged PR 26046: Removed oboslete code
+  # 1d62c4fb0499cf01d529d402398a19e3ce5ad4dd
+  dante_build_id: '1041383'
 
   # virgil 20240731.6
   # Wed Jul 31 02:26:13 UTC 2024 -- Wed Jul 31 12:26:13 AEST 2024
