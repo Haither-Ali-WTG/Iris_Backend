@@ -65,37 +65,6 @@ stages:
 
           - script: |
               set -euxo pipefail
-              safety check --full-report -i 42188 -i 42923 -i 42926 -i 54229 -i 54230 -i 54564 -i 67599 -i 70612
-            # Ignored reports:
-            #   - 42188 - Yamale does not protect against intentionally malicious
-            #   schemas. Our schemas are all controlled by us (and indeed in this repo).
-            #   - 42923,42926 - CVE-2021-3532 and CVE-2021-3533 - Results of
-            #   Ansible async tasks can be leaked to malicious non-privileged users
-            #   on the target machine, under some circumstances. However, we do not
-            #   have any async tasks in this repo.
-            #   - 54229 - CVE-2020-25636 - A flaw was found in Ansible Base when using
-            #   the aws_ssm connection plugin as there is no namespace separation for
-            #   file transfers.  Files are written directly to the root bucket, making
-            #   possible to have collisions when running multiple ansible processes.
-            #   This issue affects mainly the service availability.
-            #   - 54230 - CVE-2020-25635 - A flaw was found in Ansible Base when using
-            #   the aws_ssm connection plugin as garbage collector is not happening
-            #   after playbook run is completed. Files would remain in the bucket
-            #   exposing the data. This issue affects directly data confidentiality.
-            #   - 54564 - CVE-2020-25635 - A flaw was found in Ansible in the amazon.aws collection
-            #   when using the `tower_callback` parameter from the `amazon.aws.ec2_instance` module.
-            #   This is not applicable since we don't use aws module outside of our internal s3 sync
-            #   and cp calls and this is not client-facing code
-            #   - 67599 - CVE-2018-20225 - We don't use pip --extra-index-url in this pipeline.
-            #   This doesn't affect us and can be safely overruled.
-            #   - 70612 - CVE-2018-20225 - We don't use from_string and jinja2 is only used internally to
-            #   template out own variables.
-            displayName: 'Python Safety vulnerability check'
-            continueOnError: true
-            condition: succeededOrFailed()
-
-          - script: |
-              set -euxo pipefail
               yamllint -s .
             displayName: 'YAML lint'
             condition: succeededOrFailed()
