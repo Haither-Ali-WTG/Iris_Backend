@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240731.13
-  # Wed Jul 31 06:37:44 UTC 2024 -- Wed Jul 31 16:37:44 AEST 2024
+  # Dante Build Artifact 20240731.14
+  # Wed Jul 31 07:38:41 UTC 2024 -- Wed Jul 31 17:38:41 AEST 2024
   #
-  # Merged PR 26046: Removed oboslete code
-  # 1d62c4fb0499cf01d529d402398a19e3ce5ad4dd
-  dante_build_id: '1041383'
+  # Merged PR 26073: Added builds for test hypervisors based on Ubuntu 22.04 and 24.04
+  # e7c2f56f6a51889a04a73368abbae47e1bdcddbe
+  dante_build_id: '1041448'
 
   # virgil 20240731.6
   # Wed Jul 31 02:26:13 UTC 2024 -- Wed Jul 31 12:26:13 AEST 2024
