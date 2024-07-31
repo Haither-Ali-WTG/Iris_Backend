@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240730.2
-  # Tue Jul 30 01:57:46 UTC 2024 -- Tue Jul 30 11:57:46 AEST 2024
+  # Dante Build Artifact 20240731.1
+  # Tue Jul 30 23:46:30 UTC 2024 -- Wed Jul 31 09:46:30 AEST 2024
   #
-  # Merged PR 25977: Disable simulation8711 for rebuild
-  # 3a5859d94d0f0ae810ba3b307754077dac2f906d
-  dante_build_id: '1039810'
+  # Merge pull request 26006 from dante_python_upgrade into master
+  # 85fcddefa5bc8d413728b1a2ae667d9f1384370a
+  dante_build_id: '1040828'
 
-  # virgil 20240730.2
-  # Mon Jul 29 23:25:47 UTC 2024 -- Tue Jul 30 09:25:47 AEST 2024
+  # virgil 20240731.2
+  # Tue Jul 30 23:44:32 UTC 2024 -- Wed Jul 31 09:44:32 AEST 2024
   #
-  # Merge pull request 25962 from virgil_python_upgrade into master
-  # ee86c38d804b0b8738c72fc5b643a4802e5cb870
-  virgil_build_id: '1039638'
+  # Merge pull request 26004 from virgil_python_upgrade into master
+  # a725eedebf4bb64e8683865bd45aaed2f7c21b2c
+  virgil_build_id: '1040821'
