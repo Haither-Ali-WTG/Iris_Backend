@@ -228,7 +228,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="intermediate=false"
-                -e="s3_host=$(s3_host)" -e="s3_users=$(s3_users)"
+                -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
             env:
@@ -247,7 +247,7 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
-                -e="s3_host=$(s3_host)" -e="s3_users=$(s3_users)"
+                -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
                 -e="target_dc=$(simulation_dc)"
