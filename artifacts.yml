@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240801.7
-  # Thu Aug  1 06:35:11 UTC 2024 -- Thu Aug  1 16:35:11 AEST 2024
+  # Dante Build Artifact 20240801.9
+  # Thu Aug  1 07:41:10 UTC 2024 -- Thu Aug  1 17:41:10 AEST 2024
   #
-  # Merged PR 26143: Fix the bucket name.
-  # eb6d5837797df65262f2c4cdea657117f1be1191
-  dante_build_id: '1042668'
+  # Merge pull request 26099 from dante_python_upgrade into master
+  # 7f52d95459cf0539f2680193d2c6bfa2eb6de276
+  dante_build_id: '1042743'
 
   # virgil 20240801.2
   # Wed Jul 31 23:33:09 UTC 2024 -- Thu Aug  1 09:33:09 AEST 2024
