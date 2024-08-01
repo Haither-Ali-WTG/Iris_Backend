@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240801.5
-  # Thu Aug  1 05:15:36 UTC 2024 -- Thu Aug  1 15:15:36 AEST 2024
+  # Dante Build Artifact 20240801.7
+  # Thu Aug  1 06:35:11 UTC 2024 -- Thu Aug  1 16:35:11 AEST 2024
   #
-  # Merged PR 26131: Migrate Lethe MongoDB dump data from Ceph S3 to Pure
-  # 11b54d4804aac6c65f4fa1fa890361c80f86ffc3
-  dante_build_id: '1042562'
+  # Merged PR 26143: Fix the bucket name.
+  # eb6d5837797df65262f2c4cdea657117f1be1191
+  dante_build_id: '1042668'
 
   # virgil 20240801.2
   # Wed Jul 31 23:33:09 UTC 2024 -- Thu Aug  1 09:33:09 AEST 2024
