@@ -51,7 +51,7 @@
         virgil_os_name: "{{ os }}"
         virgil_ip_dante: "{{ ansible_host }}"
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-        virgil_os_codename: "{{ os_codename[machine.os] }}"
+        virgil_os_codename: "{{ os_codename[os] }}"
 
     - name: Set images for simulation OS
       vars:
