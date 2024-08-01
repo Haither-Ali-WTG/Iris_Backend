@@ -12,7 +12,6 @@
 - name: Prepare CMS cache data
   when: use_cache | default(true)
   block:
-
     - name: Setup S3 storage connection
       include_role:
         name: pure_connection_setup
