@@ -36,8 +36,8 @@
       vars:
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
-        pure_s3_users: "{{ s3_users.split(',') | map('trim') | list }}"
-      when: s3_users is defined and s3_users
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+      when: pure_usernames is defined and pure_usernames
 
     - name: Setup ceph connection
       include_role:
@@ -45,7 +45,7 @@
       vars:
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
-      when: not (s3_users is defined and s3_users)
+      when: not (pure_usernames is defined and pure_usernames)
 
 - name: Deploy simulated machines
   hosts: target_machines

@@ -12,7 +12,7 @@ variables:
     value: au2s3-2.wtg.ws
   - name: s3_iris_bucket
     value: s3://au-iscore-iris-prod-1/
-  - name: s3_users
+  - name: pure_usernames
     value: au-iscore-iris-prod-1-rw
 
 stages:
@@ -151,7 +151,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="simulation=" -e="azure_kv_name=$(azure_kv_name)"
-                -e="s3_host=$(s3_host)" -e="s3_users='$(s3_users)'"
+                -e="s3_host=$(s3_host)" -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
