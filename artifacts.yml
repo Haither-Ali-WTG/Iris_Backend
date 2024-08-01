@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240801.3
-  # Thu Aug  1 02:48:11 UTC 2024 -- Thu Aug  1 12:48:11 AEST 2024
+  # Dante Build Artifact 20240801.5
+  # Thu Aug  1 05:15:36 UTC 2024 -- Thu Aug  1 15:15:36 AEST 2024
   #
-  # Merged PR 26108: update snmpd_conf file for switches on 580
-  # de3c35f3c409acfd56a350f06a55787b95c6ed27
-  dante_build_id: '1042394'
+  # Merged PR 26131: Migrate Lethe MongoDB dump data from Ceph S3 to Pure
+  # 11b54d4804aac6c65f4fa1fa890361c80f86ffc3
+  dante_build_id: '1042562'
 
   # virgil 20240801.2
   # Wed Jul 31 23:33:09 UTC 2024 -- Thu Aug  1 09:33:09 AEST 2024
