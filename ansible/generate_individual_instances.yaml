@@ -42,7 +42,7 @@
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-        virgil_os_codename: "{{ os_codename[machine.os }}"
+        virgil_os_codename: "{{ os_codename[machine.os] }}"
         virgil_os_variant: "{{ os_variant[machine.os] }}"
 
         ok: ~  # set to `yes` once deployment of instance succeeds
