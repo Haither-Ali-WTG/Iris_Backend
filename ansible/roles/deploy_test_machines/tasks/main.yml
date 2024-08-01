@@ -4,6 +4,7 @@
     name: kvm_start_nodes
   vars:
     add_drivers: no
+    use_uefi: true
 
 - name: Wait 600 seconds for nodes to come up
   wait_for_connection:
