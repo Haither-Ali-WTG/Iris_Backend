@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240801.1
-  # Thu Aug  1 00:22:07 UTC 2024 -- Thu Aug  1 10:22:07 AEST 2024
+  # Dante Build Artifact 20240801.3
+  # Thu Aug  1 02:48:11 UTC 2024 -- Thu Aug  1 12:48:11 AEST 2024
   #
-  # Merged PR 26103: Added 22.04 and 24.04 test hypervisors to nightly upload to agents
-  # 9bc2596d105d25510916e3feacb847dcb410a1fb
-  dante_build_id: '1042214'
+  # Merged PR 26108: update snmpd_conf file for switches on 580
+  # de3c35f3c409acfd56a350f06a55787b95c6ed27
+  dante_build_id: '1042394'
 
   # virgil 20240801.2
   # Wed Jul 31 23:33:09 UTC 2024 -- Thu Aug  1 09:33:09 AEST 2024
