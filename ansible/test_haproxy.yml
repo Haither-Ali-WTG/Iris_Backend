@@ -42,17 +42,21 @@
   gather_facts: no
   tasks:
     - name: Set additional facts
+      vars:
+        os_codename:
+          ubuntu2204: jammy
+          ubuntu2404: noble
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
         virgil_os_name: "{{ os }}"
         virgil_ip_dante: "{{ ansible_host }}"
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-        virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
+        virgil_os_codename: "{{ os_codename[machine.os] }}"
 
     - name: Set images for simulation OS
       vars:
         os_image:
-          ubuntu2204: "{{ ubuntu2404_hypervisor_image }}"
+          ubuntu2204: "{{ ubuntu2204_hypervisor_image }}"
           ubuntu2404: "{{ ubuntu2404_hypervisor_image }}"
           rhel: "{{ rhel_hypervisor_image }}"
         os_variant:
