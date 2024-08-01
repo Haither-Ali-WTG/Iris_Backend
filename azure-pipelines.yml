@@ -11,7 +11,11 @@ variables:
   - name: mgmt_keyvault_name
     value: kv-wtg-dante-sim
   - name: s3_host
-    value: au2s3-1.wtg.ws
+    value: au2s3-2.wtg.ws
+  - name: s3_iris_bucket
+    value: s3://au-iscore-iris-prod-1/
+  - name: s3_users
+    value: au-iscore-iris-prod-1-rw
 
 stages:
   - stage: Tests_and_lint
@@ -149,7 +153,8 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="simulation=" -e="azure_kv_name=$(mgmt_keyvault_name)"
-                -e="s3_host=$(s3_host)"
+                -e="s3_host=$(s3_host)" -e="s3_users='$(s3_users)'"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_HOST_KEY_CHECKING: false
@@ -224,7 +229,9 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="intermediate=false" -e="s3_host=$(s3_host)"
+                -e="intermediate=false"
+                -e="s3_host=$(s3_host)" -e="s3_users=$(s3_users)"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -242,8 +249,9 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
-                -e="ceph_proxy_host=192.168.255.254" -e="ceph_proxy_port=3128"
-                -e="s3_host=$(s3_host)"
+                -e="s3_host=$(s3_host)" -e="s3_users=$(s3_users)"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
+                -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)

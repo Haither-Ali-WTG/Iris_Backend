@@ -22,7 +22,7 @@ yamllint
 jq
 yq
 
-# required for ceph communication
+# required for S3 communication
 awscli
 
 # required for simulation
