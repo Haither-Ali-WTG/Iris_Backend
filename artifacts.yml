@@ -7,9 +7,9 @@ variables:
   # a28983c54b34eb6b0b1e1ae14172e0d1c0eaa3d8
   dante_build_id: '1043660'
 
-  # virgil 20240801.2
-  # Wed Jul 31 23:33:09 UTC 2024 -- Thu Aug  1 09:33:09 AEST 2024
+  # virgil 20240802.2
+  # Fri Aug  2 07:07:20 UTC 2024 -- Fri Aug  2 17:07:20 AEST 2024
   #
-  # Merge pull request 26098 from virgil_python_upgrade into master
-  # 40679e4194d24a3431db244e8154611d86966b45
-  virgil_build_id: '1042169'
+  # Merged PR 26180: upgrade De1 switch pairs to CL580 - Tranche 1
+  # c665156c677999b80830143d05237cd34555b449
+  virgil_build_id: '1043863'
