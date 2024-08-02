@@ -33,7 +33,7 @@
     var: info
   when: collect_sites_data_output is not skipped
 
-- name: Upload IIS data to ceph
+- name: Upload IIS data to S3
   command: >-
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp --recursive

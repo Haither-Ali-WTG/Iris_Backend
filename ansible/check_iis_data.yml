@@ -32,7 +32,7 @@
         state: directory
       register: temp_path
 
-    - name: Download IIS data from ceph
+    - name: Download IIS data from S3
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
         s3 cp --recursive

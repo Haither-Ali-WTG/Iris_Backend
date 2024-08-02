@@ -2,19 +2,29 @@
 - name: Download and initialize clustered instance IIS data
   hosts: localhost
   tasks:
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        proxy_host: "{{ s3_proxy_host | default('') }}"
+        proxy_port: "{{ s3_proxy_port | default('') }}"
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+      when: pure_usernames is defined and pure_usernames
+
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
       vars:
         proxy_host: "{{ ceph_proxy_host | default('') }}"
         proxy_port: "{{ ceph_proxy_port | default('') }}"
+      when: not (pure_usernames is defined and pure_usernames)
 
     - name: Create temporary directory
       tempfile:
         state: directory
       register: temp_path
 
-    - name: Download IIS data from ceph
+    - name: Download IIS data from S3
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
         s3 cp --recursive

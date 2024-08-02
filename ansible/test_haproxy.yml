@@ -30,12 +30,22 @@
         DEBIAN_FRONTEND: noninteractive
       become: yes
 
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+      when: pure_usernames is defined and pure_usernames
+
     - name: Setup ceph connection
       include_role:
         name: ceph_connection_setup
       vars:
         proxy_host: "192.168.255.254"
         proxy_port: "3128"
+      when: not (pure_usernames is defined and pure_usernames)
 
 - name: Deploy simulated machines
   hosts: target_machines
