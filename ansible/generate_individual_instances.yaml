@@ -13,6 +13,9 @@
           ubuntu2204: ubuntu
           ubuntu2404: ubuntu
           rhel: rhel
+        os_codename:
+          ubuntu2204: jammy
+          ubuntu2404: noble
       add_host:
         name: "{{ item.individual_instance_name }}"
         groups:
@@ -39,7 +42,7 @@
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-        virgil_os_codename: jammy  # TODO properly - "{{ machine.virgil_os_codename }}"
+        virgil_os_codename: "{{ os_codename[machine.os] }}"
         virgil_os_variant: "{{ os_variant[machine.os] }}"
 
         ok: ~  # set to `yes` once deployment of instance succeeds
