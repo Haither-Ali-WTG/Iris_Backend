@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240805.8
-  # Mon Aug  5 05:35:41 UTC 2024 -- Mon Aug  5 15:35:41 AEST 2024
+  # Dante Build Artifact 20240806.1
+  # Mon Aug  5 23:24:27 UTC 2024 -- Tue Aug  6 09:24:27 AEST 2024
   #
-  # Merge pull request 26222 from dante_python_upgrade into master
-  # 4074bb7376e8d1c1a0f9c662af6f6d927500d7fa
-  dante_build_id: '1047740'
+  # Merge pull request 26285 from dante_python_upgrade into master
+  # 8aeb341d4ee5e65f36ee70076fd0b08de5ea6ee3
+  dante_build_id: '1048697'
 
-  # virgil 20240802.2
-  # Fri Aug  2 07:07:20 UTC 2024 -- Fri Aug  2 17:07:20 AEST 2024
+  # virgil 20240806.5
+  # Mon Aug  5 23:24:27 UTC 2024 -- Tue Aug  6 09:24:27 AEST 2024
   #
-  # Merged PR 26180: upgrade De1 switch pairs to CL580 - Tranche 1
-  # c665156c677999b80830143d05237cd34555b449
-  virgil_build_id: '1043863'
+  # Merge pull request 26283 from virgil_python_upgrade into master
+  # de09f795029a45e7c44d3aa7f60c8c610a2a3b53
+  virgil_build_id: '1048696'
