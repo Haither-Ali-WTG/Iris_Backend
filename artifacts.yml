@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240805.6
-  # Mon Aug  5 03:09:50 UTC 2024 -- Mon Aug  5 13:09:50 AEST 2024
+  # Dante Build Artifact 20240805.7
+  # Mon Aug  5 04:10:15 UTC 2024 -- Mon Aug  5 14:10:15 AEST 2024
   #
-  # Merge pull request 26199 from automatic_ptmctl_image_upgrade into master
-  # 5b12f452aa3f016d10913d2542daff53613a1c26
-  dante_build_id: '1047560'
+  # Merged PR 26209: Dante - Fix k8s config
+  # 69a87fd4e5ef8f7abd6f415c59d63019126a22be
+  dante_build_id: '1047639'
 
   # virgil 20240802.2
   # Fri Aug  2 07:07:20 UTC 2024 -- Fri Aug  2 17:07:20 AEST 2024
