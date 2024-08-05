@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240805.1
-  # Sun Aug  4 22:56:27 UTC 2024 -- Mon Aug  5 08:56:27 AEST 2024
+  # Dante Build Artifact 20240805.2
+  # Sun Aug  4 23:42:38 UTC 2024 -- Mon Aug  5 09:42:38 AEST 2024
   #
-  # Merge pull request 26197 from automatic_botticelli_image_upgrade into master
-  # 46ada290015295062874f8df4b312f73244ee705
-  dante_build_id: '1047175'
+  # Merged PR 26173: Migrate Lethe deployment data source from Ceph S3 to Pure
+  # 0cbeee45fcd29196ef02eb1c1b21e115692e655a
+  dante_build_id: '1047248'
 
   # virgil 20240802.2
   # Fri Aug  2 07:07:20 UTC 2024 -- Fri Aug  2 17:07:20 AEST 2024
