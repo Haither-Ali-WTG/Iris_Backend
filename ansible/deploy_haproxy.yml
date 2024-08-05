@@ -17,13 +17,13 @@
         name: ceph_connection_setup
       when: not (pure_usernames is defined and pure_usernames)
 
-- name: Collect and publish IIS data to ceph
+- name: Collect and publish IIS data to S3
   hosts: clustered_instances
   strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Collect and publish IIS data to ceph
+    - name: Collect and publish IIS data to S3
       include_role:
         name: collect_sites
       when:
