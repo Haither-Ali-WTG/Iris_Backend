@@ -17,13 +17,19 @@ parameters:
     default:
       - agent_dc: AU2
         agent_hall: A
-        s3_host: au2s3-1.wtg.ws
+        s3_host: au2s3-2.wtg.ws
+        s3_iris_bucket: s3://au-iscore-iris-prod-1/
+        pure_usernames: au-iscore-iris-prod-1-ro
       - agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-1.wtg.ws
+        s3_iris_bucket: s3://dante-iris/
+        pure_usernames: ""
       - agent_dc: US2
         agent_hall: A
         s3_host: us2s3-1.wtg.ws
+        s3_iris_bucket: s3://dante-iris/
+        pure_usernames: ""
 
 stages:
   - ${{ each run in parameters.matrix }}:
@@ -101,6 +107,8 @@ stages:
                           -u $(user) --diff
                           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                           -e="intermediate=false" -e="s3_host=${{ run.s3_host }}"
+                          -e="pure_usernames='${{ run.pure_usernames }}'"
+                          -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
                           -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
                           -e="target_dc=${{ run.agent_dc }}"
                       env:
@@ -121,6 +129,8 @@ stages:
                           -e="simulation="
                           -e="winrm_password=$(winrm_password)"
                           -e="s3_host=${{ run.s3_host }}"
+                          -e="pure_usernames='${{ run.pure_usernames }}'"
+                          -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
                           -e="key_vault_name=$(key_vault_name)"
                           -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                           -e="target_dc=${{ run.agent_dc }}"
