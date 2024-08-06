@@ -7,9 +7,9 @@ variables:
   # bd90dc24bfe391e819a09820dbda9fab47a07085
   dante_build_id: '1049062'
 
-  # virgil 20240806.10
-  # Tue Aug  6 02:55:56 UTC 2024 -- Tue Aug  6 12:55:56 AEST 2024
+  # virgil 20240806.14
+  # Tue Aug  6 04:49:03 UTC 2024 -- Tue Aug  6 14:49:03 AEST 2024
   #
-  # Merged PR 26302: Add chrony serverstats monitoring
-  # d72e381a5a5a89a9070ee7308a9af41c90928f15
-  virgil_build_id: '1048989'
+  # Merged PR 26329: Deploy chrony serverstats check in the simulation
+  # 914574e8806c27336631b85ed10821ceddc986e1
+  virgil_build_id: '1049134'
