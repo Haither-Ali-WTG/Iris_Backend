@@ -19,7 +19,7 @@ parameters:
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
-        pure_usernames: au-iscore-iris-prod-1-ro
+        pure_usernames: au-iscore-iris-prod-1-rw
       - agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-1.wtg.ws
