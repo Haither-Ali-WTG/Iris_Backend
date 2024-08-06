@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240806.4
-  # Tue Aug  6 02:44:51 UTC 2024 -- Tue Aug  6 12:44:51 AEST 2024
+  # Dante Build Artifact 20240806.5
+  # Tue Aug  6 03:59:15 UTC 2024 -- Tue Aug  6 13:59:15 AEST 2024
   #
-  # Merged PR 26295: Send python vulnerabilities to kafka
-  # c1828951b5bb3f94b9a57a2182545ca56a062327
-  dante_build_id: '1048976'
+  # Merge pull request 26321 from dante_artifact_upgrade into master
+  # bd90dc24bfe391e819a09820dbda9fab47a07085
+  dante_build_id: '1049062'
 
   # virgil 20240806.10
   # Tue Aug  6 02:55:56 UTC 2024 -- Tue Aug  6 12:55:56 AEST 2024
