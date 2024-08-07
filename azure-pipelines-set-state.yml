@@ -17,15 +17,21 @@ stages:
             AU2_hall_A:
               dc: AU2
               hall: A
-              s3_host: au2s3-1.wtg.ws
+              s3_host: au2s3-2.wtg.ws
+              s3_iris_bucket: s3://au-iscore-iris-prod-1/
+              pure_usernames: au-iscore-iris-prod-1-ro
             DE1_hall_A:
               dc: DE1
               hall: A
               s3_host: de1s3-1.wtg.ws
+              s3_iris_bucket: s3://dante-iris/
+              pure_usernames: ""
             US2_hall_A:
               dc: US2
               hall: A
               s3_host: us2s3-1.wtg.ws
+              s3_iris_bucket: s3://dante-iris/
+              pure_usernames: ""
         pool:
           name: dante
           demands:
@@ -87,6 +93,8 @@ stages:
                 -u $(user) --diff
                 -e="ansible_ssh_extra_args='-o StrictHostKeyChecking=no'"
                 -e="s3_host=$(s3_host)" -e="azure_kv_name=$(key_vault_name)"
+                -e="pure_usernames='$(pure_usernames)'"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="target_dc=$(dc)"
                 -e="backends='$(backends)'"
                 -e="backend_servers='$(backend_servers)'"
