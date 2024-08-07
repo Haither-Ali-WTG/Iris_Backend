@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240807.4
-  # Wed Aug  7 01:51:42 UTC 2024 -- Wed Aug  7 11:51:42 AEST 2024
+  # Dante Build Artifact 20240807.6
+  # Wed Aug  7 05:16:41 UTC 2024 -- Wed Aug  7 15:16:41 AEST 2024
   #
-  # Merged PR 26279: Remove dead repos/links from sync mirror
-  # c42c666d1418a51e9bce31808638ae21c419278f
-  dante_build_id: '1050289'
+  # Merge pull request 26359 from dante_python_upgrade into master
+  # 0563e7f927daadeaa699ca21070db9c6a47ce5bf
+  dante_build_id: '1050506'
 
   # virgil 20240807.7
   # Wed Aug  7 01:02:45 UTC 2024 -- Wed Aug  7 11:02:45 AEST 2024
