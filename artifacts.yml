@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240806.6
-  # Tue Aug  6 06:12:23 UTC 2024 -- Tue Aug  6 16:12:23 AEST 2024
+  # Dante Build Artifact 20240807.2
+  # Wed Aug  7 00:04:29 UTC 2024 -- Wed Aug  7 10:04:29 AEST 2024
   #
-  # Merge pull request 26336 from dante_artifact_upgrade into master
-  # 27d0813f8f9a5954c94041b4c2b4621cbcdcad5a
-  dante_build_id: '1049254'
+  # Merged PR 26368: Reset pure_users
+  # 56b3ec3e1b04bea8ff2200dc9629ba10c60fcbf0
+  dante_build_id: '1050118'
 
-  # virgil 20240807.2
-  # Tue Aug  6 22:52:33 UTC 2024 -- Wed Aug  7 08:52:33 AEST 2024
+  # virgil 20240807.4
+  # Tue Aug  6 23:58:06 UTC 2024 -- Wed Aug  7 09:58:06 AEST 2024
   #
-  # Merge pull request 26351 from virgil_python_upgrade into master
-  # c80a7e0e0cbe81b0caf6d6c4cdd048ea05a17a2a
-  virgil_build_id: '1050019'
+  # Merged PR 26286: SY5EdgeCoreReplacement
+  # 0eeeade8a7eabb2944c6a1f049a87183ea4dc533
+  virgil_build_id: '1050084'
