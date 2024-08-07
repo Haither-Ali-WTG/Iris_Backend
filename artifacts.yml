@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240807.6
-  # Wed Aug  7 05:16:41 UTC 2024 -- Wed Aug  7 15:16:41 AEST 2024
+  # Dante Build Artifact 20240807.7
+  # Wed Aug  7 06:03:58 UTC 2024 -- Wed Aug  7 16:03:58 AEST 2024
   #
-  # Merge pull request 26359 from dante_python_upgrade into master
-  # 0563e7f927daadeaa699ca21070db9c6a47ce5bf
-  dante_build_id: '1050506'
+  # Merged PR 26394: (minor) Add stricthostkeychecking=no to command line
+  # 858f67afa3c861520053a074a40fc55eec26f778
+  dante_build_id: '1050570'
 
   # virgil 20240807.7
   # Wed Aug  7 01:02:45 UTC 2024 -- Wed Aug  7 11:02:45 AEST 2024
