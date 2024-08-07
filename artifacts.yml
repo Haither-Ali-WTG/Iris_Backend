@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240807.7
-  # Wed Aug  7 06:03:58 UTC 2024 -- Wed Aug  7 16:03:58 AEST 2024
+  # Dante Build Artifact 20240807.8
+  # Wed Aug  7 07:32:46 UTC 2024 -- Wed Aug  7 17:32:46 AEST 2024
   #
-  # Merged PR 26394: (minor) Add stricthostkeychecking=no to command line
-  # 858f67afa3c861520053a074a40fc55eec26f778
-  dante_build_id: '1050570'
+  # Merged PR 26404: add dup detection and freeze logic to FRR
+  # d6cbf8c8c596fa0df3e271b3df33a22e0459184e
+  dante_build_id: '1050658'
 
   # virgil 20240807.7
   # Wed Aug  7 01:02:45 UTC 2024 -- Wed Aug  7 11:02:45 AEST 2024
