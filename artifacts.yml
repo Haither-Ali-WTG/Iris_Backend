@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240807.8
-  # Wed Aug  7 07:32:46 UTC 2024 -- Wed Aug  7 17:32:46 AEST 2024
+  # Dante Build Artifact 20240808.1
+  # Wed Aug  7 23:36:50 UTC 2024 -- Thu Aug  8 09:36:50 AEST 2024
   #
-  # Merged PR 26404: add dup detection and freeze logic to FRR
-  # d6cbf8c8c596fa0df3e271b3df33a22e0459184e
-  dante_build_id: '1050658'
+  # Merge pull request 26438 from dante_python_upgrade into master
+  # af3d55f375449110a602ab1b8c78145e50c6cc27
+  dante_build_id: '1051361'
 
-  # virgil 20240807.7
-  # Wed Aug  7 01:02:45 UTC 2024 -- Wed Aug  7 11:02:45 AEST 2024
+  # virgil 20240808.2
+  # Wed Aug  7 22:57:12 UTC 2024 -- Thu Aug  8 08:57:12 AEST 2024
   #
-  # Merged PR 26381: Deploy chrony server stats metrics to prod.
-  # 4ea8c6bd5fca721abea74edaaf25eded0128c14c
-  virgil_build_id: '1050236'
+  # Merge pull request 26432 from virgil_python_upgrade into master
+  # e8a247c2065ad39d31a1c956b4ab9e0b41095004
+  virgil_build_id: '1051302'
