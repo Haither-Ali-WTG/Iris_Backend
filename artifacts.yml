@@ -7,9 +7,9 @@ variables:
   # 0c039b221fe0c2eb647e01cd85359adb719bdfe3
   dante_build_id: '1051646'
 
-  # virgil 20240808.2
-  # Wed Aug  7 22:57:12 UTC 2024 -- Thu Aug  8 08:57:12 AEST 2024
+  # virgil 20240809.2
+  # Thu Aug  8 20:35:22 UTC 2024 -- Fri Aug  9 06:35:22 AEST 2024
   #
-  # Merge pull request 26432 from virgil_python_upgrade into master
-  # e8a247c2065ad39d31a1c956b4ab9e0b41095004
-  virgil_build_id: '1051302'
+  # Merged PR 26482: Add config for 2x Hyper-V hosts in DE1
+  # 308e957dfd343162747600f69a911dfd2dfece9b
+  virgil_build_id: '1052401'
