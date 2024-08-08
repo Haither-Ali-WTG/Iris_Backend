@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240808.2
-  # Thu Aug  8 01:26:53 UTC 2024 -- Thu Aug  8 11:26:53 AEST 2024
+  # Dante Build Artifact 20240808.3
+  # Thu Aug  8 02:19:59 UTC 2024 -- Thu Aug  8 12:19:59 AEST 2024
   #
-  # Merge pull request 26444 from dante_artifact_upgrade into master
-  # f7ae3430446a980d97aa5fd14d5d19ea690404ff
-  dante_build_id: '1051470'
+  # Merged PR 26420: Stop and purge unwanted services - fwupd and unattended-upgrades
+  # b04a7ec2127c7328ab1e00c7965cbc85de281272
+  dante_build_id: '1051553'
 
   # virgil 20240808.2
   # Wed Aug  7 22:57:12 UTC 2024 -- Thu Aug  8 08:57:12 AEST 2024
