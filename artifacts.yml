@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240808.3
-  # Thu Aug  8 02:19:59 UTC 2024 -- Thu Aug  8 12:19:59 AEST 2024
+  # Dante Build Artifact 20240808.4
+  # Thu Aug  8 03:48:34 UTC 2024 -- Thu Aug  8 13:48:34 AEST 2024
   #
-  # Merged PR 26420: Stop and purge unwanted services - fwupd and unattended-upgrades
-  # b04a7ec2127c7328ab1e00c7965cbc85de281272
-  dante_build_id: '1051553'
+  # Merged PR 26453: rollout dup IP detection freeze
+  # 0c039b221fe0c2eb647e01cd85359adb719bdfe3
+  dante_build_id: '1051646'
 
   # virgil 20240808.2
   # Wed Aug  7 22:57:12 UTC 2024 -- Thu Aug  8 08:57:12 AEST 2024
