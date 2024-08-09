@@ -7,9 +7,9 @@ variables:
   # af958505dd1a9812a3bfc8ce15b8b4cbc0b1c483
   dante_build_id: '1052771'
 
-  # virgil 20240809.5
-  # Fri Aug  9 02:39:42 UTC 2024 -- Fri Aug  9 12:39:42 AEST 2024
+  # virgil 20240809.7
+  # Fri Aug  9 06:38:06 UTC 2024 -- Fri Aug  9 16:38:06 AEST 2024
   #
-  # Merged PR 26415: Replacement hardwares for internal HAProxy cluster
-  # 94a174f0fa20803511f8bd42b5d6115d4585ddd8
-  virgil_build_id: '1052717'
+  # Merged PR 26499: update cumulus version for DE1 switches
+  # 3839fa5013e9901e6243671585a6dbbbc2e22fb9
+  virgil_build_id: '1052924'
