@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240808.4
-  # Thu Aug  8 03:48:34 UTC 2024 -- Thu Aug  8 13:48:34 AEST 2024
+  # Dante Build Artifact 20240809.1
+  # Thu Aug  8 21:47:09 UTC 2024 -- Fri Aug  9 07:47:09 AEST 2024
   #
-  # Merged PR 26453: rollout dup IP detection freeze
-  # 0c039b221fe0c2eb647e01cd85359adb719bdfe3
-  dante_build_id: '1051646'
+  # Merge pull request 26493 from dante_artifact_upgrade into master
+  # edb82d70dd0b6570f3ba790910e89a9bd6f34aaf
+  dante_build_id: '1052454'
 
-  # virgil 20240809.2
-  # Thu Aug  8 20:35:22 UTC 2024 -- Fri Aug  9 06:35:22 AEST 2024
+  # virgil 20240809.5
+  # Fri Aug  9 02:39:42 UTC 2024 -- Fri Aug  9 12:39:42 AEST 2024
   #
-  # Merged PR 26482: Add config for 2x Hyper-V hosts in DE1
-  # 308e957dfd343162747600f69a911dfd2dfece9b
-  virgil_build_id: '1052401'
+  # Merged PR 26415: Replacement hardwares for internal HAProxy cluster
+  # 94a174f0fa20803511f8bd42b5d6115d4585ddd8
+  virgil_build_id: '1052717'
