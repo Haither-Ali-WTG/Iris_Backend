@@ -28,13 +28,13 @@ attrs==24.2.0
     #   referencing
 authlib==1.3.1
     # via safety
-awscli==1.33.36
+awscli==1.33.40
     # via -r requirements.in
 bandit==1.7.9
     # via -r requirements.in
 black==24.8.0
     # via ansible-lint
-botocore==1.34.154
+botocore==1.34.158
     # via
     #   awscli
     #   s3transfer
@@ -107,7 +107,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.3.0
+more-itertools==10.4.0
     # via -r requirements.in
 mypy==1.11.1
     # via -r requirements.in
@@ -141,6 +141,8 @@ platformdirs==4.2.2
     #   pylint
 pluggy==1.5.0
     # via pytest
+psutil==6.0.0
+    # via safety
 pyasn1==0.6.0
     # via rsa
 pycparser==2.22
@@ -170,7 +172,7 @@ python-dateutil==2.9.0.post0
     # via botocore
 pywinrm==0.5.0
     # via -r requirements.in
-pyyaml==6.0.1
+pyyaml==6.0.2
     # via
     #   ansible-compat
     #   ansible-core
@@ -214,9 +216,9 @@ ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
 s3transfer==0.10.2
     # via awscli
-safety==3.2.4
+safety==3.2.5
     # via -r requirements.in
-safety-schemas==0.0.2
+safety-schemas==0.0.3
     # via safety
 shellingham==1.5.4
     # via typer
@@ -234,7 +236,7 @@ tomlkit==0.13.0
     #   yq
 typer==0.12.3
     # via safety
-types-pyyaml==6.0.12.20240724
+types-pyyaml==6.0.12.20240808
     # via -r requirements.in
 types-requests==2.32.0.20240712
     # via -r requirements.in
@@ -266,7 +268,7 @@ yamllint==1.35.1
     #   ansible-lint
 yq==3.4.3
     # via -r requirements.in
-zipp==3.19.2
+zipp==3.20.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
