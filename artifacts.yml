@@ -7,9 +7,9 @@ variables:
   # b024454bf15f27f8f771155e56e05cb6af9dc044
   dante_build_id: '1052978'
 
-  # virgil 20240809.7
-  # Fri Aug  9 06:38:06 UTC 2024 -- Fri Aug  9 16:38:06 AEST 2024
+  # virgil 20240811.2
+  # Sun Aug 11 09:30:33 UTC 2024 -- Sun Aug 11 19:30:33 AEST 2024
   #
-  # Merged PR 26499: update cumulus version for DE1 switches
-  # 3839fa5013e9901e6243671585a6dbbbc2e22fb9
-  virgil_build_id: '1052924'
+  # Merged PR 26527: swap apex14 with old apex22 in DE1
+  # 118bfc153ac31946d6b0bd3ad1bc6a55e9706a9d
+  virgil_build_id: '1054935'
