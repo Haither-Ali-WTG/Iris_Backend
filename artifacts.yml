@@ -7,9 +7,9 @@ variables:
   # c39ecfb427dfbeaf00412c1f65de3b01a8f6cb6f
   dante_build_id: '1054995'
 
-  # virgil 20240811.2
-  # Sun Aug 11 09:30:33 UTC 2024 -- Sun Aug 11 19:30:33 AEST 2024
+  # virgil 20240812.4
+  # Mon Aug 12 00:01:46 UTC 2024 -- Mon Aug 12 10:01:46 AEST 2024
   #
-  # Merged PR 26527: swap apex14 with old apex22 in DE1
-  # 118bfc153ac31946d6b0bd3ad1bc6a55e9706a9d
-  virgil_build_id: '1054935'
+  # Merged PR 26520: Created Topics for New Indexes
+  # 0ddc4c1af4dad024cb188861d2471646a0534032
+  virgil_build_id: '1055584'
