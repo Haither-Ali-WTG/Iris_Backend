@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240812.4
-  # Mon Aug 12 03:03:29 UTC 2024 -- Mon Aug 12 13:03:29 AEST 2024
+  # Dante Build Artifact 20240812.6
+  # Mon Aug 12 12:46:55 UTC 2024 -- Mon Aug 12 22:46:55 AEST 2024
   #
-  # Merged PR 26556: Migrate simulation agent to Ubuntu 24.04
-  # 90cbdc8618c7f26747cc77915a49dafe7f4262c2
-  dante_build_id: '1055802'
+  # Merge pull request 26584 from dante_artifact_upgrade into master
+  # 8f0b0c3a5ca2ee8d17f42849f61c6571ecee3407
+  dante_build_id: '1056268'
 
-  # virgil 20240812.4
-  # Mon Aug 12 00:01:46 UTC 2024 -- Mon Aug 12 10:01:46 AEST 2024
+  # virgil 20240812.9
+  # Mon Aug 12 11:39:43 UTC 2024 -- Mon Aug 12 21:39:43 AEST 2024
   #
-  # Merged PR 26520: Created Topics for New Indexes
-  # 0ddc4c1af4dad024cb188861d2471646a0534032
-  virgil_build_id: '1055584'
+  # Merged PR 26535: update RU for DE1 switch apex5
+  # a6977ec8fbb50d7e7abe223a88c9ecb3608dbea1
+  virgil_build_id: '1056212'
