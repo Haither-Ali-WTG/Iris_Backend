@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240813.1
-  # Mon Aug 12 23:31:54 UTC 2024 -- Tue Aug 13 09:31:54 AEST 2024
+  # Dante Build Artifact 20240813.4
+  # Tue Aug 13 01:11:03 UTC 2024 -- Tue Aug 13 11:11:03 AEST 2024
   #
-  # Merge pull request 26589 from dante_python_upgrade into master
-  # 7c27c47fe169ac63f17afa0051b023c5038a36d8
-  dante_build_id: '1056746'
+  # Merged PR 26480: Add minor comments - LUKS Disk Encryption
+  # 84fccbe155214704c7c6ec524c85910050829734
+  dante_build_id: '1056852'
 
-  # virgil 20240812.9
-  # Mon Aug 12 11:39:43 UTC 2024 -- Mon Aug 12 21:39:43 AEST 2024
+  # virgil 20240813.2
+  # Tue Aug 13 01:13:47 UTC 2024 -- Tue Aug 13 11:13:47 AEST 2024
   #
-  # Merged PR 26535: update RU for DE1 switch apex5
-  # a6977ec8fbb50d7e7abe223a88c9ecb3608dbea1
-  virgil_build_id: '1056212'
+  # Merged PR 26599: Virgil - Create datascience queue for issues
+  # 417b9ed81cf0cb388e85d613d056707b94c2d718
+  virgil_build_id: '1056854'
