@@ -22,7 +22,8 @@
 - name: Configure hypervisor
   hosts: hypervisor
   tasks:
-    - include_role:
+    - name: Install awscli
+      include_role:
         name: pure_connection_setup
         tasks_from: install.yml
 
