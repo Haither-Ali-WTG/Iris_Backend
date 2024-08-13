@@ -1,0 +1,59 @@
+---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  vars:
+    enable_dynamic_backends: false
+
+- name: Check and teardown the instance
+  hosts: target_machines
+  gather_facts: yes
+  tasks:
+    - name: Get all containers
+      include_role:
+        name: container_runner
+        tasks_from: get_container_list.yml
+      vars:
+        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+        variable_name: container_list
+
+    - name: Find the containers to be torn down
+      set_fact:
+        instances_to_be_deleted: >-
+          {{ container_list | difference(instance_names)
+          | select('match', reg_filter) | list }}
+      vars:
+        instance_names: >-
+          {{ groups['individual_instances']
+          | map('regex_replace', '^', 'iris_') | list }}
+        reg_filter: "^iris_.+_{{ inventory_hostname }}$"
+
+    - name: Display the instances to be deleted
+      debug:
+        msg: "{{ instances_to_be_deleted }}"
+
+    - name: Check if there is at most one item
+      assert:
+        that: instances_to_be_deleted | length <= 2
+        fail_msg: >-
+          To avoid accidentally deleting all instances due to a code error,
+          only one instance can be torn down at a time.
+
+    - name: Tear down the instance
+      when: instances_to_be_deleted | length == 1
+      block:
+        - name: "Tear down the instance {{ instances_to_be_deleted | first }}"
+          include_role:
+            name: container_runner
+            tasks_from: rm_container.yml
+          vars:
+            name: "{{ instances_to_be_deleted | first }}"
+            virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+
+        - name: Remove instance folder
+          file:
+            state: absent
+            path: "/mnt/data1/containers/{{ instances_to_be_deleted | first }}"
+          become: yes
