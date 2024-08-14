@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240813.4
-  # Tue Aug 13 01:11:03 UTC 2024 -- Tue Aug 13 11:11:03 AEST 2024
+  # Dante Build Artifact 20240814.4
+  # Wed Aug 14 01:07:04 UTC 2024 -- Wed Aug 14 11:07:04 AEST 2024
   #
-  # Merged PR 26480: Add minor comments - LUKS Disk Encryption
-  # 84fccbe155214704c7c6ec524c85910050829734
-  dante_build_id: '1056852'
+  # Merged PR 26640: Added pip config to allow system wide modules install for haproxy
+  # d21a676e5bcb5057c12c9d07f902591c65648789
+  dante_build_id: '1057979'
 
   # virgil 20240813.2
   # Tue Aug 13 01:13:47 UTC 2024 -- Tue Aug 13 11:13:47 AEST 2024
