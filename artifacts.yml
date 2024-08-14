@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240814.6
-  # Wed Aug 14 02:11:03 UTC 2024 -- Wed Aug 14 12:11:03 AEST 2024
+  # Dante Build Artifact 20240814.7
+  # Wed Aug 14 04:29:22 UTC 2024 -- Wed Aug 14 14:29:22 AEST 2024
   #
-  # Merged PR 26625: disable snmp on SN2700s with vteps
-  # 83f967fe322a3fa8f9f117912dd6f02445f345f1
-  dante_build_id: '1058064'
+  # Merged PR 26646: Migrate haproxy test and docker builders to Ubuntu 24.04
+  # 621ad4caf4179c6f14161a0fdee49e15433dacb6
+  dante_build_id: '1058176'
 
   # virgil 20240813.2
   # Tue Aug 13 01:13:47 UTC 2024 -- Tue Aug 13 11:13:47 AEST 2024
