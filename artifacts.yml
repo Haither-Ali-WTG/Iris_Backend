@@ -7,9 +7,9 @@ variables:
   # 621ad4caf4179c6f14161a0fdee49e15433dacb6
   dante_build_id: '1058176'
 
-  # virgil 20240813.2
-  # Tue Aug 13 01:13:47 UTC 2024 -- Tue Aug 13 11:13:47 AEST 2024
+  # virgil 20240814.2
+  # Wed Aug 14 07:03:19 UTC 2024 -- Wed Aug 14 17:03:19 AEST 2024
   #
-  # Merged PR 26599: Virgil - Create datascience queue for issues
-  # 417b9ed81cf0cb388e85d613d056707b94c2d718
-  virgil_build_id: '1056854'
+  # Merged PR 26665: Change the vlan ip for new Haproxy hardwares
+  # b39a7db60caec1cb6820cb8d155c1a03713e6913
+  virgil_build_id: '1058373'
