@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240814.7
-  # Wed Aug 14 04:29:22 UTC 2024 -- Wed Aug 14 14:29:22 AEST 2024
+  # Dante Build Artifact 20240814.8
+  # Wed Aug 14 07:49:54 UTC 2024 -- Wed Aug 14 17:49:54 AEST 2024
   #
-  # Merged PR 26646: Migrate haproxy test and docker builders to Ubuntu 24.04
-  # 621ad4caf4179c6f14161a0fdee49e15433dacb6
-  dante_build_id: '1058176'
+  # Merge pull request 26672 from dante_artifact_upgrade into master
+  # 2834fa28dd8b3a4f8ef0f220ee626b8258a33075
+  dante_build_id: '1058420'
 
   # virgil 20240814.2
   # Wed Aug 14 07:03:19 UTC 2024 -- Wed Aug 14 17:03:19 AEST 2024
