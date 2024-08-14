@@ -22,13 +22,10 @@
 - name: Configure hypervisor
   hosts: hypervisor
   tasks:
-    - name: "Install awscli"
-      apt:
-        name: "awscli"
-        state: present
-      environment:
-        DEBIAN_FRONTEND: noninteractive
-      become: yes
+    - name: Install awscli
+      include_role:
+        name: pure_connection_setup
+        tasks_from: install.yml
 
     - name: Setup S3 storage connection
       include_role:
