@@ -1,6 +1,6 @@
 ---
 rdg.wisetechglobal.com:
-  clustered_instances: [au2corprdg,au2sandinternal1]
+  clustered_instances: [au2corprdg, au2sandinternal1]
   http_health_check:
     enabled: true
     http_path: /
@@ -22,7 +22,7 @@ rdg.wisetechglobal.com:
       port: 80
 
 rdg-au2.wisetechglobal.com:
-  clustered_instances: [au2corprdg,au2sandinternal1]
+  clustered_instances: [au2corprdg, au2sandinternal1]
   http_health_check:
     enabled: true
     http_path: /
@@ -106,7 +106,7 @@ rdgapps.wisetechglobal.com:
       settings: check ssl backup
 
 sandtsg.wtg.zone:
-  clustered_instances: [au2corprdg,au2sandinternal1]
+  clustered_instances: [au2corprdg, au2sandinternal1]
   http_health_check:
     enabled: true
     http_path: /
@@ -122,7 +122,7 @@ sandtsg.wtg.zone:
       port: 80
 
 sandtsg-token-based.wtg.zone:
-  clustered_instances: [au2corprdg,au2sandinternal1,au2sandinternalrdg]
+  clustered_instances: [au2corprdg, au2sandinternal1, au2sandinternalrdg]
   http_health_check:
     enabled: true
     http_path: /
