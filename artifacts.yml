@@ -7,9 +7,9 @@ variables:
   # 289ba1ca646817291466c377449faba5dec73c3e
   dante_build_id: '1059533'
 
-  # virgil 20240815.10
-  # Thu Aug 15 05:49:31 UTC 2024 -- Thu Aug 15 15:49:31 AEST 2024
+  # virgil 20240815.12
+  # Thu Aug 15 07:43:37 UTC 2024 -- Thu Aug 15 17:43:37 AEST 2024
   #
-  # Merged PR 26722: Virgil - Cargo Visibility FMS and GCT Event Tracking Topics
-  # 0937fb36525898dd7a52a8af250721343d18f5c4
-  virgil_build_id: '1059462'
+  # Merged PR 26729: Install ubuntu 2204 for new Haproxy servers
+  # 0a446f5de61599f3b73422f98e20fdf8de70a10f
+  virgil_build_id: '1059601'
