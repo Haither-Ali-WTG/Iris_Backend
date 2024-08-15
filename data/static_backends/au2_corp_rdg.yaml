@@ -122,7 +122,7 @@ sandtsg.wtg.zone:
       port: 80
 
 sandtsg-token-based.wtg.zone:
-  clustered_instances: [au2corprdg,au2sandinternal1]
+  clustered_instances: [au2corprdg,au2sandinternal1,au2sandinternalrdg]
   http_health_check:
     enabled: true
     http_path: /
