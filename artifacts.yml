@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240814.8
-  # Wed Aug 14 07:49:54 UTC 2024 -- Wed Aug 14 17:49:54 AEST 2024
+  # Dante Build Artifact 20240815.1
+  # Thu Aug 15 00:44:36 UTC 2024 -- Thu Aug 15 10:44:36 AEST 2024
   #
-  # Merge pull request 26672 from dante_artifact_upgrade into master
-  # 2834fa28dd8b3a4f8ef0f220ee626b8258a33075
-  dante_build_id: '1058420'
+  # Merge pull request 26685 from dante_python_upgrade into master
+  # aa31e3d234eec8a7842dfc921839a658666c2681
+  dante_build_id: '1059135'
 
-  # virgil 20240814.2
-  # Wed Aug 14 07:03:19 UTC 2024 -- Wed Aug 14 17:03:19 AEST 2024
+  # virgil 20240815.2
+  # Thu Aug 15 00:44:36 UTC 2024 -- Thu Aug 15 10:44:36 AEST 2024
   #
-  # Merged PR 26665: Change the vlan ip for new Haproxy hardwares
-  # b39a7db60caec1cb6820cb8d155c1a03713e6913
-  virgil_build_id: '1058373'
+  # Merge pull request 26682 from virgil_python_upgrade into master
+  # 02fe89621958b5289f988854414d40c27fad8bfa
+  virgil_build_id: '1059134'
