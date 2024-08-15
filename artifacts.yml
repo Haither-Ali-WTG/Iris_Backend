@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240815.2
-  # Thu Aug 15 01:28:42 UTC 2024 -- Thu Aug 15 11:28:42 AEST 2024
+  # Dante Build Artifact 20240815.3
+  # Thu Aug 15 04:11:27 UTC 2024 -- Thu Aug 15 14:11:27 AEST 2024
   #
-  # Merge pull request 26700 from dante_artifact_upgrade into master
-  # 3221d2b4f1b4cb26da13c54c01785a743491f299
-  dante_build_id: '1059186'
+  # Merged PR 26708: Remove ubuntu 20.04 from tests support
+  # 4a22d1d4401e4c86e40f3544e6d45c11599271fa
+  dante_build_id: '1059357'
 
   # virgil 20240815.4
   # Thu Aug 15 03:42:58 UTC 2024 -- Thu Aug 15 13:42:58 AEST 2024
