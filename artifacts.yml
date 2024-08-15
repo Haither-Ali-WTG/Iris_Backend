@@ -7,9 +7,9 @@ variables:
   # 3221d2b4f1b4cb26da13c54c01785a743491f299
   dante_build_id: '1059186'
 
-  # virgil 20240815.2
-  # Thu Aug 15 00:44:36 UTC 2024 -- Thu Aug 15 10:44:36 AEST 2024
+  # virgil 20240815.4
+  # Thu Aug 15 03:42:58 UTC 2024 -- Thu Aug 15 13:42:58 AEST 2024
   #
-  # Merge pull request 26682 from virgil_python_upgrade into master
-  # 02fe89621958b5289f988854414d40c27fad8bfa
-  virgil_build_id: '1059134'
+  # Merged PR 26707: Virgil - Create queues for mobile services
+  # 026a7f7bcb91f79c10ee89723a00ed50f892f8a7
+  virgil_build_id: '1059322'
