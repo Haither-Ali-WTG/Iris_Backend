@@ -7,9 +7,9 @@ variables:
   # 5ea57fe1367a4e4d6e7e94eadaf904debd642bef
   dante_build_id: '1060271'
 
-  # virgil 20240815.12
-  # Thu Aug 15 07:43:37 UTC 2024 -- Thu Aug 15 17:43:37 AEST 2024
+  # virgil 20240816.4
+  # Fri Aug 16 02:01:46 UTC 2024 -- Fri Aug 16 12:01:46 AEST 2024
   #
-  # Merged PR 26729: Install ubuntu 2204 for new Haproxy servers
-  # 0a446f5de61599f3b73422f98e20fdf8de70a10f
-  virgil_build_id: '1059601'
+  # Merged PR 26578: Adding Distributed Automated Testing (DAT) Alpha Beta image builder and tester Hyper-V Host.
+  # 5ab001362219aa5af1324d4bee465d082c10f4dc
+  virgil_build_id: '1060456'
