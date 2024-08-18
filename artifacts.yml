@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240816.3
-  # Fri Aug 16 12:48:52 UTC 2024 -- Fri Aug 16 22:48:52 AEST 2024
+  # Dante Build Artifact 20240819.1
+  # Sun Aug 18 23:30:03 UTC 2024 -- Mon Aug 19 09:30:03 AEST 2024
   #
-  # Merge pull request 26792 from dante_artifact_upgrade into master
-  # 3a0099de34a501e913d19232038c1fd260bce90b
-  dante_build_id: '1060954'
+  # Merge pull request 26759 from dante_python_upgrade into master
+  # 9bc0c112492a8d142fa9f172474f32dfd2b0c0be
+  dante_build_id: '1063294'
 
-  # virgil 20240816.6
-  # Fri Aug 16 11:51:48 UTC 2024 -- Fri Aug 16 21:51:48 AEST 2024
+  # virgil 20240819.2
+  # Sun Aug 18 23:16:15 UTC 2024 -- Mon Aug 19 09:16:15 AEST 2024
   #
-  # Merged PR 26781: upgrade leaf spine exit switches in DE1
-  # 7abd0e5712b4cf8f2c14f72bf3d2a17b8e0611a5
-  virgil_build_id: '1060902'
+  # Merge pull request 26800 from virgil_python_upgrade into master
+  # 36e28dee0c8ba01466ddced1050417d5f55b2708
+  virgil_build_id: '1063280'
