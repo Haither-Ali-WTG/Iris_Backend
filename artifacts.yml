@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240819.2
-  # Mon Aug 19 00:07:41 UTC 2024 -- Mon Aug 19 10:07:41 AEST 2024
+  # Dante Build Artifact 20240819.3
+  # Mon Aug 19 01:10:49 UTC 2024 -- Mon Aug 19 11:10:49 AEST 2024
   #
-  # Merged PR 26766: Use ubuntu 24.04 for ISO maker vms
-  # 5d9fa4348cc6022077b83a62027c567fd1e19858
-  dante_build_id: '1063357'
+  # Merge pull request 26809 from dante_artifact_upgrade into master
+  # 6a16fc8c46a39ab90522d8060e03e1fdd8aac204
+  dante_build_id: '1063446'
 
-  # virgil 20240819.2
-  # Sun Aug 18 23:16:15 UTC 2024 -- Mon Aug 19 09:16:15 AEST 2024
+  # virgil 20240819.5
+  # Mon Aug 19 01:17:06 UTC 2024 -- Mon Aug 19 11:17:06 AEST 2024
   #
-  # Merge pull request 26800 from virgil_python_upgrade into master
-  # 36e28dee0c8ba01466ddced1050417d5f55b2708
-  virgil_build_id: '1063280'
+  # Merged PR 26819: Carrier Analytics Queue (CS01708390)
+  # 7370fca3c7ad3392e0e7603cbeaeec96af6e4511
+  virgil_build_id: '1063456'
