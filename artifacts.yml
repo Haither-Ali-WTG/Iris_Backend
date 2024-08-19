@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240819.1
-  # Sun Aug 18 23:30:03 UTC 2024 -- Mon Aug 19 09:30:03 AEST 2024
+  # Dante Build Artifact 20240819.2
+  # Mon Aug 19 00:07:41 UTC 2024 -- Mon Aug 19 10:07:41 AEST 2024
   #
-  # Merge pull request 26759 from dante_python_upgrade into master
-  # 9bc0c112492a8d142fa9f172474f32dfd2b0c0be
-  dante_build_id: '1063294'
+  # Merged PR 26766: Use ubuntu 24.04 for ISO maker vms
+  # 5d9fa4348cc6022077b83a62027c567fd1e19858
+  dante_build_id: '1063357'
 
   # virgil 20240819.2
   # Sun Aug 18 23:16:15 UTC 2024 -- Mon Aug 19 09:16:15 AEST 2024
