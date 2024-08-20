@@ -11,7 +11,9 @@ variables:
   - name: mgmt_keyvault_name
     value: kv-wtg-dante-sim
   - name: s3_host
-    value: au2s3-1.wtg.ws
+    value: au2s3-2.wtg.ws
+  - name: pure_usernames
+    value: au-iscore-iris-prod-1-rw
   - name: use_cicd_pool
     value: true
   - name: hall
@@ -139,6 +141,7 @@ stages:
                 -e="s3_host=$(s3_host)"
                 -e="target_dc=$(simulation_dc)"
                 -e="@ansible/hypervisor.yaml"
+                -e="pure_usernames='$(pure_usernames)'"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
