@@ -7,9 +7,9 @@ variables:
   # e5a1c3aaf483db89ba415b14907b339c72cb7930
   dante_build_id: '1064961'
 
-  # virgil 20240820.5
-  # Tue Aug 20 01:30:18 UTC 2024 -- Tue Aug 20 11:30:18 AEST 2024
+  # virgil 20240820.11
+  # Tue Aug 20 06:35:05 UTC 2024 -- Tue Aug 20 16:35:05 AEST 2024
   #
-  # Merged PR 26885: New Topics for Identity Provider Service Audit logs (CS01704842)
-  # e365de8f1442cad0b807ef9fb9cfce8a3c4680e2
-  virgil_build_id: '1064647'
+  # Merged PR 26915: Change root to 150GB for C59
+  # 245fa7212cc4b406c5f770abffc9aebcd18475ba
+  virgil_build_id: '1065070'
