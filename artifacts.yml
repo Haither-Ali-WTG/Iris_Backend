@@ -7,9 +7,9 @@ variables:
   # 98f73c625d0ca423c0d1b1039d8a789676dcc110
   dante_build_id: '1064587'
 
-  # virgil 20240820.1
-  # Tue Aug 20 00:34:35 UTC 2024 -- Tue Aug 20 10:34:35 AEST 2024
+  # virgil 20240820.5
+  # Tue Aug 20 01:30:18 UTC 2024 -- Tue Aug 20 11:30:18 AEST 2024
   #
-  # Merged PR 26860: Create new hardware definition
-  # 889c3a18ba77da1cdc835c817e56cc442f70ee68
-  virgil_build_id: '1064571'
+  # Merged PR 26885: New Topics for Identity Provider Service Audit logs (CS01704842)
+  # e365de8f1442cad0b807ef9fb9cfce8a3c4680e2
+  virgil_build_id: '1064647'
