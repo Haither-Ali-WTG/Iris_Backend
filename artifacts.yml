@@ -7,9 +7,9 @@ variables:
   # 9f2b4dda7681d9261665579f4fe7cc2dd6cca31d
   dante_build_id: '1065109'
 
-  # virgil 20240820.11
-  # Tue Aug 20 06:35:05 UTC 2024 -- Tue Aug 20 16:35:05 AEST 2024
+  # virgil 20240821.1
+  # Tue Aug 20 14:14:36 UTC 2024 -- Wed Aug 21 00:14:36 AEST 2024
   #
-  # Merged PR 26915: Change root to 150GB for C59
-  # 245fa7212cc4b406c5f770abffc9aebcd18475ba
-  virgil_build_id: '1065070'
+  # Merged PR 26908: Add US Serial #s
+  # 8a47d182b31009a53cd9a21baad851a670dfaca3
+  virgil_build_id: '1065435'
