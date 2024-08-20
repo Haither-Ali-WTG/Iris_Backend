@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240820.6
-  # Tue Aug 20 05:15:28 UTC 2024 -- Tue Aug 20 15:15:28 AEST 2024
+  # Dante Build Artifact 20240820.7
+  # Tue Aug 20 07:26:50 UTC 2024 -- Tue Aug 20 17:26:50 AEST 2024
   #
-  # Merged PR 26892: Migrate mgmt nodes to pure
-  # e5a1c3aaf483db89ba415b14907b339c72cb7930
-  dante_build_id: '1064961'
+  # Merge pull request 26921 from dante_artifact_upgrade into master
+  # 9f2b4dda7681d9261665579f4fe7cc2dd6cca31d
+  dante_build_id: '1065109'
 
   # virgil 20240820.11
   # Tue Aug 20 06:35:05 UTC 2024 -- Tue Aug 20 16:35:05 AEST 2024
