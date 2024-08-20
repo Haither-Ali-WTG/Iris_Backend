@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240820.5
-  # Tue Aug 20 03:03:52 UTC 2024 -- Tue Aug 20 13:03:52 AEST 2024
+  # Dante Build Artifact 20240820.6
+  # Tue Aug 20 05:15:28 UTC 2024 -- Tue Aug 20 15:15:28 AEST 2024
   #
-  # Merged PR 26875: Support hardware C59 in Dante
-  # 3b89cf158a5dfb72e4da737a9f3c211582967ca1
-  dante_build_id: '1064786'
+  # Merged PR 26892: Migrate mgmt nodes to pure
+  # e5a1c3aaf483db89ba415b14907b339c72cb7930
+  dante_build_id: '1064961'
 
   # virgil 20240820.5
   # Tue Aug 20 01:30:18 UTC 2024 -- Tue Aug 20 11:30:18 AEST 2024
