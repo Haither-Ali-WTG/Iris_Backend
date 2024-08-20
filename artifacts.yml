@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240820.2
-  # Mon Aug 19 23:36:26 UTC 2024 -- Tue Aug 20 09:36:26 AEST 2024
+  # Dante Build Artifact 20240820.3
+  # Tue Aug 20 00:45:40 UTC 2024 -- Tue Aug 20 10:45:40 AEST 2024
   #
-  # Merged PR 26854: Migrate dante-package-repo/qcow2 to pure
-  # f510353025e3f00bb9bbda4401e5b2b04f532ab2
-  dante_build_id: '1064516'
+  # Merge pull request 26869 from dante_python_upgrade into master
+  # 98f73c625d0ca423c0d1b1039d8a789676dcc110
+  dante_build_id: '1064587'
 
-  # virgil 20240819.5
-  # Mon Aug 19 01:17:06 UTC 2024 -- Mon Aug 19 11:17:06 AEST 2024
+  # virgil 20240820.1
+  # Tue Aug 20 00:34:35 UTC 2024 -- Tue Aug 20 10:34:35 AEST 2024
   #
-  # Merged PR 26819: Carrier Analytics Queue (CS01708390)
-  # 7370fca3c7ad3392e0e7603cbeaeec96af6e4511
-  virgil_build_id: '1063456'
+  # Merged PR 26860: Create new hardware definition
+  # 889c3a18ba77da1cdc835c817e56cc442f70ee68
+  virgil_build_id: '1064571'
