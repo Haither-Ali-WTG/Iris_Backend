@@ -75,7 +75,7 @@ stages:
               set -euxo pipefail
               cp ansible/ansible.cfg .
               mkdir ansible/play_build_qcow2
-              cp ansible/download_files_for_simulation.yaml ansible/play_build_qcow2/download_files_for_simulation.yaml
+              mv ansible/download_files_for_simulation.yaml ansible/play_build_qcow2/download_files_for_simulation.yaml
               cp -r ansible/group_vars ansible/play_build_qcow2
             displayName: 'Prepare to run playbooks'
 
