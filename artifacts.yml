@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240821.1
-  # Tue Aug 20 15:10:37 UTC 2024 -- Wed Aug 21 01:10:37 AEST 2024
+  # Dante Build Artifact 20240821.2
+  # Wed Aug 21 00:24:09 UTC 2024 -- Wed Aug 21 10:24:09 AEST 2024
   #
-  # Merge pull request 26934 from dante_artifact_upgrade into master
-  # 2736f9f77e198f8c2c96bb80492e904fb2936cc4
-  dante_build_id: '1065496'
+  # Merge pull request 26948 from dante_python_upgrade into master
+  # b25fc20c8f06d18257e1d6b65bede3a5ef420c05
+  dante_build_id: '1065932'
 
-  # virgil 20240821.1
-  # Tue Aug 20 14:14:36 UTC 2024 -- Wed Aug 21 00:14:36 AEST 2024
+  # virgil 20240821.5
+  # Tue Aug 20 23:56:01 UTC 2024 -- Wed Aug 21 09:56:01 AEST 2024
   #
-  # Merged PR 26908: Add US Serial #s
-  # 8a47d182b31009a53cd9a21baad851a670dfaca3
-  virgil_build_id: '1065435'
+  # Merge pull request 26943 from virgil_python_upgrade into master
+  # 8294f0e72a5f859861cde56bb9b23e1e90d90ca6
+  virgil_build_id: '1065876'
