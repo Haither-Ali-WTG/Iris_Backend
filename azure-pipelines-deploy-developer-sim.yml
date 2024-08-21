@@ -122,6 +122,7 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="intermediate=false" -e="s3_host=$(s3_host)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="pure_usernames='$(pure_usernames)'"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
