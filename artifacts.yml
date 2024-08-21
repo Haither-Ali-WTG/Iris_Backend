@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240821.5
-  # Wed Aug 21 02:59:50 UTC 2024 -- Wed Aug 21 12:59:50 AEST 2024
+  # Dante Build Artifact 20240821.7
+  # Wed Aug 21 07:26:56 UTC 2024 -- Wed Aug 21 17:26:56 AEST 2024
   #
-  # Merged PR 26967: Added siulation files download to artifact
-  # 65d1baa38d0dc1b6607f1c569bd8fc51c8140f56
-  dante_build_id: '1066093'
+  # Merge pull request 26961 from dante_artifact_upgrade into master
+  # 1c8233ae5bc118b1d056b1f69eeede3cd5ebeec6
+  dante_build_id: '1066345'
 
   # virgil 20240821.9
   # Wed Aug 21 06:27:06 UTC 2024 -- Wed Aug 21 16:27:06 AEST 2024
