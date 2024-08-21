@@ -14,6 +14,8 @@ variables:
     value: au2s3-2.wtg.ws
   - name: pure_usernames
     value: au-iscore-iris-prod-1-rw
+  - name: s3_iris_bucket
+    value: s3://au-iscore-iris-prod-1/
   - name: use_cicd_pool
     value: true
   - name: hall
@@ -123,6 +125,7 @@ stages:
                 -e="intermediate=false" -e="s3_host=$(s3_host)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
                 -e="pure_usernames='$(pure_usernames)'"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
