@@ -161,7 +161,7 @@ stages:
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                 -e="s3_host=$(s3_host)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
-                -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"                
+                -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
                 -e="target_dc=$(simulation_dc)"
                 -e="@ansible/hypervisor.yaml"
                 -e="pure_usernames='$(pure_usernames)'"
