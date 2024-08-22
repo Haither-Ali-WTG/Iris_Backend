@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240821.7
-  # Wed Aug 21 07:26:56 UTC 2024 -- Wed Aug 21 17:26:56 AEST 2024
+  # Dante Build Artifact 20240822.1
+  # Wed Aug 21 23:38:42 UTC 2024 -- Thu Aug 22 09:38:42 AEST 2024
   #
-  # Merge pull request 26961 from dante_artifact_upgrade into master
-  # 1c8233ae5bc118b1d056b1f69eeede3cd5ebeec6
-  dante_build_id: '1066345'
+  # Merge pull request 27004 from dante_python_upgrade into master
+  # 26273adaed671071bde94f653c2696f21b3a854a
+  dante_build_id: '1067060'
 
-  # virgil 20240821.9
-  # Wed Aug 21 06:27:06 UTC 2024 -- Wed Aug 21 16:27:06 AEST 2024
+  # virgil 20240822.14
+  # Thu Aug 22 00:02:24 UTC 2024 -- Thu Aug 22 10:02:24 AEST 2024
   #
-  # Merged PR 26980: Configure apex77 and apex78 swp19,swp20 for Sand FE/BE
-  # 000dbc3cad8ce9e68b8beb3f85c2417c4d68bec1
-  virgil_build_id: '1066293'
+  # Merged PR 26830: Put in SNMP monitor nodes ip addresses in virgil
+  # f54e61a1b75162b9b306e2b48aeb49620694900c
+  virgil_build_id: '1067115'
