@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240822.2
-  # Thu Aug 22 01:07:17 UTC 2024 -- Thu Aug 22 11:07:17 AEST 2024
+  # Dante Build Artifact 20240822.3
+  # Thu Aug 22 06:26:34 UTC 2024 -- Thu Aug 22 16:26:34 AEST 2024
   #
-  # Merge pull request 27014 from dante_artifact_upgrade into master
-  # a379c4c8a30e0f4150ee4fb8a937c36a30f05d25
-  dante_build_id: '1067202'
+  # Merged PR 24253: Dante - Reorder ports to create actual config change
+  # 9b04fef9d40d9bccb6924160eb54e014ea8622d4
+  dante_build_id: '1067490'
 
   # virgil 20240822.18
   # Thu Aug 22 05:54:37 UTC 2024 -- Thu Aug 22 15:54:37 AEST 2024
