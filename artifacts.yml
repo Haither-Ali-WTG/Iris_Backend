@@ -7,9 +7,9 @@ variables:
   # a379c4c8a30e0f4150ee4fb8a937c36a30f05d25
   dante_build_id: '1067202'
 
-  # virgil 20240822.14
-  # Thu Aug 22 00:02:24 UTC 2024 -- Thu Aug 22 10:02:24 AEST 2024
+  # virgil 20240822.18
+  # Thu Aug 22 05:54:37 UTC 2024 -- Thu Aug 22 15:54:37 AEST 2024
   #
-  # Merged PR 26830: Put in SNMP monitor nodes ip addresses in virgil
-  # f54e61a1b75162b9b306e2b48aeb49620694900c
-  virgil_build_id: '1067115'
+  # Merged PR 27033: Reserve 4x/24 networks for kube use
+  # d043b0ce6a789536d978804ea17a1dbfe2cc1a6b
+  virgil_build_id: '1067452'
