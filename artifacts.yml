@@ -7,9 +7,9 @@ variables:
   # 791a6467cd1765909696776119cb294203666d9c
   dante_build_id: '1068629'
 
-  # virgil 20240823.7
-  # Fri Aug 23 00:01:59 UTC 2024 -- Fri Aug 23 10:01:59 AEST 2024
+  # virgil 20240824.1
+  # Fri Aug 23 15:36:44 UTC 2024 -- Sat Aug 24 01:36:44 AEST 2024
   #
-  # Merge pull request 27052 from virgil_python_upgrade into master
-  # 562cce5b9f7c9981fbaf6c188328a65a8446c021
-  virgil_build_id: '1068304'
+  # Merged PR 27049: Redeploy one more R740xd
+  # 1a43c3cfacde0f2349d8066daa12f4d7133b3258
+  virgil_build_id: '1069104'
