@@ -7,9 +7,9 @@ variables:
   # 5739ede94840e1bfb2c56a1808f7114ecd0282a4
   dante_build_id: '1068273'
 
-  # virgil 20240822.18
-  # Thu Aug 22 05:54:37 UTC 2024 -- Thu Aug 22 15:54:37 AEST 2024
+  # virgil 20240823.7
+  # Fri Aug 23 00:01:59 UTC 2024 -- Fri Aug 23 10:01:59 AEST 2024
   #
-  # Merged PR 27033: Reserve 4x/24 networks for kube use
-  # d043b0ce6a789536d978804ea17a1dbfe2cc1a6b
-  virgil_build_id: '1067452'
+  # Merge pull request 27052 from virgil_python_upgrade into master
+  # 562cce5b9f7c9981fbaf6c188328a65a8446c021
+  virgil_build_id: '1068304'
