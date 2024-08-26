@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.2
-  # Mon Aug 26 00:55:49 UTC 2024 -- Mon Aug 26 10:55:49 AEST 2024
+  # Dante Build Artifact 20240826.3
+  # Mon Aug 26 01:42:41 UTC 2024 -- Mon Aug 26 11:42:41 AEST 2024
   #
-  # Merge pull request 27111 from dante_python_upgrade into master
-  # 4f9ff58a42d60200416f48ef8df4ceb7860f4ebc
-  dante_build_id: '1071424'
+  # Merged PR 27112: Disabled loadavg check in simulation
+  # 94aeb7e913a5b67de60c6b754f2b8ad83b6d16b7
+  dante_build_id: '1071506'
 
   # virgil 20240826.2
   # Sun Aug 25 23:28:00 UTC 2024 -- Mon Aug 26 09:28:00 AEST 2024
