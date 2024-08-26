@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.3
-  # Mon Aug 26 01:42:41 UTC 2024 -- Mon Aug 26 11:42:41 AEST 2024
+  # Dante Build Artifact 20240826.4
+  # Mon Aug 26 03:48:39 UTC 2024 -- Mon Aug 26 13:48:39 AEST 2024
   #
-  # Merged PR 27112: Disabled loadavg check in simulation
-  # 94aeb7e913a5b67de60c6b754f2b8ad83b6d16b7
-  dante_build_id: '1071506'
+  # Merged PR 27142: Maintenance mode migrated to pure
+  # 38ece13d73b0d46824392b03be78f8d5eae41817
+  dante_build_id: '1071636'
 
   # virgil 20240826.2
   # Sun Aug 25 23:28:00 UTC 2024 -- Mon Aug 26 09:28:00 AEST 2024
