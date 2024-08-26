@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.7
-  # Mon Aug 26 06:18:19 UTC 2024 -- Mon Aug 26 16:18:19 AEST 2024
+  # Dante Build Artifact 20240826.8
+  # Mon Aug 26 07:27:14 UTC 2024 -- Mon Aug 26 17:27:14 AEST 2024
   #
-  # Merged PR 27145: Migrated simulation agents to pure
-  # 2bed3aa6898eef7ef6fddefdd460d34a45649606
-  dante_build_id: '1071853'
+  # Merge pull request 27101 from dante_artifact_upgrade into master
+  # 706d875ea1697c77c13a7512fba72aed0798e544
+  dante_build_id: '1071920'
 
   # virgil 20240826.5
   # Mon Aug 26 05:56:05 UTC 2024 -- Mon Aug 26 15:56:05 AEST 2024
