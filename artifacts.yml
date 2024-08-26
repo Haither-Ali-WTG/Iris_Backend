@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.1
-  # Mon Aug 26 00:01:39 UTC 2024 -- Mon Aug 26 10:01:39 AEST 2024
+  # Dante Build Artifact 20240826.2
+  # Mon Aug 26 00:55:49 UTC 2024 -- Mon Aug 26 10:55:49 AEST 2024
   #
-  # Merged PR 26825: Migrate Server build pipelines to Pure
-  # c5b492507c1ea23f13ced54af82883e831b6a7de
-  dante_build_id: '1071357'
+  # Merge pull request 27111 from dante_python_upgrade into master
+  # 4f9ff58a42d60200416f48ef8df4ceb7860f4ebc
+  dante_build_id: '1071424'
 
   # virgil 20240826.2
   # Sun Aug 25 23:28:00 UTC 2024 -- Mon Aug 26 09:28:00 AEST 2024
