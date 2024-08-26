@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.5
-  # Mon Aug 26 04:42:03 UTC 2024 -- Mon Aug 26 14:42:03 AEST 2024
+  # Dante Build Artifact 20240826.6
+  # Mon Aug 26 05:43:25 UTC 2024 -- Mon Aug 26 15:43:25 AEST 2024
   #
-  # Merged PR 26623: Add task to get container list in container_runner
-  # d3a8fbb42858ab3fbaf81eacbb175c29596c000f
-  dante_build_id: '1071714'
+  # Merged PR 26468: (minor) Linux - Comments about package upgrades
+  # 1dd8a55a08825cfe1838eab856979dc879acb471
+  dante_build_id: '1071787'
 
   # virgil 20240826.2
   # Sun Aug 25 23:28:00 UTC 2024 -- Mon Aug 26 09:28:00 AEST 2024
