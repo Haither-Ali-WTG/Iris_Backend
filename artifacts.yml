@@ -7,9 +7,9 @@ variables:
   # 706d875ea1697c77c13a7512fba72aed0798e544
   dante_build_id: '1071920'
 
-  # virgil 20240826.5
-  # Mon Aug 26 05:56:05 UTC 2024 -- Mon Aug 26 15:56:05 AEST 2024
+  # virgil 20240827.2
+  # Mon Aug 26 23:20:58 UTC 2024 -- Tue Aug 27 09:20:58 AEST 2024
   #
-  # Merged PR 27153: Adding SDAT servers , rebirthed from old HyperV hosts.
-  # 27fa1863a2efc8e92f5e95e4e979d518cd9d4c8a
-  virgil_build_id: '1071812'
+  # Merge pull request 27185 from virgil_python_upgrade into master
+  # 1b7f98771fabac2b784f03fdc8fda83b1b56720b
+  virgil_build_id: '1072626'
