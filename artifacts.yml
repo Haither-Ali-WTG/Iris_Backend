@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240826.6
-  # Mon Aug 26 05:43:25 UTC 2024 -- Mon Aug 26 15:43:25 AEST 2024
+  # Dante Build Artifact 20240826.7
+  # Mon Aug 26 06:18:19 UTC 2024 -- Mon Aug 26 16:18:19 AEST 2024
   #
-  # Merged PR 26468: (minor) Linux - Comments about package upgrades
-  # 1dd8a55a08825cfe1838eab856979dc879acb471
-  dante_build_id: '1071787'
+  # Merged PR 27145: Migrated simulation agents to pure
+  # 2bed3aa6898eef7ef6fddefdd460d34a45649606
+  dante_build_id: '1071853'
 
-  # virgil 20240826.2
-  # Sun Aug 25 23:28:00 UTC 2024 -- Mon Aug 26 09:28:00 AEST 2024
+  # virgil 20240826.5
+  # Mon Aug 26 05:56:05 UTC 2024 -- Mon Aug 26 15:56:05 AEST 2024
   #
-  # Merge pull request 27105 from virgil_python_upgrade into master
-  # 6f261079cea823c20743f65b2f941745401943e5
-  virgil_build_id: '1071288'
+  # Merged PR 27153: Adding SDAT servers , rebirthed from old HyperV hosts.
+  # 27fa1863a2efc8e92f5e95e4e979d518cd9d4c8a
+  virgil_build_id: '1071812'
