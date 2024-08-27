@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240827.3
-  # Tue Aug 27 02:00:40 UTC 2024 -- Tue Aug 27 12:00:40 AEST 2024
+  # Dante Build Artifact 20240827.4
+  # Tue Aug 27 03:01:48 UTC 2024 -- Tue Aug 27 13:01:48 AEST 2024
   #
-  # Merged PR 27207: Added US2 Bunker addresses to US2 NTP allowance list.
-  # 2fe0bd4e8dd999b97e780851ce31da2eb6ae9014
-  dante_build_id: '1072815'
+  # Merged PR 27211: Finalizing pure migration for dante
+  # c27f9607c3276a9ebbf3c98383a7b026ab0169e4
+  dante_build_id: '1072892'
 
   # virgil 20240827.2
   # Mon Aug 26 23:20:58 UTC 2024 -- Tue Aug 27 09:20:58 AEST 2024
