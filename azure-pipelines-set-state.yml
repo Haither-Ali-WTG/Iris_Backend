@@ -23,15 +23,15 @@ stages:
             DE1_hall_A:
               dc: DE1
               hall: A
-              s3_host: de1s3-1.wtg.ws
-              s3_iris_bucket: s3://dante-iris/
-              pure_usernames: ""
+              s3_host: de1s3-2.wtg.ws
+              s3_iris_bucket: s3://de-iscore-iris-prod-1/
+              pure_usernames: de-iscore-iris-prod-1-ro
             US2_hall_A:
               dc: US2
               hall: A
-              s3_host: us2s3-1.wtg.ws
-              s3_iris_bucket: s3://dante-iris/
-              pure_usernames: ""
+              s3_host: us2s3-2.wtg.ws
+              s3_iris_bucket: s3://us-iscore-iris-prod-1/
+              pure_usernames: us-iscore-iris-prod-1-ro
         pool:
           name: dante
           demands:
