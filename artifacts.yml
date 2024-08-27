@@ -7,9 +7,9 @@ variables:
   # c27f9607c3276a9ebbf3c98383a7b026ab0169e4
   dante_build_id: '1072892'
 
-  # virgil 20240827.2
-  # Mon Aug 26 23:20:58 UTC 2024 -- Tue Aug 27 09:20:58 AEST 2024
+  # virgil 20240827.11
+  # Tue Aug 27 06:20:20 UTC 2024 -- Tue Aug 27 16:20:20 AEST 2024
   #
-  # Merge pull request 27185 from virgil_python_upgrade into master
-  # 1b7f98771fabac2b784f03fdc8fda83b1b56720b
-  virgil_build_id: '1072626'
+  # Merged PR 27234: Fix tests for kafka password
+  # b8c3ef947f3326eba6e58be36b68382ff2c5bb0b
+  virgil_build_id: '1073084'
