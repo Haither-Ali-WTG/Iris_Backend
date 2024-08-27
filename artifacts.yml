@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240827.2
-  # Tue Aug 27 01:07:41 UTC 2024 -- Tue Aug 27 11:07:41 AEST 2024
+  # Dante Build Artifact 20240827.3
+  # Tue Aug 27 02:00:40 UTC 2024 -- Tue Aug 27 12:00:40 AEST 2024
   #
-  # Merge pull request 27196 from dante_artifact_upgrade into master
-  # 63ada1da480f6854b6f857b1d5082b91b26f9497
-  dante_build_id: '1072749'
+  # Merged PR 27207: Added US2 Bunker addresses to US2 NTP allowance list.
+  # 2fe0bd4e8dd999b97e780851ce31da2eb6ae9014
+  dante_build_id: '1072815'
 
   # virgil 20240827.2
   # Mon Aug 26 23:20:58 UTC 2024 -- Tue Aug 27 09:20:58 AEST 2024
