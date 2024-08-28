@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240828.5
-  # Wed Aug 28 05:34:52 UTC 2024 -- Wed Aug 28 15:34:52 AEST 2024
+  # Dante Build Artifact 20240828.6
+  # Wed Aug 28 10:05:55 UTC 2024 -- Wed Aug 28 20:05:55 AEST 2024
   #
-  # Merged PR 27297: RHEL 9 specific machine ID generation
-  # 999db1cc072d39ac3c41ac4275274a91461e0c90
-  dante_build_id: '1074263'
+  # Merged PR 27022: update snmp tempate with DC specific IP logic
+  # fd3f25943355c339c51e9a56afd925bfa5988af0
+  dante_build_id: '1074470'
 
   # virgil 20240828.13
   # Wed Aug 28 03:41:36 UTC 2024 -- Wed Aug 28 13:41:36 AEST 2024
