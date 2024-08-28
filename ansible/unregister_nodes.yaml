@@ -13,4 +13,4 @@
       include_role:
         name: kvm_cleanup
         tasks_from: unregister_rhel.yml
-      when: 'os == "rhel"'
+      when: 'os == "rhel9"'
