@@ -10,12 +10,6 @@
         name: pure_connection_setup
       vars:
         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
-      when: pure_usernames is defined and pure_usernames
-
-    - name: Setup ceph connection
-      include_role:
-        name: ceph_connection_setup
-      when: not (pure_usernames is defined and pure_usernames)
 
 - name: Collect and publish IIS data to S3
   hosts: clustered_instances
