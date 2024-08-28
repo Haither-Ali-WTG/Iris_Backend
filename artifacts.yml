@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240827.5
-  # Tue Aug 27 07:09:21 UTC 2024 -- Tue Aug 27 17:09:21 AEST 2024
+  # Dante Build Artifact 20240828.1
+  # Wed Aug 28 01:17:18 UTC 2024 -- Wed Aug 28 11:17:18 AEST 2024
   #
-  # Merge pull request 27241 from dante_artifact_upgrade into master
-  # 0e1b4a8b1a2ae1af4f4c40c3a6d747a6dfb33fbe
-  dante_build_id: '1073137'
+  # Merge pull request 27256 from dante_python_upgrade into master
+  # 86539a591a32de16b7714712d5398626fe661988
+  dante_build_id: '1073958'
 
-  # virgil 20240827.11
-  # Tue Aug 27 06:20:20 UTC 2024 -- Tue Aug 27 16:20:20 AEST 2024
+  # virgil 20240828.6
+  # Wed Aug 28 00:56:50 UTC 2024 -- Wed Aug 28 10:56:50 AEST 2024
   #
-  # Merged PR 27234: Fix tests for kafka password
-  # b8c3ef947f3326eba6e58be36b68382ff2c5bb0b
-  virgil_build_id: '1073084'
+  # Merged PR 27259: Disable dante on au2lbl00817
+  # 90993a5bfca1fcfc26279fb45abf1eec6d1e100c
+  virgil_build_id: '1073921'
