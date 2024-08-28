@@ -5,7 +5,7 @@ variables:
   #
   # Merge pull request 27256 from dante_python_upgrade into master
   # 86539a591a32de16b7714712d5398626fe661988
-  dante_build_id: '1073958'
+  dante_build_id: '1074168'
 
   # virgil 20240828.8
   # Wed Aug 28 02:16:05 UTC 2024 -- Wed Aug 28 12:16:05 AEST 2024
