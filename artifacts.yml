@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240828.2
-  # Wed Aug 28 03:10:11 UTC 2024 -- Wed Aug 28 13:10:11 AEST 2024
+  # Dante Build Artifact 20240828.4
+  # Wed Aug 28 04:49:42 UTC 2024 -- Wed Aug 28 14:49:42 AEST 2024
   #
-  # Merge pull request 27266 from dante_artifact_upgrade into master
-  # a7cc0bfefdb3f026ed73b6f96747d7176c9413b5
-  dante_build_id: '1074078'
+  # Merge pull request 27289 from dante_artifact_upgrade into master
+  # 6bb5faa58d67e1df1b132ec33a85eaab1a847f1e
+  dante_build_id: '1074200'
 
-  # virgil 20240828.11
-  # Wed Aug 28 03:16:53 UTC 2024 -- Wed Aug 28 13:16:53 AEST 2024
+  # virgil 20240828.13
+  # Wed Aug 28 03:41:36 UTC 2024 -- Wed Aug 28 13:41:36 AEST 2024
   #
-  # Merged PR 27282: change de1nas11 from  two bonds to one
-  # 295d35bed3ed22d8652165c76aa76980fe17ce37
-  virgil_build_id: '1074089'
+  # Merged PR 27280: More SDAT servers into Virgil
+  # e93aa80f0c67f9af454b79e07112b3d8c7d0f29f
+  virgil_build_id: '1074118'
