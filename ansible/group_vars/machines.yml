@@ -19,10 +19,14 @@ global_sysctl_values:
     net.ipv4.conf.all.arp_ignore: 1  # Required by systems with keepalived
     net.ipv4.conf.all.arp_announce: 1  # Required by systems with keepalived
     net.ipv4.conf.all.arp_filter: 0  # Required by systems with keepalived
+  rhel9: {}
+  ubuntu2204:
     net.netfilter.nf_conntrack_tcp_timeout_close_wait: 60
     net.netfilter.nf_conntrack_tcp_timeout_fin_wait: 60
     net.netfilter.nf_conntrack_tcp_timeout_time_wait: 60
     net.netfilter.nf_conntrack_max: 524288
-  rhel9: {}
-  ubuntu2204: {}
-  ubuntu2404: {}
+  ubuntu2404:
+    net.netfilter.nf_conntrack_tcp_timeout_close_wait: 60
+    net.netfilter.nf_conntrack_tcp_timeout_fin_wait: 60
+    net.netfilter.nf_conntrack_tcp_timeout_time_wait: 60
+    net.netfilter.nf_conntrack_max: 524288
