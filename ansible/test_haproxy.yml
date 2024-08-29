@@ -44,6 +44,7 @@
         os_codename:
           ubuntu2204: jammy
           ubuntu2404: noble
+          rhel9: plow
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
         virgil_os_name: "{{ os }}"
@@ -56,11 +57,11 @@
         os_image:
           ubuntu2204: "{{ ubuntu2204_hypervisor_image }}"
           ubuntu2404: "{{ ubuntu2404_hypervisor_image }}"
-          rhel: "{{ rhel_hypervisor_image }}"
+          rhel9: "{{ rhel_hypervisor_image }}"
         os_variant:
           ubuntu2204: ubuntu
           ubuntu2404: ubuntu
-          rhel: rhel
+          rhel9: rhel
       set_fact:
         image: "{{ images_folder }}/{{ os_image[virgil_os_name] }}"
         virgil_os_variant: "{{ os_variant[virgil_os_name] }}"

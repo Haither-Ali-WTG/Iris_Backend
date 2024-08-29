@@ -6,7 +6,7 @@
         name: system_license
       when:
         - simulation
-        - 'os == "rhel"'
+        - 'os == "rhel9"'
 
     - name: Refresh apt cache (Ubuntu only)
       apt:
@@ -30,7 +30,7 @@
         tasks_from: unregister_rhel.yml
       when:
         - simulation
-        - 'os == "rhel"'
+        - 'os == "rhel9"'
 
 - name: Keepalived systemd override directory
   file:

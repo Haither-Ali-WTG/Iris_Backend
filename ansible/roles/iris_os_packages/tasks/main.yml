@@ -6,7 +6,7 @@
         - ufw  # Uncomplicated Firewall - we manage iptables directly
       ubuntu2404:
         - ufw  # Uncomplicated Firewall - we manage iptables directly
-      rhel:
+      rhel9:
         - firewalld  # firewall - we manage iptables directly
   package:
     name: "{{ unwanted[os] }}"

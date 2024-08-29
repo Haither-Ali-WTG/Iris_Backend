@@ -12,10 +12,11 @@
         os_variant:
           ubuntu2204: ubuntu
           ubuntu2404: ubuntu
-          rhel: rhel
+          rhel9: rhel
         os_codename:
           ubuntu2204: jammy
           ubuntu2404: noble
+          rhel9: plow
       add_host:
         name: "{{ item.individual_instance_name }}"
         groups:
