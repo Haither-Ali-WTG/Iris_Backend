@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240829.5
-  # Thu Aug 29 02:48:59 UTC 2024 -- Thu Aug 29 12:48:59 AEST 2024
+  # Dante Build Artifact 20240829.6
+  # Thu Aug 29 03:53:29 UTC 2024 -- Thu Aug 29 13:53:29 AEST 2024
   #
-  # Merged PR 27325: RHEL 9 support for Iris
-  # 5edf837e72af7333e2dea8ee99eab9b449fdc7be
-  dante_build_id: '1075280'
+  # Merged PR 27343: Sync local server-images in Pure to local mgmt nodes globally
+  # 14abaa306032eb6e95bf31d38b115a1aa86562ea
+  dante_build_id: '1075358'
 
   # virgil 20240829.1
   # Thu Aug 29 00:45:32 UTC 2024 -- Thu Aug 29 10:45:32 AEST 2024
