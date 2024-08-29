@@ -164,7 +164,7 @@ stages:
 
   - stage: Simulations
     dependsOn: [Dump_configs_and_check_changes, Tests_and_lint]
-    pool: test-pool
+    pool: simulations
     jobs:
       - job: Simulation
         strategy:
