@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240829.6
-  # Thu Aug 29 03:53:29 UTC 2024 -- Thu Aug 29 13:53:29 AEST 2024
+  # Dante Build Artifact 20240829.7
+  # Thu Aug 29 06:50:09 UTC 2024 -- Thu Aug 29 16:50:09 AEST 2024
   #
-  # Merged PR 27343: Sync local server-images in Pure to local mgmt nodes globally
-  # 14abaa306032eb6e95bf31d38b115a1aa86562ea
-  dante_build_id: '1075358'
+  # Merge pull request 27360 from dante_artifact_upgrade into master
+  # 64fdf83d61c673488d08b47bd0ec2ccb9f0bebf5
+  dante_build_id: '1075516'
 
   # virgil 20240829.3
   # Thu Aug 29 06:01:32 UTC 2024 -- Thu Aug 29 16:01:32 AEST 2024
