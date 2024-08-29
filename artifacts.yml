@@ -7,9 +7,9 @@ variables:
   # 14abaa306032eb6e95bf31d38b115a1aa86562ea
   dante_build_id: '1075358'
 
-  # virgil 20240829.1
-  # Thu Aug 29 00:45:32 UTC 2024 -- Thu Aug 29 10:45:32 AEST 2024
+  # virgil 20240829.3
+  # Thu Aug 29 06:01:32 UTC 2024 -- Thu Aug 29 16:01:32 AEST 2024
   #
-  # Merged PR 27144: move subnet to es0be2
-  # 3ab9a198b326d53322ea613f9ffaa2800b9123c6
-  virgil_build_id: '1075142'
+  # Merged PR 27299: Enable Chrony monitoring for US2
+  # d630923629dd7de4a94b895305558f0db9027955
+  virgil_build_id: '1075480'
