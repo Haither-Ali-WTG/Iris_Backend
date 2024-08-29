@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240828.6
-  # Wed Aug 28 10:05:55 UTC 2024 -- Wed Aug 28 20:05:55 AEST 2024
+  # Dante Build Artifact 20240829.3
+  # Thu Aug 29 00:02:32 UTC 2024 -- Thu Aug 29 10:02:32 AEST 2024
   #
-  # Merged PR 27022: update snmp tempate with DC specific IP logic
-  # fd3f25943355c339c51e9a56afd925bfa5988af0
-  dante_build_id: '1074470'
+  # Merge pull request 27320 from dante_python_upgrade into master
+  # 4bf78e6ab32d0e4cc5bd54f01749d36875e898b6
+  dante_build_id: '1075098'
 
-  # virgil 20240828.13
-  # Wed Aug 28 03:41:36 UTC 2024 -- Wed Aug 28 13:41:36 AEST 2024
+  # virgil 20240829.1
+  # Thu Aug 29 00:45:32 UTC 2024 -- Thu Aug 29 10:45:32 AEST 2024
   #
-  # Merged PR 27280: More SDAT servers into Virgil
-  # e93aa80f0c67f9af454b79e07112b3d8c7d0f29f
-  virgil_build_id: '1074118'
+  # Merged PR 27144: move subnet to es0be2
+  # 3ab9a198b326d53322ea613f9ffaa2800b9123c6
+  virgil_build_id: '1075142'
