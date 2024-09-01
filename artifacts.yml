@@ -7,9 +7,9 @@ variables:
   # 385c2ce15f73486327261db047e2080c1405e4f2
   dante_build_id: '1076518'
 
-  # virgil 20240830.4
-  # Fri Aug 30 02:51:59 UTC 2024 -- Fri Aug 30 12:51:59 AEST 2024
+  # virgil 20240902.2
+  # Sun Sep  1 23:28:20 UTC 2024 -- Mon Sep  2 09:28:20 AEST 2024
   #
-  # Merged PR 27406: DAT servers into virgil, wave 3
-  # 3606e17f3c0537a2392330d0d58306e21f465c71
-  virgil_build_id: '1076451'
+  # Merge pull request 27434 from virgil_python_upgrade into master
+  # b88bee51017794e372b8700567f06c93531f6e31
+  virgil_build_id: '1079273'
