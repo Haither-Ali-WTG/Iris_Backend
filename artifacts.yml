@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240902.1
-  # Mon Sep  2 00:26:29 UTC 2024 -- Mon Sep  2 10:26:29 AEST 2024
+  # Dante Build Artifact 20240902.2
+  # Mon Sep  2 01:19:46 UTC 2024 -- Mon Sep  2 11:19:46 AEST 2024
   #
-  # Merge pull request 27444 from dante_artifact_upgrade into master
-  # 1db162739b4ee8e13352c84c5f7d73c2a6103e82
-  dante_build_id: '1079355'
+  # Merge pull request 27436 from dante_python_upgrade into master
+  # 5a1b6adb2edd6c031b05a09b9c5956201b486a22
+  dante_build_id: '1079444'
 
-  # virgil 20240902.2
-  # Sun Sep  1 23:28:20 UTC 2024 -- Mon Sep  2 09:28:20 AEST 2024
+  # virgil 20240902.4
+  # Mon Sep  2 01:15:50 UTC 2024 -- Mon Sep  2 11:15:50 AEST 2024
   #
-  # Merge pull request 27434 from virgil_python_upgrade into master
-  # b88bee51017794e372b8700567f06c93531f6e31
-  virgil_build_id: '1079273'
+  # Merged PR 27453: RHEL 9.4 support in virgil
+  # 1b675a6d1f47908acd48e21e098bd028bb415d0e
+  virgil_build_id: '1079440'
