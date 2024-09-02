@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240902.3
-  # Mon Sep  2 02:01:55 UTC 2024 -- Mon Sep  2 12:01:55 AEST 2024
+  # Dante Build Artifact 20240902.4
+  # Mon Sep  2 02:48:03 UTC 2024 -- Mon Sep  2 12:48:03 AEST 2024
   #
-  # Merged PR 27456: ISO builder RHEL 9 support
-  # e264748441720dc8eefdd4236cb2eaa6b5109728
-  dante_build_id: '1079500'
+  # Merge pull request 27463 from dante_artifact_upgrade into master
+  # ec3018a7014fca61d7a73c2732fddb7cc50e8e7b
+  dante_build_id: '1079542'
 
   # virgil 20240902.4
   # Mon Sep  2 01:15:50 UTC 2024 -- Mon Sep  2 11:15:50 AEST 2024
