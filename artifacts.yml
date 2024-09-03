@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240902.6
-  # Mon Sep  2 06:56:03 UTC 2024 -- Mon Sep  2 16:56:03 AEST 2024
+  # Dante Build Artifact 20240903.1
+  # Tue Sep  3 00:31:32 UTC 2024 -- Tue Sep  3 10:31:32 AEST 2024
   #
-  # Merged PR 27481: Stage rollout to 2 de nodes
-  # 5a0b02d81c9526867cdd41d7ee19b64373389a94
-  dante_build_id: '1079773'
+  # Merged PR 27500: Add pure required packages to hypervisor VM
+  # 9d6e65c405385ae3dcd14c8a39f997602acb7b20
+  dante_build_id: '1080534'
 
-  # virgil 20240902.4
-  # Mon Sep  2 01:15:50 UTC 2024 -- Mon Sep  2 11:15:50 AEST 2024
+  # virgil 20240903.1
+  # Tue Sep  3 00:11:38 UTC 2024 -- Tue Sep  3 10:11:38 AEST 2024
   #
-  # Merged PR 27453: RHEL 9.4 support in virgil
-  # 1b675a6d1f47908acd48e21e098bd028bb415d0e
-  virgil_build_id: '1079440'
+  # Merged PR 27492: Add dummy SA1 networks
+  # 2ea23519f07a430055cb021a2c2e88527f4067c6
+  virgil_build_id: '1080501'
