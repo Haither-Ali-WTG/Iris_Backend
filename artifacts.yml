@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240903.4
-  # Tue Sep  3 03:13:41 UTC 2024 -- Tue Sep  3 13:13:41 AEST 2024
+  # Dante Build Artifact 20240903.5
+  # Tue Sep  3 04:08:15 UTC 2024 -- Tue Sep  3 14:08:15 AEST 2024
   #
-  # Merged PR 27527: Updated subnet configured on SA1 AD Site
-  # 7ec59670403f2e7207341ac99f9b3d35f20ea10f
-  dante_build_id: '1080736'
+  # Merge pull request 27509 from dante_artifact_upgrade into master
+  # 3e9ca38c7af03406325181be4094ebb60c785357
+  dante_build_id: '1080800'
 
   # virgil 20240903.1
   # Tue Sep  3 00:11:38 UTC 2024 -- Tue Sep  3 10:11:38 AEST 2024
