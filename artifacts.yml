@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240903.2
-  # Tue Sep  3 01:37:22 UTC 2024 -- Tue Sep  3 11:37:22 AEST 2024
+  # Dante Build Artifact 20240903.3
+  # Tue Sep  3 02:27:02 UTC 2024 -- Tue Sep  3 12:27:02 AEST 2024
   #
-  # Merge pull request 27497 from dante_python_upgrade into master
-  # 2ca52b5337176dc0c57d071c7164d4eef766b4ad
-  dante_build_id: '1080621'
+  # Merged PR 27499: Removed package installation on host server.
+  # 33760a3b11b7620cf6323786523a5655fc4741e1
+  dante_build_id: '1080666'
 
   # virgil 20240903.1
   # Tue Sep  3 00:11:38 UTC 2024 -- Tue Sep  3 10:11:38 AEST 2024
