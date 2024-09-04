@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240904.1
-  # Wed Sep  4 00:49:22 UTC 2024 -- Wed Sep  4 10:49:22 AEST 2024
+  # Dante Build Artifact 20240904.2
+  # Wed Sep  4 05:31:01 UTC 2024 -- Wed Sep  4 15:31:01 AEST 2024
   #
-  # Merge pull request 27559 from dante_artifact_upgrade into master
-  # a742bc3221175bae32101c568a8559ff2ecb561d
-  dante_build_id: '1081738'
+  # Merge pull request 27573 from dante_artifact_upgrade into master
+  # 3b75f600f773c1b97f29d1400c385f4335e9f4aa
+  dante_build_id: '1082020'
 
-  # virgil 20240904.12
-  # Wed Sep  4 03:54:23 UTC 2024 -- Wed Sep  4 13:54:23 AEST 2024
+  # virgil 20240904.15
+  # Wed Sep  4 04:23:09 UTC 2024 -- Wed Sep  4 14:23:09 AEST 2024
   #
-  # Merged PR 27566: Increase the max rack number
-  # 79d00a62af7e1bfe1ecd325f4e82ee6139088b5b
-  virgil_build_id: '1081902'
+  # Merged PR 27554: New Iris hardwares
+  # 9e363c86d4a7f34f6359cc1146b54740b681936a
+  virgil_build_id: '1081943'
