@@ -7,9 +7,9 @@ variables:
   # 3e9ca38c7af03406325181be4094ebb60c785357
   dante_build_id: '1080800'
 
-  # virgil 20240903.1
-  # Tue Sep  3 00:11:38 UTC 2024 -- Tue Sep  3 10:11:38 AEST 2024
+  # virgil 20240904.5
+  # Tue Sep  3 23:58:43 UTC 2024 -- Wed Sep  4 09:58:43 AEST 2024
   #
-  # Merged PR 27492: Add dummy SA1 networks
-  # 2ea23519f07a430055cb021a2c2e88527f4067c6
-  virgil_build_id: '1080501'
+  # Merged PR 27547: Replace C-00066 with C-00813
+  # dc2e66b93d37dbfa88f7bc09a383e04160e4e13c
+  virgil_build_id: '1081672'
