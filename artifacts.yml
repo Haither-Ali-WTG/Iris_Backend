@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240904.2
-  # Wed Sep  4 05:31:01 UTC 2024 -- Wed Sep  4 15:31:01 AEST 2024
+  # Dante Build Artifact 20240904.3
+  # Wed Sep  4 06:37:58 UTC 2024 -- Wed Sep  4 16:37:58 AEST 2024
   #
-  # Merge pull request 27573 from dante_artifact_upgrade into master
-  # 3b75f600f773c1b97f29d1400c385f4335e9f4aa
-  dante_build_id: '1082020'
+  # Merged PR 27584: Enabled prepared allowance list for DE1
+  # 91a81287eacbf917dc1977aa00d192592b313537
+  dante_build_id: '1082094'
 
   # virgil 20240904.15
   # Wed Sep  4 04:23:09 UTC 2024 -- Wed Sep  4 14:23:09 AEST 2024
