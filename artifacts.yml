@@ -7,9 +7,9 @@ variables:
   # a742bc3221175bae32101c568a8559ff2ecb561d
   dante_build_id: '1081738'
 
-  # virgil 20240904.5
-  # Tue Sep  3 23:58:43 UTC 2024 -- Wed Sep  4 09:58:43 AEST 2024
+  # virgil 20240904.12
+  # Wed Sep  4 03:54:23 UTC 2024 -- Wed Sep  4 13:54:23 AEST 2024
   #
-  # Merged PR 27547: Replace C-00066 with C-00813
-  # dc2e66b93d37dbfa88f7bc09a383e04160e4e13c
-  virgil_build_id: '1081672'
+  # Merged PR 27566: Increase the max rack number
+  # 79d00a62af7e1bfe1ecd325f4e82ee6139088b5b
+  virgil_build_id: '1081902'
