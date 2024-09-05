@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240904.3
-  # Wed Sep  4 06:37:58 UTC 2024 -- Wed Sep  4 16:37:58 AEST 2024
+  # Dante Build Artifact 20240905.1
+  # Wed Sep  4 23:37:04 UTC 2024 -- Thu Sep  5 09:37:04 AEST 2024
   #
-  # Merged PR 27584: Enabled prepared allowance list for DE1
-  # 91a81287eacbf917dc1977aa00d192592b313537
-  dante_build_id: '1082094'
+  # Merge pull request 27606 from dante_python_upgrade into master
+  # 0f8baf57be55049ac1231c57de70f2d8ddddd5fc
+  dante_build_id: '1082890'
 
-  # virgil 20240905.5
-  # Wed Sep  4 23:02:23 UTC 2024 -- Thu Sep  5 09:02:23 AEST 2024
+  # virgil 20240905.8
+  # Wed Sep  4 23:47:04 UTC 2024 -- Thu Sep  5 09:47:04 AEST 2024
   #
-  # Merge pull request 27605 from virgil_python_upgrade into master
-  # 540bdd74e49a67f3dcbd88c2e40ab079c60fb445
-  virgil_build_id: '1082857'
+  # Merged PR 27595: Add config
+  # 58c3aa429b2db7713d8e2f2b7ea5ae349d1fbf6c
+  virgil_build_id: '1082910'
