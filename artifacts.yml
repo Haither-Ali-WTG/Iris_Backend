@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240905.5
-  # Thu Sep  5 03:26:10 UTC 2024 -- Thu Sep  5 13:26:10 AEST 2024
+  # Dante Build Artifact 20240905.6
+  # Thu Sep  5 05:48:01 UTC 2024 -- Thu Sep  5 15:48:01 AEST 2024
   #
-  # Merged PR 27596: Add default gateway to DHCP reservations in US2
-  # a779bf27433009d72669f553fa3914c6577619ab
-  dante_build_id: '1083164'
+  # Merge pull request 27654 from dante_artifact_upgrade into master
+  # b4acdc794d77d06bd9b94fd1c287bb19a39859f9
+  dante_build_id: '1083310'
 
   # virgil 20240905.11
   # Thu Sep  5 05:00:41 UTC 2024 -- Thu Sep  5 15:00:41 AEST 2024
