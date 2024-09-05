@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240905.3
-  # Thu Sep  5 01:26:12 UTC 2024 -- Thu Sep  5 11:26:12 AEST 2024
+  # Dante Build Artifact 20240905.4
+  # Thu Sep  5 02:07:35 UTC 2024 -- Thu Sep  5 12:07:35 AEST 2024
   #
-  # Merged PR 27616: Perform automatic python upgrades weekly on Monday
-  # 598a1a97f55bbe849d82f1177f8f82605ad544f8
-  dante_build_id: '1083028'
+  # Merge pull request 27614 from dante_artifact_upgrade into master
+  # 086cd36d433ec18dc4c464e97002895fd21a8063
+  dante_build_id: '1083086'
 
   # virgil 20240905.8
   # Wed Sep  4 23:47:04 UTC 2024 -- Thu Sep  5 09:47:04 AEST 2024
