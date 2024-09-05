@@ -36,7 +36,7 @@
 
     - name: Check if there is at most one item
       assert:
-        that: instances_to_be_deleted | length <= 2
+        that: instances_to_be_deleted | length < 2
         fail_msg: >-
           To avoid accidentally deleting all instances due to a code error,
           only one instance can be torn down at a time.
