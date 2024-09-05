@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240905.1
-  # Wed Sep  4 23:37:04 UTC 2024 -- Thu Sep  5 09:37:04 AEST 2024
+  # Dante Build Artifact 20240905.2
+  # Thu Sep  5 00:17:15 UTC 2024 -- Thu Sep  5 10:17:15 AEST 2024
   #
-  # Merge pull request 27606 from dante_python_upgrade into master
-  # 0f8baf57be55049ac1231c57de70f2d8ddddd5fc
-  dante_build_id: '1082890'
+  # Merged PR 27582: WIP: keyfiles network files implementation for RHEL 9 builder
+  # 7159e3639fe61d9312c0457e093883bfcd9465a5
+  dante_build_id: '1082959'
 
   # virgil 20240905.8
   # Wed Sep  4 23:47:04 UTC 2024 -- Thu Sep  5 09:47:04 AEST 2024
