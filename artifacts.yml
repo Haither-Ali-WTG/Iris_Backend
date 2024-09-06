@@ -7,9 +7,9 @@ variables:
   # b4acdc794d77d06bd9b94fd1c287bb19a39859f9
   dante_build_id: '1083310'
 
-  # virgil 20240905.11
-  # Thu Sep  5 05:00:41 UTC 2024 -- Thu Sep  5 15:00:41 AEST 2024
+  # virgil 20240906.1
+  # Fri Sep  6 00:17:28 UTC 2024 -- Fri Sep  6 10:17:28 AEST 2024
   #
-  # Merged PR 27647: Add sa1 to other networks acl
-  # a7d49788a765d171347868085b78c1d2617b0b0c
-  virgil_build_id: '1083271'
+  # Merged PR 27667: Update PCI slot number
+  # 846388c0a647ac8ffabcdd0d22e1dffd1303f253
+  virgil_build_id: '1084206'
