@@ -7,9 +7,9 @@ variables:
   # ec8cf2a4e9355ab24ad3353d86fdd6991d85b454
   dante_build_id: '1084295'
 
-  # virgil 20240906.1
-  # Fri Sep  6 00:17:28 UTC 2024 -- Fri Sep  6 10:17:28 AEST 2024
+  # virgil 20240908.3
+  # Sun Sep  8 06:12:02 UTC 2024 -- Sun Sep  8 16:12:02 AEST 2024
   #
-  # Merged PR 27667: Update PCI slot number
-  # 846388c0a647ac8ffabcdd0d22e1dffd1303f253
-  virgil_build_id: '1084206'
+  # Merged PR 27700: replace faulty apex34 in AU2
+  # 8a9084b8d05c6b9066331ee7caccd3f4157740ad
+  virgil_build_id: '1086522'
