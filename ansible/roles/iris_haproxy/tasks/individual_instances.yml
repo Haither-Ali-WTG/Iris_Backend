@@ -173,7 +173,7 @@
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
-    apparmor_profile: "{{ container_name }}"
+    apparmor_profile: "{{ container_name if (ansible_facts['os_family'] | lower == 'ubuntu') else '' }}"
     container_user: "{{ user.uid }}:{{ user.group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
