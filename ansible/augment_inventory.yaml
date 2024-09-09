@@ -4,14 +4,9 @@
   gather_facts: no
   tasks:
     - name: Set Virgil-like facts for the machines
-      vars:
-        os_variant:
-          ubuntu2204: ubuntu
-          ubuntu2404: ubuntu
-          rhel9: rhel
       set_fact:
         virgil_os_family: linux
-        virgil_os_variant: "{{ os_variant[os] }}"
+        virgil_os_variant: "{{ os_variant }}"
         virgil_mac_oob_dante: '...'
         virgil_hostname: "{{ inventory_hostname }}"
         virgil_groups: ['mgmt']  # TODO: confirm
