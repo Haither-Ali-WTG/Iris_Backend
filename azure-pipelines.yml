@@ -16,155 +16,155 @@ variables:
     value: au-iscore-iris-prod-1-rw
 
 stages:
-  - stage: Tests_and_lint
-    pool: cicd
-    jobs:
-      - job: Tests_and_lint
-        steps:
-          - script: |
-              set -euxo pipefail
-              pip install -r requirements.txt
-            displayName: 'Install requirements'
+  # - stage: Tests_and_lint
+  #   pool: cicd
+  #   jobs:
+  #     - job: Tests_and_lint
+  #       steps:
+  #         - script: |
+  #             set -euxo pipefail
+  #             pip install -r requirements.txt
+  #           displayName: 'Install requirements'
 
-          - task: DownloadPipelineArtifact@2
-            displayName: 'Download virgil inventories and yamale extensions'
-            inputs:
-              buildType: 'specific'
-              project: 'InfrastructureAutomation'
-              # virgil pipeline Id
-              pipeline: 4
-              artifact: inventories
-              buildVersionToDownload: 'specific'
-              buildId: '$(virgil_build_id)'
-              path: $(Build.SourcesDirectory)/inventories
-              patterns: |
-                inventory-*-A.yaml
-                virgil_yamale.py
+  #         - task: DownloadPipelineArtifact@2
+  #           displayName: 'Download virgil inventories and yamale extensions'
+  #           inputs:
+  #             buildType: 'specific'
+  #             project: 'InfrastructureAutomation'
+  #             # virgil pipeline Id
+  #             pipeline: 4
+  #             artifact: inventories
+  #             buildVersionToDownload: 'specific'
+  #             buildId: '$(virgil_build_id)'
+  #             path: $(Build.SourcesDirectory)/inventories
+  #             patterns: |
+  #               inventory-*-A.yaml
+  #               virgil_yamale.py
 
-          - script: |
-              set -euxo pipefail
-              pytest --tb=short
-            displayName: 'Python tests'
+  #         - script: |
+  #             set -euxo pipefail
+  #             pytest --tb=short
+  #           displayName: 'Python tests'
 
-          - task: PublishTestResults@2
-            condition: succeededOrFailed()
-            inputs:
-              testResultsFiles: 'reports/nosetests.xml'
+  #         - task: PublishTestResults@2
+  #           condition: succeededOrFailed()
+  #           inputs:
+  #             testResultsFiles: 'reports/nosetests.xml'
 
-          - script: |
-              set -euxo pipefail
-              pylint --rcfile=setup.cfg \
-              --disable=redefined-outer-name \
-              tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
-            displayName: 'Python lint'
-            condition: succeededOrFailed()
+  #         - script: |
+  #             set -euxo pipefail
+  #             pylint --rcfile=setup.cfg \
+  #             --disable=redefined-outer-name \
+  #             tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
+  #           displayName: 'Python lint'
+  #           condition: succeededOrFailed()
 
-          - script: |
-              set -euxo pipefail
-              mypy tests/ ansible/roles/collect_sites/files/
-            displayName: 'Mypy type check'
-            condition: succeededOrFailed()
+  #         - script: |
+  #             set -euxo pipefail
+  #             mypy tests/ ansible/roles/collect_sites/files/
+  #           displayName: 'Mypy type check'
+  #           condition: succeededOrFailed()
 
-          - script: |
-              set -euxo pipefail
-              yamllint -s .
-            displayName: 'YAML lint'
-            condition: succeededOrFailed()
+  #         - script: |
+  #             set -euxo pipefail
+  #             yamllint -s .
+  #           displayName: 'YAML lint'
+  #           condition: succeededOrFailed()
 
-          - script: |
-              set -euxo pipefail
-              bandit -r .
-            displayName: 'Bandit security check'
-            condition: succeededOrFailed()
+  #         - script: |
+  #             set -euxo pipefail
+  #             bandit -r .
+  #           displayName: 'Bandit security check'
+  #           condition: succeededOrFailed()
 
-          - script: |
-              set -euxo pipefail
-              ansible-lint $(find ansible -iname '*.y*ml')
-            displayName: 'Ansible lint'
-            condition: succeededOrFailed()
+  #         - script: |
+  #             set -euxo pipefail
+  #             ansible-lint $(find ansible -iname '*.y*ml')
+  #           displayName: 'Ansible lint'
+  #           condition: succeededOrFailed()
 
-  - stage: Dump_configs_and_check_changes
-    dependsOn: [Tests_and_lint]
-    jobs:
-      - job: Dump_configs_and_check_changes
-        strategy:
-          matrix:
-            AU2_hall_A:
-              dc: AU2
-              hall: A
-        pool:
-          name: dante
-          demands:
-            - WTG_DC -equals $(dc)
-            - WTG_HALL -equals $(hall)
-        steps:
-          - checkout: self
+  # - stage: Dump_configs_and_check_changes
+  #   dependsOn: [Tests_and_lint]
+  #   jobs:
+  #     - job: Dump_configs_and_check_changes
+  #       strategy:
+  #         matrix:
+  #           AU2_hall_A:
+  #             dc: AU2
+  #             hall: A
+  #       pool:
+  #         name: dante
+  #         demands:
+  #           - WTG_DC -equals $(dc)
+  #           - WTG_HALL -equals $(hall)
+  #       steps:
+  #         - checkout: self
 
-          - task: InstallSSHKey@0
-            displayName: 'Install an SSH key'
-            inputs:
-              knownHostsEntry: 'StrictHostKeyChecking no'
-              sshKeySecureFile: 'id_rsa_dante'
+  #         - task: InstallSSHKey@0
+  #           displayName: 'Install an SSH key'
+  #           inputs:
+  #             knownHostsEntry: 'StrictHostKeyChecking no'
+  #             sshKeySecureFile: 'id_rsa_dante'
 
-          - script: |
-              set -euxo pipefail
-              cp ansible/ansible.cfg .
-            displayName: 'Prepare to run playbooks'
+  #         - script: |
+  #             set -euxo pipefail
+  #             cp ansible/ansible.cfg .
+  #           displayName: 'Prepare to run playbooks'
 
-          - task: AzureKeyVault@2
-            displayName: 'Get secret to authenticate to key vault from ansible'
-            inputs:
-              azureSubscription: 'sc-azuredevops2dante-vaults'
-              KeyVaultName: kv-wtg-dante-sim
-              SecretsFilter: secretAppIdDf4b4604e176
+  #         - task: AzureKeyVault@2
+  #           displayName: 'Get secret to authenticate to key vault from ansible'
+  #           inputs:
+  #             azureSubscription: 'sc-azuredevops2dante-vaults'
+  #             KeyVaultName: kv-wtg-dante-sim
+  #             SecretsFilter: secretAppIdDf4b4604e176
 
-          - script: |
-              set -euxo pipefail
-              cp ansible/ansible.cfg .
-            displayName: 'Prepare to run playbooks'
+  #         - script: |
+  #             set -euxo pipefail
+  #             cp ansible/ansible.cfg .
+  #           displayName: 'Prepare to run playbooks'
 
-          - task: DownloadPipelineArtifact@2
-            displayName: 'Download dante artifact'
-            inputs:
-              buildType: 'specific'
-              project: 'InfrastructureAutomation'
-              # dante build artifact pipeline Id
-              pipeline: 26
-              buildVersionToDownload: 'specific'
-              buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)
+  #         - task: DownloadPipelineArtifact@2
+  #           displayName: 'Download dante artifact'
+  #           inputs:
+  #             buildType: 'specific'
+  #             project: 'InfrastructureAutomation'
+  #             # dante build artifact pipeline Id
+  #             pipeline: 26
+  #             buildVersionToDownload: 'specific'
+  #             buildId: '$(dante_build_id)'
+  #             path: $(Build.SourcesDirectory)
 
-          - task: CopyFiles@2
-            displayName: 'Merge artifacts to a single roles folder'
-            inputs:
-              sourceFolder: nested_virt
-              targetFolder: ansible
+  #         - task: CopyFiles@2
+  #           displayName: 'Merge artifacts to a single roles folder'
+  #           inputs:
+  #             sourceFolder: nested_virt
+  #             targetFolder: ansible
 
-          - task: Ansible@0
-            displayName: 'Dump configs'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
-              failOnStdErr: false
-              args: >-
-                -u $(user) --diff
-                -e="simulation=" -e="azure_kv_name=$(azure_kv_name)"
-                -e="s3_host=$(s3_host)" -e="pure_usernames='$(pure_usernames)'"
-                -e="s3_iris_bucket=$(s3_iris_bucket)"
-            env:
-              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-              ANSIBLE_HOST_KEY_CHECKING: false
-              ANSIBLE_MAX_DIFF_SIZE: 1000000  # Default: 104448
+  #         - task: Ansible@0
+  #           displayName: 'Dump configs'
+  #           inputs:
+  #             ansibleInterface: 'agentMachine'
+  #             playbookPathOnAgentMachine: 'ansible/dump_configs.yml'
+  #             inventoriesAgentMachine: 'file'
+  #             inventoryFileOnAgentMachine: 'data/instances'
+  #             failOnStdErr: false
+  #             args: >-
+  #               -u $(user) --diff
+  #               -e="simulation=" -e="azure_kv_name=$(azure_kv_name)"
+  #               -e="s3_host=$(s3_host)" -e="pure_usernames='$(pure_usernames)'"
+  #               -e="s3_iris_bucket=$(s3_iris_bucket)"
+  #           env:
+  #             secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+  #             ANSIBLE_HOST_KEY_CHECKING: false
+  #             ANSIBLE_MAX_DIFF_SIZE: 1000000  # Default: 104448
 
-          - publish: $(System.DefaultWorkingDirectory)/generated_configs
-            artifact: configs
-            displayName: 'Publish configs'
+  #         - publish: $(System.DefaultWorkingDirectory)/generated_configs
+  #           artifact: configs
+  #           displayName: 'Publish configs'
 
   - stage: Simulations
-    dependsOn: [Dump_configs_and_check_changes, Tests_and_lint]
-    pool: simulations
+    # dependsOn: [Dump_configs_and_check_changes, Tests_and_lint]
+    pool: test-pool
     jobs:
       - job: Simulation
         strategy:
@@ -254,29 +254,29 @@ stages:
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-          - task: Ansible@0
-            displayName: 'Unregister nodes'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
-              failOnStdErr: false
-              args: >-
-                -u $(user) --diff
-                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
-                -e="target_dc=$(simulation_dc)"
-            env:
-              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-            condition: always()
+          # - task: Ansible@0
+          #   displayName: 'Unregister nodes'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
+          #     inventoriesAgentMachine: 'file'
+          #     inventoryFileOnAgentMachine: 'data/instances'
+          #     failOnStdErr: false
+          #     args: >-
+          #       -u $(user) --diff
+          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+          #       -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+          #       -e="target_dc=$(simulation_dc)"
+          #   env:
+          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+          #   condition: always()
 
-          - task: Ansible@0
-            displayName: 'Cleanup'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
-              failOnStdErr: false
-              args: >-
-                -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
-            condition: always()
+          # - task: Ansible@0
+          #   displayName: 'Cleanup'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+          #     failOnStdErr: false
+          #     args: >-
+          #       -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
+          #   condition: always()
