@@ -6,11 +6,11 @@ machines:
       os: rhel9  # TODO: make one of these RHEL
       dc: AU2
       os_variant: rhel
-    au2lbl00346:
-      ansible_host: 10.2.64.22
-      os: ubuntu2204
-      dc: AU2
-      os_variant: ubuntu
+    # au2lbl00346:
+    #   ansible_host: 10.2.64.22
+    #   os: ubuntu2204
+    #   dc: AU2
+    #   os_variant: ubuntu
     # au2lbl00416:
     #   ansible_host: 10.2.136.11
     #   os: ubuntu2204
