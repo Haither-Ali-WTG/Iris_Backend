@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240909.3
-  # Mon Sep  9 02:34:08 UTC 2024 -- Mon Sep  9 12:34:08 AEST 2024
+  # Dante Build Artifact 20240909.9
+  # Mon Sep  9 04:25:33 UTC 2024 -- Mon Sep  9 14:25:33 AEST 2024
   #
-  # Merged PR 27726: Use dnf instead of yum for RHEL9 upgrades
-  # d5111da3f57b0c3e9e58158ac0bc0c75298e270b
-  dante_build_id: '1087450'
+  # Merged PR 27735: RHEL 8 suppor in kvm_start nodes
+  # 29f3bfe2caa6d91a1b7032c27b34e657cdb10dfa
+  dante_build_id: '1087557'
 
   # virgil 20240908.3
   # Sun Sep  8 06:12:02 UTC 2024 -- Sun Sep  8 16:12:02 AEST 2024
