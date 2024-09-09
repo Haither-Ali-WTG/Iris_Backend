@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240908.1
-  # Sun Sep  8 07:09:04 UTC 2024 -- Sun Sep  8 17:09:04 AEST 2024
+  # Dante Build Artifact 20240909.1
+  # Sun Sep  8 23:53:21 UTC 2024 -- Mon Sep  9 09:53:21 AEST 2024
   #
-  # Merge pull request 27707 from dante_artifact_upgrade into master
-  # 816ad2ecbef159ad579235d18041699788ef9f50
-  dante_build_id: '1086574'
+  # Merged PR 27694: RHEL 9 hypervvisor build (iris and haproxy)
+  # 6c1534af6cf3591944e55d670a7da1f4326a855b
+  dante_build_id: '1087275'
 
   # virgil 20240908.3
   # Sun Sep  8 06:12:02 UTC 2024 -- Sun Sep  8 16:12:02 AEST 2024
