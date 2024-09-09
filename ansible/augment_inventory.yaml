@@ -10,7 +10,7 @@
         virgil_mac_oob_dante: '...'
         virgil_hostname: "{{ inventory_hostname }}"
         virgil_groups: ['mgmt']  # TODO: confirm
-        virgil_port_oob_dante: eth0
+        virgil_port_oob_dante: eno1
         virgil_internal_fqdn: "{{ inventory_hostname }}"
 
 - name: Import IIS data
