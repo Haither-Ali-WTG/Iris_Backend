@@ -5,7 +5,7 @@ variables:
   #
   # Merged PR 27694: RHEL 9 hypervvisor build (iris and haproxy)
   # 6c1534af6cf3591944e55d670a7da1f4326a855b
-  dante_build_id: '1087467'
+  dante_build_id: '1087477'
 
   # virgil 20240908.3
   # Sun Sep  8 06:12:02 UTC 2024 -- Sun Sep  8 16:12:02 AEST 2024
