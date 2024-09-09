@@ -125,7 +125,7 @@
   register: copy_certificates
 
 - name: Setup apparmor
-  when: 'os_variant == "ubuntu"'  # TODO: check if some config is required for RHEL
+  when: "(ansible_facts['os_family'] | lower == 'ubuntu')" # TODO: check if some config is required for RHEL
   block:
   - name: Template out the apparmor profile
     template:
