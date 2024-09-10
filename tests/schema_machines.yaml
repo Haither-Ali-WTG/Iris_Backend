@@ -6,3 +6,4 @@ machine:
   ansible_host: ip(version=4, unique='LB address')
   os: enum('rhel9', 'ubuntu2204', 'ubuntu2404')
   dc: regex('^[A-Z]{2}[0-9]$', name='data centre (uppercase)')
+  os_variant: enum('rhel', 'ubuntu')
