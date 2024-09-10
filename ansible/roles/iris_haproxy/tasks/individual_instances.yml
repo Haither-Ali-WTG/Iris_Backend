@@ -124,6 +124,14 @@
   no_log: true
   register: copy_certificates
 
+- name: Collect min facts
+  ansible.builtin.setup:
+    gather_subset: min
+
+- name: print ansible_facts
+  debug:
+  var: ansible_facts['os_family']    
+
 - name: Setup apparmor
   when: "(ansible_facts['os_family'] | lower == 'ubuntu')" # TODO: check if some config is required for RHEL
   block:
@@ -153,10 +161,6 @@
       apparmor_profile_config is changed
       or container_name not in (apparmor_status.stdout | from_json).profiles
 
-- name: Print subuser
-  debug:
-    var: subuser
-
 - name: Set container user for Ubuntu
   when: (ansible_facts['os_family'] | lower == 'ubuntu')
   set_fact:
@@ -167,8 +171,8 @@
 - name: Set container user for RHEL
   when: (ansible_facts['os_family'] | lower == 'redhat')
   set_fact:
-    container_user: "{{ subuser.subuid }}"
-    container_group: "{{ subuser.subuid }}"
+    haproxy_container_user: "{{ subuser.subuid }}"
+    haproxy_container_group: "{{ subuser.subuid }}"
 
 - name: Deploy the haproxy container
   include_role:
