@@ -157,6 +157,19 @@
   debug:
     var: subuser
 
+- name: Set container user for Ubuntu
+  when: (ansible_facts['os_family'] | lower == 'ubuntu')
+  set_fact:
+    container_user: "{{ user.uid }}"
+    container_group: "{{ user.group }}"
+
+# We can set actual container user when running podman
+- name: Set container user for RHEL
+  when: (ansible_facts['os_family'] | lower == 'redhat')
+  set_fact:
+    container_user: "{{ subuser.subuid }}"
+    container_group: "{{ subuser.subuid }}"
+
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
@@ -178,7 +191,7 @@
         {% endfor %}
       ]
     apparmor_profile: "{{ container_name if (ansible_facts['os_family'] | lower == 'ubuntu') else '' }}"
-    container_user: "{{ subuser.subuid }}:{{ subuser.subuid }}"
+    container_user: "{{ container_user }}:{{ container_group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
       production:

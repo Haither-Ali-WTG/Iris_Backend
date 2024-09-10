@@ -34,21 +34,3 @@
     haproxy_subuser:
       subuid: "{{ subuid_offset | int + haproxy_user.uid }}"
       subgid: "{{ subgid_offset | int + haproxy_user.group }}"
-
-- name: Create haproxy container group
-  ansible.builtin.group:
-    name: haproxy_container_group
-    state: present
-    gid: "{{ haproxy_subuser.subgid }}"
-  become: yes
-
-- name: Create haproxy container user
-  user:
-    name: haproxy_container_user
-    comment: HAProxy container user
-    create_home: no
-    password_lock: yes
-    uid: "{{ haproxy_subuser.subuid }}"
-    group: haproxy_container_group    
-  register: haproxy_user
-  become: yes
