@@ -153,6 +153,10 @@
       apparmor_profile_config is changed
       or container_name not in (apparmor_status.stdout | from_json).profiles
 
+- name: Print subuser
+  debug:
+    var: subuser
+
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
@@ -174,7 +178,7 @@
         {% endfor %}
       ]
     apparmor_profile: "{{ container_name if (ansible_facts['os_family'] | lower == 'ubuntu') else '' }}"
-    container_user: "{{ user.uid }}:{{ user.group }}"
+    container_user: "{{ subuser.subuid }}:{{ subuser.subuid }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
       production:
