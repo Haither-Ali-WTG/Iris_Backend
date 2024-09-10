@@ -64,7 +64,7 @@
   block:
     - name: Template out and validate the haproxy config
       vars:
-        container_engine: "{{ 'podman' if (ansible_facts['os_family'] | lower == 'redhat') else 'docker' }}"
+        container_engine: "{{ 'podman' if (virgil_os_variant == 'rhel') else 'docker' }}"
       template:
         src: haproxy.cfg.j2
         dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
@@ -124,20 +124,8 @@
   no_log: true
   register: copy_certificates
 
-- name: Collect min facts
-  ansible.builtin.setup:
-    gather_subset: min
-
-- name: print ansible_facts
-  debug:
-    var: ansible_facts['os_family']    
-
-- name: print os_family
-  debug:
-    var: virgil_os_variant | default('empty')  
-
 - name: Setup apparmor
-  when: "(ansible_facts['os_family'] | lower == 'ubuntu')" # TODO: check if some config is required for RHEL
+  when: "virgil_os_variant == 'ubuntu'" # TODO: check if some config is required for RHEL
   block:
   - name: Template out the apparmor profile
     template:
@@ -166,14 +154,14 @@
       or container_name not in (apparmor_status.stdout | from_json).profiles
 
 - name: Set container user for Ubuntu
-  when: (ansible_facts['os_family'] | lower == 'ubuntu')
+  when: "virgil_os_variant == 'ubuntu'"
   set_fact:
     haproxy_container_user: "{{ user.uid }}"
     haproxy_container_group: "{{ user.group }}"
 
 # We can set actual container user when running podman
 - name: Set container user for RHEL
-  when: (ansible_facts['os_family'] | lower == 'redhat')
+  when: "virgil_os_variant == 'rhel'"
   set_fact:
     haproxy_container_user: "{{ subuser.subuid }}"
     haproxy_container_group: "{{ subuser.subuid }}"
@@ -198,7 +186,7 @@
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
-    apparmor_profile: "{{ container_name if (ansible_facts['os_family'] | lower == 'ubuntu') else '' }}"
+    apparmor_profile: "{{ container_name if (virgil_os_variant == 'ubuntu') else '' }}"
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources:  # TODO review, probably make configurable
