@@ -83,6 +83,7 @@
     - name: Setup docker namespaces
       include_role:
         name: docker_namespaces
+      when: 'os_variant == "ubuntu"'
 
 - name: Setup the individual instances
   hosts: individual_instances
@@ -129,3 +130,5 @@
     - name: Setup keepalived (VRRP)
       include_role:
         name: iris_keepalived
+      # simulation doesn't have vlans so keepalived shuts off silently on ubuntu and throws error on RHEL
+      when: not simulation
