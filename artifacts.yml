@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240909.9
-  # Mon Sep  9 04:25:33 UTC 2024 -- Mon Sep  9 14:25:33 AEST 2024
+  # Dante Build Artifact 20240910.1
+  # Tue Sep 10 00:27:06 UTC 2024 -- Tue Sep 10 10:27:06 AEST 2024
   #
-  # Merged PR 27735: RHEL 8 suppor in kvm_start nodes
-  # 29f3bfe2caa6d91a1b7032c27b34e657cdb10dfa
-  dante_build_id: '1087557'
+  # Merge pull request 27766 from dante_artifact_upgrade into master
+  # 5658a27202b81321c7f65e69c007678df0c494b8
+  dante_build_id: '1088474'
 
   # virgil 20240910.6
   # Mon Sep  9 23:27:32 UTC 2024 -- Tue Sep 10 09:27:32 AEST 2024
