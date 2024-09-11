@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240910.1
-  # Tue Sep 10 00:27:06 UTC 2024 -- Tue Sep 10 10:27:06 AEST 2024
+  # Dante Build Artifact 20240911.1
+  # Wed Sep 11 01:33:04 UTC 2024 -- Wed Sep 11 11:33:04 AEST 2024
   #
-  # Merge pull request 27766 from dante_artifact_upgrade into master
-  # 5658a27202b81321c7f65e69c007678df0c494b8
-  dante_build_id: '1088474'
+  # Merge pull request 27756 from dante_python_upgrade into master
+  # 78bcd446d0417c783b7c15f871206ba63f69215b
+  dante_build_id: '1089643'
 
-  # virgil 20240910.6
-  # Mon Sep  9 23:27:32 UTC 2024 -- Tue Sep 10 09:27:32 AEST 2024
+  # virgil 20240911.2
+  # Wed Sep 11 05:12:33 UTC 2024 -- Wed Sep 11 15:12:33 AEST 2024
   #
-  # Merge pull request 27748 from virgil_python_upgrade into master
-  # dad53dd489243b9f9a3034c386ced2f11d21768c
-  virgil_build_id: '1088405'
+  # Merged PR 27808: adding sydco-sdst-1 bare metal host into virgil
+  # ac78383a49026e09f9732d807f0fe1e3e34d39e9
+  virgil_build_id: '1089826'
