@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240913.1
-  # Fri Sep 13 03:30:10 UTC 2024 -- Fri Sep 13 13:30:10 AEST 2024
+  # Dante Build Artifact 20240913.2
+  # Fri Sep 13 05:55:38 UTC 2024 -- Fri Sep 13 15:55:38 AEST 2024
   #
-  # Merge pull request 27853 from dante_artifact_upgrade into master
-  # 4849ec995cabad3aafa056a9d701e993accda107
-  dante_build_id: '1092111'
+  # Merged PR 27862: CS01729215: Split kafka mbeans metrics to dedicated fields
+  # b1ecb98150d36638f2196997acb2724b496e2560
+  dante_build_id: '1092258'
 
   # virgil 20240913.2
   # Fri Sep 13 02:29:40 UTC 2024 -- Fri Sep 13 12:29:40 AEST 2024
