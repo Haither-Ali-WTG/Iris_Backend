@@ -7,9 +7,9 @@ variables:
   # 915298ab90062752ab5aed4cb7f79413e0e63f48
   dante_build_id: '1090939'
 
-  # virgil 20240911.2
-  # Wed Sep 11 05:12:33 UTC 2024 -- Wed Sep 11 15:12:33 AEST 2024
+  # virgil 20240913.2
+  # Fri Sep 13 02:29:40 UTC 2024 -- Fri Sep 13 12:29:40 AEST 2024
   #
-  # Merged PR 27808: adding sydco-sdst-1 bare metal host into virgil
-  # ac78383a49026e09f9732d807f0fe1e3e34d39e9
-  virgil_build_id: '1089826'
+  # Merged PR 27844: upgrade apex switches in US2
+  # 70539ff273cf95e69b5505923f237a610e7e8f71
+  virgil_build_id: '1092036'
