@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240912.1
-  # Thu Sep 12 03:45:39 UTC 2024 -- Thu Sep 12 13:45:39 AEST 2024
+  # Dante Build Artifact 20240913.1
+  # Fri Sep 13 03:30:10 UTC 2024 -- Fri Sep 13 13:30:10 AEST 2024
   #
-  # Merged PR 27822: RHEL: migrate yum to dnf and drop RHEL7 support
-  # 915298ab90062752ab5aed4cb7f79413e0e63f48
-  dante_build_id: '1090939'
+  # Merge pull request 27853 from dante_artifact_upgrade into master
+  # 4849ec995cabad3aafa056a9d701e993accda107
+  dante_build_id: '1092111'
 
   # virgil 20240913.2
   # Fri Sep 13 02:29:40 UTC 2024 -- Fri Sep 13 12:29:40 AEST 2024
