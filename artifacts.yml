@@ -7,9 +7,9 @@ variables:
   # 4502d46b0c51038c9c099bf6de558c83acf0a7c8
   dante_build_id: '1095184'
 
-  # virgil 20240913.2
-  # Fri Sep 13 02:29:40 UTC 2024 -- Fri Sep 13 12:29:40 AEST 2024
+  # virgil 20240916.3
+  # Mon Sep 16 05:47:46 UTC 2024 -- Mon Sep 16 15:47:46 AEST 2024
   #
-  # Merged PR 27844: upgrade apex switches in US2
-  # 70539ff273cf95e69b5505923f237a610e7e8f71
-  virgil_build_id: '1092036'
+  # Merged PR 27493: Add new k8s subnets for de1 and us2
+  # 61c6e95a601a5393c3897c60188ab72f59debcb4
+  virgil_build_id: '1095444'
