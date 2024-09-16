@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240916.1
-  # Mon Sep 16 02:11:37 UTC 2024 -- Mon Sep 16 12:11:37 AEST 2024
+  # Dante Build Artifact 20240916.2
+  # Mon Sep 16 06:46:47 UTC 2024 -- Mon Sep 16 16:46:47 AEST 2024
   #
-  # Merged PR 27882: Xclarity rebuild server ISO builder OS corrected
-  # 4502d46b0c51038c9c099bf6de558c83acf0a7c8
-  dante_build_id: '1095184'
+  # Merge pull request 27900 from dante_artifact_upgrade into master
+  # 6290d3b9e91ce92bfdb8469c61bfba0e3391ae92
+  dante_build_id: '1095509'
 
   # virgil 20240916.3
   # Mon Sep 16 05:47:46 UTC 2024 -- Mon Sep 16 15:47:46 AEST 2024
