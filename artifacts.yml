@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240913.2
-  # Fri Sep 13 05:55:38 UTC 2024 -- Fri Sep 13 15:55:38 AEST 2024
+  # Dante Build Artifact 20240916.1
+  # Mon Sep 16 02:11:37 UTC 2024 -- Mon Sep 16 12:11:37 AEST 2024
   #
-  # Merged PR 27862: CS01729215: Split kafka mbeans metrics to dedicated fields
-  # b1ecb98150d36638f2196997acb2724b496e2560
-  dante_build_id: '1092258'
+  # Merged PR 27882: Xclarity rebuild server ISO builder OS corrected
+  # 4502d46b0c51038c9c099bf6de558c83acf0a7c8
+  dante_build_id: '1095184'
 
   # virgil 20240913.2
   # Fri Sep 13 02:29:40 UTC 2024 -- Fri Sep 13 12:29:40 AEST 2024
