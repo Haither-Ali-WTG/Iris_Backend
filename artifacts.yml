@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240917.1
-  # Tue Sep 17 02:09:20 UTC 2024 -- Tue Sep 17 12:09:20 AEST 2024
+  # Dante Build Artifact 20240917.2
+  # Tue Sep 17 07:02:59 UTC 2024 -- Tue Sep 17 17:02:59 AEST 2024
   #
-  # Merged PR 27892: Switches - Stage interfaces temp file to home for ports reordering
-  # 984c36a23818ee8b39a4cfd3e01d8188d9340ae3
-  dante_build_id: '1096432'
+  # Merged PR 27938: Ubuntu - Sync mirror with rate 2m
+  # 2a55d8c9aa2e5f53ba6b68e2336f5c5075c68c2f
+  dante_build_id: '1096712'
 
   # virgil 20240916.3
   # Mon Sep 16 05:47:46 UTC 2024 -- Mon Sep 16 15:47:46 AEST 2024
