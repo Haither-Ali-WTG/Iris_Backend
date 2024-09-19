@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240917.2
-  # Tue Sep 17 07:02:59 UTC 2024 -- Tue Sep 17 17:02:59 AEST 2024
+  # Dante Build Artifact 20240919.1
+  # Thu Sep 19 01:09:52 UTC 2024 -- Thu Sep 19 11:09:52 AEST 2024
   #
-  # Merged PR 27938: Ubuntu - Sync mirror with rate 2m
-  # 2a55d8c9aa2e5f53ba6b68e2336f5c5075c68c2f
-  dante_build_id: '1096712'
+  # Merge pull request 27980 from dante_artifact_upgrade into master
+  # a3d42c427b821c0fe9442f8b7f8ebfa8c3801522
+  dante_build_id: '1098581'
 
   # virgil 20240919.9
   # Thu Sep 19 00:12:43 UTC 2024 -- Thu Sep 19 10:12:43 AEST 2024
