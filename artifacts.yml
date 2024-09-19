@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240919.1
-  # Thu Sep 19 01:09:52 UTC 2024 -- Thu Sep 19 11:09:52 AEST 2024
+  # Dante Build Artifact 20240919.2
+  # Thu Sep 19 02:54:26 UTC 2024 -- Thu Sep 19 12:54:26 AEST 2024
   #
-  # Merge pull request 27980 from dante_artifact_upgrade into master
-  # a3d42c427b821c0fe9442f8b7f8ebfa8c3801522
-  dante_build_id: '1098581'
+  # Merged PR 27988: Minos: Fix nginx check
+  # f44dfe3ad3cdc42a66d52f9a7b2144114b58eb5c
+  dante_build_id: '1098682'
 
   # virgil 20240919.9
   # Thu Sep 19 00:12:43 UTC 2024 -- Thu Sep 19 10:12:43 AEST 2024
