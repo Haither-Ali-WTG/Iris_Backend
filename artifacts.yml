@@ -7,9 +7,9 @@ variables:
   # f44dfe3ad3cdc42a66d52f9a7b2144114b58eb5c
   dante_build_id: '1098682'
 
-  # virgil 20240919.9
-  # Thu Sep 19 00:12:43 UTC 2024 -- Thu Sep 19 10:12:43 AEST 2024
+  # virgil 20240920.10
+  # Thu Sep 19 23:38:34 UTC 2024 -- Fri Sep 20 09:38:34 AEST 2024
   #
-  # Merged PR 27971: au2-apex33-replacement
-  # 2a54da307d9dcd86cb5ac3c43a4f3ce006f5f96b
-  virgil_build_id: '1098527'
+  # Merge pull request 27910 from virgil_python_upgrade into master
+  # 153981b30c768178925fae9643086e8fa4be0b83
+  virgil_build_id: '1099671'
