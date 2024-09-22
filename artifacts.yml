@@ -7,9 +7,9 @@ variables:
   # a7275127d42e5f318b05c392268aba2008a33540
   dante_build_id: '1101829'
 
-  # virgil 20240922.2
-  # Sat Sep 21 22:40:59 UTC 2024 -- Sun Sep 22 08:40:59 AEST 2024
+  # virgil 20240923.1
+  # Sun Sep 22 22:00:00 UTC 2024 -- Mon Sep 23 08:00:00 AEST 2024
   #
-  # Merged PR 28067: us2 cumulus upgrades round 2
-  # 33b9d40fd6aa0b22b0b422cbec5c0fc22ac0c855
-  virgil_build_id: '1101792'
+  # Merged PR 28080: Comments about native vlans and tagged vlans
+  # 9f0ce23f46b0d480c12693ab1277add55239e7e0
+  virgil_build_id: '1102768'
