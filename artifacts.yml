@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240923.2
-  # Mon Sep 23 00:16:59 UTC 2024 -- Mon Sep 23 10:16:59 AEST 2024
+  # Dante Build Artifact 20240923.3
+  # Mon Sep 23 01:30:49 UTC 2024 -- Mon Sep 23 11:30:49 AEST 2024
   #
-  # Merge pull request 27915 from dante_python_upgrade into master
-  # 352914c6ba6feeb6abebce46bf05ece851ba931c
-  dante_build_id: '1102934'
+  # Merged PR 28106: (WIP) RHEL9 support for Management nodes
+  # e09e5a2586b3e9e326409d927c0bbcb29cb45ddd
+  dante_build_id: '1103048'
 
   # virgil 20240923.3
   # Mon Sep 23 00:49:07 UTC 2024 -- Mon Sep 23 10:49:07 AEST 2024
