@@ -7,9 +7,9 @@ variables:
   # 352914c6ba6feeb6abebce46bf05ece851ba931c
   dante_build_id: '1102934'
 
-  # virgil 20240923.1
-  # Sun Sep 22 22:00:00 UTC 2024 -- Mon Sep 23 08:00:00 AEST 2024
+  # virgil 20240923.3
+  # Mon Sep 23 00:49:07 UTC 2024 -- Mon Sep 23 10:49:07 AEST 2024
   #
-  # Merged PR 28080: Comments about native vlans and tagged vlans
-  # 9f0ce23f46b0d480c12693ab1277add55239e7e0
-  virgil_build_id: '1102768'
+  # Merged PR 28101: CS01736577 - New Topics for International Logistics
+  # 7b57bd6148fe530b4bc06f819240a1e82884fc96
+  virgil_build_id: '1102972'
