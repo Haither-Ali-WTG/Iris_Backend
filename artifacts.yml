@@ -7,9 +7,9 @@ variables:
   # 90f32c61f5dbfadfb92953f34ca5fa85e6f5f478
   dante_build_id: '1103106'
 
-  # virgil 20240923.3
-  # Mon Sep 23 00:49:07 UTC 2024 -- Mon Sep 23 10:49:07 AEST 2024
+  # virgil 20240923.6
+  # Mon Sep 23 03:01:17 UTC 2024 -- Mon Sep 23 13:01:17 AEST 2024
   #
-  # Merged PR 28101: CS01736577 - New Topics for International Logistics
-  # 7b57bd6148fe530b4bc06f819240a1e82884fc96
-  virgil_build_id: '1102972'
+  # Merged PR 28128: Correct the hardware code for new IRIS sand server
+  # 2d5ec95c561df61fdb3ff5c1cf9da1ffad96929b
+  virgil_build_id: '1103169'
