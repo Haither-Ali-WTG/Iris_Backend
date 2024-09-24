@@ -1,2 +1,32 @@
 ---
-{}
+sand-ntlm-rdg:
+  clustered_instances: [au2sandinternalrdg]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: RDPWEB
+  fullconn: 1000
+  servers:
+    - name: sydsp-srdg-3
+      ip: 10.2.68.15
+      port: 80
+    - name: sydsp-srdg-4
+      ip: 10.2.68.16
+      port: 80
+
+sand-token-rdg:
+  clustered_instances: [au2sandinternalrdg]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: RDPWEB
+  fullconn: 1000
+  servers:
+    - name: au2sp-srdg-401
+      ip: 10.2.68.23
+      port: 80
+    - name: au2sp-srdg-402
+      ip: 10.2.68.24
+      port: 80
