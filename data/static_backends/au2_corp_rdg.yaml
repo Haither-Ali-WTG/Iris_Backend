@@ -1,6 +1,6 @@
 ---
 rdg.wisetechglobal.com:
-  clustered_instances: [au2corprdg, au2sandinternal1]
+  clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
     http_path: /
@@ -22,7 +22,7 @@ rdg.wisetechglobal.com:
       port: 80
 
 rdg-au2.wisetechglobal.com:
-  clustered_instances: [au2corprdg, au2sandinternal1]
+  clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
     http_path: /
@@ -82,57 +82,4 @@ rdg.wisetechglobal.cn:
       port: 80
     - name: sydco-srdg-8.wtg.zone
       ip: 10.2.68.12
-      port: 80
-
-rdgapps.wisetechglobal.com:
-  clustered_instances: [au2corprdg]
-  http_health_check:
-    enabled: true
-    http_path: /
-  balance: source
-  fullconn: 1000
-  cookie:
-    name: RDPWEBL
-    secure: true
-  default_server: inter 15s rise 2 fall 2 maxconn 1000
-  servers:
-    - name: SYDCO-SRDG-100
-      ip: 10.61.179.62
-      port: 443
-      settings: check ssl
-    - name: SYDCO-SRDG-99
-      ip: 10.61.198.142
-      port: 443
-      settings: check ssl backup
-
-sandtsg.wtg.zone:
-  clustered_instances: [au2corprdg, au2sandinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-  fullconn: 1000
-  servers:
-    - name: sydsp-srdg-3
-      ip: 10.2.68.15
-      port: 80
-    - name: sydsp-srdg-4
-      ip: 10.2.68.16
-      port: 80
-
-sandtsg-token-based.wtg.zone:
-  clustered_instances: [au2corprdg, au2sandinternal1, au2sandinternalrdg]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-  fullconn: 1000
-  servers:
-    - name: au2sp-srdg-401
-      ip: 10.2.68.23
-      port: 80
-    - name: au2sp-srdg-402
-      ip: 10.2.68.24
       port: 80
