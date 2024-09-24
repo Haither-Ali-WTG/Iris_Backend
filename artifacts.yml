@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240924.3
-  # Tue Sep 24 00:56:18 UTC 2024 -- Tue Sep 24 10:56:18 AEST 2024
+  # Dante Build Artifact 20240924.4
+  # Tue Sep 24 01:36:32 UTC 2024 -- Tue Sep 24 11:36:32 AEST 2024
   #
-  # Merged PR 28066: Tidy up US2 default gateway addition
-  # 7f3e3a54341a508b97cfb32f85cb04a1d256eb71
-  dante_build_id: '1104236'
+  # Merged PR 27048: Enable haproxy module in filebeat config for Haproxy
+  # 6fde320c7fd9975d957cee233ff5132454708dbb
+  dante_build_id: '1104286'
 
   # virgil 20240924.6
   # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
