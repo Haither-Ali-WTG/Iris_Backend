@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240923.5
-  # Mon Sep 23 03:49:45 UTC 2024 -- Mon Sep 23 13:49:45 AEST 2024
+  # Dante Build Artifact 20240924.2
+  # Tue Sep 24 00:03:30 UTC 2024 -- Tue Sep 24 10:03:30 AEST 2024
   #
-  # Merge pull request 28134 from dante_artifact_upgrade into master
-  # 00e75a8cf9f9116c5c504efed4106fd6b78abd89
-  dante_build_id: '1103228'
+  # Merge pull request 28157 from dante_python_upgrade into master
+  # bdc438de2b13e70b33eeff8f629c6d7f066a0b03
+  dante_build_id: '1104185'
 
-  # virgil 20240923.6
-  # Mon Sep 23 03:01:17 UTC 2024 -- Mon Sep 23 13:01:17 AEST 2024
+  # virgil 20240924.6
+  # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
   #
-  # Merged PR 28128: Correct the hardware code for new IRIS sand server
-  # 2d5ec95c561df61fdb3ff5c1cf9da1ffad96929b
-  virgil_build_id: '1103169'
+  # Merged PR 28150: Replace apexes 13 and 14 with SN3700Cs
+  # 401deff7177fd6209fb99ff1046fd1ee410daacf
+  virgil_build_id: '1104104'
