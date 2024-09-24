@@ -2,24 +2,24 @@
 star_wisetechglobal_com:
   description: "*.wisetechglobal.com"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
 
 star_wtg_zone:
   description: "*.wtg.zone"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wtg\.zone$
 
 sand_rdg_endpoints:
   description: SAND RDG endpoints
   tests:
-    - hdr(host) -m reg -i ^((sandtsg|sandtsg-token-based)\.)wtg\.zone$
+    - hdr(host),field(1,:) -m reg -i ^((sandtsg|sandtsg-token-based)\.)wtg\.zone$
 
-remote_desktop_rdweb_path:
-  description: Legacy RDP path /rdweb
+rdg_http_path:
+  description: HTTP rdg path /rdweb
   tests:
-    - path_reg -i ^\/rdweb(.*?)$
+    - path_beg -i /rdweb
 
-remote_desktop_rdg_legacy_path:
-  description: Legacy RDP path /rpc
+rdg_rpc_path:
+  description: RPC rdg path /rpc
   tests:
-    - path_reg -i ^\/rpc(.*?)$
+    - path_beg -i /rpc
