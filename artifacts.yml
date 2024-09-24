@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240924.5
-  # Tue Sep 24 02:49:11 UTC 2024 -- Tue Sep 24 12:49:11 AEST 2024
+  # Dante Build Artifact 20240925.1
+  # Tue Sep 24 22:24:43 UTC 2024 -- Wed Sep 25 08:24:43 AEST 2024
   #
-  # Merge pull request 28168 from dante_artifact_upgrade into master
-  # e0cfc4ddfd8502c6ad0fac7691344b0d5c4cf796
-  dante_build_id: '1104360'
+  # Merged PR 28186: RHEL9 support for frr and containers
+  # e81c7882e8e07a019e9753b2f036d31a1156cf5d
+  dante_build_id: '1105317'
 
   # virgil 20240924.6
   # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
