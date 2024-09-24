@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240924.4
-  # Tue Sep 24 01:36:32 UTC 2024 -- Tue Sep 24 11:36:32 AEST 2024
+  # Dante Build Artifact 20240924.5
+  # Tue Sep 24 02:49:11 UTC 2024 -- Tue Sep 24 12:49:11 AEST 2024
   #
-  # Merged PR 27048: Enable haproxy module in filebeat config for Haproxy
-  # 6fde320c7fd9975d957cee233ff5132454708dbb
-  dante_build_id: '1104286'
+  # Merge pull request 28168 from dante_artifact_upgrade into master
+  # e0cfc4ddfd8502c6ad0fac7691344b0d5c4cf796
+  dante_build_id: '1104360'
 
   # virgil 20240924.6
   # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
