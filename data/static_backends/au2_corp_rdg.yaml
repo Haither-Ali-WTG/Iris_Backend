@@ -1,5 +1,5 @@
 ---
-rdg.wisetechglobal.com:
+corp-ntlm-rdg:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
@@ -21,65 +21,23 @@ rdg.wisetechglobal.com:
       ip: 10.2.68.20
       port: 80
 
-rdg-au2.wisetechglobal.com:
+corp-token-rdg:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
   cookie:
     name: RDPWEB
   servers:
-    - name: sydco-srdg-5.wtg.zone
-      ip: 10.2.68.13
+    - name: au2co-srdg-411.wtg.zone
+      ip: 10.2.70.51
       port: 80
-    - name: sydco-srdg-6.wtg.zone
-      ip: 10.2.68.14
+    - name: au2co-srdg-412.wtg.zone
+      ip: 10.2.70.51
       port: 80
-    - name: sydco-srdg-7.wtg.zone
-      ip: 10.2.68.11
+    - name: au2co-srdg-413.wtg.zone
+      ip: 10.2.70.51
       port: 80
-    - name: sydco-srdg-8.wtg.zone
-      ip: 10.2.68.12
-      port: 80
-
-rdg-au2.wisetechglobal.cn:
-  clustered_instances: [au2corprdg]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-  servers:
-    - name: au2co-srdg-1.wtg.zone
-      ip: 10.2.68.17
-      port: 80
-    - name: au2co-srdg-2.wtg.zone
-      ip: 10.2.68.18
-      port: 80
-    - name: au2co-srdg-3.wtg.zone
-      ip: 10.2.68.19
-      port: 80
-    - name: au2co-srdg-4.wtg.zone
-      ip: 10.2.68.20
-      port: 80
-
-rdg.wisetechglobal.cn:
-  clustered_instances: [au2corprdg]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-  servers:
-    - name: sydco-srdg-5.wtg.zone
-      ip: 10.2.68.13
-      port: 80
-    - name: sydco-srdg-6.wtg.zone
-      ip: 10.2.68.14
-      port: 80
-    - name: sydco-srdg-7.wtg.zone
-      ip: 10.2.68.11
-      port: 80
-    - name: sydco-srdg-8.wtg.zone
-      ip: 10.2.68.12
+    - name: au2co-srdg-414.wtg.zone
+      ip: 10.2.70.51
       port: 80
