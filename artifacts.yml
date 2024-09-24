@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240924.2
-  # Tue Sep 24 00:03:30 UTC 2024 -- Tue Sep 24 10:03:30 AEST 2024
+  # Dante Build Artifact 20240924.3
+  # Tue Sep 24 00:56:18 UTC 2024 -- Tue Sep 24 10:56:18 AEST 2024
   #
-  # Merge pull request 28157 from dante_python_upgrade into master
-  # bdc438de2b13e70b33eeff8f629c6d7f066a0b03
-  dante_build_id: '1104185'
+  # Merged PR 28066: Tidy up US2 default gateway addition
+  # 7f3e3a54341a508b97cfb32f85cb04a1d256eb71
+  dante_build_id: '1104236'
 
   # virgil 20240924.6
   # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
