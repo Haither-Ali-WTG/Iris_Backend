@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240925.2
-  # Wed Sep 25 06:19:44 UTC 2024 -- Wed Sep 25 16:19:44 AEST 2024
+  # Dante Build Artifact 20240925.3
+  # Wed Sep 25 07:33:13 UTC 2024 -- Wed Sep 25 17:33:13 AEST 2024
   #
-  # Merged PR 28222: RHEL9: dante and minos tests while building qcow2
-  # 5d41522a0f0eee514534ea7d98ed720c44288acd
-  dante_build_id: '1105748'
+  # Merged PR 28217: Include the mail queue monitoring config into the filebeat main config.
+  # 7c5ac1e289534303add9f0ecd3f5bebce887a966
+  dante_build_id: '1105830'
 
   # virgil 20240924.6
   # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
