@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20240926.1
-  # Thu Sep 26 01:45:44 UTC 2024 -- Thu Sep 26 11:45:44 AEST 2024
+  # Dante Build Artifact 20240926.2
+  # Thu Sep 26 02:48:25 UTC 2024 -- Thu Sep 26 12:48:25 AEST 2024
   #
-  # Merged PR 28239: Fixed pip install on fresh Ubuntu 24.04 installation
-  # 98a2c26261a2c2d33f56deba5a38dbdb1f679123
-  dante_build_id: '1106644'
+  # Merge pull request 28249 from dante_artifact_upgrade into master
+  # cfda9623296a5959b7d6f4965f0a5159c4951879
+  dante_build_id: '1106730'
 
   # virgil 20240926.4
   # Thu Sep 26 01:45:02 UTC 2024 -- Thu Sep 26 11:45:02 AEST 2024
