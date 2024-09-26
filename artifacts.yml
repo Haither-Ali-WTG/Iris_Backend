@@ -7,9 +7,9 @@ variables:
   # dbdf657185e02395e17fd09e0ee10b1aa537f96d
   dante_build_id: '1106897'
 
-  # virgil 20240926.7
-  # Thu Sep 26 04:19:23 UTC 2024 -- Thu Sep 26 14:19:23 AEST 2024
+  # virgil 20240926.10
+  # Thu Sep 26 06:59:49 UTC 2024 -- Thu Sep 26 16:59:49 AEST 2024
   #
-  # Merged PR 28259: Allowing DNS queries from CN1 to US2.
-  # fc8131bbccbf9961864c160920ca4d0b9ff237c2
-  virgil_build_id: '1106835'
+  # Merged PR 28267: Use the consecutive IP for IRIS sand
+  # 0ffcc7a144e8874edb11968bd5bf3f21c0fc1216
+  virgil_build_id: '1106983'
