@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240925.3
-  # Wed Sep 25 07:33:13 UTC 2024 -- Wed Sep 25 17:33:13 AEST 2024
+  # Dante Build Artifact 20240926.1
+  # Thu Sep 26 01:45:44 UTC 2024 -- Thu Sep 26 11:45:44 AEST 2024
   #
-  # Merged PR 28217: Include the mail queue monitoring config into the filebeat main config.
-  # 7c5ac1e289534303add9f0ecd3f5bebce887a966
-  dante_build_id: '1105830'
+  # Merged PR 28239: Fixed pip install on fresh Ubuntu 24.04 installation
+  # 98a2c26261a2c2d33f56deba5a38dbdb1f679123
+  dante_build_id: '1106644'
 
-  # virgil 20240924.6
-  # Mon Sep 23 23:16:14 UTC 2024 -- Tue Sep 24 09:16:14 AEST 2024
+  # virgil 20240926.4
+  # Thu Sep 26 01:45:02 UTC 2024 -- Thu Sep 26 11:45:02 AEST 2024
   #
-  # Merged PR 28150: Replace apexes 13 and 14 with SN3700Cs
-  # 401deff7177fd6209fb99ff1046fd1ee410daacf
-  virgil_build_id: '1104104'
+  # Merged PR 28240: Validate acme records for ocp cluster
+  # 47cf565fe8b731c885845fdfc45fa0d9ca88bc3e
+  virgil_build_id: '1106639'
