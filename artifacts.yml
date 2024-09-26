@@ -7,9 +7,9 @@ variables:
   # cfda9623296a5959b7d6f4965f0a5159c4951879
   dante_build_id: '1106730'
 
-  # virgil 20240926.4
-  # Thu Sep 26 01:45:02 UTC 2024 -- Thu Sep 26 11:45:02 AEST 2024
+  # virgil 20240926.7
+  # Thu Sep 26 04:19:23 UTC 2024 -- Thu Sep 26 14:19:23 AEST 2024
   #
-  # Merged PR 28240: Validate acme records for ocp cluster
-  # 47cf565fe8b731c885845fdfc45fa0d9ca88bc3e
-  virgil_build_id: '1106639'
+  # Merged PR 28259: Allowing DNS queries from CN1 to US2.
+  # fc8131bbccbf9961864c160920ca4d0b9ff237c2
+  virgil_build_id: '1106835'
