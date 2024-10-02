@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241002.3
-  # Wed Oct  2 02:46:09 UTC 2024 -- Wed Oct  2 12:46:09 AEST 2024
+  # Dante Build Artifact 20241002.4
+  # Wed Oct  2 03:23:35 UTC 2024 -- Wed Oct  2 13:23:35 AEST 2024
   #
-  # Merged PR 28401: remove the json part as the script has been updated.
-  # 25a0f27e3c4a241eb6e9e225506d9722870acd3d
-  dante_build_id: '1113404'
+  # Merged PR 28358: Dante - Put in retry due to apt lock delay
+  # ede5da7ee0f500b6fd93731df20e8148798dcd64
+  dante_build_id: '1113460'
 
   # virgil 20241002.2
   # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
