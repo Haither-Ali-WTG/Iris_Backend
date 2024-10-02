@@ -26,34 +26,33 @@
           | select('match', reg_filter) | list }}
       vars:
         instance_names: >-
-          {{ groups['individual_instances']
+          {{ groups['individual_instances'] | default([])
           | map('regex_replace', '^', 'iris_') | list }}
         reg_filter: "^iris_.+_{{ inventory_hostname }}$"
 
-    - name: Display the instances to be deleted
+    - name: Display the instances to be torn down
       debug:
-        msg: "{{ instances_to_be_deleted }}"
+        msg: "The following instances need to be deleted: {{ instances_to_be_deleted }}"
 
-    - name: Check if there is at most one item
-      assert:
-        that: instances_to_be_deleted | length < 2
-        fail_msg: >-
-          To avoid accidentally deleting all instances due to a code error,
-          only one instance can be torn down at a time.
+    - name: Tear down the instances
+      include_role:
+        name: container_runner
+        tasks_from: rm_container.yml
+      vars:
+        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+      loop: "{{ instances_to_be_deleted }}"
+      loop_control:
+        loop_var: name
+      when:
+        - instance_teardown_allowed | default(false)
+        - instances_to_be_deleted | length > 0
 
-    - name: Tear down the instance
-      when: instances_to_be_deleted | length == 1
-      block:
-        - name: "Tear down the instance {{ instances_to_be_deleted | first }}"
-          include_role:
-            name: container_runner
-            tasks_from: rm_container.yml
-          vars:
-            name: "{{ instances_to_be_deleted | first }}"
-            virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-
-        - name: Remove instance folder
-          file:
-            state: absent
-            path: "/mnt/data1/containers/{{ instances_to_be_deleted | first }}"
-          become: yes
+    - name: Remove the instance folder
+      file:
+        state: absent
+        path: "/mnt/data1/containers/{{ item }}"
+      become: yes
+      loop: "{{ instances_to_be_deleted }}"
+      when:
+        - instance_teardown_allowed | default(false)
+        - instances_to_be_deleted | length > 0
