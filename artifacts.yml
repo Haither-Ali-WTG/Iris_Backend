@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20240926.4
-  # Thu Sep 26 08:08:14 UTC 2024 -- Thu Sep 26 18:08:14 AEST 2024
+  # Dante Build Artifact 20241002.3
+  # Wed Oct  2 02:46:09 UTC 2024 -- Wed Oct  2 12:46:09 AEST 2024
   #
-  # Merge pull request 28278 from dante_artifact_upgrade into master
-  # 464a222e10dfa589c4e562bb3a8353366af56df6
-  dante_build_id: '1107056'
+  # Merged PR 28401: remove the json part as the script has been updated.
+  # 25a0f27e3c4a241eb6e9e225506d9722870acd3d
+  dante_build_id: '1113404'
 
-  # virgil 20240926.10
-  # Thu Sep 26 06:59:49 UTC 2024 -- Thu Sep 26 16:59:49 AEST 2024
+  # virgil 20241002.2
+  # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
   #
-  # Merged PR 28267: Use the consecutive IP for IRIS sand
-  # 0ffcc7a144e8874edb11968bd5bf3f21c0fc1216
-  virgil_build_id: '1106983'
+  # Merged PR 28383: updateAU2Apex13MediaAgentPortInfo
+  # c56e7bf483c462a70a2da4f7a77b1f94813bd281
+  virgil_build_id: '1113191'
