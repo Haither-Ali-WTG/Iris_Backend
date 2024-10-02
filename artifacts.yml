@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241002.4
-  # Wed Oct  2 03:23:35 UTC 2024 -- Wed Oct  2 13:23:35 AEST 2024
+  # Dante Build Artifact 20241003.1
+  # Wed Oct  2 23:30:10 UTC 2024 -- Thu Oct  3 09:30:10 AEST 2024
   #
-  # Merged PR 28358: Dante - Put in retry due to apt lock delay
-  # ede5da7ee0f500b6fd93731df20e8148798dcd64
-  dante_build_id: '1113460'
+  # Merge pull request 28437 from automatic_ptmctl_image_upgrade into master
+  # f3c5fab32266ebb8efed5b43f19fd95216f111fc
+  dante_build_id: '1114446'
 
   # virgil 20241002.2
   # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
