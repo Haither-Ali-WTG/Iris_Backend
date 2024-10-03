@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241003.7
-  # Thu Oct  3 04:03:29 UTC 2024 -- Thu Oct  3 14:03:29 AEST 2024
+  # Dante Build Artifact 20241003.8
+  # Thu Oct  3 04:35:17 UTC 2024 -- Thu Oct  3 14:35:17 AEST 2024
   #
-  # Merge pull request 28431 from automatic_squid_image_upgrade into master
-  # 08eb86fb41f9d8b6efd41cea77e33d3fb66ea205
-  dante_build_id: '1114791'
+  # Merge pull request 28430 from automatic_nginx_image_upgrade into master
+  # a5466ca619da1170bac0b2768a50a4db481a2b87
+  dante_build_id: '1114834'
 
   # virgil 20241002.2
   # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
