@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241003.8
-  # Thu Oct  3 04:35:17 UTC 2024 -- Thu Oct  3 14:35:17 AEST 2024
+  # Dante Build Artifact 20241004.1
+  # Thu Oct  3 23:40:39 UTC 2024 -- Fri Oct  4 09:40:39 AEST 2024
   #
-  # Merge pull request 28430 from automatic_nginx_image_upgrade into master
-  # a5466ca619da1170bac0b2768a50a4db481a2b87
-  dante_build_id: '1114834'
+  # Merged PR 28484: Corrected bond name for RHEL9
+  # ceb37a5c48c170a78247d375fd9ad526a6ea51f1
+  dante_build_id: '1115676'
 
   # virgil 20241002.2
   # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
