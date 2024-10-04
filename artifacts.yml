@@ -7,9 +7,9 @@ variables:
   # 7dfede7e84ffaeb845255183a84f91fd9d3a164c
   dante_build_id: '1115747'
 
-  # virgil 20241002.2
-  # Tue Oct  1 23:37:00 UTC 2024 -- Wed Oct  2 09:37:00 AEST 2024
+  # virgil 20241004.2
+  # Fri Oct  4 02:55:18 UTC 2024 -- Fri Oct  4 12:55:18 AEST 2024
   #
-  # Merged PR 28383: updateAU2Apex13MediaAgentPortInfo
-  # c56e7bf483c462a70a2da4f7a77b1f94813bd281
-  virgil_build_id: '1113191'
+  # Merged PR 28498: With the dot.
+  # f54788ed5dc42a0a099b45a1b5aab94d9c8f7853
+  virgil_build_id: '1115885'
