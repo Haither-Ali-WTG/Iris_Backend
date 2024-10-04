@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241004.2
-  # Fri Oct  4 00:40:26 UTC 2024 -- Fri Oct  4 10:40:26 AEST 2024
+  # Dante Build Artifact 20241004.3
+  # Fri Oct  4 03:47:14 UTC 2024 -- Fri Oct  4 13:47:14 AEST 2024
   #
-  # Merged PR 28427: Fix rc lock bug
-  # 7dfede7e84ffaeb845255183a84f91fd9d3a164c
-  dante_build_id: '1115747'
+  # Merge pull request 28505 from dante_artifact_upgrade into master
+  # f8e70ae5bf3954c0d1cc287c5cc2a0ba64a266ed
+  dante_build_id: '1115943'
 
   # virgil 20241004.2
   # Fri Oct  4 02:55:18 UTC 2024 -- Fri Oct  4 12:55:18 AEST 2024
