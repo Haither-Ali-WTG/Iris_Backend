@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20241004.3
-  # Fri Oct  4 03:47:14 UTC 2024 -- Fri Oct  4 13:47:14 AEST 2024
+  # Dante Build Artifact 20241009.2
+  # Tue Oct  8 23:20:58 UTC 2024 -- Wed Oct  9 10:20:58 AEDT 2024
   #
-  # Merge pull request 28505 from dante_artifact_upgrade into master
-  # f8e70ae5bf3954c0d1cc287c5cc2a0ba64a266ed
-  dante_build_id: '1115943'
+  # Merge pull request 28436 from automatic_dante_agent_image_upgrade into master
+  # 3c2b9896a7d9cd06a0a501f03f7c999f3ffa97dd
+  dante_build_id: '1121058'
 
-  # virgil 20241004.2
-  # Fri Oct  4 02:55:18 UTC 2024 -- Fri Oct  4 12:55:18 AEST 2024
+  # virgil 20241009.8
+  # Tue Oct  8 22:57:12 UTC 2024 -- Wed Oct  9 09:57:12 AEDT 2024
   #
-  # Merged PR 28498: With the dot.
-  # f54788ed5dc42a0a099b45a1b5aab94d9c8f7853
-  virgil_build_id: '1115885'
+  # Merged PR 28532: Prepare cabinets 102 and 103 for new hardware
+  # 79b8c955dac8ba5abdd5783b9f6f94cd0cf2b32e
+  virgil_build_id: '1121008'
