@@ -110,6 +110,7 @@ stages:
                           -e="pure_usernames='${{ run.pure_usernames }}'"
                           -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
                           -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
+                          -e "{use_cache: $(cms_use_cache)}"
                           -e="target_dc=${{ run.agent_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)

@@ -141,6 +141,7 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="intermediate=false" -e="s3_host=$(s3_host)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e "{use_cache: $(cms_use_cache)}"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
