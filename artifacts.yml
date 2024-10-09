@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20241009.2
-  # Tue Oct  8 23:20:58 UTC 2024 -- Wed Oct  9 10:20:58 AEDT 2024
+  # Dante Build Artifact 20241009.4
+  # Wed Oct  9 01:14:32 UTC 2024 -- Wed Oct  9 12:14:32 AEDT 2024
   #
-  # Merge pull request 28436 from automatic_dante_agent_image_upgrade into master
-  # 3c2b9896a7d9cd06a0a501f03f7c999f3ffa97dd
-  dante_build_id: '1121058'
+  # Merged PR 28562: Pause between hold tasks for dpkg
+  # 01dc4147cbc72ca4f0b237ef7a54958fb58ef510
+  dante_build_id: '1121241'
 
-  # virgil 20241009.8
-  # Tue Oct  8 22:57:12 UTC 2024 -- Wed Oct  9 09:57:12 AEDT 2024
+  # virgil 20241009.14
+  # Wed Oct  9 00:43:29 UTC 2024 -- Wed Oct  9 11:43:29 AEDT 2024
   #
-  # Merged PR 28532: Prepare cabinets 102 and 103 for new hardware
-  # 79b8c955dac8ba5abdd5783b9f6f94cd0cf2b32e
-  virgil_build_id: '1121008'
+  # Merged PR 28590: Kafka - 2 queues for TP Portal
+  # 2f3d4d927594bb893ad8932aa0a1279afbbb85b8
+  virgil_build_id: '1121198'
