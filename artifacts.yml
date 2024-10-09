@@ -7,9 +7,9 @@ variables:
   # f70d6279e18947a78102fff75b8bfc7965c0bc72
   dante_build_id: '1121317'
 
-  # virgil 20241009.14
-  # Wed Oct  9 00:43:29 UTC 2024 -- Wed Oct  9 11:43:29 AEDT 2024
+  # virgil 20241009.16
+  # Wed Oct  9 03:07:32 UTC 2024 -- Wed Oct  9 14:07:32 AEDT 2024
   #
-  # Merged PR 28590: Kafka - 2 queues for TP Portal
-  # 2f3d4d927594bb893ad8932aa0a1279afbbb85b8
-  virgil_build_id: '1121198'
+  # Merged PR 28592: WI00800262 - Remove AD domain server references from Virgil
+  # a94f87f0d4354eb51011de6c496d44dd1a113ad6
+  virgil_build_id: '1121405'
