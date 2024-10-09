@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241009.4
-  # Wed Oct  9 01:14:32 UTC 2024 -- Wed Oct  9 12:14:32 AEDT 2024
+  # Dante Build Artifact 20241009.5
+  # Wed Oct  9 02:07:35 UTC 2024 -- Wed Oct  9 13:07:35 AEDT 2024
   #
-  # Merged PR 28562: Pause between hold tasks for dpkg
-  # 01dc4147cbc72ca4f0b237ef7a54958fb58ef510
-  dante_build_id: '1121241'
+  # Merge pull request 28593 from dante_artifact_upgrade into master
+  # f70d6279e18947a78102fff75b8bfc7965c0bc72
+  dante_build_id: '1121317'
 
   # virgil 20241009.14
   # Wed Oct  9 00:43:29 UTC 2024 -- Wed Oct  9 11:43:29 AEDT 2024
