@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241010.1
-  # Thu Oct 10 05:59:14 UTC 2024 -- Thu Oct 10 16:59:14 AEDT 2024
+  # Dante Build Artifact 20241011.1
+  # Thu Oct 10 23:53:46 UTC 2024 -- Fri Oct 11 10:53:46 AEDT 2024
   #
-  # Merged PR 28637: Ubuntu 24.04 tpm support via systemd-cryptenroll
-  # e9b60643c75d8b39aad02a45665d53bfdf07fed0
-  dante_build_id: '1122841'
+  # Merge pull request 28657 from dante_artifact_upgrade into master
+  # a8d29e6383c63a0eaa2d0400b85cbb0a11c87beb
+  dante_build_id: '1123758'
 
   # virgil 20241011.2
   # Thu Oct 10 22:59:39 UTC 2024 -- Fri Oct 11 09:59:39 AEDT 2024
