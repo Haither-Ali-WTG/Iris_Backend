@@ -7,9 +7,9 @@ variables:
   # fbaba32638f1c36b6d400926a98dd58f805c2f9d
   dante_build_id: '1127216'
 
-  # virgil 20241015.4
-  # Mon Oct 14 22:25:47 UTC 2024 -- Tue Oct 15 09:25:47 AEDT 2024
+  # virgil 20241015.13
+  # Mon Oct 14 22:56:06 UTC 2024 -- Tue Oct 15 09:56:06 AEDT 2024
   #
-  # Merged PR 28720: US2AddNetworkForEnvaseSecurSpace
-  # 3ddd59e151b66959e265ecfa2d1941ca0b7969be
-  virgil_build_id: '1128046'
+  # Merged PR 28708: Add internal ingress and ssl entries for au2prod1
+  # 97d4733cee677f0cbf8d18df27f4897cc0b1b9da
+  virgil_build_id: '1128090'
