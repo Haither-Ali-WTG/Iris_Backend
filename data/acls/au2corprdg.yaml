@@ -9,17 +9,19 @@ star_wtg_zone:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wtg\.zone$
 
-sand_rdg_endpoints:
-  description: SAND RDG endpoints
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^((sandtsg|sandtsg-token-based)\.)wtg\.zone$
-
-rdg_http_path:
-  description: HTTP rdg path /rdweb
-  tests:
-    - path_beg -i /rdweb
-
 rdg_rpc_path:
   description: RPC rdg path /rpc
   tests:
     - path_beg -i /rpc
+
+corp_rdg_password_host:
+  description: hostnames used by password CORP rdg endpoints (ediprod)
+  tests:
+    - hdr(host) -i rdg.wtg.zone
+    - hdr(host) -i rdg-au2.wtg.zone
+
+corp_rdg_token_host:
+  description: hostnames used by token auth CORP rdg endpoints (ediprod)
+  tests:
+    - hdr(host) -i rdg-token.wtg.zone
+    - hdr(host) -i rdg-token.wisetechglobal.cn
