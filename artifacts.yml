@@ -7,9 +7,9 @@ variables:
   # fbaba32638f1c36b6d400926a98dd58f805c2f9d
   dante_build_id: '1127216'
 
-  # virgil 20241014.8
-  # Mon Oct 14 03:26:53 UTC 2024 -- Mon Oct 14 14:26:53 AEDT 2024
+  # virgil 20241015.4
+  # Mon Oct 14 22:25:47 UTC 2024 -- Tue Oct 15 09:25:47 AEDT 2024
   #
-  # Merged PR 28696: WI00800262 - Remove AD Data in virgil
-  # a2a2843335a09ea82df88278bfbbd28731dfb22f
-  virgil_build_id: '1127145'
+  # Merged PR 28720: US2AddNetworkForEnvaseSecurSpace
+  # 3ddd59e151b66959e265ecfa2d1941ca0b7969be
+  virgil_build_id: '1128046'
