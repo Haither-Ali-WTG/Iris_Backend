@@ -13,3 +13,35 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+
+sand_rdg_rpc_password:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends in case theres
+    an RPC bug that breaks RDGs for 3 months for RPC users
+  order: 90
+  actions:
+    - use_backend sand-password-rdg-rpc if rdg_rpc_path sand_rdg_password_host
+
+sand_rdg_http_password:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends in case theres
+    an RPC bug that breaks RDGs for 3 months for RPC users
+  order: 90
+  actions:
+    - use_backend sand-password-rdg-http if !rdg_rpc_path sand_rdg_password_host
+
+sand_rdg_rpc_token:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends in case theres
+    an RPC bug that breaks RDGs for 3 months for RPC users
+  order: 90
+  actions:
+    - use_backend sand-token-rdg-rpc if rdg_rpc_path sand_rdg_token_host
+
+sand_rdg_http_token:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends in case theres
+    an RPC bug that breaks RDGs for 3 months for RPC users
+  order: 90
+  actions:
+    - use_backend sand-token-rdg-http if !rdg_rpc_path sand_rdg_token_host

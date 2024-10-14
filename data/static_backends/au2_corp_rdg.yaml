@@ -1,5 +1,5 @@
 ---
-corp-ntlm-rdg:
+corp-password-rdg:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
