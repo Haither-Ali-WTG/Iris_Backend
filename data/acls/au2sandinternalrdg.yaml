@@ -17,4 +17,4 @@ sand_rdg_password_host:
 sand_rdg_token_host:
   description: hostnames used by token auth SAND rdg endpoints (WCA SAND)
   tests:
-    - hdr(host) -i sandtsg-token.wtg.zone
+    - hdr(host) -i sandtsg-token-based.wtg.zone
