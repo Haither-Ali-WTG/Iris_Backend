@@ -7,9 +7,9 @@ variables:
   # a8d29e6383c63a0eaa2d0400b85cbb0a11c87beb
   dante_build_id: '1123758'
 
-  # virgil 20241011.2
-  # Thu Oct 10 22:59:39 UTC 2024 -- Fri Oct 11 09:59:39 AEDT 2024
+  # virgil 20241014.6
+  # Sun Oct 13 23:54:28 UTC 2024 -- Mon Oct 14 10:54:28 AEDT 2024
   #
-  # Merged PR 28649: Updated mellanox driver for Ubuntu 24.04
-  # 5e5504cf4a50bf59c236f4e051c4e3ac8fbefe01
-  virgil_build_id: '1123693'
+  # Merged PR 28686: WI00800262 - Remove the only one adforest field in the compute_au2.yaml file.
+  # 11a3861ad7bf52686a1094397e1ee97e9bd37b74
+  virgil_build_id: '1126905'
