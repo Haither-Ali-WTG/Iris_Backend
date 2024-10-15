@@ -40,11 +40,14 @@ sand-token-rdg:
     name: RDPWEB
   fullconn: 1000
   servers:
-    - name: au2sp-srdg-401
-      ip: 10.2.68.23
+    - name: au2sp-srdg-406
+      ip: 10.2.123.18
       port: 80
-    - name: au2sp-srdg-402
-      ip: 10.2.68.24
+    - name: au2sp-srdg-407
+      ip: 10.2.123.19
+      port: 80
+    - name: au2sp-srdg-408
+      ip: 10.2.123.20
       port: 80
 
 sand-token-rdg-rpc:
@@ -56,9 +59,6 @@ sand-token-rdg-rpc:
     name: RDPWEB
   fullconn: 1000
   servers:
-    - name: au2sp-srdg-401
-      ip: 10.2.68.23
-      port: 80
-    - name: au2sp-srdg-402
-      ip: 10.2.68.24
+    - name: au2sp-srdg-405
+      ip: 10.2.123.17
       port: 80

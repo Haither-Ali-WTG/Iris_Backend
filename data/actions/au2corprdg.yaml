@@ -15,18 +15,34 @@ https_redirect:
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
 
-corp_rdg_rpc_password:
+corp_password_rdg_rpc:
   description: |-
-    RPC RDG connections need to be funneled to separate backends in case theres
-    an RPC bug that breaks RDGs for 3 months for RPC users
+    RPC RDG connections need to be funneled to separate backends, this will 
+    direct RPC RDG connections to the corp password rdg RPC backend
   order: 90
   actions:
     - use_backend corp-password-rdg-rpc if rdg_rpc_path corp_rdg_password_host
 
-corp_rdg_http_password:
+corp_password_rdg_http:
   description: |-
-    RPC RDG connections need to be funneled to separate backends in case theres
-    an RPC bug that breaks RDGs for 3 months for RPC users
-  order: 90
+    RPC RDG connections need to be funneled to separate backends, this will 
+    direct HTTP RDG connections to the corp password rdg http backend
+  order: 91
   actions:
     - use_backend corp-password-rdg-http if !rdg_rpc_path corp_rdg_password_host
+
+corp_token_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will 
+    direct RPC RDG connections to the corp token rdg http backend
+  order: 92
+  actions:
+    - use_backend corp-token-rdg-rpc if rdg_rpc_path corp_rdg_token_host
+
+corp_token_rdg_http:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will 
+    direct HTTP RDG connections to the corp token rdg http backend
+  order: 93
+  actions:
+    - use_backend corp-token-rdg-http if !rdg_rpc_path corp_rdg_token_host
