@@ -1,15 +1,15 @@
 ---
 variables:
-  # Dante Build Artifact 20241014.2
-  # Mon Oct 14 04:29:54 UTC 2024 -- Mon Oct 14 15:29:54 AEDT 2024
+  # Dante Build Artifact 20241015.1
+  # Mon Oct 14 23:28:15 UTC 2024 -- Tue Oct 15 10:28:15 AEDT 2024
   #
-  # Merge pull request 28716 from dante_artifact_upgrade into master
-  # fbaba32638f1c36b6d400926a98dd58f805c2f9d
-  dante_build_id: '1127216'
+  # Merge pull request 28741 from dante_python_upgrade into master
+  # e51832e2d3f9f0fc6fd10579195d33e815f2c7b4
+  dante_build_id: '1128127'
 
-  # virgil 20241015.13
-  # Mon Oct 14 22:56:06 UTC 2024 -- Tue Oct 15 09:56:06 AEDT 2024
+  # virgil 20241015.16
+  # Mon Oct 14 23:58:34 UTC 2024 -- Tue Oct 15 10:58:34 AEDT 2024
   #
-  # Merged PR 28708: Add internal ingress and ssl entries for au2prod1
-  # 97d4733cee677f0cbf8d18df27f4897cc0b1b9da
-  virgil_build_id: '1128090'
+  # Merged PR 28758: Added all simulation nodes to virgil
+  # 2e37d1eae595a6058371df1b49a4735191fb5fa9
+  virgil_build_id: '1128169'
