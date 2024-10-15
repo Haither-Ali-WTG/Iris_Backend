@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241015.3
-  # Tue Oct 15 02:30:06 UTC 2024 -- Tue Oct 15 13:30:06 AEDT 2024
+  # Dante Build Artifact 20241015.4
+  # Tue Oct 15 05:43:52 UTC 2024 -- Tue Oct 15 16:43:52 AEDT 2024
   #
-  # Merged PR 28767: Update for kvm_server role for Ubuntu 24.04
-  # 80d3b09705ae550a72db9efabb931bfdf2ad8063
-  dante_build_id: '1128364'
+  # Merged PR 28784: Ubuntu 24.04: Removed attempt to double unlock encrypted partition
+  # 8caa913b6628e66065b63ec668c9df0cdf7d9e6b
+  dante_build_id: '1128564'
 
   # virgil 20241015.16
   # Mon Oct 14 23:58:34 UTC 2024 -- Tue Oct 15 10:58:34 AEDT 2024
