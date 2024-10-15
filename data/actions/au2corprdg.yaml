@@ -17,7 +17,7 @@ https_redirect:
 
 corp_password_rdg_rpc:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct RPC RDG connections to the corp password rdg RPC backend
   order: 90
   actions:
@@ -25,7 +25,7 @@ corp_password_rdg_rpc:
 
 corp_password_rdg_http:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct HTTP RDG connections to the corp password rdg http backend
   order: 91
   actions:
@@ -33,7 +33,7 @@ corp_password_rdg_http:
 
 corp_token_rdg_rpc:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct RPC RDG connections to the corp token rdg http backend
   order: 92
   actions:
@@ -41,7 +41,7 @@ corp_token_rdg_rpc:
 
 corp_token_rdg_http:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct HTTP RDG connections to the corp token rdg http backend
   order: 93
   actions:

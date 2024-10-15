@@ -16,7 +16,7 @@ https_redirect:
 
 sand_password_rdg_rpc:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct RPC RDG connections to the sand password rdg RPC backend
   order: 90
   actions:
@@ -24,7 +24,7 @@ sand_password_rdg_rpc:
 
 sand_password_rdg_http:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct HTTP RDG connections to the sand password rdg http backend
   order: 91
   actions:
@@ -32,7 +32,7 @@ sand_password_rdg_http:
 
 sand_token_rdg_rpc:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct RPC RDG connections to the sand token rdg http backend
   order: 92
   actions:
@@ -40,7 +40,7 @@ sand_token_rdg_rpc:
 
 sand_token_rdg_http:
   description: |-
-    RPC RDG connections need to be funneled to separate backends, this will 
+    RPC RDG connections need to be funneled to separate backends, this will
     direct HTTP RDG connections to the sand token rdg http backend
   order: 93
   actions:
