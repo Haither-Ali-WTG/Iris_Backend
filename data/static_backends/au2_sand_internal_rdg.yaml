@@ -1,5 +1,5 @@
 ---
-sand-password-rdg:
+sand-password-rdg-http:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
@@ -27,11 +27,8 @@ sand-password-rdg-rpc:
     - name: sydsp-srdg-3
       ip: 10.2.68.15
       port: 80
-    - name: sydsp-srdg-4
-      ip: 10.2.68.16
-      port: 80
 
-sand-token-rdg:
+sand-token-rdg-http:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
