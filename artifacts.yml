@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241015.2
-  # Tue Oct 15 01:07:38 UTC 2024 -- Tue Oct 15 12:07:38 AEDT 2024
+  # Dante Build Artifact 20241015.3
+  # Tue Oct 15 02:30:06 UTC 2024 -- Tue Oct 15 13:30:06 AEDT 2024
   #
-  # Merge pull request 28750 from dante_artifact_upgrade into master
-  # e6cd361576c8a4c0fac5b77396dbc76934f4e28e
-  dante_build_id: '1128275'
+  # Merged PR 28767: Update for kvm_server role for Ubuntu 24.04
+  # 80d3b09705ae550a72db9efabb931bfdf2ad8063
+  dante_build_id: '1128364'
 
   # virgil 20241015.16
   # Mon Oct 14 23:58:34 UTC 2024 -- Tue Oct 15 10:58:34 AEDT 2024
