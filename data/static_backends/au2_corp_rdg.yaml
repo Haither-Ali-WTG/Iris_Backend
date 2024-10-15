@@ -25,7 +25,7 @@ corp-token-rdg:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /wtg/ready
+    http_path: /
   cookie:
     name: RDPWEB
   servers:
