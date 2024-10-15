@@ -13,3 +13,35 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+
+sand_password_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct RPC RDG connections to the sand password rdg RPC backend
+  order: 90
+  actions:
+    - use_backend sand-password-rdg-rpc if rdg_rpc_path sand_rdg_password_host
+
+sand_password_rdg_http:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct HTTP RDG connections to the sand password rdg http backend
+  order: 91
+  actions:
+    - use_backend sand-password-rdg-http if !rdg_rpc_path sand_rdg_password_host
+
+sand_token_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct RPC RDG connections to the sand token rdg http backend
+  order: 92
+  actions:
+    - use_backend sand-token-rdg-rpc if rdg_rpc_path sand_rdg_token_host
+
+sand_token_rdg_http:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct HTTP RDG connections to the sand token rdg http backend
+  order: 93
+  actions:
+    - use_backend sand-token-rdg-http if !rdg_rpc_path sand_rdg_token_host

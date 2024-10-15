@@ -3,3 +3,18 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wtg\.zone$
+
+rdg_rpc_path:
+  description: RPC rdg path /rpc
+  tests:
+    - path_beg -i /rpc
+
+sand_rdg_password_host:
+  description: hostnames used by password SAND rdg endpoints (WCA SAND)
+  tests:
+    - hdr(host) -i sandtsg.wtg.zone
+
+sand_rdg_token_host:
+  description: hostnames used by token auth SAND rdg endpoints (WCA SAND)
+  tests:
+    - hdr(host) -i sandtsg-token-based.wtg.zone

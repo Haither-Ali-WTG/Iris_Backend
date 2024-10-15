@@ -2,24 +2,28 @@
 star_wisetechglobal_com:
   description: "*.wisetechglobal.com"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
 
 star_wtg_zone:
   description: "*.wtg.zone"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wtg\.zone$
 
-sand_rdg_endpoints:
-  description: SAND RDG endpoints
+rdg_rpc_path:
+  description: RPC rdg path /rpc
   tests:
-    - hdr(host) -m reg -i ^((sandtsg|sandtsg-token-based)\.)wtg\.zone$
+    - path_beg -i /rpc
 
-remote_desktop_rdweb_path:
-  description: Legacy RDP path /rdweb
+corp_rdg_password_host:
+  description: hostnames used by password CORP rdg endpoints (ediprod)
   tests:
-    - path_reg -i ^\/rdweb(.*?)$
+    - hdr(host) -i rdg.wisetechglobal.cn
+    - hdr(host) -i rdg-au2.wisetechglobal.cn
+    - hdr(host) -i rdg.wisetechglobal.com
+    - hdr(host) -i rdg-au2.wisetechglobal.com
 
-remote_desktop_rdg_legacy_path:
-  description: Legacy RDP path /rpc
+corp_rdg_token_host:
+  description: hostnames used by token auth CORP rdg endpoints (ediprod)
   tests:
-    - path_reg -i ^\/rpc(.*?)$
+    - hdr(host) -i rdg-au2-token.wisetechglobal.com
+    - hdr(host) -i rdg-au2-token.wisetechglobal.cn
