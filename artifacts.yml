@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241015.4
-  # Tue Oct 15 05:43:52 UTC 2024 -- Tue Oct 15 16:43:52 AEDT 2024
+  # Dante Build Artifact 20241016.1
+  # Wed Oct 16 03:10:37 UTC 2024 -- Wed Oct 16 14:10:37 AEDT 2024
   #
-  # Merged PR 28784: Ubuntu 24.04: Removed attempt to double unlock encrypted partition
-  # 8caa913b6628e66065b63ec668c9df0cdf7d9e6b
-  dante_build_id: '1128564'
+  # Merged PR 28808: Fixes for simulation nodes automation after dante run
+  # 8c47eb1abd19ed96d0059acedd92c15bae4f10b4
+  dante_build_id: '1129613'
 
   # virgil 20241015.16
   # Mon Oct 14 23:58:34 UTC 2024 -- Tue Oct 15 10:58:34 AEDT 2024
