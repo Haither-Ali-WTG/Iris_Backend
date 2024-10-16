@@ -7,9 +7,9 @@ variables:
   # 8c47eb1abd19ed96d0059acedd92c15bae4f10b4
   dante_build_id: '1129613'
 
-  # virgil 20241015.16
-  # Mon Oct 14 23:58:34 UTC 2024 -- Tue Oct 15 10:58:34 AEDT 2024
+  # virgil 20241017.6
+  # Wed Oct 16 23:10:14 UTC 2024 -- Thu Oct 17 10:10:14 AEDT 2024
   #
-  # Merged PR 28758: Added all simulation nodes to virgil
-  # 2e37d1eae595a6058371df1b49a4735191fb5fa9
-  virgil_build_id: '1128169'
+  # Merged PR 28826: simulation8712 mac address corrected
+  # defdf70333ece7a6a260e7a392e120498299540b
+  virgil_build_id: '1130535'
