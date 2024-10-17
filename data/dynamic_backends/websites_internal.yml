@@ -41,3 +41,26 @@
     enabled: true
     name: 'CW1'
   name_suffix: ''
+
+- name_regex: '^www-.*\.cargowise\.com$'
+  server_regex: '^au2sp'
+  encryption: false
+  http_health_check:
+    enabled: false
+  port: 80
+  balance: first
+  cookie:
+    enabled: true
+    name: 'CW1'
+  name_suffix: ''
+
+- name_regex: '^svc-.*\.cargowise\.com$'
+  server_regex: '^au2sp'
+  encryption: true
+  http_health_check:
+    enabled: false
+  port: 443
+  cookie:
+    enabled: true
+    name: 'CW1'
+  name_suffix: ''
