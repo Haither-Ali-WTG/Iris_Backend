@@ -27,6 +27,19 @@ virgil_build=$(
 )
 virgil_build_date=$(<<< "$virgil_build" jq -r '.queueTime')
 
+sqlbilling_build=$(
+    az pipelines build list \
+        --organization https://dev.azure.com/WTGOps \
+        --project ISOperations \
+        --definition-ids 239 \
+        --reason individualCI \
+        --status completed \
+        --result succeeded \
+        --top 1 \
+    | yq '.[0]'
+)
+sqlbilling_build_date=$(<<< "$sqlbilling_build" jq -r '.queueTime')
+
 (
     echo ---
     echo variables:
@@ -47,4 +60,13 @@ virgil_build_date=$(<<< "$virgil_build" jq -r '.queueTime')
     echo "  # $(<<< "$virgil_build" jq -r '.triggerInfo."ci.message"')"
     echo "  # $(<<< "$virgil_build" jq -r '.triggerInfo."ci.sourceSha"')"
     echo "  virgil_build_id: '$(<<< "$virgil_build" jq -r '.id')'"
+    echo
+    echo "  # $(<<< "$sqlbilling_build" jq -r '.definition.name')" \
+               "$(<<< "$sqlbilling_build" jq -r '.buildNumber')"
+    echo "  # $(date --date="$sqlbilling_build_date" --utc) --" \
+               "$(TZ=Australia/Sydney date --date="$sqlbilling_build_date")"
+    echo "  #"
+    echo "  # $(<<< "$sqlbilling_build" jq -r '.triggerInfo."ci.message"')"
+    echo "  # $(<<< "$sqlbilling_build" jq -r '.triggerInfo."ci.sourceSha"')"
+    echo "  sqlbilling_build_id: '$(<<< "$sqlbilling_build" jq -r '.id')'"
 ) | tee artifacts.yml
