@@ -7,9 +7,16 @@ variables:
   # 9c92fd9f580e503234a357dcfafab40df2c69895
   dante_build_id: '1131659'
 
-  # virgil 20241018.1
-  # Thu Oct 17 19:48:13 UTC 2024 -- Fri Oct 18 06:48:13 AEDT 2024
+  # virgil 20241018.4
+  # Thu Oct 17 22:25:41 UTC 2024 -- Fri Oct 18 09:25:41 AEDT 2024
   #
-  # Merged PR 28825: Add new C56 hypervisors for US2
-  # 82dd069e72a3508d05d0fbccdaae0629bd0b1059
-  virgil_build_id: '1131592'
+  # Merged PR 28874: Corrections to US2 network and compute
+  # c5746d575b2883f6ca5e2bcd5a367f631bdae373
+  virgil_build_id: '1131751'
+
+  # sqlbilling 20241017.2
+  # Thu Oct 17 01:42:18 UTC 2024 -- Thu Oct 17 12:42:18 AEDT 2024
+  #
+  # Merged PR 28843: RTL-Readonly Teardown (BA3) - PRJ00049194
+  # 52c368f44a5f8908a2e77ba1033162ea1041e77d
+  sqlbilling_build_id: '1130739'
