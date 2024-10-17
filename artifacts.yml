@@ -7,9 +7,9 @@ variables:
   # 92ce148697758e4a9c23a4ffce7c61f0f23507a2
   dante_build_id: '1130619'
 
-  # virgil 20241017.6
-  # Wed Oct 16 23:10:14 UTC 2024 -- Thu Oct 17 10:10:14 AEDT 2024
+  # virgil 20241017.18
+  # Thu Oct 17 03:56:24 UTC 2024 -- Thu Oct 17 14:56:24 AEDT 2024
   #
-  # Merged PR 28826: simulation8712 mac address corrected
-  # defdf70333ece7a6a260e7a392e120498299540b
-  virgil_build_id: '1130535'
+  # Merged PR 28844: Re-implement the logic for test_max_vteps
+  # 585953d8899fb70439ab033889754a24b1bea35a
+  virgil_build_id: '1130856'
