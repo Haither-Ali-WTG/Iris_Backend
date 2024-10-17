@@ -7,9 +7,9 @@ variables:
   # 0d0c1dabe57ec262f8a8cbfed34bf19aa818e412
   dante_build_id: '1130925'
 
-  # virgil 20241017.18
-  # Thu Oct 17 03:56:24 UTC 2024 -- Thu Oct 17 14:56:24 AEDT 2024
+  # virgil 20241018.1
+  # Thu Oct 17 19:48:13 UTC 2024 -- Fri Oct 18 06:48:13 AEDT 2024
   #
-  # Merged PR 28844: Re-implement the logic for test_max_vteps
-  # 585953d8899fb70439ab033889754a24b1bea35a
-  virgil_build_id: '1130856'
+  # Merged PR 28825: Add new C56 hypervisors for US2
+  # 82dd069e72a3508d05d0fbccdaae0629bd0b1059
+  virgil_build_id: '1131592'
