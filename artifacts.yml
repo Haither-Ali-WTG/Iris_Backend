@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241016.1
-  # Wed Oct 16 03:10:37 UTC 2024 -- Wed Oct 16 14:10:37 AEDT 2024
+  # Dante Build Artifact 20241017.1
+  # Thu Oct 17 00:07:58 UTC 2024 -- Thu Oct 17 11:07:58 AEDT 2024
   #
-  # Merged PR 28808: Fixes for simulation nodes automation after dante run
-  # 8c47eb1abd19ed96d0059acedd92c15bae4f10b4
-  dante_build_id: '1129613'
+  # Merge pull request 28835 from dante_artifact_upgrade into master
+  # 92ce148697758e4a9c23a4ffce7c61f0f23507a2
+  dante_build_id: '1130619'
 
   # virgil 20241017.6
   # Wed Oct 16 23:10:14 UTC 2024 -- Thu Oct 17 10:10:14 AEDT 2024
