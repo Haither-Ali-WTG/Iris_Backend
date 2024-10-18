@@ -7,12 +7,12 @@ variables:
   # 23e028929b4a2a3c04d91f9496efe76506ee0d65
   dante_build_id: '1131820'
 
-  # virgil 20241018.4
-  # Thu Oct 17 22:25:41 UTC 2024 -- Fri Oct 18 09:25:41 AEDT 2024
+  # virgil 20241018.6
+  # Fri Oct 18 01:26:52 UTC 2024 -- Fri Oct 18 12:26:52 AEDT 2024
   #
-  # Merged PR 28874: Corrections to US2 network and compute
-  # c5746d575b2883f6ca5e2bcd5a367f631bdae373
-  virgil_build_id: '1131751'
+  # Merged PR 28894: Add a readonly user for CS01764578
+  # 36519e9f07f80c845f31daa0a67b4a1a04d8f4ee
+  virgil_build_id: '1131945'
 
   # sqlbilling 20241017.2
   # Thu Oct 17 01:42:18 UTC 2024 -- Thu Oct 17 12:42:18 AEDT 2024
