@@ -7,12 +7,12 @@ variables:
   # a8c8aba020e19fc9f7ba83f7d0685fe1834b7717
   dante_build_id: '1132013'
 
-  # virgil 20241018.6
-  # Fri Oct 18 01:26:52 UTC 2024 -- Fri Oct 18 12:26:52 AEDT 2024
+  # virgil 20241021.1
+  # Sun Oct 20 22:21:39 UTC 2024 -- Mon Oct 21 09:21:39 AEDT 2024
   #
-  # Merged PR 28894: Add a readonly user for CS01764578
-  # 36519e9f07f80c845f31daa0a67b4a1a04d8f4ee
-  virgil_build_id: '1131945'
+  # Merged PR 28865: DE1 Move MediaAgents from rack 203 to 103
+  # 7c069330a67f11a8dadc83920edc6a5326948b0a
+  virgil_build_id: '1134805'
 
   # sqlbilling 20241017.2
   # Thu Oct 17 01:42:18 UTC 2024 -- Thu Oct 17 12:42:18 AEDT 2024
