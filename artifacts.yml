@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241021.3
-  # Mon Oct 21 03:18:42 UTC 2024 -- Mon Oct 21 14:18:42 AEDT 2024
+  # Dante Build Artifact 20241021.4
+  # Mon Oct 21 03:57:44 UTC 2024 -- Mon Oct 21 14:57:44 AEDT 2024
   #
-  # Merged PR 28936: Enabled simulation8711 in simulations agent pool
-  # b58529fe55763c2d728caa5c8738d18c013f1e3a
-  dante_build_id: '1135151'
+  # Merged PR 28927: Supported TPM password change for systemd-cryptenroll
+  # cbc0626230c255618b9750060f768ab550ad48a3
+  dante_build_id: '1135201'
 
   # virgil 20241021.4
   # Mon Oct 21 00:02:43 UTC 2024 -- Mon Oct 21 11:02:43 AEDT 2024
