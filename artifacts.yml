@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241021.2
-  # Mon Oct 21 01:09:06 UTC 2024 -- Mon Oct 21 12:09:06 AEDT 2024
+  # Dante Build Artifact 20241021.3
+  # Mon Oct 21 03:18:42 UTC 2024 -- Mon Oct 21 14:18:42 AEDT 2024
   #
-  # Merge pull request 28935 from dante_artifact_upgrade into master
-  # 15335b3f377de741eed05154565545177907cfde
-  dante_build_id: '1135030'
+  # Merged PR 28936: Enabled simulation8711 in simulations agent pool
+  # b58529fe55763c2d728caa5c8738d18c013f1e3a
+  dante_build_id: '1135151'
 
   # virgil 20241021.4
   # Mon Oct 21 00:02:43 UTC 2024 -- Mon Oct 21 11:02:43 AEDT 2024
@@ -14,9 +14,9 @@ variables:
   # ee4a9ad89fc969d41c5ed03ac70b2d8ce1872fc6
   virgil_build_id: '1134955'
 
-  # sqlbilling 20241017.2
-  # Thu Oct 17 01:42:18 UTC 2024 -- Thu Oct 17 12:42:18 AEDT 2024
+  # sqlbilling 20241021.1
+  # Mon Oct 21 03:16:14 UTC 2024 -- Mon Oct 21 14:16:14 AEDT 2024
   #
-  # Merged PR 28843: RTL-Readonly Teardown (BA3) - PRJ00049194
-  # 52c368f44a5f8908a2e77ba1033162ea1041e77d
-  sqlbilling_build_id: '1130739'
+  # Merged PR 28909: RTL-SQLReadOnlybilling-CS01768562,CS01768581,CS01764035
+  # de1996d4f6fbe030a14d6458e63d2abb015d635b
+  sqlbilling_build_id: '1135149'
