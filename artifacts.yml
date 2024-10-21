@@ -7,12 +7,12 @@ variables:
   # 86556e2b3ca48fef7812ca7811b8e2737351b76d
   dante_build_id: '1134874'
 
-  # virgil 20241021.1
-  # Sun Oct 20 22:21:39 UTC 2024 -- Mon Oct 21 09:21:39 AEDT 2024
+  # virgil 20241021.4
+  # Mon Oct 21 00:02:43 UTC 2024 -- Mon Oct 21 11:02:43 AEDT 2024
   #
-  # Merged PR 28865: DE1 Move MediaAgents from rack 203 to 103
-  # 7c069330a67f11a8dadc83920edc6a5326948b0a
-  virgil_build_id: '1134805'
+  # Merged PR 28928: Add ACLs for ehub team
+  # ee4a9ad89fc969d41c5ed03ac70b2d8ce1872fc6
+  virgil_build_id: '1134955'
 
   # sqlbilling 20241017.2
   # Thu Oct 17 01:42:18 UTC 2024 -- Thu Oct 17 12:42:18 AEDT 2024
