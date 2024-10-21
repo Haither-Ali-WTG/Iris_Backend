@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241021.4
-  # Mon Oct 21 03:57:44 UTC 2024 -- Mon Oct 21 14:57:44 AEDT 2024
+  # Dante Build Artifact 20241022.1
+  # Mon Oct 21 21:48:42 UTC 2024 -- Tue Oct 22 08:48:42 AEDT 2024
   #
-  # Merged PR 28927: Supported TPM password change for systemd-cryptenroll
-  # cbc0626230c255618b9750060f768ab550ad48a3
-  dante_build_id: '1135201'
+  # Merged PR 28958: Add trigger for sqlbilling pipeline
+  # 0dcc5d8f166b713646d3afb59ee937e083241c1d
+  dante_build_id: '1136040'
 
   # virgil 20241021.4
   # Mon Oct 21 00:02:43 UTC 2024 -- Mon Oct 21 11:02:43 AEDT 2024
