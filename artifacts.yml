@@ -7,12 +7,12 @@ variables:
   # 24d951a72c81337f79367255ac51182e41dded6c
   dante_build_id: '1136208'
 
-  # virgil 20241022.4
-  # Mon Oct 21 23:53:57 UTC 2024 -- Tue Oct 22 10:53:57 AEDT 2024
+  # virgil 20241022.6
+  # Tue Oct 22 00:33:52 UTC 2024 -- Tue Oct 22 11:33:52 AEDT 2024
   #
-  # Merged PR 28969: Virgil - Remove logs test and prod billing
-  # 5c9da2ac5c0234f714131915d74c9a5061dd8a4e
-  virgil_build_id: '1136176'
+  # Merged PR 29007: WI0081905 Upgrade management node 3 to Ubuntu 24.04
+  # 28fe97b30d30a578f32653bd598528fdb893b5ac
+  virgil_build_id: '1136235'
 
   # sqlbilling 20241021.1
   # Mon Oct 21 03:16:14 UTC 2024 -- Mon Oct 21 14:16:14 AEDT 2024
