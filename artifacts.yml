@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241022.3
-  # Tue Oct 22 00:10:37 UTC 2024 -- Tue Oct 22 11:10:37 AEDT 2024
+  # Dante Build Artifact 20241022.4
+  # Tue Oct 22 01:29:29 UTC 2024 -- Tue Oct 22 12:29:29 AEDT 2024
   #
-  # Merged PR 28994: Fixed virgil_os_name usage for user_data file in qcow2 builder
-  # 24d951a72c81337f79367255ac51182e41dded6c
-  dante_build_id: '1136208'
+  # Merge pull request 29006 from dante_artifact_upgrade into master
+  # 39e84271de59f6e2ce474b769c225258e0e0441d
+  dante_build_id: '1136281'
 
   # virgil 20241022.6
   # Tue Oct 22 00:33:52 UTC 2024 -- Tue Oct 22 11:33:52 AEDT 2024
