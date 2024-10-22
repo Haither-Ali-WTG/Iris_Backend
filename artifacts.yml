@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241022.2
-  # Mon Oct 21 23:27:17 UTC 2024 -- Tue Oct 22 10:27:17 AEDT 2024
+  # Dante Build Artifact 20241022.3
+  # Tue Oct 22 00:10:37 UTC 2024 -- Tue Oct 22 11:10:37 AEDT 2024
   #
-  # Merge pull request 28993 from dante_artifact_upgrade into master
-  # ccebc2f4cffa97fe4d5fe86ff405fe1b4992bafe
-  dante_build_id: '1136138'
+  # Merged PR 28994: Fixed virgil_os_name usage for user_data file in qcow2 builder
+  # 24d951a72c81337f79367255ac51182e41dded6c
+  dante_build_id: '1136208'
 
-  # virgil 20241022.2
-  # Mon Oct 21 22:27:42 UTC 2024 -- Tue Oct 22 09:27:42 AEDT 2024
+  # virgil 20241022.4
+  # Mon Oct 21 23:53:57 UTC 2024 -- Tue Oct 22 10:53:57 AEDT 2024
   #
-  # Merge pull request 28977 from virgil_python_upgrade into master
-  # c808efdcc7d599a5d0dbb0c8018cfc17dad617c9
-  virgil_build_id: '1136075'
+  # Merged PR 28969: Virgil - Remove logs test and prod billing
+  # 5c9da2ac5c0234f714131915d74c9a5061dd8a4e
+  virgil_build_id: '1136176'
 
   # sqlbilling 20241021.1
   # Mon Oct 21 03:16:14 UTC 2024 -- Mon Oct 21 14:16:14 AEDT 2024
