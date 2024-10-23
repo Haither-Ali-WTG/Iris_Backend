@@ -7,16 +7,16 @@ variables:
   # a24e394cb1c3bf954c2407ca6c189f05fc916e82
   dante_build_id: '1137660'
 
-  # virgil 20241023.3
-  # Wed Oct 23 04:01:48 UTC 2024 -- Wed Oct 23 15:01:48 AEDT 2024
+  # virgil 20241024.1
+  # Wed Oct 23 13:49:17 UTC 2024 -- Thu Oct 24 00:49:17 AEDT 2024
   #
-  # Merged PR 29064: Add us2mgmt1 dns entries
-  # ef762d9725dbc55d7985b42586996242ac3943c6
-  virgil_build_id: '1137575'
+  # Merged PR 29056: Remove Ceph machines as they've been decommissioned
+  # 3748606e532a9ac6ea4f1dad39b18cf3f1db8fc4
+  virgil_build_id: '1137992'
 
-  # sqlbilling 20241023.2
-  # Wed Oct 23 04:34:49 UTC 2024 -- Wed Oct 23 15:34:49 AEDT 2024
+  # sqlbilling 20241023.3
+  # Wed Oct 23 06:09:35 UTC 2024 -- Wed Oct 23 17:09:35 AEDT 2024
   #
-  # Merged PR 29089: RTL-SQLbilling-CS01769900,CS01768581,CS01771620,CS01771813
-  # f37356559f4c2703be9f51d25c5d63e1f95f0a1f
-  sqlbilling_build_id: '1137621'
+  # Merged PR 28970: Updated de1-prod-frontend-1CS01768451.yml
+  # b49d98bdb1333be81026e60c21a63caef7ad7cc6
+  sqlbilling_build_id: '1137719'
