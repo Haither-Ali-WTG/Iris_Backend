@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20241023.2
-  # Wed Oct 23 02:49:49 UTC 2024 -- Wed Oct 23 13:49:49 AEDT 2024
+  # Dante Build Artifact 20241023.4
+  # Wed Oct 23 05:29:07 UTC 2024 -- Wed Oct 23 16:29:07 AEDT 2024
   #
-  # Merged PR 29069: Disable the S3 tear-down and enable the secret download for DNS teardown.
-  # 63e3b1d09910665ae21d45d00a74188e348e0a85
-  dante_build_id: '1137470'
+  # Merge pull request 29099 from dante_artifact_upgrade into master
+  # a24e394cb1c3bf954c2407ca6c189f05fc916e82
+  dante_build_id: '1137660'
 
-  # virgil 20241022.6
-  # Tue Oct 22 00:33:52 UTC 2024 -- Tue Oct 22 11:33:52 AEDT 2024
+  # virgil 20241023.3
+  # Wed Oct 23 04:01:48 UTC 2024 -- Wed Oct 23 15:01:48 AEDT 2024
   #
-  # Merged PR 29007: WI0081905 Upgrade management node 3 to Ubuntu 24.04
-  # 28fe97b30d30a578f32653bd598528fdb893b5ac
-  virgil_build_id: '1136235'
+  # Merged PR 29064: Add us2mgmt1 dns entries
+  # ef762d9725dbc55d7985b42586996242ac3943c6
+  virgil_build_id: '1137575'
 
-  # sqlbilling 20241021.1
-  # Mon Oct 21 03:16:14 UTC 2024 -- Mon Oct 21 14:16:14 AEDT 2024
+  # sqlbilling 20241023.2
+  # Wed Oct 23 04:34:49 UTC 2024 -- Wed Oct 23 15:34:49 AEDT 2024
   #
-  # Merged PR 28909: RTL-SQLReadOnlybilling-CS01768562,CS01768581,CS01764035
-  # de1996d4f6fbe030a14d6458e63d2abb015d635b
-  sqlbilling_build_id: '1135149'
+  # Merged PR 29089: RTL-SQLbilling-CS01769900,CS01768581,CS01771620,CS01771813
+  # f37356559f4c2703be9f51d25c5d63e1f95f0a1f
+  sqlbilling_build_id: '1137621'
