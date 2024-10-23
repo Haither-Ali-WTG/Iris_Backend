@@ -7,12 +7,12 @@ variables:
   # 5c526541b656796986de6bc7f8ca198a07fa2ec8
   dante_build_id: '1138037'
 
-  # virgil 20241024.1
-  # Wed Oct 23 13:49:17 UTC 2024 -- Thu Oct 24 00:49:17 AEDT 2024
+  # virgil 20241024.3
+  # Wed Oct 23 22:30:19 UTC 2024 -- Thu Oct 24 09:30:19 AEDT 2024
   #
-  # Merged PR 29056: Remove Ceph machines as they've been decommissioned
-  # 3748606e532a9ac6ea4f1dad39b18cf3f1db8fc4
-  virgil_build_id: '1137992'
+  # Merged PR 29129: Put AU2 management node 3 back to continuous
+  # cb4fd7bd99c84645f9947e7223a3273dde30fd90
+  virgil_build_id: '1138345'
 
   # sqlbilling 20241023.3
   # Wed Oct 23 06:09:35 UTC 2024 -- Wed Oct 23 17:09:35 AEDT 2024
