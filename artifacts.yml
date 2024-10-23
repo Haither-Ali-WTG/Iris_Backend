@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241022.8
-  # Tue Oct 22 05:41:26 UTC 2024 -- Tue Oct 22 16:41:26 AEDT 2024
+  # Dante Build Artifact 20241023.1
+  # Wed Oct 23 01:59:49 UTC 2024 -- Wed Oct 23 12:59:49 AEDT 2024
   #
-  # Merged PR 29043: Internal DNS teardown - Dry run only
-  # 8bfcc2a794afbc1c0a7456eae9b30f8d2a362d61
-  dante_build_id: '1136560'
+  # Merged PR 29067: Removed hardcoded values for server rebuild
+  # 69d5af965b4d3bc06459e3fb63c819c0b1346e44
+  dante_build_id: '1137402'
 
   # virgil 20241022.6
   # Tue Oct 22 00:33:52 UTC 2024 -- Tue Oct 22 11:33:52 AEDT 2024
