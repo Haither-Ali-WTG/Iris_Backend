@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241023.1
-  # Wed Oct 23 01:59:49 UTC 2024 -- Wed Oct 23 12:59:49 AEDT 2024
+  # Dante Build Artifact 20241023.2
+  # Wed Oct 23 02:49:49 UTC 2024 -- Wed Oct 23 13:49:49 AEDT 2024
   #
-  # Merged PR 29067: Removed hardcoded values for server rebuild
-  # 69d5af965b4d3bc06459e3fb63c819c0b1346e44
-  dante_build_id: '1137402'
+  # Merged PR 29069: Disable the S3 tear-down and enable the secret download for DNS teardown.
+  # 63e3b1d09910665ae21d45d00a74188e348e0a85
+  dante_build_id: '1137470'
 
   # virgil 20241022.6
   # Tue Oct 22 00:33:52 UTC 2024 -- Tue Oct 22 11:33:52 AEDT 2024
