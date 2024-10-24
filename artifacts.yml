@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241024.6
-  # Thu Oct 24 03:46:46 UTC 2024 -- Thu Oct 24 14:46:46 AEDT 2024
+  # Dante Build Artifact 20241024.7
+  # Thu Oct 24 04:17:30 UTC 2024 -- Thu Oct 24 15:17:30 AEDT 2024
   #
-  # Merge pull request 29165 from dante_artifact_upgrade into master
-  # 7eb8bd86d33586fd546c1f6298bcc8a60730d65e
-  dante_build_id: '1138688'
+  # Merged PR 29105: Move validation checks to the main playbook
+  # 509220682d0d69b92181dcfea7de22b74495a077
+  dante_build_id: '1138727'
 
   # virgil 20241024.7
   # Thu Oct 24 02:11:07 UTC 2024 -- Thu Oct 24 13:11:07 AEDT 2024
