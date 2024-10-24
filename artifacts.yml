@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241024.3
-  # Thu Oct 24 01:13:45 UTC 2024 -- Thu Oct 24 12:13:45 AEDT 2024
+  # Dante Build Artifact 20241024.5
+  # Thu Oct 24 02:48:17 UTC 2024 -- Thu Oct 24 13:48:17 AEDT 2024
   #
-  # Merged PR 29145: Cleanup old server-images files (pure)
-  # 8475a0f8cffaf3d2d335ef5198b17256cfa622ff
-  dante_build_id: '1138527'
+  # Merged PR 29160: Added 7z to list of packages for server_virt_kvm servers
+  # 6646b773efc8e8dd2819aa6867eccccfc35f69bd
+  dante_build_id: '1138629'
 
-  # virgil 20241024.3
-  # Wed Oct 23 22:30:19 UTC 2024 -- Thu Oct 24 09:30:19 AEDT 2024
+  # virgil 20241024.7
+  # Thu Oct 24 02:11:07 UTC 2024 -- Thu Oct 24 13:11:07 AEDT 2024
   #
-  # Merged PR 29129: Put AU2 management node 3 back to continuous
-  # cb4fd7bd99c84645f9947e7223a3273dde30fd90
-  virgil_build_id: '1138345'
+  # Merged PR 29154: Move AU2 apex25/26 to N-201/202
+  # b179b467fd4538e41c7787a7cf49fd30f19cdf12
+  virgil_build_id: '1138598'
 
   # sqlbilling 20241023.3
   # Wed Oct 23 06:09:35 UTC 2024 -- Wed Oct 23 17:09:35 AEDT 2024
