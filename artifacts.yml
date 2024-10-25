@@ -7,12 +7,12 @@ variables:
   # 8ef288b4640de9c4c90a32c62ded1e10690f1eaa
   dante_build_id: '1139474'
 
-  # virgil 20241024.7
-  # Thu Oct 24 02:11:07 UTC 2024 -- Thu Oct 24 13:11:07 AEDT 2024
+  # virgil 20241025.6
+  # Fri Oct 25 00:48:37 UTC 2024 -- Fri Oct 25 11:48:37 AEDT 2024
   #
-  # Merged PR 29154: Move AU2 apex25/26 to N-201/202
-  # b179b467fd4538e41c7787a7cf49fd30f19cdf12
-  virgil_build_id: '1138598'
+  # Merged PR 29208: Put all simulation nodes to continuous
+  # b45f90220ade6cd25865aeda8d1ca2a3a6882fe9
+  virgil_build_id: '1139576'
 
   # sqlbilling 20241024.6
   # Thu Oct 24 05:30:29 UTC 2024 -- Thu Oct 24 16:30:29 AEDT 2024
