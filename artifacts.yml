@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241025.2
-  # Thu Oct 24 23:03:28 UTC 2024 -- Fri Oct 25 10:03:28 AEDT 2024
+  # Dante Build Artifact 20241025.4
+  # Fri Oct 25 03:09:22 UTC 2024 -- Fri Oct 25 14:09:22 AEDT 2024
   #
-  # Merged PR 29196: ceph support removed
-  # 8ef288b4640de9c4c90a32c62ded1e10690f1eaa
-  dante_build_id: '1139474'
+  # Merge pull request 29230 from dante_artifact_upgrade into master
+  # 0be2af77022e33e154980e58141ff11820683f7b
+  dante_build_id: '1139743'
 
-  # virgil 20241025.6
-  # Fri Oct 25 00:48:37 UTC 2024 -- Fri Oct 25 11:48:37 AEDT 2024
+  # virgil 20241025.12
+  # Fri Oct 25 02:08:04 UTC 2024 -- Fri Oct 25 13:08:04 AEDT 2024
   #
-  # Merged PR 29208: Put all simulation nodes to continuous
-  # b45f90220ade6cd25865aeda8d1ca2a3a6882fe9
-  virgil_build_id: '1139576'
+  # Merged PR 29209: repurpose ceph LB nodes for Elastic Bunker connectivity in  DE1
+  # cd575720f92a04b8c177afb256758b3fde8da165
+  virgil_build_id: '1139662'
 
   # sqlbilling 20241024.6
   # Thu Oct 24 05:30:29 UTC 2024 -- Thu Oct 24 16:30:29 AEDT 2024
