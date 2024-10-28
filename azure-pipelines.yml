@@ -204,6 +204,19 @@ stages:
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
 
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download sqlbilling artifacts for ACL'
+            inputs:
+              buildType: 'specific'
+              project: 'ISOperations'
+              # https://dev.azure.com/WTGOps/ISOperations/_build?definitionId=239
+              pipeline: 239
+              artifact: sqlbilling
+              buildVersionToDownload: 'specific'
+              buildId: '$(sqlbilling_build_id)'
+              path: $(Build.SourcesDirectory)/sqlbilling_acl
+              patterns: 'acl/*.acl'
+
           - task: CopyFiles@2
             displayName: 'Merge artifacts to a single roles folder'
             inputs:
@@ -251,6 +264,7 @@ stages:
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
+                -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
