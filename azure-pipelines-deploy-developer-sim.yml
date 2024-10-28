@@ -147,6 +147,19 @@ stages:
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download sqlbilling artifacts for ACL'
+            inputs:
+              buildType: 'specific'
+              project: 'ISOperations'
+              # https://dev.azure.com/WTGOps/ISOperations/_build?definitionId=239
+              pipeline: 239
+              artifact: sqlbilling
+              buildVersionToDownload: 'specific'
+              buildId: '$(sqlbilling_build_id)'
+              path: $(Build.SourcesDirectory)/sqlbilling_acl
+              patterns: 'acl/*.acl'
+
           - task: Ansible@0
             displayName: 'Test haproxy'
             inputs:
@@ -164,6 +177,7 @@ stages:
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
                 -e="target_dc=$(simulation_dc)"
+                -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="@ansible/hypervisor.yaml"
                 -e="pure_usernames='$(pure_usernames)'"
             env:

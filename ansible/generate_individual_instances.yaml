@@ -37,6 +37,7 @@
         tests: "{{ clustered_instance.tests | default([]) }}"
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
+        sqlbilling_acl: "{{ clustered_instance.sqlbilling_acl | default([]) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: "{{ os_codename[machine.os] }}"

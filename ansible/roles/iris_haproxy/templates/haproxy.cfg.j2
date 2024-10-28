@@ -194,6 +194,11 @@ acl {{ name }} {{ test }}
 
 {% endfor %}
 
+{% if sqlbilling_acl | default([]) %}
+{% for acl_item in sqlbilling_acl %}
+acl {{ acl_item.acl_name }} src -M -f /etc/haproxy/{{ acl_item.file }}
+{% endfor %}
+{% endif %}
 
 {% for name, actionset in actions.items() | sort(attribute='1.order,0') %}
 # {{ name }} ({{ actionset.fname }}; order: {{ actionset.order }})

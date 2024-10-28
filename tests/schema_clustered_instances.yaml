@@ -20,4 +20,9 @@ clustered_instance:
   iis_user: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
   certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=True)
+  sqlbilling_acl: list(include('sqlbilling_acl_settings'), name='ACL settings for sqlbilling', required=False)
   dc: enum('AU2', 'DE1', 'US2', required=True)
+
+sqlbilling_acl_settings:
+  acl_name: regex('^[a-z_-]+$', name='ACL name', required=True)
+  file: regex('^[a-zA-Z0-9_-]+\.acl$', name='ACL file name', required=True)

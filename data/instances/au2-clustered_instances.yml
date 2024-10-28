@@ -129,6 +129,11 @@ clustered_instances:
         - star-testrig-sand-wtg-zone
         - star-bolero-sand-wtg-zone
         - star-cargowise-com
+      # sqlbilling_acl:
+      #  - acl_name: customerreadonly_src
+      #    file: au2-prod-frontend-1.acl
+      #  - acl_name: customerreadonly_src
+      #    file: global.acl
       stats:
         ports:
           web: 2047
