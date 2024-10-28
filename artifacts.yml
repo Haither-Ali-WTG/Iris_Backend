@@ -7,16 +7,16 @@ variables:
   # a3010f02a46d9d9f12f677b754f30a380556ce37
   dante_build_id: '1142518'
 
-  # virgil 20241028.11
-  # Mon Oct 28 01:44:19 UTC 2024 -- Mon Oct 28 12:44:19 AEDT 2024
+  # virgil 20241029.2
+  # Mon Oct 28 21:57:37 UTC 2024 -- Tue Oct 29 08:57:37 AEDT 2024
   #
-  # Merged PR 29275: Add 8New SY5 Apex Batch1
-  # 83021dd9543d6a62c0fad09587d4ae92b78e6cb8
-  virgil_build_id: '1142456'
+  # Merged PR 29290: Virgil - Increase VTEP ip range to 180-214 inclusive
+  # 07978074c9c73f5c55e965a130695853fdbb7468
+  virgil_build_id: '1143306'
 
-  # sqlbilling 20241028.3
-  # Sun Oct 27 23:14:39 UTC 2024 -- Mon Oct 28 10:14:39 AEDT 2024
+  # sqlbilling 20241028.7
+  # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
   #
-  # Merged PR 28818: Updated us2-prod-frontendCS01765249-1.yml
-  # a74d1bf99849c944d72cbb6526f526e3952eafa8
-  sqlbilling_build_id: '1142244'
+  # Merged PR 29245: Unlist Reserved private Ip Address - 172.29.51.118
+  # c2c824bda67ad8454b92429263c07eebe5720158
+  sqlbilling_build_id: '1142675'
