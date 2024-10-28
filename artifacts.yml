@@ -7,12 +7,12 @@ variables:
   # 658c6520d535dd414a5de76e3b787d78e7d6ff75
   dante_build_id: '1143355'
 
-  # virgil 20241029.2
-  # Mon Oct 28 21:57:37 UTC 2024 -- Tue Oct 29 08:57:37 AEDT 2024
+  # virgil 20241029.5
+  # Mon Oct 28 23:28:49 UTC 2024 -- Tue Oct 29 10:28:49 AEDT 2024
   #
-  # Merged PR 29290: Virgil - Increase VTEP ip range to 180-214 inclusive
-  # 07978074c9c73f5c55e965a130695853fdbb7468
-  virgil_build_id: '1143306'
+  # Merged PR 29312: Add 2New SY5 Apex Batch2
+  # 32073626dc3712ade920cd1c026d92316624677a
+  virgil_build_id: '1143397'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
