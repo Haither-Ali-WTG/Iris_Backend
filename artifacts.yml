@@ -7,16 +7,16 @@ variables:
   # 6429963d970c563e859a6668dd6289c58d214b73
   dante_build_id: '1142184'
 
-  # virgil 20241025.12
-  # Fri Oct 25 02:08:04 UTC 2024 -- Fri Oct 25 13:08:04 AEDT 2024
+  # virgil 20241028.5
+  # Sun Oct 27 23:37:30 UTC 2024 -- Mon Oct 28 10:37:30 AEDT 2024
   #
-  # Merged PR 29209: repurpose ceph LB nodes for Elastic Bunker connectivity in  DE1
-  # cd575720f92a04b8c177afb256758b3fde8da165
-  virgil_build_id: '1139662'
+  # Merged PR 29206: Clean up downstream connectivity on apex23/24
+  # fc9ac8ada94142008cf6d22a5ea18d71fc830349
+  virgil_build_id: '1142295'
 
-  # sqlbilling 20241024.6
-  # Thu Oct 24 05:30:29 UTC 2024 -- Thu Oct 24 16:30:29 AEDT 2024
+  # sqlbilling 20241028.3
+  # Sun Oct 27 23:14:39 UTC 2024 -- Mon Oct 28 10:14:39 AEDT 2024
   #
-  # Merged PR 29183: RTL-SQLBilling-CS01773054,CS01773427,CS01774442,CS01764035
-  # 7effbd8492ca540f9de6e64667c9c5bf9d3128cc
-  sqlbilling_build_id: '1138811'
+  # Merged PR 28818: Updated us2-prod-frontendCS01765249-1.yml
+  # a74d1bf99849c944d72cbb6526f526e3952eafa8
+  sqlbilling_build_id: '1142244'
