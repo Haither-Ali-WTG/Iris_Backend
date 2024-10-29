@@ -7,12 +7,12 @@ variables:
   # 26874499a2b9b6adc49e8fe386fb3ce05e37325d
   dante_build_id: '1143734'
 
-  # virgil 20241029.7
-  # Tue Oct 29 00:15:37 UTC 2024 -- Tue Oct 29 11:15:37 AEDT 2024
+  # virgil 20241029.9
+  # Tue Oct 29 04:58:06 UTC 2024 -- Tue Oct 29 15:58:06 AEDT 2024
   #
-  # Merge pull request 29297 from virgil_python_upgrade into master
-  # d2882ec05d7ba7708a767997776e1605bd7a0a15
-  virgil_build_id: '1143456'
+  # Merged PR 29368: Update New SY5 APEX MTU
+  # d16691a762c52f068ad08eefed69a9b6b7cc5268
+  virgil_build_id: '1143781'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
