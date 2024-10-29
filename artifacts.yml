@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241029.1
-  # Mon Oct 28 22:46:35 UTC 2024 -- Tue Oct 29 09:46:35 AEDT 2024
+  # Dante Build Artifact 20241029.2
+  # Tue Oct 29 00:28:31 UTC 2024 -- Tue Oct 29 11:28:31 AEDT 2024
   #
-  # Merge pull request 29311 from dante_artifact_upgrade into master
-  # 658c6520d535dd414a5de76e3b787d78e7d6ff75
-  dante_build_id: '1143355'
+  # Merge pull request 29323 from dante_artifact_upgrade into master
+  # 62419d2be43f99bedb594b7804fbffde1b112d4e
+  dante_build_id: '1143469'
 
-  # virgil 20241029.5
-  # Mon Oct 28 23:28:49 UTC 2024 -- Tue Oct 29 10:28:49 AEDT 2024
+  # virgil 20241029.7
+  # Tue Oct 29 00:15:37 UTC 2024 -- Tue Oct 29 11:15:37 AEDT 2024
   #
-  # Merged PR 29312: Add 2New SY5 Apex Batch2
-  # 32073626dc3712ade920cd1c026d92316624677a
-  virgil_build_id: '1143397'
+  # Merge pull request 29297 from virgil_python_upgrade into master
+  # d2882ec05d7ba7708a767997776e1605bd7a0a15
+  virgil_build_id: '1143456'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
