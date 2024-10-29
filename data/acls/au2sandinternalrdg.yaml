@@ -12,9 +12,9 @@ rdg_rpc_path:
 sand_rdg_password_host:
   description: hostnames used by password SAND rdg endpoints (WCA SAND)
   tests:
-    - hdr(host) -i sandtsg.wtg.zone
+    - hdr(host),field(1,:) -i sandtsg.wtg.zone
 
 sand_rdg_token_host:
   description: hostnames used by token auth SAND rdg endpoints (WCA SAND)
   tests:
-    - hdr(host) -i sandtsg-token-based.wtg.zone
+    - hdr(host),field(1,:) -i sandtsg-token-based.wtg.zone

@@ -17,13 +17,13 @@ rdg_rpc_path:
 corp_rdg_password_host:
   description: hostnames used by password CORP rdg endpoints (ediprod)
   tests:
-    - hdr(host) -i rdg.wisetechglobal.cn
-    - hdr(host) -i rdg-au2.wisetechglobal.cn
-    - hdr(host) -i rdg.wisetechglobal.com
-    - hdr(host) -i rdg-au2.wisetechglobal.com
+    - hdr(host),field(1,:) -i rdg.wisetechglobal.cn
+    - hdr(host),field(1,:) -i rdg-au2.wisetechglobal.cn
+    - hdr(host),field(1,:) -i rdg.wisetechglobal.com
+    - hdr(host),field(1,:) -i rdg-au2.wisetechglobal.com
 
 corp_rdg_token_host:
   description: hostnames used by token auth CORP rdg endpoints (ediprod)
   tests:
-    - hdr(host) -i rdg-au2-token.wisetechglobal.com
-    - hdr(host) -i rdg-au2-token.wisetechglobal.cn
+    - hdr(host),field(1,:) -i rdg-au2-token.wisetechglobal.com
+    - hdr(host),field(1,:) -i rdg-au2-token.wisetechglobal.cn
