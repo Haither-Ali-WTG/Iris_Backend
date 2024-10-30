@@ -7,12 +7,12 @@ variables:
   # a9343aea6ab1baeaeec24b2b17dda8a4b703b33b
   dante_build_id: '1145075'
 
-  # virgil 20241030.2
-  # Wed Oct 30 04:59:39 UTC 2024 -- Wed Oct 30 15:59:39 AEDT 2024
+  # virgil 20241031.5
+  # Wed Oct 30 22:04:47 UTC 2024 -- Thu Oct 31 09:04:47 AEDT 2024
   #
-  # Merged PR 29438: CS01775177 Cargo Visibility API v2 Topics
-  # be2841e360fe43f7684fa1722681d961c81c92ae
-  virgil_build_id: '1145022'
+  # Merged PR 29376: Add New L3 APEX for SY5
+  # 88c6ce4d5246f8c0173ad87bec1b2b9f95cb72e5
+  virgil_build_id: '1145697'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
