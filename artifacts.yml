@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241030.3
-  # Wed Oct 30 03:59:42 UTC 2024 -- Wed Oct 30 14:59:42 AEDT 2024
+  # Dante Build Artifact 20241030.4
+  # Wed Oct 30 05:48:10 UTC 2024 -- Wed Oct 30 16:48:10 AEDT 2024
   #
-  # Merged PR 29419: Refactoring for breaking up installation ISO in two
-  # 25d6f5c4245ecfc4e8b037ee9d788186ae2aa1b3
-  dante_build_id: '1144922'
+  # Merge pull request 29444 from dante_artifact_upgrade into master
+  # a9343aea6ab1baeaeec24b2b17dda8a4b703b33b
+  dante_build_id: '1145075'
 
   # virgil 20241030.2
   # Wed Oct 30 04:59:39 UTC 2024 -- Wed Oct 30 15:59:39 AEDT 2024
