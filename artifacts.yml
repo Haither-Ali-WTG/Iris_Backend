@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241031.2
-  # Thu Oct 31 01:28:29 UTC 2024 -- Thu Oct 31 12:28:29 AEDT 2024
+  # Dante Build Artifact 20241031.3
+  # Thu Oct 31 05:00:33 UTC 2024 -- Thu Oct 31 16:00:33 AEDT 2024
   #
-  # Merge pull request 29474 from dante_artifact_upgrade into master
-  # 21fd1211de3952c78c0f4eebada5b6b6976f1853
-  dante_build_id: '1145889'
+  # Merged PR 29491: Create small autoinstall ISO for Ubuntu
+  # d399237c8bd190935fbdf28f03322d3876c7214d
+  dante_build_id: '1146114'
 
-  # virgil 20241031.9
-  # Thu Oct 31 00:25:47 UTC 2024 -- Thu Oct 31 11:25:47 AEDT 2024
+  # virgil 20241031.11
+  # Thu Oct 31 04:50:33 UTC 2024 -- Thu Oct 31 15:50:33 AEDT 2024
   #
-  # Merged PR 29475: Add New L2 APEX to SY5 Rack301
-  # 6136f12a57ed6858b860dfa1927180e23f1de85c
-  virgil_build_id: '1145829'
+  # Merged PR 29503: Fixing DNS entries for Edgar :)
+  # 29c4325057cc5666c69656e84ba881fd98437e0b
+  virgil_build_id: '1146092'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
