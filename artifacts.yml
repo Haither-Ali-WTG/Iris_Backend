@@ -7,12 +7,12 @@ variables:
   # ae13dd1fa3100d605818be50380a4ca604745bbc
   dante_build_id: '1146172'
 
-  # virgil 20241031.11
-  # Thu Oct 31 04:50:33 UTC 2024 -- Thu Oct 31 15:50:33 AEDT 2024
+  # virgil 20241101.3
+  # Thu Oct 31 21:57:07 UTC 2024 -- Fri Nov  1 08:57:07 AEDT 2024
   #
-  # Merged PR 29503: Fixing DNS entries for Edgar :)
-  # 29c4325057cc5666c69656e84ba881fd98437e0b
-  virgil_build_id: '1146092'
+  # Merged PR 29507: Recorrect Apex52 MAC address
+  # 556aab4127073f003f546ef5ec9ea572f9ad8d63
+  virgil_build_id: '1146796'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
