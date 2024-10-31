@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241031.3
-  # Thu Oct 31 05:00:33 UTC 2024 -- Thu Oct 31 16:00:33 AEDT 2024
+  # Dante Build Artifact 20241031.4
+  # Thu Oct 31 05:46:58 UTC 2024 -- Thu Oct 31 16:46:58 AEDT 2024
   #
-  # Merged PR 29491: Create small autoinstall ISO for Ubuntu
-  # d399237c8bd190935fbdf28f03322d3876c7214d
-  dante_build_id: '1146114'
+  # Merge pull request 29511 from dante_artifact_upgrade into master
+  # ae13dd1fa3100d605818be50380a4ca604745bbc
+  dante_build_id: '1146172'
 
   # virgil 20241031.11
   # Thu Oct 31 04:50:33 UTC 2024 -- Thu Oct 31 15:50:33 AEDT 2024
