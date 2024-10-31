@@ -7,12 +7,12 @@ variables:
   # 6f58abf4633e3897e56847c1200a582d08843b04
   dante_build_id: '1145754'
 
-  # virgil 20241031.5
-  # Wed Oct 30 22:04:47 UTC 2024 -- Thu Oct 31 09:04:47 AEDT 2024
+  # virgil 20241031.7
+  # Thu Oct 31 00:09:31 UTC 2024 -- Thu Oct 31 11:09:31 AEDT 2024
   #
-  # Merged PR 29376: Add New L3 APEX for SY5
-  # 88c6ce4d5246f8c0173ad87bec1b2b9f95cb72e5
-  virgil_build_id: '1145697'
+  # Merged PR 29451: Add Elastic APAC GlobalSearch Physical nodes
+  # 02f6a8fdc7491126e52ada2e1534d83bb3053d0a
+  virgil_build_id: '1145814'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
