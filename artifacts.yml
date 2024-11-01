@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241101.3
-  # Fri Nov  1 01:23:22 UTC 2024 -- Fri Nov  1 12:23:22 AEDT 2024
+  # Dante Build Artifact 20241101.4
+  # Fri Nov  1 02:17:48 UTC 2024 -- Fri Nov  1 13:17:48 AEDT 2024
   #
-  # Merged PR 29561: Base and autoinstall ISO creation for RHEL
-  # b37b99689c4785f83c8c5ebda5ad8fe38eaf4952
-  dante_build_id: '1147128'
+  # Merged PR 29566: Disablke Minos check for nginx_s3_proxy
+  # 8915994eb9a944b38e4361f10c70b39b583fb5bf
+  dante_build_id: '1147202'
 
   # virgil 20241101.8
   # Fri Nov  1 00:08:30 UTC 2024 -- Fri Nov  1 11:08:30 AEDT 2024
