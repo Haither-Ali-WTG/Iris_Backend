@@ -7,12 +7,12 @@ variables:
   # ba5bac527c2cc0669b332d383dba8b1572d91357
   dante_build_id: '1146903'
 
-  # virgil 20241101.3
-  # Thu Oct 31 21:57:07 UTC 2024 -- Fri Nov  1 08:57:07 AEDT 2024
+  # virgil 20241101.8
+  # Fri Nov  1 00:08:30 UTC 2024 -- Fri Nov  1 11:08:30 AEDT 2024
   #
-  # Merged PR 29507: Recorrect Apex52 MAC address
-  # 556aab4127073f003f546ef5ec9ea572f9ad8d63
-  virgil_build_id: '1146796'
+  # Merged PR 29549: Move SBAK-1 to SY5 rack104
+  # 2212edb7af7ffce44345080f582fe00367506b2f
+  virgil_build_id: '1147017'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
