@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241101.4
-  # Fri Nov  1 02:17:48 UTC 2024 -- Fri Nov  1 13:17:48 AEDT 2024
+  # Dante Build Artifact 20241101.5
+  # Fri Nov  1 03:09:51 UTC 2024 -- Fri Nov  1 14:09:51 AEDT 2024
   #
-  # Merged PR 29566: Disablke Minos check for nginx_s3_proxy
-  # 8915994eb9a944b38e4361f10c70b39b583fb5bf
-  dante_build_id: '1147202'
+  # Merge pull request 29559 from dante_artifact_upgrade into master
+  # 81dedbac6896a0fb30cf9755d533b073c011eaaf
+  dante_build_id: '1147266'
 
   # virgil 20241101.8
   # Fri Nov  1 00:08:30 UTC 2024 -- Fri Nov  1 11:08:30 AEDT 2024
