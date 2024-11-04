@@ -7,12 +7,12 @@ variables:
   # 5c07ffd8409b7f56bf26031b035264ff132a0102
   dante_build_id: '1150092'
 
-  # virgil 20241104.2
-  # Mon Nov  4 04:01:37 UTC 2024 -- Mon Nov  4 15:01:37 AEDT 2024
+  # virgil 20241104.5
+  # Mon Nov  4 06:55:34 UTC 2024 -- Mon Nov  4 17:55:34 AEDT 2024
   #
-  # Merged PR 29656: CS01778992 - Provision new staging Qs for Cargo Vis Project
-  # 971f7f5d0da146886da437334ccae8caf7b4389f
-  virgil_build_id: '1150057'
+  # Merged PR 29677: Prep switch ports for Simulation nodes to SY5 EX2
+  # 0905398f72fd4a617d14b0161b66ac2b259005e4
+  virgil_build_id: '1150204'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
