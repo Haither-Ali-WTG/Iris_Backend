@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241104.8
-  # Mon Nov  4 07:47:05 UTC 2024 -- Mon Nov  4 18:47:05 AEDT 2024
+  # Dante Build Artifact 20241104.9
+  # Mon Nov  4 12:11:49 UTC 2024 -- Mon Nov  4 23:11:49 AEDT 2024
   #
-  # Merge pull request 29683 from dante_artifact_upgrade into master
-  # 767c4133d0fc29c74531eeefa6cdd04f5def31ab
-  dante_build_id: '1150256'
+  # Merged PR 29674: WI00824885: get the beggining 3 char of hostname to define dc
+  # f94ead505275594c5caaaeef5f5d4627661897df
+  dante_build_id: '1150461'
 
   # virgil 20241104.5
   # Mon Nov  4 06:55:34 UTC 2024 -- Mon Nov  4 17:55:34 AEDT 2024
