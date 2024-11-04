@@ -7,12 +7,12 @@ variables:
   # f94ead505275594c5caaaeef5f5d4627661897df
   dante_build_id: '1150461'
 
-  # virgil 20241104.5
-  # Mon Nov  4 06:55:34 UTC 2024 -- Mon Nov  4 17:55:34 AEDT 2024
+  # virgil 20241105.3
+  # Mon Nov  4 21:04:58 UTC 2024 -- Tue Nov  5 08:04:58 AEDT 2024
   #
-  # Merged PR 29677: Prep switch ports for Simulation nodes to SY5 EX2
-  # 0905398f72fd4a617d14b0161b66ac2b259005e4
-  virgil_build_id: '1150204'
+  # Merged PR 29609: add five new C43 for kafka node replacements
+  # 990e5fc97d75230e4b0c5010aa18e5e56000cde3
+  virgil_build_id: '1150828'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
