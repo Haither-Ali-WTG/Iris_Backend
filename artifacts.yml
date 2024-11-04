@@ -7,12 +7,12 @@ variables:
   # b1b0971831a3c7f7edcfcb365416d89bdbda4f6b
   dante_build_id: '1150858'
 
-  # virgil 20241105.3
-  # Mon Nov  4 21:04:58 UTC 2024 -- Tue Nov  5 08:04:58 AEDT 2024
+  # virgil 20241105.13
+  # Mon Nov  4 23:18:24 UTC 2024 -- Tue Nov  5 10:18:24 AEDT 2024
   #
-  # Merged PR 29609: add five new C43 for kafka node replacements
-  # 990e5fc97d75230e4b0c5010aa18e5e56000cde3
-  virgil_build_id: '1150828'
+  # Merge pull request 29704 from virgil_python_upgrade into master
+  # 56ddeef15caa7a00ea579e50bda24fa05793e2f2
+  virgil_build_id: '1150970'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
