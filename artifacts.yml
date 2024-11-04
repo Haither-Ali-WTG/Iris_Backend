@@ -7,12 +7,12 @@ variables:
   # fa9cb1f31128097a342ba814271426635053dd98
   dante_build_id: '1149934'
 
-  # virgil 20241101.12
-  # Fri Nov  1 03:41:32 UTC 2024 -- Fri Nov  1 14:41:32 AEDT 2024
+  # virgil 20241104.2
+  # Mon Nov  4 04:01:37 UTC 2024 -- Mon Nov  4 15:01:37 AEDT 2024
   #
-  # Merged PR 29577: recorrect apex53/54 rack info
-  # f54fdfed945340d7a82cd315517e5a79f7f10aed
-  virgil_build_id: '1147295'
+  # Merged PR 29656: CS01778992 - Provision new staging Qs for Cargo Vis Project
+  # 971f7f5d0da146886da437334ccae8caf7b4389f
+  virgil_build_id: '1150057'
 
   # sqlbilling 20241028.7
   # Mon Oct 28 05:33:58 UTC 2024 -- Mon Oct 28 16:33:58 AEDT 2024
