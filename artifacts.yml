@@ -7,12 +7,12 @@ variables:
   # 779b102c6a2c799a59d81e2069b88785bad8d2a3
   dante_build_id: '1151177'
 
-  # virgil 20241105.23
-  # Tue Nov  5 01:21:29 UTC 2024 -- Tue Nov  5 12:21:29 AEDT 2024
+  # virgil 20241105.34
+  # Tue Nov  5 05:47:26 UTC 2024 -- Tue Nov  5 16:47:26 AEDT 2024
   #
-  # Merged PR 29751: Enabled simulation8712 node in dante
-  # 230fb7a26c46af78d29980344de3bb150a54ad8b
-  virgil_build_id: '1151129'
+  # Merged PR 29763: SY5 migration, swp reservation for Mgmt controller, fabric monitoring
+  # 5b9cc5d24a20d68c0e462d81754aad8b1af58062
+  virgil_build_id: '1151364'
 
   # sqlbilling 20241105.2
   # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
