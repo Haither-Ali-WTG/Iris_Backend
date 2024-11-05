@@ -7,12 +7,12 @@ variables:
   # 5f48536941aa7eda60fac01a963fa9f38b35d96b
   dante_build_id: '1152036'
 
-  # virgil 20241106.1
-  # Tue Nov  5 20:49:41 UTC 2024 -- Wed Nov  6 07:49:41 AEDT 2024
+  # virgil 20241106.5
+  # Tue Nov  5 23:04:14 UTC 2024 -- Wed Nov  6 10:04:14 AEDT 2024
   #
-  # Merged PR 29721: Add a couple machines to cabs 102, 103, and 206
-  # c170e0723b9801440d1b049741a668814b9a6b09
-  virgil_build_id: '1151988'
+  # Merged PR 29288: Virgil - Add comments about VTEPs
+  # ddf1b3ae49d59b8ea4c79300900085443a619cfc
+  virgil_build_id: '1152119'
 
   # sqlbilling 20241105.2
   # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
