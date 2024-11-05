@@ -7,12 +7,12 @@ variables:
   # 803a54de021de89b5b3015d2f256a53f97970f04
   dante_build_id: '1151435'
 
-  # virgil 20241105.34
-  # Tue Nov  5 05:47:26 UTC 2024 -- Tue Nov  5 16:47:26 AEDT 2024
+  # virgil 20241106.1
+  # Tue Nov  5 20:49:41 UTC 2024 -- Wed Nov  6 07:49:41 AEDT 2024
   #
-  # Merged PR 29763: SY5 migration, swp reservation for Mgmt controller, fabric monitoring
-  # 5b9cc5d24a20d68c0e462d81754aad8b1af58062
-  virgil_build_id: '1151364'
+  # Merged PR 29721: Add a couple machines to cabs 102, 103, and 206
+  # c170e0723b9801440d1b049741a668814b9a6b09
+  virgil_build_id: '1151988'
 
   # sqlbilling 20241105.2
   # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
