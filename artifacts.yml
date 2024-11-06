@@ -7,16 +7,16 @@ variables:
   # d6344bb5131662c2232fd7981805cdc19b7c7c57
   dante_build_id: '1153235'
 
-  # virgil 20241106.23
-  # Wed Nov  6 05:30:05 UTC 2024 -- Wed Nov  6 16:30:05 AEDT 2024
+  # virgil 20241107.6
+  # Wed Nov  6 23:43:27 UTC 2024 -- Thu Nov  7 10:43:27 AEDT 2024
   #
-  # Merged PR 29830: MTU support for oob network on management nodes
-  # 3c9563c86d931f46e4a00a9a9dac04abca0f30f9
-  virgil_build_id: '1152563'
+  # Merged PR 29848: Decommission sydco-snas-1 and au2nas01
+  # 465c2a8d815265e80af17ef1add9eaf6fb85a914
+  virgil_build_id: '1153335'
 
-  # sqlbilling 20241105.2
-  # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
+  # sqlbilling 20241107.2
+  # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
   #
-  # Merged PR 28820: Updated de1-prod-frontend-1.yml
-  # f103fdf39c0ea29558e49712869ca0a8f53172de
-  sqlbilling_build_id: '1151052'
+  # Merged PR 29781: Updated us2-prod-frontend-1CS01782307.yml
+  # df4bef24d225a2c735f571a5182e3617cd8dcf88
+  sqlbilling_build_id: '1153263'
