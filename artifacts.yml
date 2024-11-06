@@ -7,12 +7,12 @@ variables:
   # 17b3c28af7de8a3f863aec4bcd150d6823ac6e87
   dante_build_id: '1152471'
 
-  # virgil 20241106.11
-  # Wed Nov  6 03:01:13 UTC 2024 -- Wed Nov  6 14:01:13 AEDT 2024
+  # virgil 20241106.23
+  # Wed Nov  6 05:30:05 UTC 2024 -- Wed Nov  6 16:30:05 AEDT 2024
   #
-  # Merged PR 29817: Put dante to on demand for management node 3
-  # 852893d9fc6cbc8e21b41137a7ff10bafde2f751
-  virgil_build_id: '1152422'
+  # Merged PR 29830: MTU support for oob network on management nodes
+  # 3c9563c86d931f46e4a00a9a9dac04abca0f30f9
+  virgil_build_id: '1152563'
 
   # sqlbilling 20241105.2
   # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
