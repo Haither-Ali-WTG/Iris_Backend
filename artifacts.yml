@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241106.3
-  # Wed Nov  6 00:50:01 UTC 2024 -- Wed Nov  6 11:50:01 AEDT 2024
+  # Dante Build Artifact 20241106.4
+  # Wed Nov  6 03:46:46 UTC 2024 -- Wed Nov  6 14:46:46 AEDT 2024
   #
-  # Merged PR 29805: K8s - Add a retry count variable for long k8s jobs
-  # 058b30dd3d5d0964614d322c9cab902ed03430d5
-  dante_build_id: '1152252'
+  # Merge pull request 29825 from dante_artifact_upgrade into master
+  # 17b3c28af7de8a3f863aec4bcd150d6823ac6e87
+  dante_build_id: '1152471'
 
-  # virgil 20241106.5
-  # Tue Nov  5 23:04:14 UTC 2024 -- Wed Nov  6 10:04:14 AEDT 2024
+  # virgil 20241106.11
+  # Wed Nov  6 03:01:13 UTC 2024 -- Wed Nov  6 14:01:13 AEDT 2024
   #
-  # Merged PR 29288: Virgil - Add comments about VTEPs
-  # ddf1b3ae49d59b8ea4c79300900085443a619cfc
-  virgil_build_id: '1152119'
+  # Merged PR 29817: Put dante to on demand for management node 3
+  # 852893d9fc6cbc8e21b41137a7ff10bafde2f751
+  virgil_build_id: '1152422'
 
   # sqlbilling 20241105.2
   # Tue Nov  5 00:29:29 UTC 2024 -- Tue Nov  5 11:29:29 AEDT 2024
