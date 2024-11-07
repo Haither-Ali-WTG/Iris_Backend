@@ -7,12 +7,12 @@ variables:
   # 14bed6c2c8b86f32a953f5fd3d5552194057bf12
   dante_build_id: '1153853'
 
-  # virgil 20241107.23
-  # Thu Nov  7 06:32:43 UTC 2024 -- Thu Nov  7 17:32:43 AEDT 2024
+  # virgil 20241108.2
+  # Thu Nov  7 23:04:28 UTC 2024 -- Fri Nov  8 10:04:28 AEDT 2024
   #
-  # Merged PR 29894: more Simulation and Kafka nodes to SY5
-  # cae0be9c34ea5e70f2293b92d1bd8623ac0ffc7a
-  virgil_build_id: '1153803'
+  # Merged PR 29216: Move ACLs out into Virgil
+  # cff5286e9390ff95e92a41450fd4423b622bcd91
+  virgil_build_id: '1154449'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
