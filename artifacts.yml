@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241107.2
-  # Thu Nov  7 00:31:13 UTC 2024 -- Thu Nov  7 11:31:13 AEDT 2024
+  # Dante Build Artifact 20241107.3
+  # Thu Nov  7 02:08:03 UTC 2024 -- Thu Nov  7 13:08:03 AEDT 2024
   #
-  # Merged PR 29851: MTU support for oob (RHEL and Ubuntu)
-  # 58c869f0fc88f5c0789d2dc407340f4cc7611fc4
-  dante_build_id: '1153392'
+  # Merge pull request 29856 from dante_artifact_upgrade into master
+  # 5e3740e4f810fd5647f23595fed5cf5f2294f136
+  dante_build_id: '1153530'
 
   # virgil 20241107.16
   # Thu Nov  7 01:09:56 UTC 2024 -- Thu Nov  7 12:09:56 AEDT 2024
