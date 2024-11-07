@@ -7,12 +7,12 @@ variables:
   # 845e0868554e1cacab28f17a7957cb5fc1002e7e
   dante_build_id: '1153725'
 
-  # virgil 20241107.19
-  # Thu Nov  7 04:20:42 UTC 2024 -- Thu Nov  7 15:20:42 AEDT 2024
+  # virgil 20241107.23
+  # Thu Nov  7 06:32:43 UTC 2024 -- Thu Nov  7 17:32:43 AEDT 2024
   #
-  # Merged PR 29867: Set oob mtu to 1300 for mgmt nodes 1 and 2
-  # 70e4a125a88ce164e0779c51baf78e879cb7f7b7
-  virgil_build_id: '1153676'
+  # Merged PR 29894: more Simulation and Kafka nodes to SY5
+  # cae0be9c34ea5e70f2293b92d1bd8623ac0ffc7a
+  virgil_build_id: '1153803'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
