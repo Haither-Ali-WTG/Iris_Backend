@@ -7,12 +7,12 @@ variables:
   # 5e3740e4f810fd5647f23595fed5cf5f2294f136
   dante_build_id: '1153530'
 
-  # virgil 20241107.16
-  # Thu Nov  7 01:09:56 UTC 2024 -- Thu Nov  7 12:09:56 AEDT 2024
+  # virgil 20241107.19
+  # Thu Nov  7 04:20:42 UTC 2024 -- Thu Nov  7 15:20:42 AEDT 2024
   #
-  # Merged PR 29862: Preparing swp for more servers to SY5, wave 2
-  # 240224d9ff6993e7b1c57117d1eaa6944fed1674
-  virgil_build_id: '1153454'
+  # Merged PR 29867: Set oob mtu to 1300 for mgmt nodes 1 and 2
+  # 70e4a125a88ce164e0779c51baf78e879cb7f7b7
+  virgil_build_id: '1153676'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
