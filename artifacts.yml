@@ -7,12 +7,12 @@ variables:
   # 58c869f0fc88f5c0789d2dc407340f4cc7611fc4
   dante_build_id: '1153392'
 
-  # virgil 20241107.13
-  # Thu Nov  7 00:45:33 UTC 2024 -- Thu Nov  7 11:45:33 AEDT 2024
+  # virgil 20241107.16
+  # Thu Nov  7 01:09:56 UTC 2024 -- Thu Nov  7 12:09:56 AEDT 2024
   #
-  # Merged PR 29437: CMS TEST Networks
-  # 87df77c1208ec6d03569c47af0922c1092a56e47
-  virgil_build_id: '1153409'
+  # Merged PR 29862: Preparing swp for more servers to SY5, wave 2
+  # 240224d9ff6993e7b1c57117d1eaa6944fed1674
+  virgil_build_id: '1153454'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
