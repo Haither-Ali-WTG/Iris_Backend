@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241107.1
-  # Wed Nov  6 22:14:33 UTC 2024 -- Thu Nov  7 09:14:33 AEDT 2024
+  # Dante Build Artifact 20241107.2
+  # Thu Nov  7 00:31:13 UTC 2024 -- Thu Nov  7 11:31:13 AEDT 2024
   #
-  # Merge pull request 29706 from dante_python_upgrade into master
-  # d6344bb5131662c2232fd7981805cdc19b7c7c57
-  dante_build_id: '1153235'
+  # Merged PR 29851: MTU support for oob (RHEL and Ubuntu)
+  # 58c869f0fc88f5c0789d2dc407340f4cc7611fc4
+  dante_build_id: '1153392'
 
-  # virgil 20241107.6
-  # Wed Nov  6 23:43:27 UTC 2024 -- Thu Nov  7 10:43:27 AEDT 2024
+  # virgil 20241107.13
+  # Thu Nov  7 00:45:33 UTC 2024 -- Thu Nov  7 11:45:33 AEDT 2024
   #
-  # Merged PR 29848: Decommission sydco-snas-1 and au2nas01
-  # 465c2a8d815265e80af17ef1add9eaf6fb85a914
-  virgil_build_id: '1153335'
+  # Merged PR 29437: CMS TEST Networks
+  # 87df77c1208ec6d03569c47af0922c1092a56e47
+  virgil_build_id: '1153409'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
