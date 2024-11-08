@@ -7,12 +7,12 @@ variables:
   # 1de4ecfd91d57de57f0a5fe9e2c28ff59fbd820b
   dante_build_id: '1154492'
 
-  # virgil 20241108.2
-  # Thu Nov  7 23:04:28 UTC 2024 -- Fri Nov  8 10:04:28 AEDT 2024
+  # virgil 20241108.5
+  # Fri Nov  8 00:57:54 UTC 2024 -- Fri Nov  8 11:57:54 AEDT 2024
   #
-  # Merged PR 29216: Move ACLs out into Virgil
-  # cff5286e9390ff95e92a41450fd4423b622bcd91
-  virgil_build_id: '1154449'
+  # Merged PR 29929: Adding SY5 port configuration for au2nl00001 move\
+  # 702ea58c55f0ca7f73d3310ea6e7861c5859bc5a
+  virgil_build_id: '1154565'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
