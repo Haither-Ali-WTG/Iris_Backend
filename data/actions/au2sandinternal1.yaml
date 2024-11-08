@@ -1,4 +1,11 @@
 ---
+ip_restrict:
+  description: |-
+    Restrict http request based on IP
+  order: 0
+  actions:
+    - http-request deny if !wtg_src !shipamax_src
+
 secure_cookie:
   description: |-
     Set secure attribute
