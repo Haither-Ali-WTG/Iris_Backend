@@ -1,5 +1,5 @@
 ---
-ip_restrict:
+restrict_ip:
   description: |-
     Restrict http request based on IP
   order: 0
