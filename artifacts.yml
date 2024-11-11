@@ -7,12 +7,12 @@ variables:
   # 189c6cabdeea35a52e2d8d41dd63cb8152f3fe02
   dante_build_id: '1157426'
 
-  # virgil 20241108.11
-  # Fri Nov  8 06:46:27 UTC 2024 -- Fri Nov  8 17:46:27 AEDT 2024
+  # virgil 20241112.2
+  # Mon Nov 11 21:57:10 UTC 2024 -- Tue Nov 12 08:57:10 AEDT 2024
   #
-  # Merged PR 29946: new Flashblade at Rack404
-  # c75636149fdd8cc1f1b17560774417ed23283a57
-  virgil_build_id: '1154912'
+  # Merged PR 29976: Put AU2 mgmt node 3 to continuous
+  # a63e9ded31335a29ac45cad96bb62d33c99a2d8a
+  virgil_build_id: '1158170'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
