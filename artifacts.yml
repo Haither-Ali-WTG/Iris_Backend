@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241112.2
-  # Tue Nov 12 03:47:11 UTC 2024 -- Tue Nov 12 14:47:11 AEDT 2024
+  # Dante Build Artifact 20241112.3
+  # Tue Nov 12 04:23:57 UTC 2024 -- Tue Nov 12 15:23:57 AEDT 2024
   #
-  # Merge pull request 30013 from dante_artifact_upgrade into master
-  # 2f6918714b9aa3ff3e2e3b39eef91cda8a549b6c
-  dante_build_id: '1158571'
+  # Merge pull request 29996 from dante_python_upgrade into master
+  # f813c3bc701d6fa2c7e2255da87cf29e17bc0670
+  dante_build_id: '1158624'
 
   # virgil 20241112.17
   # Tue Nov 12 02:52:17 UTC 2024 -- Tue Nov 12 13:52:17 AEDT 2024
@@ -14,9 +14,9 @@ variables:
   # d29f816816d2a0275634975cf6a247aa92ba4393
   virgil_build_id: '1158491'
 
-  # sqlbilling 20241107.2
-  # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
+  # sqlbilling 20241112.2
+  # Tue Nov 12 04:05:32 UTC 2024 -- Tue Nov 12 15:05:32 AEDT 2024
   #
-  # Merged PR 29781: Updated us2-prod-frontend-1CS01782307.yml
-  # df4bef24d225a2c735f571a5182e3617cd8dcf88
-  sqlbilling_build_id: '1153263'
+  # Merged PR 30022: Update Readonly IPs
+  # 6f0e17b283eea73b5e0213fddeae2acf60678fa0
+  sqlbilling_build_id: '1158602'
