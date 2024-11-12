@@ -7,12 +7,12 @@ variables:
   # f813c3bc701d6fa2c7e2255da87cf29e17bc0670
   dante_build_id: '1158624'
 
-  # virgil 20241112.17
-  # Tue Nov 12 02:52:17 UTC 2024 -- Tue Nov 12 13:52:17 AEDT 2024
+  # virgil 20241112.21
+  # Tue Nov 12 06:09:50 UTC 2024 -- Tue Nov 12 17:09:50 AEDT 2024
   #
-  # Merged PR 30031: Rebuild mgmt node 2 with Ubuntu 24.04
-  # d29f816816d2a0275634975cf6a247aa92ba4393
-  virgil_build_id: '1158491'
+  # Merged PR 30055: Put AU2 management node 2 back to continuous
+  # 53662b5900fb634975b13193b3e5cb0dfe4f0806
+  virgil_build_id: '1158760'
 
   # sqlbilling 20241112.2
   # Tue Nov 12 04:05:32 UTC 2024 -- Tue Nov 12 15:05:32 AEDT 2024
