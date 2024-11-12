@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241111.1
-  # Mon Nov 11 03:01:08 UTC 2024 -- Mon Nov 11 14:01:08 AEDT 2024
+  # Dante Build Artifact 20241112.1
+  # Tue Nov 12 02:55:42 UTC 2024 -- Tue Nov 12 13:55:42 AEDT 2024
   #
-  # Merged PR 29927: Workaround for netplan apply and frr bug on Ubuntu 22.04
-  # 189c6cabdeea35a52e2d8d41dd63cb8152f3fe02
-  dante_build_id: '1157426'
+  # Merged PR 30029: Updated cumulus sources to use netq 4.8 from cumulus 5.8 repo
+  # 8f3f734eced9c38c109ea7cd6ad4300b3f52de0f
+  dante_build_id: '1158493'
 
-  # virgil 20241112.7
-  # Mon Nov 11 23:15:18 UTC 2024 -- Tue Nov 12 10:15:18 AEDT 2024
+  # virgil 20241112.17
+  # Tue Nov 12 02:52:17 UTC 2024 -- Tue Nov 12 13:52:17 AEDT 2024
   #
-  # Merged PR 30015: config swp for more Kafka servers to SY5
-  # 46ed2eb279a4274641d8b9b4746a57d97f4bb62e
-  virgil_build_id: '1158282'
+  # Merged PR 30031: Rebuild mgmt node 2 with Ubuntu 24.04
+  # d29f816816d2a0275634975cf6a247aa92ba4393
+  virgil_build_id: '1158491'
 
   # sqlbilling 20241107.2
   # Wed Nov  6 22:38:23 UTC 2024 -- Thu Nov  7 09:38:23 AEDT 2024
