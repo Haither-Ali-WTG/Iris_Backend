@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241112.1
-  # Tue Nov 12 02:55:42 UTC 2024 -- Tue Nov 12 13:55:42 AEDT 2024
+  # Dante Build Artifact 20241112.2
+  # Tue Nov 12 03:47:11 UTC 2024 -- Tue Nov 12 14:47:11 AEDT 2024
   #
-  # Merged PR 30029: Updated cumulus sources to use netq 4.8 from cumulus 5.8 repo
-  # 8f3f734eced9c38c109ea7cd6ad4300b3f52de0f
-  dante_build_id: '1158493'
+  # Merge pull request 30013 from dante_artifact_upgrade into master
+  # 2f6918714b9aa3ff3e2e3b39eef91cda8a549b6c
+  dante_build_id: '1158571'
 
   # virgil 20241112.17
   # Tue Nov 12 02:52:17 UTC 2024 -- Tue Nov 12 13:52:17 AEDT 2024
