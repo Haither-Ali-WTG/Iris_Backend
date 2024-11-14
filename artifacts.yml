@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241114.2
-  # Wed Nov 13 22:41:28 UTC 2024 -- Thu Nov 14 09:41:28 AEDT 2024
+  # Dante Build Artifact 20241114.7
+  # Thu Nov 14 05:45:51 UTC 2024 -- Thu Nov 14 16:45:51 AEDT 2024
   #
-  # Merged PR 30094: ansible 9.6.0 is obsolete. Update to 9.6.1
-  # 2dca36894e85bcd0e3b1656d9072db91cb294634
-  dante_build_id: '1160355'
+  # Merged PR 30136: Fix artifact pipeline
+  # 80f34bfc1fed67002b1a5a52e2f24b963d00ab7b
+  dante_build_id: '1160814'
 
-  # virgil 20241114.16
-  # Thu Nov 14 04:03:19 UTC 2024 -- Thu Nov 14 15:03:19 AEDT 2024
+  # virgil 20241114.19
+  # Thu Nov 14 05:57:11 UTC 2024 -- Thu Nov 14 16:57:11 AEDT 2024
   #
-  # Merged PR 30099: Adding SY5 port configuration for HAProxy relocations
-  # 699541ac720132fe76611447d79220a15814362a
-  virgil_build_id: '1160731'
+  # Merged PR 30142: Virgil - Amend problems with the C43 config
+  # 4828f42419e8a3f75d9f53a6bb2b78e27a7b83a4
+  virgil_build_id: '1160827'
 
   # sqlbilling 20241113.6
   # Tue Nov 12 23:33:51 UTC 2024 -- Wed Nov 13 10:33:51 AEDT 2024
