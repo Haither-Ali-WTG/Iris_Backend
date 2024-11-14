@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20241112.4
-  # Tue Nov 12 07:07:21 UTC 2024 -- Tue Nov 12 18:07:21 AEDT 2024
+  # Dante Build Artifact 20241114.2
+  # Wed Nov 13 22:41:28 UTC 2024 -- Thu Nov 14 09:41:28 AEDT 2024
   #
-  # Merge pull request 30065 from dante_artifact_upgrade into master
-  # 00d597f5df8d85e0e59ba30b7924e2b4b7c52ff5
-  dante_build_id: '1158809'
+  # Merged PR 30094: ansible 9.6.0 is obsolete. Update to 9.6.1
+  # 2dca36894e85bcd0e3b1656d9072db91cb294634
+  dante_build_id: '1160355'
 
-  # virgil 20241112.21
-  # Tue Nov 12 06:09:50 UTC 2024 -- Tue Nov 12 17:09:50 AEDT 2024
+  # virgil 20241114.10
+  # Thu Nov 14 02:03:38 UTC 2024 -- Thu Nov 14 13:03:38 AEDT 2024
   #
-  # Merged PR 30055: Put AU2 management node 2 back to continuous
-  # 53662b5900fb634975b13193b3e5cb0dfe4f0806
-  virgil_build_id: '1158760'
+  # Merged PR 30107: Add storage info to C43 nodes
+  # 607c3545e2bab7e957813cfd63a1cda44ab978b3
+  virgil_build_id: '1160585'
 
-  # sqlbilling 20241112.2
-  # Tue Nov 12 04:05:32 UTC 2024 -- Tue Nov 12 15:05:32 AEDT 2024
+  # sqlbilling 20241113.6
+  # Tue Nov 12 23:33:51 UTC 2024 -- Wed Nov 13 10:33:51 AEDT 2024
   #
-  # Merged PR 30022: Update Readonly IPs
-  # 6f0e17b283eea73b5e0213fddeae2acf60678fa0
-  sqlbilling_build_id: '1158602'
+  # Sort data files by customer before IP
+  # 909f64ec1e71ca102a87c91c96fa09f3a5a317b2
+  sqlbilling_build_id: '1159453'
