@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241114.7
-  # Thu Nov 14 05:45:51 UTC 2024 -- Thu Nov 14 16:45:51 AEDT 2024
+  # Dante Build Artifact 20241115.1
+  # Thu Nov 14 22:35:41 UTC 2024 -- Fri Nov 15 09:35:41 AEDT 2024
   #
-  # Merged PR 30136: Fix artifact pipeline
-  # 80f34bfc1fed67002b1a5a52e2f24b963d00ab7b
-  dante_build_id: '1160814'
+  # Merged PR 30134: WIP: Ubuntu: Use 2 ISOs for installation (small user_data ISO and large base ISO)
+  # fc1b703831f35b8d88f79f85f667bb802441d732
+  dante_build_id: '1161524'
 
-  # virgil 20241114.19
-  # Thu Nov 14 05:57:11 UTC 2024 -- Thu Nov 14 16:57:11 AEDT 2024
+  # virgil 20241115.5
+  # Thu Nov 14 22:56:56 UTC 2024 -- Fri Nov 15 09:56:56 AEDT 2024
   #
-  # Merged PR 30142: Virgil - Amend problems with the C43 config
-  # 4828f42419e8a3f75d9f53a6bb2b78e27a7b83a4
-  virgil_build_id: '1160827'
+  # Merged PR 30158: New ubuntu mirror and registry server (repurposed ceph node)
+  # 8d19a16ebb96ea8ffaca48cc038fba1375c703bd
+  virgil_build_id: '1161542'
 
   # sqlbilling 20241113.6
   # Tue Nov 12 23:33:51 UTC 2024 -- Wed Nov 13 10:33:51 AEDT 2024
