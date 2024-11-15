@@ -7,12 +7,12 @@ variables:
   # 508fb7a4c60a559a6990b57ae5fb76f2348d6917
   dante_build_id: '1161659'
 
-  # virgil 20241115.5
-  # Thu Nov 14 22:56:56 UTC 2024 -- Fri Nov 15 09:56:56 AEDT 2024
+  # virgil 20241115.9
+  # Fri Nov 15 04:50:55 UTC 2024 -- Fri Nov 15 15:50:55 AEDT 2024
   #
-  # Merged PR 30158: New ubuntu mirror and registry server (repurposed ceph node)
-  # 8d19a16ebb96ea8ffaca48cc038fba1375c703bd
-  virgil_build_id: '1161542'
+  # Merged PR 30183: prep for moving services and reclaim apex13/14 for SY5 new spine
+  # 63598530dec114e3988a5cac8a02e942831ea67d
+  virgil_build_id: '1161903'
 
   # sqlbilling 20241113.6
   # Tue Nov 12 23:33:51 UTC 2024 -- Wed Nov 13 10:33:51 AEDT 2024
