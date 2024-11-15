@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241115.1
-  # Thu Nov 14 22:35:41 UTC 2024 -- Fri Nov 15 09:35:41 AEDT 2024
+  # Dante Build Artifact 20241115.2
+  # Thu Nov 14 23:42:37 UTC 2024 -- Fri Nov 15 10:42:37 AEDT 2024
   #
-  # Merged PR 30134: WIP: Ubuntu: Use 2 ISOs for installation (small user_data ISO and large base ISO)
-  # fc1b703831f35b8d88f79f85f667bb802441d732
-  dante_build_id: '1161524'
+  # Merged PR 30165: Add roles for simulation env
+  # a52f67c1b8715a8a029a84a6aa5d6e4aa335aefa
+  dante_build_id: '1161606'
 
   # virgil 20241115.5
   # Thu Nov 14 22:56:56 UTC 2024 -- Fri Nov 15 09:56:56 AEDT 2024
