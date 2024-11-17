@@ -48,7 +48,7 @@ steps:
   - task: CopyFiles@2
     displayName: 'Merge artifacts to a single roles folder'
     inputs:
-      sourceFolder: nested_virt
+      sourceFolder: iris
       targetFolder: ansible
 
   - task: Ansible@0
