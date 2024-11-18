@@ -35,3 +35,16 @@ secured_cookie:
   description: Cookie is secure
   tests:
     - res.hdr(Set-Cookie),lower -m sub secure
+
+shipamax_src:
+  description: source IP is WiseTech (internal or external network)
+  tests:
+    # Shipamax FF Prod IP range
+    - src 54.220.20.216/32
+
+hackerrank_src:
+  description: source IP is WiseTech (internal or external network)
+  tests:
+    # hackerrank  IP range CS01697628
+    - src 52.73.33.136/32
+    - src 52.22.20.80/32
