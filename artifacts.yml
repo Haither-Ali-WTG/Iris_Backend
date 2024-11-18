@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241118.1
-  # Sun Nov 17 22:58:51 UTC 2024 -- Mon Nov 18 09:58:51 AEDT 2024
+  # Dante Build Artifact 20241118.2
+  # Mon Nov 18 00:18:00 UTC 2024 -- Mon Nov 18 11:18:00 AEDT 2024
   #
-  # Merged PR 30147: Increase container resources
-  # 2fac3aa8ad871aaffb99324b032005918e56fcce
-  dante_build_id: '1164318'
+  # Merged PR 30213: Fixed server rebuild pipeline
+  # 494c73737b1c418debad325ea9dcbea731da9bbf
+  dante_build_id: '1164416'
 
   # virgil 20241115.9
   # Fri Nov 15 04:50:55 UTC 2024 -- Fri Nov 15 15:50:55 AEDT 2024
