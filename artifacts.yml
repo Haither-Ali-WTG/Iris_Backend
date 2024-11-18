@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241118.2
-  # Mon Nov 18 00:18:00 UTC 2024 -- Mon Nov 18 11:18:00 AEDT 2024
+  # Dante Build Artifact 20241118.3
+  # Mon Nov 18 06:07:22 UTC 2024 -- Mon Nov 18 17:07:22 AEDT 2024
   #
-  # Merged PR 30213: Fixed server rebuild pipeline
-  # 494c73737b1c418debad325ea9dcbea731da9bbf
-  dante_build_id: '1164416'
+  # Merge pull request 30233 from dante_artifact_upgrade into master
+  # 7b620a49cad3cf4cb171aa137df2b8c02b08d2a5
+  dante_build_id: '1164734'
 
   # virgil 20241118.2
   # Mon Nov 18 05:15:28 UTC 2024 -- Mon Nov 18 16:15:28 AEDT 2024
