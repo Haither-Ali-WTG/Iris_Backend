@@ -1,6 +1,6 @@
 {% set warnings = [] %}
 clustered_instances:
-{% for clustered_instance in clustered_instance_names if hostvars[clustered_instance]['iis_servers'] | length > 0 %}
+{% for clustered_instance in clustered_instance_names if hostvars[clustered_instance]['iis_servers'] | default([]) | length > 0 %}
   {{ clustered_instance }}:
 {%  for file in iis_files %}
 {%    if clustered_instance in (file | split('/')) and (file | split('/') | last) in hostvars[clustered_instance]['iis_servers'] %}
