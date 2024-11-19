@@ -7,12 +7,12 @@ variables:
   # d98239cdd857e26ed7c8a35ec14a00017b609164
   dante_build_id: '1166367'
 
-  # virgil 20241119.4
-  # Mon Nov 18 22:30:33 UTC 2024 -- Tue Nov 19 09:30:33 AEDT 2024
+  # virgil 20241120.6
+  # Tue Nov 19 22:54:31 UTC 2024 -- Wed Nov 20 09:54:31 AEDT 2024
   #
-  # Merge pull request 30244 from virgil_python_upgrade into master
-  # 2d417780b5e52c00291978af791f5767e8391cac
-  virgil_build_id: '1165377'
+  # Merged PR 30283: update server locations, apex and swps, only upto servers moved in wave 3, and 4
+  # 3ad0e932bb582b05ee94c032bcb3a2279b3f885d
+  virgil_build_id: '1166451'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
