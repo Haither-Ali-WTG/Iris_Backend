@@ -7,6 +7,7 @@ haproxy_settings:
   frontend: include('haproxy_frontend_settings', required=False)
   cipher: include('haproxy_cipher_settings', required=False)
   timeouts: include('haproxy_timeouts_settings', required=False)
+  resources: include('haproxy_instance_resources_settings', required=False)
 
 haproxy_defaults_settings:
   mode: enum('http', 'tcp', required=False)
@@ -54,6 +55,14 @@ haproxy_timeouts_settings:
   http_request: int(min=1, required=False)
   queue: int(min=1, required=False)
   tarpit: int(min=1, required=False)
+
+instance_resources_settings:
+  cpu: regex('^[0-9]+m$', name='cpu limit', required=False)
+  memory: regex('^[0-9]+Mi$', name='memory limit', required=False)
+
+haproxy_instance_resources_settings:
+  production: include('instance_resources_settings', required=False)
+  simulation: include('instance_resources_settings', required=False)
 ---
 port: int(min=1, max=65535, required=False)
 regex: regex('^[ -~]+$', name='regular expression')
