@@ -200,13 +200,6 @@
     apparmor_profile: "{{ container_name if (virgil_os_variant == 'ubuntu') else '' }}"
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
-    resources:  # TODO review, probably make configurable
-      production:
-        cpu: 1000m
-        memory: 1000Mi
-      simulation:
-        cpu: 200m
-        memory: 100Mi
 
 - name: Generate delay restart marker
   template:

@@ -129,6 +129,10 @@ clustered_instances:
         - star-testrig-sand-wtg-zone
         - star-bolero-sand-wtg-zone
         - star-cargowise-com
+      resources:
+        production:
+          cpu: 4000m
+          memory: 8000Mi
       # sqlbilling_acl:
       #  - acl_name: customerreadonly_src
       #    file: au2-prod-frontend-1.acl

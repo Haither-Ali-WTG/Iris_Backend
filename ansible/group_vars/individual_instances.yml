@@ -48,3 +48,11 @@ individual_instance_defaults:
     http_request: 60
     queue: 30
     tarpit: 60
+
+  resources:
+    production:
+      cpu: 8000m
+      memory: 64000Mi
+    simulation:
+      cpu: 500m
+      memory: 400Mi
