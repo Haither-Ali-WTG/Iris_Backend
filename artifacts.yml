@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241120.5
-  # Wed Nov 20 04:26:39 UTC 2024 -- Wed Nov 20 15:26:39 AEDT 2024
+  # Dante Build Artifact 20241121.1
+  # Wed Nov 20 22:38:52 UTC 2024 -- Thu Nov 21 09:38:52 AEDT 2024
   #
-  # Merge pull request 30336 from dante_artifact_upgrade into master
-  # c78e5df0f4b55b2d051b5ac7547c5071f168c73b
-  dante_build_id: '1166826'
+  # Merged PR 30355: Removed obsolete keys from mirror sync scritps
+  # 8e0f3765649b2385c573539c95368bdbbcb9f366
+  dante_build_id: '1167566'
 
-  # virgil 20241120.16
-  # Wed Nov 20 06:08:43 UTC 2024 -- Wed Nov 20 17:08:43 AEDT 2024
+  # virgil 20241121.1
+  # Wed Nov 20 22:08:46 UTC 2024 -- Thu Nov 21 09:08:46 AEDT 2024
   #
-  # Merged PR 30299: New Spines at SY5
-  # 62537bbaf9fedb1a75913ed2218e379f03b1e5f7
-  virgil_build_id: '1166921'
+  # Merged PR 28777: Add initial ocp de1prod1 port details
+  # 605a7e78d9617b3d530045e81c5458de5544d707
+  virgil_build_id: '1167537'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
