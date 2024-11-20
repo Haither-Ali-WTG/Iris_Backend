@@ -7,12 +7,12 @@ variables:
   # c78e5df0f4b55b2d051b5ac7547c5071f168c73b
   dante_build_id: '1166826'
 
-  # virgil 20241120.12
-  # Wed Nov 20 03:20:57 UTC 2024 -- Wed Nov 20 14:20:57 AEDT 2024
+  # virgil 20241120.16
+  # Wed Nov 20 06:08:43 UTC 2024 -- Wed Nov 20 17:08:43 AEDT 2024
   #
-  # Merged PR 30319: Amend problems with fake switch on cumulus 4
-  # 2275eabd3713df8469e488fae3ea77966d6b68af
-  virgil_build_id: '1166757'
+  # Merged PR 30299: New Spines at SY5
+  # 62537bbaf9fedb1a75913ed2218e379f03b1e5f7
+  virgil_build_id: '1166921'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
