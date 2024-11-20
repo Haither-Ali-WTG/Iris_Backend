@@ -7,12 +7,12 @@ variables:
   # 583aa499c22a033a4f8c3e984f187f83c968510f
   dante_build_id: '1166679'
 
-  # virgil 20241120.6
-  # Tue Nov 19 22:54:31 UTC 2024 -- Wed Nov 20 09:54:31 AEDT 2024
+  # virgil 20241120.12
+  # Wed Nov 20 03:20:57 UTC 2024 -- Wed Nov 20 14:20:57 AEDT 2024
   #
-  # Merged PR 30283: update server locations, apex and swps, only upto servers moved in wave 3, and 4
-  # 3ad0e932bb582b05ee94c032bcb3a2279b3f885d
-  virgil_build_id: '1166451'
+  # Merged PR 30319: Amend problems with fake switch on cumulus 4
+  # 2275eabd3713df8469e488fae3ea77966d6b68af
+  virgil_build_id: '1166757'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
