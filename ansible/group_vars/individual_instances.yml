@@ -54,5 +54,5 @@ individual_instance_defaults:
       cpu: 8000m
       memory: 64000Mi
     simulation:
-      cpu: 200m
-      memory: 100Mi
+      cpu: 500m
+      memory: 400Mi
