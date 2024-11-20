@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241120.2
-  # Tue Nov 19 23:47:14 UTC 2024 -- Wed Nov 20 10:47:14 AEDT 2024
+  # Dante Build Artifact 20241120.4
+  # Wed Nov 20 02:06:24 UTC 2024 -- Wed Nov 20 13:06:24 AEDT 2024
   #
-  # Merge pull request 30306 from dante_artifact_upgrade into master
-  # 84a15d135abc696aaab313c20c87df5a44284a81
-  dante_build_id: '1166534'
+  # Merged PR 30317: Add missing ansible role to IRIS
+  # 583aa499c22a033a4f8c3e984f187f83c968510f
+  dante_build_id: '1166679'
 
   # virgil 20241120.6
   # Tue Nov 19 22:54:31 UTC 2024 -- Wed Nov 20 09:54:31 AEDT 2024
