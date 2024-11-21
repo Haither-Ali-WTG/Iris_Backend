@@ -7,12 +7,12 @@ variables:
   # 8e0f3765649b2385c573539c95368bdbbcb9f366
   dante_build_id: '1167566'
 
-  # virgil 20241121.5
-  # Wed Nov 20 23:44:51 UTC 2024 -- Thu Nov 21 10:44:51 AEDT 2024
+  # virgil 20241121.8
+  # Thu Nov 21 00:16:13 UTC 2024 -- Thu Nov 21 11:16:13 AEDT 2024
   #
-  # Merged PR 30328: Remove AU exit1 and exit2 from simulation
-  # 4acd609bc3064d07ec00403ea7a7d6e69e8b20c6
-  virgil_build_id: '1167631'
+  # Merged PR 30368: Add remaining DNS entries for us and de
+  # 5425118fd83d0bad4b64e0050744e2677b072fd5
+  virgil_build_id: '1167668'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
