@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241121.1
-  # Wed Nov 20 22:38:52 UTC 2024 -- Thu Nov 21 09:38:52 AEDT 2024
+  # Dante Build Artifact 20241121.2
+  # Thu Nov 21 00:57:48 UTC 2024 -- Thu Nov 21 11:57:48 AEDT 2024
   #
-  # Merged PR 30355: Removed obsolete keys from mirror sync scritps
-  # 8e0f3765649b2385c573539c95368bdbbcb9f366
-  dante_build_id: '1167566'
+  # Merged PR 30330: Remove exit switch from tests
+  # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
+  dante_build_id: '1167702'
 
   # virgil 20241121.8
   # Thu Nov 21 00:16:13 UTC 2024 -- Thu Nov 21 11:16:13 AEDT 2024
