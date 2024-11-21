@@ -3,6 +3,7 @@ au2-prod-frontend-1:
   machines:
     au2lbl00345: ~
     au2lbl00346: ~
+    au2lbl00349: ~
   floating_ips:
     - description: WiseCloud RDP (PROD)
       ip: 10.2.64.135
