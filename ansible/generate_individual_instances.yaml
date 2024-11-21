@@ -92,7 +92,6 @@
         - frontend
         - cipher
         - timeouts
-        - resources
 
     - name: Combine ciphers from all profiles
       set_fact:

@@ -18,6 +18,13 @@ individual_instance_defaults:
       81: 7999
       443: 7637
     port_prealloc: []  # pre-allocated ports, eg. [1100-1199, 1500-1699, 8080]
+    resources:
+      production:
+        cpu: 8000m
+        memory: 64000Mi
+      simulation:
+        cpu: 500m
+        memory: 400Mi
 
   stats:
     ports:
@@ -48,11 +55,3 @@ individual_instance_defaults:
     http_request: 60
     queue: 30
     tarpit: 60
-
-  resources:
-    production:
-      cpu: 8000m
-      memory: 64000Mi
-    simulation:
-      cpu: 500m
-      memory: 400Mi
