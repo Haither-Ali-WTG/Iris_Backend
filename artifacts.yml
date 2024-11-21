@@ -7,12 +7,12 @@ variables:
   # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
   dante_build_id: '1167702'
 
-  # virgil 20241121.8
-  # Thu Nov 21 00:16:13 UTC 2024 -- Thu Nov 21 11:16:13 AEDT 2024
+  # virgil 20241121.17
+  # Thu Nov 21 03:41:45 UTC 2024 -- Thu Nov 21 14:41:45 AEDT 2024
   #
-  # Merged PR 30368: Add remaining DNS entries for us and de
-  # 5425118fd83d0bad4b64e0050744e2677b072fd5
-  virgil_build_id: '1167668'
+  # Merged PR 30388: mn6-virgil-update-after-server-move-WI00827568-wave5,6
+  # a0235be2cbacc0286c545adcb0277576a1f14bf6
+  virgil_build_id: '1167845'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
