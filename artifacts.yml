@@ -7,12 +7,12 @@ variables:
   # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
   dante_build_id: '1167702'
 
-  # virgil 20241121.17
-  # Thu Nov 21 03:41:45 UTC 2024 -- Thu Nov 21 14:41:45 AEDT 2024
+  # virgil 20241121.20
+  # Thu Nov 21 04:31:12 UTC 2024 -- Thu Nov 21 15:31:12 AEDT 2024
   #
-  # Merged PR 30388: mn6-virgil-update-after-server-move-WI00827568-wave5,6
-  # a0235be2cbacc0286c545adcb0277576a1f14bf6
-  virgil_build_id: '1167845'
+  # Merged PR 30393: update SY5 spine3/4 port mapping
+  # d55f65869f5a8852f575110ca2a75887e7d8e710
+  virgil_build_id: '1167896'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
