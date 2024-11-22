@@ -11,6 +11,11 @@ machines:
       os: ubuntu2204
       dc: AU2
       os_variant: ubuntu
+    au2lbl00349:
+      ansible_host: 10.2.64.23
+      os: ubuntu2204
+      dc: AU2
+      os_variant: ubuntu
     au2lbl00416:
       ansible_host: 10.2.136.11
       os: ubuntu2204
