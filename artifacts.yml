@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241121.2
-  # Thu Nov 21 00:57:48 UTC 2024 -- Thu Nov 21 11:57:48 AEDT 2024
+  # Dante Build Artifact 20241122.1
+  # Fri Nov 22 04:07:32 UTC 2024 -- Fri Nov 22 15:07:32 AEDT 2024
   #
-  # Merged PR 30330: Remove exit switch from tests
-  # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
-  dante_build_id: '1167702'
+  # Merge pull request 30351 from dante_artifact_upgrade into master
+  # 288353b612d2a87c41f3fdbe1e1dcf6513964ba2
+  dante_build_id: '1168882'
 
   # virgil 20241122.7
   # Fri Nov 22 03:12:38 UTC 2024 -- Fri Nov 22 14:12:38 AEDT 2024
