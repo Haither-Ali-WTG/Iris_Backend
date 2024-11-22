@@ -7,12 +7,12 @@ variables:
   # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
   dante_build_id: '1167702'
 
-  # virgil 20241121.20
-  # Thu Nov 21 04:31:12 UTC 2024 -- Thu Nov 21 15:31:12 AEDT 2024
+  # virgil 20241122.2
+  # Thu Nov 21 23:45:53 UTC 2024 -- Fri Nov 22 10:45:53 AEDT 2024
   #
-  # Merged PR 30393: update SY5 spine3/4 port mapping
-  # d55f65869f5a8852f575110ca2a75887e7d8e710
-  virgil_build_id: '1167896'
+  # Merged PR 30418: Update AAP server addresses
+  # 4550f5673fc1bea9acec7d54cdf274828ac9c728
+  virgil_build_id: '1168656'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
