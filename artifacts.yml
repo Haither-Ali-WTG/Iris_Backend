@@ -7,12 +7,12 @@ variables:
   # 480753d3b9cc3557c637e8fa1027e9a7e5485bc3
   dante_build_id: '1167702'
 
-  # virgil 20241122.2
-  # Thu Nov 21 23:45:53 UTC 2024 -- Fri Nov 22 10:45:53 AEDT 2024
+  # virgil 20241122.7
+  # Fri Nov 22 03:12:38 UTC 2024 -- Fri Nov 22 14:12:38 AEDT 2024
   #
-  # Merged PR 30418: Update AAP server addresses
-  # 4550f5673fc1bea9acec7d54cdf274828ac9c728
-  virgil_build_id: '1168656'
+  # Merged PR 30411: Set new IRIS servers to dante on demand
+  # 120e06da594bafa0e06d9d1c3e422bae5c71e5f4
+  virgil_build_id: '1168835'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
