@@ -10,33 +10,33 @@ au2-prod-frontend-1:
       vlan: 1064
       preempt: false
       virtual_router_id: 7
-      priority: [au2lbl00345, au2lbl00346]
-    - description: ediProd RDP (CORP)
+      priority: [au2lbl00345, au2lbl00346, au2lbl00349]
+    - description: SQL Readonly
       ip: 10.2.64.136
       vlan: 1064
       preempt: false
       virtual_router_id: 8
-      priority: [au2lbl00346, au2lbl00345]
+      priority: [au2lbl00346, au2lbl00349, au2lbl00345]
     - description: webservices
       ip: 10.2.64.137
       vlan: 1064
       preempt: true
       virtual_router_id: 9
-      priority: [au2lbl00345, au2lbl00346]
+      priority: [au2lbl00346, au2lbl00349, au2lbl00345]
     - description: webservices
       ip: 10.2.64.138
       vlan: 1064
       preempt: true
       virtual_router_id: 10
-      priority: [au2lbl00346, au2lbl00345]
+      priority: [au2lbl00345, au2lbl00346, au2lbl00349]
     - description: webservices
       ip: 10.2.64.139
       vlan: 1064
       preempt: true
       virtual_router_id: 11
-      # TODO: when we get the third machine, it'll be first in the priority for .139;
+      # when we get the third machine, it'll be first in the priority for .139;
       # compare DE1 and US2
-      priority: [au2lbl00345, au2lbl00346]
+      priority: [au2lbl00349, au2lbl00345, au2lbl00346]
 
 au2-sand-internal-1:
   machines:
