@@ -7,12 +7,12 @@ variables:
   # 288353b612d2a87c41f3fdbe1e1dcf6513964ba2
   dante_build_id: '1168882'
 
-  # virgil 20241122.7
-  # Fri Nov 22 03:12:38 UTC 2024 -- Fri Nov 22 14:12:38 AEDT 2024
+  # virgil 20241125.1
+  # Sun Nov 24 23:58:35 UTC 2024 -- Mon Nov 25 10:58:35 AEDT 2024
   #
-  # Merged PR 30411: Set new IRIS servers to dante on demand
-  # 120e06da594bafa0e06d9d1c3e422bae5c71e5f4
-  virgil_build_id: '1168835'
+  # Merged PR 30448: Virgil - Override Last 2 digits of Spine ID of ASN
+  # 93bfd5653518ed6534edfec51f3a187f0797729e
+  virgil_build_id: '1171361'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
