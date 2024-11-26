@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241126.1
-  # Mon Nov 25 22:05:09 UTC 2024 -- Tue Nov 26 09:05:09 AEDT 2024
+  # Dante Build Artifact 20241126.2
+  # Tue Nov 26 03:07:19 UTC 2024 -- Tue Nov 26 14:07:19 AEDT 2024
   #
-  # Merge pull request 30483 from dante_python_upgrade into master
-  # 8dad187ec2a6ded70fcc55029fa53ea72916eae5
-  dante_build_id: '1172255'
+  # Merge pull request 30464 from dante_artifact_upgrade into master
+  # 47b997e830d48230cc25ece95cbdd1152f5f7cc4
+  dante_build_id: '1172513'
 
-  # virgil 20241126.2
-  # Mon Nov 25 22:05:15 UTC 2024 -- Tue Nov 26 09:05:15 AEDT 2024
+  # virgil 20241126.4
+  # Tue Nov 26 03:10:00 UTC 2024 -- Tue Nov 26 14:10:00 AEDT 2024
   #
-  # Merge pull request 30475 from virgil_python_upgrade into master
-  # 0b8a6dc0598ac1561ef6a817195784305f1d3b14
-  virgil_build_id: '1172257'
+  # Merged PR 30490: Enable both spines in simulation
+  # d7c442bb8aa9f37148ab444155e7d0a8bc6de7e8
+  virgil_build_id: '1172515'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
