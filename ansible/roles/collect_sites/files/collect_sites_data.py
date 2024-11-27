@@ -45,7 +45,7 @@ def get_websites_list(server_name, connection_params):
         password=connection_params.password,
         server_cert_validation=connection_params.validate_ca,
     )
-    shell_id: str
+    shell_id = None
     try:
         shell_id = p.open_shell()
         command_id = p.run_command(
@@ -56,7 +56,8 @@ def get_websites_list(server_name, connection_params):
         std_out, std_err, _status_code = p.get_command_output(shell_id, command_id)
         p.cleanup_command(shell_id, command_id)
     finally:
-        p.close_shell(shell_id)
+        if shell_id:
+            p.close_shell(shell_id)
 
     if std_err:
         raise ValueError(f"Error when executing AppCmd.exe: {str(std_err)}")
