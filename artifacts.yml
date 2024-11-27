@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241126.3
-  # Tue Nov 26 04:06:58 UTC 2024 -- Tue Nov 26 15:06:58 AEDT 2024
+  # Dante Build Artifact 20241127.1
+  # Wed Nov 27 00:42:44 UTC 2024 -- Wed Nov 27 11:42:44 AEDT 2024
   #
-  # Merge pull request 30502 from dante_artifact_upgrade into master
-  # fb28dff95be4ee93bb6e0137cffd341ee04ddb00
-  dante_build_id: '1172571'
+  # Merged PR 30518: Added dnte ssh key to dhcp migration pipeline
+  # c01037928e4027e331534b38b96528bdbfb26516
+  dante_build_id: '1172951'
 
   # virgil 20241126.4
   # Tue Nov 26 03:10:00 UTC 2024 -- Tue Nov 26 14:10:00 AEDT 2024
