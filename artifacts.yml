@@ -7,12 +7,12 @@ variables:
   # c01037928e4027e331534b38b96528bdbfb26516
   dante_build_id: '1172951'
 
-  # virgil 20241126.4
-  # Tue Nov 26 03:10:00 UTC 2024 -- Tue Nov 26 14:10:00 AEDT 2024
+  # virgil 20241127.3
+  # Wed Nov 27 01:17:51 UTC 2024 -- Wed Nov 27 12:17:51 AEDT 2024
   #
-  # Merged PR 30490: Enable both spines in simulation
-  # d7c442bb8aa9f37148ab444155e7d0a8bc6de7e8
-  virgil_build_id: '1172515'
+  # Merged PR 30519: Migrating management node 1 to SY5 and rebuilding
+  # 2446920b96479c459fe9b230e29308dab8942a3b
+  virgil_build_id: '1172970'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
