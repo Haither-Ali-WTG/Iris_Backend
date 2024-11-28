@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241127.2
-  # Wed Nov 27 02:07:07 UTC 2024 -- Wed Nov 27 13:07:07 AEDT 2024
+  # Dante Build Artifact 20241129.1
+  # Thu Nov 28 23:27:14 UTC 2024 -- Fri Nov 29 10:27:14 AEDT 2024
   #
-  # Merge pull request 30532 from dante_artifact_upgrade into master
-  # b69288250bd9cdd22b1d66a44a6be5d232488f3a
-  dante_build_id: '1172997'
+  # Merge pull request 30580 from dante_artifact_upgrade into master
+  # 7efbd0658b718249b70ffd391a522b6782127868
+  dante_build_id: '1175070'
 
-  # virgil 20241129.1
-  # Thu Nov 28 22:34:30 UTC 2024 -- Fri Nov 29 09:34:30 AEDT 2024
+  # virgil 20241129.3
+  # Thu Nov 28 23:23:37 UTC 2024 -- Fri Nov 29 10:23:37 AEDT 2024
   #
-  # Merged PR 30571: Created Kafka Topics for xT-Logs and Atomic Red Team
-  # 5b87cc969e42db997014b559583b964b59408d55
-  virgil_build_id: '1175009'
+  # Merged PR 30570: add-test-process-controller-vlan-1044-to-hyper-be-in-au2
+  # ffe6c2e5e28aa5ccef05c6194740dd80486d9219
+  virgil_build_id: '1175068'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
