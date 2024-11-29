@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241129.1
-  # Thu Nov 28 23:27:14 UTC 2024 -- Fri Nov 29 10:27:14 AEDT 2024
+  # Dante Build Artifact 20241129.2
+  # Fri Nov 29 00:30:25 UTC 2024 -- Fri Nov 29 11:30:25 AEDT 2024
   #
-  # Merge pull request 30580 from dante_artifact_upgrade into master
-  # 7efbd0658b718249b70ffd391a522b6782127868
-  dante_build_id: '1175070'
+  # Merged PR 30589: Define state: started for the filebeat role.
+  # 9a1f4b65634e5418566113f3cf0a8f09a9275403
+  dante_build_id: '1175175'
 
-  # virgil 20241129.3
-  # Thu Nov 28 23:23:37 UTC 2024 -- Fri Nov 29 10:23:37 AEDT 2024
+  # virgil 20241129.6
+  # Fri Nov 29 00:56:24 UTC 2024 -- Fri Nov 29 11:56:24 AEDT 2024
   #
-  # Merged PR 30570: add-test-process-controller-vlan-1044-to-hyper-be-in-au2
-  # ffe6c2e5e28aa5ccef05c6194740dd80486d9219
-  virgil_build_id: '1175068'
+  # Merged PR 30596: Add Kafka new topics for CS01808528
+  # ad2a17bbafd3fbe6f601f6b56b18a802cae93aba
+  virgil_build_id: '1175194'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
