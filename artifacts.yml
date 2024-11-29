@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241129.3
-  # Fri Nov 29 01:46:43 UTC 2024 -- Fri Nov 29 12:46:43 AEDT 2024
+  # Dante Build Artifact 20241129.4
+  # Fri Nov 29 05:06:34 UTC 2024 -- Fri Nov 29 16:06:34 AEDT 2024
   #
-  # Merge pull request 30588 from dante_artifact_upgrade into master
-  # a27097c6e1a738b8be695bdf4b635a80798615ea
-  dante_build_id: '1175263'
+  # Merged PR 30611: Add missing role for simulation env
+  # cbe1ac66c6a880f6e9965c78a81e8827ce7d74ce
+  dante_build_id: '1175452'
 
   # virgil 20241129.6
   # Fri Nov 29 00:56:24 UTC 2024 -- Fri Nov 29 11:56:24 AEDT 2024
