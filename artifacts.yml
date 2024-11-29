@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241129.2
-  # Fri Nov 29 00:30:25 UTC 2024 -- Fri Nov 29 11:30:25 AEDT 2024
+  # Dante Build Artifact 20241129.3
+  # Fri Nov 29 01:46:43 UTC 2024 -- Fri Nov 29 12:46:43 AEDT 2024
   #
-  # Merged PR 30589: Define state: started for the filebeat role.
-  # 9a1f4b65634e5418566113f3cf0a8f09a9275403
-  dante_build_id: '1175175'
+  # Merge pull request 30588 from dante_artifact_upgrade into master
+  # a27097c6e1a738b8be695bdf4b635a80798615ea
+  dante_build_id: '1175263'
 
   # virgil 20241129.6
   # Fri Nov 29 00:56:24 UTC 2024 -- Fri Nov 29 11:56:24 AEDT 2024
