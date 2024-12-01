@@ -7,12 +7,12 @@ variables:
   # cbe1ac66c6a880f6e9965c78a81e8827ce7d74ce
   dante_build_id: '1175452'
 
-  # virgil 20241129.6
-  # Fri Nov 29 00:56:24 UTC 2024 -- Fri Nov 29 11:56:24 AEDT 2024
+  # virgil 20241202.2
+  # Sun Dec  1 22:54:50 UTC 2024 -- Mon Dec  2 09:54:50 AEDT 2024
   #
-  # Merged PR 30596: Add Kafka new topics for CS01808528
-  # ad2a17bbafd3fbe6f601f6b56b18a802cae93aba
-  virgil_build_id: '1175194'
+  # Merged PR 30612: CS01804465 - Add read/describe consumer for eservices application events test
+  # ec98235502a446d47030e341383ff930592a7304
+  virgil_build_id: '1178364'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
