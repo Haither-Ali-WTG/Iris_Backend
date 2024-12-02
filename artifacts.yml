@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241202.2
-  # Mon Dec  2 07:46:44 UTC 2024 -- Mon Dec  2 18:46:44 AEDT 2024
+  # Dante Build Artifact 20241203.1
+  # Mon Dec  2 22:38:39 UTC 2024 -- Tue Dec  3 09:38:39 AEDT 2024
   #
-  # Merge pull request 30655 from dante_artifact_upgrade into master
-  # 86c4654a87f6c93d2fddb33a28d8ffd7adf95bd6
-  dante_build_id: '1178820'
+  # Merge pull request 30673 from dante_python_upgrade into master
+  # c9b63d4d17d06fde999cc36bb96667d83398103b
+  dante_build_id: '1179436'
 
-  # virgil 20241202.15
-  # Mon Dec  2 06:51:42 UTC 2024 -- Mon Dec  2 17:51:42 AEDT 2024
+  # virgil 20241203.10
+  # Mon Dec  2 22:25:53 UTC 2024 -- Tue Dec  3 09:25:53 AEDT 2024
   #
-  # Merged PR 30610: cwi-vlan-update
-  # 8b138a05658a921bb4f437c321022ba7b136cc37
-  virgil_build_id: '1178768'
+  # Merged PR 30656: cwi-vxlan-update
+  # e7ee3ea42526a5745169a335eff4895931b2aaa8
+  virgil_build_id: '1179411'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
