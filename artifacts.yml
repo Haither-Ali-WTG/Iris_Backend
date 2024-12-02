@@ -7,12 +7,12 @@ variables:
   # 39926973609f47c718848af1d13e3cf62757c75d
   dante_build_id: '1178425'
 
-  # virgil 20241202.2
-  # Sun Dec  1 22:54:50 UTC 2024 -- Mon Dec  2 09:54:50 AEDT 2024
+  # virgil 20241202.15
+  # Mon Dec  2 06:51:42 UTC 2024 -- Mon Dec  2 17:51:42 AEDT 2024
   #
-  # Merged PR 30612: CS01804465 - Add read/describe consumer for eservices application events test
-  # ec98235502a446d47030e341383ff930592a7304
-  virgil_build_id: '1178364'
+  # Merged PR 30610: cwi-vlan-update
+  # 8b138a05658a921bb4f437c321022ba7b136cc37
+  virgil_build_id: '1178768'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
