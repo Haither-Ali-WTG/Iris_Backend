@@ -7,12 +7,12 @@ variables:
   # 8e8b2de73c92b640ab7a8813deedf5fbb07cb4b9
   dante_build_id: '1179538'
 
-  # virgil 20241203.16
-  # Tue Dec  3 00:24:27 UTC 2024 -- Tue Dec  3 11:24:27 AEDT 2024
+  # virgil 20241203.21
+  # Tue Dec  3 01:24:07 UTC 2024 -- Tue Dec  3 12:24:07 AEDT 2024
   #
-  # Merged PR 30690: Adding vmware ports on SY5 301/302/303/403
-  # 86f3c7873afad7fba18614b8fbda3b929dedd434
-  virgil_build_id: '1179558'
+  # Merged PR 30706: Adding vmware ports on SY5 402
+  # 6e529b20f0ac32004b662ee785123cccd5bc1da1
+  virgil_build_id: '1179648'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
