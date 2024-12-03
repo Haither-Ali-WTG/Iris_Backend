@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241203.1
-  # Mon Dec  2 22:38:39 UTC 2024 -- Tue Dec  3 09:38:39 AEDT 2024
+  # Dante Build Artifact 20241203.2
+  # Tue Dec  3 00:07:53 UTC 2024 -- Tue Dec  3 11:07:53 AEDT 2024
   #
-  # Merge pull request 30673 from dante_python_upgrade into master
-  # c9b63d4d17d06fde999cc36bb96667d83398103b
-  dante_build_id: '1179436'
+  # Merge pull request 30684 from dante_artifact_upgrade into master
+  # 8e8b2de73c92b640ab7a8813deedf5fbb07cb4b9
+  dante_build_id: '1179538'
 
-  # virgil 20241203.10
-  # Mon Dec  2 22:25:53 UTC 2024 -- Tue Dec  3 09:25:53 AEDT 2024
+  # virgil 20241203.16
+  # Tue Dec  3 00:24:27 UTC 2024 -- Tue Dec  3 11:24:27 AEDT 2024
   #
-  # Merged PR 30656: cwi-vxlan-update
-  # e7ee3ea42526a5745169a335eff4895931b2aaa8
-  virgil_build_id: '1179411'
+  # Merged PR 30690: Adding vmware ports on SY5 301/302/303/403
+  # 86f3c7873afad7fba18614b8fbda3b929dedd434
+  virgil_build_id: '1179558'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
