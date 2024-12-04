@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241203.2
-  # Tue Dec  3 00:07:53 UTC 2024 -- Tue Dec  3 11:07:53 AEDT 2024
+  # Dante Build Artifact 20241204.1
+  # Wed Dec  4 01:27:09 UTC 2024 -- Wed Dec  4 12:27:09 AEDT 2024
   #
-  # Merge pull request 30684 from dante_artifact_upgrade into master
-  # 8e8b2de73c92b640ab7a8813deedf5fbb07cb4b9
-  dante_build_id: '1179538'
+  # Merge pull request 30704 from dante_artifact_upgrade into master
+  # 16d4ef0368b686ba1ee7d9163cde27bb5cbf0f02
+  dante_build_id: '1180654'
 
-  # virgil 20241203.21
-  # Tue Dec  3 01:24:07 UTC 2024 -- Tue Dec  3 12:24:07 AEDT 2024
+  # virgil 20241204.2
+  # Wed Dec  4 00:38:46 UTC 2024 -- Wed Dec  4 11:38:46 AEDT 2024
   #
-  # Merged PR 30706: Adding vmware ports on SY5 402
-  # 6e529b20f0ac32004b662ee785123cccd5bc1da1
-  virgil_build_id: '1179648'
+  # Merged PR 30729: Created topics for Xhub to migrate to Q0
+  # 78934d8f446327d32cdb289e03674ee714d2ef0c
+  virgil_build_id: '1180613'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
