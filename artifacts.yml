@@ -7,12 +7,12 @@ variables:
   # ff574eddc13b7779b4e5869393cf35c6e1669d31
   dante_build_id: '1182721'
 
-  # virgil 20241206.14
-  # Fri Dec  6 01:51:06 UTC 2024 -- Fri Dec  6 12:51:06 AEDT 2024
+  # virgil 20241206.20
+  # Fri Dec  6 05:18:38 UTC 2024 -- Fri Dec  6 16:18:38 AEDT 2024
   #
-  # Merged PR 30590: New SY5 exits7/8
-  # 34684325eba3716adf0696c9225ee55111fa5436
-  virgil_build_id: '1182653'
+  # Merged PR 30807: Tag VLAN1088 into HyperV BE Corp profiles,
+  # b52140d9f910ae526eb3815c80d8cfdec621d470
+  virgil_build_id: '1182854'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
