@@ -7,12 +7,12 @@ variables:
   # 16d4ef0368b686ba1ee7d9163cde27bb5cbf0f02
   dante_build_id: '1180654'
 
-  # virgil 20241204.2
-  # Wed Dec  4 00:38:46 UTC 2024 -- Wed Dec  4 11:38:46 AEDT 2024
+  # virgil 20241206.14
+  # Fri Dec  6 01:51:06 UTC 2024 -- Fri Dec  6 12:51:06 AEDT 2024
   #
-  # Merged PR 30729: Created topics for Xhub to migrate to Q0
-  # 78934d8f446327d32cdb289e03674ee714d2ef0c
-  virgil_build_id: '1180613'
+  # Merged PR 30590: New SY5 exits7/8
+  # 34684325eba3716adf0696c9225ee55111fa5436
+  virgil_build_id: '1182653'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
