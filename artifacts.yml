@@ -7,12 +7,12 @@ variables:
   # 20a8e320eecf120139959a7696c832133ad24062
   dante_build_id: '1182906'
 
-  # virgil 20241206.20
-  # Fri Dec  6 05:18:38 UTC 2024 -- Fri Dec  6 16:18:38 AEDT 2024
+  # virgil 20241210.2
+  # Mon Dec  9 22:29:55 UTC 2024 -- Tue Dec 10 09:29:55 AEDT 2024
   #
-  # Merged PR 30807: Tag VLAN1088 into HyperV BE Corp profiles,
-  # b52140d9f910ae526eb3815c80d8cfdec621d470
-  virgil_build_id: '1182854'
+  # Merge pull request 30834 from virgil_python_upgrade into master
+  # 8acdedbc5d5d7fcf5ba3ffe49172ea79c638d726
+  virgil_build_id: '1186204'
 
   # sqlbilling 20241118.2
   # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
