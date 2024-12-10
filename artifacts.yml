@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20241206.2
-  # Fri Dec  6 06:07:16 UTC 2024 -- Fri Dec  6 17:07:16 AEDT 2024
+  # Dante Build Artifact 20241211.1
+  # Tue Dec 10 22:07:27 UTC 2024 -- Wed Dec 11 09:07:27 AEDT 2024
   #
-  # Merge pull request 30813 from dante_artifact_upgrade into master
-  # 20a8e320eecf120139959a7696c832133ad24062
-  dante_build_id: '1182906'
+  # Merge pull request 30852 from dante_artifact_upgrade into master
+  # 749fe4f1646df5ae0fb452743c466c28b8db7f29
+  dante_build_id: '1187164'
 
-  # virgil 20241210.2
-  # Mon Dec  9 22:29:55 UTC 2024 -- Tue Dec 10 09:29:55 AEDT 2024
+  # virgil 20241211.1
+  # Tue Dec 10 21:11:20 UTC 2024 -- Wed Dec 11 08:11:20 AEDT 2024
   #
-  # Merge pull request 30834 from virgil_python_upgrade into master
-  # 8acdedbc5d5d7fcf5ba3ffe49172ea79c638d726
-  virgil_build_id: '1186204'
+  # Merged PR 30622: DE1-Added-New-Tenants
+  # a84f9a694d702b637adc01e705f3e2bb30cb95e4
+  virgil_build_id: '1187122'
 
-  # sqlbilling 20241118.2
-  # Mon Nov 18 11:59:04 UTC 2024 -- Mon Nov 18 22:59:04 AEDT 2024
+  # sqlbilling 20241210.3
+  # Tue Dec 10 12:54:38 UTC 2024 -- Tue Dec 10 23:54:38 AEDT 2024
   #
-  # Merged PR 30149: Updated au2-prod-frontend-1CS01785101.yml
-  # 98cf757f9e531b0e867613db739a3a326d7f2ecb
-  sqlbilling_build_id: '1164960'
+  # Merged PR 30752: Updated au2-prod-frontend-1.yml
+  # 29a7af324ac44d301d185a2cdebbffc42c835aca
+  sqlbilling_build_id: '1186831'
