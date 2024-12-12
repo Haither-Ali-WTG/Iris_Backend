@@ -184,6 +184,24 @@ clustered_instances:
           web: 2043
           socket: 2042
 
+    au2prodfrontend1sqltcp9:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 2016
+      iis_servers: []
+      certificates: []
+      machine_cluster: au2-prod-frontend-1
+      stats:
+        ports:
+          web: 2048
+          socket: 2049
+
     au2prodfrontend1prodidp:
       # au2-prod-frontend-1-prod-idp
       dc: AU2
