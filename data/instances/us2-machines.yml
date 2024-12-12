@@ -3,16 +3,16 @@ machines:
   hosts:
     us2lbl00384:
       ansible_host: 10.4.64.21
-      os: ubuntu2204
+      os: ubuntu2404
       dc: US2
       os_variant: ubuntu
     us2lbl00385:
       ansible_host: 10.4.64.22
-      os: ubuntu2204
+      os: ubuntu2404
       dc: US2
       os_variant: ubuntu
     us2lbl00386:
       ansible_host: 10.4.64.23
-      os: ubuntu2204
+      os: ubuntu2404
       dc: US2
       os_variant: ubuntu
