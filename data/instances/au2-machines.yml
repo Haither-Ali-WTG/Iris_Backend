@@ -3,7 +3,7 @@ machines:
   hosts:
     au2lbl00345:
       ansible_host: 10.2.64.21
-      os: ubuntu2404  # TODO: make one of these RHEL
+      os: ubuntu2404
       dc: AU2
       os_variant: ubuntu
     au2lbl00346:
@@ -23,6 +23,21 @@ machines:
       os_variant: ubuntu
     au2lbl00417:
       ansible_host: 10.2.136.12
+      os: ubuntu2404
+      dc: AU2
+      os_variant: ubuntu
+    au2lbl00886:
+      ansible_host: 10.2.83.31
+      os: ubuntu2404
+      dc: AU2
+      os_variant: ubuntu
+    au2lbl00887:
+      ansible_host: 10.2.83.32
+      os: ubuntu2404
+      dc: AU2
+      os_variant: ubuntu
+    au2lbl00888:
+      ansible_host: 10.2.83.33
       os: ubuntu2404
       dc: AU2
       os_variant: ubuntu
