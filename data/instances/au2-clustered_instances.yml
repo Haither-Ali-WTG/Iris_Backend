@@ -185,7 +185,6 @@ clustered_instances:
           socket: 2042
 
     au2prodfrontend1sqltcp9:
-      # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
       defaults:
         mode: tcp
@@ -193,7 +192,69 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext:
-            - 2016
+            # KEEP IN SYNC: haproxy/au2-prod-frontend-1/ansible-inventories/inventory.yml
+
+            # 6000..6999 is reserved by the billing collector:
+            # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
+
+            - 6000  # AU2 TEST SQL Cluster 401
+            - 6001  # AU2 TEST SQL Cluster 402
+            - 6002  # AU2 TEST SQL Cluster 403
+            - 6003  # AU2 PROD SQL Cluster 401
+            - 6004  # AU2 TEST SQL Cluster 404
+            - 6005  # AU2 TEST SQL Cluster 405
+            - 6006  # AU2 TEST SQL Cluster 406
+            - 6007  # AU2 PROD SQL Cluster 402
+            - 6008  # AU2 PROD SQL Cluster 403
+            - 6009  # AU2 PROD SQL Cluster 404
+            - 6010  # AU2 PROD SQL Cluster 405
+            - 6011  # AU2 TEST SQL Cluster 407
+            - 6012  # AU2 TEST SQL Cluster 408
+            - 6013  # AU2 PROD SQL Cluster 406
+            - 6014  # AU2 PROD SQL Cluster 407
+            - 6015  # AU2 PROD SQL Cluster 408
+            - 6016  # AU2 PROD SQL Cluster 409
+            - 6017  # AU2 PROD SQL Cluster 410
+            - 6018  # AU2 PROD SQL Cluster 411
+            - 6019  # AU2 PROD SQL Cluster 412
+            - 6020  # AU2 PROD SQL Cluster 413
+            - 6021  # AU2 PROD SQL Cluster 414
+            - 6022  # AU2 PROD SQL Cluster 415
+            - 6023  # AU2 PROD SQL Cluster 416
+            - 6024  # AU2 PROD SQL Cluster 417
+            - 6025  # AU2 PROD SQL Cluster 418
+            - 6026  # AU2 PROD SQL Cluster 419
+            - 6027  # AU2 PROD SQL Cluster 420 (ASAMEL Dedicated)
+            - 6028  # AU2 TEST SQL Cluster 409
+            - 6029  # AU2 PROD SQL Cluster 421
+            - 6030  # AU2 PROD SQL Cluster 422
+            - 6031  # AU2 PROD SQL Cluster 423
+            - 6032  # AU2 PROD SQL Cluster 424
+            - 6033  # AU2 PROD SQL Cluster 425
+            - 6034  # AU2 PROD SQL Cluster 426
+            - 6035  # AU2 PROD SQL Cluster 427
+            - 6036  # AU2 PROD SQL Cluster 428
+            - 6037  # AU2 PROD SQL Cluster 429
+            - 6038  # AU2 PROD SQL Cluster 430
+            - 6039  # AU2 PROD SQL Cluster 431
+            - 6040  # AU2 PROD SQL Cluster 499 (TEST FOR UPS)
+            - 6041  # AU2 PROD SQL Cluster 432
+            - 6042  # AU2 PROD SQL Cluster 433
+            - 6043  # AU2 PROD SQL Cluster 434
+            - 6044  # AU2 TEST SQL Cluster 410
+            - 6045  # AU2 TEST SQL Cluster 411
+            - 6046  # AU2 PROD SQL Cluster 435
+            - 6047  # AU2 PROD SQL Cluster 436
+            - 6048  # AU2 PROD SQL Cluster 437
+            - 6049  # AU2 PROD SQL Cluster 438
+            - 6050  # AU2 PROD SQL Cluster 439
+            - 6051  # AU2 PROD SQL Cluster 440
+            - 6052  # AU2 PROD SQL Cluster 441
+            - 6053  # AU2 PROD SQL Cluster 442
+            - 6054  # AU2 TEST SQL Cluster 412
+
+            # ..6999
+
       iis_servers: []
       certificates: []
       sqlbilling_acl:

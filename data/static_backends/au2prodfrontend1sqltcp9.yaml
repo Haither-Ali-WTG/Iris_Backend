@@ -1,4 +1,406 @@
 ---
+# KEEP IN SYNC: haproxy/au2-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+### TEST AU2
+
+au2wtreadonly401l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly401l1
+      ip: 10.2.133.14
+      port: 1433
+
+au2wtreadonly402l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly402l1
+      ip: 10.2.133.48
+      port: 1433
+
+au2wtreadonly403l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly403l1
+      ip: 10.2.133.21
+      port: 1433
+
+au2wtreadonly404l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly404l1
+      ip: 10.2.133.25
+      port: 1433
+
+au2wtreadonly405l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly405l1
+      ip: 10.2.133.29
+      port: 1433
+
+au2wtreadonly406l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly406l1
+      ip: 10.2.133.33
+      port: 1433
+
+au2wtreadonly407l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly407l1
+      ip: 10.2.133.37
+      port: 1433
+
+au2wtreadonly408l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly408l1
+      ip: 10.2.133.41
+      port: 1433
+
+au2wtreadonly409l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly409l1
+      ip: 10.2.133.45
+      port: 1433
+
+au2wtreadonly410l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly410l1
+      ip: 10.2.133.53
+      port: 1433
+
+au2wtreadonly411l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly411l1
+      ip: 10.2.133.57
+      port: 1433
+
+au2wtreadonly412l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly412l1
+      ip: 10.2.133.61
+      port: 1433
+
+### PROD AU2
+
+au2wpreadonly401l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly401l1
+      ip: 10.2.134.14
+      port: 1433
+
+au2wpreadonly402l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly402l1
+      ip: 10.2.134.18
+      port: 1433
+
+au2wpreadonly403l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly403l1
+      ip: 10.2.134.22
+      port: 1433
+
+au2wpreadonly404l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly404l1
+      ip: 10.2.134.26
+      port: 1433
+
+au2wpreadonly405l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly405l1
+      ip: 10.2.134.30
+      port: 1433
+
+au2wpreadonly406l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly406l1
+      ip: 10.2.134.34
+      port: 1433
+
+au2wpreadonly407l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly407l1
+      ip: 10.2.134.38
+      port: 1433
+
+au2wpreadonly408l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly408l1
+      ip: 10.2.134.42
+      port: 1433
+
+au2wpreadonly409l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly409l1
+      ip: 10.2.134.46
+      port: 1433
+
+au2wpreadonly410l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly410l1
+      ip: 10.2.134.60
+      port: 1433
+
+au2wpreadonly411l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly411l1
+      ip: 10.2.134.53
+      port: 1433
+
+au2wpreadonly412l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly412l1
+      ip: 10.2.134.57
+      port: 1433
+
+au2wpreadonly413l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly413l1
+      ip: 10.2.134.62
+      port: 1433
+
+au2wpreadonly414l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly414l1
+      ip: 10.2.134.66
+      port: 1433
+
+au2wpreadonly415l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly415l1
+      ip: 10.2.134.70
+      port: 1433
+
+au2wpreadonly416l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly416l1
+      ip: 10.2.134.74
+      port: 1433
+
+au2wpreadonly417l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly417l1
+      ip: 10.2.134.78
+      port: 1433
+
+au2wpreadonly418l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly418l1
+      ip: 10.2.134.82
+      port: 1433
+
+au2wpreadonly419l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly419l1
+      ip: 10.2.134.86
+      port: 1433
+
+au2wpreadonly420l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly420l1
+      ip: 10.2.134.90
+      port: 1433
+
+au2wpreadonly421l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly421l1
+      ip: 10.2.134.94
+      port: 1433
+
+au2wpreadonly422l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly422l1
+      ip: 10.2.134.98
+      port: 1433
+
+au2wpreadonly423l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly423l1
+      ip: 10.2.134.102
+      port: 1433
+
+au2wpreadonly424l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly424l1
+      ip: 10.2.134.106
+      port: 1433
+
+au2wpreadonly425l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly425l1
+      ip: 10.2.134.110
+      port: 1433
+
+au2wpreadonly426l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly426l1
+      ip: 10.2.134.114
+      port: 1433
+
+au2wpreadonly427l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly427l1
+      ip: 10.2.134.118
+      port: 1433
+
+au2wpreadonly428l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly428l1
+      ip: 10.2.134.122
+      port: 1433
+
+au2wpreadonly429l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly429l1
+      ip: 10.2.134.126
+      port: 1433
+
+au2wpreadonly430l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly430l1
+      ip: 10.2.134.130
+      port: 1433
+
+au2wpreadonly431l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly431l1
+      ip: 10.2.134.134
+      port: 1433
+
+au2wpreadonly499l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly499l1
+      ip: 10.2.134.140
+      port: 1433
+
 au2wpreadonly432l1-wisegrid-net:
   clustered_instances: [au2prodfrontend1sqltcp9]
   http_health_check:
@@ -6,4 +408,94 @@ au2wpreadonly432l1-wisegrid-net:
   servers:
     - name: au2wpreadonly432l1
       ip: 10.2.134.144
+      port: 1433
+
+au2wpreadonly433l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly433l1
+      ip: 10.2.134.148
+      port: 1433
+
+au2wpreadonly434l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly434l1
+      ip: 10.2.134.152
+      port: 1433
+
+au2wpreadonly435l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly435l1
+      ip: 10.2.134.156
+      port: 1433
+
+au2wpreadonly436l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly436l1
+      ip: 10.2.134.160
+      port: 1433
+
+au2wpreadonly437l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly437l1
+      ip: 10.2.134.164
+      port: 1433
+
+au2wpreadonly438l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly438l1
+      ip: 10.2.134.168
+      port: 1433
+
+au2wpreadonly439l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly439l1
+      ip: 10.2.134.172
+      port: 1433
+
+au2wpreadonly440l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly440l1
+      ip: 10.2.137.24
+      port: 1433
+
+au2wpreadonly441l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly441l1
+      ip: 10.2.137.28
+      port: 1433
+
+au2wpreadonly442l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly442l1
+      ip: 10.2.137.32
       port: 1433
