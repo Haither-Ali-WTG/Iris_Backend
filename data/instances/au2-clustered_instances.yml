@@ -196,6 +196,9 @@ clustered_instances:
             - 2016
       iis_servers: []
       certificates: []
+      sqlbilling_acl:
+        acl_name: "customer_src"
+        file: "au2-prod-frontend-1.acl"
       machine_cluster: au2-prod-frontend-1
       stats:
         ports:
