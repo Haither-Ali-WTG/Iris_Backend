@@ -55,7 +55,7 @@ au2-prod-internal-1:
       vlan: 1083
       preempt: true
       virtual_router_id: 10
-      priority: [au2lbl00887, au2lbl00886, au2lbl00888]
+      priority: [au2lbl00887, au2lbl00888, au2lbl00886]
 
 au2-sand-internal-1:
   machines:
