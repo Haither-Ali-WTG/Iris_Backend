@@ -197,8 +197,8 @@ clustered_instances:
       iis_servers: []
       certificates: []
       sqlbilling_acl:
-       - acl_name: customerreadonly_src
-         file: au2-prod-frontend-1.acl
+        - acl_name: customerreadonly_src
+          file: au2-prod-frontend-1.acl
       machine_cluster: au2-prod-frontend-1
       stats:
         ports:
