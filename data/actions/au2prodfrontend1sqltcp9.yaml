@@ -31,6 +31,7 @@ sql_backends_prod:
     PROD AU2
     Maps frontend ports (6000+) to specific SQL backends
   order: 50
+  actions:
     # NOTE: conflicts with 442l1 below:
     - use_backend au2wpreadonly401l1-wisegrid-net if { dst_port 6003 }
     - use_backend au2wpreadonly402l1-wisegrid-net if { dst_port 6007 }
