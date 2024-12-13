@@ -38,6 +38,25 @@ au2-prod-frontend-1:
       # compare DE1 and US2
       priority: [au2lbl00349, au2lbl00345, au2lbl00346]
 
+au2-prod-internal-1:
+  machines:
+    au2lbl00886: ~
+    au2lbl00887: ~
+    au2lbl00888: ~
+  floating_ips:
+    - description: webservices
+      ip: 10.2.83.137
+      vlan: 1083
+      preempt: true
+      virtual_router_id: 9
+      priority: [au2lbl00886, au2lbl00887, au2lbl00888]
+    - description: webservices
+      ip: 10.2.83.138
+      vlan: 1083
+      preempt: true
+      virtual_router_id: 10
+      priority: [au2lbl00887, au2lbl00888, au2lbl00886]
+
 au2-sand-internal-1:
   machines:
     au2lbl00416: ~
