@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241216.4
-  # Mon Dec 16 01:57:16 UTC 2024 -- Mon Dec 16 12:57:16 AEDT 2024
+  # Dante Build Artifact 20241216.5
+  # Mon Dec 16 03:01:44 UTC 2024 -- Mon Dec 16 14:01:44 AEDT 2024
   #
-  # Merged PR 30992: Updated old ISO cleanup in pure
-  # 7b9446a16ba182a4f8fe1b2ef00f12114b77d7e1
-  dante_build_id: '1192248'
+  # Merged PR 31012: Remove netq role call
+  # e32dd3ffa337952636d1eafbfe3bb7c73ca208fa
+  dante_build_id: '1192326'
 
   # virgil 20241216.2
   # Mon Dec 16 00:23:44 UTC 2024 -- Mon Dec 16 11:23:44 AEDT 2024
