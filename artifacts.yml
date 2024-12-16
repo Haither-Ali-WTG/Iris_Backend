@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241213.1
-  # Thu Dec 12 22:41:34 UTC 2024 -- Fri Dec 13 09:41:34 AEDT 2024
+  # Dante Build Artifact 20241216.1
+  # Sun Dec 15 21:55:52 UTC 2024 -- Mon Dec 16 08:55:52 AEDT 2024
   #
-  # Merge pull request 30662 from automatic_styx_image_upgrade into master
-  # 1c5582098b4775ad7dea1f1230facc50882ffcb0
-  dante_build_id: '1189288'
+  # Merged PR 30949: Support for firewall and servers in dev simulation
+  # acf04b573b27d97bc6e5e9528b34d466a9220363
+  dante_build_id: '1191948'
 
   # virgil 20241213.2
   # Fri Dec 13 03:45:43 UTC 2024 -- Fri Dec 13 14:45:43 AEDT 2024
