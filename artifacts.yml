@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241216.5
-  # Mon Dec 16 03:01:44 UTC 2024 -- Mon Dec 16 14:01:44 AEDT 2024
+  # Dante Build Artifact 20241217.1
+  # Mon Dec 16 23:45:58 UTC 2024 -- Tue Dec 17 10:45:58 AEDT 2024
   #
-  # Merged PR 31012: Remove netq role call
-  # e32dd3ffa337952636d1eafbfe3bb7c73ca208fa
-  dante_build_id: '1192326'
+  # Merge pull request 30842 from dante_python_upgrade into master
+  # 2fb0a8538c08a1ebd91b42af2f4a65ba6ec49a2a
+  dante_build_id: '1193221'
 
-  # virgil 20241216.2
-  # Mon Dec 16 00:23:44 UTC 2024 -- Mon Dec 16 11:23:44 AEDT 2024
+  # virgil 20241217.2
+  # Mon Dec 16 23:14:54 UTC 2024 -- Tue Dec 17 10:14:54 AEDT 2024
   #
-  # Merged PR 30979: Upgrade us2-prod-internal IRIS servers to 2404
-  # 5910f8c1695d372acf8ae1711ba4dedda7d62bee
-  virgil_build_id: '1192106'
+  # Merge pull request 31027 from virgil_python_upgrade into master
+  # d73488b58bd917c15709bf794cfdb0b608d6f79c
+  virgil_build_id: '1193183'
 
   # sqlbilling 20241213.3
   # Fri Dec 13 03:12:03 UTC 2024 -- Fri Dec 13 14:12:03 AEDT 2024
