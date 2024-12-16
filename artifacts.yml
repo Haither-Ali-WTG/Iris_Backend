@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241216.1
-  # Sun Dec 15 21:55:52 UTC 2024 -- Mon Dec 16 08:55:52 AEDT 2024
+  # Dante Build Artifact 20241216.2
+  # Mon Dec 16 00:12:26 UTC 2024 -- Mon Dec 16 11:12:26 AEDT 2024
   #
-  # Merged PR 30949: Support for firewall and servers in dev simulation
-  # acf04b573b27d97bc6e5e9528b34d466a9220363
-  dante_build_id: '1191948'
+  # Merged PR 30315: Kill netq
+  # 10e46a119e21c63c4806cda7b229a2ea5bf0e8cf
+  dante_build_id: '1192090'
 
-  # virgil 20241213.2
-  # Fri Dec 13 03:45:43 UTC 2024 -- Fri Dec 13 14:45:43 AEDT 2024
+  # virgil 20241216.2
+  # Mon Dec 16 00:23:44 UTC 2024 -- Mon Dec 16 11:23:44 AEDT 2024
   #
-  # Merged PR 30952: Upgrading au2-prod-internal IRIS servers to 24.04
-  # bea4fca2cfef634c64c9ebf149d943ba8fd64357
-  virgil_build_id: '1189538'
+  # Merged PR 30979: Upgrade us2-prod-internal IRIS servers to 2404
+  # 5910f8c1695d372acf8ae1711ba4dedda7d62bee
+  virgil_build_id: '1192106'
 
   # sqlbilling 20241213.3
   # Fri Dec 13 03:12:03 UTC 2024 -- Fri Dec 13 14:12:03 AEDT 2024
