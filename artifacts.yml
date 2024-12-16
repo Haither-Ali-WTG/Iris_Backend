@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241216.2
-  # Mon Dec 16 00:12:26 UTC 2024 -- Mon Dec 16 11:12:26 AEDT 2024
+  # Dante Build Artifact 20241216.3
+  # Mon Dec 16 01:07:26 UTC 2024 -- Mon Dec 16 12:07:26 AEDT 2024
   #
-  # Merged PR 30315: Kill netq
-  # 10e46a119e21c63c4806cda7b229a2ea5bf0e8cf
-  dante_build_id: '1192090'
+  # Merge pull request 30959 from dante_artifact_upgrade into master
+  # ad9fc45ce6aea718e8bdd2fe1225afe9cac04666
+  dante_build_id: '1192176'
 
   # virgil 20241216.2
   # Mon Dec 16 00:23:44 UTC 2024 -- Mon Dec 16 11:23:44 AEDT 2024
