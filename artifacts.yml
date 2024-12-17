@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20241217.1
-  # Mon Dec 16 23:45:58 UTC 2024 -- Tue Dec 17 10:45:58 AEDT 2024
+  # Dante Build Artifact 20241217.2
+  # Tue Dec 17 03:47:01 UTC 2024 -- Tue Dec 17 14:47:01 AEDT 2024
   #
-  # Merge pull request 30842 from dante_python_upgrade into master
-  # 2fb0a8538c08a1ebd91b42af2f4a65ba6ec49a2a
-  dante_build_id: '1193221'
+  # Merge pull request 31039 from dante_artifact_upgrade into master
+  # 0bf5c872607ea5b2b83eb22b6db3db4cc18da152
+  dante_build_id: '1193472'
 
-  # virgil 20241217.4
-  # Tue Dec 17 00:06:40 UTC 2024 -- Tue Dec 17 11:06:40 AEDT 2024
+  # virgil 20241217.7
+  # Tue Dec 17 00:49:26 UTC 2024 -- Tue Dec 17 11:49:26 AEDT 2024
   #
-  # Merged PR 31041: Config Apex55,56:swp21 for Test FlashBlade
-  # dc859714755328968075638fc17d805ae1427224
-  virgil_build_id: '1193261'
+  # Merged PR 31048: Virgil - Set Kafka queues to on demand for slow rollout
+  # ff6d7dfc7e2709781955cfc8a7e896185fc891ec
+  virgil_build_id: '1193331'
 
   # sqlbilling 20241213.3
   # Fri Dec 13 03:12:03 UTC 2024 -- Fri Dec 13 14:12:03 AEDT 2024
