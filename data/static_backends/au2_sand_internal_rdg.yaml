@@ -11,9 +11,11 @@ sand-password-rdg-http:
     - name: sydsp-srdg-3
       ip: 10.2.68.15
       port: 80
+      check port: 5000
     - name: sydsp-srdg-4
       ip: 10.2.68.16
       port: 80
+      check port: 5000
 
 sand-password-rdg-rpc:
   clustered_instances: [au2sandinternalrdg]
@@ -27,6 +29,7 @@ sand-password-rdg-rpc:
     - name: sydsp-srdg-3
       ip: 10.2.68.15
       port: 80
+      check port: 5000
 
 sand-token-rdg-http:
   clustered_instances: [au2sandinternalrdg]
@@ -40,12 +43,15 @@ sand-token-rdg-http:
     - name: au2sp-srdg-406
       ip: 10.2.123.18
       port: 80
+      check port: 5000
     - name: au2sp-srdg-407
       ip: 10.2.123.19
       port: 80
+      check port: 5000
     - name: au2sp-srdg-408
       ip: 10.2.123.20
       port: 80
+      check port: 5000
 
 sand-token-rdg-rpc:
   clustered_instances: [au2sandinternalrdg]
@@ -59,3 +65,4 @@ sand-token-rdg-rpc:
     - name: au2sp-srdg-405
       ip: 10.2.123.17
       port: 80
+      check port: 5000
