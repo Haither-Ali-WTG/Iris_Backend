@@ -3,11 +3,11 @@ sand-password-rdg-http:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
-    http_path: /
-    port: 5000
+    http_path: /wtg/ready
   cookie:
     name: RDPWEB
   fullconn: 1000
+  default_server: check port 5000
   servers:
     - name: sydsp-srdg-3
       ip: 10.2.68.15
@@ -20,11 +20,11 @@ sand-password-rdg-rpc:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
-    http_path: /
-    port: 5000
+    http_path: /wtg/ready
   cookie:
     name: RDPWEB
   fullconn: 1000
+  default_server: check port 5000
   servers:
     - name: sydsp-srdg-3
       ip: 10.2.68.15
@@ -34,11 +34,11 @@ sand-token-rdg-http:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
-    http_path: /
-    port: 5000
+    http_path: /wtg/ready
   cookie:
     name: RDPWEB
   fullconn: 1000
+  default_server: check port 5000
   servers:
     - name: au2sp-srdg-406
       ip: 10.2.123.18
@@ -54,11 +54,11 @@ sand-token-rdg-rpc:
   clustered_instances: [au2sandinternalrdg]
   http_health_check:
     enabled: true
-    http_path: /
-    port: 5000
+    http_path: /wtg/ready
   cookie:
     name: RDPWEB
   fullconn: 1000
+  default_server: check port 5000
   servers:
     - name: au2sp-srdg-405
       ip: 10.2.123.17
