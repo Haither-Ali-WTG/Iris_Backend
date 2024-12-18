@@ -7,12 +7,12 @@ variables:
   # c57ebb814c32c16308b8b6210238226f7b0ad2b6
   dante_build_id: '1194408'
 
-  # virgil 20241217.7
-  # Tue Dec 17 00:49:26 UTC 2024 -- Tue Dec 17 11:49:26 AEDT 2024
+  # virgil 20241218.5
+  # Wed Dec 18 03:16:39 UTC 2024 -- Wed Dec 18 14:16:39 AEDT 2024
   #
-  # Merged PR 31048: Virgil - Set Kafka queues to on demand for slow rollout
-  # ff6d7dfc7e2709781955cfc8a7e896185fc891ec
-  virgil_build_id: '1193331'
+  # Merged PR 31093: Config apex49,50 swp15,16 for HyperV Corp BE workloads
+  # 67a99e19d229b25d07295e99a24a0e891802345a
+  virgil_build_id: '1194528'
 
   # sqlbilling 20241213.3
   # Fri Dec 13 03:12:03 UTC 2024 -- Fri Dec 13 14:12:03 AEDT 2024
