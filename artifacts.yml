@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241217.3
-  # Tue Dec 17 06:05:48 UTC 2024 -- Tue Dec 17 17:05:48 AEDT 2024
+  # Dante Build Artifact 20241218.1
+  # Wed Dec 18 01:16:58 UTC 2024 -- Wed Dec 18 12:16:58 AEDT 2024
   #
-  # Merged PR 31021: Fix mercury artifact
-  # 59cf1d39779e58734d1322cb07c4049b50bce388
-  dante_build_id: '1193613'
+  # Merged PR 31081: Download cumulus files to nginx_ztp on management nodes
+  # c57ebb814c32c16308b8b6210238226f7b0ad2b6
+  dante_build_id: '1194408'
 
   # virgil 20241217.7
   # Tue Dec 17 00:49:26 UTC 2024 -- Tue Dec 17 11:49:26 AEDT 2024
