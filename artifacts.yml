@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241218.1
-  # Wed Dec 18 01:16:58 UTC 2024 -- Wed Dec 18 12:16:58 AEDT 2024
+  # Dante Build Artifact 20241218.2
+  # Wed Dec 18 05:07:31 UTC 2024 -- Wed Dec 18 16:07:31 AEDT 2024
   #
-  # Merged PR 31081: Download cumulus files to nginx_ztp on management nodes
-  # c57ebb814c32c16308b8b6210238226f7b0ad2b6
-  dante_build_id: '1194408'
+  # Merge pull request 31101 from dante_artifact_upgrade into master
+  # aa64c9e89642fdd3b55aac3a5bd977469f0cd7d6
+  dante_build_id: '1194644'
 
   # virgil 20241218.5
   # Wed Dec 18 03:16:39 UTC 2024 -- Wed Dec 18 14:16:39 AEDT 2024
