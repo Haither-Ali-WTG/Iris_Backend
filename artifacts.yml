@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241218.2
-  # Wed Dec 18 05:07:31 UTC 2024 -- Wed Dec 18 16:07:31 AEDT 2024
+  # Dante Build Artifact 20241218.3
+  # Wed Dec 18 06:30:16 UTC 2024 -- Wed Dec 18 17:30:16 AEDT 2024
   #
-  # Merge pull request 31101 from dante_artifact_upgrade into master
-  # aa64c9e89642fdd3b55aac3a5bd977469f0cd7d6
-  dante_build_id: '1194644'
+  # Merged PR 31071: Minos check - Add exit 7 and exit 8 to exemption for ping checks
+  # 1e402e728c78ee2b1a16dfe423888e6c3339199d
+  dante_build_id: '1194730'
 
   # virgil 20241218.5
   # Wed Dec 18 03:16:39 UTC 2024 -- Wed Dec 18 14:16:39 AEDT 2024
