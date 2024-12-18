@@ -27,8 +27,14 @@
         ansible_host: "{{ machine.ansible_host }}"
         dc: "{{ clustered_instance.dc }}"
         simulation_ports:
-          plaintext: "{{ [(2000 + i * 2)] }}"
-          ssl: "{{ [(2000 + i * 2 + 1)] }}"
+          frontend:
+            ports:
+              plaintext: "{{ [(2000 + i * 4)] }}"
+              ssl: "{{ [(2000 + i * 4 + 1)] }}"
+          stats:
+            ports:
+              web: "{{ 2000 + i * 4 + 2 }}"
+              socket: "{{ 2000 + i * 4 + 3 }}"
 
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
@@ -102,11 +108,9 @@
       loop: "{{ cipher.profiles }}"
 
     - name: Override ports in simulation
-      vars:
-        simulation_frontend:
-          ports: "{{ simulation_ports }}"
       set_fact:
-        frontend: "{{ frontend | combine(simulation_frontend, recursive=true) }}"
+        frontend: "{{ frontend | combine(simulation_ports.frontend, recursive=true) }}"
+        stats: "{{ stats | combine(simulation_ports.stats, recursive=true) }}"
       when: simulation
 
     - name: Calculate port mapping
@@ -114,6 +118,7 @@
         all_host_ports: >-
           [
             {{ stats.ports.web }},
+            {{ stats.ports.socket }},
             {% for port in frontend.ports.plaintext %}
             {{ port }},
             {% endfor %}
