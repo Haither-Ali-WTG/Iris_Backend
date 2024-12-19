@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241219.1
-  # Wed Dec 18 22:55:25 UTC 2024 -- Thu Dec 19 09:55:25 AEDT 2024
+  # Dante Build Artifact 20241219.2
+  # Thu Dec 19 06:01:11 UTC 2024 -- Thu Dec 19 17:01:11 AEDT 2024
   #
-  # Merged PR 30520: Add no dante to dhcp pipeline
-  # 62d112afbd0d74edbd58876dd6ed6017e9560ae1
-  dante_build_id: '1195369'
+  # Merged PR 31131: Build RHEL IOS directly on host (without VM)
+  # ed460c246ac192f70ae2defb4fcc93d45e0ac50e
+  dante_build_id: '1195773'
 
   # virgil 20241218.5
   # Wed Dec 18 03:16:39 UTC 2024 -- Wed Dec 18 14:16:39 AEDT 2024
