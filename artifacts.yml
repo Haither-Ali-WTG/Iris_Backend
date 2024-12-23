@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241219.2
-  # Thu Dec 19 06:01:11 UTC 2024 -- Thu Dec 19 17:01:11 AEDT 2024
+  # Dante Build Artifact 20241223.1
+  # Mon Dec 23 02:07:20 UTC 2024 -- Mon Dec 23 13:07:20 AEDT 2024
   #
-  # Merged PR 31131: Build RHEL IOS directly on host (without VM)
-  # ed460c246ac192f70ae2defb4fcc93d45e0ac50e
-  dante_build_id: '1195773'
+  # Merge pull request 31177 from dante_artifact_upgrade into master
+  # 9073963430bb337d4e6d27e2ea8b76f9abf2efe3
+  dante_build_id: '1199201'
 
   # virgil 20241223.2
   # Mon Dec 23 01:11:25 UTC 2024 -- Mon Dec 23 12:11:25 AEDT 2024
