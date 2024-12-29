@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20241230.1
-  # Sun Dec 29 22:31:21 UTC 2024 -- Mon Dec 30 09:31:21 AEDT 2024
+  # Dante Build Artifact 20241230.2
+  # Sun Dec 29 23:27:04 UTC 2024 -- Mon Dec 30 10:27:04 AEDT 2024
   #
-  # Merged PR 31209: RHEL 9.5 support
-  # c5029fee541ba6f331913e85e7e9accaa2737c05
-  dante_build_id: '1205150'
+  # Merge pull request 31216 from dante_artifact_upgrade into master
+  # 00731932916729130e2163816d7456d06313ee4d
+  dante_build_id: '1205194'
 
   # virgil 20241230.1
   # Sun Dec 29 21:50:38 UTC 2024 -- Mon Dec 30 08:50:38 AEDT 2024
