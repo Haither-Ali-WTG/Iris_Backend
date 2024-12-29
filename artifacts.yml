@@ -7,12 +7,12 @@ variables:
   # 9073963430bb337d4e6d27e2ea8b76f9abf2efe3
   dante_build_id: '1199201'
 
-  # virgil 20241223.2
-  # Mon Dec 23 01:11:25 UTC 2024 -- Mon Dec 23 12:11:25 AEDT 2024
+  # virgil 20241230.1
+  # Sun Dec 29 21:50:38 UTC 2024 -- Mon Dec 30 08:50:38 AEDT 2024
   #
-  # Merged PR 31169: Virgil: Replace kafka node C-00137
-  # be81db77d35329027a675a3a76d66b3a5078f367
-  virgil_build_id: '1199147'
+  # Merge pull request 31191 from virgil_python_upgrade into master
+  # 12a0b1cefb4bf17b5a6d2cb4f70adc0ad19d103a
+  virgil_build_id: '1205094'
 
   # sqlbilling 20241220.2
   # Fri Dec 20 05:42:05 UTC 2024 -- Fri Dec 20 16:42:05 AEDT 2024
