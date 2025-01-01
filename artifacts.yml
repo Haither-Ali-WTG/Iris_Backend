@@ -7,12 +7,12 @@ variables:
   # 00731932916729130e2163816d7456d06313ee4d
   dante_build_id: '1205194'
 
-  # virgil 20241230.1
-  # Sun Dec 29 21:50:38 UTC 2024 -- Mon Dec 30 08:50:38 AEDT 2024
+  # virgil 20250102.1
+  # Wed Jan  1 23:05:26 UTC 2025 -- Thu Jan  2 10:05:26 AEDT 2025
   #
-  # Merge pull request 31191 from virgil_python_upgrade into master
-  # 12a0b1cefb4bf17b5a6d2cb4f70adc0ad19d103a
-  virgil_build_id: '1205094'
+  # Merged PR 31234: US2 - Add network ports for us2nas03
+  # 72ec943541d9e5282207174bb093cb81301c1bab
+  virgil_build_id: '1207827'
 
   # sqlbilling 20241220.2
   # Fri Dec 20 05:42:05 UTC 2024 -- Fri Dec 20 16:42:05 AEDT 2024
