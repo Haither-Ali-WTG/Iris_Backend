@@ -112,6 +112,28 @@
   # TODO: validate
   register: sorry_page
 
+- name: Find all existing certificate files
+  find:
+    paths: "{{ individual_instance_dir }}/etc/certs/"
+    patterns: "*.pem"
+    recurse: no
+  become: yes
+  register: existing_pem_certs
+
+- name: Identify certificates removed from the config
+  set_fact:
+    delete_certs: >-
+      {{ existing_pem_certs.files | map(attribute='path') | map('basename')
+      | map('regex_replace', '\.pem$', '') | list | difference(certificates) }}
+
+- name: Delete certificates removed from the config
+  file:
+    path: "{{ individual_instance_dir }}/etc/certs/{{ item }}.pem"
+    state: absent
+  become: yes
+  loop: "{{ delete_certs }}"
+  when: delete_certs | length > 0
+
 - name: Copy certificates for individual instance
   copy:
     src: "certificates/{{ item }}.pem"
