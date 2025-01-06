@@ -7,12 +7,12 @@ variables:
   # bbeee546df324fbc9f8ffbd8c8008e1a4e534ed5
   dante_build_id: '1211763'
 
-  # virgil 20250106.2
-  # Sun Jan  5 22:04:53 UTC 2025 -- Mon Jan  6 09:04:53 AEDT 2025
+  # virgil 20250106.6
+  # Mon Jan  6 09:13:46 UTC 2025 -- Mon Jan  6 20:13:46 AEDT 2025
   #
-  # Merge pull request 31230 from virgil_python_upgrade into master
-  # 141a9a0d73accfdb3bc7cb48131dfa4f1668baec
-  virgil_build_id: '1211364'
+  # Merged PR 31263: Added Topics for CustomerReports Portal - CS01826760
+  # 87e8c2adf65c9b85915e91cde9cb2b5e0c2e56d3
+  virgil_build_id: '1211984'
 
   # sqlbilling 20241220.2
   # Fri Dec 20 05:42:05 UTC 2024 -- Fri Dec 20 16:42:05 AEDT 2024
