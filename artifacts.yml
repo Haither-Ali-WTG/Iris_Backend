@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250106.1
-  # Mon Jan  6 00:03:46 UTC 2025 -- Mon Jan  6 11:03:46 AEDT 2025
+  # Dante Build Artifact 20250106.2
+  # Mon Jan  6 01:06:26 UTC 2025 -- Mon Jan  6 12:06:26 AEDT 2025
   #
-  # Merge pull request 31280 from automatic_nginx_image_upgrade into master
-  # e99af43b1910182183497c3800adeb526a6cd594
-  dante_build_id: '1211503'
+  # Merge pull request 31283 from automatic_botticelli_image_upgrade into master
+  # 98cbec26a260cad0b0dcfe7e2ff1297582875fb1
+  dante_build_id: '1211568'
 
   # virgil 20250106.2
   # Sun Jan  5 22:04:53 UTC 2025 -- Mon Jan  6 09:04:53 AEDT 2025
