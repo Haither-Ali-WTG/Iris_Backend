@@ -7,16 +7,16 @@ variables:
   # 20a9fa75cc7b8f971c188f751ca2dbca61d3f205
   dante_build_id: '1212034'
 
-  # virgil 20250106.6
-  # Mon Jan  6 09:13:46 UTC 2025 -- Mon Jan  6 20:13:46 AEDT 2025
+  # virgil 20250107.2
+  # Mon Jan  6 22:28:27 UTC 2025 -- Tue Jan  7 09:28:27 AEDT 2025
   #
-  # Merged PR 31263: Added Topics for CustomerReports Portal - CS01826760
-  # 87e8c2adf65c9b85915e91cde9cb2b5e0c2e56d3
-  virgil_build_id: '1211984'
+  # Merge pull request 31336 from virgil_python_upgrade into master
+  # 4d44cd5847fa051df1f2fb13c62d73f3089946d7
+  virgil_build_id: '1212506'
 
-  # sqlbilling 20241220.2
-  # Fri Dec 20 05:42:05 UTC 2024 -- Fri Dec 20 16:42:05 AEDT 2024
+  # sqlbilling 20250107.1
+  # Mon Jan  6 14:05:39 UTC 2025 -- Tue Jan  7 01:05:39 AEDT 2025
   #
-  # Merged PR 31158: RTL-SQLBilling-CS01818417
-  # c5d14ee769dd7a9961b4385483f7ce89e3dae272
-  sqlbilling_build_id: '1196749'
+  # Merged PR 31251: SQLBillingCS01807398.yml
+  # 2d3bf3fd50dd20c14e1971eaaed22938f1a9e68a
+  sqlbilling_build_id: '1212194'
