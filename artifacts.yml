@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250106.7
-  # Mon Jan  6 10:08:39 UTC 2025 -- Mon Jan  6 21:08:39 AEDT 2025
+  # Dante Build Artifact 20250107.1
+  # Mon Jan  6 22:46:25 UTC 2025 -- Tue Jan  7 09:46:25 AEDT 2025
   #
-  # Merge pull request 31327 from dante_artifact_upgrade into master
-  # 20a9fa75cc7b8f971c188f751ca2dbca61d3f205
-  dante_build_id: '1212034'
+  # Merge pull request 31284 from automatic_ptmctl_image_upgrade into master
+  # 3bc48a1779f7ea87d3cd2fff7b5b487e896cc76c
+  dante_build_id: '1212540'
 
-  # virgil 20250107.2
-  # Mon Jan  6 22:28:27 UTC 2025 -- Tue Jan  7 09:28:27 AEDT 2025
+  # virgil 20250107.6
+  # Mon Jan  6 23:00:56 UTC 2025 -- Tue Jan  7 10:00:56 AEDT 2025
   #
-  # Merge pull request 31336 from virgil_python_upgrade into master
-  # 4d44cd5847fa051df1f2fb13c62d73f3089946d7
-  virgil_build_id: '1212506'
+  # Merged PR 31260: Remove old server info in DE1
+  # e5293486c688476bb5a4756d0557d35a3e21e70b
+  virgil_build_id: '1212574'
 
   # sqlbilling 20250107.1
   # Mon Jan  6 14:05:39 UTC 2025 -- Tue Jan  7 01:05:39 AEDT 2025
