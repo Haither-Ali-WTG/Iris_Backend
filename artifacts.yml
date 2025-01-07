@@ -7,16 +7,16 @@ variables:
   # 415a2a6b71d8d02356941d1ed9f41846aa83e000
   dante_build_id: '1212696'
 
-  # virgil 20250107.9
-  # Mon Jan  6 23:30:37 UTC 2025 -- Tue Jan  7 10:30:37 AEDT 2025
+  # virgil 20250107.12
+  # Tue Jan  7 02:03:55 UTC 2025 -- Tue Jan  7 13:03:55 AEDT 2025
   #
-  # Merged PR 31250: Put simulation node 10.2.87.11 on demand
-  # 644859d66f53eaac45bef3e59c6734fd890364d0
-  virgil_build_id: '1212631'
+  # Merged PR 31363: Recorrect Spine3/4 Rack id
+  # ceb831d919cf3847b5580e6699a15fcad106ed2e
+  virgil_build_id: '1212811'
 
-  # sqlbilling 20250107.1
-  # Mon Jan  6 14:05:39 UTC 2025 -- Tue Jan  7 01:05:39 AEDT 2025
+  # sqlbilling 20250107.5
+  # Tue Jan  7 01:02:49 UTC 2025 -- Tue Jan  7 12:02:49 AEDT 2025
   #
-  # Merged PR 31251: SQLBillingCS01807398.yml
-  # 2d3bf3fd50dd20c14e1971eaaed22938f1a9e68a
-  sqlbilling_build_id: '1212194'
+  # Merged PR 31335: RTL-SQLBilling-CS01822113,CS01837338
+  # 8ddc04867b1d033431066edf6f4101bc95b16a2e
+  sqlbilling_build_id: '1212757'
