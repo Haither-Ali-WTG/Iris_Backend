@@ -21,7 +21,7 @@ individual_instance_defaults:
     resources:
       production:
         cpu: 8000m
-        memory: 64000Mi
+        memory: 16000Mi
       simulation:
         cpu: 500m
         memory: 400Mi
