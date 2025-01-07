@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250107.1
-  # Mon Jan  6 22:46:25 UTC 2025 -- Tue Jan  7 09:46:25 AEDT 2025
+  # Dante Build Artifact 20250107.2
+  # Mon Jan  6 23:26:44 UTC 2025 -- Tue Jan  7 10:26:44 AEDT 2025
   #
-  # Merge pull request 31284 from automatic_ptmctl_image_upgrade into master
-  # 3bc48a1779f7ea87d3cd2fff7b5b487e896cc76c
-  dante_build_id: '1212540'
+  # Merged PR 31248: Add missing role into IRIS
+  # 52f8932c5f8abf1be9cd4afa00e9ff5d455aae44
+  dante_build_id: '1212615'
 
-  # virgil 20250107.6
-  # Mon Jan  6 23:00:56 UTC 2025 -- Tue Jan  7 10:00:56 AEDT 2025
+  # virgil 20250107.9
+  # Mon Jan  6 23:30:37 UTC 2025 -- Tue Jan  7 10:30:37 AEDT 2025
   #
-  # Merged PR 31260: Remove old server info in DE1
-  # e5293486c688476bb5a4756d0557d35a3e21e70b
-  virgil_build_id: '1212574'
+  # Merged PR 31250: Put simulation node 10.2.87.11 on demand
+  # 644859d66f53eaac45bef3e59c6734fd890364d0
+  virgil_build_id: '1212631'
 
   # sqlbilling 20250107.1
   # Mon Jan  6 14:05:39 UTC 2025 -- Tue Jan  7 01:05:39 AEDT 2025
