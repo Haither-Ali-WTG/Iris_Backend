@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250107.3
-  # Tue Jan  7 00:26:47 UTC 2025 -- Tue Jan  7 11:26:47 AEDT 2025
+  # Dante Build Artifact 20250107.4
+  # Tue Jan  7 03:23:47 UTC 2025 -- Tue Jan  7 14:23:47 AEDT 2025
   #
-  # Merge pull request 31350 from dante_artifact_upgrade into master
-  # 415a2a6b71d8d02356941d1ed9f41846aa83e000
-  dante_build_id: '1212696'
+  # Merged PR 31364: Fixed dante_agent build process (mongo changed URL)
+  # 5703062aef775f416170c1d711141cec6acac5d7
+  dante_build_id: '1212870'
 
   # virgil 20250107.12
   # Tue Jan  7 02:03:55 UTC 2025 -- Tue Jan  7 13:03:55 AEDT 2025
