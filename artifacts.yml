@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250107.2
-  # Mon Jan  6 23:26:44 UTC 2025 -- Tue Jan  7 10:26:44 AEDT 2025
+  # Dante Build Artifact 20250107.3
+  # Tue Jan  7 00:26:47 UTC 2025 -- Tue Jan  7 11:26:47 AEDT 2025
   #
-  # Merged PR 31248: Add missing role into IRIS
-  # 52f8932c5f8abf1be9cd4afa00e9ff5d455aae44
-  dante_build_id: '1212615'
+  # Merge pull request 31350 from dante_artifact_upgrade into master
+  # 415a2a6b71d8d02356941d1ed9f41846aa83e000
+  dante_build_id: '1212696'
 
   # virgil 20250107.9
   # Mon Jan  6 23:30:37 UTC 2025 -- Tue Jan  7 10:30:37 AEDT 2025
