@@ -7,16 +7,16 @@ variables:
   # 3b08e5e88466e04cb2907991bd1bcda9a3fc9f1d
   dante_build_id: '1213828'
 
-  # virgil 20250108.2
-  # Tue Jan  7 23:10:08 UTC 2025 -- Wed Jan  8 10:10:08 AEDT 2025
+  # virgil 20250109.2
+  # Wed Jan  8 14:35:51 UTC 2025 -- Thu Jan  9 01:35:51 AEDT 2025
   #
-  # Merged PR 31390: Add broker ID as an explicit configuration
-  # 5d6a2b0bf0937a087062a8758fd7b33f89c03ee9
-  virgil_build_id: '1213682'
+  # Merged PR 31270: US2 inventory cleanup
+  # 0c75615cda8e915a8c7eea1aaa006d717be50314
+  virgil_build_id: '1214380'
 
-  # sqlbilling 20250107.5
-  # Tue Jan  7 01:02:49 UTC 2025 -- Tue Jan  7 12:02:49 AEDT 2025
+  # sqlbilling 20250108.3
+  # Wed Jan  8 04:39:43 UTC 2025 -- Wed Jan  8 15:39:43 AEDT 2025
   #
-  # Merged PR 31335: RTL-SQLBilling-CS01822113,CS01837338
-  # 8ddc04867b1d033431066edf6f4101bc95b16a2e
-  sqlbilling_build_id: '1212757'
+  # Merged PR 31395: RTL-SQLBilling-CS01838572,CS01838612,CS01837234
+  # 90164064626692e87422f962e7b17edf03cf704a
+  sqlbilling_build_id: '1214013'
