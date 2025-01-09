@@ -7,16 +7,16 @@ variables:
   # b350ebf500222b6841c9eedbcd2d4934e2aa500a
   dante_build_id: '1214648'
 
-  # virgil 20250109.2
-  # Wed Jan  8 14:35:51 UTC 2025 -- Thu Jan  9 01:35:51 AEDT 2025
+  # virgil 20250110.1
+  # Thu Jan  9 22:49:24 UTC 2025 -- Fri Jan 10 09:49:24 AEDT 2025
   #
-  # Merged PR 31270: US2 inventory cleanup
-  # 0c75615cda8e915a8c7eea1aaa006d717be50314
-  virgil_build_id: '1214380'
+  # Merged PR 31443: Add IRIS de1-internal nodes to Virgil
+  # f1afb3a27997b892cd31979e409100ff16fbbcea
+  virgil_build_id: '1215687'
 
-  # sqlbilling 20250108.3
-  # Wed Jan  8 04:39:43 UTC 2025 -- Wed Jan  8 15:39:43 AEDT 2025
+  # sqlbilling 20250109.1
+  # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
   #
-  # Merged PR 31395: RTL-SQLBilling-CS01838572,CS01838612,CS01837234
-  # 90164064626692e87422f962e7b17edf03cf704a
-  sqlbilling_build_id: '1214013'
+  # Merged PR 31420: Updated us2-prod-frontend-1.yml
+  # 1559d47a521d6ed8c4ff367d36e44d2579004831
+  sqlbilling_build_id: '1215156'
