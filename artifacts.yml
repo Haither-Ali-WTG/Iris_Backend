@@ -7,12 +7,12 @@ variables:
   # 723a66bd2b16db51a60cfe133f58311020f33ada
   dante_build_id: '1215734'
 
-  # virgil 20250110.1
-  # Thu Jan  9 22:49:24 UTC 2025 -- Fri Jan 10 09:49:24 AEDT 2025
+  # virgil 20250113.1
+  # Sun Jan 12 22:04:39 UTC 2025 -- Mon Jan 13 09:04:39 AEDT 2025
   #
-  # Merged PR 31443: Add IRIS de1-internal nodes to Virgil
-  # f1afb3a27997b892cd31979e409100ff16fbbcea
-  virgil_build_id: '1215687'
+  # Merged PR 31469: US2 - Add management ports for us2san05/06
+  # 757a545f2e314b2f67364433e42d571fa7b23053
+  virgil_build_id: '1218366'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
