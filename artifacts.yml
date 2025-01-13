@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250113.3
-  # Mon Jan 13 05:35:57 UTC 2025 -- Mon Jan 13 16:35:57 AEDT 2025
+  # Dante Build Artifact 20250114.1
+  # Mon Jan 13 21:27:05 UTC 2025 -- Tue Jan 14 08:27:05 AEDT 2025
   #
-  # Merged PR 31485: Fast build Windows ISO without using VMs
-  # fea069b9135a3d1b7136a56784faf28a7dd132f8
-  dante_build_id: '1218831'
+  # Merge pull request 31532 from dante_artifact_upgrade into master
+  # 650694cfe14ffda5528f1af602d10c221e1d2589
+  dante_build_id: '1219461'
 
   # virgil 20250114.2
   # Mon Jan 13 20:21:42 UTC 2025 -- Tue Jan 14 07:21:42 AEDT 2025
