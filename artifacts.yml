@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250113.1
-  # Sun Jan 12 23:07:27 UTC 2025 -- Mon Jan 13 10:07:27 AEDT 2025
+  # Dante Build Artifact 20250113.2
+  # Mon Jan 13 03:48:58 UTC 2025 -- Mon Jan 13 14:48:58 AEDT 2025
   #
-  # Merge pull request 31478 from dante_artifact_upgrade into master
-  # 1707e7ea8125088a46d4b21289b8bf7465a06cda
-  dante_build_id: '1218425'
+  # Merged PR 31489: Updated Windows drivers
+  # e920ae2a9034c61f82a7bf4bed2775bdd8e54e6e
+  dante_build_id: '1218670'
 
   # virgil 20250113.1
   # Sun Jan 12 22:04:39 UTC 2025 -- Mon Jan 13 09:04:39 AEDT 2025
