@@ -7,12 +7,12 @@ variables:
   # 650694cfe14ffda5528f1af602d10c221e1d2589
   dante_build_id: '1219461'
 
-  # virgil 20250114.2
-  # Mon Jan 13 20:21:42 UTC 2025 -- Tue Jan 14 07:21:42 AEDT 2025
+  # virgil 20250114.5
+  # Mon Jan 13 22:27:29 UTC 2025 -- Tue Jan 14 09:27:29 AEDT 2025
   #
-  # Merged PR 31490: Upgrade DE1 mgmt 1 to Ubuntu 24.04
-  # 7b0b29acc1502c5868d009587e84f344b79c6422
-  virgil_build_id: '1219413'
+  # Merge pull request 31517 from virgil_python_upgrade into master
+  # e9b7a8259f64a1413c824de8e9160b61ee6ec632
+  virgil_build_id: '1219527'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
