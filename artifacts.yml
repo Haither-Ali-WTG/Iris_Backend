@@ -7,12 +7,12 @@ variables:
   # fea069b9135a3d1b7136a56784faf28a7dd132f8
   dante_build_id: '1218831'
 
-  # virgil 20250113.1
-  # Sun Jan 12 22:04:39 UTC 2025 -- Mon Jan 13 09:04:39 AEDT 2025
+  # virgil 20250114.2
+  # Mon Jan 13 20:21:42 UTC 2025 -- Tue Jan 14 07:21:42 AEDT 2025
   #
-  # Merged PR 31469: US2 - Add management ports for us2san05/06
-  # 757a545f2e314b2f67364433e42d571fa7b23053
-  virgil_build_id: '1218366'
+  # Merged PR 31490: Upgrade DE1 mgmt 1 to Ubuntu 24.04
+  # 7b0b29acc1502c5868d009587e84f344b79c6422
+  virgil_build_id: '1219413'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
