@@ -39,10 +39,15 @@ haproxy_cipher_settings:
 
 haproxy_frontend_settings:
   ports: include('haproxy_frontend_ports_settings', required=False)
+  proxy_ports: include('haproxy_frontend_proxy_ports_settings', required=False)
   maxconn: int(min=1, required=False)
   fullconn: int(min=1, required=False)
 
 haproxy_frontend_ports_settings:
+  plaintext: list(int(min=1, max=65535), required=False)
+  ssl: list(int(min=1, max=65535), required=False)
+
+haproxy_frontend_proxy_ports_settings:
   plaintext: list(int(min=1, max=65535), required=False)
   ssl: list(int(min=1, max=65535), required=False)
 

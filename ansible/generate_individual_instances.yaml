@@ -117,10 +117,20 @@
             {% for port in frontend.ports.plaintext %}
             {{ port }},
             {% endfor %}
+            {% if frontend.proxy_ports | default([]) %}
+            {% for port in frontend.proxy_ports.plaintext %}
+            {{ port }},
+            {% endfor %}
+            {% endif %}
             {% if certificates | default([]) %}
             {% for port in frontend.ports.ssl %}
             {{ port }},
             {% endfor %}
+            {% if frontend.proxy_ports | default([]) %}
+            {% for port in frontend.proxy_ports.ssl %}
+            {{ port }},
+            {% endfor %}
+            {% endif %}
             {% endif %}
           ]
         port_prealloc_pairs: >-
