@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250114.4
-  # Tue Jan 14 03:00:01 UTC 2025 -- Tue Jan 14 14:00:01 AEDT 2025
+  # Dante Build Artifact 20250114.5
+  # Tue Jan 14 05:39:15 UTC 2025 -- Tue Jan 14 16:39:15 AEDT 2025
   #
-  # Merged PR 31575: Removed Windows ISOs builds from US
-  # 073508f9fc87e0823c4f17753924e6d8e8017ade
-  dante_build_id: '1219810'
+  # Merge pull request 31525 from dante_python_upgrade into master
+  # 3761517d69ef813a8ea3a255e594e312b9c410e7
+  dante_build_id: '1219958'
 
   # virgil 20250114.9
   # Mon Jan 13 23:53:07 UTC 2025 -- Tue Jan 14 10:53:07 AEDT 2025
