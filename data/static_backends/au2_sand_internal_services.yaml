@@ -378,3 +378,25 @@ platform-docs.wtg.zone:
     - name: au2mal00002.wtg.ws
       ip: 10.2.0.32
       port: 8087
+
+cs.sand.wtg.zone:	#CS01812375 Sand Configuration Service
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-407a
+      ip: 10.2.118.66
+      port: 80
+
+cs-dev.sand.wtg.zone:	#CS01812375 Sand Configuration Service
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-407b
+      ip: 10.2.118.67
+      port: 80
