@@ -386,7 +386,7 @@ cs.sand.wtg.zone:	#CS01812375 Sand Configuration Service
     http_path: /wtg/ready
   encryption: false
   servers:
-    - name: AU2SP-SIIS-407a
+    - name: au2sp-siis-407a
       ip: 10.2.118.66
       port: 80
 
@@ -397,6 +397,6 @@ cs-dev.sand.wtg.zone:	#CS01812375 Sand Configuration Service
     http_path: /wtg/ready
   encryption: false
   servers:
-    - name: AU2SP-SIIS-407b
+    - name: au2sp-siis-407b
       ip: 10.2.118.67
       port: 80
