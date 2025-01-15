@@ -7,12 +7,12 @@ variables:
   # 438d23d8f2de546a0f2998c79f690fa3fe4b5a1a
   dante_build_id: '1220589'
 
-  # virgil 20250115.1
-  # Tue Jan 14 20:47:45 UTC 2025 -- Wed Jan 15 07:47:45 AEDT 2025
+  # virgil 20250115.3
+  # Wed Jan 15 03:53:49 UTC 2025 -- Wed Jan 15 14:53:49 AEDT 2025
   #
-  # Merged PR 31554: Upgrade US2 management node 1 to Ubuntu 24.04.1
-  # dbe8b347c4d0a7e87b3c8dbc26818a527d9f1315
-  virgil_build_id: '1220540'
+  # Merged PR 31618: Put US2 mgmt 1 back to continuous
+  # 032b1a78ca25b7016aa9d4a00dddc1d5ffd7baf1
+  virgil_build_id: '1220907'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
