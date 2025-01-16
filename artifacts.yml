@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250116.1
-  # Wed Jan 15 23:07:36 UTC 2025 -- Thu Jan 16 10:07:36 AEDT 2025
+  # Dante Build Artifact 20250116.2
+  # Thu Jan 16 00:48:21 UTC 2025 -- Thu Jan 16 11:48:21 AEDT 2025
   #
-  # Merge pull request 31628 from dante_artifact_upgrade into master
-  # 92fcd96ed49fc74cc4c49463a869723382eb5063
-  dante_build_id: '1221661'
+  # Merged PR 31641: Added new mellanox drivers for Windows
+  # b57d0ff4c3487aa42dfc6c25f24037c90903e746
+  dante_build_id: '1221758'
 
-  # virgil 20250115.3
-  # Wed Jan 15 03:53:49 UTC 2025 -- Wed Jan 15 14:53:49 AEDT 2025
+  # virgil 20250116.2
+  # Thu Jan 16 03:02:35 UTC 2025 -- Thu Jan 16 14:02:35 AEDT 2025
   #
-  # Merged PR 31618: Put US2 mgmt 1 back to continuous
-  # 032b1a78ca25b7016aa9d4a00dddc1d5ffd7baf1
-  virgil_build_id: '1220907'
+  # Merged PR 31539: Update Exit7/8 EVPN configuration
+  # e2ff332a97ec1afa2e3d0277be7b1053bc5a7fbc
+  virgil_build_id: '1221881'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
