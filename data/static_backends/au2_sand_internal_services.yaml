@@ -389,6 +389,9 @@ cs.sand.wtg.zone:
     - name: au2sp-siis-407a
       ip: 10.2.118.66
       port: 80
+    - name: au2sp-siis-407b
+      ip: 10.2.118.67
+      port: 80      
 
 cs-dev.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
@@ -397,6 +400,9 @@ cs-dev.sand.wtg.zone:
     http_path: /wtg/ready
   encryption: false
   servers:
+    - name: au2sp-siis-407a
+      ip: 10.2.118.66
+      port: 80  
     - name: au2sp-siis-407b
       ip: 10.2.118.67
       port: 80
