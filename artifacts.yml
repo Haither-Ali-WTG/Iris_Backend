@@ -7,12 +7,12 @@ variables:
   # bb3f96b8bc19718c0ed13fd73bb86793795cd755
   dante_build_id: '1221916'
 
-  # virgil 20250116.2
-  # Thu Jan 16 03:02:35 UTC 2025 -- Thu Jan 16 14:02:35 AEDT 2025
+  # virgil 20250116.4
+  # Thu Jan 16 09:30:37 UTC 2025 -- Thu Jan 16 20:30:37 AEDT 2025
   #
-  # Merged PR 31539: Update Exit7/8 EVPN configuration
-  # e2ff332a97ec1afa2e3d0277be7b1053bc5a7fbc
-  virgil_build_id: '1221881'
+  # Merged PR 31669: Move Kafka node from .32 to .52
+  # 8bad624f5e74307add05ba21826c0cc4cab95f46
+  virgil_build_id: '1222177'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
