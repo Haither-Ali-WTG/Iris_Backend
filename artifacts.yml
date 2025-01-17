@@ -7,12 +7,12 @@ variables:
   # ffc1f683c1203dab2d0d9eb552476d10cd9459f8
   dante_build_id: '1222223'
 
-  # virgil 20250116.4
-  # Thu Jan 16 09:30:37 UTC 2025 -- Thu Jan 16 20:30:37 AEDT 2025
+  # virgil 20250117.5
+  # Fri Jan 17 01:12:27 UTC 2025 -- Fri Jan 17 12:12:27 AEDT 2025
   #
-  # Merged PR 31669: Move Kafka node from .32 to .52
-  # 8bad624f5e74307add05ba21826c0cc4cab95f46
-  virgil_build_id: '1222177'
+  # Merged PR 31688: Explicitly add non vm k8s networks to exits
+  # 1590d0b12bda4cdd1a0f6fe2c58d4a0032d1aacd
+  virgil_build_id: '1222816'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
