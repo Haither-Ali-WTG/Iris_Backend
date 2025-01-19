@@ -6,7 +6,7 @@
 #
 annotated-types==0.7.0
     # via pydantic
-ansible==11.0.0
+ansible==11.1.0
     # via -r requirements.in
 ansible-compat==24.10.0
     # via ansible-lint
@@ -15,47 +15,47 @@ ansible-core==2.18.1
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==24.10.0
+ansible-lint==24.12.2
     # via -r requirements.in
-argcomplete==3.5.1
+argcomplete==3.5.3
     # via yq
-astroid==3.3.5
+astroid==3.3.8
     # via pylint
-attrs==24.2.0
+attrs==24.3.0
     # via
     #   jsonschema
     #   pytest-subtests
     #   referencing
-authlib==1.3.2
+authlib==1.4.0
     # via safety
-awscli==1.36.13
+awscli==1.36.38
     # via -r requirements.in
-bandit==1.8.0
+bandit==1.8.2
     # via -r requirements.in
 black==24.10.0
     # via ansible-lint
-botocore==1.35.72
+botocore==1.35.97
     # via
     #   awscli
     #   s3transfer
 bracex==2.5.post1
     # via wcmatch
-certifi==2024.8.30
+certifi==2024.12.14
     # via requests
 cffi==1.17.1
     # via cryptography
-charset-normalizer==3.4.0
+charset-normalizer==3.4.1
     # via requests
-click==8.1.7
+click==8.1.8
     # via
     #   black
     #   safety
     #   typer
 colorama==0.4.6
     # via awscli
-confluent-kafka==2.6.1
+confluent-kafka==2.8.0
     # via -r requirements.in
-coverage[toml]==7.6.8
+coverage[toml]==7.6.10
     # via pytest-cov
 cryptography==44.0.0
     # via
@@ -71,7 +71,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.12.4
+filelock==3.16.1
     # via
     #   ansible-lint
     #   safety
@@ -83,7 +83,7 @@ iniconfig==2.0.0
     # via pytest
 isort==5.13.2
     # via pylint
-jinja2==3.1.4
+jinja2==3.1.5
     # via
     #   ansible-core
     #   safety
@@ -101,7 +101,7 @@ markdown-it-py==3.0.0
     # via rich
 markupsafe==3.0.2
     # via jinja2
-marshmallow==3.23.1
+marshmallow==3.25.1
     # via safety
 mccabe==0.7.0
     # via pylint
@@ -109,7 +109,7 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.5.0
     # via -r requirements.in
-mypy==1.13.0
+mypy==1.14.1
     # via -r requirements.in
 mypy-extensions==1.0.0
     # via
@@ -141,7 +141,7 @@ platformdirs==4.3.6
     #   pylint
 pluggy==1.5.0
     # via pytest
-psutil==6.0.0
+psutil==6.1.1
     # via safety
 pyasn1==0.6.1
     # via rsa
@@ -153,9 +153,9 @@ pydantic==2.9.2
     #   safety-schemas
 pydantic-core==2.23.4
     # via pydantic
-pygments==2.18.0
+pygments==2.19.1
     # via rich
-pylint==3.3.2
+pylint==3.3.3
     # via -r requirements.in
 pyspnego==0.11.2
     # via requests-ntlm
@@ -166,7 +166,7 @@ pytest==8.3.4
     #   pytest-subtests
 pytest-cov==6.0.0
     # via -r requirements.in
-pytest-subtests==0.13.1
+pytest-subtests==0.14.1
     # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via botocore
@@ -197,17 +197,16 @@ resolvelib==1.0.1
     # via ansible-core
 rich==13.9.4
     # via
-    #   ansible-lint
     #   bandit
     #   safety
     #   typer
-rpds-py==0.21.0
+rpds-py==0.22.3
     # via
     #   jsonschema
     #   referencing
 rsa==4.7.2
     # via awscli
-ruamel-yaml==0.18.6
+ruamel-yaml==0.18.10
     # via
     #   ansible-lint
     #   safety
@@ -216,13 +215,13 @@ ruamel-yaml-clib==0.2.12
     # via ruamel-yaml
 s3transfer==0.10.4
     # via awscli
-safety==3.2.11
+safety==3.2.14
     # via -r requirements.in
-safety-schemas==0.0.9
+safety-schemas==0.0.10
     # via safety
 shellingham==1.5.4
     # via typer
-six==1.16.0
+six==1.17.0
     # via python-dateutil
 stevedore==5.4.0
     # via bandit
@@ -234,9 +233,9 @@ tomlkit==0.13.2
     # via
     #   pylint
     #   yq
-typer==0.14.0
+typer==0.15.1
     # via safety
-types-pyyaml==6.0.12.20240917
+types-pyyaml==6.0.12.20241230
     # via -r requirements.in
 types-requests==2.32.0.20241016
     # via -r requirements.in
@@ -248,7 +247,7 @@ typing-extensions==4.12.2
     #   safety
     #   safety-schemas
     #   typer
-urllib3==2.2.3
+urllib3==2.3.0
     # via
     #   botocore
     #   requests
@@ -260,7 +259,7 @@ xmltodict==0.14.2
     # via
     #   pywinrm
     #   yq
-yamale==5.2.1
+yamale==6.0.0
     # via -r requirements.in
 yamllint==1.35.1
     # via
