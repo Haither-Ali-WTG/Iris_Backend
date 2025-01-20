@@ -7,12 +7,12 @@ variables:
   # 8055472f49505570576d1cb850f9ea31a7ed0457
   dante_build_id: '1225776'
 
-  # virgil 20250120.9
-  # Mon Jan 20 01:27:28 UTC 2025 -- Mon Jan 20 12:27:28 AEDT 2025
+  # virgil 20250120.11
+  # Mon Jan 20 05:19:04 UTC 2025 -- Mon Jan 20 16:19:04 AEDT 2025
   #
-  # Merged PR 31762: Put DE1 mgmt 2 back to continuous
-  # 1321ec5e1ee413ef5984a4a517cbd4b075a7c12c
-  virgil_build_id: '1225726'
+  # Merged PR 31776: Virgil - Add machine hardware type - C43
+  # 9481688df9ef337c81a895f263ad5c85e9aa2187
+  virgil_build_id: '1225938'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
