@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250121.1
-  # Mon Jan 20 20:45:30 UTC 2025 -- Tue Jan 21 07:45:30 AEDT 2025
+  # Dante Build Artifact 20250121.2
+  # Mon Jan 20 21:46:57 UTC 2025 -- Tue Jan 21 08:46:57 AEDT 2025
   #
-  # Merged PR 31775: Physical Hosts - Change commands for C43 hosts
-  # fc4bfcfbe3fa5000b8b47dfe700f2c75a0d5c6b9
-  dante_build_id: '1226569'
+  # Merge pull request 31814 from dante_artifact_upgrade into master
+  # 0302ebd655ef6b052a5f2033e8524f3332bf6163
+  dante_build_id: '1226623'
 
   # virgil 20250121.2
   # Mon Jan 20 20:06:41 UTC 2025 -- Tue Jan 21 07:06:41 AEDT 2025
