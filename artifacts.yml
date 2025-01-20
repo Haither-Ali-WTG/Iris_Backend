@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250120.1
-  # Sun Jan 19 23:07:12 UTC 2025 -- Mon Jan 20 10:07:12 AEDT 2025
+  # Dante Build Artifact 20250120.2
+  # Mon Jan 20 00:47:17 UTC 2025 -- Mon Jan 20 11:47:17 AEDT 2025
   #
-  # Merge pull request 31737 from dante_artifact_upgrade into master
-  # c17f85c1eeae9a2144fb470685298213a0316383
-  dante_build_id: '1225539'
+  # Merge pull request 31752 from dante_artifact_upgrade into master
+  # 5db7a53f2139459065ceec83c2e133bad4cd415a
+  dante_build_id: '1225667'
 
-  # virgil 20250120.4
-  # Sun Jan 19 23:49:03 UTC 2025 -- Mon Jan 20 10:49:03 AEDT 2025
+  # virgil 20250120.6
+  # Mon Jan 20 00:57:13 UTC 2025 -- Mon Jan 20 11:57:13 AEDT 2025
   #
-  # Merged PR 31714: DE1-add-de1nas03
-  # d3e4bceb6f9909da92469a4fed4b0f819e39ad57
-  virgil_build_id: '1225594'
+  # Merged PR 31726: Update sydwp-sftp-1 IP address
+  # 3c1607fd3c5af1b70557756bc39a3c344e7387c7
+  virgil_build_id: '1225679'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
