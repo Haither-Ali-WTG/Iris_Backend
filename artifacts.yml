@@ -7,12 +7,12 @@ variables:
   # 0302ebd655ef6b052a5f2033e8524f3332bf6163
   dante_build_id: '1226623'
 
-  # virgil 20250121.2
-  # Mon Jan 20 20:06:41 UTC 2025 -- Tue Jan 21 07:06:41 AEDT 2025
+  # virgil 20250121.5
+  # Mon Jan 20 22:51:37 UTC 2025 -- Tue Jan 21 09:51:37 AEDT 2025
   #
-  # Merged PR 31786: Virgil - Change all Kafka IP addresses to .51-55 range
-  # 8fc3994d749744ce89a0529f89475b19fae6af79
-  virgil_build_id: '1226527'
+  # Merge pull request 31801 from virgil_python_upgrade into master
+  # 8226154b48788282c365a67242087fd4c23969a6
+  virgil_build_id: '1226683'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
