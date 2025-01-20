@@ -7,12 +7,12 @@ variables:
   # c17f85c1eeae9a2144fb470685298213a0316383
   dante_build_id: '1225539'
 
-  # virgil 20250120.1
-  # Sun Jan 19 22:20:06 UTC 2025 -- Mon Jan 20 09:20:06 AEDT 2025
+  # virgil 20250120.4
+  # Sun Jan 19 23:49:03 UTC 2025 -- Mon Jan 20 10:49:03 AEDT 2025
   #
-  # Merged PR 31724: Upgrade DE1 mgmt node 2 to Ubuntu 24.04
-  # f30df7f4c079688ee18942a2fd3a321f85e5dc27
-  virgil_build_id: '1225489'
+  # Merged PR 31714: DE1-add-de1nas03
+  # d3e4bceb6f9909da92469a4fed4b0f819e39ad57
+  virgil_build_id: '1225594'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
