@@ -7,12 +7,12 @@ variables:
   # 13c25dc5e4b3ef3cf6213ab6f9a117763d0f89a1
   dante_build_id: '1226746'
 
-  # virgil 20250121.5
-  # Mon Jan 20 22:51:37 UTC 2025 -- Tue Jan 21 09:51:37 AEDT 2025
+  # virgil 20250121.10
+  # Tue Jan 21 01:25:01 UTC 2025 -- Tue Jan 21 12:25:01 AEDT 2025
   #
-  # Merge pull request 31801 from virgil_python_upgrade into master
-  # 8226154b48788282c365a67242087fd4c23969a6
-  virgil_build_id: '1226683'
+  # Merged PR 31844: DNS - Change CNAME for kafka node 3
+  # 8350d61e40e20025ef2976fff901e6510dc44745
+  virgil_build_id: '1226856'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
