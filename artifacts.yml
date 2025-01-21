@@ -7,12 +7,12 @@ variables:
   # a9e11bc990aa15e108ee015fc6b4188bd0123d08
   dante_build_id: '1226979'
 
-  # virgil 20250121.10
-  # Tue Jan 21 01:25:01 UTC 2025 -- Tue Jan 21 12:25:01 AEDT 2025
+  # virgil 20250122.3
+  # Tue Jan 21 20:48:01 UTC 2025 -- Wed Jan 22 07:48:01 AEDT 2025
   #
-  # Merged PR 31844: DNS - Change CNAME for kafka node 3
-  # 8350d61e40e20025ef2976fff901e6510dc44745
-  virgil_build_id: '1226856'
+  # Merged PR 31761: Upgrade US2 mgmt node 2 to Ubuntu 24.04
+  # 2b9b499e38b57551b4d98ccbbdc8ff0b8a93d089
+  virgil_build_id: '1227696'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
