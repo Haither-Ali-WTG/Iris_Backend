@@ -7,12 +7,12 @@ variables:
   # a2cb1c71adf4415b42fd52adb1a6b91c9ab5bcc0
   dante_build_id: '1227764'
 
-  # virgil 20250122.3
-  # Tue Jan 21 20:48:01 UTC 2025 -- Wed Jan 22 07:48:01 AEDT 2025
+  # virgil 20250122.16
+  # Tue Jan 21 23:12:48 UTC 2025 -- Wed Jan 22 10:12:48 AEDT 2025
   #
-  # Merged PR 31761: Upgrade US2 mgmt node 2 to Ubuntu 24.04
-  # 2b9b499e38b57551b4d98ccbbdc8ff0b8a93d089
-  virgil_build_id: '1227696'
+  # Merged PR 31873: Added de1nas03 ports configuration
+  # baf591d8f7da165d6e713d41a8fde1c930556376
+  virgil_build_id: '1227870'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
