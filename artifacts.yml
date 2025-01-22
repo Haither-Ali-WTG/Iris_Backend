@@ -7,12 +7,12 @@ variables:
   # 53af19e0103878a98691771e11f8e49425c08690
   dante_build_id: '1228014'
 
-  # virgil 20250122.16
-  # Tue Jan 21 23:12:48 UTC 2025 -- Wed Jan 22 10:12:48 AEDT 2025
+  # virgil 20250123.2
+  # Wed Jan 22 22:13:22 UTC 2025 -- Thu Jan 23 09:13:22 AEDT 2025
   #
-  # Merged PR 31873: Added de1nas03 ports configuration
-  # baf591d8f7da165d6e713d41a8fde1c930556376
-  virgil_build_id: '1227870'
+  # Merged PR 31931: new leaf7/8 at SY5
+  # d0754875d868b92b5cee30d48969b1b8b4048b42
+  virgil_build_id: '1228852'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
