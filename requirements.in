@@ -22,8 +22,8 @@ yamllint
 jq
 yq
 
-# required for S3 communication
-awscli
+# required for s3 (pure storage) communication
+awscli~=1.36.0  # downgraded due to s3transfer's checksum https://github.com/aws/aws-cli/issues/9214
 
 # required for simulation
 netaddr
