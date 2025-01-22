@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250122.2
-  # Wed Jan 22 00:07:52 UTC 2025 -- Wed Jan 22 11:07:52 AEDT 2025
+  # Dante Build Artifact 20250122.3
+  # Wed Jan 22 01:14:23 UTC 2025 -- Wed Jan 22 12:14:23 AEDT 2025
   #
-  # Merge pull request 31896 from dante_artifact_upgrade into master
-  # d29cb1eee1fc5c7e60306cbab166f5d28542a77d
-  dante_build_id: '1227934'
+  # Merged PR 31905: Fix : Downgrade aws-cli due to AWS CLI changes
+  # 53af19e0103878a98691771e11f8e49425c08690
+  dante_build_id: '1228014'
 
   # virgil 20250122.16
   # Tue Jan 21 23:12:48 UTC 2025 -- Wed Jan 22 10:12:48 AEDT 2025
