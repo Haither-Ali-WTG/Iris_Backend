@@ -7,12 +7,12 @@ variables:
   # 53af19e0103878a98691771e11f8e49425c08690
   dante_build_id: '1228014'
 
-  # virgil 20250123.2
-  # Wed Jan 22 22:13:22 UTC 2025 -- Thu Jan 23 09:13:22 AEDT 2025
+  # virgil 20250123.5
+  # Wed Jan 22 23:52:52 UTC 2025 -- Thu Jan 23 10:52:52 AEDT 2025
   #
-  # Merged PR 31931: new leaf7/8 at SY5
-  # d0754875d868b92b5cee30d48969b1b8b4048b42
-  virgil_build_id: '1228852'
+  # Merged PR 31939: update au2-leaf7/8 BGP asn
+  # b9bb55d6eb80848b9aa28969ad881f694fab4d6e
+  virgil_build_id: '1228933'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
