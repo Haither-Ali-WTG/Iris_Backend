@@ -7,12 +7,12 @@ variables:
   # 0c1f9a947bd9c3aba53c897ccc95a2a801094e32
   dante_build_id: '1229021'
 
-  # virgil 20250123.7
-  # Thu Jan 23 00:26:44 UTC 2025 -- Thu Jan 23 11:26:44 AEDT 2025
+  # virgil 20250123.9
+  # Thu Jan 23 03:32:15 UTC 2025 -- Thu Jan 23 14:32:15 AEDT 2025
   #
-  # Merged PR 31946: Add ocp topics again due to merge conflict on unmerged update
-  # a19d278e781a1e4abf22538e2a8cf5804b650e80
-  virgil_build_id: '1228970'
+  # Merged PR 31929: Change host for node 4
+  # 267ed5f80f475ecdd393939e35b49ec56a9080b4
+  virgil_build_id: '1229114'
 
   # sqlbilling 20250109.1
   # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
