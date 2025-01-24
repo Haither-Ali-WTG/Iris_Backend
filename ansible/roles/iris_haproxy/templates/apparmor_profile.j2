@@ -42,7 +42,7 @@ profile {{ container_name }} flags=(attach_disconnected,mediate_deleted) {
   deny /mnt/** wl,
   deny /opt/** wl,
   deny /proc/** wl,
-  audit /proc/thread-self/attr/apparmor/exec rw,
+  allow /proc/thread-self/attr/apparmor/exec rw,
   deny /root/** wl,
   deny /sbin/** wl,
   deny /srv/** wl,
