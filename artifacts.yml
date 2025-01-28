@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250123.2
-  # Thu Jan 23 04:27:05 UTC 2025 -- Thu Jan 23 15:27:05 AEDT 2025
+  # Dante Build Artifact 20250128.1
+  # Tue Jan 28 00:13:44 UTC 2025 -- Tue Jan 28 11:13:44 AEDT 2025
   #
-  # Merge pull request 31966 from dante_artifact_upgrade into master
-  # b119aca37e04784687fdfc1388a07c097b98f24c
-  dante_build_id: '1229157'
+  # Merged PR 31653: [WI00858552] Update Dante agent for OCP
+  # 1c8a61824d5d0e5f5be615d1391587600ea32e95
+  dante_build_id: '1233436'
 
-  # virgil 20250123.9
-  # Thu Jan 23 03:32:15 UTC 2025 -- Thu Jan 23 14:32:15 AEDT 2025
+  # virgil 20250128.2
+  # Tue Jan 28 00:36:09 UTC 2025 -- Tue Jan 28 11:36:09 AEDT 2025
   #
-  # Merged PR 31929: Change host for node 4
-  # 267ed5f80f475ecdd393939e35b49ec56a9080b4
-  virgil_build_id: '1229114'
+  # Merge pull request 31991 from virgil_python_upgrade into master
+  # 5dd3d03be7b3a05f0fb314023e7b402b63925e21
+  virgil_build_id: '1233467'
 
-  # sqlbilling 20250109.1
-  # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
+  # sqlbilling 20250127.2
+  # Mon Jan 27 10:16:19 UTC 2025 -- Mon Jan 27 21:16:19 AEDT 2025
   #
-  # Merged PR 31420: Updated us2-prod-frontend-1.yml
-  # 1559d47a521d6ed8c4ff367d36e44d2579004831
-  sqlbilling_build_id: '1215156'
+  # Merged PR 31989: Updated us2-prod-frontend-1.yml
+  # 34987d569955c47b229370e0ea9e4d29ac81f63b
+  sqlbilling_build_id: '1232887'
