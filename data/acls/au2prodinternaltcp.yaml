@@ -1,0 +1,10 @@
+---
+au2mail_test_wisecloud_zone:
+  description: au2mail TEST
+  tests:
+    - au2mail_test_wisecloud_zone_dst_port dst_port 2025
+
+au2mail_wisecloud_zone:
+  description: au2mail PROD
+  tests:
+    - au2mail_wisecloud_zone_dst_port dst_port 2026

@@ -1,0 +1,14 @@
+---
+au2mail_test_wisecloud_zone:
+  description: |-
+    Uses backend au2mail_test_wisecloud_zone for au2mail_test_wisecloud_zone_dst_port
+  order: 30
+  actions:
+    - use_backend au2mail_test_wisecloud_zone if au2mail_test_wisecloud_zone_dst_port
+
+au2mail_wisecloud_zone:
+  description: |-
+    Uses backend au2mail_wisecloud_zone for au2mail_wisecloud_zone_dst_port
+  order: 30
+  actions:
+    - use_backend au2mail_wisecloud_zone if au2mail_wisecloud_zone_dst_port
