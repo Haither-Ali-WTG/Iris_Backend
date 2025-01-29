@@ -7,12 +7,12 @@ variables:
   # a919cf64dfed884fb10900fe9a486ca952d94d50
   dante_build_id: '1233577'
 
-  # virgil 20250128.2
-  # Tue Jan 28 00:36:09 UTC 2025 -- Tue Jan 28 11:36:09 AEDT 2025
+  # virgil 20250129.2
+  # Wed Jan 29 04:07:15 UTC 2025 -- Wed Jan 29 15:07:15 AEDT 2025
   #
-  # Merge pull request 31991 from virgil_python_upgrade into master
-  # 5dd3d03be7b3a05f0fb314023e7b402b63925e21
-  virgil_build_id: '1233467'
+  # Merged PR 32038: decomm apex3 and apex4
+  # d49746b45d368587be6783914053d263345523e7
+  virgil_build_id: '1234672'
 
   # sqlbilling 20250127.2
   # Mon Jan 27 10:16:19 UTC 2025 -- Mon Jan 27 21:16:19 AEDT 2025
