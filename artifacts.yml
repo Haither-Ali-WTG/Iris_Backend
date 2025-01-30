@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250130.1
-  # Thu Jan 30 00:26:55 UTC 2025 -- Thu Jan 30 11:26:55 AEDT 2025
+  # Dante Build Artifact 20250130.2
+  # Thu Jan 30 02:25:41 UTC 2025 -- Thu Jan 30 13:25:41 AEDT 2025
   #
-  # Merge pull request 32073 from dante_artifact_upgrade into master
-  # 82ec31c6f6a766976115e2d4c979c3ee0243e2c2
-  dante_build_id: '1235545'
+  # Merged PR 32086: Sync mirror from local DC agents instead of AU2 based cicd
+  # 28621ce6637871b8a08a30c13e97b1e1052d5b8a
+  dante_build_id: '1235679'
 
   # virgil 20250130.2
   # Wed Jan 29 23:33:15 UTC 2025 -- Thu Jan 30 10:33:15 AEDT 2025
