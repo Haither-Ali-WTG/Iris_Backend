@@ -24,6 +24,12 @@
   register: collect_sites_data_output
   when: iis_servers | default([]) | length > 0
 
+- name: Create failed_collection directory
+  delegate_to: localhost
+  file:
+    dest: failed_collection
+    state: directory
+
 - name: Save failed collection result to file
   delegate_to: localhost
   copy:
