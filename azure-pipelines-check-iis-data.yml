@@ -121,3 +121,13 @@ stages:
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         azure_devops_token: $(System.AccessToken)
+
+                    - task: Ansible@0
+                      displayName: 'Check site collection result'
+                      inputs:
+                        ansibleInterface: 'agentMachine'
+                        playbookPathOnAgentMachine: 'ansible/check_collection_result.yml'
+                        inventoriesAgentMachine: 'file'
+                        inventoryFileOnAgentMachine: 'data/instances'
+                        args: >-
+                          -u $(user) --diff

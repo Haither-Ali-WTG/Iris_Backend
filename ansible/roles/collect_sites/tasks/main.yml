@@ -24,6 +24,15 @@
   register: collect_sites_data_output
   when: iis_servers | default([]) | length > 0
 
+- name: Save failed collection result to file
+  delegate_to: localhost
+  copy:
+    content: "{{ collect_sites_data_output.stdout }}"
+    dest: "failed_collection/{{ inventory_hostname }}"
+  when:
+    - collect_sites_data_output is defined
+    - (collect_sites_data_output.stdout | from_json).has_errors
+
 - name: Output collect sites data output
   vars:
     info:

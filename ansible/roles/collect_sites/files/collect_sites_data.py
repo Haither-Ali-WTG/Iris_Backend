@@ -156,6 +156,7 @@ def main():
         {
             'results': finished_results,
             'wrote_files': any(result['status'] == 'ok' for result in finished_results),
+            'has_errors': any(result['status'] == 'error' for result in finished_results),
         },
         sys.stdout,
         indent=4,
