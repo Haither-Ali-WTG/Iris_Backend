@@ -25,7 +25,6 @@ smtp25.au2mail.wisecloud.zone:
       ip: 10.2.70.121
       port: 25
 
----
 smtp587.au2mail.test.wisecloud.zone:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
