@@ -213,8 +213,10 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext:
-            - 2025
-            - 2026
+            - 2025  # TEST backends port 25
+            - 3025  # PROD backends port 25
+            - 2587  # TEST backends port 587
+            - 3587  # PROD backends port 587
       iis_servers: []
       certificates: []
       machine_cluster: au2-prod-internal-1

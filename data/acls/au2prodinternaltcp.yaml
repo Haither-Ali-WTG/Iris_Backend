@@ -1,10 +1,21 @@
 ---
-au2mail_test_wisecloud_zone:
-  description: au2mail TEST
+smtp25_au2mail_test_wisecloud_zone:
+  description: au2mail TEST SMTP Port 25
   tests:
-    - au2mail_test_wisecloud_zone_dst_port dst_port 2025
+    - smtp25_au2mail_test_wisecloud_zone_dst_port dst_port 2025
 
-au2mail_wisecloud_zone:
-  description: au2mail PROD
+smtp25_au2mail_wisecloud_zone:
+  description: au2mail PROD SMTP Port 25
   tests:
-    - au2mail_wisecloud_zone_dst_port dst_port 2026
+    - smtp25_au2mail_wisecloud_zone_dst_port dst_port 3025
+
+
+smtp587_au2mail_test_wisecloud_zone:
+  description: au2mail TEST SMTP Port 587
+  tests:
+    - smtp587_au2mail_test_wisecloud_zone_dst_port dst_port 2587
+
+smtp587_au2mail_wisecloud_zone:
+  description: au2mail PROD SMTP Port 587
+  tests:
+    - smtp587_au2mail_wisecloud_zone_dst_port dst_port 3587

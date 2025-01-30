@@ -1,14 +1,28 @@
 ---
-au2mail_test_wisecloud_zone:
+smtp25_au2mail_test_wisecloud_zone:
   description: |-
-    Uses backend au2mail_test_wisecloud_zone for au2mail_test_wisecloud_zone_dst_port
+    Uses backend smtp25_au2mail_test_wisecloud_zone for smtp25_au2mail_test_wisecloud_zone_dst_port
   order: 30
   actions:
-    - use_backend au2mail_test_wisecloud_zone if au2mail_test_wisecloud_zone_dst_port
+    - use_backend smtp25_au2mail_test_wisecloud_zone if smtp25_au2mail_test_wisecloud_zone_dst_port
 
-au2mail_wisecloud_zone:
+smtp25_au2mail_wisecloud_zone:
   description: |-
-    Uses backend au2mail_wisecloud_zone for au2mail_wisecloud_zone_dst_port
+    Uses backend smtp25_au2mail_wisecloud_zone for smtp25_au2mail_wisecloud_zone_dst_port
   order: 30
   actions:
-    - use_backend au2mail_wisecloud_zone if au2mail_wisecloud_zone_dst_port
+    - use_backend smtp25_au2mail_wisecloud_zone_smtp if smtp25_au2mail_wisecloud_zone_dst_port
+
+smtp587_au2mail_test_wisecloud_zone:
+  description: |-
+    Uses backend smtp587_au2mail_test_wisecloud_zone for smtp587_au2mail_test_wisecloud_zone_dst_port
+  order: 30
+  actions:
+    - use_backend smtp587_au2mail_test_wisecloud_zone if smtp587_au2mail_test_wisecloud_zone_dst_port
+
+smtp587_au2mail_wisecloud_zone:
+  description: |-
+    Uses backend smtp587_au2mail_wisecloud_zone for smtp587_au2mail_wisecloud_zone_dst_port
+  order: 30
+  actions:
+    - use_backend smtp587_au2mail_wisecloud_zone_smtp if smtp587_au2mail_wisecloud_zone_dst_port
