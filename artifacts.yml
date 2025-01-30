@@ -7,12 +7,12 @@ variables:
   # b07192467b60ea521dc8338a62f702c0db53f274
   dante_build_id: '1235745'
 
-  # virgil 20250130.6
-  # Thu Jan 30 03:17:31 UTC 2025 -- Thu Jan 30 14:17:31 AEDT 2025
+  # virgil 20250130.9
+  # Thu Jan 30 03:44:57 UTC 2025 -- Thu Jan 30 14:44:57 AEDT 2025
   #
-  # Merged PR 32095: Revert kafka us2 node 5 change - cannot access OOB password
-  # 59c214489a6ad9ec90e043607ff1034df245c688
-  virgil_build_id: '1235760'
+  # Merged PR 32102: Change Kafka DNS records and queue for us2 node 1
+  # 1789f63d3149f0839901b5a4000e499fd8ef6f11
+  virgil_build_id: '1235800'
 
   # sqlbilling 20250130.1
   # Wed Jan 29 22:30:16 UTC 2025 -- Thu Jan 30 09:30:16 AEDT 2025
