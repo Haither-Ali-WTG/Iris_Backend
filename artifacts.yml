@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250130.3
-  # Thu Jan 30 03:04:14 UTC 2025 -- Thu Jan 30 14:04:14 AEDT 2025
+  # Dante Build Artifact 20250130.4
+  # Thu Jan 30 04:46:48 UTC 2025 -- Thu Jan 30 15:46:48 AEDT 2025
   #
-  # Merged PR 32075: Swithc ISO builders to local DC dante agents from cicd
-  # b07192467b60ea521dc8338a62f702c0db53f274
-  dante_build_id: '1235745'
+  # Merge pull request 32104 from dante_artifact_upgrade into master
+  # 2b4b103c8fa48e9830b6b49c8b8648eb6c02c049
+  dante_build_id: '1235897'
 
   # virgil 20250130.9
   # Thu Jan 30 03:44:57 UTC 2025 -- Thu Jan 30 14:44:57 AEDT 2025
