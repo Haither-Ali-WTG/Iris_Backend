@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250129.2
-  # Wed Jan 29 05:47:01 UTC 2025 -- Wed Jan 29 16:47:01 AEDT 2025
+  # Dante Build Artifact 20250130.1
+  # Thu Jan 30 00:26:55 UTC 2025 -- Thu Jan 30 11:26:55 AEDT 2025
   #
-  # Merged PR 32035: Updated WIM download pipeline to support non root agent user
-  # 1b9feb76d5a43e1d512c384c7f38a0a8a0beade7
-  dante_build_id: '1234767'
+  # Merge pull request 32073 from dante_artifact_upgrade into master
+  # 82ec31c6f6a766976115e2d4c979c3ee0243e2c2
+  dante_build_id: '1235545'
 
   # virgil 20250130.2
   # Wed Jan 29 23:33:15 UTC 2025 -- Thu Jan 30 10:33:15 AEDT 2025
