@@ -406,3 +406,59 @@ cs-dev.sand.wtg.zone:
     - name: au2sp-siis-407b
       ip: 10.2.118.67
       port: 80
+
+devtools-assess-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2sp-sdvt-401
+      ip: 10.2.118.70
+      port: 80
+    - name: au2sp-sdvt-402
+      ip: 10.2.118.71
+      port: 80
+
+devtools-build-targets-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2sp-sdvt-401
+      ip: 10.2.118.70
+      port: 80
+    - name: au2sp-sdvt-402
+      ip: 10.2.118.71
+      port: 80
+
+devtools-status-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2sp-sdvt-401
+      ip: 10.2.118.70
+      port: 80
+    - name: au2sp-sdvt-402
+      ip: 10.2.118.71
+      port: 80
+
+devtools-submissions-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2sp-sdvt-401
+      ip: 10.2.118.70
+      port: 80
+    - name: au2sp-sdvt-402
+      ip: 10.2.118.71
+      port: 80
