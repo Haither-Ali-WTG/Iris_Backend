@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250203.1
-  # Sun Feb  2 21:36:41 UTC 2025 -- Mon Feb  3 08:36:41 AEDT 2025
+  # Dante Build Artifact 20250203.5
+  # Mon Feb  3 03:16:16 UTC 2025 -- Mon Feb  3 14:16:16 AEDT 2025
   #
-  # Merge pull request 32149 from automatic_ptmctl_image_upgrade into master
-  # a9b1eae0e64e10a81b31787a5df125f6eec2fa20
-  dante_build_id: '1239227'
+  # Merge pull request 32150 from automatic_dhcp_server_image_upgrade into master
+  # 594fbe58c9738d776ea1dd490bd6cda2371ee560
+  dante_build_id: '1239569'
 
-  # virgil 20250130.9
-  # Thu Jan 30 03:44:57 UTC 2025 -- Thu Jan 30 14:44:57 AEDT 2025
+  # virgil 20250203.2
+  # Mon Feb  3 02:36:57 UTC 2025 -- Mon Feb  3 13:36:57 AEDT 2025
   #
-  # Merged PR 32102: Change Kafka DNS records and queue for us2 node 1
-  # 1789f63d3149f0839901b5a4000e499fd8ef6f11
-  virgil_build_id: '1235800'
+  # Merged PR 32171: AU2-Apex72 Replacement
+  # 797eaaa59de71ba548a59791a567a9523c35dfa7
+  virgil_build_id: '1239522'
 
   # sqlbilling 20250131.3
   # Fri Jan 31 07:36:34 UTC 2025 -- Fri Jan 31 18:36:34 AEDT 2025
