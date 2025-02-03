@@ -1,0 +1,43 @@
+---
+- name: Check Sites Collection Results
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    failed_collection_path: "failed_collection"
+
+  tasks:
+    - name: Check if failed_collection directory exists
+      stat:
+        path: "{{ failed_collection_path }}"
+      register: dir_check
+
+    - name: Process failed collections
+      when: dir_check.stat.exists
+      block:
+        - name: Get list of failed collection files
+          find:
+            paths: "{{ failed_collection_path }}"
+            file_type: file
+          register: failed_files
+
+        - name: Display failed collections if any
+          when: failed_files.matched > 0
+          block:
+            - name: Display errors
+              vars:
+                instance_name: "{{ item.path | basename }}"
+                file_content: "{{ lookup('file', item.path) | from_json }}"
+              debug:
+                msg: >-
+                  Collect sites failed in instance {{ instance_name }}:
+                  {{ file_content.results }}
+              loop: "{{ failed_files.files }}"
+
+        - name: Assert no failures
+          assert:
+            that: failed_files.matched == 0
+            fail_msg: >-
+              Found {{ failed_files.matched }} instances with collection failures.
+              Please check the error details above.
+            success_msg: "All IIS servers data collection completed successfully"
