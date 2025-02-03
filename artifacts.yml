@@ -7,16 +7,16 @@ variables:
   # deebc0072a9fd5bfc791ddd7c0aa5b1734d4ba1f
   dante_build_id: '1239725'
 
-  # virgil 20250203.2
-  # Mon Feb  3 02:36:57 UTC 2025 -- Mon Feb  3 13:36:57 AEDT 2025
+  # virgil 20250204.2
+  # Mon Feb  3 22:30:19 UTC 2025 -- Tue Feb  4 09:30:19 AEDT 2025
   #
-  # Merged PR 32171: AU2-Apex72 Replacement
-  # 797eaaa59de71ba548a59791a567a9523c35dfa7
-  virgil_build_id: '1239522'
+  # Merge pull request 32206 from virgil_python_upgrade into master
+  # 56515a873f4f064c4b94742fb159eb88575ba4ee
+  virgil_build_id: '1240423'
 
-  # sqlbilling 20250131.3
-  # Fri Jan 31 07:36:34 UTC 2025 -- Fri Jan 31 18:36:34 AEDT 2025
+  # sqlbilling 20250203.2
+  # Mon Feb  3 05:37:43 UTC 2025 -- Mon Feb  3 16:37:43 AEDT 2025
   #
-  # Merged PR 31870: SqlReadOnlyCS01849692.yml
-  # e9332d344badf0f5cb93dd7d8bb4c006ea71d96d
-  sqlbilling_build_id: '1237016'
+  # Merged PR 32190: RTL-SQLBILLING-CS01863478
+  # b9330fffd51985aeb8ef3d7812a6e947ad7229bf
+  sqlbilling_build_id: '1239745'
