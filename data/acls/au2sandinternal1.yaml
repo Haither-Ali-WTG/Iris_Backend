@@ -48,3 +48,14 @@ star_sand_wtg_zone:
   description: "*.sand.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?sand\.wtg\.zone$
+
+talogy_src:
+  description: source IP is Talogy (3rd party vendor external) CS01854184
+  tests:
+    - src 40.118.100.127/32
+    - src 13.81.68.134/32
+    - src 13.81.68.146/32
+    - src 13.81.68.81/32
+    - src 13.81.64.194/32
+    - src 13.81.64.243/32
+    - src 13.81.65.246/32
