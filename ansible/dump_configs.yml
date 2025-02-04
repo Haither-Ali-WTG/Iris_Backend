@@ -47,6 +47,7 @@
         dest: "../current_configs/{{ inventory_hostname }}.cfg"
         flat: true
         fail_on_missing: false
+      ignore_unreachable: true
       become: yes
 
 - name: Compare the changes of configs
