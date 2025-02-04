@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250120.1
-  # Sun Jan 19 23:07:12 UTC 2025 -- Mon Jan 20 10:07:12 AEDT 2025
+  # Dante Build Artifact 20250204.2
+  # Tue Feb  4 01:26:42 UTC 2025 -- Tue Feb  4 12:26:42 AEDT 2025
   #
-  # Merge pull request 31737 from dante_artifact_upgrade into master
-  # c17f85c1eeae9a2144fb470685298213a0316383
-  dante_build_id: '1225539'
+  # Merge pull request 32213 from dante_artifact_upgrade into master
+  # 2e625c8994ca85cf321fe6293043ee3eb7562baf
+  dante_build_id: '1240589'
 
-  # virgil 20250120.1
-  # Sun Jan 19 22:20:06 UTC 2025 -- Mon Jan 20 09:20:06 AEDT 2025
+  # virgil 20250204.2
+  # Mon Feb  3 22:30:19 UTC 2025 -- Tue Feb  4 09:30:19 AEDT 2025
   #
-  # Merged PR 31724: Upgrade DE1 mgmt node 2 to Ubuntu 24.04
-  # f30df7f4c079688ee18942a2fd3a321f85e5dc27
-  virgil_build_id: '1225489'
+  # Merge pull request 32206 from virgil_python_upgrade into master
+  # 56515a873f4f064c4b94742fb159eb88575ba4ee
+  virgil_build_id: '1240423'
 
-  # sqlbilling 20250109.1
-  # Thu Jan  9 08:54:16 UTC 2025 -- Thu Jan  9 19:54:16 AEDT 2025
+  # sqlbilling 20250203.2
+  # Mon Feb  3 05:37:43 UTC 2025 -- Mon Feb  3 16:37:43 AEDT 2025
   #
-  # Merged PR 31420: Updated us2-prod-frontend-1.yml
-  # 1559d47a521d6ed8c4ff367d36e44d2579004831
-  sqlbilling_build_id: '1215156'
+  # Merged PR 32190: RTL-SQLBILLING-CS01863478
+  # b9330fffd51985aeb8ef3d7812a6e947ad7229bf
+  sqlbilling_build_id: '1239745'

@@ -160,9 +160,9 @@
 - name: Setup apparmor
   when: "virgil_os_variant == 'ubuntu'"  # TODO: check if some config is required for RHEL
   block:
-    - name: Template out the apparmor profile
-      template:
-        src: apparmor_profile.j2
+    - name: Copy apparmor_profile to target folder
+      copy:
+        src: apparmor_profile
         dest: "{{ individual_instance_dir }}/apparmor_profile"
         mode: u=r,go=
         owner: root
@@ -219,7 +219,7 @@
         '{{ host_port }}:{{ container_port }}',
         {% endfor %}
       ]
-    apparmor_profile: "{{ container_name if (virgil_os_variant == 'ubuntu') else '' }}"
+    apparmor_profile: "{{ 'wtg_iris' if (virgil_os_variant == 'ubuntu') else '' }}"
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources: "{{ container.resources }}"
