@@ -7,12 +7,12 @@ variables:
   # 2e625c8994ca85cf321fe6293043ee3eb7562baf
   dante_build_id: '1240589'
 
-  # virgil 20250204.2
-  # Mon Feb  3 22:30:19 UTC 2025 -- Tue Feb  4 09:30:19 AEDT 2025
+  # virgil 20250204.5
+  # Tue Feb  4 05:10:24 UTC 2025 -- Tue Feb  4 16:10:24 AEDT 2025
   #
-  # Merge pull request 32206 from virgil_python_upgrade into master
-  # 56515a873f4f064c4b94742fb159eb88575ba4ee
-  virgil_build_id: '1240423'
+  # Merged PR 32234: Virgil - Kafka - Add 2 new queues for Cargo visibility portal for IL team
+  # 54b81f1c78e242bd23586d6aeac192b2c404e3c6
+  virgil_build_id: '1240783'
 
   # sqlbilling 20250203.2
   # Mon Feb  3 05:37:43 UTC 2025 -- Mon Feb  3 16:37:43 AEDT 2025
