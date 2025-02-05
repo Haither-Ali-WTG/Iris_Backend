@@ -7,12 +7,12 @@ variables:
   # b940446acc4b9ddf95f1a27d1c5b396624556f99
   dante_build_id: '1242377'
 
-  # virgil 20250204.5
-  # Tue Feb  4 05:10:24 UTC 2025 -- Tue Feb  4 16:10:24 AEDT 2025
+  # virgil 20250206.4
+  # Wed Feb  5 22:45:34 UTC 2025 -- Thu Feb  6 09:45:34 AEDT 2025
   #
-  # Merged PR 32234: Virgil - Kafka - Add 2 new queues for Cargo visibility portal for IL team
-  # 54b81f1c78e242bd23586d6aeac192b2c404e3c6
-  virgil_build_id: '1240783'
+  # Merged PR 32272: SY5 L2 Apexs replacement with SN3700
+  # 6e507974f8cfd8c6d3d2dcacf1986f4d4c6e3c48
+  virgil_build_id: '1242460'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
