@@ -7,12 +7,12 @@ variables:
   # b940446acc4b9ddf95f1a27d1c5b396624556f99
   dante_build_id: '1242377'
 
-  # virgil 20250206.4
-  # Wed Feb  5 22:45:34 UTC 2025 -- Thu Feb  6 09:45:34 AEDT 2025
+  # virgil 20250206.7
+  # Wed Feb  5 23:32:41 UTC 2025 -- Thu Feb  6 10:32:41 AEDT 2025
   #
-  # Merged PR 32272: SY5 L2 Apexs replacement with SN3700
-  # 6e507974f8cfd8c6d3d2dcacf1986f4d4c6e3c48
-  virgil_build_id: '1242460'
+  # Merged PR 32282: Put US2 mgmt 2 back to continuous
+  # bd7332c22b2455716c954f0b851794647077d469
+  virgil_build_id: '1242525'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
