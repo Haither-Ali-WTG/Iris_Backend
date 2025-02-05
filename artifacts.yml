@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250205.1
-  # Wed Feb  5 03:09:49 UTC 2025 -- Wed Feb  5 14:09:49 AEDT 2025
+  # Dante Build Artifact 20250206.1
+  # Wed Feb  5 21:02:58 UTC 2025 -- Thu Feb  6 08:02:58 AEDT 2025
   #
-  # Merged PR 32253: Package requirements.txt and azure cli inside dante agent
-  # 36afe3bc300faa9a7bd5d8ad6315676908ca44ce
-  dante_build_id: '1241691'
+  # Merge pull request 32262 from automatic_dante_agent_image_upgrade into master
+  # b940446acc4b9ddf95f1a27d1c5b396624556f99
+  dante_build_id: '1242377'
 
   # virgil 20250204.5
   # Tue Feb  4 05:10:24 UTC 2025 -- Tue Feb  4 16:10:24 AEDT 2025
