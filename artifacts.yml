@@ -7,12 +7,12 @@ variables:
   # 4e41befd313aaa2901c4b647d1730187fc06bf6b
   dante_build_id: '1242629'
 
-  # virgil 20250206.12
-  # Thu Feb  6 00:10:06 UTC 2025 -- Thu Feb  6 11:10:06 AEDT 2025
+  # virgil 20250206.15
+  # Thu Feb  6 03:33:05 UTC 2025 -- Thu Feb  6 14:33:05 AEDT 2025
   #
-  # Merged PR 32290: Updated queue_q0.yaml - Added correct topic names for OCP platform for Elastic
-  # 87c664960bf7bdc57a6f22b76c844889d71149e6
-  virgil_build_id: '1242571'
+  # Merged PR 32307: [CS01720353] Virgil - Swap out Kafka node 5 in US2
+  # 4ec3fb6bd98815b4d3a5a0a50ce5e169d4fcd7bb
+  virgil_build_id: '1242781'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
