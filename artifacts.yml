@@ -7,12 +7,12 @@ variables:
   # 07620959fedbb517de201c57f88fe83c961c2fdf
   dante_build_id: '1243554'
 
-  # virgil 20250206.15
-  # Thu Feb  6 03:33:05 UTC 2025 -- Thu Feb  6 14:33:05 AEDT 2025
+  # virgil 20250207.6
+  # Thu Feb  6 23:09:29 UTC 2025 -- Fri Feb  7 10:09:29 AEDT 2025
   #
-  # Merged PR 32307: [CS01720353] Virgil - Swap out Kafka node 5 in US2
-  # 4ec3fb6bd98815b4d3a5a0a50ce5e169d4fcd7bb
-  virgil_build_id: '1242781'
+  # Merged PR 32284: [minor] Virgil - Delete Kafka queues that need to be housekept
+  # 9440bfe4447469a6747c2d97f87c50ca6ba0628b
+  virgil_build_id: '1243593'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
