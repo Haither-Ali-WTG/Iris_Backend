@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250207.1
-  # Thu Feb  6 22:47:27 UTC 2025 -- Fri Feb  7 09:47:27 AEDT 2025
+  # Dante Build Artifact 20250207.2
+  # Fri Feb  7 00:07:54 UTC 2025 -- Fri Feb  7 11:07:54 AEDT 2025
   #
-  # Merged PR 32306: Server rebuild in multiple DCs at the same time
-  # 07620959fedbb517de201c57f88fe83c961c2fdf
-  dante_build_id: '1243554'
+  # Merge pull request 32347 from dante_artifact_upgrade into master
+  # 3ec44b578bdfc9f1e92664ac3a9a902ada3bcbe6
+  dante_build_id: '1243644'
 
   # virgil 20250207.6
   # Thu Feb  6 23:09:29 UTC 2025 -- Fri Feb  7 10:09:29 AEDT 2025
