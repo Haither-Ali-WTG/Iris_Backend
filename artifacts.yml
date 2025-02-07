@@ -7,12 +7,12 @@ variables:
   # 3ec44b578bdfc9f1e92664ac3a9a902ada3bcbe6
   dante_build_id: '1243644'
 
-  # virgil 20250207.6
-  # Thu Feb  6 23:09:29 UTC 2025 -- Fri Feb  7 10:09:29 AEDT 2025
+  # virgil 20250207.12
+  # Fri Feb  7 01:25:09 UTC 2025 -- Fri Feb  7 12:25:09 AEDT 2025
   #
-  # Merged PR 32284: [minor] Virgil - Delete Kafka queues that need to be housekept
-  # 9440bfe4447469a6747c2d97f87c50ca6ba0628b
-  virgil_build_id: '1243593'
+  # Merged PR 32355: AY5 L2 Apex replacement Batch1
+  # b8aa95982ea268824cb867b3dc49ff966516c2e7
+  virgil_build_id: '1243726'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
