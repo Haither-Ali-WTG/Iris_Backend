@@ -7,12 +7,12 @@ variables:
   # 04360132f4977fed035fcf323e7c58649c7201b4
   dante_build_id: '1243955'
 
-  # virgil 20250207.15
-  # Fri Feb  7 05:31:00 UTC 2025 -- Fri Feb  7 16:31:00 AEDT 2025
+  # virgil 20250208.2
+  # Fri Feb  7 14:50:27 UTC 2025 -- Sat Feb  8 01:50:27 AEDT 2025
   #
-  # Merged PR 32366: Update SY5 L2 MLAG simulation setting
-  # f90309a407197117150aa7b999db7588d1756a2e
-  virgil_build_id: '1243913'
+  # Merged PR 32335: Add experimental NVMe storage for us2kvl-v0
+  # d1d66c4f2a3404f165cec1560b7b9015f7f2b268
+  virgil_build_id: '1244284'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
