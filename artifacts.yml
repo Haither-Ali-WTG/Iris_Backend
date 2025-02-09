@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250207.3
-  # Fri Feb  7 06:26:48 UTC 2025 -- Fri Feb  7 17:26:48 AEDT 2025
+  # Dante Build Artifact 20250208.1
+  # Fri Feb  7 18:27:01 UTC 2025 -- Sat Feb  8 05:27:01 AEDT 2025
   #
-  # Merge pull request 32362 from dante_artifact_upgrade into master
-  # 04360132f4977fed035fcf323e7c58649c7201b4
-  dante_build_id: '1243955'
+  # Merge pull request 32385 from dante_artifact_upgrade into master
+  # 33b46e6f9c3c19904d4e7b1e900d765c4772c6f0
+  dante_build_id: '1244421'
 
-  # virgil 20250208.2
-  # Fri Feb  7 14:50:27 UTC 2025 -- Sat Feb  8 01:50:27 AEDT 2025
+  # virgil 20250210.2
+  # Sun Feb  9 20:26:10 UTC 2025 -- Mon Feb 10 07:26:10 AEDT 2025
   #
-  # Merged PR 32335: Add experimental NVMe storage for us2kvl-v0
-  # d1d66c4f2a3404f165cec1560b7b9015f7f2b268
-  virgil_build_id: '1244284'
+  # Merged PR 32273: Upgrade US2 management node 3 to Ubuntu 24.04.1
+  # 2f8e1589796256d13d9acea445256778291de55d
+  virgil_build_id: '1246199'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
