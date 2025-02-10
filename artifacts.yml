@@ -7,16 +7,16 @@ variables:
   # a0a088ed2c17fa6e861d55bec855b10f7251f9bc
   dante_build_id: '1246465'
 
-  # virgil 20250210.5
-  # Sun Feb  9 23:41:02 UTC 2025 -- Mon Feb 10 10:41:02 AEDT 2025
+  # virgil 20250210.10
+  # Mon Feb 10 02:21:34 UTC 2025 -- Mon Feb 10 13:21:34 AEDT 2025
   #
-  # Merged PR 32406: Update SY5 NEW SN3700 info
-  # 6f39a769c3c427bc3d4d508009326303f92d6140
-  virgil_build_id: '1246391'
+  # Merged PR 32414: Removed old ceph s3 nodes marked as decommission in D42
+  # 5221db0ae1904d9fbb7cf8b64eff243f2878843c
+  virgil_build_id: '1246558'
 
-  # sqlbilling 20250205.2
-  # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
+  # sqlbilling 20250210.1
+  # Mon Feb 10 01:00:45 UTC 2025 -- Mon Feb 10 12:00:45 AEDT 2025
   #
-  # Merged PR 32232: RTL-SQLBilling-CS01865011,CS01865376
-  # 7e28b668958ba219cd1878042907c6aa4f05582e
-  sqlbilling_build_id: '1241629'
+  # Merged PR 32325: RTL-SQLBilling-CS01866865,CS01867844
+  # 228269b91c11307050eb1cfe35e8e789adb312f4
+  sqlbilling_build_id: '1246499'
