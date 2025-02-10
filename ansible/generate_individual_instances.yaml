@@ -27,8 +27,8 @@
         ansible_host: "{{ machine.ansible_host }}"
         dc: "{{ clustered_instance.dc }}"
         simulation_ports:
-          plaintext: "{{ [(4500 + i * 2)] }}"
-          ssl: "{{ [(4500 + i * 2 + 1)] }}"
+          plaintext: "{{ [4500 + i * 2] }}"
+          ssl: "{{ [4500 + i * 2 + 1] }}"
 
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
