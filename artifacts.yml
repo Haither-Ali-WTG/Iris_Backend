@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250210.3
-  # Mon Feb 10 04:26:30 UTC 2025 -- Mon Feb 10 15:26:30 AEDT 2025
+  # Dante Build Artifact 20250211.1
+  # Mon Feb 10 22:20:22 UTC 2025 -- Tue Feb 11 09:20:22 AEDT 2025
   #
-  # Merge pull request 32425 from dante_artifact_upgrade into master
-  # 746b6a1e68ac7d31d95557dac6bdd3980cb8ffc3
-  dante_build_id: '1246664'
+  # Merge pull request 32467 from dante_python_upgrade into master
+  # c88b645030c9bb7fe6cd44d473dfff8ad886bdf6
+  dante_build_id: '1247395'
 
-  # virgil 20250210.18
-  # Mon Feb 10 06:04:55 UTC 2025 -- Mon Feb 10 17:04:55 AEDT 2025
+  # virgil 20250211.2
+  # Mon Feb 10 22:13:28 UTC 2025 -- Tue Feb 11 09:13:28 AEDT 2025
   #
-  # Merged PR 32443: Remove unused device from AU2
-  # 3f1e8fb9d25cdc4be7a102c1370daa47ad0e1bf9
-  virgil_build_id: '1246777'
+  # Merge pull request 32460 from virgil_python_upgrade into master
+  # 9e4012362f7dcd6cfb1b3e620f38000065f42660
+  virgil_build_id: '1247386'
 
   # sqlbilling 20250210.1
   # Mon Feb 10 01:00:45 UTC 2025 -- Mon Feb 10 12:00:45 AEDT 2025
