@@ -8,9 +8,9 @@
 trigger: none
 
 # Pipeline variables:
-# - host - The Iris host will be rebuilt. By default this is empty.
+# - host: The Iris host will be rebuilt. By default this is empty.
 #   If it's set, the following "xxx_enabled" variables will be ignored.
-# - [au2|de1|us2]_[prod|sand]_[frontend|internal]_enabled - 
+# - [au2|de1|us2]_[prod|sand]_[frontend|internal]_enabled:
 #   dis/enabling each of these flags will dis/enable on each of the clusters.
 variables:
   - template: artifacts.yml
