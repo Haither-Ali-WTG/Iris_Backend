@@ -1,0 +1,25 @@
+---
+acl_smtp25_au2mail_test_wisecloud_zone:
+  description: au2mail TEST SMTP Port 25
+  tests:
+    - dst_port 2025
+    - wtg_src
+
+acl_smtp25_au2mail_wisecloud_zone:
+  description: au2mail PROD SMTP Port 25
+  tests:
+    - dst_port 3025
+    - wtg_src
+
+
+acl_smtp587_au2mail_test_wisecloud_zone:
+  description: au2mail TEST SMTP Port 587
+  tests:
+    - dst_port 2587
+    - wtg_src
+
+acl_smtp587_au2mail_wisecloud_zone:
+  description: au2mail PROD SMTP Port 587
+  tests:
+    - dst_port 3587
+    - wtg_src
