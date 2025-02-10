@@ -7,12 +7,12 @@ variables:
   # c57d10e75cddcdaeb7e9295cab27e3f77caee8c0
   dante_build_id: '1246245'
 
-  # virgil 20250210.2
-  # Sun Feb  9 20:26:10 UTC 2025 -- Mon Feb 10 07:26:10 AEDT 2025
+  # virgil 20250210.5
+  # Sun Feb  9 23:41:02 UTC 2025 -- Mon Feb 10 10:41:02 AEDT 2025
   #
-  # Merged PR 32273: Upgrade US2 management node 3 to Ubuntu 24.04.1
-  # 2f8e1589796256d13d9acea445256778291de55d
-  virgil_build_id: '1246199'
+  # Merged PR 32406: Update SY5 NEW SN3700 info
+  # 6f39a769c3c427bc3d4d508009326303f92d6140
+  virgil_build_id: '1246391'
 
   # sqlbilling 20250205.2
   # Wed Feb  5 01:43:56 UTC 2025 -- Wed Feb  5 12:43:56 AEDT 2025
