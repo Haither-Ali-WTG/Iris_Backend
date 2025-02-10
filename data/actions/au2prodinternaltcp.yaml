@@ -1,4 +1,11 @@
 ---
+restrict_ip:
+  description: |-
+    Restrict TCP Connection based on IP
+  order: 1
+  actions:
+    - tcp-request connection reject if !wtg_src
+
 smtp25_au2mail_test_wisecloud_zone:
   description: |-
     Uses backend smtp25_au2mail_test_wisecloud_zone for acl_smtp25_au2mail_test_wisecloud_zone
