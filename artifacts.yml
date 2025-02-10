@@ -7,12 +7,12 @@ variables:
   # 746b6a1e68ac7d31d95557dac6bdd3980cb8ffc3
   dante_build_id: '1246664'
 
-  # virgil 20250210.10
-  # Mon Feb 10 02:21:34 UTC 2025 -- Mon Feb 10 13:21:34 AEDT 2025
+  # virgil 20250210.18
+  # Mon Feb 10 06:04:55 UTC 2025 -- Mon Feb 10 17:04:55 AEDT 2025
   #
-  # Merged PR 32414: Removed old ceph s3 nodes marked as decommission in D42
-  # 5221db0ae1904d9fbb7cf8b64eff243f2878843c
-  virgil_build_id: '1246558'
+  # Merged PR 32443: Remove unused device from AU2
+  # 3f1e8fb9d25cdc4be7a102c1370daa47ad0e1bf9
+  virgil_build_id: '1246777'
 
   # sqlbilling 20250210.1
   # Mon Feb 10 01:00:45 UTC 2025 -- Mon Feb 10 12:00:45 AEDT 2025
