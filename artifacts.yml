@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250212.1
-  # Wed Feb 12 04:26:52 UTC 2025 -- Wed Feb 12 15:26:52 AEDT 2025
+  # Dante Build Artifact 20250212.2
+  # Wed Feb 12 06:49:53 UTC 2025 -- Wed Feb 12 17:49:53 AEDT 2025
   #
-  # Merge pull request 32515 from dante_artifact_upgrade into master
-  # 520ae43b21cc9d2b79dc3ca104984338fd162260
-  dante_build_id: '1248691'
+  # Merged PR 32518: Update metricbeat kafka hosts in jinja template
+  # 539443d27c777b1e17195881e0b87623d3733699
+  dante_build_id: '1248809'
 
   # virgil 20250212.7
   # Wed Feb 12 03:22:30 UTC 2025 -- Wed Feb 12 14:22:30 AEDT 2025
