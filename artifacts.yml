@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250213.1
-  # Thu Feb 13 02:47:06 UTC 2025 -- Thu Feb 13 13:47:06 AEDT 2025
+  # Dante Build Artifact 20250214.1
+  # Thu Feb 13 22:15:02 UTC 2025 -- Fri Feb 14 09:15:02 AEDT 2025
   #
-  # Merged PR 32540: Get rid of ztp_server and iso_base_url variables in rebuild pipeline
-  # 528906f3d0f655c4c5f478c37a74cc332b2b610b
-  dante_build_id: '1249614'
+  # Merged PR 32550: Fixed python vulnerability check pipeline
+  # 15f740859c95299aa82909112fcb8208af97d4d9
+  dante_build_id: '1250380'
 
   # virgil 20250212.7
   # Wed Feb 12 03:22:30 UTC 2025 -- Wed Feb 12 14:22:30 AEDT 2025
