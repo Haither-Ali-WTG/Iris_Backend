@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250212.2
-  # Wed Feb 12 06:49:53 UTC 2025 -- Wed Feb 12 17:49:53 AEDT 2025
+  # Dante Build Artifact 20250213.1
+  # Thu Feb 13 02:47:06 UTC 2025 -- Thu Feb 13 13:47:06 AEDT 2025
   #
-  # Merged PR 32518: Update metricbeat kafka hosts in jinja template
-  # 539443d27c777b1e17195881e0b87623d3733699
-  dante_build_id: '1248809'
+  # Merged PR 32540: Get rid of ztp_server and iso_base_url variables in rebuild pipeline
+  # 528906f3d0f655c4c5f478c37a74cc332b2b610b
+  dante_build_id: '1249614'
 
   # virgil 20250212.7
   # Wed Feb 12 03:22:30 UTC 2025 -- Wed Feb 12 14:22:30 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # b2be631606bb78de787e7a2cc52c8a2828a0287b
   virgil_build_id: '1248611'
 
-  # sqlbilling 20250212.1
-  # Tue Feb 11 14:20:31 UTC 2025 -- Wed Feb 12 01:20:31 AEDT 2025
+  # sqlbilling 20250213.3
+  # Wed Feb 12 15:02:03 UTC 2025 -- Thu Feb 13 02:02:03 AEDT 2025
   #
-  # Merged PR 32459: RL-SQLBilling-CS01869337,CS01870437
-  # 80c22ecdedfb791e854a12211e117ad7a0b38cfd
-  sqlbilling_build_id: '1248104'
+  # Merged PR 32532: RTL-SQLBilling-CS01870921,PRJ00050648,PRJ00050709
+  # 6bf56fb5135730dde6e0e7eec95145f84c16af95
+  sqlbilling_build_id: '1249156'
