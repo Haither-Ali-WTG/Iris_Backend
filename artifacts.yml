@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250214.1
-  # Thu Feb 13 22:15:02 UTC 2025 -- Fri Feb 14 09:15:02 AEDT 2025
+  # Dante Build Artifact 20250214.2
+  # Fri Feb 14 02:07:40 UTC 2025 -- Fri Feb 14 13:07:40 AEDT 2025
   #
-  # Merged PR 32550: Fixed python vulnerability check pipeline
-  # 15f740859c95299aa82909112fcb8208af97d4d9
-  dante_build_id: '1250380'
+  # Merge pull request 32575 from dante_artifact_upgrade into master
+  # 85f2026e2189a9ad26bb06c31d948fe7dd0064eb
+  dante_build_id: '1250609'
 
   # virgil 20250214.5
   # Fri Feb 14 01:22:41 UTC 2025 -- Fri Feb 14 12:22:41 AEDT 2025
