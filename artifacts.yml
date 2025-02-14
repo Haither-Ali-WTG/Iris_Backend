@@ -7,12 +7,12 @@ variables:
   # 15f740859c95299aa82909112fcb8208af97d4d9
   dante_build_id: '1250380'
 
-  # virgil 20250212.7
-  # Wed Feb 12 03:22:30 UTC 2025 -- Wed Feb 12 14:22:30 AEDT 2025
+  # virgil 20250214.5
+  # Fri Feb 14 01:22:41 UTC 2025 -- Fri Feb 14 12:22:41 AEDT 2025
   #
-  # Merged PR 32506: Replace new SY5 leaf7/8 with SN2700
-  # b2be631606bb78de787e7a2cc52c8a2828a0287b
-  virgil_build_id: '1248611'
+  # Merged PR 32539: update apex17/18 downlinks config for WS network connections
+  # 3d0b3a443de07c4f7199cbbccbf3b39ce33dc966
+  virgil_build_id: '1250546'
 
   # sqlbilling 20250213.3
   # Wed Feb 12 15:02:03 UTC 2025 -- Thu Feb 13 02:02:03 AEDT 2025
