@@ -7,12 +7,12 @@ variables:
   # 1ac79e1420dd707b09996758ba6191ec5d25640c
   dante_build_id: '1250688'
 
-  # virgil 20250214.9
-  # Fri Feb 14 02:30:19 UTC 2025 -- Fri Feb 14 13:30:19 AEDT 2025
+  # virgil 20250217.1
+  # Mon Feb 17 04:33:14 UTC 2025 -- Mon Feb 17 15:33:14 AEDT 2025
   #
-  # Merged PR 32565: Config switch for 2x new Global Search nodes
-  # 0cda133505ba3730b0e1170af0ec55d407f1d81c
-  virgil_build_id: '1250639'
+  # Merged PR 32428: Virgil - Put US2 Kafka nodes back to continuous
+  # 7fc6c0d911267029bf45ee90fb470ecf789da8bd
+  virgil_build_id: '1253365'
 
   # sqlbilling 20250213.3
   # Wed Feb 12 15:02:03 UTC 2025 -- Thu Feb 13 02:02:03 AEDT 2025
