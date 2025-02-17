@@ -7,16 +7,16 @@ variables:
   # bba49a32b9efa0fd0779e62ca4f1e0f8b53b300a
   dante_build_id: '1253428'
 
-  # virgil 20250217.1
-  # Mon Feb 17 04:33:14 UTC 2025 -- Mon Feb 17 15:33:14 AEDT 2025
+  # virgil 20250218.5
+  # Mon Feb 17 21:55:25 UTC 2025 -- Tue Feb 18 08:55:25 AEDT 2025
   #
-  # Merged PR 32428: Virgil - Put US2 Kafka nodes back to continuous
-  # 7fc6c0d911267029bf45ee90fb470ecf789da8bd
-  virgil_build_id: '1253365'
+  # Merged PR 32547: Rebuild DE1 mgmt node 3 with Ubunt 24.04.1
+  # 652df603b0515b388995905b6dcee048cf264ba1
+  virgil_build_id: '1254071'
 
-  # sqlbilling 20250213.3
-  # Wed Feb 12 15:02:03 UTC 2025 -- Thu Feb 13 02:02:03 AEDT 2025
+  # sqlbilling 20250218.1
+  # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
   #
-  # Merged PR 32532: RTL-SQLBilling-CS01870921,PRJ00050648,PRJ00050709
-  # 6bf56fb5135730dde6e0e7eec95145f84c16af95
-  sqlbilling_build_id: '1249156'
+  # Merged PR 32645: RTL-SQLBilling-CS01875487,CS01876291
+  # bfb8ec941d4cffac27945d6c095f5c3f78a1163b
+  sqlbilling_build_id: '1253964'
