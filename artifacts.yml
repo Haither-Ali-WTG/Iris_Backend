@@ -7,12 +7,12 @@ variables:
   # f8277a1f34b678566990466b8e5f087cfe4e07df
   dante_build_id: '1254195'
 
-  # virgil 20250218.5
-  # Mon Feb 17 21:55:25 UTC 2025 -- Tue Feb 18 08:55:25 AEDT 2025
+  # virgil 20250219.1
+  # Tue Feb 18 19:52:08 UTC 2025 -- Wed Feb 19 06:52:08 AEDT 2025
   #
-  # Merged PR 32547: Rebuild DE1 mgmt node 3 with Ubunt 24.04.1
-  # 652df603b0515b388995905b6dcee048cf264ba1
-  virgil_build_id: '1254071'
+  # Merged PR 32696: Add three new data nodes
+  # 9391038b595b5e30d1d6ee9f45353a30f281380e
+  virgil_build_id: '1255053'
 
   # sqlbilling 20250218.1
   # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
