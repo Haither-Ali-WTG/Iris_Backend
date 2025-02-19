@@ -7,12 +7,12 @@ variables:
   # 8a2f94dceb4d21749caa8bf8f4c43ca68a0fba5c
   dante_build_id: '1255106'
 
-  # virgil 20250219.1
-  # Tue Feb 18 19:52:08 UTC 2025 -- Wed Feb 19 06:52:08 AEDT 2025
+  # virgil 20250219.6
+  # Wed Feb 19 00:06:29 UTC 2025 -- Wed Feb 19 11:06:29 AEDT 2025
   #
-  # Merged PR 32696: Add three new data nodes
-  # 9391038b595b5e30d1d6ee9f45353a30f281380e
-  virgil_build_id: '1255053'
+  # Merged PR 32693: [CS01876620] Virgil - Create credit check Kafka topics for migration from Eye/AU1
+  # 95536d008f67a1a50138ffaa92a22dbe04fb92b5
+  virgil_build_id: '1255333'
 
   # sqlbilling 20250218.1
   # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
