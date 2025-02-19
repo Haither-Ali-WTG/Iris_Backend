@@ -7,12 +7,12 @@ variables:
   # 3c09d41d37abca4855c4a9f52374b263fc41d1da
   dante_build_id: '1255389'
 
-  # virgil 20250219.10
-  # Wed Feb 19 01:10:48 UTC 2025 -- Wed Feb 19 12:10:48 AEDT 2025
+  # virgil 20250219.13
+  # Wed Feb 19 01:56:13 UTC 2025 -- Wed Feb 19 12:56:13 AEDT 2025
   #
-  # Merged PR 32488: Delete old OCP topics
-  # 5d7cbe316173c4ed80109f9d11f6eda47710750e
-  virgil_build_id: '1255434'
+  # Merged PR 32734: Updated to reserve same network in each region
+  # 3f32d9d882c3acc0e5fad14c08a881b105bd92a3
+  virgil_build_id: '1255481'
 
   # sqlbilling 20250218.1
   # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
