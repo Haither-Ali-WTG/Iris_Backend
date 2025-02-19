@@ -7,12 +7,12 @@ variables:
   # df7ce7b612f422d853a55dd603f6b43751f7728d
   dante_build_id: '1255553'
 
-  # virgil 20250219.19
-  # Wed Feb 19 04:03:25 UTC 2025 -- Wed Feb 19 15:03:25 AEDT 2025
+  # virgil 20250220.8
+  # Wed Feb 19 23:45:49 UTC 2025 -- Thu Feb 20 10:45:49 AEDT 2025
   #
-  # Merged PR 32755: more updates for AAP vlan
-  # b45b349f389f1e689bdecb0d4002b8cc57052892
-  virgil_build_id: '1255633'
+  # Merged PR 32600: Virgil: Remove 2 users as per sec review
+  # 6a65a443ae1b36e8463970fe0e120e849b51858e
+  virgil_build_id: '1256453'
 
   # sqlbilling 20250218.1
   # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
