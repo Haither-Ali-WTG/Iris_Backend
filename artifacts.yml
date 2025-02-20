@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250221.1
-  # Thu Feb 20 22:28:57 UTC 2025 -- Fri Feb 21 09:28:57 AEDT 2025
+  # Dante Build Artifact 20250221.2
+  # Thu Feb 20 23:17:19 UTC 2025 -- Fri Feb 21 10:17:19 AEDT 2025
   #
-  # Merged PR 32801: RHEL 9 installation using 2 ISO
-  # 31a2747a2a0698f5a34eaf974e89e3240cb185a6
-  dante_build_id: '1257457'
+  # Merged PR 32818: Added the styx YAML file for a experimental Openshift deployment
+  # 814dcf5b6c53ba6603ba91d84612510e9c545de5
+  dante_build_id: '1257523'
 
   # virgil 20250220.18
   # Thu Feb 20 09:24:43 UTC 2025 -- Thu Feb 20 20:24:43 AEDT 2025
