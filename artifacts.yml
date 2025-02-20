@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250220.1
-  # Thu Feb 20 00:05:07 UTC 2025 -- Thu Feb 20 11:05:07 AEDT 2025
+  # Dante Build Artifact 20250220.2
+  # Thu Feb 20 01:17:45 UTC 2025 -- Thu Feb 20 12:17:45 AEDT 2025
   #
-  # Merged PR 32791: Added play_publish_iso role for Mercury artifact
-  # 04a7147fcd167fbc08a61030a23ced086b9e644f
-  dante_build_id: '1256487'
+  # Merge pull request 32783 from dante_artifact_upgrade into master
+  # e23288e6400590d8496643d6cd0012e687a4293f
+  dante_build_id: '1256552'
 
   # virgil 20250220.8
   # Wed Feb 19 23:45:49 UTC 2025 -- Thu Feb 20 10:45:49 AEDT 2025
