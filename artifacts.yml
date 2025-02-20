@@ -7,12 +7,12 @@ variables:
   # 62a4e7bf55fd79a1607dfde0131f62235a7f28e8
   dante_build_id: '1256748'
 
-  # virgil 20250220.15
-  # Thu Feb 20 03:54:36 UTC 2025 -- Thu Feb 20 14:54:36 AEDT 2025
+  # virgil 20250220.18
+  # Thu Feb 20 09:24:43 UTC 2025 -- Thu Feb 20 20:24:43 AEDT 2025
   #
-  # Merged PR 32812: Put AU2 and DE1 Kafka hosts back to continuous
-  # 6d2d60707637aa843be5eb7e812436582d07ebe1
-  virgil_build_id: '1256689'
+  # Merged PR 32827: Update switch port number
+  # 70960980411d08bb48aa13d7b4ff0c30f3057643
+  virgil_build_id: '1256939'
 
   # sqlbilling 20250220.1
   # Thu Feb 20 01:24:24 UTC 2025 -- Thu Feb 20 12:24:24 AEDT 2025
