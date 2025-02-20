@@ -7,12 +7,12 @@ variables:
   # e23288e6400590d8496643d6cd0012e687a4293f
   dante_build_id: '1256552'
 
-  # virgil 20250220.11
-  # Thu Feb 20 03:05:09 UTC 2025 -- Thu Feb 20 14:05:09 AEDT 2025
+  # virgil 20250220.15
+  # Thu Feb 20 03:54:36 UTC 2025 -- Thu Feb 20 14:54:36 AEDT 2025
   #
-  # Merged PR 32536: Adding new subnets to us2 sistemas
-  # 55b328313fc16d00404f1c0877273c6482235f1d
-  virgil_build_id: '1256653'
+  # Merged PR 32812: Put AU2 and DE1 Kafka hosts back to continuous
+  # 6d2d60707637aa843be5eb7e812436582d07ebe1
+  virgil_build_id: '1256689'
 
   # sqlbilling 20250220.1
   # Thu Feb 20 01:24:24 UTC 2025 -- Thu Feb 20 12:24:24 AEDT 2025
