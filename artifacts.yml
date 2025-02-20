@@ -7,16 +7,16 @@ variables:
   # e23288e6400590d8496643d6cd0012e687a4293f
   dante_build_id: '1256552'
 
-  # virgil 20250220.8
-  # Wed Feb 19 23:45:49 UTC 2025 -- Thu Feb 20 10:45:49 AEDT 2025
+  # virgil 20250220.11
+  # Thu Feb 20 03:05:09 UTC 2025 -- Thu Feb 20 14:05:09 AEDT 2025
   #
-  # Merged PR 32600: Virgil: Remove 2 users as per sec review
-  # 6a65a443ae1b36e8463970fe0e120e849b51858e
-  virgil_build_id: '1256453'
+  # Merged PR 32536: Adding new subnets to us2 sistemas
+  # 55b328313fc16d00404f1c0877273c6482235f1d
+  virgil_build_id: '1256653'
 
-  # sqlbilling 20250218.1
-  # Mon Feb 17 19:10:47 UTC 2025 -- Tue Feb 18 06:10:47 AEDT 2025
+  # sqlbilling 20250220.1
+  # Thu Feb 20 01:24:24 UTC 2025 -- Thu Feb 20 12:24:24 AEDT 2025
   #
-  # Merged PR 32645: RTL-SQLBilling-CS01875487,CS01876291
-  # bfb8ec941d4cffac27945d6c095f5c3f78a1163b
-  sqlbilling_build_id: '1253964'
+  # Merged PR 32768: RTL-SQLBilling-CS01879601,CS01880159,CS01869515,CS01879941,PRJ00050829
+  # be3aba771624b74688b2a2d34eb235acc9e67a40
+  sqlbilling_build_id: '1256563'
