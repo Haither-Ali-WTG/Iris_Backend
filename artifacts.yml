@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250221.2
-  # Thu Feb 20 23:17:19 UTC 2025 -- Fri Feb 21 10:17:19 AEDT 2025
+  # Dante Build Artifact 20250221.3
+  # Fri Feb 21 00:01:52 UTC 2025 -- Fri Feb 21 11:01:52 AEDT 2025
   #
-  # Merged PR 32818: Added the styx YAML file for a experimental Openshift deployment
-  # 814dcf5b6c53ba6603ba91d84612510e9c545de5
-  dante_build_id: '1257523'
+  # Merged PR 32727: Use 2 ISOs to rebuild Ubuntu servers
+  # 22392f033a890cf35952ec0740cf2e4000809cfa
+  dante_build_id: '1257584'
 
   # virgil 20250220.18
   # Thu Feb 20 09:24:43 UTC 2025 -- Thu Feb 20 20:24:43 AEDT 2025
