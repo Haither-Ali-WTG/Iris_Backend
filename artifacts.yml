@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250221.4
-  # Fri Feb 21 02:40:33 UTC 2025 -- Fri Feb 21 13:40:33 AEDT 2025
+  # Dante Build Artifact 20250221.5
+  # Fri Feb 21 04:07:12 UTC 2025 -- Fri Feb 21 15:07:12 AEDT 2025
   #
-  # Merged PR 32867: Remove Cluster level Namespace "wtg-iscore-styx-a" as ArgoCD complain about it.
-  # 42df9049a34ad60f30c7ea06d7115eb1e51968a7
-  dante_build_id: '1257749'
+  # Merge pull request 32875 from dante_artifact_upgrade into master
+  # 062eeef30b5cb8c5f8edbc0f784aaf7dfb408dee
+  dante_build_id: '1257850'
 
   # virgil 20250221.7
   # Fri Feb 21 02:14:30 UTC 2025 -- Fri Feb 21 13:14:30 AEDT 2025
