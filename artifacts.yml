@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250221.5
-  # Fri Feb 21 04:07:12 UTC 2025 -- Fri Feb 21 15:07:12 AEDT 2025
+  # Dante Build Artifact 20250221.6
+  # Fri Feb 21 05:15:19 UTC 2025 -- Fri Feb 21 16:15:19 AEDT 2025
   #
-  # Merge pull request 32875 from dante_artifact_upgrade into master
-  # 062eeef30b5cb8c5f8edbc0f784aaf7dfb408dee
-  dante_build_id: '1257850'
+  # Merged PR 32888: Updated styx.yaml, set resource & limits for containers only.
+  # 25c1a55681bff89c340711c1daf9da801a9ea52e
+  dante_build_id: '1257911'
 
   # virgil 20250221.7
   # Fri Feb 21 02:14:30 UTC 2025 -- Fri Feb 21 13:14:30 AEDT 2025
