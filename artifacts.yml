@@ -7,16 +7,16 @@ variables:
   # 25c1a55681bff89c340711c1daf9da801a9ea52e
   dante_build_id: '1257911'
 
-  # virgil 20250221.7
-  # Fri Feb 21 02:14:30 UTC 2025 -- Fri Feb 21 13:14:30 AEDT 2025
+  # virgil 20250224.1
+  # Sun Feb 23 21:24:00 UTC 2025 -- Mon Feb 24 08:24:00 AEDT 2025
   #
-  # Merged PR 32866: Config swp for next Eye nodes move toward Global Search
-  # ec96cd86b15f662633d38048c585705bf8aef6f0
-  virgil_build_id: '1257698'
+  # Merged PR 32900: Add new media agents and replace 5 dodgy boxes
+  # 53177e9bf7ce48233de84618d64d69b298677adf
+  virgil_build_id: '1260220'
 
-  # sqlbilling 20250221.3
-  # Thu Feb 20 22:09:00 UTC 2025 -- Fri Feb 21 09:09:00 AEDT 2025
+  # sqlbilling 20250222.1
+  # Fri Feb 21 14:08:50 UTC 2025 -- Sat Feb 22 01:08:50 AEDT 2025
   #
-  # Merged PR 32841: Updated de1 SQL billing
-  # abe5cd49c70f883bf48b9f4001e7014a9c5e7c9f
-  sqlbilling_build_id: '1257449'
+  # Merged PR 32897: Updated us2-prod-frontend-1.yml
+  # 0b5f93d43cac65969cd4368bd56aaaed50871f2f
+  sqlbilling_build_id: '1258275'
