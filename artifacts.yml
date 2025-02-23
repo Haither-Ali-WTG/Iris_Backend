@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250224.1
-  # Sun Feb 23 22:26:45 UTC 2025 -- Mon Feb 24 09:26:45 AEDT 2025
+  # Dante Build Artifact 20250224.2
+  # Sun Feb 23 23:11:03 UTC 2025 -- Mon Feb 24 10:11:03 AEDT 2025
   #
-  # Merge pull request 32910 from dante_artifact_upgrade into master
-  # 31056a6c7b4f7f1a42d8936dbfe020af2da8cf6b
-  dante_build_id: '1260277'
+  # Merged PR 32916: Upgrade ISO and qcow2 to Ubuntu 24.04.2
+  # 88c3381ee8e7ea48cb9671e8f47e937d669fa92c
+  dante_build_id: '1260367'
 
   # virgil 20250224.4
   # Sun Feb 23 22:46:25 UTC 2025 -- Mon Feb 24 09:46:25 AEDT 2025
