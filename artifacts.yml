@@ -7,12 +7,12 @@ variables:
   # 31056a6c7b4f7f1a42d8936dbfe020af2da8cf6b
   dante_build_id: '1260277'
 
-  # virgil 20250224.1
-  # Sun Feb 23 21:24:00 UTC 2025 -- Mon Feb 24 08:24:00 AEDT 2025
+  # virgil 20250224.4
+  # Sun Feb 23 22:46:25 UTC 2025 -- Mon Feb 24 09:46:25 AEDT 2025
   #
-  # Merged PR 32900: Add new media agents and replace 5 dodgy boxes
-  # 53177e9bf7ce48233de84618d64d69b298677adf
-  virgil_build_id: '1260220'
+  # Merged PR 32896: Add Apex25/26 for NEW CIDR Test
+  # d87ccdb4ac03b43b8acda6a65b07635f8fe501d3
+  virgil_build_id: '1260313'
 
   # sqlbilling 20250222.1
   # Fri Feb 21 14:08:50 UTC 2025 -- Sat Feb 22 01:08:50 AEDT 2025
