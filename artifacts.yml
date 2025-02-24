@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250224.4
-  # Mon Feb 24 00:38:24 UTC 2025 -- Mon Feb 24 11:38:24 AEDT 2025
+  # Dante Build Artifact 20250224.5
+  # Mon Feb 24 02:07:05 UTC 2025 -- Mon Feb 24 13:07:05 AEDT 2025
   #
-  # Merged PR 32877: Add maintenance to IRIS for maintenance pipeline
-  # 1c7d0e7869bec969da019bb1d193daaea0626c51
-  dante_build_id: '1260487'
+  # Merge pull request 32924 from dante_artifact_upgrade into master
+  # 3bb2dd04c52ec58dda01d022971976c901ac6d51
+  dante_build_id: '1260595'
 
   # virgil 20250224.4
   # Sun Feb 23 22:46:25 UTC 2025 -- Mon Feb 24 09:46:25 AEDT 2025
