@@ -7,12 +7,12 @@ variables:
   # 3bb2dd04c52ec58dda01d022971976c901ac6d51
   dante_build_id: '1260595'
 
-  # virgil 20250224.4
-  # Sun Feb 23 22:46:25 UTC 2025 -- Mon Feb 24 09:46:25 AEDT 2025
+  # virgil 20250224.7
+  # Mon Feb 24 03:46:06 UTC 2025 -- Mon Feb 24 14:46:06 AEDT 2025
   #
-  # Merged PR 32896: Add Apex25/26 for NEW CIDR Test
-  # d87ccdb4ac03b43b8acda6a65b07635f8fe501d3
-  virgil_build_id: '1260313'
+  # Merged PR 32950: [CS01876620] Virgil - Create new topic name creditcheck-topic-2
+  # 4875006c5d21e3810c45dfed6f5723e522fb861f
+  virgil_build_id: '1260691'
 
   # sqlbilling 20250222.1
   # Fri Feb 21 14:08:50 UTC 2025 -- Sat Feb 22 01:08:50 AEDT 2025
