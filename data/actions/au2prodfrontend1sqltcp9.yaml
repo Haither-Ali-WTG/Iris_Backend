@@ -5,7 +5,7 @@ sql_allowed:
   description: Rejects requests from non-WTG or non-Customer IPs
   order: 40
   actions:
-    - tcp-request connection reject if !wtg_src !customerreadonly_src
+    - tcp-request connection reject if !wtg_src !customerreadonly_src !iah_src
 
 sql_backends_test:
   description: |
