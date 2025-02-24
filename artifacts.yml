@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250224.2
-  # Sun Feb 23 23:11:03 UTC 2025 -- Mon Feb 24 10:11:03 AEDT 2025
+  # Dante Build Artifact 20250224.3
+  # Mon Feb 24 00:01:43 UTC 2025 -- Mon Feb 24 11:01:43 AEDT 2025
   #
-  # Merged PR 32916: Upgrade ISO and qcow2 to Ubuntu 24.04.2
-  # 88c3381ee8e7ea48cb9671e8f47e937d669fa92c
-  dante_build_id: '1260367'
+  # Merged PR 32925: Align styx.yaml with updated resource quota and limit ranges
+  # 7d7ea1b757e245fa11bd9b920e84ea9a97301bc9
+  dante_build_id: '1260438'
 
   # virgil 20250224.4
   # Sun Feb 23 22:46:25 UTC 2025 -- Mon Feb 24 09:46:25 AEDT 2025
