@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250225.2
-  # Tue Feb 25 00:08:16 UTC 2025 -- Tue Feb 25 11:08:16 AEDT 2025
+  # Dante Build Artifact 20250225.3
+  # Tue Feb 25 02:07:17 UTC 2025 -- Tue Feb 25 13:07:17 AEDT 2025
   #
-  # Merge pull request 32957 from dante_artifact_upgrade into master
-  # 2fcb6ad6ce45ead81dfea1e9d467e9876eede124
-  dante_build_id: '1261631'
+  # Merge pull request 33006 from dante_artifact_upgrade into master
+  # 3f2ffe163c5b86137184eb23cdd0d921fe4bfca6
+  dante_build_id: '1261764'
 
-  # virgil 20250225.9
-  # Mon Feb 24 23:18:46 UTC 2025 -- Tue Feb 25 10:18:46 AEDT 2025
+  # virgil 20250225.12
+  # Tue Feb 25 01:07:39 UTC 2025 -- Tue Feb 25 12:07:39 AEDT 2025
   #
-  # Merged PR 32984: [CS01876620] Virgil -Enterprise Enrichment service - Test and prod
-  # a31b70e56019b1b52bb931d8d100e43f56f0d994
-  virgil_build_id: '1261551'
+  # Merged PR 32963: add new cidr subnet to apex25-26
+  # 4874ad833199f8a2e07d9ebc92cb668c3eab4127
+  virgil_build_id: '1261702'
 
   # sqlbilling 20250224.3
   # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
