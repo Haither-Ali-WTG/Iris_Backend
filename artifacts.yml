@@ -7,12 +7,12 @@ variables:
   # 3f2ffe163c5b86137184eb23cdd0d921fe4bfca6
   dante_build_id: '1261764'
 
-  # virgil 20250225.12
-  # Tue Feb 25 01:07:39 UTC 2025 -- Tue Feb 25 12:07:39 AEDT 2025
+  # virgil 20250225.16
+  # Tue Feb 25 06:38:09 UTC 2025 -- Tue Feb 25 17:38:09 AEDT 2025
   #
-  # Merged PR 32963: add new cidr subnet to apex25-26
-  # 4874ad833199f8a2e07d9ebc92cb668c3eab4127
-  virgil_build_id: '1261702'
+  # Merged PR 33021: add exit7 and 8 to l3 vlan filter
+  # b736a32d53b40f56a242accf4bf251bb1add96e3
+  virgil_build_id: '1261987'
 
   # sqlbilling 20250224.3
   # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
