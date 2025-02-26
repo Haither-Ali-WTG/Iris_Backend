@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250226.3
-  # Wed Feb 26 01:46:32 UTC 2025 -- Wed Feb 26 12:46:32 AEDT 2025
+  # Dante Build Artifact 20250226.4
+  # Wed Feb 26 04:25:17 UTC 2025 -- Wed Feb 26 15:25:17 AEDT 2025
   #
-  # Merge pull request 33059 from dante_artifact_upgrade into master
-  # 1dc967160ff11605f2d064a2afe138bb0433c672
-  dante_build_id: '1262812'
+  # Merged PR 33066: Add build_server related roles to IRIS
+  # bbc7cc2b102b1d7d7878a8bd9da73cc44d05013e
+  dante_build_id: '1262964'
 
-  # virgil 20250226.6
-  # Wed Feb 26 00:47:38 UTC 2025 -- Wed Feb 26 11:47:38 AEDT 2025
+  # virgil 20250226.19
+  # Wed Feb 26 04:16:21 UTC 2025 -- Wed Feb 26 15:16:21 AEDT 2025
   #
-  # Merged PR 33023: [CS01884795] Virgil - OCM Booking Events Queues for IL team
-  # 07af87728e8a26de4064dd4da713b47aa74d6c05
-  virgil_build_id: '1262758'
+  # Merged PR 33031: move C-00141 to 10.8.224 network for testing new cidr
+  # 47c2876546cf5f860e494b63bf19be9c1050994b
+  virgil_build_id: '1262951'
 
   # sqlbilling 20250224.3
   # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
