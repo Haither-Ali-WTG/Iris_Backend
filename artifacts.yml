@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250226.5
-  # Wed Feb 26 05:06:57 UTC 2025 -- Wed Feb 26 16:06:57 AEDT 2025
+  # Dante Build Artifact 20250226.6
+  # Wed Feb 26 05:41:15 UTC 2025 -- Wed Feb 26 16:41:15 AEDT 2025
   #
-  # Merge pull request 33073 from dante_artifact_upgrade into master
-  # 321330f80a48212871188c86ed6cf85472153456
-  dante_build_id: '1263020'
+  # Merged PR 33039: Deleted kubernetes folder for styx
+  # 9a55b70aacedc48d01cbb5fca12a6bc227457d99
+  dante_build_id: '1263058'
 
   # virgil 20250226.19
   # Wed Feb 26 04:16:21 UTC 2025 -- Wed Feb 26 15:16:21 AEDT 2025
