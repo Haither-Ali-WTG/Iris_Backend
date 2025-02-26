@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250226.4
-  # Wed Feb 26 04:25:17 UTC 2025 -- Wed Feb 26 15:25:17 AEDT 2025
+  # Dante Build Artifact 20250226.5
+  # Wed Feb 26 05:06:57 UTC 2025 -- Wed Feb 26 16:06:57 AEDT 2025
   #
-  # Merged PR 33066: Add build_server related roles to IRIS
-  # bbc7cc2b102b1d7d7878a8bd9da73cc44d05013e
-  dante_build_id: '1262964'
+  # Merge pull request 33073 from dante_artifact_upgrade into master
+  # 321330f80a48212871188c86ed6cf85472153456
+  dante_build_id: '1263020'
 
   # virgil 20250226.19
   # Wed Feb 26 04:16:21 UTC 2025 -- Wed Feb 26 15:16:21 AEDT 2025
