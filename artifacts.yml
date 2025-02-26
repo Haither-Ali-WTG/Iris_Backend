@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250226.1
-  # Tue Feb 25 23:32:12 UTC 2025 -- Wed Feb 26 10:32:12 AEDT 2025
+  # Dante Build Artifact 20250226.2
+  # Wed Feb 26 00:27:06 UTC 2025 -- Wed Feb 26 11:27:06 AEDT 2025
   #
-  # Merged PR 33020: Support servers connectivity in dev simulation
-  # c0d471f020834ad283308c110a3274ba95ce7f43
-  dante_build_id: '1262664'
+  # Merge pull request 33048 from dante_artifact_upgrade into master
+  # aecc3ff0ddbaf887cd9bea322d3105e626ca204f
+  dante_build_id: '1262722'
 
   # virgil 20250226.3
   # Tue Feb 25 23:29:13 UTC 2025 -- Wed Feb 26 10:29:13 AEDT 2025
