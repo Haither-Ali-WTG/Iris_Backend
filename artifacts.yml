@@ -7,12 +7,12 @@ variables:
   # aecc3ff0ddbaf887cd9bea322d3105e626ca204f
   dante_build_id: '1262722'
 
-  # virgil 20250226.3
-  # Tue Feb 25 23:29:13 UTC 2025 -- Wed Feb 26 10:29:13 AEDT 2025
+  # virgil 20250226.6
+  # Wed Feb 26 00:47:38 UTC 2025 -- Wed Feb 26 11:47:38 AEDT 2025
   #
-  # Merged PR 33038: Move 2 Hyper-V hosts out of cabinet 110
-  # 27fab28f13a49f5adecdf424bbdbf0d683a8726b
-  virgil_build_id: '1262651'
+  # Merged PR 33023: [CS01884795] Virgil - OCM Booking Events Queues for IL team
+  # 07af87728e8a26de4064dd4da713b47aa74d6c05
+  virgil_build_id: '1262758'
 
   # sqlbilling 20250224.3
   # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
