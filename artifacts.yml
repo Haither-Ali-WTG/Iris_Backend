@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250226.6
-  # Wed Feb 26 05:41:15 UTC 2025 -- Wed Feb 26 16:41:15 AEDT 2025
+  # Dante Build Artifact 20250227.2
+  # Wed Feb 26 23:46:51 UTC 2025 -- Thu Feb 27 10:46:51 AEDT 2025
   #
-  # Merged PR 33039: Deleted kubernetes folder for styx
-  # 9a55b70aacedc48d01cbb5fca12a6bc227457d99
-  dante_build_id: '1263058'
+  # Merge pull request 33106 from dante_artifact_upgrade into master
+  # 8c5c4dde1f565eb6edbaf911b642ffd1508c6506
+  dante_build_id: '1263806'
 
-  # virgil 20250226.19
-  # Wed Feb 26 04:16:21 UTC 2025 -- Wed Feb 26 15:16:21 AEDT 2025
+  # virgil 20250227.5
+  # Wed Feb 26 22:16:09 UTC 2025 -- Thu Feb 27 09:16:09 AEDT 2025
   #
-  # Merged PR 33031: move C-00141 to 10.8.224 network for testing new cidr
-  # 47c2876546cf5f860e494b63bf19be9c1050994b
-  virgil_build_id: '1262951'
+  # Merged PR 33098: Put 788 and 799 in right racks
+  # c7fcc5da4514c9ced6d5dba637c55bfde6095e9f
+  virgil_build_id: '1263713'
 
   # sqlbilling 20250224.3
   # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
