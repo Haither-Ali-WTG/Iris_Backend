@@ -7,16 +7,16 @@ variables:
   # 12c311a4ed80a070cebee36c05f57ad037f01b40
   dante_build_id: '1264005'
 
-  # virgil 20250227.5
-  # Wed Feb 26 22:16:09 UTC 2025 -- Thu Feb 27 09:16:09 AEDT 2025
+  # virgil 20250227.13
+  # Thu Feb 27 05:21:18 UTC 2025 -- Thu Feb 27 16:21:18 AEDT 2025
   #
-  # Merged PR 33098: Put 788 and 799 in right racks
-  # c7fcc5da4514c9ced6d5dba637c55bfde6095e9f
-  virgil_build_id: '1263713'
+  # Merged PR 33130: Add new vlan for workstation network cutover
+  # 3eaa791f31e583684702f946264b4704ce81440c
+  virgil_build_id: '1264102'
 
-  # sqlbilling 20250224.3
-  # Mon Feb 24 12:51:11 UTC 2025 -- Mon Feb 24 23:51:11 AEDT 2025
+  # sqlbilling 20250227.2
+  # Thu Feb 27 04:47:13 UTC 2025 -- Thu Feb 27 15:47:13 AEDT 2025
   #
-  # Merged PR 32965: RTL-SQLBilling-CS01882338,CS01883113,CS01875487,CS01884943
-  # 96e98292a411d77aa707d81b7552e439feb58b0c
-  sqlbilling_build_id: '1261089'
+  # Merged PR 33097: RTL-SQLBilling-CS01885542,CS01886279,CS01886588,CS01886699,CS01887944
+  # 72633872fb7db4914f17d4428d12d903a46717e8
+  sqlbilling_build_id: '1264075'
