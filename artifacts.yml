@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250227.3
-  # Thu Feb 27 03:35:28 UTC 2025 -- Thu Feb 27 14:35:28 AEDT 2025
+  # Dante Build Artifact 20250227.4
+  # Thu Feb 27 06:07:33 UTC 2025 -- Thu Feb 27 17:07:33 AEDT 2025
   #
-  # Merged PR 33121: Azure Devops Agents on OCP
-  # 12c311a4ed80a070cebee36c05f57ad037f01b40
-  dante_build_id: '1264005'
+  # Merge pull request 33136 from dante_artifact_upgrade into master
+  # cb4881b750cd84213e7a222725c009ce1d656867
+  dante_build_id: '1264160'
 
-  # virgil 20250227.13
-  # Thu Feb 27 05:21:18 UTC 2025 -- Thu Feb 27 16:21:18 AEDT 2025
+  # virgil 20250228.2
+  # Thu Feb 27 22:31:10 UTC 2025 -- Fri Feb 28 09:31:10 AEDT 2025
   #
-  # Merged PR 33130: Add new vlan for workstation network cutover
-  # 3eaa791f31e583684702f946264b4704ce81440c
-  virgil_build_id: '1264102'
+  # Merged PR 33137: Update Apex23 eth0 MAC address
+  # c7027fc30a4d63ec811dd21cb66633221ba1cd00
+  virgil_build_id: '1264829'
 
   # sqlbilling 20250227.2
   # Thu Feb 27 04:47:13 UTC 2025 -- Thu Feb 27 15:47:13 AEDT 2025
