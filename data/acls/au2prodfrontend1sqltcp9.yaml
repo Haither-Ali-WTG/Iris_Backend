@@ -2,7 +2,7 @@
 staff_src:
   description: these IPs are home ips of staffmembers who need to test SQL RO 
   tests:
-    - src 110.232.245.191
+    - src 110.232.245.191 #IAH
 
 aryaka_src:
   description: these IPs are aryaka IPs for customers who connect via aryaka
