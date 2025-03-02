@@ -24,6 +24,7 @@ https_redirect:
     - redirect scheme https if star_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_bolero_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_testrig_sand_wtg_zone !{ ssl_fc } !excluded_from_redirect_paths
+    - redirect scheme https if star_cargowise_com !{ ssl_fc }
 
 bolero_backend_redirect:
   description: |-
