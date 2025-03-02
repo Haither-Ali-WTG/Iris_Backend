@@ -63,4 +63,4 @@ talogy_src:
 star_cargowise_com:
   description: "*.cargowise.com"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?cargowise\.com$
+    - hdr(host),field(1,:),lower -m reg -i ^([^\.]+\.)?cargowise\.com$
