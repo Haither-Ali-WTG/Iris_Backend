@@ -59,3 +59,8 @@ talogy_src:
     - src 13.81.64.194/32
     - src 13.81.64.243/32
     - src 13.81.65.246/32
+
+star_cargowise_com:
+  description: "*.cargowise.com"
+  tests:
+    - hdr(host),field(1,:),lower -m reg -i ^([^\.]+\.)?cargowise\.com$
