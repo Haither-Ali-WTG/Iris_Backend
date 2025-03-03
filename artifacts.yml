@@ -7,12 +7,12 @@ variables:
   # 9b229c82226a4086371dfe776e40dc9f143b96ce
   dante_build_id: '1268080'
 
-  # virgil 20250302.1
-  # Sat Mar  1 20:24:51 UTC 2025 -- Sun Mar  2 07:24:51 AEDT 2025
+  # virgil 20250304.2
+  # Mon Mar  3 22:21:25 UTC 2025 -- Tue Mar  4 09:21:25 AEDT 2025
   #
-  # Merged PR 33191: Reconfigure some Hyper-V hosts
-  # 45af1d9ed17e6c69cddde0d9f98d382429e543d7
-  virgil_build_id: '1266655'
+  # Merge pull request 33271 from virgil_python_upgrade into master
+  # b675de8b2b0b66d591e10df539782fde26bfc55f
+  virgil_build_id: '1268868'
 
   # sqlbilling 20250227.2
   # Thu Feb 27 04:47:13 UTC 2025 -- Thu Feb 27 15:47:13 AEDT 2025
