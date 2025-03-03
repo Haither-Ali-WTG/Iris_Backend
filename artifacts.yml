@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250303.4
-  # Mon Mar  3 00:15:18 UTC 2025 -- Mon Mar  3 11:15:18 AEDT 2025
+  # Dante Build Artifact 20250303.5
+  # Mon Mar  3 01:18:45 UTC 2025 -- Mon Mar  3 12:18:45 AEDT 2025
   #
-  # Merge pull request 33212 from automatic_dhcp_server_image_upgrade into master
-  # ef96eb826e9525ed9ac222f7c47bf65ef3a51b62
-  dante_build_id: '1267810'
+  # Merge pull request 33208 from automatic_ascalaphus_image_upgrade into master
+  # 9139e257d87b6d58918dac2b6b2f11fb35b31332
+  dante_build_id: '1267874'
 
   # virgil 20250302.1
   # Sat Mar  1 20:24:51 UTC 2025 -- Sun Mar  2 07:24:51 AEDT 2025
