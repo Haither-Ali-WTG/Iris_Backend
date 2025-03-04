@@ -13,7 +13,7 @@
     - name: No server needs to rebuild in this cluster
       meta: end_play
       when: cluster_servers | intersect(host_list) | length == 0
- 
+
     - name: Make sure that only one server can be rebuilt per cluster
       assert:
         that:

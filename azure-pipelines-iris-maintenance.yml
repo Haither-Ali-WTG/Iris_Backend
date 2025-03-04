@@ -145,7 +145,7 @@ jobs:
         displayName: 'Select IRIS nodes'
         inputs:
           ansibleInterface: 'agentMachine'
-          playbookPathOnAgentMachine: 'ansible/play_maintenance/select_iris_node.yaml'
+          playbookPathOnAgentMachine: 'ansible/play_maintenance/select_iris_node_maintenance.yaml'
           inventoriesAgentMachine: 'file'
           inventoryFileOnAgentMachine: 'inventories/inventory-$(dc)-$(hall).yaml'
           failOnStdErr: false
