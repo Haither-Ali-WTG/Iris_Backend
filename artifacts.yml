@@ -7,16 +7,16 @@ variables:
   # 7c559b9edf97017c2034eb5cded847a21612b90a
   dante_build_id: '1269227'
 
-  # virgil 20250304.2
-  # Mon Mar  3 22:21:25 UTC 2025 -- Tue Mar  4 09:21:25 AEDT 2025
+  # virgil 20250305.9
+  # Tue Mar  4 23:32:51 UTC 2025 -- Wed Mar  5 10:32:51 AEDT 2025
   #
-  # Merge pull request 33271 from virgil_python_upgrade into master
-  # b675de8b2b0b66d591e10df539782fde26bfc55f
-  virgil_build_id: '1268868'
+  # Merged PR 33336: Reconfig AU2CO-SDAT-016 to move away from LACP, and corresponding apex 15,16...
+  # e7e431e9e6b3774fcdd59bb089e58ad3d3dd8996
+  virgil_build_id: '1270067'
 
-  # sqlbilling 20250227.2
-  # Thu Feb 27 04:47:13 UTC 2025 -- Thu Feb 27 15:47:13 AEDT 2025
+  # sqlbilling 20250305.5
+  # Tue Mar  4 21:52:19 UTC 2025 -- Wed Mar  5 08:52:19 AEDT 2025
   #
-  # Merged PR 33097: RTL-SQLBilling-CS01885542,CS01886279,CS01886588,CS01886699,CS01887944
-  # 72633872fb7db4914f17d4428d12d903a46717e8
-  sqlbilling_build_id: '1264075'
+  # Merged PR 33331: SqlBillingRemoveCS01862251CS01863060.yml
+  # 0159833b489e6d4858e8e79f01efb29f0e2b73e5
+  sqlbilling_build_id: '1269969'
