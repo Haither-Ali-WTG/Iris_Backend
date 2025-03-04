@@ -35,10 +35,7 @@
             fail_on_absent_secret: false
             azure_kv_name: "{{ key_vault_name }}"
             azure_kv_secret_name: >-
-              XclarityAdmin-
-              {{- previous_hostname
-              if previous_hostname is defined and previous_hostname | length > 4
-              else virgil_hostname }}
+              XclarityAdmin-{{ virgil_hostname }}
 
         - name: Set ansible info
           set_fact:
@@ -53,10 +50,7 @@
         variable_name: xcc_password
         azure_kv_name: "{{ key_vault_name }}"
         azure_kv_secret_name: >-
-            XclarityDante-
-            {{- previous_hostname
-            if previous_hostname is defined and previous_hostname | length > 4
-            else virgil_hostname }}
+            XclarityDante-{{ virgil_hostname }}
       when: "xcc_user == 'dante'"
 
     - name: Create directory for extra inventory
