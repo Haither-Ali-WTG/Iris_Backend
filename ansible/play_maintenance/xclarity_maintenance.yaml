@@ -1,0 +1,13 @@
+---
+- name: Xclarity Maintenance
+  hosts: server_loadbalancer_iris:&maintainable:!no_dante
+  gather_facts: no
+  tasks:
+    - name: Calculate BMC IP
+      set_fact:
+        bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
+
+    - name: Rotate xcc password
+      include_role:
+        name: prepare_xclarity
+        tasks_from: rotate_xcc_passwords.yml

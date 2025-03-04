@@ -1,0 +1,46 @@
+---
+- name: Iris Cluster Maintenance
+  hosts: server_loadbalancer_iris:&maintainable:!no_dante
+  gather_facts: no
+  serial: 1
+  tasks:
+    - name: Calculate BMC IP
+      set_fact:
+        bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
+
+    # TODO: Pre-checks
+
+    - name: Calculate ztp_server and iso_url_base
+      set_fact:
+        ztp_server: "{{ hostvars[item]['virgil_ip_primary'] }}"
+        iso_url_base: "http://{{ hostvars[item]['virgil_ip_oob_dante'] }}:8089/server-images"
+      when:
+        - virgil_hostname != hostvars[item]['virgil_hostname']
+        - hostvars[item]['virgil_dante']
+      loop: "{{ groups['mgmt'] }}"
+
+    - name: Get server ISOs from Pure to ZTP Server
+      include_role:
+        name: rebuild_xclarity_server
+        tasks_from: iso_pure_to_mgmt.yml
+
+    - include_role:
+        name: azure_keyvault
+        tasks_from: generate_linux_secrets.yml
+      when: virgil_os_family == 'linux'
+
+    - name: Rebuild node
+      include_role:
+        name: node_maintenance
+        tasks_from: rebuild_node.yml
+
+    - name: Await rebuild step to finish
+      include_role:
+        name: node_maintenance
+        tasks_from: wait_rebuild_node.yml
+
+    - name: Wait for post-check
+      wait_for:
+        timeout: "{{ host_delay | default(3600) }}"
+
+    # TODO: Post-checks
