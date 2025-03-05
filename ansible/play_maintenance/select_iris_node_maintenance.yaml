@@ -1,0 +1,28 @@
+---
+- name: Check the specified hosts
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Split the specific hosts
+      set_fact:
+        host_list: "{{ specific_host.split(',') }}"
+        cluster_servers: "{{ machine_cluster_info[cluster_name]['machines'].keys() | list }}"
+      vars:
+        machine_cluster_info: "{{ lookup('file', '../../data/machine_clusters/' + dc.lower() + '.yaml') | from_yaml }}"
+
+    - name: No server needs to rebuild in this cluster
+      meta: end_play
+      when: cluster_servers | intersect(host_list) | length == 0
+
+    - name: Make sure that only one server can be rebuilt per cluster
+      assert:
+        that:
+          - cluster_servers | intersect(host_list) | length == 1
+        fail_msg: >-
+          Cannot rebuild multiple hosts in one cluster at once
+
+    - name: Write selected hostname to file
+      copy:
+        content: "{{ cluster_servers | intersect(host_list) | first }}"
+        dest: "{{ playbook_dir }}/selected_iris_node.txt"
+        mode: a=r

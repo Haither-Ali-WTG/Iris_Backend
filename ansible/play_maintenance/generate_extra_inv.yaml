@@ -1,0 +1,69 @@
+---
+- name: Generate inventory file for Xclarity connection info
+  hosts: server_loadbalancer_iris:&maintainable:!no_dante
+  gather_facts: no
+  connection: local
+  tasks:
+    - name: Check previous_hostname is not the multiple hostnames
+      assert:
+        that: '"," not in previous_hostname'
+        fail_msg: >-
+          The "previous_hostname" cannot contain the multiple hostnames
+      when: previous_hostname is defined
+
+    - name: Try to get Xclarity admin password
+      when: "xcc_user != 'dante'"
+      block:
+        - name: Get Xclarity default password
+          include_role:
+            name: azure_keyvault
+            tasks_from: get_secret.yml
+          vars:
+            azure_kv_name: "{{ key_vault_name }}"
+            azure_kv_secret_name: "XccPassword{{ dc }}"
+
+        - name: Set Xclarity default password
+          set_fact:
+            xcc_default_password: "{{ return_secret_value }}"
+          no_log: true
+
+        - name: Get Xclarity admin password
+          include_role:
+            name: azure_keyvault
+            tasks_from: get_secret.yml
+          vars:
+            fail_on_absent_secret: false
+            azure_kv_name: "{{ key_vault_name }}"
+            azure_kv_secret_name: >-
+              XclarityAdmin-{{ virgil_hostname }}
+
+        - name: Set ansible info
+          set_fact:
+            xcc_password: "{{ return_secret_value if return_secret_value else xcc_default_password }}"
+          no_log: true
+
+    - name: Get Xclarity dante password
+      include_role:
+        name: azure_keyvault
+        tasks_from: update_secret_value.yml
+      vars:
+        variable_name: xcc_password
+        azure_kv_name: "{{ key_vault_name }}"
+        azure_kv_secret_name: >-
+            XclarityDante-{{ virgil_hostname }}
+      when: "xcc_user == 'dante'"
+
+    - name: Create directory for extra inventory
+      file:
+        path: "{{ playbook_dir }}/extra_inventory/"
+        state: directory
+        mode: u=rwx,go=rx
+
+    - name: "Generate extra inventory"
+      template:
+        src: xclarity_inv.j2
+        dest: "{{ playbook_dir }}/extra_inventory/{{ virgil_hostname }}.yaml"
+        mode: u=r
+      vars:
+        bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
+      no_log: true

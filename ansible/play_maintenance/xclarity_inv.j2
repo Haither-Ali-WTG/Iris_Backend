@@ -1,0 +1,5 @@
+all:
+  hosts:
+    "{{ bmc_ip }}":
+      ansible_user: "{{ xcc_user }}"
+      ansible_password: "{{ xcc_password }}"
