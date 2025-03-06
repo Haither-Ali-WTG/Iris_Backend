@@ -7,12 +7,12 @@ variables:
   # 6ba792ed88845167ebd2a41d26ea81c576183f39
   dante_build_id: '1271176'
 
-  # virgil 20250306.1
-  # Thu Mar  6 00:31:29 UTC 2025 -- Thu Mar  6 11:31:29 AEDT 2025
+  # virgil 20250306.4
+  # Thu Mar  6 01:45:33 UTC 2025 -- Thu Mar  6 12:45:33 AEDT 2025
   #
-  # Merged PR 33357: SYNC exit7/8 configuration with exit5/6
-  # 0f4a535f775785e2f68562931a2c9fcbc5a3672d
-  virgil_build_id: '1271120'
+  # Merged PR 33369: Update AU2-APEX15/16 swp28 port config
+  # 3632f98a13055f375315a539442424d945695d87
+  virgil_build_id: '1271200'
 
   # sqlbilling 20250306.1
   # Wed Mar  5 13:58:13 UTC 2025 -- Thu Mar  6 00:58:13 AEDT 2025
