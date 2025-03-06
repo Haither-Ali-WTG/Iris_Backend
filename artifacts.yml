@@ -7,16 +7,16 @@ variables:
   # ca8bca83980106ebc65628d37d0d9c736baa9051
   dante_build_id: '1270130'
 
-  # virgil 20250305.9
-  # Tue Mar  4 23:32:51 UTC 2025 -- Wed Mar  5 10:32:51 AEDT 2025
+  # virgil 20250306.1
+  # Thu Mar  6 00:31:29 UTC 2025 -- Thu Mar  6 11:31:29 AEDT 2025
   #
-  # Merged PR 33336: Reconfig AU2CO-SDAT-016 to move away from LACP, and corresponding apex 15,16...
-  # e7e431e9e6b3774fcdd59bb089e58ad3d3dd8996
-  virgil_build_id: '1270067'
+  # Merged PR 33357: SYNC exit7/8 configuration with exit5/6
+  # 0f4a535f775785e2f68562931a2c9fcbc5a3672d
+  virgil_build_id: '1271120'
 
-  # sqlbilling 20250305.5
-  # Tue Mar  4 21:52:19 UTC 2025 -- Wed Mar  5 08:52:19 AEDT 2025
+  # sqlbilling 20250306.1
+  # Wed Mar  5 13:58:13 UTC 2025 -- Thu Mar  6 00:58:13 AEDT 2025
   #
-  # Merged PR 33331: SqlBillingRemoveCS01862251CS01863060.yml
-  # 0159833b489e6d4858e8e79f01efb29f0e2b73e5
-  sqlbilling_build_id: '1269969'
+  # Merged PR 33332: DE1SQLBillingPRJ00050851
+  # b73b70c78fca8a6c76a628c6bd805419eaed2d23
+  sqlbilling_build_id: '1270699'
