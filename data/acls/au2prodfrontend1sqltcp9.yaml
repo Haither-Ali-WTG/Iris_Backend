@@ -8,7 +8,7 @@ staff_src:
     - src 61.69.219.206
     # DJI
     - src 220.240.113.28
-    
+
 aryaka_src:
   description: these IPs are aryaka IPs for customers who connect via aryaka
   tests:
