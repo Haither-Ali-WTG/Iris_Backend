@@ -155,6 +155,7 @@
     group: "{{ subuser.subgid }}"
   become: yes
   loop: "{{ sqlbilling_acl }}"
+  register: copy_sqlbillings
   when: sqlbilling_acl | default([]) | length > 0
 
 - name: Setup apparmor
@@ -284,4 +285,9 @@
     tasks_from: send_signal.yml
   when:
     - container_exists
-    - haproxy_config_changed or sorry_page.changed or copy_certificates.changed  # noqa: no-handler
+    - (
+        haproxy_config_changed
+        or sorry_page.changed
+        or copy_certificates.changed
+        or copy_sqlbillings.changed
+      )  # noqa: no-handler
