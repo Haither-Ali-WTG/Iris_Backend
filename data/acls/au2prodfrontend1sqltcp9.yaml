@@ -4,6 +4,10 @@ staff_src:
   tests:
     # IAH
     - src 110.232.245.191
+    # SLO
+    - src 61.69.219.206
+    # DJI
+    - src 220.240.113.28
 
 aryaka_src:
   description: these IPs are aryaka IPs for customers who connect via aryaka
