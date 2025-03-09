@@ -7,16 +7,16 @@ variables:
   # eae5946ebeac9c7001ca3953b00efd05da2ad69b
   dante_build_id: '1272310'
 
-  # virgil 20250307.4
-  # Thu Mar  6 23:56:01 UTC 2025 -- Fri Mar  7 10:56:01 AEDT 2025
+  # virgil 20250310.1
+  # Sun Mar  9 22:37:56 UTC 2025 -- Mon Mar 10 09:37:56 AEDT 2025
   #
-  # Merged PR 33400: Re-use apex21/22 for DAT
-  # 03a130ac43c6d190d2b7b82f9e1bd6ebed287f1c
-  virgil_build_id: '1272103'
+  # Merged PR 33428: cidr expansion in US2
+  # e4f4988a9cdcc5d2e94b40cd37590a1497c1a4a6
+  virgil_build_id: '1274782'
 
-  # sqlbilling 20250306.1
-  # Wed Mar  5 13:58:13 UTC 2025 -- Thu Mar  6 00:58:13 AEDT 2025
+  # sqlbilling 20250307.3
+  # Fri Mar  7 08:45:36 UTC 2025 -- Fri Mar  7 19:45:36 AEDT 2025
   #
-  # Merged PR 33332: DE1SQLBillingPRJ00050851
-  # b73b70c78fca8a6c76a628c6bd805419eaed2d23
-  sqlbilling_build_id: '1270699'
+  # Merged PR 33397: SqlBillingCS01887655.yml
+  # 7f3bfdd1924d63f736e5c638e34a402239ab90eb
+  sqlbilling_build_id: '1272593'
