@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250310.2
-  # Mon Mar 10 03:26:53 UTC 2025 -- Mon Mar 10 14:26:53 AEDT 2025
+  # Dante Build Artifact 20250310.3
+  # Mon Mar 10 04:15:10 UTC 2025 -- Mon Mar 10 15:15:10 AEDT 2025
   #
-  # Merge pull request 33471 from dante_artifact_upgrade into master
-  # e0729a2a43eaa3705daa1df8d0f18dd687d50bab
-  dante_build_id: '1275048'
+  # Merged PR 33477: Sync Windows WIM files in all 3 DCs
+  # be09bddb7be0a841c0c4fe1685bec63eb1e31d9c
+  dante_build_id: '1275106'
 
   # virgil 20250310.5
   # Mon Mar 10 02:26:53 UTC 2025 -- Mon Mar 10 13:26:53 AEDT 2025
