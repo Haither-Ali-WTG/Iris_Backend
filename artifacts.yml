@@ -7,12 +7,12 @@ variables:
   # 6dc8c9e5d2bb9db2f8163294be214b561d9fa5cf
   dante_build_id: '1274841'
 
-  # virgil 20250310.1
-  # Sun Mar  9 22:37:56 UTC 2025 -- Mon Mar 10 09:37:56 AEDT 2025
+  # virgil 20250310.5
+  # Mon Mar 10 02:26:53 UTC 2025 -- Mon Mar 10 13:26:53 AEDT 2025
   #
-  # Merged PR 33428: cidr expansion in US2
-  # e4f4988a9cdcc5d2e94b40cd37590a1497c1a4a6
-  virgil_build_id: '1274782'
+  # Merged PR 33462: add new subnet and reservations in US2
+  # af6177d7e20b4e4dc34da9be782da156cb7901ca
+  virgil_build_id: '1274993'
 
   # sqlbilling 20250307.3
   # Fri Mar  7 08:45:36 UTC 2025 -- Fri Mar  7 19:45:36 AEDT 2025
