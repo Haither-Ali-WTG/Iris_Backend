@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250310.4
-  # Mon Mar 10 05:16:29 UTC 2025 -- Mon Mar 10 16:16:29 AEDT 2025
+  # Dante Build Artifact 20250311.1
+  # Mon Mar 10 23:26:49 UTC 2025 -- Tue Mar 11 10:26:49 AEDT 2025
   #
-  # Merged PR 33479: Added DE1 Windows ISO build
-  # 05266db0e72e62d7cfe40d8cbde865c69cdef66b
-  dante_build_id: '1275169'
+  # Merge pull request 33514 from dante_artifact_upgrade into master
+  # 7e52ce89f4048cf263b531a02805fa5430fc1188
+  dante_build_id: '1275902'
 
   # virgil 20250311.2
   # Mon Mar 10 22:37:29 UTC 2025 -- Tue Mar 11 09:37:29 AEDT 2025
