@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250310.3
-  # Mon Mar 10 04:15:10 UTC 2025 -- Mon Mar 10 15:15:10 AEDT 2025
+  # Dante Build Artifact 20250310.4
+  # Mon Mar 10 05:16:29 UTC 2025 -- Mon Mar 10 16:16:29 AEDT 2025
   #
-  # Merged PR 33477: Sync Windows WIM files in all 3 DCs
-  # be09bddb7be0a841c0c4fe1685bec63eb1e31d9c
-  dante_build_id: '1275106'
+  # Merged PR 33479: Added DE1 Windows ISO build
+  # 05266db0e72e62d7cfe40d8cbde865c69cdef66b
+  dante_build_id: '1275169'
 
   # virgil 20250310.5
   # Mon Mar 10 02:26:53 UTC 2025 -- Mon Mar 10 13:26:53 AEDT 2025
