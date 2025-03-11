@@ -1,0 +1,59 @@
+---
+# TODO figure out how to spread the definition over multiple files
+clustered_instances:
+  hosts:
+    de1prodfrontend1sqltcp1:
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            # KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-inventories/inventory.yml
+
+            # 3000..3999 is reserved by the billing collector:
+            # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
+
+            - "3000"  # DE1WT-SSQL-401a/b i1
+            - "3001"  # DE1WT-SSQL-402a/b i1
+            - "3002"  # DE1WT-SSQL-403a/b i1
+            - "3003"  # DE1WT-SSQL-404a/b i1
+            - "3004"  # DE1WT-SSQL-405a/b i1
+            - "3005"  # DE1WT-SSQL-406a/b i1
+            - "3006"  # DE1WP-SSQL-401a/b i1
+            - "3007"  # DE1WP-SSQL-402a/b i1
+            - "3008"  # DE1WP-SSQL-403a/b i1
+            - "3009"  # DE1WP-SSQL-404a/b i1
+            - "3010"  # DE1WP-SSQL-405a/b i1
+            - "3011"  # DE1WP-SSQL-406a/b i1
+            - "3012"  # DE1WP-SSQL-407a/b i1
+            - "3013"  # DE1WP-SSQL-408a/b i1
+            - "3014"  # DE1WP-SSQL-409a/b i1
+            - "3015"  # DE1WP-SSQL-410a/b i1
+            - "3016"  # DE1WP-SSQL-411a/b i1
+            - "3017"  # DE1WT-SSQL-407a/b i1
+            - "3018"  # DE1WP-SSQL-412a/b i1
+            - "3019"  # DE1WP-SSQL-413a/b i1
+            - "3020"  # DE1WP-SSQL-414a/b i1
+            - "3021"  # DE1WP-SSQL-415a/b i1
+            - "3022"  # DE1WP-SSQL-416a/b i1
+            - "3023"  # DE1WP-SSQL-417a/b i1
+            - "3024"  # DE1WP-SSQL-418a/b i1
+            - "3025"  # DE1WP-SSQL-419a/b i1
+            - "3026"  # DE1WP-SSQL-420a/b i1
+            - "3027"  # DE1WT-SSQL-408a/b i1
+            - "3028"  # DE1WT-SSQL-409a/b i1
+
+            # ..3999
+
+      iis_servers: []
+      certificates: []
+      sqlbilling_acl:
+        - acl_name: customerreadonly_src
+          file: de1-prod-frontend-1.acl
+      machine_cluster: de1-prod-frontend-1
+      stats:
+        ports:
+          web: 2048
+          socket: 2049
