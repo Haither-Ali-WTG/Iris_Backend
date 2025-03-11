@@ -1,0 +1,13 @@
+---
+# KEEP IN SYNC: haproxy/au2-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+### TEST AU2
+
+au2wtreadonly401l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly401l1
+      ip: 10.2.133.14
+      port: 1433
