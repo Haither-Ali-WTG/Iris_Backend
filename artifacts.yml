@@ -7,16 +7,16 @@ variables:
   # 74f9fd4cb7d95deaa4e03e1f30704be93b2fdab4
   dante_build_id: '1276097'
 
-  # virgil 20250311.14
-  # Tue Mar 11 01:45:12 UTC 2025 -- Tue Mar 11 12:45:12 AEDT 2025
+  # virgil 20250311.18
+  # Tue Mar 11 10:36:50 UTC 2025 -- Tue Mar 11 21:36:50 AEDT 2025
   #
-  # Merged PR 33523: Put simulation node 8711 back to simulation pool
-  # da98bbd09eeba78d2c223f9d4d0b5b8b666890cc
-  virgil_build_id: '1276042'
+  # Merged PR 33548: add elastic-bunker haproxy nodes to au2 switches
+  # 5370793270551c685aa078ae85efaa1a20c2ec2b
+  virgil_build_id: '1276462'
 
-  # sqlbilling 20250311.1
-  # Mon Mar 10 14:10:26 UTC 2025 -- Tue Mar 11 01:10:26 AEDT 2025
+  # sqlbilling 20250311.7
+  # Tue Mar 11 08:31:42 UTC 2025 -- Tue Mar 11 19:31:42 AEDT 2025
   #
-  # Merged PR 33491: SQLBillingAddCS01896543.yml
-  # 9892736d184606e109804cf48063007bf5625c3f
-  sqlbilling_build_id: '1275526'
+  # Merged PR 33547: SQLBillingandWhitelistCS01890353.yml
+  # 0ec4181cd3f6db53be22b03c68bd9c0d3bba58c8
+  sqlbilling_build_id: '1276389'
