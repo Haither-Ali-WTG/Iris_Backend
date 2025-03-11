@@ -264,4 +264,4 @@ de1wpreadonly420l1-wisegrid-net:
   servers:
     - name: de1wpreadonly420l1
       ip: 10.3.134.91
-      port: 1433      
+      port: 1433
