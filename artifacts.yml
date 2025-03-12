@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250311.3
-  # Tue Mar 11 11:27:01 UTC 2025 -- Tue Mar 11 22:27:01 AEDT 2025
+  # Dante Build Artifact 20250312.1
+  # Wed Mar 12 00:58:02 UTC 2025 -- Wed Mar 12 11:58:02 AEDT 2025
   #
-  # Merge pull request 33555 from dante_artifact_upgrade into master
-  # 0beae8c987596b71d534842fec4ee86cd76343c9
-  dante_build_id: '1276500'
+  # Merged PR 33564: Cert Renewal DNS Server change + propagation time change
+  # e4016bd9feaa426e525ace3bf66400d55d96a7eb
+  dante_build_id: '1277085'
 
   # virgil 20250311.18
   # Tue Mar 11 10:36:50 UTC 2025 -- Tue Mar 11 21:36:50 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 5370793270551c685aa078ae85efaa1a20c2ec2b
   virgil_build_id: '1276462'
 
-  # sqlbilling 20250311.7
-  # Tue Mar 11 08:31:42 UTC 2025 -- Tue Mar 11 19:31:42 AEDT 2025
+  # sqlbilling 20250312.3
+  # Wed Mar 12 00:03:22 UTC 2025 -- Wed Mar 12 11:03:22 AEDT 2025
   #
-  # Merged PR 33547: SQLBillingandWhitelistCS01890353.yml
-  # 0ec4181cd3f6db53be22b03c68bd9c0d3bba58c8
-  sqlbilling_build_id: '1276389'
+  # Merged PR 33463: Updated de1-prod-frontend-1.yml
+  # 7aee2bfd5c60dd600a0f577f04a0994813be82bb
+  sqlbilling_build_id: '1277039'
