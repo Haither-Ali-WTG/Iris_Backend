@@ -17,7 +17,7 @@ variables:
 
 stages:
   - stage: Tests_and_lint
-    pool: cicd
+    pool: cicd-v2
     jobs:
       - job: Tests_and_lint
         steps:

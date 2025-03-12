@@ -14,7 +14,7 @@ variables:
   - name: mgmt_keyvault_name
     value: kv-wtg-dante-sim
 
-pool: cicd
+pool: cicd-v2
 
 steps:
   - script: |
