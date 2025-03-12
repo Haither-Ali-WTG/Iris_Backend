@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250312.5
-  # Wed Mar 12 07:26:45 UTC 2025 -- Wed Mar 12 18:26:45 AEDT 2025
+  # Dante Build Artifact 20250313.1
+  # Wed Mar 12 23:26:35 UTC 2025 -- Thu Mar 13 10:26:35 AEDT 2025
   #
-  # Merge pull request 33621 from dante_artifact_upgrade into master
-  # 4aee69f1c23a8096bbc5a619a447bf73cf0a872b
-  dante_build_id: '1277498'
+  # Merge pull request 33643 from dante_artifact_upgrade into master
+  # d68b476ee5ab05c71f76cbe71a168335d6f9924e
+  dante_build_id: '1278155'
 
-  # virgil 20250313.10
-  # Wed Mar 12 22:31:49 UTC 2025 -- Thu Mar 13 09:31:49 AEDT 2025
+  # virgil 20250313.14
+  # Wed Mar 12 23:25:40 UTC 2025 -- Thu Mar 13 10:25:40 AEDT 2025
   #
-  # Merged PR 33605: config apex33/34 to have half LACP ports for testing pipeline
-  # 07f0524853843a658c19505ec2e7269633153799
-  virgil_build_id: '1278103'
+  # Merged PR 33653: Add vlan1029 on au2-apex23/24
+  # cf150589b07c93d1012722afa7de129f8a5728d9
+  virgil_build_id: '1278153'
 
   # sqlbilling 20250313.1
   # Wed Mar 12 13:20:25 UTC 2025 -- Thu Mar 13 00:20:25 AEDT 2025
