@@ -7,12 +7,12 @@ variables:
   # 4aee69f1c23a8096bbc5a619a447bf73cf0a872b
   dante_build_id: '1277498'
 
-  # virgil 20250313.1
-  # Wed Mar 12 21:43:54 UTC 2025 -- Thu Mar 13 08:43:54 AEDT 2025
+  # virgil 20250313.10
+  # Wed Mar 12 22:31:49 UTC 2025 -- Thu Mar 13 09:31:49 AEDT 2025
   #
-  # Merged PR 32758: Virgil - Create new hardware type for the single C43 NIC
-  # 0da59f56ba6ec41db9a9cd767d2350ca9c73cf69
-  virgil_build_id: '1278041'
+  # Merged PR 33605: config apex33/34 to have half LACP ports for testing pipeline
+  # 07f0524853843a658c19505ec2e7269633153799
+  virgil_build_id: '1278103'
 
   # sqlbilling 20250313.1
   # Wed Mar 12 13:20:25 UTC 2025 -- Thu Mar 13 00:20:25 AEDT 2025
