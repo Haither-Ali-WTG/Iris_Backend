@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250312.1
-  # Wed Mar 12 00:58:02 UTC 2025 -- Wed Mar 12 11:58:02 AEDT 2025
+  # Dante Build Artifact 20250312.2
+  # Wed Mar 12 02:01:06 UTC 2025 -- Wed Mar 12 13:01:06 AEDT 2025
   #
-  # Merged PR 33564: Cert Renewal DNS Server change + propagation time change
-  # e4016bd9feaa426e525ace3bf66400d55d96a7eb
-  dante_build_id: '1277085'
+  # Merged PR 33565: Certs - Hide logs as it exposes private key (no_log)
+  # b80bf8b6eadeefaf0185a67e8bd847fbf87c17f9
+  dante_build_id: '1277163'
 
-  # virgil 20250311.18
-  # Tue Mar 11 10:36:50 UTC 2025 -- Tue Mar 11 21:36:50 AEDT 2025
+  # virgil 20250312.2
+  # Wed Mar 12 02:10:57 UTC 2025 -- Wed Mar 12 13:10:57 AEDT 2025
   #
-  # Merged PR 33548: add elastic-bunker haproxy nodes to au2 switches
-  # 5370793270551c685aa078ae85efaa1a20c2ec2b
-  virgil_build_id: '1276462'
+  # Merged PR 33580: CS01897766 - Read only topic for Data Science Chatbot
+  # 8bb80b30113181f8619594d7e9a4331e3472255f
+  virgil_build_id: '1277173'
 
   # sqlbilling 20250312.3
   # Wed Mar 12 00:03:22 UTC 2025 -- Wed Mar 12 11:03:22 AEDT 2025
