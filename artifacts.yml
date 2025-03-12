@@ -7,16 +7,16 @@ variables:
   # 4aee69f1c23a8096bbc5a619a447bf73cf0a872b
   dante_build_id: '1277498'
 
-  # virgil 20250312.12
-  # Wed Mar 12 06:30:36 UTC 2025 -- Wed Mar 12 17:30:36 AEDT 2025
+  # virgil 20250313.1
+  # Wed Mar 12 21:43:54 UTC 2025 -- Thu Mar 13 08:43:54 AEDT 2025
   #
-  # Merged PR 33603: remove downstreams LCAP on apex15/16
-  # 3bb9cda6c2b3176732a9dd89d62ae05d42e77748
-  virgil_build_id: '1277454'
+  # Merged PR 32758: Virgil - Create new hardware type for the single C43 NIC
+  # 0da59f56ba6ec41db9a9cd767d2350ca9c73cf69
+  virgil_build_id: '1278041'
 
-  # sqlbilling 20250312.3
-  # Wed Mar 12 00:03:22 UTC 2025 -- Wed Mar 12 11:03:22 AEDT 2025
+  # sqlbilling 20250313.1
+  # Wed Mar 12 13:20:25 UTC 2025 -- Thu Mar 13 00:20:25 AEDT 2025
   #
-  # Merged PR 33463: Updated de1-prod-frontend-1.yml
-  # 7aee2bfd5c60dd600a0f577f04a0994813be82bb
-  sqlbilling_build_id: '1277039'
+  # Merged PR 33635: SQLBillingandWhitelistingAddCS01890353
+  # 6bd9e6302a383959712f52f5b39f8e4c2760f0e1
+  sqlbilling_build_id: '1277737'
