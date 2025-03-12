@@ -7,12 +7,12 @@ variables:
   # 6e68877f3ee900cb9a087a764caaf87ca7eb690a
   dante_build_id: '1277308'
 
-  # virgil 20250312.2
-  # Wed Mar 12 02:10:57 UTC 2025 -- Wed Mar 12 13:10:57 AEDT 2025
+  # virgil 20250312.12
+  # Wed Mar 12 06:30:36 UTC 2025 -- Wed Mar 12 17:30:36 AEDT 2025
   #
-  # Merged PR 33580: CS01897766 - Read only topic for Data Science Chatbot
-  # 8bb80b30113181f8619594d7e9a4331e3472255f
-  virgil_build_id: '1277173'
+  # Merged PR 33603: remove downstreams LCAP on apex15/16
+  # 3bb9cda6c2b3176732a9dd89d62ae05d42e77748
+  virgil_build_id: '1277454'
 
   # sqlbilling 20250312.3
   # Wed Mar 12 00:03:22 UTC 2025 -- Wed Mar 12 11:03:22 AEDT 2025
