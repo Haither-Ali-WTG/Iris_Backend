@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250312.4
-  # Wed Mar 12 04:02:32 UTC 2025 -- Wed Mar 12 15:02:32 AEDT 2025
+  # Dante Build Artifact 20250312.5
+  # Wed Mar 12 07:26:45 UTC 2025 -- Wed Mar 12 18:26:45 AEDT 2025
   #
-  # Merged PR 33573: Updated Ubuntu 22.04 ISO from 22.04.3 to 22.04.5
-  # 6e68877f3ee900cb9a087a764caaf87ca7eb690a
-  dante_build_id: '1277308'
+  # Merge pull request 33621 from dante_artifact_upgrade into master
+  # 4aee69f1c23a8096bbc5a619a447bf73cf0a872b
+  dante_build_id: '1277498'
 
   # virgil 20250312.12
   # Wed Mar 12 06:30:36 UTC 2025 -- Wed Mar 12 17:30:36 AEDT 2025
