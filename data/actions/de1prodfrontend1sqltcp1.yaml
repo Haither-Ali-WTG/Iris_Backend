@@ -1,0 +1,51 @@
+---
+# KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+sql_allowed:
+  description: Rejects requests from non-WTG or non-Customer IPs
+  order: 40
+  actions:
+    - tcp-request content reject if !wtg_src !customerreadonly_src !staff_src !aryaka_src
+
+sql_backends_test:
+  description: |
+    TEST DE1
+    Maps frontend ports (3000+) to specific SQL backends
+  order: 50
+  actions:
+    - use_backend de1wtreadonly401l1-wisegrid-net if { dst_port 3000 }
+    - use_backend de1wtreadonly402l1-wisegrid-net if { dst_port 3001 }
+    - use_backend de1wtreadonly403l1-wisegrid-net if { dst_port 3002 }
+    - use_backend de1wtreadonly404l1-wisegrid-net if { dst_port 3003 }
+    - use_backend de1wtreadonly405l1-wisegrid-net if { dst_port 3004 }
+    - use_backend de1wtreadonly406l1-wisegrid-net if { dst_port 3005 }
+    - use_backend de1wtreadonly407l1-wisegrid-net if { dst_port 3017 }
+    - use_backend de1wtreadonly408l1-wisegrid-net if { dst_port 3027 }
+    - use_backend de1wtreadonly409l1-wisegrid-net if { dst_port 3028 }
+
+sql_backends_prod:
+  description: |
+    PROD De1
+    Maps frontend ports (3000+) to specific SQL backends
+  order: 50
+  actions:
+    - use_backend de1wpreadonly401l1-wisegrid-net if { dst_port 3006 }
+    - use_backend de1wpreadonly402l1-wisegrid-net if { dst_port 3007 }
+    - use_backend de1wpreadonly403l1-wisegrid-net if { dst_port 3008 }
+    - use_backend de1wpreadonly404l1-wisegrid-net if { dst_port 3009 }
+    - use_backend de1wpreadonly405l1-wisegrid-net if { dst_port 3010 }
+    - use_backend de1wpreadonly406l1-wisegrid-net if { dst_port 3011 }
+    - use_backend de1wpreadonly407l1-wisegrid-net if { dst_port 3012 }
+    - use_backend de1wpreadonly408l1-wisegrid-net if { dst_port 3013 }
+    - use_backend de1wpreadonly409l1-wisegrid-net if { dst_port 3014 }
+    - use_backend de1wpreadonly410l1-wisegrid-net if { dst_port 3015 }
+    - use_backend de1wpreadonly411l1-wisegrid-net if { dst_port 3016 }
+    - use_backend de1wpreadonly412l1-wisegrid-net if { dst_port 3018 }
+    - use_backend de1wpreadonly413l1-wisegrid-net if { dst_port 3019 }
+    - use_backend de1wpreadonly414l1-wisegrid-net if { dst_port 3020 }
+    - use_backend de1wpreadonly415l1-wisegrid-net if { dst_port 3021 }
+    - use_backend de1wpreadonly416l1-wisegrid-net if { dst_port 3022 }
+    - use_backend de1wpreadonly417l1-wisegrid-net if { dst_port 3023 }
+    - use_backend de1wpreadonly418l1-wisegrid-net if { dst_port 3024 }
+    - use_backend de1wpreadonly419l1-wisegrid-net if { dst_port 3025 }
+    - use_backend de1wpreadonly420l1-wisegrid-net if { dst_port 3026 }

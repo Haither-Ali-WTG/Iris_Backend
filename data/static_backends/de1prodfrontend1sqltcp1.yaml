@@ -1,0 +1,267 @@
+---
+# KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+### TEST DE1
+
+de1wtreadonly401l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly401l1
+      ip: 10.3.133.14
+      port: 1433
+
+de1wtreadonly402l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly402l1
+      ip: 10.3.133.18
+      port: 1433
+
+de1wtreadonly403l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly403l1
+      ip: 10.3.133.22
+      port: 1433
+
+de1wtreadonly404l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly404l1
+      ip: 10.3.133.26
+      port: 1433
+
+de1wtreadonly405l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly405l1
+      ip: 10.3.133.30
+      port: 1433
+
+de1wtreadonly406l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly406l1
+      ip: 10.3.133.34
+      port: 1433
+
+de1wtreadonly407l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly407l1
+      ip: 10.3.133.38
+      port: 1433
+
+de1wtreadonly408l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly408l1
+      ip: 10.3.133.42
+      port: 1433
+
+de1wtreadonly409l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wtreadonly409l1
+      ip: 10.3.133.46
+      port: 1433
+
+### PROD DE1
+
+de1wpreadonly401l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly401l1
+      ip: 10.3.134.14
+      port: 1433
+
+de1wpreadonly402l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly402l1
+      ip: 10.3.134.18
+      port: 1433
+
+de1wpreadonly403l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly403l1
+      ip: 10.3.134.22
+      port: 1433
+
+de1wpreadonly404l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly404l1
+      ip: 10.3.134.26
+      port: 1433
+
+de1wpreadonly405l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly405l1
+      ip: 10.3.134.30
+      port: 1433
+
+de1wpreadonly406l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly406l1
+      ip: 10.3.134.34
+      port: 1433
+
+de1wpreadonly407l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly407l1
+      ip: 10.3.134.38
+      port: 1433
+
+de1wpreadonly408l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly408l1
+      ip: 10.3.134.42
+      port: 1433
+
+de1wpreadonly409l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly409l1
+      ip: 10.3.134.46
+      port: 1433
+
+de1wpreadonly410l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly410l1
+      ip: 10.3.134.50
+      port: 1433
+
+de1wpreadonly411l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly411l1
+      ip: 10.3.134.54
+      port: 1433
+
+de1wpreadonly412l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly412l1
+      ip: 10.3.134.58
+      port: 1433
+
+de1wpreadonly413l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly413l1
+      ip: 10.3.134.62
+      port: 1433
+
+de1wpreadonly414l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly414l1
+      ip: 10.3.134.66
+      port: 1433
+
+de1wpreadonly415l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly415l1
+      ip: 10.3.134.70
+      port: 1433
+
+de1wpreadonly416l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly416l1
+      ip: 10.3.134.75
+      port: 1433
+
+de1wpreadonly417l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly417l1
+      ip: 10.3.134.79
+      port: 1433
+
+de1wpreadonly418l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly418l1
+      ip: 10.3.134.83
+      port: 1433
+
+de1wpreadonly419l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly419l1
+      ip: 10.3.134.87
+      port: 1433
+
+de1wpreadonly420l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly420l1
+      ip: 10.3.134.91
+      port: 1433
