@@ -23,7 +23,7 @@ variables:
 
 stages:
   - stage: Simulations
-    pool: cicd
+    pool: cicd-v2
     jobs:
       - job: Simulation
         steps:
