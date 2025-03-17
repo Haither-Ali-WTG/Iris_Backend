@@ -7,12 +7,12 @@ variables:
   # b6a301a7c64dff677ddc5ac9c91fe0bd14c2d8d6
   dante_build_id: '1282061'
 
-  # virgil 20250317.5
-  # Mon Mar 17 00:43:39 UTC 2025 -- Mon Mar 17 11:43:39 AEDT 2025
+  # virgil 20250317.9
+  # Mon Mar 17 02:01:10 UTC 2025 -- Mon Mar 17 13:01:10 AEDT 2025
   #
-  # Merged PR 33731: change au2-apex21/22 uplinks from leaf1/2 to leaf3/4
-  # 40078a3eba4c3285fdbdfbd99238169e32657490
-  virgil_build_id: '1282022'
+  # Merged PR 33742: [CS01884795] Add additional qs needed from the new update to this ticket
+  # f2ef4e2577a5d1dac6ecc787cdfbd22cb283e28c
+  virgil_build_id: '1282113'
 
   # sqlbilling 20250314.7
   # Fri Mar 14 10:08:06 UTC 2025 -- Fri Mar 14 21:08:06 AEDT 2025
