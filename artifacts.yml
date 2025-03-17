@@ -7,16 +7,16 @@ variables:
   # f3ed43de4a79c674ae939520f7052e9c37264bd1
   dante_build_id: '1282384'
 
-  # virgil 20250317.14
-  # Mon Mar 17 05:51:55 UTC 2025 -- Mon Mar 17 16:51:55 AEDT 2025
+  # virgil 20250318.2
+  # Mon Mar 17 22:14:52 UTC 2025 -- Tue Mar 18 09:14:52 AEDT 2025
   #
-  # Merged PR 33762: Virgil - Put C-00081 on demand, fix looks like it's not going to be any time soon
-  # 2ecbaf0adb18718ce0207c39e9bb24a233cc18cc
-  virgil_build_id: '1282314'
+  # Merge pull request 33781 from virgil_python_upgrade into master
+  # 468e34830fd08f5177585974b3d86066a080f516
+  virgil_build_id: '1282955'
 
-  # sqlbilling 20250314.7
-  # Fri Mar 14 10:08:06 UTC 2025 -- Fri Mar 14 21:08:06 AEDT 2025
+  # sqlbilling 20250318.1
+  # Mon Mar 17 14:17:24 UTC 2025 -- Tue Mar 18 01:17:24 AEDT 2025
   #
-  # Merged PR 33688: bad-ipsOverrideCS01890353.yml
-  # 31137c7b52554af8f295f1ad59db9d6eb642829f
-  sqlbilling_build_id: '1279668'
+  # Merged PR 33716: SQLBillingAddCS01892257
+  # b2c472fa4eb53ec80b17db310c9e9ed752ae2775
+  sqlbilling_build_id: '1282662'
