@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250313.3
-  # Thu Mar 13 02:03:55 UTC 2025 -- Thu Mar 13 13:03:55 AEDT 2025
+  # Dante Build Artifact 20250317.1
+  # Mon Mar 17 01:21:15 UTC 2025 -- Mon Mar 17 12:21:15 AEDT 2025
   #
-  # Merged PR 33662: Migrate Pipelines to cicd-v2 agent pool
-  # 18ed3be8e7c062e779ce566dcabe305b9ff40338
-  dante_build_id: '1278342'
+  # Merge pull request 33723 from dante_artifact_upgrade into master
+  # b6a301a7c64dff677ddc5ac9c91fe0bd14c2d8d6
+  dante_build_id: '1282061'
 
   # virgil 20250317.5
   # Mon Mar 17 00:43:39 UTC 2025 -- Mon Mar 17 11:43:39 AEDT 2025
