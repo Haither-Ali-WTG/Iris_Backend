@@ -462,3 +462,17 @@ devtools-submissions-test.sand.wtg.zone:
     - name: au2sp-sdvt-402
       ip: 10.2.118.71
       port: 80
+
+cibr-staging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
