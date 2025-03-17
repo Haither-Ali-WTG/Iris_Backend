@@ -7,16 +7,16 @@ variables:
   # 18ed3be8e7c062e779ce566dcabe305b9ff40338
   dante_build_id: '1278342'
 
-  # virgil 20250313.14
-  # Wed Mar 12 23:25:40 UTC 2025 -- Thu Mar 13 10:25:40 AEDT 2025
+  # virgil 20250317.5
+  # Mon Mar 17 00:43:39 UTC 2025 -- Mon Mar 17 11:43:39 AEDT 2025
   #
-  # Merged PR 33653: Add vlan1029 on au2-apex23/24
-  # cf150589b07c93d1012722afa7de129f8a5728d9
-  virgil_build_id: '1278153'
+  # Merged PR 33731: change au2-apex21/22 uplinks from leaf1/2 to leaf3/4
+  # 40078a3eba4c3285fdbdfbd99238169e32657490
+  virgil_build_id: '1282022'
 
-  # sqlbilling 20250313.5
-  # Thu Mar 13 01:05:05 UTC 2025 -- Thu Mar 13 12:05:05 AEDT 2025
+  # sqlbilling 20250314.7
+  # Fri Mar 14 10:08:06 UTC 2025 -- Fri Mar 14 21:08:06 AEDT 2025
   #
-  # Merged PR 33669: Update Readonly billing
-  # b507ddf8f7d76c03d0e0beb72af9c91fd9c143ed
-  sqlbilling_build_id: '1278295'
+  # Merged PR 33688: bad-ipsOverrideCS01890353.yml
+  # 31137c7b52554af8f295f1ad59db9d6eb642829f
+  sqlbilling_build_id: '1279668'
