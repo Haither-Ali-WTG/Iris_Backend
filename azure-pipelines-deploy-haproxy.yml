@@ -20,16 +20,16 @@ parameters:
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-      - agent_dc: DE1
-        agent_hall: A
-        s3_host: de1s3-2.wtg.ws
-        s3_iris_bucket: s3://de-iscore-iris-prod-1/
-        pure_usernames: de-iscore-iris-prod-1-rw
-      - agent_dc: US2
-        agent_hall: A
-        s3_host: us2s3-2.wtg.ws
-        s3_iris_bucket: s3://us-iscore-iris-prod-1/
-        pure_usernames: us-iscore-iris-prod-1-rw
+      # - agent_dc: DE1
+      #   agent_hall: A
+      #   s3_host: de1s3-2.wtg.ws
+      #   s3_iris_bucket: s3://de-iscore-iris-prod-1/
+      #   pure_usernames: de-iscore-iris-prod-1-rw
+      # - agent_dc: US2
+      #   agent_hall: A
+      #   s3_host: us2s3-2.wtg.ws
+      #   s3_iris_bucket: s3://us-iscore-iris-prod-1/
+      #   pure_usernames: us-iscore-iris-prod-1-rw
 
 stages:
   - ${{ each run in parameters.matrix }}:
@@ -64,9 +64,10 @@ stages:
                         pip install -r requirements.txt
                       displayName: 'Install requirements'
 
+                        # test "$(Build.SourceBranchName)" = "master"
+
                     - script: |
                         set -euxo pipefail
-                        test "$(Build.SourceBranchName)" = "master"
                         cp ansible/ansible.cfg .
                       displayName: 'Prepare to run playbooks'
 
@@ -95,38 +96,38 @@ stages:
                         SecretsFilter: secretAppIdDf4b4604e176
                         RunAsPreJob: false
 
-                    - task: Ansible@0
-                      displayName: 'Check and save certificates'
-                      inputs:
-                        ansibleInterface: 'agentMachine'
-                        playbookPathOnAgentMachine: 'ansible/check_and_save_certificates_cms.yml'
-                        inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'data/instances'
-                        failOnStdErr: false
-                        args: >-
-                          -u $(user) --diff
-                          -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                          -e="intermediate=false" -e="s3_host=${{ run.s3_host }}"
-                          -e="pure_usernames='${{ run.pure_usernames }}'"
-                          -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
-                          -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
-                          -e "{use_cache: $(cms_use_cache)}"
-                          -e="target_dc=${{ run.agent_dc }}"
-                      env:
-                        secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+                    # - task: Ansible@0
+                    #   displayName: 'Check and save certificates'
+                    #   inputs:
+                    #     ansibleInterface: 'agentMachine'
+                    #     playbookPathOnAgentMachine: 'ansible/check_and_save_certificates_cms.yml'
+                    #     inventoriesAgentMachine: 'file'
+                    #     inventoryFileOnAgentMachine: 'data/instances'
+                    #     failOnStdErr: false
+                    #     args: >-
+                    #       -u $(user) --diff
+                    #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                    #       -e="intermediate=false" -e="s3_host=${{ run.s3_host }}"
+                    #       -e="pure_usernames='${{ run.pure_usernames }}'"
+                    #       -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
+                    #       -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
+                    #       -e "{use_cache: $(cms_use_cache)}"
+                    #       -e="target_dc=${{ run.agent_dc }}"
+                    #   env:
+                    #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-                    - task: DownloadPipelineArtifact@2
-                      displayName: 'Download sqlbilling artifacts for ACL'
-                      inputs:
-                        buildType: 'specific'
-                        project: 'ISOperations'
-                        # https://dev.azure.com/WTGOps/ISOperations/_build?definitionId=239
-                        pipeline: 239
-                        artifact: sqlbilling
-                        buildVersionToDownload: 'specific'
-                        buildId: '$(sqlbilling_build_id)'
-                        path: $(Build.SourcesDirectory)/sqlbilling_acl
-                        patterns: 'acl/*.acl'
+                    # - task: DownloadPipelineArtifact@2
+                    #   displayName: 'Download sqlbilling artifacts for ACL'
+                    #   inputs:
+                    #     buildType: 'specific'
+                    #     project: 'ISOperations'
+                    #     # https://dev.azure.com/WTGOps/ISOperations/_build?definitionId=239
+                    #     pipeline: 239
+                    #     artifact: sqlbilling
+                    #     buildVersionToDownload: 'specific'
+                    #     buildId: '$(sqlbilling_build_id)'
+                    #     path: $(Build.SourcesDirectory)/sqlbilling_acl
+                    #     patterns: 'acl/*.acl'
 
                     - task: Ansible@0
                       displayName: 'Deploy haproxy'
@@ -152,28 +153,28 @@ stages:
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-                    - task: Ansible@0
-                      displayName: 'Check the instances to be torn down'
-                      inputs:
-                        ansibleInterface: 'agentMachine'
-                        playbookPathOnAgentMachine: 'ansible/teardown_haproxy.yml'
-                        inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'data/instances'
-                        failOnStdErr: false
-                        args: >-
-                          -u $(user) --diff
-                          -e="simulation="
-                          -e="{instance_teardown_allowed: $(instance_teardown_allowed)}"
-                          -e="target_dc=${{ run.agent_dc }}"
-                      env:
-                        secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+                    # - task: Ansible@0
+                    #   displayName: 'Check the instances to be torn down'
+                    #   inputs:
+                    #     ansibleInterface: 'agentMachine'
+                    #     playbookPathOnAgentMachine: 'ansible/teardown_haproxy.yml'
+                    #     inventoriesAgentMachine: 'file'
+                    #     inventoryFileOnAgentMachine: 'data/instances'
+                    #     failOnStdErr: false
+                    #     args: >-
+                    #       -u $(user) --diff
+                    #       -e="simulation="
+                    #       -e="{instance_teardown_allowed: $(instance_teardown_allowed)}"
+                    #       -e="target_dc=${{ run.agent_dc }}"
+                    #   env:
+                    #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-                    - task: Ansible@0
-                      displayName: 'Check site collection result'
-                      inputs:
-                        ansibleInterface: 'agentMachine'
-                        playbookPathOnAgentMachine: 'ansible/check_collection_result.yml'
-                        inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'data/instances'
-                        args: >-
-                          -u $(user) --diff
+                    # - task: Ansible@0
+                    #   displayName: 'Check site collection result'
+                    #   inputs:
+                    #     ansibleInterface: 'agentMachine'
+                    #     playbookPathOnAgentMachine: 'ansible/check_collection_result.yml'
+                    #     inventoriesAgentMachine: 'file'
+                    #     inventoryFileOnAgentMachine: 'data/instances'
+                    #     args: >-
+                    #       -u $(user) --diff
