@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250318.1
-  # Mon Mar 17 23:01:39 UTC 2025 -- Tue Mar 18 10:01:39 AEDT 2025
+  # Dante Build Artifact 20250318.2
+  # Tue Mar 18 01:16:20 UTC 2025 -- Tue Mar 18 12:16:20 AEDT 2025
   #
-  # Merge pull request 33787 from dante_artifact_upgrade into master
-  # 7586daebee723a1d557752c8ac7c337c5833e62c
-  dante_build_id: '1283012'
+  # Merged PR 33805: Removed double setup of virtual bridge which led to kvm dhcp issues
+  # 072ff154386a19772b58993cb4a1a220bcacb917
+  dante_build_id: '1283159'
 
   # virgil 20250318.7
   # Tue Mar 18 00:33:43 UTC 2025 -- Tue Mar 18 11:33:43 AEDT 2025
