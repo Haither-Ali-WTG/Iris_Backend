@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250318.3
-  # Tue Mar 18 02:01:38 UTC 2025 -- Tue Mar 18 13:01:38 AEDT 2025
+  # Dante Build Artifact 20250318.4
+  # Tue Mar 18 04:59:18 UTC 2025 -- Tue Mar 18 15:59:18 AEDT 2025
   #
-  # Merge pull request 33800 from dante_artifact_upgrade into master
-  # b407d21a08b72756e3012fb18dcad6755fc3d86c
-  dante_build_id: '1283218'
+  # Merged PR 33820: Deleted azure-pipelines-update-xt-s3-cv-subclients.yml
+  # c2691ec0586e9dcdffbf915a27111a4b1eec6097
+  dante_build_id: '1283372'
 
   # virgil 20250318.7
   # Tue Mar 18 00:33:43 UTC 2025 -- Tue Mar 18 11:33:43 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 2577efb579930f800db13c8a4dba4056fbdb32d7
   virgil_build_id: '1283116'
 
-  # sqlbilling 20250318.2
-  # Mon Mar 17 23:12:08 UTC 2025 -- Tue Mar 18 10:12:08 AEDT 2025
+  # sqlbilling 20250318.3
+  # Tue Mar 18 04:01:06 UTC 2025 -- Tue Mar 18 15:01:06 AEDT 2025
   #
-  # Use "cicd-v2" pool
-  # f2a20f0ed187300ecab92a0ad092564a0a8e8382
-  sqlbilling_build_id: '1283023'
+  # Merged PR 33776: RTL-SQLBilling-CS01905615,CS01906464
+  # 5b4e3ec38fef139f29ee7a8680ebd2e362a4246e
+  sqlbilling_build_id: '1283343'
