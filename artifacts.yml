@@ -7,16 +7,16 @@ variables:
   # 7586daebee723a1d557752c8ac7c337c5833e62c
   dante_build_id: '1283012'
 
-  # virgil 20250318.2
-  # Mon Mar 17 22:14:52 UTC 2025 -- Tue Mar 18 09:14:52 AEDT 2025
+  # virgil 20250318.7
+  # Tue Mar 18 00:33:43 UTC 2025 -- Tue Mar 18 11:33:43 AEDT 2025
   #
-  # Merge pull request 33781 from virgil_python_upgrade into master
-  # 468e34830fd08f5177585974b3d86066a080f516
-  virgil_build_id: '1282955'
+  # Merged PR 33358: Comment on code with consoles
+  # 2577efb579930f800db13c8a4dba4056fbdb32d7
+  virgil_build_id: '1283116'
 
-  # sqlbilling 20250318.1
-  # Mon Mar 17 14:17:24 UTC 2025 -- Tue Mar 18 01:17:24 AEDT 2025
+  # sqlbilling 20250318.2
+  # Mon Mar 17 23:12:08 UTC 2025 -- Tue Mar 18 10:12:08 AEDT 2025
   #
-  # Merged PR 33716: SQLBillingAddCS01892257
-  # b2c472fa4eb53ec80b17db310c9e9ed752ae2775
-  sqlbilling_build_id: '1282662'
+  # Use "cicd-v2" pool
+  # f2a20f0ed187300ecab92a0ad092564a0a8e8382
+  sqlbilling_build_id: '1283023'
