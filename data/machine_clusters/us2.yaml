@@ -11,7 +11,7 @@ us2-prod-frontend-1:
       preempt: false
       virtual_router_id: 12
       priority: [us2lbl00384, us2lbl00385, us2lbl00386]
-    - description: ediProd RDP (CORP)
+    - description: SQL Readonly
       ip: 10.4.64.136
       vlan: 1064
       preempt: false
