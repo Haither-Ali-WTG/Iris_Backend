@@ -2,7 +2,7 @@
 # TODO figure out how to spread the definition over multiple files
 clustered_instances:
   hosts:
-    us2prodfrontend1sqltcp1:
+    us2prodfrontend1sqltcp9:
       dc: US2
       defaults:
         mode: tcp
