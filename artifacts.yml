@@ -7,16 +7,16 @@ variables:
   # 43d71eb9a51b6de2b8d4d02dba7334e2fea4ca69
   dante_build_id: '1284492'
 
-  # virgil 20250319.2
-  # Tue Mar 18 22:56:19 UTC 2025 -- Wed Mar 19 09:56:19 AEDT 2025
+  # virgil 20250320.3
+  # Wed Mar 19 21:21:35 UTC 2025 -- Thu Mar 20 08:21:35 AEDT 2025
   #
-  # Merged PR 33851: Replace us2eve00322 mainboard
-  # 76d3501965857fa33895082835f9bb0dfa9d4fc8
-  virgil_build_id: '1284140'
+  # Merged PR 33887: Apex29/30, swp{5..12,17,18,19} remove LACP at downstream ports
+  # 14372dd95ca707a159eb1e16d73fab2e7e717613
+  virgil_build_id: '1285126'
 
-  # sqlbilling 20250319.3
-  # Wed Mar 19 00:28:21 UTC 2025 -- Wed Mar 19 11:28:21 AEDT 2025
+  # sqlbilling 20250320.1
+  # Wed Mar 19 13:19:54 UTC 2025 -- Thu Mar 20 00:19:54 AEDT 2025
   #
-  # Merged PR 33861: Updated au2-prod-frontend-1.yml
-  # ff915b56fbca0b5c823a54a3a42cde8fe8b1cf34
-  sqlbilling_build_id: '1284243'
+  # Merged PR 33886: SQLBillingAddCS01908674
+  # d9cf32c0e3e68352e7d0c62983f85ef0a6d05b3a
+  sqlbilling_build_id: '1284809'
