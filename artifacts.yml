@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250319.2
-  # Wed Mar 19 05:39:32 UTC 2025 -- Wed Mar 19 16:39:32 AEDT 2025
+  # Dante Build Artifact 20250320.1
+  # Wed Mar 19 22:02:04 UTC 2025 -- Thu Mar 20 09:02:04 AEDT 2025
   #
-  # Merged PR 33854: Hardware - Add support for new C431 node in dante
-  # 43d71eb9a51b6de2b8d4d02dba7334e2fea4ca69
-  dante_build_id: '1284492'
+  # Merge pull request 33893 from dante_artifact_upgrade into master
+  # c0ff054c6e93deae6d9ed094157224006f5bf8d1
+  dante_build_id: '1285174'
 
-  # virgil 20250320.3
-  # Wed Mar 19 21:21:35 UTC 2025 -- Thu Mar 20 08:21:35 AEDT 2025
+  # virgil 20250320.7
+  # Wed Mar 19 22:01:27 UTC 2025 -- Thu Mar 20 09:01:27 AEDT 2025
   #
-  # Merged PR 33887: Apex29/30, swp{5..12,17,18,19} remove LACP at downstream ports
-  # 14372dd95ca707a159eb1e16d73fab2e7e717613
-  virgil_build_id: '1285126'
+  # Merged PR 33889: Add registry dns entries
+  # 76dfadc337312186772ec55008f2f8bb5d9427d1
+  virgil_build_id: '1285172'
 
   # sqlbilling 20250320.1
   # Wed Mar 19 13:19:54 UTC 2025 -- Thu Mar 20 00:19:54 AEDT 2025
