@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250319.1
-  # Tue Mar 18 23:41:13 UTC 2025 -- Wed Mar 19 10:41:13 AEDT 2025
+  # Dante Build Artifact 20250319.2
+  # Wed Mar 19 05:39:32 UTC 2025 -- Wed Mar 19 16:39:32 AEDT 2025
   #
-  # Merge pull request 33855 from dante_artifact_upgrade into master
-  # b00b5b2fcc9b8164f24ef687f028e15abfc39183
-  dante_build_id: '1284190'
+  # Merged PR 33854: Hardware - Add support for new C431 node in dante
+  # 43d71eb9a51b6de2b8d4d02dba7334e2fea4ca69
+  dante_build_id: '1284492'
 
   # virgil 20250319.2
   # Tue Mar 18 22:56:19 UTC 2025 -- Wed Mar 19 09:56:19 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 76d3501965857fa33895082835f9bb0dfa9d4fc8
   virgil_build_id: '1284140'
 
-  # sqlbilling 20250319.1
-  # Tue Mar 18 13:19:07 UTC 2025 -- Wed Mar 19 00:19:07 AEDT 2025
+  # sqlbilling 20250319.3
+  # Wed Mar 19 00:28:21 UTC 2025 -- Wed Mar 19 11:28:21 AEDT 2025
   #
-  # Merged PR 33847: Updated SQL billing for DE1
-  # 76ca3fb7274d0eed6f82d120fe476d0cc5ed4a41
-  sqlbilling_build_id: '1283774'
+  # Merged PR 33861: Updated au2-prod-frontend-1.yml
+  # ff915b56fbca0b5c823a54a3a42cde8fe8b1cf34
+  sqlbilling_build_id: '1284243'
