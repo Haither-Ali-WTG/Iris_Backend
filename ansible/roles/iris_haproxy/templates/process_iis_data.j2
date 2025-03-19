@@ -1,4 +1,7 @@
 {% set warnings = [] %}
+{% if clustered_instance_names | default([]) | length == 0 %}
+clustered_instances: {}
+{% else %}
 clustered_instances:
 {% for clustered_instance in clustered_instance_names if hostvars[clustered_instance]['iis_servers'] | default([]) | length > 0 %}
   {{ clustered_instance }}:
@@ -35,4 +38,5 @@ clustered_instances:
 {%    endif %}
 {%  endfor %}
 {% endfor %}
+{% endif %}
 warnings: {{ warnings | to_json }}
