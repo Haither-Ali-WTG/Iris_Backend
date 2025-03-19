@@ -112,8 +112,8 @@ clustered_instances:
           ssl: [2008]
       machine_cluster: au2-sand-internal-1
       iis_servers:
-        - au2sp-tweb-403a.sand.wtg.zone
-        - au2sp-tweb-403b.sand.wtg.zone
+        # - au2sp-tweb-403a.sand.wtg.zone
+        # - au2sp-tweb-403b.sand.wtg.zone
         - au2wp-stst-182.wisecloud.zone
         # - au2sp-tweb-404a.sand.wtg.zone
         # - au2sp-tweb-404b.sand.wtg.zone
@@ -121,7 +121,7 @@ clustered_instances:
         # - au2sp-tweb-405b.sand.wtg.zone
         # - au2sp-sweb-406a.sand.wtg.zone
         # - au2sp-sweb-407.sand.wtg.zone
-      iis_user: s_lbwinrmquerier122@sand.wtg.zone
+      iis_user: s_lbwinrmquerier
       websites_config: websites_internal.yml
       certificates:
         - star-wisetechglobal-com
