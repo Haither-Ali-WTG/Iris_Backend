@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250320.1
-  # Wed Mar 19 22:02:04 UTC 2025 -- Thu Mar 20 09:02:04 AEDT 2025
+  # Dante Build Artifact 20250320.2
+  # Wed Mar 19 23:02:10 UTC 2025 -- Thu Mar 20 10:02:10 AEDT 2025
   #
-  # Merge pull request 33893 from dante_artifact_upgrade into master
-  # c0ff054c6e93deae6d9ed094157224006f5bf8d1
-  dante_build_id: '1285174'
+  # Merge pull request 33905 from dante_artifact_upgrade into master
+  # 246d0dba86d45b782d284c22f5365c5d376fb86d
+  dante_build_id: '1285261'
 
-  # virgil 20250320.7
-  # Wed Mar 19 22:01:27 UTC 2025 -- Thu Mar 20 09:01:27 AEDT 2025
+  # virgil 20250320.11
+  # Wed Mar 19 22:23:16 UTC 2025 -- Thu Mar 20 09:23:16 AEDT 2025
   #
-  # Merged PR 33889: Add registry dns entries
-  # 76dfadc337312186772ec55008f2f8bb5d9427d1
-  virgil_build_id: '1285172'
+  # Merged PR 33874: add au2 bunker haproxy nodes to Virgil
+  # d86ede203a32880aff6a4a303944f70279a2a4e4
+  virgil_build_id: '1285211'
 
   # sqlbilling 20250320.1
   # Wed Mar 19 13:19:54 UTC 2025 -- Thu Mar 20 00:19:54 AEDT 2025
