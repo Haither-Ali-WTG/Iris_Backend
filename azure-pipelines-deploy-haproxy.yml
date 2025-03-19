@@ -43,10 +43,10 @@ stages:
         dependsOn: []
         jobs:
           - deployment: Deploy_Haproxy_${{ run.agent_dc }}
-            condition: or(eq('${{ run.agent_dc }}', variables['dc']), eq(variables['dc'], 'all'))
+            # condition: or(eq('${{ run.agent_dc }}', variables['dc']), eq(variables['dc'], 'all'))
             # environment: iris_${{ run.agent_dc }}_pipeline_lock
-            workspace:
-              clean: all
+            # workspace:
+            #   clean: all
             strategy:
               runOnce:
                 deploy:
