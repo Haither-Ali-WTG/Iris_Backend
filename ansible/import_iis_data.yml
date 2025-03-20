@@ -28,6 +28,10 @@
         recurse: yes
       register: iis_files
 
+    - name: Output all files
+      debug:
+        var: iis_files
+
     - name: Find all clustered_instances
       ansible.builtin.find:
         paths: "{{ temp_path.path }}"
