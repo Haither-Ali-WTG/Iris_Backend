@@ -12,7 +12,7 @@
 
 - name: Process IIS list
   debug:
-    var: "{{ vars['iis_user' + item.key.split('iis_servers') | last | trim] }}"
+    msg: "{{ vars['iis_user' + item.key.split('iis_servers') | last | trim] }}"
   # vars:
   #   iis_user: "{{ vars['iis_user' + item.key.split('iis_servers') | last] }}"
   #   iis_servers: "{{ item.value }}"
