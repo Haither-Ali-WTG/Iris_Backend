@@ -18,6 +18,8 @@ clustered_instance:
                          required=False)
   iis_servers: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=True)
   iis_user: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
+  iis_servers_local: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=False)
+  iis_user_local: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
   certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=True)
   sqlbilling_acl: list(include('sqlbilling_acl_settings'), name='ACL settings for sqlbilling', required=False)
