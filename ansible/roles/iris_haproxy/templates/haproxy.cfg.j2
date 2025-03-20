@@ -20,7 +20,7 @@ daemon
 nbproc will be removed from configuration after next haproxy upgrades
 which are likely to be higher than 3.0.8
 #}
-{% if container.haproxy_image_tag != "3.0.8" %}
+{% if container.haproxy_image_tag in ['2.4.19-bullseye', '2.4.25-bookworm'] %}
 nbproc {{ global_.processes | default(1) }}
 {% endif %}
 nbthread {{ global_.threads | default(8) }}
