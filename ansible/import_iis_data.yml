@@ -28,10 +28,6 @@
         recurse: yes
       register: iis_files
 
-    - name: Output all files
-      debug:
-        var: iis_files
-
     - name: Find all clustered_instances
       ansible.builtin.find:
         paths: "{{ temp_path.path }}"
@@ -63,10 +59,6 @@
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
-
-    - name: Print IIS data
-      debug:
-        var: complete_iis_data
 
     - name: Show warnings
       debug:
