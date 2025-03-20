@@ -6,6 +6,6 @@
 - name: Process IIS list
   include_tasks: process_iis_list.yml
   vars:
-    iis_user: "{{ 'iis_user' + item.key.split('iis_servers') | last }}"
+    iis_user: "{{ vars['iis_user' + item.key.split('iis_servers') | last] }}"
     iis_servers: "{{ item.value }}"
   loop: "{{ iis_servers_vars }}"
