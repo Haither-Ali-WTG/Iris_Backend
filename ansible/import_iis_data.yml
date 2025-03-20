@@ -64,6 +64,10 @@
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
+    - name: Print IIS data
+      debug:
+        var: complete_iis_data
+
     - name: Show warnings
       debug:
         var: complete_iis_data.warnings
