@@ -39,8 +39,6 @@ stages:
           demands:
             - WTG_DC -equals ${{ run.agent_dc }}
             - WTG_HALL -equals ${{ run.agent_hall }}
-        lockBehavior: sequential
-        dependsOn: []
         jobs:
           - job: Deploy_Haproxy_${{ run.agent_dc }}
             steps:
