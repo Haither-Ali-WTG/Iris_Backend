@@ -1,0 +1,63 @@
+---
+- name: "Get password from key vault for user {{ iis_user_process }}"
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+    apply:
+      delegate_to: localhost
+  vars:
+    azure_kv_name: "{{ key_vault_name }}"
+    # username must have "_" by Domain policy, however key vault supports only '-'
+    # we also omit domain when looking for key vault value
+    azure_kv_secret_name: "{{ iis_user_process | replace('_', '-') | split('@') | first }}"
+  when: iis_servers | default([]) | length > 0
+
+- name: "Collect sites data via winrm for {{ inventory_hostname }}"
+  changed_when: true
+  delegate_to: localhost
+  command: >
+        python3 {{ playbook_dir }}/roles/collect_sites/files/collect_sites_data.py
+        --server_list {{ iis_servers | join(',') }}
+        --user_name {{ iis_user_process }}
+        --password {{ return_secret_value }}
+        --output_path iis_sites/{{ inventory_hostname }}
+  register: collect_sites_data_output
+  when: iis_servers | default([]) | length > 0
+
+- name: Create failed_collection directory
+  delegate_to: localhost
+  file:
+    dest: failed_collection
+    state: directory
+    mode: u=rwx,go=
+
+- name: Save failed collection result to file
+  delegate_to: localhost
+  copy:
+    content: "{{ collect_sites_data_output.stdout }}"
+    dest: "failed_collection/{{ inventory_hostname }}"
+    mode: u=rw,go=
+  when:
+    - collect_sites_data_output is defined
+    - (collect_sites_data_output.stdout | from_json).has_errors
+
+- name: Output collect sites data output
+  vars:
+    info:
+      log: "{{ collect_sites_data_output.stderr_lines }}"
+      result: "{{ collect_sites_data_output.stdout | from_json }}"
+  debug:
+    var: info
+  when: collect_sites_data_output is not skipped
+
+- name: Upload IIS data to S3
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp --recursive
+    iis_sites/{{ inventory_hostname }} {{ s3_iris_bucket }}{{ inventory_hostname }}
+  changed_when: true
+  delegate_to: localhost
+  when:
+    - collect_sites_data_output is defined
+    - (collect_sites_data_output.stdout | from_json).wrote_files
+    - upload_iis_data | default(true)
