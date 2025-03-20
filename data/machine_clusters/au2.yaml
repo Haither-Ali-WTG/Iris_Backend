@@ -74,3 +74,15 @@ au2-sand-internal-1:
       preempt: true
       virtual_router_id: 102
       priority: [au2lbl00417, au2lbl00416]
+
+au2-prod-elastic-bunker-1:
+  machines:
+    au2lbl00951: ~
+    au2lbl00952: ~
+  floating_ips:
+    - description: Elastic bunker Proxy (PROD)
+      ip: 10.2.245.115
+      vlan: 1245
+      preempt: false
+      virtual_router_id: 103
+      priority: [au2lbl00951, au2lbl00952]

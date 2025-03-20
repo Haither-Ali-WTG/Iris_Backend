@@ -1,0 +1,6 @@
+---
+elastic_src:
+  description: these subnets belong Elastic Servers in AU2
+  tests:
+    - src 10.2.58.0/24
+    - src 10.2.59.0/24
