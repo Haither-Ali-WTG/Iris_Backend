@@ -3,7 +3,7 @@ clustered_instances:
 {% for clustered_instance in clustered_instance_names if (hostvars[clustered_instance]['iis_servers'] | default([]) | length > 0 or hostvars[clustered_instance]['iis_servers_local'] | default([]) | length > 0) %}
   {{ clustered_instance }}:
 {%  for file in iis_files %}
-{%    if clustered_instance in (file | split('/')) and ((file | split('/') | last) in hostvars[clustered_instance]['iis_servers'] or (file | split('/') | last) in hostvars[clustered_instance]['iis_servers_local'] ) %}
+{%    if clustered_instance in (file | split('/')) and ((file | split('/') | last) in hostvars[clustered_instance]['iis_servers'] or (file | split('/') | last) in hostvars[clustered_instance]['iis_servers_local'] | default([]) ) %}
 {%      set server = file | split('/') | last %}
     {{ server }}:
 {%      set file_content = lookup('file', file) | from_yaml %}
