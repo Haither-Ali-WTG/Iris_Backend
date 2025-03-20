@@ -41,3 +41,13 @@ machines:
       os: ubuntu2404
       dc: AU2
       os_variant: ubuntu
+    au2lbl00951:
+      ansible_host: 10.2.245.111
+      os: ubuntu2404
+      dc: AU2
+      os_variant: ubuntu
+    au2lbl00952:
+      ansible_host: 10.2.245.112
+      os: ubuntu2404
+      dc: AU2
+      os_variant: ubuntu
