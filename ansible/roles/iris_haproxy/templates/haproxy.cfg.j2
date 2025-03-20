@@ -17,14 +17,10 @@ daemon
 # Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
 # which uses 32 processes (and no nbthread setting).
 
-{% if clustered_instance_name == "au2prodelasticbunker1" %}
+{% if clustered_instance_name != "au2prodelasticbunker1" %}
 {
-# nbproc has been deprecated
-}
-else {
 nbproc {{ global_.processes | default(1) }}  
 }
-
 nbthread {{ global_.threads | default(8) }}
 
 # Logging directive; in some cases, we need to extend the log line length to 4096.
