@@ -17,7 +17,7 @@ daemon
 # Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
 # which uses 32 processes (and no nbthread setting).
 
-{% if clustered_instance_name != "au2prodelasticbunker1" %}
+{% if container.haproxy_image_tag != "3.0.8" %}
 nbproc {{ global_.processes | default(1) }}  
 {% endif %}
 nbthread {{ global_.threads | default(8) }}
