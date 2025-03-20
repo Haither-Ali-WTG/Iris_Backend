@@ -12,7 +12,7 @@
         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
 
 - name: Collect and publish IIS data to S3
-  hosts: au2sandinternal1 #clustered_instances
+  hosts: clustered_instances
   strategy: free
   gather_facts: no
   force_handlers: yes
