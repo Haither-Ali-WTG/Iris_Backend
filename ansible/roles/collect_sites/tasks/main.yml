@@ -1,3 +1,11 @@
 ---
+- name: Find all variables starting with "iis_servers"
+  set_fact:
+    iis_servers_vars: "{{ vars | dict2items | selectattr('key', 'search', '^iis_servers') | list }}"
+
 - name: Process IIS list
   include_tasks: process_iis_list.yml
+  vars:
+    iis_user: "{{ 'iis_user' + item.key.split('iis_servers') | last }}"
+    iis_servers: "{{ item.value }}"
+  loop: "{{ iis_servers_vars }}"
