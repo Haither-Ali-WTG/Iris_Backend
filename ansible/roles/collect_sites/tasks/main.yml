@@ -12,8 +12,8 @@
 
 - name: Process IIS list
   debug:
-    var: iis_user
-  vars:
-    iis_user: "{{ vars['iis_user' + item.key.split('iis_servers') | last] }}"
-    iis_servers: "{{ item.value }}"
+    var: "{{ vars['iis_user' + item.key.split('iis_servers') | last | trim] }}"
+  # vars:
+  #   iis_user: "{{ vars['iis_user' + item.key.split('iis_servers') | last] }}"
+  #   iis_servers: "{{ item.value }}"
   loop: "{{ iis_servers_vars }}"
