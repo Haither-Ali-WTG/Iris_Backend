@@ -2,46 +2,46 @@
 # TODO figure out how to spread the definition over multiple files
 clustered_instances:
   hosts:
-    # au2prodfrontend1prodservices:
-    #   # au2-prod-frontend-1-prod-services
-    #   dc: AU2
-    #   frontend:
-    #     maxconn: 20000
-    #     ports:
-    #       plaintext: [2009]
-    #       ssl: [2010]
-    #   stats:
-    #     ports:
-    #       web: 2031
-    #       socket: 2030
-    #   machine_cluster: au2-prod-frontend-1
-    #   iis_servers: []
-    #   # Key vault secret should be same as username without domain and replacing '_' with '-'
-    #   iis_user: s_lbwinrmquerier
-    #   websites_config: websites.yml
-    #   certificates:
-    #     - star-wisegrid-net
-    #     - star-cargowise-com
-    #     - star-cargowise-net
-    #     - star-borderwise-com
-    #     - star-wisetechacademy-com
-    #     - star-wisetechglobal-com
-    #     - star-webtracker-wisegrid-net
-    #     - star-webcampaign-wisegrid-net
-    #     - star-webprint-wisegrid-net
-    #     - ediweb-oceanbridge-co-nz
-    #     - tracking-bcr-com-au
-    #     - tracking-eplint-com
-    #     - ahwprd-webtracker-carozplus-com
-    #     - webtracking-sila-net-au
-    #     - star-spweb-wisegrid-net
-    #     - tracking-pcfs-com-au
-    #     - star-cfs-wisegrid-net
-    #     - star-cww-wisegrid-net
-    #     - star-cww-nonprd-wisegrid-net
-    #   cipher:
-    #     profiles:
-    #       - best_practice_2023
+    au2prodfrontend1prodservices:
+      # au2-prod-frontend-1-prod-services
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2009]
+          ssl: [2010]
+      stats:
+        ports:
+          web: 2031
+          socket: 2030
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      # Key vault secret should be same as username without domain and replacing '_' with '-'
+      iis_user: s_lbwinrmquerier
+      websites_config: websites.yml
+      certificates:
+        - star-wisegrid-net
+        - star-cargowise-com
+        - star-cargowise-net
+        - star-borderwise-com
+        - star-wisetechacademy-com
+        - star-wisetechglobal-com
+        - star-webtracker-wisegrid-net
+        - star-webcampaign-wisegrid-net
+        - star-webprint-wisegrid-net
+        - ediweb-oceanbridge-co-nz
+        - tracking-bcr-com-au
+        - tracking-eplint-com
+        - ahwprd-webtracker-carozplus-com
+        - webtracking-sila-net-au
+        - star-spweb-wisegrid-net
+        - tracking-pcfs-com-au
+        - star-cfs-wisegrid-net
+        - star-cww-wisegrid-net
+        - star-cww-nonprd-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
     au1prodfrontend1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
