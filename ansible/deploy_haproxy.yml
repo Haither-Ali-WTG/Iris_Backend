@@ -2,14 +2,14 @@
 - name: Target machines
   import_playbook: target_machines.yaml
 
-# - name: Setup localhost for s3
-#   hosts: localhost
-#   tasks:
-#     - name: Setup S3 storage connection
-#       include_role:
-#         name: pure_connection_setup
-#       vars:
-#         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+- name: Setup localhost for s3
+  hosts: localhost
+  tasks:
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
 
 - name: Collect and publish IIS data to S3
   hosts: au2sandinternal1 #clustered_instances
