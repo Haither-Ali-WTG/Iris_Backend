@@ -6,6 +6,6 @@ elastic_src:
     - src 10.2.59.0/24
 
 star_au2s3-b1_wtg_ws:
-  description: "*.wtg.zone"
+  description: "*.au2s3-b1.wtg.ws"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?au2s3-b1\.wtg\.ws$
