@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250321.2
-  # Fri Mar 21 03:11:35 UTC 2025 -- Fri Mar 21 14:11:35 AEDT 2025
+  # Dante Build Artifact 20250321.3
+  # Fri Mar 21 05:01:26 UTC 2025 -- Fri Mar 21 16:01:26 AEDT 2025
   #
-  # Merged PR 33940: Fix: Dante deployment pipeline from virgil overrides PR
-  # 5a6721ff0c9a03195db0235424039a73fbc5accd
-  dante_build_id: '1286553'
+  # Merge pull request 33941 from dante_artifact_upgrade into master
+  # f620525e6b4186a2163cfcb30215be4520aec629
+  dante_build_id: '1286675'
 
   # virgil 20250321.1
   # Fri Mar 21 03:07:18 UTC 2025 -- Fri Mar 21 14:07:18 AEDT 2025
