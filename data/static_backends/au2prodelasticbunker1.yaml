@@ -6,7 +6,7 @@ star.au2s3-b1.wtg.ws:
   http_health_check:
     enabled: true
     http_path: /
-    encryption: true
+  encryption: true
   servers:
     - name: au2nas12-s3-01
       ip: 10.2.30.31
