@@ -288,7 +288,24 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
-
+    au2prodfrontend1tcp:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 3140  # bus_cargo_wisegrid_net_5672
+      iis_servers: []
+      certificates:
+        - bus-cargo-wisegrid-net
+      machine_cluster: au2-prod-frontend-1
+      stats:
+        ports:
+          web: 2034
+          socket: 2033
     au2prodinternaltcp:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2

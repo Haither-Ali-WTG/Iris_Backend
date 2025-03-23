@@ -1,0 +1,12 @@
+bus-cargo-wisegrid-net:
+  clustered_instances: [au2prodfrontend1tcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wp-scva-401
+      ip: 10.2.70.62
+      port: 5672
+    - name: au2wp-scva-402
+      ip: 10.2.70.63
+      port: 5672

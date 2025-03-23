@@ -1,0 +1,7 @@
+---
+bus_cargo_wisegrid_net_5672:
+  description: |-
+    Uses backend bus-cargo-wisegrid-net for acl_bus_cargo_wisegrid_net_5672
+  order: 50
+  actions:
+    - use_backend bus-cargo-wisegrid-net if acl_bus_cargo_wisegrid_net_5672
