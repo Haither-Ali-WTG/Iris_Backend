@@ -1,5 +1,5 @@
 ---
 acl_bus_cargo_wisegrid_net_5672:
-  description: bus cargo wisegrid PROD TCP port 5672
+  description: bus cargo wisegrid net PROD TCP port 5672
   tests:
     - dst_port 3140
