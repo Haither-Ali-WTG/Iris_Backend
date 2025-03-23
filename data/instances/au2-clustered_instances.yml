@@ -296,8 +296,7 @@ clustered_instances:
       frontend:
         maxconn: 20000
         ports:
-          plaintext:
-            - 3140  # bus_cargo_wisegrid_net_5672
+          ssl: [3140]  # bus_cargo_wisegrid_net_5672
       iis_servers: []
       certificates:
         - bus-cargo-wisegrid-net
