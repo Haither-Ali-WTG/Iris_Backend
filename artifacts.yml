@@ -7,12 +7,12 @@ variables:
   # e274c3c86e0b3c3dcb3ce14c91410916853c6058
   dante_build_id: '1289490'
 
-  # virgil 20250324.8
-  # Mon Mar 24 00:28:37 UTC 2025 -- Mon Mar 24 11:28:37 AEDT 2025
+  # virgil 20250324.15
+  # Mon Mar 24 03:26:39 UTC 2025 -- Mon Mar 24 14:26:39 AEDT 2025
   #
-  # Merged PR 33966: Apex31,32 removed 1:1 mapping from swp to downstream servers
-  # 8e2c26045591f2d6c3f4077424490b5e5ac80c32
-  virgil_build_id: '1289435'
+  # Merged PR 33984: Config swp for SBRT server
+  # 5ef98ebb7399613ba0375b143eae3a6d68b234cf
+  virgil_build_id: '1289607'
 
   # sqlbilling 20250324.1
   # Mon Mar 24 00:26:07 UTC 2025 -- Mon Mar 24 11:26:07 AEDT 2025
