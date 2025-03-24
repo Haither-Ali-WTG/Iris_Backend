@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250324.1
-  # Mon Mar 24 01:20:50 UTC 2025 -- Mon Mar 24 12:20:50 AEDT 2025
+  # Dante Build Artifact 20250324.2
+  # Mon Mar 24 04:01:18 UTC 2025 -- Mon Mar 24 15:01:18 AEDT 2025
   #
-  # Merge pull request 33967 from dante_artifact_upgrade into master
-  # e274c3c86e0b3c3dcb3ce14c91410916853c6058
-  dante_build_id: '1289490'
+  # Merge pull request 33985 from dante_artifact_upgrade into master
+  # 74070445954813b167934c96f2f67fd60bc836ef
+  dante_build_id: '1289656'
 
-  # virgil 20250324.15
-  # Mon Mar 24 03:26:39 UTC 2025 -- Mon Mar 24 14:26:39 AEDT 2025
+  # virgil 20250324.21
+  # Mon Mar 24 04:23:27 UTC 2025 -- Mon Mar 24 15:23:27 AEDT 2025
   #
-  # Merged PR 33984: Config swp for SBRT server
-  # 5ef98ebb7399613ba0375b143eae3a6d68b234cf
-  virgil_build_id: '1289607'
+  # Merged PR 33964: Add SN2201 vlan1029 for SY5 Rack304 slot30/32Storage
+  # 101dc31ef48ce68b49816d14021eec52cd419ada
+  virgil_build_id: '1289691'
 
   # sqlbilling 20250324.1
   # Mon Mar 24 00:26:07 UTC 2025 -- Mon Mar 24 11:26:07 AEDT 2025
