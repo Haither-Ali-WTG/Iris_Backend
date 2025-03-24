@@ -7,16 +7,16 @@ variables:
   # f620525e6b4186a2163cfcb30215be4520aec629
   dante_build_id: '1286675'
 
-  # virgil 20250321.1
-  # Fri Mar 21 03:07:18 UTC 2025 -- Fri Mar 21 14:07:18 AEDT 2025
+  # virgil 20250324.8
+  # Mon Mar 24 00:28:37 UTC 2025 -- Mon Mar 24 11:28:37 AEDT 2025
   #
-  # Merged PR 33410: PRJ00050879 - Remove CZAPRD
-  # 6515b329885f3e36547b0cf650b0eef4d8c9ee1b
-  virgil_build_id: '1286549'
+  # Merged PR 33966: Apex31,32 removed 1:1 mapping from swp to downstream servers
+  # 8e2c26045591f2d6c3f4077424490b5e5ac80c32
+  virgil_build_id: '1289435'
 
-  # sqlbilling 20250321.1
-  # Thu Mar 20 14:10:32 UTC 2025 -- Fri Mar 21 01:10:32 AEDT 2025
+  # sqlbilling 20250324.1
+  # Mon Mar 24 00:26:07 UTC 2025 -- Mon Mar 24 11:26:07 AEDT 2025
   #
-  # Merged PR 33925: SQLBillingAddCS01910962.yml
-  # 136e5a6348c1a0313751e1cd811b27c50fd40bdd
-  sqlbilling_build_id: '1285968'
+  # Merged PR 33959: RTL-SQL Read Only Access-CS01910456, PRJ00051233,PRJ00051237
+  # 5491fcf129b7aef804bc9b8a06bbfe850aea5c41
+  sqlbilling_build_id: '1289434'
