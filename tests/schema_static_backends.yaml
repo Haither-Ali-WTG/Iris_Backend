@@ -10,7 +10,7 @@ static_backend_normal:
   cookie: include('static_cookie', required=False)
   encryption: bool(required=False)
   fullconn: int(min=1, required=False)
-  default_server: regex('^[a-z0-9 ]+$', name='default_server options', required=False)
+  default_server: regex('^[a-z0-9\- ]+$', name='default_server options', required=False)
   sorry_pages: list(include('sorry_page'), required=False)
   servers: list(include('server'))
 ---
