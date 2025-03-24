@@ -1,2 +1,7 @@
 ---
-{}
+restrict_ip:
+  description: |-
+    Restrict http request based on IP
+  order: 1
+  actions:
+    - http-request deny if !elastic_src
