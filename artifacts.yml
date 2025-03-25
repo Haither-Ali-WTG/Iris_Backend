@@ -7,16 +7,16 @@ variables:
   # 60d352e0b15df82ba46efefafc9a4c601836fbcc
   dante_build_id: '1290976'
 
-  # virgil 20250325.14
-  # Tue Mar 25 06:42:38 UTC 2025 -- Tue Mar 25 17:42:38 AEDT 2025
+  # virgil 20250326.1
+  # Tue Mar 25 13:45:16 UTC 2025 -- Wed Mar 26 00:45:16 AEDT 2025
   #
-  # Merged PR 34049: add vlan1245 to US2 for elasticbunkerproxy
-  # cc1754b81314d049e089fc9d31501dd67eb23726
-  virgil_build_id: '1290937'
+  # Merged PR 34043: update au2-apex36 mgmt0 MAC address
+  # 189761baac4f7c4b9e5d98d0756f65256c8093b4
+  virgil_build_id: '1291272'
 
-  # sqlbilling 20250325.2
-  # Mon Mar 24 14:33:08 UTC 2025 -- Tue Mar 25 01:33:08 AEDT 2025
+  # sqlbilling 20250325.4
+  # Tue Mar 25 10:45:07 UTC 2025 -- Tue Mar 25 21:45:07 AEDT 2025
   #
-  # Merged PR 34011: SQLBillingAddCS01913660CS01882891.yml
-  # 16b4dd5c1b86330b79009391e4d69ee4bdb24764
-  sqlbilling_build_id: '1290165'
+  # Merged PR 34058: SQLBillingADDCS01914852.yml
+  # 720f02ce0f8567d86c7842bba56cbd57e8783969
+  sqlbilling_build_id: '1291148'
