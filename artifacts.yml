@@ -7,12 +7,12 @@ variables:
   # be852867a0ef5bddcebc4aa336568f497bb98742
   dante_build_id: '1291307'
 
-  # virgil 20250326.1
-  # Tue Mar 25 13:45:16 UTC 2025 -- Wed Mar 26 00:45:16 AEDT 2025
+  # virgil 20250326.4
+  # Tue Mar 25 22:42:25 UTC 2025 -- Wed Mar 26 09:42:25 AEDT 2025
   #
-  # Merged PR 34043: update au2-apex36 mgmt0 MAC address
-  # 189761baac4f7c4b9e5d98d0756f65256c8093b4
-  virgil_build_id: '1291272'
+  # Merge pull request 34014 from virgil_python_upgrade into master
+  # 77caee6c8cfe26150b0d02d40062f759287e11b5
+  virgil_build_id: '1291665'
 
   # sqlbilling 20250325.4
   # Tue Mar 25 10:45:07 UTC 2025 -- Tue Mar 25 21:45:07 AEDT 2025
