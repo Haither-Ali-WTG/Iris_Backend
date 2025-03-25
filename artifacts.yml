@@ -7,16 +7,16 @@ variables:
   # c92b28c6d1e0b0c1c51928c2a0a2eceebf2771a8
   dante_build_id: '1289747'
 
-  # virgil 20250324.21
-  # Mon Mar 24 04:23:27 UTC 2025 -- Mon Mar 24 15:23:27 AEDT 2025
+  # virgil 20250325.6
+  # Mon Mar 24 23:47:14 UTC 2025 -- Tue Mar 25 10:47:14 AEDT 2025
   #
-  # Merged PR 33964: Add SN2201 vlan1029 for SY5 Rack304 slot30/32Storage
-  # 101dc31ef48ce68b49816d14021eec52cd419ada
-  virgil_build_id: '1289691'
+  # Merged PR 34016: Disable LACP on C-00787
+  # 6b4a7f0596a25d65568dca60b8fb1903c84c0e8f
+  virgil_build_id: '1290562'
 
-  # sqlbilling 20250324.1
-  # Mon Mar 24 00:26:07 UTC 2025 -- Mon Mar 24 11:26:07 AEDT 2025
+  # sqlbilling 20250325.2
+  # Mon Mar 24 14:33:08 UTC 2025 -- Tue Mar 25 01:33:08 AEDT 2025
   #
-  # Merged PR 33959: RTL-SQL Read Only Access-CS01910456, PRJ00051233,PRJ00051237
-  # 5491fcf129b7aef804bc9b8a06bbfe850aea5c41
-  sqlbilling_build_id: '1289434'
+  # Merged PR 34011: SQLBillingAddCS01913660CS01882891.yml
+  # 16b4dd5c1b86330b79009391e4d69ee4bdb24764
+  sqlbilling_build_id: '1290165'
