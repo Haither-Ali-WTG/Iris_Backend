@@ -7,12 +7,12 @@ variables:
   # b0e09cefa1245eaeb3941263fe3a1969f639fce9
   dante_build_id: '1290846'
 
-  # virgil 20250325.9
-  # Tue Mar 25 04:18:22 UTC 2025 -- Tue Mar 25 15:18:22 AEDT 2025
+  # virgil 20250325.14
+  # Tue Mar 25 06:42:38 UTC 2025 -- Tue Mar 25 17:42:38 AEDT 2025
   #
-  # Merged PR 34007: add DE1 bunker hosts in Virgil
-  # 56bb9039e2a962207ae9c5b566bd23cc1a321e1e
-  virgil_build_id: '1290796'
+  # Merged PR 34049: add vlan1245 to US2 for elasticbunkerproxy
+  # cc1754b81314d049e089fc9d31501dd67eb23726
+  virgil_build_id: '1290937'
 
   # sqlbilling 20250325.2
   # Mon Mar 24 14:33:08 UTC 2025 -- Tue Mar 25 01:33:08 AEDT 2025
