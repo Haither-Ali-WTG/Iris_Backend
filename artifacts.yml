@@ -7,12 +7,12 @@ variables:
   # bec9bcd5addbbd1f5b12bfc8f626fb72477cdb19
   dante_build_id: '1290602'
 
-  # virgil 20250325.6
-  # Mon Mar 24 23:47:14 UTC 2025 -- Tue Mar 25 10:47:14 AEDT 2025
+  # virgil 20250325.9
+  # Tue Mar 25 04:18:22 UTC 2025 -- Tue Mar 25 15:18:22 AEDT 2025
   #
-  # Merged PR 34016: Disable LACP on C-00787
-  # 6b4a7f0596a25d65568dca60b8fb1903c84c0e8f
-  virgil_build_id: '1290562'
+  # Merged PR 34007: add DE1 bunker hosts in Virgil
+  # 56bb9039e2a962207ae9c5b566bd23cc1a321e1e
+  virgil_build_id: '1290796'
 
   # sqlbilling 20250325.2
   # Mon Mar 24 14:33:08 UTC 2025 -- Tue Mar 25 01:33:08 AEDT 2025
