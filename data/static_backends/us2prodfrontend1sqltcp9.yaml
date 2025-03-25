@@ -3,7 +3,7 @@
 
 ### TEST US2
 us2wtreadonly401l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -12,7 +12,7 @@ us2wtreadonly401l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly402l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -21,7 +21,7 @@ us2wtreadonly402l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly403l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -30,7 +30,7 @@ us2wtreadonly403l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly404l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -39,7 +39,7 @@ us2wtreadonly404l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly405l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -48,7 +48,7 @@ us2wtreadonly405l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly407l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -57,7 +57,7 @@ us2wtreadonly407l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly408l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -66,7 +66,7 @@ us2wtreadonly408l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly409l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -75,7 +75,7 @@ us2wtreadonly409l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly410l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -84,7 +84,7 @@ us2wtreadonly410l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly411l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -93,7 +93,7 @@ us2wtreadonly411l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly412l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -102,7 +102,7 @@ us2wtreadonly412l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly413l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -111,7 +111,7 @@ us2wtreadonly413l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly414l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -120,7 +120,7 @@ us2wtreadonly414l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly415l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -129,7 +129,7 @@ us2wtreadonly415l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly416l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -138,7 +138,7 @@ us2wtreadonly416l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly417l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -147,7 +147,7 @@ us2wtreadonly417l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly418l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -156,7 +156,7 @@ us2wtreadonly418l1-wisegrid-net:
       port: 1433
 
 us2wtreadonly419l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -167,7 +167,7 @@ us2wtreadonly419l1-wisegrid-net:
 
 ### PROD US2
 us2wpreadonly401l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -176,7 +176,7 @@ us2wpreadonly401l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly402l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -185,7 +185,7 @@ us2wpreadonly402l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly403l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -194,7 +194,7 @@ us2wpreadonly403l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly404l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -203,7 +203,7 @@ us2wpreadonly404l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly405l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -212,7 +212,7 @@ us2wpreadonly405l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly406l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -221,7 +221,7 @@ us2wpreadonly406l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly407l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -230,7 +230,7 @@ us2wpreadonly407l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly408l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -239,7 +239,7 @@ us2wpreadonly408l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly409l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -248,7 +248,7 @@ us2wpreadonly409l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly410l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -257,7 +257,7 @@ us2wpreadonly410l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly411l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -266,7 +266,7 @@ us2wpreadonly411l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly412l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -275,7 +275,7 @@ us2wpreadonly412l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly413l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -284,7 +284,7 @@ us2wpreadonly413l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly414l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -293,7 +293,7 @@ us2wpreadonly414l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly415l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -302,7 +302,7 @@ us2wpreadonly415l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly416l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -311,7 +311,7 @@ us2wpreadonly416l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly417l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -320,7 +320,7 @@ us2wpreadonly417l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly418l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -329,7 +329,7 @@ us2wpreadonly418l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly419l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -338,7 +338,7 @@ us2wpreadonly419l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly420l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -347,7 +347,7 @@ us2wpreadonly420l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly421l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -356,7 +356,7 @@ us2wpreadonly421l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly422l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -365,7 +365,7 @@ us2wpreadonly422l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly423l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -374,7 +374,7 @@ us2wpreadonly423l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly424l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -383,7 +383,7 @@ us2wpreadonly424l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly425l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -392,7 +392,7 @@ us2wpreadonly425l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly426l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -401,7 +401,7 @@ us2wpreadonly426l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly427l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -410,7 +410,7 @@ us2wpreadonly427l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly428l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -419,7 +419,7 @@ us2wpreadonly428l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly429l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -428,7 +428,7 @@ us2wpreadonly429l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly430l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -437,7 +437,7 @@ us2wpreadonly430l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly431l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -446,7 +446,7 @@ us2wpreadonly431l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly432l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -455,7 +455,7 @@ us2wpreadonly432l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly433l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -464,7 +464,7 @@ us2wpreadonly433l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly434l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -473,7 +473,7 @@ us2wpreadonly434l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly435l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -482,7 +482,7 @@ us2wpreadonly435l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly436l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -491,7 +491,7 @@ us2wpreadonly436l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly437l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -500,7 +500,7 @@ us2wpreadonly437l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly438l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
@@ -509,7 +509,7 @@ us2wpreadonly438l1-wisegrid-net:
       port: 1433
 
 us2wpreadonly439l1-wisegrid-net:
-  clustered_instances: [us2prodfrontend1sqltcp1]
+  clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
   servers:
