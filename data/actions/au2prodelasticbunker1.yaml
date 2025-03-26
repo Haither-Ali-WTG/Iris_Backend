@@ -19,4 +19,4 @@ star_au2s3_b1_wtg_ws:
     Backend for backups targeting SY6 bunker from Elastic Nodes in AU2
   order: 90
   actions:
-    - use_backend star.au2s3-b1.wtg.ws if star_au2s3_b1_wtg_ws
+    - use_backend star.au2s3-b1.wtg.ws if star_au2s3-b1_wtg_ws
