@@ -224,9 +224,6 @@
   include_role:
     name: container_runner
     tasks_from: check_container_exists.yml
-  retries: 10
-  delay: 6
-  until: container_exists
 
 - name: Generate delay restart marker
   template:
@@ -301,6 +298,3 @@
   include_role:
     name: container_runner
     tasks_from: check_container_exists.yml
-  retries: 10
-  delay: 6
-  until: container_exists
