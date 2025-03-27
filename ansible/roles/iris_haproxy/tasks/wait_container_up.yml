@@ -1,4 +1,8 @@
 ---
+- name: Pause for 5 seconds brfore check
+  ansible.builtin.pause:
+    seconds: 5
+
 - name: Check if container exists
   vars:
     name: "{{ container_name }}"

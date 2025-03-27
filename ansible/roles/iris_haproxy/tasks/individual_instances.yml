@@ -217,11 +217,15 @@
     container_dir: "{{ individual_instance_dir }}"
     resources: "{{ container.resources }}"
 
+# Ansible doesn't support "until' with retries over include_role or include_tasks
+- name: Reset container_exists variable
+  set_facts:
+    container_exists: false
+
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
-  retries: 10
-  delay: 6
-  until: container_exists
+  when: not container_exists
+  loop: 10
 
 - name: Generate delay restart marker
   template:
@@ -290,8 +294,11 @@
         or copy_sqlbillings.changed
       )  # noqa: no-handler
 
+- name: Reset container_exists variable
+  set_facts:
+    container_exists: false
+
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
-  retries: 10
-  delay: 6
-  until: container_exists
+  when: not container_exists
+  loop: 10
