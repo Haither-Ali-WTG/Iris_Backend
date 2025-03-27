@@ -7,16 +7,16 @@ variables:
   # 429bcde13e256403f788acfac65715025ebab0a4
   dante_build_id: '1292751'
 
-  # virgil 20250326.4
-  # Tue Mar 25 22:42:25 UTC 2025 -- Wed Mar 26 09:42:25 AEDT 2025
+  # virgil 20250328.2
+  # Thu Mar 27 22:57:12 UTC 2025 -- Fri Mar 28 09:57:12 AEDT 2025
   #
-  # Merge pull request 34014 from virgil_python_upgrade into master
-  # 77caee6c8cfe26150b0d02d40062f759287e11b5
-  virgil_build_id: '1291665'
+  # Merged PR 34155: config apex49,50 swp29 to none LACP Corp Hyper-V backend for test
+  # ed29e515d1e95d2a6d2fb23c1c348fe0eccc7194
+  virgil_build_id: '1293865'
 
-  # sqlbilling 20250326.2
-  # Tue Mar 25 23:21:27 UTC 2025 -- Wed Mar 26 10:21:27 AEDT 2025
+  # sqlbilling 20250328.1
+  # Thu Mar 27 14:21:32 UTC 2025 -- Fri Mar 28 01:21:32 AEDT 2025
   #
-  # Merged PR 34077: Updated US2 readonly CS01915607
-  # e6310eaaccb00bd7c731c485aff5876275c0644f
-  sqlbilling_build_id: '1291714'
+  # Merged PR 34151: Updated us2 readonly billing CS01915607
+  # f2711b4a286becfad722fef182290896c3e0b0fa
+  sqlbilling_build_id: '1293506'
