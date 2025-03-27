@@ -3,9 +3,27 @@
   ansible.builtin.pause:
     seconds: 5
 
-- name: Check if container exists
-  vars:
-    name: "{{ container_name }}"
+- name: Set container engine
   include_role:
     name: container_runner
-    tasks_from: check_container_exists.yml
+    tasks_from: define_engine.yml
+
+- name: Check if container exists
+  command: >-
+    {{ engine }} ps -a --format {{ '"{{ .Names }}"' }}
+  changed_when: false
+  become: yes
+  register: container_list
+
+- name: Reset container running fact
+  set_fact:
+    container_running: false
+
+- name: Set container_exists variable
+  set_fact:
+    container_running: true
+  when:
+    - container_list is not skipped
+    - container_name in item
+    - "'Rinning' in item"
+  loop: "{{ container_list.stdout_lines }}"
