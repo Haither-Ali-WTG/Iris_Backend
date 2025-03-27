@@ -29,5 +29,5 @@
   when:
     - container_list is not skipped
     - container_name in item
-    - "'Rinning' in item"
+    - "'Running' in item"
   loop: "{{ container_list.stdout_lines }}"
