@@ -1,0 +1,7 @@
+---
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
