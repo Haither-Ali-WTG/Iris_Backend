@@ -10,7 +10,7 @@
 
 - name: Check if container exists
   command: >-
-    {{ engine }} ps -a --format {{ '"{{ .Names }}"' }}
+    {{ engine }} ps
   changed_when: false
   become: yes
   register: container_list
