@@ -69,9 +69,7 @@
     job_name: "validate-{{ container_name }}"
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_image_tag }}"
     volumes:
-    - >-
-      {{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test:
-      /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp:z
+    - "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test:/etc/haproxy/{{ clustered_instance_name }}.cfg.tmp:z"
     startup_command: /usr/local/sbin/haproxy
     startup_args:
     - -c
