@@ -52,7 +52,15 @@
     - haproxy.sock
   become: yes
 
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
+
 - name: Template out and validate the haproxy config
+  when: container_exists
   block:
     - name: Template out and validate the haproxy config
       vars:
