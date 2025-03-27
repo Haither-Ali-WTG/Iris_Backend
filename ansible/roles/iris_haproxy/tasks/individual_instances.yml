@@ -294,3 +294,13 @@
         or copy_certificates.changed
         or copy_sqlbillings.changed
       )  # noqa: no-handler
+
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
+  retries: 10
+  delay: 6
+  until: container_exists
