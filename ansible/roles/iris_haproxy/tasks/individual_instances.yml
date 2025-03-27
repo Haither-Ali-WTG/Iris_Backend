@@ -52,13 +52,6 @@
     - haproxy.sock
   become: yes
 
-- name: Check if container exists
-  vars:
-    name: "{{ container_name }}"
-  include_role:
-    name: container_runner
-    tasks_from: check_container_exists.yml
-
 - name: Template out and validate the haproxy config
   when: container_exists
   block:
@@ -224,6 +217,16 @@
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources: "{{ container.resources }}"
+
+- name: Check if container exists
+  vars:
+    name: "{{ container_name }}"
+  include_role:
+    name: container_runner
+    tasks_from: check_container_exists.yml
+  retries: 10
+  delay: 6
+  until: container_exists
 
 - name: Generate delay restart marker
   template:
