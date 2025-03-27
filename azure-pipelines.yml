@@ -171,8 +171,8 @@ stages:
           matrix:
             AU2:
               simulation_dc: AU2
-            DE1:
-              simulation_dc: DE1
+            # DE1:
+            #   simulation_dc: DE1
             # US2:
             #   simulation_dc: US2
         steps:
