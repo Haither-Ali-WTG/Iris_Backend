@@ -219,7 +219,7 @@
 
 # Ansible doesn't support "until' with retries over include_role or include_tasks
 - name: Reset container_exists variable
-  set_facts:
+  set_fact:
     container_exists: false
 
 - name: Wait for container to come up
@@ -295,7 +295,7 @@
       )  # noqa: no-handler
 
 - name: Reset container_exists variable
-  set_facts:
+  set_fact:
     container_exists: false
 
 - name: Wait for container to come up
