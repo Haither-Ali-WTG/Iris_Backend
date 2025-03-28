@@ -86,6 +86,17 @@
   no_log: true
   register: copy_certificates
 
+- name: Template out the sorry page
+  template:
+    src: sorry.http.j2
+    dest: "{{ individual_instance_dir }}/etc/sorry.http"
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  # TODO: validate
+  register: sorry_page
+
 - name: Template out the test haproxy config
   template:
     src: haproxy.cfg.j2
@@ -103,7 +114,6 @@
     job_name: "validate-{{ container_name }}"
     image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_image_tag }}"
     volumes:
-    # - "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test:/etc/haproxy/{{ clustered_instance_name }}.cfg.tmp:z"
     - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
     startup_command: /usr/local/sbin/haproxy
     startup_args:
@@ -143,17 +153,6 @@
 - name: Set haproxy_config_changed
   set_fact:
     haproxy_config_changed: "{{ config_with_container.changed or config_without_container.changed }}"
-
-- name: Template out the sorry page
-  template:
-    src: sorry.http.j2
-    dest: "{{ individual_instance_dir }}/etc/sorry.http"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-  # TODO: validate
-  register: sorry_page
 
 - name: Copy sqlbilling acl files for individual instance
   copy:

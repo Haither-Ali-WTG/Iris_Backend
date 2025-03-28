@@ -5,7 +5,7 @@ variables:
   #
   # Merged PR 34102: Added ocp-core-devbuild repo to automatic upgrades and safety checks
   # 429bcde13e256403f788acfac65715025ebab0a4
-  dante_build_id: '1293997'
+  dante_build_id: '1294044'
 
   # virgil 20250326.4
   # Tue Mar 25 22:42:25 UTC 2025 -- Wed Mar 26 09:42:25 AEDT 2025
