@@ -15,10 +15,6 @@
   become: yes
   register: container_list
 
-- name: Print container output
-  debug:
-    var: container_list
-
 - name: Reset container running fact
   set_fact:
     container_running: false
