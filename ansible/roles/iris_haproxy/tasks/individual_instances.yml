@@ -52,6 +52,17 @@
     - haproxy.sock
   become: yes
 
+- name: Template out the sorry page
+  template:
+    src: sorry.http.j2
+    dest: "{{ individual_instance_dir }}/etc/sorry.http"
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  # TODO: validate
+  register: sorry_page
+
 - name: Find all existing certificate files
   find:
     paths: "{{ individual_instance_dir }}/etc/certs/"
@@ -86,30 +97,6 @@
   no_log: true
   register: copy_certificates
 
-- name: Template out the sorry page
-  template:
-    src: sorry.http.j2
-    dest: "{{ individual_instance_dir }}/etc/sorry.http"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-  # TODO: validate
-  register: sorry_page
-
-- name: Set container user for Ubuntu
-  when: "virgil_os_variant == 'ubuntu'"
-  set_fact:
-    haproxy_container_user: "{{ user.uid }}"
-    haproxy_container_group: "{{ user.group }}"
-
-# We can set actual container user when running podman
-- name: Set container user for RHEL
-  when: "virgil_os_variant == 'rhel'"
-  set_fact:
-    haproxy_container_user: "{{ subuser.subuid }}"
-    haproxy_container_group: "{{ subuser.subuid }}"
-
 - name: Copy sqlbilling acl files for individual instance
   copy:
     src: "{{ sqlbilling_acl_dir }}/{{ item.file }}"
@@ -121,63 +108,6 @@
   loop: "{{ sqlbilling_acl }}"
   register: copy_sqlbillings
   when: sqlbilling_acl | default([]) | length > 0
-
-- name: Template out the test haproxy config
-  template:
-    src: haproxy.cfg.j2
-    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-
-- name: Validate the haproxy test configuration file
-  include_role:
-    name: container_runner
-    tasks_from: once_off_job.yml
-  vars:
-    job_name: "validate-{{ container_name }}"
-    image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_image_tag }}"
-    volumes:
-    - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
-    startup_command: /usr/local/sbin/haproxy
-    startup_args:
-    - -c
-    - -f
-    - /etc/haproxy/{{ clustered_instance_name }}.cfg.test
-    container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
-
-# - name: Template out and validate the haproxy config
-#   vars:
-#     container_engine: "{{ 'podman' if (virgil_os_variant == 'rhel') else 'docker' }}"
-#   template:
-#     src: haproxy.cfg.j2
-#     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
-#     mode: u=r,go=
-#     owner: "{{ subuser.subuid }}"
-#     group: "{{ subuser.subgid }}"
-#     validate: >-
-#       bash -c
-#       'cp -p %s {{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.tmp
-#       && {{ container_engine }} exec {{ container_name }} /usr/local/sbin/haproxy
-#       -c -f /etc/haproxy/{{ clustered_instance_name }}.cfg.tmp'
-#   become: yes
-#   register: config_with_container
-
-- name: Template out the haproxy config
-  template:
-    src: haproxy.cfg.j2
-    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-  register: config_without_container
-  when: not container_exists
-
-- name: Set haproxy_config_changed
-  set_fact:
-    haproxy_config_changed: "{{ config_with_container.changed or config_without_container.changed }}"
 
 - name: Setup apparmor
   when: "virgil_os_variant == 'ubuntu'"  # TODO: check if some config is required for RHEL
@@ -208,6 +138,57 @@
         apparmor_profile_config is changed
         or container_name not in (apparmor_status.stdout | from_json).profiles
 
+- name: Set container user for Ubuntu
+  when: "virgil_os_variant == 'ubuntu'"
+  set_fact:
+    haproxy_container_user: "{{ user.uid }}"
+    haproxy_container_group: "{{ user.group }}"
+
+# We can set actual container user when running podman
+- name: Set container user for RHEL
+  when: "virgil_os_variant == 'rhel'"
+  set_fact:
+    haproxy_container_user: "{{ subuser.subuid }}"
+    haproxy_container_group: "{{ subuser.subuid }}"
+
+- name: Template out the test haproxy config
+  template:
+    src: haproxy.cfg.j2
+    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  register: haproxy_config
+
+- name: Validate the haproxy test configuration file
+  include_role:
+    name: container_runner
+    tasks_from: once_off_job.yml
+  vars:
+    job_name: "validate-{{ container_name }}"
+    image: "wtgopstools.azurecr.io/dante/haproxy:{{ container.haproxy_image_tag }}"
+    volumes:
+    - "{{ individual_instance_dir }}/etc:/etc/haproxy:z"
+    startup_command: /usr/local/sbin/haproxy
+    startup_args:
+    - -c
+    - -f
+    - /etc/haproxy/{{ clustered_instance_name }}.cfg.test
+    container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
+  when: haproxy_config.changed
+
+- name: Copy validated configuration file
+  copy:
+    src: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
+    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+    remote_src: yes
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  when: haproxy_config.changed
+
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
@@ -232,22 +213,6 @@
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
     resources: "{{ container.resources }}"
-
-# Ansible doesn't support "until' with retries over include_role or include_tasks
-- name: Reset container running fact
-  set_fact:
-    container_running: false
-
-- name: Wait for container to come up
-  include_tasks: wait_container_up.yml
-  when: not container_running
-  # waiting up to 30 seconds
-  loop: "{{ range(0, 5) }}"
-
-- name: Assert that container is running
-  assert:
-    that: container_running
-    fail_msg: "Container is not running."
 
 - name: Generate delay restart marker
   template:
@@ -286,18 +251,13 @@
     executable: /bin/bash
   become: yes
   changed_when: true
-  when:
-    - container_exists
-    - haproxy_config_changed
+  when: haproxy_config.changed
 
 - name: Update server states file
   include_tasks: update_states_file.yml
   vars:
     cfg_file: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
     states_file: "{{ individual_instance_dir }}/run/global-state"
-  when:
-    - container_exists
-    - haproxy_config_changed
 
 - name: Reload haproxy
   # This cannot be a handler as `include_role` is not supported in handlers
@@ -308,24 +268,9 @@
     name: container_runner
     tasks_from: send_signal.yml
   when:
-    - container_exists
     - (
-        haproxy_config_changed
+        haproxy_config.changed
         or sorry_page.changed
         or copy_certificates.changed
         or copy_sqlbillings.changed
       )  # noqa: no-handler
-
-- name: Reset container running fact
-  set_fact:
-    container_running: false
-
-- name: Wait for container to come up
-  include_tasks: wait_container_up.yml
-  when: not container_running
-  loop: "{{ range(0, 5) }}"
-
-- name: Assert that container is running
-  assert:
-    that: container_running
-    fail_msg: "Container is not running."
