@@ -56,9 +56,7 @@
   template:
     src: haproxy.cfg.j2
     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
+    mode: a=r
   become: yes
 
 - name: Validate the haproxy test configuration file
