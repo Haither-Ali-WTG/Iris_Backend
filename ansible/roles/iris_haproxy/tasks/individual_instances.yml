@@ -110,6 +110,18 @@
     haproxy_container_user: "{{ subuser.subuid }}"
     haproxy_container_group: "{{ subuser.subuid }}"
 
+- name: Copy sqlbilling acl files for individual instance
+  copy:
+    src: "{{ sqlbilling_acl_dir }}/{{ item.file }}"
+    dest: "{{ individual_instance_dir }}/etc/"
+    mode: ug=r,o=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  loop: "{{ sqlbilling_acl }}"
+  register: copy_sqlbillings
+  when: sqlbilling_acl | default([]) | length > 0
+
 - name: Template out the test haproxy config
   template:
     src: haproxy.cfg.j2
@@ -166,18 +178,6 @@
 - name: Set haproxy_config_changed
   set_fact:
     haproxy_config_changed: "{{ config_with_container.changed or config_without_container.changed }}"
-
-- name: Copy sqlbilling acl files for individual instance
-  copy:
-    src: "{{ sqlbilling_acl_dir }}/{{ item.file }}"
-    dest: "{{ individual_instance_dir }}/etc/"
-    mode: ug=r,o=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-  loop: "{{ sqlbilling_acl }}"
-  register: copy_sqlbillings
-  when: sqlbilling_acl | default([]) | length > 0
 
 - name: Setup apparmor
   when: "virgil_os_variant == 'ubuntu'"  # TODO: check if some config is required for RHEL
