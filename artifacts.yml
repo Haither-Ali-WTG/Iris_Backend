@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250327.1
-  # Wed Mar 26 22:22:54 UTC 2025 -- Thu Mar 27 09:22:54 AEDT 2025
+  # Dante Build Artifact 20250328.1
+  # Thu Mar 27 23:42:34 UTC 2025 -- Fri Mar 28 10:42:34 AEDT 2025
   #
-  # Merged PR 34102: Added ocp-core-devbuild repo to automatic upgrades and safety checks
-  # 429bcde13e256403f788acfac65715025ebab0a4
-  dante_build_id: '1292751'
+  # Merge pull request 34162 from dante_artifact_upgrade into master
+  # 1ce0122dee5bafd6d5421c85df8284b7f3fae57b
+  dante_build_id: '1293915'
 
   # virgil 20250328.2
   # Thu Mar 27 22:57:12 UTC 2025 -- Fri Mar 28 09:57:12 AEDT 2025
