@@ -161,7 +161,7 @@
   become: yes
   register: haproxy_config
 
-- name: Validate the haproxy test configuration file
+- name: Validate the haproxy test configuration file  # noqa no-handler
   include_role:
     name: container_runner
     tasks_from: once_off_job.yml
@@ -178,7 +178,7 @@
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
   when: haproxy_config.changed
 
-- name: Copy validated configuration file
+- name: Copy validated configuration file  # noqa no-handler
   copy:
     src: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
     dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
@@ -241,7 +241,7 @@
         state: absent
       loop: "{{ files_to_delete.files }}"
 
-- name: Save Global state to allow faster reloads
+- name: Save Global state to allow faster reloads  # noqa no-handler
   shell:
     cmd: |
       set -o pipefail
