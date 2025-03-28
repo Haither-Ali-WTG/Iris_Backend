@@ -97,6 +97,19 @@
   # TODO: validate
   register: sorry_page
 
+- name: Set container user for Ubuntu
+  when: "virgil_os_variant == 'ubuntu'"
+  set_fact:
+    haproxy_container_user: "{{ user.uid }}"
+    haproxy_container_group: "{{ user.group }}"
+
+# We can set actual container user when running podman
+- name: Set container user for RHEL
+  when: "virgil_os_variant == 'rhel'"
+  set_fact:
+    haproxy_container_user: "{{ subuser.subuid }}"
+    haproxy_container_group: "{{ subuser.subuid }}"
+
 - name: Template out the test haproxy config
   template:
     src: haproxy.cfg.j2
@@ -194,19 +207,6 @@
       when: >-  # noqa: no-handler
         apparmor_profile_config is changed
         or container_name not in (apparmor_status.stdout | from_json).profiles
-
-- name: Set container user for Ubuntu
-  when: "virgil_os_variant == 'ubuntu'"
-  set_fact:
-    haproxy_container_user: "{{ user.uid }}"
-    haproxy_container_group: "{{ user.group }}"
-
-# We can set actual container user when running podman
-- name: Set container user for RHEL
-  when: "virgil_os_variant == 'rhel'"
-  set_fact:
-    haproxy_container_user: "{{ subuser.subuid }}"
-    haproxy_container_group: "{{ subuser.subuid }}"
 
 - name: Deploy the haproxy container
   include_role:
