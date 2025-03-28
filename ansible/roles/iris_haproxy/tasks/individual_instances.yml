@@ -110,6 +110,7 @@
     - -c
     - -f
     - /etc/haproxy/{{ clustered_instance_name }}.cfg.test
+    container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
 
 # - name: Template out and validate the haproxy config
 #   vars:
