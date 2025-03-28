@@ -89,7 +89,7 @@
 - name: Template out the test haproxy config
   template:
     src: haproxy.cfg.j2
-    dest: "{{ individual_instance_dir }}/etc/haproxy/{{ clustered_instance_name }}.cfg.test"
+    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
     mode: a=r
   become: yes
 
