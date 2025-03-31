@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250328.5
-  # Fri Mar 28 03:13:03 UTC 2025 -- Fri Mar 28 14:13:03 AEDT 2025
+  # Dante Build Artifact 20250331.1
+  # Mon Mar 31 00:48:38 UTC 2025 -- Mon Mar 31 11:48:38 AEDT 2025
   #
-  # Merged PR 34175: Support container user for one off job
-  # 368730ba460ea29f663342c3fb8fe095a4e2ce77
-  dante_build_id: '1294154'
+  # Merged PR 34190: Create templates for the new HW profile
+  # ac94ac03704be330b1ed1c00b4c7309bdc7ff741
+  dante_build_id: '1297023'
 
   # virgil 20250328.5
   # Fri Mar 28 01:37:21 UTC 2025 -- Fri Mar 28 12:37:21 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # c3796a569931e4b6ec2f19ec5f0bc8c1f981f9bb
   virgil_build_id: '1294043'
 
-  # sqlbilling 20250328.1
-  # Thu Mar 27 14:21:32 UTC 2025 -- Fri Mar 28 01:21:32 AEDT 2025
+  # sqlbilling 20250328.6
+  # Fri Mar 28 09:05:23 UTC 2025 -- Fri Mar 28 20:05:23 AEDT 2025
   #
-  # Merged PR 34151: Updated us2 readonly billing CS01915607
-  # f2711b4a286becfad722fef182290896c3e0b0fa
-  sqlbilling_build_id: '1293506'
+  # Merged PR 34194: SQLBillingADDCS01918468.yml
+  # e07a6884a0a748120701d2832cb9b8752b592588
+  sqlbilling_build_id: '1294459'
