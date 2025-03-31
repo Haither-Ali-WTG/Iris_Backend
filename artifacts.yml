@@ -7,12 +7,12 @@ variables:
   # ac94ac03704be330b1ed1c00b4c7309bdc7ff741
   dante_build_id: '1297023'
 
-  # virgil 20250328.5
-  # Fri Mar 28 01:37:21 UTC 2025 -- Fri Mar 28 12:37:21 AEDT 2025
+  # virgil 20250331.2
+  # Mon Mar 31 02:23:53 UTC 2025 -- Mon Mar 31 13:23:53 AEDT 2025
   #
-  # Merged PR 34169: Create new HW profile for DE1 Bunkers
-  # c3796a569931e4b6ec2f19ec5f0bc8c1f981f9bb
-  virgil_build_id: '1294043'
+  # Merged PR 34219: update primary IP for new elasticbunkerproxies
+  # 2072c0a99a09b35a84d90ef8eadf465fbc079acb
+  virgil_build_id: '1297120'
 
   # sqlbilling 20250328.6
   # Fri Mar 28 09:05:23 UTC 2025 -- Fri Mar 28 20:05:23 AEDT 2025
