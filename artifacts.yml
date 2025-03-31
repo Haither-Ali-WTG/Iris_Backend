@@ -7,12 +7,12 @@ variables:
   # 839bd7e5a1730d83a955f99737ef33df71159fe9
   dante_build_id: '1297168'
 
-  # virgil 20250331.2
-  # Mon Mar 31 02:23:53 UTC 2025 -- Mon Mar 31 13:23:53 AEDT 2025
+  # virgil 20250331.6
+  # Mon Mar 31 03:44:51 UTC 2025 -- Mon Mar 31 14:44:51 AEDT 2025
   #
-  # Merged PR 34219: update primary IP for new elasticbunkerproxies
-  # 2072c0a99a09b35a84d90ef8eadf465fbc079acb
-  virgil_build_id: '1297120'
+  # Merged PR 34235: change vlan ID from 1245 to 2245
+  # 9bc30ec8e0ab0505d5c2232481367e3be7dbda67
+  virgil_build_id: '1297213'
 
   # sqlbilling 20250328.6
   # Fri Mar 28 09:05:23 UTC 2025 -- Fri Mar 28 20:05:23 AEDT 2025
