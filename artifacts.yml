@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250331.1
-  # Mon Mar 31 00:48:38 UTC 2025 -- Mon Mar 31 11:48:38 AEDT 2025
+  # Dante Build Artifact 20250331.2
+  # Mon Mar 31 03:03:09 UTC 2025 -- Mon Mar 31 14:03:09 AEDT 2025
   #
-  # Merged PR 34190: Create templates for the new HW profile
-  # ac94ac03704be330b1ed1c00b4c7309bdc7ff741
-  dante_build_id: '1297023'
+  # Merge pull request 34225 from dante_artifact_upgrade into master
+  # 839bd7e5a1730d83a955f99737ef33df71159fe9
+  dante_build_id: '1297168'
 
   # virgil 20250331.2
   # Mon Mar 31 02:23:53 UTC 2025 -- Mon Mar 31 13:23:53 AEDT 2025
