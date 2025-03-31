@@ -7,16 +7,16 @@ variables:
   # 4256e5cd2c2458c6efd618710cebdf01a73b24ea
   dante_build_id: '1297481'
 
-  # virgil 20250331.10
-  # Mon Mar 31 07:19:38 UTC 2025 -- Mon Mar 31 18:19:38 AEDT 2025
+  # virgil 20250401.2
+  # Mon Mar 31 22:26:57 UTC 2025 -- Tue Apr  1 09:26:57 AEDT 2025
   #
-  # Merged PR 34242: Config switches for new Media Agents and existing
-  # 73a2210af37ca026f5e35bfaa5834d4326217917
-  virgil_build_id: '1297428'
+  # Merge pull request 34273 from virgil_python_upgrade into master
+  # 974883f08b80c8b56f10d1c1f8721c9c0a5bab49
+  virgil_build_id: '1298069'
 
-  # sqlbilling 20250331.5
-  # Mon Mar 31 06:26:51 UTC 2025 -- Mon Mar 31 17:26:51 AEDT 2025
+  # sqlbilling 20250401.4
+  # Mon Mar 31 21:50:14 UTC 2025 -- Tue Apr  1 08:50:14 AEDT 2025
   #
-  # Merged PR 34257: SQLBillingAddandRemoveCS01916432.yml
-  # 6915a5bfa0db0b1d8afa85a07fd95edcd301fc06
-  sqlbilling_build_id: '1297388'
+  # Merged PR 34272: SQLBillingAddCS01919119US2
+  # daea93188c7fed2ba00a2bab5d943cf3d33038c1
+  sqlbilling_build_id: '1298046'
