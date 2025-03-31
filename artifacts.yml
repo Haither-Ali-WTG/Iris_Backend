@@ -7,16 +7,16 @@ variables:
   # 71dd557333a967481e519ddb49aa04fc3941b835
   dante_build_id: '1297252'
 
-  # virgil 20250331.6
-  # Mon Mar 31 03:44:51 UTC 2025 -- Mon Mar 31 14:44:51 AEDT 2025
+  # virgil 20250331.10
+  # Mon Mar 31 07:19:38 UTC 2025 -- Mon Mar 31 18:19:38 AEDT 2025
   #
-  # Merged PR 34235: change vlan ID from 1245 to 2245
-  # 9bc30ec8e0ab0505d5c2232481367e3be7dbda67
-  virgil_build_id: '1297213'
+  # Merged PR 34242: Config switches for new Media Agents and existing
+  # 73a2210af37ca026f5e35bfaa5834d4326217917
+  virgil_build_id: '1297428'
 
-  # sqlbilling 20250328.6
-  # Fri Mar 28 09:05:23 UTC 2025 -- Fri Mar 28 20:05:23 AEDT 2025
+  # sqlbilling 20250331.5
+  # Mon Mar 31 06:26:51 UTC 2025 -- Mon Mar 31 17:26:51 AEDT 2025
   #
-  # Merged PR 34194: SQLBillingADDCS01918468.yml
-  # e07a6884a0a748120701d2832cb9b8752b592588
-  sqlbilling_build_id: '1294459'
+  # Merged PR 34257: SQLBillingAddandRemoveCS01916432.yml
+  # 6915a5bfa0db0b1d8afa85a07fd95edcd301fc06
+  sqlbilling_build_id: '1297388'
