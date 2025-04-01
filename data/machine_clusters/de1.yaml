@@ -35,3 +35,15 @@ de1-prod-frontend-1:
       preempt: true
       virtual_router_id: 15
       priority: [de1lbl00387, de1lbl00306, de1lbl00307]
+
+de1-prod-elastic-bunker-1:
+  machines:
+    de1lbl00954: ~
+    de1lbl00955: ~
+  floating_ips:
+    - description: Elastic bunker Proxy (PROD)
+      ip: 10.3.245.115
+      vlan: 1245
+      preempt: false
+      virtual_router_id: 103
+      priority: [au2lbl00954, au2lbl00955]

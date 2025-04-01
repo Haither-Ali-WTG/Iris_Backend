@@ -1,0 +1,22 @@
+---
+restrict_ip:
+  description: |-
+    Restrict http request based on IP
+  order: 10
+  actions:
+    - http-request deny if !elastic_src
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 50
+  actions:
+    - redirect scheme https if star_de1s3-b1_wtg_ws !{ ssl_fc }
+
+star_de1s3_b1_wtg_ws:
+  description: |-
+    Backend for backups targeting SY6 bunker from Elastic Nodes in DE1
+  order: 90
+  actions:
+    - use_backend star_de1s3-b1_wtg_ws if star_de1s3-b1_wtg_ws
