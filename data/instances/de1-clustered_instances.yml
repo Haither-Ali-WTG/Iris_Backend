@@ -57,3 +57,33 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
+    de1prodelasticbunker1:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: DE1
+      machine_overrides:
+        de1lbl00954:
+          container:
+            haproxy_image_tag: 3.0.8
+        de1lbl00955:
+          container:
+            haproxy_image_tag: 3.0.8
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2015]
+          ssl: [2016]
+      machine_cluster: de1-prod-elastic-bunker-1
+      iis_servers: []
+      certificates:
+        - star-wisetechglobal-com
+        - star-wtg-zone
+        - star-de1s3-b1-wtg-ws
+      container:
+        resources:
+          production:
+            cpu: 4000m
+            memory: 8000Mi
+      stats:
+        ports:
+          web: 2049
+          socket: 2048

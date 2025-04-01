@@ -16,3 +16,13 @@ machines:
       os: ubuntu2404
       dc: DE1
       os_variant: ubuntu
+    de1lbl00954:
+      ansible_host: 10.3.245.111
+      os: ubuntu2404
+      dc: DE1
+      os_variant: ubuntu
+    de1lbl00955:
+      ansible_host: 10.3.245.112
+      os: ubuntu2404
+      dc: DE1
+      os_variant: ubuntu
