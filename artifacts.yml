@@ -7,16 +7,16 @@ variables:
   # aa69fc06072b3b85901168f8c1b83daab496be30
   dante_build_id: '1298147'
 
-  # virgil 20250401.2
-  # Mon Mar 31 22:26:57 UTC 2025 -- Tue Apr  1 09:26:57 AEDT 2025
+  # virgil 20250401.6
+  # Tue Apr  1 02:40:24 UTC 2025 -- Tue Apr  1 13:40:24 AEDT 2025
   #
-  # Merge pull request 34273 from virgil_python_upgrade into master
-  # 974883f08b80c8b56f10d1c1f8721c9c0a5bab49
-  virgil_build_id: '1298069'
+  # Merged PR 34233: Remove 'Teardown' concept in Virgil
+  # 61cf9b046a10f0025d28e03afe5e33e1e322a820
+  virgil_build_id: '1298310'
 
-  # sqlbilling 20250401.6
-  # Mon Mar 31 22:41:39 UTC 2025 -- Tue Apr  1 09:41:39 AEDT 2025
+  # sqlbilling 20250401.8
+  # Tue Apr  1 00:56:40 UTC 2025 -- Tue Apr  1 11:56:40 AEDT 2025
   #
-  # Merged PR 34284: Updated de1-prod-frontend-1.yml
-  # 79ec098c92a920e8d5e1beb482681748a4857622
-  sqlbilling_build_id: '1298095'
+  # Merged PR 34298: Updated us2-prod-frontend-1.yml
+  # 42b037d5e1a701507efb98a4f3be6ec76f3dc8b4
+  sqlbilling_build_id: '1298228'
