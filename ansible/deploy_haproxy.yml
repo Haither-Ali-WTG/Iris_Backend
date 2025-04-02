@@ -87,7 +87,6 @@
 
 - name: Setup the individual instances
   hosts: individual_instances
-  strategy: free
   gather_facts: no
   force_handlers: yes
   tasks:
