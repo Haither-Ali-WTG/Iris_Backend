@@ -7,16 +7,16 @@ variables:
   # eb4c075298e364f7a5be49fd80942da3232f9829
   dante_build_id: '1298353'
 
-  # virgil 20250401.6
-  # Tue Apr  1 02:40:24 UTC 2025 -- Tue Apr  1 13:40:24 AEDT 2025
+  # virgil 20250402.5
+  # Wed Apr  2 01:17:59 UTC 2025 -- Wed Apr  2 12:17:59 AEDT 2025
   #
-  # Merged PR 34233: Remove 'Teardown' concept in Virgil
-  # 61cf9b046a10f0025d28e03afe5e33e1e322a820
-  virgil_build_id: '1298310'
+  # Merged PR 34351: updating new CommVault Media Agents (CVMA) hostname
+  # aa9697b040a47bdfcc57ee59420c6a8306ca9dbc
+  virgil_build_id: '1299331'
 
-  # sqlbilling 20250401.8
-  # Tue Apr  1 00:56:40 UTC 2025 -- Tue Apr  1 11:56:40 AEDT 2025
+  # sqlbilling 20250401.14
+  # Tue Apr  1 11:43:32 UTC 2025 -- Tue Apr  1 22:43:32 AEDT 2025
   #
-  # Merged PR 34298: Updated us2-prod-frontend-1.yml
-  # 42b037d5e1a701507efb98a4f3be6ec76f3dc8b4
-  sqlbilling_build_id: '1298228'
+  # Merged PR 34271: SQLBillingRemoveCS01876491.yml
+  # e7140ec71836cb4120b12a55441104bf2ca1ba5a
+  sqlbilling_build_id: '1298747'
