@@ -7,12 +7,12 @@ variables:
   # f1a02b4426f8e92704ebb969214cd296e72b3ee8
   dante_build_id: '1299393'
 
-  # virgil 20250402.5
-  # Wed Apr  2 01:17:59 UTC 2025 -- Wed Apr  2 12:17:59 AEDT 2025
+  # virgil 20250402.9
+  # Wed Apr  2 04:55:09 UTC 2025 -- Wed Apr  2 15:55:09 AEDT 2025
   #
-  # Merged PR 34351: updating new CommVault Media Agents (CVMA) hostname
-  # aa9697b040a47bdfcc57ee59420c6a8306ca9dbc
-  virgil_build_id: '1299331'
+  # Merged PR 34375: Reserving VLAN/subnet for DAT segmentation
+  # 8eb7726c74a1030edcbea069ebe7cd5247e254a0
+  virgil_build_id: '1299540'
 
   # sqlbilling 20250401.14
   # Tue Apr  1 11:43:32 UTC 2025 -- Tue Apr  1 22:43:32 AEDT 2025
