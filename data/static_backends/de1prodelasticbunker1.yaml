@@ -1,11 +1,11 @@
 ---
-downloadrate:
+de1.bunker.downloadrate:
   clustered_instances: [de1prodelasticbunker1]
   full_override: |
     backend downloadrate
     stick-table type integer size 1m expire 3600s store bytes_out_rate(1s)
 
-uploadrate:
+de1.bunker.uploadrate:
   clustered_instances: [de1prodelasticbunker1]
   full_override: |
     backend uploadrate
