@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250403.10
-  # Thu Apr  3 05:02:51 UTC 2025 -- Thu Apr  3 16:02:51 AEDT 2025
+  # Dante Build Artifact 20250403.11
+  # Thu Apr  3 08:22:36 UTC 2025 -- Thu Apr  3 19:22:36 AEDT 2025
   #
-  # Merge pull request 34464 from dante_artifact_upgrade into master
-  # 4d8bbe2373aa91eac82bea01c68cea84abca3f36
-  dante_build_id: '1300814'
+  # Merge pull request 34489 from dante_artifact_upgrade into master
+  # 4678bab35c050d1b7aead1a80b747c97cd429d82
+  dante_build_id: '1300973'
 
   # virgil 20250403.12
   # Thu Apr  3 07:33:55 UTC 2025 -- Thu Apr  3 18:33:55 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 62e83df39ed931825c4a1baee57d61cba2f7d0c6
   virgil_build_id: '1300931'
 
-  # sqlbilling 20250403.5
-  # Wed Apr  2 15:27:56 UTC 2025 -- Thu Apr  3 02:27:56 AEDT 2025
+  # sqlbilling 20250403.8
+  # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
   #
-  # Merged PR 32611: Updated us2-prod-frontend-1.yml
-  # e5b695351dea97c1d7a368bea2fa752d003ba1db
-  sqlbilling_build_id: '1300009'
+  # Merged PR 34407: AddSQLBillingUS2
+  # 0a87ae7c7a5a9e3e4c4b23b13682f37873f89e27
+  sqlbilling_build_id: '1300970'
