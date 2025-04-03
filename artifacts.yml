@@ -7,12 +7,12 @@ variables:
   # 4d8bbe2373aa91eac82bea01c68cea84abca3f36
   dante_build_id: '1300814'
 
-  # virgil 20250403.9
-  # Thu Apr  3 02:46:45 UTC 2025 -- Thu Apr  3 13:46:45 AEDT 2025
+  # virgil 20250403.12
+  # Thu Apr  3 07:33:55 UTC 2025 -- Thu Apr  3 18:33:55 AEDT 2025
   #
-  # Merged PR 34444: Break C-00286 LACP bond
-  # fe756fe1b0e533554cdf6d1f9d5f6ee651a77c34
-  virgil_build_id: '1300637'
+  # Merged PR 34337: New VLAN for TEST CCSUK Process Controllers
+  # 62e83df39ed931825c4a1baee57d61cba2f7d0c6
+  virgil_build_id: '1300931'
 
   # sqlbilling 20250403.5
   # Wed Apr  2 15:27:56 UTC 2025 -- Thu Apr  3 02:27:56 AEDT 2025
