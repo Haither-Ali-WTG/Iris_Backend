@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250403.1
-  # Wed Apr  2 22:29:38 UTC 2025 -- Thu Apr  3 09:29:38 AEDT 2025
+  # Dante Build Artifact 20250403.2
+  # Wed Apr  2 23:07:26 UTC 2025 -- Thu Apr  3 10:07:26 AEDT 2025
   #
-  # Merge pull request 34404 from automatic_ptmctl_image_upgrade into master
-  # f914e5f23399e6cee29196e0f5af64ef0b997d9c
-  dante_build_id: '1300284'
+  # Merge pull request 34402 from automatic_botticelli_image_upgrade into master
+  # 6044103cc18087c713d8e4fc9f9c5423c7ba1136
+  dante_build_id: '1300348'
 
-  # virgil 20250402.9
-  # Wed Apr  2 04:55:09 UTC 2025 -- Wed Apr  2 15:55:09 AEDT 2025
+  # virgil 20250403.4
+  # Wed Apr  2 23:35:19 UTC 2025 -- Thu Apr  3 10:35:19 AEDT 2025
   #
-  # Merged PR 34375: Reserving VLAN/subnet for DAT segmentation
-  # 8eb7726c74a1030edcbea069ebe7cd5247e254a0
-  virgil_build_id: '1299540'
+  # Merged PR 34409: Correct C-00282 Port
+  # 649bb387c1d5ed91ad530d2249794f243dfd9412
+  virgil_build_id: '1300383'
 
   # sqlbilling 20250403.5
   # Wed Apr  2 15:27:56 UTC 2025 -- Thu Apr  3 02:27:56 AEDT 2025
