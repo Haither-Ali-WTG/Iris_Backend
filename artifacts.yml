@@ -7,12 +7,12 @@ variables:
   # 4678bab35c050d1b7aead1a80b747c97cd429d82
   dante_build_id: '1300973'
 
-  # virgil 20250403.12
-  # Thu Apr  3 07:33:55 UTC 2025 -- Thu Apr  3 18:33:55 AEDT 2025
+  # virgil 20250404.2
+  # Thu Apr  3 22:25:28 UTC 2025 -- Fri Apr  4 09:25:28 AEDT 2025
   #
-  # Merged PR 34337: New VLAN for TEST CCSUK Process Controllers
-  # 62e83df39ed931825c4a1baee57d61cba2f7d0c6
-  virgil_build_id: '1300931'
+  # Merged PR 34295: Put AU2 q0 back to continuous
+  # 5b48f55817e103f9659e1a22d25b57882b0a727d
+  virgil_build_id: '1301535'
 
   # sqlbilling 20250403.8
   # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
