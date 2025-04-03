@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250403.6
-  # Thu Apr  3 02:17:09 UTC 2025 -- Thu Apr  3 13:17:09 AEDT 2025
+  # Dante Build Artifact 20250403.7
+  # Thu Apr  3 02:49:48 UTC 2025 -- Thu Apr  3 13:49:48 AEDT 2025
   #
-  # Merge pull request 34400 from automatic_styx_image_upgrade into master
-  # 5039ab29cfa7218806b519f01a6d0018a62885bd
-  dante_build_id: '1300597'
+  # Merge pull request 34397 from automatic_nginx_image_upgrade into master
+  # 72ac98d8c153c79605f4d35bd648f3c5a9b115a4
+  dante_build_id: '1300641'
 
-  # virgil 20250403.4
-  # Wed Apr  2 23:35:19 UTC 2025 -- Thu Apr  3 10:35:19 AEDT 2025
+  # virgil 20250403.9
+  # Thu Apr  3 02:46:45 UTC 2025 -- Thu Apr  3 13:46:45 AEDT 2025
   #
-  # Merged PR 34409: Correct C-00282 Port
-  # 649bb387c1d5ed91ad530d2249794f243dfd9412
-  virgil_build_id: '1300383'
+  # Merged PR 34444: Break C-00286 LACP bond
+  # fe756fe1b0e533554cdf6d1f9d5f6ee651a77c34
+  virgil_build_id: '1300637'
 
   # sqlbilling 20250403.5
   # Wed Apr  2 15:27:56 UTC 2025 -- Thu Apr  3 02:27:56 AEDT 2025
