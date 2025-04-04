@@ -8,4 +8,4 @@ elastic_src:
 star_au2s3-b1_wtg_ws:
   description: "*.au2s3-b1.wtg.ws"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?au2s3-b1\.wtg\.ws$
+    - hdr(host) -m reg -i ^([^\.]+\.)?au2s3-b1\.wtg\.ws(:[0-9]+)?$
