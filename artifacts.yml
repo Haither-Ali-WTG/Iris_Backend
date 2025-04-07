@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250404.2
-  # Fri Apr  4 01:42:41 UTC 2025 -- Fri Apr  4 12:42:41 AEDT 2025
+  # Dante Build Artifact 20250408.1
+  # Mon Apr  7 23:19:28 UTC 2025 -- Tue Apr  8 09:19:28 AEST 2025
   #
-  # Merge pull request 34522 from dante_artifact_upgrade into master
-  # 75dad716654930233874a707f7a89bf9274ae351
-  dante_build_id: '1301753'
+  # Merge pull request 34403 from automatic_dante_agent_image_upgrade into master
+  # b7801d0d38ccee41d758f2e7dbfa8dba26dcac70
+  dante_build_id: '1305395'
 
-  # virgil 20250404.8
-  # Fri Apr  4 00:54:59 UTC 2025 -- Fri Apr  4 11:54:59 AEDT 2025
+  # virgil 20250408.2
+  # Mon Apr  7 23:10:59 UTC 2025 -- Tue Apr  8 09:10:59 AEST 2025
   #
-  # Merged PR 34515: rebuild us2 hosts for elasticbunker proxy
-  # f1b9fe0ee1c6ebdb31de8afcf7ecc196c05d090d
-  virgil_build_id: '1301689'
+  # Merged PR 34545: add new entry to us2s3-b1.wtg.ws
+  # 5ff102fbe6362ce6ab4c44e9a14c69aa97b767c1
+  virgil_build_id: '1305383'
 
   # sqlbilling 20250403.8
   # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
