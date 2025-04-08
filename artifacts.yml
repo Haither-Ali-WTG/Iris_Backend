@@ -7,12 +7,12 @@ variables:
   # b7801d0d38ccee41d758f2e7dbfa8dba26dcac70
   dante_build_id: '1305395'
 
-  # virgil 20250408.2
-  # Mon Apr  7 23:10:59 UTC 2025 -- Tue Apr  8 09:10:59 AEST 2025
+  # virgil 20250408.5
+  # Tue Apr  8 00:10:27 UTC 2025 -- Tue Apr  8 10:10:27 AEST 2025
   #
-  # Merged PR 34545: add new entry to us2s3-b1.wtg.ws
-  # 5ff102fbe6362ce6ab4c44e9a14c69aa97b767c1
-  virgil_build_id: '1305383'
+  # Merge pull request 34548 from virgil_python_upgrade into master
+  # cb26235c568fac5129945d25d1f7c06737a7f9c7
+  virgil_build_id: '1305462'
 
   # sqlbilling 20250403.8
   # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
