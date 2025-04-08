@@ -106,7 +106,7 @@ clustered_instances:
 
     us2prodfrontend1testcwservices27:
       # us2-prod-frontend-1-testcw-services-2
-      dc: Us2
+      dc: US2
       frontend:
         maxconn: 20000
         ports:
