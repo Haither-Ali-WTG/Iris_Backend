@@ -7,16 +7,16 @@ variables:
   # 0780f839514bf0d424738db29a36d0d7cb9a028e
   dante_build_id: '1305584'
 
-  # virgil 20250408.5
-  # Tue Apr  8 00:10:27 UTC 2025 -- Tue Apr  8 10:10:27 AEST 2025
+  # virgil 20250409.1
+  # Tue Apr  8 23:46:15 UTC 2025 -- Wed Apr  9 09:46:15 AEST 2025
   #
-  # Merge pull request 34548 from virgil_python_upgrade into master
-  # cb26235c568fac5129945d25d1f7c06737a7f9c7
-  virgil_build_id: '1305462'
+  # Merged PR 34593: CS01922957 - Add new topics for ILS
+  # d147441a833dabf3e1310661a2e7e143453c7991
+  virgil_build_id: '1306563'
 
-  # sqlbilling 20250403.8
-  # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
+  # sqlbilling 20250408.1
+  # Tue Apr  8 07:06:43 UTC 2025 -- Tue Apr  8 17:06:43 AEST 2025
   #
-  # Merged PR 34407: AddSQLBillingUS2
-  # 0a87ae7c7a5a9e3e4c4b23b13682f37873f89e27
-  sqlbilling_build_id: '1300970'
+  # Merged PR 34547: LSL-Updated us2-prod-frontend-1.yml
+  # f7d4068c22f6c09a66ec9bf63356bf69184ea542
+  sqlbilling_build_id: '1305881'
