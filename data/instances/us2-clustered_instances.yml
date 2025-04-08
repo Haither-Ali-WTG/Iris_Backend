@@ -83,3 +83,33 @@ clustered_instances:
         ports:
           web: 2045
           socket: 2044
+    us2prodelasticbunker1:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: US2
+      machine_overrides:
+        us2lbl00477:
+          container:
+            haproxy_image_tag: 3.0.8
+        us2lbl00478:
+          container:
+            haproxy_image_tag: 3.0.8
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2015]
+          ssl: [2016]
+      machine_cluster: us2-prod-elastic-bunker-1
+      iis_servers: []
+      certificates:
+        - star-wisetechglobal-com
+        - star-wtg-zone
+        - star-us2s3-b1-wtg-ws
+      container:
+        resources:
+          production:
+            cpu: 4000m
+            memory: 8000Mi
+      stats:
+        ports:
+          web: 2049
+          socket: 2048
