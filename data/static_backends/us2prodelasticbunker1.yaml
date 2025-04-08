@@ -21,7 +21,7 @@ star.us2s3-b1.wtg.ws:
     cookie US2S3BUNKER insert indirect nocache dynamic secure
     default-server inter 10000 ssl
     server data01-us2nas12 10.6.7.140:443 check check-ssl ssl verify none
-    filter bwlim-out mydownloadlimit limit 31250000 key be_id table downloadrate
-    filter bwlim-in myuploadlimit limit 31250000 key be_id table uploadrate
+    filter bwlim-out mydownloadlimit limit 62500000 key be_id table downloadrate
+    filter bwlim-in myuploadlimit limit 62500000 key be_id table uploadrate
     http-response set-bandwidth-limit mydownloadlimit
     http-request set-bandwidth-limit myuploadlimit
