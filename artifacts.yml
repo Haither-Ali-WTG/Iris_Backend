@@ -7,16 +7,16 @@ variables:
   # 9e05ef2d6ba6d48dbe9954690bc5f5645e566f68
   dante_build_id: '1307793'
 
-  # virgil 20250409.5
-  # Wed Apr  9 07:48:39 UTC 2025 -- Wed Apr  9 17:48:39 AEST 2025
+  # virgil 20250410.1
+  # Wed Apr  9 22:45:30 UTC 2025 -- Thu Apr 10 08:45:30 AEST 2025
   #
-  # Merged PR 34633: DAT server on VMware moving to vlan 1250 for globally unique id and subnet
-  # 3a22d6d1958bc66804df2ac34c481abc7be9faed
-  virgil_build_id: '1307576'
+  # Merged PR 34621: Add new topics for integration with GlobalSearch, break out app, audit, infra...
+  # f5974cc320cf6e22c4c70ec37a69893c121f2f2e
+  virgil_build_id: '1311310'
 
-  # sqlbilling 20250408.1
-  # Tue Apr  8 07:06:43 UTC 2025 -- Tue Apr  8 17:06:43 AEST 2025
+  # sqlbilling 20250409.2
+  # Wed Apr  9 13:26:47 UTC 2025 -- Wed Apr  9 23:26:47 AEST 2025
   #
-  # Merged PR 34547: LSL-Updated us2-prod-frontend-1.yml
-  # f7d4068c22f6c09a66ec9bf63356bf69184ea542
-  sqlbilling_build_id: '1305881'
+  # Merged PR 34640: Updated de1-prod-frontend-1.yml
+  # a95ca0c222c7cacd8bcdd86fc8abd15d5d692d68
+  sqlbilling_build_id: '1309002'
