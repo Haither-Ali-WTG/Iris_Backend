@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250408.3
-  # Tue Apr  8 01:52:22 UTC 2025 -- Tue Apr  8 11:52:22 AEST 2025
+  # Dante Build Artifact 20250409.1
+  # Wed Apr  9 00:42:47 UTC 2025 -- Wed Apr  9 10:42:47 AEST 2025
   #
-  # Merged PR 34572: and new CIDR to ntp sources in US
-  # 0780f839514bf0d424738db29a36d0d7cb9a028e
-  dante_build_id: '1305584'
+  # Merge pull request 34602 from dante_artifact_upgrade into master
+  # a1c08138be9ec3fbf53946bf0009643e4122326d
+  dante_build_id: '1306680'
 
   # virgil 20250409.1
   # Tue Apr  8 23:46:15 UTC 2025 -- Wed Apr  9 09:46:15 AEST 2025
