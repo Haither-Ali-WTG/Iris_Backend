@@ -7,12 +7,12 @@ variables:
   # a1c08138be9ec3fbf53946bf0009643e4122326d
   dante_build_id: '1306680'
 
-  # virgil 20250409.1
-  # Tue Apr  8 23:46:15 UTC 2025 -- Wed Apr  9 09:46:15 AEST 2025
+  # virgil 20250409.5
+  # Wed Apr  9 07:48:39 UTC 2025 -- Wed Apr  9 17:48:39 AEST 2025
   #
-  # Merged PR 34593: CS01922957 - Add new topics for ILS
-  # d147441a833dabf3e1310661a2e7e143453c7991
-  virgil_build_id: '1306563'
+  # Merged PR 34633: DAT server on VMware moving to vlan 1250 for globally unique id and subnet
+  # 3a22d6d1958bc66804df2ac34c481abc7be9faed
+  virgil_build_id: '1307576'
 
   # sqlbilling 20250408.1
   # Tue Apr  8 07:06:43 UTC 2025 -- Tue Apr  8 17:06:43 AEST 2025
