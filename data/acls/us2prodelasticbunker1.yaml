@@ -1,0 +1,11 @@
+---
+elastic_src:
+  description: these subnets belong Elastic Servers in US2
+  tests:
+    - src 10.4.58.0/24
+    - src 10.4.59.0/24
+
+star_us2s3-b1_wtg_ws:
+  description: "*.us2s3-b1.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?us2s3-b1\.wtg\.ws(:[0-9]+)?$

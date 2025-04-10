@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250408.3
-  # Tue Apr  8 01:52:22 UTC 2025 -- Tue Apr  8 11:52:22 AEST 2025
+  # Dante Build Artifact 20250410.1
+  # Wed Apr  9 23:42:37 UTC 2025 -- Thu Apr 10 09:42:37 AEST 2025
   #
-  # Merged PR 34572: and new CIDR to ntp sources in US
-  # 0780f839514bf0d424738db29a36d0d7cb9a028e
-  dante_build_id: '1305584'
+  # Merge pull request 34653 from dante_artifact_upgrade into master
+  # c87e92e72c05e86b183f4e75ff9547314772a713
+  dante_build_id: '1311359'
 
-  # virgil 20250408.5
-  # Tue Apr  8 00:10:27 UTC 2025 -- Tue Apr  8 10:10:27 AEST 2025
+  # virgil 20250410.1
+  # Wed Apr  9 22:45:30 UTC 2025 -- Thu Apr 10 08:45:30 AEST 2025
   #
-  # Merge pull request 34548 from virgil_python_upgrade into master
-  # cb26235c568fac5129945d25d1f7c06737a7f9c7
-  virgil_build_id: '1305462'
+  # Merged PR 34621: Add new topics for integration with GlobalSearch, break out app, audit, infra...
+  # f5974cc320cf6e22c4c70ec37a69893c121f2f2e
+  virgil_build_id: '1311310'
 
-  # sqlbilling 20250403.8
-  # Thu Apr  3 08:20:58 UTC 2025 -- Thu Apr  3 19:20:58 AEDT 2025
+  # sqlbilling 20250409.2
+  # Wed Apr  9 13:26:47 UTC 2025 -- Wed Apr  9 23:26:47 AEST 2025
   #
-  # Merged PR 34407: AddSQLBillingUS2
-  # 0a87ae7c7a5a9e3e4c4b23b13682f37873f89e27
-  sqlbilling_build_id: '1300970'
+  # Merged PR 34640: Updated de1-prod-frontend-1.yml
+  # a95ca0c222c7cacd8bcdd86fc8abd15d5d692d68
+  sqlbilling_build_id: '1309002'

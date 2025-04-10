@@ -16,3 +16,13 @@ machines:
       os: ubuntu2404
       dc: US2
       os_variant: ubuntu
+    us2lbl00477:
+      ansible_host: 10.16.245.111
+      os: ubuntu2404
+      dc: US2
+      os_variant: ubuntu
+    us2lbl00478:
+      ansible_host: 10.16.245.112
+      os: ubuntu2404
+      dc: US2
+      os_variant: ubuntu
