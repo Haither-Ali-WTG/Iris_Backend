@@ -245,7 +245,7 @@ acl {{ acl_item.acl_name }} src -M -f /etc/haproxy/{{ acl_item.file }}
 # ################
 
 {% if dynamic_backends is defined %}
-{%   for backend_name, config_list in dynamic_backends.items() %}
+{%   for backend_name, config_list in dynamic_backends | dictsort %}
 {%     for config in config_list %}
 backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
 {%       if config.balance is defined %}balance {{ config.balance }}
