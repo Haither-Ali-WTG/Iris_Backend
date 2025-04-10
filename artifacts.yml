@@ -7,16 +7,16 @@ variables:
   # c87e92e72c05e86b183f4e75ff9547314772a713
   dante_build_id: '1311359'
 
-  # virgil 20250410.1
-  # Wed Apr  9 22:45:30 UTC 2025 -- Thu Apr 10 08:45:30 AEST 2025
+  # virgil 20250410.8
+  # Thu Apr 10 03:38:12 UTC 2025 -- Thu Apr 10 13:38:12 AEST 2025
   #
-  # Merged PR 34621: Add new topics for integration with GlobalSearch, break out app, audit, infra...
-  # f5974cc320cf6e22c4c70ec37a69893c121f2f2e
-  virgil_build_id: '1311310'
+  # Merged PR 34543: Q0 Kafka - Delete topics marked by TODO
+  # 03a1802fb00584b36cba0983d32b65dd7b54b63f
+  virgil_build_id: '1311730'
 
-  # sqlbilling 20250409.2
-  # Wed Apr  9 13:26:47 UTC 2025 -- Wed Apr  9 23:26:47 AEST 2025
+  # sqlbilling 20250410.3
+  # Thu Apr 10 02:28:41 UTC 2025 -- Thu Apr 10 12:28:41 AEST 2025
   #
-  # Merged PR 34640: Updated de1-prod-frontend-1.yml
-  # a95ca0c222c7cacd8bcdd86fc8abd15d5d692d68
-  sqlbilling_build_id: '1309002'
+  # Merged PR 34668: Update US2
+  # 873073f7585e4b4a51ef70e9fc155b80e2fb5001
+  sqlbilling_build_id: '1311538'
