@@ -87,3 +87,43 @@ clustered_instances:
         ports:
           web: 2049
           socket: 2048
+
+    de1prodfrontend1prodcwservices26:
+      # de1-prod-frontend-1-prodcw-services-26
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2011]
+          ssl: [2012]
+      stats:
+        ports:
+          web: 2051
+          socket: 2050
+      machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
+
+    de1prodfrontend1testcwservices27:
+      # de1-prod-frontend-1-testcw-services-2
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2013]
+          ssl: [2014]
+      stats:
+        ports:
+          web: 2053
+          socket: 2052
+      machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
