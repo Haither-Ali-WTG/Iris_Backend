@@ -18,7 +18,7 @@ sql_backends_test:
     - use_backend us2wtreadonly403l1-wisegrid-net if { dst_port 4364 }
     - use_backend us2wtreadonly404l1-wisegrid-net if { dst_port 4365 }
     - use_backend us2wtreadonly405l1-wisegrid-net if { dst_port 4371 }
-    - use_backend us2wtreadonly407l1-wisegrid-net if { dst_port 4473 }
+    - use_backend us2wtreadonly407l1-wisegrid-net if { dst_port 4373 }
     - use_backend us2wtreadonly408l1-wisegrid-net if { dst_port 4416 }
     - use_backend us2wtreadonly409l1-wisegrid-net if { dst_port 4417 }
     - use_backend us2wtreadonly410l1-wisegrid-net if { dst_port 4420 }
@@ -44,9 +44,9 @@ sql_backends_prod:
     - use_backend us2wpreadonly404l1-wisegrid-net if { dst_port 4379 }
     - use_backend us2wpreadonly405l1-wisegrid-net if { dst_port 4380 }
     - use_backend us2wpreadonly406l1-wisegrid-net if { dst_port 4381 }
-    - use_backend us2wpreadonly407l1-wisegrid-net if { dst_port 4407 }
-    - use_backend us2wpreadonly408l1-wisegrid-net if { dst_port 4408 }
-    - use_backend us2wpreadonly409l1-wisegrid-net if { dst_port 4409 }
+    - use_backend us2wpreadonly407l1-wisegrid-net if { dst_port 4406 }
+    - use_backend us2wpreadonly408l1-wisegrid-net if { dst_port 4407 }
+    - use_backend us2wpreadonly409l1-wisegrid-net if { dst_port 4408 }
     - use_backend us2wpreadonly410l1-wisegrid-net if { dst_port 4410 }
     - use_backend us2wpreadonly411l1-wisegrid-net if { dst_port 4411 }
     - use_backend us2wpreadonly412l1-wisegrid-net if { dst_port 4412 }
