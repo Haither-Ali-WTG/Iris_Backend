@@ -7,16 +7,16 @@ variables:
   # 5bef5c4fbad1fb187b7a3b901a525e995f8264ee
   dante_build_id: '1312787'
 
-  # virgil 20250411.4
-  # Thu Apr 10 23:35:42 UTC 2025 -- Fri Apr 11 09:35:42 AEST 2025
+  # virgil 20250413.1
+  # Sun Apr 13 00:58:55 UTC 2025 -- Sun Apr 13 10:58:55 AEST 2025
   #
-  # Merged PR 34728: Remove several more LACP bonds in US2 DC
-  # 1b0183efad1c1eaf92a4f92c619ca4ccce202357
-  virgil_build_id: '1312740'
+  # Merged PR 34730: naming subnet consistently so it can be setup in Device42
+  # d13f0639ae5d889b31d3ad225737844f304f7ae5
+  virgil_build_id: '1314733'
 
-  # sqlbilling 20250410.5
-  # Thu Apr 10 06:19:28 UTC 2025 -- Thu Apr 10 16:19:28 AEST 2025
+  # sqlbilling 20250411.7
+  # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
   #
-  # Merged PR 34706: SQLBillingAddCS01929430.yml
-  # eea35445c38637809c12ea94816149aa763000f2
-  sqlbilling_build_id: '1311970'
+  # Merged PR 34768: SQLBillingAddCS01930902.yml
+  # fc178e912410362f365228d3ab631a7afb8fcef2
+  sqlbilling_build_id: '1313190'
