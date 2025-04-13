@@ -7,12 +7,12 @@ variables:
   # bb99a29d29c772b129ee2e7ccc473e64a4f1573b
   dante_build_id: '1315595'
 
-  # virgil 20250414.2
-  # Sun Apr 13 21:27:23 UTC 2025 -- Mon Apr 14 07:27:23 AEST 2025
+  # virgil 20250414.5
+  # Sun Apr 13 22:45:41 UTC 2025 -- Mon Apr 14 08:45:41 AEST 2025
   #
-  # Merged PR 34770: Break yet more LACP bonds
-  # b1291003737ce4ebde3edf8791d1eccecf0b7b78
-  virgil_build_id: '1315540'
+  # Merged PR 34769: Added new XL170 SAN arrays mgmt ports
+  # 9e0bb3b6d06d92995aaf8674f58f2f0d48bdc437
+  virgil_build_id: '1315633'
 
   # sqlbilling 20250411.7
   # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
