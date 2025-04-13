@@ -7,12 +7,12 @@ variables:
   # a6de272d00d1f5c4956d70311c36ce062ad35b6e
   dante_build_id: '1314781'
 
-  # virgil 20250413.1
-  # Sun Apr 13 00:58:55 UTC 2025 -- Sun Apr 13 10:58:55 AEST 2025
+  # virgil 20250414.2
+  # Sun Apr 13 21:27:23 UTC 2025 -- Mon Apr 14 07:27:23 AEST 2025
   #
-  # Merged PR 34730: naming subnet consistently so it can be setup in Device42
-  # d13f0639ae5d889b31d3ad225737844f304f7ae5
-  virgil_build_id: '1314733'
+  # Merged PR 34770: Break yet more LACP bonds
+  # b1291003737ce4ebde3edf8791d1eccecf0b7b78
+  virgil_build_id: '1315540'
 
   # sqlbilling 20250411.7
   # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
