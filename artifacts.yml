@@ -7,12 +7,12 @@ variables:
   # bb99a29d29c772b129ee2e7ccc473e64a4f1573b
   dante_build_id: '1315595'
 
-  # virgil 20250414.10
-  # Sun Apr 13 23:35:01 UTC 2025 -- Mon Apr 14 09:35:01 AEST 2025
+  # virgil 20250414.13
+  # Mon Apr 14 00:08:22 UTC 2025 -- Mon Apr 14 10:08:22 AEST 2025
   #
-  # Merged PR 34809: Apex23/24 NTP config
-  # 84ea81301eff7faeeabacd31e4384d28145591f4
-  virgil_build_id: '1315704'
+  # Merged PR 34748: palo-alto-client-vpn-extention
+  # b34bb7ab8f67efce6038cb0a813881a5fb186912
+  virgil_build_id: '1315749'
 
   # sqlbilling 20250411.7
   # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
