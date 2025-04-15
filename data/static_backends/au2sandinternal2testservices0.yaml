@@ -5,8 +5,8 @@ www.test.com:
     enabled: false
   servers:
     - name: test-001
-      ip: 127.0.0.1
+      ip: 10.2.136.13
       port: 8001
     - name: test-002
-      ip: 127.0.0.1
+      ip: 10.2.136.13
       port: 8002
