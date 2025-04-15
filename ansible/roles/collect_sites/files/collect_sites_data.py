@@ -117,7 +117,7 @@ def main():
     args = parser.parse_args()
 
     logging.basicConfig(
-        level=logging.DEBUG if args.debug_output else logging.INFO,
+        level=logging.INFO,
         format="%(name)s - %(levelname)s - %(threadName)s - %(message)s",
     )
 
