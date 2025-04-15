@@ -7,12 +7,12 @@ variables:
   # 54dfc92c14681f94048034234adae7203120950e
   dante_build_id: '1316900'
 
-  # virgil 20250415.3
-  # Tue Apr 15 01:47:02 UTC 2025 -- Tue Apr 15 11:47:02 AEST 2025
+  # virgil 20250415.6
+  # Tue Apr 15 03:34:03 UTC 2025 -- Tue Apr 15 13:34:03 AEST 2025
   #
-  # Merged PR 34849: new networks for cloudflare Zero Trust
-  # 8101a6451eb4a129012c367117a3e3bcd08cf2cf
-  virgil_build_id: '1316849'
+  # Merge pull request 34839 from virgil_python_upgrade into master
+  # 0e8e927f28c1cd1a5077a0a5f4af793f3a8183f6
+  virgil_build_id: '1316958'
 
   # sqlbilling 20250411.7
   # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
