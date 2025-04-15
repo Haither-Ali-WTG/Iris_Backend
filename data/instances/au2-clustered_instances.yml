@@ -396,3 +396,24 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    au2sandinternal2testservices0:
+      # au2-sand-internal-2-test-services-0
+      dc: AU2
+      frontend:
+        maxconn: 2000
+        ports:
+          plaintext: [2020]
+          ssl: [2021]
+      machine_cluster: au2-sand-internal-2
+      iis_servers: []
+      certificates: []
+      container:
+        resources:
+          production:
+            cpu: 4000m
+            memory: 8000Mi
+      stats:
+        ports:
+          web: 2055
+          socket: 2054
