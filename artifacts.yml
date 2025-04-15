@@ -7,12 +7,12 @@ variables:
   # 61bc31639167980a18a832cb50100a981c79801b
   dante_build_id: '1315804'
 
-  # virgil 20250414.13
-  # Mon Apr 14 00:08:22 UTC 2025 -- Mon Apr 14 10:08:22 AEST 2025
+  # virgil 20250415.3
+  # Tue Apr 15 01:47:02 UTC 2025 -- Tue Apr 15 11:47:02 AEST 2025
   #
-  # Merged PR 34748: palo-alto-client-vpn-extention
-  # b34bb7ab8f67efce6038cb0a813881a5fb186912
-  virgil_build_id: '1315749'
+  # Merged PR 34849: new networks for cloudflare Zero Trust
+  # 8101a6451eb4a129012c367117a3e3bcd08cf2cf
+  virgil_build_id: '1316849'
 
   # sqlbilling 20250411.7
   # Fri Apr 11 08:11:41 UTC 2025 -- Fri Apr 11 18:11:41 AEST 2025
