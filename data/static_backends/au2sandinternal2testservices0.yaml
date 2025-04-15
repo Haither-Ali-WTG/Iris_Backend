@@ -1,0 +1,12 @@
+---
+www.test.com:
+  clustered_instances: [au2sandinternal2testservices0]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: test-001
+      ip: 127.0.0.1
+      port: 8001
+    - name: test-002
+      ip: 127.0.0.1
+      port: 8002

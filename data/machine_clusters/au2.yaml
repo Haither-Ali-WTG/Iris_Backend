@@ -75,6 +75,17 @@ au2-sand-internal-1:
       virtual_router_id: 102
       priority: [au2lbl00417, au2lbl00416]
 
+au2-sand-internal-2:
+  machines:
+    au2lbl00889: ~
+  floating_ips:
+    - description: webservices (SAND)
+      ip: 10.2.136.139
+      vlan: 1136
+      preempt: false
+      virtual_router_id: 104
+      priority: [au2lbl00889]
+
 au2-prod-elastic-bunker-1:
   machines:
     au2lbl00951: ~
