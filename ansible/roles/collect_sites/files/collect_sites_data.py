@@ -113,11 +113,11 @@ def main():
     parser.add_argument('--validate_ca', '-ca', help="validate CA", type=str, default='ignore')
     parser.add_argument('--user_name', '-u', help="User name", type=str, default='s_lbwinrmquerier')
     parser.add_argument('--password', '-p', help="Password", type=str)
-    parser.add_argument('--debug_output', '-do', help="Output debug info", action='store_true')
+    parser.add_argument('--debug_output', '-do', help="Output debug info", action='store_false')
     args = parser.parse_args()
 
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.DEBUG if args.debug_output else logging.INFO,
         format="%(name)s - %(levelname)s - %(threadName)s - %(message)s",
     )
 
