@@ -7,12 +7,12 @@ variables:
   # e7482ee0a75f4ccd4c90b22d0f5ea50fc0eaaeb8
   dante_build_id: '1318032'
 
-  # virgil 20250416.8
-  # Wed Apr 16 02:18:02 UTC 2025 -- Wed Apr 16 12:18:02 AEST 2025
+  # virgil 20250416.11
+  # Wed Apr 16 03:26:54 UTC 2025 -- Wed Apr 16 13:26:54 AEST 2025
   #
-  # Merged PR 34922: update VRF of Zero Trust Cloudflare
-  # ee12a9ed3ab79932cdcd556b2b45bd3d9d3c3733
-  virgil_build_id: '1317985'
+  # Merged PR 34899: Remove final LACP bonds from US2, update Hyper-V OS
+  # e1b28bcb44c72a7d3c4c228aba63dbdea24f877e
+  virgil_build_id: '1318070'
 
   # sqlbilling 20250415.7
   # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
