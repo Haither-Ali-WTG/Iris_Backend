@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250415.3
-  # Tue Apr 15 10:15:31 UTC 2025 -- Tue Apr 15 20:15:31 AEST 2025
+  # Dante Build Artifact 20250416.1
+  # Wed Apr 16 00:23:12 UTC 2025 -- Wed Apr 16 10:23:12 AEST 2025
   #
-  # Merge pull request 34847 from dante_python_upgrade into master
-  # bff194ddd583d3688160f7dd631f7454e1f8152a
-  dante_build_id: '1317267'
+  # Merge pull request 34907 from dante_artifact_upgrade into master
+  # c012e90cefba7bfce5b25761e3b360c8e890ff6f
+  dante_build_id: '1317883'
 
-  # virgil 20250415.6
-  # Tue Apr 15 03:34:03 UTC 2025 -- Tue Apr 15 13:34:03 AEST 2025
+  # virgil 20250416.5
+  # Tue Apr 15 23:36:21 UTC 2025 -- Wed Apr 16 09:36:21 AEST 2025
   #
-  # Merge pull request 34839 from virgil_python_upgrade into master
-  # 0e8e927f28c1cd1a5077a0a5f4af793f3a8183f6
-  virgil_build_id: '1316958'
+  # Merged PR 34898: CS01932184 - New Topics for Live Position Project Int Log Team
+  # d87a83e6de912bfb51639f5d7a0ad6f5c7b5202a
+  virgil_build_id: '1317819'
 
   # sqlbilling 20250415.7
   # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
