@@ -7,12 +7,12 @@ variables:
   # c012e90cefba7bfce5b25761e3b360c8e890ff6f
   dante_build_id: '1317883'
 
-  # virgil 20250416.5
-  # Tue Apr 15 23:36:21 UTC 2025 -- Wed Apr 16 09:36:21 AEST 2025
+  # virgil 20250416.8
+  # Wed Apr 16 02:18:02 UTC 2025 -- Wed Apr 16 12:18:02 AEST 2025
   #
-  # Merged PR 34898: CS01932184 - New Topics for Live Position Project Int Log Team
-  # d87a83e6de912bfb51639f5d7a0ad6f5c7b5202a
-  virgil_build_id: '1317819'
+  # Merged PR 34922: update VRF of Zero Trust Cloudflare
+  # ee12a9ed3ab79932cdcd556b2b45bd3d9d3c3733
+  virgil_build_id: '1317985'
 
   # sqlbilling 20250415.7
   # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
