@@ -98,17 +98,14 @@ dynamic-cookie-key WTGLB
 log global
 {% if defaults.mode == 'http' %}
 # NOTE: client-supplied fields *MUST* be escaped with json()
-log-format '{"instance_name" : "{{ defaults.log_name }}", "client_ip" : "%ci", "timestamp" : "%T", "http_request" : "%r", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s", "Th_Ti_TR" : "%Tq", "Tw" : "%Tw", "Tc" : "%Tc", "response_time" : "%Tr", "Tt" : "%Tt", "termination_state" : "%tsc", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_cookie" : "%CC", "captured_response_cookie" : "%CS", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl", "ssl_ciphers" : "%sslc", "ssl_version" : "%sslv", "http_req_host": "%[capture.req.hdr(0),json(utf8s)]", "http_req_user_agent": "%[capture.req.hdr(1),json(utf8s)]", "x-forwarded-for": "%[capture.req.hdr(2),json(utf8s)]"}'
+log-format '{"instance_name": "{{ defaults.log_name }}", "client_ip": "%ci", "timestamp": "%T", "http_request": "%r", "http_status": "%ST", "bytes_read": "%B", "client_port": "%cp", "frontend_ip": "%fi", "frontend_port": "%fp", "backend_source_ip": "%bi", "backend_source_port": "%bp", "accept_date_milliseconds": "%ms", "frontend_name_transport": "%ft", "backend_name": "%b", "server_name": "%s", "server_ip": "%si", "server_port": "%sp", "Th_Ti_TR": "%Tq", "Tw": "%Tw", "Tc": "%Tc", "response_time": "%Tr", "Tt": "%Tt", "termination_state": "%tsc", "actconn": "%ac", "frontend_concurrent_connections": "%fc", "backend_concurrent_connections": "%bc", "srv_conn": "%sc", "retries": "%rc", "srv_queue": "%sq", "backend_queue": "%bq", "captured_request_cookie": "%CC", "captured_response_cookie": "%CS", "captured_request_headers": "%hrl", "captured_response_headers": "%hsl", "ssl_ciphers": "%sslc", "ssl_version": "%sslv", "http_req_host": "%[capture.req.hdr(0),json(utf8s)]", "http_req_user_agent": "%[capture.req.hdr(1),json(utf8s)]", "x-forwarded-for": "%[capture.req.hdr(2),json(utf8s)]"}'
 {% else %}
-log-format '{"instance_name" : "{{ defaults.log_name }}", "client_ip" : "%ci", "timestamp" : "%T", "http_status" : "%ST", "bytes_read" : "%B",  "client_port" : "%cp", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name" : "%b", "server_name" : "%s",  "Tw" : "%Tw", "Tc" : "%Tc", "Tt" : "%Tt", "termination_state" : "%ts", "actconn" : "%ac", "frontend_concurrent_connections" : "%fc", "backend_concurrent_connections" : "%bc", "srv_conn" : "%sc", "retries" : "%rc", "srv_queue" : "%sq", "backend_queue" : "%bq", "captured_request_headers" : "%hrl", "captured_response_headers" : "%hsl"}'
+log-format '{"instance_name": "{{ defaults.log_name }}", "client_ip": "%ci", "timestamp": "%T", "http_status": "%ST", "bytes_read": "%B", "client_port": "%cp", "frontend_ip": "%fi", "frontend_port": "%fp", "backend_source_ip": "%bi", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name": "%b", "server_name": "%s", "server_ip": "%si", "server_port": "%sp", "Tw": "%Tw", "Tc": "%Tc", "Tt": "%Tt", "termination_state": "%ts", "actconn": "%ac", "frontend_concurrent_connections": "%fc", "backend_concurrent_connections": "%bc", "srv_conn": "%sc", "retries": "%rc", "srv_queue": "%sq", "backend_queue": "%bq", "captured_request_headers": "%hrl", "captured_response_headers": "%hsl"}'
 {% endif %}
 
 {% for key, value in custom_defaults.items() %}
 {{ key }} {{ value }}
 {% endfor %}
-
-# TODO escape values appropriately for JSON, particularly those that come from the
-# remote end. HAProxy has a ##json()## converter for this purpose.
 
 
 ########################################
