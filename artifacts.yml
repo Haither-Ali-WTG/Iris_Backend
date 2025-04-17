@@ -7,12 +7,12 @@ variables:
   # 2081ef211e87a872aa5959cfec485d9a94326d27
   dante_build_id: '1318120'
 
-  # virgil 20250416.11
-  # Wed Apr 16 03:26:54 UTC 2025 -- Wed Apr 16 13:26:54 AEST 2025
+  # virgil 20250417.2
+  # Thu Apr 17 02:40:28 UTC 2025 -- Thu Apr 17 12:40:28 AEST 2025
   #
-  # Merged PR 34899: Remove final LACP bonds from US2, update Hyper-V OS
-  # e1b28bcb44c72a7d3c4c228aba63dbdea24f877e
-  virgil_build_id: '1318070'
+  # Merged PR 34952: mn6 C-00082 to C-00958
+  # 94667102626a859f9f7b940baad30c6f2cbdf0d0
+  virgil_build_id: '1319011'
 
   # sqlbilling 20250415.7
   # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
