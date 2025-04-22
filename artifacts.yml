@@ -7,12 +7,12 @@ variables:
   # 2847b4fba2c66c9e4b081f9273efba8600ee9bbd
   dante_build_id: '1319049'
 
-  # virgil 20250417.2
-  # Thu Apr 17 02:40:28 UTC 2025 -- Thu Apr 17 12:40:28 AEST 2025
+  # virgil 20250423.1
+  # Tue Apr 22 21:41:36 UTC 2025 -- Wed Apr 23 07:41:36 AEST 2025
   #
-  # Merged PR 34952: mn6 C-00082 to C-00958
-  # 94667102626a859f9f7b940baad30c6f2cbdf0d0
-  virgil_build_id: '1319011'
+  # Merged PR 34974: Add 5 new C43s for OCP staging
+  # 7a4cf0936716a1cb9f4684ce6c1562397c37a2a4
+  virgil_build_id: '1324383'
 
   # sqlbilling 20250415.7
   # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
