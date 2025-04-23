@@ -7,16 +7,16 @@ variables:
   # f611d9fc28654b840ea573cf42e7da73e792d6cd
   dante_build_id: '1324421'
 
-  # virgil 20250423.1
-  # Tue Apr 22 21:41:36 UTC 2025 -- Wed Apr 23 07:41:36 AEST 2025
+  # virgil 20250423.4
+  # Wed Apr 23 06:33:28 UTC 2025 -- Wed Apr 23 16:33:28 AEST 2025
   #
-  # Merged PR 34974: Add 5 new C43s for OCP staging
-  # 7a4cf0936716a1cb9f4684ce6c1562397c37a2a4
-  virgil_build_id: '1324383'
+  # Merged PR 35012: remove all DAT LACP ports  on apex29,30
+  # 5c099044284a93073931bcbe7a595573935b336d
+  virgil_build_id: '1324839'
 
-  # sqlbilling 20250415.7
-  # Tue Apr 15 07:22:09 UTC 2025 -- Tue Apr 15 17:22:09 AEST 2025
+  # sqlbilling 20250423.3
+  # Wed Apr 23 06:03:36 UTC 2025 -- Wed Apr 23 16:03:36 AEST 2025
   #
-  # Merged PR 34887: SqlBillingAddCS01608304RemoveCS01929737.yml
-  # 8cae8ee8b6ada9829ba11d8c1f07377ad7f73fac
-  sqlbilling_build_id: '1317145'
+  # Merged PR 34994: SQLBillingAddCS01939939.yml
+  # 5c463b416a27cbc20a9fb91e71ae3840bab4f7cc
+  sqlbilling_build_id: '1324813'
