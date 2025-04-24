@@ -7,16 +7,16 @@ variables:
   # e8b1bb00fae270016cb96a20b8d43e3501a2d152
   dante_build_id: '1324879'
 
-  # virgil 20250423.4
-  # Wed Apr 23 06:33:28 UTC 2025 -- Wed Apr 23 16:33:28 AEST 2025
+  # virgil 20250424.2
+  # Wed Apr 23 23:40:48 UTC 2025 -- Thu Apr 24 09:40:48 AEST 2025
   #
-  # Merged PR 35012: remove all DAT LACP ports  on apex29,30
-  # 5c099044284a93073931bcbe7a595573935b336d
-  virgil_build_id: '1324839'
+  # Merge pull request 34977 from virgil_python_upgrade into master
+  # 984a5f36c32025261c5ebcc130d7556c2bf6c9a8
+  virgil_build_id: '1325524'
 
-  # sqlbilling 20250423.3
-  # Wed Apr 23 06:03:36 UTC 2025 -- Wed Apr 23 16:03:36 AEST 2025
+  # sqlbilling 20250423.5
+  # Wed Apr 23 07:52:41 UTC 2025 -- Wed Apr 23 17:52:41 AEST 2025
   #
-  # Merged PR 34994: SQLBillingAddCS01939939.yml
-  # 5c463b416a27cbc20a9fb91e71ae3840bab4f7cc
-  sqlbilling_build_id: '1324813'
+  # Merged PR 35019: Updated au2-prod-frontend-1.yml
+  # fa4bb34578ca77679b2f0ca0b37d55becac1ffdb
+  sqlbilling_build_id: '1324913'
