@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250428.4
-  # Mon Apr 28 05:02:45 UTC 2025 -- Mon Apr 28 15:02:45 AEST 2025
+  # Dante Build Artifact 20250429.1
+  # Mon Apr 28 21:54:42 UTC 2025 -- Tue Apr 29 07:54:42 AEST 2025
   #
-  # Merged PR 35086: Corrected mongo URL in agent Dockerfile
-  # 1488729f5264f5edf832ab0aac94b4c5ae3a4008
-  dante_build_id: '1329574'
+  # Merge pull request 35096 from automatic_dante_agent_image_upgrade into master
+  # c513a7ee4f1c771670076c09e8fb7edd8e4e74ca
+  dante_build_id: '1330288'
 
   # virgil 20250428.3
   # Mon Apr 28 00:38:16 UTC 2025 -- Mon Apr 28 10:38:16 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # a977c06e3c8714d174fbda052b253a7ceffaf206
   virgil_build_id: '1329295'
 
-  # sqlbilling 20250423.5
-  # Wed Apr 23 07:52:41 UTC 2025 -- Wed Apr 23 17:52:41 AEST 2025
+  # sqlbilling 20250428.1
+  # Mon Apr 28 09:46:56 UTC 2025 -- Mon Apr 28 19:46:56 AEST 2025
   #
-  # Merged PR 35019: Updated au2-prod-frontend-1.yml
-  # fa4bb34578ca77679b2f0ca0b37d55becac1ffdb
-  sqlbilling_build_id: '1324913'
+  # Merged PR 35052: km9-AU2SQLBilling-PRJ00051481
+  # fdd28b17349b4fd12679e1f824cfa5a054996d90
+  sqlbilling_build_id: '1329817'
