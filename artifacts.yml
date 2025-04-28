@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250428.2
-  # Mon Apr 28 01:22:52 UTC 2025 -- Mon Apr 28 11:22:52 AEST 2025
+  # Dante Build Artifact 20250428.3
+  # Mon Apr 28 04:07:06 UTC 2025 -- Mon Apr 28 14:07:06 AEST 2025
   #
-  # Merge pull request 35066 from dante_artifact_upgrade into master
-  # 1feca8060f3bfa6511e2c6690ffb2458d6f9db77
-  dante_build_id: '1329344'
+  # Merged PR 35075: Merged OCP agent changes to dante agent
+  # 9c7c738761ff2177064c3e9ec7b432c94b672b49
+  dante_build_id: '1329506'
 
   # virgil 20250428.3
   # Mon Apr 28 00:38:16 UTC 2025 -- Mon Apr 28 10:38:16 AEST 2025
