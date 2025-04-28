@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250429.1
-  # Mon Apr 28 21:54:42 UTC 2025 -- Tue Apr 29 07:54:42 AEST 2025
+  # Dante Build Artifact 20250429.2
+  # Mon Apr 28 23:22:08 UTC 2025 -- Tue Apr 29 09:22:08 AEST 2025
   #
-  # Merge pull request 35096 from automatic_dante_agent_image_upgrade into master
-  # c513a7ee4f1c771670076c09e8fb7edd8e4e74ca
-  dante_build_id: '1330288'
+  # Merged PR 35121: Disable 10.2.87.11 for simulation for a period of time
+  # 7bdd1144b9409a4820d21dfa6ca52441faef7320
+  dante_build_id: '1330417'
 
-  # virgil 20250428.3
-  # Mon Apr 28 00:38:16 UTC 2025 -- Mon Apr 28 10:38:16 AEST 2025
+  # virgil 20250429.7
+  # Mon Apr 28 23:14:36 UTC 2025 -- Tue Apr 29 09:14:36 AEST 2025
   #
-  # Merged PR 35061: update static routes on us2-exit1/2
-  # a977c06e3c8714d174fbda052b253a7ceffaf206
-  virgil_build_id: '1329295'
+  # Merge pull request 35099 from virgil_python_upgrade into master
+  # 8aa9d5c46ed7e377cb73ca56bb0d15866fe62d3a
+  virgil_build_id: '1330396'
 
   # sqlbilling 20250428.1
   # Mon Apr 28 09:46:56 UTC 2025 -- Mon Apr 28 19:46:56 AEST 2025
