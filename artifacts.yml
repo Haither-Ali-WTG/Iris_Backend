@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250428.3
-  # Mon Apr 28 04:07:06 UTC 2025 -- Mon Apr 28 14:07:06 AEST 2025
+  # Dante Build Artifact 20250428.4
+  # Mon Apr 28 05:02:45 UTC 2025 -- Mon Apr 28 15:02:45 AEST 2025
   #
-  # Merged PR 35075: Merged OCP agent changes to dante agent
-  # 9c7c738761ff2177064c3e9ec7b432c94b672b49
-  dante_build_id: '1329506'
+  # Merged PR 35086: Corrected mongo URL in agent Dockerfile
+  # 1488729f5264f5edf832ab0aac94b4c5ae3a4008
+  dante_build_id: '1329574'
 
   # virgil 20250428.3
   # Mon Apr 28 00:38:16 UTC 2025 -- Mon Apr 28 10:38:16 AEST 2025
