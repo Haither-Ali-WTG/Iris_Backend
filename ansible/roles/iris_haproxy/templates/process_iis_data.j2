@@ -8,9 +8,9 @@ clustered_instances:
 {%  set all_iis_servers = [] %}
 {%  for item in (hostvars[clustered_instance]['iis_servers'] + hostvars[clustered_instance]['iis_servers_local'] | default([])) %}
 {%    if item is mapping and item.server is defined %}
-{%      set _ = all_iis_servers.append(item.server) %}
+{%      set _tmp = all_iis_servers.append(item.server) %}
 {%    else %}
-{%      set _ = all_iis_servers.append(item) %}
+{%      set _tmp = all_iis_servers.append(item) %}
 {%    endif %}
 {%  endfor %}
 {%  for file in iis_files %}
