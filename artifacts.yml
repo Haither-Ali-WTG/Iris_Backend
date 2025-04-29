@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250429.2
-  # Mon Apr 28 23:22:08 UTC 2025 -- Tue Apr 29 09:22:08 AEST 2025
+  # Dante Build Artifact 20250429.3
+  # Tue Apr 29 00:11:01 UTC 2025 -- Tue Apr 29 10:11:01 AEST 2025
   #
-  # Merged PR 35121: Disable 10.2.87.11 for simulation for a period of time
-  # 7bdd1144b9409a4820d21dfa6ca52441faef7320
-  dante_build_id: '1330417'
+  # Merge pull request 35107 from dante_python_upgrade into master
+  # f2e27fb9e48821b3f39fdafee1a020070dfa1c40
+  dante_build_id: '1330488'
 
   # virgil 20250429.7
   # Mon Apr 28 23:14:36 UTC 2025 -- Tue Apr 29 09:14:36 AEST 2025
