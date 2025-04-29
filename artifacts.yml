@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250429.5
-  # Tue Apr 29 05:03:40 UTC 2025 -- Tue Apr 29 15:03:40 AEST 2025
+  # Dante Build Artifact 20250430.1
+  # Tue Apr 29 23:04:46 UTC 2025 -- Wed Apr 30 09:04:46 AEST 2025
   #
-  # Merge pull request 35152 from dante_artifact_upgrade into master
-  # f906574db8dfa34803926dc6b7a6a80400e9ad24
-  dante_build_id: '1330802'
+  # Merged PR 35120: Cumulus 5.12.1 support
+  # c51ab1f43044939f4d2d1d83bafc9db0f0494dcc
+  dante_build_id: '1331643'
 
   # virgil 20250429.10
   # Tue Apr 29 04:11:32 UTC 2025 -- Tue Apr 29 14:11:32 AEST 2025
