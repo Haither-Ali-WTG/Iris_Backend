@@ -38,8 +38,6 @@
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
         sqlbilling_acl: "{{ clustered_instance.sqlbilling_acl | default([]) }}"
-        iis_servers: "{{ clustered_instance.iis_servers | default([]) }}"
-        iis_servers_local: "{{ clustered_instance.iis_servers_local | default([]) }}"
         resources: "{{ clustered_instance.resources | default({}) }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
