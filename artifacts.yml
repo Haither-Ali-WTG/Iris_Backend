@@ -7,12 +7,12 @@ variables:
   # 15e2c3cc988c1abe3c20266920351f196573d0d5
   dante_build_id: '1330587'
 
-  # virgil 20250429.7
-  # Mon Apr 28 23:14:36 UTC 2025 -- Tue Apr 29 09:14:36 AEST 2025
+  # virgil 20250429.10
+  # Tue Apr 29 04:11:32 UTC 2025 -- Tue Apr 29 14:11:32 AEST 2025
   #
-  # Merge pull request 35099 from virgil_python_upgrade into master
-  # 8aa9d5c46ed7e377cb73ca56bb0d15866fe62d3a
-  virgil_build_id: '1330396'
+  # Merged PR 35145: More Prod Hyper-V into Rack301, and 303
+  # 034b7aea7bc57ead4659938320a3b24d1895942e
+  virgil_build_id: '1330738'
 
   # sqlbilling 20250428.1
   # Mon Apr 28 09:46:56 UTC 2025 -- Mon Apr 28 19:46:56 AEST 2025
