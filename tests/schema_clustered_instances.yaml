@@ -16,9 +16,11 @@ clustered_instance:
   machine_overrides: map(include('haproxy_settings'),
                          key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'),
                          required=False)
-  iis_servers: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=True)
+  iis_servers: list(any(include('iis_server_settings'),
+                        regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')), required=True)
   iis_user: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
-  iis_servers_local: list(regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name'), required=False)
+  iis_servers_local: list(any(include('iis_server_settings'),
+                              regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')), required=False)
   iis_user_local: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
   certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=True)
@@ -28,3 +30,7 @@ clustered_instance:
 sqlbilling_acl_settings:
   acl_name: regex('^[a-z_-]+$', name='ACL name', required=True)
   file: regex('^[a-zA-Z0-9_-]+\.acl$', name='ACL file name', required=True)
+
+iis_server_settings:
+  server: regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')
+  agent_port: int(int(min=1, max=65535), required=True)
