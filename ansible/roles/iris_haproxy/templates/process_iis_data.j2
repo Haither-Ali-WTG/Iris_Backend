@@ -5,19 +5,11 @@ clustered_instances: {}
 clustered_instances:
 {% for clustered_instance in clustered_instance_names if (hostvars[clustered_instance]['iis_servers'] | default([]) | length > 0 or hostvars[clustered_instance]['iis_servers_local'] | default([]) | length > 0) %}
   {{ clustered_instance }}:
-{%  set all_iis_servers = [] %}
-{%  for item in (hostvars[clustered_instance]['iis_servers'] + hostvars[clustered_instance]['iis_servers_local'] | default([])) %}
-{%    if item is mapping and item.server is defined %}
-{%      set _tmp = all_iis_servers.append(item.server) %}
-{%    else %}
-{%      set _tmp = all_iis_servers.append(item) %}
-{%    endif %}
-{%  endfor %}
 {%  for file in iis_files %}
-{%    if clustered_instance in (file | split('/')) and (file | split('/') | last) in all_iis_servers %}
+{%    if clustered_instance in (file | split('/')) and ((file | split('/') | last) in hostvars[clustered_instance]['iis_servers'] or (file | split('/') | last) in hostvars[clustered_instance]['iis_servers_local'] | default([]) ) %}
 {%      set server = file | split('/') | last %}
-{%      set file_content = lookup('file', file) | from_yaml %}
     {{ server }}:
+{%      set file_content = lookup('file', file) | from_yaml %}
       server_ip: {{ file_content.server_ip }}
       websites_list:
 {%      for website in file_content.websites_list %}
