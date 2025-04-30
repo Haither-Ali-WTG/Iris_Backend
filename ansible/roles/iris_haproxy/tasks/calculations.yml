@@ -26,3 +26,15 @@
   when:
     - "'complete_iis_data' in hostvars['localhost']"
     - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
+
+- name: Build agent_ports dict for individual instance
+  set_fact:
+    agent_ports: >-
+      {{
+        agent_ports | default({}) | combine({
+          (item if item is string else item.server):
+          (0 if item is string else item.agent_port | default(0))
+        })
+      }}
+  loop: >-
+    {{ hostvars[inventory_hostname]['iis_servers'] + hostvars[inventory_hostname]['iis_servers_local'] | default([]) }}
