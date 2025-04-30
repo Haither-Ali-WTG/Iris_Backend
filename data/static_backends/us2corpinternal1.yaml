@@ -33,7 +33,7 @@ packages.wisetechglobal.com:
   clustered_instances: [us2corpinternal1]
   http_health_check:
     enabled: true
-    http_path: /pulp/content/Wisetech_Global/
+    http_path: /pulp/content/Wisetech_Global
   servers:
     - name: us2co-sfor-400.wtg.zone
       ip: 10.4.80.48
@@ -90,7 +90,6 @@ us2kvl-v0.wtg.zone:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: 200
   cookie:
     name: US2KVLV0
   servers:
@@ -424,7 +423,6 @@ us2vtv01.wtg.zone:
   http_health_check:
     enabled: true
     http_path: /rest/v1/system-status
-    check_expect: 200
   cookie:
     name: VTVENV
   servers:
