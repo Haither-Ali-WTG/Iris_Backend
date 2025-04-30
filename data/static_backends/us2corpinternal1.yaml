@@ -429,4 +429,4 @@ us2vtv01.wtg.zone:
     - name: us2co-svtv-401.wtg.zone
       ip: 10.4.82.40
       port: 443
-      settings: check check-ssl ssl verify none
+      settings: check check\-ssl ssl verify none
