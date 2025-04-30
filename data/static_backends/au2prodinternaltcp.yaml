@@ -3,7 +3,7 @@ smtp25.au2mail.test.wisecloud.zone:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false
-  default_server: send-proxy inter 60s fall 3 rise 2
+  default_server: send-proxy inter 10s fall 3 rise 2
   servers:
     - name: AU2WT-SRVP-410
       ip: 10.2.70.110
@@ -16,7 +16,7 @@ smtp25.au2mail.wisecloud.zone:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false
-  default_server: send-proxy inter 60s fall 3 rise 2
+  default_server: send-proxy inter 10s fall 3 rise 2
   servers:
     - name: AU2WP-SRVP-420
       ip: 10.2.70.120
@@ -29,7 +29,7 @@ smtp587.au2mail.test.wisecloud.zone:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false
-  default_server: send-proxy inter 60s fall 3 rise 2
+  default_server: send-proxy inter 10s fall 3 rise 2
   servers:
     - name: AU2WT-SRVP-410
       ip: 10.2.70.110
@@ -42,7 +42,7 @@ smtp587.au2mail.wisecloud.zone:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false
-  default_server: send-proxy inter 60s fall 3 rise 2
+  default_server: send-proxy inter 10s fall 3 rise 2
   servers:
     - name: AU2WP-SRVP-420
       ip: 10.2.70.120
