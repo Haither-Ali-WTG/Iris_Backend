@@ -1,0 +1,435 @@
+---
+
+cwcgateway-test.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2wt-scyp-001.test.wisecloud.zone
+      ip: 10.4.67.51
+      port: 9000
+
+cwcgtm-test_wtg_zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2wt-scyp-401.test.wisecloud.zone
+      ip: 10.4.67.51
+      port: 3000
+
+orddc.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml082018.wtg.zone
+      ip: 10.4.82.18
+      port: 3000
+
+packages.wisetechglobal.com:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /pulp/content/Wisetech_Global/
+  servers:
+    - name: us2co-sfor-400.wtg.zone
+      ip: 10.4.80.48
+      port: 443
+      settings: check ssl verify none
+
+ralph-us2.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml082017.wtg.zone
+      ip: 10.4.82.17
+      port: 80
+
+rdg-us2.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: RDPWEB
+    secure: true
+  servers:
+    - name: us2co-srdg-1.wtg.zone
+      ip: 10.4.68.31
+      port: 80
+    - name: us2co-srdg-2.wtg.zone
+      ip: 10.4.68.32
+      port: 80
+
+stats-rdg-us2.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2-prod-backend2-vip1
+      ip: 10.4.64.171
+      port: 2039
+
+stats-uscloud-us2.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2-prod-backend2-vip1
+      ip: 10.4.64.171
+      port: 2039
+  
+us2kvl-v0.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: 200
+  cookie:
+    name: US2KVLV0
+  servers:
+    - name: us2kvl00404.wtg.zone
+      ip: 10.4.128.16
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00405.wtg.zone
+      ip: 10.4.128.17
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00567.wtg.zone
+      ip: 10.4.128.13
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00568.wtg.zone
+      ip: 10.4.128.14
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00569.wtg.zone
+      ip: 10.4.128.15
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00571.wtg.zone
+      ip: 10.4.128.12
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00792.wtg.zone
+      ip: 10.4.128.18
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00793.wtg.zone
+      ip: 10.4.128.19
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00794.wtg.zone
+      ip: 10.4.128.20
+      port: 8006
+      settings: check ssl verify none
+
+us2pi1-corp-internal.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00083.wtg.ws
+      ip: 10.4.83.21
+      port: 2036
+    - name: us2lbl00343.wtg.ws
+      ip: 10.4.83.22
+      port: 2036
+    - name: us2lbl00084.wtg.ws
+      ip: 10.4.83.23
+      port: 2036
+
+us2pi1-corp-tcp.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00083.wtg.ws
+      ip: 10.4.83.21
+      port: 8182
+    - name: us2lbl00343.wtg.ws
+      ip: 10.4.83.22
+      port: 8182
+    - name: us2lbl00084.wtg.ws
+      ip: 10.4.83.23
+      port: 8182
+
+us2pi1-prod-internal.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00083.wtg.ws
+      ip: 10.4.83.21
+      port: 2046
+    - name: us2lbl00343.wtg.ws
+      ip: 10.4.83.22
+      port: 2046
+    - name: us2lbl00084.wtg.ws
+      ip: 10.4.83.23
+      port: 2046
+
+us2pi1-prod-internaltenantservices.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00083.wtg.ws
+      ip: 10.4.83.21
+      port: 2056
+    - name: us2lbl00343.wtg.ws
+      ip: 10.4.83.22
+      port: 2056
+    - name: us2lbl00084.wtg.ws
+      ip: 10.4.83.23
+      port: 2056
+
+us2pi1-prod-tcptenantservices.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00083.wtg.ws
+      ip: 10.4.83.21
+      port: 2066
+    - name: us2lbl00343.wtg.ws
+      ip: 10.4.83.22
+      port: 2066
+    - name: us2lbl00084.wtg.ws
+      ip: 10.4.83.23
+      port: 2066
+
+us2pf1-prod-legacyservices.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2043
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2043
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2043
+
+us2pf1-prod-pierbridge.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2063
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2063
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2063
+
+us2pf1-prod-services.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2031
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2031
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2031
+
+us2pf1-prod-sqlreadonly.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2045
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2045
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2045
+
+us2pf1-prod-tenantservices.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2061
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2061
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2061
+
+us2pf1-prod-customurls.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2036
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2036
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2036
+
+us2pf1-prod-customurls2.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2040
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2040
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2040
+
+us2pf1-prod-rdg.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2039
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2039
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2039
+
+us2pf1-prod-legacyrdg.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2033
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2033
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2033
+
+us2pf2-prod-rdg.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2039
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2039
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2039
+
+us2pf2-prod-legacyrdg.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2033
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2033
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2033
+
+us2pf2-prod-proxy.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2084
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2084
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2084
+
+us2pf2-test-proxy.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2lbl00347.wtg.ws
+      ip: 10.4.64.13
+      port: 2087
+    - name: us2lbl00348.wtg.ws
+      ip: 10.4.64.14
+      port: 2087
+    - name: us2lbl00474.wtg.ws
+      ip: 10.4.64.16
+      port: 2087
+
+us2vtv01.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /rest/v1/system-status
+    check_expect: 200
+  cookie:
+    name: VTVENV
+  servers:
+    - name: us2co-svtv-401.wtg.zone
+      ip: 10.4.82.40
+      port: 443
+      settings: check check-ssl ssl verify none
+

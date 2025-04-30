@@ -153,3 +153,23 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2corpinternal1:
+      # us2-corp-internal-1
+      dc: US2
+      frontend:
+        maxconn: 20000  # This was 30000 in the original instance
+        ports:
+          plaintext: [2015]
+          ssl: [2016]
+      stats:
+        ports:
+          web: 2036
+          socket: 2035
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates:
+        - star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
