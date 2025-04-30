@@ -22,7 +22,7 @@ haproxy_stats_urls:
     - hdr(host) -i us2pf1-prod-customurls.wtg.zone
     - hdr(host) -i us2pf1-prod-customurls2.wtg.zone
     - hdr(host) -i us2pf1-prod-rdg.wtg.zone
-    - hdr(host) -i us2pf1-prod-legacyrdg.wtg.zone    
+    - hdr(host) -i us2pf1-prod-legacyrdg.wtg.zone
     - hdr(host) -i us2pf2-prod-rdg.wtg.zone
     - hdr(host) -i us2pf2-prod-legacyrdg.wtg.zone
     - hdr(host) -i us2pf2-prod-proxy.wtg.zone
@@ -34,4 +34,3 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
-

@@ -10,7 +10,7 @@ cwcgateway-test.wtg.zone:
       ip: 10.4.67.51
       port: 9000
 
-cwcgtm-test_wtg_zone:
+cwcgtm-test.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
     enabled: true
@@ -84,7 +84,7 @@ stats-uscloud-us2.wtg.zone:
     - name: us2-prod-backend2-vip1
       ip: 10.4.64.171
       port: 2039
-  
+
 us2kvl-v0.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
@@ -432,4 +432,3 @@ us2vtv01.wtg.zone:
       ip: 10.4.82.40
       port: 443
       settings: check check-ssl ssl verify none
-
