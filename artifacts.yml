@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250430.1
-  # Tue Apr 29 23:04:46 UTC 2025 -- Wed Apr 30 09:04:46 AEST 2025
+  # Dante Build Artifact 20250501.1
+  # Wed Apr 30 23:48:31 UTC 2025 -- Thu May  1 09:48:31 AEST 2025
   #
-  # Merged PR 35120: Cumulus 5.12.1 support
-  # c51ab1f43044939f4d2d1d83bafc9db0f0494dcc
-  dante_build_id: '1331643'
+  # Merged PR 35240: Added check for cumulus OS before checking the actual version
+  # 3e2dff2426bae17686ee877098d3f6c4ee32cda4
+  dante_build_id: '1332894'
 
-  # virgil 20250429.10
-  # Tue Apr 29 04:11:32 UTC 2025 -- Tue Apr 29 14:11:32 AEST 2025
+  # virgil 20250430.5
+  # Wed Apr 30 05:11:12 UTC 2025 -- Wed Apr 30 15:11:12 AEST 2025
   #
-  # Merged PR 35145: More Prod Hyper-V into Rack301, and 303
-  # 034b7aea7bc57ead4659938320a3b24d1895942e
-  virgil_build_id: '1330738'
+  # Merged PR 35212: Move registry-us to NAT for testing, will update later for others
+  # 32b31f2f22136617e5a5009fb4e81b3cbb72e526
+  virgil_build_id: '1332041'
 
-  # sqlbilling 20250428.1
-  # Mon Apr 28 09:46:56 UTC 2025 -- Mon Apr 28 19:46:56 AEST 2025
+  # sqlbilling 20250501.1
+  # Wed Apr 30 14:09:08 UTC 2025 -- Thu May  1 00:09:08 AEST 2025
   #
-  # Merged PR 35052: km9-AU2SQLBilling-PRJ00051481
-  # fdd28b17349b4fd12679e1f824cfa5a054996d90
-  sqlbilling_build_id: '1329817'
+  # Merged PR 35235: SQLBillingAddCS01946517.yml
+  # 0dad6e5a82084658602cfc3210087c805fd4fb07
+  sqlbilling_build_id: '1332478'
