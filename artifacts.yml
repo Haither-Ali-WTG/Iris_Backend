@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250501.4
-  # Thu May  1 05:03:27 UTC 2025 -- Thu May  1 15:03:27 AEST 2025
+  # Dante Build Artifact 20250501.5
+  # Thu May  1 05:51:17 UTC 2025 -- Thu May  1 15:51:17 AEST 2025
   #
-  # Merge pull request 35264 from dante_artifact_upgrade into master
-  # e0e83a37581f328caccf011f314d3853087240b0
-  dante_build_id: '1333250'
+  # Merged PR 34210: Remove the old s3 teardowns system in dante
+  # d495b1b66f14a3be062c0548bd4da3378adfaa97
+  dante_build_id: '1333304'
 
   # virgil 20250501.6
   # Thu May  1 03:27:36 UTC 2025 -- Thu May  1 13:27:36 AEST 2025
