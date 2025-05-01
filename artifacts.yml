@@ -7,16 +7,16 @@ variables:
   # d495b1b66f14a3be062c0548bd4da3378adfaa97
   dante_build_id: '1333304'
 
-  # virgil 20250501.6
-  # Thu May  1 03:27:36 UTC 2025 -- Thu May  1 13:27:36 AEST 2025
+  # virgil 20250501.10
+  # Thu May  1 08:25:47 UTC 2025 -- Thu May  1 18:25:47 AEST 2025
   #
-  # Merged PR 35256: Move registry to default PAT used in na
-  # f97b74bb7b0cb572540de9db37d2596aca5c1ab4
-  virgil_build_id: '1333128'
+  # Merged PR 35291: WI00903668 - Virgil - Add support for Cumulus 5.11.1
+  # 1094ffb85d849f3c5e27b2c16d1ed3eda5d7c061
+  virgil_build_id: '1333436'
 
-  # sqlbilling 20250501.1
-  # Wed Apr 30 14:09:08 UTC 2025 -- Thu May  1 00:09:08 AEST 2025
+  # sqlbilling 20250501.4
+  # Thu May  1 06:02:28 UTC 2025 -- Thu May  1 16:02:28 AEST 2025
   #
-  # Merged PR 35235: SQLBillingAddCS01946517.yml
-  # 0dad6e5a82084658602cfc3210087c805fd4fb07
-  sqlbilling_build_id: '1332478'
+  # Merged PR 35283: Update Readonly IPs
+  # 12e5d0976b6c96db64c88d9f49d4e5366b301021
+  sqlbilling_build_id: '1333330'
