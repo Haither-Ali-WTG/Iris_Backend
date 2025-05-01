@@ -7,12 +7,12 @@ variables:
   # 3e2dff2426bae17686ee877098d3f6c4ee32cda4
   dante_build_id: '1332894'
 
-  # virgil 20250430.5
-  # Wed Apr 30 05:11:12 UTC 2025 -- Wed Apr 30 15:11:12 AEST 2025
+  # virgil 20250501.6
+  # Thu May  1 03:27:36 UTC 2025 -- Thu May  1 13:27:36 AEST 2025
   #
-  # Merged PR 35212: Move registry-us to NAT for testing, will update later for others
-  # 32b31f2f22136617e5a5009fb4e81b3cbb72e526
-  virgil_build_id: '1332041'
+  # Merged PR 35256: Move registry to default PAT used in na
+  # f97b74bb7b0cb572540de9db37d2596aca5c1ab4
+  virgil_build_id: '1333128'
 
   # sqlbilling 20250501.1
   # Wed Apr 30 14:09:08 UTC 2025 -- Thu May  1 00:09:08 AEST 2025
