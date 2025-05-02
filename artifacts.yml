@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250502.1
-  # Fri May  2 01:09:43 UTC 2025 -- Fri May  2 11:09:43 AEST 2025
+  # Dante Build Artifact 20250502.2
+  # Fri May  2 02:53:55 UTC 2025 -- Fri May  2 12:53:55 AEST 2025
   #
-  # Merged PR 35305: Initial support for cumulus 5.11.1 (checks, skip audisp and basic checks)
-  # 7b93513044421790e6ede67875c033aa2ee86058
-  dante_build_id: '1334130'
+  # Merged PR 35319: Cumulus 5.11.1 support in dante
+  # 647434c78a3af5db289006b4d3695c46972bfe0f
+  dante_build_id: '1334239'
 
   # virgil 20250502.2
   # Fri May  2 01:26:47 UTC 2025 -- Fri May  2 11:26:47 AEST 2025
