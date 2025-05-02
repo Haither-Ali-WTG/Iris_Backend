@@ -7,12 +7,12 @@ variables:
   # 647434c78a3af5db289006b4d3695c46972bfe0f
   dante_build_id: '1334239'
 
-  # virgil 20250502.2
-  # Fri May  2 01:26:47 UTC 2025 -- Fri May  2 11:26:47 AEST 2025
+  # virgil 20250502.5
+  # Fri May  2 04:24:34 UTC 2025 -- Fri May  2 14:24:34 AEST 2025
   #
-  # Merged PR 35313: upgrade apex26 to CL511
-  # 2e705511c6d9a77b6565c2b63d56fdf11d918c6a
-  virgil_build_id: '1334146'
+  # Merged PR 35330: downgrade apex26
+  # a8339f2b2c8f0ef2372758da5adbcc42ef4eb920
+  virgil_build_id: '1334324'
 
   # sqlbilling 20250501.4
   # Thu May  1 06:02:28 UTC 2025 -- Thu May  1 16:02:28 AEST 2025
