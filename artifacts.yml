@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.4
-  # Mon May  5 00:53:13 UTC 2025 -- Mon May  5 10:53:13 AEST 2025
+  # Dante Build Artifact 20250505.6
+  # Mon May  5 01:59:06 UTC 2025 -- Mon May  5 11:59:06 AEST 2025
   #
-  # Merged PR 35328: Cumulus 5.11.1: system packages support
-  # 228b03715884f2e10cec22acfbbc8a7aa1e55109
-  dante_build_id: '1337069'
+  # Merge pull request 35346 from automatic_ascalaphus_image_upgrade into master
+  # d7513807e9e8ff48db561ce716607bfaccfa146b
+  dante_build_id: '1337155'
 
   # virgil 20250505.1
   # Mon May  5 00:02:44 UTC 2025 -- Mon May  5 10:02:44 AEST 2025
