@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.7
-  # Mon May  5 02:32:33 UTC 2025 -- Mon May  5 12:32:33 AEST 2025
+  # Dante Build Artifact 20250505.8
+  # Mon May  5 03:07:43 UTC 2025 -- Mon May  5 13:07:43 AEST 2025
   #
-  # Merge pull request 35345 from automatic_styx_image_upgrade into master
-  # 38f588b426408ad818c3281d526249dface7ba69
-  dante_build_id: '1337216'
+  # Merged PR 35344: Automated bind9 image update
+  # c73e1475064ae58e474a28a7a12bdbb44fbeb46c
+  dante_build_id: '1337259'
 
-  # virgil 20250505.1
-  # Mon May  5 00:02:44 UTC 2025 -- Mon May  5 10:02:44 AEST 2025
+  # virgil 20250505.5
+  # Mon May  5 03:17:30 UTC 2025 -- Mon May  5 13:17:30 AEST 2025
   #
-  # Merged PR 35351: Move NVMe servers to Hyper-V VLAN for testing
-  # 2c3465f3b98d3c35e888aa157c6ded509e2143a3
-  virgil_build_id: '1337004'
+  # Merged PR 35409: upgrade apex25
+  # 225c2ed2e7e08dc0b01d328b271fbfcdc5656d9e
+  virgil_build_id: '1337274'
 
   # sqlbilling 20250502.4
   # Fri May  2 10:23:26 UTC 2025 -- Fri May  2 20:23:26 AEST 2025
