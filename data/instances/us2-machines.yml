@@ -26,3 +26,18 @@ machines:
       os: ubuntu2404
       dc: US2
       os_variant: ubuntu
+    us2lbl00541:
+      ansible_host: 10.4.83.24
+      os: ubuntu2404
+      dc: US2
+      os_variant: ubuntu
+    us2lbl00542:
+      ansible_host: 10.4.83.25
+      os: ubuntu2404
+      dc: US2
+      os_variant: ubuntu
+    us2lbl00920:
+      ansible_host: 10.4.83.26
+      os: ubuntu2404
+      dc: US2
+      os_variant: ubuntu

@@ -1,0 +1,18 @@
+---
+internal_allowed:
+  description: Rejects requests if they don't come from jump hosts
+  order: 40
+  actions:
+    - http-request deny if !jumphost_src haproxy_stats_urls
+
+https_redirect:
+  description: Redirect HTTP to HTTPS
+  order: 50
+  actions:
+    - redirect scheme https if star_wtg_zone !{ ssl_fc }
+
+secure_cookie:
+  description: Set secure attribute
+  order: 60
+  actions:
+    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie

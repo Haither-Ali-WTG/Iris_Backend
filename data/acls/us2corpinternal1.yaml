@@ -1,0 +1,36 @@
+---
+jumphost_src:
+  description: Jump hosts in all regions can be found in these ranges
+  tests:
+    - src 10.2.86.0/24
+    - src 10.3.86.0/24
+    - src 10.4.86.0/24
+
+haproxy_stats_urls:
+  description: URLs for old HAProxy stats pages
+  tests:
+    - hdr(host) -i us2pi1-corp-internal.wtg.zone
+    - hdr(host) -i us2pi1-corp-tcp.wtg.zone
+    - hdr(host) -i us2pi1-prod-internal.wtg.zone
+    - hdr(host) -i us2pi1-prod-internaltenantservices.wtg.zone
+    - hdr(host) -i us2pi1-prod-tcptenantservices.wtg.zone
+    - hdr(host) -i us2pf1-prod-legacyservices.wtg.zone
+    - hdr(host) -i us2pf1-prod-pierbridge.wtg.zone
+    - hdr(host) -i us2pf1-prod-services.wtg.zone
+    - hdr(host) -i us2pf1-prod-sqlreadonly.wtg.zone
+    - hdr(host) -i us2pf1-prod-tenantservices.wtg.zone
+    - hdr(host) -i us2pf1-prod-customurls.wtg.zone
+    - hdr(host) -i us2pf1-prod-customurls2.wtg.zone
+    - hdr(host) -i us2pf1-prod-rdg.wtg.zone
+    - hdr(host) -i us2pf1-prod-legacyrdg.wtg.zone
+    - hdr(host) -i us2pf2-prod-rdg.wtg.zone
+    - hdr(host) -i us2pf2-prod-legacyrdg.wtg.zone
+    - hdr(host) -i us2pf2-prod-proxy.wtg.zone
+    - hdr(host) -i us2pf2-test-proxy.wtg.zone
+    - hdr(host) -i stats-uscloud-us2.wtg.zone
+    - hdr(host) -i stats-rdg-us2.wtg.zone
+
+star_wtg_zone:
+  description: "*.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
