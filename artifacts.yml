@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.3
-  # Mon May  5 00:11:51 UTC 2025 -- Mon May  5 10:11:51 AEST 2025
+  # Dante Build Artifact 20250505.4
+  # Mon May  5 00:53:13 UTC 2025 -- Mon May  5 10:53:13 AEST 2025
   #
-  # Merged PR 35318: Cumulus 5.11.1: clag checks
-  # f74f2e8b0c09b1b30ee70f355d53be07e8923ec5
-  dante_build_id: '1337020'
+  # Merged PR 35328: Cumulus 5.11.1: system packages support
+  # 228b03715884f2e10cec22acfbbc8a7aa1e55109
+  dante_build_id: '1337069'
 
   # virgil 20250505.1
   # Mon May  5 00:02:44 UTC 2025 -- Mon May  5 10:02:44 AEST 2025
