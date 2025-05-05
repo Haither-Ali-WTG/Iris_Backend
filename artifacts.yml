@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.1
-  # Sun May  4 22:58:34 UTC 2025 -- Mon May  5 08:58:34 AEST 2025
+  # Dante Build Artifact 20250505.3
+  # Mon May  5 00:11:51 UTC 2025 -- Mon May  5 10:11:51 AEST 2025
   #
-  # Merge pull request 35347 from automatic_botticelli_image_upgrade into master
-  # 91c342969533fb24692438dadf7820d240e8fdf2
-  dante_build_id: '1336898'
+  # Merged PR 35318: Cumulus 5.11.1: clag checks
+  # f74f2e8b0c09b1b30ee70f355d53be07e8923ec5
+  dante_build_id: '1337020'
 
-  # virgil 20250502.5
-  # Fri May  2 04:24:34 UTC 2025 -- Fri May  2 14:24:34 AEST 2025
+  # virgil 20250505.1
+  # Mon May  5 00:02:44 UTC 2025 -- Mon May  5 10:02:44 AEST 2025
   #
-  # Merged PR 35330: downgrade apex26
-  # a8339f2b2c8f0ef2372758da5adbcc42ef4eb920
-  virgil_build_id: '1334324'
+  # Merged PR 35351: Move NVMe servers to Hyper-V VLAN for testing
+  # 2c3465f3b98d3c35e888aa157c6ded509e2143a3
+  virgil_build_id: '1337004'
 
   # sqlbilling 20250502.4
   # Fri May  2 10:23:26 UTC 2025 -- Fri May  2 20:23:26 AEST 2025
