@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.9
-  # Mon May  5 03:45:50 UTC 2025 -- Mon May  5 13:45:50 AEST 2025
+  # Dante Build Artifact 20250505.10
+  # Mon May  5 04:23:08 UTC 2025 -- Mon May  5 14:23:08 AEST 2025
   #
-  # Merged PR 35401: Disable NVUE auto save
-  # 7cedc526f0ecaeab86aa596ecd01014e8fa7aff6
-  dante_build_id: '1337310'
+  # Merge pull request 35369 from dante_artifact_upgrade into master
+  # 97c4d88c58f4c088e963dd8b201087fedebe4482
+  dante_build_id: '1337362'
 
   # virgil 20250505.5
   # Mon May  5 03:17:30 UTC 2025 -- Mon May  5 13:17:30 AEST 2025
