@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250505.8
-  # Mon May  5 03:07:43 UTC 2025 -- Mon May  5 13:07:43 AEST 2025
+  # Dante Build Artifact 20250505.9
+  # Mon May  5 03:45:50 UTC 2025 -- Mon May  5 13:45:50 AEST 2025
   #
-  # Merged PR 35344: Automated bind9 image update
-  # c73e1475064ae58e474a28a7a12bdbb44fbeb46c
-  dante_build_id: '1337259'
+  # Merged PR 35401: Disable NVUE auto save
+  # 7cedc526f0ecaeab86aa596ecd01014e8fa7aff6
+  dante_build_id: '1337310'
 
   # virgil 20250505.5
   # Mon May  5 03:17:30 UTC 2025 -- Mon May  5 13:17:30 AEST 2025
