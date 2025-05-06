@@ -1,5 +1,5 @@
 ---
-- name: Output haproxy stats  # noqa no-handler
+- name: Output haproxy stats  # noqa: command-shell
   shell:
     cmd: |
       set -o pipefail
@@ -30,6 +30,7 @@
     executable: /bin/bash
   become: yes
   register: haproxy_stats
+  changed_when: false
   ignore_errors: yes
 
 - name: Fail if haproxy stats command failed
