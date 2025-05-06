@@ -1,0 +1,53 @@
+---
+- name: Removing old directory
+  file:
+    path: "{{ playbook_dir }}/instance_stats"
+    state: absent
+  delegate_to: localhost
+  run_once: true
+
+- name: Create directory for instance stats
+  file:
+    dest: "{{ playbook_dir }}/instance_stats"
+    state: directory
+    mode: u=rwx,go=
+  delegate_to: localhost
+  run_once: true
+
+- name: Save haproxy stats
+  include_tasks: save_stats.yml
+  vars:
+    individual_instance_dir: "/mnt/data1/containers/iris_{{ inventory_hostname }}"
+    local_filename_to_save: "{{ playbook_dir }}/instance_stats/{{ inventory_hostname }}"
+
+- name: Get all instance stat files
+  find:
+    paths: "{{ playbook_dir }}/instance_stats/"
+    file_type: file
+  register: found_files
+  delegate_to: localhost
+  run_once: true
+
+- name: Group filenames by instance name
+  set_fact:
+    grouped_stat_files: >-
+      {{ grouped_stat_files | default({}) | combine({
+        prefix: (((grouped_stat_files[prefix] | default([])) + [item.path]) | unique)
+      }) }}
+  vars:
+    prefix: "{{ (item.path | basename).split('_')[0] }}"
+  loop: "{{ found_files.files }}"
+  delegate_to: localhost
+  run_once: true
+
+- name: Output grouped_stat_files
+  debug:
+    msg: "{{ grouped_stat_files }}"
+  delegate_to: localhost
+  run_once: true
+
+- name: Compare the stat files in the group
+  include_tasks: compare_group_files.yml
+  loop: "{{ grouped_stat_files | dict2items }}"
+  loop_control:
+    loop_var: group_item

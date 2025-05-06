@@ -39,6 +39,7 @@
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
         sqlbilling_acl: "{{ clustered_instance.sqlbilling_acl | default([]) }}"
         resources: "{{ clustered_instance.resources | default({}) }}"
+        machine_cluster: "{{ clustered_instance.machine_cluster | default('') }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: "{{ os_codename[machine.os] }}"
