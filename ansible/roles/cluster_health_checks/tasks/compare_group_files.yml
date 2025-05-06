@@ -1,10 +1,12 @@
 ---
 - name: Compare group files
+  delegate_to: localhost
+  run_once: true
+  when: group_item.value | length > 1
   block:
     - name: Compare the first file to others
-      shell: diff -q "{{ group_item.value[0] }}" "{{ item }}"
+      command: diff -q "{{ group_item.value[0] }}" "{{ item }}"
       register: diff_result
-      failed_when: false
       changed_when: false
       loop: "{{ group_item.value[1:] }}"
 
@@ -14,6 +16,3 @@
           The instance {{ group_item.key }} got the different stats: {{ item }}
       when: item.rc != 0
       loop: "{{ diff_result.results }}"
-  delegate_to: localhost
-  run_once: true
-  when: group_item.value | length > 1

@@ -1,5 +1,5 @@
 ---
-- name: Output haproxy stats
+- name: Output haproxy stats  # noqa no-handler
   shell:
     cmd: |
       set -o pipefail
@@ -43,4 +43,5 @@
   copy:
     content: "{{ haproxy_stats.stdout }}"
     dest: "{{ local_filename_to_save }}"
+    mode: u=rwx,go=
   delegate_to: localhost
