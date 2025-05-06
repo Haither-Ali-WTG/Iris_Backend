@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250506.2
-  # Tue May  6 01:22:52 UTC 2025 -- Tue May  6 11:22:52 AEST 2025
+  # Dante Build Artifact 20250506.3
+  # Tue May  6 02:12:17 UTC 2025 -- Tue May  6 12:12:17 AEST 2025
   #
-  # Merge pull request 35466 from dante_artifact_upgrade into master
-  # 16c48a7b1086c40234bd657c095657d091a5ce4a
-  dante_build_id: '1338373'
+  # Merged PR 35473: Added initial version files to all docker images
+  # 5ae4a4370cc2f742b8de19a05a8f17ef1f0df76b
+  dante_build_id: '1338432'
 
   # virgil 20250506.2
   # Mon May  5 23:51:17 UTC 2025 -- Tue May  6 09:51:17 AEST 2025
