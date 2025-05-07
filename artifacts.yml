@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250507.2
-  # Wed May  7 03:46:05 UTC 2025 -- Wed May  7 13:46:05 AEST 2025
+  # Dante Build Artifact 20250507.3
+  # Wed May  7 04:43:01 UTC 2025 -- Wed May  7 14:43:01 AEST 2025
   #
-  # Merged PR 35510: Cumulus 5.11: audisp support
-  # ebb7767337c9c6569ead6022f0ac85eb623caf7a
-  dante_build_id: '1339534'
+  # Merge pull request 35519 from dante_artifact_upgrade into master
+  # 519e2678b9386cf97554657b33c4cec4cf098c13
+  dante_build_id: '1339596'
 
   # virgil 20250507.3
   # Wed May  7 02:59:54 UTC 2025 -- Wed May  7 12:59:54 AEST 2025
