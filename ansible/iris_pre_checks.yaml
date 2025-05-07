@@ -1,0 +1,39 @@
+---
+- name: Check connection to mgmt nodes
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Check Styx endpoints
+      uri:
+        url: "http://{{ item }}:7899"
+        method: HEAD
+        status_code: 200
+      loop: "{{ mgmt_nodes }}"
+      vars:
+        mgmt_nodes: >-
+          {{
+            dc == 'AU2' and ['10.2.0.31', '10.2.0.32', '10.2.0.33']
+            or dc == 'DE1' and ['10.3.0.31', '10.3.0.32', '10.3.0.33']
+            or dc == 'US2' and ['10.4.0.31', '10.4.0.32', '10.4.0.33']
+          }}
+      delegate_to: "{{ specific_host }}"
+
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  vars:
+    enable_dynamic_backends: false
+
+- name: Iris Maintenance Pre-checks
+  hosts: individual_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Compare instance stats
+      include_role:
+        name: cluster_health_checks
+        tasks_from: compare_stats.yml
+      when: machine_cluster == cluster_name

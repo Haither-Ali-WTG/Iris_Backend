@@ -41,6 +41,7 @@
         iis_servers: "{{ clustered_instance.iis_servers | default([]) }}"
         iis_servers_local: "{{ clustered_instance.iis_servers_local | default([]) }}"
         resources: "{{ clustered_instance.resources | default({}) }}"
+        machine_cluster: "{{ clustered_instance.machine_cluster | default('') }}"
 
         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
         virgil_os_codename: "{{ os_codename[machine.os] }}"

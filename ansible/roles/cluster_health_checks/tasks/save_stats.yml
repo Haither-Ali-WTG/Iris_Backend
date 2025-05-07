@@ -1,0 +1,48 @@
+---
+- name: Output haproxy stats  # noqa: command-shell
+  shell:
+    cmd: |
+      set -o pipefail
+      echo 'show stat' | nc -U {{ individual_instance_dir }}/run/haproxy.sock | awk -F, '
+        BEGIN {
+          col_pxname = col_svname = col_addr = col_status = -1;
+        }
+        FNR==1 {
+          # Find the positions of the needed columns
+          for (i=1; i<=NF; i++) {
+            if ($i == "# pxname") col_pxname = i;
+            if ($i == "svname") col_svname = i;
+            if ($i == "addr") col_addr = i;
+            if ($i == "status") col_status = i;
+          }
+          # Check if all needed columns are found
+          if (col_pxname == -1 || col_svname == -1 || col_addr == -1 || col_status == -1) {
+            if (col_pxname == -1) print "Missing: # pxname" > "/dev/stderr";
+            if (col_svname == -1) print "Missing: svname" > "/dev/stderr";
+            if (col_addr == -1) print "Missing: addr" > "/dev/stderr";
+            if (col_status == -1) print "Missing: status" > "/dev/stderr";
+            exit 1;
+          }
+        }
+        FNR>1 {
+          printf("%s,%s,%s,%s\n", $col_pxname, $col_svname, $col_addr, $col_status);
+        }'
+    executable: /bin/bash
+  become: yes
+  register: haproxy_stats
+  changed_when: false
+  ignore_errors: yes
+
+- name: Fail if haproxy stats command failed
+  assert:
+    that:
+      - haproxy_stats.rc == 0
+    fail_msg: >-
+      Failed to get HAProxy stats: {{ haproxy_stats.stderr }}
+
+- name: Save haproxy stats to file
+  copy:
+    content: "{{ haproxy_stats.stdout }}"
+    dest: "{{ local_filename_to_save }}"
+    mode: u=rwx,go=
+  delegate_to: localhost
