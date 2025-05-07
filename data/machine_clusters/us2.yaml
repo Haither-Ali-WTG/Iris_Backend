@@ -48,7 +48,7 @@ us2-prod-elastic-bunker-1:
       virtual_router_id: 103
       priority: [us2lbl00477, us2lbl00478]
 
-us2-corp-intenral-1:
+us2-corp-internal-1:
   machines:
     us2lbl00541: ~
     us2lbl00542: ~
