@@ -7,16 +7,16 @@ variables:
   # 519e2678b9386cf97554657b33c4cec4cf098c13
   dante_build_id: '1339596'
 
-  # virgil 20250507.3
-  # Wed May  7 02:59:54 UTC 2025 -- Wed May  7 12:59:54 AEST 2025
+  # virgil 20250508.1
+  # Wed May  7 21:35:42 UTC 2025 -- Thu May  8 07:35:42 AEST 2025
   #
-  # Merged PR 35509: remove unused AU2 switches
-  # 9d2f11ebe48966fd4e0004d347ee039fdaa1a7ac
-  virgil_build_id: '1339477'
+  # Merged PR 35535: SY5 DAT on Rack407/408/307
+  # 0e2e8e24c85f4b9692d6565248aa4ddbd3599078
+  virgil_build_id: '1340279'
 
-  # sqlbilling 20250506.2
-  # Tue May  6 13:51:12 UTC 2025 -- Tue May  6 23:51:12 AEST 2025
+  # sqlbilling 20250507.9
+  # Wed May  7 10:02:45 UTC 2025 -- Wed May  7 20:02:45 AEST 2025
   #
-  # Merged PR 35446: SQLBillingADDCS01950733.yml
-  # 7534fd690586b32bdde5ae1c64663ecc0a57ea9d
-  sqlbilling_build_id: '1338952'
+  # Merged PR 35537: SQLBillingAddCS01948008.yml
+  # 37cdd1ea1cf31dc0efdf1c4e677e36af99b3b84b
+  sqlbilling_build_id: '1339839'
