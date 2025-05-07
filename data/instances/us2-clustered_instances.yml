@@ -154,7 +154,7 @@ clustered_instances:
         profiles:
           - best_practice_2023
 
-    us2internalservices1:
+    us2corpinternal1:
       dc: US2
       frontend:
         maxconn: 20000  # This was 30000 in the original instance
@@ -165,7 +165,7 @@ clustered_instances:
         ports:
           web: 2036
           socket: 2035
-      machine_cluster: us2-internal-services-1
+      machine_cluster: us2-corp-internal-1
       iis_servers: []
       certificates:
         - star-wisegrid-net
