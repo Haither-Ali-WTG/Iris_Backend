@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250506.4
-  # Tue May  6 03:02:13 UTC 2025 -- Tue May  6 13:02:13 AEST 2025
+  # Dante Build Artifact 20250507.1
+  # Wed May  7 03:02:14 UTC 2025 -- Wed May  7 13:02:14 AEST 2025
   #
-  # Merged PR 35472: Mergin ocp and dante agents
-  # c934e394199dd993de0de48c49206ef0b750adba
-  dante_build_id: '1338491'
+  # Merged PR 35511: Cumulus 5.11: Add more files to nvue ignore
+  # 1a6b58f6eafc386b0a490a78fbdd2027e9cc3f6c
+  dante_build_id: '1339494'
 
-  # virgil 20250506.2
-  # Mon May  5 23:51:17 UTC 2025 -- Tue May  6 09:51:17 AEST 2025
+  # virgil 20250507.3
+  # Wed May  7 02:59:54 UTC 2025 -- Wed May  7 12:59:54 AEST 2025
   #
-  # Merge pull request 35447 from virgil_python_upgrade into master
-  # 1f5a6dd05615990566fd310186466a73c0d3f77c
-  virgil_build_id: '1338251'
+  # Merged PR 35509: remove unused AU2 switches
+  # 9d2f11ebe48966fd4e0004d347ee039fdaa1a7ac
+  virgil_build_id: '1339477'
 
-  # sqlbilling 20250502.4
-  # Fri May  2 10:23:26 UTC 2025 -- Fri May  2 20:23:26 AEST 2025
+  # sqlbilling 20250506.2
+  # Tue May  6 13:51:12 UTC 2025 -- Tue May  6 23:51:12 AEST 2025
   #
-  # Merged PR 35341: SQLBillingAddCS01929430.yml
-  # 1c02c9c95b232f593c4c7b13f76ed29ff4b6f166
-  sqlbilling_build_id: '1334598'
+  # Merged PR 35446: SQLBillingADDCS01950733.yml
+  # 7534fd690586b32bdde5ae1c64663ecc0a57ea9d
+  sqlbilling_build_id: '1338952'
