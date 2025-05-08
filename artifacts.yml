@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250508.4
-  # Thu May  8 04:01:04 UTC 2025 -- Thu May  8 14:01:04 AEST 2025
+  # Dante Build Artifact 20250508.5
+  # Thu May  8 05:33:20 UTC 2025 -- Thu May  8 15:33:20 AEST 2025
   #
-  # Merged PR 35556: Cumulus 5.11: configure nvued as early as possible
-  # f45e230ab8ead0103d1f7c98c10dc8e8c571c3f8
-  dante_build_id: '1340612'
+  # Merged PR 35580: Quick rollback.
+  # b3e41e674a80a4b72c3bb4b293ebedc6ff38cb1a
+  dante_build_id: '1340705'
 
-  # virgil 20250508.1
-  # Wed May  7 21:35:42 UTC 2025 -- Thu May  8 07:35:42 AEST 2025
+  # virgil 20250508.7
+  # Thu May  8 05:21:48 UTC 2025 -- Thu May  8 15:21:48 AEST 2025
   #
-  # Merged PR 35535: SY5 DAT on Rack407/408/307
-  # 0e2e8e24c85f4b9692d6565248aa4ddbd3599078
-  virgil_build_id: '1340279'
+  # Merged PR 35588: update au2-leaf7/8 rack id and slot info
+  # d7dd400960862e00b463635d666dfdd6bfbf4a71
+  virgil_build_id: '1340682'
 
   # sqlbilling 20250507.9
   # Wed May  7 10:02:45 UTC 2025 -- Wed May  7 20:02:45 AEST 2025
