@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250508.3
-  # Thu May  8 03:12:47 UTC 2025 -- Thu May  8 13:12:47 AEST 2025
+  # Dante Build Artifact 20250508.4
+  # Thu May  8 04:01:04 UTC 2025 -- Thu May  8 14:01:04 AEST 2025
   #
-  # Merged PR 35559: WI00905894 - Added keyvault_name.
-  # 954e2ec197ea3c67449cb36138968c8317e950ca
-  dante_build_id: '1340553'
+  # Merged PR 35556: Cumulus 5.11: configure nvued as early as possible
+  # f45e230ab8ead0103d1f7c98c10dc8e8c571c3f8
+  dante_build_id: '1340612'
 
   # virgil 20250508.1
   # Wed May  7 21:35:42 UTC 2025 -- Thu May  8 07:35:42 AEST 2025
