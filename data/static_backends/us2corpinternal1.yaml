@@ -88,8 +88,7 @@ stats-uscloud-us2.wtg.zone:
 us2kvl-v0.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   cookie:
     name: US2KVLV0
   servers:

@@ -155,7 +155,6 @@ clustered_instances:
           - best_practice_2023
 
     us2corpinternal1:
-      # us2-corp-internal-1
       dc: US2
       frontend:
         maxconn: 20000  # This was 30000 in the original instance
