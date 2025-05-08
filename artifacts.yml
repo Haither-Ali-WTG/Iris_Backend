@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250508.5
-  # Thu May  8 05:33:20 UTC 2025 -- Thu May  8 15:33:20 AEST 2025
+  # Dante Build Artifact 20250508.6
+  # Thu May  8 07:03:20 UTC 2025 -- Thu May  8 17:03:20 AEST 2025
   #
-  # Merged PR 35580: Quick rollback.
-  # b3e41e674a80a4b72c3bb4b293ebedc6ff38cb1a
-  dante_build_id: '1340705'
+  # Merge pull request 35587 from dante_artifact_upgrade into master
+  # 060f2e79c7b93182ed4113611906050002f99351
+  dante_build_id: '1340789'
 
   # virgil 20250508.7
   # Thu May  8 05:21:48 UTC 2025 -- Thu May  8 15:21:48 AEST 2025
