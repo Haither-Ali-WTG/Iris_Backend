@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250508.6
-  # Thu May  8 07:03:20 UTC 2025 -- Thu May  8 17:03:20 AEST 2025
+  # Dante Build Artifact 20250509.1
+  # Fri May  9 02:48:02 UTC 2025 -- Fri May  9 12:48:02 AEST 2025
   #
-  # Merge pull request 35587 from dante_artifact_upgrade into master
-  # 060f2e79c7b93182ed4113611906050002f99351
-  dante_build_id: '1340789'
+  # Merged PR 35208: (minor) Delete kafka-utils docker related scripts from dante
+  # a4e74aeb95ea987640098bce599ca4bcf6ca9b2d
+  dante_build_id: '1341635'
 
   # virgil 20250508.7
   # Thu May  8 05:21:48 UTC 2025 -- Thu May  8 15:21:48 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # d7dd400960862e00b463635d666dfdd6bfbf4a71
   virgil_build_id: '1340682'
 
-  # sqlbilling 20250507.9
-  # Wed May  7 10:02:45 UTC 2025 -- Wed May  7 20:02:45 AEST 2025
+  # sqlbilling 20250508.2
+  # Thu May  8 07:29:25 UTC 2025 -- Thu May  8 17:29:25 AEST 2025
   #
-  # Merged PR 35537: SQLBillingAddCS01948008.yml
-  # 37cdd1ea1cf31dc0efdf1c4e677e36af99b3b84b
-  sqlbilling_build_id: '1339839'
+  # Merged PR 35602: CS01952678_CASADL_ADD_IP
+  # 0b3785fc71e0a9224657b7c5b465d07f6405b996
+  sqlbilling_build_id: '1340822'
