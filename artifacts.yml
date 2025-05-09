@@ -7,12 +7,12 @@ variables:
   # 8e522385067b7f40563bdfb34db04f668e150a2b
   dante_build_id: '1341742'
 
-  # virgil 20250508.7
-  # Thu May  8 05:21:48 UTC 2025 -- Thu May  8 15:21:48 AEST 2025
+  # virgil 20250509.2
+  # Fri May  9 10:15:42 UTC 2025 -- Fri May  9 20:15:42 AEST 2025
   #
-  # Merged PR 35588: update au2-leaf7/8 rack id and slot info
-  # d7dd400960862e00b463635d666dfdd6bfbf4a71
-  virgil_build_id: '1340682'
+  # Merged PR 35607: Add VLANs for URS
+  # 98d29f5e268c586596b2e34db1fe7505e4d28a88
+  virgil_build_id: '1342002'
 
   # sqlbilling 20250508.2
   # Thu May  8 07:29:25 UTC 2025 -- Thu May  8 17:29:25 AEST 2025
