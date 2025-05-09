@@ -170,7 +170,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - star-wtg-zone
-        - star-wisetechglobal.com
+        - star-wisetechglobal-com
       cipher:
         profiles:
           - best_practice_2023
