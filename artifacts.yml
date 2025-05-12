@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250512.2
-  # Mon May 12 01:01:32 UTC 2025 -- Mon May 12 11:01:32 AEST 2025
+  # Dante Build Artifact 20250512.3
+  # Mon May 12 02:03:03 UTC 2025 -- Mon May 12 12:03:03 AEST 2025
   #
-  # Merged PR 35620: WI00905894 - Added keyvault_name with a default value.
-  # 67c22f98f01106ca25b4975a2996d025ca6933db
-  dante_build_id: '1344425'
+  # Merge pull request 35670 from dante_artifact_upgrade into master
+  # 3d0b34575254753e44469e38f78c1392dce3a871
+  dante_build_id: '1344513'
 
-  # virgil 20250512.1
-  # Mon May 12 01:07:20 UTC 2025 -- Mon May 12 11:07:20 AEST 2025
+  # virgil 20250512.5
+  # Mon May 12 02:10:16 UTC 2025 -- Mon May 12 12:10:16 AEST 2025
   #
-  # Merged PR 35650: Add new subnet for TEST RD Gateways in VMWare
-  # 0c3aecf873f0e7b173cc42f095c8c1d6a03f1fc7
-  virgil_build_id: '1344437'
+  # Merged PR 35672: config Rack302 Apex53/54 for 5x new nodes
+  # 501fae09f35c35e344ce7872c6417a5818706ce8
+  virgil_build_id: '1344523'
 
   # sqlbilling 20250509.8
   # Fri May  9 11:25:43 UTC 2025 -- Fri May  9 21:25:43 AEST 2025
