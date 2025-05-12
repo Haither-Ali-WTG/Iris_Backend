@@ -14,6 +14,7 @@
     cmd: "kill -USR2 $(cat /var/run/keepalived.pid)"
     executable: /bin/bash
   become: yes
+  changed_when: false
 
 - name: Wait for a few seconds for generating keepalived stats
   pause:
@@ -36,6 +37,7 @@
       {{ line }}
       {% endif %}
       {% endfor %}
+    mode: u=rw,go=r
   register: file_result
   delegate_to: localhost
 
