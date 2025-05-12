@@ -83,6 +83,7 @@ clustered_instances:
         ports:
           web: 2045
           socket: 2044
+
     us2prodelasticbunker1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: US2
@@ -168,7 +169,8 @@ clustered_instances:
       machine_cluster: us2-corp-internal-1
       iis_servers: []
       certificates:
-        - star-wisegrid-net
+        - star-wtg-zone
+        - star-wisetechglobal-com
       cipher:
         profiles:
           - best_practice_2023
