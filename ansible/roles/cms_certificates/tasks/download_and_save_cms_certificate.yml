@@ -15,14 +15,6 @@
       retries: 2
       delay: 5
 
-- name: ??
-  debug:
-    var: certificate_domain
-
-- name:
-  debug:
-    var: real_certificate_name
-
 - name: Get intermediate certificate if required
   uri:
     url: "https://{{ cms_endpoint }}/cms/v1/certificate/{{ certificate_domain }}/{{ real_certificate_name }}"

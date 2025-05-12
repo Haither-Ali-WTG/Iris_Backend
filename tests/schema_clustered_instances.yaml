@@ -23,7 +23,7 @@ clustered_instance:
                               regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')), required=False)
   iis_user_local: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
-  certificates: list(regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)'), required=True)
+  certificates: list(include('certificate_settings'), name='certificate definition', required=True)
   sqlbilling_acl: list(include('sqlbilling_acl_settings'), name='ACL settings for sqlbilling', required=False)
   dc: enum('AU2', 'DE1', 'US2', required=True)
 
@@ -34,3 +34,7 @@ sqlbilling_acl_settings:
 iis_server_settings:
   server: regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')
   agent_port: int(int(min=1, max=65535), required=True)
+
+certificate_settings:
+  name: regex('^[a-z0-9-]+$', name='certificate name (lowercase with dashes)', required=True)
+  cms_resource_group: regex('^RG-(EU|AU|US)-(Corp|Prod|Sand)$', name='cms resource group name', required=False)
