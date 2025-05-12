@@ -7,12 +7,12 @@ variables:
   # e4fae56c3dad894c5c635bf814c075fbcbbc753c
   dante_build_id: '1344884'
 
-  # virgil 20250512.8
-  # Mon May 12 03:50:43 UTC 2025 -- Mon May 12 13:50:43 AEST 2025
+  # virgil 20250513.2
+  # Mon May 12 23:28:44 UTC 2025 -- Tue May 13 09:28:44 AEST 2025
   #
-  # Merged PR 35687: config Rack403 Apex59/60 for 5 hyperv nodes
-  # 2d2f2160fbb356f1d8b3cb4a28f7d0377ad5b9ea
-  virgil_build_id: '1344626'
+  # Merge pull request 35721 from virgil_python_upgrade into master
+  # 864c383990d36fbaf5c7cb4e591b1d068c40f29a
+  virgil_build_id: '1345461'
 
   # sqlbilling 20250509.8
   # Fri May  9 11:25:43 UTC 2025 -- Fri May  9 21:25:43 AEST 2025
