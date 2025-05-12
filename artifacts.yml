@@ -7,12 +7,12 @@ variables:
   # 29a92c67688c0552c5b094c858c2d26a7d257ded
   dante_build_id: '1344581'
 
-  # virgil 20250512.5
-  # Mon May 12 02:10:16 UTC 2025 -- Mon May 12 12:10:16 AEST 2025
+  # virgil 20250512.8
+  # Mon May 12 03:50:43 UTC 2025 -- Mon May 12 13:50:43 AEST 2025
   #
-  # Merged PR 35672: config Rack302 Apex53/54 for 5x new nodes
-  # 501fae09f35c35e344ce7872c6417a5818706ce8
-  virgil_build_id: '1344523'
+  # Merged PR 35687: config Rack403 Apex59/60 for 5 hyperv nodes
+  # 2d2f2160fbb356f1d8b3cb4a28f7d0377ad5b9ea
+  virgil_build_id: '1344626'
 
   # sqlbilling 20250509.8
   # Fri May  9 11:25:43 UTC 2025 -- Fri May  9 21:25:43 AEST 2025
