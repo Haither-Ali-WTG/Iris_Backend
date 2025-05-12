@@ -15,6 +15,14 @@
       retries: 2
       delay: 5
 
+- name: ??
+  debug:
+    var: certificate_domain
+
+- name:
+  debug:
+    var: real_certificate_name
+
 - name: Get intermediate certificate if required
   uri:
     url: "https://{{ cms_endpoint }}/cms/v1/certificate/{{ certificate_domain }}/{{ real_certificate_name }}"
@@ -31,7 +39,7 @@
   delay: 5
   until: not cms_service_output.failed
   when:
-    - intermediate | bool
+    - intermediate
     - "key_vault_name != 'kv-wtg-iris-prod'"
 
 - name: Append intermediate certificate
@@ -40,7 +48,7 @@
       {{ return_secret_value |
          append_intermediate_certificate(cms_service_output.json.certificate) }}
   when:
-    - intermediate | bool
+    - intermediate
     - "key_vault_name != 'kv-wtg-iris-prod'"
 
 - name: Save certificate to file

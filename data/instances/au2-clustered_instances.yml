@@ -20,25 +20,33 @@ clustered_instances:
       iis_user: s_lbwinrmquerier
       websites_config: websites.yml
       certificates:
-        - star-wisegrid-net
-        - star-cargowise-com
-        - star-cargowise-net
-        - star-borderwise-com
-        - star-wisetechacademy-com
-        - star-wisetechglobal-com
-        - star-webtracker-wisegrid-net
-        - star-webcampaign-wisegrid-net
-        - star-webprint-wisegrid-net
-        - ediweb-oceanbridge-co-nz
-        - tracking-bcr-com-au
-        - tracking-eplint-com
-        - ahwprd-webtracker-carozplus-com
-        - webtracking-sila-net-au
-        - star-spweb-wisegrid-net
-        - tracking-pcfs-com-au
-        - star-cfs-wisegrid-net
-        - star-cww-wisegrid-net
-        - star-cww-nonprd-wisegrid-net
+        - name: star-wisegrid-net
+        - name: star-cargowise-com
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
+        - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-wisetechacademy-com
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: ediweb-oceanbridge-co-nz
+        - name: tracking-bcr-com-au
+        - name: tracking-eplint-com
+        - name: ahwprd-webtracker-carozplus-com
+        - name: webtracking-sila-net-au
+        - name: star-spweb-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: tracking-pcfs-com-au
+        - name: star-cfs-wisegrid-net
+        - name: star-cww-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-cww-nonprd-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -55,10 +63,10 @@ clustered_instances:
       iis_user: s_lbwinrmquerier
       websites_config: websites.yml
       certificates:
-        - ahwprd-webtracker-carozplus-com
-        - customers-commercialcustoms-com-au
-        - star-cargowise-com
-        - star-wisegrid-net
+        - name: ahwprd-webtracker-carozplus-com
+        - name: customers-commercialcustoms-com-au
+        - name: star-cargowise-com
+        - name: star-wisegrid-net
       cipher:
         profiles:
           - best_practice_2023
@@ -75,9 +83,9 @@ clustered_instances:
       iis_user: s_lbwinrmquerier
       websites_config: websites.yml
       certificates:
-        - ahwprd-webtracker-carozplus-com
-        - customers-commercialcustoms-com-au
-        - star-cargowise-com
+        - name: ahwprd-webtracker-carozplus-com
+        - name: customers-commercialcustoms-com-au
+        - name: star-cargowise-com
 
     au2corprdg:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -90,9 +98,10 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
-        - star-wisetechglobal-com
-        - star-wisetechglobal-cn
-        - star-wtg-zone
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wisetechglobal-cn
+        - name: star-wtg-zone
       stats:
         ports:
           web: 2037
@@ -127,13 +136,15 @@ clustered_instances:
       iis_user_local: s_lbwinrmquerier
       websites_config: websites_internal.yml
       certificates:
-        - star-wisetechglobal-com
-        - star-wtg-zone
-        - star-sand-wtg-zone
-        - star-testrig3-sand-wtg-zone
-        - star-testrig-sand-wtg-zone
-        - star-bolero-sand-wtg-zone
-        - star-cargowise-com
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wtg-zone
+        - name: star-sand-wtg-zone
+        - name: star-testrig3-sand-wtg-zone
+        - name: star-testrig-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+        - name: star-bolero-sand-wtg-zone
+        - name: star-cargowise-com
       container:
         resources:
           production:
@@ -160,7 +171,7 @@ clustered_instances:
       machine_cluster: au2-sand-internal-1
       iis_servers: []
       certificates:
-        - star-wtg-zone
+        - name: star-wtg-zone
       stats:
         ports:
           web: 2041
@@ -285,7 +296,8 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
-        - star-wisetechglobal-com
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
@@ -300,7 +312,8 @@ clustered_instances:
           ssl: [3140]  # bus_cargo_wisegrid_net_5672
       iis_servers: []
       certificates:
-        - bus-cargo-wisegrid-net
+        - name: bus-cargo-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       machine_cluster: au2-prod-frontend-1
       stats:
         ports:
@@ -344,9 +357,11 @@ clustered_instances:
       machine_cluster: au2-prod-elastic-bunker-1
       iis_servers: []
       certificates:
-        - star-wisetechglobal-com
-        - star-wtg-zone
-        - star-au2s3-b1-wtg-ws
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wtg-zone
+        - name: star-au2s3-b1-wtg-ws
+          cms_resource_group: RG-AU-Prod
       container:
         resources:
           production:
@@ -372,7 +387,7 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
-        - star-wisegrid-net
+        - name: star-wisegrid-net
       cipher:
         profiles:
           - best_practice_2023
@@ -392,7 +407,7 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
-        - star-wisegrid-net
+        - name: star-wisegrid-net
       cipher:
         profiles:
           - best_practice_2023
@@ -413,13 +428,15 @@ clustered_instances:
       iis_user: s_lbwinrmquerier1@sand.wtg.zone
       websites_config: websites_internal.yml
       certificates:
-        - star-wisetechglobal-com
-        - star-wtg-zone
-        - star-sand-wtg-zone
-        - star-testrig3-sand-wtg-zone
-        - star-testrig-sand-wtg-zone
-        - star-bolero-sand-wtg-zone
-        - star-cargowise-com
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wtg-zone
+        - name: star-sand-wtg-zone
+        - name: star-testrig3-sand-wtg-zone
+        - name: star-testrig-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+        - name: star-bolero-sand-wtg-zone
+        - name: star-cargowise-com
       container:
         resources:
           production:
