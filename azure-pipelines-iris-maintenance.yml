@@ -161,6 +161,7 @@ jobs:
       - script: |
           selected_iris_node=$(<ansible/play_maintenance/selected_iris_node.txt)
           echo "##vso[task.setvariable variable=selected_node]$selected_iris_node"
+          echo "Selected node: $selected_iris_node"
         displayName: "Set selected node"
         condition: or(ne(variables['specific_host'], ''), eq(variables['enabled'], 'enabled'))
 

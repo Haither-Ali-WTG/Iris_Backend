@@ -1,0 +1,45 @@
+---
+- name: Set keepalived stats yaml file
+  set_fact:
+    keepalived_stats_yaml: "{{ playbook_dir }}/keepalived.stats.yaml"
+
+- name: Remove old keepalived stats file
+  file:
+    path: "{{ keepalived_stats_yaml }}"
+    state: absent
+  delegate_to: localhost
+
+- name: Generate keepalived stats
+  shell:
+    cmd: "kill -USR2 $(cat /var/run/keepalived.pid)"
+    executable: /bin/bash
+  become: yes
+
+- name: Wait for a few seconds for generating keepalived stats
+  pause:
+    seconds: 3
+
+- name: Read keepalived stats
+  slurp:
+    src: "/tmp/keepalived.stats"
+  become: yes
+  register: keepalived_stats_content
+
+- name: Convert keepalived stats file to YAML file
+  copy:
+    dest: "{{ keepalived_stats_yaml }}"
+    content: |
+      {% for line in (keepalived_stats_content.content | b64decode).split('\n') %}
+      {% if line.startswith('VRRP Instance:') %}
+      {{ line.replace('VRRP Instance:', '').strip() }}:
+      {% else %}
+      {{ line }}
+      {% endif %}
+      {% endfor %}
+  register: file_result
+  delegate_to: localhost
+
+- name: Include variables from stats YAML file
+  include_vars:
+    file: "{{ keepalived_stats_yaml }}"
+    name: "{{ variable_name }}"
