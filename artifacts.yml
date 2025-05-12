@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250509.3
-  # Fri May  9 04:45:34 UTC 2025 -- Fri May  9 14:45:34 AEST 2025
+  # Dante Build Artifact 20250512.1
+  # Mon May 12 00:04:09 UTC 2025 -- Mon May 12 10:04:09 AEST 2025
   #
-  # Merged PR 35604: Deleted teardowns
-  # 8e522385067b7f40563bdfb34db04f668e150a2b
-  dante_build_id: '1341742'
+  # Merge pull request 35644 from dante_artifact_upgrade into master
+  # 1e82fa7344037ef549a56147088e2e8a65793fc5
+  dante_build_id: '1344358'
 
   # virgil 20250509.2
   # Fri May  9 10:15:42 UTC 2025 -- Fri May  9 20:15:42 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 98d29f5e268c586596b2e34db1fe7505e4d28a88
   virgil_build_id: '1342002'
 
-  # sqlbilling 20250508.2
-  # Thu May  8 07:29:25 UTC 2025 -- Thu May  8 17:29:25 AEST 2025
+  # sqlbilling 20250509.8
+  # Fri May  9 11:25:43 UTC 2025 -- Fri May  9 21:25:43 AEST 2025
   #
-  # Merged PR 35602: CS01952678_CASADL_ADD_IP
-  # 0b3785fc71e0a9224657b7c5b465d07f6405b996
-  sqlbilling_build_id: '1340822'
+  # Merged PR 35646: SQLBillingADDCS01955401.yml
+  # 8b79516f01bcaade0f1c6d2b771a4bfa7b56d682
+  sqlbilling_build_id: '1342055'
