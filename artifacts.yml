@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250513.1
-  # Tue May 13 00:22:45 UTC 2025 -- Tue May 13 10:22:45 AEST 2025
+  # Dante Build Artifact 20250513.2
+  # Tue May 13 02:42:42 UTC 2025 -- Tue May 13 12:42:42 AEST 2025
   #
-  # Merge pull request 35734 from dante_artifact_upgrade into master
-  # fb347ead0014398149f2f611fec212547a9840ee
-  dante_build_id: '1345530'
+  # Merged PR 35744: Removed non supported EOL OSes
+  # e0d635ed792732ab36a91018c6e4cd1ea7f8d068
+  dante_build_id: '1345684'
 
   # virgil 20250513.2
   # Mon May 12 23:28:44 UTC 2025 -- Tue May 13 09:28:44 AEST 2025
