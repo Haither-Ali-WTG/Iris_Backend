@@ -1,0 +1,43 @@
+---
+- name: Populate service facts
+  service_facts: ~
+
+- name: Assert keepalived service is present and enabled
+  assert:
+    that:
+      - "'keepalived.service' in ansible_facts.services"
+      - "ansible_facts.services['keepalived.service'].state == 'running'"
+      - "ansible_facts.services['keepalived.service'].status == 'enabled'"
+    fail_msg: "Keepalived service must be running and enabled"
+
+- name: Load keepalived stats
+  include_tasks: load_keepalived_stats.yml
+  vars:
+    variable_name: keepalived_stats1
+
+- name: Wait for a few seconds to allow more VRRP traffic
+  pause:
+    seconds: 5
+
+- name: Load keepalived stats
+  include_tasks: load_keepalived_stats.yml
+  vars:
+    variable_name: keepalived_stats2
+
+- name: Assert keepalived works properly with others
+  assert:
+    that:
+      - >-
+        (keepalived_stats2[item.key]['Advertisements']['Received']
+        > keepalived_stats1[item.key]['Advertisements']['Received']) or
+        (keepalived_stats2[item.key]['Advertisements']['Sent']
+        > keepalived_stats1[item.key]['Advertisements']['Sent'])
+      - >-
+        keepalived_stats1[item.key]['Packet Errors'] == keepalived_stats2[item.key]['Packet Errors']
+      - >-
+        keepalived_stats1[item.key]['Authentication Errors'] == keepalived_stats2[item.key]['Authentication Errors']
+    fail_msg: >
+      Keepalived encountered errors during execution.
+      keepalived_stats1: {{ keepalived_stats1 }}
+      keepalived_stats2: {{ keepalived_stats2 }}
+  loop: "{{ keepalived_stats1 | dict2items }}"

@@ -37,3 +37,13 @@
         name: cluster_health_checks
         tasks_from: compare_stats.yml
       when: machine_cluster == cluster_name
+
+- name: Pre-checks on the target machine
+  hosts: machines
+  gather_facts: no
+  tasks:
+    - name: Check keepalived
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_keepalived.yml
+      when: inventory_hostname == specific_host
