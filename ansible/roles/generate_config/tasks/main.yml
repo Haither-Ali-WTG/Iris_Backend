@@ -1,4 +1,0 @@
----
-- name: Just a test message to be removed in next PR
-  debug:
-    msg: Config will live here
