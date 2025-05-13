@@ -193,5 +193,6 @@ clustered_instances:
       certificates: []
       machine_cluster: us2-corp-internal-1
       stats:
-        web: 8182
-        socket: 2002
+        ports:
+          web: 8182
+          socket: 2002
