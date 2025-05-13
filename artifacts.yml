@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250512.6
-  # Mon May 12 09:19:09 UTC 2025 -- Mon May 12 19:19:09 AEST 2025
+  # Dante Build Artifact 20250513.1
+  # Tue May 13 00:22:45 UTC 2025 -- Tue May 13 10:22:45 AEST 2025
   #
-  # Merged PR 35527: Switch - Set password for cumulus user on switch corresponding to each respective DC
-  # e4fae56c3dad894c5c635bf814c075fbcbbc753c
-  dante_build_id: '1344884'
+  # Merge pull request 35734 from dante_artifact_upgrade into master
+  # fb347ead0014398149f2f611fec212547a9840ee
+  dante_build_id: '1345530'
 
   # virgil 20250513.2
   # Mon May 12 23:28:44 UTC 2025 -- Tue May 13 09:28:44 AEST 2025
