@@ -1,5 +1,5 @@
 ---
-admin-us2_wisecloud_zone:
+admin-us2-wisecloud-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
@@ -13,7 +13,7 @@ admin-us2_wisecloud_zone:
       port: 3389
       settings: check ssl
 
-admin-us2_wtg_zone:
+admin-us2-wtg-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
@@ -27,7 +27,7 @@ admin-us2_wtg_zone:
       port: 3389
       settings: check ssl
 
-daadmin-us2_wisecloud_zone:
+daadmin-us2-wisecloud-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
@@ -41,7 +41,7 @@ daadmin-us2_wisecloud_zone:
       port: 3389
       settings: check ssl
 
-daadmin-us2_wtg_zone:
+daadmin-us2-wtg-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
@@ -55,7 +55,7 @@ daadmin-us2_wtg_zone:
       port: 3389
       settings: check ssl
 
-jump2-us2_wisecloud_zone:
+jump2-us2-wisecloud-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
@@ -69,7 +69,7 @@ jump2-us2_wisecloud_zone:
       port: 3389
       settings: check ssl backup  # It's like this in production, I'd rather not mess with it
 
-jump2-us2_wtg_zone:
+jump2-us2-wtg-zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
