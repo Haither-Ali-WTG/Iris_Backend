@@ -67,7 +67,7 @@ jump2-us2.wisecloud.zone:
     - name: us2wp-srdp-402
       ip: 10.4.86.29
       port: 3389
-      settings: check ssl
+      settings: check ssl backup  # This is how it's configured in the old instance, and I don't know why but I'd rather not mess with it
 
 jump2-us2.wtg.zone:
   clustered_instances: [us2corptcp1]
