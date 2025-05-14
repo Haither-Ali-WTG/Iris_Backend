@@ -14,7 +14,9 @@
   retries: 24
   delay: 5
   until: not cms_service_output.failed
-  when: 'cert.key_vault_name is not defined'
+  when:
+    - "cert.key_vault_name is not defined"
+    - "cert.domain != 'kv-wtg-iris-prod'"
 
 - name: Assign key_vault_name for certs_data (from cache)
   set_fact:

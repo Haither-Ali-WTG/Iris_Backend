@@ -12,7 +12,9 @@
 
 - name: Calculate certificates for the machine
   set_fact:
-    certs_list: "{{ (certs_list | default([]) + hostvars[item].certificates) | unique }}"
+    certs_list: >
+      {{ certs_list | default([]) +
+         (hostvars[item].certificates | default([]) | map(attribute='name') | list) }}
   when:
     - hostvars[item].machine_cluster in machine_clusters
     - '"certificates" in hostvars[item]'

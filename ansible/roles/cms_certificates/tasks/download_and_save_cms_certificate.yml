@@ -31,7 +31,7 @@
   delay: 5
   until: not cms_service_output.failed
   when:
-    - intermediate | bool
+    - intermediate
     - "key_vault_name != 'kv-wtg-iris-prod'"
 
 - name: Append intermediate certificate
@@ -40,7 +40,7 @@
       {{ return_secret_value |
          append_intermediate_certificate(cms_service_output.json.certificate) }}
   when:
-    - intermediate | bool
+    - intermediate
     - "key_vault_name != 'kv-wtg-iris-prod'"
 
 - name: Save certificate to file

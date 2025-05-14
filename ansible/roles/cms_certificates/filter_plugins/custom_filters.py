@@ -1,19 +1,6 @@
 from typing import Dict, List, Optional
 
 
-def from_iris_inventory_host_to_cms_zone(value: str) -> Optional[str]:
-    dc = value[0:2].upper()
-    domain = value[3:3 + 4].upper()
-    if dc == "DE":
-        dc = "EU"
-    if dc not in {"EU", "AU", "US"}:
-        return None
-    if domain not in {"PROD", "SAND", "CORP"}:
-        return None
-    domain = domain.capitalize()
-    return f"RG-{dc}-{domain}"
-
-
 def assign_key_vault_name_from_cache(certs_data: List[Dict[str, str]],
                                      cache: Dict[str, Dict[str, str]]) -> List[Dict[str, str]]:
     for domain_name in certs_data:
@@ -33,9 +20,8 @@ def update_cache(cache: Dict[str, Dict[str, str]], updated_certs: List[Dict[str,
 
 def from_iris_inventory_to_certs_data(certs_data: List[Dict[str, str]],
                                       item: str, certificates: List[str]) -> List[Dict[str, str]]:
-    item = from_iris_inventory_host_to_cms_zone(item)
-    for domain_name in certificates:
-        ans = {'domain': item, 'name': domain_name}
+    for cert in certificates:
+        ans = {'domain': cert.get('cms_resource_group', 'kv-wtg-iris-prod'), 'name': cert['name']}
         certs_data.append(ans)
     return certs_data
 

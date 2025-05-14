@@ -81,7 +81,6 @@
     real_certificate_name: "{{ item.name }}"
     certificate_domain: "{{ item.domain }}"
     certificate_name: 'certificate'
-    intermediate: "{{ intermediate }}"
   loop: "{{ updated_certs }}"
   when: "item.key_vault_name != 'kv-wtg-iris-prod'"
 

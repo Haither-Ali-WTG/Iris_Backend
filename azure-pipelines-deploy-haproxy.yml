@@ -106,11 +106,12 @@ stages:
                         args: >-
                           -u $(user) --diff
                           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                          -e="intermediate=false" -e="s3_host=${{ run.s3_host }}"
+                          -e="s3_host=${{ run.s3_host }}"
                           -e="pure_usernames='${{ run.pure_usernames }}'"
                           -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
                           -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
                           -e "{use_cache: $(cms_use_cache)}"
+                          -e "{intermediate: $(cms_append_intermediate_certificate)}"
                           -e="target_dc=${{ run.agent_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
