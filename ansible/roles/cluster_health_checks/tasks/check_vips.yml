@@ -1,0 +1,40 @@
+---
+- name: Load machine clusters
+  vars:
+    content: >-
+      {{ lookup('file', fname) | from_yaml }}
+  set_fact:
+    cluster_data: >-
+      {{ cluster_data | default({}) | combine(content) }}
+  loop: "{{ lookup('fileglob', '../../../../data/machine_clusters/*.y*ml', wantlist=True) }}"
+  loop_control:
+    loop_var: fname
+
+- name: Get VRRP IP addresses on each machine
+  shell: >-
+    ip a | grep vrrp | grep -oE 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | awk '{print $2}'
+  changed_when: false
+  delegate_to: "{{ item }}"
+  register: vrrp_ips
+  loop: "{{ cluster_machines }}"
+  vars:
+    cluster_machines: "{{ cluster_data[cluster_name]['machines'] | dict2items | map(attribute='key') | list }}"
+
+- name: Set machine vips
+  set_fact:
+    machine_vips: "{{ machine_vips | default({}) | combine({item['item']: item['stdout_lines']}) }}"
+  loop: "{{ vrrp_ips.results }}"
+
+- name: Debug machine vips
+  debug:
+    var: machine_vips
+
+- name: Assert that all floating IPs are present in the VIP list
+  assert:
+    that:
+      - all_vip_list | length == cluster_floating_ips | length
+      - all_vip_list | sort == cluster_floating_ips | sort
+    fail_msg: "VIP lists do not match! Please check."
+  vars:
+    all_vip_list: "{{ machine_vips.values() | flatten | list }}"
+    cluster_floating_ips: "{{ cluster_data[cluster_name]['floating_ips'] | map(attribute='ip') | list }}"
