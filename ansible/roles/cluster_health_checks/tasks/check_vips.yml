@@ -11,8 +11,11 @@
     loop_var: fname
 
 - name: Get VRRP IP addresses on each machine
-  shell: >-
-    ip a | grep vrrp | grep -oE 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | awk '{print $2}'
+  shell:
+    cmd: |
+      set -o pipefail
+      ip a | grep vrrp | grep -oE 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | awk '{print $2}'
+    executable: /bin/bash
   changed_when: false
   delegate_to: "{{ item }}"
   register: vrrp_ips
