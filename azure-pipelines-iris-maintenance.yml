@@ -183,7 +183,7 @@ jobs:
         condition: and(succeeded(), ne(variables['selected_node'], ''))
 
       - task: Ansible@0
-        displayName: "Maintenance pre-checks for $(selected_node)"
+        displayName: "Maintenance pre-checks"
         inputs:
           ansibleInterface: 'agentMachine'
           playbookPathOnAgentMachine: 'ansible/iris_pre_checks.yaml'
@@ -194,8 +194,6 @@ jobs:
             -u dante --diff -e="dc=$(dc)" -e="hall=$(hall)"
             -e="s3_region=$(s3_region)"
             -e="s3_host=$(s3_host)"
-            -e="iso_url_base=$(iso_url_base)"
-            -e="xcc_user=$(xcc_user)"
             -e="specific_host=$(selected_node)"
             -e="key_vault_name=$(key_vault_name)"
             -e="cluster_name=$(System.JobName)"

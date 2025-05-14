@@ -8,8 +8,6 @@
       set_fact:
         bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
 
-    # TODO: Pre-checks
-
     - name: Calculate ztp_server and iso_url_base
       set_fact:
         ztp_server: "{{ hostvars[item]['virgil_ip_primary'] }}"
@@ -28,6 +26,28 @@
       include_role:
         name: azure_keyvault
         tasks_from: generate_linux_secrets.yml
+
+    - name: Stop and disable keepalived service
+      systemd:
+        name: keepalived
+        state: stopped
+        enabled: no
+      become: yes
+
+    - name: Wait for a few seconds to allow VIPs on this machine to be released
+      pause:
+        seconds: 5
+
+    - name: Check VIPs
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_vips.yml
+
+    - name: Assert that all VIPs are only present on other machines
+      assert:
+        that:
+          - machine_vips[specific_host] | length == 0
+        fail_msg: "Found VIPs still on {{ specific_host }}: {{ machine_vips[specific_host] }}"
 
     - name: Rebuild node
       include_role:

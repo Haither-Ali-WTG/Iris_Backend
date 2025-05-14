@@ -47,3 +47,9 @@
         name: cluster_health_checks
         tasks_from: check_keepalived.yml
       when: inventory_hostname == specific_host
+
+    - name: Check VIPs
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_vips.yml
+      when: inventory_hostname == specific_host
