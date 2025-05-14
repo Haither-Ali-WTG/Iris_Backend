@@ -254,7 +254,7 @@ backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
 {%   endif %}
 {%   if config.http_health_check.enabled %}
 option httpchk
-http-check send meth HEAD uri {{ config.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ backend_name }}
+http-check send meth {{ config.http_health_check.method | default('HEAD') }} uri {{ config.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ backend_name }}
 {%-    if config.http_health_check.xforwardedproto_header | default(true) %} hdr X-Forwarded-Proto https
 {%     endif %}
 http-check expect rstatus {{ config.http_health_check.check_expect | default('200|401|403|302|405') }}
@@ -300,7 +300,7 @@ backend {{ name | replace(".", "_") }}
 {%   endif %}
 {%   if backend.http_health_check.enabled %}
 option httpchk
-http-check send meth HEAD uri {{ backend.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ name }}
+http-check send meth {{ backend.http_health_check.method | default('HEAD') }} uri {{ backend.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ name }}
 {%-    if backend.http_health_check.xforwardedproto_header | default(true) %} hdr X-Forwarded-Proto https
 {%     endif %}
 http-check expect rstatus {{ backend.http_health_check.check_expect | default('200|401|403|302|405') }}
