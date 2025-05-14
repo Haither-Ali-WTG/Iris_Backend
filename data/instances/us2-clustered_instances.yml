@@ -177,3 +177,25 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2corptcp1:
+      dc: US2
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 1061
+            - 1062
+            - 1066  # jump2-us2.wisecloud.zone
+            - 1067  # daadmin-us2.wtg.zone
+            - 1068  # daadmin-us2.wisecloud.zone
+            - 1069  # admin-us2.wisecloud.zone
+      iis_servers: []
+      certificates: []
+      machine_cluster: us2-corp-internal-1
+      stats:
+        ports:
+          web: 8182
+          socket: 2002
