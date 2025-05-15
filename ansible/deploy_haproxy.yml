@@ -108,6 +108,9 @@
   strategy: free
   gather_facts: no
   force_handlers: yes
+  vars:
+    iris_run_directory: "/var/log/iris"
+    iris_run_file: "iris_run.log"
   tasks:
     - name: Assert all instances on the machine are successful
       vars:
@@ -131,3 +134,23 @@
         name: iris_keepalived
       # simulation doesn't have vlans so keepalived shuts off silently on ubuntu and throws error on RHEL
       when: not simulation
+
+    - name: Create directory for Iris run file
+      file:
+        path: "{{ iris_run_directory }}"
+        state: directory
+        mode: u=rwx,go=rx
+        owner: dante
+        group: dante
+      become: yes
+
+    - name: Create Iris run file including completion timestamp
+      lineinfile:
+        create: yes
+        line: >-
+            [{{ now().strftime('%s') }}] - Iris run finished at: {{ now().strftime('%a, %d %b %Y %H:%M:%S') }}
+        path: "{{ iris_run_directory }}/{{ iris_run_file }}"
+        mode: u=rw,go=r
+        owner: dante
+        group: dante
+      become: yes
