@@ -63,4 +63,26 @@
       wait_for:
         timeout: "{{ host_delay | default(3600) }}"
 
-# TODO: Post-checks
+    - name: Wait for Iris run - timeout 40mins, poll every 10s
+      wait_for:
+        path: "{{ iris_run_directory }}/{{ iris_run_file }}"
+        sleep: 10
+        timeout: 2400
+      register: iris_run_time
+      vars:
+        iris_run_directory: "/var/log/iris"
+        iris_run_file: "iris_run.log"
+
+    - name: Report Iris run time
+      debug:
+        msg: "Waited {{ iris_run_time.elapsed }} seconds for iris run file to appear"
+
+    - name: Check keepalived
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_keepalived.yml
+
+    - name: Check VIPs
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_vips.yml
