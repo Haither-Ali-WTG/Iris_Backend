@@ -1,0 +1,8 @@
+---
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 79
+  actions:
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc }

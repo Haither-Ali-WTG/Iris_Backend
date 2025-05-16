@@ -1,0 +1,5 @@
+---
+star_wisegrid_net:
+  description: "*.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
