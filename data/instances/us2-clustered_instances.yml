@@ -199,22 +199,3 @@ clustered_instances:
         ports:
           web: 8182
           socket: 2002
-
-    us2prodinternal1services30:
-      # us2-prod-internal-1
-      dc: US2
-      frontend:
-        maxconn: 20000
-        ports:
-          ssl: [3031]
-      stats:
-        ports:
-          web: 2341
-          socket: 2342
-      machine_cluster: us2-prod-internal-1
-      iis_servers: []
-      certificates:
-        - name: star-wisegrid-net
-      cipher:
-        profiles:
-          - best_practice_2023
