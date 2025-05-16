@@ -280,7 +280,7 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
-    au2prodinternal1:
+    au2prodinternal1services30:
       # au2-prod-internal-1
       dc: AU2
       frontend:

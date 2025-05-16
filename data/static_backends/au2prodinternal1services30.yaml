@@ -1,6 +1,6 @@
 ---
 mockendpoints-test.wisegrid.net:
-  clustered_instances: [au2prodinternal1]
+  clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
@@ -10,7 +10,7 @@ mockendpoints-test.wisegrid.net:
       ip: 10.2.69.122
       port: 80
 mockendpoints-api-test.wisegrid.net:
-  clustered_instances: [au2prodinternal1]
+  clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
