@@ -59,15 +59,11 @@
         name: node_maintenance
         tasks_from: wait_rebuild_node.yml
 
-    - name: Wait for post-check
-      wait_for:
-        timeout: "{{ host_delay | default(3600) }}"
-
-    - name: Wait for Iris run - timeout 40mins, poll every 10s
+    - name: Wait for Iris run - timeout 30mins, poll every 10s
       wait_for:
         path: "{{ iris_run_directory }}/{{ iris_run_file }}"
         sleep: 10
-        timeout: 2400
+        timeout: 1800
       register: iris_run_time
       vars:
         iris_run_directory: "/var/log/iris"
