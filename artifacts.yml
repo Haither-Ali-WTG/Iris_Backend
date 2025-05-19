@@ -7,16 +7,16 @@ variables:
   # d3996ad34fb54441d5059af5e39b4981c519be4c
   dante_build_id: '1346799'
 
-  # virgil 20250516.8
-  # Fri May 16 01:29:48 UTC 2025 -- Fri May 16 11:29:48 AEST 2025
+  # virgil 20250519.2
+  # Mon May 19 02:41:09 UTC 2025 -- Mon May 19 12:41:09 AEST 2025
   #
-  # Merged PR 35818: New SN3700 on SY5 Rack306
-  # 855019d944701ceb0ae11d60dded3ac6174aef9f
-  virgil_build_id: '1348710'
+  # Merged PR 35862: delete apex69/70 to allow Dante to pass
+  # 6b26add988a73c4c6fc22c46b54f6fe059895305
+  virgil_build_id: '1351678'
 
-  # sqlbilling 20250514.7
-  # Wed May 14 11:09:23 UTC 2025 -- Wed May 14 21:09:23 AEST 2025
+  # sqlbilling 20250516.5
+  # Fri May 16 11:50:16 UTC 2025 -- Fri May 16 21:50:16 AEST 2025
   #
-  # Merged PR 35805: SQLBillingADDCS01955056CS01959729CS01959865.yml
-  # cf007a6efa562dd812b3bed3ffb41405d1070893
-  sqlbilling_build_id: '1347216'
+  # Merged PR 35849: Updated us2 readonly
+  # 4033cf1d19b6b6cdd4922a304796b4857f72abbe
+  sqlbilling_build_id: '1349230'
