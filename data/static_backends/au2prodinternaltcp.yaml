@@ -50,3 +50,53 @@ smtp587.au2mail.wisecloud.zone:
     - name: AU2WP-SRVP-421
       ip: 10.2.70.121
       port: 587
+
+mockendpoints-api-test-wisegrid-net-13000:
+  clustered_instances: [au2prodinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wt-smep-401
+      ip: 10.2.69.122
+      port: 13000
+
+mockendpoints-api-test-wisegrid-net-13001:
+  clustered_instances: [au2prodinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wt-smep-401
+      ip: 10.2.69.122
+      port: 13001
+
+mockendpoints-api-test-wisegrid-net-13002:
+  clustered_instances: [au2prodinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wt-smep-401
+      ip: 10.2.69.122
+      port: 13002
+
+mockendpoints-api-test-wisegrid-net-13003:
+  clustered_instances: [au2prodinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wt-smep-401
+      ip: 10.2.69.122
+      port: 13003
+
+mockendpoints-api-test-wisegrid-net-13004:
+  clustered_instances: [au2prodinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: au2wt-smep-401
+      ip: 10.2.69.122
+      port: 13004

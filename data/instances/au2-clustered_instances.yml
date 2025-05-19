@@ -280,7 +280,24 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
-
+    au2prodinternal1services30:
+      # au2-prod-internal-1
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          ssl: [3031]
+      stats:
+        ports:
+          web: 2341
+          socket: 2342
+      machine_cluster: au2-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
     au2prodfrontend1prodidp:
       # au2-prod-frontend-1-prod-idp
       dc: AU2
@@ -330,6 +347,11 @@ clustered_instances:
           plaintext:
             - 2025  # TEST backends port 25
             - 2587  # TEST backends port 587
+            - 2130  # mockendpoints_api_test_wisegrid_net_13000
+            - 2131  # mockendpoints_api_test_wisegrid_net_13001
+            - 2132  # mockendpoints_api_test_wisegrid_net_13002
+            - 2133  # mockendpoints_api_test_wisegrid_net_13003
+            - 2134  # mockendpoints_api_test_wisegrid_net_13004
             - 3025  # PROD backends port 25
             - 3587  # PROD backends port 587
       iis_servers: []

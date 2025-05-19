@@ -18,3 +18,28 @@ acl_smtp587_au2mail_wisecloud_zone:
   description: au2mail PROD SMTP Port 587
   tests:
     - dst_port 3587
+
+acl_mockendpoints_api_test_wisegrid_net_13000:
+  description: mockendpoints api test wisegrid net TEST TCP port 13000
+  tests:
+    - dst_port 2130
+
+acl_mockendpoints_api_test_wisegrid_net_13001:
+  description: mockendpoints api test wisegrid net TEST TCP port 13001
+  tests:
+    - dst_port 2131
+
+acl_mockendpoints_api_test_wisegrid_net_13002:
+  description: mockendpoints api test wisegrid net TEST TCP port 13002
+  tests:
+    - dst_port 2132
+
+acl_mockendpoints_api_test_wisegrid_net_13003:
+  description: mockendpoints api test wisegrid net TEST TCP port 13003
+  tests:
+    - dst_port 2133
+
+acl_mockendpoints_api_test_wisegrid_net_13004:
+  description: mockendpoints api test wisegrid net TEST TCP port 13004
+  tests:
+    - dst_port 2134
