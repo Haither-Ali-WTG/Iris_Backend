@@ -7,12 +7,12 @@ variables:
   # 1653c8efcae4625bc70ac2d5e36841cb7d63731a
   dante_build_id: '1352711'
 
-  # virgil 20250520.2
-  # Tue May 20 01:32:42 UTC 2025 -- Tue May 20 11:32:42 AEST 2025
+  # virgil 20250520.6
+  # Tue May 20 03:34:55 UTC 2025 -- Tue May 20 13:34:55 AEST 2025
   #
-  # Merge pull request 35882 from virgil_python_upgrade into master
-  # 8e01cd6697b6966e5d9c6850a36d1577599a8c27
-  virgil_build_id: '1352654'
+  # Merged PR 35908: adding apex69/70 at Rack306 SY5
+  # 1cf6cf610b6b38b054dfaeea4ff084be4862c137
+  virgil_build_id: '1352787'
 
   # sqlbilling 20250520.1
   # Mon May 19 14:17:02 UTC 2025 -- Tue May 20 00:17:02 AEST 2025
