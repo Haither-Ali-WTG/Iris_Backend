@@ -13,6 +13,7 @@ haproxy_defaults_settings:
   log_name: any(regex('^[a-z0-9_-]+$', name='label for log'), const('{{ inventory_hostname }}'), required=False)
   fullconn: int(min=1, required=False)
   balance: enum('leastconn', 'roundrobin', 'source', 'first', required=False)
+  health_check_interval: any(regex('^[0-9]+s$', name='health check interval'), int(min=1000, max=60000), required=False)
 
 haproxy_global__settings:
   processes: int(min=1, required=False)
