@@ -7,12 +7,12 @@ variables:
   # 1653c8efcae4625bc70ac2d5e36841cb7d63731a
   dante_build_id: '1352711'
 
-  # virgil 20250520.6
-  # Tue May 20 03:34:55 UTC 2025 -- Tue May 20 13:34:55 AEST 2025
+  # virgil 20250520.10
+  # Tue May 20 05:51:36 UTC 2025 -- Tue May 20 15:51:36 AEST 2025
   #
-  # Merged PR 35908: adding apex69/70 at Rack306 SY5
-  # 1cf6cf610b6b38b054dfaeea4ff084be4862c137
-  virgil_build_id: '1352787'
+  # Merged PR 35918: add ports for hyperv connection on apex55/56
+  # 84fa259add727406a13e6481680479d2968027aa
+  virgil_build_id: '1352894'
 
   # sqlbilling 20250520.1
   # Mon May 19 14:17:02 UTC 2025 -- Tue May 20 00:17:02 AEST 2025
