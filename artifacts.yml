@@ -7,16 +7,16 @@ variables:
   # 7f02bc79e43dbb8f400d2a191d5a8a5f63b27b78
   dante_build_id: '1351732'
 
-  # virgil 20250519.2
-  # Mon May 19 02:41:09 UTC 2025 -- Mon May 19 12:41:09 AEST 2025
+  # virgil 20250520.2
+  # Tue May 20 01:32:42 UTC 2025 -- Tue May 20 11:32:42 AEST 2025
   #
-  # Merged PR 35862: delete apex69/70 to allow Dante to pass
-  # 6b26add988a73c4c6fc22c46b54f6fe059895305
-  virgil_build_id: '1351678'
+  # Merge pull request 35882 from virgil_python_upgrade into master
+  # 8e01cd6697b6966e5d9c6850a36d1577599a8c27
+  virgil_build_id: '1352654'
 
-  # sqlbilling 20250516.5
-  # Fri May 16 11:50:16 UTC 2025 -- Fri May 16 21:50:16 AEST 2025
+  # sqlbilling 20250520.1
+  # Mon May 19 14:17:02 UTC 2025 -- Tue May 20 00:17:02 AEST 2025
   #
-  # Merged PR 35849: Updated us2 readonly
-  # 4033cf1d19b6b6cdd4922a304796b4857f72abbe
-  sqlbilling_build_id: '1349230'
+  # Merged PR 35881: SQLBillingCS01958508.yml
+  # 8798a4847c10ede36c13eef1ae343cd1b60bb337
+  sqlbilling_build_id: '1352181'
