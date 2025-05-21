@@ -65,6 +65,60 @@ jobs:
           specific_host: $(hosts)
           s3_region: AU
           s3_host: $(au2_pure_host)
+        au2-prod-elastic-bunker-1:
+          enabled: $(au2_prod_elastic_bunker_enabled)
+          dc: AU2
+          hall: A
+          xcc_user: $(au2_xcc_user)
+          iso_url_base: $(au2_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: AU
+          s3_host: $(au2_pure_host)
+        de1-prod-frontend-1:
+          enabled: $(de1_prod_frontend_enabled)
+          dc: DE1
+          hall: A
+          xcc_user: $(de1_xcc_user)
+          iso_url_base: $(de1_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: DE
+          s3_host: $(de1_pure_host)
+        de1-prod-elastic-bunker-1:
+          enabled: $(de1_prod_elastic_bunker_enabled)
+          dc: DE1
+          hall: A
+          xcc_user: $(de1_xcc_user)
+          iso_url_base: $(de1_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: DE
+          s3_host: $(de1_pure_host)
+        us2-prod-frontend-1:
+          enabled: $(us2_prod_frontend_enabled)
+          dc: US2
+          hall: A
+          xcc_user: $(us2_xcc_user)
+          iso_url_base: $(us2_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: US
+          s3_host: $(us2_pure_host)
+        us2-prod-elastic-bunker-1:
+          enabled: $(us2_prod_elastic_bunker_enabled)
+          dc: US2
+          hall: A
+          xcc_user: $(us2_xcc_user)
+          iso_url_base: $(us2_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: US
+          s3_host: $(us2_pure_host)
+        us2-corp-internal-1:
+          enabled: $(us2_corp_internal_enabled)
+          dc: US2
+          hall: A
+          xcc_user: $(us2_xcc_user)
+          iso_url_base: $(us2_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: US
+          s3_host: $(us2_pure_host)
     pool:
       name: dante
       demands:
