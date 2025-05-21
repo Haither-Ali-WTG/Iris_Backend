@@ -5,6 +5,7 @@ individual_instance_defaults:
     log_name: "{{ inventory_hostname }}"
     fullconn: 5000
     balance: leastconn
+    health_check_interval: 10s
 
   global_:
     processes: 1
