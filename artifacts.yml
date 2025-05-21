@@ -7,12 +7,12 @@ variables:
   # 1653c8efcae4625bc70ac2d5e36841cb7d63731a
   dante_build_id: '1352711'
 
-  # virgil 20250521.8
-  # Wed May 21 02:21:52 UTC 2025 -- Wed May 21 12:21:52 AEST 2025
+  # virgil 20250521.13
+  # Wed May 21 04:24:24 UTC 2025 -- Wed May 21 14:24:24 AEST 2025
   #
-  # Merged PR 35933: Add C62 and C63 hardware classes
-  # 18d7c60652cf41e49ffc63494f15216eea794d56
-  virgil_build_id: '1353786'
+  # Merged PR 35948: Sand HyperV/SVIR in rack 201 and config swp
+  # 11f87f5faa07d238c08cb89d786a0191a854390a
+  virgil_build_id: '1353893'
 
   # sqlbilling 20250520.5
   # Tue May 20 12:39:06 UTC 2025 -- Tue May 20 22:39:06 AEST 2025
