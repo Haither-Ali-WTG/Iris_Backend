@@ -7,12 +7,12 @@ variables:
   # 1653c8efcae4625bc70ac2d5e36841cb7d63731a
   dante_build_id: '1352711'
 
-  # virgil 20250521.4
-  # Wed May 21 01:43:11 UTC 2025 -- Wed May 21 11:43:11 AEST 2025
+  # virgil 20250521.8
+  # Wed May 21 02:21:52 UTC 2025 -- Wed May 21 12:21:52 AEST 2025
   #
-  # Merged PR 35935: Switch registry-au to haproxy
-  # 1dcd612e9443af22761a76980753b651ac8bf0bf
-  virgil_build_id: '1353747'
+  # Merged PR 35933: Add C62 and C63 hardware classes
+  # 18d7c60652cf41e49ffc63494f15216eea794d56
+  virgil_build_id: '1353786'
 
   # sqlbilling 20250520.5
   # Tue May 20 12:39:06 UTC 2025 -- Tue May 20 22:39:06 AEST 2025
