@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250520.1
-  # Tue May 20 02:22:56 UTC 2025 -- Tue May 20 12:22:56 AEST 2025
+  # Dante Build Artifact 20250522.1
+  # Wed May 21 23:41:32 UTC 2025 -- Thu May 22 09:41:32 AEST 2025
   #
-  # Merge pull request 35899 from dante_artifact_upgrade into master
-  # 1653c8efcae4625bc70ac2d5e36841cb7d63731a
-  dante_build_id: '1352711'
+  # Merged PR 35958: Dante - Add more values to Azure Pipelines POST request
+  # 334ceea649264e027cd055a740acf63d08467823
+  dante_build_id: '1354693'
 
-  # virgil 20250521.13
-  # Wed May 21 04:24:24 UTC 2025 -- Wed May 21 14:24:24 AEST 2025
+  # virgil 20250522.5
+  # Thu May 22 00:16:49 UTC 2025 -- Thu May 22 10:16:49 AEST 2025
   #
-  # Merged PR 35948: Sand HyperV/SVIR in rack 201 and config swp
-  # 11f87f5faa07d238c08cb89d786a0191a854390a
-  virgil_build_id: '1353893'
+  # Merged PR 35875: Cleanup old server configs moved to lot 2 and 5
+  # 6e0bf66adb22e20f4001603ee2abd7868907c0ff
+  virgil_build_id: '1354761'
 
-  # sqlbilling 20250520.5
-  # Tue May 20 12:39:06 UTC 2025 -- Tue May 20 22:39:06 AEST 2025
+  # sqlbilling 20250521.2
+  # Wed May 21 07:50:10 UTC 2025 -- Wed May 21 17:50:10 AEST 2025
   #
-  # Merged PR 35930: SQLBillingADDCS01959103.yml
-  # 483c1c999fe1fe915188640cc55ecc22c304e4b0
-  sqlbilling_build_id: '1353202'
+  # Merged PR 35959: SQLBillingADDCS01954543.yml
+  # 658d4a2f13484f0e89055c92205ac16392790749
+  sqlbilling_build_id: '1354072'
