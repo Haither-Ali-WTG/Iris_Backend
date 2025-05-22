@@ -12,7 +12,7 @@ au2s3_3_secondary_backend_selection:
     Use secondary backend in local DC for au2s3-3
   order: 10
   actions:
-    - au2s3-3-secondary if au2s3-3-primary_not_enough_capacity au2s3-3_wtg_ws_and_subdomains
+    - use_backend au2s3-3-secondary if au2s3-3-primary_not_enough_capacity au2s3-3_wtg_ws_and_subdomains
 
 au2s3_3_primary_backend_selection:
   description: |-
@@ -26,7 +26,7 @@ de1s3_3_secondary_backend_selection:
     Use secondary backend in local DC for de1s3-3
   order: 12
   actions:
-    - de1s3-3-secondary if de1s3-3-primary_not_enough_capacity de1s3-3_wtg_ws_and_subdomains
+    - use_backend de1s3-3-secondary if de1s3-3-primary_not_enough_capacity de1s3-3_wtg_ws_and_subdomains
 
 de1s3_3_primary_backend_selection:
   description: |-
@@ -40,7 +40,7 @@ us2s3_3_secondary_backend_selection:
     Use secondary backend in local DC for us2s3-3
   order: 14
   actions:
-    - us2s3-3-secondary if us2s3-3-primary_not_enough_capacity us2s3-3_wtg_ws_and_subdomains
+    - use_backend us2s3-3-secondary if us2s3-3-primary_not_enough_capacity us2s3-3_wtg_ws_and_subdomains
 
 us2s3_3_primary_backend_selection:
   description: |-
