@@ -5,6 +5,7 @@ restrict_ip:
   order: 1
   actions:
     - http-request deny if !wtg_src !shipamax_src !hackerrank_src !talogy_src
+    - http-request deny if scim-test_wisetechglobal_com !wtg_src !azure_src
 
 secure_cookie:
   description: |-
