@@ -3,3 +3,33 @@ star_wisegrid_net:
   description: "*.wisegrid.net"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+au2s3-3_wtg_ws_and_subdomains:
+  description: "*.au2s3-3.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?au2s3-3\.wtg\.ws$
+
+de1s3-3_wtg_ws_and_subdomains:
+  description: "*.de1s3-3.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?de1s3-3\.wtg\.ws$
+
+us2s3-3_wtg_ws_and_subdomains:
+  description: "*.us2s3-3.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?us2s3-3\.wtg\.ws$
+
+au2s3-3-primary_not_enough_capacity:
+  description: "au2s3-3.wtg.ws Primary backends unavailable"
+  tests:
+    - nbsrv(au2s3-3-primary) lt 1
+
+de1s3-3-primary_not_enough_capacity:
+  description: "de1s3-3.wtg.ws Primary backends unavailable"
+  tests:
+    - nbsrv(de1s3-3-primary) lt 1
+
+us2s3-3-primary_not_enough_capacity:
+  description: "us2s3-3.wtg.ws Primary backends unavailable"
+  tests:
+    - nbsrv(us2s3-3-primary) lt 1
