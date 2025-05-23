@@ -93,6 +93,8 @@ clustered_instances:
     de1prodfrontend1prodcwservices26:
       # de1-prod-frontend-1-prodcw-services-26
       dc: DE1
+      defaults:
+        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -134,6 +136,8 @@ clustered_instances:
     de1prodfrontend1testcwservices27:
       # de1-prod-frontend-1-testcw-services-2
       dc: DE1
+      defaults:
+        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:

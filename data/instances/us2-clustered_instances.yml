@@ -120,6 +120,8 @@ clustered_instances:
     us2prodfrontend1prodcwservices26:
       # us2-prod-frontend-1-prodcw-services-26
       dc: US2
+      defaults:
+        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -187,6 +189,8 @@ clustered_instances:
     us2prodfrontend1testcwservices27:
       # us2-prod-frontend-1-testcw-services-2
       dc: US2
+      defaults:
+        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
