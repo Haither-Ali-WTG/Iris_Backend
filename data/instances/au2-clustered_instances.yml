@@ -432,6 +432,7 @@ clustered_instances:
         - au2wp-sweb-010a.wisecloud.zone
         - au2wp-sweb-010b.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
+      websites_config: prodcwservices.yml
       certificates:
         - name: star-wisegrid-net
         - name: star-webtracker-wisegrid-net
@@ -476,6 +477,7 @@ clustered_instances:
         - au2wt-sweb-405.test.wisecloud.zone
         - au2wt-sweb-406.test.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
+      websites_config: testcwservices.yml
       certificates:
         - name: star-wisegrid-net
         - name: star-webtracker-wisegrid-net

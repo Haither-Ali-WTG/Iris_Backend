@@ -120,6 +120,7 @@ clustered_instances:
         - de1wp-sweb-406a.wisecloud.zone
         - de1wp-sweb-406b.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
+      websites_config: prodcwservices.yml
       certificates:
         - name: star-wisegrid-net
         - name: star-webtracker-wisegrid-net
@@ -164,6 +165,7 @@ clustered_instances:
         - de1wt-sweb-406b.test.wisecloud.zone
         - de1wt-sweb-406a.test.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
+      websites_config: testcwservices.yml
       certificates:
         - name: star-wisegrid-net
         - name: star-webtracker-wisegrid-net

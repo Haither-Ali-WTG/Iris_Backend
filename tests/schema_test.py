@@ -15,6 +15,8 @@ CONFIG_PATTERNS = [
     ('data/ciphers/cipher_profiles.yml', 'cipher_profiles'),
     ('data/dynamic_backends/websites.yml', 'websites'),
     ('data/dynamic_backends/websites_internal.yml', 'websites'),
+    ('data/dynamic_backends/prodcwservices.yml', 'websites'),
+    ('data/dynamic_backends/testcwservices.yml', 'websites'),
     ('data/instances/*-clustered_instances.yml', 'clustered_instances'),
     ('data/instances/*-machines.yml', 'machines'),
     ('data/instances/*-tests.yml', 'instance_tests'),
