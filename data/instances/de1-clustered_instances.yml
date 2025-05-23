@@ -127,7 +127,7 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
         - name: star-edirf-wisegrid-net
-          cms_resource_group: RG-DE-Prod
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -171,7 +171,7 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
         - name: star-edirf-wisegrid-net
-          cms_resource_group: RG-DE-Prod
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
