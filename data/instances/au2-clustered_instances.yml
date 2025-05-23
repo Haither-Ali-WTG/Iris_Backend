@@ -409,6 +409,7 @@ clustered_instances:
           web: 2051
           socket: 2050
       machine_cluster: au2-prod-frontend-1
+      iis_servers: []
       iis_servers_local:
         - au2wp-sweb-001a.wisecloud.zone
         - au2wp-sweb-001b.wisecloud.zone
@@ -438,7 +439,7 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
         - name: star-edirf-wisegrid-net
-          cms_resource_group: RG-AU-PROD
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -460,6 +461,7 @@ clustered_instances:
           web: 2053
           socket: 2052
       machine_cluster: au2-prod-frontend-1
+      iis_servers: []
       iis_servers_local:
         - au2wt-sweb-001.test.wisecloud.zone
         - au2wt-sweb-002.test.wisecloud.zone
@@ -481,7 +483,7 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
         - name: star-edirf-wisegrid-net
-          cms_resource_group: RG-AU-PROD
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
