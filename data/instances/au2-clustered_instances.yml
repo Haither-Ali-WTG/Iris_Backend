@@ -397,8 +397,6 @@ clustered_instances:
     au2prodfrontend1prodcwservices26:
       # au2-prod-frontend-1-prodcw-services-26
       dc: AU2
-      defaults:
-        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -409,18 +407,45 @@ clustered_instances:
           web: 2051
           socket: 2050
       machine_cluster: au2-prod-frontend-1
-      iis_servers: []
+      iis_servers_local:
+        - au2wp-sweb-001a.wisecloud.zone
+        - au2wp-sweb-001b.wisecloud.zone
+        - au2wp-sweb-002a.wisecloud.zone
+        - au2wp-sweb-002b.wisecloud.zone
+        - au2wp-sweb-003a.wisecloud.zone
+        - au2wp-sweb-003b.wisecloud.zone
+        - au2wp-sweb-004a.wisecloud.zone
+        - au2wp-sweb-004b.wisecloud.zone
+        - au2wp-sweb-005a.wisecloud.zone
+        - au2wp-sweb-005b.wisecloud.zone
+        - au2wp-sweb-006a.wisecloud.zone
+        - au2wp-sweb-006b.wisecloud.zone
+        - au2wp-sweb-007a.wisecloud.zone
+        - au2wp-sweb-007b.wisecloud.zone
+        - au2wp-sweb-008a.wisecloud.zone
+        - au2wp-sweb-008b.wisecloud.zone
+        - au2wp-sweb-009a.wisecloud.zone
+        - au2wp-sweb-009b.wisecloud.zone
+        - au2wp-sweb-010a.wisecloud.zone
+        - au2wp-sweb-010b.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+        - name: star-edirf-wisegrid-net
+          cms_resource_group: RG-AU-PROD
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
 
     au2prodfrontend1testcwservices27:
       # au2-prod-frontend-1-testcw-services-2
       dc: AU2
-      defaults:
-        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -431,18 +456,37 @@ clustered_instances:
           web: 2053
           socket: 2052
       machine_cluster: au2-prod-frontend-1
-      iis_servers: []
+      iis_servers_local:
+        - au2wt-sweb-001.test.wisecloud.zone
+        - au2wt-sweb-002.test.wisecloud.zone
+        - au2wt-sweb-003.test.wisecloud.zone
+        - au2wt-sweb-004.test.wisecloud.zone
+        - au2wt-sweb-005.test.wisecloud.zone
+        - au2wt-sweb-006.test.wisecloud.zone
+        - au2wt-sweb-401.test.wisecloud.zone
+        - au2wt-sweb-402.test.wisecloud.zone
+        - au2wt-sweb-403.test.wisecloud.zone
+        - au2wt-sweb-404.test.wisecloud.zone
+        - au2wt-sweb-405.test.wisecloud.zone
+        - au2wt-sweb-406.test.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+        - name: star-edirf-wisegrid-net
+          cms_resource_group: RG-AU-PROD
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
 
     au2sandinternal2testservices0:
       # au2-sand-internal-2-test-services-0
       dc: AU2
-      defaults:
-        health_check_interval: 20000
       frontend:
         maxconn: 2000
         ports:
