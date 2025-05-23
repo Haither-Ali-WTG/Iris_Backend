@@ -93,8 +93,6 @@ clustered_instances:
     de1prodfrontend1prodcwservices26:
       # de1-prod-frontend-1-prodcw-services-26
       dc: DE1
-      defaults:
-        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -105,18 +103,37 @@ clustered_instances:
           web: 2051
           socket: 2050
       machine_cluster: de1-prod-frontend-1
-      iis_servers: []
+      iis_servers_local:
+        - de1wp-sweb-401a.wisecloud.zone
+        - de1wp-sweb-401b.wisecloud.zone
+        - de1wp-sweb-402a.wisecloud.zone
+        - de1wp-sweb-402b.wisecloud.zone
+        - de1wp-sweb-403a.wisecloud.zone
+        - de1wp-sweb-403b.wisecloud.zone
+        - de1wp-sweb-404a.wisecloud.zone
+        - de1wp-sweb-404b.wisecloud.zone
+        - de1wp-sweb-405a.wisecloud.zone
+        - de1wp-sweb-405b.wisecloud.zone
+        - de1wp-sweb-406a.wisecloud.zone
+        - de1wp-sweb-406b.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+        - name: star-edirf-wisegrid-net
+          cms_resource_group: RG-DE-PROD
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
 
     de1prodfrontend1testcwservices27:
       # de1-prod-frontend-1-testcw-services-2
       dc: DE1
-      defaults:
-        health_check_interval: 30s
       frontend:
         maxconn: 20000
         ports:
@@ -127,9 +144,30 @@ clustered_instances:
           web: 2053
           socket: 2052
       machine_cluster: de1-prod-frontend-1
-      iis_servers: []
+      iis_servers_local:
+        - de1wt-sweb-401a.test.wisecloud.zone
+        - de1wt-sweb-401b.test.wisecloud.zone
+        - de1wt-sweb-402a.test.wisecloud.zone
+        - de1wt-sweb-402b.test.wisecloud.zone
+        - de1wt-sweb-403a.test.wisecloud.zone
+        - de1wt-sweb-403b.test.wisecloud.zone
+        - de1wt-sweb-404a.test.wisecloud.zone
+        - de1wt-sweb-404b.test.wisecloud.zone
+        - de1wt-sweb-405a.test.wisecloud.zone
+        - de1wt-sweb-405b.test.wisecloud.zone
+        - de1wt-sweb-406b.test.wisecloud.zone
+        - de1wt-sweb-406a.test.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+        - name: star-edirf-wisegrid-net
+          cms_resource_group: RG-DE-PROD
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
