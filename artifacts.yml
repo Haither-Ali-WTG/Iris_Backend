@@ -7,12 +7,12 @@ variables:
   # 71bdbcb63745316ebac5b9c9b87b42be8294a46f
   dante_build_id: '1356113'
 
-  # virgil 20250523.7
-  # Fri May 23 02:32:47 UTC 2025 -- Fri May 23 12:32:47 AEST 2025
+  # virgil 20250523.11
+  # Fri May 23 04:32:30 UTC 2025 -- Fri May 23 14:32:30 AEST 2025
   #
-  # Merged PR 36034: Reclaim apex27/28 for SY5 usage
-  # d1d55fe92d832522798db30fdc035249758c2d28
-  virgil_build_id: '1356072'
+  # Merged PR 36051: add au2-apex27/28 for DAT use at SY5 Rack407
+  # d0af9987362a3b3748a639698234c11d7f87d5ae
+  virgil_build_id: '1356187'
 
   # sqlbilling 20250523.5
   # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
