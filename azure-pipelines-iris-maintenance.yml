@@ -83,6 +83,15 @@ jobs:
           specific_host: $(hosts)
           s3_region: DE
           s3_host: $(de1_pure_host)
+        de1internal1:
+          enabled: $(de1internal1_enabled)
+          dc: DE1
+          hall: A
+          xcc_user: $(de1_xcc_user)
+          iso_url_base: $(de1_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: DE
+          s3_host: $(de1_pure_host)
         de1-prod-elastic-bunker-1:
           enabled: $(de1_prod_elastic_bunker_enabled)
           dc: DE1
