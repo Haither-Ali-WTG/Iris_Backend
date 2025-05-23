@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250523.1
-  # Thu May 22 15:04:02 UTC 2025 -- Fri May 23 01:04:02 AEST 2025
+  # Dante Build Artifact 20250523.6
+  # Fri May 23 03:22:31 UTC 2025 -- Fri May 23 13:22:31 AEST 2025
   #
-  # Merge pull request 36012 from dante_artifact_upgrade into master
-  # 638e6a07836e43fd026a8932b74aefda4df93409
-  dante_build_id: '1355517'
+  # Merge pull request 36043 from dante_artifact_upgrade into master
+  # 71bdbcb63745316ebac5b9c9b87b42be8294a46f
+  dante_build_id: '1356113'
 
-  # virgil 20250523.1
-  # Thu May 22 14:19:58 UTC 2025 -- Fri May 23 00:19:58 AEST 2025
+  # virgil 20250523.7
+  # Fri May 23 02:32:47 UTC 2025 -- Fri May 23 12:32:47 AEST 2025
   #
-  # Merged PR 35963: LSP New backend network
-  # 499e69004ba475aa751e1339c3f67994b360f5a0
-  virgil_build_id: '1355472'
+  # Merged PR 36034: Reclaim apex27/28 for SY5 usage
+  # d1d55fe92d832522798db30fdc035249758c2d28
+  virgil_build_id: '1356072'
 
-  # sqlbilling 20250522.2
-  # Thu May 22 08:12:54 UTC 2025 -- Thu May 22 18:12:54 AEST 2025
+  # sqlbilling 20250523.5
+  # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
   #
-  # Merged PR 36002: Update IP addresses
-  # 705da3c23dad6a059ec45f990e2e84f35e1c2d91
-  sqlbilling_build_id: '1355226'
+  # Merged PR 36033: Updated us2-prod-frontend-1.yml
+  # aa0affa1d982941a1c1685cf2eb6311bfd349cdd
+  sqlbilling_build_id: '1355994'
