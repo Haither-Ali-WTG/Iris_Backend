@@ -6,3 +6,17 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
+
+au2s3_3_secondary_backend_selection:
+  description: |-
+    Use secondary backend in local DC for au2s3-3
+  order: 10
+  actions:
+    - use_backend au2s3-3-secondary if au2s3-3-primary_not_enough_capacity au2s3-3_wtg_ws_and_subdomains
+
+au2s3_3_primary_backend_selection:
+  description: |-
+    Use primary backend in local DC for au2s3-3
+  order: 11
+  actions:
+    - use_backend au2s3-3-primary if au2s3-3_wtg_ws_and_subdomains
