@@ -23,13 +23,3 @@ au2s3-3-primary_not_enough_capacity:
   description: "au2s3-3.wtg.ws Primary backends unavailable"
   tests:
     - nbsrv(au2s3-3-primary) lt 1
-
-de1s3-3-primary_not_enough_capacity:
-  description: "de1s3-3.wtg.ws Primary backends unavailable"
-  tests:
-    - nbsrv(de1s3-3-primary) lt 1
-
-us2s3-3-primary_not_enough_capacity:
-  description: "us2s3-3.wtg.ws Primary backends unavailable"
-  tests:
-    - nbsrv(us2s3-3-primary) lt 1
