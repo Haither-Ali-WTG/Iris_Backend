@@ -43,5 +43,5 @@ au2s3-3-secondary:
     acl write_methods method POST
     acl write_methods method PATCH
     acl write_methods method DELETE
-    http-request deny if write_methods    
+    http-request deny if write_methods
     server us2nas03-s3-01.wtg.zone 10.4.31.64:443 check check-ssl ssl verify none
