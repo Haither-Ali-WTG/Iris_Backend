@@ -7,12 +7,12 @@ variables:
   # 2671abcd559de1e702a8563414bc7c72f1c5beb2
   dante_build_id: '1360105'
 
-  # virgil 20250527.4
-  # Tue May 27 03:59:18 UTC 2025 -- Tue May 27 13:59:18 AEST 2025
+  # virgil 20250527.7
+  # Tue May 27 07:21:08 UTC 2025 -- Tue May 27 17:21:08 AEST 2025
   #
-  # Merged PR 36113: udpate apex69-70 config
-  # 8d135e90f370aa6a6abfeceede9ce9787281bd0e
-  virgil_build_id: '1360040'
+  # Merge pull request 36103 from virgil_python_upgrade into master
+  # 527c4cda4f4525b63f934f29cab61a7ed6435b09
+  virgil_build_id: '1360219'
 
   # sqlbilling 20250523.5
   # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
