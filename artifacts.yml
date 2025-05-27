@@ -7,12 +7,12 @@ variables:
   # 7e3cfcdb890fb0c29c0709e76bf2f234f7d15b73
   dante_build_id: '1358793'
 
-  # virgil 20250523.17
-  # Fri May 23 05:45:15 UTC 2025 -- Fri May 23 15:45:15 AEST 2025
+  # virgil 20250527.4
+  # Tue May 27 03:59:18 UTC 2025 -- Tue May 27 13:59:18 AEST 2025
   #
-  # Merged PR 35417: Set back to single NAT
-  # f1fed0aefac6fd597066ff44d0a1964053f83ded
-  virgil_build_id: '1356274'
+  # Merged PR 36113: udpate apex69-70 config
+  # 8d135e90f370aa6a6abfeceede9ce9787281bd0e
+  virgil_build_id: '1360040'
 
   # sqlbilling 20250523.5
   # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
