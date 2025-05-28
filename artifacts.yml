@@ -7,16 +7,16 @@ variables:
   # 4b712cdd4042033904ac8fa62b479234940059f8
   dante_build_id: '1361084'
 
-  # virgil 20250528.2
-  # Wed May 28 00:12:57 UTC 2025 -- Wed May 28 10:12:57 AEST 2025
+  # virgil 20250529.2
+  # Wed May 28 22:10:24 UTC 2025 -- Thu May 29 08:10:24 AEST 2025
   #
-  # Merged PR 36156: Updating AAP IP addresses and typo in previous PR
-  # ec8e2161260e8fac4d824bc11a05cbe6cdd28b9f
-  virgil_build_id: '1360940'
+  # Merged PR 36193: Add au2s3-3 dns entry for testing new fb
+  # 5c85908ea367207f8f40cf56159d0a76d1a7b1db
+  virgil_build_id: '1361927'
 
-  # sqlbilling 20250523.5
-  # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
+  # sqlbilling 20250528.6
+  # Wed May 28 08:51:06 UTC 2025 -- Wed May 28 18:51:06 AEST 2025
   #
-  # Merged PR 36033: Updated us2-prod-frontend-1.yml
-  # aa0affa1d982941a1c1685cf2eb6311bfd349cdd
-  sqlbilling_build_id: '1355994'
+  # Merged PR 36170: CS01952678_CASADL_ADD_IP_2
+  # 497d01ef83dab7008979f729d20e2ece6818ad8d
+  sqlbilling_build_id: '1361399'
