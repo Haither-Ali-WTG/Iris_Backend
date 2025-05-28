@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250528.2
-  # Wed May 28 02:08:17 UTC 2025 -- Wed May 28 12:08:17 AEST 2025
+  # Dante Build Artifact 20250529.1
+  # Wed May 28 23:03:22 UTC 2025 -- Thu May 29 09:03:22 AEST 2025
   #
-  # Merged PR 36163: Changed pool for mongo dump to dante
-  # 4b712cdd4042033904ac8fa62b479234940059f8
-  dante_build_id: '1361084'
+  # Merge pull request 36199 from dante_artifact_upgrade into master
+  # eec8d429a3cd528ce72fa343b850efc4a0b1aa8b
+  dante_build_id: '1361981'
 
   # virgil 20250529.2
   # Wed May 28 22:10:24 UTC 2025 -- Thu May 29 08:10:24 AEST 2025
