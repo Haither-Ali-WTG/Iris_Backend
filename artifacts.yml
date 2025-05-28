@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250527.3
-  # Tue May 27 08:22:36 UTC 2025 -- Tue May 27 18:22:36 AEST 2025
+  # Dante Build Artifact 20250528.1
+  # Wed May 28 01:03:24 UTC 2025 -- Wed May 28 11:03:24 AEST 2025
   #
-  # Merge pull request 36140 from dante_artifact_upgrade into master
-  # 047bf8b2e5d08a4b372853b25202962956624ac6
-  dante_build_id: '1360283'
+  # Merge pull request 36162 from dante_artifact_upgrade into master
+  # 7118fbc44402dc5b6720d7ba85179cd4785cd879
+  dante_build_id: '1361004'
 
-  # virgil 20250527.7
-  # Tue May 27 07:21:08 UTC 2025 -- Tue May 27 17:21:08 AEST 2025
+  # virgil 20250528.2
+  # Wed May 28 00:12:57 UTC 2025 -- Wed May 28 10:12:57 AEST 2025
   #
-  # Merge pull request 36103 from virgil_python_upgrade into master
-  # 527c4cda4f4525b63f934f29cab61a7ed6435b09
-  virgil_build_id: '1360219'
+  # Merged PR 36156: Updating AAP IP addresses and typo in previous PR
+  # ec8e2161260e8fac4d824bc11a05cbe6cdd28b9f
+  virgil_build_id: '1360940'
 
   # sqlbilling 20250523.5
   # Fri May 23 01:13:41 UTC 2025 -- Fri May 23 11:13:41 AEST 2025
