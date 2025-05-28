@@ -467,11 +467,11 @@ cibr-staging.sand.wtg.zone:
     http_path: /wtg/ready
   encryption: false
   servers:
-    - name: AU2SP-SIIS-402A
-      ip: 10.2.69.77
+    - name: AU2SP-SIIS-405A
+      ip: 10.2.118.47
       port: 80
-    - name: AU2SP-SIIS-402B
-      ip: 10.2.69.78
+    - name: AU2SP-SIIS-405B
+      ip: 10.2.118.48
       port: 80
 
 ctsportal-staging.sand.wtg.zone:
