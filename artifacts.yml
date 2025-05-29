@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250529.2
-  # Thu May 29 00:03:52 UTC 2025 -- Thu May 29 10:03:52 AEST 2025
+  # Dante Build Artifact 20250529.3
+  # Thu May 29 01:39:53 UTC 2025 -- Thu May 29 11:39:53 AEST 2025
   #
-  # Merged PR 36190: fix: add new mirrors for sync ubuntu mirror
-  # 3659aba968d321eb54b622ec99e3440635cd5405
-  dante_build_id: '1362048'
+  # Merged PR 36180: Windows: declare all drives in controllers before NVME as empty and wiped
+  # fcff83233b367d5c0be18520fa405b46c214bb30
+  dante_build_id: '1362147'
 
-  # virgil 20250529.2
-  # Wed May 28 22:10:24 UTC 2025 -- Thu May 29 08:10:24 AEST 2025
+  # virgil 20250529.5
+  # Thu May 29 01:01:46 UTC 2025 -- Thu May 29 11:01:46 AEST 2025
   #
-  # Merged PR 36193: Add au2s3-3 dns entry for testing new fb
-  # 5c85908ea367207f8f40cf56159d0a76d1a7b1db
-  virgil_build_id: '1361927'
+  # Merged PR 36211: remove au2-apex29/30 from Alexandria
+  # 926a552310c308a59351cec70400f2046181700d
+  virgil_build_id: '1362112'
 
   # sqlbilling 20250528.6
   # Wed May 28 08:51:06 UTC 2025 -- Wed May 28 18:51:06 AEST 2025
