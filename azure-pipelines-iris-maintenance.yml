@@ -217,7 +217,9 @@ jobs:
             -e="dc=$(dc)"
             -e="cluster_name=$(System.JobName)"
             -e="specific_host=$(specific_host)"
+            -e="cluster_enabled=$(enabled)"
         env:
+          ANSIBLE_HOST_KEY_CHECKING: false
           secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
         condition: or(ne(variables['specific_host'], ''), eq(variables['enabled'], 'enabled'))
 
