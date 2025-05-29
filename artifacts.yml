@@ -7,12 +7,12 @@ variables:
   # fcff83233b367d5c0be18520fa405b46c214bb30
   dante_build_id: '1362147'
 
-  # virgil 20250529.5
-  # Thu May 29 01:01:46 UTC 2025 -- Thu May 29 11:01:46 AEST 2025
+  # virgil 20250529.8
+  # Thu May 29 02:11:11 UTC 2025 -- Thu May 29 12:11:11 AEST 2025
   #
-  # Merged PR 36211: remove au2-apex29/30 from Alexandria
-  # 926a552310c308a59351cec70400f2046181700d
-  virgil_build_id: '1362112'
+  # Merged PR 36214: remove au2-apex17/18 from Alexandria
+  # 9e7276f61d4b38735d9e77a9f3d46c946b439569
+  virgil_build_id: '1362191'
 
   # sqlbilling 20250528.6
   # Wed May 28 08:51:06 UTC 2025 -- Wed May 28 18:51:06 AEST 2025
