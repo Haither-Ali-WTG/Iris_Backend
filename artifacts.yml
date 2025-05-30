@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250529.3
-  # Thu May 29 01:39:53 UTC 2025 -- Thu May 29 11:39:53 AEST 2025
+  # Dante Build Artifact 20250529.4
+  # Thu May 29 02:59:47 UTC 2025 -- Thu May 29 12:59:47 AEST 2025
   #
-  # Merged PR 36180: Windows: declare all drives in controllers before NVME as empty and wiped
-  # fcff83233b367d5c0be18520fa405b46c214bb30
-  dante_build_id: '1362147'
+  # Merged PR 36221: Add more repos to sync mirror
+  # 2cfa5f6ef3cff3047a6ab3a5619bf9da13edc3a1
+  dante_build_id: '1362226'
 
-  # virgil 20250529.8
-  # Thu May 29 02:11:11 UTC 2025 -- Thu May 29 12:11:11 AEST 2025
+  # virgil 20250530.2
+  # Fri May 30 02:43:40 UTC 2025 -- Fri May 30 12:43:40 AEST 2025
   #
-  # Merged PR 36214: remove au2-apex17/18 from Alexandria
-  # 9e7276f61d4b38735d9e77a9f3d46c946b439569
-  virgil_build_id: '1362191'
+  # Merged PR 36261: Add wildcard only
+  # fee28f32352ed9cd90a01b87f3d810e35ac3596a
+  virgil_build_id: '1363282'
 
-  # sqlbilling 20250528.6
-  # Wed May 28 08:51:06 UTC 2025 -- Wed May 28 18:51:06 AEST 2025
+  # sqlbilling 20250530.1
+  # Thu May 29 14:15:45 UTC 2025 -- Fri May 30 00:15:45 AEST 2025
   #
-  # Merged PR 36170: CS01952678_CASADL_ADD_IP_2
-  # 497d01ef83dab7008979f729d20e2ece6818ad8d
-  sqlbilling_build_id: '1361399'
+  # Merged PR 36255: SQLBillingADDCS01975134.yml
+  # d0caa6185fcafa4d85ab61654944ada157364f73
+  sqlbilling_build_id: '1362786'
