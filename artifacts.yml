@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250529.4
-  # Thu May 29 02:59:47 UTC 2025 -- Thu May 29 12:59:47 AEST 2025
+  # Dante Build Artifact 20250602.4
+  # Mon Jun  2 02:12:56 UTC 2025 -- Mon Jun  2 12:12:56 AEST 2025
   #
-  # Merged PR 36221: Add more repos to sync mirror
-  # 2cfa5f6ef3cff3047a6ab3a5619bf9da13edc3a1
-  dante_build_id: '1362226'
+  # Merged PR 36253: Add opensuse keys onto the mirror
+  # 4bf2f35db5b3a253b573aa646ad78e5bac01c42c
+  dante_build_id: '1366128'
 
   # virgil 20250530.2
   # Fri May 30 02:43:40 UTC 2025 -- Fri May 30 12:43:40 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # fee28f32352ed9cd90a01b87f3d810e35ac3596a
   virgil_build_id: '1363282'
 
-  # sqlbilling 20250530.1
-  # Thu May 29 14:15:45 UTC 2025 -- Fri May 30 00:15:45 AEST 2025
+  # sqlbilling 20250530.5
+  # Fri May 30 12:53:34 UTC 2025 -- Fri May 30 22:53:34 AEST 2025
   #
-  # Merged PR 36255: SQLBillingADDCS01975134.yml
-  # d0caa6185fcafa4d85ab61654944ada157364f73
-  sqlbilling_build_id: '1362786'
+  # Merged PR 36256: SQLBillingRemoveD36CS01975655.yml
+  # 379f4b9610009929b27a1c5aabe0bf47c63fe620
+  sqlbilling_build_id: '1363689'
