@@ -1,4 +1,6 @@
 ---
+# Compare the running VRRP instances in the cluster with the configuration in IRIS data,
+# and assert that they are exactly the same.
 - name: Load machine clusters
   vars:
     content: >-
