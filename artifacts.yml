@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250602.4
-  # Mon Jun  2 02:12:56 UTC 2025 -- Mon Jun  2 12:12:56 AEST 2025
+  # Dante Build Artifact 20250603.1
+  # Mon Jun  2 23:10:29 UTC 2025 -- Tue Jun  3 09:10:29 AEST 2025
   #
-  # Merged PR 36253: Add opensuse keys onto the mirror
-  # 4bf2f35db5b3a253b573aa646ad78e5bac01c42c
-  dante_build_id: '1366128'
+  # Merged PR 36278: Updated Windows installation with new ISO
+  # 4d601a83bcfba912b7d12ccb06aabbf641d83d68
+  dante_build_id: '1367009'
 
-  # virgil 20250530.2
-  # Fri May 30 02:43:40 UTC 2025 -- Fri May 30 12:43:40 AEST 2025
+  # virgil 20250603.2
+  # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
   #
-  # Merged PR 36261: Add wildcard only
-  # fee28f32352ed9cd90a01b87f3d810e35ac3596a
-  virgil_build_id: '1363282'
+  # Merged PR 36289: Reserving rack spaces and switch ports for the next Eye nodes
+  # dbbe17e2c055b381bc1fc236bfcac0835d5a5357
+  virgil_build_id: '1367023'
 
   # sqlbilling 20250530.5
   # Fri May 30 12:53:34 UTC 2025 -- Fri May 30 22:53:34 AEST 2025
