@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.1
-  # Mon Jun  2 23:10:29 UTC 2025 -- Tue Jun  3 09:10:29 AEST 2025
+  # Dante Build Artifact 20250603.2
+  # Mon Jun  2 23:59:38 UTC 2025 -- Tue Jun  3 09:59:38 AEST 2025
   #
-  # Merged PR 36278: Updated Windows installation with new ISO
-  # 4d601a83bcfba912b7d12ccb06aabbf641d83d68
-  dante_build_id: '1367009'
+  # Merged PR 36309: Updated docker image version
+  # 3957148117221f997fa69853e69ca585c97cb26a
+  dante_build_id: '1367069'
 
   # virgil 20250603.2
   # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
