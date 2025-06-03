@@ -1,6 +1,6 @@
 ---
-# Compare the running VRRP instances in the cluster with the configuration in IRIS data,
-# and assert that they are exactly the same.
+# Verify that the set of VIPs active in the running cluster matches exactly those defined
+# in the IRIS configuration, and that each VIP appears only once.
 - name: Load machine clusters
   vars:
     content: >-
