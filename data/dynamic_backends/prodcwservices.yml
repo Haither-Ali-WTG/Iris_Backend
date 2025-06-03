@@ -21,7 +21,17 @@
     enabled: true
   name_suffix: 'Portals'
 
-- name_regex: (^[A-Za-z0-9]{6}services(-cn)?|^svc-[A-Za-z0-9]{6})\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^svc-[A-Za-z0-9]{6}\.(wisegrid|wisetechglobal)\.(net|cn)$
+  encryption: true
+  http_health_check:
+    enabled: false
+    http_path: "/"
+  port: 443
+  cookie:
+    enabled: true
+  name_suffix: ''
+
+- name_regex: ^[A-Za-z0-9]{6}services(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
     enabled: false
@@ -61,7 +71,7 @@
     enabled: true
   name_suffix: ''
 
-- name_regex: \.webtracker\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webtracker\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
     enabled: false
