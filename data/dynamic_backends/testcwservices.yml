@@ -8,7 +8,6 @@
   balance: first
   cookie:
     enabled: true
-  maintenance_page: example.html
   name_suffix: 'Glow'
 
 - name_regex: ^www-[A-Za-z0-9]{6}(?:\-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
@@ -20,7 +19,6 @@
   balance: first
   cookie:
     enabled: true
-  maintenance_page: example.html
   name_suffix: 'Portals'
 
 - name_regex: (^[A-Za-z0-9]{6}services(?:\-cn)?|^svc-[A-Za-z0-9]{6})\.(wisegrid|wisetechglobal)\.(net|cn)$
