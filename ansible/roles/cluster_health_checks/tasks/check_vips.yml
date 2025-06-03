@@ -1,4 +1,6 @@
 ---
+# Verify that the set of VIPs active in the running cluster matches exactly those defined
+# in the IRIS configuration, and that each VIP appears only once.
 - name: Load machine clusters
   vars:
     content: >-

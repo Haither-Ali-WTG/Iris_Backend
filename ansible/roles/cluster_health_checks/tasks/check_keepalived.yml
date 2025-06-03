@@ -1,4 +1,7 @@
 ---
+# Check that the keepalived service is enabled and running.
+# Assert that there are no master/backup node changes within a few seconds
+# to ensure the server's network is stable.
 - name: Populate service facts
   service_facts: ~
 

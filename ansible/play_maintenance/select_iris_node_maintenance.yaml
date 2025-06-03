@@ -12,17 +12,56 @@
 
     - name: No server needs to rebuild in this cluster
       meta: end_play
+      when:
+        - cluster_servers | intersect(host_list) | length == 0
+        - cluster_enabled | lower != 'enabled'
+
+    - name: Handle the case when specifying hosts
+      when: cluster_servers | intersect(host_list) | length > 0
+      block:
+        - name: Make sure that only one server can be rebuilt per cluster
+          assert:
+            that:
+              - cluster_servers | intersect(host_list) | length == 1
+            fail_msg: >-
+              Cannot rebuild multiple hosts in one cluster at once
+
+        - name: Write selected hostname to file
+          copy:
+            content: "{{ cluster_servers | intersect(host_list) | first }}"
+            dest: "{{ playbook_dir }}/selected_iris_node.txt"
+            mode: a=r
+
+    - name: Handle the case when the cluster enabled
       when: cluster_servers | intersect(host_list) | length == 0
+      block:
+        - name: Get install time of host by checking the earliest file in etc
+          shell: |
+            set -euxo pipefail
+            ls -lact --full-time /etc | tail -1 | awk '{print $6,$7}'
+          args:
+            executable: /bin/bash
+          delegate_to: "{{ item }}"
+          loop: "{{ cluster_servers }}"
+          become: yes
+          register: etc_times
+          changed_when: false
 
-    - name: Make sure that only one server can be rebuilt per cluster
-      assert:
-        that:
-          - cluster_servers | intersect(host_list) | length == 1
-        fail_msg: >-
-          Cannot rebuild multiple hosts in one cluster at once
+        - name: Get the earliest host
+          set_fact:
+            earliest_host: >-
+              {{
+                etc_times.results
+                | sort(attribute='stdout')
+                | first
+              }}
 
-    - name: Write selected hostname to file
-      copy:
-        content: "{{ cluster_servers | intersect(host_list) | first }}"
-        dest: "{{ playbook_dir }}/selected_iris_node.txt"
-        mode: a=r
+        - name: Output the earliest host info
+          debug:
+            msg: "The earliest host {{ earliest_host.item }} was built at {{ earliest_host.stdout }}"
+
+        - name: Write selected hostname to file
+          copy:
+            content: "{{ earliest_host.item }}"
+            dest: "{{ playbook_dir }}/selected_iris_node.txt"
+            mode: a=r
