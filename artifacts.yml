@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.4
-  # Tue Jun  3 01:33:03 UTC 2025 -- Tue Jun  3 11:33:03 AEST 2025
+  # Dante Build Artifact 20250603.5
+  # Tue Jun  3 02:34:33 UTC 2025 -- Tue Jun  3 12:34:33 AEST 2025
   #
-  # Merged PR 36191: fix: change repos and apt-keys to use the new k8s mirrors
-  # 595760a09522aeeac38cc1f2ef94ac2dbc4a218d
-  dante_build_id: '1367219'
+  # Merged PR 36321: Image version for dockerhub images updated
+  # 833059098c04e7fb454269f634f53bd241b6da79
+  dante_build_id: '1367296'
 
   # virgil 20250603.2
   # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
