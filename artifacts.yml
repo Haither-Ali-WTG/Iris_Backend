@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.5
-  # Tue Jun  3 02:34:33 UTC 2025 -- Tue Jun  3 12:34:33 AEST 2025
+  # Dante Build Artifact 20250603.6
+  # Tue Jun  3 03:48:09 UTC 2025 -- Tue Jun  3 13:48:09 AEST 2025
   #
-  # Merged PR 36321: Image version for dockerhub images updated
-  # 833059098c04e7fb454269f634f53bd241b6da79
-  dante_build_id: '1367296'
+  # Merge pull request 36350 from automatic_botticelli_image_upgrade into master
+  # 73426e2a34cf036e3d30486a440a063bd480d9be
+  dante_build_id: '1367377'
 
   # virgil 20250603.2
   # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
