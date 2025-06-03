@@ -29,7 +29,7 @@
   port: 443
   cookie:
     enabled: true
-  name_suffix: 'Services'
+  name_suffix: ''
 
 - name_regex: ^[A-Za-z0-9]{6}accounting(?:\-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
