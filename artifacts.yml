@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.3
-  # Tue Jun  3 00:42:32 UTC 2025 -- Tue Jun  3 10:42:32 AEST 2025
+  # Dante Build Artifact 20250603.4
+  # Tue Jun  3 01:33:03 UTC 2025 -- Tue Jun  3 11:33:03 AEST 2025
   #
-  # Merge pull request 36310 from dante_artifact_upgrade into master
-  # 1d36398bbdcb9215258958492b68192cd681f785
-  dante_build_id: '1367148'
+  # Merged PR 36191: fix: change repos and apt-keys to use the new k8s mirrors
+  # 595760a09522aeeac38cc1f2ef94ac2dbc4a218d
+  dante_build_id: '1367219'
 
   # virgil 20250603.2
   # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
