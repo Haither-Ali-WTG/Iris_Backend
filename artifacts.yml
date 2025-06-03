@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.9
-  # Tue Jun  3 06:05:28 UTC 2025 -- Tue Jun  3 16:05:28 AEST 2025
+  # Dante Build Artifact 20250603.10
+  # Tue Jun  3 06:59:56 UTC 2025 -- Tue Jun  3 16:59:56 AEST 2025
   #
-  # Merged PR 36277: Adjust Ubuntu mirror to 500MB/s
-  # 861d7be9d0ab7d146faa2bfe65257d157cc013a3
-  dante_build_id: '1367577'
+  # Merged PR 36363: Upgrade of Windows ISO building process
+  # bcbbc7897d0e7f067179516cd91256b598bfb87d
+  dante_build_id: '1367646'
 
   # virgil 20250603.2
   # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
