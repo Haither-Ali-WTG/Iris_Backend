@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250603.10
-  # Tue Jun  3 06:59:56 UTC 2025 -- Tue Jun  3 16:59:56 AEST 2025
+  # Dante Build Artifact 20250604.1
+  # Wed Jun  4 01:20:12 UTC 2025 -- Wed Jun  4 11:20:12 AEST 2025
   #
-  # Merged PR 36363: Upgrade of Windows ISO building process
-  # bcbbc7897d0e7f067179516cd91256b598bfb87d
-  dante_build_id: '1367646'
+  # Merge pull request 36347 from automatic_nginx_image_upgrade into master
+  # dd449ac9188993770d76232257a16597186b5ba3
+  dante_build_id: '1368477'
 
-  # virgil 20250603.2
-  # Mon Jun  2 23:18:25 UTC 2025 -- Tue Jun  3 09:18:25 AEST 2025
+  # virgil 20250604.17
+  # Wed Jun  4 01:31:40 UTC 2025 -- Wed Jun  4 11:31:40 AEST 2025
   #
-  # Merged PR 36289: Reserving rack spaces and switch ports for the next Eye nodes
-  # dbbe17e2c055b381bc1fc236bfcac0835d5a5357
-  virgil_build_id: '1367023'
+  # Merged PR 36400: Return Q0 DE1 to continuous
+  # b18f6a0104890f19ba21298a40d3764f03961718
+  virgil_build_id: '1368505'
 
-  # sqlbilling 20250530.5
-  # Fri May 30 12:53:34 UTC 2025 -- Fri May 30 22:53:34 AEST 2025
+  # sqlbilling 20250603.3
+  # Tue Jun  3 11:57:33 UTC 2025 -- Tue Jun  3 21:57:33 AEST 2025
   #
-  # Merged PR 36256: SQLBillingRemoveD36CS01975655.yml
-  # 379f4b9610009929b27a1c5aabe0bf47c63fe620
-  sqlbilling_build_id: '1363689'
+  # Merged PR 36291: DE1 SQLBillingAddCS01978046
+  # aef6656fa616ed9feb7e295e14e533cb9c8bd44c
+  sqlbilling_build_id: '1367853'
