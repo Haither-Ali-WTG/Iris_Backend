@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250604.3
-  # Wed Jun  4 03:07:00 UTC 2025 -- Wed Jun  4 13:07:00 AEST 2025
+  # Dante Build Artifact 20250604.4
+  # Wed Jun  4 04:04:07 UTC 2025 -- Wed Jun  4 14:04:07 AEST 2025
   #
-  # Merge pull request 36348 from automatic_styx_image_upgrade into master
-  # e2121fdc126df12d2c02a389bdcec32c311fb3eb
-  dante_build_id: '1368618'
+  # Merge pull request 36352 from automatic_ptmctl_image_upgrade into master
+  # ee8f678fa5d4c2f187ab7dc53192acfb8e445656
+  dante_build_id: '1368687'
 
-  # virgil 20250604.17
-  # Wed Jun  4 01:31:40 UTC 2025 -- Wed Jun  4 11:31:40 AEST 2025
+  # virgil 20250604.20
+  # Wed Jun  4 03:51:28 UTC 2025 -- Wed Jun  4 13:51:28 AEST 2025
   #
-  # Merged PR 36400: Return Q0 DE1 to continuous
-  # b18f6a0104890f19ba21298a40d3764f03961718
-  virgil_build_id: '1368505'
+  # Merged PR 36398: moving au2prod1 w1 from Rack203 to Rack301
+  # 0b2eb34fc0049bbb885114c324ef2665f693ccb6
+  virgil_build_id: '1368664'
 
   # sqlbilling 20250603.3
   # Tue Jun  3 11:57:33 UTC 2025 -- Tue Jun  3 21:57:33 AEST 2025
