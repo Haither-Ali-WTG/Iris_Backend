@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250604.6
-  # Wed Jun  4 05:47:21 UTC 2025 -- Wed Jun  4 15:47:21 AEST 2025
+  # Dante Build Artifact 20250604.7
+  # Wed Jun  4 07:03:52 UTC 2025 -- Wed Jun  4 17:03:52 AEST 2025
   #
-  # Merged PR 36413: Removed Windows 2019 support from dante
-  # e0dfeddfba4f9c2670e050bbd76c757bd1c15fe9
-  dante_build_id: '1368772'
+  # Merged PR 36346: Ubuntu Mirror - Use enabled variable to control the pipeline to Sync Mirror to different places
+  # a83d0ee77bc1b4d42bb84f4fcc1562021aebed25
+  dante_build_id: '1368851'
 
   # virgil 20250604.20
   # Wed Jun  4 03:51:28 UTC 2025 -- Wed Jun  4 13:51:28 AEST 2025
