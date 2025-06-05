@@ -1,21 +1,21 @@
 ---
 variables:
-  # Dante Build Artifact 20250605.1
-  # Thu Jun  5 03:07:51 UTC 2025 -- Thu Jun  5 13:07:51 AEST 2025
+  # Dante Build Artifact 20250605.3
+  # Thu 05 Jun 2025 05:46:19 UTC -- Thu 05 Jun 2025 15:46:19 AEST
   #
-  # Merge pull request 36431 from dante_artifact_upgrade into master
-  # dd9f35bdea804a6e71bab11114403bf64acfd5df
-  dante_build_id: '1369681'
+  # Merged PR 36469: Pin cicd agents to w5 node as a quick fix.
+  # d01c81a1b91e994eee6e292630d6bb0ce3d4ea7b
+  dante_build_id: '1369814'
 
-  # virgil 20250605.3
-  # Thu Jun  5 01:55:36 UTC 2025 -- Thu Jun  5 11:55:36 AEST 2025
+  # virgil 20250605.9
+  # Thu 05 Jun 2025 05:51:13 UTC -- Thu 05 Jun 2025 15:51:13 AEST
   #
-  # Merged PR 36452: Put S31 machines back in us2kvl-v0
-  # 97cf50ffcc78af8cc69ef4ba5d70938c1f41f151
-  virgil_build_id: '1369609'
+  # Merged PR 36471: chore: Add new topics for cibr (data science) team to read only - CS01980673
+  # b1731dd5a196e79b4232423f3377f5a6064f1234
+  virgil_build_id: '1369818'
 
   # sqlbilling 20250603.3
-  # Tue Jun  3 11:57:33 UTC 2025 -- Tue Jun  3 21:57:33 AEST 2025
+  # Tue 03 Jun 2025 11:57:33 UTC -- Tue 03 Jun 2025 21:57:33 AEST
   #
   # Merged PR 36291: DE1 SQLBillingAddCS01978046
   # aef6656fa616ed9feb7e295e14e533cb9c8bd44c
