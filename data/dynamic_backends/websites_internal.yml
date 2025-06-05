@@ -1,5 +1,6 @@
 ---
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-tweb'
   encryption: false
   http_health_check:
     enabled: false
@@ -10,6 +11,7 @@
   name_suffix: '-glow'
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-tweb'
   encryption: false
   http_health_check:
     enabled: false
@@ -31,7 +33,7 @@
   name_suffix: '-services'
 
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
-  server_regex: '^au2sp'
+  server_regex: '^au2sp-tweb'
   encryption: false
   http_health_check:
     enabled: false
@@ -86,4 +88,16 @@
   cookie:
     enabled: true
     name: 'CW1'
+  name_suffix: ''
+
+- name_regex: '^[A-Za-z0-9-]+\.sand\.wtg\.zone$'
+  name_exclude_regex: '^svc|www'
+  server_regex: '^au2sp-sweb'
+  encryption: false
+  http_health_check:
+    enabled: false
+  port: 80
+  cookie:
+    enabled: true
+    name: 'WTGLB'
   name_suffix: ''
