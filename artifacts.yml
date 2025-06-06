@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250605.3
-  # Thu 05 Jun 2025 05:46:19 UTC -- Thu 05 Jun 2025 15:46:19 AEST
+  # Dante Build Artifact 20250606.3
+  # Fri Jun  6 01:12:05 UTC 2025 -- Fri Jun  6 11:12:05 AEST 2025
   #
-  # Merged PR 36469: Pin cicd agents to w5 node as a quick fix.
-  # d01c81a1b91e994eee6e292630d6bb0ce3d4ea7b
-  dante_build_id: '1369814'
+  # Merge pull request 36488 from dante_artifact_upgrade into master
+  # 00e86dc33181b57ae90a56e15651df40a47b2d3d
+  dante_build_id: '1370667'
 
-  # virgil 20250605.9
-  # Thu 05 Jun 2025 05:51:13 UTC -- Thu 05 Jun 2025 15:51:13 AEST
+  # virgil 20250606.1
+  # Thu Jun  5 23:34:05 UTC 2025 -- Fri Jun  6 09:34:05 AEST 2025
   #
-  # Merged PR 36471: chore: Add new topics for cibr (data science) team to read only - CS01980673
-  # b1731dd5a196e79b4232423f3377f5a6064f1234
-  virgil_build_id: '1369818'
+  # Merged PR 36481: Updated akmal.pub
+  # dfc04d2ccb86cc9f289ea6d751cd259581b201f3
+  virgil_build_id: '1370571'
 
-  # sqlbilling 20250603.3
-  # Tue 03 Jun 2025 11:57:33 UTC -- Tue 03 Jun 2025 21:57:33 AEST
+  # sqlbilling 20250605.4
+  # Thu Jun  5 11:15:50 UTC 2025 -- Thu Jun  5 21:15:50 AEST 2025
   #
-  # Merged PR 36291: DE1 SQLBillingAddCS01978046
-  # aef6656fa616ed9feb7e295e14e533cb9c8bd44c
-  sqlbilling_build_id: '1367853'
+  # Merged PR 36482: DE1 SQLBillingAddCS01981937
+  # 2e3827647fde36a8101d20788f3320fab878bf66
+  sqlbilling_build_id: '1370050'
