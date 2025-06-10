@@ -295,6 +295,8 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+        - name: star-au2s3-3-wtg-ws
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
