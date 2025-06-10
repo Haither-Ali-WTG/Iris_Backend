@@ -91,7 +91,7 @@
   name_suffix: ''
 
 - name_regex: '^[A-Za-z0-9-]+\.sand\.wtg\.zone$'
-  name_exclude_regex: '^svc|www'
+  name_exclude_regex: '^(svc|www)|glow'
   server_regex: '^au2sp-sweb'
   encryption: false
   http_health_check:
