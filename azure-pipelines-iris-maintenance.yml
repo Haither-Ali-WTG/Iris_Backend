@@ -283,7 +283,7 @@ jobs:
         env:
           ANSIBLE_HOST_KEY_CHECKING: false
           secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-        condition: and(succeeded(), ne(variables['selected_node'], ''))
+        condition: and(succeeded(), ne(variables['selected_node'], ''), ne(variables['skip_pre_checks'], 'true'))
 
       - task: Ansible@0
         displayName: 'Generate extra inventory files'
@@ -377,6 +377,7 @@ jobs:
             -e="host_delay=$(host_delay)"
             -e="ad_domain=$(ad_domain)"
             -e="cluster_name=$(System.JobName)"
+            -e="skip_pre_checks=$(skip_pre_checks)"
             -e"{simulation: false}"
             -e="ansible_ssh_extra_args='-o PreferredAuthentications=password'"
             --limit="$(selected_node)"
