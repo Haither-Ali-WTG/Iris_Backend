@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250610.1
-  # Tue Jun 10 00:03:52 UTC 2025 -- Tue Jun 10 10:03:52 AEST 2025
+  # Dante Build Artifact 20250610.2
+  # Tue Jun 10 04:22:45 UTC 2025 -- Tue Jun 10 14:22:45 AEST 2025
   #
-  # Merge pull request 36535 from dante_artifact_upgrade into master
-  # 47a5c3cb420726bb8293343e01b0552dde787742
-  dante_build_id: '1374473'
+  # Merge pull request 36555 from dante_artifact_upgrade into master
+  # e40f886e774f289d7b0bccb5ea409418e3fddec8
+  dante_build_id: '1374761'
 
-  # virgil 20250610.6
-  # Mon Jun  9 23:18:05 UTC 2025 -- Tue Jun 10 09:18:05 AEST 2025
+  # virgil 20250610.10
+  # Tue Jun 10 03:27:29 UTC 2025 -- Tue Jun 10 13:27:29 AEST 2025
   #
-  # Merge pull request 36523 from virgil_python_upgrade into master
-  # 7b880e1879e8ed72efb3fca468afe9a85c4f263a
-  virgil_build_id: '1374423'
+  # Merged PR 36549: Might help if zones are in the views
+  # b3076722394a1376da90c5c7aaa34ebbfb4d2ec3
+  virgil_build_id: '1374696'
 
   # sqlbilling 20250610.1
   # Mon Jun  9 22:58:49 UTC 2025 -- Tue Jun 10 08:58:49 AEST 2025
