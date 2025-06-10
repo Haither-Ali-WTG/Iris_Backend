@@ -1,3 +1,4 @@
+---
 de1s3-3-primary:
   clustered_instances: [de1prodinternal1services30]
   http_health_check:
