@@ -7,12 +7,12 @@ variables:
   # e40f886e774f289d7b0bccb5ea409418e3fddec8
   dante_build_id: '1374761'
 
-  # virgil 20250610.10
-  # Tue Jun 10 03:27:29 UTC 2025 -- Tue Jun 10 13:27:29 AEST 2025
+  # virgil 20250612.1
+  # Wed Jun 11 23:18:22 UTC 2025 -- Thu Jun 12 09:18:22 AEST 2025
   #
-  # Merged PR 36549: Might help if zones are in the views
-  # b3076722394a1376da90c5c7aaa34ebbfb4d2ec3
-  virgil_build_id: '1374696'
+  # Merged PR 36543: Updating entries for sydco-snds-2 and sydco-sdns-5
+  # 8a190e873e79daca2013efeeaf0123e242890432
+  virgil_build_id: '1376702'
 
   # sqlbilling 20250610.1
   # Mon Jun  9 22:58:49 UTC 2025 -- Tue Jun 10 08:58:49 AEST 2025
