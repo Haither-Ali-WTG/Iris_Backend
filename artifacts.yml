@@ -7,12 +7,12 @@ variables:
   # 1a3df400dcb63081065855058d4fbbcc49caa911
   dante_build_id: '1376764'
 
-  # virgil 20250612.1
-  # Wed Jun 11 23:18:22 UTC 2025 -- Thu Jun 12 09:18:22 AEST 2025
+  # virgil 20250612.8
+  # Thu Jun 12 03:27:19 UTC 2025 -- Thu Jun 12 13:27:19 AEST 2025
   #
-  # Merged PR 36543: Updating entries for sydco-snds-2 and sydco-sdns-5
-  # 8a190e873e79daca2013efeeaf0123e242890432
-  virgil_build_id: '1376702'
+  # Merged PR 36620: Reserve ocp overlay
+  # 6d7db1ad6d207b94a0b3d95539c1ae0f863106ee
+  virgil_build_id: '1376970'
 
   # sqlbilling 20250610.1
   # Mon Jun  9 22:58:49 UTC 2025 -- Tue Jun 10 08:58:49 AEST 2025
