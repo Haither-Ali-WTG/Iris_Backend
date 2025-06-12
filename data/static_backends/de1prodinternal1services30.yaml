@@ -1,0 +1,26 @@
+---
+de1s3-3-primary:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|301|302|400|403'
+  encryption: true
+  servers:
+    - name: de1nas03-s3-01.wtg.zone
+      ip: 10.3.31.64
+      port: 443
+
+de1s3-3-secondary:
+  clustered_instances: [de1prodinternal1services30]
+  full_override: |
+    backend de1s3-3-secondary
+    option httpchk HEAD /
+    cookie DE1S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server au2nas03-s3-01.wtg.zone 10.2.31.64:443 check check-ssl ssl verify none

@@ -90,6 +90,26 @@ clustered_instances:
           web: 2049
           socket: 2048
 
+    de1prodinternal1services30:
+      # de1-prod-internal-1
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          ssl: [3031]
+      stats:
+        ports:
+          web: 2341
+          socket: 2342
+      machine_cluster: de1-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-de1s3-3-wtg-ws
+          cms_resource_group: RG-EU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+
     de1prodfrontend1prodcwservices26:
       # de1-prod-frontend-1-prodcw-services-26
       dc: DE1

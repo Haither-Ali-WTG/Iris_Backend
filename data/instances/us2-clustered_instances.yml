@@ -117,6 +117,26 @@ clustered_instances:
           web: 2049
           socket: 2048
 
+    us2prodinternal1services30:
+      # us2-corp-internal-1
+      dc: US2
+      frontend:
+        maxconn: 20000
+        ports:
+          ssl: [3031]
+      stats:
+        ports:
+          web: 2341
+          socket: 2342
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-us2s3-3-wtg-ws
+          cms_resource_group: RG-US-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+
     us2prodfrontend1prodcwservices26:
       # us2-prod-frontend-1-prodcw-services-26
       dc: US2

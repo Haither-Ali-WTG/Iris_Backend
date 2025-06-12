@@ -36,7 +36,7 @@ de1-prod-frontend-1:
       virtual_router_id: 15
       priority: [de1lbl00387, de1lbl00306, de1lbl00307]
 
-de1internal1:
+de1-prod-internal-1:
   machines:
     de1lbl00931: ~
     de1lbl00932: ~
