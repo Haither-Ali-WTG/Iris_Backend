@@ -7,16 +7,16 @@ variables:
   # d5bdd9b05cbe223582bbd0744487193c59368a80
   dante_build_id: '1377244'
 
-  # virgil 20250612.11
-  # Thu Jun 12 07:00:56 UTC 2025 -- Thu Jun 12 17:00:56 AEST 2025
+  # virgil 20250613.2
+  # Thu Jun 12 23:58:02 UTC 2025 -- Fri Jun 13 09:58:02 AEST 2025
   #
-  # Merged PR 36646: Bring back A record for au2anl00552 for now
-  # 17311b1d4e202270093440ab48d7e3903dd92981
-  virgil_build_id: '1377194'
+  # Merged PR 36663: Config apex49,50 for additional VMware port
+  # 432dc281af07c91e9e921f421cca73f2598777c5
+  virgil_build_id: '1377886'
 
-  # sqlbilling 20250610.1
-  # Mon Jun  9 22:58:49 UTC 2025 -- Tue Jun 10 08:58:49 AEST 2025
+  # sqlbilling 20250612.2
+  # Thu Jun 12 10:27:36 UTC 2025 -- Thu Jun 12 20:27:36 AEST 2025
   #
-  # Merged PR 36521: US2 readonly update CS01983669
-  # 8cad5f10fb2d21f0396ca81e0a89d57ab3a0995e
-  sqlbilling_build_id: '1374392'
+  # Merged PR 36662: DE1 readonly update CS01981937
+  # 1c17ce688b548b5766b26a2219a6d33c3455bbc4
+  sqlbilling_build_id: '1377346'
