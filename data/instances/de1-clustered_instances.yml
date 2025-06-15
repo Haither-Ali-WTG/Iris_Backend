@@ -156,7 +156,7 @@ clustered_instances:
 
     de1prodfrontend1prodcdnservices31:
       # de1-prod-frontend-1-prod-cdn-services-31
-      dc: de1
+      dc: DE1
       frontend:
         maxconn: 20000
         ports:

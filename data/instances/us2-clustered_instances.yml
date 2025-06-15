@@ -226,7 +226,7 @@ clustered_instances:
 
     us2prodfrontend1prodcdnservices31:
       # us2-prod-frontend-1-prod-cdn-services-31
-      dc: us2
+      dc: US2
       frontend:
         maxconn: 20000
         ports:
