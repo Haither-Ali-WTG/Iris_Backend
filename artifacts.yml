@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250613.1
-  # Fri Jun 13 02:22:49 UTC 2025 -- Fri Jun 13 12:22:49 AEST 2025
+  # Dante Build Artifact 20250616.1
+  # Mon Jun 16 03:35:45 UTC 2025 -- Mon Jun 16 13:35:45 AEST 2025
   #
-  # Merge pull request 36670 from dante_artifact_upgrade into master
-  # 9e02ddde5f2493b5d7fa2918b8b52a16584d7705
-  dante_build_id: '1378007'
+  # Merged PR 36595: Remove artifacts that are not used from mercury
+  # 629646f5f427e16f0a9e1a25106b03c9f7df3769
+  dante_build_id: '1380955'
 
   # virgil 20250613.2
   # Thu Jun 12 23:58:02 UTC 2025 -- Fri Jun 13 09:58:02 AEST 2025
