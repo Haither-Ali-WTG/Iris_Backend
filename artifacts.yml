@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250616.1
-  # Mon Jun 16 03:35:45 UTC 2025 -- Mon Jun 16 13:35:45 AEST 2025
+  # Dante Build Artifact 20250616.2
+  # Mon Jun 16 05:43:06 UTC 2025 -- Mon Jun 16 15:43:06 AEST 2025
   #
-  # Merged PR 36595: Remove artifacts that are not used from mercury
-  # 629646f5f427e16f0a9e1a25106b03c9f7df3769
-  dante_build_id: '1380955'
+  # Merge pull request 36709 from dante_artifact_upgrade into master
+  # 699ec6e32e1dbb4ba8dd022c3d094e01cf59ee51
+  dante_build_id: '1381094'
 
   # virgil 20250616.4
   # Mon Jun 16 04:53:45 UTC 2025 -- Mon Jun 16 14:53:45 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 7ff22301ddce21e5735dfc13b7b9b1ea405e992d
   virgil_build_id: '1381029'
 
-  # sqlbilling 20250612.2
-  # Thu Jun 12 10:27:36 UTC 2025 -- Thu Jun 12 20:27:36 AEST 2025
+  # sqlbilling 20250616.2
+  # Mon Jun 16 05:01:05 UTC 2025 -- Mon Jun 16 15:01:05 AEST 2025
   #
-  # Merged PR 36662: DE1 readonly update CS01981937
-  # 1c17ce688b548b5766b26a2219a6d33c3455bbc4
-  sqlbilling_build_id: '1377346'
+  # Merged PR 36703: Updated us2-prod-frontend-1.yml
+  # 3f697573457b5e983707a354beee9f0fa63b11ce
+  sqlbilling_build_id: '1381054'
