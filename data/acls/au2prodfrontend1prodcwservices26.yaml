@@ -34,10 +34,10 @@ star_wisetechglobal_cn:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
 
-www-star:
+www-star_wisegrid_net:
   description: "www-*.wisegrid.net"
   tests:
-    - hdr(host) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
+    - hdr(host) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.wisegrid\.net$
 
 Glow_webservice_path:
   description: |-
