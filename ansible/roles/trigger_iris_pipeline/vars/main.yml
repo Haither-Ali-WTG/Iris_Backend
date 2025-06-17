@@ -6,3 +6,11 @@ pipeline_info:
     organization: WTGOps
     project: InfrastructureAutomation
     id: 88
+
+maintenance_pipeline_info:
+  name: Iris Host Maintenance
+  group: server_loadbalancer_iris
+  pipeline:
+    organization: WTGOps
+    project: InfrastructureAutomation
+    id: 358

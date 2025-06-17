@@ -49,7 +49,7 @@ jobs:
     strategy:
       matrix:
         au2-prod-frontend-1:
-          enabled: $(au2_prod_frontend_enabled)
+          enabled: $(au2-prod-frontend-1_enabled)
           dc: AU2
           hall: A
           xcc_user: $(au2_xcc_user)
@@ -58,7 +58,7 @@ jobs:
           s3_region: AU
           s3_host: $(au2_pure_host)
         au2-prod-internal-1:
-          enabled: $(au2_prod_internal_enabled)
+          enabled: $(au2-prod-internal-1_enabled)
           dc: AU2
           hall: A
           xcc_user: $(au2_xcc_user)
@@ -67,7 +67,16 @@ jobs:
           s3_region: AU
           s3_host: $(au2_pure_host)
         au2-sand-internal-1:
-          enabled: $(au2_sand_internal_enabled)
+          enabled: $(au2-sand-internal-1_enabled)
+          dc: AU2
+          hall: A
+          xcc_user: $(au2_xcc_user)
+          iso_url_base: $(au2_iso_url_base)
+          specific_host: $(hosts)
+          s3_region: AU
+          s3_host: $(au2_pure_host)
+        au2-sand-internal-2:
+          enabled: $(au2-sand-internal-2_enabled)
           dc: AU2
           hall: A
           xcc_user: $(au2_xcc_user)
@@ -76,7 +85,7 @@ jobs:
           s3_region: AU
           s3_host: $(au2_pure_host)
         au2-prod-elastic-bunker-1:
-          enabled: $(au2_prod_elastic_bunker_enabled)
+          enabled: $(au2-prod-elastic-bunker-1_enabled)
           dc: AU2
           hall: A
           xcc_user: $(au2_xcc_user)
@@ -85,7 +94,7 @@ jobs:
           s3_region: AU
           s3_host: $(au2_pure_host)
         de1-prod-frontend-1:
-          enabled: $(de1_prod_frontend_enabled)
+          enabled: $(de1-prod-frontend-1_enabled)
           dc: DE1
           hall: A
           xcc_user: $(de1_xcc_user)
@@ -93,8 +102,8 @@ jobs:
           specific_host: $(hosts)
           s3_region: DE
           s3_host: $(de1_pure_host)
-        de1internal1:
-          enabled: $(de1internal1_enabled)
+        de1-prod-internal-1:
+          enabled: $(de1-prod-internal-1_enabled)
           dc: DE1
           hall: A
           xcc_user: $(de1_xcc_user)
@@ -103,7 +112,7 @@ jobs:
           s3_region: DE
           s3_host: $(de1_pure_host)
         de1-prod-elastic-bunker-1:
-          enabled: $(de1_prod_elastic_bunker_enabled)
+          enabled: $(de1-prod-elastic-bunker-1_enabled)
           dc: DE1
           hall: A
           xcc_user: $(de1_xcc_user)
@@ -112,7 +121,7 @@ jobs:
           s3_region: DE
           s3_host: $(de1_pure_host)
         us2-prod-frontend-1:
-          enabled: $(us2_prod_frontend_enabled)
+          enabled: $(us2-prod-frontend-1_enabled)
           dc: US2
           hall: A
           xcc_user: $(us2_xcc_user)
@@ -121,7 +130,7 @@ jobs:
           s3_region: US
           s3_host: $(us2_pure_host)
         us2-prod-elastic-bunker-1:
-          enabled: $(us2_prod_elastic_bunker_enabled)
+          enabled: $(us2-prod-elastic-bunker-1_enabled)
           dc: US2
           hall: A
           xcc_user: $(us2_xcc_user)
@@ -130,7 +139,7 @@ jobs:
           s3_region: US
           s3_host: $(us2_pure_host)
         us2-corp-internal-1:
-          enabled: $(us2_corp_internal_enabled)
+          enabled: $(us2-corp-internal-1_enabled)
           dc: US2
           hall: A
           xcc_user: $(us2_xcc_user)
@@ -386,3 +395,17 @@ jobs:
           ANSIBLE_HOST_KEY_CHECKING: false
           secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
         condition: and(succeeded(), ne(variables['selected_node'], ''))
+
+      - task: Ansible@0
+        displayName: 'Trigger next maintenance'
+        inputs:
+          playbookPathOnAgentMachine: 'ansible/play_maintenance/trigger_next_maintenance.yaml'
+          inventoriesAgentMachine: file
+          inventoryFileOnAgentMachine: 'inventories/inventory-$(dc)-$(hall).yaml'
+          args: >-
+            --diff -e="dc=$(dc)"
+            -e="cluster_name=$(System.JobName)"
+          failOnStdErr: false
+        env:
+          azure_devops_token: $(System.AccessToken)
+        condition: and(succeeded(), ne(variables['selected_node'],''), eq(variables['trigger_next_enabled'],'enabled'))
