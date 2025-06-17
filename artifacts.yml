@@ -7,12 +7,12 @@ variables:
   # 699ec6e32e1dbb4ba8dd022c3d094e01cf59ee51
   dante_build_id: '1381094'
 
-  # virgil 20250616.4
-  # Mon Jun 16 04:53:45 UTC 2025 -- Mon Jun 16 14:53:45 AEST 2025
+  # virgil 20250617.2
+  # Tue Jun 17 00:10:10 UTC 2025 -- Tue Jun 17 10:10:10 AEST 2025
   #
-  # Merged PR 36689: Add VLAN Profile for DAT Server VMs hosted on VMware ESXi hosts
-  # 7ff22301ddce21e5735dfc13b7b9b1ea405e992d
-  virgil_build_id: '1381029'
+  # Merge pull request 36722 from virgil_python_upgrade into master
+  # f77508bdad985d596f3a103069753dc747888750
+  virgil_build_id: '1381797'
 
   # sqlbilling 20250616.2
   # Mon Jun 16 05:01:05 UTC 2025 -- Mon Jun 16 15:01:05 AEST 2025
