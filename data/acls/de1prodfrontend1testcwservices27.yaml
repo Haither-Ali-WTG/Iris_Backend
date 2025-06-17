@@ -36,6 +36,6 @@ www-star_wisegrid_net:
 
 Glow_webservice_path:
   description: |-
-    CW1 webservice paths that get routed to specific dynamic backends
+    Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
