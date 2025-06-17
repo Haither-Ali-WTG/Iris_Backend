@@ -12,22 +12,17 @@ https_redirect:
     covered by wildcard certificates)
   order: 79
   actions:
-    - redirect scheme https if star_wisetechglobal_cn !{ ssl_fc }
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_cfs_wisegrid_net !{ ssl_fc }
-    - redirect scheme https if star_edirf_wisegrid_net !{ ssl_fc }
-    - redirect scheme https if star_webcampaign_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webcampaign_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webprint_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webtracker_wisegrid_net !{ ssl_fc }
 
 cw1_use_dynamic_backend_path:
   description: |-
-    Redirect testrig webservices eadaptor/Glow/Portals requests to the correct backend based on path
-    Exclude requests to healthchecks which will go to the default backend so even if portals or glow
-    is marked down devs can still troubleshoot
+    Redirect Glow webservice requests to the correct backend based on path
   order: 80
   actions:
     - >-
-        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-%[path,field(2,/),lower]
-        if cw1_dynamic_backend_webservice_path star_wisegrid_net !default_healthcheck
+        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
+        if Glow_webservice_path www-star_wisegrid_net
