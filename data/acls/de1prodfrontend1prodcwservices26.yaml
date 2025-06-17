@@ -34,7 +34,7 @@ www-star_wisegrid_net:
   tests:
     - hdr(host) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.wisegrid\.net$
 
-Glow_webservice_path:
+glow_webservice_path:
   description: |-
     Glow webservice paths that get routed to specific dynamic backend
   tests:
