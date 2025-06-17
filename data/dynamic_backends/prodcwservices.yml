@@ -1,4 +1,5 @@
 ---
+# Glow
 - name_regex: ^www-[A-Za-z0-9]{6}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
@@ -10,6 +11,7 @@
     enabled: true
   name_suffix: 'Glow'
 
+# Glow (Portals)
 - name_regex: ^www-[A-Za-z0-9]{6}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
@@ -21,6 +23,7 @@
     enabled: true
   name_suffix: 'Portals'
 
+# Glow (Services)
 - name_regex: ^svc-[A-Za-z0-9]{6}\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
@@ -31,6 +34,7 @@
     enabled: true
   name_suffix: ''
 
+# Eadaptor
 - name_regex: ^[A-Za-z0-9]{6}services(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
@@ -41,6 +45,7 @@
     enabled: true
   name_suffix: ''
 
+# Accounting
 - name_regex: ^[A-Za-z0-9]{6}accounting(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
@@ -51,6 +56,7 @@
     enabled: true
   name_suffix: ''
 
+# Ratings
 - name_regex: ^[A-Za-z0-9]{6}ratings(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
@@ -61,6 +67,7 @@
     enabled: true
   name_suffix: ''
 
+# Webprint
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webprint\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
@@ -71,6 +78,7 @@
     enabled: true
   name_suffix: ''
 
+# Webtracker
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webtracker\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
@@ -81,6 +89,7 @@
     enabled: true
   name_suffix: ''
 
+# Edirf
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.edirf\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
@@ -91,6 +100,7 @@
     enabled: true
   name_suffix: ''
 
+# CFS
 - name_regex: ^[A-Za-z0-9]{6}\.cfs\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
