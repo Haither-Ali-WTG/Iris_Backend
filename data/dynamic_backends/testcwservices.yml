@@ -8,6 +8,7 @@
   port: 443
   balance: first
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: '-glow'
 
@@ -20,6 +21,7 @@
   port: 443
   balance: first
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: '-portals'
 
@@ -31,6 +33,7 @@
     http_path: "/"
   port: 443
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -42,6 +45,7 @@
     http_path: "/"
   port: 443
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -53,6 +57,7 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -64,6 +69,7 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -75,6 +81,7 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -86,6 +93,7 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -97,6 +105,7 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
 
@@ -108,5 +117,6 @@
     http_path: "/"
   port: 80
   cookie:
+    name: WEBSVC
     enabled: true
   name_suffix: ''
