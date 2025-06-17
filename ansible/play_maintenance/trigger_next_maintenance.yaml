@@ -22,10 +22,10 @@
     - name: Display next cluster
       debug:
         msg: "Next cluster after {{ cluster_name }} in {{ dc }}: {{ next_cluster }}"
-      when: next_cluster | default('') != ''
+      when: next_cluster | default('')
 
     - name: Trigger next IRIS maintenance pipeline
       include_role:
         name: trigger_iris_pipeline
         tasks_from: trigger_maintenance.yml
-      when: next_cluster | default('') != ''
+      when: next_cluster | default('')
