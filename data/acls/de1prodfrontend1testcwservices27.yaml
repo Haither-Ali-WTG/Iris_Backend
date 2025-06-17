@@ -1,2 +1,58 @@
 ---
-{}
+star_wisegrid_net:
+  description: "*.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_cfs_wisegrid_net:
+  description: "*.cfs.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_edirf_wisegrid_net:
+  description: "*.edirf.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_webcampaign_wisegrid_net:
+  description: "*.webcampaign.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_webprint_wisegrid_net:
+  description: "*.webprint.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_webtracker_wisegrid_net:
+  description: "*.webtracker.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_wisetechglobal_cn:
+  description: "*.wisetechglobal.cn"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
+
+excluded_from_redirect_paths:
+  description: |-
+    Paths that should be excluded from the HTTPS redirect because
+    the webservices don't support HTTPS
+  tests:
+    - path_beg -i /Warehouse/webservice
+
+cw1_dynamic_backend_webservice_path:
+  description: |-
+    CW1 webservice paths that get routed to specific dynamic backends
+  tests:
+    - path_beg -i /Services/
+    - path_beg -i /Glow/
+    - path_beg -i /Portals/
+
+default_healthcheck:
+  description: |-
+    Route healthchecks for testrig to default backend so even if a service goes down
+    the healthcheck can still be reached for troubleshooting
+  tests:
+    - path_end -i /wtg/ready
+    - path_end -i /wtg/status
