@@ -147,7 +147,6 @@ clustered_instances:
         - name: star-webcampaign-wisegrid-net
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
-        - name: star-edirf-wisegrid-net
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
@@ -192,7 +191,6 @@ clustered_instances:
         - name: star-webcampaign-wisegrid-net
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
-        - name: star-edirf-wisegrid-net
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
