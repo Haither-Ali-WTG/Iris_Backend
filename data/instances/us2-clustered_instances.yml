@@ -170,12 +170,12 @@ clustered_instances:
         - us2wp-sweb-007b.wisecloud.zone
         - us2wp-sweb-008a.wisecloud.zone
         - us2wp-sweb-008b.wisecloud.zone
-        - us2wp-sweb-401a.wisecloud.zone      #UP3 Dedicated
-        - us2wp-sweb-401b.wisecloud.zone      #UP3 Dedicated
-        - us2wp-sweb-402a.wisecloud.zone      #UP3 Dedicated
-        - us2wp-sweb-402b.wisecloud.zone      #UP3 Dedicated
-        - us2wp-sweb-403a.wisecloud.zone      #UP3 Dedicated
-        - us2wp-sweb-403b.wisecloud.zone      #UP3 Dedicated
+        - us2wp-sweb-401a.wisecloud.zone      # UP3 Dedicated
+        - us2wp-sweb-401b.wisecloud.zone      # UP3 Dedicated
+        - us2wp-sweb-402a.wisecloud.zone      # UP3 Dedicated
+        - us2wp-sweb-402b.wisecloud.zone      # UP3 Dedicated
+        - us2wp-sweb-403a.wisecloud.zone      # UP3 Dedicated
+        - us2wp-sweb-403b.wisecloud.zone      # UP3 Dedicated
         - us2wp-sweb-404a.wisecloud.zone
         - us2wp-sweb-404b.wisecloud.zone
         - us2wp-sweb-405a.wisecloud.zone
@@ -236,12 +236,12 @@ clustered_instances:
         - us2wt-sweb-004.test.wisecloud.zone
         - us2wt-sweb-005.test.wisecloud.zone
         - us2wt-sweb-006.test.wisecloud.zone
-        - us2wt-sweb-401a.test.wisecloud.zone     #UP3 Dedicated
-        - us2wt-sweb-401b.test.wisecloud.zone     #UP3 Dedicated
-        - us2wt-sweb-402a.test.wisecloud.zone     #UP3 Dedicated
-        - us2wt-sweb-402b.test.wisecloud.zone     #UP3 Dedicated
-        - us2wt-sweb-403a.test.wisecloud.zone     #UP3 Dedicated
-        - us2wt-sweb-403b.test.wisecloud.zone     #UP3 Dedicated
+        - us2wt-sweb-401a.test.wisecloud.zone     # UP3 Dedicated
+        - us2wt-sweb-401b.test.wisecloud.zone     # UP3 Dedicated
+        - us2wt-sweb-402a.test.wisecloud.zone     # UP3 Dedicated
+        - us2wt-sweb-402b.test.wisecloud.zone     # UP3 Dedicated
+        - us2wt-sweb-403a.test.wisecloud.zone     # UP3 Dedicated
+        - us2wt-sweb-403b.test.wisecloud.zone     # UP3 Dedicated
         - us2wt-sweb-410a.test.wisecloud.zone
         - us2wt-sweb-410b.test.wisecloud.zone
         - us2wt-sweb-411a.test.wisecloud.zone
