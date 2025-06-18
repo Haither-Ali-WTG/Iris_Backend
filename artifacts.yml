@@ -7,12 +7,12 @@ variables:
   # 35ef8287eeb6de19678e3053b7d386c7feb2f6b3
   dante_build_id: '1382986'
 
-  # virgil 20250618.9
-  # Wed Jun 18 02:18:33 UTC 2025 -- Wed Jun 18 12:18:33 AEST 2025
+  # virgil 20250618.13
+  # Wed Jun 18 07:48:09 UTC 2025 -- Wed Jun 18 17:48:09 AEST 2025
   #
-  # Merged PR 36792: new nodes for VMware DAT Server
-  # 891c9e84c78001ba72a3ffb7a9fe800611270818
-  virgil_build_id: '1382936'
+  # Merged PR 36816: Adding 1:1 mapping to new 2x VMware hosts
+  # 1c36d050821cd65fc317426647d1ae325cbf1940
+  virgil_build_id: '1383207'
 
   # sqlbilling 20250616.2
   # Mon Jun 16 05:01:05 UTC 2025 -- Mon Jun 16 15:01:05 AEST 2025
