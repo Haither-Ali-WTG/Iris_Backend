@@ -7,12 +7,12 @@ variables:
   # 5eb4bd8f71704258cf385be319e1a2274658241b
   dante_build_id: '1382128'
 
-  # virgil 20250617.2
-  # Tue Jun 17 00:10:10 UTC 2025 -- Tue Jun 17 10:10:10 AEST 2025
+  # virgil 20250618.4
+  # Wed Jun 18 00:23:28 UTC 2025 -- Wed Jun 18 10:23:28 AEST 2025
   #
-  # Merge pull request 36722 from virgil_python_upgrade into master
-  # f77508bdad985d596f3a103069753dc747888750
-  virgil_build_id: '1381797'
+  # Merged PR 36771: Remove Mellanox from Alexandria DC
+  # 92a111d98fc26dde7a40ae169486f6410745fe67
+  virgil_build_id: '1382800'
 
   # sqlbilling 20250616.2
   # Mon Jun 16 05:01:05 UTC 2025 -- Mon Jun 16 15:01:05 AEST 2025
