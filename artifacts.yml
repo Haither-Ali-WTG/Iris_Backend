@@ -7,12 +7,12 @@ variables:
   # bf99eab377ecc867e498ae53b2919b0a237f1e76
   dante_build_id: '1383969'
 
-  # virgil 20250619.6
-  # Thu Jun 19 00:31:38 UTC 2025 -- Thu Jun 19 10:31:38 AEST 2025
+  # virgil 20250619.9
+  # Thu Jun 19 07:20:59 UTC 2025 -- Thu Jun 19 17:20:59 AEST 2025
   #
-  # Merged PR 36843: Removed obsolete Windows os_drivers from virgil
-  # 337bc26f73930f3024c07f16da6d0da99f5645c6
-  virgil_build_id: '1383868'
+  # Merged PR 36871: Config vmware swp in Rack406
+  # d7fe59cf91bd406765d2ec6def4ec0a1ec727c5f
+  virgil_build_id: '1384194'
 
   # sqlbilling 20250619.1
   # Wed Jun 18 23:29:46 UTC 2025 -- Thu Jun 19 09:29:46 AEST 2025
