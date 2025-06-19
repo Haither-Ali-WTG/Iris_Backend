@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250618.4
-  # Wed Jun 18 08:43:07 UTC 2025 -- Wed Jun 18 18:43:07 AEST 2025
+  # Dante Build Artifact 20250619.1
+  # Thu Jun 19 00:41:43 UTC 2025 -- Thu Jun 19 10:41:43 AEST 2025
   #
-  # Merge pull request 36823 from dante_artifact_upgrade into master
-  # 2af3676ded439e0969e6d14dceeed2bda9bc034f
-  dante_build_id: '1383246'
+  # Merged PR 36844: Windows: Removed obsolete code
+  # 7f793daadd860dedcec7ef7245f91caafc7aa1b6
+  dante_build_id: '1383879'
 
-  # virgil 20250619.2
-  # Wed Jun 18 23:47:46 UTC 2025 -- Thu Jun 19 09:47:46 AEST 2025
+  # virgil 20250619.6
+  # Thu Jun 19 00:31:38 UTC 2025 -- Thu Jun 19 10:31:38 AEST 2025
   #
-  # Merged PR 36836: Remove Trinium VLAN from us2kvl-v0
-  # aa1c7d471c8cfc1bd9e02a6aa935c7abd95c4717
-  virgil_build_id: '1383808'
+  # Merged PR 36843: Removed obsolete Windows os_drivers from virgil
+  # 337bc26f73930f3024c07f16da6d0da99f5645c6
+  virgil_build_id: '1383868'
 
   # sqlbilling 20250619.1
   # Wed Jun 18 23:29:46 UTC 2025 -- Thu Jun 19 09:29:46 AEST 2025
