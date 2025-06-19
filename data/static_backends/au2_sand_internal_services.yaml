@@ -359,6 +359,15 @@ sand-rdg-token.testrig.sand.wtg.zone:
     - name: au2sp-srdg-408
       ip: 10.2.123.20
       port: 80
+    - name: au2sp-trdg-401
+      ip: 10.2.123.13
+      port: 80
+    - name: au2sp-trdg-402
+      ip: 10.2.123.14
+      port: 80
+    - name: au2sp-trdg-403
+      ip: 10.2.123.15
+      port: 80
 
 sand-rdg-pass.testrig.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
