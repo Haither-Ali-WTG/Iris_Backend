@@ -101,3 +101,15 @@
     enabled: true
     name: 'WTGLB'
   name_suffix: ''
+
+  - name_regex: '^wiserates-.*\.testrig.*\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-sweb'
+  encryption: false
+  http_health_check:
+    enabled: false
+  port: 80
+  balance: first
+  cookie:
+    enabled: true
+    name: 'CW1'
+  name_suffix: ''
