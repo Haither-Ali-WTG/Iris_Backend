@@ -7,16 +7,16 @@ variables:
   # 2af3676ded439e0969e6d14dceeed2bda9bc034f
   dante_build_id: '1383246'
 
-  # virgil 20250618.13
-  # Wed Jun 18 07:48:09 UTC 2025 -- Wed Jun 18 17:48:09 AEST 2025
+  # virgil 20250619.2
+  # Wed Jun 18 23:47:46 UTC 2025 -- Thu Jun 19 09:47:46 AEST 2025
   #
-  # Merged PR 36816: Adding 1:1 mapping to new 2x VMware hosts
-  # 1c36d050821cd65fc317426647d1ae325cbf1940
-  virgil_build_id: '1383207'
+  # Merged PR 36836: Remove Trinium VLAN from us2kvl-v0
+  # aa1c7d471c8cfc1bd9e02a6aa935c7abd95c4717
+  virgil_build_id: '1383808'
 
-  # sqlbilling 20250616.2
-  # Mon Jun 16 05:01:05 UTC 2025 -- Mon Jun 16 15:01:05 AEST 2025
+  # sqlbilling 20250619.1
+  # Wed Jun 18 23:29:46 UTC 2025 -- Thu Jun 19 09:29:46 AEST 2025
   #
-  # Merged PR 36703: Updated us2-prod-frontend-1.yml
-  # 3f697573457b5e983707a354beee9f0fa63b11ce
-  sqlbilling_build_id: '1381054'
+  # Merged PR 36835: Add us2 readonly IPs CS01993182
+  # bc89aacd9dfd6d602011713d25328bd0bf9cf773
+  sqlbilling_build_id: '1383792'
