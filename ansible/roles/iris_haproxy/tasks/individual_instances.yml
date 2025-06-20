@@ -115,7 +115,7 @@
     - name: Copy apparmor_profile to target folder
       copy:
         src: apparmor_profile
-        dest: "{{ individual_instance_dir }}/apparmor_profile"
+        dest: "/etc/apparmor.d/apparmor_profile"
         mode: u=r,go=
         owner: root
         group: root
@@ -131,7 +131,7 @@
       when: apparmor_profile_config is not changed
 
     - name: Immediately load apparmor profile
-      command: "apparmor_parser -r -W {{ individual_instance_dir }}/apparmor_profile"
+      command: "apparmor_parser -r -W /etc/apparmor.d/apparmor_profile"
       become: yes
       changed_when: yes
       when: >-  # noqa: no-handler
