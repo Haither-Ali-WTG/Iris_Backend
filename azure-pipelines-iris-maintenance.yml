@@ -160,7 +160,7 @@ jobs:
       - script: |
           echo "Running $(Build.CronSchedule.DisplayName)"
           if [ "$(Build.CronSchedule.DisplayName)" = "Sand cluster maintenance" ]; then
-            echo "##vso[task.setvariable variable=au2_sand_internal_enabled]enabled"
+            echo "##vso[task.setvariable variable=au2-sand-internal-1_enabled]enabled"
           fi
         displayName: 'Set variable for scheduled run'
 
