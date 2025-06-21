@@ -44,7 +44,7 @@ acl_mockendpoints_api_test_wisegrid_net_13004:
   tests:
     - dst_port 2134
 
-acl_mockendpoints_api_test_wisegrid_net_443:
-  description: mockendpoints api test wisegrid net TEST TCP port 443
+acl_mockendpoints_api_test_wisegrid_net_80:
+  description: mockendpoints api test wisegrid net TEST TCP port 80
   tests:
     - dst_port 2135

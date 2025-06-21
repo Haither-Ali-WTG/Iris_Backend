@@ -101,7 +101,7 @@ mockendpoints-api-test-wisegrid-net-13004:
       ip: 10.2.69.122
       port: 13004
 
-mockendpoints-api-test-wisegrid-net-443:
+mockendpoints-api-test-wisegrid-net-80:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false

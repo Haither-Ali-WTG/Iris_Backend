@@ -69,9 +69,9 @@ mockendpoints_api_test_wisegrid_net_13004:
   actions:
     - use_backend mockendpoints-api-test-wisegrid-net-13004 if acl_mockendpoints_api_test_wisegrid_net_13004
 
-mockendpoints_api_test_wisegrid_net_443:
+mockendpoints_api_test_wisegrid_net_80:
   description: |-
-    Uses backend mockendpoints-api-test-wisegrid-net-443 for acl_mockendpoints_api_test_wisegrid_net_443
+    Uses backend mockendpoints-api-test-wisegrid-net-80 for acl_mockendpoints_api_test_wisegrid_net_80
   order: 50
   actions:
-    - use_backend mockendpoints-api-test-wisegrid-net-443 if acl_mockendpoints_api_test_wisegrid_net_443
+    - use_backend mockendpoints-api-test-wisegrid-net-80 if acl_mockendpoints_api_test_wisegrid_net_80
