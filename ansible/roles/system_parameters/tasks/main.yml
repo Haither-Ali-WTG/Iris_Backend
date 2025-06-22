@@ -14,6 +14,13 @@
     }}
   become: yes
 
+- name: Ensure nf_conntrack module is loaded at boot before systemd-sysctl
+  copy:
+    content: "nf_conntrack"
+    dest: "/etc/modules-load.d/nf_conntrack.conf"
+    mode: u=rw,go=r
+  become: yes
+
 - name: Deploy ulimit limits
   copy:
     dest: /etc/security/limits.conf
