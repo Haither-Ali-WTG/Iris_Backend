@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250620.1
-  # Fri Jun 20 00:23:38 UTC 2025 -- Fri Jun 20 10:23:38 AEST 2025
+  # Dante Build Artifact 20250623.1
+  # Mon Jun 23 00:23:10 UTC 2025 -- Mon Jun 23 10:23:10 AEST 2025
   #
-  # Merge pull request 36895 from dante_artifact_upgrade into master
-  # 568a7733798307b99e617655b768cbbced49db30
-  dante_build_id: '1384782'
+  # Merge pull request 36920 from dante_artifact_upgrade into master
+  # 6a1ffb0263f8d93d87e3c20141850f5783e20087
+  dante_build_id: '1387365'
 
-  # virgil 20250620.4
-  # Thu Jun 19 23:29:04 UTC 2025 -- Fri Jun 20 09:29:04 AEST 2025
+  # virgil 20250623.4
+  # Mon Jun 23 04:12:38 UTC 2025 -- Mon Jun 23 14:12:38 AEST 2025
   #
-  # Merged PR 36889: Updates for de1prod1 and decom old ceph nodes
-  # 286c434571075c6c4f7ca76c7e72882bc38a9676
-  virgil_build_id: '1384727'
+  # Merged PR 36932: apex75,76 swp3 -- au2wp-svir-001 remove LACP , server rebuild 2019 to 2022
+  # aa094825cc72a9dbc3f3a2bf85ea90851008e220
+  virgil_build_id: '1387536'
 
   # sqlbilling 20250619.1
   # Wed Jun 18 23:29:46 UTC 2025 -- Thu Jun 19 09:29:46 AEST 2025
