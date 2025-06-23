@@ -44,8 +44,8 @@
     name: 'CW1'
   name_suffix: ''
 
-- name_regex: '^www-.*\.cargowise\.com$'
-  server_regex: '^au2sp'
+- name_regex: '^www-[A-Za-z0-9]+\.cargowise\.com$'
+  server_regex: '^au2sp-sweb'
   encryption: false
   http_health_check:
     enabled: false
@@ -56,8 +56,8 @@
     name: 'CW1'
   name_suffix: ''
 
-- name_regex: '^svc-.*\.cargowise\.com$'
-  server_regex: '^au2sp'
+- name_regex: '^svc-[A-Za-z0-9]+\.cargowise\.com$'
+  server_regex: '^au2sp-sweb'
   encryption: true
   http_health_check:
     enabled: false
@@ -67,8 +67,8 @@
     name: 'CW1'
   name_suffix: ''
 
-- name_regex: '^www-.*\.sand\.wtg\.zone$'
-  server_regex: '^au2sp'
+- name_regex: '^www-[A-Za-z0-9]+\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-sweb'
   encryption: false
   http_health_check:
     enabled: false
@@ -79,8 +79,8 @@
     name: 'CW1'
   name_suffix: ''
 
-- name_regex: '^svc-.*\.sand\.wtg\.zone$'
-  server_regex: '^au2sp'
+- name_regex: '^svc-[A-Za-z0-9]+\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-sweb'
   encryption: true
   http_health_check:
     enabled: false
@@ -102,7 +102,7 @@
     name: 'WTGLB'
   name_suffix: ''
 
-- name_regex: '^wiserates-.*\.testrig.*\.sand\.wtg\.zone$'
+- name_regex: '^wiserates-[A-Za-z0-9]+\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp-sweb'
   encryption: false
   http_health_check:
