@@ -7,12 +7,12 @@ variables:
   # 506f644fb5b4baf4a05eda20bf3a98b1534ef198
   dante_build_id: '1388558'
 
-  # virgil 20250624.5
-  # Tue Jun 24 04:45:51 UTC 2025 -- Tue Jun 24 14:45:51 AEST 2025
+  # virgil 20250624.8
+  # Tue Jun 24 07:11:31 UTC 2025 -- Tue Jun 24 17:11:31 AEST 2025
   #
-  # Merged PR 36946: update server location and OS type
-  # 642f0d966764d11a3918b96971ef4639f981d8bd
-  virgil_build_id: '1388527'
+  # Merged PR 37000: NAS port config for VMware test hosts
+  # 84d4b40b97adc653d68b274d27152ac5ca18dfff
+  virgil_build_id: '1388685'
 
   # sqlbilling 20250623.2
   # Mon Jun 23 12:34:05 UTC 2025 -- Mon Jun 23 22:34:05 AEST 2025
