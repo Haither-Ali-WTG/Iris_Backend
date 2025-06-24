@@ -7,16 +7,16 @@ variables:
   # 36d2740f0046fe0e51596e59e4407b8f76e723c8
   dante_build_id: '1387593'
 
-  # virgil 20250623.4
-  # Mon Jun 23 04:12:38 UTC 2025 -- Mon Jun 23 14:12:38 AEST 2025
+  # virgil 20250624.2
+  # Tue Jun 24 00:30:32 UTC 2025 -- Tue Jun 24 10:30:32 AEST 2025
   #
-  # Merged PR 36932: apex75,76 swp3 -- au2wp-svir-001 remove LACP , server rebuild 2019 to 2022
-  # aa094825cc72a9dbc3f3a2bf85ea90851008e220
-  virgil_build_id: '1387536'
+  # Merge pull request 36950 from virgil_python_upgrade into master
+  # 2e1183b3ac6d15ac23f74fd4e143b9649b87db07
+  virgil_build_id: '1388338'
 
-  # sqlbilling 20250619.1
-  # Wed Jun 18 23:29:46 UTC 2025 -- Thu Jun 19 09:29:46 AEST 2025
+  # sqlbilling 20250623.2
+  # Mon Jun 23 12:34:05 UTC 2025 -- Mon Jun 23 22:34:05 AEST 2025
   #
-  # Merged PR 36835: Add us2 readonly IPs CS01993182
-  # bc89aacd9dfd6d602011713d25328bd0bf9cf773
-  sqlbilling_build_id: '1383792'
+  # Merged PR 36948: US2 SQLBillingAddCS01997374
+  # e51eb486736a672c2297e9224f3e4d192e8979be
+  sqlbilling_build_id: '1387883'
