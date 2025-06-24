@@ -7,16 +7,16 @@ variables:
   # 60f9fd2469946edc287451c8c12c3f8b5b4e7f81
   dante_build_id: '1388728'
 
-  # virgil 20250624.8
-  # Tue Jun 24 07:11:31 UTC 2025 -- Tue Jun 24 17:11:31 AEST 2025
+  # virgil 20250625.2
+  # Tue Jun 24 22:51:41 UTC 2025 -- Wed Jun 25 08:51:41 AEST 2025
   #
-  # Merged PR 37000: NAS port config for VMware test hosts
-  # 84d4b40b97adc653d68b274d27152ac5ca18dfff
-  virgil_build_id: '1388685'
+  # Merged PR 37017: assign au2-apex35/36 ports swp11-44 to vlan1029
+  # 34336476334fe8b7c378a2aed86fa4d883c4a5ce
+  virgil_build_id: '1389272'
 
-  # sqlbilling 20250623.2
-  # Mon Jun 23 12:34:05 UTC 2025 -- Mon Jun 23 22:34:05 AEST 2025
+  # sqlbilling 20250624.2
+  # Tue Jun 24 10:35:31 UTC 2025 -- Tue Jun 24 20:35:31 AEST 2025
   #
-  # Merged PR 36948: US2 SQLBillingAddCS01997374
-  # e51eb486736a672c2297e9224f3e4d192e8979be
-  sqlbilling_build_id: '1387883'
+  # Merged PR 37012: Add au2readonly IPS CS01998841
+  # 84ff038e0fd5ba92f181f33644ffb53738d5ff17
+  sqlbilling_build_id: '1388828'
