@@ -49,6 +49,15 @@ sand-token-rdg-http:
     - name: au2sp-srdg-408
       ip: 10.2.123.20
       port: 80
+    - name: au2sp-trdg-401
+      ip: 10.2.123.13
+      port: 80
+    - name: au2sp-trdg-402
+      ip: 10.2.123.14
+      port: 80
+    - name: au2sp-trdg-403
+      ip: 10.2.123.15
+      port: 80
 
 sand-token-rdg-rpc:
   clustered_instances: [au2sandinternalrdg]
@@ -62,4 +71,7 @@ sand-token-rdg-rpc:
   servers:
     - name: au2sp-srdg-405
       ip: 10.2.123.17
+      port: 80
+    - name: au2sp-trdg-404
+      ip: 10.2.123.16
       port: 80
