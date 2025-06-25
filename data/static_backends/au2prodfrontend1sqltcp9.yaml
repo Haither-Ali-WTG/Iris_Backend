@@ -499,3 +499,12 @@ au2wpreadonly442l1-wisegrid-net:
     - name: au2wpreadonly442l1
       ip: 10.2.137.32
       port: 1433
+
+au2wpreadonly460l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wpreadonly460l1
+      ip: 10.2.137.63
+      port: 1433
