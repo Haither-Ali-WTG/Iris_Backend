@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250625.1
-  # Tue Jun 24 23:42:54 UTC 2025 -- Wed Jun 25 09:42:54 AEST 2025
+  # Dante Build Artifact 20250625.2
+  # Wed Jun 25 00:24:20 UTC 2025 -- Wed Jun 25 10:24:20 AEST 2025
   #
-  # Merge pull request 37026 from dante_artifact_upgrade into master
-  # 7a9210913e5fe1c2c090476d824bc235d28ad19a
-  dante_build_id: '1389324'
+  # Merged PR 37033: Replaced nginx-uwsgi base image
+  # d557f5254c672bae37b4f5f4910e347b4dab6ca0
+  dante_build_id: '1389391'
 
   # virgil 20250625.2
   # Tue Jun 24 22:51:41 UTC 2025 -- Wed Jun 25 08:51:41 AEST 2025
