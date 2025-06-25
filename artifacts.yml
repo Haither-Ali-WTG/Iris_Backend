@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250625.2
-  # Wed Jun 25 00:24:20 UTC 2025 -- Wed Jun 25 10:24:20 AEST 2025
+  # Dante Build Artifact 20250625.3
+  # Wed Jun 25 01:05:49 UTC 2025 -- Wed Jun 25 11:05:49 AEST 2025
   #
-  # Merged PR 37033: Replaced nginx-uwsgi base image
-  # d557f5254c672bae37b4f5f4910e347b4dab6ca0
-  dante_build_id: '1389391'
+  # Merge pull request 37045 from automatic_botticelli_image_upgrade into master
+  # d672cc9da4d1fc345b59b5dd7edda4e0c57cf17e
+  dante_build_id: '1389456'
 
   # virgil 20250625.2
   # Tue Jun 24 22:51:41 UTC 2025 -- Wed Jun 25 08:51:41 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 34336476334fe8b7c378a2aed86fa4d883c4a5ce
   virgil_build_id: '1389272'
 
-  # sqlbilling 20250624.2
-  # Tue Jun 24 10:35:31 UTC 2025 -- Tue Jun 24 20:35:31 AEST 2025
+  # sqlbilling 20250625.2
+  # Wed Jun 25 00:37:28 UTC 2025 -- Wed Jun 25 10:37:28 AEST 2025
   #
-  # Merged PR 37012: Add au2readonly IPS CS01998841
-  # 84ff038e0fd5ba92f181f33644ffb53738d5ff17
-  sqlbilling_build_id: '1388828'
+  # Merged PR 37015: AU2/DE1 SQLBilling Add and remove CS01952678 CS01999210
+  # 291781333b1f405845723b4bc678265360bbe830
+  sqlbilling_build_id: '1389420'
