@@ -7,16 +7,16 @@ variables:
   # 6fcfed675bdc22cba2d77529298f9a2b4a0a0bc6
   dante_build_id: '1389571'
 
-  # virgil 20250625.2
-  # Tue Jun 24 22:51:41 UTC 2025 -- Wed Jun 25 08:51:41 AEST 2025
+  # virgil 20250626.2
+  # Wed Jun 25 23:22:24 UTC 2025 -- Thu Jun 26 09:22:24 AEST 2025
   #
-  # Merged PR 37017: assign au2-apex35/36 ports swp11-44 to vlan1029
-  # 34336476334fe8b7c378a2aed86fa4d883c4a5ce
-  virgil_build_id: '1389272'
+  # Merged PR 37078: Switch node to trunk config to test
+  # e6b9774466b767d745284050e5c6dc3043aaeb06
+  virgil_build_id: '1390329'
 
-  # sqlbilling 20250625.2
-  # Wed Jun 25 00:37:28 UTC 2025 -- Wed Jun 25 10:37:28 AEST 2025
+  # sqlbilling 20250626.2
+  # Wed Jun 25 15:55:12 UTC 2025 -- Thu Jun 26 01:55:12 AEST 2025
   #
-  # Merged PR 37015: AU2/DE1 SQLBilling Add and remove CS01952678 CS01999210
-  # 291781333b1f405845723b4bc678265360bbe830
-  sqlbilling_build_id: '1389420'
+  # Merged PR 37075: us2/DE1 SQLBilling  ADD CS01999610 CS01999720
+  # 5e1d052685321387376e5e9ab84e91f985049ac5
+  sqlbilling_build_id: '1390061'
