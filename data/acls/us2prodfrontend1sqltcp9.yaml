@@ -83,4 +83,4 @@ us9_edi_src:
 us9_sql_src:
   description: List of IP addresses allowed to access 147.189.35.136:25009
   tests:
-    - 63.76.80.35
+    - src 63.76.80.35
