@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250626.1
-  # Thu Jun 26 00:04:35 UTC 2025 -- Thu Jun 26 10:04:35 AEST 2025
+  # Dante Build Artifact 20250626.3
+  # Thu Jun 26 03:44:28 UTC 2025 -- Thu Jun 26 13:44:28 AEST 2025
   #
-  # Merge pull request 37084 from dante_artifact_upgrade into master
-  # ddbf3c7207aa590a243b996f10e09ad78d262dc0
-  dante_build_id: '1390377'
+  # Merged PR 37104: Fixed values for CICD-V2 tagged agents
+  # d255085196b2834d9b791e9e98c30e80d84b25bc
+  dante_build_id: '1390570'
 
   # virgil 20250626.2
   # Wed Jun 25 23:22:24 UTC 2025 -- Thu Jun 26 09:22:24 AEST 2025
