@@ -516,3 +516,48 @@ us2wpreadonly439l1-wisegrid-net:
     - name: us2wpreadonly439l1
       ip: 10.4.134.174
       port: 1433
+
+us9-us2us9ediw001:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us9sqlw003-i1
+      ip: 10.4.166.19
+      port: 1433
+
+us9-us2us9sqlw003i1:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us9sqlw003i1
+      ip: 10.4.166.30
+      port: 1433
+
+us9-us2us9sqlw003i2:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us9sqlw003i2
+      ip: 10.4.166.31
+      port: 1433
+
+us9-us2us9sqlw003i3:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us9sqlw003i3
+      ip: 10.4.166.32
+      port: 1433
+
+us9-us2us9sqlw003i4:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us9sqlw003i4
+      ip: 10.4.166.32
+      port: 1433

@@ -5,7 +5,7 @@ sql_allowed:
   description: Rejects requests from non-WTG or non-Customer IPs
   order: 40
   actions:
-    - tcp-request content reject if !wtg_src !customerreadonly_src !staff_src !aryaka_src
+    - tcp-request content reject if !wtg_src !customerreadonly_src !staff_src !aryaka_src !us9_sql_src !us9_edi_src
 
 sql_backends_test:
   description: |
@@ -77,3 +77,15 @@ sql_backends_prod:
     - use_backend us2wpreadonly437l1-wisegrid-net if { dst_port 4450 }
     - use_backend us2wpreadonly438l1-wisegrid-net if { dst_port 4451 }
     - use_backend us2wpreadonly439l1-wisegrid-net if { dst_port 4452 }
+
+us9_edi_backends:
+  description: US9 (Depot Systems) EDI
+  order: 50
+  actions:
+    - use_backend us9-us2us9ediw001 if us9_edi_src us9_edi_dst_port
+
+us9_sql_backends:
+  description: US9 (Depot Systems) Production
+  order: 50
+  actions:
+    - use_backend us9-us2us9sqlw003i4 if us9_sql_src us9_sql_dst_port

@@ -72,6 +72,8 @@ clustered_instances:
             - 4450  # US2 Prod SQL Cluster 437
             - 4451  # US2 Prod SQL Cluster 438
             - 4452  # US2 Prod SQL Cluster 439
+            - 24999 # US9 EDI server
+            - 25009 # US9 Prod SQL server
 
       iis_servers: []
       certificates: []
