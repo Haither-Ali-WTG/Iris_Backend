@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250626.3
-  # Thu Jun 26 03:44:28 UTC 2025 -- Thu Jun 26 13:44:28 AEST 2025
+  # Dante Build Artifact 20250627.2
+  # Fri Jun 27 03:51:56 UTC 2025 -- Fri Jun 27 13:51:56 AEST 2025
   #
-  # Merged PR 37104: Fixed values for CICD-V2 tagged agents
-  # d255085196b2834d9b791e9e98c30e80d84b25bc
-  dante_build_id: '1390570'
+  # Merged PR 37092: Render NTP config on Iris nodes.
+  # d8a11d9172ff1ae39a46e64ed91075e9bc852920
+  dante_build_id: '1391558'
 
-  # virgil 20250626.2
-  # Wed Jun 25 23:22:24 UTC 2025 -- Thu Jun 26 09:22:24 AEST 2025
+  # virgil 20250627.6
+  # Fri Jun 27 03:59:06 UTC 2025 -- Fri Jun 27 13:59:06 AEST 2025
   #
-  # Merged PR 37078: Switch node to trunk config to test
-  # e6b9774466b767d745284050e5c6dc3043aaeb06
-  virgil_build_id: '1390329'
+  # Merged PR 37141: Add all ocp segments to exits in us and de, au is in vm profile
+  # 5d53aa985b4853bfdaef83ee1c70e1919afb3bfa
+  virgil_build_id: '1391567'
 
-  # sqlbilling 20250626.2
-  # Wed Jun 25 15:55:12 UTC 2025 -- Thu Jun 26 01:55:12 AEST 2025
+  # sqlbilling 20250627.1
+  # Fri Jun 27 00:02:57 UTC 2025 -- Fri Jun 27 10:02:57 AEST 2025
   #
-  # Merged PR 37075: us2/DE1 SQLBilling  ADD CS01999610 CS01999720
-  # 5e1d052685321387376e5e9ab84e91f985049ac5
-  sqlbilling_build_id: '1390061'
+  # Merged PR 37103: US2 SQLBilling Add CS01999610
+  # 8a984dc16216f10f063d5c44bba4810f59c45320
+  sqlbilling_build_id: '1391377'
