@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250627.3
-  # Fri Jun 27 04:51:10 UTC 2025 -- Fri Jun 27 14:51:10 AEST 2025
+  # Dante Build Artifact 20250627.4
+  # Fri Jun 27 05:42:53 UTC 2025 -- Fri Jun 27 15:42:53 AEST 2025
   #
-  # Merged PR 37135: Added labels for container runner command generation.
-  # f0ad7239e2ef541ea8edc224417b2d207c84db26
-  dante_build_id: '1391627'
+  # Merge pull request 37140 from dante_artifact_upgrade into master
+  # 591d252ee897ba7440ec6d6bc06f1055c142d368
+  dante_build_id: '1391682'
 
   # virgil 20250627.6
   # Fri Jun 27 03:59:06 UTC 2025 -- Fri Jun 27 13:59:06 AEST 2025
