@@ -7,16 +7,16 @@ variables:
   # 591d252ee897ba7440ec6d6bc06f1055c142d368
   dante_build_id: '1391682'
 
-  # virgil 20250627.6
-  # Fri Jun 27 03:59:06 UTC 2025 -- Fri Jun 27 13:59:06 AEST 2025
+  # virgil 20250630.1
+  # Mon Jun 30 00:20:11 UTC 2025 -- Mon Jun 30 10:20:11 AEST 2025
   #
-  # Merged PR 37141: Add all ocp segments to exits in us and de, au is in vm profile
-  # 5d53aa985b4853bfdaef83ee1c70e1919afb3bfa
-  virgil_build_id: '1391567'
+  # Merged PR 37166: hyperv sand reshuffle cleanup old config and fix profiles/apex76
+  # c6c7fc3b43b9c8f53802671c07f973c5b5f9a8a2
+  virgil_build_id: '1394036'
 
-  # sqlbilling 20250627.1
-  # Fri Jun 27 00:02:57 UTC 2025 -- Fri Jun 27 10:02:57 AEST 2025
+  # sqlbilling 20250627.3
+  # Fri Jun 27 07:46:30 UTC 2025 -- Fri Jun 27 17:46:30 AEST 2025
   #
-  # Merged PR 37103: US2 SQLBilling Add CS01999610
-  # 8a984dc16216f10f063d5c44bba4810f59c45320
-  sqlbilling_build_id: '1391377'
+  # Merged PR 37164: Updated de1-prod-frontend-1.yml
+  # 705111972c9324d886b3d147737eb46240998fa9
+  sqlbilling_build_id: '1391784'
