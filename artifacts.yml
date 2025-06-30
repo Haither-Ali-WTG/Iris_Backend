@@ -7,12 +7,12 @@ variables:
   # 3c48bafc58309a348b258de81aaabf07e934e473
   dante_build_id: '1394095'
 
-  # virgil 20250630.1
-  # Mon Jun 30 00:20:11 UTC 2025 -- Mon Jun 30 10:20:11 AEST 2025
+  # virgil 20250630.5
+  # Mon Jun 30 02:24:20 UTC 2025 -- Mon Jun 30 12:24:20 AEST 2025
   #
-  # Merged PR 37166: hyperv sand reshuffle cleanup old config and fix profiles/apex76
-  # c6c7fc3b43b9c8f53802671c07f973c5b5f9a8a2
-  virgil_build_id: '1394036'
+  # Merged PR 37189: New PR to add all nodes using trunk level connections (CS01961488)
+  # ae521ac7ab96db799c177726c57ac4f3bafaf639
+  virgil_build_id: '1394160'
 
   # sqlbilling 20250627.3
   # Fri Jun 27 07:46:30 UTC 2025 -- Fri Jun 27 17:46:30 AEST 2025
