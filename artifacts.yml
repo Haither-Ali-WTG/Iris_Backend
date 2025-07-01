@@ -7,12 +7,12 @@ variables:
   # 3baabcc2bd8f8eea02cd12c30e19b55897dac3c8
   dante_build_id: '1394200'
 
-  # virgil 20250630.5
-  # Mon Jun 30 02:24:20 UTC 2025 -- Mon Jun 30 12:24:20 AEST 2025
+  # virgil 20250701.3
+  # Tue Jul  1 05:03:46 UTC 2025 -- Tue Jul  1 15:03:46 AEST 2025
   #
-  # Merged PR 37189: New PR to add all nodes using trunk level connections (CS01961488)
-  # ae521ac7ab96db799c177726c57ac4f3bafaf639
-  virgil_build_id: '1394160'
+  # Merged PR 37222: Move us2test1 to trunk
+  # 9e2bd48f7ed31e81f2ccf54a1b9d188f001c9a40
+  virgil_build_id: '1395226'
 
   # sqlbilling 20250627.3
   # Fri Jun 27 07:46:30 UTC 2025 -- Fri Jun 27 17:46:30 AEST 2025
