@@ -15,4 +15,3 @@
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: u=rw,g=r,o=r
-
