@@ -126,11 +126,35 @@ clustered_instances:
           socket: 2050
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
+      iis_servers_local:
+        - de1wp-sweb-401a.wisecloud.zone
+        - de1wp-sweb-401b.wisecloud.zone
+        - de1wp-sweb-402a.wisecloud.zone
+        - de1wp-sweb-402b.wisecloud.zone
+        - de1wp-sweb-403a.wisecloud.zone
+        - de1wp-sweb-403b.wisecloud.zone
+        - de1wp-sweb-404a.wisecloud.zone
+        - de1wp-sweb-404b.wisecloud.zone
+        - de1wp-sweb-405a.wisecloud.zone
+        - de1wp-sweb-405b.wisecloud.zone
+        - de1wp-sweb-406a.wisecloud.zone
+        - de1wp-sweb-406b.wisecloud.zone
+        - de1wp-sweb-499a.wisecloud.zone      # Dedicated webserver for customurls
+        - de1wp-sweb-499b.wisecloud.zone      # Dedicated webserver for customurls
+      iis_user_local: s_lbwinrmquerier
+      websites_config: prodcwservices.yml
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
 
     de1prodfrontend1testcwservices27:
       # de1-prod-frontend-1-testcw-services-2
@@ -148,11 +172,35 @@ clustered_instances:
           socket: 2052
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
+      iis_servers_local:
+        - de1wt-sweb-401a.test.wisecloud.zone
+        - de1wt-sweb-401b.test.wisecloud.zone
+        - de1wt-sweb-402a.test.wisecloud.zone
+        - de1wt-sweb-402b.test.wisecloud.zone
+        - de1wt-sweb-403a.test.wisecloud.zone
+        - de1wt-sweb-403b.test.wisecloud.zone
+        - de1wt-sweb-404a.test.wisecloud.zone
+        - de1wt-sweb-404b.test.wisecloud.zone
+        - de1wt-sweb-405a.test.wisecloud.zone
+        - de1wt-sweb-405b.test.wisecloud.zone
+        - de1wt-sweb-406b.test.wisecloud.zone
+        - de1wt-sweb-406a.test.wisecloud.zone
+        - de1wp-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
+        - de1wp-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
+      iis_user_local: s_lbwinrmquerier
+      websites_config: testcwservices.yml
       certificates:
         - name: star-wisegrid-net
+        - name: star-webtracker-wisegrid-net
+        - name: star-webcampaign-wisegrid-net
+        - name: star-webprint-wisegrid-net
+        - name: star-cfs-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
 
     de1prodfrontend1prodcdnservices31:
       # de1-prod-frontend-1-prod-cdn-services-31
