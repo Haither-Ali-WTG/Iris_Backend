@@ -7,16 +7,16 @@ variables:
   # fa62858a4a14aeb3dfdbc6d2cfcf8496fed45d81
   dante_build_id: '1395304'
 
-  # virgil 20250701.3
-  # Tue Jul  1 05:03:46 UTC 2025 -- Tue Jul  1 15:03:46 AEST 2025
+  # virgil 20250702.1
+  # Tue Jul  1 22:14:41 UTC 2025 -- Wed Jul  2 08:14:41 AEST 2025
   #
-  # Merged PR 37222: Move us2test1 to trunk
-  # 9e2bd48f7ed31e81f2ccf54a1b9d188f001c9a40
-  virgil_build_id: '1395226'
+  # Merged PR 37242: Add dns for us and de nat
+  # 558ad130f16abf536896c92bc62c3871edef1f35
+  virgil_build_id: '1395909'
 
-  # sqlbilling 20250627.3
-  # Fri Jun 27 07:46:30 UTC 2025 -- Fri Jun 27 17:46:30 AEST 2025
+  # sqlbilling 20250701.2
+  # Tue Jul  1 07:00:48 UTC 2025 -- Tue Jul  1 17:00:48 AEST 2025
   #
-  # Merged PR 37164: Updated de1-prod-frontend-1.yml
-  # 705111972c9324d886b3d147737eb46240998fa9
-  sqlbilling_build_id: '1391784'
+  # Merged PR 37221: RTL-IPWhitelist-ReadOnly
+  # 15e703de01a8c1736b7db26f39bb5e065e202790
+  sqlbilling_build_id: '1395367'
