@@ -7,12 +7,12 @@ variables:
   # fa62858a4a14aeb3dfdbc6d2cfcf8496fed45d81
   dante_build_id: '1395304'
 
-  # virgil 20250702.1
-  # Tue Jul  1 22:14:41 UTC 2025 -- Wed Jul  2 08:14:41 AEST 2025
+  # virgil 20250702.4
+  # Tue Jul  1 22:52:39 UTC 2025 -- Wed Jul  2 08:52:39 AEST 2025
   #
-  # Merged PR 37242: Add dns for us and de nat
-  # 558ad130f16abf536896c92bc62c3871edef1f35
-  virgil_build_id: '1395909'
+  # Merged PR 37253: Add dns entries for stage test in au and us
+  # c442198e77e5b5131e88b6a4722090f757757c68
+  virgil_build_id: '1395945'
 
   # sqlbilling 20250701.2
   # Tue Jul  1 07:00:48 UTC 2025 -- Tue Jul  1 17:00:48 AEST 2025
