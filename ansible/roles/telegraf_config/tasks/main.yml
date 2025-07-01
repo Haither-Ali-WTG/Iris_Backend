@@ -1,0 +1,18 @@
+---
+- name: Ensure telegraf.d directory exists
+  file:
+    path: /etc/telegraf/telegraf.d/
+    state: directory
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: u=rwx,g=rx,o=rx
+  become: yes
+
+- name: Copy Prometheus config to telegraf.d
+  template:
+    src: prometheus.conf.j2
+    dest: /etc/telegraf/telegraf.d/prometheus.conf
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: u=rw,g=r,o=r
+
