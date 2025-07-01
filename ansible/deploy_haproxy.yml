@@ -72,6 +72,13 @@
         module_prometheus: true
         endpoint_ports: "{{ stats_web_ports }}"
 
+    - name: Setup Telegraf config for Iris
+      include_role:
+        name: telegraf_config
+      vars:
+        endpoint_ports: "{{ stats_web_ports }}"
+      when: 'inventory_hostname == "au2lbl00889"'
+
     - name: Apply system parameters
       include_role:
         name: system_parameters
