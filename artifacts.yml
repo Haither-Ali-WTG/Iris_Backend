@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250702.1
-  # Tue Jul  1 23:28:00 UTC 2025 -- Wed Jul  2 09:28:00 AEST 2025
+  # Dante Build Artifact 20250702.2
+  # Wed Jul  2 02:21:17 UTC 2025 -- Wed Jul  2 12:21:17 AEST 2025
   #
-  # Merged PR 37210: Cleanup dead cicd agents
-  # 5c225d85a6ad6cf4388a0e5a9aa4b21819a98584
-  dante_build_id: '1395996'
+  # Merge pull request 37247 from dante_artifact_upgrade into master
+  # 8f4fe225d88cdb04ffd7f015dcd380bab8932263
+  dante_build_id: '1396165'
 
   # virgil 20250702.8
   # Wed Jul  2 01:39:38 UTC 2025 -- Wed Jul  2 11:39:38 AEST 2025
