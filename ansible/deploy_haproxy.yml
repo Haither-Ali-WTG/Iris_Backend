@@ -77,7 +77,6 @@
         name: telegraf_config
       vars:
         endpoint_ports: "{{ stats_web_ports }}"
-      when: 'inventory_hostname == "au2lbl00889"'
 
     - name: Apply system parameters
       include_role:
