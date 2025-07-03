@@ -7,16 +7,16 @@ variables:
   # 18b74511c6d71e9f3cd7bf4b0c4c2f33122357f7
   dante_build_id: '1397208'
 
-  # virgil 20250703.1
-  # Thu Jul  3 00:14:02 UTC 2025 -- Thu Jul  3 10:14:02 AEST 2025
+  # virgil 20250703.5
+  # Thu Jul  3 08:28:49 UTC 2025 -- Thu Jul  3 18:28:49 AEST 2025
   #
-  # Merged PR 37291: Update swp for au2wp-svir-026  FE  rebuild to Windows 2022 without LACP
-  # 7350442271ed01bd64a56f87c119109a9c214d9c
-  virgil_build_id: '1397137'
+  # Merged PR 37336: swp config to build more Hyper-V BE CORP/PROD on SR630 v3 hardware
+  # e2c59b5e3bd3d1e8cb763735a97cbcb082972f82
+  virgil_build_id: '1397511'
 
-  # sqlbilling 20250703.2
-  # Wed Jul  2 14:21:45 UTC 2025 -- Thu Jul  3 00:21:45 AEST 2025
+  # sqlbilling 20250703.4
+  # Thu Jul  3 06:22:56 UTC 2025 -- Thu Jul  3 16:22:56 AEST 2025
   #
-  # Merged PR 37181: Update Readonly
-  # 3729b3a9678fde2025c68e7d98e9028cfb1b4df9
-  sqlbilling_build_id: '1396722'
+  # Merged PR 37334: Update readonly
+  # 26024a37b0c819a3dbecfd3fce3b9fb37f1fa751
+  sqlbilling_build_id: '1397437'
