@@ -7,16 +7,16 @@ variables:
   # 8f4fe225d88cdb04ffd7f015dcd380bab8932263
   dante_build_id: '1396165'
 
-  # virgil 20250702.8
-  # Wed Jul  2 01:39:38 UTC 2025 -- Wed Jul  2 11:39:38 AEST 2025
+  # virgil 20250703.1
+  # Thu Jul  3 00:14:02 UTC 2025 -- Thu Jul  3 10:14:02 AEST 2025
   #
-  # Merged PR 37270: au2wp-svir-002 from LACP to trunk only
-  # f2626fa78d74fff6e6711aab029c228e2b03f214
-  virgil_build_id: '1396126'
+  # Merged PR 37291: Update swp for au2wp-svir-026  FE  rebuild to Windows 2022 without LACP
+  # 7350442271ed01bd64a56f87c119109a9c214d9c
+  virgil_build_id: '1397137'
 
-  # sqlbilling 20250701.2
-  # Tue Jul  1 07:00:48 UTC 2025 -- Tue Jul  1 17:00:48 AEST 2025
+  # sqlbilling 20250703.2
+  # Wed Jul  2 14:21:45 UTC 2025 -- Thu Jul  3 00:21:45 AEST 2025
   #
-  # Merged PR 37221: RTL-IPWhitelist-ReadOnly
-  # 15e703de01a8c1736b7db26f39bb5e065e202790
-  sqlbilling_build_id: '1395367'
+  # Merged PR 37181: Update Readonly
+  # 3729b3a9678fde2025c68e7d98e9028cfb1b4df9
+  sqlbilling_build_id: '1396722'
