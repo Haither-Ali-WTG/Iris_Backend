@@ -15,6 +15,57 @@ clustered_instances:
             # 4000..4999 is reserved by the billing collector:
             # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
 
+            - 1092   # BR1 - Allog
+            - 1094   # BR1 - Brasporto
+            - 1096   # BR1 - SEI
+            - 1098   # BR1 - CTI
+            - 1099   # BR1 - Ruckhaber
+            - 1100   # BR1 - MSSQL
+            - 1101   # BR1 - Gamalog
+            - 1102   # BR1 - Aeroimport
+            - 1103   # BR1 - Budson
+            - 1106   # BR1 - Ferfreight
+            - 1107   # BR1 - 3Cycles
+            - 1110   # BR1 - Globalfreight
+            - 1113   # BR1 - Faxe
+            - 1114   # BR1 - Interfreight
+            - 1115   # BR1 - Elemarlogistica
+            - 1116   # BR1 - MTN
+            - 1117   # BR1 - JMAduaneira
+            - 1118   # BR1 - Internacional
+            - 1119   # BR1 - Agile
+            - 1120   # BR1 - Leschaco
+            - 1121   # BR1 - Atualiassessoria
+            - 1122   # BR1 - Mastersul
+            - 1123   # BR1 - Affinity
+            - 1124   # BR1 - GPCargo
+            - 1125   # BR1 - AZSolutio
+            - 1127   # BR1 - Nuno
+            - 1128   # BR1 - Newslogistics
+            - 1129   # BR1 - Nowlogistics
+            - 1130   # BR1 - Paulorocha
+            - 1132   # BR1 - Roquepacheco
+            - 1133   # BR1 - Dasco
+            - 1134   # BR1 - Trediex
+            - 1135   # BR1 - Global
+            - 1136   # BR1 - TWS
+            - 1139   # BR1 - Tradehunter
+            - 1140   # BR1 - Baraodespachos
+            - 1141   # BR1 - Spacecargo
+            - 1142   # BR1 - Isavix
+            - 1143   # BR1 - Confidence
+            - 1144   # BR1 - Wecomex
+            - 1145   # BR1 - Martinsdespachos
+            - 1147   # BR1 - Sanvix
+            - 1148   # BR1 - Yusen Homologacao
+            - 1149   # BR1 - Yusen
+            - 1150   # BR1 - DHL
+            - 1151   # BR1 - DHL Homologacao
+            - 1153   # BR1 - Brokercomex
+            - 1154   # BR1 - SWS
+            - 1156   # BR1 - Aduanalog
+            - 1157   # BR1 - Multicargo
+            - 1158   # BR1 - Orttsa
             - 4362   # US2 Test SQL Cluster 401
             - 4363   # US2 Test SQL Cluster 402
             - 4364   # US2 Test SQL Cluster 403

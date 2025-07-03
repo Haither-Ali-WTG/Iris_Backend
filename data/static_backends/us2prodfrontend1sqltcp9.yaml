@@ -517,6 +517,456 @@ us2wpreadonly439l1-wisegrid-net:
       ip: 10.4.134.174
       port: 1433
 
+br1-allog-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl098-allog
+      ip: 10.4.160.184
+      port: 5432
+
+br1-brasporto-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl105-brasporto
+      ip: 10.4.160.191
+      port: 5432
+
+br1-sei-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl053-sei
+      ip: 10.4.160.94
+      port: 5432
+
+br1-cti-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl104-cti
+      ip: 10.4.160.190
+      port: 5432
+
+br1-ruckhaber-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl130-ruckhaber
+      ip: 10.4.161.30
+      port: 5432
+
+br1-mssql1-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml182011-ups  # Server was originally built for UPS but Bysoft reused it for others
+      ip: 10.4.182.11
+      port: 1433
+
+br1-gamalog-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl037-gamalog
+      ip: 10.4.160.55
+      port: 5432
+
+br1-aeroimport-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl018-aeroimport
+      ip: 10.4.160.17
+      port: 5432
+
+br1-budson-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl149-budson
+      ip: 10.4.161.139
+      port: 5432
+
+br1-ferfreight-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl035-ferfreight
+      ip: 10.4.160.51
+      port: 5432
+
+br1-3cycles-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl016-3cycles
+      ip: 10.4.160.15
+      port: 5432
+
+br1-globalfreight-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl092-globalfreight
+      ip: 10.4.160.177
+      port: 5432
+
+br1-faxe-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl023-faxe
+      ip: 10.4.160.26
+      port: 5432
+
+br1-interfreight-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl114-interfreight
+      ip: 10.4.161.4
+      port: 5432
+
+br1-elemarlogistica-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl145-elemarlogistica
+      ip: 10.4.161.64
+      port: 5432
+
+br1-mtn-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl017-mtn
+      ip: 10.4.160.16
+      port: 5432
+
+br1-jmaduaneira-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl134-jmaduaneira
+      ip: 10.4.161.38
+      port: 5432
+
+br1-internacional-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl163-internacional
+      ip: 10.4.161.104
+      port: 5432
+
+br1-agile-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl100-agile
+      ip: 10.4.160.186
+      port: 5432
+
+br1-leschaco-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl074-leschaco
+      ip: 10.4.160.150
+      port: 5432
+
+br1-atualiassessoria-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl148-atualiassessoria
+      ip: 10.4.161.71
+      port: 5432
+
+br1-mastersul-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl077-mastersul
+      ip: 10.4.160.153
+      port: 5432
+
+br1-affinity-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl155-affinity
+      ip: 10.4.161.87
+      port: 5432
+
+br1-gpcargo-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl157-gpcargo
+      ip: 10.4.161.95
+      port: 5432
+
+br1-azsolutio-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl142-azsolutio
+      ip: 10.4.161.59
+      port: 5432
+
+br1-nuno-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl115-nuno
+      ip: 10.4.161.5
+      port: 5432
+
+br1-newslogistics-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl164-newslogistics
+      ip: 10.4.161.105
+      port: 5432
+
+br1-nowlogistics-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl041-nowlogistics
+      ip: 10.4.160.63
+      port: 5432
+
+br1-paulorocha-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl049-paulorocha
+      ip: 10.4.160.83
+      port: 5432
+
+br1-roquepacheco-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl166-roquepacheco
+      ip: 10.4.161.108
+      port: 5432
+
+br1-dasco-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl131-dasco
+      ip: 10.4.161.31
+      port: 5432
+
+br1-trediex-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl085-trediex
+      ip: 10.4.160.167
+      port: 5432
+
+br1-global-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl099-global
+      ip: 10.4.160.185
+      port: 5432
+
+br1-tws-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl111-tws
+      ip: 10.4.160.197
+      port: 5432
+
+br1-tradehunter-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl133-tradehunter
+      ip: 10.4.161.36
+      port: 5432
+
+br1-baraodespachos-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl087-baraodespachos
+      ip: 10.4.160.171
+      port: 5432
+
+br1-spacecargo-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl031-spacecargo
+      ip: 10.4.160.43
+      port: 5432
+
+br1-isavix-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl120-isavix
+      ip: 10.4.161.10
+      port: 5432
+
+br1-confidence-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl119-confidence
+      ip: 10.4.161.9
+      port: 5432
+
+br1-wecomex-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl101-wecomex
+      ip: 10.4.160.187
+      port: 5432
+
+br1-martinsdespachos-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl019-martinsdespachos
+      ip: 10.4.160.20
+      port: 5432
+
+br1-yusenhomologacao-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl121-yusenhomologacao
+      ip: 10.4.161.11
+      port: 5432
+
+br1-yusen-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl123-yusen
+      ip: 10.4.161.16
+      port: 5432
+
+br1-dhl-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl014-dhl
+      ip: 10.4.160.13
+      port: 5432
+
+br1-dhlhomologacao-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl013-dhl
+      ip: 10.4.160.11
+      port: 5432
+
+br1-brokercomex-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl096-brokercomex
+      ip: 10.4.160.182
+      port: 5432
+
+br1-sws-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl020-sws
+      ip: 10.4.160.21
+      port: 5432
+
+br1-aduanalog-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl038-aduanalog
+      ip: 10.4.160.59
+      port: 5432
+
+br1-multicargo-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl088-multicargo
+      ip: 10.4.160.173
+      port: 5432
+
+br1-orttsa-readonly:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl051-orttsa
+      ip: 10.4.160.88
+      port: 5432
+
 us9-us2us9ediw001:
   clustered_instances: [us2prodfrontend1sqltcp9]
   http_health_check:

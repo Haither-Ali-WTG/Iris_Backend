@@ -78,6 +78,61 @@ sql_backends_prod:
     - use_backend us2wpreadonly438l1-wisegrid-net if { dst_port 4451 }
     - use_backend us2wpreadonly439l1-wisegrid-net if { dst_port 4452 }
 
+br1_sql_backends:
+  description: BR1 (Bysoft) database backends
+  order: 50
+  actions:
+    - use_backend br1-allog-readonly if { dst_port 1092 }
+    - use_backend br1-brasporto-readonly if { dst_port 1094 }
+    - use_backend br1-sei-readonly if { dst_port 1096 }
+    - use_backend br1-cti-readonly if { dst_port 1098 }
+    - use_backend br1-ruckhaber-readonly if { dst_port 1099 }
+    - use_backend br1-mssql1-readonly if { dst_port 1100 }
+    - use_backend br1-gamalog-readonly if { dst_port 1101 }
+    - use_backend br1-aeroimport-readonly if { dst_port 1102 }
+    - use_backend br1-budson-readonly if { dst_port 1103 }
+    - use_backend br1-ferfreight-readonly if { dst_port 1106 }
+    - use_backend br1-3cycles-readonly if { dst_port 1107 }
+    - use_backend br1-globalfreight-readonly if { dst_port 1110 }
+    - use_backend br1-faxe-readonly if { dst_port 1113 }
+    - use_backend br1-interfreight-readonly if { dst_port 1114 }
+    - use_backend br1-elemarlogistica-readonly if { dst_port 1115 }
+    - use_backend br1-mtn-readonly if { dst_port 1116 }
+    - use_backend br1-jmaduaneira-readonly if { dst_port 1117 }
+    - use_backend br1-internacional-readonly if { dst_port 1118 }
+    - use_backend br1-agile-readonly if { dst_port 1119 }
+    - use_backend br1-leschaco-readonly if { dst_port 1120 }
+    - use_backend br1-atualiassessoria-readonly if { dst_port 1121 }
+    - use_backend br1-mastersul-readonly if { dst_port 1112 }
+    - use_backend br1-affinity-readonly if { dst_port 1123 }
+    - use_backend br1-gpcargo-readonly if { dst_port 1124 }
+    - use_backend br1-azsolutio-readonly if { dst_port 1125 }
+    - use_backend br1-nuno-readonly if { dst_port 1127 }
+    - use_backend br1-newslogistics-readonly if { dst_port 1128 }
+    - use_backend br1-nowlogistics-readonly if { dst_port 1129 }
+    - use_backend br1-paulorocha-readonly if { dst_port 1130 }
+    - use_backend br1-roquepacheco-readonly if { dst_port 1132 }
+    - use_backend br1-dasco-readonly if { dst_port 1133 }
+    - use_backend br1-trediex-readonly if { dst_port 1134 }
+    - use_backend br1-global-readonly if { dst_port 1135 }
+    - use_backend br1-tws-readonly if { dst_port 1136 }
+    - use_backend br1-tradehunter-readonly if { dst_port 1139 }
+    - use_backend br1-baraodespachos-readonly if { dst_port 1140 }
+    - use_backend br1-spacecargo-readonly if { dst_port 1141 }
+    - use_backend br1-isavix-readonly if { dst_port 1142 }
+    - use_backend br1-confidence-readonly if { dst_port 1143 }
+    - use_backend br1-wecomex-readonly if { dst_port 1144 }
+    - use_backend br1-martinsdespachos-readonly if { dst_port 1145 }
+    - use_backend br1-yusenhomologacao-readonly if { dst_port 1148 }
+    - use_backend br1-yusen-readonly if { dst_port 1149 }
+    - use_backend br1-dhl-readonly if { dst_port 1150 }
+    - use_backend br1-dhlhomologacao-readonly if { dst_port 1151 }
+    - use_backend br1-brokercomex-readonly if { dst_port 1153 }
+    - use_backend br1-sws-readonly if { dst_port 1154 }
+    - use_backend br1-aduanalog-readonly if { dst_port 1156 }
+    - use_backend br1-multicargo-readonly if { dst_port 1157 }
+    - use_backend br1-orttsa-readonly if { dst_port 1158 }
+
 us9_edi_backends:
   description: US9 (Depot Systems) EDI
   order: 50
