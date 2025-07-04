@@ -7,12 +7,12 @@ variables:
   # 80133221ef214fc629e24acdb8cb39b12e97e85e
   dante_build_id: '1397558'
 
-  # virgil 20250703.5
-  # Thu Jul  3 08:28:49 UTC 2025 -- Thu Jul  3 18:28:49 AEST 2025
+  # virgil 20250704.2
+  # Fri Jul  4 00:50:19 UTC 2025 -- Fri Jul  4 10:50:19 AEST 2025
   #
-  # Merged PR 37336: swp config to build more Hyper-V BE CORP/PROD on SR630 v3 hardware
-  # e2c59b5e3bd3d1e8cb763735a97cbcb082972f82
-  virgil_build_id: '1397511'
+  # Merged PR 37335: config au2wp-svir-003 from LACP to trunk only
+  # 269cf0c1861ea701ada585eda05db33f248edb8a
+  virgil_build_id: '1398137'
 
   # sqlbilling 20250703.4
   # Thu Jul  3 06:22:56 UTC 2025 -- Thu Jul  3 16:22:56 AEST 2025
