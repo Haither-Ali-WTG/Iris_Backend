@@ -7,12 +7,12 @@ variables:
   # 5aad07bbb3c0b9889ee896952c46f0bb27566ff3
   dante_build_id: '1399967'
 
-  # virgil 20250706.3
-  # Sun Jul  6 02:02:53 UTC 2025 -- Sun Jul  6 12:02:53 AEST 2025
+  # virgil 20250707.3
+  # Mon Jul  7 04:44:45 UTC 2025 -- Mon Jul  7 14:44:45 AEST 2025
   #
-  # Merged PR 37379: add OCP segments to US2 and DE1 Exits
-  # cb272dc364b3715c8b9fceabdfbdcd25ada55ac8
-  virgil_build_id: '1399939'
+  # Merged PR 37403: config au2wp-svir-009 from LACP to trunk only
+  # c33f8af350bb98966d5c1edfccdd20d83bda77f4
+  virgil_build_id: '1400929'
 
   # sqlbilling 20250704.2
   # Fri Jul  4 07:44:54 UTC 2025 -- Fri Jul  4 17:44:54 AEST 2025
