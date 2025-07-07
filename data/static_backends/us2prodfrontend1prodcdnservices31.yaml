@@ -5,11 +5,11 @@ addressvalidation-us2.wisegrid.net:
     name: AVS
   http_health_check:
     enabled: true
-    http_path: /wtg/status
+    http_path: /wtg/ready
   servers:
     - name: US2WP-SIIS-401A
-      ip: 10.2.66.27
+      ip: 10.4.66.27
       port: 80
     - name: US2WP-SIIS-401B
-      ip: 10.2.66.28
+      ip: 10.4.66.28
       port: 80
