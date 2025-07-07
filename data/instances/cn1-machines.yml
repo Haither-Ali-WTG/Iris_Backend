@@ -1,0 +1,13 @@
+---
+machines:
+  hosts:
+    cn1lbl00001:
+      ansible_host: 10.5.65.18
+      os: ubuntu2404
+      dc: CN1
+      os_variant: ubuntu
+    cn1lbl00002:
+      ansible_host: 10.5.65.19
+      os: ubuntu2404
+      dc: CN1
+      os_variant: ubuntu

@@ -9,7 +9,7 @@ machine_cluster:
 floating_ip:
   description: str()
   ip: ip(version=4, unique='LB address')
-  vlan: int(min=1, max=4096)
+  vlan: int(min=0, max=4096)  # 0 means no vlan for alicloud VM
   preempt: bool()
   priority: list(regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'))
   virtual_router_id: int(min=1, max=255, required=True)

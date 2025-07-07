@@ -1,0 +1,18 @@
+---
+sa1-prod-frontend-1:
+  machines:
+    sa1lbl00001: ~
+    sa1lbl00002: ~
+  floating_ips:
+    - description: WiseCloud RDP (PROD)
+      ip: 10.96.64.23
+      vlan: 0
+      preempt: false
+      virtual_router_id: 133
+      priority: [sa1lbl00001, sa1lbl00002]
+    - description: webservices
+      ip: 10.96.64.24
+      vlan: 0
+      preempt: true
+      virtual_router_id: 134
+      priority: [sa1lbl00002, sa1lbl00001]

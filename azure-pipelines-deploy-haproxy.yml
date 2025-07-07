@@ -15,25 +15,40 @@ parameters:
   - name: matrix
     type: object
     default:
-      - agent_dc: AU2
+      - target_dc: AU2
+        agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-      - agent_dc: DE1
+      - target_dc: DE1
+        agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-2.wtg.ws
         s3_iris_bucket: s3://de-iscore-iris-prod-1/
         pure_usernames: de-iscore-iris-prod-1-rw
-      - agent_dc: US2
+      - target_dc: US2
+        agent_dc: US2
         agent_hall: A
         s3_host: us2s3-2.wtg.ws
         s3_iris_bucket: s3://us-iscore-iris-prod-1/
         pure_usernames: us-iscore-iris-prod-1-rw
+      - target_dc: CN1
+        agent_dc: AU2
+        agent_hall: A
+        s3_host: au2s3-2.wtg.ws
+        s3_iris_bucket: s3://au-iscore-iris-prod-1/
+        pure_usernames: au-iscore-iris-prod-1-rw
+      - target_dc: SA1
+        agent_dc: AU2
+        agent_hall: A
+        s3_host: au2s3-2.wtg.ws
+        s3_iris_bucket: s3://au-iscore-iris-prod-1/
+        pure_usernames: au-iscore-iris-prod-1-rw
 
 stages:
   - ${{ each run in parameters.matrix }}:
-      - stage: Deploy_Haproxy_${{ run.agent_dc }}
+      - stage: Deploy_Haproxy_${{ run.target_dc }}
         pool:
           name: dante
           demands:
@@ -42,9 +57,9 @@ stages:
         lockBehavior: sequential
         dependsOn: []
         jobs:
-          - deployment: Deploy_Haproxy_${{ run.agent_dc }}
+          - deployment: Deploy_Haproxy_${{ run.target_dc }}
             condition: or(eq('${{ run.agent_dc }}', variables['dc']), eq(variables['dc'], 'all'))
-            environment: iris_${{ run.agent_dc }}_pipeline_lock
+            environment: iris_${{ run.target_dc }}_pipeline_lock
             workspace:
               clean: all
             strategy:
@@ -112,7 +127,7 @@ stages:
                           -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
                           -e "{use_cache: $(cms_use_cache)}"
                           -e "{intermediate: $(cms_append_intermediate_certificate)}"
-                          -e="target_dc=${{ run.agent_dc }}"
+                          -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
@@ -149,7 +164,7 @@ stages:
                           -e="key_vault_name=$(key_vault_name)"
                           -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                           -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
-                          -e="target_dc=${{ run.agent_dc }}"
+                          -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
@@ -165,7 +180,7 @@ stages:
                           -u $(user) --diff
                           -e="simulation="
                           -e="{instance_teardown_allowed: $(instance_teardown_allowed)}"
-                          -e="target_dc=${{ run.agent_dc }}"
+                          -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 

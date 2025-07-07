@@ -1,0 +1,13 @@
+---
+machines:
+  hosts:
+    sa1lbl00001:
+      ansible_host: 10.96.64.18
+      os: ubuntu2404
+      dc: SA1
+      os_variant: ubuntu
+    sa1lbl00002:
+      ansible_host: 10.96.64.19
+      os: ubuntu2404
+      dc: SA1
+      os_variant: ubuntu

@@ -29,6 +29,9 @@ profile wtg_iris flags=(attach_disconnected,mediate_deleted) {
 
   deny network packet,
 
+  signal (send),
+  signal (receive),
+
   file,
   deny umount,
 
