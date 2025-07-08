@@ -7,16 +7,16 @@ variables:
   # 9e6ebf7725321d357f6d3686ab854f22fd381980
   dante_build_id: '1400965'
 
-  # virgil 20250707.3
-  # Mon Jul  7 04:44:45 UTC 2025 -- Mon Jul  7 14:44:45 AEST 2025
+  # virgil 20250708.4
+  # Tue Jul  8 07:31:44 UTC 2025 -- Tue Jul  8 17:31:44 AEST 2025
   #
-  # Merged PR 37403: config au2wp-svir-009 from LACP to trunk only
-  # c33f8af350bb98966d5c1edfccdd20d83bda77f4
-  virgil_build_id: '1400929'
+  # Merged PR 37421: update swp for au2co-sdod-001
+  # a41d7400f48f0e50bd9569136690a813030eb347
+  virgil_build_id: '1401989'
 
-  # sqlbilling 20250704.2
-  # Fri Jul  4 07:44:54 UTC 2025 -- Fri Jul  4 17:44:54 AEST 2025
+  # sqlbilling 20250707.3
+  # Mon Jul  7 09:06:05 UTC 2025 -- Mon Jul  7 19:06:05 AEST 2025
   #
-  # Merged PR 37377: SQLBillingAddCS02009402.yml
-  # a6b016d57041ef4f166186b8ac433a2e67c1857c
-  sqlbilling_build_id: '1398450'
+  # Merged PR 37425: Updated us2-prod-frontend-1.yml
+  # d8d56a2b9904baef2c7bbe95bba975eb8fe15c84
+  sqlbilling_build_id: '1401148'
