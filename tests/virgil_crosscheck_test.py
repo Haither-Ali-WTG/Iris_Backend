@@ -43,7 +43,16 @@ class TestVirgilCrosscheck(TestCase):
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
         fname_pat = re.compile(r"^data/instances/([a-z]{2}[0-9])-machines\.yml$")
 
+        # We don't use Virgil to manage AliCloud VMs, so skip them
+        skip_files = {
+            "data/instances/cn1-machines.yml",
+            "data/instances/sa1-machines.yml"
+        }
+
         for fname in checked_glob("data/instances/*-machines.yml"):
+            if fname in skip_files:
+                continue
+
             with self.subTest(file=fname):
                 m = fname_pat.match(fname)
                 self.assertIsNotNone(m)
@@ -92,7 +101,16 @@ class TestVirgilCrosscheck(TestCase):
         """Cross-check machine cluster configuration against Virgil."""
         yaml = ruamel.yaml.YAML(typ="safe", pure=True)
 
+        # We don't use Virgil to manage AliCloud VMs, so skip them
+        skip_files = {
+            "data/machine_clusters/cn1.yaml",
+            "data/machine_clusters/sa1.yaml"
+        }
+
         for fname in checked_glob("data/machine_clusters/*.yaml"):
+            if fname in skip_files:
+                continue
+
             with self.subTest(file=fname):
                 with open(fname, encoding="utf8") as fh:
                     iris_file = yaml.load(fh)
