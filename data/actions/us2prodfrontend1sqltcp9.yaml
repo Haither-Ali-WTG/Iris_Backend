@@ -96,7 +96,6 @@ br1_sql_backends:
     - use_backend br1-globalfreight-readonly if { dst_port 1110 }
     - use_backend br1-faxe-readonly if { dst_port 1113 }
     - use_backend br1-interfreight-readonly if { dst_port 1114 }
-    - use_backend br1-elemarlogistica-readonly if { dst_port 1115 }
     - use_backend br1-mtn-readonly if { dst_port 1116 }
     - use_backend br1-jmaduaneira-readonly if { dst_port 1117 }
     - use_backend br1-internacional-readonly if { dst_port 1118 }
@@ -127,8 +126,6 @@ br1_sql_backends:
     - use_backend br1-yusen-readonly if { dst_port 1149 }
     - use_backend br1-dhl-readonly if { dst_port 1150 }
     - use_backend br1-dhlhomologacao-readonly if { dst_port 1151 }
-    - use_backend br1-brokercomex-readonly if { dst_port 1153 }
-    - use_backend br1-sws-readonly if { dst_port 1154 }
     - use_backend br1-aduanalog-readonly if { dst_port 1156 }
     - use_backend br1-multicargo-readonly if { dst_port 1157 }
     - use_backend br1-orttsa-readonly if { dst_port 1158 }

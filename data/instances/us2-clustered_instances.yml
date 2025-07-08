@@ -29,7 +29,6 @@ clustered_instances:
             - 1110   # BR1 - Globalfreight
             - 1113   # BR1 - Faxe
             - 1114   # BR1 - Interfreight
-            - 1115   # BR1 - Elemarlogistica
             - 1116   # BR1 - MTN
             - 1117   # BR1 - JMAduaneira
             - 1118   # BR1 - Internacional
@@ -61,8 +60,6 @@ clustered_instances:
             - 1149   # BR1 - Yusen
             - 1150   # BR1 - DHL
             - 1151   # BR1 - DHL Homologacao
-            - 1153   # BR1 - Brokercomex
-            - 1154   # BR1 - SWS
             - 1156   # BR1 - Aduanalog
             - 1157   # BR1 - Multicargo
             - 1158   # BR1 - Orttsa
