@@ -7,12 +7,12 @@ variables:
   # 5e4ac6b0ba89f566bbc768d94b1e84923e06a9cf
   dante_build_id: '1402024'
 
-  # virgil 20250708.4
-  # Tue Jul  8 07:31:44 UTC 2025 -- Tue Jul  8 17:31:44 AEST 2025
+  # virgil 20250709.2
+  # Tue Jul  8 23:01:49 UTC 2025 -- Wed Jul  9 09:01:49 AEST 2025
   #
-  # Merged PR 37421: update swp for au2co-sdod-001
-  # a41d7400f48f0e50bd9569136690a813030eb347
-  virgil_build_id: '1401989'
+  # Merge pull request 37430 from virgil_python_upgrade into master
+  # bd84a04333e30b7c917dc9eb3bd648fb518ea9e8
+  virgil_build_id: '1402581'
 
   # sqlbilling 20250707.3
   # Mon Jul  7 09:06:05 UTC 2025 -- Mon Jul  7 19:06:05 AEST 2025
