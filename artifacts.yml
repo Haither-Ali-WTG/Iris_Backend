@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250709.3
-  # Wed Jul  9 03:46:13 UTC 2025 -- Wed Jul  9 13:46:13 AEST 2025
+  # Dante Build Artifact 20250709.4
+  # Wed Jul  9 06:41:19 UTC 2025 -- Wed Jul  9 16:41:19 AEST 2025
   #
-  # Merged PR 37505: Add China FW Sources to allowed NTP sources hitting the AU2 MGMT Nodes
-  # a5b39b9aba6ebb4882d2cbf1902ca4f1f0f10b43
-  dante_build_id: '1402863'
+  # Merge pull request 37522 from dante_artifact_upgrade into master
+  # 542218781eba9fb6e0a5b60e88ffe97eb630e5ef
+  dante_build_id: '1403017'
 
   # virgil 20250709.11
   # Wed Jul  9 06:05:05 UTC 2025 -- Wed Jul  9 16:05:05 AEST 2025
