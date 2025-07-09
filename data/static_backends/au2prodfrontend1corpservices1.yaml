@@ -1,5 +1,5 @@
 ---
-devops-test_wtg_zone:
+devops-test.wtg.zone:
   clustered_instances: [au2prodfrontend1corpservices1]
   http_health_check:
     enabled: true
