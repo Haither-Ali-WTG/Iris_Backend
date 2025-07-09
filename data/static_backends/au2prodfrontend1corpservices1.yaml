@@ -1,0 +1,12 @@
+---
+devops-test_wtg_zone:
+  clustered_instances: [au2prodfrontend1corpservices1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: au2co-stfs-401.wtg.zone
+      ip: 10.2.224.121
+      port: 443
+      settings: check ssl
