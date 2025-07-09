@@ -577,4 +577,3 @@ clustered_instances:
         ports:
           web: 2059
           socket: 2058
- 
