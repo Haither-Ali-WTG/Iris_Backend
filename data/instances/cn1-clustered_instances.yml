@@ -1,0 +1,31 @@
+---
+# TODO figure out how to spread the definition over multiple files
+clustered_instances:
+  hosts:
+    cn1sandinternal1testservices0:
+      # cn1-sand-internal-1-test-services-0
+      dc: CN1
+      defaults:
+        health_check_interval: 51000
+      frontend:
+        maxconn: 2000
+        ports:
+          plaintext: [2003]
+          ssl: [2004]
+      machine_cluster: cn1-prod-frontend-1
+      iis_servers:
+        - au2sp-tweb-403a.sand.wtg.zone
+        - au2sp-tweb-403b.sand.wtg.zone
+      iis_user: s_lbwinrmquerier1@sand.wtg.zone
+      websites_config: websites_internal.yml
+      certificates:
+        - name: star-wtg-zone
+      container:
+        resources:
+          production:
+            cpu: 500m
+            memory: 2000Mi
+      stats:
+        ports:
+          web: 2037
+          socket: 2036

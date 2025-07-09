@@ -1,7 +1,7 @@
 ---
 clustered_instances:
   hosts: map(include('clustered_instance'),
-             key=regex('^(au|de|us)[0-9](prod|corp|sand)[a-z0-9]+$', name='clustered instance label'))
+             key=regex('^(au|de|us|cn|sa)[0-9](prod|corp|sand)[a-z0-9]+$', name='clustered instance label'))
 ---
 clustered_instance:
   container: include('haproxy_container_settings', required=False)
@@ -25,7 +25,7 @@ clustered_instance:
   websites_config: regex(r'^[a-zA-Z0-9_@.]+$', name='websites config file name', required=False)
   certificates: list(include('certificate_settings'), name='certificate definition', required=True)
   sqlbilling_acl: list(include('sqlbilling_acl_settings'), name='ACL settings for sqlbilling', required=False)
-  dc: enum('AU2', 'DE1', 'US2', required=True)
+  dc: enum('AU2', 'DE1', 'US2', 'CN1', 'SA1', required=True)
 
 sqlbilling_acl_settings:
   acl_name: regex('^[a-z_-]+$', name='ACL name', required=True)

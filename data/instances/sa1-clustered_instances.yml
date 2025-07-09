@@ -1,0 +1,27 @@
+---
+# TODO figure out how to spread the definition over multiple files
+clustered_instances:
+  hosts:
+    sa1sandinternal1testservices0:
+      # sa1-sand-internal-1-test-services-0
+      dc: SA1
+      defaults:
+        health_check_interval: 51000
+      frontend:
+        maxconn: 2000
+        ports:
+          plaintext: [2003]
+          ssl: [2004]
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wtg-zone
+      container:
+        resources:
+          production:
+            cpu: 500m
+            memory: 2000Mi
+      stats:
+        ports:
+          web: 2037
+          socket: 2036
