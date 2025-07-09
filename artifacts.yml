@@ -7,12 +7,12 @@ variables:
   # a5b39b9aba6ebb4882d2cbf1902ca4f1f0f10b43
   dante_build_id: '1402863'
 
-  # virgil 20250709.6
-  # Tue Jul  8 23:55:45 UTC 2025 -- Wed Jul  9 09:55:45 AEST 2025
+  # virgil 20250709.11
+  # Wed Jul  9 06:05:05 UTC 2025 -- Wed Jul  9 16:05:05 AEST 2025
   #
-  # Merged PR 37457: config swp for au2wp-svir-004 BE and au2wp-svir-025 FE ready for rebuild
-  # 573ee6a5b9c0c56863525add0ccc704fff19f093
-  virgil_build_id: '1402623'
+  # Merged PR 37519: downstream port for au2co-sdod-001 needs to be trunked
+  # 986ae806ef62bf7ca7ca73b1b27f2bcd1c19cdd3
+  virgil_build_id: '1402981'
 
   # sqlbilling 20250707.3
   # Mon Jul  7 09:06:05 UTC 2025 -- Mon Jul  7 19:06:05 AEST 2025
