@@ -7,12 +7,12 @@ variables:
   # 542218781eba9fb6e0a5b60e88ffe97eb630e5ef
   dante_build_id: '1403017'
 
-  # virgil 20250709.11
-  # Wed Jul  9 06:05:05 UTC 2025 -- Wed Jul  9 16:05:05 AEST 2025
+  # virgil 20250710.3
+  # Thu Jul 10 08:53:57 UTC 2025 -- Thu Jul 10 18:53:57 AEST 2025
   #
-  # Merged PR 37519: downstream port for au2co-sdod-001 needs to be trunked
-  # 986ae806ef62bf7ca7ca73b1b27f2bcd1c19cdd3
-  virgil_build_id: '1402981'
+  # Merged PR 37553: Rebuilding 2 Eye nodes to Global Search
+  # e258bda9c14eddb00da4e2770a889122e2e90c64
+  virgil_build_id: '1404034'
 
   # sqlbilling 20250707.3
   # Mon Jul  7 09:06:05 UTC 2025 -- Mon Jul  7 19:06:05 AEST 2025
