@@ -221,3 +221,21 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    de1prodfrontend1prodproxy:
+      # de1-prod-frontend-1-prod-proxy
+      dc: DE1
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2024]
+          ssl: [2025]
+      stats:
+        ports:
+          web: 2059
+          socket: 2058
+      machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+ 
