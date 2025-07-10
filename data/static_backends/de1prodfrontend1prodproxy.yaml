@@ -6,8 +6,8 @@ cw-prod-password-rdg-http:
     http_path: /
   encryption: false
   cookie:
-      name: RAPP
-      secure: true
+    name: RAPP
+    secure: true
   balance: random
   fullconn: 56000
   servers:
@@ -67,8 +67,8 @@ cw-prod-password-rdg-rpc:
     http_path: /
   encryption: false
   cookie:
-      name: RAPP
-      secure: true
+    name: RAPP
+    secure: true
   balance: source
   fullconn: 56000
   servers:
@@ -92,8 +92,8 @@ cw-prod-token-rdg-http:
     http_path: /wtg/ready
   encryption: false
   cookie:
-      name: RAPP
-      secure: true
+    name: RAPP
+    secure: true
   balance: random
   fullconn: 56000
   servers:
@@ -106,20 +106,17 @@ cw-prod-token-rdg-http:
       port: 80
       check_port: 5000
 
-cw-prod-token-rdg-http:
+cw-prod-token-rdg-rpc:
   clustered_instances: [de1prodfrontend1prodproxy]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  cookie:
-      name: RAPP
-      secure: true
   encryption: false
+  cookie:
+    name: RAPP
+    secure: true
   balance: source
   fullconn: 56000
-  cookie:
-      name: RAPP
-      secure: true
   servers:
     - name: de1wp-srdg-401.wisecloud.zone
       ip: 10.3.68.23

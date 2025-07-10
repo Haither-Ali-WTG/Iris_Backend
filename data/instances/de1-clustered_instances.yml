@@ -238,4 +238,3 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
- 
