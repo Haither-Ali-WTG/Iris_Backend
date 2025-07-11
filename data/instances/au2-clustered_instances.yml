@@ -586,7 +586,7 @@ clustered_instances:
         ports:
           plaintext: [2026]
           ssl: [2027]
-      machine_cluster: au2-prod-frontend-1
+      machine_cluster: au2-prod-internal-1
       iis_servers: []
       certificates:
         - name: star-wisetechglobal-com
