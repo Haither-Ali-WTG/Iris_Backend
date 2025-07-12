@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250709.4
-  # Wed Jul  9 06:41:19 UTC 2025 -- Wed Jul  9 16:41:19 AEST 2025
+  # Dante Build Artifact 20250710.1
+  # Thu Jul 10 09:41:21 UTC 2025 -- Thu Jul 10 19:41:21 AEST 2025
   #
-  # Merge pull request 37522 from dante_artifact_upgrade into master
-  # 542218781eba9fb6e0a5b60e88ffe97eb630e5ef
-  dante_build_id: '1403017'
+  # Merge pull request 37559 from dante_artifact_upgrade into master
+  # 2f362dd7b3c8861a1cdee4a672f7d8e59e51c585
+  dante_build_id: '1404079'
 
-  # virgil 20250710.3
-  # Thu Jul 10 08:53:57 UTC 2025 -- Thu Jul 10 18:53:57 AEST 2025
+  # virgil 20250712.2
+  # Sat Jul 12 02:48:05 UTC 2025 -- Sat Jul 12 12:48:05 AEST 2025
   #
-  # Merged PR 37553: Rebuilding 2 Eye nodes to Global Search
-  # e258bda9c14eddb00da4e2770a889122e2e90c64
-  virgil_build_id: '1404034'
+  # Merged PR 37499: update swp to remove LACP for au2wp-svir-004 BE and au2wp-svir-024 FE for reb...
+  # 54e4031ef01208ab08cb59fcea561906c42fba05
+  virgil_build_id: '1405585'
 
-  # sqlbilling 20250707.3
-  # Mon Jul  7 09:06:05 UTC 2025 -- Mon Jul  7 19:06:05 AEST 2025
+  # sqlbilling 20250711.4
+  # Fri Jul 11 13:46:38 UTC 2025 -- Fri Jul 11 23:46:38 AEST 2025
   #
-  # Merged PR 37425: Updated us2-prod-frontend-1.yml
-  # d8d56a2b9904baef2c7bbe95bba975eb8fe15c84
-  sqlbilling_build_id: '1401148'
+  # Merged PR 37588: Updated us2-prod-frontend-1.yml
+  # aa93871ec2013140ac07b7d7936578ade98a5830
+  sqlbilling_build_id: '1405134'
