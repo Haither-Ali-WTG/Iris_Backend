@@ -7,12 +7,12 @@ variables:
   # ee18e831fd560a404b680f2ab20fc5b119cd2e57
   dante_build_id: '1405615'
 
-  # virgil 20250712.2
-  # Sat Jul 12 02:48:05 UTC 2025 -- Sat Jul 12 12:48:05 AEST 2025
+  # virgil 20250715.2
+  # Mon Jul 14 22:42:14 UTC 2025 -- Tue Jul 15 08:42:14 AEST 2025
   #
-  # Merged PR 37499: update swp to remove LACP for au2wp-svir-004 BE and au2wp-svir-024 FE for reb...
-  # 54e4031ef01208ab08cb59fcea561906c42fba05
-  virgil_build_id: '1405585'
+  # Merged PR 37614: add new switches apex31/32 to replace apex17/18 in DE1
+  # 51cad182ad27cf1fdfc3a1ba9c10ecaa252ebec9
+  virgil_build_id: '1408014'
 
   # sqlbilling 20250711.4
   # Fri Jul 11 13:46:38 UTC 2025 -- Fri Jul 11 23:46:38 AEST 2025
