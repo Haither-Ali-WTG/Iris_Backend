@@ -7,12 +7,12 @@ variables:
   # f4fce826c77e612cdc22797bfdcc88f198b2291d
   dante_build_id: '1408181'
 
-  # virgil 20250715.7
-  # Tue Jul 15 00:52:52 UTC 2025 -- Tue Jul 15 10:52:52 AEST 2025
+  # virgil 20250715.10
+  # Tue Jul 15 04:42:47 UTC 2025 -- Tue Jul 15 14:42:47 AEST 2025
   #
-  # Merged PR 37374: au2-globalprotect-extension
-  # cdb6d7bbe258548659c5c4621e674935be812566
-  virgil_build_id: '1408138'
+  # Merged PR 37626: update rack number temporarily for apex31/32 in DE1
+  # 1128c5e3a98a0d01dcaae4c263ae37a0bed601df
+  virgil_build_id: '1408311'
 
   # sqlbilling 20250711.4
   # Fri Jul 11 13:46:38 UTC 2025 -- Fri Jul 11 23:46:38 AEST 2025
