@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250715.2
-  # Tue Jul 15 01:40:52 UTC 2025 -- Tue Jul 15 11:40:52 AEST 2025
+  # Dante Build Artifact 20250715.3
+  # Tue Jul 15 05:21:23 UTC 2025 -- Tue Jul 15 15:21:23 AEST 2025
   #
-  # Merge pull request 37634 from dante_artifact_upgrade into master
-  # f4fce826c77e612cdc22797bfdcc88f198b2291d
-  dante_build_id: '1408181'
+  # Merge pull request 37649 from dante_artifact_upgrade into master
+  # 9f535bfb7c7e2e6e6e96b39f53f25ed7e8cfb3bd
+  dante_build_id: '1408345'
 
-  # virgil 20250715.10
-  # Tue Jul 15 04:42:47 UTC 2025 -- Tue Jul 15 14:42:47 AEST 2025
+  # virgil 20250716.2
+  # Wed Jul 16 00:18:14 UTC 2025 -- Wed Jul 16 10:18:14 AEST 2025
   #
-  # Merged PR 37626: update rack number temporarily for apex31/32 in DE1
-  # 1128c5e3a98a0d01dcaae4c263ae37a0bed601df
-  virgil_build_id: '1408311'
+  # Merged PR 37670: adding reverse zone file for 10.2.94.0
+  # 69e7d65fdb103f53bf31e4a5b9bb08b9d996a8e2
+  virgil_build_id: '1409057'
 
-  # sqlbilling 20250711.4
-  # Fri Jul 11 13:46:38 UTC 2025 -- Fri Jul 11 23:46:38 AEST 2025
+  # sqlbilling 20250715.2
+  # Tue Jul 15 08:30:16 UTC 2025 -- Tue Jul 15 18:30:16 AEST 2025
   #
-  # Merged PR 37588: Updated us2-prod-frontend-1.yml
-  # aa93871ec2013140ac07b7d7936578ade98a5830
-  sqlbilling_build_id: '1405134'
+  # Merged PR 37615: AU2 Replace SQLBILLING CS02017314
+  # ecb038608abfa8658d79ea80c620697fbd273360
+  sqlbilling_build_id: '1408484'
