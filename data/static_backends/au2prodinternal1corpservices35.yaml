@@ -9,4 +9,4 @@ devops-test.wtg.zone:
     - name: au2co-stfs-401.wtg.zone
       ip: 10.2.224.121
       port: 443
-      settings: check ssl
+      settings: check check-ssl ssl sni str(devops-test.wtg.zone) check-sni devops-test.wtg.zone
