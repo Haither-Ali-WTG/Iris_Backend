@@ -20,25 +20,40 @@ parameters:
   - name: matrix
     type: object
     default:
-      - agent_dc: AU2
+      - target_dc: AU2
+        agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-ro
-      - agent_dc: DE1
+      - target_dc: DE1
+        agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-2.wtg.ws
         s3_iris_bucket: s3://de-iscore-iris-prod-1/
         pure_usernames: de-iscore-iris-prod-1-ro
-      - agent_dc: US2
+      - target_dc: US2
+        agent_dc: US2
         agent_hall: A
         s3_host: us2s3-2.wtg.ws
         s3_iris_bucket: s3://us-iscore-iris-prod-1/
         pure_usernames: us-iscore-iris-prod-1-ro
+      - target_dc: CN1
+        agent_dc: AU2
+        agent_hall: A
+        s3_host: au2s3-2.wtg.ws
+        s3_iris_bucket: s3://au-iscore-iris-prod-1/
+        pure_usernames: au-iscore-iris-prod-1-ro
+      - target_dc: SA1
+        agent_dc: AU2
+        agent_hall: A
+        s3_host: au2s3-2.wtg.ws
+        s3_iris_bucket: s3://au-iscore-iris-prod-1/
+        pure_usernames: au-iscore-iris-prod-1-ro
 
 stages:
   - ${{ each run in parameters.matrix }}:
-      - stage: Check_IIS_data_${{ run.agent_dc }}
+      - stage: Check_IIS_data_${{ run.target_dc }}
         pool:
           name: dante
           demands:
@@ -47,9 +62,9 @@ stages:
         lockBehavior: sequential
         dependsOn: []
         jobs:
-          - deployment: Check_IIS_data_${{ run.agent_dc }}
+          - deployment: Check_IIS_data_${{ run.target_dc }}
             condition: or(eq('${{ run.agent_dc }}', variables['dc']), eq(variables['dc'], 'all'))
-            environment: iris_${{ run.agent_dc }}_check_iis_pipeline_lock
+            environment: iris_${{ run.target_dc }}_check_iis_pipeline_lock
             workspace:
               clean: all
             strategy:
@@ -116,7 +131,7 @@ stages:
                           -e="s3_host=${{ run.s3_host }}" -e="pure_usernames='${{ run.pure_usernames }}'"
                           -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
                           -e="key_vault_name=$(key_vault_name)"
-                          -e="target_dc=${{ run.agent_dc }}"
+                          -e="target_dc=${{ run.target_dc }}"
                           -e="target_hall=${{ run.agent_hall }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
