@@ -7,12 +7,12 @@ variables:
   # c939f124f8e258004e4650cd85dc84dbc84da936
   dante_build_id: '1409100'
 
-  # virgil 20250716.2
-  # Wed Jul 16 00:18:14 UTC 2025 -- Wed Jul 16 10:18:14 AEST 2025
+  # virgil 20250716.6
+  # Wed Jul 16 03:06:54 UTC 2025 -- Wed Jul 16 13:06:54 AEST 2025
   #
-  # Merged PR 37670: adding reverse zone file for 10.2.94.0
-  # 69e7d65fdb103f53bf31e4a5b9bb08b9d996a8e2
-  virgil_build_id: '1409057'
+  # Merged PR 37688: Virgil - Kafka config: increase retention time from 1w to 3months for sql queue due to bug
+  # d487349e5b0750c1d65d9f32d2140ebeabecae9f
+  virgil_build_id: '1409199'
 
   # sqlbilling 20250715.2
   # Tue Jul 15 08:30:16 UTC 2025 -- Tue Jul 15 18:30:16 AEST 2025
