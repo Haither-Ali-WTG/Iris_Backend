@@ -41,7 +41,7 @@
     - name: Download IIS data from S3
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
-        s3 cp --recursive
+        s3 cp --recursive --exclude "*" --include "{{ target_dc[:2] | lower }}*"
         {{ s3_iris_bucket }} {{ temp_path.path }}
       changed_when: true
 
