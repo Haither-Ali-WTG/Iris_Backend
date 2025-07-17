@@ -26,6 +26,13 @@ https_redirect:
     - redirect scheme https if star_bolero_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_testrig_sand_wtg_zone !{ ssl_fc } !excluded_from_redirect_paths
     - redirect scheme https if star_cargowise_com !{ ssl_fc }
+    - redirect scheme https if star_webprint_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_localtransport_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_edirf_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_webcampaign_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_webtracker_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_cfs_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_scim_testrig_sand_wtg_zone !{ ssl_fc }
 
 bolero_backend_redirect:
   description: |-
