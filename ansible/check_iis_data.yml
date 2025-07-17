@@ -16,7 +16,7 @@
       when:
         - not simulation
         - target_dc == dc
-        - iis_servers | default([]) | length > 0
+        - (iis_servers | default([]) | length > 0) or (iis_servers_local | default([]) | length > 0)
 
 - name: Download IIS data and check
   hosts: localhost
