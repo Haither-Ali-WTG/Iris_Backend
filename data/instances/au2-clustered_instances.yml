@@ -145,6 +145,13 @@ clustered_instances:
           cms_resource_group: RG-AU-Sand
         - name: star-bolero-sand-wtg-zone
         - name: star-cargowise-com
+        - name: star-webprint-testrigs-sand-wtg-zone
+        - name: star-localtransport-testrigs-sand-wtg-zone
+        - name: star-edirf-testrigs-sand-wtg-zone
+        - name: star-webcampaign-testrigs-sand-wtg-zone
+        - name: star-webtracker-testrigs-sand-wtg-zone
+        - name: star-cfs-testrigs-sand-wtg-zone
+        - name: star-scim-testrigs-sand-wtg-zone
       container:
         resources:
           production:
