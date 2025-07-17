@@ -21,6 +21,48 @@ star_testrig_sand_wtg_zone:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?testrig3?\.sand\.wtg\.zone$
 
+star_webprint_testrig_sand_wtg_zone:
+  description: |-
+    *.webprint.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?webprint\testrig\.sand\.wtg\.zone$
+
+star_localtransport_testrig_sand_wtg_zone:
+  description: |-
+    *.localtransport.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?localtransport\testrig\.sand\.wtg\.zone$
+
+star_edirf_testrig_sand_wtg_zone:
+  description: |-
+    *.edirf.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?edirf\testrig\.sand\.wtg\.zone$
+
+star_webcampaign_testrig_sand_wtg_zone:
+  description: |-
+    *.webcampaign.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?webcampaign\testrig\.sand\.wtg\.zone$
+
+star_webtracker_testrig_sand_wtg_zone:
+  description: |-
+    *.webtracker.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?webtracker\testrig\.sand\.wtg\.zone$
+
+star_cfs_testrig_sand_wtg_zone:
+  description: |-
+    *.cfs.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?cfs\testrig\.sand\.wtg\.zone$
+
+star_scim_testrig_sand_wtg_zone:
+  description: |-
+    *.scim.testrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?scim\testrig\.sand\.wtg\.zone$
+
 excluded_from_redirect_paths:
   description: |-
     Paths that should be excluded from the HTTPS redirect because
