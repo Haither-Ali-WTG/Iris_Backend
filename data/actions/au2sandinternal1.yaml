@@ -6,7 +6,7 @@ restrict_ip:
   actions:
     - http-request deny if !wtg_src !shipamax_src !hackerrank_src !talogy_src !azure_src !BSM_Blume_src
     - http-request deny if azure_src !scim-test_wisetechglobal_com
-    - http-request deny if BSM_Blume_src !ocmbe_sand_wtg_zone
+    - http-request deny if bsm_blume_src !ocmbe_sand_wtg_zone
 
 secure_cookie:
   description: |-
