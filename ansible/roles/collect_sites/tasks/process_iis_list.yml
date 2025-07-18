@@ -38,6 +38,7 @@
     dest: "failed_collection/{{ inventory_hostname }}"
     mode: u=rw,go=
   when:
+    - collect_sites_data_output is not skipped
     - collect_sites_data_output is defined
     - (collect_sites_data_output.stdout | from_json).has_errors
 
@@ -58,6 +59,7 @@
   changed_when: true
   delegate_to: localhost
   when:
+    - collect_sites_data_output is not skipped
     - collect_sites_data_output is defined
     - (collect_sites_data_output.stdout | from_json).wrote_files
     - upload_iis_data | default(true)
