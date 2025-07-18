@@ -146,12 +146,19 @@ clustered_instances:
         - name: star-bolero-sand-wtg-zone
         - name: star-cargowise-com
         - name: star-webprint-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-localtransport-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-edirf-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-webcampaign-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-webtracker-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-cfs-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-scim-testrigs-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
       container:
         resources:
           production:
