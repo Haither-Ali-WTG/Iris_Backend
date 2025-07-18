@@ -23,4 +23,5 @@ rules:
     forbid-in-flow-mappings: true
 ignore: |
   .git
+  /ansible/requirements.yml
   /inventories/
