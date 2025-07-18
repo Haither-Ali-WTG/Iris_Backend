@@ -15,27 +15,44 @@ stages:
         strategy:
           matrix:
             AU2_hall_A:
-              dc: AU2
+              target_dc: AU2
+              agent_dc: AU2
               hall: A
               s3_host: au2s3-2.wtg.ws
               s3_iris_bucket: s3://au-iscore-iris-prod-1/
               pure_usernames: au-iscore-iris-prod-1-ro
             DE1_hall_A:
-              dc: DE1
+              target_dc: DE1
+              agent_dc: DE1
               hall: A
               s3_host: de1s3-2.wtg.ws
               s3_iris_bucket: s3://de-iscore-iris-prod-1/
               pure_usernames: de-iscore-iris-prod-1-ro
             US2_hall_A:
-              dc: US2
+              target_dc: US2
+              agent_dc: US2
               hall: A
               s3_host: us2s3-2.wtg.ws
               s3_iris_bucket: s3://us-iscore-iris-prod-1/
               pure_usernames: us-iscore-iris-prod-1-ro
+            CN1_hall_A:
+              target_dc: CN1
+              agent_dc: AU2
+              hall: A
+              s3_host: au2s3-2.wtg.ws
+              s3_iris_bucket: s3://au-iscore-iris-prod-1/
+              pure_usernames: au-iscore-iris-prod-1-ro
+            SA1_hall_A:
+              target_dc: SA1
+              agent_dc: AU2
+              hall: A
+              s3_host: au2s3-2.wtg.ws
+              s3_iris_bucket: s3://au-iscore-iris-prod-1/
+              pure_usernames: au-iscore-iris-prod-1-ro
         pool:
           name: dante
           demands:
-            - WTG_DC -equals $(dc)
+            - WTG_DC -equals $(agent_dc)
             - WTG_HALL -equals $(hall)
         steps:
           - checkout: self
@@ -95,7 +112,7 @@ stages:
                 -e="s3_host=$(s3_host)" -e="azure_kv_name=$(key_vault_name)"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
-                -e="target_dc=$(dc)"
+                -e="target_dc=$(target_dc)"
                 -e="backends='$(backends)'"
                 -e="backend_servers='$(backend_servers)'"
                 -e="instance_names='$(instance_names)'"
