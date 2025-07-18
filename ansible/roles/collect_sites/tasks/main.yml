@@ -22,3 +22,4 @@
     iis_user_process: "{{ vars['iis_user' + item.key.split('iis_servers') | last] }}"
     iis_servers: "{{ item.value }}"
   loop: "{{ iis_servers_vars }}"
+  when: item.value | length > 0
