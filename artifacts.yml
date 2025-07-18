@@ -7,16 +7,16 @@ variables:
   # 64d0ec986910526b2d04fe298639ea61c271b945
   dante_build_id: '1409245'
 
-  # virgil 20250716.6
-  # Wed Jul 16 03:06:54 UTC 2025 -- Wed Jul 16 13:06:54 AEST 2025
+  # virgil 20250718.2
+  # Fri Jul 18 03:17:05 UTC 2025 -- Fri Jul 18 13:17:05 AEST 2025
   #
-  # Merged PR 37688: Virgil - Kafka config: increase retention time from 1w to 3months for sql queue due to bug
-  # d487349e5b0750c1d65d9f32d2140ebeabecae9f
-  virgil_build_id: '1409199'
+  # Merged PR 37731: update switches names to apex47/48
+  # 565139ab997471c58ce526068f8e0a2a540e1de9
+  virgil_build_id: '1411031'
 
-  # sqlbilling 20250715.2
-  # Tue Jul 15 08:30:16 UTC 2025 -- Tue Jul 15 18:30:16 AEST 2025
+  # sqlbilling 20250717.2
+  # Thu Jul 17 11:43:56 UTC 2025 -- Thu Jul 17 21:43:56 AEST 2025
   #
-  # Merged PR 37615: AU2 Replace SQLBILLING CS02017314
-  # ecb038608abfa8658d79ea80c620697fbd273360
-  sqlbilling_build_id: '1408484'
+  # Merged PR 37723: SQLBillingAddandRemoveCS02017314.yml
+  # 4a4561a3635b51be44ec6bd928ab38c213bf0fda
+  sqlbilling_build_id: '1410434'
