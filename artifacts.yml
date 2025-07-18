@@ -7,16 +7,16 @@ variables:
   # efc1070f8cfceffa5590e0cdcb64bcae96c42dea
   dante_build_id: '1411078'
 
-  # virgil 20250718.2
-  # Fri Jul 18 03:17:05 UTC 2025 -- Fri Jul 18 13:17:05 AEST 2025
+  # virgil 20250718.6
+  # Fri Jul 18 07:08:36 UTC 2025 -- Fri Jul 18 17:08:36 AEST 2025
   #
-  # Merged PR 37731: update switches names to apex47/48
-  # 565139ab997471c58ce526068f8e0a2a540e1de9
-  virgil_build_id: '1411031'
+  # Merged PR 37753: update ports on DE1 switch apex47/48
+  # a1393439f2e6260d1b3ecd2247bd79310df392ac
+  virgil_build_id: '1411273'
 
-  # sqlbilling 20250717.2
-  # Thu Jul 17 11:43:56 UTC 2025 -- Thu Jul 17 21:43:56 AEST 2025
+  # sqlbilling 20250718.2
+  # Fri Jul 18 05:25:48 UTC 2025 -- Fri Jul 18 15:25:48 AEST 2025
   #
-  # Merged PR 37723: SQLBillingAddandRemoveCS02017314.yml
-  # 4a4561a3635b51be44ec6bd928ab38c213bf0fda
-  sqlbilling_build_id: '1410434'
+  # Merged PR 37749: RTL-Whitelisting Customer IP's for ReadOnly Database
+  # 6002a016a407c6c6be3e09b9fea73f8e684ff2f6
+  sqlbilling_build_id: '1411166'
