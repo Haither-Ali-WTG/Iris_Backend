@@ -2,75 +2,6 @@
 # TODO figure out how to spread the definition over multiple files
 clustered_instances:
   hosts:
-    au2prodfrontend1prodservices:
-      # au2-prod-frontend-1-prod-services
-      dc: AU2
-      frontend:
-        maxconn: 20000
-        ports:
-          plaintext: [2009]
-          ssl: [2010]
-      stats:
-        ports:
-          web: 2031
-          socket: 2030
-      machine_cluster: au2-prod-frontend-1
-      iis_servers: []
-      # Key vault secret should be same as username without domain and replacing '_' with '-'
-      iis_user: s_lbwinrmquerier
-      websites_config: websites.yml
-      certificates:
-        - name: star-wisegrid-net
-        - name: star-cargowise-com
-        - name: star-cargowise-net
-          cms_resource_group: RG-AU-Corp
-        - name: star-borderwise-com
-          cms_resource_group: RG-AU-Prod
-        - name: star-wisetechacademy-com
-        - name: star-wisetechglobal-com
-          cms_resource_group: RG-AU-Corp
-        - name: star-webtracker-wisegrid-net
-        - name: star-webcampaign-wisegrid-net
-          cms_resource_group: RG-AU-Prod
-        - name: star-webprint-wisegrid-net
-          cms_resource_group: RG-AU-Prod
-        - name: ediweb-oceanbridge-co-nz
-        - name: tracking-bcr-com-au
-        - name: tracking-eplint-com
-        - name: ahwprd-webtracker-carozplus-com
-        - name: webtracking-sila-net-au
-        - name: star-spweb-wisegrid-net
-          cms_resource_group: RG-AU-Prod
-        - name: tracking-pcfs-com-au
-        - name: star-cfs-wisegrid-net
-        - name: star-cww-wisegrid-net
-          cms_resource_group: RG-AU-Prod
-        - name: star-cww-nonprd-wisegrid-net
-          cms_resource_group: RG-AU-Prod
-      cipher:
-        profiles:
-          - best_practice_2023
-    au1prodfrontend1:
-      # per-clustered-instance settings (overrides) go here, for example:
-      dc: AU2
-      frontend:
-        maxconn: 20000
-      machine_cluster: nowhere  # au2-prod-frontend-1
-      iis_servers:
-        - au2wt-sweb-001.test.wisecloud.zone
-        - au2wt-sweb-002.test.wisecloud.zone
-      # Key vault secret should be same as username without domain and replacing '_' with '-'
-      iis_user: s_lbwinrmquerier
-      websites_config: websites.yml
-      certificates:
-        - name: ahwprd-webtracker-carozplus-com
-        - name: customers-commercialcustoms-com-au
-        - name: star-cargowise-com
-        - name: star-wisegrid-net
-      cipher:
-        profiles:
-          - best_practice_2023
-
     au2prodceph1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
@@ -301,26 +232,7 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
-    au2prodfrontend1prodidp:
-      # au2-prod-frontend-1-prod-idp
-      dc: AU2
-      frontend:
-        maxconn: 20000
-        ports:
-          plaintext: [2007]
-          ssl: [2008]
-      stats:
-        ports:
-          web: 2047
-          socket: 2046
-      machine_cluster: au2-prod-frontend-1
-      iis_servers: []
-      certificates:
-        - name: star-wisetechglobal-com
-          cms_resource_group: RG-AU-Corp
-      cipher:
-        profiles:
-          - best_practice_2023
+
     au2prodfrontend1tcp:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
