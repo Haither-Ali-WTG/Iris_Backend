@@ -102,6 +102,14 @@ talogy_src:
     - src 13.81.64.243/32
     - src 13.81.65.246/32
 
+bsm_blume_src:
+  description: source IP is BSM/Blume, requested by Ryken Song in CS01954112 for OCMBE (ocean carrier messaging)
+  tests:
+    - src 34.105.17.140/32
+    - src 34.82.183.200/32
+    - src 34.168.249.100/32
+    - src 34.105.0.45/32
+
 star_cargowise_com:
   description: "*.cargowise.com"
   tests:
@@ -111,3 +119,13 @@ scim-test_wisetechglobal_com:
   description: "scim-test.wisetechglobal.com"
   tests:
     - hdr(host) -i scim-test.wisetechglobal.com
+
+ocmbe_sand_wtg_zone:
+  description: "ocmbe.sand.wtg.zone"
+  tests:
+    - hdr(host),field(1,:) -i ocmbe.sand.wtg.zone
+
+star_wisegrid_net:
+  description: "*.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisegrid\.net$

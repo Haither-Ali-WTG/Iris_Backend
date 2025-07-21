@@ -4,8 +4,9 @@ restrict_ip:
     Restrict http request based on IP
   order: 1
   actions:
-    - http-request deny if !wtg_src !shipamax_src !hackerrank_src !talogy_src !azure_src
+    - http-request deny if !wtg_src !shipamax_src !hackerrank_src !talogy_src !azure_src !bsm_blume_src
     - http-request deny if azure_src !scim-test_wisetechglobal_com
+    - http-request deny if bsm_blume_src !ocmbe_sand_wtg_zone
 
 secure_cookie:
   description: |-
