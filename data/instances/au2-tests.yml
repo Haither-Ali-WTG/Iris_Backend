@@ -1,17 +1,6 @@
 ---
 clustered_instances:
   hosts:
-    au1prodfrontend1:
-      tests:
-        - host: aucloud3.wisegrid.net
-          path: /
-          ssl: true
-          status: 200
-        - host: fms.wisegrid.net
-          path: /api/v1/airevents/ping
-          ssl: true
-          status: 200
-
     au2prodceph1:
       tests:
         - host: www.cargowise.com
