@@ -1,0 +1,10 @@
+---
+collections:
+  - name: wtg.platform_common
+    source: https://WTGOps@dev.azure.com/WTGOps/InfrastructureAutomation/_git/wtg.platform.ansible.common
+    type: git
+    version: master
+  - name: wtg.monitoring_agents
+    source: https://WTGOps@dev.azure.com/WTGOps/InfrastructureAutomation/_git/monitoring-agents#/ansible/
+    type: git
+    version: master

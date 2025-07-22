@@ -72,6 +72,15 @@
         module_prometheus: true
         endpoint_ports: "{{ stats_web_ports }}"
 
+    - name: Setup ES agent for Iris
+      include_role:
+        name: wtg.monitoring_agents.elastic_agent
+      vars:
+        target_system_name: "fleetSystemApacProd1"
+      when:
+        - target_dc == "AU2"
+        - not simulation
+
     - name: Setup Telegraf config for Iris
       include_role:
         name: telegraf_config
