@@ -22,5 +22,5 @@
   vars:
     data_centre: "{{ target_dc }}"
   when:
-   - target_dc == "AU2"
-   - not simulation
+    - target_dc == "AU2"
+    - not simulation
