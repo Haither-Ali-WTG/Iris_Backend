@@ -15,3 +15,12 @@
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: u=rw,g=r,o=r
+
+- name: Install Telegraf
+  include_role:
+    name: wtg.monitoring_agents.telegraf
+  vars:
+    data_centre: "{{ target_dc }}"
+  when:
+    - target_dc == "AU2"
+    - not simulation
