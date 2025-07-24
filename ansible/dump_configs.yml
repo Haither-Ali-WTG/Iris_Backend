@@ -50,54 +50,6 @@
       ignore_unreachable: true
       become: yes
 
-- name: Compare the changes of configs
-  hosts: localhost
-  gather_facts: no
+- name: Show config changes
+  import_playbook: show_config_changes.yaml
   when: show_changes | default(false)
-  tasks:
-    - name: Get generated config files
-      find:
-        paths: "../generated_configs/"
-        file_type: file
-      register: generated_config_list
-
-    - name: Get current config files
-      find:
-        paths: "../current_configs/"
-        file_type: file
-      register: current_config_list
-
-    - name: Get filenames of configurations
-      set_fact:
-        generated_filenames: >-
-          {{ generated_config_list.files
-          | map(attribute='path')
-          | map('basename')
-          | reject('search', 'README')
-          | list }}
-        current_filenames: >-
-          {{ current_config_list.files
-          | map(attribute='path')
-          | map('basename')
-          | list }}
-
-    - name: Compute added configs
-      set_fact:
-        added_configs: "{{ generated_filenames | difference(current_filenames) }}"
-
-    - name: Added instance configuration
-      debug:
-        msg: >-
-          New instance {{ added_configs }} will be added,
-          please check the configuration in Pipeline artifact.
-      when: added_configs | length > 0
-      changed_when: added_configs | length > 0
-
-    - name: Show configuration changes
-      copy:
-        src: "../generated_configs/{{ item }}"
-        dest: "../current_configs/{{ item }}"
-        mode: "u=r,go="
-      check_mode: yes
-      diff: yes
-      loop: "{{ generated_filenames | intersect(current_filenames) }}"
