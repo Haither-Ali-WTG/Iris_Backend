@@ -153,6 +153,7 @@ stages:
                 -e="simulation=" -e="azure_kv_name=$(azure_kv_name)"
                 -e="s3_host=$(s3_host)" -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
+                -e "{show_changes: $(show_changes)}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_HOST_KEY_CHECKING: false

@@ -53,6 +53,7 @@
 - name: Compare the changes of configs
   hosts: localhost
   gather_facts: no
+  when: show_changes | default(false)
   tasks:
     - name: Get generated config files
       find:
