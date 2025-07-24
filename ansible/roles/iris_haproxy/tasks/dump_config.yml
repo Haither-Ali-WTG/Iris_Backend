@@ -7,4 +7,5 @@
     src: haproxy.cfg.j2
     dest: "../generated_configs/{{ inventory_hostname }}.cfg"
     mode: a=r
+  diff: no
   delegate_to: localhost
