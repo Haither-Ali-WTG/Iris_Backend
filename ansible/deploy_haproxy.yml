@@ -104,6 +104,7 @@
   hosts: individual_instances
   gather_facts: no
   force_handlers: yes
+  diff: "{{ not simulation | default(true) }}"
   tasks:
     - name: Collect min facts
       ansible.builtin.setup:
