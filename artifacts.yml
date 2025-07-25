@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250722.1
-  # Tue Jul 22 01:21:00 UTC 2025 -- Tue Jul 22 11:21:00 AEST 2025
+  # Dante Build Artifact 20250725.2
+  # Fri Jul 25 02:21:26 UTC 2025 -- Fri Jul 25 12:21:26 AEST 2025
   #
-  # Merge pull request 37807 from dante_artifact_upgrade into master
-  # e5a84c8bf315c1c6e3fbf669e6f6b8f0a346abf6
-  dante_build_id: '1415251'
+  # Merge pull request 37891 from dante_artifact_upgrade into master
+  # f8f033929c40f0bba6b01b15d9d4515ff5808c5f
+  dante_build_id: '1418399'
 
-  # virgil 20250722.2
-  # Tue Jul 22 00:28:17 UTC 2025 -- Tue Jul 22 10:28:17 AEST 2025
+  # virgil 20250725.2
+  # Fri Jul 25 01:18:11 UTC 2025 -- Fri Jul 25 11:18:11 AEST 2025
   #
-  # Merged PR 37789: Virgil - Kafka Config: adjust retention to back 1 week as bug is fixed
-  # 3629cf7131d18609aabafed5bec6a43ff0261c3f
-  virgil_build_id: '1415196'
+  # Merged PR 37782: WI00925827 config au2wp-svir-007/22 from LACP to trunk only
+  # 16dd1f53059759608179d0bc1a8ed8705401ed04
+  virgil_build_id: '1418340'
 
-  # sqlbilling 20250722.1
-  # Mon Jul 21 23:49:08 UTC 2025 -- Tue Jul 22 09:49:08 AEST 2025
+  # sqlbilling 20250724.2
+  # Thu Jul 24 07:38:03 UTC 2025 -- Thu Jul 24 17:38:03 AEST 2025
   #
-  # Merged PR 37797: SQLBillingAddCS02023495.yml
-  # 9c9f42d9cc050bf7edcd44a2a007dfbfc48deb8e
-  sqlbilling_build_id: '1415161'
+  # Merged PR 37886: SQLBillingCS01564471.yml
+  # ec9ae2a7b21914028a68e3bd1f7f42516c211d88
+  sqlbilling_build_id: '1417657'
