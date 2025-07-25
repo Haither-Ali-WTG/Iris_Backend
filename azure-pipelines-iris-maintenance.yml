@@ -15,6 +15,13 @@ schedules:
     branches:
       include:
         - master
+  - cron: "0 0 * * Sun"
+    # Prod cluster maintenance at 10am or 11am Sydney Time every Sunday
+    displayName: "Prod cluster maintenance"
+    always: true
+    branches:
+      include:
+        - master
 
 # Pipeline variables:
 # - hosts: The Iris hosts will be rebuilt. By default this is empty.
@@ -161,6 +168,8 @@ jobs:
           echo "Running $(Build.CronSchedule.DisplayName)"
           if [ "$(Build.CronSchedule.DisplayName)" = "Sand cluster maintenance" ]; then
             echo "##vso[task.setvariable variable=au2-sand-internal-1_enabled]enabled"
+          elif [ "$(Build.CronSchedule.DisplayName)" = "Prod cluster maintenance" ]; then
+            echo "##vso[task.setvariable variable=au2-prod-internal-1_enabled]enabled"
           fi
         displayName: 'Set variable for scheduled run'
 
