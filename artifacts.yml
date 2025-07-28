@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250725.3
-  # Fri Jul 25 12:20:52 UTC 2025 -- Fri Jul 25 22:20:52 AEST 2025
+  # Dante Build Artifact 20250728.1
+  # Mon Jul 28 00:21:30 UTC 2025 -- Mon Jul 28 10:21:30 AEST 2025
   #
-  # Merge pull request 37914 from dante_artifact_upgrade into master
-  # 781fb5f3062ff65369e260a0f7bfe6a5df8cc775
-  dante_build_id: '1418824'
+  # Merge pull request 37931 from dante_artifact_upgrade into master
+  # cbe1ecbb5e71987be43dce47b5d0f56e1c58cdfd
+  dante_build_id: '1420985'
 
-  # virgil 20250725.4
-  # Fri Jul 25 11:28:44 UTC 2025 -- Fri Jul 25 21:28:44 AEST 2025
+  # virgil 20250728.5
+  # Sun Jul 27 23:26:39 UTC 2025 -- Mon Jul 28 09:26:39 AEST 2025
   #
-  # Merged PR 37913: Updated network_au2.yaml - move au2co-sdod-001 from Trunk to Native vLan
-  # 1962b62fae7646876e49a771c3ba36219da55db6
-  virgil_build_id: '1418774'
+  # Merged PR 37930: add key for ssh access
+  # 09905a35cf6ff932e4544941d5752fa7b3753510
+  virgil_build_id: '1420926'
 
   # sqlbilling 20250725.3
   # Fri Jul 25 08:54:42 UTC 2025 -- Fri Jul 25 18:54:42 AEST 2025
