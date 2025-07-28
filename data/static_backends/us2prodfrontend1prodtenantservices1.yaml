@@ -1,0 +1,70 @@
+---
+dev.cargosphere.us:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml168017
+      ip: 10.4.168.17
+      port: 443
+      settings: check ssl verify none
+
+www.cargosphere.us:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml168012
+      ip: 10.4.168.12
+      port: 443
+      settings: check ssl verify none
+
+regression.cargosphere.us:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml168013
+      ip: 10.4.168.13
+      port: 443
+      settings: check ssl verify none
+
+www.cargosphere.biz:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml169012
+      ip: 10.4.169.12
+      port: 443
+      settings: check ssl verify none
+
+www.cargosphere.net:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml169013
+      ip: 10.4.169.13
+      port: 443
+      settings: check ssl verify none
+
+test.cargosphere.us:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml169014
+      ip: 10.4.169.14
+      port: 443
+      settings: check ssl verify none
+
+www.cargosphere.co:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2vml169015
+      ip: 10.4.169.15
+      port: 443
+      settings: check ssl verify none

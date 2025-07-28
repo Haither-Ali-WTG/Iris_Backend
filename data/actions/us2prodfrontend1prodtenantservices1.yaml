@@ -1,0 +1,33 @@
+---
+nowww_redirect:
+  description: |-
+    Add "www" prefix to naked CargoSphere domains
+  order: 78  # Currently defined as "?" in platform-docs
+  actions:
+    - redirect location https://www.cargosphere.co if cargosphere_co
+    - redirect location https://www.cargosphere.net if cargosphere_net
+    - redirect location https://www.cargosphere.biz if cargosphere_biz
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 79
+  actions:
+    - redirect scheme https if star_cargosphere_us !{ ssl_fc }
+    - redirect scheme https if star_cargosphere_biz !{ ssl_fc }
+    - redirect scheme https if star_cargosphere_net !{ ssl_fc }
+    - redirect scheme https if star_cargosphere_co !{ ssl_fc }
+
+cargosphere_backend_selection:
+  description: |-
+    CargoSphere-specific backend selection.
+  order: 80
+  actions:
+    - use_backend dev_cargosphere_us        if dev_cargosphere_us
+    - use_backend www_cargosphere_us        if www_cargosphere_us
+    - use_backend regression_cargosphere_us if regression_cargosphere_us
+    - use_backend www_cargosphere_biz       if www_cargosphere_biz
+    - use_backend www_cargosphere_net       if www_cargosphere_net
+    - use_backend test_cargosphere_us       if test_cargosphere_us
+    - use_backend www_cargosphere_co        if www_cargosphere_co
