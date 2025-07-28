@@ -7,12 +7,12 @@ variables:
   # cbe1ecbb5e71987be43dce47b5d0f56e1c58cdfd
   dante_build_id: '1420985'
 
-  # virgil 20250728.5
-  # Sun Jul 27 23:26:39 UTC 2025 -- Mon Jul 28 09:26:39 AEST 2025
+  # virgil 20250728.9
+  # Mon Jul 28 01:58:07 UTC 2025 -- Mon Jul 28 11:58:07 AEST 2025
   #
-  # Merged PR 37930: add key for ssh access
-  # 09905a35cf6ff932e4544941d5752fa7b3753510
-  virgil_build_id: '1420926'
+  # Merged PR 37942: storate-vlan-update
+  # 1a44198a2fb54b65e707e51d20a378824939dcd8
+  virgil_build_id: '1421064'
 
   # sqlbilling 20250725.3
   # Fri Jul 25 08:54:42 UTC 2025 -- Fri Jul 25 18:54:42 AEST 2025
