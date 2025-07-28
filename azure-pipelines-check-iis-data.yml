@@ -2,8 +2,8 @@
 trigger: none
 
 schedules:
-  - cron: "*/15 * * * *"
-    displayName: Every 15 minutes check iis data for dynamic backends
+  - cron: "*/30 * * * *"
+    displayName: Every 30 minutes check iis data for dynamic backends
     always: true
     branches:
       include:
