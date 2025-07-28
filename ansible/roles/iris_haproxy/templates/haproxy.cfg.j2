@@ -266,7 +266,7 @@ default-server inter 10000 {%- if config.encryption | default(false) %} ssl{% en
 {%           for iterating_config in server_content.websites_list[backend_name] %}
 {%             if iterating_config == config %}
 server {{ server_name | split('.') | first }} {{ server_content.server_ip }}:{{ iterating_config.port }} check
-{%-              if agent_ports[server_name] is defined and agent_ports[server_name] != 0 %} agent-check agent-addr {{ server_content.server_ip }} agent-port {{ agent_ports[server_name] }}
+{%-              if agent_ports[server_name] is defined and agent_ports[server_name] != 0 %} agent-check agent-port {{ agent_ports[server_name] }} agent-inter {{ 30 + (((backend_name + config.name_suffix) | hash)[:8] | int(base=16) % 16) }}s
 {%-              endif +%}
 {%             endif %}
 {%           endfor %}
