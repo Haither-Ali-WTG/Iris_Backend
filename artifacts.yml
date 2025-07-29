@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250729.2
-  # Tue Jul 29 08:01:49 UTC 2025 -- Tue Jul 29 18:01:49 AEST 2025
+  # Dante Build Artifact 20250730.1
+  # Tue Jul 29 21:02:12 UTC 2025 -- Wed Jul 30 07:02:12 AEST 2025
   #
-  # Merge pull request 37992 from dante_artifact_upgrade into master
-  # 6e776add5728ce8e52f80fc3739cfc7c47bc2c49
-  dante_build_id: '1422211'
+  # Merge pull request 38008 from dante_artifact_upgrade into master
+  # 2a4243b1a3747222858f3caa293b988e39605ad3
+  dante_build_id: '1422660'
 
-  # virgil 20250729.5
-  # Tue Jul 29 07:15:39 UTC 2025 -- Tue Jul 29 17:15:39 AEST 2025
+  # virgil 20250730.2
+  # Tue Jul 29 20:21:07 UTC 2025 -- Wed Jul 30 06:21:07 AEST 2025
   #
-  # Merged PR 37991: update swp for au2wp-svir-021 rebuild
-  # 5aebdfec95038fbface37d2153db9adf5c11c145
-  virgil_build_id: '1422167'
+  # Merged PR 37577: Add a new VLAN to us2kvl-v0
+  # cd48cdd49128b47601973cf2d0b9d5a739390b95
+  virgil_build_id: '1422626'
 
-  # sqlbilling 20250728.3
-  # Mon Jul 28 07:54:52 UTC 2025 -- Mon Jul 28 17:54:52 AEST 2025
+  # sqlbilling 20250729.7
+  # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
   #
-  # Merged PR 37963: SQLBillingADDCS02029570.yml
-  # 4e33321366b4f4f8b4d7c81d4162e1f7f3d6dcfa
-  sqlbilling_build_id: '1421322'
+  # Merged PR 38007: SQLBillingADDCS02031242.yml
+  # 12ffa96930855ab93b1658f504b2bedc81bc433c
+  sqlbilling_build_id: '1422380'
