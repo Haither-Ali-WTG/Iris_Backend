@@ -1,6 +1,7 @@
 ---
 - name: Iris Cluster Maintenance
   hosts: server_loadbalancer_iris:&maintainable:!no_dante
+  gather_facts: no
   serial: 1
   tasks:
     - name: Calculate BMC IP
@@ -36,6 +37,10 @@
             enabled: no
           become: yes
 
+        - name: Manually gather only the hostname fact
+          setup:
+            filter: ansible_hostname
+
         - name: Unroll Elastic Agent
           include_role:
             name: wtg.monitoring_agents.elastic_agent
@@ -43,6 +48,9 @@
           vars:
             target_system_name: "fleetSystemApacProd1"
           when: dc == "AU2"
+
+        - name: Clear all gathered facts
+          meta: clear_facts
 
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
