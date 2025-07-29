@@ -1,7 +1,6 @@
 ---
 - name: Iris Cluster Maintenance
   hosts: server_loadbalancer_iris:&maintainable:!no_dante
-  gather_facts: no
   serial: 1
   tasks:
     - name: Calculate BMC IP
@@ -36,6 +35,14 @@
             state: stopped
             enabled: no
           become: yes
+
+        - name: Unroll Elastic Agent
+          include_role:
+            name: wtg.monitoring_agents.elastic_agent
+            tasks_from: unroll_agents.yml
+          vars:
+            target_system_name: "fleetSystemApacProd1"
+          when: dc == "AU2"
 
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
