@@ -73,6 +73,18 @@
     enabled: true
   name_suffix: ''
 
+# Webcampaign
+- name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webcampaign\.(wisegrid|wisetechglobal)\.(net|cn)$
+  encryption: false
+  http_health_check:
+    enabled: false
+    http_path: "/"
+  port: 80
+  cookie:
+    name: WEBSVC
+    enabled: true
+  name_suffix: ''
+
 # Webprint
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webprint\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
