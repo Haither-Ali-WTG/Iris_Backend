@@ -7,12 +7,12 @@ variables:
   # b38b274d26f0ee578e3d52ba67cc5b0fcb42a3ef
   dante_build_id: '1422115'
 
-  # virgil 20250729.3
-  # Tue Jul 29 05:45:10 UTC 2025 -- Tue Jul 29 15:45:10 AEST 2025
+  # virgil 20250729.5
+  # Tue Jul 29 07:15:39 UTC 2025 -- Tue Jul 29 17:15:39 AEST 2025
   #
-  # Merged PR 37974: update swp for rebuilding au2wp-svir-008 and 035
-  # c8c9ec68400921cb7ad0731bbf1a028511eccc29
-  virgil_build_id: '1422081'
+  # Merged PR 37991: update swp for au2wp-svir-021 rebuild
+  # 5aebdfec95038fbface37d2153db9adf5c11c145
+  virgil_build_id: '1422167'
 
   # sqlbilling 20250728.3
   # Mon Jul 28 07:54:52 UTC 2025 -- Mon Jul 28 17:54:52 AEST 2025
