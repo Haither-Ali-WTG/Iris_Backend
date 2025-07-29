@@ -37,6 +37,18 @@
             enabled: no
           become: yes
 
+        - name: Manually gather only the hostname fact
+          setup:
+            filter: ansible_hostname
+
+        - name: Unroll Elastic Agent
+          include_role:
+            name: wtg.monitoring_agents.elastic_agent
+            tasks_from: unroll_agents.yml
+          vars:
+            target_system_name: "fleetSystemApacProd1"
+          when: dc == "AU2"
+
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
             seconds: 5
