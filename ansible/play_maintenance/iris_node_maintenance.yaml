@@ -49,9 +49,6 @@
             target_system_name: "fleetSystemApacProd1"
           when: dc == "AU2"
 
-        - name: Clear all gathered facts
-          meta: clear_facts
-
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
             seconds: 5
