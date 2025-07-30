@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250730.2
-  # Wed Jul 30 01:41:20 UTC 2025 -- Wed Jul 30 11:41:20 AEST 2025
+  # Dante Build Artifact 20250730.3
+  # Wed Jul 30 05:41:14 UTC 2025 -- Wed Jul 30 15:41:14 AEST 2025
   #
-  # Merge pull request 38019 from dante_artifact_upgrade into master
-  # c06d85d0baac6be0ae8d58c16e106929858bb106
-  dante_build_id: '1422887'
+  # Merge pull request 38040 from dante_artifact_upgrade into master
+  # f03f3769d3b0cf67efcf1d16546fac5aa18674db
+  dante_build_id: '1423068'
 
-  # virgil 20250730.7
-  # Wed Jul 30 00:41:15 UTC 2025 -- Wed Jul 30 10:41:15 AEST 2025
+  # virgil 20250730.9
+  # Wed Jul 30 05:06:25 UTC 2025 -- Wed Jul 30 15:06:25 AEST 2025
   #
-  # Merged PR 38018: Update simulation8711 OS
-  # f33ab58179312be3978496e9c490c23f6aa4d7e5
-  virgil_build_id: '1422831'
+  # Merged PR 38038: Put simulation8711 ro continuous
+  # c2cabe7027077b264d826062521ba97d04ab8018
+  virgil_build_id: '1423038'
 
   # sqlbilling 20250729.7
   # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
