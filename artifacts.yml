@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250730.1
-  # Tue Jul 29 21:02:12 UTC 2025 -- Wed Jul 30 07:02:12 AEST 2025
+  # Dante Build Artifact 20250730.2
+  # Wed Jul 30 01:41:20 UTC 2025 -- Wed Jul 30 11:41:20 AEST 2025
   #
-  # Merge pull request 38008 from dante_artifact_upgrade into master
-  # 2a4243b1a3747222858f3caa293b988e39605ad3
-  dante_build_id: '1422660'
+  # Merge pull request 38019 from dante_artifact_upgrade into master
+  # c06d85d0baac6be0ae8d58c16e106929858bb106
+  dante_build_id: '1422887'
 
-  # virgil 20250730.2
-  # Tue Jul 29 20:21:07 UTC 2025 -- Wed Jul 30 06:21:07 AEST 2025
+  # virgil 20250730.7
+  # Wed Jul 30 00:41:15 UTC 2025 -- Wed Jul 30 10:41:15 AEST 2025
   #
-  # Merged PR 37577: Add a new VLAN to us2kvl-v0
-  # cd48cdd49128b47601973cf2d0b9d5a739390b95
-  virgil_build_id: '1422626'
+  # Merged PR 38018: Update simulation8711 OS
+  # f33ab58179312be3978496e9c490c23f6aa4d7e5
+  virgil_build_id: '1422831'
 
   # sqlbilling 20250729.7
   # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
