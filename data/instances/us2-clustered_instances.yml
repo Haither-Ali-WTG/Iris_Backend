@@ -378,3 +378,33 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2prodfrontend1prodtenantservices1:
+      # us2-prod-tenantservices-1
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2097]
+          ssl: [2098]
+      stats:
+        ports:
+          web: 2061
+          socket: 2060
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-cargosphere-us
+        - name: star-cargosphere-biz
+        - name: star-cargosphere-net
+        - name: star-cargosphere-co
+        - name: star-depotsystems-com
+        - name: star-bysoft-com-br
+          cms_resource_group: RG-US-Prod
+        - name: star-fenix-com
+          cms_resource_group: RG-US-Prod
+        - name: star-tmssaas-com
+        - name: star-livesource-com
+      cipher:
+        profiles:
+          - best_practice_2023

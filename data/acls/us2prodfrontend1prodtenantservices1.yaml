@@ -1,0 +1,100 @@
+---
+star_cargosphere_us:
+  description: "*.cargosphere.us"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cargosphere\.us$
+
+star_cargosphere_biz:
+  description: "*.cargosphere.biz"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cargosphere\.biz$
+
+star_cargosphere_net:
+  description: "*.cargosphere.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cargosphere\.net$
+
+star_cargosphere_co:
+  description: "*.cargosphere.co"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cargosphere\.co$
+
+star_fenix_com:
+  description: "*.fenix.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?fenix\.com$
+
+star_depotsystems_com:
+  description: "*.depotsystems.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?depotsystems\.com$
+
+star_bysoft_com_br:
+  description: "*.bysoft.com.br"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?bysoft\.com\.br$
+
+star_tmssaas_com:
+  description: "*.tmssaas.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?tmssaas\.com$
+
+star_livesource_com:
+  description: "*.livesource.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?livesource\.com$
+
+star_containerchain_com:
+  description: "*.containerchain.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?containerchain\.com$
+
+dev_cargosphere_us:
+  description: "dev.cargosphere.us"
+  tests:
+    - hdr(host) -i dev.cargosphere.us
+
+www_cargosphere_us:
+  description: "www.cargosphere.us"
+  tests:
+    - hdr(host) -i www.cargosphere.us
+
+regression_cargosphere_us:
+  description: "regression.cargosphere.us"
+  tests:
+    - hdr(host) -i regression.cargosphere.us
+
+cargosphere_biz:
+  description: "cargosphere.biz"
+  tests:
+    - hdr(host) -i cargosphere.biz
+
+www_cargosphere_biz:
+  description: "www.cargosphere.biz"
+  tests:
+    - hdr(host) -i www.cargosphere.biz
+
+cargosphere_net:
+  description: "cargosphere.net"
+  tests:
+    - hdr(host) -i cargosphere.net
+
+www_cargosphere_net:
+  description: "www.cargosphere.net"
+  tests:
+    - hdr(host) -i www.cargosphere.net
+
+test_cargosphere_us:
+  description: "test.cargosphere.us"
+  tests:
+    - hdr(host) -i test.cargosphere.us
+
+cargosphere_co:
+  description: "cargosphere.co"
+  tests:
+    - hdr(host) -i cargosphere.co
+
+www_cargosphere_co:
+  description: "www.cargosphere.co"
+  tests:
+    - hdr(host) -i www.cargosphere.co
