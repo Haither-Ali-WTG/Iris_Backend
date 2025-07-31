@@ -49,6 +49,14 @@ hackerrank_src:
     - src 52.73.33.136/32
     - src 52.22.20.80/32
 
+jumphost_src:
+  description: source IP is WiseTech (internal or external network)
+  tests:
+    # Jumphost IP range
+    - src 10.2.86.0/24
+    - src 10.3.86.0/24
+    - src 10.4.86.0/24
+
 azure_src:
   description: source IP is WiseTech (internal or external network)
   tests:

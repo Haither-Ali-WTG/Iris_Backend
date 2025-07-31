@@ -16,3 +16,10 @@ secure_cookie:
   order: 60
   actions:
     - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
+
+restrict_iris_stats_url:
+  description: |-
+    Allow iris stats url only from jumphost src
+  order: 6
+  actions:
+    - http-request deny if !jumphost_src iris_stats_urls
