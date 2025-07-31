@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250731.1
-  # Thu Jul 31 02:01:58 UTC 2025 -- Thu Jul 31 12:01:58 AEST 2025
+  # Dante Build Artifact 20250731.2
+  # Thu Jul 31 03:21:20 UTC 2025 -- Thu Jul 31 13:21:20 AEST 2025
   #
-  # Merge pull request 38057 from dante_artifact_upgrade into master
-  # bb7ebbf980a04a2150f7560aa17866cbe875cb91
-  dante_build_id: '1423783'
+  # Merge pull request 38069 from dante_artifact_upgrade into master
+  # 8e4f111c7724c0f201f47c69132d08ec0a6a52c1
+  dante_build_id: '1423861'
 
-  # virgil 20250731.2
-  # Thu Jul 31 01:29:06 UTC 2025 -- Thu Jul 31 11:29:06 AEST 2025
+  # virgil 20250731.4
+  # Thu Jul 31 02:48:00 UTC 2025 -- Thu Jul 31 12:48:00 AEST 2025
   #
-  # Merged PR 38053: Remove decommissioned US2 media agents
-  # f7a0528a723814b972ffa7c6515e1c6b88010445
-  virgil_build_id: '1423746'
+  # Merged PR 38068: docs: create a virgil class diagram
+  # 06b378ae669752c74e3249b4aa8de594a4e79432
+  virgil_build_id: '1423829'
 
   # sqlbilling 20250729.7
   # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
