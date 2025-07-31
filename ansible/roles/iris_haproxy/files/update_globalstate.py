@@ -26,32 +26,49 @@ class StateFileUpdater: # pylint: disable=too-few-public-methods
         Parse the haproxy config.
         Concatenate the backend name and server name as the key, value is [server port, check port].
         sample:
-            backend test_com
+            backend test1_com
             server srv1 10.0.0.1:443 check
             server srv2 10.0.0.2:443 check port 8080
             server srv3 10.0.0.3:443 weight 8 check port 8080
             server srv4 10.0.0.4:443 check port 8080 send-proxy
+            backend test2_com
+            default-server check inter 10s port 5000
+            server srv1 10.0.0.1:443 check
+            server srv2 10.0.0.2:443 check port 8080
         """
-        check_port_pattern = r".*check\s+port\s+(\d+)"
+        # This pattern is to match 'check' and 'port' with possible parameters in between
+        # Sample: 
+        # - check port 5000
+        # - check inter 10s port 5000
+        # - check rise 2 fall 3 port 5000
+        # - agent-check agent-port 8090 check port 5000
+        check_port_pattern = r"check(?:\s+\S+)*\s+port\s+(\d+)"
 
         with open(self.config_file, 'r', encoding='utf-8') as file:
             current_backend = None
+            default_check_port = "0"
 
             for line in file:
                 line = line.strip()
 
                 if line.startswith("backend "):
                     current_backend = line.split(" ")[1]  # Extract the backend name
+                    default_check_port = "0"  # Reset default check port for new backend
+                elif line.startswith("default-server "):
+                    check_port_match = re.search(check_port_pattern, line)
+                    if check_port_match:
+                        default_check_port = str(check_port_match.group(1))
                 elif line.startswith("server "):
                     server_name = line.split(" ")[1]  # Extract the server name
                     _, server_port = line.split(" ")[2].split(":")  # Get the port
 
                     key = f"{current_backend}/{server_name}"
-                    match_result = re.match(check_port_pattern, line)
-                    if match_result:
-                        self.config_info[key] = [str(server_port), str(match_result.group(1))]
+                    # Look for 'check port' specifically in server line
+                    check_port_match = re.search(check_port_pattern, line)
+                    if check_port_match:
+                        self.config_info[key] = [str(server_port), str(check_port_match.group(1))]
                     else:
-                        self.config_info[key] = [str(server_port), "0"]
+                        self.config_info[key] = [str(server_port), default_check_port]
 
 
     def _check_and_generate_state(self, new_state: str) -> None:
