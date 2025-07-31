@@ -37,7 +37,7 @@ class StateFileUpdater: # pylint: disable=too-few-public-methods
             server srv2 10.0.0.2:443 check port 8080
         """
         # This pattern is to match 'check' and 'port' with possible parameters in between
-        # Sample: 
+        # Sample:
         # - check port 5000
         # - check inter 10s port 5000
         # - check rise 2 fall 3 port 5000
