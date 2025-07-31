@@ -20,3 +20,10 @@ de1s3_3_primary_backend_selection:
   order: 11
   actions:
     - use_backend de1s3-3-primary if de1s3-3_wtg_ws_and_subdomains
+
+restrict_iris_stats_url:
+  description: |-
+    Allow iris stats url only from jumphost src
+  order: 6
+  actions:
+    - http-request deny if !jumphost_src iris_stats_urls

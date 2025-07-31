@@ -8,3 +8,24 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wtg\.zone$
+
+iris_stats_urls:
+  description: "au2 iris stats urls"
+  tests:
+    - hdr(host),field(1,:) -i au2corprdg.wtg.zone
+    - hdr(host),field(1,:) -i au2prodelasticbunker1.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1corpservices1.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1prodcdnservices31.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1prodcwservices26.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1prodidp.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1prodservices.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1sqltcp9.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1tcp.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1testcwservices27.wtg.zone
+    - hdr(host),field(1,:) -i au2prodinternal1corpservices35.wtg.zone
+    - hdr(host),field(1,:) -i au2prodinternal1services30.wtg.zone
+    - hdr(host),field(1,:) -i au2prodinternaltcp.wtg.zone
+    - hdr(host),field(1,:) -i au2sandinternal1.wtg.zone
+    - hdr(host),field(1,:) -i au2sandinternal2testservices0.wtg.zone
+    - hdr(host),field(1,:) -i au2sandinternalrdg.wtg.zone
+    - hdr(host),field(1,:) -i au2sandinternaltcp.wtg.zone

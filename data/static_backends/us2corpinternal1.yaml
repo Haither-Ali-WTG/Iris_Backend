@@ -429,3 +429,153 @@ us2vtv01.wtg.zone:
       ip: 10.4.82.40
       port: 443
       settings: check ssl verify none
+
+us2corpinternal1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00541
+      ip: 10.4.83.24
+      port: 2036
+    - name: us2lbl00542
+      ip: 10.4.83.25
+      port: 2036
+    - name: us2lbl00920
+      ip: 10.4.83.26
+      port: 2036
+
+us2corptcp1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00541
+      ip: 10.4.83.24
+      port: 8182
+    - name: us2lbl00542
+      ip: 10.4.83.25
+      port: 8182
+    - name: us2lbl00920
+      ip: 10.4.83.26
+      port: 8182
+
+us2prodelasticbunker1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00477
+      ip: 10.16.245.111
+      port: 2049
+    - name: us2lbl00478
+      ip: 10.16.245.112
+      port: 2049
+
+us2prodfrontend1prodcdnservices31.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2057
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2057
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2057
+
+us2prodfrontend1prodcwservices26.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2051
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2051
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2051
+
+us2prodfrontend1prodtenantservices1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2061
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2061
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2061
+
+us2prodfrontend1sqltcp9.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2045
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2045
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2045
+
+us2prodfrontend1testcwservices27.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2053
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2053
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2053
+
+us2prodinternal1services30.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00541
+      ip: 10.4.83.24
+      port: 2341
+    - name: us2lbl00542
+      ip: 10.4.83.25
+      port: 2341
+    - name: us2lbl00920
+      ip: 10.4.83.26
+      port: 2341
