@@ -5,9 +5,9 @@ staff_src:
     # IAH
     - src 110.232.245.191
     # SLO
-    - src 124.190.134.208
+    - src 121.218.224.61
     # DJI
-    - src 220.240.113.28
+    - src 119.18.1.206
 
 aryaka_src:
   description: these IPs are aryaka IPs for customers who connect via aryaka
