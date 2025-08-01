@@ -11,18 +11,6 @@ cw-prod-password-rdg-http:
   balance: random
   fullconn: 56000
   servers:
-    - name: de1wp-srdg-5.wisecloud.zone
-      ip: 10.3.68.15
-      port: 80
-    - name: de1wp-srdg-6.wisecloud.zone
-      ip: 10.3.68.16
-      port: 80
-    - name: de1wp-srdg-7.wisecloud.zone
-      ip: 10.3.68.17
-      port: 80
-    - name: de1wp-srdg-8.wisecloud.zone
-      ip: 10.3.68.18
-      port: 80
     - name: de1wp-srdg-9.wisecloud.zone
       ip: 10.3.68.19
       port: 80
@@ -34,12 +22,6 @@ cw-prod-password-rdg-http:
       port: 80
     - name: de1wp-srdg-12.wisecloud.zone
       ip: 10.3.68.22
-      port: 80
-    - name: de1wp-srdg-013.wisecloud.zone
-      ip: 10.3.68.29
-      port: 80
-    - name: de1wp-srdg-014.wisecloud.zone
-      ip: 10.3.68.30
       port: 80
     - name: de1wp-srdg-409.wisecloud.zone
       ip: 10.3.68.35
@@ -72,12 +54,6 @@ cw-prod-password-rdg-rpc:
   balance: source
   fullconn: 56000
   servers:
-    - name: de1wp-srdg-015.wisecloud.zone
-      ip: 10.3.68.31
-      port: 80
-    - name: de1wp-srdg-016.wisecloud.zone
-      ip: 10.3.68.32
-      port: 80
     - name: de1wp-srdg-415.wisecloud.zone
       ip: 10.3.68.41
       port: 80
