@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250731.2
-  # Thu Jul 31 03:21:20 UTC 2025 -- Thu Jul 31 13:21:20 AEST 2025
+  # Dante Build Artifact 20250801.2
+  # Fri Aug  1 09:21:19 UTC 2025 -- Fri Aug  1 19:21:19 AEST 2025
   #
-  # Merge pull request 38069 from dante_artifact_upgrade into master
-  # 8e4f111c7724c0f201f47c69132d08ec0a6a52c1
-  dante_build_id: '1423861'
+  # Merge pull request 38123 from dante_artifact_upgrade into master
+  # 02605538ba7adbd2fb89a96f7ab75fe605006b81
+  dante_build_id: '1425031'
 
-  # virgil 20250731.4
-  # Thu Jul 31 02:48:00 UTC 2025 -- Thu Jul 31 12:48:00 AEST 2025
+  # virgil 20250801.5
+  # Fri Aug  1 08:40:06 UTC 2025 -- Fri Aug  1 18:40:06 AEST 2025
   #
-  # Merged PR 38068: docs: create a virgil class diagram
-  # 06b378ae669752c74e3249b4aa8de594a4e79432
-  virgil_build_id: '1423829'
+  # Merged PR 38122: config: (CS01922957) change to mispelled emission as per topic name
+  # 2729baccd35b948b0ccfb15a253facf2b0ff4687
+  virgil_build_id: '1425001'
 
   # sqlbilling 20250729.7
   # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
