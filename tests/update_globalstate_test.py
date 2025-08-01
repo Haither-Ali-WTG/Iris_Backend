@@ -14,6 +14,9 @@ class TestUpdateStateFile(TestCase):
             "changed2_testrig_sand_wtg_zone-glow 4 au2sp-tweb-port-change3",
             "changed2_testrig_sand_wtg_zone-glow 5 au2sp-tweb-port-change4",
             "changed2_testrig_sand_wtg_zone-glow 6 au2sp-tweb-port-change5",
+            "test4_com 1 changed_srv1",
+            "test4_com 2 changed_srv2",
+            "test4_com 3 changed_srv3",
             ]
 
     def test(self):
