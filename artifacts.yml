@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250801.2
-  # Fri Aug  1 09:21:19 UTC 2025 -- Fri Aug  1 19:21:19 AEST 2025
+  # Dante Build Artifact 20250802.1
+  # Sat Aug  2 03:20:58 UTC 2025 -- Sat Aug  2 13:20:58 AEST 2025
   #
-  # Merge pull request 38123 from dante_artifact_upgrade into master
-  # 02605538ba7adbd2fb89a96f7ab75fe605006b81
-  dante_build_id: '1425031'
+  # Merge pull request 38136 from dante_artifact_upgrade into master
+  # 8ab00b26c51e9cc7e698bc630c3364040925077e
+  dante_build_id: '1425639'
 
-  # virgil 20250801.5
-  # Fri Aug  1 08:40:06 UTC 2025 -- Fri Aug  1 18:40:06 AEST 2025
+  # virgil 20250802.2
+  # Sat Aug  2 02:40:50 UTC 2025 -- Sat Aug  2 12:40:50 AEST 2025
   #
-  # Merged PR 38122: config: (CS01922957) change to mispelled emission as per topic name
-  # 2729baccd35b948b0ccfb15a253facf2b0ff4687
-  virgil_build_id: '1425001'
+  # Merged PR 38087: WI00925827 config au2wp-svir-010/34 from LACP to trunk only
+  # 8eb5a78adc1eeba30fe19da6eb9300eefae1180c
+  virgil_build_id: '1425612'
 
-  # sqlbilling 20250729.7
-  # Tue Jul 29 12:58:42 UTC 2025 -- Tue Jul 29 22:58:42 AEST 2025
+  # sqlbilling 20250801.1
+  # Fri Aug  1 13:04:42 UTC 2025 -- Fri Aug  1 23:04:42 AEST 2025
   #
-  # Merged PR 38007: SQLBillingADDCS02031242.yml
-  # 12ffa96930855ab93b1658f504b2bedc81bc433c
-  sqlbilling_build_id: '1422380'
+  # Merged PR 37908: Update readonly - CS02025872
+  # 3afd5ee3e104393c7dc34fc11556394b24e4c22c
+  sqlbilling_build_id: '1425186'
