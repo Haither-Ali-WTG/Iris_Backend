@@ -13,7 +13,9 @@ wtg_idp_backend:
   order: 80
   actions:
     - use_backend staging-us.identity.wisetechglobal.com-login if staging_identity_wisetechglobal_com wtg_idp_login_path
-    - use_backend staging-us.identity.wisetechglobal.com-account if staging_identity_wisetechglobal_com wtg_idp_account_path
+    - >- 
+      use_backend staging-us.identity.wisetechglobal.com-account if 
+      staging_identity_wisetechglobal_com wtg_idp_account_path
 
 cww-nonprd_backend:
   description: |-
