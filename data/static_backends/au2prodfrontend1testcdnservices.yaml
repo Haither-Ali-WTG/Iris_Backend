@@ -1,6 +1,6 @@
 ---
 addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1prodtestservices,au2prodfrontend1prodcdnservices31]
   cookie:
     name: AVS
   http_health_check:
@@ -14,17 +14,46 @@ addressvalidation-test.wisegrid.net:
       ip: 10.2.69.20
       port: 80
 
-addressvalidation.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+cww-nonprd.wisegrid.net_catchall:
+  clustered_instances: [au2prodfrontend1prodtestservices]
+  full_override: |
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server AU2WT-SBLZ-001 10.2.73.11:80
+    server AU2WT-SBLZ-404 10.2.73.24:80
+
+app-test-au.borderwise.com:
+  clustered_instances: [au2prodfrontend1prodtestservices]
   cookie:
-    name: AVS
+    name: APPTB
   http_health_check:
     enabled: true
-    http_path: /wtg/status
+    http_path: /api/wtg/ready
   servers:
-    - name: AU2WP-SIIS-401A
-      ip: 10.2.69.12
-      port: 80
-    - name: AU2WP-SIIS-401B
-      ip: 10.2.69.13
-      port: 80
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 40035
+
+staging-au.identity.wisetechglobal.com_login:
+  clustered_instances: [au2prodfrontend1prodtestservices]
+  full_override: |
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server au2wt-sidi-501a 10.2.139.11:3001 check ssl
+    server au2wt-sidi-501b 10.2.139.12:3001 check ssl
+
+staging-au.identity.wisetechglobal.com_account:
+  clustered_instances: [au2prodfrontend1prodtestservices]
+  full_override: |
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server au2wt-sidi-501a 10.2.139.11:3003 check ssl
+    server au2wt-sidi-501b 10.2.139.12:3003 check ssl
