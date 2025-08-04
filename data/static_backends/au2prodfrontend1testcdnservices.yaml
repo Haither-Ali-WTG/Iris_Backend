@@ -14,7 +14,7 @@ addressvalidation-test.wisegrid.net:
       ip: 10.2.69.20
       port: 80
 
-cww-nonprd.wisegrid.net-catchall:
+au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodtestservices]
   full_override: |
     backend cww-nonprd.wisegrid.net-catchall

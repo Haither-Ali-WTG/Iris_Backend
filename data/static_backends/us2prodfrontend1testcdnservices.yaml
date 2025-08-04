@@ -1,5 +1,5 @@
 ---
-cww-nonprd.wisegrid.net-catchall:
+us.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1testcdnservices]
   full_override: |
     backend cww-nonprd.wisegrid.net-catchall
