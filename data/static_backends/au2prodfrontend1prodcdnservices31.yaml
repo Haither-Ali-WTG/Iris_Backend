@@ -14,7 +14,7 @@ addressvalidation.wisegrid.net:
       ip: 10.2.69.13
       port: 80
 
-cww-nonprd.wisegrid.net_catchall:
+cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     option httpchk HEAD /wtg/status
@@ -43,7 +43,7 @@ app-au.borderwise.com:
       ip: 10.2.67.112
       port: 50035
 
-au.identity.wisetechglobal.com_login:
+au.identity.wisetechglobal.com-login:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     option httpchk HEAD /wtg/ready
@@ -54,7 +54,7 @@ au.identity.wisetechglobal.com_login:
     server au2wp-sidi-501a 10.2.143.11:3001 check ssl
     server au2wp-sidi-501b 10.2.143.12:3001 check ssl
 
-au.identity.wisetechglobal.com_account:
+au.identity.wisetechglobal.com-account:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     option httpchk HEAD /wtg/ready

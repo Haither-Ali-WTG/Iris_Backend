@@ -1,5 +1,5 @@
 ---
-cww-nonprd.wisegrid.net_catchall:
+cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     option httpchk HEAD /wtg/status
@@ -21,7 +21,7 @@ app-test-us.borderwise.com:
       ip: 10.4.67.111
       port: 40035
 
-staging-us.identity.wisetechglobal.com_login:
+staging-us.identity.wisetechglobal.com-login:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     option httpchk HEAD /wtg/ready
@@ -32,7 +32,7 @@ staging-us.identity.wisetechglobal.com_login:
     server us2wt-sidi-501a 10.4.139.11:3001 check ssl
     server us2wt-sidi-501b 10.4.139.12:3001 check ssl
 
-staging-us.identity.wisetechglobal.com_account:
+staging-us.identity.wisetechglobal.com-account:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     option httpchk HEAD /wtg/ready
