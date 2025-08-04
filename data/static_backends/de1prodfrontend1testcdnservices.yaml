@@ -8,7 +8,7 @@ de.cww-nonprd.wisegrid.net-catchall:
     http-check expect status 200
     default-server agent-check agent-port 8098
     server DE1WT-SBLZ-001 10.3.73.11:80
-    server DE1WT-SBLZ-001 10.3.73.24:80
+    server DE1WT-SBLZ-404 10.3.73.24:80
 
 app-test-de.borderwise.com:
   clustered_instances: [de1prodfrontend1testcdnservices]
