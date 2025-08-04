@@ -1,19 +1,4 @@
 ---
-addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: AVS
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-  servers:
-    - name: AU2WT-SIIS-401A
-      ip: 10.2.69.19
-      port: 80
-    - name: AU2WT-SIIS-401B
-      ip: 10.2.69.20
-      port: 80
-
 addressvalidation.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
@@ -27,4 +12,98 @@ addressvalidation.wisegrid.net:
       port: 80
     - name: AU2WP-SIIS-401B
       ip: 10.2.69.13
+      port: 80
+
+cww-nonprd.wisegrid.net_catchall:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server AU2WP-SBLZ-001 10.2.72.11:80
+    server AU2WP-SBLZ-002 10.2.72.12:80
+    server AU2WP-SBLZ-003 10.2.72.13:80
+    server AU2WP-SBLZ-404 10.2.72.21:80
+    server AU2WP-SBLZ-405 10.2.72.23:80
+    server AU2WP-SBLZ-406 10.2.72.24:80
+
+app-au.borderwise.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: APPB
+  http_health_check:
+    enabled: true
+    http_path: /api/wtg/ready
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 50035
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 50035
+
+au.identity.wisetechglobal.com_login:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server au2wp-sidi-501a 10.2.143.11:3001 check ssl
+    server au2wp-sidi-501b 10.2.143.12:3001 check ssl
+
+au.identity.wisetechglobal.com_account:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server au2wp-sidi-501a 10.2.143.11:3003 check ssl
+    server au2wp-sidi-501b 10.2.143.12:3003 check ssl
+
+filedrop.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: FDRP
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: LiquidFiles-AU2
+      ip: 10.2.67.11
+      port: 443
+
+au2wcatoken.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCATFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2wp-swfe-401
+      ip: 10.2.68.10
+      port: 80
+    - name: au2wp-swfe-402
+      ip: 10.2.69.50
+      port: 80
+
+sydwca.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCAPFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2wp-swfe-403
+      ip: 10.2.69.51
+      port: 80
+    - name: au2wp-swfe-404
+      ip: 10.2.69.52
       port: 80
