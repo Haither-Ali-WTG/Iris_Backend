@@ -1,2 +1,30 @@
 ---
-{}
+wtg_idp_redirect:
+  description: |-
+    Redirect requests to the Wisetech IDP to the /login path
+    see https://dev.azure.com/WTGEngineeringOps/EngineeringOps-wiki/_wiki/wikis/EngineeringOps-wiki.wiki/53/idp-design
+  order: 79
+  actions:
+    - redirect location /login if identity_wisetechglobal_com !wtg_idp_login_path !wtg_idp_account_path
+
+wtg_idp_backend:
+  description: |-
+    Direct requests for WTG IDP hostnames to the IDP backend
+  order: 80
+  actions:
+    - use_backend us.identity.wisetechglobal.com-login if identity_wisetechglobal_com wtg_idp_login_path
+    - use_backend us.identity.wisetechglobal.com-account if identity_wisetechglobal_com wtg_idp_account_path
+
+cww_backend:
+  description: |-
+    Direct requests for CargoWise Web to the CWW catchall backend
+  order: 80
+  actions:
+    - use_backend cww-nonprd.wisegrid.net-catchall if star_cww_wisegrid_net
+
+app_borderwise_backend:
+  description: |-
+    Direct regional requests for app.borderwise.com to the app borderwise backend
+  order: 80
+  actions:
+    - use_backend app-us.borderwise.com if app_borderwise_com
