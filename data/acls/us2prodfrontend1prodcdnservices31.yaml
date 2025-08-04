@@ -27,7 +27,7 @@ wtg_idp_account_path:
     - path -i /account
     - path_beg -i /account/
 
-app-test_borderwise_com:
+app_borderwise_com:
   description: |-
     hostnames for staging for Borderwise App 
   tests:
