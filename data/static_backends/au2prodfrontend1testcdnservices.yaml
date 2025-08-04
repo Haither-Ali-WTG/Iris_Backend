@@ -17,6 +17,7 @@ addressvalidation-test.wisegrid.net:
 cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodtestservices]
   full_override: |
+    backend cww-nonprd.wisegrid.net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
@@ -39,6 +40,7 @@ app-test-au.borderwise.com:
 staging-au.identity.wisetechglobal.com-login:
   clustered_instances: [au2prodfrontend1prodtestservices]
   full_override: |
+    backend staging-au.identity.wisetechglobal.com-login
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
@@ -50,6 +52,7 @@ staging-au.identity.wisetechglobal.com-login:
 staging-au.identity.wisetechglobal.com-account:
   clustered_instances: [au2prodfrontend1prodtestservices]
   full_override: |
+    backend staging-au.identity.wisetechglobal.com-account
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2

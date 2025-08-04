@@ -1,7 +1,8 @@
 ---
 cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [de1prodfrontend1testcdnservices]
+  clustered_instances: [us2prodfrontend1testcdnservices]
   full_override: |
+    backend cww-nonprd.wisegrid.net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
@@ -10,7 +11,7 @@ cww-nonprd.wisegrid.net-catchall:
     server US2WT-SBLZ-404 10.4.73.24:80
 
 app-test-us.borderwise.com:
-  clustered_instances: [de1prodfrontend1testcdnservices]
+  clustered_instances: [us2prodfrontend1testcdnservices]
   cookie:
     name: APPTB
   http_health_check:
@@ -22,8 +23,9 @@ app-test-us.borderwise.com:
       port: 40035
 
 staging-us.identity.wisetechglobal.com-login:
-  clustered_instances: [de1prodfrontend1testcdnservices]
+  clustered_instances: [us2prodfrontend1testcdnservices]
   full_override: |
+    backend staging-us.identity.wisetechglobal.com-login
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
@@ -33,8 +35,9 @@ staging-us.identity.wisetechglobal.com-login:
     server us2wt-sidi-501b 10.4.139.12:3001 check ssl
 
 staging-us.identity.wisetechglobal.com-account:
-  clustered_instances: [de1prodfrontend1testcdnservices]
+  clustered_instances: [us2prodfrontend1testcdnservices]
   full_override: |
+    backend staging-us.identity.wisetechglobal.com-account
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
