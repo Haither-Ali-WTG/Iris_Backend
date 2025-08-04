@@ -16,7 +16,7 @@ cww-nonprd.wisegrid.net_catchall:
 app-de.borderwise.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   cookie:
-    name: APPTB
+    name: APPB
   http_health_check:
     enabled: true
     http_path: /api/wtg/ready
@@ -62,21 +62,6 @@ filedropeu.wisetechglobal.com:
     - name: LiquidFiles-DE1
       ip: 10.3.69.11
       port: 443
-
-app-de.borderwise.com:
-  clustered_instances: [de1prodfrontend1prodcdnservices31]
-  cookie:
-    name: APPTB
-  http_health_check:
-    enabled: true
-    http_path: /api/wtg/ready
-  servers:
-    - name: DE1WP-SDKR-1
-      ip: 10.3.67.111
-      port: 50035
-    - name: DE1WP-SDKR-2
-      ip: 10.3.67.112
-      port: 50035
 
 de1wcatoken.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
