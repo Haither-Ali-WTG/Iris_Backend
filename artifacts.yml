@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250804.6
-  # Mon Aug  4 01:56:24 UTC 2025 -- Mon Aug  4 11:56:24 AEST 2025
+  # Dante Build Artifact 20250804.7
+  # Mon Aug  4 06:25:22 UTC 2025 -- Mon Aug  4 16:25:22 AEST 2025
   #
-  # Merged PR 38164: Upgrade az cli for new agent
-  # 95c23f1018843007ee82828b993a99e777857bb2
-  dante_build_id: '1427206'
+  # Merge pull request 38171 from automatic_dhcp_server_image_upgrade into master
+  # bde8bc84e3f1b09479c51a368064d73ac4e610f6
+  dante_build_id: '1427400'
 
   # virgil 20250802.2
   # Sat Aug  2 02:40:50 UTC 2025 -- Sat Aug  2 12:40:50 AEST 2025
