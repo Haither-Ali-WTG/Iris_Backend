@@ -17,7 +17,7 @@ addressvalidation-us2.wisegrid.net:
 us.cww.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
-    backend us.cww.wisegrid.net-catchall
+    backend us.cww_wisegrid_net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
@@ -47,7 +47,7 @@ app-us.borderwise.com:
 us.identity.wisetechglobal.com-login:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
-    backend us.identity.wisetechglobal.com-login
+    backend us_identity_wisetechglobal_com-login
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
@@ -59,7 +59,7 @@ us.identity.wisetechglobal.com-login:
 us.identity.wisetechglobal.com-account:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
-    backend us.identity.wisetechglobal.com-account
+    backend us_identity_wisetechglobal_com-account
     option httpchk HEAD /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2

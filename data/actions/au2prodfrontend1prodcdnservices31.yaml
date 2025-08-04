@@ -12,19 +12,19 @@ wtg_idp_backend:
     Direct requests for WTG IDP hostnames to the IDP backend
   order: 80
   actions:
-    - use_backend au.identity.wisetechglobal.com-login if identity_wisetechglobal_com wtg_idp_login_path
-    - use_backend au.identity.wisetechglobal.com-account if identity_wisetechglobal_com wtg_idp_account_path
+    - use_backend au_identity_wisetechglobal_com-login if identity_wisetechglobal_com wtg_idp_login_path
+    - use_backend au_identity_wisetechglobal_com-account if identity_wisetechglobal_com wtg_idp_account_path
 
 cww_backend:
   description: |-
     Direct requests for CargoWise Web to the CWW catchall backend
   order: 80
   actions:
-    - use_backend au.cww.wisegrid.net-catchall if star_cww_wisegrid_net
+    - use_backend au_cww_wisegrid_net-catchall if star_cww_wisegrid_net
 
 app_borderwise_backend:
   description: |-
     Direct regional requests for app.borderwise.com to the app borderwise backend
   order: 80
   actions:
-    - use_backend app-au.borderwise.com if app_borderwise_com
+    - use_backend app-au_borderwise_com if app_borderwise_com
