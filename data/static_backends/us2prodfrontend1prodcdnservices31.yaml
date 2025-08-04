@@ -14,7 +14,7 @@ addressvalidation-us2.wisegrid.net:
       ip: 10.4.66.28
       port: 80
 
-cww-nonprd.wisegrid.net-catchall:
+cww.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     option httpchk HEAD /wtg/status

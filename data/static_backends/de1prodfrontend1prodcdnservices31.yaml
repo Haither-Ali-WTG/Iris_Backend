@@ -1,5 +1,5 @@
 ---
-cww-nonprd.wisegrid.net-catchall:
+de.cww.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     option httpchk HEAD /wtg/status

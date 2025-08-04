@@ -20,7 +20,7 @@ cww_backend:
     Direct requests for CargoWise Web to the CWW catchall backend
   order: 80
   actions:
-    - use_backend cww.wisegrid.net-catchall if star_cww_wisegrid_net
+    - use_backend de.cww.wisegrid.net-catchall if star_cww_wisegrid_net
 
 app_borderwise_backend:
   description: |-
