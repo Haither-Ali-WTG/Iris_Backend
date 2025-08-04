@@ -408,3 +408,22 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2prodfrontend1testcdnservices:
+      # us2-prod-frontend-1-test-cdn-services
+      dc: US2
+      frontend:
+        maxconn: 20000
+        ports:
+          ssl: [2029]
+      stats:
+        ports:
+          web: 2062
+          socket: 2063
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023
