@@ -42,4 +42,3 @@ staging-us.identity.wisetechglobal.com_account:
     cookie ISA insert indirect nocache dynamic
     server us2wt-sidi-501a 10.4.139.11:3003 check ssl
     server us2wt-sidi-501b 10.4.139.12:3003 check ssl
-
