@@ -17,7 +17,7 @@ addressvalidation.wisegrid.net:
 au.cww.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
-    backend cww.wisegrid.net-catchall
+    backend au.cww.wisegrid.net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200

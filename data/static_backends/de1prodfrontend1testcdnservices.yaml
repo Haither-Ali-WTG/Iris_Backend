@@ -2,7 +2,7 @@
 de.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
-    backend cww-nonprd.wisegrid.net-catchall
+    backend de.cww-nonprd.wisegrid.net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200

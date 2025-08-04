@@ -17,7 +17,7 @@ addressvalidation-test.wisegrid.net:
 au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodtestservices]
   full_override: |
-    backend cww-nonprd.wisegrid.net-catchall
+    backend au.cww-nonprd.wisegrid.net-catchall
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
