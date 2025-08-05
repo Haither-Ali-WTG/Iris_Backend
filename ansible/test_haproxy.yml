@@ -8,7 +8,7 @@
 - name: Augment the inventory
   import_playbook: augment_inventory.yaml
 
-- name: Create hypervisor group
+- name: Create hypervisor group and config directory
   hosts: localhost
   gather_facts: no
   tasks:
@@ -18,6 +18,16 @@
         groups: hypervisor
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
         images_folder: "/mnt/storage"
+
+    - name: Create target directories
+      file:
+        dest: "{{ item }}"
+        state: directory
+        mode: u=rwx,go=rx
+      loop:
+        - "../generated_configs"
+        - "../generated_configs/{{ target_dc }}"
+      become: yes
 
 - name: Configure hypervisor
   hosts: hypervisor
@@ -77,6 +87,8 @@
 
 - name: Deploy haproxy on simulated machines
   import_playbook: deploy_haproxy.yml
+  vars:
+    enable_dump_configs: true
 
 - name: Deploy tests on simulated machines
   import_playbook: deploy_tests.yml

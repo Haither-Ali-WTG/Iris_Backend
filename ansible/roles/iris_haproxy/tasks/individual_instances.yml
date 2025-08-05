@@ -161,6 +161,18 @@
   become: yes
   register: haproxy_config
 
+- name: Fetch the dumped config
+  fetch:
+    src: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
+    dest: "../generated_configs/{{ target_dc }}/{{ inventory_hostname }}.cfg"
+    flat: true
+    fail_on_missing: false
+  become: yes
+  failed_when: false
+  when:
+    - simulation
+    - enable_dump_configs | default(false)
+
 - name: Validate the haproxy test configuration file  # noqa no-handler
   include_role:
     name: container_runner
