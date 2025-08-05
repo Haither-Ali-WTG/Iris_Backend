@@ -1,6 +1,6 @@
 ---
 addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodtestservices, au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1prodcdnservices31]
   cookie:
     name: AVS
   http_health_check:
@@ -15,7 +15,7 @@ addressvalidation-test.wisegrid.net:
       port: 80
 
 au.cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [au2prodfrontend1prodtestservices]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend au_cww-nonprd_wisegrid_net-catchall
     option httpchk HEAD /wtg/status
@@ -26,7 +26,7 @@ au.cww-nonprd.wisegrid.net-catchall:
     server AU2WT-SBLZ-404 10.2.73.24:80
 
 app-test-au.borderwise.com:
-  clustered_instances: [au2prodfrontend1prodtestservices]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: APPTB
   http_health_check:
@@ -38,7 +38,7 @@ app-test-au.borderwise.com:
       port: 40035
 
 staging-au.identity.wisetechglobal.com-login:
-  clustered_instances: [au2prodfrontend1prodtestservices]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-login
     option httpchk HEAD /wtg/ready
@@ -50,7 +50,7 @@ staging-au.identity.wisetechglobal.com-login:
     server au2wt-sidi-501b 10.2.139.12:3001 check ssl
 
 staging-au.identity.wisetechglobal.com-account:
-  clustered_instances: [au2prodfrontend1prodtestservices]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-account
     option httpchk HEAD /wtg/ready
