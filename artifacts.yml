@@ -7,12 +7,12 @@ variables:
   # bde8bc84e3f1b09479c51a368064d73ac4e610f6
   dante_build_id: '1427400'
 
-  # virgil 20250802.2
-  # Sat Aug  2 02:40:50 UTC 2025 -- Sat Aug  2 12:40:50 AEST 2025
+  # virgil 20250805.2
+  # Tue Aug  5 00:41:19 UTC 2025 -- Tue Aug  5 10:41:19 AEST 2025
   #
-  # Merged PR 38087: WI00925827 config au2wp-svir-010/34 from LACP to trunk only
-  # 8eb5a78adc1eeba30fe19da6eb9300eefae1180c
-  virgil_build_id: '1425612'
+  # Merge pull request 38192 from virgil_python_upgrade into master
+  # 1b91495be3993cbcda0d2a4af8105a5689bf30e5
+  virgil_build_id: '1428086'
 
   # sqlbilling 20250804.1
   # Sun Aug  3 23:21:52 UTC 2025 -- Mon Aug  4 09:21:52 AEST 2025
