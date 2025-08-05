@@ -7,16 +7,16 @@ variables:
   # e678a5f4ce7a36d823a2e5484b7a2b50781f8d7b
   dante_build_id: '1428398'
 
-  # virgil 20250805.5
-  # Tue Aug  5 04:40:31 UTC 2025 -- Tue Aug  5 14:40:31 AEST 2025
+  # virgil 20250806.1
+  # Tue Aug  5 21:19:55 UTC 2025 -- Wed Aug  6 07:19:55 AEST 2025
   #
-  # Merged PR 38219: Upgrade IRIS sandbox to Ubuntu24.04
-  # 6afa562a7650e31644dbda9ae00b13e60a44255d
-  virgil_build_id: '1428313'
+  # Merged PR 38187: DE1 Added New ESXi nodes
+  # 46aa0a0af0bd0ef35d6ac684151b5559014c1053
+  virgil_build_id: '1428928'
 
-  # sqlbilling 20250804.1
-  # Sun Aug  3 23:21:52 UTC 2025 -- Mon Aug  4 09:21:52 AEST 2025
+  # sqlbilling 20250805.2
+  # Tue Aug  5 06:25:33 UTC 2025 -- Tue Aug  5 16:25:33 AEST 2025
   #
-  # Merged PR 38135: SQBilling Add AU2 IP/ Remove US2 IPs
-  # 6aa8fe8a107cd8a91261ddadaab9e09004b07ff1
-  sqlbilling_build_id: '1427057'
+  # Merged PR 38190: SQLBillingAddCS02011575.yml
+  # cbe4ce2413000024c567f3c773a3401144362bc6
+  sqlbilling_build_id: '1428429'
