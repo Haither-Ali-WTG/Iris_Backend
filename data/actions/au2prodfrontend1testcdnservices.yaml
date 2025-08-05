@@ -30,7 +30,7 @@ cww_wisetechglobal_com_backend:
   order: 80
   actions:
     - >-
-      use_backend au_cww_wisetechglobal_com-catchall if 
+      use_backend au_cww_wisetechglobal_com-catchall if
       {hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww\.wisetechglobal\.com$}
     - use_backend au_cww_wisetechglobal_com-catchall if {hdr(host),field(1,:) -i ediprod.cw.wisetechglobal.com}
 
