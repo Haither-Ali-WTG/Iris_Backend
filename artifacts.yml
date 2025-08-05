@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250805.1
-  # Tue Aug  5 01:21:16 UTC 2025 -- Tue Aug  5 11:21:16 AEST 2025
+  # Dante Build Artifact 20250805.2
+  # Tue Aug  5 05:10:08 UTC 2025 -- Tue Aug  5 15:10:08 AEST 2025
   #
-  # Merge pull request 38197 from dante_artifact_upgrade into master
-  # cf7b91c5aaf38d574adaf2664c934a31e424fcdd
-  dante_build_id: '1428123'
+  # Merged PR 37721: Updated main.yml
+  # 37061693f59ddb03ee321d38ec90661008180923
+  dante_build_id: '1428343'
 
-  # virgil 20250805.2
-  # Tue Aug  5 00:41:19 UTC 2025 -- Tue Aug  5 10:41:19 AEST 2025
+  # virgil 20250805.5
+  # Tue Aug  5 04:40:31 UTC 2025 -- Tue Aug  5 14:40:31 AEST 2025
   #
-  # Merge pull request 38192 from virgil_python_upgrade into master
-  # 1b91495be3993cbcda0d2a4af8105a5689bf30e5
-  virgil_build_id: '1428086'
+  # Merged PR 38219: Upgrade IRIS sandbox to Ubuntu24.04
+  # 6afa562a7650e31644dbda9ae00b13e60a44255d
+  virgil_build_id: '1428313'
 
   # sqlbilling 20250804.1
   # Sun Aug  3 23:21:52 UTC 2025 -- Mon Aug  4 09:21:52 AEST 2025
