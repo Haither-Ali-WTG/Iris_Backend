@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250805.2
-  # Tue Aug  5 05:10:08 UTC 2025 -- Tue Aug  5 15:10:08 AEST 2025
+  # Dante Build Artifact 20250805.3
+  # Tue Aug  5 06:01:24 UTC 2025 -- Tue Aug  5 16:01:24 AEST 2025
   #
-  # Merged PR 37721: Updated main.yml
-  # 37061693f59ddb03ee321d38ec90661008180923
-  dante_build_id: '1428343'
+  # Merge pull request 38220 from dante_artifact_upgrade into master
+  # e678a5f4ce7a36d823a2e5484b7a2b50781f8d7b
+  dante_build_id: '1428398'
 
   # virgil 20250805.5
   # Tue Aug  5 04:40:31 UTC 2025 -- Tue Aug  5 14:40:31 AEST 2025
