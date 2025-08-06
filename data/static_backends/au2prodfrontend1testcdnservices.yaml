@@ -1,0 +1,89 @@
+---
+addressvalidation-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: AVS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+au.cww-nonprd.wisegrid.net-catchall:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  full_override: |
+    backend au_cww-nonprd_wisegrid_net-catchall
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server AU2WT-SBLZ-001 10.2.73.11:80
+    server AU2WT-SBLZ-404 10.2.73.24:80
+
+app-test-au.borderwise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: APPTB
+  http_health_check:
+    enabled: true
+    http_path: /api/wtg/ready
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 40035
+
+staging-au.identity.wisetechglobal.com-login:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  full_override: |
+    backend staging-au_identity_wisetechglobal_com-login
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server au2wt-sidi-501a 10.2.139.11:3001 check ssl
+    server au2wt-sidi-501b 10.2.139.12:3001 check ssl
+
+staging-au.identity.wisetechglobal.com-account:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  full_override: |
+    backend staging-au_identity_wisetechglobal_com-account
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server au2wt-sidi-501a 10.2.139.11:3003 check ssl
+    server au2wt-sidi-501b 10.2.139.12:3003 check ssl
+
+au.cww.wisetechglobal.com-catchall:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  full_override: |
+    backend au_cww_wisetechglobal_com-catchall
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server AU2CO-SBLZ-410 10.2.71.30:80
+    server AU2CO-SBLZ-411 10.2.71.31:80
+    server AU2CO-SBLZ-412 10.2.71.32:80
+    server AU2CO-SBLZ-413 10.2.71.33:80
+    server AU2CO-SBLZ-414 10.2.71.34:80
+    server AU2CO-SBLZ-415 10.2.71.35:80
+    server AU2CO-SBLZ-416 10.2.71.36:80
+    server AU2CO-SBLZ-417 10.2.71.37:80
+    server AU2CO-SBLZ-418 10.2.71.38:80
+    server AU2CO-SBLZ-010 10.2.71.40:80
+    server AU2CO-SBLZ-011 10.2.71.41:80
+    server AU2CO-SBLZ-012 10.2.71.42:80
+    server AU2CO-SBLZ-013 10.2.71.43:80
+    server AU2CO-SBLZ-014 10.2.71.44:80
+    server AU2CO-SBLZ-015 10.2.71.45:80
+    server AU2CO-SBLZ-016 10.2.71.46:80
+    server AU2CO-SBLZ-017 10.2.71.47:80
+    server AU2CO-SBLZ-018 10.2.71.48:80

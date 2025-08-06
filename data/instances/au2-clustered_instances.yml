@@ -624,3 +624,22 @@ clustered_instances:
         ports:
           web: 2061
           socket: 2060
+
+    au2prodfrontend1testcdnservices:
+      # au2-prod-frontend-1-test-cdn-services
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          ssl: [2029]
+      stats:
+        ports:
+          web: 2062
+          socket: 2063
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+      cipher:
+        profiles:
+          - best_practice_2023

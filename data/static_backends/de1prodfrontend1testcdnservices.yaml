@@ -1,0 +1,47 @@
+---
+de.cww-nonprd.wisegrid.net-catchall:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  full_override: |
+    backend de_cww-nonprd_wisegrid_net-catchall
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server DE1WT-SBLZ-001 10.3.73.11:80
+    server DE1WT-SBLZ-404 10.3.73.24:80
+
+app-test-de.borderwise.com:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  cookie:
+    name: APPTB
+  http_health_check:
+    enabled: true
+    http_path: /api/wtg/ready
+  servers:
+    - name: DE1WP-SDKR-1
+      ip: 10.3.67.111
+      port: 40035
+
+staging-de.identity.wisetechglobal.com-login:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  full_override: |
+    backend staging-de_identity_wisetechglobal_com-login
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server de1wt-sidi-501a 10.3.139.11:3001 check ssl
+    server de1wt-sidi-501b 10.3.139.12:3001 check ssl
+
+staging-de.identity.wisetechglobal.com-account:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  full_override: |
+    backend staging-de_identity_wisetechglobal_com-account
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server de1wt-sidi-501a 10.3.139.11:3003 check ssl
+    server de1wt-sidi-501b 10.3.139.12:3003 check ssl

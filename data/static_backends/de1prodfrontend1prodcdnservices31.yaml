@@ -1,2 +1,97 @@
 ---
-{}
+de.cww.wisegrid.net-catchall:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  full_override: |
+    backend de_cww_wisegrid_net-catchall
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server DE1WP-SBLZ-001 10.3.72.11:80
+    server DE1WP-SBLZ-002 10.3.72.12:80
+    server DE1WP-SBLZ-003 10.3.72.13:80
+    server DE1WP-SBLZ-403 10.3.72.23:80
+    server DE1WP-SBLZ-404 10.3.72.24:80
+    server DE1WP-SBLZ-405 10.3.72.25:80
+
+app-de.borderwise.com:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: APPB
+  http_health_check:
+    enabled: true
+    http_path: /api/wtg/ready
+  servers:
+    - name: DE1WP-SDKR-1
+      ip: 10.3.67.111
+      port: 50035
+    - name: DE1WP-SDKR-2
+      ip: 10.3.67.112
+      port: 50035
+
+de.identity.wisetechglobal.com-login:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  full_override: |
+    backend de_identity_wisetechglobal_com-login
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server de1wp-sidi-501a 10.3.143.11:3001 check ssl
+    server de1wp-sidi-501b 10.3.143.12:3001 check ssl
+
+de.identity.wisetechglobal.com-account:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  full_override: |
+    backend de_identity_wisetechglobal_com-account
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server de1wp-sidi-501a 10.3.143.11:3003 check ssl
+    server de1wp-sidi-501b 10.3.143.12:3003 check ssl
+
+filedropeu.wisetechglobal.com:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: FDRP
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: LiquidFiles-DE1
+      ip: 10.3.69.11
+      port: 443
+
+de1wcatoken.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCATFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-swfe-401
+      ip: 10.3.69.19
+      port: 80
+    - name: de1wp-swfe-402
+      ip: 10.3.69.20
+      port: 80
+
+de1wca.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCAPFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-swfe-403
+      ip: 10.3.69.21
+      port: 80
+    - name: de1wp-swfe-405
+      ip: 10.3.69.23
+      port: 80

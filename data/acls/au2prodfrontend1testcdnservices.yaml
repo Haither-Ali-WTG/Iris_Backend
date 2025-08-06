@@ -1,15 +1,15 @@
 ---
-star_cww_wisegrid_net:
-  description: "*.cww.wisegrid.net blazor production services"
+star_cww-nonprd_wisegrid_net:
+  description: "*.cww-nonprd.wisegrid.net blazor non production services"
   tests:
-    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-nonprd\.wisegrid\.net$
 
-identity_wisetechglobal_com:
+staging_identity_wisetechglobal_com:
   description: |-
-    hostnames for production WTG IDP
+    hostnames for staging WTG IDP
   tests:
-    - hdr(host),field(1,:) -i identity.wisetechglobal.com
-    - hdr(host),field(1,:) -i au.identity.wisetechglobal.com
+    - hdr(host),field(1,:) -i staging.identity.wisetechglobal.com
+    - hdr(host),field(1,:) -i staging-au.identity.wisetechglobal.com
 
 wtg_idp_login_path:
   description: |-
@@ -27,9 +27,9 @@ wtg_idp_account_path:
     - path -i /account
     - path_beg -i /account/
 
-app_borderwise_com:
+app-test_borderwise_com:
   description: |-
-    hostnames for production Borderwise App
+    hostnames for staging Borderwise App
   tests:
-    - hdr(host),field(1,:) -i app.borderwise.com
-    - hdr(host),field(1,:) -i app-au.borderwise.com
+    - hdr(host),field(1,:) -i app-test.borderwise.com
+    - hdr(host),field(1,:) -i app-test-au.borderwise.com

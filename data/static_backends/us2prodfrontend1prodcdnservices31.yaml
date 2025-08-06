@@ -13,3 +13,100 @@ addressvalidation-us2.wisegrid.net:
     - name: US2WP-SIIS-401B
       ip: 10.4.66.28
       port: 80
+
+us.cww.wisegrid.net-catchall:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend us_cww_wisegrid_net-catchall
+    option httpchk HEAD /wtg/status
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server US2WP-SBLZ-001 10.4.72.11:80
+    server US2WP-SBLZ-002 10.4.72.12:80
+    server US2WP-SBLZ-003 10.4.72.13:80
+    server US2WP-SBLZ-406 10.4.72.21:80
+    server US2WP-SBLZ-407 10.4.72.22:80
+    server US2WP-SBLZ-408 10.4.72.23:80
+
+app-us.borderwise.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  cookie:
+    name: APPB
+  http_health_check:
+    enabled: true
+    http_path: /api/wtg/ready
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 50035
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 50035
+
+us.identity.wisetechglobal.com-login:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend us_identity_wisetechglobal_com-login
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server us2wp-sidi-501a 10.4.143.11:3001 check ssl
+    server us2wp-sidi-501b 10.4.143.12:3001 check ssl
+
+us.identity.wisetechglobal.com-account:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend us_identity_wisetechglobal_com-account
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server us2wp-sidi-501a 10.4.143.11:3003 check ssl
+    server us2wp-sidi-501b 10.4.143.12:3003 check ssl
+
+filedropus.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  cookie:
+    name: FDRP
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: LiquidFiles-US2
+      ip: 10.4.67.15
+      port: 443
+
+us2wcatoken.wisegrid.net:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCATFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: us2wp-swfe-401
+      ip: 10.4.68.10
+      port: 80
+    - name: us2wp-swfe-402
+      ip: 10.4.69.100
+      port: 80
+
+chiwca.wisegrid.net:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCAPFE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: us2wp-swfe-403
+      ip: 10.2.69.101
+      port: 80
+    - name: us2wp-swfe-404
+      ip: 10.2.69.102
+      port: 80
