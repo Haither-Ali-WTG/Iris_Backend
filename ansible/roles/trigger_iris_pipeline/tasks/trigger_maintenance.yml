@@ -1,5 +1,5 @@
 ---
-- name: Trigger IRIS deployment pipeline
+- name: Trigger IRIS maintenance pipeline
   vars:
     pipeline: "{{ maintenance_pipeline_info.pipeline }}"
     azure_devops_token: "{{ lookup('env', 'azure_devops_token') }}"
