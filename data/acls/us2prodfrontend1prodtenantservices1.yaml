@@ -98,3 +98,13 @@ www_cargosphere_co:
   description: "www.cargosphere.co"
   tests:
     - hdr(host) -i www.cargosphere.co
+
+remote_desktop_rdg_legacy_path:
+  description: "Regex representing legacy RD Gateway path"
+  tests:
+    - path_reg -i ^\/rpc(.*)$
+
+rdg_depotsystems_com:
+  description: "rdg.depotsystems.com"
+  tests:
+    - hdr(host) -i rdg.depotsystems.com

@@ -68,3 +68,57 @@ www.cargosphere.co:
       ip: 10.4.169.15
       port: 443
       settings: check ssl verify none
+
+rdg.depotsystems.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  cookie:
+    name: DEPOTRDG
+  fullconn: 4000
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2us9rdgw001
+      ip: 10.4.167.11
+      port: 443
+      settings: check ssl
+    - name: us2us9rdgw002
+      ip: 10.4.167.12
+      port: 443
+      settings: check ssl
+
+rdg.depotsystems.com-legacy:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  cookie:
+    name: DEPOTRAPP
+  fullconn: 4000
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: us2us9rdgw001
+      ip: 10.4.167.11
+      port: 80
+      settings: check
+    - name: us2us9rdgw002
+      ip: 10.4.167.12
+      port: 80
+      settings: check
+
+depwtgweb.depotsystem.local:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  cookie:
+    name: DEPWEBSVC
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: 200|301|302
+  servers:
+    - name: us2us9webw001
+      ip: 10.4.167.13
+      port: 80
+      settings: check
+    - name: us2us9webw002
+      ip: 10.4.167.14
+      port: 80
+      settings: check
