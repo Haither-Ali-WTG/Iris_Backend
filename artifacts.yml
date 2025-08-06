@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250806.1
-  # Tue Aug  5 22:02:05 UTC 2025 -- Wed Aug  6 08:02:05 AEST 2025
+  # Dante Build Artifact 20250806.2
+  # Wed Aug  6 04:41:10 UTC 2025 -- Wed Aug  6 14:41:10 AEST 2025
   #
-  # Merge pull request 38248 from dante_artifact_upgrade into master
-  # 54f04b2bb1903b0b54b7d111aeb046d6e40c54da
-  dante_build_id: '1428965'
+  # Merge pull request 38273 from dante_artifact_upgrade into master
+  # 2dbf9a564ea7a1cb76f5f691380bc83f07c62671
+  dante_build_id: '1429280'
 
-  # virgil 20250806.1
-  # Tue Aug  5 21:19:55 UTC 2025 -- Wed Aug  6 07:19:55 AEST 2025
+  # virgil 20250806.3
+  # Wed Aug  6 03:44:59 UTC 2025 -- Wed Aug  6 13:44:59 AEST 2025
   #
-  # Merged PR 38187: DE1 Added New ESXi nodes
-  # 46aa0a0af0bd0ef35d6ac684151b5559014c1053
-  virgil_build_id: '1428928'
+  # Merged PR 38270: config apex49,50 swp29 for au2wp-svir-051 rebuild from FE to BE
+  # fe5db98c13ba451d8e21192b2a7a16a73d20cbfc
+  virgil_build_id: '1429231'
 
   # sqlbilling 20250805.2
   # Tue Aug  5 06:25:33 UTC 2025 -- Tue Aug  5 16:25:33 AEST 2025
