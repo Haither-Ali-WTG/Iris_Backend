@@ -7,16 +7,16 @@ variables:
   # 37913cd3b0bb639e89735b6c72c0a84e2bab98af
   dante_build_id: '1429512'
 
-  # virgil 20250806.6
-  # Wed Aug  6 07:32:20 UTC 2025 -- Wed Aug  6 17:32:20 AEST 2025
+  # virgil 20250807.2
+  # Thu Aug  7 01:56:45 UTC 2025 -- Thu Aug  7 11:56:45 AEST 2025
   #
-  # Merged PR 38162: WI00925827 config au2wp-svir-011/33 from LACP to trunk only
-  # cfbd9d979b5fba6239ccc6003ca8685304f23ae4
-  virgil_build_id: '1429468'
+  # Merged PR 38328: update apex23/24 swp15/16 bond config
+  # 14e5c344a2fdecd170c9481ba22a3ac75db9a04c
+  virgil_build_id: '1430135'
 
-  # sqlbilling 20250805.2
-  # Tue Aug  5 06:25:33 UTC 2025 -- Tue Aug  5 16:25:33 AEST 2025
+  # sqlbilling 20250806.2
+  # Wed Aug  6 11:44:23 UTC 2025 -- Wed Aug  6 21:44:23 AEST 2025
   #
-  # Merged PR 38190: SQLBillingAddCS02011575.yml
-  # cbe4ce2413000024c567f3c773a3401144362bc6
-  sqlbilling_build_id: '1428429'
+  # Merged PR 38317: AU2 SQLBillingAdd CS02036727 CS02039909
+  # 18231402e5ced3fb6ca18be4e3138600e6ec59c1
+  sqlbilling_build_id: '1429645'
