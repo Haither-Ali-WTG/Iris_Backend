@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250806.3
-  # Wed Aug  6 08:21:12 UTC 2025 -- Wed Aug  6 18:21:12 AEST 2025
+  # Dante Build Artifact 20250807.1
+  # Thu Aug  7 03:21:20 UTC 2025 -- Thu Aug  7 13:21:20 AEST 2025
   #
-  # Merge pull request 38301 from dante_artifact_upgrade into master
-  # 37913cd3b0bb639e89735b6c72c0a84e2bab98af
-  dante_build_id: '1429512'
+  # Merge pull request 38336 from dante_artifact_upgrade into master
+  # 035469f001182250b08fde9029517ed50405f2f5
+  dante_build_id: '1430214'
 
-  # virgil 20250807.2
-  # Thu Aug  7 01:56:45 UTC 2025 -- Thu Aug  7 11:56:45 AEST 2025
+  # virgil 20250807.7
+  # Thu Aug  7 08:25:23 UTC 2025 -- Thu Aug  7 18:25:23 AEST 2025
   #
-  # Merged PR 38328: update apex23/24 swp15/16 bond config
-  # 14e5c344a2fdecd170c9481ba22a3ac75db9a04c
-  virgil_build_id: '1430135'
+  # Merged PR 38375: update DE1 switched apex47/48
+  # 346ebd097b9e582acf1f56115c3148bc52498ae6
+  virgil_build_id: '1430470'
 
   # sqlbilling 20250806.2
   # Wed Aug  6 11:44:23 UTC 2025 -- Wed Aug  6 21:44:23 AEST 2025
