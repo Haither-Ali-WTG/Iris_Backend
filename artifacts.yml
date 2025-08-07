@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250807.1
-  # Thu Aug  7 03:21:20 UTC 2025 -- Thu Aug  7 13:21:20 AEST 2025
+  # Dante Build Artifact 20250808.1
+  # Thu Aug  7 23:33:51 UTC 2025 -- Fri Aug  8 09:33:51 AEST 2025
   #
-  # Merge pull request 38336 from dante_artifact_upgrade into master
-  # 035469f001182250b08fde9029517ed50405f2f5
-  dante_build_id: '1430214'
+  # Merged PR 38348: Add switch repo to artifact and python upgrades
+  # 3e371121bf6044c03e71902bba7692859256a53b
+  dante_build_id: '1431012'
 
   # virgil 20250807.7
   # Thu Aug  7 08:25:23 UTC 2025 -- Thu Aug  7 18:25:23 AEST 2025
