@@ -16,11 +16,19 @@
     group: "{{ ansible_user }}"
     mode: u=rw,g=r,o=r
 
-- name: Install Telegraf
-  include_role:
-    name: wtg.monitoring_agents.telegraf
-  vars:
-    data_centre: "{{ target_dc }}"
+- name: Check if telegraf's main service unit file exists
+  find:
+    paths:
+      - /usr/lib/systemd/system
+      - /etc/systemd/system
+    patterns: 'telegraf.service'
+  register: telegraf_unit_file
+
+- name: Reload systemd daemon and restart telegraf if it exists
+  become: yes
+  systemd:
+    name: telegraf
+    state: restarted
+    daemon_reload: yes
   when:
-    - target_dc == "AU2"
-    - not simulation
+   - telegraf_unit_file.matched > 0
