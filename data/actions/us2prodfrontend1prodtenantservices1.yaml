@@ -31,3 +31,12 @@ cargosphere_backend_selection:
     - use_backend www_cargosphere_net       if www_cargosphere_net
     - use_backend test_cargosphere_us       if test_cargosphere_us
     - use_backend www_cargosphere_co        if www_cargosphere_co
+
+depotsystems_backend_selection:
+  description: |-
+    Depot Systems-specific backend selection.
+  order: 81
+  actions:
+    - use_backend rdg_depotsystems_com-legacy   if remote_desktop_rdg_legacy_path rdg_depotsystems_com
+    - use_backend rdg_depotsystems_com          if rdg_depotsystems_com
+    - use_backend depwtgweb_depotsystem_local   if !rdg_depotsystems_com star_depotsystems_com
