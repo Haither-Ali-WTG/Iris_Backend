@@ -29,6 +29,5 @@
   systemd:
     name: telegraf
     state: restarted
-    daemon_reload: yes
   when:
-   - telegraf_unit_file.matched > 0
+    - telegraf_unit_file.matched > 0
