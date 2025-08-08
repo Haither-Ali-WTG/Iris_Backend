@@ -108,3 +108,121 @@ rdg_depotsystems_com:
   description: "rdg.depotsystems.com"
   tests:
     - hdr(host) -i rdg.depotsystems.com
+
+us2us6appw-dev_cyan_local-sites:
+  description: "Sites that live on us2us6appw003.cyan.local"
+  tests:
+    - hdr(host) -i dev.tmssaas.com
+    - hdr(host) -i devrestapi.tmssaas.com
+    - hdr(host) -i devv2.tmssaas.com
+    - hdr(host) -i saasapidev.tmssaas.com
+
+us2us6appw-prod-checkroot_cyan_local-sites:
+  description: "Sites on us2us6appw001/002 with health check against the root path"
+  tests:
+    - hdr(host) -i customerbeta-ord.tmssaas.com
+    - hdr(host) -i dev2.tmssaas.com
+    - hdr(host) -i dev2customer.tmssaas.com
+    - hdr(host) -i saasbeta-ord.tmssaas.com
+    - hdr(host) -i wt.tmssaas.com
+    - hdr(host) -i wtbeta.tmssaas.com
+    - hdr(host) -i wtbetacustomer.tmssaas.com
+    - hdr(host) -i wtcustomer.tmssaas.com
+
+us2us6appw-prod-checkswagger_cyan_local-sites:
+  description: "Sites on us2us6appw001/002 with health check against /swagger"
+  tests:
+    - hdr(host) -i cwrestapi.tmssaas.com
+    - hdr(host) -i dev2restapiv3.tmssaas.com
+    - hdr(host) -i restapi.tmssaas.com
+    - hdr(host) -i restapiv2.tmssaas.com
+    - hdr(host) -i restapiv3.tmssaas.com
+    - hdr(host) -i restapiv4.tmssaas.com
+    - hdr(host) -i wtrestapi.tmssaas.com
+
+us2us6appw-prod-nocheck_cyan_local-sites:
+  description: "Sites on us2us6appw001/002 with no http health check"
+  tests:
+    - hdr(host) -i api.tmssaas.com
+    - hdr(host) -i apiv2.tmssaas.com
+    - hdr(host) -i apiv4.tmssaas.com
+    - hdr(host) -i customer.tmssaas.com
+    - hdr(host) -i dev2.tmssaas.com
+    - hdr(host) -i dev2restapiv2.tmssaas.com
+    - hdr(host) -i newman.tmssaas.com
+    - hdr(host) -i tmssaas.com
+    - hdr(host) -i vendorportal.tmssaas.com
+
+aljexpapi_tmssaas_com:
+  description: "aljexpapi.tmssaas.com"
+  tests:
+    - hdr(host) -i aljexpapi.tmssaas.com
+
+usq_akamai_src:
+  description: "List of Akamai IP ranges allowed to access Blume (BlumeSource/USQ) sites"
+  tests:
+    - src 104.109.250.0/24
+    - src 104.126.37.0/24
+    - src 104.93.28.0/24
+    - src 173.223.21.0/24
+    - src 184.28.156.0/24
+    - src 184.28.194.0/24
+    - src 184.31.1.0/24
+    - src 2.16.135.0/24
+    - src 2.18.240.0/24
+    - src 2.21.11.0/24
+    - src 23.195.73.0/24
+    - src 23.33.23.0/24
+    - src 23.35.71.0/24
+    - src 23.36.161.0/24
+    - src 23.47.58.0/24
+    - src 23.48.209.0/24
+    - src 23.48.94.0/24
+    - src 23.55.170.0/24
+    - src 92.122.125.0/24
+    - src 92.122.95.0/24
+    - src 92.123.100.0/24
+    - src 95.100.242.0/24
+    - src 95.101.22.0/24
+    - src 95.101.34.0/24
+    - src 95.101.88.0/24
+
+pulse-demo_livesource_com:
+  description: "pulse-demo.livesource.com"
+  tests:
+    - hdr(host) -i pulse-demo.livesource.com
+
+pulse-global_livesource_com:
+  description: "pulse-global.livesource.com"
+  tests:
+    - hdr(host) -i pulse-global.livesource.com
+
+pulse-qa_livesource_com:
+  description: "pulse-qa.livesource.com"
+  tests:
+    - hdr(host) -i pulse-qa.livesource.com
+
+services02_livesource_com:
+  description: "services02.livesource.com"
+  tests:
+    - hdr(host) -i services02.livesource.com
+
+services-api-qa_livesource_com:
+  description: "services-api-qa.livesource.com"
+  tests:
+    - hdr(host) -i services-api-qa.livesource.com
+
+star-demo_livesource_com:
+  description: "*-demo.livesource.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+)?-demo\.livesource\.com$
+
+star-qa_livesource_com:
+  description: "*-qa.livesource.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+)?-qa\.livesource\.com$
+
+star-uat_livesource_com:
+  description: "*-uat.livesource.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+)?-uat\.livesource\.com$

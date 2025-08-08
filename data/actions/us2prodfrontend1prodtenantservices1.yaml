@@ -40,3 +40,38 @@ depotsystems_backend_selection:
     - use_backend rdg_depotsystems_com-legacy   if remote_desktop_rdg_legacy_path rdg_depotsystems_com
     - use_backend rdg_depotsystems_com          if rdg_depotsystems_com
     - use_backend depwtgweb_depotsystem_local   if !rdg_depotsystems_com star_depotsystems_com
+
+saastransportation_backend_selection:
+  description: |-
+    SaaS Transportation-specific backend selection.
+  order: 82
+  actions:
+    - use_backend us2us6appw-dev_cyan_local                 if us2us6appw-dev_cyan_local-sites
+    - use_backend us2us6appw-prod-checkroot_cyan_local      if us2us6appw-prod-checkroot_cyan_local-sites
+    - use_backend us2us6appw-prod-checkswatter_cyan_local   if us2us6appw-prod-checkswagger_cyan_local-sites
+    - use_backend us2us6appw-prod-nocheck_cyan_local        if us2us6appw-prod-nocheck_cyan_local-sites
+    - use_backend aljexpapi_tmssaas_com                     if aljexpapi_tmssaas_com
+
+blumesource_backend_selection:
+  description: |-
+    Blume-specific backends for the LiveSource applications (internally known as BlumeSource)
+  order: 83
+  actions:
+    - use_backend usq-pulse-global_livesource_com           if usq_akamai_src pulse-global_livesource_com
+    - use_backend usq-pulse-qa_livesource_com               if usq_akamai_src pulse-qa_livesource_com
+    - use_backend usq-pulse-demo_livesource_com             if usq_akamai_src pulse-demo_livesource_com
+    - use_backend usq-services02_livesource_com             if usq_akamai_src services02_livesource_com
+    - use_backend usq-services-api-qa_livesource_com        if usq_akamai_src services-api-qa_livesource_com
+    - use_backend usq-star-qa_livesource_com                if usq_akamai_src star-qa_livesource_com
+    - use_backend usq-star-demo_livesource_com              if usq_akamai_src star-demo_livesource_com
+    - use_backend usq-star-uat_livesource_com               if usq_akamai_src star-qa_livesource_com
+    - use_backend usq-livesource_com_catchall               if usq_akamai_src livesource_com_catchall
+    - http-request deny                                     if !usq_akamai_src pulse-global_livesource_com
+    - http-request deny                                     if !usq_akamai_src pulse-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src pulse-demo_livesource_com
+    - http-request deny                                     if !usq_akamai_src services02_livesource_com
+    - http-request deny                                     if !usq_akamai_src services-api-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-demo_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src livesource_com_catchall

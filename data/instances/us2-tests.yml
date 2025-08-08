@@ -1,0 +1,61 @@
+clustered_instances:
+  hosts:
+    us2prodfrontend1prodtenantservices1:
+      tests:
+        - host: aljexpapi.tmssaas.com
+          path: /ratingenginecsv.aspx
+          ssl: true
+          status: 200|301|302
+        - host: customerbeta-ord.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: cwrestapi.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        - host: dev2customer.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: dev2restapiv3.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: restapi.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        - host: restapiv2.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        - host: restapiv3.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        - host: restapiv4.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        - host: saasbeta-ord.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: wt.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: wtbeta.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: wtcustomer.tmssaas.com
+          path: /
+          ssl: true
+          status: 200|301|302
+        - host: wtrestapi.tmssaas.com
+          path: /swagger
+          ssl: true
+          status: 200|301|302
+        
