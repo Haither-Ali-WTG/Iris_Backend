@@ -3,16 +3,16 @@
   file:
     path: /etc/telegraf/telegraf.d/
     state: directory
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
+    owner: root
+    group: root
     mode: u=rwx,g=rx,o=rx
   become: yes
 
 - name: Create a minimal basic.conf to ensure Telegraf can start
   copy:
     dest: /etc/telegraf/telegraf.d/basic.conf
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
+    owner: root
+    group: root
     mode: u=rw,g=r,o=r
     content: |
       # This is a minimal configuration file whose only purpose is to
