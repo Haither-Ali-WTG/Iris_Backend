@@ -203,7 +203,7 @@ us2us6appw-prod-checkswagger.cyan.local:
       port: 443
       settings: ssl check verify none
 
-usq-pulse-global_livesource_com:
+usq-pulse-global.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend pulse-global_livesource_com
@@ -219,7 +219,7 @@ usq-pulse-global_livesource_com:
     server chghbo01 10.4.203.15:80 check
     server chghbo02 10.4.203.16:80 check
 
-usq-pulse-qa_livesource_com:
+usq-pulse-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -234,7 +234,7 @@ usq-pulse-qa_livesource_com:
     server chghqabo01 10.4.207.13:80 check
     server chghqabo02 10.4.207.14:80 check
 
-usq-pulse-demo_livesource_com:
+usq-pulse-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -247,7 +247,7 @@ usq-pulse-demo_livesource_com:
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemo 10.4.202.60:80 check
 
-usq-star-qa_livesource_com:
+usq-star-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -262,7 +262,7 @@ usq-star-qa_livesource_com:
     server chghqaapp01 10.4.207.10:80 check
     server chghqaapp02 10.4.207.11:80 check
 
-usq-star-demo_livesource_com:
+usq-star-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -275,7 +275,7 @@ usq-star-demo_livesource_com:
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemopulse 10.4.202.61:80 check
 
-usq-star-uat_livesource_com:
+usq-star-uat.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -288,7 +288,7 @@ usq-star-uat_livesource_com:
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghuat01 10.4.202.62:80 check
 
-usq-livesource_com_catchall:
+usq-livesource.com-catchall:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     mode http
@@ -306,7 +306,7 @@ usq-livesource_com_catchall:
     server chghapp03 10.4.203.13:80 check
     server chghapp04 10.4.203.14:80 check
 
-usq-services02_livesource_com:
+usq-services02.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     load-server-state-from-file none
@@ -319,7 +319,7 @@ usq-services02_livesource_com:
     server chghsvc01 10.4.203.17:80 check
     server chghsvc02 10.4.203.18:80 check
 
-usq-services-api-qa_livesource_com:
+usq-services-api-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     load-server-state-from-file none
