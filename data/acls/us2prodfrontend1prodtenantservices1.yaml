@@ -109,54 +109,175 @@ rdg_depotsystems_com:
   tests:
     - hdr(host) -i rdg.depotsystems.com
 
-us2us6appw-dev_cyan_local-sites:
-  description: "Sites that live on us2us6appw003.cyan.local"
+aljexapi_tmssaas_com:
+  description: "aljexapi.tmssaas.com"
   tests:
-    - hdr(host) -i dev.tmssaas.com
-    - hdr(host) -i devrestapi.tmssaas.com
-    - hdr(host) -i devv2.tmssaas.com
-    - hdr(host) -i saasapidev.tmssaas.com
+    - hdr(host) -i aljexapi.tmssaas.com
 
-us2us6appw-prod-checkroot_cyan_local-sites:
-  description: "Sites on us2us6appw001/002 with health check against the root path"
-  tests:
-    - hdr(host) -i customerbeta-ord.tmssaas.com
-    - hdr(host) -i dev2.tmssaas.com
-    - hdr(host) -i dev2customer.tmssaas.com
-    - hdr(host) -i saasbeta-ord.tmssaas.com
-    - hdr(host) -i wt.tmssaas.com
-    - hdr(host) -i wtbeta.tmssaas.com
-    - hdr(host) -i wtbetacustomer.tmssaas.com
-    - hdr(host) -i wtcustomer.tmssaas.com
-
-us2us6appw-prod-checkswagger_cyan_local-sites:
-  description: "Sites on us2us6appw001/002 with health check against /swagger"
-  tests:
-    - hdr(host) -i cwrestapi.tmssaas.com
-    - hdr(host) -i dev2restapiv3.tmssaas.com
-    - hdr(host) -i restapi.tmssaas.com
-    - hdr(host) -i restapiv2.tmssaas.com
-    - hdr(host) -i restapiv3.tmssaas.com
-    - hdr(host) -i restapiv4.tmssaas.com
-    - hdr(host) -i wtrestapi.tmssaas.com
-
-us2us6appw-prod-nocheck_cyan_local-sites:
-  description: "Sites on us2us6appw001/002 with no http health check"
+api_tmssaas_com:
+  description: "api.tmssaas.com"
   tests:
     - hdr(host) -i api.tmssaas.com
+
+apiv2_tmssaas_com:
+  description: "apiv2.tmssaas.com"
+  tests:
     - hdr(host) -i apiv2.tmssaas.com
+
+apiv4_tmssaas_com:
+  description: "apiv4.tmssaas.com"
+  tests:
     - hdr(host) -i apiv4.tmssaas.com
+
+customer_tmssaas_com:
+  description: "customer.tmssaas.com"
+  tests:
     - hdr(host) -i customer.tmssaas.com
+
+customerbeta-ord_tmssaas_com:
+  description: "customerbeta-ord.tmssaas.com"
+  tests:
+    - hdr(host) -i customerbeta-ord.tmssaas.com
+
+cwrestapi_tmssaas_com:
+  description: "cwrestapi.tmssaas.com"
+  tests:
+    - hdr(host) -i cwrestapi.tmssaas.com
+
+dev_tmssaas_com:
+  description: "dev.tmssaas.com"
+  tests:
+    - hdr(host) -i dev.tmssaas.com
+
+devapi_tmssaas_com:
+  description: "devapi.tmssaas.com"
+  tests:
+    - hdr(host) -i devapi.tmssaas.com
+
+devcallog_tmssaas_com:
+  description: "devcallog.tmssaas.com"
+  tests:
+    - hdr(host) -i devcallog.tmssaas.com
+
+devcustomer_tmssaas_com:
+  description: "devcustomer.tmssaas.com"
+  tests:
+    - hdr(host) -i devcustomer.tmssaas.com
+
+devrestapi_tmssaas_com:
+  description: "devrestapi.tmssaas.com"
+  tests:
+    - hdr(host) -i devrestapi.tmssaas.com
+
+devv2_tmssaas_com:
+  description: "devv2.tmssaas.com"
+  tests:
+    - hdr(host) -i devv2.tmssaas.com
+
+devvendor_tmssaas_com:
+  description: "devvendor.tmssaas.com"
+  tests:
+    - hdr(host) -i devvendor.tmssaas.com
+
+devwt_tmssaas_com:
+  description: "devwt.tmssaas.com"
+  tests:
+    - hdr(host) -i devwt.tmssaas.com
+
+devwtcustomer_tmssaas_com:
+  description: "devwtcustomer.tmssaas.com"
+  tests:
+    - hdr(host) -i devwtcustomer.tmssaas.com
+
+dev2_tmssaas_com:
+  description: "dev2.tmssaas.com"
+  tests:
     - hdr(host) -i dev2.tmssaas.com
+
+dev2customer_tmssaas_com:
+  description: "dev2customer.tmssaas.com"
+  tests:
+    - hdr(host) -i dev2customer.tmssaas.com
+
+dev2restapiv2_tmssaas_com:
+  description: "dev2restapiv2.tmssaas.com"
+  tests:
     - hdr(host) -i dev2restapiv2.tmssaas.com
+
+dev2restapiv3_tmssaas_com:
+  description: "dev2restapiv3.tmssaas.com"
+  tests:
+    - hdr(host) -i dev2restapiv3.tmssaas.com
+
+newman_tmssaas_com:
+  description: "newman.tmssaas.com"
+  tests:
     - hdr(host) -i newman.tmssaas.com
+
+restapi_tmssaas_com:
+  description: "restapi.tmssaas.com"
+  tests:
+    - hdr(host) -i restapi.tmssaas.com
+
+restapiv2_tmssaas_com:
+  description: "restapiv2.tmssaas.com"
+  tests:
+    - hdr(host) -i restapiv2.tmssaas.com
+
+restapiv3_tmssaas_com:
+  description: "restapiv3.tmssaas.com"
+  tests:
+    - hdr(host) -i restapiv3.tmssaas.com
+
+restapiv4_tmssaas_com:
+  description: "restapiv4.tmssaas.com"
+  tests:
+    - hdr(host) -i restapiv4.tmssaas.com
+
+saasapidev_tmssaas_com:
+  description: "saasapidev.tmssaas.com"
+  tests:
+    - hdr(host) -i saasapidev.tmssaas.com
+
+saasbeta-ord_tmssaas_com:
+  description: "saasbeta-ord.tmssaas.com"
+  tests:
+    - hdr(host) -i saasbeta-ord.tmssaas.com
+
+tmssaas_com:
+  description: "tmssaas.com"
+  tests:
     - hdr(host) -i tmssaas.com
+
+vendorportal_tmssaas_com:
+  description: "vendorportal.tmssaas.com"
+  tests:
     - hdr(host) -i vendorportal.tmssaas.com
 
-aljexpapi_tmssaas_com:
-  description: "aljexpapi.tmssaas.com"
+wt_tmssaas_com:
+  description: "wt.tmssaas.com"
   tests:
-    - hdr(host) -i aljexpapi.tmssaas.com
+    - hdr(host) -i wt.tmssaas.com
+
+wtbeta_tmssaas_com:
+  description: "wtbeta.tmssaas.com"
+  tests:
+    - hdr(host) -i wtbeta.tmssaas.com
+
+wtbetacustomer_tmssaas_com:
+  description: "wtbetacustomer.tmssaas.com"
+  tests:
+    - hdr(host) -i wtbetacustomer.tmssaas.com
+
+wtcustomer_tmssaas_com:
+  description: "wtcustomer.tmssaas.com"
+  tests:
+    - hdr(host) -i wtcustomer.tmssaas.com
+
+wtrestapi_tmssaas_com:
+  description: "wtrestapi.tmssaas.com"
+  tests:
+    - hdr(host) -i wtrestapi.tmssaas.com
 
 usq_akamai_src:
   description: "List of Akamai IP ranges allowed to access Blume (BlumeSource/USQ) sites"
