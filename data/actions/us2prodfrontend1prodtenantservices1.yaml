@@ -94,7 +94,7 @@ blumesource_backend_selection:
     - use_backend usq-star-qa_livesource_com                if usq_akamai_src star-qa_livesource_com
     - use_backend usq-star-demo_livesource_com              if usq_akamai_src star-demo_livesource_com
     - use_backend usq-star-uat_livesource_com               if usq_akamai_src star-qa_livesource_com
-    - use_backend usq-livesource_com-catchall               if usq_akamai_src livesource_com_catchall
+    - use_backend usq-livesource_com-catchall               if usq_akamai_src star_livesource_com
     - http-request deny                                     if !usq_akamai_src pulse-global_livesource_com
     - http-request deny                                     if !usq_akamai_src pulse-qa_livesource_com
     - http-request deny                                     if !usq_akamai_src pulse-demo_livesource_com
@@ -103,4 +103,4 @@ blumesource_backend_selection:
     - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
     - http-request deny                                     if !usq_akamai_src star-demo_livesource_com
     - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
-    - http-request deny                                     if !usq_akamai_src livesource_com_catchall
+    - http-request deny                                     if !usq_akamai_src star_livesource_com
