@@ -1,0 +1,41 @@
+---
+- name: Ensure telegraf.d directory exists
+  file:
+    path: /etc/telegraf/telegraf.d/
+    state: directory
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: u=rwx,g=rx,o=rx
+  become: yes
+
+- name: Create a minimal basic.conf to ensure Telegraf can start
+  copy:
+    dest: /etc/telegraf/telegraf.d/basic.conf
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: u=rw,g=r,o=r
+    content: |
+      # This is a minimal configuration file whose only purpose is to
+      # ensure the Telegraf service has at least one input and one output,
+      # allowing it to start without errors.
+      [[inputs.cpu]]
+
+      [[outputs.file]]
+        # Discard all collected metrics by sending them to /dev/null.
+        # This prevents disk space usage while confirming the agent is running.
+        files = ["/dev/null"]
+  become: yes
+
+# --------------------------------------------------------------------------
+# NOTE: Telegraf Agent Installation
+#
+# This part is designed to be executed ONLY during the initial of a machine.
+#
+# DO NOT include or trigger this task as part of routine HAProxy
+# deployments (i.e., Iris Run).
+# --------------------------------------------------------------------------
+- name: Install Telegraf Agent
+  include_role:
+    name: wtg.monitoring_agents.telegraf
+  vars:
+    data_centre: "{{ dc }}"
