@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250808.3
-  # Fri Aug  8 06:15:57 UTC 2025 -- Fri Aug  8 16:15:57 AEST 2025
+  # Dante Build Artifact 20250809.1
+  # Sat Aug  9 04:41:03 UTC 2025 -- Sat Aug  9 14:41:03 AEST 2025
   #
-  # Merged PR 36700: style: Change automated commit build to use conventional commits
-  # b42ece2437c0a4af6f2e26db8f6755880dc5359d
-  dante_build_id: '1431392'
+  # Merge pull request 38455 from dante_artifact_upgrade into master
+  # d41e20526b1dfdd197f912cb6973d14d100346ab
+  dante_build_id: '1432130'
 
   # virgil 20250809.2
   # Sat Aug  9 03:58:31 UTC 2025 -- Sat Aug  9 13:58:31 AEST 2025
