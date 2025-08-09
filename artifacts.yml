@@ -7,12 +7,12 @@ variables:
   # b42ece2437c0a4af6f2e26db8f6755880dc5359d
   dante_build_id: '1431392'
 
-  # virgil 20250808.1
-  # Fri Aug  8 00:49:23 UTC 2025 -- Fri Aug  8 10:49:23 AEST 2025
+  # virgil 20250809.2
+  # Sat Aug  9 03:58:31 UTC 2025 -- Sat Aug  9 13:58:31 AEST 2025
   #
-  # Merged PR 38388: update DE1 switched apex47/48
-  # 839915d71b774d049c92a60c3b76bf682fbd2244
-  virgil_build_id: '1431089'
+  # Merged PR 38361: WI00925827 config au2wp-svir-012/32 from LACP to trunk only
+  # 048422f942bb723e8236489e0b095f6299dcc75a
+  virgil_build_id: '1432088'
 
   # sqlbilling 20250806.2
   # Wed Aug  6 11:44:23 UTC 2025 -- Wed Aug  6 21:44:23 AEST 2025
