@@ -129,7 +129,8 @@ us6-aljexapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /ratingenginecsv.aspx HTTP/1.1\r\nHost:\ aljexapi.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr host aljexapi.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie ALJEXAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -186,7 +187,8 @@ us6-customerbeta-ord.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ customerbeta-ord.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host customerbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie CUSTOMERBETAORDTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -199,7 +201,8 @@ us6-cwrestapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ cwrestapi.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host cwrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie CWRESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -250,7 +253,8 @@ us6-dev2customer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ dev2customer.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host dev2customer.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie DEV2CUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -274,7 +278,8 @@ us6-dev2restapiv3.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ dev2restapiv3.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host dev2restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie DEV2RESTAPIV3TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -298,7 +303,8 @@ us6-restapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapi.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapi.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie RESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -311,7 +317,8 @@ us6-restapiv2.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv2.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv2.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie RESTAPIV2TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -324,7 +331,8 @@ us6-restapiv3.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv3.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie RESTAPIV3TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -337,7 +345,8 @@ us6-restapiv4.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv4.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv4.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie RESTAPIV4TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -359,7 +368,8 @@ us6-saasbeta-ord.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ saasbeta-ord.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host saasbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie SAASBETAORDTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -394,7 +404,8 @@ us6-wt.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ wt.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wt.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie WTTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -407,7 +418,8 @@ us6-wtbeta.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ wtbeta.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbeta.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie WTBETATMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -420,7 +432,8 @@ us6-wtbetacustomer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ wtbetacustomer.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbetacustomer.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie WTBETACUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -433,7 +446,8 @@ us6-wtcustomer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ wtcustomer.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtcustomer.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie WTCUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -446,7 +460,8 @@ us6-wtrestapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
-    option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ wtrestapi.tmssaas.com
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
     cookie WTRESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -459,6 +474,7 @@ usq-pulse-global.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
     balance roundrobin
@@ -473,6 +489,7 @@ usq-pulse-qa.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
     balance roundrobin
@@ -487,6 +504,7 @@ usq-pulse-demo.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-send-name-header Host
     http-check expect string OK
@@ -499,6 +517,7 @@ usq-star-qa.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
     balance roundrobin
@@ -513,6 +532,7 @@ usq-star-demo.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -525,6 +545,7 @@ usq-star-uat.livesource.com:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -537,6 +558,7 @@ usq-livesource.com-catchall:
     mode http
     option forwardfor
     option httpchk
+    http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -553,6 +575,7 @@ usq-services02.livesource.com:
   full_override: |
     load-server-state-from-file none
     option httpchk
+    http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
     default-server inter 15s rise 2 fall 2
@@ -566,6 +589,7 @@ usq-services-api-qa.livesource.com:
   full_override: |
     load-server-state-from-file none
     option httpchk
+    http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
     default-server inter 15s rise 2 fall 2
