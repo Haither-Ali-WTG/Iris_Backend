@@ -254,7 +254,7 @@ us6-devv2.tmssaas.com:
 us6-dev2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend us6-dev6_tmssaas_com
+    backend us6-dev2_tmssaas_com
     mode http
     option forwardfor
     cookie DEVV2
