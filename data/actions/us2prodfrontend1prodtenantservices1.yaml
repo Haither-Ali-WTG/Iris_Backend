@@ -71,12 +71,12 @@ saastransportation_backend_selection:
     - use_backend us6-customer_tmssaas_com          if customer_tmssaas_com
     - use_backend us6-vendorportal_tmssaas_com      if vendorportal_tmssaas_com
     - use_backend us6-dev_tmssaas_com               if dev_tmssaas_com
-    - use_backend us6-devcustomer_tmssaas_com       if devcustomer_tmssaas_com
-    - use_backend us6-devapi_tmssaas_com            if devapi_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devcustomer_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devapi_tmssaas_com
     - use_backend us6-devrestapi_tmssaas_com        if devrestapi_tmssaas_com
-    - use_backend us6-devwt_tmssaas_com             if devwt_tmssaas_com
-    - use_backend us6-devwtcustomer_tmssaas_com     if devwtcustomer_tmssaas_com
-    - use_backend us6-devvendor_tmssaas_com         if devvendor_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devwt_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devwtcustomer_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devvendor_tmssaas_com
     - use_backend us6-dev_tmssaas_com               if devcallog_tmssaas_com
     - use_backend us6-saasapidev_tmssaas_com        if saasapidev_tmssaas_com
     - use_backend us6-devv2_tmssaas_com             if devv2_tmssaas_com
