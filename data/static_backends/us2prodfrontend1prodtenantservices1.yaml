@@ -126,13 +126,13 @@ depwtgweb.depotsystem.local:
 us6-aljexapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr host aljexapi.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie ALJEXAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -185,13 +185,13 @@ us6-customer.tmssaas.com:
 us6-customerbeta-ord.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host customerbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie CUSTOMERBETAORDTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -200,13 +200,13 @@ us6-customerbeta-ord.tmssaas.com:
 us6-cwrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host cwrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie CWRESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -253,13 +253,13 @@ us6-dev2.tmssaas.com:
 us6-dev2customer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host dev2customer.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie DEV2CUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -279,13 +279,13 @@ us6-dev2restapiv2.tmssaas.com:
 us6-dev2restapiv3.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host dev2restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie DEV2RESTAPIV3TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -305,13 +305,13 @@ us6-newman.tmssaas.com:
 us6-restapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapi.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie RESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -320,13 +320,13 @@ us6-restapi.tmssaas.com:
 us6-restapiv2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv2.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie RESTAPIV2TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -335,13 +335,13 @@ us6-restapiv2.tmssaas.com:
 us6-restapiv3.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie RESTAPIV3TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -350,13 +350,13 @@ us6-restapiv3.tmssaas.com:
 us6-restapiv4.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv4.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie RESTAPIV4TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -374,13 +374,13 @@ us6-saasapidev.tmssaas.com:
 us6-saasbeta-ord.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host saasbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie SAASBETAORDTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -411,13 +411,13 @@ us6-vendorportal.tmssaas.com:
 us6-wt.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wt.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie WTTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -426,13 +426,13 @@ us6-wt.tmssaas.com:
 us6-wtbeta.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbeta.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie WTBETATMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -441,13 +441,13 @@ us6-wtbeta.tmssaas.com:
 us6-wtbetacustomer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbetacustomer.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie WTBETACUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -456,13 +456,13 @@ us6-wtbetacustomer.tmssaas.com:
 us6-wtcustomer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtcustomer.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie WTCUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -471,13 +471,13 @@ us6-wtcustomer.tmssaas.com:
 us6-wtrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option http-server-close
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
+    mode http
+    option forwardfor
+    option http-server-close
     cookie WTRESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw001 10.4.163.11:443 ssl check verify none
@@ -486,13 +486,12 @@ us6-wtrestapi.tmssaas.com:
 usq-pulse-global.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option httpchk
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    mode http
+    option forwardfor
     balance roundrobin
     cookie PULSEGLOBALCOOKIE insert indirect nocache dynamic secure maxlife 3600
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -502,13 +501,12 @@ usq-pulse-global.livesource.com:
 usq-pulse-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
-    option httpchk
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    mode http
+    option forwardfor
     balance roundrobin
     cookie PULSEQACOOKIE insert indirect nocache dynamic secure maxlife 3600
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -518,25 +516,25 @@ usq-pulse-qa.livesource.com:
 usq-pulse-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-send-name-header Host
     http-check expect string OK
+    mode http
+    option forwardfor
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemo 10.4.202.60:80 check
 
 usq-star-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    mode http
+    option forwardfor
     balance roundrobin
     cookie LIVESOURCEQACOOKIE insert indirect nocache dynamic secure maxlife 3600
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -546,39 +544,38 @@ usq-star-qa.livesource.com:
 usq-star-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
     option httpchk
     http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    mode http
+    option forwardfor
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemopulse 10.4.202.61:80 check
 
 usq-star-uat.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
     option httpchk
     http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    mode http
+    option forwardfor
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghuat01 10.4.202.62:80 check
 
 usq-livesource.com-catchall:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    mode http
-    option forwardfor
     option httpchk
     http-check connect
     http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
+    option forwardfor
     balance roundrobin
     cookie LIVESOURCECOOKIE insert indirect nocache dynamic secure maxlife 3600
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -590,7 +587,6 @@ usq-livesource.com-catchall:
 usq-services02.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    load-server-state-from-file none
     option httpchk
     http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -604,7 +600,6 @@ usq-services02.livesource.com:
 usq-services-api-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    load-server-state-from-file none
     option httpchk
     http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
