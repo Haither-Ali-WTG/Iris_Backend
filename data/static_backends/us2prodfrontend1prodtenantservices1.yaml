@@ -128,7 +128,6 @@ us6-aljexapi.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /ratingenginecsv.aspx HTTP/1.1\r\nHost:\ aljexapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -142,7 +141,6 @@ us6-api.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie APITMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -154,7 +152,6 @@ us6-apiv2.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie APIV2TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -166,7 +163,6 @@ us6-apiv4.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie APIV4TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -178,7 +174,6 @@ us6-customer.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie CUSTOMERTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -190,7 +185,6 @@ us6-customerbeta-ord.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ customerbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -204,7 +198,6 @@ us6-cwrestapi.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ cwrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -218,7 +211,6 @@ us6-dev.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     cookie DEVTMS
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw003 10.4.163.13:80 check
@@ -228,7 +220,6 @@ us6-devrestapi.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     cookie DEVRESTAPITMSSAASCOM
     default-server inter 3s rise 2 fall 2 maxconn 1000 resolve-prefer ipv4
     server us2us6appw003 10.4.163.13:80 check
@@ -238,7 +229,6 @@ us6-devv2.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie DEV2TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -250,7 +240,6 @@ us6-dev2.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     cookie DEVV2
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server us2us6appw003 10.4.163.13:443 check
@@ -260,7 +249,6 @@ us6-dev2customer.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ dev2customer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -274,7 +262,6 @@ us6-dev2restapiv2.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie DEV2RESTAPIV2TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -286,7 +273,6 @@ us6-dev2restapiv3.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ dev2restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -300,7 +286,6 @@ us6-newman.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie NEWMANTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -312,7 +297,6 @@ us6-restapi.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -326,7 +310,6 @@ us6-restapiv2.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv2.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -340,7 +323,6 @@ us6-restapiv3.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -354,7 +336,6 @@ us6-restapiv4.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ restapiv4.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -368,7 +349,6 @@ us6-saasapidev.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     cookie SAASAPIDEVTMSSAASCOM
     default-server inter 3s rise 2 fall 2 maxconn 1000 resolve-prefer ipv4
     server us2us6appw003 10.4.163.13:80 check
@@ -378,7 +358,6 @@ us6-saasbeta-ord.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ saasbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -392,7 +371,6 @@ us6-tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie TMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -404,7 +382,6 @@ us6-vendorportal.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     cookie VENDORPORTALTMSSAASCOM
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
@@ -416,7 +393,6 @@ us6-wt.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ wt.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -430,7 +406,6 @@ us6-wtbeta.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ wtbeta.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -444,7 +419,6 @@ us6-wtbetacustomer.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ wtbetacustomer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -458,7 +432,6 @@ us6-wtcustomer.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD / HTTP/1.1\r\nHost:\ wtcustomer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -472,7 +445,6 @@ us6-wtrestapi.tmssaas.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option http-server-close
     option httpchk HEAD /swagger HTTP/1.1\r\nHost:\ wtrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -484,10 +456,8 @@ us6-wtrestapi.tmssaas.com:
 usq-pulse-global.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend pulse-global_livesource_com
     mode http
     option forwardfor
-    option httplog
     option httpchk
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -502,7 +472,6 @@ usq-pulse-qa.livesource.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -517,11 +486,10 @@ usq-pulse-demo.livesource.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
-    http-check expect string OK
     http-send-name-header Host
+    http-check expect string OK
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemo 10.4.202.60:80 check
 
@@ -530,7 +498,6 @@ usq-star-qa.livesource.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
@@ -545,11 +512,10 @@ usq-star-demo.livesource.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
+    http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
-    http-send-name-header Host
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghdemopulse 10.4.202.61:80 check
 
@@ -558,11 +524,10 @@ usq-star-uat.livesource.com:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
+    http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
-    http-send-name-header Host
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
     server chghuat01 10.4.202.62:80 check
 
@@ -571,11 +536,10 @@ usq-livesource.com-catchall:
   full_override: |
     mode http
     option forwardfor
-    option httplog
     option httpchk
+    http-send-name-header Host
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
     http-check expect string OK
-    http-send-name-header Host
     balance roundrobin
     cookie LIVESOURCECOOKIE insert indirect nocache dynamic secure maxlife 3600
     default-server inter 5s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4
