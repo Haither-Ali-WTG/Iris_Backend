@@ -129,6 +129,7 @@ us6-aljexapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr host aljexapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -187,6 +188,7 @@ us6-customerbeta-ord.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host customerbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -201,6 +203,7 @@ us6-cwrestapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host cwrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -253,6 +256,7 @@ us6-dev2customer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host dev2customer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -278,6 +282,7 @@ us6-dev2restapiv3.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host dev2restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -303,6 +308,7 @@ us6-restapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -317,6 +323,7 @@ us6-restapiv2.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv2.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -331,6 +338,7 @@ us6-restapiv3.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -345,6 +353,7 @@ us6-restapiv4.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv4.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -368,6 +377,7 @@ us6-saasbeta-ord.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host saasbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -404,6 +414,7 @@ us6-wt.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wt.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -418,6 +429,7 @@ us6-wtbeta.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbeta.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -432,6 +444,7 @@ us6-wtbetacustomer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbetacustomer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -446,6 +459,7 @@ us6-wtcustomer.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtcustomer.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -460,6 +474,7 @@ us6-wtrestapi.tmssaas.com:
     mode http
     option forwardfor
     option http-server-close
+    option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
@@ -473,6 +488,7 @@ usq-pulse-global.livesource.com:
   full_override: |
     mode http
     option forwardfor
+    option httpchk
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -488,6 +504,7 @@ usq-pulse-qa.livesource.com:
   full_override: |
     mode http
     option forwardfor
+    option httpchk
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
