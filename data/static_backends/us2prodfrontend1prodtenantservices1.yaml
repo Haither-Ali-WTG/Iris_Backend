@@ -530,7 +530,7 @@ usq-pulse-global.livesource.com:
 usq-pulse-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend us1-pulse-qa_livesource_com
+    backend usq-pulse-qa_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
