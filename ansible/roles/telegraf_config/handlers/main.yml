@@ -1,0 +1,10 @@
+---
+- name: Restart telegraf
+  become: yes
+  systemd:
+    name: telegraf
+    state: restarted
+  # This 'when' condition is the reason for the 'find'
+  # task in tasks/main.yml.
+  when:
+    - telegraf_unit_file.matched > 0

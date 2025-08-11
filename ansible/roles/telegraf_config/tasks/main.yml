@@ -1,26 +1,31 @@
 ---
+# NOTE: The 'find' task below registers a variable
+# 'telegraf_unit_file' which is used by the handler in 'handlers/main.yml'
+# to conditionally restart the service. This creates a dependency between
+# this task file and the handler file.
+- name: Check if telegraf's main service unit file exists
+  find:
+    paths:
+      - /usr/lib/systemd/system
+      - /etc/systemd/system
+    patterns: 'telegraf.service'
+  register: telegraf_unit_file
+
 - name: Ensure telegraf.d directory exists
+  become: yes
   file:
     path: /etc/telegraf/telegraf.d/
     state: directory
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
-    mode: u=rwx,g=rx,o=rx
-  become: yes
+    owner: root
+    group: root
+    mode: "u=rwx,g=rx,o=rx"
 
 - name: Copy Prometheus config to telegraf.d
+  become: yes
   template:
     src: prometheus.conf.j2
     dest: /etc/telegraf/telegraf.d/prometheus.conf
-    owner: "{{ ansible_user }}"
-    group: "{{ ansible_user }}"
-    mode: u=rw,g=r,o=r
-
-- name: Install Telegraf
-  include_role:
-    name: wtg.monitoring_agents.telegraf
-  vars:
-    data_centre: "{{ target_dc }}"
-  when:
-    - target_dc == "AU2"
-    - not simulation
+    owner: root
+    group: root
+    mode: "u=rw,g=r,o=r"
+  notify: Restart telegraf
