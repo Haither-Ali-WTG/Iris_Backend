@@ -126,6 +126,7 @@ depwtgweb.depotsystem.local:
 us6-aljexapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-aljexapi_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr host aljexapi.tmssaas.com
@@ -141,6 +142,7 @@ us6-aljexapi.tmssaas.com:
 us6-api.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-api_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -152,6 +154,7 @@ us6-api.tmssaas.com:
 us6-apiv2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-apiv2_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -163,6 +166,7 @@ us6-apiv2.tmssaas.com:
 us6-apiv4.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-apiv4_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -174,6 +178,7 @@ us6-apiv4.tmssaas.com:
 us6-customer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-customer_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -185,6 +190,7 @@ us6-customer.tmssaas.com:
 us6-customerbeta-ord.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-customerbeta-ord_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host customerbeta-ord.tmssaas.com
@@ -200,6 +206,7 @@ us6-customerbeta-ord.tmssaas.com:
 us6-cwrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-cwrestapi_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host cwrestapi.tmssaas.com
@@ -215,6 +222,7 @@ us6-cwrestapi.tmssaas.com:
 us6-dev.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-dev_tmssaas_com
     mode http
     option forwardfor
     cookie DEVTMS
@@ -224,6 +232,7 @@ us6-dev.tmssaas.com:
 us6-devrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-devrestapi_tmssaas_com
     mode http
     option forwardfor
     cookie DEVRESTAPITMSSAASCOM
@@ -233,6 +242,7 @@ us6-devrestapi.tmssaas.com:
 us6-devv2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-devv2_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -244,6 +254,7 @@ us6-devv2.tmssaas.com:
 us6-dev2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-dev6_tmssaas_com
     mode http
     option forwardfor
     cookie DEVV2
@@ -253,6 +264,7 @@ us6-dev2.tmssaas.com:
 us6-dev2customer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-dev2customer_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host dev2customer.tmssaas.com
@@ -268,6 +280,7 @@ us6-dev2customer.tmssaas.com:
 us6-dev2restapiv2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-dev2restapiv2_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -279,6 +292,7 @@ us6-dev2restapiv2.tmssaas.com:
 us6-dev2restapiv3.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-dev2restapiv3_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host dev2restapiv3.tmssaas.com
@@ -294,6 +308,7 @@ us6-dev2restapiv3.tmssaas.com:
 us6-newman.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-newman_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -305,6 +320,7 @@ us6-newman.tmssaas.com:
 us6-restapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-restapi_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapi.tmssaas.com
@@ -320,6 +336,7 @@ us6-restapi.tmssaas.com:
 us6-restapiv2.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-restapiv2_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv2.tmssaas.com
@@ -335,6 +352,7 @@ us6-restapiv2.tmssaas.com:
 us6-restapiv3.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-restapiv3_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv3.tmssaas.com
@@ -350,6 +368,7 @@ us6-restapiv3.tmssaas.com:
 us6-restapiv4.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-restapiv4_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv4.tmssaas.com
@@ -365,6 +384,7 @@ us6-restapiv4.tmssaas.com:
 us6-saasapidev.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-saasapidev_tmssaas_com
     mode http
     option forwardfor
     cookie SAASAPIDEVTMSSAASCOM
@@ -374,6 +394,7 @@ us6-saasapidev.tmssaas.com:
 us6-saasbeta-ord.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-saasbeta-ord_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host saasbeta-ord.tmssaas.com
@@ -389,6 +410,7 @@ us6-saasbeta-ord.tmssaas.com:
 us6-tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -400,6 +422,7 @@ us6-tmssaas.com:
 us6-vendorportal.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-vendorportal_tmssaas_com
     mode http
     option forwardfor
     option http-server-close
@@ -411,6 +434,7 @@ us6-vendorportal.tmssaas.com:
 us6-wt.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-wt_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wt.tmssaas.com
@@ -426,6 +450,7 @@ us6-wt.tmssaas.com:
 us6-wtbeta.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-wtbeta_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbeta.tmssaas.com
@@ -441,6 +466,7 @@ us6-wtbeta.tmssaas.com:
 us6-wtbetacustomer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-wtbetacustomer_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbetacustomer.tmssaas.com
@@ -456,6 +482,7 @@ us6-wtbetacustomer.tmssaas.com:
 us6-wtcustomer.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-wtcustomer_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtcustomer.tmssaas.com
@@ -471,6 +498,7 @@ us6-wtcustomer.tmssaas.com:
 us6-wtrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us6-wtrestapi_tmssaas_com
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtrestapi.tmssaas.com
@@ -486,6 +514,7 @@ us6-wtrestapi.tmssaas.com:
 usq-pulse-global.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-pulse-global_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -501,6 +530,7 @@ usq-pulse-global.livesource.com:
 usq-pulse-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend us1-pulse-qa_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -516,6 +546,7 @@ usq-pulse-qa.livesource.com:
 usq-pulse-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-pulse-demo_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -529,6 +560,7 @@ usq-pulse-demo.livesource.com:
 usq-star-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-star-qa_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -544,6 +576,7 @@ usq-star-qa.livesource.com:
 usq-star-demo.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-star-demo_livesource_com
     option httpchk
     http-check connect
     http-send-name-header Host
@@ -557,6 +590,7 @@ usq-star-demo.livesource.com:
 usq-star-uat.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-star-uat_livesource_com
     option httpchk
     http-check connect
     http-send-name-header Host
@@ -570,6 +604,7 @@ usq-star-uat.livesource.com:
 usq-livesource.com-catchall:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-livesource_com-catchall
     option httpchk
     http-check connect
     http-send-name-header Host
@@ -587,6 +622,7 @@ usq-livesource.com-catchall:
 usq-services02.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-services02_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
@@ -600,6 +636,7 @@ usq-services02.livesource.com:
 usq-services-api-qa.livesource.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
+    backend usq-services-api-qa_livesource_com
     option httpchk
     http-check connect
     http-check send meth GET uri /live-api/SysHealthCheck/healthcheck.jspf hdr Host "%s"
