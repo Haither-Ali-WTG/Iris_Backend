@@ -42,7 +42,8 @@
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
         s3 cp --recursive --exclude "*" --include "{{ target_dc[:2] | lower }}*"
-        {{ s3_iris_bucket }} {{ temp_path.path }}
+        {{ s3_iris_bucket }}{{ s3_folder | default(default_s3_folder) }}
+        {{ temp_path.path }}
       changed_when: true
 
     - name: Check if IIS data changed
