@@ -40,3 +40,67 @@ depotsystems_backend_selection:
     - use_backend rdg_depotsystems_com-legacy   if remote_desktop_rdg_legacy_path rdg_depotsystems_com
     - use_backend rdg_depotsystems_com          if rdg_depotsystems_com
     - use_backend depwtgweb_depotsystem_local   if !rdg_depotsystems_com star_depotsystems_com
+
+saastransportation_backend_selection:
+  description: |-
+    SaaS Transportation-specific backend selection.
+  order: 82
+  actions:
+    - use_backend us6-wt_tmssaas_com                if wt_tmssaas_com
+    - use_backend us6-wtbeta_tmssaas_com            if wtbeta_tmssaas_com
+    - use_backend us6-wtcustomer_tmssaas_com        if wtcustomer_tmssaas_com
+    - use_backend us6-wtbetacustomer_tmssaas_com    if wtbetacustomer_tmssaas_com
+    - use_backend us6-wtrestapi_tmssaas_com         if wtrestapi_tmssaas_com
+    - use_backend us6-dev2_tmssaas_com              if dev2_tmssaas_com
+    - use_backend us6-dev2customer_tmssaas_com      if dev2customer_tmssaas_com
+    - use_backend us6-dev2restapiv2_tmssaas_com     if dev2restapiv2_tmssaas_com
+    - use_backend us6-dev2restapiv3_tmssaas_com     if dev2restapiv3_tmssaas_com
+    - use_backend us6-restapiv3_tmssaas_com         if restapiv3_tmssaas_com
+    - use_backend us6-saasbeta-ord_tmssaas_com      if saasbeta-ord_tmssaas_com
+    - use_backend us6-customerbeta-ord_tmssaas_com  if customerbeta-ord_tmssaas_com
+    - use_backend us6-apiv4_tmssaas_com             if apiv4_tmssaas_com
+    - use_backend us6-restapiv4_tmssaas_com         if restapiv4_tmssaas_com
+    - use_backend us6-api_tmssaas_com               if api_tmssaas_com
+    - use_backend us6-apiv2_tmssaas_com             if apiv2_tmssaas_com
+    - use_backend us6-newman_tmssaas_com            if newman_tmssaas_com
+    - use_backend us6-restapi_tmssaas_com           if restapi_tmssaas_com
+    - use_backend us6-restapiv2_tmssaas_com         if restapiv2_tmssaas_com
+    - use_backend us6-aljexapi_tmssaas_com          if aljexapi_tmssaas_com
+    - use_backend us6-cwrestapi_tmssaas_com         if cwrestapi_tmssaas_com
+    - use_backend us6-tmssaas_com                   if tmssaas_com
+    - use_backend us6-customer_tmssaas_com          if customer_tmssaas_com
+    - use_backend us6-vendorportal_tmssaas_com      if vendorportal_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if dev_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devcustomer_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devapi_tmssaas_com
+    - use_backend us6-devrestapi_tmssaas_com        if devrestapi_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devwt_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devwtcustomer_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devvendor_tmssaas_com
+    - use_backend us6-dev_tmssaas_com               if devcallog_tmssaas_com
+    - use_backend us6-saasapidev_tmssaas_com        if saasapidev_tmssaas_com
+    - use_backend us6-devv2_tmssaas_com             if devv2_tmssaas_com
+
+blumesource_backend_selection:
+  description: |-
+    Blume-specific backends for the LiveSource applications (internally known as BlumeSource)
+  order: 83
+  actions:
+    - use_backend usq-pulse-global_livesource_com           if usq_akamai_src pulse-global_livesource_com
+    - use_backend usq-pulse-qa_livesource_com               if usq_akamai_src pulse-qa_livesource_com
+    - use_backend usq-pulse-demo_livesource_com             if usq_akamai_src pulse-demo_livesource_com
+    - use_backend usq-services02_livesource_com             if usq_akamai_src services02_livesource_com
+    - use_backend usq-services-api-qa_livesource_com        if usq_akamai_src services-api-qa_livesource_com
+    - use_backend usq-star-qa_livesource_com                if usq_akamai_src star-qa_livesource_com
+    - use_backend usq-star-demo_livesource_com              if usq_akamai_src star-demo_livesource_com
+    - use_backend usq-star-uat_livesource_com               if usq_akamai_src star-qa_livesource_com
+    - use_backend usq-livesource_com-catchall               if usq_akamai_src star_livesource_com
+    - http-request deny                                     if !usq_akamai_src pulse-global_livesource_com
+    - http-request deny                                     if !usq_akamai_src pulse-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src pulse-demo_livesource_com
+    - http-request deny                                     if !usq_akamai_src services02_livesource_com
+    - http-request deny                                     if !usq_akamai_src services-api-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-demo_livesource_com
+    - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
+    - http-request deny                                     if !usq_akamai_src star_livesource_com
