@@ -88,11 +88,11 @@
         target_system_name: "fleetSystemApacProd1"
       when: dc == "AU2"
 
-    - name: Wait for Iris run - timeout 30mins, poll every 10s
+    - name: Wait for Iris run - timeout 60mins, poll every 10s
       wait_for:
         path: "{{ iris_run_directory }}/{{ iris_run_file }}"
         sleep: 10
-        timeout: 1800
+        timeout: 3600
       register: iris_run_time
       vars:
         iris_run_directory: "/var/log/iris"
