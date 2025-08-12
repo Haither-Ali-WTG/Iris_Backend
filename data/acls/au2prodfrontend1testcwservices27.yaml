@@ -39,9 +39,3 @@ glow_webservice_path:
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
-
-webtracker-test_axima_com_au:
-  description: |-
-    Custom Url for ASACWT
-  tests:
-    - hdr(host),field(1,:) -m reg -i webtracker-test.\axima.\com.\au$
