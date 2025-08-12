@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250811.1
-  # Mon Aug 11 05:41:58 UTC 2025 -- Mon Aug 11 15:41:58 AEST 2025
+  # Dante Build Artifact 20250812.1
+  # Tue Aug 12 00:41:13 UTC 2025 -- Tue Aug 12 10:41:13 AEST 2025
   #
-  # Merge pull request 38485 from dante_artifact_upgrade into master
-  # c67e1ba061296a0a36102d21d183fbffbc5d37ec
-  dante_build_id: '1433768'
+  # Merge pull request 38515 from dante_artifact_upgrade into master
+  # f341e23f9400591464ce273c5ca4f3972e1cb6c4
+  dante_build_id: '1434496'
 
-  # virgil 20250811.6
-  # Mon Aug 11 05:05:06 UTC 2025 -- Mon Aug 11 15:05:06 AEST 2025
+  # virgil 20250812.2
+  # Tue Aug 12 00:05:59 UTC 2025 -- Tue Aug 12 10:05:59 AEST 2025
   #
-  # Merged PR 38478: amit-adding-descriptions
-  # 63644170b51083a9c23b8e82c215ac6ee919d6ca
-  virgil_build_id: '1433737'
+  # Merge pull request 38507 from virgil_python_upgrade into master
+  # c188eeccc2322f1943ed62bc6d42dd985ded4cd7
+  virgil_build_id: '1434440'
 
-  # sqlbilling 20250806.2
-  # Wed Aug  6 11:44:23 UTC 2025 -- Wed Aug  6 21:44:23 AEST 2025
+  # sqlbilling 20250812.2
+  # Mon Aug 11 15:12:10 UTC 2025 -- Tue Aug 12 01:12:10 AEST 2025
   #
-  # Merged PR 38317: AU2 SQLBillingAdd CS02036727 CS02039909
-  # 18231402e5ced3fb6ca18be4e3138600e6ec59c1
-  sqlbilling_build_id: '1429645'
+  # Merged PR 38505: AddSQLReadOnlyIP CS02044392 US2
+  # d0245c028f5cdda0748318122259344241c75504
+  sqlbilling_build_id: '1434127'
