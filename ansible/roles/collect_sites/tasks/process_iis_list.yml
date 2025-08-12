@@ -55,7 +55,8 @@
   command: >-
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp --recursive
-    iis_sites/{{ inventory_hostname }} {{ s3_iris_bucket }}{{ inventory_hostname }}
+    iis_sites/{{ inventory_hostname }}
+    {{ s3_iris_bucket }}{{ s3_folder | default(default_s3_folder) }}/{{ inventory_hostname }}
   changed_when: true
   delegate_to: localhost
   when:
