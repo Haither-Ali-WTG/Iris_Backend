@@ -17,6 +17,7 @@ https_redirect:
     - redirect scheme https if star_webcampaign_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webprint_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webtracker_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if !{ ssl_fc }
 
 cw1_use_dynamic_backend_path:
   description: |-
