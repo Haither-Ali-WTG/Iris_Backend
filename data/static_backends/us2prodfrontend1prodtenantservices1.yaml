@@ -646,3 +646,157 @@ usq-services-api-qa.livesource.com:
     cookie SERVICESAPIQACCOOKIE insert indirect nocache dynamic secure maxlife 3600
     server chghqasvc01 10.4.207.15:80 check
     server chghqasvc02 10.4.207.16:80 check
+
+br1-3cycles.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl016-3cycles
+      ip: 10.4.160.15
+      port: 8080
+      settings: check
+
+br1-3cycles.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-3cycles_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ 3cycles.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl016-3cycles 10.4.160.15:443 ssl check verify none
+
+br1-abccomex.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl033-abccomex
+      ip: 10.4.160.45
+      port: 8080
+      settings: check
+
+br1-abccomex.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-abccomex_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ abccomex.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl033-abccomex 10.4.160.45:443 ssl check verify none
+
+br1-abrao.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl079-abrao
+      ip: 10.4.160.157
+      port: 8080
+      settings: check
+
+br1-abrao.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-abrao_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ abrao.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl079-abrao 10.4.160.157:443 ssl check verify none
+
+br1-acetradeways.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl040-acetradeways
+      ip: 10.4.160.61
+      port: 8080
+      settings: check
+
+br1-acetradeways.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-acetradeways_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ acetradeways.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl040-acetradeways 10.4.160.61:443 ssl check verify none
+
+br1-acomex.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl082-acomex
+      ip: 10.4.160.161
+      port: 8080
+      settings: check
+
+br1-acomex.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend acomex_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ acomex.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl082-acomex 10.4.160.161:443 ssl check verify none
+
+br1-aduana.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl089-aduana
+      ip: 10.4.160.174
+      port: 8080
+      settings: check
+
+br1-aduana.bysoft.com.br-iDocuments:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl089-aduana
+      ip: 10.4.160.174
+      port: 8090
+      settings: check
+
+br1-aduana.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-aduana_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduana.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl089-aduana 10.4.160.174:443 ssl check verify none
+
+br1-aduanaglobal.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl076-aduanaglobal
+      ip: 10.4.160.152
+      port: 8080
+      settings: check
+
+br1-aduanaglobal.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-aduanaglobal_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduanaglobal.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl076-aduanaglobal 10.4.160.152:443 ssl check verify none
+
+br1-aduanalog.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2br1webl038-aduanalog
+      ip: 10.4.160.59
+      port: 8080
+      settings: check
+
+br1-aduanalog.bysoft.com.br-iPortal:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  full_override: |
+    backend br1-aduanalog_bysoft_com_br-iPortal
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduanalog.bysoft.com.br
+    http-check expect status 302
+    server us2br1webl038-aduanalog 10.4.160.59:443 ssl check verify none
