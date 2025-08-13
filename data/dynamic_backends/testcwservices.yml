@@ -23,7 +23,7 @@
   cookie:
     name: WEBSVC
     enabled: true
-  name_suffix: '-portals'
+  name_suffix: ''
 
 # Glow (Services)
 - name_regex: ^svc-[A-Za-z0-9]{6}\.(wisegrid|wisetechglobal)\.(net|cn)$
