@@ -7,16 +7,16 @@ variables:
   # 9ff2714169ea04a684dfcfbbc20415762a1b8f37
   dante_build_id: '1434634'
 
-  # virgil 20250812.4
-  # Tue Aug 12 01:35:56 UTC 2025 -- Tue Aug 12 11:35:56 AEST 2025
+  # virgil 20250814.3
+  # Wed Aug 13 23:55:03 UTC 2025 -- Thu Aug 14 09:55:03 AEST 2025
   #
-  # Merged PR 38481: WI00925827 config au2wp-svir-013/031 from LACP to trunk only
-  # bb37d6f4b5cae745f6e740c46d571ff2a27bcfe0
-  virgil_build_id: '1434574'
+  # Merged PR 38589: consolidating Hyper-V VLANs into one profile
+  # d1e33aab765350279cb933e8e67127d9e2b3a737
+  virgil_build_id: '1436304'
 
-  # sqlbilling 20250812.2
-  # Mon Aug 11 15:12:10 UTC 2025 -- Tue Aug 12 01:12:10 AEST 2025
+  # sqlbilling 20250814.3
+  # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
   #
-  # Merged PR 38505: AddSQLReadOnlyIP CS02044392 US2
-  # d0245c028f5cdda0748318122259344241c75504
-  sqlbilling_build_id: '1434127'
+  # Merged PR 38587: AddSQLReadOnlyIP CS02046109 US2
+  # acd1084a4ddf349a808cfe481eaf0802e99ff2c9
+  sqlbilling_build_id: '1436128'
