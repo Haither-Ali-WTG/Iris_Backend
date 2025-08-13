@@ -117,23 +117,19 @@
         all_host_ports: >-
           [
             {{ stats.ports.web }},
-            {% for port in frontend.ports.plaintext %}
+            {% for port in frontend.ports.plaintext | default([]) %}
             {{ port }},
             {% endfor %}
-            {% if frontend.proxy_ports | default([]) %}
-            {% for port in frontend.proxy_ports.plaintext %}
+            {% for port in frontend.proxy_ports.plaintext | default([]) %}
             {{ port }},
             {% endfor %}
-            {% endif %}
             {% if certificates | default([]) %}
-            {% for port in frontend.ports.ssl %}
+            {% for port in frontend.ports.ssl | default([]) %}
             {{ port }},
             {% endfor %}
-            {% if frontend.proxy_ports | default([]) %}
-            {% for port in frontend.proxy_ports.ssl %}
+            {% for port in frontend.proxy_ports.ssl | default([]) %}
             {{ port }},
             {% endfor %}
-            {% endif %}
             {% endif %}
           ]
         port_prealloc_pairs: >-
@@ -175,6 +171,13 @@
           }
         bad_ports: >-
           {{ ports_in_prealloc | intersect(container.port_map) }}
+
+    - name: Ensure docker_port_map is not empty
+      assert:
+        that: docker_port_map
+        quiet: yes
+        fail_msg: >-
+          No ports are mapped for container
 
     - name: Check for port map and port preallocation conflict
       assert:
