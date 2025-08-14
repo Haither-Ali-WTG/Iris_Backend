@@ -41,6 +41,9 @@ individual_instance_defaults:
     ssl_max: TLSv1.3
 
   frontend:
+    ports:
+      plaintext: [80]
+      ssl: [443]
     maxconn: 200000
     fullconn: 5000
 
