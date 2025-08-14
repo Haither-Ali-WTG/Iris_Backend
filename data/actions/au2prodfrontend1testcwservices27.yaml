@@ -28,7 +28,7 @@ cw1_use_dynamic_backend_path:
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
 
-webtrackertest_axima_com_au:
+webtracker-test_axima_com_au:
   description: |-
     Custom url for ASACWT
   order: 80
