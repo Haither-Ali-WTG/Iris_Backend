@@ -4,7 +4,7 @@ br1_response_header:
     Ensure correct MIME type for Bysoft application updates
   order: 60
   actions:
-    - http-response set-header Content-Type application/java-archive if br1-updates_bysoft_com_br br1-is_java_application
+    - http-response set-header Content-Type application/java-archive if br1-updates_bysoft_com_br is_java_application
     - http-response del-header X-Content-Type-Options if br1-updates_bysoft_com_br
 
 nowww_redirect:

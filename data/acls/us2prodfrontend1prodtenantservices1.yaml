@@ -368,7 +368,7 @@ br1-mnfe_path:
   tests:
     - path_dir mnfe
 
-br1-is_java_application:
+is_java_application:
   description: "The URL ends wwith .ear, .war, or .rar, which are all Java application types"
   tests:
     - path_end .ear .war .rar
