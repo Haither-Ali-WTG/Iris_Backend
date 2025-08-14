@@ -289,7 +289,6 @@ bysoft_backend_selection:
       - use_backend br1-wecomex_bysoft_com_br-iPortal                   if br1-ecscomex_bysoft_com_br br1-iportal_path
       - use_backend br1-wecomex_bysoft_com_br-iPortal                   if br1-wecomex_bysoft_com_br br1-iportal_path
       - use_backend br1-wildflyteste_bysoft_com_br-iPortal              if br1-wildflyteste_bysoft_com_br br1-iportal_path
-      - use_backend br1-yesfoco_bysoft_com_br-iPortal                   if br1-yesfoco_bysoft_com_br br1-iportal_path
       - use_backend br1-yusen_bysoft_com_br-iPortal                     if br1-yusen_bysoft_com_br br1-iportal_path
       - use_backend br1-yusenhomologacao_bysoft_com_br-iPortal          if br1-yusenhomologacao_bysoft_com_br br1-iportal_path
       - use_backend br1-zhycron_bysoft_com_br-iPortal                   if br1-zhycron_bysoft_com_br br1-iportal_path
@@ -306,7 +305,7 @@ bysoft_backend_selection:
       - use_backend br1-affinity_bysoft_com_br                          if br1-affinity_bysoft_com_br
       - use_backend br1-agenciaraposo_bysoft_com_br                     if br1-agenciaraposo_bysoft_com_br
       - use_backend br1-agile_bysoft_com_br                             if br1-agile_bysoft_com_br
-      - use_backend br1-agility_bysoft_com_br                           if br1-agility_bysoft_com_br
+      - use_backend br1-agility_bysoft_com_br                           if br1-agility_bysoft_com_br || br1-dsv_bysoft_com_br
       - use_backend br1-agl_bysoft_com_br                               if br1-agl_bysoft_com_br
       - use_backend br1-ahscomex_bysoft_com_br                          if br1-ahscomex_bysoft_com_br
       - use_backend br1-akhava_bysoft_com_br                            if br1-akhava_bysoft_com_br
@@ -351,8 +350,7 @@ bysoft_backend_selection:
       - use_backend br1-gaclogistica_bysoft_com_br                      if br1-gaclogistica_bysoft_com_br
       - use_backend br1-gamalog_bysoft_com_br                           if br1-gamalog_bysoft_com_br
       - use_backend br1-gefco_bysoft_com_br                             if br1-gefco_bysoft_com_br
-      - use_backend br1-geslogistica_bysoft_com_br                      if br1-geslogistica_bysoft_com_br
-      - use_backend br1-geslogistica_bysoft_com_br                      if br1-logisticsplus_bysoft_com_br
+      - use_backend br1-geslogistica_bysoft_com_br                      if br1-geslogistica_bysoft_com_br || br1-logisticsplus_bysoft_com_br
       - use_backend br1-global_bysoft_com_br                            if br1-global_bysoft_com_br
       - use_backend br1-globalfreight_bysoft_com_br                     if br1-globalfreight_bysoft_com_br
       - use_backend br1-go2uti_bysoft_com_br                            if br1-go2uti_bysoft_com_br
@@ -435,10 +433,8 @@ bysoft_backend_selection:
       - use_backend br1-viatriangulo_bysoft_com_br                      if br1-viatriangulo_bysoft_com_br
       - use_backend br1-visaointegrada_bysoft_com_br                    if br1-visaointegrada_bysoft_com_br
       - use_backend br1-vpmdc_bysoft_com_br                             if br1-vpmdc_bysoft_com_br
-      - use_backend br1-wecomex_bysoft_com_br                           if br1-ecscomex_bysoft_com_br
-      - use_backend br1-wecomex_bysoft_com_br                           if br1-wecomex_bysoft_com_br
+      - use_backend br1-wecomex_bysoft_com_br                           if br1-wecomex_bysoft_com_br || br1-ecscomex_bysoft_com_br
       - use_backend br1-wildflyteste_bysoft_com_br                      if br1-wildflyteste_bysoft_com_br
-      - use_backend br1-yesfoco_bysoft_com_br                           if br1-yesfoco_bysoft_com_br
       - use_backend br1-yusen_bysoft_com_br                             if br1-yusen_bysoft_com_br
       - use_backend br1-yusenhomologacao_bysoft_com_br                  if br1-yusenhomologacao_bysoft_com_br
       - use_backend br1-zhycron_bysoft_com_br                           if br1-zhycron_bysoft_com_br
