@@ -44,6 +44,11 @@
   # This block groups all tasks related to the conntrack feature.
   # It will only run if all prerequisite checks pass.
   become: yes
+  when:
+    - virgil_hostname == 'au2lbl00889'
+    - >
+      (files_check.results | selectattr('stat.exists', 'equalto', true) | list | length) ==
+      (files_check.results | length)
   block:
     - name: Create conntrack log directory
       # Creates the directory where metrics will be written.
@@ -65,8 +70,3 @@
         group: root
         mode: "u=rw,g=r,o=r"
       notify: Restart telegraf
-  when:
-    - virgil_hostname == 'au2lbl00889'
-    - >
-      (files_check.results | selectattr('stat.exists', 'equalto', true) | list | length) ==
-      (files_check.results | length)
