@@ -1,5 +1,5 @@
 ---
-br1-response_header:
+br1_response_header:
   description: |-
     Ensure correct MIME type for Bysoft application updates
   order: 60
@@ -118,327 +118,327 @@ bysoft_backend_selection:
     Bysoft-specific backend selection. Handle subdirectories first, then the base domains.
   order: 84
   actions:
-      - use_backend br1-3cycles_bysoft_com_br-iPortal                   if br1-3cycles_bysoft_com_br br1-iportal_path
-      - use_backend br1-abccomex_bysoft_com_br-iPortal                  if br1-abccomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-abrao_bysoft_com_br-iPortal                     if br1-abrao_bysoft_com_br br1-iportal_path
-      - use_backend br1-acetradeways_bysoft_com_br-iPortal              if br1-acetradeways_bysoft_com_br br1-iportal_path
-      - use_backend br1-acomex_bysoft_com_br-iPortal                    if br1-acomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-aduana_bysoft_com_br-iDocuments                 if br1-aduana_bysoft_com_br br1-idocuments_path
-      - use_backend br1-aduana_bysoft_com_br-iPortal                    if br1-aduana_bysoft_com_br br1-iportal_path
-      - use_backend br1-aduanaglobal_bysoft_com_br-iPortal              if br1-aduanaglobal_bysoft_com_br br1-iportal_path
-      - use_backend br1-aduanalog_bysoft_com_br-iPortal                 if br1-aduanalog_bysoft_com_br br1-iportal_path
-      - use_backend br1-aeroimport_bysoft_com_br-iDocuments             if br1-aeroimport_bysoft_com_br br1-idocuments_path
-      - use_backend br1-aeroimport_bysoft_com_br-iPortal                if br1-aeroimport_bysoft_com_br br1-iportal_path
-      - use_backend br1-affinity_bysoft_com_br-iDocuments               if br1-affinity_bysoft_com_br br1-idocuments_path
-      - use_backend br1-affinity_bysoft_com_br-iPortal                  if br1-affinity_bysoft_com_br br1-iportal_path
-      - use_backend br1-agenciaraposo_bysoft_com_br-iPortal             if br1-agenciaraposo_bysoft_com_br br1-iportal_path
-      - use_backend br1-agile_bysoft_com_br-iDocuments                  if br1-agile_bysoft_com_br br1-idocuments_path
-      - use_backend br1-agile_bysoft_com_br-iPortal                     if br1-agile_bysoft_com_br br1-iportal_path
-      - use_backend br1-agility_bysoft_com_br-iPortal                   if br1-agility_bysoft_com_br br1-iportal_path
-      - use_backend br1-agl_bysoft_com_br-iDocuments                    if br1-agl_bysoft_com_br br1-idocuments_path
-      - use_backend br1-agl_bysoft_com_br-iPortal                       if br1-agl_bysoft_com_br br1-iportal_path
-      - use_backend br1-ahscomex_bysoft_com_br-iPortal                  if br1-ahscomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-akhava_bysoft_com_br-iPortal                    if br1-akhava_bysoft_com_br br1-iportal_path
-      - use_backend br1-alca_bysoft_com_br-iPortal                      if br1-alca_bysoft_com_br br1-iportal_path
-      - use_backend br1-allog_bysoft_com_br-iPortal                     if br1-allog_bysoft_com_br br1-iportal_path
-      - use_backend br1-amr_bysoft_com_br-iDocuments                    if br1-amr_bysoft_com_br br1-idocuments_path
-      - use_backend br1-amr_bysoft_com_br-iPortal                       if br1-amr_bysoft_com_br br1-iportal_path
-      - use_backend br1-asaassessoria_bysoft_com_br-iPortal             if br1-asaassessoria_bysoft_com_br br1-iportal_path
-      - use_backend br1-atlantis_bysoft_com_br-iPortal                  if br1-atlantis_bysoft_com_br br1-iportal_path
-      - use_backend br1-atlas_bysoft_com_br-iPortal                     if br1-atlas_bysoft_com_br br1-iportal_path
-      - use_backend br1-atualiassessoria_bysoft_com_br-iDocuments       if br1-atualiassessoria_bysoft_com_br br1-idocuments_path
-      - use_backend br1-atualiassessoria_bysoft_com_br-iPortal          if br1-atualiassessoria_bysoft_com_br br1-iportal_path
-      - use_backend br1-auston_bysoft_com_br-iPortal                    if br1-auston_bysoft_com_br br1-iportal_path
-      - use_backend br1-azsolutio_bysoft_com_br-iPortal                 if br1-azsolutio_bysoft_com_br br1-iportal_path
-      - use_backend br1-baraodespachos_bysoft_com_br-iPortal            if br1-baraodespachos_bysoft_com_br br1-iportal_path
-      - use_backend br1-bdp_bysoft_com_br-iPortal                       if br1-bdp_bysoft_com_br br1-iportal_path
-      - use_backend br1-bechtrans_bysoft_com_br-iDocuments              if br1-bechtrans_bysoft_com_br br1-idocuments_path
-      - use_backend br1-bechtrans_bysoft_com_br-iPortal                 if br1-bechtrans_bysoft_com_br br1-iportal_path
-      - use_backend br1-brasporto_bysoft_com_br-iDocuments              if br1-brasporto_bysoft_com_br br1-idocuments_path
-      - use_backend br1-brasporto_bysoft_com_br-iPortal                 if br1-brasporto_bysoft_com_br br1-iportal_path
-      - use_backend br1-budson_bysoft_com_br-iPortal                    if br1-budson_bysoft_com_br br1-iportal_path
-      - use_backend br1-carreirolog_bysoft_com_br-iPortal               if br1-carreirolog_bysoft_com_br br1-iportal_path
-      - use_backend br1-cne_bysoft_com_br-iPortal                       if br1-cne_bysoft_com_br br1-iportal_path
-      - use_backend br1-comexbh_bysoft_com_br-iPortal                   if br1-comexbh_byosft_com_br br1-iportal_path
-      - use_backend br1-confidence_bysoft_com_br-iPortal                if br1-confidence_bysoft_com_br br1-iportal_path
-      - use_backend br1-correbrokers_bysoft_com_br-iPortal              if br1-correbrokers_bysoft_com_br br1-iportal_path
-      - use_backend br1-cti_bysoft_com_br-iDocuments                    if br1-cti_bysoft_com_br br1-idocuments_path
-      - use_backend br1-cti_bysoft_com_br-iPortal                       if br1-cti_bysoft_com_br br1-iportal_path
-      - use_backend br1-dapepe_bysoft_com_br-iPortal                    if br1-dapepe_bysoft_com_br br1-iportal_path
-      - use_backend br1-dasco_bysoft_com_br-iPortal                     if br1-dasco_bysoft_com_br br1-iportal_path
-      - use_backend br1-despachosaduanneirosja_bysoft_com_br-iPortal    if br1-despachosaduanneirosja_bysoft_com_br br1-iportal_path
-      - use_backend br1-dhl_bysoft_com_br-iDocuments                    if br1-dhl_bysoft_com_br br1-idocuments_path
-      - use_backend br1-dhl_bysoft_com_br-iPortal                       if br1-dhl_bysoft_com_br br1-iportal_path
-      - use_backend br1-dhlhomologacao_bysoft_com_br-iDocuments         if br1-dhlhomologacao_bysoft_com_br br1-idocuments_path
-      - use_backend br1-dhlhomologacao_bysoft_com_br-iPortal            if br1-dhlhomologacao_bysoft_com_br br1-iportal_path
-      - use_backend br1-diniz_bysoft_com_br-iPortal                     if br1-diniz_bysoft_com_br br1-iportal_path
-      - use_backend br1-direct_bysoft_com_br-iPortal                    if br1-direct_bysoft_com_br br1-iportal_path
-      - use_backend br1-directlogistica_bysoft_com_br-iDocuments        if br1-directlogistica_bysoft_com_br br1-idocuments_path
-      - use_backend br1-directlogistica_bysoft_com_br-iPortal           if br1-directlogistica_bysoft_com_br br1-iportal_path
-      - use_backend br1-dlt_bysoft_com_br-iPortal                       if br1-dlt_bysoft_com_br br1-iportal_path
-      - use_backend br1-dogana_bysoft_com_br-iPortal                    if br1-dogana_bysoft_com_br br1-iportal_path
-      - use_backend br1-dsv_bysoft_com_br-iPortal                       if br1-dsv_bysoft_com_br br1-iportal_path
-      - use_backend br1-eficienciacomex_bysoft_com_br-iPortal           if br1-eficienciacomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-euronorte_bysoft_com_br-iPortal                 if br1-euronorte_bysoft_com_br br1-iportal_path
-      - use_backend br1-excommerce_bysoft_com_br-iPortal                if br1-excommerce_bysoft_com_br br1-iportal_path
-      - use_backend br1-faxe_bysoft_com_br-iPortal                      if br1-faxe_bysoft_com_br br1-iportal_path
-      - use_backend br1-fdafermac_bysoft_com_br-iPortal                 if br1-fdafermac_bysoft_com_br br1-iportal_path
-      - use_backend br1-ferfreight_bysoft_com_br-iPortal                if br1-ferfreight_bysoft_com_br br1-iportal_path
-      - use_backend br1-focus_bysoft_com_br-iPortal                     if br1-focus_bysoft_com_br br1-iportal_path
-      - use_backend br1-fortal_bysoft_com_br-iPortal                    if br1-fortal_bysoft_com_br br1-iportal_path
-      - use_backend br1-gaclogistica_bysoft_com_br-iDocuments           if br1-gaclogistica_bysoft_com_br br1-idocuments_path
-      - use_backend br1-gaclogistica_bysoft_com_br-iPortal              if br1-gaclogistica_bysoft_com_br br1-iportal_path
-      - use_backend br1-gamalog_bysoft_com_br-iPortal                   if br1-gamalog_bysoft_com_br br1-iportal_path
-      - use_backend br1-gefco_bysoft_com_br-iPortal                     if br1-gefco_bysoft_com_br br1-iportal_path
-      - use_backend br1-geslogistica_bysoft_com_br-iDocuments           if br1-geslogistica_bysoft_com_br br1-idocuments_path
-      - use_backend br1-geslogistica_bysoft_com_br-iDocuments           if br1-logisticsplus_bysoft_com_br br1-idocuments_path
-      - use_backend br1-geslogistica_bysoft_com_br-iPortal              if br1-geslogistica_bysoft_com_br br1-iportal_path
-      - use_backend br1-geslogistica_bysoft_com_br-iPortal              if br1-logisticsplus_bysoft_com_br br1-iportal_path
-      - use_backend br1-global_bysoft_com_br-iPortal                    if br1-global_bysoft_com_br br1-iportal_path
-      - use_backend br1-globalfreight_bysoft_com_br-iPortal             if br1-globalfreight_bysoft_com_br br1-iportal_path
-      - use_backend br1-go2uti_bysoft_com_br-iPortal                    if br1-go2uti_bysoft_com_br br1-iportal_path
-      - use_backend br1-goldmex_bysoft_com_br-iPortal                   if br1-goldmex_bysoft_com_br br1-iportal_path
-      - use_backend br1-goncalvesfilhos_bysoft_com_br-iPortal           if br1-goncalvesfilhos_bysoft_com_br br1-iportal_path
-      - use_backend br1-gpcargo_bysoft_com_br-iPortal                   if br1-gpcargo_bysoft_com_br br1-iportal_path
-      - use_backend br1-harpy_bysoft_com_br-iPortal                     if br1-harpy_bysoft_com_br br1-iportal_path
-      - use_backend br1-homologacao_bysoft_com_br-iDocuments            if br1-homologacao_bysoft_com_br br1-idocuments_path
-      - use_backend br1-homologacao_bysoft_com_br-iPortal               if br1-homologacao_bysoft_com_br br1-iportal_path
-      - use_backend br1-iglobal_bysoft_com_br-iPortal                   if br1-iglobal_bysoft_com_br br1-iportal_path
-      - use_backend br1-imporcate_bysoft_com_br-iPortal                 if br1-imporcate_bysoft_com_br br1-iportal_path
-      - use_backend br1-indaia_bysoft_com_br-iPortal                    if br1-indaia_bysoft_com_br br1-iportal_path
-      - use_backend br1-intercargofranca_bysoft_com_br-iPortal          if br1-intercargofranca_bysoft_com_br br1-iportal_path
-      - use_backend br1-interfreight_bysoft_com_br-iPortal              if br1-interfreight_bysoft_com_br br1-iportal_path
-      - use_backend br1-internacional_bysoft_com_br-iPortal             if br1-internacional_bysoft_com_br br1-iportal_path
-      - use_backend br1-intranding_bysoft_com_br-iDocuments             if br1-intranding_bysoft_com_br br1-idocuments_path
-      - use_backend br1-intranding_bysoft_com_br-iPortal                if br1-intranding_bysoft_com_br br1-iportal_path
-      - use_backend br1-isavix_bysoft_com_br-iPortal                    if br1-isavix_bysoft_com_br br1-iportal_path
-      - use_backend br1-itatrans_bysoft_com_br-iPortal                  if br1-itatrans_bysoft_com_br br1-iportal_path
-      - use_backend br1-jejcomercio_bysoft_com_br-iPortal               if br1-jejcomercio_bysoft_com_br br1-iportal_path
-      - use_backend br1-jmaduaneira_bysoft_com_br-iPortal               if br1-jmaduaneira_bysoft_com_br br1-iportal_path
-      - use_backend br1-konig_bysoft_com_br-iPortal                     if br1-konig_bysoft_com_br br1-iportal_path
-      - use_backend br1-kotah_bysoft_com_br-iPortal                     if br1-kotah_bysoft_com_br br1-iportal_path
-      - use_backend br1-leschaco_bysoft_com_br-iDocuments               if br1-leschaco_bysoft_com_br br1-idocuments_path
-      - use_backend br1-leschaco_bysoft_com_br-iPortal                  if br1-leschaco_bysoft_com_br br1-iportal_path
-      - use_backend br1-logistran_bysoft_com_br-iPortal                 if br1-logistran_bysoft_com_br br1-iportal_path
-      - use_backend br1-lt_bysoft_com_br-iPortal                        if br1-lt_bysoft_com_br br1-iportal_path
-      - use_backend br1-luxor_bysoft_com_br-iPortal                     if br1-luxor_bysoft_com_br br1-iportal_path
-      - use_backend br1-maniga_bysoft_com_br-iPortal                    if br1-maniga_bysoft_com_br br1-iportal_path
-      - use_backend br1-martinsdespachos_bysoft_com_br-iPortal          if br1-martinsdespachos_bysoft_com_br br1-iportal_path
-      - use_backend br1-martinsdespachoshomolog_bysoft_com_br-iPortal   if br1-martinsdespachoshomolog_bysoft_com_br br1-iportal_path
-      - use_backend br1-masterfreight_bysoft_com_br-iPortal             if br1-masterfreight_bysoft_com_br br1-iportal_path
-      - use_backend br1-masterfreighthom_bysoft_com_br-iPortal          if br1-masterfreighthom_bysoft_com_br br1-iportal_path
-      - use_backend br1-mastersul_bysoft_com_br-iPortal                 if br1-mastersul_bysoft_com_br br1-iportal_path
-      - use_backend br1-mastersul_bysoft_com_br-mnfe                    if br1-mastersul_bysoft_com_br br1-mnfe_path
-      - use_backend br1-mbdespachos_bysoft_com_br-iPortal               if br1-mbdespachos_bysoft_com_br br1-iportal_path
-      - use_backend br1-mebroker_bysoft_com_br-iPortal                  if br1-mebroker_bysoft_com_br br1-iportal_path
-      - use_backend br1-mercante_bysoft_com_br-iPortal                  if br1-mercante_bysoft_com_br br1-iportal_path
-      - use_backend br1-mhinternacional_bysoft_com_br-iPortal           if br1-mhinternacional_bysoft_com_br br1-iportal_path
-      - use_backend br1-mtn_bysoft_com_br-iPortal                       if br1-mtn_bysoft_com_br br1-iportal_path
-      - use_backend br1-multicargo_bysoft_com_br-iPortal                if br1-multicargo_bysoft_com_br br1-iportal_path
-      - use_backend br1-mundial_bysoft_com_br-iPortal                   if br1-mundial_bysoft_com_br br1-iportal_path
-      - use_backend br1-mundialassesplena_bysoft_com_br-iPortal         if br1-mundialassesplena_bysoft_com_br br1-iportal_path
-      - use_backend br1-mvcaye_bysoft_com_br-iPortal                    if br1-mvcaye_bysoft_com_br br1-iportal_path
-      - use_backend br1-ncxaduana_bysoft_com_br-iPortal                 if br1-ncxaduana_bysoft_com_br br1-iportal_path
-      - use_backend br1-newslogistics_bysoft_com_br-iPortal             if br1-newslogistics_bysoft_com_br br1-iportal_path
-      - use_backend br1-nowlogistics_bysoft_com_br-iPortal              if br1-nowlogistics_bysoft_com_br br1-iportal_path
-      - use_backend br1-nuno_bysoft_com_br-iDocuments                   if br1-nuno_bysoft_com_br br1-idocuments_path
-      - use_backend br1-nuno_bysoft_com_br-iPortal                      if br1-nuno_bysoft_com_br br1-iportal_path
-      - use_backend br1-onix_bysoft_com_br-iPortal                      if br1-onix_bysoft_com_br br1-iportal_path
-      - use_backend br1-orttsa_bysoft_com_br-iPortal                    if br1-orttsa_bysoft_com_br br1-iportal_path
-      - use_backend br1-paivacomex_bysoft_com_br-iPortal                if br1-paivacomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-paraduana_bysoft_com_br-iPortal                 if br1-paraduana_bysoft_com_br br1-iportal_path
-      - use_backend br1-parrocha_bysoft_com_br-iDocuments               if br1-parrocha_bysoft_com_br br1-idocuments_path
-      - use_backend br1-parrocha_bysoft_com_br-iPortal                  if br1-parrocha_bysoft_com_br br1-iportal_path
-      - use_backend br1-partnerag_bysoft_com_br-iDocuments              if br1-partnerag_bysoft_com_br br1-idocuments_path
-      - use_backend br1-partnerag_bysoft_com_br-iPortal                 if br1-partnerag_bysoft_com_br br1-iportal_path
-      - use_backend br1-paulorocha_bysoft_com_br-iPortal                if br1-paulorocha_bysoft_com_br br1-iportal_path
-      - use_backend br1-pdfs_bysoft_com_br-iPortal                      if br1-pdfs_bysoft_com_br br1-iportal_path
-      - use_backend br1-pharmacomex_bysoft_com_br-iPortal               if br1-pharmacomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-pmdespachos_bysoft_com_br-iPortal               if br1-pmdespachos_bysoft_com_br br1-iportal_path
-      - use_backend br1-portimex_bysoft_com_br-iPortal                  if br1-portimex_bysoft_com_br br1-iportal_path
-      - use_backend br1-raxbrasil_bysoft_com_br-iPortal                 if br1-raxbrasil_bysoft_com_br br1-iportal_path
-      - use_backend br1-rhenus_bysoft_com_br-iPortal                    if br1-rhenus_bysoft_com_br br1-iportal_path
-      - use_backend br1-ricardo_bysoft_com_br-iPortal                   if br1-ricardo_bysoft_com_br br1-iportal_path
-      - use_backend br1-roquepacheco_bysoft_com_br-iDocuments           if br1-roquepacheco_bysoft_com_br br1-idocuments_path
-      - use_backend br1-roquepacheco_bysoft_com_br-iPortal              if br1-roquepacheco_bysoft_com_br br1-iportal_path
-      - use_backend br1-ruckhaber_bysoft_com_br-iPortal                 if br1-ruckhaber_bysoft_com_br br1-iportal_path
-      - use_backend br1-samsung_bysoft_com_br-iPortal                   if br1-samsung_bysoft_com_br br1-iportal_path
-      - use_backend br1-sanmar_bysoft_com_br-iPortal                    if br1-sanmar_bysoft_com_br br1-iportal_path
-      - use_backend br1-santosbay_bysoft_com_br-iPortal                 if br1-santosbay_bysoft_com_br br1-iportal_path
-      - use_backend br1-saoborja_bysoft_com_br-iPortal                  if br1-saoborja_bysoft_com_br br1-iportal_path
-      - use_backend br1-saoborja_bysoft_com_br-iPropulsor               if br1-saoborja_bysoft_com_br br1-ipropulsor_path
-      - use_backend br1-satu_bysoft_com_br-iPortal                      if br1-satu_bysoft_com_br br1-iportal_path
-      - use_backend br1-sei_bysoft_com_br-iDocuments                    if br1-sei_bysoft_com_br br1-idocuments_path
-      - use_backend br1-sei_bysoft_com_br-iPortal                       if br1-sei_bysoft_com_br br1-iportal_path
-      - use_backend br1-self_bysoft_com_br-iPortal                      if br1-self_bysoft_com_br br1-iportal_path
-      - use_backend br1-sideralcomex_bysoft_com_br-iPortal              if br1-sideralcomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-silbran_bysoft_com_br-iPortal                   if br1-silbran_bysoft_com_br br1-iportal_path
-      - use_backend br1-simetrans_bysoft_com_br-iPortal                 if br1-simetrans_bysoft_com_br br1-iportal_path
-      - use_backend br1-spacecargo_bysoft_com_br-iPortal                if br1-spacecargo_bysoft_com_br br1-iportal_path
-      - use_backend br1-swiftlog_bysoft_com_br-iPortal                  if br1-swiftlog_bysoft_com_br br1-iportal_path
-      - use_backend br1-tasklogistica_bysoft_com_br-iPortal             if br1-tasklogistica_bysoft_com_br br1-iportal_path
-      - use_backend br1-tradehunter_bysoft_com_br-iPortal               if br1-tradehunter_bysoft_com_br br1-iportal_path
-      - use_backend br1-trediex_bysoft_com_br-iDocuments                if br1-trediex_bysoft_com_br br1-idocuments_path
-      - use_backend br1-trediex_bysoft_com_br-iPortal                   if br1-trediex_bysoft_com_br br1-iportal_path
-      - use_backend br1-trustcargo_bysoft_com_br-iPortal                if br1-trustcargo_bysoft_com_br br1-iportal_path
-      - use_backend br1-tws_bysoft_com_br-iPortal                       if br1-tws_bysoft_com_br br1-iportal_path
-      - use_backend br1-ups_bysoft_com_br-iPortal                       if br1-ups_bysoft_com_br br1-iportal_path
-      - use_backend br1-viatriangulo_bysoft_com_br-iPortal              if br1-viatriangulo_bysoft_com_br br1-iportal_path
-      - use_backend br1-visaointegrada_bysoft_com_br-iPortal            if br1-visaointegrada_bysoft_com_br br1-iportal_path
-      - use_backend br1-vpmdc_bysoft_com_br-iPortal                     if br1-vpmdc_bysoft_com_br br1-iportal_path
-      - use_backend br1-wecomex_bysoft_com_br-iPortal                   if br1-ecscomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-wecomex_bysoft_com_br-iPortal                   if br1-wecomex_bysoft_com_br br1-iportal_path
-      - use_backend br1-wildflyteste_bysoft_com_br-iPortal              if br1-wildflyteste_bysoft_com_br br1-iportal_path
-      - use_backend br1-yusen_bysoft_com_br-iPortal                     if br1-yusen_bysoft_com_br br1-iportal_path
-      - use_backend br1-yusenhomologacao_bysoft_com_br-iPortal          if br1-yusenhomologacao_bysoft_com_br br1-iportal_path
-      - use_backend br1-zhycron_bysoft_com_br-iPortal                   if br1-zhycron_bysoft_com_br br1-iportal_path
-      - use_backend br1-zhycronlog_bysoft_com_br-iPortal                if br1-zhycronlog_bysoft_com_br br1-iportal_path
-      - use_backend br1-3cycles_bysoft_com_br                           if br1-3cycles_bysoft_com_br
-      - use_backend br1-abccomex_bysoft_com_br                          if br1-abccomex_bysoft_com_br
-      - use_backend br1-abrao_bysoft_com_br                             if br1-abrao_bysoft_com_br
-      - use_backend br1-acetradeways_bysoft_com_br                      if br1-acetradeways_bysoft_com_br
-      - use_backend br1-acomex_bysoft_com_br                            if br1-acomex_bysoft_com_br
-      - use_backend br1-aduana_bysoft_com_br                            if br1-aduana_bysoft_com_br
-      - use_backend br1-aduanaglobal_bysoft_com_br                      if br1-aduanaglobal_bysoft_com_br
-      - use_backend br1-aduanalog_bysoft_com_br                         if br1-aduanalog_bysoft_com_br
-      - use_backend br1-aeroimport_bysoft_com_br                        if br1-aeroimport_bysoft_com_br
-      - use_backend br1-affinity_bysoft_com_br                          if br1-affinity_bysoft_com_br
-      - use_backend br1-agenciaraposo_bysoft_com_br                     if br1-agenciaraposo_bysoft_com_br
-      - use_backend br1-agile_bysoft_com_br                             if br1-agile_bysoft_com_br
-      - use_backend br1-agility_bysoft_com_br                           if br1-agility_bysoft_com_br || br1-dsv_bysoft_com_br
-      - use_backend br1-agl_bysoft_com_br                               if br1-agl_bysoft_com_br
-      - use_backend br1-ahscomex_bysoft_com_br                          if br1-ahscomex_bysoft_com_br
-      - use_backend br1-akhava_bysoft_com_br                            if br1-akhava_bysoft_com_br
-      - use_backend br1-alca_bysoft_com_br                              if br1-alca_bysoft_com_br
-      - use_backend br1-allog_bysoft_com_br                             if br1-allog_bysoft_com_br
-      - use_backend br1-amr_bysoft_com_br                               if br1-amr_bysoft_com_br
-      - use_backend br1-asaassessoria_bysoft_com_br                     if br1-asaassessoria_bysoft_com_br
-      - use_backend br1-atlantis_bysoft_com_br                          if br1-atlantis_bysoft_com_br
-      - use_backend br1-atlas_bysoft_com_br                             if br1-atlas_bysoft_com_br
-      - use_backend br1-atualiassessoria_bysoft_com_br                  if br1-atualiassessoria_bysoft_com_br
-      - use_backend br1-auston_bysoft_com_br                            if br1-auston_bysoft_com_br
-      - use_backend br1-azsolutio_bysoft_com_br                         if br1-azsolutio_bysoft_com_br
-      - use_backend br1-baraodespachos_bysoft_com_br                    if br1-baraodespachos_bysoft_com_br
-      - use_backend br1-bdp_bysoft_com_br                               if br1-bdp_bysoft_com_br
-      - use_backend br1-bechtrans_bysoft_com_br                         if br1-bechtrans_bysoft_com_br
-      - use_backend br1-brasporto_bysoft_com_br                         if br1-brasporto_bysoft_com_br
-      - use_backend br1-budson_bysoft_com_br                            if br1-budson_bysoft_com_br
-      - use_backend br1-carreirolog_bysoft_com_br                       if br1-carreirolog_bysoft_com_br
-      - use_backend br1-cne_bysoft_com_br                               if br1-cne_bysoft_com_br
-      - use_backend br1-comexbh_bysoft_com_br                           if br1-comexbh_bysoft_com_br
-      - use_backend br1-confidence_bysoft_com_br                        if br1-confidence_bysoft_com_br
-      - use_backend br1-correbrokers_bysoft_com_br                      if br1-correbrokers_bysoft_com_br
-      - use_backend br1-cti_bysoft_com_br                               if br1-cti_bysoft_com_br
-      - use_backend br1-dapepe_bysoft_com_br                            if br1-dapepe_bysoft_com_br
-      - use_backend br1-dasco_bysoft_com_br                             if br1-dasco_bysoft_com_br
-      - use_backend br1-despachosaduanneirosja_bysoft_com_br            if br1-despachosaduanneirosja_bysoft_com_br
-      - use_backend br1-dhl_bysoft_com_br                               if br1-dhl_bysoft_com_br
-      - use_backend br1-dhlhomologacao_bysoft_com_br                    if br1-dhlhomologacao_bysoft_com_br
-      - use_backend br1-diniz_bysoft_com_br                             if br1-diniz_bysoft_com_br
-      - use_backend br1-direct_bysoft_com_br                            if br1-direct_bysoft_com_br
-      - use_backend br1-directlogistica_bysoft_com_br                   if br1-directlogistica_bysoft_com_br
-      - use_backend br1-dlt_bysoft_com_br                               if br1-dlt_bysoft_com_br
-      - use_backend br1-dogana_bysoft_com_br                            if br1-dogana_bysoft_com_br
-      - use_backend br1-eficienciacomex_bysoft_com_br                   if br1-eficienciacomex_bysoft_com_br
-      - use_backend br1-euronorte_bysoft_com_br                         if br1-euronorte_bysoft_com_br
-      - use_backend br1-excommerce_bysoft_com_br                        if br1-excommerce_bysoft_com_br
-      - use_backend br1-faxe_bysoft_com_br                              if br1-faxe_bysoft_com_br
-      - use_backend br1-fdafermac_bysoft_com_br                         if br1-fdafermac_bysoft_com_br
-      - use_backend br1-ferfreight_bysoft_com_br                        if br1-ferfreight_bysoft_com_br
-      - use_backend br1-focus_bysoft_com_br                             if br1-focus_bysoft_com_br
-      - use_backend br1-fortal_bysoft_com_br                            if br1-fortal_bysoft_com_br
-      - use_backend br1-gaclogistica_bysoft_com_br                      if br1-gaclogistica_bysoft_com_br
-      - use_backend br1-gamalog_bysoft_com_br                           if br1-gamalog_bysoft_com_br
-      - use_backend br1-gefco_bysoft_com_br                             if br1-gefco_bysoft_com_br
-      - use_backend br1-geslogistica_bysoft_com_br                      if br1-geslogistica_bysoft_com_br || br1-logisticsplus_bysoft_com_br
-      - use_backend br1-global_bysoft_com_br                            if br1-global_bysoft_com_br
-      - use_backend br1-globalfreight_bysoft_com_br                     if br1-globalfreight_bysoft_com_br
-      - use_backend br1-go2uti_bysoft_com_br                            if br1-go2uti_bysoft_com_br
-      - use_backend br1-goldmex_bysoft_com_br                           if br1-goldmex_bysoft_com_br
-      - use_backend br1-goncalvesfilhos_bysoft_com_br                   if br1-goncalvesfilhos_bysoft_com_br
-      - use_backend br1-gpcargo_bysoft_com_br                           if br1-gpcargo_bysoft_com_br
-      - use_backend br1-harpy_bysoft_com_br                             if br1-harpy_bysoft_com_br
-      - use_backend br1-homologacao_bysoft_com_br                       if br1-homologacao_bysoft_com_br
-      - use_backend br1-iglobal_bysoft_com_br                           if br1-iglobal_bysoft_com_br
-      - use_backend br1-imporcate_bysoft_com_br                         if br1-imporcate_bysoft_com_br
-      - use_backend br1-indaia_bysoft_com_br                            if br1-indaia_bysoft_com_br
-      - use_backend br1-intercargofranca_bysoft_com_br                  if br1-intercargofranca_bysoft_com_br
-      - use_backend br1-interfreight_bysoft_com_br                      if br1-interfreight_bysoft_com_br
-      - use_backend br1-internacional_bysoft_com_br                     if br1-internacional_bysoft_com_br
-      - use_backend br1-intranding_bysoft_com_br                        if br1-intranding_bysoft_com_br
-      - use_backend br1-isavix_bysoft_com_br                            if br1-isavix_bysoft_com_br
-      - use_backend br1-itatrans_bysoft_com_br                          if br1-itatrans_bysoft_com_br
-      - use_backend br1-jejcomercio_bysoft_com_br                       if br1-jejcomercio_bysoft_com_br
-      - use_backend br1-jmaduaneira_bysoft_com_br                       if br1-jmaduaneira_bysoft_com_br
-      - use_backend br1-konig_bysoft_com_br                             if br1-konig_bysoft_com_br
-      - use_backend br1-kotah_bysoft_com_br                             if br1-kotah_bysoft_com_br
-      - use_backend br1-leschaco_bysoft_com_br                          if br1-leschaco_bysoft_com_br
-      - use_backend br1-logistran_bysoft_com_br                         if br1-logistran_bysoft_com_br
-      - use_backend br1-lt_bysoft_com_br                                if br1-lt_bysoft_com_br
-      - use_backend br1-luxor_bysoft_com_br                             if br1-luxor_bysoft_com_br
-      - use_backend br1-maniga_bysoft_com_br                            if br1-maniga_bysoft_com_br
-      - use_backend br1-martinsdespachos_bysoft_com_br                  if br1-martinsdespachos_bysoft_com_br
-      - use_backend br1-martinsdespachoshomolog_bysoft_com_br           if br1-martinsdespachoshomolog_bysoft_com_br
-      - use_backend br1-masterfreight_bysoft_com_br                     if br1-masterfreight_bysoft_com_br
-      - use_backend br1-masterfreighthom_bysoft_com_br                  if br1-masterfreighthom_bysoft_com_br
-      - use_backend br1-mastersul_bysoft_com_br                         if br1-mastersul_bysoft_com_br
-      - use_backend br1-mbdespachos_bysoft_com_br                       if br1-mbdespachos_bysoft_com_br
-      - use_backend br1-mebroker_bysoft_com_br                          if br1-mebroker_bysoft_com_br
-      - use_backend br1-mercante_bysoft_com_br                          if br1-mercante_bysoft_com_br
-      - use_backend br1-mhinternacional_bysoft_com_br                   if br1-mhinternacional_bysoft_com_br
-      - use_backend br1-mtn_bysoft_com_br                               if br1-mtn_bysoft_com_br
-      - use_backend br1-multicargo_bysoft_com_br                        if br1-multicargo_bysoft_com_br
-      - use_backend br1-mundial_bysoft_com_br                           if br1-mundial_bysoft_com_br
-      - use_backend br1-mundialassesplena_bysoft_com_br                 if br1-mundialassesplena_bysoft_com_br
-      - use_backend br1-mvcaye_bysoft_com_br                            if br1-mvcaye_bysoft_com_br
-      - use_backend br1-ncxaduana_bysoft_com_br                         if br1-ncxaduana_bysoft_com_br
-      - use_backend br1-newslogistics_bysoft_com_br                     if br1-newslogistics_bysoft_com_br
-      - use_backend br1-nowlogistics_bysoft_com_br                      if br1-nowlogistics_bysoft_com_br
-      - use_backend br1-nuno_bysoft_com_br                              if br1-nuno_bysoft_com_br
-      - use_backend br1-onix_bysoft_com_br                              if br1-onix_bysoft_com_br
-      - use_backend br1-orttsa_bysoft_com_br                            if br1-orttsa_bysoft_com_br
-      - use_backend br1-paivacomex_bysoft_com_br                        if br1-paivacomex_bysoft_com_br
-      - use_backend br1-paraduana_bysoft_com_br                         if br1-paraduana_bysoft_com_br
-      - use_backend br1-parrocha_bysoft_com_br                          if br1-parrocha_bysoft_com_br
-      - use_backend br1-partnerag_bysoft_com_br                         if br1-partnerag_bysoft_com_br
-      - use_backend br1-paulorocha_bysoft_com_br                        if br1-paulorocha_bysoft_com_br
-      - use_backend br1-pdfs_bysoft_com_br                              if br1-pdfs_bysoft_com_br
-      - use_backend br1-pharmacomex_bysoft_com_br                       if br1-pharmacomex_bysoft_com_br
-      - use_backend br1-pmdespachos_bysoft_com_br                       if br1-pmdespachos_bysoft_com_br
-      - use_backend br1-portimex_bysoft_com_br                          if br1-portimex_bysoft_com_br
-      - use_backend br1-raxbrasil_bysoft_com_br                         if br1-raxbrasil_bysoft_com_br
-      - use_backend br1-rhenus_bysoft_com_br                            if br1-rhenus_bysoft_com_br
-      - use_backend br1-ricardo_bysoft_com_br                           if br1-ricardo_bysoft_com_br
-      - use_backend br1-roquepacheco_bysoft_com_br                      if br1-roquepacheco_bysoft_com_br
-      - use_backend br1-ruckhaber_bysoft_com_br                         if br1-ruckhaber_bysoft_com_br
-      - use_backend br1-samsung_bysoft_com_br                           if br1-samsung_bysoft_com_br
-      - use_backend br1-sanmar_bysoft_com_br                            if br1-sanmar_bysoft_com_br
-      - use_backend br1-santosbay_bysoft_com_br                         if br1-santosbay_bysoft_com_br
-      - use_backend br1-saoborja_bysoft_com_br                          if br1-saoborja_bysoft_com_br
-      - use_backend br1-satu_bysoft_com_br                              if br1-satu_bysoft_com_br
-      - use_backend br1-sei_bysoft_com_br                               if br1-sei_bysoft_com_br
-      - use_backend br1-self_bysoft_com_br                              if br1-self_bysoft_com_br
-      - use_backend br1-sideralcomex_bysoft_com_br                      if br1-sideralcomex_bysoft_com_br
-      - use_backend br1-silbran_bysoft_com_br                           if br1-silbran_bysoft_com_br
-      - use_backend br1-simetrans_bysoft_com_br                         if br1-simetrans_bysoft_com_br
-      - use_backend br1-spacecargo_bysoft_com_br                        if br1-spacecargo_bysoft_com_br
-      - use_backend br1-swiftlog_bysoft_com_br                          if br1-swiftlog_bysoft_com_br
-      - use_backend br1-tasklogistica_bysoft_com_br                     if br1-tasklogistica_bysoft_com_br
-      - use_backend br1-tradehunter_bysoft_com_br                       if br1-tradehunter_bysoft_com_br
-      - use_backend br1-trediex_bysoft_com_br                           if br1-trediex_bysoft_com_br
-      - use_backend br1-trustcargo_bysoft_com_br                        if br1-trustcargo_bysoft_com_br
-      - use_backend br1-tws_bysoft_com_br                               if br1-tws_bysoft_com_br
-      - use_backend br1-updates_bysoft_com_br                           if br1-updates_bysoft_com_br
-      - use_backend br1-ups_bysoft_com_br                               if br1-ups_bysoft_com_br
-      - use_backend br1-viatriangulo_bysoft_com_br                      if br1-viatriangulo_bysoft_com_br
-      - use_backend br1-visaointegrada_bysoft_com_br                    if br1-visaointegrada_bysoft_com_br
-      - use_backend br1-vpmdc_bysoft_com_br                             if br1-vpmdc_bysoft_com_br
-      - use_backend br1-wecomex_bysoft_com_br                           if br1-wecomex_bysoft_com_br || br1-ecscomex_bysoft_com_br
-      - use_backend br1-wildflyteste_bysoft_com_br                      if br1-wildflyteste_bysoft_com_br
-      - use_backend br1-yusen_bysoft_com_br                             if br1-yusen_bysoft_com_br
-      - use_backend br1-yusenhomologacao_bysoft_com_br                  if br1-yusenhomologacao_bysoft_com_br
-      - use_backend br1-zhycron_bysoft_com_br                           if br1-zhycron_bysoft_com_br
-      - use_backend br1-zhycronlog_bysoft_com_br                        if br1-zhycronlog_bysoft_com_br
+      - use_backend br1-3cycles_bysoft_com_br-iPortal                 if br1-3cycles_bysoft_com_br br1-iportal_path
+      - use_backend br1-abccomex_bysoft_com_br-iPortal                if br1-abccomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-abrao_bysoft_com_br-iPortal                   if br1-abrao_bysoft_com_br br1-iportal_path
+      - use_backend br1-acetradeways_bysoft_com_br-iPortal            if br1-acetradeways_bysoft_com_br br1-iportal_path
+      - use_backend br1-acomex_bysoft_com_br-iPortal                  if br1-acomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-aduana_bysoft_com_br-iDocuments               if br1-aduana_bysoft_com_br br1-idocuments_path
+      - use_backend br1-aduana_bysoft_com_br-iPortal                  if br1-aduana_bysoft_com_br br1-iportal_path
+      - use_backend br1-aduanaglobal_bysoft_com_br-iPortal            if br1-aduanaglobal_bysoft_com_br br1-iportal_path
+      - use_backend br1-aduanalog_bysoft_com_br-iPortal               if br1-aduanalog_bysoft_com_br br1-iportal_path
+      - use_backend br1-aeroimport_bysoft_com_br-iDocuments           if br1-aeroimport_bysoft_com_br br1-idocuments_path
+      - use_backend br1-aeroimport_bysoft_com_br-iPortal              if br1-aeroimport_bysoft_com_br br1-iportal_path
+      - use_backend br1-affinity_bysoft_com_br-iDocuments             if br1-affinity_bysoft_com_br br1-idocuments_path
+      - use_backend br1-affinity_bysoft_com_br-iPortal                if br1-affinity_bysoft_com_br br1-iportal_path
+      - use_backend br1-agenciaraposo_bysoft_com_br-iPortal           if br1-agenciaraposo_bysoft_com_br br1-iportal_path
+      - use_backend br1-agile_bysoft_com_br-iDocuments                if br1-agile_bysoft_com_br br1-idocuments_path
+      - use_backend br1-agile_bysoft_com_br-iPortal                   if br1-agile_bysoft_com_br br1-iportal_path
+      - use_backend br1-agility_bysoft_com_br-iPortal                 if br1-agility_bysoft_com_br br1-iportal_path
+      - use_backend br1-agl_bysoft_com_br-iDocuments                  if br1-agl_bysoft_com_br br1-idocuments_path
+      - use_backend br1-agl_bysoft_com_br-iPortal                     if br1-agl_bysoft_com_br br1-iportal_path
+      - use_backend br1-ahscomex_bysoft_com_br-iPortal                if br1-ahscomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-akhava_bysoft_com_br-iPortal                  if br1-akhava_bysoft_com_br br1-iportal_path
+      - use_backend br1-alca_bysoft_com_br-iPortal                    if br1-alca_bysoft_com_br br1-iportal_path
+      - use_backend br1-allog_bysoft_com_br-iPortal                   if br1-allog_bysoft_com_br br1-iportal_path
+      - use_backend br1-amr_bysoft_com_br-iDocuments                  if br1-amr_bysoft_com_br br1-idocuments_path
+      - use_backend br1-amr_bysoft_com_br-iPortal                     if br1-amr_bysoft_com_br br1-iportal_path
+      - use_backend br1-asaassessoria_bysoft_com_br-iPortal           if br1-asaassessoria_bysoft_com_br br1-iportal_path
+      - use_backend br1-atlantis_bysoft_com_br-iPortal                if br1-atlantis_bysoft_com_br br1-iportal_path
+      - use_backend br1-atlas_bysoft_com_br-iPortal                   if br1-atlas_bysoft_com_br br1-iportal_path
+      - use_backend br1-atualiassessoria_bysoft_com_br-iDocuments     if br1-atualiassessoria_bysoft_com_br br1-idocuments_path
+      - use_backend br1-atualiassessoria_bysoft_com_br-iPortal        if br1-atualiassessoria_bysoft_com_br br1-iportal_path
+      - use_backend br1-auston_bysoft_com_br-iPortal                  if br1-auston_bysoft_com_br br1-iportal_path
+      - use_backend br1-azsolutio_bysoft_com_br-iPortal               if br1-azsolutio_bysoft_com_br br1-iportal_path
+      - use_backend br1-baraodespachos_bysoft_com_br-iPortal          if br1-baraodespachos_bysoft_com_br br1-iportal_path
+      - use_backend br1-bdp_bysoft_com_br-iPortal                     if br1-bdp_bysoft_com_br br1-iportal_path
+      - use_backend br1-bechtrans_bysoft_com_br-iDocuments            if br1-bechtrans_bysoft_com_br br1-idocuments_path
+      - use_backend br1-bechtrans_bysoft_com_br-iPortal               if br1-bechtrans_bysoft_com_br br1-iportal_path
+      - use_backend br1-brasporto_bysoft_com_br-iDocuments            if br1-brasporto_bysoft_com_br br1-idocuments_path
+      - use_backend br1-brasporto_bysoft_com_br-iPortal               if br1-brasporto_bysoft_com_br br1-iportal_path
+      - use_backend br1-budson_bysoft_com_br-iPortal                  if br1-budson_bysoft_com_br br1-iportal_path
+      - use_backend br1-carreirolog_bysoft_com_br-iPortal             if br1-carreirolog_bysoft_com_br br1-iportal_path
+      - use_backend br1-cne_bysoft_com_br-iPortal                     if br1-cne_bysoft_com_br br1-iportal_path
+      - use_backend br1-comexbh_bysoft_com_br-iPortal                 if br1-comexbh_byosft_com_br br1-iportal_path
+      - use_backend br1-confidence_bysoft_com_br-iPortal              if br1-confidence_bysoft_com_br br1-iportal_path
+      - use_backend br1-correbrokers_bysoft_com_br-iPortal            if br1-correbrokers_bysoft_com_br br1-iportal_path
+      - use_backend br1-cti_bysoft_com_br-iDocuments                  if br1-cti_bysoft_com_br br1-idocuments_path
+      - use_backend br1-cti_bysoft_com_br-iPortal                     if br1-cti_bysoft_com_br br1-iportal_path
+      - use_backend br1-dapepe_bysoft_com_br-iPortal                  if br1-dapepe_bysoft_com_br br1-iportal_path
+      - use_backend br1-dasco_bysoft_com_br-iPortal                   if br1-dasco_bysoft_com_br br1-iportal_path
+      - use_backend br1-despachosaduanneirosja_bysoft_com_br-iPortal  if br1-despachosaduanneirosja_bysoft_com_br br1-iportal_path
+      - use_backend br1-dhl_bysoft_com_br-iDocuments                  if br1-dhl_bysoft_com_br br1-idocuments_path
+      - use_backend br1-dhl_bysoft_com_br-iPortal                     if br1-dhl_bysoft_com_br br1-iportal_path
+      - use_backend br1-dhlhomologacao_bysoft_com_br-iDocuments       if br1-dhlhomologacao_bysoft_com_br br1-idocuments_path
+      - use_backend br1-dhlhomologacao_bysoft_com_br-iPortal          if br1-dhlhomologacao_bysoft_com_br br1-iportal_path
+      - use_backend br1-diniz_bysoft_com_br-iPortal                   if br1-diniz_bysoft_com_br br1-iportal_path
+      - use_backend br1-direct_bysoft_com_br-iPortal                  if br1-direct_bysoft_com_br br1-iportal_path
+      - use_backend br1-directlogistica_bysoft_com_br-iDocuments      if br1-directlogistica_bysoft_com_br br1-idocuments_path
+      - use_backend br1-directlogistica_bysoft_com_br-iPortal         if br1-directlogistica_bysoft_com_br br1-iportal_path
+      - use_backend br1-dlt_bysoft_com_br-iPortal                     if br1-dlt_bysoft_com_br br1-iportal_path
+      - use_backend br1-dogana_bysoft_com_br-iPortal                  if br1-dogana_bysoft_com_br br1-iportal_path
+      - use_backend br1-dsv_bysoft_com_br-iPortal                     if br1-dsv_bysoft_com_br br1-iportal_path
+      - use_backend br1-eficienciacomex_bysoft_com_br-iPortal         if br1-eficienciacomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-euronorte_bysoft_com_br-iPortal               if br1-euronorte_bysoft_com_br br1-iportal_path
+      - use_backend br1-excommerce_bysoft_com_br-iPortal              if br1-excommerce_bysoft_com_br br1-iportal_path
+      - use_backend br1-faxe_bysoft_com_br-iPortal                    if br1-faxe_bysoft_com_br br1-iportal_path
+      - use_backend br1-fdafermac_bysoft_com_br-iPortal               if br1-fdafermac_bysoft_com_br br1-iportal_path
+      - use_backend br1-ferfreight_bysoft_com_br-iPortal              if br1-ferfreight_bysoft_com_br br1-iportal_path
+      - use_backend br1-focus_bysoft_com_br-iPortal                   if br1-focus_bysoft_com_br br1-iportal_path
+      - use_backend br1-fortal_bysoft_com_br-iPortal                  if br1-fortal_bysoft_com_br br1-iportal_path
+      - use_backend br1-gaclogistica_bysoft_com_br-iDocuments         if br1-gaclogistica_bysoft_com_br br1-idocuments_path
+      - use_backend br1-gaclogistica_bysoft_com_br-iPortal            if br1-gaclogistica_bysoft_com_br br1-iportal_path
+      - use_backend br1-gamalog_bysoft_com_br-iPortal                 if br1-gamalog_bysoft_com_br br1-iportal_path
+      - use_backend br1-gefco_bysoft_com_br-iPortal                   if br1-gefco_bysoft_com_br br1-iportal_path
+      - use_backend br1-geslogistica_bysoft_com_br-iDocuments         if br1-geslogistica_bysoft_com_br br1-idocuments_path
+      - use_backend br1-geslogistica_bysoft_com_br-iDocuments         if br1-logisticsplus_bysoft_com_br br1-idocuments_path
+      - use_backend br1-geslogistica_bysoft_com_br-iPortal            if br1-geslogistica_bysoft_com_br br1-iportal_path
+      - use_backend br1-geslogistica_bysoft_com_br-iPortal            if br1-logisticsplus_bysoft_com_br br1-iportal_path
+      - use_backend br1-global_bysoft_com_br-iPortal                  if br1-global_bysoft_com_br br1-iportal_path
+      - use_backend br1-globalfreight_bysoft_com_br-iPortal           if br1-globalfreight_bysoft_com_br br1-iportal_path
+      - use_backend br1-go2uti_bysoft_com_br-iPortal                  if br1-go2uti_bysoft_com_br br1-iportal_path
+      - use_backend br1-goldmex_bysoft_com_br-iPortal                 if br1-goldmex_bysoft_com_br br1-iportal_path
+      - use_backend br1-goncalvesfilhos_bysoft_com_br-iPortal         if br1-goncalvesfilhos_bysoft_com_br br1-iportal_path
+      - use_backend br1-gpcargo_bysoft_com_br-iPortal                 if br1-gpcargo_bysoft_com_br br1-iportal_path
+      - use_backend br1-harpy_bysoft_com_br-iPortal                   if br1-harpy_bysoft_com_br br1-iportal_path
+      - use_backend br1-homologacao_bysoft_com_br-iDocuments          if br1-homologacao_bysoft_com_br br1-idocuments_path
+      - use_backend br1-homologacao_bysoft_com_br-iPortal             if br1-homologacao_bysoft_com_br br1-iportal_path
+      - use_backend br1-iglobal_bysoft_com_br-iPortal                 if br1-iglobal_bysoft_com_br br1-iportal_path
+      - use_backend br1-imporcate_bysoft_com_br-iPortal               if br1-imporcate_bysoft_com_br br1-iportal_path
+      - use_backend br1-indaia_bysoft_com_br-iPortal                  if br1-indaia_bysoft_com_br br1-iportal_path
+      - use_backend br1-intercargofranca_bysoft_com_br-iPortal        if br1-intercargofranca_bysoft_com_br br1-iportal_path
+      - use_backend br1-interfreight_bysoft_com_br-iPortal            if br1-interfreight_bysoft_com_br br1-iportal_path
+      - use_backend br1-internacional_bysoft_com_br-iPortal           if br1-internacional_bysoft_com_br br1-iportal_path
+      - use_backend br1-intranding_bysoft_com_br-iDocuments           if br1-intranding_bysoft_com_br br1-idocuments_path
+      - use_backend br1-intranding_bysoft_com_br-iPortal              if br1-intranding_bysoft_com_br br1-iportal_path
+      - use_backend br1-isavix_bysoft_com_br-iPortal                  if br1-isavix_bysoft_com_br br1-iportal_path
+      - use_backend br1-itatrans_bysoft_com_br-iPortal                if br1-itatrans_bysoft_com_br br1-iportal_path
+      - use_backend br1-jejcomercio_bysoft_com_br-iPortal             if br1-jejcomercio_bysoft_com_br br1-iportal_path
+      - use_backend br1-jmaduaneira_bysoft_com_br-iPortal             if br1-jmaduaneira_bysoft_com_br br1-iportal_path
+      - use_backend br1-konig_bysoft_com_br-iPortal                   if br1-konig_bysoft_com_br br1-iportal_path
+      - use_backend br1-kotah_bysoft_com_br-iPortal                   if br1-kotah_bysoft_com_br br1-iportal_path
+      - use_backend br1-leschaco_bysoft_com_br-iDocuments             if br1-leschaco_bysoft_com_br br1-idocuments_path
+      - use_backend br1-leschaco_bysoft_com_br-iPortal                if br1-leschaco_bysoft_com_br br1-iportal_path
+      - use_backend br1-logistran_bysoft_com_br-iPortal               if br1-logistran_bysoft_com_br br1-iportal_path
+      - use_backend br1-lt_bysoft_com_br-iPortal                      if br1-lt_bysoft_com_br br1-iportal_path
+      - use_backend br1-luxor_bysoft_com_br-iPortal                   if br1-luxor_bysoft_com_br br1-iportal_path
+      - use_backend br1-maniga_bysoft_com_br-iPortal                  if br1-maniga_bysoft_com_br br1-iportal_path
+      - use_backend br1-martinsdespachos_bysoft_com_br-iPortal        if br1-martinsdespachos_bysoft_com_br br1-iportal_path
+      - use_backend br1-martinsdespachoshomolog_bysoft_com_br-iPortal if br1-martinsdespachoshomolog_bysoft_com_br br1-iportal_path
+      - use_backend br1-masterfreight_bysoft_com_br-iPortal           if br1-masterfreight_bysoft_com_br br1-iportal_path
+      - use_backend br1-masterfreighthom_bysoft_com_br-iPortal        if br1-masterfreighthom_bysoft_com_br br1-iportal_path
+      - use_backend br1-mastersul_bysoft_com_br-iPortal               if br1-mastersul_bysoft_com_br br1-iportal_path
+      - use_backend br1-mastersul_bysoft_com_br-mnfe                  if br1-mastersul_bysoft_com_br br1-mnfe_path
+      - use_backend br1-mbdespachos_bysoft_com_br-iPortal             if br1-mbdespachos_bysoft_com_br br1-iportal_path
+      - use_backend br1-mebroker_bysoft_com_br-iPortal                if br1-mebroker_bysoft_com_br br1-iportal_path
+      - use_backend br1-mercante_bysoft_com_br-iPortal                if br1-mercante_bysoft_com_br br1-iportal_path
+      - use_backend br1-mhinternacional_bysoft_com_br-iPortal         if br1-mhinternacional_bysoft_com_br br1-iportal_path
+      - use_backend br1-mtn_bysoft_com_br-iPortal                     if br1-mtn_bysoft_com_br br1-iportal_path
+      - use_backend br1-multicargo_bysoft_com_br-iPortal              if br1-multicargo_bysoft_com_br br1-iportal_path
+      - use_backend br1-mundial_bysoft_com_br-iPortal                 if br1-mundial_bysoft_com_br br1-iportal_path
+      - use_backend br1-mundialassesplena_bysoft_com_br-iPortal       if br1-mundialassesplena_bysoft_com_br br1-iportal_path
+      - use_backend br1-mvcaye_bysoft_com_br-iPortal                  if br1-mvcaye_bysoft_com_br br1-iportal_path
+      - use_backend br1-ncxaduana_bysoft_com_br-iPortal               if br1-ncxaduana_bysoft_com_br br1-iportal_path
+      - use_backend br1-newslogistics_bysoft_com_br-iPortal           if br1-newslogistics_bysoft_com_br br1-iportal_path
+      - use_backend br1-nowlogistics_bysoft_com_br-iPortal            if br1-nowlogistics_bysoft_com_br br1-iportal_path
+      - use_backend br1-nuno_bysoft_com_br-iDocuments                 if br1-nuno_bysoft_com_br br1-idocuments_path
+      - use_backend br1-nuno_bysoft_com_br-iPortal                    if br1-nuno_bysoft_com_br br1-iportal_path
+      - use_backend br1-onix_bysoft_com_br-iPortal                    if br1-onix_bysoft_com_br br1-iportal_path
+      - use_backend br1-orttsa_bysoft_com_br-iPortal                  if br1-orttsa_bysoft_com_br br1-iportal_path
+      - use_backend br1-paivacomex_bysoft_com_br-iPortal              if br1-paivacomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-paraduana_bysoft_com_br-iPortal               if br1-paraduana_bysoft_com_br br1-iportal_path
+      - use_backend br1-parrocha_bysoft_com_br-iDocuments             if br1-parrocha_bysoft_com_br br1-idocuments_path
+      - use_backend br1-parrocha_bysoft_com_br-iPortal                if br1-parrocha_bysoft_com_br br1-iportal_path
+      - use_backend br1-partnerag_bysoft_com_br-iDocuments            if br1-partnerag_bysoft_com_br br1-idocuments_path
+      - use_backend br1-partnerag_bysoft_com_br-iPortal               if br1-partnerag_bysoft_com_br br1-iportal_path
+      - use_backend br1-paulorocha_bysoft_com_br-iPortal              if br1-paulorocha_bysoft_com_br br1-iportal_path
+      - use_backend br1-pdfs_bysoft_com_br-iPortal                    if br1-pdfs_bysoft_com_br br1-iportal_path
+      - use_backend br1-pharmacomex_bysoft_com_br-iPortal             if br1-pharmacomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-pmdespachos_bysoft_com_br-iPortal             if br1-pmdespachos_bysoft_com_br br1-iportal_path
+      - use_backend br1-portimex_bysoft_com_br-iPortal                if br1-portimex_bysoft_com_br br1-iportal_path
+      - use_backend br1-raxbrasil_bysoft_com_br-iPortal               if br1-raxbrasil_bysoft_com_br br1-iportal_path
+      - use_backend br1-rhenus_bysoft_com_br-iPortal                  if br1-rhenus_bysoft_com_br br1-iportal_path
+      - use_backend br1-ricardo_bysoft_com_br-iPortal                 if br1-ricardo_bysoft_com_br br1-iportal_path
+      - use_backend br1-roquepacheco_bysoft_com_br-iDocuments         if br1-roquepacheco_bysoft_com_br br1-idocuments_path
+      - use_backend br1-roquepacheco_bysoft_com_br-iPortal            if br1-roquepacheco_bysoft_com_br br1-iportal_path
+      - use_backend br1-ruckhaber_bysoft_com_br-iPortal               if br1-ruckhaber_bysoft_com_br br1-iportal_path
+      - use_backend br1-samsung_bysoft_com_br-iPortal                 if br1-samsung_bysoft_com_br br1-iportal_path
+      - use_backend br1-sanmar_bysoft_com_br-iPortal                  if br1-sanmar_bysoft_com_br br1-iportal_path
+      - use_backend br1-santosbay_bysoft_com_br-iPortal               if br1-santosbay_bysoft_com_br br1-iportal_path
+      - use_backend br1-saoborja_bysoft_com_br-iPortal                if br1-saoborja_bysoft_com_br br1-iportal_path
+      - use_backend br1-saoborja_bysoft_com_br-iPropulsor             if br1-saoborja_bysoft_com_br br1-ipropulsor_path
+      - use_backend br1-satu_bysoft_com_br-iPortal                    if br1-satu_bysoft_com_br br1-iportal_path
+      - use_backend br1-sei_bysoft_com_br-iDocuments                  if br1-sei_bysoft_com_br br1-idocuments_path
+      - use_backend br1-sei_bysoft_com_br-iPortal                     if br1-sei_bysoft_com_br br1-iportal_path
+      - use_backend br1-self_bysoft_com_br-iPortal                    if br1-self_bysoft_com_br br1-iportal_path
+      - use_backend br1-sideralcomex_bysoft_com_br-iPortal            if br1-sideralcomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-silbran_bysoft_com_br-iPortal                 if br1-silbran_bysoft_com_br br1-iportal_path
+      - use_backend br1-simetrans_bysoft_com_br-iPortal               if br1-simetrans_bysoft_com_br br1-iportal_path
+      - use_backend br1-spacecargo_bysoft_com_br-iPortal              if br1-spacecargo_bysoft_com_br br1-iportal_path
+      - use_backend br1-swiftlog_bysoft_com_br-iPortal                if br1-swiftlog_bysoft_com_br br1-iportal_path
+      - use_backend br1-tasklogistica_bysoft_com_br-iPortal           if br1-tasklogistica_bysoft_com_br br1-iportal_path
+      - use_backend br1-tradehunter_bysoft_com_br-iPortal             if br1-tradehunter_bysoft_com_br br1-iportal_path
+      - use_backend br1-trediex_bysoft_com_br-iDocuments              if br1-trediex_bysoft_com_br br1-idocuments_path
+      - use_backend br1-trediex_bysoft_com_br-iPortal                 if br1-trediex_bysoft_com_br br1-iportal_path
+      - use_backend br1-trustcargo_bysoft_com_br-iPortal              if br1-trustcargo_bysoft_com_br br1-iportal_path
+      - use_backend br1-tws_bysoft_com_br-iPortal                     if br1-tws_bysoft_com_br br1-iportal_path
+      - use_backend br1-ups_bysoft_com_br-iPortal                     if br1-ups_bysoft_com_br br1-iportal_path
+      - use_backend br1-viatriangulo_bysoft_com_br-iPortal            if br1-viatriangulo_bysoft_com_br br1-iportal_path
+      - use_backend br1-visaointegrada_bysoft_com_br-iPortal          if br1-visaointegrada_bysoft_com_br br1-iportal_path
+      - use_backend br1-vpmdc_bysoft_com_br-iPortal                   if br1-vpmdc_bysoft_com_br br1-iportal_path
+      - use_backend br1-wecomex_bysoft_com_br-iPortal                 if br1-ecscomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-wecomex_bysoft_com_br-iPortal                 if br1-wecomex_bysoft_com_br br1-iportal_path
+      - use_backend br1-wildflyteste_bysoft_com_br-iPortal            if br1-wildflyteste_bysoft_com_br br1-iportal_path
+      - use_backend br1-yusen_bysoft_com_br-iPortal                   if br1-yusen_bysoft_com_br br1-iportal_path
+      - use_backend br1-yusenhomologacao_bysoft_com_br-iPortal        if br1-yusenhomologacao_bysoft_com_br br1-iportal_path
+      - use_backend br1-zhycron_bysoft_com_br-iPortal                 if br1-zhycron_bysoft_com_br br1-iportal_path
+      - use_backend br1-zhycronlog_bysoft_com_br-iPortal              if br1-zhycronlog_bysoft_com_br br1-iportal_path
+      - use_backend br1-3cycles_bysoft_com_br                         if br1-3cycles_bysoft_com_br
+      - use_backend br1-abccomex_bysoft_com_br                        if br1-abccomex_bysoft_com_br
+      - use_backend br1-abrao_bysoft_com_br                           if br1-abrao_bysoft_com_br
+      - use_backend br1-acetradeways_bysoft_com_br                    if br1-acetradeways_bysoft_com_br
+      - use_backend br1-acomex_bysoft_com_br                          if br1-acomex_bysoft_com_br
+      - use_backend br1-aduana_bysoft_com_br                          if br1-aduana_bysoft_com_br
+      - use_backend br1-aduanaglobal_bysoft_com_br                    if br1-aduanaglobal_bysoft_com_br
+      - use_backend br1-aduanalog_bysoft_com_br                       if br1-aduanalog_bysoft_com_br
+      - use_backend br1-aeroimport_bysoft_com_br                      if br1-aeroimport_bysoft_com_br
+      - use_backend br1-affinity_bysoft_com_br                        if br1-affinity_bysoft_com_br
+      - use_backend br1-agenciaraposo_bysoft_com_br                   if br1-agenciaraposo_bysoft_com_br
+      - use_backend br1-agile_bysoft_com_br                           if br1-agile_bysoft_com_br
+      - use_backend br1-agility_bysoft_com_br                         if br1-agility_bysoft_com_br || br1-dsv_bysoft_com_br
+      - use_backend br1-agl_bysoft_com_br                             if br1-agl_bysoft_com_br
+      - use_backend br1-ahscomex_bysoft_com_br                        if br1-ahscomex_bysoft_com_br
+      - use_backend br1-akhava_bysoft_com_br                          if br1-akhava_bysoft_com_br
+      - use_backend br1-alca_bysoft_com_br                            if br1-alca_bysoft_com_br
+      - use_backend br1-allog_bysoft_com_br                           if br1-allog_bysoft_com_br
+      - use_backend br1-amr_bysoft_com_br                             if br1-amr_bysoft_com_br
+      - use_backend br1-asaassessoria_bysoft_com_br                   if br1-asaassessoria_bysoft_com_br
+      - use_backend br1-atlantis_bysoft_com_br                        if br1-atlantis_bysoft_com_br
+      - use_backend br1-atlas_bysoft_com_br                           if br1-atlas_bysoft_com_br
+      - use_backend br1-atualiassessoria_bysoft_com_br                if br1-atualiassessoria_bysoft_com_br
+      - use_backend br1-auston_bysoft_com_br                          if br1-auston_bysoft_com_br
+      - use_backend br1-azsolutio_bysoft_com_br                       if br1-azsolutio_bysoft_com_br
+      - use_backend br1-baraodespachos_bysoft_com_br                  if br1-baraodespachos_bysoft_com_br
+      - use_backend br1-bdp_bysoft_com_br                             if br1-bdp_bysoft_com_br
+      - use_backend br1-bechtrans_bysoft_com_br                       if br1-bechtrans_bysoft_com_br
+      - use_backend br1-brasporto_bysoft_com_br                       if br1-brasporto_bysoft_com_br
+      - use_backend br1-budson_bysoft_com_br                          if br1-budson_bysoft_com_br
+      - use_backend br1-carreirolog_bysoft_com_br                     if br1-carreirolog_bysoft_com_br
+      - use_backend br1-cne_bysoft_com_br                             if br1-cne_bysoft_com_br
+      - use_backend br1-comexbh_bysoft_com_br                         if br1-comexbh_bysoft_com_br
+      - use_backend br1-confidence_bysoft_com_br                      if br1-confidence_bysoft_com_br
+      - use_backend br1-correbrokers_bysoft_com_br                    if br1-correbrokers_bysoft_com_br
+      - use_backend br1-cti_bysoft_com_br                             if br1-cti_bysoft_com_br
+      - use_backend br1-dapepe_bysoft_com_br                          if br1-dapepe_bysoft_com_br
+      - use_backend br1-dasco_bysoft_com_br                           if br1-dasco_bysoft_com_br
+      - use_backend br1-despachosaduanneirosja_bysoft_com_br          if br1-despachosaduanneirosja_bysoft_com_br
+      - use_backend br1-dhl_bysoft_com_br                             if br1-dhl_bysoft_com_br
+      - use_backend br1-dhlhomologacao_bysoft_com_br                  if br1-dhlhomologacao_bysoft_com_br
+      - use_backend br1-diniz_bysoft_com_br                           if br1-diniz_bysoft_com_br
+      - use_backend br1-direct_bysoft_com_br                          if br1-direct_bysoft_com_br
+      - use_backend br1-directlogistica_bysoft_com_br                 if br1-directlogistica_bysoft_com_br
+      - use_backend br1-dlt_bysoft_com_br                             if br1-dlt_bysoft_com_br
+      - use_backend br1-dogana_bysoft_com_br                          if br1-dogana_bysoft_com_br
+      - use_backend br1-eficienciacomex_bysoft_com_br                 if br1-eficienciacomex_bysoft_com_br
+      - use_backend br1-euronorte_bysoft_com_br                       if br1-euronorte_bysoft_com_br
+      - use_backend br1-excommerce_bysoft_com_br                      if br1-excommerce_bysoft_com_br
+      - use_backend br1-faxe_bysoft_com_br                            if br1-faxe_bysoft_com_br
+      - use_backend br1-fdafermac_bysoft_com_br                       if br1-fdafermac_bysoft_com_br
+      - use_backend br1-ferfreight_bysoft_com_br                      if br1-ferfreight_bysoft_com_br
+      - use_backend br1-focus_bysoft_com_br                           if br1-focus_bysoft_com_br
+      - use_backend br1-fortal_bysoft_com_br                          if br1-fortal_bysoft_com_br
+      - use_backend br1-gaclogistica_bysoft_com_br                    if br1-gaclogistica_bysoft_com_br
+      - use_backend br1-gamalog_bysoft_com_br                         if br1-gamalog_bysoft_com_br
+      - use_backend br1-gefco_bysoft_com_br                           if br1-gefco_bysoft_com_br
+      - use_backend br1-geslogistica_bysoft_com_br                    if br1-geslogistica_bysoft_com_br || br1-logisticsplus_bysoft_com_br
+      - use_backend br1-global_bysoft_com_br                          if br1-global_bysoft_com_br
+      - use_backend br1-globalfreight_bysoft_com_br                   if br1-globalfreight_bysoft_com_br
+      - use_backend br1-go2uti_bysoft_com_br                          if br1-go2uti_bysoft_com_br
+      - use_backend br1-goldmex_bysoft_com_br                         if br1-goldmex_bysoft_com_br
+      - use_backend br1-goncalvesfilhos_bysoft_com_br                 if br1-goncalvesfilhos_bysoft_com_br
+      - use_backend br1-gpcargo_bysoft_com_br                         if br1-gpcargo_bysoft_com_br
+      - use_backend br1-harpy_bysoft_com_br                           if br1-harpy_bysoft_com_br
+      - use_backend br1-homologacao_bysoft_com_br                     if br1-homologacao_bysoft_com_br
+      - use_backend br1-iglobal_bysoft_com_br                         if br1-iglobal_bysoft_com_br
+      - use_backend br1-imporcate_bysoft_com_br                       if br1-imporcate_bysoft_com_br
+      - use_backend br1-indaia_bysoft_com_br                          if br1-indaia_bysoft_com_br
+      - use_backend br1-intercargofranca_bysoft_com_br                if br1-intercargofranca_bysoft_com_br
+      - use_backend br1-interfreight_bysoft_com_br                    if br1-interfreight_bysoft_com_br
+      - use_backend br1-internacional_bysoft_com_br                   if br1-internacional_bysoft_com_br
+      - use_backend br1-intranding_bysoft_com_br                      if br1-intranding_bysoft_com_br
+      - use_backend br1-isavix_bysoft_com_br                          if br1-isavix_bysoft_com_br
+      - use_backend br1-itatrans_bysoft_com_br                        if br1-itatrans_bysoft_com_br
+      - use_backend br1-jejcomercio_bysoft_com_br                     if br1-jejcomercio_bysoft_com_br
+      - use_backend br1-jmaduaneira_bysoft_com_br                     if br1-jmaduaneira_bysoft_com_br
+      - use_backend br1-konig_bysoft_com_br                           if br1-konig_bysoft_com_br
+      - use_backend br1-kotah_bysoft_com_br                           if br1-kotah_bysoft_com_br
+      - use_backend br1-leschaco_bysoft_com_br                        if br1-leschaco_bysoft_com_br
+      - use_backend br1-logistran_bysoft_com_br                       if br1-logistran_bysoft_com_br
+      - use_backend br1-lt_bysoft_com_br                              if br1-lt_bysoft_com_br
+      - use_backend br1-luxor_bysoft_com_br                           if br1-luxor_bysoft_com_br
+      - use_backend br1-maniga_bysoft_com_br                          if br1-maniga_bysoft_com_br
+      - use_backend br1-martinsdespachos_bysoft_com_br                if br1-martinsdespachos_bysoft_com_br
+      - use_backend br1-martinsdespachoshomolog_bysoft_com_br         if br1-martinsdespachoshomolog_bysoft_com_br
+      - use_backend br1-masterfreight_bysoft_com_br                   if br1-masterfreight_bysoft_com_br
+      - use_backend br1-masterfreighthom_bysoft_com_br                if br1-masterfreighthom_bysoft_com_br
+      - use_backend br1-mastersul_bysoft_com_br                       if br1-mastersul_bysoft_com_br
+      - use_backend br1-mbdespachos_bysoft_com_br                     if br1-mbdespachos_bysoft_com_br
+      - use_backend br1-mebroker_bysoft_com_br                        if br1-mebroker_bysoft_com_br
+      - use_backend br1-mercante_bysoft_com_br                        if br1-mercante_bysoft_com_br
+      - use_backend br1-mhinternacional_bysoft_com_br                 if br1-mhinternacional_bysoft_com_br
+      - use_backend br1-mtn_bysoft_com_br                             if br1-mtn_bysoft_com_br
+      - use_backend br1-multicargo_bysoft_com_br                      if br1-multicargo_bysoft_com_br
+      - use_backend br1-mundial_bysoft_com_br                         if br1-mundial_bysoft_com_br
+      - use_backend br1-mundialassesplena_bysoft_com_br               if br1-mundialassesplena_bysoft_com_br
+      - use_backend br1-mvcaye_bysoft_com_br                          if br1-mvcaye_bysoft_com_br
+      - use_backend br1-ncxaduana_bysoft_com_br                       if br1-ncxaduana_bysoft_com_br
+      - use_backend br1-newslogistics_bysoft_com_br                   if br1-newslogistics_bysoft_com_br
+      - use_backend br1-nowlogistics_bysoft_com_br                    if br1-nowlogistics_bysoft_com_br
+      - use_backend br1-nuno_bysoft_com_br                            if br1-nuno_bysoft_com_br
+      - use_backend br1-onix_bysoft_com_br                            if br1-onix_bysoft_com_br
+      - use_backend br1-orttsa_bysoft_com_br                          if br1-orttsa_bysoft_com_br
+      - use_backend br1-paivacomex_bysoft_com_br                      if br1-paivacomex_bysoft_com_br
+      - use_backend br1-paraduana_bysoft_com_br                       if br1-paraduana_bysoft_com_br
+      - use_backend br1-parrocha_bysoft_com_br                        if br1-parrocha_bysoft_com_br
+      - use_backend br1-partnerag_bysoft_com_br                       if br1-partnerag_bysoft_com_br
+      - use_backend br1-paulorocha_bysoft_com_br                      if br1-paulorocha_bysoft_com_br
+      - use_backend br1-pdfs_bysoft_com_br                            if br1-pdfs_bysoft_com_br
+      - use_backend br1-pharmacomex_bysoft_com_br                     if br1-pharmacomex_bysoft_com_br
+      - use_backend br1-pmdespachos_bysoft_com_br                     if br1-pmdespachos_bysoft_com_br
+      - use_backend br1-portimex_bysoft_com_br                        if br1-portimex_bysoft_com_br
+      - use_backend br1-raxbrasil_bysoft_com_br                       if br1-raxbrasil_bysoft_com_br
+      - use_backend br1-rhenus_bysoft_com_br                          if br1-rhenus_bysoft_com_br
+      - use_backend br1-ricardo_bysoft_com_br                         if br1-ricardo_bysoft_com_br
+      - use_backend br1-roquepacheco_bysoft_com_br                    if br1-roquepacheco_bysoft_com_br
+      - use_backend br1-ruckhaber_bysoft_com_br                       if br1-ruckhaber_bysoft_com_br
+      - use_backend br1-samsung_bysoft_com_br                         if br1-samsung_bysoft_com_br
+      - use_backend br1-sanmar_bysoft_com_br                          if br1-sanmar_bysoft_com_br
+      - use_backend br1-santosbay_bysoft_com_br                       if br1-santosbay_bysoft_com_br
+      - use_backend br1-saoborja_bysoft_com_br                        if br1-saoborja_bysoft_com_br
+      - use_backend br1-satu_bysoft_com_br                            if br1-satu_bysoft_com_br
+      - use_backend br1-sei_bysoft_com_br                             if br1-sei_bysoft_com_br
+      - use_backend br1-self_bysoft_com_br                            if br1-self_bysoft_com_br
+      - use_backend br1-sideralcomex_bysoft_com_br                    if br1-sideralcomex_bysoft_com_br
+      - use_backend br1-silbran_bysoft_com_br                         if br1-silbran_bysoft_com_br
+      - use_backend br1-simetrans_bysoft_com_br                       if br1-simetrans_bysoft_com_br
+      - use_backend br1-spacecargo_bysoft_com_br                      if br1-spacecargo_bysoft_com_br
+      - use_backend br1-swiftlog_bysoft_com_br                        if br1-swiftlog_bysoft_com_br
+      - use_backend br1-tasklogistica_bysoft_com_br                   if br1-tasklogistica_bysoft_com_br
+      - use_backend br1-tradehunter_bysoft_com_br                     if br1-tradehunter_bysoft_com_br
+      - use_backend br1-trediex_bysoft_com_br                         if br1-trediex_bysoft_com_br
+      - use_backend br1-trustcargo_bysoft_com_br                      if br1-trustcargo_bysoft_com_br
+      - use_backend br1-tws_bysoft_com_br                             if br1-tws_bysoft_com_br
+      - use_backend br1-updates_bysoft_com_br                         if br1-updates_bysoft_com_br
+      - use_backend br1-ups_bysoft_com_br                             if br1-ups_bysoft_com_br
+      - use_backend br1-viatriangulo_bysoft_com_br                    if br1-viatriangulo_bysoft_com_br
+      - use_backend br1-visaointegrada_bysoft_com_br                  if br1-visaointegrada_bysoft_com_br
+      - use_backend br1-vpmdc_bysoft_com_br                           if br1-vpmdc_bysoft_com_br
+      - use_backend br1-wecomex_bysoft_com_br                         if br1-wecomex_bysoft_com_br || br1-ecscomex_bysoft_com_br
+      - use_backend br1-wildflyteste_bysoft_com_br                    if br1-wildflyteste_bysoft_com_br
+      - use_backend br1-yusen_bysoft_com_br                           if br1-yusen_bysoft_com_br
+      - use_backend br1-yusenhomologacao_bysoft_com_br                if br1-yusenhomologacao_bysoft_com_br
+      - use_backend br1-zhycron_bysoft_com_br                         if br1-zhycron_bysoft_com_br
+      - use_backend br1-zhycronlog_bysoft_com_br                      if br1-zhycronlog_bysoft_com_br
 
 containerchain_backend_selection:
   description: |-

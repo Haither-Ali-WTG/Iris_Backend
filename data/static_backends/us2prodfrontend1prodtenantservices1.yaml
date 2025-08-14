@@ -838,7 +838,7 @@ br1-affinity.bysoft.com.br:
       ip: 10.4.161.87
       port: 8080
       settings: check
-	
+
 br1-affinity.bysoft.com.br-iDocuments:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -1102,7 +1102,7 @@ br1-atlas.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ atlas.bysoft.com.br
     http-check expect status 302
     server us2br1webl124-atlas 10.4.161.17:443 ssl check verify none
-	
+
 br1-atualiassessoria.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -1130,7 +1130,7 @@ br1-atualiassessoria.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ atualiassessoria.bysoft.com.br
     http-check expect status 302
     server us2br1webl148-atualiassessoria 10.4.161.71:443 ssl check verify none
-	
+
 br1-auston.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -1148,7 +1148,7 @@ br1-auston.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ auston.bysoft.com.br
     http-check expect status 302
     server us2br1webl044-auston 10.4.160.75:443 ssl check verify none
-	
+
 br1-azsolutio.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -1394,7 +1394,7 @@ br1-cti.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ cti.bysoft.com.br
     http-check expect status 302
     server us2br1webl104-cti 10.4.160.190:443 ssl check verify none
-	
+
 br1-dapepe.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -3534,7 +3534,7 @@ br1-zhycron.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ zhycron.bysoft.com.br
     http-check expect status 302
     server us2br1webl126-zhycron 10.4.161.20:443 ssl check verify none
-	
+
 br1-zhycronlog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
@@ -3552,7 +3552,7 @@ br1-zhycronlog.bysoft.com.br-iPortal:
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ zhycronlog.bysoft.com.br
     http-check expect status 302
     server us2br1webl127-zhycronlog 10.4.161.23:443 ssl check verify none
-	
+
 us8-wtg-cloud-us_containerchain_com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
