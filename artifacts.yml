@@ -7,12 +7,12 @@ variables:
   # 3f1051a384efbd3323a0bf0b9e0c7c368a6ae385
   dante_build_id: '1437243'
 
-  # virgil 20250815.4
-  # Thu Aug 14 23:34:56 UTC 2025 -- Fri Aug 15 09:34:56 AEST 2025
+  # virgil 20250815.8
+  # Fri Aug 15 02:16:42 UTC 2025 -- Fri Aug 15 12:16:42 AEST 2025
   #
-  # Merged PR 38613: update swp4 apex71/72
-  # 8a0242b4712ee433c9a5365b4643aae22ba58f8a
-  virgil_build_id: '1437202'
+  # Merged PR 38627: Consolidate all US2 Hyper-V VLANs into one profile
+  # 3791fe247d52ad36c81eeaab0dea1b8f5e9788ba
+  virgil_build_id: '1437339'
 
   # sqlbilling 20250814.3
   # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
