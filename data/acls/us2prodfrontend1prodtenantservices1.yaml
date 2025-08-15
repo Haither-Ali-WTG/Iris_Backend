@@ -348,22 +348,22 @@ star-uat_livesource_com:
   tests:
     - hdr(host) -m reg -i ^([^\.]+)?-uat\.livesource\.com$
 
-br1-idocuments_path:
+idocuments_path:
   description: "The path contains iDocuments (case-sensitive)"
   tests:
     - path_dir iDocuments
 
-br1-ipropulsor_path:
+ipropulsor_path:
   description: "The path contains iPropulsor (case-sensitive)"
   tests:
     - path_dir iPropulsor
 
-br1-iportal_path:
+iportal_path:
   description: "The path contains iPortal (case-sensitive)"
   tests:
     - path_dir iPortal
 
-br1-mnfe_path:
+mnfe_path:
   description: "The path contains mnfe (case-sensitive)"
   tests:
     - path_dir mnfe
@@ -373,757 +373,757 @@ is_java_application:
   tests:
     - path_end .ear .war .rar
 
-br1-euronorte_bysoft_com_br:
+euronorte_bysoft_com_br:
   description: "euronorte.bysoft.com.br"
   tests:
     - hdr(host) -i euronorte.bysoft.com.br
 
-br1-parrocha_bysoft_com_br:
+parrocha_bysoft_com_br:
   description: "parrocha.bysoft.com.br"
   tests:
     - hdr(host) -i parrocha.bysoft.com.br
 
-br1-luxor_bysoft_com_br:
+luxor_bysoft_com_br:
   description: "luxor.bysoft.com.br"
   tests:
     - hdr(host) -i luxor.bysoft.com.br
 
-br1-comexbh_byosft_com_br:
+comexbh_byosft_com_br:
   description: "comexbh.bysoft.com.br"
   tests:
     - hdr(host) -i comexbh.bysoft.com.br
 
-br1-agenciaraposo_bysoft_com_br:
+agenciaraposo_bysoft_com_br:
   description: "agenciaraposo.bysoft.com.br"
   tests:
     - hdr(host) -i agenciaraposo.bysoft.com.br
 
-br1-agl_bysoft_com_br:
+agl_bysoft_com_br:
   description: "agl.bysoft.com.br"
   tests:
     - hdr(host) -i agl.bysoft.com.br
 
-br1-goldmex_bysoft_com_br:
+goldmex_bysoft_com_br:
   description: "goldmex.bysoft.com.br"
   tests:
     - hdr(host) -i goldmex.bysoft.com.br
 
-br1-sideralcomex_bysoft_com_br:
+sideralcomex_bysoft_com_br:
   description: "sideralcomex.bysoft.com.br"
   tests:
     - hdr(host) -i sideralcomex.bysoft.com.br
 
-br1-ahscomex_bysoft_com_br:
+ahscomex_bysoft_com_br:
   description: "ahscomex.bysoft.com.br"
   tests:
     - hdr(host) -i ahscomex.bysoft.com.br
 
-br1-souzaleite_bysoft_com_br:
+souzaleite_bysoft_com_br:
   description: "souzaleite.bysoft.com.br"
   tests:
     - hdr(host) -i souzaleite.bysoft.com.br
 
-br1-kotah_bysoft_com_br:
+kotah_bysoft_com_br:
   description: "kotah.bysoft.com.br"
   tests:
     - hdr(host) -i kotah.bysoft.com.br
 
-br1-cne_bysoft_com_br:
+cne_bysoft_com_br:
   description: "cne.bysoft.com.br"
   tests:
     - hdr(host) -i cne.bysoft.com.br
 
-br1-agility_bysoft_com_br:
+agility_bysoft_com_br:
   description: "agility.bysoft.com.br"
   tests:
     - hdr(host) -i agility.bysoft.com.br
 
-br1-dsv_bysoft_com_br:
+dsv_bysoft_com_br:
   description: "dsv.bysoft.com.br"
   tests:
     - hdr(host) -i dsv.bysoft.com.br
 
-br1-raxbrasil_bysoft_com_br:
+raxbrasil_bysoft_com_br:
   description: "raxbrasil.bysoft.com.br"
   tests:
     - hdr(host) -i raxbrasil.bysoft.com.br
 
-br1-directlogistica_bysoft_com_br:
+directlogistica_bysoft_com_br:
   description: "directlogistica.bysoft.com.br"
   tests:
     - hdr(host) -i directlogistica.bysoft.com.br
 
-br1-leschaco_bysoft_com_br:
+leschaco_bysoft_com_br:
   description: "leschaco.bysoft.com.br"
   tests:
     - hdr(host) -i leschaco.bysoft.com.br
 
-br1-samsung_bysoft_com_br:
+samsung_bysoft_com_br:
   description: "samsung.bysoft.com.br"
   tests:
     - hdr(host) -i samsung.bysoft.com.br
 
-br1-aduanaglobal_bysoft_com_br:
+aduanaglobal_bysoft_com_br:
   description: "aduanaglobal.bysoft.com.br"
   tests:
     - hdr(host) -i aduanaglobal.bysoft.com.br
 
-br1-mastersul_bysoft_com_br:
+mastersul_bysoft_com_br:
   description: "mastersul.bysoft.com.br"
   tests:
     - hdr(host) -i mastersul.bysoft.com.br
 
-br1-silbran_bysoft_com_br:
+silbran_bysoft_com_br:
   description: "silbran.bysoft.com.br"
   tests:
     - hdr(host) -i silbran.bysoft.com.br
 
-br1-abrao_bysoft_com_br:
+abrao_bysoft_com_br:
   description: "abrao.bysoft.com.br"
   tests:
     - hdr(host) -i abrao.bysoft.com.br
 
-br1-asaassessoria_bysoft_com_br:
+asaassessoria_bysoft_com_br:
   description: "asaassessoria.bysoft.com.br"
   tests:
     - hdr(host) -i asaassessoria.bysoft.com.br
 
-br1-acomex_bysoft_com_br:
+acomex_bysoft_com_br:
   description: "acomex.bysoft.com.br"
   tests:
     - hdr(host) -i acomex.bysoft.com.br
 
-br1-mercante_bysoft_com_br:
+mercante_bysoft_com_br:
   description: "mercante.bysoft.com.br"
   tests:
     - hdr(host) -i mercante.bysoft.com.br
 
-br1-alca_bysoft_com_br:
+alca_bysoft_com_br:
   description: "alca.bysoft.com.br"
   tests:
     - hdr(host) -i alca.bysoft.com.br
 
-br1-trediex_bysoft_com_br:
+trediex_bysoft_com_br:
   description: "trediex.bysoft.com.br"
   tests:
     - hdr(host) -i trediex.bysoft.com.br
 
-br1-viatriangulo_bysoft_com_br:
+viatriangulo_bysoft_com_br:
   description: "viatriangulo.bysoft.com.br"
   tests:
     - hdr(host) -i viatriangulo.bysoft.com.br
 
-br1-baraodespachos_bysoft_com_br:
+baraodespachos_bysoft_com_br:
   description: "baraodespachos.bysoft.com.br"
   tests:
     - hdr(host) -i baraodespachos.bysoft.com.br
 
-br1-multicargo_bysoft_com_br:
+multicargo_bysoft_com_br:
   description: "multicargo.bysoft.com.br"
   tests:
     - hdr(host) -i multicargo.bysoft.com.br
 
-br1-aduana_bysoft_com_br:
+aduana_bysoft_com_br:
   description: "aduana.bysoft.com.br"
   tests:
     - hdr(host) -i aduana.bysoft.com.br
 
-br1-despachosaduanneirosja_bysoft_com_br:
+despachosaduanneirosja_bysoft_com_br:
   description: "despachosaduanneirosja.bysoft.com.br"
   tests:
     - hdr(host) -i despachosaduanneirosja.bysoft.com.br
 
-br1-globalfreight_bysoft_com_br:
+globalfreight_bysoft_com_br:
   description: "globalfreight.bysoft.com.br"
   tests:
     - hdr(host) -i globalfreight.bysoft.com.br
 
-br1-pharmacomex_bysoft_com_br:
+pharmacomex_bysoft_com_br:
   description: "pharmacomex.bysoft.com.br"
   tests:
     - hdr(host) -i pharmacomex.bysoft.com.br
 
-br1-swiftlog_bysoft_com_br:
+swiftlog_bysoft_com_br:
   description: "swiftlog.bysoft.com.br"
   tests:
     - hdr(host) -i swiftlog.bysoft.com.br
 
-br1-fdafermac_bysoft_com_br:
+fdafermac_bysoft_com_br:
   description: "fdafermac.bysoft.com.br"
   tests:
     - hdr(host) -i fdafermac.bysoft.com.br
 
-br1-allog_bysoft_com_br:
+allog_bysoft_com_br:
   description: "allog.bysoft.com.br"
   tests:
     - hdr(host) -i allog.bysoft.com.br
 
-br1-global_bysoft_com_br:
+global_bysoft_com_br:
   description: "global.bysoft.com.br"
   tests:
     - hdr(host) -i global.bysoft.com.br
 
-br1-agile_bysoft_com_br:
+agile_bysoft_com_br:
   description: "agile.bysoft.com.br"
   tests:
     - hdr(host) -i agile.bysoft.com.br
 
-br1-wecomex_bysoft_com_br:
+wecomex_bysoft_com_br:
   description: "wecomex.bysoft.com.br"
   tests:
     - hdr(host) -i wecomex.bysoft.com.br
 
-br1-ecscomex_bysoft_com_br:
+ecscomex_bysoft_com_br:
   description: "ecscomex.bysoft.com.br"
   tests:
     - hdr(host) -i ecscomex.bysoft.com.br
 
-br1-lt_bysoft_com_br:
+lt_bysoft_com_br:
   description: "lt.bysoft.com.br"
   tests:
     - hdr(host) -i lt.bysoft.com.br
 
-br1-amr_bysoft_com_br:
+amr_bysoft_com_br:
   description: "amr.bysoft.com.br"
   tests:
     - hdr(host) -i amr.bysoft.com.br
 
-br1-3cycles_bysoft_com_br:
+3cycles_bysoft_com_br:
   description: "3cycles.bysoft.com.br"
   tests:
     - hdr(host) -i 3cycles.bysoft.com.br
 
-br1-mtn_bysoft_com_br:
+mtn_bysoft_com_br:
   description: "mtn.bysoft.com.br"
   tests:
     - hdr(host) -i mtn.bysoft.com.br
 
-br1-aeroimport_bysoft_com_br:
+aeroimport_bysoft_com_br:
   description: "aeroimport.bysoft.com.br"
   tests:
     - hdr(host) -i aeroimport.bysoft.com.br
 
-br1-yesfoco_bysoft_com_br:
+yesfoco_bysoft_com_br:
   description: "yesfoco.bysoft.com.br"
   tests:
     - hdr(host) -i yesfoco.bysoft.com.br
 
-br1-satu_bysoft_com_br:
+satu_bysoft_com_br:
   description: "satu.bysoft.com.br"
   tests:
     - hdr(host) -i satu.bysoft.com.br
 
-br1-faxe_bysoft_com_br:
+faxe_bysoft_com_br:
   description: "faxe.bysoft.com.br"
   tests:
     - hdr(host) -i faxe.bysoft.com.br
 
-br1-excommerce_bysoft_com_br:
+excommerce_bysoft_com_br:
   description: "excommerce.bysoft.com.br"
   tests:
     - hdr(host) -i excommerce.bysoft.com.br
 
-br1-mvcaye_bysoft_com_br:
+mvcaye_bysoft_com_br:
   description: "mvcaye.bysoft.com.br"
   tests:
     - hdr(host) -i mvcaye.bysoft.com.br
 
-br1-sanmar_bysoft_com_br:
+sanmar_bysoft_com_br:
   description: "sanmar.bysoft.com.br"
   tests:
     - hdr(host) -i sanmar.bysoft.com.br
 
-br1-imporcate_bysoft_com_br:
+imporcate_bysoft_com_br:
   description: "imporcate.bysoft.com.br"
   tests:
     - hdr(host) -i imporcate.bysoft.com.br
 
-br1-paraduana_bysoft_com_br:
+paraduana_bysoft_com_br:
   description: "paraduana.bysoft.com.br"
   tests:
     - hdr(host) -i paraduana.bysoft.com.br
 
-br1-mundial_bysoft_com_br:
+mundial_bysoft_com_br:
   description: "mundial.bysoft.com.br"
   tests:
     - hdr(host) -i mundial.bysoft.com.br
 
-br1-spacecargo_bysoft_com_br:
+spacecargo_bysoft_com_br:
   description: "spacecargo.bysoft.com.br"
   tests:
     - hdr(host) -i spacecargo.bysoft.com.br
 
-br1-dapepe_bysoft_com_br:
+dapepe_bysoft_com_br:
   description: "dapepe.bysoft.com.br"
   tests:
     - hdr(host) -i dapepe.bysoft.com.br
 
-br1-abccomex_bysoft_com_br:
+abccomex_bysoft_com_br:
   description: "abccomex.bysoft.com.br"
   tests:
     - hdr(host) -i abccomex.bysoft.com.br
 
-br1-carreirolog_bysoft_com_br:
+carreirolog_bysoft_com_br:
   description: "carreirolog.bysoft.com.br"
   tests:
     - hdr(host) -i carreirolog.bysoft.com.br
 
-br1-ferfreight_bysoft_com_br:
+ferfreight_bysoft_com_br:
   description: "ferfreight.bysoft.com.br"
   tests:
     - hdr(host) -i ferfreight.bysoft.com.br
 
-br1-gaclogistica_bysoft_com_br:
+gaclogistica_bysoft_com_br:
   description: "gaclogistica.bysoft.com.br"
   tests:
     - hdr(host) -i gaclogistica.bysoft.com.br
 
-br1-gamalog_bysoft_com_br:
+gamalog_bysoft_com_br:
   description: "gamalog.bysoft.com.br"
   tests:
     - hdr(host) -i gamalog.bysoft.com.br
 
-br1-aduanalog_bysoft_com_br:
+aduanalog_bysoft_com_br:
   description: "aduanalog.bysoft.com.br"
   tests:
     - hdr(host) -i aduanalog.bysoft.com.br
 
-br1-intranding_bysoft_com_br:
+intranding_bysoft_com_br:
   description: "intranding.bysoft.com.br"
   tests:
     - hdr(host) -i intranding.bysoft.com.br
 
-br1-nowlogistics_bysoft_com_br:
+nowlogistics_bysoft_com_br:
   description: "nowlogistics.bysoft.com.br"
   tests:
     - hdr(host) -i nowlogistics.bysoft.com.br
 
-br1-ricardo_bysoft_com_br:
+ricardo_bysoft_com_br:
   description: "ricardo.bysoft.com.br"
   tests:
     - hdr(host) -i ricardo.bysoft.com.br
 
-br1-visaointegrada_bysoft_com_br:
+visaointegrada_bysoft_com_br:
   description: "visaointegrada.bysoft.com.br"
   tests:
     - hdr(host) -i visaointegrada.bysoft.com.br
 
-br1-auston_bysoft_com_br:
+auston_bysoft_com_br:
   description: "auston.bysoft.com.br"
   tests:
     - hdr(host) -i auston.bysoft.com.br
 
-br1-konig_bysoft_com_br:
+konig_bysoft_com_br:
   description: "konig.bysoft.com.br"
   tests:
     - hdr(host) -i konig.bysoft.com.br
 
-br1-mundialassesplena_bysoft_com_br:
+mundialassesplena_bysoft_com_br:
   description: "mundialassesplena.bysoft.com.br"
   tests:
     - hdr(host) -i mundialassesplena.bysoft.com.br
 
-br1-tasklogistica_bysoft_com_br:
+tasklogistica_bysoft_com_br:
   description: "tasklogistica.bysoft.com.br"
   tests:
     - hdr(host) -i tasklogistica.bysoft.com.br
 
-br1-dlt_bysoft_com_br:
+dlt_bysoft_com_br:
   description: "dlt.bysoft.com.br"
   tests:
     - hdr(host) -i dlt.bysoft.com.br
 
-br1-paulorocha_bysoft_com_br:
+paulorocha_bysoft_com_br:
   description: "paulorocha.bysoft.com.br"
   tests:
     - hdr(host) -i paulorocha.bysoft.com.br
 
-br1-maniga_bysoft_com_br:
+maniga_bysoft_com_br:
   description: "maniga.bysoft.com.br"
   tests:
     - hdr(host) -i maniga.bysoft.com.br
 
-br1-orttsa_bysoft_com_br:
+orttsa_bysoft_com_br:
   description: "orttsa.bysoft.com.br"
   tests:
     - hdr(host) -i orttsa.bysoft.com.br
 
-br1-geslogistica_bysoft_com_br:
+geslogistica_bysoft_com_br:
   description: "geslogistica.bysoft.com.br"
   tests:
     - hdr(host) -i geslogistica.bysoft.com.br
 
-br1-logisticsplus_bysoft_com_br:
+logisticsplus_bysoft_com_br:
   description: "logisticsplus.bysoft.com.br"
   tests:
     - hdr(host) -i logisticsplus.bysoft.com.br
 
-br1-sei_bysoft_com_br:
+sei_bysoft_com_br:
   description: "sei.bysoft.com.br"
   tests:
     - hdr(host) -i sei.bysoft.com.br
 
-br1-logistran_bysoft_com_br:
+logistran_bysoft_com_br:
   description: "logistran.bysoft.com.br"
   tests:
     - hdr(host) -i logistran.bysoft.com.br
 
-br1-masterfreight_bysoft_com_br:
+masterfreight_bysoft_com_br:
   description: "masterfreight.bysoft.com.br"
   tests:
     - hdr(host) -i masterfreight.bysoft.com.br
 
-br1-self_bysoft_com_br:
+self_bysoft_com_br:
   description: "self.bysoft.com.br"
   tests:
     - hdr(host) -i self.bysoft.com.br
 
-br1-tws_bysoft_com_br:
+tws_bysoft_com_br:
   description: "tws.bysoft.com.br"
   tests:
     - hdr(host) -i tws.bysoft.com.br
 
-br1-ruckhaber_bysoft_com_br:
+ruckhaber_bysoft_com_br:
   description: "ruckhaber.bysoft.com.br"
   tests:
     - hdr(host) -i ruckhaber.bysoft.com.br
 
-br1-dasco_bysoft_com_br:
+dasco_bysoft_com_br:
   description: "dasco.bysoft.com.br"
   tests:
     - hdr(host) -i dasco.bysoft.com.br
 
-br1-direct_bysoft_com_br:
+direct_bysoft_com_br:
   description: "direct.bysoft.com.br"
   tests:
     - hdr(host) -i direct.bysoft.com.br
 
-br1-correbrokers_bysoft_com_br:
+correbrokers_bysoft_com_br:
   description: "correbrokers.bysoft.com.br"
   tests:
     - hdr(host) -i correbrokers.bysoft.com.br
 
-br1-trustcargo_bysoft_com_br:
+trustcargo_bysoft_com_br:
   description: "trustcargo.bysoft.com.br"
   tests:
     - hdr(host) -i trustcargo.bysoft.com.br
 
-br1-mbdespachos_bysoft_com_br:
+mbdespachos_bysoft_com_br:
   description: "mbdespachos.bysoft.com.br"
   tests:
     - hdr(host) -i mbdespachos.bysoft.com.br
 
-br1-masterfreighthom_bysoft_com_br:
+masterfreighthom_bysoft_com_br:
   description: "masterfreighthom.bysoft.com.br"
   tests:
     - hdr(host) -i masterfreighthom.bysoft.com.br
 
-br1-onix_bysoft_com_br:
+onix_bysoft_com_br:
   description: "onix.bysoft.com.br"
   tests:
     - hdr(host) -i onix.bysoft.com.br
 
-br1-azsolutio_bysoft_com_br:
+azsolutio_bysoft_com_br:
   description: "azsolutio.bysoft.com.br"
   tests:
     - hdr(host) -i azsolutio.bysoft.com.br
 
-br1-akhava_bysoft_com_br:
+akhava_bysoft_com_br:
   description: "akhava.bysoft.com.br"
   tests:
     - hdr(host) -i akhava.bysoft.com.br
 
-br1-bechtrans_bysoft_com_br:
+bechtrans_bysoft_com_br:
   description: "bechtrans.bysoft.com.br"
   tests:
     - hdr(host) -i bechtrans.bysoft.com.br
 
-br1-fortal_bysoft_com_br:
+fortal_bysoft_com_br:
   description: "fortal.bysoft.com.br"
   tests:
     - hdr(host) -i fortal.bysoft.com.br
 
-br1-mhinternacional_bysoft_com_br:
+mhinternacional_bysoft_com_br:
   description: "mhinternacional.bysoft.com.br"
   tests:
     - hdr(host) -i mhinternacional.bysoft.com.br
 
-br1-atualiassessoria_bysoft_com_br:
+atualiassessoria_bysoft_com_br:
   description: "atualiassessoria.bysoft.com.br"
   tests:
     - hdr(host) -i atualiassessoria.bysoft.com.br
 
-br1-jejcomercio_bysoft_com_br:
+jejcomercio_bysoft_com_br:
   description: "jejcomercio.bysoft.com.br"
   tests:
     - hdr(host) -i jejcomercio.bysoft.com.br
 
-br1-dogana_bysoft_com_br:
+dogana_bysoft_com_br:
   description: "dogana.bysoft.com.br"
   tests:
     - hdr(host) -i dogana.bysoft.com.br
 
-br1-atlantis_bysoft_com_br:
+atlantis_bysoft_com_br:
   description: "atlantis.bysoft.com.br"
   tests:
     - hdr(host) -i atlantis.bysoft.com.br
 
-br1-eficienciacomex_bysoft_com_br:
+eficienciacomex_bysoft_com_br:
   description: "eficienciacomex.bysoft.com.br"
   tests:
     - hdr(host) -i eficienciacomex.bysoft.com.br
 
-br1-gefco_bysoft_com_br:
+gefco_bysoft_com_br:
   description: "gefco.bysoft.com.br"
   tests:
     - hdr(host) -i gefco.bysoft.com.br
 
-br1-affinity_bysoft_com_br:
+affinity_bysoft_com_br:
   description: "affinity.bysoft.com.br"
   tests:
     - hdr(host) -i affinity.bysoft.com.br
 
-br1-goncalvesfilhos_bysoft_com_br:
+goncalvesfilhos_bysoft_com_br:
   description: "goncalvesfilhos.bysoft.com.br"
   tests:
     - hdr(host) -i goncalvesfilhos.bysoft.com.br
 
-br1-gpcargo_bysoft_com_br:
+gpcargo_bysoft_com_br:
   description: "gpcargo.bysoft.com.br"
   tests:
     - hdr(host) -i gpcargo.bysoft.com.br
 
-br1-intercargofranca_bysoft_com_br:
+intercargofranca_bysoft_com_br:
   description: "intercargofranca.bysoft.com.br"
   tests:
     - hdr(host) -i intercargofranca.bysoft.com.br
 
-br1-mebroker_bysoft_com_br:
+mebroker_bysoft_com_br:
   description: "mebroker.bysoft.com.br"
   tests:
     - hdr(host) -i mebroker.bysoft.com.br
 
-br1-saoborja_bysoft_com_br:
+saoborja_bysoft_com_br:
   description: "saoborja.bysoft.com.br"
   tests:
     - hdr(host) -i saoborja.bysoft.com.br
 
-br1-iglobal_bysoft_com_br:
+iglobal_bysoft_com_br:
   description: "iglobal.bysoft.com.br"
   tests:
     - hdr(host) -i iglobal.bysoft.com.br
 
-br1-internacional_bysoft_com_br:
+internacional_bysoft_com_br:
   description: "internacional.bysoft.com.br"
   tests:
     - hdr(host) -i internacional.bysoft.com.br
 
-br1-newslogistics_bysoft_com_br:
+newslogistics_bysoft_com_br:
   description: "newslogistics.bysoft.com.br"
   tests:
     - hdr(host) -i newslogistics.bysoft.com.br
 
-br1-ncxaduana_bysoft_com_br:
+ncxaduana_bysoft_com_br:
   description: "ncxaduana.bysoft.com.br"
   tests:
     - hdr(host) -i ncxaduana.bysoft.com.br
 
-br1-roquepacheco_bysoft_com_br:
+roquepacheco_bysoft_com_br:
   description: "roquepacheco.bysoft.com.br"
   tests:
     - hdr(host) -i roquepacheco.bysoft.com.br
 
-br1-partnerag_bysoft_com_br:
+partnerag_bysoft_com_br:
   description: "partnerag.bysoft.com.br"
   tests:
     - hdr(host) -i partnerag.bysoft.com.br
 
-br1-vpmdc_bysoft_com_br:
+vpmdc_bysoft_com_br:
   description: "vpmdc.bysoft.com.br"
   tests:
     - hdr(host) -i vpmdc.bysoft.com.br
 
-br1-pmdespachos_bysoft_com_br:
+pmdespachos_bysoft_com_br:
   description: "pmdespachos.bysoft.com.br"
   tests:
     - hdr(host) -i pmdespachos.bysoft.com.br
 
-br1-portimex_bysoft_com_br:
+portimex_bysoft_com_br:
   description: "portimex.bysoft.com.br"
   tests:
     - hdr(host) -i portimex.bysoft.com.br
 
-br1-nuno_bysoft_com_br:
+nuno_bysoft_com_br:
   description: "nuno.bysoft.com.br"
   tests:
     - hdr(host) -i nuno.bysoft.com.br
 
-br1-rhenus_bysoft_com_br:
+rhenus_bysoft_com_br:
   description: "rhenus.bysoft.com.br"
   tests:
     - hdr(host) -i rhenus.bysoft.com.br
 
-br1-santosbay_bysoft_com_br:
+santosbay_bysoft_com_br:
   description: "santosbay.bysoft.com.br"
   tests:
     - hdr(host) -i santosbay.bysoft.com.br
 
-br1-budson_bysoft_com_br:
+budson_bysoft_com_br:
   description: "budson.bysoft.com.br"
   tests:
     - hdr(host) -i budson.bysoft.com.br
 
-br1-pdfs_bysoft_com_br:
+pdfs_bysoft_com_br:
   description: "pdfs.bysoft.com.br"
   tests:
     - hdr(host) -i pdfs.bysoft.com.br
 
-br1-acetradeways_bysoft_com_br:
+acetradeways_bysoft_com_br:
   description: "acetradeways.bysoft.com.br"
   tests:
     - hdr(host) -i acetradeways.bysoft.com.br
 
-br1-go2uti_bysoft_com_br:
+go2uti_bysoft_com_br:
   description: "go2uti.bysoft.com.br"
   tests:
     - hdr(host) -i go2uti.bysoft.com.br
 
-br1-tradehunter_bysoft_com_br:
+tradehunter_bysoft_com_br:
   description: "tradehunter.bysoft.com.br"
   tests:
     - hdr(host) -i tradehunter.bysoft.com.br
 
-br1-jmaduaneira_bysoft_com_br:
+jmaduaneira_bysoft_com_br:
   description: "jmaduaneira.bysoft.com.br"
   tests:
     - hdr(host) -i jmaduaneira.bysoft.com.br
 
-br1-paivacomex_bysoft_com_br:
+paivacomex_bysoft_com_br:
   description: "paivacomex.bysoft.com.br"
   tests:
     - hdr(host) -i paivacomex.bysoft.com.br
 
-br1-martinsdespachos_bysoft_com_br:
+martinsdespachos_bysoft_com_br:
   description: "martinsdespachos.bysoft.com.br"
   tests:
     - hdr(host) -i martinsdespachos.bysoft.com.br
 
-br1-cti_bysoft_com_br:
+cti_bysoft_com_br:
   description: "cti.bysoft.com.br"
   tests:
     - hdr(host) -i cti.bysoft.com.br
 
-br1-brasporto_bysoft_com_br:
+brasporto_bysoft_com_br:
   description: "brasporto.bysoft.com.br"
   tests:
     - hdr(host) -i brasporto.bysoft.com.br
 
-br1-itatrans_bysoft_com_br:
+itatrans_bysoft_com_br:
   description: "itatrans.bysoft.com.br"
   tests:
     - hdr(host) -i itatrans.bysoft.com.br
 
-br1-wildflyteste_bysoft_com_br:
+wildflyteste_bysoft_com_br:
   description: "wildflyteste.bysoft.com.br"
   tests:
     - hdr(host) -i wildflyteste.bysoft.com.br
 
-br1-diniz_bysoft_com_br:
+diniz_bysoft_com_br:
   description: "diniz.bysoft.com.br"
   tests:
     - hdr(host) -i diniz.bysoft.com.br
 
-br1-focus_bysoft_com_br:
+focus_bysoft_com_br:
   description: "focus.bysoft.com.br"
   tests:
     - hdr(host) -i focus.bysoft.com.br
 
-br1-indaia_bysoft_com_br:
+indaia_bysoft_com_br:
   description: "indaia.bysoft.com.br"
   tests:
     - hdr(host) -i indaia.bysoft.com.br
 
-br1-ups_bysoft_com_br:
+ups_bysoft_com_br:
   description: "ups.bysoft.com.br"
   tests:
     - hdr(host) -i ups.bysoft.com.br
 
-br1-interfreight_bysoft_com_br:
+interfreight_bysoft_com_br:
   description: "interfreight.bysoft.com.br"
   tests:
     - hdr(host) -i interfreight.bysoft.com.br
 
-br1-bdp_bysoft_com_br:
+bdp_bysoft_com_br:
   description: "bdp.bysoft.com.br"
   tests:
     - hdr(host) -i bdp.bysoft.com.br
 
-br1-updates_bysoft_com_br:
+updates_bysoft_com_br:
   description: "updates.bysoft.com.br"
   tests:
     - hdr(host) -i updates.bysoft.com.br
 
-br1-harpy_bysoft_com_br:
+harpy_bysoft_com_br:
   description: "harpy.bysoft.com.br"
   tests:
     - hdr(host) -i harpy.bysoft.com.br
 
-br1-confidence_bysoft_com_br:
+confidence_bysoft_com_br:
   description: "confidence.bysoft.com.br"
   tests:
     - hdr(host) -i confidence.bysoft.com.br
 
-br1-isavix_bysoft_com_br:
+isavix_bysoft_com_br:
   description: "isavix.bysoft.com.br"
   tests:
     - hdr(host) -i isavix.bysoft.com.br
 
-br1-yusenhomologacao_bysoft_com_br:
+yusenhomologacao_bysoft_com_br:
   description: "yusenhomologacao.bysoft.com.br"
   tests:
     - hdr(host) -i yusenhomologacao.bysoft.com.br
 
-br1-yusen_bysoft_com_br:
+yusen_bysoft_com_br:
   description: "yusen.bysoft.com.br"
   tests:
     - hdr(host) -i yusen.bysoft.com.br
 
-br1-dhlhomologacao_bysoft_com_br:
+dhlhomologacao_bysoft_com_br:
   description: "dhlhomologacao.bysoft.com.br"
   tests:
     - hdr(host) -i dhlhomologacao.bysoft.com.br
 
-br1-dhl_bysoft_com_br:
+dhl_bysoft_com_br:
   description: "dhl.bysoft.com.br"
   tests:
     - hdr(host) -i dhl.bysoft.com.br
 
-br1-atlas_bysoft_com_br:
+atlas_bysoft_com_br:
   description: "atlas.bysoft.com.br"
   tests:
     - hdr(host) -i atlas.bysoft.com.br
 
-br1-homologacao_bysoft_com_br:
+homologacao_bysoft_com_br:
   description: "homologacao.bysoft.com.br"
   tests:
     - hdr(host) -i homologacao.bysoft.com.br
 
-br1-zhycron_bysoft_com_br:
+zhycron_bysoft_com_br:
   description: "zhycron.bysoft.com.br"
   tests:
     - hdr(host) -i zhycron.bysoft.com.br
 
-br1-zhycronlog_bysoft_com_br:
+zhycronlog_bysoft_com_br:
   description: "zhycronlog.bysoft.com.br"
   tests:
     - hdr(host) -i zhycronlog.bysoft.com.br
 
-br1-simetrans_bysoft_com_br:
+simetrans_bysoft_com_br:
   description: "simetrans.bysoft.com.br"
   tests:
     - hdr(host) -i simetrans.bysoft.com.br
 
-br1-martinsdespachoshomolog_bysoft_com_br:
+martinsdespachoshomolog_bysoft_com_br:
   description: "martinsdespachoshomolog.bysoft.com.br"
   tests:
     - hdr(host) -i martinsdespachoshomolog.bysoft.com.br
