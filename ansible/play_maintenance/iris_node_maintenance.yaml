@@ -47,7 +47,6 @@
             tasks_from: unroll_agents.yml
           vars:
             target_system_name: "fleetSystemApacProd1"
-          when: dc == "AU2"
 
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
@@ -78,7 +77,6 @@
       include_role:
         name: telegraf_config
         tasks_from: basic_install.yml
-      when: dc == "AU2"
 
     - name: Install Elastic Agent
       include_role:
@@ -86,7 +84,6 @@
       vars:
         policy_name: "wtg-linux-haproxy"
         target_system_name: "fleetSystemApacProd1"
-      when: dc == "AU2"
 
     - name: Wait for Iris run - timeout 60mins, poll every 10s
       wait_for:
