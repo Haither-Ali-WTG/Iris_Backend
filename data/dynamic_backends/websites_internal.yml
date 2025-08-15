@@ -4,7 +4,7 @@
   encryption: false
   http_health_check:
     enabled: false
-  port: 80
+  port: 443
   cookie:
     enabled: true
     name: 'CW1'
@@ -15,7 +15,7 @@
   encryption: false
   http_health_check:
     enabled: false
-  port: 80
+  port: 443
   cookie:
     enabled: true
     name: 'CW1'
