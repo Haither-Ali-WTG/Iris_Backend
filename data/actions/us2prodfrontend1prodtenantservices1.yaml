@@ -350,7 +350,8 @@ bysoft_backend_selection:
     - use_backend gaclogistica_bysoft_com_br                    if gaclogistica_bysoft_com_br
     - use_backend gamalog_bysoft_com_br                         if gamalog_bysoft_com_br
     - use_backend gefco_bysoft_com_br                           if gefco_bysoft_com_br
-    - use_backend geslogistica_bysoft_com_br                    if geslogistica_bysoft_com_br || logisticsplus_bysoft_com_br
+    - use_backend geslogistica_bysoft_com_br                    if geslogistica_bysoft_com_br
+    - use_backend geslogistica_bysoft_com_br                    if logisticsplus_bysoft_com_br
     - use_backend global_bysoft_com_br                          if global_bysoft_com_br
     - use_backend globalfreight_bysoft_com_br                   if globalfreight_bysoft_com_br
     - use_backend go2uti_bysoft_com_br                          if go2uti_bysoft_com_br
