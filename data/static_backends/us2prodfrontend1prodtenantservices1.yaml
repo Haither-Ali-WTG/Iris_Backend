@@ -647,7 +647,7 @@ usq-services-api-qa.livesource.com:
     server chghqasvc01 10.4.207.15:80 check
     server chghqasvc02 10.4.207.16:80 check
 
-3cycles.bysoft.com.br:
+threecycles.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
     enabled: false

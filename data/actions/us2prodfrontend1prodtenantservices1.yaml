@@ -293,7 +293,7 @@ bysoft_backend_selection:
     - use_backend iportal-yusenhomologacao_bysoft_com_br        if yusenhomologacao_bysoft_com_br iportal_path
     - use_backend iportal-zhycron_bysoft_com_br                 if zhycron_bysoft_com_br iportal_path
     - use_backend iportal-zhycronlog_bysoft_com_br              if zhycronlog_bysoft_com_br iportal_path
-    - use_backend 3cycles_bysoft_com_br                         if 3cycles_bysoft_com_br
+    - use_backend threecycles_bysoft_com_br                     if threecycles_bysoft_com_br
     - use_backend abccomex_bysoft_com_br                        if abccomex_bysoft_com_br
     - use_backend abrao_bysoft_com_br                           if abrao_bysoft_com_br
     - use_backend acetradeways_bysoft_com_br                    if acetradeways_bysoft_com_br

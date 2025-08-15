@@ -588,7 +588,7 @@ amr_bysoft_com_br:
   tests:
     - hdr(host) -i amr.bysoft.com.br
 
-3cycles_bysoft_com_br:
+threecycles_bysoft_com_br:
   description: "3cycles.bysoft.com.br"
   tests:
     - hdr(host) -i 3cycles.bysoft.com.br
