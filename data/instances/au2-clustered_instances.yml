@@ -133,6 +133,8 @@ clustered_instances:
           agent_port: 8089
         - server: au2sp-tweb-405b.sand.wtg.zone
           agent_port: 8089
+        - server: au2sp-tweb-406a.sand.wtg.zone
+          agent_port: 8089
         - server: au2sp-sweb-406a.sand.wtg.zone
           agent_port: 8089
         - server: au2sp-sweb-407.sand.wtg.zone
