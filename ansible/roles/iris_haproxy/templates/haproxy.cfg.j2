@@ -167,28 +167,30 @@ capture request header X-Forwarded-For len 256
 
 
 
+{% if frontend.ports.plaintext | default([]) %}
 bind {% for item in frontend.ports.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
 {% for item in frontend.ports.plaintext %}
 # port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
-{% if certificates | default([]) %}
+{% endif %}
+{% if certificates | default([]) and frontend.ports.ssl | default([]) %}
 bind {% for item in frontend.ports.ssl %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor %} ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
 {% for item in frontend.ports.ssl %}
 # port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
 {% endif %}
 
-{% if frontend.proxy_ports | default([]) %}
+{% if frontend.proxy_ports.plaintext | default([]) %}
 bind {% for item in frontend.proxy_ports.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%} accept-proxy
 {% for item in frontend.proxy_ports.plaintext %}
 # proxy port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
-{% if certificates | default([]) %}
+{% endif %}
+{% if certificates | default([]) and frontend.proxy_ports.ssl | default([]) %}
 bind {% for item in frontend.proxy_ports.ssl %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor %} accept-proxy ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
 {% for item in frontend.proxy_ports.ssl %}
 # proxy port {{ all_port_map[item] }} mapped to {{ item }} on host
 {% endfor %}
-{% endif %}
 {% endif %}
 
 # CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
