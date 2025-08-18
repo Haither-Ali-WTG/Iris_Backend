@@ -118,7 +118,7 @@ bysoft_backend_selection:
     Bysoft-specific backend selection. Handle subdirectories first, then the base domains.
   order: 84
   actions:
-    - use_backend iportal-3cycles_bysoft_com_br                 if 3cycles_bysoft_com_br iportal_path
+    - use_backend iportal-threecycles_bysoft_com_br             if threecycles_bysoft_com_br iportal_path
     - use_backend iportal-abccomex_bysoft_com_br                if abccomex_bysoft_com_br iportal_path
     - use_backend iportal-abrao_bysoft_com_br                   if abrao_bysoft_com_br iportal_path
     - use_backend iportal-acetradeways_bysoft_com_br            if acetradeways_bysoft_com_br iportal_path

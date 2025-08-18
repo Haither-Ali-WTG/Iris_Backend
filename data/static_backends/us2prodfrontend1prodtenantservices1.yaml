@@ -657,10 +657,10 @@ threecycles.bysoft.com.br:
       port: 8080
       settings: check
 
-iportal-3cycles.bysoft.com.br:
+iportal-threecycles.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend iportal-3cycles.bysoft.com.br
+    backend iportal-threecycles.bysoft.com.br
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ 3cycles.bysoft.com.br
     http-check expect status 302
     server us2br1webl016-3cycles 10.4.160.15:443 ssl check verify none
