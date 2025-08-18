@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250815.2
-  # Fri Aug 15 03:01:51 UTC 2025 -- Fri Aug 15 13:01:51 AEST 2025
+  # Dante Build Artifact 20250818.1
+  # Mon Aug 18 00:20:51 UTC 2025 -- Mon Aug 18 10:20:51 AEST 2025
   #
-  # Merge pull request 38646 from dante_artifact_upgrade into master
-  # 0c1977fec972a31b13f878528b0623188b0352f7
-  dante_build_id: '1437376'
+  # Merge pull request 38689 from dante_artifact_upgrade into master
+  # 8f9f11808e6c29df8478d3fc9d54aed026065018
+  dante_build_id: '1439930'
 
-  # virgil 20250815.8
-  # Fri Aug 15 02:16:42 UTC 2025 -- Fri Aug 15 12:16:42 AEST 2025
+  # virgil 20250818.2
+  # Sun Aug 17 23:36:34 UTC 2025 -- Mon Aug 18 09:36:34 AEST 2025
   #
-  # Merged PR 38627: Consolidate all US2 Hyper-V VLANs into one profile
-  # 3791fe247d52ad36c81eeaab0dea1b8f5e9788ba
-  virgil_build_id: '1437339'
+  # Merged PR 38677: Add five C63s to US2
+  # 32dc5d26af6b68806a52319ba2068f9e58de9d56
+  virgil_build_id: '1439874'
 
   # sqlbilling 20250814.3
   # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
