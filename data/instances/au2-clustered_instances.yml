@@ -289,8 +289,8 @@ clustered_instances:
             - 6052  # AU2 PROD SQL Cluster 441
             - 6053  # AU2 PROD SQL Cluster 442
             - 6054  # AU2 TEST SQL Cluster 412
-            - 6055  # AU2 TEST SQL Cluster 460 (NXGPRD Dedicated)
-
+            - 6055  # AU2 PROD SQL Cluster 460 (NXGPRD Dedicated)
+            - 6056  # AU2 PROD SQL Cluster 450 (Logistics Services Dedicated)
             # ..6999
 
       iis_servers: []
