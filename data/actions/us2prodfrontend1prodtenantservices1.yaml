@@ -159,7 +159,7 @@ bysoft_backend_selection:
     - use_backend iportal-budson_bysoft_com_br                  if budson_bysoft_com_br iportal_path
     - use_backend iportal-carreirolog_bysoft_com_br             if carreirolog_bysoft_com_br iportal_path
     - use_backend iportal-cne_bysoft_com_br                     if cne_bysoft_com_br iportal_path
-    - use_backend iportal-comexbh_bysoft_com_br                 if comexbh_byosft_com_br iportal_path
+    - use_backend iportal-comexbh_bysoft_com_br                 if comexbh_bysoft_com_br iportal_path
     - use_backend iportal-confidence_bysoft_com_br              if confidence_bysoft_com_br iportal_path
     - use_backend iportal-correbrokers_bysoft_com_br            if correbrokers_bysoft_com_br iportal_path
     - use_backend idocuments-cti_bysoft_com_br                  if cti_bysoft_com_br idocuments_path
