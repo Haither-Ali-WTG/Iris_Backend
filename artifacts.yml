@@ -7,12 +7,12 @@ variables:
   # 22dda60fbf44402b5e458ae03789c5eb70d31a6e
   dante_build_id: '1440064'
 
-  # virgil 20250818.4
-  # Mon Aug 18 01:51:39 UTC 2025 -- Mon Aug 18 11:51:39 AEST 2025
+  # virgil 20250819.2
+  # Tue Aug 19 00:01:18 UTC 2025 -- Tue Aug 19 10:01:18 AEST 2025
   #
-  # Merged PR 38706: configure swp18 on apex71/72
-  # 0935fcc922436b55cc3118ae15a29c7702e6ca90
-  virgil_build_id: '1440011'
+  # Merge pull request 38745 from virgil_python_upgrade into master
+  # aff795a655445ae0b9f93a73933bacb75ec0d862
+  virgil_build_id: '1440919'
 
   # sqlbilling 20250814.3
   # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
