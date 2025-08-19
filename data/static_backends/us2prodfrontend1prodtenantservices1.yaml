@@ -1308,7 +1308,7 @@ cne.bysoft.com.br:
 iportal-cne.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend iportal-cne.bysoft.com.br_bysoft_com_br
+    backend iportal-cne_bysoft_com_br
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ cne.bysoft.com.br
     http-check expect status 302
     server us2br1webl069-cne 10.4.160.131:443 ssl check verify none
@@ -1444,7 +1444,7 @@ despachosaduanneirosja.bysoft.com.br:
 iportal-despachosaduanneirosja.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
-    backend iportal-despachosaduanneirosja.bysoft.com.br
+    backend iportal-despachosaduanneirosja_bysoft_com_br
     option httpchk GET /iPortal HTTP/1.1\r\nHost:\ despachosaduanneirosja.bysoft.com.br
     http-check expect status 302
     server us2br1webl090-despachosaduanneirosja 10.4.160.175:443 ssl check verify none
