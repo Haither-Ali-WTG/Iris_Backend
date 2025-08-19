@@ -388,7 +388,7 @@ luxor_bysoft_com_br:
   tests:
     - hdr(host) -i luxor.bysoft.com.br
 
-comexbh_byosft_com_br:
+comexbh_bysoft_com_br:
   description: "comexbh.bysoft.com.br"
   tests:
     - hdr(host) -i comexbh.bysoft.com.br
