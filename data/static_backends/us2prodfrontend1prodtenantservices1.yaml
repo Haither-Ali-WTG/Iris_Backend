@@ -1609,7 +1609,7 @@ iportal-dsv.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dsv.bysoft.com.br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost: dsv.bysoft.com.br
+    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dsv.bysoft.com.br
     http-check expect status 302
     server us2br1webl071-agility 10.4.160.141:443 ssl check verify none
 
