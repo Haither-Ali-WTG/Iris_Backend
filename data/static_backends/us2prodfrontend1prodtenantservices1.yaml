@@ -2438,7 +2438,7 @@ iportal-mastersul.bysoft.com.br:
     server us2br1webl077-mastersul 10.4.160.153:443 ssl check verify none
 
 mnfe-mastersul.bysoft.com.br:
-  clustered_instances: [us2prodfrontend1tenantservices1]
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend mnfe-mastersul_bysoft_com_br
     server us2br1webl077-mastersul 10.4.160.153:7007 check
