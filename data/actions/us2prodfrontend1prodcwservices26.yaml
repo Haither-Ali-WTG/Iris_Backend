@@ -31,7 +31,7 @@ cw1_use_dynamic_backend_path:
 
 app_gomardom_com:
   description: |-
-    Glow Customurl for MD2PRD
+    Custom Glow URL for MD2PRD
   order: 80
   actions:
     - >-
@@ -39,7 +39,7 @@ app_gomardom_com:
 
 app_tlsgo_com:
   description: |-
-    Glow Customurl for MD2PRD
+    Custom Glow URL for MD2PRD
   order: 80
   actions:
     - >-
@@ -47,8 +47,56 @@ app_tlsgo_com:
 
 portals_extralogistics_com:
   description: |-
-    Glow Customurl for ELLLAX
+    Custom Glow URL for ELLLAX
   order: 80
   actions:
     - >-
         use_backend www-elllax.wisegrid.net if { hdr(host),field(1,:) -i portals.extralogistics.com }
+
+neo_delmarcargo_com:
+  description: |-
+    Custom Glow URL for DE1JFK
+  order: 80
+  actions:
+    - >-
+        use_backend www-de1jfl.wisegrid.net if { hdr(host),field(1,:) -i neo.delmarcargo.com }
+
+eworldplus_com:
+  description: |-
+    Custom Webtracker URL for LOPENT
+  order: 80
+  actions:
+    - >-
+        use_backend lopent.webtracker.wisegrid.net if { hdr(host),field(1,:) -i eworldplus.com }
+
+neo_eworldplus_com:
+  description: |-
+    Custom Glow URL for LOPENT
+  order: 80
+  actions:
+    - >-
+        use_backend www-lopent.wisegrid.net if { hdr(host),field(1,:) -i neo.eworldplus.com }
+
+app_gomcd_com:
+  description: |-
+    Custom Glow URL for MD2PRD
+  order: 80
+  actions:
+    - >-
+        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomcd.com }
+
+freighttracker_livingston_com:
+  description: |-
+    Custom Glow URL for L77PRO
+  order: 80
+  actions:
+    - >-
+        use_backend www-l77pro.wisegrid.net if { hdr(host),field(1,:) -i freighttracker.livingston.com }
+
+freighttracker_training_livingston_com:
+  description: |-
+    Custom Glow URL for L77TRN
+  order: 80
+  actions:
+    - >-
+        use_backend www-l77trn.wisegrid.net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
