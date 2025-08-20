@@ -133,8 +133,6 @@ clustered_instances:
           agent_port: 8089
         - server: au2sp-tweb-405b.sand.wtg.zone
           agent_port: 8089
-        - server: au2sp-tweb-406a.sand.wtg.zone
-          agent_port: 8089
         - server: au2sp-sweb-406a.sand.wtg.zone
           agent_port: 8089
         - server: au2sp-sweb-407.sand.wtg.zone
@@ -143,6 +141,7 @@ clustered_instances:
       iis_servers_local:
         - au2sp-sweb-402a.sand.wtg.zone
         - au2sp-sweb-402b.sand.wtg.zone
+        - au2sp-tweb-406a.sand.wtg.zone
       iis_user_local: s_lbwinrmquerier
       websites_config: websites_internal.yml
       certificates:
