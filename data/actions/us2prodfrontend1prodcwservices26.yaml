@@ -100,3 +100,11 @@ freighttracker_training_livingston_com:
   actions:
     - >-
         use_backend www-l77trn.wisegrid.net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
+
+aetnatracking_com:
+  description: |-
+    Custom Glow URL for AETPRD
+  order: 80
+  actions:
+    - >-
+        use_backend www-aetprd.wisegrid.net if { hdr(host),field(1,:) -i aetnatracking.com }
