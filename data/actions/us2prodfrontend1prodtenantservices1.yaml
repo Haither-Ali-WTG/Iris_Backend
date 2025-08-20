@@ -1,4 +1,12 @@
 ---
+br1_response_header:
+  description: |-
+    Ensure correct MIME type for Bysoft application updates
+  order: 60
+  actions:
+    - http-response set-header Content-Type application/java-archive if updates_bysoft_com_br is_java_application
+    - http-response del-header X-Content-Type-Options if updates_bysoft_com_br
+
 nowww_redirect:
   description: |-
     Add "www" prefix to naked CargoSphere domains
@@ -104,3 +112,338 @@ blumesource_backend_selection:
     - http-request deny                                     if !usq_akamai_src star-demo_livesource_com
     - http-request deny                                     if !usq_akamai_src star-qa_livesource_com
     - http-request deny                                     if !usq_akamai_src star_livesource_com
+
+bysoft_backend_selection:
+  description: |-
+    Bysoft-specific backend selection. Handle subdirectories first, then the base domains.
+  order: 84
+  actions:
+    - use_backend iportal-threecycles_bysoft_com_br             if threecycles_bysoft_com_br iportal_path
+    - use_backend iportal-abccomex_bysoft_com_br                if abccomex_bysoft_com_br iportal_path
+    - use_backend iportal-abrao_bysoft_com_br                   if abrao_bysoft_com_br iportal_path
+    - use_backend iportal-acetradeways_bysoft_com_br            if acetradeways_bysoft_com_br iportal_path
+    - use_backend iportal-acomex_bysoft_com_br                  if acomex_bysoft_com_br iportal_path
+    - use_backend idocuments-aduana_bysoft_com_br               if aduana_bysoft_com_br idocuments_path
+    - use_backend iportal-aduana_bysoft_com_br                  if aduana_bysoft_com_br iportal_path
+    - use_backend iportal-aduanaglobal_bysoft_com_br            if aduanaglobal_bysoft_com_br iportal_path
+    - use_backend iportal-aduanalog_bysoft_com_br               if aduanalog_bysoft_com_br iportal_path
+    - use_backend idocuments-aeroimport_bysoft_com_br           if aeroimport_bysoft_com_br idocuments_path
+    - use_backend iportal-aeroimport_bysoft_com_br              if aeroimport_bysoft_com_br iportal_path
+    - use_backend idocuments-affinity_bysoft_com_br             if affinity_bysoft_com_br idocuments_path
+    - use_backend iportal-affinity_bysoft_com_br                if affinity_bysoft_com_br iportal_path
+    - use_backend iportal-agenciaraposo_bysoft_com_br           if agenciaraposo_bysoft_com_br iportal_path
+    - use_backend idocuments-agile_bysoft_com_br                if agile_bysoft_com_br idocuments_path
+    - use_backend iportal-agile_bysoft_com_br                   if agile_bysoft_com_br iportal_path
+    - use_backend iportal-agility_bysoft_com_br                 if agility_bysoft_com_br iportal_path
+    - use_backend idocuments-agl_bysoft_com_br                  if agl_bysoft_com_br idocuments_path
+    - use_backend iportal-agl_bysoft_com_br                     if agl_bysoft_com_br iportal_path
+    - use_backend iportal-ahscomex_bysoft_com_br                if ahscomex_bysoft_com_br iportal_path
+    - use_backend iportal-akhava_bysoft_com_br                  if akhava_bysoft_com_br iportal_path
+    - use_backend iportal-alca_bysoft_com_br                    if alca_bysoft_com_br iportal_path
+    - use_backend iportal-allog_bysoft_com_br                   if allog_bysoft_com_br iportal_path
+    - use_backend idocuments-amr_bysoft_com_br                  if amr_bysoft_com_br idocuments_path
+    - use_backend iportal-amr_bysoft_com_br                     if amr_bysoft_com_br iportal_path
+    - use_backend iportal-asaassessoria_bysoft_com_br           if asaassessoria_bysoft_com_br iportal_path
+    - use_backend iportal-atlantis_bysoft_com_br                if atlantis_bysoft_com_br iportal_path
+    - use_backend iportal-atlas_bysoft_com_br                   if atlas_bysoft_com_br iportal_path
+    - use_backend idocuments-atualiassessoria_bysoft_com_br     if atualiassessoria_bysoft_com_br idocuments_path
+    - use_backend iportal-atualiassessoria_bysoft_com_br        if atualiassessoria_bysoft_com_br iportal_path
+    - use_backend iportal-auston_bysoft_com_br                  if auston_bysoft_com_br iportal_path
+    - use_backend iportal-azsolutio_bysoft_com_br               if azsolutio_bysoft_com_br iportal_path
+    - use_backend iportal-baraodespachos_bysoft_com_br          if baraodespachos_bysoft_com_br iportal_path
+    - use_backend iportal-bdp_bysoft_com_br                     if bdp_bysoft_com_br iportal_path
+    - use_backend idocuments-bechtrans_bysoft_com_br            if bechtrans_bysoft_com_br idocuments_path
+    - use_backend iportal-bechtrans_bysoft_com_br               if bechtrans_bysoft_com_br iportal_path
+    - use_backend idocuments-brasporto_bysoft_com_br            if brasporto_bysoft_com_br idocuments_path
+    - use_backend iportal-brasporto_bysoft_com_br               if brasporto_bysoft_com_br iportal_path
+    - use_backend iportal-budson_bysoft_com_br                  if budson_bysoft_com_br iportal_path
+    - use_backend iportal-carreirolog_bysoft_com_br             if carreirolog_bysoft_com_br iportal_path
+    - use_backend iportal-cne_bysoft_com_br                     if cne_bysoft_com_br iportal_path
+    - use_backend iportal-comexbh_bysoft_com_br                 if comexbh_bysoft_com_br iportal_path
+    - use_backend iportal-confidence_bysoft_com_br              if confidence_bysoft_com_br iportal_path
+    - use_backend iportal-correbrokers_bysoft_com_br            if correbrokers_bysoft_com_br iportal_path
+    - use_backend idocuments-cti_bysoft_com_br                  if cti_bysoft_com_br idocuments_path
+    - use_backend iportal-cti_bysoft_com_br                     if cti_bysoft_com_br iportal_path
+    - use_backend iportal-dapepe_bysoft_com_br                  if dapepe_bysoft_com_br iportal_path
+    - use_backend iportal-dasco_bysoft_com_br                   if dasco_bysoft_com_br iportal_path
+    - use_backend iportal-despachosaduanneirosja_bysoft_com_br  if despachosaduanneirosja_bysoft_com_br iportal_path
+    - use_backend idocuments-dhl_bysoft_com_br                  if dhl_bysoft_com_br idocuments_path
+    - use_backend iportal-dhl_bysoft_com_br                     if dhl_bysoft_com_br iportal_path
+    - use_backend idocuments-dhlhomologacao_bysoft_com_br       if dhlhomologacao_bysoft_com_br idocuments_path
+    - use_backend iportal-dhlhomologacao_bysoft_com_br          if dhlhomologacao_bysoft_com_br iportal_path
+    - use_backend iportal-diniz_bysoft_com_br                   if diniz_bysoft_com_br iportal_path
+    - use_backend iportal-direct_bysoft_com_br                  if direct_bysoft_com_br iportal_path
+    - use_backend idocuments-directlogistica_bysoft_com_br      if directlogistica_bysoft_com_br idocuments_path
+    - use_backend iportal-directlogistica_bysoft_com_br         if directlogistica_bysoft_com_br iportal_path
+    - use_backend iportal-dlt_bysoft_com_br                     if dlt_bysoft_com_br iportal_path
+    - use_backend iportal-dogana_bysoft_com_br                  if dogana_bysoft_com_br iportal_path
+    - use_backend iportal-dsv_bysoft_com_br                     if dsv_bysoft_com_br iportal_path
+    - use_backend iportal-eficienciacomex_bysoft_com_br         if eficienciacomex_bysoft_com_br iportal_path
+    - use_backend iportal-euronorte_bysoft_com_br               if euronorte_bysoft_com_br iportal_path
+    - use_backend iportal-excommerce_bysoft_com_br              if excommerce_bysoft_com_br iportal_path
+    - use_backend iportal-faxe_bysoft_com_br                    if faxe_bysoft_com_br iportal_path
+    - use_backend iportal-fdafermac_bysoft_com_br               if fdafermac_bysoft_com_br iportal_path
+    - use_backend iportal-ferfreight_bysoft_com_br              if ferfreight_bysoft_com_br iportal_path
+    - use_backend iportal-focus_bysoft_com_br                   if focus_bysoft_com_br iportal_path
+    - use_backend iportal-fortal_bysoft_com_br                  if fortal_bysoft_com_br iportal_path
+    - use_backend idocuments-gaclogistica_bysoft_com_br         if gaclogistica_bysoft_com_br idocuments_path
+    - use_backend iportal-gaclogistica_bysoft_com_br            if gaclogistica_bysoft_com_br iportal_path
+    - use_backend iportal-gamalog_bysoft_com_br                 if gamalog_bysoft_com_br iportal_path
+    - use_backend iportal-gefco_bysoft_com_br                   if gefco_bysoft_com_br iportal_path
+    - use_backend idocuments-geslogistica_bysoft_com_br         if geslogistica_bysoft_com_br idocuments_path
+    - use_backend idocuments-geslogistica_bysoft_com_br         if logisticsplus_bysoft_com_br idocuments_path
+    - use_backend iportal-geslogistica_bysoft_com_br            if geslogistica_bysoft_com_br iportal_path
+    - use_backend iportal-geslogistica_bysoft_com_br            if logisticsplus_bysoft_com_br iportal_path
+    - use_backend iportal-global_bysoft_com_br                  if global_bysoft_com_br iportal_path
+    - use_backend iportal-globalfreight_bysoft_com_br           if globalfreight_bysoft_com_br iportal_path
+    - use_backend iportal-go2uti_bysoft_com_br                  if go2uti_bysoft_com_br iportal_path
+    - use_backend iportal-goldmex_bysoft_com_br                 if goldmex_bysoft_com_br iportal_path
+    - use_backend iportal-goncalvesfilhos_bysoft_com_br         if goncalvesfilhos_bysoft_com_br iportal_path
+    - use_backend iportal-gpcargo_bysoft_com_br                 if gpcargo_bysoft_com_br iportal_path
+    - use_backend iportal-harpy_bysoft_com_br                   if harpy_bysoft_com_br iportal_path
+    - use_backend idocuments-homologacao_bysoft_com_br          if homologacao_bysoft_com_br idocuments_path
+    - use_backend iportal-homologacao_bysoft_com_br             if homologacao_bysoft_com_br iportal_path
+    - use_backend iportal-iglobal_bysoft_com_br                 if iglobal_bysoft_com_br iportal_path
+    - use_backend iportal-imporcate_bysoft_com_br               if imporcate_bysoft_com_br iportal_path
+    - use_backend iportal-indaia_bysoft_com_br                  if indaia_bysoft_com_br iportal_path
+    - use_backend iportal-intercargofranca_bysoft_com_br        if intercargofranca_bysoft_com_br iportal_path
+    - use_backend iportal-interfreight_bysoft_com_br            if interfreight_bysoft_com_br iportal_path
+    - use_backend iportal-internacional_bysoft_com_br           if internacional_bysoft_com_br iportal_path
+    - use_backend idocuments-intranding_bysoft_com_br           if intranding_bysoft_com_br idocuments_path
+    - use_backend iportal-intranding_bysoft_com_br              if intranding_bysoft_com_br iportal_path
+    - use_backend iportal-isavix_bysoft_com_br                  if isavix_bysoft_com_br iportal_path
+    - use_backend iportal-itatrans_bysoft_com_br                if itatrans_bysoft_com_br iportal_path
+    - use_backend iportal-jejcomercio_bysoft_com_br             if jejcomercio_bysoft_com_br iportal_path
+    - use_backend iportal-jmaduaneira_bysoft_com_br             if jmaduaneira_bysoft_com_br iportal_path
+    - use_backend iportal-konig_bysoft_com_br                   if konig_bysoft_com_br iportal_path
+    - use_backend iportal-kotah_bysoft_com_br                   if kotah_bysoft_com_br iportal_path
+    - use_backend idocuments-leschaco_bysoft_com_br             if leschaco_bysoft_com_br idocuments_path
+    - use_backend iportal-leschaco_bysoft_com_br                if leschaco_bysoft_com_br iportal_path
+    - use_backend iportal-logistran_bysoft_com_br               if logistran_bysoft_com_br iportal_path
+    - use_backend iportal-lt_bysoft_com_br                      if lt_bysoft_com_br iportal_path
+    - use_backend iportal-luxor_bysoft_com_br                   if luxor_bysoft_com_br iportal_path
+    - use_backend iportal-maniga_bysoft_com_br                  if maniga_bysoft_com_br iportal_path
+    - use_backend iportal-martinsdespachos_bysoft_com_br        if martinsdespachos_bysoft_com_br iportal_path
+    - use_backend iportal-martinsdespachoshomolog_bysoft_com_br if martinsdespachoshomolog_bysoft_com_br iportal_path
+    - use_backend iportal-masterfreight_bysoft_com_br           if masterfreight_bysoft_com_br iportal_path
+    - use_backend iportal-masterfreighthom_bysoft_com_br        if masterfreighthom_bysoft_com_br iportal_path
+    - use_backend iportal-mastersul_bysoft_com_br               if mastersul_bysoft_com_br iportal_path
+    - use_backend mnfe-mastersul_bysoft_com_br                  if mastersul_bysoft_com_br mnfe_path
+    - use_backend iportal-mbdespachos_bysoft_com_br             if mbdespachos_bysoft_com_br iportal_path
+    - use_backend iportal-mebroker_bysoft_com_br                if mebroker_bysoft_com_br iportal_path
+    - use_backend iportal-mercante_bysoft_com_br                if mercante_bysoft_com_br iportal_path
+    - use_backend iportal-mhinternacional_bysoft_com_br         if mhinternacional_bysoft_com_br iportal_path
+    - use_backend iportal-mtn_bysoft_com_br                     if mtn_bysoft_com_br iportal_path
+    - use_backend iportal-multicargo_bysoft_com_br              if multicargo_bysoft_com_br iportal_path
+    - use_backend iportal-mundial_bysoft_com_br                 if mundial_bysoft_com_br iportal_path
+    - use_backend iportal-mundialassesplena_bysoft_com_br       if mundialassesplena_bysoft_com_br iportal_path
+    - use_backend iportal-mvcaye_bysoft_com_br                  if mvcaye_bysoft_com_br iportal_path
+    - use_backend iportal-ncxaduana_bysoft_com_br               if ncxaduana_bysoft_com_br iportal_path
+    - use_backend iportal-newslogistics_bysoft_com_br           if newslogistics_bysoft_com_br iportal_path
+    - use_backend iportal-nowlogistics_bysoft_com_br            if nowlogistics_bysoft_com_br iportal_path
+    - use_backend idocuments-nuno_bysoft_com_br                 if nuno_bysoft_com_br idocuments_path
+    - use_backend iportal-nuno_bysoft_com_br                    if nuno_bysoft_com_br iportal_path
+    - use_backend iportal-onix_bysoft_com_br                    if onix_bysoft_com_br iportal_path
+    - use_backend iportal-orttsa_bysoft_com_br                  if orttsa_bysoft_com_br iportal_path
+    - use_backend iportal-paivacomex_bysoft_com_br              if paivacomex_bysoft_com_br iportal_path
+    - use_backend iportal-paraduana_bysoft_com_br               if paraduana_bysoft_com_br iportal_path
+    - use_backend idocuments-parrocha_bysoft_com_br             if parrocha_bysoft_com_br idocuments_path
+    - use_backend iportal-parrocha_bysoft_com_br                if parrocha_bysoft_com_br iportal_path
+    - use_backend idocuments-partnerag_bysoft_com_br            if partnerag_bysoft_com_br idocuments_path
+    - use_backend iportal-partnerag_bysoft_com_br               if partnerag_bysoft_com_br iportal_path
+    - use_backend iportal-paulorocha_bysoft_com_br              if paulorocha_bysoft_com_br iportal_path
+    - use_backend iportal-pdfs_bysoft_com_br                    if pdfs_bysoft_com_br iportal_path
+    - use_backend iportal-pharmacomex_bysoft_com_br             if pharmacomex_bysoft_com_br iportal_path
+    - use_backend iportal-pmdespachos_bysoft_com_br             if pmdespachos_bysoft_com_br iportal_path
+    - use_backend iportal-portimex_bysoft_com_br                if portimex_bysoft_com_br iportal_path
+    - use_backend iportal-raxbrasil_bysoft_com_br               if raxbrasil_bysoft_com_br iportal_path
+    - use_backend iportal-rhenus_bysoft_com_br                  if rhenus_bysoft_com_br iportal_path
+    - use_backend iportal-ricardo_bysoft_com_br                 if ricardo_bysoft_com_br iportal_path
+    - use_backend idocuments-roquepacheco_bysoft_com_br         if roquepacheco_bysoft_com_br idocuments_path
+    - use_backend iportal-roquepacheco_bysoft_com_br            if roquepacheco_bysoft_com_br iportal_path
+    - use_backend iportal-ruckhaber_bysoft_com_br               if ruckhaber_bysoft_com_br iportal_path
+    - use_backend iportal-samsung_bysoft_com_br                 if samsung_bysoft_com_br iportal_path
+    - use_backend iportal-sanmar_bysoft_com_br                  if sanmar_bysoft_com_br iportal_path
+    - use_backend iportal-santosbay_bysoft_com_br               if santosbay_bysoft_com_br iportal_path
+    - use_backend iportal-saoborja_bysoft_com_br                if saoborja_bysoft_com_br iportal_path
+    - use_backend ipropulsor-saoborja_bysoft_com_br             if saoborja_bysoft_com_br ipropulsor_path
+    - use_backend iportal-satu_bysoft_com_br                    if satu_bysoft_com_br iportal_path
+    - use_backend idocuments-sei_bysoft_com_br                  if sei_bysoft_com_br idocuments_path
+    - use_backend iportal-sei_bysoft_com_br                     if sei_bysoft_com_br iportal_path
+    - use_backend iportal-self_bysoft_com_br                    if self_bysoft_com_br iportal_path
+    - use_backend iportal-sideralcomex_bysoft_com_br            if sideralcomex_bysoft_com_br iportal_path
+    - use_backend iportal-silbran_bysoft_com_br                 if silbran_bysoft_com_br iportal_path
+    - use_backend iportal-simetrans_bysoft_com_br               if simetrans_bysoft_com_br iportal_path
+    - use_backend iportal-spacecargo_bysoft_com_br              if spacecargo_bysoft_com_br iportal_path
+    - use_backend iportal-swiftlog_bysoft_com_br                if swiftlog_bysoft_com_br iportal_path
+    - use_backend iportal-tasklogistica_bysoft_com_br           if tasklogistica_bysoft_com_br iportal_path
+    - use_backend iportal-tradehunter_bysoft_com_br             if tradehunter_bysoft_com_br iportal_path
+    - use_backend idocuments-trediex_bysoft_com_br              if trediex_bysoft_com_br idocuments_path
+    - use_backend iportal-trediex_bysoft_com_br                 if trediex_bysoft_com_br iportal_path
+    - use_backend iportal-trustcargo_bysoft_com_br              if trustcargo_bysoft_com_br iportal_path
+    - use_backend iportal-tws_bysoft_com_br                     if tws_bysoft_com_br iportal_path
+    - use_backend iportal-ups_bysoft_com_br                     if ups_bysoft_com_br iportal_path
+    - use_backend iportal-viatriangulo_bysoft_com_br            if viatriangulo_bysoft_com_br iportal_path
+    - use_backend iportal-visaointegrada_bysoft_com_br          if visaointegrada_bysoft_com_br iportal_path
+    - use_backend iportal-vpmdc_bysoft_com_br                   if vpmdc_bysoft_com_br iportal_path
+    - use_backend iportal-wecomex_bysoft_com_br                 if ecscomex_bysoft_com_br iportal_path
+    - use_backend iportal-wecomex_bysoft_com_br                 if wecomex_bysoft_com_br iportal_path
+    - use_backend iportal-wildflyteste_bysoft_com_br            if wildflyteste_bysoft_com_br iportal_path
+    - use_backend iportal-yusen_bysoft_com_br                   if yusen_bysoft_com_br iportal_path
+    - use_backend iportal-yusenhomologacao_bysoft_com_br        if yusenhomologacao_bysoft_com_br iportal_path
+    - use_backend iportal-zhycron_bysoft_com_br                 if zhycron_bysoft_com_br iportal_path
+    - use_backend iportal-zhycronlog_bysoft_com_br              if zhycronlog_bysoft_com_br iportal_path
+    - use_backend threecycles_bysoft_com_br                     if threecycles_bysoft_com_br
+    - use_backend abccomex_bysoft_com_br                        if abccomex_bysoft_com_br
+    - use_backend abrao_bysoft_com_br                           if abrao_bysoft_com_br
+    - use_backend acetradeways_bysoft_com_br                    if acetradeways_bysoft_com_br
+    - use_backend acomex_bysoft_com_br                          if acomex_bysoft_com_br
+    - use_backend aduana_bysoft_com_br                          if aduana_bysoft_com_br
+    - use_backend aduanaglobal_bysoft_com_br                    if aduanaglobal_bysoft_com_br
+    - use_backend aduanalog_bysoft_com_br                       if aduanalog_bysoft_com_br
+    - use_backend aeroimport_bysoft_com_br                      if aeroimport_bysoft_com_br
+    - use_backend affinity_bysoft_com_br                        if affinity_bysoft_com_br
+    - use_backend agenciaraposo_bysoft_com_br                   if agenciaraposo_bysoft_com_br
+    - use_backend agile_bysoft_com_br                           if agile_bysoft_com_br
+    - use_backend agility_bysoft_com_br                         if agility_bysoft_com_br || dsv_bysoft_com_br
+    - use_backend agl_bysoft_com_br                             if agl_bysoft_com_br
+    - use_backend ahscomex_bysoft_com_br                        if ahscomex_bysoft_com_br
+    - use_backend akhava_bysoft_com_br                          if akhava_bysoft_com_br
+    - use_backend alca_bysoft_com_br                            if alca_bysoft_com_br
+    - use_backend allog_bysoft_com_br                           if allog_bysoft_com_br
+    - use_backend amr_bysoft_com_br                             if amr_bysoft_com_br
+    - use_backend asaassessoria_bysoft_com_br                   if asaassessoria_bysoft_com_br
+    - use_backend atlantis_bysoft_com_br                        if atlantis_bysoft_com_br
+    - use_backend atlas_bysoft_com_br                           if atlas_bysoft_com_br
+    - use_backend atualiassessoria_bysoft_com_br                if atualiassessoria_bysoft_com_br
+    - use_backend auston_bysoft_com_br                          if auston_bysoft_com_br
+    - use_backend azsolutio_bysoft_com_br                       if azsolutio_bysoft_com_br
+    - use_backend baraodespachos_bysoft_com_br                  if baraodespachos_bysoft_com_br
+    - use_backend bdp_bysoft_com_br                             if bdp_bysoft_com_br
+    - use_backend bechtrans_bysoft_com_br                       if bechtrans_bysoft_com_br
+    - use_backend brasporto_bysoft_com_br                       if brasporto_bysoft_com_br
+    - use_backend budson_bysoft_com_br                          if budson_bysoft_com_br
+    - use_backend carreirolog_bysoft_com_br                     if carreirolog_bysoft_com_br
+    - use_backend cne_bysoft_com_br                             if cne_bysoft_com_br
+    - use_backend comexbh_bysoft_com_br                         if comexbh_bysoft_com_br
+    - use_backend confidence_bysoft_com_br                      if confidence_bysoft_com_br
+    - use_backend correbrokers_bysoft_com_br                    if correbrokers_bysoft_com_br
+    - use_backend cti_bysoft_com_br                             if cti_bysoft_com_br
+    - use_backend dapepe_bysoft_com_br                          if dapepe_bysoft_com_br
+    - use_backend dasco_bysoft_com_br                           if dasco_bysoft_com_br
+    - use_backend despachosaduanneirosja_bysoft_com_br          if despachosaduanneirosja_bysoft_com_br
+    - use_backend dhl_bysoft_com_br                             if dhl_bysoft_com_br
+    - use_backend dhlhomologacao_bysoft_com_br                  if dhlhomologacao_bysoft_com_br
+    - use_backend diniz_bysoft_com_br                           if diniz_bysoft_com_br
+    - use_backend direct_bysoft_com_br                          if direct_bysoft_com_br
+    - use_backend directlogistica_bysoft_com_br                 if directlogistica_bysoft_com_br
+    - use_backend dlt_bysoft_com_br                             if dlt_bysoft_com_br
+    - use_backend dogana_bysoft_com_br                          if dogana_bysoft_com_br
+    - use_backend eficienciacomex_bysoft_com_br                 if eficienciacomex_bysoft_com_br
+    - use_backend euronorte_bysoft_com_br                       if euronorte_bysoft_com_br
+    - use_backend excommerce_bysoft_com_br                      if excommerce_bysoft_com_br
+    - use_backend faxe_bysoft_com_br                            if faxe_bysoft_com_br
+    - use_backend fdafermac_bysoft_com_br                       if fdafermac_bysoft_com_br
+    - use_backend ferfreight_bysoft_com_br                      if ferfreight_bysoft_com_br
+    - use_backend focus_bysoft_com_br                           if focus_bysoft_com_br
+    - use_backend fortal_bysoft_com_br                          if fortal_bysoft_com_br
+    - use_backend gaclogistica_bysoft_com_br                    if gaclogistica_bysoft_com_br
+    - use_backend gamalog_bysoft_com_br                         if gamalog_bysoft_com_br
+    - use_backend gefco_bysoft_com_br                           if gefco_bysoft_com_br
+    - use_backend geslogistica_bysoft_com_br                    if geslogistica_bysoft_com_br
+    - use_backend geslogistica_bysoft_com_br                    if logisticsplus_bysoft_com_br
+    - use_backend global_bysoft_com_br                          if global_bysoft_com_br
+    - use_backend globalfreight_bysoft_com_br                   if globalfreight_bysoft_com_br
+    - use_backend go2uti_bysoft_com_br                          if go2uti_bysoft_com_br
+    - use_backend goldmex_bysoft_com_br                         if goldmex_bysoft_com_br
+    - use_backend goncalvesfilhos_bysoft_com_br                 if goncalvesfilhos_bysoft_com_br
+    - use_backend gpcargo_bysoft_com_br                         if gpcargo_bysoft_com_br
+    - use_backend harpy_bysoft_com_br                           if harpy_bysoft_com_br
+    - use_backend homologacao_bysoft_com_br                     if homologacao_bysoft_com_br
+    - use_backend iglobal_bysoft_com_br                         if iglobal_bysoft_com_br
+    - use_backend imporcate_bysoft_com_br                       if imporcate_bysoft_com_br
+    - use_backend indaia_bysoft_com_br                          if indaia_bysoft_com_br
+    - use_backend intercargofranca_bysoft_com_br                if intercargofranca_bysoft_com_br
+    - use_backend interfreight_bysoft_com_br                    if interfreight_bysoft_com_br
+    - use_backend internacional_bysoft_com_br                   if internacional_bysoft_com_br
+    - use_backend intranding_bysoft_com_br                      if intranding_bysoft_com_br
+    - use_backend isavix_bysoft_com_br                          if isavix_bysoft_com_br
+    - use_backend itatrans_bysoft_com_br                        if itatrans_bysoft_com_br
+    - use_backend jejcomercio_bysoft_com_br                     if jejcomercio_bysoft_com_br
+    - use_backend jmaduaneira_bysoft_com_br                     if jmaduaneira_bysoft_com_br
+    - use_backend konig_bysoft_com_br                           if konig_bysoft_com_br
+    - use_backend kotah_bysoft_com_br                           if kotah_bysoft_com_br
+    - use_backend leschaco_bysoft_com_br                        if leschaco_bysoft_com_br
+    - use_backend logistran_bysoft_com_br                       if logistran_bysoft_com_br
+    - use_backend lt_bysoft_com_br                              if lt_bysoft_com_br
+    - use_backend luxor_bysoft_com_br                           if luxor_bysoft_com_br
+    - use_backend maniga_bysoft_com_br                          if maniga_bysoft_com_br
+    - use_backend martinsdespachos_bysoft_com_br                if martinsdespachos_bysoft_com_br
+    - use_backend martinsdespachoshomolog_bysoft_com_br         if martinsdespachoshomolog_bysoft_com_br
+    - use_backend masterfreight_bysoft_com_br                   if masterfreight_bysoft_com_br
+    - use_backend masterfreighthom_bysoft_com_br                if masterfreighthom_bysoft_com_br
+    - use_backend mastersul_bysoft_com_br                       if mastersul_bysoft_com_br
+    - use_backend mbdespachos_bysoft_com_br                     if mbdespachos_bysoft_com_br
+    - use_backend mebroker_bysoft_com_br                        if mebroker_bysoft_com_br
+    - use_backend mercante_bysoft_com_br                        if mercante_bysoft_com_br
+    - use_backend mhinternacional_bysoft_com_br                 if mhinternacional_bysoft_com_br
+    - use_backend mtn_bysoft_com_br                             if mtn_bysoft_com_br
+    - use_backend multicargo_bysoft_com_br                      if multicargo_bysoft_com_br
+    - use_backend mundial_bysoft_com_br                         if mundial_bysoft_com_br
+    - use_backend mundialassesplena_bysoft_com_br               if mundialassesplena_bysoft_com_br
+    - use_backend mvcaye_bysoft_com_br                          if mvcaye_bysoft_com_br
+    - use_backend ncxaduana_bysoft_com_br                       if ncxaduana_bysoft_com_br
+    - use_backend newslogistics_bysoft_com_br                   if newslogistics_bysoft_com_br
+    - use_backend nowlogistics_bysoft_com_br                    if nowlogistics_bysoft_com_br
+    - use_backend nuno_bysoft_com_br                            if nuno_bysoft_com_br
+    - use_backend onix_bysoft_com_br                            if onix_bysoft_com_br
+    - use_backend orttsa_bysoft_com_br                          if orttsa_bysoft_com_br
+    - use_backend paivacomex_bysoft_com_br                      if paivacomex_bysoft_com_br
+    - use_backend paraduana_bysoft_com_br                       if paraduana_bysoft_com_br
+    - use_backend parrocha_bysoft_com_br                        if parrocha_bysoft_com_br
+    - use_backend partnerag_bysoft_com_br                       if partnerag_bysoft_com_br
+    - use_backend paulorocha_bysoft_com_br                      if paulorocha_bysoft_com_br
+    - use_backend pdfs_bysoft_com_br                            if pdfs_bysoft_com_br
+    - use_backend pharmacomex_bysoft_com_br                     if pharmacomex_bysoft_com_br
+    - use_backend pmdespachos_bysoft_com_br                     if pmdespachos_bysoft_com_br
+    - use_backend portimex_bysoft_com_br                        if portimex_bysoft_com_br
+    - use_backend raxbrasil_bysoft_com_br                       if raxbrasil_bysoft_com_br
+    - use_backend rhenus_bysoft_com_br                          if rhenus_bysoft_com_br
+    - use_backend ricardo_bysoft_com_br                         if ricardo_bysoft_com_br
+    - use_backend roquepacheco_bysoft_com_br                    if roquepacheco_bysoft_com_br
+    - use_backend ruckhaber_bysoft_com_br                       if ruckhaber_bysoft_com_br
+    - use_backend samsung_bysoft_com_br                         if samsung_bysoft_com_br
+    - use_backend sanmar_bysoft_com_br                          if sanmar_bysoft_com_br
+    - use_backend santosbay_bysoft_com_br                       if santosbay_bysoft_com_br
+    - use_backend saoborja_bysoft_com_br                        if saoborja_bysoft_com_br
+    - use_backend satu_bysoft_com_br                            if satu_bysoft_com_br
+    - use_backend sei_bysoft_com_br                             if sei_bysoft_com_br
+    - use_backend self_bysoft_com_br                            if self_bysoft_com_br
+    - use_backend sideralcomex_bysoft_com_br                    if sideralcomex_bysoft_com_br
+    - use_backend silbran_bysoft_com_br                         if silbran_bysoft_com_br
+    - use_backend simetrans_bysoft_com_br                       if simetrans_bysoft_com_br
+    - use_backend spacecargo_bysoft_com_br                      if spacecargo_bysoft_com_br
+    - use_backend swiftlog_bysoft_com_br                        if swiftlog_bysoft_com_br
+    - use_backend tasklogistica_bysoft_com_br                   if tasklogistica_bysoft_com_br
+    - use_backend tradehunter_bysoft_com_br                     if tradehunter_bysoft_com_br
+    - use_backend trediex_bysoft_com_br                         if trediex_bysoft_com_br
+    - use_backend trustcargo_bysoft_com_br                      if trustcargo_bysoft_com_br
+    - use_backend tws_bysoft_com_br                             if tws_bysoft_com_br
+    - use_backend updates_bysoft_com_br                         if updates_bysoft_com_br
+    - use_backend ups_bysoft_com_br                             if ups_bysoft_com_br
+    - use_backend viatriangulo_bysoft_com_br                    if viatriangulo_bysoft_com_br
+    - use_backend visaointegrada_bysoft_com_br                  if visaointegrada_bysoft_com_br
+    - use_backend vpmdc_bysoft_com_br                           if vpmdc_bysoft_com_br
+    - use_backend wecomex_bysoft_com_br                         if wecomex_bysoft_com_br || ecscomex_bysoft_com_br
+    - use_backend wildflyteste_bysoft_com_br                    if wildflyteste_bysoft_com_br
+    - use_backend yusen_bysoft_com_br                           if yusen_bysoft_com_br
+    - use_backend yusenhomologacao_bysoft_com_br                if yusenhomologacao_bysoft_com_br
+    - use_backend zhycron_bysoft_com_br                         if zhycron_bysoft_com_br
+    - use_backend zhycronlog_bysoft_com_br                      if zhycronlog_bysoft_com_br
+
+containerchain_backend_selection:
+  description: |-
+    Containerchain-specific backend selection.
+  order: 85
+  actions:
+    - use_backend us8-wtg-cloud-us_containerchain_com       if us8-wtg-cloud-us_containerchain_com
