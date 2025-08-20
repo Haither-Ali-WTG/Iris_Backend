@@ -258,6 +258,22 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: portals.extralogistics.com
+          cms_resource_group: RG-US-Prod
+        - name: app_gomardom_com
+          cms_resource_group: RG-US-Prod
+        - name: app_tlsgo_com
+          cms_resource_group: RG-US-Prod
+        - name: neo_delmarcargo_com
+          cms_resource_group: RG-US-Prod
+        - name: eworldplus_com
+          cms_resource_group: RG-US-Prod
+        - name: app_gomcd_com
+          cms_resource_group: RG-US-Prod
+        - name: neo_eworldplus_com
+          cms_resource_group: RG-US-Prod
+        - name: aetnatracking_com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
