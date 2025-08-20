@@ -152,6 +152,12 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: tracking.sozologistics.com
+          cms_resource_group: RG-DE-Prod
+        - name: webtrack_jenkar_com
+          cms_resource_group: RG-DE-Prod
+        - name: webtracker.goodlogisticsgroup.com
+          cms_resource_group: RG-DE-Prod
       cipher:
         profiles:
           - best_practice_2023
