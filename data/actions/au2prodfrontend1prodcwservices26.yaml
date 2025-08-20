@@ -29,8 +29,32 @@ cw1_use_dynamic_backend_path:
 
 svc_jjlawson_com_au:
   description: |-
-    Glow Customurl for JJLSYD
+    Custom GLOW URL for JJLSYD
   order: 80
   actions:
     - >-
         use_backend www-jjlsyd.wisegrid.net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
+
+track_oceania_kln_com:
+  description: |-
+    Custom Webtracker URL for LEAAKL
+  order: 80
+  actions:
+    - >-
+        use_backend leaakl.webtracker.wisegrid.net if { hdr(host),field(1,:) -i track.oceania.kln.com }
+
+tracking_allports_syd_com_au:
+  description: |-
+    Custom Webtracker URL for AP3SYD
+  order: 80
+  actions:
+    - >-
+        use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
+
+ tracking_citotransport_com_au:
+  description: |-
+    Custom Webtracker URL for CITMEL
+  order: 80
+  actions:
+    - >-
+        use_backend citmel.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
