@@ -26,3 +26,11 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
+
+svc_jjlawson_com_au:
+  description: |-
+    Glow Customurl for JJLSYD
+  order: 80
+  actions:
+    - >-
+        use_backend www-jjlsyd.wisegrid.net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
