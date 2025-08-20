@@ -26,3 +26,29 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
+
+### Customurl ACLs
+
+app_gomardom_com:
+  description: |-
+    Glow Customurl for MD2PRD
+  order: 80
+  actions:
+    - >-
+        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomardom.com }
+
+app_tlsgo_com:
+  description: |-
+    Glow Customurl for MD2PRD
+  order: 80
+  actions:
+    - >-
+        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.tlsgo.com }
+
+portals_extralogistics_com:
+  description: |-
+    Glow Customurl for ELLLAX
+  order: 80
+  actions:
+    - >-
+        use_backend www-elllax.wisegrid.net if { hdr(host),field(1,:) -i portals.extralogistics.com }
