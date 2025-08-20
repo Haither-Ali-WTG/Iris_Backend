@@ -478,6 +478,8 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: svc_jjlawson_com_au
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
