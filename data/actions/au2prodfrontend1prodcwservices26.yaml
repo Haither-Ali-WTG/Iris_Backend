@@ -27,34 +27,12 @@ cw1_use_dynamic_backend_path:
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
 
-svc_jjlawson_com_au:
+custom_url_actions:
   description: |-
-    Custom GLOW URL for JJLSYD
+    Customurls for GLOW & Webtracker
   order: 80
   actions:
-    - >-
-        use_backend www-jjlsyd.wisegrid.net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
-
-track_oceania_kln_com:
-  description: |-
-    Custom Webtracker URL for LEAAKL
-  order: 80
-  actions:
-    - >-
-        use_backend leaakl.webtracker.wisegrid.net if { hdr(host),field(1,:) -i track.oceania.kln.com }
-
-tracking_allports_syd_com_au:
-  description: |-
-    Custom Webtracker URL for AP3SYD
-  order: 80
-  actions:
-    - >-
-        use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
-
-tracking_citotransport_com_au:
-  description: |-
-    Custom Webtracker URL for CITMEL
-  order: 80
-  actions:
-    - >-
-        use_backend citmel.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
+    - use_backend leaakl.webtracker.wisegrid.net if { hdr(host),field(1,:) -i track.oceania.kln.com }
+    - use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
+    - use_backend citmel.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
+    - use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
