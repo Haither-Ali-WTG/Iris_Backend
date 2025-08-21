@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250820.2
-  # Wed Aug 20 02:01:47 UTC 2025 -- Wed Aug 20 12:01:47 AEST 2025
+  # Dante Build Artifact 20250821.2
+  # Thu Aug 21 04:21:29 UTC 2025 -- Thu Aug 21 14:21:29 AEST 2025
   #
-  # Merge pull request 38805 from dante_artifact_upgrade into master
-  # 0b47205f9d979580885750d84533e71bf517457e
-  dante_build_id: '1441957'
+  # Merge pull request 38859 from dante_artifact_upgrade into master
+  # aba8cf9bfc58c2cc99e231bb3a6cb83d16e14aa6
+  dante_build_id: '1442953'
 
-  # virgil 20250821.2
-  # Thu Aug 21 02:59:57 UTC 2025 -- Thu Aug 21 12:59:57 AEST 2025
+  # virgil 20250821.4
+  # Thu Aug 21 03:43:40 UTC 2025 -- Thu Aug 21 13:43:40 AEST 2025
   #
-  # Merged PR 38843: config: CS02051311 - create topics for ILS team for live pos project
-  # 7915ec6f4070b3a6b300b8d808f18b77096d4354
-  virgil_build_id: '1442859'
+  # Merged PR 38851: config: CS2049935 - create topics for BW team for UMP Data Sync for each site
+  # 54a7ceb28cb89bfc7e4071f9872142350cfea45f
+  virgil_build_id: '1442911'
 
   # sqlbilling 20250814.3
   # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
