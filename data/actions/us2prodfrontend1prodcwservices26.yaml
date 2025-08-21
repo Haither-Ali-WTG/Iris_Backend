@@ -32,6 +32,7 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
+    - use_backend lopent.webtracker.wisegrid.net if { hdr(host),field(1,:) -i eworldplus.com }
     - use_backend www-aetprd.wisegrid.net if { hdr(host),field(1,:) -i aetnatracking.com }
     - use_backend www-de1jfl.wisegrid.net if { hdr(host),field(1,:) -i neo.delmarcargo.com }
     - use_backend www-elllax.wisegrid.net if { hdr(host),field(1,:) -i portals.extralogistics.com }
@@ -41,4 +42,3 @@ custom_url_actions:
     - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomardom.com }
     - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.tlsgo.com }
     - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomcd.com }
-    - use_backend lopent.webtracker.wisegrid.net if { hdr(host),field(1,:) -i eworldplus.com }
