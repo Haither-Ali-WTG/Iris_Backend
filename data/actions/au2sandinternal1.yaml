@@ -55,3 +55,11 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-%[path,field(2,/),lower]
         if cw1_dynamic_backend_webservice_path star_testrig_sand_wtg_zone !testrig_healthcheck
+
+campaign_hyeuat_sand_wtg_zone:
+  description: |-
+    Custom Webcampaign URL for HYEUAT
+  order: 80
+  actions:
+    - >-
+        use_backend www-hyeuat.sand.wtg.zone if { hdr(host),field(1,:) -i campaign.hyeuat.sand.wtg.zone }
