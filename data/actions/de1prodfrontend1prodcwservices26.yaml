@@ -27,26 +27,11 @@ cw1_use_dynamic_backend_path:
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
 
-tracking_sozologistics_com:
+custom_url_actions:
   description: |-
-    Custom Webtracker URL for SOZPRD
+    Customurls for GLOW & Webtracker
   order: 80
   actions:
-    - >-
-        use_backend sozprd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
-
-webtrack_jenkar_com:
-  description: |-
-    Custom Webtracker URL for JE6LPR
-  order: 80
-  actions:
-    - >-
-        use_backend je6lpr.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
-
-webtracker_goodlogisticsgroup_com:
-  description: |-
-    Custom Webtracker URL for JGSHUL
-  order: 80
-  actions:
-    - >-
-        use_backend jgshul.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
+    - use_backend sozprd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
+    - use_backend je6lpr.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
+    - use_backend jgshul.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
