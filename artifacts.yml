@@ -7,12 +7,12 @@ variables:
   # 0b47205f9d979580885750d84533e71bf517457e
   dante_build_id: '1441957'
 
-  # virgil 20250820.5
-  # Wed Aug 20 01:16:00 UTC 2025 -- Wed Aug 20 11:16:00 AEST 2025
+  # virgil 20250821.2
+  # Thu Aug 21 02:59:57 UTC 2025 -- Thu Aug 21 12:59:57 AEST 2025
   #
-  # Merged PR 38800: remove LACP config on swp for au2wp-svir-015 and 029
-  # 45fe3b72372ab99588a42f8145d5a1fd3b4d8b7b
-  virgil_build_id: '1441898'
+  # Merged PR 38843: config: CS02051311 - create topics for ILS team for live pos project
+  # 7915ec6f4070b3a6b300b8d808f18b77096d4354
+  virgil_build_id: '1442859'
 
   # sqlbilling 20250814.3
   # Wed Aug 13 18:54:04 UTC 2025 -- Thu Aug 14 04:54:04 AEST 2025
