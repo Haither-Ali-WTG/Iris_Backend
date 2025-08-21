@@ -32,6 +32,6 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
-    - use_backend sozprd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
     - use_backend je6lpr.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
     - use_backend jgshul.webtracker.wisegrid.net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
+    - use_backend sozprd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
