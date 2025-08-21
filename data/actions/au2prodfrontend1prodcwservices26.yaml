@@ -32,7 +32,7 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
-    - use_backend leaakl.webtracker.wisegrid.net if { hdr(host),field(1,:) -i track.oceania.kln.com }
     - use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
     - use_backend citmel.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
-    - use_backend ap3syd.webtracker.wisegrid.net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
+    - use_backend leaakl.webtracker.wisegrid.net if { hdr(host),field(1,:) -i track.oceania.kln.com }
+    - use_backend www-jjlsyd.wisegrid.net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
