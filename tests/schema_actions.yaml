@@ -1,5 +1,5 @@
 ---
-map(include('acl'), key=regex('^[a-z][a-z0-9_-]+$', name='lowercase label'))
+map(include('acl'), key=regex('^[a-z][a-z0-9_]+$', name='lowercase label'))
 ---
 acl:
   description: str()
