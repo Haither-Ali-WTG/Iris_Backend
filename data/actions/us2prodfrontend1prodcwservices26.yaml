@@ -27,84 +27,18 @@ cw1_use_dynamic_backend_path:
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
 
-### Customurl ACLs
-
-app_gomardom_com:
+custom_url_actions:
   description: |-
-    Custom Glow URL for MD2PRD
+    Customurls for GLOW & Webtracker
   order: 80
   actions:
-    - >-
-        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomardom.com }
-
-app_tlsgo_com:
-  description: |-
-    Custom Glow URL for MD2PRD
-  order: 80
-  actions:
-    - >-
-        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.tlsgo.com }
-
-portals_extralogistics_com:
-  description: |-
-    Custom Glow URL for ELLLAX
-  order: 80
-  actions:
-    - >-
-        use_backend www-elllax.wisegrid.net if { hdr(host),field(1,:) -i portals.extralogistics.com }
-
-neo_delmarcargo_com:
-  description: |-
-    Custom Glow URL for DE1JFK
-  order: 80
-  actions:
-    - >-
-        use_backend www-de1jfl.wisegrid.net if { hdr(host),field(1,:) -i neo.delmarcargo.com }
-
-eworldplus_com:
-  description: |-
-    Custom Webtracker URL for LOPENT
-  order: 80
-  actions:
-    - >-
-        use_backend lopent.webtracker.wisegrid.net if { hdr(host),field(1,:) -i eworldplus.com }
-
-neo_eworldplus_com:
-  description: |-
-    Custom Glow URL for LOPENT
-  order: 80
-  actions:
-    - >-
-        use_backend www-lopent.wisegrid.net if { hdr(host),field(1,:) -i neo.eworldplus.com }
-
-app_gomcd_com:
-  description: |-
-    Custom Glow URL for MD2PRD
-  order: 80
-  actions:
-    - >-
-        use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomcd.com }
-
-freighttracker_livingston_com:
-  description: |-
-    Custom Glow URL for L77PRO
-  order: 80
-  actions:
-    - >-
-        use_backend www-l77pro.wisegrid.net if { hdr(host),field(1,:) -i freighttracker.livingston.com }
-
-freighttracker_training_livingston_com:
-  description: |-
-    Custom Glow URL for L77TRN
-  order: 80
-  actions:
-    - >-
-        use_backend www-l77trn.wisegrid.net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
-
-aetnatracking_com:
-  description: |-
-    Custom Glow URL for AETPRD
-  order: 80
-  actions:
-    - >-
-        use_backend www-aetprd.wisegrid.net if { hdr(host),field(1,:) -i aetnatracking.com }
+    - use_backend www-aetprd.wisegrid.net if { hdr(host),field(1,:) -i aetnatracking.com }
+    - use_backend www-de1jfl.wisegrid.net if { hdr(host),field(1,:) -i neo.delmarcargo.com }
+    - use_backend www-elllax.wisegrid.net if { hdr(host),field(1,:) -i portals.extralogistics.com }
+    - use_backend www-l77pro.wisegrid.net if { hdr(host),field(1,:) -i freighttracker.livingston.com }
+    - use_backend www-l77trn.wisegrid.net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
+    - use_backend www-lopent.wisegrid.net if { hdr(host),field(1,:) -i neo.eworldplus.com }
+    - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomardom.com }
+    - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.tlsgo.com }
+    - use_backend www-md2prd.wisegrid.net if { hdr(host),field(1,:) -i app.gomcd.com }
+    - use_backend lopent.webtracker.wisegrid.net if { hdr(host),field(1,:) -i eworldplus.com }
