@@ -1,0 +1,34 @@
+---
+sa1-cw-test-token-rdg-http:
+  clustered_instances: [sa1prodfrontend1testrdgproxy]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: random
+  servers:
+    - name: sa1wp-srdg-401.wisecloud.zone
+      ip: 10.96.64.198
+      port: 80
+      check_port: 5000
+    - name: sa1wp-srdg-402.wisecloud.zone
+      ip: 10.96.64.198
+      port: 80
+      check_port: 5000
+
+sa1-cw-test-token-rdg-rpc:
+  clustered_instances: [sa1prodfrontend1testrdgproxy]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: source
+  servers:
+    - name: sa1wp-srdg-401.wisecloud.zone
+      ip: 10.96.64.198
+      port: 80
+      check_port: 5000

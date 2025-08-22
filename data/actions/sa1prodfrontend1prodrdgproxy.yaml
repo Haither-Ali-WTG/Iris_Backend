@@ -1,0 +1,16 @@
+---
+token_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct RPC RDG connections to the prod token rdg http backend
+  order: 92
+  actions:
+    - use_backend sa1-cw-prod-token-rdg-rpc if rdg_rpc_path rdg_token_host
+
+token_rdg_http:
+  description: |-
+    RPC RDG connections need to be funneled to separate backends, this will
+    direct HTTP RDG connections to the prod token rdg http backend
+  order: 93
+  actions:
+    - use_backend sa1-cw-prod-token-rdg-http if !rdg_rpc_path rdg_token_host

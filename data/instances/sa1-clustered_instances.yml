@@ -25,3 +25,33 @@ clustered_instances:
         ports:
           web: 2037
           socket: 2036
+
+    sa1prodfrontend1prodrdgproxy:
+      # sa1-prod-frontend-1-prod-rdg-proxy
+      dc: SA1
+      frontend:
+        proxy_ports:
+          ssl: [2005]
+      stats:
+        ports:
+          web: 2038
+          socket: 2039
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+
+    sa1prodfrontend1testrdgproxy:
+      # sa1-prod-frontend-1-test-rdg-proxy
+      dc: SA1
+      frontend:
+        ports:
+          ssl: [2006]
+      stats:
+        ports:
+          web: 2040
+          socket: 2041
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
