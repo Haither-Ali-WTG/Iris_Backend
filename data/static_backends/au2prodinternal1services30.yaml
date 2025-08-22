@@ -35,3 +35,17 @@ au2s3-3-secondary:
     acl write_methods method DELETE
     http-request deny if write_methods
     server us2nas03-s3-01.wtg.zone 10.4.31.64:443 check check-ssl ssl verify none
+
+compliance-test.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: au2wp-sdkr-1
+      ip: 10.2.67.111
+      port: 40335
+    - name: au2wp-sdkr-2
+      ip: 10.2.67.112
+      port: 40335
