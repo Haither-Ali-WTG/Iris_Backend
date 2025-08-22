@@ -62,4 +62,4 @@ campaign_hyeuat_sand_wtg_zone:
   order: 80
   actions:
     - >-
-        use_backend www-hyeuat.sand.wtg.zone if { hdr(host),field(1,:) -i campaign.hyeuat.sand.wtg.zone }
+        use_backend www-hyeuat_sand_wtg_zone if { hdr(host),field(1,:) -i campaign.hyeuat.sand.wtg.zone }
