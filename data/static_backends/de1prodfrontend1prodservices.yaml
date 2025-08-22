@@ -1,5 +1,5 @@
 ---
-query_urs_wisegrid_net:
+query.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodservices]
   full_override: |
     backend query_urs_wisegrid_net
@@ -10,7 +10,7 @@ query_urs_wisegrid_net:
     server de1wp-surw-401 10.3.151.11:80
     server de1wp-surw-402 10.3.151.12:80
 
-amend_urs_wisegrid_net:
+amend.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodservices]
   full_override: |
     backend amend_urs_wisegrid_net
@@ -21,7 +21,7 @@ amend_urs_wisegrid_net:
     server de1wp-surw-403 10.3.151.13:80
     server de1wp-surw-404 10.3.151.14:80
 
-datafactory_urs_wisegrid_net:
+datafactory.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodservices]
   full_override: |
     backend datafactory_urs_wisegrid_net
