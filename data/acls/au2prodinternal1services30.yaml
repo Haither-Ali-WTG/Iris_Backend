@@ -4,6 +4,11 @@ star_wisegrid_net:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wisegrid\.net$
 
+star_borderwise_com:
+  description: "*.borderwise.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?borderwise\.com$
+
 au2s3-3_wtg_ws_and_subdomains:
   description: "*.au2s3-3.wtg.ws"
   tests:
