@@ -7,12 +7,12 @@ variables:
   # 04a346da3ed405598cf99d38f1947615405e1ab8
   dante_build_id: '1443721'
 
-  # virgil 20250822.2
-  # Fri Aug 22 00:11:46 UTC 2025 -- Fri Aug 22 10:11:46 AEST 2025
+  # virgil 20250822.5
+  # Fri Aug 22 06:12:50 UTC 2025 -- Fri Aug 22 16:12:50 AEST 2025
   #
-  # Merged PR 38879: remove LACP from au2wp-svir-016,017,027,028 on rebuild
-  # e5e3137da70ace30cc53259bc7100c6c3856c229
-  virgil_build_id: '1443671'
+  # Merged PR 38910: au2wp-svir-017 uplink issue troubleshooting
+  # 8a31c624255600fb7f6a39677a6b85890e1dcbd7
+  virgil_build_id: '1443973'
 
   # sqlbilling 20250821.2
   # Thu Aug 21 08:32:15 UTC 2025 -- Thu Aug 21 18:32:15 AEST 2025
