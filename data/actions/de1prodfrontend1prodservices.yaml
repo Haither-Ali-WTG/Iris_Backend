@@ -1,0 +1,7 @@
+---
+secure_cookie:
+  description: |-
+    Set secure attribute
+  order: 60
+  actions:
+    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
