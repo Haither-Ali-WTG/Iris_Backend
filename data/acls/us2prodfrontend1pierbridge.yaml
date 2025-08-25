@@ -408,3 +408,19 @@ nuget_pierbridge_net:
   description: "nuget.pierbridge.net"
   tests:
     - hdr(host) -i nuget.pierbridge.net
+
+to_updatexb_backend:
+  description: "URLs for the update.xb.pierbridge.net backend"
+  tests:
+    - hdr(host) -m reg -i ^update\.(agileelitexb|sendsuitelivexb|sendproenterprisexb|transtreamxb|logistyxtmexb)\.com$
+
+to_updateqa_backend:
+  description: "URLs for the update.qa.pierbridge.net backend"
+  tests:
+    - hdr(host) -m reg -i ^update\.(agileeliteqa|sendsuiteliveqa|sendproenterpriseqa|transtreamqa|logistyxtmeqa)\.com$
+
+to_updateprod_backend:
+  description: "URLs for the update.prod.pierbridge.net backend"
+  tests:
+    - hdr(host) -m reg -i ^update\.(agileelite|sendsuitelive|sendproenterprise|transtream)\.com$
+    - hdr(host) -i update.us.sendsuitelive.com

@@ -26,12 +26,9 @@ backend_selection:
     Handle backend selection. The order of these operations matters
   order: 80
   actions:
-    - use_backend update_xb_pierbridge_net if update_agileelitexb_com || update_sendsuitelivexb_com
-    - use_backend update_xb_pierbridge_net if update_sendproenterprisexb_com || update_transtreamxb_com || update_logistyxtmexb_com
-    - use_backend update_qa_pierbridge_net if update_agileeliteqa_com || update_sendsuiteliveqa_com
-    - use_backend update_qa_pierbridge_net if update_sendproenterpriseqa_com || update_transtreamqa_com || update_logistyxtmeqa_com
-    - use_backend update_prod_pierbridge_net if update_agileelite_com || update_sendsuitelive_com || update_transtream_com
-    - use_backend update_prod_pierbridge_net if update_sendproenterprise_com || update_us_sendsuitelive_com
+    - use_backend update_xb_pierbridge_net if to_updatexb_backend
+    - use_backend update_qa_pierbridge_net if to_updateqa_backend
+    - use_backend update_prod_pierbridge_net if to_updateprod_backend
     - use_backend nuget_pierbridge_net if nuget_pierbridge_net
     - use_backend nuget-ci_pierbridge_net if nuget-ci_pierbridge_net
     - use_backend nuget-staging-prod_pierbridge_net if nuget-staging_pierbridge_net || nuget-production_pierbridge_net
