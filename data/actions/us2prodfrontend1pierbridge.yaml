@@ -32,7 +32,8 @@ backend_selection:
     - use_backend nuget_pierbridge_net if nuget_pierbridge_net
     - use_backend nuget-ci_pierbridge_net if nuget-ci_pierbridge_net
     - use_backend nuget-staging-prod_pierbridge_net if nuget-staging_pierbridge_net || nuget-production_pierbridge_net
-    - use_backend nuget-staging-prod_pierbridge_net if nuget-staging-hubcapp_pierbridge_net || nuget-production-hubcapp_pierbridge_net
+    - use_backend nuget-staging-prod_pierbridge_net if nuget-staging-hubcapp_pierbridge_net
+    - use_backend nuget-staging-prod_pierbridge_net if nuget-production-hubcapp_pierbridge_net
     - use_backend cw1-integration-agent_transtream_com if cw1-integration-agent_transtream_com
     - use_backend cw1-integration-agent_transtreamqa_com if cw1-integration-agent_transtreamqa_com
     - use_backend cw1-integration-agent_transtreamxb_com if cw1-integration-agent_transtreamxb_com
