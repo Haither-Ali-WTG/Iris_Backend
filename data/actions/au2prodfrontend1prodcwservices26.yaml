@@ -34,7 +34,7 @@ custom_url_actions:
   actions:
     - use_backend ahwprd-cn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ahwprd.webtracker.carozplus.com }
     - use_backend ap3syd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
-    - use_backend ASAMEL_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.axima.com.au }
+    - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.axima.com.au }
     - use_backend awhadl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ulink.awh.com.au }
     - use_backend c0nall_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.consolalliance.com.au }
     - use_backend ccpbne_webtracker_wisegrid_net if { hdr(host),field(1,:) -i customers.commercialfreight.com.au }
