@@ -8,11 +8,11 @@ import argparse
 import ipaddress
 import json
 import logging
-import requests
-import sys
 import os
+import sys
 from datetime import datetime
 from typing import Any, Dict, List
+import requests
 
 
 LOGGER = logging.getLogger("collect_sites_weborc")
@@ -84,8 +84,8 @@ def validate_response(data: Any) -> bool:
             return False
 
         try:
-            ipaddress.ip_address(hostip)
-        except Exception:
+            ipaddress.ip_address(str(hostip))
+        except ValueError:
             LOGGER.error("Item %d has invalid hostIP: %r", idx, hostip)
             return False
 
@@ -96,7 +96,7 @@ def validate_response(data: Any) -> bool:
     return True
 
 
-def fetch_env_cache(server: str, verify_param: str) -> List[Dict[str, Any]]:
+def fetch_env_cache(server: str, verify_param: str | bool) -> List[Dict[str, Any]]:
     """GET https://{server}:8890/EnvCache with 60s timeout and parse JSON."""
     url = f"https://{server}:8890/EnvCache"
     LOGGER.info("Requesting EnvCache from %s", url)
@@ -121,7 +121,7 @@ def fetch_env_cache(server: str, verify_param: str) -> List[Dict[str, Any]]:
 
 
 def save_items(items: List[Dict[str, Any]], output_dir: str) -> None:
-    """Save each item to <output_dir>/<hostName>"""
+    """Save each item to <output_dir>/<hostName>."""
     for item in items:
         path = f"{output_dir}/{item['hostName']}"
         try:
@@ -134,6 +134,11 @@ def save_items(items: List[Dict[str, Any]], output_dir: str) -> None:
 
 
 def main() -> int:
+    """
+    Main function to fetch IIS sites data from WebORC service.
+    
+    Returns: 0 for success, 1 for failure
+    """
     args = parse_arguments()
     setup_logging(args.debug_output)
 
@@ -155,7 +160,7 @@ def main() -> int:
         LOGGER.info("Execution duration: %s", str(datetime.now() - start_time))
         return 0
 
-    except Exception:
+    except Exception:  # pylint: disable=broad-except
         LOGGER.exception("Execution failed.")
         return 1
 
