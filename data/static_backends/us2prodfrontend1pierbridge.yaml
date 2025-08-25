@@ -206,7 +206,6 @@ kooziegroup.transtream.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: 200
     method: GET
   servers:
     - name: chg01w9-bicg01p
@@ -224,7 +223,6 @@ kooziegroupqa.transtream.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: 200
     method: GET
   servers:
     - name: chg01w9-bicg01p
@@ -242,7 +240,6 @@ kooziegroupxb.transtream.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: 200
     method: GET
   servers:
     - name: chg01w9-bicg01p
