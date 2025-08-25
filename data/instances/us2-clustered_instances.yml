@@ -432,9 +432,9 @@ clustered_instances:
 
     us2prodfrontend1pierbridge:
       # General Pierbridge instance
-      dc:  US2
+      dc: US2
       frontend:
-        maxconn:
+        maxconn: 200000
         ports:
           plaintext: 2025
           ssl: [2026, 5100, 5101, 6100]
