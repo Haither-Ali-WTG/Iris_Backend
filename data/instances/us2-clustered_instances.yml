@@ -276,8 +276,6 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: neo_eworldplus_com
           cms_resource_group: RG-US-Prod
-        - name: portals.extralogistics.com
-          cms_resource_group: RG-US-Prod
         - name: powerview_miq_com
           cms_resource_group: RG-US-Prod
         - name: shipping_absolutewl_com
