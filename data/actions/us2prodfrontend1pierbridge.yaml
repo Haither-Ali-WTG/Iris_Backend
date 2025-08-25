@@ -70,7 +70,8 @@ backend_selection:
     - use_backend hubcapp-prod_pierbridge_net if star_transtream_com hubcapp_path
     - use_backend t2-platform1_pierbridge_net if star_sendproenterpriseqa_com
     - use_backend t2-platform2_pierbridge_net if star_logistyxtmeqa_com || star_transtreamqa_com
-    - use_backend t2-platform3_pierbridge_net if star_transtreamxb_com || star_sendproenterprisexb_com || star_logistyxtmexb_com
+    - use_backend t2-platform3_pierbridge_net if star_transtreamxb_com || star_sendproenterprisexb_com
+    - use_backend t2-platform3_pierbridge_net if star_logistyxtmexb_com
     - use_backend prod_sendproenterprise_com if star_sendproenterprise_com
     - use_backend prod_transtream_com if star_transtream_com || star_logistyxtme_com
     - use_backend login_tscloudidp_com if login_tscloudidp_com
