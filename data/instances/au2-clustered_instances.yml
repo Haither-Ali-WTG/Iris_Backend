@@ -478,58 +478,59 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
-        - name:  ahwprd_webtracker_carozplus_com
+        - name: ahwprd_webtracker_carozplus_com
           cms_resource_group: RG-AU-Prod
-        - name:  cfs_sgl_com_au
+        - name: cfs_sgl_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  customers_commercialfreight_com_au
+        - name: customers_commercialfreight_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  e-business_tmforwarding_com
+        - name: e-business_tmforwarding_com
           cms_resource_group: RG-AU-Prod
-        - name:  ediweb_oceanbridge_co_nz
+        - name: ediweb_oceanbridge_co_nz
           cms_resource_group: RG-AU-Prod
-        - name:  svc_jjlawson_com_au
+        - name: svc_jjlawson_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  track_oceania_kln_com
+        - name: track_oceania_kln_com
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_allports-syd_com_au
+        - name: tracking_allports-syd_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_citotransport_com_au
+        - name: tracking_citotransport_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_consolalliance_com_au
+        - name: tracking_consolalliance_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_excellogistics_com_au
+        - name: tracking_excellogistics_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_fracht_com_au
+        - name: tracking_fracht_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_gvi_co_nz
+        - name: tracking_gvi_co_nz
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_icecargo_com_au
+        - name: tracking_icecargo_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_mbowens_com_au
+        - name: tracking_mbowens_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_nnraus_com_au
-        - name:  tracking_powerhousensw_com_au
+        - name: tracking_nnraus_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking_totalmaritime_com_au
+        - name: tracking_powerhousensw_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking-eplint-com
+        - name: tracking_totalmaritime_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  tracking-jjlawson-com-au
+        - name: tracking-eplint-com
           cms_resource_group: RG-AU-Prod
-        - name:  ulink_awh_com_au
+        - name: tracking-jjlawson-com-au
           cms_resource_group: RG-AU-Prod
-        - name:  webtrack_axima_com_au
+        - name: ulink_awh_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  webtracker_famous_com_sg
+        - name: webtrack_axima_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  webtracker_fsmac_com
+        - name: webtracker_famous_com_sg
           cms_resource_group: RG-AU-Prod
-        - name:  webtracker_kwe_com_au
+        - name: webtracker_fsmac_com
           cms_resource_group: RG-AU-Prod
-        - name:  webtracker_sgl_com_au
+        - name: webtracker_kwe_com_au
           cms_resource_group: RG-AU-Prod
-        - name:  webtracking_sila_net_au
+        - name: webtracker_sgl_com_au
+          cms_resource_group: RG-AU-Prod
+        - name: webtracking_sila_net_au
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
