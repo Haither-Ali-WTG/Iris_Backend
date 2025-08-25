@@ -1,0 +1,411 @@
+---
+port_5100_dst_port:
+  description: Traff1ic arrives on TCP port 5100
+  tests:
+    - dst_port 5100
+
+port_5101_dst_port:
+  description: Traffic arrives on TCP port 5101
+  tests:
+    - dst_port 5101
+
+port_6100_dst_port:
+  description: Traffic arrives on TCP port 6100
+  tests:
+    - dst_port 6100
+
+hubcapp_path:
+  description: "Paths beginning with /api or /common are for HubCapp"
+  tests:
+    - path_beg /api /common
+
+star_logistyxtme_com:
+  description: "*.logistyxtme.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtme\.com$
+
+star_logistyxtmeqa_com:
+  description: "*.logistyxtmeqa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtmeqa\.com$
+
+star_logistyxtmexb_com:
+  description: "*.logistyxtmexb.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtmexb\.com$
+
+star_sendproenterprise_com:
+  description: "*.sendproenterprise.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterprise\.com$
+
+star_sendproenterpriseqa_com:
+  description: "*.sendproenterpriseqa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterpriseqa\.com$
+
+star_sendproenterprisexb_com:
+  description: "*.sendproenterprisexb.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterprisexb\.com$
+
+star_transtream_com:
+  description: "*.transtream.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtream\.com$
+
+star_transtreamqa_com:
+  description: "*.transtreamqa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtreamqa\.com$
+
+star_transtreamxb_com:
+  description: "*.transtreamxb.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtreamxb\.com$
+
+star_pierbridge_net:
+  description: "*.pierbridge.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?pierbridge\.net$
+
+star_tscloudidp_com:
+  description: "*.tscloudidp.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?tscloudidp\.com$
+
+star_tscloudidpqa_com:
+  description: "*.tscloudidpqa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?tscloudidpqa\.com$
+
+star_tscloudidpxb_com:
+  description: "*.tscloudidpxb.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?tscloudidpxb\.com$
+
+to_us5_prod_ingress_controller:
+  description: "To the production Kubernetes cluster's ingress controller"
+  tests:
+    - hdr(host) -i carriers.transtream.com
+    - hdr(host) -i grafana.pierbridge.net
+    - hdr(host) -i streams.transtream.com
+    - hdr(host) -i zzcarriers.transtream.com
+    - hdr(host) -i zzgrafana.transtream.com
+    - hdr(host) -i zzstreams.pierbridge.net
+    - hdr(host) -i zzstreams.transtream.com
+    - hdr(host) -i zzstreams-pbi.pierbridge.net
+    - hdr(host) -i zzstreams-pbi.sendproenterprise.com
+    - hdr(host) -i track.carrier-tracking.com
+    - hdr(host) -i zzcmb-bridge.transtream.com
+    - hdr(host) -i zzmessagerelay.transtream.com
+
+to_us5_qa_ingress_controller:
+  description: "To the QA Kubernetes cluster's ingress controller"
+  tests:
+    - hdr(host) -i carriers.transtreamqa.com
+    - hdr(host) -i grafanaqa.pierbridge.net
+    - hdr(host) -i streams.transtreamqa.com
+    - hdr(host) -i zzcarriers.transtreamqa.com
+    - hdr(host) -i zzstreams.transtreamqa.com
+    - hdr(host) -i zzstreams-pbi.sendproenterpriseqa.com
+    - hdr(host) -i zzstreamsqa.pierbridge.net
+    - hdr(host) -i zzstreams-pbi.pierbridge.net
+    - hdr(host) -i zzcmb-bridge.transtreamqa.com
+    - hdr(host) -i zzmessagerelay.transtreamqa.com
+    - hdr(host) -i zzcmb-bridge.transtreamqa.com
+
+to_us2us5wappx03d_backend:
+  description: "ddiqa.transtream.com"
+  tests:
+    - hdr(host) -i ddiqa.transtream.com
+    - hdr(host) -i americoqa.transtream.com
+    - hdr(host) -i partssourceqa.transtream.com
+    - hdr(host) -i lilcoviewqa.transtream.com
+    - hdr(host) -i thingsrememberedqa.transtream.com
+
+to_reporting_backend:
+  description: "reporting.transtream.com"
+  tests:
+    - hdr(host) -i reporting.transtream.com
+    - hdr(host) -i reporting.logistyxtme.com
+    - hdr(host) -i reporting.sendproenterprise.com
+
+reporting_transtreamqa_com:
+  description: "reporting.transtreamqa.com"
+  tests:
+    - hdr(host) -i reporting.transtreamqa.com
+
+reporting_transtreamxb_com:
+  description: "reporting.transtreamxb.com"
+  tests:
+    - hdr(host) -i reporting.transtreamxb.com
+
+to_flexexb_backend:
+  description: "URLs on the flexexb.transtream.com backend"
+  tests:
+    - hdr(host) -i flexeqa.transtream.com
+    - hdr(host) -i flexexb.transtream.com
+
+kooziegroup_transtream_com:
+  description: "kooziegroup.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroup.transtream.com
+
+kooziegroupqa_transtream_com:
+  description: "kooziegroupqa.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroupqa.transtream.com
+
+kooziegroupxb_transtream_com:
+  description: "kooziegroupqa.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroupqa.transtream.com
+
+kooziegroupbren_transtream_com:
+  description: "kooziegroupbren.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroupbren.transtream.com
+
+kooziegroupbrenqa_transtream_com:
+  description: "kooziegroupbrenqa.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroupbrenqa.transtream.com
+
+kooziegroupbrenxb_transtream_com:
+  description: "kooziegroubrenxb.transtream.com"
+  tests:
+    - hdr(host) -i kooziegroubrenxb.transtream.com
+
+to_pnc_backend:
+  description: "URLs on the pnc.logistyxtme.com backend"
+  tests:
+    - hdr(host) -i pnc.logistyxtme.com
+    - hdr(host) -i pncdm.logistyxtme.com
+    - hdr(host) -i pncqa.logistyxtme.com
+    - hdr(host) -i pncxb.logistyxtme.com
+
+to_overstock_backend:
+  description: "URLs on the overstock.transtream.com backend"
+  tests:
+    - hdr(host) -i overstock.transtream.com
+    - hdr(host) -i overstockqa.transtream.com
+    - hdr(host) -i overstockxb.transtream.com
+
+err-rating_transtream_com:
+  description: "err-rating.transtream.com"
+  tests:
+    - hdr(host) -i err-rating.transtream.com
+
+err-ratingqa_transtream_com:
+  description: "err-ratingqa.transtream.com"
+  tests:
+    - hdr(host) -i err-ratingqa.transtream.com
+
+login_tscloudidp_com:
+  description: "login.tscloudidp.com"
+  tests:
+    - hdr(host) -i login.tscloudidp.com
+
+login_tscloudidpqa_com:
+  description: "login.tscloudidpqa.com"
+  tests:
+    - hdr(host) -i login.tscloudidpqa.com
+
+login_tscloudidpxb_com:
+  description: "login.tscloudidpxb.com"
+  tests:
+    - hdr(host) -i login.tscloudidpxb.com
+
+cmc_transtream_com:
+  description: "cmc.transtream.com"
+  tests:
+    - hdr(host) -i cmc.transtream.com
+
+cmc_transtreamqa_com:
+  description: "cmc.transtreamqa.com"
+  tests:
+    - hdr(host) -i cmc.transtreamqa.com
+
+cmc_transtreamxb_com:
+  description: "cmc.transtreamxb.com"
+  tests:
+    - hdr(host) -i cmc.transtreamxb.com
+
+carrierportal_test_pierbridge_net:
+  description: "carrierportal.test.pierbridge.net"
+  tests:
+    - hdr(host) -i carrierportal.test.pierbridge.net
+
+carrierportal_production_pierbridge_net:
+  description: "carrierportal.production.pierbridge.net"
+  tests:
+    - hdr(host) -i carrierportal.production.pierbridge.net
+
+test_pierbridge_net:
+  description: "Hostnames for the pierbridge.net test servers"
+  tests:
+    - hdr(host) -m reg -i ^(atstst|dicomtest|ectest|speedeetest|rrdtest|cardinaltest|icstest)\.pierbridge\.net$
+    - hdr(host) -m reg -i ^(atstest|fedexuktest|labelstest|midctest|mpxtest)\.pierbridge\.net$
+
+zzcarriers_transtreamqa_com:
+  description: "zzcarriers.transtreamqa.com"
+  tests:
+    - hdr(host) -i zzcarriers.transtreamqa.com
+
+pierbridge_net:
+  description: "Hostnames for the pierbridge.net production servers"
+  tests:
+    - hdr(host) -m reg -i ^(ats|dicom|ec|speedee|rrd|cardinal|ics)\.pierbridge\.net$
+    - hdr(host) -m reg -i ^(fedexuk|labels|midc|mpx)\.pierbridge\.net$
+
+documentation_transtream_com:
+  description: "Transtream documentation addresses"
+  tests:
+    - hdr(host) -m reg -i ^(documentation|documentationqa|documentationdev)\.transtream\.com$
+
+documentation_sendproenterprise_com:
+  description: "sendproenterprise documentation addresses"
+  tests:
+    - hdr(host) -m reg -i ^(documentation|documentationqa|documentationdev)\.sendproenterprise\.com$
+
+documentation_logistyxtme_com:
+  description: "logistyxtme documentation addresses"
+  tests:
+    - hdr(host) -m reg -i ^(documentation|documentationqa|documentationdev)\.logistyxtme\.com$
+
+documentation_sendsuitelive_com:
+  description: "documentation.sendsuitelive.com"
+  tests:
+    - hdr(host) -i documentation.sendsuitelive.com
+
+update_agileelite_com:
+  description: "update.agileelite.com"
+  tests:
+    - hdr(host) -i update.agileelite.com
+
+update_agileeliteqa_com:
+  description: "update.agileeliteqa.com"
+  tests:
+    - hdr(host) -i update.agileeliteqa.com
+
+update_agileelitexb_com:
+  description: "update.agileelitexb.com"
+  tests:
+    - hdr(host) -i update.agileelitexb.com
+
+update_sendsuitelive_com:
+  description: "update.sendsuitelive.com"
+  tests:
+    - hdr(host) -i update.sendsuitelive.com
+
+update_sendsuiteliveqa_com:
+  description: "update.sendsuiteliveqa.com"
+  tests:
+    - hdr(host) -i update.sendsuiteliveqa.com
+
+update_sendsuitelivexb_com:
+  description: "update.sendsuitelivexb.com"
+  tests:
+    - hdr(host) -i update.sendsuitelivexb.com
+
+update_us_sendsuitelive_com:
+  description: "update.us.sendsuitelive.com"
+  tests:
+    - hdr(host) -i update.us.sendsuitelive.com
+
+update_transtream_com:
+  description: "update.transtream.com"
+  tests:
+    - hdr(host) -i update.transtream.com
+
+update_transtreamqa_com:
+  description: "update.transtreamqa.com"
+  tests:
+    - hdr(host) -i update.transtreamqa.com
+
+update_transtreamxb_com:
+  description: "update.transtreamxb.com"
+  tests:
+    - hdr(host) -i update.transtreamxb.com
+
+update_sendproenterprise_com:
+  description: "update.sendproenterprise.com"
+  tests:
+    - hdr(host) -i update.sendproenterprise.com
+
+update_sendproenterpriseqa_com:
+  description: "update.sendproenterpriseqa.com"
+  tests:
+    - hdr(host) -i update.sendproenterpriseqa.com
+
+update_sendproenterprisexb_com:
+  description: "update.sendproenterprisexb.com"
+  tests:
+    - hdr(host) -i update.sendproenterprisexb.com
+
+update_logistyxtmeqa_com:
+  description: "update.logistyxtmeqa.com"
+  tests:
+    - hdr(host) -i update.logistyxtmeqa.com
+
+update_logistyxtmexb_com:
+  description: "update.logistyxtmexb.com"
+  tests:
+    - hdr(host) -i update.logistyxtmexb.com
+
+octopus_pierbridge_net:
+  description: "octopus.pierbridge.net"
+  tests:
+    - hdr(host) -i octopus.pierbridge.net
+
+seq_pierbridge_net:
+  description: "seq.pierbridge.net"
+  tests:
+    - hdr(host) -i seq.pierbridge.net
+
+cw1-integration-agent_transtream_com:
+  description: "cw1-integration-agent.transtream.com"
+  tests:
+    - hdr(host) -i cw1-integration-agent.transtream.com
+
+cw1-integration-agent_transtreamqa_com:
+  description: "cw1-integration-agent.transtreamqa.com"
+  tests:
+    - hdr(host) -i cw1-integration-agent.transtreamqa.com
+
+cw1-integration-agent_transtreamxb_com:
+  description: "cw1-integration-agent.transtreamxb.com"
+  tests:
+    - hdr(host) -i cw1-integration-agent.transtreamxb.com
+
+nuget-ci_pierbridge_net:
+  description: "Host headers for CI nuget sites"
+  tests:
+    - hdr(host) -m reg -i ^nuget-(ts|spe|tme)-ci-(core|apps)\.pierbridge\.net$
+
+nuget-staging_pierbridge_net:
+  description: "Host headers for staging nuget sites"
+  tests:
+    - hdr(host) -m reg -i ^nuget-(ts|spe|tme)-staging-(core|apps)\.pierbridge\.net$
+
+nuget-production_pierbridge_net:
+  description: "Host headers for production nuget sites"
+  tests:
+    - hdr(host) -m reg -i ^nuget-(ts|spe|tme)-production-(core|apps)\.pierbridge\.net$
+
+nuget-staging-hubcapp_pierbridge_net:
+  description: "nuget-staging-hubcapp.pierbridge.net"
+  tests:
+    - hdr(host) -i nuget-staging-hubcapp.pierbridge.net
+
+nuget-production-hubcapp_pierbridge_net:
+  description: "nuget-production-hubcapp.pierbridge.net"
+  tests:
+    - hdr(host) -i nuget-production-hubcapp.pierbridge.net
+
+nuget_pierbridge_net:
+  description: "nuget.pierbridge.net"
+  tests:
+    - hdr(host) -i nuget.pierbridge.net
+

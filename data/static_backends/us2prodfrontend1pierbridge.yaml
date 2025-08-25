@@ -1,0 +1,655 @@
+---
+ingress-prod.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02l-k8nd001p
+      ip: 10.4.178.200
+      port: 80
+      settings: check
+    - name: chg03l-k8nd002p
+      ip: 10.4.178.174
+      port: 80
+
+ingress-qa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02l-k8nd001q
+      ip: 10.4.178.126
+      port: 80
+    - name: chg03l-k8nd002q
+      ip: 10.4.178.127
+      port: 80
+
+us2us5wappx03d.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5wappx03d
+      ip: 10.4.178.194
+      port: 80
+
+lilcoqa.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5wappx03d
+      ip: 10.4.178.195
+      port: 80
+
+aslqa.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5wappx03d
+      ip: 10.4.178.196
+      port: 80
+
+tvaqa.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5wappx03d
+      ip: 10.4.178.198
+      port: 80
+
+qa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-p0101q
+      ip: 10.4.178.101
+      port: 80
+    - name: chg02w9-p0102q
+      ip: 10.4.178.102
+      port: 80
+    - name: chg01w9-hc01q
+      ip: 10.4.178.105
+      port: 80
+    - name: chg02w9-hc02q
+      ip: 10.4.178.106
+      port: 80
+
+t2-platform1.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5apqw101
+      ip: 10.4.178.101
+      port: 80
+    - name: us2us5apqw102
+      ip: 10.4.178.102
+      port: 80
+
+t2-platform2.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2us5apqw201
+      ip: 10.4.178.192
+      port: 80
+    - name: us2us5appw202
+      ip: 10.4.178.193
+      port: 80
+
+hubcapp-qa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-hc01q
+      ip: 10.4.178.105
+      port: 80
+    - name: chg02w9-hc02q
+      ip: 10.4.178.106
+      port: 80
+
+prod.sendproenterprise.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-p0101p
+      ip: 10.4.178.107
+      port: 80
+    - name: chg02w9-p0102p
+      ip: 10.4.178.108
+      port: 80
+    - name: chg03w9-p0103p
+      ip: 10.4.178.145
+      port: 80
+    - name: chg04w9-p0204p
+      ip: 10.4.178.146
+      port: 80
+    - name: chg05w9-p0105p
+      ip: 10.4.178.147
+      port: 80
+    - name: chg06w9-p0106p
+      ip: 10.4.178.148
+      port: 80
+
+prod.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02w9-p0202p
+      ip: 10.4.178.96
+      port: 80
+    - name: chg01w9-p0201p
+      ip: 10.4.178.97
+      port: 80
+    - name: chg03w9-p0203p
+      ip: 10.4.178.149
+      port: 80
+    - name: chg04w9-p0204p
+      ip: 10.4.178.150
+      port: 80
+    - name: chg05w9-p0205p
+      ip: 10.4.178.151
+      port: 80
+    - name: chg06w9-p0206p
+      ip: 10.4.178.152
+      port: 80
+
+reporting.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-wyn01p
+      ip: 10.4.178.217
+      port: 51980
+    - name: chg02w9-wyn02p
+      ip: 10.4.178.218
+      port: 51980
+    - name: chg03w9-wyn03p
+      ip: 10.4.178.219
+      port: 51980
+
+reporting-qa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-wyn01q
+      ip: 10.4.178.81
+      port: 51980
+
+flexexb.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-flex01q
+      ip: 10.4.178.75
+      port: 80
+    - name: chg01w9-flex02q
+      ip: 10.4.178.76
+      port: 80
+    - name: chg01w9-flex03q
+      ip: 10.4.178.77
+      port: 80
+
+kooziegroup.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: 200
+    method: GET
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 80
+    - name: chg01w9-bicg02p
+      ip: 10.4.178.190
+      port: 80
+    - name: chg01w9-bicg03p
+      ip: 10.4.178.191
+      port: 80
+
+kooziegroupqa.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: 200
+    method: GET
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 80
+    - name: chg01w9-bicg02p
+      ip: 10.4.178.190
+      port: 80
+    - name: chg01w9-bicg03p
+      ip: 10.4.178.191
+      port: 80
+
+kooziegroupxb.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: 200
+    method: GET
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 80
+    - name: chg01w9-bicg02p
+      ip: 10.4.178.190
+      port: 80
+    - name: chg01w9-bicg03p
+      ip: 10.4.178.191
+      port: 80
+
+pnc.logistyxtme.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-pncx01p
+      ip: 10.4.178.186
+      port: 80
+    - name: chg02w9-pncx02p
+      ip: 10.4.178.187
+      port: 80
+    - name: chg03w9-pncx03p
+      ip: 10.4.178.188
+      port: 80
+
+overstock.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-ovst01p
+      ip: 10.4.178.183
+      port: 80
+    - name: chg02w9-ovst02p
+      ip: 10.4.178.184
+      port: 80
+    - name: chg03w9-ovst03p
+      ip: 10.4.178.185
+      port: 80
+
+kooziegroupbren.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 6100
+    - name: chg02w9-bicg02p
+      ip: 10.4.178.190
+      port: 6100
+    - name: chg03w9-bicg03p
+      ip: 10.4.178.191
+      port: 6100
+
+kooziegroupqabren.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 5100
+    - name: chg02w9-bicg02p
+      ip: 10.4.178.190
+      port: 5100
+    - name: chg03w9-bicg03p
+      ip: 10.4.178.191
+      port: 5100
+
+kooziegroupxbbren.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-bicg01p
+      ip: 10.4.178.189
+      port: 5101
+    - name: chg02w9-bicg02p
+      ip: 10.4.178.190
+      port: 5101
+    - name: chg03w9-bicg03p
+      ip: 10.4.178.191
+      port: 5101
+
+err-ratingqa.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg04w9-slcs01p
+      ip: 10.4.178.179
+      port: 80
+    - name: chg05w9-slcs02p
+      ip: 10.4.178.180
+      port: 80
+
+t2-platform3.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02w9-p01t0xb
+      ip: 10.4.178.197
+      port: 80
+
+hubcapp-sandbox.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg03w9-hc010xb
+      ip: 10.4.178.195
+      port: 80
+
+login.tscloudidp.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-idp01p
+      ip: 10.4.178.68
+      port: 80
+    - name: chg02w9-idp02p
+      ip: 10.4.178.69
+      port: 80
+
+login.tscloudidpqa.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qidp01q
+      ip: 10.4.178.90
+      port: 80
+    - name: chg02w9-qidp02q
+      ip: 10.4.178.89
+      port: 80
+
+login.tscloudidpxb.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmid1xb
+      ip: 10.4.178.196
+      port: 80
+
+cmc.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmc01p
+      ip: 10.4.178.66
+      port: 80
+    - name: chg02w9-cmc02p
+      ip: 10.4.178.67
+      port: 80
+
+cmc.transtreamqa.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qcmc01q
+      ip: 10.4.178.92
+      port: 80
+    - name: chg02w9-qcmc02q
+      ip: 10.4.178.91
+      port: 80
+
+cmc.transtreamxb.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmid1xb
+      ip: 10.4.178.196
+      port: 80
+
+err-rating.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg04w9-slcs01p
+      ip: 10.4.178.179
+      port: 80
+    - name: chg05w9-slcs02p
+      ip: 10.4.178.180
+      port: 80
+
+carrierportal.test.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg05w9-rcpx03q
+      ip: 10.4.178.28
+      port: 80
+    - name: chg05w9-rcpx01q
+      ip: 10.4.178.80
+      port: 80
+
+test.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg05w9-rcpx01q
+      ip: 10.4.178.80
+      port: 80
+
+pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg04w9-rcpx01p
+      ip: 10.4.178.181
+      port: 80
+    - name: chg05w9-rcpx02p
+      ip: 10.4.178.182
+      port: 80
+
+hubcapp-prod.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-hc01p
+      ip: 10.4.178.111
+      port: 80
+    - name: chg02w9-hc02p
+      ip: 10.4.178.112
+      port: 80
+    - name: chg03w9-hc03p
+      ip: 10.4.178.153
+      port: 80
+    - name: chg04w9-hc04p
+      ip: 10.4.178.154
+      port: 80
+    - name: chg05w9-hc05p
+      ip: 10.4.178.155
+      port: 80
+    - name: chg06w9-hc06p
+      ip: 10.4.178.156
+      port: 80
+
+documentation.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-flar01w
+      ip: 10.4.178.136
+      port: 80
+
+update.prod.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmc01p
+      ip: 10.4.178.66
+      port: 80
+    - name: chg02w9-cmc02p
+      ip: 10.4.178.67
+      port: 80
+
+update.qa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qcmc01q
+      ip: 10.4.178.92
+      port: 80
+    - name: chg02w9-qcmc02q
+      ip: 10.4.178.91
+      port: 80
+
+octopus.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w6-seqx01p
+      ip: 10.4.178.143
+      port: 80
+
+seq.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02w9-jann91p
+      ip: 10.4.178.144
+      port: 80
+
+cw1-integration-agent.transtream.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-rag01p
+      ip: 10.4.178.109
+      port: 80
+    - name: chg02w9-rag02p
+      ip: 10.4.178.110
+      port: 80
+
+cw1-integration-agent.transtreamqa.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qagnt1q
+      ip: 10.4.178.103
+      port: 80
+    - name: chg02w9-qagnt2q
+      ip: 10.4.178.104
+      port: 80
+
+cw1-integration-agent.transtreamxb.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg02w9-p01t0xb
+      ip: 10.4.178.197
+      port: 80
+
+nuget-ci.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qcmc01q
+      ip: 10.4.178.92
+      port: 80
+    - name: chg02w9-qcmc02q
+      ip: 10.4.178.91
+      port: 80
+
+nuget-staging-prod.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmc01p
+      ip: 10.4.178.66
+      port: 80
+    - name: chg02w9-cmc02p
+      ip: 10.4.178.67
+      port: 80
+
+update.xb.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmid1xb
+      ip: 10.4.178.196
+      port: 80
+
+nuget.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-nugt01p
+      ip: 10.4.178.196
+      port: 80
+
+tscloudidp.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-idp01p
+      ip: 10.4.178.68
+      port: 80
+    - name: chg02w9-idp02p
+      ip: 10.4.178.69
+      port: 80
+
+tscloudidpqa.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-qidp01q
+      ip: 10.4.178.90
+      port: 80
+    - name: chg02w9-qidp02q
+      ip: 10.4.178.89
+      port: 80
+
+tscloudidpxb.com:
+  clustered_instances: [us2prodfrontend1pierbridge]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-cmid1xb
+      ip: 10.4.178.196
+      port: 80
