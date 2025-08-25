@@ -429,3 +429,37 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2prodfrontend1pierbridge:
+      # General Pierbridge instance
+      dc:  US2
+      frontend:
+        maxconn:
+        ports:
+          plaintext: 2025
+          ssl: [2026, 5100, 5101, 6100]
+        stats:
+          ports:
+            web: 2027
+            socket: 2028
+        machine_cluster: us2-prod-frontend-1
+        iis_servers: []
+        certificates:
+          - name: star.transtream.com
+          - name: star.transtreamqa.com
+          - name: star.transtreamxb.com
+          - name: star.logistyxtme.com
+          - name: star.logistyxtmeqa.com
+          - name: star.sendproenterprise.com
+          - name: star.sendproenterpriseqa.com
+          - name: star.logistyxtmexb.com
+          - name: star.sendproenterprisexb.com
+          - name: star.pierbridge.net
+          - name: star.tscloudidp.com
+          - name: documentation.sendsuitelive.com
+          - name: star.tscloudidpqa.com
+          - name: star.tscloudidpxb.com
+          - name: track.carrier-tracking.com
+        cipher:
+          profiles:
+            - best_practice_2023
