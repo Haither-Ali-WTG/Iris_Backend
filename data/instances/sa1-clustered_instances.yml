@@ -36,6 +36,11 @@ clustered_instances:
         ports:
           web: 2038
           socket: 2039
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
       machine_cluster: sa1-prod-frontend-1
       iis_servers: []
       certificates:
@@ -51,6 +56,11 @@ clustered_instances:
         ports:
           web: 2040
           socket: 2041
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
       machine_cluster: sa1-prod-frontend-1
       iis_servers: []
       certificates:

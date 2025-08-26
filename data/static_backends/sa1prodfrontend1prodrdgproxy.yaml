@@ -1,6 +1,6 @@
 ---
 sa1-cw-prod-token-rdg-http:
-  clustered_instances: [sa1prodfrontend1testrdgproxy]
+  clustered_instances: [sa1prodfrontend1prodrdgproxy]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
@@ -19,7 +19,7 @@ sa1-cw-prod-token-rdg-http:
       check_port: 5000
 
 sa1-cw-prod-token-rdg-rpc:
-  clustered_instances: [sa1prodfrontend1testrdgproxy]
+  clustered_instances: [sa1prodfrontend1prodrdgproxy]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
