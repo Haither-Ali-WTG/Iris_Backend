@@ -96,6 +96,10 @@ stages:
               simulation_dc: DE1
             US2:
               simulation_dc: US2
+            CN1:
+              simulation_dc: CN1
+            SA1:
+              simulation_dc: SA1
         steps:
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
