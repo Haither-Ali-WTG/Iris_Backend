@@ -32,6 +32,8 @@ clustered_instances:
       frontend:
         proxy_ports:
           ssl: [2005]
+        ports:
+          ssl: [2007]
       stats:
         ports:
           web: 2038
@@ -50,8 +52,10 @@ clustered_instances:
       # sa1-prod-frontend-1-test-rdg-proxy
       dc: SA1
       frontend:
-        ports:
+        proxy_ports:
           ssl: [2006]
+        ports:
+          ssl: [2008]
       stats:
         ports:
           web: 2040
