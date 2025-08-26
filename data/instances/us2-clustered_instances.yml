@@ -446,20 +446,35 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-transtream-com
+          cms_resource_group: RG-US-Prod
         - name: star-transtreamqa-com
+          cms_resource_group: RG-US-Prod
         - name: star-transtreamxb-com
+          cms_resource_group: RG-US-Prod
         - name: star-logistyxtme-com
+          cms_resource_group: RG-US-Prod
         - name: star-logistyxtmeqa-com
-        - name: star-sendproenterprise-com
+          cms_resource_group: RG-US-Prod
+        - name: star-sendproenterpris-com  # This is how it's spelled in RG-US-Prod
+          cms_resource_group: RG-US-Prod
         - name: star-sendproenterpriseqa-com
+          cms_resource_group: RG-US-Prod
         - name: star-logistyxtmexb-com
+          cms_resource_group: RG-US-Prod
         - name: star-sendproenterprisexb-com
+          cms_resource_group: RG-US-Prod
         - name: star-pierbridge-net
+          cms_resource_group: RG-US-Prod
         - name: star-tscloudidp-com
+          cms_resource_group: RG-US-Prod
         - name: documentation-sendsuitelive-com
+          cms_resource_group: RG-US-Prod
         - name: star-tscloudidpqa-com
+          cms_resource_group: RG-US-Prod
         - name: star-tscloudidpxb-com
+          cms_resource_group: RG-US-Prod
         - name: track-carrier-tracking-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
