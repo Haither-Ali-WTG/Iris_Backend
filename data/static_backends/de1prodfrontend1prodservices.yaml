@@ -1,0 +1,32 @@
+---
+query.urs.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodservices]
+  full_override: |
+    backend query_urs_wisegrid_net
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ query.urs.wisegrid.net
+    http-check expect status 200
+    cookie URSQU insert indirect nocache dynamic
+    default-server agent-check agent-port 3333
+    server de1wp-surw-401 10.3.151.11:80
+    server de1wp-surw-402 10.3.151.12:80
+
+amend.urs.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodservices]
+  full_override: |
+    backend amend_urs_wisegrid_net
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ amend.urs.wisegrid.net
+    http-check expect status 200
+    cookie URSQU insert indirect nocache dynamic
+    default-server agent-check agent-port 3333
+    server de1wp-surw-403 10.3.151.13:80
+    server de1wp-surw-404 10.3.151.14:80
+
+datafactory.urs.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodservices]
+  full_override: |
+    backend datafactory_urs_wisegrid_net
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ datafactory.urs.wisegrid.net
+    http-check expect status 200
+    cookie URSQU insert indirect nocache dynamic
+    default-server agent-check agent-port 3333
+    server de1wp-surf-401 10.3.152.11:80
