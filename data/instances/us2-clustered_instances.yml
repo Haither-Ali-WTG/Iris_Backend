@@ -219,7 +219,7 @@ clustered_instances:
         - us2wp-sweb-007b.wisecloud.zone
         - us2wp-sweb-008a.wisecloud.zone
         - us2wp-sweb-008b.wisecloud.zone
-        - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wp-sweb-009a.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-401a.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-401b.wisecloud.zone      # Dedicated webserver for UP3
