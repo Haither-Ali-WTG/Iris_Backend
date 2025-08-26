@@ -49,8 +49,8 @@ backend_selection:
     - use_backend cmc_transtreamxb_com if cmc_transtreamxb_com
     - use_backend err-ratingqa_transtream_com if err-ratingqa_transtream_com
     - use_backend kooziegroupbren_transtream_com if kooziegroupbren_transtream_com port_6100_dst_port
-    - use_backend kooziegroupqabren_transtream_com if kooziegroupqabren_transtream_com port_5100_dst_port
-    - use_backend kooziegroupxbbren_transtream_com if kooziegroupxbbren_transtream_com port_5101_dst_port
+    - use_backend kooziegroupqabren_transtream_com if kooziegroupbrenqa_transtream_com port_5100_dst_port
+    - use_backend kooziegroupxbbren_transtream_com if kooziegroupbrenxb_transtream_com port_5101_dst_port
     - use_backend overstock_transtream_com if to_overstock_backend
     - use_backend pnc_logistyxtme_com if to_pnc_backend
     - use_backend kooziegroup_transtream_com if kooziegroup_transtream_com !hubcapp_path
