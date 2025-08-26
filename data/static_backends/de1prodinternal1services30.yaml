@@ -140,3 +140,25 @@ de1prodinternal1services30.wtg.zone:
     - name: de1lbl00933
       ip: 10.3.83.33
       port: 2341
+
+amend.urs.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  full_override: |
+    backend amend_urs_wisegrid_net
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ amend.urs.wisegrid.net
+    http-check expect status 200
+    cookie URSAM insert indirect nocache dynamic
+    default-server agent-check agent-port 3333
+    server de1wp-surw-403 10.3.151.13:80
+    server de1wp-surw-404 10.3.151.14:80
+
+datafactory.urs.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  full_override: |
+    backend datafactory_urs_wisegrid_net
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ datafactory.urs.wisegrid.net
+    http-check expect status 200
+    cookie URSDF insert indirect nocache dynamic
+    default-server agent-check agent-port 3333
+    server de1wp-surf-401 10.3.152.11:80
+    
