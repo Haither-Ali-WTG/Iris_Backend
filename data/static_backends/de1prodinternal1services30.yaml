@@ -161,4 +161,3 @@ datafactory.urs.wisegrid.net:
     cookie URSDF insert indirect nocache dynamic
     default-server agent-check agent-port 3333
     server de1wp-surf-401 10.3.152.11:80
-    
