@@ -277,6 +277,10 @@
     executable: /bin/bash
   become: yes
   changed_when: true
+  register: haproxy_sock_result
+  retries: 10
+  delay: 3
+  until: haproxy_sock_result.rc == 0
   when: haproxy_config.changed
 
 - name: Update server states file
