@@ -1,2 +1,5 @@
 ---
-{}
+query_urs_wisegrid_net:
+  description: "query.urs.wisegrid.net"
+  tests:
+    - hdr(host) -i query.urs.wisegrid.net
