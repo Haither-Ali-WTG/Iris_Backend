@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250826.1
-  # Tue Aug 26 00:21:10 UTC 2025 -- Tue Aug 26 10:21:10 AEST 2025
+  # Dante Build Artifact 20250827.1
+  # Wed Aug 27 03:01:48 UTC 2025 -- Wed Aug 27 13:01:48 AEST 2025
   #
-  # Merge pull request 38976 from dante_artifact_upgrade into master
-  # 747a184b2a0b5d83a9c51aee88a95c626f2bc86c
-  dante_build_id: '1447047'
+  # Merge pull request 39026 from dante_artifact_upgrade into master
+  # efdeeb81893f03bce3ecb0b38b9b93676dc8e8c7
+  dante_build_id: '1448113'
 
-  # virgil 20250827.2
-  # Tue Aug 26 23:32:14 UTC 2025 -- Wed Aug 27 09:32:14 AEST 2025
+  # virgil 20250827.6
+  # Wed Aug 27 02:21:00 UTC 2025 -- Wed Aug 27 12:21:00 AEST 2025
   #
-  # Merged PR 39025: Update s3 endpoints for pure and proget testing
-  # 7fdae90d264f1cf8e072aa1fb7deed2c5d2b7110
-  virgil_build_id: '1447944'
+  # Merged PR 39006: add-new-vlan-for-cw-connector-xt-runtime-zone
+  # bccb491326659edad620c9e2cda1a8de65ef0930
+  virgil_build_id: '1448074'
 
   # sqlbilling 20250827.2
   # Tue Aug 26 14:13:17 UTC 2025 -- Wed Aug 27 00:13:17 AEST 2025
