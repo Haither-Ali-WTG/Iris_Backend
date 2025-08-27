@@ -148,7 +148,7 @@ amend.urs.wisegrid.net:
     http_path: /wtg/ready
   cookie:
     name: URSAM
-    secure: true  
+    secure: true
   default_server: agent-check agent-port 3333
   encryption: false
   servers:
@@ -157,7 +157,7 @@ amend.urs.wisegrid.net:
       port: 80
     - name: de1wp-surw-404
       ip: 10.3.151.14
-      port: 80      
+      port: 80 
 
 datafactory.urs.wisegrid.net:
   clustered_instances: [de1prodinternal1services30]
@@ -166,7 +166,7 @@ datafactory.urs.wisegrid.net:
     http_path: /wtg/ready
   cookie:
     name: URSDF
-    secure: true  
+    secure: true
   default_server: agent-check agent-port 3333
   encryption: false
   servers:
