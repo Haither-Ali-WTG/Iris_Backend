@@ -1,7 +1,7 @@
 ---
 query.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodservices]
-    http_health_check:
+  http_health_check:
     enabled: true
     http_path: /wtg/ready
   cookie:
