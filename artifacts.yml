@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250822.2
-  # Fri Aug 22 07:01:33 UTC 2025 -- Fri Aug 22 17:01:33 AEST 2025
+  # Dante Build Artifact 20250826.1
+  # Tue Aug 26 00:21:10 UTC 2025 -- Tue Aug 26 10:21:10 AEST 2025
   #
-  # Merge pull request 38913 from dante_artifact_upgrade into master
-  # 2b800d7709e92b217e0726286f76ec58c7ae9e31
-  dante_build_id: '1444040'
+  # Merge pull request 38976 from dante_artifact_upgrade into master
+  # 747a184b2a0b5d83a9c51aee88a95c626f2bc86c
+  dante_build_id: '1447047'
 
-  # virgil 20250822.5
-  # Fri Aug 22 06:12:50 UTC 2025 -- Fri Aug 22 16:12:50 AEST 2025
+  # virgil 20250827.2
+  # Tue Aug 26 23:32:14 UTC 2025 -- Wed Aug 27 09:32:14 AEST 2025
   #
-  # Merged PR 38910: au2wp-svir-017 uplink issue troubleshooting
-  # 8a31c624255600fb7f6a39677a6b85890e1dcbd7
-  virgil_build_id: '1443973'
+  # Merged PR 39025: Update s3 endpoints for pure and proget testing
+  # 7fdae90d264f1cf8e072aa1fb7deed2c5d2b7110
+  virgil_build_id: '1447944'
 
-  # sqlbilling 20250821.2
-  # Thu Aug 21 08:32:15 UTC 2025 -- Thu Aug 21 18:32:15 AEST 2025
+  # sqlbilling 20250827.2
+  # Tue Aug 26 14:13:17 UTC 2025 -- Wed Aug 27 00:13:17 AEST 2025
   #
-  # Merged PR 38607: Updated de1-prod-frontend-1.yml
-  # 4dc907be41fc091bb0fa0fd040a4efb9f925035f
-  sqlbilling_build_id: '1443154'
+  # Merged PR 39018: SQLBillingADDCS02058145.yml
+  # ec51fe9b269d4c344b9d355b4990410d76de7f16
+  sqlbilling_build_id: '1447613'
