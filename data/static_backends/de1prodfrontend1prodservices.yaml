@@ -1,11 +1,18 @@
 ---
 query.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodservices]
-  full_override: |
-    backend query_urs_wisegrid_net
-    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ query.urs.wisegrid.net
-    http-check expect status 200
-    cookie URSQU insert indirect nocache dynamic
-    default-server agent-check agent-port 3333
-    server de1wp-surw-401 10.3.151.11:80
-    server de1wp-surw-402 10.3.151.12:80
+    http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  cookie:
+    name: URSQU
+    secure: true
+  default_server: agent-check agent-port 3333
+  encryption: false
+  servers:
+    - name: de1wp-surw-401
+      ip: 10.3.151.11
+      port: 80
+    - name: de1lbl00932
+      ip: 10.3.151.12
+      port: 80
