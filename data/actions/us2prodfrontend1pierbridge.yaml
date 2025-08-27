@@ -1,0 +1,83 @@
+---
+ssl_redirects:
+  description: |-
+    Do SSL redirects for Pierbridge domains; not all subdomains need SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_transtream_com !{ ssl_fc } !update_transtream_com
+    - redirect scheme https if star_transtreamqa_com !{ ssl_fc } !update_transtreamqa_com
+    - redirect scheme https if star_transtreamxb_com !{ ssl_fc } !update_transtreamxb_com
+    - redirect scheme https if star_logistyxtme_com !{ ssl_fc }
+    - redirect scheme https if star_logistyxtmeqa_com !{ ssl_fc } !update_logistyxtmeqa_com
+    - redirect scheme https if star_logistyxtmexb_com !{ ssl_fc } !update_logistyxtmexb_com
+    - redirect scheme https if star_sendproenterprise_com !{ ssl_fc } !update_sendproenterprise_com
+    - redirect scheme https if star_sendproenterpriseqa_com !{ ssl_fc } !update_sendproenterpriseqa_com
+    - redirect scheme https if star_sendproenterprisexb_com !{ ssl_fc } !update_sendproenterprisexb_com
+    - redirect scheme https if star_tscloudidp_com !{ ssl_fc }
+    - redirect scheme https if star_tscloudidpqa_com !{ ssl_fc }
+    - redirect scheme https if star_tscloudidpxb_com !{ ssl_fc }
+    - redirect scheme https if documentation_sendsuitelive_com !{ ssl_fc }
+    - redirect scheme https if star_pierbridge_net !{ ssl_fc } !pierbridge_net !test_pierbridge_net
+    - redirect scheme https if star_pierbridge_net !{ ssl_fc } !carrierportal_production_pierbridge_net
+    - redirect scheme https if star_pierbridge_net !{ ssl_fc } !carrierportal_test_pierbridge_net
+
+backend_selection:
+  description: |-
+    Handle backend selection. The order of these operations matters
+  order: 80
+  actions:
+    - use_backend update_xb_pierbridge_net if to_updatexb_backend
+    - use_backend update_qa_pierbridge_net if to_updateqa_backend
+    - use_backend update_prod_pierbridge_net if to_updateprod_backend
+    - use_backend nuget_pierbridge_net if nuget_pierbridge_net
+    - use_backend nuget-ci_pierbridge_net if nuget-ci_pierbridge_net
+    - use_backend nuget-staging-prod_pierbridge_net if nuget-staging_pierbridge_net || nuget-production_pierbridge_net
+    - use_backend nuget-staging-prod_pierbridge_net if nuget-staging-hubcapp_pierbridge_net
+    - use_backend nuget-staging-prod_pierbridge_net if nuget-production-hubcapp_pierbridge_net
+    - use_backend cw1-integration-agent_transtream_com if cw1-integration-agent_transtream_com
+    - use_backend cw1-integration-agent_transtreamqa_com if cw1-integration-agent_transtreamqa_com
+    - use_backend cw1-integration-agent_transtreamxb_com if cw1-integration-agent_transtreamxb_com
+    - use_backend octopus_pierbridge_net if octopus_pierbridge_net
+    - use_backend seq_pierbridge_net if seq_pierbridge_net
+    - use_backend ingress-prod_pierbridge_net if to_us5_prod_ingress_controller
+    - use_backend ingress-qa_pierbridge_net if to_us5_qa_ingress_controller
+    - use_backend pierbridge_net if pierbridge_net || carrierportal_production_pierbridge_net
+    - use_backend test_pierbridge_net if test_pierbridge_net
+    - use_backend err-rating_transtream_com if err-rating_transtream_com
+    - use_backend cmc_transtream_com if cmc_transtream_com
+    - use_backend cmc_transtreamqa_com if cmc_transtreamqa_com
+    - use_backend cmc_transtreamxb_com if cmc_transtreamxb_com
+    - use_backend err-ratingqa_transtream_com if err-ratingqa_transtream_com
+    - use_backend kooziegroupbren_transtream_com if kooziegroupbren_transtream_com port_6100_dst_port
+    - use_backend kooziegroupqabren_transtream_com if kooziegroupbrenqa_transtream_com port_5100_dst_port
+    - use_backend kooziegroupxbbren_transtream_com if kooziegroupbrenxb_transtream_com port_5101_dst_port
+    - use_backend overstock_transtream_com if to_overstock_backend
+    - use_backend pnc_logistyxtme_com if to_pnc_backend
+    - use_backend kooziegroup_transtream_com if kooziegroup_transtream_com !hubcapp_path
+    - use_backend kooziegroupqa_transtream_com if kooziegroupqa_transtream_com !hubcapp_path
+    - use_backend kooziegroupxb_transtream_com if kooziegroupxb_transtream_com !hubcapp_path
+    - use_backend flexexb_transtream_com if to_flexexb_backend
+    - use_backend us2us5wappx03d_pierbridge_net if to_us2us5wappx03d_backend
+    - use_backend reporting_pierbridge_net if to_reporting_backend
+    - use_backend reporting-qa_pierbridge_net if reporting_transtreamqa_com
+    - use_backend hubcapp-qa_pierbridge_net if star_logistyxtmeqa_com hubcapp_path
+    - use_backend hubcapp-qa_pierbridge_net if star_sendproenterpriseqa_com hubcapp_path
+    - use_backend hubcapp-qa_pierbridge_net if star_transtreamqa_com hubcapp_path
+    - use_backend hubcapp-sandbox_pierbridge_net if star_logistyxtmexb_com hubcapp_path
+    - use_backend hubcapp-sandbox_pierbridge_net if star_sendproenterprisexb_com hubcapp_path
+    - use_backend hubcapp-sandbox_pierbridge_net if star_transtreamxb_com hubcapp_path
+    - use_backend hubcapp-prod_pierbridge_net if star_logistyxtme_com hubcapp_path
+    - use_backend hubcapp-prod_pierbridge_net if star_sendproenterprise_com hubcapp_path
+    - use_backend hubcapp-prod_pierbridge_net if star_transtream_com hubcapp_path
+    - use_backend t2-platform1_pierbridge_net if star_sendproenterpriseqa_com
+    - use_backend t2-platform2_pierbridge_net if star_logistyxtmeqa_com || star_transtreamqa_com
+    - use_backend t2-platform3_pierbridge_net if star_transtreamxb_com || star_sendproenterprisexb_com
+    - use_backend t2-platform3_pierbridge_net if star_logistyxtmexb_com
+    - use_backend prod_sendproenterprise_com if star_sendproenterprise_com
+    - use_backend prod_transtream_com if star_transtream_com || star_logistyxtme_com
+    - use_backend login_tscloudidp_com if login_tscloudidp_com
+    - use_backend login_tscloudidpqa_com if login_tscloudidpqa_com
+    - use_backend login_tscloudidpxb_com if login_tscloudidpxb_com
+    - use_backend tscloudidp_com if star_tscloudidp_com !login_tscloudidp_com
+    - use_backend tscloudidpqa_com if star_tscloudidpqa_com !login_tscloudidpqa_com
+    - use_backend tscloudidpxb_com if star_tscloudidpxb_com !login_tscloudidpxb_com
