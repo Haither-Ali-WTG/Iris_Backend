@@ -140,3 +140,36 @@ de1prodinternal1services30.wtg.zone:
     - name: de1lbl00933
       ip: 10.3.83.33
       port: 2341
+
+amend.urs.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  cookie:
+    name: URSAM
+    secure: true
+  default_server: agent-check agent-port 3333
+  encryption: false
+  servers:
+    - name: de1wp-surw-403
+      ip: 10.3.151.13
+      port: 80
+    - name: de1wp-surw-404
+      ip: 10.3.151.14
+      port: 80
+
+datafactory.urs.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  cookie:
+    name: URSDF
+    secure: true
+  default_server: agent-check agent-port 3333
+  encryption: false
+  servers:
+    - name: de1wp-surf-401
+      ip: 10.3.152.11
+      port: 80

@@ -104,6 +104,7 @@ clustered_instances:
       machine_cluster: de1-prod-internal-1
       iis_servers: []
       certificates:
+        - name: star-urs-wisegrid-net
         - name: star-de1s3-3-wtg-ws
           cms_resource_group: RG-EU-Prod
       cipher:
