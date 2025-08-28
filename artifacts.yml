@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250828.2
-  # Thu Aug 28 03:01:39 UTC 2025 -- Thu Aug 28 13:01:39 AEST 2025
+  # Dante Build Artifact 20250828.3
+  # Thu Aug 28 06:41:09 UTC 2025 -- Thu Aug 28 16:41:09 AEST 2025
   #
-  # Merge pull request 39090 from dante_artifact_upgrade into master
-  # 58f55ceed6410303ce79537635236296ee9f66b6
-  dante_build_id: '1449084'
+  # Merge pull request 39114 from dante_artifact_upgrade into master
+  # af9444dfffdbb5ae63b2f8460d664be2a885f152
+  dante_build_id: '1449284'
 
-  # virgil 20250828.6
-  # Thu Aug 28 02:15:51 UTC 2025 -- Thu Aug 28 12:15:51 AEST 2025
+  # virgil 20250829.1
+  # Thu Aug 28 22:39:53 UTC 2025 -- Fri Aug 29 08:39:53 AEST 2025
   #
-  # Merged PR 39061: Add new Analytics Subnets for "Standard" Elastic Clusters
-  # 1eefc1910427440c779d5ee1dc5c9a2824ef8011
-  virgil_build_id: '1449037'
+  # Merged PR 38951: WI00925827 remove LACP from au2wp-svir-018,020 on rebuild
+  # 18033b58925854748b2c97c208e638541872d4b7
+  virgil_build_id: '1449847'
 
   # sqlbilling 20250827.4
   # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
