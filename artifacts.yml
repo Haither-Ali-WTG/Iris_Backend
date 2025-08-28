@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250827.1
-  # Wed Aug 27 03:01:48 UTC 2025 -- Wed Aug 27 13:01:48 AEST 2025
+  # Dante Build Artifact 20250828.1
+  # Thu Aug 28 01:41:23 UTC 2025 -- Thu Aug 28 11:41:23 AEST 2025
   #
-  # Merge pull request 39026 from dante_artifact_upgrade into master
-  # efdeeb81893f03bce3ecb0b38b9b93676dc8e8c7
-  dante_build_id: '1448113'
+  # Merge pull request 39070 from dante_artifact_upgrade into master
+  # 8d05ec44553fa5ed3d0213b8139da96016f71e4b
+  dante_build_id: '1448993'
 
-  # virgil 20250828.3
-  # Thu Aug 28 00:47:22 UTC 2025 -- Thu Aug 28 10:47:22 AEST 2025
+  # virgil 20250828.6
+  # Thu Aug 28 02:15:51 UTC 2025 -- Thu Aug 28 12:15:51 AEST 2025
   #
-  # Merged PR 39064: add apex31/32/33/34 to AU2-SY5 rack309 and rack409
-  # ecf72a8e8c3a0c7332ab37d1926d5321d1441e8c
-  virgil_build_id: '1448947'
+  # Merged PR 39061: Add new Analytics Subnets for "Standard" Elastic Clusters
+  # 1eefc1910427440c779d5ee1dc5c9a2824ef8011
+  virgil_build_id: '1449037'
 
   # sqlbilling 20250827.4
   # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
