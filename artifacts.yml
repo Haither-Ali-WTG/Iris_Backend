@@ -7,16 +7,16 @@ variables:
   # efdeeb81893f03bce3ecb0b38b9b93676dc8e8c7
   dante_build_id: '1448113'
 
-  # virgil 20250827.6
-  # Wed Aug 27 02:21:00 UTC 2025 -- Wed Aug 27 12:21:00 AEST 2025
+  # virgil 20250828.3
+  # Thu Aug 28 00:47:22 UTC 2025 -- Thu Aug 28 10:47:22 AEST 2025
   #
-  # Merged PR 39006: add-new-vlan-for-cw-connector-xt-runtime-zone
-  # bccb491326659edad620c9e2cda1a8de65ef0930
-  virgil_build_id: '1448074'
+  # Merged PR 39064: add apex31/32/33/34 to AU2-SY5 rack309 and rack409
+  # ecf72a8e8c3a0c7332ab37d1926d5321d1441e8c
+  virgil_build_id: '1448947'
 
-  # sqlbilling 20250827.2
-  # Tue Aug 26 14:13:17 UTC 2025 -- Wed Aug 27 00:13:17 AEST 2025
+  # sqlbilling 20250827.4
+  # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
   #
-  # Merged PR 39018: SQLBillingADDCS02058145.yml
-  # ec51fe9b269d4c344b9d355b4990410d76de7f16
-  sqlbilling_build_id: '1447613'
+  # Merged PR 39062: AddSQLReadOnlyIP CS02059342 US2
+  # 9cca6feec6c6ec334951947aea497e7a562acae9
+  sqlbilling_build_id: '1448506'
