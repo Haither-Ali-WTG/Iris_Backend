@@ -37,7 +37,7 @@ custom_url_actions:
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ecarrier.greencarrier.com }
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ecarrier.greencarrier.com }
     - use_backend gf6trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ecarrier.trn.greencarrier.com }
-    - use_backend gknrddwebtracker_wisegrid_net if { hdr(host),field(1,:) -i forwarding.gknfreightservices.com }
+    - use_backend gknrdd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i forwarding.gknfreightservices.com }
     - use_backend h47prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.webtracker.hecksher.com }
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.johngood.co.uk }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
