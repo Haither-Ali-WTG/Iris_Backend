@@ -1,0 +1,21 @@
+---
+production_domains:
+  description: "Domains used for production HubCapp applications"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtme\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterprise\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtream\.com$
+
+qa_domains:
+  description: "Domains used for HubCapp QA applications"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtmeqa\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterpriseqa\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtreamqa\.com$
+
+sandbox_domains:
+  description: "Domains used for HubCapp Sandbox applications"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?logistyxtmexb\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?sendproenterprisexb\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?transtreamxb\.com$
