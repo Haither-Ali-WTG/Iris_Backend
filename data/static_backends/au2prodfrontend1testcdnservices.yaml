@@ -87,3 +87,14 @@ au.cww.wisetechglobal.com-catchall:
     server AU2CO-SBLZ-016 10.2.71.46:80
     server AU2CO-SBLZ-017 10.2.71.47:80
     server AU2CO-SBLZ-018 10.2.71.48:80
+
+accounting-d365.xttest.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: d365xt
+  http_health_check:
+    enabled: false
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 9080
