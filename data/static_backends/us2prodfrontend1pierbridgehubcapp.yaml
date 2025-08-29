@@ -1,5 +1,5 @@
 ---
-hubcapp-qa_pierbridge_net:
+hubcapp-qa.pierbridge.net:
   clustered_instances: [us2prodfrontend1pierbridge]
   http_health_check:
     enabled: false
@@ -11,7 +11,7 @@ hubcapp-qa_pierbridge_net:
       ip: 10.4.178.106
       port: 80
 
-hubcapp-sandbox_pierbridge_net:
+hubcapp-sandbox.pierbridge.net:
   clustered_instances: [us2prodfrontend1pierbridge]
   http_health_check:
     enabled: false
@@ -20,7 +20,7 @@ hubcapp-sandbox_pierbridge_net:
       ip: 10.4.178.195
       port: 80
 
-hubcapp-prod_pierbridge_net:
+hubcapp-prod.pierbridge.net:
   clustered_instances: [us2prodfrontend1pierbridge]
   http_health_check:
     enabled: false
