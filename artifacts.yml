@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250829.1
-  # Thu Aug 28 23:21:38 UTC 2025 -- Fri Aug 29 09:21:38 AEST 2025
+  # Dante Build Artifact 20250829.3
+  # Fri Aug 29 02:48:43 UTC 2025 -- Fri Aug 29 12:48:43 AEST 2025
   #
-  # Merge pull request 39142 from dante_artifact_upgrade into master
-  # 68db601a2e60b667b8ae27616dda9779ec26e7dc
-  dante_build_id: '1449883'
+  # Merge pull request 39162 from dante_artifact_upgrade into master
+  # 715304923769e5d2a4c76347bf279da53cd3ad7b
+  dante_build_id: '1450087'
 
-  # virgil 20250829.1
-  # Thu Aug 28 22:39:53 UTC 2025 -- Fri Aug 29 08:39:53 AEST 2025
+  # virgil 20250829.7
+  # Fri Aug 29 02:06:28 UTC 2025 -- Fri Aug 29 12:06:28 AEST 2025
   #
-  # Merged PR 38951: WI00925827 remove LACP from au2wp-svir-018,020 on rebuild
-  # 18033b58925854748b2c97c208e638541872d4b7
-  virgil_build_id: '1449847'
+  # Merged PR 39169: added cumulus 5.11.3 and removed 5.12
+  # 93658c7b6a6c492337098961f6c59a71620fc8eb
+  virgil_build_id: '1450046'
 
   # sqlbilling 20250827.4
   # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
