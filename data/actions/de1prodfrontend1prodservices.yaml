@@ -1,14 +1,15 @@
 ---
-urs_temp_restrict_ip:
-  description: |-
-    Restrict URS Query API to WTG IPs only until ready for public access
-  order: 10
-  actions:
-    - http-request deny if !wtg_src query_urs_wisegrid_net
-
 secure_cookie:
   description: |-
     Set secure attribute
   order: 60
   actions:
     - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 79
+  actions:
+    - redirect scheme https if star_urs_wisegrid_net !{ ssl_fc }
