@@ -10,9 +10,9 @@ ssl_redirects:
 
 backend_selection:
   description: |-
-    Handle backend selection. The order of these operations matters
+    Handle backend selection.
   order: 80
   actions:
-    - use_backend hubcapp-qa_pierbridge_net if qa_domains
-    - use_backend hubcapp-sandbox_pierbridge_net if sandbox_domains
-    - use_backend hubcapp-prod_pierbridge_net if production_domains
+    - use_backend hubcappqa_pierbridge_net if qa_domains
+    - use_backend hubcappsandbox_pierbridge_net if sandbox_domains
+    - use_backend hubcappprod_pierbridge_net if production_domains
