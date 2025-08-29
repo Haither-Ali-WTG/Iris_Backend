@@ -4,15 +4,9 @@ ssl_redirects:
     Do SSL redirects for Pierbridge domains; not all subdomains need SSL redirects
   order: 79
   actions:
-    - redirect scheme https if star_transtream_com !{ ssl_fc }
-    - redirect scheme https if star_transtreamqa_com !{ ssl_fc }
-    - redirect scheme https if star_transtreamxb_com !{ ssl_fc }
-    - redirect scheme https if star_logistyxtme_com !{ ssl_fc }
-    - redirect scheme https if star_logistyxtmeqa_com !{ ssl_fc }
-    - redirect scheme https if star_logistyxtmexb_com !{ ssl_fc }
-    - redirect scheme https if star_sendproenterprise_com !{ ssl_fc }
-    - redirect scheme https if star_sendproenterpriseqa_com !{ ssl_fc }
-    - redirect scheme https if star_sendproenterprisexb_com !{ ssl_fc }
+    - redirect scheme https if qa_domains !{ ssl_fc }
+    - redirect scheme https if sandbox_domains !{ ssl_fc }
+    - redirect scheme https if production_domains !{ ssl_fc }
 
 backend_selection:
   description: |-
