@@ -14,7 +14,7 @@ sa1-cw-test-token-rdg-http:
       port: 80
       check_port: 5000
     - name: sa1wp-srdg-402.wisecloud.zone
-      ip: 10.96.64.198
+      ip: 10.96.64.199
       port: 80
       check_port: 5000
 
