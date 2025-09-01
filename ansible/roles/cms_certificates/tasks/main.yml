@@ -49,7 +49,7 @@
 - name: Write back cache data
   when:
     - use_cache | default(true)
-    - not simulation
+    - not simulation | default(false)
   block:
     - name: Update the JSON cache
       set_fact:
