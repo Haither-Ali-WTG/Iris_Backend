@@ -282,6 +282,17 @@ au2sandinternaltcp.wtg.zone:
       ip: 10.2.136.12
       port: 2043
 
+jetbrains-license-server.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /health
+  encryption: false
+  servers:
+    - name: au2co-sjet-401
+      ip: 10.2.69.89
+      port: 9010
+
 knowledge.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
