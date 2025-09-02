@@ -579,3 +579,20 @@ us2prodinternal1services30.wtg.zone:
     - name: us2lbl00920
       ip: 10.4.83.26
       port: 2341
+
+wtg-sw.sand.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    http_path: /Orion/Login
+  encryption: true
+  cookie:
+    name: WEBNODE
+  servers:
+    - name: us2sp-smpe-401.sand.wtg.zone
+      ip: 10.2.82.30
+      port: 8787
+      settings: check ssl verify none
+    - name: us2sp-sape-401.sand.wtg.zone
+      ip: 10.2.82.32
+      port: 8787
+      settings: check ssl verify none
