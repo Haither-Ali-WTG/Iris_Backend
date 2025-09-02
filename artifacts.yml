@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250902.3
-  # Tue Sep  2 03:21:12 UTC 2025 -- Tue Sep  2 13:21:12 AEST 2025
+  # Dante Build Artifact 20250902.4
+  # Tue Sep  2 04:28:32 UTC 2025 -- Tue Sep  2 14:28:32 AEST 2025
   #
-  # Merge pull request 39288 from dante_artifact_upgrade into master
-  # 26573d07c08960ffaaf5babe607f4d832c17ae89
-  dante_build_id: '1453630'
+  # Merged PR 39243: config: roll out port ordering change to au2 switches
+  # 8a71fd2fbb5fe24c53691aff9ce02641fc24385c
+  dante_build_id: '1453701'
 
   # virgil 20250902.5
   # Tue Sep  2 02:30:37 UTC 2025 -- Tue Sep  2 12:30:37 AEST 2025
