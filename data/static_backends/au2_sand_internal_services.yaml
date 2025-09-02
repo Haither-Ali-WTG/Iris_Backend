@@ -518,6 +518,7 @@ ocmbe.sand.wtg.zone:
 wtg-sw.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
+    enabled: true
     http_path: /Orion/Login
   encryption: true
   cookie:
