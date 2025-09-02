@@ -583,6 +583,7 @@ us2prodinternal1services30.wtg.zone:
 wtg-sw.sand.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
+    enabled: true
     http_path: /Orion/Login
   encryption: true
   cookie:
