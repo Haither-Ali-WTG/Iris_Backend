@@ -540,3 +540,25 @@ wtg-sw.sand.wtg.zone:
       ip: 10.4.82.32
       port: 8787
       settings: check ssl verify none backup
+  http_health_check:
+    http_path: /Orion/Login
+  encryption: true
+  cookie:
+    name: WEBNODE
+  servers:
+    - name: au2sp-smpe-401.sand.wtg.zone
+      ip: 10.2.82.30
+      port: 8787
+      settings: check ssl verify none
+    - name: au2sp-sape-401.sand.wtg.zone
+      ip: 10.2.82.32
+      port: 8787
+      settings: check ssl verify none
+    - name: us2sp-smpe-401.sand.wtg.zone
+      ip: 10.4.82.30
+      port: 8787
+      settings: check ssl verify none backup
+    - name: us2sp-sawe-401.sand.wtg.zone
+      ip: 10.4.82.32
+      port: 8787
+      settings: check ssl verify none backup
