@@ -219,7 +219,7 @@ clustered_instances:
         - us2wp-sweb-007b.wisecloud.zone
         - us2wp-sweb-008a.wisecloud.zone
         - us2wp-sweb-008b.wisecloud.zone
-        - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wp-sweb-009a.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-401a.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-401b.wisecloud.zone      # Dedicated webserver for UP3
@@ -258,6 +258,64 @@ clustered_instances:
         - name: star-webprint-wisegrid-net
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: aetnatracking_com
+          cms_resource_group: RG-US-Prod
+        - name: app_gomardom_com
+          cms_resource_group: RG-US-Prod
+        - name: app_gomcd_com
+          cms_resource_group: RG-US-Prod
+        - name: app_tlsgo_com
+          cms_resource_group: RG-US-Prod
+        - name: connortrac_jsconnor_com
+          cms_resource_group: RG-US-Prod
+        - name: eworldplus_com
+          cms_resource_group: RG-US-Prod
+        - name: login_tarraservices_com
+          cms_resource_group: RG-US-Prod
+        - name: neo_delmarcargo_com
+          cms_resource_group: RG-US-Prod
+        - name: neo_eworldplus_com
+          cms_resource_group: RG-US-Prod
+        - name: powerview_miq_com
+          cms_resource_group: RG-US-Prod
+        - name: shipping_absolutewl_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_albawheelsup_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_approvedforwarders_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking-ariesww-com
+          cms_resource_group: RG-US-Prod
+        - name: tracking-cargotours-com
+          cms_resource_group: RG-US-Prod
+        - name: tracking-clearfreight-com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_clutchgl_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_delmarcargo_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking-falconeglobal-com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_jetparkwarehouse_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking_perimeterlogistics_com
+          cms_resource_group: RG-US-Prod
+        - name: tracking-premiointernational-com
+          cms_resource_group: RG-US-Prod
+        - name: trackingus_weidafreight_com
+          cms_resource_group: RG-US-Prod
+        - name: trackschott_airschott_com
+          cms_resource_group: RG-US-Prod
+        - name: webtracker_daystarglobal_com
+          cms_resource_group: RG-US-Prod
+        - name: webtracker_djsintl_com
+          cms_resource_group: RG-US-Prod
+        - name: webtracker_oiaglobal_com
+          cms_resource_group: RG-US-Prod
+        - name: www_axi-track_com
+          cms_resource_group: RG-US-Prod
+        - name: www_rktrac_com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
