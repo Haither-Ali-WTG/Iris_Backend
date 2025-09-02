@@ -7,12 +7,12 @@ variables:
   # d962ae197e715d1c731afa56505b8502ed2307f0
   dante_build_id: '1453493'
 
-  # virgil 20250902.2
-  # Mon Sep  1 23:08:20 UTC 2025 -- Tue Sep  2 09:08:20 AEST 2025
+  # virgil 20250902.5
+  # Tue Sep  2 02:30:37 UTC 2025 -- Tue Sep  2 12:30:37 AEST 2025
   #
-  # Merge pull request 39250 from virgil_python_upgrade into master
-  # 9e73b5a29048ed11d622a1fbcace6e71b51f0ba5
-  virgil_build_id: '1453393'
+  # Merged PR 39286: Kafka config: CS02055245 create queues for sql monitoring on Q0
+  # ed96068e12e91a96cce772f069e479b6b84c238a
+  virgil_build_id: '1453596'
 
   # sqlbilling 20250827.4
   # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
