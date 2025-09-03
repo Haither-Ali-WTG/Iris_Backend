@@ -435,6 +435,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: ulink_awh_com_au
           cms_resource_group: RG-AU-Prod
+        - name: unpacks_thecargowarehouse_com_au
+          cms_resource_group: RG-AU-Prod
         - name: webtrack_axima_com_au
           cms_resource_group: RG-AU-Prod
         - name: webtracker_famous_com_sg
