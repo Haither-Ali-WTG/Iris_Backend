@@ -433,7 +433,11 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: tracking-jjlawson-com-au
           cms_resource_group: RG-AU-Prod
+        - name: tracking_navia_com_au
+          cms_resource_group: RG-AU-Prod
         - name: ulink_awh_com_au
+          cms_resource_group: RG-AU-Prod
+        - name: unpacks_thecargowarehouse_com_au
           cms_resource_group: RG-AU-Prod
         - name: webtrack_axima_com_au
           cms_resource_group: RG-AU-Prod
@@ -444,6 +448,8 @@ clustered_instances:
         - name: webtracker_kwe_com_au
           cms_resource_group: RG-AU-Prod
         - name: webtracker_mantonairsea_com_au
+          cms_resource_group: RG-AU-Prod
+        - name: webtrack_natrio_com
           cms_resource_group: RG-AU-Prod
         - name: webtracker_sgl_com_au
           cms_resource_group: RG-AU-Prod
