@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250903.1
-  # Tue Sep  2 23:11:18 UTC 2025 -- Wed Sep  3 09:11:18 AEST 2025
+  # Dante Build Artifact 20250903.7
+  # Wed Sep  3 02:53:19 UTC 2025 -- Wed Sep  3 12:53:19 AEST 2025
   #
-  # Merge pull request 39329 from automatic_dante_agent_image_upgrade into master
-  # 8c845230cec5f6807c893bc8900e4bc389c6acf3
-  dante_build_id: '1454383'
+  # Merge pull request 39328 from automatic_botticelli_image_upgrade into master
+  # 89b4a7f85a0bdabae47c793df1b7eb4b6cea3d32
+  dante_build_id: '1454679'
 
-  # virgil 20250902.5
-  # Tue Sep  2 02:30:37 UTC 2025 -- Tue Sep  2 12:30:37 AEST 2025
+  # virgil 20250903.2
+  # Wed Sep  3 01:37:14 UTC 2025 -- Wed Sep  3 11:37:14 AEST 2025
   #
-  # Merged PR 39286: Kafka config: CS02055245 create queues for sql monitoring on Q0
-  # ed96068e12e91a96cce772f069e479b6b84c238a
-  virgil_build_id: '1453596'
+  # Merged PR 31189: Virgil - Change schema to include service expiry and tag
+  # ebc8e4d2f739fa37414d4b388b73f6c008af5655
+  virgil_build_id: '1454583'
 
   # sqlbilling 20250902.4
   # Tue Sep  2 11:21:05 UTC 2025 -- Tue Sep  2 21:21:05 AEST 2025
