@@ -106,7 +106,6 @@ mockendpoints-api-test-wisegrid-net-443:
   http_health_check:
     enabled: false
   default_server: inter 60s fall 3 rise 2
-  encryption: true
   servers:
     - name: au2wt-smep-401
       ip: 10.2.69.122

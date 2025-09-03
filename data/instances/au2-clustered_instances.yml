@@ -294,13 +294,8 @@ clustered_instances:
             - 2134  # mockendpoints_api_test_wisegrid_net_13004
             - 3025  # PROD backends port 25
             - 3587  # PROD backends port 587
-          ssl: [2135]  # mockendpoints_api_test_wisegrid_net_443
+            - 2135  # mockendpoints_api_test_wisegrid_net_443
       iis_servers: []
-      certificates:
-        - name: star-wisegrid-net
-      cipher:
-        profiles:
-          - best_practice_2023
       machine_cluster: au2-prod-internal-1
       stats:
         ports:
