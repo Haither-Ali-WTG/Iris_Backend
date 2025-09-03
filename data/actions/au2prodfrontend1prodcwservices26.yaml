@@ -32,14 +32,23 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
+    ### CFS
+    - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i tracking.navia.com.au }
+    - use_backend outmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i unpacks.thecargowarehouse.com.au }
+    - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
+    ### Webtracker
     - use_backend ahwprd-cn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ahwprd.webtracker.carozplus.com }
     - use_backend ap3syd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
+    - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i asamel2.webtracker.wisegrid.net }
     - use_backend acamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.acaint.com.au }
     - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.axima.com.au }
+    - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.natrio.com }
+    - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.yangkee.com }
     - use_backend awhadl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ulink.awh.com.au }
     - use_backend c0nall_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.consolalliance.com.au }
     - use_backend ccpbne_webtracker_wisegrid_net if { hdr(host),field(1,:) -i customers.commercialfreight.com.au }
     - use_backend citmel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
+    - use_backend citmel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cfs.citotransport.com.au }
     - use_backend dtksgn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i e-business.tmforwarding.com }
     - use_backend eplsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.eplint.com }
     - use_backend excsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.excellogistics.com.au }
@@ -56,11 +65,10 @@ custom_url_actions:
     - use_backend mlasyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.nnraus.com.au }
     - use_backend mtasyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.mantonairsea.com.au }
     - use_backend ospakl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ediweb.oceanbridge.co.nz }
-    - use_backend outmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i unpacks.thecargowarehouse.com.au }
     - use_backend pcfsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.pcfs.com.au }
     - use_backend powsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.powerhousensw.com.au }
     - use_backend silbne_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracking.sila.net.au }
-    - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
     - use_backend sumsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.sgl.com.au }
     - use_backend tmssyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.totalmaritime.com.au }
+    ### GLOW
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
