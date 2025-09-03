@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250902.4
-  # Tue Sep  2 04:28:32 UTC 2025 -- Tue Sep  2 14:28:32 AEST 2025
+  # Dante Build Artifact 20250903.1
+  # Tue Sep  2 23:11:18 UTC 2025 -- Wed Sep  3 09:11:18 AEST 2025
   #
-  # Merged PR 39243: config: roll out port ordering change to au2 switches
-  # 8a71fd2fbb5fe24c53691aff9ce02641fc24385c
-  dante_build_id: '1453701'
+  # Merge pull request 39329 from automatic_dante_agent_image_upgrade into master
+  # 8c845230cec5f6807c893bc8900e4bc389c6acf3
+  dante_build_id: '1454383'
 
   # virgil 20250902.5
   # Tue Sep  2 02:30:37 UTC 2025 -- Tue Sep  2 12:30:37 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # ed96068e12e91a96cce772f069e479b6b84c238a
   virgil_build_id: '1453596'
 
-  # sqlbilling 20250827.4
-  # Wed Aug 27 12:20:55 UTC 2025 -- Wed Aug 27 22:20:55 AEST 2025
+  # sqlbilling 20250902.4
+  # Tue Sep  2 11:21:05 UTC 2025 -- Tue Sep  2 21:21:05 AEST 2025
   #
-  # Merged PR 39062: AddSQLReadOnlyIP CS02059342 US2
-  # 9cca6feec6c6ec334951947aea497e7a562acae9
-  sqlbilling_build_id: '1448506'
+  # Merged PR 39324: SQLBillingCS02053663.yml
+  # c15d07a7ac163f1fea29a6d7b2878f30c0a6d822
+  sqlbilling_build_id: '1453984'
