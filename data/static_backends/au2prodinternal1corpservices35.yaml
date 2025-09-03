@@ -297,7 +297,7 @@ knowledge.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /health
   encryption: false
   servers:
     - name: au2co-smcs-401
@@ -311,7 +311,7 @@ knowledge-client.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /health
   encryption: false
   servers:
     - name: au2co-smcs-401
@@ -325,7 +325,7 @@ knowledge-rest.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /health
   encryption: false
   servers:
     - name: au2co-smcs-401
