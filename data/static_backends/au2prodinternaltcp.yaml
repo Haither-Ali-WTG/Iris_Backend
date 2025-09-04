@@ -105,6 +105,7 @@ mockendpoints-api-test-wisegrid-net-443:
   clustered_instances: [au2prodinternaltcp]
   http_health_check:
     enabled: false
+  encryption: true
   default_server: inter 60s fall 3 rise 2
   servers:
     - name: au2wt-smep-401
