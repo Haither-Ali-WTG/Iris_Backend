@@ -47,6 +47,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
 
     sa1prodfrontend1testrdgproxy:
       # sa1-prod-frontend-1-test-rdg-proxy
@@ -69,3 +70,4 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod

@@ -250,6 +250,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-au2s3-3-wtg-ws
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
@@ -383,6 +384,7 @@ clustered_instances:
       websites_config: prodcwservices.yml
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
         - name: star-webcampaign-wisegrid-net
         - name: star-webprint-wisegrid-net
@@ -490,6 +492,7 @@ clustered_instances:
       websites_config: testcwservices.yml
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
         - name: star-webcampaign-wisegrid-net
         - name: star-webprint-wisegrid-net
@@ -554,6 +557,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -614,6 +618,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
