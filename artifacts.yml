@@ -7,16 +7,16 @@ variables:
   # c6e16601c2c183d5e9ced937f86ef55cdb2546ef
   dante_build_id: '1454730'
 
-  # virgil 20250903.2
-  # Wed Sep  3 01:37:14 UTC 2025 -- Wed Sep  3 11:37:14 AEST 2025
+  # virgil 20250904.2
+  # Thu Sep  4 00:57:31 UTC 2025 -- Thu Sep  4 10:57:31 AEST 2025
   #
-  # Merged PR 31189: Virgil - Change schema to include service expiry and tag
-  # ebc8e4d2f739fa37414d4b388b73f6c008af5655
-  virgil_build_id: '1454583'
+  # Merged PR 39401: au2-apex31 replacement for RMA
+  # eb9c245568ce24ae0a67b3b2cd4648c72be4c08a
+  virgil_build_id: '1455532'
 
-  # sqlbilling 20250902.4
-  # Tue Sep  2 11:21:05 UTC 2025 -- Tue Sep  2 21:21:05 AEST 2025
+  # sqlbilling 20250903.2
+  # Wed Sep  3 13:49:23 UTC 2025 -- Wed Sep  3 23:49:23 AEST 2025
   #
-  # Merged PR 39324: SQLBillingCS02053663.yml
-  # c15d07a7ac163f1fea29a6d7b2878f30c0a6d822
-  sqlbilling_build_id: '1453984'
+  # Merged PR 39389: AddSQLReadOnlyIP CS02066095  DE1
+  # 8d65730846ca640f8065bc36cb708aae5ba64eb9
+  sqlbilling_build_id: '1455103'
