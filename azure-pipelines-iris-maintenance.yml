@@ -9,15 +9,22 @@ trigger: none
 
 schedules:
   - cron: "0 0 * * Fri"
-    # Sand cluster maintenance at 10am or 11am Sydney Time every Friday
-    displayName: "Sand cluster maintenance"
+    # AU2 sand cluster maintenance at 10am or 11am Sydney Time every Friday
+    displayName: "AU2 sand cluster maintenance"
     always: true
     branches:
       include:
         - master
   - cron: "0 0 * * Sun"
-    # Prod cluster maintenance at 10am or 11am Sydney Time every Sunday
-    displayName: "Prod cluster maintenance"
+    # AU2 prod cluster maintenance at 10am or 11am Sydney Time every Sunday
+    displayName: "AU2 prod cluster maintenance"
+    always: true
+    branches:
+      include:
+        - master
+  - cron: "0 21 * * Sat"
+    # DE1 and US2 prod cluster maintenance at 7am or 8am Sydney Time every Sunday
+    displayName: "DE1 and US2 prod cluster maintenance"
     always: true
     branches:
       include:
@@ -166,10 +173,14 @@ jobs:
 
       - script: |
           echo "Running $(Build.CronSchedule.DisplayName)"
-          if [ "$(Build.CronSchedule.DisplayName)" = "Sand cluster maintenance" ]; then
+          if [ "$(Build.CronSchedule.DisplayName)" = "AU2 sand cluster maintenance" ]; then
             echo "##vso[task.setvariable variable=au2-sand-internal-1_enabled]enabled"
-          elif [ "$(Build.CronSchedule.DisplayName)" = "Prod cluster maintenance" ]; then
+          elif [ "$(Build.CronSchedule.DisplayName)" = "AU2 prod cluster maintenance" ]; then
             echo "##vso[task.setvariable variable=au2-prod-internal-1_enabled]enabled"
+            echo "##vso[task.setvariable variable=trigger_next_enabled]enabled"
+          elif [ "$(Build.CronSchedule.DisplayName)" = "DE1 and US2 prod cluster maintenance" ]; then
+            echo "##vso[task.setvariable variable=de1-prod-internal-1_enabled]enabled"
+            echo "##vso[task.setvariable variable=us2-corp-internal-1_enabled]enabled"
             echo "##vso[task.setvariable variable=trigger_next_enabled]enabled"
           fi
         displayName: 'Set variable for scheduled run'
