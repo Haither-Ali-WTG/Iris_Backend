@@ -557,7 +557,7 @@ proget.sand.wtg.zone:
   http_health_check:
     enabled: true
     http_path: /nuget/Gallery/v3/index.json
-    check_expect: 200
+    check_expect: '200'
   encryption: false
   servers:
     - name: au2sp-sprg-401
