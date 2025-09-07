@@ -27,6 +27,14 @@ wtg_idp_account_path:
     - path -i /account
     - path_beg -i /account/
 
+wtg_idp_s2s_path:
+  description: |-
+    Wisetech IDP path based routing
+    see https://dev.azure.com/WTGEngineeringOps/EngineeringOps-wiki/_wiki/wikis/EngineeringOps-wiki.wiki/53/idp-design
+  tests:
+    - path -i /s2s
+    - path_beg -i /s2s/
+
 app_borderwise_com:
   description: |-
     hostnames for production Borderwise App

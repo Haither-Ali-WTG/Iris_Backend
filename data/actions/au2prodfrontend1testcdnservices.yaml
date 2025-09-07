@@ -5,7 +5,7 @@ wtg_idp_redirect:
     see https://dev.azure.com/WTGEngineeringOps/EngineeringOps-wiki/_wiki/wikis/EngineeringOps-wiki.wiki/53/idp-design
   order: 79
   actions:
-    - redirect location /login if staging_identity_wisetechglobal_com !wtg_idp_login_path !wtg_idp_account_path
+    - redirect location /login if staging_identity_wisetechglobal_com !wtg_idp_login_path !wtg_idp_account_path !wtg_idp_s2s_path
 
 wtg_idp_backend:
   description: |-
@@ -16,6 +16,9 @@ wtg_idp_backend:
     - >-
       use_backend staging-au_identity_wisetechglobal_com-account if
       staging_identity_wisetechglobal_com wtg_idp_account_path
+    - >-
+      use_backend staging-au_identity_wisetechglobal_com-s2s if
+      staging_identity_wisetechglobal_com wtg_idp_s2s_path
 
 cww_nonprd_backend:
   description: |-

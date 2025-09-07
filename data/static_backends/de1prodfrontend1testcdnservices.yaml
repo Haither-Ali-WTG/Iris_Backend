@@ -45,3 +45,16 @@ staging-de.identity.wisetechglobal.com-account:
     cookie ISA insert indirect nocache dynamic
     server de1wt-sidi-501a 10.3.139.11:3003 check ssl
     server de1wt-sidi-501b 10.3.139.12:3003 check ssl
+
+staging-de.identity.wisetechglobal.com-s2s:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  full_override: |
+    backend staging-de_identity_wisetechglobal_com-s2s
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /s2s(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /s2s
+    cookie ISS insert indirect nocache dynamic
+    server de1wt-sidi-501a 10.3.139.11:3005 check ssl
+    server de1wt-sidi-501b 10.3.139.12:3005 check ssl
+
