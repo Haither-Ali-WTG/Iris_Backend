@@ -15,13 +15,6 @@ wtg_idp_backend:
     - use_backend au_identity_wisetechglobal_com-login if identity_wisetechglobal_com wtg_idp_login_path
     - use_backend au_identity_wisetechglobal_com-account if identity_wisetechglobal_com wtg_idp_account_path
 
-wtg_filedrop_backend:
-  description: |-
-    Direct requests for WTG FileDrop hostnames to the FileDrop backend
-  order: 80
-  actions:
-    - use_backend filedrop.wisetechglobal.com if star_wisetechglobal_com
-
 cww_backend:
   description: |-
     Direct requests for CargoWise Web to the CWW catchall backend
