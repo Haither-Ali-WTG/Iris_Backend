@@ -1,0 +1,18 @@
+---
+ssl_redirects:
+  description: |-
+    Do SSL redirects for Pierbridge domains; not all subdomains need SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if qa_domains !{ ssl_fc }
+    - redirect scheme https if sandbox_domains !{ ssl_fc }
+    - redirect scheme https if production_domains !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend hubcappqa_pierbridge_net if qa_domains
+    - use_backend hubcappsandbox_pierbridge_net if sandbox_domains
+    - use_backend hubcappprod_pierbridge_net if production_domains

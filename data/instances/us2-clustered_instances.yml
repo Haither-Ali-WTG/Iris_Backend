@@ -541,3 +541,40 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    us2prodfrontend1pierbridgehubcapp:
+      # Pierbridge instance for Hubcapp product
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2031]
+          ssl: [2032]
+      stats:
+        ports:
+          web: 2033
+          socket: 2034
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-transtream-com
+          cms_resource_group: RG-US-Prod
+        - name: star-transtreamqa-com
+          cms_resource_group: RG-US-Prod
+        - name: star-transtreamxb-com
+          cms_resource_group: RG-US-Prod
+        - name: star-logistyxtme-com
+          cms_resource_group: RG-US-Prod
+        - name: star-logistyxtmeqa-com
+          cms_resource_group: RG-US-Prod
+        - name: star-logistyxtmexb-com
+          cms_resource_group: RG-US-Prod
+        - name: star-sendproenterpris-com  # This is how it's spelled in RG-US-Prod
+          cms_resource_group: RG-US-Prod
+        - name: star-sendproenterpriseqa-com
+          cms_resource_group: RG-US-Prod
+        - name: star-sendproenterprisexb-com
+          cms_resource_group: RG-US-Prod
+      cipher:
+        profiles:
+          - best_practice_2023

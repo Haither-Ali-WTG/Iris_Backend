@@ -1,0 +1,45 @@
+---
+hubcappqa.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridgehubcapp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-hc01q
+      ip: 10.4.178.105
+      port: 80
+    - name: chg02w9-hc02q
+      ip: 10.4.178.106
+      port: 80
+
+hubcappsandbox.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridgehubcapp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg03w9-hc010xb
+      ip: 10.4.178.195
+      port: 80
+
+hubcappprod.pierbridge.net:
+  clustered_instances: [us2prodfrontend1pierbridgehubcapp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: chg01w9-hc01p
+      ip: 10.4.178.111
+      port: 80
+    - name: chg02w9-hc02p
+      ip: 10.4.178.112
+      port: 80
+    - name: chg03w9-hc03p
+      ip: 10.4.178.153
+      port: 80
+    - name: chg04w9-hc04p
+      ip: 10.4.178.154
+      port: 80
+    - name: chg05w9-hc05p
+      ip: 10.4.178.155
+      port: 80
+    - name: chg06w9-hc06p
+      ip: 10.4.178.156
+      port: 80
