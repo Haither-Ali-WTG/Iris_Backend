@@ -7,16 +7,16 @@ variables:
   # 3f89d5ada05813123dcd1a5acff0af56d69d44ec
   dante_build_id: '1455592'
 
-  # virgil 20250904.2
-  # Thu Sep  4 00:57:31 UTC 2025 -- Thu Sep  4 10:57:31 AEST 2025
+  # virgil 20250908.6
+  # Mon Sep  8 01:33:41 UTC 2025 -- Mon Sep  8 11:33:41 AEST 2025
   #
-  # Merged PR 39401: au2-apex31 replacement for RMA
-  # eb9c245568ce24ae0a67b3b2cd4648c72be4c08a
-  virgil_build_id: '1455532'
+  # Merged PR 39474: Upgrading DE haproxy to 24.04
+  # 6aead1ac4272e93b3dc96e94cb711ebd45253a02
+  virgil_build_id: '1458882'
 
-  # sqlbilling 20250903.2
-  # Wed Sep  3 13:49:23 UTC 2025 -- Wed Sep  3 23:49:23 AEST 2025
+  # sqlbilling 20250905.2
+  # Fri Sep  5 09:08:37 UTC 2025 -- Fri Sep  5 19:08:37 AEST 2025
   #
-  # Merged PR 39389: AddSQLReadOnlyIP CS02066095  DE1
-  # 8d65730846ca640f8065bc36cb708aae5ba64eb9
-  sqlbilling_build_id: '1455103'
+  # Merged PR 39470: RemoveSQLReadOnlyIPs CS02068241 AU2
+  # 1e9736c0cff27e76b69a1bf2e1eebb647ec85194
+  sqlbilling_build_id: '1456798'
