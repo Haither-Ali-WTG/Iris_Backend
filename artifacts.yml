@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250909.2
-  # Tue Sep  9 04:03:01 UTC 2025 -- Tue Sep  9 14:03:01 AEST 2025
+  # Dante Build Artifact 20250910.1
+  # Tue Sep  9 23:22:49 UTC 2025 -- Wed Sep 10 09:22:49 AEST 2025
   #
-  # Merge pull request 39548 from dante_artifact_upgrade into master
-  # d4fd2a6f9330c568ed46a1ec281dc2f9415fb3bb
-  dante_build_id: '1459978'
+  # Merged PR 39567: feat: remove the filebeat installations
+  # b24f90a1ff447bcd21c4f78ca91c864707e58f15
+  dante_build_id: '1460707'
 
   # virgil 20250909.10
   # Tue Sep  9 03:22:48 UTC 2025 -- Tue Sep  9 13:22:48 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 75e1abfb7ca9024d9f6700dfc401e2f403c69da7
   virgil_build_id: '1459926'
 
-  # sqlbilling 20250909.2
-  # Mon Sep  8 14:51:00 UTC 2025 -- Tue Sep  9 00:51:00 AEST 2025
+  # sqlbilling 20250909.5
+  # Tue Sep  9 11:17:39 UTC 2025 -- Tue Sep  9 21:17:39 AEST 2025
   #
-  # Merged PR 39506: SQLBillingADDCS02070027.yml
-  # d84e73a8d6043afb3b7907a2b157e199270a9c97
-  sqlbilling_build_id: '1459384'
+  # Merged PR 39574: SQLBillingAddCS02071068.yml
+  # 0733c7041943e6e7c06f976491ec9b0cb577fd5c
+  sqlbilling_build_id: '1460287'
