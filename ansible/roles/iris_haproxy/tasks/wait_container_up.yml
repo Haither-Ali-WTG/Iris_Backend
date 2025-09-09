@@ -1,5 +1,5 @@
 ---
-- name: Pause for 5 seconds brfore check
+- name: Pause for 5 seconds before check
   ansible.builtin.pause:
     seconds: 5
 
