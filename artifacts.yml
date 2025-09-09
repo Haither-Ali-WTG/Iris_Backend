@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250909.1
-  # Tue Sep  9 00:02:49 UTC 2025 -- Tue Sep  9 10:02:49 AEST 2025
+  # Dante Build Artifact 20250909.2
+  # Tue Sep  9 04:03:01 UTC 2025 -- Tue Sep  9 14:03:01 AEST 2025
   #
-  # Merge pull request 39520 from dante_artifact_upgrade into master
-  # c4c62f4713484fc33c186adbf5e60d9bada73cb4
-  dante_build_id: '1459736'
+  # Merge pull request 39548 from dante_artifact_upgrade into master
+  # d4fd2a6f9330c568ed46a1ec281dc2f9415fb3bb
+  dante_build_id: '1459978'
 
-  # virgil 20250909.4
-  # Mon Sep  8 23:25:51 UTC 2025 -- Tue Sep  9 09:25:51 AEST 2025
+  # virgil 20250909.10
+  # Tue Sep  9 03:22:48 UTC 2025 -- Tue Sep  9 13:22:48 AEST 2025
   #
-  # Merge pull request 39508 from virgil_python_upgrade into master
-  # a9b5a7dc8a397adfb0d5ab1f9d13e41c2e41f9be
-  virgil_build_id: '1459694'
+  # Merged PR 39517: Add pod 4 to fabric (prep for CS02068070)
+  # 75e1abfb7ca9024d9f6700dfc401e2f403c69da7
+  virgil_build_id: '1459926'
 
   # sqlbilling 20250909.2
   # Mon Sep  8 14:51:00 UTC 2025 -- Tue Sep  9 00:51:00 AEST 2025
