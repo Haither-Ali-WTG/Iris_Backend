@@ -517,4 +517,3 @@ au2wpreadonly450l1-wisegrid-net:
     - name: au2wpreadonly450l1
       ip: 10.2.134.213
       port: 1433
-
