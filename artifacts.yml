@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250908.2
-  # Mon Sep  8 04:06:10 UTC 2025 -- Mon Sep  8 14:06:10 AEST 2025
+  # Dante Build Artifact 20250909.1
+  # Tue Sep  9 00:02:49 UTC 2025 -- Tue Sep  9 10:02:49 AEST 2025
   #
-  # Merged PR 39477: Unified server_loadbalancer group for dante run
-  # bf941529bbfd9167b93f4d2812644e7fe69e5ca0
-  dante_build_id: '1459001'
+  # Merge pull request 39520 from dante_artifact_upgrade into master
+  # c4c62f4713484fc33c186adbf5e60d9bada73cb4
+  dante_build_id: '1459736'
 
-  # virgil 20250908.6
-  # Mon Sep  8 01:33:41 UTC 2025 -- Mon Sep  8 11:33:41 AEST 2025
+  # virgil 20250909.4
+  # Mon Sep  8 23:25:51 UTC 2025 -- Tue Sep  9 09:25:51 AEST 2025
   #
-  # Merged PR 39474: Upgrading DE haproxy to 24.04
-  # 6aead1ac4272e93b3dc96e94cb711ebd45253a02
-  virgil_build_id: '1458882'
+  # Merge pull request 39508 from virgil_python_upgrade into master
+  # a9b5a7dc8a397adfb0d5ab1f9d13e41c2e41f9be
+  virgil_build_id: '1459694'
 
-  # sqlbilling 20250905.2
-  # Fri Sep  5 09:08:37 UTC 2025 -- Fri Sep  5 19:08:37 AEST 2025
+  # sqlbilling 20250909.2
+  # Mon Sep  8 14:51:00 UTC 2025 -- Tue Sep  9 00:51:00 AEST 2025
   #
-  # Merged PR 39470: RemoveSQLReadOnlyIPs CS02068241 AU2
-  # 1e9736c0cff27e76b69a1bf2e1eebb647ec85194
-  sqlbilling_build_id: '1456798'
+  # Merged PR 39506: SQLBillingADDCS02070027.yml
+  # d84e73a8d6043afb3b7907a2b157e199270a9c97
+  sqlbilling_build_id: '1459384'
