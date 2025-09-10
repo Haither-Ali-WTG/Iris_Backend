@@ -7,12 +7,12 @@ variables:
   # b24f90a1ff447bcd21c4f78ca91c864707e58f15
   dante_build_id: '1460707'
 
-  # virgil 20250909.10
-  # Tue Sep  9 03:22:48 UTC 2025 -- Tue Sep  9 13:22:48 AEST 2025
+  # virgil 20250910.2
+  # Wed Sep 10 02:09:43 UTC 2025 -- Wed Sep 10 12:09:43 AEST 2025
   #
-  # Merged PR 39517: Add pod 4 to fabric (prep for CS02068070)
-  # 75e1abfb7ca9024d9f6700dfc401e2f403c69da7
-  virgil_build_id: '1459926'
+  # Merged PR 39579: CS02068070 - Add three C43s to US2 pod 4
+  # 1bfb413b90293b5d67c9d788c9b7ff890475ed29
+  virgil_build_id: '1460869'
 
   # sqlbilling 20250909.5
   # Tue Sep  9 11:17:39 UTC 2025 -- Tue Sep  9 21:17:39 AEST 2025
