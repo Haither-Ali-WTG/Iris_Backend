@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250910.1
-  # Tue Sep  9 23:22:49 UTC 2025 -- Wed Sep 10 09:22:49 AEST 2025
+  # Dante Build Artifact 20250910.2
+  # Wed Sep 10 06:41:21 UTC 2025 -- Wed Sep 10 16:41:21 AEST 2025
   #
-  # Merged PR 39567: feat: remove the filebeat installations
-  # b24f90a1ff447bcd21c4f78ca91c864707e58f15
-  dante_build_id: '1460707'
+  # Merge pull request 39599 from dante_artifact_upgrade into master
+  # 573ca52e69e6248d4d4c79598964cb508e6084a7
+  dante_build_id: '1461074'
 
   # virgil 20250910.2
   # Wed Sep 10 02:09:43 UTC 2025 -- Wed Sep 10 12:09:43 AEST 2025
