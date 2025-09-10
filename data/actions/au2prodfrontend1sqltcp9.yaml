@@ -76,5 +76,5 @@ sql_backends_prod:
     - use_backend au2wpreadonly440l1-wisegrid-net if { dst_port 6051 }
     - use_backend au2wpreadonly441l1-wisegrid-net if { dst_port 6052 }
     - use_backend au2wpreadonly442l1-wisegrid-net if { dst_port 6053 }
+    - use_backend au2wpreadonly449l1-wisegrid-net if { dst_port 6055 }
     - use_backend au2wpreadonly450l1-wisegrid-net if { dst_port 6056 }
-    - use_backend au2wpreadonly460l1-wisegrid-net if { dst_port 6055 }
