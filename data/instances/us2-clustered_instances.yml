@@ -255,8 +255,11 @@ clustered_instances:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: aetnatracking_com
@@ -276,6 +279,8 @@ clustered_instances:
         - name: neo_delmarcargo_com
           cms_resource_group: RG-US-Prod
         - name: neo_eworldplus_com
+          cms_resource_group: RG-US-Prod
+        - name: portals_extralogistics_com
           cms_resource_group: RG-US-Prod
         - name: powerview_miq_com
           cms_resource_group: RG-US-Prod
@@ -368,8 +373,11 @@ clustered_instances:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
       cipher:
