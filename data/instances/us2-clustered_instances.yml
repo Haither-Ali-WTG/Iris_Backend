@@ -255,8 +255,11 @@ clustered_instances:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: aetnatracking_com
@@ -370,8 +373,11 @@ clustered_instances:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
       cipher:
