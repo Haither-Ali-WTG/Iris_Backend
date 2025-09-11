@@ -33,6 +33,7 @@ custom_url_actions:
   order: 80
   actions:
     - use_backend abwddq_webtracker_wisegrid_net if { hdr(host),field(1,:) -i shipping.absolutewl.com }
+    - use_backend afcatl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i track.rlglobal.com }
     - use_backend afouyr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.approvedforwarders.com }
     - use_backend aiiiad_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackschott.airschott.com }
     - use_backend ar2nyc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i atrac.ariesgl.com }
