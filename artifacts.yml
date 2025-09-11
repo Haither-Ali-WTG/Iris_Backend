@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250911.2
-  # Thu Sep 11 01:01:57 UTC 2025 -- Thu Sep 11 11:01:57 AEST 2025
+  # Dante Build Artifact 20250911.3
+  # Thu Sep 11 06:41:18 UTC 2025 -- Thu Sep 11 16:41:18 AEST 2025
   #
-  # Merge pull request 39640 from dante_artifact_upgrade into master
-  # e9df6821f3a8fd5fe75bf471439e0c6b30d81b7c
-  dante_build_id: '1461752'
+  # Merge pull request 39658 from dante_artifact_upgrade into master
+  # ae7bbfa58c4c618425fd069ffc04cf6f2bde9f62
+  dante_build_id: '1462021'
 
-  # virgil 20250911.9
-  # Thu Sep 11 00:05:31 UTC 2025 -- Thu Sep 11 10:05:31 AEST 2025
+  # virgil 20250911.11
+  # Thu Sep 11 06:04:37 UTC 2025 -- Thu Sep 11 16:04:37 AEST 2025
   #
-  # Merged PR 39624: CS02068070 - Add next three C43s
-  # 8f55c0bcab10200c5b5b55050f19b4ecc61ccbcc
-  virgil_build_id: '1461687'
+  # Merged PR 39607: Updated domains.yaml - add GEODNS for OTEL PROD
+  # 0290753ebaaa0d24404b54c5c7dfc094329f35db
+  virgil_build_id: '1461981'
 
   # sqlbilling 20250910.4
   # Wed Sep 10 09:38:35 UTC 2025 -- Wed Sep 10 19:38:35 AEST 2025
