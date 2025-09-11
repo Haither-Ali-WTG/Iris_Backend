@@ -95,3 +95,18 @@ de1wca.wisegrid.net:
     - name: de1wp-swfe-405
       ip: 10.3.69.23
       port: 80
+
+portal-de_cwconnector_wisegrid_net:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: PCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-siis-401a
+      ip: 10.3.69.27
+      port: 5443
+    - name: de1wp-siis-401b
+      ip: 10.3.69.28
+      port: 5443

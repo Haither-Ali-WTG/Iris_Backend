@@ -107,6 +107,8 @@ clustered_instances:
         - name: star-urs-wisegrid-net
         - name: star-de1s3-3-wtg-ws
           cms_resource_group: RG-EU-Prod
+        - name: star-cwconnector-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -240,6 +242,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
+        - name: star-cwconnector-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

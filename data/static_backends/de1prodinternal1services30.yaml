@@ -173,3 +173,51 @@ datafactory.urs.wisegrid.net:
     - name: de1wp-surf-401
       ip: 10.3.152.11
       port: 80
+
+portalapi-de1.cwconnector.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  cookie:
+    name: PACWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1wp-scwi-403a
+      ip: 10.3.88.149
+      port: 5443
+    - name: de1wp-scwi-403b
+      ip: 10.3.88.150
+      port: 5443
+
+secretapi-de1.cwconnector.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  cookie:
+    name: PSCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1wp-scwi-404a
+      ip: 10.3.251.11
+      port: 5443
+    - name: de1wp-scwi-404b
+      ip: 10.3.251.12
+      port: 5443
+
+runtimeapi-de1.cwconnector.wisegrid.net:
+  clustered_instances: [de1prodinternal1services30]
+  cookie:
+    name: PRCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1wp-scwi-405a
+      ip: 10.3.88.155
+      port: 5443
+    - name: de1wp-scwi-405b
+      ip: 10.3.88.156
+      port: 5443

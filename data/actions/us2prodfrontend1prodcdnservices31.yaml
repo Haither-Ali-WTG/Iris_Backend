@@ -28,3 +28,10 @@ app_borderwise_backend:
   order: 80
   actions:
     - use_backend app-us_borderwise_com if app_borderwise_com
+
+portal_cwconnector_backend:
+  description: |-
+    Direct regional requests for portal.cwconnector.wisegrid.net to the portal CWConnector backend
+  order: 80
+  actions:
+    - use_backend portal-us_cwconnector_wisegrid_net if portal_cwconnector_wisegrid_net

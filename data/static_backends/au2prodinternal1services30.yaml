@@ -49,3 +49,51 @@ compliance-test.borderwise.com:
     - name: au2wp-sdkr-2
       ip: 10.2.67.112
       port: 40335
+
+portalapi-au2.cwconnector.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: PACWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2wp-scwi-403a
+      ip: 10.2.88.149
+      port: 5443
+    - name: au2wp-scwi-403b
+      ip: 10.2.88.150
+      port: 5443
+
+secretapi-au2.cwconnector.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: PSCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2wp-scwi-404a
+      ip: 10.2.251.11
+      port: 5443
+    - name: au2wp-scwi-404b
+      ip: 10.2.251.12
+      port: 5443
+
+runtimeapi-au2.cwconnector.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: PRCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2wp-scwi-405a
+      ip: 10.2.88.155
+      port: 5443
+    - name: au2wp-scwi-405b
+      ip: 10.2.88.156
+      port: 5443
