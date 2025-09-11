@@ -286,6 +286,8 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: shipping_absolutewl_com
           cms_resource_group: RG-US-Prod
+        - name: track_rlglobal_com
+          cms_resource_group: RG-US-Prod
         - name: tracking_albawheelsup_com
           cms_resource_group: RG-US-Prod
         - name: tracking_approvedforwarders_com
