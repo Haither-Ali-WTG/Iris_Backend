@@ -111,7 +111,7 @@ chiwca.wisegrid.net:
       ip: 10.2.69.102
       port: 80
 
-portal-us_cwconnector_wisegrid_net:
+portal-us.cwconnector.wisegrid.net:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   cookie:
     name: PCWC

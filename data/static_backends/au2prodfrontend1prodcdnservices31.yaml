@@ -111,7 +111,7 @@ sydwca.wisegrid.net:
       ip: 10.2.69.52
       port: 80
 
-portal-au_cwconnector_wisegrid_net:
+portal-au.cwconnector.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: PCWC

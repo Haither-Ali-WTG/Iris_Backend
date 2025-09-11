@@ -96,7 +96,7 @@ de1wca.wisegrid.net:
       ip: 10.3.69.23
       port: 80
 
-portal-de_cwconnector_wisegrid_net:
+portal-de.cwconnector.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   cookie:
     name: PCWC
