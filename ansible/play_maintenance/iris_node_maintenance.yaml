@@ -4,6 +4,15 @@
   gather_facts: no
   serial: 1
   tasks:
+    - name: Set fleet region for target_system_name
+      set_fact:
+        fleet_region: "{{ dc_map[dc] }}"
+      vars:
+        dc_map:
+          AU2: Apac
+          DE1: Emea
+          US2: Amer
+
     - name: Calculate BMC IP
       set_fact:
         bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
@@ -46,7 +55,7 @@
             name: wtg.monitoring_agents.elastic_agent
             tasks_from: unroll_agents.yml
           vars:
-            target_system_name: "fleetSystemApacProd1"
+            target_system_name: "fleetSystem{{ fleet_region }}Prod1"
 
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
@@ -83,7 +92,7 @@
         name: wtg.monitoring_agents.elastic_agent
       vars:
         policy_name: "wtg-linux-haproxy"
-        target_system_name: "fleetSystemApacProd1"
+        target_system_name: "fleetSystem{{ fleet_region }}Prod1"
 
     - name: Wait for Iris run - timeout 60mins, poll every 10s
       wait_for:
