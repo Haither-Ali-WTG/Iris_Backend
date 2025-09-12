@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250912.4
-  # Fri Sep 12 03:15:51 UTC 2025 -- Fri Sep 12 13:15:51 AEST 2025
+  # Dante Build Artifact 20250912.5
+  # Fri Sep 12 08:41:16 UTC 2025 -- Fri Sep 12 18:41:16 AEST 2025
   #
-  # Merged PR 39704: Monitor sqlbilling repo on main branch
-  # fc44f63873f731e13b52c964361e5974b0e29c99
-  dante_build_id: '1462869'
+  # Merge pull request 39748 from dante_artifact_upgrade into master
+  # aa1424aa5d5c8816f72e309c25c158c38f92ecb1
+  dante_build_id: '1463102'
 
-  # virgil 20250912.14
-  # Fri Sep 12 01:59:41 UTC 2025 -- Fri Sep 12 11:59:41 AEST 2025
+  # virgil 20250912.16
+  # Fri Sep 12 08:01:14 UTC 2025 -- Fri Sep 12 18:01:14 AEST 2025
   #
-  # Merged PR 39713: Updated us2lbl00348 to Ubuntu 24.04
-  # 816e55b68aa4a0dc66e5f7b4d49ee9d1a4a3f78c
-  virgil_build_id: '1462769'
+  # Merged PR 39747: Updated DNS for GS
+  # 1cf5d671a50b8f5a28b9206e58d240606f4a2c09
+  virgil_build_id: '1463076'
 
-  # sqlbilling 20250912.3
-  # Fri Sep 12 05:49:15 UTC 2025 -- Fri Sep 12 15:49:15 AEST 2025
+  # sqlbilling 20250912.6
+  # Fri Sep 12 07:52:07 UTC 2025 -- Fri Sep 12 17:52:07 AEST 2025
   #
-  # Merged PR 39718: Update SQL readonly with IP
-  # 4d9957d67cabcb3c83a4ac4c1e483bb6cc6624e7
-  sqlbilling_build_id: '1462980'
+  # Merged PR 39744: SQLBillingAddCS02074948.yml
+  # 54c481567ad1f9e4d09f70c065acca67755c21f9
+  sqlbilling_build_id: '1463061'
