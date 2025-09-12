@@ -68,6 +68,18 @@ au.identity.wisetechglobal.com-account:
     server au2wp-sidi-501a 10.2.143.11:3003 check ssl
     server au2wp-sidi-501b 10.2.143.12:3003 check ssl
 
+au.identity.wisetechglobal.com-s2s:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend au_identity_wisetechglobal_com-s2s
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /s2s(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /s2s
+    cookie ISS insert indirect nocache dynamic
+    server au2wp-sidi-501a 10.2.143.11:3005 check ssl
+    server au2wp-sidi-501b 10.2.143.12:3005 check ssl
+
 filedrop.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:

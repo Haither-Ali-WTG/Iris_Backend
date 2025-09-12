@@ -53,6 +53,18 @@ de.identity.wisetechglobal.com-account:
     server de1wp-sidi-501a 10.3.143.11:3003 check ssl
     server de1wp-sidi-501b 10.3.143.12:3003 check ssl
 
+de.identity.wisetechglobal.com-s2s:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  full_override: |
+    backend de_identity_wisetechglobal_com-s2s
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    http-request replace-path /s2s(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /s2s
+    cookie ISS insert indirect nocache dynamic
+    server de1wp-sidi-501a 10.3.143.11:3005 check ssl
+    server de1wp-sidi-501b 10.3.143.12:3005 check ssl
+
 filedropeu.wisetechglobal.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   cookie:
