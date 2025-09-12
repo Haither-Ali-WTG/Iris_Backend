@@ -24,3 +24,51 @@ us2s3-3-secondary:
     acl write_methods method DELETE
     http-request deny if write_methods
     server au2nas03-s3-01.wtg.zone 10.2.31.64:443 check check-ssl ssl verify none
+
+portalapi-us2.cwconnector.wisegrid.net:
+  clustered_instances: [us2prodinternal1services30]
+  cookie:
+    name: PACWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: us2wp-scwi-403a
+      ip: 10.4.88.149
+      port: 5443
+    - name: us2wp-scwi-403b
+      ip: 10.4.88.150
+      port: 5443
+
+secretapi-us2.cwconnector.wisegrid.net:
+  clustered_instances: [us2prodinternal1services30]
+  cookie:
+    name: PSCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: us2wp-scwi-404a
+      ip: 10.4.251.11
+      port: 5443
+    - name: us2wp-scwi-404b
+      ip: 10.4.251.12
+      port: 5443
+
+runtimeapi-us2.cwconnector.wisegrid.net:
+  clustered_instances: [us2prodinternal1services30]
+  cookie:
+    name: PRCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: us2wp-scwi-405a
+      ip: 10.4.88.155
+      port: 5443
+    - name: us2wp-scwi-405b
+      ip: 10.4.88.156
+      port: 5443

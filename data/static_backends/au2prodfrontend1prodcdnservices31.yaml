@@ -110,3 +110,18 @@ sydwca.wisegrid.net:
     - name: au2wp-swfe-404
       ip: 10.2.69.52
       port: 80
+
+portal-au.cwconnector.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: PCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: AU2WP-SIIS-406A
+      ip: 10.2.69.55
+      port: 5443
+    - name: AU2WP-SIIS-406B
+      ip: 10.2.69.56
+      port: 5443
