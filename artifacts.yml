@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250911.3
-  # Thu Sep 11 06:41:18 UTC 2025 -- Thu Sep 11 16:41:18 AEST 2025
+  # Dante Build Artifact 20250912.4
+  # Fri Sep 12 03:15:51 UTC 2025 -- Fri Sep 12 13:15:51 AEST 2025
   #
-  # Merge pull request 39658 from dante_artifact_upgrade into master
-  # ae7bbfa58c4c618425fd069ffc04cf6f2bde9f62
-  dante_build_id: '1462021'
+  # Merged PR 39704: Monitor sqlbilling repo on main branch
+  # fc44f63873f731e13b52c964361e5974b0e29c99
+  dante_build_id: '1462869'
 
-  # virgil 20250911.11
-  # Thu Sep 11 06:04:37 UTC 2025 -- Thu Sep 11 16:04:37 AEST 2025
+  # virgil 20250912.14
+  # Fri Sep 12 01:59:41 UTC 2025 -- Fri Sep 12 11:59:41 AEST 2025
   #
-  # Merged PR 39607: Updated domains.yaml - add GEODNS for OTEL PROD
-  # 0290753ebaaa0d24404b54c5c7dfc094329f35db
-  virgil_build_id: '1461981'
+  # Merged PR 39713: Updated us2lbl00348 to Ubuntu 24.04
+  # 816e55b68aa4a0dc66e5f7b4d49ee9d1a4a3f78c
+  virgil_build_id: '1462769'
 
-  # sqlbilling 20250910.4
-  # Wed Sep 10 09:38:35 UTC 2025 -- Wed Sep 10 19:38:35 AEST 2025
+  # sqlbilling 20250911.6
+  # Thu Sep 11 09:28:42 UTC 2025 -- Thu Sep 11 19:28:42 AEST 2025
   #
-  # Merged PR 39623: AddSQLReadOnlyIP CS02070643 US2
-  # 0316a7e55621ece8472156ffcfffea72491d773a
-  sqlbilling_build_id: '1461188'
+  # Merged PR 39676: AddSQLReadOnlyIP CS02070643 US2
+  # 6f2385135fd15364f97f206634ef1314102015db
+  sqlbilling_build_id: '1462132'
