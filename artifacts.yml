@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250914.1
-  # Sun Sep 14 02:01:31 UTC 2025 -- Sun Sep 14 12:01:31 AEST 2025
+  # Dante Build Artifact 20250915.2
+  # Mon Sep 15 01:21:09 UTC 2025 -- Mon Sep 15 11:21:09 AEST 2025
   #
-  # Merge pull request 39763 from dante_artifact_upgrade into master
-  # f24ba063f14e4d8996782179f387605c03d1dda5
-  dante_build_id: '1464438'
+  # Merge pull request 39799 from dante_artifact_upgrade into master
+  # 179daf5b6ef636a1a0f5591294cc9199d220abda
+  dante_build_id: '1465291'
 
-  # virgil 20250914.2
-  # Sun Sep 14 01:23:27 UTC 2025 -- Sun Sep 14 11:23:27 AEST 2025
+  # virgil 20250915.11
+  # Mon Sep 15 00:42:20 UTC 2025 -- Mon Sep 15 10:42:20 AEST 2025
   #
-  # Merged PR 39762: bugfix - otel collector DNS entry
-  # c0fa065cfd1e91efa7fc561c0937519704fa0b6b
-  virgil_build_id: '1464402'
+  # Merge pull request 39680 from virgil_python_upgrade into master
+  # 9baa02390072d3071e72505e2f7736e4d239ec83
+  virgil_build_id: '1465257'
 
   # sqlbilling 20250912.8
   # Fri Sep 12 12:35:03 UTC 2025 -- Fri Sep 12 22:35:03 AEST 2025
