@@ -447,3 +447,10 @@ containerchain_backend_selection:
   order: 85
   actions:
     - use_backend us8-wtg-cloud-us_containerchain_com       if us8-wtg-cloud-us_containerchain_com
+
+blume_nexus_restrict_ip:
+  description: |-
+    Restrict Blume Global Nexus repo to WTG IPs only
+  order: 86
+  actions:
+    - http-request deny if !wtg_src new-am-nexus_rez1_com
