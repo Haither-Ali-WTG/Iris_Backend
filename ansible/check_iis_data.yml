@@ -58,10 +58,7 @@
         name: collect_sites_from_weborc
       vars:
         upload_iis_data: false
-      when:
-        - not simulation
-        - target_dc == dc
-        - weborc_hostname | default('') | length > 0
+      when: weborc_hostname | default('') | length > 0
 
     - name: Download IIS sites from S3
       command: >-
