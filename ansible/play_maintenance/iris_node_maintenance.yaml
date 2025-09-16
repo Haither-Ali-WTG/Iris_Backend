@@ -82,6 +82,10 @@
         name: node_maintenance
         tasks_from: wait_rebuild_node.yml
 
+    - name: Manually gather only the hostname fact
+      setup:
+        filter: ansible_hostname
+
     - name: Install Telegraf
       include_role:
         name: telegraf_config
