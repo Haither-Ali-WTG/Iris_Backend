@@ -85,30 +85,6 @@ stats-uscloud-us2.wtg.zone:
       ip: 10.4.64.171
       port: 2039
 
-us2kvl-test.test.wisecloud.zone:
-  clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: false
-  cookie:
-    name: US2KVLTEST
-  servers:
-    - name: us2kvl00808.test.wisecloud.zone
-      ip: 10.4.128.29
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00809.test.wisecloud.zone
-      ip: 10.4.128.30
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00810.test.wisecloud.zone
-      ip: 10.4.128.31
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00811.test.wisecloud.zone
-      ip: 10.4.128.32
-      port: 8006
-      settings: check ssl verify none
-
 us2kvl-v0.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
