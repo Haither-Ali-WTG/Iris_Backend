@@ -53,7 +53,39 @@
       changed_when: true
       ignore_errors: yes
 
+    - name: Collect IIS sites from weborc
+      include_role:
+        name: collect_sites_from_weborc
+      vars:
+        upload_iis_data: false
+      when:
+        - not simulation
+        - target_dc == dc
+        - weborc_hostname | default('') | length > 0
+
+    - name: Download IIS sites from S3
+      command: >-
+        aws --endpoint-url=https://{{ s3_host }}
+        s3 cp --recursive
+        {{ s3_iris_bucket }}{{ target_dc }}-v2/
+        iis_sites_from_s3/
+      changed_when: true
+
+    - name: Check if IIS sites changed
+      command: >-
+        diff -r iis_sites_v2 iis_sites_from_s3
+      register: diff_iis_sites_output
+      changed_when: true
+      ignore_errors: yes
+
     - name: Trigger IRIS deployment pipeline
       include_role:
         name: trigger_iris_pipeline
-      when: diff_output.rc != 0
+      when: >-
+        ( diff_output.rc != 0 )
+        or
+        (
+          ( weborc_hostname | default('') | length > 0 )
+          and
+          ( diff_iis_sites_output.rc != 0 )
+        )
