@@ -1,0 +1,32 @@
+---
+- name: Collect sites data from weborc
+  command: >
+        python3 {{ playbook_dir }}/roles/collect_sites_from_weborc/files/collect_sites.py
+        --weborc_service {{ weborc_hostname }}
+        --output_path iis_sites_v2
+  register: collect_sites_output
+  delegate_to: localhost
+  when: weborc_hostname | default('') | length > 0
+
+- name: Output collected sites from weborc
+  debug:
+    msg: >-
+      collect_sites.py stdout:
+      {{ collect_sites_output.stdout | default('') }}
+      collect_sites.py stderr:
+      {{ collect_sites_output.stderr | default('') }}
+  when: collect_sites_output is not skipped
+
+- name: Upload collected sites data to S3
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp --recursive
+    iis_sites_v2/
+    {{ s3_iris_bucket }}{{ dc }}-v2/
+  changed_when: true
+  delegate_to: localhost
+  when:
+    - collect_sites_output is not skipped
+    - collect_sites_output is defined
+    - collect_sites_output.rc == 0
+    - upload_iis_data | default(true)
