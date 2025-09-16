@@ -7,12 +7,12 @@ variables:
   # c8287a2e94dbe1c4c3ce988b983aea7020ec374b
   dante_build_id: '1466133'
 
-  # virgil 20250916.2
-  # Mon Sep 15 22:26:22 UTC 2025 -- Tue Sep 16 08:26:22 AEST 2025
+  # virgil 20250916.5
+  # Tue Sep 16 00:16:17 UTC 2025 -- Tue Sep 16 10:16:17 AEST 2025
   #
-  # Merged PR 39846: Added C-01021 haproxy node
-  # a6f9f92f1ce630a22ca5e83db4e7076d372afd0a
-  virgil_build_id: '1466092'
+  # Merged PR 39859: Updated hardware for au2lbl01021
+  # 1d98f797a3959386b8fea653511c50fbeca6d339
+  virgil_build_id: '1466208'
 
   # sqlbilling 20250912.8
   # Fri Sep 12 12:35:03 UTC 2025 -- Fri Sep 12 22:35:03 AEST 2025
