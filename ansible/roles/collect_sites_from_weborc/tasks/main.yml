@@ -5,6 +5,7 @@
         --weborc_service {{ weborc_hostname }}
         --output_path iis_sites_v2
   register: collect_sites_output
+  changed_when: true
   delegate_to: localhost
   when: weborc_hostname | default('') | length > 0
 
