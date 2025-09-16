@@ -563,3 +563,18 @@ proget.sand.wtg.zone:
     - name: au2sp-sprg-401
       ip: 10.2.116.57
       port: 80
+
+portal-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  cookie:
+    name: PCWC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2sp-siis-402a
+      ip: 10.2.69.77
+      port: 5443
+    - name: au2sp-siis-402b
+      ip: 10.2.69.78
+      port: 5443
