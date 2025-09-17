@@ -130,6 +130,7 @@ portal-au.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+  encryption: true
   servers:
     - name: AU2WP-SIIS-406A
       ip: 10.2.69.55

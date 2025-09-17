@@ -32,7 +32,7 @@ portalapi-us2.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: us2wp-scwi-403a
       ip: 10.4.88.149
@@ -48,7 +48,7 @@ secretapi-us2.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: us2wp-scwi-404a
       ip: 10.4.251.11
@@ -64,7 +64,7 @@ runtimeapi-us2.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: us2wp-scwi-405a
       ip: 10.4.88.155
