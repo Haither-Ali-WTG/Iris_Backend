@@ -1132,3 +1132,8 @@ us8-wtg-cloud-us_containerchain_com:
   description: "wtg-cloud-us.containerchain.com"
   tests:
     - hdr(host) -i wtg-cloud-us.containerchain.com
+
+new-am-nexus_rez1_com:
+  description: "new-am-nexus.rez1.com"
+  tests:
+    - hdr(host) -i new-am-nexus.rez1.com
