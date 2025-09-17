@@ -138,7 +138,7 @@ stages:
                           -e="key_vault_name=$(key_vault_name)"
                           -e="target_dc=${{ run.target_dc }}"
                           -e="target_hall=${{ run.agent_hall }}"
-                          -e="weborc_hostname=$(weborc_hostname)"
+                          -e="weborc_hostname=${{ run.weborc_hostname }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         azure_devops_token: $(System.AccessToken)
