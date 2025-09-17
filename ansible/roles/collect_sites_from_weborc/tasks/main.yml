@@ -23,7 +23,7 @@
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp --recursive
     iis_sites_v2/
-    {{ s3_iris_bucket }}{{ dc }}-v2/
+    {{ s3_iris_bucket }}{{ target_dc }}-v2/
   changed_when: true
   delegate_to: localhost
   when:
