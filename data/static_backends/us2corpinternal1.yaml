@@ -580,6 +580,15 @@ us2prodinternal1services30.wtg.zone:
       ip: 10.4.83.26
       port: 2341
 
+usdocs.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2co-sdoc-601
+      ip: 10.4.67.116
+      port: 80
+
 wtg-sw.sand.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
