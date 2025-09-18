@@ -115,6 +115,7 @@ portal-de.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+  encryption: true
   servers:
     - name: de1wp-siis-401a
       ip: 10.3.69.27

@@ -181,7 +181,7 @@ portalapi-de1.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: de1wp-scwi-403a
       ip: 10.3.88.149
@@ -197,7 +197,7 @@ secretapi-de1.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: de1wp-scwi-404a
       ip: 10.3.251.11
@@ -213,7 +213,7 @@ runtimeapi-de1.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  encryption: false
+  encryption: true
   servers:
     - name: de1wp-scwi-405a
       ip: 10.3.88.155

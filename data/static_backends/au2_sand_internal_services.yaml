@@ -571,6 +571,7 @@ portal-staging-cwconnector.sand.wtg.zone:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+  encryption: true
   servers:
     - name: au2sp-siis-402a
       ip: 10.2.69.77

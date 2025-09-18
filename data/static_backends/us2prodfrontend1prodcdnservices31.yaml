@@ -130,6 +130,7 @@ portal-us.cwconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+  encryption: true
   servers:
     - name: us2wp-siis-401a
       ip: 10.4.66.27
