@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250916.2
-  # Tue Sep 16 01:01:36 UTC 2025 -- Tue Sep 16 11:01:36 AEST 2025
+  # Dante Build Artifact 20250918.3
+  # Thu Sep 18 04:21:33 UTC 2025 -- Thu Sep 18 14:21:33 AEST 2025
   #
-  # Merge pull request 39861 from dante_artifact_upgrade into master
-  # 13e896662557b00dd24c2915c28c15e8a7c9a776
-  dante_build_id: '1466251'
+  # Merge pull request 39948 from dante_artifact_upgrade into master
+  # a017416b6229f4d8313080041a3bb125a30b27e3
+  dante_build_id: '1468269'
 
-  # virgil 20250918.8
-  # Thu Sep 18 03:30:56 UTC 2025 -- Thu Sep 18 13:30:56 AEST 2025
+  # virgil 20250918.14
+  # Thu Sep 18 06:09:05 UTC 2025 -- Thu Sep 18 16:09:05 AEST 2025
   #
-  # Merged PR 39957: Add de1 and us2 s3-3 records and views to all regions
-  # 8507b4b00cec5a051fc687552bd1282e97b54d0b
-  virgil_build_id: '1468226'
+  # Merged PR 39972: Updating details for US DNS migration
+  # 394c4c31c5b960644e21ed0a93e16910bd7786fa
+  virgil_build_id: '1468375'
 
   # sqlbilling 20250918.2
   # Wed Sep 17 15:18:07 UTC 2025 -- Thu Sep 18 01:18:07 AEST 2025
