@@ -92,6 +92,12 @@ de1wcatoken.wisegrid.net:
     - name: de1wp-swfe-402
       ip: 10.3.69.20
       port: 80
+    - name: de1wp-swfe-403
+      ip: 10.3.69.21
+      port: 80
+    - name: de1wp-swfe-405
+      ip: 10.3.69.23
+      port: 80
 
 de1wca.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
@@ -101,6 +107,12 @@ de1wca.wisegrid.net:
     enabled: true
     http_path: /wtg/ready
   servers:
+    - name: de1wp-swfe-401
+      ip: 10.3.69.19
+      port: 80
+    - name: de1wp-swfe-402
+      ip: 10.3.69.20
+      port: 80
     - name: de1wp-swfe-403
       ip: 10.3.69.21
       port: 80
