@@ -83,6 +83,8 @@ clustered_instances:
         - name: star-testrig3-sand-wtg-zone
         - name: star-testrig-sand-wtg-zone
           cms_resource_group: RG-AU-Sand
+        - name: star-temp-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
         - name: star-bolero-sand-wtg-zone
         - name: star-cargowise-com
         - name: star-webprint-testrig-sand-wtg-zone
