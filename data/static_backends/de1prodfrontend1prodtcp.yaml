@@ -1,5 +1,5 @@
 ---
-sftp_urs_wisegrid_net:
+sftp.urs.wisegrid.net:
   clustered_instances: [de1prodfrontend1prodtcp]
   http_health_check:
     enabled: false
