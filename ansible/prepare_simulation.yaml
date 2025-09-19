@@ -22,5 +22,5 @@
         virgil_ssh_authorized_keys: >-
             {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
         simulation_proxy: "http://172.31.255.254:3128"
-        cpu: 4
-        ram: 8192
+        cpu: 16
+        ram: 32768
