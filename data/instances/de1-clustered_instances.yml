@@ -325,3 +325,5 @@ clustered_instances:
           web: 2066
           socket: 2067
       machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates: []
