@@ -1,0 +1,7 @@
+---
+sftp_urs_wisegrid_net_2032:
+  description: |-
+    Direct SFTP traffic to URS SFTP Server
+  order: 80
+  actions:
+    - use_backend sftp_urs_wisegrid_net if sftp_urs_wisegrid_net_2032

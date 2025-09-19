@@ -309,3 +309,19 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    de1prodfrontend1prodtcp:
+      # de1-prod-frontend-1-prod-tcp
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 2032    # sftp.urs.wisegrid.net
+      stats:
+        ports:
+          web: 2066
+          socket: 2067
+      machine_cluster: de1-prod-frontend-1
