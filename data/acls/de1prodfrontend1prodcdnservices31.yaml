@@ -53,3 +53,8 @@ portal_cwconnector_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -i portal.cwconnector.wisegrid.net
     - hdr(host),field(1,:) -i portal-de.cwconnector.wisegrid.net
+
+compliance_borderwise_com:
+  description: "compliance borderwise"
+  tests:
+    - hdr(host),field(1,:) -i compliance.borderwise.com

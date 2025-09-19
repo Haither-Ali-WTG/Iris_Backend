@@ -41,3 +41,10 @@ portal_cwconnector_backend:
   order: 80
   actions:
     - use_backend portal-au_cwconnector_wisegrid_net if portal_cwconnector_wisegrid_net
+
+compliance_borderwise_backend:
+  description: |-
+    Direct regional requests for compliance.borderwise.com to the compliance borderwise backend
+  order: 80
+  actions:
+    - use_backend compliance-au_borderwise_com if compliance_borderwise_com
