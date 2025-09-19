@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250919.1
-  # Thu Sep 18 16:41:14 UTC 2025 -- Fri Sep 19 02:41:14 AEST 2025
+  # Dante Build Artifact 20250919.3
+  # Fri Sep 19 00:37:36 UTC 2025 -- Fri Sep 19 10:37:36 AEST 2025
   #
-  # Merge pull request 39994 from dante_artifact_upgrade into master
-  # 6efe5190bc675e3abd5a151332fed00b20d46030
-  dante_build_id: '1468802'
+  # Merged PR 40008: Windows: Add skip undetected disks option
+  # 75a8e407a7d7230a906dbb4f2aa6c9c59d78c55c
+  dante_build_id: '1469141'
 
   # virgil 20250919.1
   # Thu Sep 18 16:04:02 UTC 2025 -- Fri Sep 19 02:04:02 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 3d851b82a0145f911b60369e7ce6963bcfe7bd54
   virgil_build_id: '1468774'
 
-  # sqlbilling 20250918.4
-  # Thu Sep 18 08:06:06 UTC 2025 -- Thu Sep 18 18:06:06 AEST 2025
+  # sqlbilling 20250919.2
+  # Fri Sep 19 05:17:20 UTC 2025 -- Fri Sep 19 15:17:20 AEST 2025
   #
-  # Merged PR 39971: SQLBillingAddCS02079808.yml
-  # 10926d1cb34f260c99de798e8204edc642b3b796
-  sqlbilling_build_id: '1468476'
+  # Merged PR 39991: SQLBillingAddCS02080589.yml
+  # 820f2e4ef9d26aa97b80ed75706b8927b13dc0c0
+  sqlbilling_build_id: '1469358'
