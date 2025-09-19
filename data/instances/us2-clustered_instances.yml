@@ -456,6 +456,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

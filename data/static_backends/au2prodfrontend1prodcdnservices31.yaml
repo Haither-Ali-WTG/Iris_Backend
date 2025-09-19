@@ -138,3 +138,19 @@ portal-au.cwconnector.wisegrid.net:
     - name: AU2WP-SIIS-406B
       ip: 10.2.69.56
       port: 5443
+
+compliance-au.borderwise.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: CMPA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: au2wp-sdkr-1
+      ip: 10.2.67.111
+      port: 50335
+    - name: au2wp-sdkr-2
+      ip: 10.2.67.112
+      port: 50335

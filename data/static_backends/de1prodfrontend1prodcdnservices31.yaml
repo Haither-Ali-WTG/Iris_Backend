@@ -123,3 +123,19 @@ portal-de.cwconnector.wisegrid.net:
     - name: de1wp-siis-401b
       ip: 10.3.69.28
       port: 5443
+
+compliance-de.borderwise.com:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: CMPD
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: de1wp-sdkr-1
+      ip: 10.3.67.111
+      port: 50335
+    - name: de1wp-sdkr-2
+      ip: 10.3.67.112
+      port: 50335
