@@ -90,6 +90,7 @@ star_sand_wtg_zone:
   description: "*.sand.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?sand\.wtg\.zone$
+    - hdr(host),field(1,:),lower -m reg -i ^([^\.]+\.)?temp\.sand\.wtg\.zone$
 
 talogy_src:
   description: source IP is Talogy (3rd party vendor external) CS01854184
