@@ -1,5 +1,7 @@
 /var/log/haproxy.log {
-    daily
+    su syslog syslog
+    hourly
+    size 50G
     missingok
     sharedscripts
     rotate 1

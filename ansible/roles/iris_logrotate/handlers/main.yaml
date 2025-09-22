@@ -1,0 +1,8 @@
+---
+- name: Reload logrotate timer
+  systemd:
+    name: logrotate.timer
+    daemon_reload: yes
+    enabled: yes
+    state: restarted
+  become: yes
