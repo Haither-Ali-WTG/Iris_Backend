@@ -5,3 +5,25 @@
     dest: /etc/logrotate.d/haproxy
     mode: u=rw,go=r
   become: yes
+
+- name: Ensure directory for logrotate timer overrides exists
+  file:
+    path: /etc/systemd/system/logrotate.timer.d
+    state: directory
+    owner: root
+    group: root
+    mode: u=rwx,go=rx
+  become: yes
+
+- name: Configure logrotate.timer to run hourly
+  copy:
+    dest: /etc/systemd/system/logrotate.timer.d/override.conf
+    content: |
+      [Timer]
+      OnCalendar=hourly
+      AccuracySec=5m
+    owner: root
+    group: root
+    mode: u=rw,go=r
+  become: yes
+  notify: Reload logrotate timer
