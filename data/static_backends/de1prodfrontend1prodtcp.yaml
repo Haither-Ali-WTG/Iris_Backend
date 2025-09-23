@@ -1,0 +1,10 @@
+---
+sftp.urs.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodtcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 60s fall 3 rise 2
+  servers:
+    - name: de1wp-surf-401
+      ip: 10.3.152.11
+      port: 22

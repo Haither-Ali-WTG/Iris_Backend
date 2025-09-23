@@ -1,0 +1,5 @@
+---
+sftp_urs_wisegrid_net_2032:
+  description: Direct SFTP traffic to URS SFTP Server
+  tests:
+    - dst_port 2032
