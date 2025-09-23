@@ -311,6 +311,8 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: www_rktrac_com
           cms_resource_group: RG-US-Prod
+        - name: clientes_nowports_com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
