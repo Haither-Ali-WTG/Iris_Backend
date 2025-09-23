@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250922.2
-  # Mon Sep 22 05:01:21 UTC 2025 -- Mon Sep 22 15:01:21 AEST 2025
+  # Dante Build Artifact 20250923.3
+  # Tue Sep 23 01:37:40 UTC 2025 -- Tue Sep 23 11:37:40 AEST 2025
   #
-  # Merge pull request 40074 from dante_artifact_upgrade into master
-  # 775c67fbbb6a0c0e2684b12023b91ebf9d0a3f98
-  dante_build_id: '1471900'
+  # Merged PR 40115: Remove ansible repo from automatic python upgrades
+  # 403d522abaed8b94e43894e2172b78f310dbfcee
+  dante_build_id: '1472792'
 
-  # virgil 20250922.4
-  # Mon Sep 22 04:16:01 UTC 2025 -- Mon Sep 22 14:16:01 AEST 2025
+  # virgil 20250923.4
+  # Tue Sep 23 01:13:24 UTC 2025 -- Tue Sep 23 11:13:24 AEST 2025
   #
-  # Merged PR 40054: CS02068070 - Add third set
-  # a4598b316bce14ccbdb031c35879082a6eaf5a47
-  virgil_build_id: '1471858'
+  # Merged PR 40126: config: remove queues from kafka - CS01922957
+  # 108e2dd4e44352593674b39c89ba48c22ac19c2f
+  virgil_build_id: '1472746'
 
   # sqlbilling 20250922.2
   # Mon Sep 22 07:52:18 UTC 2025 -- Mon Sep 22 17:52:18 AEST 2025
