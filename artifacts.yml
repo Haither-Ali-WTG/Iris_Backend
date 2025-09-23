@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250923.4
-  # Tue Sep 23 02:41:01 UTC 2025 -- Tue Sep 23 12:41:01 AEST 2025
+  # Dante Build Artifact 20250923.6
+  # Tue Sep 23 06:17:41 UTC 2025 -- Tue Sep 23 16:17:41 AEST 2025
   #
-  # Merge pull request 40127 from dante_artifact_upgrade into master
-  # 73de00a0e41ed54688f026b8d64af43235a4200a
-  dante_build_id: '1472857'
+  # Merged PR 40133: Ansible 12 support
+  # 6dafc0971ef5f5ecc97181769c6706595a4df514
+  dante_build_id: '1473132'
 
-  # virgil 20250923.4
-  # Tue Sep 23 01:13:24 UTC 2025 -- Tue Sep 23 11:13:24 AEST 2025
+  # virgil 20250923.8
+  # Tue Sep 23 04:03:45 UTC 2025 -- Tue Sep 23 14:03:45 AEST 2025
   #
-  # Merged PR 40126: config: remove queues from kafka - CS01922957
-  # 108e2dd4e44352593674b39c89ba48c22ac19c2f
-  virgil_build_id: '1472746'
+  # Merged PR 40136: config: Create container chain write only user CS02073625
+  # 57226bb364f73c780a3ad2b5baffdf63d201bdd0
+  virgil_build_id: '1472963'
 
-  # sqlbilling 20250922.2
-  # Mon Sep 22 07:52:18 UTC 2025 -- Mon Sep 22 17:52:18 AEST 2025
+  # sqlbilling 20250923.1
+  # Tue Sep 23 03:55:45 UTC 2025 -- Tue Sep 23 13:55:45 AEST 2025
   #
-  # Merged PR 40086: SQLBillingADDandRemoveCS02081330.yml
-  # b92c37ab23069e6270bf656abe4875020423b224
-  sqlbilling_build_id: '1472033'
+  # Merged PR 40093: SQLBillingAddCS02083297.yml
+  # ffc03276b98eece52c311fb6e8180a506679fcdf
+  sqlbilling_build_id: '1472942'
