@@ -107,6 +107,12 @@ au2wcatoken.wisegrid.net:
     - name: au2wp-swfe-402
       ip: 10.2.69.50
       port: 80
+    - name: au2wp-swfe-403
+      ip: 10.2.69.51
+      port: 80
+    - name: au2wp-swfe-404
+      ip: 10.2.69.52
+      port: 80
 
 sydwca.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -116,6 +122,12 @@ sydwca.wisegrid.net:
     enabled: true
     http_path: /wtg/ready
   servers:
+    - name: au2wp-swfe-401
+      ip: 10.2.68.10
+      port: 80
+    - name: au2wp-swfe-402
+      ip: 10.2.69.50
+      port: 80
     - name: au2wp-swfe-403
       ip: 10.2.69.51
       port: 80
