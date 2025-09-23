@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250923.3
-  # Tue Sep 23 01:37:40 UTC 2025 -- Tue Sep 23 11:37:40 AEST 2025
+  # Dante Build Artifact 20250923.4
+  # Tue Sep 23 02:41:01 UTC 2025 -- Tue Sep 23 12:41:01 AEST 2025
   #
-  # Merged PR 40115: Remove ansible repo from automatic python upgrades
-  # 403d522abaed8b94e43894e2172b78f310dbfcee
-  dante_build_id: '1472792'
+  # Merge pull request 40127 from dante_artifact_upgrade into master
+  # 73de00a0e41ed54688f026b8d64af43235a4200a
+  dante_build_id: '1472857'
 
   # virgil 20250923.4
   # Tue Sep 23 01:13:24 UTC 2025 -- Tue Sep 23 11:13:24 AEST 2025
