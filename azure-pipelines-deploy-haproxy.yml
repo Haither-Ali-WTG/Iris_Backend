@@ -11,7 +11,7 @@ variables:
   - name: key_vault_name
     value: kv-wtg-iris-prod
 
-name: "Deploy to $(dc)"
+name: "$(Date:yyyyMMdd)$(Rev:.r)_Deploy_to_$(dc)"
 
 parameters:
   - name: matrix
