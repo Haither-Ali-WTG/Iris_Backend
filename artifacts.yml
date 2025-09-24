@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250923.6
-  # Tue Sep 23 06:17:41 UTC 2025 -- Tue Sep 23 16:17:41 AEST 2025
+  # Dante Build Artifact 20250924.2
+  # Wed Sep 24 00:54:49 UTC 2025 -- Wed Sep 24 10:54:49 AEST 2025
   #
-  # Merged PR 40133: Ansible 12 support
-  # 6dafc0971ef5f5ecc97181769c6706595a4df514
-  dante_build_id: '1473132'
+  # Merged PR 40199: Added Python upgrades to automated merge
+  # 0179575ce12ff830562075254055ae51d7c169f2
+  dante_build_id: '1473940'
 
-  # virgil 20250923.8
-  # Tue Sep 23 04:03:45 UTC 2025 -- Tue Sep 23 14:03:45 AEST 2025
+  # virgil 20250924.3
+  # Tue Sep 23 23:21:28 UTC 2025 -- Wed Sep 24 09:21:28 AEST 2025
   #
-  # Merged PR 40136: config: Create container chain write only user CS02073625
-  # 57226bb364f73c780a3ad2b5baffdf63d201bdd0
-  virgil_build_id: '1472963'
+  # Merged PR 40186: CS02068070 - last set
+  # 8015982cc3273a1bac9f2963a429787b7ca4d2ca
+  virgil_build_id: '1473820'
 
   # sqlbilling 20250923.3
   # Tue Sep 23 08:12:20 UTC 2025 -- Tue Sep 23 18:12:20 AEST 2025
