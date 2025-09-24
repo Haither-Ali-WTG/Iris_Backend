@@ -11,6 +11,8 @@ variables:
   - name: key_vault_name
     value: kv-wtg-iris-prod
 
+name: "Deploy to ${{ variables.dc }}"
+
 parameters:
   - name: matrix
     type: object
