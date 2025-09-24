@@ -136,13 +136,7 @@ stages:
               pipeline: 26
               buildVersionToDownload: 'specific'
               buildId: '$(dante_build_id)'
-#              path: $(Build.SourcesDirectory)/..
-
-          - script: |
-              set -euxo pipefail
-              ls -la
-              ls -la ansible
-            displayName: 'Install requirements'
+              path: $(Build.SourcesDirectory)..
 
           - task: DownloadPipelineArtifact@2
             displayName: 'Download sqlbilling artifacts for ACL'
@@ -162,6 +156,12 @@ stages:
             inputs:
               sourceFolder: iris
               targetFolder: ansible
+
+          - script: |
+              set -euxo pipefail
+              ls -la
+              ls -la ansible
+            displayName: 'Install requirements'
 
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
