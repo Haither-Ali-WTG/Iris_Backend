@@ -177,7 +177,6 @@ stages:
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e "{use_cache: $(cms_use_cache)}"
-                -e "{intermediate: false}"
                 -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
