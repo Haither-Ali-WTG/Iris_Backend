@@ -142,7 +142,7 @@ stages:
                 -e="s3_host=$(s3_host)"
                 -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
                 -e "{use_cache: $(cms_use_cache)}"
-                -e "{intermediate: $(cms_append_intermediate_certificate)}"
+                -e "{intermediate: false"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
