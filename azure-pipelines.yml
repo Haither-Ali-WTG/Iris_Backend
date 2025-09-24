@@ -138,6 +138,12 @@ stages:
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
 
+          - script: |
+              set -euxo pipefail
+              ls -la
+              ls -la ansible
+            displayName: 'Install requirements'
+
           - task: DownloadPipelineArtifact@2
             displayName: 'Download sqlbilling artifacts for ACL'
             inputs:
