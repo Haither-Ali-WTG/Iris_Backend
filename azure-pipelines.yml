@@ -136,7 +136,7 @@ stages:
               pipeline: 26
               buildVersionToDownload: 'specific'
               buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)..
+              path: $(Build.SourcesDirectory)
 
           - task: DownloadPipelineArtifact@2
             displayName: 'Download sqlbilling artifacts for ACL'
