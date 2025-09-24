@@ -159,8 +159,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              ls -la
-              ls -la ansible
+              ls -la ansible/test_ssh_keys
             displayName: 'Install requirements'
 
           - task: InstallSSHKey@0
