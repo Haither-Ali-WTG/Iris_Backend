@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20250924.2
-  # Wed Sep 24 00:54:49 UTC 2025 -- Wed Sep 24 10:54:49 AEST 2025
+  # Dante Build Artifact 20250924.3
+  # Wed Sep 24 01:48:15 UTC 2025 -- Wed Sep 24 11:48:15 AEST 2025
   #
-  # Merged PR 40199: Added Python upgrades to automated merge
-  # 0179575ce12ff830562075254055ae51d7c169f2
-  dante_build_id: '1473940'
+  # Merged PR 40210: Ansible 12 support
+  # 3f101bd44de9166d8bd44b00fef09d57e845672e
+  dante_build_id: '1473997'
 
   # virgil 20250924.3
   # Tue Sep 23 23:21:28 UTC 2025 -- Wed Sep 24 09:21:28 AEST 2025
