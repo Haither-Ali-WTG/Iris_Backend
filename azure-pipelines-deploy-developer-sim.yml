@@ -140,7 +140,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="s3_host=$(s3_host)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e "{use_cache: $(cms_use_cache)}"
                 -e "{intermediate: false"
                 -e="pure_usernames='$(pure_usernames)'"
@@ -172,7 +172,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                 -e="s3_host=$(s3_host)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
@@ -195,7 +195,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(mgmt_keyvault_name)"
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
