@@ -33,4 +33,14 @@
   import_playbook: load_ciphers.yaml
 
 - name: Generate the individual instance inventory entries
+  hosts: localhost
+  strategy: linear  # required by add_host which bypasses the host loop
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Print output
+      debug:
+        msg: test
+
+- name: Generate the individual instance inventory entries
   import_playbook: generate_individual_instances.yaml
