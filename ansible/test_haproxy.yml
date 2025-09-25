@@ -1,12 +1,18 @@
 ---
-- name: Target machines
-  import_playbook: target_machines.yaml
+- name: Generate the individual instance inventory entries
+  hosts: localhost
+  tasks:
+  - name: Print output
+    debug:
+      msg: test
+# - name: Target machines
+#   import_playbook: target_machines.yaml
 
-- name: Prepare simulation
-  import_playbook: prepare_simulation.yaml
+# - name: Prepare simulation
+#   import_playbook: prepare_simulation.yaml
 
-- name: Augment the inventory
-  import_playbook: augment_inventory.yaml
+# - name: Augment the inventory
+#   import_playbook: augment_inventory.yaml
 
 # - name: Create hypervisor group and config directory
 #   hosts: localhost
