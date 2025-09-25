@@ -22,9 +22,6 @@
           {%- endfor -%}
           {{ list }}
 
-    - debug:
-        msg: "{{ machines_list | from_yaml }}"
-
     - name: Create individual instance inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
@@ -118,6 +115,19 @@
       set_fact:
         frontend: "{{ frontend | combine(simulation_frontend, recursive=true) }}"
       when: simulation
+
+    - debug:
+        msg: "{{ container.port_map }}"
+
+    - debug:
+        msg: >-
+          [
+            {% for port in all_host_ports %}
+            {% for start, end in port_prealloc_pairs if start <= port <= end %}
+            {{ port }},
+            {% endfor %}
+            {% endfor %}
+          ]
 
     - name: Calculate port mapping
       vars:
