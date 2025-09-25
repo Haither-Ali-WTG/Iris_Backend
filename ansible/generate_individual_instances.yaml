@@ -69,7 +69,7 @@
 
         ok: ~  # set to `yes` once deployment of instance succeeds
 
-      loop: "{{ machines_list }}"
+      loop: "{{ machines_list | list }}"
       loop_control:
         index_var: i
         label: "{{ item.individual_instance_name }}"
