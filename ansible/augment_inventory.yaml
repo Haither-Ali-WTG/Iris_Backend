@@ -42,5 +42,5 @@
       debug:
         msg: test
 
-# - name: Generate the individual instance inventory entries
-#   import_playbook: generate_individual_instances.yaml
+- name: Generate the individual instance inventory entries
+  import_playbook: generate_individual_instances.yaml
