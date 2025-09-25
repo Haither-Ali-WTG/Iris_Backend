@@ -27,9 +27,14 @@
                 },
               {% endfor %}
             {% endfor %}
-          ]          
+          ] | from_yaml
 
-    - debug:
+    - name: Print test
+      debug:
+        msg: test
+
+    - name: Print var
+      debug:
         var: test_list
         
 #     - name: Create individual instance inventory entry
