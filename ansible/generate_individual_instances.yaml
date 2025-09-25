@@ -23,57 +23,57 @@
           {{ list }}          
 
     - debug:
-        var: machines_list
+        var: machines_list | from_json
 
-    - name: Create individual instance inventory entry
-      vars:
-        machine: "{{ hostvars[item.machine_name] }}"
-        clustered_instance: "{{ hostvars[item.clustered_instance_name] }}"
-        os_codename:
-          ubuntu2204: jammy
-          ubuntu2404: noble
-          rhel9: plow
-      add_host:
-        name: "{{ item.individual_instance_name }}"
-        groups:
-          - individual_instances
-          - "individual_instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
-        machine_cluster_machine_overrides: "{{ item.machine_cluster_machine_overrides or {} }}"
-        clustered_instance_machine_overrides: >-
-          {{ clustered_instance.machine_overrides[item.machine_name] | default({}) }}
-        machine_name: "{{ item.machine_name }}"
-        clustered_instance_name: "{{ item.clustered_instance_name }}"
-        # TODO: groups from clustered instance and machine settings
-        ansible_host: "{{ machine.ansible_host }}"
-        dc: "{{ clustered_instance.dc }}"
-        simulation_ports:
-          plaintext: "{{ [4500 + i * 2] }}"
-          ssl: "{{ [4500 + i * 2 + 1] }}"
+    # - name: Create individual instance inventory entry
+    #   vars:
+    #     machine: "{{ hostvars[item.machine_name] }}"
+    #     clustered_instance: "{{ hostvars[item.clustered_instance_name] }}"
+    #     os_codename:
+    #       ubuntu2204: jammy
+    #       ubuntu2404: noble
+    #       rhel9: plow
+    #   add_host:
+    #     name: "{{ item.individual_instance_name }}"
+    #     groups:
+    #       - individual_instances
+    #       - "individual_instances_{{ ['odd', 'even'][i % 2] }}"  # to do half at a time; could also do thirds
+    #     machine_cluster_machine_overrides: "{{ item.machine_cluster_machine_overrides or {} }}"
+    #     clustered_instance_machine_overrides: >-
+    #       {{ clustered_instance.machine_overrides[item.machine_name] | default({}) }}
+    #     machine_name: "{{ item.machine_name }}"
+    #     clustered_instance_name: "{{ item.clustered_instance_name }}"
+    #     # TODO: groups from clustered instance and machine settings
+    #     ansible_host: "{{ machine.ansible_host }}"
+    #     dc: "{{ clustered_instance.dc }}"
+    #     simulation_ports:
+    #       plaintext: "{{ [4500 + i * 2] }}"
+    #       ssl: "{{ [4500 + i * 2 + 1] }}"
 
-        static_backends: "{{ clustered_instance.static_backends | default({}) }}"
-        acls: "{{ clustered_instance.acls }}"
-        actions: "{{ clustered_instance.actions }}"
-        certificates: "{{ clustered_instance.certificates | map(attribute='name') | list }}"
-        tests: "{{ clustered_instance.tests | default([]) }}"
-        cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
-        custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
-        sqlbilling_acl: "{{ clustered_instance.sqlbilling_acl | default([]) }}"
-        iis_servers: "{{ clustered_instance.iis_servers | default([]) }}"
-        iis_servers_local: "{{ clustered_instance.iis_servers_local | default([]) }}"
-        resources: "{{ clustered_instance.resources | default({}) }}"
-        machine_cluster: "{{ clustered_instance.machine_cluster | default('') }}"
+    #     static_backends: "{{ clustered_instance.static_backends | default({}) }}"
+    #     acls: "{{ clustered_instance.acls }}"
+    #     actions: "{{ clustered_instance.actions }}"
+    #     certificates: "{{ clustered_instance.certificates | map(attribute='name') | list }}"
+    #     tests: "{{ clustered_instance.tests | default([]) }}"
+    #     cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
+    #     custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
+    #     sqlbilling_acl: "{{ clustered_instance.sqlbilling_acl | default([]) }}"
+    #     iis_servers: "{{ clustered_instance.iis_servers | default([]) }}"
+    #     iis_servers_local: "{{ clustered_instance.iis_servers_local | default([]) }}"
+    #     resources: "{{ clustered_instance.resources | default({}) }}"
+    #     machine_cluster: "{{ clustered_instance.machine_cluster | default('') }}"
 
-        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-        virgil_os_codename: "{{ os_codename[machine.os] }}"
-        virgil_os_variant: "{{ machine.os_variant }}"
+    #     virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+    #     virgil_os_codename: "{{ os_codename[machine.os] }}"
+    #     virgil_os_variant: "{{ machine.os_variant }}"
 
-        ok: ~  # set to `yes` once deployment of instance succeeds
+    #     ok: ~  # set to `yes` once deployment of instance succeeds
 
-      loop: "{{ machines_list | list }}"
-      loop_control:
-        index_var: i
-        label: "{{ item.individual_instance_name }}"
-      when: item.machine_name in groups['target_machines']
+    #   loop: "{{ machines_list | list }}"
+    #   loop_control:
+    #     index_var: i
+    #     label: "{{ item.individual_instance_name }}"
+    #   when: item.machine_name in groups['target_machines']
 
 - name: Apply overrides for the individual instances
   hosts: individual_instances
