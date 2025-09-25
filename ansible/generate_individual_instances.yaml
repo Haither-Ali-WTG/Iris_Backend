@@ -49,20 +49,21 @@
 
         ok: ~  # set to `yes` once deployment of instance succeeds
 
-      loop: >-
-        [
-          {% for clustered_instance_name in groups['clustered_instances'] %}
-            {% for machine_name, machine_cluster_machine_overrides
-               in all_machine_clusters[hostvars[clustered_instance_name].machine_cluster].machines.items() %}
-              {
-                'machine_name': '{{ machine_name }}',
-                'clustered_instance_name': '{{ clustered_instance_name }}',
-                'individual_instance_name': '{{ clustered_instance_name }}_{{ machine_name }}',
-                'machine_cluster_machine_overrides': {{ machine_cluster_machine_overrides | to_json }}
-              },
+        loop: "{{ ('
+          [
+            {% for clustered_instance_name in groups[\"clustered_instances\"] %}
+              {% for machine_name, machine_cluster_machine_overrides
+                in all_machine_clusters[hostvars[clustered_instance_name].machine_cluster].machines.items() %}
+                {
+                  \"machine_name\": \"{{ machine_name }}\",
+                  \"clustered_instance_name\": \"{{ clustered_instance_name }}\",
+                  \"individual_instance_name\": \"{{ clustered_instance_name }}_{{ machine_name }}\",
+                  \"machine_cluster_machine_overrides\": {{ machine_cluster_machine_overrides | to_json }}
+                },
+              {% endfor %}
             {% endfor %}
-          {% endfor %}
-        ] | list
+          ]
+          ' | from_yaml) }}"
       loop_control:
         index_var: i
         label: "{{ item.individual_instance_name }}"
