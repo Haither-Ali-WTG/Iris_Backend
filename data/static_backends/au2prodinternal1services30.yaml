@@ -102,7 +102,7 @@ compliancewise-test.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/ready
+    http_path: /staging/wtg/status
   encryption: false
   servers:
     - name: AU2WT-SIIS-401A
