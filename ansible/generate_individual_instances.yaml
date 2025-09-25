@@ -5,6 +5,22 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Test output
+      debug:
+        msg: >-
+          [
+            {% for clustered_instance_name in groups['clustered_instances'] %}
+              {% for machine_name, machine_cluster_machine_overrides
+                in all_machine_clusters[hostvars[clustered_instance_name].machine_cluster].machines.items() %}
+                {
+                  'machine_name': '{{ machine_name }}',
+                  'clustered_instance_name': '{{ clustered_instance_name }}',
+                  'individual_instance_name': '{{ clustered_instance_name }}_{{ machine_name }}',
+                  'machine_cluster_machine_overrides': {{ machine_cluster_machine_overrides | to_json }}
+                },
+              {% endfor %}
+            {% endfor %}
+          ]        
     - name: Create individual instance inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
