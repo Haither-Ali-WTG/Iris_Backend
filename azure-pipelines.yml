@@ -157,11 +157,6 @@ stages:
               sourceFolder: iris
               targetFolder: ansible
 
-          - script: |
-              set -euxo pipefail
-              ls -la ansible/test_ssh_keys
-            displayName: 'Install requirements'
-
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
             inputs:
