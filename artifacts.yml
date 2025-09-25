@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250924.3
-  # Wed Sep 24 01:48:15 UTC 2025 -- Wed Sep 24 11:48:15 AEST 2025
+  # Dante Build Artifact 20250925.1
+  # Thu Sep 25 02:21:28 UTC 2025 -- Thu Sep 25 12:21:28 AEST 2025
   #
-  # Merged PR 40210: Ansible 12 support
-  # 3f101bd44de9166d8bd44b00fef09d57e845672e
-  dante_build_id: '1473997'
+  # Merge pull request 40237 from dante_artifact_upgrade into master
+  # 054d980aab345ca290ae18748cd2d5764e19013f
+  dante_build_id: '1474963'
 
-  # virgil 20250924.3
-  # Tue Sep 23 23:21:28 UTC 2025 -- Wed Sep 24 09:21:28 AEST 2025
+  # virgil 20250925.4
+  # Thu Sep 25 01:27:32 UTC 2025 -- Thu Sep 25 11:27:32 AEST 2025
   #
-  # Merged PR 40186: CS02068070 - last set
-  # 8015982cc3273a1bac9f2963a429787b7ca4d2ca
-  virgil_build_id: '1473820'
+  # Merged PR 40228: Correct ports for last C43s
+  # 3168ef4a8bcf185894fee1a2bebca79e3477f76f
+  virgil_build_id: '1474912'
 
   # sqlbilling 20250925.1
   # Wed Sep 24 15:11:40 UTC 2025 -- Thu Sep 25 01:11:40 AEST 2025
