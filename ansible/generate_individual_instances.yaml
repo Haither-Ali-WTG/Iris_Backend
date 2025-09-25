@@ -5,7 +5,7 @@
   gather_facts: no
   force_handlers: yes
   tasks:
-    - name: Build list of machines
+    - name: Build proper list of machines
       set_fact:
         machines_list: >-
           {%- set list = [] -%}
@@ -20,10 +20,10 @@
               }) -%}
             {%- endfor -%}
           {%- endfor -%}
-          {{ list }}          
+          {{ list }}
 
     - debug:
-        var: machines_list | from_json
+        msg: "{{ machines_list | to_json }}"
 
     # - name: Create individual instance inventory entry
     #   vars:
