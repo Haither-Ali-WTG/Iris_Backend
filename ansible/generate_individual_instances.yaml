@@ -22,6 +22,9 @@
           {%- endfor -%}
           {{ list }}
 
+    - debug:
+        var: machines_list
+
     - name: Test output
       debug:
         msg: >-
