@@ -34,6 +34,7 @@ https_redirect:
     - redirect scheme https if star_webtracker_testrig_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_cfs_testrig_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_scim_testrig_sand_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc }
 
 bolero_backend_redirect:
   description: |-
