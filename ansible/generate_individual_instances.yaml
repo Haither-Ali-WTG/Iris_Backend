@@ -23,7 +23,7 @@
           {{ list }}
 
     - debug:
-        msg: "{{ machines_list | to_nice_yaml }}"
+        msg: "{{ machines_list | from_yaml }}"
 
     - name: Create individual instance inventory entry
       vars:
