@@ -20,7 +20,7 @@
                 },
               {% endfor %}
             {% endfor %}
-          ] | from_yaml
+          ] | to_nice_yaml
     - name: Create individual instance inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
