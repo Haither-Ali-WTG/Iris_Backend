@@ -201,9 +201,9 @@ stages:
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-              # ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
-              # ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
-              # ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
+              ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
+              ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
+              ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
           - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
             artifact: configs_$(simulation_dc)
