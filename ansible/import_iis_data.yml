@@ -59,24 +59,10 @@
       set_fact:
         iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
-    # - name: Debug rendered IIS data
-    #   debug:
-    #     msg: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') }}"
-
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
-    - name: Print complete IIS
-      debug: 
-        var: complete_iis_data
-
     - name: Show warnings
       debug:
         var: complete_iis_data.warnings
-
-    - name: Check confirmation
-      assert:
-        that: false
-        fail_msg: Aborting as requested.
-      
