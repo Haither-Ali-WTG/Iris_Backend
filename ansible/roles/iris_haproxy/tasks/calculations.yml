@@ -12,13 +12,6 @@
     subuser: "{{ hostvars[machine_name].haproxy_subuser }}"
     frontend_name: "{{ frontend_names[defaults.mode] }}"
 
-- name: Populate servers data variable for individual instance
-  set_fact:
-    servers_data: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
-  when:
-    - "'complete_iis_data' in hostvars['localhost']"
-    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
-
 - name: Print instance name
   debug:
     var: clustered_instance_name
@@ -27,6 +20,13 @@
   run_once: true
   debug:
     msg: "{{ hostvars['localhost'].complete_iis_data }}" 
+
+- name: Populate servers data variable for individual instance
+  set_fact:
+    servers_data: "{{ hostvars['localhost'].complete_iis_data.clustered_instances[clustered_instance_name] }}"
+  when:
+    - "'complete_iis_data' in hostvars['localhost']"
+    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
 
 - name: Populate dynamic backends variable for individual instance
   set_fact:
