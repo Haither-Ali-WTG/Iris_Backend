@@ -216,11 +216,13 @@
       - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
     net_host: no
     ports: >-
-      [
-        {% for host_port, container_port in docker_port_map.items() | sort %}
-        '{{ host_port }}:{{ container_port }}',
-        {% endfor %}
-      ]
+      {{
+        docker_port_map
+        | dict2items
+        | sort(attribute='key')
+        | map('regex_replace', '^(.*)$', '\1')
+        | map('extract', ['key','value'])
+      }} 
     apparmor_profile: "{{ 'wtg_iris' if (virgil_os_variant == 'ubuntu') else '' }}"
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
     container_dir: "{{ individual_instance_dir }}"
