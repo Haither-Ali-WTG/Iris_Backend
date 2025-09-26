@@ -70,4 +70,5 @@ myaccount_umbraco_temp_sand_wtg_zone:
   order: 79
   actions:
     - >-
-        use_backend myaccount-umbraco-temp-sand-wtg-zone-catchall if { hdr(host),field(1,:) -m reg -i ^myau-([^\.])+\.temp\.sand\.wtg\.zone$ }
+        use_backend myaccount-umbraco-temp-sand-wtg-zone-catchall 
+        if { hdr(host),field(1,:) -m reg -i ^myau-([^\.])+\.temp\.sand\.wtg\.zone$ }
