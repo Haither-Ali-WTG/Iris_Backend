@@ -7,12 +7,12 @@ variables:
   # 054d980aab345ca290ae18748cd2d5764e19013f
   dante_build_id: '1474963'
 
-  # virgil 20250925.4
-  # Thu Sep 25 01:27:32 UTC 2025 -- Thu Sep 25 11:27:32 AEST 2025
+  # virgil 20250926.3
+  # Fri Sep 26 00:18:23 UTC 2025 -- Fri Sep 26 10:18:23 AEST 2025
   #
-  # Merged PR 40228: Correct ports for last C43s
-  # 3168ef4a8bcf185894fee1a2bebca79e3477f76f
-  virgil_build_id: '1474912'
+  # Merged PR 40266: cidr expansion for AU2
+  # 31ddf61de0b56dc6496e5a7a9bcf3c48d2ced26e
+  virgil_build_id: '1475928'
 
   # sqlbilling 20250926.4
   # Thu Sep 25 15:08:01 UTC 2025 -- Fri Sep 26 01:08:01 AEST 2025
