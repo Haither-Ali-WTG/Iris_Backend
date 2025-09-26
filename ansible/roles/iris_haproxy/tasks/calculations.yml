@@ -19,6 +19,15 @@
     - "'complete_iis_data' in hostvars['localhost']"
     - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
 
+- name: Print instance name
+  debug:
+    var: clustered_instance_name
+
+- name: print IIS data
+  run_once: true
+  debug:
+    msg: "{{ hostvars['localhost'].complete_iis_data }}" 
+
 - name: Populate dynamic backends variable for individual instance
   set_fact:
     dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
