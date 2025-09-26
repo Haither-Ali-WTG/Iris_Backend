@@ -55,7 +55,15 @@
 
     - name: Map files to paths
       set_fact:
-        iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
+        iis_files2: "{{ iis_files.files | map(attribute='path') | unique }}"
+
+    - name: Print iis_files
+      debug:
+        var: iis_files
+
+    - name: Print iis_files2
+      debug:
+        var: iis_files2
 
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
