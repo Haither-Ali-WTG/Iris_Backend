@@ -192,7 +192,7 @@ stages:
               args: >-
                 -u $(user)
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="{simulation: false}" -e="azure_kv_name=$(azure_kv_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
