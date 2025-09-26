@@ -64,3 +64,12 @@ campaign_hyeuat_sand_wtg_zone:
   actions:
     - >-
         use_backend www-hyeuat_sand_wtg_zone if { hdr(host),field(1,:) -i campaign-hyeuat.sand.wtg.zone }
+
+myaccount_umbraco_temp_sand_wtg_zone:
+  description: |-
+    use catchall myaccount umbraco backend for myau-*.temp.sand.wtg.zone
+  order: 79
+  actions:
+    - >-
+        use_backend myaccount-umbraco-temp-sand-wtg-zone-catchall
+        if { hdr(host),field(1,:) -m reg -i ^myau-([^\.])+\.temp\.sand\.wtg\.zone$ }

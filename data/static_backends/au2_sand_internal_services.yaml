@@ -642,3 +642,13 @@ dps-test-rest.wisegrid.net:
     - name: AU2SP-SIIS-402B
       ip: 10.2.69.78
       port: 80
+
+myaccount-umbraco-temp-sand-wtg-zone-catchall:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: AU2SP-SWEB-407
+      ip: 10.2.122.23
+      port: 80
