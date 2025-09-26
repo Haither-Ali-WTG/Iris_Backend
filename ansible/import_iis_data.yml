@@ -57,8 +57,18 @@
       set_fact:
         iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
-    - name: Print iis_files
-      debug:
+    - debug:
+        var: clustered_instance_names
+
+    - debug:
+        msg: "{{ hostvars[item].iis_servers | default([]) }}"
+      loop: "{{ clustered_instance_names }}"
+
+    - debug:
+        msg: "{{ hostvars[item].iis_servers_local | default([]) }}"
+      loop: "{{ clustered_instance_names }}"
+
+    - debug:
         var: iis_files
 
     - name: Debug rendered IIS data
@@ -76,3 +86,9 @@
     - name: Show warnings
       debug:
         var: complete_iis_data.warnings
+
+    - name: Check confirmation
+      assert:
+        that: false
+        fail_msg: Aborting as requested.
+      
