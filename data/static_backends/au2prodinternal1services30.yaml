@@ -97,3 +97,17 @@ runtimeapi-au2.cwconnector.wisegrid.net:
     - name: au2wp-scwi-405b
       ip: 10.2.88.156
       port: 5443
+
+compliancewise-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /staging/wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
