@@ -235,9 +235,7 @@
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
   when: not container_running
-  retries: 10
-  delay: 5
-  until: container_running
+  loop: "{{ range(0, 10) | list }}"
 
 - name: Assert that container is running
   assert:
@@ -316,9 +314,7 @@
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
   when: not container_running
-  retries: 10
-  delay: 5
-  until: container_running
+  loop: "{{ range(0, 10) | list }}"
 
 - name: Assert that container is running
   assert:
