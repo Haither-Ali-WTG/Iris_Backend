@@ -5,6 +5,7 @@
   vars:
     add_drivers: no
     use_uefi: true
+    host_bridge: oob-dante
 
 - name: Wait 600 seconds for nodes to come up
   wait_for_connection:
