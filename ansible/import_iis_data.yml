@@ -66,9 +66,3 @@
     - name: Show warnings
       debug:
         var: complete_iis_data.warnings
-
-    - name: Check confirmation
-      assert:
-        that: false
-        fail_msg: Aborting as requested.
-      
