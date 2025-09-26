@@ -177,14 +177,14 @@
 
     - name: Ensure docker_port_map is not empty
       assert:
-        that: docker_port_map
+        that: docker_port_map | length > 0
         quiet: yes
         fail_msg: >-
           No ports are mapped for container
 
     - name: Check for port map and port preallocation conflict
       assert:
-        that: not bad_ports
+        that: bad_ports | length == 0
         quiet: yes
         fail_msg: >-
           Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
