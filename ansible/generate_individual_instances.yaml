@@ -116,39 +116,26 @@
         frontend: "{{ frontend | combine(simulation_frontend, recursive=true) }}"
       when: simulation
 
-    - debug:
-        msg: "{{ container.port_map }}"
-
-    - debug:
-        msg: >-
-          [
-            {% for port in all_host_ports %}
-            {% for start, end in port_prealloc_pairs if start <= port <= end %}
-            {{ port }},
-            {% endfor %}
-            {% endfor %}
-          ]
-
     - name: Calculate port mapping
       vars:
         all_host_ports: >-
-          [
-            {{ stats.ports.web }},
-            {% for port in frontend.ports.plaintext | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% for port in frontend.proxy_ports.plaintext | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% if certificates | default([]) %}
-            {% for port in frontend.ports.ssl | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% for port in frontend.proxy_ports.ssl | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% endif %}
-          ]
+            {%- set result = [] -%}
+            {%- set _ = result.append(stats.ports.web) -%}
+            {%- for port in frontend.ports.plaintext | default([]) -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+            {%- for port in frontend.proxy_ports.plaintext | default([]) -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+            {%- if certificates | default([]) -%}
+              {%- for port in frontend.ports.ssl | default([]) -%}
+                {%- set _ = result.append(port) -%}
+              {%- endfor -%}
+              {%- for port in frontend.proxy_ports.ssl | default([]) -%}
+                {%- set _ = result.append(port) -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ result }}      
         port_prealloc_pairs: >-
           [
             {% for item in container.port_prealloc %}
