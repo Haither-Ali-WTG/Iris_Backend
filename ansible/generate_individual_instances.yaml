@@ -135,44 +135,43 @@
                 {%- set _ = result.append(port) -%}
               {%- endfor -%}
             {%- endif -%}
-            {{ result }}      
+            {{ result }}
         port_prealloc_pairs: >-
-          [
-            {% for item in container.port_prealloc %}
-            {% if item is string and '-' in item %}
-            {{ item | split('-') | map('int') }},
-            {% else %}
-            [{{ item | int }}, {{ item | int }}],
-            {% endif %}
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for item in container.port_prealloc -%}
+            {%- if item is string and '-' in item -%}
+              {%- set _ = result.append(item.split('-') | map('int') | list) -%}
+            {%- else -%}
+              {%- set _ = result.append([item|int, item|int]) -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {{ result }}
         ports_in_prealloc: >-
-          [
-            {% for port in all_host_ports %}
-            {% for start, end in port_prealloc_pairs if start <= port <= end %}
-            {{ port }},
-            {% endfor %}
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for port in all_host_ports -%}
+            {%- for start, end in port_prealloc_pairs if start <= port <= end -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {{ result }}
         ports_to_map_individually: >-
           {{ all_host_ports | difference(ports_in_prealloc) }}
       set_fact:
         all_port_map: >-
-          {
-            {% for host_port in all_host_ports %}
-            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
-            {% endfor %}
-          }
+          {%- set result = {} -%}
+          {%- for host_port in all_host_ports -%}
+            {%- set _ = result.update({host_port: container.port_map.get(host_port, host_port)}) -%}
+          {%- endfor -%}
+          {{ result }}
         docker_port_map: >-
-          {
-            {% for host_port in ports_to_map_individually %}
-            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
-            {% endfor %}
-
-            {% for prealloc in container.port_prealloc %}
-            {{ prealloc }}: {{ prealloc }},
-            {% endfor %}
-          }
+          {%- set result = {} -%}
+          {%- for host_port in ports_to_map_individually -%}
+            {%- set _ = result.update({host_port: container.port_map.get(host_port, host_port)}) -%}
+          {%- endfor -%}
+          {%- for prealloc in container.port_prealloc -%}
+            {%- set _ = result.update({prealloc: prealloc}) -%}
+          {%- endfor -%}
+          {{ result }}
         bad_ports: >-
           {{ ports_in_prealloc | intersect(container.port_map) }}
 
