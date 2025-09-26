@@ -17,7 +17,6 @@
     var: clustered_instance_name
 
 - name: print IIS data
-  run_once: true
   debug:
     msg: "{{ hostvars['localhost'].complete_iis_data }}" 
 
