@@ -55,15 +55,15 @@
 
     - name: Map files to paths
       set_fact:
-        iis_files2: "{{ iis_files.files | map(attribute='path') | unique }}"
+        iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
     - name: Print iis_files
       debug:
         var: iis_files
 
-    - name: Print iis_files2
+    - name: Debug rendered IIS data
       debug:
-        var: iis_files2
+        msg: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') }}"
 
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
