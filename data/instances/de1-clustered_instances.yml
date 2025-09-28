@@ -77,7 +77,8 @@ clustered_instances:
       certificates:
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
-        - name: star-wtg-zone
+        - name: 
+          cms_resource_group: RG-AU-Corp
         - name: star-de1s3-b1-wtg-ws
           cms_resource_group: RG-EU-Prod
       container:
