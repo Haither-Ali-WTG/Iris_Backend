@@ -118,12 +118,14 @@
           {{
             individual_instances
             | map('extract', hostvars)
-            | rejectattr('ok')
+            | list
+            | rejectattr('ok', 'defined')
+            | rejectattr('ok') 
             | map(attribute='inventory_hostname')
             | list
           }}
       assert:
-        that: not failed_instance_names
+        that: failed_instance_names | list == 0
         quiet: yes
         fail_msg: >-
           Aborting machine {{ inventory_hostname }} due to failed individual instances
