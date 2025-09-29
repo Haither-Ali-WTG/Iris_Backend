@@ -14,9 +14,9 @@ variables:
   # bd06102886a34195e5945e8620d39ebc2fb13957
   virgil_build_id: '1478878'
 
-  # sqlbilling 20250926.6
-  # Fri Sep 26 10:27:28 UTC 2025 -- Fri Sep 26 20:27:28 AEST 2025
+  # sqlbilling 20250929.1
+  # Mon Sep 29 07:37:03 UTC 2025 -- Mon Sep 29 17:37:03 AEST 2025
   #
-  # Merged PR 40276: 118 new sql RO entries for AFOUYR in US2
-  # 61edcdb2453f487051c4db794293c207a83fe17c
-  sqlbilling_build_id: '1476390'
+  # Merged PR 40315: AddSQLReadOnlyIP US2 CS02087831
+  # 4e97e1e724e4a0cd19083d0a275fe2c16cc98ee0
+  sqlbilling_build_id: '1478973'
