@@ -2,22 +2,6 @@
 # TODO figure out how to spread the definition over multiple files
 clustered_instances:
   hosts:
-    au2prodceph1:
-      # per-clustered-instance settings (overrides) go here, for example:
-      dc: AU2
-      frontend:
-        maxconn: 20000
-      machine_cluster: nowhere  # au2-prod-frontend-1
-      iis_servers:
-        - au2wt-sweb-003.test.wisecloud.zone
-        - au2wt-sweb-004.test.wisecloud.zone
-      iis_user: s_lbwinrmquerier
-      websites_config: websites.yml
-      certificates:
-        - name: ahwprd-webtracker-carozplus-com
-        - name: customers-commercialcustoms-com-au
-        - name: star-cargowise-com
-
     au2corprdg:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
