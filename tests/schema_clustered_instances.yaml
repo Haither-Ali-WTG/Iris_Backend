@@ -16,6 +16,7 @@ clustered_instance:
   machine_overrides: map(include('haproxy_settings'),
                          key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'),
                          required=False)
+  weborc_url: regex(r'^https?:\/\/[a-zA-Z0-9.-]+(?::\d+)?(\/.*)?$', name='weborc url', required=False)
   iis_servers: list(any(include('iis_server_settings'),
                         regex('^[a-zA-Z0-9.-]{1,253}$', name='domain or server name')), required=True)
   iis_user: regex(r'^[a-zA-Z0-9_@.]+$', name='IIS user name', required=False)

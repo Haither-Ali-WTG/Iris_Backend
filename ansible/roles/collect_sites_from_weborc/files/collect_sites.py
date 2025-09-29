@@ -22,7 +22,7 @@ def parse_arguments() -> argparse.Namespace:
     """Parse CLI arguments."""
     parser = argparse.ArgumentParser(description="Fetch and save IIS sites data.")
     parser.add_argument(
-        "--weborc_service", "-s",
+        "--weborc_url", "-s",
         help="Weborc service",
         type=str,
         required=True
@@ -96,13 +96,12 @@ def validate_response(data: Any) -> bool:
     return True
 
 
-def fetch_env_cache(server: str, verify_param: str | bool) -> List[Dict[str, Any]]:
-    """GET https://{server}:8890/EnvCache with 60s timeout and parse JSON."""
-    url = f"https://{server}:8890/EnvCache"
-    LOGGER.info("Requesting EnvCache from %s", url)
+def fetch_env_cache(weborc_url: str, verify_param: str | bool) -> List[Dict[str, Any]]:
+    """GET IIS data from weborc with 60s timeout and parse JSON."""
+    LOGGER.info("Requesting EnvCache from %s", weborc_url)
 
     try:
-        resp = requests.get(url, timeout=60, verify=verify_param)
+        resp = requests.get(weborc_url, timeout=60, verify=verify_param)
     except requests.RequestException as exc:
         LOGGER.error("HTTP request failed: %s", exc)
         raise
@@ -147,7 +146,7 @@ def main() -> int:
     verify_param = args.ca_cert if args.ca_cert else False
 
     try:
-        data = fetch_env_cache(args.weborc_service, verify_param)
+        data = fetch_env_cache(args.weborc_url, verify_param)
 
         if not validate_response(data):
             return 1

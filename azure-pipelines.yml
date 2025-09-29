@@ -49,13 +49,16 @@ stages:
               set -euxo pipefail
               pylint --rcfile=setup.cfg \
               --disable=redefined-outer-name \
-              tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
+              tests/ ansible/roles/iris_haproxy/files/*.py \
+              ansible/roles/collect_sites/files/*.py \
+              ansible/roles/collect_sites_from_weborc/files/*.py
             displayName: 'Python lint'
             condition: succeededOrFailed()
 
           - script: |
               set -euxo pipefail
-              mypy tests/ ansible/roles/collect_sites/files/
+              mypy tests/ ansible/roles/collect_sites/files/ \
+              ansible/roles/collect_sites_from_weborc/files/
             displayName: 'Mypy type check'
             condition: succeededOrFailed()
 

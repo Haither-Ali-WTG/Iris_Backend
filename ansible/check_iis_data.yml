@@ -2,23 +2,7 @@
 - name: Target machines
   import_playbook: target_machines.yaml
 
-- name: Collect IIS data
-  hosts: clustered_instances
-  strategy: free
-  gather_facts: no
-  force_handlers: yes
-  tasks:
-    - name: Collect IIS data
-      include_role:
-        name: collect_sites
-      vars:
-        upload_iis_data: false
-      when:
-        - not simulation
-        - target_dc == dc
-        - (iis_servers | default([]) | length > 0) or (iis_servers_local | default([]) | length > 0)
-
-- name: Download IIS data and check
+- name: Download IIS data
   hosts: localhost
   tasks:
     - name: Setup S3 storage connection
@@ -27,62 +11,105 @@
       vars:
         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
 
-    - name: Create iis_sites if collect_sites didn't create it
+    - name: Create folders for IIS sites data
       file:
-        path: iis_sites
+        path: "{{ item }}"
         state: directory
         mode: u=rwx
-
-    - name: Create temporary directory
-      tempfile:
-        state: directory
-      register: temp_path
+      loop:
+        - iis_sites
+        - iis_sites_from_s3
+        - iis_sites_v2_from_s3
 
     - name: Download IIS data from S3
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
         s3 cp --recursive --exclude "*" --include "{{ target_dc[:2] | lower }}*"
         {{ s3_iris_bucket }}{{ s3_folder | default(default_s3_folder) }}
-        {{ temp_path.path }}
+        iis_sites_from_s3
       changed_when: true
 
-    - name: Check if IIS data changed
-      command: >-
-        diff -r --exclude=cms-cache.json iis_sites {{ temp_path.path }}
-      register: diff_output
-      changed_when: true
-      ignore_errors: yes
-
-    - name: Collect IIS sites from weborc
-      include_role:
-        name: collect_sites_from_weborc
-      vars:
-        upload_iis_data: false
-      when: weborc_hostname | default('') | length > 0
-
-    - name: Download IIS sites from S3
+    - name: Download weborc data from S3
       command: >-
         aws --endpoint-url=https://{{ s3_host }}
         s3 cp --recursive
         {{ s3_iris_bucket }}{{ target_dc }}-v2/
-        iis_sites_from_s3/
+        iis_sites_v2_from_s3
       changed_when: true
 
-    - name: Check if IIS sites changed
+- name: Collect IIS data and check
+  hosts: clustered_instances
+  gather_facts: no
+  force_handlers: yes
+  tasks:
+    - name: Set iis_data_source variable
+      set_fact:
+        iis_data_source: >-
+          {{
+            'iis'
+            if (
+              ( target_dc == dc )
+              and (weborc_url | default('') | length == 0)
+              and ((iis_servers | default([]) | length > 0)
+                  or (iis_servers_local | default([]) | length > 0)))
+            else (
+              'weborc'
+              if (
+                ( target_dc == dc )
+                and (weborc_url | default('') | length > 0))
+              else ''
+            )
+          }}
+
+    - name: Collect IIS data
+      include_role:
+        name: collect_sites
+      vars:
+        upload_iis_data: false
+      when: iis_data_source == 'iis'
+
+    - name: Collect weborc data
+      include_role:
+        name: collect_sites_from_weborc
+      vars:
+        upload_iis_data: false
+        weborc_output_folder: iis_sites
+      when: iis_data_source == 'weborc'
+
+    - name: Check if IIS data changed
       command: >-
-        diff -r iis_sites_v2 iis_sites_from_s3
-      register: diff_iis_sites_output
+        diff -r --exclude=cms-cache.json
+        iis_sites/{{ inventory_hostname }}
+        {{ s3_data_folder }}/{{ inventory_hostname }}
+      vars:
+        s3_data_folder: >-
+          {{
+            'iis_sites_from_s3' if iis_data_source == 'iis'
+            else 'iis_sites_v2_from_s3'
+          }}
+      register: diff_output
       changed_when: true
       ignore_errors: yes
+      delegate_to: localhost
+      when: iis_data_source | length > 0
 
+    - name: Set iis_data_changed
+      set_fact:
+        iis_data_changed: true
+      when:
+        - diff_output is not skipped
+        - diff_output.rc != 0
+
+- name: Trigger IRIS deployment pipeline
+  hosts: localhost
+  gather_facts: no
+  tasks:
     - name: Trigger IRIS deployment pipeline
       include_role:
         name: trigger_iris_pipeline
       when: >-
-        ( diff_output.rc != 0 )
-        or
-        (
-          ( weborc_hostname | default('') | length > 0 )
-          and
-          ( diff_iis_sites_output.rc != 0 )
-        )
+        groups['clustered_instances']
+        | map('extract', hostvars, 'iis_data_changed')
+        | select('defined')
+        | select('equalto', true)
+        | list | length > 0
