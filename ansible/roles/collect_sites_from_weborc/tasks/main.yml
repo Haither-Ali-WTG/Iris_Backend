@@ -1,13 +1,12 @@
 ---
-- name: Collect sites data from weborc
+- name: "Collect sites data from weborc for {{ inventory_hostname }}"
   command: >
         python3 {{ playbook_dir }}/roles/collect_sites_from_weborc/files/collect_sites.py
-        --weborc_service {{ weborc_hostname }}
-        --output_path iis_sites_v2
+        --weborc_url {{ weborc_url }}
+        --output_path {{ weborc_output_folder | default('iis_sites_v2') }}/{{ inventory_hostname }}
   register: collect_sites_output
   changed_when: true
   delegate_to: localhost
-  when: weborc_hostname | default('') | length > 0
 
 - name: Output collected sites from weborc
   debug:
@@ -22,8 +21,8 @@
   command: >-
     aws --endpoint-url=https://{{ s3_host }}
     s3 cp --recursive
-    iis_sites_v2/
-    {{ s3_iris_bucket }}{{ target_dc }}-v2/
+    {{ weborc_output_folder | default('iis_sites_v2') }}/{{ inventory_hostname }}
+    {{ s3_iris_bucket }}{{ target_dc }}-v2/{{ inventory_hostname }}
   changed_when: true
   delegate_to: localhost
   when:
