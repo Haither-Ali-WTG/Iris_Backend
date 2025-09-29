@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20250929.1
-  # Mon Sep 29 00:02:55 UTC 2025 -- Mon Sep 29 10:02:55 AEST 2025
+  # Dante Build Artifact 20250929.2
+  # Mon Sep 29 06:41:26 UTC 2025 -- Mon Sep 29 16:41:26 AEST 2025
   #
-  # Merge pull request 40319 from dante_artifact_upgrade into master
-  # 4e329fe68242be915b1afdf143420ba5a13bb52a
-  dante_build_id: '1478583'
+  # Merge pull request 40352 from dante_artifact_upgrade into master
+  # ff6b0d2287925a20eaad246973d557df001f64d3
+  dante_build_id: '1478916'
 
-  # virgil 20250929.1
-  # Sun Sep 28 23:17:58 UTC 2025 -- Mon Sep 29 09:17:58 AEST 2025
+  # virgil 20250929.4
+  # Mon Sep 29 06:02:33 UTC 2025 -- Mon Sep 29 16:02:33 AEST 2025
   #
-  # Merged PR 40277: Repurpose four C53s for testing
-  # 8ac2d8f2b5bdf2ab19c0e1152c9541eb80e62e5d
-  virgil_build_id: '1478535'
+  # Merged PR 40270: fix: Replace 'serial' with 'serial number' and include service_expiry in the virgil artifact
+  # bd06102886a34195e5945e8620d39ebc2fb13957
+  virgil_build_id: '1478878'
 
   # sqlbilling 20250926.6
   # Fri Sep 26 10:27:28 UTC 2025 -- Fri Sep 26 20:27:28 AEST 2025
