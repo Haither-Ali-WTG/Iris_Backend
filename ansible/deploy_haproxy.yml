@@ -118,9 +118,7 @@
           {{
             individual_instances
             | map('extract', hostvars)
-            | list
-            | rejectattr('ok', 'defined')
-            | rejectattr('ok') 
+            | rejectattr('ok')
             | map(attribute='inventory_hostname')
             | list
           }}
@@ -129,7 +127,7 @@
         quiet: yes
         fail_msg: >-
           Aborting machine {{ inventory_hostname }} due to failed individual instances
-          {{ failed_instance_names | join(' and ') }}
+          {{ (failed_instance_names | default([])) | join(' and ') }}
 
     - name: Setup keepalived (VRRP)
       include_role:
