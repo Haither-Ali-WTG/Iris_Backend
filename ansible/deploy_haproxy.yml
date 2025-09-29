@@ -112,26 +112,22 @@
     iris_run_directory: "/var/log/iris"
     iris_run_file: "iris_run.log"
   tasks:
-    - name: print hostvars
-      debug:
-        var: hostvars
-
     - name: print individual_instances
       debug:
         var: individual_instances
+
     - name: Assert all instances on the machine are successful
       vars:
         failed_instance_names: >-
           {{
-            (individual_instances | list)
-            | map('extract', hostvars, default={})
-            | selectattr('ok', 'defined')
+            individual_instances | list
+            | map('extract', hostvars)
             | rejectattr('ok')
             | map(attribute='inventory_hostname')
             | list
-          }}        
+          }}
       assert:
-        that: failed_instance_names | list == 0
+        that: failed_instance_names | length == 0
         quiet: yes
         fail_msg: >-
           Aborting machine {{ inventory_hostname }} due to failed individual instances
