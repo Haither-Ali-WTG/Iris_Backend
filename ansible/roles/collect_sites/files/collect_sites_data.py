@@ -84,9 +84,6 @@ def process_server(server_name, connection_params, output_path, logger):
             WinRMOperationTimeoutError) as err:
         logger.exception("error collecting sites")
         return {'status': 'error', 'server': server_name, 'error': str(err)}
-    except Exception as err:
-        logger.exception("unexpected error collecting sites")
-        return {'status': 'error', 'server': server_name, 'error': str(err)}
     if len(sites_list) == 0:
         logger.warning("collected no sites, server empty")
         return {'status': 'empty', 'server': server_name, 'sites_count': 0}
