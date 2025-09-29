@@ -198,12 +198,11 @@
     - name: Calculate individual instances on each machine
       set_fact:
         individual_instances: >-
-          [
-            {% for individual_instance in groups.individual_instances | default([])
-               if hostvars[individual_instance].machine_name == inventory_hostname %}
-            "{{ individual_instance }}",
-            {% endfor %}
-          ]
+          {{
+            groups.individual_instances | default([])
+            | selectattr('machine_name', 'equalto', inventory_hostname, hostvars)
+            | list
+          }}
 
     - name: Calculate stats web ports on each machine
       set_fact:
