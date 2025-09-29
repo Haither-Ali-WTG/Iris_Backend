@@ -17,7 +17,7 @@ from datetime import datetime
 
 import requests
 import yaml
-from winrm.exceptions import InvalidCredentialsError
+from winrm.exceptions import InvalidCredentialsError, WinRMOperationTimeoutError
 from winrm.protocol import Protocol
 
 
@@ -79,8 +79,13 @@ def process_server(server_name, connection_params, output_path, logger):
     threading.current_thread().name = server_name
     try:
         sites_list = get_websites_list(server_name, connection_params)
-    except (ValueError, InvalidCredentialsError, requests.exceptions.RequestException) as err:
+    except (ValueError, InvalidCredentialsError,
+            requests.exceptions.RequestException,
+            WinRMOperationTimeoutError) as err:
         logger.exception("error collecting sites")
+        return {'status': 'error', 'server': server_name, 'error': str(err)}
+    except Exception as err:
+        logger.exception("unexpected error collecting sites")
         return {'status': 'error', 'server': server_name, 'error': str(err)}
     if len(sites_list) == 0:
         logger.warning("collected no sites, server empty")
