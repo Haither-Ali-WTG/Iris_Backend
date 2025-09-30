@@ -112,10 +112,6 @@
     iris_run_directory: "/var/log/iris"
     iris_run_file: "iris_run.log"
   tasks:
-    - name: print individual_instances
-      debug:
-        var: individual_instances
-
     - name: Assert all instances on the machine are successful
       vars:
         failed_instance_names: >-
