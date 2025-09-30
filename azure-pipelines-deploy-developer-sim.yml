@@ -106,7 +106,8 @@ stages:
               args: >-
                 -u $(user) --diff -e="pool=/mnt/data1/test_pool"
                 -e="@ansible/hypervisor.yaml" -e="@ansible/build_id.yaml"
-                -e="use_cicd_pool=$(use_cicd_pool)"
+                -e="{use_cicd_pool: $(use_cicd_pool)}"
+                =e="{config_sshd_for_testing: false}"
                 -e="key_vault_name=$(mgmt_keyvault_name)"
                 -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
