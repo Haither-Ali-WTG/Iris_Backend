@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20250929.2
-  # Mon Sep 29 06:41:26 UTC 2025 -- Mon Sep 29 16:41:26 AEST 2025
+  # Dante Build Artifact 20250930.2
+  # Mon Sep 29 23:41:23 UTC 2025 -- Tue Sep 30 09:41:23 AEST 2025
   #
-  # Merge pull request 40352 from dante_artifact_upgrade into master
-  # ff6b0d2287925a20eaad246973d557df001f64d3
-  dante_build_id: '1478916'
+  # Merge pull request 40380 from dante_artifact_upgrade into master
+  # f1b277274d9639fc081b69f9395e21367de58132
+  dante_build_id: '1479578'
 
-  # virgil 20250929.4
-  # Mon Sep 29 06:02:33 UTC 2025 -- Mon Sep 29 16:02:33 AEST 2025
+  # virgil 20250930.2
+  # Mon Sep 29 23:01:40 UTC 2025 -- Tue Sep 30 09:01:40 AEST 2025
   #
-  # Merged PR 40270: fix: Replace 'serial' with 'serial number' and include service_expiry in the virgil artifact
-  # bd06102886a34195e5945e8620d39ebc2fb13957
-  virgil_build_id: '1478878'
+  # Merge pull request 40371 from virgil_python_upgrade into master
+  # 0da85c47b0cebdb106f00b08ff3f658c7fdab10f
+  virgil_build_id: '1479542'
 
-  # sqlbilling 20250929.1
-  # Mon Sep 29 07:37:03 UTC 2025 -- Mon Sep 29 17:37:03 AEST 2025
+  # sqlbilling 20250929.3
+  # Mon Sep 29 12:20:38 UTC 2025 -- Mon Sep 29 22:20:38 AEST 2025
   #
-  # Merged PR 40315: AddSQLReadOnlyIP US2 CS02087831
-  # 4e97e1e724e4a0cd19083d0a275fe2c16cc98ee0
-  sqlbilling_build_id: '1478973'
+  # Merged PR 40368: SQLBilling-Remove-CS02059901.yml
+  # 82fe93b6af92f3c96cd20409f0fdbdaaf47194d1
+  sqlbilling_build_id: '1479141'
