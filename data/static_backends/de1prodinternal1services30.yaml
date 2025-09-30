@@ -158,6 +158,7 @@ amend.urs.wisegrid.net:
     - name: de1wp-surw-404
       ip: 10.3.151.14
       port: 80
+      settings: backup
 
 datafactory.urs.wisegrid.net:
   clustered_instances: [de1prodinternal1services30]
