@@ -5,7 +5,7 @@ variables:
   #
   # Merged PR 40133: Ansible 12 support
   # 6dafc0971ef5f5ecc97181769c6706595a4df514
-  dante_build_id: '1473132'
+  dante_build_id: '1480550'
 
   # virgil 20250923.8
   # Tue Sep 23 04:03:45 UTC 2025 -- Tue Sep 23 14:03:45 AEST 2025
