@@ -87,6 +87,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Sand
         - name: star-scim-testrig-sand-wtg-zone
           cms_resource_group: RG-AU-Sand
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
       container:
         resources:
           production:
