@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251001.1
-  # Tue Sep 30 21:41:21 UTC 2025 -- Wed Oct  1 07:41:21 AEST 2025
+  # Dante Build Artifact 20251001.6
+  # Wed Oct  1 01:04:41 UTC 2025 -- Wed Oct  1 11:04:41 AEST 2025
   #
-  # Merge pull request 40420 from dante_artifact_upgrade into master
-  # 57a13b89690966a792b0707862c2fdc7e37c24f1
-  dante_build_id: '1480433'
+  # Merged PR 40434: Ansible 12 support for DNS artifact
+  # 4629d0f5452559d8af47489788e7698dd414df12
+  dante_build_id: '1480658'
 
   # virgil 20251001.1
   # Tue Sep 30 21:02:12 UTC 2025 -- Wed Oct  1 07:02:12 AEST 2025
