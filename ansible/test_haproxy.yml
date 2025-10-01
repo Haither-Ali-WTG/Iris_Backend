@@ -27,7 +27,6 @@
       loop:
         - "../generated_configs"
         - "../generated_configs/{{ target_dc }}"
-      become: yes
 
 - name: Configure hypervisor
   hosts: hypervisor
