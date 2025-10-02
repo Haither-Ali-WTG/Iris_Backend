@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251001.6
-  # Wed Oct  1 01:04:41 UTC 2025 -- Wed Oct  1 11:04:41 AEST 2025
+  # Dante Build Artifact 20251001.7
+  # Wed Oct  1 04:37:25 UTC 2025 -- Wed Oct  1 14:37:25 AEST 2025
   #
-  # Merged PR 40434: Ansible 12 support for DNS artifact
-  # 4629d0f5452559d8af47489788e7698dd414df12
-  dante_build_id: '1480658'
+  # Merged PR 40446: Ansible 12: get IP address without ipaddr filter
+  # 17c83c2c24fef1e3e7240dcfb25c81db93251cba
+  dante_build_id: '1480830'
 
   # virgil 20251001.1
   # Tue Sep 30 21:02:12 UTC 2025 -- Wed Oct  1 07:02:12 AEST 2025
@@ -14,9 +14,9 @@ variables:
   # 9798c01fd93548488b48e10dd4fb63717f959bfb
   virgil_build_id: '1480405'
 
-  # sqlbilling 20250929.3
-  # Mon Sep 29 12:20:38 UTC 2025 -- Mon Sep 29 22:20:38 AEST 2025
+  # sqlbilling 20251002.2
+  # Thu Oct  2 06:36:47 UTC 2025 -- Thu Oct  2 16:36:47 AEST 2025
   #
-  # Merged PR 40368: SQLBilling-Remove-CS02059901.yml
-  # 82fe93b6af92f3c96cd20409f0fdbdaaf47194d1
-  sqlbilling_build_id: '1479141'
+  # Merged PR 40473: Update US2 readonly SQL
+  # 987632886395bd2bc9620976f76062a82da834e2
+  sqlbilling_build_id: '1481788'
