@@ -14,9 +14,9 @@ variables:
   # 9798c01fd93548488b48e10dd4fb63717f959bfb
   virgil_build_id: '1480405'
 
-  # sqlbilling 20251002.2
-  # Thu Oct  2 06:36:47 UTC 2025 -- Thu Oct  2 16:36:47 AEST 2025
+  # sqlbilling 20251002.5
+  # Thu Oct  2 09:52:55 UTC 2025 -- Thu Oct  2 19:52:55 AEST 2025
   #
-  # Merged PR 40473: Update US2 readonly SQL
-  # 987632886395bd2bc9620976f76062a82da834e2
-  sqlbilling_build_id: '1481788'
+  # Merged PR 40486: SQLBilling-Add-CS02093162.yml
+  # 7d567cf04f9c469071113944d27de7b21b9887dc
+  sqlbilling_build_id: '1481889'
