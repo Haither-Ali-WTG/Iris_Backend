@@ -7,12 +7,12 @@ variables:
   # 17c83c2c24fef1e3e7240dcfb25c81db93251cba
   dante_build_id: '1480830'
 
-  # virgil 20251001.1
-  # Tue Sep 30 21:02:12 UTC 2025 -- Wed Oct  1 07:02:12 AEST 2025
+  # virgil 20251003.2
+  # Thu Oct  2 22:50:30 UTC 2025 -- Fri Oct  3 08:50:30 AEST 2025
   #
-  # Merged PR 40417: Add DE1 Internal HAProxy Node - CS02085556
-  # 9798c01fd93548488b48e10dd4fb63717f959bfb
-  virgil_build_id: '1480405'
+  # Merged PR 40499: added topic for ocp metrics
+  # fd58e14e2906abfb449e01ddf051762e42a47e53
+  virgil_build_id: '1482312'
 
   # sqlbilling 20251002.5
   # Thu Oct  2 09:52:55 UTC 2025 -- Thu Oct  2 19:52:55 AEST 2025
