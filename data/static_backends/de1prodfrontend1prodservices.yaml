@@ -16,3 +16,4 @@ query.urs.wisegrid.net:
     - name: de1wp-surw-402
       ip: 10.3.151.12
       port: 80
+      settings: backup
