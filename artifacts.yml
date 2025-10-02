@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251001.7
-  # Wed Oct  1 04:37:25 UTC 2025 -- Wed Oct  1 14:37:25 AEST 2025
+  # Dante Build Artifact 20251003.1
+  # Thu Oct  2 23:41:14 UTC 2025 -- Fri Oct  3 09:41:14 AEST 2025
   #
-  # Merged PR 40446: Ansible 12: get IP address without ipaddr filter
-  # 17c83c2c24fef1e3e7240dcfb25c81db93251cba
-  dante_build_id: '1480830'
+  # Merge pull request 40504 from dante_artifact_upgrade into master
+  # 562277f0ee89fe308a87a1b3cbb9d3d48a8cad9b
+  dante_build_id: '1482359'
 
   # virgil 20251003.2
   # Thu Oct  2 22:50:30 UTC 2025 -- Fri Oct  3 08:50:30 AEST 2025
