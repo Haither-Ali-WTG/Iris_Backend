@@ -7,7 +7,7 @@ dev.cargosphere.us:
     - name: us2vml168017
       ip: 10.4.168.17
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(dev.cargosphere.us)
 
 www.cargosphere.us:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
@@ -27,7 +27,7 @@ regression.cargosphere.us:
     - name: us2vml168013
       ip: 10.4.168.13
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(regression.cargosphere.us)
 
 www.cargosphere.biz:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
@@ -37,7 +37,7 @@ www.cargosphere.biz:
     - name: us2vml169012
       ip: 10.4.169.12
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(www.cargosphere.biz)
 
 www.cargosphere.net:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
@@ -57,7 +57,7 @@ test.cargosphere.us:
     - name: us2vml169014
       ip: 10.4.169.14
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(test.cargosphere.us)
 
 www.cargosphere.co:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
@@ -67,7 +67,7 @@ www.cargosphere.co:
     - name: us2vml169015
       ip: 10.4.169.15
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(www.cargosphere.co)
 
 rdg.depotsystems.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
