@@ -281,14 +281,8 @@ clustered_instances:
           plaintext:
             - 2025  # TEST backends port 25
             - 2587  # TEST backends port 587
-            - 2130  # mockendpoints_api_test_wisegrid_net_13000
-            - 2131  # mockendpoints_api_test_wisegrid_net_13001
-            - 2132  # mockendpoints_api_test_wisegrid_net_13002
-            - 2133  # mockendpoints_api_test_wisegrid_net_13003
-            - 2134  # mockendpoints_api_test_wisegrid_net_13004
             - 3025  # PROD backends port 25
             - 3587  # PROD backends port 587
-            - 2135  # mockendpoints_api_test_wisegrid_net_443
       iis_servers: []
       certificates: []
       machine_cluster: au2-prod-internal-1
