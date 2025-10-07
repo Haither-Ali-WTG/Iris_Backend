@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251007.1
-  # Mon Oct  6 19:02:48 UTC 2025 -- Tue Oct  7 06:02:48 AEDT 2025
+  # Dante Build Artifact 20251007.2
+  # Tue Oct  7 05:46:59 UTC 2025 -- Tue Oct  7 16:46:59 AEDT 2025
   #
-  # Merge pull request 40555 from dante_artifact_upgrade into master
-  # a058a2cf5c49aae86375a7085ab32596608bb14f
-  dante_build_id: '1485388'
+  # Merged PR 40581: config: disable snmp for all sn2700 switches
+  # 443a2ba061d45a7fad9be297eb3d478d22ec9fc2
+  dante_build_id: '1485824'
 
   # virgil 20251007.2
   # Mon Oct  6 18:21:26 UTC 2025 -- Tue Oct  7 05:21:26 AEDT 2025
