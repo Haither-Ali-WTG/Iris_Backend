@@ -39,7 +39,7 @@ app-us.borderwise.com:
   servers:
     - name: us2wp-sdkr-1
       ip: 10.4.67.111
-      port: 50335
+      port: 50035
     - name: us2wp-sdkr-2
       ip: 10.4.67.112
       port: 50035
