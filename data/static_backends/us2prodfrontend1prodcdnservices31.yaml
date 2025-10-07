@@ -37,11 +37,11 @@ app-us.borderwise.com:
     enabled: true
     http_path: /api/wtg/ready
   servers:
-    - name: AU2WP-SDKR-1
-      ip: 10.2.67.111
-      port: 50035
-    - name: AU2WP-SDKR-2
-      ip: 10.2.67.112
+    - name: us2wp-sdkr-1
+      ip: 10.4.67.111
+      port: 50335
+    - name: us2wp-sdkr-2
+      ip: 10.4.67.112
       port: 50035
 
 us.identity.wisetechglobal.com-login:
