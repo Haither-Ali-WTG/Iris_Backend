@@ -652,3 +652,14 @@ myaccount-umbraco-temp-sand-wtg-zone-catchall:
     - name: AU2SP-SWEB-407
       ip: 10.2.122.23
       port: 80
+
+api-vt-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: au2sp-sdkr-401
+      ip: 10.2.116.27
+      port: 8075
