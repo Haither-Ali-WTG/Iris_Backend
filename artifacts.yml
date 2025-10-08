@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251008.6
-  # Wed Oct  8 01:19:26 UTC 2025 -- Wed Oct  8 12:19:26 AEDT 2025
+  # Dante Build Artifact 20251008.8
+  # Wed Oct  8 03:14:37 UTC 2025 -- Wed Oct  8 14:14:37 AEDT 2025
   #
-  # Merge pull request 40511 from automatic_dhcp_server_image_upgrade into master
-  # 7bcd20bfd4659f95c6421de4836e7d7c608d2844
-  dante_build_id: '1486696'
+  # Merge pull request 40494 from automatic_botticelli_image_upgrade into master
+  # 1c127f6f6b492b3bb5d87303cd55e573d3071ea6
+  dante_build_id: '1486812'
 
-  # virgil 20251008.8
-  # Tue Oct  7 23:14:17 UTC 2025 -- Wed Oct  8 10:14:17 AEDT 2025
+  # virgil 20251008.13
+  # Wed Oct  8 02:40:28 UTC 2025 -- Wed Oct  8 13:40:28 AEDT 2025
   #
-  # Merged PR 40609: Add another apex pair for SAN switching
-  # f3e0e709abee9304dadf1c24a4653d317d69546c
-  virgil_build_id: '1486528'
+  # Merged PR 40607: add new switches in DE1
+  # 0e1e01ba7342aa9fcea10386c29ad8b2eea507b1
+  virgil_build_id: '1486779'
 
   # sqlbilling 20251007.2
   # Tue Oct  7 12:46:24 UTC 2025 -- Tue Oct  7 23:46:24 AEDT 2025
