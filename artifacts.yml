@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251008.9
-  # Wed Oct  8 04:02:16 UTC 2025 -- Wed Oct  8 15:02:16 AEDT 2025
+  # Dante Build Artifact 20251008.10
+  # Wed Oct  8 06:01:14 UTC 2025 -- Wed Oct  8 17:01:14 AEDT 2025
   #
-  # Merge pull request 40658 from dante_artifact_upgrade into master
-  # 1839b5abcd03d54474a25aafce26bd5e62d8e116
-  dante_build_id: '1486864'
+  # Merge pull request 40694 from dante_artifact_upgrade into master
+  # b7ed6d79823fc1a2b5e6c7314aa61c86d2569ad2
+  dante_build_id: '1486987'
 
-  # virgil 20251008.13
-  # Wed Oct  8 02:40:28 UTC 2025 -- Wed Oct  8 13:40:28 AEDT 2025
+  # virgil 20251008.16
+  # Wed Oct  8 05:21:08 UTC 2025 -- Wed Oct  8 16:21:08 AEDT 2025
   #
-  # Merged PR 40607: add new switches in DE1
-  # 0e1e01ba7342aa9fcea10386c29ad8b2eea507b1
-  virgil_build_id: '1486779'
+  # Merged PR 40684: add DAT VLANs
+  # 350fb7c111f6009049ba9366dca9fa3bf5942cd6
+  virgil_build_id: '1486934'
 
   # sqlbilling 20251007.2
   # Tue Oct  7 12:46:24 UTC 2025 -- Tue Oct  7 23:46:24 AEDT 2025
