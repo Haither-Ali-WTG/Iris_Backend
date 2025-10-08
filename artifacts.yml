@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251007.2
-  # Tue Oct  7 05:46:59 UTC 2025 -- Tue Oct  7 16:46:59 AEDT 2025
+  # Dante Build Artifact 20251008.6
+  # Wed Oct  8 01:19:26 UTC 2025 -- Wed Oct  8 12:19:26 AEDT 2025
   #
-  # Merged PR 40581: config: disable snmp for all sn2700 switches
-  # 443a2ba061d45a7fad9be297eb3d478d22ec9fc2
-  dante_build_id: '1485824'
+  # Merge pull request 40511 from automatic_dhcp_server_image_upgrade into master
+  # 7bcd20bfd4659f95c6421de4836e7d7c608d2844
+  dante_build_id: '1486696'
 
-  # virgil 20251007.2
-  # Mon Oct  6 18:21:26 UTC 2025 -- Tue Oct  7 05:21:26 AEDT 2025
+  # virgil 20251008.8
+  # Tue Oct  7 23:14:17 UTC 2025 -- Wed Oct  8 10:14:17 AEDT 2025
   #
-  # Merge pull request 40546 from virgil_python_upgrade into master
-  # 3e68e4d8abda41f82c6cec4e7fbdd515d5c990ed
-  virgil_build_id: '1485346'
+  # Merged PR 40609: Add another apex pair for SAN switching
+  # f3e0e709abee9304dadf1c24a4653d317d69546c
+  virgil_build_id: '1486528'
 
   # sqlbilling 20251007.2
   # Tue Oct  7 12:46:24 UTC 2025 -- Tue Oct  7 23:46:24 AEDT 2025
