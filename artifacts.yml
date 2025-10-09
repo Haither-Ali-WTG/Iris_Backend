@@ -7,16 +7,16 @@ variables:
   # 1104c09c6a3c5d2c9b04b2d6c90dd436b81148e4
   dante_build_id: '1488026'
 
-  # virgil 20251009.23
-  # Thu Oct  9 05:15:37 UTC 2025 -- Thu Oct  9 16:15:37 AEDT 2025
+  # virgil 20251010.1
+  # Thu Oct  9 14:08:00 UTC 2025 -- Fri Oct 10 01:08:00 AEDT 2025
   #
-  # Merged PR 40772: add new apex switches in DE1
-  # 5335507e1b91cecaff6f84e6307c57fcecc3b394
-  virgil_build_id: '1487981'
+  # Merged PR 40720: Repurpose 5 US2 Hyper-V hosts
+  # d5f928c6d8f925a848d05754e3ad67a88384bf0b
+  virgil_build_id: '1488343'
 
-  # sqlbilling 20251009.5
-  # Thu Oct  9 06:46:55 UTC 2025 -- Thu Oct  9 17:46:55 AEDT 2025
+  # sqlbilling 20251010.2
+  # Thu Oct  9 14:11:22 UTC 2025 -- Fri Oct 10 01:11:22 AEDT 2025
   #
-  # Merged PR 40792: Update SQL Readonly
-  # a12623a907b9ebe235ef96df97c06fcecae207f0
-  sqlbilling_build_id: '1488075'
+  # Merged PR 40805: Modify SQLReadOnlyIP DE1 CS02101226
+  # e24222523736225d0ed304e05140b5b619d52bcb
+  sqlbilling_build_id: '1488345'
