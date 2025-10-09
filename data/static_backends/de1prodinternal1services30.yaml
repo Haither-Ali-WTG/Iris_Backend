@@ -187,9 +187,11 @@ portalapi-de1.cwconnector.wisegrid.net:
     - name: de1wp-scwi-403a
       ip: 10.3.88.149
       port: 5443
+      settings: check ssl verify none
     - name: de1wp-scwi-403b
       ip: 10.3.88.150
       port: 5443
+      settings: check ssl verify none
 
 secretapi-de1.cwconnector.wisegrid.net:
   clustered_instances: [de1prodinternal1services30]
@@ -203,9 +205,11 @@ secretapi-de1.cwconnector.wisegrid.net:
     - name: de1wp-scwi-404a
       ip: 10.3.251.11
       port: 5443
+      settings: check ssl verify none
     - name: de1wp-scwi-404b
       ip: 10.3.251.12
       port: 5443
+      settings: check ssl verify none
 
 runtimeapi-de1.cwconnector.wisegrid.net:
   clustered_instances: [de1prodinternal1services30]
@@ -219,6 +223,8 @@ runtimeapi-de1.cwconnector.wisegrid.net:
     - name: de1wp-scwi-405a
       ip: 10.3.88.155
       port: 5443
+      settings: check ssl verify none
     - name: de1wp-scwi-405b
       ip: 10.3.88.156
       port: 5443
+      settings: check ssl verify none

@@ -132,9 +132,11 @@ portal-de.cwconnector.wisegrid.net:
     - name: de1wp-siis-401a
       ip: 10.3.69.27
       port: 5443
+      settings: check ssl verify none
     - name: de1wp-siis-401b
       ip: 10.3.69.28
       port: 5443
+      settings: check ssl verify none
 
 compliance-de.borderwise.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
