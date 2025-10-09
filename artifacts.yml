@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251009.3
-  # Thu Oct  9 00:41:14 UTC 2025 -- Thu Oct  9 11:41:14 AEDT 2025
+  # Dante Build Artifact 20251009.4
+  # Thu Oct  9 04:03:16 UTC 2025 -- Thu Oct  9 15:03:16 AEDT 2025
   #
-  # Merge pull request 40750 from dante_artifact_upgrade into master
-  # 24416da72184659470084fc1e8e144ce0806feef
-  dante_build_id: '1487760'
+  # Merge pull request 40764 from dante_artifact_upgrade into master
+  # 74b5fa5dfc87854544ca76100b0ac65d6ed56710
+  dante_build_id: '1487911'
 
-  # virgil 20251009.9
-  # Thu Oct  9 00:01:57 UTC 2025 -- Thu Oct  9 11:01:57 AEDT 2025
+  # virgil 20251009.13
+  # Thu Oct  9 03:17:54 UTC 2025 -- Thu Oct  9 14:17:54 AEDT 2025
   #
-  # Merged PR 40717: DE1 leaf5/6
-  # 67597a3e70828a8a36c5fee4bbd2eadf960a23be
-  virgil_build_id: '1487707'
+  # Merged PR 40759: add cidrs for DE1 and US2
+  # cab7f2ef294a461d0a0e29f454e58b67934a4026
+  virgil_build_id: '1487865'
 
   # sqlbilling 20251009.1
   # Wed Oct  8 13:12:53 UTC 2025 -- Thu Oct  9 00:12:53 AEDT 2025
