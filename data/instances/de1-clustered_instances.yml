@@ -361,8 +361,8 @@ clustered_instances:
           plaintext: []
       stats:
         ports:
-          web: 2066
-          socket: 2067
+          web: 2070
+          socket: 2071
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
