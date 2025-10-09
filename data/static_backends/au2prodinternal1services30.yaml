@@ -100,6 +100,8 @@ runtimeapi-au2.cwconnector.wisegrid.net:
 
 compliancewise-test.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: CMPT
   http_health_check:
     enabled: true
     http_path: /staging/wtg/status
