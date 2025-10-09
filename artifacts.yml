@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251009.4
-  # Thu Oct  9 04:03:16 UTC 2025 -- Thu Oct  9 15:03:16 AEDT 2025
+  # Dante Build Artifact 20251009.5
+  # Thu Oct  9 06:01:21 UTC 2025 -- Thu Oct  9 17:01:21 AEDT 2025
   #
-  # Merge pull request 40764 from dante_artifact_upgrade into master
-  # 74b5fa5dfc87854544ca76100b0ac65d6ed56710
-  dante_build_id: '1487911'
+  # Merge pull request 40785 from dante_artifact_upgrade into master
+  # 1104c09c6a3c5d2c9b04b2d6c90dd436b81148e4
+  dante_build_id: '1488026'
 
-  # virgil 20251009.13
-  # Thu Oct  9 03:17:54 UTC 2025 -- Thu Oct  9 14:17:54 AEDT 2025
+  # virgil 20251009.23
+  # Thu Oct  9 05:15:37 UTC 2025 -- Thu Oct  9 16:15:37 AEDT 2025
   #
-  # Merged PR 40759: add cidrs for DE1 and US2
-  # cab7f2ef294a461d0a0e29f454e58b67934a4026
-  virgil_build_id: '1487865'
+  # Merged PR 40772: add new apex switches in DE1
+  # 5335507e1b91cecaff6f84e6307c57fcecc3b394
+  virgil_build_id: '1487981'
 
-  # sqlbilling 20251009.1
-  # Wed Oct  8 13:12:53 UTC 2025 -- Thu Oct  9 00:12:53 AEDT 2025
+  # sqlbilling 20251009.5
+  # Thu Oct  9 06:46:55 UTC 2025 -- Thu Oct  9 17:46:55 AEDT 2025
   #
-  # Merged PR 40716: SQLBilling-Add-CS02099439.yml
-  # 2fb6facaa286e09d291e1eea2c8345a248459de1
-  sqlbilling_build_id: '1487262'
+  # Merged PR 40792: Update SQL Readonly
+  # a12623a907b9ebe235ef96df97c06fcecae207f0
+  sqlbilling_build_id: '1488075'
