@@ -589,9 +589,11 @@ portal-staging-cwconnector.sand.wtg.zone:
     - name: au2sp-siis-402a
       ip: 10.2.69.77
       port: 5443
+      settings: check ssl verify none
     - name: au2sp-siis-402b
       ip: 10.2.69.78
       port: 5443
+      settings: check ssl verify none
 
 vt-test.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
@@ -667,3 +669,39 @@ api-vt-test.sand.wtg.zone:
     - name: au2sp-sdkr-401
       ip: 10.2.116.27
       port: 8075
+
+portalapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-401
+      ip: 10.2.116.62
+      port: 5443
+      settings: check ssl verify none
+
+secretapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-403
+      ip: 10.2.116.64
+      port: 5443
+      settings: check ssl verify none
+
+runtimeapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-402
+      ip: 10.2.116.63
+      port: 5443  
+      settings: check ssl verify none

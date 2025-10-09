@@ -147,9 +147,11 @@ portal-au.cwconnector.wisegrid.net:
     - name: AU2WP-SIIS-406A
       ip: 10.2.69.55
       port: 5443
+      settings: check ssl verify none
     - name: AU2WP-SIIS-406B
       ip: 10.2.69.56
       port: 5443
+      settings: check ssl verify none
 
 compliance-au.borderwise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]

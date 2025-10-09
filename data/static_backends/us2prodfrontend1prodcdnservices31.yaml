@@ -147,9 +147,11 @@ portal-us.cwconnector.wisegrid.net:
     - name: us2wp-siis-401a
       ip: 10.4.66.27
       port: 5443
+      settings: check ssl verify none
     - name: us2wp-siis-401b
       ip: 10.4.66.28
       port: 5443
+      settings: check ssl verify none
 
 compliance-us.borderwise.com:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
