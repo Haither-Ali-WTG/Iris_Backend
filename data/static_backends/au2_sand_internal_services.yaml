@@ -703,5 +703,5 @@ runtimeapi-staging-cwconnector.sand.wtg.zone:
   servers:
     - name: au2sp-scwi-402
       ip: 10.2.116.63
-      port: 5443  
+      port: 5443
       settings: check ssl verify none
