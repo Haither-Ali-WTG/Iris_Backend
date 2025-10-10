@@ -7,12 +7,12 @@ variables:
   # 807dafeab3d0d4fe7c72f4330ed81070351d8213
   dante_build_id: '1488386'
 
-  # virgil 20251010.1
-  # Thu Oct  9 14:08:00 UTC 2025 -- Fri Oct 10 01:08:00 AEDT 2025
+  # virgil 20251010.6
+  # Fri Oct 10 04:11:30 UTC 2025 -- Fri Oct 10 15:11:30 AEDT 2025
   #
-  # Merged PR 40720: Repurpose 5 US2 Hyper-V hosts
-  # d5f928c6d8f925a848d05754e3ad67a88384bf0b
-  virgil_build_id: '1488343'
+  # Merged PR 40819: Re-re-repurpose the C53s
+  # 7055b19be0dfcaed1ef8c5926ed305669145a22b
+  virgil_build_id: '1488895'
 
   # sqlbilling 20251010.2
   # Thu Oct  9 14:11:22 UTC 2025 -- Fri Oct 10 01:11:22 AEDT 2025
