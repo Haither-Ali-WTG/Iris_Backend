@@ -168,3 +168,19 @@ compliance-au.borderwise.com:
     - name: au2wp-sdkr-2
       ip: 10.2.67.112
       port: 50335
+
+gsswebhooks.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: GSSWH
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2wp-sdkr-402a
+      ip: 10.2.88.137
+      port: 42305
+    - name: au2wp-sdkr-402b
+      ip: 10.2.88.138
+      port: 42305
