@@ -330,3 +330,39 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
+
+    de1prodfrontend1tenantservices:
+      # de1-prod-frontend-1-tenant-services
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2033]
+          ssl: [2034]
+      stats:
+        ports:
+          web: 2068
+          socket: 2069
+      machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+
+    de1prodfrontend1tenanttcp:
+      # de1-prod-frontend-1-tenant-tcp
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: []
+      stats:
+        ports:
+          web: 2070
+          socket: 2071
+      machine_cluster: de1-prod-frontend-1
+      iis_servers: []
+      certificates: []
