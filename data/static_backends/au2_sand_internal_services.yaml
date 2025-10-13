@@ -668,7 +668,7 @@ api-vt-test.sand.wtg.zone:
   servers:
     - name: au2sp-sdkr-401
       ip: 10.2.116.27
-      port: 8075
+      port: 8095
 
 portalapi-staging-cwconnector.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
