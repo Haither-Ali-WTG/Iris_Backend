@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251014.1
-  # Tue Oct 14 00:34:25 UTC 2025 -- Tue Oct 14 11:34:25 AEDT 2025
+  # Dante Build Artifact 20251014.2
+  # Tue Oct 14 01:21:15 UTC 2025 -- Tue Oct 14 12:21:15 AEDT 2025
   #
-  # Merged PR 40879: Removed Cumulus 5.11.1 support
-  # d98a51e355bd99b335f89246c5cff31ea8a0808c
-  dante_build_id: '1492317'
+  # Merge pull request 40941 from dante_artifact_upgrade into master
+  # 9abeaa06a9871fba28b207b701419a47e669ef24
+  dante_build_id: '1492370'
 
   # virgil 20251014.3
   # Tue Oct 14 00:01:47 UTC 2025 -- Tue Oct 14 11:01:47 AEDT 2025
