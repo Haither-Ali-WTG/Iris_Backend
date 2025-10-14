@@ -7,16 +7,16 @@ variables:
   # 313aa95a3663b94a732ea7effb2215827d2af965
   dante_build_id: '1492534'
 
-  # virgil 20251014.7
-  # Tue Oct 14 03:39:48 UTC 2025 -- Tue Oct 14 14:39:48 AEDT 2025
+  # virgil 20251014.9
+  # Tue Oct 14 08:28:47 UTC 2025 -- Tue Oct 14 19:28:47 AEDT 2025
   #
-  # Merged PR 40967: repurpose 2x eye into new GS nodes
-  # 3fe8e91515b31b7ed60642e1d1a9444119349106
-  virgil_build_id: '1492491'
+  # Merged PR 40990: unique rack number for new apex35/36
+  # ec5b7613f2a07fc50e01f49af291490be6ad3022
+  virgil_build_id: '1492726'
 
-  # sqlbilling 20251013.2
-  # Mon Oct 13 10:54:22 UTC 2025 -- Mon Oct 13 21:54:22 AEDT 2025
+  # sqlbilling 20251014.2
+  # Tue Oct 14 06:10:44 UTC 2025 -- Tue Oct 14 17:10:44 AEDT 2025
   #
-  # Merged PR 40924: SQLBilling-Add-CS02101731.yml
-  # 686ccd19729c06fb4d3739015720c3dc3c01a9f9
-  sqlbilling_build_id: '1491741'
+  # Merged PR 40926: AddSQLReadOnlyIPS US2 CS02102750 AU2 CS02103433
+  # 2a93b6d1f4c0c2329d95c186333f91051509a0d0
+  sqlbilling_build_id: '1492633'
