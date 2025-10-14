@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251013.2
-  # Mon Oct 13 02:41:24 UTC 2025 -- Mon Oct 13 13:41:24 AEDT 2025
+  # Dante Build Artifact 20251014.1
+  # Tue Oct 14 00:34:25 UTC 2025 -- Tue Oct 14 11:34:25 AEDT 2025
   #
-  # Merge pull request 40893 from dante_artifact_upgrade into master
-  # c9b6cc7b6c54411cbae90c2ab578bd82c5107b65
-  dante_build_id: '1491399'
+  # Merged PR 40879: Removed Cumulus 5.11.1 support
+  # d98a51e355bd99b335f89246c5cff31ea8a0808c
+  dante_build_id: '1492317'
 
-  # virgil 20251013.8
-  # Mon Oct 13 02:00:40 UTC 2025 -- Mon Oct 13 13:00:40 AEDT 2025
+  # virgil 20251014.3
+  # Tue Oct 14 00:01:47 UTC 2025 -- Tue Oct 14 11:01:47 AEDT 2025
   #
-  # Merged PR 40858: feat: Add / Sync devices to device42
-  # 6087831e2a54f42c513f0357854cfae9a75f3851
-  virgil_build_id: '1491367'
+  # Merge pull request 40928 from virgil_python_upgrade into master
+  # c059284c720707222828d8b067b6a746772c7845
+  virgil_build_id: '1492274'
 
   # sqlbilling 20251013.2
   # Mon Oct 13 10:54:22 UTC 2025 -- Mon Oct 13 21:54:22 AEDT 2025
