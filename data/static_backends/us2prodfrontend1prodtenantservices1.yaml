@@ -47,7 +47,7 @@ www.cargosphere.net:
     - name: us2vml169013
       ip: 10.4.169.13
       port: 443
-      settings: check ssl verify none
+      settings: check ssl verify none sni str(www.cargosphere.net)
 
 test.cargosphere.us:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
