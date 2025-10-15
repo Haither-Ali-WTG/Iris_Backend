@@ -7,12 +7,12 @@ variables:
   # 0b690ace998ce3e66b7958b958ba82747db05c0a
   dante_build_id: '1493642'
 
-  # virgil 20251015.3
-  # Wed Oct 15 05:27:55 UTC 2025 -- Wed Oct 15 16:27:55 AEDT 2025
+  # virgil 20251016.1
+  # Wed Oct 15 20:16:04 UTC 2025 -- Thu Oct 16 07:16:04 AEDT 2025
   #
-  # Merged PR 41017: rectifying subnet records in virgil amit
-  # 348ff68c221dcab0a2b2b2c68cc2697bade77082
-  virgil_build_id: '1493581'
+  # Merged PR 41039: update AU2 HAproxy nodes details, after schema change from serial -> serial_number
+  # 74f2de102798051566d7a61fd7688586dc529569
+  virgil_build_id: '1494160'
 
   # sqlbilling 20251014.2
   # Tue Oct 14 06:10:44 UTC 2025 -- Tue Oct 14 17:10:44 AEDT 2025
