@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251016.2
-  # Thu Oct 16 05:01:07 UTC 2025 -- Thu Oct 16 16:01:07 AEDT 2025
+  # Dante Build Artifact 20251016.4
+  # Thu Oct 16 12:21:24 UTC 2025 -- Thu Oct 16 23:21:24 AEDT 2025
   #
-  # Merge pull request 41090 from dante_artifact_upgrade into master
-  # 42c68773300d1761e196d9b05e086c18bea11bb6
-  dante_build_id: '1494622'
+  # Merge pull request 41129 from dante_artifact_upgrade into master
+  # 9b2213570024d1d0d5df28de859f5c82517be653
+  dante_build_id: '1494963'
 
-  # virgil 20251016.18
-  # Thu Oct 16 06:33:10 UTC 2025 -- Thu Oct 16 17:33:10 AEDT 2025
+  # virgil 20251016.20
+  # Thu Oct 16 11:28:06 UTC 2025 -- Thu Oct 16 22:28:06 AEDT 2025
   #
-  # Merged PR 41071: 2nd batch, more Eye to GS
-  # 9ab5249dd255ade849a28fdec27eab944aaa8326
-  virgil_build_id: '1494714'
+  # Merged PR 41127: add apex37/38 in DE1
+  # 0892f5eeb05aa0fd9c886bfb37d48230fc041de2
+  virgil_build_id: '1494911'
 
-  # sqlbilling 20251014.2
-  # Tue Oct 14 06:10:44 UTC 2025 -- Tue Oct 14 17:10:44 AEDT 2025
+  # sqlbilling 20251016.4
+  # Thu Oct 16 12:05:56 UTC 2025 -- Thu Oct 16 23:05:56 AEDT 2025
   #
-  # Merged PR 40926: AddSQLReadOnlyIPS US2 CS02102750 AU2 CS02103433
-  # 2a93b6d1f4c0c2329d95c186333f91051509a0d0
-  sqlbilling_build_id: '1492633'
+  # Merged PR 41128: SQLBilling-Add-CS02108073-CS02108120.yml
+  # 90720a190026fc3eda21bdd6f95a21245a6a8a4b
+  sqlbilling_build_id: '1494952'
