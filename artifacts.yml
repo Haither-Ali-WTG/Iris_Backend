@@ -7,12 +7,12 @@ variables:
   # 42c68773300d1761e196d9b05e086c18bea11bb6
   dante_build_id: '1494622'
 
-  # virgil 20251016.14
-  # Thu Oct 16 04:19:34 UTC 2025 -- Thu Oct 16 15:19:34 AEDT 2025
+  # virgil 20251016.18
+  # Thu Oct 16 06:33:10 UTC 2025 -- Thu Oct 16 17:33:10 AEDT 2025
   #
-  # Merged PR 41089: update hardware apex35/36
-  # 3ad4bc6d241377cd787afc028b41793926d05ab1
-  virgil_build_id: '1494582'
+  # Merged PR 41071: 2nd batch, more Eye to GS
+  # 9ab5249dd255ade849a28fdec27eab944aaa8326
+  virgil_build_id: '1494714'
 
   # sqlbilling 20251014.2
   # Tue Oct 14 06:10:44 UTC 2025 -- Tue Oct 14 17:10:44 AEDT 2025
