@@ -7,12 +7,12 @@ variables:
   # 9b2213570024d1d0d5df28de859f5c82517be653
   dante_build_id: '1494963'
 
-  # virgil 20251016.20
-  # Thu Oct 16 11:28:06 UTC 2025 -- Thu Oct 16 22:28:06 AEDT 2025
+  # virgil 20251017.4
+  # Thu Oct 16 20:01:37 UTC 2025 -- Fri Oct 17 07:01:37 AEDT 2025
   #
-  # Merged PR 41127: add apex37/38 in DE1
-  # 0892f5eeb05aa0fd9c886bfb37d48230fc041de2
-  virgil_build_id: '1494911'
+  # Merged PR 41139: add apex39/40 in DE1
+  # 83e0fdd2e549738a87901e79012861c111701b68
+  virgil_build_id: '1495260'
 
   # sqlbilling 20251017.2
   # Thu Oct 16 14:13:34 UTC 2025 -- Fri Oct 17 01:13:34 AEDT 2025
