@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251016.1
-  # Wed Oct 15 21:01:41 UTC 2025 -- Thu Oct 16 08:01:41 AEDT 2025
+  # Dante Build Artifact 20251016.2
+  # Thu Oct 16 05:01:07 UTC 2025 -- Thu Oct 16 16:01:07 AEDT 2025
   #
-  # Merge pull request 41056 from dante_artifact_upgrade into master
-  # 8b36d3aa051e2fc3c70eedac5b9d1cee552afc1c
-  dante_build_id: '1494212'
+  # Merge pull request 41090 from dante_artifact_upgrade into master
+  # 42c68773300d1761e196d9b05e086c18bea11bb6
+  dante_build_id: '1494622'
 
-  # virgil 20251016.1
-  # Wed Oct 15 20:16:04 UTC 2025 -- Thu Oct 16 07:16:04 AEDT 2025
+  # virgil 20251016.14
+  # Thu Oct 16 04:19:34 UTC 2025 -- Thu Oct 16 15:19:34 AEDT 2025
   #
-  # Merged PR 41039: update AU2 HAproxy nodes details, after schema change from serial -> serial_number
-  # 74f2de102798051566d7a61fd7688586dc529569
-  virgil_build_id: '1494160'
+  # Merged PR 41089: update hardware apex35/36
+  # 3ad4bc6d241377cd787afc028b41793926d05ab1
+  virgil_build_id: '1494582'
 
   # sqlbilling 20251014.2
   # Tue Oct 14 06:10:44 UTC 2025 -- Tue Oct 14 17:10:44 AEDT 2025
