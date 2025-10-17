@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251017.1
-  # Thu Oct 16 21:01:54 UTC 2025 -- Fri Oct 17 08:01:54 AEDT 2025
+  # Dante Build Artifact 20251017.3
+  # Fri Oct 17 02:39:35 UTC 2025 -- Fri Oct 17 13:39:35 AEDT 2025
   #
-  # Merge pull request 41142 from dante_artifact_upgrade into master
-  # 809fd1d087c9415dc0edfda426abeb3691eade58
-  dante_build_id: '1495305'
+  # Merged PR 41170: Remove filebeat & metricbeat installations on Management nodes.
+  # 8a412201015dc648555072a442549bda7538daa3
+  dante_build_id: '1495602'
 
-  # virgil 20251017.4
-  # Thu Oct 16 20:01:37 UTC 2025 -- Fri Oct 17 07:01:37 AEDT 2025
+  # virgil 20251017.10
+  # Fri Oct 17 01:15:27 UTC 2025 -- Fri Oct 17 12:15:27 AEDT 2025
   #
-  # Merged PR 41139: add apex39/40 in DE1
-  # 83e0fdd2e549738a87901e79012861c111701b68
-  virgil_build_id: '1495260'
+  # Merged PR 41160: update apex41-44 in DE1
+  # f0f97982a3f81c5c0e28371987536e4513e95f32
+  virgil_build_id: '1495524'
 
-  # sqlbilling 20251017.2
-  # Thu Oct 16 14:13:34 UTC 2025 -- Fri Oct 17 01:13:34 AEDT 2025
+  # sqlbilling 20251018.1
+  # Fri Oct 17 13:01:37 UTC 2025 -- Sat Oct 18 00:01:37 AEDT 2025
   #
-  # Merged PR 41140: AddSQLReadOnlyIP US2 CS02101913
-  # 6f47e5bc41014dfb53da1b5e9c879991f4bede2c
-  sqlbilling_build_id: '1495048'
+  # Merged PR 41198: Updated us2-prod-frontend-1.yml
+  # 5e3dd0731a525da5aad61ad6f0021ebfec899f78
+  sqlbilling_build_id: '1496005'
