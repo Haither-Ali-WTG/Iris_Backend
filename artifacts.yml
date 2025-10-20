@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251017.3
-  # Fri Oct 17 02:39:35 UTC 2025 -- Fri Oct 17 13:39:35 AEDT 2025
+  # Dante Build Artifact 20251020.1
+  # Mon Oct 20 03:01:29 UTC 2025 -- Mon Oct 20 14:01:29 AEDT 2025
   #
-  # Merged PR 41170: Remove filebeat & metricbeat installations on Management nodes.
-  # 8a412201015dc648555072a442549bda7538daa3
-  dante_build_id: '1495602'
+  # Merge pull request 41221 from dante_artifact_upgrade into master
+  # 04028bd438c6b15eb8d7ade5345b9954120ac7f5
+  dante_build_id: '1498262'
 
-  # virgil 20251017.10
-  # Fri Oct 17 01:15:27 UTC 2025 -- Fri Oct 17 12:15:27 AEDT 2025
+  # virgil 20251020.1
+  # Mon Oct 20 02:23:17 UTC 2025 -- Mon Oct 20 13:23:17 AEDT 2025
   #
-  # Merged PR 41160: update apex41-44 in DE1
-  # f0f97982a3f81c5c0e28371987536e4513e95f32
-  virgil_build_id: '1495524'
+  # Merged PR 41199: Move some experimental SR650s
+  # 57f68d37c8cf6d890238206fc4b2d70b745fe2da
+  virgil_build_id: '1498207'
 
   # sqlbilling 20251018.1
   # Fri Oct 17 13:01:37 UTC 2025 -- Sat Oct 18 00:01:37 AEDT 2025
