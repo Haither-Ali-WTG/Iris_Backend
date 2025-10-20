@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251020.2
-  # Mon Oct 20 04:16:08 UTC 2025 -- Mon Oct 20 15:16:08 AEDT 2025
+  # Dante Build Artifact 20251021.1
+  # Mon Oct 20 19:02:04 UTC 2025 -- Tue Oct 21 06:02:04 AEDT 2025
   #
-  # Merged PR 41238: Allow rsyslog imjournal access in apparmor
-  # 739e2e07fbd167ed13b3fc8424f4f9889f0389ca
-  dante_build_id: '1498334'
+  # Merge pull request 41265 from dante_artifact_upgrade into master
+  # 876665c2e0635b59b6e120a6b89758b5efca5f74
+  dante_build_id: '1498915'
 
-  # virgil 20251020.1
-  # Mon Oct 20 02:23:17 UTC 2025 -- Mon Oct 20 13:23:17 AEDT 2025
+  # virgil 20251021.5
+  # Mon Oct 20 20:49:48 UTC 2025 -- Tue Oct 21 07:49:48 AEDT 2025
   #
-  # Merged PR 41199: Move some experimental SR650s
-  # 57f68d37c8cf6d890238206fc4b2d70b745fe2da
-  virgil_build_id: '1498207'
+  # Merged PR 41249: Adding new node, AU2 Haproxy Internal node3
+  # 4709a37e988f1d6e37441756ba2e9200f1f36e08
+  virgil_build_id: '1498993'
 
   # sqlbilling 20251020.3
   # Mon Oct 20 10:58:49 UTC 2025 -- Mon Oct 20 21:58:49 AEDT 2025
