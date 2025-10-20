@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251020.1
-  # Mon Oct 20 03:01:29 UTC 2025 -- Mon Oct 20 14:01:29 AEDT 2025
+  # Dante Build Artifact 20251020.2
+  # Mon Oct 20 04:16:08 UTC 2025 -- Mon Oct 20 15:16:08 AEDT 2025
   #
-  # Merge pull request 41221 from dante_artifact_upgrade into master
-  # 04028bd438c6b15eb8d7ade5345b9954120ac7f5
-  dante_build_id: '1498262'
+  # Merged PR 41238: Allow rsyslog imjournal access in apparmor
+  # 739e2e07fbd167ed13b3fc8424f4f9889f0389ca
+  dante_build_id: '1498334'
 
   # virgil 20251020.1
   # Mon Oct 20 02:23:17 UTC 2025 -- Mon Oct 20 13:23:17 AEDT 2025
