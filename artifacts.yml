@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251021.1
-  # Mon Oct 20 19:02:04 UTC 2025 -- Tue Oct 21 06:02:04 AEDT 2025
+  # Dante Build Artifact 20251021.4
+  # Mon Oct 20 23:41:11 UTC 2025 -- Tue Oct 21 10:41:11 AEDT 2025
   #
-  # Merge pull request 41265 from dante_artifact_upgrade into master
-  # 876665c2e0635b59b6e120a6b89758b5efca5f74
-  dante_build_id: '1498915'
+  # Merge pull request 41303 from dante_artifact_upgrade into master
+  # 68d2ee9c982497f2b2d57cadbcfb61b094b4e6ba
+  dante_build_id: '1499203'
 
-  # virgil 20251021.5
-  # Mon Oct 20 20:49:48 UTC 2025 -- Tue Oct 21 07:49:48 AEDT 2025
+  # virgil 20251021.14
+  # Mon Oct 20 23:04:41 UTC 2025 -- Tue Oct 21 10:04:41 AEDT 2025
   #
-  # Merged PR 41249: Adding new node, AU2 Haproxy Internal node3
-  # 4709a37e988f1d6e37441756ba2e9200f1f36e08
-  virgil_build_id: '1498993'
+  # Merged PR 41301: Updated to use Ubuntu 24.04
+  # ca6858ab9a0bf6b31c92df12c4d29249dd7e7c94
+  virgil_build_id: '1499169'
 
   # sqlbilling 20251020.3
   # Mon Oct 20 10:58:49 UTC 2025 -- Mon Oct 20 21:58:49 AEDT 2025
