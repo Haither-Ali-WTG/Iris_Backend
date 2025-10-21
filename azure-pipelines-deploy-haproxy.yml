@@ -79,9 +79,16 @@ stages:
                     - script: |
                         set -euxo pipefail
                         pip install -r requirements.txt
-                        sed -i 's/WTGOps/$(System.AccessToken)/' ansible/requirements.yml
+                        EXTRAHEADER="http.https://dev.azure.com/.extraheader"
+                        git config --global --unset-all ${EXTRAHEADER} || true
+                        git config --global ${EXTRAHEADER} "AUTHORIZATION: bearer $(System.AccessToken)"
                         ansible-galaxy install -r ansible/requirements.yml --force
                       displayName: 'Install requirements'
+
+                    - script: |
+                        git config --global --unset-all http.https://dev.azure.com/.extraheader || true
+                      displayName: 'Cleanup Git credentials'
+                      condition: always()
 
                     - script: |
                         set -euxo pipefail
