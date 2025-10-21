@@ -7,12 +7,12 @@ variables:
   # 68d2ee9c982497f2b2d57cadbcfb61b094b4e6ba
   dante_build_id: '1499203'
 
-  # virgil 20251021.14
-  # Mon Oct 20 23:04:41 UTC 2025 -- Tue Oct 21 10:04:41 AEDT 2025
+  # virgil 20251021.21
+  # Tue Oct 21 05:48:31 UTC 2025 -- Tue Oct 21 16:48:31 AEDT 2025
   #
-  # Merged PR 41301: Updated to use Ubuntu 24.04
-  # ca6858ab9a0bf6b31c92df12c4d29249dd7e7c94
-  virgil_build_id: '1499169'
+  # Merged PR 41336: config: Add queue for CS02107779 - XHUB
+  # aeaa3e7c91a157427cf429c8bc04620c2752692b
+  virgil_build_id: '1499508'
 
   # sqlbilling 20251020.3
   # Mon Oct 20 10:58:49 UTC 2025 -- Mon Oct 20 21:58:49 AEDT 2025
