@@ -7,12 +7,12 @@ variables:
   # 7d996abf6ed9b8e26cbb0367c78efeca6de6cd85
   dante_build_id: '1500668'
 
-  # virgil 20251022.18
-  # Wed Oct 22 06:14:27 UTC 2025 -- Wed Oct 22 17:14:27 AEDT 2025
+  # virgil 20251022.20
+  # Wed Oct 22 07:46:31 UTC 2025 -- Wed Oct 22 18:46:31 AEDT 2025
   #
-  # Merged PR 41435: upgrade version apex52
-  # 59f21747645b9e492929b0dba03b07383820bfd7
-  virgil_build_id: '1500622'
+  # Merged PR 41447: upgrade mac apex51
+  # 690da906306ded9b2b042dc4da8d1e08790d41f5
+  virgil_build_id: '1500706'
 
   # sqlbilling 20251021.6
   # Tue Oct 21 12:17:26 UTC 2025 -- Tue Oct 21 23:17:26 AEDT 2025
