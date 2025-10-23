@@ -602,6 +602,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: knowledge-mcp-wtg-zone
           cms_resource_group: RG-AU-Corp
+        - name: star-knowledge-wtg-zone
+          cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
       stats:
