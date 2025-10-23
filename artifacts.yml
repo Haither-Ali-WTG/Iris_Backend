@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251022.6
-  # Wed Oct 22 08:41:29 UTC 2025 -- Wed Oct 22 19:41:29 AEDT 2025
+  # Dante Build Artifact 20251023.1
+  # Wed Oct 22 23:18:49 UTC 2025 -- Thu Oct 23 10:18:49 AEDT 2025
   #
-  # Merge pull request 41448 from dante_artifact_upgrade into master
-  # 03bc5f92cb60ab97a36c833bad40ed6da782465f
-  dante_build_id: '1500749'
+  # Merged PR 41248: feat: introduce es agent installations in dante (staged)
+  # 15bc73fd9f1695bba7247d1ecd18759a3b22e3c0
+  dante_build_id: '1501321'
 
-  # virgil 20251022.20
-  # Wed Oct 22 07:46:31 UTC 2025 -- Wed Oct 22 18:46:31 AEDT 2025
+  # virgil 20251023.2
+  # Wed Oct 22 22:28:20 UTC 2025 -- Thu Oct 23 09:28:20 AEDT 2025
   #
-  # Merged PR 41447: upgrade mac apex51
-  # 690da906306ded9b2b042dc4da8d1e08790d41f5
-  virgil_build_id: '1500706'
+  # Merged PR 41389: config: delete q1 sql topics
+  # 6fe7ea77bfd12a235d463e0ff9bc9d50cc033af0
+  virgil_build_id: '1501274'
 
   # sqlbilling 20251022.3
   # Wed Oct 22 11:46:21 UTC 2025 -- Wed Oct 22 22:46:21 AEDT 2025
