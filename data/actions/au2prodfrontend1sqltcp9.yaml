@@ -25,6 +25,7 @@ sql_backends_test:
     - use_backend au2wtreadonly410l1-wisegrid-net if { dst_port 6044 }
     - use_backend au2wtreadonly411l1-wisegrid-net if { dst_port 6045 }
     - use_backend au2wtreadonly412l1-wisegrid-net if { dst_port 6054 }
+    - use_backend au2wtreadonly417l1-wisegrid-net if { dst_port 6057 }
 
 sql_backends_prod:
   description: |
