@@ -321,25 +321,30 @@ knowledge-client.mcp.wtg.zone:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-    - name: w2.au2prod1
-      ip: 10.2.213.16
-      port: 30100
-    - name: w3.au2prod1
-      ip: 10.2.213.17
-      port: 30100
-    - name: w4.au2prod1
-      ip: 10.2.213.18
-      port: 30100
-    - name: w5.au2prod1
-      ip: 10.2.213.19
-      port: 30100
+    - name: au2co-smcs-401
+      ip: 10.2.88.151
+      port: 3102
+    - name: au2co-smcs-402
+      ip: 10.2.88.152
+      port: 3102
 
 knowledge-rest.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2co-smcs-401
+      ip: 10.2.88.151
+      port: 3103
+    - name: au2co-smcs-402
+      ip: 10.2.88.152
+      port: 3103
+
+internal.knowledge.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -366,7 +371,30 @@ web.knowledge.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+
+wta.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
   default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod1
