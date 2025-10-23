@@ -91,13 +91,6 @@
         name: telegraf_config
         tasks_from: basic_install.yml
 
-    - name: Install Elastic Agent
-      include_role:
-        name: wtg.monitoring_agents.elastic_agent
-      vars:
-        policy_name: "wtg-linux-haproxy"
-        target_system_name: "fleetSystem{{ fleet_region }}Prod1"
-
     - name: Wait for Iris run - timeout 60mins, poll every 10s
       wait_for:
         path: "{{ iris_run_directory }}/{{ iris_run_file }}"
