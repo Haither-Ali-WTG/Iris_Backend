@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251023.1
-  # Wed Oct 22 23:18:49 UTC 2025 -- Thu Oct 23 10:18:49 AEDT 2025
+  # Dante Build Artifact 20251023.3
+  # Thu Oct 23 04:01:55 UTC 2025 -- Thu Oct 23 15:01:55 AEDT 2025
   #
-  # Merged PR 41248: feat: introduce es agent installations in dante (staged)
-  # 15bc73fd9f1695bba7247d1ecd18759a3b22e3c0
-  dante_build_id: '1501321'
+  # Merge pull request 41492 from dante_artifact_upgrade into master
+  # 5302d41c158d7c60b035d6a1ab3d139803c77516
+  dante_build_id: '1501600'
 
-  # virgil 20251023.2
-  # Wed Oct 22 22:28:20 UTC 2025 -- Thu Oct 23 09:28:20 AEDT 2025
+  # virgil 20251023.7
+  # Thu Oct 23 03:21:20 UTC 2025 -- Thu Oct 23 14:21:20 AEDT 2025
   #
-  # Merged PR 41389: config: delete q1 sql topics
-  # 6fe7ea77bfd12a235d463e0ff9bc9d50cc033af0
-  virgil_build_id: '1501274'
+  # Merged PR 41489: Create Kafka topic for OneMap (CS02104330)
+  # 85bf4ec78505dd5517bc316ca02799c58af80ba0
+  virgil_build_id: '1501533'
 
-  # sqlbilling 20251022.3
-  # Wed Oct 22 11:46:21 UTC 2025 -- Wed Oct 22 22:46:21 AEDT 2025
+  # sqlbilling 20251023.8
+  # Thu Oct 23 09:16:29 UTC 2025 -- Thu Oct 23 20:16:29 AEDT 2025
   #
-  # Merged PR 41438: SQLBilling-Add-CS02113297.yml
-  # bec70000e8860a65410d9b7ede1c583871638546
-  sqlbilling_build_id: '1500894'
+  # Merged PR 41526: SQLBilling-Add-CS02115289.yml
+  # e028a962eacc42b02f416b1313bc3a4b3787eca4
+  sqlbilling_build_id: '1501842'
