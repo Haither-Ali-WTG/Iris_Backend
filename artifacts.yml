@@ -7,12 +7,12 @@ variables:
   # 5302d41c158d7c60b035d6a1ab3d139803c77516
   dante_build_id: '1501600'
 
-  # virgil 20251023.7
-  # Thu Oct 23 03:21:20 UTC 2025 -- Thu Oct 23 14:21:20 AEDT 2025
+  # virgil 20251024.7
+  # Fri Oct 24 05:07:46 UTC 2025 -- Fri Oct 24 16:07:46 AEDT 2025
   #
-  # Merged PR 41489: Create Kafka topic for OneMap (CS02104330)
-  # 85bf4ec78505dd5517bc316ca02799c58af80ba0
-  virgil_build_id: '1501533'
+  # Merged PR 41548: add DE1 apex57-58
+  # 297d466d7cacf6810fbc62d819713aaa85aa9984
+  virgil_build_id: '1502612'
 
   # sqlbilling 20251024.2
   # Thu Oct 23 15:24:40 UTC 2025 -- Fri Oct 24 02:24:40 AEDT 2025
