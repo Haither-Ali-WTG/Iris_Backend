@@ -1,4 +1,11 @@
 ---
+peppol_smp_disallow_secure_path:
+  description: |-
+    Disallow secure path for Peppol SMP service
+  order: 30
+  actions:
+    - http-request deny if peppol_smp_disallow_secure_path
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path

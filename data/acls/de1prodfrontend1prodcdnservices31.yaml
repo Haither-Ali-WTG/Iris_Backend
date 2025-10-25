@@ -59,3 +59,9 @@ compliance_borderwise_com:
   description: "compliance borderwise"
   tests:
     - hdr(host),field(1,:) -i compliance.borderwise.com
+
+peppol_smp_disallow_secure_path:
+  description: |-
+    Disallow secure path for Peppol SMP service
+  tests:
+    - path_beg -i /secure

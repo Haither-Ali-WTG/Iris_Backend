@@ -41,3 +41,9 @@ app-test_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app-test.borderwise.com
     - hdr(host),field(1,:) -i app-test-de.borderwise.com
+
+peppol_smp_disallow_secure_path:
+  description: |-
+    Disallow secure path for Peppol SMP service
+  tests:
+    - path_beg -i /secure
