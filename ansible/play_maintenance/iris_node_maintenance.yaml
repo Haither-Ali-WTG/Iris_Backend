@@ -4,15 +4,6 @@
   gather_facts: no
   serial: 1
   tasks:
-    - name: Set fleet region for target_system_name
-      set_fact:
-        fleet_region: "{{ dc_map[dc] }}"
-      vars:
-        dc_map:
-          AU2: Apac
-          DE1: Emea
-          US2: Amer
-
     - name: Calculate BMC IP
       set_fact:
         bmc_ip: "{{ virgil_consoles | map(attribute='ip') | first }}"
@@ -46,16 +37,10 @@
             enabled: no
           become: yes
 
-        - name: Manually gather only the hostname fact
-          setup:
-            filter: ansible_hostname
-
         - name: Unroll Elastic Agent
           include_role:
             name: wtg.monitoring_agents.elastic_agent
             tasks_from: unroll_agents.yml
-          vars:
-            target_system_name: "fleetSystem{{ fleet_region }}Prod1"
 
         - name: Wait for a few seconds to allow VIPs on this machine to be released
           pause:
@@ -82,21 +67,10 @@
         name: node_maintenance
         tasks_from: wait_rebuild_node.yml
 
-    - name: Manually gather only the hostname fact
-      setup:
-        filter: ansible_hostname
-
     - name: Install Telegraf
       include_role:
         name: telegraf_config
         tasks_from: basic_install.yml
-
-    - name: Install Elastic Agent
-      include_role:
-        name: wtg.monitoring_agents.elastic_agent
-      vars:
-        policy_name: "wtg-linux-haproxy"
-        target_system_name: "fleetSystem{{ fleet_region }}Prod1"
 
     - name: Wait for Iris run - timeout 60mins, poll every 10s
       wait_for:
