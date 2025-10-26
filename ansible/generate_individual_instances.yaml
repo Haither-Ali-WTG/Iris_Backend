@@ -79,6 +79,10 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: print tests
+      debug:
+        var: tests
+
     - name: Apply overrides for the individual instances
       # noqa var-naming[no-jinja]  # we do, in fact, intend Jinja for the fact name
       set_fact:

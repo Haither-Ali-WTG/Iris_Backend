@@ -34,3 +34,7 @@
       set_fact:
         acls: >-
           {{ common_acls | combine(labelled) }}
+
+    - name: print acls
+      debug:
+        var: acls
