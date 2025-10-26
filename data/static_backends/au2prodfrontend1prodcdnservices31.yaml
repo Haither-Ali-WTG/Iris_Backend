@@ -147,9 +147,11 @@ portal-au.cwconnector.wisegrid.net:
     - name: AU2WP-SIIS-406A
       ip: 10.2.69.55
       port: 5443
+      settings: check ssl verify none
     - name: AU2WP-SIIS-406B
       ip: 10.2.69.56
       port: 5443
+      settings: check ssl verify none
 
 compliance-au.borderwise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -166,3 +168,18 @@ compliance-au.borderwise.com:
     - name: au2wp-sdkr-2
       ip: 10.2.67.112
       port: 50335
+
+gsswebhooks.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: GSSWH
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2wp-sdkr-402a
+      ip: 10.2.88.137
+      port: 42305
+    - name: au2wp-sdkr-402b
+      ip: 10.2.88.138
+      port: 42305

@@ -26,6 +26,26 @@ wtg_src:
     - src 196.41.78.0/24
     - src 196.61.68.0/22
 
+cloudflare_src:
+  description: source IP is Cloudflare WAF
+  tests:
+    # https://www.cloudflare.com/ips-v4/#
+    - src 173.245.48.0/20
+    - src 103.21.244.0/22
+    - src 103.22.200.0/22
+    - src 103.31.4.0/22
+    - src 141.101.64.0/18
+    - src 108.162.192.0/18
+    - src 190.93.240.0/20
+    - src 188.114.96.0/20
+    - src 197.234.240.0/22
+    - src 198.41.128.0/17
+    - src 162.158.0.0/15
+    - src 104.16.0.0/13
+    - src 104.24.0.0/14
+    - src 172.64.0.0/13
+    - src 131.0.72.0/22
+
 https:
   description: SSL
   tests:

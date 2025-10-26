@@ -62,9 +62,11 @@ portalapi-au2.cwconnector.wisegrid.net:
     - name: au2wp-scwi-403a
       ip: 10.2.88.149
       port: 5443
+      settings: check ssl verify none
     - name: au2wp-scwi-403b
       ip: 10.2.88.150
       port: 5443
+      settings: check ssl verify none
 
 secretapi-au2.cwconnector.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -78,9 +80,11 @@ secretapi-au2.cwconnector.wisegrid.net:
     - name: au2wp-scwi-404a
       ip: 10.2.251.11
       port: 5443
+      settings: check ssl verify none
     - name: au2wp-scwi-404b
       ip: 10.2.251.12
       port: 5443
+      settings: check ssl verify none
 
 runtimeapi-au2.cwconnector.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -94,6 +98,24 @@ runtimeapi-au2.cwconnector.wisegrid.net:
     - name: au2wp-scwi-405a
       ip: 10.2.88.155
       port: 5443
+      settings: check ssl verify none
     - name: au2wp-scwi-405b
       ip: 10.2.88.156
       port: 5443
+      settings: check ssl verify none
+
+compliancewise-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: CMPT
+  http_health_check:
+    enabled: true
+    http_path: /staging/wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80

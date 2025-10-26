@@ -1,17 +1,6 @@
 ---
 clustered_instances:
   hosts:
-    au2prodceph1:
-      tests:
-        - host: www.cargowise.com
-          path: /healthcheck
-          ssl: true
-          status: 200
-        - host: cargowise.com
-          path: /healthcheck
-          ssl: false
-          status: 200
-
     au2corprdg:
       tests:
         - host: rdg.wisetechglobal.com

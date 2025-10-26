@@ -203,20 +203,6 @@ identity-temp-staging.wisetechglobal.com:
       ip: 10.2.118.32
       port: 80
 
-sandwcatoken.wtg.zone:
-  clustered_instances: [au2sandinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /
-  encryption: false
-  servers:
-    - name: AU2SP-SWFE-1
-      ip: 10.2.118.12
-      port: 80
-    - name: AU2SP-SWFE-403
-      ip: 10.2.118.54
-      port: 80
-
 cprportal-uat.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
@@ -589,9 +575,11 @@ portal-staging-cwconnector.sand.wtg.zone:
     - name: au2sp-siis-402a
       ip: 10.2.69.77
       port: 5443
+      settings: check ssl verify none
     - name: au2sp-siis-402b
       ip: 10.2.69.78
       port: 5443
+      settings: check ssl verify none
 
 vt-test.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
@@ -614,3 +602,124 @@ api-ct-test.sand.wtg.zone:
     - name: au2sp-sdkr-401
       ip: 10.2.116.27
       port: 8086
+
+dpsv4-test.wisegrid.net:
+  clustered_instances: [au2sandinternal1]
+  cookie:
+    name: DPSV4T
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+dps-test-rest.wisegrid.net:
+  clustered_instances: [au2sandinternal1]
+  cookie:
+    name: DPSR
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+myaccount-umbraco-temp-sand-wtg-zone-catchall:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: AU2SP-SWEB-407
+      ip: 10.2.122.23
+      port: 80
+
+api-vt-test.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: au2sp-sdkr-401
+      ip: 10.2.116.27
+      port: 8095
+
+portalapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-401
+      ip: 10.2.116.62
+      port: 5443
+      settings: check ssl verify none
+
+secretapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-403
+      ip: 10.2.116.64
+      port: 5443
+      settings: check ssl verify none
+
+runtimeapi-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-402
+      ip: 10.2.116.63
+      port: 5443
+      settings: check ssl verify none
+
+au2wca.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-twfe-401
+      ip: 10.2.118.64
+      port: 443
+      settings: check ssl verify none
+    - name: au2sp-twfe-402
+      ip: 10.2.118.65
+      port: 443
+      settings: check ssl verify none
+
+sandwcatoken.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-twfe-401
+      ip: 10.2.118.64
+      port: 443
+      settings: check ssl verify none
+    - name: au2sp-twfe-402
+      ip: 10.2.118.65
+      port: 443
+      settings: check ssl verify none

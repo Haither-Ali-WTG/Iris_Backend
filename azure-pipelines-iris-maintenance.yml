@@ -194,10 +194,16 @@ jobs:
       - script: |
           set -euxo pipefail
           pip install -r requirements.txt
-          sed -i 's/WTGOps/$(System.AccessToken)/' ansible/requirements.yml
+          git config --global --unset-all http.https://dev.azure.com/.extraheader || true
+          git config --global http.https://dev.azure.com/.extraheader "AUTHORIZATION: bearer $(System.AccessToken)"
           ansible-galaxy install -r ansible/requirements.yml --force
         displayName: 'Install Dante requirements'
         condition: or(ne(variables['specific_host'], ''), eq(variables['enabled'], 'enabled'))
+
+      - script: |
+          git config --global --unset-all http.https://dev.azure.com/.extraheader || true
+        displayName: 'Cleanup Git credentials'
+        condition: always()
 
       # virgil_build_id is retrieved from artifacts.yml and is used to DL the Virgil pipeline artifact
       - task: DownloadPipelineArtifact@2

@@ -31,8 +31,11 @@ iris_stats_urls:
     - hdr(host),field(1,:) -i au2sandinternaltcp.wtg.zone
 
 knowledge_mcp_wtg_zone:
-  description: "au2 iris stats urls"
+  description: "au2 knowledge urls"
   tests:
     - hdr(host) -i knowledge.mcp.wtg.zone
     - hdr(host) -i knowledge-client.mcp.wtg.zone
     - hdr(host) -i knowledge-rest.mcp.wtg.zone
+    - hdr(host) -i internal.knowledge.wtg.zone
+    - hdr(host) -i web.knowledge.wtg.zone
+    - hdr(host) -i wta.knowledge.wtg.zone
