@@ -111,6 +111,15 @@ au2wtreadonly412l1-wisegrid-net:
       ip: 10.2.133.61
       port: 1433
 
+au2wtreadonly417l1-wisegrid-net:
+  clustered_instances: [au2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: au2wtreadonly417l1
+      ip: 10.2.133.81
+      port: 1433
+
 ### PROD AU2
 
 au2wpreadonly401l1-wisegrid-net:
