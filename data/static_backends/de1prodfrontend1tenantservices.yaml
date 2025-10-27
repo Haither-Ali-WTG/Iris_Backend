@@ -13,6 +13,20 @@ wera.aktivdata.fi:
       ip: 10.3.231.82
       port: 443
 
+dmesx.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: DMESX
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 1304
+
 oauth.aktivdata.fi:
   clustered_instances: [de1prodfrontend1tenantservices]
   http_health_check:

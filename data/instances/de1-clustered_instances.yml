@@ -361,8 +361,7 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext:
-            - 2035  # dmesx.aktivdata.fi
-            - 2036  # sft.aktivdata.fi
+            - 2035  # sft.aktivdata.fi
       stats:
         ports:
           web: 2070

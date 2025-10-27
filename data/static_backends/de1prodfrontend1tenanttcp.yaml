@@ -1,13 +1,4 @@
 ---
-dmesx-aktivdata-fi:
-  clustered_instances: [de1prodfrontend1tenanttcp]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: DE1FL0APPW001
-      ip: 10.3.231.16
-      port: 1304
-
 sft-aktivdata-fi:
   clustered_instances: [de1prodfrontend1tenanttcp]
   http_health_check:
