@@ -346,7 +346,7 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates:
-        - name: star-aktivadata-fi
+        - name: star-aktivdata-fi
           cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
