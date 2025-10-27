@@ -1,10 +1,5 @@
 ---
-dmesx_aktivdata_fi_2035:
-  description: Port ACL for dmesx.aktivdata.fi service
-  tests:
-    - dst_port 2035
-
-sftp_aktivdata_fi_2036:
+sft_aktivdata_fi_2035:
   description: Port ACL for sft.aktivdata.fi service
   tests:
-    - dst_port 2036
+    - dst_port 2035
