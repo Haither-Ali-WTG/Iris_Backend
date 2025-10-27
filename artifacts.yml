@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251024.1
-  # Fri Oct 24 06:01:09 UTC 2025 -- Fri Oct 24 17:01:09 AEDT 2025
+  # Dante Build Artifact 20251027.3
+  # Mon Oct 27 05:41:05 UTC 2025 -- Mon Oct 27 16:41:05 AEDT 2025
   #
-  # Merge pull request 41542 from dante_artifact_upgrade into master
-  # ded1524c9522e5e73d548ed6d1f007d622aed559
-  dante_build_id: '1502670'
+  # Merge pull request 41602 from dante_artifact_upgrade into master
+  # a423d51946173502437e808d0bf7c0a4b41f3f8e
+  dante_build_id: '1505289'
 
-  # virgil 20251024.7
-  # Fri Oct 24 05:07:46 UTC 2025 -- Fri Oct 24 16:07:46 AEDT 2025
+  # virgil 20251027.2
+  # Mon Oct 27 04:56:40 UTC 2025 -- Mon Oct 27 15:56:40 AEDT 2025
   #
-  # Merged PR 41548: add DE1 apex57-58
-  # 297d466d7cacf6810fbc62d819713aaa85aa9984
-  virgil_build_id: '1502612'
+  # Merged PR 41599: added new topics for cs02094847
+  # 22c78fbd1a3e6be3f7d4c441a2fc840e9b0095fa
+  virgil_build_id: '1505240'
 
   # sqlbilling 20251025.1
   # Fri Oct 24 23:47:40 UTC 2025 -- Sat Oct 25 10:47:40 AEDT 2025
