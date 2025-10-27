@@ -34,6 +34,7 @@
 - name: Print all vars
   debug:
     var: hostvars[item] 
+  when: '"tests" in hostvars[item]'
   loop: "{{ groups['clustered_instances'] }}"
 
 - name: Calculate tests for the machine
