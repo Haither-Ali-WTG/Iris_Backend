@@ -61,5 +61,5 @@ peppol_ap_backend_selection:
     AP Prod backend selection and only allow access to /as4 path
   order: 81
   actions:
-    - http-request deny if !peppol_as4_allow_path peppol-ap-prod_wisegrid_net
-    - use_backend peppol-ap-prod_wisegrid_net if peppol_as4_allow_path peppol-ap-prod_wisegrid_net
+    - http-request deny if !peppol_ap_as4_allow_path peppol-ap-prod_wisegrid_net
+    - use_backend peppol-ap-prod_wisegrid_net if peppol_ap_as4_allow_path peppol-ap-prod_wisegrid_net

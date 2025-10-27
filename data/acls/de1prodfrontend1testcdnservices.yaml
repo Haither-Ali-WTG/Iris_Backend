@@ -60,8 +60,8 @@ peppol_smp_disallow_secure_path:
   tests:
     - path_beg -i /secure
 
-peppol_as4_allow_path:
+peppol_ap_as4_allow_path:
   description: |-
-    Allow path for Peppol AS4 service
+    Allow path for Peppol AP service AS4 path
   tests:
     - path_beg -i /as4

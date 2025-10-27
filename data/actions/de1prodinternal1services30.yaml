@@ -34,10 +34,15 @@ peppol_smp_backend_selection:
     SMP backend selection and secure path blocking
   order: 81
   actions:
-    - http-request deny if peppol_smp_disallow_secure_path peppol-smp-test-service_wisetechglobal_com
     - >-
-        use_backend peppol-smp-test-service_wisetechglobal_com if
-        !peppol_smp_disallow_secure_path peppol-smp-test-service_wisetechglobal_com
+      http-request deny if
+      peppol_smp_disallow_secure_path peppol-smp-test-service_wisetechglobal_com
     - >-
-        use_backend peppol-smp-prod-service_wisetechglobal_com if
-        !peppol_smp_disallow_secure_path peppol-smp-prod-service_wisetechglobal_com
+      http-request deny if
+      peppol_smp_disallow_secure_path peppol-smp-prod-service_wisetechglobal_com
+    - >-
+      use_backend peppol-smp-test-service_wisetechglobal_com if
+      !peppol_smp_disallow_secure_path peppol-smp-test-service_wisetechglobal_com
+    - >-
+      use_backend peppol-smp-prod-service_wisetechglobal_com if
+      !peppol_smp_disallow_secure_path peppol-smp-prod-service_wisetechglobal_com
