@@ -1,5 +1,5 @@
 ---
-sft_aktivdata_fi:
+sft.aktivdata.fi:
   clustered_instances: [de1prodfrontend1tenanttcp]
   http_health_check:
     enabled: false
