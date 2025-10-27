@@ -345,7 +345,9 @@ clustered_instances:
           socket: 2069
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: star-aktivadata-fi
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -358,7 +360,9 @@ clustered_instances:
       frontend:
         maxconn: 20000
         ports:
-          plaintext: []
+          plaintext:
+            - 2035  # dmesx.aktivdata.fi
+            - 2036  # sft.aktivdata.fi
       stats:
         ports:
           web: 2070
