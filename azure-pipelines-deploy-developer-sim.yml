@@ -172,6 +172,7 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
+                --forks 4
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
