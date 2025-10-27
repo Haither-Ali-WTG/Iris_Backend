@@ -13,7 +13,7 @@
 - name: Calculate and populate individual instance facts
   include_tasks: calculations.yml
 
-- name: Create directory {{ item }}
+- name: Create instance directories
   file:
     dest: "{{ individual_instance_dir }}/{{ item.path }}"
     state: directory
