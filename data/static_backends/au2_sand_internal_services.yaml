@@ -692,6 +692,18 @@ runtimeapi-staging-cwconnector.sand.wtg.zone:
       port: 5443
       settings: check ssl verify none
 
+xtvm-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-404
+      ip: 10.2.153.11
+      port: 9433
+      settings: check ssl verify none
+
 au2wca.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
