@@ -1,117 +1,110 @@
 ---
-- hosts: clustered_instances
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Prepare simulation
+  import_playbook: prepare_simulation.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+
+- name: Create hypervisor group and config directory
+  hosts: localhost
   gather_facts: no
-  tasks:  
-  - name: Print all host variables
-    ansible.builtin.debug:
-      var: hostvars[inventory_hostname]
+  tasks:
+    - name: Add host to hypervisor group
+      add_host:
+        name: "{{ hypervisor | default('localhost') }}"
+        groups: hypervisor
+        ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
+        images_folder: "/mnt/storage"
 
-# - name: Target machines
-#   import_playbook: target_machines.yaml
+    - name: Create target directories
+      file:
+        dest: "{{ item }}"
+        state: directory
+        mode: u=rwx,go=rx
+      loop:
+        - "../generated_configs"
+        - "../generated_configs/{{ target_dc }}"
 
-# - name: Prepare simulation
-#   import_playbook: prepare_simulation.yaml
+- name: Configure hypervisor
+  hosts: hypervisor
+  tasks:
+    - name: Install awscli
+      include_role:
+        name: pure_connection_setup
+        tasks_from: install.yml
 
-# - name: Augment the inventory
-#   import_playbook: augment_inventory.yaml
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        proxy_host: "192.168.255.254"
+        proxy_port: "3128"
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
 
-# - name: Create hypervisor group and config directory
-#   hosts: localhost
-#   gather_facts: no
-#   tasks:
-#     - name: Add host to hypervisor group
-#       add_host:
-#         name: "{{ hypervisor | default('localhost') }}"
-#         groups: hypervisor
-#         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
-#         images_folder: "/mnt/storage"
+- name: Deploy simulated machines
+  hosts: target_machines
+  gather_facts: no
+  tasks:
+    - name: Set additional facts
+      vars:
+        os_codename:
+          ubuntu2204: jammy
+          ubuntu2404: noble
+          rhel9: plow
+      set_fact:
+        virgil_ip_oob_dante: "{{ ansible_host }}"
+        virgil_os_name: "{{ os }}"
+        virgil_ip_dante: "{{ ansible_host }}"
+        virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
+        virgil_os_codename: "{{ os_codename[os] }}"
+        virgil_os_version: "{{ os }}"
 
-#     - name: Create target directories
-#       file:
-#         dest: "{{ item }}"
-#         state: directory
-#         mode: u=rwx,go=rx
-#       loop:
-#         - "../generated_configs"
-#         - "../generated_configs/{{ target_dc }}"
+    - name: Set images for simulation OS
+      vars:
+        os_image:
+          ubuntu2204: "{{ ubuntu2204_hypervisor_image }}"
+          ubuntu2404: "{{ ubuntu2404_hypervisor_image }}"
+          rhel9: "{{ rhel9_hypervisor_image }}"
+      set_fact:
+        image: "{{ images_folder }}/{{ os_image[virgil_os_name] }}"
+        virgil_os_variant: "{{ os_variant }}"
 
-# - name: Configure hypervisor
-#   hosts: hypervisor
-#   tasks:
-#     - name: Install awscli
-#       include_role:
-#         name: pure_connection_setup
-#         tasks_from: install.yml
+    - name: Deploy test machines
+      include_role:
+        name: deploy_test_machines
+        apply:
+          delegate_to: "{{ groups['hypervisor'][0] }}"
 
-#     - name: Setup S3 storage connection
-#       include_role:
-#         name: pure_connection_setup
-#       vars:
-#         proxy_host: "192.168.255.254"
-#         proxy_port: "3128"
-#         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+    - name: Actually wait 600 seconds for nodes to come up
+      # TODO clarify why this doesn't happen within the `deploy_test_machines` role
+      wait_for_connection:
+        connect_timeout: 5
+        timeout: 600
 
-# - name: Deploy simulated machines
-#   hosts: target_machines
-#   gather_facts: no
-#   tasks:
-#     - name: Set additional facts
-#       vars:
-#         os_codename:
-#           ubuntu2204: jammy
-#           ubuntu2404: noble
-#           rhel9: plow
-#       set_fact:
-#         virgil_ip_oob_dante: "{{ ansible_host }}"
-#         virgil_os_name: "{{ os }}"
-#         virgil_ip_dante: "{{ ansible_host }}"
-#         virgil_orchestrator: container runner  # TODO properly - "{{ machine.virgil_orchestrator }}"
-#         virgil_os_codename: "{{ os_codename[os] }}"
-#         virgil_os_version: "{{ os }}"
+- name: Deploy haproxy on simulated machines
+  import_playbook: deploy_haproxy.yml
+  vars:
+    enable_dump_configs: true
 
-#     - name: Set images for simulation OS
-#       vars:
-#         os_image:
-#           ubuntu2204: "{{ ubuntu2204_hypervisor_image }}"
-#           ubuntu2404: "{{ ubuntu2404_hypervisor_image }}"
-#           rhel9: "{{ rhel9_hypervisor_image }}"
-#       set_fact:
-#         image: "{{ images_folder }}/{{ os_image[virgil_os_name] }}"
-#         virgil_os_variant: "{{ os_variant }}"
+- name: Deploy tests on simulated machines
+  import_playbook: deploy_tests.yml
 
-#     - name: Deploy test machines
-#       include_role:
-#         name: deploy_test_machines
-#         apply:
-#           delegate_to: "{{ groups['hypervisor'][0] }}"
+# This playbook outputs a large amount of logs, exceeding the stdout limit of Azure Pipelines.
+# Commenting out this role for now, until we can automate the necessary checks.
+# Btw, we've already checked if the containers can run in deploy_haproxy.yml.
+# - name: Check haproxy
+#   import_playbook: check_haproxy.yml
 
-#     - name: Actually wait 600 seconds for nodes to come up
-#       # TODO clarify why this doesn't happen within the `deploy_test_machines` role
-#       wait_for_connection:
-#         connect_timeout: 5
-#         timeout: 600
-
-# - name: Deploy haproxy on simulated machines
-#   import_playbook: deploy_haproxy.yml
-#   vars:
-#     enable_dump_configs: true
-
-# - name: Deploy tests on simulated machines
-#   import_playbook: deploy_tests.yml
-
-# # This playbook outputs a large amount of logs, exceeding the stdout limit of Azure Pipelines.
-# # Commenting out this role for now, until we can automate the necessary checks.
-# # Btw, we've already checked if the containers can run in deploy_haproxy.yml.
-# # - name: Check haproxy
-# #   import_playbook: check_haproxy.yml
-
-# - name: Check URLs
-#   hosts: individual_instances
-#   strategy: free
-#   gather_facts: yes
-#   force_handlers: yes
-#   tasks:
-#     - name: Check URLs
-#       include_role:
-#         name: fakeserver
-#         tasks_from: perform_tests.yml
+- name: Check URLs
+  hosts: individual_instances
+  strategy: free
+  gather_facts: yes
+  force_handlers: yes
+  tasks:
+    - name: Check URLs
+      include_role:
+        name: fakeserver
+        tasks_from: perform_tests.yml
