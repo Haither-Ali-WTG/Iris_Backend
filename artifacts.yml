@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251027.3
-  # Mon Oct 27 05:41:05 UTC 2025 -- Mon Oct 27 16:41:05 AEDT 2025
+  # Dante Build Artifact 20251028.1
+  # Mon Oct 27 19:01:57 UTC 2025 -- Tue Oct 28 06:01:57 AEDT 2025
   #
-  # Merge pull request 41602 from dante_artifact_upgrade into master
-  # a423d51946173502437e808d0bf7c0a4b41f3f8e
-  dante_build_id: '1505289'
+  # Merge pull request 41633 from dante_artifact_upgrade into master
+  # f915e72e57d66b275bdf8711d19d72d127d63742
+  dante_build_id: '1505809'
 
-  # virgil 20251027.2
-  # Mon Oct 27 04:56:40 UTC 2025 -- Mon Oct 27 15:56:40 AEDT 2025
+  # virgil 20251028.2
+  # Mon Oct 27 18:21:24 UTC 2025 -- Tue Oct 28 05:21:24 AEDT 2025
   #
-  # Merged PR 41599: added new topics for cs02094847
-  # 22c78fbd1a3e6be3f7d4c441a2fc840e9b0095fa
-  virgil_build_id: '1505240'
+  # Merge pull request 41623 from virgil_python_upgrade into master
+  # 1cfc734bbc2c6d7b9e6207fb4dd68f64d1db77b0
+  virgil_build_id: '1505765'
 
   # sqlbilling 20251025.1
   # Fri Oct 24 23:47:40 UTC 2025 -- Sat Oct 25 10:47:40 AEDT 2025
