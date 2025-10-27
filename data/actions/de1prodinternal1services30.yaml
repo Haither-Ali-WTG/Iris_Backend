@@ -28,3 +28,12 @@ restrict_iris_stats_url:
   order: 6
   actions:
     - http-request deny if !jumphost_src iris_stats_urls
+
+peppol_smp_backend_selection:
+  description: |-
+    SMP backend selection and secure path blocking
+  order: 81
+  actions:
+    - http-request deny if peppol_smp_disallow_secure_path peppol-smp-service_wisetechglobal_com
+    - use_backend peppol-smp-test-service_wisetechglobal_com if !peppol_smp_disallow_secure_path peppol-smp-service_wisetechglobal_com
+    - use_backend peppol-smp-prod-service_wisetechglobal_com if !peppol_smp_disallow_secure_path peppol-smp-service_wisetechglobal_com
