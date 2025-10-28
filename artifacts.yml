@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251028.1
-  # Mon Oct 27 19:01:57 UTC 2025 -- Tue Oct 28 06:01:57 AEDT 2025
+  # Dante Build Artifact 20251028.2
+  # Tue Oct 28 06:01:21 UTC 2025 -- Tue Oct 28 17:01:21 AEDT 2025
   #
-  # Merge pull request 41633 from dante_artifact_upgrade into master
-  # f915e72e57d66b275bdf8711d19d72d127d63742
-  dante_build_id: '1505809'
+  # Merge pull request 41657 from dante_artifact_upgrade into master
+  # 3de22db5c3d97de850133bc7644f3bd018cb0941
+  dante_build_id: '1506285'
 
   # virgil 20251028.7
   # Tue Oct 28 05:03:27 UTC 2025 -- Tue Oct 28 16:03:27 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 7eccf590474f7c91e732c69e5e387f75fe4ff1b0
   virgil_build_id: '1506240'
 
-  # sqlbilling 20251025.1
-  # Fri Oct 24 23:47:40 UTC 2025 -- Sat Oct 25 10:47:40 AEDT 2025
+  # sqlbilling 20251028.1
+  # Tue Oct 28 07:02:03 UTC 2025 -- Tue Oct 28 18:02:03 AEDT 2025
   #
-  # Merged PR 41561: AddSQLReadOnlyIP DE1
-  # 1488eabc7632dbe7b141bea650cf56889650038c
-  sqlbilling_build_id: '1503292'
+  # Merged PR 41622: AddSQLReadOnlyIP US2
+  # bd27e33d8cbb33fd6c733c6080438461de6a5a20
+  sqlbilling_build_id: '1506343'
