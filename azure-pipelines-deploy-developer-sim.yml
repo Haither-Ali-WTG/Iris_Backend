@@ -105,6 +105,7 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff -e="pool=/mnt/data1/test_pool"
+                -e="apt_mirror=$(apt_mirror)"
                 -e="@ansible/hypervisor.yaml" -e="@ansible/build_id.yaml"
                 -e="{use_cicd_pool: $(use_cicd_pool)}"
                 -e="{config_ssh_for_testing: false}"
@@ -173,6 +174,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 --forks 8
+                -e="apt_mirror=$(apt_mirror)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
