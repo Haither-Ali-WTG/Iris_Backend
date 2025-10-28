@@ -1,4 +1,18 @@
 ---
+peppol_smp_deny_secure_path:
+  description: |-
+    SMP Test secure path blocking
+  order: 59
+  actions:
+    - http-request deny if peppol_smp_disallow_secure_path peppol-smp-test_wisegrid_net
+
+peppol_ap_allow_as4_path:
+  description: |-
+    AP Test only allow access to /as4 path
+  order: 59
+  actions:
+    - http-request deny if !peppol_ap_as4_allow_path peppol-ap-test_wisegrid_net
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path

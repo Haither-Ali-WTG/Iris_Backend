@@ -228,3 +228,63 @@ runtimeapi-de1.cwconnector.wisegrid.net:
       ip: 10.3.88.156
       port: 5443
       settings: check ssl verify none
+
+peppol-smp-prod-admin.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-spsm-401
+      ip: 10.3.69.135
+      port: 8080
+
+peppol-smp-test-admin.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 8080
+
+peppol-smp-test-service.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 8080
+
+peppol-ap-test-service.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 18080
+
+peppol-smp-prod-service.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-spsm-401
+      ip: 10.3.69.135
+      port: 8080
+
+peppol-ap-prod-service.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wp-spap-401
+      ip: 10.3.69.130
+      port: 18080

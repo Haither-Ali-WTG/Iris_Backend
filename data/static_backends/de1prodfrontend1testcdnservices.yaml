@@ -57,3 +57,23 @@ staging-de.identity.wisetechglobal.com-s2s:
     cookie ISS insert indirect nocache dynamic
     server de1wt-sidi-501a 10.3.139.11:3005 check ssl
     server de1wt-sidi-501b 10.3.139.12:3005 check ssl
+
+peppol-smp-test.wisegrid.net:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 8080
+
+peppol-ap-test.wisegrid.net:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 18080

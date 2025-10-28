@@ -11,6 +11,18 @@ staging_identity_wisetechglobal_com:
     - hdr(host),field(1,:) -i staging.identity.wisetechglobal.com
     - hdr(host),field(1,:) -i staging-de.identity.wisetechglobal.com
 
+peppol-smp-test_wisegrid_net:
+  description: |-
+    hostname for Peppol SMP test service
+  tests:
+    - hdr(host),field(1,:) -i peppol-smp-test.wisegrid.net
+
+peppol-ap-test_wisegrid_net:
+  description: |-
+    hostname for Peppol AP test service
+  tests:
+    - hdr(host),field(1,:) -i peppol-ap-test.wisegrid.net
+
 wtg_idp_login_path:
   description: |-
     Wisetech IDP path based routing
@@ -41,3 +53,15 @@ app-test_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app-test.borderwise.com
     - hdr(host),field(1,:) -i app-test-de.borderwise.com
+
+peppol_smp_disallow_secure_path:
+  description: |-
+    Disallow secure path for Peppol SMP service
+  tests:
+    - path_beg -i /secure
+
+peppol_ap_as4_allow_path:
+  description: |-
+    Allow path for Peppol AP service AS4 path
+  tests:
+    - path_beg -i /as4
