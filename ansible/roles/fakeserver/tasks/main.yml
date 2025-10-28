@@ -31,12 +31,6 @@
   loop: "{{ certs_list | default([]) }}"
   no_log: true
 
-- name: Print all vars
-  debug:
-    var: hostvars[item] 
-  when: '"tests" in hostvars[item]'
-  loop: "{{ groups['clustered_instances'] }}"
-
 - name: Calculate tests for the machine
   set_fact:
     tests_list: "{{ tests_list | default([]) + hostvars[item].tests }}"
