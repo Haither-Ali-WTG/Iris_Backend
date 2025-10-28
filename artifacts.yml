@@ -7,12 +7,12 @@ variables:
   # f915e72e57d66b275bdf8711d19d72d127d63742
   dante_build_id: '1505809'
 
-  # virgil 20251028.2
-  # Mon Oct 27 18:21:24 UTC 2025 -- Tue Oct 28 05:21:24 AEDT 2025
+  # virgil 20251028.7
+  # Tue Oct 28 05:03:27 UTC 2025 -- Tue Oct 28 16:03:27 AEDT 2025
   #
-  # Merge pull request 41623 from virgil_python_upgrade into master
-  # 1cfc734bbc2c6d7b9e6207fb4dd68f64d1db77b0
-  virgil_build_id: '1505765'
+  # Merged PR 41664: update comments DE1 network
+  # 7eccf590474f7c91e732c69e5e387f75fe4ff1b0
+  virgil_build_id: '1506240'
 
   # sqlbilling 20251025.1
   # Fri Oct 24 23:47:40 UTC 2025 -- Sat Oct 25 10:47:40 AEDT 2025
