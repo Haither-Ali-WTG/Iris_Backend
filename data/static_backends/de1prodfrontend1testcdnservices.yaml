@@ -60,16 +60,20 @@ staging-de.identity.wisetechglobal.com-s2s:
 
 peppol-smp-test.wisegrid.net:
   clustered_instances: [de1prodfrontend1testcdnservices]
-  full_override: |
-    backend peppol-smp-test_wisegrid_net
-    option httpchk HEAD /wtg/ready
-    http-check expect status 200
-    server de1wt-spap-401 10.3.69.110:8080 check
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 8080
 
 peppol-ap-test.wisegrid.net:
   clustered_instances: [de1prodfrontend1testcdnservices]
-  full_override: |
-    backend peppol-ap-test_wisegrid_net
-    option httpchk HEAD /wtg/ready
-    http-check expect status 200
-    server de1wt-spap-401 10.3.69.110:18080 check
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: de1wt-spap-401
+      ip: 10.3.69.110
+      port: 18080
