@@ -707,7 +707,7 @@ xtvm-staging-cwconnector.sand.wtg.zone:
   servers:
     - name: au2sp-scwi-404
       ip: 10.2.153.11
-      port: 9433
+      port: 9443
       settings: check ssl verify none
 
 au2wca.sand.wtg.zone:
