@@ -19,13 +19,13 @@
     - "'complete_iis_data' in hostvars['localhost']"
     - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
 
-- name: Populate dynamic backends variable for individual instance
-  set_fact:
-    dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
-  loop: "{{ servers_data | dict2items }}"
-  when:
-    - "'complete_iis_data' in hostvars['localhost']"
-    - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
+# - name: Populate dynamic backends variable for individual instance
+#   set_fact:
+#     dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
+#   loop: "{{ servers_data | dict2items }}"
+#   when:
+#     - "'complete_iis_data' in hostvars['localhost']"
+#     - "clustered_instance_name in hostvars['localhost'].complete_iis_data.clustered_instances"
 
 - name: Build agent_ports dict for individual instance
   set_fact:
