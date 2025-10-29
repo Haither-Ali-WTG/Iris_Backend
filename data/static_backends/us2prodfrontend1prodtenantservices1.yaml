@@ -3568,6 +3568,7 @@ new-am-nexus.rez1.com:
   http_health_check:
     enabled: false
   servers:
+    - encryption: false
     - name: us2usrnex00013-blumeglobal
       ip: 10.4.204.13
       port: 8081
