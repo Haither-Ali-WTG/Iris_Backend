@@ -4,10 +4,6 @@
   gather_facts: no
   strategy: linear  # required by add_host which bypasses the host loop
   tasks:
-    - name: Print machine info
-      debug:
-        var: hostvars[inventory_hostname]
-
     - name: Target machines
       vars:
         machine: "{{ hostvars[item] }}"
@@ -17,3 +13,12 @@
         ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
       loop: "{{ ansible_play_hosts }}"
       when: target_dc | default('all') in [machine.dc, 'all']
+
+- name: Prepare to target the machines
+  hosts: target_machines
+  gather_facts: no
+  strategy: linear  # required by add_host which bypasses the host loop
+  tasks:
+    - name: Print machine info
+      debug:
+        var: hostvars[inventory_hostname]
