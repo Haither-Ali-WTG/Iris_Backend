@@ -210,10 +210,10 @@ stages:
               # ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
               # ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
-          - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
-            artifact: configs_$(simulation_dc)
-            displayName: 'Publish configs for $(simulation_dc)'
-            condition: always()
+          # - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
+          #   artifact: configs_$(simulation_dc)
+          #   displayName: 'Publish configs for $(simulation_dc)'
+          #   condition: always()
 
           # - task: Ansible@0
           #   displayName: 'Unregister nodes'
