@@ -126,7 +126,7 @@ ausyd-staging.transport.wisetechglobal.com:
       ip: 10.2.69.96
       port: 3001
 
-ausyd-staging.transport.wisetechglobal.com_api:
+ausyd-staging.transport.wisetechglobal.com-api:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: LB
@@ -156,7 +156,7 @@ aumel-staging.transport.wisetechglobal.com:
       ip: 10.2.69.96
       port: 3003
 
-aumel-staging.transport.wisetechglobal.com_api:
+aumel-staging.transport.wisetechglobal.com-api:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: LB
