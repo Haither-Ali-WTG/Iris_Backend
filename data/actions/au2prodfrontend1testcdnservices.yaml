@@ -48,7 +48,7 @@ app_test_borderwise_backend:
   actions:
     - use_backend app-test-au_borderwise_com if app-test_borderwise_com
 
-star-staging_transport_wisetechglobal_com_api_backend:
+star_staging_transport_wisetechglobal_com_api_backend:
   description: |-
     Direct requests to the /api path for staging CTO transport portal to the /api backend
   order: 80
