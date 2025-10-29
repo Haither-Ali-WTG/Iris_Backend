@@ -118,6 +118,7 @@ ausyd-staging.transport.wisetechglobal.com:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wt-sdkr-501b--web1
       ip: 10.2.69.95
@@ -133,6 +134,7 @@ ausyd-staging.transport.wisetechglobal.com-api:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wt-sdkr-501b--api1
       ip: 10.2.69.95
@@ -148,6 +150,7 @@ aumel-staging.transport.wisetechglobal.com:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wt-sdkr-501b--web1
       ip: 10.2.69.95
@@ -163,6 +166,7 @@ aumel-staging.transport.wisetechglobal.com-api:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wt-sdkr-501b--api1
       ip: 10.2.69.95
