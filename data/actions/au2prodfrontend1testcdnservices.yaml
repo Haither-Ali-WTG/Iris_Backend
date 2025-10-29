@@ -54,5 +54,5 @@ star_staging_transport_wisetechglobal_com_api_backend:
   order: 80
   actions:
     - >-
-      use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]_api if
+      use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-api if
       { hdr(host),field(1,:) -m reg -i ^([^\.]+)?-staging\.transport\.wisetechglobal\.com$ } {path_beg /api}
