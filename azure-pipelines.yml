@@ -85,7 +85,7 @@ stages:
     pool:
       name: simulations
       demands:
-      - ALLOW_HEAVY_LOADS -equals yes
+        - ALLOW_HEAVY_LOADS -equals yes
     jobs:
       - job: Simulation
         strategy:
