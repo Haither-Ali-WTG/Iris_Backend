@@ -110,3 +110,67 @@ accounting-d365.xttest.wisegrid.net:
     - name: AU2WT-SXTR-401
       ip: 10.2.70.18
       port: 9080
+
+ausyd-staging.transport.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--web1
+      ip: 10.2.69.95
+      port: 3001
+    - name: au2wt-sdkr-501c--web2
+      ip: 10.2.69.96
+      port: 3001
+
+ausyd-staging.transport.wisetechglobal.com-api:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--api1
+      ip: 10.2.69.95
+      port: 3501
+    - name: au2wt-sdkr-501c--api2
+      ip: 10.2.69.96
+      port: 3501
+
+aumel-staging.transport.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--web1
+      ip: 10.2.69.95
+      port: 3003
+    - name: au2wt-sdkr-501c--web2
+      ip: 10.2.69.96
+      port: 3003
+
+aumel-staging.transport.wisetechglobal.com-api:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--api1
+      ip: 10.2.69.95
+      port: 3503
+    - name: au2wt-sdkr-501c--api2
+      ip: 10.2.69.96
+      port: 3503

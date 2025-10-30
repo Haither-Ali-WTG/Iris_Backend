@@ -47,3 +47,12 @@ app_test_borderwise_backend:
   order: 80
   actions:
     - use_backend app-test-au_borderwise_com if app-test_borderwise_com
+
+star_staging_transport_wisetechglobal_com_api_backend:
+  description: |-
+    Direct requests to the /api path for staging CTO transport portal to the /api backend
+  order: 80
+  actions:
+    - >-
+      use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-api if
+      { hdr(host),field(1,:) -m reg -i ^([^\.]+)?-staging\.transport\.wisetechglobal\.com$ } { path_beg -i /api }
