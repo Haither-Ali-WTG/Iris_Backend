@@ -165,4 +165,4 @@ ntraxio.aktivdata.fi:
   servers:
     - name: DE1FL0APPW001
       ip: 10.3.231.16
-      port: 6199
+      port: 29525
