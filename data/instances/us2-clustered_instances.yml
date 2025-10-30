@@ -480,6 +480,8 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: star-tmssaas-com
         - name: star-livesource-com
+        - name: star-rez1-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
