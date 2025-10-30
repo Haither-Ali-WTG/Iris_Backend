@@ -82,7 +82,10 @@ stages:
 
   - stage: Simulations
     dependsOn: [Tests_and_lint]
-    pool: simulations
+    pool:
+      name: simulations
+      demands:
+        - ALLOW_HEAVY_LOADS -equals yes
     jobs:
       - job: Simulation
         strategy:
