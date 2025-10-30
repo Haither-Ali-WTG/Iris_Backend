@@ -14,9 +14,9 @@ variables:
   # 7eccf590474f7c91e732c69e5e387f75fe4ff1b0
   virgil_build_id: '1506240'
 
-  # sqlbilling 20251028.3
-  # Tue Oct 28 09:30:53 UTC 2025 -- Tue Oct 28 20:30:53 AEDT 2025
+  # sqlbilling 20251030.2
+  # Thu Oct 30 06:31:49 UTC 2025 -- Thu Oct 30 17:31:49 AEDT 2025
   #
-  # Merged PR 41676: Update Readonly Ip Address
-  # d5f95cf6e089830ed7709dcd857406ce9c580fdf
-  sqlbilling_build_id: '1506432'
+  # Merged PR 41705: SQLBilling-Add-CS02120971.yml
+  # eb2aaf09faf9ae3294cd1f2069b42643eb76939e
+  sqlbilling_build_id: '1508153'
