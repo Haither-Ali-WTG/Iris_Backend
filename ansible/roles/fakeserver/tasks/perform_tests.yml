@@ -22,5 +22,5 @@
     no_proxy: "{{ inventory_hostname }},{{ item.host }},{{ item.host }}"
   register: test_result
   until:
-    - "'status' in test_result"
+    - test_result
     - test_result.status == item.status
