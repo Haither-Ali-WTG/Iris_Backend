@@ -78,7 +78,7 @@ stages:
   #           condition: succeededOrFailed()
 
   - stage: Simulations
-    dependsOn: [Tests_and_lint]
+    # dependsOn: [Tests_and_lint]
     pool:
       name: simulations
       demands:
