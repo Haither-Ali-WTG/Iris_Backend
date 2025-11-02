@@ -47,10 +47,6 @@
             | list
           }}
 
-    - name: Print clustered instance clustered_instances_names
-      debug:
-        var: clustered_instance_names
-
     - name: Report IIS counts
       vars:
         stats:
