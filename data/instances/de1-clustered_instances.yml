@@ -110,6 +110,8 @@ clustered_instances:
           cms_resource_group: RG-EU-Prod
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
@@ -345,7 +347,9 @@ clustered_instances:
           socket: 2069
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: star-aktivdata-fi
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -358,7 +362,8 @@ clustered_instances:
       frontend:
         maxconn: 20000
         ports:
-          plaintext: []
+          plaintext:
+            - 2035  # sft.aktivdata.fi
       stats:
         ports:
           web: 2070

@@ -1,4 +1,16 @@
 ---
+peppol_smp_deny_secure_path:
+  description: |-
+    SMP secure path blocking
+  order: 59
+  actions:
+    - >-
+      http-request deny if
+      peppol_smp_disallow_secure_path peppol-smp-test-service_wisetechglobal_com
+    - >-
+      http-request deny if
+      peppol_smp_disallow_secure_path peppol-smp-prod-service_wisetechglobal_com
+
 https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains

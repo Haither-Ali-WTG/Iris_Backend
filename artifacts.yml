@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251024.1
-  # Fri Oct 24 06:01:09 UTC 2025 -- Fri Oct 24 17:01:09 AEDT 2025
+  # Dante Build Artifact 20251031.1
+  # Fri Oct 31 03:21:04 UTC 2025 -- Fri Oct 31 14:21:04 AEDT 2025
   #
-  # Merge pull request 41542 from dante_artifact_upgrade into master
-  # ded1524c9522e5e73d548ed6d1f007d622aed559
-  dante_build_id: '1502670'
+  # Merge pull request 41735 from dante_artifact_upgrade into master
+  # 17ca6d31200b2e726122a9ddbb031ddce765b54c
+  dante_build_id: '1508917'
 
-  # virgil 20251024.7
-  # Fri Oct 24 05:07:46 UTC 2025 -- Fri Oct 24 16:07:46 AEDT 2025
+  # virgil 20251031.2
+  # Fri Oct 31 02:39:27 UTC 2025 -- Fri Oct 31 13:39:27 AEDT 2025
   #
-  # Merged PR 41548: add DE1 apex57-58
-  # 297d466d7cacf6810fbc62d819713aaa85aa9984
-  virgil_build_id: '1502612'
+  # Merged PR 41731: OS version upgrade DE1 switches
+  # 19124ef6d84362667ea2c0242951b097c2a89120
+  virgil_build_id: '1508885'
 
-  # sqlbilling 20251025.1
-  # Fri Oct 24 23:47:40 UTC 2025 -- Sat Oct 25 10:47:40 AEDT 2025
+  # sqlbilling 20251031.3
+  # Thu Oct 30 13:31:53 UTC 2025 -- Fri Oct 31 00:31:53 AEDT 2025
   #
-  # Merged PR 41561: AddSQLReadOnlyIP DE1
-  # 1488eabc7632dbe7b141bea650cf56889650038c
-  sqlbilling_build_id: '1503292'
+  # Merged PR 41725: SQLBilling-Add-CS02122797.yml
+  # ef83104e6c2537b85d075600afdd85cc8275e3df
+  sqlbilling_build_id: '1508404'

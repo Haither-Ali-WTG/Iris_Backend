@@ -214,6 +214,7 @@ clustered_instances:
             - 6054  # AU2 TEST SQL Cluster 412
             - 6055  # AU2 PROD SQL Cluster 449 (NXGPRD Dedicated)
             - 6056  # AU2 PROD SQL Cluster 450 (Logistics Services Dedicated)
+            - 6057  # AU2 TEST SQL Cluster 417 (Nippon Express Dedicated)
             # ..6999
 
       iis_servers: []
@@ -391,6 +392,8 @@ clustered_instances:
         - name: e-business_tmforwarding_com
           cms_resource_group: RG-AU-Prod
         - name: ediweb_oceanbridge_co_nz
+          cms_resource_group: RG-AU-Prod
+        - name: neo_famous_com_sg
           cms_resource_group: RG-AU-Prod
         - name: svc_jjlawson_com_au
           cms_resource_group: RG-AU-Prod
@@ -632,6 +635,8 @@ clustered_instances:
         - name: star-xttest-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-transport-wisetechglobal-com
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:

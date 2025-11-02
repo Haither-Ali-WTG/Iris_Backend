@@ -1,2 +1,5 @@
 ---
-{}
+sft_aktivdata_fi_2035:
+  description: Port ACL for sft.aktivdata.fi service
+  tests:
+    - dst_port 2035

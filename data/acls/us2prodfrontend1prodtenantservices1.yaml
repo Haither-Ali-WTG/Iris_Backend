@@ -1133,6 +1133,11 @@ us8-wtg-cloud-us_containerchain_com:
   tests:
     - hdr(host) -i wtg-cloud-us.containerchain.com
 
+star_rez1_com:
+  description: "*.rez1.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?rez1\.com$
+
 new-am-nexus_rez1_com:
   description: "new-am-nexus.rez1.com"
   tests:

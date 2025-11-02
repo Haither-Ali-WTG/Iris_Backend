@@ -1,0 +1,168 @@
+---
+wera.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: WERA
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0WEBL001
+      ip: 10.3.231.82
+      port: 443
+
+dmesx.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: DMESX
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 1304
+
+oauth.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: OAUTH
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 3607
+
+transit.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: TRANSIT
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 3749
+
+pdf-v.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: PDFV
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 5615
+
+dkaizen.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: DKAIZEN
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 6199
+
+victorek-ntraxrio.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: VICNTRAXRIO
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 6595
+
+ntrax.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: NTRAX
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 8499
+
+steveco-ntrax.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: STENTRAX
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 8999
+
+katepal-ntraxrio.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: KATNTRAXRIO
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 12559
+
+xinv.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: XINV
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 23011
+
+ntraxio.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: NTRAXIO
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.231.16
+      port: 29525

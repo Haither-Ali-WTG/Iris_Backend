@@ -228,48 +228,54 @@ gbccspoutbound-test.sand.wtg.zone:
       ip: 10.2.118.45
       port: 80
 
+testwca.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: au2sp-swca-402
+      ip: 10.2.116.66
+      port: 80
+
 testwca.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
+    enabled: false
   encryption: false
   servers:
-    - name: au2co-swca-402
-      ip: 10.2.82.25
+    - name: au2sp-swca-402
+      ip: 10.2.116.66
       port: 80
 
 testwcatoken.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
+    enabled: false
   encryption: false
   servers:
-    - name: au2co-swca-402
-      ip: 10.2.82.25
+    - name: au2sp-swca-402
+      ip: 10.2.116.66
       port: 80
 
 testwcabackend.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
+    enabled: false
   encryption: false
   servers:
-    - name: au2co-swca-402
-      ip: 10.2.82.25
+    - name: au2sp-swca-402
+      ip: 10.2.116.66
       port: 80
 
 testwcabackendpassword.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
+    enabled: false
   encryption: false
   servers:
-    - name: au2co-swca-402
-      ip: 10.2.82.25
+    - name: au2sp-swca-402
+      ip: 10.2.116.66
       port: 80
 
 wtlroo-glow.sand.wtg.zone:
@@ -527,7 +533,7 @@ wtg-sw.sand.wtg.zone:
       port: 8787
       settings: check ssl verify none backup
 
-ccc.sand.wtg.zone:
+cwc-console.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: true
@@ -690,6 +696,18 @@ runtimeapi-staging-cwconnector.sand.wtg.zone:
     - name: au2sp-scwi-402
       ip: 10.2.116.63
       port: 5443
+      settings: check ssl verify none
+
+xtvm-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-404
+      ip: 10.2.153.11
+      port: 9443
       settings: check ssl verify none
 
 au2wca.sand.wtg.zone:

@@ -1,2 +1,5 @@
 ---
-{}
+star_aktivdata_fi:
+  description: "*.aktivdata.fi"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?aktivdata\.fi$

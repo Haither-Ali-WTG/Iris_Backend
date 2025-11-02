@@ -78,8 +78,11 @@ stages:
   #           condition: succeededOrFailed()
 
   - stage: Simulations
-    # dependsOn: [Tests_and_lint]
-    pool: simulations
+    dependsOn: [Tests_and_lint]
+    pool:
+      name: simulations
+      demands:
+        - ALLOW_HEAVY_LOADS -equals yes
     jobs:
       - job: Simulation
         strategy:

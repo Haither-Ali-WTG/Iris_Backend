@@ -26,6 +26,7 @@ https_redirect:
     - redirect scheme https if star_cargosphere_biz !{ ssl_fc }
     - redirect scheme https if star_cargosphere_net !{ ssl_fc }
     - redirect scheme https if star_cargosphere_co !{ ssl_fc }
+    - redirect scheme https if star_rez1_com !{ ssl_fc }
 
 cargosphere_backend_selection:
   description: |-

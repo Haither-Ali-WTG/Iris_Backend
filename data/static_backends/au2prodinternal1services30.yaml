@@ -119,3 +119,14 @@ compliancewise-test.wisegrid.net:
     - name: AU2WT-SIIS-401B
       ip: 10.2.69.20
       port: 80
+
+cwc-console.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: au2wp-scwc-401
+      ip: 10.2.88.128
+      port: 7170
