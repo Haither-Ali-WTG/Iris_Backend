@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251031.1
-  # Fri Oct 31 03:21:04 UTC 2025 -- Fri Oct 31 14:21:04 AEDT 2025
+  # Dante Build Artifact 20251103.1
+  # Mon Nov  3 02:52:58 UTC 2025 -- Mon Nov  3 13:52:58 AEDT 2025
   #
-  # Merge pull request 41735 from dante_artifact_upgrade into master
-  # 17ca6d31200b2e726122a9ddbb031ddce765b54c
-  dante_build_id: '1508917'
+  # Merged PR 41766: feat: schedule the registry cert update pipeline runs on the monthly basis
+  # 24a63886898c0a28856b52f72babebd2ee492e04
+  dante_build_id: '1511453'
 
   # virgil 20251031.2
   # Fri Oct 31 02:39:27 UTC 2025 -- Fri Oct 31 13:39:27 AEDT 2025
