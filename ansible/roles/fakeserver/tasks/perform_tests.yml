@@ -2,7 +2,7 @@
 # There is an issue currently with url module accepting int only for status_code. lynt can't convert str to int
 - name: Perform tests  # noqa args[module]
   uri:
-    follow_redirects: all
+    follow_redirects: none
     use_proxy: 'no'
     url: >-
       http{{ 's' if item.ssl else '' }}://{{ item.host }}:{{
