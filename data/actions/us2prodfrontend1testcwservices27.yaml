@@ -33,3 +33,4 @@ custom_url_actions:
   order: 80
   actions:
     - use_backend www-l77trn_wisegrid_net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
+    - use_backend www-mfitrn_wisegrid_net if { hdr(host),field(1,:) -i purchaseordermanagement-test.mainchain.net }
