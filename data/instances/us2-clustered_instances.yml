@@ -316,9 +316,9 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: trax_tqlglobal_com
           cms_resource_group: RG-US-Prod
-        - name: purchaseordermanagement-mainchain-net
+        - name: purchaseordermanagement_mainchain_net
           cms_resource_group: RG-US-Prod
-        - name: purchaseordermanagement_test-mainchain-net
+        - name: purchaseordermanagement-test_mainchain_net
           cms_resource_group: RG-US-Prod
       cipher:
         profiles:
