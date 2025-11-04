@@ -201,8 +201,19 @@
   become: yes
   when: haproxy_config.changed
 
+- name: print docker_port_map
+  debug:
+    var: docker_port_map
+
 - set_fact:
-    test_ports: "{{ docker_port_map | dict2items | map('join', ':') | list }}"
+    test_ports: >-
+      {% set result = [] %}
+      {% for host_port, container_port in docker_port_map.items() | sort %}
+      {%   set _ = result.append((host_port | replace('"', '')) ~ ':' ~ container_port) %}
+      {% endfor %}
+      {{ result }}    
+
+#      "{{ docker_port_map | dict2items | map('join', ':') | list }}"
 
 - name: Print test ports
   debug:
