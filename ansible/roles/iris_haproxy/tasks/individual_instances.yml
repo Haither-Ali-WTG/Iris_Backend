@@ -96,6 +96,21 @@
   loop: "{{ certificates | default([]) }}"
   no_log: true
   register: copy_certificates
+  when: (not simulation) or (check_all_certs | default(true))
+
+- name: Copy certificates directory in simulation environment
+  copy:
+    src: "certificates/"
+    dest: "{{ individual_instance_dir }}/etc/certs/"
+    mode: ug=r,o=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  no_log: true
+  register: copy_certificates
+  when:
+    - simulation
+    - not(check_all_certs | default(true))
 
 - name: Copy sqlbilling acl files for individual instance
   copy:

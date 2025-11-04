@@ -179,12 +179,14 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
+                -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
+                -e "{check_all_certs: $(check_all_certs)}"
                 -e "{use_cache: $(cms_use_cache)}"
                 -e "{intermediate: $(cms_append_intermediate_certificate)}"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
@@ -198,8 +200,8 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user)
+                -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
@@ -207,6 +209,8 @@ stages:
                 -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="target_dc=$(simulation_dc)"
                 -e="apt_mirror=$(apt_mirror)"
+                -e "{check_all_certs: $(check_all_certs)}"
+                -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
@@ -228,9 +232,11 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
+                -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
                 -e="target_dc=$(simulation_dc)"
+                -e "{check_all_certs: $(check_all_certs)}"
+                -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
             condition: always()
