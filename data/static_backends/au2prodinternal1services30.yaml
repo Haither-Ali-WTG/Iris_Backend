@@ -130,3 +130,20 @@ cwc-console.wisegrid.net:
     - name: au2wp-scwc-401
       ip: 10.2.88.128
       port: 7170
+
+myaccount-test.cargowise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /en-us/Public.aspx
+    check_expect: '200|301|302'
+  encryption: false
+  servers:
+    - name: AU2CO-SIIS-406A
+      ip: 10.2.69.48
+      port: 80
+      settings: check inter 10s downinter 1s fall 5 maxconn 8000
+    - name: AU2CO-SIIS-406B
+      ip: 10.2.69.49
+      port: 80
+      settings: backup
