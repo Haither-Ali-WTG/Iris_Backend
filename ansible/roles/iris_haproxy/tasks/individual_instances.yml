@@ -202,7 +202,7 @@
   when: haproxy_config.changed
 
 - set_fact:
-    test_ports: "{{ docker_port_map | dict2items | sort(attribute='key') | map('join', ':') | list }}"
+    test_ports: "{{ docker_port_map | dict2items | map('join', ':') | list }}"
 
 - name: Print test ports
   debug:
