@@ -172,7 +172,7 @@
           {%- for prealloc in container.port_prealloc -%}
             {%- set _ = result.update({prealloc: prealloc}) -%}
           {%- endfor -%}
-          {{ result | replace('"', '') | from_json }}
+          {{ result | from_json }}
         bad_ports: >-
           {{ ports_in_prealloc | intersect(container.port_map) }}
 
