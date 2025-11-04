@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251104.5
-  # Tue Nov  4 02:40:53 UTC 2025 -- Tue Nov  4 13:40:53 AEDT 2025
+  # Dante Build Artifact 20251105.1
+  # Tue Nov  4 23:32:10 UTC 2025 -- Wed Nov  5 10:32:10 AEDT 2025
   #
-  # Merged PR 41854: Added 10.2.87.11 to auto download qcow2 images pool
-  # ec4394946c867ca2745547c25fa46802b7b43fab
-  dante_build_id: '1512576'
+  # Merged PR 41889: Docker images: Install modules compatible with container python version
+  # 70ec3dff26a1f32339b7f738e3aa45090ebcc51f
+  dante_build_id: '1513442'
 
   # virgil 20251104.24
   # Tue Nov  4 03:14:10 UTC 2025 -- Tue Nov  4 14:14:10 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # e8f13654e4f9da9641653b64383e5ed0c630ed82
   virgil_build_id: '1512625'
 
-  # sqlbilling 20251103.2
-  # Mon Nov  3 11:57:47 UTC 2025 -- Mon Nov  3 22:57:47 AEDT 2025
+  # sqlbilling 20251105.3
+  # Tue Nov  4 14:54:15 UTC 2025 -- Wed Nov  5 01:54:15 AEDT 2025
   #
-  # Merged PR 41786: SQLBilling-Add-CS02124760.yml
-  # 09397975ef292262b0e89be521578c8ac7b21e61
-  sqlbilling_build_id: '1511797'
+  # Merged PR 41886: ChangeSQLReadOnlyIP US2
+  # 1317e434d63513b8ea80eec2680693227b5c37c9
+  sqlbilling_build_id: '1513098'
