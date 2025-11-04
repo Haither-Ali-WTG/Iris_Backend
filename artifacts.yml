@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251103.1
-  # Mon Nov  3 02:52:58 UTC 2025 -- Mon Nov  3 13:52:58 AEDT 2025
+  # Dante Build Artifact 20251104.5
+  # Tue Nov  4 02:40:53 UTC 2025 -- Tue Nov  4 13:40:53 AEDT 2025
   #
-  # Merged PR 41766: feat: schedule the registry cert update pipeline runs on the monthly basis
-  # 24a63886898c0a28856b52f72babebd2ee492e04
-  dante_build_id: '1511453'
+  # Merged PR 41854: Added 10.2.87.11 to auto download qcow2 images pool
+  # ec4394946c867ca2745547c25fa46802b7b43fab
+  dante_build_id: '1512576'
 
-  # virgil 20251031.2
-  # Fri Oct 31 02:39:27 UTC 2025 -- Fri Oct 31 13:39:27 AEDT 2025
+  # virgil 20251104.24
+  # Tue Nov  4 03:14:10 UTC 2025 -- Tue Nov  4 14:14:10 AEDT 2025
   #
-  # Merged PR 41731: OS version upgrade DE1 switches
-  # 19124ef6d84362667ea2c0242951b097c2a89120
-  virgil_build_id: '1508885'
+  # Merged PR 41868: Updating the tenable ssh key
+  # e8f13654e4f9da9641653b64383e5ed0c630ed82
+  virgil_build_id: '1512625'
 
-  # sqlbilling 20251031.3
-  # Thu Oct 30 13:31:53 UTC 2025 -- Fri Oct 31 00:31:53 AEDT 2025
+  # sqlbilling 20251103.2
+  # Mon Nov  3 11:57:47 UTC 2025 -- Mon Nov  3 22:57:47 AEDT 2025
   #
-  # Merged PR 41725: SQLBilling-Add-CS02122797.yml
-  # ef83104e6c2537b85d075600afdd85cc8275e3df
-  sqlbilling_build_id: '1508404'
+  # Merged PR 41786: SQLBilling-Add-CS02124760.yml
+  # 09397975ef292262b0e89be521578c8ac7b21e61
+  sqlbilling_build_id: '1511797'
