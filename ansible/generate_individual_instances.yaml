@@ -176,6 +176,10 @@
         bad_ports: >-
           {{ ports_in_prealloc | intersect(container.port_map) }}
 
+    - name: Print docker map
+      debug:
+        var: docker_port_map
+
     - name: Ensure docker_port_map is not empty
       assert:
         that: docker_port_map | length > 0
