@@ -7,12 +7,12 @@ variables:
   # 70ec3dff26a1f32339b7f738e3aa45090ebcc51f
   dante_build_id: '1513442'
 
-  # virgil 20251104.24
-  # Tue Nov  4 03:14:10 UTC 2025 -- Tue Nov  4 14:14:10 AEDT 2025
+  # virgil 20251105.3
+  # Wed Nov  5 01:38:13 UTC 2025 -- Wed Nov  5 12:38:13 AEDT 2025
   #
-  # Merged PR 41868: Updating the tenable ssh key
-  # e8f13654e4f9da9641653b64383e5ed0c630ed82
-  virgil_build_id: '1512625'
+  # Merged PR 41903: New tenable ssh key
+  # 357537e1bc9bf93134d71aad4addca0834181eed
+  virgil_build_id: '1513549'
 
   # sqlbilling 20251105.3
   # Tue Nov  4 14:54:15 UTC 2025 -- Wed Nov  5 01:54:15 AEDT 2025
