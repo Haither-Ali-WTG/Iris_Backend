@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251105.2
-  # Wed Nov  5 02:21:21 UTC 2025 -- Wed Nov  5 13:21:21 AEDT 2025
+  # Dante Build Artifact 20251105.3
+  # Wed Nov  5 03:33:13 UTC 2025 -- Wed Nov  5 14:33:13 AEDT 2025
   #
-  # Merge pull request 41904 from dante_artifact_upgrade into master
-  # 751dde6d9cffdf850c7c27852770b9b8512fde68
-  dante_build_id: '1513589'
+  # Merged PR 41902: Docker images: updated nginx-uwsgi and dante_agent
+  # f991585aae5775deec84c9d45bc4e858d0fd1470
+  dante_build_id: '1513655'
 
-  # virgil 20251105.3
-  # Wed Nov  5 01:38:13 UTC 2025 -- Wed Nov  5 12:38:13 AEDT 2025
+  # virgil 20251105.10
+  # Wed Nov  5 04:28:01 UTC 2025 -- Wed Nov  5 15:28:01 AEDT 2025
   #
-  # Merged PR 41903: New tenable ssh key
-  # 357537e1bc9bf93134d71aad4addca0834181eed
-  virgil_build_id: '1513549'
+  # Merged PR 41758: us2<>us1 routing change
+  # 3ceeb2253bd5cc0395aeccfc8baf6c43a16123db
+  virgil_build_id: '1513712'
 
   # sqlbilling 20251105.3
   # Tue Nov  4 14:54:15 UTC 2025 -- Wed Nov  5 01:54:15 AEDT 2025
