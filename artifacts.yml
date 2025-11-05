@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251105.3
-  # Wed Nov  5 03:33:13 UTC 2025 -- Wed Nov  5 14:33:13 AEDT 2025
+  # Dante Build Artifact 20251105.4
+  # Wed Nov  5 05:21:04 UTC 2025 -- Wed Nov  5 16:21:04 AEDT 2025
   #
-  # Merged PR 41902: Docker images: updated nginx-uwsgi and dante_agent
-  # f991585aae5775deec84c9d45bc4e858d0fd1470
-  dante_build_id: '1513655'
+  # Merge pull request 41926 from dante_artifact_upgrade into master
+  # cd554640a4244411012cfba4d0155840c22f31c4
+  dante_build_id: '1513755'
 
   # virgil 20251105.10
   # Wed Nov  5 04:28:01 UTC 2025 -- Wed Nov  5 15:28:01 AEDT 2025
