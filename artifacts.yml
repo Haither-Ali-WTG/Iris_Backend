@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251105.1
-  # Tue Nov  4 23:32:10 UTC 2025 -- Wed Nov  5 10:32:10 AEDT 2025
+  # Dante Build Artifact 20251105.2
+  # Wed Nov  5 02:21:21 UTC 2025 -- Wed Nov  5 13:21:21 AEDT 2025
   #
-  # Merged PR 41889: Docker images: Install modules compatible with container python version
-  # 70ec3dff26a1f32339b7f738e3aa45090ebcc51f
-  dante_build_id: '1513442'
+  # Merge pull request 41904 from dante_artifact_upgrade into master
+  # 751dde6d9cffdf850c7c27852770b9b8512fde68
+  dante_build_id: '1513589'
 
   # virgil 20251105.3
   # Wed Nov  5 01:38:13 UTC 2025 -- Wed Nov  5 12:38:13 AEDT 2025
