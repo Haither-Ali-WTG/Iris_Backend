@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251105.4
-  # Wed Nov  5 05:21:04 UTC 2025 -- Wed Nov  5 16:21:04 AEDT 2025
+  # Dante Build Artifact 20251106.7
+  # Thu Nov  6 02:41:10 UTC 2025 -- Thu Nov  6 13:41:10 AEDT 2025
   #
-  # Merge pull request 41926 from dante_artifact_upgrade into master
-  # cd554640a4244411012cfba4d0155840c22f31c4
-  dante_build_id: '1513755'
+  # Merge pull request 41964 from dante_artifact_upgrade into master
+  # ea6ea47b167ec70ebb4b0ae0abcc4e4c2503cfca
+  dante_build_id: '1514731'
 
-  # virgil 20251105.10
-  # Wed Nov  5 04:28:01 UTC 2025 -- Wed Nov  5 15:28:01 AEDT 2025
+  # virgil 20251106.8
+  # Wed Nov  5 22:26:25 UTC 2025 -- Thu Nov  6 09:26:25 AEDT 2025
   #
-  # Merged PR 41758: us2<>us1 routing change
-  # 3ceeb2253bd5cc0395aeccfc8baf6c43a16123db
-  virgil_build_id: '1513712'
+  # Merged PR 41949: Move some more C54s from Hyper-V to VMware
+  # 955775c1562c752741b989a866558b9123abc198
+  virgil_build_id: '1514444'
 
   # sqlbilling 20251106.1
   # Wed Nov  5 13:58:04 UTC 2025 -- Thu Nov  6 00:58:04 AEDT 2025
