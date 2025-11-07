@@ -9,6 +9,13 @@ variables:
   - name: azure_kv_name
     value: kv-wtg-iris-prod
 
+resources:
+  repositories:
+    - repository: master_branch
+      type: git
+      name: iris
+      ref: refs/heads/master
+
 stages:
   - stage: Tests_and_lint
     pool: cicd-v2
@@ -116,6 +123,16 @@ stages:
               s3_iris_bucket: s3://au-iscore-iris-prod-1/
               pure_usernames: au-iscore-iris-prod-1-ro
         steps:
+          - checkout: master_branch
+            path: master_worktree
+            clean: false
+            displayName: 'Checkout master branch to master_worktree'
+
+          - checkout: self
+            path: s/iris
+            clean: false
+            displayName: 'Checkout self'
+
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
             inputs:
@@ -125,12 +142,12 @@ stages:
 
           - script: |
               set -euxo pipefail
-              pip install -r requirements.txt
+              pip install -r iris/requirements.txt
             displayName: 'Install requirements'
 
           - script: |
               set -euxo pipefail
-              cp ansible/ansible.cfg .
+              cp iris/ansible/ansible.cfg .
             displayName: 'Prepare to run playbooks'
 
           - task: DownloadPipelineArtifact@2
@@ -142,7 +159,7 @@ stages:
               pipeline: 26
               buildVersionToDownload: 'specific'
               buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)
+              path: $(Build.SourcesDirectory)/dante
 
           - task: DownloadPipelineArtifact@2
             displayName: 'Download sqlbilling artifacts for ACL'
@@ -160,8 +177,8 @@ stages:
           - task: CopyFiles@2
             displayName: 'Merge artifacts to a single roles folder'
             inputs:
-              sourceFolder: iris
-              targetFolder: ansible
+              sourceFolder: dante/iris
+              targetFolder: iris/ansible
 
           - task: InstallSSHKey@0
             displayName: 'Install an SSH key'
@@ -169,13 +186,36 @@ stages:
               knownHostsEntry: 'StrictHostKeyChecking no'
               sshKeySecureFile: 'id_rsa'
 
+          - script: |
+              set -euxo pipefail
+
+              echo "##vso[task.setvariable variable=certificate_changed]true"
+
+              DC_LOWER=$(echo "$(simulation_dc)" | tr '[:upper:]' '[:lower:]')
+
+              # Extract certificates from instance definition file
+              yq '.clustered_instances.hosts[].certificates[]?' \
+              iris/data/instances/${DC_LOWER}-clustered_instances.yml > pr_certs.yml || true
+
+              yq '.clustered_instances.hosts[].certificates[]?' \
+              ../master_worktree/data/instances/${DC_LOWER}-clustered_instances.yml > master_certs.yml || true
+
+              # Check the difference
+              if diff -q master_certs.yml pr_certs.yml >/dev/null 2>&1; then
+                echo "Certificates unchanged in ${DC_LOWER}-clustered_instances.yml"
+                echo "##vso[task.setvariable variable=certificate_changed]false"
+              else
+                echo "Certificates changed in ${DC_LOWER}-clustered_instances.yml"
+              fi
+            displayName: 'Check if the certificate section changed'
+
           - task: Ansible@0
             displayName: 'Check and save certificates'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/check_and_save_certificates_cms.yml'
+              playbookPathOnAgentMachine: 'iris/ansible/check_and_save_certificates_cms.yml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
+              inventoryFileOnAgentMachine: 'iris/data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
@@ -183,7 +223,7 @@ stages:
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
-                -e "{check_all_certs: $(check_all_certs)}"
+                -e "{check_all_certs: $(certificate_changed) }"
                 -e "{use_cache: $(cms_use_cache)}"
                 -e "{intermediate: $(cms_append_intermediate_certificate)}"
                 -e "{simulation: true}"
@@ -194,9 +234,9 @@ stages:
             displayName: 'Test haproxy'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/test_haproxy.yml'
+              playbookPathOnAgentMachine: 'iris/ansible/test_haproxy.yml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
+              inventoryFileOnAgentMachine: 'iris/data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user)
@@ -209,7 +249,7 @@ stages:
                 -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="target_dc=$(simulation_dc)"
                 -e="apt_mirror=$(apt_mirror)"
-                -e "{check_all_certs: $(check_all_certs)}"
+                -e "{check_all_certs: $(certificate_changed) }"
                 -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -217,7 +257,7 @@ stages:
               ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
               ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
-          - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
+          - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
             artifact: configs_$(simulation_dc)
             displayName: 'Publish configs for $(simulation_dc)'
             condition: always()
@@ -226,16 +266,15 @@ stages:
             displayName: 'Unregister nodes'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
+              playbookPathOnAgentMachine: 'iris/ansible/unregister_nodes.yaml'
               inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
+              inventoryFileOnAgentMachine: 'iris/data/instances'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff
                 -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="target_dc=$(simulation_dc)"
-                -e "{check_all_certs: $(check_all_certs)}"
                 -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -245,7 +284,7 @@ stages:
             displayName: 'Cleanup'
             inputs:
               ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/simulation_cleanup.yaml'
+              playbookPathOnAgentMachine: 'iris/ansible/simulation_cleanup.yaml'
               failOnStdErr: false
               args: >-
                 -u $(user) --diff -e="pool=/mnt/storage/test_pool" -e="iso_path=/mnt/storage/iso"
