@@ -14,9 +14,9 @@ variables:
   # 8bb0930e98f8787ab39c98a5d990b0fd787d63bc
   virgil_build_id: '1515659'
 
-  # sqlbilling 20251107.2
-  # Fri Nov  7 06:42:46 UTC 2025 -- Fri Nov  7 17:42:46 AEDT 2025
+  # sqlbilling 20251107.4
+  # Fri Nov  7 11:55:40 UTC 2025 -- Fri Nov  7 22:55:40 AEDT 2025
   #
-  # Merged PR 42027: added IP from CS02129129 202.130.209.83 MFILVE
-  # da9d86393cbbcccd8b10def2e25ddfd7a96b2f27
-  sqlbilling_build_id: '1515848'
+  # Merged PR 42057: AddSQLReadOnlyIP US2
+  # 6595ac96cfacf9d273069b5dc989a7060d6e61c8
+  sqlbilling_build_id: '1516018'
