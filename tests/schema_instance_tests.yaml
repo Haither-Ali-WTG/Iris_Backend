@@ -4,6 +4,7 @@ clustered_instances:
              key=regex('^[a-z0-9]+$', name='clustered instance label'))
 ---
 instance_test:
+  certs_list: list(regex('^[a-z-]+$', name='certificates for nginx'))
   tests: list(include('one_instance_test'))
 ---
 one_instance_test:

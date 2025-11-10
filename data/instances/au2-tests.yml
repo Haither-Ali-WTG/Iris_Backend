@@ -2,6 +2,8 @@
 clustered_instances:
   hosts:
     au2corprdg:
+      certs_list:
+        - star-wisetechglobal-com
       tests:
         - host: rdg.wisetechglobal.com
           path: /
