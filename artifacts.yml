@@ -7,12 +7,12 @@ variables:
   # 3e0d13856bba5a872bd05abe0e9e8dd4369dfac0
   dante_build_id: '1515702'
 
-  # virgil 20251107.2
-  # Fri Nov  7 02:30:45 UTC 2025 -- Fri Nov  7 13:30:45 AEDT 2025
+  # virgil 20251111.3
+  # Tue Nov 11 00:07:17 UTC 2025 -- Tue Nov 11 11:07:17 AEDT 2025
   #
-  # Merged PR 42036: Tenant-opentecnologia-update
-  # 8bb0930e98f8787ab39c98a5d990b0fd787d63bc
-  virgil_build_id: '1515659'
+  # Merged PR 42081: change username for topic
+  # dc0e6668b9d9bb3bba4128dfe585651e62bd9682
+  virgil_build_id: '1519040'
 
   # sqlbilling 20251107.4
   # Fri Nov  7 11:55:40 UTC 2025 -- Fri Nov  7 22:55:40 AEDT 2025
