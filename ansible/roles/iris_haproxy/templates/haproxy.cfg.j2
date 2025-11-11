@@ -325,7 +325,7 @@ errorfile {{ sorry_page.code }} /etc/haproxy/sorry_pages/{{ sorry_page.file }}
 
 {%   for server in backend.servers %}
 server {{ server.name }}
-{%-    if simulation %} {{ ansible_host }}:
+{%-    if simulation2 | default(false) %} {{ ansible_host }}:
 {%-      if backend.encryption | default(false) -%}
 8082 check
 {%       else -%}

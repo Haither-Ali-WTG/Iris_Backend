@@ -186,6 +186,7 @@ stages:
                 -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="@ansible/hypervisor.yaml"
                 -e="pure_usernames='$(pure_usernames)'"
+                -e="{use_cicd_pool: $(use_cicd_pool)}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 

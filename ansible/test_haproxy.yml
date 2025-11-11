@@ -27,6 +27,7 @@
       loop:
         - "../generated_configs"
         - "../generated_configs/{{ target_dc }}"
+      become: "{{ no if use_cicd_pool else yes }}"
 
 - name: Configure hypervisor
   hosts: hypervisor
