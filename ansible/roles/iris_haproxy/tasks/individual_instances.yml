@@ -216,22 +216,6 @@
   become: yes
   when: haproxy_config.changed
 
-- name: print docker_port_map
-  debug:
-    var: docker_port_map
-
-- set_fact:
-    test_ports: >-
-      {%- set result = [] -%}
-      {%- for host_port, container_port in docker_port_map.items() | sort -%}
-      {%-   set _ = result.append((host_port | replace('"', '')) ~ ':' ~ container_port) -%}
-      {%- endfor -%}
-      {{ result }}    
-
-- name: Print test ports
-  debug:
-    var: test_ports
-
 - name: Deploy the haproxy container
   include_role:
     name: container_runner
