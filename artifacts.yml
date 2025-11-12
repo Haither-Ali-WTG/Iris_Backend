@@ -7,12 +7,12 @@ variables:
   # 2509c8392f6cd6d7a669e756215ea32e630924f4
   dante_build_id: '1519096'
 
-  # virgil 20251111.3
-  # Tue Nov 11 00:07:17 UTC 2025 -- Tue Nov 11 11:07:17 AEDT 2025
+  # virgil 20251112.1
+  # Wed Nov 12 02:22:22 UTC 2025 -- Wed Nov 12 13:22:22 AEDT 2025
   #
-  # Merged PR 42081: change username for topic
-  # dc0e6668b9d9bb3bba4128dfe585651e62bd9682
-  virgil_build_id: '1519040'
+  # Merged PR 42103: update swp12-14 vlan id on apex23/24
+  # 2e1513aab581bc598516dfe965499d2fb2c15e98
+  virgil_build_id: '1520040'
 
   # sqlbilling 20251111.6
   # Tue Nov 11 11:04:31 UTC 2025 -- Tue Nov 11 22:04:31 AEDT 2025
