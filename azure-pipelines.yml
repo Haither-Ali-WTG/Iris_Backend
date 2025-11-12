@@ -10,75 +10,75 @@ variables:
     value: kv-wtg-iris-prod
 
 stages:
-  # - stage: Tests_and_lint
-  #   pool: cicd-v2
-  #   jobs:
-  #     - job: Tests_and_lint
-  #       steps:
-  #         - script: |
-  #             set -euxo pipefail
-  #             pip install -r requirements.txt
-  #           displayName: 'Install requirements'
+  - stage: Tests_and_lint
+    pool: cicd-v2
+    jobs:
+      - job: Tests_and_lint
+        steps:
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
 
-  #         - task: DownloadPipelineArtifact@2
-  #           displayName: 'Download virgil inventories and yamale extensions'
-  #           inputs:
-  #             buildType: 'specific'
-  #             project: 'InfrastructureAutomation'
-  #             # virgil pipeline Id
-  #             pipeline: 4
-  #             artifact: inventories
-  #             buildVersionToDownload: 'specific'
-  #             buildId: '$(virgil_build_id)'
-  #             path: $(Build.SourcesDirectory)/inventories
-  #             patterns: |
-  #               inventory-*-A.yaml
-  #               virgil_yamale.py
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download virgil inventories and yamale extensions'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # virgil pipeline Id
+              pipeline: 4
+              artifact: inventories
+              buildVersionToDownload: 'specific'
+              buildId: '$(virgil_build_id)'
+              path: $(Build.SourcesDirectory)/inventories
+              patterns: |
+                inventory-*-A.yaml
+                virgil_yamale.py
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pytest --tb=short
-  #           displayName: 'Python tests'
+          - script: |
+              set -euxo pipefail
+              pytest --tb=short
+            displayName: 'Python tests'
 
-  #         - task: PublishTestResults@2
-  #           condition: succeededOrFailed()
-  #           inputs:
-  #             testResultsFiles: 'reports/nosetests.xml'
+          - task: PublishTestResults@2
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFiles: 'reports/nosetests.xml'
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             pylint --rcfile=setup.cfg \
-  #             --disable=redefined-outer-name \
-  #             tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
-  #           displayName: 'Python lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              pylint --rcfile=setup.cfg \
+              --disable=redefined-outer-name \
+              tests/ ansible/roles/iris_haproxy/files/*.py ansible/roles/collect_sites/files/*.py
+            displayName: 'Python lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             mypy tests/ ansible/roles/collect_sites/files/
-  #           displayName: 'Mypy type check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              mypy tests/ ansible/roles/collect_sites/files/
+            displayName: 'Mypy type check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             yamllint -s .
-  #           displayName: 'YAML lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              yamllint -s .
+            displayName: 'YAML lint'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             bandit -r .
-  #           displayName: 'Bandit security check'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              bandit -r .
+            displayName: 'Bandit security check'
+            condition: succeededOrFailed()
 
-  #         - script: |
-  #             set -euxo pipefail
-  #             ansible-lint $(find ansible -iname '*.y*ml')
-  #           displayName: 'Ansible lint'
-  #           condition: succeededOrFailed()
+          - script: |
+              set -euxo pipefail
+              ansible-lint $(find ansible -iname '*.y*ml')
+            displayName: 'Ansible lint'
+            condition: succeededOrFailed()
 
   - stage: Simulations
-    # dependsOn: [Tests_and_lint]
+    dependsOn: [Tests_and_lint]
     pool:
       name: simulations
       demands:
@@ -92,26 +92,26 @@ stages:
               s3_host: au2s3-2.wtg.ws
               s3_iris_bucket: s3://au-iscore-iris-prod-1/
               pure_usernames: au-iscore-iris-prod-1-ro
-            # DE1:
-            #   simulation_dc: DE1
-            #   s3_host: de1s3-2.wtg.ws
-            #   s3_iris_bucket: s3://de-iscore-iris-prod-1/
-            #   pure_usernames: de-iscore-iris-prod-1-ro
-            # US2:
-            #   simulation_dc: US2
-            #   s3_host: us2s3-2.wtg.ws
-            #   s3_iris_bucket: s3://us-iscore-iris-prod-1/
-            #   pure_usernames: us-iscore-iris-prod-1-ro
-            # CN1:
-            #   simulation_dc: CN1
-            #   s3_host: au2s3-2.wtg.ws
-            #   s3_iris_bucket: s3://au-iscore-iris-prod-1/
-            #   pure_usernames: au-iscore-iris-prod-1-ro
-            # SA1:
-            #   simulation_dc: SA1
-            #   s3_host: au2s3-2.wtg.ws
-            #   s3_iris_bucket: s3://au-iscore-iris-prod-1/
-            #   pure_usernames: au-iscore-iris-prod-1-ro
+            DE1:
+              simulation_dc: DE1
+              s3_host: de1s3-2.wtg.ws
+              s3_iris_bucket: s3://de-iscore-iris-prod-1/
+              pure_usernames: de-iscore-iris-prod-1-ro
+            US2:
+              simulation_dc: US2
+              s3_host: us2s3-2.wtg.ws
+              s3_iris_bucket: s3://us-iscore-iris-prod-1/
+              pure_usernames: us-iscore-iris-prod-1-ro
+            CN1:
+              simulation_dc: CN1
+              s3_host: au2s3-2.wtg.ws
+              s3_iris_bucket: s3://au-iscore-iris-prod-1/
+              pure_usernames: au-iscore-iris-prod-1-ro
+            SA1:
+              simulation_dc: SA1
+              s3_host: au2s3-2.wtg.ws
+              s3_iris_bucket: s3://au-iscore-iris-prod-1/
+              pure_usernames: au-iscore-iris-prod-1-ro
         steps:
           - task: AzureKeyVault@2
             displayName: 'Get secret to authenticate to key vault from ansible'
@@ -205,31 +205,31 @@ stages:
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-              # ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
-              # ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
-              # ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
+              ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
+              ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
+              ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
-          # - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
-          #   artifact: configs_$(simulation_dc)
-          #   displayName: 'Publish configs for $(simulation_dc)'
-          #   condition: always()
+          - publish: $(System.DefaultWorkingDirectory)/generated_configs/$(simulation_dc)
+            artifact: configs_$(simulation_dc)
+            displayName: 'Publish configs for $(simulation_dc)'
+            condition: always()
 
-          # - task: Ansible@0
-          #   displayName: 'Unregister nodes'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
-          #     inventoriesAgentMachine: 'file'
-          #     inventoryFileOnAgentMachine: 'data/instances'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff
-          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          #       -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
-          #       -e="target_dc=$(simulation_dc)"
-          #   env:
-          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-          #   condition: always()
+          - task: Ansible@0
+            displayName: 'Unregister nodes'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/unregister_nodes.yaml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'data/instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
+                -e="target_dc=$(simulation_dc)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+            condition: always()
 
           - task: Ansible@0
             displayName: 'Cleanup'
