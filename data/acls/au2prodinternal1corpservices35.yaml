@@ -37,5 +37,6 @@ knowledge_mcp_wtg_zone:
     - hdr(host) -i knowledge-client.mcp.wtg.zone
     - hdr(host) -i knowledge-rest.mcp.wtg.zone
     - hdr(host) -i internal.knowledge.wtg.zone
+    - hdr(host) -i admin.knowledge.wtg.zone
     - hdr(host) -i web.knowledge.wtg.zone
     - hdr(host) -i wta.knowledge.wtg.zone
