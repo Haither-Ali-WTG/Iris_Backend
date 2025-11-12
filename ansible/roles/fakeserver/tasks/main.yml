@@ -37,7 +37,7 @@
     tests_list: "{{ tests_list | default([]) + hostvars[item].tests }}"
   when:
     - hostvars[item].machine_cluster in machine_clusters
-    - '"tests" in hostvars[item]'  
+    - '"tests" in hostvars[item]'
   loop: "{{ groups['clustered_instances'] }}"
 
 - name: Deploy fakeserver
