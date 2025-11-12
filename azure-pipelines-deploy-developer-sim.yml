@@ -116,6 +116,7 @@ stages:
                 -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
                 -e="skip_configure_firewall=True"
+                -e="apt_mirror=$(apt_mirror)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
@@ -187,6 +188,7 @@ stages:
                 -e="@ansible/hypervisor.yaml"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="{use_cicd_pool: $(use_cicd_pool)}"
+                -e="apt_mirror=$(apt_mirror)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 

@@ -14,12 +14,6 @@ corp-password-rdg-http:
     - name: au2co-srdg-2.wtg.zone
       ip: 10.2.68.18
       port: 80
-    - name: au2co-srdg-3.wtg.zone
-      ip: 10.2.68.19
-      port: 80
-    - name: au2co-srdg-4.wtg.zone
-      ip: 10.2.68.20
-      port: 80
 
 corp-password-rdg-rpc:
   clustered_instances: [au2corprdg]

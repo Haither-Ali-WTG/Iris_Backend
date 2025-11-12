@@ -183,3 +183,17 @@ gsswebhooks.wisegrid.net:
     - name: au2wp-sdkr-402b
       ip: 10.2.88.138
       port: 42305
+
+xt-customs-mxmanifest.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|301|302|401|404'
+  servers:
+    - name: au2wp-sxtr-401
+      ip: 10.2.70.25
+      port: 9443
+    - name: au2wp-sxtr-402
+      ip: 10.2.70.26
+      port: 9443

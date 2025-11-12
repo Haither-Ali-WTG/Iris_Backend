@@ -32,11 +32,15 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
+    ### Webtracker
     - use_backend cvhven_webtracker_wisegrid_net if { hdr(host),field(1,:) -i dashboard.caroz.com }
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ecarrier.greencarrier.com }
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ecarrier.greencarrier.com }
     - use_backend gknrdd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i forwarding.gknfreightservices.com }
     - use_backend h47prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.webtracker.hecksher.com }
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.johngood.co.uk }
+    - use_backend je6lpr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
+    - use_backend sozprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
+    ### GLOW
     - use_backend www-dehprd_wisegrid_net if { hdr(host),field(1,:) -i customerportal.deugro.com }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
