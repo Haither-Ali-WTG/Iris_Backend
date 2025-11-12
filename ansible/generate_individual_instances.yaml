@@ -143,7 +143,7 @@
             {%- if item is string and '-' in item -%}
               {%- set _ = result.append(item.split('-') | map('int') | list) -%}
             {%- else -%}
-              {%- set _ = result.append([item|int, item|int]) -%}
+              {%- set _ = result.append([item | int, item | int]) -%}
             {%- endif -%}
           {%- endfor -%}
           {{ result }}
