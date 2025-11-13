@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251112.1
-  # Wed Nov 12 03:21:09 UTC 2025 -- Wed Nov 12 14:21:09 AEDT 2025
+  # Dante Build Artifact 20251113.1
+  # Thu Nov 13 01:41:21 UTC 2025 -- Thu Nov 13 12:41:21 AEDT 2025
   #
-  # Merge pull request 42122 from dante_artifact_upgrade into master
-  # 13b5ff77a140de5393fbc40075b54fa3d0a2a335
-  dante_build_id: '1520086'
+  # Merged PR 41663: Remove beats installations on simulation nodes.
+  # a86e6169cd0ce8727374d94fdad4829dbf4892ab
+  dante_build_id: '1520915'
 
   # virgil 20251112.1
   # Wed Nov 12 02:22:22 UTC 2025 -- Wed Nov 12 13:22:22 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 2e1513aab581bc598516dfe965499d2fb2c15e98
   virgil_build_id: '1520040'
 
-  # sqlbilling 20251112.3
-  # Wed Nov 12 06:32:46 UTC 2025 -- Wed Nov 12 17:32:46 AEDT 2025
+  # sqlbilling 20251113.2
+  # Thu Nov 13 10:39:00 UTC 2025 -- Thu Nov 13 21:39:00 AEDT 2025
   #
-  # Merged PR 42112: AddSQLReadOnlyIP AU2 DE1
-  # e05204c82d30253a9193b9e76e118c134962e1a4
-  sqlbilling_build_id: '1520234'
+  # Merged PR 42173: SQLBilling-Add-CS02137707.yml
+  # a2e617752675780fa4b8a462ed5a948c4f8d2760
+  sqlbilling_build_id: '1521257'
