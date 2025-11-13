@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251113.1
-  # Thu Nov 13 01:41:21 UTC 2025 -- Thu Nov 13 12:41:21 AEDT 2025
+  # Dante Build Artifact 20251114.1
+  # Thu Nov 13 21:41:13 UTC 2025 -- Fri Nov 14 08:41:13 AEDT 2025
   #
-  # Merged PR 41663: Remove beats installations on simulation nodes.
-  # a86e6169cd0ce8727374d94fdad4829dbf4892ab
-  dante_build_id: '1520915'
+  # Merge pull request 42175 from dante_artifact_upgrade into master
+  # 9eb77f3d818ad72a8d67b8bb1afd1669030d3fe5
+  dante_build_id: '1521655'
 
-  # virgil 20251112.1
-  # Wed Nov 12 02:22:22 UTC 2025 -- Wed Nov 12 13:22:22 AEDT 2025
+  # virgil 20251114.1
+  # Thu Nov 13 20:45:23 UTC 2025 -- Fri Nov 14 07:45:23 AEDT 2025
   #
-  # Merged PR 42103: update swp12-14 vlan id on apex23/24
-  # 2e1513aab581bc598516dfe965499d2fb2c15e98
-  virgil_build_id: '1520040'
+  # Merged PR 42142: Add native VLAN to experimental boxes
+  # a3c85dff9905a07b4679d20bd8b3d406a87a7181
+  virgil_build_id: '1521613'
 
   # sqlbilling 20251113.2
   # Thu Nov 13 10:39:00 UTC 2025 -- Thu Nov 13 21:39:00 AEDT 2025
