@@ -193,7 +193,7 @@ xt-customs-mxmanifest.wisegrid.net:
   servers:
     - name: au2wp-sxtr-401
       ip: 10.2.70.25
-      port: 9443
+      port: 9080
     - name: au2wp-sxtr-402
       ip: 10.2.70.26
-      port: 9443
+      port: 9080
