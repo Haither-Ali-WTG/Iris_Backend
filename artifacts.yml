@@ -7,12 +7,12 @@ variables:
   # 9eb77f3d818ad72a8d67b8bb1afd1669030d3fe5
   dante_build_id: '1521655'
 
-  # virgil 20251114.1
-  # Thu Nov 13 20:45:23 UTC 2025 -- Fri Nov 14 07:45:23 AEDT 2025
+  # virgil 20251117.2
+  # Sun Nov 16 23:47:29 UTC 2025 -- Mon Nov 17 10:47:29 AEDT 2025
   #
-  # Merged PR 42142: Add native VLAN to experimental boxes
-  # a3c85dff9905a07b4679d20bd8b3d406a87a7181
-  virgil_build_id: '1521613'
+  # Merged PR 42205: Updated au2lbl00817 to Ubuntu 24.04
+  # 4243ceb282827ff3524a7bc5f7dd64b5b7c2d1fa
+  virgil_build_id: '1524282'
 
   # sqlbilling 20251114.6
   # Fri Nov 14 11:04:47 UTC 2025 -- Fri Nov 14 22:04:47 AEDT 2025
