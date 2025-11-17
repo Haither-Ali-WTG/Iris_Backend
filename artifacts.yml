@@ -7,12 +7,12 @@ variables:
   # 7f412a19b47aea26a7693324e3da376f079dc319
   dante_build_id: '1524350'
 
-  # virgil 20251117.2
-  # Sun Nov 16 23:47:29 UTC 2025 -- Mon Nov 17 10:47:29 AEDT 2025
+  # virgil 20251117.4
+  # Mon Nov 17 02:03:14 UTC 2025 -- Mon Nov 17 13:03:14 AEDT 2025
   #
-  # Merged PR 42205: Updated au2lbl00817 to Ubuntu 24.04
-  # 4243ceb282827ff3524a7bc5f7dd64b5b7c2d1fa
-  virgil_build_id: '1524282'
+  # Merged PR 42226: Enable au2lbl00817 for rebuild
+  # fd00e4f8d7e06473c0afe96cd744f313133c3d9f
+  virgil_build_id: '1524429'
 
   # sqlbilling 20251114.6
   # Fri Nov 14 11:04:47 UTC 2025 -- Fri Nov 14 22:04:47 AEDT 2025
