@@ -147,3 +147,29 @@ myaccount-test.cargowise.com:
       ip: 10.2.69.49
       port: 80
       settings: backup
+
+customsconnector-test-internal.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+customsconnector-internal.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+    - name: AU2WP-SIIS-402B
+      ip: 10.2.69.17
+      port: 80
