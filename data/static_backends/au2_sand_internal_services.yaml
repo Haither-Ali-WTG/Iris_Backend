@@ -507,6 +507,32 @@ ocmbe.sand.wtg.zone:
       ip: 10.2.122.17
       port: 5002
 
+portal-uat-messaging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: au2sp-sesv-402
+      ip: 10.2.116.75
+      port: 8080
+    - name: au2sp-sesv-403
+      ip: 10.2.116.74
+      port: 8080
+
+loadbalancer-uat-messaging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: au2sp-sesv-402
+      ip: 10.2.116.75
+      port: 8081
+    - name: au2sp-sesv-403
+      ip: 10.2.116.74
+      port: 8081
+
 wtg-sw.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
