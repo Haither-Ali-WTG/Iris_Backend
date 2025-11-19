@@ -351,7 +351,7 @@ clustered_instances:
         - name: star-aktivdata-fi
           cms_resource_group: RG-EU-Prod
         - name: star_acoinformatica_it
-          cms_resource_group: RG-AU-Prod
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
