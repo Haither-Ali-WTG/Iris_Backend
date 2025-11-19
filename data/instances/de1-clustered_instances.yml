@@ -350,7 +350,7 @@ clustered_instances:
       certificates:
         - name: star-aktivdata-fi
           cms_resource_group: RG-EU-Prod
-        - name: star_acoinformatica_it
+        - name: star-acoinformatica-it
           cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
