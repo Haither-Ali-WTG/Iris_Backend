@@ -8,3 +8,48 @@ star_acoinformatica_it:
   description: "*.acoinformatica.it"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?acoinformatica\.it$
+
+rdg_acoinformatica_it:
+  description: "rdg.acoinformatica.it"
+  tests:
+    - hdr(host) -i rdg.acoinformatica.it
+
+xedi1_acoinformatica_it:
+  description: "xedi1.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi1.acoinformatica.it
+
+acl xedi2_acoinformatica_it:
+  description: "*xedi2.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi2.acoinformatica.it
+
+acl xedi3_acoinformatica_it:
+  description: "xedi3.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi3.acoinformatica.it
+
+acl xedi4_acoinformatica_it:
+  description: "xedi4.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi4.acoinformatica.it
+
+crm_acoinformatica_it:
+  description: "crm.acoinformatica.it"
+  tests:
+    - hdr(host) -i crm.acoinformatica.it
+
+update_acoinformatica_it:
+  description: "update.acoinformatica.it"
+  tests:
+    - hdr(host) -i update.acoinformatica.it
+
+update2_acoinformatica_it:
+  description: "update2.acoinformatica.it"
+  tests:
+    - hdr(host) -i update2.acoinformatica.it
+
+acl wsaco_acoinformatica_it:
+  description: "wsaco.acoinformatica.it"
+  tests:
+    - hdr(host) -i wsaco.acoinformatica.it
