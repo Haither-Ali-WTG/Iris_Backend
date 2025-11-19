@@ -44,6 +44,8 @@ clustered_instances:
             - 3026  # DE1WP-SSQL-420a/b i1
             - 3027  # DE1WT-SSQL-408a/b i1
             - 3028  # DE1WT-SSQL-409a/b i1
+            - 3029  # DE1WP-SSQL-431a/b i1
+            - 3030  # DE1WP-SSQL-432a/b i1
 
             # ..3999
 
