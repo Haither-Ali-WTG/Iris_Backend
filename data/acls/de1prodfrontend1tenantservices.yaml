@@ -19,17 +19,17 @@ xedi1_acoinformatica_it:
   tests:
     - hdr(host) -i xedi1.acoinformatica.it
 
-acl xedi2_acoinformatica_it:
+xedi2_acoinformatica_it:
   description: "*xedi2.acoinformatica.it"
   tests:
     - hdr(host) -i xedi2.acoinformatica.it
 
-acl xedi3_acoinformatica_it:
+xedi3_acoinformatica_it:
   description: "xedi3.acoinformatica.it"
   tests:
     - hdr(host) -i xedi3.acoinformatica.it
 
-acl xedi4_acoinformatica_it:
+xedi4_acoinformatica_it:
   description: "xedi4.acoinformatica.it"
   tests:
     - hdr(host) -i xedi4.acoinformatica.it
@@ -49,7 +49,7 @@ update2_acoinformatica_it:
   tests:
     - hdr(host) -i update2.acoinformatica.it
 
-acl wsaco_acoinformatica_it:
+wsaco_acoinformatica_it:
   description: "wsaco.acoinformatica.it"
   tests:
     - hdr(host) -i wsaco.acoinformatica.it
