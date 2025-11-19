@@ -474,15 +474,21 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-cargosphere-us
+          cms_resource_group: RG-US-Prod
         - name: star-cargosphere-biz
+          cms_resource_group: RG-US-Prod
         - name: star-cargosphere-net
+          cms_resource_group: RG-US-Prod
         - name: star-cargosphere-co
+          cms_resource_group: RG-US-Prod
         - name: star-depotsystems-com
+          cms_resource_group: RG-US-Prod
         - name: star-bysoft-com-br
           cms_resource_group: RG-US-Prod
         - name: star-fenix-com
           cms_resource_group: RG-US-Prod
         - name: star-tmssaas-com
+          cms_resource_group: RG-US-Prod
         - name: star-livesource-com
         - name: star-rez1-com
           cms_resource_group: RG-US-Prod
