@@ -13,3 +13,11 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_aktivdata_fi !{ ssl_fc }
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 80
+  actions:
+    - redirect scheme https if star_acoinformatica_it !{ ssl_fc }
