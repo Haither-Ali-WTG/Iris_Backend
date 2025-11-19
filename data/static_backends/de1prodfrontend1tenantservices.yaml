@@ -166,3 +166,153 @@ ntraxio.aktivdata.fi:
     - name: DE1FL0APPW001
       ip: 10.3.231.16
       port: 29525
+
+rdg.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  cookie:
+    name: IT0
+  fullconn: 4000
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: de1it0rdgw001
+      ip: 10.3.173.10
+      port: 443
+      settings: check ssl
+    - name: de1it0rdgw002
+      ip: 10.3.173.11
+      port: 443
+      settings: check ssl
+
+xedi1.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0xedw001
+      ip: 10.3.173.51
+      port: 443
+      settings: check ssl
+
+xedi2.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0xedw002
+      ip: 10.3.173.52
+      port: 443
+      settings: check ssl
+
+xedi3.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0xedw003
+      ip: 10.3.173.53
+      port: 443
+      settings: check ssl
+
+xedi4.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0xedw004
+      ip: 10.3.173.54
+      port: 443
+      settings: check ssl
+
+crm.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0crmw001
+      ip: 10.3.173.60
+      port: 443
+      settings: check ssl
+
+update.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0bofw001
+      ip: 10.3.173.59
+      port: 443
+      settings: check ssl
+
+update2.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0updw001
+      ip: 10.3.173.61
+      port: 443
+      settings: check ssl
+
+wsaco.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0wsaw001
+      ip: 10.3.173.58
+      port: 443
+      settings: check ssl
+
+converter.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0cnvw001
+      ip: 10.3.173.65
+      port: 443
+      settings: check ssl
+
+cloud.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0tdaw001
+      ip: 10.3.173.56
+      port: 443
+      settings: check ssl
+
+customsgate.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: true
+  servers:
+    - name: de1it0cgww001
+      ip: 10.3.173.73
+      port: 443
+      settings: check ssl
