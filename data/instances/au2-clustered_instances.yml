@@ -371,26 +371,26 @@ clustered_instances:
         - au2wp-sweb-413b.wisecloud.zone
         - au2wp-sweb-414a.wisecloud.zone
         - au2wp-sweb-414b.wisecloud.zone
-        - "au2wp-sweb-415a.wisecloud.zone"
-        - "au2wp-sweb-415b.wisecloud.zone"
-        - "au2wp-sweb-416a.wisecloud.zone"
-        - "au2wp-sweb-416b.wisecloud.zone"
-        - "au2wp-sweb-417a.wisecloud.zone"
-        - "au2wp-sweb-417b.wisecloud.zone"
-        - "au2wp-sweb-418a.wisecloud.zone"
-        - "au2wp-sweb-418b.wisecloud.zone"
-        - "au2wp-sweb-419a.wisecloud.zone"
-        - "au2wp-sweb-419b.wisecloud.zone"
-        - "au2wp-sweb-420a.wisecloud.zone"
-        - "au2wp-sweb-420b.wisecloud.zone"
-        - "au2wp-sweb-421a.wisecloud.zone"
-        - "au2wp-sweb-421b.wisecloud.zone"
-        - "au2wp-sweb-422a.wisecloud.zone"
-        - "au2wp-sweb-422b.wisecloud.zone"
-        - "au2wp-sweb-423a.wisecloud.zone"
-        - "au2wp-sweb-423b.wisecloud.zone"
-        - "au2wp-sweb-424a.wisecloud.zone"
-        - "au2wp-sweb-424b.wisecloud.zone"
+        - au2wp-sweb-415a.wisecloud.zone
+        - au2wp-sweb-415b.wisecloud.zone
+        - au2wp-sweb-416a.wisecloud.zone
+        - au2wp-sweb-416b.wisecloud.zone
+        - au2wp-sweb-417a.wisecloud.zone
+        - au2wp-sweb-417b.wisecloud.zone
+        - au2wp-sweb-418a.wisecloud.zone
+        - au2wp-sweb-418b.wisecloud.zone
+        - au2wp-sweb-419a.wisecloud.zone
+        - au2wp-sweb-419b.wisecloud.zone
+        - au2wp-sweb-420a.wisecloud.zone
+        - au2wp-sweb-420b.wisecloud.zone
+        - au2wp-sweb-421a.wisecloud.zone
+        - au2wp-sweb-421b.wisecloud.zone
+        - au2wp-sweb-422a.wisecloud.zone
+        - au2wp-sweb-422b.wisecloud.zone
+        - au2wp-sweb-423a.wisecloud.zone
+        - au2wp-sweb-423b.wisecloud.zone
+        - au2wp-sweb-424a.wisecloud.zone
+        - au2wp-sweb-424b.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
       websites_config: prodcwservices.yml
       certificates:
