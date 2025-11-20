@@ -7,16 +7,16 @@ variables:
   # 166cd2aceebfc8b3cea62bfd061d0a1a515e66f8
   dante_build_id: '1526321'
 
-  # virgil 20251119.2
-  # Wed Nov 19 01:04:20 UTC 2025 -- Wed Nov 19 12:04:20 AEDT 2025
+  # virgil 20251120.1
+  # Thu Nov 20 00:39:57 UTC 2025 -- Thu Nov 20 11:39:57 AEDT 2025
   #
-  # Merged PR 42309: new topics for ehubnonbilled
-  # 7797dae7cd0f891b27efd3f7bb4b98ac47fe1988
-  virgil_build_id: '1526275'
+  # Merged PR 42172: DE1 add two new ESXi nodes
+  # 59b0c45f73bddc294ed25b2d49afc696de57cd01
+  virgil_build_id: '1527167'
 
-  # sqlbilling 20251119.2
-  # Wed Nov 19 10:56:27 UTC 2025 -- Wed Nov 19 21:56:27 AEDT 2025
+  # sqlbilling 20251119.4
+  # Wed Nov 19 12:59:05 UTC 2025 -- Wed Nov 19 23:59:05 AEDT 2025
   #
-  # Merged PR 42332: SQLBilling-Add-CS02143571-CS02144281.yml
-  # 1d75f158cb717db9e6d0ac46a37f02412507fc65
-  sqlbilling_build_id: '1526649'
+  # Merged PR 42336: AddSQLReadOnlyIP AU2
+  # e74141eafd217fe1cf213e3b954b4fe490e8e799
+  sqlbilling_build_id: '1526733'
