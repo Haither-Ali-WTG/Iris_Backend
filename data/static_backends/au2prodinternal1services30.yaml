@@ -119,6 +119,14 @@ compliancewise-test.wisegrid.net:
     - name: AU2WT-SIIS-401B
       ip: 10.2.69.20
       port: 80
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+      settings: backup
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
+      port: 80
+      settings: backup
 
 cwc-console.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
