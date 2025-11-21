@@ -7,12 +7,12 @@ variables:
   # 166cd2aceebfc8b3cea62bfd061d0a1a515e66f8
   dante_build_id: '1526321'
 
-  # virgil 20251120.1
-  # Thu Nov 20 00:39:57 UTC 2025 -- Thu Nov 20 11:39:57 AEDT 2025
+  # virgil 20251121.3
+  # Thu Nov 20 23:16:20 UTC 2025 -- Fri Nov 21 10:16:20 AEDT 2025
   #
-  # Merged PR 42172: DE1 add two new ESXi nodes
-  # 59b0c45f73bddc294ed25b2d49afc696de57cd01
-  virgil_build_id: '1527167'
+  # Merged PR 42375: added generic wisebeat and wisebeatProc users to sql monitoring topics
+  # 7504853a05fc024f391f87df7cb017a13c4a5c75
+  virgil_build_id: '1528015'
 
   # sqlbilling 20251120.5
   # Thu Nov 20 12:05:31 UTC 2025 -- Thu Nov 20 23:05:31 AEDT 2025
