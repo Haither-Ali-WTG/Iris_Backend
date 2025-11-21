@@ -504,6 +504,18 @@ clustered_instances:
         - au2wt-sweb-404.test.wisecloud.zone
         - au2wt-sweb-405.test.wisecloud.zone
         - au2wt-sweb-406.test.wisecloud.zone
+        - au2wt-sweb-410a.test.wisecloud.zone
+        - au2wt-sweb-410b.test.wisecloud.zone
+        - au2wt-sweb-411a.test.wisecloud.zone
+        - au2wt-sweb-411b.test.wisecloud.zone
+        - au2wt-sweb-412a.test.wisecloud.zone
+        - au2wt-sweb-412b.test.wisecloud.zone
+        - au2wt-sweb-413a.test.wisecloud.zone
+        - au2wt-sweb-413b.test.wisecloud.zone
+        - au2wt-sweb-414a.test.wisecloud.zone
+        - au2wt-sweb-414b.test.wisecloud.zone
+        - au2wt-sweb-415a.test.wisecloud.zone
+        - au2wt-sweb-415b.test.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
