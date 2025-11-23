@@ -24,8 +24,8 @@ individual_instance_defaults:
         cpu: 8000m
         memory: 16000Mi
       simulation:
-        cpu: 500m
-        memory: 800Mi
+        cpu: 1000m
+        memory: 8000Mi
 
   stats:
     ports:
