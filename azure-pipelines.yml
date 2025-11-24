@@ -256,7 +256,6 @@ stages:
               ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
               ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
               ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
-              ANSIBLE_FORCE_COLOR: false
 
           - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
             artifact: configs_$(simulation_dc)
