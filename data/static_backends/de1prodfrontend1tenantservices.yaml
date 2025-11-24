@@ -167,24 +167,6 @@ ntraxio.aktivdata.fi:
       ip: 10.3.231.16
       port: 29525
 
-rdg.acoinformatica.it:
-  clustered_instances: [de1prodfrontend1tenantservices]
-  cookie:
-    name: IT0
-  fullconn: 4000
-  http_health_check:
-    enabled: true
-    http_path: /
-  servers:
-    - name: de1it0rdgw001
-      ip: 10.3.173.10
-      port: 443
-      settings: check ssl
-    - name: de1it0rdgw002
-      ip: 10.3.173.11
-      port: 443
-      settings: check ssl
-
 xedi1.acoinformatica.it:
   clustered_instances: [de1prodfrontend1tenantservices]
   http_health_check:
