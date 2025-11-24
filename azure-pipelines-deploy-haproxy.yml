@@ -155,31 +155,31 @@ stages:
                         path: $(Build.SourcesDirectory)/sqlbilling_acl
                         patterns: 'acl/*.acl'
 
-                    - task: Ansible@0
+                    - task: Bash@3
                       displayName: 'Deploy haproxy'
                       inputs:
-                        ansibleInterface: 'agentMachine'
-                        playbookPathOnAgentMachine: 'ansible/deploy_haproxy.yml'
-                        inventoriesAgentMachine: 'file'
-                        inventoryFileOnAgentMachine: 'data/instances'
-                        failOnStdErr: false
-                        # TODO: Support other DCs
-                        args: >-
-                          -u $(user) --diff
-                          -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                          -e="simulation="
-                          -e="winrm_password=$(winrm_password)"
-                          -e="s3_host=${{ run.s3_host }}"
-                          -e="pure_usernames='${{ run.pure_usernames }}'"
-                          -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
-                          -e="key_vault_name=$(key_vault_name)"
-                          -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
-                          -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
-                          -e="target_dc=${{ run.target_dc }}"
+                        targetType: 'inline'
+                        script: |
+                          set -euo pipefail
+                          ansible-playbook \
+                            ansible/deploy_haproxy.yml \
+                            -i data/instances \
+                            -u $(user) --diff \
+                            -e="build_id=$(Build.BuildId)$(System.JobAttempt)" \
+                            -e="simulation=" \
+                            -e="winrm_password=$(winrm_password)" \
+                            -e="s3_host=${{ run.s3_host }}" \
+                            -e="pure_usernames='${{ run.pure_usernames }}'" \
+                            -e="s3_iris_bucket=${{ run.s3_iris_bucket }}" \
+                            -e="key_vault_name=$(key_vault_name)" \
+                            -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
+                            -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
+                            -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
                         ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
+                        ANSIBLE_FORCE_COLOR: false
 
                     - task: Ansible@0
                       displayName: 'Check the instances to be torn down'
