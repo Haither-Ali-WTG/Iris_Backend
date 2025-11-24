@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251124.1
-  # Mon Nov 24 11:13:53 UTC 2025 -- Mon Nov 24 22:13:53 AEDT 2025
+  # Dante Build Artifact 20251125.1
+  # Mon Nov 24 19:00:59 UTC 2025 -- Tue Nov 25 06:00:59 AEDT 2025
   #
-  # Merged PR 42446: Install Fleet Agent for Kafka Nodes & Remove the Filebeat & Metricbeat Instal...
-  # 7a634148adc65185eca8a1479e870f957d1cf9b7
-  dante_build_id: '1531169'
+  # Merge pull request 42474 from dante_artifact_upgrade into master
+  # 369509b8323096cee95c991e71657fa24b730231
+  dante_build_id: '1531494'
 
-  # virgil 20251121.10
-  # Fri Nov 21 11:29:50 UTC 2025 -- Fri Nov 21 22:29:50 AEDT 2025
+  # virgil 20251125.2
+  # Mon Nov 24 18:21:07 UTC 2025 -- Tue Nov 25 05:21:07 AEDT 2025
   #
-  # Merged PR 42413: adding new tenant editrade
-  # 8df538d7ccd0c3596e34638929b75d1eac2e87b3
-  virgil_build_id: '1528552'
+  # Merge pull request 42469 from virgil_python_upgrade into master
+  # df128fd0072bf73a7c8a6bc2c99d5801d2b2c302
+  virgil_build_id: '1531449'
 
   # sqlbilling 20251122.2
   # Fri Nov 21 14:24:03 UTC 2025 -- Sat Nov 22 01:24:03 AEDT 2025
