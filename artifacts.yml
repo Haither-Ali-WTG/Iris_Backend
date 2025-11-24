@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251121.1
-  # Fri Nov 21 00:01:29 UTC 2025 -- Fri Nov 21 11:01:29 AEDT 2025
+  # Dante Build Artifact 20251124.1
+  # Mon Nov 24 11:13:53 UTC 2025 -- Mon Nov 24 22:13:53 AEDT 2025
   #
-  # Merge pull request 42343 from dante_artifact_upgrade into master
-  # 55ecd8552269297989a9cf30d51a236930175016
-  dante_build_id: '1528062'
+  # Merged PR 42446: Install Fleet Agent for Kafka Nodes & Remove the Filebeat & Metricbeat Instal...
+  # 7a634148adc65185eca8a1479e870f957d1cf9b7
+  dante_build_id: '1531169'
 
-  # virgil 20251121.3
-  # Thu Nov 20 23:16:20 UTC 2025 -- Fri Nov 21 10:16:20 AEDT 2025
+  # virgil 20251121.10
+  # Fri Nov 21 11:29:50 UTC 2025 -- Fri Nov 21 22:29:50 AEDT 2025
   #
-  # Merged PR 42375: added generic wisebeat and wisebeatProc users to sql monitoring topics
-  # 7504853a05fc024f391f87df7cb017a13c4a5c75
-  virgil_build_id: '1528015'
+  # Merged PR 42413: adding new tenant editrade
+  # 8df538d7ccd0c3596e34638929b75d1eac2e87b3
+  virgil_build_id: '1528552'
 
-  # sqlbilling 20251120.5
-  # Thu Nov 20 12:05:31 UTC 2025 -- Thu Nov 20 23:05:31 AEDT 2025
+  # sqlbilling 20251122.2
+  # Fri Nov 21 14:24:03 UTC 2025 -- Sat Nov 22 01:24:03 AEDT 2025
   #
-  # Merged PR 42373: AddSQLReadOnlyIP DE1
-  # 625b1de47515297782063c3ccb4dd7cba3f5c9b2
-  sqlbilling_build_id: '1527626'
+  # Merged PR 42432: SQLBilling-Add-CS02146730.yml
+  # 2e5d1a38541b8396046f5e33fc2bbea5b7ee808e
+  sqlbilling_build_id: '1528685'
