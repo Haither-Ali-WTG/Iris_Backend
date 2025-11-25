@@ -272,7 +272,7 @@ de1wpreadonly431l1-wisegrid-net:
     enabled: false
   servers:
     - name: de1wpreadonly431l1
-      ip: 10.3.134.134
+      ip: 10.3.134.135
       port: 1433
 
 de1wpreadonly432l1-wisegrid-net:
