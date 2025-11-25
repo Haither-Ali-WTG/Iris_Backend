@@ -9,6 +9,11 @@
     - name: Placeholder
       debug:
         msg: per-machine checks
+    
+    - name: Make sure docker pull lock file is absent
+      file:
+        state: absent
+        path: "{{ docker_pull_lock }}"
 
 - name: Checks on the individual instances
   hosts: individual_instances
