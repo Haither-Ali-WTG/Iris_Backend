@@ -4,3 +4,5 @@
 
 fakeserver_image: >-
   wtgopstools.azurecr.io/dante/nginx@sha256:b3a676a9145dc005062d5e79b92d90574fb3bf2396f4913dc1732f9065f55c4b
+
+docker_pull_lock: /tmp/docker_pull_lock
