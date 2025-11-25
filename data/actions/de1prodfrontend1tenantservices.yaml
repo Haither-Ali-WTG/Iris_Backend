@@ -13,3 +13,18 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_aktivdata_fi !{ ssl_fc }
+    - redirect scheme https if star_acoinformatica_it !{ ssl_fc }
+
+acoinformatica_backend_selection:
+  description: |-
+    Acoinformatica-specific backend selection.
+  order: 80
+  actions:
+    - use_backend xedi1_acoinformatica_it       if xedi1_acoinformatica_it
+    - use_backend xedi2_acoinformatica_it       if xedi2_acoinformatica_it
+    - use_backend xedi3_acoinformatica_it       if xedi3_acoinformatica_it
+    - use_backend xedi4_acoinformatica_it       if xedi4_acoinformatica_it
+    - use_backend crm_acoinformatica_it         if crm_acoinformatica_it
+    - use_backend update_acoinformatica_it      if update_acoinformatica_it
+    - use_backend update2_acoinformatica_it     if update2_acoinformatica_it
+    - use_backend wsaco_acoinformatica_it       if wsaco_acoinformatica_it
