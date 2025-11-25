@@ -64,7 +64,8 @@ stages:
 
           - script: |
               set -euxo pipefail
-              mypy tests/ ansible/roles/collect_sites/files/
+              mypy tests/ ansible/roles/collect_sites/files/ \
+              ansible/roles/collect_sites_from_weborc/files/
             displayName: 'Mypy type check'
             condition: succeededOrFailed()
 
@@ -224,32 +225,32 @@ stages:
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e "{check_all_certs: $(certificate_changed) }"
                 -e "{use_cache: $(cms_use_cache)}"
-                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
+                -e "{intermediate: $(cms_append_intermediate_certificate)}"
+                -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-          - task: Ansible@0
+          - task: Bash@3
             displayName: 'Test haproxy'
             inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'iris/ansible/test_haproxy.yml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'iris/data/instances'
-              failOnStdErr: false
-              args: >-
-                -u $(user)
-                -e="apt_mirror=$(apt_mirror)"
-                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
-                -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
-                -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
-                -e="s3_iris_bucket=$(s3_iris_bucket)"
-                -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128"
-                -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
-                -e="target_dc=$(simulation_dc)"
-                -e="apt_mirror=$(apt_mirror)"
-                -e "{check_all_certs: $(certificate_changed) }"
-                -e "{simulation: true}"
+              targetType: 'inline'
+              script: |
+                set -euo pipefail
+                ansible-playbook \
+                  iris/ansible/test_haproxy.yml \
+                  -i iris/data/instances \
+                  -u $(user) \
+                  -e="azure_kv_name=$(azure_kv_name)" \
+                  -e="build_id=$(Build.BuildId)$(System.JobAttempt)" \
+                  -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
+                  -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)" \
+                  -e="s3_iris_bucket=$(s3_iris_bucket)" \
+                  -e="s3_proxy_host=192.168.255.254" -e="s3_proxy_port=3128" \
+                  -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
+                  -e="target_dc=$(simulation_dc)" \
+                  -e="apt_mirror=$(apt_mirror)" \
+                  -e "{check_all_certs: $(certificate_changed) }" \
+                  -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
@@ -273,7 +274,6 @@ stages:
                 -u $(user) --diff
                 -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="target_dc=$(simulation_dc)"
                 -e "{simulation: true}"
             env:
