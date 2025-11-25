@@ -14,9 +14,9 @@ variables:
   # df128fd0072bf73a7c8a6bc2c99d5801d2b2c302
   virgil_build_id: '1531449'
 
-  # sqlbilling 20251122.2
-  # Fri Nov 21 14:24:03 UTC 2025 -- Sat Nov 22 01:24:03 AEDT 2025
+  # sqlbilling 20251125.7
+  # Tue Nov 25 06:47:16 UTC 2025 -- Tue Nov 25 17:47:16 AEDT 2025
   #
-  # Merged PR 42432: SQLBilling-Add-CS02146730.yml
-  # 2e5d1a38541b8396046f5e33fc2bbea5b7ee808e
-  sqlbilling_build_id: '1528685'
+  # Merged PR 42463: SQLBilling-Remove-CS02149032.yml
+  # 937dac516fa7c71122de4434b040c79e7f12efdb
+  sqlbilling_build_id: '1532011'
