@@ -31,5 +31,3 @@ global_sysctl_values:
     net.netfilter.nf_conntrack_tcp_timeout_fin_wait: 60
     net.netfilter.nf_conntrack_tcp_timeout_time_wait: 60
     net.netfilter.nf_conntrack_max: 524288
-
-docker_pull_lock: /tmp/docker_pull_lock
