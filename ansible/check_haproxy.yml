@@ -9,7 +9,7 @@
     - name: Placeholder
       debug:
         msg: per-machine checks
-    
+
     - name: Make sure docker pull lock file is absent
       file:
         state: absent
