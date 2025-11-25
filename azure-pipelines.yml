@@ -253,9 +253,9 @@ stages:
                   -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-              ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
-              ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
-              ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
+              # ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
+              # ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
+              # ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
           - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
             artifact: configs_$(simulation_dc)
