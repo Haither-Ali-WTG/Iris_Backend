@@ -237,6 +237,9 @@ testwca.sand.wtg.zone:
     - name: au2sp-swca-402
       ip: 10.2.116.66
       port: 80
+    - name: au2sp-swca-403
+      ip: 10.2.116.67
+      port: 80
 
 testwca.wtg.zone:
   clustered_instances: [au2sandinternal1]
