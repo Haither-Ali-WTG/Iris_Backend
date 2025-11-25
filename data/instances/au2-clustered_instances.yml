@@ -491,19 +491,7 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - au2wt-sweb-001.test.wisecloud.zone
-        - au2wt-sweb-002.test.wisecloud.zone
-        - au2wt-sweb-003.test.wisecloud.zone
-        - au2wt-sweb-004.test.wisecloud.zone
-        - au2wt-sweb-005.test.wisecloud.zone
-        - au2wt-sweb-006.test.wisecloud.zone
         - au2wt-sweb-007.test.wisecloud.zone      # Dedicated webserver for customurls
-        - au2wt-sweb-401.test.wisecloud.zone
-        - au2wt-sweb-402.test.wisecloud.zone
-        - au2wt-sweb-403.test.wisecloud.zone
-        - au2wt-sweb-404.test.wisecloud.zone
-        - au2wt-sweb-405.test.wisecloud.zone
-        - au2wt-sweb-406.test.wisecloud.zone
         - au2wt-sweb-410a.test.wisecloud.zone
         - au2wt-sweb-410b.test.wisecloud.zone
         - au2wt-sweb-411a.test.wisecloud.zone
