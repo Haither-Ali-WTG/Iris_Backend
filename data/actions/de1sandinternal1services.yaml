@@ -5,7 +5,7 @@ secure_cookie:
   order: 60
   actions:
     - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
-    
+ 
 https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains
