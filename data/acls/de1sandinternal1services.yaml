@@ -1,0 +1,5 @@
+---
+star_sand_wtg_zone:
+  description: "*.sand.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sand\.wtg\.zone$

@@ -375,3 +375,24 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
+
+    de1sandinternal1services:
+      # de1-prod-internal-1
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2007]
+          ssl: [2008]
+      stats:
+        ports:
+          web: 2343
+          socket: 2344
+      machine_cluster: de1-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+      cipher:
+        profiles:
+          - best_practice_2023
