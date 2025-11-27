@@ -7,12 +7,12 @@ variables:
   # a5939197d4c484942bdf82ec0025cd714fe1ae35
   dante_build_id: '1534133'
 
-  # virgil 20251128.2
-  # Thu Nov 27 22:09:27 UTC 2025 -- Fri Nov 28 09:09:27 AEDT 2025
+  # virgil 20251128.4
+  # Thu Nov 27 23:13:39 UTC 2025 -- Fri Nov 28 10:13:39 AEDT 2025
   #
-  # Merged PR 42586: Prep De1 spine 3&4 for cutover
-  # 41a5cf0f29509d06cbb1af974164c6c99e1a06a2
-  virgil_build_id: '1534485'
+  # Merged PR 42595: Prep De1 Leaf cutover
+  # 5609fa3459de2d290522b918cd12e48263c67dd2
+  virgil_build_id: '1534546'
 
   # sqlbilling 20251128.3
   # Thu Nov 27 14:54:14 UTC 2025 -- Fri Nov 28 01:54:14 AEDT 2025
