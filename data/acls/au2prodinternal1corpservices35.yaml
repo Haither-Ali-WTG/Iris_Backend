@@ -64,6 +64,15 @@ knowledge_mcp_wtg_zone:
     - hdr(host) -i wta-admin.knowledge.wtg.zone
     - hdr(host) -i wta-staging.knowledge.wtg.zone
     - hdr(host) -i wta-admin-staging.knowledge.wtg.zone
+    ## litellm
+    - hdr(host) -i litellm.knowledge.wtg.zone
+    - hdr(host) -i litellm-staging.knowledge.wtg.zone
     ## llm-manager
     - hdr(host) -i llm-manager.knowledge.wtg.zone
     - hdr(host) -i llm-manager-staging.knowledge.wtg.zone
+    ## langfuse
+    - hdr(host) -i langfuse.knowledge.wtg.zone
+    - hdr(host) -i langfuse-staging.knowledge.wtg.zone
+    ## llm-gateway
+    - hdr(host) -i llm-gateway.knowledge.wtg.zone
+    - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
