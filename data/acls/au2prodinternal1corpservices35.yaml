@@ -33,10 +33,46 @@ iris_stats_urls:
 knowledge_mcp_wtg_zone:
   description: "au2 knowledge urls"
   tests:
+    # mcp
+    ## main
     - hdr(host) -i knowledge.mcp.wtg.zone
-    - hdr(host) -i knowledge-client.mcp.wtg.zone
-    - hdr(host) -i knowledge-rest.mcp.wtg.zone
-    - hdr(host) -i internal.knowledge.wtg.zone
+    - hdr(host) -i knowledge-staging.mcp.wtg.zone
+    ## borderwise
+    - hdr(host) -i borderwise.mcp.wtg.zone
+    - hdr(host) -i borderwise-staging.mcp.wtg.zone
+    ## ediprod
+    - hdr(host) -i ediprod.mcp.wtg.zone
+    - hdr(host) -i ediprod-staging.mcp.wtg.zone
+    ## wta
+    - hdr(host) -i wta.mcp.wtg.zone
+    - hdr(host) -i wta-staging.mcp.wtg.zone
+    # knowledge
+    ## main
     - hdr(host) -i admin.knowledge.wtg.zone
+    - hdr(host) -i internal.knowledge.wtg.zone
     - hdr(host) -i web.knowledge.wtg.zone
+    - hdr(host) -i admin-staging.knowledge.wtg.zone
+    - hdr(host) -i internal-staging.knowledge.wtg.zone
+    - hdr(host) -i web-staging.knowledge.wtg.zone
+    ## borderwise
+    - hdr(host) -i borderwise.knowledge.wtg.zone
+    - hdr(host) -i borderwise-admin.knowledge.wtg.zone
+    - hdr(host) -i borderwise-staging.knowledge.wtg.zone
+    - hdr(host) -i borderwise-admin-staging.knowledge.wtg.zone
+    ## wta
     - hdr(host) -i wta.knowledge.wtg.zone
+    - hdr(host) -i wta-admin.knowledge.wtg.zone
+    - hdr(host) -i wta-staging.knowledge.wtg.zone
+    - hdr(host) -i wta-admin-staging.knowledge.wtg.zone
+    ## litellm
+    - hdr(host) -i litellm.knowledge.wtg.zone
+    - hdr(host) -i litellm-staging.knowledge.wtg.zone
+    ## llm-manager
+    - hdr(host) -i llm-manager.knowledge.wtg.zone
+    - hdr(host) -i llm-manager-staging.knowledge.wtg.zone
+    ## langfuse
+    - hdr(host) -i langfuse.knowledge.wtg.zone
+    - hdr(host) -i langfuse-staging.knowledge.wtg.zone
+    ## llm-gateway
+    - hdr(host) -i llm-gateway.knowledge.wtg.zone
+    - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
