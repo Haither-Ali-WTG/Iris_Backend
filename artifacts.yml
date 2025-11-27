@@ -7,16 +7,16 @@ variables:
   # 369509b8323096cee95c991e71657fa24b730231
   dante_build_id: '1531494'
 
-  # virgil 20251125.2
-  # Mon Nov 24 18:21:07 UTC 2025 -- Tue Nov 25 05:21:07 AEDT 2025
+  # virgil 20251127.2
+  # Thu Nov 27 11:45:53 UTC 2025 -- Thu Nov 27 22:45:53 AEDT 2025
   #
-  # Merge pull request 42469 from virgil_python_upgrade into master
-  # df128fd0072bf73a7c8a6bc2c99d5801d2b2c302
-  virgil_build_id: '1531449'
+  # Merged PR 42569: OS version upgrade DE1 new leaf switches
+  # 9197d579fc2e5c0c4eb918f1c3786de344d400c2
+  virgil_build_id: '1534081'
 
-  # sqlbilling 20251126.4
-  # Wed Nov 26 12:40:36 UTC 2025 -- Wed Nov 26 23:40:36 AEDT 2025
+  # sqlbilling 20251127.1
+  # Thu Nov 27 09:49:23 UTC 2025 -- Thu Nov 27 20:49:23 AEDT 2025
   #
-  # Merged PR 42546: AddSQLReadOnlyIP DE1
-  # 5d71571a46bb448bfb7050632e5a5a2bc053d071
-  sqlbilling_build_id: '1533168'
+  # Merged PR 42548: SQLBilling-Remove-CS02151642.yml
+  # f05a4f3600fa4a29e81884cb492526a6e1ed6d45
+  sqlbilling_build_id: '1534015'
