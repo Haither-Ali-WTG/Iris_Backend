@@ -982,3 +982,179 @@ llm-gateway-staging.knowledge.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of llm manager
+editor-staging.smartfreight.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+forms-dev.wisetechglobal.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+partnerresources-dev.pierbridge.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  cookie:
+    name: PIERBD
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+search-dev.cargowise.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+search-dev.pierbridge.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+search-dev.wisetechglobal.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+staging.smartfreight.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.blumeglobal.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.bysoft.com.br:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.containerchain.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.pierbridge.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.sisa.ch:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.softship.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+www-dev.triniumtech.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+editor.smartfreight.com:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-403a
+      ip: 10.2.69.36
+      port: 80
