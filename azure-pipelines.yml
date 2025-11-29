@@ -273,7 +273,6 @@ stages:
                 -u $(user) --diff
                 -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="target_dc=$(simulation_dc)"
                 -e "{simulation: true}"
             env:
