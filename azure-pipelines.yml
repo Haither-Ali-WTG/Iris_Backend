@@ -65,7 +65,7 @@ stages:
           - script: |
               set -euxo pipefail
               mypy tests/ ansible/roles/collect_sites/files/ \
-              ansible/roles/collect_sites_from_weborc/files/          
+              ansible/roles/collect_sites_from_weborc/files/
             displayName: 'Mypy type check'
             condition: succeededOrFailed()
 
