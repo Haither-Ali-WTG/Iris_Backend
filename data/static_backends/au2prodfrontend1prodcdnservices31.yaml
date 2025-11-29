@@ -191,9 +191,6 @@ xt-customs-mxmanifest.wisegrid.net:
     http_path: /
     check_expect: '200|301|302|401|404'
   servers:
-    - name: au2wp-sxtr-401
-      ip: 10.2.70.25
-      port: 9443
     - name: au2wp-sxtr-402
       ip: 10.2.70.26
-      port: 9443
+      port: 9080

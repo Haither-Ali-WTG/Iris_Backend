@@ -44,6 +44,8 @@ clustered_instances:
             - 3026  # DE1WP-SSQL-420a/b i1
             - 3027  # DE1WT-SSQL-408a/b i1
             - 3028  # DE1WT-SSQL-409a/b i1
+            - 3029  # DE1WP-SSQL-431a/b i1
+            - 3030  # DE1WP-SSQL-432a/b i1
 
             # ..3999
 
@@ -350,6 +352,8 @@ clustered_instances:
       certificates:
         - name: star-aktivdata-fi
           cms_resource_group: RG-EU-Prod
+        - name: star-acoinformatica-it
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -371,3 +375,24 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
+
+    de1sandinternal1services:
+      # de1-prod-internal-1
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2007]
+          ssl: [2008]
+      stats:
+        ports:
+          web: 2343
+          socket: 2344
+      machine_cluster: de1-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+      cipher:
+        profiles:
+          - best_practice_2023

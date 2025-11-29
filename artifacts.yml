@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251112.1
-  # Wed Nov 12 03:21:09 UTC 2025 -- Wed Nov 12 14:21:09 AEDT 2025
+  # Dante Build Artifact 20251128.1
+  # Fri Nov 28 00:01:31 UTC 2025 -- Fri Nov 28 11:01:31 AEDT 2025
   #
-  # Merge pull request 42122 from dante_artifact_upgrade into master
-  # 13b5ff77a140de5393fbc40075b54fa3d0a2a335
-  dante_build_id: '1520086'
+  # Merge pull request 42587 from dante_artifact_upgrade into master
+  # 5e8e493395e899fb44585742e556170a22a3ef2e
+  dante_build_id: '1534600'
 
-  # virgil 20251112.1
-  # Wed Nov 12 02:22:22 UTC 2025 -- Wed Nov 12 13:22:22 AEDT 2025
+  # virgil 20251128.8
+  # Fri Nov 28 01:21:46 UTC 2025 -- Fri Nov 28 12:21:46 AEDT 2025
   #
-  # Merged PR 42103: update swp12-14 vlan id on apex23/24
-  # 2e1513aab581bc598516dfe965499d2fb2c15e98
-  virgil_build_id: '1520040'
+  # Merged PR 42607: Prep De1 Leaf to spine cutover
+  # 5c75a40767f878d80e5b9426985bdae12ba1f6a4
+  virgil_build_id: '1534693'
 
-  # sqlbilling 20251112.3
-  # Wed Nov 12 06:32:46 UTC 2025 -- Wed Nov 12 17:32:46 AEDT 2025
+  # sqlbilling 20251129.2
+  # Fri Nov 28 14:14:14 UTC 2025 -- Sat Nov 29 01:14:14 AEDT 2025
   #
-  # Merged PR 42112: AddSQLReadOnlyIP AU2 DE1
-  # e05204c82d30253a9193b9e76e118c134962e1a4
-  sqlbilling_build_id: '1520234'
+  # Merged PR 42637: AddSQLReadOnlyIPs US2 CS02154783
+  # 58ecb5fcc94b90ed6d9404ad0d0fa0abbb531312
+  sqlbilling_build_id: '1535196'

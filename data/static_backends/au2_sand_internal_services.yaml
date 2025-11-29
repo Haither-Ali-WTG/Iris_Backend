@@ -237,6 +237,9 @@ testwca.sand.wtg.zone:
     - name: au2sp-swca-402
       ip: 10.2.116.66
       port: 80
+    - name: au2sp-swca-403
+      ip: 10.2.116.67
+      port: 80
 
 testwca.wtg.zone:
   clustered_instances: [au2sandinternal1]
@@ -507,6 +510,32 @@ ocmbe.sand.wtg.zone:
       ip: 10.2.122.17
       port: 5002
 
+portal-uat-messaging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: au2sp-sesv-402
+      ip: 10.2.116.75
+      port: 8080
+    - name: au2sp-sesv-403
+      ip: 10.2.116.74
+      port: 8080
+
+loadbalancer-uat-messaging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: au2sp-sesv-402
+      ip: 10.2.116.75
+      port: 8081
+    - name: au2sp-sesv-403
+      ip: 10.2.116.74
+      port: 8081
+
 wtg-sw.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
@@ -741,3 +770,19 @@ sandwcatoken.wtg.zone:
       ip: 10.2.118.65
       port: 443
       settings: check ssl verify none
+
+compliancewise-test.wisegrid.net:
+  clustered_instances: [au2sandinternal1]
+  cookie:
+    name: CMPT
+  http_health_check:
+    enabled: true
+    http_path: /staging/wtg/status
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
+      port: 80

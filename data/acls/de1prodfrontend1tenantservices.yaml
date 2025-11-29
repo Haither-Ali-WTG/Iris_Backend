@@ -3,3 +3,48 @@ star_aktivdata_fi:
   description: "*.aktivdata.fi"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?aktivdata\.fi$
+
+star_acoinformatica_it:
+  description: "*.acoinformatica.it"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?acoinformatica\.it$
+
+xedi1_acoinformatica_it:
+  description: "xedi1.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi1.acoinformatica.it
+
+xedi2_acoinformatica_it:
+  description: "*xedi2.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi2.acoinformatica.it
+
+xedi3_acoinformatica_it:
+  description: "xedi3.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi3.acoinformatica.it
+
+xedi4_acoinformatica_it:
+  description: "xedi4.acoinformatica.it"
+  tests:
+    - hdr(host) -i xedi4.acoinformatica.it
+
+crm_acoinformatica_it:
+  description: "crm.acoinformatica.it"
+  tests:
+    - hdr(host) -i crm.acoinformatica.it
+
+update_acoinformatica_it:
+  description: "update.acoinformatica.it"
+  tests:
+    - hdr(host) -i update.acoinformatica.it
+
+update2_acoinformatica_it:
+  description: "update2.acoinformatica.it"
+  tests:
+    - hdr(host) -i update2.acoinformatica.it
+
+wsaco_acoinformatica_it:
+  description: "wsaco.acoinformatica.it"
+  tests:
+    - hdr(host) -i wsaco.acoinformatica.it

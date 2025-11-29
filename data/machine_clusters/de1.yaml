@@ -54,6 +54,12 @@ de1-prod-internal-1:
       preempt: true
       virtual_router_id: 14
       priority: [de1lbl00932, de1lbl00933, de1lbl00931]
+    - description: webservices SAND
+      ip: 10.3.83.139
+      vlan: 1083
+      preempt: true
+      virtual_router_id: 15
+      priority: [de1lbl00933, de1lbl00932, de1lbl00931]
 
 de1-prod-elastic-bunker-1:
   machines:

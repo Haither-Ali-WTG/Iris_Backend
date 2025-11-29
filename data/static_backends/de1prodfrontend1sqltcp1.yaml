@@ -265,3 +265,21 @@ de1wpreadonly420l1-wisegrid-net:
     - name: de1wpreadonly420l1
       ip: 10.3.134.91
       port: 1433
+
+de1wpreadonly431l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly431l1
+      ip: 10.3.134.135
+      port: 1433
+
+de1wpreadonly432l1-wisegrid-net:
+  clustered_instances: [de1prodfrontend1sqltcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: de1wpreadonly432l1
+      ip: 10.3.134.139
+      port: 1433
