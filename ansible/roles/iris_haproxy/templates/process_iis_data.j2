@@ -1,50 +1,54 @@
-{% set warnings = [] %}
-{% if clustered_instance_names | default([]) | length == 0 %}
-clustered_instances: {}
-{% else %}
-clustered_instances:
-{% for clustered_instance in clustered_instance_names if (hostvars[clustered_instance]['iis_servers'] | default([]) | length > 0 or hostvars[clustered_instance]['iis_servers_local'] | default([]) | length > 0) %}
-  {{ clustered_instance }}:
-{%  set all_iis_servers = [] %}
-{%  for item in (hostvars[clustered_instance]['iis_servers'] + hostvars[clustered_instance]['iis_servers_local'] | default([])) %}
-{%    if item is mapping and item.server is defined %}
-{%      set _tmp = all_iis_servers.append(item.server) %}
-{%    else %}
-{%      set _tmp = all_iis_servers.append(item) %}
-{%    endif %}
-{%  endfor %}
-{%  for file in iis_files %}
-{%    if clustered_instance in (file | split('/')) and (file | split('/') | last) in all_iis_servers %}
-{%      set server = file | split('/') | last %}
-{%      set file_content = lookup('file', file) | from_yaml %}
-    {{ server }}:
-      server_ip: {{ file_content.server_ip }}
-      websites_list:
-{%      for website in file_content.websites_list %}
-{%        if website is not regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') %}
-{%          set x = warnings.append((clustered_instance, server, website, "is not a domain name")) %}
-{%        else %}
-{%          set website_with_config = [] %}
-{%          set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config'] ) | from_yaml %}
-{%          for config in website_config %}
-{%            if server is regex(config.get('server_regex', '.*'), ignorecase=True)
-                 and website is regex(config.name_regex, ignorecase=True) 
-                 and ('name_exclude_regex' not in config or website is not regex(config.name_exclude_regex, ignorecase=True) ) %}
-{%                set x = website_with_config.append(config) %}
-{%            endif %}
-{%          endfor %}
-{%          if website_with_config | length == 0 %}
-{%            set x = warnings.append((clustered_instance, server, website, "matched no website config")) %}
-{%          else %}
-        {{ website }}:
-{%            for cfg in (website_with_config | unique) %}
-          - {{ cfg }}
-{%            endfor %}
-{%          endif %}
-{%        endif %}
-{%      endfor %}
-{%    endif %}
-{%  endfor %}
-{% endfor %}
-{% endif %}
-warnings: {{ warnings | to_json }}
+{%- set clustered_instances_dict = {} -%}
+{%- set warnings = [] -%}
+{%- if clustered_instance_names | default([]) | length > 0 -%}
+  {%- for clustered_instance in clustered_instance_names -%}
+    {%- set iis_servers_raw = (hostvars[clustered_instance]['iis_servers'] | default([])) + (hostvars[clustered_instance]['iis_servers_local'] | default([])) -%}
+    {%- if iis_servers_raw | length > 0 -%}
+      {%- set all_iis_servers = [] -%}
+      {%- for item in iis_servers_raw -%}
+        {%- if item is mapping and item.server is defined -%}
+          {%- set _ = all_iis_servers.append(item.server) -%}
+        {%- else -%}
+          {%- set _ = all_iis_servers.append(item) -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- set clustered_servers = {} -%}
+      {%- for file in iis_files -%}
+        {%- set parts = file | split('/') -%}
+        {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
+          {%- set server = parts | last -%}
+          {%- set file_content = lookup('file', file) | from_yaml -%}
+          {%- set websites_dict = {} -%}
+          {%- for website in file_content.websites_list -%}
+            {%- if website is not regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') -%}
+              {%- set _ = warnings.append((clustered_instance, server, website, "is not a domain name")) -%}
+            {%- else -%}
+              {%- set website_with_config = [] -%}
+              {%- set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config']) | from_yaml -%}
+              {%- for config in website_config -%}
+                {%- if server is regex(config.get('server_regex', '.*'), ignorecase=True)
+                      and website is regex(config.name_regex, ignorecase=True)
+                      and ('name_exclude_regex' not in config or website is not regex(config.name_exclude_regex, ignorecase=True)) -%}
+                  {%- set _ = website_with_config.append(config) -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if website_with_config | length == 0 -%}
+                {%- set _ = warnings.append((clustered_instance, server, website, "matched no website config")) -%}
+              {%- else -%}
+                {%- set _ = websites_dict.update({ website: (website_with_config | unique) }) -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- set _ = clustered_servers.update({
+            server: {
+              'server_ip': file_content.server_ip,
+              'websites_list': websites_dict
+            }
+          }) -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- set _ = clustered_instances_dict.update({ clustered_instance: clustered_servers }) -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{{ { 'clustered_instances': clustered_instances_dict, 'warnings': warnings } }}

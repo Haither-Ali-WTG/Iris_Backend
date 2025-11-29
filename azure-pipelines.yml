@@ -225,8 +225,7 @@ stages:
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
                 -e "{check_all_certs: $(certificate_changed) }"
                 -e "{use_cache: $(cms_use_cache)}"
-                -e "{intermediate: $(cms_append_intermediate_certificate)}"
-                -e "{simulation: true}"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 

@@ -5,6 +5,23 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Build proper list of machines
+      set_fact:
+        machines_list: >-
+          {%- set list = [] -%}
+          {%- for clustered_instance_name in groups['clustered_instances'] -%}
+            {%- set machines = all_machine_clusters[hostvars[clustered_instance_name].machine_cluster].machines -%}
+            {%- for machine_name, machine_cluster_machine_overrides in machines.items() -%}
+              {%- set _ = list.append({
+                "machine_name": machine_name,
+                "clustered_instance_name": clustered_instance_name,
+                "individual_instance_name": clustered_instance_name ~ "_" ~ machine_name,
+                "machine_cluster_machine_overrides": machine_cluster_machine_overrides
+              }) -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {{ list }}
+
     - name: Create individual instance inventory entry
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
@@ -50,20 +67,7 @@
 
         ok: ~  # set to `yes` once deployment of instance succeeds
 
-      loop: >-
-        [
-          {% for clustered_instance_name in groups['clustered_instances'] %}
-            {% for machine_name, machine_cluster_machine_overrides
-               in all_machine_clusters[hostvars[clustered_instance_name].machine_cluster].machines.items() %}
-              {
-                'machine_name': '{{ machine_name }}',
-                'clustered_instance_name': '{{ clustered_instance_name }}',
-                'individual_instance_name': '{{ clustered_instance_name }}_{{ machine_name }}',
-                'machine_cluster_machine_overrides': {{ machine_cluster_machine_overrides | to_json }}
-              },
-            {% endfor %}
-          {% endfor %}
-        ]
+      loop: "{{ machines_list | from_yaml }}"
       loop_control:
         index_var: i
         label: "{{ item.individual_instance_name }}"
@@ -116,73 +120,76 @@
     - name: Calculate port mapping
       vars:
         all_host_ports: >-
-          [
-            {{ stats.ports.web }},
-            {% for port in frontend.ports.plaintext | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% for port in frontend.proxy_ports.plaintext | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% if certificates | default([]) %}
-            {% for port in frontend.ports.ssl | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% for port in frontend.proxy_ports.ssl | default([]) %}
-            {{ port }},
-            {% endfor %}
-            {% endif %}
-          ]
+            {%- set result = [] -%}
+            {%- set _ = result.append(stats.ports.web) -%}
+            {%- for port in frontend.ports.plaintext | default([]) -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+            {%- for port in frontend.proxy_ports.plaintext | default([]) -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+            {%- if certificates | default([]) -%}
+              {%- for port in frontend.ports.ssl | default([]) -%}
+                {%- set _ = result.append(port) -%}
+              {%- endfor -%}
+              {%- for port in frontend.proxy_ports.ssl | default([]) -%}
+                {%- set _ = result.append(port) -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ result }}
         port_prealloc_pairs: >-
-          [
-            {% for item in container.port_prealloc %}
-            {% if item is string and '-' in item %}
-            {{ item | split('-') | map('int') }},
-            {% else %}
-            [{{ item | int }}, {{ item | int }}],
-            {% endif %}
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for item in container.port_prealloc -%}
+            {%- if item is string and '-' in item -%}
+              {%- set _ = result.append(item.split('-') | map('int') | list) -%}
+            {%- else -%}
+              {%- set _ = result.append([item | int, item | int]) -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {{ result }}
         ports_in_prealloc: >-
-          [
-            {% for port in all_host_ports %}
-            {% for start, end in port_prealloc_pairs if start <= port <= end %}
-            {{ port }},
-            {% endfor %}
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for port in all_host_ports -%}
+            {%- for start, end in port_prealloc_pairs if start <= port <= end -%}
+              {%- set _ = result.append(port) -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {{ result }}
         ports_to_map_individually: >-
           {{ all_host_ports | difference(ports_in_prealloc) }}
       set_fact:
         all_port_map: >-
-          {
-            {% for host_port in all_host_ports %}
-            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
-            {% endfor %}
-          }
+          {%- set result = {} -%}
+          {%- for host_port in all_host_ports -%}
+            {%- set _ = result.update({host_port: container.port_map.get(host_port, host_port)}) -%}
+          {%- endfor -%}
+          {{ result }}
         docker_port_map: >-
-          {
-            {% for host_port in ports_to_map_individually %}
-            {{ host_port }}: {{ container.port_map.get(host_port, host_port) }},
-            {% endfor %}
-
-            {% for prealloc in container.port_prealloc %}
-            {{ prealloc }}: {{ prealloc }},
-            {% endfor %}
-          }
+          {%- set result = {} -%}
+          {%- for host_port in ports_to_map_individually -%}
+            {%- set _ = result.update({host_port: container.port_map.get(host_port, host_port)}) -%}
+          {%- endfor -%}
+          {%- for prealloc in container.port_prealloc -%}
+            {%- set _ = result.update({prealloc: prealloc}) -%}
+          {%- endfor -%}
+          {{ result }}
         bad_ports: >-
           {{ ports_in_prealloc | intersect(container.port_map) }}
 
+    - name: Print docker map
+      debug:
+        var: docker_port_map
+
     - name: Ensure docker_port_map is not empty
       assert:
-        that: docker_port_map
+        that: docker_port_map | length > 0
         quiet: yes
         fail_msg: >-
           No ports are mapped for container
 
     - name: Check for port map and port preallocation conflict
       assert:
-        that: not bad_ports
+        that: bad_ports | length == 0
         quiet: yes
         fail_msg: >-
           Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
@@ -196,12 +203,13 @@
     - name: Calculate individual instances on each machine
       set_fact:
         individual_instances: >-
-          [
-            {% for individual_instance in groups.individual_instances | default([])
-               if hostvars[individual_instance].machine_name == inventory_hostname %}
-            "{{ individual_instance }}",
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for individual_instance in groups.individual_instances | default([]) -%}
+            {%- if hostvars[individual_instance].machine_name == inventory_hostname -%}
+              {%- set _ = result.append(individual_instance) -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {{ result }}
 
     - name: Calculate stats web ports on each machine
       set_fact:

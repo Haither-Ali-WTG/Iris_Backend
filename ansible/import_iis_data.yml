@@ -39,11 +39,13 @@
     - name: Calculate clustered_instances_names
       set_fact:
         clustered_instance_names: >-
-          [
-            {% for item in clustered_instance_folders.files %}
-            {{ (item.path | split('/'))[-1] | to_json }},
-            {% endfor %}
-          ]
+          {{
+            clustered_instance_folders.files
+            | map(attribute='path')
+            | map('split', '/')
+            | map('last')
+            | list
+          }}
 
     - name: Report IIS counts
       vars:

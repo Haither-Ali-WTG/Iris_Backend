@@ -295,7 +295,7 @@ jobs:
           failOnStdErr: false
           args: >-
             -u dante --diff -e="s3_host=$(s3_host)" -e="s3_region=$(s3_region)"
-            -e="simulation="
+            -e="{simulation: false}"
             -e="key_vault_name=$(key_vault_name)"
             --limit="localhost,$(selected_node)"
         env:

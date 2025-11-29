@@ -20,7 +20,7 @@
         use_iso: false
         images_folder: "/mnt/storage"
         virgil_ssh_authorized_keys: >-
-            {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation }}
+            {{ lookup('file', 'test_ssh_keys/id_rsa.pub') if simulation else '' }}
         simulation_proxy: "http://172.31.255.254:3128"
         cpu: 8
         ram: 32768

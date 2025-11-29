@@ -126,7 +126,7 @@ stages:
                         args: >-
                           -u $(user) --diff
                           -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                          -e="simulation="
+                          -e="{simulation: false}"
                           -e="winrm_password=$(winrm_password)"
                           -e="s3_host=${{ run.s3_host }}" -e="pure_usernames='${{ run.pure_usernames }}'"
                           -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"

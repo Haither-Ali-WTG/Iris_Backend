@@ -13,7 +13,7 @@
 - name: Calculate and populate individual instance facts
   include_tasks: calculations.yml
 
-- name: Create directory {{ item }}
+- name: Create instance directories
   file:
     dest: "{{ individual_instance_dir }}/{{ item.path }}"
     state: directory
@@ -245,16 +245,15 @@
           - "{{ individual_instance_dir }}/run:/var/run/haproxy:z"
         net_host: no
         ports: >-
-          [
-            {% for host_port, container_port in docker_port_map.items() | sort %}
-            '{{ host_port }}:{{ container_port }}',
-            {% endfor %}
-          ]
+          {%- set result = [] -%}
+          {%- for host_port, container_port in docker_port_map.items() | sort -%}
+          {%-   set _ = result.append(host_port ~ ':' ~ container_port) -%}
+          {%- endfor -%}
+          {{ result }}
         apparmor_profile: "{{ 'wtg_iris' if (virgil_os_variant == 'ubuntu') else '' }}"
         container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
         container_dir: "{{ individual_instance_dir }}"
         resources: "{{ container.resources }}"
-
   always:
     - name: Remove docker pull lock file
       file:
@@ -268,7 +267,7 @@
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
   when: not container_running
-  loop: "{{ range(0, 10) }}"
+  loop: "{{ range(0, 10) | list }}"
 
 - name: Assert that container is running
   assert:
@@ -347,7 +346,7 @@
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
   when: not container_running
-  loop: "{{ range(0, 10) }}"
+  loop: "{{ range(0, 10) | list }}"
 
 - name: Assert that container is running
   assert:

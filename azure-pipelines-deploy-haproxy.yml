@@ -135,9 +135,8 @@ stages:
                           -e="s3_host=${{ run.s3_host }}"
                           -e="pure_usernames='${{ run.pure_usernames }}'"
                           -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
-                          -e="simulation=" -e="azure_kv_name=$(cert_kv_name)"
+                          -e="{simulation: false}" -e="azure_kv_name=$(cert_kv_name)"
                           -e "{use_cache: $(cms_use_cache)}"
-                          -e "{intermediate: $(cms_append_intermediate_certificate)}"
                           -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -166,7 +165,7 @@ stages:
                             -i data/instances \
                             -u $(user) --diff \
                             -e="build_id=$(Build.BuildId)$(System.JobAttempt)" \
-                            -e="simulation=" \
+                            -e="{simulation: false}" \
                             -e="winrm_password=$(winrm_password)" \
                             -e="s3_host=${{ run.s3_host }}" \
                             -e="pure_usernames='${{ run.pure_usernames }}'" \
@@ -190,7 +189,7 @@ stages:
                         failOnStdErr: false
                         args: >-
                           -u $(user) --diff
-                          -e="simulation="
+                          -e="{simulation: false}"
                           -e="{instance_teardown_allowed: $(instance_teardown_allowed)}"
                           -e="target_dc=${{ run.target_dc }}"
                       env:

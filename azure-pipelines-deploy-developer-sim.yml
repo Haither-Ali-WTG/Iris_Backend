@@ -107,8 +107,11 @@ stages:
               failOnStdErr: false
               args: >-
                 -u $(user) --diff -e="pool=/mnt/data1/test_pool"
+                -e="apt_mirror=$(apt_mirror)"
                 -e="@ansible/hypervisor.yaml" -e="@ansible/build_id.yaml"
-                -e="use_cicd_pool=$(use_cicd_pool)"
+                -e="{use_cicd_pool: $(use_cicd_pool)}"
+                -e="{config_ssh_for_testing: false}"
+                -e="{config_proxy_for_testing: true}"
                 -e="key_vault_name=$(mgmt_keyvault_name)"
                 -e="cpu=$(cpu)" -e="ram=$(ram)"
                 -e="s3_host=$(s3_host)"
@@ -143,9 +146,8 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e="s3_host=$(s3_host)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e "{use_cache: $(cms_use_cache)}"
-                -e "{intermediate: $(cms_append_intermediate_certificate)}"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
             env:
@@ -176,7 +178,7 @@ stages:
                 -u $(user) --diff
                 --forks $(forks_per_agent)
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(azure_kv_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}"
                 -e="s3_host=$(s3_host)"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
@@ -185,6 +187,7 @@ stages:
                 -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl"
                 -e="@ansible/hypervisor.yaml"
                 -e="pure_usernames='$(pure_usernames)'"
+                -e="{use_cicd_pool: $(use_cicd_pool)}"
                 -e="apt_mirror=$(apt_mirror)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -200,7 +203,7 @@ stages:
               args: >-
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="simulation=true" -e="azure_kv_name=$(mgmt_keyvault_name)"
+                -e="{simulation: true}" -e="azure_kv_name=$(mgmt_keyvault_name)"
                 -e="target_dc=$(simulation_dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
