@@ -21,136 +21,136 @@
       include_role:
         name: collect_sites
       when:
-        # - not simulation
+        - not simulation
         - target_dc == dc
         - (iis_servers | default([]) | length > 0) or (iis_servers_local | default([]) | length > 0)
 
-# - name: Augment the inventory
-#   import_playbook: augment_inventory.yaml
-#   when: not simulation
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  when: not simulation
 
-# - name: Per-clustered-instance setup (if needed)
-#   hosts: clustered_instances
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   tasks: []
+- name: Per-clustered-instance setup (if needed)
+  hosts: clustered_instances
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  tasks: []
 
-# - name: Setup on the machines
-#   hosts: target_machines
-#   strategy: free
-#   # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
-#   gather_facts: yes
-#   force_handlers: yes
-#   tasks:
-#     - name: Adjust installed packages
-#       include_role:
-#         name: iris_os_packages
+- name: Setup on the machines
+  hosts: target_machines
+  strategy: free
+  # can use "serial: 1" or "throttle: 1" to process machines one by one, where needed
+  gather_facts: yes
+  force_handlers: yes
+  tasks:
+    - name: Adjust installed packages
+      include_role:
+        name: iris_os_packages
 
-#     - name: Setup docker
-#       include_role:
-#         name: container_runner
-#         tasks_from: setup.yml
+    - name: Setup docker
+      include_role:
+        name: container_runner
+        tasks_from: setup.yml
 
-#     - name: Set container engine
-#       include_role:
-#         name: container_runner
-#         tasks_from: define_engine.yml
+    - name: Set container engine
+      include_role:
+        name: container_runner
+        tasks_from: define_engine.yml
 
-#     - name: Setup rsyslog for Iris
-#       include_role:
-#         name: iris_rsyslog
+    - name: Setup rsyslog for Iris
+      include_role:
+        name: iris_rsyslog
 
-#     - name: Setup logrotate for Iris
-#       include_role:
-#         name: iris_logrotate
+    - name: Setup logrotate for Iris
+      include_role:
+        name: iris_logrotate
 
-#     - name: Setup Telegraf config for Iris
-#       include_role:
-#         name: telegraf_config
-#       vars:
-#         endpoint_ports: "{{ stats_web_ports }}"
+    - name: Setup Telegraf config for Iris
+      include_role:
+        name: telegraf_config
+      vars:
+        endpoint_ports: "{{ stats_web_ports }}"
 
-#     - name: Apply system parameters
-#       include_role:
-#         name: system_parameters
+    - name: Apply system parameters
+      include_role:
+        name: system_parameters
 
-#     - name: Create haproxy user and retrieve subuser info
-#       include_role:
-#         name: haproxy_user
+    - name: Create haproxy user and retrieve subuser info
+      include_role:
+        name: haproxy_user
 
-#     - name: Setup docker namespaces
-#       include_role:
-#         name: docker_namespaces
-#       when: 'os_variant == "ubuntu"'
+    - name: Setup docker namespaces
+      include_role:
+        name: docker_namespaces
+      when: 'os_variant == "ubuntu"'
 
-# - name: Setup the individual instances
-#   hosts: individual_instances
-#   gather_facts: no
-#   force_handlers: yes
-#   diff: "{{ not simulation | default(true) }}"
-#   tasks:
-#     - name: Collect min facts
-#       ansible.builtin.setup:
-#         gather_subset: min
+- name: Setup the individual instances
+  hosts: individual_instances
+  gather_facts: no
+  force_handlers: yes
+  diff: "{{ not simulation | default(true) }}"
+  tasks:
+    - name: Collect min facts
+      ansible.builtin.setup:
+        gather_subset: min
 
-#     - name: Deploy the individual instances
-#       include_role:
-#         name: iris_haproxy
-#         tasks_from: individual_instances.yml
+    - name: Deploy the individual instances
+      include_role:
+        name: iris_haproxy
+        tasks_from: individual_instances.yml
 
-#     - name: Mark instance as successful
-#       set_fact:
-#         ok: yes
+    - name: Mark instance as successful
+      set_fact:
+        ok: yes
 
-# - name: Finalise setup on the machines
-#   hosts: target_machines
-#   strategy: free
-#   gather_facts: no
-#   force_handlers: yes
-#   vars:
-#     iris_run_directory: "/var/log/iris"
-#     iris_run_file: "iris_run.log"
-#   tasks:
-#     - name: Assert all instances on the machine are successful
-#       vars:
-#         failed_instance_names: >-
-#           {{
-#             individual_instances | list
-#             | map('extract', hostvars)
-#             | rejectattr('ok')
-#             | map(attribute='inventory_hostname')
-#             | list
-#           }}
-#       assert:
-#         that: failed_instance_names | length == 0
-#         quiet: yes
-#         fail_msg: >-
-#           Aborting machine {{ inventory_hostname }} due to failed individual instances
-#           {{ failed_instance_names | join(' and ') }}
+- name: Finalise setup on the machines
+  hosts: target_machines
+  strategy: free
+  gather_facts: no
+  force_handlers: yes
+  vars:
+    iris_run_directory: "/var/log/iris"
+    iris_run_file: "iris_run.log"
+  tasks:
+    - name: Assert all instances on the machine are successful
+      vars:
+        failed_instance_names: >-
+          {{
+            individual_instances | list
+            | map('extract', hostvars)
+            | rejectattr('ok')
+            | map(attribute='inventory_hostname')
+            | list
+          }}
+      assert:
+        that: failed_instance_names | length == 0
+        quiet: yes
+        fail_msg: >-
+          Aborting machine {{ inventory_hostname }} due to failed individual instances
+          {{ failed_instance_names | join(' and ') }}
 
-#     - name: Setup keepalived (VRRP)
-#       include_role:
-#         name: iris_keepalived
-#       # simulation doesn't have vlans so keepalived shuts off silently on ubuntu and throws error on RHEL
-#       when: not simulation
+    - name: Setup keepalived (VRRP)
+      include_role:
+        name: iris_keepalived
+      # simulation doesn't have vlans so keepalived shuts off silently on ubuntu and throws error on RHEL
+      when: not simulation
 
-#     - name: Create directory for Iris run file
-#       file:
-#         path: "{{ iris_run_directory }}"
-#         state: directory
-#         mode: u=rwx,go=rx
-#         owner: dante
-#         group: dante
-#       become: yes
+    - name: Create directory for Iris run file
+      file:
+        path: "{{ iris_run_directory }}"
+        state: directory
+        mode: u=rwx,go=rx
+        owner: dante
+        group: dante
+      become: yes
 
-#     - name: Create Iris run file including completion timestamp
-#       lineinfile:
-#         create: yes
-#         line: >-
-#             [{{ now().strftime('%s') }}] - Iris run finished at: {{ now().strftime('%a, %d %b %Y %H:%M:%S') }}
-#         path: "{{ iris_run_directory }}/{{ iris_run_file }}"
-#         mode: u=rw,go=r
-#         owner: dante
-#         group: dante
-#       become: yes
+    - name: Create Iris run file including completion timestamp
+      lineinfile:
+        create: yes
+        line: >-
+            [{{ now().strftime('%s') }}] - Iris run finished at: {{ now().strftime('%a, %d %b %Y %H:%M:%S') }}
+        path: "{{ iris_run_directory }}/{{ iris_run_file }}"
+        mode: u=rw,go=r
+        owner: dante
+        group: dante
+      become: yes
