@@ -209,25 +209,25 @@ stages:
               fi
             displayName: 'Check if the certificate section changed'
 
-          # - task: Ansible@0
-          #   displayName: 'Check and save certificates'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'iris/ansible/check_and_save_certificates_cms.yml'
-          #     inventoriesAgentMachine: 'file'
-          #     inventoryFileOnAgentMachine: 'iris/data/instances'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff
-          #       -e="azure_kv_name=$(azure_kv_name)"
-          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          #       -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
-          #       -e="s3_iris_bucket=$(s3_iris_bucket)"
-          #       -e "{check_all_certs: $(certificate_changed) }"
-          #       -e "{use_cache: $(cms_use_cache)}"
-          #       -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
-          #   env:
-          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+          - task: Ansible@0
+            displayName: 'Check and save certificates'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'iris/ansible/check_and_save_certificates_cms.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'iris/data/instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="azure_kv_name=$(azure_kv_name)"
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="s3_host=$(s3_host)" -e="pure_usernames=$(pure_usernames)"
+                -e="s3_iris_bucket=$(s3_iris_bucket)"
+                -e "{check_all_certs: $(certificate_changed) }"
+                -e "{use_cache: $(cms_use_cache)}"
+                -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - task: Bash@3
             displayName: 'Test haproxy'
@@ -252,32 +252,32 @@ stages:
                   -e "{simulation: true}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-              # ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
-              # ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
-              # ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
+              ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
+              ANSIBLE_DISPLAY_OK_HOSTS: $(ansible_display_ok_hosts)
+              ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
-          # - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
-          #   artifact: configs_$(simulation_dc)
-          #   displayName: 'Publish configs for $(simulation_dc)'
-          #   condition: always()
+          - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
+            artifact: configs_$(simulation_dc)
+            displayName: 'Publish configs for $(simulation_dc)'
+            condition: always()
 
-          # - task: Ansible@0
-          #   displayName: 'Unregister nodes'
-          #   inputs:
-          #     ansibleInterface: 'agentMachine'
-          #     playbookPathOnAgentMachine: 'iris/ansible/unregister_nodes.yaml'
-          #     inventoriesAgentMachine: 'file'
-          #     inventoryFileOnAgentMachine: 'iris/data/instances'
-          #     failOnStdErr: false
-          #     args: >-
-          #       -u $(user) --diff
-          #       -e="azure_kv_name=$(azure_kv_name)"
-          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-          #       -e="target_dc=$(simulation_dc)"
-          #       -e "{simulation: true}"
-          #   env:
-          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-          #   condition: always()
+          - task: Ansible@0
+            displayName: 'Unregister nodes'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'iris/ansible/unregister_nodes.yaml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'iris/data/instances'
+              failOnStdErr: false
+              args: >-
+                -u $(user) --diff
+                -e="azure_kv_name=$(azure_kv_name)"
+                -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+                -e="target_dc=$(simulation_dc)"
+                -e "{simulation: true}"
+            env:
+              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+            condition: always()
 
           - task: Ansible@0
             displayName: 'Cleanup'
