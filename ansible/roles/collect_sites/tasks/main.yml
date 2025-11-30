@@ -19,21 +19,16 @@
 - name: Find all variables starting with "iis_servers"
   set_fact:
     iis_servers_vars: >-
-      {{ iis_servers_vars | default([]) + [{
-        'key': item.key,
-        'value':
-          (
-            {%- set server_names = [] -%}
-            {%- for iis in item.value -%}
-              {%- if iis is mapping and 'server' in iis -%}
-                {%- set _tmp = server_names.append(iis.server) -%}
-              {%- else -%}
-                {%- set _tmp = server_names.append(iis) -%}
-              {%- endif -%}
-            {%- endfor -%}
-            server_names
-          )
-      }] }}
+      {%- set _list = iis_servers_vars | default([]) -%}
+      {%- set server_names = [] -%}
+      {%- for iis in item.value -%}
+        {%- if iis is mapping and 'server' in iis -%}
+          {%- set _ = server_names.append(iis.server) -%}
+        {%- else -%}
+          {%- set _ = server_names.append(iis) -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {{ _list + [{'key': item.key, 'value': server_names}] }}
   loop: "{{ vars | dict2items | selectattr('key', 'search', '^iis_servers') | list }}"
 
 - name: Print IIS
