@@ -7,12 +7,12 @@ variables:
   # 5e8e493395e899fb44585742e556170a22a3ef2e
   dante_build_id: '1534600'
 
-  # virgil 20251130.4
-  # Sun Nov 30 07:28:22 UTC 2025 -- Sun Nov 30 18:28:22 AEDT 2025
+  # virgil 20251130.6
+  # Sun Nov 30 09:26:56 UTC 2025 -- Sun Nov 30 20:26:56 AEDT 2025
   #
-  # Merged PR 42647: change ASN for spine3/4
-  # cec12dab4d0e9bc44bbf71892237257073795a97
-  virgil_build_id: '1536650'
+  # Merged PR 42659: Revert 'Prep De1 Leaf to spine cutover'
+  # 74625d1a9f9735b4f9426ab3c9e8723cb83e485b
+  virgil_build_id: '1536730'
 
   # sqlbilling 20251129.2
   # Fri Nov 28 14:14:14 UTC 2025 -- Sat Nov 29 01:14:14 AEDT 2025
