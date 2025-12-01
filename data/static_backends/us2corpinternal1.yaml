@@ -116,18 +116,6 @@ us2kvl-v0.wtg.zone:
       ip: 10.4.128.12
       port: 8006
       settings: check ssl verify none
-    - name: us2kvl00792.wtg.zone
-      ip: 10.4.128.18
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00793.wtg.zone
-      ip: 10.4.128.19
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00794.wtg.zone
-      ip: 10.4.128.20
-      port: 8006
-      settings: check ssl verify none
 
 us2pf1-prod-customurls.wtg.zone:
   clustered_instances: [us2corpinternal1]
