@@ -70,25 +70,26 @@
         {% endfor %}
       ]
     vrrp_instances: >-
-      [
-        {% for machine_cluster_name, machine_cluster_config in machine_clusters.items() %}
-        {% for floating_ip in machine_cluster_config.floating_ips %}
-          {
-            'machine_cluster_name': {{ machine_cluster_name | to_json }},
-            'config': {{ floating_ip | to_json }},
-            'calculated_priority': {{
-              (
-                floating_ip.priority
-                | zip(priority_list)
-                | selectattr('0', 'eq', inventory_hostname)
-                | first
-              )[1]
-            }},
-            'virtual_router_id': {{ floating_ip.virtual_router_id }},
-          },
-        {% endfor %}
-        {% endfor %}
-      ]
+      {%- set result = [] -%}
+      {%- for machine_cluster_name, machine_cluster_config in machine_clusters.items() -%}
+        {%- for floating_ip in machine_cluster_config.floating_ips -%}
+          {%- set idx = floating_ip.priority.index(inventory_hostname)
+                       if inventory_hostname in floating_ip.priority
+                       else -1 -%}
+          {%- if idx >= 0 -%}
+            {%- set calculated = priority_list[idx] -%}
+          {%- else -%}
+            {%- set calculated = priority_list[-1] -%}
+          {%- endif -%}
+          {%- set _ = result.append({
+                'machine_cluster_name': machine_cluster_name,
+                'config': floating_ip,
+                'calculated_priority': calculated,
+                'virtual_router_id': floating_ip.virtual_router_id
+              }) -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {{ result }}
   template:
     src: keepalived.conf.j2
     dest: /etc/keepalived/keepalived.conf
