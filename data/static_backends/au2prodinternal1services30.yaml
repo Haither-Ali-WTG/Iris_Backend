@@ -104,22 +104,6 @@ runtimeapi-au2.cwconnector.wisegrid.net:
       port: 5443
       settings: check ssl verify none
 
-compliancewise-test.wisegrid.net:
-  clustered_instances: [au2prodinternal1services30]
-  cookie:
-    name: CMPT
-  http_health_check:
-    enabled: true
-    http_path: /staging/wtg/status
-  encryption: false
-  servers:
-    - name: AU2WT-SIIS-401A
-      ip: 10.2.69.19
-      port: 80
-    - name: AU2WT-SIIS-401B
-      ip: 10.2.69.20
-      port: 80
-
 cwc-console.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
