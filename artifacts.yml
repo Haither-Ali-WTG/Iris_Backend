@@ -14,9 +14,9 @@ variables:
   # 74625d1a9f9735b4f9426ab3c9e8723cb83e485b
   virgil_build_id: '1536730'
 
-  # sqlbilling 20251202.3
-  # Mon Dec  1 15:56:09 UTC 2025 -- Tue Dec  2 02:56:09 AEDT 2025
+  # sqlbilling 20251203.1
+  # Tue Dec  2 15:40:21 UTC 2025 -- Wed Dec  3 02:40:21 AEDT 2025
   #
-  # Merged PR 42696: AddSQLReadOnlyIPs AU2 US2
-  # b39077630cfc03fd305f6a9dc6d9d3a06a2df712
-  sqlbilling_build_id: '1537946'
+  # Merged PR 42698: SQLBilling-Remove-CS02155773.yml
+  # bba35a56e352c77d8cb3017658d815144d1391fd
+  sqlbilling_build_id: '1538932'
