@@ -3,7 +3,7 @@ symbols-de1.sand.wtg.zone:
   clustered_instances: [de1sandinternal1services]
   http_health_check:
     enabled: true
-    http_path: /wtg/ready
+    http_path: /
   encryption: false
   servers:
     - name: DE1SP-SSYM-401
