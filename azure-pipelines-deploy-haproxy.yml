@@ -160,7 +160,7 @@ stages:
                         targetType: 'inline'
                         script: |
                           set -euo pipefail
-                          ansible-playbook \
+                          exec ansible-playbook \
                             ansible/deploy_haproxy.yml \
                             -i data/instances \
                             -u $(user) --diff \
