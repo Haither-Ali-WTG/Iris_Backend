@@ -132,8 +132,6 @@
     - name: Setup keepalived (VRRP)
       include_role:
         name: iris_keepalived
-      # simulation doesn't have vlans so keepalived shuts off silently on ubuntu and throws error on RHEL
-      when: not simulation
 
     - name: Create directory for Iris run file
       file:
