@@ -7,16 +7,16 @@ variables:
   # 34c93a8e42fc2aa136322b48585cda966a55ad28
   dante_build_id: '1538351'
 
-  # virgil 20251130.6
-  # Sun Nov 30 09:26:56 UTC 2025 -- Sun Nov 30 20:26:56 AEDT 2025
+  # virgil 20251203.3
+  # Wed Dec  3 01:32:59 UTC 2025 -- Wed Dec  3 12:32:59 AEDT 2025
   #
-  # Merged PR 42659: Revert 'Prep De1 Leaf to spine cutover'
-  # 74625d1a9f9735b4f9426ab3c9e8723cb83e485b
-  virgil_build_id: '1536730'
+  # Merged PR 42772: Removed newly created credentials as part of topic creation as they are not required.
+  # d223f5fac773ef9ba4b4726425d2bd2d99e529ca
+  virgil_build_id: '1539351'
 
-  # sqlbilling 20251203.1
-  # Tue Dec  2 15:40:21 UTC 2025 -- Wed Dec  3 02:40:21 AEDT 2025
+  # sqlbilling 20251203.3
+  # Tue Dec  2 17:49:31 UTC 2025 -- Wed Dec  3 04:49:31 AEDT 2025
   #
-  # Merged PR 42698: SQLBilling-Remove-CS02155773.yml
-  # bba35a56e352c77d8cb3017658d815144d1391fd
-  sqlbilling_build_id: '1538932'
+  # Merged PR 42760: AddSQLReadOnlyIPs AU2 DE1
+  # b9bbcfc2da0e6e5fccc47e5f509f16ba298efc92
+  sqlbilling_build_id: '1539003'
