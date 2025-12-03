@@ -61,6 +61,16 @@
   loop: "{{ machine_clusters | dict2items }}"
   when: inventory_hostname in item.value.machines
 
+- name: Ensure directory for keepalived exists in simulation
+  file:
+    path: /etc/keepalived
+    state: directory
+    owner: root
+    group: root
+    mode: u=rwx,go=rx
+  become: yes
+  when: simulation | default(false)
+
 - name: Configure keepalived
   vars:
     priority_list: [250, 200, 150, 100, 50]
