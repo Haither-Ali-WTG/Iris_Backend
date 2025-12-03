@@ -235,7 +235,7 @@ stages:
               targetType: 'inline'
               script: |
                 set -euo pipefail
-                ansible-playbook \
+                exec ansible-playbook \
                   iris/ansible/test_haproxy.yml \
                   -i iris/data/instances \
                   -u $(user) \
