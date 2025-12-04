@@ -96,7 +96,7 @@
   loop: "{{ certificates | default([]) }}"
   no_log: true
   register: copy_certificates
-  when: (not simulation) or (check_all_certs | default(true))
+  when: (not simulation) or (check_all_certs | default(true) | bool)
 
 - name: Copy certificates directory in simulation environment
   copy:
@@ -110,7 +110,7 @@
   register: copy_certificates
   when:
     - simulation
-    - not(check_all_certs | default(true))
+    - not(check_all_certs | default(true) | bool)
 
 - name: Copy sqlbilling acl files for individual instance
   copy:
