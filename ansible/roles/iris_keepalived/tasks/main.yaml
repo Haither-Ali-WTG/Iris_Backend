@@ -1,5 +1,6 @@
 ---
 - name: Install keepalived, registering if needed
+  when: not (simulation | default(false))
   block:
     - name: Register test Red Hat license (simulation only)
       include_role:
@@ -60,15 +61,26 @@
   loop: "{{ machine_clusters | dict2items }}"
   when: inventory_hostname in item.value.machines
 
+- name: Ensure directory for keepalived exists in simulation
+  file:
+    path: /etc/keepalived
+    state: directory
+    owner: root
+    group: root
+    mode: u=rwx,go=rx
+  become: yes
+  when: simulation | default(false)
+
 - name: Configure keepalived
   vars:
     priority_list: [250, 200, 150, 100, 50]
     peer_ips: >-
-      [
-        {% for h in machine_clusters[current_cluster].machines.keys() if h != inventory_hostname %}
-          "{{ hostvars[h].ansible_host }}"{% if not loop.last %}, {% endif %}
-        {% endfor %}
-      ]
+      {{
+        machine_clusters[current_cluster].machines.keys()
+        | reject('equalto', inventory_hostname)
+        | map('extract', hostvars, 'ansible_host')
+        | list
+      }}
     vrrp_instances: >-
       {%- set result = [] -%}
       {%- for machine_cluster_name, machine_cluster_config in machine_clusters.items() -%}
@@ -104,3 +116,4 @@
     enabled: yes
     daemon_reload: "{{ keepalived_warmup is changed }}"
   become: yes
+  when: not (simulation | default(false))
