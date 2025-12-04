@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251203.2
-  # Wed Dec  3 04:57:53 UTC 2025 -- Wed Dec  3 15:57:53 AEDT 2025
+  # Dante Build Artifact 20251204.2
+  # Thu Dec  4 02:29:46 UTC 2025 -- Thu Dec  4 13:29:46 AEDT 2025
   #
-  # Merged PR 42789: Docker image builder: clear the local image cache (looks like new docker bug)
-  # 77e0611a74796a3181ac46b3d4635e5876ac9b6b
-  dante_build_id: '1539498'
+  # Merge pull request 42817 from automatic_ascalaphus_image_upgrade into master
+  # 345976c4426617b6c9a526d647331f20610875c1
+  dante_build_id: '1540364'
 
-  # virgil 20251203.3
-  # Wed Dec  3 01:32:59 UTC 2025 -- Wed Dec  3 12:32:59 AEDT 2025
+  # virgil 20251204.6
+  # Thu Dec  4 02:21:28 UTC 2025 -- Thu Dec  4 13:21:28 AEDT 2025
   #
-  # Merged PR 42772: Removed newly created credentials as part of topic creation as they are not required.
-  # d223f5fac773ef9ba4b4726425d2bd2d99e529ca
-  virgil_build_id: '1539351'
+  # Merge pull request 42701 from virgil_python_upgrade into master
+  # e356f443697eaf8dfadfd37995cb936bb815644b
+  virgil_build_id: '1540352'
 
   # sqlbilling 20251203.3
   # Tue Dec  2 17:49:31 UTC 2025 -- Wed Dec  3 04:49:31 AEDT 2025
