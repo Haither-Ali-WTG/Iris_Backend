@@ -73,6 +73,7 @@ clustered_instances:
           cms_resource_group: RG-AU-Sand
         - name: star-bolero-sand-wtg-zone
         - name: star-cargowise-com
+          cms_resource_group: RG-AU-Corp
         - name: star-webprint-testrig-sand-wtg-zone
           cms_resource_group: RG-AU-Sand
         - name: star-localtransport-testrig-sand-wtg-zone
@@ -250,6 +251,7 @@ clustered_instances:
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-cargowise-com
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
@@ -531,6 +533,7 @@ clustered_instances:
           cms_resource_group: RG-AU-Sand
         - name: star-bolero-sand-wtg-zone
         - name: star-cargowise-com
+          cms_resource_group: RG-AU-Corp
       container:
         resources:
           production:
