@@ -107,7 +107,6 @@
     group: "{{ subuser.subgid }}"
   become: yes
   no_log: true
-  register: copy_certificates
   when:
     - simulation
     - not(check_all_certs | default(true) | bool)
