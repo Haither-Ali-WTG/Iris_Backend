@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251205.3
-  # Thu Dec  4 22:42:43 UTC 2025 -- Fri Dec  5 09:42:43 AEDT 2025
+  # Dante Build Artifact 20251205.5
+  # Fri Dec  5 04:21:22 UTC 2025 -- Fri Dec  5 15:21:22 AEDT 2025
   #
-  # Merge pull request 42815 from automatic_bind9_image_upgrade into master
-  # 9a3d7b8ba71c0510e36df09a3f8806c3bb06512a
-  dante_build_id: '1541291'
+  # Merge pull request 42942 from dante_artifact_upgrade into master
+  # 87598341dc4d2af232d285b722424e3d4a97e926
+  dante_build_id: '1541650'
 
-  # virgil 20251204.9
-  # Thu Dec  4 03:41:47 UTC 2025 -- Thu Dec  4 14:41:47 AEDT 2025
+  # virgil 20251205.6
+  # Fri Dec  5 03:25:25 UTC 2025 -- Fri Dec  5 14:25:25 AEDT 2025
   #
-  # Merged PR 42843: remove apex to leaf links for decomm pairs
-  # d75a9d85dded57c13d3d8272ad6db70ad2ad0ca1
-  virgil_build_id: '1540444'
+  # Merged PR 42947: upgrade DAT Switch pairs AU2
+  # 84f7c6a77413b9fe9fc046e6d7b95585c73ea892
+  virgil_build_id: '1541579'
 
   # sqlbilling 20251205.1
   # Thu Dec  4 13:11:06 UTC 2025 -- Fri Dec  5 00:11:06 AEDT 2025
