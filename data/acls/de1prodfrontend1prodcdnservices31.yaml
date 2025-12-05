@@ -83,3 +83,8 @@ peppol_ap_as4_allow_path:
     Allow path for Peppol AP service AS4 path
   tests:
     - path_beg -i /as4
+
+star_urs_wisegrid_net:
+  description: "*.urs.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?urs\.wisegrid\.net$
