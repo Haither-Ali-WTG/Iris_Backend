@@ -486,8 +486,6 @@ philippineseiscallbackservice-test.wisegrid.net:
 
 xttest-international-service1.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -498,8 +496,6 @@ xttest-international-service1.wisegrid.net:
 
 xttest-customs-brpushnotification.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -510,8 +506,6 @@ xttest-customs-brpushnotification.wisegrid.net:
 
 xttest-customs-mxmanifest.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -522,8 +516,6 @@ xttest-customs-mxmanifest.wisegrid.net:
 
 xttest-customs-becallback.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -603,8 +595,6 @@ sydbiztalk-test.wisegrid.net:
 
 sydbiztalk-test.ssl:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -645,8 +635,6 @@ gbtlws-test.wisegrid.net:
 
 xttest-eidas-gwy.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
@@ -657,8 +645,6 @@ xttest-eidas-gwy.wisegrid.net:
 
 xhportal-api-uat.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -669,8 +655,6 @@ xhportal-api-uat.wisegrid.net:
 
 customsconnector-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -684,8 +668,6 @@ customsconnector-test.wisegrid.net:
 
 romaniaoauthcs-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -714,8 +696,6 @@ cww-nonprd.wisegrid.net.catch.all:
 
 israeloauthcs-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -780,8 +760,6 @@ cacustoms-gw2-test.cargowise.net:
 
 oauthcs-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -795,8 +773,6 @@ oauthcs-test.wisegrid.net:
 
 egypteinvoicing-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -810,8 +786,6 @@ egypteinvoicing-test.wisegrid.net:
 
 cv-staging-api.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -852,8 +826,6 @@ ausyd.staging.transport.api:
 
 xttest-atlas.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: None
   http_health_check:
     enabled: true
     http_path: /
