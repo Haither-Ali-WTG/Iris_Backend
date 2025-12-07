@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251205.5
-  # Fri Dec  5 04:21:22 UTC 2025 -- Fri Dec  5 15:21:22 AEDT 2025
+  # Dante Build Artifact 20251207.1
+  # Sun Dec  7 09:41:25 UTC 2025 -- Sun Dec  7 20:41:25 AEDT 2025
   #
-  # Merge pull request 42942 from dante_artifact_upgrade into master
-  # 87598341dc4d2af232d285b722424e3d4a97e926
-  dante_build_id: '1541650'
+  # Merge pull request 42970 from dante_artifact_upgrade into master
+  # 2d7a773c032a20a13c790d98f71cd297c3f2537e
+  dante_build_id: '1543654'
 
-  # virgil 20251207.2
-  # Sun Dec  7 07:17:41 UTC 2025 -- Sun Dec  7 18:17:41 AEDT 2025
+  # virgil 20251207.7
+  # Sun Dec  7 09:01:41 UTC 2025 -- Sun Dec  7 20:01:41 AEDT 2025
   #
-  # Merged PR 42984: upgrade DE1 exits 3/4
-  # 1861eb788dd9803f850835e1c2df496013dad555
-  virgil_build_id: '1543511'
+  # Merge pull request 42992 from virgil_python_upgrade into master
+  # ffc57351f3811941173a1658df4493474431a0f4
+  virgil_build_id: '1543619'
 
   # sqlbilling 20251206.1
   # Fri Dec  5 13:06:47 UTC 2025 -- Sat Dec  6 00:06:47 AEDT 2025
