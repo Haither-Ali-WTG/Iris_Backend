@@ -690,21 +690,6 @@ app.borderwise.com:
       ip: 10.2.67.112
       port: 50035
 
-addressvalidation.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: AVS
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  servers:
-    - name: AU2WP-SIIS-401A
-      ip: 10.2.69.12
-      port: 80
-    - name: AU2WP-SIIS-401B
-      ip: 10.2.69.13
-      port: 80
-
 myaccount.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
@@ -1084,48 +1069,6 @@ ehub-integration.cargowise.net:
       port: 80
     - name: AU2WP-SEWG-401B
       ip: 10.2.69.39
-      port: 80
-
-au2wcatoken.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: None
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  servers:
-    - name: au2wp-swfe-401
-      ip: 10.2.68.10
-      port: 80
-    - name: au2wp-swfe-402
-      ip: 10.2.69.50
-      port: 80
-    - name: au2wp-swfe-403
-      ip: 10.2.69.51
-      port: 80
-    - name: au2wp-swfe-404
-      ip: 10.2.69.52
-      port: 80
-
-sydwca.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: None
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  servers:
-    - name: au2wp-swfe-401
-      ip: 10.2.68.10
-      port: 80
-    - name: au2wp-swfe-402
-      ip: 10.2.69.50
-      port: 80
-    - name: au2wp-swfe-403
-      ip: 10.2.69.51
-      port: 80
-    - name: au2wp-swfe-404
-      ip: 10.2.69.52
       port: 80
 
 xt-eidas-gwy.wisegrid.net:

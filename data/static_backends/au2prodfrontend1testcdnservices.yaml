@@ -409,21 +409,6 @@ scim-test.wisegrid.net:
       ip: 10.2.70.20
       port: 80
 
-addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: AVS
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-  servers:
-    - name: AU2WT-SIIS-401A
-      ip: 10.2.69.19
-      port: 80
-    - name: AU2WT-SIIS-401B
-      ip: 10.2.69.20
-      port: 80
-
 addresscleansing-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
