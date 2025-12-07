@@ -55,3 +55,10 @@ default_backend:
   order: 99
   actions:
     - use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]
+
+secure_cookie:
+  description: |-
+    Set secure attribute
+  order: 60
+  actions:
+    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie

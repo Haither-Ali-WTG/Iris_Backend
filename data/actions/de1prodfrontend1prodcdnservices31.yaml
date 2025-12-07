@@ -61,3 +61,11 @@ compliance_borderwise_backend:
   order: 80
   actions:
     - use_backend compliance-de_borderwise_com if compliance_borderwise_com
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 80
+  actions:
+    - redirect scheme https if star_urs_wisegrid_net !{ ssl_fc }
