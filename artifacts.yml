@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251207.1
-  # Sun Dec  7 09:41:25 UTC 2025 -- Sun Dec  7 20:41:25 AEDT 2025
+  # Dante Build Artifact 20251207.2
+  # Sun Dec  7 11:49:46 UTC 2025 -- Sun Dec  7 22:49:46 AEDT 2025
   #
-  # Merge pull request 42970 from dante_artifact_upgrade into master
-  # 2d7a773c032a20a13c790d98f71cd297c3f2537e
-  dante_build_id: '1543654'
+  # Merge pull request 43016 from dante_artifact_upgrade into master
+  # dfe2ed22eba392a7d6e7c492dc5fb4f335ecc266
+  dante_build_id: '1543749'
 
-  # virgil 20251207.7
-  # Sun Dec  7 09:01:41 UTC 2025 -- Sun Dec  7 20:01:41 AEDT 2025
+  # virgil 20251207.9
+  # Sun Dec  7 11:05:48 UTC 2025 -- Sun Dec  7 22:05:48 AEDT 2025
   #
-  # Merge pull request 42992 from virgil_python_upgrade into master
-  # ffc57351f3811941173a1658df4493474431a0f4
-  virgil_build_id: '1543619'
+  # Merged PR 43015: update leaf to spine connectivity
+  # 923297717a147db02f35e92af0631a4242b539d6
+  virgil_build_id: '1543720'
 
   # sqlbilling 20251206.1
   # Fri Dec  5 13:06:47 UTC 2025 -- Sat Dec  6 00:06:47 AEDT 2025
