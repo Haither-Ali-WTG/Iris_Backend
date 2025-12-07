@@ -7,12 +7,12 @@ variables:
   # 87598341dc4d2af232d285b722424e3d4a97e926
   dante_build_id: '1541650'
 
-  # virgil 20251205.9
-  # Fri Dec  5 05:47:01 UTC 2025 -- Fri Dec  5 16:47:01 AEDT 2025
+  # virgil 20251207.2
+  # Sun Dec  7 07:17:41 UTC 2025 -- Sun Dec  7 18:17:41 AEDT 2025
   #
-  # Merged PR 42969: uplink migration apex47/48
-  # 198b11f9be8c3ed91fa7b2b4714a0bf421e96dd7
-  virgil_build_id: '1541740'
+  # Merged PR 42984: upgrade DE1 exits 3/4
+  # 1861eb788dd9803f850835e1c2df496013dad555
+  virgil_build_id: '1543511'
 
   # sqlbilling 20251206.1
   # Fri Dec  5 13:06:47 UTC 2025 -- Sat Dec  6 00:06:47 AEDT 2025
