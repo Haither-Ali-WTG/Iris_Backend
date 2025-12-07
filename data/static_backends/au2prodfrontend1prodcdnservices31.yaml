@@ -544,6 +544,7 @@ avsbackground.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: LB
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /v2/GetServiceStatus
@@ -705,6 +706,7 @@ myaccount.cargowise.com:
 
 myaccount-portal.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /myaccount/Login/LoginLite.aspx
@@ -718,6 +720,7 @@ myaccount-portal.cargowise.com:
 
 myaccount-portal.cargowise.com.glow:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /Glow/wtg/ready
@@ -731,6 +734,7 @@ myaccount-portal.cargowise.com.glow:
 
 myaccount-portal.cargowise.com.portals:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /Portals/wtg/ready
@@ -761,6 +765,7 @@ webservices.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: GLOW
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /Glow/wtg/ready
@@ -1140,7 +1145,7 @@ israeloauthcs.wisegrid.net:
 oauthcs.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
-    name: oaut
+    name: OAUT
   http_health_check:
     enabled: true
     http_path: /wtg/status

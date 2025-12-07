@@ -388,7 +388,7 @@ abe-test.wisegrid.net:
 onerecord-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: 1REC
+    name: ONEREC
   http_health_check:
     enabled: true
     http_path: /wtg/ready
@@ -458,6 +458,7 @@ wtlshmservices.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: WEBSVC
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /
@@ -595,6 +596,7 @@ sydbiztalk-test.wisegrid.net:
 
 sydbiztalk-test.ssl:
   clustered_instances: [au2prodfrontend1testcdnservices]
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /
@@ -711,6 +713,7 @@ ec-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: ECT
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -722,7 +725,7 @@ ec-test.wisegrid.net:
 testflighttracking.cargowise.com:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: tft
+    name: TFT
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -749,7 +752,7 @@ cmb-test.wisegrid.net:
 cacustoms-gw2-test.cargowise.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: cagt
+    name: CAGT
   http_health_check:
     enabled: true
     http_path: /wtg/status
@@ -838,6 +841,7 @@ wtlupsservices.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: WEBSVC
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /
