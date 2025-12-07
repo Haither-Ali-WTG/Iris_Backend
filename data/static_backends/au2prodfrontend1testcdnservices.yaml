@@ -1,6 +1,6 @@
 ---
 addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1testcdnservices]
   cookie:
     name: AVS
   http_health_check:
@@ -174,3 +174,693 @@ aumel-staging.transport.wisetechglobal.com-api:
     - name: au2wt-sdkr-501c--api2
       ip: 10.2.69.96
       port: 3503
+
+ehub-ausyd-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SEWG-401A
+      ip: 10.2.69.68
+      port: 80
+    - name: AU2WT-SEWG-401B
+      ip: 10.2.69.69
+      port: 80
+
+gbcds-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+gbcdsws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+gbcnsws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+gbmcpws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+gbcustoms-cdsws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+ehub-routingws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SEWG-401A
+      ip: 10.2.69.68
+      port: 80
+    - name: AU2WT-SEWG-401B
+      ip: 10.2.69.69
+      port: 80
+
+ofxcallback-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: OFX
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-403A
+      ip: 10.2.69.86
+      port: 80
+    - name: AU2WT-SIIS-403B
+      ip: 10.2.69.87
+      port: 80
+
+ehub-integration-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWG
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SEWG-401A
+      ip: 10.2.69.68
+      port: 80
+    - name: AU2WT-SEWG-401B
+      ip: 10.2.69.69
+      port: 80
+
+ehub-ausyd-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SEWG-401A
+      ip: 10.2.69.68
+      port: 80
+    - name: AU2WT-SEWG-401B
+      ip: 10.2.69.69
+      port: 80
+
+ofxdealstatusws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: OFX
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-403A
+      ip: 10.2.69.86
+      port: 80
+    - name: AU2WT-SIIS-403B
+      ip: 10.2.69.87
+      port: 80
+
+enrichment-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ENR
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+rongjinsearchinvoicews-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: CHII
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+abe-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ABE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
+      port: 80
+
+onerecord-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ONEREC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+
+scim-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SCIM
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2wt-sapp-401
+      ip: 10.2.70.20
+      port: 80
+
+addresscleansing-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: AVS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+xttest2-eservices.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: XT2
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2wt-sxtr-403
+      ip: 10.2.70.34
+      port: 80
+    - name: au2wt-sxtr-404
+      ip: 10.2.70.35
+      port: 80
+
+gtminvoicingws.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: GTM
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2sp-sweb-401a
+      ip: 10.2.118.13
+      port: 80
+    - name: au2sp-sweb-401b
+      ip: 10.2.118.14
+      port: 80
+
+wtlshmservices.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: WEBSVC
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 443
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 443
+
+philippineseiscallbackservice-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: PEISCT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+xttest-international-service1.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 9080
+
+xttest-customs-brpushnotification.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 9080
+
+xttest-customs-mxmanifest.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 9080
+
+xttest-customs-becallback.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 9080
+
+ca-staging.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: PCTW
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: AU2SP-SDKR-401
+      ip: 10.2.116.27
+      port: 42205
+
+xt-healthcheck-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: XTHC
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2wt-siis-401a
+      ip: 10.2.69.19
+      port: 80
+    - name: au2wt-siis-401b
+      ip: 10.2.69.20
+      port: 80
+
+dpp-web-demo.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: DPPW
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+dpp-api-demo.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: DPPA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+sydbiztalk-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: WEBSVC
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2SP-SBTS-401
+      ip: 10.2.118.36
+      port: 80
+
+sydbiztalk-test.ssl:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2SP-SBTS-401
+      ip: 10.2.118.36
+      port: 443
+
+gbpentantws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: GPTTT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+gbtlws-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: GPTTT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+xttest-eidas-gwy.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 5095
+
+xhportal-api-uat.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+
+customsconnector-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+romaniaoauthcs-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+cww-nonprd.wisegrid.net.catch.all:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2WT-SBLZ-001
+      ip: 10.2.73.11
+      port: 80
+    - name: AU2WT-SBLZ-404
+      ip: 10.2.73.24
+      port: 80
+
+israeloauthcs-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+ec-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ECT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SEMC-401
+      ip: 10.2.116.38
+      port: 443
+
+testflighttracking.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: TFT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
+      port: 80
+
+cmb-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ABE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2sp-siis-401
+      ip: 10.2.118.20
+      port: 80
+
+cacustoms-gw2-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: CAGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2wt-smsg-401
+      ip: 10.2.69.18
+      port: 80
+
+oauthcs-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+egypteinvoicing-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SIIS-402A
+      ip: 10.2.69.77
+      port: 80
+    - name: AU2SP-SIIS-402B
+      ip: 10.2.69.78
+      port: 80
+
+cv-staging-api.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: AU2SP-SDKR-401
+      ip: 10.2.116.27
+      port: 8097
+
+ausyd.staging.transport.web:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sdkr-501b--web1
+      ip: 10.2.69.95
+      port: 3001
+    - name: au2wt-sdkr-501c--web2
+      ip: 10.2.69.96
+      port: 3001
+
+ausyd.staging.transport.api:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sdkr-501b--api1
+      ip: 10.2.69.95
+      port: 3501
+    - name: au2wt-sdkr-501c--api2
+      ip: 10.2.69.96
+      port: 3501
+
+xttest-atlas.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 5094
+
+wtlupsservices.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WEBSVC
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 443
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 443
+
+cargoliveposition-staging.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: CLPTS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  servers:
+    - name: AU2SP-SDKR-401
+      ip: 10.2.116.27
+      port: 8093
