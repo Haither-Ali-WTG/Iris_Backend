@@ -130,3 +130,9 @@ star_wisegrid_net:
   description: "*.wisegrid.net"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_wtatestrig_sand_wtg_zone:
+  description: |-
+    *.wtatestrig.sand.wtg.zone
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wtatestrig\.sand\.wtg\.zone$

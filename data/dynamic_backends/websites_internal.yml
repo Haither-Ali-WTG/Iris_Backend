@@ -136,3 +136,14 @@
     enabled: true
     name: 'WTGLB'
   name_suffix: ''
+
+- name_regex: '\.wtatestrig\.sand\.wtg\.zone$'
+  server_regex: '^au2sp-siis'
+  encryption: false
+  http_health_check:
+    enabled: false
+  port: 80
+  cookie:
+    enabled: true
+    name: 'WTALB'
+  name_suffix: ''
