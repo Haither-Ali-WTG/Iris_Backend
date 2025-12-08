@@ -634,6 +634,8 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-xttest-wisegrid-net
