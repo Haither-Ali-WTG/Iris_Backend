@@ -1,0 +1,106 @@
+---
+trigger: none
+
+variables:
+  - template: artifacts.yml
+  - name: user
+    value: dante
+  - name: key_vault_name
+    value: kv-wtg-iris-prod
+jobs:
+  - job: Iris_Validation_Per_Cluster
+    strategy:
+      matrix:
+        au2-prod-frontend-1:
+          enabled: $(au2-prod-frontend-1_enabled)
+          dc: AU2
+          hall: A
+        au2-prod-internal-1:
+          enabled: $(au2-prod-internal-1_enabled)
+          dc: AU2
+          hall: A
+        au2-sand-internal-1:
+          enabled: $(au2-sand-internal-1_enabled)
+          dc: AU2
+          hall: A
+        au2-sand-internal-2:
+          enabled: $(au2-sand-internal-2_enabled)
+          dc: AU2
+          hall: A
+        au2-prod-elastic-bunker-1:
+          enabled: $(au2-prod-elastic-bunker-1_enabled)
+          dc: AU2
+          hall: A
+        de1-prod-frontend-1:
+          enabled: $(de1-prod-frontend-1_enabled)
+          dc: DE1
+          hall: A
+        de1-prod-internal-1:
+          enabled: $(de1-prod-internal-1_enabled)
+          dc: DE1
+          hall: A
+        de1-prod-elastic-bunker-1:
+          enabled: $(de1-prod-elastic-bunker-1_enabled)
+          dc: DE1
+          hall: A
+        us2-prod-frontend-1:
+          enabled: $(us2-prod-frontend-1_enabled)
+          dc: US2
+          hall: A
+        us2-prod-elastic-bunker-1:
+          enabled: $(us2-prod-elastic-bunker-1_enabled)
+          dc: US2
+          hall: A
+        us2-corp-internal-1:
+          enabled: $(us2-corp-internal-1_enabled)
+          dc: US2
+          hall: A
+    pool:
+      name: dante
+      demands:
+        - WTG_DC -equals $(dc)
+        - WTG_HALL -equals $(hall)
+
+    steps:
+      - checkout: self
+
+      - task: InstallSSHKey@0
+        displayName: 'Install an SSH key'
+        inputs:
+          knownHostsEntry: 'StrictHostKeyChecking no'
+          sshKeySecureFile: 'id_rsa_dante'
+
+      - script: |
+          set -euxo pipefail
+          pip install -r requirements.txt
+        displayName: 'Install requirements'
+
+      - script: |
+          set -euxo pipefail
+          cp ansible/ansible.cfg .
+        displayName: 'Prepare to run playbooks'
+
+      - task: DownloadPipelineArtifact@2
+        displayName: 'Download dante artifact'
+        inputs:
+          buildType: 'specific'
+          project: 'InfrastructureAutomation'
+          # dante build artifact pipeline Id
+          pipeline: 26
+          buildVersionToDownload: 'specific'
+          buildId: '$(dante_build_id)'
+          path: $(Build.SourcesDirectory)
+
+      - task: CopyFiles@2
+        displayName: 'Merge artifacts to a single roles folder'
+        inputs:
+          sourceFolder: iris
+          targetFolder: ansible
+
+      - task: AzureKeyVault@2
+        displayName: 'Get secrets from Azure KV'
+        inputs:
+          azureSubscription: 'sc-azuredevops2dante-vaults'
+          KeyVaultName: '$(key_vault_name)'
+          SecretsFilter: secretAppIdDf4b4604e176
+          RunAsPreJob: false
