@@ -14,6 +14,11 @@ star_edirf_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?edirf\.wisegrid\.net$
 
+star_webcampaign_wisegrid_net:
+  description: "*.webcampaign.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?webcampaign\.wisegrid\.net$
+
 star_webprint_wisegrid_net:
   description: "*.webprint.wisegrid.net"
   tests:
