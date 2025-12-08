@@ -569,6 +569,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
@@ -636,6 +638,8 @@ clustered_instances:
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-xttest-wisegrid-net
