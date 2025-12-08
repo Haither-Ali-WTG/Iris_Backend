@@ -569,6 +569,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
