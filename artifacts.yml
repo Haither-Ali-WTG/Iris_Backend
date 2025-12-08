@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251207.2
-  # Sun Dec  7 11:49:46 UTC 2025 -- Sun Dec  7 22:49:46 AEDT 2025
+  # Dante Build Artifact 20251208.2
+  # Mon Dec  8 08:21:22 UTC 2025 -- Mon Dec  8 19:21:22 AEDT 2025
   #
-  # Merge pull request 43016 from dante_artifact_upgrade into master
-  # dfe2ed22eba392a7d6e7c492dc5fb4f335ecc266
-  dante_build_id: '1543749'
+  # Merge pull request 43068 from dante_artifact_upgrade into master
+  # b20fe323e59b26c619f0ae5a63e728acb613437c
+  dante_build_id: '1544592'
 
-  # virgil 20251207.9
-  # Sun Dec  7 11:05:48 UTC 2025 -- Sun Dec  7 22:05:48 AEDT 2025
+  # virgil 20251208.2
+  # Mon Dec  8 07:29:05 UTC 2025 -- Mon Dec  8 18:29:05 AEDT 2025
   #
-  # Merged PR 43015: update leaf to spine connectivity
-  # 923297717a147db02f35e92af0631a4242b539d6
-  virgil_build_id: '1543720'
+  # Merged PR 43065: updating OS version for au2lbl00818 rebuild
+  # 7e81b8253f46cd4bd589234fb1f245d622b93a62
+  virgil_build_id: '1544549'
 
-  # sqlbilling 20251206.1
-  # Fri Dec  5 13:06:47 UTC 2025 -- Sat Dec  6 00:06:47 AEDT 2025
+  # sqlbilling 20251208.2
+  # Mon Dec  8 08:36:04 UTC 2025 -- Mon Dec  8 19:36:04 AEDT 2025
   #
-  # Merged PR 42979: AddSQLReadOnlyIPs AU2 DE1 US2
-  # 6a978a97315177a0e5a384f5bc6d3f520688f23c
-  sqlbilling_build_id: '1542023'
+  # Merged PR 43066: Update IP readonly
+  # 0eaba4853a8806542c419abd36caf38c75b670ee
+  sqlbilling_build_id: '1544611'
