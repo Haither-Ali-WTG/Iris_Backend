@@ -86,7 +86,7 @@
   name_suffix: ''
 
 # Webprint
-- name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webprint\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^[A-Za-z0-9]{6}(-cn)?[-.]?webprint\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
     enabled: false
@@ -98,7 +98,7 @@
   name_suffix: ''
 
 # Webtracker
-- name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webtracker\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^[A-Za-z0-9]{6}(-cn)?[-.]?webtracker\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
     enabled: false
