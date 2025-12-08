@@ -22,12 +22,12 @@ star_webcampaign_wisegrid_net:
 star_webprint_wisegrid_net:
   description: "*.webprint.wisegrid.net"
   tests:
-    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?webprint\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^[A-Za-z0-9]{6}(?:-cn)?[-.]?webprint\.wisegrid\.net$
 
 star_webtracker_wisegrid_net:
   description: "*.webtracker.wisegrid.net"
   tests:
-    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?webtracker\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^[A-Za-z0-9]{6}(?:-cn)?[-.]?webtracker\.wisegrid\.net$
 
 www-star_wisegrid_net:
   description: "www-*.wisegrid.net"
