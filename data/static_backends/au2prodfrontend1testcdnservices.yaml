@@ -1,6 +1,6 @@
 ---
 addressvalidation-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1testcdnservices]
+  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1prodcdnservices31]
   cookie:
     name: AVS
   http_health_check:
