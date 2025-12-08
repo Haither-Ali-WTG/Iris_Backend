@@ -54,6 +54,7 @@ clustered_instances:
         - server: au2sp-sweb-407.sand.wtg.zone
           agent_port: 8089
         - server: au2sp-siis-401.sand.wtg.zone
+          agent_port: 8089
       iis_user: s_lbwinrmquerier1@sand.wtg.zone
       iis_servers_local:
         - au2sp-sweb-402a.sand.wtg.zone
