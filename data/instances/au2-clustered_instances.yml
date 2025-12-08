@@ -615,6 +615,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
+        - name: star-cargowise-com
+          cms_resource_group: RG-AU-Corp
       stats:
         ports:
           web: 2061

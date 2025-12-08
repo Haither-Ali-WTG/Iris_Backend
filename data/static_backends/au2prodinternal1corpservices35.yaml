@@ -982,7 +982,7 @@ llm-gateway-staging.knowledge.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of llm manager
-editor-staging.smartfreight.com:
+cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1003,7 +1003,7 @@ forms-dev.wisetechglobal.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-partnerresources-dev.pierbridge.com:
+partnerresources-pierbridge-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   cookie:
     name: PIERBD
@@ -1029,7 +1029,7 @@ search-dev.cargowise.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-search-dev.pierbridge.com:
+search-pierbridge-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1053,7 +1053,7 @@ search-dev.wisetechglobal.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-staging.smartfreight.com:
+smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1065,7 +1065,7 @@ staging.smartfreight.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.blumeglobal.com:
+www-blumeglobal-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1077,7 +1077,7 @@ www-dev.blumeglobal.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.bysoft.com.br:
+www-bysoft-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1089,7 +1089,7 @@ www-dev.bysoft.com.br:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.containerchain.com:
+www-containerchain-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1101,7 +1101,7 @@ www-dev.containerchain.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.pierbridge.com:
+www-pierbridge-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1113,7 +1113,7 @@ www-dev.pierbridge.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.sisa.ch:
+www-sisa-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1125,7 +1125,7 @@ www-dev.sisa.ch:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.softship.com:
+www-softship-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1137,7 +1137,7 @@ www-dev.softship.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-www-dev.triniumtech.com:
+www-triniumtech-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1149,7 +1149,7 @@ www-dev.triniumtech.com:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
-editor.smartfreight.com:
+cms-smartfreight.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
