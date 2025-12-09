@@ -175,7 +175,7 @@ peppol-ap-prod.wisegrid.net:
       port: 18080
 
 query.urs.wisegrid.net:
-  clustered_instances: [de1prodfrontend1prodservices]
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
   http_health_check:
     enabled: true
     http_path: /wtg/ready
