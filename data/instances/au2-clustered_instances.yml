@@ -488,8 +488,8 @@ clustered_instances:
         - au2wt-sweb-414b.test.wisecloud.zone
         - au2wt-sweb-415a.test.wisecloud.zone
         - au2wt-sweb-415b.test.wisecloud.zone
-        - au2wp-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
-        - au2wp-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
+        - au2wt-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
+        - au2wt-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
