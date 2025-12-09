@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251209.1
-  # Mon Dec  8 19:01:09 UTC 2025 -- Tue Dec  9 06:01:09 AEDT 2025
+  # Dante Build Artifact 20251209.2
+  # Tue Dec  9 02:55:23 UTC 2025 -- Tue Dec  9 13:55:23 AEDT 2025
   #
-  # Merge pull request 43091 from dante_artifact_upgrade into master
-  # d7f5ace9eb74af3a0f0da7165a38ddc96687898d
-  dante_build_id: '1545007'
+  # Merged PR 43113: add ntp.conf file to new location for CL5113
+  # 9c645e252f9c9eed213493937b282932aafc9fc3
+  dante_build_id: '1545365'
 
-  # virgil 20251209.2
-  # Mon Dec  8 18:21:26 UTC 2025 -- Tue Dec  9 05:21:26 AEDT 2025
+  # virgil 20251210.5
+  # Tue Dec  9 22:07:59 UTC 2025 -- Wed Dec 10 09:07:59 AEDT 2025
   #
-  # Merge pull request 43083 from virgil_python_upgrade into master
-  # 9b4aeaee36de1d9413b765a75750446a71ae3b14
-  virgil_build_id: '1544962'
+  # Merged PR 43114: Move registry-de to haproxy
+  # 978aef79db0ea7e92f6098e286aea8063fb92da5
+  virgil_build_id: '1546145'
 
-  # sqlbilling 20251208.2
-  # Mon Dec  8 08:36:04 UTC 2025 -- Mon Dec  8 19:36:04 AEDT 2025
+  # sqlbilling 20251209.3
+  # Tue Dec  9 12:43:34 UTC 2025 -- Tue Dec  9 23:43:34 AEDT 2025
   #
-  # Merged PR 43066: Update IP readonly
-  # 0eaba4853a8806542c419abd36caf38c75b670ee
-  sqlbilling_build_id: '1544611'
+  # Merged PR 43144: AddSQLReadOnlyIP US2
+  # c9233f939b8e53f11b89a30bf748296b6c596d35
+  sqlbilling_build_id: '1545794'
