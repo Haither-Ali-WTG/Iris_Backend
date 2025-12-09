@@ -298,6 +298,8 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: tracking-premiointernational-com
           cms_resource_group: RG-US-Prod
+        - name: tracking_priorityworldwide_com
+          cms_resource_group: RG-US-Prod
         - name: trackingus_weidafreight_com
           cms_resource_group: RG-US-Prod
         - name: trackschott_airschott_com
