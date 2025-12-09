@@ -237,6 +237,8 @@ clustered_instances:
         - us2wp-sweb-413b.wisecloud.zone
         - us2wp-sweb-414a.wisecloud.zone
         - us2wp-sweb-414b.wisecloud.zone
+        - us2wp-sweb-499a.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wp-sweb-499b.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
       websites_config: prodcwservices.yml
       certificates:
@@ -365,6 +367,8 @@ clustered_instances:
         - us2wt-sweb-416b.test.wisecloud.zone
         - us2wt-sweb-417a.test.wisecloud.zone
         - us2wt-sweb-418a.test.wisecloud.zone
+        - us2wp-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wp-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
