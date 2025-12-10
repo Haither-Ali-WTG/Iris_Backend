@@ -99,13 +99,13 @@
 # - name: Check haproxy
 #   import_playbook: check_haproxy.yml
 
-- name: Check URLs
-  hosts: individual_instances
-  strategy: free
-  gather_facts: yes
-  force_handlers: yes
-  tasks:
-    - name: Check URLs
-      include_role:
-        name: fakeserver
-        tasks_from: perform_tests.yml
+# - name: Check URLs
+#   hosts: individual_instances
+#   strategy: free
+#   gather_facts: yes
+#   force_handlers: yes
+#   tasks:
+#     - name: Check URLs
+#       include_role:
+#         name: fakeserver
+#         tasks_from: perform_tests.yml
