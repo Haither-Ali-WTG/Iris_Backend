@@ -26,7 +26,7 @@ au.cww-nonprd.wisegrid.net-catchall:
     server AU2WT-SBLZ-404 10.2.73.24:80
 
 app-test-au.borderwise.com:
-  clustered_instances: [au2prodfrontend1testcdnservices]
+  clustered_instances: [au2prodfrontend1testcdnservices, au2prodfrontend1prodcdnservices31]
   cookie:
     name: APPTB
   http_health_check:
