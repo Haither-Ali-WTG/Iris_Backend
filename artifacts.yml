@@ -7,12 +7,12 @@ variables:
   # eeecaea0ccc591cfa0e5b355cf6ecbfab2aecb29
   dante_build_id: '1546204'
 
-  # virgil 20251210.5
-  # Tue Dec  9 22:07:59 UTC 2025 -- Wed Dec 10 09:07:59 AEDT 2025
+  # virgil 20251210.7
+  # Wed Dec 10 09:19:14 UTC 2025 -- Wed Dec 10 20:19:14 AEDT 2025
   #
-  # Merged PR 43114: Move registry-de to haproxy
-  # 978aef79db0ea7e92f6098e286aea8063fb92da5
-  virgil_build_id: '1546145'
+  # Merged PR 43146: Move unused network to a new backend
+  # b8a06cb53a3406d38bb46b89ee02badea80e543f
+  virgil_build_id: '1546690'
 
   # sqlbilling 20251210.1
   # Wed Dec 10 06:12:31 UTC 2025 -- Wed Dec 10 17:12:31 AEDT 2025
