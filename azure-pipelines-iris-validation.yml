@@ -12,31 +12,31 @@ jobs:
   - job: Iris_Validation_Per_Cluster
     strategy:
       matrix:
-            AU2_hall_A:
-              target_dc: AU2
-              agent_dc: AU2
-              hall: A
-              s3_host: au2s3-2.wtg.ws
-            DE1_hall_A:
-              target_dc: DE1
-              agent_dc: DE1
-              hall: A
-              s3_host: de1s3-2.wtg.ws
-            US2_hall_A:
-              target_dc: US2
-              agent_dc: US2
-              hall: A
-              s3_host: us2s3-2.wtg.ws
-            CN1_hall_A:
-              target_dc: CN1
-              agent_dc: AU2
-              hall: A
-              s3_host: au2s3-2.wtg.ws
-            SA1_hall_A:
-              target_dc: SA1
-              agent_dc: AU2
-              hall: A
-              s3_host: au2s3-2.wtg.ws
+        AU2_hall_A:
+          target_dc: AU2
+          agent_dc: AU2
+          hall: A
+          s3_host: au2s3-2.wtg.ws
+        DE1_hall_A:
+          target_dc: DE1
+          agent_dc: DE1
+          hall: A
+          s3_host: de1s3-2.wtg.ws
+        US2_hall_A:
+          target_dc: US2
+          agent_dc: US2
+          hall: A
+          s3_host: us2s3-2.wtg.ws
+        CN1_hall_A:
+          target_dc: CN1
+          agent_dc: AU2
+          hall: A
+          s3_host: au2s3-2.wtg.ws
+        SA1_hall_A:
+          target_dc: SA1
+          agent_dc: AU2
+          hall: A
+          s3_host: au2s3-2.wtg.ws
     pool:
       name: dante
       demands:
