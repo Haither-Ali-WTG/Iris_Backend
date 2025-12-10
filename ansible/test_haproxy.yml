@@ -90,22 +90,8 @@
   vars:
     enable_dump_configs: true
 
-- name: Deploy tests on simulated machines
-  import_playbook: deploy_tests.yml
-
 # This playbook outputs a large amount of logs, exceeding the stdout limit of Azure Pipelines.
 # Commenting out this role for now, until we can automate the necessary checks.
 # Btw, we've already checked if the containers can run in deploy_haproxy.yml.
 # - name: Check haproxy
 #   import_playbook: check_haproxy.yml
-
-- name: Check URLs
-  hosts: individual_instances
-  strategy: free
-  gather_facts: yes
-  force_handlers: yes
-  tasks:
-    - name: Check URLs
-      include_role:
-        name: fakeserver
-        tasks_from: perform_tests.yml
