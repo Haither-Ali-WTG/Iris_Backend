@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251209.2
-  # Tue Dec  9 02:55:23 UTC 2025 -- Tue Dec  9 13:55:23 AEDT 2025
+  # Dante Build Artifact 20251210.1
+  # Tue Dec  9 23:01:24 UTC 2025 -- Wed Dec 10 10:01:24 AEDT 2025
   #
-  # Merged PR 43113: add ntp.conf file to new location for CL5113
-  # 9c645e252f9c9eed213493937b282932aafc9fc3
-  dante_build_id: '1545365'
+  # Merge pull request 43149 from dante_artifact_upgrade into master
+  # eeecaea0ccc591cfa0e5b355cf6ecbfab2aecb29
+  dante_build_id: '1546204'
 
   # virgil 20251210.5
   # Tue Dec  9 22:07:59 UTC 2025 -- Wed Dec 10 09:07:59 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # 978aef79db0ea7e92f6098e286aea8063fb92da5
   virgil_build_id: '1546145'
 
-  # sqlbilling 20251209.3
-  # Tue Dec  9 12:43:34 UTC 2025 -- Tue Dec  9 23:43:34 AEDT 2025
+  # sqlbilling 20251210.1
+  # Wed Dec 10 06:12:31 UTC 2025 -- Wed Dec 10 17:12:31 AEDT 2025
   #
-  # Merged PR 43144: AddSQLReadOnlyIP US2
-  # c9233f939b8e53f11b89a30bf748296b6c596d35
-  sqlbilling_build_id: '1545794'
+  # Merged PR 43142: SQLBilling-Add-CS02166573.yml
+  # 1cb67d91404c8ece048f1da40679d8c3eb1589d2
+  sqlbilling_build_id: '1546572'
