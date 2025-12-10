@@ -1,7 +1,7 @@
 ---
 - name: Set keepalived stats yaml file
   set_fact:
-    keepalived_stats_yaml: "{{ playbook_dir }}/keepalived.stats.yaml"
+    keepalived_stats_yaml: "{{ playbook_dir }}/keepalived.stats.{{ inventory_hostname }}.yaml"
 
 - name: Remove old keepalived stats file
   file:
