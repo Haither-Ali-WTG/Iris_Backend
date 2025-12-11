@@ -41,9 +41,9 @@
 
 - name: Debug machine vips
   debug:
-    msg: >-
-      VIP in cluster {{ cluster_name }}
-      {{ machine_vips }}
+    msg: |
+      VIP in cluster {{ cluster_name }}:
+      {{ machine_vips | to_nice_yaml(indent=2) }}
 
 - name: Assert that all floating IPs are present in the VIP list
   assert:
