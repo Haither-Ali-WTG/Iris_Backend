@@ -16,19 +16,28 @@
   shell:
     cmd: |
       set -o pipefail
-      ip a | grep vrrp | grep -oE 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | awk '{print $2}' || echo ""
+      ip -4 a | grep vrrp | grep -oE 'inet ([0-9]{1,3}\.){3}[0-9]{1,3}' | awk '{print $2}'
     executable: /bin/bash
   changed_when: false
-  delegate_to: "{{ item }}"
+  delegate_to: "{{ host_in_cluster }}"
+  failed_when: false
   register: vrrp_ips
   loop: "{{ cluster_machines }}"
+  loop_control:
+    loop_var: host_in_cluster
   vars:
     cluster_machines: "{{ cluster_data[cluster_name]['machines'] | dict2items | map(attribute='key') | list }}"
 
 - name: Set machine vips
   set_fact:
-    machine_vips: "{{ machine_vips | default({}) | combine({item['item']: item['stdout_lines']}) }}"
-  loop: "{{ vrrp_ips.results }}"
+    machine_vips: >-
+      {{
+        machine_vips | default({}) |
+        combine({vrrp_result['host_in_cluster']: vrrp_result.get('stdout_lines', [])})
+      }}
+  loop: "{{ vrrp_ips.results | default([]) }}"
+  loop_control:
+    loop_var: vrrp_result
 
 - name: Debug machine vips
   debug:

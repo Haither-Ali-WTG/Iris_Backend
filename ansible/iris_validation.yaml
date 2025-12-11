@@ -1,0 +1,27 @@
+---
+- name: Target machines
+  import_playbook: target_machines.yaml
+
+- name: Augment the inventory
+  import_playbook: augment_inventory.yaml
+  vars:
+    enable_dynamic_backends: false
+
+- name: IRIS validation on the target machine
+  hosts: target_machines
+  tasks:
+    - name: Find cluster that contains the current host
+      set_fact:
+        cluster_name: "{{ item.key }}"
+      loop: "{{ machine_clusters | dict2items }}"
+      when: inventory_hostname in item.value.machines
+
+    - name: Check keepalived
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_keepalived.yml
+
+    - name: Check VIPs
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_vips.yml

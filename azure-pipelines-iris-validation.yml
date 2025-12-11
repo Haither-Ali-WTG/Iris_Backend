@@ -12,54 +12,35 @@ jobs:
   - job: Iris_Validation_Per_Cluster
     strategy:
       matrix:
-        au2-prod-frontend-1:
-          enabled: $(au2-prod-frontend-1_enabled)
-          dc: AU2
+        AU2_hall_A:
+          target_dc: AU2
+          agent_dc: AU2
           hall: A
-        au2-prod-internal-1:
-          enabled: $(au2-prod-internal-1_enabled)
-          dc: AU2
+          s3_host: au2s3-2.wtg.ws
+        DE1_hall_A:
+          target_dc: DE1
+          agent_dc: DE1
           hall: A
-        au2-sand-internal-1:
-          enabled: $(au2-sand-internal-1_enabled)
-          dc: AU2
+          s3_host: de1s3-2.wtg.ws
+        US2_hall_A:
+          target_dc: US2
+          agent_dc: US2
           hall: A
-        au2-sand-internal-2:
-          enabled: $(au2-sand-internal-2_enabled)
-          dc: AU2
+          s3_host: us2s3-2.wtg.ws
+        CN1_hall_A:
+          target_dc: CN1
+          agent_dc: AU2
           hall: A
-        au2-prod-elastic-bunker-1:
-          enabled: $(au2-prod-elastic-bunker-1_enabled)
-          dc: AU2
+          s3_host: au2s3-2.wtg.ws
+        SA1_hall_A:
+          target_dc: SA1
+          agent_dc: AU2
           hall: A
-        de1-prod-frontend-1:
-          enabled: $(de1-prod-frontend-1_enabled)
-          dc: DE1
-          hall: A
-        de1-prod-internal-1:
-          enabled: $(de1-prod-internal-1_enabled)
-          dc: DE1
-          hall: A
-        de1-prod-elastic-bunker-1:
-          enabled: $(de1-prod-elastic-bunker-1_enabled)
-          dc: DE1
-          hall: A
-        us2-prod-frontend-1:
-          enabled: $(us2-prod-frontend-1_enabled)
-          dc: US2
-          hall: A
-        us2-prod-elastic-bunker-1:
-          enabled: $(us2-prod-elastic-bunker-1_enabled)
-          dc: US2
-          hall: A
-        us2-corp-internal-1:
-          enabled: $(us2-corp-internal-1_enabled)
-          dc: US2
-          hall: A
+          s3_host: au2s3-2.wtg.ws
     pool:
       name: dante
       demands:
-        - WTG_DC -equals $(dc)
+        - WTG_DC -equals $(agent_dc)
         - WTG_HALL -equals $(hall)
 
     steps:
@@ -105,3 +86,19 @@ jobs:
           KeyVaultName: '$(key_vault_name)'
           SecretsFilter: secretAppIdDf4b4604e176
           RunAsPreJob: false
+
+      - task: Bash@3
+        displayName: 'Iris validation'
+        inputs:
+          targetType: 'inline'
+          script: |
+            set -euo pipefail
+            exec ansible-playbook \
+              ansible/iris_validation.yaml \
+              -i data/instances \
+              -u $(user) --diff \
+              -e="target_dc=$(target_dc)" -e="hall=$(hall)" \
+              -e="{simulation: true}"
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: false
+          secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
