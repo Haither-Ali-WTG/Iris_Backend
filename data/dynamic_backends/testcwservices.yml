@@ -31,8 +31,9 @@
 - name_regex: ^svc-[A-Za-z0-9]{6}\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
-    enabled: false
+    enabled: true
     http_path: "/"
+    check_expect: "200|401|403|302|405"
   port: 443
   cookie:
     name: WEBSVC
