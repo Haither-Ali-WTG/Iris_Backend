@@ -1268,18 +1268,6 @@ classificationassistant.cargowise.com:
       ip: 10.2.67.112
       port: 3000
 
-app-test-au.borderwise.com:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: APPTB
-  http_health_check:
-    enabled: true
-    http_path: /api/wtg/ready
-  servers:
-    - name: AU2WP-SDKR-1
-      ip: 10.2.67.111
-      port: 40035
-
 ausyd.transport.web:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
