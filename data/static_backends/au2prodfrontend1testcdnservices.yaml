@@ -19,6 +19,7 @@ au.cww-nonprd.wisegrid.net-catchall:
   full_override: |
     backend au_cww-nonprd_wisegrid_net-catchall
     option httpchk HEAD /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     default-server agent-check agent-port 8098
@@ -78,6 +79,7 @@ au.cww.wisetechglobal.com-catchall:
   full_override: |
     backend au_cww_wisetechglobal_com-catchall
     option httpchk HEAD /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     default-server agent-check agent-port 8098
@@ -688,6 +690,7 @@ cww-nonprd.wisegrid.net.catch.all:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+  balance: random
   servers:
     - name: AU2WT-SBLZ-001
       ip: 10.2.73.11
