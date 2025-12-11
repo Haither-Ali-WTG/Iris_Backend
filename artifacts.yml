@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251212.1
-  # Thu Dec 11 17:21:12 UTC 2025 -- Fri Dec 12 04:21:12 AEDT 2025
+  # Dante Build Artifact 20251212.2
+  # Thu Dec 11 19:01:24 UTC 2025 -- Fri Dec 12 06:01:24 AEDT 2025
   #
-  # Merge pull request 43257 from dante_artifact_upgrade into master
-  # 5ce894e1f6588835f0d206da17bddcdf28a44b8c
-  dante_build_id: '1548116'
+  # Merge pull request 43268 from dante_artifact_upgrade into master
+  # f9cccc7fa651d54d31ae7c7d1718fb8bb60446b3
+  dante_build_id: '1548224'
 
-  # virgil 20251212.2
-  # Thu Dec 11 16:44:31 UTC 2025 -- Fri Dec 12 03:44:31 AEDT 2025
+  # virgil 20251212.4
+  # Thu Dec 11 18:18:50 UTC 2025 -- Fri Dec 12 05:18:50 AEDT 2025
   #
-  # Merged PR 43147: Add CH7 network devices
-  # 59c5712e0e569ebfe1ab9cb91709f4816be0442d
-  virgil_build_id: '1548083'
+  # Merged PR 43251: created topic for wistech academy CS02156593
+  # e68ae174932b1f74e5fd12bd14dd84877f471a6e
+  virgil_build_id: '1548175'
 
   # sqlbilling 20251212.3
   # Thu Dec 11 16:14:13 UTC 2025 -- Fri Dec 12 03:14:13 AEDT 2025
