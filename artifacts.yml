@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251210.1
-  # Tue Dec  9 23:01:24 UTC 2025 -- Wed Dec 10 10:01:24 AEDT 2025
+  # Dante Build Artifact 20251210.2
+  # Wed Dec 10 10:02:43 UTC 2025 -- Wed Dec 10 21:02:43 AEDT 2025
   #
-  # Merge pull request 43149 from dante_artifact_upgrade into master
-  # eeecaea0ccc591cfa0e5b355cf6ecbfab2aecb29
-  dante_build_id: '1546204'
+  # Merge pull request 43188 from dante_artifact_upgrade into master
+  # 0dc052468ac27993c4b216cfb3768e99a33b9ba1
+  dante_build_id: '1546734'
 
   # virgil 20251210.7
   # Wed Dec 10 09:19:14 UTC 2025 -- Wed Dec 10 20:19:14 AEDT 2025
@@ -14,9 +14,9 @@ variables:
   # b8a06cb53a3406d38bb46b89ee02badea80e543f
   virgil_build_id: '1546690'
 
-  # sqlbilling 20251210.1
-  # Wed Dec 10 06:12:31 UTC 2025 -- Wed Dec 10 17:12:31 AEDT 2025
+  # sqlbilling 20251211.2
+  # Thu Dec 11 00:42:08 UTC 2025 -- Thu Dec 11 11:42:08 AEDT 2025
   #
-  # Merged PR 43142: SQLBilling-Add-CS02166573.yml
-  # 1cb67d91404c8ece048f1da40679d8c3eb1589d2
-  sqlbilling_build_id: '1546572'
+  # Merged PR 43211: Update Readonly for NXGPRD
+  # 01ad370975d11ddd48518766714b3c18e652e6f8
+  sqlbilling_build_id: '1547343'
