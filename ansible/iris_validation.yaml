@@ -25,3 +25,27 @@
       include_role:
         name: cluster_health_checks
         tasks_from: check_vips.yml
+
+- name: IRIS validation on the instances
+  hosts: individual_instances
+  tasks:
+    - name: Set container engine
+      include_role:
+        name: container_runner
+        tasks_from: define_engine.yml
+
+    - name: Check if container exists
+      command: >-
+        {{ engine }} ps
+        --filter "name=^/{{ clustered_instance_name }}$"
+        --filter "status=running"
+        --format '{{.Names}}'
+      become: yes
+      changed_when: false
+      register: docker_ps
+      failed_when: docker_ps.rc != 0
+
+    - name: Assert that the container is running
+      assert:
+        that: docker_ps.stdout != ''
+        fail_msg: "The {{ clustered_instance_name }} is NOT running!"
