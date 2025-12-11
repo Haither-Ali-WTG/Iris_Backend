@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251211.1
-  # Thu Dec 11 03:41:25 UTC 2025 -- Thu Dec 11 14:41:25 AEDT 2025
+  # Dante Build Artifact 20251211.2
+  # Thu Dec 11 05:21:06 UTC 2025 -- Thu Dec 11 16:21:06 AEDT 2025
   #
-  # Merge pull request 43221 from dante_artifact_upgrade into master
-  # ac4321177931737fe3bc827982cbe13e997a9b26
-  dante_build_id: '1547490'
+  # Merge pull request 43238 from dante_artifact_upgrade into master
+  # 31fd3ba5f66be8b58d5334ead3fcaf1103a24b89
+  dante_build_id: '1547619'
 
-  # virgil 20251211.3
-  # Thu Dec 11 03:01:54 UTC 2025 -- Thu Dec 11 14:01:54 AEDT 2025
+  # virgil 20251211.5
+  # Thu Dec 11 04:36:40 UTC 2025 -- Thu Dec 11 15:36:40 AEDT 2025
   #
-  # Merged PR 43220: Change C-00818 to "on demand"
-  # 184a2f8bc5f8c3f368a941e338786a2cd1a022c9
-  virgil_build_id: '1547454'
+  # Merged PR 43236: Round2 au2 switch upgrade targets
+  # 4cc074e2f24fd892f682dd818dff96184b52b943
+  virgil_build_id: '1547559'
 
   # sqlbilling 20251211.2
   # Thu Dec 11 00:42:08 UTC 2025 -- Thu Dec 11 11:42:08 AEDT 2025
