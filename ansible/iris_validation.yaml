@@ -37,7 +37,7 @@
     - name: Check if container is running
       command: >-
         {{ engine }} ps -q
-        --filter "name=^/{{ clustered_instance_name }}$"
+        --filter "name=^/iris_{{ clustered_instance_name }}_{{ machine_name }}$"
         --filter "status=running"
       become: yes
       changed_when: false
@@ -47,4 +47,4 @@
     - name: Assert that the container is running
       assert:
         that: docker_ps.stdout != ''
-        fail_msg: "The {{ clustered_instance_name }} is NOT running!"
+        fail_msg: "The iris_{{ clustered_instance_name }}_{{ machine_name }} is NOT running!"
