@@ -34,12 +34,11 @@
         name: container_runner
         tasks_from: define_engine.yml
 
-    - name: Check if container exists
+    - name: Check if container is running
       command: >-
-        {{ engine }} ps
+        {{ engine }} ps -q
         --filter "name=^/{{ clustered_instance_name }}$"
         --filter "status=running"
-        --format '{{.Names}}'
       become: yes
       changed_when: false
       register: docker_ps
