@@ -1,6 +1,14 @@
 ---
 trigger: none
 
+schedules:
+  - cron: "*/30 * * * *"
+    displayName: Every 30 minutes validate IRIS
+    always: true
+    branches:
+      include:
+        - master
+
 variables:
   - template: artifacts.yml
   - name: user
