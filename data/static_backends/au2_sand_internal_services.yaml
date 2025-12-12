@@ -364,22 +364,6 @@ sand-rdg-token.testrig.sand.wtg.zone:
       ip: 10.2.123.15
       port: 80
 
-sand-rdg-pass.testrig.sand.wtg.zone:
-  clustered_instances: [au2sandinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-  fullconn: 1000
-  servers:
-    - name: sydsp-srdg-3
-      ip: 10.2.68.15
-      port: 80
-    - name: sydsp-srdg-4
-      ip: 10.2.68.16
-      port: 80
-
 cs.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
