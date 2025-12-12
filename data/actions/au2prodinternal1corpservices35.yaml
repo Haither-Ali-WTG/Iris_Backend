@@ -8,6 +8,7 @@ https_redirect:
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
     - redirect scheme https if knowledge_mcp_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_cargowise_com !{ ssl_fc }
 
 restrict_iris_stats_url:
   description: |-

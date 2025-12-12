@@ -76,3 +76,8 @@ knowledge_mcp_wtg_zone:
     ## llm-gateway
     - hdr(host) -i llm-gateway.knowledge.wtg.zone
     - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
+
+star_cargowise_com:
+  description: "*.cargowise.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?cargowise\.com$

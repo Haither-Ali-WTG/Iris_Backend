@@ -1158,3 +1158,15 @@ cms-smartfreight.wtg.zone:
     - name: au2co-siis-403a
       ip: 10.2.69.36
       port: 80
+cms-dev.cargowise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  encryption: false
+  servers:
+    - name: AU2CO-SIIS-404A
+      ip: 10.2.69.40
+      port: 80
+      settings: check inter 10s downinter 1s fall 5 maxconn 8000
