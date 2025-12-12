@@ -9,12 +9,6 @@ sand-password-rdg-http:
   fullconn: 1000
   default_server: check port 5000
   servers:
-    - name: sydsp-srdg-3
-      ip: 10.2.68.15
-      port: 80
-    - name: sydsp-srdg-4
-      ip: 10.2.68.16
-      port: 80
     - name: au2sp-trdg-405
       ip: 10.2.123.21
       port: 80
@@ -32,9 +26,6 @@ sand-password-rdg-rpc:
   fullconn: 1000
   default_server: check port 5000
   servers:
-    - name: sydsp-srdg-3
-      ip: 10.2.68.15
-      port: 80
     - name: au2sp-trdg-405
       ip: 10.2.123.21
       port: 80
