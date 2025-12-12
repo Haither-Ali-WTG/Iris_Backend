@@ -55,7 +55,7 @@ custom_url_actions:
     - use_backend nlgmkc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i powerview.miq.com }
     - use_backend oiaglo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.oiaglobal.com }
     - use_backend p60prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.premiointernational.com }
-    - use_backend pwsbwi_webtracker.wisegrid_net if { hdr(host),field(1,:) -i tracking.priorityworldwide.com }
+    - use_backend pwsbwi_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.priorityworldwide.com }
     - use_backend pmlcax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.perimeterlogistics.com }
     - use_backend rkglax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.rktrac.com }
     - use_backend tarewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i login.tarraservices.com }
