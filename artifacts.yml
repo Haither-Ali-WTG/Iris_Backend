@@ -14,9 +14,9 @@ variables:
   # e68ae174932b1f74e5fd12bd14dd84877f471a6e
   virgil_build_id: '1548175'
 
-  # sqlbilling 20251212.5
-  # Fri Dec 12 03:23:05 UTC 2025 -- Fri Dec 12 14:23:05 AEDT 2025
+  # sqlbilling 20251214.1
+  # Sat Dec 13 17:58:16 UTC 2025 -- Sun Dec 14 04:58:16 AEDT 2025
   #
-  # Merged PR 43280: Update Ent Code L87 -> LDG
-  # 3a8b42080a777f2ed24b57dd472fb654f1907202
-  sqlbilling_build_id: '1548622'
+  # Merged PR 43300: AddSQLReadonlyIPs AU2 US2
+  # a62bd4090dd97b9a2f2923fa7b5917f631cb965c
+  sqlbilling_build_id: '1550115'
