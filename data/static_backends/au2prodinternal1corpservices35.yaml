@@ -805,7 +805,7 @@ wta-admin-staging.knowledge.wtg.zone:
       port: 30100
 # end of knowledge services
 # llm manager
-litellm.knowledge.wtg.zone:
+litellm.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -827,7 +827,7 @@ litellm.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-litellm-staging.knowledge.wtg.zone:
+litellm.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -849,7 +849,7 @@ litellm-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-manager.knowledge.wtg.zone:
+llm-manager.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -871,7 +871,7 @@ llm-manager.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-manager-staging.knowledge.wtg.zone:
+llm-manager.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -893,7 +893,7 @@ llm-manager-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-langfuse.knowledge.wtg.zone:
+langfuse.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -915,7 +915,7 @@ langfuse.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-langfuse-staging.knowledge.wtg.zone:
+langfuse.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -937,7 +937,7 @@ langfuse-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-gateway.knowledge.wtg.zone:
+llm-gateway.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -959,7 +959,7 @@ llm-gateway.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-gateway-staging.knowledge.wtg.zone:
+llm-gateway.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
