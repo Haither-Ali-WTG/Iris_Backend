@@ -3573,3 +3573,47 @@ new-am-nexus.rez1.com:
       ip: 10.4.204.13
       port: 8081
       settings: check
+
+alcm.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-prod-blumeglobal-hosting
+      ip: 10.4.240.17
+      port: 8080
+      settings: check
+
+direct.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-prod-blumeglobal-hosting
+      ip: 10.4.240.17
+      port: 8080
+      settings: check
+
+alcmtrain.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-uat-blumeglobal-hosting
+      ip: 10.4.242.49
+      port: 8080
+      settings: check
+
+train-direct.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-uat-blumeglobal-hosting
+      ip: 10.4.242.49
+      port: 8080
+      settings: check
