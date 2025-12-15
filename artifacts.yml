@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20251215.1
-  # Mon Dec 15 06:21:22 UTC 2025 -- Mon Dec 15 17:21:22 AEDT 2025
+  # Dante Build Artifact 20251216.1
+  # Mon Dec 15 19:01:02 UTC 2025 -- Tue Dec 16 06:01:02 AEDT 2025
   #
-  # Merge pull request 43306 from dante_artifact_upgrade into master
-  # 7b851a9b2e4d3abfd8197d5f1d2edb7f5b719cce
-  dante_build_id: '1551667'
+  # Merge pull request 43351 from dante_artifact_upgrade into master
+  # d3000d71fdcb532a14c95ea6c40c446abb523464
+  dante_build_id: '1552219'
 
-  # virgil 20251215.5
-  # Mon Dec 15 05:22:59 UTC 2025 -- Mon Dec 15 16:22:59 AEDT 2025
+  # virgil 20251216.2
+  # Mon Dec 15 18:20:59 UTC 2025 -- Tue Dec 16 05:20:59 AEDT 2025
   #
-  # Merged PR 43322: added wistechacademy test topic
-  # 34be3a229f3ad92dcf0b0e4bd304e5cf1c80bdb7
-  virgil_build_id: '1551602'
+  # Merge pull request 43342 from virgil_python_upgrade into master
+  # 9ed3d77786015b25b468ce489b3153b880fce78c
+  virgil_build_id: '1552169'
 
-  # sqlbilling 20251214.1
-  # Sat Dec 13 17:58:16 UTC 2025 -- Sun Dec 14 04:58:16 AEDT 2025
+  # sqlbilling 20251216.2
+  # Mon Dec 15 15:26:04 UTC 2025 -- Tue Dec 16 02:26:04 AEDT 2025
   #
-  # Merged PR 43300: AddSQLReadonlyIPs AU2 US2
-  # a62bd4090dd97b9a2f2923fa7b5917f631cb965c
-  sqlbilling_build_id: '1550115'
+  # Merged PR 43339: AddSQLReadonlyIP AU2
+  # 1a47a2e3f920f195a1059da28a206396c3269a27
+  sqlbilling_build_id: '1552039'
