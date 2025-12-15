@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251212.2
-  # Thu Dec 11 19:01:24 UTC 2025 -- Fri Dec 12 06:01:24 AEDT 2025
+  # Dante Build Artifact 20251215.1
+  # Mon Dec 15 06:21:22 UTC 2025 -- Mon Dec 15 17:21:22 AEDT 2025
   #
-  # Merge pull request 43268 from dante_artifact_upgrade into master
-  # f9cccc7fa651d54d31ae7c7d1718fb8bb60446b3
-  dante_build_id: '1548224'
+  # Merge pull request 43306 from dante_artifact_upgrade into master
+  # 7b851a9b2e4d3abfd8197d5f1d2edb7f5b719cce
+  dante_build_id: '1551667'
 
-  # virgil 20251212.4
-  # Thu Dec 11 18:18:50 UTC 2025 -- Fri Dec 12 05:18:50 AEDT 2025
+  # virgil 20251215.5
+  # Mon Dec 15 05:22:59 UTC 2025 -- Mon Dec 15 16:22:59 AEDT 2025
   #
-  # Merged PR 43251: created topic for wistech academy CS02156593
-  # e68ae174932b1f74e5fd12bd14dd84877f471a6e
-  virgil_build_id: '1548175'
+  # Merged PR 43322: added wistechacademy test topic
+  # 34be3a229f3ad92dcf0b0e4bd304e5cf1c80bdb7
+  virgil_build_id: '1551602'
 
   # sqlbilling 20251214.1
   # Sat Dec 13 17:58:16 UTC 2025 -- Sun Dec 14 04:58:16 AEDT 2025
