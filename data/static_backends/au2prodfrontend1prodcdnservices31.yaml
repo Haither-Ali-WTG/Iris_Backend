@@ -202,6 +202,7 @@ ehubgateway.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SEWG-401A
       ip: 10.2.69.38
@@ -217,6 +218,7 @@ ehub-integration.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SEWG-401A
       ip: 10.2.69.38
@@ -232,6 +234,7 @@ ofxcallback.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -247,6 +250,7 @@ ofxdealstatusws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -262,6 +266,7 @@ umpapi.borderwise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -277,6 +282,7 @@ ump.borderwise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -292,6 +298,7 @@ cpr.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: SYDWP-SWEB-11A
       ip: 10.2.67.9
@@ -307,6 +314,7 @@ api-ct.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -322,6 +330,7 @@ api-ais.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -337,6 +346,7 @@ dpsv4.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SDPS-401A
       ip: 10.2.69.14
@@ -352,6 +362,7 @@ rongjinsearchinvoicews.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -367,6 +378,7 @@ abe.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -382,6 +394,7 @@ auth.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /health
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -397,6 +410,7 @@ creditreport.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -427,6 +441,7 @@ fms.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /api/v1/airevents/ping
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -442,6 +457,7 @@ gbcds.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -457,6 +473,7 @@ gbcdsws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -472,6 +489,7 @@ gss.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -487,6 +505,7 @@ onerecord.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -502,6 +521,7 @@ rates.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -517,6 +537,7 @@ twcws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -548,6 +569,7 @@ avsbackground.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /v2/GetServiceStatus
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -563,6 +585,7 @@ urs.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /health
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -578,6 +601,7 @@ koreantscallback.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -593,6 +617,7 @@ refdbrepo.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -608,6 +633,7 @@ refdbrepotest.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -623,6 +649,7 @@ refdbrepo-test.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -638,6 +665,7 @@ addresscleansing.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -653,6 +681,7 @@ enrichment.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -668,6 +697,7 @@ rope.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /api/v1/MonitoredHealth
+    check_expect: '200|401|403'
   servers:
     - name: au2wp-siis-401a
       ip: 10.2.69.12
@@ -683,6 +713,7 @@ app.borderwise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -696,6 +727,7 @@ myaccount.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /en-us/Public.aspx
+    check_expect: '200|301|302'
   servers:
     - name: AU2CO-SIIS-405A
       ip: 10.2.69.46
@@ -710,6 +742,7 @@ myaccount-portal.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /myaccount/Login/LoginLite.aspx
+    check_expect: '200|301|302'
   servers:
     - name: AU2CO-SIIS-405A
       ip: 10.2.69.46
@@ -724,6 +757,7 @@ myaccount-portal.cargowise.com.glow:
   http_health_check:
     enabled: true
     http_path: /Glow/wtg/ready
+    check_expect: '200|301|302'
   servers:
     - name: AU2CO-SIIS-405A
       ip: 10.2.69.46
@@ -738,6 +772,7 @@ myaccount-portal.cargowise.com.portals:
   http_health_check:
     enabled: true
     http_path: /Portals/wtg/ready
+    check_expect: '200|301|302'
   servers:
     - name: AU2CO-SIIS-405A
       ip: 10.2.69.46
@@ -753,6 +788,7 @@ portconnect.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -769,6 +805,7 @@ webservices.wisetechglobal.com:
   http_health_check:
     enabled: true
     http_path: /Glow/wtg/ready
+    check_expect: '200|400'
   servers:
     - name: AU2CO-SIIS-405A
       ip: 10.2.69.46
@@ -784,6 +821,7 @@ errors.cargowise.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-siis-401a
       ip: 10.2.69.12
@@ -799,6 +837,7 @@ philippineseiscallbackservice.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -812,6 +851,7 @@ xt-international-service1.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|301|302|401|404'
   servers:
     - name: AU2WP-SXTR-401
       ip: 10.2.70.25
@@ -824,6 +864,7 @@ s8.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200|404'
   servers:
     - name: AU2WP-SS8C-401
       ip: 10.2.69.107
@@ -839,6 +880,7 @@ s8a.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200|404'
   servers:
     - name: AU2WP-SS8C-401
       ip: 10.2.69.107
@@ -851,6 +893,7 @@ s8b.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200|404'
   servers:
     - name: AU2WP-SS8C-402
       ip: 10.2.69.108
@@ -863,6 +906,7 @@ cargoliveposition.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sdkr-402a
       ip: 10.2.88.137
@@ -878,6 +922,7 @@ ec.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -893,6 +938,7 @@ airmessaging.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-401A
       ip: 10.2.69.12
@@ -908,6 +954,7 @@ xt-healthcheck.cargowise.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: au2wp-siis-401a
       ip: 10.2.69.12
@@ -923,6 +970,7 @@ cmb.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -938,6 +986,7 @@ ccds.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-403A
       ip: 10.2.69.21
@@ -953,6 +1002,7 @@ vt.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-402A
       ip: 10.2.88.137
@@ -968,6 +1018,7 @@ api-vt.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-402A
       ip: 10.2.88.137
@@ -983,6 +1034,7 @@ gbcnsws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|403'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -998,6 +1050,7 @@ gbtlws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -1013,6 +1066,7 @@ gbpentantws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -1028,6 +1082,7 @@ gbmcpws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
       ip: 10.2.69.29
@@ -1043,6 +1098,7 @@ ehubgateway.cargowise.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SEWG-401A
       ip: 10.2.69.38
@@ -1058,6 +1114,7 @@ ehub-integration.cargowise.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SEWG-401A
       ip: 10.2.69.38
@@ -1071,6 +1128,7 @@ xt-eidas-gwy.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|301|302|401|404'
   servers:
     - name: AU2WP-SXTR-402
       ip: 10.2.70.26
@@ -1081,6 +1139,7 @@ romaniaoauthcs.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1096,6 +1155,7 @@ cww.wisegrid.net.catch.all:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SBLZ-001
       ip: 10.2.72.11
@@ -1121,6 +1181,7 @@ mheservice.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1134,6 +1195,7 @@ israeloauthcs.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1149,6 +1211,7 @@ oauthcs.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1162,6 +1225,7 @@ customsconnector.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1175,6 +1239,7 @@ xt-customs-brpushnotification.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|301|302|401|403'
   servers:
     - name: AU2WP-SXTR-402
       ip: 10.2.70.26
@@ -1185,6 +1250,7 @@ egypteinvoicing.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
@@ -1200,6 +1266,7 @@ cargo.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-402A
       ip: 10.2.88.137
@@ -1215,6 +1282,7 @@ identity.wisetechglobal.com.login:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sidi-501a
       ip: 10.2.143.11
@@ -1230,6 +1298,7 @@ identity.wisetechglobal.com.s2s:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sidi-501a
       ip: 10.2.143.11
@@ -1245,6 +1314,7 @@ identity.wisetechglobal.com.account:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sidi-501a
       ip: 10.2.143.11
@@ -1260,6 +1330,7 @@ classificationassistant.cargowise.com:
   http_health_check:
     enabled: true
     http_path: /api/wtg/ready
+    check_expect: '200'
   servers:
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
@@ -1275,6 +1346,7 @@ ausyd.transport.web:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sdkr-501b--web1
       ip: 10.2.67.57
@@ -1290,6 +1362,7 @@ ausyd.transport.api:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
+    check_expect: '200'
   servers:
     - name: au2wp-sdkr-501b--api1
       ip: 10.2.67.57
@@ -1305,6 +1378,7 @@ ocmbe.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
