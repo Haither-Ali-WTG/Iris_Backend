@@ -4,6 +4,7 @@ us.cww-nonprd.wisegrid.net-catchall:
   full_override: |
     backend us_cww-nonprd_wisegrid_net-catchall
     option httpchk HEAD /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     default-server agent-check agent-port 8098
