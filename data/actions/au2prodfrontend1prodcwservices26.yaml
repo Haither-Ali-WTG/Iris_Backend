@@ -35,6 +35,7 @@ custom_url_actions:
     ### CFS
     - use_backend citmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.citotransport.com.au }
     - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.navia.com.au }
+    - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i nlpmel2.cfs.wisegrid.net }
     - use_backend outmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i unpacks.thecargowarehouse.com.au }
     - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
     ### Webtracker
