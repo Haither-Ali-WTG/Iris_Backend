@@ -442,6 +442,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: webtrack_axima_com_au
           cms_resource_group: RG-AU-Prod
+        - name: webtrack_gava_com_au
+          cms_resource_group: RG-AU-Prod
         - name: webtracker_famous_com_sg
           cms_resource_group: RG-AU-Prod
         - name: webtracker_fsmac_com

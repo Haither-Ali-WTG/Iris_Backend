@@ -34,6 +34,8 @@ custom_url_actions:
   actions:
     ### CFS
     - use_backend citmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.citotransport.com.au }
+    - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.navia.com.au }
+    - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i nlpmel2.cfs.wisegrid.net }
     - use_backend outmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i unpacks.thecargowarehouse.com.au }
     - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
     ### Webtracker
@@ -55,7 +57,9 @@ custom_url_actions:
     - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.fsmac.com }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.fracht.com.au }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
+    - use_backend giasyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.gava.com.au }
     - use_backend gvlhst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.gvi.co.nz }
+    - use_backend hglsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.pch.com.au }
     - use_backend hi0prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i missioncontrol.hiltons.co.nz }
     - use_backend icesyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.icecargo.com.au }
     - use_backend jjlsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.jjlawson.com.au }
