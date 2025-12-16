@@ -45,6 +45,7 @@ custom_url_actions:
     - use_backend ctoent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.cargotours.com }
     - use_backend de1jfk_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.delmarcargo.com }
     - use_backend dgazor_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.daystarglobal.com }
+    - use_backend dhxlax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i myportal.dgxglobal.com }
     - use_backend djsdfw_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.djsintl.com }
     - use_backend fgssmy_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.falconeglobal.com }
     - use_backend jjbsfo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i jjbtrak.jjboyle.com }
