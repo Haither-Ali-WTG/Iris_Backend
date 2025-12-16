@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251216.1
-  # Mon Dec 15 19:01:02 UTC 2025 -- Tue Dec 16 06:01:02 AEDT 2025
+  # Dante Build Artifact 20251216.2
+  # Tue Dec 16 01:01:14 UTC 2025 -- Tue Dec 16 12:01:14 AEDT 2025
   #
-  # Merge pull request 43351 from dante_artifact_upgrade into master
-  # d3000d71fdcb532a14c95ea6c40c446abb523464
-  dante_build_id: '1552219'
+  # Merge pull request 43367 from dante_artifact_upgrade into master
+  # ead0f1a09ee30ed4f58a899976a00eeb2ea136ea
+  dante_build_id: '1552544'
 
-  # virgil 20251216.2
-  # Mon Dec 15 18:20:59 UTC 2025 -- Tue Dec 16 05:20:59 AEDT 2025
+  # virgil 20251216.4
+  # Tue Dec 16 00:03:22 UTC 2025 -- Tue Dec 16 11:03:22 AEDT 2025
   #
-  # Merge pull request 43342 from virgil_python_upgrade into master
-  # 9ed3d77786015b25b468ce489b3153b880fce78c
-  virgil_build_id: '1552169'
+  # Merged PR 43334: update-au2wp-svir-022-to-vmware
+  # 1370c601acf37ea13159b4ad295e8cb756695211
+  virgil_build_id: '1552474'
 
   # sqlbilling 20251216.2
   # Mon Dec 15 15:26:04 UTC 2025 -- Tue Dec 16 02:26:04 AEDT 2025
