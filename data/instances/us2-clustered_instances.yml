@@ -497,6 +497,7 @@ clustered_instances:
         - name: star-tmssaas-com
           cms_resource_group: RG-US-Prod
         - name: star-livesource-com
+          cms_resource_group: RG-US-Prod
         - name: star-rez1-com
           cms_resource_group: RG-US-Prod
       cipher:
