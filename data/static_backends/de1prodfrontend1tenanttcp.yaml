@@ -5,5 +5,5 @@ sft.aktivdata.fi:
     enabled: false
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 22

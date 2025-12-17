@@ -24,7 +24,7 @@ dmesx.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 1304
 
 oauth.aktivdata.fi:
@@ -38,7 +38,7 @@ oauth.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 3607
 
 transit.aktivdata.fi:
@@ -52,7 +52,7 @@ transit.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 3749
 
 pdf-v.aktivdata.fi:
@@ -66,7 +66,7 @@ pdf-v.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 5615
 
 dkaizen.aktivdata.fi:
@@ -80,7 +80,7 @@ dkaizen.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 6199
 
 victorek-ntraxrio.aktivdata.fi:
@@ -94,7 +94,7 @@ victorek-ntraxrio.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 6595
 
 ntrax.aktivdata.fi:
@@ -108,7 +108,7 @@ ntrax.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 8499
 
 steveco-ntrax.aktivdata.fi:
@@ -122,7 +122,7 @@ steveco-ntrax.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 8999
 
 katepal-ntraxrio.aktivdata.fi:
@@ -136,7 +136,7 @@ katepal-ntraxrio.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 12559
 
 xinv.aktivdata.fi:
@@ -150,7 +150,7 @@ xinv.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 23011
 
 ntraxio.aktivdata.fi:
@@ -164,7 +164,7 @@ ntraxio.aktivdata.fi:
   encryption: true
   servers:
     - name: DE1FL0APPW001
-      ip: 10.3.231.16
+      ip: 10.3.232.16
       port: 29525
 
 xedi1.acoinformatica.it:
