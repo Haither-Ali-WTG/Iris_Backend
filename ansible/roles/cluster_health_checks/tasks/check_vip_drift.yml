@@ -2,8 +2,8 @@
 - name: Set paths for checking VIP drift
   set_fact:
     vip_workdir: "{{ playbook_dir }}/vip_drift"
-    vip_baseline_path: "{{ vip_workdir }}/{{ inventory_hostname }}"
-    vip_current_path:  "{{ vip_workdir }}/{{ inventory_hostname }}.current"
+    vip_baseline_path: "{{ playbook_dir }}/vip_drift/{{ inventory_hostname }}"
+    vip_current_path:  "{{ playbook_dir }}/vip_drift/{{ inventory_hostname }}.current"
     vip_s3_dir: "{{ s3_iris_bucket }}/vip-{{ target_dc }}"
 
 - name: Create directory for VIP
