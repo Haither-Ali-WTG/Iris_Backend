@@ -49,6 +49,7 @@
   command: diff -q "{{ vip_baseline_path }}" "{{ vip_current_path }}"
   register: diff_result
   changed_when: false
+  delegate_to: localhost
 
 - name: Display changes
   fail:
