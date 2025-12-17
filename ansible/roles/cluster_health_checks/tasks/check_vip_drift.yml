@@ -20,6 +20,7 @@
     proxy_host: "{{ s3_proxy_host | default('') }}"
     proxy_port: "{{ s3_proxy_port | default('') }}"
     pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+  delegate_to: localhost
 
 - name: Download baseline VIP files from S3
   command: >-
