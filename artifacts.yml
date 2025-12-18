@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251216.3
-  # Tue Dec 16 04:02:09 UTC 2025 -- Tue Dec 16 15:02:09 AEDT 2025
+  # Dante Build Artifact 20251219.1
+  # Thu Dec 18 23:01:19 UTC 2025 -- Fri Dec 19 10:01:19 AEDT 2025
   #
-  # Merged PR 43386: feat: move elastic agent kafka support codes from elastic-agent role to dante.
-  # 02453df49feb608080821f9b9a8f5a3698d9b565
-  dante_build_id: '1552722'
+  # Merge pull request 43418 from dante_artifact_upgrade into master
+  # fafc639e8d90f5588e7fde5c5fbaa2e654fe17bf
+  dante_build_id: '1555557'
 
   # virgil 20251219.1
   # Thu Dec 18 22:08:57 UTC 2025 -- Fri Dec 19 09:08:57 AEDT 2025
