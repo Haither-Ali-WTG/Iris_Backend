@@ -455,3 +455,13 @@ blume_nexus_restrict_ip:
   order: 86
   actions:
     - http-request deny if !wtg_src new-am-nexus_rez1_com
+
+rez1_root_redirect:
+  description: |-
+    Redirect root path (/) to /externalx/ for rez1.com domains
+  order: 87
+  actions:
+    - http-request redirect location /externalx/ code 301 if rez1_root_path alcm_rez1_com
+    - http-request redirect location /externalx/ code 301 if rez1_root_path direct_rez1_com
+    - http-request redirect location /externalx/ code 301 if rez1_root_path alcmtrain_rez1_com
+    - http-request redirect location /externalx/ code 301 if rez1_root_path train-direct_rez1_com
