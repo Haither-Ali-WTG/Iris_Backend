@@ -7,16 +7,16 @@ variables:
   # 02453df49feb608080821f9b9a8f5a3698d9b565
   dante_build_id: '1552722'
 
-  # virgil 20251216.4
-  # Tue Dec 16 00:03:22 UTC 2025 -- Tue Dec 16 11:03:22 AEDT 2025
+  # virgil 20251217.8
+  # Wed Dec 17 01:35:56 UTC 2025 -- Wed Dec 17 12:35:56 AEDT 2025
   #
-  # Merged PR 43334: update-au2wp-svir-022-to-vmware
-  # 1370c601acf37ea13159b4ad295e8cb756695211
-  virgil_build_id: '1552474'
+  # Merged PR 43412: added new user and topics for wisebeat CS02163830
+  # 6e5fa8f19563b8a2a8ac7c1d24292f85c3c0175c
+  virgil_build_id: '1553646'
 
-  # sqlbilling 20251216.2
-  # Mon Dec 15 15:26:04 UTC 2025 -- Tue Dec 16 02:26:04 AEDT 2025
+  # sqlbilling 20251217.2
+  # Wed Dec 17 02:28:53 UTC 2025 -- Wed Dec 17 13:28:53 AEDT 2025
   #
-  # Merged PR 43339: AddSQLReadonlyIP AU2
-  # 1a47a2e3f920f195a1059da28a206396c3269a27
-  sqlbilling_build_id: '1552039'
+  # Merged PR 43413: Update SQL billing
+  # cac457c8b27a84d5320fa9cac6b0936fad36f2d1
+  sqlbilling_build_id: '1553680'
