@@ -72,3 +72,19 @@ runtimeapi-us2.cwconnector.wisegrid.net:
     - name: us2wp-scwi-405b
       ip: 10.4.88.156
       port: 5443
+
+cs.wtg.zone:
+  clustered_instances: [us2prodinternal1services30]
+  cookie:
+    name: wtgcs
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: us2wp-siis-407a
+      ip: 10.4.67.90
+      port: 443
+    - name: us2wp-siis-407b
+      ip: 10.4.67.91
+      port: 443
