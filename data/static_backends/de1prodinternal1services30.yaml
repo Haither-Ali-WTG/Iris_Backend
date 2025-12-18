@@ -288,3 +288,19 @@ peppol-ap-prod-service.wisetechglobal.com:
     - name: de1wp-spap-401
       ip: 10.3.69.130
       port: 18080
+
+cs.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  cookie:
+    name: wtgcs
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: de1wp-siis-407a
+      ip: 10.3.69.90
+      port: 443
+    - name: de1wp-siis-407b
+      ip: 10.3.69.91
+      port: 443
