@@ -291,8 +291,6 @@ peppol-ap-prod-service.wisetechglobal.com:
 
 cs.wtg.zone:
   clustered_instances: [de1prodinternal1services30]
-  cookie:
-    name: wtgcs
   http_health_check:
     enabled: true
     http_path: /wtg/ready
