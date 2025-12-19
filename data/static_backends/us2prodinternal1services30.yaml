@@ -75,8 +75,6 @@ runtimeapi-us2.cwconnector.wisegrid.net:
 
 cs.wtg.zone:
   clustered_instances: [us2prodinternal1services30]
-  cookie:
-    name: wtgcs
   http_health_check:
     enabled: true
     http_path: /wtg/ready
