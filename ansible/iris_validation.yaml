@@ -7,6 +7,15 @@
   vars:
     enable_dynamic_backends: false
 
+- name: Setup localhost for s3
+  hosts: localhost
+  tasks:
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+
 - name: IRIS validation on the target machine
   hosts: target_machines
   tasks:
@@ -25,6 +34,11 @@
       include_role:
         name: cluster_health_checks
         tasks_from: check_vips.yml
+
+    - name: Check VIP drift
+      include_role:
+        name: cluster_health_checks
+        tasks_from: check_vip_drift.yml
 
 - name: IRIS validation on the instances
   hosts: individual_instances
