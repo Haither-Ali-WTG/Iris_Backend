@@ -257,7 +257,7 @@ stages:
               ANSIBLE_DIFF_ALWAYS: $(ansible_diff_always)
 
           - publish: $(Build.SourcesDirectory)/iris/generated_configs/$(simulation_dc)
-            artifact: configs_$(simulation_dc)
+            artifact: configs_$(simulation_dc)_attempt$(System.JobAttempt)
             displayName: 'Publish configs for $(simulation_dc)'
             condition: always()
 
