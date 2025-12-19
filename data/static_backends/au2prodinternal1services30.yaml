@@ -157,3 +157,19 @@ customsconnector-internal.wisegrid.net:
     - name: AU2WP-SIIS-402B
       ip: 10.2.69.17
       port: 80
+
+cs.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: wtgcs
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2wp-siis-407a
+      ip: 10.2.69.90
+      port: 443
+    - name: au2wp-siis-407b
+      ip: 10.2.69.91
+      port: 443
