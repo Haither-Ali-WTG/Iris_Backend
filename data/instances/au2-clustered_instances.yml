@@ -575,7 +575,7 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
-         - name: star-cargowise-net
+        - name: star-cargowise-net
           cms_resource_group: RG-AU-Corp
         - name: star-cargowise-net
           cms_resource_group: RG-AU-Corp
