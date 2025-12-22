@@ -1,5 +1,3 @@
 ---
 # Note: group_vars/all must be a directory, as we have other group_vars/all/*.yaml files
 # from the `iris` artifact
-
-docker_pull_lock: /tmp/docker_pull_lock
