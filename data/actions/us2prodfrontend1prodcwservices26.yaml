@@ -52,7 +52,6 @@ custom_url_actions:
     - use_backend jscbwi_webtracker_wisegrid_net if { hdr(host),field(1,:) -i connortrac.jsconnor.com }
     - use_backend lakprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.jetparkwarehouse.com }
     - use_backend lopent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i eworldplus.com }
-    - use_backend md2prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cargowise.mardom.com }
     - use_backend nlgmkc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i powerview.miq.com }
     - use_backend oiaglo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.oiaglobal.com }
     - use_backend p60prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.premiointernational.com }
