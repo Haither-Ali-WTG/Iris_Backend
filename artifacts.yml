@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251223.3
-  # Tue Dec 23 00:41:25 UTC 2025 -- Tue Dec 23 11:41:25 AEDT 2025
+  # Dante Build Artifact 20251223.4
+  # Tue Dec 23 04:41:02 UTC 2025 -- Tue Dec 23 15:41:02 AEDT 2025
   #
-  # Merge pull request 43532 from dante_artifact_upgrade into master
-  # ada7df978362ec6abbd4fdbf6f059de872096366
-  dante_build_id: '1559554'
+  # Merge pull request 43557 from dante_artifact_upgrade into master
+  # 3ec3c09f9b320b417519f5c651485e6e93362306
+  dante_build_id: '1559763'
 
-  # virgil 20251223.4
-  # Mon Dec 22 23:04:13 UTC 2025 -- Tue Dec 23 10:04:13 AEDT 2025
+  # virgil 20251223.6
+  # Tue Dec 23 03:59:05 UTC 2025 -- Tue Dec 23 14:59:05 AEDT 2025
   #
-  # Merged PR 43531: added topic metrics-sql-custom-query
-  # c176e9a2710ebb0654e2ff17138bf58a9ef94e8e
-  virgil_build_id: '1559446'
+  # Merged PR 43555: fixed referencing error
+  # b0aaa54ff5fc9deb5cf14580873e13a419584a05
+  virgil_build_id: '1559713'
 
   # sqlbilling 20251223.2
   # Tue Dec 23 01:53:37 UTC 2025 -- Tue Dec 23 12:53:37 AEDT 2025
