@@ -11,6 +11,29 @@ devops-test.wtg.zone:
       port: 443
       settings: check check-ssl ssl sni str(devops-test.wtg.zone) check-sni devops-test.wtg.zone
 
+au-tst.apigw.wtg.ws:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: false
+    http_path: /
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2test1
+      ip: 10.2.215.12
+      port: 30100
+    - name: w2.au2test1
+      ip: 10.2.215.13
+      port: 30100
+    - name: w3.au2test1
+      ip: 10.2.215.14
+      port: 30100
+    - name: w4.au2test1
+      ip: 10.2.215.15
+      port: 30100
+    - name: w5.au2test1
+      ip: 10.2.215.16
+      port: 30100
+
 au2corprdg.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
