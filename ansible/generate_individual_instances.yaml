@@ -221,8 +221,10 @@
       set_fact:
         container_images: >-
           {{
-            container_images | default([])
-            + [hostvars[item].container.haproxy_image_tag] | sort | unique
+            (
+              container_images | default([])
+              + [hostvars[item].container.haproxy_image_tag]
+            ) | unique | list
           }}
       loop: "{{ groups.individual_instances | default([]) }}"
       when: hostvars[item].machine_name == inventory_hostname
