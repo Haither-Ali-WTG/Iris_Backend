@@ -84,6 +84,14 @@
         name: docker_namespaces
       when: 'os_variant == "ubuntu"'
 
+    - name: Pre-pull container images
+      command: >-
+        {{ engine }} pull wtgopstools.azurecr.io/dante/haproxy:{{ item }}
+      become: yes
+      changed_when: false
+      loop: "{{ container_images }}"
+      when: simulation
+
 - name: Setup the individual instances
   hosts: individual_instances
   gather_facts: no
