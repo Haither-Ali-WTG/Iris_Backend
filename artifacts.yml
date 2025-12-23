@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20251223.2
-  # Mon Dec 22 23:52:47 UTC 2025 -- Tue Dec 23 10:52:47 AEDT 2025
+  # Dante Build Artifact 20251223.3
+  # Tue Dec 23 00:41:25 UTC 2025 -- Tue Dec 23 11:41:25 AEDT 2025
   #
-  # Merged PR 43537: update rsyslog conf for cumulus switches to include port 9100
-  # 2f41491742c2adcb2b4e2763411f61ec8b756fa9
-  dante_build_id: '1559480'
+  # Merge pull request 43532 from dante_artifact_upgrade into master
+  # ada7df978362ec6abbd4fdbf6f059de872096366
+  dante_build_id: '1559554'
 
   # virgil 20251223.4
   # Mon Dec 22 23:04:13 UTC 2025 -- Tue Dec 23 10:04:13 AEDT 2025
