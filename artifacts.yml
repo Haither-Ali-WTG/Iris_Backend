@@ -14,9 +14,9 @@ variables:
   # b0aaa54ff5fc9deb5cf14580873e13a419584a05
   virgil_build_id: '1559713'
 
-  # sqlbilling 20251223.2
-  # Tue Dec 23 01:53:37 UTC 2025 -- Tue Dec 23 12:53:37 AEDT 2025
+  # sqlbilling 20251227.3
+  # Fri Dec 26 22:33:55 UTC 2025 -- Sat Dec 27 09:33:55 AEDT 2025
   #
-  # Merged PR 43551: Update READONLY ip
-  # 2f0637f82439b2a94b7987f252b66c8d7db721ad
-  sqlbilling_build_id: '1559621'
+  # Merged PR 43578: Updated us2-prod-frontend-1.yml
+  # 4cf659a57773d8f93596baa481d8f4e1d13854a4
+  sqlbilling_build_id: '1563227'
