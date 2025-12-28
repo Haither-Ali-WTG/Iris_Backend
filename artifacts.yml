@@ -7,12 +7,12 @@ variables:
   # 3ec3c09f9b320b417519f5c651485e6e93362306
   dante_build_id: '1559763'
 
-  # virgil 20251223.6
-  # Tue Dec 23 03:59:05 UTC 2025 -- Tue Dec 23 14:59:05 AEDT 2025
+  # virgil 20251229.4
+  # Sun Dec 28 21:42:04 UTC 2025 -- Mon Dec 29 08:42:04 AEDT 2025
   #
-  # Merged PR 43555: fixed referencing error
-  # b0aaa54ff5fc9deb5cf14580873e13a419584a05
-  virgil_build_id: '1559713'
+  # Merged PR 43580: added Evase user under cs02179648
+  # 441ec009e2aa8e74fb50b33da1e86fb8ce486dde
+  virgil_build_id: '1565048'
 
   # sqlbilling 20251227.3
   # Fri Dec 26 22:33:55 UTC 2025 -- Sat Dec 27 09:33:55 AEDT 2025
