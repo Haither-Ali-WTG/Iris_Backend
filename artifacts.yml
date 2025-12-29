@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20251229.1
-  # Sun Dec 28 22:41:22 UTC 2025 -- Mon Dec 29 09:41:22 AEDT 2025
+  # Dante Build Artifact 20251230.1
+  # Mon Dec 29 19:01:02 UTC 2025 -- Tue Dec 30 06:01:02 AEDT 2025
   #
-  # Merge pull request 43581 from dante_artifact_upgrade into master
-  # d2420b0e9253bfaf0c8871375114a230b68a55f9
-  dante_build_id: '1565103'
+  # Merge pull request 43609 from dante_artifact_upgrade into master
+  # 88c4a375341185eabf24c83b9110413767932e5b
+  dante_build_id: '1565968'
 
-  # virgil 20251229.4
-  # Sun Dec 28 21:42:04 UTC 2025 -- Mon Dec 29 08:42:04 AEDT 2025
+  # virgil 20251230.3
+  # Mon Dec 29 18:21:24 UTC 2025 -- Tue Dec 30 05:21:24 AEDT 2025
   #
-  # Merged PR 43580: added Evase user under cs02179648
-  # 441ec009e2aa8e74fb50b33da1e86fb8ce486dde
-  virgil_build_id: '1565048'
+  # Merge pull request 43599 from virgil_python_upgrade into master
+  # 3d64abbc87d84e3ee67919017359fbab03617094
+  virgil_build_id: '1565918'
 
   # sqlbilling 20251227.3
   # Fri Dec 26 22:33:55 UTC 2025 -- Sat Dec 27 09:33:55 AEDT 2025
