@@ -14,9 +14,9 @@ variables:
   # 3d64abbc87d84e3ee67919017359fbab03617094
   virgil_build_id: '1565918'
 
-  # sqlbilling 20251230.2
-  # Mon Dec 29 19:52:29 UTC 2025 -- Tue Dec 30 06:52:29 AEDT 2025
+  # sqlbilling 20251230.5
+  # Mon Dec 29 23:50:14 UTC 2025 -- Tue Dec 30 10:50:14 AEDT 2025
   #
-  # Merged PR 43598: Add new IPs per CS02185585
-  # 8418a4d3c140831b4e31b243bb089e3dfa28fb5f
-  sqlbilling_build_id: '1566013'
+  # Merged PR 43622: Update SQLredaonly
+  # c062ba27a3c09fec7776d0eb59c7c881801a2f30
+  sqlbilling_build_id: '1566179'
