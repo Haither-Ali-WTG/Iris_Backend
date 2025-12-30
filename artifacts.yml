@@ -7,12 +7,12 @@ variables:
   # 88c4a375341185eabf24c83b9110413767932e5b
   dante_build_id: '1565968'
 
-  # virgil 20251230.3
-  # Mon Dec 29 18:21:24 UTC 2025 -- Tue Dec 30 05:21:24 AEDT 2025
+  # virgil 20251231.1
+  # Tue Dec 30 17:25:01 UTC 2025 -- Wed Dec 31 04:25:01 AEDT 2025
   #
-  # Merge pull request 43599 from virgil_python_upgrade into master
-  # 3d64abbc87d84e3ee67919017359fbab03617094
-  virgil_build_id: '1565918'
+  # Merged PR 43575: Repurpose S31s
+  # a89eb2975359db3ab9ed422cb9c3955e637bb8b9
+  virgil_build_id: '1566856'
 
   # sqlbilling 20251230.7
   # Tue Dec 30 07:20:02 UTC 2025 -- Tue Dec 30 18:20:02 AEDT 2025
