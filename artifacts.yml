@@ -14,9 +14,9 @@ variables:
   # 3d64abbc87d84e3ee67919017359fbab03617094
   virgil_build_id: '1565918'
 
-  # sqlbilling 20251230.5
-  # Mon Dec 29 23:50:14 UTC 2025 -- Tue Dec 30 10:50:14 AEDT 2025
+  # sqlbilling 20251230.7
+  # Tue Dec 30 07:20:02 UTC 2025 -- Tue Dec 30 18:20:02 AEDT 2025
   #
-  # Merged PR 43622: Update SQLredaonly
-  # c062ba27a3c09fec7776d0eb59c7c881801a2f30
-  sqlbilling_build_id: '1566179'
+  # Merged PR 43625: Update Readonly
+  # 5eb3330dedcd60f843c801ca5f7963a56d23dc35
+  sqlbilling_build_id: '1566477'
