@@ -16,7 +16,7 @@ with a view to what could potentially go wrong when deployed.
 
 - [ ] any change in the GLOBAL, DEFAULT, STATS or FRONTEND sections
 - [ ] wildcarded subdomain changes (not test services)
-- [ ] changes to \*/instannces/*
+- [ ] changes to \*/instances/*
 - [ ] changes to \*/machine_clusters/*
 - [ ] safety check security exceptions
 - [ ] http-\* header mangling
