@@ -118,7 +118,7 @@ us2kvl-v1.wtg.zone:
     name: US2KVLV1
   servers:
     - name: us2k3s-v1.wtg.zone-vip1
-      ip: 10.4.128.5
+      ip: 10.4.128.6
       port: 443
       settings: check ssl verify none
 
