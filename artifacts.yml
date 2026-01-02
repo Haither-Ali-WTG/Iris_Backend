@@ -14,9 +14,9 @@ variables:
   # a89eb2975359db3ab9ed422cb9c3955e637bb8b9
   virgil_build_id: '1566856'
 
-  # sqlbilling 20260102.3
-  # Fri Jan  2 08:40:04 UTC 2026 -- Fri Jan  2 19:40:04 AEDT 2026
+  # sqlbilling 20260103.1
+  # Fri Jan  2 13:55:46 UTC 2026 -- Sat Jan  3 00:55:46 AEDT 2026
   #
-  # Merged PR 43649: CS02186643 - CARGSAEZE - agregar ip a lista
-  # fd5995828e6f15ee54fe81c1db7028d17a392c17
-  sqlbilling_build_id: '1569365'
+  # Merged PR 43654: RemoveSQLReadOnly IPs DE1 US2
+  # 73a745c451ccda043c29aa0091494e17bc175aa9
+  sqlbilling_build_id: '1569571'
