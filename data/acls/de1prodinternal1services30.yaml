@@ -67,3 +67,8 @@ peppol_smp_disallow_secure_path:
     Disallow secure path for Peppol SMP service
   tests:
     - path_beg -i /secure
+
+star_wtg_zone:
+  description: "*.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
