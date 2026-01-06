@@ -772,7 +772,7 @@ compliancewise-test.wisegrid.net:
       port: 80
 
 customsconnector-test-internal.wisegrid.net:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: true
     http_path: /wtg/status
