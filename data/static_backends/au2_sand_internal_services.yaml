@@ -770,3 +770,13 @@ compliancewise-test.wisegrid.net:
     - name: AU2SP-SIIS-406B
       ip: 10.2.118.61
       port: 80
+
+wtatestrig_sand_wtg_zone-catchall:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: AU2SP-SIIS-401
+      ip: 10.2.118.20
+      port: 80

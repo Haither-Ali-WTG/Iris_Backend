@@ -88,3 +88,12 @@ myaccount_umbraco_temp_sand_wtg_zone:
     - >-
         use_backend myaccount-umbraco-temp-sand-wtg-zone-catchall
         if { hdr(host),field(1,:) -m reg -i ^myau-([^\.])+\.temp\.sand\.wtg\.zone$ }
+
+star_wtatestrig_sand_wtg_zone:
+  description: |-
+    use catchall wtatestrig backend for *.wtatestrig.sand.wtg.zone
+  order: 80
+  actions:
+    - >-
+        use_backend wtatestrig_sand_wtg_zone-catchall
+        if star_wtatestrig_sand_wtg_zone
