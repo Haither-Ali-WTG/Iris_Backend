@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260105.6
-  # Mon Jan  5 01:36:39 UTC 2026 -- Mon Jan  5 12:36:39 AEDT 2026
+  # Dante Build Artifact 20260107.1
+  # Tue Jan  6 22:21:04 UTC 2026 -- Wed Jan  7 09:21:04 AEDT 2026
   #
-  # Merged PR 43665: Remove botticelli from docker images
-  # 46fd31d3ecdba9c3c8deee5cc9494d5550c4bfad
-  dante_build_id: '1571981'
+  # Merge pull request 43711 from dante_artifact_upgrade into master
+  # b9a2837aacbbf59452c559a0d19d042234df57f3
+  dante_build_id: '1573815'
 
   # virgil 20260106.2
   # Mon Jan  5 18:20:47 UTC 2026 -- Tue Jan  6 05:20:47 AEDT 2026
