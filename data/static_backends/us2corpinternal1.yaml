@@ -130,16 +130,16 @@ us2k3s-v1.wtg.zone:
   cookie:
     name: US2K3SV1
   servers:
-    - name: us2chl23961.wtg.zone
-      ip: 10.4.239.61
+    - name: us2chl23991.wtg.zone
+      ip: 10.4.239.91
       port: 443
       settings: check ssl verify none
-    - name: us2chl23962.wtg.zone
-      ip: 10.4.239.62
+    - name: us2chl23992.wtg.zone
+      ip: 10.4.239.92
       port: 443
       settings: check ssl verify none
-    - name: us2chl23963.wtg.zone
-      ip: 10.4.239.63
+    - name: us2chl23993.wtg.zone
+      ip: 10.4.239.93
       port: 443
       settings: check ssl verify none
 
