@@ -82,3 +82,24 @@ jump2-us2-wtg-zone:
       ip: 10.4.86.48
       port: 3389
       settings: check ssl
+
+redis-uat.urs.wisegrid.net:
+  clustered_instances: [us2corptcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: w1.us2prod1
+      ip: 10.4.237.15
+      port: 30279
+    - name: w2.us2prod1
+      ip: 10.4.237.16
+      port: 30279
+    - name: w3.us2prod1
+      ip: 10.4.237.17
+      port: 30279
+    - name: w4.us2prod1
+      ip: 10.4.237.18
+      port: 30279
+    - name: w5.us2prod1
+      ip: 10.4.237.19
+      port: 30279
