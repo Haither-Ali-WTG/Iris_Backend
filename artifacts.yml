@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260107.3
-  # Wed Jan  7 05:21:20 UTC 2026 -- Wed Jan  7 16:21:20 AEDT 2026
+  # Dante Build Artifact 20260107.4
+  # Wed Jan  7 08:41:21 UTC 2026 -- Wed Jan  7 19:41:21 AEDT 2026
   #
-  # Merge pull request 43757 from dante_artifact_upgrade into master
-  # 7d1f9f2df362a0b77d39d179bfc6f730735739d1
-  dante_build_id: '1574210'
+  # Merge pull request 43796 from dante_artifact_upgrade into master
+  # 3251ec696f4eafb867f63a48bc808e96d4819e6e
+  dante_build_id: '1574404'
 
-  # virgil 20260107.3
-  # Wed Jan  7 04:38:41 UTC 2026 -- Wed Jan  7 15:38:41 AEDT 2026
+  # virgil 20260107.5
+  # Wed Jan  7 07:55:36 UTC 2026 -- Wed Jan  7 18:55:36 AEDT 2026
   #
-  # Merged PR 43756: create m11 on au2anl00017
-  # f8fe09194e83cec9c9f1b7a3e16b57a369d27a16
-  virgil_build_id: '1574171'
+  # Merged PR 43731: Replace some C51s with C53s
+  # 8a77494b5d22c495b713450ebfe1b3569d6a87df
+  virgil_build_id: '1574353'
 
-  # sqlbilling 20260107.2
-  # Tue Jan  6 14:43:53 UTC 2026 -- Wed Jan  7 01:43:53 AEDT 2026
+  # sqlbilling 20260107.6
+  # Wed Jan  7 09:20:54 UTC 2026 -- Wed Jan  7 20:20:54 AEDT 2026
   #
-  # Merged PR 43728: Remove SQL ReadOnly US5TRN AU2
-  # 0a5077ac1ef7bc1d4e607bf0885b3fe3e2085687
-  sqlbilling_build_id: '1573506'
+  # Merged PR 43808: AddSQLReadOnly IP AU2
+  # 9a58f63178bd579541d7d4b800eb7797367287bd
+  sqlbilling_build_id: '1574448'
