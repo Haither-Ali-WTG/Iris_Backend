@@ -7,6 +7,7 @@ us.cww-nonprd.wisegrid.net-catchall:
     balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
     default-server agent-check agent-port 8098
     server US2WT-SBLZ-001 10.4.73.11:80
     server US2WT-SBLZ-404 10.4.73.24:80
