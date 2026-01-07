@@ -95,5 +95,5 @@ star_wtatestrig_sand_wtg_zone:
   order: 80
   actions:
     - >-
-        use_backend wtatestrig_sand_wtg_zone-catchall
+        use_backend wtatestrig-sand-wtg-zone-catchall
         if star_wtatestrig_sand_wtg_zone
