@@ -7,12 +7,12 @@ variables:
   # aa8101748c4996a4475869a166d7fe1bbd57e560
   dante_build_id: '1573996'
 
-  # virgil 20260106.2
-  # Mon Jan  5 18:20:47 UTC 2026 -- Tue Jan  6 05:20:47 AEDT 2026
+  # virgil 20260107.3
+  # Wed Jan  7 04:38:41 UTC 2026 -- Wed Jan  7 15:38:41 AEDT 2026
   #
-  # Merge pull request 43706 from virgil_python_upgrade into master
-  # d694a5861cbb8e54e374868357818c43c32bbe3a
-  virgil_build_id: '1572662'
+  # Merged PR 43756: create m11 on au2anl00017
+  # f8fe09194e83cec9c9f1b7a3e16b57a369d27a16
+  virgil_build_id: '1574171'
 
   # sqlbilling 20260107.2
   # Tue Jan  6 14:43:53 UTC 2026 -- Wed Jan  7 01:43:53 AEDT 2026
