@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260107.2
-  # Wed Jan  7 01:29:21 UTC 2026 -- Wed Jan  7 12:29:21 AEDT 2026
+  # Dante Build Artifact 20260107.3
+  # Wed Jan  7 05:21:20 UTC 2026 -- Wed Jan  7 16:21:20 AEDT 2026
   #
-  # Merged PR 43743: fix: use the latest influxdata key
-  # aa8101748c4996a4475869a166d7fe1bbd57e560
-  dante_build_id: '1573996'
+  # Merge pull request 43757 from dante_artifact_upgrade into master
+  # 7d1f9f2df362a0b77d39d179bfc6f730735739d1
+  dante_build_id: '1574210'
 
   # virgil 20260107.3
   # Wed Jan  7 04:38:41 UTC 2026 -- Wed Jan  7 15:38:41 AEDT 2026
