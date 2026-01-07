@@ -33,11 +33,13 @@ custom_url_actions:
   order: 80
   actions:
     ### Webtracker
+    - use_backend abkprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ordertracker.noatummaritime.com }
     - use_backend abwddq_webtracker_wisegrid_net if { hdr(host),field(1,:) -i shipping.absolutewl.com }
     - use_backend afcatl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i track.rlglobal.com }
     - use_backend afouyr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.approvedforwarders.com }
     - use_backend aiiiad_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackschott.airschott.com }
     - use_backend arfafs_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.ariesww.com }
+    - use_backend ar2nyc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i atrac.ariesgl.com }
     - use_backend awujec_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.albawheelsup.com }
     - use_backend axidfw_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.axi-track.com }
     - use_backend clrlax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.clearfreight.com }
@@ -49,9 +51,11 @@ custom_url_actions:
     - use_backend djsdfw_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.djsintl.com }
     - use_backend fgssmy_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.falconeglobal.com }
     - use_backend jjbsfo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i jjbtrak.jjboyle.com }
+    - use_backend jetent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.jetspeed-usa.com }
     - use_backend jscbwi_webtracker_wisegrid_net if { hdr(host),field(1,:) -i connortrac.jsconnor.com }
     - use_backend lakprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.jetparkwarehouse.com }
     - use_backend lopent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i eworldplus.com }
+    - use_backend md2prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cargowise.mardom.com }
     - use_backend nlgmkc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i powerview.miq.com }
     - use_backend oiaglo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.oiaglobal.com }
     - use_backend p60prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.premiointernational.com }
