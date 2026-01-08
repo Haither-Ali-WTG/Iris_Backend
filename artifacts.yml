@@ -7,12 +7,12 @@ variables:
   # 2194d11cfe1e12419ec87ad54b1355a00ab796bf
   dante_build_id: '1575377'
 
-  # virgil 20260108.4
-  # Thu Jan  8 03:20:07 UTC 2026 -- Thu Jan  8 14:20:07 AEDT 2026
+  # virgil 20260108.8
+  # Thu Jan  8 08:12:35 UTC 2026 -- Thu Jan  8 19:12:35 AEDT 2026
   #
-  # Merged PR 43843: au2 round 4 EXIT5/6 cumulus OS upgrade
-  # c6920f55eeac38bbaa53c8c6469d7e6399d88681
-  virgil_build_id: '1575317'
+  # Merged PR 43852: us2  round 1 cumulus upgrades
+  # a698aeb5eee119361ee5d68a8b3db7ce7c44bb77
+  virgil_build_id: '1575581'
 
   # sqlbilling 20260107.6
   # Wed Jan  7 09:20:54 UTC 2026 -- Wed Jan  7 20:20:54 AEDT 2026
