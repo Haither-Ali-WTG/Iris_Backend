@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260107.4
-  # Wed Jan  7 08:41:21 UTC 2026 -- Wed Jan  7 19:41:21 AEDT 2026
+  # Dante Build Artifact 20260108.2
+  # Thu Jan  8 01:14:04 UTC 2026 -- Thu Jan  8 12:14:04 AEDT 2026
   #
-  # Merge pull request 43796 from dante_artifact_upgrade into master
-  # 3251ec696f4eafb867f63a48bc808e96d4819e6e
-  dante_build_id: '1574404'
+  # Merged PR 43834: Fixed types of comparison for ansible 12 support
+  # 315b530847a6c3f369261867449801b845d8cad2
+  dante_build_id: '1575208'
 
-  # virgil 20260107.5
-  # Wed Jan  7 07:55:36 UTC 2026 -- Wed Jan  7 18:55:36 AEDT 2026
+  # virgil 20260108.2
+  # Wed Jan  7 22:55:07 UTC 2026 -- Thu Jan  8 09:55:07 AEDT 2026
   #
-  # Merged PR 43731: Replace some C51s with C53s
-  # 8a77494b5d22c495b713450ebfe1b3569d6a87df
-  virgil_build_id: '1574353'
+  # Merged PR 43818: (CS02107779) add kafka topics for xhub global search migration
+  # 1210db2674a3a051bc64d248d9cd6628cec1e208
+  virgil_build_id: '1575005'
 
   # sqlbilling 20260107.6
   # Wed Jan  7 09:20:54 UTC 2026 -- Wed Jan  7 20:20:54 AEDT 2026
