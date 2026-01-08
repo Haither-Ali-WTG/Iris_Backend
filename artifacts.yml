@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260108.2
-  # Thu Jan  8 01:14:04 UTC 2026 -- Thu Jan  8 12:14:04 AEDT 2026
+  # Dante Build Artifact 20260108.3
+  # Thu Jan  8 04:01:06 UTC 2026 -- Thu Jan  8 15:01:06 AEDT 2026
   #
-  # Merged PR 43834: Fixed types of comparison for ansible 12 support
-  # 315b530847a6c3f369261867449801b845d8cad2
-  dante_build_id: '1575208'
+  # Merge pull request 43844 from dante_artifact_upgrade into master
+  # 2194d11cfe1e12419ec87ad54b1355a00ab796bf
+  dante_build_id: '1575377'
 
   # virgil 20260108.4
   # Thu Jan  8 03:20:07 UTC 2026 -- Thu Jan  8 14:20:07 AEDT 2026
