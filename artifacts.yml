@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260109.1
-  # Fri Jan  9 01:21:19 UTC 2026 -- Fri Jan  9 12:21:19 AEDT 2026
+  # Dante Build Artifact 20260109.2
+  # Fri Jan  9 04:00:52 UTC 2026 -- Fri Jan  9 15:00:52 AEDT 2026
   #
-  # Merge pull request 43889 from dante_artifact_upgrade into master
-  # e92661803aefbb3bfed22078a40a477cba237f40
-  dante_build_id: '1576327'
+  # Merge pull request 43905 from dante_artifact_upgrade into master
+  # c0de99a5815d37055823991bae789d65d8b24dbf
+  dante_build_id: '1576476'
 
-  # virgil 20260109.7
-  # Fri Jan  9 03:08:50 UTC 2026 -- Fri Jan  9 14:08:50 AEDT 2026
+  # virgil 20260109.9
+  # Fri Jan  9 03:59:23 UTC 2026 -- Fri Jan  9 14:59:23 AEDT 2026
   #
-  # Merged PR 43888: DECOM 2 EYE nodes and Reuse them for GS
-  # 1725b6754edb22c3c6603ae01dec707686ce43d5
-  virgil_build_id: '1576417'
+  # Merged PR 43912: Swap au2anl00019 for au2co-selk-029
+  # ea1a8d45a3ece363a0a18b84207752d8b0b96517
+  virgil_build_id: '1576459'
 
   # sqlbilling 20260109.7
   # Thu Jan  8 23:30:56 UTC 2026 -- Fri Jan  9 10:30:56 AEDT 2026
