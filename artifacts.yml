@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260109.3
-  # Fri Jan  9 04:41:19 UTC 2026 -- Fri Jan  9 15:41:19 AEDT 2026
+  # Dante Build Artifact 20260111.1
+  # Sat Jan 10 22:21:10 UTC 2026 -- Sun Jan 11 09:21:10 AEDT 2026
   #
-  # Merge pull request 43919 from dante_artifact_upgrade into master
-  # f2d8f85a4efe8963843af41923f02863b09213b0
-  dante_build_id: '1576526'
+  # Merge pull request 43933 from dante_artifact_upgrade into master
+  # abe5ff4659bc8ea37d3b47d9c43b66eed5ff888c
+  dante_build_id: '1578165'
 
-  # virgil 20260109.9
-  # Fri Jan  9 03:59:23 UTC 2026 -- Fri Jan  9 14:59:23 AEDT 2026
+  # virgil 20260111.2
+  # Sat Jan 10 21:33:38 UTC 2026 -- Sun Jan 11 08:33:38 AEDT 2026
   #
-  # Merged PR 43912: Swap au2anl00019 for au2co-selk-029
-  # ea1a8d45a3ece363a0a18b84207752d8b0b96517
-  virgil_build_id: '1576459'
+  # Merged PR 43932: added pembridge ACLS to sql monitoring inbound topics
+  # 42e88798ea2bc5933774b25ae4be881213740972
+  virgil_build_id: '1578128'
 
   # sqlbilling 20260109.7
   # Thu Jan  8 23:30:56 UTC 2026 -- Fri Jan  9 10:30:56 AEDT 2026
