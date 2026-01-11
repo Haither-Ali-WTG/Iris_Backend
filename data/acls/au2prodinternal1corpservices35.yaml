@@ -59,6 +59,11 @@ knowledge_mcp_wtg_zone:
     - hdr(host) -i borderwise-admin.knowledge.wtg.zone
     - hdr(host) -i borderwise-staging.knowledge.wtg.zone
     - hdr(host) -i borderwise-admin-staging.knowledge.wtg.zone
+    ## triage-agent
+    - hdr(host) -i triage-agent.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-staging.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-admin.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-admin-staging.knowledge.wtg.zone
     ## wta
     - hdr(host) -i wta.knowledge.wtg.zone
     - hdr(host) -i wta-admin.knowledge.wtg.zone
