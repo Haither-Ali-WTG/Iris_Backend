@@ -7,12 +7,12 @@ variables:
   # abe5ff4659bc8ea37d3b47d9c43b66eed5ff888c
   dante_build_id: '1578165'
 
-  # virgil 20260111.2
-  # Sat Jan 10 21:33:38 UTC 2026 -- Sun Jan 11 08:33:38 AEDT 2026
+  # virgil 20260111.4
+  # Sun Jan 11 03:15:48 UTC 2026 -- Sun Jan 11 14:15:48 AEDT 2026
   #
-  # Merged PR 43932: added pembridge ACLS to sql monitoring inbound topics
-  # 42e88798ea2bc5933774b25ae4be881213740972
-  virgil_build_id: '1578128'
+  # Merged PR 43945: us2  upgrade leaf7
+  # 60711671e2d4020e77b0b117186f61df53e9c82d
+  virgil_build_id: '1578411'
 
   # sqlbilling 20260109.7
   # Thu Jan  8 23:30:56 UTC 2026 -- Fri Jan  9 10:30:56 AEDT 2026
