@@ -50,6 +50,7 @@ custom_url_actions:
     - use_backend dhxlax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i myportal.dgxglobal.com }
     - use_backend djsdfw_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.djsintl.com }
     - use_backend fgssmy_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.falconeglobal.com }
+    - use_backend gftrno_webtracker_wisegrid_net if { hdr(host),field(1,:) -i global.legacyscs.com }
     - use_backend jjbsfo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i jjbtrak.jjboyle.com }
     - use_backend jetent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.jetspeed-usa.com }
     - use_backend jscbwi_webtracker_wisegrid_net if { hdr(host),field(1,:) -i connortrac.jsconnor.com }
@@ -62,8 +63,11 @@ custom_url_actions:
     - use_backend pwsbwi_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.priorityworldwide.com }
     - use_backend pmlcax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.perimeterlogistics.com }
     - use_backend rkglax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.rktrac.com }
+    - use_backend rtwprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.sartransport.com }
     - use_backend tarewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i login.tarraservices.com }
     - use_backend wfring_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackingus.weidafreight.com }
+    - use_backend widprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.wideline.biz }
+    - use_backend wlgtgp_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cw1.go2tigers.com }
     ### GLOW
     - use_backend www-elllax_wisegrid_net if { hdr(host),field(1,:) -i portals.extralogistics.com }
     - use_backend www-aetprd_wisegrid_net if { hdr(host),field(1,:) -i aetnatracking.com }
