@@ -21,7 +21,7 @@ star.au2s3-b1.wtg.ws:
     cookie AU2S3BUNKER insert indirect nocache dynamic secure
     default-server inter 10000 ssl
     server au2nas12-s3-01 10.2.30.31:443 check check-ssl ssl verify none
-    filter bwlim-out mydownloadlimit limit 400000000 key be_id table downloadrate
-    filter bwlim-in myuploadlimit limit 400000000 key be_id table uploadrate
+    filter bwlim-out mydownloadlimit limit 800000000 key be_id table downloadrate
+    filter bwlim-in myuploadlimit limit 800000000 key be_id table uploadrate
     http-response set-bandwidth-limit mydownloadlimit
     http-request set-bandwidth-limit myuploadlimit
