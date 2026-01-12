@@ -15,9 +15,9 @@ ansible-core==2.20.1
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==25.12.2
+ansible-lint==26.1.0
     # via -r requirements.in
-anyio==4.12.0
+anyio==4.12.1
     # via httpx
 argcomplete==3.6.3
     # via yq
@@ -82,7 +82,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.20.2
+filelock==3.20.3
     # via
     #   ansible-lint
     #   safety
@@ -111,7 +111,7 @@ joblib==1.5.3
     # via nltk
 jq==1.10.0
     # via -r requirements.in
-jsonschema==4.25.1
+jsonschema==4.26.0
     # via
     #   ansible-compat
     #   ansible-lint
@@ -266,11 +266,11 @@ tomlkit==0.13.3
     #   yq
 tqdm==4.67.1
     # via nltk
-typer==0.21.0
+typer==0.21.1
     # via safety
 types-pyyaml==6.0.12.20250915
     # via -r requirements.in
-types-requests==2.32.4.20250913
+types-requests==2.32.4.20260107
     # via -r requirements.in
 typing-extensions==4.15.0
     # via
@@ -285,7 +285,7 @@ typing-extensions==4.15.0
     #   typing-inspection
 typing-inspection==0.4.2
     # via pydantic
-urllib3==2.6.2
+urllib3==2.6.3
     # via
     #   botocore
     #   requests
