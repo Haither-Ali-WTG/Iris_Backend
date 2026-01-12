@@ -7,12 +7,12 @@ variables:
   # 57c1837fa9f2c806bab68f9da8c8bcd84a050f0e
   dante_build_id: '1578463'
 
-  # virgil 20260111.4
-  # Sun Jan 11 03:15:48 UTC 2026 -- Sun Jan 11 14:15:48 AEDT 2026
+  # virgil 20260113.2
+  # Mon Jan 12 18:21:05 UTC 2026 -- Tue Jan 13 05:21:05 AEDT 2026
   #
-  # Merged PR 43945: us2  upgrade leaf7
-  # 60711671e2d4020e77b0b117186f61df53e9c82d
-  virgil_build_id: '1578411'
+  # Merge pull request 43975 from virgil_python_upgrade into master
+  # 9c1aa41d6200e9321c342fce73e8be1f34821699
+  virgil_build_id: '1580053'
 
   # sqlbilling 20260112.2
   # Mon Jan 12 09:41:04 UTC 2026 -- Mon Jan 12 20:41:04 AEDT 2026
