@@ -24,7 +24,7 @@ au.cww-nonprd.wisegrid.net-catchall:
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
     default-server agent-check agent-port 8098
-    server AU2WT-SBLZ-001 10.2.73.11:80
+    server AU2WT-SBLZ-401 10.2.73.21:80
     server AU2WT-SBLZ-404 10.2.73.24:80
 
 app-test-au.borderwise.com:
@@ -693,8 +693,8 @@ cww-nonprd.wisegrid.net.catch.all:
     http_path: /wtg/status
   balance: random
   servers:
-    - name: AU2WT-SBLZ-001
-      ip: 10.2.73.11
+    - name: AU2WT-SBLZ-401
+      ip: 10.2.73.21
       port: 80
     - name: AU2WT-SBLZ-404
       ip: 10.2.73.24
