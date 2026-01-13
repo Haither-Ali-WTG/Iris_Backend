@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260113.1
-  # Tue Jan 13 01:41:10 UTC 2026 -- Tue Jan 13 12:41:10 AEDT 2026
+  # Dante Build Artifact 20260114.1
+  # Tue Jan 13 23:14:18 UTC 2026 -- Wed Jan 14 10:14:18 AEDT 2026
   #
-  # Merge pull request 43985 from dante_artifact_upgrade into master
-  # 598fc5d14139086e9e7370500016e02e8484089b
-  dante_build_id: '1580438'
+  # Merged PR 44053: Stopped using obsolete simulation inventory in dante
+  # 46008527e073a85568cb3fece4070da77a368e7f
+  dante_build_id: '1581393'
 
-  # virgil 20260113.4
-  # Tue Jan 13 00:53:29 UTC 2026 -- Tue Jan 13 11:53:29 AEDT 2026
+  # virgil 20260114.8
+  # Tue Jan 13 22:39:05 UTC 2026 -- Wed Jan 14 09:39:05 AEDT 2026
   #
-  # Merged PR 44004: Temporarily revert OS version update on exits 5/6
-  # a8bc7f8905689d6692541e17413af217b14a5c32
-  virgil_build_id: '1580383'
+  # Merged PR 44054: Removed AU1 US1 and XX0 DCs
+  # e63ab74084f508bcebdf4a6cad4aea3810bdf40b
+  virgil_build_id: '1581336'
 
   # sqlbilling 20260113.3
   # Tue Jan 13 10:35:28 UTC 2026 -- Tue Jan 13 21:35:28 AEDT 2026
