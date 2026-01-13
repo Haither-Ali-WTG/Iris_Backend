@@ -14,9 +14,9 @@ variables:
   # a8bc7f8905689d6692541e17413af217b14a5c32
   virgil_build_id: '1580383'
 
-  # sqlbilling 20260113.1
-  # Mon Jan 12 20:56:20 UTC 2026 -- Tue Jan 13 07:56:20 AEDT 2026
+  # sqlbilling 20260113.3
+  # Tue Jan 13 10:35:28 UTC 2026 -- Tue Jan 13 21:35:28 AEDT 2026
   #
-  # Merged PR 43882: BIG IP range for Kuehne & Nagel
-  # 95e5e28d2fc79a99a0014e67df91b8ac1a526d25
-  sqlbilling_build_id: '1580171'
+  # Merged PR 44047: AddSQLReadOnly IP DE1
+  # ea8e0290ac219e4e780d01dc122551ad15c59693
+  sqlbilling_build_id: '1580837'
