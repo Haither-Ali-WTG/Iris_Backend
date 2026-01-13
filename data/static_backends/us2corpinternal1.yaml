@@ -112,8 +112,7 @@ us2kvl-v0.wtg.zone:
 us2kvl-v1.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   cookie:
     name: US2KVLV1
   servers:
@@ -125,8 +124,7 @@ us2kvl-v1.wtg.zone:
 us2k3s-v1.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   cookie:
     name: US2K3SV1
   servers:
