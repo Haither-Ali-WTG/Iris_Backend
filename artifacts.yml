@@ -7,16 +7,16 @@ variables:
   # 57c1837fa9f2c806bab68f9da8c8bcd84a050f0e
   dante_build_id: '1578463'
 
-  # virgil 20260113.2
-  # Mon Jan 12 18:21:05 UTC 2026 -- Tue Jan 13 05:21:05 AEDT 2026
+  # virgil 20260113.4
+  # Tue Jan 13 00:53:29 UTC 2026 -- Tue Jan 13 11:53:29 AEDT 2026
   #
-  # Merge pull request 43975 from virgil_python_upgrade into master
-  # 9c1aa41d6200e9321c342fce73e8be1f34821699
-  virgil_build_id: '1580053'
+  # Merged PR 44004: Temporarily revert OS version update on exits 5/6
+  # a8bc7f8905689d6692541e17413af217b14a5c32
+  virgil_build_id: '1580383'
 
-  # sqlbilling 20260112.2
-  # Mon Jan 12 09:41:04 UTC 2026 -- Mon Jan 12 20:41:04 AEDT 2026
+  # sqlbilling 20260113.1
+  # Mon Jan 12 20:56:20 UTC 2026 -- Tue Jan 13 07:56:20 AEDT 2026
   #
-  # Merged PR 43970: AddSQLReadOnly IP AU2
-  # 0eeb05eb858b069e6c1408a5fbee94ac21fa09b6
-  sqlbilling_build_id: '1579707'
+  # Merged PR 43882: BIG IP range for Kuehne & Nagel
+  # 95e5e28d2fc79a99a0014e67df91b8ac1a526d25
+  sqlbilling_build_id: '1580171'
