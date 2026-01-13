@@ -422,6 +422,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: tracking_nnraus_com_au
           cms_resource_group: RG-AU-Prod
+        - name: tracking_pcfs_com_au
+          cms_resource_group: RG-AU-Prod
         - name: tracking_powerhousensw_com_au
           cms_resource_group: RG-AU-Prod
         - name: tracking_totalmaritime_com_au
