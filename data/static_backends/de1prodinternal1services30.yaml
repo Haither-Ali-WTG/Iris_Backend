@@ -302,3 +302,105 @@ cs.wtg.zone:
     - name: de1wp-siis-407b
       ip: 10.3.69.91
       port: 443
+
+de1prodfrontend1testcdnservices.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2062
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2062
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2062
+
+de1prodfrontend1prodservices.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2064
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2064
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2064
+
+de1prodfrontend1prodtcp.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2066
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2066
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2066
+
+de1prodfrontend1tenantservices.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2068
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2068
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2068
+
+de1prodfrontend1tenanttcp.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2070
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2070
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2070
+
+de1sandinternal1services.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00931
+      ip: 10.3.83.31
+      port: 2343
+    - name: de1lbl00932
+      ip: 10.3.83.32
+      port: 2343
+    - name: de1lbl00933
+      ip: 10.3.83.33
+      port: 2343

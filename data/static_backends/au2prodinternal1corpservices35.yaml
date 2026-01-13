@@ -1317,3 +1317,20 @@ cms-e2open.wtg.zone:
     - name: au2co-siis-404b
       ip: 10.2.69.41
       port: 80
+
+au2prodfrontend1testcdnservices.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2062
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2062
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2062

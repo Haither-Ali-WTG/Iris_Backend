@@ -618,3 +618,54 @@ wtg-sw.sand.wtg.zone:
       ip: 10.2.82.32
       port: 8787
       settings: check ssl verify none
+
+us2prodfrontend1testcdnservices.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2062
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2062
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2062
+
+us2prodfrontend1pierbridge.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2027
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2027
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2027
+
+us2prodfrontend1pierbridgehubcapp.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2033
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2033
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2033
