@@ -16,4 +16,3 @@ urs_redis_staging_wisegrid_net:
   order: 80
   actions:
     - use_backend urs_redis_staging_wisegrid_net if acl_urs-redis_staging_wisecgrid_net
-
