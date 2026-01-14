@@ -430,7 +430,7 @@ clustered_instances:
             - 1067  # daadmin-us2.wtg.zone
             - 1068  # daadmin-us2.wisecloud.zone
             - 1069  # admin-us2.wisecloud.zone
-            - 30279 # redis-uat.urs.wisegrid.net
+            - 30279  # redis-uat.urs.wisegrid.net
       iis_servers: []
       certificates: []
       machine_cluster: us2-corp-internal-1
