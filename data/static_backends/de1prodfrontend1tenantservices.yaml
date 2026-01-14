@@ -125,6 +125,20 @@ steveco-ntrax.aktivdata.fi:
       ip: 10.3.232.16
       port: 8999
 
+steveco-transit.aktivdata.fi:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: STETRANS
+    secure: true
+  encryption: true
+  servers:
+    - name: DE1FL0APPW001
+      ip: 10.3.232.16
+      port: 3939
+
 katepal-ntraxrio.aktivdata.fi:
   clustered_instances: [de1prodfrontend1tenantservices]
   http_health_check:
