@@ -521,6 +521,7 @@ rates.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+    method: GET
     check_expect: '200|401|403'
   servers:
     - name: AU2WP-SIIS-402A
