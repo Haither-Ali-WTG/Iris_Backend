@@ -15,4 +15,4 @@ urs_redis_staging_wisegrid_net:
     Uses backend for urs_redis_staging_wisegrid_zone for acl_urs_redis_staging_wisecgrid_zone
   order: 80
   actions:
-    - use_backend urs_redis_staging_wisegrid_net if acl_urs-redis_staging_wisecgrid_net wtg_src
+    - use_backend urs_redis_staging_wisegrid_net if acl_urs-redis_staging_wisegrid_net wtg_src
