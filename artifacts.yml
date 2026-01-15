@@ -7,12 +7,12 @@ variables:
   # 6dd75d15fc9ebcde5038fcf051ec5ec71b4970af
   dante_build_id: '1581564'
 
-  # virgil 20260114.10
-  # Tue Jan 13 23:57:04 UTC 2026 -- Wed Jan 14 10:57:04 AEDT 2026
+  # virgil 20260115.7
+  # Thu Jan 15 03:13:08 UTC 2026 -- Thu Jan 15 14:13:08 AEDT 2026
   #
-  # Merged PR 44063: Stop exporting simulation inventory
-  # 3fc613ca0460b5bff104b274c8c12ee9a92b5afb
-  virgil_build_id: '1581463'
+  # Merged PR 44106: updated with recordsets and removed previous updates
+  # d3c53b926d89c070a4fb20e7a5ea38938f043cba
+  virgil_build_id: '1582790'
 
   # sqlbilling 20260113.3
   # Tue Jan 13 10:35:28 UTC 2026 -- Tue Jan 13 21:35:28 AEDT 2026
