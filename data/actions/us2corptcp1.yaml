@@ -12,7 +12,7 @@ destination_port_test:
 
 urs_redis_staging_wisegrid_net:
   description: |-
-    Uses backend for urs_redis_staging_wisecgrid_zone for acl_urs_redis_staging_wisecgrid_zone
+    Uses backend for urs_redis_staging_wisegrid_zone for acl_urs_redis_staging_wisecgrid_zone
   order: 80
   actions:
     - use_backend urs_redis_staging_wisegrid_net if acl_urs-redis_staging_wisecgrid_net
