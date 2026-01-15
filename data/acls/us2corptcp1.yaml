@@ -1,5 +1,5 @@
 ---
-acl_urs_redis_staging_wisecgrid_zone:
+acl_redis_uat_urs_wisegrid_net:
   description: urs redis staging port
   tests:
     - dst_port 30279

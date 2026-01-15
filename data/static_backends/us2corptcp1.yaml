@@ -83,7 +83,7 @@ jump2-us2-wtg-zone:
       port: 3389
       settings: check ssl
 
-redis-uat.urs.wisegrid.net:
+redis.uat.urs.wisegrid.net:
   clustered_instances: [us2corptcp1]
   http_health_check:
     enabled: false
