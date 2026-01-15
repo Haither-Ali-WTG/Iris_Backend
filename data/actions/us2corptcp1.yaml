@@ -10,7 +10,7 @@ destination_port_test:
     - use_backend jump2-us2-wisecloud-zone    if { dst_port 1066 }
     - use_backend jump2-us2-wtg-zone          if { dst_port 1062 }
 
-redis-uat_urs_wisegrid_net:
+redis_uat_urs_wisegrid_net:
   description: |-
     Uses backend for urs_redis_staging_wisegrid_zone for acl_redis_uat_urs_wisegrid_net
   order: 80
