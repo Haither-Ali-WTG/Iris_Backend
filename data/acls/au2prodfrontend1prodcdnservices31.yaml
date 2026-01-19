@@ -59,3 +59,8 @@ compliance_borderwise_com:
   description: "compliance borderwise"
   tests:
     - hdr(host),field(1,:) -i compliance.borderwise.com
+
+star_tmp_borderwise_com:
+  description: "*.tmp.borderwise.com borderwise tariff management production service"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?tmp\.borderwise\.com$
