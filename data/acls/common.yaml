@@ -5,26 +5,46 @@ wtg_src:
   tests:
     # internal network
     - src 10.0.0.0/8
+    - var(txn.client_ip) -m ip 10.0.0.0/8
     # external WiseTech Networks
     - src 213.229.115.0/24
+    - var(txn.client_ip) -m ip 213.229.115.0/24
     - src 217.156.148.0/24
+    - var(txn.client_ip) -m ip 217.156.148.0/24
     - src 180.235.156.0/24
+    - var(txn.client_ip) -m ip 180.235.156.0/24
     - src 180.235.157.0/24
+    - var(txn.client_ip) -m ip 180.235.157.0/24
     - src 180.235.158.0/24
+    - var(txn.client_ip) -m ip 180.235.158.0/24
     - src 180.235.159.0/24
+    - var(txn.client_ip) -m ip 180.235.159.0/24
     - src 78.41.196.0/24
+    - var(txn.client_ip) -m ip 78.41.196.0/24
     - src 68.61.196.0/24
+    - var(txn.client_ip) -m ip 68.61.196.0/24
     - src 69.61.196.0/24
+    - var(txn.client_ip) -m ip 69.61.196.0/24
     - src 203.62.208.0/24
+    - var(txn.client_ip) -m ip 203.62.208.0/24
     - src 203.62.209.0/24
+    - var(txn.client_ip) -m ip 203.62.209.0/24
     - src 203.62.210.0/24
+    - var(txn.client_ip) -m ip 203.62.210.0/24
     - src 203.62.211.0/24
+    - var(txn.client_ip) -m ip 203.62.211.0/24
     - src 203.62.212.0/24
+    - var(txn.client_ip) -m ip 203.62.212.0/24
     - src 203.62.213.0/24
+    - var(txn.client_ip) -m ip 203.62.213.0/24
     - src 203.62.214.0/24
+    - var(txn.client_ip) -m ip 203.62.214.0/24
     - src 203.62.215.0/24
+    - var(txn.client_ip) -m ip 203.62.215.0/24
     - src 196.41.78.0/24
+    - var(txn.client_ip) -m ip 196.41.78.0/24
     - src 196.61.68.0/22
+    - var(txn.client_ip) -m ip 196.61.68.0/22
 
 cloudflare_src:
   description: source IP is Cloudflare WAF

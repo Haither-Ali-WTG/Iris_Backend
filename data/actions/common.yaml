@@ -1,5 +1,23 @@
 ---
 # common actions
+client_ip_vars:
+  description: |-
+    Populate txn.client_ip and txn.traffic_src for logging/ACLs.
+    txn.client_ip represents the end-user IP (direct or via Cloudflare).
+  order: 1
+  actions:
+    - http-request set-var(txn.raw_client_ip) src
+    - http-request set-header X-WTG-Untrusted-Forwarded-For %[req.hdr(X-Forwarded-For)] if { req.hdr(X-Forwarded-For) -m found }
+    - http-request del-header X-Forwarded-For
+    - http-request del-header X-Real-IP
+    - http-request del-header X-Coming-From
+    - http-request del-header CF-Connecting-IP if !cloudflare_src
+    - http-request set-var(txn.client_ip) src if !cloudflare_src
+    - http-request set-var(txn.client_ip) hdr(CF-Connecting-IP) if cloudflare_src
+    - http-request set-var(txn.traffic_src) str(direct) if !cloudflare_src
+    - http-request set-var(txn.traffic_src) str(cloudflare) if cloudflare_src
+    - http-request set-header X-Forwarded-For %[var(txn.client_ip)]
+
 transport_security:
   description: |-
     Transport security options

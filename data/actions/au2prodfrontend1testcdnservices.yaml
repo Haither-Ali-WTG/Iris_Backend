@@ -1,4 +1,18 @@
 ---
+remove_forwarded_headers_for_exempt_hosts:
+  description: |-
+    Remove client IP forwarding headers for selected hosts
+  order: 2
+  actions:
+    - http-request del-header X-Forwarded-For if abe_test_wisegrid_net
+
+set-XFF-IP-Header:
+  description: |-
+    Set true client IP header for IP whitelisting in applications
+  order: 59
+  actions:
+    - http-request set-header X-Forwarded-For %[var(txn.client_ip)] if abe_test_wisegrid_net
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
