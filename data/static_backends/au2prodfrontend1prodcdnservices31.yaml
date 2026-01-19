@@ -1388,3 +1388,17 @@ updates.cargowise.com:
       ip: 10.2.69.28
       port: 80
       settings: backup
+
+tmp.borderwise.com-catchall:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: TMP
+  http_health_check:
+    enabled: false
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+    - name: AU2WP-SIIS-402B
+      ip: 10.2.69.17
+      port: 80
