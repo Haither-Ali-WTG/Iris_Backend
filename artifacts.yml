@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260116.2
-  # Fri Jan 16 03:17:53 UTC 2026 -- Fri Jan 16 14:17:53 AEDT 2026
+  # Dante Build Artifact 20260119.1
+  # Mon Jan 19 00:01:24 UTC 2026 -- Mon Jan 19 11:01:24 AEDT 2026
   #
-  # Merged PR 44137: Always run cleanup during ISO build
-  # 52f147e0deaeea447c0b2a5ec1069c8831501dbd
-  dante_build_id: '1583935'
+  # Merge pull request 44171 from dante_artifact_upgrade into master
+  # 166e7dd0f1ea9726fd3e7ab9d5ded1308be357f5
+  dante_build_id: '1586690'
 
   # virgil 20260119.8
   # Sun Jan 18 23:16:35 UTC 2026 -- Mon Jan 19 10:16:35 AEDT 2026
