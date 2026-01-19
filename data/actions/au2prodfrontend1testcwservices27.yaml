@@ -26,3 +26,9 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
+    - >-
+        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-tracking
+        if usat_webservice_path_tracking www-star_wisegrid_net
+    - >-
+        use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-warehouse
+        if usat_webservice_path_warehouse svc-star_wisegrid_net
