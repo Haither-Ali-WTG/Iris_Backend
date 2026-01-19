@@ -1371,3 +1371,20 @@ ocmbe.wisegrid.net:
     - name: AU2WP-SIIS-402B
       ip: 10.2.69.17
       port: 80
+
+updates.cargowise.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: OCMB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2CO-SIIS-402A
+      ip: 10.2.69.27
+      port: 80
+    - name: AU2CO-SIIS-402B
+      ip: 10.2.69.28
+      port: 80
+
