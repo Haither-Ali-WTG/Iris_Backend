@@ -56,3 +56,10 @@ star_staging_transport_wisetechglobal_com_api_backend:
     - >-
       use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-api if
       { hdr(host),field(1,:) -m reg -i ^([^\.]+)?-staging\.transport\.wisetechglobal\.com$ } { path_beg -i /api }
+
+testtariff_management_portal_backend:
+  description: |-
+    Direct requests for the Test Borderwise Tariff Management Portal to the catchall backend
+  order: 80
+  actions:
+    - use_backend testtmp_borderwise_com-catchall if star_testtmp_borderwise_com
