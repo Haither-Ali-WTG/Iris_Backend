@@ -42,3 +42,8 @@ app-test_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app-test.borderwise.com
     - hdr(host),field(1,:) -i app-test-au.borderwise.com
+
+star_testtmp_borderwise_com:
+  description: "*.tmp.borderwise.com borderwise tariff management test service"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?tmp\.borderwise\.com$
