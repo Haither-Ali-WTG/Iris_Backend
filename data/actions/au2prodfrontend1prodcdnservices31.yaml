@@ -62,3 +62,10 @@ compliance_borderwise_backend:
   order: 80
   actions:
     - use_backend compliance-au_borderwise_com if compliance_borderwise_com
+
+tariff_management_portal_backend:
+  description: |-
+    Direct requests for the production Borderwise Tariff Management Portal to the catchall backend
+  order: 80
+  actions:
+    - use_backend tmp_borderwise_com-catchall if star_tmp_borderwise_com
