@@ -39,3 +39,15 @@ glow_webservice_path:
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
+
+usat_webservice_path_tracking:
+  description: |-
+    USAT webservice paths that get routed to specific dynamic backend
+  tests:
+    - path_beg -i /Tracking/
+
+usat_webservice_path_warehouse:
+  description: |-
+    USAT webservice paths that get routed to specific dynamic backend
+  tests:
+    - path_beg -i /Warehouse/
