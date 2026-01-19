@@ -103,3 +103,32 @@ redis.uat.urs.wisegrid.net:
     - name: w5.us2prod1
       ip: 10.4.237.19
       port: 30279
+
+us2kvl-v1.wtg.zone:
+  clustered_instances: [us2corptcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2k3s-v1.wtg.zone-vip1
+      ip: 10.4.128.6
+      port: 443
+      settings: check ssl verify none
+
+
+us2k3s-v1.wtg.zone:
+  clustered_instances: [us2corptcp1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2chl23991.wtg.zone
+      ip: 10.4.239.91
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23992.wtg.zone
+      ip: 10.4.239.92
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23993.wtg.zone
+      ip: 10.4.239.93
+      port: 443
+      settings: check ssl verify none

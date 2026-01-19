@@ -109,38 +109,6 @@ us2kvl-v0.wtg.zone:
       port: 8006
       settings: check ssl verify none
 
-us2kvl-v1.wtg.zone:
-  clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: false
-  cookie:
-    name: US2KVLV1
-  servers:
-    - name: us2k3s-v1.wtg.zone-vip1
-      ip: 10.4.128.6
-      port: 443
-      settings: check ssl verify none
-
-us2k3s-v1.wtg.zone:
-  clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: false
-  cookie:
-    name: US2K3SV1
-  servers:
-    - name: us2chl23991.wtg.zone
-      ip: 10.4.239.91
-      port: 443
-      settings: check ssl verify none
-    - name: us2chl23992.wtg.zone
-      ip: 10.4.239.92
-      port: 443
-      settings: check ssl verify none
-    - name: us2chl23993.wtg.zone
-      ip: 10.4.239.93
-      port: 443
-      settings: check ssl verify none
-
 us2pf1-prod-customurls.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
