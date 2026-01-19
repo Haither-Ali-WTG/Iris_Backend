@@ -81,151 +81,285 @@ shipamax_src:
   tests:
     # Shipamax FF Prod IP range
     - src 54.220.20.216/32
+    - var(txn.client_ip) -m ip 54.220.20.216/32
 
 hackerrank_src:
   description: source IP is WiseTech (internal or external network)
   tests:
     # hackerrank  IP range CS01697628
     - src 52.73.33.136/32
+    - var(txn.client_ip) -m ip 52.73.33.136/32
     - src 52.22.20.80/32
+    - var(txn.client_ip) -m ip 52.22.20.80/32
 
 jumphost_src:
   description: source IP is WiseTech (internal or external network)
   tests:
     # Jumphost IP range
     - src 10.2.86.0/24
+    - var(txn.client_ip) -m ip 10.2.86.0/24
     - src 10.3.86.0/24
+    - var(txn.client_ip) -m ip 10.3.86.0/24
     - src 10.4.86.0/24
+    - var(txn.client_ip) -m ip 10.4.86.0/24
 
 azure_src:
   description: source IP is WiseTech (internal or external network)
   tests:
     # Azure AD IP range CS01662849
     - src 4.150.253.96/28
+    - var(txn.client_ip) -m ip 4.150.253.96/28
     - src 4.207.244.176/28
+    - var(txn.client_ip) -m ip 4.207.244.176/28
     - src 13.64.151.161/32
+    - var(txn.client_ip) -m ip 13.64.151.161/32
     - src 13.66.141.64/27
+    - var(txn.client_ip) -m ip 13.66.141.64/27
     - src 13.67.9.224/27
+    - var(txn.client_ip) -m ip 13.67.9.224/27
     - src 13.69.66.160/27
+    - var(txn.client_ip) -m ip 13.69.66.160/27
     - src 13.69.229.96/27
+    - var(txn.client_ip) -m ip 13.69.229.96/27
     - src 13.70.73.32/27
+    - var(txn.client_ip) -m ip 13.70.73.32/27
     - src 13.71.172.160/27
+    - var(txn.client_ip) -m ip 13.71.172.160/27
     - src 13.71.195.224/27
+    - var(txn.client_ip) -m ip 13.71.195.224/27
     - src 13.71.201.64/26
+    - var(txn.client_ip) -m ip 13.71.201.64/26
     - src 13.73.240.32/27
+    - var(txn.client_ip) -m ip 13.73.240.32/27
     - src 13.74.104.0/26
+    - var(txn.client_ip) -m ip 13.74.104.0/26
     - src 13.74.249.156/32
+    - var(txn.client_ip) -m ip 13.74.249.156/32
     - src 13.75.38.32/27
+    - var(txn.client_ip) -m ip 13.75.38.32/27
     - src 13.75.105.168/32
+    - var(txn.client_ip) -m ip 13.75.105.168/32
     - src 13.77.52.160/27
+    - var(txn.client_ip) -m ip 13.77.52.160/27
     - src 13.78.108.192/27
+    - var(txn.client_ip) -m ip 13.78.108.192/27
     - src 13.78.172.246/32
+    - var(txn.client_ip) -m ip 13.78.172.246/32
     - src 13.79.37.247/32
+    - var(txn.client_ip) -m ip 13.79.37.247/32
     - src 13.86.219.0/27
+    - var(txn.client_ip) -m ip 13.86.219.0/27
     - src 13.87.16.0/26
+    - var(txn.client_ip) -m ip 13.87.16.0/26
     - src 13.87.57.160/27
+    - var(txn.client_ip) -m ip 13.87.57.160/27
     - src 13.87.123.160/27
+    - var(txn.client_ip) -m ip 13.87.123.160/27
     - src 13.89.174.0/27
+    - var(txn.client_ip) -m ip 13.89.174.0/27
     - src 20.20.32.0/19
+    - var(txn.client_ip) -m ip 20.20.32.0/19
     - src 20.36.107.192/27
+    - var(txn.client_ip) -m ip 20.36.107.192/27
     - src 20.36.115.64/27
+    - var(txn.client_ip) -m ip 20.36.115.64/27
     - src 20.37.75.96/27
+    - var(txn.client_ip) -m ip 20.37.75.96/27
     - src 20.40.228.64/28
+    - var(txn.client_ip) -m ip 20.40.228.64/28
     - src 20.43.120.32/27
+    - var(txn.client_ip) -m ip 20.43.120.32/27
     - src 20.44.3.160/27
+    - var(txn.client_ip) -m ip 20.44.3.160/27
     - src 20.44.16.32/27
+    - var(txn.client_ip) -m ip 20.44.16.32/27
     - src 20.46.10.64/27
+    - var(txn.client_ip) -m ip 20.46.10.64/27
     - src 20.51.9.80/28
+    - var(txn.client_ip) -m ip 20.51.9.80/28
     - src 20.51.14.72/31
+    - var(txn.client_ip) -m ip 20.51.14.72/31
     - src 20.51.16.128/27
+    - var(txn.client_ip) -m ip 20.51.16.128/27
     - src 20.61.98.160/27
+    - var(txn.client_ip) -m ip 20.61.98.160/27
     - src 20.61.99.128/28
+    - var(txn.client_ip) -m ip 20.61.99.128/28
     - src 20.62.58.80/28
+    - var(txn.client_ip) -m ip 20.62.58.80/28
     - src 20.62.129.0/27
+    - var(txn.client_ip) -m ip 20.62.129.0/27
     - src 20.62.129.240/28
+    - var(txn.client_ip) -m ip 20.62.129.240/28
     - src 20.62.134.74/31
+    - var(txn.client_ip) -m ip 20.62.134.74/31
     - src 20.65.132.96/28
+    - var(txn.client_ip) -m ip 20.65.132.96/28
     - src 20.66.2.32/27
+    - var(txn.client_ip) -m ip 20.66.2.32/27
     - src 20.66.3.16/28
+    - var(txn.client_ip) -m ip 20.66.3.16/28
     - src 20.72.21.64/26
+    - var(txn.client_ip) -m ip 20.72.21.64/26
     - src 20.88.66.0/27
+    - var(txn.client_ip) -m ip 20.88.66.0/27
     - src 20.111.78.128/28
+    - var(txn.client_ip) -m ip 20.111.78.128/28
     - src 20.187.197.32/27
+    - var(txn.client_ip) -m ip 20.187.197.32/27
     - src 20.187.197.240/28
+    - var(txn.client_ip) -m ip 20.187.197.240/28
     - src 20.190.128.0/18
+    - var(txn.client_ip) -m ip 20.190.128.0/18
     - src 20.194.73.0/28
+    - var(txn.client_ip) -m ip 20.194.73.0/28
     - src 20.195.56.102/32
+    - var(txn.client_ip) -m ip 20.195.56.102/32
     - src 20.195.57.118/32
+    - var(txn.client_ip) -m ip 20.195.57.118/32
     - src 20.195.64.192/27
+    - var(txn.client_ip) -m ip 20.195.64.192/27
     - src 20.195.64.240/28
+    - var(txn.client_ip) -m ip 20.195.64.240/28
     - src 20.231.128.0/19
+    - var(txn.client_ip) -m ip 20.231.128.0/19
     - src 23.101.0.70/32
+    - var(txn.client_ip) -m ip 23.101.0.70/32
     - src 23.101.6.190/32
+    - var(txn.client_ip) -m ip 23.101.6.190/32
     - src 40.68.160.142/32
+    - var(txn.client_ip) -m ip 40.68.160.142/32
     - src 40.69.107.160/27
+    - var(txn.client_ip) -m ip 40.69.107.160/27
     - src 40.71.13.0/27
+    - var(txn.client_ip) -m ip 40.71.13.0/27
     - src 40.74.101.64/27
+    - var(txn.client_ip) -m ip 40.74.101.64/27
     - src 40.74.146.192/27
+    - var(txn.client_ip) -m ip 40.74.146.192/27
     - src 40.78.195.160/27
+    - var(txn.client_ip) -m ip 40.78.195.160/27
     - src 40.78.203.64/27
+    - var(txn.client_ip) -m ip 40.78.203.64/27
     - src 40.79.131.128/27
+    - var(txn.client_ip) -m ip 40.79.131.128/27
     - src 40.79.179.128/27
+    - var(txn.client_ip) -m ip 40.79.179.128/27
     - src 40.83.144.56/32
+    - var(txn.client_ip) -m ip 40.83.144.56/32
     - src 40.126.0.0/18
+    - var(txn.client_ip) -m ip 40.126.0.0/18
     - src 51.140.148.192/27
+    - var(txn.client_ip) -m ip 51.140.148.192/27
     - src 51.140.208.0/26
+    - var(txn.client_ip) -m ip 51.140.208.0/26
     - src 51.140.211.192/27
+    - var(txn.client_ip) -m ip 51.140.211.192/27
     - src 52.138.65.157/32
+    - var(txn.client_ip) -m ip 52.138.65.157/32
     - src 52.138.68.41/32
+    - var(txn.client_ip) -m ip 52.138.68.41/32
     - src 52.146.132.96/27
+    - var(txn.client_ip) -m ip 52.146.132.96/27
     - src 52.146.133.80/28
+    - var(txn.client_ip) -m ip 52.146.133.80/28
     - src 52.146.137.66/31
+    - var(txn.client_ip) -m ip 52.146.137.66/31
     - src 52.150.157.0/27
+    - var(txn.client_ip) -m ip 52.150.157.0/27
     - src 52.157.20.148/32
+    - var(txn.client_ip) -m ip 52.157.20.148/32
     - src 52.157.20.186/32
+    - var(txn.client_ip) -m ip 52.157.20.186/32
     - src 52.157.20.205/32
+    - var(txn.client_ip) -m ip 52.157.20.205/32
     - src 52.159.175.31/32
+    - var(txn.client_ip) -m ip 52.159.175.31/32
     - src 52.159.175.117/32
+    - var(txn.client_ip) -m ip 52.159.175.117/32
     - src 52.159.175.121/32
+    - var(txn.client_ip) -m ip 52.159.175.121/32
     - src 52.161.13.71/32
+    - var(txn.client_ip) -m ip 52.161.13.71/32
     - src 52.161.13.95/32
+    - var(txn.client_ip) -m ip 52.161.13.95/32
     - src 52.161.110.169/32
+    - var(txn.client_ip) -m ip 52.161.110.169/32
     - src 52.162.110.96/27
+    - var(txn.client_ip) -m ip 52.162.110.96/27
     - src 52.169.125.119/32
+    - var(txn.client_ip) -m ip 52.169.125.119/32
     - src 52.169.218.0/32
+    - var(txn.client_ip) -m ip 52.169.218.0/32
     - src 52.174.189.149/32
+    - var(txn.client_ip) -m ip 52.174.189.149/32
     - src 52.175.18.134/32
+    - var(txn.client_ip) -m ip 52.175.18.134/32
     - src 52.178.27.112/32
+    - var(txn.client_ip) -m ip 52.178.27.112/32
     - src 52.179.122.218/32
+    - var(txn.client_ip) -m ip 52.179.122.218/32
     - src 52.179.126.223/32
+    - var(txn.client_ip) -m ip 52.179.126.223/32
     - src 52.180.177.87/32
+    - var(txn.client_ip) -m ip 52.180.177.87/32
     - src 52.180.179.108/32
+    - var(txn.client_ip) -m ip 52.180.179.108/32
     - src 52.180.181.61/32
+    - var(txn.client_ip) -m ip 52.180.181.61/32
     - src 52.180.183.8/32
+    - var(txn.client_ip) -m ip 52.180.183.8/32
     - src 52.187.19.1/32
+    - var(txn.client_ip) -m ip 52.187.19.1/32
     - src 52.187.113.48/32
+    - var(txn.client_ip) -m ip 52.187.113.48/32
     - src 52.187.117.83/32
+    - var(txn.client_ip) -m ip 52.187.117.83/32
     - src 52.187.120.237/32
+    - var(txn.client_ip) -m ip 52.187.120.237/32
     - src 52.225.184.198/32
+    - var(txn.client_ip) -m ip 52.225.184.198/32
     - src 52.225.188.89/32
+    - var(txn.client_ip) -m ip 52.225.188.89/32
     - src 52.226.169.40/32
+    - var(txn.client_ip) -m ip 52.226.169.40/32
     - src 52.226.169.45/32
+    - var(txn.client_ip) -m ip 52.226.169.45/32
     - src 52.226.169.53/32
+    - var(txn.client_ip) -m ip 52.226.169.53/32
     - src 52.231.19.128/27
+    - var(txn.client_ip) -m ip 52.231.19.128/27
     - src 52.231.147.192/27
+    - var(txn.client_ip) -m ip 52.231.147.192/27
     - src 52.249.207.8/32
+    - var(txn.client_ip) -m ip 52.249.207.8/32
     - src 52.249.207.23/32
+    - var(txn.client_ip) -m ip 52.249.207.23/32
     - src 52.249.207.27/32
+    - var(txn.client_ip) -m ip 52.249.207.27/32
     - src 65.52.251.96/27
+    - var(txn.client_ip) -m ip 65.52.251.96/27
     - src 98.66.133.128/28
+    - var(txn.client_ip) -m ip 98.66.133.128/28
     - src 104.40.84.19/32
+    - var(txn.client_ip) -m ip 104.40.84.19/32
     - src 104.40.87.209/32
+    - var(txn.client_ip) -m ip 104.40.87.209/32
     - src 104.40.156.18/32
+    - var(txn.client_ip) -m ip 104.40.156.18/32
     - src 104.40.168.0/26
+    - var(txn.client_ip) -m ip 104.40.168.0/26
     - src 104.41.159.212/32
+    - var(txn.client_ip) -m ip 104.41.159.212/32
     - src 104.45.138.161/32
+    - var(txn.client_ip) -m ip 104.45.138.161/32
     - src 104.46.178.128/27
+    - var(txn.client_ip) -m ip 104.46.178.128/27
     - src 104.211.147.160/27
+    - var(txn.client_ip) -m ip 104.211.147.160/27
     - src 172.172.255.96/28
+    - var(txn.client_ip) -m ip 172.172.255.96/28
     - src 172.211.123.224/28
+    - var(txn.client_ip) -m ip 172.211.123.224/28
     - src 191.233.204.160/27
+    - var(txn.client_ip) -m ip 191.233.204.160/27

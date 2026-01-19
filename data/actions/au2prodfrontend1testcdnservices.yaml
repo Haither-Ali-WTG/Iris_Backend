@@ -1,5 +1,5 @@
 ---
-set_Untrusted_XFF:
+set_untrusted_xff_header:
   description: |-
     Set X-WTG-Untrusted-Forwarded-For header for selected hosts
   order: 1
