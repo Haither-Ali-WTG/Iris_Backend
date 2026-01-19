@@ -14,7 +14,6 @@ client_ip_vars:
     - http-request set-var(txn.client_ip) hdr(CF-Connecting-IP) if cloudflare_src
     - http-request set-var(txn.traffic_src) str(direct) if !cloudflare_src
     - http-request set-var(txn.traffic_src) str(cloudflare) if cloudflare_src
-    - http-request set-header X-Forwarded-For %[var(txn.client_ip)]
 
 transport_security:
   description: |-
