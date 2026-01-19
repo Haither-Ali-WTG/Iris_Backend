@@ -14,9 +14,9 @@ variables:
   # 0a2a60608879ded3f98b8e894ecf7e5c4758b373
   virgil_build_id: '1586865'
 
-  # sqlbilling 20260116.5
-  # Fri Jan 16 09:11:29 UTC 2026 -- Fri Jan 16 20:11:29 AEDT 2026
+  # sqlbilling 20260119.1
+  # Mon Jan 19 10:50:23 UTC 2026 -- Mon Jan 19 21:50:23 AEDT 2026
   #
-  # Merged PR 44131: AddSQLReadOnly IPs US2
-  # e67bf3b3a052df221beb0fa84abde9021ffd1a24
-  sqlbilling_build_id: '1584217'
+  # Merged PR 44168: AddSQLReadOnly IP AU2
+  # a553e548354b2535eca1920249fc14a28b6104e8
+  sqlbilling_build_id: '1587230'
