@@ -1375,7 +1375,7 @@ ocmbe.wisegrid.net:
 updates.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
-    name: OCMB
+    name: UPD
   http_health_check:
     enabled: true
     http_path: /wtg/status
