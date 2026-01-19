@@ -1378,8 +1378,8 @@ updates.cargowise.com:
     name: UPD
   http_health_check:
     enabled: true
-    http_path: /wtg/status
-    check_expect: '200|401|403'
+    http_path: /secureupdates/generic/demotextfile.txt
+    check_expect: '200|401'
   servers:
     - name: AU2CO-SIIS-402A
       ip: 10.2.69.27
