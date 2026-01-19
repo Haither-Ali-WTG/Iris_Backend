@@ -881,3 +881,17 @@ s8test.cargowise.com:
     - name: AU2WP-SS8C-402
       ip: 10.2.69.108
       port: 80
+
+testtmp.borderwise.com-catchall:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: TTMP
+  http_health_check:
+    enabled: false
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+    - name: AU2WP-SIIS-402B
+      ip: 10.2.69.17
+      port: 80
