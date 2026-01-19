@@ -171,3 +171,19 @@ cs.wtg.zone:
     - name: au2wp-siis-407b
       ip: 10.2.69.91
       port: 443
+
+api-ais.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: APIAIS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 42106
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 42106
