@@ -29,6 +29,11 @@ star_webtracker_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -m reg -i ^[A-Za-z0-9]{6}(?:-cn)?[-.]?webtracker\.wisegrid\.net$
 
+svc-star_wisegrid_net:
+  description: "svc-*.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^svc-[A-Za-z0-9]{6,8}(-cn)?\.wisegrid\.net$
+
 www-star_wisegrid_net:
   description: "www-*.wisegrid.net"
   tests:
