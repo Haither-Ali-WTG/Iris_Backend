@@ -8,7 +8,20 @@ Content-Type: text/html
 <title>Website Offline</title>
 </head>
 <body style="font-family:Arial; margin: 30px;">
-<h1>This website is currently offline</h1>
-<p>We are currently performing maintenance on this website.  Please check back soon.</p>
+<h1>This website is currently undergoing maintenance</h1>
+<h2>Please check back soon.</h2><p>My Account and eRequests have a daily maintenance window from 7:00am - 7:10am <span id="timezone">Australian Eastern Time</span>. Your patience is appreciated as we deploy enhancements to our product.</p>
+
+<script>
+  const tz = new Intl.DateTimeFormat("en-AU", {
+    timeZone: "Australia/Sydney",
+    timeZoneName: "long"
+  })
+  .formatToParts(new Date())
+  .find(p => p.type === "timeZoneName")
+  .value;
+
+  document.getElementById("timezone").textContent = `${tz}`;
+</script>
+
 </body>
 </html>
