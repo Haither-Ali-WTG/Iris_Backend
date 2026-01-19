@@ -6,7 +6,7 @@ remove_forwarded_headers_for_exempt_hosts:
   actions:
     - http-request del-header X-Forwarded-For if abe_test_wisegrid_net
 
-set-XFF-IP-Header:
+set-xff-ip-header:
   description: |-
     Set true client IP header for IP whitelisting in applications
   order: 59
