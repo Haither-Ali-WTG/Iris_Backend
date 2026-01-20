@@ -41,6 +41,19 @@ custom_url_actions:
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.johngood.co.uk }
     - use_backend je6lpr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
     - use_backend sozprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
+    - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webtracker.wisegrid.net }
+    - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webtracker.wisegrid.net }
+    - use_backend g42prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i g42prd2.webtracker.wisegrid.net }
+    - use_backend sllwho_webtracker_wisegrid_net if { hdr(host),field(1,:) -i sllwho2.webtracker.wisegrid.net }
+    - use_backend gu1prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gu1prd2.webtracker.wisegrid.net }
+    - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gf6prd2.webtracker.wisegrid.net }
+    - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gf6prd3.webtracker.wisegrid.net }
+    - use_backend zifprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zifprd2.webtracker.wisegrid.net }
+
+    ### Webprint
+    - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webprint.wisegrid.net }
+    - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webprint.wisegrid.net }
+
     ### GLOW
     - use_backend www-dehprd_wisegrid_net if { hdr(host),field(1,:) -i customerportal.deugro.com }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
