@@ -1390,7 +1390,7 @@ updates.cargowise.com:
       settings: backup
 
 tl1web2.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcwservices26]
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
     cookie:
     name: TLX
   http_health_check:
@@ -1403,7 +1403,7 @@ tl1web2.wisegrid.net:
       port: 80
 
 maps.gps.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcwservices26]
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
     cookie:
     name: TLX
   http_health_check:
