@@ -1391,7 +1391,7 @@ updates.cargowise.com:
 
 tl1web2.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-    cookie:
+  cookie:
     name: TLX
   http_health_check:
     enabled: true
@@ -1404,7 +1404,7 @@ tl1web2.wisegrid.net:
 
 maps.gps.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-    cookie:
+  cookie:
     name: TLX
   http_health_check:
     enabled: true
