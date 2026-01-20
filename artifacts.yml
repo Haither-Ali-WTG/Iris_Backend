@@ -7,12 +7,12 @@ variables:
   # f92e3c70408992c980a3d305cf6438df3b824177
   dante_build_id: '1587605'
 
-  # virgil 20260120.2
-  # Mon Jan 19 18:21:12 UTC 2026 -- Tue Jan 20 05:21:12 AEDT 2026
+  # virgil 20260120.5
+  # Tue Jan 20 03:52:43 UTC 2026 -- Tue Jan 20 14:52:43 AEDT 2026
   #
-  # Merge pull request 44236 from virgil_python_upgrade into master
-  # 3165c1667c823962003019a3423f2ec5f454e939
-  virgil_build_id: '1587553'
+  # Merged PR 44258: new topics for wisetechacademy
+  # f661031a0ad1d9b0f2dabea3f8254ec667a5bf2c
+  virgil_build_id: '1588034'
 
   # sqlbilling 20260120.3
   # Mon Jan 19 20:36:42 UTC 2026 -- Tue Jan 20 07:36:42 AEDT 2026
