@@ -12,15 +12,23 @@ Content-Type: text/html
 <h2>Please check back soon.</h2><p>My Account and eRequests have a daily maintenance window from 7:00am - 7:10am <span id="timezone">Australian Eastern Time</span>. Your patience is appreciated as we deploy enhancements to our product.</p>
 
 <script>
-  const tz = new Intl.DateTimeFormat("en-AU", {
-    timeZone: "Australia/Sydney",
-    timeZoneName: "long"
-  })
-  .formatToParts(new Date())
-  .find(p => p.type === "timeZoneName")
-  .value;
+(function () {
+  try {
+    if (window.Intl && Intl.DateTimeFormat) {
+      const parts = new Intl.DateTimeFormat("en-AU", {
+        timeZone: "Australia/Sydney",
+        timeZoneName: "long"
+      }).formatToParts(new Date());
 
-  document.getElementById("timezone").textContent = `${tz}`;
+      const tzPart = parts.find(p => p.type === "timeZoneName");
+      if (tzPart) {
+        document.getElementById("timezone").textContent = tzPart.value;
+      }
+    }
+  } catch (e) {
+    // fallback: Do nothing.
+  }
+})();
 </script>
 
 </body>
