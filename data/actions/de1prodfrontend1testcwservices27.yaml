@@ -33,4 +33,5 @@ custom_url_actions:
   order: 80
   actions:
     - use_backend gf6trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ecarrier.trn.greencarrier.com }
+    - use_backend gu1trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gu1trn2.webtracker.wisegrid.net }
     - use_backend www-icots1_wisegrid_net if { hdr(host),field(1,:) -i test.intercargo.com }
