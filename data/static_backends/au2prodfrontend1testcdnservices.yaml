@@ -881,3 +881,139 @@ s8test.cargowise.com:
     - name: AU2WP-SS8C-402
       ip: 10.2.69.108
       port: 80
+
+svc-hyetip.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-hyetip.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlgtm.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-wtlgtm.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlndc.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-wtlndc.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlkel.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-wtlkel.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
