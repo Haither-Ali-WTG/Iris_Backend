@@ -135,3 +135,29 @@
     name: WEBSVC
     enabled: true
   name_suffix: ''
+
+# PDA (TLX)
+- name_regex: ^[A-Za-z0-9]{6}\.pda\.wisegrid\.net$
+  encryption: false
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  port: 80
+  cookie:
+    name: WEBSVC
+    enabled: true
+  name_suffix: ''
+
+# SPWEB (TLX)
+- name_regex: ^[A-Za-z0-9]{6}]\.spweb\.wisegrid\.net$
+  encryption: false
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  port: 80
+  cookie:
+    name: WEBSVC
+    enabled: true
+  name_suffix: ''

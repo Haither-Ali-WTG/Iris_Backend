@@ -14,6 +14,16 @@ star_edirf_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?edirf\.wisegrid\.net$
 
+star_pda_wisegrid_net:
+  description: "*.pda.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^[A-Za-z0-9]{6}\.pda\.wisegrid\.net$
+
+star_spweb_wisegrid_net:
+  description: "*.spweb.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^[A-Za-z0-9]{6}\.spweb\.wisegrid\.net$
+
 star_webcampaign_wisegrid_net:
   description: "*.webcampaign.wisegrid.net"
   tests:
