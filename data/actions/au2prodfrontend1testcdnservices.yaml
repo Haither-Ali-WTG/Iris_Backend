@@ -1,4 +1,29 @@
 ---
+set_untrusted_xff_header:
+  description: |-
+    Set X-WTG-Untrusted-Forwarded-For header for selected hosts
+  order: 1
+  actions:
+    - >-
+      http-request set-header X-WTG-Untrusted-Forwarded-For %[req.hdr(X-Forwarded-For)] if
+      abe_test_wisegrid_net { req.hdr(X-Forwarded-For) -m found }
+
+remove_forwarded_headers_for_exempt_hosts:
+  description: |-
+    Remove client IP forwarding headers for selected hosts
+  order: 2
+  actions:
+    - http-request del-header X-Forwarded-For if xforwarderfor_excempt_urls
+    - http-request del-header X-Real-IP if xforwarderfor_excempt_urls
+    - http-request del-header X-Coming-From if xforwarderfor_excempt_urls
+
+set_xff_for_abe_test_wisegrid_net:
+  description: |-
+    Populate X-Forwarded-For with end user IP
+  order: 59
+  actions:
+    - http-request set-header X-Forwarded-For %[var(txn.client_ip)] if abe_test_wisegrid_net
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path

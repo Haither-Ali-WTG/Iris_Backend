@@ -42,3 +42,15 @@ app-test_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app-test.borderwise.com
     - hdr(host),field(1,:) -i app-test-au.borderwise.com
+
+abe_test_wisegrid_net:
+  description: |-
+    Host match for abe-test.wisegrid.net
+  tests:
+    - hdr(host),field(1,:) -i abe-test.wisegrid.net
+
+xforwarderfor_excempt_urls:
+  description: |-
+    Hosts where client IP forwarding headers must be stripped
+  tests:
+    - hdr(host),field(1,:) -i abe-test.wisegrid.net
