@@ -37,15 +37,9 @@ knowledge_mcp_wtg_zone:
     ## main
     - hdr(host) -i knowledge.mcp.wtg.zone
     - hdr(host) -i knowledge-staging.mcp.wtg.zone
-    ## borderwise
-    - hdr(host) -i borderwise.mcp.wtg.zone
-    - hdr(host) -i borderwise-staging.mcp.wtg.zone
     ## ediprod
     - hdr(host) -i ediprod.mcp.wtg.zone
     - hdr(host) -i ediprod-staging.mcp.wtg.zone
-    ## wta
-    - hdr(host) -i wta.mcp.wtg.zone
-    - hdr(host) -i wta-staging.mcp.wtg.zone
     # knowledge
     ## main
     - hdr(host) -i admin.knowledge.wtg.zone
@@ -74,9 +68,6 @@ llm_manager_wtg_zone:
     ## llm-manager
     - hdr(host) -i llm-manager.wtg.zone
     - hdr(host) -i llm-manager.sand.wtg.zone
-    ## langfuse
-    - hdr(host) -i langfuse.wtg.zone
-    - hdr(host) -i langfuse.sand.wtg.zone
     ## llm-gateway
     - hdr(host) -i llm-gateway.wtg.zone
     - hdr(host) -i llm-gateway.sand.wtg.zone
