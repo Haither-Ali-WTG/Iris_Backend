@@ -905,8 +905,7 @@ www-hyetip.cargowise.com:
     name: SPWS
   http_health_check:
     enabled: true
-    http_path: /Services
-    method: GET
+    http_path: /Glow/wtg/ready
     check_expect: '200|401|403'
   servers:
     - name: AU2SP-SWEB-401A
@@ -933,41 +932,7 @@ svc-wtlgtm.cargowise.com:
       ip: 10.2.118.14
       port: 80
 
-www-wtlgtm.cargowise.com:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: SPWS
-  http_health_check:
-    enabled: true
-    http_path: /Services
-    method: GET
-    check_expect: '200|401|403'
-  servers:
-    - name: AU2SP-SWEB-401A
-      ip: 10.2.118.13
-      port: 80
-    - name: AU2SP-SWEB-401B
-      ip: 10.2.118.14
-      port: 80
-
 svc-wtlndc.cargowise.com:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: SPWS
-  http_health_check:
-    enabled: true
-    http_path: /Services
-    method: GET
-    check_expect: '200|401|403'
-  servers:
-    - name: AU2SP-SWEB-401A
-      ip: 10.2.118.13
-      port: 80
-    - name: AU2SP-SWEB-401B
-      ip: 10.2.118.14
-      port: 80
-
-www-wtlndc.cargowise.com:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: SPWS
@@ -1007,8 +972,7 @@ www-wtlkel.cargowise.com:
     name: SPWS
   http_health_check:
     enabled: true
-    http_path: /Services
-    method: GET
+    http_path: /Glow/wtg/ready
     check_expect: '200|401|403'
   servers:
     - name: AU2SP-SWEB-401A
