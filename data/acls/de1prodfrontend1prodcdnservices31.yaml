@@ -98,7 +98,7 @@ wca_denied_paths:
 
 wca_prod_url:
   description: |-
-    Hostnames for DE1 WCA production services
+    Hostnames for WCA production services
   tests:
     - hdr(host),field(1,:) -i de1wcatoken.wisegrid.net
     - hdr(host),field(1,:) -i de1wca.wisegrid.net

@@ -2,11 +2,15 @@
 # common actions
 client_ip_vars:
   description: |-
-    Populate txn.client_ip and txn.traffic_src for logging/ACLs.
+    Populate X-WTG-Untrusted-Forwarded-For, txn.client_ip and txn.traffic_src for logging/ACLs.
+    Delete any existing client IP forwarding headers to prevent spoofing.
     txn.client_ip represents the end-user IP (direct or via Cloudflare).
+    Set X-Forwarded-For to txn.client_ip from CF-Connecting-IP for backend applications that rely on it.
   order: 1
   actions:
-    - http-request set-header X-WTG-Untrusted-Forwarded-For %[req.hdr(X-Forwarded-For)] if { req.hdr(X-Forwarded-For) -m found }
+    - >-
+      http-request set-header X-WTG-Untrusted-Forwarded-For %[req.hdr(X-Forwarded-For)]
+      if { req.hdr(X-Forwarded-For) -m found }
     - http-request del-header X-Forwarded-For
     - http-request del-header X-Real-IP
     - http-request del-header X-Coming-From
