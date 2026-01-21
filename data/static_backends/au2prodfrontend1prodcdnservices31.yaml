@@ -2754,22 +2754,13 @@ www.pierbridge.com:
 
 partnerresources.pierbridge.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  http_health_check:
-    enabled: true
-    http_path: /
-    check_expect: '200'
-  cookie:
-    name: PIERB
-    mode: insert
-    options: [indirect, dynamic, nocache, httponly, secure]
-    attributes: 'SameSite=None'
-  servers:
-    - name: AU2CO-SIIS-403A
-      ip: 10.2.69.36
-      port: 80
-    - name: AU2CO-SIIS-403B
-      ip: 10.2.69.37
-      port: 80
+  full_override: |
+    backend partnerresources_pierbridge_com
+    option httpchk HEAD /healthcheck HTTP/1.1\r\nHost:\ partnerresources.pierbridge.com
+    http-check expect rstatus 200
+    cookie PIERB insert indirect dynamic nocache httponly secure attr "SameSite=None"
+    server AU2CO-SIIS-403A 10.2.69.36:80 check
+    server AU2CO-SIIS-403B 10.2.69.37:80 check
 
 smartfreight.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
