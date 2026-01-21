@@ -11,7 +11,7 @@ set_untrusted_xff_header:
 
 omit_unnecessary_response_headers:
   description: |-
-    Remove unnecessary response headers that could leak information about our webservers.
+    Remove client IP forwarding headers
   order: 2
   actions:
     - http-request del-header X-Forwarded-For
