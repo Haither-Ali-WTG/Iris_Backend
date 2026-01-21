@@ -723,9 +723,8 @@ myaccount-portal.cargowise.com:
   full_override:
     backend myaccount-portal_cargowise_com
     load-server-state-from-file none
-    - >-
-      option httpchk HEAD /myaccount/Login/LoginLite.aspx
-      HTTP/1.1\rnUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
+    option httpchk HEAD /myaccount/Login/LoginLite.aspx \
+    HTTP/1.1\rnUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
     timeout check 10s
     server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
