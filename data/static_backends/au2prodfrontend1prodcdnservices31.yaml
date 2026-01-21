@@ -707,7 +707,7 @@ app.borderwise.com:
       ip: 10.2.67.112
       port: 50035
 
-mmyaccount_cargowise_com:
+mmyaccount.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override:
     backend myaccount_cargowise_com
