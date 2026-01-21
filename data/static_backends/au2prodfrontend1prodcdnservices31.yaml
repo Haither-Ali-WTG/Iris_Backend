@@ -2758,6 +2758,11 @@ partnerresources.pierbridge.com:
     enabled: true
     http_path: /
     check_expect: '200'
+  cookie:
+    name: PIERB
+    mode: insert
+    options: [indirect, dynamic, nocache, httponly, secure]
+    attributes: 'SameSite=None'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
