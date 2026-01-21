@@ -1395,10 +1395,21 @@ tmp.borderwise.com-catchall:
     name: TMP
   http_health_check:
     enabled: false
+    http_path: /
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
   servers:
-    - name: AU2WP-SIIS-402A
-      ip: 10.2.69.16
-      port: 80
-    - name: AU2WP-SIIS-402B
-      ip: 10.2.69.17
-      port: 80
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
