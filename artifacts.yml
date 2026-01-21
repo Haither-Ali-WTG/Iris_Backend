@@ -7,12 +7,12 @@ variables:
   # 20a69c9e00b82c25bef2ce83e019226779cf17ec
   dante_build_id: '1589064'
 
-  # virgil 20260121.8
-  # Wed Jan 21 01:04:01 UTC 2026 -- Wed Jan 21 12:04:01 AEDT 2026
+  # virgil 20260121.15
+  # Wed Jan 21 04:20:55 UTC 2026 -- Wed Jan 21 15:20:55 AEDT 2026
   #
-  # Merged PR 44310: Device42: Limit deployment to a set of nodes and use put instead of post
-  # da84edba026c847138f3a93fdf5dd81699575bd6
-  virgil_build_id: '1589007'
+  # Merged PR 44341: Unpin and fix packages to prepare Device 42 requirements merge
+  # 4b4bcb9ce023861905800c74905f2942227c3eb0
+  virgil_build_id: '1589213'
 
   # sqlbilling 20260121.2
   # Tue Jan 20 16:10:11 UTC 2026 -- Wed Jan 21 03:10:11 AEDT 2026
