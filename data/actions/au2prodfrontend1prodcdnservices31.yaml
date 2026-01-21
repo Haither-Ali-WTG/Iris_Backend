@@ -155,7 +155,9 @@ https_redirects:
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_borderwise_com !{ ssl_fc }
     - redirect scheme https if star_shipamax_com !{ ssl_fc }
-    - redirect scheme https if star_cargowise_com !{ ssl_fc } !cargowise_com_exluded_from_default_redirect !cargowise_com_myaccount_services_path
+    - >-
+      redirect scheme https if star_cargowise_com !{ ssl_fc }
+      !cargowise_com_exluded_from_default_redirect !cargowise_com_myaccount_services_path
     - redirect scheme https if star_cargowise_net !{ ssl_fc } !cargowise_net_exluded_from_default_redirect
 
 corporate_domain_redirects:
