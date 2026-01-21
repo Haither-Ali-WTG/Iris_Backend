@@ -753,26 +753,6 @@ redirects_to_account_parkable_com_urls:
   tests:
     - hdr(host),field(1,:) -m reg -i ^parkable\.wisetechglobal\.com$
 
-meraki_redirected_urls:
-  description: "Meraki domains that redirect to dashboard"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^meraki\.wisetechglobal\.com$
-    - hdr(host),field(1,:) -m reg -i ^meraki\.wtg\.zone$
-
-office365_sharepoint_redirected_urls:
-  description: "Office365 SharePoint redirected domains"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^force\.wisetechglobal\.com$
-    - hdr(host),field(1,:) -m reg -i ^force\.wtg\.zone$
-    - hdr(host),field(1,:) -m reg -i ^source\.wisetechglobal\.com$
-    - hdr(host),field(1,:) -m reg -i ^source\.wtg\.zone$
-
-office365_portal_redirected_urls:
-  description: "Office365 portal redirected domains"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^portal\.wisetechglobal\.com$
-    - hdr(host),field(1,:) -m reg -i ^portal\.wtg\.zone$
-
 linkedinlearning_redirected_urls:
   description: "LinkedIn Learning redirected domains"
   tests:
@@ -782,8 +762,3 @@ stackoverflow_redirected_urls:
   description: "Stack Overflow redirected domains"
   tests:
     - hdr(host),field(1,:) -m reg -i ^stackoverflow\.wisetechglobal\.com$
-
-fraedom_redirected_urls:
-  description: "Fraedom expenses redirected domains"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^expenses\.wisetechglobal\.com$
