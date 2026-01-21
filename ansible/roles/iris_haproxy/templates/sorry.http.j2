@@ -9,26 +9,32 @@ Content-Type: text/html
 </head>
 <body style="font-family:Arial; margin: 30px;">
 <h1>This website is currently undergoing maintenance</h1>
-<h2>Please check back soon.</h2><p>My Account and eRequests have a daily maintenance window from 7:00am - 7:10am <span id="timezone">Australian Eastern Time</span>. Your patience is appreciated as we deploy enhancements to our product.</p>
+<h2>Please check back soon.</h2>
+<p>My Account and eRequests have a daily maintenance window from 7:00am - 7:10am <span id="timezone">Australian Eastern Time</span>. Your patience is appreciated as we deploy enhancements to our product.</p>
 
 <script>
-(function () {
-  try {
-    if (window.Intl && Intl.DateTimeFormat) {
-      const parts = new Intl.DateTimeFormat("en-AU", {
-        timeZone: "Australia/Sydney",
-        timeZoneName: "long"
-      }).formatToParts(new Date());
+cur_url = new URL(window.location.href)
+if (cur_url.hostname.match(/myaccount(?:-portal)?\.cargowise\.com$/)) {
+  document.getElementById('myaccount_message').style.display = 'block';
 
-      const tzPart = parts.find(p => p.type === "timeZoneName");
-      if (tzPart) {
-        document.getElementById("timezone").textContent = tzPart.value;
+  (function () {
+    try {
+      if (window.Intl && Intl.DateTimeFormat) {
+        const parts = new Intl.DateTimeFormat("en-AU", {
+          timeZone: "Australia/Sydney",
+          timeZoneName: "long"
+        }).formatToParts(new Date());
+
+        const tzPart = parts.find(p => p.type === "timeZoneName");
+        if (tzPart) {
+          document.getElementById("timezone").textContent = tzPart.value;
+        }
       }
+    } catch (e) {
+      // fallback: Do nothing.
     }
-  } catch (e) {
-    // fallback: Do nothing.
-  }
-})();
+  })();  
+}
 </script>
 
 </body>
