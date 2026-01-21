@@ -3134,3 +3134,386 @@ tailwindtransportationsoftware.com:
     - name: AU2CO-SIIS-403B
       ip: 10.2.69.37
       port: 80
+
+# Search Services
+search.cargowise.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+search.pierbridge.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+search.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+# Internal/Security Services
+forms.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+partners.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+# Polish Sadec Services
+sadec.pl:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+sadecwin.pl:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.sadec.pl:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.sadecwin.pl:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+# Opdimize Services
+opdimize.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+opdimize.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+opdimizer.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+opdimizer.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.opdimize.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.opdimize.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.opdimizer.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.opdimizer.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+# Other Corporate Sites
+bolero.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.bolero.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+envasetechnologies.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|301'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.envasetechnologies.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|301'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+exa-system.co.jp:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.exa-system.co.jp:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+inobiz.se:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.inobiz.se:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+shipamax.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.shipamax.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
