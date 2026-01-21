@@ -3121,20 +3121,6 @@ openits.co:
       ip: 10.2.69.37
       port: 80
 
-tailwindtransportationsoftware.com:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  http_health_check:
-    enabled: true
-    http_path: /
-    check_expect: '301'
-  servers:
-    - name: AU2CO-SIIS-403A
-      ip: 10.2.69.36
-      port: 80
-    - name: AU2CO-SIIS-403B
-      ip: 10.2.69.37
-      port: 80
-
 # Search Services
 search.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
