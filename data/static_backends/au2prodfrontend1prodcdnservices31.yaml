@@ -720,6 +720,7 @@ myaccount.cargowise.com:
     - name: AU2CO-SIIS-405B
       ip: 10.2.69.47
       port: 80
+      settings: backup
 
 myaccount-portal.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -735,6 +736,7 @@ myaccount-portal.cargowise.com:
     - name: AU2CO-SIIS-405B
       ip: 10.2.69.47
       port: 443
+      settings: backup
 
 myaccount-portal.cargowise.com.glow:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -750,6 +752,7 @@ myaccount-portal.cargowise.com.glow:
     - name: AU2CO-SIIS-405B
       ip: 10.2.69.47
       port: 443
+      settings: backup
 
 myaccount-portal.cargowise.com.portals:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -765,6 +768,7 @@ myaccount-portal.cargowise.com.portals:
     - name: AU2CO-SIIS-405B
       ip: 10.2.69.47
       port: 443
+      settings: backup
 
 portconnect.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
