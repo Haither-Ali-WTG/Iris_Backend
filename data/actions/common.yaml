@@ -1,25 +1,34 @@
 ---
 # common actions
-client_ip_vars:
+set_untrusted_xff_header:
   description: |-
-    Populate X-WTG-Untrusted-Forwarded-For, txn.client_ip and txn.traffic_src for logging/ACLs.
-    Delete any existing client IP forwarding headers to prevent spoofing.
-    txn.client_ip represents the end-user IP (direct or via Cloudflare).
-    Set X-Forwarded-For to txn.client_ip from CF-Connecting-IP for backend applications that rely on it.
+    Set X-WTG-Untrusted-Forwarded-For header for all requests
   order: 1
   actions:
     - >-
       http-request set-header X-WTG-Untrusted-Forwarded-For %[req.hdr(X-Forwarded-For)]
       if { req.hdr(X-Forwarded-For) -m found }
+
+omit_unnecessary_response_headers:
+  description: |-
+    Remove unnecessary response headers that could leak information about our webservers.
+  order: 2
+  actions:
     - http-request del-header X-Forwarded-For
     - http-request del-header X-Real-IP
     - http-request del-header X-Coming-From
+
+client_ip_vars:
+  description: |-
+    Populate txn.client_ip and txn.traffic_src for logging/ACLs.
+    txn.client_ip represents the end-user IP (direct or via Cloudflare).
+  order: 2
+  actions:
     - http-request set-var(txn.raw_client_ip) src
     - http-request set-var(txn.client_ip) src if !cloudflare_src
     - http-request set-var(txn.client_ip) hdr(CF-Connecting-IP) if cloudflare_src
     - http-request set-var(txn.traffic_src) str(direct) if !cloudflare_src
     - http-request set-var(txn.traffic_src) str(cloudflare) if cloudflare_src
-    - http-request set-header X-Forwarded-For %[var(txn.client_ip)]
 
 transport_security:
   description: |-
@@ -28,6 +37,13 @@ transport_security:
   actions:
     - http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
     - http-response set-header X-Content-Type-Options nosniff
+
+set_xff_header:
+  description: |-
+    Set X-Forwarded-For header based on txn.client_ip
+  order: 3
+  actions:
+    - http-request set-header X-Forwarded-For %[var(txn.client_ip)]
 
 omit_unnecessary_info:
   description: |-
