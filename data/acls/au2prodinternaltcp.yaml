@@ -18,18 +18,3 @@ acl_smtp587_au2mail_wisecloud_zone:
   description: au2mail PROD SMTP Port 587
   tests:
     - dst_port 3587
-
-acl_boltr_dat_9000_wtg_zone:
-  description: Boltr DAT Service Port 9000
-  tests:
-    - dst_port 3900
-
-acl_boltr_dat_9001_wtg_zone:
-  description: Boltr DAT Service Port 9001
-  tests:
-    - dst_port 3901
-
-acl_boltr_dat_9002_wtg_zone:
-  description: Boltr DAT Service Port 9002
-  tests:
-    - dst_port 3902
