@@ -361,6 +361,7 @@ abe.wisegrid.net:
     name: ABE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/status
     check_expect: '200|401|403'
   servers:
@@ -424,6 +425,7 @@ fms.wisegrid.net:
     name: FMS
   http_health_check:
     enabled: true
+    method: GET
     http_path: /api/v1/airevents/ping
     check_expect: '200'
   servers:
