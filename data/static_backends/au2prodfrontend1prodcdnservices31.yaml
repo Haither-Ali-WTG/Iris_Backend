@@ -715,9 +715,8 @@ myaccount.cargowise.com:
     option httpchk
     http-check send meth HEAD uri /en-us/Public.aspx ver HTTP/1.1 hdr host myaccount.cargowise.com
     http-check expect rstatus 200|301|302
-    timeout check 10s
-    server AU2CO-SIIS-405A 10.2.69.46:80 check inter 10s downinter 1s fall 5 maxconn 8000
-    server AU2CO-SIIS-405B 10.2.69.47:80 check backup
+    server AU2CO-SIIS-405A 10.2.69.46:80
+    server AU2CO-SIIS-405B 10.2.69.47:80 backup
 
 myaccount-portal.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -727,9 +726,8 @@ myaccount-portal.cargowise.com:
     option httpchk
     http-check send meth HEAD uri /myaccount/Login/LoginLite.aspx ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
-    timeout check 10s
-    server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
-    server AU2CO-SIIS-405B 10.2.69.47:443 inter 10s  downinter 1s fall 5 backup
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
 
 myaccount-portal.cargowise.com.glow:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -739,9 +737,8 @@ myaccount-portal.cargowise.com.glow:
     option httpchk
     http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
-    timeout check 10s
-    server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
-    server AU2CO-SIIS-405B 10.2.69.47:443 inter 10s  downinter 1s fall 5 backup
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
 
 myaccount-portal.cargowise.com.portals:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -751,9 +748,8 @@ myaccount-portal.cargowise.com.portals:
     option httpchk
     http-check send meth HEAD uri /Portals/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
-    timeout check 10s
-    server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
-    server AU2CO-SIIS-405B 10.2.69.47:443 inter 10s  downinter 1s fall 5 backup
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
 
 webservices.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -764,8 +760,8 @@ webservices.wisetechglobal.com:
     http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host webservices.wisetechglobal.com
     http-check expect rstatus 200|400
     cookie GLOW insert indirect nocache dynamic secure
-    server AU2CO-SIIS-405A 10.2.69.46:443
-    server AU2CO-SIIS-405B 10.2.69.47:443
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl
 
 portconnect.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
