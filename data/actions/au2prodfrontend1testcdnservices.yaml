@@ -1,12 +1,4 @@
 ---
-remove_forwarded_headers_for_exempt_hosts:
-  description: |-
-    Remove client IP forwarding headers for exempted hosts
-  order: 2
-  actions:
-    - http-request del-header X-Real-IP if xforwarderfor_excempt_urls
-    - http-request del-header X-Coming-From if xforwarderfor_excempt_urls
-
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
