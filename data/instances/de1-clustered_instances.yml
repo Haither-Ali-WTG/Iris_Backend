@@ -409,7 +409,7 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext:
-            - 30280  # # redis.urs.wisegrid.net
+            - 30280  # redis.urs.wisegrid.net
       stats:
         ports:
           web: 2345
@@ -417,5 +417,3 @@ clustered_instances:
       machine_cluster: de1-prod-internal-1
       iis_servers: []
       certificates: []
-
-
