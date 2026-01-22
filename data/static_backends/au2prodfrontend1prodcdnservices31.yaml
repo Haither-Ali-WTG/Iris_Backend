@@ -707,9 +707,9 @@ app.borderwise.com:
       ip: 10.2.67.112
       port: 50035
 
-mmyaccount.cargowise.com:
+myaccount.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override:
+  full_override: |
     backend myaccount_cargowise_com
     load-server-state-from-file none
     option httpchk HEAD /en-us/Public.aspx HTTP/1.1\r\nHost:\ myaccount.cargowise.com
@@ -720,7 +720,7 @@ mmyaccount.cargowise.com:
 
 myaccount-portal.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override:
+  full_override: |
     backend myaccount-portal_cargowise_com
     load-server-state-from-file none
     option httpchk HEAD /myaccount/Login/LoginLite.aspx \
@@ -732,7 +732,7 @@ myaccount-portal.cargowise.com:
 
 myaccount-portal.cargowise.com.glow:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override:
+  full_override: |
     backend myaccount-portal_cargowise_com_glow
     load-server-state-from-file none
     option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
@@ -743,7 +743,7 @@ myaccount-portal.cargowise.com.glow:
 
 myaccount-portal.cargowise.com.portals:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override:
+  full_override: |
     backend myaccount-portal_cargowise_com_portals
     load-server-state-from-file none
     option httpchk HEAD /Portals/wtg/ready HTTP/1.1\r\nUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
@@ -754,7 +754,7 @@ myaccount-portal.cargowise.com.portals:
 
 webservices.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override:
+  full_override: |
     backend webservices_wisetechglobal_com
     load-server-state-from-file none
     option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nHost:\ webservices.wisetechglobal.com
