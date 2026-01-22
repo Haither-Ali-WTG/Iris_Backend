@@ -15,8 +15,6 @@ omit_unnecessary_response_headers:
   order: 2
   actions:
     - http-request del-header X-Forwarded-For
-    - http-request del-header X-Real-IP
-    - http-request del-header X-Coming-From
 
 client_ip_vars:
   description: |-
