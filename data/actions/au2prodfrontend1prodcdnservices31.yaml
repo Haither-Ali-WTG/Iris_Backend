@@ -93,7 +93,7 @@ myaccount_portal_cargowise_com_backend:
 access_control_deny:
   description: |-
     Access control rules for corporate sites
-  order: 15
+  order: 25
   actions:
     - http-request deny if !wtg_src admin_denied_path wca_wtg_zone_host
     - http-request deny if !wtg_src exchange_denied_path
@@ -139,7 +139,7 @@ access_control_deny:
 external_service_redirects:
   description: |-
     Redirects to external authentication and service endpoints
-  order: 20
+  order: 79
   actions:
     - >-
       redirect location https://www.linkedin.com/checkpoint/enterprise/login/75714794
@@ -154,7 +154,7 @@ external_service_redirects:
 https_redirects:
   description: |-
     Force HTTPS for corporate domains
-  order: 25
+  order: 79
   actions:
     - redirect scheme https if group_wisetechglobal_com_certificate_covered_domains !{ ssl_fc }
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
@@ -169,7 +169,7 @@ https_redirects:
 corporate_domain_redirects:
   description: |-
     Corporate domain redirects and canonical URLs
-  order: 30
+  order: 79
   actions:
     - redirect prefix https://pierbridge.com code 301 if www_pierbridge_com
     - redirect prefix https://cargoguide.com code 301 if www_cargoguide_com
