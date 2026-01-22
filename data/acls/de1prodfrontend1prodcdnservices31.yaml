@@ -91,7 +91,7 @@ star_urs_wisegrid_net:
 
 wca_denied_paths:
   description: |-
-    Disallow admin and wtg paths for WCA production services
+    Disallow wtg paths for WCA production services
   tests:
     - path_reg -i ^\/wtg(.*?)$
 

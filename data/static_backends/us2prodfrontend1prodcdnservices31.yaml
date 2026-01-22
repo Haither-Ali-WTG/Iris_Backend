@@ -99,6 +99,7 @@ us2wcatoken.wisegrid.net:
     name: WCATFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: us2wp-swfe-401
@@ -108,10 +109,10 @@ us2wcatoken.wisegrid.net:
       ip: 10.4.69.100
       port: 80
     - name: us2wp-swfe-403
-      ip: 10.2.69.101
+      ip: 10.4.69.101
       port: 80
     - name: us2wp-swfe-404
-      ip: 10.2.69.102
+      ip: 10.4.69.102
       port: 80
 
 chiwca.wisegrid.net:
@@ -120,6 +121,7 @@ chiwca.wisegrid.net:
     name: WCAPFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: us2wp-swfe-401
@@ -129,10 +131,10 @@ chiwca.wisegrid.net:
       ip: 10.4.69.100
       port: 80
     - name: us2wp-swfe-403
-      ip: 10.2.69.101
+      ip: 10.4.69.101
       port: 80
     - name: us2wp-swfe-404
-      ip: 10.2.69.102
+      ip: 10.4.69.102
       port: 80
 
 portal-us.cwconnector.wisegrid.net:
