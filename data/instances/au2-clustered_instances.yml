@@ -399,8 +399,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: ediweb_oceanbridge_co_nz
           cms_resource_group: RG-AU-Prod
-        - name: neo_famous_com_sg
-          cms_resource_group: RG-AU-Prod
         - name: svc_jjlawson_com_au
           cms_resource_group: RG-AU-Prod
         - name: track_oceania_kln_com
@@ -442,8 +440,6 @@ clustered_instances:
         - name: webtrack_axima_com_au
           cms_resource_group: RG-AU-Prod
         - name: webtrack_gava_com_au
-          cms_resource_group: RG-AU-Prod
-        - name: webtracker_famous_com_sg
           cms_resource_group: RG-AU-Prod
         - name: webtracker_fsmac_com
           cms_resource_group: RG-AU-Prod
