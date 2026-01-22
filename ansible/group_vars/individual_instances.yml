@@ -53,3 +53,6 @@ individual_instance_defaults:
     http_request: 60
     queue: 30
     tarpit: 60
+
+  features:
+    log_hit_acl: false

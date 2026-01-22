@@ -97,6 +97,7 @@
         - stats
         - defaults
         - custom_defaults
+        - features
         - frontend
         - cipher
         - timeouts
