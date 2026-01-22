@@ -1,5 +1,5 @@
 ---
-redis.uat.urs.wisegrid.net:
+redis.urs.wisegrid.net:
   clustered_instances: [de1prodinternaltcp]
   http_health_check:
     enabled: false
