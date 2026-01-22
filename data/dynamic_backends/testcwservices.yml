@@ -1,6 +1,6 @@
 ---
 # Glow
-- name_regex: ^www-[A-Za-z0-9]{6}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^www-[A-Za-z0-9]{6,8}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
     enabled: true
@@ -14,7 +14,7 @@
   name_suffix: '-glow'
 
 # Glow (Portals)
-- name_regex: ^www-[A-Za-z0-9]{6}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^www-[A-Za-z0-9]{6,8}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
     enabled: true
@@ -28,7 +28,7 @@
   name_suffix: ''
 
 # Glow (Services)
-- name_regex: ^svc-[A-Za-z0-9]{6}\.(wisegrid|wisetechglobal)\.(net|cn)$
+- name_regex: ^svc-[A-Za-z0-9]{6,8}\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
   http_health_check:
     enabled: true

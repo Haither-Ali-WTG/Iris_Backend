@@ -68,6 +68,23 @@ custom_url_actions:
     - use_backend wfring_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackingus.weidafreight.com }
     - use_backend widprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.wideline.biz }
     - use_backend wlgtgp_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cw1.go2tigers.com }
+    - use_backend us0sna_webtracker_wisegrid_net if { hdr(host),field(1,:) -i us0snachb.webtracker.wisegrid.net }
+    - use_backend lmjewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i lmjewr2.webtracker.wisegrid.net }
+    - use_backend boaprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i boaprd2.webtracker.wisegrid.net }
+    - use_backend md2prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i md2prd2.webtracker.wisegrid.net }
+    - use_backend acuhst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i acuhst2.webtracker.wisegrid.net }
+    - use_backend aidprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i aidprd2.webtracker.wisegrid.net }
+    - use_backend te6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i te6prd2.webtracker.wisegrid.net }
+    - use_backend xxxor1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i xxxor1nowwebtracker.wisegrid.net }
+    - use_backend xxxor1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i xxxor1schenkerwebtracker.wisegrid.net }
+    - use_backend i95prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i i95prd2.webtracker.wisegrid.net }
+    - use_backend m1aent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i m1aent2.webtracker.wisegrid.net }
+    - use_backend malmem_webtracker_wisegrid_net if { hdr(host),field(1,:) -i malmem2.webtracker.wisegrid.net }
+    - use_backend malmem_webtracker_wisegrid_net if { hdr(host),field(1,:) -i malmem3.webtracker.wisegrid.net }
+    - use_backend malmem_webtracker_wisegrid_net if { hdr(host),field(1,:) -i malmem575.webtracker.wisegrid.net }
+    - use_backend fmvprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i fmvprd2.webtracker.wisegrid.net }
+    - use_backend un4cle_webtracker_wisegrid_net if { hdr(host),field(1,:) -i un4clewds.webtracker.wisegrid.net }
+    - use_backend bdgord_webtracker_wisegrid_net if { hdr(host),field(1,:) -i bdgord2.webtracker.wisegrid.net }
     ### GLOW
     - use_backend www-elllax_wisegrid_net if { hdr(host),field(1,:) -i portals.extralogistics.com }
     - use_backend www-aetprd_wisegrid_net if { hdr(host),field(1,:) -i aetnatracking.com }
@@ -81,3 +98,7 @@ custom_url_actions:
     - use_backend www-nmxprd_wisegrid_net if { hdr(host),field(1,:) -i clientes.nowports.com }
     - use_backend www-t94prd_wisegrid_net if { hdr(host),field(1,:) -i trax.tqlglobal.com }
     - use_backend www-mfilve_wisegrid_net if { hdr(host),field(1,:) -i purchaseordermanagement.mainchain.net }
+    ### eAdaptor
+    - use_backend knapr1services_wisegrid_net if { hdr(host),field(1,:) -i knapr1services2.wisegrid.net }
+    - use_backend a21slcservices_wisegrid_net if { hdr(host),field(1,:) -i a21slc2services.wisegrid.net }
+    - use_backend a21slcaccounting_wisegrid_net if { hdr(host),field(1,:) -i a21slc2accounting.wisegrid.net }

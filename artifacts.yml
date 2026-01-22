@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260119.2
-  # Mon Jan 19 03:41:12 UTC 2026 -- Mon Jan 19 14:41:12 AEDT 2026
+  # Dante Build Artifact 20260122.1
+  # Wed Jan 21 23:40:50 UTC 2026 -- Thu Jan 22 10:40:50 AEDT 2026
   #
-  # Merge pull request 44206 from dante_artifact_upgrade into master
-  # 3540fad32d3b360fedc37e2fec1f21550547f860
-  dante_build_id: '1586929'
+  # Merge pull request 44375 from dante_artifact_upgrade into master
+  # 60c3122a98ea29c77c96e7d318b774bb0e830c4d
+  dante_build_id: '1590114'
 
-  # virgil 20260119.11
-  # Mon Jan 19 02:53:33 UTC 2026 -- Mon Jan 19 13:53:33 AEDT 2026
+  # virgil 20260122.3
+  # Wed Jan 21 23:03:19 UTC 2026 -- Thu Jan 22 10:03:19 AEDT 2026
   #
-  # Merged PR 44202: create topics for request cs02202686
-  # 0a2a60608879ded3f98b8e894ecf7e5c4758b373
-  virgil_build_id: '1586865'
+  # Merged PR 44374: Merged Device42 specific and virgil only requiremets
+  # 787c1090b503dbe301576e03a59c9e8187ff77d3
+  virgil_build_id: '1590068'
 
-  # sqlbilling 20260119.1
-  # Mon Jan 19 10:50:23 UTC 2026 -- Mon Jan 19 21:50:23 AEDT 2026
+  # sqlbilling 20260121.4
+  # Wed Jan 21 12:16:48 UTC 2026 -- Wed Jan 21 23:16:48 AEDT 2026
   #
-  # Merged PR 44168: AddSQLReadOnly IP AU2
-  # a553e548354b2535eca1920249fc14a28b6104e8
-  sqlbilling_build_id: '1587230'
+  # Merged PR 44369: AddSQLReadOnly IP US2
+  # 32820da7cd3ab8e8dda14203e962dd36e8c7e3bc
+  sqlbilling_build_id: '1589605'

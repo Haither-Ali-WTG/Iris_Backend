@@ -15,7 +15,7 @@ ansible-core==2.20.1
     #   ansible
     #   ansible-compat
     #   ansible-lint
-ansible-lint==26.1.0
+ansible-lint==26.1.1
     # via -r requirements.in
 anyio==4.12.1
     # via httpx
@@ -32,9 +32,9 @@ authlib==1.6.6
     # via safety
 awscli==1.36.40
     # via -r requirements.in
-bandit==1.9.2
+bandit==1.9.3
     # via -r requirements.in
-black==25.12.0
+black==26.1.0
     # via ansible-lint
 botocore==1.35.99
     # via
@@ -72,7 +72,7 @@ cryptography==46.0.3
     #   authlib
     #   pyspnego
     #   requests-ntlm
-dill==0.4.0
+dill==0.4.1
     # via pylint
 distro==1.9.0
     # via ansible-lint
@@ -109,7 +109,7 @@ jmespath==1.0.1
     # via botocore
 joblib==1.5.3
     # via nltk
-jq==1.10.0
+jq==1.11.0
     # via -r requirements.in
 jsonschema==4.26.0
     # via
@@ -117,7 +117,7 @@ jsonschema==4.26.0
     #   ansible-lint
 jsonschema-specifications==2025.9.1
     # via jsonschema
-librt==0.7.7
+librt==0.7.8
     # via mypy
 markdown-it-py==4.0.0
     # via rich
@@ -151,7 +151,7 @@ packaging==25.0
     #   pytest
     #   safety
     #   safety-schemas
-pathspec==0.12.1
+pathspec==1.0.3
     # via
     #   ansible-lint
     #   black
@@ -165,7 +165,7 @@ pluggy==1.6.0
     # via
     #   pytest
     #   pytest-cov
-pyasn1==0.6.1
+pyasn1==0.6.2
     # via rsa
 pycparser==2.23
     # via cffi
@@ -194,7 +194,7 @@ pytest-subtests==0.15.0
     # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via botocore
-pytokens==0.3.0
+pytokens==0.4.0
     # via black
 pywinrm==0.5.0
     # via -r requirements.in
@@ -213,7 +213,7 @@ referencing==0.37.0
     #   ansible-lint
     #   jsonschema
     #   jsonschema-specifications
-regex==2025.11.3
+regex==2026.1.15
     # via nltk
 requests==2.32.5
     # via
@@ -259,7 +259,7 @@ subprocess-tee==0.4.2
     #   ansible-lint
 tenacity==9.1.2
     # via safety
-tomlkit==0.13.3
+tomlkit==0.14.0
     # via
     #   pylint
     #   safety
@@ -298,7 +298,7 @@ xmltodict==1.0.2
     #   yq
 yamale==6.1.0
     # via -r requirements.in
-yamllint==1.37.1
+yamllint==1.38.0
     # via
     #   -r requirements.in
     #   ansible-lint

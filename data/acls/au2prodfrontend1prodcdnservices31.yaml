@@ -64,3 +64,13 @@ star_tmp_borderwise_com:
   description: "*.tmp.borderwise.com borderwise tariff management production service"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?tmp\.borderwise\.com$
+
+cargowise_com_myaccount_denied_paths:
+  description: |-
+    denied paths for myaccount-portal.cargowise.com
+  tests:
+    - path_reg -i ^\/myaccount\/Services\/LoginService.svc(.*)?$
+    - path_reg -i ^\/myaccount\/Services\/SubscriptionPrefernceService.svc(.*)?$
+    - path_reg -i ^\/myaccount\/gateway\/authorize_via_login_router(.*)?$
+    - path_reg -i ^\/myaccount\/api\/JobApplication\/CreateJobApplication(.*)?$
+    - path_reg -i ^\/myaccount\/api\/BorderWise(.*)?$
