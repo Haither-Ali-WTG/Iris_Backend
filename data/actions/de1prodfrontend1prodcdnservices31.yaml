@@ -13,6 +13,13 @@ peppol_ap_allow_as4_path:
   actions:
     - http-request deny if !peppol_ap_as4_allow_path peppol-ap-prod_wisegrid_net
 
+wca_denied_actions:
+  description: |-
+    HTTP-request deny for WCA production services denied paths
+  order: 59
+  actions:
+    - http-request deny if !wtg_src wca_denied_paths wca_prod_url
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path

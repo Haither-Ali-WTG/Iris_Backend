@@ -88,3 +88,16 @@ star_urs_wisegrid_net:
   description: "*.urs.wisegrid.net"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?urs\.wisegrid\.net$
+
+wca_denied_paths:
+  description: |-
+    Disallow admin and wtg paths for WCA production services
+  tests:
+    - path_reg -i ^\/wtg(.*?)$
+
+wca_prod_url:
+  description: |-
+    Hostnames for WCA production services
+  tests:
+    - hdr(host),field(1,:) -i de1wcatoken.wisegrid.net
+    - hdr(host),field(1,:) -i de1wca.wisegrid.net

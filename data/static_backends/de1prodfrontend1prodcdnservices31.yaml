@@ -84,6 +84,7 @@ de1wcatoken.wisegrid.net:
     name: WCATFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: de1wp-swfe-401
@@ -105,6 +106,7 @@ de1wca.wisegrid.net:
     name: WCAPFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: de1wp-swfe-401
