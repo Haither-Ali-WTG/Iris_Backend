@@ -62,3 +62,30 @@ compliance_borderwise_backend:
   order: 80
   actions:
     - use_backend compliance-au_borderwise_com if compliance_borderwise_com
+
+deny_myaccount_protected_paths:
+  description: |-
+    Deny access to MyAccount protected paths
+  order: 25
+  actions:
+    - >-
+      http-request deny if
+      !wtg_src { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } cargowise_com_myaccount_denied_paths
+    - >-
+      http-request deny if
+      !wtg_src { hdr(host),field(1,:) -i myaccount.cargowise.com } { path_beg -i /SuperuserLogin.aspx }
+
+myaccount_portal_cargowise_com_backend:
+  description: |-
+    Direct Glow or Portals requests for myaccount-portal.cargowise.com to the the right backend
+  order: 80
+  actions:
+    - >-
+      use_backend myaccount-portal_cargowise_com_glow if
+      { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } { path_beg -i /Glow/ }
+    - >-
+      use_backend myaccount-portal_cargowise_com_portals if
+      { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } { path_beg -i /Portals/ }
+    - >-
+      use_backend myaccount-portal_cargowise_com if
+      { hdr(host),field(1,:) -m reg -i ^(www\.)?cargowise\.com$ } { path_beg -i /myaccount }

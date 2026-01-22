@@ -32,7 +32,7 @@ star_webtracker_wisegrid_net:
 www-star_wisegrid_net:
   description: "www-*.wisegrid.net"
   tests:
-    - hdr(host),field(1,:) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^www-[A-Za-z0-9]{6,8}(-cn)?\.wisegrid\.net$
 
 glow_webservice_path:
   description: |-
