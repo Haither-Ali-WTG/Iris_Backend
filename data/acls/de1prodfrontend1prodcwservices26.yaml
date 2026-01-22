@@ -39,3 +39,17 @@ glow_webservice_path:
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
+
+t89_xndt:
+  description: "t89prdxndt.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -i t89prdxndt.wisegrid.net
+
+t89_allowed_ips:
+  description: these IPs that are specifically allowed to connect to T89 XNDT webservice
+  tests:
+    - src 195.235.205.0/27
+    - src 195.235.205.5
+    - src 213.4.19.245
+    # Sam Test
+    - src 220.233.32.106

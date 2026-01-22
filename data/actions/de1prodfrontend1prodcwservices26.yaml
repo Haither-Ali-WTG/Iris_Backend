@@ -57,3 +57,11 @@ custom_url_actions:
     ### GLOW
     - use_backend www-dehprd_wisegrid_net if { hdr(host),field(1,:) -i customerportal.deugro.com }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
+
+xndt_url_workaround:
+  description: |-
+    Deny any connections to XNDT webservices if not from WTG or T89 allowed IPs
+  order: 81
+  actions:
+    - http-request deny if t89_xndt !t89_allowed_ips
+    - http-request deny if t89_xndt !wtg_src
