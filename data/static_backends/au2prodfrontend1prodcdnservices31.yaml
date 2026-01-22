@@ -712,7 +712,8 @@ myaccount.cargowise.com:
   full_override: |
     backend myaccount_cargowise_com
     load-server-state-from-file none
-    option httpchk HEAD /en-us/Public.aspx HTTP/1.1\r\nHost:\ myaccount.cargowise.com
+    option httpchk
+    http-check send meth HEAD uri /en-us/Public.aspx ver HTTP/1.1 hdr host myaccount.cargowise.com
     http-check expect rstatus 200|301|302
     timeout check 10s
     server AU2CO-SIIS-405A 10.2.69.46:80 check inter 10s downinter 1s fall 5 maxconn 8000
@@ -723,8 +724,8 @@ myaccount-portal.cargowise.com:
   full_override: |
     backend myaccount-portal_cargowise_com
     load-server-state-from-file none
-    option httpchk HEAD /myaccount/Login/LoginLite.aspx \
-    HTTP/1.1\rnUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
+    option httpchk
+    http-check send meth HEAD uri /myaccount/Login/LoginLite.aspx ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
     timeout check 10s
     server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
@@ -735,7 +736,8 @@ myaccount-portal.cargowise.com.glow:
   full_override: |
     backend myaccount-portal_cargowise_com_glow
     load-server-state-from-file none
-    option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
+    option httpchk
+    http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
     timeout check 10s
     server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
@@ -746,7 +748,8 @@ myaccount-portal.cargowise.com.portals:
   full_override: |
     backend myaccount-portal_cargowise_com_portals
     load-server-state-from-file none
-    option httpchk HEAD /Portals/wtg/ready HTTP/1.1\r\nUser-Agent:\ Mozilla/5.0\r\nHost:\ myaccount-portal.cargowise.com
+    option httpchk
+    http-check send meth HEAD uri /Portals/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
     http-check expect rstatus 200|301|302
     timeout check 10s
     server AU2CO-SIIS-405A 10.2.69.46:443 inter 10s  downinter 1s fall 5 maxconn 5000
@@ -757,7 +760,8 @@ webservices.wisetechglobal.com:
   full_override: |
     backend webservices_wisetechglobal_com
     load-server-state-from-file none
-    option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nHost:\ webservices.wisetechglobal.com
+    option httpchk
+    http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host webservices.wisetechglobal.com
     http-check expect rstatus 200|400
     cookie GLOW insert indirect nocache dynamic secure
     server AU2CO-SIIS-405A 10.2.69.46:443
