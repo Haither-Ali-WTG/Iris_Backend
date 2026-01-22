@@ -55,7 +55,6 @@ custom_url_actions:
     - use_backend dtksgn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i e-business.tmforwarding.com }
     - use_backend eplsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.eplint.com }
     - use_backend excsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.excellogistics.com.au }
-    - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.famous.com.sg }
     - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.fsmac.com }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.fracht.com.au }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
@@ -77,5 +76,4 @@ custom_url_actions:
     - use_backend sumsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.sgl.com.au }
     - use_backend tmssyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.totalmaritime.com.au }
     ### GLOW
-    - use_backend www-famsin_wisegrid_net if { hdr(host),field(1,:) -i neo.famous.com.sg }
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }

@@ -709,66 +709,59 @@ app.borderwise.com:
 
 myaccount.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  http_health_check:
-    enabled: true
-    http_path: /en-us/Public.aspx
-    check_expect: '200|301|302'
-  servers:
-    - name: AU2CO-SIIS-405A
-      ip: 10.2.69.46
-      port: 80
-    - name: AU2CO-SIIS-405B
-      ip: 10.2.69.47
-      port: 80
-      settings: backup
+  full_override: |
+    backend myaccount_cargowise_com
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /en-us/Public.aspx ver HTTP/1.1 hdr host myaccount.cargowise.com
+    http-check expect rstatus 200|301|302
+    server AU2CO-SIIS-405A 10.2.69.46:80
+    server AU2CO-SIIS-405B 10.2.69.47:80 backup
 
 myaccount-portal.cargowise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  encryption: true
-  http_health_check:
-    enabled: true
-    http_path: /myaccount/Login/LoginLite.aspx
-    check_expect: '200|301|302'
-  servers:
-    - name: AU2CO-SIIS-405A
-      ip: 10.2.69.46
-      port: 443
-    - name: AU2CO-SIIS-405B
-      ip: 10.2.69.47
-      port: 443
-      settings: backup
+  full_override: |
+    backend myaccount-portal_cargowise_com
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /myaccount/Login/LoginLite.aspx ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
+    http-check expect rstatus 200|301|302
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
 
 myaccount-portal.cargowise.com.glow:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  encryption: true
-  http_health_check:
-    enabled: true
-    http_path: /Glow/wtg/ready
-    check_expect: '200|301|302'
-  servers:
-    - name: AU2CO-SIIS-405A
-      ip: 10.2.69.46
-      port: 443
-    - name: AU2CO-SIIS-405B
-      ip: 10.2.69.47
-      port: 443
-      settings: backup
+  full_override: |
+    backend myaccount-portal_cargowise_com_glow
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
+    http-check expect rstatus 200|301|302
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
 
 myaccount-portal.cargowise.com.portals:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  encryption: true
-  http_health_check:
-    enabled: true
-    http_path: /Portals/wtg/ready
-    check_expect: '200|301|302'
-  servers:
-    - name: AU2CO-SIIS-405A
-      ip: 10.2.69.46
-      port: 443
-    - name: AU2CO-SIIS-405B
-      ip: 10.2.69.47
-      port: 443
-      settings: backup
+  full_override: |
+    backend myaccount-portal_cargowise_com_portals
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /Portals/wtg/ready ver HTTP/1.1 hdr host myaccount-portal.cargowise.com
+    http-check expect rstatus 200|301|302
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl backup
+
+webservices.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend webservices_wisetechglobal_com
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host webservices.wisetechglobal.com
+    http-check expect rstatus 200|400
+    cookie GLOW insert indirect nocache dynamic secure
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl
 
 portconnect.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -785,23 +778,6 @@ portconnect.wisegrid.net:
     - name: AU2WP-SDKR-2
       ip: 10.2.67.112
       port: 42201
-
-webservices.wisetechglobal.com:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: GLOW
-  encryption: true
-  http_health_check:
-    enabled: true
-    http_path: /Glow/wtg/ready
-    check_expect: '200|400'
-  servers:
-    - name: AU2CO-SIIS-405A
-      ip: 10.2.69.46
-      port: 443
-    - name: AU2CO-SIIS-405B
-      ip: 10.2.69.47
-      port: 443
 
 errors.cargowise.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
@@ -1393,31 +1369,30 @@ updates.cargowise.com:
       port: 80
       settings: backup
 
-tl1web2.wisegrid.net:
+tmp.borderwise.com-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
-    name: TLX
+    name: TMP
   http_health_check:
-    enabled: true
-    http_path: "/"
-    check_expect: "200|401|403|302|405"
+    enabled: false
+    http_path: /
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
   servers:
-    - name: AU2WP-SWEB-100
-      ip: 10.2.69.85
-      port: 80
-
-maps.gps.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: TLX
-  http_health_check:
-    enabled: true
-    http_path: "/"
-    check_expect: "200|401|403|302|405"
-  servers:
-    - name: AU2WP-SWEB-100
-      ip: 10.2.69.85
-      port: 80
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
 
 # Corporate Sites
 borderwise.com:
