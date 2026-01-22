@@ -1,0 +1,7 @@
+---
+redis_urs_wisegrid_net:
+  description: |-
+    Uses backend for urs_redis_wisegrid_zone for acl_redis_urs_wisegrid_net
+  order: 80
+  actions:
+    - use_backend redis_urs_wisegrid_net if acl_redis_urs_wisegrid_net wtg_src
