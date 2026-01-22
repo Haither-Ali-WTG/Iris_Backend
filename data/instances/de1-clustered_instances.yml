@@ -399,3 +399,23 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+
+    de1prodinternaltcp:
+      # de1-prod-internal-tcp
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 30280  # # redis.urs.wisegrid.net
+      stats:
+        ports:
+          web: 2345
+          socket: 2346
+      machine_cluster: de1-prod-internal-1
+      iis_servers: []
+      certificates: []
+
+

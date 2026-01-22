@@ -1,0 +1,5 @@
+---
+acl_redis_urs_wisegrid_net:
+  description: urs redis prod port
+  tests:
+    - dst_port 30280

@@ -1,0 +1,21 @@
+---
+redis.uat.urs.wisegrid.net:
+  clustered_instances: [de1-prod-internal-1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: w1.de1prod1
+      ip: 10.3.237.15
+      port: 30280
+    - name: w2.de1prod1
+      ip: 10.3.237.16
+      port: 30280
+    - name: w3.de1prod1
+      ip: 10.3.237.17
+      port: 30290
+    - name: w4.de1prod1
+      ip: 10.3.237.18
+      port: 30280
+    - name: w5.de1prod1
+      ip: 10.3.237.19
+      port: 30280
