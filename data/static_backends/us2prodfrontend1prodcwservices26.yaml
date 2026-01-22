@@ -1,0 +1,14 @@
+---
+css.webtracker.wisegrid.net:
+  clustered_instances: [us2prodfrontend1prodcwservices26]
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  servers:
+    - name: us2wp-sweb-405a
+      ip: 10.4.66.82
+      port: 80
+    - name: us2wp-sweb-405b
+      ip: 10.4.66.83
+      port: 80
