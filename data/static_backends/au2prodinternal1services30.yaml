@@ -158,19 +158,16 @@ customsconnector-test-internal.wisegrid.net:
       ip: 10.2.69.78
       port: 80
 
-cs.wtg.zone:
+au.cs.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: true
-  servers:
-    - name: au2wp-siis-407a
-      ip: 10.2.69.90
-      port: 443
-    - name: au2wp-siis-407b
-      ip: 10.2.69.91
-      port: 443
+  full_override: |
+    backend cs_wtg_zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host cs.wtg.zone hdr X-Forwarded-Proto https
+    http-check expect rstatus 200|401|403|302|405
+    default-server inter 10000 ssl
+    server au2wp-siis-407a 10.2.69.90:443 check
+    server au2wp-siis-407b 10.2.69.91:443 check
 
 api-ais.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
