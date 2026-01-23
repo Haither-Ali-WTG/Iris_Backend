@@ -289,19 +289,16 @@ peppol-ap-prod-service.wisetechglobal.com:
       ip: 10.3.69.130
       port: 18080
 
-cs.wtg.zone:
+de.cs.wtg.zone:
   clustered_instances: [de1prodinternal1services30]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: true
-  servers:
-    - name: de1wp-siis-407a
-      ip: 10.3.69.90
-      port: 443
-    - name: de1wp-siis-407b
-      ip: 10.3.69.91
-      port: 443
+  full_override: |
+    backend cs_wtg_zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host cs.wtg.zone hdr X-Forwarded-Proto https
+    http-check expect rstatus 200|401|403|302|405
+    default-server inter 10000 ssl
+    server de1wp-siis-407a 10.3.69.90:443 check
+    server de1wp-siis-407b 10.3.69.91:443 check
 
 de1prodfrontend1testcdnservices.wtg.zone:
   clustered_instances: [de1prodinternal1services30]
