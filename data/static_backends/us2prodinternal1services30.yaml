@@ -73,16 +73,13 @@ runtimeapi-us2.cwconnector.wisegrid.net:
       ip: 10.4.88.156
       port: 5443
 
-cs.wtg.zone:
+us.cs.wtg.zone:
   clustered_instances: [us2prodinternal1services30]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: true
-  servers:
-    - name: us2wp-siis-407a
-      ip: 10.4.67.90
-      port: 443
-    - name: us2wp-siis-407b
-      ip: 10.4.67.91
-      port: 443
+  full_override: |
+    backend cs_wtg_zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host cs.wtg.zone hdr X-Forwarded-Proto https
+    http-check expect rstatus 200|401|403|302|405
+    default-server inter 10000 ssl
+    server us2wp-siis-407a 10.4.67.90:443 check
+    server us2wp-siis-407b 10.4.67.91:443 check
