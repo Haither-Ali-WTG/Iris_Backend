@@ -33,3 +33,12 @@ smtp587_au2mail_wisecloud_zone:
   order: 30
   actions:
     - use_backend smtp587_au2mail_wisecloud_zone if acl_smtp587_au2mail_wisecloud_zone
+
+acl_boltr_dat_wtg_zone:
+  description: |-
+    Uses backend for boltr dat service acls
+  order: 50
+  actions:
+    - use_backend boltr-dat-9000-wtg-zone if { dst_port 3900 }
+    - use_backend boltr-dat-9001-wtg-zone if { dst_port 3901 }
+    - use_backend boltr-dat-9002-wtg-zone if { dst_port 3902 }

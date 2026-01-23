@@ -289,8 +289,11 @@ clustered_instances:
             - 2587  # TEST backends port 587
             - 3025  # PROD backends port 25
             - 3587  # PROD backends port 587
+          ssl: [3900, 3901, 3902]  # Boltr DAT backend ports 9000-9002 with SSL
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
       machine_cluster: au2-prod-internal-1
       stats:
         ports:
