@@ -96,3 +96,10 @@ myaccount_portal_cargowise_com_backend:
     - >-
       use_backend myaccount-portal_cargowise_com if
       { hdr(host),field(1,:) -m reg -i ^(www\.)?cargowise\.com$ } { path_beg -i /myaccount }
+
+portconnect_wisegrid_net_backend:
+  description: |-
+    Direct requests for ca-webhooks.wisegrid.net to the PortConnect backend
+  order: 80
+  actions:
+    - use_backend portconnect_wisegrid_net if { hdr(host),field(1,:) -i ca-webhooks.wisegrid.net }
