@@ -1402,7 +1402,7 @@ borderwise.com:
   http_health_check:
     enabled: true
     http_path: /healthcheck
-    status_expect: '200|301'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -1416,7 +1416,7 @@ www.borderwise.com:
   http_health_check:
     enabled: true
     http_path: /healthcheck
-    status_expect: '200|301'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
