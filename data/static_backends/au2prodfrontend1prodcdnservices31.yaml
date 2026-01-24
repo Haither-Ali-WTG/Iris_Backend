@@ -2545,7 +2545,7 @@ triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2559,7 +2559,7 @@ www.triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2573,7 +2573,7 @@ apps.triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
