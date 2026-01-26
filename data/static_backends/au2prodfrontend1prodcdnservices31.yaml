@@ -1402,6 +1402,7 @@ borderwise.com:
   http_health_check:
     enabled: true
     http_path: /healthcheck
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -1415,6 +1416,7 @@ www.borderwise.com:
   http_health_check:
     enabled: true
     http_path: /healthcheck
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2545,7 +2547,7 @@ triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2559,7 +2561,7 @@ www.triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2573,7 +2575,7 @@ apps.triniumtech.com:
   http_health_check:
     enabled: true
     http_path: /
-    check_expect: '200'
+    check_expect: '200|301'
   servers:
     - name: AU2CO-SIIS-403A
       ip: 10.2.69.36
@@ -2653,7 +2655,7 @@ containerchain.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /au/en_gb/healthcheck
     check_expect: '200'
   servers:
     - name: AU2CO-SIIS-403A
@@ -2667,7 +2669,7 @@ www.containerchain.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /au/en_gb/healthcheck
     check_expect: '200'
   servers:
     - name: AU2CO-SIIS-403A
@@ -2997,20 +2999,6 @@ guest.wisetechglobal.com:
       port: 80
 
 tailwindtransportationsoftware.com:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  http_health_check:
-    enabled: true
-    http_path: /
-    check_expect: '301'
-  servers:
-    - name: AU2CO-SIIS-403A
-      ip: 10.2.69.36
-      port: 80
-    - name: AU2CO-SIIS-403B
-      ip: 10.2.69.37
-      port: 80
-
-wwww.tailwindtransportationsoftware.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
     enabled: true
