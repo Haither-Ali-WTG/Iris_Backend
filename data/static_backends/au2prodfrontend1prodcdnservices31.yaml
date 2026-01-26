@@ -99,6 +99,8 @@ au2wcatoken.wisegrid.net:
     name: WCATFE
   http_health_check:
     enabled: true
+    check_expect: '200'
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: au2wp-swfe-401
@@ -120,6 +122,8 @@ sydwca.wisegrid.net:
     name: WCAPFE
   http_health_check:
     enabled: true
+    method: GET
+    check_expect: '200'
     http_path: /wtg/ready
   servers:
     - name: au2wp-swfe-401
