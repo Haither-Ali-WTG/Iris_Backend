@@ -7,12 +7,12 @@ variables:
   # fb566f8c6ba426cdda67044f9d016ee4507b145a
   dante_build_id: '1594584'
 
-  # virgil 20260127.2
-  # Mon Jan 26 18:21:12 UTC 2026 -- Tue Jan 27 05:21:12 AEDT 2026
+  # virgil 20260127.16
+  # Mon Jan 26 23:33:41 UTC 2026 -- Tue Jan 27 10:33:41 AEDT 2026
   #
-  # Merge pull request 44497 from virgil_python_upgrade into master
-  # 30420b50d43d7669f30f41dc436bc553cc8bef2b
-  virgil_build_id: '1594537'
+  # Merged PR 44517: Merged device pylint checks with virgil
+  # 58f79b969d752b6f9ec02256f081a474969c5b8f
+  virgil_build_id: '1594806'
 
   # sqlbilling 20260126.3
   # Mon Jan 26 11:18:19 UTC 2026 -- Mon Jan 26 22:18:19 AEDT 2026
