@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260127.3
-  # Tue Jan 27 02:01:03 UTC 2026 -- Tue Jan 27 13:01:03 AEDT 2026
+  # Dante Build Artifact 20260127.4
+  # Tue Jan 27 03:51:13 UTC 2026 -- Tue Jan 27 14:51:13 AEDT 2026
   #
-  # Merge pull request 44536 from dante_artifact_upgrade into master
-  # 948992be341f958ea64f6b27f28c2cc6003c30a0
-  dante_build_id: '1595004'
+  # Merged PR 43998: feat: enable squid log rotation and rsyslog forwarding (WI00932187)
+  # 93a82ec3dde2755a2902d1cd4641f084f8dcdfb6
+  dante_build_id: '1595108'
 
   # virgil 20260127.27
   # Tue Jan 27 01:21:51 UTC 2026 -- Tue Jan 27 12:21:51 AEDT 2026
