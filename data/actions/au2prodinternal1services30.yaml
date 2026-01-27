@@ -8,6 +8,8 @@ https_redirect:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_borderwise_com !{ ssl_fc }
     - redirect scheme https if star_cwconnector_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if star_wisetechacademy_com !{ ssl_fc }
+    - redirect scheme https if lms_staging_wisetechacademy_com !{ ssl_fc }
 
 au2s3_3_secondary_backend_selection:
   description: |-
