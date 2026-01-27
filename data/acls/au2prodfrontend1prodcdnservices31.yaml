@@ -777,3 +777,16 @@ stackoverflow_redirected_urls:
   description: "Stack Overflow redirected domains"
   tests:
     - hdr(host),field(1,:) -m reg -i ^stackoverflow\.wisetechglobal\.com$
+
+wca_denied_paths:
+  description: |-
+    Disallow wtg paths for WCA production services
+  tests:
+    - path_reg -i ^\/wtg(.*?)$
+
+wca_prod_url:
+  description: |-
+    Hostnames for WCA production services
+  tests:
+    - hdr(host),field(1,:) -i sydwca.wisegrid.net
+    - hdr(host),field(1,:) -i au2wcatoken.wisegrid.net

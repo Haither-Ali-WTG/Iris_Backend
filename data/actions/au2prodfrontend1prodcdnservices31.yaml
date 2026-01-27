@@ -13,6 +13,13 @@ wtg_true_client_ip_header:
   actions:
     - http-request set-header WTG-True-Client-IP %[src] if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
 
+wca_denied_actions:
+  description: |-
+    HTTP-request deny for WCA production services denied paths
+  order: 59
+  actions:
+    - http-request deny if !wtg_src wca_denied_paths wca_prod_url
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
