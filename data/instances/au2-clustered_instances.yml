@@ -525,6 +525,8 @@ clustered_instances:
           plaintext: [2020]
           ssl: [2021]
       machine_cluster: au2-sand-internal-2
+      features:
+        log_hit_acl: true
       iis_servers:
         - server: au2sp-tweb-403a.sand.wtg.zone
           agent_port: 8089
