@@ -1386,19 +1386,19 @@ tmp.borderwise.com-catchall:
   servers:
     - name: w1.au2prod2
       ip: 10.2.214.15
-      port: 30400
+      port: 30500
     - name: w2.au2prod2
       ip: 10.2.214.16
-      port: 30400
+      port: 30500
     - name: w3.au2prod2
       ip: 10.2.214.17
-      port: 30400
+      port: 30500
     - name: w4.au2prod2
       ip: 10.2.214.18
-      port: 30400
+      port: 30500
     - name: w5.au2prod2
       ip: 10.2.214.19
-      port: 30400
+      port: 30500
 
 # Corporate Sites
 borderwise.com:
