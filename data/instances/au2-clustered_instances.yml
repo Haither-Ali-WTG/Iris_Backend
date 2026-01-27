@@ -586,6 +586,12 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-tmp-borderwise-com
           cms_resource_group: RG-AU-Prod
+        - name: group_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group2_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group3_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
