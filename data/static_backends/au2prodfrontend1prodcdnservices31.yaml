@@ -1382,23 +1382,23 @@ tmp.borderwise.com-catchall:
   http_health_check:
     enabled: false
     http_path: /
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2
       ip: 10.2.214.15
-      port: 30500
+      port: 30400
     - name: w2.au2prod2
       ip: 10.2.214.16
-      port: 30500
+      port: 30400
     - name: w3.au2prod2
       ip: 10.2.214.17
-      port: 30500
+      port: 30400
     - name: w4.au2prod2
       ip: 10.2.214.18
-      port: 30500
+      port: 30400
     - name: w5.au2prod2
       ip: 10.2.214.19
-      port: 30500
+      port: 30400
 
 # Corporate Sites
 borderwise.com:
