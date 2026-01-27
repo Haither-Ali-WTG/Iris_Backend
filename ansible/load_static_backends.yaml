@@ -10,11 +10,24 @@
         content: >-
           {{ lookup('file', fname) | from_yaml }}
       set_fact:
+        duplicate_static_backends: >-
+          {{
+            duplicate_static_backends | default([])
+            | union(
+                (all_static_backends | default({})).keys() | list
+                | intersect(content.keys() | list)
+              )
+          }}
         all_static_backends: >-
           {{ all_static_backends | default({}) | combine(content) }}
       loop: "{{ lookup('fileglob', '../data/static_backends/*.y*ml', wantlist=True) }}"
       loop_control:
         loop_var: fname
+
+    - name: Fail if duplicated keys found
+      fail:
+        msg: "Duplicate keys found across static_backends YAMLs: {{ duplicate_static_backends | join(', ') }}"
+      when: (duplicate_static_backends | default([])) | length > 0
 
     - name: Distribute static backends to clustered instances
       set_fact:
