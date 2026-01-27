@@ -184,3 +184,51 @@ api-ais.wisegrid.net:
     - name: AU2WP-SDKR-2
       ip: 10.2.67.112
       port: 42106
+
+staging.wisetechacademy.com:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: SWTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SWTA-401A
+      ip: 10.2.67.52
+      port: 80
+    - name: AU2WT-SWTA-401B
+      ip: 10.2.67.53
+      port: 80
+
+umbracostaging.wisetechacademy.com:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: USWTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SWTA-401A
+      ip: 10.2.67.52
+      port: 80
+    - name: AU2WT-SWTA-401B
+      ip: 10.2.67.53
+      port: 80
+
+lms.staging.wisetechacademy.com:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: LSWTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SWTA-401A
+      ip: 10.2.67.52
+      port: 80
+    - name: AU2WT-SWTA-401B
+      ip: 10.2.67.53
+      port: 80
