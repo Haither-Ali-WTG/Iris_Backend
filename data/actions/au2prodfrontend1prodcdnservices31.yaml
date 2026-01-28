@@ -4,7 +4,9 @@ wtg_true_client_ip_header:
     Set true client IP header for IP whitelisting in applications
   order: 59
   actions:
-    - http-request set-header WTG-True-Client-IP %[var(txn.client_ip)] if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
+    - >-
+      http-request set-header WTG-True-Client-IP %[var(txn.client_ip)]
+      if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
 
 wca_denied_actions:
   description: |-
