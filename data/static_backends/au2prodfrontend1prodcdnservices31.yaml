@@ -3482,3 +3482,38 @@ www.shipamax.com:
     - name: AU2CO-SIIS-403B
       ip: 10.2.69.37
       port: 80
+
+# WCA CORP Endpoints
+au2wca.wtg.zone:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCACFE
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: GET
+    http_path: /wtg/ready
+  servers:
+    - name: au2co-swfe-401
+      ip: 10.2.69.32
+      port: 80
+    - name: au2co-swfe-403
+      ip: 10.2.69.34
+      port: 80
+
+wcatoken.wtg.zone:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCACFE
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: GET
+    http_path: /wtg/ready
+  servers:
+    - name: au2co-swfe-401
+      ip: 10.2.69.32
+      port: 80
+    - name: au2co-swfe-402
+      ip: 10.2.69.33
+      port: 80
