@@ -1,11 +1,4 @@
 ---
-cloudflare_ip:
-  description: |-
-    Set source IP based on cloudflare header for cloudflare traffic
-  order: 1
-  actions:
-    - http-request set-src hdr(cf-connecting-ip) if cloudflare_src
-
 wtg_true_client_ip_header:
   description: |-
     Set true client IP header for IP whitelisting in applications
