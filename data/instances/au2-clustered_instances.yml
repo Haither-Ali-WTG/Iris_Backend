@@ -586,6 +586,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-cargowise-com
           cms_resource_group: RG-AU-Corp
+        - name: star-shipamax-com
+          cms_resource_group: RG-EU-Prod
         - name: star-cww-prod-wisetechglobal-cn
           cms_resource_group: RG-AU-Prod
         - name: star-tmp-borderwise-com
