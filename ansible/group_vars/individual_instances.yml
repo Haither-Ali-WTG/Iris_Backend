@@ -54,5 +54,4 @@ individual_instance_defaults:
     queue: 30
     tarpit: 60
 
-  features:
-    log_hit_acl: false
+  features: ~
