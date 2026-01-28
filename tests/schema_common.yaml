@@ -39,7 +39,8 @@ haproxy_cipher_settings:
   ssl_min: enum('TLSv1.2', required=False)
   ssl_max: enum('TLSv1.3', required=False)
 
-haproxy_features_settings: ~
+haproxy_features_settings:
+  schema_placeholder: bool(required=False)
 
 haproxy_frontend_settings:
   ports: include('haproxy_frontend_ports_settings', required=False)

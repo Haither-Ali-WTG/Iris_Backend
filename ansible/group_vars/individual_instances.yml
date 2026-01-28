@@ -54,4 +54,5 @@ individual_instance_defaults:
     queue: 30
     tarpit: 60
 
-  features: ~
+  features:
+    schema_placeholder: false
