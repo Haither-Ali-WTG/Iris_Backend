@@ -96,20 +96,31 @@ talogy_src:
   description: source IP is Talogy (3rd party vendor external) CS01854184
   tests:
     - src 40.118.100.127/32
+    - var(txn.client_ip) -m ip 40.118.100.127/32
     - src 13.81.68.134/32
+    - var(txn.client_ip) -m ip 13.81.68.134/32
     - src 13.81.68.146/32
+    - var(txn.client_ip) -m ip 13.81.68.146/32
     - src 13.81.68.81/32
+    - var(txn.client_ip) -m ip 13.81.68.81/32
     - src 13.81.64.194/32
+    - var(txn.client_ip) -m ip 13.81.64.194/32
     - src 13.81.64.243/32
+    - var(txn.client_ip) -m ip 13.81.64.243/32
     - src 13.81.65.246/32
+    - var(txn.client_ip) -m ip 13.81.65.246/32
 
 bsm_blume_src:
   description: source IP is BSM/Blume, requested by Ryken Song in CS01954112 for OCMBE (ocean carrier messaging)
   tests:
     - src 34.105.17.140/32
+    - var(txn.client_ip) -m ip 34.105.17.140/32
     - src 34.82.183.200/32
+    - var(txn.client_ip) -m ip 34.82.183.200/32
     - src 34.168.249.100/32
+    - var(txn.client_ip) -m ip 34.168.249.100/32
     - src 34.105.0.45/32
+    - var(txn.client_ip) -m ip 34.105.0.45/32
 
 star_cargowise_com:
   description: "*.cargowise.com"
