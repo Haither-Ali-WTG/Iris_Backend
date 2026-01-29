@@ -239,3 +239,10 @@ portconnect_wisegrid_net_backend:
   order: 80
   actions:
     - use_backend portconnect_wisegrid_net if { hdr(host),field(1,:) -i ca-webhooks.wisegrid.net }
+
+cw_wisetechglobal_com_catch_all_backend:
+  description: |-
+    Direct requests for *.cw.wisetechglobal.com to the Winzor backend
+  order: 80
+  actions:
+    - use_backend cw_wisetechglobal_com_catch_all if winzor_corp_urls
