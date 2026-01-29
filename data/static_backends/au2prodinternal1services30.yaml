@@ -232,3 +232,69 @@ lms.staging.wisetechacademy.com:
     - name: AU2WT-SWTA-401B
       ip: 10.2.67.53
       port: 80
+
+xttest-eservices-monitor1.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 8080
+
+xttest-eservices-monitor2.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-402
+      ip: 10.2.70.19
+      port: 8080
+
+xttest2-eservices-monitor1.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-411
+      ip: 10.2.70.91
+      port: 8080
+
+xttest2-eservices-monitor2.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-412
+      ip: 10.2.70.92
+      port: 8080
+
+xt-eservices-monitor1.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WP-SXTR-401
+      ip: 10.2.70.25
+      port: 8080
+
+xt-eservices-monitor2.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WP-SXTR-402
+      ip: 10.2.70.26
+      port: 8080
