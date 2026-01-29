@@ -82,7 +82,7 @@ balance {{ defaults.balance }}
 option forwardfor
 option allbackups
 retries 3
-default-server inter {{ defaults.health_check_interval }} rise 2 fall 3 maxconn 5000 resolve-prefer ipv4 check init-addr libc,last
+default-server inter {{ defaults.health_check_interval }} rise 2 fall 3 maxconn 5000 resolve-prefer ipv4 check init-addr libc,last weight 100
 load-server-state-from-file global
 dynamic-cookie-key WTGLB
 #option http-server-close #breaks login keep it disabled
