@@ -49,6 +49,8 @@ custom_url_actions:
     - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webtracker.wisegrid.net }
     - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webtracker.wisegrid.net }
     - use_backend zifprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zifprd2.webtracker.wisegrid.net }
+    - use_backend apnprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.allportnetherlands.nl }
+    - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
 
     ### Webprint
     - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webprint.wisegrid.net }
