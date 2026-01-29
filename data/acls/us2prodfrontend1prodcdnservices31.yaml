@@ -3,6 +3,7 @@ star_cww_wisegrid_net:
   description: "*.cww.wisegrid.net blazor production services"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-prod\.wisetechglobal\.cn$
 
 star_wisetechglobal_com:
   description: "*.wisetechglobal.com"

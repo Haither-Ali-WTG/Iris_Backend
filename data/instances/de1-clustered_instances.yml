@@ -247,6 +247,8 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-cww-prod-wisetechglobal-cn
+          cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
         - name: star-cwconnector-wisegrid-net
@@ -294,7 +296,7 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
-        - name: star-cww-prod-wisetechglobal-cn
+        - name: star-cww-nonprd-wisetechglobal-cn
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:

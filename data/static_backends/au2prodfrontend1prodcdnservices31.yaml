@@ -21,6 +21,7 @@ au.cww.wisegrid.net-catchall:
     option httpchk HEAD /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
     default-server agent-check agent-port 8098
     server AU2WP-SBLZ-001 10.2.72.11:80
     server AU2WP-SBLZ-002 10.2.72.12:80
