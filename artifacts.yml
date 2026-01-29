@@ -7,12 +7,12 @@ variables:
   # d58e4cbf877fc98f55b11556215cddcb738f0216
   dante_build_id: '1595916'
 
-  # virgil 20260128.1
-  # Tue Jan 27 22:22:42 UTC 2026 -- Wed Jan 28 09:22:42 AEDT 2026
+  # virgil 20260130.5
+  # Thu Jan 29 21:30:55 UTC 2026 -- Fri Jan 30 08:30:55 AEDT 2026
   #
-  # Merged PR 44558: Revert OS upgrade on exits 5/6
-  # 57060589ea668e4472dae8875f9e25375c03dd3d
-  virgil_build_id: '1595864'
+  # Merged PR 44625: new topic global search migration (CS02217333)
+  # 54180cdfda8b08fb8551a17967981d80dcc30a9c
+  virgil_build_id: '1597778'
 
   # sqlbilling 20260129.2
   # Wed Jan 28 22:28:57 UTC 2026 -- Thu Jan 29 09:28:57 AEDT 2026
