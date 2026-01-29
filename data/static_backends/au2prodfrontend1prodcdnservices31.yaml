@@ -29,6 +29,37 @@ au.cww.wisegrid.net-catchall:
     server AU2WP-SBLZ-405 10.2.72.23:80
     server AU2WP-SBLZ-406 10.2.72.24:80
 
+cww.wisetechglobal.com-catchall:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend cw_wisetechglobal_com_catch_all
+    option httpchk HEAD /wtg/status
+    cookie AU2BLZ insert indirect nocache dynamic
+    http-check expect rstatus 200
+    default-server agent-check agent-port 8098
+    http-request replace-header Host ^([^\.-]+)-?.*\.(cw{1,2})-corp(\.wisetechglobal)\.cn$ \1.\2\3.com
+    server AU2CO-SRDH-404 10.2.47.74:80
+    server AU2CO-SRDH-405 10.2.47.75:80
+    server AU2CO-SRDH-406 10.2.47.76:80
+    server AU2CO-SRDH-407 10.2.47.77:80
+    server AU2CO-SRDH-408 10.2.47.88:80
+    server AU2CO-SRDH-409 10.2.47.89:80
+    server AU2CO-SRDH-410 10.2.47.90:80
+    server AU2CO-SRDH-411 10.2.47.91:80
+    server AU2CO-SRDH-412 10.2.47.78:80
+    server AU2CO-SRDH-413 10.2.47.79:80
+    server AU2CO-SRDH-414 10.2.47.80:80
+    server AU2CO-SRDH-416 10.2.47.16:80
+    server AU2CO-SRDH-417 10.2.47.17:80
+    server AU2CO-SRDH-418 10.2.47.18:80
+    server AU2CO-SRDH-419 10.2.47.19:80
+    server AU2CO-SRDH-420 10.2.47.20:80
+    server AU2CO-SRDH-421 10.2.47.21:80
+    server AU2CO-SRDH-422 10.2.47.22:80
+    server AU2CO-SRDH-423 10.2.47.23:80
+    server AU2CO-SRDH-424 10.2.47.24:80
+    server AU2CO-SRDH-425 10.2.47.25:80
+
 app-au.borderwise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
