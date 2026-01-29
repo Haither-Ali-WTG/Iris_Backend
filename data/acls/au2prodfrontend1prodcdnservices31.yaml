@@ -791,3 +791,10 @@ wca_prod_url:
   tests:
     - hdr(host),field(1,:) -i sydwca.wisegrid.net
     - hdr(host),field(1,:) -i au2wcatoken.wisegrid.net
+
+winzor_corp_urls:
+  description: |-
+    Hostnames for Winzor CORP
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?cw{1,2}\.wisetechglobal\.com$
+    - hdr(host) -m reg -i ^([^\.]+\.)?cw{1,2}-corp\.wisetechglobal\.cn$
