@@ -8,6 +8,16 @@ wtg_true_client_ip_header:
       http-request set-header WTG-True-Client-IP %[var(txn.client_ip)]
       if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
 
+ofxdealstatusws_access_control:
+  description: |-
+    Restrict ofxdealstatusws to allowlisted IPs.
+  order: 59
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i ofxdealstatusws.wisegrid.net }
+      !wtg_src !ofx_ip
+
 wca_denied_actions:
   description: |-
     HTTP-request deny for WCA production services denied paths

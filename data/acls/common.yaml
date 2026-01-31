@@ -46,6 +46,18 @@ wtg_src:
     - src 196.61.68.0/22
     - var(txn.client_ip) -m ip 196.61.68.0/22
 
+ofx_ip:
+  description: OFX IPs
+  tests:
+    - src 13.210.2.32/32
+    - var(txn.client_ip) -m ip 13.210.2.32/32
+    - src 13.210.2.23/32
+    - var(txn.client_ip) -m ip 13.210.2.23/32
+    - src 13.210.2.9/32
+    - var(txn.client_ip) -m ip 13.210.2.9/32
+    - src 13.210.2.69/32
+    - var(txn.client_ip) -m ip 13.210.2.69/32
+
 cloudflare_src:
   description: source IP is Cloudflare WAF
   tests:
