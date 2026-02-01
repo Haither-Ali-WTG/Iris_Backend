@@ -55,4 +55,4 @@ individual_instance_defaults:
     tarpit: 60
 
   features:
-    log_hit_acl: false
+    schema_placeholder: false

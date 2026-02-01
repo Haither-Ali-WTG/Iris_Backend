@@ -97,8 +97,6 @@ clustered_instances:
           production:
             cpu: 4000m
             memory: 8000Mi
-      features:
-        log_hit_acl: true
       # sqlbilling_acl:
       #  - acl_name: customerreadonly_src
       #    file: au2-prod-frontend-1.acl
@@ -354,8 +352,6 @@ clustered_instances:
           web: 2051
           socket: 2050
       machine_cluster: au2-prod-frontend-1
-      features:
-        log_hit_acl: true
       iis_servers: []
       iis_servers_local:
         - au2wp-sweb-100.wisecloud.zone       # Dedicated TLX Webserver
@@ -531,8 +527,6 @@ clustered_instances:
           plaintext: [2020]
           ssl: [2021]
       machine_cluster: au2-sand-internal-2
-      features:
-        log_hit_acl: true
       iis_servers:
         - server: au2sp-tweb-403a.sand.wtg.zone
           agent_port: 8089
