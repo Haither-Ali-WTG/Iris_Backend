@@ -298,3 +298,19 @@ xt-eservices-monitor2.wisegrid.net:
     - name: AU2WP-SXTR-402
       ip: 10.2.70.26
       port: 8080
+
+gbcustoms-cdsws-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: SEWGT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  encryption: false
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
