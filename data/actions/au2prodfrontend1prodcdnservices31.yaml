@@ -256,3 +256,10 @@ cw_wisetechglobal_com_catch_all_backend:
   order: 80
   actions:
     - use_backend cw_wisetechglobal_com_catch_all if winzor_corp_urls
+
+au2prod2-prodexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend au2prod2-prodexternal-catchall if ace_api_wisegrid_net
