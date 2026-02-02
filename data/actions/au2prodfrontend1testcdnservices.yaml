@@ -63,3 +63,10 @@ testtariff_management_portal_backend:
   order: 80
   actions:
     - use_backend testtmp_borderwise_com-catchall if star_testtmp_borderwise_com
+
+au2prod2_testexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend au2prod2-testexternal-catchall if ace_test_api_wisegrid_net
