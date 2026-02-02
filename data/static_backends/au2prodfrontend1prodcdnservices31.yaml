@@ -811,6 +811,7 @@ webservices.errors:
 
 webservices-ausyd.cargowise.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
   http_health_check:
     enabled: true
     http_path: /
