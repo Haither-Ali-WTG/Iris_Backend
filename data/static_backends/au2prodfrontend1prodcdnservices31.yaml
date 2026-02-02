@@ -3541,7 +3541,7 @@ wcatoken.wtg.zone:
 au2prod2-prodexternal-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
-    name: K8sLB
+    name: K8SPROD
   http_health_check:
     enabled: false
     http_path: /

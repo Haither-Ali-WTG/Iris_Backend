@@ -1021,7 +1021,7 @@ www-wtlkel.cargowise.com:
 au2prod2-testexternal-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
-    name: K8sLB
+    name: K8STEST
   http_health_check:
     enabled: false
     http_path: /
