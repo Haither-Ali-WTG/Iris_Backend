@@ -596,6 +596,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: group3_wisetechglobal_com
           cms_resource_group: RG-AU-Prod
+        - name: ilul-me
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023

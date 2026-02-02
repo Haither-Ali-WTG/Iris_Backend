@@ -116,6 +116,13 @@ myaccount_portal_cargowise_com_backend:
       use_backend myaccount-portal_cargowise_com if
       { hdr(host),field(1,:) -m reg -i ^(www\.)?cargowise\.com$ } { path_beg -i /myaccount }
 
+webservices_errors_backend:
+  description: |-
+    Direct errors requests to webservices_errors backend
+  order: 80
+  actions:
+    - use_backend webservices_errors if webservices_hostnames { path_beg -i /errors }
+
 access_control_deny:
   description: |-
     Access control rules for corporate sites

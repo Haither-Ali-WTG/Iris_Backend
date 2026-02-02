@@ -798,6 +798,102 @@ webservices.wisetechglobal.com:
     server AU2CO-SIIS-405A 10.2.69.46:443 ssl
     server AU2CO-SIIS-405B 10.2.69.47:443 ssl
 
+webservices.errors:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend webservices_errors
+    load-server-state-from-file none
+    option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nHost:\ webservices.wisetechglobal.com
+    http-check expect rstatus '200'
+    cookie GLOW insert indirect nocache dynamic secure
+    server AU2CO-SIIS-405A 10.2.69.46:443 ssl
+    server AU2CO-SIIS-405B 10.2.69.47:443 ssl
+
+webservices.cargowise.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|403'
+  servers:
+    - name: au2co-siis-405a
+      ip: 10.2.69.46
+      port: 443
+    - name: au2co-siis-405b
+      ip: 10.2.69.47
+      port: 443
+
+webservices-ausyd.cargowise.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|403'
+  servers:
+    - name: au2co-siis-405a
+      ip: 10.2.69.46
+      port: 443
+    - name: au2co-siis-405b
+      ip: 10.2.69.47
+      port: 443
+
+wtgsnowsgw-au2.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+    method: GET
+  servers:
+    - name: au2co-ssam-404
+      ip: 10.2.70.28
+      port: 80
+
+loginsimulator.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2co-slsm-401
+      ip: 10.2.70.47
+      port: 80
+
+ilul.me:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: ILUL
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|401'
+  servers:
+    - name: au2co-siis-402a
+      ip: 10.2.69.27
+      port: 80
+    - name: au2co-siis-402b
+      ip: 10.2.69.28
+      port: 80
+
+cibr.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: CIBR
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2co-siis-402a
+      ip: 10.2.69.27
+      port: 80
+    - name: au2co-siis-402b
+      ip: 10.2.69.28
+      port: 80
+
 portconnect.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
