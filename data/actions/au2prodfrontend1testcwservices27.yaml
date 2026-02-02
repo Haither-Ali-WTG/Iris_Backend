@@ -38,10 +38,10 @@ custom_url_actions:
     - use_backend h43tr3_webprint_wisegrid_net if { hdr(host),field(1,:) -i h43tr3-cn.webprint.wisegrid.net }
 
     ### Webtracker
-    - use_backend H43TR1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i H43TR1webtracker.wisegrid.net }
-    - use_backend H43TR2_webtracker_wisegrid_net if { hdr(host),field(1,:) -i H43TR2webtracker.wisegrid.net }
-    - use_backend H43TR3_webtracker_wisegrid_net if { hdr(host),field(1,:) -i H43TR3webtracker.wisegrid.net }
-    - use_backend H43TRN_webtracker_wisegrid_net if { hdr(host),field(1,:) -i H43TRNwebtracker.wisegrid.net }
+    - use_backend h43tr1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43tr1webtracker.wisegrid.net }
+    - use_backend h43tr2_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43tr2webtracker.wisegrid.net }
+    - use_backend h43tr3_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43tr3webtracker.wisegrid.net }
+    - use_backend h43trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43trnwebtracker.wisegrid.net }
     - use_backend zsotrn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zsotrnwebtracker.wisegrid.net }
     - use_backend asacwt_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker-test.axima.com.au }
     - use_backend asacwt_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker-test.yangkee.com }
