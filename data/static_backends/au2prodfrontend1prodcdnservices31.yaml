@@ -3538,7 +3538,7 @@ wcatoken.wtg.zone:
       ip: 10.2.69.33
       port: 80
 
-au2prod2-prodexternal-catchall:
+au2prod2_prodexternal-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: K8SPROD

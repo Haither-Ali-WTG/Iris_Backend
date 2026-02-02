@@ -1018,7 +1018,7 @@ www-wtlkel.cargowise.com:
       ip: 10.2.118.14
       port: 80
 
-au2prod2-testexternal-catchall:
+au2prod2_testexternal-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: K8STEST

@@ -69,4 +69,4 @@ au2prod2-testexternal_catchall_backend:
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend au2prod2-testexternal-catchall if ace_test_api_wisegrid_net
+    - use_backend au2prod2_testexternal_catchall if ace_test_api_wisegrid_net
