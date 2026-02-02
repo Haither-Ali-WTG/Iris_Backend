@@ -201,3 +201,829 @@ dpsv4-usord.wisegrid.net:
     - name: us2wp-sdps-401
       ip: 10.4.67.13
       port: 80
+
+  -login:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_login
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect rstatus 200
+    http-request replace-path /login(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /login
+    cookie ISL insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3001 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3001 check ssl
+
+identity-staging.wisetechglobal.com-s2s:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_s2s
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect rstatus 200
+    http-request replace-path /s2s(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /s2s
+    cookie ISS insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3005 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3005 check ssl
+
+identity-staging.wisetechglobal.com-account:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_account
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect rstatus 200
+    http-request replace-path /account(/)?(.*) /\2
+    http-request set-header X-Forwarded-Prefix /account
+    cookie ISA insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3003 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3003 check ssl
+
+wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+www.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+cargowise.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+www.cargowise.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+group.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+group2.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+group3.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+forms.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+partners.wisetechglobal.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+pierbridge.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+www.pierbridge.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+cms.pierbridge.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+
+partnerresources.pierbridge.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+containerchain.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.containerchain.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+cms.containerchain.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+
+smartfreight.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.smartfreight.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+softship.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.softship.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.bysoft.com.br:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+sisa.ch:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.sisa.ch:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+smartfreight.co.za:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.smartfreight.co.za:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+cmslive.com.sg:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.cmslive.com.sg:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /au/en_gb/healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+intris.be:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.intris.be:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+datafreight.co.uk:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.datafreight.co.uk:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+acoinformatica.it:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.acoinformatica.it:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+customsmatters.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.customsmatters.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+lspsolutions.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.lspsolutions.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+en.lspsolutions.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+microlistics.com.au:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+www.microlistics.com.au:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+blog.microlistics.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+info.microlistics.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+send.microlistics.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+saastransportation.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.saastransportation.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+web.saastransportation.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+# Additional acquisition backends
+abmdata.ie:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.abmdata.ie:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+abmdatasystems.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.abmdatasystems.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000
+
+customsware.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.customsware.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    method: HEAD
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+      settings: maxconn 8000
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+      settings: maxconn 8000

@@ -375,3 +375,53 @@ azure_src:
     - var(txn.client_ip) -m ip 172.211.123.224/28
     - src 191.233.204.160/27
     - var(txn.client_ip) -m ip 191.233.204.160/27
+
+awsr53_src:
+  description: "AWS Route53 HealthChecker IPs"
+  tests:
+    - src 15.177.0.0/18
+    - var(txn.client_ip) -m ip 15.177.0.0/18
+    - src 52.80.197.0/25
+    - var(txn.client_ip) -m ip 52.80.197.0/25
+    - src 52.80.197.128/25
+    - var(txn.client_ip) -m ip 52.80.197.128/25
+    - src 52.80.198.0/25
+    - var(txn.client_ip) -m ip 52.80.198.0/25
+    - src 52.83.34.128/25
+    - var(txn.client_ip) -m ip 52.83.34.128/25
+    - src 52.83.35.0/25
+    - var(txn.client_ip) -m ip 52.83.35.0/25
+    - src 52.83.35.128/25
+    - var(txn.client_ip) -m ip 52.83.35.128/25
+    - src 54.248.220.0/26
+    - var(txn.client_ip) -m ip 54.248.220.0/26
+    - src 54.250.253.192/26
+    - var(txn.client_ip) -m ip 54.250.253.192/26
+    - src 54.251.31.128/26
+    - var(txn.client_ip) -m ip 54.251.31.128/26
+    - src 54.255.254.192/26
+    - var(txn.client_ip) -m ip 54.255.254.192/26
+    - src 54.252.254.192/26
+    - var(txn.client_ip) -m ip 54.252.254.192/26
+    - src 54.252.79.128/26
+    - var(txn.client_ip) -m ip 54.252.79.128/26
+    - src 176.34.159.192/26
+    - var(txn.client_ip) -m ip 176.34.159.192/26
+    - src 54.228.16.0/26
+    - var(txn.client_ip) -m ip 54.228.16.0/26
+    - src 177.71.207.128/26
+    - var(txn.client_ip) -m ip 177.71.207.128/26
+    - src 54.232.40.64/26
+    - var(txn.client_ip) -m ip 54.232.40.64/26
+    - src 107.23.255.0/26
+    - var(txn.client_ip) -m ip 107.23.255.0/26
+    - src 54.243.31.192/26
+    - var(txn.client_ip) -m ip 54.243.31.192/26
+    - src 54.183.255.128/26
+    - var(txn.client_ip) -m ip 54.183.255.128/26
+    - src 54.241.32.64/26
+    - var(txn.client_ip) -m ip 54.241.32.64/26
+    - src 54.244.52.192/26
+    - var(txn.client_ip) -m ip 54.244.52.192/26
+    - src 54.245.168.0/26
+    - var(txn.client_ip) -m ip 54.245.168.0/26
