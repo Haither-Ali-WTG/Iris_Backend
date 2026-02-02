@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260203.1
-  # Mon Feb  2 19:00:58 UTC 2026 -- Tue Feb  3 06:00:58 AEDT 2026
+  # Dante Build Artifact 20260203.2
+  # Mon Feb  2 21:33:48 UTC 2026 -- Tue Feb  3 08:33:48 AEDT 2026
   #
-  # Merge pull request 44722 from dante_artifact_upgrade into master
-  # 754a6cfae71563e28b3a17e8a58e560048839ce3
-  dante_build_id: '1601450'
+  # Merge pull request 44709 from automatic_ascalaphus_image_upgrade into master
+  # d7355fe820eb23c8b24bb8de236f43b329a8242c
+  dante_build_id: '1601580'
 
   # virgil 20260203.2
   # Mon Feb  2 18:21:13 UTC 2026 -- Tue Feb  3 05:21:13 AEDT 2026
