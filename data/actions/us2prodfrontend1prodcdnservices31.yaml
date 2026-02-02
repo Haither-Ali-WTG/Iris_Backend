@@ -89,7 +89,10 @@ identity_staging_default_redirect:
   description: "Redirect identity staging to login page"
   order: 79
   actions:
-    - redirect location /login if identity_staging_wisetechglobal_com !identity_staging_login_path !identity_staging_account_path !identity_staging_s2s_path
+    - >-
+      redirect location /login if identity_staging_wisetechglobal_com
+      !identity_staging_login_path !identity_staging_account_path
+      !identity_staging_s2s_path
 
 # Domain normalization redirects - www to non-www
 www_to_non_www_redirects:
@@ -140,6 +143,12 @@ identity_staging_backend_routing:
   description: "Route identity staging requests to appropriate backends"
   order: 80
   actions:
-    - use_backend identity-staging_wisetechglobal_com_login if identity_staging_wisetechglobal_com identity_staging_login_path
-    - use_backend identity-staging_wisetechglobal_com_s2s if identity_staging_wisetechglobal_com identity_staging_s2s_path
-    - use_backend identity-staging_wisetechglobal_com_account if identity_staging_wisetechglobal_com identity_staging_account_path
+    - >-
+      use_backend identity-staging_wisetechglobal_com_login
+      if identity_staging_wisetechglobal_com identity_staging_login_path
+    - >-
+      use_backend identity-staging_wisetechglobal_com_s2s
+      if identity_staging_wisetechglobal_com identity_staging_s2s_path
+    - >-
+      use_backend identity-staging_wisetechglobal_com_account
+      if identity_staging_wisetechglobal_com identity_staging_account_path
