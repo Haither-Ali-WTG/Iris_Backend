@@ -54,3 +54,101 @@ compliance_borderwise_backend:
   order: 80
   actions:
     - use_backend compliance-us_borderwise_com if compliance_borderwise_com
+
+# Identity staging access control
+identity_staging_access:
+  description: "Allow access to identity staging endpoints"
+  order: 59
+  actions:
+    - http-request allow if identity_staging_wisetechglobal_com identity_staging_login_path
+    - http-request allow if identity_staging_wisetechglobal_com identity_staging_s2s_path
+    - http-request allow if identity_staging_wisetechglobal_com identity_staging_account_path
+
+# Admin path security
+admin_path_security:
+  description: "Deny non-WTG access to admin paths"
+  order: 59
+  actions:
+    - http-request deny if !wtg_src umbraco_denied_path
+    - http-request deny if !wtg_src admin_denied_path
+    - http-request deny if !wtg_src group_wisetechglobal_com
+    - http-request deny if !wtg_src exchange_denied_path
+    - http-request deny if !wtg_src sfb_denied_path
+    - http-request deny if !wtg_src !awsr53_src star_identity_wisetechglobal_com
+
+# External domain redirects
+external_domain_redirects:
+  description: "Redirect external domains to WiseTech sites"
+  order: 79
+  actions:
+    - redirect location https://www.wisetechglobal.com if redirects_to_wisetechglobal_com
+    - redirect location https://web.saastransportation.com code 307 if saas_transportation_redirect
+
+# Identity staging default redirect
+identity_staging_default_redirect:
+  description: "Redirect identity staging to login page"
+  order: 79
+  actions:
+    - >-
+      redirect location /login if identity_staging_wisetechglobal_com
+      !identity_staging_login_path !identity_staging_account_path
+      !identity_staging_s2s_path
+
+# Domain normalization redirects - www to non-www
+www_to_non_www_redirects:
+  description: "Redirect www to non-www for specific domains"
+  order: 79
+  actions:
+    - redirect prefix https://pierbridge.com code 301 if { hdr(host) -i www.pierbridge.com }
+    - redirect prefix https://cargoguide.com code 301 if { hdr(host) -i www.cargoguide.com }
+    - redirect prefix https://cargosphere.com code 301 if { hdr(host) -i www.cargosphere.com }
+    - redirect prefix https://sistemaforward.com code 301 if { hdr(host) -i www.sistemaforward.com }
+    - redirect prefix https://softcargo.com.uy code 301 if { hdr(host) -i www.softcargo.com.uy }
+
+# Domain normalization redirects - non-www to www
+non_www_to_www_redirects:
+  description: "Redirect non-www to www for specific domains"
+  order: 79
+  actions:
+    - redirect prefix https://www.bysoft.com.br code 301 if { hdr(host) -i bysoft.com.br }
+    - redirect prefix https://www.containerchain.com code 301 if { hdr(host) -i containerchain.com }
+    - redirect prefix https://www.cmslive.com.sg code 301 if { hdr(host) -i cmslive.com.sg }
+    - redirect prefix https://www.sisa.ch code 301 if { hdr(host) -i sisa.ch }
+    - redirect prefix https://www.smartfreight.co.za code 301 if { hdr(host) -i smartfreight.co.za }
+    - redirect prefix https://www.softship.com code 301 if { hdr(host) -i softship.com }
+    - redirect prefix https://www.intris.be code 301 if { hdr(host) -i intris.be }
+    - redirect prefix https://www.datafreight.co.uk code 301 if { hdr(host) -i datafreight.co.uk }
+    - redirect prefix https://www.acoinformatica.it code 301 if { hdr(host) -i acoinformatica.it }
+    - redirect prefix https://www.customsmatters.com code 301 if { hdr(host) -i customsmatters.com }
+    - redirect prefix https://www.lspsolutions.com code 301 if { hdr(host) -i lspsolutions.com }
+    - redirect prefix https://www.microlistics.com.au code 301 if { hdr(host) -i microlistics.com.au }
+    - redirect prefix https://www.abmdata.ie code 301 if { hdr(host) -i abmdata.ie }
+    - redirect prefix https://www.abmdatasystems.com code 301 if { hdr(host) -i abmdatasystems.com }
+    - redirect prefix https://www.customsware.com code 301 if { hdr(host) -i customsware.com }
+
+# HTTP to HTTPS enforcement
+http_to_https_redirects:
+  description: "Force HTTPS for certificate-covered domains"
+  order: 79
+  actions:
+    - redirect scheme https if group_certificate_covered_domains !{ ssl_fc }
+    - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+    - redirect scheme https if star_cargowise_net !{ ssl_fc } !cargowise_net_excluded_from_redirect
+    - redirect scheme https if star_borderwise_com !{ ssl_fc }
+    - redirect scheme https if star_cargowise_com !{ ssl_fc } !cargowise_excluded_from_redirect
+    - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }
+
+# Identity staging backend routing
+identity_staging_backend_routing:
+  description: "Route identity staging requests to appropriate backends"
+  order: 80
+  actions:
+    - >-
+      use_backend identity-staging_wisetechglobal_com_login
+      if identity_staging_wisetechglobal_com identity_staging_login_path
+    - >-
+      use_backend identity-staging_wisetechglobal_com_s2s
+      if identity_staging_wisetechglobal_com identity_staging_s2s_path
+    - >-
+      use_backend identity-staging_wisetechglobal_com_account
+      if identity_staging_wisetechglobal_com identity_staging_account_path

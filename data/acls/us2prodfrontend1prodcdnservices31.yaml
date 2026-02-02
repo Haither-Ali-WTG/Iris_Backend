@@ -78,3 +78,165 @@ wca_prod_url:
   tests:
     - hdr(host),field(1,:) -i chiwca.wisegrid.net
     - hdr(host),field(1,:) -i us2wcatoken.wisegrid.net
+
+# Core domain ACLs
+star_cargowise_net:
+  description: "*.cargowise.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cargowise\.net$
+
+star_borderwise_com:
+  description: "*.borderwise.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?borderwise\.com$
+
+star_identity_wisetechglobal_com:
+  description: "*.identity.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?identity\.wisetechglobal\.com$
+
+group_wisetechglobal_com:
+  description: "WiseTech group sites (group, group2, group3)"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^group[23]?\.wisetechglobal\.com$
+
+identity_staging_wisetechglobal_com:
+  description: "Identity staging hostnames"
+  tests:
+    - hdr(host),field(1,:) -i identity-staging.wisetechglobal.com
+    - hdr(host),field(1,:) -i staging.identity.wisetechglobal.com
+    - hdr(host),field(1,:) -i staging-us.identity.wisetechglobal.com
+
+# Acquisition domains covered by group certificate
+group_certificate_covered_domains:
+  description: "Acquisition company domains covered by group certificate"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev|cms-dev)\.)?softship\.com$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev|cms-dev)\.)?bysoft\.com\.br$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev|cms-dev|cms)\.)?containerchain\.com$
+    - hdr(host),field(1,:) -m reg -i ^((www|cms|www-dev|cms-dev)\.)?pierbridge\.com$
+    - hdr(host),field(1,:) -m reg -i ^parcelinsights\.pierbridge\.com$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev|cms-dev)\.)?sisa\.ch$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?sisa\.ch$
+    - hdr(host),field(1,:) -m reg -i ^(cms|cms-staging|staging|www\.)?smartfreight\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?smartfreight\.co\.za$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?cmslive\.com\.sg$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?intris\.be$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?datafreight\.co\.uk$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?acoinformatica\.it$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?customsmatters\.com$
+    - hdr(host),field(1,:) -m reg -i ^((en|www)\.)?lspsolutions\.com$
+    - hdr(host),field(1,:) -m reg -i ^((blog|info|send|www)\.)?microlistics\.com(\.au)?$
+    - hdr(host),field(1,:) -m reg -i ^((web|www)\.)?saastransportation\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?depotsystems\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?depotmobile\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?istemaforward\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?abmdata\.ie$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?abmdatasystems\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?customsware\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?cargoguide\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?cargoit\.se$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?cargosphere\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?transportsystems\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev)\.)?containerchain\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?easy-log\.fr$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?fenix\.com$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev)\.)?pierbridge\.com$
+    - hdr(host),field(1,:) -m reg -i ^((partnerresources|partnerresources-dev)\.)?pierbridge\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?pllink\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?readykorea\.co\.kr$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?readykorea\.com$
+    - hdr(host),field(1,:) -m reg -i ^english\.readykorea\.co\.kr$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?softcargo\.com\.uy$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?systema\.no$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?ulukom\.com\.tr$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?xware\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?xware\.se$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?znet-group\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?inobiz\.se$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?envasetechnologies\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?bolero\.net$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?exa-system\.co\.jp$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?sadec\.pl$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?aktivdata\.fi$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?singeste\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?buysellmove\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?sistemascasa\.com\.mx$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?openits\.co$
+
+# Path-based ACLs for security
+umbraco_denied_path:
+  description: "Umbraco admin paths"
+  tests:
+    - path_reg -i ^/umbraco.*
+
+admin_denied_path:
+  description: "Various admin paths"
+  tests:
+    - path_reg -i ^/admin.*
+    - path_reg -i ^/ecp.*
+    - path_reg -i ^/cscp.*
+
+exchange_denied_path:
+  description: "Exchange admin paths"
+  tests:
+    - path_reg -i ^/ecp.*
+
+sfb_denied_path:
+  description: "Skype for Business admin paths"
+  tests:
+    - path_reg -i ^/cscp.*
+
+# Identity service path ACLs
+identity_staging_login_path:
+  description: "Identity staging login paths"
+  tests:
+    - path /login
+    - path_beg /login/
+
+identity_staging_s2s_path:
+  description: "Identity staging s2s paths"
+  tests:
+    - path /s2s
+    - path_beg /s2s/
+
+identity_staging_account_path:
+  description: "Identity staging account paths"
+  tests:
+    - path /account
+    - path_beg /account/
+
+# Redirect target ACLs
+redirects_to_wisetechglobal_com:
+  description: "Domains that should redirect to wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^edi\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^realwiseholdings\.com$
+    - hdr(host),field(1,:) -m reg -i ^transit\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^translogix\.co\.nz$
+    - hdr(host),field(1,:) -m reg -i ^www\.translogix\.co\.nz$
+    - hdr(host),field(1,:) -m reg -i ^translogix\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^www\.translogix\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^wisetechglobal\.co\.za$
+    - hdr(host),field(1,:) -m reg -i ^wisetechglobal\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?corefreight\.com$
+    - hdr(host),field(1,:) -m reg -i ^(.+\.)?tradewise\.net$
+
+cargowise_excluded_from_redirect:
+  description: "Cargowise domains excluded from default redirects"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^updates\.cargowise\.com$
+
+cargowise_net_excluded_from_redirect:
+  description: "Cargowise.net domains excluded from default redirects"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^webservices\.cargowise\.net$
+    - hdr(host),field(1,:) -m reg -i ^webservices-ausyd\.cargowise\.net$
+
+# SAAS Transportation redirect ACL
+saas_transportation_redirect:
+  description: "SAAS Transportation domains for special redirect"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?saastransportation\.com$
