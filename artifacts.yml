@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260130.2
-  # Fri Jan 30 03:21:10 UTC 2026 -- Fri Jan 30 14:21:10 AEDT 2026
+  # Dante Build Artifact 20260203.1
+  # Mon Feb  2 19:00:58 UTC 2026 -- Tue Feb  3 06:00:58 AEDT 2026
   #
-  # Merge pull request 44656 from dante_artifact_upgrade into master
-  # f7ca0599729461f18c0424337fab3bd0b9dc6606
-  dante_build_id: '1598080'
+  # Merge pull request 44722 from dante_artifact_upgrade into master
+  # 754a6cfae71563e28b3a17e8a58e560048839ce3
+  dante_build_id: '1601450'
 
-  # virgil 20260130.7
-  # Fri Jan 30 02:36:54 UTC 2026 -- Fri Jan 30 13:36:54 AEDT 2026
+  # virgil 20260203.2
+  # Mon Feb  2 18:21:13 UTC 2026 -- Tue Feb  3 05:21:13 AEDT 2026
   #
-  # Merged PR 44655: us2 upgrades Round2
-  # 38ab329917e2d6fed2da6594f8df3525c319d67b
-  virgil_build_id: '1598042'
+  # Merge pull request 44711 from virgil_python_upgrade into master
+  # d915e352bf24099a0ca2ea4e7b7d1d41a0147c56
+  virgil_build_id: '1601401'
 
   # sqlbilling 20260202.1
   # Mon Feb  2 03:01:45 UTC 2026 -- Mon Feb  2 14:01:45 AEDT 2026
