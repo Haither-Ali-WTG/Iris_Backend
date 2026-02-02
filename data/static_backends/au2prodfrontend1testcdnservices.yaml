@@ -1042,3 +1042,14 @@ au2prod2-testexternal-catchall:
     - name: w5.au2prod2
       ip: 10.2.214.19
       port: 30400
+
+errorstest.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|401|403'
+  servers:
+    - name: au2sp-siis-403
+      ip: 10.2.118.45
+      port: 80
