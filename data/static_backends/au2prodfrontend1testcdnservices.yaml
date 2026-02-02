@@ -1019,7 +1019,7 @@ www-wtlkel.cargowise.com:
       port: 80
 
 au2prod2-testexternal-catchall:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: K8STEST
   http_health_check:
