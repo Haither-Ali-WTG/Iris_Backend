@@ -848,7 +848,7 @@ loginsimulator.wisetechglobal.com:
 
 ilul.me:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-    cookie:
+  cookie:
     name: ILUL
   http_health_check:
     enabled: true
@@ -864,7 +864,7 @@ ilul.me:
 
 cibr.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-    cookie:
+  cookie:
     name: CIBR
   http_health_check:
     enabled: true
