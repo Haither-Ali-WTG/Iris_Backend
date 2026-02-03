@@ -314,7 +314,7 @@ customsgate.acoinformatica.it:
       settings: check ssl
 
 rdg.acoinformatica.it:
-  clustered_instances: [de1prodfrontend1prodtenantservices1]
+  clustered_instances: [de1prodfrontend1tenantservices]
   cookie:
     name: ACORDG
   fullconn: 4000
