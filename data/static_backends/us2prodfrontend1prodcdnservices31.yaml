@@ -172,21 +172,15 @@ compliance-us.borderwise.com:
       ip: 10.4.67.112
       port: 50335
 
-s8.cargowise.com:
+s8.cargowise.com-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
-  cookie:
-    name: SS8C
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: false
-  servers:
-    - name: us2wp-ss8c-401
-      ip: 10.4.67.41
-      port: 80
-    - name: us2wp-ss8c-402
-      ip: 10.4.67.42
-      port: 80
+  full_override: |
+    backend s8_cargowise_com
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200|404
+    cookie SS8C insert indirect nocache dynamic
+    server us2wp-ss8c-401 10.4.67.41:80 check
+    server us2wp-ss8c-402 10.4.67.42:80 check
 
 dpsv4-usord.wisegrid.net:
   clustered_instances: [us2prodfrontend1prodcdnservices31]

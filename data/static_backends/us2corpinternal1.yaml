@@ -571,21 +571,13 @@ usdocs.wtg.zone:
 
 wtg-sw.sand.wtg.zone:
   clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /Orion/Login
-  encryption: true
-  cookie:
-    name: WEBNODE
-  servers:
-    - name: us2sp-smpe-401.sand.wtg.zone
-      ip: 10.2.82.30
-      port: 8787
-      settings: check ssl verify none
-    - name: us2sp-sape-401.sand.wtg.zone
-      ip: 10.2.82.32
-      port: 8787
-      settings: check ssl verify none
+  full_override: |
+    backend wtg-sw_sand_wtg_zone
+    option httpchk HEAD /Orion/Login
+    http-check expect status 200
+    cookie WEBNODE insert indirect nocache dynamic
+    server us2sp-smpe-401 10.2.82.30:8787 check ssl verify none
+    server us2sp-sape-401 10.2.82.32:8787 check ssl verify none
 
 us2prodfrontend1testcdnservices.wtg.zone:
   clustered_instances: [us2corpinternal1]
