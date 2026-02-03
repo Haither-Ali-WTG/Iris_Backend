@@ -7,12 +7,12 @@ variables:
   # 58e482445a857a2e2f0c4bf8709b6766334dc0d5
   dante_build_id: '1602030'
 
-  # virgil 20260203.4
-  # Tue Feb  3 04:48:43 UTC 2026 -- Tue Feb  3 15:48:43 AEDT 2026
+  # virgil 20260204.3
+  # Tue Feb  3 19:35:16 UTC 2026 -- Wed Feb  4 06:35:16 AEDT 2026
   #
-  # Merged PR 44771: updated partition count for topic-au2-prod-xhub-prod
-  # e7cfafd7d620644fbb389c5d6475a568641ae6e6
-  virgil_build_id: '1601984'
+  # Merged PR 44685: Replace C-00568 with a C53
+  # d960249228d447f7b253ec92a91dbc3d99c4b5cd
+  virgil_build_id: '1602586'
 
   # sqlbilling 20260203.2
   # Tue Feb  3 12:44:46 UTC 2026 -- Tue Feb  3 23:44:46 AEDT 2026
