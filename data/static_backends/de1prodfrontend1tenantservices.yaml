@@ -312,3 +312,21 @@ customsgate.acoinformatica.it:
       ip: 10.3.173.73
       port: 443
       settings: check ssl
+
+rdg.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1prodtenantservices1]
+  cookie:
+    name: ACORDG
+  fullconn: 4000
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: de1it0rdgw001
+      ip: 10.3.173.10
+      port: 80
+      settings:
+    - name: de1it0rdgw002
+      ip: 110.3.173.11
+      port: 80
+      settings:
