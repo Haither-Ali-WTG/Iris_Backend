@@ -569,7 +569,7 @@ usdocs.wtg.zone:
       ip: 10.4.67.116
       port: 80
 
-wtg-sw.sand.wtg.zone:
+wtg-sw.sand.wtg.zone-us:
   clustered_instances: [us2corpinternal1]
   full_override: |
     backend wtg-sw_sand_wtg_zone
