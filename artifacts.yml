@@ -7,12 +7,12 @@ variables:
   # 31a9bcb6af233119a32649b7157e1c7090703a51
   dante_build_id: '1601747'
 
-  # virgil 20260203.2
-  # Mon Feb  2 18:21:13 UTC 2026 -- Tue Feb  3 05:21:13 AEDT 2026
+  # virgil 20260203.4
+  # Tue Feb  3 04:48:43 UTC 2026 -- Tue Feb  3 15:48:43 AEDT 2026
   #
-  # Merge pull request 44711 from virgil_python_upgrade into master
-  # d915e352bf24099a0ca2ea4e7b7d1d41a0147c56
-  virgil_build_id: '1601401'
+  # Merged PR 44771: updated partition count for topic-au2-prod-xhub-prod
+  # e7cfafd7d620644fbb389c5d6475a568641ae6e6
+  virgil_build_id: '1601984'
 
   # sqlbilling 20260202.1
   # Mon Feb  2 03:01:45 UTC 2026 -- Mon Feb  2 14:01:45 AEDT 2026
