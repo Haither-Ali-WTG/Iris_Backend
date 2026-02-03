@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260203.6
-  # Tue Feb  3 05:41:06 UTC 2026 -- Tue Feb  3 16:41:06 AEDT 2026
+  # Dante Build Artifact 20260204.2
+  # Tue Feb  3 21:01:11 UTC 2026 -- Wed Feb  4 08:01:11 AEDT 2026
   #
-  # Merge pull request 44772 from dante_artifact_upgrade into master
-  # 58e482445a857a2e2f0c4bf8709b6766334dc0d5
-  dante_build_id: '1602030'
+  # Merge pull request 44815 from dante_artifact_upgrade into master
+  # 04ff233fb96c9d29f8671e51259afd98f16c4b41
+  dante_build_id: '1602689'
 
-  # virgil 20260204.3
-  # Tue Feb  3 19:35:16 UTC 2026 -- Wed Feb  4 06:35:16 AEDT 2026
+  # virgil 20260204.5
+  # Tue Feb  3 20:20:46 UTC 2026 -- Wed Feb  4 07:20:46 AEDT 2026
   #
-  # Merged PR 44685: Replace C-00568 with a C53
-  # d960249228d447f7b253ec92a91dbc3d99c4b5cd
-  virgil_build_id: '1602586'
+  # Merged PR 44799: new topics for telematics migration to global search
+  # 142dca135cd36687811e84267a3af7490cad5dff
+  virgil_build_id: '1602629'
 
   # sqlbilling 20260203.2
   # Tue Feb  3 12:44:46 UTC 2026 -- Tue Feb  3 23:44:46 AEDT 2026
