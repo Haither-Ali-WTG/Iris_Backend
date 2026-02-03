@@ -468,6 +468,12 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-cargowise-com
           cms_resource_group: RG-AU-Corp
+        - name: group_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group2_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group3_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
