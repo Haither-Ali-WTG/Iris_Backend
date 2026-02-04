@@ -177,7 +177,7 @@ s8.cargowise.com-us:
   full_override: |
     backend s8_cargowise_com
     option httpchk HEAD /wtg/ready
-    http-check expect status 200|404
+    http-check expect status 200
     cookie SS8C insert indirect nocache dynamic
     server us2wp-ss8c-401 10.4.67.41:80 check
     server us2wp-ss8c-402 10.4.67.42:80 check
