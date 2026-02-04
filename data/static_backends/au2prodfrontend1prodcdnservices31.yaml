@@ -2875,20 +2875,6 @@ securemirror.wisetechglobal.com:
     http-check expect rstatus 200
     server SYDWP-SFTP-1 10.2.70.94:8008 check port 8009
 
-rongjinsearchinvoicews.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-    check_expect: '200'
-  servers:
-    - name: AU2WP-SIIS-401A
-      ip: 10.2.69.12
-      port: 80
-    - name: AU2WP-SIIS-401B
-      ip: 10.2.69.13
-      port: 80
-
 smartfreight.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
