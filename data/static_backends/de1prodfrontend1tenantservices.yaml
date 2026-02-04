@@ -325,7 +325,7 @@ rdg.acoinformatica.it:
   servers:
     - name: de1it0rdgw001
       ip: 10.3.173.10
-      port: 80
+      port: 443
     - name: de1it0rdgw002
-      ip: 110.3.173.11
-      port: 80
+      ip: 10.3.173.11
+      port: 443
