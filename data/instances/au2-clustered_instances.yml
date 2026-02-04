@@ -256,6 +256,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
       cipher:
