@@ -1038,3 +1038,35 @@ errorstest.cargowise.com:
     - name: au2sp-siis-403
       ip: 10.2.118.45
       port: 80
+
+auadl-staging.transport.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--web1
+      ip: 10.2.69.95
+      port: 3004
+    - name: au2wt-sdkr-501c--web2
+      ip: 10.2.69.96
+      port: 3004
+
+auadl-staging.transport.wisetechglobal.com-api:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--api1
+      ip: 10.2.69.95
+      port: 3504
+    - name: au2wt-sdkr-501c--api2
+      ip: 10.2.69.96
+      port: 3504
