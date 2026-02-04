@@ -7,12 +7,12 @@ variables:
   # 804293c63e3419e06c2bea8154b7ac3913fdda80
   dante_build_id: '1603007'
 
-  # virgil 20260204.7
-  # Wed Feb  4 01:54:39 UTC 2026 -- Wed Feb  4 12:54:39 AEDT 2026
+  # virgil 20260205.2
+  # Wed Feb  4 21:16:58 UTC 2026 -- Thu Feb  5 08:16:58 AEDT 2026
   #
-  # Merged PR 44831:  Eye downsizing - point r.prod-1.es.wtg.ws at .13.14, .38 .39..40
-  # c823e3d475f401997502c6086e6e0a3536b38e5e
-  virgil_build_id: '1602950'
+  # Merged PR 44863: Repurpose au2anl00271 to au2co-selk-030 and decom of au2anl00272
+  # 610bd7815f544150d328a3a8f40a68789aa279fe
+  virgil_build_id: '1603729'
 
   # sqlbilling 20260203.2
   # Tue Feb  3 12:44:46 UTC 2026 -- Tue Feb  3 23:44:46 AEDT 2026
