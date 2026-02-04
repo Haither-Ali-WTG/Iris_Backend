@@ -7,12 +7,12 @@ variables:
   # 04ff233fb96c9d29f8671e51259afd98f16c4b41
   dante_build_id: '1602689'
 
-  # virgil 20260204.5
-  # Tue Feb  3 20:20:46 UTC 2026 -- Wed Feb  4 07:20:46 AEDT 2026
+  # virgil 20260204.7
+  # Wed Feb  4 01:54:39 UTC 2026 -- Wed Feb  4 12:54:39 AEDT 2026
   #
-  # Merged PR 44799: new topics for telematics migration to global search
-  # 142dca135cd36687811e84267a3af7490cad5dff
-  virgil_build_id: '1602629'
+  # Merged PR 44831:  Eye downsizing - point r.prod-1.es.wtg.ws at .13.14, .38 .39..40
+  # c823e3d475f401997502c6086e6e0a3536b38e5e
+  virgil_build_id: '1602950'
 
   # sqlbilling 20260203.2
   # Tue Feb  3 12:44:46 UTC 2026 -- Tue Feb  3 23:44:46 AEDT 2026
