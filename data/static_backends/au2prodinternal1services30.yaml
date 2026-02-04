@@ -314,3 +314,25 @@ gbcustoms-cdsws-test.wisegrid.net:
     - name: AU2WT-SIIS-401B
       ip: 10.2.69.20
       port: 80
+
+peppol-inbound-test.wisetechglobal.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 9080
+
+peppol-inbound-prod.wisetechglobal.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: AU2WP-SXTR-401
+      ip: 10.2.70.25
+      port: 9080
