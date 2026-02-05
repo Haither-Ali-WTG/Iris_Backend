@@ -1,0 +1,39 @@
+# Dynamic Backends
+# ################
+
+{% if dynamic_backends is defined %}
+{%   for backend_name, config_list in dynamic_backends | dictsort %}
+{%     for config in config_list %}
+backend {{ backend_name | replace(".", "_") }}{{ config.name_suffix }}
+{%       if config.balance is defined %}balance {{ config.balance }}
+{%       endif %}
+{%   if config.fullconn is defined %}fullconn {{ config.fullconn }}
+{%   endif %}
+{%   if config.http_health_check.enabled %}
+option httpchk
+http-check send meth {{ config.http_health_check.method | default('HEAD') }} uri {{ config.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ backend_name }}
+{%-    if config.http_health_check.xforwardedproto_header | default(true) %} hdr X-Forwarded-Proto https
+{%     endif %}
+http-check expect rstatus {{ config.http_health_check.check_expect | default('200|401|403|302|405') }}
+{%   endif %}
+{%       if config.cookie.enabled %}
+cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic httponly secure attr "SameSite=None"
+{%       endif %}
+{# TODO: Support override interval #}
+default-server inter 10000 {%- if config.encryption | default(false) %} ssl{% endif %}
+
+{%       for server_name, server_content in servers_data.items() %}
+{%         if backend_name in (server_content.websites_list or {}) %}
+{%           for iterating_config in server_content.websites_list[backend_name] %}
+{%             if iterating_config == config %}
+server {{ server_name | split('.') | first }} {{ server_content.server_ip }}:{{ iterating_config.port }} check
+{%-              if agent_ports[server_name] is defined and agent_ports[server_name] != 0 %} agent-check agent-port {{ agent_ports[server_name] }} agent-inter {{ 30 + (((backend_name + config.name_suffix) | hash)[:8] | int(base=16) % 16) }}s
+{%-              endif +%}
+{%             endif %}
+{%           endfor %}
+{%         endif %}
+{%       endfor %}
+
+{%     endfor %}
+{%   endfor %}
+{% endif %}
