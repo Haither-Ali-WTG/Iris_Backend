@@ -40,7 +40,10 @@ custom_url_actions:
     - use_backend nlpmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i nlpmel2.cfs.wisegrid.net }
     - use_backend outmel_cfs_wisegrid_net if { hdr(host),field(1,:) -i unpacks.thecargowarehouse.com.au }
     - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
+    - use_backend cfaprd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.cfalogistics.com.au }
+    - use_backend fragbl_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.fracht.com.au }
     ### Webtracker
+    - use_backend abqprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i abqprdwebtracker.wisegrid.net }
     - use_backend ahwprd-cn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ahwprd.webtracker.carozplus.com }
     - use_backend ap3syd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
     - use_backend acamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.acaint.com.au }
@@ -51,11 +54,14 @@ custom_url_actions:
     - use_backend awhadl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ulink.awh.com.au }
     - use_backend c0nall_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.consolalliance.com.au }
     - use_backend ccpbne_webtracker_wisegrid_net if { hdr(host),field(1,:) -i customers.commercialfreight.com.au }
+    - use_backend cfaprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.cfalogistics.com.au }
     - use_backend citmel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.citotransport.com.au }
     - use_backend dtksgn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i e-business.tmforwarding.com }
     - use_backend eplsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.eplint.com }
     - use_backend excsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.excellogistics.com.au }
+    - use_backend exkprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i exkprdwebtracker.wisegrid.net }
     - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.fsmac.com }
+    - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i famsin2webtracker.wisegrid.net }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.fracht.com.au }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
     - use_backend giasyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.gava.com.au }
@@ -77,3 +83,9 @@ custom_url_actions:
     - use_backend tmssyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.totalmaritime.com.au }
     ### GLOW
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
+    ### Accounting
+    - use_backend exkprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i exkprdaccounting-cn.wisegrid.net }
+    - use_backend h43prdaccounting_wisegrid_net if { hdr(host),field(1,:) -i h43prdaccounting-cn.wisegrid.net }
+    - use_backend sjiprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i sjiprdaccounting-cn.wisegrid.net }
+    ### WebPrint
+    - use_backend h43prd_webprint_wisegrid_net if { hdr(host),field(1,:) -i h43prd-cn.webprint.wisegrid.net }
