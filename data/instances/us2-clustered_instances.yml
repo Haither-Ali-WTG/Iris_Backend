@@ -211,8 +211,6 @@ clustered_instances:
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - us2wp-sweb-009a.wisecloud.zone      # Dedicated webserver for customurls
-        - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-401a.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-401b.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-402a.wisecloud.zone      # Dedicated webserver for UP3
