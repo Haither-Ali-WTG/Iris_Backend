@@ -1016,16 +1016,6 @@ fenix.com-us:
     server US2CO-SIIS-403A 10.4.67.38:80 check
     server US2CO-SIIS-403B 10.4.67.39:80 check
 
-filedropus.wisetechglobal.com-us:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend filedropus_wisetechglobal_com
-    option httpchk
-    http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host filedropus.wisetechglobal.com
-    http-check expect status 200
-    server LiquidFile 10.4.67.15:443 check check-ssl ssl verify none
-
 identity-temp.wisetechglobal.com-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
