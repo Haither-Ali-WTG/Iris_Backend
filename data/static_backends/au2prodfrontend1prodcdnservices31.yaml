@@ -57,6 +57,11 @@ cww.wisetechglobal.com-catchall:
     server AU2CO-SRDH-423 10.2.47.23:80
     server AU2CO-SRDH-424 10.2.47.24:80
     server AU2CO-SRDH-425 10.2.47.25:80
+    server AU2CO-SRDH-426 10.2.47.26:80
+    server AU2CO-SRDH-427 10.2.47.27:80
+    server AU2CO-SRDH-428 10.2.47.28:80
+    server AU2CO-SRDH-429 10.2.47.29:80
+    server AU2CO-SRDH-430 10.2.47.30:80
 
 app-au.borderwise.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
