@@ -735,8 +735,3 @@ tarictrans_es:
   description: "tarictrans.es"
   tests:
     - hdr(host),field(1,:) -m reg -i ^tarictrans\.es$
-
-cargoit_se:
-  description: "cargoit.se"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^cargoit\.se$

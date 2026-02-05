@@ -199,7 +199,6 @@ taric_domain_redirects:
     - redirect prefix https://www.taric.com code 301 if taric_com
     - redirect prefix https://www.tarictrans.com code 301 if tarictrans_com
     - redirect prefix https://www.tarictrans.es code 301 if tarictrans_es
-    - redirect prefix https://www.cargoit.se code 301 if cargoit_se
 
 # HTTP to HTTPS enforcement
 http_to_https_redirects:
