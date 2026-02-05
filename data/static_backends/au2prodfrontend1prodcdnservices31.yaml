@@ -2880,6 +2880,18 @@ securemirror.wisetechglobal.com:
     http-check expect rstatus 200
     server SYDWP-SFTP-1 10.2.70.94:8008 check port 8009
 
+mirror.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+    method: GET
+  servers:
+    - name: SYDWP-SFTP-1
+      ip: 10.2.70.94
+      port: 80
+
 smartfreight.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
