@@ -476,6 +476,18 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: group3_wisetechglobal_com
           cms_resource_group: RG-AU-Prod
+        - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
+        - name: star-shipamax-com
+          cms_resource_group: RG-EU-Prod
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-smartfreight-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

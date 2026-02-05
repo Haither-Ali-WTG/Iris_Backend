@@ -128,7 +128,6 @@ access_control_deny:
     Access control rules for corporate sites
   order: 25
   actions:
-    - http-request deny if !wtg_src admin_denied_path wca_wtg_zone_host
     - http-request deny if !wtg_src exchange_denied_path
     - http-request deny if !wtg_src sfb_denied_path
     - http-request deny if !wtg_src wisetechglobal_com_denied_path www_wisetechglobal_com
