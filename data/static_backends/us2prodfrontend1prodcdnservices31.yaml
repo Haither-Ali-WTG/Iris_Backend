@@ -817,3 +817,961 @@ www.customsware.com-us:
     http-check expect status 200
     server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
     server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+aktivdata.fi-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend aktivdata_fi
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host aktivdata.fi
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+bolero.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend bolero_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host bolero.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+borderwise.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend borderwise_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host borderwise.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+buysellmove.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend buysellmove_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host buysellmove.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+cargoguide.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend cargoguide_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host cargoguide.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+cargoit.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend cargoit_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host cargoit.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+cargosphere.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend cargosphere_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host cargosphere.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+depotmobile.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend depotmobile_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host depotmobile.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+depotsystems.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend depotsystems_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host depotsystems.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+easy-log.fr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend easy-log_fr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host easy-log.fr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+editrade.cl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend editrade_cl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host editrade.cl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+english.readykorea.co.kr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend english_readykorea_co_kr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host english.readykorea.co.kr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+envasetechnologies.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend envasetechnologies_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host envasetechnologies.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+exa-system.co.jp-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend exa-system_co_jp
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host exa-system.co.jp
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+fenix.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend fenix_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host fenix.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+filedropus.wisetechglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend filedropus_wisetechglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host filedropus.wisetechglobal.com
+    http-check expect status 200
+    server LiquidFile 10.4.67.15:443 check check-ssl ssl verify none
+
+identity-staging.wisetechglobal.com.account-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_account
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.account
+    http-check expect status 200
+    cookie ISA insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3003 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3003 check ssl
+
+identity-staging.wisetechglobal.com.login-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_login
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.login
+    http-check expect status 200
+    cookie ISL insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3001 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3001 check ssl
+
+identity-staging.wisetechglobal.com.login if identity-staging.wisetechglobal.com idp.login.path-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_login if identity-staging_wisetechglobal_com idp_login_path
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.login if identity-staging.wisetechglobal.com idp.login.path
+    http-check expect status 200
+
+identity-staging.wisetechglobal.com.s2s-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-staging_wisetechglobal_com_s2s
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.s2s
+    http-check expect status 200
+    cookie ISS insert indirect nocache dynamic
+    server us2wt-sidi-501a 10.4.139.11:3005 check ssl
+    server us2wt-sidi-501b 10.4.139.12:3005 check ssl
+
+identity-temp.wisetechglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-temp_wisetechglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-temp.wisetechglobal.com
+    http-check expect status 200
+    cookie TVSP insert indirect nocache dynamic
+    server us2wp-siss-401 10.4.69.21:80 check
+    server us2wp-siss-402 10.4.69.22:80 check
+
+impexdocs.com.au-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend impexdocs_com_au
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host impexdocs.com.au
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+inobiz.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend inobiz_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host inobiz.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+ir.wisetechglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend ir_wisetechglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host ir.wisetechglobal.com
+    http-check expect status 301
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+microlistics.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend microlistics_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host microlistics.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+opdimize.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend opdimize_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host opdimize.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+opdimize.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend opdimize_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host opdimize.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+opdimizer.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend opdimizer_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host opdimizer.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+opdimizer.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend opdimizer_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host opdimizer.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+openits.co-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend openits_co
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host openits.co
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+parcelinsights.pierbridge.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend parcelinsights_pierbridge_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host parcelinsights.pierbridge.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+pllink.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend pllink_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host pllink.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+readykorea.co.kr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend readykorea_co_kr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host readykorea.co.kr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+readykorea.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend readykorea_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host readykorea.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+sadec.pl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend sadec_pl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host sadec.pl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+sadecwin.pl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend sadecwin_pl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host sadecwin.pl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+search.cargowise.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend search_cargowise_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host search.cargowise.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+search.pierbridge.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend search_pierbridge_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host search.pierbridge.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+search.softship.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend search_softship_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host search.softship.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+
+search.wisetechglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend search_wisetechglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host search.wisetechglobal.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+singeste.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend singeste_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host singeste.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+sistemaforward.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend sistemaforward_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host sistemaforward.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+sistemascasa.com.mx-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend sistemascasa_com_mx
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host sistemascasa.com.mx
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+softcargo.com.uy-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend softcargo_com_uy
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host softcargo.com.uy
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+systema.no-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend systema_no
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host systema.no
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+transportsystems.com.au-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend transportsystems_com_au
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host transportsystems.com.au
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+ulukom.com.tr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend ulukom_com_tr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host ulukom.com.tr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www-dev.cargowise.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www-dev_cargowise_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www-dev.cargowise.com
+    http-check expect status 200
+    cookie WTGWEB insert indirect nocache dynamic
+    server US2CO-SIIS-403A 10.4.67.38:80 check inter 10s downinter 1s fall 5 maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 inter 10s downinter 1s fall 5 backup
+
+www.aktivdata.fi-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_aktivdata_fi
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.aktivdata.fi
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.bolero.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_bolero_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.bolero.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.borderwise.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_borderwise_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.borderwise.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.buysellmove.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_buysellmove_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.buysellmove.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.cargoguide.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_cargoguide_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.cargoguide.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.cargoit.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_cargoit_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.cargoit.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.cargosphere.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_cargosphere_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.cargosphere.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.depotmobile.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_depotmobile_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.depotmobile.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.depotsystems.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_depotsystems_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.depotsystems.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.easy-log.fr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_easy-log_fr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.easy-log.fr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.editrade.cl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_editrade_cl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.editrade.cl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.envasetechnologies.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_envasetechnologies_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.envasetechnologies.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.exa-system.co.jp-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_exa-system_co_jp
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.exa-system.co.jp
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.fenix.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_fenix_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.fenix.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.impexdocs.com.au-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_impexdocs_com_au
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.impexdocs.com.au
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.inobiz.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_inobiz_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.inobiz.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.microlistics.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_microlistics_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.microlistics.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.opdimize.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_opdimize_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.opdimize.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.opdimize.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_opdimize_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.opdimize.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.opdimizer.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_opdimizer_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.opdimizer.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.opdimizer.net-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_opdimizer_net
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.opdimizer.net
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.openits.co-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_openits_co
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.openits.co
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.pllink.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_pllink_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.pllink.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.readykorea.co.kr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_readykorea_co_kr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.readykorea.co.kr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.readykorea.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_readykorea_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.readykorea.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.sadec.pl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_sadec_pl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.sadec.pl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.sadecwin.pl-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_sadecwin_pl
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.sadecwin.pl
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.singeste.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_singeste_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.singeste.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.sistemaforward.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_sistemaforward_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.sistemaforward.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.sistemascasa.com.mx-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_sistemascasa_com_mx
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.sistemascasa.com.mx
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.softcargo.com.uy-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_softcargo_com_uy
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.softcargo.com.uy
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.systema.no-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_systema_no
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.systema.no
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.transportsystems.com.au-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_transportsystems_com_au
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.transportsystems.com.au
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.ulukom.com.tr-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_ulukom_com_tr
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.ulukom.com.tr
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.xware.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_xware_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.xware.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.xware.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_xware_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.xware.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.znet-group.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_znet-group_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.znet-group.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+xware.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend xware_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host xware.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+xware.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend xware_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host xware.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
