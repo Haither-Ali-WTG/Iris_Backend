@@ -12,7 +12,7 @@ tl1web2.wisegrid.net:
       ip: 10.2.69.85
       port: 80
 
-maps.gps.wisegrid.net:
+map.gps.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcwservices26]
   cookie:
     name: TLX
