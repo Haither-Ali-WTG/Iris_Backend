@@ -993,51 +993,6 @@ filedropus.wisetechglobal.com-us:
     http-check expect status 200
     server LiquidFile 10.4.67.15:443 check check-ssl ssl verify none
 
-identity-staging.wisetechglobal.com.account-us:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_account
-    option httpchk
-    http-check connect
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.account
-    http-check expect status 200
-    cookie ISA insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3003 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3003 check ssl
-
-identity-staging.wisetechglobal.com.login-us:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_login
-    option httpchk
-    http-check connect
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.login
-    http-check expect status 200
-    cookie ISL insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3001 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3001 check ssl
-
-identity-staging.wisetechglobal.com.login if identity-staging.wisetechglobal.com idp.login.path-us:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_login if identity-staging_wisetechglobal_com idp_login_path
-    option httpchk
-    http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.login if identity-staging.wisetechglobal.com idp.login.path
-    http-check expect status 200
-
-identity-staging.wisetechglobal.com.s2s-us:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_s2s
-    option httpchk
-    http-check connect
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-staging.wisetechglobal.com.s2s
-    http-check expect status 200
-    cookie ISS insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3005 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3005 check ssl
-
 identity-temp.wisetechglobal.com-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
