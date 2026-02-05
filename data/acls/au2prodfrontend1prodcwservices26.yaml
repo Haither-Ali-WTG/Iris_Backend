@@ -49,3 +49,9 @@ glow_webservice_path:
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
+
+excluded_from_redirect_path:
+  description: |-
+    Glow webservice paths that get routed to specific dynamic backend
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^tl1web2\.wisegrid\.net$

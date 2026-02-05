@@ -12,7 +12,7 @@ https_redirect:
     covered by wildcard certificates)
   order: 79
   actions:
-    - redirect scheme https if star_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc } !excluded_from_redirect_path
     - redirect scheme https if star_cfs_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webcampaign_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_webprint_wisegrid_net !{ ssl_fc }
