@@ -137,7 +137,7 @@ identity_staging_default_redirect:
   order: 79
   actions:
     - >-
-      redirect location /login if identity-staging_wisetechglobal_com
+      redirect location /login if identity_staging_wisetechglobal_com
       !idp_login_path !idp_account_path !idp_s2s_path
 
 # Domain normalization redirects - www to non-www
