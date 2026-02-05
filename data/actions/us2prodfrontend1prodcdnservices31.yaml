@@ -55,24 +55,17 @@ compliance_borderwise_backend:
   actions:
     - use_backend compliance-us_borderwise_com if compliance_borderwise_com
 
-# Corporate site admin path security
-corp_admin_path_security:
-  description: "Deny access to admin paths on corporate sites"
-  order: 59
-  actions:
-    - http-request deny if !wtg_src wisetechglobal_com_denied_path www_wisetechglobal_com
-    - http-request deny if !wtg_src wisetechglobal_com_denied_path dot_wisetechglobal_com
-    - http-request deny if !wtg_src www_local_wisetechglobal_com_denied_path www_local_wisetechglobal_com
-    - http-request deny if !wtg_src www_local_cargowise_com_denied_path www_local_cargowise_com
-    - http-request deny if !wtg_src www_dev_wisetechglobal_com_denied_path www_dev_wisetechglobal_com
-    - http-request deny if !wtg_src www_dev_cargowise_com_denied_path www_dev_cargowise_com
-
 # Umbraco admin path security
 umbraco_admin_security:
   description: "Deny access to Umbraco admin paths across sites"
   order: 59
   actions:
     - http-request deny if !wtg_src umbraco_denied_path www_wisetechglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path dot_wisetechglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path www_local_wisetechglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path www_local_cargowise_com
+    - http-request deny if !wtg_src umbraco_denied_path www_dev_wisetechglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path www_dev_cargowise_com
     - http-request deny if !wtg_src umbraco_denied_path forms_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path partners_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path www_cargowise_com
