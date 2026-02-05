@@ -165,6 +165,12 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?openits\.co$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?taric\.(es|com)$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev)\.)?triniumtech\.com$
+    - hdr(host),field(1,:) -m reg -i ^((www|www-dev)\.)?blumeglobal\.com$
+    - hdr(host),field(1,:) -m reg -i ^apps\.triniumtech\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?tarictrans\.(es|com)$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?matchboxexchange\.com$
 
 # Path-based ACLs for security
 umbraco_denied_path:
@@ -471,6 +477,11 @@ star_wtg_zone:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
 
+star_shipamax_com:
+  description: "ACL for star_shipamax_com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?shipamax\.com$
+
 systema_no:
   description: "ACL for systema_no"
   tests:
@@ -485,6 +496,16 @@ wisetechglobal_com:
   description: "ACL for wisetechglobal_com"
   tests:
     - hdr(host) -m reg -i ^wisetechglobal\.com$
+
+tailwindtransportationsoftware_com:
+  description: "ACL for tailwindtransportationsoftware_com"
+  tests:
+    - hdr(host) -m reg -i ^tailwindtransportationsoftware\.com$
+
+www_tailwindtransportationsoftware_com:
+  description: "ACL for www_tailwindtransportationsoftware_com"
+  tests:
+    - hdr(host) -m reg -i ^www\.tailwindtransportationsoftware\.com$
 
 www_aktivdata_fi:
   description: "ACL for www_aktivdata_fi"
@@ -677,3 +698,50 @@ wisetechglobal_com_excluded_from_default_redirect:
   description: "ACL for wisetechglobal_com_excluded_from_default_redirect"
   tests:
     - hdr(host),field(1,:) -m reg -i ^wpad\.wisetechglobal\.com$
+
+www_blumeglobal_com:
+  description: "www.blumeglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^www\.blumeglobal\.com$
+
+blumeglobal_com:
+  description: "blumeglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^blumeglobal\.com$
+
+taric_urls:
+  description: "taric.com and taric.es domains"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?taric\.com$
+    - hdr(host),field(1,:) -m reg -i ^taric\.es$
+
+tarictrans_urls:
+  description: "tarictrans.es and tarictrans.com domains"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?tarictrans\.es$
+    - hdr(host),field(1,:) -m reg -i ^tarictrans\.com$
+
+taric_es:
+  description: "taric.es"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^taric\.es$
+
+taric_com:
+  description: "taric.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^taric\.com$
+
+tarictrans_com:
+  description: "tarictrans.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^tarictrans\.com$
+
+tarictrans_es:
+  description: "tarictrans.es"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^tarictrans\.es$
+
+cargoit_se:
+  description: "cargoit.se"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^cargoit\.se$

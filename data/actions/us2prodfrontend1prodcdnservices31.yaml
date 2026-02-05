@@ -89,6 +89,8 @@ umbraco_admin_security:
     - http-request deny if !wtg_src umbraco_denied_path softship_com
     - http-request deny if !wtg_src umbraco_denied_path www_singeste_com
     - http-request deny if !wtg_src umbraco_denied_path singeste_com
+    - http-request deny if !wtg_src umbraco_denied_path www_blumeglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path blumeglobal_com
 
 # Special access restrictions
 special_access_restrictions:
@@ -186,6 +188,19 @@ non_www_to_www_redirects:
     - redirect prefix https://www.sadec.pl code 301 if sadec_urls
     - redirect prefix https://www.singeste.com code 301 if singeste_com
 
+# Taric and related domain redirects
+taric_domain_redirects:
+  description: "Redirect taric domains to www variants"
+  order: 79
+  actions:
+    - redirect prefix https://www.taric.es code 301 if taric_urls
+    - redirect prefix https://www.tarictrans.com code 301 if tarictrans_urls
+    - redirect prefix https://www.taric.es code 301 if taric_es
+    - redirect prefix https://www.taric.com code 301 if taric_com
+    - redirect prefix https://www.tarictrans.com code 301 if tarictrans_com
+    - redirect prefix https://www.tarictrans.es code 301 if tarictrans_es
+    - redirect prefix https://www.cargoit.se code 301 if cargoit_se
+
 # HTTP to HTTPS enforcement
 http_to_https_redirects:
   description: "Force HTTPS for certificate-covered domains"
@@ -194,6 +209,7 @@ http_to_https_redirects:
     - redirect scheme https if group_wisetechglobal_com_certificate_covered_domains !{ ssl_fc }
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_shipamax_com !{ ssl_fc }
     - redirect scheme https if star_cargowise_net !{ ssl_fc } !cargowise_net_excluded_from_redirect
     - redirect scheme https if star_borderwise_com !{ ssl_fc }
     - redirect scheme https if star_cargowise_com !{ ssl_fc } !cargowise_excluded_from_redirect
@@ -213,3 +229,6 @@ identity_staging_backend_routing:
     - >-
       use_backend identity-staging_wisetechglobal_com_account
       if identity_staging_wisetechglobal_com idp_account_path
+    - >-
+      use_backend tailwindtransportationsoftware_com
+      if www_tailwindtransportationsoftware_com

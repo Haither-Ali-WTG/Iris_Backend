@@ -600,6 +600,10 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: ilul-me
           cms_resource_group: RG-US-Prod
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-smartfreight-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

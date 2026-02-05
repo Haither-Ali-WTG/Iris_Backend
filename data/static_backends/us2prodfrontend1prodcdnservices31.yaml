@@ -818,6 +818,39 @@ www.customsware.com-us:
     server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
     server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
 
+tailwindtransportationsoftware.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend tailwindtransportationsoftware_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host tailwindtransportationsoftware.com
+    http-check expect status 301
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+shipamax.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend shipamax_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host shipamax.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.shipamax.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_shipamax_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.shipamax.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
 aktivdata.fi-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
@@ -1730,3 +1763,179 @@ xware.se-us:
     http-check expect status 200
     server US2CO-SIIS-403A 10.4.67.38:80 check
     server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.blumeglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_blumeglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.blumeglobal.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+blumeglobal.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend blumeglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host blumeglobal.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.matchboxexchange.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_matchboxexchange_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.matchboxexchange.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+matchboxexchange.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend matchboxexchange_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host matchboxexchange.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+cargoit.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend cargoit_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host cargoit.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.cargoit.se-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_cargoit_se
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.cargoit.se
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+taric.es-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend taric_es
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host taric.es
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+taric.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend taric_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host taric.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+tarictrans.es-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend tarictrans_es
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host tarictrans.es
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.taric.es-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_taric_es
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.taric.es
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+www.taric.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_taric_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.taric.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.tarictrans.es-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_tarictrans_es
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.tarictrans.es
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+tarictrans.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend tarictrans_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host tarictrans.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.tarictrans.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_tarictrans_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.tarictrans.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
+
+triniumtech.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend triniumtech_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host triniumtech.com
+    http-check expect status 200,301
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.triniumtech.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_triniumtech_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.triniumtech.com
+    http-check expect status 200,301
+    server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
+    server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
