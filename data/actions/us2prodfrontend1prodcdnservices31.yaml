@@ -124,11 +124,11 @@ external_domain_redirects:
   order: 79
   actions:
     - redirect location https://www.wisetechglobal.com if redirects_to_wisetechglobal_com
-    - redirect location https://smartfreight.com if redirects_to_smartfreight_com_URLs
+    - redirect location https://smartfreight.com if redirects_to_smartfreight_com_urls
     - >-
       redirect location https://www.linkedin.com/checkpoint/enterprise/login/75714794?application=learning
-      if linkedinlearning_redirected_URLs
-    - redirect location https://stackoverflow.com/c/wisetechglobal if stackoverflow_redirected_URLs
+      if linkedinlearning_redirected_urls
+    - redirect location https://stackoverflow.com/c/wisetechglobal if stackoverflow_redirected_urls
     - redirect location https://web.saastransportation.com code 307 if saas_transportation_redirect
 
 # Identity staging default redirect
