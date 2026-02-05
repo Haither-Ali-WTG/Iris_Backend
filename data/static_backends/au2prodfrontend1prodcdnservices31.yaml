@@ -2866,6 +2866,15 @@ partnerresources.pierbridge.com:
     server AU2CO-SIIS-403A 10.2.69.36:80 check
     server AU2CO-SIIS-403B 10.2.69.37:80 check
 
+securemirror.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend securemirror_wisetechglobal_com
+    load-server-state-from-file none
+    option httpchk GET /
+    http-check expect rstatus 200
+    server SYDWP-SFTP-1 10.2.70.94:8008 check port 8009
+
 smartfreight.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
