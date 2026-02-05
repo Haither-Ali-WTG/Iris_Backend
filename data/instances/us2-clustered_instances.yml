@@ -191,6 +191,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        server: 360
 
     us2prodfrontend1prodcwservices26:
       # us2-prod-frontend-1-prodcw-services-26
