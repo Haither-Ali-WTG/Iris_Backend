@@ -664,11 +664,6 @@ wca_denied_path:
   tests:
     - path_reg -i ^\/admin(.*?)$
 
-wca_wtg_zone_host:
-  description: "ACL for wca_wtg_zone_host"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^wca\.wtg\.zone$
-
 wisetechglobal_com_denied_path:
   description: "ACL for wisetechglobal_com_denied_path"
   tests:

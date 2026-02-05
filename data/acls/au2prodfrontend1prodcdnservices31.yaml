@@ -728,11 +728,6 @@ wpad_wisetechglobal_com_host:
   tests:
     - hdr(host),field(1,:) -m reg -i ^wpad\.wisetechglobal\.com$
 
-wca_wtg_zone_host:
-  description: "WCA internal zone host"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^wca\.wtg\.zone$
-
 cargowise_com_exluded_from_default_redirect:
   description: "CargoWise.com domains excluded from HTTPS redirect"
   tests:
