@@ -317,10 +317,10 @@ gbcustoms-cdsws-test.wisegrid.net:
 
 peppol-inbound-test.wisetechglobal.com:
   clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: PEPPOL
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: false
+    enabled: false
   servers:
     - name: AU2WT-SXTR-401
       ip: 10.2.70.18
@@ -328,10 +328,10 @@ peppol-inbound-test.wisetechglobal.com:
 
 peppol-inbound-prod.wisetechglobal.com:
   clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: PEPPOL
   http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  encryption: false
+    enabled: false
   servers:
     - name: AU2WP-SXTR-401
       ip: 10.2.70.25
