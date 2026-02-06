@@ -66,6 +66,22 @@ de.identity.wisetechglobal.com-s2s:
     server de1wp-sidi-501a 10.3.143.11:3005 check ssl
     server de1wp-sidi-501b 10.3.143.12:3005 check ssl
 
+identity-temp.wisetechglobal.com:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: TVSP
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: de1wp-siss-401
+      ip: 10.3.69.13
+      port: 80
+    - name: de1wp-siss-402
+      ip: 10.3.69.15
+      port: 80
+
 filedropeu.wisetechglobal.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   cookie:
