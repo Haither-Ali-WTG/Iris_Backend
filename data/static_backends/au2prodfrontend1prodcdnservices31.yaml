@@ -114,6 +114,18 @@ au.identity.wisetechglobal.com-s2s:
     server au2wp-sidi-501a 10.2.143.11:3005 check ssl
     server au2wp-sidi-501b 10.2.143.12:3005 check ssl
 
+identity-temp.wisetechglobal.com-au:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend identity-temp_wisetechglobal_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr host identity-temp.wisetechglobal.com
+    http-check expect status 200
+    cookie TVSP insert indirect nocache dynamic
+    server au2wp-siss-401 10.2.69.79:80 check
+    server au2wp-siss-402 10.2.69.84:80 check
+
 filedrop.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
