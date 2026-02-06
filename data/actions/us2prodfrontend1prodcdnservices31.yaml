@@ -72,7 +72,6 @@ umbraco_admin_security:
     - http-request deny if !wtg_src umbraco_denied_path smartfreight_com
     - http-request deny if !wtg_src umbraco_denied_path pierbridge_com
     - http-request deny if !wtg_src umbraco_denied_path www_pierbridge_com
-    - http-request deny if !wtg_src umbraco_denied_path partnerresources_pierbridge_com
     - http-request deny if !wtg_src umbraco_denied_path containerchain_com_urls
     - http-request deny if !wtg_src umbraco_denied_path bysoft_com_br
     - http-request deny if !wtg_src umbraco_denied_path cmslive_com_sg

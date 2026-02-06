@@ -378,11 +378,6 @@ opdimizer_net:
   tests:
     - hdr(host) -m reg -i ^opdimizer\.net$
 
-partnerresources_pierbridge_com:
-  description: "ACL for partnerresources_pierbridge_com"
-  tests:
-    - hdr(host) -m reg -i ^partnerresources\.pierbridge\.com$
-
 partners_wisetechglobal_com:
   description: "ACL for partners_wisetechglobal_com"
   tests:
