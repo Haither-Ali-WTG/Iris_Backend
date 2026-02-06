@@ -64,8 +64,6 @@ umbraco_admin_security:
     - http-request deny if !wtg_src umbraco_denied_path dot_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path www_local_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path www_local_cargowise_com
-    - http-request deny if !wtg_src umbraco_denied_path www_dev_wisetechglobal_com
-    - http-request deny if !wtg_src umbraco_denied_path www_dev_cargowise_com
     - http-request deny if !wtg_src umbraco_denied_path forms_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path partners_wisetechglobal_com
     - http-request deny if !wtg_src umbraco_denied_path www_cargowise_com
@@ -74,18 +72,14 @@ umbraco_admin_security:
     - http-request deny if !wtg_src umbraco_denied_path smartfreight_com
     - http-request deny if !wtg_src umbraco_denied_path pierbridge_com
     - http-request deny if !wtg_src umbraco_denied_path www_pierbridge_com
-    - http-request deny if !wtg_src umbraco_denied_path search_pierbridge_com
     - http-request deny if !wtg_src umbraco_denied_path partnerresources_pierbridge_com
     - http-request deny if !wtg_src umbraco_denied_path containerchain_com_urls
-    - http-request deny if !wtg_src umbraco_denied_path dev_sisa_ch
-    - http-request deny if !wtg_src umbraco_denied_path dev_bysoft_com_br
     - http-request deny if !wtg_src umbraco_denied_path bysoft_com_br
     - http-request deny if !wtg_src umbraco_denied_path cmslive_com_sg
     - http-request deny if !wtg_src umbraco_denied_path opdimize_com
     - http-request deny if !wtg_src umbraco_denied_path opdimize_net
     - http-request deny if !wtg_src umbraco_denied_path opdimizer_com
     - http-request deny if !wtg_src umbraco_denied_path opdimizer_net
-    - http-request deny if !wtg_src umbraco_denied_path dev_softship_com
     - http-request deny if !wtg_src umbraco_denied_path softship_com
     - http-request deny if !wtg_src umbraco_denied_path www_singeste_com
     - http-request deny if !wtg_src umbraco_denied_path singeste_com
@@ -98,7 +92,6 @@ special_access_restrictions:
   order: 59
   actions:
     - http-request deny if !wtg_src group_wisetechglobal_com
-    - http-request deny if !wtg_src cms_dev_pierbridge_com
     - http-request deny if !wtg_src exchange_denied_path
     - http-request deny if !wtg_src sfb_denied_path
     - http-request deny if !wtg_src wpad_wisetechglobal_com_host
