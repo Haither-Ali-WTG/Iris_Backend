@@ -268,11 +268,6 @@ cargowise_com:
   tests:
     - hdr(host) -m reg -i ^cargowise\.com$
 
-cms_dev_pierbridge_com:
-  description: "ACL for cms_dev_pierbridge_com"
-  tests:
-    - hdr(host) -m reg -i ^cms-dev\.pierbridge\.com$
-
 cmslive_com_sg:
   description: "ACL for cmslive_com_sg"
   tests:
@@ -312,24 +307,6 @@ depotsystems_com:
   description: "ACL for depotsystems_com"
   tests:
     - hdr(host) -m reg -i ^depotsystems\.com$
-
-dev_bysoft_com_br:
-  description: "ACL for dev_bysoft_com_br"
-  tests:
-    - hdr(host) -m reg -i ^www-dev\.bysoft\.com\.br$
-    - hdr(host) -m reg -i ^cms-dev\.bysoft\.com\.br$
-
-dev_sisa_ch:
-  description: "ACL for dev_sisa_ch"
-  tests:
-    - hdr(host) -m reg -i ^www-dev\.sisa\.ch$
-    - hdr(host) -m reg -i ^cms-dev\.sisa\.ch$
-
-dev_softship_com:
-  description: "ACL for dev_softship_com"
-  tests:
-    - hdr(host) -m reg -i ^www-dev\.softship\.com$
-    - hdr(host) -m reg -i ^cms-dev\.softship\.com$
 
 dot_wisetechglobal_com:
   description: "ACL for dot_wisetechglobal_com"
@@ -401,11 +378,6 @@ opdimizer_net:
   tests:
     - hdr(host) -m reg -i ^opdimizer\.net$
 
-partnerresources_pierbridge_com:
-  description: "ACL for partnerresources_pierbridge_com"
-  tests:
-    - hdr(host) -m reg -i ^partnerresources\.pierbridge\.com$
-
 partners_wisetechglobal_com:
   description: "ACL for partners_wisetechglobal_com"
   tests:
@@ -436,11 +408,6 @@ sadec_urls:
   tests:
     - hdr(host) -m reg -i ^(www\.)?sadecwin\.pl$
     - hdr(host) -m reg -i ^sadec\.pl$
-
-search_pierbridge_com:
-  description: "ACL for search_pierbridge_com"
-  tests:
-    - hdr(host) -m reg -i ^search\.pierbridge\.com$
 
 singeste_com:
   description: "ACL for singeste_com"
@@ -531,16 +498,6 @@ www_cargowise_com:
   description: "ACL for www_cargowise_com"
   tests:
     - hdr(host) -m reg -i ^www\.cargowise\.com$
-
-www_dev_cargowise_com:
-  description: "ACL for www_dev_cargowise_com"
-  tests:
-    - hdr(host) -m reg -i ^www-dev\.cargowise\.com$
-
-www_dev_wisetechglobal_com:
-  description: "ACL for www_dev_wisetechglobal_com"
-  tests:
-    - hdr(host) -m reg -i ^www-dev\.wisetechglobal\.com$
 
 www_impexdocs_com_au:
   description: "ACL for www_impexdocs_com_au"
