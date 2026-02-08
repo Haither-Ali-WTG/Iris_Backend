@@ -26,14 +26,3 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-glow
         if glow_webservice_path www-star_wisegrid_net
-
-custom_url_actions:
-  description: |-
-    Customurls for GLOW & Webtracker
-  order: 80
-  actions:
-    ### Webtracker
-
-    ### Webprint
-
-    ### GLOW
