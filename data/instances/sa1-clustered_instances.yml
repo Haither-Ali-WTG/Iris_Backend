@@ -17,8 +17,6 @@ clustered_instances:
 
             - 3001  # SA1WP-SSQL-1a/b i1
             - 3002  # SA1WT-SSQL-1a/b i1
-
-
             # ..3999
 
       iis_servers: []
