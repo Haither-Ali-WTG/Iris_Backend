@@ -89,7 +89,7 @@ clustered_instances:
         http_keep_alive: 15
 
     sa1prodfrontend1testcwservices27:
-      # sa1-prod-frontend-1-testcw-services-2
+      # sa1-prod-frontend-1-testcw-services-27
       dc: SA1
       defaults:
         health_check_interval: 30s
@@ -110,8 +110,7 @@ clustered_instances:
       machine_cluster: sa1-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - SA1WT-SWEB-1A.test.wisecloud.zone
-        - SA1WT-SWEB-1B.test.wisecloud.zone
+        - SA1WT-SWEB-1.test.wisecloud.zone
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
