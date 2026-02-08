@@ -31,6 +31,11 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
 
     sa1prodfrontend1prodcwservices26:
       # sa1-prod-frontend-1-prodcw-services-26
@@ -46,6 +51,11 @@ clustered_instances:
         ports:
           web: 2051
           socket: 2050
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
       machine_cluster: sa1-prod-frontend-1
       iis_servers: []
       iis_servers_local:
@@ -92,6 +102,11 @@ clustered_instances:
         ports:
           web: 2053
           socket: 2052
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
       machine_cluster: sa1-prod-frontend-1
       iis_servers: []
       iis_servers_local:
