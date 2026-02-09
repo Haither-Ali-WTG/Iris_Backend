@@ -32,8 +32,19 @@ stages:
               SecretsFilter: secretAppIdDf4b4604e176
               RunAsPreJob: false
 
+          - task: DownloadPipelineArtifact@2
+            displayName: 'Download dante artifact'
+            inputs:
+              buildType: 'specific'
+              project: 'InfrastructureAutomation'
+              # dante build artifact pipeline Id
+              pipeline: 26
+              buildVersionToDownload: 'specific'
+              buildId: '$(dante_build_id)'
+              path: $(Build.SourcesDirectory)
+
           - task: Ansible@0
-            displayName: 'Check IIS data'
+            displayName: 'Coolect IIS data'
             inputs:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/collect_and_process_sites_data.yml'
