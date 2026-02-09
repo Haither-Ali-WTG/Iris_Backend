@@ -10,7 +10,7 @@
         upload_iis_data: false
 
     - name: Read file content
-      command: "cat iis_sites/{{ inventory_hostname }}"
+      command: "ls iis_sites/{{ inventory_hostname }}"
       delegate_to: localhost
       register: file_output
 
