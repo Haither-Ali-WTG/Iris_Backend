@@ -726,10 +726,10 @@ testflighttracking.cargowise.com:
       ip: 10.2.118.61
       port: 80
 
-cmb-test.wisegrid.net:
+cmb-test-au.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: ABE
+    name: CMBT
   http_health_check:
     enabled: true
     http_path: /wtg/status
