@@ -32,6 +32,23 @@ stages:
               SecretsFilter: secretAppIdDf4b4604e176
               RunAsPreJob: false
 
+          - script: |
+              set -euxo pipefail
+              echo $(System.AccessToken) | az devops login
+            displayName: "Login via Azure DevOps CLI"
+
+          - script: |
+              set -euxo pipefail
+              az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) \
+                project="$(System.TeamProject)"
+            displayName: "Configure defaults for Azure DevOps organisation and project"
+
+          - script: |
+              set -euxo pipefail
+              git config --global user.name $(username)
+              git config --global user.email $(email)
+            displayName: "Configure git globals"
+
           - task: DownloadPipelineArtifact@2
             displayName: 'Download dante artifact'
             inputs:
