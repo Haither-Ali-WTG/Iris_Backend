@@ -23,6 +23,9 @@ stages:
             AU:
               dc: AU2
         steps:
+          - checkout: self
+            persistCredentials: true
+
           - script: |
               set -euxo pipefail
               pip install -r requirements.txt
@@ -64,22 +67,22 @@ stages:
               git config --global user.email $(email)
             displayName: "Configure git globals"
 
-          - task: DownloadPipelineArtifact@2
-            displayName: 'Download dante artifact'
-            inputs:
-              buildType: 'specific'
-              project: 'InfrastructureAutomation'
-              # dante build artifact pipeline Id
-              pipeline: 26
-              buildVersionToDownload: 'specific'
-              buildId: '$(dante_build_id)'
-              path: $(Build.SourcesDirectory)
+          # - task: DownloadPipelineArtifact@2
+          #   displayName: 'Download dante artifact'
+          #   inputs:
+          #     buildType: 'specific'
+          #     project: 'InfrastructureAutomation'
+          #     # dante build artifact pipeline Id
+          #     pipeline: 26
+          #     buildVersionToDownload: 'specific'
+          #     buildId: '$(dante_build_id)'
+          #     path: $(Build.SourcesDirectory)
 
-          - task: CopyFiles@2
-            displayName: 'Merge artifacts to a single roles folder'
-            inputs:
-              sourceFolder: iris
-              targetFolder: ansible
+          # - task: CopyFiles@2
+          #   displayName: 'Merge artifacts to a single roles folder'
+          #   inputs:
+          #     sourceFolder: iris
+          #     targetFolder: ansible
 
           # - task: Ansible@0
           #   displayName: 'Colect sites data and Render Dynamic backends'
