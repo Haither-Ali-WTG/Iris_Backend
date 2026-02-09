@@ -43,6 +43,12 @@ stages:
               buildId: '$(dante_build_id)'
               path: $(Build.SourcesDirectory)
 
+          - task: CopyFiles@2
+            displayName: 'Merge artifacts to a single roles folder'
+            inputs:
+              sourceFolder: iris
+              targetFolder: ansible
+
           - task: Ansible@0
             displayName: 'Coolect IIS data'
             inputs:
