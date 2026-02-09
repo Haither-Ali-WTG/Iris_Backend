@@ -29,9 +29,26 @@
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
-    - name: Populate servers data variable
+    - name: Populate servers_data
       set_fact:
         servers_data: "{{ complete_iis_data.clustered_instances[inventory_hostname] }}"
 
+    - name: Populate dynamic_backends
+      set_fact:
+        dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
+      loop: "{{ servers_data | dict2items }}"
+
+    - name: Build agent_ports
+      set_fact:
+        agent_ports: >-
+          {{
+            agent_ports | default({}) | combine({
+              (item if item is string else item.server):
+              (0 if item is string else item.agent_port | default(0))
+            })
+          }}
+      loop: >-
+        {{ iis_servers + iis_servers_local | default([]) }}
+
     - debug:
-        var: servers_data
+        var: agent_ports
