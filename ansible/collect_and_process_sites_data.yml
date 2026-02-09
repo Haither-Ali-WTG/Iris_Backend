@@ -9,10 +9,14 @@
       vars:
         upload_iis_data: false
 
-    - name: Read file content
-      command: "ls iis_sites/{{ inventory_hostname }}"
-      delegate_to: localhost
-      register: file_output
+    # - name: Read file content
+    #   command: "ls iis_sites/{{ inventory_hostname }}"
+    #   delegate_to: localhost
+    #   register: file_output
+
+    - name: Include vars of IIS sites to clustered_instance_name variable
+      set_fact:
+        complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
     - debug:
-        var: file_output
+        var: complete_iis_data
