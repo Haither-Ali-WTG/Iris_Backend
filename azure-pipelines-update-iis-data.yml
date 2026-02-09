@@ -5,6 +5,10 @@ variables:
   - template: artifacts.yml
   - name: key_vault_name
     value: kv-wtg-iris-prod
+  - name: username
+    value: "WTGOps"
+  - name: email
+    value: "wtgops@wisetechglobal.com"
 
 stages:
   - stage: Update_IIS_Data
