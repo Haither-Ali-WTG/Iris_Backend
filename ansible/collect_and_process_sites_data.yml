@@ -29,6 +29,8 @@
         var: iis_files
 
     - name: Include vars of IIS sites to clustered_instance_name variable
+      vars:
+        clustered_instance_names: "{{ [inventory_hostname] }}"
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
