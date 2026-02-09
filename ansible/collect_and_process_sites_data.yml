@@ -58,3 +58,10 @@
         dest: "{{ data_dir }}/dynamic_backends.cfg"
         mode: a=r
       delegate_to: localhost
+
+    - name: Read file content
+      command: "cat {{ data_dir }}/dynamic_backends.cfg"
+      register: file_output
+
+    - debug:
+        var: file_output
