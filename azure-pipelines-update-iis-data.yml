@@ -81,20 +81,20 @@ stages:
               sourceFolder: iris
               targetFolder: ansible
 
-          - task: Ansible@0
-            displayName: 'Colect sites data and Render Dynamic backends'
-            inputs:
-              ansibleInterface: 'agentMachine'
-              playbookPathOnAgentMachine: 'ansible/collect_and_process_sites_data.yml'
-              inventoriesAgentMachine: 'file'
-              inventoryFileOnAgentMachine: 'data/instances'
-              failOnStdErr: false
-              args: >-
-                --diff
-                -e="winrm_password=$(winrm_password)"
-                -e="key_vault_name=$(key_vault_name)"
-            env:
-              secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+          # - task: Ansible@0
+          #   displayName: 'Colect sites data and Render Dynamic backends'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/collect_and_process_sites_data.yml'
+          #     inventoriesAgentMachine: 'file'
+          #     inventoryFileOnAgentMachine: 'data/instances'
+          #     failOnStdErr: false
+          #     args: >-
+          #       --diff
+          #       -e="winrm_password=$(winrm_password)"
+          #       -e="key_vault_name=$(key_vault_name)"
+          #   env:
+          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - script: |
               set -euxo pipefail
