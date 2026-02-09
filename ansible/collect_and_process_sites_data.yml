@@ -62,6 +62,7 @@
     - name: Read file content
       command: "cat {{ data_dir }}/dynamic_backends.cfg"
       register: file_output
+      delegate_to: localhost
 
     - debug:
         var: file_output
