@@ -9,12 +9,7 @@
       vars:
         upload_iis_data: false
 
-    # - name: Read file content
-    #   command: "ls iis_sites/{{ inventory_hostname }}"
-    #   delegate_to: localhost
-    #   register: file_output
-
-    - name: Recursively find all IIS data files
+    - name: Find all data files
       ansible.builtin.find:
         paths: "iis_sites/{{ inventory_hostname }}"
         recurse: yes
@@ -28,11 +23,15 @@
     - debug:
         var: iis_files
 
-    - name: Include vars of IIS sites to clustered_instance_name variable
+    - name: Calculate sites data
       vars:
         clustered_instance_names: "{{ [inventory_hostname] }}"
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
 
+    - name: Populate servers data variable
+      set_fact:
+        servers_data: "{{ complete_iis_data.clustered_instances[inventory_hostname] }}"
+
     - debug:
-        var: complete_iis_data
+        var: servers_data
