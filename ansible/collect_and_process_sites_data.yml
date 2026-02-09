@@ -50,5 +50,9 @@
       loop: >-
         {{ iis_servers + iis_servers_local | default([]) }}
 
+    - name: Calculate dynamic_backends
+      set_fact:
+        dynamic_backends_rendered: "{{ lookup('template', 'roles/iris_haproxy/templates/dynamic_backends.j2') }}"
+
     - debug:
-        var: agent_ports
+        var: dynamic_backends_rendered
