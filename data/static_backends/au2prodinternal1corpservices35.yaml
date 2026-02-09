@@ -1336,7 +1336,7 @@ au2prodfrontend1testcdnservices.wtg.zone:
       port: 2062
 
 boltr-dat-1.wtg.zone:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
     check_expect: '200'
@@ -1348,7 +1348,7 @@ boltr-dat-1.wtg.zone:
       port: 9000
 
 boltr-dat-2.wtg.zone:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
     check_expect: '200'
@@ -1360,7 +1360,7 @@ boltr-dat-2.wtg.zone:
       port: 9001
 
 boltr-dat-3.wtg.zone:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
     check_expect: '200'
