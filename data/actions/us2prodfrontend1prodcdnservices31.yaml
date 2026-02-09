@@ -229,4 +229,4 @@ us2prod2_prodexternal_catchall_backend:
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend us2prod2-prodexternal-catchall if proget_us_wisetechglobal_com
+    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com
