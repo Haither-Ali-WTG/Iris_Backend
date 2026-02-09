@@ -1334,3 +1334,39 @@ au2prodfrontend1testcdnservices.wtg.zone:
     - name: au2lbl00349
       ip: 10.2.64.23
       port: 2062
+
+boltr-dat-1.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9000
+
+boltr-dat-2.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9001
+
+boltr-dat-3.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9002
