@@ -1,6 +1,6 @@
 ---
 - name: Collect sites_data
-  hosts: clustered_instances # au2sandinternal1
+  hosts: clustered_instances
   gather_facts: no
   vars:
     data_dir: "iis_sites/{{ inventory_hostname }}"
@@ -61,11 +61,3 @@
             dest: "{{ data_dir }}/dynamic_backends.cfg"
             mode: a=r
           delegate_to: localhost
-
-    # - name: Read file content
-    #   command: "cat {{ data_dir }}/dynamic_backends.cfg"
-    #   register: file_output
-    #   delegate_to: localhost
-
-    # - debug:
-    #     var: file_output
