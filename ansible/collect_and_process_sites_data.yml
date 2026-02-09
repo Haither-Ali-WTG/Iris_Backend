@@ -1,0 +1,17 @@
+---
+- name: Collect sites_data
+  hosts: au2sandinternal1 # clustered_instances
+  gather_facts: no
+  tasks:
+    - name: Collect IIS data
+      include_role:
+        name: collect_sites
+      vars:
+        upload_iis_data: false
+
+    - name: Read file content
+      command: "cat iis_sites/{{ inventory_hostname }}"
+      register: file_output
+
+    - debug:
+        var: file_output
