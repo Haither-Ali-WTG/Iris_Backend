@@ -1,7 +1,7 @@
 # Static Backends
 # ###############
 
-{% for name, backend in static_backends.items() %}
+{% for name, backend in static_backends | dictsort %}
 # {{ name }}
 #
 {% if backend.full_override is defined %}
