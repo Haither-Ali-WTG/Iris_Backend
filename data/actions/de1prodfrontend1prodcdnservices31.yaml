@@ -76,3 +76,10 @@ https_redirect:
   order: 80
   actions:
     - redirect scheme https if star_urs_wisegrid_net !{ ssl_fc }
+
+de1prod2_prodexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend de1prod2-prodexternal-catchall if proget_de_wisetechglobal_com

@@ -269,3 +269,4 @@ au2prod2_prodexternal_catchall_backend:
   order: 80
   actions:
     - use_backend au2prod2-prodexternal-catchall if ace_api_wisegrid_net
+    - use_backend au2prod2-prodexternal-catchall if proget_au_wisetechglobal_com
