@@ -3,7 +3,7 @@
 
 ### TEST SA1
 
-sa1wtreadonly401l1-wisegrid-net:
+sa1wtreadonly1l1-wisegrid-net:
   clustered_instances: [sa1prodfrontend1sqltcp9]
   http_health_check:
     enabled: false
