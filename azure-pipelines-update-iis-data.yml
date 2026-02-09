@@ -1,0 +1,49 @@
+---
+trigger: none
+
+variables:
+  - template: artifacts.yml
+  - name: user
+    value: dante
+  - name: key_vault_name
+    value: kv-wtg-iris-prod
+
+stages:
+  - stage: Update_IIS_Data
+    pool:
+      name: dante
+      demands:
+        - WTG_DC -equals ${dc}
+    jobs:
+      - job: Update_IIS_Data
+        strategy:
+          matrix:
+            AU:
+              dc: AU2
+        steps:
+          - script: |
+              set -euxo pipefail
+              pip install -r requirements.txt
+            displayName: 'Install requirements'
+
+          # - task: Ansible@0
+          #   displayName: 'Check IIS data'
+          #   inputs:
+          #     ansibleInterface: 'agentMachine'
+          #     playbookPathOnAgentMachine: 'ansible/check_iis_data.yml'
+          #     inventoriesAgentMachine: 'file'
+          #     inventoryFileOnAgentMachine: 'data/instances'
+          #     failOnStdErr: false
+          #     args: >-
+          #       -u $(user) --diff
+          #       -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
+          #       -e="{simulation: false}"
+          #       -e="winrm_password=$(winrm_password)"
+          #       -e="s3_host=${{ run.s3_host }}" -e="pure_usernames='${{ run.pure_usernames }}'"
+          #       -e="s3_iris_bucket=${{ run.s3_iris_bucket }}"
+          #       -e="key_vault_name=$(key_vault_name)"
+          #       -e="target_dc=${{ run.target_dc }}"
+          #       -e="target_hall=${{ run.agent_hall }}"
+          #   env:
+          #     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+          #     azure_devops_token: $(System.AccessToken)
