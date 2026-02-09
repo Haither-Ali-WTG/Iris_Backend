@@ -2,6 +2,132 @@
 # TODO figure out how to spread the definition over multiple files
 clustered_instances:
   hosts:
+    sa1prodfrontend1sqltcp9:
+      dc: SA1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            # KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-inventories/inventory.yml
+
+            # 3000..3999 is reserved by the billing collector:
+            # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
+
+            - 3001  # SA1WP-SSQL-1a/b i1
+            - 3002  # SA1WT-SSQL-1a/b i1
+            # ..3999
+
+      iis_servers: []
+      certificates: []
+      sqlbilling_acl:
+        - acl_name: customerreadonly_src
+          file: sa1-prod-frontend-1.acl
+      machine_cluster: sa1-prod-frontend-1
+      stats:
+        ports:
+          web: 2048
+          socket: 2049
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
+
+    sa1prodfrontend1prodcwservices26:
+      # sa1-prod-frontend-1-prodcw-services-26
+      dc: SA1
+      defaults:
+        health_check_interval: 30s
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2011]
+          ssl: [2012]
+      stats:
+        ports:
+          web: 2051
+          socket: 2050
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      iis_servers_local:
+        - SA1WP-SWEB-1A.wisecloud.zone
+        - SA1WP-SWEB-1B.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
+      websites_config: prodcwservices.yml
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-cfs-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: tracking_sozologistics_com
+          cms_resource_group: RG-EU-Prod
+        - name: webtrack_jenkar_com
+          cms_resource_group: RG-EU-Prod
+        - name: webtracker_goodlogisticsgroup_com
+          cms_resource_group: RG-EU-Prod
+        - name: customerportal_deugro_com
+          cms_resource_group: RG-EU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
+
+    sa1prodfrontend1testcwservices27:
+      # sa1-prod-frontend-1-testcw-services-27
+      dc: SA1
+      defaults:
+        health_check_interval: 30s
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2013]
+          ssl: [2014]
+      stats:
+        ports:
+          web: 2053
+          socket: 2052
+      container:
+        resources:
+          production:
+            cpu: 1000m
+            memory: 2000Mi
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      iis_servers_local:
+        - SA1WT-SWEB-1.test.wisecloud.zone
+      iis_user_local: s_lbwinrmquerier
+      websites_config: testcwservices.yml
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webtracker-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webcampaign-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-webprint-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-cfs-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 15
+
     sa1sandinternal1testservices0:
       # sa1-sand-internal-1-test-services-0
       dc: SA1
