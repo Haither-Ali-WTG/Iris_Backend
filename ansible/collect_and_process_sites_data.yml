@@ -1,0 +1,60 @@
+---
+- name: Collect sites_data
+  hosts: clustered_instances
+  gather_facts: no
+  vars:
+    data_dir: "iis_sites/{{ inventory_hostname }}"
+  tasks:
+    - name: Collect IIS data
+      include_role:
+        name: collect_sites
+      vars:
+        upload_iis_data: false
+
+    - name: Find all data files
+      ansible.builtin.find:
+        paths: "{{ data_dir }}"
+        recurse: yes
+      delegate_to: localhost
+      register: iis_files
+
+    - name: Map files to paths
+      set_fact:
+        iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
+
+    - name: Calculate sites data
+      vars:
+        clustered_instance_names: "{{ [inventory_hostname] }}"
+      set_fact:
+        complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
+
+    - name: Render dynamic backends
+      when: inventory_hostname in complete_iis_data.clustered_instances
+      block:
+        - name: Populate servers_data
+          set_fact:
+            servers_data: "{{ complete_iis_data.clustered_instances[inventory_hostname] }}"
+
+        - name: Populate dynamic_backends
+          set_fact:
+            dynamic_backends: "{{ dynamic_backends | default({}) | combine(item.value.websites_list) }}"
+          loop: "{{ servers_data | dict2items }}"
+
+        - name: Build agent_ports
+          set_fact:
+            agent_ports: >-
+              {{
+                agent_ports | default({}) | combine({
+                  (item if item is string else item.server):
+                  (0 if item is string else item.agent_port | default(0))
+                })
+              }}
+          loop: >-
+            {{ iis_servers + iis_servers_local | default([]) }}
+
+        - name: Template out the dynamic backends
+          template:
+            src: roles/iris_haproxy/templates/dynamic_backends.j2
+            dest: "{{ data_dir }}/dynamic_backends.cfg"
+            mode: a=r
+          delegate_to: localhost
