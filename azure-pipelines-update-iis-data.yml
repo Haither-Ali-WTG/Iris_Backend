@@ -13,7 +13,7 @@ stages:
     pool:
       name: dante
       demands:
-        - WTG_DC -equals ${dc}
+        - WTG_DC -equals $(dc)
     jobs:
       - job: Update_IIS_Data
         strategy:
