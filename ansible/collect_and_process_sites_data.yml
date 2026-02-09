@@ -3,7 +3,7 @@
   hosts: au2sandinternal1 # clustered_instances
   gather_facts: no
   vars:
-    data_dir: " iis_sites/{{ inventory_hostname }}"
+    data_dir: "iis_sites/{{ inventory_hostname }}"
   tasks:
     - name: Collect IIS data
       include_role:
