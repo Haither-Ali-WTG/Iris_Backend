@@ -14,6 +14,19 @@
     #   delegate_to: localhost
     #   register: file_output
 
+    - name: Recursively find all IIS data files
+      ansible.builtin.find:
+        paths: "iis_sites/{{ inventory_hostname }}"
+        recurse: yes
+      register: iis_files
+
+    - name: Map files to paths
+      set_fact:
+        iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
+
+    - debug:
+        var: iis_files
+
     - name: Include vars of IIS sites to clustered_instance_name variable
       set_fact:
         complete_iis_data: "{{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}"
