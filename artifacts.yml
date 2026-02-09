@@ -7,12 +7,12 @@ variables:
   # ddc9699a1186c5504814742d8d323ad29eadc3f3
   dante_build_id: '1604058'
 
-  # virgil 20260205.2
-  # Wed Feb  4 21:16:58 UTC 2026 -- Thu Feb  5 08:16:58 AEDT 2026
+  # virgil 20260209.4
+  # Sun Feb  8 23:02:40 UTC 2026 -- Mon Feb  9 10:02:40 AEDT 2026
   #
-  # Merged PR 44863: Repurpose au2anl00271 to au2co-selk-030 and decom of au2anl00272
-  # 610bd7815f544150d328a3a8f40a68789aa279fe
-  virgil_build_id: '1603729'
+  # Merged PR 44927: Hyperv to Vmware phase2
+  # f3e4084757d5b37d491edf24d052dd2e5f94065d
+  virgil_build_id: '1607478'
 
   # sqlbilling 20260205.2
   # Thu Feb  5 12:19:10 UTC 2026 -- Thu Feb  5 23:19:10 AEDT 2026
