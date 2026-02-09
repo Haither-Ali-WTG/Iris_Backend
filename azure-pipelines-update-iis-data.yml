@@ -50,7 +50,7 @@ stages:
               targetFolder: ansible
 
           - task: Ansible@0
-            displayName: 'Coolect IIS data'
+            displayName: 'Colect sites data and Render Dynamic backends'
             inputs:
               ansibleInterface: 'agentMachine'
               playbookPathOnAgentMachine: 'ansible/collect_and_process_sites_data.yml'
