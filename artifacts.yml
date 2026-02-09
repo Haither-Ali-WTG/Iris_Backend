@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260209.1
-  # Mon Feb  9 00:01:33 UTC 2026 -- Mon Feb  9 11:01:33 AEDT 2026
+  # Dante Build Artifact 20260210.1
+  # Mon Feb  9 19:01:08 UTC 2026 -- Tue Feb 10 06:01:08 AEDT 2026
   #
-  # Merge pull request 44938 from dante_artifact_upgrade into master
-  # 0d114d3004304e37e53f8e6a9106a56563e19f34
-  dante_build_id: '1607549'
+  # Merge pull request 44991 from dante_artifact_upgrade into master
+  # 2a9febf63e54f831d7c3f6dcbe7dff4d6c4d5890
+  dante_build_id: '1608370'
 
-  # virgil 20260209.4
-  # Sun Feb  8 23:02:40 UTC 2026 -- Mon Feb  9 10:02:40 AEDT 2026
+  # virgil 20260210.2
+  # Mon Feb  9 18:21:02 UTC 2026 -- Tue Feb 10 05:21:02 AEDT 2026
   #
-  # Merged PR 44927: Hyperv to Vmware phase2
-  # f3e4084757d5b37d491edf24d052dd2e5f94065d
-  virgil_build_id: '1607478'
+  # Merge pull request 44986 from virgil_python_upgrade into master
+  # 4a5264b00d265a5cd204a4c30375debf5d068cfc
+  virgil_build_id: '1608316'
 
-  # sqlbilling 20260205.2
-  # Thu Feb  5 12:19:10 UTC 2026 -- Thu Feb  5 23:19:10 AEDT 2026
+  # sqlbilling 20260210.2
+  # Mon Feb  9 18:34:35 UTC 2026 -- Tue Feb 10 05:34:35 AEDT 2026
   #
-  # Merged PR 44904: AddSQLBilling IPs DE1 US2
-  # 86eed1285ca1e1e0acfe8c3f632b0db2c60739be
-  sqlbilling_build_id: '1604438'
+  # Merged PR 44988: AddSQLBilling IPs Au2 De1 US2
+  # 590a6a197e9b838fa1cba5d6ba3a51bbb88dea32
+  sqlbilling_build_id: '1608340'
