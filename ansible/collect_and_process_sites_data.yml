@@ -18,6 +18,7 @@
       ansible.builtin.find:
         paths: "iis_sites/{{ inventory_hostname }}"
         recurse: yes
+      delegate_to: localhost
       register: iis_files
 
     - name: Map files to paths
