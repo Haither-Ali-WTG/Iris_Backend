@@ -34,6 +34,17 @@ stages:
 
           - script: |
               set -euxo pipefail
+              pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+              pip install --upgrade azure-core
+            displayName: "Upgrade Azure CLI"
+
+          - script: |
+              set -euxo pipefail
+              az extension add --upgrade --yes --name azure-devops
+            displayName: "Add Azure-DevOps extension"
+
+          - script: |
+              set -euxo pipefail
               echo $(System.AccessToken) | az devops login
             displayName: "Login via Azure DevOps CLI"
 
