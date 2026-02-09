@@ -82,7 +82,7 @@ stages:
                 echo "##vso[task.setvariable variable=changed]no"
                 exit 0
               fi
-              git push -f origin automatic_${{ image.name }}_image_upgrade
+              git push -f origin automatic_sites_data_upload
               echo -n "$(date) INFO - There is a difference between commits. Attempt to create PR."
               set +x
               echo "##vso[task.setvariable variable=changed]yes"
