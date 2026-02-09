@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260205.2
-  # Thu Feb  5 03:24:09 UTC 2026 -- Thu Feb  5 14:24:09 AEDT 2026
+  # Dante Build Artifact 20260209.1
+  # Mon Feb  9 00:01:33 UTC 2026 -- Mon Feb  9 11:01:33 AEDT 2026
   #
-  # Merged PR 44884: Change haproxy uploaded version from latest to lts
-  # ddc9699a1186c5504814742d8d323ad29eadc3f3
-  dante_build_id: '1604058'
+  # Merge pull request 44938 from dante_artifact_upgrade into master
+  # 0d114d3004304e37e53f8e6a9106a56563e19f34
+  dante_build_id: '1607549'
 
   # virgil 20260209.4
   # Sun Feb  8 23:02:40 UTC 2026 -- Mon Feb  9 10:02:40 AEDT 2026
