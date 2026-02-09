@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260210.1
-  # Mon Feb  9 19:01:08 UTC 2026 -- Tue Feb 10 06:01:08 AEDT 2026
+  # Dante Build Artifact 20260210.2
+  # Mon Feb  9 21:41:03 UTC 2026 -- Tue Feb 10 08:41:03 AEDT 2026
   #
-  # Merge pull request 44991 from dante_artifact_upgrade into master
-  # 2a9febf63e54f831d7c3f6dcbe7dff4d6c4d5890
-  dante_build_id: '1608370'
+  # Merge pull request 45006 from dante_artifact_upgrade into master
+  # fa1efd1d3e192bf161ec6a397c8224998b7ed652
+  dante_build_id: '1608491'
 
-  # virgil 20260210.2
-  # Mon Feb  9 18:21:02 UTC 2026 -- Tue Feb 10 05:21:02 AEDT 2026
+  # virgil 20260210.4
+  # Mon Feb  9 21:00:46 UTC 2026 -- Tue Feb 10 08:00:46 AEDT 2026
   #
-  # Merge pull request 44986 from virgil_python_upgrade into master
-  # 4a5264b00d265a5cd204a4c30375debf5d068cfc
-  virgil_build_id: '1608316'
+  # Merged PR 45005: added new topic for my-account-logs cs02224660
+  # fd6139b096c255ba45d83d31f62a4a4f5744c0ea
+  virgil_build_id: '1608457'
 
   # sqlbilling 20260210.2
   # Mon Feb  9 18:34:35 UTC 2026 -- Tue Feb 10 05:34:35 AEDT 2026
