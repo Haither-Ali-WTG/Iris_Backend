@@ -102,3 +102,10 @@ wca_prod_url:
   tests:
     - hdr(host),field(1,:) -i de1wcatoken.wisegrid.net
     - hdr(host),field(1,:) -i de1wca.wisegrid.net
+
+proget-de_wisetechglobal_com:
+  description: |-
+    hostnames for proget-de OpenShift
+  tests:
+    - hdr(host),field(1,:) -i proget-de.wisetechglobal.com
+    - hdr(host),field(1,:) -i proget.wisetechglobal.com

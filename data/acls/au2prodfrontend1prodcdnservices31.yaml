@@ -806,3 +806,10 @@ webservices_hostnames:
   tests:
     - hdr(host),field(1,:) -i webservices.cargowise.net
     - hdr(host),field(1,:) -i webservices-ausyd.cargowise.net
+
+proget-au_wisetechglobal_com:
+  description: |-
+    hostnames for proget-au OpenShift
+  tests:
+    - hdr(host),field(1,:) -i proget-au.wisetechglobal.com
+    - hdr(host),field(1,:) -i proget.wisetechglobal.com
