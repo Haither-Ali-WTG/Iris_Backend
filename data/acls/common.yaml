@@ -118,7 +118,7 @@ jumphost_src:
 github_src:
   description: source IP is WiseTech (internal or external network)
   tests:
-    # GitHub IP range https://wisetechglobal.sharepoint.com/:u:/r/sites/ServerManagement/SitePages/Azure---Github-Network-integration.aspx?csf=1&web=1&e=Q33Mh5
+    # GitHub IP range
     - src 4.197.59.64/32
     - var(txn.client_ip) -m ip 4.197.59.64/32
     - src 20.42.48.200/32
