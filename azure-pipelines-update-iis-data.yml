@@ -26,10 +26,10 @@ stages:
       - job: Update_IIS_Data
         strategy:
           matrix:
-            AU2:
-              dc: AU2
-            DE1:
-              dc: DE1
+            # AU2:
+            #   dc: AU2
+            # DE1:
+            #   dc: DE1
             US2:
               dc: US2
         steps:
@@ -106,6 +106,7 @@ stages:
                 --diff
                 -e="winrm_password=$(winrm_password)"
                 -e="key_vault_name=$(key_vault_name)"
+                -e="target_dc=$(dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
