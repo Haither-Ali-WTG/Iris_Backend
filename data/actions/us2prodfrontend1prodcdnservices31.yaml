@@ -224,9 +224,16 @@ identity_staging_backend_routing:
       use_backend tailwindtransportationsoftware_com
       if www_tailwindtransportationsoftware_com
 
+proget_us_wisetechglobal_com_access_control:
+  description: |-
+    Deny rule for proget-us.wisetechglobal.com
+  order: 59
+  actions:
+    - http-request deny if !wtg_src !github_src proget-us_wisetechglobal_com
+
 us2prod2_prodexternal_catchall_backend:
   description: |-
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com
+    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com github_src wtg_src
