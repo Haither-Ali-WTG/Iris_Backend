@@ -26,7 +26,7 @@ stages:
       - job: Update_IIS_Data
         strategy:
           matrix:
-            AU:
+            AU2:
               dc: AU2
         steps:
           - checkout: self
@@ -108,8 +108,8 @@ stages:
           - script: |
               set -euxo pipefail
               git fetch origin $(target_branch)
-              git branch -D $(branch_name) 2>/dev/null || true
-              git checkout -b $(branch_name) origin/$(target_branch)
+              git branch -D $(dc)_$(branch_name) 2>/dev/null || true
+              git checkout -b $(dc)_$(branch_name) origin/$(target_branch)
             displayName: Create new branch
 
           - script: |
@@ -124,18 +124,18 @@ stages:
                 echo "##vso[task.setvariable variable=changed]no"
                 exit 0
               fi
-              git push -f origin $(branch_name)
+              git push -f origin $(dc)_$(branch_name)
               echo -n "$(date) INFO - There is a difference between commits. Attempt to create PR."
               set +x
               echo "##vso[task.setvariable variable=changed]yes"
             displayName: Push Commit
 
           - script: |
-              az repos pr list --source-branch $(branch_name) | jq -e '.[0]'
+              az repos pr list --source-branch $(dc)_$(branch_name) | jq -e '.[0]'
               if [[ $? -ne 0 ]]; then
                 az repos pr create --auto-complete true --repository $(repository) \
-                --source-branch $(branch_name) \
-                --target-branch $(target_branch) --delete-source-branch true --title "Upload Site data"
+                --source-branch $(dc)_$(branch_name) \
+                --target-branch $(target_branch) --delete-source-branch true --title "$(dc) - Upload IIS sites data"
                 exit 0
               else
                 echo "No PR created as it already exists"
