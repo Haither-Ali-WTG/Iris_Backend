@@ -26,10 +26,10 @@ stages:
       - job: Update_IIS_Data
         strategy:
           matrix:
-            # AU2:
-            #   dc: AU2
-            # DE1:
-            #   dc: DE1
+            AU2:
+              dc: AU2
+            DE1:
+              dc: DE1
             US2:
               dc: US2
         steps:
