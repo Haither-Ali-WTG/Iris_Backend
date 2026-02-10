@@ -12,7 +12,7 @@ variables:
   - name: repository
     value: dante
   - name: branch_name
-    value: automatic_sites_data_upload    
+    value: automatic_sites_data_upload
   - name: target_branch
     value: master
 
