@@ -84,6 +84,12 @@ stages:
               sourceFolder: iris
               targetFolder: ansible
 
+          - script: |
+              set -euxo pipefail
+              git fetch origin create_pr
+              git checkout -b automatic_sites_data_upload origin/create_pr
+            displayName: Create new branch
+
           - task: Ansible@0
             displayName: 'Colect sites data and Render Dynamic backends'
             inputs:
@@ -98,12 +104,6 @@ stages:
                 -e="key_vault_name=$(key_vault_name)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-
-          - script: |
-              set -euxo pipefail
-              git fetch origin create_pr
-              git checkout -b automatic_sites_data_upload origin/create_pr
-            displayName: Create new branch
 
           - script: |
               set -euxo pipefail
