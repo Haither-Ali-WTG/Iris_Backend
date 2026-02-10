@@ -10,7 +10,7 @@ variables:
   - name: email
     value: "wtgops@wisetechglobal.com"
   - name: repository
-    value: dante
+    value: iris
   - name: branch_name
     value: automatic_sites_data_upload
   - name: target_branch
