@@ -58,4 +58,3 @@ cmb_test_de_backend:
   order: 80
   actions:
     - use_backend cmb-test-de_wisegrid_net if cmb-test-de_wisegrid_net
-    - use_backend cmb-test-de_wisegrid_net if cmb-test_wisegrid_net
