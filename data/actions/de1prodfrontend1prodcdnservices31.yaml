@@ -76,3 +76,17 @@ https_redirect:
   order: 80
   actions:
     - redirect scheme https if star_urs_wisegrid_net !{ ssl_fc }
+
+proget_de_wisetechglobal_com_access_control:
+  description: |-
+    Deny rule for proget-de.wisetechglobal.com
+  order: 59
+  actions:
+    - http-request deny if !wtg_src !azure_ext_controlled_src proget-de_wisetechglobal_com
+
+de1prod2_prodexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend de1prod2-prodexternal-catchall if proget-de_wisetechglobal_com azure_ext_controlled_src wtg_src

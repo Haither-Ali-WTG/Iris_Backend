@@ -692,3 +692,10 @@ tarictrans_es:
   description: "tarictrans.es"
   tests:
     - hdr(host),field(1,:) -m reg -i ^tarictrans\.es$
+
+proget-us_wisetechglobal_com:
+  description: |-
+    hostnames for proget-us OpenShift
+  tests:
+    - hdr(host),field(1,:) -i proget-us.wisetechglobal.com
+    - hdr(host),field(1,:) -i proget.wisetechglobal.com
