@@ -71,3 +71,7 @@
             pwd
             ls -la
           delegate_to: localhost
+          register: output
+
+        - debug:
+            var: output
