@@ -21,17 +21,26 @@ stages:
     pool:
       name: dante
       demands:
-        - WTG_DC -equals $(dc)
+        - WTG_DC -equals $(agent_dc)
     jobs:
       - job: Update_IIS_Data
         strategy:
           matrix:
             AU2:
               dc: AU2
+              agent_dc: AU2
+            CN1:
+              dc: CN1
+              agent_dc: AU2
             DE1:
               dc: DE1
+              agent_dc: DE1
+            SA1:
+              dc: SA1
+              agent_dc: AU2
             US2:
               dc: US2
+              agent_dc: DE1
         steps:
           - checkout: self
             persistCredentials: true
