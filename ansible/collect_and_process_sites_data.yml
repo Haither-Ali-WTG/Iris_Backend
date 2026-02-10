@@ -1,6 +1,6 @@
 ---
 - name: Collect sites_data
-  hosts: clustered_instances
+  hosts: au2sandinternal1  #clustered_instances
   gather_facts: no
   vars:
     data_dir: "iis_sites/{{ inventory_hostname }}"
