@@ -87,6 +87,7 @@ stages:
           - script: |
               set -euxo pipefail
               git fetch origin create_pr
+              git branch -D automatic_sites_data_upload 2>/dev/null || true
               git checkout -b automatic_sites_data_upload origin/create_pr
             displayName: Create new branch
 
