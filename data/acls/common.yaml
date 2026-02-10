@@ -115,10 +115,12 @@ jumphost_src:
     - src 10.4.86.0/24
     - var(txn.client_ip) -m ip 10.4.86.0/24
 
-github_src:
+azure_ext_controlled_src:
   description: source IP is WiseTech (internal or external network)
   tests:
-    # GitHub IP range
+    #Azure GitHub IP range
+    #https://wisetechglobal.sharepoint.com/:u:/r/sites/ServerManagement/SitePages/
+    #Azure---Github-Network-integration.aspx?csf=1&web=1&e=wYWOxN
     - src 4.197.59.64/32
     - var(txn.client_ip) -m ip 4.197.59.64/32
     - src 20.42.48.200/32

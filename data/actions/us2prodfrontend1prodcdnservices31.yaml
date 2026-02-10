@@ -229,11 +229,11 @@ proget_us_wisetechglobal_com_access_control:
     Deny rule for proget-us.wisetechglobal.com
   order: 59
   actions:
-    - http-request deny if !wtg_src !github_src proget-us_wisetechglobal_com
+    - http-request deny if !wtg_src !azure_ext_controlled_src proget-us_wisetechglobal_com
 
 us2prod2_prodexternal_catchall_backend:
   description: |-
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com github_src wtg_src
+    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com azure_ext_controlled_src wtg_src
