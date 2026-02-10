@@ -133,7 +133,7 @@ stages:
               if [[ $? -ne 0 ]]; then
                 az repos pr create --auto-complete true --repository $(repository) \
                 --source-branch $(branch_name) \
-                --target-branch master --delete-source-branch true --title "Upload Site data"
+                --target-branch create_pr --delete-source-branch true --title "Upload Site data"
                 exit 0
               else
                 echo "No PR created as it already exists"
