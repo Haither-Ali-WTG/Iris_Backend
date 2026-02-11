@@ -240,19 +240,8 @@
     container_dir: "{{ individual_instance_dir }}"
     resources: "{{ container.resources }}"
 
-- name: Reset container running fact
-  set_fact:
-    container_running: false
-
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
-  when: not container_running
-  loop: "{{ range(0, 10) | list }}"
-
-- name: Assert that container is running
-  assert:
-    that: container_running
-    fail_msg: "Container is not running."
 
 - name: Generate delay restart marker
   template:
@@ -319,16 +308,5 @@
         or copy_sqlbillings.changed
       )  # noqa: no-handler
 
-- name: Reset container running fact
-  set_fact:
-    container_running: false
-
 - name: Wait for container to come up
   include_tasks: wait_container_up.yml
-  when: not container_running
-  loop: "{{ range(0, 10) | list }}"
-
-- name: Assert that container is running
-  assert:
-    that: container_running
-    fail_msg: "Container is not running."
