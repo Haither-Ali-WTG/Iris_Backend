@@ -7,12 +7,12 @@ variables:
   # 5f761ba81aa16cde33fcdaf4b89bde15dcaa928c
   dante_build_id: '1609738'
 
-  # virgil 20260211.6
-  # Wed Feb 11 00:45:15 UTC 2026 -- Wed Feb 11 11:45:15 AEDT 2026
+  # virgil 20260211.11
+  # Wed Feb 11 05:16:08 UTC 2026 -- Wed Feb 11 16:16:08 AEDT 2026
   #
-  # Merged PR 45080: creating addtional topics as part of GS migration
-  # be4f897e26aafd72a1fe44a6bbad7851e7a9c69f
-  virgil_build_id: '1609683'
+  # Merged PR 45098: Impexdocs network - AU/US
+  # c656a3a074d05046bc40a42edc816f889f68507d
+  virgil_build_id: '1609907'
 
   # sqlbilling 20260210.2
   # Mon Feb  9 18:34:35 UTC 2026 -- Tue Feb 10 05:34:35 AEDT 2026
