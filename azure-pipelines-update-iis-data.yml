@@ -10,7 +10,7 @@ variables:
   - name: email
     value: "wtgops@wisetechglobal.com"
   - name: repository
-    value: dante
+    value: iris
   - name: branch_name
     value: automatic_sites_data_upload
   - name: target_branch
@@ -26,8 +26,12 @@ stages:
       - job: Update_IIS_Data
         strategy:
           matrix:
-            AU:
+            AU2:
               dc: AU2
+            DE1:
+              dc: DE1
+            US2:
+              dc: US2
         steps:
           - checkout: self
             persistCredentials: true
@@ -102,14 +106,15 @@ stages:
                 --diff
                 -e="winrm_password=$(winrm_password)"
                 -e="key_vault_name=$(key_vault_name)"
+                -e="target_dc=$(dc)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
           - script: |
               set -euxo pipefail
               git fetch origin $(target_branch)
-              git branch -D $(branch_name) 2>/dev/null || true
-              git checkout -b $(branch_name) origin/$(target_branch)
+              git branch -D $(dc)_$(branch_name) 2>/dev/null || true
+              git checkout -b $(dc)_$(branch_name) origin/$(target_branch)
             displayName: Create new branch
 
           - script: |
@@ -124,18 +129,18 @@ stages:
                 echo "##vso[task.setvariable variable=changed]no"
                 exit 0
               fi
-              git push -f origin $(branch_name)
+              git push -f origin $(dc)_$(branch_name)
               echo -n "$(date) INFO - There is a difference between commits. Attempt to create PR."
               set +x
               echo "##vso[task.setvariable variable=changed]yes"
             displayName: Push Commit
 
           - script: |
-              az repos pr list --source-branch $(branch_name) | jq -e '.[0]'
+              az repos pr list --source-branch $(dc)_$(branch_name) | jq -e '.[0]'
               if [[ $? -ne 0 ]]; then
                 az repos pr create --auto-complete true --repository $(repository) \
-                --source-branch $(branch_name) \
-                --target-branch $(target_branch) --delete-source-branch true --title "Upload Site data"
+                --source-branch $(dc)_$(branch_name) \
+                --target-branch $(target_branch) --delete-source-branch true --title "$(dc) - Upload IIS sites data"
                 exit 0
               else
                 echo "No PR created as it already exists"
