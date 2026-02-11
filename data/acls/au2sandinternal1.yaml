@@ -122,6 +122,12 @@ bsm_blume_src:
     - src 34.105.0.45/32
     - var(txn.client_ip) -m ip 34.105.0.45/32
 
+impexdocs_uat_src:
+  description: ImpexDocs UAT service - requested by Gajendra Kumar in CS02188253 for OCMBE (ocean carrier messaging)
+  tests:
+    - src 103.127.43.222/32
+    - var(txn.client_ip) -m ip 103.127.43.222/32
+
 star_cargowise_com:
   description: "*.cargowise.com"
   tests:
