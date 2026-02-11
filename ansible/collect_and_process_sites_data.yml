@@ -36,7 +36,6 @@
         - debug:
             var: complete_iis_data
 
-
         - name: Render dynamic backends
           when: inventory_hostname in complete_iis_data.clustered_instances
           block:
