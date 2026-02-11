@@ -43,6 +43,7 @@ glow_webservice_path:
 t89_allowed_ips:
   description: these IPs that are specifically allowed to connect to T89 XNDT webservice
   tests:
+    - src 188.86.97.34
     - src 195.235.205.0/27
     - src 195.235.205.5
     - src 213.4.19.245
