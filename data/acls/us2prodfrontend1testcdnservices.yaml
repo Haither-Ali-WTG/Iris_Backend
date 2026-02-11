@@ -42,3 +42,10 @@ app-test_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app-test.borderwise.com
     - hdr(host),field(1,:) -i app-test-us.borderwise.com
+
+cmb-test-us_wisegrid_net:
+  description: |-
+    hostnames for cmb-test
+  tests:
+    - hdr(host),field(1,:) -i cmb-test-us.wisegrid.net
+    - hdr(host),field(1,:) -i cmb-test.wisegrid.net

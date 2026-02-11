@@ -79,3 +79,18 @@ peppol-ap-test.wisegrid.net:
     - name: de1wt-spap-401
       ip: 10.3.69.110
       port: 18080
+
+cmb-test-de.wisegrid.net:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  cookie:
+    name: CMBT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: de1wt-siis-401a
+      ip: 10.3.149.11
+      port: 80
+    - name: de1wt-siis-401b
+      ip: 10.3.149.12
+      port: 80

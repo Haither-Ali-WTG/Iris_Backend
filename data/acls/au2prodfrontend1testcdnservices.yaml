@@ -65,3 +65,10 @@ ace_test_api_wisegrid_net:
     hostnames for ACE-test CWBot OpenShift
   tests:
     - hdr(host),field(1,:) -i ace-test-api.wisegrid.net
+
+cmb-test-au_wisegrid_net:
+  description: |-
+    hostnames for cmb-test
+  tests:
+    - hdr(host),field(1,:) -i cmb-test-au.wisegrid.net
+    - hdr(host),field(1,:) -i cmb-test.wisegrid.net

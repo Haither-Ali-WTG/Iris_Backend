@@ -70,3 +70,10 @@ au2prod2_testexternal_catchall_backend:
   order: 80
   actions:
     - use_backend au2prod2-testexternal-catchall if ace_test_api_wisegrid_net
+
+cmb_test_au_backend:
+  description: |-
+    Direct requests for the cmb-test
+  order: 80
+  actions:
+    - use_backend cmb-test-au_wisegrid_net if cmb-test-au_wisegrid_net
