@@ -324,6 +324,22 @@ ehub-ausyd-test.cargowise.net:
       ip: 10.2.69.69
       port: 80
 
+mobile-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    xforwardedproto_header: false
+    check_expect: '200|401|403'
+    method: GET
+  servers:
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
+      port: 80
+
 ofxdealstatusws-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
