@@ -341,7 +341,7 @@ au2prod1-prodinternal-ingress:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2prod1-prodinternal-ingress
-    option httpchk 
+    option httpchk
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod1.ocp.wtg.ws
     cookie AU2PROD1INT insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
@@ -355,7 +355,7 @@ au2prod1-prodgrpcint-ingress:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2prod1-prodgrpcint-ingress
-    option httpchk 
+    option httpchk
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod1.ocp.wtg.ws
     cookie AU2PROD1GRPC insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
@@ -369,7 +369,7 @@ au2prod2-prodinternal-ingress:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2prod2-prodinternal-ingress
-    option httpchk 
+    option httpchk
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod2.ocp.wtg.ws
     cookie AU2PROD2INT insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
