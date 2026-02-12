@@ -7,12 +7,12 @@ variables:
   # d0b0d9fc93d808253a69ff58ec81a63bd5288c49
   dante_build_id: '1609965'
 
-  # virgil 20260211.11
-  # Wed Feb 11 05:16:08 UTC 2026 -- Wed Feb 11 16:16:08 AEDT 2026
+  # virgil 20260213.1
+  # Thu Feb 12 21:18:53 UTC 2026 -- Fri Feb 13 08:18:53 AEDT 2026
   #
-  # Merged PR 45098: Impexdocs network - AU/US
-  # c656a3a074d05046bc40a42edc816f889f68507d
-  virgil_build_id: '1609907'
+  # Merged PR 45129: Migrate 5 more Hyper-V machines to VMware
+  # 94057932597f6e314fdcc00ee379b70919546a63
+  virgil_build_id: '1611444'
 
   # sqlbilling 20260212.2
   # Thu Feb 12 09:26:18 UTC 2026 -- Thu Feb 12 20:26:18 AEDT 2026
