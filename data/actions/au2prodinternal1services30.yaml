@@ -12,6 +12,7 @@ https_redirect:
     - redirect scheme https if lms_staging_wisetechacademy_com !{ ssl_fc }
     - redirect scheme https if star_internal_au2prod1_ocp_wtg_ws !{ ssl_fc }
     - redirect scheme https if star_internal_au2prod2_ocp_wtg_ws !{ ssl_fc }
+    - redirect scheme https if platform-docs_wtg_ws !{ ssl_fc }
 
 au2s3_3_secondary_backend_selection:
   description: |-

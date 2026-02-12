@@ -67,3 +67,8 @@ star_internal_au2prod2_ocp_wtg_ws:
   description: "*.internal.au2prod2.ocp.wtg.ws"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?internal\.au2prod2\.ocp\.wtg\.ws$
+
+platform-docs_wtg_ws:
+  description: "Platform Docs"
+  tests:
+    - hdr(host),field(1,:) -i platform-docs.wtg.ws
