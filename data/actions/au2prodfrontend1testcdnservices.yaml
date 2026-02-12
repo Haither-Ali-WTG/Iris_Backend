@@ -114,7 +114,7 @@ https_redirect_mobile_test_cargowise_net:
     Redirect HTTP to HTTPS for mobile-test.cargowise.net.
   order: 79
   actions:
-      - >-
-        redirect scheme https if
-        { hdr(host),field(1,:) -i mobile-test.cargowise.net }
-        !{ ssl_fc }
+    - >-
+      redirect scheme https if
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+      !{ ssl_fc }
