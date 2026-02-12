@@ -315,7 +315,6 @@ customsgate.acoinformatica.it:
 
 rdg.acoinformatica.it:
   clustered_instances: [de1prodfrontend1tenantservices]
-  encryption: false
   cookie:
     name: RAPP
   fullconn: 4000
