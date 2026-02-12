@@ -379,20 +379,6 @@ au2prod2-prodinternal-ingress:
     server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
     server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2
 
-headrest_wtg_ws:
-  clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend headrest_wtg_ws
-    option httpchk 
-    http-check send meth HEAD uri /healthz ver HTTP/1.1 hdr host headrest.wtg.ws
-    cookie HEADREST insert indirect nocache dynamic
-    http-check expect rstatus 200|301|302|400|403
-    server w1.au2prod2 10.2.214.15:30100 check ssl send-proxy-v2
-    server w2.au2prod2 10.2.214.16:30100 check ssl send-proxy-v2
-    server w3.au2prod2 10.2.214.17:30100 check ssl send-proxy-v2
-    server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
-    server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2
-
 platform-docs_wtg_ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
