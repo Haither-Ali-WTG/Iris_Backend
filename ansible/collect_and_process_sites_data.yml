@@ -33,6 +33,9 @@
             complete_iis_data: >-
               {{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}
 
+        - debug:
+            var: complete_iis_data
+
         - name: Render dynamic backends
           when: inventory_hostname in complete_iis_data.clustered_instances
           block:
