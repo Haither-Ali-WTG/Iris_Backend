@@ -26,8 +26,13 @@
           set_fact:
             iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
+        - command: "cat {{ item }}"
+          loop: iis_files
+          register: result1
+
         - debug:
-            var: iis_files
+            var: result1
+
 
         - name: Calculate sites data
           vars:
@@ -35,9 +40,6 @@
           set_fact:
             complete_iis_data: >-
               {{ lookup('template', 'roles/iris_haproxy/templates/process_iis_data.j2') | from_yaml }}
-
-        - debug:
-            var: complete_iis_data
 
         - name: Render dynamic backends
           when: inventory_hostname in complete_iis_data.clustered_instances
