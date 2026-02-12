@@ -27,7 +27,7 @@
             iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
         - command: "cat {{ item }}"
-          loop: iis_files
+          loop: "{{ iis_files }}"
           register: result1
 
         - debug:
