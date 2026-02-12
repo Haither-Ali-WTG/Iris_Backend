@@ -383,7 +383,7 @@ platform-docs_wtg_ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend platform-docs_wtg_ws
-    option httpchk 
+    option httpchk
     http-check send meth HEAD uri /healthz ver HTTP/1.1 hdr host platform-docs.wtg.ws
     cookie PLATFORM_DOCS insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
