@@ -26,6 +26,9 @@
           set_fact:
             iis_files: "{{ iis_files.files | map(attribute='path') | unique }}"
 
+        - debug:
+            var: iis_files
+
         - name: Calculate sites data
           vars:
             clustered_instance_names: "{{ [inventory_hostname] }}"
