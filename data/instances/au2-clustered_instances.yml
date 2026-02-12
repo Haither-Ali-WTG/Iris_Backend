@@ -264,6 +264,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-internal-au2prod2-ocp-wtg-ws
           cms_resource_group: RG-AU-Prod
+        - name: platform-docs-wtg-ws
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

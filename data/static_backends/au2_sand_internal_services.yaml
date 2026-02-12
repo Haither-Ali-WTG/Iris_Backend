@@ -785,7 +785,7 @@ au2prod1-sandinternal-ingress:
   clustered_instances: [au2sandinternal1]
   full_override: |
     backend au2prod1-sandinternal-ingress
-    option httpchk 
+    option httpchk
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod1.ocp.wtg.ws
     cookie AU2PROD1INT insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
