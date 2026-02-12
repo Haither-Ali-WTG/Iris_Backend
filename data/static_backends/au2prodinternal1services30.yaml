@@ -379,7 +379,7 @@ au2prod2-prodinternal-ingress:
     server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
     server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2
 
-platform-docs_wtg_ws:
+platform-docs.wtg.ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend platform-docs_wtg_ws
