@@ -43,3 +43,27 @@ lms_staging_wisetechacademy_com:
   description: "LMS Staging Wisetechacademy"
   tests:
     - hdr(host),field(1,:) -i lms.staging.wisetechacademy.com
+
+custom_internal_au2prod1_ocp_wtg_ws:
+  description: "Custom internal au2prod1 OCP WTG WS hosts"
+  tests:
+    - hdr(host) -i proget-au.wtg.zone
+    - hdr(host) -i proget-au.wisetechglobal.com
+    - hdr(host) -i cwbot-corp.wtg.zone
+
+ocp_grpc_domains:
+  description: "OCP gRPC domains for internal au2prod1"
+  tests:
+    - hdr(host) -i wtg-ih-msgapi-1-messagesgateway.internal.au2prod1.ocp.wtg.ws
+    - hdr(host) -i wtg-ih-msgapi-1-noauth-messagesgateway.internal.au2prod1.ocp.wtg.ws
+    - hdr(host) -i wtg-ih-msgapi-1-noauth-messagesapi.internal.au2prod1.ocp.wtg.ws
+
+star_internal_au2prod1_ocp_wtg_ws:
+  description: "*.internal.au2prod1.ocp.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?internal\.au2prod1\.ocp\.wtg\.ws$
+
+star_internal_au2prod2_ocp_wtg_ws:
+  description: "*.internal.au2prod2.ocp.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?internal\.au2prod2\.ocp\.wtg\.ws$

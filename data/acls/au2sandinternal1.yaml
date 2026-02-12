@@ -153,3 +153,12 @@ star_wtatestrig_sand_wtg_zone:
     *.wtatestrig.sand.wtg.zone
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtatestrig\.sand\.wtg\.zone$
+
+custom_sandinternal_au2prod1_ocp_wtg_ws:
+  description: "Custom sand internal au2prod1 OCP WTG WS hosts"
+  tests:
+    - hdr(host) -i terminator.sand.wtg.zone
+    - hdr(host) -i cwbot.sand.wtg.zone
+    - hdr(host) -i proget-staging-au-1.wisetechglobal.com
+    - hdr(host) -i proget-staging-au-2.wisetechglobal.com
+    - hdr(host) -i ocmportal.sand.wtg.zone

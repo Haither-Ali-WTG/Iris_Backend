@@ -336,3 +336,73 @@ peppol-inbound-prod.wisetechglobal.com:
     - name: AU2WP-SXTR-401
       ip: 10.2.70.25
       port: 9080
+
+au2prod1-prodinternal-ingress:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2prod1-prodinternal-ingress
+    option httpchk 
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod1.ocp.wtg.ws
+    cookie AU2PROD1INT insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+au2prod1-prodgrpcint-ingress:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2prod1-prodgrpcint-ingress
+    option httpchk 
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod1.ocp.wtg.ws
+    cookie AU2PROD1GRPC insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod1 10.2.213.15:30101 check ssl proto h2
+    server w2.au2prod1 10.2.213.16:30101 check ssl proto h2
+    server w3.au2prod1 10.2.213.17:30101 check ssl proto h2
+    server w4.au2prod1 10.2.213.18:30101 check ssl proto h2
+    server w5.au2prod1 10.2.213.19:30101 check ssl proto h2
+
+au2prod2-prodinternal-ingress:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2prod2-prodinternal-ingress
+    option httpchk 
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host console-openshift-console.apps.au2prod2.ocp.wtg.ws
+    cookie AU2PROD2INT insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod2 10.2.214.15:30100 check ssl send-proxy-v2
+    server w2.au2prod2 10.2.214.16:30100 check ssl send-proxy-v2
+    server w3.au2prod2 10.2.214.17:30100 check ssl send-proxy-v2
+    server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
+    server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2
+
+headrest_wtg_ws:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend headrest_wtg_ws
+    option httpchk 
+    http-check send meth HEAD uri /healthz ver HTTP/1.1 hdr host headrest.wtg.ws
+    cookie HEADREST insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod2 10.2.214.15:30100 check ssl send-proxy-v2
+    server w2.au2prod2 10.2.214.16:30100 check ssl send-proxy-v2
+    server w3.au2prod2 10.2.214.17:30100 check ssl send-proxy-v2
+    server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
+    server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2
+
+platform-docs_wtg_ws:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend platform-docs_wtg_ws
+    option httpchk 
+    http-check send meth HEAD uri /healthz ver HTTP/1.1 hdr host platform-docs.wtg.ws
+    cookie PLATFORM_DOCS insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod2 10.2.214.15:30100 check ssl send-proxy-v2
+    server w2.au2prod2 10.2.214.16:30100 check ssl send-proxy-v2
+    server w3.au2prod2 10.2.214.17:30100 check ssl send-proxy-v2
+    server w4.au2prod2 10.2.214.18:30100 check ssl send-proxy-v2
+    server w5.au2prod2 10.2.214.19:30100 check ssl send-proxy-v2

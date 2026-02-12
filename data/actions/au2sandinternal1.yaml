@@ -86,3 +86,10 @@ star_wtatestrig_sand_wtg_zone:
     - >-
         use_backend wtatestrig-sand-wtg-zone-catchall
         if star_wtatestrig_sand_wtg_zone
+
+au2prod_sand_ocp_backend_selection:
+  description: |-
+    Backend selection for sand au2prod OCP internal services
+  order: 80
+  actions:
+    - use_backend au2prod1-sandinternal-ingress if custom_sandinternal_au2prod1_ocp_wtg_ws
