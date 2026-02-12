@@ -219,7 +219,6 @@ clustered_instances:
             - 6056  # AU2 PROD SQL Cluster 450 (Logistics Services Dedicated)
             - 6057  # AU2 TEST SQL Cluster 417 (Nippon Express Dedicated)
             # ..6999
-
       iis_servers: []
       certificates: []
       sqlbilling_acl:
@@ -230,6 +229,7 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
+
     au2prodinternal1services30:
       # au2-prod-internal-1
       dc: AU2
@@ -260,6 +260,10 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
+        - name: star-internal-au2prod1-ocp-wtg-ws
+          cms_resource_group: RG-AU-Prod
+        - name: star-internal-au2prod2-ocp-wtg-ws
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
