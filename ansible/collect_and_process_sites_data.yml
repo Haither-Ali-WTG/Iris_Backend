@@ -29,9 +29,10 @@
         - command: "cat {{ item }}"
           loop: "{{ iis_files }}"
           register: result1
+          delegate_to: localhost
 
         - debug:
-            var: result1
+            var: result1 | default([])
 
 
         - name: Calculate sites data
