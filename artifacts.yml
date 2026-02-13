@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260211.3
-  # Wed Feb 11 06:01:00 UTC 2026 -- Wed Feb 11 17:01:00 AEDT 2026
+  # Dante Build Artifact 20260213.1
+  # Thu Feb 12 23:40:57 UTC 2026 -- Fri Feb 13 10:40:57 AEDT 2026
   #
-  # Merge pull request 45108 from dante_artifact_upgrade into master
-  # d0b0d9fc93d808253a69ff58ec81a63bd5288c49
-  dante_build_id: '1609965'
+  # Merge pull request 45148 from dante_artifact_upgrade into master
+  # 6933a33358c3464a03f3a3c98b2c6e034417a7f8
+  dante_build_id: '1611556'
 
-  # virgil 20260211.11
-  # Wed Feb 11 05:16:08 UTC 2026 -- Wed Feb 11 16:16:08 AEDT 2026
+  # virgil 20260213.1
+  # Thu Feb 12 21:18:53 UTC 2026 -- Fri Feb 13 08:18:53 AEDT 2026
   #
-  # Merged PR 45098: Impexdocs network - AU/US
-  # c656a3a074d05046bc40a42edc816f889f68507d
-  virgil_build_id: '1609907'
+  # Merged PR 45129: Migrate 5 more Hyper-V machines to VMware
+  # 94057932597f6e314fdcc00ee379b70919546a63
+  virgil_build_id: '1611444'
 
-  # sqlbilling 20260211.2
-  # Wed Feb 11 08:04:49 UTC 2026 -- Wed Feb 11 19:04:49 AEDT 2026
+  # sqlbilling 20260213.2
+  # Fri Feb 13 00:17:07 UTC 2026 -- Fri Feb 13 11:17:07 AEDT 2026
   #
-  # Merged PR 45124: RTL - CS02228538, CS02233661, PRJ00055812
-  # 306365e76b50b3860fdf6a896d4f15bb6ec98c41
-  sqlbilling_build_id: '1610063'
+  # Merged PR 45154: Update Readonly
+  # 443495f979428d1a826ba9abf288bdb8bd641a24
+  sqlbilling_build_id: '1611612'
