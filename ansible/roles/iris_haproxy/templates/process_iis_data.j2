@@ -1,6 +1,5 @@
 {%- set clustered_instances_dict = {} -%}
 {%- set warnings = [] -%}
-{%- set testing = [] -%}
 {%- if clustered_instance_names | default([]) | length > 0 -%}
   {%- for clustered_instance in clustered_instance_names -%}
     {%- set iis_servers_raw = (hostvars[clustered_instance]['iis_servers'] | default([])) + (hostvars[clustered_instance]['iis_servers_local'] | default([])) -%}
@@ -16,7 +15,6 @@
       {%- set clustered_servers = {} -%}
       {%- for file in iis_files -%}
         {%- set parts = file | split('/') -%}
-        {%- set _ = testing.append((parts)) -%}
         {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
           {%- set server = parts | last -%}
           {%- set file_content = lookup('file', file) | from_yaml -%}
@@ -53,4 +51,4 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
-{{ { 'clustered_instances': clustered_instances_dict, 'warnings': warnings, 'testing': testing } }}
+{{ { 'clustered_instances': clustered_instances_dict, 'warnings': warnings } }}
