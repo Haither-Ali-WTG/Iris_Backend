@@ -1,9 +1,11 @@
 {%- set clustered_instances_dict = {} -%}
 {%- set warnings = [] -%}
+{%- set testing = [] -%}
 {%- if clustered_instance_names | default([]) | length > 0 -%}
   {%- for clustered_instance in clustered_instance_names -%}
     {%- set iis_servers_raw = (hostvars[clustered_instance]['iis_servers'] | default([])) + (hostvars[clustered_instance]['iis_servers_local'] | default([])) -%}
     {%- if iis_servers_raw | length > 0 -%}
+      
       {%- set all_iis_servers = [] -%}
       {%- for item in iis_servers_raw -%}
         {%- if item is mapping and item.server is defined -%}
@@ -14,6 +16,7 @@
       {%- endfor -%}
       {%- set clustered_servers = {} -%}
       {%- for file in iis_files -%}
+        {%- set _ = testing.append(("files")) -%}        
         {%- set parts = file | split('/') -%}
         {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
           {%- set server = parts | last -%}
@@ -26,7 +29,11 @@
               {%- set website_with_config = [] -%}
               {%- set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config']) | from_yaml -%}
               {%- for config in website_config -%}
+                {%- if server is regex(config.get('server_regex', '.*'), ignorecase=True)
+                      and website is regex(config.name_regex, ignorecase=True)
+                      and ('name_exclude_regex' not in config or website is not regex(config.name_exclude_regex, ignorecase=True)) -%}
                   {%- set _ = website_with_config.append(config) -%}
+                {%- endif -%}
               {%- endfor -%}
               {%- if website_with_config | length == 0 -%}
                 {%- set _ = warnings.append((clustered_instance, server, website, "matched no website config")) -%}
@@ -47,4 +54,4 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
-{{ { 'clustered_instances': clustered_instances_dict, 'warnings': warnings } }}
+{{ { 'clustered_instances': clustered_instances_dict, 'warnings': warnings, 'testing': testing } }}
