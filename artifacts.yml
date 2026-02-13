@@ -14,9 +14,9 @@ variables:
   # 94057932597f6e314fdcc00ee379b70919546a63
   virgil_build_id: '1611444'
 
-  # sqlbilling 20260212.2
-  # Thu Feb 12 09:26:18 UTC 2026 -- Thu Feb 12 20:26:18 AEDT 2026
+  # sqlbilling 20260213.2
+  # Fri Feb 13 00:17:07 UTC 2026 -- Fri Feb 13 11:17:07 AEDT 2026
   #
-  # Merged PR 45145: CS02234988 - DJSINTCT2 - Whitelist IP address to SQL test
-  # 6eafd79b3da39aa5efa07429d47474303a66b9e1
-  sqlbilling_build_id: '1611016'
+  # Merged PR 45154: Update Readonly
+  # 443495f979428d1a826ba9abf288bdb8bd641a24
+  sqlbilling_build_id: '1611612'
