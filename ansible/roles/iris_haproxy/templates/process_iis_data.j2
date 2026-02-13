@@ -16,8 +16,8 @@
       {%- set clustered_servers = {} -%}
       {%- for file in iis_files -%}
         {%- set parts = file | split('/') -%}
+        {%- set _ = testing.append((parts)) -%}
         {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
-          {%- set _ = testing.append(("parts")) -%}
           {%- set server = parts | last -%}
           {%- set file_content = lookup('file', file) | from_yaml -%}
           {%- set websites_dict = {} -%}
