@@ -26,9 +26,9 @@ stages:
       - job: Update_IIS_Data
         strategy:
           matrix:
-            AU2:
-              dc: AU2
-              agent_dc: AU2
+            # AU2:
+            #   dc: AU2
+            #   agent_dc: AU2
             # CN1:
             #   dc: CN1
             #   agent_dc: AU2

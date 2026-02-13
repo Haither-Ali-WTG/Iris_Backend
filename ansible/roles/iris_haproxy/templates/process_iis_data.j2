@@ -26,11 +26,7 @@
               {%- set website_with_config = [] -%}
               {%- set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config']) | from_yaml -%}
               {%- for config in website_config -%}
-                {%- if server is regex(config.get('server_regex', '.*'), ignorecase=True)
-                      and website is regex(config.name_regex, ignorecase=True)
-                      and ('name_exclude_regex' not in config or website is not regex(config.name_exclude_regex, ignorecase=True)) -%}
                   {%- set _ = website_with_config.append(config) -%}
-                {%- endif -%}
               {%- endfor -%}
               {%- if website_with_config | length == 0 -%}
                 {%- set _ = warnings.append((clustered_instance, server, website, "matched no website config")) -%}
