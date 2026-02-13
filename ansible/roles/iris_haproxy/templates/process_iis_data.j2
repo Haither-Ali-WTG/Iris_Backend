@@ -7,9 +7,9 @@
       {%- set all_iis_servers = [] -%}
       {%- for item in iis_servers_raw -%}
         {%- if item is mapping and item.server is defined -%}
-          {%- set _ = all_iis_servers.append(item.server) -%}
+          {%- set _ = all_iis_servers.append(item.server | lower) -%}
         {%- else -%}
-          {%- set _ = all_iis_servers.append(item) -%}
+          {%- set _ = all_iis_servers.append(item | lower) -%}
         {%- endif -%}
       {%- endfor -%}
       {%- set clustered_servers = {} -%}
