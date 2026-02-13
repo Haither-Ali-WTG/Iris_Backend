@@ -25,6 +25,37 @@ wca_denied_actions:
   actions:
     - http-request deny if !wtg_src wca_denied_paths wca_prod_url
 
+mobile_header_stripping:
+  description: |-
+    behavior for mobile.cargowise.net only, strip ASP.NET headers.
+  order: 3
+  actions:
+    - >-
+      http-response del-header X-AspNet-Version
+      if { hdr(host),field(1,:) -i mobile.cargowise.net }
+    - >-
+      http-response del-header X-AspNetMvc-Version
+      if { hdr(host),field(1,:) -i mobile.cargowise.net }
+
+mobile_privatekey_deny:
+  description: |-
+    behavior for mobile.cargowise.net only, deny privatekey.xml.
+  order: 6
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i mobile.cargowise.net }
+      { path_reg -i .*privatekey\.xml.* }
+
+wtg_src_allow_mobile_cargowise_net:
+  description: |-
+    allow WTG source IPs for mobile.cargowise.net
+  order: 15
+  actions:
+    - >-
+      http-request allow if wtg_src
+      { hdr(host),field(1,:) -i mobile.cargowise.net }
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path

@@ -851,6 +851,21 @@ webservices-ausyd.cargowise.net:
       ip: 10.2.69.47
       port: 443
 
+mobile.cargowise.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+    method: GET
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+    - name: AU2WP-SIIS-402B
+      ip: 10.2.69.17
+      port: 80
+
 wtgsnowsgw-au2.wisetechglobal.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
