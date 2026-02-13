@@ -17,15 +17,14 @@
       {%- for file in iis_files -%}
         {%- set parts = file | split('/') -%}
         {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
+          {%- set _ = testing.append(("parts")) -%}
           {%- set server = parts | last -%}
           {%- set file_content = lookup('file', file) | from_yaml -%}
           {%- set websites_dict = {} -%}
           {%- for website in file_content.websites_list -%}
             {%- if website is not regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') -%}
-              {%- set _ = testing.append(("not regex")) -%}
               {%- set _ = warnings.append((clustered_instance, server, website, "is not a domain name")) -%}
             {%- else -%}
-              {%- set _ = testing.append(("regex")) -%}
               {%- set website_with_config = [] -%}
               {%- set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config']) | from_yaml -%}
               {%- for config in website_config -%}
