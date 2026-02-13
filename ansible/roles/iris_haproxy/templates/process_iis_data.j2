@@ -5,7 +5,6 @@
   {%- for clustered_instance in clustered_instance_names -%}
     {%- set iis_servers_raw = (hostvars[clustered_instance]['iis_servers'] | default([])) + (hostvars[clustered_instance]['iis_servers_local'] | default([])) -%}
     {%- if iis_servers_raw | length > 0 -%}
-      
       {%- set all_iis_servers = [] -%}
       {%- for item in iis_servers_raw -%}
         {%- if item is mapping and item.server is defined -%}
@@ -16,7 +15,6 @@
       {%- endfor -%}
       {%- set clustered_servers = {} -%}
       {%- for file in iis_files -%}
-        {%- set _ = testing.append(("files")) -%}        
         {%- set parts = file | split('/') -%}
         {%- if clustered_instance in parts and (parts | last) in all_iis_servers -%}
           {%- set server = parts | last -%}
@@ -24,8 +22,10 @@
           {%- set websites_dict = {} -%}
           {%- for website in file_content.websites_list -%}
             {%- if website is not regex('(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)') -%}
+              {%- set _ = testing.append(("not regex")) -%}
               {%- set _ = warnings.append((clustered_instance, server, website, "is not a domain name")) -%}
             {%- else -%}
+              {%- set _ = testing.append(("regex")) -%}
               {%- set website_with_config = [] -%}
               {%- set website_config = lookup('file', playbook_dir + '/../data/dynamic_backends/' + hostvars[clustered_instance]['websites_config']) | from_yaml -%}
               {%- for config in website_config -%}
