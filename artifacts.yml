@@ -7,12 +7,12 @@ variables:
   # 6933a33358c3464a03f3a3c98b2c6e034417a7f8
   dante_build_id: '1611556'
 
-  # virgil 20260213.1
-  # Thu Feb 12 21:18:53 UTC 2026 -- Fri Feb 13 08:18:53 AEDT 2026
+  # virgil 20260213.4
+  # Fri Feb 13 05:02:00 UTC 2026 -- Fri Feb 13 16:02:00 AEDT 2026
   #
-  # Merged PR 45129: Migrate 5 more Hyper-V machines to VMware
-  # 94057932597f6e314fdcc00ee379b70919546a63
-  virgil_build_id: '1611444'
+  # Merged PR 45173: us2 Cumulus Switch upgrades - Round3
+  # e4d4809154baca623560112cd89609f65b171d19
+  virgil_build_id: '1611839'
 
   # sqlbilling 20260213.2
   # Fri Feb 13 00:17:07 UTC 2026 -- Fri Feb 13 11:17:07 AEDT 2026
