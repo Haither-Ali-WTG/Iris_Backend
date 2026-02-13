@@ -329,7 +329,6 @@ mobile-test.cargowise.net:
   http_health_check:
     enabled: true
     http_path: /wtg/status
-    xforwardedproto_header: false
     check_expect: '200|401|403'
     method: GET
   servers:
