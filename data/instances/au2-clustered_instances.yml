@@ -260,10 +260,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
-        - name: star-internal-au2prod1-ocp-wtg-ws
-          cms_resource_group: RG-AU-Prod
-        - name: star-internal-au2prod2-ocp-wtg-ws
-          cms_resource_group: RG-AU-Prod
         - name: platform-docs-wtg-ws
           cms_resource_group: RG-AU-Prod
       cipher:
