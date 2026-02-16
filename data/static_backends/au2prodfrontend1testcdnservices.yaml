@@ -752,6 +752,12 @@ cmb-test-au.wisegrid.net:
     - name: au2sp-siis-401
       ip: 10.2.118.20
       port: 80
+    - name: au2wt-siis-404a
+      ip: 10.2.149.12
+      port: 80
+    - name: au2wt-siis-404b
+      ip: 10.2.149.13
+      port: 80
 
 cacustoms-gw2-test.cargowise.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
