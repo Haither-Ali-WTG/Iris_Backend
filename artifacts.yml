@@ -7,12 +7,12 @@ variables:
   # 6e3c809c6b3c4097acd95c5048aee44d4e106451
   dante_build_id: '1614416'
 
-  # virgil 20260213.4
-  # Fri Feb 13 05:02:00 UTC 2026 -- Fri Feb 13 16:02:00 AEDT 2026
+  # virgil 20260216.1
+  # Mon Feb 16 03:19:44 UTC 2026 -- Mon Feb 16 14:19:44 AEDT 2026
   #
-  # Merged PR 45173: us2 Cumulus Switch upgrades - Round3
-  # e4d4809154baca623560112cd89609f65b171d19
-  virgil_build_id: '1611839'
+  # Merged PR 45097: updating to sdat 111
+  # 976afbfd5f2592995b972be7041e2fa97a85d575
+  virgil_build_id: '1614495'
 
   # sqlbilling 20260214.1
   # Fri Feb 13 14:08:59 UTC 2026 -- Sat Feb 14 01:08:59 AEDT 2026
