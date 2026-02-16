@@ -237,3 +237,10 @@ us2prod2_prodexternal_catchall_backend:
   order: 80
   actions:
     - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com azure_ext_controlled_src wtg_src
+
+cmb_us_backend:
+  description: |-
+    Direct requests for the cmb-prod
+  order: 80
+  actions:
+    - use_backend cmb-us_wisegrid_net if cmb-us_wisegrid_net

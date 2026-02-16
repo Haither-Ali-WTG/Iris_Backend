@@ -1846,3 +1846,19 @@ us2prod2-prodexternal-catchall:
     - name: w5.us2prod1
       ip: 10.4.237.19
       port: 30400
+
+cmb-us.wisegrid.net:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  cookie:
+    name: CMB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: US2WP-SIIS-401A
+      ip: 10.4.66.27
+      port: 80
+    - name: US2WP-SIIS-401B
+      ip: 10.4.66.28
+      port: 80

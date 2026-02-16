@@ -1086,7 +1086,7 @@ xt-healthcheck.cargowise.net:
       ip: 10.2.69.13
       port: 80
 
-cmb.wisegrid.net:
+cmb-au.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: CMB
