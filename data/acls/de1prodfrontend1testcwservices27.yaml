@@ -40,11 +40,6 @@ glow_webservice_path:
   tests:
     - path_beg -i /Glow/
 
-t89_xndt:
-  description: "t89trnxndt.wisegrid.net"
-  tests:
-    - hdr(host),field(1,:) -i t89trnxndt.wisegrid.net
-
 t89_allowed_ips:
   description: these IPs that are specifically allowed to connect to T89 XNDT webservice
   tests:
