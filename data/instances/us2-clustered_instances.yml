@@ -258,12 +258,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: aetnatracking_com
           cms_resource_group: RG-US-Prod
-        - name: app_gomardom_com
-          cms_resource_group: RG-US-Prod
-        - name: app_gomcd_com
-          cms_resource_group: RG-US-Prod
-        - name: app_tlsgo_com
-          cms_resource_group: RG-US-Prod
         - name: connortrac_jsconnor_com
           cms_resource_group: RG-US-Prod
         - name: eworldplus_com
