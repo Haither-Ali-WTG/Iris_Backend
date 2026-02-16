@@ -7,12 +7,12 @@ variables:
   # 74283478f40b873a5ca1a4bb9eaa16eba080b379
   dante_build_id: '1615339'
 
-  # virgil 20260217.3
-  # Mon Feb 16 18:20:53 UTC 2026 -- Tue Feb 17 05:20:53 AEDT 2026
+  # virgil 20260217.5
+  # Mon Feb 16 22:59:23 UTC 2026 -- Tue Feb 17 09:59:23 AEDT 2026
   #
-  # Merge pull request 45245 from virgil_python_upgrade into master
-  # c3985dab9d4b2830f3d092edd3958959d065027b
-  virgil_build_id: '1615118'
+  # Merged PR 45239: Move 5 more Hyper-V hosts to VMware
+  # ec21119070e1fb39e0966c8f43ab3a18aacaa2fb
+  virgil_build_id: '1615380'
 
   # sqlbilling 20260214.1
   # Fri Feb 13 14:08:59 UTC 2026 -- Sat Feb 14 01:08:59 AEDT 2026
