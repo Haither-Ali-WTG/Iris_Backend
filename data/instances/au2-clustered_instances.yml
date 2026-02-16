@@ -260,8 +260,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
-        - name: platform-docs-wtg-ws
-          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
