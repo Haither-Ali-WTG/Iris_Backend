@@ -236,3 +236,19 @@ de1prod2-prodexternal-catchall:
     - name: w5.de1prod1
       ip: 10.3.237.19
       port: 30400
+
+cmb-de.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: CMB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: DE1WP-SIIS-401A
+      ip: 10.3.69.27
+      port: 80
+    - name: DE1WP-SIIS-401B
+      ip: 10.3.69.28
+      port: 80

@@ -90,3 +90,10 @@ de1prod2_prodexternal_catchall_backend:
   order: 80
   actions:
     - use_backend de1prod2-prodexternal-catchall if proget-de_wisetechglobal_com azure_ext_controlled_src wtg_src
+
+cmb_de_backend:
+  description: |-
+    Direct requests for the cmb-prod
+  order: 80
+  actions:
+    - use_backend cmb-de_wisegrid_net if cmb-de_wisegrid_net
