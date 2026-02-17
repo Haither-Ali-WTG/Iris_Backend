@@ -46,5 +46,4 @@ xndt_url_workaround:
     Deny any connections to XNDT webservices if not from WTG or T89 allowed IPs
   order: 81
   actions:
-    - http-request deny if t89_xndt !t89_allowed_ips
-    - http-request deny if t89_xndt !wtg_src
+    - http-request deny if { hdr(host),field(1,:) -i t89trnxndt.wisegrid.net } !t89_allowed_ips !wtg_src
