@@ -315,3 +315,13 @@ cmb_au_backend:
   order: 80
   actions:
     - use_backend cmb-au_wisegrid_net if cmb-au_wisegrid_net
+
+shareworks_redirect:
+  description: |-
+    Redirect requests to the Shareworks SSO Enterprise Application in Azure
+  order: 79
+  actions:
+    - >-
+      redirect location https://launcher.myapps.microsoft.com/api/signin/
+      f55a476f-c0d3-483f-b86a-9e41d5f4d92e?tenantId=8b493985-e1b4-4b95-ade6-98acafdbdb01 if
+      shareworks_wisetechglobal_com
