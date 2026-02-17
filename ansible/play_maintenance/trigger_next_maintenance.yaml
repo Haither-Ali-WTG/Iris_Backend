@@ -16,16 +16,18 @@
   tasks:
     - name: Get next cluster in the chain
       set_fact:
-        next_cluster: "{{ trigger_iris_chains[dc][trigger_iris_chains[dc].index(cluster_name) + 1] | default('') }}"
-      when: cluster_name in trigger_iris_chains[dc]
+        next_cluster: "{{ trigger_iris_chains[dc][trigger_iris_chains[dc].index(cluster_name) + 1] }}"
+      when:
+        - cluster_name in trigger_iris_chains[dc]
+        - trigger_iris_chains[dc].index(cluster_name) + 1 < (trigger_iris_chains[dc] | length)
 
     - name: Display next cluster
       debug:
         msg: "Next cluster after {{ cluster_name }} in {{ dc }}: {{ next_cluster }}"
-      when: next_cluster | default('')
+      when: next_cluster | default('') | length > 0
 
     - name: Trigger next IRIS maintenance pipeline
       include_role:
         name: trigger_iris_pipeline
         tasks_from: trigger_maintenance.yml
-      when: next_cluster | default('')
+      when: next_cluster | default('') | length > 0
