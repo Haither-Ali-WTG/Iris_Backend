@@ -825,4 +825,4 @@ shareworks_wisetechglobal_com:
   description: |-
     hostnames for Shareworks
   tests:
-    - hdr(host),field(1,:) -i shareworks.wisetechglobal.com
+    - hdr(host),field(1,:) -m reg -i ^shareworks\.wisetechglobal\.com$
