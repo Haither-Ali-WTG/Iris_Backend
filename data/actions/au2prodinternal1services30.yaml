@@ -10,6 +10,9 @@ https_redirect:
     - redirect scheme https if star_cwconnector_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_wisetechacademy_com !{ ssl_fc }
     - redirect scheme https if lms_staging_wisetechacademy_com !{ ssl_fc }
+    - redirect scheme https if star_internal_au2prod1_ocp_wtg_ws !{ ssl_fc }
+    - redirect scheme https if star_internal_au2prod2_ocp_wtg_ws !{ ssl_fc }
+    - redirect scheme https if platform-docs_wtg_ws !{ ssl_fc }
 
 au2s3_3_secondary_backend_selection:
   description: |-
@@ -24,3 +27,13 @@ au2s3_3_primary_backend_selection:
   order: 11
   actions:
     - use_backend au2s3-3-primary if au2s3-3_wtg_ws_and_subdomains
+
+au2prod_ocp_backend_selection:
+  description: |-
+    Backend selection for au2prod OCP internal services
+  order: 80
+  actions:
+    - use_backend au2prod1-prodgrpcint-ingress if star_internal_au2prod1_ocp_wtg_ws ocp_grpc_domains
+    - use_backend au2prod1-prodinternal-ingress if star_internal_au2prod1_ocp_wtg_ws
+    - use_backend au2prod1-prodinternal-ingress if custom_internal_au2prod1_ocp_wtg_ws
+    - use_backend au2prod2-prodinternal-ingress if star_internal_au2prod2_ocp_wtg_ws
