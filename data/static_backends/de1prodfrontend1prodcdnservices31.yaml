@@ -8,9 +8,6 @@ de.cww.wisegrid.net-catchall:
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
     default-server agent-check agent-port 8098
-    server DE1WP-SBLZ-001 10.3.72.11:80
-    server DE1WP-SBLZ-002 10.3.72.12:80
-    server DE1WP-SBLZ-003 10.3.72.13:80
     server DE1WP-SBLZ-403 10.3.72.23:80
     server DE1WP-SBLZ-404 10.3.72.24:80
     server DE1WP-SBLZ-405 10.3.72.25:80
