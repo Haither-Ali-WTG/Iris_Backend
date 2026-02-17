@@ -823,6 +823,6 @@ cmb-au_wisegrid_net:
 
 shareworks_wisetechglobal_com:
   description: |-
-    hostnames for Shareworks 
+    hostnames for Shareworks
   tests:
     - hdr(host),field(1,:) -i shareworks.wisetechglobal.com
