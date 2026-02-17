@@ -23,9 +23,6 @@ us.cww.wisegrid.net-catchall:
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
     default-server agent-check agent-port 8098
-    server US2WP-SBLZ-001 10.4.72.11:80
-    server US2WP-SBLZ-002 10.4.72.12:80
-    server US2WP-SBLZ-003 10.4.72.13:80
     server US2WP-SBLZ-406 10.4.72.21:80
     server US2WP-SBLZ-407 10.4.72.22:80
     server US2WP-SBLZ-408 10.4.72.23:80
