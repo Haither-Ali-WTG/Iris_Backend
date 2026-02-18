@@ -7,12 +7,12 @@ variables:
   # 6b8dc2a869cb9aa32c8289c0f6a12853cc395665
   dante_build_id: '1615662'
 
-  # virgil 20260217.7
-  # Tue Feb 17 02:59:48 UTC 2026 -- Tue Feb 17 13:59:48 AEDT 2026
+  # virgil 20260219.1
+  # Wed Feb 18 20:37:22 UTC 2026 -- Thu Feb 19 07:37:22 AEDT 2026
   #
-  # Merged PR 45292: updated username and created secret at users request for onemap vessel
-  # c0aae5f2a233e21791c0f36c3d819dd704fe294a
-  virgil_build_id: '1615617'
+  # Merged PR 45317: Move the 5 Hyper-V C63s to VMware
+  # e1ca45fabecd866228947d697f4d384a63e12c70
+  virgil_build_id: '1617273'
 
   # sqlbilling 20260217.2
   # Tue Feb 17 09:08:14 UTC 2026 -- Tue Feb 17 20:08:14 AEDT 2026
