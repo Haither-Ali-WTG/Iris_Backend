@@ -749,9 +749,6 @@ cmb-test-au.wisegrid.net:
     enabled: true
     http_path: /wtg/status
   servers:
-    - name: au2sp-siis-401
-      ip: 10.2.118.20
-      port: 80
     - name: au2wt-siis-404a
       ip: 10.2.149.12
       port: 80
