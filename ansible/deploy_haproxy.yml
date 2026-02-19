@@ -140,7 +140,9 @@
     - name: Setup keepalived (VRRP)
       include_role:
         name: iris_keepalived
-      when: inventory_hostname not in (skip_keepalived_hosts.split(',') | map('trim') | list)
+      when: inventory_hostname not in (
+          (skip_keepalived_hosts | default('')).split(',') | map('trim') | list
+        )
 
     - name: Create directory for Iris run file
       file:
