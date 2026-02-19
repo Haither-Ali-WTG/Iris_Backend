@@ -120,6 +120,7 @@ jobs:
               -e="s3_iris_bucket=$(s3_iris_bucket)" \
               -e="pure_usernames='$(pure_usernames)'" \
               -e="key_vault_name=$(key_vault_name)" \
+              -e="skip_keepalived_hosts='$(skip_keepalived_hosts)'"
               -e="{simulation: true}"
         env:
           ANSIBLE_HOST_KEY_CHECKING: false
