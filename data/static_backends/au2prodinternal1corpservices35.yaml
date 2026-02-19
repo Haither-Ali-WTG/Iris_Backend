@@ -1370,3 +1370,13 @@ boltr-dat-3.wtg.zone:
     - name: au2wt-sbol-401
       ip: 10.2.67.100
       port: 9002
+
+cms-inobiz.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-403a
+      ip: 10.2.69.36
+      port: 80
