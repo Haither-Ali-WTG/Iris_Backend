@@ -14,9 +14,9 @@ variables:
   # 58050a091454e19d0302673283e560bba7b2a2e0
   virgil_build_id: '1617561'
 
-  # sqlbilling 20260219.1
-  # Wed Feb 18 22:18:35 UTC 2026 -- Thu Feb 19 09:18:35 AEDT 2026
+  # sqlbilling 20260219.3
+  # Thu Feb 19 06:54:08 UTC 2026 -- Thu Feb 19 17:54:08 AEDT 2026
   #
-  # Merged PR 45330: Updated au2-prod-frontend-1.yml
-  # 356b37db386d0df99d053f3841608f1888aeacb6
-  sqlbilling_build_id: '1617381'
+  # Merged PR 45397: RTL - CS02242536, CS02242573, CS02243371, PRJ00055963, CS02228538
+  # 86351c137bfb93934c20e8c1fba83c6a35498cf9
+  sqlbilling_build_id: '1617870'
