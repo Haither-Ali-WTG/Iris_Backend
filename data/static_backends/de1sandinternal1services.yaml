@@ -9,3 +9,14 @@ symbols-de1.sand.wtg.zone:
     - name: DE1SP-SSYM-401
       ip: 10.3.116.31
       port: 80
+
+peppol-pdp.sand.wtg.zone:
+  clustered_instances: [de1sandinternal1services]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1sp-spdp-401
+      ip: 10.3.116.110
+      port: 5001
