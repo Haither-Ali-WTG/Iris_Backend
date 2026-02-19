@@ -81,6 +81,9 @@ knowledge_mcp_wtg_zone:
     ## llm-gateway
     - hdr(host) -i llm-gateway.knowledge.wtg.zone
     - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
+    ## task-automation
+    - hdr(host) -i task-automation.wtg.zone
+    - hdr(host) -i task-automation-staging.wtg.zone
 
 star_cargowise_com:
   description: "*.cargowise.com"
