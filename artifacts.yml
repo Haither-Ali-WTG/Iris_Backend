@@ -7,12 +7,12 @@ variables:
   # bf8121d7cfa3fdecd887ab91324d1712434b6ad6
   dante_build_id: '1617312'
 
-  # virgil 20260219.1
-  # Wed Feb 18 20:37:22 UTC 2026 -- Thu Feb 19 07:37:22 AEDT 2026
+  # virgil 20260219.3
+  # Thu Feb 19 01:39:32 UTC 2026 -- Thu Feb 19 12:39:32 AEDT 2026
   #
-  # Merged PR 45317: Move the 5 Hyper-V C63s to VMware
-  # e1ca45fabecd866228947d697f4d384a63e12c70
-  virgil_build_id: '1617273'
+  # Merged PR 45364: nsx-t sdn network range update
+  # 58050a091454e19d0302673283e560bba7b2a2e0
+  virgil_build_id: '1617561'
 
   # sqlbilling 20260219.1
   # Wed Feb 18 22:18:35 UTC 2026 -- Thu Feb 19 09:18:35 AEDT 2026
