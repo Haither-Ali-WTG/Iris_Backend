@@ -1013,7 +1013,7 @@ www-wtlkel.cargowise.com:
 ace-test-api.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: acetapi
+    name: ACETAPI
   http_health_check:
     enabled: false
     http_path: /wtg/ready
