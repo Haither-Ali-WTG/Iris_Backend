@@ -401,3 +401,14 @@ de1sandinternal1services.wtg.zone:
     - name: de1lbl00933
       ip: 10.3.83.33
       port: 2343
+
+peppol-pdp-test.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1wt-spdp-401
+      ip: 10.3.88.110
+      port: 5001
