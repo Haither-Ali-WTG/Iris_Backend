@@ -220,6 +220,7 @@ https_redirects:
   actions:
     - redirect scheme https if group_wisetechglobal_com_certificate_covered_domains !{ ssl_fc }
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_borderwise_com !{ ssl_fc }
     - redirect scheme https if star_shipamax_com !{ ssl_fc }
@@ -306,7 +307,6 @@ au2prod2_prodexternal_catchall_backend:
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend au2prod2-prodexternal-catchall if ace_api_wisegrid_net
     - use_backend au2prod2-prodexternal-catchall if proget-au_wisetechglobal_com azure_ext_controlled_src wtg_src
 
 cmb_au_backend:
