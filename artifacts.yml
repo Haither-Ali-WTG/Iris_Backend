@@ -7,16 +7,16 @@ variables:
   # fd809ff2c3231241938f4213e26f7e7d1ae5e0dd
   dante_build_id: '1617681'
 
-  # virgil 20260219.3
-  # Thu Feb 19 01:39:32 UTC 2026 -- Thu Feb 19 12:39:32 AEDT 2026
+  # virgil 20260220.4
+  # Fri Feb 20 04:27:22 UTC 2026 -- Fri Feb 20 15:27:22 AEDT 2026
   #
-  # Merged PR 45364: nsx-t sdn network range update
-  # 58050a091454e19d0302673283e560bba7b2a2e0
-  virgil_build_id: '1617561'
+  # Merged PR 45412: WI01032466 adding new prod vmware servers
+  # dbd596de5b765eec7a39f65858ab957bab8f047c
+  virgil_build_id: '1618718'
 
-  # sqlbilling 20260219.3
-  # Thu Feb 19 06:54:08 UTC 2026 -- Thu Feb 19 17:54:08 AEDT 2026
+  # sqlbilling 20260220.2
+  # Fri Feb 20 04:23:35 UTC 2026 -- Fri Feb 20 15:23:35 AEDT 2026
   #
-  # Merged PR 45397: RTL - CS02242536, CS02242573, CS02243371, PRJ00055963, CS02228538
-  # 86351c137bfb93934c20e8c1fba83c6a35498cf9
-  sqlbilling_build_id: '1617870'
+  # Merged PR 45424: Updated au2-prod-frontend-1.yml
+  # 06070539981ccd9dfdfbfac71aee5fb5948e8c8e
+  sqlbilling_build_id: '1618717'
