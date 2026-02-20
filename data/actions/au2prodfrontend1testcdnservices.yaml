@@ -64,13 +64,6 @@ testtariff_management_portal_backend:
   actions:
     - use_backend testtmp_borderwise_com-catchall if star_testtmp_borderwise_com
 
-au2prod2_testexternal_catchall_backend:
-  description: |-
-    Direct requests for the openshift
-  order: 80
-  actions:
-    - use_backend au2prod2-testexternal-catchall if ace_test_api_wisegrid_net
-
 cmb_test_au_backend:
   description: |-
     Direct requests for the cmb-test
@@ -118,3 +111,11 @@ https_redirect_mobile_test_cargowise_net:
       redirect scheme https if
       { hdr(host),field(1,:) -i mobile-test.cargowise.net }
       !{ ssl_fc }
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 79
+  actions:
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc }

@@ -1010,13 +1010,13 @@ www-wtlkel.cargowise.com:
       ip: 10.2.118.14
       port: 80
 
-au2prod2-testexternal-catchall:
+ace-test-api.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: K8STEST
+    name: ACETAPI
   http_health_check:
     enabled: false
-    http_path: /
+    http_path: /wtg/ready
   default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2
