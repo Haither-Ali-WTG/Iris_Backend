@@ -3708,7 +3708,7 @@ au2prod2-prodexternal-catchall:
       port: 30400
 
 ace-prod-api.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices]
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: ACEPAPI
   http_health_check:
@@ -3733,7 +3733,7 @@ ace-prod-api.wisegrid.net:
       port: 30400
 
 ace-api.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices]
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: ACEAPI
   http_health_check:
