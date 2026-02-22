@@ -171,6 +171,7 @@ stages:
                             -e="pure_usernames='${{ run.pure_usernames }}'" \
                             -e="s3_iris_bucket=${{ run.s3_iris_bucket }}" \
                             -e="key_vault_name=$(key_vault_name)" \
+                            -e="skip_keepalived_hosts='$(skip_keepalived_hosts)'" \
                             -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
                             -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
                             -e="target_dc=${{ run.target_dc }}"
