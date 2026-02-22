@@ -105,6 +105,7 @@ custom_url_actions:
     ### GLOW
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
     - use_backend www-fragbl_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
+    - use_backend www-em9prd_wisegrid_net if { hdr(host),field(1,:) -i board.embassycargo.eu }
 
     ### Accounting
     - use_backend anfprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i anfprdaccounting-cn.wisegrid.net }
@@ -128,5 +129,5 @@ custom_url_actions:
     - use_backend anfprdservices_wisegrid_net if { hdr(host),field(1,:) -i anfprdservices-cn.wisegrid.net }
     - use_backend slmprdservices_wisegrid_net if { hdr(host),field(1,:) -i slmprdservices-cn.wisegrid.net }
 
-    ### eAdaptor
+    ### Edirf
     - use_backend ax4prd_edirf_wisegrid_net if { hdr(host),field(1,:) -i ax4prd-cn.edirf.wisegrid.net }
