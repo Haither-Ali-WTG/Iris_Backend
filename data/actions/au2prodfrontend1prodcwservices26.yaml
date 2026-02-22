@@ -53,7 +53,6 @@ custom_url_actions:
     - use_backend apomel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i apomelglow.wisegrid.net }
     - use_backend aqpprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i aqpprdwebtracker.wisegrid.net }
     - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i asamel2.webtracker.wisegrid.net }
-    - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.axima.com.au }
     - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.natrio.com }
     - use_backend asamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.yangkee.com }
     - use_backend astmnl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackntrace.asti.com.ph }
@@ -105,7 +104,6 @@ custom_url_actions:
     ### GLOW
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
     - use_backend www-fragbl_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
-    - use_backend www-em9prd_wisegrid_net if { hdr(host),field(1,:) -i board.embassycargo.eu }
 
     ### Accounting
     - use_backend anfprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i anfprdaccounting-cn.wisegrid.net }
