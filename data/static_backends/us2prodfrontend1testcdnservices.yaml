@@ -112,6 +112,8 @@ cwcgtm-stage.wisegrid.net:
 
 cwcgtm-uat.wisegrid.net:
   clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: false
   servers:
     - name: us2wp-scyp-401
       ip: 10.4.67.52
@@ -119,6 +121,8 @@ cwcgtm-uat.wisegrid.net:
 
 cwcgateway-uat.wisegrid.net:
   clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: false
   servers:
     - name: us2wp-scyp-401
       ip: 10.4.67.52
