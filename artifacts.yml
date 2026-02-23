@@ -7,12 +7,12 @@ variables:
   # 934c9ccfafd6961d5f5e64614d5ad6423e9738a4
   dante_build_id: '1618773'
 
-  # virgil 20260220.4
-  # Fri Feb 20 04:27:22 UTC 2026 -- Fri Feb 20 15:27:22 AEDT 2026
+  # virgil 20260223.2
+  # Mon Feb 23 02:59:49 UTC 2026 -- Mon Feb 23 13:59:49 AEDT 2026
   #
-  # Merged PR 45412: WI01032466 adding new prod vmware servers
-  # dbd596de5b765eec7a39f65858ab957bab8f047c
-  virgil_build_id: '1618718'
+  # Merged PR 45456: decom another EYE node - au2anl00015
+  # 3d501602fffc6f7163d68a8461beaffa53f9f1aa
+  virgil_build_id: '1621413'
 
   # sqlbilling 20260220.2
   # Fri Feb 20 04:23:35 UTC 2026 -- Fri Feb 20 15:23:35 AEDT 2026
