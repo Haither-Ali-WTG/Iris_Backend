@@ -213,6 +213,16 @@ external_service_redirects:
     - redirect location https://web.saastransportation.com code 307 if saastransportation_urls
     - redirect location https://account.parkable.com if redirects_to_account_parkable_com_urls
 
+webservices_refdbrepo_redirect:
+  description: |-
+    Redirect legacy webservices.wisegrid.net /refdbrepotest* paths to refdbrepo.wisegrid.net
+  order: 78
+  actions:
+    - >-
+      redirect code 308 location
+      https://refdbrepo.wisegrid.net%[capture.req.uri,regsub(^/refdbrepo[^/]*,,i)]
+      if webservices_wisegrid_net redirects_to_refdbrepo_wisegrid_net_urls
+
 https_redirects:
   description: |-
     Force HTTPS for corporate domains
