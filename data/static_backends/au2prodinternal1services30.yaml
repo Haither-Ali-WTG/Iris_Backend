@@ -27,7 +27,7 @@ au2s3-3-secondary:
   full_override: |
     backend au2s3-3-secondary
     option httpchk
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host au2s3-3-secondary
+    http-check send meth HEAD uri /
     cookie AU2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
