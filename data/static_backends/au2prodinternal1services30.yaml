@@ -26,7 +26,8 @@ au2s3-3-secondary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2s3-3-secondary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host au2s3-3-secondary
     cookie AU2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT

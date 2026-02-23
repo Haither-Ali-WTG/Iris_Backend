@@ -18,7 +18,8 @@ au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend au_cww-nonprd_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
@@ -43,7 +44,8 @@ staging-au.identity.wisetechglobal.com-login:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -55,7 +57,8 @@ staging-au.identity.wisetechglobal.com-account:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -67,7 +70,8 @@ staging-au.identity.wisetechglobal.com-s2s:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -79,7 +83,8 @@ au.cww.wisetechglobal.com-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend au_cww_wisetechglobal_com-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200

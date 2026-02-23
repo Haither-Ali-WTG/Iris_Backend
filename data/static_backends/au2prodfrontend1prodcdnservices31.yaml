@@ -18,7 +18,8 @@ au.cww.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     backend au_cww_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
@@ -31,7 +32,8 @@ cww.wisetechglobal.com-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     backend cw_wisetechglobal_com_catch_all
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     cookie AU2BLZ insert indirect nocache dynamic
     http-check expect rstatus 200
     default-server agent-check agent-port 8098
@@ -77,7 +79,8 @@ au.identity.wisetechglobal.com-login:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     backend au_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -89,7 +92,8 @@ au.identity.wisetechglobal.com-account:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     backend au_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -101,7 +105,8 @@ au.identity.wisetechglobal.com-s2s:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
     backend au_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -815,7 +820,8 @@ webservices.errors:
   full_override: |
     backend webservices_errors
     load-server-state-from-file none
-    option httpchk HEAD /Glow/wtg/ready HTTP/1.1\r\nHost:\ webservices.wisetechglobal.com
+    option httpchk
+    http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr Host webservices.wisetechglobal.com
     http-check expect rstatus '200'
     cookie GLOW insert indirect nocache dynamic secure
     server AU2CO-SIIS-405A 10.2.69.46:443 ssl
@@ -2898,7 +2904,8 @@ securemirror.wisetechglobal.com:
   full_override: |
     backend securemirror_wisetechglobal_com
     load-server-state-from-file none
-    option httpchk GET /
+    option httpchk
+    http-check send meth GET uri /
     http-check expect rstatus 200
     server SYDWP-SFTP-1 10.2.70.94:8008 check port 8009
 
