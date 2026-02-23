@@ -43,5 +43,3 @@ custom_url_actions:
     - use_backend h43tr3_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43tr3webtracker.wisegrid.net }
     - use_backend h43trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43trnwebtracker.wisegrid.net }
     - use_backend zsotrn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zsotrnwebtracker.wisegrid.net }
-    - use_backend asacwt_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker-test.axima.com.au }
-    - use_backend asacwt_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker-test.yangkee.com }
