@@ -460,6 +460,7 @@ gtminvoicingws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|401|403'
   servers:
     - name: au2sp-sweb-401a
       ip: 10.2.118.13

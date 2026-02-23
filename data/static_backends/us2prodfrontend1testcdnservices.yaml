@@ -74,3 +74,56 @@ cmb-test-us.wisegrid.net:
     - name: us2wt-siis-401b
       ip: 10.4.149.13
       port: 80
+
+query-uat.urs.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  cookie:
+    name: URSQU
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: us2sp-siis-405
+      ip: 10.4.118.16
+      port: 80
+
+cwcgateway-stage.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: us2wp-scyp-401
+      ip: 10.4.67.52
+      port: 9000
+
+cwcgtm-stage.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: us2wp-scyp-401
+      ip: 10.4.67.52
+      port: 3000
+
+cwcgtm-uat.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2wp-scyp-401
+      ip: 10.4.67.52
+      port: 3100
+
+cwcgateway-uat.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2wp-scyp-401
+      ip: 10.4.67.52
+      port: 9001

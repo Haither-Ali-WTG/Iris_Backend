@@ -801,6 +801,18 @@ webservices_hostnames:
     - hdr(host),field(1,:) -i webservices.cargowise.net
     - hdr(host),field(1,:) -i webservices-ausyd.cargowise.net
 
+webservices_wisegrid_net:
+  description: |-
+    webservices.wisegrid.net hostname
+  tests:
+    - hdr(host),field(1,:) -i webservices.wisegrid.net
+
+redirects_to_refdbrepo_wisegrid_net_urls:
+  description: |-
+    Paths on webservices.wisegrid.net that redirect to refdbrepo.wisegrid.net
+  tests:
+    - path_beg -i /refdbrepotest
+
 proget-au_wisetechglobal_com:
   description: |-
     hostnames for proget-au OpenShift
