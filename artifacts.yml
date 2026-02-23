@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260223.1
-  # Mon Feb 23 03:41:04 UTC 2026 -- Mon Feb 23 14:41:04 AEDT 2026
+  # Dante Build Artifact 20260224.1
+  # Mon Feb 23 19:00:50 UTC 2026 -- Tue Feb 24 06:00:50 AEDT 2026
   #
-  # Merge pull request 45459 from dante_artifact_upgrade into master
-  # 7d52bd4eee9c45f53b77f582bb6500db7837b85a
-  dante_build_id: '1621459'
+  # Merge pull request 45499 from dante_artifact_upgrade into master
+  # 47a34b31f1fb4bc302ecc5ec9baec4cb0115c603
+  dante_build_id: '1622096'
 
-  # virgil 20260223.2
-  # Mon Feb 23 02:59:49 UTC 2026 -- Mon Feb 23 13:59:49 AEDT 2026
+  # virgil 20260224.2
+  # Mon Feb 23 18:21:21 UTC 2026 -- Tue Feb 24 05:21:21 AEDT 2026
   #
-  # Merged PR 45456: decom another EYE node - au2anl00015
-  # 3d501602fffc6f7163d68a8461beaffa53f9f1aa
-  virgil_build_id: '1621413'
+  # Merge pull request 45490 from virgil_python_upgrade into master
+  # d075e1c915148e320d9852defa9a5b25e9a29d32
+  virgil_build_id: '1622048'
 
   # sqlbilling 20260220.2
   # Fri Feb 20 04:23:35 UTC 2026 -- Fri Feb 20 15:23:35 AEDT 2026
