@@ -3764,3 +3764,14 @@ ace-api.wisegrid.net:
     - name: w5.au2prod2
       ip: 10.2.214.19
       port: 30400
+
+cargowise-d365-inbound-prod.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: D365XT
+  http_health_check:
+    enabled: false
+  servers:
+    - name: AU2WP-SXTR-401
+      ip: 10.2.70.25
+      port: 9080

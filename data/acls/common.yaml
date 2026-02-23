@@ -436,3 +436,203 @@ awsr53_src:
     - var(txn.client_ip) -m ip 54.244.52.192/26
     - src 54.245.168.0/26
     - var(txn.client_ip) -m ip 54.245.168.0/26
+
+azure_d365_aue_src:
+  description: Azure IP Ranges and Service Tags (PowerPlatformInfra.AustraliaEast)
+  tests:
+    # Azure D365 IP range CS02235990
+    - src 4.237.136.16/29
+    - var(txn.client_ip) -m ip 4.237.136.16/29
+    - src 4.237.136.64/26
+    - var(txn.client_ip) -m ip 4.237.136.64/26
+    - src 4.237.136.128/25
+    - var(txn.client_ip) -m ip 4.237.136.128/25
+    - src 4.237.137.0/24
+    - var(txn.client_ip) -m ip 4.237.137.0/24
+    - src 4.237.138.0/24
+    - var(txn.client_ip) -m ip 4.237.138.0/24
+    - src 20.37.199.128/25
+    - var(txn.client_ip) -m ip 20.37.199.128/25
+    - src 20.40.177.116/32
+    - var(txn.client_ip) -m ip 20.40.177.116/32
+    - src 20.40.182.180/32
+    - var(txn.client_ip) -m ip 20.40.182.180/32
+    - src 20.40.186.118/32
+    - var(txn.client_ip) -m ip 20.40.186.118/32
+    - src 20.40.187.183/32
+    - var(txn.client_ip) -m ip 20.40.187.183/32
+    - src 20.40.188.84/32
+    - var(txn.client_ip) -m ip 20.40.188.84/32
+    - src 20.53.40.0/26
+    - var(txn.client_ip) -m ip 20.53.40.0/26
+    - src 20.53.40.64/27
+    - var(txn.client_ip) -m ip 20.53.40.64/27
+    - src 20.53.40.96/28
+    - var(txn.client_ip) -m ip 20.53.40.96/28
+    - src 20.53.40.112/29
+    - var(txn.client_ip) -m ip 20.53.40.112/29
+    - src 20.53.40.128/25
+    - var(txn.client_ip) -m ip 20.53.40.128/25
+    - src 20.53.44.224/29
+    - var(txn.client_ip) -m ip 20.53.44.224/29
+    - src 20.53.74.224/32
+    - var(txn.client_ip) -m ip 20.53.74.224/32
+    - src 20.53.77.171/32
+    - var(txn.client_ip) -m ip 20.53.77.171/32
+    - src 20.53.79.20/32
+    - var(txn.client_ip) -m ip 20.53.79.20/32
+    - src 20.53.79.144/32
+    - var(txn.client_ip) -m ip 20.53.79.144/32
+    - src 20.53.81.209/32
+    - var(txn.client_ip) -m ip 20.53.81.209/32
+    - src 20.53.104.7/32
+    - var(txn.client_ip) -m ip 20.53.104.7/32
+    - src 20.53.104.132/32
+    - var(txn.client_ip) -m ip 20.53.104.132/32
+    - src 20.53.109.106/31
+    - var(txn.client_ip) -m ip 20.53.109.106/31
+    - src 20.53.109.144/32
+    - var(txn.client_ip) -m ip 20.53.109.144/32
+    - src 20.53.115.98/32
+    - var(txn.client_ip) -m ip 20.53.115.98/32
+    - src 20.53.115.101/32
+    - var(txn.client_ip) -m ip 20.53.115.101/32
+    - src 20.53.115.102/32
+    - var(txn.client_ip) -m ip 20.53.115.102/32
+    - src 20.70.221.32/27
+    - var(txn.client_ip) -m ip 20.70.221.32/27
+    - src 20.70.221.64/26
+    - var(txn.client_ip) -m ip 20.70.221.64/26
+    - src 20.70.221.200/29
+    - var(txn.client_ip) -m ip 20.70.221.200/29
+    - src 20.70.249.107/32
+    - var(txn.client_ip) -m ip 20.70.249.107/32
+    - src 20.92.96.30/32
+    - var(txn.client_ip) -m ip 20.92.96.30/32
+    - src 20.92.139.178/32
+    - var(txn.client_ip) -m ip 20.92.139.178/32
+    - src 20.188.218.111/32
+    - var(txn.client_ip) -m ip 20.188.218.111/32
+    - src 20.188.218.165/32
+    - var(txn.client_ip) -m ip 20.188.218.165/32
+    - src 20.188.219.150/32
+    - var(txn.client_ip) -m ip 20.188.219.150/32
+    - src 20.188.221.55/32
+    - var(txn.client_ip) -m ip 20.188.221.55/32
+    - src 20.193.17.106/32
+    - var(txn.client_ip) -m ip 20.193.17.106/32
+    - src 20.213.65.83/32
+    - var(txn.client_ip) -m ip 20.213.65.83/32
+    - src 20.248.149.107/32
+    - var(txn.client_ip) -m ip 20.248.149.107/32
+    - src 68.218.124.72/29
+    - var(txn.client_ip) -m ip 68.218.124.72/29
+    - src 68.218.124.80/28
+    - var(txn.client_ip) -m ip 68.218.124.80/28
+    - src 68.218.124.96/28
+    - var(txn.client_ip) -m ip 68.218.124.96/28
+    - src 68.218.124.112/29
+    - var(txn.client_ip) -m ip 68.218.124.112/29
+    - src 2603:1061:2002:6900::/57
+    - var(txn.client_ip) -m ip 2603:1061:2002:6900::/57
+
+azure_d365_ause_src:
+  description: Azure IP Ranges and Service Tags (PowerPlatformInfra.AustraliaSoutheast)
+  tests:
+    # Azure D365 IP range CS02235990
+    - src 20.40.160.0/32
+    - var(txn.client_ip) -m ip 20.40.160.0/32
+    - src 20.40.162.57/32
+    - var(txn.client_ip) -m ip 20.40.162.57/32
+    - src 20.40.164.49/32
+    - var(txn.client_ip) -m ip 20.40.164.49/32
+    - src 20.40.164.215/32
+    - var(txn.client_ip) -m ip 20.40.164.215/32
+    - src 20.40.165.7/32
+    - var(txn.client_ip) -m ip 20.40.165.7/32
+    - src 20.40.165.31/32
+    - var(txn.client_ip) -m ip 20.40.165.31/32
+    - src 20.40.165.67/32
+    - var(txn.client_ip) -m ip 20.40.165.67/32
+    - src 20.42.230.236/30
+    - var(txn.client_ip) -m ip 20.42.230.236/30
+    - src 20.42.230.240/28
+    - var(txn.client_ip) -m ip 20.42.230.240/28
+    - src 20.42.231.192/26
+    - var(txn.client_ip) -m ip 20.42.231.192/26
+    - src 20.46.108.117/32
+    - var(txn.client_ip) -m ip 20.46.108.117/32
+    - src 20.92.3.128/26
+    - var(txn.client_ip) -m ip 20.92.3.128/26
+    - src 20.92.3.192/27
+    - var(txn.client_ip) -m ip 20.92.3.192/27
+    - src 20.92.4.128/29
+    - var(txn.client_ip) -m ip 20.92.4.128/29
+    - src 20.92.17.147/32
+    - var(txn.client_ip) -m ip 20.92.17.147/32
+    - src 20.211.230.152/29
+    - var(txn.client_ip) -m ip 20.211.230.152/29
+    - src 20.211.230.208/28
+    - var(txn.client_ip) -m ip 20.211.230.208/28
+    - src 20.211.230.224/28
+    - var(txn.client_ip) -m ip 20.211.230.224/28
+    - src 20.211.230.240/29
+    - var(txn.client_ip) -m ip 20.211.230.240/29
+    - src 23.101.227.38/32
+    - var(txn.client_ip) -m ip 23.101.227.38/32
+    - src 40.81.56.190/32
+    - var(txn.client_ip) -m ip 40.81.56.190/32
+    - src 40.81.60.206/32
+    - var(txn.client_ip) -m ip 40.81.60.206/32
+    - src 40.115.67.240/32
+    - var(txn.client_ip) -m ip 40.115.67.240/32
+    - src 40.115.75.235/32
+    - var(txn.client_ip) -m ip 40.115.75.235/32
+    - src 40.127.84.210/32
+    - var(txn.client_ip) -m ip 40.127.84.210/32
+    - src 52.158.134.239/32
+    - var(txn.client_ip) -m ip 52.158.134.239/32
+    - src 52.189.252.34/32
+    - var(txn.client_ip) -m ip 52.189.252.34/32
+    - src 52.243.106.93/32
+    - var(txn.client_ip) -m ip 52.243.106.93/32
+    - src 52.243.108.25/32
+    - var(txn.client_ip) -m ip 52.243.108.25/32
+    - src 52.243.109.4/31
+    - var(txn.client_ip) -m ip 52.243.109.4/31
+    - src 52.243.109.126/32
+    - var(txn.client_ip) -m ip 52.243.109.126/32
+    - src 52.243.110.67/32
+    - var(txn.client_ip) -m ip 52.243.110.67/32
+    - src 52.243.110.156/32
+    - var(txn.client_ip) -m ip 52.243.110.156/32
+    - src 52.243.110.181/32
+    - var(txn.client_ip) -m ip 52.243.110.181/32
+    - src 52.243.113.88/31
+    - var(txn.client_ip) -m ip 52.243.113.88/31
+    - src 52.243.113.102/32
+    - var(txn.client_ip) -m ip 52.243.113.102/32
+    - src 68.218.170.208/29
+    - var(txn.client_ip) -m ip 68.218.170.208/29
+    - src 68.218.171.0/24
+    - var(txn.client_ip) -m ip 68.218.171.0/24
+    - src 68.218.172.0/24
+    - var(txn.client_ip) -m ip 68.218.172.0/24
+    - src 68.218.173.0/25
+    - var(txn.client_ip) -m ip 68.218.173.0/25
+    - src 68.218.173.128/26
+    - var(txn.client_ip) -m ip 68.218.173.128/26
+    - src 104.46.176.0/25
+    - var(txn.client_ip) -m ip 104.46.176.0/25
+    - src 104.46.176.128/27
+    - var(txn.client_ip) -m ip 104.46.176.128/27
+    - src 104.46.176.160/30
+    - var(txn.client_ip) -m ip 104.46.176.160/30
+    - src 104.46.176.192/26
+    - var(txn.client_ip) -m ip 104.46.176.192/26
+    - src 104.46.177.0/26
+    - var(txn.client_ip) -m ip 104.46.177.0/26
+    - src 104.46.179.32/29
+    - var(txn.client_ip) -m ip 104.46.179.32/29
+    - src 2603:1061:2002:6800::/57
+    - var(txn.client_ip) -m ip 2603:1061:2002:6800::/57
