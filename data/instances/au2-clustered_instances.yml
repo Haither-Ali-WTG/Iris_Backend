@@ -460,8 +460,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: webtracker_mantonairsea_com_au
           cms_resource_group: RG-AU-Prod
-        - name: webtrack_natrio_com
-          cms_resource_group: RG-AU-Prod
         - name: webtracker_sgl_com_au
           cms_resource_group: RG-AU-Prod
         - name: webtracking_sila_net_au
