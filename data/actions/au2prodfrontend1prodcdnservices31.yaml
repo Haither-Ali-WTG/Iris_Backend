@@ -18,6 +18,16 @@ ofxdealstatusws_access_control:
       { hdr(host),field(1,:) -i ofxdealstatusws.wisegrid.net }
       !wtg_src !ofx_ip
 
+cargowise_d365_inbound_access_control:
+  description: |-
+    Restrict cargowise_d365_inbound to allowlisted IPs.
+  order: 59
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i cargowise-d365-inbound-prod.wisegrid.net }
+      !wtg_src !azure_d365_aue_src !azure_d365_ause_src
+
 wca_denied_actions:
   description: |-
     HTTP-request deny for WCA production services denied paths
