@@ -3,7 +3,8 @@ de.cww.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_cww_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
@@ -31,7 +32,8 @@ de.identity.wisetechglobal.com-login:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -43,7 +45,8 @@ de.identity.wisetechglobal.com-account:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -55,7 +58,8 @@ de.identity.wisetechglobal.com-s2s:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
