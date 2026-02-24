@@ -11,7 +11,6 @@ clustered_instances:
         ports:
           plaintext:
             # KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-inventories/inventory.yml
-
             # 3000..3999 is reserved by the billing collector:
             # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
 
@@ -46,7 +45,6 @@ clustered_instances:
             - 3028  # DE1WT-SSQL-409a/b i1
             - 3029  # DE1WP-SSQL-431a/b i1
             - 3030  # DE1WP-SSQL-432a/b i1
-
             # ..3999
       iis_servers: []
       certificates: []
@@ -58,8 +56,6 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
-      timeouts:
-        http_keep_alive: 4
 
     de1prodelasticbunker1:
       # per-clustered-instance settings (overrides) go here, for example:
