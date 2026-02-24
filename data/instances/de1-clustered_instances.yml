@@ -357,8 +357,6 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
-      timeouts:
-        http_keep_alive: 4
 
     de1prodfrontend1tenantservices:
       # de1-prod-frontend-1-tenant-services
@@ -401,8 +399,6 @@ clustered_instances:
       machine_cluster: de1-prod-frontend-1
       iis_servers: []
       certificates: []
-      timeouts:
-        http_keep_alive: 4
 
     de1sandinternal1services:
       # de1-prod-internal-1
@@ -444,5 +440,3 @@ clustered_instances:
       machine_cluster: de1-prod-internal-1
       iis_servers: []
       certificates: []
-      timeouts:
-        http_keep_alive: 4
