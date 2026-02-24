@@ -18,7 +18,8 @@ us.cww.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend us_cww_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
@@ -46,7 +47,8 @@ us.identity.wisetechglobal.com-login:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend us_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -58,7 +60,8 @@ us.identity.wisetechglobal.com-account:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend us_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -70,7 +73,8 @@ us.identity.wisetechglobal.com-s2s:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend us_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -200,7 +204,8 @@ identity-staging.wisetechglobal.com-login:
   full_override: |
     backend identity-staging_wisetechglobal_com_login
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect rstatus 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -213,7 +218,8 @@ identity-staging.wisetechglobal.com-s2s:
   full_override: |
     backend identity-staging_wisetechglobal_com_s2s
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect rstatus 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -226,7 +232,8 @@ identity-staging.wisetechglobal.com-account:
   full_override: |
     backend identity-staging_wisetechglobal_com_account
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect rstatus 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
