@@ -573,7 +573,8 @@ wtg-sw.sand.wtg.zone-us:
   clustered_instances: [us2corpinternal1]
   full_override: |
     backend wtg-sw_sand_wtg_zone
-    option httpchk HEAD /Orion/Login
+    option httpchk
+    http-check send meth HEAD uri /Orion/Login
     http-check expect status 200
     cookie WEBNODE insert indirect nocache dynamic
     server us2sp-smpe-401 10.2.82.30:8787 check ssl verify none
