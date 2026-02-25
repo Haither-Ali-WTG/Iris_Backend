@@ -131,3 +131,12 @@ cwcgateway-uat.wisegrid.net:
     - name: us2wp-scyp-401
       ip: 10.4.67.52
       port: 9001
+
+cwcconsul-uat.wisegrid.net:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2wp-scyp-401
+      ip: 10.4.67.52
+      port: 8600
