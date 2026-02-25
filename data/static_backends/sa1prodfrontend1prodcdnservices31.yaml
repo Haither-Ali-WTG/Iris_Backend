@@ -11,8 +11,3 @@ sa1wca.wisegrid.net:
     - name: sa1wp-swfe-401
       ip: 10.96.64.197
       port: 80
- name: de1wp-surw-402
-      ip: 10.3.151.12
-      port: 80
-      settings: backup
-
