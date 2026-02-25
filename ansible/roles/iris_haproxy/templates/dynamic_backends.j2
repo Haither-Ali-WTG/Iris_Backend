@@ -22,7 +22,7 @@ cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic httponly
 {# TODO: Support override interval #}
 default-server inter 10000 {%- if config.encryption | default(false) %} ssl{% endif %}
 
-{%       for server_name, server_content in servers_data.items() %}
+{%       for server_name, server_content in servers_data | dictsort %}
 {%         if backend_name in (server_content.websites_list or {}) %}
 {%           for iterating_config in server_content.websites_list[backend_name] %}
 {%             if iterating_config == config %}
