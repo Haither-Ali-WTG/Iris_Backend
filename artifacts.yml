@@ -7,12 +7,12 @@ variables:
   # 47a34b31f1fb4bc302ecc5ec9baec4cb0115c603
   dante_build_id: '1622096'
 
-  # virgil 20260224.2
-  # Mon Feb 23 18:21:21 UTC 2026 -- Tue Feb 24 05:21:21 AEDT 2026
+  # virgil 20260225.2
+  # Wed Feb 25 06:33:06 UTC 2026 -- Wed Feb 25 17:33:06 AEDT 2026
   #
-  # Merge pull request 45490 from virgil_python_upgrade into master
-  # d075e1c915148e320d9852defa9a5b25e9a29d32
-  virgil_build_id: '1622048'
+  # Merged PR 45558: add-vlan-1227-in-dat-service
+  # d82fc079b958aba83975b8230458d85e95022786
+  virgil_build_id: '1623558'
 
   # sqlbilling 20260225.2
   # Wed Feb 25 04:47:42 UTC 2026 -- Wed Feb 25 15:47:42 AEDT 2026
