@@ -11,7 +11,6 @@ clustered_instances:
         ports:
           plaintext:
             # KEEP IN SYNC: haproxy/us2-prod-frontend-2/ansible-inventories/inventory.yml
-
             # 4000..4999 is reserved by the billing collector:
             # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
 
@@ -122,7 +121,6 @@ clustered_instances:
             - 4452   # US2 Prod SQL Cluster 439
             - 24999  # US9 EDI server
             - 25009  # US9 Prod SQL server
-
       iis_servers: []
       certificates: []
       sqlbilling_acl:
@@ -167,6 +165,8 @@ clustered_instances:
         ports:
           web: 2049
           socket: 2048
+      timeouts:
+        http_keep_alive: 4
 
     us2prodinternal1services30:
       # us2-corp-internal-1
@@ -193,6 +193,7 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         server: 360
+        http_keep_alive: 4
 
     us2prodfrontend1prodcwservices26:
       # us2-prod-frontend-1-prodcw-services-26
@@ -413,6 +414,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2corptcp1:
       dc: US2
@@ -485,6 +488,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1prodtenantservices1:
       # us2-prod-tenantservices-1
@@ -524,6 +529,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1testcdnservices:
       # us2-prod-frontend-1-test-cdn-services
@@ -548,6 +555,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1pierbridge:
       # General Pierbridge instance
@@ -597,6 +606,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1pierbridgehubcapp:
       # Pierbridge instance for Hubcapp product
@@ -634,3 +645,5 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
