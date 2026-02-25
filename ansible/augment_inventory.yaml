@@ -15,7 +15,9 @@
 
 - name: Import IIS data
   import_playbook: import_iis_data.yml
-  when: enable_dynamic_backends | default(true)
+  when:
+    - enable_dynamic_backends | default(true)
+    - not use_local_backends | default(false)
 
 - name: Load machine clusters configuration
   import_playbook: load_machine_clusters.yaml
