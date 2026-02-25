@@ -22,4 +22,3 @@ wca_prod_url:
   tests:
     - hdr(host),field(1,:) -i sa1wcatoken.wisegrid.net
     - hdr(host),field(1,:) -i sa1wca.wisegrid.net
-
