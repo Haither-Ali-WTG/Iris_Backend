@@ -14,9 +14,9 @@ variables:
   # d82fc079b958aba83975b8230458d85e95022786
   virgil_build_id: '1623558'
 
-  # sqlbilling 20260225.2
-  # Wed Feb 25 04:47:42 UTC 2026 -- Wed Feb 25 15:47:42 AEDT 2026
+  # sqlbilling 20260225.3
+  # Wed Feb 25 11:22:17 UTC 2026 -- Wed Feb 25 22:22:17 AEDT 2026
   #
-  # Merged PR 45548: Update SQL readonly
-  # 2ada9e75307d88c901d4c1b2329876f40bb93fe1
-  sqlbilling_build_id: '1623480'
+  # Merged PR 45542: CS02248309 - CTFREISYD - Whitelist access to CTFPRD and CTFTRN for nominated IP's
+  # ec6eabba57dfa6331b9a1652cd87ea0acb3a671a
+  sqlbilling_build_id: '1623772'
