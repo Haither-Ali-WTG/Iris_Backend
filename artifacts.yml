@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260225.1
-  # Wed Feb 25 07:21:24 UTC 2026 -- Wed Feb 25 18:21:24 AEDT 2026
+  # Dante Build Artifact 20260226.1
+  # Thu Feb 26 00:21:21 UTC 2026 -- Thu Feb 26 11:21:21 AEDT 2026
   #
-  # Merge pull request 45563 from dante_artifact_upgrade into master
-  # bf55bb082b315617292f3d7a664ecf64dd628246
-  dante_build_id: '1623599'
+  # Merge pull request 45587 from dante_artifact_upgrade into master
+  # 6b086eb18e000a012ce24d54b7deff202af02cae
+  dante_build_id: '1624305'
 
   # virgil 20260226.3
   # Wed Feb 25 23:32:19 UTC 2026 -- Thu Feb 26 10:32:19 AEDT 2026
@@ -14,9 +14,9 @@ variables:
   # d462d3c8e30a7f69a5553bbadc1f261a750a0aad
   virgil_build_id: '1624247'
 
-  # sqlbilling 20260225.3
-  # Wed Feb 25 11:22:17 UTC 2026 -- Wed Feb 25 22:22:17 AEDT 2026
+  # sqlbilling 20260226.2
+  # Thu Feb 26 01:48:40 UTC 2026 -- Thu Feb 26 12:48:40 AEDT 2026
   #
-  # Merged PR 45542: CS02248309 - CTFREISYD - Whitelist access to CTFPRD and CTFTRN for nominated IP's
-  # ec6eabba57dfa6331b9a1652cd87ea0acb3a671a
-  sqlbilling_build_id: '1623772'
+  # Merged PR 45594: Update Readonly
+  # 52ab2bda966cfcaa9c9e0e374dcef21b70e04c6a
+  sqlbilling_build_id: '1624409'
