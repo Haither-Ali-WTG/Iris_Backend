@@ -153,6 +153,37 @@ clustered_instances:
           web: 2037
           socket: 2036
 
+    sa1prodfrontend1prodcdnservices31:
+      # sa1-prod-frontend-1-prod-cdn-services-31
+      dc: SA1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2019]
+          ssl: [2020]
+      stats:
+        ports:
+          web: 2057
+          socket: 2056
+      machine_cluster: sa1-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-cww-prod-wisetechglobal-cn
+          cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-cwconnector-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
     sa1prodfrontend1prodrdgproxy:
       # sa1-prod-frontend-1-prod-rdg-proxy
       dc: SA1
@@ -175,6 +206,8 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-cn
+          cms_resource_group: RG-AU-Corp
 
     sa1prodfrontend1testrdgproxy:
       # sa1-prod-frontend-1-test-rdg-proxy
@@ -198,3 +231,5 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-cn
+          cms_resource_group: RG-AU-Corp
