@@ -152,6 +152,8 @@ clustered_instances:
         ports:
           web: 2037
           socket: 2036
+      timeouts:
+        http_keep_alive: 4
 
     sa1prodfrontend1prodcdnservices31:
       # sa1-prod-frontend-1-prod-cdn-services-31
