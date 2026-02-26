@@ -7,12 +7,12 @@ variables:
   # bf55bb082b315617292f3d7a664ecf64dd628246
   dante_build_id: '1623599'
 
-  # virgil 20260225.2
-  # Wed Feb 25 06:33:06 UTC 2026 -- Wed Feb 25 17:33:06 AEDT 2026
+  # virgil 20260226.3
+  # Wed Feb 25 23:32:19 UTC 2026 -- Thu Feb 26 10:32:19 AEDT 2026
   #
-  # Merged PR 45558: add-vlan-1227-in-dat-service
-  # d82fc079b958aba83975b8230458d85e95022786
-  virgil_build_id: '1623558'
+  # Merged PR 45586: Allow common user access to aws topic to push from filebeat
+  # d462d3c8e30a7f69a5553bbadc1f261a750a0aad
+  virgil_build_id: '1624247'
 
   # sqlbilling 20260225.3
   # Wed Feb 25 11:22:17 UTC 2026 -- Wed Feb 25 22:22:17 AEDT 2026
