@@ -177,9 +177,7 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
-      timeouts:
-        http_keep_alive: 4
-
+  
     sa1prodfrontend1testrdgproxy:
       # sa1-prod-frontend-1-test-rdg-proxy
       dc: SA1
@@ -202,5 +200,3 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
-      timeouts:
-        http_keep_alive: 4
