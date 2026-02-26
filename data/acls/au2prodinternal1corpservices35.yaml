@@ -40,6 +40,9 @@ knowledge_mcp_wtg_zone:
     ## ediprod
     - hdr(host) -i ediprod.mcp.wtg.zone
     - hdr(host) -i ediprod-staging.mcp.wtg.zone
+    ## ai-acceleration
+    - hdr(host) -i ai-acceleration.mcp.wtg.zone
+    - hdr(host) -i ai-acceleration-staging.mcp.wtg.zone
     # knowledge
     ## main
     - hdr(host) -i admin.knowledge.wtg.zone
@@ -83,6 +86,30 @@ llm_manager_wtg_zone:
     ## task-automation
     - hdr(host) -i task-automation.wtg.zone
     - hdr(host) -i task-automation-staging.wtg.zone
+
+temporal_wtg_zone:
+  description: "au2 temporal urls"
+  tests:
+    ## temporal
+    - hdr(host) -i temporal-au.wtg.zone
+    - hdr(host) -i temporal-au.sand.wtg.zone
+    - hdr(host) -i temporal-au-staging.wtg.zone
+    - hdr(host) -i temporal.wtg.zone
+    - hdr(host) -i temporal.sand.wtg.zone
+    - hdr(host) -i temporal-staging.wtg.zone
+
+spire_wtg_zone:
+  description: "au2 spire urls"
+  tests:
+    ## spire
+    - hdr(host) -i spire-au-dev.wtg.zone
+
+devtools_wtg_zone:
+  description: "au2 devtools urls"
+  tests:
+    ## devtools
+    - hdr(host) -i devtools-experiments.wtg.zone
+    - hdr(host) -i devtools-experiments-staging.wtg.zone  
 
 star_cargowise_com:
   description: "*.cargowise.com"
