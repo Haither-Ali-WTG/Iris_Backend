@@ -851,7 +851,7 @@ xttest-atlas.wisegrid.net:
       port: 5094
 
 wtlupsservices.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: WEBSVC
   encryption: true
@@ -867,7 +867,7 @@ wtlupsservices.wisegrid.net:
       port: 443
 
 cargoliveposition-staging.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: CLPTS
   http_health_check:
