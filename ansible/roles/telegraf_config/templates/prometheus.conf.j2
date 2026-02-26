@@ -1,3 +1,12 @@
+{% if files_check.results | map(attribute='stat.exists') | min %}
+[[inputs.exec]]
+  commands = [
+    "bash -c 'printf \"conntrack conntrack_max=%s,conntrack_count=%s\\n\" \"$(cat /proc/sys/net/netfilter/nf_conntrack_max)\" \"$(cat /proc/sys/net/netfilter/nf_conntrack_count)\"'"
+  ]
+  data_format = "influx"
+  interval = "60s"
+{% endif %}
+
 [[inputs.prometheus]]
   urls = [
     {% for port in endpoint_ports %}

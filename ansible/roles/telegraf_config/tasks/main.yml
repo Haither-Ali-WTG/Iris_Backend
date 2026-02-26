@@ -20,6 +20,16 @@
     group: root
     mode: "u=rwx,g=rx,o=rx"
 
+- name: Check if conntrack proc files exist as a prerequisite
+  # This task checks that both required kernel metric files are present.
+  # The task uses a loop to check each file path with the stat module.
+  stat:
+    path: "{{ item }}"
+  loop:
+    - /proc/sys/net/netfilter/nf_conntrack_max
+    - /proc/sys/net/netfilter/nf_conntrack_count
+  register: files_check
+
 - name: Copy Prometheus config to telegraf.d
   become: yes
   template:

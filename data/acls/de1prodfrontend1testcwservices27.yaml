@@ -32,10 +32,20 @@ star_webtracker_wisegrid_net:
 www-star_wisegrid_net:
   description: "www-*.wisegrid.net"
   tests:
-    - hdr(host),field(1,:) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^www-[A-Za-z0-9]{6,8}(-cn)?\.wisegrid\.net$
 
 glow_webservice_path:
   description: |-
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
+
+t89_allowed_ips:
+  description: these IPs that are specifically allowed to connect to T89 XNDT webservice
+  tests:
+    - src 188.86.97.34
+    - src 195.235.205.0/27
+    - src 195.235.205.5
+    - src 213.4.19.245
+    # Sam Test
+    - src 220.233.32.106

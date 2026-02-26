@@ -1,0 +1,51 @@
+---
+- name: Set paths for checking VIP drift
+  set_fact:
+    vip_workdir: "{{ playbook_dir }}/vip_drift"
+    vip_baseline_path: "{{ playbook_dir }}/vip_drift/{{ inventory_hostname }}"
+    vip_current_path: "{{ playbook_dir }}/vip_drift/{{ inventory_hostname }}.current"
+    vip_s3_dir: "{{ s3_iris_bucket }}vip-{{ target_dc }}"
+
+- name: Create directory for VIP
+  file:
+    dest: "{{ vip_workdir }}"
+    state: directory
+    mode: u=rwx,go=
+  delegate_to: localhost
+
+- name: Download baseline VIP files from S3
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp --recursive
+    {{ vip_s3_dir }} {{ vip_workdir }}
+  changed_when: false
+  delegate_to: localhost
+  run_once: true
+
+- name: Write current VIPs to local file
+  copy:
+    dest: "{{ vip_current_path }}"
+    content: "{{ (machine_vips[inventory_hostname] | sort | join('\n')) }}"
+    mode: u=rw,go=
+  delegate_to: localhost
+
+- name: Copy VIP file to S3
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp
+    {{ vip_current_path }} {{ vip_s3_dir }}/{{ inventory_hostname }}
+  changed_when: true
+  delegate_to: localhost
+
+- name: Compare baseline VIP and current VIP
+  command: diff -q "{{ vip_baseline_path }}" "{{ vip_current_path }}"
+  register: diff_result
+  changed_when: false
+  delegate_to: localhost
+
+- name: Display changes
+  fail:
+    msg: >-
+      VIPs have changed for {{ inventory_hostname }}:
+      {{ diff_result }}
+  when: diff_result.rc != 0

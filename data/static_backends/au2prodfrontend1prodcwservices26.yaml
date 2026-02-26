@@ -1,0 +1,39 @@
+---
+tl1web2.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcwservices26]
+  cookie:
+    name: TLX
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  servers:
+    - name: AU2WP-SWEB-100
+      ip: 10.2.69.85
+      port: 80
+
+map.gps.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcwservices26]
+  cookie:
+    name: TLX
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  servers:
+    - name: AU2WP-SWEB-100
+      ip: 10.2.69.85
+      port: 80
+
+tlxcentral.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcwservices26]
+  cookie:
+    name: TLX
+  http_health_check:
+    enabled: true
+    http_path: "/"
+    check_expect: "200|401|403|302|405"
+  servers:
+    - name: AU2WP-SWEB-100
+      ip: 10.2.69.85
+      port: 80

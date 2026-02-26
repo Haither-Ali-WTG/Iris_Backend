@@ -32,5 +32,11 @@ custom_url_actions:
     Customurls for GLOW & Webtracker
   order: 80
   actions:
+    ### GLOW
     - use_backend www-l77trn_wisegrid_net if { hdr(host),field(1,:) -i freighttracker-training.livingston.com }
     - use_backend www-mfitrn_wisegrid_net if { hdr(host),field(1,:) -i purchaseordermanagement-test.mainchain.net }
+    ### Webtracker
+    - use_backend dhxtrn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i mytrnportal.dgxglobal.com }
+    - use_backend maltsh_webtracker_wisegrid_net if { hdr(host),field(1,:) -i maltsh2.webtracker.wisegrid.net }
+    - use_backend xxxtst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i xxxtstnowwebtracker.wisegrid.net }
+    - use_backend xxxtst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i xxxtstschenkerwebtracker.wisegrid.net }

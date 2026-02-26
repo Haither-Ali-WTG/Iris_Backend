@@ -1142,3 +1142,28 @@ new-am-nexus_rez1_com:
   description: "new-am-nexus.rez1.com"
   tests:
     - hdr(host) -i new-am-nexus.rez1.com
+
+rez1_root_path:
+  description: "Root path (/)"
+  tests:
+    - path -i /
+
+alcm_rez1_com:
+  description: "alcm.rez1.com"
+  tests:
+    - hdr(host) -i alcm.rez1.com
+
+direct_rez1_com:
+  description: "direct.rez1.com"
+  tests:
+    - hdr(host) -i direct.rez1.com
+
+alcmtrain_rez1_com:
+  description: "alcmtrain.rez1.com"
+  tests:
+    - hdr(host) -i alcmtrain.rez1.com
+
+train-direct_rez1_com:
+  description: "train-direct.rez1.com"
+  tests:
+    - hdr(host) -i train-direct.rez1.com

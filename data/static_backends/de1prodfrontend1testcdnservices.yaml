@@ -3,9 +3,12 @@ de.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     backend de_cww-nonprd_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
     default-server agent-check agent-port 8098
     server DE1WT-SBLZ-001 10.3.73.11:80
     server DE1WT-SBLZ-404 10.3.73.24:80
@@ -26,7 +29,8 @@ staging-de.identity.wisetechglobal.com-login:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     backend staging-de_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -38,7 +42,8 @@ staging-de.identity.wisetechglobal.com-account:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     backend staging-de_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -50,7 +55,8 @@ staging-de.identity.wisetechglobal.com-s2s:
   clustered_instances: [de1prodfrontend1testcdnservices]
   full_override: |
     backend staging-de_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -77,3 +83,18 @@ peppol-ap-test.wisegrid.net:
     - name: de1wt-spap-401
       ip: 10.3.69.110
       port: 18080
+
+cmb-test-de.wisegrid.net:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  cookie:
+    name: CMBT
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: de1wt-siis-401a
+      ip: 10.3.149.11
+      port: 80
+    - name: de1wt-siis-401b
+      ip: 10.3.149.12
+      port: 80

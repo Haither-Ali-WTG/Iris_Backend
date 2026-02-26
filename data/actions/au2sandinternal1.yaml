@@ -1,26 +1,15 @@
 ---
-cloudflare_ip:
-  description: |-
-    Set source IP based on cloudflare header for cloudflare traffic
-  order: 1
-  actions:
-    - http-request set-src hdr(cf-connecting-ip) if cloudflare_src
-
 restrict_ip:
   description: |-
     Restrict http request based on IP
   order: 2
   actions:
-    - http-request deny if !wtg_src !shipamax_src !hackerrank_src !talogy_src !azure_src !bsm_blume_src
+    - >-
+      http-request deny if
+      !wtg_src !shipamax_src !hackerrank_src !talogy_src !azure_src !bsm_blume_src !impexdocs_uat_src
     - http-request deny if azure_src !scim-test_wisetechglobal_com
     - http-request deny if bsm_blume_src !ocmbe_sand_wtg_zone
-
-wtg_true_client_ip_header:
-  description: |-
-    Set true client IP header for IP whitelisting in applications
-  order: 59
-  actions:
-    - http-request set-header WTG-True-Client-IP %[src]
+    - http-request deny if impexdocs_uat_src !ocmbe_sand_wtg_zone
 
 secure_cookie:
   description: |-
@@ -88,3 +77,19 @@ myaccount_umbraco_temp_sand_wtg_zone:
     - >-
         use_backend myaccount-umbraco-temp-sand-wtg-zone-catchall
         if { hdr(host),field(1,:) -m reg -i ^myau-([^\.])+\.temp\.sand\.wtg\.zone$ }
+
+star_wtatestrig_sand_wtg_zone:
+  description: |-
+    use catchall wtatestrig backend for *.wtatestrig.sand.wtg.zone
+  order: 80
+  actions:
+    - >-
+        use_backend wtatestrig-sand-wtg-zone-catchall
+        if star_wtatestrig_sand_wtg_zone
+
+au2prod_sand_ocp_backend_selection:
+  description: |-
+    Backend selection for sand au2prod OCP internal services
+  order: 80
+  actions:
+    - use_backend au2prod1-sandinternal-ingress if custom_sandinternal_au2prod1_ocp_wtg_ws

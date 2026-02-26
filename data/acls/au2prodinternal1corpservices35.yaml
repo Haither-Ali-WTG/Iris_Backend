@@ -53,6 +53,11 @@ knowledge_mcp_wtg_zone:
     - hdr(host) -i borderwise-admin.knowledge.wtg.zone
     - hdr(host) -i borderwise-staging.knowledge.wtg.zone
     - hdr(host) -i borderwise-admin-staging.knowledge.wtg.zone
+    ## triage-agent
+    - hdr(host) -i triage-agent.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-staging.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-admin.knowledge.wtg.zone
+    - hdr(host) -i triage-agent-admin-staging.knowledge.wtg.zone
     ## wta
     - hdr(host) -i wta.knowledge.wtg.zone
     - hdr(host) -i wta-admin.knowledge.wtg.zone
@@ -68,11 +73,16 @@ llm_manager_wtg_zone:
     ## llm-manager
     - hdr(host) -i llm-manager.wtg.zone
     - hdr(host) -i llm-manager.sand.wtg.zone
+    - hdr(host) -i llm-manager-staging.wtg.zone
     ## llm-gateway
     - hdr(host) -i llm-gateway.wtg.zone
     - hdr(host) -i llm-gateway.sand.wtg.zone
-    - hdr(host) -i llm-manager.wtg.zone
-    - hdr(host) -i llm-manager.sand.wtg.zone
+    - hdr(host) -i llm-gateway-staging.wtg.zone
+    - hdr(host) -i llm-gateway.knowledge.wtg.zone
+    - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
+    ## task-automation
+    - hdr(host) -i task-automation.wtg.zone
+    - hdr(host) -i task-automation-staging.wtg.zone
 
 star_cargowise_com:
   description: "*.cargowise.com"

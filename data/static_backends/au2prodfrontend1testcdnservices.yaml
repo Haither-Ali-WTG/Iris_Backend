@@ -18,11 +18,14 @@ au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend au_cww-nonprd_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
     default-server agent-check agent-port 8098
-    server AU2WT-SBLZ-001 10.2.73.11:80
+    server AU2WT-SBLZ-401 10.2.73.21:80
     server AU2WT-SBLZ-404 10.2.73.24:80
 
 app-test-au.borderwise.com:
@@ -41,7 +44,8 @@ staging-au.identity.wisetechglobal.com-login:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -53,7 +57,8 @@ staging-au.identity.wisetechglobal.com-account:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -65,7 +70,8 @@ staging-au.identity.wisetechglobal.com-s2s:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend staging-au_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
@@ -77,7 +83,9 @@ au.cww.wisetechglobal.com-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
     backend au_cww_wisetechglobal_com-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     default-server agent-check agent-port 8098
@@ -104,6 +112,17 @@ accounting-d365.xttest.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: D365XT
+  http_health_check:
+    enabled: false
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 9080
+
+mdmcore-d365.xttest.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: MDMD365XT
   http_health_check:
     enabled: false
   servers:
@@ -250,21 +269,6 @@ gbmcpws-test.wisegrid.net:
       ip: 10.2.69.20
       port: 80
 
-gbcustoms-cdsws-test.wisegrid.net:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: SEWGT
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-  servers:
-    - name: AU2WT-SIIS-401A
-      ip: 10.2.69.19
-      port: 80
-    - name: AU2WT-SIIS-401B
-      ip: 10.2.69.20
-      port: 80
-
 ehub-routingws-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
@@ -323,6 +327,21 @@ ehub-ausyd-test.cargowise.net:
       port: 80
     - name: AU2WT-SEWG-401B
       ip: 10.2.69.69
+      port: 80
+
+mobile-test.cargowise.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+    method: GET
+  servers:
+    - name: AU2SP-SIIS-406A
+      ip: 10.2.118.60
+      port: 80
+    - name: AU2SP-SIIS-406B
+      ip: 10.2.118.61
       port: 80
 
 ofxdealstatusws-test.wisegrid.net:
@@ -446,6 +465,7 @@ gtminvoicingws.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /
+    check_expect: '200|401|403'
   servers:
     - name: au2sp-sweb-401a
       ip: 10.2.118.13
@@ -594,17 +614,6 @@ sydbiztalk-test.wisegrid.net:
       ip: 10.2.118.36
       port: 80
 
-sydbiztalk-test.ssl:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  encryption: true
-  http_health_check:
-    enabled: true
-    http_path: /
-  servers:
-    - name: AU2SP-SBTS-401
-      ip: 10.2.118.36
-      port: 443
-
 gbpentantws-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
@@ -688,9 +697,10 @@ cww-nonprd.wisegrid.net.catch.all:
   http_health_check:
     enabled: true
     http_path: /wtg/status
+  balance: random
   servers:
-    - name: AU2WT-SBLZ-001
-      ip: 10.2.73.11
+    - name: AU2WT-SBLZ-401
+      ip: 10.2.73.21
       port: 80
     - name: AU2WT-SBLZ-404
       ip: 10.2.73.24
@@ -737,16 +747,19 @@ testflighttracking.cargowise.com:
       ip: 10.2.118.61
       port: 80
 
-cmb-test.wisegrid.net:
+cmb-test-au.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
-    name: ABE
+    name: CMBT
   http_health_check:
     enabled: true
     http_path: /wtg/status
   servers:
-    - name: au2sp-siis-401
-      ip: 10.2.118.20
+    - name: au2wt-siis-404a
+      ip: 10.2.149.12
+      port: 80
+    - name: au2wt-siis-404b
+      ip: 10.2.149.13
       port: 80
 
 cacustoms-gw2-test.cargowise.net:
@@ -838,7 +851,7 @@ xttest-atlas.wisegrid.net:
       port: 5094
 
 wtlupsservices.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: WEBSVC
   encryption: true
@@ -854,7 +867,7 @@ wtlupsservices.wisegrid.net:
       port: 443
 
 cargoliveposition-staging.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: CLPTS
   http_health_check:
@@ -864,3 +877,209 @@ cargoliveposition-staging.wisegrid.net:
     - name: AU2SP-SDKR-401
       ip: 10.2.116.27
       port: 8093
+
+s8test.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: S8T
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200|404'
+  servers:
+    - name: AU2WP-SS8C-402
+      ip: 10.2.69.108
+      port: 80
+
+testtmp.borderwise.com-catchall:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: TTMP
+  http_health_check:
+    enabled: false
+    http_path: /
+  default_server: check ssl inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
+
+svc-hyetip.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-hyetip.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Glow/wtg/ready
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlgtm.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlndc.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+svc-wtlkel.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+www-wtlkel.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Glow/wtg/ready
+    check_expect: '200|401|403'
+  servers:
+    - name: AU2SP-SWEB-401A
+      ip: 10.2.118.13
+      port: 80
+    - name: AU2SP-SWEB-401B
+      ip: 10.2.118.14
+      port: 80
+
+ace-test-api.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: ACETAPI
+  http_health_check:
+    enabled: false
+    http_path: /wtg/ready
+  default_server: check ssl inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
+
+errorstest.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|401|403'
+  servers:
+    - name: au2sp-siis-403
+      ip: 10.2.118.45
+      port: 80
+
+auadl-staging.transport.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--web1
+      ip: 10.2.69.95
+      port: 3004
+    - name: au2wt-sdkr-501c--web2
+      ip: 10.2.69.96
+      port: 3004
+
+auadl-staging.transport.wisetechglobal.com-api:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501b--api1
+      ip: 10.2.69.95
+      port: 3504
+    - name: au2wt-sdkr-501c--api2
+      ip: 10.2.69.96
+      port: 3504

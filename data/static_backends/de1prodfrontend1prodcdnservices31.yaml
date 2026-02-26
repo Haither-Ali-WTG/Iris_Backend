@@ -3,13 +3,12 @@ de.cww.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_cww_wisegrid_net-catchall
-    option httpchk HEAD /wtg/status
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
     default-server agent-check agent-port 8098
-    server DE1WP-SBLZ-001 10.3.72.11:80
-    server DE1WP-SBLZ-002 10.3.72.12:80
-    server DE1WP-SBLZ-003 10.3.72.13:80
     server DE1WP-SBLZ-403 10.3.72.23:80
     server DE1WP-SBLZ-404 10.3.72.24:80
     server DE1WP-SBLZ-405 10.3.72.25:80
@@ -33,7 +32,8 @@ de.identity.wisetechglobal.com-login:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-login
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /login(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /login
@@ -45,7 +45,8 @@ de.identity.wisetechglobal.com-account:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-account
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /account(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /account
@@ -57,13 +58,30 @@ de.identity.wisetechglobal.com-s2s:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
     backend de_identity_wisetechglobal_com-s2s
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     http-request replace-path /s2s(/)?(.*) /\2
     http-request set-header X-Forwarded-Prefix /s2s
     cookie ISS insert indirect nocache dynamic
     server de1wp-sidi-501a 10.3.143.11:3005 check ssl
     server de1wp-sidi-501b 10.3.143.12:3005 check ssl
+
+identity-temp.wisetechglobal.com:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: TVSP
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: de1wp-siss-401
+      ip: 10.3.69.13
+      port: 80
+    - name: de1wp-siss-402
+      ip: 10.3.69.15
+      port: 80
 
 filedropeu.wisetechglobal.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
@@ -84,6 +102,7 @@ de1wcatoken.wisegrid.net:
     name: WCATFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: de1wp-swfe-401
@@ -105,6 +124,7 @@ de1wca.wisegrid.net:
     name: WCAPFE
   http_health_check:
     enabled: true
+    method: GET
     http_path: /wtg/ready
   servers:
     - name: de1wp-swfe-401
@@ -192,3 +212,44 @@ query.urs.wisegrid.net:
       ip: 10.3.151.12
       port: 80
       settings: backup
+
+de1prod2-prodexternal-catchall:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: K8SPROD
+  http_health_check:
+    enabled: false
+    http_path: /
+  default_server: check ssl inter 10s fall 3 rise 2
+  servers:
+    - name: w1.de1prod1
+      ip: 10.3.237.15
+      port: 30400
+    - name: w2.de1prod1
+      ip: 10.3.237.16
+      port: 30400
+    - name: w3.de1prod1
+      ip: 10.3.237.17
+      port: 30400
+    - name: w4.de1prod1
+      ip: 10.3.237.18
+      port: 30400
+    - name: w5.de1prod1
+      ip: 10.3.237.19
+      port: 30400
+
+cmb-de.wisegrid.net:
+  clustered_instances: [de1prodfrontend1prodcdnservices31]
+  cookie:
+    name: CMB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: DE1WP-SIIS-401A
+      ip: 10.3.69.27
+      port: 80
+    - name: DE1WP-SIIS-401B
+      ip: 10.3.69.28
+      port: 80

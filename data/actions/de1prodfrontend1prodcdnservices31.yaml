@@ -13,6 +13,13 @@ peppol_ap_allow_as4_path:
   actions:
     - http-request deny if !peppol_ap_as4_allow_path peppol-ap-prod_wisegrid_net
 
+wca_denied_actions:
+  description: |-
+    HTTP-request deny for WCA production services denied paths
+  order: 59
+  actions:
+    - http-request deny if !wtg_src wca_denied_paths wca_prod_url
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
@@ -69,3 +76,24 @@ https_redirect:
   order: 80
   actions:
     - redirect scheme https if star_urs_wisegrid_net !{ ssl_fc }
+
+proget_de_wisetechglobal_com_access_control:
+  description: |-
+    Deny rule for proget-de.wisetechglobal.com
+  order: 59
+  actions:
+    - http-request deny if !wtg_src !azure_ext_controlled_src proget-de_wisetechglobal_com
+
+de1prod2_prodexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend de1prod2-prodexternal-catchall if proget-de_wisetechglobal_com azure_ext_controlled_src wtg_src
+
+cmb_de_backend:
+  description: |-
+    Direct requests for the cmb-prod
+  order: 80
+  actions:
+    - use_backend cmb-de_wisegrid_net if cmb-de_wisegrid_net

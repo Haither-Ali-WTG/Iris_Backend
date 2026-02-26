@@ -11,6 +11,29 @@ devops-test.wtg.zone:
       port: 443
       settings: check check-ssl ssl sni str(devops-test.wtg.zone) check-sni devops-test.wtg.zone
 
+au-tst.apigw.wtg.ws:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: false
+    http_path: /
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2test1
+      ip: 10.2.215.12
+      port: 30100
+    - name: w2.au2test1
+      ip: 10.2.215.13
+      port: 30100
+    - name: w3.au2test1
+      ip: 10.2.215.14
+      port: 30100
+    - name: w4.au2test1
+      ip: 10.2.215.15
+      port: 30100
+    - name: w5.au2test1
+      ip: 10.2.215.16
+      port: 30100
+
 au2corprdg.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -627,6 +650,94 @@ borderwise-admin-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
+triage-agent.knowledge.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+triage-agent-staging.knowledge.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+triage-agent-admin.knowledge.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+triage-agent-admin-staging.knowledge.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
 wta.knowledge.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -850,6 +961,52 @@ llm-gateway.sand.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of llm manager
+# task-automation
+task-automation.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+task-automation-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+# end of task-automation
 cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -1027,7 +1184,7 @@ cms-smartfreight.wtg.zone:
       ip: 10.2.69.36
       port: 80
 cms-dev.cargowise.com:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
     http_path: /healthcheck
@@ -1038,3 +1195,102 @@ cms-dev.cargowise.com:
       ip: 10.2.69.40
       port: 80
       settings: check inter 10s downinter 1s fall 5 maxconn 8000
+www-e2open-dev.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+cms-e2open-dev.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+cms-e2open.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-404a
+      ip: 10.2.69.40
+      port: 80
+    - name: au2co-siis-404b
+      ip: 10.2.69.41
+      port: 80
+
+au2prodfrontend1testcdnservices.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2062
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2062
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2062
+
+boltr-dat-1.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9000
+
+boltr-dat-2.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9001
+
+boltr-dat-3.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    check_expect: '200'
+    method: HEAD
+    http_path: /wtg/ready
+  servers:
+    - name: au2wt-sbol-401
+      ip: 10.2.67.100
+      port: 9002
+
+cms-inobiz.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-siis-403a
+      ip: 10.2.69.36
+      port: 80

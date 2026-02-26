@@ -1,0 +1,14 @@
+---
+t89trnxndt.wisegrid.net:
+  clustered_instances: [de1prodfrontend1testcwservices27]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: "200|401|403|302|405"
+  servers:
+    - name: de1wt-sweb-401a
+      ip: 10.3.67.33
+      port: 80
+    - name: de1wt-sweb-403b
+      ip: 10.3.67.22
+      port: 80

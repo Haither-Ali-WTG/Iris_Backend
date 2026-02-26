@@ -48,3 +48,8 @@ wsaco_acoinformatica_it:
   description: "wsaco.acoinformatica.it"
   tests:
     - hdr(host) -i wsaco.acoinformatica.it
+
+rdg_acoinformatica_it:
+  description: "rdg.acoinformatica.it"
+  tests:
+    - hdr(host) -i rdg.acoinformatica.it

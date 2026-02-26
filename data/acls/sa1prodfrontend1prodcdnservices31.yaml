@@ -1,0 +1,24 @@
+---
+star_cww_wisegrid_net:
+  description: "*.cww.wisegrid.net blazor production services"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-prod\.wisetechglobal\.cn$
+
+star_wisetechglobal_com:
+  description: "*.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
+
+wca_denied_paths:
+  description: |-
+    Disallow wtg paths for WCA production services
+  tests:
+    - path_reg -i ^\/wtg(.*?)$
+
+wca_prod_url:
+  description: |-
+    Hostnames for WCA production services
+  tests:
+    - hdr(host),field(1,:) -i sa1wcatoken.wisegrid.net
+    - hdr(host),field(1,:) -i sa1wca.wisegrid.net

@@ -34,13 +34,36 @@ custom_url_actions:
   actions:
     ### Webtracker
     - use_backend cvhven_webtracker_wisegrid_net if { hdr(host),field(1,:) -i dashboard.caroz.com }
+    - use_backend g42prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i g42prd2.webtracker.wisegrid.net }
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.ecarrier.greencarrier.com }
     - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ecarrier.greencarrier.com }
+    - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gf6prd2.webtracker.wisegrid.net }
+    - use_backend gf6prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gf6prd3.webtracker.wisegrid.net }
     - use_backend gknrdd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i forwarding.gknfreightservices.com }
+    - use_backend gu1prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gu1prd2.webtracker.wisegrid.net }
     - use_backend h47prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.webtracker.hecksher.com }
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.johngood.co.uk }
     - use_backend je6lpr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
+    - use_backend seihamwebtracker_wisegrid_net if { hdr(host),field(1,:) -i seihamwarehouse.wisegrid.net }
     - use_backend sozprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
+    - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webtracker.wisegrid.net }
+    - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webtracker.wisegrid.net }
+    - use_backend zifprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zifprd2.webtracker.wisegrid.net }
+    - use_backend apnprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.allportnetherlands.nl }
+    - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
+
+    ### Webprint
+    - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webprint.wisegrid.net }
+    - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webprint.wisegrid.net }
+
     ### GLOW
     - use_backend www-dehprd_wisegrid_net if { hdr(host),field(1,:) -i customerportal.deugro.com }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
+    - use_backend www-em9prd_wisegrid_net if { hdr(host),field(1,:) -i board.embassycargo.eu }
+
+xndt_url_workaround:
+  description: |-
+    Deny any connections to XNDT webservices if not from WTG or T89 allowed IPs
+  order: 81
+  actions:
+    - http-request deny if { hdr(host),field(1,:) -i t89prdxndt.wisegrid.net } !t89_allowed_ips !wtg_src

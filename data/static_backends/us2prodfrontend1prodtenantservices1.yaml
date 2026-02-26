@@ -129,7 +129,7 @@ us6-aljexapi.tmssaas.com:
     backend us6-aljexapi_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr host aljexapi.tmssaas.com
+    http-check send meth HEAD uri /ratingenginecsv.aspx ver HTTP/1.1 hdr Host aljexapi.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -193,7 +193,7 @@ us6-customerbeta-ord.tmssaas.com:
     backend us6-customerbeta-ord_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host customerbeta-ord.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host customerbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -209,7 +209,7 @@ us6-cwrestapi.tmssaas.com:
     backend us6-cwrestapi_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host cwrestapi.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host cwrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -267,7 +267,7 @@ us6-dev2customer.tmssaas.com:
     backend us6-dev2customer_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host dev2customer.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host dev2customer.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -295,7 +295,7 @@ us6-dev2restapiv3.tmssaas.com:
     backend us6-dev2restapiv3_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host dev2restapiv3.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host dev2restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -323,7 +323,7 @@ us6-restapi.tmssaas.com:
     backend us6-restapi_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapi.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host restapi.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -339,7 +339,7 @@ us6-restapiv2.tmssaas.com:
     backend us6-restapiv2_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv2.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host restapiv2.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -355,7 +355,7 @@ us6-restapiv3.tmssaas.com:
     backend us6-restapiv3_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv3.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host restapiv3.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -371,7 +371,7 @@ us6-restapiv4.tmssaas.com:
     backend us6-restapiv4_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr host restapiv4.tmssaas.com
+    http-check send meth HEAD uri /swagger ver HTTP/1.1 hdr Host restapiv4.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -397,7 +397,7 @@ us6-saasbeta-ord.tmssaas.com:
     backend us6-saasbeta-ord_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host saasbeta-ord.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host saasbeta-ord.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -437,7 +437,7 @@ us6-wt.tmssaas.com:
     backend us6-wt_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wt.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wt.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -453,7 +453,7 @@ us6-wtbeta.tmssaas.com:
     backend us6-wtbeta_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbeta.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wtbeta.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -469,7 +469,7 @@ us6-wtbetacustomer.tmssaas.com:
     backend us6-wtbetacustomer_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtbetacustomer.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wtbetacustomer.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -485,7 +485,7 @@ us6-wtcustomer.tmssaas.com:
     backend us6-wtcustomer_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtcustomer.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wtcustomer.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -501,7 +501,7 @@ us6-wtrestapi.tmssaas.com:
     backend us6-wtrestapi_tmssaas_com
     option httpchk
     http-check connect
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host wtrestapi.tmssaas.com
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wtrestapi.tmssaas.com
     http-check expect rstatus 200|301|302
     mode http
     option forwardfor
@@ -661,7 +661,8 @@ iportal-threecycles.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-threecycles_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ 3cycles.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host 3cycles.bysoft.com.br
     http-check expect status 302
     server us2br1webl016-3cycles 10.4.160.15:443 ssl check verify none
 
@@ -679,7 +680,8 @@ iportal-abccomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-abccomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ abccomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host abccomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl033-abccomex 10.4.160.45:443 ssl check verify none
 
@@ -697,7 +699,8 @@ iportal-abrao.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-abrao_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ abrao.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host abrao.bysoft.com.br
     http-check expect status 302
     server us2br1webl079-abrao 10.4.160.157:443 ssl check verify none
 
@@ -715,7 +718,8 @@ iportal-acetradeways.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-acetradeways_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ acetradeways.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host acetradeways.bysoft.com.br
     http-check expect status 302
     server us2br1webl040-acetradeways 10.4.160.61:443 ssl check verify none
 
@@ -733,7 +737,8 @@ iportal-acomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-acomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ acomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host acomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl082-acomex 10.4.160.161:443 ssl check verify none
 
@@ -761,7 +766,8 @@ iportal-aduana.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-aduana_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduana.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host aduana.bysoft.com.br
     http-check expect status 302
     server us2br1webl089-aduana 10.4.160.174:443 ssl check verify none
 
@@ -779,7 +785,8 @@ br-iportal-aduanaglobal.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-aduanaglobal_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduanaglobal.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host aduanaglobal.bysoft.com.br
     http-check expect status 302
     server us2br1webl076-aduanaglobal 10.4.160.152:443 ssl check verify none
 
@@ -797,7 +804,8 @@ iportal-aduanalog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-aduanalog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aduanalog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host aduanalog.bysoft.com.br
     http-check expect status 302
     server us2br1webl038-aduanalog 10.4.160.59:443 ssl check verify none
 
@@ -825,7 +833,8 @@ iportal-aeroimport.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-aeroimport_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ aeroimport.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host aeroimport.bysoft.com.br
     http-check expect status 302
     server us2br1webl018-aeroimport 10.4.160.17:443 ssl check verify none
 
@@ -853,7 +862,8 @@ iportal-affinity.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-affinity_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ affinity.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host affinity.bysoft.com.br
     http-check expect status 302
     server us2br1webl155-affinity 10.4.161.87:443 ssl check verify none
 
@@ -871,7 +881,8 @@ iportal-agenciaraposo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-agenciaraposo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ agenciaraposo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host agenciaraposo.bysoft.com.br
     http-check expect status 302
     server us2br1webl061-agenciaraposo 10.4.160.113:443 ssl check verify none
 
@@ -899,7 +910,8 @@ iportal-agile.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-agile_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ agile.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host agile.bysoft.com.br
     http-check expect status 302
     server us2br1webl100-agile 10.4.160.186:443 ssl check verify none
 
@@ -917,7 +929,8 @@ iportal-agility.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-agility_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ agility.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host agility.bysoft.com.br
     http-check expect status 302
     server us2br1webl071-agility 10.4.160.141:443 ssl check verify none
 
@@ -945,7 +958,8 @@ iportal-agl.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-agl_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ agl.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host agl.bysoft.com.br
     http-check expect status 302
     server us2br1webl062-agl 10.4.160.115:443 ssl check verify none
 
@@ -963,7 +977,8 @@ iportal-ahscomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ahscomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ahscomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ahscomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl066-ahscomex 10.4.160.127:443 ssl check verify none
 
@@ -981,7 +996,8 @@ iportal-akhava.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-akhava_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ akhava.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host akhava.bysoft.com.br
     http-check expect status 302
     server us2br1webl143-akhava 10.4.161.61:443 ssl check verify none
 
@@ -999,7 +1015,8 @@ iportal-alca.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-alca_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ alca.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host alca.bysoft.com.br
     http-check expect status 302
     server us2br1webl084-alca 10.4.160.166:443 ssl check verify none
 
@@ -1017,7 +1034,8 @@ iportal-allog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-allog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ allog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host allog.bysoft.com.br
     http-check expect status 302
     server us2br1webl098-allog 10.4.160.184:443 ssl check verify none
 
@@ -1045,7 +1063,8 @@ iportal-amr.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-amr_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ amr.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host amr.bysoft.com.br
     http-check expect status 302
     server us2br1webl015-amr 10.4.160.14:443 ssl check verify none
 
@@ -1063,7 +1082,8 @@ iportal-asaassessoria.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-asaassessoria_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ asaassessoria.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host asaassessoria.bysoft.com.br
     http-check expect status 302
     server us2br1webl080-asaassessoria 10.4.160.159:443 ssl check verify none
 
@@ -1081,7 +1101,8 @@ iportal-atlantis.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-atlantis_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ atlantis.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host atlantis.bysoft.com.br
     http-check expect status 302
     server us2br1webl152-atlantis 10.4.161.80:443 ssl check verify none
 
@@ -1099,7 +1120,8 @@ iportal-atlas.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-atlas_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ atlas.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host atlas.bysoft.com.br
     http-check expect status 302
     server us2br1webl124-atlas 10.4.161.17:443 ssl check verify none
 
@@ -1127,7 +1149,8 @@ iportal-atualiassessoria.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-atualiassessoria_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ atualiassessoria.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host atualiassessoria.bysoft.com.br
     http-check expect status 302
     server us2br1webl148-atualiassessoria 10.4.161.71:443 ssl check verify none
 
@@ -1145,7 +1168,8 @@ iportal-auston.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-auston_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ auston.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host auston.bysoft.com.br
     http-check expect status 302
     server us2br1webl044-auston 10.4.160.75:443 ssl check verify none
 
@@ -1163,7 +1187,8 @@ iportal-azsolutio.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-azsolutio_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ azsolutio.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host azsolutio.bysoft.com.br
     http-check expect status 302
     server us2br1webl142-azsolutio 10.4.161.59:443 ssl check verify none
 
@@ -1181,7 +1206,8 @@ iportal-baraodespachos.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-baraodespachos_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ baraodespachos.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host baraodespachos.bysoft.com.br
     http-check expect status 302
     server us2br1webl087-baraodespachos 10.4.160.171:443 ssl check verify none
 
@@ -1199,7 +1225,8 @@ iportal-bdp.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-bdp_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ bdp.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host bdp.bysoft.com.br
     http-check expect status 302
     server us2br1webl116-bdp 10.4.161.6:443 ssl check verify none
 
@@ -1227,7 +1254,8 @@ iportal-bechtrans.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-bechtrans_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ bechtrans.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host bechtrans.bysoft.com.br
     http-check expect status 302
     server us2br1webl144-bechtrans 10.4.161.63:443 ssl check verify none
 
@@ -1255,7 +1283,8 @@ iportal-brasporto.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-brasporto_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ brasporto.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host brasporto.bysoft.com.br
     http-check expect status 302
     server us2br1webl105-brasporto 10.4.160.191:443 ssl check verify none
 
@@ -1273,7 +1302,8 @@ iportal-budson.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-budson_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ budson.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host budson.bysoft.com.br
     http-check expect status 302
     server us2br1webl174-budson 10.4.161.139:443 ssl check verify none
 
@@ -1291,7 +1321,8 @@ iportal-carreirolog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-carreirolog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ carreirolog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host carreirolog.bysoft.com.br
     http-check expect status 302
     server us2br1webl034-carreirolog 10.4.160.49:443 ssl check verify none
 
@@ -1309,7 +1340,8 @@ iportal-cne.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-cne_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ cne.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host cne.bysoft.com.br
     http-check expect status 302
     server us2br1webl069-cne 10.4.160.131:443 ssl check verify none
 
@@ -1327,7 +1359,8 @@ iportal-comexbh.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-comexbh_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ comexbh.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host comexbh.bysoft.com.br
     http-check expect status 302
     server us2br1webl060-comexbh 10.4.160.112:443 ssl check verify none
 
@@ -1345,7 +1378,8 @@ iportal-confidence.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-confidence_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ confidence.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host confidence.bysoft.com.br
     http-check expect status 302
     server us2br1webl119-confidence 10.4.161.9:443 ssl check verify none
 
@@ -1363,7 +1397,8 @@ iportal-correbrokers.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-correbrokers_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ correbrokers.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host correbrokers.bysoft.com.br
     http-check expect status 302
     server us2br1webl136-correbrokers 10.4.161.49:443 ssl check verify none
 
@@ -1391,7 +1426,8 @@ iportal-cti.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-cti_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ cti.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host cti.bysoft.com.br
     http-check expect status 302
     server us2br1webl104-cti 10.4.160.190:443 ssl check verify none
 
@@ -1409,7 +1445,8 @@ iportal-dapepe.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dapepe_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dapepe.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dapepe.bysoft.com.br
     http-check expect status 302
     server us2br1webl032-dapepe 10.4.160.44:443 ssl check verify none
 
@@ -1427,7 +1464,8 @@ iportal-dasco.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dasco_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dasco.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dasco.bysoft.com.br
     http-check expect status 302
     server us2br1webl131-dasco 10.4.161.31:443 ssl check verify none
 
@@ -1445,7 +1483,8 @@ iportal-despachosaduanneirosja.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-despachosaduanneirosja_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ despachosaduanneirosja.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host despachosaduanneirosja.bysoft.com.br
     http-check expect status 302
     server us2br1webl090-despachosaduanneirosja 10.4.160.175:443 ssl check verify none
 
@@ -1473,7 +1512,8 @@ iportal-dhl.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dhl_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dhl.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dhl.bysoft.com.br
     http-check expect status 302
     server us2br1webl014-dhl 10.4.160.13:443 ssl check verify none
 
@@ -1501,7 +1541,8 @@ iportal-dhlhomologacao.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dhlhomologacao_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dhlhomologacao.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dhlhomologacao.bysoft.com.br
     http-check expect status 302
     server us2br1webl013-dhl 10.4.160.11:443 ssl check verify none
 
@@ -1519,7 +1560,8 @@ iportal-diniz.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-diniz_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ diniz.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host diniz.bysoft.com.br
     http-check expect status 302
     server us2br1webl108-diniz 10.4.160.194:443 ssl check verify none
 
@@ -1537,7 +1579,8 @@ iportal-direct.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-direct_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ direct.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host direct.bysoft.com.br
     http-check expect status 302
     server us2br1webl135-direct 10.4.161.41:443 ssl check verify none
 
@@ -1565,7 +1608,8 @@ iportal-directlogistica.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-directlogistica_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ directlogistica.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host directlogistica.bysoft.com.br
     http-check expect status 302
     server us2br1webl073-directlogistica 10.4.160.148:443 ssl check verify none
 
@@ -1583,7 +1627,8 @@ iportal-dlt.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dlt_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dlt.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dlt.bysoft.com.br
     http-check expect status 302
     server us2br1webl048-dlt 10.4.160.82:443 ssl check verify none
 
@@ -1601,7 +1646,8 @@ iportal-dogana.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dogana_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dogana.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dogana.bysoft.com.br
     http-check expect status 302
     server us2br1webl151-dogana 10.4.161.77:443 ssl check verify none
 
@@ -1609,7 +1655,8 @@ iportal-dsv.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-dsv_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ dsv.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host dsv.bysoft.com.br
     http-check expect status 302
     server us2br1webl071-agility 10.4.160.141:443 ssl check verify none
 
@@ -1627,7 +1674,8 @@ iportal-eficienciacomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-eficienciacomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ eficienciacomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host eficienciacomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl153-eficienciacomex 10.4.161.81:443 ssl check verify none
 
@@ -1645,7 +1693,8 @@ iportal-euronorte.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-euronorte_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ euronorte.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host euronorte.bysoft.com.br
     http-check expect status 302
     server us2br1webl026-euronorte 10.4.160.33:443 ssl check verify none
 
@@ -1663,7 +1712,8 @@ iportal-excommerce.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-excommerce_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ excommerce.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host excommerce.bysoft.com.br
     http-check expect status 302
     server us2br1webl024-excommerce 10.4.160.27:443 ssl check verify none
 
@@ -1681,7 +1731,8 @@ iportal-faxe.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-faxe_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ faxe.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host faxe.bysoft.com.br
     http-check expect status 302
     server us2br1webl023-faxe 10.4.160.26:443 ssl check verify none
 
@@ -1699,7 +1750,8 @@ iportal-fdafermac.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-fdafermac_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ fdafermac.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host fdafermac.bysoft.com.br
     http-check expect status 302
     server us2br1webl097-fdafermac 10.4.160.183:443 ssl check verify none
 
@@ -1717,7 +1769,8 @@ iportal-ferfreight.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ferfreight_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ferfreight.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ferfreight.bysoft.com.br
     http-check expect status 302
     server us2br1webl035-ferfreight 10.4.160.51:443 ssl check verify none
 
@@ -1735,7 +1788,8 @@ iportal-focus.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-focus_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ focus.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host focus.bysoft.com.br
     http-check expect status 302
     server us2br1webl109-focus 10.4.160.195:443 ssl check verify none
 
@@ -1753,7 +1807,8 @@ iportal-fortal.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-fortal_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ fortal.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host fortal.bysoft.com.br
     http-check expect status 302
     server us2br1webl146-fortal 10.4.161.65:443 ssl check verify none
 
@@ -1781,7 +1836,8 @@ iportal-gaclogistica.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-gaclogistica_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ gaclogistica.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host gaclogistica.bysoft.com.br
     http-check expect status 302
     server us2br1webl036-gaclogistica 10.4.160.52:443 ssl check verify none
 
@@ -1799,7 +1855,8 @@ iportal-gamalog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-gamalog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ gamalog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host gamalog.bysoft.com.br
     http-check expect status 302
     server us2br1webl037-gamalog 10.4.160.55:443 ssl check verify none
 
@@ -1817,7 +1874,8 @@ iportal-gefco.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-gefco_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ gefco.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host gefco.bysoft.com.br
     http-check expect status 302
     server us2br1webl154-gefco 10.4.161.86:443 ssl check verify none
 
@@ -1845,7 +1903,8 @@ iportal-geslogistica.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-geslogistica_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ geslogistica.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host geslogistica.bysoft.com.br
     http-check expect status 302
     server us2br1webl052-geslogistica 10.4.160.90:443 ssl check verify none
 
@@ -1863,7 +1922,8 @@ iportal-global.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-global_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ global.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host global.bysoft.com.br
     http-check expect status 302
     server us2br1webl099-global 10.4.160.185:443 ssl check verify none
 
@@ -1881,7 +1941,8 @@ iportal-globalfreight.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-globalfreight_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ globalfreight.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host globalfreight.bysoft.com.br
     http-check expect status 302
     server us2br1webl092-globalfreight 10.4.160.177:443 ssl check verify none
 
@@ -1899,7 +1960,8 @@ iportal-go2uti.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-go2uti_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ go2uti.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host go2uti.bysoft.com.br
     http-check expect status 302
     server us2br1webl132-go2uti 10.4.161.33:443 ssl check verify none
 
@@ -1917,7 +1979,8 @@ iportal-goldmex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-goldmex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ goldmex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host goldmex.bysoft.com.br
     http-check expect status 302
     server us2br1webl063-goldmex 10.4.160.117:443 ssl check verify none
 
@@ -1935,7 +1998,8 @@ iportal-goncalvesfilhos.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-goncalvesfilhos_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ goncalvesfilhos.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host goncalvesfilhos.bysoft.com.br
     http-check expect status 302
     server us2br1webl156-goncalvesfilhos 10.4.161.94:443 ssl check verify none
 
@@ -1953,7 +2017,8 @@ iportal-gpcargo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-gpcargo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ gpcargo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host gpcargo.bysoft.com.br
     http-check expect status 302
     server us2br1webl157-gpcargo 10.4.161.95:443 ssl check verify none
 
@@ -1971,7 +2036,8 @@ iportal-harpy.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-harpy_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ harpy.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host harpy.bysoft.com.br
     http-check expect status 302
     server us2br1webl118-harpy 10.4.161.8:443 ssl check verify none
 
@@ -1999,7 +2065,8 @@ iportal-homologacao.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-homologacao_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ homologacao.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host homologacao.bysoft.com.br
     http-check expect status 302
     server us2br1webl125-homologacao 10.4.161.19:443 ssl check verify none
 
@@ -2017,7 +2084,8 @@ iportal-iglobal.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-iglobal_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ iglobal.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host iglobal.bysoft.com.br
     http-check expect status 302
     server us2br1webl162-iglobal 10.4.161.103:443 ssl check verify none
 
@@ -2035,7 +2103,8 @@ iportal-imporcate.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-imporcate_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ imporcate.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host imporcate.bysoft.com.br
     http-check expect status 302
     server us2br1webl028-imporcate 10.4.160.39:443 ssl check verify none
 
@@ -2053,7 +2122,8 @@ iportal-indaia.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-indaia_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ indaia.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host indaia.bysoft.com.br
     http-check expect status 302
     server us2br1webl110-indaia 10.4.160.196:443 ssl check verify none
 
@@ -2071,7 +2141,8 @@ iportal-intercargofranca.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-intercargofranca_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ intercargofranca.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host intercargofranca.bysoft.com.br
     http-check expect status 302
     server us2br1webl159-intercargofranca 10.4.161.100:443 ssl check verify none
 
@@ -2089,7 +2160,8 @@ iportal-interfreight.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-interfreight_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ interfreight.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host interfreight.bysoft.com.br
     http-check expect status 302
     server us2br1webl114-interfreight 10.4.161.4:443 ssl check verify none
 
@@ -2107,7 +2179,8 @@ iportal-internacional.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-internacional_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ internacional.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host internacional.bysoft.com.br
     http-check expect status 302
     server us2br1webl163-internacional 10.4.161.104:443 ssl check verify none
 
@@ -2135,7 +2208,8 @@ iportal-intranding.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-intranding_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ intranding.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host intranding.bysoft.com.br
     http-check expect status 302
     server us2br1webl039-intranding 10.4.160.60:443 ssl check verify none
 
@@ -2153,7 +2227,8 @@ iportal-isavix.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-isavix_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ isavix.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host isavix.bysoft.com.br
     http-check expect status 302
     server us2br1webl120-isavix 10.4.161.10:443 ssl check verify none
 
@@ -2171,7 +2246,8 @@ iportal-itatrans.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-itatrans_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ itatrans.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host itatrans.bysoft.com.br
     http-check expect status 302
     server us2br1webl106-itatrans 10.4.160.192:443 ssl check verify none
 
@@ -2189,7 +2265,8 @@ iportal-jejcomercio.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-jejcomercio_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ jejcomercio.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host jejcomercio.bysoft.com.br
     http-check expect status 302
     server us2br1webl150-jejcomercio 10.4.161.75:443 ssl check verify none
 
@@ -2207,7 +2284,8 @@ iportal-jmaduaneira.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-jmaduaneira_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ jmaduaneira.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host jmaduaneira.bysoft.com.br
     http-check expect status 302
     server us2br1webl134-jmaduaneira 10.4.161.38:443 ssl check verify none
 
@@ -2225,7 +2303,8 @@ iportal-konig.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-konig_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ konig.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host konig.bysoft.com.br
     http-check expect status 302
     server us2br1webl045-konig 10.4.160.77:443 ssl check verify none
 
@@ -2243,7 +2322,8 @@ iportal-kotah.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-kotah_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ kotah.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host kotah.bysoft.com.br
     http-check expect status 302
     server us2br1webl068-kotah 10.4.160.130:443 ssl check verify none
 
@@ -2271,7 +2351,8 @@ iportal-leschaco.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-leschaco_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ leschaco.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host leschaco.bysoft.com.br
     http-check expect status 302
     server us2br1webl074-leschaco 10.4.160.150:443 ssl check verify none
 
@@ -2289,7 +2370,8 @@ iportal-logistran.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-logistran_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ logistran.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host logistran.bysoft.com.br
     http-check expect status 302
     server us2br1webl054-logistran 10.4.160.99:443 ssl check verify none
 
@@ -2307,7 +2389,8 @@ iportal-lt.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-lt_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ lt.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host lt.bysoft.com.br
     http-check expect status 302
     server us2br1webl103-lt 10.4.160.189:443 ssl check verify none
 
@@ -2325,7 +2408,8 @@ iportal-luxor.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-luxor_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ luxor.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host luxor.bysoft.com.br
     http-check expect status 302
     server us2br1webl058-luxor 10.4.160.107:443 ssl check verify none
 
@@ -2343,7 +2427,8 @@ iportal-maniga.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-maniga_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ maniga.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host maniga.bysoft.com.br
     http-check expect status 302
     server us2br1webl050-maniga 10.4.160.87:443 ssl check verify none
 
@@ -2361,7 +2446,8 @@ iportal-martinsdespachos.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-martinsdespachos_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ martinsdespachos.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host martinsdespachos.bysoft.com.br
     http-check expect status 302
     server us2br1webl019-martinsdespachos 10.4.160.20:443 ssl check verify none
 
@@ -2379,7 +2465,8 @@ iportal-martinsdespachoshomolog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-martinsdespachoshomolog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ martinsdespachoshomolog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host martinsdespachoshomolog.bysoft.com.br
     http-check expect status 302
     server us2br1webl129-martinsdespachoshomolog 10.4.161.29:443 ssl check verify none
 
@@ -2397,7 +2484,8 @@ iportal-masterfreight.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-masterfreight_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ masterfreight.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host masterfreight.bysoft.com.br
     http-check expect status 302
     server us2br1webl139-masterfreight 10.4.161.52:443 ssl check verify none
 
@@ -2415,7 +2503,8 @@ iportal-masterfreighthom.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-masterfreighthom_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ masterfreighthom.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host masterfreighthom.bysoft.com.br
     http-check expect status 302
     server us2br1webl055-masterfreighthom 10.4.160.101:443 ssl check verify none
 
@@ -2433,7 +2522,8 @@ iportal-mastersul.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mastersul_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mastersul.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mastersul.bysoft.com.br
     http-check expect status 302
     server us2br1webl077-mastersul 10.4.160.153:443 ssl check verify none
 
@@ -2461,7 +2551,8 @@ iportal-mbdespachos.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mbdespachos_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mbdespachos.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mbdespachos.bysoft.com.br
     http-check expect status 302
     server us2br1webl138-mbdespachos 10.4.161.51:443 ssl check verify none
 
@@ -2479,7 +2570,8 @@ iportal-mebroker.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mebroker_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mebroker.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mebroker.bysoft.com.br
     http-check expect status 302
     server us2br1webl160-mebroker 10.4.161.101:443 ssl check verify none
 
@@ -2497,7 +2589,8 @@ iportal-mercante.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mercante_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mercante.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mercante.bysoft.com.br
     http-check expect status 302
     server us2br1webl083-mercante 10.4.160.163:443 ssl check verify none
 
@@ -2515,7 +2608,8 @@ iportal-mhinternacional.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mhinternacional_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mhinternacional.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mhinternacional.bysoft.com.br
     http-check expect status 302
     server us2br1webl147-mhinternacional 10.4.161.69:443 ssl check verify none
 
@@ -2533,7 +2627,8 @@ iportal-mtn.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mtn_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mtn.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mtn.bysoft.com.br
     http-check expect status 302
     server us2br1webl017-mtn 10.4.160.16:443 ssl check verify none
 
@@ -2551,7 +2646,8 @@ iportal-multicargo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-multicargo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ multicargo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host multicargo.bysoft.com.br
     http-check expect status 302
     server us2br1webl088-multicargo 10.4.160.173:443 ssl check verify none
 
@@ -2569,7 +2665,8 @@ iportal-mundial.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mundial_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mundial.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mundial.bysoft.com.br
     http-check expect status 302
     server us2br1webl030-mundial 10.4.160.42:443 ssl check verify none
 
@@ -2587,7 +2684,8 @@ iportal-mundialassesplena.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mundialassesplena_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mundialassesplena.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mundialassesplena.bysoft.com.br
     http-check expect status 302
     server us2br1webl046-mundialassesplena 10.4.160.79:443 ssl check verify none
 
@@ -2605,7 +2703,8 @@ iportal-mvcaye.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-mvcaye_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ mvcaye.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host mvcaye.bysoft.com.br
     http-check expect status 302
     server us2br1webl025-mvcaye 10.4.160.30:443 ssl check verify none
 
@@ -2623,7 +2722,8 @@ iportal-ncxaduana.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ncxaduana_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ncxaduana.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ncxaduana.bysoft.com.br
     http-check expect status 302
     server us2br1webl165-ncxaduana 10.4.161.107:443 ssl check verify none
 
@@ -2641,7 +2741,8 @@ iportal-newslogistics.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-newslogistics_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ newslogistics.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host newslogistics.bysoft.com.br
     http-check expect status 302
     server us2br1webl164-newslogistics 10.4.161.105:443 ssl check verify none
 
@@ -2659,7 +2760,8 @@ iportal-nowlogistics.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-nowlogistics_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ nowlogistics.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host nowlogistics.bysoft.com.br
     http-check expect status 302
     server us2br1webl041-nowlogistics 10.4.160.53:443 ssl check verify none
 
@@ -2687,7 +2789,8 @@ iportal-nuno.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-nuno_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ nuno.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host nuno.bysoft.com.br
     http-check expect status 302
     server us2br1webl115-nuno 10.4.161.5:443 ssl check verify none
 
@@ -2705,7 +2808,8 @@ iportal-onix.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-onix_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ onix.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host onix.bysoft.com.br
     http-check expect status 302
     server us2br1webl141-onix 10.4.161.58:443 ssl check verify none
 
@@ -2723,7 +2827,8 @@ iportal-orttsa.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-orttsa_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ orttsa.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host orttsa.bysoft.com.br
     http-check expect status 302
     server us2br1webl051-orttsa 10.4.160.88:443 ssl check verify none
 
@@ -2741,7 +2846,8 @@ iportal-paivacomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-paivacomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ paivacomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host paivacomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl059-paviacomex 10.4.160.108:443 ssl check verify none
 
@@ -2759,7 +2865,8 @@ iportal-paraduana.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-paraduana_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ paraduana.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host paraduana.bysoft.com.br
     http-check expect status 302
     server us2br1webl029-paraduana 10.4.160.40:443 ssl check verify none
 
@@ -2787,7 +2894,8 @@ iportal-parrocha.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-parrocha_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ parrocha.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host parrocha.bysoft.com.br
     http-check expect status 302
     server us2br1webl057-parrocha 10.4.160.105:443 ssl check verify none
 
@@ -2815,7 +2923,8 @@ iportal-partnerag.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-partnerag_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ partnerag.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host partnerag.bysoft.com.br
     http-check expect status 302
     server us2br1webl167-partnerag 10.4.161.110:443 ssl check verify none
 
@@ -2833,7 +2942,8 @@ iportal-paulorocha.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-paulorocha_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ paulorocha.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host paulorocha.bysoft.com.br
     http-check expect status 302
     server us2br1webl049-paulorocha 10.4.160.83:443 ssl check verify none
 
@@ -2851,7 +2961,8 @@ iportal-pdfs.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-pdfs_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ pdfs.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host pdfs.bysoft.com.br
     http-check expect status 302
     server us2br1webl067-pdfs 10.4.160.129:443 ssl check verify none
 
@@ -2869,7 +2980,8 @@ iportal-pharmacomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-pharmacomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ pharmacomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host pharmacomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl093-pharmacomex 10.4.160.179:443 ssl check verify none
 
@@ -2887,7 +2999,8 @@ iportal-pmdespachos.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-pmdespachos_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ pmdespachos.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host pmdespachos.bysoft.com.br
     http-check expect status 302
     server us2br1webl122-pmdespachos 10.4.161.14:443 ssl check verify none
 
@@ -2905,7 +3018,8 @@ iportal-portimex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-portimex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ portimex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host portimex.bysoft.com.br
     http-check expect status 302
     server us2br1webl170-portimex 10.4.161.97:443 ssl check verify none
 
@@ -2923,7 +3037,8 @@ iportal-raxbrasil.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-raxbrasil_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ raxbrasil.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host raxbrasil.bysoft.com.br
     http-check expect status 302
     server us2br1webl072-raxbrasil 10.4.160.147:443 ssl check verify none
 
@@ -2941,7 +3056,8 @@ iportal-rhenus.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-rhenus_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ rhenus.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host rhenus.bysoft.com.br
     http-check expect status 302
     server us2br1webl112-rhenus 10.4.160.198:443 ssl check verify none
 
@@ -2959,7 +3075,8 @@ iportal-ricardo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ricardo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ricardo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ricardo.bysoft.com.br
     http-check expect status 302
     server us2br1webl042-ricardo 10.4.160.65:443 ssl check verify none
 
@@ -2987,7 +3104,8 @@ iportal-roquepacheco.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-roquepacheco_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ roquepacheco.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host roquepacheco.bysoft.com.br
     http-check expect status 302
     server us2br1webl166-roquepacheco 10.4.161.108:443 ssl check verify none
 
@@ -3005,7 +3123,8 @@ iportal-ruckhaber.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ruckhaber_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ruckhaber.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ruckhaber.bysoft.com.br
     http-check expect status 302
     server us2br1webl130-ruckhaber 10.4.161.30:443 ssl check verify none
 
@@ -3023,7 +3142,8 @@ iportal-samsung.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-samsung_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ samsung.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host samsung.bysoft.com.br
     http-check expect status 302
     server us2br1webl075-samsung 10.4.160.151:443 ssl check verify none
 
@@ -3041,7 +3161,8 @@ iportal-sanmar.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-sanmar_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ sanmar.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host sanmar.bysoft.com.br
     http-check expect status 302
     server us2br1webl027-sanmar 10.4.160.38:443 ssl check verify none
 
@@ -3059,7 +3180,8 @@ iportal-santosbay.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-santosbay_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ santosbay.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host santosbay.bysoft.com.br
     http-check expect status 302
     server us2br1webl102-santosbay 10.4.160.188:443 ssl check verify none
 
@@ -3087,7 +3209,8 @@ iportal-saoborja.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-saoborja_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ saoborja.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host saoborja.bysoft.com.br
     http-check expect status 302
     server us2br1webl161-saoborja 10.4.161.102:443 ssl check verify none
 
@@ -3105,7 +3228,8 @@ iportal-satu.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-satu_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ satu.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host satu.bysoft.com.br
     http-check expect status 302
     server us2br1webl022-satu 10.4.160.23:443 ssl check verify none
 
@@ -3133,7 +3257,8 @@ iportal-sei.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-sei_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ sei.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host sei.bysoft.com.br
     http-check expect status 302
     server us2br1webl053-sei 10.4.160.94:443 ssl check verify none
 
@@ -3151,7 +3276,8 @@ iportal-self.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-self_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ self.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host self.bysoft.com.br
     http-check expect status 302
     server us2br1webl056-self 10.4.160.102:443 ssl check verify none
 
@@ -3169,7 +3295,8 @@ iportal-sideralcomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-sideralcomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ sideralcomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host sideralcomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl065-sideralcomex 10.4.160.123:443 ssl check verify none
 
@@ -3187,7 +3314,8 @@ iportal-silbran.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-silbran_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ silbran.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host silbran.bysoft.com.br
     http-check expect status 302
     server us2br1webl078-silbran 10.4.160.154:443 ssl check verify none
 
@@ -3205,7 +3333,8 @@ iportal-simetrans.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-simetrans_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ simetrans.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host simetrans.bysoft.com.br
     http-check expect status 302
     server us2br1webl128-simetrans 10.4.161.25:443 ssl check verify none
 
@@ -3223,7 +3352,8 @@ iportal-spacecargo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-spacecargo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ spacecargo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host spacecargo.bysoft.com.br
     http-check expect status 302
     server us2br1webl031-spacecargo 10.4.160.43:443 ssl check verify none
 
@@ -3241,7 +3371,8 @@ iportal-swiftlog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-swiftlog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ swiftlog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host swiftlog.bysoft.com.br
     http-check expect status 302
     server us2br1webl095-swiftlog 10.4.160.181:443 ssl check verify none
 
@@ -3259,7 +3390,8 @@ iportal-tasklogistica.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-tasklogistica_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ tasklogistica.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host tasklogistica.bysoft.com.br
     http-check expect status 302
     server us2br1webl047-tasklogistica 10.4.160.80:443 ssl check verify none
 
@@ -3277,7 +3409,8 @@ iportal-tradehunter.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-tradehunter_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ tradehunter.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host tradehunter.bysoft.com.br
     http-check expect status 302
     server us2br1webl133-tradehunter 10.4.161.36:443 ssl check verify none
 
@@ -3305,7 +3438,8 @@ iportal-trediex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-trediex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ trediex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host trediex.bysoft.com.br
     http-check expect status 302
     server us2br1webl085-trediex 10.4.160.167:443 ssl check verify none
 
@@ -3323,7 +3457,8 @@ iportal-trustcargo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-trustcargo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ trustcargo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host trustcargo.bysoft.com.br
     http-check expect status 302
     server us2br1webl137-trustcargo 10.4.161.50:443 ssl check verify none
 
@@ -3341,7 +3476,8 @@ iportal-tws.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-tws_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ tws.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host tws.bysoft.com.br
     http-check expect status 302
     server us2br1webl111-tws 10.4.160.197:443 ssl check verify none
 
@@ -3369,7 +3505,8 @@ iportal-ups.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-ups_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ ups.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host ups.bysoft.com.br
     http-check expect status 302
     server us2br1webl113-ups 10.4.160.200:443 ssl check verify none
 
@@ -3387,7 +3524,8 @@ iportal-viatriangulo.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-viatriangulo_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ viatriangulo.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host viatriangulo.bysoft.com.br
     http-check expect status 302
     server us2br1webl086-viatriangulo 10.4.160.170:443 ssl check verify none
 
@@ -3405,7 +3543,8 @@ iportal-visaointegrada.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-visaointegrada_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ visaointegrada.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host visaointegrada.bysoft.com.br
     http-check expect status 302
     server us2br1webl043-visaointegrada 10.4.160.66:443 ssl check verify none
 
@@ -3423,7 +3562,8 @@ iportal-vpmdc.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-vpmdc_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ vpmdc.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host vpmdc.bysoft.com.br
     http-check expect status 302
     server us2br1webl168-vpmdc 10.4.161.111:443 ssl check verify none
 
@@ -3441,7 +3581,8 @@ iportal-wecomex.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-wecomex_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ wecomex.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host wecomex.bysoft.com.br
     http-check expect status 302
     server us2br1webl101-wecomex 10.4.160.187:443 ssl check verify none
 
@@ -3459,7 +3600,8 @@ iportal-wildflyteste.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-wildflyteste_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ wildflyteste.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host wildflyteste.bysoft.com.br
     http-check expect status 302
     server us2br1webl107-wildflyteste 10.4.160.193:443 ssl check verify none
 
@@ -3477,7 +3619,8 @@ iportal-yesfoco.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-yesfoco_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ yesfoco.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host yesfoco.bysoft.com.br
     http-check expect status 302
     server us2br1webl021-yesfoco 10.4.160.22:443 ssl check verify none
 
@@ -3495,7 +3638,8 @@ iportal-yusen.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-yusen_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ yusen.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host yusen.bysoft.com.br
     http-check expect status 302
     server us2br1webl123-yusen 10.4.161.16:443 ssl check verify none
 
@@ -3513,7 +3657,8 @@ iportal-yusenhomologacao.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-yusenhomologacao_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ yusenhomologacao.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host yusenhomologacao.bysoft.com.br
     http-check expect status 302
     server us2br1webl121-yusenhomologacao 10.4.161.11:443 ssl check verify none
 
@@ -3531,7 +3676,8 @@ iportal-zhycron.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-zhycron_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ zhycron.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host zhycron.bysoft.com.br
     http-check expect status 302
     server us2br1webl126-zhycron 10.4.161.20:443 ssl check verify none
 
@@ -3549,7 +3695,8 @@ iportal-zhycronlog.bysoft.com.br:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend iportal-zhycronlog_bysoft_com_br
-    option httpchk GET /iPortal HTTP/1.1\r\nHost:\ zhycronlog.bysoft.com.br
+    option httpchk
+    http-check send meth GET uri /iPortal ver HTTP/1.1 hdr Host zhycronlog.bysoft.com.br
     http-check expect status 302
     server us2br1webl127-zhycronlog 10.4.161.23:443 ssl check verify none
 
@@ -3557,7 +3704,8 @@ us8-wtg-cloud-us.containerchain.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   full_override: |
     backend us8-wtg-cloud-us_containerchain_com
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ wtg-cloud-us.containerchain.com
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host wtg-cloud-us.containerchain.com
     http-check expect rstatus 200|302
     cookie AULRDWUS insert indirect nocache dynamic
     server us2us8rdww01p 10.4.196.21:80
@@ -3572,4 +3720,48 @@ new-am-nexus.rez1.com:
     - name: us2usrnex00013-blumeglobal
       ip: 10.4.204.13
       port: 8081
+      settings: check
+
+alcm.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-prod-blumeglobal-hosting
+      ip: 10.4.240.17
+      port: 8080
+      settings: check
+
+direct.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-prod-blumeglobal-hosting
+      ip: 10.4.240.17
+      port: 8080
+      settings: check
+
+alcmtrain.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-uat-blumeglobal-hosting
+      ip: 10.4.242.49
+      port: 8080
+      settings: check
+
+train-direct.rez1.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: am-app-uat-blumeglobal-hosting
+      ip: 10.4.242.49
+      port: 8080
       settings: check

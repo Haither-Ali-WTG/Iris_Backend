@@ -12,6 +12,7 @@ clustered_instance:
   frontend: include('haproxy_frontend_settings', required=False)
   cipher: include('haproxy_cipher_settings', required=False)
   timeouts: include('haproxy_timeouts_settings', required=False)
+  features: include('haproxy_features_settings', required=False)
   machine_cluster: regex('^[a-z0-9-]+$', name='machine cluster label (lowercase with dashes)')
   machine_overrides: map(include('haproxy_settings'),
                          key=regex('^[a-z]{2}[0-9]lbl[0-9]{5}$', name='LB hostname'),

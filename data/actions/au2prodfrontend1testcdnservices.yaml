@@ -56,3 +56,66 @@ star_staging_transport_wisetechglobal_com_api_backend:
     - >-
       use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-api if
       { hdr(host),field(1,:) -m reg -i ^([^\.]+)?-staging\.transport\.wisetechglobal\.com$ } { path_beg -i /api }
+
+testtariff_management_portal_backend:
+  description: |-
+    Direct requests for the Test Borderwise Tariff Management Portal to the catchall backend
+  order: 80
+  actions:
+    - use_backend testtmp_borderwise_com-catchall if star_testtmp_borderwise_com
+
+cmb_test_au_backend:
+  description: |-
+    Direct requests for the cmb-test
+  order: 80
+  actions:
+    - use_backend cmb-test-au_wisegrid_net if cmb-test-au_wisegrid_net
+
+mobile_test_header_stripping:
+  description: |-
+    Behavior for mobile-test.cargowise.net only, strip ASP.NET headers.
+  order: 3
+  actions:
+    - >-
+      http-response del-header X-AspNet-Version if
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+    - >-
+      http-response del-header X-AspNetMvc-Version if
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+
+mobile_test_privatekey_deny:
+  description: |-
+    Behavior for mobile-test.cargowise.net only, deny privatekey.xml.
+  order: 6
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+      { path_reg -i .*privatekey\.xml.* }
+
+wtg_src_allow_mobile_test_cargowise_net:
+  description: |-
+    Allow WTG source IPs for mobile-test.cargowise.net
+  order: 15
+  actions:
+    - >-
+      http-request allow if wtg_src
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+
+https_redirect_mobile_test_cargowise_net:
+  description: |-
+    Redirect HTTP to HTTPS for mobile-test.cargowise.net.
+  order: 79
+  actions:
+    - >-
+      redirect scheme https if
+      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+      !{ ssl_fc }
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 79
+  actions:
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc }

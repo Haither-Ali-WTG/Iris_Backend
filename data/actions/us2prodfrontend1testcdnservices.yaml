@@ -37,3 +37,10 @@ app_test_borderwise_backend:
   order: 80
   actions:
     - use_backend app-test-us_borderwise_com if app-test_borderwise_com
+
+cmb_test_us_backend:
+  description: |-
+    Direct requests for the cmb-test
+  order: 80
+  actions:
+    - use_backend cmb-test-us_wisegrid_net if cmb-test-us_wisegrid_net

@@ -11,7 +11,6 @@ clustered_instances:
         ports:
           plaintext:
             # KEEP IN SYNC: haproxy/us2-prod-frontend-2/ansible-inventories/inventory.yml
-
             # 4000..4999 is reserved by the billing collector:
             # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
 
@@ -122,7 +121,6 @@ clustered_instances:
             - 4452   # US2 Prod SQL Cluster 439
             - 24999  # US9 EDI server
             - 25009  # US9 Prod SQL server
-
       iis_servers: []
       certificates: []
       sqlbilling_acl:
@@ -167,6 +165,8 @@ clustered_instances:
         ports:
           web: 2049
           socket: 2048
+      timeouts:
+        http_keep_alive: 4
 
     us2prodinternal1services30:
       # us2-corp-internal-1
@@ -186,9 +186,14 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        server: 360
+        http_keep_alive: 4
 
     us2prodfrontend1prodcwservices26:
       # us2-prod-frontend-1-prodcw-services-26
@@ -207,8 +212,6 @@ clustered_instances:
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - us2wp-sweb-009a.wisecloud.zone      # Dedicated webserver for customurls
-        - us2wp-sweb-009b.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-401a.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-401b.wisecloud.zone      # Dedicated webserver for UP3
         - us2wp-sweb-402a.wisecloud.zone      # Dedicated webserver for UP3
@@ -237,6 +240,8 @@ clustered_instances:
         - us2wp-sweb-413b.wisecloud.zone
         - us2wp-sweb-414a.wisecloud.zone
         - us2wp-sweb-414b.wisecloud.zone
+        - us2wp-sweb-415a.wisecloud.zone
+        - us2wp-sweb-415b.wisecloud.zone
         - us2wp-sweb-499a.wisecloud.zone      # Dedicated webserver for customurls
         - us2wp-sweb-499b.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
@@ -253,12 +258,6 @@ clustered_instances:
         - name: star-cfs-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: aetnatracking_com
-          cms_resource_group: RG-US-Prod
-        - name: app_gomardom_com
-          cms_resource_group: RG-US-Prod
-        - name: app_gomcd_com
-          cms_resource_group: RG-US-Prod
-        - name: app_tlsgo_com
           cms_resource_group: RG-US-Prod
         - name: connortrac_jsconnor_com
           cms_resource_group: RG-US-Prod
@@ -368,7 +367,9 @@ clustered_instances:
         - us2wt-sweb-416a.test.wisecloud.zone
         - us2wt-sweb-416b.test.wisecloud.zone
         - us2wt-sweb-417a.test.wisecloud.zone
+        - us2wt-sweb-417b.test.wisecloud.zone
         - us2wt-sweb-418a.test.wisecloud.zone
+        - us2wt-sweb-418b.test.wisecloud.zone
         - us2wt-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
         - us2wt-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
@@ -413,6 +414,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2corptcp1:
       dc: US2
@@ -428,6 +431,7 @@ clustered_instances:
             - 1067  # daadmin-us2.wtg.zone
             - 1068  # daadmin-us2.wisecloud.zone
             - 1069  # admin-us2.wisecloud.zone
+            - 30279  # redis-uat.urs.wisegrid.net
       iis_servers: []
       certificates: []
       machine_cluster: us2-corp-internal-1
@@ -453,6 +457,8 @@ clustered_instances:
       certificates:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
+        - name: star-cww-prod-wisetechglobal-cn
+          cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
         - name: star-cwconnector-wisegrid-net
@@ -461,9 +467,29 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-cargowise-com
           cms_resource_group: RG-AU-Corp
+        - name: group_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group2_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: group3_wisetechglobal_com
+          cms_resource_group: RG-AU-Prod
+        - name: star-borderwise-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-cargowise-net
+          cms_resource_group: RG-AU-Corp
+        - name: star-shipamax-com
+          cms_resource_group: RG-EU-Prod
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-smartfreight-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1prodtenantservices1:
       # us2-prod-tenantservices-1
@@ -497,11 +523,14 @@ clustered_instances:
         - name: star-tmssaas-com
           cms_resource_group: RG-US-Prod
         - name: star-livesource-com
+          cms_resource_group: RG-US-Prod
         - name: star-rez1-com
           cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1testcdnservices:
       # us2-prod-frontend-1-test-cdn-services
@@ -521,9 +550,13 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
+        - name: star-cww-nonprd-wisetechglobal-cn
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1pierbridge:
       # General Pierbridge instance
@@ -573,6 +606,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1pierbridgehubcapp:
       # Pierbridge instance for Hubcapp product
@@ -610,3 +645,5 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4

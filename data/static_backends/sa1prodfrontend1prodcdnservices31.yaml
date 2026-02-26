@@ -1,0 +1,13 @@
+---
+sa1wca.wisegrid.net:
+  clustered_instances: [sa1prodfrontend1prodcdnservices31]
+  cookie:
+    name: WCAPFE
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /wtg/ready
+  servers:
+    - name: sa1wp-swfe-401
+      ip: 10.96.64.197
+      port: 80

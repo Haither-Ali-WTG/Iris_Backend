@@ -15,7 +15,8 @@ us2s3-3-secondary:
   clustered_instances: [us2prodinternal1services30]
   full_override: |
     backend us2s3-3-secondary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie US2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -72,3 +73,14 @@ runtimeapi-us2.cwconnector.wisegrid.net:
     - name: us2wp-scwi-405b
       ip: 10.4.88.156
       port: 5443
+
+us.cs.wtg.zone:
+  clustered_instances: [us2prodinternal1services30]
+  full_override: |
+    backend cs_wtg_zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host cs.wtg.zone hdr X-Forwarded-Proto https
+    http-check expect rstatus 200|401|403|302|405
+    default-server inter 10000 ssl
+    server us2wp-siis-407a 10.4.67.90:443 check
+    server us2wp-siis-407b 10.4.67.91:443 check

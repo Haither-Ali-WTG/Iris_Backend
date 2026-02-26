@@ -108,14 +108,6 @@ us2kvl-v0.wtg.zone:
       ip: 10.4.128.14
       port: 8006
       settings: check ssl verify none
-    - name: us2kvl00569.wtg.zone
-      ip: 10.4.128.15
-      port: 8006
-      settings: check ssl verify none
-    - name: us2kvl00571.wtg.zone
-      ip: 10.4.128.12
-      port: 8006
-      settings: check ssl verify none
 
 us2pf1-prod-customurls.wtg.zone:
   clustered_instances: [us2corpinternal1]
@@ -577,20 +569,64 @@ usdocs.wtg.zone:
       ip: 10.4.67.116
       port: 80
 
-wtg-sw.sand.wtg.zone:
+wtg-sw.sand.wtg.zone-us:
+  clustered_instances: [us2corpinternal1]
+  full_override: |
+    backend wtg-sw_sand_wtg_zone
+    option httpchk
+    http-check send meth HEAD uri /Orion/Login
+    http-check expect status 200
+    cookie WEBNODE insert indirect nocache dynamic
+    server us2sp-smpe-401 10.2.82.30:8787 check ssl verify none
+    server us2sp-sape-401 10.2.82.32:8787 check ssl verify none
+
+us2prodfrontend1testcdnservices.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
     enabled: true
-    http_path: /Orion/Login
-  encryption: true
-  cookie:
-    name: WEBNODE
+    http_path: /
+  encryption: false
   servers:
-    - name: us2sp-smpe-401.sand.wtg.zone
-      ip: 10.2.82.30
-      port: 8787
-      settings: check ssl verify none
-    - name: us2sp-sape-401.sand.wtg.zone
-      ip: 10.2.82.32
-      port: 8787
-      settings: check ssl verify none
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2062
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2062
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2062
+
+us2prodfrontend1pierbridge.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2027
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2027
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2027
+
+us2prodfrontend1pierbridgehubcapp.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2033
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2033
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2033

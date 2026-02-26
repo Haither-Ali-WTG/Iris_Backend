@@ -20,6 +20,7 @@ acoinformatica_backend_selection:
     Acoinformatica-specific backend selection.
   order: 80
   actions:
+    - use_backend rdg_acoinformatica_it         if rdg_acoinformatica_it
     - use_backend xedi1_acoinformatica_it       if xedi1_acoinformatica_it
     - use_backend xedi2_acoinformatica_it       if xedi2_acoinformatica_it
     - use_backend xedi3_acoinformatica_it       if xedi3_acoinformatica_it

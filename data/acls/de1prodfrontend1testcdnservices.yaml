@@ -3,6 +3,7 @@ star_cww-nonprd_wisegrid_net:
   description: "*.cww-nonprd.wisegrid.net blazor non production services"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-nonprd\.wisegrid\.net$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-nonprd\.wisetechglobal\.cn$
 
 staging_identity_wisetechglobal_com:
   description: |-
@@ -65,3 +66,10 @@ peppol_ap_as4_allow_path:
     Allow path for Peppol AP service AS4 path
   tests:
     - path_beg -i /as4
+
+cmb-test-de_wisegrid_net:
+  description: |-
+    hostnames for cmb-test
+  tests:
+    - hdr(host),field(1,:) -i cmb-test-de.wisegrid.net
+    - hdr(host),field(1,:) -i cmb-test.wisegrid.net

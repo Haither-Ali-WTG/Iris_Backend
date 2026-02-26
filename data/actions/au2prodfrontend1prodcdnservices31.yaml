@@ -1,17 +1,70 @@
 ---
-cloudflare_ip:
-  description: |-
-    Set source IP based on cloudflare header for cloudflare traffic
-  order: 1
-  actions:
-    - http-request set-src hdr(cf-connecting-ip) if cloudflare_src
-
 wtg_true_client_ip_header:
   description: |-
     Set true client IP header for IP whitelisting in applications
   order: 59
   actions:
-    - http-request set-header WTG-True-Client-IP %[src] if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
+    - >-
+      http-request set-header WTG-True-Client-IP %[var(txn.client_ip)]
+      if { hdr(host),field(1,:) -i gsswebhooks.wisegrid.net }
+
+ofxdealstatusws_access_control:
+  description: |-
+    Restrict ofxdealstatusws to allowlisted IPs.
+  order: 59
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i ofxdealstatusws.wisegrid.net }
+      !wtg_src !ofx_ip
+
+cargowise_d365_inbound_access_control:
+  description: |-
+    Restrict cargowise_d365_inbound to allowlisted IPs.
+  order: 59
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i cargowise-d365-inbound-prod.wisegrid.net }
+      !wtg_src !azure_d365_aue_src !azure_d365_ause_src
+
+wca_denied_actions:
+  description: |-
+    HTTP-request deny for WCA production services denied paths
+  order: 59
+  actions:
+    - http-request deny if !wtg_src wca_denied_paths wca_prod_url
+
+mobile_header_stripping:
+  description: |-
+    behavior for mobile.cargowise.net only, strip ASP.NET headers.
+  order: 3
+  actions:
+    - >-
+      http-response del-header X-AspNet-Version
+      if { hdr(host),field(1,:) -i mobile.cargowise.net }
+    - >-
+      http-response del-header X-AspNetMvc-Version
+      if { hdr(host),field(1,:) -i mobile.cargowise.net }
+
+mobile_privatekey_deny:
+  description: |-
+    behavior for mobile.cargowise.net only, deny privatekey.xml.
+  order: 6
+  actions:
+    - >-
+      http-request deny if
+      { hdr(host),field(1,:) -i mobile.cargowise.net }
+      { path_reg -i .*privatekey\.xml.* }
+
+wtg_src_allow_mobile_cargowise_net:
+  description: |-
+    allow WTG source IPs for mobile.cargowise.net
+  order: 15
+  actions:
+    - >-
+      http-request allow if wtg_src
+      { hdr(host),field(1,:) -i mobile.cargowise.net }
 
 wtg_idp_redirect:
   description: |-
@@ -62,3 +115,233 @@ compliance_borderwise_backend:
   order: 80
   actions:
     - use_backend compliance-au_borderwise_com if compliance_borderwise_com
+
+tariff_management_portal_backend:
+  description: |-
+    Direct requests for the production Borderwise Tariff Management Portal to the catchall backend
+  order: 80
+  actions:
+    - use_backend tmp_borderwise_com-catchall if star_tmp_borderwise_com
+
+tailwindtransportationsoftware_backend:
+  description: |-
+    Direct requests for www.tailwindtransportationsoftware.com to the tailwindtransportationsoftware.com backend.
+  order: 80
+  actions:
+    - use_backend tailwindtransportationsoftware_com if www_tailwindtransportationsoftware_com
+
+deny_myaccount_protected_paths:
+  description: |-
+    Deny access to MyAccount protected paths
+  order: 25
+  actions:
+    - >-
+      http-request deny if
+      !wtg_src { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } cargowise_com_myaccount_denied_paths
+    - >-
+      http-request deny if
+      !wtg_src { hdr(host),field(1,:) -i myaccount.cargowise.com } { path_beg -i /SuperuserLogin.aspx }
+
+myaccount_portal_cargowise_com_backend:
+  description: |-
+    Direct Glow or Portals requests for myaccount-portal.cargowise.com to the the right backend
+  order: 80
+  actions:
+    - >-
+      use_backend myaccount-portal_cargowise_com_glow if
+      { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } { path_beg -i /Glow/ }
+    - >-
+      use_backend myaccount-portal_cargowise_com_portals if
+      { hdr(host),field(1,:) -i myaccount-portal.cargowise.com } { path_beg -i /Portals/ }
+    - >-
+      use_backend myaccount-portal_cargowise_com if
+      { hdr(host),field(1,:) -m reg -i ^(www\.)?cargowise\.com$ } { path_beg -i /myaccount }
+
+webservices_errors_backend:
+  description: |-
+    Direct errors requests to webservices_errors backend
+  order: 80
+  actions:
+    - use_backend webservices_errors if webservices_hostnames { path_beg -i /errors }
+
+access_control_deny:
+  description: |-
+    Access control rules for corporate sites
+  order: 25
+  actions:
+    - http-request deny if !wtg_src exchange_denied_path
+    - http-request deny if !wtg_src sfb_denied_path
+    - http-request deny if !wtg_src wisetechglobal_com_denied_path www_wisetechglobal_com
+    - http-request deny if !wtg_src wisetechglobal_com_denied_path dot_wisetechglobal_com
+    - http-request deny if !wtg_src wpad_wisetechglobal_com_host
+    - http-request deny if !wtg_src www_local_wisetechglobal_com_denied_path www_local_wisetechglobal_com
+    - http-request deny if !wtg_src www_local_cargowise_com_denied_path www_local_cargowise_com
+    - http-request deny if !wtg_src www_dev_wisetechglobal_com_denied_path www_dev_wisetechglobal_com
+    - http-request deny if !wtg_src www_dev_cargowise_com_denied_path www_dev_cargowise_com
+    - http-request deny if !wtg_src www_wisetechglobal_com_umbraco_denied_path www_wisetechglobal_com
+    - http-request deny if !wtg_src forms_wisetechglobal_com_umbraco_denied_path forms_wisetechglobal_com
+    - http-request deny if !wtg_src partners_wisetechglobal_com_umbraco_denied_path partners_wisetechglobal_com
+    - http-request deny if !wtg_src www_cargowise_com_umbraco_denied_path www_cargowise_com
+    - http-request deny if !wtg_src wisetechglobal_com_umbraco_denied_path wisetechglobal_com
+    - http-request deny if !wtg_src cargowise_com_umbraco_denied_path cargowise_com
+    - http-request deny if !wtg_src group_wisetechglobal_com
+    - http-request deny if !wtg_src smartfreight_com umbraco_denied_path
+    - http-request deny if !wtg_src umbraco_denied_path pierbridge_com
+    - http-request deny if !wtg_src umbraco_denied_path www_pierbridge_com
+    - http-request deny if !wtg_src umbraco_denied_path search_pierbridge_com
+    - http-request deny if !wtg_src umbraco_denied_path partnerresources_pierbridge_com
+    - http-request deny if !wtg_src umbraco_denied_path containerchain_com_urls
+    - http-request deny if !wtg_src umbraco_denied_path dev_sisa_ch
+    - http-request deny if !wtg_src umbraco_denied_path dev_bysoft_com_br
+    - http-request deny if !wtg_src umbraco_denied_path bysoft_com_br
+    - http-request deny if !wtg_src umbraco_denied_path cmslive_com_sg
+    - http-request deny if !wtg_src umbraco_denied_path opdimize_com
+    - http-request deny if !wtg_src umbraco_denied_path opdimize_net
+    - http-request deny if !wtg_src umbraco_denied_path opdimizer_com
+    - http-request deny if !wtg_src umbraco_denied_path opdimizer_net
+    - http-request deny if !wtg_src umbraco_denied_path dev_softship_com
+    - http-request deny if !wtg_src umbraco_denied_path softship_com
+    - http-request deny if !wtg_src umbraco_denied_path www_blumeglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path blumeglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path www_singeste_com
+    - http-request deny if !wtg_src umbraco_denied_path singeste_com
+    - http-request deny if !wtg_src umbraco_denied_path www_bolero_net
+    - http-request deny if !wtg_src umbraco_denied_path bolero_net
+    - http-request deny if !wtg_src admin_denied_path www_inobiz_se
+
+external_service_redirects:
+  description: |-
+    Redirects to external authentication and service endpoints
+  order: 79
+  actions:
+    - >-
+      redirect location https://www.linkedin.com/checkpoint/enterprise/login/75714794?application=learning
+      if linkedinlearning_redirected_urls
+    - redirect location https://stackoverflow.com/c/wisetechglobal if stackoverflow_redirected_urls
+    - redirect location https://www.wisetechglobal.com if redirects_to_wisetechglobal_com_urls
+    - redirect location https://smartfreight.com if redirects_to_smartfreight_com_urls
+    - redirect location https://web.saastransportation.com code 307 if saastransportation_urls
+    - redirect location https://account.parkable.com if redirects_to_account_parkable_com_urls
+
+webservices_refdbrepo_redirect:
+  description: |-
+    Redirect legacy webservices.wisegrid.net /refdbrepotest* paths to refdbrepo.wisegrid.net
+  order: 78
+  actions:
+    - >-
+      redirect code 308 location
+      https://refdbrepo.wisegrid.net%[capture.req.uri,regsub(^/refdbrepo[^/]*,,i)]
+      if webservices_wisegrid_net redirects_to_refdbrepo_wisegrid_net_urls
+
+https_redirects:
+  description: |-
+    Force HTTPS for corporate domains
+  order: 79
+  actions:
+    - redirect scheme https if group_wisetechglobal_com_certificate_covered_domains !{ ssl_fc }
+    - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+    - redirect scheme https if star_wisegrid_net !{ ssl_fc } !excluded_from_redirect_path
+    - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_borderwise_com !{ ssl_fc }
+    - redirect scheme https if star_shipamax_com !{ ssl_fc }
+    - >-
+      redirect scheme https if star_cargowise_com !{ ssl_fc }
+      !cargowise_com_exluded_from_default_redirect !cargowise_com_myaccount_services_path
+    - redirect scheme https if star_cargowise_net !{ ssl_fc } !cargowise_net_exluded_from_default_redirect
+
+corporate_domain_redirects:
+  description: |-
+    Corporate domain redirects and canonical URLs
+  order: 79
+  actions:
+    - redirect prefix https://pierbridge.com code 301 if www_pierbridge_com
+    - redirect prefix https://cargoguide.com code 301 if www_cargoguide_com
+    - redirect prefix https://cargosphere.com code 301 if www_cargosphere_com
+    - redirect prefix https://transportsystems.com.au code 301 if www_transportsystems_com_au
+    - redirect prefix https://sistemaforward.com code 301 if www_sistemaforward_com
+    - redirect prefix https://softcargo.com.uy code 301 if www_softcargo_com_uy
+    - redirect prefix https://www.taric.es code 301 if taric_urls
+    - redirect prefix https://www.tarictrans.com code 301 if tarictrans_urls
+    - redirect prefix https://www.abmdata.ie code 301 if abmdata_ie
+    - redirect prefix https://www.abmdatasystems.com code 301 if abmdatasystems_com
+    - redirect prefix https://www.customsware.com code 301 if customsware_com
+    - redirect prefix https://www.acoinformatica.it code 301 if acoinformatica_it
+    - redirect prefix https://www.bysoft.com.br code 301 if bysoft_com_br
+    - redirect prefix https://www.cargoit.se code 301 if cargoit_se
+    - redirect prefix https://www.containerchain.com code 301 if containerchain_com
+    - redirect prefix https://www.cmslive.com.sg code 301 if cmslive_com_sg
+    - redirect prefix https://www.customsmatters.com code 301 if customsmatters_com
+    - redirect prefix https://www.datafreight.co.uk code 301 if datafreight_co_uk
+    - redirect prefix https://www.depotsystems.com code 301 if depotsystems_com
+    - redirect prefix https://www.depotmobile.com code 301 if depotmobile_com
+    - redirect prefix https://www.easy-log.fr code 301 if easy_log_fr
+    - redirect prefix https://www.fenix.com code 301 if fenix_com
+    - redirect prefix https://www.intris.be code 301 if intris_be
+    - redirect prefix https://www.lspsolutions.com code 301 if lspsolutions_com
+    - redirect prefix https://www.microlistics.com.au code 301 if microlistics_com_au
+    - redirect prefix https://www.pllink.com code 301 if pllink_com
+    - redirect prefix https://www.readykorea.co.kr code 301 if readykorea_co_kr
+    - redirect prefix https://www.readykorea.com code 301 if readykorea_com
+    - redirect prefix https://www.sisa.ch code 301 if sisa_ch
+    - redirect prefix https://www.softship.com code 301 if softship_com
+    - redirect prefix https://www.systema.no code 301 if systema_no
+    - redirect prefix https://www.taric.es code 301 if taric_es
+    - redirect prefix https://www.taric.com code 301 if taric_com
+    - redirect prefix https://www.tarictrans.com code 301 if tarictrans_com
+    - redirect prefix https://www.tarictrans.es code 301 if tarictrans_es
+    - redirect prefix https://www.ulukom.com.tr code 301 if ulukom_com_tr
+    - redirect prefix https://www.xware.com code 301 if xware_com
+    - redirect prefix https://www.xware.se code 301 if xware_se
+    - redirect prefix https://www.znet-group.com code 301 if znet_group_com
+    - redirect prefix https://www.inobiz.se code 301 if inobiz_se
+    - redirect prefix https://www.sadec.pl code 301 if sadec_urls
+    - redirect prefix https://www.opdimize.com code 301 if opdimize_com
+    - redirect prefix https://www.opdimize.net code 301 if opdimize_net
+    - redirect prefix https://www.opdimizer.com code 301 if opdimizer_com
+    - redirect prefix https://www.opdimizer.net code 301 if opdimizer_net
+    - redirect prefix https://www.singeste.com code 301 if singeste_com
+
+portconnect_wisegrid_net_backend:
+  description: |-
+    Direct requests for ca-webhooks.wisegrid.net to the PortConnect backend
+  order: 80
+  actions:
+    - use_backend portconnect_wisegrid_net if { hdr(host),field(1,:) -i ca-webhooks.wisegrid.net }
+
+cw_wisetechglobal_com_catch_all_backend:
+  description: |-
+    Direct requests for *.cw.wisetechglobal.com to the Winzor backend
+  order: 80
+  actions:
+    - use_backend cw_wisetechglobal_com_catch_all if winzor_corp_urls
+
+proget_au_wisetechglobal_com_access_control:
+  description: |-
+    Deny rule for proget-au.wisetechglobal.com
+  order: 25
+  actions:
+    - http-request deny if !wtg_src !azure_ext_controlled_src proget-au_wisetechglobal_com
+
+au2prod2_prodexternal_catchall_backend:
+  description: |-
+    Direct requests for the openshift
+  order: 80
+  actions:
+    - use_backend au2prod2-prodexternal-catchall if proget-au_wisetechglobal_com azure_ext_controlled_src wtg_src
+
+cmb_au_backend:
+  description: |-
+    Direct requests for the cmb-prod
+  order: 80
+  actions:
+    - use_backend cmb-au_wisegrid_net if cmb-au_wisegrid_net
+
+shareworks_redirect:
+  description: |-
+    Redirect requests to the Shareworks SSO Enterprise Application in Azure
+  order: 79
+  actions:
+    - "redirect location
+      https://launcher.myapps.microsoft.com/api/signin/f55a476f-c0d3-483f-b86a-9e41d5f4d92e\
+      ?tenantId=8b493985-e1b4-4b95-ade6-98acafdbdb01
+      if shareworks_wisetechglobal_com"
