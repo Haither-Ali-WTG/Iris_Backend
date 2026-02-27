@@ -1,2 +1,8 @@
 ---
-{}
+acl_psql_sand_wtg_zone:
+  description: |-
+    Uses backend for SAND postgres database
+  order: 50
+  actions:
+    - use_backend primary_psql_sand_wtg_zone if { dst_port 2532 }
+    - use_backend replicas_psql_sand_wtg_zone if { dst_port 3532 }
