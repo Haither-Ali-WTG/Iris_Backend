@@ -1,0 +1,76 @@
+---
+trigger: none
+
+variables:
+  - template: artifacts.yml
+  - name: user
+    value: dante
+  - name: cert_kv_name
+    value: kv-wtg-iris-e2open
+  - name: key_vault_name
+    value: kv-wtg-iris-e2open
+
+name: "$(Date:yyyyMMdd)$(Rev:.r)_Deploy_to_$(dc)"
+
+parameters:
+  - name: matrix
+    type: object
+    default:
+      - target_dc: DE1
+        agent_dc: DE1
+        agent_hall: A
+        s3_host: de1s3-2.wtg.ws
+        s3_iris_bucket: s3://de-iscore-iris-prod-1/
+        pure_usernames: de-iscore-iris-prod-1-rw
+
+stages:
+  - ${{ each run in parameters.matrix }}:
+      - stage: Deploy_Haproxy_${{ run.target_dc }}
+        pool:
+          name: e2open-haproxy
+        lockBehavior: sequential
+        dependsOn: []
+        jobs:
+          - deployment: Deploy_Haproxy_${{ run.target_dc }}
+            environment: iris_e2open_pipeline_lock
+            workspace:
+              clean: all
+            strategy:
+              runOnce:
+                deploy:
+                  steps:
+                    - checkout: self
+
+                    - task: InstallSSHKey@0
+                      displayName: 'Install an SSH key'
+                      inputs:
+                        knownHostsEntry: 'StrictHostKeyChecking no'
+                        sshKeySecureFile: 'id_rsa_e2open'
+
+                    # TODO: Disable wtg.monitoring_agents in IRIS-e2open
+                    - script: |
+                        set -euxo pipefail
+                        pip install -r requirements.txt
+                      displayName: 'Install requirements'
+
+                    - script: |
+                        set -euxo pipefail
+                        cp ansible/ansible.cfg .
+                      displayName: 'Prepare to run playbooks'
+
+                    - task: DownloadPipelineArtifact@2
+                      displayName: 'Download dante artifact'
+                      inputs:
+                        buildType: 'specific'
+                        project: 'InfrastructureAutomation'
+                        # dante build artifact pipeline Id
+                        pipeline: 26
+                        buildVersionToDownload: 'specific'
+                        buildId: '$(dante_build_id)'
+                        path: $(Build.SourcesDirectory)
+
+                    - task: CopyFiles@2
+                      displayName: 'Merge artifacts to a single roles folder'
+                      inputs:
+                        sourceFolder: iris
+                        targetFolder: ansible
