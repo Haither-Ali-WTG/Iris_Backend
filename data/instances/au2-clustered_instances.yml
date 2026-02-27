@@ -106,6 +106,8 @@ clustered_instances:
         ports:
           web: 2047
           socket: 2046
+      timeouts:
+        http_keep_alive: 4
 
     au2sandinternalrdg:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -230,6 +232,7 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
+
     au2prodinternal1services30:
       # au2-prod-internal-1
       dc: AU2
@@ -269,6 +272,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1tcp:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -288,6 +293,7 @@ clustered_instances:
         ports:
           web: 2034
           socket: 2033
+
     au2prodinternaltcp:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
@@ -311,6 +317,7 @@ clustered_instances:
         ports:
           web: 2031
           socket: 2030
+
     au2prodelasticbunker1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
@@ -344,6 +351,8 @@ clustered_instances:
         ports:
           web: 2049
           socket: 2048
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1prodcwservices26:
       # au2-prod-frontend-1-prodcw-services-26
@@ -562,6 +571,8 @@ clustered_instances:
         ports:
           web: 2055
           socket: 2054
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1prodcdnservices31:
       # au2-prod-frontend-1-prod-cdn-services-31
@@ -613,6 +624,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1corpservices1:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -634,6 +647,8 @@ clustered_instances:
         ports:
           web: 2059
           socket: 2058
+      timeouts:
+        http_keep_alive: 4
 
     au2prodinternal1corpservices35:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -662,6 +677,8 @@ clustered_instances:
         ports:
           web: 2061
           socket: 2060
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1testcdnservices:
       # au2-prod-frontend-1-test-cdn-services
@@ -696,3 +713,5 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
