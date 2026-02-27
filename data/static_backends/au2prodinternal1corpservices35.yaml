@@ -384,50 +384,6 @@ knowledge-staging.mcp.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-borderwise.mcp.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-    - name: w2.au2prod1
-      ip: 10.2.213.16
-      port: 30100
-    - name: w3.au2prod1
-      ip: 10.2.213.17
-      port: 30100
-    - name: w4.au2prod1
-      ip: 10.2.213.18
-      port: 30100
-    - name: w5.au2prod1
-      ip: 10.2.213.19
-      port: 30100
-borderwise-staging.mcp.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-    - name: w2.au2prod1
-      ip: 10.2.213.16
-      port: 30100
-    - name: w3.au2prod1
-      ip: 10.2.213.17
-      port: 30100
-    - name: w4.au2prod1
-      ip: 10.2.213.18
-      port: 30100
-    - name: w5.au2prod1
-      ip: 10.2.213.19
-      port: 30100
 ediprod.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -472,7 +428,7 @@ ediprod-staging.mcp.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-wta.mcp.wtg.zone:
+ai-acceleration.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -494,7 +450,7 @@ wta.mcp.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-wta-staging.mcp.wtg.zone:
+ai-acceleration-staging.mcp.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -915,8 +871,212 @@ wta-admin-staging.knowledge.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of knowledge services
+# spire
+spire-au-dev.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+# end of spire
+# devtools-experiments
+devtools-experiments.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+devtools-experiments-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+# end of devtools-experiments
+# temporal
+temporal.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal.sand.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-au.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-au-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-au.sand.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+# end of temporal
 # llm manager
-litellm.knowledge.wtg.zone:
+litellm.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -938,7 +1098,7 @@ litellm.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-litellm-staging.knowledge.wtg.zone:
+litellm.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -960,7 +1120,7 @@ litellm-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-manager.knowledge.wtg.zone:
+llm-manager.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -982,7 +1142,7 @@ llm-manager.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-manager-staging.knowledge.wtg.zone:
+llm-manager.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1004,7 +1164,7 @@ llm-manager-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-langfuse.knowledge.wtg.zone:
+llm-manager-staging.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1026,7 +1186,7 @@ langfuse.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-langfuse-staging.knowledge.wtg.zone:
+llm-gateway.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1048,7 +1208,7 @@ langfuse-staging.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-gateway.knowledge.wtg.zone:
+llm-gateway.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
@@ -1070,7 +1230,7 @@ llm-gateway.knowledge.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-llm-gateway-staging.knowledge.wtg.zone:
+llm-gateway-staging.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
