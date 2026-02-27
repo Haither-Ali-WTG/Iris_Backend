@@ -134,29 +134,6 @@ stages:
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
-          - script: |
-              set -euxo pipefail
-
-              echo "##vso[task.setvariable variable=certificate_changed]true"
-
-              DC_LOWER=$(echo "$(simulation_dc)" | tr '[:upper:]' '[:lower:]')
-
-              # Extract certificates from instance definition file
-              yq '.clustered_instances.hosts[].certificates[]?' \
-              iris/data/instances/${DC_LOWER}-clustered_instances.yml > pr_certs.yml || true
-
-              yq '.clustered_instances.hosts[].certificates[]?' \
-              ../master_worktree/data/instances/${DC_LOWER}-clustered_instances.yml > master_certs.yml || true
-
-              # Check the difference
-              if diff -q master_certs.yml pr_certs.yml >/dev/null 2>&1; then
-                echo "Certificates unchanged in ${DC_LOWER}-clustered_instances.yml"
-                echo "##vso[task.setvariable variable=certificate_changed]false"
-              else
-                echo "Certificates changed in ${DC_LOWER}-clustered_instances.yml"
-              fi
-            displayName: 'Check if the certificate section changed'
-
           - task: Ansible@0
             displayName: 'Check and save certificates'
             inputs:
@@ -173,7 +150,6 @@ stages:
                 -e "{use_cache: $(cms_use_cache)}"
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="s3_iris_bucket=$(s3_iris_bucket)"
-                -e "{check_all_certs: $(certificate_changed) }"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
