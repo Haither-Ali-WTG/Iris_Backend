@@ -10,3 +10,30 @@ testtcp.sand.wtg.zone:
     - name: AU2SP-SISS-402
       ip: 10.2.118.32
       port: 5001
+
+primary.psql.sand.wtg.zone:
+  clustered_instances: [au2sandinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 3s fall 3 rise 2 check port 8080
+  servers:
+    - name: au2sp-spsq-402a
+      ip: 10.2.117.199
+      port: 5432
+    - name: au2sp-spsq-402b
+      ip: 10.2.117.200
+      port: 5432
+      settings: backup
+
+replicas.psql.sand.wtg.zone:
+  clustered_instances: [au2sandinternaltcp]
+  http_health_check:
+    enabled: false
+  default_server: inter 3s fall 3 rise 2 check port 8081
+  servers:
+    - name: au2sp-spsq-402a
+      ip: 10.2.117.199
+      port: 5432
+    - name: au2sp-spsq-402b
+      ip: 10.2.117.200
+      port: 5432
