@@ -341,7 +341,7 @@ filedrop_wisetechglobal_cn_backend:
     Direct requests for filedrop.wisetechglobal.cn to the filedrop backend
   order: 80
   actions:
-    - use_backend filedrop_wisegrid_net if { hdr(host),field(1,:) -i filedrop.wisetechglobal.cn }
+    - use_backend filedrop_wisetechglobal_com if { hdr(host),field(1,:) -i filedrop.wisetechglobal.cn }
 
 shareworks_redirect:
   description: |-
