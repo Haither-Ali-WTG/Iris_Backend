@@ -7,12 +7,12 @@ variables:
   # 6b086eb18e000a012ce24d54b7deff202af02cae
   dante_build_id: '1624305'
 
-  # virgil 20260226.3
-  # Wed Feb 25 23:32:19 UTC 2026 -- Thu Feb 26 10:32:19 AEDT 2026
+  # virgil 20260301.1
+  # Sun Mar  1 00:09:40 UTC 2026 -- Sun Mar  1 11:09:40 AEDT 2026
   #
-  # Merged PR 45586: Allow common user access to aws topic to push from filebeat
-  # d462d3c8e30a7f69a5553bbadc1f261a750a0aad
-  virgil_build_id: '1624247'
+  # Merged PR 45674: nzh-ssh-renewal
+  # 77ce26c5ca2ad7c81a712880231a7f2877b54051
+  virgil_build_id: '1627204'
 
   # sqlbilling 20260227.2
   # Fri Feb 27 12:27:28 UTC 2026 -- Fri Feb 27 23:27:28 AEDT 2026
