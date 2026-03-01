@@ -336,6 +336,13 @@ cmb_au_backend:
   actions:
     - use_backend cmb-au_wisegrid_net if cmb-au_wisegrid_net
 
+filedrop_wisetechglobal_cn_backend:
+  description: |-
+    Direct requests for filedrop.wisetechglobal.cn to the filedrop backend
+  order: 80
+  actions:
+    - use_backend filedrop_wisegrid_net if { hdr(host),field(1,:) -i filedrop.wisetechglobal.cn }
+
 shareworks_redirect:
   description: |-
     Redirect requests to the Shareworks SSO Enterprise Application in Azure
