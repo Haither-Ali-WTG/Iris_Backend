@@ -185,7 +185,7 @@
     group: "{{ subuser.subgid }}"
   become: yes
   register: haproxy_config
-  when: use_local_backends | default(false) is defined
+  when: use_local_backends | default(false)
 
 - name: Fetch the dumped config
   fetch:
