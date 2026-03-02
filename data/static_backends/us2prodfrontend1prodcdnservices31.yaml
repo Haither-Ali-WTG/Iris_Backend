@@ -199,48 +199,6 @@ dpsv4-usord.wisegrid.net:
       ip: 10.4.67.13
       port: 80
 
-identity-staging.wisetechglobal.com-login:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_login
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready
-    http-check expect rstatus 200
-    http-request replace-path /login(/)?(.*) /\2
-    http-request set-header X-Forwarded-Prefix /login
-    cookie ISL insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3001 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3001 check ssl
-
-identity-staging.wisetechglobal.com-s2s:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_s2s
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready
-    http-check expect rstatus 200
-    http-request replace-path /s2s(/)?(.*) /\2
-    http-request set-header X-Forwarded-Prefix /s2s
-    cookie ISS insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3005 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3005 check ssl
-
-identity-staging.wisetechglobal.com-account:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend identity-staging_wisetechglobal_com_account
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready
-    http-check expect rstatus 200
-    http-request replace-path /account(/)?(.*) /\2
-    http-request set-header X-Forwarded-Prefix /account
-    cookie ISA insert indirect nocache dynamic
-    server us2wt-sidi-501a 10.4.139.11:3003 check ssl
-    server us2wt-sidi-501b 10.4.139.12:3003 check ssl
-
 wisetechglobal.com-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
