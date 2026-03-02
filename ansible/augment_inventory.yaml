@@ -13,10 +13,6 @@
         virgil_port_oob_dante: eno1
         virgil_internal_fqdn: "{{ inventory_hostname }}"
 
-    - name: Print local backends
-      debug:
-        var: use_local_backends
-
 - name: Import IIS data
   import_playbook: import_iis_data.yml
   when:
