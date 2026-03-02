@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260225.1
-  # Wed Feb 25 07:21:24 UTC 2026 -- Wed Feb 25 18:21:24 AEDT 2026
+  # Dante Build Artifact 20260301.1
+  # Sun Mar  1 01:01:05 UTC 2026 -- Sun Mar  1 12:01:05 AEDT 2026
   #
-  # Merge pull request 45563 from dante_artifact_upgrade into master
-  # bf55bb082b315617292f3d7a664ecf64dd628246
-  dante_build_id: '1623599'
+  # Merge pull request 45675 from dante_artifact_upgrade into master
+  # 4170f83d61b5d4c222d26ad3b5762227919d6fd0
+  dante_build_id: '1627259'
 
-  # virgil 20260225.2
-  # Wed Feb 25 06:33:06 UTC 2026 -- Wed Feb 25 17:33:06 AEDT 2026
+  # virgil 20260301.1
+  # Sun Mar  1 00:09:40 UTC 2026 -- Sun Mar  1 11:09:40 AEDT 2026
   #
-  # Merged PR 45558: add-vlan-1227-in-dat-service
-  # d82fc079b958aba83975b8230458d85e95022786
-  virgil_build_id: '1623558'
+  # Merged PR 45674: nzh-ssh-renewal
+  # 77ce26c5ca2ad7c81a712880231a7f2877b54051
+  virgil_build_id: '1627204'
 
-  # sqlbilling 20260225.3
-  # Wed Feb 25 11:22:17 UTC 2026 -- Wed Feb 25 22:22:17 AEDT 2026
+  # sqlbilling 20260303.2
+  # Mon Mar  2 18:57:28 UTC 2026 -- Tue Mar  3 05:57:28 AEDT 2026
   #
-  # Merged PR 45542: CS02248309 - CTFREISYD - Whitelist access to CTFPRD and CTFTRN for nominated IP's
-  # ec6eabba57dfa6331b9a1652cd87ea0acb3a671a
-  sqlbilling_build_id: '1623772'
+  # Merged PR 45713: AddSQLBilling IPs DE1 US2
+  # c9d95cfafd2332c3ba70488f704df324d866315f
+  sqlbilling_build_id: '1628776'
