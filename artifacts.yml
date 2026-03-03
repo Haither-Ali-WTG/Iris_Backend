@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260301.1
-  # Sun Mar  1 01:01:05 UTC 2026 -- Sun Mar  1 12:01:05 AEDT 2026
+  # Dante Build Artifact 20260303.1
+  # Tue Mar  3 03:06:16 UTC 2026 -- Tue Mar  3 14:06:16 AEDT 2026
   #
-  # Merge pull request 45675 from dante_artifact_upgrade into master
-  # 4170f83d61b5d4c222d26ad3b5762227919d6fd0
-  dante_build_id: '1627259'
+  # Merged PR 45729: Fixed mongodb URL for agent build1
+  # 077018ad24590306bb239ef7cbcca9a16b9a2f8e
+  dante_build_id: '1629195'
 
   # virgil 20260301.1
   # Sun Mar  1 00:09:40 UTC 2026 -- Sun Mar  1 11:09:40 AEDT 2026
