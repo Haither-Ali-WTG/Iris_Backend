@@ -717,3 +717,26 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    au2prodfrontend1tenantservices:
+      # au2-prod-frontend-1-tenant-services
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2097]
+          ssl: [2098]
+      stats:
+        ports:
+          web: 2064
+          socket: 2065
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
