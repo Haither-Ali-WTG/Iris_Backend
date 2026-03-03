@@ -3750,3 +3750,28 @@ cargowise-d365-inbound-prod.wisegrid.net:
     - name: AU2WP-SXTR-401
       ip: 10.2.70.25
       port: 9080
+
+integration-hub.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: INTHUB
+  http_health_check:
+    enabled: false
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 proto h2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
