@@ -1167,3 +1167,8 @@ train-direct_rez1_com:
   description: "train-direct.rez1.com"
   tests:
     - hdr(host) -i train-direct.rez1.com
+
+report_rez1_com:
+  description: "report.rez1.com"
+  tests:
+    - hdr(host) -i report.rez1.com
