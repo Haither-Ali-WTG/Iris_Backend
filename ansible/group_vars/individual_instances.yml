@@ -49,7 +49,7 @@ individual_instance_defaults:
     connect: 60
     server: 300
     tunnel: 3600
-    http_keep_alive: 1
+    http_keep_alive: 4
     http_request: 60
     queue: 30
     tarpit: 60
