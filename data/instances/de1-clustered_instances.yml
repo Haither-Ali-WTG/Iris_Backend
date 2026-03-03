@@ -255,6 +255,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
         - name: star-cwconnector-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-borderwise-com
@@ -305,6 +307,8 @@ clustered_instances:
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
         - name: star-cww-nonprd-wisetechglobal-cn
+          cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:

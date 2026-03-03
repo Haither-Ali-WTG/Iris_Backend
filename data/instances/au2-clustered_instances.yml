@@ -610,6 +610,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-smartfreight-com
           cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -694,6 +696,8 @@ clustered_instances:
         - name: star-cww-nonprd-wisetechglobal-cn
           cms_resource_group: RG-AU-Prod
         - name: star-tmp-borderwise-com
+          cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
