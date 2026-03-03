@@ -1278,25 +1278,6 @@ romaniaoauthcs.wisegrid.net:
       ip: 10.2.69.17
       port: 80
 
-cww.wisegrid.net.catch.all:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: CWWA
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-    check_expect: '200'
-  servers:
-    - name: AU2WP-SBLZ-404
-      ip: 10.2.72.21
-      port: 80
-    - name: AU2WP-SBLZ-405
-      ip: 10.2.72.23
-      port: 80
-    - name: AU2WP-SBLZ-406
-      ip: 10.2.72.24
-      port: 80
-
 mheservice.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
