@@ -393,3 +393,45 @@ platform-docs.wtg.ws:
     server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
     server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
     server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+geoaddressing.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend geoaddressing_wisecloud_zone
+    option httpchk
+    http-check send meth HEAD uri /health ver HTTP/1.1 hdr host geoaddressing.wisecloud.zone
+    cookie GEOADD insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+geoaddressing-test.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend geoaddressing_test_wisecloud_zone
+    option httpchk
+    http-check send meth HEAD uri /health ver HTTP/1.1 hdr host geoaddressing-test.wisecloud.zone
+    cookie GEOADDTST insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+geoaddressing-sand.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend geoaddressing_sand_wisecloud_zone
+    option httpchk
+    http-check send meth HEAD uri /health ver HTTP/1.1 hdr host geoaddressing-sand.wisecloud.zone
+    cookie GEOADDSND insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
