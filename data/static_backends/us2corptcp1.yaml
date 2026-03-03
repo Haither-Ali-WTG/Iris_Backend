@@ -125,4 +125,3 @@ redis.uat.urs.wisegrid.net:
     server w3.us2prod1 10.4.237.17:30279 check inter 2s fall 3 rise 2
     server w4.us2prod1 10.4.237.18:30279 check inter 2s fall 3 rise 2
     server w5.us2prod1 10.4.237.19:30279 check inter 2s fall 3 rise 2
-
