@@ -83,27 +83,6 @@ jump2-us2-wtg-zone:
       port: 3389
       settings: check ssl
 
-redis.uat.urs.wisegrid.net:
-  clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: w1.us2prod1
-      ip: 10.4.237.15
-      port: 30279
-    - name: w2.us2prod1
-      ip: 10.4.237.16
-      port: 30279
-    - name: w3.us2prod1
-      ip: 10.4.237.17
-      port: 30279
-    - name: w4.us2prod1
-      ip: 10.4.237.18
-      port: 30279
-    - name: w5.us2prod1
-      ip: 10.4.237.19
-      port: 30279
-
 us2kvl-v1.wtg.zone:
   clustered_instances: [us2corptcp1]
   http_health_check:
@@ -113,7 +92,6 @@ us2kvl-v1.wtg.zone:
       ip: 10.4.128.6
       port: 443
       settings: check ssl verify none
-
 
 us2k3s-v1.wtg.zone:
   clustered_instances: [us2corptcp1]
@@ -132,3 +110,19 @@ us2k3s-v1.wtg.zone:
       ip: 10.4.239.93
       port: 443
       settings: check ssl verify none
+
+redis.uat.urs.wisegrid.net:
+  clustered_instances: [us2corptcp1]
+  full_override: |
+    backend redis_uat_urs_wisegrid_net
+    mode tcp
+    option tcp-check
+    tcp-check connect
+    tcp-check send "info replication\r\n"
+    tcp-check expect string role:master
+    server w1.us2prod1 10.4.237.15:30279 check inter 2s fall 3 rise 2
+    server w2.us2prod1 10.4.237.16:30279 check inter 2s fall 3 rise 2
+    server w3.us2prod1 10.4.237.17:30279 check inter 2s fall 3 rise 2
+    server w4.us2prod1 10.4.237.18:30279 check inter 2s fall 3 rise 2
+    server w5.us2prod1 10.4.237.19:30279 check inter 2s fall 3 rise 2
+
