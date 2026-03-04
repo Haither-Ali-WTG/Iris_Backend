@@ -261,6 +261,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
+        - name: star-wisecloud-zone
+          cms_resource_group: RG-AU-Prod
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
         - name: star-internal-au2prod1-ocp-wtg-ws
