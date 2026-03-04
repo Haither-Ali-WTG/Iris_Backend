@@ -437,8 +437,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: tracking_fracht_com_au
           cms_resource_group: RG-AU-Prod
-        - name: tracking_gvi_co_nz
-          cms_resource_group: RG-AU-Prod
         - name: tracking_icecargo_com_au
           cms_resource_group: RG-AU-Prod
         - name: tracking_mbowens_com_au
