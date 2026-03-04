@@ -184,7 +184,7 @@
     owner: "{{ subuser.subuid }}"
     group: "{{ subuser.subgid }}"
   become: yes
-  register: haproxy_config
+  register: haproxy_config_v2
   when: use_local_backends | default(false) | bool
 
 - name: Fetch the dumped config
@@ -214,7 +214,7 @@
       - -f
       - /etc/haproxy/{{ clustered_instance_name }}.cfg.test
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
-  when: haproxy_config.changed
+  when: haproxy_config.changed or haproxy_config_v2.changed
 
 - name: Copy validated configuration file  # noqa no-handler
   copy:
@@ -225,7 +225,7 @@
     owner: "{{ subuser.subuid }}"
     group: "{{ subuser.subgid }}"
   become: yes
-  when: haproxy_config.changed
+  when: haproxy_config.changed or haproxy_config_v2.changed
 
 - name: Deploy the haproxy container
   include_role:
@@ -296,7 +296,7 @@
   retries: 10
   delay: 3
   until: haproxy_sock_result.rc == 0
-  when: haproxy_config.changed
+  when: haproxy_config.changed or haproxy_config_v2.changed
 
 - name: Update server states file
   include_tasks: update_states_file.yml
@@ -315,6 +315,7 @@
   when:
     - (
         haproxy_config.changed
+        or haproxy_config_v2.changed
         or sorry_page.changed
         or copy_certificates.changed
         or copy_sqlbillings.changed
