@@ -174,7 +174,7 @@
     group: "{{ subuser.subgid }}"
   become: yes
   register: haproxy_config
-  when: not use_local_backends | default(false)
+  when: not (use_local_backends | default(false) | bool)
 
 - name: Template out the test haproxy config (using git files)
   template:
