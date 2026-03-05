@@ -14,9 +14,9 @@ variables:
   # 77ce26c5ca2ad7c81a712880231a7f2877b54051
   virgil_build_id: '1627204'
 
-  # sqlbilling 20260305.2
-  # Thu Mar  5 01:25:58 UTC 2026 -- Thu Mar  5 12:25:58 AEDT 2026
+  # sqlbilling 20260305.4
+  # Thu Mar  5 12:34:01 UTC 2026 -- Thu Mar  5 23:34:01 AEDT 2026
   #
-  # Merged PR 45825: Update WPP readonly based on CS02259378
-  # 8a83df617a31f6878d080c76dbee131328a95879
-  sqlbilling_build_id: '1631160'
+  # Merged PR 45847: AddSQLBilling IPs AU2
+  # 5fcc88132fa1c20ac13c384415bb339f82fd6c8f
+  sqlbilling_build_id: '1631591'
