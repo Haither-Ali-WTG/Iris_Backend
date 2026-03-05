@@ -5,11 +5,16 @@
 - name: Setup localhost for s3
   hosts: localhost
   tasks:
+    - name: Debug use_s3 variable
+      debug:
+        msg: "use_s3 = {{ use_s3 | default('UNDEFINED') }} (type: {{ use_s3 | default('') | type_debug }})"
+
     - name: Setup S3 storage connection
       include_role:
         name: pure_connection_setup
       vars:
         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+      when: use_s3 | default(true) | bool
 
 - name: Collect and publish IIS data to S3
   hosts: clustered_instances
@@ -23,6 +28,7 @@
       when:
         - not simulation
         - target_dc == dc
+        - use_s3 | default(true) | bool
         - (iis_servers | default([]) | length > 0) or (iis_servers_local | default([]) | length > 0)
 
 - name: Augment the inventory
@@ -70,6 +76,7 @@
         name: telegraf_config
       vars:
         endpoint_ports: "{{ stats_web_ports }}"
+      when: deploy_telegraf | default(true) | bool
 
     - name: Apply system parameters
       include_role:

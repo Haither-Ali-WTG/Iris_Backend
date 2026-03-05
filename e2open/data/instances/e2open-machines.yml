@@ -1,0 +1,12 @@
+machines:
+  hosts:
+    prod2017:
+      ansible_host: 10.210.140.31
+      os: ubuntu2404
+      dc: DE1
+      os_variant: ubuntu
+    prod2018:
+      ansible_host: 10.210.140.32
+      os: ubuntu2404
+      dc: DE1
+      os_variant: ubuntu

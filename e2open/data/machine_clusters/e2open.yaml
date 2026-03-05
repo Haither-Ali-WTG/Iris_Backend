@@ -1,0 +1,12 @@
+---
+e2open-prod-internal-1:
+  machines:
+    prod2017: ~
+    prod2018: ~
+  floating_ips:
+    - description: TCP load balancer
+      ip: 10.210.140.34
+      vlan: 0
+      preempt: false
+      virtual_router_id: 201
+      priority: [prod2017, prod2018]
