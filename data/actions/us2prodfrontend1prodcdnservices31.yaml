@@ -94,7 +94,6 @@ special_access_restrictions:
     - http-request deny if !wtg_src exchange_denied_path
     - http-request deny if !wtg_src sfb_denied_path
     - http-request deny if !wtg_src wpad_wisetechglobal_com_host
-    - http-request deny if !wtg_src !awsr53_src star_identity_wisetechglobal_com
 
 # External domain redirects
 external_domain_redirects:

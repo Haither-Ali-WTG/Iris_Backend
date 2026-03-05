@@ -10,6 +10,11 @@ star_wisetechglobal_com:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
 
+star_identity_wisetechglobal_com:
+  description: "*.identity.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?identity\.wisetechglobal\.com$
+
 identity_wisetechglobal_com:
   description: |-
     hostnames for production WTG IDP
@@ -89,11 +94,6 @@ star_borderwise_com:
   description: "*.borderwise.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?borderwise\.com$
-
-star_identity_wisetechglobal_com:
-  description: "*.identity.wisetechglobal.com"
-  tests:
-    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?identity\.wisetechglobal\.com$
 
 group_wisetechglobal_com:
   description: "WiseTech group sites (group, group2, group3)"

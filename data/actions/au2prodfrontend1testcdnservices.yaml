@@ -1,4 +1,20 @@
 ---
+wtg_idp_public_allow:
+  description: |-
+    Allow public access to staging WTG IDP paths
+  order: 58
+  actions:
+    - http-request allow if staging_identity_wisetechglobal_com wtg_idp_login_path
+    - http-request allow if staging_identity_wisetechglobal_com wtg_idp_s2s_path
+    - http-request allow if staging_identity_wisetechglobal_com wtg_idp_account_path
+
+# Special access restrictions
+special_access_restrictions:
+  description: "Restrict access to special services and internal resources"
+  order: 59
+  actions:
+    - http-request deny if !wtg_src !awsr53_src star_identity_wisetechglobal_com
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
@@ -119,3 +135,4 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }

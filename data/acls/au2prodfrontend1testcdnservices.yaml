@@ -5,6 +5,11 @@ star_cww-nonprd_wisegrid_net:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-nonprd\.wisegrid\.net$
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww-nonprd\.wisetechglobal\.cn$
 
+star_identity_wisetechglobal_com:
+  description: "*.identity.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?identity\.wisetechglobal\.com$
+
 staging_identity_wisetechglobal_com:
   description: |-
     hostnames for staging WTG IDP
