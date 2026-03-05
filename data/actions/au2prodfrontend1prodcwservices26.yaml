@@ -73,7 +73,6 @@ custom_url_actions:
     - use_backend famsin_webtracker_wisegrid_net if { hdr(host),field(1,:) -i famsin2webtracker.wisegrid.net }
     - use_backend fragbl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.fracht.com.au }
     - use_backend giasyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.gava.com.au }
-    - use_backend gvlhst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.gvi.co.nz }
     - use_backend h43prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i h43prdwebtracker.wisegrid.net }
     - use_backend hglsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.pch.com.au }
     - use_backend hi0prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i missioncontrol.hiltons.co.nz }

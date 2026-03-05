@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260303.1
-  # Tue Mar  3 03:06:16 UTC 2026 -- Tue Mar  3 14:06:16 AEDT 2026
+  # Dante Build Artifact 20260306.1
+  # Thu Mar  5 20:21:17 UTC 2026 -- Fri Mar  6 07:21:17 AEDT 2026
   #
-  # Merged PR 45729: Fixed mongodb URL for agent build1
-  # 077018ad24590306bb239ef7cbcca9a16b9a2f8e
-  dante_build_id: '1629195'
+  # Merge pull request 45850 from dante_artifact_upgrade into master
+  # 2e74d331eb33e7f74e47f832f6e7facf267b16f7
+  dante_build_id: '1631877'
 
-  # virgil 20260301.1
-  # Sun Mar  1 00:09:40 UTC 2026 -- Sun Mar  1 11:09:40 AEDT 2026
+  # virgil 20260306.1
+  # Thu Mar  5 19:27:25 UTC 2026 -- Fri Mar  6 06:27:25 AEDT 2026
   #
-  # Merged PR 45674: nzh-ssh-renewal
-  # 77ce26c5ca2ad7c81a712880231a7f2877b54051
-  virgil_build_id: '1627204'
+  # Merged PR 45777: Repurpose five C54s for OCP
+  # 7478a2ad27f8bf170ce961c37a642e2fd4ed5d8d
+  virgil_build_id: '1631828'
 
-  # sqlbilling 20260303.2
-  # Mon Mar  2 18:57:28 UTC 2026 -- Tue Mar  3 05:57:28 AEDT 2026
+  # sqlbilling 20260305.4
+  # Thu Mar  5 12:34:01 UTC 2026 -- Thu Mar  5 23:34:01 AEDT 2026
   #
-  # Merged PR 45713: AddSQLBilling IPs DE1 US2
-  # c9d95cfafd2332c3ba70488f704df324d866315f
-  sqlbilling_build_id: '1628776'
+  # Merged PR 45847: AddSQLBilling IPs AU2
+  # 5fcc88132fa1c20ac13c384415bb339f82fd6c8f
+  sqlbilling_build_id: '1631591'

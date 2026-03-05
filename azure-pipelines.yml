@@ -249,7 +249,8 @@ stages:
                   -e="target_dc=$(simulation_dc)" \
                   -e="apt_mirror=$(apt_mirror)" \
                   -e "{check_all_certs: $(certificate_changed) }" \
-                  -e "{simulation: true}"
+                  -e "{simulation: true}" \
+                  -e="use_local_backends=$(use_local_backends)"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
               ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)

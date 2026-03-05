@@ -76,18 +76,3 @@ platform-docs_wtg_ws:
   description: "Platform Docs"
   tests:
     - hdr(host),field(1,:) -i platform-docs.wtg.ws
-
-geoaddressing_wisecloud_zone:
-  description: "GeoAddressing Prod"
-  tests:
-    - hdr(host) -i geoaddressing.wisecloud.zone
-
-geoaddressing-test_wisecloud_zone:
-  description: "GeoAddressing Test"
-  tests:
-    - hdr(host) -i geoaddressing-test.wisecloud.zone
-
-geoaddressing-sand_wisecloud_zone:
-  description: "GeoAddressing Sand"
-  tests:
-    - hdr(host) -i geoaddressing-sand.wisecloud.zone

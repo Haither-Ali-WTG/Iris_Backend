@@ -1,0 +1,255 @@
+# ### This file is deployed by Iris ###
+
+# HAProxy configuration for {{ clustered_instance_name }} on {{ machine_name }} ({{ inventory_hostname }})
+
+
+########################################
+###### GLOBAL AND DEFAULT SETTINGS #####
+########################################
+
+
+
+global
+#########
+
+daemon
+
+# Most of our instances use 1 process and 8 threads; the only exception is AU2 Ceph,
+# which uses 32 processes (and no nbthread setting).
+{#
+nbproc will be removed from configuration after next haproxy upgrades
+which are likely to be higher than 3.0.8
+#}
+{% if container.haproxy_image_tag in ['2.4.19-bullseye', '2.4.25-bookworm'] %}
+nbproc {{ global_.processes | default(1) }}
+{% endif %}
+nbthread {{ global_.threads | default(8) }}
+
+# Logging directive; in some cases, we need to extend the log line length to 4096.
+
+
+#hard-stop-after 1s #affects streams (RDP?), avoid it
+log 172.17.0.1 len 4096 local7
+
+# The cipher profile.
+
+{% if ciphers_tls_v1_3 | length > 0 %}
+ssl-default-bind-ciphersuites {{ ciphers_tls_v1_3 | join(':') }}
+{% endif %}
+{% if ciphers_upto_tls_v1_2 | length > 0  %}
+ssl-default-bind-ciphers {{ ciphers_upto_tls_v1_2 | join(':') }}
+{% endif %}
+ssl-default-bind-options {{ cipher.bind_options | join(' ') }}
+
+ssl-default-server-options ssl-min-ver {{ cipher.ssl_min }} ssl-max-ver {{ cipher.ssl_max }}
+
+tune.ssl.default-dh-param 4096
+ssl-server-verify none
+
+# Various other settings, mostly uniform although maxconn is sometimes higher.
+
+maxconn {{ global_.maxconn | default(200000) }}
+stats socket {{ stats.ports.file }} mode 660 expose-fd listeners level admin
+server-state-file /var/run/haproxy/global-state
+stats socket 127.0.0.1:{{ stats.ports.socket }} level admin
+stats timeout 2m
+
+
+
+defaults
+#########
+
+# Mode http or tcp:
+mode    {{ defaults.mode }}
+
+
+# Timeouts; we will configure these by profiles, potentially with overrides
+
+timeout client          {{ "%4d" | format(timeouts.client) }}s
+timeout connect         {{ "%4d" | format(timeouts.connect) }}s
+timeout server          {{ "%4d" | format(timeouts.server) }}s
+timeout tunnel          {{ "%4d" | format(timeouts.tunnel) }}s
+timeout http-keep-alive {{ "%4d" | format(timeouts.http_keep_alive) }}s
+timeout http-request    {{ "%4d" | format(timeouts.http_request) }}s
+timeout queue           {{ "%4d" | format(timeouts.queue) }}s
+timeout tarpit          {{ "%4d" | format(timeouts.tarpit) }}s
+
+# Proxying options, including balance leastconn vs roundrobin and the like.
+
+fullconn {{ defaults.fullconn }}
+option redispatch
+balance {{ defaults.balance }}
+option forwardfor
+option allbackups
+retries 3
+default-server inter {{ defaults.health_check_interval }} rise 2 fall 3 maxconn 5000 resolve-prefer ipv4 check init-addr libc,last weight 100
+load-server-state-from-file global
+dynamic-cookie-key WTGLB
+#option http-server-close #breaks login keep it disabled
+
+# Note: The ##haproxy-prod-sqlreadonly.cfg.j2## config in US2 appends ",none" to the
+# ##default-server## line to ensure that the simulations pass even if the backends are
+# unreachable/down as the current simulations cannot resolve hostnames against our BIND
+# instances. This will likely be different in the new, isolated simulations.
+
+
+# Logging configuration
+log global
+{% if defaults.mode == 'http' %}
+# NOTE: client-supplied fields *MUST* be escaped with json()
+log-format '{"instance_name": "{{ defaults.log_name }}", "client_ip" : "%[var(txn.client_ip),json(utf8s)]", "raw_client_ip": "%ci", "timestamp": "%T", "http_request": "%r", "http_status": "%ST", "bytes_read": "%B", "bytes_uploaded": "%U", "client_port": "%cp", "frontend_ip": "%fi", "frontend_port": "%fp", "backend_source_ip": "%bi", "backend_source_port": "%bp", "accept_date_milliseconds": "%ms", "frontend_name_transport": "%ft", "backend_name": "%b", "server_name": "%s", "server_ip": "%si", "server_port": "%sp", "Th_Ti_TR": "%Tq", "Tw": "%Tw", "Tc": "%Tc", "response_time": "%Tr", "Tt": "%Tt", "termination_state": "%tsc", "actconn": "%ac", "frontend_concurrent_connections": "%fc", "backend_concurrent_connections": "%bc", "srv_conn": "%sc", "retries": "%rc", "srv_queue": "%sq", "backend_queue": "%bq", "captured_request_cookie": "%CC", "captured_response_cookie": "%CS", "captured_request_headers": "%hrl", "captured_response_headers": "%hsl", "ssl_ciphers": "%sslc", "ssl_version": "%sslv", "hit_acl": "%[var(txn.hit_acl),json(utf8s)]", "http_req_host": "%[capture.req.hdr(0),json(utf8s)]", "http_req_user_agent": "%[capture.req.hdr(1),json(utf8s)]", "x-forwarded-for": "%[capture.req.hdr(2),json(utf8s)]", "traffic_src": "%[var(txn.traffic_src),json(utf8s)]", "true-client-ip": "%[capture.req.hdr(3),json(utf8s)]", "cf-ray": "%[capture.req.hdr(4),json(utf8s)]"}'
+{% else %}
+log-format '{"instance_name": "{{ defaults.log_name }}", "client_ip": "%ci", "timestamp": "%T", "http_status": "%ST", "bytes_read": "%B", "bytes_uploaded": "%U", "client_port": "%cp", "frontend_ip": "%fi", "frontend_port": "%fp", "backend_source_ip": "%bi", "backend_source_port": "%bp", "accept_date_milliseconds" : "%ms", "frontend_name_transport" : "%ft", "backend_name": "%b", "server_name": "%s", "server_ip": "%si", "server_port": "%sp", "Tw": "%Tw", "Tc": "%Tc", "Tt": "%Tt", "termination_state": "%ts", "actconn": "%ac", "frontend_concurrent_connections": "%fc", "backend_concurrent_connections": "%bc", "srv_conn": "%sc", "retries": "%rc", "srv_queue": "%sq", "backend_queue": "%bq", "captured_request_headers": "%hrl", "captured_response_headers": "%hsl", "hit_acl": "%[var(txn.hit_acl),json(utf8s)]"}'
+{% endif %}
+
+{% for key, value in custom_defaults.items() %}
+{{ key }} {{ value }}
+{% endfor %}
+
+
+########################################
+###### STATS ###########################
+########################################
+
+
+
+listen stats
+bind :{{ all_port_map[stats.ports.web] }}
+# port {{ all_port_map[stats.ports.web] }} mapped to {{ stats.ports.web }} on host
+mode http
+stats enable
+stats show-node
+stats show-desc {{ clustered_instance_name }} on {{ machine_name }} ({{ ansible_host }})
+stats realm Haproxy\ Statistics
+stats uri /
+#stats refresh 10s
+stats show-legends
+
+http-request use-service prometheus-exporter if { path /metrics }
+
+{% if global_.processes | default(1) > 1 %}
+bind-process 1
+{% endif %}
+
+# This should also have a log-format directive, the same as an http main frontend (or the
+# log directive may be global).
+
+
+#######################################
+###### FRONTEND #######################
+#######################################
+
+# We use a full proxy rather than a frontend in order to XXXXX
+
+
+
+listen {{ frontend_name }}
+#max number of connections to be sent to this frontend
+maxconn {{ frontend.maxconn }}
+#needs full conn to instance the dynamic backend
+fullconn {{ frontend.fullconn }}
+
+
+
+errorfile 403 /etc/haproxy/sorry.http
+errorfile 503 /etc/haproxy/sorry.http
+
+
+{% if defaults.mode == 'http' %}
+capture request header Host len 32
+capture request header user-agent len 150
+capture request header X-Forwarded-For len 256
+capture request header True-Client-IP len 64
+capture request header Cf-Ray len 64
+{% endif %}
+
+
+#breaks Exchange Web
+#http-response set-header X-Frame-Options DENY
+
+
+
+{% if frontend.ports.plaintext | default([]) %}
+bind {% for item in frontend.ports.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%}
+{% for item in frontend.ports.plaintext %}
+# port {{ all_port_map[item] }} mapped to {{ item }} on host
+{% endfor %}
+{% endif %}
+{% if certificates | default([]) and frontend.ports.ssl | default([]) %}
+bind {% for item in frontend.ports.ssl %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor %} ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
+{% for item in frontend.ports.ssl %}
+# port {{ all_port_map[item] }} mapped to {{ item }} on host
+{% endfor %}
+{% endif %}
+
+{% if frontend.proxy_ports.plaintext | default([]) %}
+bind {% for item in frontend.proxy_ports.plaintext %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor +%} accept-proxy
+{% for item in frontend.proxy_ports.plaintext %}
+# proxy port {{ all_port_map[item] }} mapped to {{ item }} on host
+{% endfor %}
+{% endif %}
+{% if certificates | default([]) and frontend.proxy_ports.ssl | default([]) %}
+bind {% for item in frontend.proxy_ports.ssl %}:{{ all_port_map[item] }}{% if loop.index < loop.length %},{% endif %}{% endfor %} accept-proxy ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
+{% for item in frontend.proxy_ports.ssl %}
+# proxy port {{ all_port_map[item] }} mapped to {{ item }} on host
+{% endfor %}
+{% endif %}
+
+# CVE-2021-40346 mitigation - https://nvd.nist.gov/vuln/detail/CVE-2021-40346
+http-request deny if { req.hdr_cnt(content-length) gt 1 }
+http-response deny if { res.hdr_cnt(content-length) gt 1 }
+
+
+# ACLs and actions
+# ################
+
+{% for name, acl in acls.items() %}
+# {{ name }} ACL ({{ acl.fname }})
+{{ acl.description | comment }}
+{% for test in acl.tests %}
+acl {{ name }} {{ test }}
+{% endfor %}
+
+{% endfor %}
+
+http-request set-var(txn.hit_acl) str()
+{% for name, acl in acls.items() %}
+http-request set-var(txn.hit_acl) str({{ name }}) if {{ name }}
+{% endfor %}
+
+{% if sqlbilling_acl | default([]) %}
+{% for acl_item in sqlbilling_acl %}
+acl {{ acl_item.acl_name }} src -M -f /etc/haproxy/{{ acl_item.file }}
+{% endfor %}
+{% endif %}
+
+{% for name, actionset in actions.items() | sort(attribute='1.order,0') %}
+# {{ name }} ({{ actionset.fname }}; order: {{ actionset.order }})
+{{ actionset.description | comment }}
+{% for action in actionset.actions %}
+{{ action }}
+{% endfor %}
+
+{% endfor %}
+
+
+### HTTP to HTTPS REDIRECTS (worth redirecting http to https for the domains covered by wildcard certificates) *** THESE ONES GO AS LAST REDIRECTS ***
+# TODO reinstate in some way
+#redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+
+# If no other backend has been selected, use the host name (with . replaced by _); in a
+# generated config, we could either retain this or generate individual "use backend if"
+# actions.
+
+
+#######################################
+###### BACKENDS #######################
+#######################################
+
+{% set dynamic_path = '../data/autogenerated/' ~ clustered_instance_name ~ '_dynamic_backends.cfg' %}
+{% set dynamic_content_path = lookup('ansible.builtin.first_found', { 'files': [dynamic_path], 'skip': True }) %}
+{% if dynamic_content_path %}
+{{ lookup('file', dynamic_content_path) }}
+{% endif %}
+
+{% include "static_backends.j2" %}

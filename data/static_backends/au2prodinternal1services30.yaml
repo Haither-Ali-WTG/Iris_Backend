@@ -411,7 +411,7 @@ geoaddressing.wisecloud.zone:
 geoaddressing-test.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
-    backend geoaddressing_test_wisecloud_zone
+    backend geoaddressing-test_wisecloud_zone
     option httpchk
     http-check send meth HEAD uri /health ver HTTP/1.1 hdr host geoaddressing-test.wisecloud.zone
     cookie GEOADDTST insert indirect nocache dynamic
@@ -425,7 +425,7 @@ geoaddressing-test.wisecloud.zone:
 geoaddressing-sand.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
-    backend geoaddressing_sand_wisecloud_zone
+    backend geoaddressing-sand_wisecloud_zone
     option httpchk
     http-check send meth HEAD uri /health ver HTTP/1.1 hdr host geoaddressing-sand.wisecloud.zone
     cookie GEOADDSND insert indirect nocache dynamic
