@@ -75,11 +75,6 @@ stages:
                     targetFolder: $(Build.SourcesDirectory)
                     overWrite: true
 
-                - script: |
-                    set -euxo pipefail
-                    ls -la ansible/
-                  displayName: 'List files in ansible directory'
-
                 - task: AzureKeyVault@2
                   displayName: 'Get secrets from Azure KV'
                   inputs:
