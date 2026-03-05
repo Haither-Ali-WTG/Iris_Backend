@@ -1,0 +1,46 @@
+---
+- name: Setup container environment
+  include_tasks: setup_{{ virgil_os_variant }}.yml
+
+- name: Container runner setup directory
+  file:
+    path: ~root/.docker
+    state: directory
+    mode: u=rwx,go=
+  become: yes
+
+- name: Container runner get key vault secret for E2Open
+  include_role:
+    name: azure_keyvault
+    tasks_from: update_secret_value.yml
+    apply:
+      delegate_to: localhost
+  vars:
+    variable_name: container_runner_secret
+    azure_kv_secret_name: WtgopstoolsHaproxyAccessKey
+    azure_kv_name: "{{ key_vault_name }}"
+
+- name: Container runner config for E2Open
+  copy:
+    dest: ~root/.docker/config.json
+    content: |
+      {
+        "auths": {
+          "wtgopstools.azurecr.io": {
+            "auth":
+              "{{ ('haproxy-e2open-token:' + container_runner_secret) | b64encode }}"
+          }
+        }
+      }
+    mode: u=rw,go=
+  become: yes
+  no_log: true
+
+- name: Create containers directory
+  file:
+    path: "{{ containers_basedir }}"
+    owner: "{{ dante_user }}"
+    group: "{{ dante_group }}"
+    state: directory
+    mode: a=rx
+  become: yes

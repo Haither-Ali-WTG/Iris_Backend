@@ -1,0 +1,9 @@
+---
+azure:
+  tenantid: "8b493985-e1b4-4b95-ade6-98acafdbdb01"
+  appid: "93d1c3ef-ccb4-406b-b9a2-d47f8828f95e"
+  appname: "WTGOpsPlatformE2OHAProxy"
+  secret_which_never_expires: "{{ lookup('env', 'secretAppIDd47f8828f95e') }}"
+curl:
+  retries: 24  # 24 * 5 seconds = 2 minutes
+  delay: 5  # Every 5 seconds
