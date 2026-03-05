@@ -5,10 +5,6 @@
 - name: Setup localhost for s3
   hosts: localhost
   tasks:
-    - name: Debug use_s3 variable
-      debug:
-        msg: "use_s3 = {{ use_s3 | default('UNDEFINED') }} (type: {{ use_s3 | default('') | type_debug }})"
-
     - name: Setup S3 storage connection
       include_role:
         name: pure_connection_setup
