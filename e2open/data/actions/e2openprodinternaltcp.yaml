@@ -1,2 +1,10 @@
 ---
-{}
+e2open_sftp:
+  order: 30
+  actions:
+    - use_backend e2open-sftp if acl_e2open_sftp
+
+e2open_xmpp:
+  order: 40
+  actions:
+    - use_backend e2open-xmpp if acl_e2open_xmpp

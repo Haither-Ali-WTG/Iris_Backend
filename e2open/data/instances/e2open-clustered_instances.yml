@@ -9,16 +9,16 @@ clustered_instances:
         maxconn: 20000
         ports:
           plaintext:
-            - 2001
-            - 2002
+            - 2001  # SFTP
+            - 2002  # XMPP
       iis_servers: []
       certificates: []
       sqlbilling_acl: []
       machine_cluster: e2open-prod-internal-1
       stats:
         ports:
-          web: 2048
-          socket: 2049
+          web: 6001
+          socket: 6002
       container:
         resources:
           production:

@@ -14,7 +14,7 @@ vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
     # cluster {{ vrrp_instance.machine_cluster_name }}
 
     state BACKUP
-    interface enss33
+    interface ens33
     virtual_router_id {{ vrrp_instance.virtual_router_id }}
     priority {{ vrrp_instance.calculated_priority }}
     advert_int 1
