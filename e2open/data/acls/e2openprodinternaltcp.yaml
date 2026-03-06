@@ -1,2 +1,10 @@
 ---
-{}
+acl_e2open_sftp:
+  description: e2open SFTP
+  tests:
+    - dst_port 2001
+
+acl_e2open_xmpp:
+  description: e2open XMPP
+  tests:
+    - dst_port 2002
