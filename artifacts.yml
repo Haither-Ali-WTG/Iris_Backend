@@ -7,12 +7,12 @@ variables:
   # 2e74d331eb33e7f74e47f832f6e7facf267b16f7
   dante_build_id: '1631877'
 
-  # virgil 20260306.1
-  # Thu Mar  5 19:27:25 UTC 2026 -- Fri Mar  6 06:27:25 AEDT 2026
+  # virgil 20260306.6
+  # Fri Mar  6 01:52:56 UTC 2026 -- Fri Mar  6 12:52:56 AEDT 2026
   #
-  # Merged PR 45777: Repurpose five C54s for OCP
-  # 7478a2ad27f8bf170ce961c37a642e2fd4ed5d8d
-  virgil_build_id: '1631828'
+  # Merged PR 45881: Add test server switch ports config
+  # 43d17e36e7ef78acf22837ee01e0ae1ee3c29bdf
+  virgil_build_id: '1632157'
 
   # sqlbilling 20260305.4
   # Thu Mar  5 12:34:01 UTC 2026 -- Thu Mar  5 23:34:01 AEDT 2026
