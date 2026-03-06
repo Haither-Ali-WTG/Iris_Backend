@@ -1,0 +1,40 @@
+# ### This file is deployed by Iris ###
+
+global_defs {
+    vrrp_garp_interval 0.001
+    vrrp_garp_master_delay 10
+    vrrp_gna_interval 0.000001
+    vrrp_garp_master_refresh_repeat 2
+    vrrp_garp_master_refresh 60
+}
+
+{% for vrrp_instance in vrrp_instances %}
+vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
+    # {{ vrrp_instance.config.description }}
+    # cluster {{ vrrp_instance.machine_cluster_name }}
+
+    state BACKUP
+    interface enss33
+    virtual_router_id {{ vrrp_instance.virtual_router_id }}
+    priority {{ vrrp_instance.calculated_priority }}
+    advert_int 1
+    {% if vrrp_instance.config.preempt %}
+    preempt
+    {% else %}
+    nopreempt
+    {% endif %}
+    use_vmac vrrp{{ vrrp_instance.virtual_router_id }}
+    vmac_xmit_base
+{% if vrrp_instance.config.vlan == 0 and peer_ips %}
+    unicast_peer {
+{% for ip in peer_ips %}
+        {{ ip }}
+{% endfor %}
+    }
+{% endif %}
+    virtual_ipaddress {
+        {{ vrrp_instance.config.ip }}
+    }
+}
+
+{% endfor %}
