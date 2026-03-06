@@ -14,9 +14,9 @@ variables:
   # 43d17e36e7ef78acf22837ee01e0ae1ee3c29bdf
   virgil_build_id: '1632157'
 
-  # sqlbilling 20260306.2
-  # Fri Mar  6 10:19:24 UTC 2026 -- Fri Mar  6 21:19:24 AEDT 2026
+  # sqlbilling 20260307.1
+  # Fri Mar  6 13:15:59 UTC 2026 -- Sat Mar  7 00:15:59 AEDT 2026
   #
-  # Merged PR 45915: CS02256805 - TVSASISIN - Issue Connecting to TSFTR2 Server – Assistance Required
-  # 7d91f9b1b4061124382cfe2491c3348b0342753a
-  sqlbilling_build_id: '1632539'
+  # Merged PR 45919: AddSQLBilling IPs AU2
+  # d1339265a0a1c13e1ab39660b2e37d7fed5202d3
+  sqlbilling_build_id: '1632657'
