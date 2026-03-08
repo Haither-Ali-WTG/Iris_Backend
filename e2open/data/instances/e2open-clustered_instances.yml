@@ -1,0 +1,26 @@
+---
+clustered_instances:
+  hosts:
+    e2openprodinternaltcp:
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 2001  # SFTP
+            - 2002  # XMPP
+      iis_servers: []
+      certificates: []
+      sqlbilling_acl: []
+      machine_cluster: e2open-prod-internal-1
+      stats:
+        ports:
+          web: 6001
+          socket: 6002
+      container:
+        resources:
+          production:
+            cpu: 2000m
+            memory: 4000Mi

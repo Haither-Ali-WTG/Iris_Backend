@@ -106,6 +106,8 @@ clustered_instances:
         ports:
           web: 2047
           socket: 2046
+      timeouts:
+        http_keep_alive: 4
 
     au2sandinternalrdg:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -230,6 +232,7 @@ clustered_instances:
         ports:
           web: 2048
           socket: 2049
+
     au2prodinternal1services30:
       # au2-prod-internal-1
       dc: AU2
@@ -258,6 +261,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
+        - name: star-wisecloud-zone
+          cms_resource_group: RG-AU-Prod
         - name: lms-staging-wisetechacademy-com
           cms_resource_group: RG-AU-Sand
         - name: star-internal-au2prod1-ocp-wtg-ws
@@ -269,6 +274,8 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1tcp:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -288,6 +295,7 @@ clustered_instances:
         ports:
           web: 2034
           socket: 2033
+
     au2prodinternaltcp:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
@@ -311,6 +319,7 @@ clustered_instances:
         ports:
           web: 2031
           socket: 2030
+
     au2prodelasticbunker1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
@@ -344,6 +353,8 @@ clustered_instances:
         ports:
           web: 2049
           socket: 2048
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1prodcwservices26:
       # au2-prod-frontend-1-prodcw-services-26
@@ -427,8 +438,6 @@ clustered_instances:
         - name: tracking_excellogistics_com_au
           cms_resource_group: RG-AU-Prod
         - name: tracking_fracht_com_au
-          cms_resource_group: RG-AU-Prod
-        - name: tracking_gvi_co_nz
           cms_resource_group: RG-AU-Prod
         - name: tracking_icecargo_com_au
           cms_resource_group: RG-AU-Prod
@@ -562,6 +571,8 @@ clustered_instances:
         ports:
           web: 2055
           socket: 2054
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1prodcdnservices31:
       # au2-prod-frontend-1-prod-cdn-services-31
@@ -610,9 +621,13 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-smartfreight-com
           cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1corpservices1:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -634,6 +649,8 @@ clustered_instances:
         ports:
           web: 2059
           socket: 2058
+      timeouts:
+        http_keep_alive: 4
 
     au2prodinternal1corpservices35:
       # per-clustered-instance settings (overrides) go here, for example:
@@ -658,10 +675,14 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-cargowise-com
           cms_resource_group: RG-AU-Corp
+        - name: star-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
       stats:
         ports:
           web: 2061
           socket: 2060
+      timeouts:
+        http_keep_alive: 4
 
     au2prodfrontend1testcdnservices:
       # au2-prod-frontend-1-test-cdn-services
@@ -693,6 +714,33 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-tmp-borderwise-com
           cms_resource_group: RG-AU-Prod
+        - name: star-identity-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    au2prodfrontend1tenantservices:
+      # au2-prod-frontend-1-tenant-services
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2097]
+          ssl: [2098]
+      stats:
+        ports:
+          web: 2064
+          socket: 2065
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4

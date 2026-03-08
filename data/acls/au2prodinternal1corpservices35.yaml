@@ -37,15 +37,12 @@ knowledge_mcp_wtg_zone:
     ## main
     - hdr(host) -i knowledge.mcp.wtg.zone
     - hdr(host) -i knowledge-staging.mcp.wtg.zone
-    ## borderwise
-    - hdr(host) -i borderwise.mcp.wtg.zone
-    - hdr(host) -i borderwise-staging.mcp.wtg.zone
     ## ediprod
     - hdr(host) -i ediprod.mcp.wtg.zone
     - hdr(host) -i ediprod-staging.mcp.wtg.zone
-    ## wta
-    - hdr(host) -i wta.mcp.wtg.zone
-    - hdr(host) -i wta-staging.mcp.wtg.zone
+    ## ai-acceleration
+    - hdr(host) -i ai-acceleration.mcp.wtg.zone
+    - hdr(host) -i ai-acceleration-staging.mcp.wtg.zone
     # knowledge
     ## main
     - hdr(host) -i admin.knowledge.wtg.zone
@@ -69,21 +66,50 @@ knowledge_mcp_wtg_zone:
     - hdr(host) -i wta-admin.knowledge.wtg.zone
     - hdr(host) -i wta-staging.knowledge.wtg.zone
     - hdr(host) -i wta-admin-staging.knowledge.wtg.zone
+
+llm_manager_wtg_zone:
+  description: "au2 llm-manager urls"
+  tests:
     ## litellm
-    - hdr(host) -i litellm.knowledge.wtg.zone
-    - hdr(host) -i litellm-staging.knowledge.wtg.zone
+    - hdr(host) -i litellm.wtg.zone
+    - hdr(host) -i litellm.sand.wtg.zone
     ## llm-manager
-    - hdr(host) -i llm-manager.knowledge.wtg.zone
-    - hdr(host) -i llm-manager-staging.knowledge.wtg.zone
-    ## langfuse
-    - hdr(host) -i langfuse.knowledge.wtg.zone
-    - hdr(host) -i langfuse-staging.knowledge.wtg.zone
+    - hdr(host) -i llm-manager.wtg.zone
+    - hdr(host) -i llm-manager.sand.wtg.zone
+    - hdr(host) -i llm-manager-staging.wtg.zone
     ## llm-gateway
+    - hdr(host) -i llm-gateway.wtg.zone
+    - hdr(host) -i llm-gateway.sand.wtg.zone
+    - hdr(host) -i llm-gateway-staging.wtg.zone
     - hdr(host) -i llm-gateway.knowledge.wtg.zone
     - hdr(host) -i llm-gateway-staging.knowledge.wtg.zone
     ## task-automation
     - hdr(host) -i task-automation.wtg.zone
     - hdr(host) -i task-automation-staging.wtg.zone
+
+temporal_wtg_zone:
+  description: "au2 temporal urls"
+  tests:
+    ## temporal
+    - hdr(host) -i temporal-au.wtg.zone
+    - hdr(host) -i temporal-au.sand.wtg.zone
+    - hdr(host) -i temporal-au-staging.wtg.zone
+    - hdr(host) -i temporal.wtg.zone
+    - hdr(host) -i temporal.sand.wtg.zone
+    - hdr(host) -i temporal-staging.wtg.zone
+
+spire_wtg_zone:
+  description: "au2 spire urls"
+  tests:
+    ## spire
+    - hdr(host) -i spire-au-dev.wtg.zone
+
+devtools_wtg_zone:
+  description: "au2 devtools urls"
+  tests:
+    ## devtools
+    - hdr(host) -i devtools-experiments.wtg.zone
+    - hdr(host) -i devtools-experiments-staging.wtg.zone
 
 star_cargowise_com:
   description: "*.cargowise.com"

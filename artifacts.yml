@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260225.1
-  # Wed Feb 25 07:21:24 UTC 2026 -- Wed Feb 25 18:21:24 AEDT 2026
+  # Dante Build Artifact 20260309.1
+  # Sun Mar  8 22:38:53 UTC 2026 -- Mon Mar  9 09:38:53 AEDT 2026
   #
-  # Merge pull request 45563 from dante_artifact_upgrade into master
-  # bf55bb082b315617292f3d7a664ecf64dd628246
-  dante_build_id: '1623599'
+  # Merged PR 45410: Removed Ubuntu 22.04 support
+  # 08d483aacc2857357a7a163887a0ff7beeb99eb6
+  dante_build_id: '1634672'
 
-  # virgil 20260226.3
-  # Wed Feb 25 23:32:19 UTC 2026 -- Thu Feb 26 10:32:19 AEDT 2026
+  # virgil 20260306.6
+  # Fri Mar  6 01:52:56 UTC 2026 -- Fri Mar  6 12:52:56 AEDT 2026
   #
-  # Merged PR 45586: Allow common user access to aws topic to push from filebeat
-  # d462d3c8e30a7f69a5553bbadc1f261a750a0aad
-  virgil_build_id: '1624247'
+  # Merged PR 45881: Add test server switch ports config
+  # 43d17e36e7ef78acf22837ee01e0ae1ee3c29bdf
+  virgil_build_id: '1632157'
 
-  # sqlbilling 20260225.3
-  # Wed Feb 25 11:22:17 UTC 2026 -- Wed Feb 25 22:22:17 AEDT 2026
+  # sqlbilling 20260307.3
+  # Fri Mar  6 14:39:58 UTC 2026 -- Sat Mar  7 01:39:58 AEDT 2026
   #
-  # Merged PR 45542: CS02248309 - CTFREISYD - Whitelist access to CTFPRD and CTFTRN for nominated IP's
-  # ec6eabba57dfa6331b9a1652cd87ea0acb3a671a
-  sqlbilling_build_id: '1623772'
+  # Merged PR 45921: SQLBillingRemoveCS02257056.yml
+  # 832da8d2330178f749b9c483f1affb4160886a4b
+  sqlbilling_build_id: '1632708'

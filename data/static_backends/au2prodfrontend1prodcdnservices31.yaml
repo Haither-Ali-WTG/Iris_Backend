@@ -1278,25 +1278,6 @@ romaniaoauthcs.wisegrid.net:
       ip: 10.2.69.17
       port: 80
 
-cww.wisegrid.net.catch.all:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: CWWA
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-    check_expect: '200'
-  servers:
-    - name: AU2WP-SBLZ-404
-      ip: 10.2.72.21
-      port: 80
-    - name: AU2WP-SBLZ-405
-      ip: 10.2.72.23
-      port: 80
-    - name: AU2WP-SBLZ-406
-      ip: 10.2.72.24
-      port: 80
-
 mheservice.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   http_health_check:
@@ -3715,31 +3696,6 @@ au2prod2-prodexternal-catchall:
       ip: 10.2.214.19
       port: 30400
 
-ace-prod-api.wisegrid.net:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: ACEPAPI
-  http_health_check:
-    enabled: false
-    http_path: /wtg/ready
-  default_server: check ssl inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod2
-      ip: 10.2.214.15
-      port: 30400
-    - name: w2.au2prod2
-      ip: 10.2.214.16
-      port: 30400
-    - name: w3.au2prod2
-      ip: 10.2.214.17
-      port: 30400
-    - name: w4.au2prod2
-      ip: 10.2.214.18
-      port: 30400
-    - name: w5.au2prod2
-      ip: 10.2.214.19
-      port: 30400
-
 ace-api.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
@@ -3775,3 +3731,28 @@ cargowise-d365-inbound-prod.wisegrid.net:
     - name: AU2WP-SXTR-401
       ip: 10.2.70.25
       port: 9080
+
+integration-hub.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: INTHUB
+  http_health_check:
+    enabled: false
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 proto h2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30401
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30401
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30401
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30401
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30401

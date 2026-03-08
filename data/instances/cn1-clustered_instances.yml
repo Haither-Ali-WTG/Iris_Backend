@@ -26,3 +26,5 @@ clustered_instances:
         ports:
           web: 2037
           socket: 2036
+      timeouts:
+        http_keep_alive: 4

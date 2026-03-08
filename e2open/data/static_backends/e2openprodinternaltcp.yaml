@@ -1,0 +1,21 @@
+---
+e2open-sftp:
+  clustered_instances: [e2openprodinternaltcp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: e2open-sftp-1
+      ip: 147.189.32.136
+      port: 22
+    - name: e2open-sftp-2
+      ip: 147.189.32.137
+      port: 22
+
+e2open-xmpp:
+  clustered_instances: [e2openprodinternaltcp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: e2open-xmpp-1
+      ip: 10.210.132.34
+      port: 9090

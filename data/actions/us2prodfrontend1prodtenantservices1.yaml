@@ -465,3 +465,4 @@ rez1_root_redirect:
     - http-request redirect location /externalx/ code 301 if rez1_root_path direct_rez1_com
     - http-request redirect location /externalx/ code 301 if rez1_root_path alcmtrain_rez1_com
     - http-request redirect location /externalx/ code 301 if rez1_root_path train-direct_rez1_com
+    - http-request redirect location /jasperserver-pro code 301 if rez1_root_path report_rez1_com
