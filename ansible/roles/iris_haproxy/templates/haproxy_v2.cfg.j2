@@ -214,7 +214,11 @@ acl {{ name }} {{ test }}
 
 http-request set-var(txn.hit_acl) str()
 {% for name, acl in acls.items() %}
+{% if acl.tests | select('match', '^res\\.') | list | length > 0 %}
+http-response set-var(txn.hit_acl) str({{ name }}) if {{ name }}
+{% else %}
 http-request set-var(txn.hit_acl) str({{ name }}) if {{ name }}
+{% endif %}
 {% endfor %}
 
 {% if sqlbilling_acl | default([]) %}
