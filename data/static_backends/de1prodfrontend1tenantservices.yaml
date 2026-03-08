@@ -354,7 +354,7 @@ rdg2.acoinformatica.it:
     enabled: true
     http_path: /
   servers:
-    - name: de1it0rdgw003
+    - name: de1it0wclw001
       ip: 10.3.173.74
       port: 443
       settings: check ssl
