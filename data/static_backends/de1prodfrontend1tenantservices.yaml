@@ -344,3 +344,17 @@ rdg.acoinformatica.it:
       ip: 10.3.173.11
       port: 443
       settings: check ssl
+
+rdg2.acoinformatica.it:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  cookie:
+    name: RAPP
+  fullconn: 4000
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: de1it0rdgw003
+      ip: 10.3.173.74
+      port: 443
+      settings: check ssl
