@@ -812,7 +812,7 @@ webservices.wisetechglobal.com:
     option httpchk
     http-check send meth HEAD uri /Glow/wtg/ready ver HTTP/1.1 hdr host webservices.wisetechglobal.com
     http-check expect rstatus 200|400
-    cookie GLOW insert indirect nocache dynamic secure
+    cookie GLOW insert indirect dynamic nocache httponly secure attr "SameSite=None"
     server AU2CO-SIIS-405A 10.2.69.46:443 ssl
     server AU2CO-SIIS-405B 10.2.69.47:443 ssl
 
