@@ -1,10 +1,12 @@
 ---
 e2open_sftp:
+  description: e2open SFTP
   order: 30
   actions:
     - use_backend e2open-sftp if acl_e2open_sftp
 
 e2open_xmpp:
+  description: e2open XMPP
   order: 40
   actions:
     - use_backend e2open-xmpp if acl_e2open_xmpp
