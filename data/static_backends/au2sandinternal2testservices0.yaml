@@ -13,7 +13,7 @@ www.test.com:
 
 www.test-backend-name.com-au2:
   clustered_instances: [au2sandinternal2testservices0]
-  backend_name: www_backend-name_com
+  backend_name: www.backend-name.com
   http_health_check:
     enabled: false
   servers:
