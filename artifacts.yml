@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260309.1
-  # Sun Mar  8 22:38:53 UTC 2026 -- Mon Mar  9 09:38:53 AEDT 2026
+  # Dante Build Artifact 20260309.2
+  # Mon Mar  9 04:21:07 UTC 2026 -- Mon Mar  9 15:21:07 AEDT 2026
   #
-  # Merged PR 45410: Removed Ubuntu 22.04 support
-  # 08d483aacc2857357a7a163887a0ff7beeb99eb6
-  dante_build_id: '1634672'
+  # Merge pull request 45955 from dante_artifact_upgrade into master
+  # 1c5b2547779e6279fb4a1be4a95799b3d47db9e6
+  dante_build_id: '1635038'
 
-  # virgil 20260309.1
-  # Mon Mar  9 03:34:38 UTC 2026 -- Mon Mar  9 14:34:38 AEDT 2026
+  # virgil 20260309.5
+  # Mon Mar  9 04:16:54 UTC 2026 -- Mon Mar  9 15:16:54 AEDT 2026
   #
-  # Merged PR 45923: Move us2wp-svir-035 to VMware
-  # 1a617dc6d744c445fe8c8731491f7467d2a541ba
-  virgil_build_id: '1634981'
+  # Merged PR 45956: add nprobe servers
+  # b48d6c1e11ef56aff6b32a16de47a85749ce285c
+  virgil_build_id: '1635034'
 
   # sqlbilling 20260307.3
   # Fri Mar  6 14:39:58 UTC 2026 -- Sat Mar  7 01:39:58 AEDT 2026
