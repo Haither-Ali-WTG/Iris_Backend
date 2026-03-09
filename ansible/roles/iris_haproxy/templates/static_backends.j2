@@ -9,7 +9,7 @@
 #
 {{ backend.full_override }}
 {% else %}
-backend {{ name | replace(".", "_") }}
+backend {{ (backend.backend_name | default(name, true)) | replace(".", "_") }}
 {%   if backend.balance is defined %}balance {{ backend.balance }}
 {%   endif %}
 {%   if backend.fullconn is defined %}fullconn {{ backend.fullconn }}
