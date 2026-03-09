@@ -7,12 +7,12 @@ variables:
   # 08d483aacc2857357a7a163887a0ff7beeb99eb6
   dante_build_id: '1634672'
 
-  # virgil 20260306.6
-  # Fri Mar  6 01:52:56 UTC 2026 -- Fri Mar  6 12:52:56 AEDT 2026
+  # virgil 20260309.1
+  # Mon Mar  9 03:34:38 UTC 2026 -- Mon Mar  9 14:34:38 AEDT 2026
   #
-  # Merged PR 45881: Add test server switch ports config
-  # 43d17e36e7ef78acf22837ee01e0ae1ee3c29bdf
-  virgil_build_id: '1632157'
+  # Merged PR 45923: Move us2wp-svir-035 to VMware
+  # 1a617dc6d744c445fe8c8731491f7467d2a541ba
+  virgil_build_id: '1634981'
 
   # sqlbilling 20260307.3
   # Fri Mar  6 14:39:58 UTC 2026 -- Sat Mar  7 01:39:58 AEDT 2026
