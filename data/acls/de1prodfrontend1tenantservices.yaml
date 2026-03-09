@@ -53,3 +53,8 @@ rdg_acoinformatica_it:
   description: "rdg.acoinformatica.it"
   tests:
     - hdr(host) -i rdg.acoinformatica.it
+
+rdg2_acoinformatica_it:
+  description: "rdg2.acoinformatica.it"
+  tests:
+    - hdr(host) -i rdg2.acoinformatica.it
