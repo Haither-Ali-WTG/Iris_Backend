@@ -571,6 +571,7 @@ xt-healthcheck-test.cargowise.net:
     - name: au2wt-siis-401b
       ip: 10.2.69.20
       port: 80
+      settings: backup
 
 dpp-web-demo.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
