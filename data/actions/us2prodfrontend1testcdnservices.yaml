@@ -44,3 +44,11 @@ cmb_test_us_backend:
   order: 80
   actions:
     - use_backend cmb-test-us_wisegrid_net if cmb-test-us_wisegrid_net
+
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS (worth redirecting http to https for the domains
+    covered by wildcard certificates)
+  order: 80
+  actions:
+    - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }

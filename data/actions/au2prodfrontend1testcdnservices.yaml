@@ -119,3 +119,4 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }
