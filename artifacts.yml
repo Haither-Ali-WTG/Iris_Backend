@@ -7,12 +7,12 @@ variables:
   # 298fcca84c2ecf9f7ef7f3b33cbafb23ca5522e4
   dante_build_id: '1635652'
 
-  # virgil 20260310.2
-  # Mon Mar  9 18:21:09 UTC 2026 -- Tue Mar 10 05:21:09 AEDT 2026
+  # virgil 20260310.4
+  # Mon Mar  9 21:57:45 UTC 2026 -- Tue Mar 10 08:57:45 AEDT 2026
   #
-  # Merge pull request 45995 from virgil_python_upgrade into master
-  # 7fde08d3a7773687547bba8a9f620e7474d67ac7
-  virgil_build_id: '1635605'
+  # Merged PR 46011: Move us2wp-svir-036 to VMware
+  # e88c432f2ecacecfc60313e9bb4428aba7811a4e
+  virgil_build_id: '1635765'
 
   # sqlbilling 20260309.2
   # Mon Mar  9 11:15:12 UTC 2026 -- Mon Mar  9 22:15:12 AEDT 2026
