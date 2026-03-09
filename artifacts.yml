@@ -7,12 +7,12 @@ variables:
   # e13469c03dca9a38d5d4be416679a007aecbb55f
   dante_build_id: '1635097'
 
-  # virgil 20260309.5
-  # Mon Mar  9 04:16:54 UTC 2026 -- Mon Mar  9 15:16:54 AEDT 2026
+  # virgil 20260310.2
+  # Mon Mar  9 18:21:09 UTC 2026 -- Tue Mar 10 05:21:09 AEDT 2026
   #
-  # Merged PR 45956: add nprobe servers
-  # b48d6c1e11ef56aff6b32a16de47a85749ce285c
-  virgil_build_id: '1635034'
+  # Merge pull request 45995 from virgil_python_upgrade into master
+  # 7fde08d3a7773687547bba8a9f620e7474d67ac7
+  virgil_build_id: '1635605'
 
   # sqlbilling 20260309.2
   # Mon Mar  9 11:15:12 UTC 2026 -- Mon Mar  9 22:15:12 AEDT 2026
