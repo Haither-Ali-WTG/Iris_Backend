@@ -1,0 +1,24 @@
+---
+# KEEP IN SYNC: haproxy/de1-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+sql_allowed:
+  description: Rejects requests from non-WTG or non-Customer IPs
+  order: 40
+  actions:
+    - tcp-request content reject if !wtg_src !customerreadonly_src !staff_src !aryaka_src
+
+sql_backends_test:
+  description: |
+    TEST CN1
+    Maps frontend ports (3000+) to specific SQL backends
+  order: 50
+  actions:
+    - use_backend cn1wtreadonly1l1-wisetechglobal-cn if { dst_port 3002 }
+
+sql_backends_prod:
+  description: |
+    PROD SA1
+    Maps frontend ports (3000+) to specific SQL backends
+  order: 50
+  actions:
+    - use_backend cn1wpreadonly1l1-wisetechglobal-cn if { dst_port 3001 }
