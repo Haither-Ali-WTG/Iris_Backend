@@ -1,0 +1,17 @@
+---
+staff_src:
+  description: these IPs are home ips of staffmembers who need to test SQL RO
+  tests:
+    # IAH
+    - src 110.232.245.191
+    # SLO
+    - src 121.218.224.61
+    # DJI
+    - src 119.18.1.206
+
+aryaka_src:
+  description: these IPs are aryaka IPs for customers who connect via aryaka
+  tests:
+    - src 206.201.196.224/28
+    - src 159.100.192.192/28
+    - src 147.75.235.208/28
