@@ -1,4 +1,9 @@
 ---
+star_wisegrid_net:
+  description: "*.wisegrid.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
 star_wisetechglobal_cn:
   description: "*.wisetechglobal.cn"
   tests:
