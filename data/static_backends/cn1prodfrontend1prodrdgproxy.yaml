@@ -33,6 +33,3 @@ cw-prod-password-rdg-rpc:
     - name: cn1wp-srdg-4.wisecloud.zone
       ip: 10.5.64.156
       port: 80
-    - name: cn1wp-srdg-5.wisecloud.zone
-      ip: 10.5.65.204
-      port: 80
