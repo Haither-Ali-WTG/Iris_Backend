@@ -1,5 +1,5 @@
 ---
-cw-prod-password-rdg-http:
+cn1-cw-prod-password-rdg-http:
   clustered_instances: [cn1prodfrontend1prodrdgproxy]
   http_health_check:
     enabled: true
@@ -18,7 +18,7 @@ cw-prod-password-rdg-http:
       ip: 10.5.65.204
       port: 80
 
-cw-prod-password-rdg-rpc:
+cn1-cw-prod-password-rdg-rpc:
   clustered_instances: [cn1prodfrontend1prodrdgproxy]
   http_health_check:
     enabled: true
