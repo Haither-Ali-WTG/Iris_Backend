@@ -141,6 +141,8 @@ clustered_instances:
           plaintext:
             - 2013
             - 2014
+            - 2532  # PSQL SAND read/write port 5432
+            - 3532  # PSQL SAND read only port 5432
       iis_servers: []
       certificates: []
       machine_cluster: au2-sand-internal-1
