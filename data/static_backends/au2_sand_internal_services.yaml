@@ -794,3 +794,36 @@ au2prod1-sandinternal-ingress:
     server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
     server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
     server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+ausyd-ctohangfire-staging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501a
+      ip: 10.2.69.94
+      port: 3501
+
+aumel-ctohangfire-staging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501a
+      ip: 10.2.69.94
+      port: 3503
+
+auadl-ctohangfire-staging.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wt-sdkr-501a
+      ip: 10.2.69.94
+      port: 3504
