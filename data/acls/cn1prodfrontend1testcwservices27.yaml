@@ -4,6 +4,11 @@ star_wisetechglobal_cn:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
 
+www-star_wisetechglobal_cn:
+  description: "www-*.wisetechglobal.cn"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^www-[A-Za-z0-9]{6}(-cn)?\.wisetechglobal\.cn$
+
 glow_webservice_path:
   description: |-
     Glow webservice paths that get routed to specific dynamic backend
