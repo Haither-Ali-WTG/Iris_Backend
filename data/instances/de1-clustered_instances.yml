@@ -178,6 +178,8 @@ clustered_instances:
           cms_resource_group: RG-EU-Prod
         - name: board_embassycargo_eu
           cms_resource_group: RG-EU-Prod
+        - name: loop_cortenlogistics_com
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
