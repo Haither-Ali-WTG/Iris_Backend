@@ -1,0 +1,38 @@
+---
+cw-prod-password-rdg-http:
+  clustered_instances: [cn1prodfrontend1prodproxy]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: cn1wp-srdg-4.wisecloud.zone
+      ip: 10.5.64.156
+      port: 80
+    - name: cn1wp-srdg-5.wisecloud.zone
+      ip: 10.5.65.204
+      port: 80
+
+cw-prod-password-rdg-rpc:
+  clustered_instances: [cn1prodfrontend1prodproxy]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: cn1wp-srdg-4.wisecloud.zone
+      ip: 10.5.64.156
+      port: 80
+    - name: cn1wp-srdg-5.wisecloud.zone
+      ip: 10.5.65.204
+      port: 80
