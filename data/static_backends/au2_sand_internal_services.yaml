@@ -473,17 +473,6 @@ ctsportal-staging.sand.wtg.zone:
       ip: 10.2.116.42
       port: 80
 
-scim-test.wisetechglobal.com:
-  clustered_instances: [au2sandinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /ScimService/wtg/status
-  encryption: false
-  servers:
-    - name: AU2SP-SCIM-401
-      ip: 10.2.118.80
-      port: 80
-
 ocmbe.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
