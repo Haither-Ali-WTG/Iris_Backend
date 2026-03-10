@@ -435,3 +435,14 @@ geoaddressing-sand.wisecloud.zone:
     server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
     server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
     server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+
+ausyd-ctohangfire-production.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wp-sdkr-501a
+      ip: 10.2.67.56
+      port: 3501
