@@ -70,7 +70,7 @@ clustered_instances:
         profiles:
           - best_practice_2023
       timeouts:
-        http_keep_alive: 15    
+        http_keep_alive: 15
 
     cn1prodfrontend1testcwservices27:
       # cn1-prod-frontend-1-testcw-services-27
