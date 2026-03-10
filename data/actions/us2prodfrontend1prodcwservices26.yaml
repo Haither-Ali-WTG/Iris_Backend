@@ -41,7 +41,6 @@ custom_url_actions:
     - use_backend ar2nyc_webtracker_wisegrid_net if { hdr(host),field(1,:) -i atrac.ariesgl.com }
     - use_backend awujec_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.albawheelsup.com }
     - use_backend axidfw_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.axi-track.com }
-    - use_backend clrlax_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.clearfreight.com }
     - use_backend cluent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.clutchgl.com }
     - use_backend ctoent_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.cargotours.com }
     - use_backend de1jfk_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.delmarcargo.com }
@@ -84,6 +83,7 @@ custom_url_actions:
     - use_backend fmvprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i fmvprd2.webtracker.wisegrid.net }
     - use_backend un4cle_webtracker_wisegrid_net if { hdr(host),field(1,:) -i un4clewds.webtracker.wisegrid.net }
     - use_backend bdgord_webtracker_wisegrid_net if { hdr(host),field(1,:) -i bdgord2.webtracker.wisegrid.net }
+
     ### GLOW
     - use_backend www-elllax_wisegrid_net if { hdr(host),field(1,:) -i portals.extralogistics.com }
     - use_backend www-aetprd_wisegrid_net if { hdr(host),field(1,:) -i aetnatracking.com }
@@ -96,6 +96,8 @@ custom_url_actions:
     - use_backend www-mfilve_wisegrid_net if { hdr(host),field(1,:) -i purchaseordermanagement.mainchain.net }
     - use_backend www-arfafs_wisegrid_net if { hdr(host),field(1,:) -i tracking.ariesww.com }
     - use_backend www-jscbwi_wisegrid_net if { hdr(host),field(1,:) -i connortracneo.jsconnor.com }
+    - use_backend www-clrlax_wisegrid_net if { hdr(host),field(1,:) -i tracking.clearfreight.com }
+
     ### eAdaptor
     - use_backend knapr1services_wisegrid_net if { hdr(host),field(1,:) -i knapr1services2.wisegrid.net }
     - use_backend a21slcservices_wisegrid_net if { hdr(host),field(1,:) -i a21slc2services.wisegrid.net }
