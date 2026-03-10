@@ -1,0 +1,24 @@
+---
+secure_cookie:
+  description: |-
+    Set secure attribute
+  order: 60
+  actions:
+    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
+
+cw_rdg_backend_selection_token:
+  description: |-
+    Select correct backend based on host requested and connection type - Token
+  order: 80
+  actions:
+    - use_backend cw-prod-token-rdg-rpc if cw-prod-token-rdg_host remote_desktop_gateway_rpc_path
+    - use_backend cw-prod-token-rdg-http if cw-prod-token-rdg_host !remote_desktop_gateway_rpc_path
+
+cw_rdg_backend_selection_password:
+  description: |-
+    Select correct backend based on host requested and connection type - Password
+  order: 81
+  actions:
+    - use_backend cw-prod-password-rdg-rpc if cw-prod-password-rdg_host remote_desktop_gateway_rpc_path
+    - use_backend cw-prod-password-rdg-http if cw-prod-password-rdg_host !remote_desktop_gateway_rpc_path
+    
