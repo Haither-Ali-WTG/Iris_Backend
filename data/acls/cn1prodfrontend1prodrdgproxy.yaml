@@ -1,0 +1,11 @@
+---
+rdg_rpc_path:
+  description: RPC rdg path /rpc
+  tests:
+    - path_beg -i /rpc
+
+rdg_token_host:
+  description: hostnames used by rdg endpoints (CW1)
+  tests:
+    - hdr(host),field(1,:) -i cncloud-cn1.wisetechglobal.cn
+    - hdr(host),field(1,:) -i cncloud-cn1-token.wisetechglobal.cn
