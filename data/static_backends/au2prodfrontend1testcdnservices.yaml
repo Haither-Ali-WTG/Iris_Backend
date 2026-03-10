@@ -428,6 +428,18 @@ scim-test.wisegrid.net:
       ip: 10.2.70.20
       port: 80
 
+scim-test.wisetechglobal.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /ScimService/wtg/status
+    check_expect: '200|401|403'
+  encryption: false
+  servers:
+    - name: AU2SP-SCIM-401
+      ip: 10.2.118.80
+      port: 80
+
 addresscleansing-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
