@@ -1084,3 +1084,14 @@ auadl-staging.transport.wisetechglobal.com-api:
     - name: au2wt-sdkr-501c--api2
       ip: 10.2.69.96
       port: 3504
+
+myaccount-test-api.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|401|403'
+  servers:
+    - name: au2sp-sxrm-401
+      ip: 10.2.116.56
+      port: 80
