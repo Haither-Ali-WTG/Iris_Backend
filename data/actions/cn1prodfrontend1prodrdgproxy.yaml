@@ -21,4 +21,3 @@ cw_rdg_backend_selection_password:
   actions:
     - use_backend cw-prod-password-rdg-rpc if cw-prod-password-rdg_host remote_desktop_gateway_rpc_path
     - use_backend cw-prod-password-rdg-http if cw-prod-password-rdg_host !remote_desktop_gateway_rpc_path
-    
