@@ -1,4 +1,9 @@
 ---
+star_wisetechglobal_cn:
+  description: "*.wisetechglobal.cn"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
+
 rdg_rpc_path:
   description: RPC rdg path /rpc
   tests:
