@@ -108,7 +108,6 @@ devtools_wtg_zone:
   description: "au2 devtools urls"
   tests:
     ## devtools
-    - hdr(host) -i devtools-experiments.wtg.zone
     - hdr(host) -i devtools-experiments-staging.wtg.zone
 
 star_cargowise_com:
