@@ -14,9 +14,9 @@ variables:
   # e88c432f2ecacecfc60313e9bb4428aba7811a4e
   virgil_build_id: '1635765'
 
-  # sqlbilling 20260311.2
-  # Wed Mar 11 08:33:25 UTC 2026 -- Wed Mar 11 19:33:25 AEDT 2026
+  # sqlbilling 20260312.2
+  # Wed Mar 11 13:17:11 UTC 2026 -- Thu Mar 12 00:17:11 AEDT 2026
   #
-  # Merged PR 46137: RTL - IP Whitelisting - CS02260296, CS02260877, CS02265409
-  # bf404c3568b799b52fb8be123768bacbd8acd3df
-  sqlbilling_build_id: '1637316'
+  # Merged PR 46154: SQLBilling-Add-CS02262943.yml
+  # 827323a116e44590284967bde031a71ad36527d8
+  sqlbilling_build_id: '1637505'
