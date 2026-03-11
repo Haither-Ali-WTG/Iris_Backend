@@ -1,6 +1,15 @@
 ---
 trigger: none
 
+schedules:
+  - cron: "0 * * * *"
+    displayName: Every hour Automatic IIS data collection
+    batch: true
+    always: true
+    branches:
+      include:
+        - master
+
 variables:
   - template: artifacts.yml
   - name: key_vault_name
@@ -157,7 +166,7 @@ stages:
               if [[ $? -ne 0 ]]; then
                 az repos pr create --auto-complete true --repository $(repository) \
                 --source-branch $(dc)_$(branch_name) \
-                --target-branch $(target_branch) --delete-source-branch true --title "$(dc) - Upload IIS sites data"
+                --target-branch $(target_branch) --delete-source-branch true --title "$(dc) - Automated IIS data upload"
                 exit 0
               else
                 echo "No PR created as it already exists"
