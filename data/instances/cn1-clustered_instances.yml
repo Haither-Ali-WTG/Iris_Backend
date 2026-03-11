@@ -165,6 +165,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-cn
           cms_resource_group: RG-AU-Corp
+      timeouts:
+        http_keep_alive: 4
 
     cn1sandinternal1testservices0:
       # cn1-sand-internal-1-test-services-0
