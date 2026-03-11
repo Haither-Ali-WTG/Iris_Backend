@@ -455,7 +455,7 @@ scom-wtg-web.wtg.zone:
     enabled: true
     http_path: /
     check_expect: '200'
-  encryption: false
+  encryption: true
   servers:
     - name: au2co-somm-401
       ip: 10.2.82.51
@@ -475,7 +475,7 @@ scom-tenant-web.wtg.zone:
     enabled: true
     http_path: /
     check_expect: '200'
-  encryption: false
+  encryption: true
   servers:
     - name: au2co-somm-421
       ip: 10.2.82.21
