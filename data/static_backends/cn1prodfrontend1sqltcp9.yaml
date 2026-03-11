@@ -1,0 +1,24 @@
+---
+# KEEP IN SYNC: haproxy/cn1-prod-frontend-1/ansible-templates/haproxy-prod-sqlreadonly.cfg.j2
+
+### TEST SA1
+
+cn1wtreadonly2l1-wisetechglobal-cn:
+  clustered_instances: [cn1prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: cn1wtreadonly2l1
+      ip: 10.5.44.34
+      port: 1433
+
+### PROD SA1
+
+cn1wpreadonly2l1-wisetechglobal-cn:
+  clustered_instances: [cn1prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: cn1wpreadonly2l1
+      ip: 10.5.44.54
+      port: 1433

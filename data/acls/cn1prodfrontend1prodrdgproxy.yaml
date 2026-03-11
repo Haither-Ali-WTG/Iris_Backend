@@ -1,0 +1,16 @@
+---
+star_wisetechglobal_cn:
+  description: "*.wisetechglobal.cn"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
+
+rdg_rpc_path:
+  description: RPC rdg path /rpc
+  tests:
+    - path_beg -i /rpc
+
+cw-prod-password-rdg_host:
+  description: |-
+    Host address for password auth RD Gateway
+  tests:
+    - hdr(host),field(1,:) -i cncloud-cn1.wisetechglobal.cn
