@@ -27,6 +27,16 @@ au.cww.wisegrid.net-catchall:
     server AU2WP-SBLZ-404 10.2.72.21:80
     server AU2WP-SBLZ-405 10.2.72.23:80
     server AU2WP-SBLZ-406 10.2.72.24:80
+    server AU2WP-SRDH-401 10.2.124.134:80
+    server AU2WP-SRDH-402 10.2.124.12:80
+    server AU2WP-SRDH-403 10.2.124.13:80
+    server AU2WP-SRDH-404 10.2.124.14:80
+    server AU2WP-SRDH-405 10.2.124.15:80
+    server AU2WP-SRDH-406 10.2.124.16:80
+    server AU2WP-SRDH-407 10.2.124.17:80
+    server AU2WP-SRDH-408 10.2.124.18:80
+    server AU2WP-SRDH-409 10.2.124.19:80
+    server AU2WP-SRDH-410 10.2.124.20:80
 
 cww.wisetechglobal.com-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
