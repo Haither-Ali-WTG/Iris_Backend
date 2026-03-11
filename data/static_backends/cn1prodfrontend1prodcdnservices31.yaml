@@ -13,5 +13,5 @@ cn1wca.wisetechglobal.cn:
       ip: 10.5.65.10
       port: 443
     - name: cn1wp-swfe-2
-      ip: 10.5.65.100
+      ip: 10.5.64.100
       port: 443
