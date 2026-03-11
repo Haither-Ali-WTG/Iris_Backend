@@ -3,7 +3,6 @@ cn1wca.wisetechglobal.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
   cookie:
     name: WCAPFE
-  encryption: true
   http_health_check:
     enabled: true
     method: GET
@@ -11,7 +10,7 @@ cn1wca.wisetechglobal.cn:
   servers:
     - name: cn1wp-swfe-1
       ip: 10.5.65.10
-      port: 443
+      port: 80
     - name: cn1wp-swfe-2
       ip: 10.5.64.100
-      port: 443
+      port: 80
