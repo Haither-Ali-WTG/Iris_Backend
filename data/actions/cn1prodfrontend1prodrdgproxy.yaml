@@ -11,5 +11,5 @@ cw_rdg_backend_selection_password:
     Select correct backend based on host requested and connection type - Password
   order: 81
   actions:
-    - use_backend cn1-cw-prod-password-rdg-rpc if cw-prod-password-rdg_host remote_desktop_gateway_rpc_path
-    - use_backend cn1-cw-prod-password-rdg-http if cw-prod-password-rdg_host !remote_desktop_gateway_rpc_path
+    - use_backend cn1-cw-prod-password-rdg-rpc if cw-prod-password-rdg_host rdg_rpc_path
+    - use_backend cn1-cw-prod-password-rdg-http if cw-prod-password-rdg_host !rdg_rpc_path
