@@ -450,7 +450,7 @@ ausyd-ctohangfire-production.wtg.zone:
 scom-wtg-web.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
   cookie:
-    name: scomwtgweb
+    name: SCOMWTGWEB
   http_health_check:
     enabled: true
     http_path: /
@@ -470,7 +470,7 @@ scom-wtg-web.wtg.zone:
 scom-tenant-web.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
   cookie:
-    name: scomtenantweb
+    name: SCOMTENANTWEB
   http_health_check:
     enabled: true
     http_path: /
