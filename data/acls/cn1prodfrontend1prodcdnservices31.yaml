@@ -9,6 +9,12 @@ star_wisetechglobal_cn:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisetechglobal\.cn$
 
+wca_denied_paths:
+  description: |-
+    Disallow wtg paths for WCA production services
+  tests:
+    - path_reg -i ^\/wtg(.*?)$
+
 wca_prod_url:
   description: |-
     Hostnames for WCA production services
