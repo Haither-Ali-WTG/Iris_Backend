@@ -3740,20 +3740,20 @@ integration-hub.wisegrid.net:
   http_health_check:
     enabled: false
     http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 proto h2 inter 10s fall 3 rise 2
+  default_server: check ssl proto h2 inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2
       ip: 10.2.214.15
-      port: 30401
+      port: 30402
     - name: w2.au2prod2
       ip: 10.2.214.16
-      port: 30401
+      port: 30402
     - name: w3.au2prod2
       ip: 10.2.214.17
-      port: 30401
+      port: 30402
     - name: w4.au2prod2
       ip: 10.2.214.18
-      port: 30401
+      port: 30402
     - name: w5.au2prod2
       ip: 10.2.214.19
-      port: 30401
+      port: 30402
