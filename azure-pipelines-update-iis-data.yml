@@ -2,8 +2,8 @@
 trigger: none
 
 schedules:
-  - cron: "* * * * *"
-    displayName: Every hour Automatic IIS data colection
+  - cron: "0 * * * *"
+    displayName: Every hour Automatic IIS data collection
     batch: true
     always: true
     branches:
