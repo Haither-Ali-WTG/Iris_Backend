@@ -3,6 +3,7 @@ cn1wca.wisetechglobal.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
   cookie:
     name: WCAPFE
+  encryption: true
   http_health_check:
     enabled: true
     method: GET
