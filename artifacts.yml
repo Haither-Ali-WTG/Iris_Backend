@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260311.1
-  # Wed Mar 11 03:28:03 UTC 2026 -- Wed Mar 11 14:28:03 AEDT 2026
+  # Dante Build Artifact 20260313.1
+  # Thu Mar 12 20:41:34 UTC 2026 -- Fri Mar 13 07:41:34 AEDT 2026
   #
-  # Merged PR 46097: Added automated IIS sites collection to automerge
-  # 23904725efc3d0ff24a7e6719f4ae9c73c092097
-  dante_build_id: '1637074'
+  # Merge pull request 46223 from dante_artifact_upgrade into master
+  # 26e9e9b90ce5500b4a9596639cfc9b1a8ae9723c
+  dante_build_id: '1638807'
 
-  # virgil 20260313.1
-  # Thu Mar 12 19:54:43 UTC 2026 -- Fri Mar 13 06:54:43 AEDT 2026
+  # virgil 20260313.4
+  # Thu Mar 12 21:11:43 UTC 2026 -- Fri Mar 13 08:11:43 AEDT 2026
   #
-  # Merged PR 46167: Move last C54 and first C58 to VMware
-  # 4d7a7c07c857cfe7c868929c321f7221cfcf45b0
-  virgil_build_id: '1638758'
+  # Merged PR 46229: Move us2wp-svir-039 to VMware
+  # 51ad27523f8ddc08ac99144128fc9b1a347cf54c
+  virgil_build_id: '1638844'
 
   # sqlbilling 20260312.5
   # Thu Mar 12 10:17:31 UTC 2026 -- Thu Mar 12 21:17:31 AEDT 2026
