@@ -104,12 +104,6 @@ spire_wtg_zone:
     ## spire
     - hdr(host) -i spire-au-dev.wtg.zone
 
-devtools_wtg_zone:
-  description: "au2 devtools urls"
-  tests:
-    ## devtools
-    - hdr(host) -i devtools-experiments-staging.wtg.zone
-
 star_cargowise_com:
   description: "*.cargowise.com"
   tests:
