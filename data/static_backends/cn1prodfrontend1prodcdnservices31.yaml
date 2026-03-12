@@ -1,5 +1,5 @@
 ---
-cn1wca.wisegrid.net:
+cn1wca.wisetechglobal.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
   cookie:
     name: WCAPFE
@@ -12,5 +12,5 @@ cn1wca.wisegrid.net:
       ip: 10.5.65.10
       port: 80
     - name: cn1wp-swfe-2
-      ip: 10.5.65.100
+      ip: 10.5.64.100
       port: 80
