@@ -51,6 +51,7 @@ custom_internal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i proget-au.wisetechglobal.com
     - hdr(host) -i cwbot-corp.wtg.zone
     - hdr(host) -i devtools-experiments.wtg.zone
+    - hdr(host) -i devtools-experiments-staging.wtg.zone
     - hdr(host) -i dgsegregation-staging.wtg.zone
     - hdr(host) -i triageassist-sand.wtg.zone
     - hdr(host) -i triageassist-api-sand.wtg.zone
