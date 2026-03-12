@@ -446,3 +446,43 @@ ausyd-ctohangfire-production.wtg.zone:
     - name: au2wp-sdkr-501a
       ip: 10.2.67.56
       port: 3501
+
+scom-wtg-web.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: SCOMWTGWEB
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  encryption: true
+  servers:
+    - name: au2co-somm-401
+      ip: 10.2.82.51
+      port: 443
+    - name: au2co-somm-402
+      ip: 10.2.82.52
+      port: 443
+    - name: au2co-somm-403
+      ip: 10.2.82.53
+      port: 443
+
+scom-tenant-web.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  cookie:
+    name: SCOMTENANTWEB
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  encryption: true
+  servers:
+    - name: au2co-somm-421
+      ip: 10.2.82.21
+      port: 443
+    - name: au2co-somm-422
+      ip: 10.2.82.22
+      port: 443
+    - name: au2co-somm-423
+      ip: 10.2.82.23
+      port: 443
