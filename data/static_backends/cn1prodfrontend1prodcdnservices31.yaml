@@ -14,3 +14,19 @@ cn1wca.wisetechglobal.cn:
     - name: cn1wp-swfe-2
       ip: 10.5.64.100
       port: 80
+
+identity-temp.wisetechglobal.cn:
+  clustered_instances: [cn1prodfrontend1prodcdnservices31]
+  cookie:
+    name: TVSP
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: cn1wp-siss-401
+      ip: 10.5.65.11
+      port: 80
+    - name: cn1wp-siss-402
+      ip: 10.5.64.10
+      port: 80
