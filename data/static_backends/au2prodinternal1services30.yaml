@@ -486,3 +486,25 @@ scom-tenant-web.wtg.zone:
     - name: au2co-somm-423
       ip: 10.2.82.23
       port: 443
+
+xhub-eservices.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WP-SXTR-401
+      ip: 10.2.70.25
+      port: 8080
+
+xhubtest-eservices.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: AU2WT-SXTR-401
+      ip: 10.2.70.18
+      port: 8080
