@@ -625,6 +625,18 @@ sydbiztalk-test.wisegrid.net:
       ip: 10.2.118.36
       port: 80
 
+sydbiztalk-as2-test.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: BIZTAS
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: AU2SP-SBTS-401
+      ip: 10.2.118.36
+      port: 80
+
 gbpentantws-test.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
