@@ -7,12 +7,12 @@ variables:
   # 2db55e4aee979cca3ec4cca415faa29d71b91b4c
   dante_build_id: '1638890'
 
-  # virgil 20260313.4
-  # Thu Mar 12 21:11:43 UTC 2026 -- Fri Mar 13 08:11:43 AEDT 2026
+  # virgil 20260313.6
+  # Fri Mar 13 03:14:14 UTC 2026 -- Fri Mar 13 14:14:14 AEDT 2026
   #
-  # Merged PR 46229: Move us2wp-svir-039 to VMware
-  # 51ad27523f8ddc08ac99144128fc9b1a347cf54c
-  virgil_build_id: '1638844'
+  # Merged PR 46242: WI01043987 - DPM - rereack DPM server and tape library
+  # 05c1b6119329ecb2bbd7d8367edd8ed50bb2fbd1
+  virgil_build_id: '1639160'
 
   # sqlbilling 20260312.5
   # Thu Mar 12 10:17:31 UTC 2026 -- Thu Mar 12 21:17:31 AEDT 2026
