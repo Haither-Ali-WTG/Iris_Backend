@@ -20,7 +20,7 @@ e2open-xmpp:
       ip: 10.210.132.34
       port: 9090
 
-hh1.art.e2open.com:
+hh1-art-e2open-com:
   clustered_instances: [e2openprodinternaltcp]
   http_health_check:
     enabled: false
