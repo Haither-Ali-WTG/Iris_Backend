@@ -180,7 +180,7 @@ stages:
                             -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
                             -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
                             -e="target_dc=${{ run.target_dc }}" \
-                            -e="use_local_backends=$(use_local_backends)"
+                            -e="use_local_backends=${{ run.use_local_backends }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
