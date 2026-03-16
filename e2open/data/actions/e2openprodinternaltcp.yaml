@@ -15,4 +15,4 @@ e2open_hh1_art:
   description: e2open hh1.art.e2open.com
   order: 50
   actions:
-    - use_backend hh1.art.e2open.com if acl_e2open_hh1_art
+    - use_backend hh1-art-e2open-com if acl_e2open_hh1_art
