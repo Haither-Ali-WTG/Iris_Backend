@@ -19,3 +19,12 @@ e2open-xmpp:
     - name: e2open-xmpp-1
       ip: 10.210.132.34
       port: 9090
+
+hh1.art.e2open.com:
+  clustered_instances: [e2openprodinternaltcp]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: hh1art
+      ip: 10.212.0.19
+      port: 443
