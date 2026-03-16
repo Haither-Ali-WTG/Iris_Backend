@@ -36,7 +36,7 @@ awscli==1.36.40
     # via -r requirements.in
 bandit==1.9.4
     # via -r requirements.in
-black==26.3.0
+black==26.3.1
     # via ansible-lint
 botocore==1.35.99
     # via
@@ -53,7 +53,7 @@ cffi==2.0.0
     # via
     #   ansible-lint
     #   cryptography
-charset-normalizer==3.4.5
+charset-normalizer==3.4.6
     # via requests
 click==8.3.1
     # via
@@ -84,7 +84,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.25.0
+filelock==3.25.2
     # via
     #   ansible-lint
     #   safety
