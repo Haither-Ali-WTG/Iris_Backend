@@ -7,12 +7,12 @@ variables:
   # e992651b937f488b3800a8dd397dc48e71c7e2d8
   dante_build_id: '1639206'
 
-  # virgil 20260313.6
-  # Fri Mar 13 03:14:14 UTC 2026 -- Fri Mar 13 14:14:14 AEDT 2026
+  # virgil 20260317.2
+  # Mon Mar 16 18:21:13 UTC 2026 -- Tue Mar 17 05:21:13 AEDT 2026
   #
-  # Merged PR 46242: WI01043987 - DPM - rereack DPM server and tape library
-  # 05c1b6119329ecb2bbd7d8367edd8ed50bb2fbd1
-  virgil_build_id: '1639160'
+  # Merge pull request 46414 from virgil_python_upgrade into master
+  # b92f2a37eaf0f763da0adb519c69103e8727f2ff
+  virgil_build_id: '1642587'
 
   # sqlbilling 20260316.2
   # Mon Mar 16 10:55:18 UTC 2026 -- Mon Mar 16 21:55:18 AEDT 2026
