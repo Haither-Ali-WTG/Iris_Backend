@@ -1254,7 +1254,7 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-#start of sand warehouse
+# start of sand warehouse
 warehouse.k8s.sand.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -1277,9 +1277,9 @@ warehouse.k8s.sand.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-#end of sand warehouse
+# end of sand warehouse
 
-#start of  warehouse
+# start of  warehouse
 warehouse.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -1302,7 +1302,7 @@ warehouse.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
-#end of warehouse
+# end of warehouse
 
 cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
