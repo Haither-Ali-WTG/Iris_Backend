@@ -5,6 +5,12 @@ e2open_sftp:
   actions:
     - use_backend e2open-sftp if acl_e2open_sftp
 
+e2open_sftp_proxy:
+  description: e2open SFTP Proxy
+  order: 31
+  actions:
+    - use_backend e2open-sftp-proxy if acl_e2open_sftp_proxy
+
 e2open_xmpp:
   description: e2open XMPP
   order: 40
