@@ -20,6 +20,7 @@ us.cww.wisegrid.net-catchall:
     backend us_cww_wisegrid_net-catchall
     option httpchk
     http-check send meth HEAD uri /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
