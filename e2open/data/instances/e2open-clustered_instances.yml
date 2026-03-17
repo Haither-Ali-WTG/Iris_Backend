@@ -7,6 +7,9 @@ clustered_instances:
         mode: tcp
       frontend:
         maxconn: 20000
+        proxy_ports:
+          plaintext:
+            - 2004  # SFTP Proxy
         ports:
           plaintext:
             - 2001  # SFTP

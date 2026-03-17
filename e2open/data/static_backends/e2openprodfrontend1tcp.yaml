@@ -11,6 +11,19 @@ e2open-sftp:
       ip: 147.189.32.137
       port: 22
 
+e2open-sftp-proxy:
+  clustered_instances: [e2openprodfrontend1tcp]
+  http_health_check:
+    enabled: false
+  default_server: check send-proxy-v2
+  servers:
+    - name: e2open-sftp-proxy-1
+      ip: 147.189.32.136
+      port: 8022
+    - name: e2open-sftp-proxy-2
+      ip: 147.189.32.137
+      port: 8022
+
 e2open-xmpp:
   clustered_instances: [e2openprodfrontend1tcp]
   http_health_check:
