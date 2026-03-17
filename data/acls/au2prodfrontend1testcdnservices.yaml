@@ -76,3 +76,21 @@ star_wisegrid_net:
   description: "*.wisegrid.net"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisegrid\.net$
+
+star_transport_wisetechglobal_com:
+  description: "*.transport.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
+
+cto_api_path:
+  description: |-
+    CTO API paths for MCP oauth and related endpoints
+  tests:
+    - path_beg -i /.well-known/oauth-authorization-server/mcp
+    - path_beg -i /.well-known/oauth-protected-resource//mcp
+    - path_beg -i /mcp/authorize
+    - path_beg -i /mcp/token
+    - path_beg -i /mcp/register
+    - path_beg -i /mcp/oauth/login
+    - path_beg -i /mcp/tools/
+    - path_beg -i /api
