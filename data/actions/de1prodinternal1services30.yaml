@@ -20,6 +20,7 @@ https_redirect:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_cwconnector_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_iris-stats_wtg_zone !{ ssl_fc }
 
 de1s3_3_secondary_backend_selection:
   description: |-

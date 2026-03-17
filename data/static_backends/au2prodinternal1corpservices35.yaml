@@ -1540,3 +1540,276 @@ cms-inobiz.wtg.zone:
     - name: au2co-siis-403a
       ip: 10.2.69.36
       port: 80
+
+# iris-stats services
+au2corprdg.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2037
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2037
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2037
+
+au2prodelasticbunker1.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00951
+      ip: 10.2.245.111
+      port: 2049
+    - name: au2lbl00952
+      ip: 10.2.245.112
+      port: 2049
+
+au2prodfrontend1corpservices1.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2059
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2059
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2059
+
+au2prodfrontend1prodcdnservices31.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2057
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2057
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2057
+
+au2prodfrontend1prodcwservices26.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2051
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2051
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2051
+
+au2prodfrontend1prodidp.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2047
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2047
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2047
+
+au2prodfrontend1prodservices.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2031
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2031
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2031
+
+au2prodfrontend1sqltcp9.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2048
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2048
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2048
+
+au2prodfrontend1tcp.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2034
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2034
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2034
+
+au2prodfrontend1testcwservices27.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2053
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2053
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2053
+
+au2prodinternal1corpservices35.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00886
+      ip: 10.2.83.31
+      port: 2061
+    - name: au2lbl00887
+      ip: 10.2.83.32
+      port: 2061
+    - name: au2lbl00888
+      ip: 10.2.83.33
+      port: 2061
+
+au2prodinternal1services30.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00886
+      ip: 10.2.83.31
+      port: 2341
+    - name: au2lbl00887
+      ip: 10.2.83.32
+      port: 2341
+    - name: au2lbl00888
+      ip: 10.2.83.33
+      port: 2341
+
+au2prodinternaltcp.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00886
+      ip: 10.2.83.31
+      port: 2031
+    - name: au2lbl00887
+      ip: 10.2.83.32
+      port: 2031
+    - name: au2lbl00888
+      ip: 10.2.83.33
+      port: 2031
+
+au2sandinternal1.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00416
+      ip: 10.2.136.11
+      port: 2047
+    - name: au2lbl00417
+      ip: 10.2.136.12
+      port: 2047
+
+au2sandinternal2testservices0.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00889
+      ip: 10.2.136.13
+      port: 2055
+
+au2sandinternalrdg.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00416
+      ip: 10.2.136.11
+      port: 2041
+    - name: au2lbl00417
+      ip: 10.2.136.12
+      port: 2041
+
+au2sandinternaltcp.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00416
+      ip: 10.2.136.11
+      port: 2043
+    - name: au2lbl00417
+      ip: 10.2.136.12
+      port: 2043
+# end of iris-stats services

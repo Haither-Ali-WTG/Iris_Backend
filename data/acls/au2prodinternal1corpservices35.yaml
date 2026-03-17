@@ -30,6 +30,11 @@ iris_stats_urls:
     - hdr(host),field(1,:) -i au2sandinternalrdg.wtg.zone
     - hdr(host),field(1,:) -i au2sandinternaltcp.wtg.zone
 
+star_iris-stats_wtg_zone:
+  description: "*.iris-stats.wtg.zone"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?iris-stats\.wtg\.zone$
+
 knowledge_mcp_wtg_zone:
   description: "au2 knowledge urls"
   tests:

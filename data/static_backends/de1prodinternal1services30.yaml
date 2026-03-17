@@ -413,3 +413,223 @@ peppol-pdp-test.wtg.zone:
     - name: de1wt-spdp-401
       ip: 10.3.88.110
       port: 5001
+
+# iris-stats services
+de1prodelasticbunker1.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00954
+      ip: 10.3.245.111
+      port: 2049
+    - name: de1lbl00955
+      ip: 10.3.245.112
+      port: 2049
+
+de1prodfrontend1prodcdnservices31.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2057
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2057
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2057
+
+de1prodfrontend1prodcwservices26.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2051
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2051
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2051
+
+de1prodfrontend1prodproxy.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2059
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2059
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2059
+
+de1prodfrontend1sqltcp1.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2048
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2048
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2048
+
+de1prodfrontend1testcwservices27.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2053
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2053
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2053
+
+de1prodinternal1services30.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00931
+      ip: 10.3.83.31
+      port: 2341
+    - name: de1lbl00932
+      ip: 10.3.83.32
+      port: 2341
+    - name: de1lbl00933
+      ip: 10.3.83.33
+      port: 2341
+
+de1prodfrontend1testcdnservices.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2062
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2062
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2062
+
+de1prodfrontend1prodservices.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2064
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2064
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2064
+
+de1prodfrontend1prodtcp.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2066
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2066
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2066
+
+de1prodfrontend1tenantservices.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2068
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2068
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2068
+
+de1prodfrontend1tenanttcp.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2070
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2070
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2070
+
+de1sandinternal1services.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00931
+      ip: 10.3.83.31
+      port: 2343
+    - name: de1lbl00932
+      ip: 10.3.83.32
+      port: 2343
+    - name: de1lbl00933
+      ip: 10.3.83.33
+      port: 2343
+# end of iris-stats services
