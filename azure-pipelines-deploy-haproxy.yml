@@ -23,28 +23,28 @@ parameters:
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-        use_local_backends: false
+        use_local_backends: true
       - target_dc: DE1
         agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-2.wtg.ws
         s3_iris_bucket: s3://de-iscore-iris-prod-1/
         pure_usernames: de-iscore-iris-prod-1-rw
-        use_local_backends: false
+        use_local_backends: true
       - target_dc: US2
         agent_dc: US2
         agent_hall: A
         s3_host: us2s3-2.wtg.ws
         s3_iris_bucket: s3://us-iscore-iris-prod-1/
         pure_usernames: us-iscore-iris-prod-1-rw
-        use_local_backends: false
+        use_local_backends: true
       - target_dc: CN1
         agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-        use_local_backends: false
+        use_local_backends: true
       - target_dc: SA1
         agent_dc: AU2
         agent_hall: A
