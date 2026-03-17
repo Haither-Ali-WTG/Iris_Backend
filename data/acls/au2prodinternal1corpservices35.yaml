@@ -109,7 +109,7 @@ star_cargowise_com:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?cargowise\.com$
 
-warehouse_k8s_sand_wtg_zone: 
+warehouse_k8s_sand_wtg_zone:
   description: "au2 warehouse urls"
   tests:
     - hdr(host) -i warehouse.k8s.sand.wtg.zone
