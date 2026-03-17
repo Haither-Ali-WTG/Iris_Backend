@@ -2,10 +2,10 @@
 
 global_defs {
     vrrp_garp_interval 0.001
-    vrrp_garp_master_delay 10
+    vrrp_garp_master_delay 1
     vrrp_gna_interval 0.000001
     vrrp_garp_master_refresh_repeat 2
-    vrrp_garp_master_refresh 60
+    vrrp_garp_master_refresh 30
 }
 
 {% for vrrp_instance in vrrp_instances %}
@@ -23,8 +23,6 @@ vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
     {% else %}
     nopreempt
     {% endif %}
-    use_vmac vrrp{{ vrrp_instance.virtual_router_id }}
-    vmac_xmit_base
 {% if vrrp_instance.config.vlan == 0 and peer_ips %}
     unicast_peer {
 {% for ip in peer_ips %}
