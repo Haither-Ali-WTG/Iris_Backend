@@ -80,7 +80,7 @@ star_wisegrid_net:
 star_transport_wisetechglobal_com:
   description: "*.transport.wisetechglobal.com"
   tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
 
 cto_api_path:
   description: |-
