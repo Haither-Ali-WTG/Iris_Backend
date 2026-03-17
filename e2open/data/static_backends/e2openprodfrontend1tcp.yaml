@@ -1,6 +1,6 @@
 ---
 e2open-sftp:
-  clustered_instances: [e2openprodinternaltcp]
+  clustered_instances: [e2openprodfrontend1tcp]
   http_health_check:
     enabled: false
   servers:
@@ -12,7 +12,7 @@ e2open-sftp:
       port: 22
 
 e2open-xmpp:
-  clustered_instances: [e2openprodinternaltcp]
+  clustered_instances: [e2openprodfrontend1tcp]
   http_health_check:
     enabled: false
   servers:
@@ -21,7 +21,7 @@ e2open-xmpp:
       port: 9090
 
 hh1-art-e2open-com:
-  clustered_instances: [e2openprodinternaltcp]
+  clustered_instances: [e2openprodfrontend1tcp]
   http_health_check:
     enabled: false
   servers:
