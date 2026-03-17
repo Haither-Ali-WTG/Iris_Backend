@@ -17,8 +17,8 @@ e2open_hh1_art:
   actions:
     - use_backend hh1-art-e2open-com if acl_e2open_hh1_art
 
-e2open_sftp:
-  description: e2open SFTP
+e2open_sftp_proxy:
+  description: e2open SFTP Proxy
   order: 31
   actions:
     - use_backend e2open-sftp-proxy if acl_e2open_sftp_proxy
