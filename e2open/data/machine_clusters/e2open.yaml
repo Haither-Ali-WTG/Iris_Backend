@@ -1,5 +1,5 @@
 ---
-e2open-prod-internal-1:
+e2open-prod-frontend-1:
   machines:
     prod2017: ~
     prod2018: ~
