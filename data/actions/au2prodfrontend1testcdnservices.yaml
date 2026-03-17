@@ -55,7 +55,7 @@ star_staging_transport_wisetechglobal_com_api_backend:
   actions:
     - >-
       use_backend %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g)]-api if
-      { hdr(host),field(1,:) -m reg -i ^([^\.]+)?-staging\.transport\.wisetechglobal\.com$ } { path_beg -i /api }
+      star_transport_wisetechglobal_com cto_api_path
 
 testtariff_management_portal_backend:
   description: |-
