@@ -895,7 +895,7 @@ spire-au-dev.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of spire
-# temporal
+# Temporal frontend
 temporal.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -1029,6 +1029,139 @@ temporal-au.sand.wtg.zone:
       ip: 10.2.213.19
       port: 30100
 # end of temporal
+# Temporal Web UI
+temporal-ui.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-ui-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-ui.sand.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-ui-au.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-ui-au-staging.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+temporal-ui-au.sand.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
 # llm manager
 litellm.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]

@@ -96,12 +96,20 @@ temporal_wtg_zone:
   description: "au2 temporal urls"
   tests:
     ## temporal
-    - hdr(host) -i temporal-au.wtg.zone
-    - hdr(host) -i temporal-au.sand.wtg.zone
-    - hdr(host) -i temporal-au-staging.wtg.zone
+    # frontend
     - hdr(host) -i temporal.wtg.zone
     - hdr(host) -i temporal.sand.wtg.zone
     - hdr(host) -i temporal-staging.wtg.zone
+    - hdr(host) -i temporal-au.wtg.zone
+    - hdr(host) -i temporal-au.sand.wtg.zone
+    - hdr(host) -i temporal-au-staging.wtg.zone
+    # web
+    - hdr(host) -i temporal-ui.wtg.zone
+    - hdr(host) -i temporal-ui.sand.wtg.zone
+    - hdr(host) -i temporal-ui-staging.wtg.zone
+    - hdr(host) -i temporal-ui-au.wtg.zone
+    - hdr(host) -i temporal-ui-au.sand.wtg.zone
+    - hdr(host) -i temporal-ui-au-staging.wtg.zone
 
 spire_wtg_zone:
   description: "au2 spire urls"
