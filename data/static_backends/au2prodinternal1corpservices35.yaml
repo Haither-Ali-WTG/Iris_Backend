@@ -1254,55 +1254,18 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-# start of sand warehouse
-warehouse.k8s.sand.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-    - name: w2.au2prod1
-      ip: 10.2.213.16
-      port: 30100
-    - name: w3.au2prod1
-      ip: 10.2.213.17
-      port: 30100
-    - name: w4.au2prod1
-      ip: 10.2.213.18
-      port: 30100
-    - name: w5.au2prod1
-      ip: 10.2.213.19
-      port: 30100
-# end of sand warehouse
-
-# start of  warehouse
-warehouse.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-    - name: w2.au2prod1
-      ip: 10.2.213.16
-      port: 30100
-    - name: w3.au2prod1
-      ip: 10.2.213.17
-      port: 30100
-    - name: w4.au2prod1
-      ip: 10.2.213.18
-      port: 30100
-    - name: w5.au2prod1
-      ip: 10.2.213.19
-      port: 30100
-# end of warehouse
+# custom ingress defintion for ocp
+au2prod1-prodinternalcorp-ingress:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2prod1-prodinternalcorp-ingress
+    mode tcp
+    balance roundrobin
+    server w1.au2prod2 10.2.213.15:30100 check
+    server w2.au2prod2 10.2.213.16:30100 check
+    server w3.au2prod2 10.2.213.17:30100 check
+    server w4.au2prod2 10.2.213.18:30100 check
+    server w5.au2prod2 10.2.213.19:30100 check
 
 cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]

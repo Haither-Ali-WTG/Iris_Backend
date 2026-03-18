@@ -1,4 +1,4 @@
----
+  ---
 https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains
@@ -16,3 +16,10 @@ restrict_iris_stats_url:
   order: 6
   actions:
     - http-request deny if !jumphost_src iris_stats_urls
+
+au2prod_ocp_backend_selection:
+  description: |-
+    Backend selection for au2prod OCP internal corp services
+  order: 80
+  actions:
+    - use_backend au2prod1-prodinternalcorp-ingress if custom_internal_corp_au2prod1_ocp_wtg_ws
