@@ -1254,12 +1254,13 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-# custom ingress defintion for ocp
+# custom ingress defintion for ocp 
 au2prod1-prodinternalcorp-ingress:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2prod1-prodinternalcorp-ingress
-    mode tcp
+    option httpchk
+    http-check send meth GET uri /healthz/ready ver HTTP/1.1
     balance roundrobin
     server w1.au2prod2 10.2.213.15:30100 check
     server w2.au2prod2 10.2.213.16:30100 check
