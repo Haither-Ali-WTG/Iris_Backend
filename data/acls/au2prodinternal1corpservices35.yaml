@@ -14,7 +14,6 @@ iris_stats_urls:
   tests:
     - hdr(host),field(1,:) -i au2corprdg.wtg.zone
     - hdr(host),field(1,:) -i au2prodelasticbunker1.wtg.zone
-    - hdr(host),field(1,:) -i au2prodfrontend1corpservices1.wtg.zone
     - hdr(host),field(1,:) -i au2prodfrontend1prodcdnservices31.wtg.zone
     - hdr(host),field(1,:) -i au2prodfrontend1prodcwservices26.wtg.zone
     - hdr(host),field(1,:) -i au2prodfrontend1prodidp.wtg.zone
