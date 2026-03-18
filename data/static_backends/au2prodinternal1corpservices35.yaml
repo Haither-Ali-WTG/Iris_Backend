@@ -1254,7 +1254,7 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-# custom ingress defintion for ocp 
+# custom ingress defintion for ocp
 au2prod1-prodinternalcorp-ingress:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
