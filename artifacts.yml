@@ -7,12 +7,12 @@ variables:
   # 27a35d117284e84e5de2a87377ff59c87bec3e65
   dante_build_id: '1642637'
 
-  # virgil 20260318.4
-  # Wed Mar 18 01:33:49 UTC 2026 -- Wed Mar 18 12:33:49 AEDT 2026
+  # virgil 20260318.6
+  # Wed Mar 18 02:15:51 UTC 2026 -- Wed Mar 18 13:15:51 AEDT 2026
   #
-  # Merged PR 46547: vxlans for Blume Logistics
-  # 060530d8513d0710f3151b69d243645168356723
-  virgil_build_id: '1643938'
+  # Merged PR 46548: Move Sand HyperV servers to SDAT
+  # dbb77f8220078c27481489db0255d0b5e533467b
+  virgil_build_id: '1643975'
 
   # sqlbilling 20260317.2
   # Tue Mar 17 06:50:09 UTC 2026 -- Tue Mar 17 17:50:09 AEDT 2026
