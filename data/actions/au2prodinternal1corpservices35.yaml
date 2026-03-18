@@ -1,4 +1,4 @@
-  ---
+---
 https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains
