@@ -677,6 +677,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-sand-wtg-zone
           cms_resource_group: RG-AU-Sand
+        - name: star-iris-stats-wtg-zone
+          cms_resource_group: RG-AU-Corp
       stats:
         ports:
           web: 2061

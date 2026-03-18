@@ -40,3 +40,8 @@ iris_stats_urls:
     - hdr(host) -i us2prodfrontend1sqltcp9.wtg.zone
     - hdr(host) -i us2prodfrontend1testcwservices27.wtg.zone
     - hdr(host) -i us2prodinternal1services30.wtg.zone
+
+star_iris-stats_wtg_zone:
+  description: "*.iris-stats.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?iris-stats\.wtg\.zone$
