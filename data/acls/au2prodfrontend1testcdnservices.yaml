@@ -87,10 +87,6 @@ cto_api_path:
     CTO API paths for MCP oauth and related endpoints
   tests:
     - path_beg -i /.well-known/oauth-authorization-server/mcp
-    - path_beg -i /.well-known/oauth-protected-resource//mcp
-    - path_beg -i /mcp/authorize
-    - path_beg -i /mcp/token
-    - path_beg -i /mcp/register
-    - path_beg -i /mcp/oauth/login
-    - path_beg -i /mcp/tools/
+    - path_beg -i /.well-known/oauth-protected-resource/mcp
+    - path_beg -i /mcp
     - path_beg -i /api
