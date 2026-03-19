@@ -1812,4 +1812,89 @@ au2sandinternaltcp.iris-stats.wtg.zone:
     - name: au2lbl00417
       ip: 10.2.136.12
       port: 2043
+
+cn1prodfrontend1prodcdnservices31.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2057
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2057
+
+cn1prodfrontend1sqltcp9.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2048
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2048
+
+cn1prodfrontend1prodcwservices26.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2051
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2051
+
+cn1prodfrontend1testcwservices27.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2053
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2053
+
+cn1prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2038
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2038
+
+cn1sandinternal1testservices0.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: cn1lbl00001
+      ip: 10.5.65.18
+      port: 2037
+    - name: cn1lbl00002
+      ip: 10.5.65.19
+      port: 2037
+
 # end of iris-stats services
