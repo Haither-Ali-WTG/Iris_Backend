@@ -20,6 +20,7 @@ au.cww.wisegrid.net-catchall:
     backend au_cww_wisegrid_net-catchall
     option httpchk
     http-check send meth HEAD uri /wtg/status
+    balance random
     cookie CWWA insert indirect nocache dynamic
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
@@ -44,6 +45,7 @@ cww.wisetechglobal.com-catchall:
     backend cw_wisetechglobal_com_catch_all
     option httpchk
     http-check send meth HEAD uri /wtg/status
+    balance random
     cookie AU2BLZ insert indirect nocache dynamic
     http-check expect rstatus 200
     default-server agent-check agent-port 8098
