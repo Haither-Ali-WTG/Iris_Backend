@@ -174,18 +174,6 @@
     group: "{{ subuser.subgid }}"
   become: yes
   register: haproxy_config
-  when: not (use_local_backends | default(false) | bool)
-
-- name: Template out the test haproxy config (using git files)
-  template:
-    src: haproxy_v2.cfg.j2
-    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
-    mode: u=r,go=
-    owner: "{{ subuser.subuid }}"
-    group: "{{ subuser.subgid }}"
-  become: yes
-  register: haproxy_config_v2
-  when: use_local_backends | default(false) | bool
 
 - name: Fetch the dumped config
   fetch:
