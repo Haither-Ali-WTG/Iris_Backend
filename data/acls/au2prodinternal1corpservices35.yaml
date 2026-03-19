@@ -92,18 +92,20 @@ llm_manager_wtg_zone:
     - hdr(host) -i task-automation.wtg.zone
     - hdr(host) -i task-automation-staging.wtg.zone
 
-temporal_wtg_zone:
+temporal_grpc_wtg_zone:
   description: "au2 temporal urls"
   tests:
-    ## temporal
-    # frontend
+    # frontend (grpc)
     - hdr(host) -i temporal.wtg.zone
     - hdr(host) -i temporal.sand.wtg.zone
     - hdr(host) -i temporal-staging.wtg.zone
     - hdr(host) -i temporal-au.wtg.zone
     - hdr(host) -i temporal-au.sand.wtg.zone
     - hdr(host) -i temporal-au-staging.wtg.zone
-    # web
+temporal_http_wtg_zone:
+  description: "au2 temporal urls"
+  tests:
+    # web (http)
     - hdr(host) -i temporal-ui.wtg.zone
     - hdr(host) -i temporal-ui.sand.wtg.zone
     - hdr(host) -i temporal-ui-staging.wtg.zone
