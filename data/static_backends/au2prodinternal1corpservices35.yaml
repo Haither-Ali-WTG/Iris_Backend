@@ -1938,7 +1938,7 @@ svc-wtlbdl.wtg.zone:
       ip: 10.2.69.83
       port: 80
 
-svc-wtlbdl.wtg.zone:
+www-wtlbdl.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
     enabled: true
