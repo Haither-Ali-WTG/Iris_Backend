@@ -1256,7 +1256,7 @@ task-automation-staging.wtg.zone:
 
 # custom ingress defintion for ocp
 au2prod1-prodinternalcorp-ingress:
-  clustered_instances: [au2prodinternal1services35]
+  clustered_instances: [au2prodinternal1corpservices35]
   full_override: |
     backend au2prod1-prodinternalcorp-ingress
     mode http
