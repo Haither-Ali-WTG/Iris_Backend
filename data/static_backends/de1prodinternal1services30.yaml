@@ -632,4 +632,103 @@ de1sandinternal1services.iris-stats.wtg.zone:
     - name: de1lbl00933
       ip: 10.3.83.33
       port: 2343
+
+sa1prodfrontend1sqltcp9.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2048
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2048
+
+sa1prodfrontend1prodcwservices26.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2051
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2051
+
+sa1prodfrontend1testcwservices27.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2053
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2053
+
+sa1sandinternal1testservices0.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2037
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2037
+
+sa1prodfrontend1prodcdnservices31.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2057
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2057
+
+sa1prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2038
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2038
+
+sa1prodfrontend1testrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: sa1lbl00001
+      ip: 10.96.64.18
+      port: 2040
+    - name: sa1lbl00002
+      ip: 10.96.64.19
+      port: 2040
+
 # end of iris-stats services
