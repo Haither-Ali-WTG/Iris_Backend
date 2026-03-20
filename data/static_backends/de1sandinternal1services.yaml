@@ -20,3 +20,14 @@ peppol-pdp.sand.wtg.zone:
     - name: de1sp-spdp-401
       ip: 10.3.116.110
       port: 5001
+
+peppol-messagehub-sand.sand.wtg.zone:
+  clustered_instances: [de1sandinternal1services]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1sp-spdp-401
+      ip: 10.3.116.110
+      port: 5002
