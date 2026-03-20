@@ -1385,6 +1385,7 @@ au2prod1-prodinternalcorp-ingress:
   clustered_instances: [au2prodinternal1corpservices35]
   full_override: |
     backend au2prod1-prodinternalcorp-ingress
+    mode http
     option httpchk
     http-check connect port 30200
     http-check send meth GET uri /healthz/ready ver HTTP/1.1
