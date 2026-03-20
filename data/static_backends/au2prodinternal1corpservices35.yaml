@@ -1387,14 +1387,15 @@ au2prod1-prodinternalcorp-ingress:
     backend au2prod1-prodinternalcorp-ingress
     mode http
     option httpchk
+    http-check connect port 30200
     http-check send meth GET uri /healthz/ready ver HTTP/1.1
     http-check expect status 200
     balance roundrobin
-    server w1.au2prod1 10.2.213.15:30100 check port 30200 ssl send-proxy-v2
-    server w2.au2prod1 10.2.213.16:30100 check port 30200 ssl send-proxy-v2
-    server w3.au2prod1 10.2.213.17:30100 check port 30200 ssl send-proxy-v2
-    server w4.au2prod1 10.2.213.18:30100 check port 30200 ssl send-proxy-v2
-    server w5.au2prod1 10.2.213.19:30100 check port 30200 ssl send-proxy-v2
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
 
 cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
