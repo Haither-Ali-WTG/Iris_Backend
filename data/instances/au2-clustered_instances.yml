@@ -625,29 +625,6 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
-    au2prodfrontend1corpservices1:
-      # per-clustered-instance settings (overrides) go here, for example:
-      dc: AU2
-      frontend:
-        maxconn: 20000
-        ports:
-          plaintext: [2024]
-          ssl: [2025]
-      machine_cluster: au2-prod-frontend-1
-      iis_servers: []
-      certificates:
-        - name: star-wisetechglobal-com
-          cms_resource_group: RG-AU-Corp
-        - name: star-wisetechglobal-cn
-        - name: star-wtg-zone
-          cms_resource_group: RG-AU-Corp
-      stats:
-        ports:
-          web: 2059
-          socket: 2058
-      timeouts:
-        http_keep_alive: 4
-
     au2prodinternal1corpservices35:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
