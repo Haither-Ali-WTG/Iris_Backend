@@ -1363,7 +1363,7 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-# custom ingress defintion for ocp
+# custom ingress defintion for ocp (dummy hdr added to meet requirement RFC7230 for HTTP/1.1)
 au2prod1-prodinternalcorp-ingress:
   clustered_instances: [au2prodinternal1corpservices35]
   full_override: |
@@ -1371,7 +1371,7 @@ au2prod1-prodinternalcorp-ingress:
     mode http
     option httpchk
     http-check connect port 30200
-    http-check send meth GET uri /healthz/ready ver HTTP/1.1
+    http-check send meth GET uri /healthz/ready ver HTTP/1.1 hdr Host dummyhdr
     http-check expect status 200
     balance roundrobin
     server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
