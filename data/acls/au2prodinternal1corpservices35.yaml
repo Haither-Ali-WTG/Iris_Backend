@@ -126,5 +126,5 @@ star_cargowise_com:
 custom_internal_corp_au2prod1_ocp_wtg_ws:
   description: "Custom internal au2prod1 OCP WTG WS hosts"
   tests:
-    - hdr(host) -i polaris.k8s.wtg.zone
+    - hdr(host) -i polaris.k8s.sand.wtg.zone
     - hdr(host) -i polaris.wtg.zone
