@@ -1,11 +1,4 @@
 ---
-secure_cookie:
-  description: |-
-    Set secure attribute
-  order: 60
-  actions:
-    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
-
 cw_rdg_backend_selection_password:
   description: |-
     Select correct backend based on host requested and connection type - Password
