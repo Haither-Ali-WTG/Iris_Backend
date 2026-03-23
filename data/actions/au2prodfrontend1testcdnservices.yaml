@@ -77,11 +77,14 @@ mobile_test_header_stripping:
   order: 3
   actions:
     - >-
-      http-response del-header X-AspNet-Version if
-      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+      http-request set-var(txn.is_mobile_cargowise_net) bool(true)
+      if { req.hdr(host),field(1,:) -i mobile-test.cargowise.net }
     - >-
-      http-response del-header X-AspNetMvc-Version if
-      { hdr(host),field(1,:) -i mobile-test.cargowise.net }
+      http-response del-header X-AspNet-Version
+      if { var(txn.is_mobile_cargowise_net) -m bool }
+    - >-
+      http-response del-header X-AspNetMvc-Version
+      if { var(txn.is_mobile_cargowise_net) -m bool }
 
 mobile_test_privatekey_deny:
   description: |-
