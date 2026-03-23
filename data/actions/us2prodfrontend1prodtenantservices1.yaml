@@ -4,8 +4,18 @@ br1_response_header:
     Ensure correct MIME type for Bysoft application updates
   order: 60
   actions:
-    - http-response set-header Content-Type application/java-archive if updates_bysoft_com_br is_java_application
-    - http-response del-header X-Content-Type-Options if updates_bysoft_com_br
+    - >-
+      http-request set-var(txn.is_updates_bysoft_com_br) bool(true)
+      if updates_bysoft_com_br
+    - >-
+      http-request set-var(txn.is_java_application) bool(true)
+      if is_java_application
+    - >-
+      http-response set-header Content-Type application/java-archive
+      if { var(txn.is_updates_bysoft_com_br) -m bool } { var(txn.is_java_application) -m bool }
+    - >-
+      http-response del-header X-Content-Type-Options
+      if { var(txn.is_updates_bysoft_com_br) -m bool }
 
 nowww_redirect:
   description: |-
