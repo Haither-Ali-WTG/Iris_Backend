@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260323.1
-  # Sun Mar 22 22:47:29 UTC 2026 -- Mon Mar 23 09:47:29 AEDT 2026
+  # Dante Build Artifact 20260323.2
+  # Mon Mar 23 01:01:13 UTC 2026 -- Mon Mar 23 12:01:13 AEDT 2026
   #
-  # Merged PR 46792: ntop package added to the mirror
-  # 4a8aab0de4c4f4fd1c165b44e8cbb0253af46d2e
-  dante_build_id: '1648379'
+  # Merge pull request 46807 from dante_artifact_upgrade into master
+  # 95752021d1828eb5f7b5d527f67e3652bc131fe4
+  dante_build_id: '1648551'
 
   # virgil 20260323.4
   # Mon Mar 23 00:14:28 UTC 2026 -- Mon Mar 23 11:14:28 AEDT 2026
