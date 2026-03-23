@@ -1,3 +1,4 @@
+---
 br1_response_header:
   description: |-
     Ensure correct MIME type for Bysoft application updates
