@@ -3699,28 +3699,24 @@ cargowise-d365-inbound-prod.wisegrid.net:
 
 integration-hub.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  cookie:
-    name: INTHUB
-  http_health_check:
-    enabled: false
-    http_path: /wtg/ready
-  default_server: check ssl proto h2 inter 10s fall 3 rise 2
-  servers:
-    - name: w1.au2prod2
-      ip: 10.2.214.15
-      port: 30402
-    - name: w2.au2prod2
-      ip: 10.2.214.16
-      port: 30402
-    - name: w3.au2prod2
-      ip: 10.2.214.17
-      port: 30402
-    - name: w4.au2prod2
-      ip: 10.2.214.18
-      port: 30402
-    - name: w5.au2prod2
-      ip: 10.2.214.19
-      port: 30402
+  full_override: |
+    backend integration-hub_wisegrid_net
+    cookie INTHUB insert indirect nocache dynamic
+    # gRPC/HTTP2 specific timeouts for long-running requests
+    timeout tunnel 3600s
+    timeout server 3600s
+    timeout client-fin 30s
+    timeout server-fin 30s
+    # Ensure proper connection cleanup on client disconnect
+    option abortonclose
+    # HTTP/2 specific settings for gRPC
+    http-reuse safe
+    default-server check ssl proto h2 inter 10s fall 3 rise 2
+    server w1.au2prod2 10.2.214.15:30402
+    server w2.au2prod2 10.2.214.16:30402
+    server w3.au2prod2 10.2.214.17:30402
+    server w4.au2prod2 10.2.214.18:30402
+    server w5.au2prod2 10.2.214.19:30402
 
 dgsegregation.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]

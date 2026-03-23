@@ -65,23 +65,6 @@ au2prodelasticbunker1.wtg.zone:
       ip: 10.2.245.112
       port: 2049
 
-au2prodfrontend1corpservices1.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /
-  encryption: false
-  servers:
-    - name: au2lbl00345
-      ip: 10.2.64.21
-      port: 2059
-    - name: au2lbl00346
-      ip: 10.2.64.22
-      port: 2059
-    - name: au2lbl00349
-      ip: 10.2.64.23
-      port: 2059
-
 au2prodfrontend1prodcdnservices31.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -1380,21 +1363,22 @@ task-automation-staging.wtg.zone:
       port: 30100
 # end of task-automation
 
-# custom ingress defintion for ocp
+# custom ingress defintion for ocp (hdr localhost added to meet requirement RFC7230 for HTTP/1.1)
 au2prod1-prodinternalcorp-ingress:
   clustered_instances: [au2prodinternal1corpservices35]
   full_override: |
     backend au2prod1-prodinternalcorp-ingress
     mode http
     option httpchk
-    http-check send meth GET uri /healthz/ready ver HTTP/1.1
+    http-check connect port 30200
+    http-check send meth GET uri /healthz/ready ver HTTP/1.1 hdr Host localhost
     http-check expect status 200
     balance roundrobin
-    server w1.au2prod1 10.2.213.15:30100 check port 30200 ssl send-proxy-v2
-    server w2.au2prod1 10.2.213.16:30100 check port 30200 ssl send-proxy-v2
-    server w3.au2prod1 10.2.213.17:30100 check port 30200 ssl send-proxy-v2
-    server w4.au2prod1 10.2.213.18:30100 check port 30200 ssl send-proxy-v2
-    server w5.au2prod1 10.2.213.19:30100 check port 30200 ssl send-proxy-v2
+    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
+    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
+    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
+    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
+    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
 
 cms-smartfreight-dev.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
@@ -1716,23 +1700,6 @@ au2prodelasticbunker1.iris-stats.wtg.zone:
       ip: 10.2.245.112
       port: 2049
 
-au2prodfrontend1corpservices1.iris-stats.wtg.zone:
-  clustered_instances: [au2prodinternal1corpservices35]
-  http_health_check:
-    enabled: true
-    http_path: /
-  encryption: false
-  servers:
-    - name: au2lbl00345
-      ip: 10.2.64.21
-      port: 2059
-    - name: au2lbl00346
-      ip: 10.2.64.22
-      port: 2059
-    - name: au2lbl00349
-      ip: 10.2.64.23
-      port: 2059
-
 au2prodfrontend1prodcdnservices31.iris-stats.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
@@ -2041,3 +2008,56 @@ cn1sandinternal1testservices0.iris-stats.wtg.zone:
       port: 2037
 
 # end of iris-stats services
+# corp UAT Web services
+svc-wtlbda.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-sweb-402a
+      ip: 110.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+
+www-wtlbda.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-sweb-402a
+      ip: 110.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+
+svc-wtlbdl.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-sweb-402a
+      ip: 110.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+
+www-wtlbdl.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  servers:
+    - name: au2co-sweb-402a
+      ip: 110.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+# end of corp UAT Web services

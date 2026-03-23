@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260319.2
-  # Thu Mar 19 01:21:18 UTC 2026 -- Thu Mar 19 12:21:18 AEDT 2026
+  # Dante Build Artifact 20260323.1
+  # Sun Mar 22 22:47:29 UTC 2026 -- Mon Mar 23 09:47:29 AEDT 2026
   #
-  # Merge pull request 46623 from dante_artifact_upgrade into master
-  # b82140e6f6d0f6a0583991507cafeb6eee1a9b4e
-  dante_build_id: '1644910'
+  # Merged PR 46792: ntop package added to the mirror
+  # 4a8aab0de4c4f4fd1c165b44e8cbb0253af46d2e
+  dante_build_id: '1648379'
 
-  # virgil 20260319.4
-  # Thu Mar 19 00:24:21 UTC 2026 -- Thu Mar 19 11:24:21 AEDT 2026
+  # virgil 20260323.4
+  # Mon Mar 23 00:14:28 UTC 2026 -- Mon Mar 23 11:14:28 AEDT 2026
   #
-  # Merged PR 46618: add new mellanox in rack 310 and 410 for VCF deployment
-  # 876ab28bed19563bf3cfa581ac9eb16c6aad553e
-  virgil_build_id: '1644853'
+  # Merged PR 46793: Reuse J304CYE2 as au2-esx-1a-197
+  # d95b073c7d1b188ff55c1ac6cc58aaabb56cffde
+  virgil_build_id: '1648477'
 
   # sqlbilling 20260319.5
   # Thu Mar 19 10:14:29 UTC 2026 -- Thu Mar 19 21:14:29 AEDT 2026
