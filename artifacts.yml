@@ -7,12 +7,12 @@ variables:
   # 4a8aab0de4c4f4fd1c165b44e8cbb0253af46d2e
   dante_build_id: '1648379'
 
-  # virgil 20260320.2
-  # Thu Mar 19 21:50:49 UTC 2026 -- Fri Mar 20 08:50:49 AEDT 2026
+  # virgil 20260323.4
+  # Mon Mar 23 00:14:28 UTC 2026 -- Mon Mar 23 11:14:28 AEDT 2026
   #
-  # Merged PR 46680: Move us2wp-svir-040 and 041 to VMware
-  # b5d34aae951f22c76fc46ec02c49ceec95509d31
-  virgil_build_id: '1645755'
+  # Merged PR 46793: Reuse J304CYE2 as au2-esx-1a-197
+  # d95b073c7d1b188ff55c1ac6cc58aaabb56cffde
+  virgil_build_id: '1648477'
 
   # sqlbilling 20260319.5
   # Thu Mar 19 10:14:29 UTC 2026 -- Thu Mar 19 21:14:29 AEDT 2026
