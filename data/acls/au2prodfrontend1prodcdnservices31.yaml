@@ -791,6 +791,8 @@ wca_prod_url:
   tests:
     - hdr(host),field(1,:) -i sydwca.wisegrid.net
     - hdr(host),field(1,:) -i au2wcatoken.wisegrid.net
+    - hdr(host),field(1,:) -i wcatoken.wtg.zone
+    - hdr(host),field(1,:) -i au2wca.wtg.zone
 
 winzor_corp_urls:
   description: |-
