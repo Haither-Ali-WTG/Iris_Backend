@@ -23,35 +23,30 @@ parameters:
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-        use_local_backends: true
       - target_dc: DE1
         agent_dc: DE1
         agent_hall: A
         s3_host: de1s3-2.wtg.ws
         s3_iris_bucket: s3://de-iscore-iris-prod-1/
         pure_usernames: de-iscore-iris-prod-1-rw
-        use_local_backends: true
       - target_dc: US2
         agent_dc: US2
         agent_hall: A
         s3_host: us2s3-2.wtg.ws
         s3_iris_bucket: s3://us-iscore-iris-prod-1/
         pure_usernames: us-iscore-iris-prod-1-rw
-        use_local_backends: true
       - target_dc: CN1
         agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-        use_local_backends: true
       - target_dc: SA1
         agent_dc: AU2
         agent_hall: A
         s3_host: au2s3-2.wtg.ws
         s3_iris_bucket: s3://au-iscore-iris-prod-1/
         pure_usernames: au-iscore-iris-prod-1-rw
-        use_local_backends: true
 
 stages:
   - ${{ each run in parameters.matrix }}:
@@ -180,7 +175,7 @@ stages:
                             -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
                             -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
                             -e="target_dc=${{ run.target_dc }}" \
-                            -e="use_local_backends=${{ run.use_local_backends }}"
+                            -e="{enable_dynamic_backends: false}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)
