@@ -793,7 +793,6 @@ wca_prod_url:
     - hdr(host),field(1,:) -i au2wcatoken.wisegrid.net
     - hdr(host),field(1,:) -i wcatoken.wtg.zone
     - hdr(host),field(1,:) -i au2wca.wtg.zone
-    - hdr(host),field(1,:) -i wca.wtg.zone
 
 winzor_corp_urls:
   description: |-
