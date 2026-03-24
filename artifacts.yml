@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260324.1
-  # Mon Mar 23 19:01:11 UTC 2026 -- Tue Mar 24 06:01:11 AEDT 2026
+  # Dante Build Artifact 20260324.2
+  # Tue Mar 24 00:21:17 UTC 2026 -- Tue Mar 24 11:21:17 AEDT 2026
   #
-  # Merge pull request 46888 from dante_artifact_upgrade into master
-  # 76ebd147038b21064698bfc6defd37d9cf594f19
-  dante_build_id: '1649294'
+  # Merge pull request 46901 from dante_artifact_upgrade into master
+  # d940152bcd6e5732745beee7fda67c2ca22f0b16
+  dante_build_id: '1649563'
 
-  # virgil 20260324.2
-  # Mon Mar 23 18:21:07 UTC 2026 -- Tue Mar 24 05:21:07 AEDT 2026
+  # virgil 20260324.10
+  # Mon Mar 23 23:39:24 UTC 2026 -- Tue Mar 24 10:39:24 AEDT 2026
   #
-  # Merge pull request 46879 from virgil_python_upgrade into master
-  # ffc10bbaecc5cb9887b6e49e878e2570bdd00417
-  virgil_build_id: '1649247'
+  # Merged PR 46910: SN2700 in Rack311 for DAT service
+  # edab6657c6afd54daec32694fefe33318ae8995b
+  virgil_build_id: '1649513'
 
   # sqlbilling 20260319.5
   # Thu Mar 19 10:14:29 UTC 2026 -- Thu Mar 19 21:14:29 AEDT 2026
