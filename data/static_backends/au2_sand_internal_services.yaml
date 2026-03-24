@@ -712,6 +712,18 @@ xtvm-staging-cwconnector.sand.wtg.zone:
       port: 9443
       settings: check ssl verify none
 
+xtvm405-staging-cwconnector.sand.wtg.zone:
+  clustered_instances: [au2sandinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: true
+  servers:
+    - name: au2sp-scwi-405
+      ip: 10.2.153.12
+      port: 9443
+      settings: check ssl verify none
+
 au2wca.sand.wtg.zone:
   clustered_instances: [au2sandinternal1]
   http_health_check:
