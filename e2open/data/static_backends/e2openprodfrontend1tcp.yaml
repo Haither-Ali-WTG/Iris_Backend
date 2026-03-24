@@ -41,3 +41,13 @@ hh1-art-e2open-com:
     - name: hh1art
       ip: 10.212.0.19
       port: 443
+
+e2proxy:
+  clustered_instances: [e2openprodfrontend1tcp]
+  http_health_check:
+    enabled: false
+  default_server: check send-proxy-v2
+  servers:
+    - name: e2proxy
+      ip: 10.212.0.31
+      port: 443
