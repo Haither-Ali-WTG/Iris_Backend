@@ -12,6 +12,11 @@ us.cww-nonprd.wisegrid.net-catchall:
     default-server agent-check agent-port 8098
     server US2WT-SBLZ-404 10.4.73.24:80
     server US2WT-SBLZ-405 10.4.73.25:80
+    server US2WT-SRDH-401 10.4.126.160:80
+    server US2WT-SRDH-402 10.4.126.161:80
+    server US2WT-SRDH-403 10.4.126.162:80
+    server US2WT-SRDH-404 10.4.126.163:80
+    server US2WT-SRDH-405 10.4.126.164:80
 
 app-test-us.borderwise.com:
   clustered_instances: [us2prodfrontend1testcdnservices]
