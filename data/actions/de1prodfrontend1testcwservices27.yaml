@@ -29,7 +29,7 @@ cw1_use_dynamic_backend_path:
 
 custom_url_actions:
   description: |-
-    Customurls for GLOW & Webtracker
+    Customurls for CW Webservices
   order: 80
   actions:
     ### Webtracker
