@@ -398,6 +398,8 @@ clustered_instances:
         - au2wp-sweb-423b.wisecloud.zone
         - au2wp-sweb-424a.wisecloud.zone
         - au2wp-sweb-424b.wisecloud.zone
+        - au2wp-sweb-425a.wisecloud.zone
+        - au2wp-sweb-425b.wisecloud.zone
         - au2wp-sweb-499a.wisecloud.zone      # Dedicated webserver for customurls
         - au2wp-sweb-499b.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
@@ -504,6 +506,8 @@ clustered_instances:
         - au2wt-sweb-414b.test.wisecloud.zone
         - au2wt-sweb-415a.test.wisecloud.zone
         - au2wt-sweb-415b.test.wisecloud.zone
+        - au2wt-sweb-416a.test.wisecloud.zone
+        - au2wt-sweb-416b.test.wisecloud.zone
         - au2wt-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
         - au2wt-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
