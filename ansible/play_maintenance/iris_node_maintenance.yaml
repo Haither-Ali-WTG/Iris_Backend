@@ -57,6 +57,20 @@
               - machine_vips[specific_host] | length == 0
             fail_msg: "Found VIPs still on {{ specific_host }}: {{ machine_vips[specific_host] }}"
 
+    - name: Read current tenable tag
+      slurp:
+        src: /etc/tenable_tag
+      register: tenable_tag_file
+      become: yes
+
+    - name: Store current tenable tag
+      set_fact:
+        tenable_tag_value: "{{ tenable_tag_file.content | b64decode }}"
+
+    - name: Print current tenable tag
+      debug:
+        msg: "Current tenable_tag value: {{ tenable_tag_value | trim }}"
+
     - name: Rebuild node
       include_role:
         name: node_maintenance
@@ -66,6 +80,15 @@
       include_role:
         name: node_maintenance
         tasks_from: wait_rebuild_node.yml
+
+    - name: Restore tenable tag
+      copy:
+        dest: /etc/tenable_tag
+        content: "{{ tenable_tag_value }}"
+        owner: root
+        group: root
+        mode: '0640'
+      become: yes
 
     - name: Install Telegraf
       include_role:
