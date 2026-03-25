@@ -13,12 +13,18 @@ e2open_sftp_proxy:
 
 e2open_xmpp:
   description: e2open XMPP
-  order: 40
+  order: 32
   actions:
     - use_backend e2open-xmpp if acl_e2open_xmpp
 
 e2open_hh1_art:
   description: e2open hh1.art.e2open.com
-  order: 50
+  order: 33
   actions:
     - use_backend hh1-art-e2open-com if acl_e2open_hh1_art
+
+e2open_e2proxy:
+  description: e2open e2proxy
+  order: 34
+  actions:
+    - use_backend e2proxy if acl_e2open_e2proxy

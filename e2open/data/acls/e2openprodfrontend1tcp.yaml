@@ -18,3 +18,8 @@ acl_e2open_sftp_proxy:
   description: e2open SFTP Proxy
   tests:
     - dst_port 2004
+
+acl_e2open_e2proxy:
+  description: e2open e2proxy
+  tests:
+    - dst_port 2005
