@@ -165,3 +165,4 @@ custom_sandinternal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i ocmportal.sand.wtg.zone
     - hdr(host) -i map-test.sand.wtg.zone
     - hdr(host) -i api-map-test.sand.wtg.zone
+    - hdr(host) -i people-process.sand.wtg.zone
