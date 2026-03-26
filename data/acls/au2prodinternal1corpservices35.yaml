@@ -128,3 +128,4 @@ custom_internal_corp_au2prod1_ocp_wtg_ws:
   tests:
     - hdr(host) -i polaris.k8s.sand.wtg.zone
     - hdr(host) -i polaris.wtg.zone
+    - hdr(host) -i people-process.wisetechglobal.com
