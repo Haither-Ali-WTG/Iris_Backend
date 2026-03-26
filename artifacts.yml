@@ -7,12 +7,12 @@ variables:
   # d940152bcd6e5732745beee7fda67c2ca22f0b16
   dante_build_id: '1649563'
 
-  # virgil 20260324.10
-  # Mon Mar 23 23:39:24 UTC 2026 -- Tue Mar 24 10:39:24 AEDT 2026
+  # virgil 20260326.2
+  # Thu Mar 26 03:12:05 UTC 2026 -- Thu Mar 26 14:12:05 AEDT 2026
   #
-  # Merged PR 46910: SN2700 in Rack311 for DAT service
-  # edab6657c6afd54daec32694fefe33318ae8995b
-  virgil_build_id: '1649513'
+  # Merged PR 47085: update mellanox serial number and service expiry date
+  # 5335baabe5b04e40f505b5151fae5a8c7ca9d16e
+  virgil_build_id: '1651631'
 
   # sqlbilling 20260325.4
   # Tue Mar 24 22:25:09 UTC 2026 -- Wed Mar 25 09:25:09 AEDT 2026
