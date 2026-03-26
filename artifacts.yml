@@ -14,9 +14,9 @@ variables:
   # 5335baabe5b04e40f505b5151fae5a8c7ca9d16e
   virgil_build_id: '1651631'
 
-  # sqlbilling 20260325.4
-  # Tue Mar 24 22:25:09 UTC 2026 -- Wed Mar 25 09:25:09 AEDT 2026
+  # sqlbilling 20260326.2
+  # Thu Mar 26 08:30:59 UTC 2026 -- Thu Mar 26 19:30:59 AEDT 2026
   #
-  # Merged PR 46997: Update Readonly for WPPPRD
-  # 739a06dfb3bd678fa153bf89979c3aec4d42eff6
-  sqlbilling_build_id: '1650464'
+  # Merged PR 47066: AddAndRemoveSQLBilling IPs AU2 US2
+  # dd8b4621805ce514e2f3ad92f032106454fb9e75
+  sqlbilling_build_id: '1651856'
