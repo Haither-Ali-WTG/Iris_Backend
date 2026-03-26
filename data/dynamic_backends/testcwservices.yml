@@ -83,9 +83,9 @@
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.webcampaign\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
-    enabled: true
-    http_path: "/"
-    check_expect: "200|401|403|302|405"
+    enabled: false
+   # http_path: "/"
+   # check_expect: "200|401|403|302|405"
   port: 80
   cookie:
     name: WEBSVC
@@ -122,9 +122,9 @@
 - name_regex: ^[A-Za-z0-9]{6}(-cn)?\.edirf\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: false
   http_health_check:
-    enabled: true
-    http_path: "/"
-    check_expect: "200|401|403|302|405"
+    enabled: false
+   # http_path: "/"
+   # check_expect: "200|401|403|302|405"
   port: 80
   cookie:
     name: WEBSVC
