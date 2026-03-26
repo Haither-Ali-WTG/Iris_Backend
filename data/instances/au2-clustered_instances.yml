@@ -654,7 +654,7 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
-        - name: star-k8s-wtg-zone
+        - name: star-k8s-sand-wtg-zone
           cms_resource_group: RG-AU-Prod
       stats:
         ports:
