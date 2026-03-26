@@ -84,8 +84,6 @@
   encryption: false
   http_health_check:
     enabled: false
-# http_path: "/"
-# check_expect: "200|401|403|302|405"
   port: 80
   cookie:
     name: WEBSVC
@@ -123,8 +121,6 @@
   encryption: false
   http_health_check:
     enabled: false
-# http_path: "/"
-# check_expect: "200|401|403|302|405"
   port: 80
   cookie:
     name: WEBSVC
