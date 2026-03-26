@@ -7,16 +7,16 @@ variables:
   # c895f839bf0982932361b677712509cda080badf
   dante_build_id: '1651679'
 
-  # virgil 20260326.2
-  # Thu Mar 26 03:12:05 UTC 2026 -- Thu Mar 26 14:12:05 AEDT 2026
+  # virgil 20260327.13
+  # Thu Mar 26 22:19:55 UTC 2026 -- Fri Mar 27 09:19:55 AEDT 2026
   #
-  # Merged PR 47085: update mellanox serial number and service expiry date
-  # 5335baabe5b04e40f505b5151fae5a8c7ca9d16e
-  virgil_build_id: '1651631'
+  # Merged PR 47116: Add new Elastic Node model and 5 new servers
+  # a9abecb5edea4da291aee41e70e9bfd46cf503ee
+  virgil_build_id: '1652343'
 
-  # sqlbilling 20260326.2
-  # Thu Mar 26 08:30:59 UTC 2026 -- Thu Mar 26 19:30:59 AEDT 2026
+  # sqlbilling 20260326.4
+  # Thu Mar 26 11:54:17 UTC 2026 -- Thu Mar 26 22:54:17 AEDT 2026
   #
-  # Merged PR 47066: AddAndRemoveSQLBilling IPs AU2 US2
-  # dd8b4621805ce514e2f3ad92f032106454fb9e75
-  sqlbilling_build_id: '1651856'
+  # Merged PR 47118: AddSQLBilling IP AU2
+  # 3c669ebd854fb7f03bf15da83a0fbc70abca02a2
+  sqlbilling_build_id: '1651959'
