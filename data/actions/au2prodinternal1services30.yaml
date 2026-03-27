@@ -6,14 +6,55 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
-    - redirect scheme https if star_borderwise_com !{ ssl_fc }
+    - redirect scheme https if star_wtg_ws !{ ssl_fc }
+    - redirect scheme https if star_virt_wtg_ws !{ ssl_fc }
+    - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_borderwise_com !borderwise_api_prod_url !{ ssl_fc }
+    - redirect scheme https if star_app-uat_borderwise_com !{ ssl_fc }
+    - redirect scheme https if star_connector_wisegrid_net !{ ssl_fc }
+    - redirect scheme https if star_wisecloud_zone !{ ssl_fc }
+    - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+    - redirect scheme https if star_sand_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_cwconnector_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_wisetechacademy_com !{ ssl_fc }
     - redirect scheme https if lms_staging_wisetechacademy_com !{ ssl_fc }
     - redirect scheme https if star_internal_au2prod1_ocp_wtg_ws !{ ssl_fc }
     - redirect scheme https if star_internal_au2prod2_ocp_wtg_ws !{ ssl_fc }
     - redirect scheme https if platform-docs_wtg_ws !{ ssl_fc }
-    - redirect scheme https if star_wtg_zone !{ ssl_fc }
+
+redirects:
+  description: |-
+    URL redirects for test services
+  order: 75
+  actions:
+    - redirect location https://ump-test1.borderwise.com if redirects_to_ump-test1_borderwise_com_URLs
+    - redirect location https://umpapi-test1.borderwise.com if redirects_to_umpapi-test1_borderwise_com_URLs
+
+special_backend_selection:
+  description: |-
+    Special backend selection for connector and app-uat services
+  order: 76
+  actions:
+    - use_backend app-uat_borderwise_com_catch_all if star_app-uat_borderwise_com
+    - use_backend connector_wisegrid_net_catch_all if star_connector_wisegrid_net
+
+au2s3_2_backend_selection_capacity_override:
+  description: |-
+    Use secondary backend when primary has insufficient capacity for au2s3-2
+  order: 8
+  actions:
+    - use_backend au2s3-2-secondary if au2s3-2-primary_not_enough_capacity au2s3-2_wtg_ws_and_subdomains
+    - use_backend us2s3-2-secondary if us2s3-2-primary_not_enough_capacity us2s3-2_wtg_ws_and_subdomains
+    - use_backend de1s3-2-secondary if de1s3-2-primary_not_enough_capacity de1s3-2_wtg_ws_and_subdomains
+
+au2s3_2_backend_selection:
+  description: |-
+    Primary backend selection for au2s3-2
+  order: 9
+  actions:
+    - use_backend au2s3-2-primary if au2s3-2_wtg_ws_and_subdomains
+    - use_backend us2s3-2-primary if us2s3-2_wtg_ws_and_subdomains
+    - use_backend de1s3-2-primary if de1s3-2_wtg_ws_and_subdomains
 
 au2s3_3_secondary_backend_selection:
   description: |-

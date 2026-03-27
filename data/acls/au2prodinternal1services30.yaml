@@ -82,3 +82,83 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
+
+star_wtg_ws:
+  description: "*.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.ws$
+
+star_virt_wtg_ws:
+  description: "*.virt.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?virt\.wtg\.ws$
+
+borderwise_api_prod_url:
+  description: "API Production Borderwise URL pattern"
+  tests:
+    - hdr(host) -m reg -i ^api\-((prod|prod-au2)\.)borderwise\.com$
+
+star_app-uat_borderwise_com:
+  description: "*.app-uat.borderwise.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?app-uat\.borderwise\.com$
+
+redirects_to_ump-test1_borderwise_com_URLs:
+  description: "Redirect to ump-test1.borderwise.com"
+  tests:
+    - hdr(host) -m reg -i ^ump-test\.borderwise\.com$
+
+redirects_to_umpapi-test1_borderwise_com_URLs:
+  description: "Redirect to umpapi-test1.borderwise.com"
+  tests:
+    - hdr(host) -m reg -i ^umpapi-test\.borderwise\.com$
+
+star_connector_wisegrid_net:
+  description: "*.connector.wisegrid.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?connector\.wisegrid\.net$
+
+star_wisecloud_zone:
+  description: "*.wisecloud.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisecloud\.zone$
+
+star_wisetechglobal_com:
+  description: "*.wisetechglobal.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?wisetechglobal\.com$
+
+star_sand_wtg_zone:
+  description: "*.sand.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sand\.wtg\.zone$
+
+au2s3-2_wtg_ws_and_subdomains:
+  description: "*.au2s3-2.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?au2s3-2\.wtg\.ws$
+
+us2s3-2_wtg_ws_and_subdomains:
+  description: "*.us2s3-2.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?us2s3-2\.wtg\.ws$
+
+de1s3-2_wtg_ws_and_subdomains:
+  description: "*.de1s3-2.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^(.*)?de1s3-2\.wtg\.ws$
+
+au2s3-2-primary_not_enough_capacity:
+  description: "au2s3-2 Primary backends unavailable"
+  tests:
+    - nbsrv(au2s3-2-primary) lt 1
+
+de1s3-2-primary_not_enough_capacity:
+  description: "de1s3-2 Primary backends unavailable"
+  tests:
+    - nbsrv(de1s3-2-primary) lt 1
+
+us2s3-2-primary_not_enough_capacity:
+  description: "us2s3-2 Primary backends unavailable"
+  tests:
+    - nbsrv(us2s3-2-primary) lt 1
