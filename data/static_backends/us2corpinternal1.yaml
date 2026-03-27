@@ -86,7 +86,7 @@ stats-uscloud-us2.wtg.zone:
       port: 2039
 
 us2k3s-v1.wtg.zone:
-  clustered_instances: [us2corptcp1]
+  clustered_instances: [us2corpinternal1]
     backend us2k3s-v1_wtg_zone
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
     option httpchk HEAD /healthz HTTP/1.0
@@ -121,7 +121,7 @@ us2kvl-v0.wtg.zone:
       settings: check ssl verify none
 
 us2kvl-v1.wtg.zone:
-  clustered_instances: [us2corptcp1]
+  clustered_instances: [us2corpinternal1]
   full_override: |
     backend us2kvl-v1_wtg_zone
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
