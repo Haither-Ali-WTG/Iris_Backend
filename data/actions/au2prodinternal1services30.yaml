@@ -27,16 +27,16 @@ redirects:
     URL redirects for test services
   order: 75
   actions:
-    - redirect location https://ump-test1.borderwise.com if redirects_to_ump-test1_borderwise_com_URLs
-    - redirect location https://umpapi-test1.borderwise.com if redirects_to_umpapi-test1_borderwise_com_URLs
+    - redirect location https://ump-test1.borderwise.com if redirects_to_ump_test1_borderwise_com_urls
+    - redirect location https://umpapi-test1.borderwise.com if redirects_to_umpapi_test1_borderwise_com_urls
 
 special_backend_selection:
   description: |-
     Special backend selection for connector and app-uat services
   order: 76
   actions:
-    - use_backend app-uat_borderwise_com_catch_all if star_app-uat_borderwise_com
-    - use_backend connector_wisegrid_net_catch_all if star_connector_wisegrid_net
+    - use_backend app-uat.borderwise.com-catchall if star_app-uat_borderwise_com
+    - use_backend connector.wisegrid.net-catchall if star_connector_wisegrid_net
 
 au2s3_2_backend_selection_capacity_override:
   description: |-

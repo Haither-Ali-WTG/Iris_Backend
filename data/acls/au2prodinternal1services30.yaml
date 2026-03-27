@@ -103,12 +103,12 @@ star_app-uat_borderwise_com:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?app-uat\.borderwise\.com$
 
-redirects_to_ump-test1_borderwise_com_URLs:
+redirects_to_ump_test1_borderwise_com_urls:
   description: "Redirect to ump-test1.borderwise.com"
   tests:
     - hdr(host) -m reg -i ^ump-test\.borderwise\.com$
 
-redirects_to_umpapi-test1_borderwise_com_URLs:
+redirects_to_umpapi_test1_borderwise_com_urls:
   description: "Redirect to umpapi-test1.borderwise.com"
   tests:
     - hdr(host) -m reg -i ^umpapi-test\.borderwise\.com$

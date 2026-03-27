@@ -758,8 +758,13 @@ xttest-eservices-xhgateway.wisegrid.net:
     http-check expect rstatus 200
     cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
     default-server inter 10000
+    # yamllint disable rule:line-length
     server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
     server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    # yamllint enable rule:line-length
+      sni str(xttest-eservices-xhgateway.wisegrid.net) \
+      check-sni xttest-eservices-xhgateway.wisegrid.net \
+      inter 10s downinter 5s fall 3
 
 xhportal-uat.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -779,8 +784,10 @@ xttest2-eservices-xhgateway.wisegrid.net:
     http-check expect string Service\ is\ alive.
     cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
     default-server inter 10000
+    # yamllint disable rule:line-length
     server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
     server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    # yamllint enable rule:line-length
 
 xttest2-eservices-grpc1.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -846,7 +853,7 @@ wiseratesadmin.wisegrid.net:
   full_override: |
     backend wiseratesadmin_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ wiseratesadmin.wisegrid.net 
+    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ wiseratesadmin.wisegrid.net
     http-check expect rstatus 200|401|403
     cookie RATES insert indirect nocache dynamic
     server AU2WP-SIIS-402A 10.2.69.16:80 check
@@ -1067,7 +1074,7 @@ ocmportal.wisegrid.net:
     server AU2WP-SIIS-402B 10.2.69.17:80 check
 
 # Additional catch-all backends
-app-uat_borderwise_com_catch_all:
+app-uat.borderwise.com-catchall:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend app-uat_borderwise_com_catch_all
@@ -1076,7 +1083,7 @@ app-uat_borderwise_com_catch_all:
     cookie APPUAT insert indirect nocache dynamic
     server AU2WT-SDKR-1 10.2.70.12:450 check
 
-connector_wisegrid_net_catch_all:
+connector.wisegrid.net-catchall:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
