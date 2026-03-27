@@ -473,7 +473,6 @@ urs-admin.wisegrid.net:
     check_expect: '200'
   cookie:
     name: USRC
-    maxlife: 1h
   encryption: false
   servers:
     - name: AU2WP-SIIS-401A
@@ -647,8 +646,7 @@ xtarchive-eservices.wisegrid.net:
     http_path: /wtg/status
     check_expect: '200'
   cookie:
-    name: XTArchive
-    maxlife: 1h
+    name: XTARCHIVE
   encryption: false
   servers:
     - name: au2wp-smsg-401
@@ -667,8 +665,7 @@ xttestarchive-eservices.wisegrid.net:
     http_path: /wtg/status
     check_expect: '200'
   cookie:
-    name: XTArchive
-    maxlife: 1h
+    name: XTARCHIVE
   encryption: false
   servers:
     - name: au2wt-smsg-401
@@ -749,23 +746,6 @@ ccds-dev.wisegrid.net:
     server au2wt-siis-402a 10.2.69.23:80 check
     server au2wt-siis-402b 10.2.69.24:80 check
 
-xttest-eservices-xhgateway.wisegrid.net:
-  clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend xttest-eservices-xhgateway_wisegrid_net
-    load-server-state-from-file none
-    option httpchk HEAD /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest-eservices-xhgateway.wisegrid.net
-    http-check expect rstatus 200
-    cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
-    default-server inter 10000
-    # yamllint disable rule:line-length
-    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    # yamllint enable rule:line-length
-      sni str(xttest-eservices-xhgateway.wisegrid.net) \
-      check-sni xttest-eservices-xhgateway.wisegrid.net \
-      inter 10s downinter 5s fall 3
-
 xhportal-uat.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
@@ -774,20 +754,6 @@ xhportal-uat.wisegrid.net:
     option httpchk HEAD / HTTP/1.1\r\nHost:\ xhportal-uat.wisegrid.net
     http-check expect rstatus 200
     server AU2WT-SIIS-401A 10.2.69.19:80 check
-
-xttest2-eservices-xhgateway.wisegrid.net:
-  clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend xttest2-eservices-xhgateway_wisegrid_net
-    load-server-state-from-file none
-    option httpchk GET /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest2-eservices-xhgateway.wisegrid.net
-    http-check expect string Service\ is\ alive.
-    cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
-    default-server inter 10000
-    # yamllint disable rule:line-length
-    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    # yamllint enable rule:line-length
 
 xttest2-eservices-grpc1.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
