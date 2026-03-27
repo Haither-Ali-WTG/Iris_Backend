@@ -408,6 +408,135 @@ geoaddressing.wisecloud.zone:
     server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
     server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
 
+# Production Services from HAProxy config
+registry.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: RDPWEB
+  encryption: false
+  servers:
+    - name: containerregistry
+      ip: 10.2.0.37
+      port: 80
+
+s3billing.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /health
+  cookie:
+    name: S3BILLING
+  encryption: false
+  servers:
+    - name: au2mal00001
+      ip: 10.2.0.31
+      port: 8272
+    - name: au2mal00002
+      ip: 10.2.0.32
+      port: 8272
+    - name: au2mal00003
+      ip: 10.2.0.33
+      port: 8272
+
+rdg-au2.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend rdg-au2_wtg_zone
+    load-server-state-from-file none
+    option httpchk HEAD / HTTP/1.1\r\nHost:\ rdg-au2.wtg.zone
+    cookie RDPWEB insert indirect nocache dynamic
+    server au2co-srdg-5.wtg.zone 10.2.68.21:80 check
+    server au2co-srdg-6.wtg.zone 10.2.68.22:80 check
+
+cpr-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: CPR
+  encryption: false
+  servers:
+    - name: AU2SP-SCRP-401
+      ip: 10.2.116.48
+      port: 80
+
+urs-admin.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /health
+    check_expect: '200'
+  cookie:
+    name: USRC
+  encryption: false
+  servers:
+    - name: AU2WP-SIIS-401A
+      ip: 10.2.69.12
+      port: 80
+      settings: inter 10000
+    - name: AU2WP-SIIS-401B
+      ip: 10.2.69.13
+      port: 80
+      settings: inter 10000
+
+au2netq.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2netq_wtg_ws
+    balance source
+    option httpchk HEAD /logon HTTP/1.1\r\nHost:\ au2netq.wtg.ws
+    http-check expect rstatus 200
+    server au2co-netq-001 10.2.80.27:80 check
+    server au2co-netq-002 10.2.80.28:80 check
+    server au2co-netq-003 10.2.80.29:80 check
+
+headrest.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /healthz
+    check_expect: '200|301|302|400|403'
+  cookie:
+    name: HEADREST
+  encryption: true
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30100
+      settings: check ssl send-proxy-v2
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30100
+      settings: check ssl send-proxy-v2
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30100
+      settings: check ssl send-proxy-v2
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30100
+      settings: check ssl send-proxy-v2
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30100
+      settings: check ssl send-proxy-v2
+
+au2vrops01.virt.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2vrops01_virt_wtg_ws
+    balance source
+    hash-type consistent
+    option httpchk GET /suite-api/api/deployment/node/status?services=api&services=adminui&services=ui\ HTTP/1.0\r\n\r\n
+    http-check expect rstring ONLINE
+    server au2opa01.virt.wtg.ws 10.2.114.210:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+    server au2opa02.virt.wtg.ws 10.2.114.211:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+
 geoaddressing-test.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
@@ -508,3 +637,731 @@ xhubtest-eservices.wisegrid.net:
     - name: AU2WT-SXTR-401
       ip: 10.2.70.18
       port: 8080
+
+# Additional missing backends from HAProxy config
+xtarchive-eservices.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: XTARCHIVE
+  encryption: false
+  servers:
+    - name: au2wp-smsg-401
+      ip: 10.2.67.12
+      port: 80
+      settings: inter 10000
+    - name: au2wp-smsg-402
+      ip: 10.2.88.37
+      port: 80
+      settings: inter 10000
+
+xttestarchive-eservices.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: XTARCHIVE
+  encryption: false
+  servers:
+    - name: au2wt-smsg-401
+      ip: 10.2.69.18
+      port: 80
+      settings: inter 10000
+    - name: au2wt-smsg-402
+      ip: 10.2.88.38
+      port: 80
+      settings: inter 10000
+
+rates-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend rates-test_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ rates-test.wisegrid.net
+    http-check expect rstatus 200|401|403
+    cookie RATES insert indirect nocache dynamic
+    server au2wt-siis-401a 10.2.69.19:80 check
+    server au2wt-siis-401b 10.2.69.20:80 check
+
+refdbrepoquartz.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend refdbrepoquartz_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk GET /quartz HTTP/1.1\r\nHost:\ refdbrepoquartz.wisecloud.zone
+    http-check expect rstatus 200|401|403
+    cookie RFDBQ insert indirect nocache dynamic
+    server AU2WP-SRFD-401 10.2.69.109:9000 check
+    server AU2WP-SRFD-402 10.2.69.97:9000 check
+
+refdbrepoupdate.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend refdbrepoupdate_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk HEAD /update/wtg/ready HTTP/1.1\r\nHost:\ refdbrepoupdate.wisecloud.zone
+    http-check expect rstatus 200|401|403
+    cookie RFDBU insert indirect nocache dynamic
+    server AU2WP-SRFD-401 10.2.69.109:80 check inter 10s
+    server AU2WP-SRFD-402 10.2.69.97:80 check inter 10s
+
+portswebapi.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend portswebapi_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ portswebapi.wisecloud.zone
+    http-check expect rstatus 200|401|403
+    cookie PORTSWEBAPIWC insert indirect nocache dynamic
+    server AU2WP-SDKR-402A 10.2.88.137:42103 check
+    server AU2WP-SDKR-402B 10.2.88.138:42103 check
+
+app-uat.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: APPUAT
+  encryption: false
+  servers:
+    - name: AU2WT-SDKR-1
+      ip: 10.2.70.12
+      port: 450
+
+ccds-dev.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend ccds-dev_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ ccds-dev.wisegrid.net
+    http-check expect rstatus 200|401|403
+    cookie CCDST insert indirect nocache dynamic
+    server au2wt-siis-402a 10.2.69.23:80 check
+    server au2wt-siis-402b 10.2.69.24:80 check
+
+xhportal-uat.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xhportal-uat_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD / HTTP/1.1\r\nHost:\ xhportal-uat.wisegrid.net
+    http-check expect rstatus 200
+    server AU2WT-SIIS-401A 10.2.69.19:80 check
+
+xttest2-eservices-grpc1.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest2-eservices-grpc1_wisegrid_net
+    load-server-state-from-file none
+    http-check send hdr host xttest2-eservices-grpc1.wisegrid.net meth GET uri /
+    cookie XT2GRPC1 insert indirect nocache dynamic maxlife 1h
+    balance source
+    default-server inter 10000
+    server AU2WT-SXTR-411 10.2.70.91:61001 ssl verify none alpn h2 check
+    server AU2WT-SXTR-412 10.2.70.92:61001 ssl verify none alpn h2 check
+
+xttest2-eservices-grpc2.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest2-eservices-grpc2_wisegrid_net
+    load-server-state-from-file none
+    http-check send hdr host xttest2-eservices-grpc2.wisegrid.net meth GET uri /
+    cookie XT2GRPC2 insert indirect nocache dynamic maxlife 1h
+    balance source
+    default-server inter 10000
+    server AU2WT-SXTR-411 10.2.70.91:61002 ssl verify none alpn h2 check
+    server AU2WT-SXTR-412 10.2.70.92:61002 ssl verify none alpn h2 check
+
+mhereg.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend mhereg_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ mhereg.wisegrid.net
+    http-check expect rstatus 200
+    server AU2WP-SIIS-402A 10.2.69.16:80 check
+    server AU2WP-SIIS-402B 10.2.69.17:80 check
+
+translate.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend translate_wtg_zone
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ translate.wtg.zone
+    http-check expect rstatus 200
+    cookie TRL insert indirect nocache dynamic
+    server AU2WP-SDKR-1 10.2.67.111:5110 check
+    server AU2WP-SDKR-2 10.2.67.112:5110 check
+
+gbccspoutbound.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: GBC
+  encryption: false
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+
+wiseratesadmin.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend wiseratesadmin_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ wiseratesadmin.wisegrid.net
+    http-check expect rstatus 200|401|403
+    cookie RATES insert indirect nocache dynamic
+    server AU2WP-SIIS-402A 10.2.69.16:80 check
+
+pgadmin.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /misc/ping
+    check_expect: '200'
+  cookie:
+    name: PGADMIN
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-401
+      ip: 10.2.88.75
+      port: 8082
+
+xt-eservices.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xt-eservices_wisegrid_net
+    load-server-state-from-file none
+    cookie XTESRV insert indirect nocache dynamic
+    server au2wp-sxtr-402 10.2.70.26:80 check
+
+mhaccess-test.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend mhaccess-test_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk GET / HTTP/1.1\r\nHost:\ mhaccess-test.wisecloud.zone
+    http-check expect rstatus 200
+    server au2wt-smsg-401 10.2.69.18:8080 check
+
+mhaccess2-test.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend mhaccess2-test_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk GET / HTTP/1.1\r\nHost:\ mhaccess2-test.wisecloud.zone
+    http-check expect rstatus 200
+    server au2wt-smsg-401 10.2.69.18:8080 check
+
+# S3 backends
+au2s3-2-primary:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200|301|302|400|403'
+  cookie:
+    name: AU2S3S
+  encryption: true
+  servers:
+    - name: au2pures3-1
+      ip: 10.2.31.54
+      port: 443
+      settings: check ssl
+
+au2s3-2-secondary:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2s3-2-secondary
+    option httpchk HEAD /
+    cookie US2S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server us2pures3-1 10.4.31.54:443 check ssl
+
+us2s3-2-primary:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend us2s3-2-primary
+    option httpchk HEAD /
+    cookie US2S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server us2pures3-1 10.4.31.54:443 check ssl
+
+us2s3-2-secondary:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend us2s3-2-secondary
+    option httpchk HEAD /
+    cookie US2S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server au2pures3-1 10.2.31.54:443 check ssl
+
+de1s3-2-primary:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend de1s3-2-primary
+    option httpchk HEAD /
+    cookie DE1S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server de1pures3-1 10.3.31.54:443 check ssl
+
+de1s3-2-secondary:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend de1s3-2-secondary
+    option httpchk HEAD /
+    cookie DE1S3S insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    acl write_methods method PUT
+    acl write_methods method POST
+    acl write_methods method PATCH
+    acl write_methods method DELETE
+    http-request deny if write_methods
+    server au2pures3-1 10.2.31.54:443 check ssl
+
+registry-au.ocp.wtg.ws:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend registry-au_ocp_wtg_ws
+    option httpchk HEAD / HTTP/1.1\r\nHost:\ registry-au.ocp.wtg.ws
+    cookie REGISTRYAU insert indirect nocache dynamic
+    http-check expect rstatus 200|301|302|400|403
+    server i1.au2mgmt1 10.2.212.55:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+    server i2.au2mgmt1 10.2.212.56:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+    server i3.au2mgmt1 10.2.212.57:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+    server i4.au2mgmt1 10.2.212.58:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+    server i5.au2mgmt1 10.2.212.59:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+    server i6.au2mgmt1 10.2.212.60:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
+
+cacustoms-encrypt3-test.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend cacustoms-encrypt3-test_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk GET / HTTP/1.1\r\nHost:\ cacustoms-encrypt3-test.wisecloud.zone
+    http-check expect rstatus 200
+    cookie cacet insert indirect nocache dynamic
+    server au2wt-smsg-401 10.2.69.18:80 check
+
+dsairflow.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend dsairflow_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /health HTTP/1.1\r\nHost:\ dsairflow.wisegrid.net
+    http-check expect rstatus 200
+    server au2wp-setl-401 10.2.88.118:80 check
+
+au-idp-writer-prod.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-writer-prod_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    cookie IWP insert indirect nocache dynamic
+    server au2wp-sidw-511a 10.2.144.11:3006 check ssl
+    server au2wp-sidw-511b 10.2.144.12:3006 check ssl
+
+au-idp-writer-staging.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-writer-staging_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    cookie IWT insert indirect nocache dynamic
+    server au2wt-sidw-511a 10.2.140.11:3006 check ssl
+    server au2wt-sidw-511b 10.2.140.12:3006 check ssl
+
+cv-staging-webhook.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  encryption: false
+  servers:
+    - name: AU2SP-SDKR-401
+      ip: 10.2.116.27
+      port: 8098
+
+cargotracker-webapi-uat.test.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend cargotracker-webapi-uat_test_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ cargotracker-webapi-uat.test.wisecloud.zone
+    http-check expect status 200
+    cookie CTWAU insert indirect nocache dynamic
+    server au2wt-sdkr-1 10.2.70.12:42104 check
+    server au2wt-sdkr-2 10.2.70.13:42104 check
+
+ocmportal.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend ocmportal_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ ocmportal.wisegrid.net
+    http-check expect rstatus 200|401|403
+    cookie OCMP insert indirect nocache dynamic
+    server AU2WP-SIIS-402A 10.2.69.16:80 check
+    server AU2WP-SIIS-402B 10.2.69.17:80 check
+
+# Additional catch-all backends
+app-uat.borderwise.com-catchall:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend app-uat_borderwise_com_catch_all
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ app-uat.borderwise.com
+    http-check expect rstatus 200
+    cookie APPUAT insert indirect nocache dynamic
+    server AU2WT-SDKR-1 10.2.70.12:450 check
+
+connector-wisegrid-net-catchall:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: CONNECTOR
+  encryption: false
+  servers:
+    - name: connector-placeholder
+      ip: 127.0.0.1
+      port: 80
+
+# Missing backends from HAProxy config
+api-prod.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: APIP
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 50135
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 50135
+
+app-alpha.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: APPA
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 30035
+
+app-test.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: APPT
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 40035
+
+umpapi-test1.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: UMPT
+  encryption: false
+  servers:
+    - name: AU2WT-SDKR-1
+      ip: 10.2.70.12
+      port: 5000
+
+ump-test1.borderwise.com:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: UMPT
+  encryption: false
+  servers:
+    - name: AU2WT-SDKR-1
+      ip: 10.2.70.12
+      port: 5001
+
+prodtestwca.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend prodtestwca_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth GET uri /wtg/ready ver HTTP/1.1 hdr Host prodtestwca.wisegrid.net
+    http-check expect status 200
+    server au2wt-swfe-401 10.2.69.54:80 check
+
+prodtestwcatoken.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend prodtestwcatoken_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth GET uri /wtg/ready ver HTTP/1.1 hdr Host prodtestwcatoken.wisegrid.net
+    http-check expect status 200
+    server au2wt-swfe-401 10.2.69.54:80 check
+
+webwatcher.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: WEBW
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 6003
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 6003
+
+webwatcher-api.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: WEBW
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 6002
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 6002
+
+webwatcher-test.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: WEBW
+  encryption: false
+  servers:
+    - name: AU2WT-SDKR-2
+      ip: 10.2.70.13
+      port: 6011
+
+dup.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend dup_wtg_zone
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ dup.wtg.zone
+    http-check expect rstatus 200
+    cookie DUP insert indirect nocache dynamic
+    server AU2WP-SDKR-1 10.2.67.111:5005 check
+    server AU2WP-SDKR-2 10.2.67.112:5005 check
+
+dupapi.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend dupapi_wtg_zone
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ dupapi.wtg.zone
+    http-check expect rstatus 200
+    cookie DUPA insert indirect nocache dynamic
+    server AU2WP-SDKR-1 10.2.67.111:5102 check
+    server AU2WP-SDKR-2 10.2.67.112:5102 check
+
+# Additional Wisecloud and Infrastructure Services
+dsmlflow.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend dsmlflow_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /health HTTP/1.1\r\nHost:\ dsmlflow.wisegrid.net
+    http-check expect rstatus 200
+    server au2wp-setl-402 10.2.88.119:80 check
+
+portainer-borderwise.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /api/status
+    check_expect: '200'
+  cookie:
+    name: PORTAINER
+  encryption: true
+  servers:
+    - name: portainer-server
+      ip: 10.2.213.15
+      port: 30443
+      settings: check ssl send-proxy-v2
+
+wiselake-systemusage-web.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: WLSYSTEMUSAGE
+  encryption: false
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+      settings: check ssl send-proxy-v2
+
+fms-api.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  cookie:
+    name: FMSAPI
+  encryption: false
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+      settings: check ssl send-proxy-v2
+
+gct-api.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  cookie:
+    name: GCTAPI
+  encryption: false
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+      settings: check ssl send-proxy-v2
+
+rdg-au2.wisecloud.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend rdg-au2_wisecloud_zone
+    load-server-state-from-file none
+    option httpchk HEAD / HTTP/1.1\r\nHost:\ rdg-au2.wisecloud.zone
+    cookie RDPWEB insert indirect nocache dynamic
+    server au2co-srdg-5.wtg.zone 10.2.68.21:80 check
+    server au2co-srdg-6.wtg.zone 10.2.68.22:80 check
+
+ehub-usage.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  cookie:
+    name: EHUBUSAGE
+  encryption: false
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
+    - name: AU2WP-SIIS-402B
+      ip: 10.2.69.17
+      port: 80
+
+ehub-usage-test.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  cookie:
+    name: EHUBUSAGETEST
+  encryption: false
+  servers:
+    - name: AU2WT-SIIS-401A
+      ip: 10.2.69.19
+      port: 80
+    - name: AU2WT-SIIS-401B
+      ip: 10.2.69.20
+      port: 80
+
+cs.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend cs_wisegrid_net
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host cs.wisegrid.net hdr X-Forwarded-Proto https
+    http-check expect rstatus 200|401|403|302|405
+    default-server inter 10000 ssl
+    server au2wp-siis-407a 10.2.69.90:443 check
+    server au2wp-siis-407b 10.2.69.91:443 check
+
+terminator.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200|401|403'
+  cookie:
+    name: TERMINATOR
+  encryption: false
+  servers:
+    - name: AU2WP-SIIS-402A
+      ip: 10.2.69.16
+      port: 80
