@@ -87,6 +87,7 @@ stats-uscloud-us2.wtg.zone:
 
 us2k3s-v1.wtg.zone:
   clustered_instances: [us2corpinternal1]
+  full_override: |
     backend us2k3s-v1_wtg_zone
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
     option httpchk HEAD /healthz HTTP/1.0
