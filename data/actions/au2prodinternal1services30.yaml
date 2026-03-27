@@ -3,7 +3,7 @@ https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains
     covered by wildcard certificates)
-  order: 79
+  order: 71
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_wtg_ws !{ ssl_fc }
@@ -25,7 +25,7 @@ https_redirect:
 redirects:
   description: |-
     URL redirects for test services
-  order: 75
+  order: 70
   actions:
     - redirect location https://ump-test1.borderwise.com if redirects_to_ump_test1_borderwise_com_urls
     - redirect location https://umpapi-test1.borderwise.com if redirects_to_umpapi_test1_borderwise_com_urls
@@ -33,15 +33,15 @@ redirects:
 special_backend_selection:
   description: |-
     Special backend selection for connector and app-uat services
-  order: 76
+  order: 80
   actions:
-    - use_backend app-uat.borderwise.com-catchall if star_app-uat_borderwise_com
-    - use_backend connector.wisegrid.net-catchall if star_connector_wisegrid_net
+    - use_backend app-uat_borderwise_com_catch_all if star_app-uat_borderwise_com
+    - use_backend connector-wisegrid-net-catchall if star_connector_wisegrid_net
 
 au2s3_2_backend_selection_capacity_override:
   description: |-
     Use secondary backend when primary has insufficient capacity for au2s3-2
-  order: 8
+  order: 80
   actions:
     - use_backend au2s3-2-secondary if au2s3-2-primary_not_enough_capacity au2s3-2_wtg_ws_and_subdomains
     - use_backend us2s3-2-secondary if us2s3-2-primary_not_enough_capacity us2s3-2_wtg_ws_and_subdomains
@@ -50,7 +50,7 @@ au2s3_2_backend_selection_capacity_override:
 au2s3_2_backend_selection:
   description: |-
     Primary backend selection for au2s3-2
-  order: 9
+  order: 80
   actions:
     - use_backend au2s3-2-primary if au2s3-2_wtg_ws_and_subdomains
     - use_backend us2s3-2-primary if us2s3-2_wtg_ws_and_subdomains
@@ -59,14 +59,14 @@ au2s3_2_backend_selection:
 au2s3_3_secondary_backend_selection:
   description: |-
     Use secondary backend in local DC for au2s3-3
-  order: 10
+  order: 80
   actions:
     - use_backend au2s3-3-secondary if au2s3-3-primary_not_enough_capacity au2s3-3_wtg_ws_and_subdomains
 
 au2s3_3_primary_backend_selection:
   description: |-
     Use primary backend in local DC for au2s3-3
-  order: 11
+  order: 80
   actions:
     - use_backend au2s3-3-primary if au2s3-3_wtg_ws_and_subdomains
 

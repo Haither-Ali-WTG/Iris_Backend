@@ -1049,7 +1049,7 @@ app-uat.borderwise.com-catchall:
     cookie APPUAT insert indirect nocache dynamic
     server AU2WT-SDKR-1 10.2.70.12:450 check
 
-connector.wisegrid.net-catchall:
+connector-wisegrid-net-catchall:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
