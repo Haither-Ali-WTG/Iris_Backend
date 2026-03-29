@@ -169,7 +169,7 @@ au2sp-tweb-405b.testrig.sand.wtg.zone-wildcard-https:
       ip: 10.2.122.16
       port: 443
 
-au2sp-tweb-407.testrig.sand.wtg.zone-wildcard:
+au2sp-tweb-407.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
@@ -179,7 +179,7 @@ au2sp-tweb-407.testrig.sand.wtg.zone-wildcard:
       ip: 10.2.122.25
       port: 443
 
-au2sp-tweb-408.testrig.sand.wtg.zone-wildcard:
+au2sp-tweb-408.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
@@ -189,7 +189,7 @@ au2sp-tweb-408.testrig.sand.wtg.zone-wildcard:
       ip: 10.2.122.26
       port: 443
 
-au2sp-tweb-409.testrig.sand.wtg.zone-wildcard:
+au2sp-tweb-409.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
@@ -199,7 +199,7 @@ au2sp-tweb-409.testrig.sand.wtg.zone-wildcard:
       ip: 10.2.122.27
       port: 443
 
-au2sp-tweb-410.testrig.sand.wtg.zone-wildcard:
+au2sp-tweb-410.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
@@ -209,7 +209,7 @@ au2sp-tweb-410.testrig.sand.wtg.zone-wildcard:
       ip: 10.2.122.28
       port: 443
 
-au2sp-tweb-411.testrig.sand.wtg.zone-wildcard:
+au2sp-tweb-411.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
