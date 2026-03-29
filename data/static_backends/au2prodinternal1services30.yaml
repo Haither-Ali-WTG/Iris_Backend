@@ -528,6 +528,7 @@ headrest.wtg.ws:
       port: 30100
       settings: check ssl send-proxy-v2
 
+# yamllint disable rule:line-length
 au2vrops01.virt.wtg.ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
@@ -539,6 +540,7 @@ au2vrops01.virt.wtg.ws:
     http-check expect rstring ONLINE
     server au2opa01.virt.wtg.ws 10.2.114.210:443 ssl check inter 15s maxconn 140 fall 3 rise 3
     server au2opa02.virt.wtg.ws 10.2.114.211:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+# yamllint enable rule:line-length
 
 geoaddressing-test.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
