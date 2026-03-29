@@ -173,7 +173,7 @@ au2sp-tweb-407.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
-  encryption: false
+  encryption: true
   servers:
     - name: au2sp-tweb-407
       ip: 10.2.122.25
@@ -183,7 +183,7 @@ au2sp-tweb-408.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
-  encryption: false
+  encryption: true
   servers:
     - name: au2sp-tweb-408
       ip: 10.2.122.26
@@ -193,7 +193,7 @@ au2sp-tweb-409.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
-  encryption: false
+  encryption: true
   servers:
     - name: au2sp-tweb-409
       ip: 10.2.122.27
@@ -203,7 +203,7 @@ au2sp-tweb-410.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
-  encryption: false
+  encryption: true
   servers:
     - name: au2sp-tweb-410
       ip: 10.2.122.28
@@ -213,7 +213,7 @@ au2sp-tweb-411.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   http_health_check:
     enabled: false
-  encryption: false
+  encryption: true
   servers:
     - name: au2sp-tweb-411
       ip: 10.2.122.29
