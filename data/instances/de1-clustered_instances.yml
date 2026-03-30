@@ -470,7 +470,7 @@ clustered_instances:
         ports:
           web: 2347
           socket: 2348
-      machine_cluster: de1-corp-internal-1
+      machine_cluster: de1-prod-internal-1
       iis_servers: []
       certificates: 
         - name: star-wtg-zone
