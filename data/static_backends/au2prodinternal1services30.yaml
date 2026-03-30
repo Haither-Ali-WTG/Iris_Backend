@@ -446,7 +446,8 @@ rdg-au2.wtg.zone:
   full_override: |
     backend rdg-au2_wtg_zone
     load-server-state-from-file none
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ rdg-au2.wtg.zone
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host rdg-au2.wtg.zone
     cookie RDPWEB insert indirect nocache dynamic
     server au2co-srdg-5.wtg.zone 10.2.68.21:80 check
     server au2co-srdg-6.wtg.zone 10.2.68.22:80 check
@@ -489,7 +490,8 @@ au2netq.wtg.ws:
   full_override: |
     backend au2netq_wtg_ws
     balance source
-    option httpchk HEAD /logon HTTP/1.1\r\nHost:\ au2netq.wtg.ws
+    option httpchk
+    http-check send meth HEAD uri /logon ver HTTP/1.1 hdr Host au2netq.wtg.ws
     http-check expect rstatus 200
     server au2co-netq-001 10.2.80.27:80 check
     server au2co-netq-002 10.2.80.28:80 check
@@ -526,16 +528,19 @@ headrest.wtg.ws:
       port: 30100
       settings: check ssl send-proxy-v2
 
+# yamllint disable rule:line-length
 au2vrops01.virt.wtg.ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2vrops01_virt_wtg_ws
     balance source
     hash-type consistent
-    option httpchk GET /suite-api/api/deployment/node/status?services=api&services=adminui&services=ui\ HTTP/1.0\r\n\r\n
+    option httpchk
+    http-check send meth GET uri /suite-api/api/deployment/node/status?services=api&services=adminui&services=ui ver HTTP/1.0
     http-check expect rstring ONLINE
     server au2opa01.virt.wtg.ws 10.2.114.210:443 ssl check inter 15s maxconn 140 fall 3 rise 3
     server au2opa02.virt.wtg.ws 10.2.114.211:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+# yamllint enable rule:line-length
 
 geoaddressing-test.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
@@ -682,7 +687,8 @@ rates-test.wisegrid.net:
   full_override: |
     backend rates-test_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ rates-test.wisegrid.net
+    option httpchk
+    http-check send meth GET uri /wtg/status ver HTTP/1.1 hdr Host rates-test.wisegrid.net
     http-check expect rstatus 200|401|403
     cookie RATES insert indirect nocache dynamic
     server au2wt-siis-401a 10.2.69.19:80 check
@@ -693,7 +699,8 @@ refdbrepoquartz.wisecloud.zone:
   full_override: |
     backend refdbrepoquartz_wisecloud_zone
     load-server-state-from-file none
-    option httpchk GET /quartz HTTP/1.1\r\nHost:\ refdbrepoquartz.wisecloud.zone
+    option httpchk
+    http-check send meth GET uri /quartz ver HTTP/1.1 hdr Host refdbrepoquartz.wisecloud.zone
     http-check expect rstatus 200|401|403
     cookie RFDBQ insert indirect nocache dynamic
     server AU2WP-SRFD-401 10.2.69.109:9000 check
@@ -704,7 +711,8 @@ refdbrepoupdate.wisecloud.zone:
   full_override: |
     backend refdbrepoupdate_wisecloud_zone
     load-server-state-from-file none
-    option httpchk HEAD /update/wtg/ready HTTP/1.1\r\nHost:\ refdbrepoupdate.wisecloud.zone
+    option httpchk
+    http-check send meth HEAD uri /update/wtg/ready ver HTTP/1.1 hdr Host refdbrepoupdate.wisecloud.zone
     http-check expect rstatus 200|401|403
     cookie RFDBU insert indirect nocache dynamic
     server AU2WP-SRFD-401 10.2.69.109:80 check inter 10s
@@ -715,7 +723,8 @@ portswebapi.wisecloud.zone:
   full_override: |
     backend portswebapi_wisecloud_zone
     load-server-state-from-file none
-    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ portswebapi.wisecloud.zone
+    option httpchk
+    http-check send meth GET uri /wtg/status ver HTTP/1.1 hdr Host portswebapi.wisecloud.zone
     http-check expect rstatus 200|401|403
     cookie PORTSWEBAPIWC insert indirect nocache dynamic
     server AU2WP-SDKR-402A 10.2.88.137:42103 check
@@ -740,7 +749,8 @@ ccds-dev.wisegrid.net:
   full_override: |
     backend ccds-dev_wisegrid_net
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready HTTP/1.1\r\nHost:\ ccds-dev.wisegrid.net
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host ccds-dev.wisegrid.net
     http-check expect rstatus 200|401|403
     cookie CCDST insert indirect nocache dynamic
     server au2wt-siis-402a 10.2.69.23:80 check
@@ -751,7 +761,8 @@ xhportal-uat.wisegrid.net:
   full_override: |
     backend xhportal-uat_wisegrid_net
     load-server-state-from-file none
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ xhportal-uat.wisegrid.net
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host xhportal-uat.wisegrid.net
     http-check expect rstatus 200
     server AU2WT-SIIS-401A 10.2.69.19:80 check
 
@@ -784,7 +795,8 @@ mhereg.wisegrid.net:
   full_override: |
     backend mhereg_wisegrid_net
     load-server-state-from-file none
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ mhereg.wisegrid.net
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host mhereg.wisegrid.net
     http-check expect rstatus 200
     server AU2WP-SIIS-402A 10.2.69.16:80 check
     server AU2WP-SIIS-402B 10.2.69.17:80 check
@@ -794,7 +806,8 @@ translate.wtg.zone:
   full_override: |
     backend translate_wtg_zone
     load-server-state-from-file none
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ translate.wtg.zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host translate.wtg.zone
     http-check expect rstatus 200
     cookie TRL insert indirect nocache dynamic
     server AU2WP-SDKR-1 10.2.67.111:5110 check
@@ -819,7 +832,8 @@ wiseratesadmin.wisegrid.net:
   full_override: |
     backend wiseratesadmin_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ wiseratesadmin.wisegrid.net
+    option httpchk
+    http-check send meth GET uri /wtg/status ver HTTP/1.1 hdr Host wiseratesadmin.wisegrid.net
     http-check expect rstatus 200|401|403
     cookie RATES insert indirect nocache dynamic
     server AU2WP-SIIS-402A 10.2.69.16:80 check
@@ -851,7 +865,8 @@ mhaccess-test.wisecloud.zone:
   full_override: |
     backend mhaccess-test_wisecloud_zone
     load-server-state-from-file none
-    option httpchk GET / HTTP/1.1\r\nHost:\ mhaccess-test.wisecloud.zone
+    option httpchk
+    http-check send meth GET uri / ver HTTP/1.1 hdr Host mhaccess-test.wisecloud.zone
     http-check expect rstatus 200
     server au2wt-smsg-401 10.2.69.18:8080 check
 
@@ -860,7 +875,8 @@ mhaccess2-test.wisecloud.zone:
   full_override: |
     backend mhaccess2-test_wisecloud_zone
     load-server-state-from-file none
-    option httpchk GET / HTTP/1.1\r\nHost:\ mhaccess2-test.wisecloud.zone
+    option httpchk
+    http-check send meth GET uri / ver HTTP/1.1 hdr Host mhaccess2-test.wisecloud.zone
     http-check expect rstatus 200
     server au2wt-smsg-401 10.2.69.18:8080 check
 
@@ -884,7 +900,8 @@ au2s3-2-secondary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend au2s3-2-secondary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie US2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -898,7 +915,8 @@ us2s3-2-primary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend us2s3-2-primary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie US2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -912,7 +930,8 @@ us2s3-2-secondary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend us2s3-2-secondary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie US2S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -926,7 +945,8 @@ de1s3-2-primary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend de1s3-2-primary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie DE1S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -940,7 +960,8 @@ de1s3-2-secondary:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend de1s3-2-secondary
-    option httpchk HEAD /
+    option httpchk
+    http-check send meth HEAD uri /
     cookie DE1S3S insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     acl write_methods method PUT
@@ -954,7 +975,8 @@ registry-au.ocp.wtg.ws:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend registry-au_ocp_wtg_ws
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ registry-au.ocp.wtg.ws
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host registry-au.ocp.wtg.ws
     cookie REGISTRYAU insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     server i1.au2mgmt1 10.2.212.55:30100 check ssl sni str(registry-au.ocp.wtg.ws) check-sni registry-au.ocp.wtg.ws
@@ -969,7 +991,8 @@ cacustoms-encrypt3-test.wisecloud.zone:
   full_override: |
     backend cacustoms-encrypt3-test_wisecloud_zone
     load-server-state-from-file none
-    option httpchk GET / HTTP/1.1\r\nHost:\ cacustoms-encrypt3-test.wisecloud.zone
+    option httpchk
+    http-check send meth GET uri / ver HTTP/1.1 hdr Host cacustoms-encrypt3-test.wisecloud.zone
     http-check expect rstatus 200
     cookie cacet insert indirect nocache dynamic
     server au2wt-smsg-401 10.2.69.18:80 check
@@ -979,7 +1002,8 @@ dsairflow.wisegrid.net:
   full_override: |
     backend dsairflow_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /health HTTP/1.1\r\nHost:\ dsairflow.wisegrid.net
+    option httpchk
+    http-check send meth GET uri /health ver HTTP/1.1 hdr Host dsairflow.wisegrid.net
     http-check expect rstatus 200
     server au2wp-setl-401 10.2.88.118:80 check
 
@@ -988,7 +1012,8 @@ au-idp-writer-prod.wisegrid.net:
   full_override: |
     backend au-idp-writer-prod_wisegrid_net
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     cookie IWP insert indirect nocache dynamic
     server au2wp-sidw-511a 10.2.144.11:3006 check ssl
@@ -999,7 +1024,8 @@ au-idp-writer-staging.wisegrid.net:
   full_override: |
     backend au-idp-writer-staging_wisegrid_net
     load-server-state-from-file none
-    option httpchk HEAD /wtg/ready
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
     http-check expect status 200
     cookie IWT insert indirect nocache dynamic
     server au2wt-sidw-511a 10.2.140.11:3006 check ssl
@@ -1022,7 +1048,8 @@ cargotracker-webapi-uat.test.wisecloud.zone:
   full_override: |
     backend cargotracker-webapi-uat_test_wisecloud_zone
     load-server-state-from-file none
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ cargotracker-webapi-uat.test.wisecloud.zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host cargotracker-webapi-uat.test.wisecloud.zone
     http-check expect status 200
     cookie CTWAU insert indirect nocache dynamic
     server au2wt-sdkr-1 10.2.70.12:42104 check
@@ -1033,7 +1060,8 @@ ocmportal.wisegrid.net:
   full_override: |
     backend ocmportal_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /wtg/status HTTP/1.1\r\nHost:\ ocmportal.wisegrid.net
+    option httpchk
+    http-check send meth GET uri /wtg/status ver HTTP/1.1 hdr Host ocmportal.wisegrid.net
     http-check expect rstatus 200|401|403
     cookie OCMP insert indirect nocache dynamic
     server AU2WP-SIIS-402A 10.2.69.16:80 check
@@ -1044,7 +1072,8 @@ app-uat.borderwise.com-catchall:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
     backend app-uat_borderwise_com_catch_all
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ app-uat.borderwise.com
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host app-uat.borderwise.com
     http-check expect rstatus 200
     cookie APPUAT insert indirect nocache dynamic
     server AU2WT-SDKR-1 10.2.70.12:450 check
@@ -1210,7 +1239,8 @@ dup.wtg.zone:
   full_override: |
     backend dup_wtg_zone
     load-server-state-from-file none
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ dup.wtg.zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host dup.wtg.zone
     http-check expect rstatus 200
     cookie DUP insert indirect nocache dynamic
     server AU2WP-SDKR-1 10.2.67.111:5005 check
@@ -1221,7 +1251,8 @@ dupapi.wtg.zone:
   full_override: |
     backend dupapi_wtg_zone
     load-server-state-from-file none
-    option httpchk HEAD /wtg/status HTTP/1.1\r\nHost:\ dupapi.wtg.zone
+    option httpchk
+    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host dupapi.wtg.zone
     http-check expect rstatus 200
     cookie DUPA insert indirect nocache dynamic
     server AU2WP-SDKR-1 10.2.67.111:5102 check
@@ -1233,7 +1264,8 @@ dsmlflow.wisegrid.net:
   full_override: |
     backend dsmlflow_wisegrid_net
     load-server-state-from-file none
-    option httpchk GET /health HTTP/1.1\r\nHost:\ dsmlflow.wisegrid.net
+    option httpchk
+    http-check send meth GET uri /health ver HTTP/1.1 hdr Host dsmlflow.wisegrid.net
     http-check expect rstatus 200
     server au2wp-setl-402 10.2.88.119:80 check
 
@@ -1302,7 +1334,8 @@ rdg-au2.wisecloud.zone:
   full_override: |
     backend rdg-au2_wisecloud_zone
     load-server-state-from-file none
-    option httpchk HEAD / HTTP/1.1\r\nHost:\ rdg-au2.wisecloud.zone
+    option httpchk
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr Host rdg-au2.wisecloud.zone
     cookie RDPWEB insert indirect nocache dynamic
     server au2co-srdg-5.wtg.zone 10.2.68.21:80 check
     server au2co-srdg-6.wtg.zone 10.2.68.22:80 check
