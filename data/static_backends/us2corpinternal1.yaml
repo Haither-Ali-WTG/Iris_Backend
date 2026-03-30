@@ -90,7 +90,8 @@ us2k3s-v1.wtg.zone:
   full_override: |
     backend us2k3s-v1_wtg_zone
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
-    option httpchk HEAD /healthz HTTP/1.0
+    option httpchk
+    http-check send meth HEAD uri /healthz ver HTTP/1.0 hdr Host us2k3s-v1.wtg.zone
     server us2chl23991 10.4.239.91:443 check ssl verify none
     server us2chl23992 10.4.239.92:443 check ssl verify none
     server us2chl23993 10.4.239.93:443 check ssl verify none
@@ -126,7 +127,8 @@ us2kvl-v1.wtg.zone:
   full_override: |
     backend us2kvl-v1_wtg_zone
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
-    option httpchk HEAD /healthz HTTP/1.0
+    option httpchk
+    http-check send meth HEAD uri /healthz ver HTTP/1.0 hdr Host us2kvl-v1.wtg.zone
     server us2kvl-v1-vip 10.4.128.6:443 check ssl verify none
 
 us2pf1-prod-customurls.wtg.zone:
