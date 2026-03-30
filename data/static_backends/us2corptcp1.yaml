@@ -1,87 +1,39 @@
 ---
 admin-us2-wisecloud-zone:
   clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2wp-srdp-405
-      ip: 10.4.86.35
-      port: 3389
-      settings: check ssl
-    - name: us2wp-srdp-406
-      ip: 10.4.86.36
-      port: 3389
-      settings: check ssl
+  full_override: |
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server us2wp-srdp-405 10.4.86.35:3389 check
+    server us2wp-srdp-406 10.4.86.36:3389 check
 
 admin-us2-wtg-zone:
   clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2co-srdp-405
-      ip: 10.4.86.45
-      port: 3389
-      settings: check ssl
-    - name: us2co-srdp-406
-      ip: 10.4.86.46
-      port: 3389
-      settings: check ssl
-
-daadmin-us2-wisecloud-zone:
-  clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2wp-srdp-403
-      ip: 10.4.86.33
-      port: 3389
-      settings: check ssl
-    - name: us2wp-srdp-404
-      ip: 10.4.86.34
-      port: 3389
-      settings: check ssl
-
-daadmin-us2-wtg-zone:
-  clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2co-srdp-403
-      ip: 10.4.86.31
-      port: 3389
-      settings: check ssl
-    - name: us2co-srdp-404
-      ip: 10.4.86.32
-      port: 3389
-      settings: check ssl
+  full_override: |
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server us2co-srdp-405 10.4.86.45:3389 check
+    server us2co-srdp-406 10.4.86.46:3389 check
 
 jump2-us2-wisecloud-zone:
   clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2wp-srdp-401
-      ip: 10.4.86.28
-      port: 3389
-      settings: check ssl
-    - name: us2wp-srdp-402
-      ip: 10.4.86.29
-      port: 3389
-      settings: check ssl backup  # It's like this in production, I'd rather not mess with it
+  full_override: |
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server us2wp-srdp-401 10.4.86.28:3389 check
+    server us2wp-srdp-402 10.4.86.29:3389 check
 
 jump2-us2-wtg-zone:
   clustered_instances: [us2corptcp1]
-  http_health_check:
-    enabled: false
-  servers:
-    - name: us2co-srdp-407
-      ip: 10.4.86.47
-      port: 3389
-      settings: check ssl
-    - name: us2co-srdp-408
-      ip: 10.4.86.48
-      port: 3389
-      settings: check ssl
+  full_override: |
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server us2co-srdp-407 10.4.86.47:3389 check
+    server us2co-srdp-408 10.4.86.48:3389 check
 
 us2kvl-v1.wtg.zone:
   clustered_instances: [us2corptcp1]

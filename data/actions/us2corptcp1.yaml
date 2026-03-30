@@ -5,8 +5,6 @@ destination_port_test:
   actions:  # Lining it up like this looks super clean
     - use_backend admin-us2-wisecloud-zone    if { dst_port 1069 }
     - use_backend admin-us2-wtg-zone          if { dst_port 1061 }
-    - use_backend daadmin-us2-wisecloud-zone  if { dst_port 1068 }
-    - use_backend daadmin-us2-wtg-zone        if { dst_port 1067 }
     - use_backend jump2-us2-wisecloud-zone    if { dst_port 1066 }
     - use_backend jump2-us2-wtg-zone          if { dst_port 1062 }
 
