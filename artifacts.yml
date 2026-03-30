@@ -7,12 +7,12 @@ variables:
   # 91fe82af6ca0ebac2397a6bd1576f169263680ab
   dante_build_id: '1655015'
 
-  # virgil 20260330.3
-  # Mon Mar 30 00:01:30 UTC 2026 -- Mon Mar 30 11:01:30 AEDT 2026
+  # virgil 20260331.2
+  # Mon Mar 30 18:21:49 UTC 2026 -- Tue Mar 31 05:21:49 AEDT 2026
   #
-  # Merged PR 47256: Move wildcard to iris from haproxy
-  # 39ecc58dbad154b705ed574d196e639184f94575
-  virgil_build_id: '1654949'
+  # Merge pull request 47304 from virgil_python_upgrade into master
+  # 8ff8ae9ab3a9127f5cdd7ed80cabb8362a0805ed
+  virgil_build_id: '1655670'
 
   # sqlbilling 20260330.2
   # Sun Mar 29 23:37:51 UTC 2026 -- Mon Mar 30 10:37:51 AEDT 2026
