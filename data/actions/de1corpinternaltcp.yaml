@@ -1,0 +1,56 @@
+---
+admin-de1_wtg_zone:
+  description: |-
+    Port based backend selection for admin-de1_wtg_zone
+  order: 81
+  actions:
+    - use_backend admin-de1_wtg_zone if acl_admin-de1_wtg_zone
+
+jump2-de1_wtg_zone:
+  description: |-
+    Port based backend selection for jump2-de1_wtg_zone
+  order: 82
+  actions:
+    - use_backend jump2-de1_wtg_zone if acl_jump2-de1_wtg_zone
+
+admin-de1_wisecloud_zone:
+  description: |-
+    Port based backend selection for admin-de1_wisecloud_zone
+  order: 83
+  actions:
+    - use_backend admin-de1_wisecloud_zone if acl_admin-de1_wisecloud_zone
+
+jump2-de1_wisecloud_zone:
+  description: |-
+    Port based backend selection for jump2-de1_wisecloud_zone
+  order: 84
+  actions:
+    - use_backend jump2-de1_wisecloud_zone if acl_jump2-de1_wisecloud_zone
+  
+tenantsupport-de1-emea-anr-int_wtg_zone:
+  description: |-
+    Port based backend selection for tenantsupport-de1-emea-anr-int_wtg_zone
+  order: 85
+  actions:
+    - use_backend tenantsupport-de1-emea-anr-int_wtg_zone if acl_tenantsupport-de1-emea-anr-int_wtg_zone
+
+tenantsupport-de1-emea-mxp-int_wtg_zone:
+  description: |-
+    Port based backend selection for tenantsupport-de1-emea-mxp-int_wtg_zone
+  order: 86
+  actions:
+    - use_backend tenantsupport-de1-emea-mxp-int_wtg_zone if acl_tenantsupport-de1-emea-mxp-int_wtg_zone
+
+tenantsupport-de1-emea-mad-int_wtg_zone:
+  description: |-
+    Port based backend selection for tenantsupport-de1-emea-mad-int_wtg_zone
+  order: 87
+  actions:
+    - use_backend tenantsupport-de1-emea-mad-int_wtg_zone if acl_tenantsupport-de1-emea-mad-int_wtg_zone
+
+tenantsupport-de1-emea-ham-int_wtg_zone:
+  description: |-
+    Port based backend selection for tenantsupport-de1-emea-ham-int_wtg_zone
+  order: 88
+  actions:
+    - use_backend tenantsupport-de1-emea-ham-int_wtg_zone if acl_tenantsupport-de1-emea-ham-int_wtg_zone

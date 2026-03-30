@@ -448,3 +448,31 @@ clustered_instances:
       machine_cluster: de1-prod-internal-1
       iis_servers: []
       certificates: []
+
+    de1corpinternaltcp:
+      # de1-corp-internal-tcp
+      dc: DE1
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 1061  # admin-de1.wtg.zone
+            - 1062  # jump2-de1.wtg.zone
+            - 1066  # jump2-de1.wisecloud.zone
+            - 1069  # admin-de1.wisecloud.zone
+            - 1070  # tenantsupport-de1-emea-anr-int.wtg.zone
+            - 1071  # tenantsupport-de1-emea-mxp-int.wtg.zone
+            - 1072  # tenantsupport-de1-emea-mad-int.wtg.zone
+            - 1073  # tenantsupport-de1-emea-ham-int.wtg.zone
+      stats:
+        ports:
+          web: 2347
+          socket: 2348
+      machine_cluster: de1-corp-internal-1
+      iis_servers: []
+      certificates: 
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-wisecloud-zone

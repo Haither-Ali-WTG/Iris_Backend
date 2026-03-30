@@ -1,0 +1,40 @@
+---
+acl_admin-de1_wtg_zone:
+  description: admin-de1.wtg.zone NAT port
+  tests:
+    - dst_port 1061
+
+acl-jump2-de1_wtg_zone:
+  description: jump2-de1.wtg.zone NAT port
+  tests:
+    - dst_port 1062
+
+acl_jump2-de1_wisecloud_zone:
+  description: jump2-de1.wisecloud.zone NAT port
+  tests:
+    - dst_port 1066
+
+acl_admin-de1_wisecloud_zone:
+  description: admin-de1.wisecloud.zone NAT port
+  tests:
+    - dst_port 1069
+
+acl_tenantsupport-de1-emea-anr-int_wtg_zone:
+  description: tenantsupport-de1-emea-anr-int.wtg.zone NAT port
+  tests:
+    - dst_port 1070
+
+acl_tenantsupport-de1-emea-mxp-int_wtg_zone:
+  description: tenantsupport-de1-emea-mxp-int.wtg.zone NAT port
+  tests:
+    - dst_port 1071
+
+acl_tenantsupport-de1-emea-mad-int_wtg_zone:
+  description: tenantsupport-de1-emea-mad-int.wtg.zone NAT port
+  tests:
+    - dst_port 1072
+
+acl_tenantsupport-de1-emea-ham-int_wtg_zone:
+  description: tenantsupport-de1-emea-ham-int.wtg.zone NAT port
+  tests:
+    - dst_port 1073
