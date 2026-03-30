@@ -951,6 +951,39 @@ testtmp.borderwise.com-catchall:
       ip: 10.2.214.19
       port: 30400
 
+svc-wtltai.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Services
+    method: GET
+    check_expect: '200|401|403'
+  servers:
+    - name: au2co-sweb-402a
+      ip: 10.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+
+www-wtltai.cargowise.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: SPWS
+  http_health_check:
+    enabled: true
+    http_path: /Glow/wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2co-sweb-402a
+      ip: 10.2.69.82
+      port: 80
+    - name: au2co-sweb-402b
+      ip: 10.2.69.83
+      port: 80
+
 svc-hyetip.cargowise.com:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
