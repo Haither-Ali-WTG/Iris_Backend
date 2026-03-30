@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260327.1
-  # Thu Mar 26 23:01:07 UTC 2026 -- Fri Mar 27 10:01:07 AEDT 2026
+  # Dante Build Artifact 20260330.1
+  # Mon Mar 30 01:01:11 UTC 2026 -- Mon Mar 30 12:01:11 AEDT 2026
   #
-  # Merge pull request 47137 from dante_artifact_upgrade into master
-  # 09d0248fb5cfb1aeef581104643acb5626f76428
-  dante_build_id: '1652403'
+  # Merge pull request 47259 from dante_artifact_upgrade into master
+  # 91fe82af6ca0ebac2397a6bd1576f169263680ab
+  dante_build_id: '1655015'
 
-  # virgil 20260327.13
-  # Thu Mar 26 22:19:55 UTC 2026 -- Fri Mar 27 09:19:55 AEDT 2026
+  # virgil 20260330.3
+  # Mon Mar 30 00:01:30 UTC 2026 -- Mon Mar 30 11:01:30 AEDT 2026
   #
-  # Merged PR 47116: Add new Elastic Node model and 5 new servers
-  # a9abecb5edea4da291aee41e70e9bfd46cf503ee
-  virgil_build_id: '1652343'
+  # Merged PR 47256: Move wildcard to iris from haproxy
+  # 39ecc58dbad154b705ed574d196e639184f94575
+  virgil_build_id: '1654949'
 
   # sqlbilling 20260330.2
   # Sun Mar 29 23:37:51 UTC 2026 -- Mon Mar 30 10:37:51 AEDT 2026
