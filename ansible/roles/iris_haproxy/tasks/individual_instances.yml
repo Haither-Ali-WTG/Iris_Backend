@@ -165,6 +165,23 @@
     haproxy_container_user: "{{ subuser.subuid }}"
     haproxy_container_group: "{{ subuser.subuid }}"
 
+- name: Check if current haproxy config exists
+  stat:
+    path: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+  become: yes
+  register: current_haproxy_config
+
+- name: Copy current config to test config to make their consistency
+  copy:
+    src: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg"
+    dest: "{{ individual_instance_dir }}/etc/{{ clustered_instance_name }}.cfg.test"
+    remote_src: yes
+    mode: u=r,go=
+    owner: "{{ subuser.subuid }}"
+    group: "{{ subuser.subgid }}"
+  become: yes
+  when: current_haproxy_config.stat.exists
+
 - name: Template out the test haproxy config
   template:
     src: haproxy.cfg.j2
@@ -174,6 +191,19 @@
     group: "{{ subuser.subgid }}"
   become: yes
   register: haproxy_config
+
+- name: Fail when haproxy config changes are not allowed
+  fail:
+    msg: >-
+      HAProxy config changed for {{ clustered_instance_name }} on {{ inventory_hostname }},
+      but the pipeline variable ensure_no_haproxy_changes is set to true.
+      If the change is intentional, rerun the pipeline with
+      ensure_no_haproxy_changes set to false.
+      Only set ensure_no_haproxy_changes to true when refactoring code and you do not want
+      the refactor to introduce any HAProxy configuration changes.
+  when:
+    - ensure_no_haproxy_changes | default(false) | bool
+    - haproxy_config.changed
 
 - name: Fetch the dumped config
   fetch:
@@ -202,7 +232,12 @@
       - -f
       - /etc/haproxy/{{ clustered_instance_name }}.cfg.test
     container_user: "{{ haproxy_container_user }}:{{ haproxy_container_group }}"
-  when: haproxy_config.changed
+  when:
+    - (
+        haproxy_config.changed
+        or copy_certificates.changed
+        or copy_sqlbillings.changed
+      )  # noqa: no-handler
 
 - name: Copy validated configuration file  # noqa no-handler
   copy:
