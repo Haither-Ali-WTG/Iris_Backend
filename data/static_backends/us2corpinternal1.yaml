@@ -49,22 +49,6 @@ netbox-us2.wtg.zone:
       ip: 10.4.82.17
       port: 80
 
-rdg-us2.wtg.zone:
-  clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: true
-    http_path: /
-  cookie:
-    name: RDPWEB
-    secure: true
-  servers:
-    - name: us2co-srdg-1.wtg.zone
-      ip: 10.4.68.31
-      port: 80
-    - name: us2co-srdg-2.wtg.zone
-      ip: 10.4.68.32
-      port: 80
-
 stats-rdg-us2.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:

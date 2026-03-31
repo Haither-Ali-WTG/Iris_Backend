@@ -108,6 +108,8 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-urs-wisegrid-net
+        - name: star-wisecloud-zone
+          cms_resource_group: RG-AU-Prod
         - name: star-de1s3-3-wtg-ws
           cms_resource_group: RG-EU-Prod
         - name: star-cwconnector-wisegrid-net
