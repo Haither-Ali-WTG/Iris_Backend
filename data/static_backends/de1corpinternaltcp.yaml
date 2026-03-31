@@ -15,7 +15,7 @@ jump2-de1.wtg.zone:
     option tcp-check
     tcp-check connect port 3389 ssl
     server de1co-srdp-407 10.3.86.47:3389 check
-    server de1co-srdp-408 10.3.86.48:3389 check  
+    server de1co-srdp-408 10.3.86.48:3389 check
 
 admin-de1.wisecloud.zone:
   clustered_instances: [de1corpinternaltcp]
