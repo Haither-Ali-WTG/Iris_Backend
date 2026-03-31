@@ -1003,7 +1003,7 @@ dsairflow.wisegrid.net:
     backend dsairflow_wisegrid_net
     load-server-state-from-file none
     option httpchk
-    http-check send meth GET uri /health ver HTTP/1.1 hdr Host dsairflow.wisegrid.net
+    http-check send meth GET uri /api/v2/monitor/health ver HTTP/1.1 hdr Host dsairflow.wisegrid.net
     http-check expect rstatus 200
     server au2wp-setl-401 10.2.88.118:80 check
 
