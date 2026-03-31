@@ -173,3 +173,13 @@ stages:
               fi
             condition: and(succeeded(), eq(variables['changed'], 'yes'))
             displayName: "Create PR and Set Auto-Complete"
+
+          - task: Ansible@0
+            displayName: 'Check site collection result'
+            inputs:
+              ansibleInterface: 'agentMachine'
+              playbookPathOnAgentMachine: 'ansible/check_collection_result.yml'
+              inventoriesAgentMachine: 'file'
+              inventoryFileOnAgentMachine: 'data/instances'
+              args: >-
+                -u $(user) --diff
