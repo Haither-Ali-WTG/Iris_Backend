@@ -3615,6 +3615,9 @@ au2wca.wtg.zone:
     - name: au2co-swfe-401
       ip: 10.2.69.32
       port: 80
+    - name: au2co-swfe-402
+      ip: 10.2.69.33
+      port: 80
     - name: au2co-swfe-403
       ip: 10.2.69.34
       port: 80
@@ -3634,6 +3637,9 @@ wcatoken.wtg.zone:
       port: 80
     - name: au2co-swfe-402
       ip: 10.2.69.33
+      port: 80
+    - name: au2co-swfe-403
+      ip: 10.2.69.34
       port: 80
 
 au2prod2-prodexternal-catchall:
