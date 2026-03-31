@@ -14,9 +14,9 @@ variables:
   # b67253d75714160feed29c0e538ba17d3321d18f
   virgil_build_id: '1656154'
 
-  # sqlbilling 20260330.2
-  # Sun Mar 29 23:37:51 UTC 2026 -- Mon Mar 30 10:37:51 AEDT 2026
+  # sqlbilling 20260331.3
+  # Tue Mar 31 07:57:59 UTC 2026 -- Tue Mar 31 18:57:59 AEDT 2026
   #
-  # Merged PR 47257: update sqlreadonly
-  # e14f8f308d7a0c4566924bbcc425e2b645d0aef0
-  sqlbilling_build_id: '1654915'
+  # Merged PR 47391: LSL-CS02287215
+  # efd5809a1fa847af1f2043eef0f329976255b8eb
+  sqlbilling_build_id: '1656304'
