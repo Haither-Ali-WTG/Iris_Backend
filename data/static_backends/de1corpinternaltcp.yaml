@@ -2,6 +2,7 @@
 admin-de1.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend admin-de1_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -11,6 +12,7 @@ admin-de1.wtg.zone:
 jump2-de1.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend jump2-de1_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -20,6 +22,7 @@ jump2-de1.wtg.zone:
 admin-de1.wisecloud.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend admin-de1_wisecloud_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -29,6 +32,7 @@ admin-de1.wisecloud.zone:
 jump2-de1.wisecloud.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend jump2-de1_wisecloud_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -38,6 +42,7 @@ jump2-de1.wisecloud.zone:
 tenantsupport-de1-emea-anr-int.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend tenantsupport-de1-emea-anr-int_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -46,6 +51,7 @@ tenantsupport-de1-emea-anr-int.wtg.zone:
 tenantsupport-de1-emea-mxp-int.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend tenantsupport-de1-emea-mxp-int_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -54,6 +60,7 @@ tenantsupport-de1-emea-mxp-int.wtg.zone:
 tenantsupport-de1-emea-mad-int.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend tenantsupport-de1-emea-mad-int_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
@@ -62,6 +69,7 @@ tenantsupport-de1-emea-mad-int.wtg.zone:
 tenantsupport-de1-emea-ham-int.wtg.zone:
   clustered_instances: [de1corpinternaltcp]
   full_override: |
+    backend tenantsupport-de1-emea-ham-int_wtg_zone
     load-server-state-from-file none
     option tcp-check
     tcp-check connect port 3389 ssl
