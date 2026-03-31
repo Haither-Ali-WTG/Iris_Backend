@@ -7,15 +7,13 @@ clustered_instances:
         mode: tcp
       frontend:
         maxconn: 20000
-        proxy_ports:
-          plaintext:
-            - 2005  # e2proxy
         ports:
           plaintext:
             - 2001  # SFTP
             - 2002  # XMPP
             - 2003  # hh1.art.e2open.com
             - 2004  # SFTP Proxy
+            - 2005  # e2proxy
       iis_servers: []
       certificates: []
       sqlbilling_acl: []
