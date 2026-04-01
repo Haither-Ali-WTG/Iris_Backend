@@ -35,12 +35,12 @@ custom_url_actions:
     ### Webtracker
     - use_backend gu1trn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gu1trn2.webtracker.wisegrid.net }
     - use_backend seitst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i seitstwarehouse.wisegrid.net }
-    - use_backend seitstwebtracker_wisegrid_net if { hdr(host),field(1,:) -i seitstwebtracker.wisegrid.net }
+    - use_backend seitst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i seitstwebtracker.wisegrid.net }
     - use_backend seits1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i seits1warehouse.wisegrid.net }
     - use_backend jgstst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrackerqa.johngood.co.uk }
 
     ### Webprint
-    - use_backend seitstwebprint_wisegrid_net if { hdr(host),field(1,:) -i seitstwebprint.wisegrid.net }
+    - use_backend seitst_webprint_wisegrid_net if { hdr(host),field(1,:) -i seitstwebprint.wisegrid.net }
 
     ### Glow
     - use_backend www-icots1_wisegrid_net if { hdr(host),field(1,:) -i test.intercargo.com }
