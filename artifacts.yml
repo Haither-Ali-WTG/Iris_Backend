@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260331.2
-  # Tue Mar 31 06:01:14 UTC 2026 -- Tue Mar 31 17:01:14 AEDT 2026
+  # Dante Build Artifact 20260401.1
+  # Wed Apr  1 06:21:50 UTC 2026 -- Wed Apr  1 17:21:50 AEDT 2026
   #
-  # Merge pull request 47372 from dante_artifact_upgrade into master
-  # a2b33d25a23ea29d9ae6e52cf6699e2eb48296b4
-  dante_build_id: '1656211'
+  # Merge pull request 47460 from dante_artifact_upgrade into master
+  # c7ac38a0ad6bd62bdb452e92ce8832fa83aa2c0d
+  dante_build_id: '1657192'
 
-  # virgil 20260331.5
-  # Tue Mar 31 05:13:25 UTC 2026 -- Tue Mar 31 16:13:25 AEDT 2026
+  # virgil 20260401.3
+  # Wed Apr  1 05:40:24 UTC 2026 -- Wed Apr  1 16:40:24 AEDT 2026
   #
-  # Merged PR 47368: Because Shin said so
-  # b67253d75714160feed29c0e538ba17d3321d18f
-  virgil_build_id: '1656154'
+  # Merged PR 47457: Update AAP DNS records and update IP assignments
+  # 97820f569dcf32545cd9a4affb22420ae61e9ec0
+  virgil_build_id: '1657147'
 
-  # sqlbilling 20260331.3
-  # Tue Mar 31 07:57:59 UTC 2026 -- Tue Mar 31 18:57:59 AEDT 2026
+  # sqlbilling 20260401.2
+  # Tue Mar 31 15:07:33 UTC 2026 -- Wed Apr  1 02:07:33 AEDT 2026
   #
-  # Merged PR 47391: LSL-CS02287215
-  # efd5809a1fa847af1f2043eef0f329976255b8eb
-  sqlbilling_build_id: '1656304'
+  # Merged PR 47397: SQLBilling-Remove-CS02210991.yml
+  # d38812f732b7709150912637c9666922eca3ccf1
+  sqlbilling_build_id: '1656586'
