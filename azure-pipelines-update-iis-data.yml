@@ -182,4 +182,4 @@ stages:
               inventoriesAgentMachine: 'file'
               inventoryFileOnAgentMachine: 'data/instances'
               args: >-
-                -u $(user) --diff
+                --diff
