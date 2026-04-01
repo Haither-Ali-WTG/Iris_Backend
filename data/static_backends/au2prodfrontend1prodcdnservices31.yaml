@@ -3611,6 +3611,7 @@ au2wca.wtg.zone:
     check_expect: '200'
     method: GET
     http_path: /wtg/ready
+  default-server agent-check agent-port 8098
   servers:
     - name: au2co-swfe-401
       ip: 10.2.69.32
@@ -3631,6 +3632,7 @@ wcatoken.wtg.zone:
     check_expect: '200'
     method: GET
     http_path: /wtg/ready
+  default-server agent-check agent-port 8098
   servers:
     - name: au2co-swfe-401
       ip: 10.2.69.32
