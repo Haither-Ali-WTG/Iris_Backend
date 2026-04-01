@@ -423,6 +423,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-iris-stats-wtg-zone
           cms_resource_group: RG-AU-Corp
+        - name: star-wt-envaseconect-cloud
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023

@@ -833,3 +833,26 @@ us2prodfrontend1pierbridgehubcapp.iris-stats.wtg.zone:
       ip: 10.4.64.23
       port: 2033
 # end of iris-stats services
+
+rundeck-dev.wt-envaseconnect.cloud:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: us2usgopsl00050
+      ip: 10.4.200.50
+      port: 80
+      settings: check
+
+rundeck.wt-envaseconnect.cloud:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: us2usgopsl00040
+      ip: 10.4.200.40
+      port: 80
+      settings: check
+      
