@@ -7,12 +7,12 @@ variables:
   # c7ac38a0ad6bd62bdb452e92ce8832fa83aa2c0d
   dante_build_id: '1657192'
 
-  # virgil 20260401.3
-  # Wed Apr  1 05:40:24 UTC 2026 -- Wed Apr  1 16:40:24 AEDT 2026
+  # virgil 20260402.4
+  # Thu Apr  2 01:19:54 UTC 2026 -- Thu Apr  2 12:19:54 AEDT 2026
   #
-  # Merged PR 47457: Update AAP DNS records and update IP assignments
-  # 97820f569dcf32545cd9a4affb22420ae61e9ec0
-  virgil_build_id: '1657147'
+  # Merged PR 47044: trial initial config for VCF
+  # cb9d54e371d3215c8820ebf6255cd3616a32b798
+  virgil_build_id: '1657882'
 
   # sqlbilling 20260401.2
   # Tue Mar 31 15:07:33 UTC 2026 -- Wed Apr  1 02:07:33 AEDT 2026
