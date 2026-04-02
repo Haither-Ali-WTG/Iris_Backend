@@ -135,6 +135,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-wisetechglobal-cn
           cms_resource_group: RG-AU-Corp
+        - name: star-cargowise-com-cn
+          cms_resource_group: RG-AU-Corp
       cipher:
         profiles:
           - best_practice_2023
