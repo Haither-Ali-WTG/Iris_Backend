@@ -69,6 +69,19 @@ stats-uscloud-us2.wtg.zone:
       ip: 10.4.64.171
       port: 2039
 
+us2k3s-v1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  full_override: |
+    backend us2k3s-v1_wtg_zone
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    option httpchk
+    http-check send meth HEAD uri /healthz ver HTTP/1.0 hdr Host us2k3s-v1.wtg.zone
+    server us2chl23991 10.4.239.91:443 check ssl verify none
+    server us2chl23992 10.4.239.92:443 check ssl verify none
+    server us2chl23993 10.4.239.93:443 check ssl verify none
+    server us2chl23994 10.4.239.94:443 check ssl verify none
+    server us2chl23995 10.4.239.95:443 check ssl verify none
+
 us2kvl-v0.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
@@ -92,6 +105,15 @@ us2kvl-v0.wtg.zone:
       ip: 10.4.128.14
       port: 8006
       settings: check ssl verify none
+
+us2kvl-v1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  full_override: |
+    backend us2kvl-v1_wtg_zone
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    option httpchk
+    http-check send meth HEAD uri /healthz ver HTTP/1.0 hdr Host us2kvl-v1.wtg.zone
+    server us2kvl-v1-vip 10.4.128.6:443 check ssl verify none
 
 us2pf1-prod-customurls.wtg.zone:
   clustered_instances: [us2corpinternal1]
