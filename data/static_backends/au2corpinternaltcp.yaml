@@ -1,0 +1,41 @@
+---
+admin-au2.wtg.zone:
+  clustered_instances: [au2corpinternaltcp]
+  full_override: |
+    backend admin-au2_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server au2co-srdp-405 10.2.86.45:3389 check
+    server au2co-srdp-406 10.2.86.46:3389 check
+
+jump2-au2.wtg.zone:
+  clustered_instances: [au2corpinternaltcp]
+  full_override: |
+    backend jump2-au2_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server au2co-srdp-407 10.2.86.47:3389 check
+    server au2co-srdp-408 10.2.86.48:3389 check
+    server au2co-srdp-409 10.2.86.49:3389 check
+
+admin-au2.wisecloud.zone:
+  clustered_instances: [au2corpinternaltcp]
+  full_override: |
+    backend admin-au2_wisecloud_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server au2wp-srdp-405 10.2.86.35:3389 check
+    server au2wp-srdp-406 10.2.86.36:3389 check
+
+jump2-au2.wisecloud.zone:
+  clustered_instances: [au2corpinternaltcp]
+  full_override: |
+    backend jump2-au2_wisecloud_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server au2wp-srdp-401 10.2.86.28:3389 check
+    server au2wp-srdp-402 10.2.86.29:3389 check

@@ -3,12 +3,10 @@ destination_port_test:
   description: Test destination port to determine which jump host to forward to
   order: 50
   actions:  # Lining it up like this looks super clean
-    - use_backend admin-us2-wisecloud-zone    if { dst_port 1069 }
-    - use_backend admin-us2-wtg-zone          if { dst_port 1061 }
-    - use_backend daadmin-us2-wisecloud-zone  if { dst_port 1068 }
-    - use_backend daadmin-us2-wtg-zone        if { dst_port 1067 }
-    - use_backend jump2-us2-wisecloud-zone    if { dst_port 1066 }
-    - use_backend jump2-us2-wtg-zone          if { dst_port 1062 }
+    - use_backend admin-us2_wisecloud_zone    if { dst_port 1069 }
+    - use_backend admin-us2_wtg_zone          if { dst_port 1061 }
+    - use_backend jump2-us2_wisecloud_zone    if { dst_port 1066 }
+    - use_backend jump2-us2_wtg_zone          if { dst_port 1062 }
 
 redis_uat_urs_wisegrid_net:
   description: |-

@@ -1,0 +1,76 @@
+---
+admin-de1.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend admin-de1_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1co-srdp-405 10.3.86.45:3389 check
+    server de1co-srdp-406 10.3.86.46:3389 check
+
+jump2-de1.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend jump2-de1_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1co-srdp-407 10.3.86.47:3389 check
+    server de1co-srdp-408 10.3.86.48:3389 check
+
+admin-de1.wisecloud.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend admin-de1_wisecloud_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1wp-srdp-405 10.3.86.35:3389 check
+    server de1wp-srdp-406 10.3.86.36:3389 check
+
+jump2-de1.wisecloud.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend jump2-de1_wisecloud_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1wp-srdp-401 10.3.86.28:3389 check
+    server de1wp-srdp-402 10.3.86.29:3389 check
+
+tenantsupport-de1-emea-anr-int.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend tenantsupport-de1-emea-anr-int_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1wp-srdp-409 10.3.86.49:3389 check
+
+tenantsupport-de1-emea-mxp-int.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend tenantsupport-de1-emea-mxp-int_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1co-srdp-410 10.3.86.50:3389 check
+
+tenantsupport-de1-emea-mad-int.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend tenantsupport-de1-emea-mad-int_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1co-srdp-411 10.3.86.51:3389 check
+
+tenantsupport-de1-emea-ham-int.wtg.zone:
+  clustered_instances: [de1corpinternaltcp]
+  full_override: |
+    backend tenantsupport-de1-emea-ham-int_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server de1co-srdp-412 10.3.86.52:3389 check

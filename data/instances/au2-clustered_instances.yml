@@ -739,3 +739,27 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    au2corpinternaltcp:
+      # au2-corp-internal-tcp
+      dc: AU2
+      defaults:
+        mode: tcp
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext:
+            - 1061  # admin-au2.wtg.zone
+            - 1062  # jump2-au2.wtg.zone
+            - 1066  # jump2-au2.wisecloud.zone
+            - 1075  # admin-au2.wisecloud.zone
+      stats:
+        ports:
+          web: 2064
+          socket: 2065
+      machine_cluster: au2-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-wisecloud-zone
