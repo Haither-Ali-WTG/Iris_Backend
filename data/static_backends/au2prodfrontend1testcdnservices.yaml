@@ -25,8 +25,6 @@ au.cww-nonprd.wisegrid.net-catchall:
     http-check expect status 200
     http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
     default-server agent-check agent-port 8098
-    server AU2WT-SBLZ-401 10.2.73.21:80
-    server AU2WT-SBLZ-404 10.2.73.24:80
     server AU2WT-SRDH-401 10.2.126.50:80
     server AU2WT-SRDH-402 10.2.126.51:80
     server AU2WT-SRDH-403 10.2.126.52:80
@@ -723,22 +721,6 @@ romaniaoauthcs-test.wisegrid.net:
       port: 80
     - name: AU2SP-SIIS-402B
       ip: 10.2.69.78
-      port: 80
-
-cww-nonprd.wisegrid.net.catch.all:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  cookie:
-    name: CWWA
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-  balance: random
-  servers:
-    - name: AU2WT-SBLZ-401
-      ip: 10.2.73.21
-      port: 80
-    - name: AU2WT-SBLZ-404
-      ip: 10.2.73.24
       port: 80
 
 israeloauthcs-test.wisegrid.net:
