@@ -1261,7 +1261,7 @@ peppol-smp-stage-au.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2
       ip: 10.2.214.15
