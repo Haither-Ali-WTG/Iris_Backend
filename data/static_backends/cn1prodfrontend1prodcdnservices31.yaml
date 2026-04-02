@@ -33,12 +33,10 @@ identity-temp.wisetechglobal.cn:
 
 www.wisetechglobal.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
-  cookie:
-    name: WCAPFE
   http_health_check:
     enabled: true
-    method: GET
-    http_path: /wtg/ready
+    http_path: /healthcheck
+    check_expect: '200'
   servers:
     - name: cn1wp-siis-101
       ip: 10.5.64.158
@@ -46,12 +44,10 @@ www.wisetechglobal.cn:
 
 www.cargowise.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
-  cookie:
-    name: WCAPFE
   http_health_check:
     enabled: true
-    method: GET
-    http_path: /wtg/ready
+    http_path: /healthcheck
+    check_expect: '200'
   servers:
     - name: cn1wp-siis-101
       ip: 10.5.64.158
