@@ -1253,3 +1253,28 @@ tidbinbilla.wisetechglobal.com:
     - name: w5.au2prod2
       ip: 10.2.214.19
       port: 30400
+
+peppol-smp-stage-au.wisegrid.net:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: PEPSMPSTAGE
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30405
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30405
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30405
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30405
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30405
