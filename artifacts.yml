@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260402.1
-  # Thu Apr  2 02:01:16 UTC 2026 -- Thu Apr  2 13:01:16 AEDT 2026
+  # Dante Build Artifact 20260402.3
+  # Thu Apr  2 05:51:56 UTC 2026 -- Thu Apr  2 16:51:56 AEDT 2026
   #
-  # Merge pull request 47515 from dante_artifact_upgrade into master
-  # 47293ba20fc9a8fa15462e4cf5f9a6032ae0b822
-  dante_build_id: '1657931'
+  # Merged PR 47547: Revert 'Adding debug output to certbot for troublshooting errors'
+  # e93a9ca98017cda0bd28330ebe0c7fc0ec68e8d6
+  dante_build_id: '1658140'
 
   # virgil 20260402.4
   # Thu Apr  2 01:19:54 UTC 2026 -- Thu Apr  2 12:19:54 AEDT 2026
@@ -14,9 +14,9 @@ variables:
   # cb9d54e371d3215c8820ebf6255cd3616a32b798
   virgil_build_id: '1657882'
 
-  # sqlbilling 20260401.2
-  # Tue Mar 31 15:07:33 UTC 2026 -- Wed Apr  1 02:07:33 AEDT 2026
+  # sqlbilling 20260402.3
+  # Thu Apr  2 05:04:39 UTC 2026 -- Thu Apr  2 16:04:39 AEDT 2026
   #
-  # Merged PR 47397: SQLBilling-Remove-CS02210991.yml
-  # d38812f732b7709150912637c9666922eca3ccf1
-  sqlbilling_build_id: '1656586'
+  # Merged PR 47488: SQLBilling-Add-CS02290517-Remove-CS022727921.yml
+  # e3acae3f4777ca04b0c026b64a215e16d7a05ec8
+  sqlbilling_build_id: '1658105'
