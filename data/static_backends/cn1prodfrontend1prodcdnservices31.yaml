@@ -42,7 +42,7 @@ www.wisetechglobal.cn:
       ip: 10.5.64.158
       port: 80
 
-www.cargowise.cn:
+www.cargowise.com.cn:
   clustered_instances: [cn1prodfrontend1prodcdnservices31]
   http_health_check:
     enabled: true
