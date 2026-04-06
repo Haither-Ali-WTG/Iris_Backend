@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260402.3
-  # Thu Apr  2 05:51:56 UTC 2026 -- Thu Apr  2 16:51:56 AEDT 2026
+  # Dante Build Artifact 20260407.1
+  # Mon Apr  6 19:01:36 UTC 2026 -- Tue Apr  7 05:01:36 AEST 2026
   #
-  # Merged PR 47547: Revert 'Adding debug output to certbot for troublshooting errors'
-  # e93a9ca98017cda0bd28330ebe0c7fc0ec68e8d6
-  dante_build_id: '1658140'
+  # Merge pull request 47714 from dante_artifact_upgrade into master
+  # bf42a8331917c0a54e7ff3b6f6f48e21fcb95684
+  dante_build_id: '1661983'
 
-  # virgil 20260402.4
-  # Thu Apr  2 01:19:54 UTC 2026 -- Thu Apr  2 12:19:54 AEDT 2026
+  # virgil 20260407.6
+  # Mon Apr  6 22:08:34 UTC 2026 -- Tue Apr  7 08:08:34 AEST 2026
   #
-  # Merged PR 47044: trial initial config for VCF
-  # cb9d54e371d3215c8820ebf6255cd3616a32b798
-  virgil_build_id: '1657882'
+  # Merged PR 47522: update vcf rack port config
+  # 95b0fec6571082fb2a258cbc0c69d65124bc392c
+  virgil_build_id: '1662104'
 
   # sqlbilling 20260402.5
   # Thu Apr  2 12:49:48 UTC 2026 -- Thu Apr  2 23:49:48 AEDT 2026
