@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260407.6
-  # Tue Apr  7 01:26:38 UTC 2026 -- Tue Apr  7 11:26:38 AEST 2026
+  # Dante Build Artifact 20260407.7
+  # Tue Apr  7 02:02:11 UTC 2026 -- Tue Apr  7 12:02:11 AEST 2026
   #
-  # Merge pull request 47565 from automatic_nginx_image_upgrade into master
-  # 8517075b3024ac82f7a448bc7b4d2c01fed57f5e
-  dante_build_id: '1662398'
+  # Merge pull request 47734 from automatic_dhcp_server_image_upgrade into master
+  # 245247ac0d5f568fceec4aff8a8af59f7993b0f8
+  dante_build_id: '1662458'
 
   # virgil 20260407.10
   # Mon Apr  6 23:59:40 UTC 2026 -- Tue Apr  7 09:59:40 AEST 2026
@@ -14,9 +14,9 @@ variables:
   # 67c53ee33f42638c2fe7f37e935ce9aa5c49e03c
   virgil_build_id: '1662246'
 
-  # sqlbilling 20260402.5
-  # Thu Apr  2 12:49:48 UTC 2026 -- Thu Apr  2 23:49:48 AEDT 2026
+  # sqlbilling 20260407.8
+  # Tue Apr  7 01:59:47 UTC 2026 -- Tue Apr  7 11:59:47 AEST 2026
   #
-  # Merged PR 47548: SQLBilling-ADD-CS02290800-CS02290879.yml
-  # e6483addc51e4399c07bea821328b08113078ce7
-  sqlbilling_build_id: '1658417'
+  # Merged PR 47757: Whitelist IPs
+  # c1fb56508c85c860ce41a901037371aa4fadee1e
+  sqlbilling_build_id: '1662430'
