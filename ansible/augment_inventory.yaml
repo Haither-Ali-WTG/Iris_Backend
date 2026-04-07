@@ -13,10 +13,6 @@
         virgil_port_oob_dante: eno1
         virgil_internal_fqdn: "{{ inventory_hostname }}"
 
-- name: Import IIS data
-  import_playbook: import_iis_data.yml
-  when: enable_dynamic_backends | default(true)
-
 - name: Load machine clusters configuration
   import_playbook: load_machine_clusters.yaml
 

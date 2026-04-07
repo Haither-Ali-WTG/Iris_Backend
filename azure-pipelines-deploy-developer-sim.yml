@@ -189,7 +189,6 @@ stages:
                 -e="pure_usernames='$(pure_usernames)'"
                 -e="{use_cicd_pool: $(use_cicd_pool)}"
                 -e="apt_mirror=$(apt_mirror)"
-                -e="{enable_dynamic_backends: false}"
             env:
               secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
