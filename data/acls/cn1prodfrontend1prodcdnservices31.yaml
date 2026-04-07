@@ -4,6 +4,16 @@ star_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?wisegrid\.net$
 
+www_cargowise_com_cn:
+  description: "www.cargowise.com.cn"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^www\.cargowise\.com\.cn$
+
+www_wisetechglobal_cn:
+  description: "www.wisetechglobal.cn"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^www\.wisetechglobal\.cn$
+
 star_wisetechglobal_cn:
   description: "*.wisetechglobal.cn"
   tests:

@@ -30,3 +30,25 @@ identity-temp.wisetechglobal.cn:
     - name: cn1wp-siss-402
       ip: 10.5.64.10
       port: 80
+
+www.wisetechglobal.cn:
+  clustered_instances: [cn1prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: cn1wp-siis-101
+      ip: 10.5.64.158
+      port: 80
+
+www.cargowise.com.cn:
+  clustered_instances: [cn1prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: cn1wp-siis-101
+      ip: 10.5.64.158
+      port: 80
