@@ -7,12 +7,12 @@ variables:
   # b9cd0ff2ab45af64941c0d5f1c198a0b012370f9
   dante_build_id: '1662657'
 
-  # virgil 20260407.20
-  # Tue Apr  7 04:34:23 UTC 2026 -- Tue Apr  7 14:34:23 AEST 2026
+  # virgil 20260408.3
+  # Tue Apr  7 20:55:40 UTC 2026 -- Wed Apr  8 06:55:40 AEST 2026
   #
-  # Merged PR 47799: remove old switches in DE1
-  # e82258d34573145fb09e194baeb305e4fe213346
-  virgil_build_id: '1662616'
+  # Merged PR 47578: configure switch ports
+  # 8b915bcc1ba835cb83f71629f9692e6f497d28d4
+  virgil_build_id: '1663232'
 
   # sqlbilling 20260407.8
   # Tue Apr  7 01:59:47 UTC 2026 -- Tue Apr  7 11:59:47 AEST 2026
