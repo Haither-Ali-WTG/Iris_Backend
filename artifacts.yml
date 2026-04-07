@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260407.1
-  # Mon Apr  6 19:01:36 UTC 2026 -- Tue Apr  7 05:01:36 AEST 2026
+  # Dante Build Artifact 20260407.6
+  # Tue Apr  7 01:26:38 UTC 2026 -- Tue Apr  7 11:26:38 AEST 2026
   #
-  # Merge pull request 47714 from dante_artifact_upgrade into master
-  # bf42a8331917c0a54e7ff3b6f6f48e21fcb95684
-  dante_build_id: '1661983'
+  # Merge pull request 47565 from automatic_nginx_image_upgrade into master
+  # 8517075b3024ac82f7a448bc7b4d2c01fed57f5e
+  dante_build_id: '1662398'
 
-  # virgil 20260407.6
-  # Mon Apr  6 22:08:34 UTC 2026 -- Tue Apr  7 08:08:34 AEST 2026
+  # virgil 20260407.10
+  # Mon Apr  6 23:59:40 UTC 2026 -- Tue Apr  7 09:59:40 AEST 2026
   #
-  # Merged PR 47522: update vcf rack port config
-  # 95b0fec6571082fb2a258cbc0c69d65124bc392c
-  virgil_build_id: '1662104'
+  # Merged PR 47748: update VCF SVI
+  # 67c53ee33f42638c2fe7f37e935ce9aa5c49e03c
+  virgil_build_id: '1662246'
 
   # sqlbilling 20260402.5
   # Thu Apr  2 12:49:48 UTC 2026 -- Thu Apr  2 23:49:48 AEDT 2026
