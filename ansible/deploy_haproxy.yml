@@ -12,21 +12,6 @@
         pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
       when: use_s3 | default(true) | bool
 
-- name: Collect and publish IIS data to S3
-  hosts: clustered_instances
-  strategy: free
-  gather_facts: no
-  force_handlers: yes
-  tasks:
-    - name: Collect and publish IIS data to S3
-      include_role:
-        name: collect_sites
-      when:
-        - not simulation
-        - target_dc == dc
-        - use_s3 | default(true) | bool
-        - (iis_servers | default([]) | length > 0) or (iis_servers_local | default([]) | length > 0)
-
 - name: Augment the inventory
   import_playbook: augment_inventory.yaml
   when: not simulation
