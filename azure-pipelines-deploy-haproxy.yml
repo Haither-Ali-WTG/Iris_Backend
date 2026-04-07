@@ -175,8 +175,7 @@ stages:
                             -e="sqlbilling_acl_dir=$(Build.SourcesDirectory)/sqlbilling_acl/acl" \
                             -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
                             -e="{ensure_no_haproxy_changes: $(ensure_no_haproxy_changes)}" \
-                            -e="target_dc=${{ run.target_dc }}" \
-                            -e="{enable_dynamic_backends: false}"
+                            -e="target_dc=${{ run.target_dc }}"
                       env:
                         secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
                         ANSIBLE_DISPLAY_SKIPPED_HOSTS: $(ansible_display_skipped_hosts)

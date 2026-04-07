@@ -2,16 +2,6 @@
 - name: Target machines
   import_playbook: target_machines.yaml
 
-- name: Setup localhost for s3
-  hosts: localhost
-  tasks:
-    - name: Setup S3 storage connection
-      include_role:
-        name: pure_connection_setup
-      vars:
-        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
-      when: use_s3 | default(true) | bool
-
 - name: Augment the inventory
   import_playbook: augment_inventory.yaml
   when: not simulation

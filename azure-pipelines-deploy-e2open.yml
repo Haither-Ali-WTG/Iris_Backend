@@ -95,8 +95,6 @@ stages:
                         -u $(user) --diff \
                         -e="build_id=$(Build.BuildId)$(System.JobAttempt)" \
                         -e="{simulation: false}" \
-                        -e="{use_s3: false}" \
-                        -e="{enable_dynamic_backends: false}" \
                         -e="{deploy_telegraf: false}" \
                         -e="key_vault_name=$(key_vault_name)" \
                         -e="skip_keepalived_hosts='$(skip_keepalived_hosts)'" \

@@ -23,8 +23,6 @@
 
 - name: Augment the inventory
   import_playbook: augment_inventory.yaml
-  vars:
-    enable_dynamic_backends: false
 
 - name: Iris Maintenance Pre-checks
   hosts: individual_instances
