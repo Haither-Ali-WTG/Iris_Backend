@@ -115,7 +115,7 @@ peppol-smp-stage-de.wisegrid.net:
   http_health_check:
     enabled: true
     http_path: /wtg/ready
-  default_server: check ssl inter 10s fall 3 rise 2 send-proxy-v2
+  default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.de1prod1
       ip: 10.3.237.15
