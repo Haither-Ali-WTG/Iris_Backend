@@ -13,6 +13,12 @@ de.cww.wisegrid.net-catchall:
     server DE1WP-SBLZ-403 10.3.72.23:80
     server DE1WP-SBLZ-404 10.3.72.24:80
     server DE1WP-SBLZ-405 10.3.72.25:80
+    server DE1WP-SRDH-600 10.3.125.200:80
+    server DE1WP-SRDH-601 10.3.125.201:80
+    server DE1WP-SRDH-602 10.3.125.202:80
+    server DE1WP-SRDH-603 10.3.125.203:80
+    server DE1WP-SRDH-604 10.3.125.204:80
+    server DE1WP-SRDH-605 10.3.125.205:80
 
 app-de.borderwise.com:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
