@@ -1085,17 +1085,12 @@ app-uat.borderwise.com-catchall:
 
 connector-wisegrid-net-catchall:
   clustered_instances: [au2prodinternal1services30]
-  http_health_check:
-    enabled: true
-    http_path: /wtg/status
-    check_expect: '200'
-  cookie:
-    name: CONNECTOR
-  encryption: false
-  servers:
-    - name: connector-placeholder
-      ip: 127.0.0.1
-      port: 80
+  full_override: |
+    backend connector-wisegrid-net-catchall
+    load-server-state-from-file none
+    option httpchk GET /wtg/ready
+    http-check expect rstatus 200
+    server AU2WP-SCWI-401 10.2.151.11:8080 check
 
 # Missing backends from HAProxy config
 api-prod.borderwise.com:
@@ -1408,3 +1403,70 @@ terminator.wisegrid.net:
     - name: AU2WP-SIIS-402A
       ip: 10.2.69.16
       port: 80
+
+au2vrops00.cloud.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2vrops00_cloud_wtg_zone
+    balance source
+    hash-type consistent
+    option httpchk GET /suite-api/api/deployment/node/status?services=api&services=adminui&services=ui\ HTTP/1.0\r\n\r\n
+    http-check expect rstring ONLINE
+    server au2opa00.cloud.wtg.zone 10.2.114.221:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+
+au-idp-sync-prod.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-sync-prod_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    cookie IWP insert indirect nocache dynamic
+    server au2wp-sidw-511a 10.2.144.11:3005 check ssl
+    server au2wp-sidw-511b 10.2.144.12:3005 check ssl
+
+au-idp-sync-staging.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-sync-staging_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    cookie IWT insert indirect nocache dynamic
+    server au2wt-sidw-511a 10.2.140.11:3005 check ssl
+    server au2wt-sidw-511b 10.2.140.12:3005 check ssl
+
+idp-adminui-staging.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend idp-adminui-staging_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /wtg/ready
+    http-check expect status 200
+    cookie IWT insert indirect nocache dynamic
+    server au2wt-sidw-511a 10.2.140.11:3009 check ssl
+    server au2wt-sidw-511b 10.2.140.12:3009 check ssl
+
+xttest2-eservices-xhgateway.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest2-eservices-xhgateway_wisegrid_net
+    load-server-state-from-file none
+    option httpchk GET /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest2-eservices-xhgateway.wisegrid.net
+    http-check expect string Service\ is\ alive.
+    cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
+    default-server inter 10000
+    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+
+xttest-eservices-xhgateway.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest-eservices-xhgateway_wisegrid_net
+    load-server-state-from-file none
+    option httpchk HEAD /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest-eservices-xhgateway.wisegrid.net
+    http-check expect rstatus 200
+    cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
+    default-server inter 10000
+    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
