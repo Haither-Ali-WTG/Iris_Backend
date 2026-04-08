@@ -1456,8 +1456,10 @@ xttest2-eservices-xhgateway.wisegrid.net:
     http-check expect string Service\ is\ alive.
     cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
     default-server inter 10000
-    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) \
+        check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) \
+        check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
 
 xttest-eservices-xhgateway.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -1468,5 +1470,7 @@ xttest-eservices-xhgateway.wisegrid.net:
     http-check expect rstatus 200
     cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
     default-server inter 10000
-    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) \
+        check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) \
+        check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
