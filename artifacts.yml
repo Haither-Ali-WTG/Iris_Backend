@@ -7,12 +7,12 @@ variables:
   # af71c7e52686b8ae8f65e80f51725565c41d64dc
   dante_build_id: '1663409'
 
-  # virgil 20260408.5
-  # Tue Apr  7 22:52:55 UTC 2026 -- Wed Apr  8 08:52:55 AEST 2026
+  # virgil 20260409.1
+  # Thu Apr  9 00:07:14 UTC 2026 -- Thu Apr  9 10:07:14 AEST 2026
   #
-  # Merged PR 47025: updating configs for 7 sdats
-  # 61972e8199914b35e5290fcabbd7647f6294e208
-  virgil_build_id: '1663341'
+  # Merged PR 47910: WI01009106 phase 4 hyperv to vmware
+  # 58008762e62861078168dfbdd85ff0f8d7f48d53
+  virgil_build_id: '1664437'
 
   # sqlbilling 20260407.8
   # Tue Apr  7 01:59:47 UTC 2026 -- Tue Apr  7 11:59:47 AEST 2026
