@@ -1447,6 +1447,7 @@ idp-adminui-staging.wisegrid.net:
     server au2wt-sidw-511a 10.2.140.11:3009 check ssl
     server au2wt-sidw-511b 10.2.140.12:3009 check ssl
 
+# yamllint disable rule:line-length
 xttest2-eservices-xhgateway.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
@@ -1455,12 +1456,12 @@ xttest2-eservices-xhgateway.wisegrid.net:
     option httpchk GET /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest2-eservices-xhgateway.wisegrid.net
     http-check expect string Service\ is\ alive.
     cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
-    default-server inter 10000
-    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) \
-        check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) \
-        check-sni xttest2-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    default-server inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net
+    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net
+# yamllint enable rule:line-length
 
+# yamllint disable rule:line-length
 xttest-eservices-xhgateway.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
   full_override: |
@@ -1469,8 +1470,7 @@ xttest-eservices-xhgateway.wisegrid.net:
     option httpchk HEAD /xHGateway.Core/wtg/status HTTP/1.1\r\nHost:\ xttest-eservices-xhgateway.wisegrid.net
     http-check expect rstatus 200
     cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
-    default-server inter 10000
-    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) \
-        check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
-    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) \
-        check-sni xttest-eservices-xhgateway.wisegrid.net inter 10s downinter 5s fall 3
+    default-server inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net
+    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net
+# yamllint enable rule:line-length
