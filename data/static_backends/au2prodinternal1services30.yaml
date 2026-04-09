@@ -864,13 +864,11 @@ pgadmin.wtg.zone:
 
 xt-eservices.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
-  cookie:
-    name: XTESRV
-  encryption: false
-  servers:
-    - name: au2wp-sxtr-402
-      ip: 10.2.70.26
-      port: 80
+  full_override: |
+    backend xt-eservices_wisegrid_net
+    load-server-state-from-file none
+    cookie XTESRV insert indirect nocache dynamic
+    server au2wp-sxtr-402 10.2.70.26:80 check
 
 mhaccess-test.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
