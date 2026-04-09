@@ -15,11 +15,6 @@ us.cww-nonprd.wisegrid.net-catchall:
     server US2WT-SRDH-403 10.4.126.162:80
     server US2WT-SRDH-404 10.4.126.163:80
     server US2WT-SRDH-405 10.4.126.164:80
-    server US2WT-SRDH-406 10.4.126.165:80
-    server US2WT-SRDH-407 10.4.126.166:80
-    server US2WT-SRDH-408 10.4.126.168:80
-    server US2WT-SRDH-409 10.4.126.169:80
-    server US2WT-SRDH-410 10.4.126.170:80
 
 app-test-us.borderwise.com:
   clustered_instances: [us2prodfrontend1testcdnservices]
