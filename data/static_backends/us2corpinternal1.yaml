@@ -848,7 +848,7 @@ rundeck-dev.wt-envaseconnect.cloud:
   servers:
     - name: us2usgopsl00050
       ip: 10.4.200.50
-      port: 80
+      port: 4440
       settings: check
 
 rundeck.wt-envaseconnect.cloud:
@@ -859,5 +859,5 @@ rundeck.wt-envaseconnect.cloud:
   servers:
     - name: us2usgopsl00040
       ip: 10.4.200.40
-      port: 80
+      port: 4440
       settings: check
