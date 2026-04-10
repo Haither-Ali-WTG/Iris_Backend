@@ -352,6 +352,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-au2s3-b1-wtg-ws
           cms_resource_group: RG-AU-Prod
+        - name: star-au2s3-11-wtg-ws
+          cms_resource_group: RG-AU-Prod
       container:
         resources:
           production:
