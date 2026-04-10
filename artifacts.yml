@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260409.1
-  # Thu Apr  9 01:01:17 UTC 2026 -- Thu Apr  9 11:01:17 AEST 2026
+  # Dante Build Artifact 20260410.1
+  # Fri Apr 10 02:41:08 UTC 2026 -- Fri Apr 10 12:41:08 AEST 2026
   #
-  # Merge pull request 47937 from dante_artifact_upgrade into master
-  # 1b6300356b83354d70855bc99453d4830b81b4fb
-  dante_build_id: '1664501'
+  # Merge pull request 48014 from dante_artifact_upgrade into master
+  # 16896ddf5796f15c009bf6a6f3f860cd8bc1d3a1
+  dante_build_id: '1665491'
 
-  # virgil 20260409.1
-  # Thu Apr  9 00:07:14 UTC 2026 -- Thu Apr  9 10:07:14 AEST 2026
+  # virgil 20260410.3
+  # Fri Apr 10 01:59:49 UTC 2026 -- Fri Apr 10 11:59:49 AEST 2026
   #
-  # Merged PR 47910: WI01009106 phase 4 hyperv to vmware
-  # 58008762e62861078168dfbdd85ff0f8d7f48d53
-  virgil_build_id: '1664437'
+  # Merged PR 47911: new A records use by Elastic to monitor NAS11 in Bunker
+  # fa6bb554892bdff9d8bfdbc1d734905d1c0057c8
+  virgil_build_id: '1665447'
 
   # sqlbilling 20260410.3
   # Thu Apr  9 15:05:29 UTC 2026 -- Fri Apr 10 01:05:29 AEST 2026
