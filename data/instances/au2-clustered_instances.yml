@@ -279,6 +279,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: platform-docs-wtg-ws
           cms_resource_group: RG-AU-Prod
+        - name: star-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
       cipher:
         profiles:
           - best_practice_2023
