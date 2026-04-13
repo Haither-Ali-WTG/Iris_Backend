@@ -7,12 +7,12 @@ variables:
   # 431816e79480c40446609c7f714ba80676ce7223
   dante_build_id: '1668122'
 
-  # virgil 20260413.5
-  # Mon Apr 13 03:43:13 UTC 2026 -- Mon Apr 13 13:43:13 AEST 2026
+  # virgil 20260414.4
+  # Mon Apr 13 23:07:20 UTC 2026 -- Tue Apr 14 09:07:20 AEST 2026
   #
-  # Merged PR 48013: remove-unused-vcf-config
-  # bd378f773936d7e030f030d32742fc9156691655
-  virgil_build_id: '1668061'
+  # Merged PR 48136: new DAT subnet
+  # 259538d4782de1ea2d6e05d3f88b356108203972
+  virgil_build_id: '1668847'
 
   # sqlbilling 20260413.2
   # Mon Apr 13 10:53:54 UTC 2026 -- Mon Apr 13 20:53:54 AEST 2026
