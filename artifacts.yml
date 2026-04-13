@@ -7,12 +7,12 @@ variables:
   # e60edd0dcf49611291046423b9c639b061a34427
   dante_build_id: '1667986'
 
-  # virgil 20260413.1
-  # Mon Apr 13 01:10:49 UTC 2026 -- Mon Apr 13 11:10:49 AEST 2026
+  # virgil 20260413.5
+  # Mon Apr 13 03:43:13 UTC 2026 -- Mon Apr 13 13:43:13 AEST 2026
   #
-  # Merged PR 48037: new zone records use by Elastic to monitor NAS11 in Bunker
-  # 9fa5da1d0fbcb401ebe159bd615cd8337a6cb318
-  virgil_build_id: '1667929'
+  # Merged PR 48013: remove-unused-vcf-config
+  # bd378f773936d7e030f030d32742fc9156691655
+  virgil_build_id: '1668061'
 
   # sqlbilling 20260410.3
   # Thu Apr  9 15:05:29 UTC 2026 -- Fri Apr 10 01:05:29 AEST 2026
