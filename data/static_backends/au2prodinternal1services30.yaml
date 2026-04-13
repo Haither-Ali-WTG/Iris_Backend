@@ -1289,57 +1289,65 @@ portainer-borderwise.wisecloud.zone:
     check_expect: '200'
   cookie:
     name: PORTAINER
-  encryption: true
+  encryption: false
   servers:
-    - name: portainer-server
-      ip: 10.2.213.15
-      port: 30443
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-401
+      ip: 10.2.88.75
+      port: 9000
+      settings: check
 
 wiselake-systemusage-web.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
+    http_path: /web
     check_expect: '200'
   cookie:
     name: WLSYSTEMUSAGE
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SSCU-401
+      ip: 10.2.82.59
+      port: 80
+      settings: check
 
 fms-api.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
-    check_expect: '200|401|403'
+    http_path: /wtg/ready
+    check_expect: '200'
   cookie:
-    name: FMSAPI
+    name: FMSA
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-402A
+      ip: 10.2.88.137
+      port: 42104
+      settings: check
+    - name: AU2WP-SDKR-402B
+      ip: 10.2.88.138
+      port: 42104
+      settings: check
 
 gct-api.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
-    check_expect: '200|401|403'
+    http_path: /wtg/ready
+    check_expect: '200'
   cookie:
-    name: GCTAPI
+    name: GCTA
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-402A
+      ip: 10.2.88.137
+      port: 42123
+      settings: check
+    - name: AU2WP-SDKR-402B
+      ip: 10.2.88.138
+      port: 42123
+      settings: check
 
 rdg-au2.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
