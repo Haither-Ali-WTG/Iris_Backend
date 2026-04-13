@@ -108,6 +108,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-urs-wisegrid-net
+          cms_resource_group: RG-EU-Prod
         - name: star-wisecloud-zone
           cms_resource_group: RG-AU-Prod
         - name: star-de1s3-3-wtg-ws
@@ -272,6 +273,7 @@ clustered_instances:
         - name: star-borderwise-com
           cms_resource_group: RG-AU-Prod
         - name: star-urs-wisegrid-net
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -344,6 +346,7 @@ clustered_instances:
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-urs-wisegrid-net
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
