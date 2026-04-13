@@ -134,3 +134,5 @@ custom_internal_corp_au2prod1_ocp_wtg_ws:
     - hdr(host) -i polaris.k8s.sand.wtg.zone
     - hdr(host) -i polaris.wtg.zone
     - hdr(host) -i people-process.wisetechglobal.com
+    - hdr(host) -i trino.wtg.zone
+    - hdr(host) -i trino.k8s.sand.wtg.zone
