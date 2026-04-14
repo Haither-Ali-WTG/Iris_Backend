@@ -63,11 +63,11 @@ cw1_use_dynamic_backend_path:
     - >-
         use_backend
         %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("(^[0-9]{3}[abc]?)","\1")']-wildcard-https
-        if star-webserver_testrig_sand_wtg_zone { hdr(host) -m reg -i ^[0-9]{3}[abc]? } { path_beg -i /Services/ }
+        if star-webserver_testrig_sand_wtg_zone { path_beg -i /Services/ }
     - >-
         use_backend
         %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("(^[0-9]{3}[abc]?)","\1")']-wildcard
-        if star-webserver_testrig_sand_wtg_zone { hdr(host) -m reg -i ^[0-9]{3}[abc]? }
+        if star-webserver_testrig_sand_wtg_zone
 
 campaign_hyeuat_sand_wtg_zone:
   description: |-
