@@ -827,6 +827,12 @@ proget-au_wisetechglobal_com:
     - hdr(host),field(1,:) -i proget-au.wisetechglobal.com
     - hdr(host),field(1,:) -i proget.wisetechglobal.com
 
+custom_external_au2prod2_ocp_wtg_ws:
+  description: "Custom external au2prod2 OCP WTG WS hosts"
+  tests:
+    - hdr(host) -i map.wisegrid.net
+    - hdr(host) -i api-map.wisegrid.net
+
 cmb-au_wisegrid_net:
   description: |-
     hostnames for cmb-prod

@@ -56,12 +56,6 @@ custom_internal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i triageassist-sand.wtg.zone
     - hdr(host) -i triageassist-api-sand.wtg.zone
 
-custom_internal_au2prod2_ocp_wtg_ws:
-  description: "Custom internal au2prod2 OCP WTG WS hosts"
-  tests:
-    - hdr(host) -i map.wisegrid.net
-    - hdr(host) -i api-map.wisegrid.net
-
 ocp_grpc_domains:
   description: "OCP gRPC domains for internal au2prod1"
   tests:

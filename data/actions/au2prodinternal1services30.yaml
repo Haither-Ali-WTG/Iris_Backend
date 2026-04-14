@@ -79,4 +79,3 @@ au2prod_ocp_backend_selection:
     - use_backend au2prod1-prodinternal-ingress if star_internal_au2prod1_ocp_wtg_ws
     - use_backend au2prod1-prodinternal-ingress if custom_internal_au2prod1_ocp_wtg_ws
     - use_backend au2prod2-prodinternal-ingress if star_internal_au2prod2_ocp_wtg_ws
-    - use_backend au2prod2-prodinternal-ingress if custom_internal_au2prod2_ocp_wtg_ws

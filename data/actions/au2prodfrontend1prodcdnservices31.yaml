@@ -332,6 +332,7 @@ au2prod2_prodexternal_catchall_backend:
   order: 80
   actions:
     - use_backend au2prod2-prodexternal-catchall if proget-au_wisetechglobal_com azure_ext_controlled_src wtg_src
+    - use_backend au2prod2-prodinternal-ingress if custom_external_au2prod2_ocp_wtg_ws
 
 cmb_au_backend:
   description: |-
