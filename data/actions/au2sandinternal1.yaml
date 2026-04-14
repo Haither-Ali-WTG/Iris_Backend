@@ -51,9 +51,9 @@ bolero_backend_redirect:
 
 cw1_use_dynamic_backend_path:
   description: |-
-    Redirect testrig webservices eadaptor/Glow/Portals requests to the correct backend based on path
-    Exclude requests to healthchecks which will go to the default backend so even if portals or glow
-    is marked down devs can still troubleshoot
+    Route testrig requests to dynamic backends by host/path.
+    NNNx- hosts go to NNNx-wildcard[-https]; others route by /Services/, /Glow/, /Portals/ path.
+    Healthchecks bypass to default backend.
   order: 80
   actions:
     - >-
@@ -61,12 +61,10 @@ cw1_use_dynamic_backend_path:
         if cw1_dynamic_backend_webservice_path star_testrig_sand_wtg_zone !testrig_healthcheck
         !star-webserver_testrig_sand_wtg_zone
     - >-
-        use_backend
-        %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("(^[0-9]{3}[abc]?)","\1")']-wildcard-https
+        use_backend %[req.hdr(Host),field(1,-),lower]-wildcard-https
         if star-webserver_testrig_sand_wtg_zone star_testrig_sand_wtg_zone { path_beg -i /Services/ }
     - >-
-        use_backend
-        %[req.hdr(Host),field(1,:),lower,regsub(\.,_,g),'regsub("(^[0-9]{3}[abc]?)","\1")']-wildcard
+        use_backend %[req.hdr(Host),field(1,-),lower]-wildcard
         if star-webserver_testrig_sand_wtg_zone star_testrig_sand_wtg_zone
 
 campaign_hyeuat_sand_wtg_zone:
