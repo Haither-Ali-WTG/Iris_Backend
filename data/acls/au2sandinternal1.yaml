@@ -25,7 +25,7 @@ star-webserver_testrig_sand_wtg_zone:
   description: |-
     *-au2sp-tweb-*.testrig.sand.wtg.zone
   tests:
-    - hdr(host) -m reg -i ^[^\.]+-au2sp-tweb-[a-z0-9]{3,4}\.testrig\.sand\.wtg\.zone$
+    - { hdr(host) -m reg -i ^[0-9]{3}[abc]? } star_testrig_sand_wtg_zone
 
 star_webprint_testrig_sand_wtg_zone:
   description: |-
