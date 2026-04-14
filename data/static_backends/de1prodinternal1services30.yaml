@@ -783,6 +783,6 @@ rdg-de1.wisecloud.zone:
     - name: de1wp-srdg-501
       ip: 10.3.68.201
       port: 80
-    - name: de1co-srdg-502
+    - name: de1wp-srdg-502
       ip: 10.3.68.202
       port: 80
