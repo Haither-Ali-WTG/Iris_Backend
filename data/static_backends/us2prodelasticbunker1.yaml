@@ -25,3 +25,14 @@ star.us2s3-b1.wtg.ws:
     filter bwlim-in myuploadlimit limit 125000000 key be_id table uploadrate
     http-response set-bandwidth-limit mydownloadlimit
     http-request set-bandwidth-limit myuploadlimit
+
+star.us2s3-11.wtg.ws:
+  clustered_instances: [us2prodelasticbunker1]
+  full_override: |
+    backend star_us2s3-11_wtg_ws
+    option httpchk
+    http-check send meth HEAD uri /
+    http-check expect rstatus 200|401|403|302|405|400
+    cookie US2NAS11 insert indirect nocache dynamic secure
+    default-server inter 30000 ssl
+    server US2nas11-s3 10.4.30.21:443 check check-ssl ssl verify none
