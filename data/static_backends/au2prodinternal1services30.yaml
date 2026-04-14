@@ -808,15 +808,20 @@ mhereg.wisegrid.net:
 
 translate.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend translate_wtg_zone
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/status ver HTTP/1.1 hdr Host translate.wtg.zone
-    http-check expect rstatus 200
-    cookie TRL insert indirect nocache dynamic
-    server AU2WP-SDKR-1 10.2.67.111:5110 check
-    server AU2WP-SDKR-2 10.2.67.112:5110 check
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  cookie:
+    name: TRL
+  encryption: false
+  servers:
+    - name: AU2WP-SDKR-1
+      ip: 10.2.67.111
+      port: 5110
+    - name: AU2WP-SDKR-2
+      ip: 10.2.67.112
+      port: 5110
 
 gbccspoutbound.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
@@ -1087,15 +1092,13 @@ connector-wisegrid-net-catchall:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
+    http_path: /wtg/ready
     check_expect: '200'
-  cookie:
-    name: CONNECTOR
   encryption: false
   servers:
-    - name: connector-placeholder
-      ip: 127.0.0.1
-      port: 80
+    - name: AU2WP-SCWI-401
+      ip: 10.2.151.11
+      port: 8080
 
 # Missing backends from HAProxy config
 api-prod.borderwise.com:
@@ -1173,23 +1176,27 @@ ump-test1.borderwise.com:
 
 prodtestwca.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend prodtestwca_wisegrid_net
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth GET uri /wtg/ready ver HTTP/1.1 hdr Host prodtestwca.wisegrid.net
-    http-check expect status 200
-    server au2wt-swfe-401 10.2.69.54:80 check
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  encryption: false
+  servers:
+    - name: au2wt-swfe-401
+      ip: 10.2.69.54
+      port: 80
 
 prodtestwcatoken.wisegrid.net:
   clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend prodtestwcatoken_wisegrid_net
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth GET uri /wtg/ready ver HTTP/1.1 hdr Host prodtestwcatoken.wisegrid.net
-    http-check expect status 200
-    server au2wt-swfe-401 10.2.69.54:80 check
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  encryption: false
+  servers:
+    - name: au2wt-swfe-401
+      ip: 10.2.69.54
+      port: 80
 
 webwatcher.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
@@ -1282,57 +1289,65 @@ portainer-borderwise.wisecloud.zone:
     check_expect: '200'
   cookie:
     name: PORTAINER
-  encryption: true
+  encryption: false
   servers:
-    - name: portainer-server
-      ip: 10.2.213.15
-      port: 30443
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-401
+      ip: 10.2.88.75
+      port: 9000
+      settings: check
 
 wiselake-systemusage-web.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
+    http_path: /web
     check_expect: '200'
   cookie:
     name: WLSYSTEMUSAGE
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SSCU-401
+      ip: 10.2.82.59
+      port: 80
+      settings: check
 
 fms-api.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
-    check_expect: '200|401|403'
+    http_path: /wtg/ready
+    check_expect: '200'
   cookie:
-    name: FMSAPI
+    name: FMSA
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-402A
+      ip: 10.2.88.137
+      port: 42104
+      settings: check
+    - name: AU2WP-SDKR-402B
+      ip: 10.2.88.138
+      port: 42104
+      settings: check
 
 gct-api.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
   http_health_check:
     enabled: true
-    http_path: /wtg/status
-    check_expect: '200|401|403'
+    http_path: /wtg/ready
+    check_expect: '200'
   cookie:
-    name: GCTAPI
+    name: GCTA
   encryption: false
   servers:
-    - name: w1.au2prod1
-      ip: 10.2.213.15
-      port: 30100
-      settings: check ssl send-proxy-v2
+    - name: AU2WP-SDKR-402A
+      ip: 10.2.88.137
+      port: 42123
+      settings: check
+    - name: AU2WP-SDKR-402B
+      ip: 10.2.88.138
+      port: 42123
+      settings: check
 
 rdg-au2.wisecloud.zone:
   clustered_instances: [au2prodinternal1services30]
@@ -1429,3 +1444,82 @@ integration-hub.sand.wtg.zone:
     server w3.au2prod1 10.2.213.17:30100
     server w4.au2prod1 10.2.213.18:30100
     server w5.au2prod1 10.2.213.19:30100
+
+# yamllint disable rule:line-length
+au2vrops00.cloud.wtg.zone:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au2vrops00_cloud_wtg_zone
+    balance source
+    hash-type consistent
+    option httpchk
+    http-check send meth GET uri /suite-api/api/deployment/node/status?services=api&services=adminui&services=ui ver HTTP/1.0
+    http-check expect rstring ONLINE
+    server au2opa00.cloud.wtg.zone 10.2.114.221:443 ssl check inter 15s maxconn 140 fall 3 rise 3
+# yamllint enable rule:line-length
+
+au-idp-sync-prod.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-sync-prod_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
+    http-check expect status 200
+    cookie IWP insert indirect nocache dynamic
+    server au2wp-sidw-511a 10.2.144.11:3005 check ssl
+    server au2wp-sidw-511b 10.2.144.12:3005 check ssl
+
+au-idp-sync-staging.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend au-idp-sync-staging_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
+    http-check expect status 200
+    cookie IWT insert indirect nocache dynamic
+    server au2wt-sidw-511a 10.2.140.11:3005 check ssl
+    server au2wt-sidw-511b 10.2.140.12:3005 check ssl
+
+idp-adminui-staging.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend idp-adminui-staging_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /wtg/ready
+    http-check expect status 200
+    cookie IWT insert indirect nocache dynamic
+    server au2wt-sidw-511a 10.2.140.11:3009 check ssl
+    server au2wt-sidw-511b 10.2.140.12:3009 check ssl
+
+# yamllint disable rule:line-length
+xttest2-eservices-xhgateway.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest2-eservices-xhgateway_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth GET uri /xHGateway.Core/wtg/status ver HTTP/1.1 hdr Host xttest2-eservices-xhgateway.wisegrid.net
+    http-check expect string Service\ is\ alive.
+    cookie XT2EXHGW insert indirect nocache dynamic maxlife 1h
+    default-server inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-411 10.2.70.91:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net
+    server AU2WT-SXTR-412 10.2.70.92:443 check-ssl ssl sni str(xttest2-eservices-xhgateway.wisegrid.net) check-sni xttest2-eservices-xhgateway.wisegrid.net
+# yamllint enable rule:line-length
+
+# yamllint disable rule:line-length
+xttest-eservices-xhgateway.wisegrid.net:
+  clustered_instances: [au2prodinternal1services30]
+  full_override: |
+    backend xttest-eservices-xhgateway_wisegrid_net
+    load-server-state-from-file none
+    option httpchk
+    http-check send meth HEAD uri /xHGateway.Core/wtg/status ver HTTP/1.1 hdr Host xttest-eservices-xhgateway.wisegrid.net
+    http-check expect rstatus 200
+    cookie XTEXHGW insert indirect nocache dynamic maxlife 1h
+    default-server inter 10s downinter 5s fall 3
+    server AU2WT-SXTR-401 10.2.70.18:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net
+    server AU2WT-SXTR-402 10.2.70.19:443 check-ssl ssl sni str(xttest-eservices-xhgateway.wisegrid.net) check-sni xttest-eservices-xhgateway.wisegrid.net
+# yamllint enable rule:line-length
