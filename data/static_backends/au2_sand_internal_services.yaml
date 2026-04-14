@@ -828,24 +828,3 @@ auadl-ctohangfire-staging.sand.wtg.zone:
     - name: au2wt-sdkr-501a
       ip: 10.2.69.94
       port: 3504
-
-integration-hub.sand.wtg.zone:
-  clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend integration-hub_sand_wtg_zone
-    cookie INTHUBS insert indirect nocache dynamic
-    # gRPC/HTTP2 specific timeouts for long-running requests
-    timeout tunnel 3600s
-    timeout server 3600s
-    timeout client-fin 30s
-    timeout server-fin 30s
-    # Ensure proper connection cleanup on client disconnect
-    option abortonclose
-    # HTTP/2 specific settings for gRPC
-    http-reuse safe
-    default-server check ssl proto h2 inter 10s fall 3 rise 2
-    server w1.au2prod1 10.2.213.15:30101
-    server w2.au2prod1 10.2.213.16:30101
-    server w3.au2prod1 10.2.213.17:30101
-    server w4.au2prod1 10.2.213.18:30101
-    server w5.au2prod1 10.2.213.19:30101

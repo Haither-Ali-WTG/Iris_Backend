@@ -29,7 +29,7 @@ cw1_use_dynamic_backend_path:
 
 custom_url_actions:
   description: |-
-    Customurls for GLOW & Webtracker
+    Customurls for CW Webservices
   order: 80
   actions:
     ### Webtracker
@@ -44,23 +44,53 @@ custom_url_actions:
     - use_backend h47prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i www.webtracker.hecksher.com }
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.johngood.co.uk }
     - use_backend je6lpr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtrack.jenkar.com }
-    - use_backend seihamwebtracker_wisegrid_net if { hdr(host),field(1,:) -i seihamwarehouse.wisegrid.net }
     - use_backend sozprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.sozologistics.com }
     - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webtracker.wisegrid.net }
     - use_backend vanhkf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webtracker.wisegrid.net }
     - use_backend zifprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i zifprd2.webtracker.wisegrid.net }
     - use_backend apnprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.allportnetherlands.nl }
     - use_backend jgshul_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.goodlogisticsgroup.com }
+    - use_backend gknrdd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i gknrddwebtracker.wisegrid.net }
+    - use_backend ijsxlx_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ijsxlxwebtracker.wisegrid.net }
+    - use_backend oaoosf_webtracker_wisegrid_net if { hdr(host),field(1,:) -i oaoosfwebtracker.wisegrid.net }
+    - use_backend pi2nbg_webtracker_wisegrid_net if { hdr(host),field(1,:) -i pi2nbgwebtracker.wisegrid.net }
+    - use_backend seiham_webtracker_wisegrid_net if { hdr(host),field(1,:) -i seihamwebtracker.wisegrid.net }
+    - use_backend seiham_webtracker_wisegrid_net if { hdr(host),field(1,:) -i seihamwarehouse.wisegrid.net }
+    - use_backend vannvo_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vannvowebtracker.wisegrid.net }
+    - use_backend acglnz_webtracker_wisegrid_net if { hdr(host),field(1,:) -i acglnzwebtracker.wisegrid.net }
+    - use_backend cl7lio_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cl7liowebtracker.wisegrid.net }
+    - use_backend cl7lio_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cl7lio-cn.webtracker.wisegrid.net }
+    - use_backend ewleri_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ewleriwebtracker.wisegrid.net }
+    - use_backend fiegvn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i fiegvnwebtracker.wisegrid.net }
+    - use_backend fieprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i fieprdwebtracker.wisegrid.net }
+    - use_backend kuiuls_webtracker_wisegrid_net if { hdr(host),field(1,:) -i kuiulswebtracker.wisegrid.net }
+    - use_backend neeprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i neeprdwebtracker.wisegrid.net }
+    - use_backend vnwprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i vnwprd-webtracker.wisegrid.net }
+    - use_backend ri7prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ri7prdwebtracker.wisegrid.net }
+    - use_backend sdkprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i sdkprd-webtracker.wisegrid.net }
+    - use_backend tcbbel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tcbbelwebtracker.wisegrid.net }
+    - use_backend weiat1_webtracker_wisegrid_net if { hdr(host),field(1,:) -i weiat1-cn.webtracker.wisegrid.net }
 
     ### Webprint
     - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfbts.webprint.wisegrid.net }
     - use_backend vanhkf_webprint_wisegrid_net if { hdr(host),field(1,:) -i vanhkfnvo.webprint.wisegrid.net }
+    - use_backend m36bcn_webprint_wisegrid_net if { hdr(host),field(1,:) -i m36bcnwebprint.wisegrid.net }
+    - use_backend seiham-cn_webprint_wisegrid_net if { hdr(host),field(1,:) -i seihamwebprint.wisegrid.net }
+    - use_backend ba3ory_webprint_wisegrid_net if { hdr(host),field(1,:) -i ba3ory-cn.webprint.wisegrid.net }
+    - use_backend akvprd_webprint_wisegrid_net if { hdr(host),field(1,:) -i akvprdwebprint.wisegrid.net }
+    - use_backend momshj_webprint_wisegrid_net if { hdr(host),field(1,:) -i momshjwebprint.wisegrid.net }
 
     ### GLOW
     - use_backend www-dehprd_wisegrid_net if { hdr(host),field(1,:) -i customerportal.deugro.com }
     - use_backend www-icomik_wisegrid_net if { hdr(host),field(1,:) -i conexa.intercargo.com }
     - use_backend www-em9prd_wisegrid_net if { hdr(host),field(1,:) -i board.embassycargo.eu }
     - use_backend www-c17lon_wisegrid_net if { hdr(host),field(1,:) -i loop.cortenlogistics.com }
+
+    ### Accounting
+    - use_backend aeaprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i aeaprdaccounting-cn.wisegrid.net }
+    - use_backend ba3oryaccounting_wisegrid_net if { hdr(host),field(1,:) -i ba3oryaccounting-cn.wisegrid.net }
+    - use_backend cl7lioaccounting_wisegrid_net if { hdr(host),field(1,:) -i cl7lioaccounting-cn.wisegrid.net }
+    - use_backend gf6prdaccounting_wisegrid_net if { hdr(host),field(1,:) -i gf6prdaccounting-cn.wisegrid.net }
 
 xndt_url_workaround:
   description: |-
