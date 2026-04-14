@@ -22,10 +22,9 @@ star_testrig_sand_wtg_zone:
     - hdr(host) -m reg -i ^([^\.]+\.)?testrig3?\.sand\.wtg\.zone$
 
 star-webserver_testrig_sand_wtg_zone:
-  description: |-
-    403a*.testrig.sand.wtg.zone
+  description: Hosts matching NNNx- prefix (e.g. 405a-*.testrig.sand.wtg.zone)
   tests:
-    - hdr(host) -m reg -i ^[0-9]{3}[abc]?
+    - hdr(host) -m reg -i ^[0-9]{3}[abc]?-
 
 star_webprint_testrig_sand_wtg_zone:
   description: |-
