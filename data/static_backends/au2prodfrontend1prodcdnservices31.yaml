@@ -1405,27 +1405,37 @@ classificationassistant.cargowise.com:
 
 ausyd.transport.wisetechglobal.com-web:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend ausyd_transport_web
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host ausyd.transport.wisetechglobal.com
-    http-check expect rstatus 200
-    cookie LB insert indirect nocache dynamic
-    server au2wp-sdkr-501b--web1 10.2.67.57:3001 check
-    server au2wp-sdkr-501c--web2 10.2.67.58:3001 check
+  backend_name: ausyd_transport_web
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wp-sdkr-501b--web1
+      ip: 10.2.67.57
+      port: 3001
+    - name: au2wp-sdkr-501c--web2
+      ip: 10.2.67.58
+      port: 3001
 
 ausyd.transport.wisetechglobal.com-api:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend ausyd_transport_api
-    load-server-state-from-file none
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host ausyd.transport.wisetechglobal.com
-    http-check expect rstatus 200
-    cookie LB insert indirect nocache dynamic
-    server au2wp-sdkr-501b--api1 10.2.67.57:3501 check
-    server au2wp-sdkr-501c--api2 10.2.67.58:3501 check
+  backend_name: ausyd_transport_api
+  cookie:
+    name: LB
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  servers:
+    - name: au2wp-sdkr-501b--api1
+      ip: 10.2.67.57
+      port: 3501
+    - name: au2wp-sdkr-501c--api2
+      ip: 10.2.67.58
+      port: 3501
 
 ocmbe.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
