@@ -66,6 +66,29 @@ compliance_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i compliance.borderwise.com
 
+star_transport_wisetechglobal_com:
+  description: "*.transport.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
+
+ausyd_transport_wisetechglobal_com:
+  description: |-
+    Hostname for AUSYD transport production service
+  tests:
+    - hdr(host),field(1,:) -i ausyd.transport.wisetechglobal.com
+
+transport_api_path:
+  description: |-
+    Path-based routing for AUSYD transport API requests
+  tests:
+    - path_beg /api
+
+transport_capi_path:
+  description: |-
+    Path-based routing for AUSYD transport CAPI requests
+  tests:
+    - path_beg /capi
+
 star_cargowise_com:
   description: "*.cargowise.com"
   tests:
