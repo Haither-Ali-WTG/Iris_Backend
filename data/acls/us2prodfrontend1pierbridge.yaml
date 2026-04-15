@@ -424,3 +424,9 @@ to_updateprod_backend:
   tests:
     - hdr(host) -m reg -i ^update\.(agileelite|sendsuitelive|sendproenterprise|transtream)\.com$
     - hdr(host) -i update.us.sendsuitelive.com
+
+transtream_cdn:
+  description: "URLs for the chg01w5-cdn01t.chg.pierbridge.hosting server"
+  tests:
+    - hdr(host) -i cdn.transtream.com
+    - hdr(host) -i cdn.transtreamqa.com

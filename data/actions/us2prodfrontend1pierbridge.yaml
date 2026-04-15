@@ -26,6 +26,7 @@ backend_selection:
     Handle backend selection. The order of these operations matters
   order: 80
   actions:
+    - use_backend cdn_transtream_com if transtream_cdn
     - use_backend update_xb_pierbridge_net if to_updatexb_backend
     - use_backend update_qa_pierbridge_net if to_updateqa_backend
     - use_backend update_prod_pierbridge_net if to_updateprod_backend
