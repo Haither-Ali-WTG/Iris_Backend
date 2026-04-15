@@ -14,6 +14,7 @@ clustered_instances:
             - 2003  # hh1.art.e2open.com
             - 2004  # SFTP Proxy
             - 2005  # e2proxy
+            - 2006  # XMPP https
       iis_servers: []
       certificates: []
       sqlbilling_acl: []

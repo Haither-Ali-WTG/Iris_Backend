@@ -23,3 +23,8 @@ acl_e2open_e2proxy:
   description: e2open e2proxy
   tests:
     - dst_port 2005
+
+acl_e2open_xmpp_https:
+  description: e2open XMPP HTTPS
+  tests:
+    - dst_port 2006

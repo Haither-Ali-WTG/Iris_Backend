@@ -28,3 +28,9 @@ e2open_e2proxy:
   order: 34
   actions:
     - use_backend e2proxy if acl_e2open_e2proxy
+
+e2open_xmpp_https:
+  description: e2open XMPP HTTPS
+  order: 32
+  actions:
+    - use_backend e2open-xmpp-https if acl_e2open_xmpp_https
