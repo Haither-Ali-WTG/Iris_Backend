@@ -55,7 +55,7 @@ app-us.borderwise.com:
       ip: 10.4.67.112
       port: 50035
 
-ausyd.transport.wisetechglobal.com-web:
+ausyd.transport.wisetechglobal.com-us-web:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend ausyd_transport_web
@@ -67,7 +67,7 @@ ausyd.transport.wisetechglobal.com-web:
     server us2wp-sdkr-501b--web1 10.4.67.57:3001 check
     server us2wp-sdkr-501c--web2 10.4.67.58:3001 check
 
-ausyd.transport.wisetechglobal.com-api:
+ausyd.transport.wisetechglobal.com-us-api:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend ausyd_transport_api
@@ -79,7 +79,7 @@ ausyd.transport.wisetechglobal.com-api:
     server us2wp-sdkr-501b--api1 10.4.67.57:3501 check
     server us2wp-sdkr-501c--api2 10.4.67.58:3501 check
 
-ausyd.transport.wisetechglobal.com-capi:
+ausyd.transport.wisetechglobal.com-us-capi:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
     backend ausyd_transport_capi
