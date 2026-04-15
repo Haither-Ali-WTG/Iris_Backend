@@ -57,7 +57,7 @@ app-us.borderwise.com:
 
 ausyd.transport.wisetechglobal.com-us-web:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
-  backend_name: ausyd_transport_web
+  backend_name: ausyd.transport.web
   cookie:
     name: LB
   http_health_check:
@@ -74,7 +74,7 @@ ausyd.transport.wisetechglobal.com-us-web:
 
 ausyd.transport.wisetechglobal.com-us-api:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
-  backend_name: ausyd_transport_api
+  backend_name: ausyd.transport.api
   cookie:
     name: LB
   http_health_check:
@@ -91,7 +91,7 @@ ausyd.transport.wisetechglobal.com-us-api:
 
 ausyd.transport.wisetechglobal.com-us-capi:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
-  backend_name: ausyd_transport_capi
+  backend_name: ausyd.transport.capi
   cookie:
     name: LB
   http_health_check:
