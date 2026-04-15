@@ -667,3 +667,24 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodfrontend1envase:
+      # General Envase instance
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2037]
+          ssl: [2038]
+      stats:
+        ports:
+          web: 2040
+          socket: 2039
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
