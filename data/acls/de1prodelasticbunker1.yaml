@@ -9,3 +9,8 @@ star_de1s3-b1_wtg_ws:
   description: "*.de1s3-b1.wtg.ws"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?de1s3-b1\.wtg\.ws(:[0-9]+)?$
+
+star_de1s3-11_wtg_ws:
+  description: "*.de1s3-11.wtg.ws"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?de1s3-11\.wtg\.ws(:[0-9]+)?$

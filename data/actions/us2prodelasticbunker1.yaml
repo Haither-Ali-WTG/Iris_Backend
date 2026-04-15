@@ -20,3 +20,10 @@ star_us2s3_b1_wtg_ws:
   order: 90
   actions:
     - use_backend star_us2s3-b1_wtg_ws if star_us2s3-b1_wtg_ws
+
+star_us2s3_11_wtg_ws:
+  description: |-
+    Backend for Elastic monitoring NAS11 FB in US2
+  order: 92
+  actions:
+    - use_backend star_us2s3-11_wtg_ws if star_us2s3-11_wtg_ws

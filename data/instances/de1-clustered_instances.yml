@@ -81,6 +81,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-de1s3-b1-wtg-ws
           cms_resource_group: RG-EU-Prod
+        - name: star-de1s3-11-wtg-ws
+          cms_resource_group: RG-EU-Prod
       container:
         resources:
           production:
