@@ -1,0 +1,11 @@
+---
+us2wp-srdh-401.wisegrid.net:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend name: US2WP-SRDH-401
+  http_health_check:
+    enabled: false
+  encryption: false
+  servers:
+    - name: us2wp-srdh-401
+      ip: 10.4.124.11
+      port: 80
