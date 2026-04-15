@@ -7,12 +7,12 @@ variables:
   # c3fdc884e97f825bc4dc419564b30a865440e0e1
   dante_build_id: '1668999'
 
-  # virgil 20260414.4
-  # Mon Apr 13 23:07:20 UTC 2026 -- Tue Apr 14 09:07:20 AEST 2026
+  # virgil 20260416.1
+  # Wed Apr 15 22:39:40 UTC 2026 -- Thu Apr 16 08:39:40 AEST 2026
   #
-  # Merged PR 48136: new DAT subnet
-  # 259538d4782de1ea2d6e05d3f88b356108203972
-  virgil_build_id: '1668847'
+  # Merged PR 48272: staging topics for sysproc and ocm-be
+  # 24882a4905432e12d34d9c2d4e7b12616efc4664
+  virgil_build_id: '1670634'
 
   # sqlbilling 20260415.1
   # Tue Apr 14 16:40:21 UTC 2026 -- Wed Apr 15 02:40:21 AEST 2026
