@@ -99,3 +99,10 @@ au2prod_sand_ocp_backend_selection:
   order: 80
   actions:
     - use_backend au2prod1-sandinternal-ingress if custom_sandinternal_au2prod1_ocp_wtg_ws
+
+blazor_backend:
+  description: |-
+    Direct requests for blazor backend
+  order: 80
+  actions:
+    - use_backend blazor_sand_wtg_zone-catchall if star_blazor_sand_wtg_zone
