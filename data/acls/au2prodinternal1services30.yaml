@@ -55,6 +55,8 @@ custom_internal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i dgsegregation-staging.wtg.zone
     - hdr(host) -i triageassist-sand.wtg.zone
     - hdr(host) -i triageassist-api-sand.wtg.zone
+    - hdr(host) -i ausyd-test1.transport.wisetechglobal.com
+    - hdr(host) -i ausyd-test2.transport.wisetechglobal.com
 
 ocp_grpc_domains:
   description: "OCP gRPC domains for internal au2prod1"
@@ -162,3 +164,8 @@ us2s3-2-primary_not_enough_capacity:
   description: "us2s3-2 Primary backends unavailable"
   tests:
     - nbsrv(us2s3-2-primary) lt 1
+
+star_transport_wisetechglobal_com:
+  description: "*.transport.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
