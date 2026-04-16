@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260416.2
-  # Thu Apr 16 03:24:53 UTC 2026 -- Thu Apr 16 13:24:53 AEST 2026
+  # Dante Build Artifact 20260416.5
+  # Thu Apr 16 05:34:32 UTC 2026 -- Thu Apr 16 15:34:32 AEST 2026
   #
-  # Merge pull request 48360 from automatic_dante_agent_image_upgrade into master
-  # bb78be9ee3c544a6863c00419718e5d72aabc546
-  dante_build_id: '1670923'
+  # Merged PR 48400: Removed unused requirements Episode 3
+  # c863aa3c51cfca0236ff01b3691ff86ef2d0d5b3
+  dante_build_id: '1671113'
 
-  # virgil 20260416.4
-  # Thu Apr 16 00:46:05 UTC 2026 -- Thu Apr 16 10:46:05 AEST 2026
+  # virgil 20260416.7
+  # Thu Apr 16 04:21:10 UTC 2026 -- Thu Apr 16 14:21:10 AEST 2026
   #
-  # Merged PR 48313: DE1 WI01029082 remove legacy hyperv nodes
-  # 0542dd4d9d955448a3c9be018eb4a27947b365e2
-  virgil_build_id: '1670765'
+  # Merge pull request 48385 from virgil_python_upgrade into master
+  # b53089ad311a09dc3ce365368429d23c4b3caf85
+  virgil_build_id: '1671002'
 
   # sqlbilling 20260415.1
   # Tue Apr 14 16:40:21 UTC 2026 -- Wed Apr 15 02:40:21 AEST 2026
