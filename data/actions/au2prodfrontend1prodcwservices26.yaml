@@ -98,6 +98,7 @@ custom_url_actions:
     ### GLOW
     - use_backend www-jjlsyd_wisegrid_net if { hdr(host),field(1,:) -i svc.jjlawson.com.au }
     - use_backend www-fragbl_wisegrid_net if { hdr(host),field(1,:) -i tracking.mbowens.com.au }
+    - use_backend www-ng2prd_wisegrid_net if { hdr(host),field(1,:) -i shipgci-webtracker.net }
 
     ### Accounting
     - use_backend anfprdaccounting_wisegrid_net if { hdr(host),field(1,:) -i anfprdaccounting-cn.wisegrid.net }
