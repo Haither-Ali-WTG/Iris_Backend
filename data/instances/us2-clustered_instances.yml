@@ -690,3 +690,45 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa:
+      # General Sistemas Casa instance
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2041]
+          ssl: [2042]
+      stats:
+        ports:
+          web: 2043
+          socket: 2044
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1opentecnologia:
+      # General Opentecnologia instance
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2054]
+          ssl: [2055]
+      stats:
+        ports:
+          web: 2058
+          socket: 2059
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
