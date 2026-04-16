@@ -1,0 +1,18 @@
+---
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_sistemascasa_com      !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0apppw011_sistemascasa_hosting if host_server90_url
+    - use_backend us2mx0adml042_sistemascasa_hosting if port_40
+    - use_backend us2mx0gral031_sistemascasa_hosting if graylog_url port_7898
+    - use_backend us2mx0pgabl031_sistemascasa_hosting if port_6698
+

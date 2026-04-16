@@ -712,6 +712,27 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
+    us2prodinternal1sistemascasa:
+      # Sistemas Casa instance for internal services
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: []
+          ssl: []
+      stats:
+        ports:
+          web: 
+          socket: 
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
     us2prodfrontend1opentecnologia:
       # General Opentecnologia instance
       dc: US2

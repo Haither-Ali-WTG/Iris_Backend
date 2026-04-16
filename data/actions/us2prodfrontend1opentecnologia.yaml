@@ -1,2 +1,14 @@
 ---
-{}
+ssl_redirects:
+  description: |-
+    Do SSL redirects for openits.io
+  order: 79
+  actions:
+    - redirect scheme https if star_openits_io !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2co0ocl0000_opentecnologia_hosting if us2co0ocl0000_url

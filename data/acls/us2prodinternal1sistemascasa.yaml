@@ -1,0 +1,30 @@
+---
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+port_40:
+  descirption: "Original destination port was 40"
+  tests:
+    - dst_port 40
+
+port_6698:
+  description: "Original destination port was 6698"
+  tests:
+    - dst_port 6698
+
+port_7898:
+  description: "Original destination port was 7898"
+  tests:
+    - dst_port 7898
+
+host_server90_url:
+  description: "URLs that need to go to host_server90"
+  tests:
+    - hdr(host) -i adminctraweb.sistemascasa.com
+
+graylog_url:
+  description: "Graylog URL"
+  tests:
+    - hdr(host) -i eprevioslogs.sistemascasa.com

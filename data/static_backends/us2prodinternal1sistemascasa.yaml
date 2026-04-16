@@ -1,0 +1,39 @@
+---
+us2mx0apppw011_sistemascasa_hosting:
+  clustered_instances: [us2prodinternal1sistemascasa]
+  full_override: |
+    backend us2mx0apppw011_sistemascasa_hosting
+    option forwardfor
+    http-request set-header X-Forwarded-Port  %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    cookie JSESSIONID prefix nocache
+    server us2mx0apppw011 10.16.106.6:9001 check cookie https9001
+
+us2mx0adml042_sistemascasa_hosting:
+  clustered_instances: [us2prodinternal1sistemascasa]
+  full_override: |
+    backend us2mx0adml042_sistemascasa_hosting
+    mode http
+    option forwardfor
+    http-request set-header X-Forwarded-Port  %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    server us2mx0adml042 10.16.106.20:80 check
+
+us2mx0gral031_sistemascasa_hosting:
+  clustered_instances: [us2prodinternal1sistemascasa]
+  full_override: |
+    backend us2mx0gral031_sistemascasa_hosting
+    http-request set-header X-Forwarded-Port  %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    http-request set-header X-Forwarded-Proto http if !{ ssl_fc }
+    server us2mx0gral031 10.16.106.14:9070 check
+
+us2mx0pgabl031_sistemascasa_hosting:
+  clustered_instances: [us2prodinternal1sistemascasa]
+  full_override: |
+    backend us2mx0pgabl031_sistemascasa_hosting
+    mode http
+    option forwardfor
+    http-request set-header X-Forwarded-Port  %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    server us2mx0pgabl031 10.16.106.18:80 check
