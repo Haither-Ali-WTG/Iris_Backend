@@ -84,7 +84,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.25.2
+filelock==3.28.0
     # via
     #   ansible-lint
     #   safety
@@ -143,7 +143,7 @@ netaddr==1.3.0
     # via -r requirements.in
 nltk==3.9.4
     # via safety
-packaging==26.0
+packaging==26.1
     # via
     #   ansible-compat
     #   ansible-core
@@ -171,11 +171,11 @@ pyasn1==0.6.3
     # via rsa
 pycparser==3.0
     # via cffi
-pydantic==2.13.0
+pydantic==2.13.1
     # via
     #   safety
     #   safety-schemas
-pydantic-core==2.46.0
+pydantic-core==2.46.1
     # via pydantic
 pygments==2.20.0
     # via
