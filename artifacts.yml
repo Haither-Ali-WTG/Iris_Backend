@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260414.1
-  # Tue Apr 14 02:21:24 UTC 2026 -- Tue Apr 14 12:21:24 AEST 2026
+  # Dante Build Artifact 20260416.1
+  # Thu Apr 16 02:00:35 UTC 2026 -- Thu Apr 16 12:00:35 AEST 2026
   #
-  # Merge pull request 48197 from dante_artifact_upgrade into master
-  # c3fdc884e97f825bc4dc419564b30a865440e0e1
-  dante_build_id: '1668999'
+  # Merged PR 48296: Added ldap-utils to dante agent
+  # a2ef25ad6cfde9efd5d81f52b4f5147d4166124e
+  dante_build_id: '1670848'
 
   # virgil 20260416.4
   # Thu Apr 16 00:46:05 UTC 2026 -- Thu Apr 16 10:46:05 AEST 2026
