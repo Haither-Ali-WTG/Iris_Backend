@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260416.5
-  # Thu Apr 16 05:34:32 UTC 2026 -- Thu Apr 16 15:34:32 AEST 2026
+  # Dante Build Artifact 20260416.6
+  # Thu Apr 16 06:41:06 UTC 2026 -- Thu Apr 16 16:41:06 AEST 2026
   #
-  # Merged PR 48400: Removed unused requirements Episode 3
-  # c863aa3c51cfca0236ff01b3691ff86ef2d0d5b3
-  dante_build_id: '1671113'
+  # Merge pull request 48326 from dante_artifact_upgrade into master
+  # 927a53d8927ca0172ab8b84d8bdcc9842d035348
+  dante_build_id: '1671181'
 
   # virgil 20260416.7
   # Thu Apr 16 04:21:10 UTC 2026 -- Thu Apr 16 14:21:10 AEST 2026
