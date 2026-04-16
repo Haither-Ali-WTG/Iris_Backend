@@ -281,6 +281,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-sand-wtg-zone
           cms_resource_group: RG-AU-Sand
+        - name: star-transport-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

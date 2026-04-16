@@ -21,6 +21,7 @@ https_redirect:
     - redirect scheme https if star_internal_au2prod1_ocp_wtg_ws !{ ssl_fc }
     - redirect scheme https if star_internal_au2prod2_ocp_wtg_ws !{ ssl_fc }
     - redirect scheme https if platform-docs_wtg_ws !{ ssl_fc }
+    - redirect scheme https if star_transport_wisetechglobal_com !{ ssl_fc }
 
 redirects:
   description: |-
