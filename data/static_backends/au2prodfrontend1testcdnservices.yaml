@@ -14,28 +14,6 @@ addressvalidation-test.wisegrid.net:
       ip: 10.2.69.20
       port: 80
 
-au.cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  full_override: |
-    backend au_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server AU2WT-SRDH-401 10.2.126.50:80
-    server AU2WT-SRDH-402 10.2.126.51:80
-    server AU2WT-SRDH-403 10.2.126.52:80
-    server AU2WT-SRDH-404 10.2.126.53:80
-    server AU2WT-SRDH-405 10.2.126.54:80
-    server AU2WT-SRDH-406 10.2.126.55:80
-    server AU2WT-SRDH-407 10.2.126.56:80
-    server AU2WT-SRDH-408 10.2.126.58:80
-    server AU2WT-SRDH-409 10.2.126.59:80
-    server AU2WT-SRDH-410 10.2.126.60:80
-
 app-test-au.borderwise.com:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
