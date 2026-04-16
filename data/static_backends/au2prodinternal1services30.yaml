@@ -1429,7 +1429,8 @@ integration-hub.sand.wtg.zone:
   full_override: |
     backend integration-hub_sand_wtg_zone
     option httpchk
-    http-check send meth HEAD uri / ver HTTP/1.1 hdr host integration-hub.sand.wtg.zone
+    http-check connect port 30201
+    http-check send meth GET uri /healthz/ready ver HTTP/1.1 hdr Host localhost
     cookie INTHUBS insert indirect nocache dynamic
     http-check expect rstatus 200|301|302|400|403
     # gRPC/HTTP2 specific timeouts for long-running requests
