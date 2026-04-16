@@ -1,25 +1,4 @@
 ---
-de.cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [de1prodfrontend1testcdnservices]
-  full_override: |
-    backend de_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server DE1WT-SRDH-400 10.3.126.40:80
-    server DE1WT-SRDH-401 10.3.126.41:80
-    server DE1WT-SRDH-402 10.3.126.42:80
-    server DE1WT-SRDH-403 10.3.126.43:80
-    server DE1WT-SRDH-404 10.3.126.44:80
-    server DE1WT-SRDH-405 10.3.126.45:80
-    server DE1WT-SRDH-406 10.3.126.46:80
-    server DE1WT-SRDH-407 10.3.126.47:80
-    server DE1WT-SRDH-408 10.3.126.48:80
-
 app-test-de.borderwise.com:
   clustered_instances: [de1prodfrontend1testcdnservices]
   cookie:
