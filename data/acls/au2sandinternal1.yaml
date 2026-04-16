@@ -165,3 +165,8 @@ custom_sandinternal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i map-test.sand.wtg.zone
     - hdr(host) -i api-map-test.sand.wtg.zone
     - hdr(host) -i people-process.sand.wtg.zone
+
+star_blazor_sand_wtg_zone:
+  description: "*.blazor.sand.wtg.zone"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?blazor\.sand\.wtg\.zone$
