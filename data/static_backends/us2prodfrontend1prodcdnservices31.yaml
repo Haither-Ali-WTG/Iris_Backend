@@ -14,32 +14,6 @@ addressvalidation-us2.wisegrid.net:
       ip: 10.4.66.28
       port: 80
 
-us.cww.wisegrid.net-catchall:
-  clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend us_cww_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
-    default-server agent-check agent-port 8098
-    server US2WP-SBLZ-406 10.4.72.21:80
-    server US2WP-SBLZ-407 10.4.72.22:80
-    server US2WP-SBLZ-408 10.4.72.23:80
-    server US2WP-SRDH-401 10.4.124.11:80
-    server US2WP-SRDH-402 10.4.124.12:80
-    server US2WP-SRDH-403 10.4.124.13:80
-    server US2WP-SRDH-404 10.4.124.14:80
-    server US2WP-SRDH-405 10.4.124.15:80
-    server US2WP-SRDH-406 10.4.124.16:80
-    server US2WP-SRDH-407 10.4.124.17:80
-    server US2WP-SRDH-408 10.4.124.18:80
-    server US2WP-SRDH-409 10.4.124.19:80
-    server US2WP-SRDH-410 10.4.124.20:80
-    server US2WP-SRDH-411 10.4.124.21:80
-
 app-us.borderwise.com:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   cookie:
