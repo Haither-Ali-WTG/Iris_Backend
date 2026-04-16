@@ -55,6 +55,15 @@ compliance_borderwise_backend:
   actions:
     - use_backend compliance-us_borderwise_com if compliance_borderwise_com
 
+ausyd_transport_backend:
+  description: |-
+    Direct requests for ausyd.transport.wisetechglobal.com to the correct transport backend by path
+  order: 80
+  actions:
+    - use_backend ausyd_transport_api if ausyd_transport_wisetechglobal_com transport_api_path
+    - use_backend ausyd_transport_capi if ausyd_transport_wisetechglobal_com transport_capi_path
+    - use_backend ausyd_transport_web if ausyd_transport_wisetechglobal_com !transport_api_path !transport_capi_path
+
 # Umbraco admin path security
 umbraco_admin_security:
   description: "Deny access to Umbraco admin paths across sites"
@@ -180,6 +189,7 @@ http_to_https_redirects:
   actions:
     - redirect scheme https if group_wisetechglobal_com_certificate_covered_domains !{ ssl_fc }
     - redirect scheme https if star_wisetechglobal_com !{ ssl_fc }
+    - redirect scheme https if star_transport_wisetechglobal_com !{ ssl_fc }
     - redirect scheme https if star_wtg_zone !{ ssl_fc }
     - redirect scheme https if star_shipamax_com !{ ssl_fc }
     - redirect scheme https if star_cargowise_net !{ ssl_fc } !cargowise_net_excluded_from_redirect

@@ -503,6 +503,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-identity-wisetechglobal-com
           cms_resource_group: RG-AU-Prod
+        - name: star-transport-wisetechglobal-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023

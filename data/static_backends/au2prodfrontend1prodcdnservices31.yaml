@@ -1403,8 +1403,9 @@ classificationassistant.cargowise.com:
       ip: 10.2.67.112
       port: 3000
 
-ausyd.transport.web:
+ausyd.transport.wisetechglobal.com-web:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  backend_name: ausyd.transport.web
   cookie:
     name: LB
   http_health_check:
@@ -1419,8 +1420,9 @@ ausyd.transport.web:
       ip: 10.2.67.58
       port: 3001
 
-ausyd.transport.api:
+ausyd.transport.wisetechglobal.com-api:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
+  backend_name: ausyd.transport.api
   cookie:
     name: LB
   http_health_check:
