@@ -1,4 +1,23 @@
 ---
+### SAND
+blazor.sand.wtg.zone-catchall:
+  clustered_instances: [au2sandinternal1]
+  full_override: |
+    backend blazor_sand_wtg_zone-catchall
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
+    cookie AU2BLZ insert indirect nocache dynamic
+    http-check expect status 200
+    default-server agent-check agent-port 8098
+    server AU2SP-TRDH-411 10.2.120.11:80
+    server AU2SP-TRDH-412 10.2.120.12:80
+    server AU2SP-TRDH-413 10.2.120.13:80
+    server AU2SP-TRDH-414 10.2.120.14:80
+    server AU2SP-TRDH-415 10.2.120.15:80
+    server AU2SP-TRDH-416 10.2.120.16:80
+
+### TEST
 au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   full_override: |
@@ -21,6 +40,46 @@ au.cww-nonprd.wisegrid.net-catchall:
     server AU2WT-SRDH-409 10.2.126.59:80
     server AU2WT-SRDH-410 10.2.126.60:80
 
+de.cww-nonprd.wisegrid.net-catchall:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  full_override: |
+    backend de_cww-nonprd_wisegrid_net-catchall
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
+    default-server agent-check agent-port 8098
+    server DE1WT-SRDH-400 10.3.126.40:80
+    server DE1WT-SRDH-401 10.3.126.41:80
+    server DE1WT-SRDH-402 10.3.126.42:80
+    server DE1WT-SRDH-403 10.3.126.43:80
+    server DE1WT-SRDH-404 10.3.126.44:80
+    server DE1WT-SRDH-405 10.3.126.45:80
+    server DE1WT-SRDH-406 10.3.126.46:80
+    server DE1WT-SRDH-407 10.3.126.47:80
+    server DE1WT-SRDH-408 10.3.126.48:80
+
+us.cww-nonprd.wisegrid.net-catchall:
+  clustered_instances: [us2prodfrontend1testcdnservices]
+  full_override: |
+    backend us_cww-nonprd_wisegrid_net-catchall
+    option httpchk
+    http-check send meth HEAD uri /wtg/status
+    balance random
+    cookie CWWA insert indirect nocache dynamic
+    http-check expect status 200
+    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
+    default-server agent-check agent-port 8098
+    server US2WT-SRDH-401 10.4.126.160:80
+    server US2WT-SRDH-402 10.4.126.161:80
+    server US2WT-SRDH-403 10.4.126.162:80
+    server US2WT-SRDH-404 10.4.126.163:80
+    server US2WT-SRDH-405 10.4.126.164:80
+
+
+### PROD
 au.cww.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   full_override: |
@@ -76,27 +135,6 @@ cww.wisetechglobal.com-catchall:
     server AU2CO-SRDH-424 10.2.47.24:80
     server AU2CO-SRDH-425 10.2.47.25:80
 
-de.cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [de1prodfrontend1testcdnservices]
-  full_override: |
-    backend de_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server DE1WT-SRDH-400 10.3.126.40:80
-    server DE1WT-SRDH-401 10.3.126.41:80
-    server DE1WT-SRDH-402 10.3.126.42:80
-    server DE1WT-SRDH-403 10.3.126.43:80
-    server DE1WT-SRDH-404 10.3.126.44:80
-    server DE1WT-SRDH-405 10.3.126.45:80
-    server DE1WT-SRDH-406 10.3.126.46:80
-    server DE1WT-SRDH-407 10.3.126.47:80
-    server DE1WT-SRDH-408 10.3.126.48:80
-
 de.cww.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   full_override: |
@@ -117,23 +155,6 @@ de.cww.wisegrid.net-catchall:
     server DE1WP-SRDH-603 10.3.125.203:80
     server DE1WP-SRDH-604 10.3.125.204:80
     server DE1WP-SRDH-605 10.3.125.205:80
-
-us.cww-nonprd.wisegrid.net-catchall:
-  clustered_instances: [us2prodfrontend1testcdnservices]
-  full_override: |
-    backend us_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server US2WT-SRDH-401 10.4.126.160:80
-    server US2WT-SRDH-402 10.4.126.161:80
-    server US2WT-SRDH-403 10.4.126.162:80
-    server US2WT-SRDH-404 10.4.126.163:80
-    server US2WT-SRDH-405 10.4.126.164:80
 
 us.cww.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
