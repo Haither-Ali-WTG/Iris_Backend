@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260416.6
-  # Thu Apr 16 06:41:06 UTC 2026 -- Thu Apr 16 16:41:06 AEST 2026
+  # Dante Build Artifact 20260417.1
+  # Fri Apr 17 00:01:38 UTC 2026 -- Fri Apr 17 10:01:38 AEST 2026
   #
-  # Merge pull request 48326 from dante_artifact_upgrade into master
-  # 927a53d8927ca0172ab8b84d8bdcc9842d035348
-  dante_build_id: '1671181'
+  # Merge pull request 48446 from dante_artifact_upgrade into master
+  # 69f84a0565ad55eda8ff2f5cdf6ce80a9f461219
+  dante_build_id: '1671868'
 
-  # virgil 20260416.7
-  # Thu Apr 16 04:21:10 UTC 2026 -- Thu Apr 16 14:21:10 AEST 2026
+  # virgil 20260417.4
+  # Thu Apr 16 23:11:40 UTC 2026 -- Fri Apr 17 09:11:40 AEST 2026
   #
-  # Merge pull request 48385 from virgil_python_upgrade into master
-  # b53089ad311a09dc3ce365368429d23c4b3caf85
-  virgil_build_id: '1671002'
+  # Merged PR 48440: rm -rf /us2/hyper-v
+  # 082ff8febd1b438b48f257feae664a12b7081a93
+  virgil_build_id: '1671798'
 
   # sqlbilling 20260416.4
   # Thu Apr 16 13:01:47 UTC 2026 -- Thu Apr 16 23:01:47 AEST 2026
