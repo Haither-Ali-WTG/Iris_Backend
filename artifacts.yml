@@ -7,12 +7,12 @@ variables:
   # 69f84a0565ad55eda8ff2f5cdf6ce80a9f461219
   dante_build_id: '1671868'
 
-  # virgil 20260417.4
-  # Thu Apr 16 23:11:40 UTC 2026 -- Fri Apr 17 09:11:40 AEST 2026
+  # virgil 20260420.1
+  # Sun Apr 19 22:27:56 UTC 2026 -- Mon Apr 20 08:27:56 AEST 2026
   #
-  # Merged PR 48440: rm -rf /us2/hyper-v
-  # 082ff8febd1b438b48f257feae664a12b7081a93
-  virgil_build_id: '1671798'
+  # Merged PR 48454: Add C66 and C67 machine types
+  # 86dabdfc6201cbabc7d7aeaa90b18172cba987d1
+  virgil_build_id: '1674356'
 
   # sqlbilling 20260417.2
   # Fri Apr 17 11:09:21 UTC 2026 -- Fri Apr 17 21:09:21 AEST 2026
