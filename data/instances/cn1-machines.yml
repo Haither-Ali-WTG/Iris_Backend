@@ -6,6 +6,8 @@ machines:
       os: ubuntu2404
       dc: CN1
       os_variant: ubuntu
+      container:
+        haproxy_image_tag: 3.2.11-trixie
     cn1lbl00002:
       ansible_host: 10.5.65.19
       os: ubuntu2404
