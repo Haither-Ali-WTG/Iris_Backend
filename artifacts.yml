@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260420.1
-  # Sun Apr 19 23:20:58 UTC 2026 -- Mon Apr 20 09:20:58 AEST 2026
+  # Dante Build Artifact 20260420.3
+  # Mon Apr 20 02:51:58 UTC 2026 -- Mon Apr 20 12:51:58 AEST 2026
   #
-  # Merge pull request 48536 from dante_artifact_upgrade into master
-  # fe2380c1b7251933933f0662e13c6a3ca85bbbd9
-  dante_build_id: '1674411'
+  # Merge pull request 48576 from dante_python_upgrade into master
+  # af1d5808b638a11795886b32d5a6e6ca22b9e358
+  dante_build_id: '1674663'
 
-  # virgil 20260420.6
-  # Mon Apr 20 00:46:35 UTC 2026 -- Mon Apr 20 10:46:35 AEST 2026
+  # virgil 20260420.15
+  # Mon Apr 20 02:24:01 UTC 2026 -- Mon Apr 20 12:24:01 AEST 2026
   #
-  # Merged PR 48550: Add ssh keys for new starter Leo Ng
-  # f05983c89816606494e44bac29e56805e7b9026b
-  virgil_build_id: '1674511'
+  # Merge pull request 48566 from virgil_python_upgrade into master
+  # 7770028cf7f8ce60ab004bba7b694ae36b043433
+  virgil_build_id: '1674629'
 
   # sqlbilling 20260417.2
   # Fri Apr 17 11:09:21 UTC 2026 -- Fri Apr 17 21:09:21 AEST 2026
