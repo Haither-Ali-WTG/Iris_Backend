@@ -15,4 +15,3 @@ backend_selection:
     - use_backend us2mx0adml042_sistemascasa_hosting if port_40
     - use_backend us2mx0gral031_sistemascasa_hosting if graylog_url port_7898
     - use_backend us2mx0pgabl031_sistemascasa_hosting if port_6698
-
