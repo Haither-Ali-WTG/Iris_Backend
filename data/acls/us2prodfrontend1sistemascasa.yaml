@@ -81,7 +81,7 @@ host_server1_url:
     - hdr(host) -i sistemascasa.com
 
 host_server2_url:
-  descirption: "URLs that need to go to python_produccion"
+  description: "URLs that need to go to python_produccion"
   tests:
     - hdr(host) -i pdfprevios.e-casa.com.mx
     - hdr(host) -i us2-pdfprevios.sistemascasa.com
@@ -99,7 +99,7 @@ hoost_server8_url:
     - hdr(host) -i us2-eprevios.sistemascasa.com
 
 host_server10_url:
-  descirption: "URLs t hat need to go to server10"
+  description: "URLs t hat need to go to server10"
   tests:
     - hdr(host) -i pemex-org.mx
     - hdr(host) -i us2.pemex-org.mx
@@ -118,7 +118,7 @@ host_server11_url:
     - hdr(host) -i us2-ctarnet.e-casa.com.mx
 
 host_server11_8085_url:
-  descirption: "URLs that need to go to server11 but on port 8085"
+  description: "URLs that need to go to server11 but on port 8085"
   tests:
     - hdr(host) -i pemex-org.mx
     - hdr(host) -i us2.pemex-org.mx
