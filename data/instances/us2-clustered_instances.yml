@@ -730,8 +730,6 @@ clustered_instances:
       cipher:
         profiles:
           - best_practice_2023
-      timeouts:
-        http_keep_alive: 4
 
     us2prodfrontend1opentecnologia:
       # General Opentecnologia instance
