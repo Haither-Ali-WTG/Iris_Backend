@@ -708,6 +708,7 @@ clustered_instances:
             - 2077  # :8086
             - 2078  # :8080
             - 2079  # :8081
+            - 2080  # :4443
       stats:
         ports:
           web: 2043
