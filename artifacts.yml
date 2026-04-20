@@ -7,12 +7,12 @@ variables:
   # 1436bf2358e8b36ba95780e896c9bf89ceef02e9
   dante_build_id: '1674981'
 
-  # virgil 20260420.28
-  # Mon Apr 20 05:31:43 UTC 2026 -- Mon Apr 20 15:31:43 AEST 2026
+  # virgil 20260421.2
+  # Mon Apr 20 18:24:37 UTC 2026 -- Tue Apr 21 04:24:37 AEST 2026
   #
-  # Merged PR 48465: WI01032401 Creating mobile star network
-  # d57941db2d87e8b824ec74e8744edcf15f44fa91
-  virgil_build_id: '1674859'
+  # Merge pull request 48668 from virgil_python_upgrade into master
+  # eed864d2fad44b786e5e9130f0ea309cfc313e5c
+  virgil_build_id: '1675424'
 
   # sqlbilling 20260420.4
   # Mon Apr 20 11:46:38 UTC 2026 -- Mon Apr 20 21:46:38 AEST 2026
