@@ -7,17 +7,17 @@ star_sistemascasa_com:
 port_40:
   description: "Original destination port was 40"
   tests:
-    - dst_port 40
+    - dst_port 2071
 
 port_6698:
   description: "Original destination port was 6698"
   tests:
-    - dst_port 6698
+    - dst_port 2075
 
 port_7898:
   description: "Original destination port was 7898"
   tests:
-    - dst_port 7898
+    - dst_port 2074
 
 host_server90_url:
   description: "URLs that need to go to host_server90"
