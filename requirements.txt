@@ -30,7 +30,7 @@ attrs==26.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-authlib==1.6.10
+authlib==1.7.0
     # via safety
 awscli==1.36.40
     # via -r requirements.in
@@ -72,6 +72,7 @@ cryptography==46.0.7
     #   ansible-core
     #   ansible-lint
     #   authlib
+    #   joserfc
     #   pyspnego
     #   requests-ntlm
 dill==0.4.1
@@ -84,7 +85,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.28.0
+filelock==3.29.0
     # via
     #   ansible-lint
     #   safety
@@ -111,6 +112,8 @@ jmespath==1.1.0
     # via botocore
 joblib==1.5.3
     # via nltk
+joserfc==1.6.4
+    # via authlib
 jq==1.11.0
     # via -r requirements.in
 jsonschema==4.26.0
@@ -171,11 +174,11 @@ pyasn1==0.6.3
     # via rsa
 pycparser==3.0
     # via cffi
-pydantic==2.13.1
+pydantic==2.13.2
     # via
     #   safety
     #   safety-schemas
-pydantic-core==2.46.1
+pydantic-core==2.46.2
     # via pydantic
 pygments==2.20.0
     # via
