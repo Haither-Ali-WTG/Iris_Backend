@@ -3801,7 +3801,7 @@ dps-hub.wisegrid.net:
     name: DPS
   http_health_check:
     enabled: true
-    http_path: /wtg/ready
+    http_path: /wtg/status
     check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
@@ -3817,7 +3817,7 @@ dps-hub-api.wisegrid.net:
     name: DPS
   http_health_check:
     enabled: true
-    http_path: /wtg/ready
+    http_path: /wtg/status
     check_expect: '200'
   servers:
     - name: AU2WP-SIIS-404A
