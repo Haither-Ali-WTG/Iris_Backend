@@ -32,7 +32,7 @@ star_pemex-org_mx:
 port_4443:
   description: "Destination port of 4443 in the original request"
   tests:
-    - dst_port 4443
+    - dst_port 2080
 
 port_4444:
   description: "Destination port of 4444 in the original request"
