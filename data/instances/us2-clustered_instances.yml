@@ -698,7 +698,16 @@ clustered_instances:
         maxconn: 200000
         ports:
           plaintext: [2041]
-          ssl: [2042]
+          ssl:
+            - 2042  # :443
+            - 2069  # :9001
+            - 2070  # :8085
+            - 2072  # :4443
+            - 2073  # :5050
+            - 2076  # :4444
+            - 2077  # :8086
+            - 2078  # :8080
+            - 2079  # :8081
       stats:
         ports:
           web: 2043
@@ -719,7 +728,11 @@ clustered_instances:
         maxconn: 200000
         ports:
           plaintext: [2065]
-          ssl: [2066]
+          ssl:
+            - 2066  # :443
+            - 2071  # :40
+            - 2074  # :7898
+            - 2075  # :6698
       stats:
         ports:
           web: 2067
