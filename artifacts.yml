@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260420.3
-  # Mon Apr 20 02:51:58 UTC 2026 -- Mon Apr 20 12:51:58 AEST 2026
+  # Dante Build Artifact 20260420.4
+  # Mon Apr 20 04:11:43 UTC 2026 -- Mon Apr 20 14:11:43 AEST 2026
   #
-  # Merge pull request 48576 from dante_python_upgrade into master
-  # af1d5808b638a11795886b32d5a6e6ca22b9e358
-  dante_build_id: '1674663'
+  # Merged PR 48592: Ansible 13 syntax update
+  # 0c799c5bd640bc1274b9788686c5d6f94cc2ec3e
+  dante_build_id: '1674747'
 
-  # virgil 20260420.15
-  # Mon Apr 20 02:24:01 UTC 2026 -- Mon Apr 20 12:24:01 AEST 2026
+  # virgil 20260420.24
+  # Mon Apr 20 04:34:04 UTC 2026 -- Mon Apr 20 14:34:04 AEST 2026
   #
-  # Merge pull request 48566 from virgil_python_upgrade into master
-  # 7770028cf7f8ce60ab004bba7b694ae36b043433
-  virgil_build_id: '1674629'
+  # Merged PR 48599: fix: add all aap servers to all regional views of core.wtg.ws
+  # 240d3482487ee8243d84a18ede26dd06dbcb89a4
+  virgil_build_id: '1674782'
 
   # sqlbilling 20260417.2
   # Fri Apr 17 11:09:21 UTC 2026 -- Fri Apr 17 21:09:21 AEST 2026
