@@ -718,18 +718,20 @@ clustered_instances:
       frontend:
         maxconn: 200000
         ports:
-          plaintext: []
-          ssl: []
+          plaintext: [2065]
+          ssl: [2066]
       stats:
         ports:
-          web: 
-          socket: 
+          web: 2067
+          socket: 2068
       machine_cluster: us2-corp-internal-1
       iis_servers: []
       certificates: []
       cipher:
         profiles:
           - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1opentecnologia:
       # General Opentecnologia instance
