@@ -25,12 +25,12 @@ set_content_security_policy:
   order: 13
   actions:
     - >-
-      http-response set-header Content-Security-Policy "frame-ancestors https://www.claa.mx 
-      https://www.tlcasociados.com.mx https://www.casaonline.mx https://casaonline.mx 
-      https://aduanas-mexico.com.mx https://www.tlcasociados.com.mx https://www.claa.mx 
-      https://pemex-org.mx:8080 https://pemex-org.mx:8081 https://chapela.sistemascasa.com:8090 
-      https://transpheric.sistemascasa.com:8081 https://ctraweb-lamx.sistemascasa.com:8082 
-      https://ctraweb-apycsa.sistemascasa.com:8085 https://ctraweb-serviport.sistemascasa.com:9090 
+      http-response set-header Content-Security-Policy "frame-ancestors https://www.claa.mx
+      https://www.tlcasociados.com.mx https://www.casaonline.mx https://casaonline.mx
+      https://aduanas-mexico.com.mx https://www.tlcasociados.com.mx https://www.claa.mx
+      https://pemex-org.mx:8080 https://pemex-org.mx:8081 https://chapela.sistemascasa.com:8090
+      https://transpheric.sistemascasa.com:8081 https://ctraweb-lamx.sistemascasa.com:8082
+      https://ctraweb-apycsa.sistemascasa.com:8085 https://ctraweb-serviport.sistemascasa.com:9090
       https://ademsa.sistemascasa.com:8080 https://rali-ctraweb.sistemascasa.com:8083"
     - http-response del-header Server
 

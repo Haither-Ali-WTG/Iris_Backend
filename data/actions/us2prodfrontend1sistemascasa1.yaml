@@ -22,8 +22,8 @@ set_permissions_policy_header:
   order: 12
   actions:
     - >-
-      http-response set-header Permissions-Policy "geolocation=(), microphone=(), 
-      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), 
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(),
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
       autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
 
 set_content_security_policy:

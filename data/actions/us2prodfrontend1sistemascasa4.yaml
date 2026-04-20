@@ -5,7 +5,11 @@ set_permissions_policy_header:
     Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
   order: 11
   actions:
-    - http-response set-header Permissions-Policy "geolocation=(), microphone=(), camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+  actions:
+    - >-
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(), 
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), 
+      autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
 
 remove_server_header:
   description: |-
