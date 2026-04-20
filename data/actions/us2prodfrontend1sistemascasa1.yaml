@@ -32,8 +32,8 @@ set_content_security_policy:
   order: 13
   actions:
     - >-
-      http-response set-header Content-Security-Policy "frame-ancestors 
-      https://normativo.e-casa.com.mx https://www.casaonline.mx 
+      http-response set-header Content-Security-Policy "frame-ancestors
+      https://normativo.e-casa.com.mx https://www.casaonline.mx
       https://www.almer.com.mx"
     - http-response del-header Server
 
