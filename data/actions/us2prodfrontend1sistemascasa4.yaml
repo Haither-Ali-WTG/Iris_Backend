@@ -15,7 +15,7 @@ remove_server_header:
     Remove "Server" header
   order: 12
   actions:
-    - http-repsonse del-header Server
+    - http-response del-header Server
 
 ssl_redirects:
   description: |-
