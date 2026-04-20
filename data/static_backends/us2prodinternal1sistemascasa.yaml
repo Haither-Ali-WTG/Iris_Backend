@@ -1,8 +1,8 @@
 ---
-us2mx0apppw011.sistemascasa.hosting:
+us2mx0apppw011-internal.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa]
   full_override: |
-    backend us2mx0apppw011_sistemascasa_hosting
+    backend us2mx0apppw011-internal_sistemascasa_hosting
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
