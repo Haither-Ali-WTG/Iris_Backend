@@ -5,7 +5,7 @@ star_sistemascasa_com:
     - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
 
 port_40:
-  descirption: "Original destination port was 40"
+  description: "Original destination port was 40"
   tests:
     - dst_port 40
 
