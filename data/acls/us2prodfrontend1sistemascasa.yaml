@@ -92,7 +92,7 @@ host_server4_url:
     - hdr(host) -i eprevios.sistemascasa.com
     - hdr(host) -i us2-eprevios.sistemascasa.com
 
-hoost_server8_url:
+host_server8_url:
   description: "URLs that need to go to http_server8"
   tests:
     - hdr(host) -i eprevios.sistemascasa.com
