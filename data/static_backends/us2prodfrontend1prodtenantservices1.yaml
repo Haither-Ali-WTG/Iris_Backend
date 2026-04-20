@@ -3777,3 +3777,25 @@ report.rez1.com:
       ip: 10.4.240.25
       port: 8080
       settings: check
+
+devcustomercc.tmssaas.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2us6appw003
+      ip: 10.4.163.13
+      port: 80
+
+devwtrestapi.tmssaas.com:
+  clustered_instances: [us2prodfrontend1prodtenantservices1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2us6appw003
+      ip: 10.4.163.13
+      port: 80
