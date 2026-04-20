@@ -55,7 +55,7 @@ custom_internal_au2prod1_ocp_wtg_ws:
     - hdr(host) -i dgsegregation-staging.wtg.zone
     - hdr(host) -i triageassist-sand.wtg.zone
     - hdr(host) -i triageassist-api-sand.wtg.zone
-    - hdr(host) -i gss.sand.wtg.zone
+    - hdr(host) -i gss.k8s.sand.wtg.zone
     - hdr(host) -i ausyd-test1.transport.wisetechglobal.com
     - hdr(host) -i ausyd-test2.transport.wisetechglobal.com
 
