@@ -1,7 +1,7 @@
 ---
 # CS02301485 - Sistemas Casa HAProxy Configuration - CTARNET
 us2mx0adml043.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa2]
   full_override: |
     backend us2mx0adml043_sistemascasa_hosting
     mode http
@@ -11,7 +11,7 @@ us2mx0adml043.sistemascasa.hosting:
     server us2mx0adml043 10.16.106.21:80 check
 
 us2mx0bdpl043.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa2]
   full_override: |
     backend us2mx0bdpl043_sistemascasa_hosting
     mode http

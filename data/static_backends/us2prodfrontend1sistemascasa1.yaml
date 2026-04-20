@@ -1,7 +1,7 @@
 ---
 # CS02301482 - Sistemas Casa HAProxy Configuration - ADUANAS MEX
 us2mx0apppw011.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa1]
   full_override: |
     backend us2mx0apppw011_sistemascasa_hosting
     mode http
@@ -10,7 +10,7 @@ us2mx0apppw011.sistemascasa.hosting:
     server us2mx0apppw011 10.16.106.6:80 check cookie https849001
 
 us2mx0apppl011.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa1]
   full_override: |
     backend us2mx0apppl011_sistemascasa_hosting
     mode http

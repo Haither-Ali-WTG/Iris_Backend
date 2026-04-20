@@ -1,7 +1,7 @@
 ---
 # CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
 us2mx0apppl032.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa3]
   full_override: |
     backend us2mx0apppl032_sistemascasa_hosting
     mode http
@@ -11,7 +11,7 @@ us2mx0apppl032.sistemascasa.hosting:
     server us2mx0apppl032 10.16.106.9:5551 check
 
 us2mx0apppl031.sistemascasa.hosting:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa3]
   full_override: |
     backend us2mx0apppl031_sistemascasa_hosting
     mode http
@@ -19,7 +19,7 @@ us2mx0apppl031.sistemascasa.hosting:
     server us2mx0apppl031 10.16.106.8:80 check
 
 webservices.java.produccion:
-  clustered_instances: [us2prodfrontend1sistemascasa]
+  clustered_instances: [us2prodfrontend1sistemascasa3]
   full_override: |
     backend webservices_java_produccion
     balance leastconn
