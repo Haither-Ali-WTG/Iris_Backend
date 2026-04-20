@@ -7,12 +7,12 @@ variables:
   # fe2380c1b7251933933f0662e13c6a3ca85bbbd9
   dante_build_id: '1674411'
 
-  # virgil 20260420.1
-  # Sun Apr 19 22:27:56 UTC 2026 -- Mon Apr 20 08:27:56 AEST 2026
+  # virgil 20260420.6
+  # Mon Apr 20 00:46:35 UTC 2026 -- Mon Apr 20 10:46:35 AEST 2026
   #
-  # Merged PR 48454: Add C66 and C67 machine types
-  # 86dabdfc6201cbabc7d7aeaa90b18172cba987d1
-  virgil_build_id: '1674356'
+  # Merged PR 48550: Add ssh keys for new starter Leo Ng
+  # f05983c89816606494e44bac29e56805e7b9026b
+  virgil_build_id: '1674511'
 
   # sqlbilling 20260417.2
   # Fri Apr 17 11:09:21 UTC 2026 -- Fri Apr 17 21:09:21 AEST 2026
