@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260420.6
-  # Mon Apr 20 06:13:41 UTC 2026 -- Mon Apr 20 16:13:41 AEST 2026
+  # Dante Build Artifact 20260420.7
+  # Mon Apr 20 07:23:49 UTC 2026 -- Mon Apr 20 17:23:49 AEST 2026
   #
-  # Merged PR 48562: Do not apply nv config in simulation
-  # e8a954ab97281620dcd813970f836b3f986848eb
-  dante_build_id: '1674912'
+  # Merge pull request 48626 from dante_artifact_upgrade into master
+  # 1436bf2358e8b36ba95780e896c9bf89ceef02e9
+  dante_build_id: '1674981'
 
   # virgil 20260420.28
   # Mon Apr 20 05:31:43 UTC 2026 -- Mon Apr 20 15:31:43 AEST 2026
