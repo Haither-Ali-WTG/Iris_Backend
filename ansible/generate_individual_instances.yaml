@@ -43,9 +43,6 @@
         # TODO: groups from clustered instance and machine settings
         ansible_host: "{{ machine.ansible_host }}"
         dc: "{{ clustered_instance.dc }}"
-        simulation_ports:
-          plaintext: "{{ [4500 + i * 2] }}"
-          ssl: "{{ [4500 + i * 2 + 1] }}"
 
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
@@ -109,14 +106,6 @@
         ciphers_tls_v1_3: >-
           {{ (ciphers_tls_v1_3 | default([]) + cipher_profiles[item].ciphers_TLSv1_3) | unique }}
       loop: "{{ cipher.profiles }}"
-
-    - name: Override ports in simulation
-      vars:
-        simulation_frontend:
-          ports: "{{ simulation_ports }}"
-      set_fact:
-        frontend: "{{ frontend | combine(simulation_frontend, recursive=true) }}"
-      when: simulation
 
     - name: Calculate port mapping
       vars:
