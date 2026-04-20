@@ -1,0 +1,37 @@
+---
+# CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
+set_permissions_policy_header:
+  description: |-
+    Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
+  order: 11
+  actions:
+    - http-response set-header Permissions-Policy "geolocation=(), microphone=(), camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+
+set_frame_ancestors:
+  description: |-
+    Set frame ancestors header
+  order: 12
+  actions:
+    - http-response set-header Content-Security-Policy "frame-ancestors https://eprevios.sistemascasa.com"
+
+delete_server_header:
+  description: |-
+    Delete "Server" header
+  order: 13
+  actions:
+    - http-request del-header Server
+
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_sistemascasa_com      !{ ssl_fc }
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0apppl032_sistemascasa_hosting       if pdfprevios_url port_4443
+    - use_backend us2mx0apppl031_sistemascasa_hosting       if eprevios_url port_4443
+    - use_backend webservices_java_produccion               if eprevios_url port_5050

@@ -1,0 +1,83 @@
+---
+# CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
+star_guia-aduanal_com_mx:
+  description: "*.guia-aduanal.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?guia-aduanal\.com\.mx$
+
+star_aduanas-mexico_com_mx:
+  description: "*.aduanas-mexico.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?aduanas-mexico\.com\.mx$
+
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+star_e-casa_com_mx:
+  description: "*.e-casa.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?e-casa\.com\.mx$
+
+star_tlcinfiniti_com_mx:
+  description: "*.tlcinfiniti.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?tlcinfiniti\.com\.mx$
+
+star_pemex-org_mx:
+  description: "*.pemex-org.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?pemex-org\.mx$
+
+port_4443:
+  description: "Destination port of 4443 in the original request"
+  tests:
+    - dst_port 2072
+
+port_4444:
+  description: "Destination port of 4444 in the original request"
+  tests:
+    - dst_port 2076
+
+port_5050:
+  description: "Destination port of 5050 in the original request"
+  tests:
+    - dst_port 2073
+
+port_8080:
+  description: "Destination port of 8080 in the original request"
+  tests:
+    - dst_port 2078
+
+port_8081:
+  description: "Destination port of 8081 in the original request"
+  tests:
+    - dst_port 2079
+
+port_8085:
+  description: "Destinaton port of 8085 in the original request"
+  tests:
+    - dst_port 2070
+
+port_8086:
+  description: "Destination port of 8086 in the original request"
+  tests:
+    - dst_port 2077
+
+port_9001:
+  description: "Destination port of 9001 in the original request"
+  tests:
+    - dst_port 2069
+
+pdfprevios_url:
+  description: "URLs that need to go to python_produccion"
+  tests:
+    - hdr(host) -i pdfprevios.e-casa.com.mx
+    - hdr(host) -i us2-pdfprevios.sistemascasa.com
+
+eprevios_url:
+  description: "URLs that need to go to http_server4"
+  tests:
+    - hdr(host) -i eprevios.sistemascasa.com
+    - hdr(host) -i us2-eprevios.sistemascasa.com

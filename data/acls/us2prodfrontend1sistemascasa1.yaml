@@ -1,0 +1,37 @@
+---
+# CS02301482 - Sistemas Casa HAProxy Configuration - ADUANAS MEX
+star_guia-aduanal_com_mx:
+  description: "*.guia-aduanal.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?guia-aduanal\.com\.mx$
+
+star_aduanas-mexico_com_mx:
+  description: "*.aduanas-mexico.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?aduanas-mexico\.com\.mx$
+
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+star_e-casa_com_mx:
+  description: "*.e-casa.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?e-casa\.com\.mx$
+
+host_server1_url:
+  description: "URLs that need to go to server1"
+  tests:
+    - hdr(host) -i guia-aduanal.com.mx
+    - hdr(host) -i www.guia-aduanal.com.mx
+    - hdr(host) -i aduanas-mexico.com.mx
+    - hdr(host) -i www.aduanas-mexico.com.mx
+    - hdr(host) -i us2-aduanas.sistemascasa.com
+    - hdr(host) -i www.sistemascasa.com
+    - hdr(host) -i sistemascasa.com
+
+host_server12_url:
+  description: "URLs that need to go to host_server12"
+  tests:
+    - hdr(host) -i administrator.e-casa.com.mx

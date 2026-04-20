@@ -1,0 +1,30 @@
+---
+# CS02301485 - Sistemas Casa HAProxy Configuration - CTARNET
+star_e-casa_com_mx:
+  description: "*.e-casa.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?e-casa\.com\.mx$
+
+port_8085:
+  description: "Destinaton port of 8085 in the original request"
+  tests:
+    - dst_port 2070
+
+host_server11_url:
+  description: "URLs that need to go to server11"
+  tests:
+    - hdr(host) -i normativo.e-casa.com.mx
+    - hdr(host) -i tlcinfiniti.com.mx
+    - hdr(host) -i ctarnet.e-casa.com.mx
+    - hdr(host) -i tlcinfiniti.e-casa.com.mx
+    - hdr(host) -i webservicectarnet.e-casa.com.mx
+    - hdr(host) -i us2-webservicectarnet.e-casa.com.mx
+    - hdr(host) -i www.e-casa.com.mx
+    - hdr(host) -i e-casa.com.mx
+    - hdr(host) -i us2-ctarnet.e-casa.com.mx
+
+
+host_server20_url:
+  description: "URLs that need to go to host_server20"
+  tests:
+    - hdr(host) -i movil.sistemascasa.com
