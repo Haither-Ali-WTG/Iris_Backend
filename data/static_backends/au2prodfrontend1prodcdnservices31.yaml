@@ -3794,3 +3794,35 @@ api-map.wisegrid.net:
     - name: w5.au2prod2
       ip: 10.2.214.19
       port: 30400
+
+dps-hub.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: DPS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: AU2WP-SIIS-404A
+      ip: 10.2.69.29
+      port: 80
+    - name: AU2WP-SIIS-404B
+      ip: 10.2.69.30
+      port: 80
+
+dps-hub-api.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: DPS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: AU2WP-SIIS-404A
+      ip: 10.2.69.29
+      port: 80
+    - name: AU2WP-SIIS-404B
+      ip: 10.2.69.30
+      port: 80
