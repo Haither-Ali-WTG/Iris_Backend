@@ -14,7 +14,7 @@ set_frame_options:
     Deny frame options
   order: 11
   actions:
-    - http-repsonse set-header X-Frame-Options DENY
+    - http-response set-header X-Frame-Options DENY
 
 set_permissions_policy_header:
   description: |-
