@@ -23,7 +23,6 @@ host_server11_url:
     - hdr(host) -i e-casa.com.mx
     - hdr(host) -i us2-ctarnet.e-casa.com.mx
 
-
 host_server20_url:
   description: "URLs that need to go to host_server20"
   tests:
