@@ -37,10 +37,10 @@ au-tst.apigw.wtg.ws:
 aap.core.wtg.ws:
   clustered_instances: [au2prodinternal1corpservices35]
   cookie:
-    name: AAPCore
+    name: AAPCORE
   http_health_check:
     enabled: true
-    http_path: /api/gateway/v1/ping/
+    http_path: /api/gateway/v1/ping
   encryption: true
   servers:
     - name: au2co-saap-401
