@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260421.5
-  # Tue Apr 21 01:44:29 UTC 2026 -- Tue Apr 21 11:44:29 AEST 2026
+  # Dante Build Artifact 20260421.7
+  # Tue Apr 21 04:03:20 UTC 2026 -- Tue Apr 21 14:03:20 AEST 2026
   #
-  # Merged PR 48724: Deleted brandshelter
-  # bc21bca3cbab6fcd4a589962c3a93cde4a9d33de
-  dante_build_id: '1675858'
+  # Merged PR 48743: Ansible 13 support (vm template)
+  # 7138896b78495d8d803c10791d11ac07fc6bae6a
+  dante_build_id: '1676038'
 
-  # virgil 20260421.8
-  # Tue Apr 21 02:14:10 UTC 2026 -- Tue Apr 21 12:14:10 AEST 2026
+  # virgil 20260421.11
+  # Tue Apr 21 03:40:22 UTC 2026 -- Tue Apr 21 13:40:22 AEST 2026
   #
-  # Merged PR 48737: updated ACLS for user-aim-wisebeat-proc to access staging topics
-  # ccd0542a3513176ebbd26e08bd68824d792ab2d7
-  virgil_build_id: '1675900'
+  # Merged PR 48755: dante disable apex26 which is a test switch
+  # a2e0272f6633c232103857f8215ab7e3b0e5c3a3
+  virgil_build_id: '1675997'
 
   # sqlbilling 20260420.4
   # Mon Apr 20 11:46:38 UTC 2026 -- Mon Apr 20 21:46:38 AEST 2026
