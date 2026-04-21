@@ -1,2 +1,8 @@
 ---
-{}
+host_gtg-excargo:
+  description: "excargocust.gtgs.net exchou.gtgs.net myexcargo.com www.myexcargo.com"
+  tests:
+    - hdr(host) -i excargocust.gtgs.net
+    - hdr(host) -i exchou.gtgs.net
+    - hdr(host) -i myexcargo.com
+    - hdr(host) -i www.myexcargo.com

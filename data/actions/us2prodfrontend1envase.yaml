@@ -1,2 +1,7 @@
 ---
-{}
+backend_selection:
+  description: |-
+    Handle backend selection for Envase frontends
+  order: 80
+  actions:
+    - use_backend gtg-excargo if host_gtg-excargo
