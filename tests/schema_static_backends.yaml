@@ -34,13 +34,13 @@ server:
 ---
 health_check_off:
   enabled: const(False)
-  http_path: regex('^(/|(/[a-zA-Z0-9?=&_.-]+)+)$', name='health check path', required=False)
+  http_path: regex('^(/|(/[a-zA-Z0-9?=&_.-]+)+/?)$', name='health check path', required=False)
   xforwardedproto_header: bool(required=False)
   check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)
   method: enum('GET', 'HEAD', required=False)
 health_check_on:
   enabled: const(True)
-  http_path: regex('^(/|(/[a-zA-Z0-9?=&_.-]+)+)$', name='health check path')
+  http_path: regex('^(/|(/[a-zA-Z0-9?=&_.-]+)+/?)$', name='health check path')
   xforwardedproto_header: bool(required=False)
   check_expect: regex('^([0-9]{3}[|]?)+$', name='health check status code', required=False)
   method: enum('GET', 'HEAD', required=False)
