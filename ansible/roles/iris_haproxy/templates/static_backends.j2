@@ -40,21 +40,12 @@ errorfile {{ sorry_page.code }} /etc/haproxy/sorry_pages/{{ sorry_page.file }}
 {% endif -%}
 
 {%   for server in backend.servers %}
-server {{ server.name }}
-{%-    if simulation %} {{ ansible_host }}:
-{%-      if backend.encryption | default(false) -%}
-8082 check
-{%       else -%}
-8081 check
-{%       endif -%}
-{%-    else %}
- {{ server.ip }}:{{ server.port }}
-{%-      if server.check_port is defined %}
+server {{ server.name }} {{ server.ip }}:{{ server.port }}
+{%-    if server.check_port is defined %}
  check port {{ server.check_port }} {{ server.settings | default('') }}
-{%-      else %}
+{%-    else %}
  {{ server.settings | default('check') }}
-{%-      endif %}
-{%     endif +%}
+{%-    endif +%}
 {%   endfor %}
 
 {% endif %}
