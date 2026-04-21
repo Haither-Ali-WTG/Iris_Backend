@@ -117,12 +117,6 @@ listen stats
 bind :{{ all_port_map[stats.ports.web] }}
 # port {{ all_port_map[stats.ports.web] }} mapped to {{ stats.ports.web }} on host
 mode http
-
-# Force light mode on stats page regardless of browser preference
-acl is_light_css path /stats-light.css
-http-request return status 200 content-type "text/css" string "html{color-scheme:light only!important}" if is_light_css
-http-after-response add-header Link "</stats-light.css>;rel=stylesheet" unless { path /stats-light.css } || { path /metrics }
-
 stats enable
 stats show-node
 stats show-desc {{ clustered_instance_name }} on {{ machine_name }} ({{ ansible_host }})
