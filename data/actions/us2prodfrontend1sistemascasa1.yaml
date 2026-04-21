@@ -6,12 +6,12 @@ transport_security:  # This is meant to override the default in common.yaml
   order: 2
   actions:
     - http-response set-header X-Content-Type-Options nosniff
-    - http-response set-header Strict-Transport-Security max-age=63072000;\ includeSubdomains;\ preload
-    - http-response set-header X-XSS-Protection "1\; mode=block"
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=63072000;\ includeSubdomains;\ preload"
 
 set_frame_options:
   description: |-
-    Deny frame options
+    Prevent loading pages in a frame
   order: 11
   actions:
     - http-response set-header X-Frame-Options DENY

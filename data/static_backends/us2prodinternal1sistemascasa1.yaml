@@ -1,6 +1,6 @@
 ---
 us2mx0apppw011-internal.sistemascasa.hosting:
-  clustered_instances: [us2prodinternal1sistemascasa]
+  clustered_instances: [us2prodinternal1sistemascasa1]
   full_override: |
     backend us2mx0apppw011-internal_sistemascasa_hosting
     option forwardfor
@@ -10,7 +10,7 @@ us2mx0apppw011-internal.sistemascasa.hosting:
     server us2mx0apppw011 10.16.106.6:9001 check cookie https9001
 
 us2mx0adml042.sistemascasa.hosting:
-  clustered_instances: [us2prodinternal1sistemascasa]
+  clustered_instances: [us2prodinternal1sistemascasa1]
   full_override: |
     backend us2mx0adml042_sistemascasa_hosting
     mode http
@@ -20,7 +20,7 @@ us2mx0adml042.sistemascasa.hosting:
     server us2mx0adml042 10.16.106.20:80 check
 
 us2mx0gral031.sistemascasa.hosting:
-  clustered_instances: [us2prodinternal1sistemascasa]
+  clustered_instances: [us2prodinternal1sistemascasa1]
   full_override: |
     backend us2mx0gral031_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -29,7 +29,7 @@ us2mx0gral031.sistemascasa.hosting:
     server us2mx0gral031 10.16.106.14:9070 check
 
 us2mx0pgabl031.sistemascasa.hosting:
-  clustered_instances: [us2prodinternal1sistemascasa]
+  clustered_instances: [us2prodinternal1sistemascasa1]
   full_override: |
     backend us2mx0pgabl031_sistemascasa_hosting
     mode http

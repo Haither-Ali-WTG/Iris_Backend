@@ -1,5 +1,14 @@
 ---
 # CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
+transport_security:
+  description: |-
+    Transport security options
+  order: 2
+  actions:
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=31536000;\ includeSubdomains;\ preload"
+
 set_permissions_policy_header:
   description: |-
     Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
@@ -15,7 +24,7 @@ set_frame_ancestors:
     Set frame ancestors header
   order: 12
   actions:
-    - http-response set-header Content-Security-Policy "frame-ancestors https://eprevios.sistemascasa.com"
+    - http-response set-header Content-Security-Policy "frame-ancestors https://eprevios.sistemascasa.com:4443"
 
 delete_server_header:
   description: |-

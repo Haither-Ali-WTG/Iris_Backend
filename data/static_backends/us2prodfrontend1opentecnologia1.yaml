@@ -1,6 +1,6 @@
 ---
 us2co0ocl0000.opentecnologia.hosting:
-  clustered_instances: [us2prodfrontend1opentecnologia]
+  clustered_instances: [us2prodfrontend1opentecnologia1]
   http_health_check:
     enabled: false
   servers:

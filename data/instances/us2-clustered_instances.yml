@@ -786,7 +786,7 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
-    us2prodinternal1sistemascasa:
+    us2prodinternal1sistemascasa1:
       # Sistemas Casa instance for internal services
       dc: US2
       frontend:
@@ -811,7 +811,7 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
-    us2prodfrontend1opentecnologia:
+    us2prodfrontend1opentecnologia1:
       # General Opentecnologia instance
       dc: US2
       frontend:

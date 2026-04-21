@@ -25,50 +25,15 @@ star_tlcinfiniti_com_mx:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?tlcinfiniti\.com\.mx$
 
-star_pemex-org_mx:
-  description: "*.pemex-org.mx"
-  tests:
-    - hdr(host) -m reg -i ^([^\.]+\.)?pemex-org\.mx$
-
 port_4443:
   description: "Destination port of 4443 in the original request"
   tests:
-    - dst_port 2072
-
-port_4444:
-  description: "Destination port of 4444 in the original request"
-  tests:
-    - dst_port 2076
+    - dst_port 2066
 
 port_5050:
   description: "Destination port of 5050 in the original request"
   tests:
-    - dst_port 2073
-
-port_8080:
-  description: "Destination port of 8080 in the original request"
-  tests:
-    - dst_port 2078
-
-port_8081:
-  description: "Destination port of 8081 in the original request"
-  tests:
-    - dst_port 2079
-
-port_8085:
-  description: "Destinaton port of 8085 in the original request"
-  tests:
-    - dst_port 2070
-
-port_8086:
-  description: "Destination port of 8086 in the original request"
-  tests:
-    - dst_port 2077
-
-port_9001:
-  description: "Destination port of 9001 in the original request"
-  tests:
-    - dst_port 2069
+    - dst_port 2067
 
 pdfprevios_url:
   description: "URLs that need to go to python_produccion"

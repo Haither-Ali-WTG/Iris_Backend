@@ -1,5 +1,14 @@
 ---
 # CS02301488 - Sistemas Casa HAProxy Configuration - PEMEX
+transport_security:
+  description: |-
+    Transport security options
+  order: 2
+  actions:
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=31536000;\ includeSubdomains;\ preload"
+
 set_permissions_policy_header:
   description: |-
     Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
@@ -10,10 +19,17 @@ set_permissions_policy_header:
       camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
       autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
 
+set_frame_ancestors:
+  description: |-
+    Set frame ancestors
+  order: 12
+  actions:
+    - http-response set-header Content-Security-Policy "frame-ancestors https://pemex-org.mx"
+
 remove_server_header:
   description: |-
     Remove "Server" header
-  order: 12
+  order: 13
   actions:
     - http-response del-header Server
 
