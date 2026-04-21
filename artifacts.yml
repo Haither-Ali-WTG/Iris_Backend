@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260421.4
-  # Tue Apr 21 01:01:18 UTC 2026 -- Tue Apr 21 11:01:18 AEST 2026
+  # Dante Build Artifact 20260421.5
+  # Tue Apr 21 01:44:29 UTC 2026 -- Tue Apr 21 11:44:29 AEST 2026
   #
-  # Merge pull request 48703 from dante_artifact_upgrade into master
-  # da0157aa0758b0cbd6b5eaef4ecac3d0890228da
-  dante_build_id: '1675814'
+  # Merged PR 48724: Deleted brandshelter
+  # bc21bca3cbab6fcd4a589962c3a93cde4a9d33de
+  dante_build_id: '1675858'
 
-  # virgil 20260421.5
-  # Mon Apr 20 23:01:35 UTC 2026 -- Tue Apr 21 09:01:35 AEST 2026
+  # virgil 20260421.8
+  # Tue Apr 21 02:14:10 UTC 2026 -- Tue Apr 21 12:14:10 AEST 2026
   #
-  # Merged PR 48598: DC-IPRange-Update
-  # c44c491ac53ec7e85a49df07551a9acd3c872cc0
-  virgil_build_id: '1675664'
+  # Merged PR 48737: updated ACLS for user-aim-wisebeat-proc to access staging topics
+  # ccd0542a3513176ebbd26e08bd68824d792ab2d7
+  virgil_build_id: '1675900'
 
   # sqlbilling 20260420.4
   # Mon Apr 20 11:46:38 UTC 2026 -- Mon Apr 20 21:46:38 AEST 2026
