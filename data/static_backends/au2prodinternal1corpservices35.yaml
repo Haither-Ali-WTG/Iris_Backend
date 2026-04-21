@@ -34,6 +34,24 @@ au-tst.apigw.wtg.ws:
       ip: 10.2.215.16
       port: 30100
 
+aap.core.wtg.ws:
+  clustered_instances: [au2prodinternal1corpservices35]
+  cookie:
+    name: AAPCORE
+  http_health_check:
+    enabled: true
+    http_path: /api/gateway/v1/ping/
+  encryption: true
+  servers:
+    - name: au2co-saap-401
+      ip: 10.2.94.11
+      port: 443
+      settings: check ssl verify none
+    - name: au2co-saap-402
+      ip: 10.2.94.12
+      port: 443
+      settings: check ssl verify none
+
 au2corprdg.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
