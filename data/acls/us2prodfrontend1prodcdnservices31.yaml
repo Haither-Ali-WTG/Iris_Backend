@@ -187,6 +187,7 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^apps\.triniumtech\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?tarictrans\.(es|com)$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?matchboxexchange\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
 
 # Path-based ACLs for security
 umbraco_denied_path:
@@ -722,3 +723,18 @@ cmb-us_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -i cmb-us.wisegrid.net
     - hdr(host),field(1,:) -i cmb.wisegrid.net
+
+www_inobiz_se:
+  description: "www.inobiz.se"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?inobiz\.se$
+
+bolero_net_urls:
+  description: "bolero.net and www.bolero.net"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?bolero\.net$
+
+e2open_com_urls:
+  description: "e2open.com and www.e2open.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
