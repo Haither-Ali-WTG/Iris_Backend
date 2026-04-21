@@ -40,7 +40,6 @@ ssl_redirects:
     Do SSL redirects
   order: 79
   actions:
-    - redirect scheme https if star_sistemascasa_com      !{ ssl_fc }
     - redirect scheme https if star_e-casa_com_mx         !{ ssl_fc }
 
 backend_selection:
