@@ -1891,3 +1891,31 @@ cwcgateway-prod.wisegrid.net:
       ip: 10.4.67.110
       port: 9001
       settings: backup
+
+e2open.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.e2open.com:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
