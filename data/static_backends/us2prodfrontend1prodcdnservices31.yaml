@@ -1891,3 +1891,25 @@ cwcgateway-prod.wisegrid.net:
       ip: 10.4.67.110
       port: 9001
       settings: backup
+
+www.e2open.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_e2open_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host www.e2open.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+e2open.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend e2open_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri /healthcheck ver HTTP/1.1 hdr host e2open.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check

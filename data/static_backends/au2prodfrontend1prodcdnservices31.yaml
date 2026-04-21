@@ -3827,6 +3827,34 @@ dps-hub-api.wisegrid.net:
       ip: 10.2.69.30
       port: 80
 
+e2open.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.e2open.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
 docs.wisetechacademy.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:

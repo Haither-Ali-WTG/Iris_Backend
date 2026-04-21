@@ -219,6 +219,7 @@ access_control_deny:
     - http-request deny if !wtg_src umbraco_denied_path www_bolero_net
     - http-request deny if !wtg_src umbraco_denied_path bolero_net
     - http-request deny if !wtg_src admin_denied_path www_inobiz_se
+    - http-request deny if !wtg_src umbraco_denied_path e2open_com_urls
 
 external_service_redirects:
   description: |-

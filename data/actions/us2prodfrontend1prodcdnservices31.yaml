@@ -93,6 +93,9 @@ umbraco_admin_security:
     - http-request deny if !wtg_src umbraco_denied_path singeste_com
     - http-request deny if !wtg_src umbraco_denied_path www_blumeglobal_com
     - http-request deny if !wtg_src umbraco_denied_path blumeglobal_com
+    - http-request deny if !wtg_src umbraco_denied_path bolero_net_urls
+    - http-request deny if !wtg_src admin_denied_path www_inobiz_se
+    - http-request deny if !wtg_src umbraco_denied_path e2open_com_urls
 
 # Special access restrictions
 special_access_restrictions:

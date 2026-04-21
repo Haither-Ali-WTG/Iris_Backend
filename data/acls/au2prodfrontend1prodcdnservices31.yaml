@@ -744,6 +744,7 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?openits\.co$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
 
 wpad_wisetechglobal_com_host:
   description: "WPAD proxy configuration host"
@@ -862,6 +863,11 @@ excluded_from_redirect_path:
     exclude for http to https redirect for koreantscallback
   tests:
     - hdr(host),field(1,:) -m reg -i ^koreantscallback\.wisegrid\.net$
+
+e2open_com_urls:
+  description: "e2open.com and www.e2open.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
 
 star_wisetechacademy_com:
   description: "*.wisetechacademy.com"
