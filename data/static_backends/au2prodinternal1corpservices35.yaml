@@ -40,7 +40,7 @@ aap.core.wtg.ws:
     name: AAPCORE
   http_health_check:
     enabled: true
-    http_path: /api/gateway/v1/ping
+    http_path: /api/gateway/v1/ping/
   encryption: true
   servers:
     - name: au2co-saap-401
