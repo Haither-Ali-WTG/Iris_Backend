@@ -1,4 +1,13 @@
 ---
+- name: Setup localhost for S3
+  hosts: localhost
+  tasks:
+    - name: Setup S3 storage connection
+      include_role:
+        name: pure_connection_setup
+      vars:
+        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
+
 - name: Collect sites_data
   hosts: clustered_instances
   gather_facts: no
@@ -13,7 +22,8 @@
           include_role:
             name: collect_sites
           vars:
-            upload_iis_data: false
+            upload_iis_data: true
+            use_s3_cache: true
 
         - name: Find all data files
           ansible.builtin.find:

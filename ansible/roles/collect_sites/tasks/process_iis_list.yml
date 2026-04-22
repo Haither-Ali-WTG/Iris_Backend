@@ -24,6 +24,13 @@
   register: collect_sites_data_output
   when: iis_servers | default([]) | length > 0
 
+- name: Parse collect sites data output
+  set_fact:
+    collect_sites_result: "{{ collect_sites_data_output.stdout | from_json }}"
+  when:
+    - collect_sites_data_output is defined
+    - collect_sites_data_output is not skipped
+
 - name: Create failed_collection directory
   delegate_to: localhost
   file:
@@ -40,16 +47,18 @@
   when:
     - collect_sites_data_output is not skipped
     - collect_sites_data_output is defined
-    - (collect_sites_data_output.stdout | from_json).has_errors
+    - collect_sites_result.has_errors
 
 - name: Output collect sites data output
   vars:
     info:
       log: "{{ collect_sites_data_output.stderr_lines }}"
-      result: "{{ collect_sites_data_output.stdout | from_json }}"
+      result: "{{ collect_sites_result }}"
   debug:
     var: info
-  when: collect_sites_data_output is not skipped
+  when:
+    - collect_sites_data_output is defined
+    - collect_sites_data_output is not skipped
 
 - name: Upload IIS data to S3
   command: >-
@@ -62,5 +71,48 @@
   when:
     - collect_sites_data_output is not skipped
     - collect_sites_data_output is defined
-    - (collect_sites_data_output.stdout | from_json).wrote_files
+    - collect_sites_result.wrote_files
     - upload_iis_data | default(true)
+
+- name: Download cached IIS data from S3 for failed servers
+  command: >-
+    aws --endpoint-url=https://{{ s3_host }}
+    s3 cp
+    {{ s3_iris_bucket }}{{ s3_folder | default(default_s3_folder) }}/{{ inventory_hostname }}/{{ item }}
+    iis_sites/{{ inventory_hostname }}/{{ item }}
+  delegate_to: localhost
+  register: s3_cache_downloads
+  failed_when: false
+  changed_when: false
+  loop: >-
+    {{
+      collect_sites_result.results
+      | selectattr('status', 'equalto', 'error')
+      | map(attribute='server')
+      | list
+    }}
+  loop_control:
+    label: "{{ item }}"
+  when:
+    - collect_sites_data_output is defined
+    - collect_sites_data_output is not skipped
+    - collect_sites_result.has_errors
+    - use_s3_cache | default(false)
+
+- name: Report IIS cache download failures
+  vars:
+    failed_cache_downloads: >-
+      {{
+        s3_cache_downloads.results
+        | selectattr('rc', 'ne', 0)
+        | map(attribute='item')
+        | list
+      }}
+  debug:
+    msg: >-
+      Failed to download IIS cache from S3 for {{ inventory_hostname }}:
+      {{ failed_cache_downloads | join(', ') }}
+  when:
+    - s3_cache_downloads is defined
+    - s3_cache_downloads.results is defined
+    - (s3_cache_downloads.results | selectattr('rc', 'ne', 0) | list | length) > 0
