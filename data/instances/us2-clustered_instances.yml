@@ -698,3 +698,144 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa1:
+      # CS02301482 - Sistemas Casa ADUANAS MEX
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2041]
+          ssl: [2042]
+      stats:
+        ports:
+          web: 2043
+          socket: 2044
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa2:
+      # CS02301485 - Sistemas Casa CTARNET
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2047]
+          ssl:
+            - 2054  # :443
+            - 2055  # :8085
+      stats:
+        ports:
+          web: 2058
+          socket: 2059
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa3:
+      # CS02301486 - Sistemas Casa EPREVIOS
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2064]
+          ssl:
+            - 2065  # :443
+            - 2066  # :4443
+            - 2067  # :5050
+      stats:
+        ports:
+          web: 2068
+          socket: 2069
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa4:
+      # CS02301488 - Sistemas Casa PEMEX
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2070]
+          ssl:
+            - 2071  # :443
+            - 2072  # :8085
+            - 2073  # :4444
+            - 2074  # :8086
+            - 2075  # :8080
+            - 2076  # :8081
+      stats:
+        ports:
+          web: 2077
+          socket: 2078
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodinternal1sistemascasa1:
+      # Sistemas Casa instance for internal services
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2079]
+          ssl:
+            - 2080  # :443
+            - 2081  # :40
+            - 2082  # :7898
+            - 2083  # :6698
+      stats:
+        ports:
+          web: 2084
+          socket: 2085
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1opentecnologia1:
+      # General Opentecnologia instance
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2086]
+          ssl: [2087]
+      stats:
+        ports:
+          web: 2088
+          socket: 2089
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4

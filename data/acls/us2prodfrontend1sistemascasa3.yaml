@@ -1,0 +1,48 @@
+---
+# CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
+star_guia-aduanal_com_mx:
+  description: "*.guia-aduanal.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?guia-aduanal\.com\.mx$
+
+star_aduanas-mexico_com_mx:
+  description: "*.aduanas-mexico.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?aduanas-mexico\.com\.mx$
+
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+star_e-casa_com_mx:
+  description: "*.e-casa.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?e-casa\.com\.mx$
+
+star_tlcinfiniti_com_mx:
+  description: "*.tlcinfiniti.com.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?tlcinfiniti\.com\.mx$
+
+port_4443:
+  description: "Destination port of 4443 in the original request"
+  tests:
+    - dst_port 2066
+
+port_5050:
+  description: "Destination port of 5050 in the original request"
+  tests:
+    - dst_port 2067
+
+pdfprevios_url:
+  description: "URLs that need to go to python_produccion"
+  tests:
+    - hdr(host) -i pdfprevios.e-casa.com.mx
+    - hdr(host) -i us2-pdfprevios.sistemascasa.com
+
+eprevios_url:
+  description: "URLs that need to go to http_server4"
+  tests:
+    - hdr(host) -i eprevios.sistemascasa.com
+    - hdr(host) -i us2-eprevios.sistemascasa.com

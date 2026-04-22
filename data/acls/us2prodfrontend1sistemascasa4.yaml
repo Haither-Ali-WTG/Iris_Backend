@@ -1,0 +1,37 @@
+---
+# CS02301488 - Sistemas Casa HAProxy Configuration - PEMEX
+star_pemex-org_mx:
+  description: "*.pemex-org.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?pemex-org\.mx$
+
+port_8085:
+  description: "Destinaton port of 8085 in the original request"
+  tests:
+    - dst_port 2070
+
+port_4444:
+  description: "Destination port of 4444 in the original request"
+  tests:
+    - dst_port 2076
+
+port_8086:
+  description: "Destination port of 8086 in the original request"
+  tests:
+    - dst_port 2077
+
+port_8080:
+  description: "Destination port of 8080 in the original request"
+  tests:
+    - dst_port 2078
+
+port_8081:
+  description: "Destination port of 8081 in the original request"
+  tests:
+    - dst_port 2079
+
+pemex_url:
+  description: "URLs t hat need to go to server10"
+  tests:
+    - hdr(host) -i pemex-org.mx
+    - hdr(host) -i us2.pemex-org.mx

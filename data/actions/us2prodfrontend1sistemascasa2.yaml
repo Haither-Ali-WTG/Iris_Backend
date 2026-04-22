@@ -1,0 +1,51 @@
+---
+# CS02301485 - Sistemas Casa HAProxy Configuration - CTARNET
+transport_security:  # This is meant to override the default in common.yaml
+  description: |-
+    Modify transport security options based on previous instances
+  order: 2
+  actions:
+    - http-response set-header Strict-Transport-Security max-age=63072000;\ includeSubdomains;\ preload
+    - http-response set-header X-XSS-Protection "1\; mode=block"
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+
+set_permissions_policy_header:
+  description: |-
+    Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
+  order: 12
+  actions:
+    - >-
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(),
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
+      autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+
+set_content_security_policy:
+  description: |-
+    Limit frame ancestors
+  order: 13
+  actions:
+    - >-
+      http-response set-header Content-Security-Policy "frame-ancestors https://www.claa.mx
+      https://www.tlcasociados.com.mx https://www.casaonline.mx https://casaonline.mx
+      https://aduanas-mexico.com.mx https://www.tlcasociados.com.mx https://www.claa.mx
+      https://pemex-org.mx:8080 https://pemex-org.mx:8081 https://chapela.sistemascasa.com:8090
+      https://transpheric.sistemascasa.com:8081 https://ctraweb-lamx.sistemascasa.com:8082
+      https://ctraweb-apycsa.sistemascasa.com:8085 https://ctraweb-serviport.sistemascasa.com:9090
+      https://ademsa.sistemascasa.com:8080 https://rali-ctraweb.sistemascasa.com:8083"
+    - http-response del-header Server
+
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_e-casa_com_mx         !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0adml043_sistemascasa_hosting        if host_server11_url
+    - use_backend us2mx0bdpl043_sistemascasa_hosting        if host_server20_url port_8085

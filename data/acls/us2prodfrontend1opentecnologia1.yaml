@@ -1,0 +1,12 @@
+---
+star_openits_io:
+  description: "*.openits.io"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?openits\.io$
+
+us2co0ocl0000_url:
+  description: "URLs that need to go to us2co0ocl0000"
+  tests:
+    - hdr(host) -i devoc0.openits.io      # These first 3 URLs are from CS02301497
+    - hdr(host) -i mvcwtgoc0.openits.io
+    - hdr(host) -i wtgoc0.openits.io

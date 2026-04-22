@@ -1,0 +1,51 @@
+---
+# CS02301488 - Sistemas Casa HAProxy Configuration - PEMEX
+transport_security:
+  description: |-
+    Transport security options
+  order: 2
+  actions:
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=31536000;\ includeSubdomains;\ preload"
+
+set_permissions_policy_header:
+  description: |-
+    Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
+  order: 11
+  actions:
+    - >-
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(),
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
+      autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+
+set_frame_ancestors:
+  description: |-
+    Set frame ancestors
+  order: 12
+  actions:
+    - http-response set-header Content-Security-Policy "frame-ancestors https://pemex-org.mx"
+
+remove_server_header:
+  description: |-
+    Remove "Server" header
+  order: 13
+  actions:
+    - http-response del-header Server
+
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_pemex-org_mx   !{ ssl_fc }
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0ptl00001-8085_sistemascasa_hosting  if pemex_url port_8085
+    - use_backend us2mx0tsw00001_sistemascasa_hosting       if pemex_url port_4444
+    - use_backend us2mx0ptl00001-8086_sistemascasa_hosting  if pemex_url port_8086
+    - use_backend us2mx0cpw00001_sistemascasa_hosting       if pemex_url port_8080
+    - use_backend us2mx0ctw00001_sistemascasa_hosting       if pemex_url port_8081
