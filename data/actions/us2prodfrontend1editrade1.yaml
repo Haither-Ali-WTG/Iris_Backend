@@ -1,0 +1,14 @@
+---
+ssl_redirects:
+  description: |-
+    Do SSL redirects for editrade.cl
+  order: 79
+  actions:
+    - redirect scheme https if star_editrade_cl !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend canasta-poc_ocp_wtg_ws if test-canasta_url
