@@ -76,8 +76,6 @@
   loop: "{{ (check_all_certs | default(true)) | ternary(updated_certs, updated_certs[:1]) }}"
   when: "item.key_vault_name == 'kv-wtg-iris-prod'"
 
-# TODO: Get certs from tests list for the fakeserver
-# star-wisetechglobal-com is used by tests in the fakeserver
 - name: Download the certificate - CMS
   include_tasks: download_and_save_cms_certificate.yml
   vars:
