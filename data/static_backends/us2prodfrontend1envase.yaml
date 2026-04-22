@@ -3,10 +3,8 @@ gtg-excargo:
   clustered_instances: [us2prodfrontend1envase]
   full_override: |
     backend gtg-excargo
-    option httpchk HEAD /
-    fullconn 10000
-    balance source
+    option httpchk
+    http-check send meth HEAD uri /
+    http-check expect rstatus 200
     default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4 ssl
-    option tcp-check
-    tcp-check connect
     server gtg-excargo 10.4.218.91:443 check verify none sni req.hdr(host)
