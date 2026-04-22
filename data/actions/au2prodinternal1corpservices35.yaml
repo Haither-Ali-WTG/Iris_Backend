@@ -26,3 +26,4 @@ au2prod_ocp_backend_selection:
   order: 80
   actions:
     - use_backend au2prod1-prodinternalcorp-ingress if custom_internal_corp_au2prod1_ocp_wtg_ws
+    - use_backend au2prod1-prodinternalcorp-ingress if star_k8s_sand_wtg_zone
