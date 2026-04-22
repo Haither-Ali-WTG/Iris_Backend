@@ -7,12 +7,12 @@ variables:
   # 7138896b78495d8d803c10791d11ac07fc6bae6a
   dante_build_id: '1676038'
 
-  # virgil 20260421.14
-  # Tue Apr 21 06:24:11 UTC 2026 -- Tue Apr 21 16:24:11 AEST 2026
+  # virgil 20260422.11
+  # Wed Apr 22 03:33:38 UTC 2026 -- Wed Apr 22 13:33:38 AEST 2026
   #
-  # Merged PR 48780: Update AAP DNS to point to IRIS
-  # 4e8c1c90a739bb76b86f7cd01b25ed0c7c26ff86
-  virgil_build_id: '1676170'
+  # Merged PR 48818: vcf-gorder-gw-setup
+  # 21f4f0c7e3d1e2c8d00ac885dcdae51f3c6d7257
+  virgil_build_id: '1677019'
 
   # sqlbilling 20260421.2
   # Tue Apr 21 10:07:24 UTC 2026 -- Tue Apr 21 20:07:24 AEST 2026
