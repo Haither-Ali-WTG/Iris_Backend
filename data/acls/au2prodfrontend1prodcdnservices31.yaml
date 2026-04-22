@@ -868,3 +868,8 @@ e2open_com_urls:
   description: "e2open.com and www.e2open.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
+
+star_wisetechacademy_com:
+  description: "*.wisetechacademy.com"
+  tests:
+    - hdr(host),field(1,:),lower -m reg -i ^([^\.]+\.)?wisetechacademy\.com$
