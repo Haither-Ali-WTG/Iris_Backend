@@ -850,11 +850,11 @@ clustered_instances:
           ssl: [2091]
       stats:
         ports:
-          web: 
-          socket: 
+          web: 2092
+          socket: 2093
       machine_cluster: us2-prod-frontend-1
-      iis_servers: [2092]
-      certificates: [2093]
+      iis_servers: []
+      certificates: []
       cipher:
         profiles:
           - best_practice_2023
