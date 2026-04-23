@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260421.7
-  # Tue Apr 21 04:03:20 UTC 2026 -- Tue Apr 21 14:03:20 AEST 2026
+  # Dante Build Artifact 20260423.1
+  # Thu Apr 23 01:21:10 UTC 2026 -- Thu Apr 23 11:21:10 AEST 2026
   #
-  # Merged PR 48743: Ansible 13 support (vm template)
-  # 7138896b78495d8d803c10791d11ac07fc6bae6a
-  dante_build_id: '1676038'
+  # Merge pull request 48756 from dante_artifact_upgrade into master
+  # 2f68e622e642a897c950f11c7db3b24332efd2cc
+  dante_build_id: '1677880'
 
-  # virgil 20260422.11
-  # Wed Apr 22 03:33:38 UTC 2026 -- Wed Apr 22 13:33:38 AEST 2026
+  # virgil 20260423.6
+  # Thu Apr 23 00:25:16 UTC 2026 -- Thu Apr 23 10:25:16 AEST 2026
   #
-  # Merged PR 48818: vcf-gorder-gw-setup
-  # 21f4f0c7e3d1e2c8d00ac885dcdae51f3c6d7257
-  virgil_build_id: '1677019'
+  # Merged PR 48872: dante disable apex25 which is a test switch
+  # 661fde6058142dbaf076c95cc0095392469c7722
+  virgil_build_id: '1677812'
 
-  # sqlbilling 20260422.2
-  # Wed Apr 22 10:24:43 UTC 2026 -- Wed Apr 22 20:24:43 AEST 2026
+  # sqlbilling 20260423.2
+  # Thu Apr 23 00:43:37 UTC 2026 -- Thu Apr 23 10:43:37 AEST 2026
   #
-  # Merged PR 48851: AddAndRemoveSQLBilling IPs US2
-  # f39185d760c2a70ad8afec44096f37e076c7208c
-  sqlbilling_build_id: '1677289'
+  # Merged PR 48868: Remove incorrect IP from RE5DXB
+  # 8dfd2aa25cdd8c99bc2f15370ce8a12561e0c831
+  sqlbilling_build_id: '1677845'
