@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260423.2
-  # Thu Apr 23 04:40:49 UTC 2026 -- Thu Apr 23 14:40:49 AEST 2026
+  # Dante Build Artifact 20260423.3
+  # Thu Apr 23 08:21:04 UTC 2026 -- Thu Apr 23 18:21:04 AEST 2026
   #
-  # Merge pull request 48893 from dante_artifact_upgrade into master
-  # f9280b13f6d36309e614c358f930e63b2bd65a20
-  dante_build_id: '1678052'
+  # Merge pull request 48921 from dante_artifact_upgrade into master
+  # fdaf69076550ee4545550b84c2c70031fa3d647c
+  dante_build_id: '1678244'
 
-  # virgil 20260423.9
-  # Thu Apr 23 03:45:08 UTC 2026 -- Thu Apr 23 13:45:08 AEST 2026
+  # virgil 20260423.14
+  # Thu Apr 23 07:31:03 UTC 2026 -- Thu Apr 23 17:31:03 AEST 2026
   #
-  # Merged PR 48040: SSH Key Update – Revoke Former Employee Access & Add New Key
-  # d09a65f1caad3779fa6ef623af3187b1b7272352
-  virgil_build_id: '1677992'
+  # Merged PR 48919: added new topics for ocm-be-inttra
+  # 2ae182ab95436d4d6162e5f31078cb8392e1ef76
+  virgil_build_id: '1678206'
 
   # sqlbilling 20260423.2
   # Thu Apr 23 00:43:37 UTC 2026 -- Thu Apr 23 10:43:37 AEST 2026
