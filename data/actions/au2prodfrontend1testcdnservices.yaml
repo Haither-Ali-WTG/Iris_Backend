@@ -31,16 +31,6 @@ cww_nonprd_backend:
   actions:
     - use_backend au_cww-nonprd_wisegrid_net-catchall if star_cww-nonprd_wisegrid_net
 
-cww_wisetechglobal_com_backend:
-  description: |-
-    Direct requests for CargoWise Web Corp sites to the CWW catchall backend
-  order: 80
-  actions:
-    - >-
-      use_backend au_cww_wisetechglobal_com-catchall if
-      { hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?cww\.wisetechglobal\.com$ }
-    - use_backend au_cww_wisetechglobal_com-catchall if { hdr(host),field(1,:) -i ediprod.cw.wisetechglobal.com }
-
 app_test_borderwise_backend:
   description: |-
     Direct regional requests for app.borderwise.com to the app borderwise backend

@@ -65,35 +65,6 @@ staging-au.identity.wisetechglobal.com-s2s:
     server au2wt-sidi-501a 10.2.139.11:3005 check ssl
     server au2wt-sidi-501b 10.2.139.12:3005 check ssl
 
-au.cww.wisetechglobal.com-catchall:
-  clustered_instances: [au2prodfrontend1testcdnservices]
-  full_override: |
-    backend au_cww_wisetechglobal_com-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    default-server agent-check agent-port 8098
-    server AU2CO-SBLZ-410 10.2.71.30:80
-    server AU2CO-SBLZ-411 10.2.71.31:80
-    server AU2CO-SBLZ-412 10.2.71.32:80
-    server AU2CO-SBLZ-413 10.2.71.33:80
-    server AU2CO-SBLZ-414 10.2.71.34:80
-    server AU2CO-SBLZ-415 10.2.71.35:80
-    server AU2CO-SBLZ-416 10.2.71.36:80
-    server AU2CO-SBLZ-417 10.2.71.37:80
-    server AU2CO-SBLZ-418 10.2.71.38:80
-    server AU2CO-SBLZ-010 10.2.71.40:80
-    server AU2CO-SBLZ-011 10.2.71.41:80
-    server AU2CO-SBLZ-012 10.2.71.42:80
-    server AU2CO-SBLZ-013 10.2.71.43:80
-    server AU2CO-SBLZ-014 10.2.71.44:80
-    server AU2CO-SBLZ-015 10.2.71.45:80
-    server AU2CO-SBLZ-016 10.2.71.46:80
-    server AU2CO-SBLZ-017 10.2.71.47:80
-    server AU2CO-SBLZ-018 10.2.71.48:80
-
 accounting-d365.xttest.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
