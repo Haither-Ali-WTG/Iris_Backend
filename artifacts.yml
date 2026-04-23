@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260423.1
-  # Thu Apr 23 01:21:10 UTC 2026 -- Thu Apr 23 11:21:10 AEST 2026
+  # Dante Build Artifact 20260423.2
+  # Thu Apr 23 04:40:49 UTC 2026 -- Thu Apr 23 14:40:49 AEST 2026
   #
-  # Merge pull request 48756 from dante_artifact_upgrade into master
-  # 2f68e622e642a897c950f11c7db3b24332efd2cc
-  dante_build_id: '1677880'
+  # Merge pull request 48893 from dante_artifact_upgrade into master
+  # f9280b13f6d36309e614c358f930e63b2bd65a20
+  dante_build_id: '1678052'
 
-  # virgil 20260423.6
-  # Thu Apr 23 00:25:16 UTC 2026 -- Thu Apr 23 10:25:16 AEST 2026
+  # virgil 20260423.9
+  # Thu Apr 23 03:45:08 UTC 2026 -- Thu Apr 23 13:45:08 AEST 2026
   #
-  # Merged PR 48872: dante disable apex25 which is a test switch
-  # 661fde6058142dbaf076c95cc0095392469c7722
-  virgil_build_id: '1677812'
+  # Merged PR 48040: SSH Key Update – Revoke Former Employee Access & Add New Key
+  # d09a65f1caad3779fa6ef623af3187b1b7272352
+  virgil_build_id: '1677992'
 
   # sqlbilling 20260423.2
   # Thu Apr 23 00:43:37 UTC 2026 -- Thu Apr 23 10:43:37 AEST 2026
