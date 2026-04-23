@@ -839,3 +839,24 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodfrontend1editrade1:
+      # General Editrade instance
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2090]
+          ssl: [2091]
+      stats:
+        ports:
+          web: 2092
+          socket: 2093
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4

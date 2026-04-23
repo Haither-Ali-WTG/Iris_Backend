@@ -1,0 +1,10 @@
+---
+canasta-poc.ocp.wtg.ws:
+  clustered_instances: [us2prodfrontend1editrade1]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: canasta-poc-1
+      ip: 10.4.237.11
+      port: 80
+      settings: check

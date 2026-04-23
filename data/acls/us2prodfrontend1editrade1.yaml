@@ -1,0 +1,10 @@
+---
+star_editrade_cl:
+  description: "*.editrade.cl"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?editrade\.cl$
+
+test-canasta_url:
+  description: "test-canasta.editrade.cl"
+  tests:
+    - hdr(host) -i test-canasta.editrade.cl
