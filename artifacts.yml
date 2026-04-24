@@ -14,9 +14,9 @@ variables:
   # 061551def7fa66d146d0efc94e0c4d1fd1dc5456
   virgil_build_id: '1678954'
 
-  # sqlbilling 20260423.2
-  # Thu Apr 23 00:43:37 UTC 2026 -- Thu Apr 23 10:43:37 AEST 2026
+  # sqlbilling 20260424.4
+  # Fri Apr 24 12:36:16 UTC 2026 -- Fri Apr 24 22:36:16 AEST 2026
   #
-  # Merged PR 48868: Remove incorrect IP from RE5DXB
-  # 8dfd2aa25cdd8c99bc2f15370ce8a12561e0c831
-  sqlbilling_build_id: '1677845'
+  # Merged PR 48998: SQLBilling-Add-CS02316942-CS02315768.yml
+  # 81e73dea3e0188b826612547ed7aaa07a7fc608d
+  sqlbilling_build_id: '1679364'
