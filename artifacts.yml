@@ -7,12 +7,12 @@ variables:
   # fdaf69076550ee4545550b84c2c70031fa3d647c
   dante_build_id: '1678244'
 
-  # virgil 20260423.14
-  # Thu Apr 23 07:31:03 UTC 2026 -- Thu Apr 23 17:31:03 AEST 2026
+  # virgil 20260424.2
+  # Fri Apr 24 02:46:41 UTC 2026 -- Fri Apr 24 12:46:41 AEST 2026
   #
-  # Merged PR 48919: added new topics for ocm-be-inttra
-  # 2ae182ab95436d4d6162e5f31078cb8392e1ef76
-  virgil_build_id: '1678206'
+  # Merged PR 48892: Add new network and nodes for ocp
+  # 061551def7fa66d146d0efc94e0c4d1fd1dc5456
+  virgil_build_id: '1678954'
 
   # sqlbilling 20260423.2
   # Thu Apr 23 00:43:37 UTC 2026 -- Thu Apr 23 10:43:37 AEST 2026
