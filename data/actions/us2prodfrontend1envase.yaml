@@ -4,4 +4,4 @@ backend_selection:
     Handle backend selection for Envase frontends
   order: 80
   actions:
-    - use_backend gtg-excargo if host_gtg-excargo
+    - use_backend gtg-mail if host_gtg-mail2

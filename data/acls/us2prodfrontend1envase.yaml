@@ -1,8 +1,30 @@
 ---
-host_gtg-excargo:
-  description: "excargocust.gtgs.net exchou.gtgs.net myexcargo.com www.myexcargo.com"
+host_gtg-mail2:
+  description: "gtg-mail.gtgs.net mail.gtgs.net mygtgmail.com www.mygtgmail.com"
   tests:
-    - hdr(host) -i excargocust.gtgs.net
-    - hdr(host) -i exchou.gtgs.net
-    - hdr(host) -i myexcargo.com
-    - hdr(host) -i www.myexcargo.com
+    - hdr(host) -i atl.genesis-intermodal.com
+    - hdr(host) -i cha.genesis-intermodal.com
+    - hdr(host) -i customer.genesis-intermodal.com
+    - hdr(host) -i dal.genesis-intermodal.com
+    - hdr(host) -i dispatch.genesis-intermodal.com
+    - hdr(host) -i employee.genesis-intermodal.com
+    - hdr(host) -i genexolos.genesis-intermodal.com
+    - hdr(host) -i genexosnd.genesis-intermodal.com
+    - hdr(host) -i genexosto.genesis-intermodal.com
+    - hdr(host) -i gengisatl.genesis-intermodal.com
+    - hdr(host) -i gengisdal.genesis-intermodal.com
+    - hdr(host) -i gengishou.genesis-intermodal.com
+    - hdr(host) -i genlos.genesis-intermodal.com
+    - hdr(host) -i genmem.genesis-intermodal.com
+    - hdr(host) -i genphx.genesis-intermodal.com
+    - hdr(host) -i gensan.genesis-intermodal.com
+    - hdr(host) -i hou.genesis-intermodal.com
+    - hdr(host) -i la.genesis-intermodal.com
+    - hdr(host) -i mail.genesis-intermodal.com
+    - hdr(host) -i nordic.genesis-intermodal.com
+    - hdr(host) -i nordla.genesis-intermodal.com
+    - hdr(host) -i norsat.genesis-intermodal.com
+    - hdr(host) -i norsto.genesis-intermodal.com
+    - hdr(host) -i norvan.genesis-intermodal.com
+    - hdr(host) -i realtime.genesis-intermodal.com
+    - hdr(host) -i snd.genesis-intermodal.com
