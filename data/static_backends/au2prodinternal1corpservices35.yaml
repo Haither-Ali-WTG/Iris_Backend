@@ -473,6 +473,94 @@ ai-acceleration-staging.mcp.wtg.zone:
     - name: w5.au2prod1
       ip: 10.2.213.19
       port: 30100
+dat-staging.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+test-analytics-staging.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+test-analytics.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
+dat.mcp.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
 # end of mcp services
 # knowledge services
 admin.knowledge.wtg.zone:
