@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260424.1
-  # Fri Apr 24 03:40:43 UTC 2026 -- Fri Apr 24 13:40:43 AEST 2026
+  # Dante Build Artifact 20260428.1
+  # Mon Apr 27 19:01:35 UTC 2026 -- Tue Apr 28 05:01:35 AEST 2026
   #
-  # Merge pull request 48965 from dante_artifact_upgrade into master
-  # 5b3a68f4c12e421060cd98f5c3d7c085adcd18a2
-  dante_build_id: '1679006'
+  # Merge pull request 49057 from dante_artifact_upgrade into master
+  # f7924f47b6960a67d4a0e7c3c6b5cb22ddb440d0
+  dante_build_id: '1682023'
 
-  # virgil 20260424.2
-  # Fri Apr 24 02:46:41 UTC 2026 -- Fri Apr 24 12:46:41 AEST 2026
+  # virgil 20260428.2
+  # Mon Apr 27 18:21:13 UTC 2026 -- Tue Apr 28 04:21:13 AEST 2026
   #
-  # Merged PR 48892: Add new network and nodes for ocp
-  # 061551def7fa66d146d0efc94e0c4d1fd1dc5456
-  virgil_build_id: '1678954'
+  # Merge pull request 49046 from virgil_python_upgrade into master
+  # 1e1cf598d877d3dca7bb178b2af9a191d0e38359
+  virgil_build_id: '1681977'
 
   # sqlbilling 20260424.4
   # Fri Apr 24 12:36:16 UTC 2026 -- Fri Apr 24 22:36:16 AEST 2026
