@@ -1,6 +1,6 @@
 ---
 host_gtg-mail2:
-  description: "gtg-mail.gtgs.net mail.gtgs.net mygtgmail.com www.mygtgmail.com"
+  description: "Genesis Intermodal (*.genesis-intermodal.com)"
   tests:
     - hdr(host) -i atl.genesis-intermodal.com
     - hdr(host) -i cha.genesis-intermodal.com

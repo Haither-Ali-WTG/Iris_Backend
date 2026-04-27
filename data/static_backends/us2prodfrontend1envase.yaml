@@ -1,10 +1,15 @@
 ---
-gtg-mail:
+star.genesis-intermodal.com:
   clustered_instances: [us2prodfrontend1envase]
-  full_override: |
-    backend gtg-mail
-    option httpchk
-    http-check send meth HEAD uri /
-    http-check expect rstatus 200
-    default-server inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4 ssl
-    server gtg-mail 10.4.218.114:443 check verify none sni req.hdr(host)
+  backend_name: gtg-mail
+  cookie:
+    name: GTG-MAIL
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni star.genesis-intermodal.com
+  servers:
+    - name: gtg-mail
+      ip: 10.4.218.114
+      port: 443
