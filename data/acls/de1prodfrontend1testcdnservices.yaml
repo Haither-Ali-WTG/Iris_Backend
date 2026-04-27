@@ -16,6 +16,8 @@ staging_identity_wisetechglobal_com:
   tests:
     - hdr(host),field(1,:) -i staging.identity.wisetechglobal.com
     - hdr(host),field(1,:) -i staging-de.identity.wisetechglobal.com
+    - hdr(host),field(1,:) -i staging.identity.wisetechglobal.cn
+    - hdr(host),field(1,:) -i staging-de.identity.wisetechglobal.cn
 
 peppol-smp-test_wisegrid_net:
   description: |-
