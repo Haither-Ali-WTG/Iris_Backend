@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260428.4
-  # Tue Apr 28 02:37:55 UTC 2026 -- Tue Apr 28 12:37:55 AEST 2026
+  # Dante Build Artifact 20260429.1
+  # Tue Apr 28 19:41:11 UTC 2026 -- Wed Apr 29 05:41:11 AEST 2026
   #
-  # Merged PR 49089: Added Ubuntu 26.04 packages to the mirror
-  # 3e49c8fae6216f47e43cc1be70bcb0e29744cb68
-  dante_build_id: '1682394'
+  # Merge pull request 49139 from dante_artifact_upgrade into master
+  # 17ced810b0ffbed17a2fd5eded3423f583b14b84
+  dante_build_id: '1683083'
 
-  # virgil 20260428.2
-  # Mon Apr 27 18:21:13 UTC 2026 -- Tue Apr 28 04:21:13 AEST 2026
+  # virgil 20260429.1
+  # Tue Apr 28 19:01:18 UTC 2026 -- Wed Apr 29 05:01:18 AEST 2026
   #
-  # Merge pull request 49046 from virgil_python_upgrade into master
-  # 1e1cf598d877d3dca7bb178b2af9a191d0e38359
-  virgil_build_id: '1681977'
+  # Merged PR 49005: Provision US2 cabinet 306
+  # f543729867e67d1332679f4c6215b82c34b8627a
+  virgil_build_id: '1683045'
 
-  # sqlbilling 20260424.4
-  # Fri Apr 24 12:36:16 UTC 2026 -- Fri Apr 24 22:36:16 AEST 2026
+  # sqlbilling 20260428.3
+  # Tue Apr 28 11:30:23 UTC 2026 -- Tue Apr 28 21:30:23 AEST 2026
   #
-  # Merged PR 48998: SQLBilling-Add-CS02316942-CS02315768.yml
-  # 81e73dea3e0188b826612547ed7aaa07a7fc608d
-  sqlbilling_build_id: '1679364'
+  # Merged PR 49130: AddSQLBilling IP US2
+  # 072ac7fca4500684d4eb84069ea57d01583ac1fd
+  sqlbilling_build_id: '1682776'
