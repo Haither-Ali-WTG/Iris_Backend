@@ -171,3 +171,8 @@ star_transport_wisetechglobal_com:
   description: "*.transport.wisetechglobal.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?transport\.wisetechglobal\.com$
+
+star_k8s_wtg_zone:
+  description: "*.k8s.wtg.zone"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?k8s\.wtg\.zone$
