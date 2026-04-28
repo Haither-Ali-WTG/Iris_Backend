@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260428.2
-  # Tue Apr 28 00:42:13 UTC 2026 -- Tue Apr 28 10:42:13 AEST 2026
+  # Dante Build Artifact 20260428.4
+  # Tue Apr 28 02:37:55 UTC 2026 -- Tue Apr 28 12:37:55 AEST 2026
   #
-  # Merged PR 49075: Remove Ubuntu 20.04 packages
-  # e9fe78dfdff0976799468dafd0e12339105944a0
-  dante_build_id: '1682268'
+  # Merged PR 49089: Added Ubuntu 26.04 packages to the mirror
+  # 3e49c8fae6216f47e43cc1be70bcb0e29744cb68
+  dante_build_id: '1682394'
 
   # virgil 20260428.2
   # Mon Apr 27 18:21:13 UTC 2026 -- Tue Apr 28 04:21:13 AEST 2026
