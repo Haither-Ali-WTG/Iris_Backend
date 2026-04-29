@@ -31,3 +31,8 @@ global_sysctl_values:
     net.netfilter.nf_conntrack_tcp_timeout_fin_wait: 60
     net.netfilter.nf_conntrack_tcp_timeout_time_wait: 60
     net.netfilter.nf_conntrack_max: 524288
+
+os_codename:
+  ubuntu2204: jammy
+  ubuntu2404: noble
+  rhel9: plow

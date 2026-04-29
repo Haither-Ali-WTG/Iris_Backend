@@ -20,6 +20,14 @@
   gather_facts: yes
   force_handlers: yes
   tasks:
+    - name: Configure APT repositories
+      include_role:
+        name: iris_package_repos
+      when:
+        - os_variant == 'ubuntu'
+        - package_repo_provider is defined
+        - package_repo_provider == 'foreman'
+
     - name: Adjust installed packages
       include_role:
         name: iris_os_packages

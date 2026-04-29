@@ -35,6 +35,7 @@ machines:
       os: ubuntu2404
       dc: AU2
       os_variant: ubuntu
+      package_repo_provider: foreman
     au2lbl00886:
       ansible_host: 10.2.83.31
       os: ubuntu2404

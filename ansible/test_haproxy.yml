@@ -50,11 +50,6 @@
   gather_facts: no
   tasks:
     - name: Set additional facts
-      vars:
-        os_codename:
-          ubuntu2204: jammy
-          ubuntu2404: noble
-          rhel9: plow
       set_fact:
         virgil_ip_oob_dante: "{{ ansible_host }}"
         virgil_os_name: "{{ os }}"

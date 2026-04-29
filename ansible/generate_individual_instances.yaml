@@ -26,10 +26,6 @@
       vars:
         machine: "{{ hostvars[item.machine_name] }}"
         clustered_instance: "{{ hostvars[item.clustered_instance_name] }}"
-        os_codename:
-          ubuntu2204: jammy
-          ubuntu2404: noble
-          rhel9: plow
       add_host:
         name: "{{ item.individual_instance_name }}"
         groups:
