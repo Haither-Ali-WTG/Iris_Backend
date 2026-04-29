@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260429.2
-  # Tue Apr 28 23:26:31 UTC 2026 -- Wed Apr 29 09:26:31 AEST 2026
+  # Dante Build Artifact 20260429.4
+  # Wed Apr 29 05:21:03 UTC 2026 -- Wed Apr 29 15:21:03 AEST 2026
   #
-  # Merged PR 49097: Remove Cumulus 5.8.0 support
-  # bdecfbc7bb2267e3082251a4035361ed025e7081
-  dante_build_id: '1683234'
+  # Merge pull request 49188 from dante_artifact_upgrade into master
+  # 726771f89fc88e6c9883018aa275ad98fba672d5
+  dante_build_id: '1683598'
 
-  # virgil 20260429.1
-  # Tue Apr 28 19:01:18 UTC 2026 -- Wed Apr 29 05:01:18 AEST 2026
+  # virgil 20260429.14
+  # Wed Apr 29 04:37:18 UTC 2026 -- Wed Apr 29 14:37:18 AEST 2026
   #
-  # Merged PR 49005: Provision US2 cabinet 306
-  # f543729867e67d1332679f4c6215b82c34b8627a
-  virgil_build_id: '1683045'
+  # Merged PR 49185: remove-vcf-nonprod
+  # f9276d92be4a2825dbe24d349504981ee77825de
+  virgil_build_id: '1683529'
 
   # sqlbilling 20260428.3
   # Tue Apr 28 11:30:23 UTC 2026 -- Tue Apr 28 21:30:23 AEST 2026
