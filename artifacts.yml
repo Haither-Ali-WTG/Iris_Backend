@@ -14,9 +14,9 @@ variables:
   # f9276d92be4a2825dbe24d349504981ee77825de
   virgil_build_id: '1683529'
 
-  # sqlbilling 20260428.3
-  # Tue Apr 28 11:30:23 UTC 2026 -- Tue Apr 28 21:30:23 AEST 2026
+  # sqlbilling 20260430.1
+  # Wed Apr 29 20:36:28 UTC 2026 -- Thu Apr 30 06:36:28 AEST 2026
   #
-  # Merged PR 49130: AddSQLBilling IP US2
-  # 072ac7fca4500684d4eb84069ea57d01583ac1fd
-  sqlbilling_build_id: '1682776'
+  # Merged PR 49233: SQLBilling-Add-CS02321113.yml
+  # 2e40a1de410c199f8b1e9953fe909c57d7d88705
+  sqlbilling_build_id: '1684254'
