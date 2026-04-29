@@ -79,7 +79,7 @@ stages:
 
           - script: |
               set -euxo pipefail
-              python ansible/roles/cms_certificates/files/audit_cms_certificates.py
+              python3 ansible/roles/cms_certificates/files/audit_cms_certificates.py
             displayName: 'Run audit_cms_certificates script'
 
           - script: |
