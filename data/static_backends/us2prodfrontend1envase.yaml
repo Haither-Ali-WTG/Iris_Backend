@@ -1,15 +1,1751 @@
 ---
-star.genesis-intermodal.com:
+as2.gtgs.net:
   clustered_instances: [us2prodfrontend1envase]
-  backend_name: gtg-mail
+  backend_name: gtg-a2n
   cookie:
-    name: GTG-MAIL
+    name: GTG-A2N
   encryption: true
   http_health_check:
     enabled: true
     http_path: /
-  default_server: ssl sni req.hdr(host) check-sni star.genesis-intermodal.com
+  default_server: ssl sni req.hdr(host) check-sni as2.gtgs.net
   servers:
-    - name: gtg-mail
-      ip: 10.4.218.114
+    - name: gtg-a2n
+      ip: 10.4.218.115
+      port: 443
+abi.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-abi
+  cookie:
+    name: GTG-ABI
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni abi.gtgs.net
+  servers:
+    - name: gtg-abi
+      ip: 10.4.218.89
+      port: 443
+abidatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-abidatnet
+  cookie:
+    name: GTG-ABIDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni abidatnet.gtgs.net
+  servers:
+    - name: gtg-abidatnet
+      ip: 10.4.218.35
+      port: 443
+abigartest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-abigartest
+  cookie:
+    name: GTG-ABIGARTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni abigartest.gtgs.net
+  servers:
+    - name: gtg-abigartest
+      ip: 10.4.218.10
+      port: 443
+abitabnetdev.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-abitabnetdev
+  cookie:
+    name: GTG-ABITABNETDEV
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni abitabnetdev.gtgs.net
+  servers:
+    - name: gtg-abitabnetdev
+      ip: 10.4.218.20
+      port: 443
+pathou.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-acctpatriot
+  cookie:
+    name: GTG-ACCTPATRIOT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni pathou.gtgs.net
+  servers:
+    - name: gtg-acctpatriot
+      ip: 10.4.218.70
+      port: 443
+alpont.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-alpont
+  cookie:
+    name: GTG-ALPONT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni alpont.gtgs.net
+  servers:
+    - name: gtg-alpont
+      ip: 10.4.218.71
+      port: 443
+alpontdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-alpontdatnet
+  cookie:
+    name: GTG-ALPONTDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni alpontdatnet.gtgs.net
+  servers:
+    - name: gtg-alpontdatnet
+      ip: 10.4.218.36
+      port: 443
+apldatnetact.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-apldatnetact
+  cookie:
+    name: GTG-APLDATNETACT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni apldatnetact.gtgs.net
+  servers:
+    - name: gtg-apldatnetact
+      ip: 10.4.218.54
+      port: 443
+apldatnetvat.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-apldatnetvat
+  cookie:
+    name: GTG-APLDATNETVAT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni apldatnetvat.gtgs.net
+  servers:
+    - name: gtg-apldatnetvat
+      ip: 10.4.218.55
+      port: 443
+aplimstest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-aplimstest
+  cookie:
+    name: GTG-APLIMSTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni aplimstest.gtgs.net
+  servers:
+    - name: gtg-aplimstest
+      ip: 10.4.218.16
+      port: 443
+apllmex.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-aplmex
+  cookie:
+    name: GTG-APLMEX
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni apllmex.gtgs.net
+  servers:
+    - name: gtg-aplmex
+      ip: 10.4.218.138
+      port: 443
+apllmexdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-aplmexdatnet
+  cookie:
+    name: GTG-APLMEXDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni apllmexdatnet.gtgs.net
+  servers:
+    - name: gtg-aplmexdatnet
+      ip: 10.4.218.139
+      port: 443
+apllmextest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-aplmextest
+  cookie:
+    name: GTG-APLMEXTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni apllmextest.gtgs.net
+  servers:
+    - name: gtg-aplmextest
+      ip: 10.4.218.140
+      port: 443
+avims.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-avims
+  cookie:
+    name: GTG-AVIMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni avims.gtgs.net
+  servers:
+    - name: gtg-avims
+      ip: 10.4.218.103
+      port: 443
+avimsdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-avimsdatnet
+  cookie:
+    name: GTG-AVIMSDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni avimsdatnet.gtgs.net
+  servers:
+    - name: gtg-avimsdatnet
+      ip: 10.4.218.104
+      port: 443
+avtestdms.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-avtestdms
+  cookie:
+    name: GTG-AVTESTDMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni avtestdms.gtgs.net
+  servers:
+    - name: gtg-avtestdms
+      ip: 10.4.218.21
+      port: 443
+celtic.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-celtic
+  cookie:
+    name: GTG-CELTIC
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni celtic.gtgs.net
+  servers:
+    - name: gtg-celtic
+      ip: 10.4.218.90
+      port: 443
+celticdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-celticdatnet
+  cookie:
+    name: GTG-CELTICDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni celticdatnet.gtgs.net
+  servers:
+    - name: gtg-celticdatnet
+      ip: 10.4.218.37
+      port: 443
+cglsan.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cglsan
+  cookie:
+    name: GTG-CGLSAN
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cglsan.gtgs.net
+  servers:
+    - name: gtg-cglsan
+      ip: 10.4.218.87
+      port: 443
+cglsan-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cglsan-dr
+  cookie:
+    name: GTG-CGLSAN-DR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cglsan-dr.gtgs.net
+  servers:
+    - name: gtg-cglsan-dr
+      ip: 10.4.218.88
+      port: 443
+chicic.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-chicic
+  cookie:
+    name: GTG-CHICIC
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni chicic.gtgs.net
+  servers:
+    - name: gtg-chicic
+      ip: 10.4.218.105
+      port: 443
+chicictest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-chicictest
+  cookie:
+    name: GTG-CHICICTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni chicictest.gtgs.net
+  servers:
+    - name: gtg-chicictest
+      ip: 10.4.218.12
+      port: 443
+chidatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-chidatnet
+  cookie:
+    name: GTG-CHIDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni chidatnet.gtgs.net
+  servers:
+    - name: gtg-chidatnet
+      ip: 10.4.218.106
+      port: 443
+ckchitest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ckchitest
+  cookie:
+    name: GTG-CKCHITEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckchitest.gtgs.net
+  servers:
+    - name: gtg-ckchitest
+      ip: 10.4.218.9
+      port: 443
+ckmultitest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ckmultitest
+  cookie:
+    name: GTG-CKMULTITEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckmultitest.gtgs.net
+  servers:
+    - name: gtg-ckmultitest
+      ip: 10.4.218.24
+      port: 443
+ckpacwil.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ckpacwil
+  cookie:
+    name: GTG-CKPACWIL
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckpacwil.gtgs.net
+  servers:
+    - name: gtg-ckpacwil
+      ip: 10.4.218.121
+      port: 443
+ckpacwildatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ckpacwildatnet
+  cookie:
+    name: GTG-CKPACWILDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckpacwildatnet.gtgs.net
+  servers:
+    - name: gtg-ckpacwildatnet
+      ip: 10.4.218.122
+      port: 443
+ckterminaldatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ckterminaldatnet
+  cookie:
+    name: GTG-CKTERMINALDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckterminaldatnet.gtgs.net
+  servers:
+    - name: gtg-ckterminaldatnet
+      ip: 10.4.218.123
+      port: 443
+cktraining.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cktraining
+  cookie:
+    name: GTG-CKTRAINING
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cktraining.gtgs.net
+  servers:
+    - name: gtg-cktraining
+      ip: 10.4.218.9
+      port: 443
+cktrucking.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cktrucking
+  cookie:
+    name: GTG-CKTRUCKING
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cktrucking.gtgs.net
+  servers:
+    - name: gtg-cktrucking
+      ip: 10.4.218.124
+      port: 443
+cofchol.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cofchol
+  cookie:
+    name: GTG-COFCHOL
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cofchol.gtgs.net
+  servers:
+    - name: gtg-cofchol
+      ip: 10.4.218.133
+      port: 443
+cofcholtest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cofcholtest
+  cookie:
+    name: GTG-COFCHOLTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cofcholtest.gtgs.net
+  servers:
+    - name: gtg-cofcholtest
+      ip: 10.4.218.15
+      port: 443
+cofcmx.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cofcmx
+  cookie:
+    name: GTG-COFCMX
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cofcmx.gtgs.net
+  servers:
+    - name: gtg-cofcmx
+      ip: 10.4.218.56
+      port: 443
+cofcmxdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-cofcmxdatnet
+  cookie:
+    name: GTG-COFCMXDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni cofcmxdatnet.gtgs.net
+  servers:
+    - name: gtg-cofcmxdatnet
+      ip: 10.4.218.38
+      port: 443
+contest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-contest
+  cookie:
+    name: GTG-CONTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni contest.gtgs.net
+  servers:
+    - name: gtg-contest
+      ip: 10.4.218.23
+      port: 443
+continuum.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-continuum
+  cookie:
+    name: GTG-CONTINUUM
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni continuum.gtgs.net
+  servers:
+    - name: gtg-continuum
+      ip: 10.4.218.107
+      port: 443
+continuumdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-continuumdatnet
+  cookie:
+    name: GTG-CONTINUUMDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni continuumdatnet.gtgs.net
+  servers:
+    - name: gtg-continuumdatnet
+      ip: 10.4.218.108
+      port: 443
+continuumdatnetbi.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-continuumdatnetbi
+  cookie:
+    name: GTG-CONTINUUMDATNETBI
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni continuumdatnetbi.gtgs.net
+  servers:
+    - name: gtg-continuumdatnetbi
+      ip: 10.4.218.57
+      port: 443
+laserdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-crepllasernet
+  cookie:
+    name: GTG-CREPLLASERNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni laserdatnet.gtgs.net
+  servers:
+    - name: gtg-crepllasernet
+      ip: 10.4.218.39
+      port: 443
+sunrisedatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-creplsunrise
+  cookie:
+    name: GTG-CREPLSUNRISE
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni sunrisedatnet.gtgs.net
+  servers:
+    - name: gtg-creplsunrise
+      ip: 10.4.218.40
+      port: 443
+gtgdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-datnet
+  cookie:
+    name: GTG-DATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni gtgdatnet.gtgs.net
+  servers:
+    - name: gtg-datnet
+      ip: 10.4.218.41
+      port: 443
+datnetdev.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-datnetdev
+  cookie:
+    name: GTG-DATNETDEV
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni datnetdev.gtgs.net
+  servers:
+    - name: gtg-datnetdev
+      ip: 10.4.218.42
+      port: 443
+demorms.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-demorms
+  cookie:
+    name: GTG-DEMORMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni demorms.gtgs.net
+  servers:
+    - name: gtg-demorms
+      ip: 10.4.218.58
+      port: 443
+draydemo.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-draydemo
+  cookie:
+    name: GTG-DRAYDEMO
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni draydemo.gtgs.net
+  servers:
+    - name: gtg-draydemo
+      ip: 10.4.218.72
+      port: 443
+edgmontest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-edgmontest
+  cookie:
+    name: GTG-EDGMONTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni edgmontest.gtgs.net
+  servers:
+    - name: gtg-edgmontest
+      ip: 10.4.218.8
+      port: 443
+edi.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-edi
+  cookie:
+    name: GTG-EDI
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni edi.gtgs.net
+  servers:
+    - name: gtg-edi
+      ip: 10.4.218.126
+      port: 443
+excargocust.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-excargo
+  cookie:
+    name: GTG-EXCARGO
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni excargocust.gtgs.net
+  servers:
+    - name: gtg-excargo
+      ip: 10.4.218.91
+      port: 443
+excargodatanet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-excargodatanet
+  cookie:
+    name: GTG-EXCARGODATANET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni excargodatanet.gtgs.net
+  servers:
+    - name: gtg-excargodatanet
+      ip: 10.4.218.59
+      port: 443
+excargotest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-excargotest
+  cookie:
+    name: GTG-EXCARGOTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni excargotest.gtgs.net
+  servers:
+    - name: gtg-excargotest
+      ip: 10.4.218.6
+      port: 443
+galaxy.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-galaxy
+  cookie:
+    name: GTG-GALAXY
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni galaxy.gtgs.net
+  servers:
+    - name: gtg-galaxy
+      ip: 10.4.218.73
+      port: 443
+galaxydatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-galaxydatnet
+  cookie:
+    name: GTG-GALAXYDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni galaxydatnet.gtgs.net
+  servers:
+    - name: gtg-galaxydatnet
+      ip: 10.4.218.33
+      port: 443
+genesis-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-genesisdatnet
+  cookie:
+    name: GTG-GENESISDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni genesis-dr.gtgs.net
+  servers:
+    - name: gtg-genesisdatnet
+      ip: 10.4.218.44
+      port: 443
+gtgtech.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-gtgtech
+  cookie:
+    name: GTG-GTGTECH
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni gtgtech.gtgs.net
+  servers:
+    - name: gtg-gtgtech
+      ip: 10.4.218.74
+      port: 443
+iqims.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-iqims
+  cookie:
+    name: GTG-IQIMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni iqims.gtgs.net
+  servers:
+    - name: gtg-iqims
+      ip: 10.4.218.92
+      port: 443
+iqimsdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-iqimsdatnet
+  cookie:
+    name: GTG-IQIMSDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni iqimsdatnet.gtgs.net
+  servers:
+    - name: gtg-iqimsdatnet
+      ip: 10.4.218.45
+      port: 443
+isc.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-isc
+  cookie:
+    name: GTG-ISC
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni isc.gtgs.net
+  servers:
+    - name: gtg-isc
+      ip: 10.4.218.93
+      port: 443
+iscas2.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-iscas2
+  cookie:
+    name: GTG-ISCAS2
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni iscas2.gtgs.net
+  servers:
+    - name: gtg-iscas2
+      ip: 10.4.218.127
+      port: 443
+iscdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-iscdatnet
+  cookie:
+    name: GTG-ISCDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni iscdatnet.gtgs.net
+  servers:
+    - name: gtg-iscdatnet
+      ip: 10.4.218.60
+      port: 443
+ivvedatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ivvedatnet
+  cookie:
+    name: GTG-IVVEDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ivvedatnet.gtgs.net
+  servers:
+    - name: gtg-ivvedatnet
+      ip: 10.4.218.29
+      port: 443
+ivvetrans.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ivvetrans
+  cookie:
+    name: GTG-IVVETRANS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ivvetrans.gtgs.net
+  servers:
+    - name: gtg-ivvetrans
+      ip: 10.4.218.75
+      port: 443
+jettrans.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-jettrans
+  cookie:
+    name: GTG-JETTRANS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni jettrans.gtgs.net
+  servers:
+    - name: gtg-jettrans
+      ip: 10.4.218.26
+      port: 443
+jettransport.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-jettransport
+  cookie:
+    name: GTG-JETTRANSPORT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni jettransport.gtgs.net
+  servers:
+    - name: gtg-jettransport
+      ip: 10.4.218.61
+      port: 443
+knightimccent.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-knightimccent
+  cookie:
+    name: GTG-KNIGHTIMCCENT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni knightimccent.gtgs.net
+  servers:
+    - name: gtg-knightimccent
+      ip: 10.4.218.62
+      port: 443
+knighttranstest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-knighttranstest
+  cookie:
+    name: GTG-KNIGHTTRANSTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni knighttranstest.gtgs.net
+  servers:
+    - name: gtg-knighttranstest
+      ip: 10.4.218.25
+      port: 443
+lasernet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-lasernet
+  cookie:
+    name: GTG-LASERNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni lasernet.gtgs.net
+  servers:
+    - name: gtg-lasernet
+      ip: 10.4.218.94
+      port: 443
+lee.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-lee
+  cookie:
+    name: GTG-LEE
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni lee.gtgs.net
+  servers:
+    - name: gtg-lee
+      ip: 10.4.218.76
+      port: 443
+leedatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-leedatnet
+  cookie:
+    name: GTG-LEEDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni leedatnet.gtgs.net
+  servers:
+    - name: gtg-leedatnet
+      ip: 10.4.218.27
+      port: 443
+manabb.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-manabb
+  cookie:
+    name: GTG-MANABB
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni manabb.gtgs.net
+  servers:
+    - name: gtg-manabb
+      ip: 10.4.218.134
+      port: 443
+mantestabb.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-mantestabb
+  cookie:
+    name: GTG-MANTESTABB
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni mantestabb.gtgs.net
+  servers:
+    - name: gtg-mantestabb
+      ip: 10.4.218.19
+      port: 443
+mcfawhse.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-mcfawhse
+  cookie:
+    name: GTG-MCFAWHSE
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni mcfawhse.gtgs.net
+  servers:
+    - name: gtg-mcfawhse
+      ip: 10.4.218.77
+      port: 443
+mcfawhse-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-mcfawhse-dr
+  cookie:
+    name: GTG-MCFAWHSE-DR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni mcfawhse-dr.gtgs.net
+  servers:
+    - name: gtg-mcfawhse-dr
+      ip: 10.4.218.63
+      port: 443
+mq.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-mqconnect
+  cookie:
+    name: GTG-MQCONNECT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni mq.gtgs.net
+  servers:
+    - name: gtg-mqconnect
+      ip: 10.4.218.135
+      port: 443
+nfi.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-nfi
+  cookie:
+    name: GTG-NFI
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni nfi.gtgs.net
+  servers:
+    - name: gtg-nfi
+      ip: 10.4.218.129
+      port: 443
+nficanadatest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-nficanadatest
+  cookie:
+    name: GTG-NFICANADATEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni nficanadatest.gtgs.net
+  servers:
+    - name: gtg-nficanadatest
+      ip: 10.4.218.11
+      port: 443
+nficandatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-nficandatnet
+  cookie:
+    name: GTG-NFICANDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni nficandatnet.gtgs.net
+  servers:
+    - name: gtg-nficandatnet
+      ip: 10.4.218.109
+      port: 443
+ocs.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-ocs
+  cookie:
+    name: GTG-OCS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ocs.gtgs.net
+  servers:
+    - name: gtg-ocs
+      ip: 10.4.218.14
+      port: 443
+pacificcascade.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-pacificcascade
+  cookie:
+    name: GTG-PACIFICCASCADE
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni pacificcascade.gtgs.net
+  servers:
+    - name: gtg-pacificcascade
+      ip: 10.4.218.95
+      port: 443
+patriotdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-patriotdatnet
+  cookie:
+    name: GTG-PATRIOTDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni patriotdatnet.gtgs.net
+  servers:
+    - name: gtg-patriotdatnet
+      ip: 10.4.218.32
+      port: 443
+pbielk.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-pbielk
+  cookie:
+    name: GTG-PBIELK
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni pbielk.gtgs.net
+  servers:
+    - name: gtg-pbielk
+      ip: 10.4.218.110
+      port: 443
+pbielkdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-pbielkdatnet
+  cookie:
+    name: GTG-PBIELKDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni pbielkdatnet.gtgs.net
+  servers:
+    - name: gtg-pbielkdatnet
+      ip: 10.4.218.111
+      port: 443
+persan.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-persan
+  cookie:
+    name: GTG-PERSAN
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni persan.gtgs.net
+  servers:
+    - name: gtg-persan
+      ip: 10.4.218.78
+      port: 443
+persandatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-persandatnet
+  cookie:
+    name: GTG-PERSANDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni persandatnet.gtgs.net
+  servers:
+    - name: gtg-persandatnet
+      ip: 10.4.218.47
+      port: 443
+portserv.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-portserv
+  cookie:
+    name: GTG-PORTSERV
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni portserv.gtgs.net
+  servers:
+    - name: gtg-portserv
+      ip: 10.4.218.96
+      port: 443
+portservdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-portservdatnet
+  cookie:
+    name: GTG-PORTSERVDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni portservdatnet.gtgs.net
+  servers:
+    - name: gtg-portservdatnet
+      ip: 10.4.218.31
+      port: 443
+reicit.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-reicit
+  cookie:
+    name: GTG-REICIT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni reicit.gtgs.net
+  servers:
+    - name: gtg-reicit
+      ip: 10.4.218.79
+      port: 443
+reicitdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-reicitdatnet
+  cookie:
+    name: GTG-REICITDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni reicitdatnet.gtgs.net
+  servers:
+    - name: gtg-reicitdatnet
+      ip: 10.4.218.64
+      port: 443
+runrates2.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-runrates2
+  cookie:
+    name: GTG-RUNRATES2
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni runrates2.gtgs.net
+  servers:
+    - name: gtg-runrates2
+      ip: 10.4.218.116
+      port: 443
+runratescent.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-runratescent
+  cookie:
+    name: GTG-RUNRATESCENT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni runratescent.gtgs.net
+  servers:
+    - name: gtg-runratescent
+      ip: 10.4.218.117
+      port: 443
+shicorp.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-shicorp
+  cookie:
+    name: GTG-SHICORP
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni shicorp.gtgs.net
+  servers:
+    - name: gtg-shicorp
+      ip: 10.4.218.97
+      port: 443
+shicorpdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-shicorpdatnet
+  cookie:
+    name: GTG-SHICORPDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni shicorpdatnet.gtgs.net
+  servers:
+    - name: gtg-shicorpdatnet
+      ip: 10.4.218.65
+      port: 443
+shiseatest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-shiseatest
+  cookie:
+    name: GTG-SHISEATEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni shiseatest.gtgs.net
+  servers:
+    - name: gtg-shiseatest
+      ip: 10.4.218.7
+      port: 443
+singh.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-singh
+  cookie:
+    name: GTG-SINGH
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni singh.gtgs.net
+  servers:
+    - name: gtg-singh
+      ip: 10.4.218.80
+      port: 443
+singhdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-singhdatnet
+  cookie:
+    name: GTG-SINGHDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni singhdatnet.gtgs.net
+  servers:
+    - name: gtg-singhdatnet
+      ip: 10.4.218.49
+      port: 443
+singhtest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-singhtest
+  cookie:
+    name: GTG-SINGHTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni singhtest.gtgs.net
+  servers:
+    - name: gtg-singhtest
+      ip: 10.4.218.5
+      port: 443
+chchi-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-skydatnet
+  cookie:
+    name: GTG-SKYDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni chchi-dr.gtgs.net
+  servers:
+    - name: gtg-skydatnet
+      ip: 10.4.218.131
+      port: 443
+ckskyala.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-skyline
+  cookie:
+    name: GTG-SKYLINE
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni ckskyala.gtgs.net
+  servers:
+    - name: gtg-skyline
+      ip: 10.4.218.132
+      port: 443
+solpor.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-solpor
+  cookie:
+    name: GTG-SOLPOR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni solpor.gtgs.net
+  servers:
+    - name: gtg-solpor
+      ip: 10.4.218.98
+      port: 443
+solpordatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-solpordatnet
+  cookie:
+    name: GTG-SOLPORDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni solpordatnet.gtgs.net
+  servers:
+    - name: gtg-solpordatnet
+      ip: 10.4.218.50
+      port: 443
+arlaftcust.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-stcintermodal-swiftsv
+  cookie:
+    name: GTG-STCINTERMODAL-SWIFTSV
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni arlaftcust.gtgs.net
+  servers:
+    - name: gtg-stcintermodal-swiftsv
+      ip: 10.4.218.118
+      port: 443
+suncer.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-sunrisetrucking
+  cookie:
+    name: GTG-SUNRISETRUCKING
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni suncer.gtgs.net
+  servers:
+    - name: gtg-sunrisetrucking
+      ip: 10.4.218.99
+      port: 443
+taylor.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-taylor
+  cookie:
+    name: GTG-TAYLOR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni taylor.gtgs.net
+  servers:
+    - name: gtg-taylor
+      ip: 10.4.218.112
+      port: 443
+taylordatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-taylordatnet
+  cookie:
+    name: GTG-TAYLORDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni taylordatnet.gtgs.net
+  servers:
+    - name: gtg-taylordatnet
+      ip: 10.4.218.113
+      port: 443
+tcamelot.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tcamelot
+  cookie:
+    name: GTG-TCAMELOT
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tcamelot.gtgs.net
+  servers:
+    - name: gtg-tcamelot
+      ip: 10.4.218.81
+      port: 443
+tcamelotdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tcamelotdatnet
+  cookie:
+    name: GTG-TCAMELOTDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tcamelotdatnet.gtgs.net
+  servers:
+    - name: gtg-tcamelotdatnet
+      ip: 10.4.218.30
+      port: 443
+tcidatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tcidatnet
+  cookie:
+    name: GTG-TCIDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tcidatnet.gtgs.net
+  servers:
+    - name: gtg-tcidatnet
+      ip: 10.4.218.66
+      port: 443
+tcinew.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tcinew
+  cookie:
+    name: GTG-TCINEW
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tcinew.gtgs.net
+  servers:
+    - name: gtg-tcinew
+      ip: 10.4.218.100
+      port: 443
+techgas.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-techgas
+  cookie:
+    name: GTG-TECHGAS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni techgas.gtgs.net
+  servers:
+    - name: gtg-techgas
+      ip: 10.4.218.82
+      port: 443
+techgas-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-techgas-dr
+  cookie:
+    name: GTG-TECHGAS-DR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni techgas-dr.gtgs.net
+  servers:
+    - name: gtg-techgas-dr
+      ip: 10.4.218.67
+      port: 443
+testgtgims.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-testgtgims
+  cookie:
+    name: GTG-TESTGTGIMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni testgtgims.gtgs.net
+  servers:
+    - name: gtg-testgtgims
+      ip: 10.4.218.22
+      port: 443
+testpbielk.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-testpbielk
+  cookie:
+    name: GTG-TESTPBIELK
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni testpbielk.gtgs.net
+  servers:
+    - name: gtg-testpbielk
+      ip: 10.4.218.13
+      port: 443
+testtriims.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-testtriims
+  cookie:
+    name: GTG-TESTTRIIMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni testtriims.gtgs.net
+  servers:
+    - name: gtg-testtriims
+      ip: 10.4.218.17
+      port: 443
+topdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-topdatnet
+  cookie:
+    name: GTG-TOPDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni topdatnet.gtgs.net
+  servers:
+    - name: gtg-topdatnet
+      ip: 10.4.218.51
+      port: 443
+tophou.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tophou
+  cookie:
+    name: GTG-TOPHOU
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tophou.gtgs.net
+  servers:
+    - name: gtg-tophou
+      ip: 10.4.218.68
+      port: 443
+tophoutest.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-tophoutest
+  cookie:
+    name: GTG-TOPHOUTEST
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni tophoutest.gtgs.net
+  servers:
+    - name: gtg-tophoutest
+      ip: 10.4.218.3
+      port: 443
+town.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-town
+  cookie:
+    name: GTG-TOWN
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni town.gtgs.net
+  servers:
+    - name: gtg-town
+      ip: 10.4.218.83
+      port: 443
+towndatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-towndatnet
+  cookie:
+    name: GTG-TOWNDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni towndatnet.gtgs.net
+  servers:
+    - name: gtg-towndatnet
+      ip: 10.4.218.28
+      port: 443
+triims.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-triims
+  cookie:
+    name: GTG-TRIIMS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni triims.gtgs.net
+  servers:
+    - name: gtg-triims
+      ip: 10.4.218.84
+      port: 443
+troydemo.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-troydemo
+  cookie:
+    name: GTG-TROYDEMO
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni troydemo.gtgs.net
+  servers:
+    - name: gtg-troydemo
+      ip: 10.4.218.101
+      port: 443
+txn2chs.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-txn2chs
+  cookie:
+    name: GTG-TXN2CHS
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni txn2chs.gtgs.net
+  servers:
+    - name: gtg-txn2chs
+      ip: 10.4.218.102
+      port: 443
+txn2datnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-txn2datnet
+  cookie:
+    name: GTG-TXN2DATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni txn2datnet.gtgs.net
+  servers:
+    - name: gtg-txn2datnet
+      ip: 10.4.218.34
+      port: 443
+wastuk.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-wastuk
+  cookie:
+    name: GTG-WASTUK
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni wastuk.gtgs.net
+  servers:
+    - name: gtg-wastuk
+      ip: 10.4.218.85
+      port: 443
+wastukdatnet.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-wastukdatnet
+  cookie:
+    name: GTG-WASTUKDATNET
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni wastukdatnet.gtgs.net
+  servers:
+    - name: gtg-wastukdatnet
+      ip: 10.4.218.52
+      port: 443
+wptdisp.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-wptdisp
+  cookie:
+    name: GTG-WPTDISP
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni wptdisp.gtgs.net
+  servers:
+    - name: gtg-wptdisp
+      ip: 10.4.218.86
+      port: 443
+wptsea-dr.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-wptsea-dr
+  cookie:
+    name: GTG-WPTSEA-DR
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: ssl sni req.hdr(host) check-sni wptsea-dr.gtgs.net
+  servers:
+    - name: gtg-wptsea-dr
+      ip: 10.4.218.53
       port: 443

@@ -1,30 +1,1190 @@
 ---
-host_gtg-mail2:
-  description: "Genesis Intermodal (*.genesis-intermodal.com)"
+host_gtg-a2n:
+  description: "GTG NLB: gtg-a2n"
   tests:
-    - hdr(host) -i atl.genesis-intermodal.com
-    - hdr(host) -i cha.genesis-intermodal.com
-    - hdr(host) -i customer.genesis-intermodal.com
-    - hdr(host) -i dal.genesis-intermodal.com
-    - hdr(host) -i dispatch.genesis-intermodal.com
-    - hdr(host) -i employee.genesis-intermodal.com
-    - hdr(host) -i genexolos.genesis-intermodal.com
-    - hdr(host) -i genexosnd.genesis-intermodal.com
-    - hdr(host) -i genexosto.genesis-intermodal.com
-    - hdr(host) -i gengisatl.genesis-intermodal.com
-    - hdr(host) -i gengisdal.genesis-intermodal.com
-    - hdr(host) -i gengishou.genesis-intermodal.com
-    - hdr(host) -i genlos.genesis-intermodal.com
-    - hdr(host) -i genmem.genesis-intermodal.com
-    - hdr(host) -i genphx.genesis-intermodal.com
-    - hdr(host) -i gensan.genesis-intermodal.com
-    - hdr(host) -i hou.genesis-intermodal.com
-    - hdr(host) -i la.genesis-intermodal.com
-    - hdr(host) -i mail.genesis-intermodal.com
-    - hdr(host) -i nordic.genesis-intermodal.com
-    - hdr(host) -i nordla.genesis-intermodal.com
-    - hdr(host) -i norsat.genesis-intermodal.com
-    - hdr(host) -i norsto.genesis-intermodal.com
-    - hdr(host) -i norvan.genesis-intermodal.com
-    - hdr(host) -i realtime.genesis-intermodal.com
-    - hdr(host) -i snd.genesis-intermodal.com
+    - hdr(host) -i as2.gtgs.net
+host_gtg-abi:
+  description: "GTG NLB: gtg-abi"
+  tests:
+    - hdr(host) -i abi.gtgs.net
+    - hdr(host) -i abigar.gtgs.net
+    - hdr(host) -i abihou.gtgs.net
+    - hdr(host) -i abilar.gtgs.net
+    - hdr(host) -i abisan.gtgs.net
+    - hdr(host) -i abitabnet.gtgs.net
+    - hdr(host) -i ttl.gtgs.net
+host_gtg-abidatnet:
+  description: "GTG NLB: gtg-abidatnet"
+  tests:
+    - hdr(host) -i abi-dr.gtgs.net
+    - hdr(host) -i abidatnet.gtgs.net
+    - hdr(host) -i abigar-dr.gtgs.net
+    - hdr(host) -i abilar-dr.gtgs.net
+    - hdr(host) -i abisan-dr.gtgs.net
+host_gtg-abigartest:
+  description: "GTG NLB: gtg-abigartest"
+  tests:
+    - hdr(host) -i abigartest.gtgs.net
+host_gtg-abitabnetdev:
+  description: "GTG NLB: gtg-abitabnetdev"
+  tests:
+    - hdr(host) -i abigartabnet.gtgs.net
+    - hdr(host) -i abilartabnet.gtgs.net
+    - hdr(host) -i abitabnetdev.gtgs.net
+    - hdr(host) -i tabnetdev.gtgs.net
+host_gtg-acctpatriot:
+  description: "GTG NLB: gtg-acctpatriot"
+  tests:
+    - hdr(host) -i pathou.gtgs.net
+    - hdr(host) -i pathou1.gtgs.net
+    - hdr(host) -i patdtjax.gtgs.net
+host_gtg-alpont:
+  description: "GTG NLB: gtg-alpont"
+  tests:
+    - hdr(host) -i alpont.gtgs.net
+    - hdr(host) -i alpontcust.gtgs.net
+host_gtg-alpontdatnet:
+  description: "GTG NLB: gtg-alpontdatnet"
+  tests:
+    - hdr(host) -i alpont-dr.gtgs.net
+    - hdr(host) -i alpontdatnet.gtgs.net
+host_gtg-apldatnetact:
+  description: "GTG NLB: gtg-apldatnetact"
+  tests:
+    - hdr(host) -i apldatnetact.gtgs.net
+host_gtg-apldatnetvat:
+  description: "GTG NLB: gtg-apldatnetvat"
+  tests:
+    - hdr(host) -i apldatnetvat.gtgs.net
+    - hdr(host) -i apldatnetvat-dr.gtgs.net
+host_gtg-aplimstest:
+  description: "GTG NLB: gtg-aplimstest"
+  tests:
+    - hdr(host) -i aplautotest.gtgs.net
+    - hdr(host) -i aplhwaytest.gtgs.net
+    - hdr(host) -i aplimstest.gtgs.net
+    - hdr(host) -i aplimstestcust.gtgs.net
+    - hdr(host) -i apllautotest.gtgs.net
+    - hdr(host) -i apllhwaytest.gtgs.net
+    - hdr(host) -i apllimstest.gtgs.net
+    - hdr(host) -i apllimstestcust.gtgs.net
+host_gtg-aplmex:
+  description: "GTG NLB: gtg-aplmex"
+  tests:
+    - hdr(host) -i apllmex.gtgs.net
+    - hdr(host) -i apllmexcust.gtgs.net
+host_gtg-aplmexdatnet:
+  description: "GTG NLB: gtg-aplmexdatnet"
+  tests:
+    - hdr(host) -i apllmexdatnet.gtgs.net
+host_gtg-aplmextest:
+  description: "GTG NLB: gtg-aplmextest"
+  tests:
+    - hdr(host) -i apllmextest.gtgs.net
+    - hdr(host) -i apllmextestcust.gtgs.net
+host_gtg-avims:
+  description: "GTG NLB: gtg-avims"
+  tests:
+    - hdr(host) -i avbms.gtgs.net
+    - hdr(host) -i avbora.gtgs.net
+    - hdr(host) -i avdms.gtgs.net
+    - hdr(host) -i avicustomer.gtgs.net
+    - hdr(host) -i avims.gtgs.net
+    - hdr(host) -i aviora.gtgs.net
+    - hdr(host) -i avimscust.gtgs.net
+host_gtg-avimsdatnet:
+  description: "GTG NLB: gtg-avimsdatnet"
+  tests:
+    - hdr(host) -i avbms-dr.gtgs.net
+    - hdr(host) -i avbmsdatnet.gtgs.net
+    - hdr(host) -i avdms-dr.gtgs.net
+    - hdr(host) -i avims-dr.gtgs.net
+    - hdr(host) -i avimsdatnet.gtgs.net
+host_gtg-avtestdms:
+  description: "GTG NLB: gtg-avtestdms"
+  tests:
+    - hdr(host) -i avitestcustomer.gtgs.net
+    - hdr(host) -i avtestdms.gtgs.net
+    - hdr(host) -i avtestims.gtgs.net
+host_gtg-celtic:
+  description: "GTG NLB: gtg-celtic"
+  tests:
+    - hdr(host) -i celcha.gtgs.net
+    - hdr(host) -i celchi.gtgs.net
+    - hdr(host) -i celdnap.gtgs.net
+    - hdr(host) -i celdow.gtgs.net
+    - hdr(host) -i celdow-dr.gtgs.net
+    - hdr(host) -i celfra.gtgs.net
+    - hdr(host) -i celfra-dr.gtgs.net
+    - hdr(host) -i celgar.gtgs.net
+    - hdr(host) -i celhou.gtgs.net
+    - hdr(host) -i celsto.gtgs.net
+    - hdr(host) -i celsto-dr.gtgs.net
+    - hdr(host) -i celtic.gtgs.net
+    - hdr(host) -i celticcustomer.gtgs.net
+    - hdr(host) -i replceltic.gtgs.net
+    - hdr(host) -i celmem.gtgs.net
+host_gtg-celticdatnet:
+  description: "GTG NLB: gtg-celticdatnet"
+  tests:
+    - hdr(host) -i celcha-dr.gtgs.net
+    - hdr(host) -i celdatnet.gtgs.net
+    - hdr(host) -i celdnap-dr.gtgs.net
+    - hdr(host) -i celgar-dr.gtgs.net
+    - hdr(host) -i celhou-dr.gtgs.net
+    - hdr(host) -i celsto-datnet.gtgs.net
+    - hdr(host) -i celtic-dr.gtgs.net
+    - hdr(host) -i celticdatnet.gtgs.net
+    - hdr(host) -i celmem-dr.gtgs.net
+host_gtg-cglsan:
+  description: "GTG NLB: gtg-cglsan"
+  tests:
+    - hdr(host) -i cglall.gtgs.net
+    - hdr(host) -i cglsan.gtgs.net
+host_gtg-cglsan-dr:
+  description: "GTG NLB: gtg-cglsan-dr"
+  tests:
+    - hdr(host) -i cglall-dr.gtgs.net
+    - hdr(host) -i cglsan-dr.gtgs.net
+host_gtg-chicic:
+  description: "GTG NLB: gtg-chicic"
+  tests:
+    - hdr(host) -i chicagointermodalcustomer.gtgs.net
+    - hdr(host) -i chicic.gtgs.net
+    - hdr(host) -i chiciclanding.gtgs.net
+    - hdr(host) -i chiind.gtgs.net
+    - hdr(host) -i chiinttabnet.gtgs.net
+    - hdr(host) -i chikan.gtgs.net
+    - hdr(host) -i chimia.gtgs.net
+    - hdr(host) -i chisai.gtgs.net
+host_gtg-chicictest:
+  description: "GTG NLB: gtg-chicictest"
+  tests:
+    - hdr(host) -i chicictest.gtgs.net
+    - hdr(host) -i chiinttabnettest.gtgs.net
+host_gtg-chidatnet:
+  description: "GTG NLB: gtg-chidatnet"
+  tests:
+    - hdr(host) -i chicic-dr.gtgs.net
+    - hdr(host) -i chidatnet.gtgs.net
+    - hdr(host) -i chiind-dr.gtgs.net
+    - hdr(host) -i chikan-dr.gtgs.net
+    - hdr(host) -i chisai-dr.gtgs.net
+host_gtg-ckchitest:
+  description: "GTG NLB: gtg-ckchitest"
+  tests:
+    - hdr(host) -i ckchitest.gtgs.net
+host_gtg-ckmultitest:
+  description: "GTG NLB: gtg-ckmultitest"
+  tests:
+    - hdr(host) -i ckmulticustomer.gtgs.net
+    - hdr(host) -i ckmultidal.gtgs.net
+    - hdr(host) -i ckmultitest.gtgs.net
+host_gtg-ckpacwil:
+  description: "GTG NLB: gtg-ckpacwil"
+  tests:
+    - hdr(host) -i ckpackwilcust.gtgs.net
+    - hdr(host) -i ckpacwil.gtgs.net
+    - hdr(host) -i ckpacwilcust.gtgs.net
+host_gtg-ckpacwildatnet:
+  description: "GTG NLB: gtg-ckpacwildatnet"
+  tests:
+    - hdr(host) -i ckpacwildatnet.gtgs.net
+host_gtg-ckterminaldatnet:
+  description: "GTG NLB: gtg-ckterminaldatnet"
+  tests:
+    - hdr(host) -i ckcin-dr.gtgs.net
+    - hdr(host) -i cklax-dr.gtgs.net
+    - hdr(host) -i cknol-dr.gtgs.net
+    - hdr(host) -i ckskyamedr.gtgs.net
+    - hdr(host) -i ckterminaldatnet.gtgs.net
+host_gtg-cktraining:
+  description: "GTG NLB: gtg-cktraining"
+  tests:
+    - hdr(host) -i cktraining.gtgs.net
+host_gtg-cktrucking:
+  description: "GTG NLB: gtg-cktrucking"
+  tests:
+    - hdr(host) -i chchi.gtgs.net
+    - hdr(host) -i ckatl.gtgs.net
+    - hdr(host) -i ckbal.gtgs.net
+    - hdr(host) -i ckcha.gtgs.net
+    - hdr(host) -i ckchi.gtgs.net
+    - hdr(host) -i ckcin.gtgs.net
+    - hdr(host) -i ckcle.gtgs.net
+    - hdr(host) -i ckcol.gtgs.net
+    - hdr(host) -i ckcom.gtgs.net
+    - hdr(host) -i ckcustomer.gtgs.net
+    - hdr(host) -i ckcustomerapi.gtgs.net
+    - hdr(host) -i ckdal.gtgs.net
+    - hdr(host) -i ckdet.gtgs.net
+    - hdr(host) -i ckfro.gtgs.net
+    - hdr(host) -i ckhou.gtgs.net
+    - hdr(host) -i ckind.gtgs.net
+    - hdr(host) -i ckjac.gtgs.net
+    - hdr(host) -i ckkan.gtgs.net
+    - hdr(host) -i ckkea.gtgs.net
+    - hdr(host) -i cklanding.gtgs.net
+    - hdr(host) -i cklax.gtgs.net
+    - hdr(host) -i ckmem.gtgs.net
+    - hdr(host) -i cknol.gtgs.net
+    - hdr(host) -i cknor.gtgs.net
+    - hdr(host) -i ckpho.gtgs.net
+    - hdr(host) -i cksav.gtgs.net
+    - hdr(host) -i cksea.gtgs.net
+    - hdr(host) -i cktrucking.gtgs.net
+    - hdr(host) -i cktruckinglanding.gtgs.net
+    - hdr(host) -i ckxts.gtgs.net
+host_gtg-cofchol:
+  description: "GTG NLB: gtg-cofchol"
+  tests:
+    - hdr(host) -i cofccustomer.gtgs.net
+    - hdr(host) -i cofceld.gtgs.net
+    - hdr(host) -i cofchol.gtgs.net
+host_gtg-cofcholtest:
+  description: "GTG NLB: gtg-cofcholtest"
+  tests:
+    - hdr(host) -i chetucustomerdev.gtgs.net
+    - hdr(host) -i cofccustdev.gtgs.net
+    - hdr(host) -i cofcholdev.gtgs.net
+    - hdr(host) -i cofcholtest.gtgs.net
+host_gtg-cofcmx:
+  description: "GTG NLB: gtg-cofcmx"
+  tests:
+    - hdr(host) -i cofcmx.gtgs.net
+    - hdr(host) -i cofcmxcustomer.gtgs.net
+host_gtg-cofcmxdatnet:
+  description: "GTG NLB: gtg-cofcmxdatnet"
+  tests:
+    - hdr(host) -i cofcmxdatnet.gtgs.net
+host_gtg-contest:
+  description: "GTG NLB: gtg-contest"
+  tests:
+    - hdr(host) -i conatltest.gtgs.net
+    - hdr(host) -i conchatest.gtgs.net
+    - hdr(host) -i concintest.gtgs.net
+    - hdr(host) -i conloutest.gtgs.net
+    - hdr(host) -i contest.gtgs.net
+host_gtg-continuum:
+  description: "GTG NLB: gtg-continuum"
+  tests:
+    - hdr(host) -i conatl.gtgs.net
+    - hdr(host) -i conbal.gtgs.net
+    - hdr(host) -i concha.gtgs.net
+    - hdr(host) -i conchacust.gtgs.net
+    - hdr(host) -i conchi.gtgs.net
+    - hdr(host) -i conchl.gtgs.net
+    - hdr(host) -i concin.gtgs.net
+    - hdr(host) -i concle.gtgs.net
+    - hdr(host) -i concol.gtgs.net
+    - hdr(host) -i condal.gtgs.net
+    - hdr(host) -i conjac.gtgs.net
+    - hdr(host) -i conkan.gtgs.net
+    - hdr(host) -i conkancust.gtgs.net
+    - hdr(host) -i conlar.gtgs.net
+    - hdr(host) -i conlou.gtgs.net
+    - hdr(host) -i conmem.gtgs.net
+    - hdr(host) -i consav.gtgs.net
+    - hdr(host) -i continuum.gtgs.net
+    - hdr(host) -i continuumlanding.gtgs.net
+    - hdr(host) -i conhou.gtgs.net
+host_gtg-continuumdatnet:
+  description: "GTG NLB: gtg-continuumdatnet"
+  tests:
+    - hdr(host) -i conatl-dr.gtgs.net
+    - hdr(host) -i conatldatnet.gtgs.net
+    - hdr(host) -i conbal-dr.gtgs.net
+    - hdr(host) -i concha-dr.gtgs.net
+    - hdr(host) -i conchadatnet.gtgs.net
+    - hdr(host) -i conchi-dr.gtgs.net
+    - hdr(host) -i conchidatnet.gtgs.net
+    - hdr(host) -i conchl-dr.gtgs.net
+    - hdr(host) -i conchldatnet.gtgs.net
+    - hdr(host) -i concin-dr.gtgs.net
+    - hdr(host) -i concindatnet.gtgs.net
+    - hdr(host) -i concle-dr.gtgs.net
+    - hdr(host) -i concledatnet.gtgs.net
+    - hdr(host) -i concol-dr.gtgs.net
+    - hdr(host) -i concoldatnet.gtgs.net
+    - hdr(host) -i condal-dr.gtgs.net
+    - hdr(host) -i condaldatnet.gtgs.net
+    - hdr(host) -i conjac-dr.gtgs.net
+    - hdr(host) -i conjacdatnet.gtgs.net
+    - hdr(host) -i conkan-dr.gtgs.net
+    - hdr(host) -i conkandatnet.gtgs.net
+    - hdr(host) -i conlar-dr.gtgs.net
+    - hdr(host) -i conlardatnet.gtgs.net
+    - hdr(host) -i conlou-dr.gtgs.net
+    - hdr(host) -i conloudatnet.gtgs.net
+    - hdr(host) -i conmem-dr.gtgs.net
+    - hdr(host) -i conmemdatnet.gtgs.net
+    - hdr(host) -i consav-dr.gtgs.net
+    - hdr(host) -i continuumdatnet.gtgs.net
+    - hdr(host) -i conhou-dr.gtgs.net
+host_gtg-continuumdatnetbi:
+  description: "GTG NLB: gtg-continuumdatnetbi"
+  tests:
+    - hdr(host) -i biteamdatnet.gtgs.net
+    - hdr(host) -i continuumdatnetbi.gtgs.net
+host_gtg-crepllasernet:
+  description: "GTG NLB: gtg-crepllasernet"
+  tests:
+    - hdr(host) -i laserdatnet.gtgs.net
+host_gtg-creplsunrise:
+  description: "GTG NLB: gtg-creplsunrise"
+  tests:
+    - hdr(host) -i sunrisedatnet.gtgs.net
+host_gtg-datnet:
+  description: "GTG NLB: gtg-datnet"
+  tests:
+    - hdr(host) -i gtgdatnet.gtgs.net
+host_gtg-datnetdev:
+  description: "GTG NLB: gtg-datnetdev"
+  tests:
+    - hdr(host) -i datnetdev.gtgs.net
+host_gtg-demorms:
+  description: "GTG NLB: gtg-demorms"
+  tests:
+    - hdr(host) -i demorms.gtgs.net
+host_gtg-draydemo:
+  description: "GTG NLB: gtg-draydemo"
+  tests:
+    - hdr(host) -i draydemo.gtgs.net
+host_gtg-edgmontest:
+  description: "GTG NLB: gtg-edgmontest"
+  tests:
+    - hdr(host) -i edgmontest.gtgs.net
+host_gtg-edi:
+  description: "GTG NLB: gtg-edi"
+  tests:
+    - hdr(host) -i edi.gtgs.net
+host_gtg-excargo:
+  description: "GTG NLB: gtg-excargo"
+  tests:
+    - hdr(host) -i excargocust.gtgs.net
+    - hdr(host) -i exchou.gtgs.net
+    - hdr(host) -i myexcargo.com
+    - hdr(host) -i www.myexcargo.com
+host_gtg-excargodatanet:
+  description: "GTG NLB: gtg-excargodatanet"
+  tests:
+    - hdr(host) -i excargo-dr.gtgs.net
+    - hdr(host) -i excargocust-dr.gtgs.net
+    - hdr(host) -i excargodatanet.gtgs.net
+    - hdr(host) -i excargodatnet.gtgs.net
+host_gtg-excargotest:
+  description: "GTG NLB: gtg-excargotest"
+  tests:
+    - hdr(host) -i excargotest.gtgs.net
+host_gtg-galaxy:
+  description: "GTG NLB: gtg-galaxy"
+  tests:
+    - hdr(host) -i customer_galaxy.gtgs.net
+    - hdr(host) -i galaxy.gtgs.net
+    - hdr(host) -i galcic.gtgs.net
+    - hdr(host) -i mygalaxy.gtgs.net
+host_gtg-galaxydatnet:
+  description: "GTG NLB: gtg-galaxydatnet"
+  tests:
+    - hdr(host) -i galaxy-dr.gtgs.net
+    - hdr(host) -i galaxydatnet.gtgs.net
+    - hdr(host) -i galcic-dr.gtgs.net
+host_gtg-genesisdatnet:
+  description: "GTG NLB: gtg-genesisdatnet"
+  tests:
+    - hdr(host) -i genesis-dr.gtgs.net
+    - hdr(host) -i genggra-dr.gtgs.net
+    - hdr(host) -i genglos-dr.gtgs.net
+    - hdr(host) -i gengsan-dr.gtgs.net
+    - hdr(host) -i gengsto-dr.gtgs.net
+    - hdr(host) -i genhsan-dr.gtgs.net
+    - hdr(host) -i genpphx-dr.gtgs.net
+    - hdr(host) -i gentlos-dr.gtgs.net
+    - hdr(host) -i gentsan-dr.gtgs.net
+    - hdr(host) -i gentsto-dr.gtgs.net
+    - hdr(host) -i genx-dr.gtgs.net
+    - hdr(host) -i genxatl-dr.gtgs.net
+    - hdr(host) -i genxcha-dr.gtgs.net
+    - hdr(host) -i genxchr-dr.gtgs.net
+    - hdr(host) -i genxdal-dr.gtgs.net
+    - hdr(host) -i genxdatnet.gtgs.net
+    - hdr(host) -i genxhou-dr.gtgs.net
+    - hdr(host) -i genxmem-dr.gtgs.net
+    - hdr(host) -i intermodalsolutions-dr.gtgs.net
+    - hdr(host) -i norppor-dr.gtgs.net
+    - hdr(host) -i norpsea-dr.gtgs.net
+    - hdr(host) -i norptac-dr.gtgs.net
+    - hdr(host) -i norxdal-dr.gtgs.net
+    - hdr(host) -i norxhou-dr.gtgs.net
+    - hdr(host) -i norxlos-dr.gtgs.net
+    - hdr(host) -i norxmem-dr.gtgs.net
+    - hdr(host) -i norxsav-dr.gtgs.net
+host_gtg-gtgtech:
+  description: "GTG NLB: gtg-gtgtech"
+  tests:
+    - hdr(host) -i bnsfwebhook.gtgs.net
+    - hdr(host) -i gtgtech.gtgs.net
+    - hdr(host) -i mygtg.gtgs.net
+host_gtg-iqims:
+  description: "GTG NLB: gtg-iqims"
+  tests:
+    - hdr(host) -i iqbms.gtgs.net
+    - hdr(host) -i iqchu.gtgs.net
+    - hdr(host) -i iqcustomer.gtgs.net
+    - hdr(host) -i iqims.gtgs.net
+host_gtg-iqimsdatnet:
+  description: "GTG NLB: gtg-iqimsdatnet"
+  tests:
+    - hdr(host) -i iqbms-dr.gtgs.net
+    - hdr(host) -i iqchu-dr.gtgs.net
+    - hdr(host) -i iqims-dr.gtgs.net
+    - hdr(host) -i iqimsdatnet.gtgs.net
+host_gtg-isc:
+  description: "GTG NLB: gtg-isc"
+  tests:
+    - hdr(host) -i isc.gtgs.net
+    - hdr(host) -i isc.isclive.net
+    - hdr(host) -i iscchi.gtgs.net
+    - hdr(host) -i iscchi.isclive.net
+    - hdr(host) -i isccht.gtgs.net
+    - hdr(host) -i isccht.isclive.net
+    - hdr(host) -i iscelp.gtgs.net
+    - hdr(host) -i iscelp.isclive.net
+    - hdr(host) -i iscelt.gtgs.net
+    - hdr(host) -i iscelt.isclive.net
+    - hdr(host) -i iscjat.gtgs.net
+    - hdr(host) -i iscjat.isclive.net
+    - hdr(host) -i iscjax.gtgs.net
+    - hdr(host) -i iscjax.isclive.net
+    - hdr(host) -i isclive.net
+    - hdr(host) -i iscmem.gtgs.net
+    - hdr(host) -i iscmem.isclive.net
+    - hdr(host) -i iscmet.gtgs.net
+    - hdr(host) -i iscmet.isclive.net
+    - hdr(host) -i iscmex.gtgs.net
+    - hdr(host) -i iscmex.isclive.net
+    - hdr(host) -i iscmxt.gtgs.net
+    - hdr(host) -i iscmxt.isclive.net
+    - hdr(host) -i iscota.isclive.net
+    - hdr(host) -i iscott.isclive.net
+    - hdr(host) -i iscsan.gtgs.net
+    - hdr(host) -i iscsan.isclive.net
+    - hdr(host) -i iscsat.gtgs.net
+    - hdr(host) -i iscsat.isclive.net
+    - hdr(host) -i mail.isclive.net
+    - hdr(host) -i my.isclive.net
+    - hdr(host) -i myisclive.gtgs.net
+host_gtg-iscas2:
+  description: "GTG NLB: gtg-iscas2"
+  tests:
+    - hdr(host) -i iscas2.gtgs.net
+host_gtg-iscdatnet:
+  description: "GTG NLB: gtg-iscdatnet"
+  tests:
+    - hdr(host) -i iscdatnet.gtgs.net
+host_gtg-ivvedatnet:
+  description: "GTG NLB: gtg-ivvedatnet"
+  tests:
+    - hdr(host) -i ivvedatnet.gtgs.net
+host_gtg-ivvetrans:
+  description: "GTG NLB: gtg-ivvetrans"
+  tests:
+    - hdr(host) -i ivvecust.gtgs.net
+    - hdr(host) -i ivvehou.gtgs.net
+    - hdr(host) -i ivveotr.gtgs.net
+    - hdr(host) -i ivvetran.gtgs.net
+    - hdr(host) -i ivvetrans.gtgs.net
+    - hdr(host) -i alliedcustomer.gtgs.net
+host_gtg-jettrans:
+  description: "GTG NLB: gtg-jettrans"
+  tests:
+    - hdr(host) -i jettrans.gtgs.net
+host_gtg-jettransport:
+  description: "GTG NLB: gtg-jettransport"
+  tests:
+    - hdr(host) -i jet.gtgs.net
+    - hdr(host) -i jetchicust.gtgs.net
+    - hdr(host) -i jetchidisp.gtgs.net
+    - hdr(host) -i jettransport.gtgs.net
+    - hdr(host) -i myjet.gtgs.net
+host_gtg-knightimccent:
+  description: "GTG NLB: gtg-knightimccent"
+  tests:
+    - hdr(host) -i customer_knight.gtgs.net
+    - hdr(host) -i draynet_knight.gtgs.net
+    - hdr(host) -i knightcust.gtgs.net
+    - hdr(host) -i knightimc.gtgs.net
+    - hdr(host) -i knightimccent.gtgs.net
+    - hdr(host) -i knighttrans.gtgs.net
+host_gtg-knighttranstest:
+  description: "GTG NLB: gtg-knighttranstest"
+  tests:
+    - hdr(host) -i knighttranstest.gtgs.net
+host_gtg-lasernet:
+  description: "GTG NLB: gtg-lasernet"
+  tests:
+    - hdr(host) -i lasercust.gtgs.net
+    - hdr(host) -i lasernet.gtgs.net
+    - hdr(host) -i lsrcet.gtgs.net
+    - hdr(host) -i lsrcha.gtgs.net
+    - hdr(host) -i lsrche.gtgs.net
+    - hdr(host) -i lsrchn.gtgs.net
+    - hdr(host) -i lsrchs.gtgs.net
+    - hdr(host) -i lsrcht.gtgs.net
+    - hdr(host) -i lsrchw.gtgs.net
+    - hdr(host) -i lsrcnt.gtgs.net
+    - hdr(host) -i lsrcst.gtgs.net
+    - hdr(host) -i lsrcwt.gtgs.net
+    - hdr(host) -i lsrdet.gtgs.net
+    - hdr(host) -i lsrgrm.gtgs.net
+    - hdr(host) -i lsrgrt.gtgs.net
+    - hdr(host) -i lsridf.gtgs.net
+    - hdr(host) -i lsridt.gtgs.net
+    - hdr(host) -i lsrjac.gtgs.net
+    - hdr(host) -i lsrjat.gtgs.net
+    - hdr(host) -i lsrnet.gtgs.net
+    - hdr(host) -i lsrtay.gtgs.net
+    - hdr(host) -i mylsr.gtgs.net
+    - hdr(host) -i ritcht.gtgs.net
+    - hdr(host) -i ritdal.gtgs.net
+    - hdr(host) -i ritdat.gtgs.net
+    - hdr(host) -i ritdav.gtgs.net
+    - hdr(host) -i ritdic.gtgs.net
+    - hdr(host) -i ritdit.gtgs.net
+    - hdr(host) -i ritelp.gtgs.net
+    - hdr(host) -i riteway.gtgs.net
+    - hdr(host) -i ritfit.gtgs.net
+    - hdr(host) -i ritgla.gtgs.net
+    - hdr(host) -i rithou.gtgs.net
+    - hdr(host) -i ritjac.gtgs.net
+    - hdr(host) -i ritjak.gtgs.net
+    - hdr(host) -i ritjat.gtgs.net
+    - hdr(host) -i ritkcm.gtgs.net
+    - hdr(host) -i ritkct.gtgs.net
+    - hdr(host) -i ritliv.gtgs.net
+    - hdr(host) -i ritlot.gtgs.net
+    - hdr(host) -i ritlou.gtgs.net
+    - hdr(host) -i ritlsg.gtgs.net
+    - hdr(host) -i ritlst.gtgs.net
+    - hdr(host) -i ritmem.gtgs.net
+    - hdr(host) -i ritmia.gtgs.net
+    - hdr(host) -i ritmit.gtgs.net
+    - hdr(host) -i ritply.gtgs.net
+    - hdr(host) -i ritsan.gtgs.net
+    - hdr(host) -i ritsat.gtgs.net
+    - hdr(host) -i rittat.gtgs.net
+    - hdr(host) -i rittay.gtgs.net
+host_gtg-lee:
+  description: "GTG NLB: gtg-lee"
+  tests:
+    - hdr(host) -i lee.gtgs.net
+    - hdr(host) -i leeemployee.gtgs.net
+    - hdr(host) -i leesds.gtgs.net
+    - hdr(host) -i ltbmex.gtgs.net
+    - hdr(host) -i ltbque.gtgs.net
+    - hdr(host) -i ltbstt.gtgs.net
+    - hdr(host) -i ltbstu.gtgs.net
+    - hdr(host) -i ltbwest.gtgs.net
+    - hdr(host) -i myltb.gtgs.net
+host_gtg-leedatnet:
+  description: "GTG NLB: gtg-leedatnet"
+  tests:
+    - hdr(host) -i leedatnet.gtgs.net
+host_gtg-mail1:
+  description: "GTG NLB: gtg-mail"
+  tests:
+    - hdr(host) -i faultline.gtgs.net
+    - hdr(host) -i genggra.gtgs.net
+    - hdr(host) -i genglos.gtgs.net
+    - hdr(host) -i gengsan.gtgs.net
+    - hdr(host) -i gengsto.gtgs.net
+    - hdr(host) -i genhsan.gtgs.net
+    - hdr(host) -i genpphx.gtgs.net
+    - hdr(host) -i gentlos.gtgs.net
+    - hdr(host) -i gentsan.gtgs.net
+    - hdr(host) -i gentsto.gtgs.net
+    - hdr(host) -i genx.gtgs.net
+    - hdr(host) -i genxatl.gtgs.net
+    - hdr(host) -i genxcha.gtgs.net
+    - hdr(host) -i genxchr.gtgs.net
+    - hdr(host) -i genxdal.gtgs.net
+    - hdr(host) -i genxhou.gtgs.net
+    - hdr(host) -i genxmem.gtgs.net
+    - hdr(host) -i intermodalsolutions.gtgs.net
+    - hdr(host) -i norppor.gtgs.net
+    - hdr(host) -i norpsea.gtgs.net
+    - hdr(host) -i norptac.gtgs.net
+    - hdr(host) -i norxdal.gtgs.net
+    - hdr(host) -i norxhou.gtgs.net
+    - hdr(host) -i norxlos.gtgs.net
+    - hdr(host) -i norxmem.gtgs.net
+    - hdr(host) -i norxsav.gtgs.net
+    - hdr(host) -i wdosan.gtgs.net
+    - hdr(host) -i titancust.gtgs.net
+    - hdr(host) -i grapevinecust.gtgs.net
+    - hdr(host) -i pnwcust.gtgs.net
+host_gtg-manabb:
+  description: "GTG NLB: gtg-manabb"
+  tests:
+    - hdr(host) -i manabb.gtgs.net
+    - hdr(host) -i manabbcust.gtgs.net
+host_gtg-mantestabb:
+  description: "GTG NLB: gtg-mantestabb"
+  tests:
+    - hdr(host) -i mantestabb.gtgs.net
+host_gtg-mcfawhse:
+  description: "GTG NLB: gtg-mcfawhse"
+  tests:
+    - hdr(host) -i harborfreight.gtgs.net
+    - hdr(host) -i mcfa.gtgs.net
+    - hdr(host) -i mcfawhse.gtgs.net
+    - hdr(host) -i tcitrk.gtgs.net
+host_gtg-mcfawhse-dr:
+  description: "GTG NLB: gtg-mcfawhse-dr"
+  tests:
+    - hdr(host) -i mcfawhse-dr.gtgs.net
+host_gtg-mqconnect:
+  description: "GTG NLB: gtg-mqconnect"
+  tests:
+    - hdr(host) -i mq.gtgs.net
+host_gtg-nfi:
+  description: "GTG NLB: gtg-nfi"
+  tests:
+    - hdr(host) -i nfi.gtgs.net
+    - hdr(host) -i nfican.gtgs.net
+    - hdr(host) -i nficust.gtgs.net
+    - hdr(host) -i nfidriver.gtgs.net
+host_gtg-nficanadatest:
+  description: "GTG NLB: gtg-nficanadatest"
+  tests:
+    - hdr(host) -i nficanadatest.gtgs.net
+    - hdr(host) -i nficantest.gtgs.net
+    - hdr(host) -i nficusttest.gtgs.net
+    - hdr(host) -i nfiusatest.gtgs.net
+    - hdr(host) -i takdel1cust.gtgs.net
+    - hdr(host) -i takdel1disp.gtgs.net
+host_gtg-nficandatnet:
+  description: "GTG NLB: gtg-nficandatnet"
+  tests:
+    - hdr(host) -i nficandatnet.gtgs.net
+host_gtg-ocs:
+  description: "GTG NLB: gtg-ocs"
+  tests:
+    - hdr(host) -i ocs.gtgs.net
+host_gtg-pacificcascade:
+  description: "GTG NLB: gtg-pacificcascade"
+  tests:
+    - hdr(host) -i custpctruck.gtgs.net
+    - hdr(host) -i pacificcascade.gtgs.net
+    - hdr(host) -i pacyard.gtgs.net
+host_gtg-patriotdatnet:
+  description: "GTG NLB: gtg-patriotdatnet"
+  tests:
+    - hdr(host) -i patriotdatnet.gtgs.net
+    - hdr(host) -i patdtjax-dr.gtgs.net
+host_gtg-pbielk:
+  description: "GTG NLB: gtg-pbielk"
+  tests:
+    - hdr(host) -i pbiaus.gtgs.net
+    - hdr(host) -i pbiauscust.gtgs.net
+    - hdr(host) -i pbidal.gtgs.net
+    - hdr(host) -i pbidalcust.gtgs.net
+    - hdr(host) -i pbielk.gtgs.net
+    - hdr(host) -i pbielkcust.gtgs.net
+    - hdr(host) -i pbimem.gtgs.net
+    - hdr(host) -i pbimemcust.gtgs.net
+    - hdr(host) -i pbisav.gtgs.net
+    - hdr(host) -i pbisavcust.gtgs.net
+host_gtg-pbielkdatnet:
+  description: "GTG NLB: gtg-pbielkdatnet"
+  tests:
+    - hdr(host) -i pbiaus-dr.gtgs.net
+    - hdr(host) -i pbiausdatnet.gtgs.net
+    - hdr(host) -i pbidal-dr.gtgs.net
+    - hdr(host) -i pbidaldatnet.gtgs.net
+    - hdr(host) -i pbielk-dr.gtgs.net
+    - hdr(host) -i pbielkdatnet.gtgs.net
+    - hdr(host) -i pbimem-dr.gtgs.net
+    - hdr(host) -i pbimemdatnet.gtgs.net
+    - hdr(host) -i pbisav-dr.gtgs.net
+    - hdr(host) -i pbisavdatnet.gtgs.net
+host_gtg-persan:
+  description: "GTG NLB: gtg-persan"
+  tests:
+    - hdr(host) -i perdal.gtgs.net
+    - hdr(host) -i persan.gtgs.net
+    - hdr(host) -i persancust.gtgs.net
+    - hdr(host) -i persancustomer.gtgs.net
+host_gtg-persandatnet:
+  description: "GTG NLB: gtg-persandatnet"
+  tests:
+    - hdr(host) -i persan-dr.gtgs.net
+    - hdr(host) -i persandatnet.gtgs.net
+host_gtg-portserv:
+  description: "GTG NLB: gtg-portserv"
+  tests:
+    - hdr(host) -i portserv.gtgs.net
+    - hdr(host) -i portservcust.gtgs.net
+host_gtg-portservdatnet:
+  description: "GTG NLB: gtg-portservdatnet"
+  tests:
+    - hdr(host) -i portservdatnet.gtgs.net
+host_gtg-reicit:
+  description: "GTG NLB: gtg-reicit"
+  tests:
+    - hdr(host) -i reicit.gtgs.net
+    - hdr(host) -i reicitcust.gtgs.net
+host_gtg-reicitdatnet:
+  description: "GTG NLB: gtg-reicitdatnet"
+  tests:
+    - hdr(host) -i reicit-dr.gtgs.net
+    - hdr(host) -i reicitdatnet.gtgs.net
+host_gtg-runrates2:
+  description: "GTG NLB: gtg-runrates2"
+  tests:
+    - hdr(host) -i demoratenet.gtgs.net
+    - hdr(host) -i ratenet-aplauto.gtgs.net
+    - hdr(host) -i ratenet-apllog.gtgs.net
+    - hdr(host) -i ratenet-aplmex.gtgs.net
+    - hdr(host) -i ratenet-avims.gtgs.net
+    - hdr(host) -i ratenet-celint.gtgs.net
+    - hdr(host) -i ratenet-conway.gtgs.net
+    - hdr(host) -i ratenet-dedlar.gtgs.net
+    - hdr(host) -i ratenet-intd.gtgs.net
+    - hdr(host) -i ratenet-intlog.gtgs.net
+    - hdr(host) -i ratenet-iqims.gtgs.net
+    - hdr(host) -i ratenet-iscorp.gtgs.net
+    - hdr(host) -i ratenet-knichel.gtgs.net
+    - hdr(host) -i ratenet-knight.gtgs.net
+    - hdr(host) -i ratenet-lasernet.gtgs.net
+    - hdr(host) -i ratenet-ltbint.gtgs.net
+    - hdr(host) -i ratenet-manabb.gtgs.net
+    - hdr(host) -i ratenet-nfi.gtgs.net
+    - hdr(host) -i ratenet-swift.gtgs.net
+    - hdr(host) -i ratenet-test.gtgs.net
+    - hdr(host) -i runrates2.gtgs.net
+    - hdr(host) -i testdemodms.gtgs.net
+    - hdr(host) -i testdemoims.gtgs.net
+host_gtg-runratescent:
+  description: "GTG NLB: gtg-runratescent"
+  tests:
+    - hdr(host) -i raildemo.gtgs.net
+    - hdr(host) -i rater-sandbox.gtgs.net
+    - hdr(host) -i runrates-swift-test.gtgs.net
+    - hdr(host) -i runratescent.gtgs.net
+    - hdr(host) -i swiftrater.gtgs.net
+host_gtg-shicorp:
+  description: "GTG NLB: gtg-shicorp"
+  tests:
+    - hdr(host) -i customershisea.gtgs.net
+    - hdr(host) -i customershivan.gtgs.net
+    - hdr(host) -i shicorp.gtgs.net
+    - hdr(host) -i shisea.gtgs.net
+    - hdr(host) -i shivan.gtgs.net
+host_gtg-shicorpdatnet:
+  description: "GTG NLB: gtg-shicorpdatnet"
+  tests:
+    - hdr(host) -i shicorpdatnet.gtgs.net
+    - hdr(host) -i shisea-dr.gtgs.net
+    - hdr(host) -i shivan-dr.gtgs.net
+host_gtg-shiseatest:
+  description: "GTG NLB: gtg-shiseatest"
+  tests:
+    - hdr(host) -i shicorptest.gtgs.net
+    - hdr(host) -i shiseatest.gtgs.net
+    - hdr(host) -i shivantest.gtgs.net
+host_gtg-singh:
+  description: "GTG NLB: gtg-singh"
+  tests:
+    - hdr(host) -i singh.gtgs.net
+    - hdr(host) -i singhcust.gtgs.net
+    - hdr(host) -i singhcustomer.gtgs.net
+host_gtg-singhdatnet:
+  description: "GTG NLB: gtg-singhdatnet"
+  tests:
+    - hdr(host) -i singh-dr.gtgs.net
+    - hdr(host) -i singhdatnet.gtgs.net
+host_gtg-singhtest:
+  description: "GTG NLB: gtg-singhtest"
+  tests:
+    - hdr(host) -i singhtest.gtgs.net
+host_gtg-skydatnet1:
+  description: "GTG NLB: gtg-skydatnet"
+  tests:
+    - hdr(host) -i chchi-dr.gtgs.net
+    - hdr(host) -i ckatl-dr.gtgs.net
+    - hdr(host) -i ckbal-dr.gtgs.net
+    - hdr(host) -i ckcha-dr.gtgs.net
+    - hdr(host) -i ckchi-dr.gtgs.net
+    - hdr(host) -i ckcle-dr.gtgs.net
+    - hdr(host) -i ckcol-dr.gtgs.net
+    - hdr(host) -i ckcom-dr.gtgs.net
+    - hdr(host) -i ckdal-dr.gtgs.net
+    - hdr(host) -i ckdet-dr.gtgs.net
+    - hdr(host) -i ckfro-dr.gtgs.net
+    - hdr(host) -i ckhou-dr.gtgs.net
+    - hdr(host) -i ckind-dr.gtgs.net
+    - hdr(host) -i ckjac-dr.gtgs.net
+    - hdr(host) -i ckkan-dr.gtgs.net
+    - hdr(host) -i ckkea-dr.gtgs.net
+    - hdr(host) -i ckmem-dr.gtgs.net
+    - hdr(host) -i cknor-dr.gtgs.net
+    - hdr(host) -i ckpho-dr.gtgs.net
+    - hdr(host) -i cksav-dr.gtgs.net
+    - hdr(host) -i cksea-dr.gtgs.net
+    - hdr(host) -i ckskyala-dr.gtgs.net
+    - hdr(host) -i ckskyamn-dr.gtgs.net
+    - hdr(host) -i ckskyave-dr.gtgs.net
+    - hdr(host) -i ckskybal-dr.gtgs.net
+    - hdr(host) -i ckskybed-dr.gtgs.net
+    - hdr(host) -i ckskyber-dr.gtgs.net
+    - hdr(host) -i ckskyblt-dr.gtgs.net
+    - hdr(host) -i ckskybrok-dr.gtgs.net
+    - hdr(host) -i ckskycbs-dr.gtgs.net
+    - hdr(host) -i ckskycha-dr.gtgs.net
+    - hdr(host) -i ckskyche-dr.gtgs.net
+    - hdr(host) -i ckskychr-dr.gtgs.net
+    - hdr(host) -i ckskycin-dr.gtgs.net
+    - hdr(host) -i ckskydav-dr.gtgs.net
+    - hdr(host) -i ckskyeas-dr.gtgs.net
+    - hdr(host) -i ckskyeli-dr.gtgs.net
+    - hdr(host) -i ckskyfor-dr.gtgs.net
+    - hdr(host) -i ckskyfro-dr.gtgs.net
+    - hdr(host) -i ckskygre-dr.gtgs.net
+    - hdr(host) -i ckskyhil-dr.gtgs.net
+    - hdr(host) -i ckskyhou-dr.gtgs.net
+    - hdr(host) -i ckskyjak-dr.gtgs.net
+    - hdr(host) -i ckskyjer-dr.gtgs.net
+    - hdr(host) -i ckskyjfl-dr.gtgs.net
+    - hdr(host) -i ckskyjol-dr.gtgs.net
+    - hdr(host) -i ckskylin-dr.gtgs.net
+    - hdr(host) -i ckskylnt-dr.gtgs.net
+    - hdr(host) -i ckskymac-dr.gtgs.net
+    - hdr(host) -i ckskymar-dr.gtgs.net
+    - hdr(host) -i ckskymrn-dr.gtgs.net
+    - hdr(host) -i ckskynch-dr.gtgs.net
+    - hdr(host) -i ckskynew-dr.gtgs.net
+    - hdr(host) -i ckskynfr-dr.gtgs.net
+    - hdr(host) -i ckskynje-dr.gtgs.net
+    - hdr(host) -i ckskypal-dr.gtgs.net
+    - hdr(host) -i ckskypas-dr.gtgs.net
+    - hdr(host) -i ckskypgh-dr.gtgs.net
+    - hdr(host) -i ckskyphi-dr.gtgs.net
+host_gtg-skydatnet2:
+  description: "GTG NLB: gtg-skydatnet"
+  tests:
+    - hdr(host) -i ckskypor-dr.gtgs.net
+    - hdr(host) -i ckskyrid-dr.gtgs.net
+    - hdr(host) -i ckskyrin-dr.gtgs.net
+    - hdr(host) -i ckskysav-dr.gtgs.net
+    - hdr(host) -i ckskystl-dr.gtgs.net
+    - hdr(host) -i ckskysvn-dr.gtgs.net
+    - hdr(host) -i ckskytam-dr.gtgs.net
+    - hdr(host) -i ckskytyr-dr.gtgs.net
+    - hdr(host) -i ckskywim-dr.gtgs.net
+    - hdr(host) -i ckskywsa-dr.gtgs.net
+    - hdr(host) -i cktraining-dr.gtgs.net
+    - hdr(host) -i cktrucking-datnet.gtgs.net
+    - hdr(host) -i cktrucking-dr.gtgs.net
+    - hdr(host) -i ckxts-dr.gtgs.net
+    - hdr(host) -i skskybrok-dr.gtgs.net
+    - hdr(host) -i ckskyamt-dr.gtgs.net
+    - hdr(host) -i ckskyamj-dr.gtgs.net
+    - hdr(host) -i ckskyswe-dr.gtgs.net
+    - hdr(host) -i ckskyhac-dr.gtgs.net
+    - hdr(host) -i ckskytms-dr.gtgs.net
+host_gtg-skyline:
+  description: "GTG NLB: gtg-skyline"
+  tests:
+    - hdr(host) -i ckskyala.gtgs.net
+    - hdr(host) -i ckskyame.gtgs.net
+    - hdr(host) -i ckskyamn.gtgs.net
+    - hdr(host) -i ckskyave.gtgs.net
+    - hdr(host) -i ckskybal.gtgs.net
+    - hdr(host) -i ckskybed.gtgs.net
+    - hdr(host) -i ckskyber.gtgs.net
+    - hdr(host) -i ckskyblt.gtgs.net
+    - hdr(host) -i ckskybrok.gtgs.net
+    - hdr(host) -i ckskycbs.gtgs.net
+    - hdr(host) -i ckskycha.gtgs.net
+    - hdr(host) -i ckskyche.gtgs.net
+    - hdr(host) -i ckskychr.gtgs.net
+    - hdr(host) -i ckskycin.gtgs.net
+    - hdr(host) -i ckskydav.gtgs.net
+    - hdr(host) -i ckskyeas.gtgs.net
+    - hdr(host) -i ckskyeli.gtgs.net
+    - hdr(host) -i ckskyfor.gtgs.net
+    - hdr(host) -i ckskyfro.gtgs.net
+    - hdr(host) -i ckskygre.gtgs.net
+    - hdr(host) -i ckskyhil.gtgs.net
+    - hdr(host) -i ckskyhou.gtgs.net
+    - hdr(host) -i ckskyjac.gtgs.net
+    - hdr(host) -i ckskyjak.gtgs.net
+    - hdr(host) -i ckskyjer.gtgs.net
+    - hdr(host) -i ckskyjfl.gtgs.net
+    - hdr(host) -i ckskyjol.gtgs.net
+    - hdr(host) -i ckskylin.gtgs.net
+    - hdr(host) -i ckskylnt.gtgs.net
+    - hdr(host) -i ckskymac.gtgs.net
+    - hdr(host) -i ckskymar.gtgs.net
+    - hdr(host) -i ckskymrn.gtgs.net
+    - hdr(host) -i ckskynch.gtgs.net
+    - hdr(host) -i ckskynew.gtgs.net
+    - hdr(host) -i ckskynfr.gtgs.net
+    - hdr(host) -i ckskynje.gtgs.net
+    - hdr(host) -i ckskypal.gtgs.net
+    - hdr(host) -i ckskypas.gtgs.net
+    - hdr(host) -i ckskypgh.gtgs.net
+    - hdr(host) -i ckskyphi.gtgs.net
+    - hdr(host) -i ckskypor.gtgs.net
+    - hdr(host) -i ckskyrid.gtgs.net
+    - hdr(host) -i ckskyrin.gtgs.net
+    - hdr(host) -i ckskysav.gtgs.net
+    - hdr(host) -i ckskystl.gtgs.net
+    - hdr(host) -i ckskysvn.gtgs.net
+    - hdr(host) -i ckskytam.gtgs.net
+    - hdr(host) -i ckskytyr.gtgs.net
+    - hdr(host) -i ckskywat.gtgs.net
+    - hdr(host) -i ckskywim.gtgs.net
+host_gtg-skyline2:
+  description: "GTG NLB: gtg-skyline"
+  tests:
+    - hdr(host) -i ckskywsa.gtgs.net
+    - hdr(host) -i sky.gtgs.net
+    - hdr(host) -i skycustomer.gtgs.net
+    - hdr(host) -i skylinelanding.gtgs.net
+    - hdr(host) -i cksykamt.gtgs.net
+    - hdr(host) -i ckskyamj.gtgs.net
+    - hdr(host) -i ckskyswe.gtgs.net
+    - hdr(host) -i ckskyhac.gtgs.net
+    - hdr(host) -i ckskytms.gtgs.net
+host_gtg-solpor:
+  description: "GTG NLB: gtg-solpor"
+  tests:
+    - hdr(host) -i solpdx.gtgs.net
+    - hdr(host) -i solpor.gtgs.net
+    - hdr(host) -i solporcust.gtgs.net
+    - hdr(host) -i solporcustomer.gtgs.net
+host_gtg-solpordatnet:
+  description: "GTG NLB: gtg-solpordatnet"
+  tests:
+    - hdr(host) -i solpdx-dr.gtgs.net
+    - hdr(host) -i solpor-dr.gtgs.net
+    - hdr(host) -i solpordatnet.gtgs.net
+host_gtg-stcintermodal-swiftsv:
+  description: "GTG NLB: gtg-stcintermodal-swiftsv"
+  tests:
+    - hdr(host) -i arlaftcust.gtgs.net
+    - hdr(host) -i arlaftdisp.gtgs.net
+    - hdr(host) -i arlbetcust.gtgs.net
+    - hdr(host) -i arlbetdisp.gtgs.net
+    - hdr(host) -i arlbnycust.gtgs.net
+    - hdr(host) -i arlbnydisp.gtgs.net
+    - hdr(host) -i arlflocust.gtgs.net
+    - hdr(host) -i arlflodisp.gtgs.net
+    - hdr(host) -i arlgexcust.gtgs.net
+    - hdr(host) -i arlgexdisp.gtgs.net
+    - hdr(host) -i arljaxcust.gtgs.net
+    - hdr(host) -i arljaxdisp.gtgs.net
+    - hdr(host) -i arlmarcust.gtgs.net
+    - hdr(host) -i arlmardisp.gtgs.net
+    - hdr(host) -i arlnewcust.gtgs.net
+    - hdr(host) -i arlnewdisp.gtgs.net
+    - hdr(host) -i arltencust.gtgs.net
+    - hdr(host) -i arltendisp.gtgs.net
+    - hdr(host) -i atrgracust.gtgs.net
+    - hdr(host) -i atrgradisp.gtgs.net
+    - hdr(host) -i huschicust.gtgs.net
+    - hdr(host) -i huschidisp.gtgs.net
+    - hdr(host) -i myswift.gtgs.net
+    - hdr(host) -i stcintermodal-swiftrsv.gtgs.net
+    - hdr(host) -i swicon.gtgs.net
+    - hdr(host) -i swiftcustomer.gtgs.net
+    - hdr(host) -i swiftintermodal.gtgs.net
+    - hdr(host) -i swiftnew.gtgs.net
+    - hdr(host) -i swipho.gtgs.net
+    - hdr(host) -i switrk.gtgs.net
+    - hdr(host) -i traglocust.gtgs.net
+    - hdr(host) -i traglodisp.gtgs.net
+    - hdr(host) -i winwalcust.gtgs.net
+    - hdr(host) -i winwaldisp.gtgs.net
+    - hdr(host) -i www.swiftintermodal.com
+host_gtg-sunrisetrucking:
+  description: "GTG NLB: gtg-sunrisetrucking"
+  tests:
+    - hdr(host) -i suncer.gtgs.net
+    - hdr(host) -i sundal.gtgs.net
+    - hdr(host) -i sunoak.gtgs.net
+    - hdr(host) -i sunotr.gtgs.net
+    - hdr(host) -i sunrise.gtgs.net
+    - hdr(host) -i sunrisecustomer.gtgs.net
+host_gtg-taylor:
+  description: "GTG NLB: gtg-taylor"
+  tests:
+    - hdr(host) -i taylor.gtgs.net
+    - hdr(host) -i taylorcustomer.gtgs.net
+host_gtg-taylordatnet:
+  description: "GTG NLB: gtg-taylordatnet"
+  tests:
+    - hdr(host) -i taylor-dr.gtgs.net
+    - hdr(host) -i taylordatnet.gtgs.net
+host_gtg-tcamelot:
+  description: "GTG NLB: gtg-tcamelot"
+  tests:
+    - hdr(host) -i tcamelot.gtgs.net
+    - hdr(host) -i tcamelotcust.gtgs.net
+    - hdr(host) -i tcamelotdisp.gtgs.net
+    - hdr(host) -i tcamelotport.gtgs.net
+host_gtg-tcamelotdatnet:
+  description: "GTG NLB: gtg-tcamelotdatnet"
+  tests:
+    - hdr(host) -i tcamelotdatnet.gtgs.net
+host_gtg-tcidatnet:
+  description: "GTG NLB: gtg-tcidatnet"
+  tests:
+    - hdr(host) -i tcicha-dr.gtgs.net
+    - hdr(host) -i tcidatnet.gtgs.net
+    - hdr(host) -i tcitankhou-dr.gtgs.net
+host_gtg-tcinew:
+  description: "GTG NLB: gtg-tcinew"
+  tests:
+    - hdr(host) -i mytci.gtgs.net
+    - hdr(host) -i tciblt.gtgs.net
+    - hdr(host) -i tcicha.gtgs.net
+    - hdr(host) -i tcimob.gtgs.net
+    - hdr(host) -i tcinew.gtgs.net
+    - hdr(host) -i tcinor.gtgs.net
+    - hdr(host) -i tcirealtime.gtgs.net
+    - hdr(host) -i tcitank.gtgs.net
+    - hdr(host) -i tcitankhou.gtgs.net
+host_gtg-techgas:
+  description: "GTG NLB: gtg-techgas"
+  tests:
+    - hdr(host) -i teccyl.gtgs.net
+    - hdr(host) -i tecdal.gtgs.net
+    - hdr(host) -i techgas.gtgs.net
+    - hdr(host) -i techgasapp.gtgs.net
+    - hdr(host) -i techgascust.gtgs.net
+    - hdr(host) -i techou.gtgs.net
+    - hdr(host) -i teclak.gtgs.net
+    - hdr(host) -i teclod.gtgs.net
+host_gtg-techgas-dr:
+  description: "GTG NLB: gtg-techgas-dr"
+  tests:
+    - hdr(host) -i tecdal-dr.gtgs.net
+    - hdr(host) -i techgas-dr.gtgs.net
+    - hdr(host) -i techgasdatnet.gtgs.net
+    - hdr(host) -i techou-dr.gtgs.net
+    - hdr(host) -i teclak-dr.gtgs.net
+    - hdr(host) -i teclod-dr.gtgs.net
+host_gtg-testgtgims:
+  description: "GTG NLB: gtg-testgtgims"
+  tests:
+    - hdr(host) -i testgtgbms.gtgs.net
+    - hdr(host) -i testgtgdms.gtgs.net
+    - hdr(host) -i testgtgims.gtgs.net
+host_gtg-testpbielk:
+  description: "GTG NLB: gtg-testpbielk"
+  tests:
+    - hdr(host) -i testpbielk.gtgs.net
+    - hdr(host) -i testpbielkcust.gtgs.net
+host_gtg-testtriims:
+  description: "GTG NLB: gtg-testtriims"
+  tests:
+    - hdr(host) -i testtriims.gtgs.net
+host_gtg-topdatnet:
+  description: "GTG NLB: gtg-topdatnet"
+  tests:
+    - hdr(host) -i topchi-dr.gtgs.net
+    - hdr(host) -i topcle-dr.gtgs.net
+    - hdr(host) -i topcustomer-dr.gtgs.net
+    - hdr(host) -i topdatnet.gtgs.net
+    - hdr(host) -i tophou-dr.gtgs.net
+    - hdr(host) -i topnew-dr.gtgs.net
+host_gtg-tophou:
+  description: "GTG NLB: gtg-tophou"
+  tests:
+    - hdr(host) -i employee.mcs.gtgs.net
+    - hdr(host) -i topchi.gtgs.net
+    - hdr(host) -i topcle.gtgs.net
+    - hdr(host) -i topcustomer.gtgs.net
+    - hdr(host) -i tophou.gtgs.net
+    - hdr(host) -i toplogistics.gtgs.net
+    - hdr(host) -i topnew.gtgs.net
+host_gtg-tophoutest:
+  description: "GTG NLB: gtg-tophoutest"
+  tests:
+    - hdr(host) -i topchitest.gtgs.net
+    - hdr(host) -i topcletest.gtgs.net
+    - hdr(host) -i tophoutest.gtgs.net
+    - hdr(host) -i toplogisticstest.gtgs.net
+    - hdr(host) -i topnewtest.gtgs.net
+    - hdr(host) -i toptestcustomer.gtgs.net
+host_gtg-town:
+  description: "GTG NLB: gtg-town"
+  tests:
+    - hdr(host) -i town.gtgs.net
+host_gtg-towndatnet:
+  description: "GTG NLB: gtg-towndatnet"
+  tests:
+    - hdr(host) -i town-dr.gtgs.net
+    - hdr(host) -i towncustomer.gtgs.net
+    - hdr(host) -i towndatnet.gtgs.net
+host_gtg-triims:
+  description: "GTG NLB: gtg-triims"
+  tests:
+    - hdr(host) -i ratenet-triims.gtgs.net
+    - hdr(host) -i triims.gtgs.net
+    - hdr(host) -i triimscust.gtgs.net
+host_gtg-troydemo:
+  description: "GTG NLB: gtg-troydemo"
+  tests:
+    - hdr(host) -i demobms.gtgs.net
+    - hdr(host) -i democarriernet.gtgs.net
+    - hdr(host) -i democustbms.gtgs.net
+    - hdr(host) -i democustdms.gtgs.net
+    - hdr(host) -i democustims.gtgs.net
+    - hdr(host) -i demodms.gtgs.net
+    - hdr(host) -i demodraynet.gtgs.net
+    - hdr(host) -i demoims.gtgs.net
+    - hdr(host) -i demotablet.gtgs.net
+    - hdr(host) -i demotabnet.gtgs.net
+    - hdr(host) -i troydemo.gtgs.net
+host_gtg-txn2chs:
+  description: "GTG NLB: gtg-txn2chs"
+  tests:
+    - hdr(host) -i rsgt.gtgs.net
+    - hdr(host) -i txn2atl.gtgs.net
+    - hdr(host) -i txn2chs.gtgs.net
+    - hdr(host) -i txn2cust.gtgs.net
+    - hdr(host) -i txn2jac.gtgs.net
+    - hdr(host) -i txn2rsgt.gtgs.net
+    - hdr(host) -i txn2sav.gtgs.net
+host_gtg-txn2datnet:
+  description: "GTG NLB: gtg-txn2datnet"
+  tests:
+    - hdr(host) -i rsgt-dr.gtgs.net
+    - hdr(host) -i txn2datnet.gtgs.net
+host_gtg-wastuk:
+  description: "GTG NLB: gtg-wastuk"
+  tests:
+    - hdr(host) -i wastuk.gtgs.net
+    - hdr(host) -i wastukcust.gtgs.net
+host_gtg-wastukdatnet:
+  description: "GTG NLB: gtg-wastukdatnet"
+  tests:
+    - hdr(host) -i wastuk-dr.gtgs.net
+    - hdr(host) -i wastukdatnet.gtgs.net
+host_gtg-wptdisp:
+  description: "GTG NLB: gtg-wptdisp"
+  tests:
+    - hdr(host) -i wptcust.gtgs.net
+    - hdr(host) -i wptdisp.gtgs.net
+    - hdr(host) -i wptsea.gtgs.net
+host_gtg-wptsea-dr:
+  description: "GTG NLB: gtg-wptsea-dr"
+  tests:
+    - hdr(host) -i wptcust-dr.gtgs.net
+    - hdr(host) -i wptdatnet.gtgs.net
+    - hdr(host) -i wptdisp-dr.gtgs.net
+    - hdr(host) -i wptsea-dr.gtgs.net
