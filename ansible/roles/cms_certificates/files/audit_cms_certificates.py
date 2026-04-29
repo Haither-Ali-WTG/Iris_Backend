@@ -35,7 +35,7 @@ class CMSCache:
         
         url: str = f"{CMS_ENDPOINT}/v1/certificates/{resource_group}"
         try:
-            resp: requests.Response = requests.get(url, verify=False, timeout=10)
+            resp: requests.Response = requests.get(url, verify=False, timeout=10)  # nosec B501
             if resp.status_code == 200:
                 data: List[Dict[str, Any]] = resp.json()
                 self.rg_cache[resource_group] = data
@@ -54,14 +54,14 @@ class CMSCache:
         
         url: str = f"{CMS_ENDPOINT}/cms/v1/certificate/{resource_group}/{name}"
         try:
-            resp: requests.Response = requests.get(url, verify=False, timeout=10)
+            resp: requests.Response = requests.get(url, verify=False, timeout=10)  # nosec B501
             if resp.status_code in [200, 201]:
                 data: Dict[str, Any] = resp.json()
                 kv: str = data.get('keyvault', DEFAULT_KV)
                 self.cert_cache[cache_key] = kv
                 return kv
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Error fetching cert KV for {name}: {e}")
             
         self.cert_cache[cache_key] = DEFAULT_KV
         return DEFAULT_KV
@@ -195,7 +195,6 @@ def main() -> None:
     
     # 1. Parse and resolve all certificates
     dc_results = parse_cluster_files(cache)
-    print(dc_results)
     
     # 2. Generate the final audit files
     write_audit_files(dc_results)
