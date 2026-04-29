@@ -47,7 +47,7 @@
         static_backends: "{{ clustered_instance.static_backends | default({}) }}"
         acls: "{{ clustered_instance.acls }}"
         actions: "{{ clustered_instance.actions }}"
-        certificates: "{{ clustered_instance.certificates | map(attribute='name') | list }}"
+        certificates: "{{ clustered_instance.certificates | selectattr('name', 'defined') | map(attribute='name') | list }}"
         tests: "{{ clustered_instance.tests | default([]) }}"
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
