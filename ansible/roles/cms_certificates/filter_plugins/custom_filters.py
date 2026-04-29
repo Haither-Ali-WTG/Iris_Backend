@@ -19,8 +19,10 @@ def update_cache(cache: Dict[str, Dict[str, str]], updated_certs: List[Dict[str,
 
 
 def from_iris_inventory_to_certs_data(certs_data: List[Dict[str, str]],
-                                      item: str, certificates: List[str]) -> List[Dict[str, str]]:
+                                      item: str, certificates: List[Dict[str, str]]) -> List[Dict[str, str]]:
     for cert in certificates:
+        if 'name' not in cert:
+            continue
         ans = {'domain': cert.get('cms_resource_group', 'kv-wtg-iris-prod'), 'name': cert['name']}
         certs_data.append(ans)
     return certs_data
