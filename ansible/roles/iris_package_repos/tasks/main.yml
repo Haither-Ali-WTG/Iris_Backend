@@ -7,12 +7,8 @@
   become: yes
 
 - name: Configure Foreman APT repositories
-  copy:
-    content: |
-      ### This file is deployed by IRIS ###
-      deb [signed-by=/etc/apt/trusted.gpg.d/foreman_key.gpg] https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Ubuntu/distros {{ os_codename[os] }} main restricted universe multiverse
-      deb [signed-by=/etc/apt/trusted.gpg.d/foreman_key.gpg] https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Ubuntu/distros {{ os_codename[os] }}-updates main restricted universe multiverse
-      deb [signed-by=/etc/apt/trusted.gpg.d/foreman_key.gpg] https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Ubuntu/distros {{ os_codename[os] }}-security main restricted universe multiverse
+  template:
+    src: sources.list.j2
     dest: /etc/apt/sources.list
     mode: u=rw,go=r
   become: yes
