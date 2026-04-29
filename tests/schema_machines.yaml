@@ -8,3 +8,4 @@ machine:
   dc: regex('^[A-Z]{2}[0-9]$', name='data centre (uppercase)')
   os_variant: enum('rhel', 'ubuntu')
   container: include('haproxy_container_settings', required=False)
+  package_repo_provider: enum('foreman', required=False)
