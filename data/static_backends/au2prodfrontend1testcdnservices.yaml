@@ -1216,7 +1216,7 @@ ocmbe-staging.wisegrid.net:
     name: OCMBES
   http_health_check:
     enabled: false
-    http_path: /
+    http_path: /wtg/ready
   default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2
