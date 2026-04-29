@@ -1,0 +1,336 @@
+---
+de1prodelasticbunker1:
+  - name: star-de1s3-11-wtg-ws
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-starde1s31
+  - name: star-de1s3-b1-wtg-ws
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-mhnadxnugv
+  - name: star-wisetechglobal-com
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-dxdxilqyuv
+  - name: star-wtg-zone
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-starwtgzon
+de1prodinternal1services30:
+  - name: star-cwconnector-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcwconn
+  - name: star-de1s3-3-wtg-ws
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-zjuuoggrkd
+  - name: star-iris-stats-wtg-zone
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-staririsst
+  - name: star-urs-wisegrid-net
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-starurswis
+  - name: star-wisecloud-zone
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisecl
+  - name: star-wisetechglobal-com
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-dxdxilqyuv
+  - name: star-wtg-zone
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-starwtgzon
+de1prodfrontend1prodcwservices26:
+  - name: ahwprd_webtracker_carozplus_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-avlbpujoeq
+  - name: au2_customer_certs
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-amjpduywyn
+  - name: board_embassycargo_eu
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-boardembas
+  - name: cfs_sgl_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-apdnunbnur
+  - name: customerportal_deugro_com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-customerpo
+  - name: customers_commercialfreight_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-wmhnkrhbti
+  - name: e-business_tmforwarding_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-fofjmszuvn
+  - name: ediweb_oceanbridge_co_nz
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-ediwebocea
+  - name: logisticssolutions_sal_sa
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bdqpjiejkz
+  - name: loop_cortenlogistics_com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-loopcorten
+  - name: neo_famous_com_sg
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-neofamousc
+  - name: star-cfs-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcfswis
+  - name: star-webcampaign-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-xvmelqifnu
+  - name: star-webprint-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-rvsnuhshyx
+  - name: star-webtracker-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwebtra
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+  - name: svc_jjlawson_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-skrqjkvtpc
+  - name: track_oceania_kln_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zvmltudoqn
+  - name: tracking-eplint-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trackingep
+  - name: tracking-jjlawson-com-au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-eynaqvdaps
+  - name: tracking_allports-syd_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bhthmwyoxq
+  - name: tracking_citotransport_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bvpcwhvkal
+  - name: tracking_consolalliance_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-csiiirgztq
+  - name: tracking_excellogistics_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-gkbaoywrri
+  - name: tracking_fracht_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-yulgdpktys
+  - name: tracking_icecargo_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-lrpnnelflc
+  - name: tracking_mbowens_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-jmabqvlqgk
+  - name: tracking_navia_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-khtayyeqat
+  - name: tracking_nnraus_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-dblktqojmv
+  - name: tracking_pcfs_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trackingpc
+  - name: tracking_powerhousensw_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-nkwytyyane
+  - name: tracking_sozologistics_com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-euwawgsvyt
+  - name: tracking_totalmaritime_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-wlgcresped
+  - name: ulink_awh_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zhhhhwlerp
+  - name: unpacks_thecargowarehouse_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-unpacksthe
+  - name: webtrack_gava_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtrackga
+  - name: webtrack_jenkar_com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-fzbuywutln
+  - name: webtracker_goodlogisticsgroup_com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-webtracker
+  - name: webtracker_kwe_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-klckcdxbii
+  - name: webtracker_mantonairsea_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtracker
+  - name: webtracker_sgl_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-isamtlqtxg
+  - name: webtracking_sila_net_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtrackin
+de1prodfrontend1testcwservices27:
+  - name: ahwprd_webtracker_carozplus_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-avlbpujoeq
+  - name: au2_customer_certs
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-amjpduywyn
+  - name: cfs_sgl_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-apdnunbnur
+  - name: customers_commercialfreight_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-wmhnkrhbti
+  - name: e-business_tmforwarding_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-fofjmszuvn
+  - name: ediweb_oceanbridge_co_nz
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-ediwebocea
+  - name: logisticssolutions_sal_sa
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bdqpjiejkz
+  - name: neo_famous_com_sg
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-neofamousc
+  - name: star-cfs-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcfswis
+  - name: star-webcampaign-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-xvmelqifnu
+  - name: star-webprint-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-rvsnuhshyx
+  - name: star-webtracker-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwebtra
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+  - name: svc_jjlawson_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-skrqjkvtpc
+  - name: track_oceania_kln_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zvmltudoqn
+  - name: tracking-eplint-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trackingep
+  - name: tracking-jjlawson-com-au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-eynaqvdaps
+  - name: tracking_allports-syd_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bhthmwyoxq
+  - name: tracking_citotransport_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-bvpcwhvkal
+  - name: tracking_consolalliance_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-csiiirgztq
+  - name: tracking_excellogistics_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-gkbaoywrri
+  - name: tracking_fracht_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-yulgdpktys
+  - name: tracking_icecargo_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-lrpnnelflc
+  - name: tracking_mbowens_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-jmabqvlqgk
+  - name: tracking_navia_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-khtayyeqat
+  - name: tracking_nnraus_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-dblktqojmv
+  - name: tracking_pcfs_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trackingpc
+  - name: tracking_powerhousensw_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-nkwytyyane
+  - name: tracking_totalmaritime_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-wlgcresped
+  - name: ulink_awh_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zhhhhwlerp
+  - name: unpacks_thecargowarehouse_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-unpacksthe
+  - name: webtrack_gava_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtrackga
+  - name: webtracker_kwe_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-klckcdxbii
+  - name: webtracker_mantonairsea_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtracker
+  - name: webtracker_sgl_com_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-isamtlqtxg
+  - name: webtracking_sila_net_au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-webtrackin
+de1prodfrontend1prodcdnservices31:
+  - name: star-borderwise-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zjzdrysrxk
+  - name: star-cwconnector-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcwconn
+  - name: star-cww-prod-wisetechglobal-cn
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcwwpro
+  - name: star-identity-wisetechglobal-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-llcltszkzg
+  - name: star-urs-wisegrid-net
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-starurswis
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+  - name: star-wisetechglobal-com
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-dxdxilqyuv
+de1prodfrontend1prodproxy:
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+de1prodfrontend1testcdnservices:
+  - name: star-borderwise-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-zjzdrysrxk
+  - name: star-cww-nonprd-wisetechglobal-cn
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcwwnon
+  - name: star-identity-wisetechglobal-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-llcltszkzg
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+de1prodfrontend1prodservices:
+  - name: star-urs-wisegrid-net
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-starurswis
+  - name: star-wisegrid-net
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisegr
+de1prodfrontend1tenantservices:
+  - name: star-acoinformatica-it
+    resource_group: UNKNOWN
+    keyvault: kv-wtg-iris-prod
+  - name: star-aktivdata-fi
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-staraktivd
+de1sandinternal1services:
+  - name: star-sand-wtg-zone
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-starsandwt
+de1corpinternaltcp:
+  - name: star-wisecloud-zone
+    resource_group: UNKNOWN
+    keyvault: kv-wtg-iris-prod
+  - name: star-wtg-zone
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-starwtgzon
