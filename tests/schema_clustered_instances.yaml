@@ -38,5 +38,6 @@ iis_server_settings:
   agent_port: int(int(min=1, max=65535), required=True)
 
 certificate_settings:
-  name: regex('^[a-z0-9-_]+$', name='certificate name (lowercase with dashes)', required=True)
+  name: regex('^[a-z0-9-_]+$', name='certificate name (lowercase with dashes)', required=False)
+  file_name: regex('^[a-z0-9_]+\\.yaml$', name='CMS config filename', required=False)
   cms_resource_group: regex('^RG-(EU|AU|US)-(Corp|Prod|Sand)$', name='cms resource group name', required=False)

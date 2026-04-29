@@ -429,6 +429,8 @@ clustered_instances:
       iis_user_local: s_lbwinrmquerier
       websites_config: prodcwservices.yml
       certificates:
+        - file_name: customer_webtrackers.yaml
+          cms_resource_group: RG-AU-Prod
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
@@ -537,6 +539,8 @@ clustered_instances:
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
+        - file_name: customer_webtrackers.yaml
+          cms_resource_group: RG-AU-Prod
         - name: star-wisegrid-net
           cms_resource_group: RG-AU-Prod
         - name: star-webtracker-wisegrid-net
