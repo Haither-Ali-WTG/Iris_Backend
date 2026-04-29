@@ -48,10 +48,9 @@
         acls: "{{ clustered_instance.acls }}"
         actions: "{{ clustered_instance.actions }}"
         certificates: >-
-          {{ clustered_instance.certificates
-          | selectattr('name', 'defined')
-          | map(attribute='name')
-          | list }}
+          {{ (lookup('file', playbook_dir ~ '/../data/certificates_audit/' ~ clustered_instance.dc | lower ~ '-certificates.yaml', errors='ignore')
+          | default('{}', true) | from_yaml).get(item.clustered_instance_name, [])
+          | map(attribute='name') | list }}
         tests: "{{ clustered_instance.tests | default([]) }}"
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"

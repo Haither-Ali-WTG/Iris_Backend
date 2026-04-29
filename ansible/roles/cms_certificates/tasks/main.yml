@@ -1,72 +1,7 @@
 ---
-- name: Set the CMS endpoint
+- name: Load certificates to be downloaded from audit files
   set_fact:
-    cms_endpoint: "{{ 'cms.lab.gis.wtg.zone' if simulation else 'cms.gis.wtg.zone' }}"
-
-- name: Calculate certificates to be downloaded
-  set_fact:
-    certs_data: "{{ certs_data | default([]) | from_iris_inventory_to_certs_data(item, hostvars[item].certificates) }}"
-  when: '"certificates" in hostvars[item]'
-  loop: "{{ groups['clustered_instances'] }}"
-
-- name: Prepare CMS cache data
-  when: use_cache | default(true)
-  block:
-    - name: Setup S3 storage connection
-      include_role:
-        name: pure_connection_setup
-      vars:
-        proxy_host: "{{ s3_proxy_host | default('') }}"
-        proxy_port: "{{ s3_proxy_port | default('') }}"
-        pure_s3_users: "{{ pure_usernames.split(',') | map('trim') | list }}"
-
-    - name: Create temporary directory
-      tempfile:
-        state: directory
-      register: temp_path
-
-    - name: Download JSON cache file from S3
-      command: >-
-        aws --endpoint-url=https://{{ s3_host }}
-        s3 cp
-        "{{ s3_iris_bucket }}cms-cache.json" {{ temp_path.path }}
-      changed_when: true
-
-    - name: Read data from the JSON cache file
-      set_fact:
-        json_cache: "{{ lookup('file', temp_path.path + '/' + 'cms-cache.json') | from_json }}"
-
-    - name: Read JSON cache file to certs_data
-      set_fact:
-        certs_data: "{{ certs_data | assign_key_vault_name_from_cache(json_cache) }}"
-
-- name: Assign key_vault_name for certs_data from CMS queries (Default 'kv-wtg-iris-prod')
-  include_tasks: assign_key_vault_name.yml
-  loop: "{{ certs_data }}"
-  loop_control:
-    loop_var: cert
-
-- name: Write back cache data
-  when:
-    - use_cache | default(true)
-    - not simulation | default(false)
-  block:
-    - name: Update the JSON cache
-      set_fact:
-        json_cache: "{{ json_cache | update_cache(updated_certs) }}"
-
-    - name: Write the JSON cache file to prepare the uploading
-      copy:
-        content: "{{ json_cache }}"
-        dest: "{{ temp_path.path }}/cms-cache.json"
-        mode: u=rw,go=r
-
-    - name: Upload cache data to S3
-      command: >-
-        aws --endpoint-url=https://{{ s3_host }}
-        s3 cp
-        {{ temp_path.path }}/cms-cache.json "{{ s3_iris_bucket }}cms-cache.json"
-      changed_when: true
+    updated_certs: "{{ playbook_dir | read_audit_certs(target_dc | default('')) }}"
 
 - name: Download the certificate - Iris KV
   include_tasks: download_and_save_iris_certificate.yml
@@ -81,7 +16,7 @@
   vars:
     key_vault_name: "{{ item.key_vault_name }}"
     real_certificate_name: "{{ item.name }}"
-    certificate_domain: "{{ item.domain }}"
+    certificate_domain: "{{ item.cms_rs_group }}"
     certificate_name: 'certificate'
   loop: >
     {{
