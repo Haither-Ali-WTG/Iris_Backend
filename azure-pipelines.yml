@@ -241,19 +241,13 @@ stages:
 
               DC_LOWER=$(echo "$(simulation_dc)" | tr '[:upper:]' '[:lower:]')
 
-              # Extract certificates from instance definition file
-              yq '.clustered_instances.hosts[].certificates[]?' \
-              iris/data/instances/${DC_LOWER}-clustered_instances.yml > pr_certs.yml || true
-
-              yq '.clustered_instances.hosts[].certificates[]?' \
-              ../master_worktree/data/instances/${DC_LOWER}-clustered_instances.yml > master_certs.yml || true
-
-              # Check the difference
-              if diff -q master_certs.yml pr_certs.yml >/dev/null 2>&1; then
-                echo "Certificates unchanged in ${DC_LOWER}-clustered_instances.yml"
+              FILE="data/certificates_audit/${DC_LOWER}-certificates.yaml"
+              # Check if the audit file changed between master and PR
+              if diff -q "../master_worktree/$FILE" "iris/$FILE" >/dev/null 2>&1; then
+                echo "Certificates unchanged in ${DC_LOWER}-certificates.yaml"
                 echo "##vso[task.setvariable variable=certificate_changed]false"
               else
-                echo "Certificates changed in ${DC_LOWER}-clustered_instances.yml"
+                echo "Certificates changed in ${DC_LOWER}-certificates.yaml"
               fi
             displayName: 'Check if the certificate section changed'
 
