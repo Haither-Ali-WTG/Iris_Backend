@@ -16,7 +16,6 @@
   vars:
     key_vault_name: "{{ item.key_vault_name }}"
     real_certificate_name: "{{ item.name }}"
-    certificate_domain: "{{ item.cms_rs_group }}"
     certificate_name: 'certificate'
   loop: >
     {{
