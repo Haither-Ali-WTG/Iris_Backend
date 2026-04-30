@@ -14,9 +14,9 @@ variables:
   # 82157d12b3441736fdd4c2bc5db50b4e36fa8670
   virgil_build_id: '1684711'
 
-  # sqlbilling 20260430.3
-  # Thu Apr 30 04:31:01 UTC 2026 -- Thu Apr 30 14:31:01 AEST 2026
+  # sqlbilling 20260501.1
+  # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
   #
-  # Merged PR 49115: Remove AQKPRD
-  # c4c2711dec09217ec1b5a85259311d58c0f27b66
-  sqlbilling_build_id: '1684731'
+  # Merged PR 49234: SQLBilling-Add-CS02321821.yml
+  # d660768805e900a0a01959945e626fc4e95a2f3a
+  sqlbilling_build_id: '1685158'
