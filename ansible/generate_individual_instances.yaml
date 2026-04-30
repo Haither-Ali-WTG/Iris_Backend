@@ -52,6 +52,17 @@
           | selectattr('name', 'defined')
           | map(attribute='name')
           | list }}
+        audit_certificates: >-
+          {{ (lookup(
+            'file',
+            playbook_dir ~ '/../data/certificates_audit/'
+            ~ clustered_instance.dc | lower ~ '-certificates.yaml',
+            errors='ignore'
+          )
+          | default('{}', true)
+          | from_yaml).get(item.clustered_instance_name, [])
+          | map(attribute='name')
+          | list }}
         tests: "{{ clustered_instance.tests | default([]) }}"
         cipher_profiles: "{{ clustered_instance.cipher_profiles }}"
         custom_defaults: "{{ clustered_instance.custom_defaults | default({}) }}"
@@ -187,6 +198,22 @@
         quiet: yes
         fail_msg: >-
           Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
+
+    - name: Debug legacy certificates
+      debug:
+        msg: "Legacy certificates for {{ inventory_hostname }}: {{ certificates }}"
+
+    - name: Debug audit certificates
+      debug:
+        msg: "Audit certificates for {{ inventory_hostname }}: {{ audit_certificates }}"
+
+    - name: Assert audit certificates contain all legacy certificates
+      assert:
+        that:
+          - "certificates | difference(audit_certificates) | length == 0"
+        fail_msg: >-
+          Audit certificates are missing some legacy certificates for {{ inventory_hostname }}!
+          Missing: {{ certificates | difference(audit_certificates) }}
 
 - name: Set facts on each machine
   hosts: target_machines
