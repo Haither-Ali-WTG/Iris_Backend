@@ -48,6 +48,11 @@
         acls: "{{ clustered_instance.acls }}"
         actions: "{{ clustered_instance.actions }}"
         certificates: >-
+          {{ clustered_instance.certificates
+          | selectattr('name', 'defined')
+          | map(attribute='name')
+          | list }}
+        audit_certificates: >-
           {{ (lookup(
             'file',
             playbook_dir ~ '/../data/certificates_audit/'
@@ -193,6 +198,22 @@
         quiet: yes
         fail_msg: >-
           Port(s) {{ bad_ports | join(', ') }} both mapped and preallocated
+
+    - name: Debug legacy certificates
+      debug:
+        msg: "Legacy certificates for {{ inventory_hostname }}: {{ certificates }}"
+
+    - name: Debug audit certificates
+      debug:
+        msg: "Audit certificates for {{ inventory_hostname }}: {{ audit_certificates }}"
+
+    - name: Assert audit certificates contain all legacy certificates
+      assert:
+        that:
+          - "certificates | difference(audit_certificates) | length == 0"
+        fail_msg: >-
+          Audit certificates are missing some legacy certificates for {{ inventory_hostname }}!
+          Missing: {{ certificates | difference(audit_certificates) }}
 
 - name: Set facts on each machine
   hosts: target_machines
