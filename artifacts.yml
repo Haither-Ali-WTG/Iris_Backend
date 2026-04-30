@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260430.1
-  # Wed Apr 29 23:21:16 UTC 2026 -- Thu Apr 30 09:21:16 AEST 2026
+  # Dante Build Artifact 20260430.3
+  # Thu Apr 30 02:40:52 UTC 2026 -- Thu Apr 30 12:40:52 AEST 2026
   #
-  # Merge pull request 49246 from dante_artifact_upgrade into master
-  # bfa681e824910d4dd5e0d9aa4b45a296af1a1ec9
-  dante_build_id: '1684383'
+  # Merge pull request 49272 from dante_artifact_upgrade into master
+  # af325130b1939f5ffe67edf3f8848b83ff7ef34e
+  dante_build_id: '1684613'
 
-  # virgil 20260430.1
-  # Wed Apr 29 22:27:56 UTC 2026 -- Thu Apr 30 08:27:56 AEST 2026
+  # virgil 20260430.5
+  # Thu Apr 30 01:21:19 UTC 2026 -- Thu Apr 30 11:21:19 AEST 2026
   #
-  # Merged PR 49227: bye bye eye node au2anl00016
-  # e358095a8905568ae4ef9cb64de248b0125ee15b
-  virgil_build_id: '1684328'
+  # Merged PR 49269: add-bgw-uniqueIP-vrr-routing
+  # 3e784f3f35bca73cee5cd20667793a2ad4f43ec8
+  virgil_build_id: '1684521'
 
   # sqlbilling 20260430.1
   # Wed Apr 29 20:36:28 UTC 2026 -- Thu Apr 30 06:36:28 AEST 2026
