@@ -7,12 +7,12 @@ variables:
   # 6c810819e6b1f213bb4b7ef74867b40ae3f811e3
   dante_build_id: '1684771'
 
-  # virgil 20260430.7
-  # Thu Apr 30 04:22:30 UTC 2026 -- Thu Apr 30 14:22:30 AEST 2026
+  # virgil 20260501.7
+  # Thu Apr 30 21:59:58 UTC 2026 -- Fri May  1 07:59:58 AEST 2026
   #
-  # Merged PR 49268: WI01009106 Phase 5 AU2 Hyperv-to-VMWare
-  # 82157d12b3441736fdd4c2bc5db50b4e36fa8670
-  virgil_build_id: '1684711'
+  # Merged PR 49349: Populate US2 cabinet 306
+  # e7947a640cc899a174ae83ae3f32c36d62affcfc
+  virgil_build_id: '1685432'
 
   # sqlbilling 20260501.1
   # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
