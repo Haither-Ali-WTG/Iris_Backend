@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260430.3
-  # Thu Apr 30 02:40:52 UTC 2026 -- Thu Apr 30 12:40:52 AEST 2026
+  # Dante Build Artifact 20260430.5
+  # Thu Apr 30 05:20:59 UTC 2026 -- Thu Apr 30 15:20:59 AEST 2026
   #
-  # Merge pull request 49272 from dante_artifact_upgrade into master
-  # af325130b1939f5ffe67edf3f8848b83ff7ef34e
-  dante_build_id: '1684613'
+  # Merge pull request 49306 from dante_artifact_upgrade into master
+  # 6c810819e6b1f213bb4b7ef74867b40ae3f811e3
+  dante_build_id: '1684771'
 
-  # virgil 20260430.5
-  # Thu Apr 30 01:21:19 UTC 2026 -- Thu Apr 30 11:21:19 AEST 2026
+  # virgil 20260430.7
+  # Thu Apr 30 04:22:30 UTC 2026 -- Thu Apr 30 14:22:30 AEST 2026
   #
-  # Merged PR 49269: add-bgw-uniqueIP-vrr-routing
-  # 3e784f3f35bca73cee5cd20667793a2ad4f43ec8
-  virgil_build_id: '1684521'
+  # Merged PR 49268: WI01009106 Phase 5 AU2 Hyperv-to-VMWare
+  # 82157d12b3441736fdd4c2bc5db50b4e36fa8670
+  virgil_build_id: '1684711'
 
-  # sqlbilling 20260430.1
-  # Wed Apr 29 20:36:28 UTC 2026 -- Thu Apr 30 06:36:28 AEST 2026
+  # sqlbilling 20260430.3
+  # Thu Apr 30 04:31:01 UTC 2026 -- Thu Apr 30 14:31:01 AEST 2026
   #
-  # Merged PR 49233: SQLBilling-Add-CS02321113.yml
-  # 2e40a1de410c199f8b1e9953fe909c57d7d88705
-  sqlbilling_build_id: '1684254'
+  # Merged PR 49115: Remove AQKPRD
+  # c4c2711dec09217ec1b5a85259311d58c0f27b66
+  sqlbilling_build_id: '1684731'
