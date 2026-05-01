@@ -777,6 +777,7 @@ clustered_instances:
             - 1062  # jump2-au2.wtg.zone
             - 1066  # jump2-au2.wisecloud.zone
             - 1075  # admin-au2.wisecloud.zone
+            - 1076  # vcfjump2-au2.wtg.zone
       stats:
         ports:
           web: 2064
