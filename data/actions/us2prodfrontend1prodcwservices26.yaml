@@ -96,7 +96,7 @@ custom_url_actions:
     - use_backend www-arfafs_wisegrid_net if { hdr(host),field(1,:) -i tracking.ariesww.com }
     - use_backend www-jscbwi_wisegrid_net if { hdr(host),field(1,:) -i connortracneo.jsconnor.com }
     - use_backend www-clrlax_wisegrid_net if { hdr(host),field(1,:) -i tracking.clearfreight.com }
-    - use_backend www-ng2prd_wisegrid_net if { hdr(host),field(1,:) -i shipgci-webtracker.net }
+    - use_backend www-ng2prd_wisegrid_net if { hdr(host),field(1,:) -i www.shipgci-webtracker.net }
     - use_backend www-abkprd_wisegrid_net if { hdr(host),field(1,:) -i www.ordertracker.noatummaritime.com }
 
     ### eAdaptor
