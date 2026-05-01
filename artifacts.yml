@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260501.1
-  # Thu Apr 30 22:41:11 UTC 2026 -- Fri May  1 08:41:11 AEST 2026
+  # Dante Build Artifact 20260501.2
+  # Fri May  1 00:21:10 UTC 2026 -- Fri May  1 10:21:10 AEST 2026
   #
-  # Merge pull request 49351 from dante_artifact_upgrade into master
-  # ede0ff2c015b20e767a9fd288952e2d3c3c09503
-  dante_build_id: '1685482'
+  # Merge pull request 49366 from dante_artifact_upgrade into master
+  # 1a9dbbb615cbc09b4f5f23cb0aa2fbe1f24efc35
+  dante_build_id: '1685594'
 
-  # virgil 20260501.7
-  # Thu Apr 30 21:59:58 UTC 2026 -- Fri May  1 07:59:58 AEST 2026
+  # virgil 20260501.9
+  # Thu Apr 30 23:30:23 UTC 2026 -- Fri May  1 09:30:23 AEST 2026
   #
-  # Merged PR 49349: Populate US2 cabinet 306
-  # e7947a640cc899a174ae83ae3f32c36d62affcfc
-  virgil_build_id: '1685432'
+  # Merged PR 49325: add vxlans to apex15/16
+  # 75713818bef68a356d55b398dcf0733c30c85b54
+  virgil_build_id: '1685535'
 
   # sqlbilling 20260501.1
   # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
