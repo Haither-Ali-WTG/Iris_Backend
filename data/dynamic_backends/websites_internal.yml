@@ -1,10 +1,11 @@
 ---
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp-tweb'
-  encryption: false
+  encryption: true
+  http2: true
   http_health_check:
     enabled: false
-  port: 80
+  port: 443
   cookie:
     enabled: true
     name: 'CW1'
@@ -24,6 +25,7 @@
 - name_regex: '\.testrig.*\.sand\.wtg\.zone$'
   server_regex: '^au2sp-tweb'
   encryption: true
+  http2: true
   http_health_check:
     enabled: false
   port: 443
@@ -59,6 +61,7 @@
 - name_regex: '^svc-[A-Za-z0-9]+\.cargowise\.com$'
   server_regex: '^au2sp-sweb'
   encryption: true
+  http2: true
   http_health_check:
     enabled: false
   port: 443
@@ -82,6 +85,7 @@
 - name_regex: '^svc-[A-Za-z0-9]+\.sand\.wtg\.zone$'
   server_regex: '^au2sp-sweb'
   encryption: true
+  http2: true
   http_health_check:
     enabled: false
   port: 443

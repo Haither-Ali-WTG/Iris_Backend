@@ -30,7 +30,7 @@ cookie {{ backend.cookie.name }} insert indirect nocache dynamic httponly attr "
 default-server {{ backend.default_server -}}
 {% else %}
 {# TODO: Support override interval #}
-default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{% endif %}
+default-server inter 10000 {%- if backend.encryption | default(false) %} ssl{%- if backend.http2 | default(false) %} alpn h2,http/1.1{% endif %}{% endif %}
 {% endif %}
 
 {% if backend.sorry_pages is defined %}

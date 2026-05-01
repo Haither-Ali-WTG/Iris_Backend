@@ -20,7 +20,7 @@ http-check expect rstatus {{ config.http_health_check.check_expect | default('20
 cookie {{ config.cookie.name | upper }} insert indirect nocache dynamic httponly secure attr "SameSite=None"
 {%       endif %}
 {# TODO: Support override interval #}
-default-server inter 10000 {%- if config.encryption | default(false) %} ssl{% endif %}
+default-server inter 10000 {%- if config.encryption | default(false) %} ssl{%- if config.http2 | default(false) %} alpn h2,http/1.1{% endif %}{% endif %}
 
 {%       for server_name, server_content in servers_data | dictsort %}
 {%         if backend_name in (server_content.websites_list or {}) %}
