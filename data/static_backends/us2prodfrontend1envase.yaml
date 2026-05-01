@@ -1441,6 +1441,19 @@ taylordatnet.gtgs.net:
       ip: 10.4.218.113
       port: 443
       settings: check sni req.hdr(host) check-sni taylordatnet.gtgs.net
+mail.gtgs.net:
+  clustered_instances: [us2prodfrontend1envase]
+  backend_name: gtg-mail
+  encryption: true
+  http_health_check:
+    enabled: true
+    http_path: /
+  default_server: inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4 ssl
+  servers:
+    - name: gtg-mail
+      ip: 10.4.218.114
+      port: 443
+      settings: check verify none sni req.hdr(host)
 tcamelot.gtgs.net:
   clustered_instances: [us2prodfrontend1envase]
   backend_name: gtg-tcamelot
