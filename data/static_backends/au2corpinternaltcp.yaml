@@ -39,3 +39,13 @@ jump2-au2.wisecloud.zone:
     tcp-check connect port 3389 ssl
     server au2wp-srdp-401 10.2.86.28:3389 check
     server au2wp-srdp-402 10.2.86.29:3389 check
+
+vcfjump2-au2.wtg.zone:
+  clustered_instances: [au2corpinternaltcp]
+  full_override: |
+    backend vcfjump2-au2_wtg_zone
+    load-server-state-from-file none
+    option tcp-check
+    tcp-check connect port 3389 ssl
+    server au2co-srdp-411 10.2.86.53:3389 check
+    server au2co-srdp-412 10.2.86.54:3389 check

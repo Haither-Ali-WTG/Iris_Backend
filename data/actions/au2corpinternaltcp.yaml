@@ -7,3 +7,4 @@ destination_port_test:
     - use_backend jump2-au2_wtg_zone          if { dst_port 1062 }
     - use_backend jump2-au2_wisecloud_zone    if { dst_port 1066 }
     - use_backend admin-au2_wisecloud_zone    if { dst_port 1075 }
+    - use_backend vcfjump2-au2_wtg_zone       if { dst_port 1076 }
