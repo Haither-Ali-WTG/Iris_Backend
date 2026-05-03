@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260504.2
-  # Sun May  3 22:05:04 UTC 2026 -- Mon May  4 08:05:04 AEST 2026
+  # Dante Build Artifact 20260504.3
+  # Sun May  3 22:51:12 UTC 2026 -- Mon May  4 08:51:12 AEST 2026
   #
-  # Merge pull request 49415 from automatic_ascalaphus_image_upgrade into master
-  # ba6e1bd7c52dadd8b76875e7d606845efc38a9af
-  dante_build_id: '1688103'
+  # Merge pull request 49428 from automatic_dhcp_server_image_upgrade into master
+  # b67dfa32bd0ea6672bf2b39469407325601a572c
+  dante_build_id: '1688158'
 
-  # virgil 20260501.9
-  # Thu Apr 30 23:30:23 UTC 2026 -- Fri May  1 09:30:23 AEST 2026
+  # virgil 20260504.4
+  # Sun May  3 22:37:39 UTC 2026 -- Mon May  4 08:37:39 AEST 2026
   #
-  # Merged PR 49325: add vxlans to apex15/16
-  # 75713818bef68a356d55b398dcf0733c30c85b54
-  virgil_build_id: '1685535'
+  # Merged PR 49430: Added Ubuntu 26.04 OS
+  # 3f0c120d4bffe922605663b8c2e36974d4c22ce5
+  virgil_build_id: '1688142'
 
   # sqlbilling 20260501.1
   # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
