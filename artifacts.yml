@@ -7,12 +7,12 @@ variables:
   # e0d77479fd4649140c9f029c017cb0a2844532a6
   dante_build_id: '1688535'
 
-  # virgil 20260504.7
-  # Mon May  4 00:48:29 UTC 2026 -- Mon May  4 10:48:29 AEST 2026
+  # virgil 20260505.2
+  # Mon May  4 18:21:14 UTC 2026 -- Tue May  5 04:21:14 AEST 2026
   #
-  # Merged PR 49449: update apex17/18 configuration for VCF POC
-  # 7c468c0d8451914d7fd98178438fa08711640460
-  virgil_build_id: '1688327'
+  # Merge pull request 49519 from virgil_python_upgrade into master
+  # bd3166765511186ff48bad429bc729d8b679f9b7
+  virgil_build_id: '1689099'
 
   # sqlbilling 20260501.1
   # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
