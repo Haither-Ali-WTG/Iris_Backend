@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260504.8
-  # Mon May  4 02:45:36 UTC 2026 -- Mon May  4 12:45:36 AEST 2026
+  # Dante Build Artifact 20260504.9
+  # Mon May  4 03:41:03 UTC 2026 -- Mon May  4 13:41:03 AEST 2026
   #
-  # Merged PR 49468: Deploy GHE Container on AU2 mgmt node 3
-  # e5cbdbac4f391d56a92b8f8c369c6877c17eeceb
-  dante_build_id: '1688475'
+  # Merge pull request 49456 from dante_artifact_upgrade into master
+  # e0d77479fd4649140c9f029c017cb0a2844532a6
+  dante_build_id: '1688535'
 
   # virgil 20260504.7
   # Mon May  4 00:48:29 UTC 2026 -- Mon May  4 10:48:29 AEST 2026
