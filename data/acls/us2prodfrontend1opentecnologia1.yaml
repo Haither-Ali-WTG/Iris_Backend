@@ -10,3 +10,13 @@ us2co0ocl0000_url:
     - hdr(host) -i devoc0.openits.io      # These first 3 URLs are from CS02301497
     - hdr(host) -i mvcwtgoc0.openits.io
     - hdr(host) -i wtgoc0.openits.io
+
+us2co0etll0000_url:  # ETL environment (CS02325712)
+  description: "URLs for the ETL environment"
+  tests:
+    - hdr(host) -m reg -i ^(wtgetl1|apiwtgetl1|devetl1)\.openits\.io$
+
+us2co0ecml0000_url:  # ECM environment (CS02325712)
+  description: "URLs for the ECM environment"
+  tests:
+    - hdr(host) -m reg -i ^(wtgecm1|apiwtgecm1|devwtgecm1)\.openits\.io$
