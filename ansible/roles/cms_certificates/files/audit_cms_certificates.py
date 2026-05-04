@@ -59,8 +59,7 @@ class CMSCache:
             else:
                 resp.raise_for_status()
         except requests.exceptions.RequestException as e:
-            print(f"CRITICAL: Error fetching RG {resource_group}: {e}")
-            raise
+            raise RuntimeError(f"CRITICAL: Error fetching RG {resource_group}: {e}") from e
             
         self.rg_cache[resource_group] = []
         return []
@@ -84,8 +83,7 @@ class CMSCache:
             else:
                 resp.raise_for_status()
         except requests.exceptions.RequestException as e:
-            print(f"CRITICAL: Error fetching cert KV for {name}: {e}")
-            raise
+            raise RuntimeError(f"CRITICAL: Error fetching cert KV for {name}: {e}") from e
             
         self.cert_cache[cache_key] = DEFAULT_KV
         return DEFAULT_KV
