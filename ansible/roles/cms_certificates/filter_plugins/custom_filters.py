@@ -10,7 +10,7 @@ def read_audit_certs(playbook_dir: str, target_dc: Optional[str] = None) -> List
     and aggregates/deduplicates all certificates.
     
     Returns a list of dicts in the legacy format:
-    [{'name': str, 'cms_rs_group': str, 'key_vault_name': str}]
+    [{'name': str, 'key_vault_name': str}]
     """
     certs_dict = {}
     audit_dir = os.path.normpath(os.path.join(playbook_dir, '../data/certificates_audit'))
@@ -40,7 +40,6 @@ def read_audit_certs(playbook_dir: str, target_dc: Optional[str] = None) -> List
                         if name not in certs_dict:
                             certs_dict[name] = {
                                 'name': name,
-                                'cms_rs_group': cert.get('resource_group', 'UNKNOWN'),
                                 'key_vault_name': cert.get('keyvault', 'kv-wtg-iris-prod')
                             }
         except Exception as e:
