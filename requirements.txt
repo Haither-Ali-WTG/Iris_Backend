@@ -30,7 +30,7 @@ attrs==26.1.0
     #   jsonschema
     #   pytest-subtests
     #   referencing
-authlib==1.7.0
+authlib==1.7.1
     # via safety
 awscli==1.36.40
     # via -r requirements.in
@@ -271,11 +271,11 @@ tomlkit==0.14.0
     #   yq
 tqdm==4.67.3
     # via nltk
-typer==0.25.0
+typer==0.25.1
     # via safety
 types-pyyaml==6.0.12.20260408
     # via -r requirements.in
-types-requests==2.33.0.20260408
+types-requests==2.33.0.20260503
     # via -r requirements.in
 typing-extensions==4.15.0
     # via
