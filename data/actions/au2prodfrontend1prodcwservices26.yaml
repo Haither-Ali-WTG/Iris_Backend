@@ -44,7 +44,6 @@ custom_url_actions:
     - use_backend sumsyd_cfs_wisegrid_net if { hdr(host),field(1,:) -i cfs.sgl.com.au }
 
     ### Webtracker
-    - use_backend abqprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i abqprdwebtracker.wisegrid.net }
     - use_backend acamel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.acaint.com.au }
     - use_backend ahwprd-cn_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ahwprd.webtracker.carozplus.com }
     - use_backend ahwprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ahwprd-cn.webtracker.wisegrid.net }
