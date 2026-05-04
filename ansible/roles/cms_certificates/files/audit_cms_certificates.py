@@ -10,6 +10,8 @@ import os
 import glob
 from typing import Dict, List, Any, Set, Tuple, Optional
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import yaml
 import urllib3
 import ruamel.yaml
@@ -27,6 +29,17 @@ class CMSCache:
     def __init__(self) -> None:
         self.rg_cache: Dict[str, List[Dict[str, Any]]] = {}
         self.cert_cache: Dict[str, str] = {}
+        
+        self.session = requests.Session()
+        retry = Retry(
+            total=3,
+            backoff_factor=1,
+            status_forcelist=[500, 502, 503, 504],
+            allowed_methods=["GET"]
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
 
     def get_rg_certs(self, resource_group: str) -> List[Dict[str, Any]]:
         """Fetch all certificates for a given resource group from the CMS API."""
@@ -35,13 +48,18 @@ class CMSCache:
         
         url: str = f"{CMS_ENDPOINT}/v1/certificates/{resource_group}"
         try:
-            resp: requests.Response = requests.get(url, verify=False, timeout=10)  # nosec B501
+            resp: requests.Response = self.session.get(url, verify=False, timeout=10)  # nosec B501
             if resp.status_code == 200:
                 data: List[Dict[str, Any]] = resp.json()
                 self.rg_cache[resource_group] = data
                 return data
-        except Exception as e:
-            print(f"Error fetching RG {resource_group}: {e}")
+            elif resp.status_code == 404:
+                # Normal behavior if RG is not in CMS
+                pass
+            else:
+                resp.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"CRITICAL: Error fetching RG {resource_group}: {e}") from e
             
         self.rg_cache[resource_group] = []
         return []
@@ -54,14 +72,18 @@ class CMSCache:
         
         url: str = f"{CMS_ENDPOINT}/cms/v1/certificate/{resource_group}/{name}"
         try:
-            resp: requests.Response = requests.get(url, verify=False, timeout=10)  # nosec B501
+            resp: requests.Response = self.session.get(url, verify=False, timeout=10)  # nosec B501
             if resp.status_code in [200, 201]:
                 data: Dict[str, Any] = resp.json()
                 kv: str = data.get('keyvault', DEFAULT_KV)
                 self.cert_cache[cache_key] = kv
                 return kv
-        except Exception as e:
-            print(f"Error fetching cert KV for {name}: {e}")
+            elif resp.status_code == 404:
+                pass
+            else:
+                resp.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"CRITICAL: Error fetching cert KV for {name}: {e}") from e
             
         self.cert_cache[cache_key] = DEFAULT_KV
         return DEFAULT_KV
