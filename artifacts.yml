@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260505.3
-  # Tue May  5 03:05:59 UTC 2026 -- Tue May  5 13:05:59 AEST 2026
+  # Dante Build Artifact 20260505.4
+  # Tue May  5 04:16:20 UTC 2026 -- Tue May  5 14:16:20 AEST 2026
   #
-  # Merged PR 49567: Ubuntu 26.04 support
-  # d4c6569fffa9923a643d458a017da5308fe559ed
-  dante_build_id: '1689560'
+  # Merged PR 49569: Ansible 13 support
+  # 06b57b14a661b6e9a49da2dba30a9a0930c37f2d
+  dante_build_id: '1689634'
 
   # virgil 20260505.6
   # Tue May  5 01:26:11 UTC 2026 -- Tue May  5 11:26:11 AEST 2026
