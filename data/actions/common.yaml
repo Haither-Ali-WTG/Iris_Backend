@@ -38,6 +38,18 @@ transport_security:
     - http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
     - http-response set-header X-Content-Type-Options nosniff
 
+redirect_security_headers:
+  description: |-
+    Security headers for redirect responses (CS02322147 fix)
+    HAProxy redirect directive bypasses normal http-response actions,
+    so we need to explicitly add security headers for redirect status codes
+  order: 80
+  actions:
+    - >-
+      http-response set-header Strict-Transport-Security max-age=31536000;\ includeSubdomains;\ preload
+      if { status 301 302 303 307 308 }
+    - http-response set-header X-Content-Type-Options nosniff if { status 301 302 303 307 308 }
+
 set_xff_header:
   description: |-
     Set X-Forwarded-For header based on txn.client_ip
