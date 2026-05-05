@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260505.4
-  # Tue May  5 04:16:20 UTC 2026 -- Tue May  5 14:16:20 AEST 2026
+  # Dante Build Artifact 20260505.6
+  # Tue May  5 07:01:22 UTC 2026 -- Tue May  5 17:01:22 AEST 2026
   #
-  # Merged PR 49569: Ansible 13 support
-  # 06b57b14a661b6e9a49da2dba30a9a0930c37f2d
-  dante_build_id: '1689634'
+  # Merge pull request 49622 from dante_artifact_upgrade into master
+  # 6308b386c0aa894d69fc644085811777fd37be45
+  dante_build_id: '1689850'
 
-  # virgil 20260505.16
-  # Tue May  5 05:03:14 UTC 2026 -- Tue May  5 15:03:14 AEST 2026
+  # virgil 20260505.20
+  # Tue May  5 06:16:21 UTC 2026 -- Tue May  5 16:16:21 AEST 2026
   #
-  # Merged PR 49593: SSH Key Update: Revoke Former Employee Access — Alan Gao
-  # c10ad3f4ebbbd1d14aa5f2545dc1ac5cab10ee34
-  virgil_build_id: '1689691'
+  # Merged PR 49611: update vcf profiles and add vlans
+  # 08c3b7d622975d485784e80275bb14dcd68e8550
+  virgil_build_id: '1689788'
 
-  # sqlbilling 20260501.1
-  # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
+  # sqlbilling 20260505.3
+  # Tue May  5 07:05:51 UTC 2026 -- Tue May  5 17:05:51 AEST 2026
   #
-  # Merged PR 49234: SQLBilling-Add-CS02321821.yml
-  # d660768805e900a0a01959945e626fc4e95a2f3a
-  sqlbilling_build_id: '1685158'
+  # Merged PR 49512: SQLBilling-Add-CS02325231.yml
+  # 56662af0cd4643df052e257933c0252afdb45aa2
+  sqlbilling_build_id: '1689864'
