@@ -12,3 +12,34 @@
     dest: /etc/apt/sources.list
     mode: u=rw,go=r
   become: yes
+
+- name: Delete legacy APT source list files
+  file:
+    path: "/etc/apt/sources.list.d/{{ item }}"
+    state: absent
+  become: yes
+  loop:
+    - 10_2_0_37_download_docker_com_linux_ubuntu.list
+
+- name: Configure additional Foreman APT source list files
+  copy:
+    dest: "/etc/apt/sources.list.d/{{ item.name }}"
+    content: >
+      deb [signed-by=/etc/apt/trusted.gpg.d/foreman_key.gpg]
+      {{ item.url }}
+      {{ item.distribution }} {{ item.components }}
+    mode: u=rw,go=r
+  become: yes
+  loop:
+    - name: docker-com.list
+      url: https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Docker/ubuntu
+      distribution: "{{ os_codename[os] }}"
+      components: stable
+    - name: influxdata.list
+      url: https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Telegraf/ubuntu
+      distribution: stable
+      components: main
+    - name: microsoft-prod.list
+      url: https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Microsoft/{{ os }}
+      distribution: "{{ os_codename[os] }}"
+      components: main
