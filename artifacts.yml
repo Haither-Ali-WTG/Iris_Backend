@@ -7,12 +7,12 @@ variables:
   # 06b57b14a661b6e9a49da2dba30a9a0930c37f2d
   dante_build_id: '1689634'
 
-  # virgil 20260505.6
-  # Tue May  5 01:26:11 UTC 2026 -- Tue May  5 11:26:11 AEST 2026
+  # virgil 20260505.16
+  # Tue May  5 05:03:14 UTC 2026 -- Tue May  5 15:03:14 AEST 2026
   #
-  # Merged PR 49469: update-au2-bgw-vlan
-  # 1adc91f8cc2a8ff594176409abf31fd99abfe0b2
-  virgil_build_id: '1689445'
+  # Merged PR 49593: SSH Key Update: Revoke Former Employee Access — Alan Gao
+  # c10ad3f4ebbbd1d14aa5f2545dc1ac5cab10ee34
+  virgil_build_id: '1689691'
 
   # sqlbilling 20260501.1
   # Thu Apr 30 14:18:49 UTC 2026 -- Fri May  1 00:18:49 AEST 2026
