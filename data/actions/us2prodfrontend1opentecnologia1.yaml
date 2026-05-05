@@ -12,3 +12,5 @@ backend_selection:
   order: 80
   actions:
     - use_backend us2co0ocl0000_opentecnologia_hosting if us2co0ocl0000_url
+    - use_backend us2co0etll0000_opentecnologia_hosting if us2co0etll0000_url
+    - use_backend us2co0ecml0000_opentecnologia_hosting if us2co0ecml0000_url
