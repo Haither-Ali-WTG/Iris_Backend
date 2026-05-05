@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260505.1
-  # Mon May  4 19:21:05 UTC 2026 -- Tue May  5 05:21:05 AEST 2026
+  # Dante Build Artifact 20260505.3
+  # Tue May  5 03:05:59 UTC 2026 -- Tue May  5 13:05:59 AEST 2026
   #
-  # Merge pull request 49529 from dante_artifact_upgrade into master
-  # bed5a8b5ed83e6211f861d7373f1d4c9a0fcf98e
-  dante_build_id: '1689151'
+  # Merged PR 49567: Ubuntu 26.04 support
+  # d4c6569fffa9923a643d458a017da5308fe559ed
+  dante_build_id: '1689560'
 
   # virgil 20260505.6
   # Tue May  5 01:26:11 UTC 2026 -- Tue May  5 11:26:11 AEST 2026
