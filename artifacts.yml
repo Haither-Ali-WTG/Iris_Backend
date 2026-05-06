@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260506.4
-  # Wed May  6 04:49:39 UTC 2026 -- Wed May  6 14:49:39 AEST 2026
+  # Dante Build Artifact 20260506.5
+  # Wed May  6 05:59:29 UTC 2026 -- Wed May  6 15:59:29 AEST 2026
   #
-  # Merged PR 49698: Ansible 13 variables visibility fixed
-  # 52cdc9c91eeb1e1733456693e3a44216564c37d3
-  dante_build_id: '1690874'
+  # Merged PR 49685: feat: add Certificates Audit PRs to automerge filter
+  # 6218abb98f816d4cf2aab4ccbd79c57da83212cd
+  dante_build_id: '1690937'
 
   # virgil 20260506.8
   # Wed May  6 03:02:45 UTC 2026 -- Wed May  6 13:02:45 AEST 2026
