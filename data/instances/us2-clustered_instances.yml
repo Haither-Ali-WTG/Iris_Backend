@@ -861,6 +861,13 @@ clustered_instances:
           web: 2113
           socket: 2114
       machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodinternal1sistemascasa1:
       # Sistemas Casa instance for internal services
@@ -926,6 +933,18 @@ clustered_instances:
             - 2126  # :8060
             - 2127  # :9878
             - 2128  # :40
+      stats:
+        ports:
+          web: 2129
+          socket: 2130
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
 
     us2prodfrontend1opentecnologia1:
       # General Opentecnologia instance
