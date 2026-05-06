@@ -489,3 +489,4 @@ clustered_instances:
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
         - name: star-wisecloud-zone
+          cms_resource_group: RG-AU-Prod

@@ -16,6 +16,7 @@ clustered_instances:
         - name: star-wisetechglobal-com
           cms_resource_group: RG-AU-Corp
         - name: star-wisetechglobal-cn
+          cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
       stats:
@@ -790,3 +791,4 @@ clustered_instances:
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
         - name: star-wisecloud-zone
+          cms_resource_group: RG-AU-Prod
