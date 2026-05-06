@@ -1,8 +1,8 @@
 ---
 au2corprdg:
   - name: star-wisetechglobal-cn
-    resource_group: UNKNOWN
-    keyvault: kv-wtg-iris-prod
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-starwisete
   - name: star-wisetechglobal-com
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-dxdxilqyuv
@@ -501,8 +501,8 @@ au2prodfrontend1tenantservices:
     keyvault: wtg-prod-au-starwisegr
 au2corpinternaltcp:
   - name: star-wisecloud-zone
-    resource_group: UNKNOWN
-    keyvault: kv-wtg-iris-prod
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisecl
   - name: star-wtg-zone
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-starwtgzon
