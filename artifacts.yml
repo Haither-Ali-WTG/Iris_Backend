@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260506.2
-  # Wed May  6 01:01:00 UTC 2026 -- Wed May  6 11:01:00 AEST 2026
+  # Dante Build Artifact 20260506.4
+  # Wed May  6 04:49:39 UTC 2026 -- Wed May  6 14:49:39 AEST 2026
   #
-  # Merge pull request 49671 from dante_artifact_upgrade into master
-  # ef8f70fc5a3eb9f42d2085cd06cd8631d5bf3c95
-  dante_build_id: '1690658'
+  # Merged PR 49698: Ansible 13 variables visibility fixed
+  # 52cdc9c91eeb1e1733456693e3a44216564c37d3
+  dante_build_id: '1690874'
 
-  # virgil 20260506.5
-  # Wed May  6 00:12:58 UTC 2026 -- Wed May  6 10:12:58 AEST 2026
+  # virgil 20260506.8
+  # Wed May  6 03:02:45 UTC 2026 -- Wed May  6 13:02:45 AEST 2026
   #
-  # Merged PR 49670: add swp ports for VCF host connectivity on apex15/16/17/18 for POC
-  # 24a7235aa67104afd674d04db87b6feffc0dd9a6
-  virgil_build_id: '1690596'
+  # Merged PR 49689: updated us2test1 ocp nodes with correct IP references
+  # 93e7bf34e9fff3d95c610d5ba33648f68f5edb74
+  virgil_build_id: '1690772'
 
   # sqlbilling 20260506.1
   # Tue May  5 20:41:59 UTC 2026 -- Wed May  6 06:41:59 AEST 2026
