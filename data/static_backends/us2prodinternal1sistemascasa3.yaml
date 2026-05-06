@@ -2,32 +2,51 @@
 # CS02323128 - Sistemas Casa Prevalidador Test
 us2mx0appdl001.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa3]
-  full_override: |
-    backend us2mx0appdl001_sistemascasa_hosting
-    server us2mx0appdl001 10.4.248.30:80 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0appdl001
+      ip: 10.4.248.30
+      port: 80
 
 wsnodes-ssl.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa3]
-  full_override: |
-    backend wsnodes-ssl_sistemascasa_hosting
-    server us2mx0wbsdl001 10.4.248.28:8086 check
-    server us2mx0wbsdl002 10.4.248.29:8087 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsdl001
+      ip: 10.4.248.28
+      port: 8086
+    - name: us2mx0wbsdl002
+      ip: 10.4.248.29
+      port: 8087
 
 wsnodes.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa3]
-  full_override: |
-    backend wsnodes_sistemascasa_hosting
-    server us2mx0wbsdl001 10.4.248.28:8086 check
-    server us2mx0wbsdl001 10.4.248.29:8087 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsdl001
+      ip: 10.4.248.28
+      port: 8086
+    - name: us2mx0wbsdl002
+      ip: 10.4.248.29
+      port: 8087
 
 us2mx0gradl001.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa3]
-  full_override: |
-    backend us2mx0gradl001_sistemascasa_hosting
-    server us2mx0gradl001 10.4.248.21:9070 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0gradl001
+      ip: 10.4.248.21
+      port: 9070
 
 us2mx0pgadl002.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa3]
-  full_override: |
-    backend us2mx0pgal00002_sistemascasa_hosting
-    server us2mx0pgadl002 10.4.248.19:80 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0pgadl002
+      ip: 10.4.248.19
+      port: 80
