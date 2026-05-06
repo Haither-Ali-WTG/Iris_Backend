@@ -5,6 +5,11 @@ star_casaonline_mx:
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?casaonline\.mx$
 
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
 casaonline_url:
   description: "URLs that need to go to http_server1"
   tests:

@@ -841,12 +841,26 @@ clustered_instances:
           socket: 2110
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates: []  # TODO: Add certificates in separate PR once present in CMS
       cipher:
         profiles:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa7:
+      # CS02322992 - Sistemas Casa Archivos Digitales
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2111]
+          ssl: [2112]
+      stats:
+        ports:
+          web: 2113
+          socket: 2114
+      machine_cluster: us2-prod-frontend-1
 
     us2prodinternal1sistemascasa1:
       # Sistemas Casa instance for internal services
