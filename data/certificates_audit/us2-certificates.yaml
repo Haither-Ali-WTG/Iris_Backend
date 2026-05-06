@@ -528,3 +528,7 @@ us2prodfrontend1pierbridgehubcapp:
   - name: star-transtreamxb-com
     resource_group: RG-US-Prod
     keyvault: wtg-prod-us-uxtefkiqza
+us2prodfrontend1opentecnologia1:
+  - name: wtgoc0-openits-io
+    resource_group: RG-US-Prod
+    keyvault: wtg-prod-us-wtgoc0open

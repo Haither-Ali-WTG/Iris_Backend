@@ -329,8 +329,8 @@ de1sandinternal1services:
     keyvault: wtg-sand-au-starsandwt
 de1corpinternaltcp:
   - name: star-wisecloud-zone
-    resource_group: UNKNOWN
-    keyvault: kv-wtg-iris-prod
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisecl
   - name: star-wtg-zone
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-starwtgzon
