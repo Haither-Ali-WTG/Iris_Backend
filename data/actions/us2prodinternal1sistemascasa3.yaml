@@ -56,7 +56,7 @@ backend_selection:
   order: 80
   actions:
     - use_backend us2mx0appdl001_sistemascasa_hosting   if app_url
-    - use_backend wsnodes-ssl_sistemascasa_hosting      if app_url port_7070
-    - use_backend wsnodes_sistemascasa_hosting          if port_8060
+    - use_backend wsnodes-ssl-dev_sistemascasa_hosting  if app_url port_7070
+    - use_backend wsnodes-dev_sistemascasa_hosting      if port_8060
     - use_backend us2mx0gradl001_sistemascasa_hosting   if graylogbk_url port_9878
     - use_backend us2mx0pgadl002_sistemascasa_hosting   if monitor_pgadmin_url port_40

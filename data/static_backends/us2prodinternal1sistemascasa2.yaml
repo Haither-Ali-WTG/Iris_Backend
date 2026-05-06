@@ -9,7 +9,7 @@ us2mx0appl00001.sistemascasa.hosting:
       ip: 10.4.248.14
       port: 80
 
-wsnodes-ssl.sistemascasa.hosting:
+wsnodes-ssl-test.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa2]
   http_health_check:
     enabled: false
@@ -21,7 +21,7 @@ wsnodes-ssl.sistemascasa.hosting:
       ip: 10.4.248.13
       port: 8087
 
-wsnodes.sistemascasa.hosting:
+wsnodes-test.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa2]
   http_health_check:
     enabled: false
