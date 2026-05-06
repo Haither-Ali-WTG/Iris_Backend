@@ -1,0 +1,76 @@
+---
+# CS02322985 - Sistemas Casa HAProxy Configuration - Ctraweb
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+port_8080:
+  description: "Destination port of 8080 in the original request"
+  tests:
+    - dst_port 6969
+
+port_8081:
+  description: "Destination port of 8081 in the original request"
+  tests:
+    - dst_port 2079
+
+port_8082:
+  description: "Destination port of 8082 in the original request"
+  tests:
+    - dst_port 6969
+
+port_8083:
+  description: "Destination port of 8083 in the original request"
+  tests:
+    - dst_port 6969
+
+port_8085:
+  description: "Destination port of 8085 in the original request"
+  tests:
+    - dst_port 6969
+
+port_8089:
+  description: "Destinaton port of 8090 in the original request"
+  tests:
+    - dst_port 2070
+
+port_9090:
+  description: "Destination port of 9090 in the original request"
+  tests:
+    - dst_port 6969
+
+app_chapela_url:
+  description: "URLs that need to go to host_server1"
+  tests:
+    - hdr(host) -i chapela.sistemascasa.com
+
+app_trans_url:
+  description: "URLs that need to go to host_server2"
+  tests:
+    - hdr(host) -i transpheric.sistemascasa.com
+
+app_lamx_url:
+  description: "URLs that need to go to host_server3"
+  tests:
+    - hdr(host) -i ctraweb-lamx.sistemascasa.com
+
+app_apycsa_url:
+  description: "URLs that need to go to host_server4"
+  tests:
+    - hdr(host) -i ctraweb-apycsa.sistemascasa.com
+
+app_ademsa_url:
+  description: "URLs that need to go to host_server5"
+  tests:
+    - hdr(host) -i ademsa.sistemascasa.com
+
+app_rali_url:
+  description: "URLs that need to go to host_server6"
+  tests:
+    - hdr(host) -i rali-ctraweb.sistemascasa.com
+
+app_serviport_url:
+  description: "URLs that need to go to host_server7"
+  tests:
+    - hdr(host) -i ctraweb-serviport.sistemascasa.com

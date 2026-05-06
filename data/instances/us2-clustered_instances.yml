@@ -798,6 +798,35 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
+    us2prodfrontend1sistemascasa5:
+      # CS02322985 - Sistemas Casa Ctraweb
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2094]
+          ssl:
+            - 2095  # :443
+            - 2100  # :8080
+            - 2101  # :8081
+            - 2102  # :8082
+            - 2103  # :8083
+            - 2104  # :8085
+            - 2105  # :8089
+            - 2106  # :9090
+      stats:
+        ports:
+          web: 2096
+          socket: 2099
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []  # TODO: Add certificates in separate PR once present in CMS
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
     us2prodinternal1sistemascasa1:
       # Sistemas Casa instance for internal services
       dc: US2
