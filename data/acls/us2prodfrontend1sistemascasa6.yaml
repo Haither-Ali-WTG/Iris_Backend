@@ -1,0 +1,12 @@
+---
+# CS02322988 - Sistemas Casa HAProxy Configuration - Casaonline
+star_casaonline_mx:
+  description: "*.casaonline.mx"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?casaonline\.mx$
+
+casaonline_url:
+  description: "URLs that need to go to http_server1"
+  tests:
+    - hdr(host) -i casaonline.mx
+    - hdr(host) -i www.casaonline.mx

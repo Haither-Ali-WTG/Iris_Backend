@@ -1,0 +1,7 @@
+---
+# CS02322988 - Sistemas Casa HAProxy Configuration - Casaonline
+us2mx0adml041.sistemascasa.hosting:
+  clustered_instances: [us2prodfrontend1sistemascasa6]
+  full_override: |
+    backend us2mx0adml041_sistemascasa_hosting
+    server us2mx0adml041 10.16.105.19:80 check
