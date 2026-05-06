@@ -2,6 +2,9 @@
 # CS02322992 - Sistemas Casa Archivos Digitales
 us2mx0clidw052.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa7]
-  full_override: |
-    backend us2mx0clidw052_sistemascasa_hosting
-    server us2mx0clidw052 10.16.96.3:80 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: ux2mx0clidw052
+      ip: 10.16.96.3
+      port: 80
