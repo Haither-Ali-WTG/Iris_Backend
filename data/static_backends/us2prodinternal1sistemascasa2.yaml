@@ -24,7 +24,7 @@ us2mx0gral00001.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa2]
   full_override: |
     backend us2mx0gral00001_sistemascasa_hosting
-    server 10.4.248.21:9070 check
+    server us2mx0gral00001 10.4.248.21:9070 check
 
 us2mx0pgal00002.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa2]
