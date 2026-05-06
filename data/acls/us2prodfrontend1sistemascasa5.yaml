@@ -8,37 +8,37 @@ star_sistemascasa_com:
 port_8080:
   description: "Destination port of 8080 in the original request"
   tests:
-    - dst_port 6969
+    - dst_port 2100
 
 port_8081:
   description: "Destination port of 8081 in the original request"
   tests:
-    - dst_port 2079
+    - dst_port 2101
 
 port_8082:
   description: "Destination port of 8082 in the original request"
   tests:
-    - dst_port 6969
+    - dst_port 2102
 
 port_8083:
   description: "Destination port of 8083 in the original request"
   tests:
-    - dst_port 6969
+    - dst_port 2103
 
 port_8085:
   description: "Destination port of 8085 in the original request"
   tests:
-    - dst_port 6969
+    - dst_port 2104
 
 port_8089:
   description: "Destinaton port of 8090 in the original request"
   tests:
-    - dst_port 2070
+    - dst_port 2105
 
 port_9090:
   description: "Destination port of 9090 in the original request"
   tests:
-    - dst_port 6969
+    - dst_port 2106
 
 app_chapela_url:
   description: "URLs that need to go to host_server1"
