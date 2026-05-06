@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260505.6
-  # Tue May  5 07:01:22 UTC 2026 -- Tue May  5 17:01:22 AEST 2026
+  # Dante Build Artifact 20260506.1
+  # Tue May  5 23:41:20 UTC 2026 -- Wed May  6 09:41:20 AEST 2026
   #
-  # Merge pull request 49622 from dante_artifact_upgrade into master
-  # 6308b386c0aa894d69fc644085811777fd37be45
-  dante_build_id: '1689850'
+  # Merge pull request 49656 from dante_artifact_upgrade into master
+  # 8b21193806445fa748d406c62601cf05750814e5
+  dante_build_id: '1690537'
 
-  # virgil 20260506.1
-  # Tue May  5 22:48:07 UTC 2026 -- Wed May  6 08:48:07 AEST 2026
+  # virgil 20260506.5
+  # Wed May  6 00:12:58 UTC 2026 -- Wed May  6 10:12:58 AEST 2026
   #
-  # Merged PR 48937: Setup network for DAT in the US and DE
-  # b5f405a29bd2409d6173a6c8eeb75ad81570db46
-  virgil_build_id: '1690466'
+  # Merged PR 49670: add swp ports for VCF host connectivity on apex15/16/17/18 for POC
+  # 24a7235aa67104afd674d04db87b6feffc0dd9a6
+  virgil_build_id: '1690596'
 
   # sqlbilling 20260506.1
   # Tue May  5 20:41:59 UTC 2026 -- Wed May  6 06:41:59 AEST 2026
