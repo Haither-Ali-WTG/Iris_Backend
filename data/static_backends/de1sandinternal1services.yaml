@@ -10,7 +10,7 @@ symbols-de1.sand.wtg.zone:
       ip: 10.3.116.31
       port: 80
 
-peppol-pdp.sand.wtg.zone:
+peppol-bufferapp-sand.sand.wtg.zone:
   clustered_instances: [de1sandinternal1services]
   http_health_check:
     enabled: true

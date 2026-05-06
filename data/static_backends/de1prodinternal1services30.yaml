@@ -403,7 +403,7 @@ de1sandinternal1services.wtg.zone:
       ip: 10.3.83.33
       port: 2343
 
-peppol-pdp-test.wtg.zone:
+peppol-bufferapp-test.wisetechglobal.com:
   clustered_instances: [de1prodinternal1services30]
   http_health_check:
     enabled: true
@@ -435,6 +435,17 @@ peppol-messagehub-prod.wisetechglobal.com:
     - name: de1wp-spdp-401
       ip: 10.3.88.130
       port: 5002
+
+peppol-bufferapp-prod.wisetechglobal.com:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  servers:
+    - name: de1wp-spdp-402
+      ip: 10.3.88.131
+      port: 5001
 
 # iris-stats services
 de1prodelasticbunker1.iris-stats.wtg.zone:
