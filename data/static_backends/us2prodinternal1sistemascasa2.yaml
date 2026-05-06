@@ -1,0 +1,33 @@
+---
+# CS02323128 - Sistemas Casa Prevalidador Test
+us2mx0appl00001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  full_override: |
+    backend us2mx0appl00001_sistemascasa_hosting
+    server us2mx0appl00001 10.4.248.14:80 check
+
+wsnodes-ssl.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  full_override: |
+    backend wsnodes-ssl_sistemascasa_hosting
+    server us2mx0wbsl00001 10.4.248.12:8086 check
+    server us2mx0wbsl00002 10.4.248.13:8087 check
+
+wsnodes.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  full_override: |
+    backend wsnodes_sistemascasa_hosting
+    server us2mx0wbsl00001 10.4.248.12:8086 check
+    server us2mx0wbsl00002 10.4.248.13:8087 check
+
+us2mx0gral00001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  full_override: |
+    backend us2mx0gral00001_sistemascasa_hosting
+    server 10.4.248.21:9070 check
+
+us2mx0pgal00002.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  full_override: |
+    backend us2mx0pgal00002_sistemascasa_hosting
+    server us2mx0pgal00002 10.4.248.19:80 check

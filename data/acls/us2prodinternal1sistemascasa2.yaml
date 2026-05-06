@@ -1,0 +1,51 @@
+---
+# CS02323128 - Sistemas Casa Prevalidador Test
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+port_7070:
+  description: "Destinaton port of 7070 in the original request"
+  tests:
+    - dst_port 2117
+
+port_8060:
+  description: "Destination port of 8060 in the original request"
+  tests:
+    - dst_port 2118
+
+port_9878:
+  description: "Destination port of 9878 in the original request"
+  tests:
+    - dst_port 2119
+
+port_40:
+  description: "Destination port of 40 in the original request"
+  tests:
+    - dst_port 2120
+
+is_sql_injection:
+  description: "SQL injection attempts"
+  tests:
+    - path_reg -i -m reg \b(select|union|insert|drop)\b
+
+allowed_path:
+  description: "Paths that are allowed"
+  tests:
+    - path_beg /icingaweb2 /e-Preval /ext-6.5.0 /themesWorkspace /counter
+
+app_url:
+  description: "URLs that need to go to host_server2"
+  tests:
+    - hdr(host) -i epreval-pruebas.sistemascasa.com
+
+graylogbk_url:
+  description: "Test Graylog instance URL"
+  tests:
+    - hdr(host) -i logs-prevalpruebas.sistemascasa.com
+
+monitor_pgadmin_url:
+  description: "URLs for Postgres admin"
+  tests:
+    - hdr(host) -i pgad-prevalpruebas.sistemascasa.com

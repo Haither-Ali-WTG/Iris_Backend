@@ -887,6 +887,32 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
+    us2prodinternal1sistemascasa2:
+      # CS02323128 - Sistemas Casa Prevalidador Test
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2115]
+          ssl:
+            - 2116  # :443
+            - 2117  # :7070
+            - 2118  # :8060
+            - 2119  # :9878
+            - 2120  # :40
+      stats:
+        ports:
+          web: 2121
+          socket: 2122
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
     us2prodfrontend1opentecnologia1:
       # General Opentecnologia instance
       dc: US2
