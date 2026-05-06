@@ -26,8 +26,8 @@ au2sandinternal1:
     resource_group: RG-AU-Sand
     keyvault: wtg-sand-au-starlocalx
   - name: star-sand-wtg-zone
-    resource_group: UNKNOWN
-    keyvault: kv-wtg-iris-prod
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-starsandwt
   - name: star-scim-testrig-sand-wtg-zone
     resource_group: RG-AU-Sand
     keyvault: wtg-sand-au-starscimt4
@@ -361,8 +361,8 @@ au2sandinternal2testservices0:
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-starcargow
   - name: star-sand-wtg-zone
-    resource_group: UNKNOWN
-    keyvault: kv-wtg-iris-prod
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-starsandwt
   - name: star-testrig-sand-wtg-zone
     resource_group: RG-AU-Sand
     keyvault: wtg-sand-au-nlldbncxru
