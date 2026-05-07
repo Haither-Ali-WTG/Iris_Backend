@@ -481,12 +481,34 @@ gss.wisegrid.net:
     http_path: /wtg/status
     check_expect: '200|401|403'
   servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+      settings: check ssl inter 10s fall 3 rise 2
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+      settings: check ssl inter 10s fall 3 rise 2
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+      settings: check ssl inter 10s fall 3 rise 2
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+      settings: check ssl inter 10s fall 3 rise 2
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
+      settings: check ssl inter 10s fall 3 rise 2
     - name: AU2WP-SDKR-1
       ip: 10.2.67.111
       port: 42301
+      settings: backup
     - name: AU2WP-SDKR-2
       ip: 10.2.67.112
       port: 42301
+      settings: backup
 
 onerecord.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
