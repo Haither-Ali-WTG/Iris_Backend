@@ -11,7 +11,7 @@ star_sistemascasa_com:
     - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
 
 casaonline_url:
-  description: "URLs that need to go to http_server1"
+  description: "URLs that need to go to us2mx0adml041"
   tests:
     - hdr(host) -i casaonline.mx
     - hdr(host) -i www.casaonline.mx

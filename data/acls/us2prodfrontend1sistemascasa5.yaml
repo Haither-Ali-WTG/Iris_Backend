@@ -41,36 +41,36 @@ port_9090:
     - dst_port 2106
 
 app_chapela_url:
-  description: "URLs that need to go to host_server1"
+  description: "URLs that need to go to us2mx0chw00001"
   tests:
     - hdr(host) -i chapela.sistemascasa.com
 
 app_trans_url:
-  description: "URLs that need to go to host_server2"
+  description: "URLs that need to go to us2mx0trw00001"
   tests:
     - hdr(host) -i transpheric.sistemascasa.com
 
 app_lamx_url:
-  description: "URLs that need to go to host_server3"
+  description: "URLs that need to go to us2mx0law00001"
   tests:
     - hdr(host) -i ctraweb-lamx.sistemascasa.com
 
 app_apycsa_url:
-  description: "URLs that need to go to host_server4"
+  description: "URLs that need to go to us2mx0apw00001"
   tests:
     - hdr(host) -i ctraweb-apycsa.sistemascasa.com
 
 app_ademsa_url:
-  description: "URLs that need to go to host_server5"
+  description: "URLs that need to go to us2mx0adw00001"
   tests:
     - hdr(host) -i ademsa.sistemascasa.com
 
 app_rali_url:
-  description: "URLs that need to go to host_server6"
+  description: "URLs that need to go to us2mx0raw00001"
   tests:
     - hdr(host) -i rali-ctraweb.sistemascasa.com
 
 app_serviport_url:
-  description: "URLs that need to go to host_server7"
+  description: "URLs that need to go to us2mx0sew00001"
   tests:
     - hdr(host) -i ctraweb-serviport.sistemascasa.com

@@ -36,7 +36,7 @@ allowed_path:
     - path_beg /icingaweb2 /e-Preval /ext-6.5.0 /themesWorkspace /counter
 
 app_url:
-  description: "URLs that need to go to host_server2"
+  description: "URLs that need to go to us2mx0appl00001"
   tests:
     - hdr(host) -i epreval-pruebas.sistemascasa.com
 
