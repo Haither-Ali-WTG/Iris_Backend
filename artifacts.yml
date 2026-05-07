@@ -7,12 +7,12 @@ variables:
   # 71278989942746c16ba8db9b86b738e4e1550abc
   dante_build_id: '1691773'
 
-  # virgil 20260506.8
-  # Wed May  6 03:02:45 UTC 2026 -- Wed May  6 13:02:45 AEST 2026
+  # virgil 20260507.1
+  # Thu May  7 04:20:34 UTC 2026 -- Thu May  7 14:20:34 AEST 2026
   #
-  # Merged PR 49689: updated us2test1 ocp nodes with correct IP references
-  # 93e7bf34e9fff3d95c610d5ba33648f68f5edb74
-  virgil_build_id: '1690772'
+  # Merged PR 49568: add-ssh-key-zinal
+  # 77646b9d5bb2f435cf3e51d9ba56a3787c44ac5c
+  virgil_build_id: '1691818'
 
   # sqlbilling 20260506.3
   # Wed May  6 09:01:56 UTC 2026 -- Wed May  6 19:01:56 AEST 2026
