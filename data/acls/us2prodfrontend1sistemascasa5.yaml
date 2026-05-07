@@ -30,7 +30,7 @@ port_8085:
   tests:
     - dst_port 2104
 
-port_8089:
+port_8090:
   description: "Destinaton port of 8090 in the original request"
   tests:
     - dst_port 2105
