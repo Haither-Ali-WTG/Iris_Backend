@@ -123,6 +123,7 @@ au2sp-tweb-411.testrig.sand.wtg.zone-wildcard:
 au2sp-tweb-403a.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 403a-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -134,6 +135,7 @@ au2sp-tweb-403a.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-403b.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 403b-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -145,6 +147,7 @@ au2sp-tweb-403b.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-404a.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 404a-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -156,6 +159,7 @@ au2sp-tweb-404a.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-404b.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 404b-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -167,6 +171,7 @@ au2sp-tweb-404b.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-405a.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 405a-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -178,6 +183,7 @@ au2sp-tweb-405a.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-405b.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 405b-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -189,6 +195,7 @@ au2sp-tweb-405b.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-407.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 407-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -200,6 +207,7 @@ au2sp-tweb-407.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-408.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 408-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -211,6 +219,7 @@ au2sp-tweb-408.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-409.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 409-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -222,6 +231,7 @@ au2sp-tweb-409.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-410.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 410-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true
@@ -233,6 +243,7 @@ au2sp-tweb-410.testrig.sand.wtg.zone-wildcard-https:
 au2sp-tweb-411.testrig.sand.wtg.zone-wildcard-https:
   clustered_instances: [au2sandinternal1]
   backend_name: 411-wildcard-https
+  http2: true
   http_health_check:
     enabled: false
   encryption: true

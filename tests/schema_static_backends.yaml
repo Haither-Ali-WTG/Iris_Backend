@@ -5,6 +5,7 @@ static_backend: any(include('static_backend_normal'), include('static_backend_fu
 ---
 static_backend_normal:
   clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
+  http2: bool(required=False)
   http_health_check: any(include('health_check_on'), include('health_check_off'))
   balance: enum('leastconn', 'source', 'random', required=False)
   backend_name: regex('^[a-z0-9.-]{1,253}$', name='backend name', required=False)

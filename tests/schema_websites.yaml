@@ -5,6 +5,7 @@ website:
   name_regex: include('regex')
   name_exclude_regex: include('regex', required=False)
   server_regex: include('regex', required=False)
+  http2: bool(required=False)
   http_health_check: any(include('health_check_on'), include('health_check_off'))
   balance: enum('leastconn', 'source', 'first', 'random', required=False)
   cookie: any(include('dynamic_cookie_on'), include('dynamic_cookie_off'))
