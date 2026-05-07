@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260507.1
-  # Thu May  7 03:33:22 UTC 2026 -- Thu May  7 13:33:22 AEST 2026
+  # Dante Build Artifact 20260507.2
+  # Thu May  7 05:21:11 UTC 2026 -- Thu May  7 15:21:11 AEST 2026
   #
-  # Merged PR 49747: Speed up playbook execution for Ansible 13
-  # 71278989942746c16ba8db9b86b738e4e1550abc
-  dante_build_id: '1691773'
+  # Merge pull request 49759 from dante_artifact_upgrade into master
+  # 552d1a7f19d57e5c9450a3ffbabfb6d6b8dc11ba
+  dante_build_id: '1691870'
 
   # virgil 20260507.1
   # Thu May  7 04:20:34 UTC 2026 -- Thu May  7 14:20:34 AEST 2026
