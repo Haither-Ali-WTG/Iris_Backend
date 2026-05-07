@@ -39,6 +39,7 @@ ssl_redirects:
   order: 79
   actions:
     - redirect scheme https if star_sistemascasa_com   !{ ssl_fc }
+
 backend_selection:
   description: |-
     Handle backend selection.
