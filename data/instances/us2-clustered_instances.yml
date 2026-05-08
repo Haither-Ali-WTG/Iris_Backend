@@ -719,13 +719,13 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: guia-aduanal-com-mx
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
         - name: aduanas-mexico-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
         - name: administrator-e-casa-com-mx
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -750,7 +750,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: administrator-e-casa-com-mx
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -776,7 +776,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -805,7 +805,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-pemex-org-mx
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -882,7 +882,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -909,7 +909,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -937,7 +937,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -965,7 +965,7 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: us2-aduanas-sistemascasa-com
-          cms_resource_group: RG-US2-Prod
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
