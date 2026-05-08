@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260508.1
-  # Fri May  8 01:10:59 UTC 2026 -- Fri May  8 11:10:59 AEST 2026
+  # Dante Build Artifact 20260508.2
+  # Fri May  8 04:59:21 UTC 2026 -- Fri May  8 14:59:21 AEST 2026
   #
-  # Merged PR 49800: Fixes for Ansible 13 support
-  # c37c5f094ede45b1105ee8fe5d92140819be6520
-  dante_build_id: '1692654'
+  # Merged PR 49829: Removed caching (slows down)
+  # c4aebca381472441d64ef450f4975d6ecc4d6eea
+  dante_build_id: '1692827'
 
   # virgil 20260508.5
   # Fri May  8 04:06:02 UTC 2026 -- Fri May  8 14:06:02 AEST 2026
