@@ -7,12 +7,12 @@ variables:
   # c37c5f094ede45b1105ee8fe5d92140819be6520
   dante_build_id: '1692654'
 
-  # virgil 20260507.1
-  # Thu May  7 04:20:34 UTC 2026 -- Thu May  7 14:20:34 AEST 2026
+  # virgil 20260508.5
+  # Fri May  8 04:06:02 UTC 2026 -- Fri May  8 14:06:02 AEST 2026
   #
-  # Merged PR 49568: add-ssh-key-zinal
-  # 77646b9d5bb2f435cf3e51d9ba56a3787c44ac5c
-  virgil_build_id: '1691818'
+  # Merged PR 49819: update apex37
+  # 61a93baad402567a05b917b703653bae0461ee4a
+  virgil_build_id: '1692787'
 
   # sqlbilling 20260508.2
   # Fri May  8 02:36:59 UTC 2026 -- Fri May  8 12:36:59 AEST 2026
