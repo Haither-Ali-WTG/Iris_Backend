@@ -2,6 +2,7 @@
 # CS02301486 - Sistemas Casa HAProxy Configuration - EPREVIOS
 us2mx0apppl032.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa3]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0apppl032_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -9,15 +10,27 @@ us2mx0apppl032.sistemascasa.hosting:
 
 us2mx0apppl031.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa3]
-  full_override: |
-    backend us2mx0apppl031_sistemascasa_hosting
-    server us2mx0apppl031 10.16.106.8:80 check
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0apppl031
+      ip: 10.16.106.8
+      port: 80
 
 webservices.java.produccion:
   clustered_instances: [us2prodfrontend1sistemascasa3]
-  full_override: |
-    backend webservices_java_produccion
-    balance leastconn
-    cookie SERVER_USED insert indirect nocache secure
-    server us2mx0wesl031 10.16.106.16:8090 check cookie s1
-    server us2mx0wesl032 10.16.106.17:8091 check cookie s2
+  http_health_check:
+    enabled: false
+  cookie:
+    - name: SERVER_USED
+      secure: yes
+  balance: leastconn
+  servers:
+    - name: us2mx0wesl031
+      ip: 10.16.106.16
+      port: 8090
+      settings: check cookie s1
+    - name: us2mx0wesl032
+      ip: 10.16.106.17
+      port: 8091
+      settings: check cookie s2
