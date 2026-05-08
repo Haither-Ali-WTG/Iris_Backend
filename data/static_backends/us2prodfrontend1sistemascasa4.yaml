@@ -7,7 +7,6 @@ us2mx0ptl00001-8085.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0ptl00001 10.16.104.8:8088 check
 
 us2mx0tsw00001.sistemascasa.hosting:
@@ -17,7 +16,6 @@ us2mx0tsw00001.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0tsw00001 10.16.104.2:80 check
 
 us2mx0ptl00001-8086.sistemascasa.hosting:
@@ -27,7 +25,6 @@ us2mx0ptl00001-8086.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0ptl00001 10.16.104.8:8090 check
 
 us2mx0cpw00001.sistemascasa.hosting:
@@ -37,7 +34,6 @@ us2mx0cpw00001.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0cpw00001 10.16.104.7:80 check
 
 us2mx0ctw00001.sistemascasa.hosting:
@@ -47,5 +43,4 @@ us2mx0ctw00001.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0ctw00001 10.16.104.6:80 check

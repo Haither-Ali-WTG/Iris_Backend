@@ -16,5 +16,4 @@ us2mx0apppl011.sistemascasa.hosting:
     mode http
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0apppl011 10.16.106.7:80 check
