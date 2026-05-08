@@ -1,6 +1,8 @@
 ---
 us2mx0apppw011-internal.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa1]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
+  # and we can't specify "prefix" for cookies
   full_override: |
     backend us2mx0apppw011-internal_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -9,6 +11,7 @@ us2mx0apppw011-internal.sistemascasa.hosting:
 
 us2mx0adml042.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa1]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0adml042_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -16,6 +19,7 @@ us2mx0adml042.sistemascasa.hosting:
 
 us2mx0gral031.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa1]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0gral031_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -23,6 +27,7 @@ us2mx0gral031.sistemascasa.hosting:
 
 us2mx0pgabl031.sistemascasa.hosting:
   clustered_instances: [us2prodinternal1sistemascasa1]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0pgabl031_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
