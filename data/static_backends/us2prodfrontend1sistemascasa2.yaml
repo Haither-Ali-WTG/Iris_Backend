@@ -2,6 +2,7 @@
 # CS02301485 - Sistemas Casa HAProxy Configuration - CTARNET
 us2mx0adml043.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa2]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0adml043_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
@@ -9,6 +10,7 @@ us2mx0adml043.sistemascasa.hosting:
 
 us2mx0bdpl043.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa2]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0bdpl043_sistemascasa_hosting
     http-request set-header X-Forwarded-Port  %[dst_port]
