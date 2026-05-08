@@ -24,7 +24,7 @@ webservices.java.produccion:
     backend webservices_java_produccion
     balance leastconn
     mode http
-    cookie SERVER_USED insert indirect nocache
+    cookie SERVER_USED insert indirect nocache secure
     option forwardfor
     server us2mx0wesl031 10.16.106.16:8090 check cookie s1
     server us2mx0wesl032 10.16.106.17:8091 check cookie s2

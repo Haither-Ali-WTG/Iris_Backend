@@ -6,7 +6,7 @@ us2mx0apppw011.sistemascasa.hosting:
     backend us2mx0apppw011_sistemascasa_hosting
     mode http
     option forwardfor
-    cookie JSESSIONID prefix nocache
+    cookie JSESSIONID prefix nocache secure
     server us2mx0apppw011 10.16.106.6:80 check cookie https849001
 
 us2mx0apppl011.sistemascasa.hosting:

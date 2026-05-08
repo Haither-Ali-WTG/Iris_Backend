@@ -6,7 +6,7 @@ us2mx0apppw011-internal.sistemascasa.hosting:
     option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
-    cookie JSESSIONID prefix nocache
+    cookie JSESSIONID prefix nocache secure
     server us2mx0apppw011 10.16.106.6:9001 check cookie https9001
 
 us2mx0adml042.sistemascasa.hosting:
