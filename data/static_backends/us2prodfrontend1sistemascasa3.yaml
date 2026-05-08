@@ -22,7 +22,7 @@ webservices.java.produccion:
   http_health_check:
     enabled: false
   cookie:
-    name: SERVER_USED
+    name: SERVERUSED
     secure: true
   balance: leastconn
   servers:
