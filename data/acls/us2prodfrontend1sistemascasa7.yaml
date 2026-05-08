@@ -1,0 +1,16 @@
+---
+# CS02322992 - Sistemas Casa Archivos Digitales
+star_sistemascasa_com:
+  description: "*.sistemascasa.com"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?sistemascasa\.com$
+
+archivos_digitales_url:
+  description: "URLs that need to go to us2mx0clidw052"
+  tests:
+    - hdr(host) -i adigital.sistemascasa.com
+
+is_sql_injection:
+  description: "Attempts at SQL injection"
+  tests:
+    - path_reg -i -m reg \b(select|union|insert|drop)\b

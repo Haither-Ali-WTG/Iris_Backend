@@ -1,0 +1,53 @@
+---
+# CS02322985 - Sistemas Casa HAProxy Configuration - Ctraweb
+transport_security:
+  description: |-
+    Transport security options
+  order: 2
+  actions:
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=31536000;\ includeSubdomains;\ preload"
+
+set_permissions_policy_header:
+  description: |-
+    Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
+  order: 11
+  actions:
+    - >-
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(),
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
+      autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+
+set_frame_ancestors:
+  description: |-
+    Set frame ancestors
+  order: 12
+  actions:
+    - http-response set-header Content-Security-Policy "frame-ancestors https://normativo.e-casa.com.mx"
+
+remove_server_header:
+  description: |-
+    Remove "Server" header
+  order: 13
+  actions:
+    - http-response del-header Server
+
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_sistemascasa_com   !{ ssl_fc }
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0chw00001_sistemascasa_hosting if app_chapela_url   port_8090
+    - use_backend us2mx0trw00001_sistemascasa_hosting if app_trans_url     port_8081
+    - use_backend us2mx0law00001_sistemascasa_hosting if app_lamx_url      port_8082
+    - use_backend us2mx0apw00001_sistemascasa_hosting if app_apycsa_url    port_8085
+    - use_backend us2mx0adw00001_sistemascasa_hosting if app_ademsa_url    port_8080
+    - use_backend us2mx0raw00001_sistemascasa_hosting if app_rali_url      port_8083
+    - use_backend us2mx0sew00001_sistemascasa_hosting if app_serviport_url port_9090

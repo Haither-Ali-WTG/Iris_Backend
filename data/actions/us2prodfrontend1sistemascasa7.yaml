@@ -1,0 +1,48 @@
+---
+# CS02322992 - Sistemas Casa Archivos Digitales
+transport_security:
+  description: |-
+    Transport security options
+  order: 2
+  actions:
+    - http-response set-header X-Content-Type-Options nosniff
+    - http-response set-header Referrer-Policy strict-origin-when-cross-origin
+    - http-response set-header Strict-Transport-Security "max-age=31536000;\ includeSubdomains;\ preload"
+
+set_permissions_policy_header:
+  description: |-
+    Set Permissions-Policy header present in all previous Sistemas Casa HAProxy instances
+  order: 11
+  actions:
+    - >-
+      http-response set-header Permissions-Policy "geolocation=(), microphone=(),
+      camera=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(),
+      autoplay=(), fullscreen=(self), payment=(), clipboard-write=(self)"
+
+reject_sql_injection:
+  description: |-
+    Reject SQL injection attempts
+  order: 12
+  actions:
+    - http-request deny if is_sql_injection
+
+remove_server_header:
+  description: |-
+    Remove "Server" header
+  order: 14
+  actions:
+    - http-response del-header Server
+
+ssl_redirects:
+  description: |-
+    Do SSL redirects
+  order: 79
+  actions:
+    - redirect scheme https if star_sistemascasa_com   !{ ssl_fc }
+
+backend_selection:
+  description: |-
+    Handle backend selection.
+  order: 80
+  actions:
+    - use_backend us2mx0clidw052_sistemascasa_hosting if archivos_digitales_url

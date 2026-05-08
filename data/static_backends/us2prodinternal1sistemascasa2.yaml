@@ -1,0 +1,52 @@
+---
+# CS02323128 - Sistemas Casa Prevalidador Test
+us2mx0appl00001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0appl00001
+      ip: 10.4.248.14
+      port: 80
+
+wsnodes-ssl-test.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsl00001
+      ip: 10.4.248.12
+      port: 8086
+    - name: us2mx0wbsl00002
+      ip: 10.4.248.13
+      port: 8087
+
+wsnodes-test.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsl00001
+      ip: 10.4.248.12
+      port: 8086
+    - name: us2mx0wbsl00002
+      ip: 10.4.248.13
+      port: 8087
+
+us2mx0gral00001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0gral00001
+      ip: 10.4.248.21
+      port: 9070
+
+us2mx0pgal00002.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa2]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0pgal00002
+      ip: 10.4.248.19
+      port: 80

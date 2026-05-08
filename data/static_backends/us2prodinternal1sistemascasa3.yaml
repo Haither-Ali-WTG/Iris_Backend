@@ -1,0 +1,52 @@
+---
+# CS02323124 - Sistemas Casa Prevalidador Dev
+us2mx0appdl001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa3]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0appdl001
+      ip: 10.4.248.30
+      port: 80
+
+wsnodes-ssl-dev.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa3]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsdl001
+      ip: 10.4.248.28
+      port: 8086
+    - name: us2mx0wbsdl002
+      ip: 10.4.248.29
+      port: 8087
+
+wsnodes-dev.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa3]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0wbsdl001
+      ip: 10.4.248.28
+      port: 8086
+    - name: us2mx0wbsdl002
+      ip: 10.4.248.29
+      port: 8087
+
+us2mx0gradl001.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa3]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0gradl001
+      ip: 10.4.248.21
+      port: 9070
+
+us2mx0pgadl002.sistemascasa.hosting:
+  clustered_instances: [us2prodinternal1sistemascasa3]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: us2mx0pgadl002
+      ip: 10.4.248.19
+      port: 80

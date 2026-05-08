@@ -798,6 +798,77 @@ clustered_instances:
       timeouts:
         http_keep_alive: 4
 
+    us2prodfrontend1sistemascasa5:
+      # CS02322985 - Sistemas Casa Ctraweb
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2094]
+          ssl:
+            - 2095  # :443
+            - 2100  # :8080
+            - 2101  # :8081
+            - 2102  # :8082
+            - 2103  # :8083
+            - 2104  # :8085
+            - 2105  # :8090
+            - 2106  # :9090
+      stats:
+        ports:
+          web: 2096
+          socket: 2099
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []  # TODO: Add certificates in separate PR once present in CMS
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa6:
+      # CS02322988 - Sistemas Casa Casaonline
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2107]
+          ssl: [2108]
+      stats:
+        ports:
+          web: 2109
+          socket: 2110
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []  # TODO: Add certificates in separate PR once present in CMS
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodfrontend1sistemascasa7:
+      # CS02322992 - Sistemas Casa Archivos Digitales
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2111]
+          ssl: [2112]
+      stats:
+        ports:
+          web: 2113
+          socket: 2114
+      machine_cluster: us2-prod-frontend-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
     us2prodinternal1sistemascasa1:
       # Sistemas Casa instance for internal services
       dc: US2
@@ -814,6 +885,58 @@ clustered_instances:
         ports:
           web: 2084
           socket: 2085
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodinternal1sistemascasa2:
+      # CS02323128 - Sistemas Casa Prevalidador Test
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2115]
+          ssl:
+            - 2116  # :443
+            - 2117  # :7070
+            - 2118  # :8060
+            - 2119  # :9878
+            - 2120  # :40
+      stats:
+        ports:
+          web: 2121
+          socket: 2122
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates: []
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
+
+    us2prodinternal1sistemascasa3:
+      # CS02323124 - Sistemas Casa Prevalidador Dev
+      dc: US2
+      frontend:
+        maxconn: 200000
+        ports:
+          plaintext: [2123]
+          ssl:
+            - 2124  # :443
+            - 2125  # :7070
+            - 2126  # :8060
+            - 2127  # :9878
+            - 2128  # :40
+      stats:
+        ports:
+          web: 2129
+          socket: 2130
       machine_cluster: us2-corp-internal-1
       iis_servers: []
       certificates: []
