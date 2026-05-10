@@ -20,6 +20,7 @@ machines:
       os: ubuntu2404
       dc: DE1
       os_variant: ubuntu
+      package_repo_provider: foreman
     de1lbl00931:
       ansible_host: 10.3.83.31
       os: ubuntu2404
