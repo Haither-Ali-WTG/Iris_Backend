@@ -6,11 +6,15 @@ machines:
       os: ubuntu2404
       dc: DE1
       os_variant: ubuntu
+      container:
+        haproxy_image_tag: 3.2.11-trixie
     de1lbl00307:
       ansible_host: 10.3.64.22
       os: ubuntu2404
       dc: DE1
       os_variant: ubuntu
+      container:
+        haproxy_image_tag: 3.2.11-trixie
     de1lbl00387:
       ansible_host: 10.3.64.23
       os: ubuntu2404
@@ -35,6 +39,8 @@ machines:
       os: ubuntu2404
       dc: DE1
       os_variant: ubuntu
+      container:
+        haproxy_image_tag: 3.2.11-trixie
     de1lbl00954:
       ansible_host: 10.3.245.111
       os: ubuntu2404
