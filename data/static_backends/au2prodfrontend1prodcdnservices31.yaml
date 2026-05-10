@@ -215,6 +215,38 @@ ehubgateway.wisegrid.net:
       ip: 10.2.69.39
       port: 80
 
+ehubgateway-secure.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: SEWG
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: AU2WP-SEWG-401A
+      ip: 10.2.69.38
+      port: 80
+    - name: AU2WP-SEWG-401B
+      ip: 10.2.69.39
+      port: 80
+
+ehub-usage-secure.wisegrid.net:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: EHUS
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: AU2WP-SEUG-401A
+      ip: 10.2.69.4
+      port: 80
+    - name: AU2WP-SEUG-401B
+      ip: 10.2.69.5
+      port: 80
+
 ehub-integration.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
