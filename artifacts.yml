@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260511.4
-  # Mon May 11 06:07:07 UTC 2026 -- Mon May 11 16:07:07 AEST 2026
+  # Dante Build Artifact 20260512.1
+  # Mon May 11 19:01:48 UTC 2026 -- Tue May 12 05:01:48 AEST 2026
   #
-  # Merged PR 49938: GHE runner fix working directory
-  # 8b4f25d1e4bb6c0bd4f0c89f7034baac87563e34
-  dante_build_id: '1695536'
+  # Merge pull request 49986 from dante_artifact_upgrade into master
+  # 6d73fbbd3bbc02266e5b097f74289b78fe5ffecb
+  dante_build_id: '1696078'
 
-  # virgil 20260508.11
-  # Fri May  8 06:15:06 UTC 2026 -- Fri May  8 16:15:06 AEST 2026
+  # virgil 20260512.2
+  # Mon May 11 18:21:07 UTC 2026 -- Tue May 12 04:21:07 AEST 2026
   #
-  # Merged PR 49837: add vlan250 to US2 bunker proxy
-  # 9fec82d22f41fd38f43af375fa7f337f0b8c38c9
-  virgil_build_id: '1692926'
+  # Merge pull request 49978 from virgil_python_upgrade into master
+  # 5af5b2f7c598deafd1a2da36e17704f0c62ec35b
+  virgil_build_id: '1696028'
 
   # sqlbilling 20260512.1
   # Mon May 11 14:08:31 UTC 2026 -- Tue May 12 00:08:31 AEST 2026
