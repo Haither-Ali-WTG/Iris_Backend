@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260511.2
-  # Mon May 11 02:38:39 UTC 2026 -- Mon May 11 12:38:39 AEST 2026
+  # Dante Build Artifact 20260511.3
+  # Mon May 11 03:38:14 UTC 2026 -- Mon May 11 13:38:14 AEST 2026
   #
-  # Merge pull request 49919 from automatic_dante_agent_image_upgrade into master
-  # 868a8cb8bce085ed6d58e92427abe8b040b26440
-  dante_build_id: '1695349'
+  # Merged PR 49928: Fix GHE runner properties
+  # fece6465554d1874183f728d429bc0d8b6b06f20
+  dante_build_id: '1695405'
 
   # virgil 20260508.11
   # Fri May  8 06:15:06 UTC 2026 -- Fri May  8 16:15:06 AEST 2026
