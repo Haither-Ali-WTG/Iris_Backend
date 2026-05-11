@@ -717,7 +717,15 @@ clustered_instances:
           socket: 2044
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: guia-aduanal-com-mx
+          cms_resource_group: RG-US-Prod
+        - name: aduanas-mexico-com
+          cms_resource_group: RG-US-Prod
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
+        - name: administrator-e-casa-com-mx
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -740,7 +748,9 @@ clustered_instances:
           socket: 2059
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: administrator-e-casa-com-mx
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -764,7 +774,9 @@ clustered_instances:
           socket: 2069
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -791,7 +803,9 @@ clustered_instances:
           socket: 2078
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-pemex-org-mx
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -820,7 +834,9 @@ clustered_instances:
           socket: 2099
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []  # TODO: Add certificates in separate PR once present in CMS
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -841,7 +857,9 @@ clustered_instances:
           socket: 2110
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []  # TODO: Add certificates in separate PR once present in CMS
+      certificates:
+        - name: casaonline-mx
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -862,7 +880,9 @@ clustered_instances:
           socket: 2114
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -887,7 +907,9 @@ clustered_instances:
           socket: 2085
       machine_cluster: us2-corp-internal-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -913,7 +935,9 @@ clustered_instances:
           socket: 2122
       machine_cluster: us2-corp-internal-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -939,7 +963,9 @@ clustered_instances:
           socket: 2130
       machine_cluster: us2-corp-internal-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: us2-aduanas-sistemascasa-com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023

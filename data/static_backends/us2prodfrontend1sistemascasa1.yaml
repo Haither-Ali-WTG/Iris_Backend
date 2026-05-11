@@ -2,19 +2,16 @@
 # CS02301482 - Sistemas Casa HAProxy Configuration - ADUANAS MEX
 us2mx0apppw011.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa1]
+  # full_override needed becuase we can't specify "prefix" for cookies
   full_override: |
     backend us2mx0apppw011_sistemascasa_hosting
-    mode http
-    option forwardfor
-    cookie JSESSIONID prefix nocache
+    cookie JSESSIONID prefix nocache secure
     server us2mx0apppw011 10.16.106.6:80 check cookie https849001
 
 us2mx0apppl011.sistemascasa.hosting:
   clustered_instances: [us2prodfrontend1sistemascasa1]
+  # full_override needed becuase we cannot set X-Forwarded-Port header
   full_override: |
     backend us2mx0apppl011_sistemascasa_hosting
-    mode http
-    option forwardfor
     http-request set-header X-Forwarded-Port  %[dst_port]
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
     server us2mx0apppl011 10.16.106.7:80 check
