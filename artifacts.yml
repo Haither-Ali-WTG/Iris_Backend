@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260508.4
-  # Fri May  8 07:01:15 UTC 2026 -- Fri May  8 17:01:15 AEST 2026
+  # Dante Build Artifact 20260511.1
+  # Mon May 11 01:42:49 UTC 2026 -- Mon May 11 11:42:49 AEST 2026
   #
-  # Merge pull request 49847 from dante_artifact_upgrade into master
-  # 001f9eae0442d8bf771c9133cc96163db82e887b
-  dante_build_id: '1692977'
+  # Merged PR 49906: Upgraded Ansible to the last fast version (11.13.0)
+  # 4bb784c2b9f50c487df869f0182644e980a10abc
+  dante_build_id: '1695284'
 
   # virgil 20260508.11
   # Fri May  8 06:15:06 UTC 2026 -- Fri May  8 16:15:06 AEST 2026
