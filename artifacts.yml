@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260511.3
-  # Mon May 11 03:38:14 UTC 2026 -- Mon May 11 13:38:14 AEST 2026
+  # Dante Build Artifact 20260511.4
+  # Mon May 11 06:07:07 UTC 2026 -- Mon May 11 16:07:07 AEST 2026
   #
-  # Merged PR 49928: Fix GHE runner properties
-  # fece6465554d1874183f728d429bc0d8b6b06f20
-  dante_build_id: '1695405'
+  # Merged PR 49938: GHE runner fix working directory
+  # 8b4f25d1e4bb6c0bd4f0c89f7034baac87563e34
+  dante_build_id: '1695536'
 
   # virgil 20260508.11
   # Fri May  8 06:15:06 UTC 2026 -- Fri May  8 16:15:06 AEST 2026
