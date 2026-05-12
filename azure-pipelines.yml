@@ -251,6 +251,58 @@ stages:
               fi
             displayName: 'Check if the certificate section changed'
 
+          - script: |
+              set -euxo pipefail
+
+              DC_LOWER=$(echo "$(simulation_dc)" | tr '[:upper:]' '[:lower:]')
+              REL="data/instances/${DC_LOWER}-clustered_instances.yml"
+              NEW_FILE="iris/${REL}"
+              OLD_FILE="../master_worktree/${REL}"
+
+              # Compute the list of newly added (name, cms_resource_group) certificate
+              # pairs in the clustered_instances file vs. master. Emits a JSON array
+              # of {name, cms_resource_group} dicts.
+              NEW_CMS_CERTS=$(NEW_FILE="$NEW_FILE" OLD_FILE="$OLD_FILE" python3 - <<'PY'
+              import json
+              import os
+              import yaml
+
+              def extract(path):
+                  if not path or not os.path.exists(path):
+                      return set()
+                  with open(path, 'r', encoding='utf-8') as f:
+                      data = yaml.safe_load(f)
+                  certs = set()
+                  if not data or 'clustered_instances' not in data:
+                      return certs
+                  hosts = (data['clustered_instances'] or {}).get('hosts', {}) or {}
+                  for host_data in hosts.values():
+                      if not host_data:
+                          continue
+                      for cert in host_data.get('certificates', []) or []:
+                          if not isinstance(cert, dict):
+                              continue
+                          if cert.get('file_name'):
+                              continue
+                          name = cert.get('name')
+                          rg = cert.get('cms_resource_group')
+                          if name and rg:
+                              certs.add((name, rg))
+                  return certs
+
+              new_certs = extract(os.environ['NEW_FILE'])
+              old_certs = extract(os.environ['OLD_FILE'])
+              added = sorted(new_certs - old_certs)
+              print(json.dumps(
+                  [{'name': n, 'cms_resource_group': rg} for n, rg in added]
+              ))
+              PY
+              )
+
+              echo "New CMS certs: $NEW_CMS_CERTS"
+              echo "##vso[task.setvariable variable=new_cms_certs]$NEW_CMS_CERTS"
+            displayName: 'Compute newly added CMS certificates vs master'
+
           - task: Ansible@0
             displayName: 'Check and save certificates'
             inputs:
@@ -263,6 +315,7 @@ stages:
                 -u $(user) --diff
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
                 -e "{check_all_certs: $(certificate_changed) }"
+                -e '{new_cms_certs: $(new_cms_certs)}'
                 -e="{simulation: true}" -e="azure_kv_name=$(azure_kv_name)"
                 -e="target_dc=$(simulation_dc)"
             env:
