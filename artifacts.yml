@@ -7,12 +7,12 @@ variables:
   # f53190065d075fc110248693da6eec413dbf0c02
   dante_build_id: '1696656'
 
-  # virgil 20260512.11
-  # Tue May 12 05:53:02 UTC 2026 -- Tue May 12 15:53:02 AEST 2026
+  # virgil 20260512.13
+  # Tue May 12 10:39:44 UTC 2026 -- Tue May 12 20:39:44 AEST 2026
   #
-  # Merged PR 50038: add 10G connectivity to edgecore MGMT switch is US
-  # 86e04794c7c3de48872e2b3d930ab5fa8e356bea
-  virgil_build_id: '1696597'
+  # Merged PR 49961: WI01009106 Phase6 Hyperv to VMware
+  # 2d871b9e754d8dcf1d3e836312d9da08fe857808
+  virgil_build_id: '1696811'
 
   # sqlbilling 20260512.1
   # Mon May 11 14:08:31 UTC 2026 -- Tue May 12 00:08:31 AEST 2026
