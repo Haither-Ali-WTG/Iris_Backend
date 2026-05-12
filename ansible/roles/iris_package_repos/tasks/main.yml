@@ -20,6 +20,8 @@
   become: yes
   loop:
     - 10_2_0_37_download_docker_com_linux_ubuntu.list
+    - 10_3_80_17_download_docker_com_linux_ubuntu.list
+    - 10_4_80_51_download_docker_com_linux_ubuntu.list
 
 - name: Configure additional Foreman APT source list files
   copy:
