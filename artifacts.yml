@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260512.1
-  # Mon May 11 19:01:48 UTC 2026 -- Tue May 12 05:01:48 AEST 2026
+  # Dante Build Artifact 20260512.2
+  # Tue May 12 00:21:22 UTC 2026 -- Tue May 12 10:21:22 AEST 2026
   #
-  # Merge pull request 49986 from dante_artifact_upgrade into master
-  # 6d73fbbd3bbc02266e5b097f74289b78fe5ffecb
-  dante_build_id: '1696078'
+  # Merge pull request 50004 from dante_artifact_upgrade into master
+  # 6a83851264c1711e9a041c740b2a45501c4602cc
+  dante_build_id: '1696329'
 
-  # virgil 20260512.2
-  # Mon May 11 18:21:07 UTC 2026 -- Tue May 12 04:21:07 AEST 2026
+  # virgil 20260512.9
+  # Mon May 11 23:27:28 UTC 2026 -- Tue May 12 09:27:28 AEST 2026
   #
-  # Merge pull request 49978 from virgil_python_upgrade into master
-  # 5af5b2f7c598deafd1a2da36e17704f0c62ec35b
-  virgil_build_id: '1696028'
+  # Merged PR 50000: sisa-prod-hosting
+  # 276372d802c3245a69d2d0ba193ddcf32eb422eb
+  virgil_build_id: '1696261'
 
   # sqlbilling 20260512.1
   # Mon May 11 14:08:31 UTC 2026 -- Tue May 12 00:08:31 AEST 2026
