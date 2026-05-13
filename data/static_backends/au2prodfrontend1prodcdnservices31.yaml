@@ -533,14 +533,6 @@ gss.wisegrid.net:
       ip: 10.2.214.19
       port: 30400
       settings: check ssl inter 10s fall 3 rise 2
-    - name: AU2WP-SDKR-1
-      ip: 10.2.67.111
-      port: 42301
-      settings: backup
-    - name: AU2WP-SDKR-2
-      ip: 10.2.67.112
-      port: 42301
-      settings: backup
 
 onerecord.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
