@@ -61,5 +61,5 @@ class FilterModule(object):
     def filters(self):
         return {
             'read_audit_certs': read_audit_certs,
-            'append_intermediate_certificate': append_intermediate_certificate
+            'append_intermediate_certificate': append_intermediate_certificate,
         }

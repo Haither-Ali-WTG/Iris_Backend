@@ -1,4 +1,16 @@
 ---
+- name: Check that newly added CMS certificates exist in CMS
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_keyvault_name_cms.yml
+  vars:
+    cms_certificate_category: "{{ item.cms_resource_group }}"
+    cms_certificate_name: "{{ item.name }}"
+    variable_name: _cms_cert_existence_check
+    fail_on_absent_secret: true
+  loop: "{{ new_cms_certs | default([]) }}"
+  when: simulation | default(false)
+
 - name: Load certificates to be downloaded from audit files
   set_fact:
     updated_certs: "{{ playbook_dir | read_audit_certs(target_dc | default('')) }}"
