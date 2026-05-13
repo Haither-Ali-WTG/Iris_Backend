@@ -22,8 +22,8 @@ star.us2s3-b1.wtg.ws:
     default-server inter 10000 ssl
     server data01-us2nas12 10.6.7.140:443 check check-ssl ssl verify none
     server data02-us2nas12 10.4.30.31:443 check check-ssl ssl verify none
-    filter bwlim-out mydownloadlimit limit 125000000 key be_id table downloadrate
-    filter bwlim-in myuploadlimit limit 125000000 key be_id table uploadrate
+    filter bwlim-out mydownloadlimit limit 500000000 key be_id table downloadrate
+    filter bwlim-in myuploadlimit limit 500000000 key be_id table uploadrate
     http-response set-bandwidth-limit mydownloadlimit
     http-request set-bandwidth-limit myuploadlimit
 
