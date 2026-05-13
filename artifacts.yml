@@ -7,12 +7,12 @@ variables:
   # 0e4db4d4f8fd68a3a4110f54389a9c6ee2ecf151
   dante_build_id: '1696848'
 
-  # virgil 20260512.13
-  # Tue May 12 10:39:44 UTC 2026 -- Tue May 12 20:39:44 AEST 2026
+  # virgil 20260513.4
+  # Wed May 13 00:09:05 UTC 2026 -- Wed May 13 10:09:05 AEST 2026
   #
-  # Merged PR 49961: WI01009106 Phase6 Hyperv to VMware
-  # 2d871b9e754d8dcf1d3e836312d9da08fe857808
-  virgil_build_id: '1696811'
+  # Merged PR 50087: Pulling one simulation node off dante run to test Ubuntu 26.04
+  # abdf294ce474d2de90912f106ecbbe9bdbc3a222
+  virgil_build_id: '1697373'
 
   # sqlbilling 20260512.1
   # Mon May 11 14:08:31 UTC 2026 -- Tue May 12 00:08:31 AEST 2026
