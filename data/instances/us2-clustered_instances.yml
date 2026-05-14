@@ -14,113 +14,113 @@ clustered_instances:
             # 4000..4999 is reserved by the billing collector:
             # https://devops.wisetechglobal.com/wtg/eServices/_git/eServices?path=Billing/Collector/Misc/WindowsService/Deployment/Profiles/Production/Files/plugins_settings.xml
 
-            - 1092   # BR1 - Allog
-            - 1094   # BR1 - Brasporto
-            - 1096   # BR1 - SEI
-            - 1098   # BR1 - CTI
-            - 1099   # BR1 - Ruckhaber
-            - 1100   # BR1 - MSSQL
-            - 1101   # BR1 - Gamalog
-            - 1102   # BR1 - Aeroimport
-            - 1103   # BR1 - Budson
-            - 1106   # BR1 - Ferfreight
-            - 1107   # BR1 - 3Cycles
-            - 1110   # BR1 - Globalfreight
-            - 1113   # BR1 - Faxe
-            - 1114   # BR1 - Interfreight
-            - 1116   # BR1 - MTN
-            - 1117   # BR1 - JMAduaneira
-            - 1118   # BR1 - Internacional
-            - 1119   # BR1 - Agile
-            - 1120   # BR1 - Leschaco
-            - 1121   # BR1 - Atualiassessoria
-            - 1122   # BR1 - Mastersul
-            - 1123   # BR1 - Affinity
-            - 1124   # BR1 - GPCargo
-            - 1125   # BR1 - AZSolutio
-            - 1127   # BR1 - Nuno
-            - 1128   # BR1 - Newslogistics
-            - 1129   # BR1 - Nowlogistics
-            - 1130   # BR1 - Paulorocha
-            - 1132   # BR1 - Roquepacheco
-            - 1133   # BR1 - Dasco
-            - 1134   # BR1 - Trediex
-            - 1135   # BR1 - Global
-            - 1136   # BR1 - TWS
-            - 1139   # BR1 - Tradehunter
-            - 1140   # BR1 - Baraodespachos
-            - 1141   # BR1 - Spacecargo
-            - 1142   # BR1 - Isavix
-            - 1143   # BR1 - Confidence
-            - 1144   # BR1 - Wecomex
-            - 1145   # BR1 - Martinsdespachos
-            - 1147   # BR1 - Sanvix
-            - 1148   # BR1 - Yusen Homologacao
-            - 1149   # BR1 - Yusen
-            - 1150   # BR1 - DHL
-            - 1151   # BR1 - DHL Homologacao
-            - 1156   # BR1 - Aduanalog
-            - 1157   # BR1 - Multicargo
-            - 1158   # BR1 - Orttsa
-            - 4362   # US2 Test SQL Cluster 401
-            - 4363   # US2 Test SQL Cluster 402
-            - 4364   # US2 Test SQL Cluster 403
-            - 4365   # US2 Test SQL Cluster 404
-            - 4366   # US2 Prod SQL Cluster 401
-            - 4371   # US2 Test SQL Cluster 405
-            - 4373   # US2 Test SQL Cluster 407
-            - 4376   # US2 Prod SQL Cluster 402
-            - 4377   # US2 Prod SQL Cluster 403
-            - 4379   # US2 Prod SQL Cluster 404
-            - 4380   # US2 Prod SQL Cluster 405
-            - 4381   # US2 Prod SQL Cluster 406
-            - 4406   # US2 Prod SQL Cluster 407
-            - 4407   # US2 Prod SQL Cluster 408
-            - 4408   # US2 Prod SQL Cluster 409
-            - 4410   # US2 Prod SQL Cluster 410
-            - 4411   # US2 Prod SQL Cluster 411
-            - 4412   # US2 Prod SQL Cluster 412
-            - 4413   # US2 Prod SQL Cluster 413
-            - 4414   # US2 Prod SQL Cluster 414
-            - 4415   # US2 Prod SQL Cluster 415
-            - 4416   # US2 Test SQL Cluster 408
-            - 4417   # US2 Test SQL Cluster 409
-            - 4419   # US2 Prod SQL Cluster 416 (UPS Dedicated)
-            - 4420   # US2 Test SQL Cluster 410 (UPS Dedicated)
-            - 4421   # US2 Test SQL Cluster 411 (MFI Dedicated)
-            - 4422   # US2 Prod SQL Cluster 417
-            - 4423   # US2 Prod SQL Cluster 418
-            - 4424   # US2 Prod SQL Cluster 419
-            - 4425   # US2 Prod SQL Cluster 420
-            - 4426   # US2 Prod SQL Cluster 421
-            - 4427   # US2 Prod SQL Cluster 422
-            - 4428   # US2 Prod SQL Cluster 423 (MFI Dedicated)
-            - 4429   # US2 Prod SQL Cluster 424
-            - 4430   # US2 Test SQL Cluster 412
-            - 4431   # US2 Test SQL Cluster 413
-            - 4432   # US2 Test SQL Cluster 414
-            - 4433   # US2 Test SQL Cluster 415
-            - 4434   # US2 Test SQL Cluster 416
-            - 4435   # US2 Test SQL Cluster 417
-            - 4436   # US2 Test SQL Cluster 418
-            - 4437   # US2 Prod SQL Cluster 425
-            - 4438   # US2 Prod SQL Cluster 426
-            - 4439   # US2 Prod SQL Cluster 427
-            - 4440   # US2 Prod SQL Cluster 428
-            - 4441   # US2 Prod SQL Cluster 429
-            - 4442   # US2 Prod SQL Cluster 430
-            - 4443   # US2 Prod SQL Cluster 431
-            - 4444   # US2 Prod SQL Cluster 432
-            - 4445   # US2 Prod SQL Cluster 433
-            - 4446   # US2 Test SQL Cluster 419
-            - 4447   # US2 Prod SQL Cluster 434
-            - 4448   # US2 Prod SQL Cluster 435
-            - 4449   # US2 Prod SQL Cluster 436
-            - 4450   # US2 Prod SQL Cluster 437
-            - 4451   # US2 Prod SQL Cluster 438
-            - 4452   # US2 Prod SQL Cluster 439
-            - 24999  # US9 EDI server
-            - 25009  # US9 Prod SQL server
+            - 1092 # BR1 - Allog
+            - 1094 # BR1 - Brasporto
+            - 1096 # BR1 - SEI
+            - 1098 # BR1 - CTI
+            - 1099 # BR1 - Ruckhaber
+            - 1100 # BR1 - MSSQL
+            - 1101 # BR1 - Gamalog
+            - 1102 # BR1 - Aeroimport
+            - 1103 # BR1 - Budson
+            - 1106 # BR1 - Ferfreight
+            - 1107 # BR1 - 3Cycles
+            - 1110 # BR1 - Globalfreight
+            - 1113 # BR1 - Faxe
+            - 1114 # BR1 - Interfreight
+            - 1116 # BR1 - MTN
+            - 1117 # BR1 - JMAduaneira
+            - 1118 # BR1 - Internacional
+            - 1119 # BR1 - Agile
+            - 1120 # BR1 - Leschaco
+            - 1121 # BR1 - Atualiassessoria
+            - 1122 # BR1 - Mastersul
+            - 1123 # BR1 - Affinity
+            - 1124 # BR1 - GPCargo
+            - 1125 # BR1 - AZSolutio
+            - 1127 # BR1 - Nuno
+            - 1128 # BR1 - Newslogistics
+            - 1129 # BR1 - Nowlogistics
+            - 1130 # BR1 - Paulorocha
+            - 1132 # BR1 - Roquepacheco
+            - 1133 # BR1 - Dasco
+            - 1134 # BR1 - Trediex
+            - 1135 # BR1 - Global
+            - 1136 # BR1 - TWS
+            - 1139 # BR1 - Tradehunter
+            - 1140 # BR1 - Baraodespachos
+            - 1141 # BR1 - Spacecargo
+            - 1142 # BR1 - Isavix
+            - 1143 # BR1 - Confidence
+            - 1144 # BR1 - Wecomex
+            - 1145 # BR1 - Martinsdespachos
+            - 1147 # BR1 - Sanvix
+            - 1148 # BR1 - Yusen Homologacao
+            - 1149 # BR1 - Yusen
+            - 1150 # BR1 - DHL
+            - 1151 # BR1 - DHL Homologacao
+            - 1156 # BR1 - Aduanalog
+            - 1157 # BR1 - Multicargo
+            - 1158 # BR1 - Orttsa
+            - 4362 # US2 Test SQL Cluster 401
+            - 4363 # US2 Test SQL Cluster 402
+            - 4364 # US2 Test SQL Cluster 403
+            - 4365 # US2 Test SQL Cluster 404
+            - 4366 # US2 Prod SQL Cluster 401
+            - 4371 # US2 Test SQL Cluster 405
+            - 4373 # US2 Test SQL Cluster 407
+            - 4376 # US2 Prod SQL Cluster 402
+            - 4377 # US2 Prod SQL Cluster 403
+            - 4379 # US2 Prod SQL Cluster 404
+            - 4380 # US2 Prod SQL Cluster 405
+            - 4381 # US2 Prod SQL Cluster 406
+            - 4406 # US2 Prod SQL Cluster 407
+            - 4407 # US2 Prod SQL Cluster 408
+            - 4408 # US2 Prod SQL Cluster 409
+            - 4410 # US2 Prod SQL Cluster 410
+            - 4411 # US2 Prod SQL Cluster 411
+            - 4412 # US2 Prod SQL Cluster 412
+            - 4413 # US2 Prod SQL Cluster 413
+            - 4414 # US2 Prod SQL Cluster 414
+            - 4415 # US2 Prod SQL Cluster 415
+            - 4416 # US2 Test SQL Cluster 408
+            - 4417 # US2 Test SQL Cluster 409
+            - 4419 # US2 Prod SQL Cluster 416 (UPS Dedicated)
+            - 4420 # US2 Test SQL Cluster 410 (UPS Dedicated)
+            - 4421 # US2 Test SQL Cluster 411 (MFI Dedicated)
+            - 4422 # US2 Prod SQL Cluster 417
+            - 4423 # US2 Prod SQL Cluster 418
+            - 4424 # US2 Prod SQL Cluster 419
+            - 4425 # US2 Prod SQL Cluster 420
+            - 4426 # US2 Prod SQL Cluster 421
+            - 4427 # US2 Prod SQL Cluster 422
+            - 4428 # US2 Prod SQL Cluster 423 (MFI Dedicated)
+            - 4429 # US2 Prod SQL Cluster 424
+            - 4430 # US2 Test SQL Cluster 412
+            - 4431 # US2 Test SQL Cluster 413
+            - 4432 # US2 Test SQL Cluster 414
+            - 4433 # US2 Test SQL Cluster 415
+            - 4434 # US2 Test SQL Cluster 416
+            - 4435 # US2 Test SQL Cluster 417
+            - 4436 # US2 Test SQL Cluster 418
+            - 4437 # US2 Prod SQL Cluster 425
+            - 4438 # US2 Prod SQL Cluster 426
+            - 4439 # US2 Prod SQL Cluster 427
+            - 4440 # US2 Prod SQL Cluster 428
+            - 4441 # US2 Prod SQL Cluster 429
+            - 4442 # US2 Prod SQL Cluster 430
+            - 4443 # US2 Prod SQL Cluster 431
+            - 4444 # US2 Prod SQL Cluster 432
+            - 4445 # US2 Prod SQL Cluster 433
+            - 4446 # US2 Test SQL Cluster 419
+            - 4447 # US2 Prod SQL Cluster 434
+            - 4448 # US2 Prod SQL Cluster 435
+            - 4449 # US2 Prod SQL Cluster 436
+            - 4450 # US2 Prod SQL Cluster 437
+            - 4451 # US2 Prod SQL Cluster 438
+            - 4452 # US2 Prod SQL Cluster 439
+            - 24999 # US9 EDI server
+            - 25009 # US9 Prod SQL server
       iis_servers: []
       certificates: []
       sqlbilling_acl:
@@ -216,12 +216,12 @@ clustered_instances:
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - us2wp-sweb-401a.wisecloud.zone      # Dedicated webserver for UP3
-        - us2wp-sweb-401b.wisecloud.zone      # Dedicated webserver for UP3
-        - us2wp-sweb-402a.wisecloud.zone      # Dedicated webserver for UP3
-        - us2wp-sweb-402b.wisecloud.zone      # Dedicated webserver for UP3
-        - us2wp-sweb-403a.wisecloud.zone      # Dedicated webserver for UP3
-        - us2wp-sweb-403b.wisecloud.zone      # Dedicated webserver for UP3
+        - us2wp-sweb-401a.wisecloud.zone # Dedicated webserver for UP3
+        - us2wp-sweb-401b.wisecloud.zone # Dedicated webserver for UP3
+        - us2wp-sweb-402a.wisecloud.zone # Dedicated webserver for UP3
+        - us2wp-sweb-402b.wisecloud.zone # Dedicated webserver for UP3
+        - us2wp-sweb-403a.wisecloud.zone # Dedicated webserver for UP3
+        - us2wp-sweb-403b.wisecloud.zone # Dedicated webserver for UP3
         - us2wp-sweb-404a.wisecloud.zone
         - us2wp-sweb-404b.wisecloud.zone
         - us2wp-sweb-405a.wisecloud.zone
@@ -258,8 +258,8 @@ clustered_instances:
         - us2wp-sweb-420b.wisecloud.zone
         - us2wp-sweb-421a.wisecloud.zone
         - us2wp-sweb-421b.wisecloud.zone
-        - us2wp-sweb-499a.wisecloud.zone      # Dedicated webserver for customurls
-        - us2wp-sweb-499b.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wp-sweb-499a.wisecloud.zone # Dedicated webserver for customurls
+        - us2wp-sweb-499b.wisecloud.zone # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
       websites_config: prodcwservices.yml
       certificates:
@@ -368,12 +368,12 @@ clustered_instances:
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
       iis_servers_local:
-        - us2wt-sweb-401a.test.wisecloud.zone     # Dedicated webserver for UP3
-        - us2wt-sweb-401b.test.wisecloud.zone     # Dedicated webserver for UP3
-        - us2wt-sweb-402a.test.wisecloud.zone     # Dedicated webserver for UP3
-        - us2wt-sweb-402b.test.wisecloud.zone     # Dedicated webserver for UP3
-        - us2wt-sweb-403a.test.wisecloud.zone     # Dedicated webserver for UP3
-        - us2wt-sweb-403b.test.wisecloud.zone     # Dedicated webserver for UP3
+        - us2wt-sweb-401a.test.wisecloud.zone # Dedicated webserver for UP3
+        - us2wt-sweb-401b.test.wisecloud.zone # Dedicated webserver for UP3
+        - us2wt-sweb-402a.test.wisecloud.zone # Dedicated webserver for UP3
+        - us2wt-sweb-402b.test.wisecloud.zone # Dedicated webserver for UP3
+        - us2wt-sweb-403a.test.wisecloud.zone # Dedicated webserver for UP3
+        - us2wt-sweb-403b.test.wisecloud.zone # Dedicated webserver for UP3
         - us2wt-sweb-410a.test.wisecloud.zone
         - us2wt-sweb-410b.test.wisecloud.zone
         - us2wt-sweb-411a.test.wisecloud.zone
@@ -394,8 +394,8 @@ clustered_instances:
         - us2wt-sweb-418b.test.wisecloud.zone
         - us2wt-sweb-419a.test.wisecloud.zone
         - us2wt-sweb-419b.test.wisecloud.zone
-        - us2wt-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
-        - us2wt-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
+        - us2wt-sweb-499a.test.wisecloud.zone # Dedicated webserver for customurls
+        - us2wt-sweb-499b.test.wisecloud.zone # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
       websites_config: testcwservices.yml
       certificates:
@@ -420,7 +420,7 @@ clustered_instances:
     us2corpinternal1:
       dc: US2
       frontend:
-        maxconn: 20000  # This was 30000 in the original instance
+        maxconn: 20000 # This was 30000 in the original instance
         ports:
           plaintext: [2015]
           ssl: [2016]
@@ -457,11 +457,11 @@ clustered_instances:
           plaintext:
             - 1061
             - 1062
-            - 1066  # jump2-us2.wisecloud.zone
-            - 1067  # daadmin-us2.wtg.zone
-            - 1068  # daadmin-us2.wisecloud.zone
-            - 1069  # admin-us2.wisecloud.zone
-            - 30279  # redis-uat.urs.wisegrid.net
+            - 1066 # jump2-us2.wisecloud.zone
+            - 1067 # daadmin-us2.wtg.zone
+            - 1068 # daadmin-us2.wisecloud.zone
+            - 1069 # admin-us2.wisecloud.zone
+            - 30279 # redis-uat.urs.wisegrid.net
       iis_servers: []
       certificates: []
       machine_cluster: us2-corp-internal-1
@@ -617,7 +617,7 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: star-logistyxtmeqa-com
           cms_resource_group: RG-US-Prod
-        - name: star-sendproenterpris-com  # This is how it's spelled in RG-US-Prod
+        - name: star-sendproenterpris-com # This is how it's spelled in RG-US-Prod
           cms_resource_group: RG-US-Prod
         - name: star-sendproenterpriseqa-com
           cms_resource_group: RG-US-Prod
@@ -670,7 +670,7 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: star-logistyxtmexb-com
           cms_resource_group: RG-US-Prod
-        - name: star-sendproenterpris-com  # This is how it's spelled in RG-US-Prod
+        - name: star-sendproenterpris-com # This is how it's spelled in RG-US-Prod
           cms_resource_group: RG-US-Prod
         - name: star-sendproenterpriseqa-com
           cms_resource_group: RG-US-Prod
@@ -696,7 +696,9 @@ clustered_instances:
           socket: 2039
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: star-gtgs-net
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -740,8 +742,8 @@ clustered_instances:
         ports:
           plaintext: [2047]
           ssl:
-            - 2054  # :443
-            - 2055  # :8085
+            - 2054 # :443
+            - 2055 # :8085
       stats:
         ports:
           web: 2058
@@ -765,9 +767,9 @@ clustered_instances:
         ports:
           plaintext: [2064]
           ssl:
-            - 2065  # :443
-            - 2066  # :4443
-            - 2067  # :5050
+            - 2065 # :443
+            - 2066 # :4443
+            - 2067 # :5050
       stats:
         ports:
           web: 2068
@@ -791,12 +793,12 @@ clustered_instances:
         ports:
           plaintext: [2070]
           ssl:
-            - 2071  # :443
-            - 2072  # :8085
-            - 2073  # :4444
-            - 2074  # :8086
-            - 2075  # :8080
-            - 2076  # :8081
+            - 2071 # :443
+            - 2072 # :8085
+            - 2073 # :4444
+            - 2074 # :8086
+            - 2075 # :8080
+            - 2076 # :8081
       stats:
         ports:
           web: 2077
@@ -820,14 +822,14 @@ clustered_instances:
         ports:
           plaintext: [2094]
           ssl:
-            - 2095  # :443
-            - 2100  # :8080
-            - 2101  # :8081
-            - 2102  # :8082
-            - 2103  # :8083
-            - 2104  # :8085
-            - 2105  # :8090
-            - 2106  # :9090
+            - 2095 # :443
+            - 2100 # :8080
+            - 2101 # :8081
+            - 2102 # :8082
+            - 2103 # :8083
+            - 2104 # :8085
+            - 2105 # :8090
+            - 2106 # :9090
       stats:
         ports:
           web: 2096
@@ -897,10 +899,10 @@ clustered_instances:
         ports:
           plaintext: [2079]
           ssl:
-            - 2080  # :443
-            - 2081  # :40
-            - 2082  # :7898
-            - 2083  # :6698
+            - 2080 # :443
+            - 2081 # :40
+            - 2082 # :7898
+            - 2083 # :6698
       stats:
         ports:
           web: 2084
@@ -924,11 +926,11 @@ clustered_instances:
         ports:
           plaintext: [2115]
           ssl:
-            - 2116  # :443
-            - 2117  # :7070
-            - 2118  # :8060
-            - 2119  # :9878
-            - 2120  # :40
+            - 2116 # :443
+            - 2117 # :7070
+            - 2118 # :8060
+            - 2119 # :9878
+            - 2120 # :40
       stats:
         ports:
           web: 2121
@@ -952,11 +954,11 @@ clustered_instances:
         ports:
           plaintext: [2123]
           ssl:
-            - 2124  # :443
-            - 2125  # :7070
-            - 2126  # :8060
-            - 2127  # :9878
-            - 2128  # :40
+            - 2124 # :443
+            - 2125 # :7070
+            - 2126 # :8060
+            - 2127 # :9878
+            - 2128 # :40
       stats:
         ports:
           web: 2129
