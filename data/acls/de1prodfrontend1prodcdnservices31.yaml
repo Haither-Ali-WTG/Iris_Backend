@@ -64,7 +64,6 @@ app_borderwise_com:
   tests:
     - hdr(host),field(1,:) -i app.borderwise.com
     - hdr(host),field(1,:) -i app-de.borderwise.com
-    - hdr(host),field(1,:) -i app-cf.borderwise.com
 
 portal_cwconnector_wisegrid_net:
   description: |-
