@@ -29,6 +29,7 @@ class CMSCache:
     def __init__(self) -> None:
         self.rg_cache: Dict[str, List[Dict[str, Any]]] = {}
         self.cert_cache: Dict[str, str] = {}
+        self.invalid_certs: List[str] = []
         
         self.session = requests.Session()
         retry = Retry(
@@ -88,6 +89,33 @@ class CMSCache:
         self.cert_cache[cache_key] = DEFAULT_KV
         return DEFAULT_KV
 
+    def cert_exists(self, resource_group: str, name: str) -> bool:
+        """
+        Check if a certificate actually exists in CMS (i.e. has been provisioned
+        with acme-challenge). Returns False if the API returns 404.
+        """
+        cache_key: str = f"{resource_group}/{name}"
+        if cache_key in self.cert_cache:
+            return True
+
+        url: str = f"{CMS_ENDPOINT}/cms/v1/certificate/{resource_group}/{name}"
+        try:
+            resp: requests.Response = self.session.get(url, verify=False, timeout=10)  # nosec B501
+            if resp.status_code in [200, 201]:
+                data: Dict[str, Any] = resp.json()
+                kv: str = data.get('keyvault')
+                if kv:
+                    self.cert_cache[cache_key] = kv
+                return True
+            elif resp.status_code == 404:
+                return False
+            else:
+                resp.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"CRITICAL: Error checking cert existence for {name} in {resource_group}: {e}") from e
+
+        return False
+
 
 def process_host_certificates(
     certificates: List[Any], 
@@ -126,6 +154,14 @@ def process_host_certificates(
                 if item.get('config_filename') == c_file_name:
                     cert_name: str = item.get('name', '')
                     kv: str = item.get('keyvault', DEFAULT_KV)
+                    # Validate cert actually exists (acme-challenge created)
+                    if not cache.cert_exists(cms_rg, cert_name):
+                        cache.invalid_certs.append(
+                            f"Certificate '{cert_name}' in '{cms_rg}' "
+                            f"(file_name='{c_file_name}') - "
+                            f"does not exist in CMS (acme-challenge not created?)"
+                        )
+                        continue
                     add_cert(cert_name, cms_rg, kv)
         
         # 2. Handle certificates defined by direct name
@@ -209,17 +245,28 @@ def write_audit_files(dc_results: Dict[str, Dict[str, List[Dict[str, str]]]]) ->
             print(f"Written {out_file}")
 
 
+def report_invalid_certs(invalid_certs: List[str]) -> None:
+    """
+    Print a summary of all invalid certificates that were skipped.
+    """
+    if not invalid_certs:
+        return
+    print("\n" + "=" * 60)
+    print(f"WARNING: {len(invalid_certs)} certificate(s) skipped due to not existing in CMS:")
+    print("=" * 60)
+    for msg in invalid_certs:
+        print(f"  - {msg}")
+    print("=" * 60)
+
+
 def main() -> None:
     """
     Main execution point for the CMS certificate audit pipeline.
     """
     cache = CMSCache()
-    
-    # 1. Parse and resolve all certificates
     dc_results = parse_cluster_files(cache)
-    
-    # 2. Generate the final audit files
     write_audit_files(dc_results)
+    report_invalid_certs(cache.invalid_certs)
 
 
 if __name__ == "__main__":
