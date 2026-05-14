@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260513.2
-  # Wed May 13 02:41:06 UTC 2026 -- Wed May 13 12:41:06 AEST 2026
+  # Dante Build Artifact 20260514.1
+  # Thu May 14 06:46:45 UTC 2026 -- Thu May 14 16:46:45 AEST 2026
   #
-  # Merge pull request 50090 from dante_artifact_upgrade into master
-  # 83c5aa32323a94466f619ce89068747a5022a699
-  dante_build_id: '1697549'
+  # Merged PR 50194: Add extra 10.12 to allowed list in au
+  # 700d5e82b34363975c66dc8f8acd404e2a2861d6
+  dante_build_id: '1698715'
 
-  # virgil 20260513.7
-  # Wed May 13 01:45:48 UTC 2026 -- Wed May 13 11:45:48 AEST 2026
+  # virgil 20260514.17
+  # Thu May 14 04:15:10 UTC 2026 -- Thu May 14 14:15:10 AEST 2026
   #
-  # Merged PR 50110: enable dante deployment on apex39/40 in US
-  # 6d2ff3b804d857a44292f3670131bea3d3d7a785
-  virgil_build_id: '1697490'
+  # Merged PR 50165: update-bgw-vlan
+  # 9381b6b4a1922860f2af5ffd20826f8ff989053c
+  virgil_build_id: '1698589'
 
   # sqlbilling 20260513.2
   # Wed May 13 02:13:16 UTC 2026 -- Wed May 13 12:13:16 AEST 2026
