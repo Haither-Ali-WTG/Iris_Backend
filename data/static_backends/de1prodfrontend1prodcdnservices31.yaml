@@ -200,7 +200,7 @@ query.urs.wisegrid.net:
       port: 80
       settings: backup
 
-de1prod2-prodexternal-catchall:
+de1prod1-prodexternal-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
   cookie:
     name: K8SPROD

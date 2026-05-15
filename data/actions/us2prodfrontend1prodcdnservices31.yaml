@@ -221,7 +221,7 @@ us2prod2_prodexternal_catchall_backend:
     Direct requests for the openshift
   order: 80
   actions:
-    - use_backend us2prod2-prodexternal-catchall if proget-us_wisetechglobal_com azure_ext_controlled_src wtg_src
+    - use_backend us2prod1-prodexternal-catchall if proget-us_wisetechglobal_com azure_ext_controlled_src wtg_src
 
 cmb_us_backend:
   description: |-
