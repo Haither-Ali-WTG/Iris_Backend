@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260515.1
-  # Fri May 15 00:01:45 UTC 2026 -- Fri May 15 10:01:45 AEST 2026
+  # Dante Build Artifact 20260515.2
+  # Fri May 15 08:21:25 UTC 2026 -- Fri May 15 18:21:25 AEST 2026
   #
-  # Merge pull request 50171 from dante_artifact_upgrade into master
-  # e67062f6d50f9a1843318d3f8cf982c64903438d
-  dante_build_id: '1699384'
+  # Merge pull request 50260 from dante_artifact_upgrade into master
+  # 7e69ddf5f4f0a015643e4ee9ad1c08790854a139
+  dante_build_id: '1699801'
 
-  # virgil 20260515.1
-  # Thu May 14 23:17:51 UTC 2026 -- Fri May 15 09:17:51 AEST 2026
+  # virgil 20260515.25
+  # Fri May 15 07:21:30 UTC 2026 -- Fri May 15 17:21:30 AEST 2026
   #
-  # Merged PR 50190: adding interface config back to swp3
-  # fb710942cbf5d6154633b74341cad7faf45e05f8
-  virgil_build_id: '1699333'
+  # Merged PR 50266: added DAT VLAN 2153 to US2 EXITS
+  # 9885e8339651ccdd7908ecc2c4055714c0a2c21c
+  virgil_build_id: '1699751'
 
-  # sqlbilling 20260514.3
-  # Thu May 14 08:45:21 UTC 2026 -- Thu May 14 18:45:21 AEST 2026
+  # sqlbilling 20260515.3
+  # Fri May 15 05:39:07 UTC 2026 -- Fri May 15 15:39:07 AEST 2026
   #
-  # Merged PR 50204: SQLBilling-Add-CS02338875.yml
-  # 8bd92e356bad9ba71184a268d015cad609932960
-  sqlbilling_build_id: '1698803'
+  # Merged PR 50237: RTL-SQLReadOnly-CS02334994
+  # 0ac282ae31e15a11ed99bb77cb8ada3d23648f3e
+  sqlbilling_build_id: '1699644'
