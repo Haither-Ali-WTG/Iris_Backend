@@ -7,9 +7,14 @@ clustered_instances:
       dc: AU2
       frontend:
         maxconn: 20000
+        proxy_ports:
+          ssl: [2080]
         ports:
-          plaintext: [2003]
           ssl: [2004]
+      stats:
+        ports:
+          web: 2037
+          socket: 2036
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
@@ -19,10 +24,6 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wtg-zone
           cms_resource_group: RG-AU-Corp
-      stats:
-        ports:
-          web: 2037
-          socket: 2036
 
     au2sandinternal1:
       # per-clustered-instance settings (overrides) go here, for example:
