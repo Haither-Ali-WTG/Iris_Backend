@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260514.1
-  # Thu May 14 06:46:45 UTC 2026 -- Thu May 14 16:46:45 AEST 2026
+  # Dante Build Artifact 20260515.1
+  # Fri May 15 00:01:45 UTC 2026 -- Fri May 15 10:01:45 AEST 2026
   #
-  # Merged PR 50194: Add extra 10.12 to allowed list in au
-  # 700d5e82b34363975c66dc8f8acd404e2a2861d6
-  dante_build_id: '1698715'
+  # Merge pull request 50171 from dante_artifact_upgrade into master
+  # e67062f6d50f9a1843318d3f8cf982c64903438d
+  dante_build_id: '1699384'
 
-  # virgil 20260514.17
-  # Thu May 14 04:15:10 UTC 2026 -- Thu May 14 14:15:10 AEST 2026
+  # virgil 20260515.1
+  # Thu May 14 23:17:51 UTC 2026 -- Fri May 15 09:17:51 AEST 2026
   #
-  # Merged PR 50165: update-bgw-vlan
-  # 9381b6b4a1922860f2af5ffd20826f8ff989053c
-  virgil_build_id: '1698589'
+  # Merged PR 50190: adding interface config back to swp3
+  # fb710942cbf5d6154633b74341cad7faf45e05f8
+  virgil_build_id: '1699333'
 
   # sqlbilling 20260514.3
   # Thu May 14 08:45:21 UTC 2026 -- Thu May 14 18:45:21 AEST 2026
