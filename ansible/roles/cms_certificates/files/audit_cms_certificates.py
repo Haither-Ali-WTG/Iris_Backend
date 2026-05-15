@@ -167,9 +167,17 @@ def process_host_certificates(
         # 2. Handle certificates defined by direct name
         if c_name:
             rg: str = cms_rg if cms_rg else "UNKNOWN"
-            kv = DEFAULT_KV
             if cms_rg:
+                if not cache.cert_exists(cms_rg, c_name):
+                    cache.invalid_certs.append(
+                        f"Certificate '{c_name}' in '{cms_rg}' "
+                        f"(direct name) - "
+                        f"does not exist in CMS (acme-challenge not created?)"
+                    )
+                    continue
                 kv = cache.get_cert_kv(cms_rg, c_name)
+            else:
+                kv = DEFAULT_KV
             add_cert(c_name, rg, kv)
 
     # Sort the list of dictionaries alphabetically by the 'name' key
