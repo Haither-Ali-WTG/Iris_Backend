@@ -1188,3 +1188,7 @@ host_gtg-wptsea-dr:
     - hdr(host) -i wptdatnet.gtgs.net
     - hdr(host) -i wptdisp-dr.gtgs.net
     - hdr(host) -i wptsea-dr.gtgs.net
+star_gtgs_net:
+  description: "*.gtgs.net"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?gtgs\.net$
