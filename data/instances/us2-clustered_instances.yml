@@ -696,7 +696,9 @@ clustered_instances:
           socket: 2039
       machine_cluster: us2-prod-frontend-1
       iis_servers: []
-      certificates: []
+      certificates:
+        - name: star-gtgs-net
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023

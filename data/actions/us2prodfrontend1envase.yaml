@@ -1,4 +1,11 @@
 ---
+ssl_redirects:
+  description: |-
+    Do SSL redirects for gtgs.net
+  order: 79
+  actions:
+    - redirect scheme https if star_gtgs_net !{ ssl_fc }
+
 backend_selection:
   description: |-
     Handle backend selection for Envase frontends
