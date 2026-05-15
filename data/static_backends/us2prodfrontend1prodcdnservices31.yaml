@@ -1821,7 +1821,7 @@ www.triniumtech.com-us:
     server US2CO-SIIS-403A 10.4.67.38:80 check maxconn 8000
     server US2CO-SIIS-403B 10.4.67.39:80 check maxconn 8000
 
-us2prod2-prodexternal-catchall:
+us2prod1-prodexternal-catchall:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   cookie:
     name: K8SPROD
