@@ -231,12 +231,6 @@ acl {{ acl_item.acl_name }} src -M -f /etc/haproxy/{{ acl_item.file }}
 {% endfor %}
 {% endif %}
 
-{% if defaults.mode == 'http' %}
-{% for custom_log_field in defaults.custom_log_fields | default([]) %}
-http-request set-var(txn.custom_log_{{ custom_log_field }}) str()
-{% endfor %}
-{% endif %}
-
 {% for name, actionset in actions.items() | sort(attribute='1.order,0') %}
 # {{ name }} ({{ actionset.fname }}; order: {{ actionset.order }})
 {{ actionset.description | comment }}
