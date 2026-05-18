@@ -7,12 +7,12 @@ variables:
   # 48aecd60271951303094f97c9f46aeabd45ff50d
   dante_build_id: '1702729'
 
-  # virgil 20260519.2
-  # Mon May 18 18:21:28 UTC 2026 -- Tue May 19 04:21:28 AEST 2026
+  # virgil 20260519.4
+  # Mon May 18 21:51:24 UTC 2026 -- Tue May 19 07:51:24 AEST 2026
   #
-  # Merge pull request 50343 from virgil_python_upgrade into master
-  # a324dc1c9249a4e94191efe1db2f52f526ee6cc4
-  virgil_build_id: '1702675'
+  # Merged PR 50290: Add MAC for one of the US2 DAT servers
+  # 8e498ec46b0b44829fe7efcbba51f12e7eab9855
+  virgil_build_id: '1702835'
 
   # sqlbilling 20260519.3
   # Mon May 18 14:40:46 UTC 2026 -- Tue May 19 00:40:46 AEST 2026
