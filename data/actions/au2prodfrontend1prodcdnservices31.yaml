@@ -329,7 +329,7 @@ cw_wisetechglobal_com_catch_all_backend:
   order: 80
   actions:
     - http-request replace-header Host ^([^\.-]+)-?.*\.(cw{1,2})-corp(\.wisetechglobal)\.cn$ \1.\2\3.com if winzor_corp_urls
-    - use_backend cw_wisetechglobal_com_catch_all if winzor_corp_urls
+    - use_backend cww_wisetechglobal_com-catchall if winzor_corp_urls
 
 proget_au_wisetechglobal_com_access_control:
   description: |-

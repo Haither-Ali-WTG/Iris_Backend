@@ -33,35 +33,78 @@ blazor.sand.wtg.zone-catchall:
 ### CORP
 cww.wisetechglobal.com-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend cw_wisetechglobal_com_catch_all
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie AU2BLZ insert indirect nocache dynamic
-    http-check expect rstatus 200
-    default-server agent-check agent-port 8098
-    server AU2CO-SRDH-404 10.2.47.74:80
-    server AU2CO-SRDH-405 10.2.47.75:80
-    server AU2CO-SRDH-406 10.2.47.76:80
-    server AU2CO-SRDH-407 10.2.47.77:80
-    server AU2CO-SRDH-408 10.2.47.88:80
-    server AU2CO-SRDH-409 10.2.47.89:80
-    server AU2CO-SRDH-410 10.2.47.90:80
-    server AU2CO-SRDH-411 10.2.47.91:80
-    server AU2CO-SRDH-412 10.2.47.78:80
-    server AU2CO-SRDH-413 10.2.47.79:80
-    server AU2CO-SRDH-414 10.2.47.80:80
-    server AU2CO-SRDH-416 10.2.47.16:80
-    server AU2CO-SRDH-417 10.2.47.17:80
-    server AU2CO-SRDH-418 10.2.47.18:80
-    server AU2CO-SRDH-419 10.2.47.19:80
-    server AU2CO-SRDH-420 10.2.47.20:80
-    server AU2CO-SRDH-421 10.2.47.21:80
-    server AU2CO-SRDH-422 10.2.47.22:80
-    server AU2CO-SRDH-423 10.2.47.23:80
-    server AU2CO-SRDH-424 10.2.47.24:80
-    server AU2CO-SRDH-425 10.2.47.25:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: AU2CO-SRDH-404
+      ip: 10.2.47.74
+      port: 80
+    - name: AU2CO-SRDH-405
+      ip: 10.2.47.75
+      port: 80
+    - name: AU2CO-SRDH-406
+      ip: 10.2.47.76
+      port: 80
+    - name: AU2CO-SRDH-407
+      ip: 10.2.47.77
+      port: 80
+    - name: AU2CO-SRDH-408
+      ip: 10.2.47.88
+      port: 80
+    - name: AU2CO-SRDH-409
+      ip: 10.2.47.89
+      port: 80
+    - name: AU2CO-SRDH-410
+      ip: 10.2.47.90
+      port: 80
+    - name: AU2CO-SRDH-411
+      ip: 10.2.47.91
+      port: 80
+    - name: AU2CO-SRDH-412
+      ip: 10.2.47.78
+      port: 80
+    - name: AU2CO-SRDH-413
+      ip: 10.2.47.79
+      port: 80
+    - name: AU2CO-SRDH-414
+      ip: 10.2.47.80
+      port: 80
+    - name: AU2CO-SRDH-416
+      ip: 10.2.47.16
+      port: 80
+    - name: AU2CO-SRDH-417
+      ip: 10.2.47.17
+      port: 80
+    - name: AU2CO-SRDH-418
+      ip: 10.2.47.18
+      port: 80
+    - name: AU2CO-SRDH-419
+      ip: 10.2.47.19
+      port: 80
+    - name: AU2CO-SRDH-420
+      ip: 10.2.47.20
+      port: 80
+    - name: AU2CO-SRDH-421
+      ip: 10.2.47.21
+      port: 80
+    - name: AU2CO-SRDH-422
+      ip: 10.2.47.22
+      port: 80
+    - name: AU2CO-SRDH-423
+      ip: 10.2.47.23
+      port: 80
+    - name: AU2CO-SRDH-424
+      ip: 10.2.47.24
+      port: 80
+    - name: AU2CO-SRDH-425
+      ip: 10.2.47.25
+      port: 80
 
 ### TEST
 au.cww-nonprd.wisegrid.net-catchall:
