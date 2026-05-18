@@ -15,6 +15,12 @@ haproxy_defaults_settings:
   fullconn: int(min=1, required=False)
   balance: enum('leastconn', 'roundrobin', 'source', 'first', 'random', required=False)
   health_check_interval: any(regex('^[0-9]+s$', name='health check interval'), int(min=1000, max=60000), required=False)
+  request_header_log_fields: list(include('haproxy_request_header_log_field'), required=False)
+
+haproxy_request_header_log_field:
+  name: regex('^[a-z][a-z0-9_]*$', name='JSON log field name')
+  header: regex('^[A-Za-z0-9_-]+$', name='HTTP header name')
+  condition: regex('^[ -~]+$', name='HAProxy condition', required=False)
 
 haproxy_global__settings:
   processes: int(min=1, required=False)

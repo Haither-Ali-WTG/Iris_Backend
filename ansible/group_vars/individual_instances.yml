@@ -6,6 +6,7 @@ individual_instance_defaults:
     fullconn: 5000
     balance: leastconn
     health_check_interval: 10s
+    request_header_log_fields: []
 
   global_:
     processes: 1

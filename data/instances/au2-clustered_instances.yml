@@ -27,6 +27,11 @@ clustered_instances:
     au2sandinternal1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
+      defaults:
+        request_header_log_fields:
+          - name: soapaction
+            header: SOAPAction
+            condition: eadapter_streamed_service_path
       frontend:
         maxconn: 20000
         ports:

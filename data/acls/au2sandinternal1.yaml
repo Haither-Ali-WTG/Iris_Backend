@@ -83,6 +83,12 @@ cw1_dynamic_backend_webservice_path:
     - path_beg -i /Glow/
     - path_beg -i /Portals/
 
+eadapter_streamed_service_path:
+  description: |-
+    To capture SOAPAction header for /eAdapterStreamedService.svc
+  tests:
+    - path_end -i /eAdapterStreamedService.svc
+
 testrig_healthcheck:
   description: |-
     Route healthchecks for testrig to default backend so even if a service goes down
