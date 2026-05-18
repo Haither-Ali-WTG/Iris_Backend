@@ -3,60 +3,76 @@ corp-password-rdg-http:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
+  encryption: false
   cookie:
-    name: RDPWEB
+    name: RAPP
     secure: true
+  balance: random
   servers:
     - name: au2co-srdg-1.wtg.zone
       ip: 10.2.68.17
       port: 80
+      check_port: 5000
     - name: au2co-srdg-2.wtg.zone
       ip: 10.2.68.18
       port: 80
+      check_port: 5000
 
 corp-password-rdg-rpc:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
+  encryption: false
   cookie:
-    name: RDPWEB
+    name: RAPP
     secure: true
+  balance: source
   servers:
     - name: au2co-srdg-1.wtg.zone
       ip: 10.2.68.17
       port: 80
+      check_port: 5000
 
 corp-token-rdg-http:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
+  encryption: false
   cookie:
-    name: RDPWEB
+    name: RAPP
+  balance: random
   servers:
     - name: au2co-srdg-411.wtg.zone
       ip: 10.2.70.51
       port: 80
+      check_port: 5000
     - name: au2co-srdg-412.wtg.zone
       ip: 10.2.70.52
       port: 80
+      check_port: 5000
     - name: au2co-srdg-413.wtg.zone
       ip: 10.2.70.53
       port: 80
+      check_port: 5000
     - name: au2co-srdg-414.wtg.zone
       ip: 10.2.70.54
       port: 80
+      check_port: 5000
 
 corp-token-rdg-rpc:
   clustered_instances: [au2corprdg]
   http_health_check:
     enabled: true
-    http_path: /
+    http_path: /wtg/ready
+  encryption: false
   cookie:
-    name: RDPWEB
+    name: RAPP
+  balance: source
   servers:
     - name: au2co-srdg-411.wtg.zone
       ip: 10.2.70.51
       port: 80
+      check_port: 5000
