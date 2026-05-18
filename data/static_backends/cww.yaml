@@ -2,20 +2,33 @@
 ### SAND
 blazor.sand.wtg.zone-catchall:
   clustered_instances: [au2sandinternal1]
-  full_override: |
-    backend blazor_sand_wtg_zone-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie AU2BLZ insert indirect nocache dynamic
-    http-check expect status 200
-    default-server agent-check agent-port 8098
-    server AU2SP-TRDH-411 10.2.120.11:80
-    server AU2SP-TRDH-412 10.2.120.12:80
-    server AU2SP-TRDH-413 10.2.120.13:80
-    server AU2SP-TRDH-414 10.2.120.14:80
-    server AU2SP-TRDH-415 10.2.120.15:80
-    server AU2SP-TRDH-416 10.2.120.16:80
+  balance: random
+  cookie:
+    name: AU2BLZ
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: AU2SP-TRDH-411
+      ip: 10.2.120.11
+      port: 80
+    - name: AU2SP-TRDH-412
+      ip: 10.2.120.12
+      port: 80
+    - name: AU2SP-TRDH-413
+      ip: 10.2.120.13
+      port: 80
+    - name: AU2SP-TRDH-414
+      ip: 10.2.120.14
+      port: 80
+    - name: AU2SP-TRDH-415
+      ip: 10.2.120.15
+      port: 80
+    - name: AU2SP-TRDH-416
+      ip: 10.2.120.16
+      port: 80
 
 ### CORP
 cww.wisetechglobal.com-catchall:
