@@ -10,6 +10,14 @@ restrict_ip:
     - http-request deny if bsm_blume_src !ocmbe_sand_wtg_zone
     - http-request deny if impexdocs_uat_src !ocmbe_sand_wtg_zone
 
+capture_soapaction_header:
+  description: |-
+    Capture SOAPAction header for /eAdapterStreamedService.svc
+  order: 50
+  actions:
+    - http-request set-var(txn.custom_log_soapaction) str()
+    - http-request set-var(txn.custom_log_soapaction) req.hdr(SOAPAction) if eadapter_streamed_service_path
+
 secure_cookie:
   description: |-
     Set secure attribute

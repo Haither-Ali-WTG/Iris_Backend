@@ -27,6 +27,9 @@ clustered_instances:
     au2sandinternal1:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
+      defaults:
+        custom_log_fields:
+          - soapaction
       frontend:
         maxconn: 20000
         ports:
