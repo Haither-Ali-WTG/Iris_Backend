@@ -384,6 +384,8 @@ clustered_instances:
       dc: AU2
       defaults:
         health_check_interval: 30s
+        custom_log_fields:
+          - soapaction
       frontend:
         maxconn: 20000
         ports:
@@ -513,6 +515,8 @@ clustered_instances:
       dc: AU2
       defaults:
         health_check_interval: 30s
+        custom_log_fields:
+          - soapaction
       frontend:
         maxconn: 20000
         ports:

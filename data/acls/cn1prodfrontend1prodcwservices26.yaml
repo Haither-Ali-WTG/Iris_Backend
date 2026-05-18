@@ -19,3 +19,9 @@ glow_webservice_path:
     Glow webservice paths that get routed to specific dynamic backend
   tests:
     - path_beg -i /Glow/
+
+eadapter_streamed_service_path:
+  description: |-
+    To capture SOAPAction header for /eAdapterStreamedService.svc
+  tests:
+    - path_end -i /eAdapterStreamedService.svc
