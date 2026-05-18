@@ -17,6 +17,13 @@ secure_cookie:
   actions:
     - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
 
+capture_soapaction_header:
+  description: |-
+    Capture SOAPAction header for /eAdapterStreamedService.svc
+  order: 1
+  actions:
+    - http-request set-var(txn.custom_log_soapaction) req.hdr(SOAPAction) if eadapter_streamed_service_path
+
 https_redirect:
   description: |-
     Redirect HTTP to HTTPS (worth redirecting http to https for the domains
