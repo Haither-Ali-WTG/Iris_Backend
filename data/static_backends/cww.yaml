@@ -41,7 +41,6 @@ cww.wisetechglobal.com-catchall:
     cookie AU2BLZ insert indirect nocache dynamic
     http-check expect rstatus 200
     default-server agent-check agent-port 8098
-    http-request replace-header Host ^([^\.-]+)-?.*\.(cw{1,2})-corp(\.wisetechglobal)\.cn$ \1.\2\3.com
     server AU2CO-SRDH-404 10.2.47.74:80
     server AU2CO-SRDH-405 10.2.47.75:80
     server AU2CO-SRDH-406 10.2.47.76:80
