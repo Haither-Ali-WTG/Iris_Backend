@@ -3781,8 +3781,7 @@ report.rez1.com:
 devcustomercc.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   encryption: false
   servers:
     - name: us2us6appw003
@@ -3792,8 +3791,7 @@ devcustomercc.tmssaas.com:
 devwtrestapi.tmssaas.com:
   clustered_instances: [us2prodfrontend1prodtenantservices1]
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   encryption: false
   servers:
     - name: us2us6appw003
