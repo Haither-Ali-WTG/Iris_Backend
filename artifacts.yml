@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260519.2
-  # Mon May 18 22:41:06 UTC 2026 -- Tue May 19 08:41:06 AEST 2026
+  # Dante Build Artifact 20260519.4
+  # Tue May 19 08:20:50 UTC 2026 -- Tue May 19 18:20:50 AEST 2026
   #
-  # Merge pull request 50367 from dante_artifact_upgrade into master
-  # 3de3470bde028a2bd927b6b61465054d5ceb1551
-  dante_build_id: '1702886'
+  # Merge pull request 50431 from dante_artifact_upgrade into master
+  # fb4474a03ee3568497e12d42a780be6c633675ae
+  dante_build_id: '1703406'
 
-  # virgil 20260519.7
-  # Tue May 19 05:19:17 UTC 2026 -- Tue May 19 15:19:17 AEST 2026
+  # virgil 20260519.9
+  # Tue May 19 07:20:02 UTC 2026 -- Tue May 19 17:20:02 AEST 2026
   #
-  # Merged PR 50402: add hostpart for DAT switches
-  # b22f3a69f2b3390b72173fb4b881f7bebea0607d
-  virgil_build_id: '1703218'
+  # Merged PR 50419: add hostpart for DAT switches apex67 and 68
+  # 0fafc36816fe6a767b9062740dded7c0db9f4875
+  virgil_build_id: '1703348'
 
-  # sqlbilling 20260519.4
-  # Tue May 19 03:30:51 UTC 2026 -- Tue May 19 13:30:51 AEST 2026
+  # sqlbilling 20260519.6
+  # Tue May 19 09:24:24 UTC 2026 -- Tue May 19 19:24:24 AEST 2026
   #
-  # Merged PR 50220: Update Readonly
-  # 63a4985132927998506a5c57e32c9eb70a2d2960
-  sqlbilling_build_id: '1703141'
+  # Merged PR 50444: AddSQLBilling IP US2
+  # 9edf0b19b7a0bbd35df7da53a675b833e69236f0
+  sqlbilling_build_id: '1703464'
