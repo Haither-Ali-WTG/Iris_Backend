@@ -109,130 +109,242 @@ cww.wisetechglobal.com-catchall:
 ### TEST
 au.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
-  full_override: |
-    backend au_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server AU2WT-SRDH-401 10.2.126.50:80
-    server AU2WT-SRDH-402 10.2.126.51:80
-    server AU2WT-SRDH-403 10.2.126.52:80
-    server AU2WT-SRDH-404 10.2.126.53:80
-    server AU2WT-SRDH-405 10.2.126.54:80
-    server AU2WT-SRDH-406 10.2.126.55:80
-    server AU2WT-SRDH-407 10.2.126.56:80
-    server AU2WT-SRDH-408 10.2.126.58:80
-    server AU2WT-SRDH-409 10.2.126.59:80
-    server AU2WT-SRDH-410 10.2.126.60:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: AU2WT-SRDH-401
+      ip: 10.2.126.50
+      port: 80
+    - name: AU2WT-SRDH-402
+      ip: 10.2.126.51
+      port: 80
+    - name: AU2WT-SRDH-403
+      ip: 10.2.126.52
+      port: 80
+    - name: AU2WT-SRDH-404
+      ip: 10.2.126.53
+      port: 80
+    - name: AU2WT-SRDH-405
+      ip: 10.2.126.54
+      port: 80
+    - name: AU2WT-SRDH-406
+      ip: 10.2.126.55
+      port: 80
+    - name: AU2WT-SRDH-407
+      ip: 10.2.126.56
+      port: 80
+    - name: AU2WT-SRDH-408
+      ip: 10.2.126.58
+      port: 80
+    - name: AU2WT-SRDH-409
+      ip: 10.2.126.59
+      port: 80
+    - name: AU2WT-SRDH-410
+      ip: 10.2.126.60
+      port: 80
 
 de.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1testcdnservices]
-  full_override: |
-    backend de_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server DE1WT-SRDH-400 10.3.126.40:80
-    server DE1WT-SRDH-401 10.3.126.41:80
-    server DE1WT-SRDH-402 10.3.126.42:80
-    server DE1WT-SRDH-403 10.3.126.43:80
-    server DE1WT-SRDH-404 10.3.126.44:80
-    server DE1WT-SRDH-405 10.3.126.45:80
-    server DE1WT-SRDH-406 10.3.126.46:80
-    server DE1WT-SRDH-407 10.3.126.47:80
-    server DE1WT-SRDH-408 10.3.126.48:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: DE1WT-SRDH-400
+      ip: 10.3.126.40
+      port: 80
+    - name: DE1WT-SRDH-401
+      ip: 10.3.126.41
+      port: 80
+    - name: DE1WT-SRDH-402
+      ip: 10.3.126.42
+      port: 80
+    - name: DE1WT-SRDH-403
+      ip: 10.3.126.43
+      port: 80
+    - name: DE1WT-SRDH-404
+      ip: 10.3.126.44
+      port: 80
+    - name: DE1WT-SRDH-405
+      ip: 10.3.126.45
+      port: 80
+    - name: DE1WT-SRDH-406
+      ip: 10.3.126.46
+      port: 80
+    - name: DE1WT-SRDH-407
+      ip: 10.3.126.47
+      port: 80
+    - name: DE1WT-SRDH-408
+      ip: 10.3.126.48
+      port: 80
 
 us.cww-nonprd.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1testcdnservices]
-  full_override: |
-    backend us_cww-nonprd_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-nonprd\.wisetechglobal\.cn$ \1.cww-nonprd.wisegrid.net
-    default-server agent-check agent-port 8098
-    server US2WT-SRDH-401 10.4.126.160:80
-    server US2WT-SRDH-402 10.4.126.161:80
-    server US2WT-SRDH-403 10.4.126.162:80
-    server US2WT-SRDH-404 10.4.126.163:80
-    server US2WT-SRDH-405 10.4.126.164:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: US2WT-SRDH-401
+      ip: 10.4.126.160
+      port: 80
+    - name: US2WT-SRDH-402
+      ip: 10.4.126.161
+      port: 80
+    - name: US2WT-SRDH-403
+      ip: 10.4.126.162
+      port: 80
+    - name: US2WT-SRDH-404
+      ip: 10.4.126.163
+      port: 80
+    - name: US2WT-SRDH-405
+      ip: 10.4.126.164
+      port: 80
 
 
 ### PROD
 au.cww.wisegrid.net-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend au_cww_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
-    default-server agent-check agent-port 8098
-    server AU2WP-SRDH-401 10.2.124.134:80
-    server AU2WP-SRDH-402 10.2.124.12:80
-    server AU2WP-SRDH-403 10.2.124.13:80
-    server AU2WP-SRDH-404 10.2.124.14:80
-    server AU2WP-SRDH-405 10.2.124.15:80
-    server AU2WP-SRDH-406 10.2.124.16:80
-    server AU2WP-SRDH-407 10.2.124.17:80
-    server AU2WP-SRDH-408 10.2.124.18:80
-    server AU2WP-SRDH-409 10.2.124.19:80
-    server AU2WP-SRDH-410 10.2.124.20:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: AU2WP-SRDH-401
+      ip: 10.2.124.134
+      port: 80
+    - name: AU2WP-SRDH-402
+      ip: 10.2.124.12
+      port: 80
+    - name: AU2WP-SRDH-403
+      ip: 10.2.124.13
+      port: 80
+    - name: AU2WP-SRDH-404
+      ip: 10.2.124.14
+      port: 80
+    - name: AU2WP-SRDH-405
+      ip: 10.2.124.15
+      port: 80
+    - name: AU2WP-SRDH-406
+      ip: 10.2.124.16
+      port: 80
+    - name: AU2WP-SRDH-407
+      ip: 10.2.124.17
+      port: 80
+    - name: AU2WP-SRDH-408
+      ip: 10.2.124.18
+      port: 80
+    - name: AU2WP-SRDH-409
+      ip: 10.2.124.19
+      port: 80
+    - name: AU2WP-SRDH-410
+      ip: 10.2.124.20
+      port: 80
 
 de.cww.wisegrid.net-catchall:
   clustered_instances: [de1prodfrontend1prodcdnservices31]
-  full_override: |
-    backend de_cww_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
-    default-server agent-check agent-port 8098
-    server DE1WP-SRDH-600 10.3.125.200:80
-    server DE1WP-SRDH-601 10.3.125.201:80
-    server DE1WP-SRDH-602 10.3.125.202:80
-    server DE1WP-SRDH-603 10.3.125.203:80
-    server DE1WP-SRDH-604 10.3.125.204:80
-    server DE1WP-SRDH-605 10.3.125.205:80
-    server DE1WP-SRDH-606 10.3.125.206:80
-    server DE1WP-SRDH-607 10.3.125.207:80
-    server DE1WP-SRDH-608 10.3.125.208:80
-    server DE1WP-SRDH-609 10.3.125.209:80
-    server DE1WP-SRDH-610 10.3.125.210:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: DE1WP-SRDH-600
+      ip: 10.3.125.200
+      port: 80
+    - name: DE1WP-SRDH-601
+      ip: 10.3.125.201
+      port: 80
+    - name: DE1WP-SRDH-602
+      ip: 10.3.125.202
+      port: 80
+    - name: DE1WP-SRDH-603
+      ip: 10.3.125.203
+      port: 80
+    - name: DE1WP-SRDH-604
+      ip: 10.3.125.204
+      port: 80
+    - name: DE1WP-SRDH-605
+      ip: 10.3.125.205
+      port: 80
+    - name: DE1WP-SRDH-606
+      ip: 10.3.125.206
+      port: 80
+    - name: DE1WP-SRDH-607
+      ip: 10.3.125.207
+      port: 80
+    - name: DE1WP-SRDH-608
+      ip: 10.3.125.208
+      port: 80
+    - name: DE1WP-SRDH-609
+      ip: 10.3.125.209
+      port: 80
+    - name: DE1WP-SRDH-610
+      ip: 10.3.125.210
+      port: 80
 
 us.cww.wisegrid.net-catchall:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
-  full_override: |
-    backend us_cww_wisegrid_net-catchall
-    option httpchk
-    http-check send meth HEAD uri /wtg/status
-    balance random
-    cookie CWWA insert indirect nocache dynamic
-    http-check expect status 200
-    http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net
-    default-server agent-check agent-port 8098
-    server US2WP-SRDH-401 10.4.124.11:80
-    server US2WP-SRDH-402 10.4.124.12:80
-    server US2WP-SRDH-403 10.4.124.13:80
-    server US2WP-SRDH-404 10.4.124.14:80
-    server US2WP-SRDH-405 10.4.124.15:80
-    server US2WP-SRDH-406 10.4.124.16:80
-    server US2WP-SRDH-407 10.4.124.17:80
-    server US2WP-SRDH-408 10.4.124.18:80
-    server US2WP-SRDH-409 10.4.124.19:80
-    server US2WP-SRDH-410 10.4.124.20:80
-    server US2WP-SRDH-411 10.4.124.21:80
+  balance: random
+  cookie:
+    name: CWWA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  default_server: agent-check agent-port 8098
+  servers:
+    - name: US2WP-SRDH-401
+      ip: 10.4.124.11
+      port: 80
+    - name: US2WP-SRDH-402
+      ip: 10.4.124.12
+      port: 80
+    - name: US2WP-SRDH-403
+      ip: 10.4.124.13
+      port: 80
+    - name: US2WP-SRDH-404
+      ip: 10.4.124.14
+      port: 80
+    - name: US2WP-SRDH-405
+      ip: 10.4.124.15
+      port: 80
+    - name: US2WP-SRDH-406
+      ip: 10.4.124.16
+      port: 80
+    - name: US2WP-SRDH-407
+      ip: 10.4.124.17
+      port: 80
+    - name: US2WP-SRDH-408
+      ip: 10.4.124.18
+      port: 80
+    - name: US2WP-SRDH-409
+      ip: 10.4.124.19
+      port: 80
+    - name: US2WP-SRDH-410
+      ip: 10.4.124.20
+      port: 80
+    - name: US2WP-SRDH-411
+      ip: 10.4.124.21
+      port: 80

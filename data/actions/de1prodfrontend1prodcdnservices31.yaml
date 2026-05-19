@@ -46,6 +46,8 @@ cww_backend:
     Direct requests for CargoWise Web to the CWW catchall backend
   order: 80
   actions:
+    # yamllint disable-line rule:line-length
+    - http-request replace-header Host ^([^.]+)\.cww-prod\.wisetechglobal\.cn$ \1.cww.wisegrid.net if star_cww_wisegrid_net
     - use_backend de_cww_wisegrid_net-catchall if star_cww_wisegrid_net
 
 app_borderwise_backend:
