@@ -95,7 +95,7 @@ wtg_src_allow_mobile_test_cargowise_net:
       http-request allow if wtg_src
       { hdr(host),field(1,:) -i mobile-test.cargowise.net }
 
-addressvalidation-test_v2_redirect:
+addressvalidation_test_v2_redirect:
   description: |-
     Redirect /v2 requests to /geoaddressing for addressvalidation-test service
   order: 70
