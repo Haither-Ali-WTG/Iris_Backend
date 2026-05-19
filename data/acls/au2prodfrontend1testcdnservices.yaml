@@ -92,3 +92,13 @@ cto_api_path:
     - path_beg -i /.well-known/oauth-protected-resource/mcp
     - path_beg -i /mcp
     - path_beg -i /api
+
+addressvalidation-test_wisegrid_net:
+  description: "addressvalidation-test.wisegrid.net address validation service"
+  tests:
+    - hdr(host),field(1,:) -i addressvalidation-test.wisegrid.net
+
+v2_path:
+  description: "API v2 path for address validation"
+  tests:
+    - path_beg -i /v2
