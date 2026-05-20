@@ -796,3 +796,27 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wisecloud-zone
           cms_resource_group: RG-AU-Prod
+
+    au2prodinternal1grpcservices:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [2095]
+          ssl: [2096]
+      machine_cluster: au2-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-k8s-sand-wtg-zone
+          cms_resource_group: RG-AU-Prod
+      stats:
+        ports:
+          web: 2038
+          socket: 2039
+      timeouts:
+        http_keep_alive: 300
