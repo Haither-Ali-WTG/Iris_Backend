@@ -1,6 +1,6 @@
 ---
 integration-hub.sand.wtg.zone:
-  clustered_instances: [au2prodinternal1services30]
+  clustered_instances: [au2prodinternal1grpcservices]
   full_override: |
     backend integration-hub_sand_wtg_zone
     option httpchk
