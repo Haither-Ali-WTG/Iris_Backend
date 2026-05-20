@@ -3901,6 +3901,144 @@ www.e2open.com:
       ip: 10.2.69.37
       port: 80
 
+wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
+www.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
+cms.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
+www.cms.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
+umbraco.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+
+umbracocms.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+
+cpa.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTGA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2wp-swta-401a
+      ip: 10.2.69.92
+      port: 80
+    - name: au2wp-swta-401b
+      ip: 10.2.69.93
+      port: 80
+
+lms.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTGA2
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
+lms.cms.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: WTGA3
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+    check_expect: '200'
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
 docs.wisetechacademy.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
