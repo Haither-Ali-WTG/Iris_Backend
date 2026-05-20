@@ -99,10 +99,10 @@ wtg_src_allow_mobile_test_cargowise_net:
 
 addressvalidation_test_v2_redirect:
   description: |-
-    Redirect /v2 requests to /geoaddressing for addressvalidation-test service
+    Redirect /v2/ requests to /geoaddressing/ for addressvalidation-test service
   order: 70
   actions:
-    - redirect code 301 location /geoaddressing%[req.uri,regsub(^/v2,)] if addressvalidation-test_wisegrid_net v2_path
+    - redirect code 301 location /geoaddressing%[req.uri,regsub(^/v2(/|$),/)] if addressvalidation-test_wisegrid_net v2_path
 
 https_redirect_mobile_test_cargowise_net:
   description: |-

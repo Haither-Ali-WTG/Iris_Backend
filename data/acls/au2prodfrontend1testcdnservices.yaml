@@ -101,4 +101,4 @@ addressvalidation-test_wisegrid_net:
 v2_path:
   description: "API v2 path for address validation"
   tests:
-    - path_beg -i /v2
+    - path_reg ^/v2(/|$)
