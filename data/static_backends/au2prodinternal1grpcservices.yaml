@@ -1,5 +1,5 @@
 ---
-integration-hub.sand.wtg.zone:
+integration-hub-1.sand.wtg.zone:
   clustered_instances: [au2prodinternal1grpcservices]
   full_override: |
     backend integration-hub_sand_wtg_zone
