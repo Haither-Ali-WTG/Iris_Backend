@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260520.1
-  # Wed May 20 03:19:22 UTC 2026 -- Wed May 20 13:19:22 AEST 2026
+  # Dante Build Artifact 20260520.2
+  # Wed May 20 10:02:01 UTC 2026 -- Wed May 20 20:02:01 AEST 2026
   #
-  # Merged PR 50470: Ubuntu 26.04 server rebuild
-  # 9cc7e808a411c74e8c0f096587713d9b42eea22e
-  dante_build_id: '1704183'
+  # Merge pull request 50510 from dante_artifact_upgrade into master
+  # b05d7806258aec036ea1c30a06afe9af1b0432c9
+  dante_build_id: '1704517'
 
-  # virgil 20260520.2
-  # Wed May 20 08:36:03 UTC 2026 -- Wed May 20 18:36:03 AEST 2026
+  # virgil 20260520.4
+  # Wed May 20 09:15:38 UTC 2026 -- Wed May 20 19:15:38 AEST 2026
   #
-  # Merged PR 50508: add vSAN vlan to vmware nonrouted profile for DAT
-  # 8c6e55ffd595cac5299f390e1497e22cfa3c96cf
-  virgil_build_id: '1704438'
+  # Merged PR 50516: add vSAN vlan to vmware nonrouted profile for DAT
+  # 7e71e7c409387e91224ea5a57428aec011374f86
+  virgil_build_id: '1704473'
 
   # sqlbilling 20260519.6
   # Tue May 19 09:24:24 UTC 2026 -- Tue May 19 19:24:24 AEST 2026
