@@ -662,6 +662,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-wisetechacademy-com
           cms_resource_group: RG-AU-Prod
+        - name: star-cms-wisetechacademy-com
+          cms_resource_group: RG-AU-Prod
         - name: lms-cms-wisetechacademy-com
           cms_resource_group: RG-AU-Prod
       cipher:
