@@ -506,3 +506,13 @@ au2corpinternaltcp:
   - name: star-wtg-zone
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-starwtgzon
+au2prodinternal1grpcservices:
+  - name: star-k8s-sand-wtg-zone
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-stark8ssan
+  - name: star-sand-wtg-zone
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-starsandwt
+  - name: star-wtg-zone
+    resource_group: RG-AU-Corp
+    keyvault: wtg-corp-au-starwtgzon
