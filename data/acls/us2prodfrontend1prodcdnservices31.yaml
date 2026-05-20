@@ -176,6 +176,7 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?aktivdata\.fi$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?singeste\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?buysellmove\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?customscentre\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?sistemascasa\.com\.mx$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
@@ -268,6 +269,11 @@ buysellmove_com:
   description: "ACL for buysellmove_com"
   tests:
     - hdr(host) -m reg -i ^buysellmove\.com$
+
+customscentre_com:
+  description: "ACL for customscentre_com"
+  tests:
+    - hdr(host) -m reg -i ^customscentre\.com$
 
 bysoft_com_br:
   description: "ACL for bysoft_com_br"
@@ -499,6 +505,11 @@ www_buysellmove_com:
   description: "ACL for www_buysellmove_com"
   tests:
     - hdr(host) -m reg -i ^www\.buysellmove\.com$
+
+www_customscentre_com:
+  description: "ACL for www_customscentre_com"
+  tests:
+    - hdr(host) -m reg -i ^www\.customscentre\.com$
 
 www_cargoguide_com:
   description: "ACL for www_cargoguide_com"

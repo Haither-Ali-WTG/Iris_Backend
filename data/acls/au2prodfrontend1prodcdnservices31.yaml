@@ -549,6 +549,16 @@ buysellmove_com:
   tests:
     - hdr(host),field(1,:) -m reg -i ^buysellmove\.com$
 
+www_customscentre_com:
+  description: "www.customscentre.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^www\.customscentre\.com$
+
+customscentre_com:
+  description: "customscentre.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^customscentre\.com$
+
 www_tailwindtransportationsoftware_com:
   description: "www.tailwindtransportationsoftware.com"
   tests:
@@ -739,6 +749,7 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?ccnhub\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?ccnhub\.co\.nz$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?buysellmove\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?customscentre\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?sistemascasa\.com\.mx$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
