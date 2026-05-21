@@ -7,12 +7,12 @@ variables:
   # d77fa2914506663acca1d16149c025d43711db8f
   dante_build_id: '1705235'
 
-  # virgil 20260521.2
-  # Thu May 21 02:31:34 UTC 2026 -- Thu May 21 12:31:34 AEST 2026
+  # virgil 20260522.1
+  # Thu May 21 21:37:05 UTC 2026 -- Fri May 22 07:37:05 AEST 2026
   #
-  # Merged PR 50537: add vSAN vlan to vmware nonrouted profile for DE1 DAT
-  # dafff9b61361ee57c31dbe3fc5a2385e6f1d13f4
-  virgil_build_id: '1705145'
+  # Merged PR 50575: add dat_server_vmware profile to US DAT switches
+  # 29c070407b2fca3c252d71925d78e571c80f17d2
+  virgil_build_id: '1705900'
 
   # sqlbilling 20260521.1
   # Wed May 20 15:22:00 UTC 2026 -- Thu May 21 01:22:00 AEST 2026
