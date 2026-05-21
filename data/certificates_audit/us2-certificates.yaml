@@ -536,3 +536,7 @@ us2prodfrontend1opentecnologia1:
   - name: wtgoc0-openits-io
     resource_group: RG-US-Prod
     keyvault: wtg-prod-us-wtgoc0open
+us2prodfrontend1editrade1:
+  - name: star-editrade-cl
+    resource_group: RG-US-Prod
+    keyvault: wtg-prod-us-stareditra
