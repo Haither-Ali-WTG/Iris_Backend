@@ -863,6 +863,17 @@ buysellmove.com-us:
     server US2CO-SIIS-403A 10.4.67.38:80 check
     server US2CO-SIIS-403B 10.4.67.39:80 check
 
+customscentre.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend customscentre_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host customscentre.com
+    http-check expect status 200,301
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
 cargoguide.com-us:
   clustered_instances: [us2prodfrontend1prodcdnservices31]
   full_override: |
@@ -1278,6 +1289,17 @@ www.buysellmove.com-us:
     option httpchk
     http-check connect
     http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.buysellmove.com
+    http-check expect status 200
+    server US2CO-SIIS-403A 10.4.67.38:80 check
+    server US2CO-SIIS-403B 10.4.67.39:80 check
+
+www.customscentre.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  full_override: |
+    backend www_customscentre_com
+    option httpchk
+    http-check connect
+    http-check send meth HEAD uri / ver HTTP/1.1 hdr host www.customscentre.com
     http-check expect status 200
     server US2CO-SIIS-403A 10.4.67.38:80 check
     server US2CO-SIIS-403B 10.4.67.39:80 check
