@@ -1,5 +1,6 @@
 """Backend-related tests."""
 
+import os
 import re
 from glob import glob
 from typing import List
@@ -66,3 +67,43 @@ class BackendTest(TestCase):
                                     encryption = True
 
                                 self._check_port(se.get('port', -1), encryption)
+
+    def test_iris_stats_entries_present_in_dc_central_files(self):
+        """Ensure iris-stats backends exist in the designated per-DC static backend file."""
+
+        yaml = ruamel.yaml.YAML(typ="safe", pure=True)
+
+        # Per-DC file that hosts the iris-stats service keys.
+        dc_iris_stats_file = {
+            'us2': 'data/static_backends/us2corpinternal1.yaml',
+            'au2': 'data/static_backends/au2prodinternal1corpservices35.yaml',
+            'cn1': 'data/static_backends/au2prodinternal1corpservices35.yaml',
+            'de1': 'data/static_backends/de1prodinternal1services30.yaml',
+            'sa1': 'data/static_backends/de1prodinternal1services30.yaml',
+        }
+
+        for instances_file in checked_glob('data/instances/*-clustered_instances.yml'):
+            dc = os.path.basename(instances_file).split('-')[0]
+            central_file = dc_iris_stats_file.get(dc)
+            if not central_file:
+                continue
+
+            with open(instances_file, encoding='utf8') as fh:
+                cfg = yaml.load(fh)
+
+            instances = cfg.get('clustered_instances', {}).get('hosts', {})
+
+            with open(central_file, encoding='utf8') as fh:
+                central_cfg = yaml.load(fh)
+
+            for instance_name, instance_cfg in instances.items():
+                stats_ports = instance_cfg.get('stats', {}).get('ports', {})
+                if 'web' not in stats_ports:
+                    continue
+
+                expected_key = f'{instance_name}.iris-stats.wtg.zone'
+                with self.subTest(dc=dc, instance=instance_name, file=central_file):
+                    self.assertTrue(
+                        expected_key in central_cfg,
+                        f"Missing iris-stats entry '{expected_key}' in {central_file}",
+                    )
