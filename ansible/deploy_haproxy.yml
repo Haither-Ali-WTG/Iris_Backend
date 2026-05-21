@@ -54,7 +54,7 @@
       include_role:
         name: telegraf_config
       vars:
-        endpoint_ports: "{{ stats_web_ports }}"
+        endpoint_addresses: "{{ stats_web_endpoint_addresses }}"
       when: deploy_telegraf | default(true) | bool
 
     - name: Apply system parameters

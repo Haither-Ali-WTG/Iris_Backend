@@ -212,9 +212,15 @@
           {%- endfor -%}
           {{ result }}
 
-    - name: Calculate stats web ports on each machine
+    - name: Calculate stats web endpoint addresses on each machine
+      vars:
+        stats_web_host: "{{ hostvars[item].defaults.bind_vip | default('localhost', true) }}"
       set_fact:
-        stats_web_ports: "{{ stats_web_ports | default([]) + [hostvars[item].stats.ports.web] }}"
+        stats_web_endpoint_addresses: >-
+          {{
+            stats_web_endpoint_addresses | default([])
+            + [stats_web_host ~ ':' ~ hostvars[item].stats.ports.web]
+          }}
       loop: "{{ groups.individual_instances | default([]) }}"
       when: hostvars[item].machine_name == inventory_hostname
 

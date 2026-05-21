@@ -85,6 +85,18 @@ au2-sand-internal-2:
       preempt: false
       virtual_router_id: 104
       priority: [au2lbl00889]
+    - description: bind to test1 instance
+      ip: 10.2.136.140
+      vlan: 1136
+      preempt: false
+      virtual_router_id: 105
+      priority: [au2lbl00889]
+    - description: bind to test2 instance
+      ip: 10.2.136.141
+      vlan: 1136
+      preempt: false
+      virtual_router_id: 106
+      priority: [au2lbl00889]
 
 au2-prod-elastic-bunker-1:
   machines:
