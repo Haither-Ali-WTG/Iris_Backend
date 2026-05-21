@@ -388,6 +388,9 @@ au2prodfrontend1prodcdnservices31:
   - name: ilul-me
     resource_group: RG-US-Prod
     keyvault: wtg-prod-us-ilulmez3hs
+  - name: lms-cms-wisetechacademy-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-lmscmswise
   - name: star-borderwise-com
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-zjzdrysrxk
@@ -397,6 +400,9 @@ au2prodfrontend1prodcdnservices31:
   - name: star-cargowise-net
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-juhopsivhn
+  - name: star-cms-wisetechacademy-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starcmswis
   - name: star-cwconnector-wisegrid-net
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-starcwconn
@@ -489,6 +495,9 @@ au2prodfrontend1testcdnservices:
   - name: star-wisegrid-net
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-starwisegr
+  - name: star-wisetechacademy-com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-starwisete
   - name: star-wisetechglobal-com
     resource_group: RG-AU-Corp
     keyvault: wtg-corp-au-dxdxilqyuv
