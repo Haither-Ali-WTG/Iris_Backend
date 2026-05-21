@@ -544,6 +544,21 @@ xttest-customs-becallback.wisegrid.net:
       ip: 10.2.70.19
       port: 9080
 
+test.wisetechacademy.com:
+  clustered_instances: [au2prodfrontend1testcdnservices]
+  cookie:
+    name: WTA
+  http_health_check:
+    enabled: true
+    http_path: /wtg/status
+  servers:
+    - name: au2auawebw001
+      ip: 10.2.173.2
+      port: 80
+    - name: au2auawebw002
+      ip: 10.2.173.3
+      port: 80
+
 ca-staging.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
