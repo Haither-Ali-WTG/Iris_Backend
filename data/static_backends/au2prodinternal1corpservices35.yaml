@@ -2128,6 +2128,57 @@ au2prodfrontend1testcdnservices.iris-stats.wtg.zone:
       ip: 10.2.64.23
       port: 2062
 
+au2corpinternaltcp.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00886
+      ip: 10.2.83.31
+      port: 2066
+    - name: au2lbl00887
+      ip: 10.2.83.32
+      port: 2066
+    - name: au2lbl00888
+      ip: 10.2.83.33
+      port: 2066
+
+au2prodfrontend1tenantservices.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00345
+      ip: 10.2.64.21
+      port: 2064
+    - name: au2lbl00346
+      ip: 10.2.64.22
+      port: 2064
+    - name: au2lbl00349
+      ip: 10.2.64.23
+      port: 2064
+
+au2prodinternal1grpcservices.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00886
+      ip: 10.2.83.31
+      port: 2038
+    - name: au2lbl00887
+      ip: 10.2.83.32
+      port: 2038
+    - name: au2lbl00888
+      ip: 10.2.83.33
+      port: 2038
+
 # end of iris-stats services
 # corp UAT Web services
 svc-wtlbda.wtg.zone:
