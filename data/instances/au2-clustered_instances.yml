@@ -567,16 +567,16 @@ clustered_instances:
       timeouts:
         http_keep_alive: 15
 
-    au2sandinternal2test1:
+    au2sandinternal1test1:
       dc: AU2
       defaults:
-        health_check_interval: 30000
+        health_check_interval: 10000
         bind_vip: 10.2.136.140
       frontend:
         ports:
           plaintext: [80]
           ssl: [443]
-      machine_cluster: au2-sand-internal-2
+      machine_cluster: au2-sand-internal-1
       iis_servers: []
       certificates:
         - name: star-testrig-sand-wtg-zone
@@ -591,16 +591,16 @@ clustered_instances:
           socket: 81
           web: 8001
 
-    au2sandinternal2test2:
+    au2sandinternal1test2:
       dc: AU2
       defaults:
-        health_check_interval: 30000
+        health_check_interval: 10000
         bind_vip: 10.2.136.141
       frontend:
         ports:
           plaintext: [80]
           ssl: [443]
-      machine_cluster: au2-sand-internal-2
+      machine_cluster: au2-sand-internal-1
       iis_servers: []
       certificates:
         - name: star-testrig-sand-wtg-zone
