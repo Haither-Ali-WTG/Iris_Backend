@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260521.1
-  # Thu May 21 03:21:19 UTC 2026 -- Thu May 21 13:21:19 AEST 2026
+  # Dante Build Artifact 20260521.2
+  # Thu May 21 04:00:33 UTC 2026 -- Thu May 21 14:00:33 AEST 2026
   #
-  # Merge pull request 50543 from dante_artifact_upgrade into master
-  # 6d129a48f99cc86df876862333b93e2807201261
-  dante_build_id: '1705185'
+  # Merged PR 50542: Ubuntu 26.04 mount data drive after first boot
+  # d77fa2914506663acca1d16149c025d43711db8f
+  dante_build_id: '1705235'
 
   # virgil 20260521.2
   # Thu May 21 02:31:34 UTC 2026 -- Thu May 21 12:31:34 AEST 2026
