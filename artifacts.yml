@@ -7,12 +7,12 @@ variables:
   # 61afbb4807ef8389f16dc1f52f50628dd7c823d0
   dante_build_id: '1705939'
 
-  # virgil 20260522.1
-  # Thu May 21 21:37:05 UTC 2026 -- Fri May 22 07:37:05 AEST 2026
+  # virgil 20260522.3
+  # Thu May 21 23:23:22 UTC 2026 -- Fri May 22 09:23:22 AEST 2026
   #
-  # Merged PR 50575: add dat_server_vmware profile to US DAT switches
-  # 29c070407b2fca3c252d71925d78e571c80f17d2
-  virgil_build_id: '1705900'
+  # Merged PR 50580: Add native vlan and vSAN vlan to dat_vmware_profile
+  # f750ad4f42e82078594f96c1e9429423516b1cfa
+  virgil_build_id: '1706005'
 
   # sqlbilling 20260521.1
   # Wed May 20 15:22:00 UTC 2026 -- Thu May 21 01:22:00 AEST 2026
