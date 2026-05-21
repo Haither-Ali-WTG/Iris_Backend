@@ -1,5 +1,6 @@
 # required for Iris run
 ansible
+dnspython
 pywinrm
 
 # required for tests:
