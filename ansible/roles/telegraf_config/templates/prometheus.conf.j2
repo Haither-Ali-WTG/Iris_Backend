@@ -9,8 +9,8 @@
 
 [[inputs.prometheus]]
   urls = [
-    {% for address in endpoint_addresses %}
-    "http://{{ address }}/metrics"{% if not loop.last %},{% endif %}
+    {% for port in endpoint_ports %}
+    "http://localhost:{{ port }}/metrics"{% if not loop.last %},{% endif %}
     {% endfor %}
   ]
   metric_version = 2
