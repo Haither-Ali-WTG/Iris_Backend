@@ -787,8 +787,8 @@ clustered_instances:
             - 1076  # vcfjump2-au2.wtg.zone
       stats:
         ports:
-          web: 2064
-          socket: 2065
+          web: 2066
+          socket: 2067
       machine_cluster: au2-prod-internal-1
       iis_servers: []
       certificates:
