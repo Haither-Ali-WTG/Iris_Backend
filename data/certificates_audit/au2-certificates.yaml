@@ -353,6 +353,14 @@ au2prodfrontend1testcwservices27:
   - name: webtracking_sila_net_au
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-webtrackin
+au2sandinternal1test1:
+  - name: star-testrig-sand-wtg-zone
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-nlldbncxru
+au2sandinternal1test2:
+  - name: star-testrig-sand-wtg-zone
+    resource_group: RG-AU-Sand
+    keyvault: wtg-sand-au-nlldbncxru
 au2sandinternal2testservices0:
   - name: star-bolero-sand-wtg-zone
     resource_group: UNKNOWN
