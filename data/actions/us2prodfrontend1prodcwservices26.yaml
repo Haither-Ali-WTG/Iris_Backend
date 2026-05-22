@@ -72,7 +72,6 @@ custom_url_actions:
     - use_backend tarewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i login.tarraservices.com }
     - use_backend wfring_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackingus.weidafreight.com }
     - use_backend widprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.wideline.biz }
-    - use_backend wlgtgp_webtracker_wisegrid_net if { hdr(host),field(1,:) -i cw1.go2tigers.com }
     - use_backend us0sna_webtracker_wisegrid_net if { hdr(host),field(1,:) -i us0snachb.webtracker.wisegrid.net }
     - use_backend lmjewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i lmjewr2.webtracker.wisegrid.net }
     - use_backend boaprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i boaprd2.webtracker.wisegrid.net }
