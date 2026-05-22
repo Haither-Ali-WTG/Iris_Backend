@@ -74,6 +74,18 @@ au2-sand-internal-1:
       preempt: true
       virtual_router_id: 102
       priority: [au2lbl00417, au2lbl00416]
+    - description: bind to test1 instance
+      ip: 10.2.136.140
+      vlan: 1136
+      preempt: false
+      virtual_router_id: 105
+      priority: [au2lbl00417, au2lbl00416]
+    - description: bind to test2 instance
+      ip: 10.2.136.141
+      vlan: 1136
+      preempt: false
+      virtual_router_id: 106
+      priority: [au2lbl00416, au2lbl00417]
 
 au2-sand-internal-2:
   machines:

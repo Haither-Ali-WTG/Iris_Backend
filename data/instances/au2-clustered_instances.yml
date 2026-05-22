@@ -567,6 +567,54 @@ clustered_instances:
       timeouts:
         http_keep_alive: 15
 
+    au2sandinternal1test1:
+      dc: AU2
+      defaults:
+        health_check_interval: 10000
+        bind_vip: 10.2.136.140
+      frontend:
+        ports:
+          plaintext: [80]
+          ssl: [443]
+      machine_cluster: au2-sand-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-testrig-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+      container:
+        resources:
+          production:
+            cpu: 4000m
+            memory: 8000Mi
+      stats:
+        ports:
+          socket: 81
+          web: 8001
+
+    au2sandinternal1test2:
+      dc: AU2
+      defaults:
+        health_check_interval: 10000
+        bind_vip: 10.2.136.141
+      frontend:
+        ports:
+          plaintext: [80]
+          ssl: [443]
+      machine_cluster: au2-sand-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-testrig-sand-wtg-zone
+          cms_resource_group: RG-AU-Sand
+      container:
+        resources:
+          production:
+            cpu: 4000m
+            memory: 8000Mi
+      stats:
+        ports:
+          socket: 81
+          web: 8002
+
     au2sandinternal2testservices0:
       # au2-sand-internal-2-test-services-0
       dc: AU2

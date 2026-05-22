@@ -16,6 +16,7 @@ haproxy_defaults_settings:
   balance: enum('leastconn', 'roundrobin', 'source', 'first', 'random', required=False)
   health_check_interval: any(regex('^[0-9]+s$', name='health check interval'), int(min=1000, max=60000), required=False)
   custom_log_fields: list(regex('^[a-z][a-z0-9_]*$', name='custom log field name'), required=False)
+  bind_vip: any(ip(version=4, name='VIP address'), const(''), required=False)
 
 haproxy_global__settings:
   processes: int(min=1, required=False)
