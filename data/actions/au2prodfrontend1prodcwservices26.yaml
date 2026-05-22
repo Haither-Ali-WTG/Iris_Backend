@@ -83,7 +83,6 @@ custom_url_actions:
     - use_backend hi0prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i missioncontrol.hiltons.co.nz }
     - use_backend icesyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.icecargo.com.au }
     - use_backend ifcmel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ifcmel-webtracker.wisegrid.net }
-    - use_backend jjlsyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.jjlawson.com.au }
     - use_backend kwesyd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i webtracker.kwe.com.au }
     - use_backend leaakl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i track.oceania.kln.com }
     - use_backend lmiprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i lmiprd2.webtracker.wisegrid.net }
