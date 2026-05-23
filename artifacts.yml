@@ -7,16 +7,16 @@ variables:
   # 2074f2769c626d5e052935fdd4c8f1b7f90c573a
   dante_build_id: '1706067'
 
-  # virgil 20260522.3
-  # Thu May 21 23:23:22 UTC 2026 -- Fri May 22 09:23:22 AEST 2026
+  # virgil 20260523.14
+  # Sat May 23 01:24:13 UTC 2026 -- Sat May 23 11:24:13 AEST 2026
   #
-  # Merged PR 50580: Add native vlan and vSAN vlan to dat_vmware_profile
-  # f750ad4f42e82078594f96c1e9429423516b1cfa
-  virgil_build_id: '1706005'
+  # Merged PR 50642: Add DAT servers and esxi8 version
+  # 7606fee1c0eb4796b375f5133de6115e51bd8055
+  virgil_build_id: '1707001'
 
-  # sqlbilling 20260521.1
-  # Wed May 20 15:22:00 UTC 2026 -- Thu May 21 01:22:00 AEST 2026
+  # sqlbilling 20260522.1
+  # Fri May 22 08:00:49 UTC 2026 -- Fri May 22 18:00:49 AEST 2026
   #
-  # Merged PR 50531: AddSQLBilling IPs AU2 DE1 US2
-  # cb6cca420b8acf2541fbaeb42c5c83e7dae59ac4
-  sqlbilling_build_id: '1704721'
+  # Merged PR 50581: AddSQLBilling IPs US2
+  # 28c282cf92cf3591f29b3e5a73bd82df09a2ea74
+  sqlbilling_build_id: '1706407'
