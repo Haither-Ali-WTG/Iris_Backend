@@ -960,7 +960,7 @@ www-wtltai.cargowise.com:
       ip: 10.2.69.83
       port: 80
 
-svc-wtlbda.cargowise.com:
+svc-wtlbda.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: SPWS
@@ -977,7 +977,7 @@ svc-wtlbda.cargowise.com:
       ip: 10.2.69.83
       port: 80
 
-www-wtlbda.cargowise.com:
+www-wtlbda.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: SPWS
@@ -993,7 +993,7 @@ www-wtlbda.cargowise.com:
       ip: 10.2.69.83
       port: 80
 
-svc-wtlbdl.cargowise.com:
+svc-wtlbdl.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: SPWS
@@ -1010,7 +1010,7 @@ svc-wtlbdl.cargowise.com:
       ip: 10.2.69.83
       port: 80
 
-www-wtlbdl.cargowise.com:
+www-wtlbdl.wisegrid.net:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: SPWS
