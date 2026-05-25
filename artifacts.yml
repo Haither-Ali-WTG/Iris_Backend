@@ -7,12 +7,12 @@ variables:
   # 5e65d23293f46618e4c9c0309a52b3fa1e9be981
   dante_build_id: '1707043'
 
-  # virgil 20260523.14
-  # Sat May 23 01:24:13 UTC 2026 -- Sat May 23 11:24:13 AEST 2026
+  # virgil 20260525.6
+  # Mon May 25 02:29:14 UTC 2026 -- Mon May 25 12:29:14 AEST 2026
   #
-  # Merged PR 50642: Add DAT servers and esxi8 version
-  # 7606fee1c0eb4796b375f5133de6115e51bd8055
-  virgil_build_id: '1707001'
+  # Merged PR 50675: update a single kafka Q1 node to be built on ubuntu 24.04
+  # 9ef3589c6e5b0b09d1cf2849f45ad991547c34f1
+  virgil_build_id: '1708637'
 
   # sqlbilling 20260522.1
   # Fri May 22 08:00:49 UTC 2026 -- Fri May 22 18:00:49 AEST 2026
