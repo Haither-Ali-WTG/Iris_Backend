@@ -7,12 +7,12 @@ variables:
   # 1d795aff4b0e4a07ff861651eb957c588fa604d4
   dante_build_id: '1708727'
 
-  # virgil 20260525.6
-  # Mon May 25 02:29:14 UTC 2026 -- Mon May 25 12:29:14 AEST 2026
+  # virgil 20260526.2
+  # Mon May 25 18:21:08 UTC 2026 -- Tue May 26 04:21:08 AEST 2026
   #
-  # Merged PR 50675: update a single kafka Q1 node to be built on ubuntu 24.04
-  # 9ef3589c6e5b0b09d1cf2849f45ad991547c34f1
-  virgil_build_id: '1708637'
+  # Merge pull request 50715 from virgil_python_upgrade into master
+  # 4373043969d3c5cfc7127eb06d56d92237aa61e9
+  virgil_build_id: '1709243'
 
   # sqlbilling 20260522.1
   # Fri May 22 08:00:49 UTC 2026 -- Fri May 22 18:00:49 AEST 2026
