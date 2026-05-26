@@ -1,2 +1,85 @@
 ---
-{}
+certconnect_urls:
+  description: "Regex for certconnect.com.au hosts"
+  tests:
+    - hdr(host) -m reg -i ^([^\.]+\.)?certconnect\.com\.au$
+
+containerchain_sbox_com:
+  description: "Regex for *-sbox.containerchain.com hosts"
+  tests:
+    - hdr(host) -m reg -i ^[^.]+-sbox\.containerchain\.com$
+
+containerchain_tst1_com:
+  description: "Regex for *-tst1.containerchain.com hosts"
+  tests:
+    - hdr(host) -m reg -i ^[^.]+-tst1\.containerchain\.com$
+
+containerchain_com:
+  description: "Regex for containerchain.com hosts excluding sbox/tst1"
+  tests:
+    - hdr(host) -m reg -i ^(?![^.]+-(sbox|tst1)\.).+\.containerchain\.com$
+
+containerchain_sbox_com_au:
+  description: "Regex for *-sbox.containerchain.com.au hosts"
+  tests:
+    - hdr(host) -m reg -i ^[^.]+-sbox\.containerchain\.com\.au$
+
+containerchain_tst1_com_au:
+  description: "Regex for *-tst1.containerchain.com.au hosts"
+  tests:
+    - hdr(host) -m reg -i ^[^.]+-tst1\.containerchain\.com\.au$
+
+containerchain_com_au:
+  description: "Regex for containerchain.com.au hosts excluding sbox/tst1"
+  tests:
+    - hdr(host) -m reg -i ^(?![^.]+-(sbox|tst1)\.).+\.containerchain\.com\.au$
+
+is_containerchain_driverv2:
+  description: "Path begins with /driverv2"
+  tests:
+    - path_beg -i /driverv2
+
+is_containerchain_integrated:
+  description: "Path begins with /integrated"
+  tests:
+    - path_beg -i /integrated
+
+is_containerchain_live:
+  description: "Path begins with /live"
+  tests:
+    - path_beg -i /live
+
+is_containerchain_liveaccountapi:
+  description: "Path begins with /liveaccountapi"
+  tests:
+    - path_beg -i /liveaccountapi
+
+is_containerchain_livecwtapi:
+  description: "Path begins with /livecwtapi"
+  tests:
+    - path_beg -i /livecwtapi
+
+is_containerchain_navisapi:
+  description: "Path begins with /navisapi"
+  tests:
+    - path_beg -i /navisapi
+
+is_containerchain_navisclient:
+  description: "Path begins with /navisclient"
+  tests:
+    - path_beg -i /navisclient
+
+is_containerchain_notifications:
+  description: "Path begins with /notifications"
+  tests:
+    - path_beg -i /notifications
+
+is_containerchain_tripapi:
+  description: "Path begins with /tripapi"
+  tests:
+    - path_beg -i /tripapi
+
+rdg-test_containerchain_com_host:
+  description: "rdg-test.containerchain.com"
+  tests:
+    - hdr(host) -i rdg-test.containerchain.com
