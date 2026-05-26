@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260526.1
-  # Mon May 25 19:21:02 UTC 2026 -- Tue May 26 05:21:02 AEST 2026
+  # Dante Build Artifact 20260526.2
+  # Tue May 26 00:01:29 UTC 2026 -- Tue May 26 10:01:29 AEST 2026
   #
-  # Merge pull request 50726 from dante_artifact_upgrade into master
-  # 310196d51e83519db017d0b89ab9d83eec3517cd
-  dante_build_id: '1709294'
+  # Merge pull request 50740 from dante_artifact_upgrade into master
+  # 5c03c6fb9b71306ef9d3d52ea678536fb353c32b
+  dante_build_id: '1709507'
 
-  # virgil 20260526.2
-  # Mon May 25 18:21:08 UTC 2026 -- Tue May 26 04:21:08 AEST 2026
+  # virgil 20260526.4
+  # Mon May 25 23:14:07 UTC 2026 -- Tue May 26 09:14:07 AEST 2026
   #
-  # Merge pull request 50715 from virgil_python_upgrade into master
-  # 4373043969d3c5cfc7127eb06d56d92237aa61e9
-  virgil_build_id: '1709243'
+  # Merged PR 50668: ssh-update-zinal
+  # 51444b967a8a1a7ac8537f5338bfc4a35aa9679b
+  virgil_build_id: '1709453'
 
-  # sqlbilling 20260522.1
-  # Fri May 22 08:00:49 UTC 2026 -- Fri May 22 18:00:49 AEST 2026
+  # sqlbilling 20260526.2
+  # Mon May 25 23:41:51 UTC 2026 -- Tue May 26 09:41:51 AEST 2026
   #
-  # Merged PR 50581: AddSQLBilling IPs US2
-  # 28c282cf92cf3591f29b3e5a73bd82df09a2ea74
-  sqlbilling_build_id: '1706407'
+  # Merged PR 50746: Update Readonly
+  # fd54f63bd6eff909be4a4aae410c96de9eded54d
+  sqlbilling_build_id: '1709482'
