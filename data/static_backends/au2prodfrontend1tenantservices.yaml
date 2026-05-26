@@ -5,7 +5,7 @@ certconnect.com.au:
     enabled: true
     method: HEAD
     http_path: /wtg/status
-    check_expect: 200
+    check_expect: '200'
   cookie:
     name: CCT
   servers:
@@ -19,7 +19,7 @@ www.certconnect.com.au:
     enabled: true
     method: HEAD
     http_path: /wtg/status
-    check_expect: 200
+    check_expect: '200'
   cookie:
     name: CCT
   servers:
@@ -33,7 +33,7 @@ verify.certconnect.com.au:
     enabled: true
     method: HEAD
     http_path: /wtg/status
-    check_expect: 200
+    check_expect: '200'
   cookie:
     name: CCT
   servers:
@@ -47,7 +47,7 @@ uat.certconnect.com.au:
     enabled: true
     method: HEAD
     http_path: /wtg/status
-    check_expect: 200
+    check_expect: '200'
   cookie:
     name: CCT
   servers:
@@ -61,7 +61,7 @@ demo.certconnect.com.au:
     enabled: true
     method: HEAD
     http_path: /
-    check_expect: 200
+    check_expect: '200'
   cookie:
     name: CCT
   default_server: inter 10000 ssl
