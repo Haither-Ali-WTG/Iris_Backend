@@ -461,7 +461,6 @@ wtg-api-sbox.containerchain.com.tripapi:
       settings: check
 wtg-live-api-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-live-api-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -478,7 +477,6 @@ wtg-live-api-sbox.containerchain.com:
       settings: check
 wtg-live-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-live-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -495,7 +493,6 @@ wtg-live-sbox.containerchain.com:
       settings: check
 wtg-live-sbox-mobile.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-live-sbox-mobile_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -512,7 +509,6 @@ wtg-live-sbox-mobile.containerchain.com:
       settings: check
 wtg-mobile-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-mobile-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -529,7 +525,6 @@ wtg-mobile-sbox.containerchain.com:
       settings: check
 wtg-navis-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-navis-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -546,7 +541,6 @@ wtg-navis-sbox.containerchain.com:
       settings: check
 wtg-notifications-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-notifications-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -563,7 +557,6 @@ wtg-notifications-sbox.containerchain.com:
       settings: check
 wtg-registration-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-registration-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -580,7 +573,6 @@ wtg-registration-sbox.containerchain.com:
       settings: check
 sso-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: sso-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -597,7 +589,6 @@ sso-sbox.containerchain.com:
       settings: check
 sso-tst1.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: sso-tst1_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -614,7 +605,6 @@ sso-tst1.containerchain.com:
       settings: check
 ssov2-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: ssov2-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -631,7 +621,6 @@ ssov2-sbox.containerchain.com:
       settings: check
 wtg-ssov2-sbox.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-ssov2-sbox_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -648,7 +637,6 @@ wtg-ssov2-sbox.containerchain.com:
       settings: check
 ssov2.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: ssov2_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -665,7 +653,6 @@ ssov2.containerchain.com:
       settings: check
 wtg.ssov2.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg_ssov2_containerchain_com
   http_health_check:
     enabled: true
     method: GET
@@ -682,7 +669,6 @@ wtg.ssov2.containerchain.com:
       settings: check
 sso.containerchain.com:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: sso_containerchain_com
   http_health_check:
     enabled: true
     method: GET
