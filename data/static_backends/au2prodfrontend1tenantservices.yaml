@@ -1,3 +1,4 @@
+---
 certconnect.com.au:
   clustered_instances: [au2prodfrontend1tenantservices]
   http_health_check:
@@ -64,6 +65,7 @@ demo.certconnect.com.au:
   cookie:
     name: CCT
   default_server: inter 10000 ssl
+  encryption: true
   servers:
     - name: AU2CCTWEBW001
       ip: 10.2.179.2
@@ -155,7 +157,6 @@ wtg-cloud-sg.containerchain.com:
       port: 80
 api-tst1.containerchain.com.driverv2:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_driverv2
   http_health_check:
     enabled: true
     method: GET
@@ -172,7 +173,6 @@ api-tst1.containerchain.com.driverv2:
       settings: check
 api-tst1.containerchain.com.integrated:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_integrated
   http_health_check:
     enabled: true
     method: GET
@@ -189,7 +189,6 @@ api-tst1.containerchain.com.integrated:
       settings: check
 api-tst1.containerchain.com.live:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_live
   http_health_check:
     enabled: true
     method: GET
@@ -206,7 +205,6 @@ api-tst1.containerchain.com.live:
       settings: check
 api-tst1.containerchain.com.liveaccountapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_liveaccountapi
   http_health_check:
     enabled: true
     method: GET
@@ -223,7 +221,6 @@ api-tst1.containerchain.com.liveaccountapi:
       settings: check
 api-tst1.containerchain.com.livecwtapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_livecwtapi
   http_health_check:
     enabled: true
     method: GET
@@ -240,7 +237,6 @@ api-tst1.containerchain.com.livecwtapi:
       settings: check
 api-tst1.containerchain.com.navisapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_navisapi
   http_health_check:
     enabled: true
     method: GET
@@ -257,7 +253,6 @@ api-tst1.containerchain.com.navisapi:
       settings: check
 api-tst1.containerchain.com.navisclient:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_navisclient
   http_health_check:
     enabled: true
     method: GET
@@ -274,7 +269,6 @@ api-tst1.containerchain.com.navisclient:
       settings: check
 api-tst1.containerchain.com.notifications:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_notifications
   http_health_check:
     enabled: true
     method: GET
@@ -291,7 +285,6 @@ api-tst1.containerchain.com.notifications:
       settings: check
 api-tst1.containerchain.com.tripapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: api-tst1_containerchain_com_tripapi
   http_health_check:
     enabled: true
     method: GET
@@ -308,7 +301,6 @@ api-tst1.containerchain.com.tripapi:
       settings: check
 wtg-api-sbox.containerchain.com.driverv2:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_driverv2
   http_health_check:
     enabled: true
     method: GET
@@ -325,7 +317,6 @@ wtg-api-sbox.containerchain.com.driverv2:
       settings: check
 wtg-api-sbox.containerchain.com.integrated:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_integrated
   http_health_check:
     enabled: true
     method: GET
@@ -342,7 +333,6 @@ wtg-api-sbox.containerchain.com.integrated:
       settings: check
 wtg-api-sbox.containerchain.com.live:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_live
   http_health_check:
     enabled: true
     method: GET
@@ -359,7 +349,6 @@ wtg-api-sbox.containerchain.com.live:
       settings: check
 wtg-api-sbox.containerchain.com.liveaccountapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_liveaccountapi
   http_health_check:
     enabled: true
     method: GET
@@ -376,7 +365,6 @@ wtg-api-sbox.containerchain.com.liveaccountapi:
       settings: check
 wtg-api-sbox.containerchain.com.livecwtapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_livecwtapi
   http_health_check:
     enabled: true
     method: GET
@@ -393,7 +381,6 @@ wtg-api-sbox.containerchain.com.livecwtapi:
       settings: check
 wtg-api-sbox.containerchain.com.navisapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_navisapi
   http_health_check:
     enabled: true
     method: GET
@@ -410,7 +397,6 @@ wtg-api-sbox.containerchain.com.navisapi:
       settings: check
 wtg-api-sbox.containerchain.com.navisclient:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_navisclient
   http_health_check:
     enabled: true
     method: GET
@@ -427,7 +413,6 @@ wtg-api-sbox.containerchain.com.navisclient:
       settings: check
 wtg-api-sbox.containerchain.com.notifications:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_notifications
   http_health_check:
     enabled: true
     method: GET
@@ -444,7 +429,6 @@ wtg-api-sbox.containerchain.com.notifications:
       settings: check
 wtg-api-sbox.containerchain.com.tripapi:
   clustered_instances: [au2prodfrontend1tenantservices]
-  backend_name: wtg-api-sbox_containerchain_com_tripapi
   http_health_check:
     enabled: true
     method: GET
