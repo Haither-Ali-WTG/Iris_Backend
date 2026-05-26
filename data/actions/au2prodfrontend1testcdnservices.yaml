@@ -103,7 +103,7 @@ addressvalidation_test_v2_redirect:
   order: 70
   actions:
     - >-
-      redirect code 301 location /geoaddressing%[req.uri,regsub(^/v2(/|$),/)]
+      http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]%[query]
       if addressvalidation-test_wisegrid_net v2_path
 
 https_redirect_mobile_test_cargowise_net:
