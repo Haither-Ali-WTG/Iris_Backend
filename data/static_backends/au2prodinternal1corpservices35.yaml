@@ -1908,6 +1908,34 @@ au2prodinternal1grpcservices.iris-stats.wtg.zone:
       ip: 10.2.83.33
       port: 2038
 
+au2sandinternal1test1.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00416
+      ip: 10.2.136.11
+      port: 8001
+    - name: au2lbl00417
+      ip: 10.2.136.12
+      port: 8001
+
+au2sandinternal1test2.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lbl00416
+      ip: 10.2.136.11
+      port: 8002
+    - name: au2lbl00417
+      ip: 10.2.136.12
+      port: 8002
+
 # end of iris-stats services
 # corp UAT Web services
 svc-wtlbda.wtg.zone:
