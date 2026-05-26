@@ -6,6 +6,7 @@ machines:
       os: ubuntu2404
       dc: US2
       os_variant: ubuntu
+      package_repo_provider: foreman
     us2lbl00385:
       ansible_host: 10.4.64.22
       os: ubuntu2404
@@ -31,6 +32,7 @@ machines:
       os: ubuntu2404
       dc: US2
       os_variant: ubuntu
+      package_repo_provider: foreman
     us2lbl00542:
       ansible_host: 10.4.83.25
       os: ubuntu2404
