@@ -83,6 +83,11 @@ star_k8s_wtg_zone:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?k8s\.wtg\.zone$
 
+star_k8s_sand_wtg_zone:
+  description: "*.k8s.sand.wtg.zone"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?k8s\.sand\.wtg\.zone$
+
 custom_internal_corp_de1prod1_ocp_wtg_ws:
   description: "Custom internal de1prod1 OCP WTG WS hosts"
   tests:
