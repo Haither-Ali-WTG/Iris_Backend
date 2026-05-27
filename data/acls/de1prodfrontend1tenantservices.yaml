@@ -9,41 +9,11 @@ star_customsforce_com:
   tests:
     - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?customsforce\.com$
 
-amazon_customsforce_com:
-  description: "amazon.customsforce.com"
-  tests:
-    - hdr(host) -i amazon.customsforce.com
-
-cargowise_customsforce_com:
-  description: "cargowise.customsforce.com"
-  tests:
-    - hdr(host) -i cargowise.customsforce.com
-
 customsforce_com:
   description: "customsforce.com and www.customsforce.com"
   tests:
     - hdr(host) -i customsforce.com
     - hdr(host) -i www.customsforce.com
-
-lbapi1_customsforce_com:
-  description: "lbapi1.customsforce.com"
-  tests:
-    - hdr(host) -i lbapi1.customsforce.com
-
-move_customsforce_com:
-  description: "move.customsforce.com"
-  tests:
-    - hdr(host) -i move.customsforce.com
-
-viaeurope_customsforce_com:
-  description: "viaeurope.customsforce.com"
-  tests:
-    - hdr(host) -i viaeurope.customsforce.com
-
-test_customsforce_com:
-  description: "test.customsforce.com"
-  tests:
-    - hdr(host) -i test.customsforce.com
 
 star_acoinformatica_it:
   description: "*.acoinformatica.it"
