@@ -893,4 +893,3 @@ v2_path:
   description: "API v2 path for address validation"
   tests:
     - path_reg ^/v2(/|$)
-    
