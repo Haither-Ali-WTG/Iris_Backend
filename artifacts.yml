@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260526.2
-  # Tue May 26 00:01:29 UTC 2026 -- Tue May 26 10:01:29 AEST 2026
+  # Dante Build Artifact 20260527.2
+  # Wed May 27 03:02:19 UTC 2026 -- Wed May 27 13:02:19 AEST 2026
   #
-  # Merge pull request 50740 from dante_artifact_upgrade into master
-  # 5c03c6fb9b71306ef9d3d52ea678536fb353c32b
-  dante_build_id: '1709507'
+  # Merged PR 50837: Parameterize Azure vars and some credentials in shared ansible roles
+  # 68cc0d2a6a2f6cecb30e7ffc88c9a62021017f5a
+  dante_build_id: '1710668'
 
   # virgil 20260527.5
   # Tue May 26 20:46:44 UTC 2026 -- Wed May 27 06:46:44 AEST 2026
