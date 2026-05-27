@@ -77,3 +77,9 @@ star_wtg_zone:
   description: "*.wtg.zone"
   tests:
     - hdr(host) -m reg -i ^([^\.]+\.)?wtg\.zone$
+
+custom_internal_corp_de1prod1_ocp_wtg_ws:
+  description: "Custom internal de1prod1 OCP WTG WS hosts"
+  tests:
+    - hdr(host) -i puremetrics-de.wtg.zone
+    # *.k8s.sand.wtg.zone is already included in backend selection
