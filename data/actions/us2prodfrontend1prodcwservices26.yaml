@@ -105,6 +105,7 @@ custom_url_actions:
     - use_backend www-clrlax_wisegrid_net if { hdr(host),field(1,:) -i tracking.clearfreight.com }
     - use_backend www-ng2prd_wisegrid_net if { hdr(host),field(1,:) -i www.shipgci-webtracker.net }
     - use_backend www-abkprd_wisegrid_net if { hdr(host),field(1,:) -i www.ordertracker.noatummaritime.com }
+    - use_backend www-e54prd_wisegrid_net if { hdr(host),field(1,:) -i xpdconnect.xpdglobal.com }
 
     ### eAdaptor
     - use_backend knapr1services_wisegrid_net if { hdr(host),field(1,:) -i knapr1services2.wisegrid.net }
