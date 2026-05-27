@@ -116,3 +116,20 @@ rdg-us2.wisecloud.zone:
     - name: us2wp-srdg-502
       ip: 10.4.68.202
       port: 80
+
+# custom ingress defintion for ocp (hdr localhost added to meet requirement RFC7230 for HTTP/1.1)
+us2prod1-prodinternalcorp-ingress:
+  clustered_instances: [us2prodinternal1services30]
+  full_override: |
+    backend us2prod1-prodinternalcorp-ingress
+    mode http
+    option httpchk
+    http-check connect port 30200
+    http-check send meth GET uri /healthz/ready ver HTTP/1.1 hdr Host localhost
+    http-check expect status 200
+    balance roundrobin
+    server w1.us2prod1 10.4.237.15:30100 check ssl send-proxy-v2
+    server w2.us2prod1 10.4.237.16:30100 check ssl send-proxy-v2
+    server w3.us2prod1 10.4.237.17:30100 check ssl send-proxy-v2
+    server w4.us2prod1 10.4.237.18:30100 check ssl send-proxy-v2
+    server w5.us2prod1 10.4.237.19:30100 check ssl send-proxy-v2

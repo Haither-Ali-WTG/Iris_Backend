@@ -21,3 +21,11 @@ us2s3_3_primary_backend_selection:
   order: 11
   actions:
     - use_backend us2s3-3-primary if us2s3-3_wtg_ws_and_subdomains
+
+us2prod_ocp_backend_selection:
+  description: |-
+    Backend selection for us2prod OCP internal corp services
+  order: 80
+  actions:
+    - use_backend us2prod1-prodinternalcorp-ingress if custom_internal_corp_us2prod1_ocp_wtg_ws
+    - use_backend us2prod1-prodinternalcorp-ingress if star_k8s_sand_wtg_zone
