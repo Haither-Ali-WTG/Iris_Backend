@@ -513,6 +513,12 @@ au2prodfrontend1testcdnservices:
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-starxttest
 au2prodfrontend1tenantservices:
+  - name: containerchain-com
+    resource_group: UNKNOWN
+    keyvault: kv-wtg-iris-prod
+  - name: star-certconnect-com-au
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-batslwujiv
   - name: star-wisegrid-net
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-starwisegr
