@@ -347,6 +347,8 @@ clustered_instances:
           cms_resource_group: RG-US-Prod
         - name: shipgci-webtracker_net
           cms_resource_group: RG-US-Prod
+        - name: xpdconnect_xpdglobal_com
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023
