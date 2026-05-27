@@ -1,2 +1,43 @@
 ---
-{}
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS for certconnect/containerchain host groups.
+  order: 79
+  actions:
+    - redirect scheme https if certconnect_urls !{ ssl_fc }
+    - redirect scheme https if containerchain_tst1_com !{ ssl_fc }
+    - redirect scheme https if containerchain_sbox_com !{ ssl_fc }
+    - redirect scheme https if containerchain_com !{ ssl_fc }
+    - redirect scheme https if containerchain_tst1_com_au !{ ssl_fc }
+    - redirect scheme https if containerchain_sbox_com_au !{ ssl_fc }
+    - redirect scheme https if containerchain_com_au !{ ssl_fc }
+
+containerchain_backend_selection:
+  description: |-
+    Containerchain path-based backend selection from AU2 haproxy tenantservices.
+  order: 80
+  actions:
+    - use_backend api-tst1_containerchain_com_driverv2 if containerchain_tst1_com is_containerchain_driverv2
+    - use_backend api-tst1_containerchain_com_integrated if containerchain_tst1_com is_containerchain_integrated
+    - use_backend api-tst1_containerchain_com_live if containerchain_tst1_com is_containerchain_live
+    - use_backend api-tst1_containerchain_com_liveaccountapi if containerchain_tst1_com is_containerchain_liveaccountapi
+    - use_backend api-tst1_containerchain_com_livecwtapi if containerchain_tst1_com is_containerchain_livecwtapi
+    - use_backend api-tst1_containerchain_com_navisapi if containerchain_tst1_com is_containerchain_navisapi
+    - >-
+      use_backend api-tst1_containerchain_com_navisclient if containerchain_tst1_com
+      is_containerchain_navisclient
+    - use_backend api-tst1_containerchain_com_notifications if containerchain_tst1_com is_containerchain_notifications
+    - use_backend api-tst1_containerchain_com_tripapi if containerchain_tst1_com is_containerchain_tripapi
+    - use_backend wtg-api-sbox_containerchain_com_driverv2 if containerchain_sbox_com is_containerchain_driverv2
+    - use_backend wtg-api-sbox_containerchain_com_integrated if containerchain_sbox_com is_containerchain_integrated
+    - use_backend wtg-api-sbox_containerchain_com_live if containerchain_sbox_com is_containerchain_live
+    - >-
+      use_backend wtg-api-sbox_containerchain_com_liveaccountapi if containerchain_sbox_com
+      is_containerchain_liveaccountapi
+    - use_backend wtg-api-sbox_containerchain_com_livecwtapi if containerchain_sbox_com is_containerchain_livecwtapi
+    - use_backend wtg-api-sbox_containerchain_com_navisapi if containerchain_sbox_com is_containerchain_navisapi
+    - use_backend wtg-api-sbox_containerchain_com_navisclient if containerchain_sbox_com is_containerchain_navisclient
+    - >-
+      use_backend wtg-api-sbox_containerchain_com_notifications if containerchain_sbox_com
+      is_containerchain_notifications
+    - use_backend wtg-api-sbox_containerchain_com_tripapi if containerchain_sbox_com is_containerchain_tripapi
