@@ -62,6 +62,7 @@ clustered_instances:
             - 1156   # BR1 - Aduanalog
             - 1157   # BR1 - Multicargo
             - 1158   # BR1 - Orttsa
+            - 1159   # USG - Envase Compcare Mobile
             - 4362   # US2 Test SQL Cluster 401
             - 4363   # US2 Test SQL Cluster 402
             - 4364   # US2 Test SQL Cluster 403

@@ -957,3 +957,12 @@ us9-us2us9sqlw003i4:
     - name: us2us9sqlw003i4
       ip: 10.4.166.32
       port: 1433
+
+usg-compcare-mobile-sql:
+  clustered_instances: [us2prodfrontend1sqltcp9]
+  http_health_check:
+    enabled: false
+  servers:
+    - name: cc-sqlclst-04
+      ip: 10.4.214.17
+      port: 1433

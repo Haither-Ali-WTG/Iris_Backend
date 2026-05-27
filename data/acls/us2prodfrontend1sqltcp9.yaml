@@ -31,6 +31,11 @@ us9_sql_dst_port:
   tests:
     - dst_port 25009
 
+usg_compcare_mobile_sql_dst_port:
+  description: Destination port for USG Compcare Mobile SQL servers
+  tests:
+    - dst_port 1159
+
 us9_edi_src:
   description: List of IP addresses allowed to access 147.189.35.136:24999
   tests:
@@ -84,3 +89,11 @@ us9_sql_src:
   description: List of IP addresses allowed to access 147.189.35.136:25009
   tests:
     - src 63.76.80.35
+
+usg_compcare_mobile_sql_src:
+  description: List of IP addresses allowed to access USG Compcare Mobile SQL
+  tests:
+    - src 75.56.173.1
+    - src 75.56.173.2
+    - src 75.56.173.7
+    - src 65.141.7.42
