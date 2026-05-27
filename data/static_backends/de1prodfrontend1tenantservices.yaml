@@ -195,6 +195,111 @@ ntraxio.aktivdata.fi:
       ip: 10.3.232.16
       port: 29525
 
+amazon.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw005
+      ip: 10.3.163.72
+      port: 443
+      settings: check ssl
+
+cargowise.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw002
+      ip: 10.3.163.8
+      port: 443
+      settings: check ssl
+
+customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw002
+      ip: 10.3.163.8
+      port: 443
+      settings: check ssl
+
+lbapi1.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw004
+      ip: 10.3.163.71
+      port: 443
+      settings: check ssl
+
+move.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw002
+      ip: 10.3.163.8
+      port: 443
+      settings: check ssl
+
+viaeurope.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw001
+      ip: 10.3.163.7
+      port: 443
+      settings: check ssl
+
+test.customsforce.com:
+  clustered_instances: [de1prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    http_path: /
+  cookie:
+    name: IE1
+    secure: true
+  encryption: true
+  servers:
+    - name: de1ie1webw002
+      ip: 10.3.163.8
+      port: 443
+      settings: check ssl
+
 xedi1.acoinformatica.it:
   clustered_instances: [de1prodfrontend1tenantservices]
   http_health_check:
