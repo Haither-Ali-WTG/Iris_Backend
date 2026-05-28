@@ -14,9 +14,9 @@ variables:
   # 4189cad8de7d940e1a29065f8296d8994bb936bb
   virgil_build_id: '1711714'
 
-  # sqlbilling 20260528.2
-  # Thu May 28 02:12:05 UTC 2026 -- Thu May 28 12:12:05 AEST 2026
+  # sqlbilling 20260528.4
+  # Thu May 28 13:34:55 UTC 2026 -- Thu May 28 23:34:55 AEST 2026
   #
-  # Merged PR 50888: Update DNS readonly
-  # 8c2350464af968f1042f5166bcde1f6c357c4786
-  sqlbilling_build_id: '1711570'
+  # Merged PR 50928: SQLBilling-Add-CS02351189.yml
+  # 287d11b0c54f64809ae61af9a50a1353bbc5da5d
+  sqlbilling_build_id: '1712083'
