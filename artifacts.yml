@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260527.2
-  # Wed May 27 03:02:19 UTC 2026 -- Wed May 27 13:02:19 AEST 2026
+  # Dante Build Artifact 20260528.2
+  # Thu May 28 06:01:11 UTC 2026 -- Thu May 28 16:01:11 AEST 2026
   #
-  # Merged PR 50837: Parameterize Azure vars and some credentials in shared ansible roles
-  # 68cc0d2a6a2f6cecb30e7ffc88c9a62021017f5a
-  dante_build_id: '1710668'
+  # Merge pull request 50910 from dante_artifact_upgrade into master
+  # 55cbefe6e008c2682229ae0e5aeae60ee5c359ed
+  dante_build_id: '1711776'
 
-  # virgil 20260527.5
-  # Tue May 26 20:46:44 UTC 2026 -- Wed May 27 06:46:44 AEST 2026
+  # virgil 20260528.3
+  # Thu May 28 05:00:29 UTC 2026 -- Thu May 28 15:00:29 AEST 2026
   #
-  # Merged PR 50797: Add 8 new OCP boxes for US2, attempt 2
-  # a4994c91462c976d741e9bec7c4cf15076f7a2f9
-  virgil_build_id: '1710336'
+  # Merged PR 50908: update-vrr-unique-ip-apex57_58
+  # 4189cad8de7d940e1a29065f8296d8994bb936bb
+  virgil_build_id: '1711714'
 
-  # sqlbilling 20260527.2
-  # Wed May 27 09:44:05 UTC 2026 -- Wed May 27 19:44:05 AEST 2026
+  # sqlbilling 20260528.2
+  # Thu May 28 02:12:05 UTC 2026 -- Thu May 28 12:12:05 AEST 2026
   #
-  # Merged PR 50865: SQLBilling-Add-CS02351493-CS02351189-CS02351563.yml
-  # f1a062d4b99375edd2b4c8b0f922e41f7bb9442a
-  sqlbilling_build_id: '1710954'
+  # Merged PR 50888: Update DNS readonly
+  # 8c2350464af968f1042f5166bcde1f6c357c4786
+  sqlbilling_build_id: '1711570'
