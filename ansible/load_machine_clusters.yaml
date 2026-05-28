@@ -5,6 +5,10 @@
   gather_facts: no
   force_handlers: yes
   tasks:
+    - name: Print iris_data_dir
+      debug:
+        msg: "iris_data_dir is {{ iris_data_dir }}"
+
     - name: Load machine clusters
       vars:
         content: >-
