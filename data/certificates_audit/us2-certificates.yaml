@@ -239,6 +239,9 @@ us2prodfrontend1prodcwservices26:
   - name: www_rktrac_com
     resource_group: RG-US-Prod
     keyvault: wtg-prod-us-hrrabdjmgm
+  - name: xpdconnect_xpdglobal_com
+    resource_group: RG-US-Prod
+    keyvault: wtg-prod-us-xpdconnect
 us2prodfrontend1testcwservices27:
   - name: ahwprd_webtracker_carozplus_com
     resource_group: RG-AU-Prod
