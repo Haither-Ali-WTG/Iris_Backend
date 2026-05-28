@@ -127,7 +127,7 @@ stages:
                   E2OPEN)
                     emit_dc E2OPEN \
                       simulation_label=E2OPEN \
-                      simulation_dc=DE1 \
+                      simulation_dc=e2open-ham \
                       data_root=iris/e2open/data \
                       s3_host=de1s3-2.wtg.ws \
                       s3_iris_bucket=s3://de-iscore-iris-prod-1/ \
