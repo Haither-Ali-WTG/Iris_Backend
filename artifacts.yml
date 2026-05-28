@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260528.2
-  # Thu May 28 06:01:11 UTC 2026 -- Thu May 28 16:01:11 AEST 2026
+  # Dante Build Artifact 20260529.1
+  # Thu May 28 22:53:11 UTC 2026 -- Fri May 29 08:53:11 AEST 2026
   #
-  # Merge pull request 50910 from dante_artifact_upgrade into master
-  # 55cbefe6e008c2682229ae0e5aeae60ee5c359ed
-  dante_build_id: '1711776'
+  # Merged PR 50853: added conntrack to support mercury deploy pipelines
+  # 113f632b8645bf3df80ddecf237a7791f98ae7a2
+  dante_build_id: '1712403'
 
   # virgil 20260528.3
   # Thu May 28 05:00:29 UTC 2026 -- Thu May 28 15:00:29 AEST 2026
