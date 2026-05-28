@@ -6,7 +6,7 @@ wca_denied_actions:
   actions:
     - http-request deny if !wtg_src wca_denied_paths wca_prod_url
 
-addressvalidation-us2_v2_redirect:
+addressvalidation_us2_v2_redirect:
   description: |-
     Redirect /v2/ requests to /geoaddressing/ for addressvalidation-us2 service
   order: 70
