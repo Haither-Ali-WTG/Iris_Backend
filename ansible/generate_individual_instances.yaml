@@ -50,7 +50,7 @@
         certificates: >-
           {{ (lookup(
             'file',
-            playbook_dir ~ '/../data/certificates_audit/'
+            iris_data_dir ~ '/certificates_audit/'
             ~ clustered_instance.dc | lower ~ '-certificates.yaml',
             errors='ignore'
           )

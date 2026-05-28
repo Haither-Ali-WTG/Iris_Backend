@@ -8,7 +8,7 @@
         host_list: "{{ specific_host.split(',') }}"
         cluster_servers: "{{ machine_cluster_info[cluster_name]['machines'].keys() | list }}"
       vars:
-        machine_cluster_info: "{{ lookup('file', '../../data/machine_clusters/' + dc.lower() + '.yaml') | from_yaml }}"
+        machine_cluster_info: "{{ lookup('file', iris_data_dir ~ '/machine_clusters/' ~ dc.lower() ~ '.yaml') | from_yaml }}"
 
     - name: No server needs to rebuild in this cluster
       meta: end_play

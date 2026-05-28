@@ -9,7 +9,7 @@
       vars:
         fname: common.yaml
         read: >-
-          {{ lookup('file', '../data/actions/' + fname) | from_yaml }}
+          {{ lookup('file', iris_data_dir ~ '/actions/' ~ fname) | from_yaml }}
         labelled: >-
           {{
             read.keys()
@@ -24,7 +24,7 @@
       vars:
         fname: "{{ inventory_hostname }}.yaml"
         read: >-
-          {{ lookup('file', '../data/actions/' + fname) | from_yaml }}
+          {{ lookup('file', iris_data_dir ~ '/actions/' ~ fname) | from_yaml }}
         labelled: >-
           {{
             read.keys()

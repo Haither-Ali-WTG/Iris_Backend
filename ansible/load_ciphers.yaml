@@ -6,4 +6,4 @@
     - name: Load cipher profiles
       set_fact:
         cipher_profiles: >-
-          {{ lookup('file', '../data/ciphers/cipher_profiles.yml') | from_yaml }}
+          {{ lookup('file', iris_data_dir ~ '/ciphers/cipher_profiles.yml') | from_yaml }}

@@ -4,7 +4,7 @@ import yaml
 from typing import Dict, List, Optional
 
 
-def read_audit_certs(playbook_dir: str, target_dc: Optional[str] = None) -> List[Dict[str, str]]:
+def read_audit_certs(iris_data_dir: str, target_dc: Optional[str] = None) -> List[Dict[str, str]]:
     """
     Reads the certificates_audit YAML files for the given target_dc (or all of them)
     and aggregates/deduplicates all certificates.
@@ -13,7 +13,7 @@ def read_audit_certs(playbook_dir: str, target_dc: Optional[str] = None) -> List
     [{'name': str, 'key_vault_name': str}]
     """
     certs_dict = {}
-    audit_dir = os.path.normpath(os.path.join(playbook_dir, '../data/certificates_audit'))
+    audit_dir = os.path.normpath(os.path.join(iris_data_dir, 'certificates_audit'))
     
     if target_dc:
         files = [os.path.join(audit_dir, f"{target_dc.lower()}-certificates.yaml")]
