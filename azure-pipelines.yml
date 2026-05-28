@@ -446,7 +446,7 @@ stages:
                 -u $(user) --diff
                 -e="azure_kv_name=$(azure_kv_name)"
                 -e="build_id=$(Build.BuildId)$(System.JobAttempt)"
-                -e="target_dc=$(simulation_dc)" \
+                -e="target_dc=$(simulation_dc)"
                 -e="iris_data_dir=$(Build.SourcesDirectory)/$(data_root)"
                 -e "{simulation: true}"
             env:
