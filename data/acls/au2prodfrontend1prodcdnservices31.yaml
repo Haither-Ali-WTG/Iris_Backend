@@ -888,3 +888,13 @@ www_cms_wisetechacademy_com:
   description: "www.cms.wisetechacademy.com"
   tests:
     - hdr(host),field(1,:) -i www.cms.wisetechacademy.com
+
+addressvalidation_wisegrid_net:
+  description: "addressvalidation.wisegrid.net address validation service"
+  tests:
+    - hdr(host),field(1,:) -i addressvalidation.wisegrid.net
+
+v2_path:
+  description: "API v2 path for address validation"
+  tests:
+    - path_reg ^/v2(/|$)

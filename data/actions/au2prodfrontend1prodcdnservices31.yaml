@@ -223,6 +223,15 @@ access_control_deny:
     - http-request deny if !wtg_src admin_denied_path www_inobiz_se
     - http-request deny if !wtg_src umbraco_denied_path e2open_com_urls
 
+addressvalidation_v2_redirect:
+  description: |-
+    Redirect /v2/ requests to /geoaddressing/ for addressvalidation service
+  order: 70
+  actions:
+    - >-
+      http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]%[query]
+      if addressvalidation_wisegrid_net v2_path
+
 external_service_redirects:
   description: |-
     Redirects to external authentication and service endpoints
