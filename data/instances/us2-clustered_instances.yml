@@ -123,7 +123,7 @@ clustered_instances:
             - 25009  # US9 Prod SQL server
         proxy_ports:
           plaintext:
-            - 1159   # USG - Envase Compcare Mobile (via Cloudflare Spectrum)
+            - 1501   # USG - Envase Compcare Mobile (via Cloudflare Spectrum)
       iis_servers: []
       certificates: []
       sqlbilling_acl:
