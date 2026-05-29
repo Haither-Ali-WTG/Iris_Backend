@@ -62,7 +62,6 @@ clustered_instances:
             - 1156   # BR1 - Aduanalog
             - 1157   # BR1 - Multicargo
             - 1158   # BR1 - Orttsa
-            - 1159   # USG - Envase Compcare Mobile
             - 4362   # US2 Test SQL Cluster 401
             - 4363   # US2 Test SQL Cluster 402
             - 4364   # US2 Test SQL Cluster 403
@@ -122,6 +121,9 @@ clustered_instances:
             - 4452   # US2 Prod SQL Cluster 439
             - 24999  # US9 EDI server
             - 25009  # US9 Prod SQL server
+        proxy_ports:
+          plaintext:
+            - 1501   # USG - Envase Compcare Mobile (via Cloudflare Spectrum)
       iis_servers: []
       certificates: []
       sqlbilling_acl:
