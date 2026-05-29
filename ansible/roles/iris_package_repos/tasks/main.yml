@@ -12,6 +12,7 @@
     dest: /etc/apt/sources.list
     mode: u=rw,go=r
   become: yes
+  register: sources_list_result
 
 - name: Delete legacy APT source list files
   file:
@@ -45,3 +46,10 @@
       url: https://packages.wisetechglobal.com/pulp/content/Wisetech_Global/Library/custom/Microsoft/{{ os }}
       distribution: "{{ os_codename[os] }}"
       components: main
+  register: sources_list_d_result
+
+- name: Refresh apt cache after repo changes
+  apt:
+    update_cache: yes
+  become: yes
+  when: sources_list_result.changed or sources_list_d_result.changed
