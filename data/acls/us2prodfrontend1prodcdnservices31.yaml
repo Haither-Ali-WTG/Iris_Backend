@@ -748,3 +748,13 @@ e2open_com_urls:
   description: "e2open.com and www.e2open.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
+
+addressvalidation-us2_wisegrid_net:
+  description: "addressvalidation-us2.wisegrid.net address validation service"
+  tests:
+    - hdr(host),field(1,:) -i addressvalidation-us2.wisegrid.net
+
+v2_path:
+  description: "API v2 path for address validation"
+  tests:
+    - path_reg ^/v2(/|$)

@@ -6,6 +6,15 @@ wca_denied_actions:
   actions:
     - http-request deny if !wtg_src wca_denied_paths wca_prod_url
 
+addressvalidation_us2_v2_redirect:
+  description: |-
+    Redirect /v2/ requests to /geoaddressing/ for addressvalidation-us2 service
+  order: 70
+  actions:
+    - >-
+      http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]%[query]
+      if addressvalidation-us2_wisegrid_net v2_path
+
 wtg_idp_redirect:
   description: |-
     Redirect requests to the Wisetech IDP to the /login path
