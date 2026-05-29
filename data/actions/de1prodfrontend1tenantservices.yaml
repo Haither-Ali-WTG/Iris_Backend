@@ -13,13 +13,15 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_aktivdata_fi !{ ssl_fc }
+    - redirect scheme https if star_customsforce_com !{ ssl_fc }
     - redirect scheme https if star_acoinformatica_it !{ ssl_fc }
 
-acoinformatica_backend_selection:
+tenantservices_backend_selection:
   description: |-
-    Acoinformatica-specific backend selection.
+    Tenantservices-specific backend selection.
   order: 80
   actions:
+    - use_backend customsforce_com              if customsforce_com
     - use_backend rdg_acoinformatica_it         if rdg_acoinformatica_it
     - use_backend rdg2_acoinformatica_it        if rdg2_acoinformatica_it
     - use_backend xedi1_acoinformatica_it       if xedi1_acoinformatica_it
