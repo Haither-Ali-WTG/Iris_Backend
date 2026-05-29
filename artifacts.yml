@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260529.1
-  # Thu May 28 22:53:11 UTC 2026 -- Fri May 29 08:53:11 AEST 2026
+  # Dante Build Artifact 20260529.3
+  # Fri May 29 01:41:03 UTC 2026 -- Fri May 29 11:41:03 AEST 2026
   #
-  # Merged PR 50853: added conntrack to support mercury deploy pipelines
-  # 113f632b8645bf3df80ddecf237a7791f98ae7a2
-  dante_build_id: '1712403'
+  # Merge pull request 50959 from dante_artifact_upgrade into master
+  # ffd53b3b671e274dfd50d6bb6b752a341dd80d19
+  dante_build_id: '1712612'
 
-  # virgil 20260528.3
-  # Thu May 28 05:00:29 UTC 2026 -- Thu May 28 15:00:29 AEST 2026
+  # virgil 20260529.11
+  # Fri May 29 01:58:47 UTC 2026 -- Fri May 29 11:58:47 AEST 2026
   #
-  # Merged PR 50908: update-vrr-unique-ip-apex57_58
-  # 4189cad8de7d940e1a29065f8296d8994bb936bb
-  virgil_build_id: '1711714'
+  # Merged PR 50987: updated the remainder of q1 broker machines to be on demand and ubuntu2404 to...
+  # 92a332fe592947dbd942f275b79e10d2f1e50517
+  virgil_build_id: '1712631'
 
   # sqlbilling 20260528.4
   # Thu May 28 13:34:55 UTC 2026 -- Thu May 28 23:34:55 AEST 2026
