@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260529.3
-  # Fri May 29 01:41:03 UTC 2026 -- Fri May 29 11:41:03 AEST 2026
+  # Dante Build Artifact 20260529.5
+  # Fri May 29 07:00:44 UTC 2026 -- Fri May 29 17:00:44 AEST 2026
   #
-  # Merge pull request 50959 from dante_artifact_upgrade into master
-  # ffd53b3b671e274dfd50d6bb6b752a341dd80d19
-  dante_build_id: '1712612'
+  # Merge pull request 51018 from dante_artifact_upgrade into master
+  # 68e84dbe837fcb30022bc518116fd3bd1e52924f
+  dante_build_id: '1712927'
 
-  # virgil 20260529.11
-  # Fri May 29 01:58:47 UTC 2026 -- Fri May 29 11:58:47 AEST 2026
+  # virgil 20260529.15
+  # Fri May 29 06:02:18 UTC 2026 -- Fri May 29 16:02:18 AEST 2026
   #
-  # Merged PR 50987: updated the remainder of q1 broker machines to be on demand and ubuntu2404 to...
-  # 92a332fe592947dbd942f275b79e10d2f1e50517
-  virgil_build_id: '1712631'
+  # Merged PR 51017: add vlan 1031 to US DAT switches
+  # 20368730da58fcd7dbc2d2434bc4934e63e7c806
+  virgil_build_id: '1712866'
 
-  # sqlbilling 20260528.4
-  # Thu May 28 13:34:55 UTC 2026 -- Thu May 28 23:34:55 AEST 2026
+  # sqlbilling 20260529.2
+  # Fri May 29 08:56:10 UTC 2026 -- Fri May 29 18:56:10 AEST 2026
   #
-  # Merged PR 50928: SQLBilling-Add-CS02351189.yml
-  # 287d11b0c54f64809ae61af9a50a1353bbc5da5d
-  sqlbilling_build_id: '1712083'
+  # Merged PR 51032: LSL-CS02354936 - SQL Billing
+  # 4ee8275f1c6d95f7fef0dd858782ba7fa7faf7f7
+  sqlbilling_build_id: '1713019'
