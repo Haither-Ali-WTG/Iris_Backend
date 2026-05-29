@@ -323,6 +323,9 @@ de1prodfrontend1tenantservices:
   - name: star-aktivdata-fi
     resource_group: RG-EU-Prod
     keyvault: wtg-prod-eu-staraktivd
+  - name: star-customsforce-com
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-starcustom
 de1sandinternal1services:
   - name: star-sand-wtg-zone
     resource_group: RG-AU-Sand
