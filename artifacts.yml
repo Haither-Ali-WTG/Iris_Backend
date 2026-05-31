@@ -7,12 +7,12 @@ variables:
   # 68e84dbe837fcb30022bc518116fd3bd1e52924f
   dante_build_id: '1712927'
 
-  # virgil 20260529.15
-  # Fri May 29 06:02:18 UTC 2026 -- Fri May 29 16:02:18 AEST 2026
+  # virgil 20260601.1
+  # Sun May 31 21:46:40 UTC 2026 -- Mon Jun  1 07:46:40 AEST 2026
   #
-  # Merged PR 51017: add vlan 1031 to US DAT switches
-  # 20368730da58fcd7dbc2d2434bc4934e63e7c806
-  virgil_build_id: '1712866'
+  # Merged PR 51036: DE1-Added-ESX-Nodes
+  # 828198abb4370c8241f79b4e5c2eff69b13a048a
+  virgil_build_id: '1715024'
 
   # sqlbilling 20260529.2
   # Fri May 29 08:56:10 UTC 2026 -- Fri May 29 18:56:10 AEST 2026
