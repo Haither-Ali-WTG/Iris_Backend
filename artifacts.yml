@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260601.1
-  # Sun May 31 22:41:17 UTC 2026 -- Mon Jun  1 08:41:17 AEST 2026
+  # Dante Build Artifact 20260601.2
+  # Mon Jun  1 02:02:47 UTC 2026 -- Mon Jun  1 12:02:47 AEST 2026
   #
-  # Merge pull request 51064 from dante_artifact_upgrade into master
-  # 02c0d4a15a1f519d4c8b386ef7813e89b1529f63
-  dante_build_id: '1715077'
+  # Merged PR 51088: fix(ghe-runner): upgrade to 2.334.0 and switch to digest pinning
+  # 5f626450bcfc014d99b9d67b1b4e905e4008122a
+  dante_build_id: '1715271'
 
   # virgil 20260601.1
   # Sun May 31 21:46:40 UTC 2026 -- Mon Jun  1 07:46:40 AEST 2026
