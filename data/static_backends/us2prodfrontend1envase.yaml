@@ -6,8 +6,7 @@ as2.gtgs.net:
     name: GTGA2N
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-a2n
       ip: 10.4.218.115
@@ -20,8 +19,7 @@ abi.gtgs.net:
     name: GTGABI
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-abi
       ip: 10.4.218.89
@@ -34,8 +32,7 @@ abidatnet.gtgs.net:
     name: GTGABIDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-abidatnet
       ip: 10.4.218.35
@@ -48,8 +45,7 @@ abigartest.gtgs.net:
     name: GTGABIGARTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-abigartest
       ip: 10.4.218.10
@@ -62,8 +58,7 @@ abitabnetdev.gtgs.net:
     name: GTGABITABNETDEV
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-abitabnetdev
       ip: 10.4.218.20
@@ -76,8 +71,7 @@ pathou.gtgs.net:
     name: GTGACCTPATRIOT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-acctpatriot
       ip: 10.4.218.70
@@ -90,8 +84,7 @@ alpont.gtgs.net:
     name: GTGALPONT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-alpont
       ip: 10.4.218.71
@@ -104,8 +97,7 @@ alpontdatnet.gtgs.net:
     name: GTGALPONTDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-alpontdatnet
       ip: 10.4.218.36
@@ -118,8 +110,7 @@ apldatnetact.gtgs.net:
     name: GTGAPLDATNETACT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-apldatnetact
       ip: 10.4.218.54
@@ -132,8 +123,7 @@ apldatnetvat.gtgs.net:
     name: GTGAPLDATNETVAT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-apldatnetvat
       ip: 10.4.218.55
@@ -146,8 +136,7 @@ aplimstest.gtgs.net:
     name: GTGAPLMSTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-aplimstest
       ip: 10.4.218.16
@@ -160,8 +149,7 @@ apllmex.gtgs.net:
     name: GTGAPLMEX
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-aplmex
       ip: 10.4.218.138
@@ -174,8 +162,7 @@ apllmexdatnet.gtgs.net:
     name: GTGAPLMEXDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-aplmexdatnet
       ip: 10.4.218.139
@@ -188,8 +175,7 @@ apllmextest.gtgs.net:
     name: GTGAPLMEXTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-aplmextest
       ip: 10.4.218.140
@@ -202,8 +188,7 @@ avims.gtgs.net:
     name: GTGAVIMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-avims
       ip: 10.4.218.103
@@ -216,8 +201,7 @@ avimsdatnet.gtgs.net:
     name: GTGAVIMSDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-avimsdatnet
       ip: 10.4.218.104
@@ -230,8 +214,7 @@ avtestdms.gtgs.net:
     name: GTGAVTESTDMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-avtestdms
       ip: 10.4.218.21
@@ -244,8 +227,7 @@ celtic.gtgs.net:
     name: GTGCELTIC
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-celtic
       ip: 10.4.218.90
@@ -258,8 +240,7 @@ celticdatnet.gtgs.net:
     name: GTGCELTICDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-celticdatnet
       ip: 10.4.218.37
@@ -272,8 +253,7 @@ cglsan.gtgs.net:
     name: GTGCGLSAN
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cglsan
       ip: 10.4.218.87
@@ -286,8 +266,7 @@ cglsan-dr.gtgs.net:
     name: GTGCGLSANDR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cglsan-dr
       ip: 10.4.218.88
@@ -300,8 +279,7 @@ chicic.gtgs.net:
     name: GTGCHICIC
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-chicic
       ip: 10.4.218.105
@@ -314,8 +292,7 @@ chicictest.gtgs.net:
     name: GTGCHICICTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-chicictest
       ip: 10.4.218.12
@@ -328,8 +305,7 @@ chidatnet.gtgs.net:
     name: GTGCHIDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-chidatnet
       ip: 10.4.218.106
@@ -342,8 +318,7 @@ ckchitest.gtgs.net:
     name: GTGCKCHITEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ckchitest
       ip: 10.4.218.9
@@ -356,8 +331,7 @@ ckmultitest.gtgs.net:
     name: GTGCKMULTITEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ckmultitest
       ip: 10.4.218.24
@@ -370,8 +344,7 @@ ckpacwil.gtgs.net:
     name: GTGCKPACWIL
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ckpacwil
       ip: 10.4.218.121
@@ -384,8 +357,7 @@ ckpacwildatnet.gtgs.net:
     name: GTGCKPACWILDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ckpacwildatnet
       ip: 10.4.218.122
@@ -398,8 +370,7 @@ ckterminaldatnet.gtgs.net:
     name: GTGCKTERMINALDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ckterminaldatnet
       ip: 10.4.218.123
@@ -412,8 +383,7 @@ cktraining.gtgs.net:
     name: GTGCKTRAINING
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cktraining
       ip: 10.4.218.9
@@ -426,8 +396,7 @@ cktrucking.gtgs.net:
     name: GTGCKTRUCKING
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cktrucking
       ip: 10.4.218.124
@@ -440,8 +409,7 @@ cofchol.gtgs.net:
     name: GTGCOFCHOL
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cofchol
       ip: 10.4.218.133
@@ -454,8 +422,7 @@ cofcholtest.gtgs.net:
     name: GTGCOFCHOLTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cofcholtest
       ip: 10.4.218.15
@@ -468,8 +435,7 @@ cofcmx.gtgs.net:
     name: GTGCOFCMX
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cofcmx
       ip: 10.4.218.56
@@ -482,8 +448,7 @@ cofcmxdatnet.gtgs.net:
     name: GTGCOFCMXDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-cofcmxdatnet
       ip: 10.4.218.38
@@ -496,8 +461,7 @@ contest.gtgs.net:
     name: GTGCONTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-contest
       ip: 10.4.218.23
@@ -510,8 +474,7 @@ continuum.gtgs.net:
     name: GTGCONTINUUM
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-continuum
       ip: 10.4.218.107
@@ -524,8 +487,7 @@ continuumdatnet.gtgs.net:
     name: GTGCONTINUUMDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-continuumdatnet
       ip: 10.4.218.108
@@ -538,8 +500,7 @@ continuumdatnetbi.gtgs.net:
     name: GTGCONTINUUMDATNETBI
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-continuumdatnetbi
       ip: 10.4.218.57
@@ -552,8 +513,7 @@ laserdatnet.gtgs.net:
     name: GTGCREPLLASERNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-crepllasernet
       ip: 10.4.218.39
@@ -566,8 +526,7 @@ sunrisedatnet.gtgs.net:
     name: GTGCREPLSUNRISE
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-creplsunrise
       ip: 10.4.218.40
@@ -580,8 +539,7 @@ gtgdatnet.gtgs.net:
     name: GTGDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-datnet
       ip: 10.4.218.41
@@ -594,8 +552,7 @@ datnetdev.gtgs.net:
     name: GTGDATNETDEV
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-datnetdev
       ip: 10.4.218.42
@@ -608,8 +565,7 @@ demorms.gtgs.net:
     name: GTGDEMORMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-demorms
       ip: 10.4.218.58
@@ -622,8 +578,7 @@ draydemo.gtgs.net:
     name: GTGDRAYDEMO
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-draydemo
       ip: 10.4.218.72
@@ -636,8 +591,7 @@ edgmontest.gtgs.net:
     name: GTGEDGMONTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-edgmontest
       ip: 10.4.218.8
@@ -650,8 +604,7 @@ edi.gtgs.net:
     name: GTGEDI
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-edi
       ip: 10.4.218.126
@@ -664,8 +617,7 @@ excargocust.gtgs.net:
     name: GTGEXCARGO
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-excargo
       ip: 10.4.218.91
@@ -678,8 +630,7 @@ excargodatanet.gtgs.net:
     name: GTGEXCARGODATANET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-excargodatanet
       ip: 10.4.218.59
@@ -692,8 +643,7 @@ excargotest.gtgs.net:
     name: GTGEXCARGOTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-excargotest
       ip: 10.4.218.6
@@ -706,8 +656,7 @@ galaxy.gtgs.net:
     name: GTGGALAXY
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-galaxy
       ip: 10.4.218.73
@@ -720,8 +669,7 @@ galaxydatnet.gtgs.net:
     name: GTGGALAXYDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-galaxydatnet
       ip: 10.4.218.33
@@ -734,8 +682,7 @@ genesis-dr.gtgs.net:
     name: GTGGENESISDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-genesisdatnet
       ip: 10.4.218.44
@@ -748,8 +695,7 @@ gtgtech.gtgs.net:
     name: GTGGTGTECH
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-gtgtech
       ip: 10.4.218.74
@@ -762,8 +708,7 @@ iqims.gtgs.net:
     name: GTGIQIMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-iqims
       ip: 10.4.218.92
@@ -776,8 +721,7 @@ iqimsdatnet.gtgs.net:
     name: GTGIQIMSDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-iqimsdatnet
       ip: 10.4.218.45
@@ -790,8 +734,7 @@ isc.gtgs.net:
     name: GTGISC
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-isc
       ip: 10.4.218.93
@@ -804,8 +747,7 @@ iscas2.gtgs.net:
     name: GTGISCAS2
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-iscas2
       ip: 10.4.218.127
@@ -818,8 +760,7 @@ iscdatnet.gtgs.net:
     name: GTGISCDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-iscdatnet
       ip: 10.4.218.60
@@ -832,8 +773,7 @@ ivvedatnet.gtgs.net:
     name: GTGIVVEDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ivvedatnet
       ip: 10.4.218.29
@@ -846,8 +786,7 @@ ivvetrans.gtgs.net:
     name: GTGIVVETRANS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ivvetrans
       ip: 10.4.218.75
@@ -860,8 +799,7 @@ jettrans.gtgs.net:
     name: GTGJETTRANS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-jettrans
       ip: 10.4.218.26
@@ -874,8 +812,7 @@ jettransport.gtgs.net:
     name: GTGJETTRANSPORT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-jettransport
       ip: 10.4.218.61
@@ -888,8 +825,7 @@ knightimccent.gtgs.net:
     name: GTGKNIGHTIMCCENT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-knightimccent
       ip: 10.4.218.62
@@ -902,8 +838,7 @@ knighttranstest.gtgs.net:
     name: GTGKNIGHTTRANSTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-knighttranstest
       ip: 10.4.218.25
@@ -916,8 +851,7 @@ lasernet.gtgs.net:
     name: GTGLASERNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-lasernet
       ip: 10.4.218.94
@@ -930,8 +864,7 @@ lee.gtgs.net:
     name: GTGLEE
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-lee
       ip: 10.4.218.76
@@ -944,8 +877,7 @@ leedatnet.gtgs.net:
     name: GTGLEEDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-leedatnet
       ip: 10.4.218.27
@@ -958,8 +890,7 @@ manabb.gtgs.net:
     name: GTGMANABB
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-manabb
       ip: 10.4.218.134
@@ -972,8 +903,7 @@ mantestabb.gtgs.net:
     name: GTGMANTESTABB
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-mantestabb
       ip: 10.4.218.19
@@ -986,8 +916,7 @@ mcfawhse.gtgs.net:
     name: GTGMCFAWHSE
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-mcfawhse
       ip: 10.4.218.77
@@ -1000,8 +929,7 @@ mcfawhse-dr.gtgs.net:
     name: GTGMCFAWHSEDR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-mcfawhse-dr
       ip: 10.4.218.63
@@ -1014,8 +942,7 @@ mq.gtgs.net:
     name: GTGMQCONNECT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-mqconnect
       ip: 10.4.218.135
@@ -1028,8 +955,7 @@ nfi.gtgs.net:
     name: GTGNFI
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-nfi
       ip: 10.4.218.129
@@ -1042,8 +968,7 @@ nficanadatest.gtgs.net:
     name: GTGNFICANADATEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-nficanadatest
       ip: 10.4.218.11
@@ -1056,8 +981,7 @@ nficandatnet.gtgs.net:
     name: GTGNFICANDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-nficandatnet
       ip: 10.4.218.109
@@ -1070,8 +994,7 @@ ocs.gtgs.net:
     name: GTGOCS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-ocs
       ip: 10.4.218.14
@@ -1084,8 +1007,7 @@ pacificcascade.gtgs.net:
     name: GTGPACIFICCASCADE
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-pacificcascade
       ip: 10.4.218.95
@@ -1098,8 +1020,7 @@ patriotdatnet.gtgs.net:
     name: GTGPATRIOTDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-patriotdatnet
       ip: 10.4.218.32
@@ -1112,8 +1033,7 @@ pbielk.gtgs.net:
     name: GTGPBIELK
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-pbielk
       ip: 10.4.218.110
@@ -1126,8 +1046,7 @@ pbielkdatnet.gtgs.net:
     name: GTGPBIELKDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-pbielkdatnet
       ip: 10.4.218.111
@@ -1140,8 +1059,7 @@ persan.gtgs.net:
     name: GTGPERSAN
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-persan
       ip: 10.4.218.78
@@ -1154,8 +1072,7 @@ persandatnet.gtgs.net:
     name: GTGPERSANDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-persandatnet
       ip: 10.4.218.47
@@ -1168,8 +1085,7 @@ portserv.gtgs.net:
     name: GTGPORTSERV
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-portserv
       ip: 10.4.218.96
@@ -1182,8 +1098,7 @@ portservdatnet.gtgs.net:
     name: GTGPORTSERVDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-portservdatnet
       ip: 10.4.218.31
@@ -1196,8 +1111,7 @@ reicit.gtgs.net:
     name: GTGREICIT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-reicit
       ip: 10.4.218.79
@@ -1210,8 +1124,7 @@ reicitdatnet.gtgs.net:
     name: GTGREICITDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-reicitdatnet
       ip: 10.4.218.64
@@ -1224,8 +1137,7 @@ runrates2.gtgs.net:
     name: GTGRUNRATES2
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-runrates2
       ip: 10.4.218.116
@@ -1238,8 +1150,7 @@ runratescent.gtgs.net:
     name: GTGRUNRATESCENT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-runratescent
       ip: 10.4.218.117
@@ -1252,8 +1163,7 @@ shicorp.gtgs.net:
     name: GTGSHICORP
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-shicorp
       ip: 10.4.218.97
@@ -1266,8 +1176,7 @@ shicorpdatnet.gtgs.net:
     name: GTGSHICORPDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-shicorpdatnet
       ip: 10.4.218.65
@@ -1280,8 +1189,7 @@ shiseatest.gtgs.net:
     name: GTGSHISEATEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-shiseatest
       ip: 10.4.218.7
@@ -1294,8 +1202,7 @@ singh.gtgs.net:
     name: GTGSINGH
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-singh
       ip: 10.4.218.80
@@ -1308,8 +1215,7 @@ singhdatnet.gtgs.net:
     name: GTGSINGHDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-singhdatnet
       ip: 10.4.218.49
@@ -1322,8 +1228,7 @@ singhtest.gtgs.net:
     name: GTGSINGHTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-singhtest
       ip: 10.4.218.5
@@ -1336,8 +1241,7 @@ chchi-dr.gtgs.net:
     name: GTGSKYDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-skydatnet
       ip: 10.4.218.131
@@ -1350,8 +1254,7 @@ ckskyala.gtgs.net:
     name: GTGSKYLINE
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-skyline
       ip: 10.4.218.132
@@ -1364,8 +1267,7 @@ solpor.gtgs.net:
     name: GTGSOLPOR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-solpor
       ip: 10.4.218.98
@@ -1378,8 +1280,7 @@ solpordatnet.gtgs.net:
     name: GTGSOLPORDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-solpordatnet
       ip: 10.4.218.50
@@ -1392,8 +1293,7 @@ arlaftcust.gtgs.net:
     name: GTGSTCINTERMODALSWIFTSV
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-stcintermodal-swiftsv
       ip: 10.4.218.118
@@ -1406,8 +1306,7 @@ suncer.gtgs.net:
     name: GTGSUNRISETRUCKING
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-sunrisetrucking
       ip: 10.4.218.99
@@ -1420,8 +1319,7 @@ taylor.gtgs.net:
     name: GTGTAYLOR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-taylor
       ip: 10.4.218.112
@@ -1434,8 +1332,7 @@ taylordatnet.gtgs.net:
     name: GTGTAYLORDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-taylordatnet
       ip: 10.4.218.113
@@ -1446,8 +1343,7 @@ mail.gtgs.net:
   backend_name: gtg-mail
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   default_server: inter 3s rise 2 fall 3 maxconn 10000 resolve-prefer ipv4 ssl
   servers:
     - name: gtg-mail
@@ -1461,8 +1357,7 @@ tcamelot.gtgs.net:
     name: GTGTCAMELOT
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tcamelot
       ip: 10.4.218.81
@@ -1475,8 +1370,7 @@ tcamelotdatnet.gtgs.net:
     name: GTGTCAMELOTDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tcamelotdatnet
       ip: 10.4.218.30
@@ -1489,8 +1383,7 @@ tcidatnet.gtgs.net:
     name: GTGTCIDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tcidatnet
       ip: 10.4.218.66
@@ -1503,8 +1396,7 @@ tcinew.gtgs.net:
     name: GTGTCINEW
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tcinew
       ip: 10.4.218.100
@@ -1517,8 +1409,7 @@ techgas.gtgs.net:
     name: GTGTECHGAS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-techgas
       ip: 10.4.218.82
@@ -1531,8 +1422,7 @@ techgas-dr.gtgs.net:
     name: GTGTECHGASDR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-techgas-dr
       ip: 10.4.218.67
@@ -1545,8 +1435,7 @@ testgtgims.gtgs.net:
     name: GTGTESTGTGIMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-testgtgims
       ip: 10.4.218.22
@@ -1559,8 +1448,7 @@ testpbielk.gtgs.net:
     name: GTGTESTPBIELK
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-testpbielk
       ip: 10.4.218.13
@@ -1573,8 +1461,7 @@ testtriims.gtgs.net:
     name: GTGTESTTRIIMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-testtriims
       ip: 10.4.218.17
@@ -1587,8 +1474,7 @@ topdatnet.gtgs.net:
     name: GTGTOPDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-topdatnet
       ip: 10.4.218.51
@@ -1601,8 +1487,7 @@ tophou.gtgs.net:
     name: GTGTOPHOU
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tophou
       ip: 10.4.218.68
@@ -1615,8 +1500,7 @@ tophoutest.gtgs.net:
     name: GTGTOPHOUTEST
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-tophoutest
       ip: 10.4.218.3
@@ -1629,8 +1513,7 @@ town.gtgs.net:
     name: GTGTOWN
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-town
       ip: 10.4.218.83
@@ -1643,8 +1526,7 @@ towndatnet.gtgs.net:
     name: GTGTOWNDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-towndatnet
       ip: 10.4.218.28
@@ -1657,8 +1539,7 @@ triims.gtgs.net:
     name: GTGTRIIMS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-triims
       ip: 10.4.218.84
@@ -1671,8 +1552,7 @@ troydemo.gtgs.net:
     name: GTGTROYDEMO
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-troydemo
       ip: 10.4.218.101
@@ -1685,8 +1565,7 @@ txn2chs.gtgs.net:
     name: GTGTXN2CHS
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-txn2chs
       ip: 10.4.218.102
@@ -1699,8 +1578,7 @@ txn2datnet.gtgs.net:
     name: GTGTXN2DATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-txn2datnet
       ip: 10.4.218.34
@@ -1713,8 +1591,7 @@ wastuk.gtgs.net:
     name: GTGWASTUK
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-wastuk
       ip: 10.4.218.85
@@ -1727,8 +1604,7 @@ wastukdatnet.gtgs.net:
     name: GTGWASTUKDATNET
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-wastukdatnet
       ip: 10.4.218.52
@@ -1741,8 +1617,7 @@ wptdisp.gtgs.net:
     name: GTGWPTDISP
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-wptdisp
       ip: 10.4.218.86
@@ -1755,8 +1630,7 @@ wptsea-dr.gtgs.net:
     name: GTGWPTSEADR
   encryption: true
   http_health_check:
-    enabled: true
-    http_path: /
+    enabled: false
   servers:
     - name: gtg-wptsea-dr
       ip: 10.4.218.53
