@@ -1,0 +1,7 @@
+---
+- name: Load data file
+  set_fact:
+    data: "{{ lookup('file', data_file) | from_yaml }}"
+
+- debug:
+    var: data
