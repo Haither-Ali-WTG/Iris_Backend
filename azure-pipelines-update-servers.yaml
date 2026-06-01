@@ -63,21 +63,17 @@ steps:
     SecretsFilter: secretAppIdDf4b4604e176
     RunAsPreJob: false
 
-# - task: Ansible@0
-#   displayName: 'Update servers'
-#   inputs:
-#     ansibleInterface: 'agentMachine'
-#     playbookPathOnAgentMachine: 'ansible/collect_and_process_sites_data.yml'
-#     failOnStdErr: false
-#     args: >-
-#       -u $(user) --diff
-#       -e="image_name=${{ image.name }}"
-#       -e="image_tag=${{ image.tag }}"
-#       -e="@ansible/hypervisor.yaml"
-#       -e="key_vault_name=$(key_vault_name)"
-#       -e="working_dir=$(Build.SourcesDirectory)"
-#   env:
-#     secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+- task: Ansible@0
+  displayName: 'Update servers'
+  inputs:
+    ansibleInterface: 'agentMachine'
+    playbookPathOnAgentMachine: 'ansible/update_servers.yaml'
+    failOnStdErr: false
+    args: >-
+      --diff
+      -e="key_vault_name=$(key_vault_name)"
+  env:
+    secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
 
   # - script: |
   #     set -euxo pipefail
