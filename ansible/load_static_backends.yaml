@@ -20,7 +20,7 @@
           }}
         all_static_backends: >-
           {{ all_static_backends | default({}) | combine(content) }}
-      loop: "{{ lookup('fileglob', '../data/static_backends/*.y*ml', wantlist=True) }}"
+      loop: "{{ lookup('fileglob', iris_data_dir ~ '/static_backends/*.y*ml', wantlist=True) }}"
       loop_control:
         loop_var: fname
 

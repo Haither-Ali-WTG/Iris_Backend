@@ -12,7 +12,7 @@
       set_fact:
         all_machine_clusters: >-
           {{ all_machine_clusters | default({}) | combine(content) }}
-      loop: "{{ lookup('fileglob', '../data/machine_clusters/*.y*ml', wantlist=True) }}"
+      loop: "{{ lookup('fileglob', iris_data_dir ~ '/machine_clusters/*.y*ml', wantlist=True) }}"
       loop_control:
         loop_var: fname
 

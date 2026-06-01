@@ -1,0 +1,7 @@
+---
+# Absolute path to the iris data directory.
+#
+# Defaults to the directory containing the inventory used to invoke the playbook
+# (e.g. `-i iris/data/instances` -> `iris/data`). Override with
+# `-e iris_data_dir=/some/other/data` when running against a fork (e2open, etc.).
+iris_data_dir: "{{ playbook_dir }}/../data"

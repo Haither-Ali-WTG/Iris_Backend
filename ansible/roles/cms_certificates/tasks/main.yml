@@ -13,7 +13,7 @@
 
 - name: Load certificates to be downloaded from audit files
   set_fact:
-    updated_certs: "{{ playbook_dir | read_audit_certs(target_dc | default('')) }}"
+    updated_certs: "{{ iris_data_dir | read_audit_certs(target_dc | default('')) }}"
 
 - name: Download the certificate - Iris KV
   include_tasks: download_and_save_iris_certificate.yml
