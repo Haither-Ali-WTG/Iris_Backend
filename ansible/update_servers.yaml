@@ -1,0 +1,8 @@
+---
+- name: Update servers
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Update_servers
+      include_role:
+        name: update_servers

@@ -1,5 +1,8 @@
 ---
 au.cww-nonprd.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: test.wisecloud.zone
+  OU: root/Computers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - au2prodfrontend1testcdnservices
@@ -42,6 +45,9 @@ au.cww-nonprd.wisegrid.net-catchall:
     name: AU2WT-SRDH-410
     port: 80
 au.cww.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: wisecloud.zone
+  OU: root/Computers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - au2prodfrontend1prodcdnservices31
@@ -84,6 +90,9 @@ au.cww.wisegrid.net-catchall:
     name: AU2WP-SRDH-410
     port: 80
 blazor.sand.wtg.zone-catchall:
+  user: haproxyadquerier-wtg
+  DC: sand.wtg.zone
+  OU: root/Computers/Servers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - au2sandinternal1
@@ -114,6 +123,9 @@ blazor.sand.wtg.zone-catchall:
     name: AU2SP-TRDH-416
     port: 80
 cww.wisetechglobal.com-catchall:
+  user: haproxyadquerier-wtg
+  DC: wtg.zone
+  OU: root/Computers/Servers/ASPAC/AU2/RemoteDesktop/WCA
   balance: random
   clustered_instances:
   - au2prodfrontend1prodcdnservices31
@@ -189,6 +201,9 @@ cww.wisetechglobal.com-catchall:
     name: AU2CO-SRDH-425
     port: 80
 de.cww-nonprd.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: test.wisecloud.zone
+  OU: root/Computers/EMEA/DE1/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - de1prodfrontend1testcdnservices
@@ -228,6 +243,9 @@ de.cww-nonprd.wisegrid.net-catchall:
     name: DE1WT-SRDH-408
     port: 80
 de.cww.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: wisecloud.zone
+  OU: root/Computers/EMEA/DE1/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - de1prodfrontend1prodcdnservices31
@@ -288,6 +306,9 @@ de.cww.wisegrid.net-catchall:
     name: DE1WP-SRDH-615
     port: 80
 us.cww-nonprd.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: test.wisecloud.zone
+  OU: root/Computers/AMERICAS/US2/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - us2prodfrontend1testcdnservices
@@ -315,6 +336,9 @@ us.cww-nonprd.wisegrid.net-catchall:
     name: US2WT-SRDH-405
     port: 80
 us.cww.wisegrid.net-catchall:
+  user: haproxyadquerier-wisecloud
+  DC: wisecloud.zone
+  OU: root/Computers/AMERICAS/US2/RemoteDesktop/SessionHost
   balance: random
   clustered_instances:
   - us2prodfrontend1prodcdnservices31
