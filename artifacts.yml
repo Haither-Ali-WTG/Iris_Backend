@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260601.4
-  # Mon Jun  1 06:21:07 UTC 2026 -- Mon Jun  1 16:21:07 AEST 2026
+  # Dante Build Artifact 20260602.1
+  # Mon Jun  1 19:21:13 UTC 2026 -- Tue Jun  2 05:21:13 AEST 2026
   #
-  # Merge pull request 51124 from dante_artifact_upgrade into master
-  # 6254108c2356d5853ab962e743d1c1a4ba016c4e
-  dante_build_id: '1715495'
+  # Merge pull request 51167 from dante_artifact_upgrade into master
+  # be2efde75f3b24dd16f7865e5b70381033d6034b
+  dante_build_id: '1716024'
 
-  # virgil 20260601.3
-  # Mon Jun  1 05:25:24 UTC 2026 -- Mon Jun  1 15:25:24 AEST 2026
+  # virgil 20260602.2
+  # Mon Jun  1 18:21:54 UTC 2026 -- Tue Jun  2 04:21:54 AEST 2026
   #
-  # Merged PR 51119: preperation to upgrade kafka q0 DE servers from 2204 -> 2404
-  # 1c48c0afe0994d6677f189f37d2ecd862ac7739f
-  virgil_build_id: '1715438'
+  # Merge pull request 51158 from virgil_python_upgrade into master
+  # 00e17587142f398e5f6e55baa26d2ee6f2b002f2
+  virgil_build_id: '1715973'
 
   # sqlbilling 20260601.4
   # Mon Jun  1 09:42:36 UTC 2026 -- Mon Jun  1 19:42:36 AEST 2026
