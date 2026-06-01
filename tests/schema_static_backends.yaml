@@ -15,6 +15,9 @@ static_backend_normal:
   default_server: regex('^[a-z0-9\- ]+$', name='default_server options', required=False)
   sorry_pages: list(include('sorry_page'), required=False)
   servers: list(include('server'))
+  user: regex('^[a-z0-9\- ]+$', name='user name secret in key vault', required=True)
+  DC: regex('^[a-z0-9\- ]+$', name='LDAP DC', required=True)
+  OU: regex('^[a-z0-9\- ]+$', name='LDAP OU', required=True)
 ---
 static_backend_full_override:
   clustered_instances: list(regex('^[a-z][a-z0-9]+$', name='lowercase label'))
