@@ -124,6 +124,7 @@ clustered_instances:
         proxy_ports:
           plaintext:
             - 1501   # USG - Envase Compcare Mobile (via Cloudflare Spectrum)
+            - 1502   # USG - Envase Compcare CC-SQLCLST-03 (via Cloudflare Spectrum)
       iis_servers: []
       certificates: []
       sqlbilling_acl:
