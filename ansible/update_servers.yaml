@@ -1,8 +1,76 @@
 ---
-- name: Update servers
-  hosts: localhost
-  gather_facts: no
-  tasks:
-    - name: Update_servers
-      include_role:
-        name: update_servers
+trigger: none
+
+# schedules:
+# - cron: "0 0 * * *"
+#   displayName: Daily servers upgrade
+#   always: true
+#   branches:
+#     include:
+#     - master
+
+variables:
+  - nam2e: key_vault_name
+    value: kv-wtg-iris-prod
+  - name: username
+    value: "WTGOps"
+  - name: email
+    value: "wtgops@wisetechglobal.com"
+
+pool: cicd-v2
+
+steps:
+  - script: |
+      set -euxo pipefail
+      pip install -r requirements.txt
+    displayName: 'Install Dante requirements'
+
+  # Azure cli and git config taken directly from artifact upgrades pipeline
+  - script: |
+      set -euxo pipefail
+      pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+      pip install --upgrade azure-core
+    displayName: "Upgrade Azure CLI"
+
+  - script: |
+      set -euxo pipefail
+      az extension add --upgrade --yes --name azure-devops
+    displayName: "Add Azure-DevOps extension"
+
+  - script: |
+      set -euxo pipefail
+      echo $(System.AccessToken) | az devops login
+    displayName: "Login via Azure DevOps CLI"
+
+  - script: |
+      set -euxo pipefail
+      az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) \
+        project="$(System.TeamProject)"
+    displayName: "Configure defaults for Azure DevOps organisation and project"
+
+  - script: |
+      set -euxo pipefail
+      git config --global user.name $(username)
+      git config --global user.email $(email)
+    displayName: "Configure git globals"
+
+  - task: AzureKeyVault@2
+    displayName: 'Get secrets from Azure KV'
+    inputs:
+      azureSubscription: 'sc-azuredevops2dante-vaults'
+      KeyVaultName: $(key_vault_name)
+      SecretsFilter: secretAppIdDf4b4604e176
+      RunAsPreJob: false
+
+  - task: Ansible@0
+    displayName: 'Update servers'
+    inputs:
+      ansibleInterface: 'agentMachine'
+      playbookPathOnAgentMachine: 'ansible/update_servers.yaml'
+      failOnStdErr: false
+      args: >-
+        --diff
+        -e="key_vault_name=$(key_vault_name)"
+    env:
+      secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
