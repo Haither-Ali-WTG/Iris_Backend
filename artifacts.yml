@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260601.2
-  # Mon Jun  1 02:02:47 UTC 2026 -- Mon Jun  1 12:02:47 AEST 2026
+  # Dante Build Artifact 20260601.4
+  # Mon Jun  1 06:21:07 UTC 2026 -- Mon Jun  1 16:21:07 AEST 2026
   #
-  # Merged PR 51088: fix(ghe-runner): upgrade to 2.334.0 and switch to digest pinning
-  # 5f626450bcfc014d99b9d67b1b4e905e4008122a
-  dante_build_id: '1715271'
+  # Merge pull request 51124 from dante_artifact_upgrade into master
+  # 6254108c2356d5853ab962e743d1c1a4ba016c4e
+  dante_build_id: '1715495'
 
-  # virgil 20260601.1
-  # Sun May 31 21:46:40 UTC 2026 -- Mon Jun  1 07:46:40 AEST 2026
+  # virgil 20260601.3
+  # Mon Jun  1 05:25:24 UTC 2026 -- Mon Jun  1 15:25:24 AEST 2026
   #
-  # Merged PR 51036: DE1-Added-ESX-Nodes
-  # 828198abb4370c8241f79b4e5c2eff69b13a048a
-  virgil_build_id: '1715024'
+  # Merged PR 51119: preperation to upgrade kafka q0 DE servers from 2204 -> 2404
+  # 1c48c0afe0994d6677f189f37d2ecd862ac7739f
+  virgil_build_id: '1715438'
 
   # sqlbilling 20260529.2
   # Fri May 29 08:56:10 UTC 2026 -- Fri May 29 18:56:10 AEST 2026
