@@ -150,8 +150,8 @@ usg_compcare_mobile_sql_backend:
   actions:
     - use_backend usg-compcare-mobile-sql if usg_compcare_mobile_sql_src usg_compcare_mobile_sql_dst_port
 
-usg_compcare_cc-sqlclst-03_backend:
+usg_compcare_cc_sqlclst_03_backend:
   description: USG (Envase) Compcare CC-SQLCLST-03
   order: 51
   actions:
-    - use_backend usg-compcare-cc-sqlclst-03 if usg_compcare_cc-sqlclst-03_src usg_compcare_cc-sqlclst-03_dst_port
+    - use_backend usg-compcare-cc-sqlclst-03 if usg_compcare_cc_sqlclst_03_src usg_compcare_cc_sqlclst_03_dst_port

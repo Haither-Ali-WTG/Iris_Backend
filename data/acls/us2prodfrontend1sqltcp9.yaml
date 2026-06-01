@@ -98,12 +98,12 @@ usg_compcare_mobile_sql_src:
     - src 75.56.173.7
     - src 65.141.7.42
 
-usg_compcare_cc-sqlclst-03_dst_port:
+usg_compcare_cc_sqlclst_03_dst_port:
   description: Destination port for USG Compcare CC-SQLCLST-03 servers
   tests:
     - dst_port 1502
 
-usg_compcare_cc-sqlclst-03_src:
+usg_compcare_cc_sqlclst_03_src:
   description: List of IP addresses allowed to access USG Compcare CC-SQLCLST-03
   tests:
     - src 128.136.148.196
