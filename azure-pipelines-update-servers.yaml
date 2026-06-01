@@ -10,7 +10,7 @@ trigger: none
 #     - master
 
 variables:
-  - nam2e: key_vault_name
+  - name: key_vault_name
     value: kv-wtg-iris-prod
   - name: username
     value: "WTGOps"
