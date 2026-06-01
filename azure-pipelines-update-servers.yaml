@@ -20,8 +20,6 @@ variables:
 pool: cicd-v2
 
 steps:
-- checkout: self
-  persistCredentials: true
 
 - script: |
     set -euxo pipefail
@@ -56,12 +54,6 @@ steps:
     git config --global user.name $(username)
     git config --global user.email $(email)
   displayName: "Configure git globals"
-
-- task: InstallSSHKey@0
-  displayName: 'Install an SSH key'
-  inputs:
-    knownHostsEntry: 'StrictHostKeyChecking no'
-    sshKeySecureFile: 'id_rsa'
 
 - task: AzureKeyVault@2
   displayName: 'Get secrets from Azure KV'
