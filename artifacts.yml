@@ -14,9 +14,9 @@ variables:
   # 1c48c0afe0994d6677f189f37d2ecd862ac7739f
   virgil_build_id: '1715438'
 
-  # sqlbilling 20260601.2
-  # Mon Jun  1 08:43:52 UTC 2026 -- Mon Jun  1 18:43:52 AEST 2026
+  # sqlbilling 20260601.4
+  # Mon Jun  1 09:42:36 UTC 2026 -- Mon Jun  1 19:42:36 AEST 2026
   #
-  # Merged PR 51143: SQLBilling-Remove-PRJ00057354-PRJ00057238.yml
-  # b151a2701becebbc0f9e0f61c4a1a631a4f1fd88
-  sqlbilling_build_id: '1715603'
+  # Merged PR 51147: RTL-SQLReadOnly-CS02356587,CS02357432
+  # 586f58ae1d5c35f53b20ff1cc5157b6639dd6d70
+  sqlbilling_build_id: '1715645'
