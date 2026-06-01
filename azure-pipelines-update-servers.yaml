@@ -1,6 +1,14 @@
 ---
 trigger: none
 
+# schedules:
+# - cron: "0 0 * * *"
+#   displayName: Daily servers upgrade
+#   always: true
+#   branches:
+#     include:
+#     - master
+
 variables:
   - nam2e: key_vault_name
     value: kv-wtg-iris-prod
