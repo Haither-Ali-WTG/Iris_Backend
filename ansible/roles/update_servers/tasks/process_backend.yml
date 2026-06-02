@@ -17,7 +17,7 @@
     ldapsearch -LLL -o ldif-wrap=no
     -H ldaps://{{ backend.value.DC }}:636
     -D "s_{{ backend.value.user.split('-') | first }}@{{ backend.value.user.split('-') | last }}.zone"
-    -w '{{ credential[backend.value.user] }}'
+    -w '{{ credentials[backend.value.user] }}'
     -b "{{ OU }}{{ DC[:-1] }}"
     -s one
     -o tls_reqcert=never
