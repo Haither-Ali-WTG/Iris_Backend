@@ -13,7 +13,7 @@
   loop_control:
     loop_var: user_name
 
-- name: Read passwords from key vault
+- name: Process backends
   include_tasks: process_backend.yml
   loop: "{{ data | dict2items }}"
   loop_control:

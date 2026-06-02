@@ -1,3 +1,28 @@
 ---
 - debug:
     var: backend
+
+- name: Calculate OU
+  set_fact:
+    OU: "{{ OU | default('') + 'OU=' + item + ',' }}"
+  loop: "{{ backend.value.OU.split('/') | reverse }}"
+
+- name: Calculate DC
+  set_fact:
+    DC: "{{ DC | default('') + 'DC=' + item + ',' }}"
+  loop: "{{ backend.value.DC.split('.') }}"
+
+- name: Call ldapsearch
+  command: >-
+    ldapsearch -LLL -o ldif-wrap=no
+    -H ldaps://{{ backend.value.DC }}:636
+    -D "s_{{ backend.value.user.split('-') | first }}@{{ backend.value.user.split('-') | last }}.zone"
+    -w '{{ credential[backend.value.user] }}'
+    -b "{{ OU }}{{ DC[:-1] }}"
+    -s one
+    -o tls_reqcert=never
+    "(&(objectCategory=computer)(objectClass=computer)(cn=*))"
+  register: ldap_output
+
+- debug:
+    var: ldap_output
