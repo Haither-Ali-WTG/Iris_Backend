@@ -15,6 +15,6 @@
 
 - name: Read passwords from key vault
   include_tasks: process_backend.yml
-  loop: "{{ data }}"
+  loop: "{{ data | dict2items }}"
   loop_control:
     loop_var: backend
