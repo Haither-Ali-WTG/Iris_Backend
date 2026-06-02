@@ -42,6 +42,7 @@
       regex_replace('^dNSHostName:\\s*', '')) | default('')
       }}"
   loop: "{{ ldap_output.stdout | split('\ndn: ') }}"
+  no_log: true
 
 - debug:
     var: servers
