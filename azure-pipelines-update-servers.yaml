@@ -10,7 +10,7 @@ trigger: none
 #     - master
 
 variables:
-  - name: key_vault_name
+  - name: azure_kv_name
     value: kv-wtg-iris-prod
   - name: username
     value: "WTGOps"
@@ -58,7 +58,7 @@ steps:
     displayName: 'Get secrets from Azure KV'
     inputs:
       azureSubscription: 'sc-azuredevops2dante-vaults'
-      KeyVaultName: $(key_vault_name)
+      KeyVaultName: $(azure_kv_name)
       SecretsFilter: secretAppIdDf4b4604e176
       RunAsPreJob: false
 
@@ -70,6 +70,6 @@ steps:
       failOnStdErr: false
       args: >-
         --diff
-        -e="key_vault_name=$(key_vault_name)"
+        -e="azure_kv_name=$(azure_kv_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)

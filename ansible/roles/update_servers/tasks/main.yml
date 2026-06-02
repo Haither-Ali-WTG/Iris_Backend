@@ -3,5 +3,18 @@
   set_fact:
     data: "{{ lookup('file', data_file) | from_yaml }}"
 
+- name: Read unique haproxy users
+  set_fact:
+    unique_users: "{{ data.values() | map(attribute='user') | list | unique }}"
+
+- name: "Get password from key vault for user {{ iis_user_process }}"
+  include_role:
+    name: azure_keyvault
+    tasks_from: get_secret.yml
+  vars:
+    azure_kv_secret_name: "{{ item }}"
+  loop: "{{ unique_users }}"
+  register: result
+
 - debug:
-    var: data
+    var: result
