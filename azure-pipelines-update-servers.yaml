@@ -27,33 +27,33 @@ steps:
     displayName: 'Install Dante requirements'
 
   # Azure cli and git config taken directly from artifact upgrades pipeline
-  # - script: |
-  #     set -euxo pipefail
-  #     pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
-  #     pip install --upgrade azure-core
-  #   displayName: "Upgrade Azure CLI"
+  - script: |
+      set -euxo pipefail
+      pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+      pip install --upgrade azure-core
+    displayName: "Upgrade Azure CLI"
 
-  # - script: |
-  #     set -euxo pipefail
-  #     az extension add --upgrade --yes --name azure-devops
-  #   displayName: "Add Azure-DevOps extension"
+  - script: |
+      set -euxo pipefail
+      az extension add --upgrade --yes --name azure-devops
+    displayName: "Add Azure-DevOps extension"
 
-  # - script: |
-  #     set -euxo pipefail
-  #     echo $(System.AccessToken) | az devops login
-  #   displayName: "Login via Azure DevOps CLI"
+  - script: |
+      set -euxo pipefail
+      echo $(System.AccessToken) | az devops login
+    displayName: "Login via Azure DevOps CLI"
 
-  # - script: |
-  #     set -euxo pipefail
-  #     az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) \
-  #       project="$(System.TeamProject)"
-  #   displayName: "Configure defaults for Azure DevOps organisation and project"
+  - script: |
+      set -euxo pipefail
+      az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) \
+        project="$(System.TeamProject)"
+    displayName: "Configure defaults for Azure DevOps organisation and project"
 
-  # - script: |
-  #     set -euxo pipefail
-  #     git config --global user.name $(username)
-  #     git config --global user.email $(email)
-  #   displayName: "Configure git globals"
+  - script: |
+      set -euxo pipefail
+      git config --global user.name $(username)
+      git config --global user.email $(email)
+    displayName: "Configure git globals"
 
   - task: DownloadPipelineArtifact@2
     displayName: 'Download dante artifact'
@@ -91,3 +91,8 @@ steps:
         -e="azure_kv_name=$(azure_kv_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
+  - script: |
+      set -euxo pipefail
+      git diff data/static_backends/cww.yaml
+    displayName: "Configure git globals"
