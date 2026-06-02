@@ -1,15 +1,17 @@
 ---
-- debug:
-    var: backend
+- name: Reset OU and DC
+  set_fact:
+    OU: ''
+    DC: ''
 
 - name: Calculate OU
   set_fact:
-    OU: "{{ OU | default('') + 'OU=' + item + ',' }}"
+    OU: "{{ OU + 'OU=' + item + ',' }}"
   loop: "{{ backend.value.OU.split('/') | reverse }}"
 
 - name: Calculate DC
   set_fact:
-    DC: "{{ DC | default('') + 'DC=' + item + ',' }}"
+    DC: "{{ DC + 'DC=' + item + ',' }}"
   loop: "{{ backend.value.DC.split('.') }}"
 
 - name: Call ldapsearch
