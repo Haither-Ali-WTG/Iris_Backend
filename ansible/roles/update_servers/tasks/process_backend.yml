@@ -1,18 +1,18 @@
 ---
 - name: Reset OU, DC and servers
   set_fact:
-    OU: ''
-    DC: ''
+    ou: ''
+    dc: ''
     servers: []
 
 - name: Calculate OU
   set_fact:
-    OU: "{{ OU + 'OU=' + item + ',' }}"
+    ou: "{{ ou + 'OU=' + item + ',' }}"
   loop: "{{ backend.value.OU.split('/') | reverse }}"
 
 - name: Calculate DC
   set_fact:
-    DC: "{{ DC + 'DC=' + item + ',' }}"
+    dc: "{{ dc + 'DC=' + item + ',' }}"
   loop: "{{ backend.value.DC.split('.') }}"
 
 - name: Call ldapsearch
@@ -21,18 +21,17 @@
     -H ldaps://{{ backend.value.DC }}:636
     -D "s_{{ backend.value.user.split('-') | first }}@{{ backend.value.user.split('-') | last }}.zone"
     -w '{{ credentials[backend.value.user] }}'
-    -b "{{ OU }}{{ DC[:-1] }}"
+    -b "{{ ou }}{{ dc[:-1] }}"
     -s one
     -o tls_reqcert=never
     "(&(objectCategory=computer)(objectClass=computer)(cn=*))"
   register: ldap_output
+  changed_when: false
   no_log: true
 
 - name: Extract name and calculate IP from each block
   set_fact:
-    servers: "{{
-      servers + [ {'name': server_name, 'ip': lookup('community.general.dig', server_dns), 'port': 80} ]
-      }}"
+    servers: "{{ servers +  {'name': server_name, 'ip': lookup('community.general.dig', server_dns), 'port': 80}] }}"
   vars:
     server_name: "{{
       (item.split('\n') | select('match', '^name:') | first | regex_replace('^name:\\s*', '')) | default('')
@@ -46,4 +45,4 @@
 
 - name: Update servers for backend
   set_fact:
-    data: "{{ data | combine({ backend.key:data[backend.key] | combine({'servers': servers}) }) }}"
+    data: "{{ data | combine({backend.key:data[backend.key] | combine({'servers': servers}) })}}"
