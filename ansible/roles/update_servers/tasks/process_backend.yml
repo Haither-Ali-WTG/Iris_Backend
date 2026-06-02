@@ -44,11 +44,15 @@
   loop: "{{ ldap_output.stdout | split('\ndn: ') }}"
   no_log: true
 
-- name: Calculate new backend
+- name: Update servers for backend
   set_fact:
     data: >-
-      {{ data | combine({
-            backend.key: backend | combine({'servers': servers})
+      {{
+        data
+        | combine({
+            backend.key:
+              data[backend.key]
+              | combine({'servers': servers})
           })
       }}
 
