@@ -1,1 +1,28 @@
 ---
+- name: Load data file
+  set_fact:
+    data: "{{ lookup('file', data_file) | from_yaml }}"
+
+- name: Read unique haproxy users
+  set_fact:
+    unique_users: "{{ data.values() | map(attribute='user') | list | unique }}"
+
+- name: Read passwords from key vault
+  include_tasks: read_password.yml
+  loop: "{{ unique_users }}"
+  loop_control:
+    loop_var: user_name
+
+- name: Process backends
+  include_tasks: process_backend.yml
+  loop: "{{ data | dict2items }}"
+  loop_control:
+    loop_var: backend
+
+- name: Write updated data back to file
+  copy:
+    dest: "{{ data_file }}"
+    mode: a=rw
+    content: |
+      ---
+      {{ data | to_nice_yaml(indent=2) }}
