@@ -10,7 +10,7 @@ variables:
   - name: key_vault_name
     value: kv-wtg-iris-e2open
   - name: target_dc
-    value: DE1
+    value: e2open-ham
 
 stages:
   - stage: Deploy_Haproxy_E2Open
