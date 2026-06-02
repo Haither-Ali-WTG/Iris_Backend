@@ -13,10 +13,10 @@ addressvalidation_us2_v2_redirect:
   actions:
     - >-
       http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]
-      if addressvalidation_us2_wisegrid_net v2_path !{ query -m found }
+      if addressvalidation-us2_wisegrid_net v2_path !{ query -m found }
     - >-
       http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]?%[query]
-      if addressvalidation_us2_wisegrid_net v2_path { query -m found }
+      if addressvalidation-us2_wisegrid_net v2_path { query -m found }
 
 wtg_idp_redirect:
   description: |-
