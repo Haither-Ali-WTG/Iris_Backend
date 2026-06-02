@@ -404,6 +404,12 @@ clustered_instances:
         - us2wt-sweb-418b.test.wisecloud.zone
         - us2wt-sweb-419a.test.wisecloud.zone
         - us2wt-sweb-419b.test.wisecloud.zone
+        - us2wt-sweb-420a.test.wisecloud.zone
+        - us2wt-sweb-420b.test.wisecloud.zone
+        - us2wt-sweb-421a.test.wisecloud.zone
+        - us2wt-sweb-421b.test.wisecloud.zone
+        - us2wt-sweb-422a.test.wisecloud.zone
+        - us2wt-sweb-422b.test.wisecloud.zone
         - us2wt-sweb-499a.test.wisecloud.zone      # Dedicated webserver for customurls
         - us2wt-sweb-499b.test.wisecloud.zone      # Dedicated webserver for customurls
       iis_user_local: s_lbwinrmquerier
