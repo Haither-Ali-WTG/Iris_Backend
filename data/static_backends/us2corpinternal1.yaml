@@ -101,19 +101,34 @@ us2kvl-v0.wtg.zone:
       ip: 10.4.128.13
       port: 8006
       settings: check ssl verify none
+
+us2kvl-v1.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enalbed: false
+  cookie:
+    name: US2KVLV1
+  servers:
     - name: us2kvl00568.wtg.zone
       ip: 10.4.128.14
       port: 8006
       settings: check ssl verify none
-
-us2kvl-v1.wtg.zone:
-  clustered_instances: [us2corpinternal1]
-  full_override: |
-    backend us2kvl-v1_wtg_zone
-    http-request add-header X-Forwarded-Proto https if { ssl_fc }
-    option httpchk
-    http-check send meth HEAD uri /healthz ver HTTP/1.0 hdr Host us2kvl-v1.wtg.zone
-    server us2kvl-v1-vip 10.4.128.6:443 check ssl verify none
+    - name: us2kvl00569.wtg.zone
+      ip: 10.4.128.15
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00793.wtg.zone
+      ip: 10.4.128.19
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00808.wtg.zone
+      ip: 10.4.128.29
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00811.wtg.zone
+      ip: 10.4.128.32
+      port: 8006
+      settings: check ssl verify none
 
 us2pf1-prod-customurls.wtg.zone:
   clustered_instances: [us2corpinternal1]
