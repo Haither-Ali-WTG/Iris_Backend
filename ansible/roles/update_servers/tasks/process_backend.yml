@@ -44,19 +44,13 @@
   loop: "{{ ldap_output.stdout | split('\ndn: ') }}"
   no_log: true
 
-- name: Sort servers inside each backend (in-place)
-  set_fact:
-    data: "{{ data | combine({ item.key: item.value | combine({'servers': item.value.servers | sort(attribute='name')}) }, recursive=True) }}"
-  when: item.value.servers is defined
-  loop: "{{ data | dict2items }}"
-
 - name: Calculate new backend
   set_fact:
-    backends: >-
-      {{ backends | combine({
-            backend_key: backends[backend_key] | combine({'servers': servers})
+    data: >-
+      {{ data | combine({
+            backend.key: backend | combine({'servers': servers})
           })
       }}
 
 - debug:
-    var: backend
+    var: data
