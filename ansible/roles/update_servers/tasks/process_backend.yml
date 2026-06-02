@@ -46,15 +46,4 @@
 
 - name: Update servers for backend
   set_fact:
-    data: >-
-      {{
-        data
-        | combine({
-            backend.key:
-              data[backend.key]
-              | combine({'servers': servers})
-          })
-      }}
-
-- debug:
-    var: data
+    data: "{{ data | combine({ backend.key:data[backend.key] | combine({'servers': servers}) }) }}"

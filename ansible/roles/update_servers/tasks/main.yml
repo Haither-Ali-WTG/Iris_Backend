@@ -18,3 +18,10 @@
   loop: "{{ data | dict2items }}"
   loop_control:
     loop_var: backend
+
+- name: Write updated data back to file
+  copy:
+    dest: "{{ data_file }}"
+    content: |
+      ---
+      {{ data | to_nice_yaml(indent=2) }}
