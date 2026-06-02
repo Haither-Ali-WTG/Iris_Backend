@@ -31,7 +31,7 @@
 
 - name: Extract name and calculate IP from each block
   set_fact:
-    servers: "{{ servers +  {'name': server_name, 'ip': lookup('community.general.dig', server_dns), 'port': 80}] }}"
+    servers: "{{ servers + [{'name': server_name, 'ip': lookup('community.general.dig', server_dns), 'port': 80}] }}"
   vars:
     server_name: "{{
       (item.split('\n') | select('match', '^name:') | first | regex_replace('^name:\\s*', '')) | default('')
