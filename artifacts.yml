@@ -14,9 +14,9 @@ variables:
   # 00e17587142f398e5f6e55baa26d2ee6f2b002f2
   virgil_build_id: '1715973'
 
-  # sqlbilling 20260602.2
-  # Tue Jun  2 09:11:23 UTC 2026 -- Tue Jun  2 19:11:23 AEST 2026
+  # sqlbilling 20260603.2
+  # Tue Jun  2 14:35:29 UTC 2026 -- Wed Jun  3 00:35:29 AEST 2026
   #
-  # Merged PR 51211: Updating Readonly for customer ALUORD
-  # d7b2bf44511c3af4644110d9cdf12f95ffe30e1d
-  sqlbilling_build_id: '1716636'
+  # Merged PR 51218: ReadonlySqlAccess-CS02359572
+  # d80a92fa2f3d3d27f03b6cca026e42492efa232f
+  sqlbilling_build_id: '1716831'
