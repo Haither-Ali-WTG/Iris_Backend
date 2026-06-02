@@ -10,6 +10,7 @@ trigger: none
 #     - master
 
 variables:
+  - template: artifacts.yml
   - name: azure_kv_name
     value: kv-wtg-iris-prod
   - name: username
@@ -53,6 +54,23 @@ steps:
   #     git config --global user.name $(username)
   #     git config --global user.email $(email)
   #   displayName: "Configure git globals"
+
+  - task: DownloadPipelineArtifact@2
+    displayName: 'Download dante artifact'
+    inputs:
+      buildType: 'specific'
+      project: 'InfrastructureAutomation'
+      # dante build artifact pipeline Id
+      pipeline: 26
+      buildVersionToDownload: 'specific'
+      buildId: '$(dante_build_id)'
+      path: $(Build.SourcesDirectory)
+
+  - task: CopyFiles@2
+    displayName: 'Merge artifacts to a single roles folder'
+    inputs:
+      sourceFolder: iris
+      targetFolder: ansible
 
   - task: AzureKeyVault@2
     displayName: 'Get secrets from Azure KV'
