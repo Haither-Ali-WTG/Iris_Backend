@@ -7,11 +7,14 @@
   set_fact:
     unique_users: "{{ data.values() | map(attribute='user') | list | unique }}"
 
-- name: "Get password from key vault for user {{ iis_user_process }}"
+- name: Read passwords from key vault
   include_tasks: read_password.yml
   loop: "{{ unique_users }}"
   loop_control:
     loop_var: user_name
 
-- debug:
-    var: credentials
+- name: Read passwords from key vault
+  include_tasks: process_backend.yml
+  loop: "{{ data }}"
+  loop_control:
+    loop_var: backend
