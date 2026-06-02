@@ -10,6 +10,8 @@
 - name: "Get password from key vault for user {{ iis_user_process }}"
   include_tasks: read_password.yml
   loop: "{{ unique_users }}"
+  loop_control:
+    loop_var: user_name
 
 - debug:
     var: credentials
