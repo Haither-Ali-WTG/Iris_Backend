@@ -45,4 +45,4 @@
 
 - name: Update servers for backend
   set_fact:
-    data: "{{ data | combine({backend.key:data[backend.key] | combine({'servers': servers}) })}}"
+    data: "{{ data | combine({backend.key: data[backend.key] | combine({'servers': servers})}) }}"

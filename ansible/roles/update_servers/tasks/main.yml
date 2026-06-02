@@ -22,6 +22,7 @@
 - name: Write updated data back to file
   copy:
     dest: "{{ data_file }}"
+    mode: a=rw
     content: |
       ---
       {{ data | to_nice_yaml(indent=2) }}
