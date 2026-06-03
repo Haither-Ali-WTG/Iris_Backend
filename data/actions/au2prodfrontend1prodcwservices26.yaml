@@ -58,7 +58,6 @@ custom_url_actions:
     - use_backend anfprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i anfprd-cn.webtracker.wisegrid.net }
     - use_backend ap3syd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.allports-syd.com.au }
     - use_backend apomel_webtracker_wisegrid_net if { hdr(host),field(1,:) -i apomelglow.wisegrid.net }
-    - use_backend aqpprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i aqpprdwebtracker.wisegrid.net }
     - use_backend astmnl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i trackntrace.asti.com.ph }
     - use_backend awhadl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i ulink.awh.com.au }
     - use_backend awhadl_webtracker_wisegrid_net if { hdr(host),field(1,:) -i awhadlwebtracker.wisegrid.net }
