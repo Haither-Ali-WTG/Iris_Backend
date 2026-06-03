@@ -139,3 +139,16 @@
     name: WEBSVC
     enabled: true
   name_suffix: ''
+
+# SCIM
+- name_regex: ^[A-Za-z0-9]{6}\.scim\.(wisegrid|wisetechglobal)\.(net|cn)$
+  encryption: false
+  http_health_check:
+    enabled: true
+    http_path: "/wtg/ready"
+    check_expect: "200"
+  port: 80
+  cookie:
+    name: WEBSVC
+    enabled: true
+  name_suffix: ''
