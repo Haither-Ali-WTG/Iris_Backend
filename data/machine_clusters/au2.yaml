@@ -5,7 +5,7 @@ au2-prod-frontend-1:
     au2lbl00346: ~
     au2lbl00349: ~
   floating_ips:
-    - description: WiseCloud RDP (PROD)
+    - description: WiseCloud RDP (CORP)
       ip: 10.2.64.135
       vlan: 1064
       preempt: false
@@ -37,6 +37,18 @@ au2-prod-frontend-1:
       # when we get the third machine, it'll be first in the priority for .139;
       # compare DE1 and US2
       priority: [au2lbl00349, au2lbl00345, au2lbl00346]
+    - description: WiseCloud RDP (PROD)
+      ip: 10.2.64.140
+      vlan: 1064
+      preempt: false
+      virtual_router_id: 12
+      priority: [au2lbl00345, au2lbl00346, au2lbl00349]
+    - description: WiseCloud RDP (TEST)
+      ip: 10.2.64.141
+      vlan: 1064
+      preempt: false
+      virtual_router_id: 13
+      priority: [au2lbl00345, au2lbl00346, au2lbl00349]
 
 au2-prod-internal-1:
   machines:
