@@ -14,9 +14,9 @@ variables:
   # b26a455027a95a6877760347ba6c576042e1dde6
   virgil_build_id: '1717604'
 
-  # sqlbilling 20260603.12
-  # Wed Jun  3 12:39:21 UTC 2026 -- Wed Jun  3 22:39:21 AEST 2026
+  # sqlbilling 20260604.2
+  # Wed Jun  3 16:50:01 UTC 2026 -- Thu Jun  4 02:50:01 AEST 2026
   #
-  # Merged PR 51331: SQLReadOnlyAccess-CS02360445
-  # 8d2764ae41aaec196cffd7b0dd22ff74a23f15e4
-  sqlbilling_build_id: '1717926'
+  # Merged PR 51334: SqlReadOnlyAccess-CS02360132
+  # d8d16f841646940835b3f6990751729154670df7
+  sqlbilling_build_id: '1718070'
