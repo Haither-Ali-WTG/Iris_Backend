@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260603.8
-  # Wed Jun  3 05:59:33 UTC 2026 -- Wed Jun  3 15:59:33 AEST 2026
+  # Dante Build Artifact 20260603.9
+  # Wed Jun  3 07:21:18 UTC 2026 -- Wed Jun  3 17:21:18 AEST 2026
   #
-  # Merged PR 51293: apply dirt frag and copy fail mitigation
-  # 7dcf9612389e0ff521752b179da7f768c47f709c
-  dante_build_id: '1717615'
+  # Merge pull request 51303 from dante_artifact_upgrade into master
+  # 35e4476359391ca9033092bf631c05f2ca8750f9
+  dante_build_id: '1717698'
 
   # virgil 20260603.5
   # Wed Jun  3 05:49:26 UTC 2026 -- Wed Jun  3 15:49:26 AEST 2026
@@ -14,9 +14,9 @@ variables:
   # b26a455027a95a6877760347ba6c576042e1dde6
   virgil_build_id: '1717604'
 
-  # sqlbilling 20260603.2
-  # Tue Jun  2 14:35:29 UTC 2026 -- Wed Jun  3 00:35:29 AEST 2026
+  # sqlbilling 20260603.4
+  # Wed Jun  3 07:20:01 UTC 2026 -- Wed Jun  3 17:20:01 AEST 2026
   #
-  # Merged PR 51218: ReadonlySqlAccess-CS02359572
-  # d80a92fa2f3d3d27f03b6cca026e42492efa232f
-  sqlbilling_build_id: '1716831'
+  # Merged PR 51302: Updating-SQLReadonly-SND
+  # 79fdf0629883edf4fdaed1303ec03ab4d377a971
+  sqlbilling_build_id: '1717695'
