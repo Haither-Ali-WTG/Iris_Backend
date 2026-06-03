@@ -876,4 +876,4 @@ clustered_instances:
           web: 2038
           socket: 2039
       timeouts:
-        http_keep_alive: 300
+        http_keep_alive: 3600
