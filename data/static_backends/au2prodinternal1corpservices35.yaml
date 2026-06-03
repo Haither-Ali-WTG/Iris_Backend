@@ -1519,6 +1519,40 @@ au2corprdg.iris-stats.wtg.zone:
       ip: 10.2.64.23
       port: 2037
 
+au2prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lb100345
+      ip: 10.2.64.21
+      port: 2085
+    - name: au2lb100346
+      ip: 10.2.64.22
+      port: 2085
+    - name: au2lb100349
+      ip: 10.2.64.23
+      port: 2085
+
+au2prodfrontend1testrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [au2prodinternal1corpservices35]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: au2lb100345
+      ip: 10.2.64.21
+      port: 2087
+    - name: au2lb100346
+      ip: 10.2.64.22
+      port: 2087
+    - name: au2lb100349
+      ip: 10.2.64.23
+      port: 2087
+
 au2prodelasticbunker1.iris-stats.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
   http_health_check:
