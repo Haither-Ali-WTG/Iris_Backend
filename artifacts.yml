@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260602.1
-  # Mon Jun  1 19:21:13 UTC 2026 -- Tue Jun  2 05:21:13 AEST 2026
+  # Dante Build Artifact 20260603.4
+  # Wed Jun  3 02:36:43 UTC 2026 -- Wed Jun  3 12:36:43 AEST 2026
   #
-  # Merge pull request 51167 from dante_artifact_upgrade into master
-  # be2efde75f3b24dd16f7865e5b70381033d6034b
-  dante_build_id: '1716024'
+  # Merged PR 51214: Automated styx image update
+  # 5e08d9dfa9b32254a1fa46597c57883c4531163d
+  dante_build_id: '1717402'
 
-  # virgil 20260602.2
-  # Mon Jun  1 18:21:54 UTC 2026 -- Tue Jun  2 04:21:54 AEST 2026
+  # virgil 20260603.2
+  # Wed Jun  3 01:00:50 UTC 2026 -- Wed Jun  3 11:00:50 AEST 2026
   #
-  # Merge pull request 51158 from virgil_python_upgrade into master
-  # 00e17587142f398e5f6e55baa26d2ee6f2b002f2
-  virgil_build_id: '1715973'
+  # Merge pull request 51253 from virgil_python_upgrade into master
+  # ff523c07dd1fdb6ab9a7cc86c2695a65129900bd
+  virgil_build_id: '1717302'
 
   # sqlbilling 20260603.2
   # Tue Jun  2 14:35:29 UTC 2026 -- Wed Jun  3 00:35:29 AEST 2026
