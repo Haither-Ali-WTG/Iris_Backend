@@ -23,6 +23,8 @@ variables:
     value: automatic_servers_update
   - name: target_branch
     value: pr_ldap
+  - name: repository
+    value: iris
 
 pool: cicd-v2
 
@@ -125,11 +127,17 @@ steps:
     displayName: Push Commit
 
   - script: |
-      az repos pr list --source-branch $(branch_name) | jq -e '.[0]'
-      if [[ $? -ne 0 ]]; then
-        az repos pr create --auto-complete true --repository $(repository) \
+      az repos pr list \
         --source-branch $(branch_name) \
-        --target-branch $(target_branch) --delete-source-branch true --title "Automated Servers update"
+        --target-branch $(target_branch) | jq -e '.[0]'
+
+      if [[ $? -ne 0 ]]; then
+        az repos pr create \
+          --auto-complete true \
+          --repository $(repository) \
+          --source-branch $(branch_name) \
+          --target-branch $(target_branch) --delete-source-branch true \
+          --title "Automated IIS data upload"
         exit 0
       else
         echo "No PR created as it already exists"
