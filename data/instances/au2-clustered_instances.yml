@@ -11,9 +11,9 @@ clustered_instances:
       frontend:
         maxconn: 50000
         proxy_ports:
-          ssl: [2080]
+          ssl: [8443]
         ports:
-          ssl: [2004]
+          ssl: [443]
       stats:
         ports:
           web: 2037
@@ -890,13 +890,13 @@ clustered_instances:
       frontend:
         maxconn: 50000
         proxy_ports:
-          ssl: [2081]
+          ssl: [8443]
         ports:
-          ssl: [2083]
+          ssl: [443]
       stats:
         ports:
-          web: 2085
-          socket: 2086
+          web: 2068
+          socket: 2069
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
@@ -916,13 +916,13 @@ clustered_instances:
       frontend:
         maxconn: 50000
         proxy_ports:
-          ssl: [2082]
+          ssl: [8443]
         ports:
-          ssl: [2084]
+          ssl: [443]
       stats:
         ports:
-          web: 2087
-          socket: 2088
+          web: 2070
+          socket: 2071
       machine_cluster: au2-prod-frontend-1
       iis_servers: []
       certificates:
