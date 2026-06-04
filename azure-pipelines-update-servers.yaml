@@ -17,16 +17,26 @@ variables:
     value: "WTGOps"
   - name: email
     value: "wtgops@wisetechglobal.com"
+  - name: upgrade_files
+    value: $(System.DefaultWorkingDirectory)/data/static_backends/cww.yaml
+  - name: branch_name
+    value: automatic_servers_update
+  - name: target_branch
+    value: master
+  - name: repository
+    value: iris
 
 pool: cicd-v2
 
 steps:
+  - checkout: self
+    persistCredentials: true
+
   - script: |
       set -euxo pipefail
       pip install -r requirements.txt
     displayName: 'Install requirements'
 
-  # Azure cli and git config taken directly from artifact upgrades pipeline
   - script: |
       set -euxo pipefail
       pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
@@ -54,6 +64,13 @@ steps:
       git config --global user.name $(username)
       git config --global user.email $(email)
     displayName: "Configure git globals"
+
+  - script: |
+      set -euxo pipefail
+      git fetch origin $(target_branch)
+      git branch -D $(branch_name) 2>/dev/null || true
+      git checkout -b $(branch_name) origin/$(target_branch)
+    displayName: "Create and checkout branch"
 
   - task: DownloadPipelineArtifact@2
     displayName: 'Download dante artifact'
@@ -91,3 +108,33 @@ steps:
         -e="azure_kv_name=$(azure_kv_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
+
+  - script: |
+      set -euxo pipefail
+      if [[ $(echo $(upgrade_files) | xargs git status --porcelain) ]]; then
+        git add $(upgrade_files)
+        git commit -m "Automated Push of $(branch_name)"
+      else
+        echo -n "$(date) INFO - There is no difference between commits."
+        set +x
+        echo "##vso[task.setvariable variable=changed]no"
+        exit 0
+      fi
+      git push -f origin $(branch_name)
+      echo -n "$(date) INFO - There is a difference between commits. Attempt to create PR."
+      set +x
+      echo "##vso[task.setvariable variable=changed]yes"
+    displayName: Push Commit
+
+  - script: |
+      az repos pr list --source-branch $(branch_name) | jq -e '.[0]'
+      if [[ $? -ne 0 ]]; then
+        az repos pr create --auto-complete true --repository $(repository) \
+        --source-branch $(branch_name) \
+        --target-branch $(target_branch) --delete-source-branch true --title "Automated Servers update"
+        exit 0
+      else
+        echo "No PR created as it already exists"
+      fi
+    condition: and(succeeded(), eq(variables['changed'], 'yes'))
+    displayName: Create PR and Set Auto-Complete

@@ -1,6 +1,5 @@
 ---
 au.cww-nonprd.wisegrid.net-catchall:
-  user: haproxyadquerier-wisecloud
   DC: test.wisecloud.zone
   OU: root/Computers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
@@ -44,8 +43,8 @@ au.cww-nonprd.wisegrid.net-catchall:
   - ip: 10.2.126.60
     name: AU2WT-SRDH-410
     port: 80
-au.cww.wisegrid.net-catchall:
   user: haproxyadquerier-wisecloud
+au.cww.wisegrid.net-catchall:
   DC: wisecloud.zone
   OU: root/Computers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
@@ -89,8 +88,8 @@ au.cww.wisegrid.net-catchall:
   - ip: 10.2.124.20
     name: AU2WP-SRDH-410
     port: 80
+  user: haproxyadquerier-wisecloud
 blazor.sand.wtg.zone-catchall:
-  user: haproxyadquerier-wtg
   DC: sand.wtg.zone
   OU: root/Computers/Servers/ASPAC/AU2/RemoteDesktop/SessionHost
   balance: random
@@ -122,8 +121,8 @@ blazor.sand.wtg.zone-catchall:
   - ip: 10.2.120.16
     name: AU2SP-TRDH-416
     port: 80
-cww.wisetechglobal.com-catchall:
   user: haproxyadquerier-wtg
+cww.wisetechglobal.com-catchall:
   DC: wtg.zone
   OU: root/Computers/Servers/ASPAC/AU2/RemoteDesktop/WCA
   balance: random
@@ -200,8 +199,8 @@ cww.wisetechglobal.com-catchall:
   - ip: 10.2.47.25
     name: AU2CO-SRDH-425
     port: 80
+  user: haproxyadquerier-wtg
 de.cww-nonprd.wisegrid.net-catchall:
-  user: haproxyadquerier-wisecloud
   DC: test.wisecloud.zone
   OU: root/Computers/EMEA/DE1/RemoteDesktop/SessionHost
   balance: random
@@ -242,8 +241,8 @@ de.cww-nonprd.wisegrid.net-catchall:
   - ip: 10.3.126.48
     name: DE1WT-SRDH-408
     port: 80
-de.cww.wisegrid.net-catchall:
   user: haproxyadquerier-wisecloud
+de.cww.wisegrid.net-catchall:
   DC: wisecloud.zone
   OU: root/Computers/EMEA/DE1/RemoteDesktop/SessionHost
   balance: random
@@ -305,8 +304,8 @@ de.cww.wisegrid.net-catchall:
   - ip: 10.3.125.215
     name: DE1WP-SRDH-615
     port: 80
-us.cww-nonprd.wisegrid.net-catchall:
   user: haproxyadquerier-wisecloud
+us.cww-nonprd.wisegrid.net-catchall:
   DC: test.wisecloud.zone
   OU: root/Computers/AMERICAS/US2/RemoteDesktop/SessionHost
   balance: random
@@ -335,8 +334,8 @@ us.cww-nonprd.wisegrid.net-catchall:
   - ip: 10.4.126.164
     name: US2WT-SRDH-405
     port: 80
-us.cww.wisegrid.net-catchall:
   user: haproxyadquerier-wisecloud
+us.cww.wisegrid.net-catchall:
   DC: wisecloud.zone
   OU: root/Computers/AMERICAS/US2/RemoteDesktop/SessionHost
   balance: random
@@ -383,3 +382,4 @@ us.cww.wisegrid.net-catchall:
   - ip: 10.4.124.21
     name: US2WP-SRDH-411
     port: 80
+  user: haproxyadquerier-wisecloud
