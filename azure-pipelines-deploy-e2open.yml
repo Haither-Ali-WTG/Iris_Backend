@@ -10,7 +10,7 @@ variables:
   - name: key_vault_name
     value: kv-wtg-iris-e2open
   - name: target_dc
-    value: DE1
+    value: e2open-ham
 
 stages:
   - stage: Deploy_Haproxy_E2Open
@@ -28,11 +28,6 @@ stages:
             deploy:
               steps:
                 - checkout: self
-
-                - script: |
-                    set -euxo pipefail
-                    rm -rf $(Build.SourcesDirectory)/data
-                  displayName: 'Remove data directory from checkout'
 
                 - task: InstallSSHKey@0
                   displayName: 'Install an SSH key'
@@ -68,13 +63,6 @@ stages:
                     sourceFolder: iris
                     targetFolder: ansible
 
-                - task: CopyFiles@2
-                  displayName: 'Merge e2open to a single roles folder'
-                  inputs:
-                    sourceFolder: e2open
-                    targetFolder: $(Build.SourcesDirectory)
-                    overWrite: true
-
                 - task: AzureKeyVault@2
                   displayName: 'Get secrets from Azure KV'
                   inputs:
@@ -91,12 +79,22 @@ stages:
                       set -euo pipefail
                       exec ansible-playbook \
                         ansible/deploy_haproxy.yml \
-                        -i data/instances \
+                        -i e2open/data/instances \
                         -u $(user) --diff \
                         -e="build_id=$(Build.BuildId)$(System.JobAttempt)" \
                         -e="{simulation: false}" \
                         -e="{deploy_telegraf: false}" \
+                        -e="iris_data_dir=$(Build.SourcesDirectory)/e2open/data" \
                         -e="key_vault_name=$(key_vault_name)" \
+                        -e="azure_tenantid=8b493985-e1b4-4b95-ade6-98acafdbdb01" \
+                        -e="azure_appid=93d1c3ef-ccb4-406b-b9a2-d47f8828f95e" \
+                        -e="azure_appname=WTGOpsPlatformE2OHAProxy" \
+                        -e="azure_secret_env_var=secretAppIDd47f8828f95e" \
+                        -e="container_registry_host=wtgopstools.azurecr.io" \
+                        -e="container_registry_username=haproxy-e2open-token" \
+                        -e="container_registry_kv_secret_name=WtgopstoolsHaproxyAccessKey" \
+                        -e="keepalived_interface=ens33" \
+                        -e="{keepalived_use_vmac: false}" \
                         -e="skip_keepalived_hosts='$(skip_keepalived_hosts)'" \
                         -e="{instance_auto_restart_allowed: $(instance_auto_restart_allowed)}" \
                         -e="target_dc=$(target_dc)"

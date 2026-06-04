@@ -14,7 +14,9 @@ vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
     # cluster {{ vrrp_instance.machine_cluster_name }}
 
     state BACKUP
-{% if vrrp_instance.config.vlan == 0 %}
+{% if keepalived_interface is defined %}
+    interface {{ keepalived_interface }}
+{% elif vrrp_instance.config.vlan == 0 %}
     interface eth0
 {% else %}
     interface br{{ vrrp_instance.config.vlan }}
@@ -27,8 +29,10 @@ vrrp_instance FIP{{ vrrp_instance.virtual_router_id }} {
     {% else %}
     nopreempt
     {% endif %}
+{% if keepalived_use_vmac | default(true) | bool %}
     use_vmac vrrp{{ vrrp_instance.virtual_router_id }}
     vmac_xmit_base
+{% endif %}
 {% if vrrp_instance.config.vlan == 0 and peer_ips %}
     unicast_peer {
 {% for ip in peer_ips %}
