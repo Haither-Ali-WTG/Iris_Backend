@@ -23,6 +23,8 @@ variables:
     value: automatic_servers_update
   - name: target_branch
     value: pr_ldap
+  - name: repository
+    value: iris
 
 pool: cicd-v2
 
