@@ -137,7 +137,7 @@ steps:
           --repository $(repository) \
           --source-branch $(branch_name) \
           --target-branch $(target_branch) --delete-source-branch true \
-          --title "Automated IIS data upload"
+          --title "Automated servers update"
         exit 0
       else
         echo "No PR created as it already exists"
