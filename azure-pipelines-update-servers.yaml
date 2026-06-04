@@ -22,7 +22,7 @@ variables:
   - name: branch_name
     value: automatic_servers_update
   - name: target_branch
-    value: master
+    value: pr_ldap
 
 pool: cicd-v2
 
@@ -32,7 +32,6 @@ steps:
       pip install -r requirements.txt
     displayName: 'Install requirements'
 
-  # Azure cli and git config taken directly from artifact upgrades pipeline
   - script: |
       set -euxo pipefail
       pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
