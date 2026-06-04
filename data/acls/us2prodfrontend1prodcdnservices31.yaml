@@ -179,6 +179,7 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?customscentre\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?sistemascasa\.com\.mx$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?impexdocs\.com\.au$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?infositetech\.com$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?openits\.co$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?taric\.(es|com)$
@@ -227,6 +228,11 @@ redirects_to_wisetechglobal_com:
     - hdr(host),field(1,:) -m reg -i ^wisetechglobal\.com\.au$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?corefreight\.com$
     - hdr(host),field(1,:) -m reg -i ^(.+\.)?tradewise\.net$
+
+redirects_to_cargowise_infosite:
+  description: "Domains that should redirect to CargoWise Infosite page"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?infositetech\.com$
 
 cargowise_excluded_from_redirect:
   description: "Cargowise domains excluded from default redirects"

@@ -127,6 +127,10 @@ external_domain_redirects:
   order: 79
   actions:
     - redirect location https://www.wisetechglobal.com if redirects_to_wisetechglobal_com
+    - >-
+      redirect location
+      https://cargowise.com/solutions/cargowise-transport/non-asset-based-transport-management/infosite-technologies/
+      if redirects_to_cargowise_infosite
     - redirect location https://smartfreight.com if redirects_to_smartfreight_com_urls
     - >-
       redirect location https://www.linkedin.com/checkpoint/enterprise/login/75714794?application=learning
