@@ -1528,13 +1528,13 @@ au2prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
   servers:
     - name: au2lb100345
       ip: 10.2.64.21
-      port: 2085
+      port: 2068
     - name: au2lb100346
       ip: 10.2.64.22
-      port: 2085
+      port: 2068
     - name: au2lb100349
       ip: 10.2.64.23
-      port: 2085
+      port: 2068
 
 au2prodfrontend1testrdgproxy.iris-stats.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
@@ -1545,13 +1545,13 @@ au2prodfrontend1testrdgproxy.iris-stats.wtg.zone:
   servers:
     - name: au2lb100345
       ip: 10.2.64.21
-      port: 2087
+      port: 2070
     - name: au2lb100346
       ip: 10.2.64.22
-      port: 2087
+      port: 2070
     - name: au2lb100349
       ip: 10.2.64.23
-      port: 2087
+      port: 2070
 
 au2prodelasticbunker1.iris-stats.wtg.zone:
   clustered_instances: [au2prodinternal1corpservices35]
