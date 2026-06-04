@@ -65,6 +65,13 @@ steps:
       git config --global user.email $(email)
     displayName: "Configure git globals"
 
+  - script: |
+      set -euxo pipefail
+      git fetch origin $(target_branch)
+      git branch -D $(branch_name) 2>/dev/null || true
+      git checkout -b $(branch_name) origin/$(target_branch)
+    displayName: "Create and checkout branch"
+
   - task: DownloadPipelineArtifact@2
     displayName: 'Download dante artifact'
     inputs:
@@ -101,13 +108,6 @@ steps:
         -e="azure_kv_name=$(azure_kv_name)"
     env:
       secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
-
-  - script: |
-      set -euxo pipefail
-      git fetch origin $(target_branch)
-      git branch -D $(branch_name) 2>/dev/null || true
-      git checkout -b $(branch_name) origin/$(target_branch)
-    displayName: "Create and checkout branch"
 
   - script: |
       set -euxo pipefail
