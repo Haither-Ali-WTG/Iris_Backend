@@ -23,7 +23,7 @@ variables:
   - name: repository
     value: iris
   - name: branch_name
-    value: automatic_sites_data_upload_testing
+    value: automatic_sites_data_upload
   - name: target_branch
     value: master
   - name: servers_file
@@ -275,7 +275,7 @@ stages:
                   --repository $(repository) \
                   --source-branch $(branch_name) \
                   --target-branch $(target_branch) --delete-source-branch true \
-                  --title "Testing data upload"
+                  --title "Automated IIS data upload"
                 exit 0
               else
                 echo "No PR created as it already exists"
