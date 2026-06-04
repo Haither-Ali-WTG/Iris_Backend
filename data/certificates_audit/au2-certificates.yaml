@@ -223,6 +223,9 @@ au2prodfrontend1prodcwservices26:
   - name: tracking_totalmaritime_com_au
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-wlgcresped
+  - name: trakit_logisteed_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trakitlogi
   - name: ulink_awh_com_au
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-zhhhhwlerp
@@ -332,6 +335,9 @@ au2prodfrontend1testcwservices27:
   - name: tracking_totalmaritime_com_au
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-wlgcresped
+  - name: trakit_logisteed_com
+    resource_group: RG-AU-Prod
+    keyvault: wtg-prod-au-trakitlogi
   - name: ulink_awh_com_au
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-zhhhhwlerp
