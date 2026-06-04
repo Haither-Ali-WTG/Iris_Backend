@@ -22,7 +22,7 @@ variables:
   - name: branch_name
     value: automatic_servers_update
   - name: target_branch
-    value: pr_ldap
+    value: master
   - name: repository
     value: iris
 
