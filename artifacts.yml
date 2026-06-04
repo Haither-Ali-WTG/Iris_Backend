@@ -7,16 +7,16 @@ variables:
   # 4f51d0659d8094d8f6b0fd75df8128db3d32282d
   dante_build_id: '1718637'
 
-  # virgil 20260604.2
-  # Thu Jun  4 01:21:26 UTC 2026 -- Thu Jun  4 11:21:26 AEST 2026
+  # virgil 20260604.7
+  # Thu Jun  4 06:14:51 UTC 2026 -- Thu Jun  4 16:14:51 AEST 2026
   #
-  # Merge pull request 51369 from virgil_python_upgrade into master
-  # 6eb3e219cf3051126c9c1cfe0fd2cfda8ffeb57b
-  virgil_build_id: '1718451'
+  # Merged PR 51414: setting up port VCF 1t 015 switch port
+  # 2fdf53031a18b4ec698fdba1fdbbd60bbedaf501
+  virgil_build_id: '1718764'
 
-  # sqlbilling 20260604.2
-  # Wed Jun  3 16:50:01 UTC 2026 -- Thu Jun  4 02:50:01 AEST 2026
+  # sqlbilling 20260604.7
+  # Thu Jun  4 05:56:02 UTC 2026 -- Thu Jun  4 15:56:02 AEST 2026
   #
-  # Merged PR 51334: SqlReadOnlyAccess-CS02360132
-  # d8d16f841646940835b3f6990751729154670df7
-  sqlbilling_build_id: '1718070'
+  # Merged PR 51381: UpdatingSQLReadOnlyAccessCS02359929
+  # b4856d157c351a19115ead17ddb77354418dfeee
+  sqlbilling_build_id: '1718724'
