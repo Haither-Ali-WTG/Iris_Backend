@@ -1,0 +1,206 @@
+---
+au2-cw1-prod-password-rdg-http:
+  clustered_instances: [au2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: au2wp-srdg-401.wisecloud.zone
+      ip: 10.2.68.111
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-402.wisecloud.zone
+      ip: 10.2.68.112
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-403.wisecloud.zone
+      ip: 10.2.68.113
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-404.wisecloud.zone
+      ip: 10.2.68.114
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-405.wisecloud.zone
+      ip: 10.2.68.115
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-406.wisecloud.zone
+      ip: 10.2.68.116
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-407.wisecloud.zone
+      ip: 10.2.68.117
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-408.wisecloud.zone
+      ip: 10.2.68.118
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-409.wisecloud.zone
+      ip: 10.2.68.119
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-410.wisecloud.zone
+      ip: 10.2.68.120
+      port: 80
+      check_port: 5000
+
+au2-cw1-prod-password-rdg-rpc:
+  clustered_instances: [au2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: au2wp-srdg-411.wisecloud.zone
+      ip: 10.2.68.121
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-412.wisecloud.zone
+      ip: 10.2.68.122
+      port: 80
+      check_port: 5000
+
+au2-cw1-prod-token-rdg-http:
+  clustered_instances: [au2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: au2wp-srdg-413.wisecloud.zone
+      ip: 10.2.68.123
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-414.wisecloud.zone
+      ip: 10.2.68.124
+      port: 80
+      check_port: 5000
+
+au2-cw1-prod-token-rdg-rpc:
+  clustered_instances: [au2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: au2wp-srdg-419.wisecloud.zone
+      ip: 10.2.68.129
+      port: 80
+      check_port: 5000
+    - name: au2wp-srdg-420.wisecloud.zone
+      ip: 10.2.68.130
+      port: 80
+      check_port: 5000
+
+au2-cw1-test-password-rdg-http:
+  clustered_instances: [au2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: au2wt-srdg-401.test.wisecloud.zone
+      ip: 10.2.76.21
+      port: 80
+      check_port: 5000
+    - name: au2wt-srdg-402.test.wisecloud.zone
+      ip: 10.2.76.22
+      port: 80
+      check_port: 5000
+
+au2-cw1-test-password-rdg-rpc:
+  clustered_instances: [au2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: au2wt-srdg-403.test.wisecloud.zone
+      ip: 10.2.76.23
+      port: 80
+      check_port: 5000
+    - name: au2wt-srdg-404.test.wisecloud.zone
+      ip: 10.2.76.24
+      port: 80
+      check_port: 5000
+
+au2-cw1-test-token-rdg-http:
+  clustered_instances: [au2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: au2wt-srdg-405.test.wisecloud.zone
+      ip: 10.2.76.25
+      port: 80
+      check_port: 5000
+    - name: au2wt-srdg-406.test.wisecloud.zone
+      ip: 10.2.76.26
+      port: 80
+      check_port: 5000
+
+au2-cw1-test-token-rdg-rpc:
+  clustered_instances: [au2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: au2wt-srdg-407.test.wisecloud.zone
+      ip: 10.2.76.27
+      port: 80
+      check_port: 5000
+    - name: au2wt-srdg-408.test.wisecloud.zone
+      ip: 10.2.76.28
+      port: 80
+      check_port: 5000

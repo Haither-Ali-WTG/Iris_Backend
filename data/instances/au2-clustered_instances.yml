@@ -5,12 +5,15 @@ clustered_instances:
     au2corprdg:
       # per-clustered-instance settings (overrides) go here, for example:
       dc: AU2
+      defaults:
+        health_check_interval: 10000
+        bind_vip: 10.2.64.135
       frontend:
-        maxconn: 20000
+        maxconn: 50000
         proxy_ports:
-          ssl: [2080]
+          ssl: [8443]
         ports:
-          ssl: [2004]
+          ssl: [443]
       stats:
         ports:
           web: 2037
@@ -877,3 +880,55 @@ clustered_instances:
           socket: 2039
       timeouts:
         http_keep_alive: 3600
+
+    au2prodfrontend1prodrdgproxy:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
+      defaults:
+        health_check_interval: 10000
+        bind_vip: 10.2.64.140
+      frontend:
+        maxconn: 50000
+        proxy_ports:
+          ssl: [8443]
+        ports:
+          ssl: [443]
+      stats:
+        ports:
+          web: 2068
+          socket: 2069
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wisetechglobal-cn
+          cms_resource_group: RG-AU-Corp
+
+    au2prodfrontend1testrdgproxy:
+      # per-clustered-instance settings (overrides) go here, for example:
+      dc: AU2
+      defaults:
+        health_check_interval: 10000
+        bind_vip: 10.2.64.141
+      frontend:
+        maxconn: 50000
+        proxy_ports:
+          ssl: [8443]
+        ports:
+          ssl: [443]
+      stats:
+        ports:
+          web: 2070
+          socket: 2071
+      machine_cluster: au2-prod-frontend-1
+      iis_servers: []
+      certificates:
+        - name: star-wisegrid-net
+          cms_resource_group: RG-AU-Prod
+        - name: star-wisetechglobal-com
+          cms_resource_group: RG-AU-Corp
+        - name: star-wisetechglobal-cn
+          cms_resource_group: RG-AU-Corp

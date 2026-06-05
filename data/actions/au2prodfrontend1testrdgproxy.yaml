@@ -1,0 +1,39 @@
+---
+secure_cookie:
+  description: |-
+    Set secure attribute
+  order: 60
+  actions:
+    - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
+
+cw_test_password_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct RPC RDG connections to the TEST password RDG RPC backend
+  order: 90
+  actions:
+    - use_backend cw1-test-password-rdg-rpc if rdg_rpc_path cw_test_password_rdg_host
+
+cw_test_password_rdg_http:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct HTTP RDG connections to the TEST password RDG HTTP backend
+  order: 91
+  actions:
+    - use_backend cw1-test-password-rdg-http if !rdg_rpc_path cw_test_password_rdg_host
+
+cw_test_token_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct RPC RDG connections to the TEST token RDG RPC backend
+  order: 92
+  actions:
+    - use_backend cw1-test-token-rdg-rpc if rdg_rpc_path cw_test_token_rdg_host
+
+cw_test_token_rdg_http:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct HTTP RDG connections to the TEST token RDG HTTP backend
+  order: 93
+  actions:
+    - use_backend cw1-test-token-rdg-http if !rdg_rpc_path cw_test_token_rdg_host
