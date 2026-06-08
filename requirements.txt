@@ -117,7 +117,7 @@ jmespath==1.1.0
     # via botocore
 joblib==1.5.3
     # via nltk
-joserfc==1.7.0
+joserfc==1.7.1
     # via authlib
 jq==1.11.0
     # via -r requirements.in
@@ -273,7 +273,7 @@ tomlkit==0.15.0
     #   pylint
     #   safety
     #   yq
-tqdm==4.67.3
+tqdm==4.68.1
     # via nltk
 truststore==0.10.4
     # via safety
