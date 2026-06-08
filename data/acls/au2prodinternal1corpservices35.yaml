@@ -136,3 +136,12 @@ custom_internal_corp_au2prod1_ocp_wtg_ws:
     - hdr(host) -i trino.wtg.zone
     - hdr(host) -i pez.k8s.wtg.zone
     # *.k8s.sand.wtg.zone is already included in backend selection
+
+artifactory_wtg_zone:
+  description: "au2 artifactory urls"
+  tests:
+    - hdr(host) -i artifactory.wtg.zone
+    - hdr(host) -i artifactory-prod-au2.wtg.zone
+    - hdr(host) -i artifactory-prod.wtg.zone
+    - hdr(host) -i artifactory-test-au2.wtg.zone
+    - hdr(host) -i artifactory-test.wtg.zone
