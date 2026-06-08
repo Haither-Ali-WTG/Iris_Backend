@@ -122,7 +122,7 @@ us2kvl-v1.wtg.zone:
       ip: 10.4.128.19
       port: 8006
       settings: check ssl verify none
-    - name: us2kvl00794.wt.zone
+    - name: us2kvl00794.wtg.zone
       ip: 10.4.128.20
       port: 8006
       settings: check ssl verify none
