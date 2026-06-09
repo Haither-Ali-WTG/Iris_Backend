@@ -5,14 +5,18 @@
   when: group_item.value | length > 1
   block:
     - name: Compare the first file to others
-      command: diff -q "{{ group_item.value[0] }}" "{{ item }}"
+      command: diff -u "{{ group_item.value[0] }}" "{{ item }}"
       register: diff_result
       changed_when: false
+      failed_when: false
       loop: "{{ group_item.value[1:] }}"
 
-    - name: Show different stats
+    - name: Fail when group files differ
       fail:
-        msg: >-
-          The instance {{ group_item.key }} got the different stats: {{ item }}
-      when: item.rc != 0
-      loop: "{{ diff_result.results }}"
+        msg: |-
+          The instance {{ group_item.key }} got different stats:
+          {% for item in diff_result.results if item.rc != 0 %}
+          --- {{ item.item }}
+          {{ item.stdout | default(item.stderr | default('')) }}
+          {% endfor %}
+      when: diff_result.results | rejectattr('rc', 'equalto', 0) | list | length > 0
