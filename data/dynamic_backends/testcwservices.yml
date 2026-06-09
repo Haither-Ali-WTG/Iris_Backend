@@ -2,6 +2,7 @@
 # Glow
 - name_regex: ^www-[A-Za-z0-9]{6,8}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
+  http2: true
   http_health_check:
     enabled: true
     http_path: /Glow/wtg/ready
@@ -16,6 +17,7 @@
 # Glow (Portals)
 - name_regex: ^www-[A-Za-z0-9]{6,8}(-cn)?\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
+  http2: true
   http_health_check:
     enabled: true
     http_path: /Portals/wtg/ready
@@ -30,6 +32,7 @@
 # Glow (Services)
 - name_regex: ^svc-[A-Za-z0-9]{6,8}\.(wisegrid|wisetechglobal)\.(net|cn)$
   encryption: true
+  http2: true
   http_health_check:
     enabled: true
     http_path: "/"
