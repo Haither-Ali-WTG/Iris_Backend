@@ -135,4 +135,9 @@ custom_internal_corp_au2prod1_ocp_wtg_ws:
     - hdr(host) -i people-process.wisetechglobal.com
     - hdr(host) -i trino.wtg.zone
     - hdr(host) -i pez.k8s.wtg.zone
+    - hdr(host) -i artifactory.wtg.zone
+    - hdr(host) -i artifactory-prod-au2.wtg.zone
+    - hdr(host) -i artifactory-prod.wtg.zone
+    - hdr(host) -i artifactory-test-au2.wtg.zone
+    - hdr(host) -i artifactory-test.wtg.zone
     # *.k8s.sand.wtg.zone is already included in backend selection
