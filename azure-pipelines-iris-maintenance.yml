@@ -273,6 +273,7 @@ jobs:
             -e="cluster_name=$(System.JobName)"
             -e="specific_host=$(specific_host)"
             -e="cluster_enabled=$(enabled)"
+            -e="iris_data_dir=$(Build.SourcesDirectory)/data"
         env:
           ANSIBLE_HOST_KEY_CHECKING: false
           secretAppIdDf4b4604e176: $(secretAppIdDf4b4604e176)
@@ -416,6 +417,7 @@ jobs:
             -e="ad_domain=$(ad_domain)"
             -e="cluster_name=$(System.JobName)"
             -e="skip_pre_checks=$(skip_pre_checks)"
+            -e="iris_data_dir=$(Build.SourcesDirectory)/data"
             -e"{simulation: false}"
             -e="ansible_ssh_extra_args='-o PreferredAuthentications=password'"
             --limit="$(selected_node)"
@@ -434,6 +436,7 @@ jobs:
           args: >-
             --diff -e="dc=$(dc)"
             -e="cluster_name=$(System.JobName)"
+            -e="iris_data_dir=$(Build.SourcesDirectory)/data"
           failOnStdErr: false
         env:
           azure_devops_token: $(System.AccessToken)
