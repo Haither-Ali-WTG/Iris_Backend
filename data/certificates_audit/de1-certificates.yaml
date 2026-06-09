@@ -59,6 +59,9 @@ de1prodfrontend1prodcwservices26:
   - name: ediweb_oceanbridge_co_nz
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-ediwebocea
+  - name: ev360_evcargo_net
+    resource_group: RG-EU-Prod
+    keyvault: wtg-prod-eu-ev360evcar
   - name: logisticssolutions_sal_sa
     resource_group: RG-AU-Prod
     keyvault: wtg-prod-au-bdqpjiejkz
