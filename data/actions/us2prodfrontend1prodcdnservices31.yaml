@@ -12,10 +12,10 @@ addressvalidation_us2_v2_redirect:
   order: 70
   actions:
     - >-
-      http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]
+      http-request redirect code 308 location /geoaddressing%[path,regsub(^/v2,)]
       if addressvalidation-us2_wisegrid_net v2_path !{ query -m found }
     - >-
-      http-request redirect code 301 location /geoaddressing%[path,regsub(^/v2,)]?%[query]
+      http-request redirect code 308 location /geoaddressing%[path,regsub(^/v2,)]?%[query]
       if addressvalidation-us2_wisegrid_net v2_path { query -m found }
 
 wtg_idp_redirect:
