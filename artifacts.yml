@@ -1,22 +1,22 @@
 ---
 variables:
-  # Dante Build Artifact 20260609.2
-  # Mon Jun  8 20:01:32 UTC 2026 -- Tue Jun  9 06:01:32 AEST 2026
+  # Dante Build Artifact 20260609.3
+  # Tue Jun  9 01:41:31 UTC 2026 -- Tue Jun  9 11:41:31 AEST 2026
   #
-  # Merge pull request 51544 from dante_artifact_upgrade into master
-  # 0d0b05b9092ce58da03732fef9c7ef05f04478ec
-  dante_build_id: '1722632'
+  # Merge pull request 51571 from dante_artifact_upgrade into master
+  # 66886784359e45f2d5593756a6cf023743d43780
+  dante_build_id: '1722908'
 
-  # virgil 20260609.2
-  # Mon Jun  8 18:21:47 UTC 2026 -- Tue Jun  9 04:21:47 AEST 2026
+  # virgil 20260609.6
+  # Tue Jun  9 00:45:30 UTC 2026 -- Tue Jun  9 10:45:30 AEST 2026
   #
-  # Merge pull request 51530 from virgil_python_upgrade into master
-  # 2aaacf8499b994ae03b7de61d0c76da690ec477e
-  virgil_build_id: '1722526'
+  # Merged PR 51553: Add specs of VCF machines
+  # 9a8e6878181143b98eb63e0547cc560f7e0ba743
+  virgil_build_id: '1722847'
 
-  # sqlbilling 20260609.2
-  # Mon Jun  8 14:39:17 UTC 2026 -- Tue Jun  9 00:39:17 AEST 2026
+  # sqlbilling 20260609.4
+  # Tue Jun  9 01:12:08 UTC 2026 -- Tue Jun  9 11:12:08 AEST 2026
   #
-  # Updated us2-prod-frontend-1.yml
-  # bedd8c5216d8025ab7faf05567d759e7528e0e32
-  sqlbilling_build_id: '1722387'
+  # Updated de1-prod-frontend-1.yml
+  # af087a5acb1b5a1a704dad7ef02baf3b76f2364a
+  sqlbilling_build_id: '1722885'
