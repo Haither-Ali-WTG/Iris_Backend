@@ -778,6 +778,23 @@ us2prodinternal1sistemascasa3.iris-stats.wtg.zone:
       ip: 10.4.83.26
       port: 2129
 
+us2prodinternal1tenantservices.iris-stats.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00541
+      ip: 10.4.83.24
+      port: 2072
+    - name: us2lbl00542
+      ip: 10.4.83.25
+      port: 2072
+    - name: us2lbl00920
+      ip: 10.4.83.26
+      port: 2072
+
 # end of iris-stats services
 
 rundeck-dev.wt-envaseconnect.cloud:

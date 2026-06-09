@@ -1035,3 +1035,26 @@ clustered_instances:
           - best_practice_2023
       timeouts:
         http_keep_alive: 4
+
+    us2prodinternal1tenantservices:
+      # us2-prod-internal-1-tenant-services
+      dc: US2
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [3032]
+          ssl: [3033]
+      stats:
+        ports:
+          web: 2072
+          socket: 2073
+      machine_cluster: us2-corp-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-certconnect-com-au
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4

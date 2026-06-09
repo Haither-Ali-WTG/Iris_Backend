@@ -496,3 +496,26 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wisecloud-zone
           cms_resource_group: RG-AU-Prod
+
+    de1prodinternal1tenantservices:
+      # de1-prod-internal-1-tenant-services
+      dc: DE1
+      frontend:
+        maxconn: 20000
+        ports:
+          plaintext: [3032]
+          ssl: [3033]
+      stats:
+        ports:
+          web: 2072
+          socket: 2073
+      machine_cluster: de1-prod-internal-1
+      iis_servers: []
+      certificates:
+        - name: star-certconnect-com-au
+          cms_resource_group: RG-AU-Prod
+      cipher:
+        profiles:
+          - best_practice_2023
+      timeouts:
+        http_keep_alive: 4
