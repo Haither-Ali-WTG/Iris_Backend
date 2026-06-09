@@ -1051,8 +1051,8 @@ clustered_instances:
       machine_cluster: us2-corp-internal-1
       iis_servers: []
       certificates:
-        - name: star-certconnect-com-au
-          cms_resource_group: RG-AU-Prod
+        - name: star-pierbridge-net
+          cms_resource_group: RG-US-Prod
       cipher:
         profiles:
           - best_practice_2023

@@ -511,9 +511,7 @@ clustered_instances:
           socket: 2073
       machine_cluster: de1-prod-internal-1
       iis_servers: []
-      certificates:
-        - name: star-certconnect-com-au
-          cms_resource_group: RG-AU-Prod
+      certificates: []
       cipher:
         profiles:
           - best_practice_2023
