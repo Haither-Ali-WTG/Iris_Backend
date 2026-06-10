@@ -482,6 +482,23 @@ de1corpinternaltcp.iris-stats.wtg.zone:
       ip: 10.3.83.33
       port: 2347
 
+de1prodinternal1tenantservices.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00931
+      ip: 10.3.83.31
+      port: 2072
+    - name: de1lbl00932
+      ip: 10.3.83.32
+      port: 2072
+    - name: de1lbl00933
+      ip: 10.3.83.33
+      port: 2072
+
 sa1prodfrontend1sqltcp9.iris-stats.wtg.zone:
   clustered_instances: [de1prodinternal1services30]
   http_health_check:
