@@ -1,11 +1,11 @@
 ---
 variables:
-  # Dante Build Artifact 20260609.3
-  # Tue Jun  9 01:41:31 UTC 2026 -- Tue Jun  9 11:41:31 AEST 2026
+  # Dante Build Artifact 20260610.1
+  # Wed Jun 10 05:41:00 UTC 2026 -- Wed Jun 10 15:41:00 AEST 2026
   #
-  # Merge pull request 51571 from dante_artifact_upgrade into master
-  # 66886784359e45f2d5593756a6cf023743d43780
-  dante_build_id: '1722908'
+  # Merge pull request 51650 from automatic_ghe-actions-runner_image_upgrade into master
+  # fd941f60c23a7809d6c2263420c6b413cbd4fe29
+  dante_build_id: '1724038'
 
   # virgil 20260609.6
   # Tue Jun  9 00:45:30 UTC 2026 -- Tue Jun  9 10:45:30 AEST 2026
