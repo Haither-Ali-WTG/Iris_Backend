@@ -549,3 +549,7 @@ us2prodfrontend1editrade1:
   - name: star-editrade-cl
     resource_group: RG-US-Prod
     keyvault: wtg-prod-us-stareditra
+us2prodinternal1tenantservices:
+  - name: star-pierbridge-net
+    resource_group: RG-US-Prod
+    keyvault: wtg-prod-us-kjcmhscwqw
