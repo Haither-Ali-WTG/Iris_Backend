@@ -48,7 +48,7 @@ hh1-art-e2open-com:
     enabled: false
   servers:
     - name: hh1art
-      ip: 10.212.0.19
+      ip: 10.212.0.42
       port: 443
 
 e2proxy:
