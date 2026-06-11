@@ -74,7 +74,6 @@ custom_url_actions:
     - use_backend widprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i tracking.wideline.biz }
     - use_backend us0sna_webtracker_wisegrid_net if { hdr(host),field(1,:) -i us0snachb.webtracker.wisegrid.net }
     - use_backend lmjewr_webtracker_wisegrid_net if { hdr(host),field(1,:) -i lmjewr2.webtracker.wisegrid.net }
-    - use_backend boaprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i boaprd2.webtracker.wisegrid.net }
     - use_backend md2prd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i md2prd2.webtracker.wisegrid.net }
     - use_backend acuhst_webtracker_wisegrid_net if { hdr(host),field(1,:) -i acuhst2.webtracker.wisegrid.net }
     - use_backend aidprd_webtracker_wisegrid_net if { hdr(host),field(1,:) -i aidprd2.webtracker.wisegrid.net }
