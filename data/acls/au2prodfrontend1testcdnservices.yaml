@@ -102,3 +102,8 @@ v2_path:
   description: "API v2 path for address validation"
   tests:
     - path_reg ^/v2(/|$)
+
+star_staging_transport_wisetechglobal_com:
+  description: "*.staging.transport.wisetechglobal.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?staging\.transport\.wisetechglobal\.com$
