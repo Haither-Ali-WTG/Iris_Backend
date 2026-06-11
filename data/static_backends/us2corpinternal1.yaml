@@ -82,12 +82,13 @@ us2k3s-v1.wtg.zone:
     server us2chl23994 10.4.239.94:443 check ssl verify none
     server us2chl23995 10.4.239.95:443 check ssl verify none
 
-us2kvl-v0.wtg.zone:
+us2kvl-v1.wtg.zone:
   clustered_instances: [us2corpinternal1]
   http_health_check:
     enabled: false
   cookie:
-    name: US2KVLV0
+    name: US2KVLV1
+    secure: true
   servers:
     - name: us2kvl00404.wtg.zone
       ip: 10.4.128.16
@@ -101,14 +102,6 @@ us2kvl-v0.wtg.zone:
       ip: 10.4.128.13
       port: 8006
       settings: check ssl verify none
-
-us2kvl-v1.wtg.zone:
-  clustered_instances: [us2corpinternal1]
-  http_health_check:
-    enabled: false
-  cookie:
-    name: US2KVLV1
-  servers:
     - name: us2kvl00568.wtg.zone
       ip: 10.4.128.14
       port: 8006
@@ -117,12 +110,32 @@ us2kvl-v1.wtg.zone:
       ip: 10.4.128.15
       port: 8006
       settings: check ssl verify none
+    - name: us2kvl00571.wtg.zone
+      ip: 10.4.128.12
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00792.wtg.zone
+      ip: 10.4.128.18
+      port: 8006
+      settings: check ssl verify none
     - name: us2kvl00793.wtg.zone
       ip: 10.4.128.19
       port: 8006
       settings: check ssl verify none
+    - name: us2kvl00794.wtg.zone
+      ip: 10.4.128.20
+      port: 8006
+      settings: check ssl verify none
     - name: us2kvl00808.wtg.zone
       ip: 10.4.128.29
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00809.wtg.zone
+      ip: 10.4.128.30
+      port: 8006
+      settings: check ssl verify none
+    - name: us2kvl00810.wtg.zone
+      ip: 10.4.128.31
       port: 8006
       settings: check ssl verify none
     - name: us2kvl00811.wtg.zone
