@@ -13,20 +13,20 @@ test-canasta.editrade.cl:
     - name: w1.us2prod1
       ip: 10.4.237.15
       port: 30401
-      check_port: 30500
+      check_port: 30501
     - name: w2.us2prod1
       ip: 10.4.237.16
       port: 30401
-      check_port: 30500
+      check_port: 30501
     - name: w3.us2prod1
       ip: 10.4.237.17
       port: 30401
-      check_port: 30500
+      check_port: 30501
     - name: w4.us2prod1
       ip: 10.4.237.18
       port: 30401
-      check_port: 30500
+      check_port: 30501
     - name: w5.us2prod1
       ip: 10.4.237.19
       port: 30401
-      check_port: 30500
+      check_port: 30501
