@@ -4067,7 +4067,7 @@ api-cpr.wisegrid.net:
       ip: 10.2.214.19
       port: 30400
 
-star_transport_wisetechglobal_catchall:
+star-staging-transport-wisetechglobal-catchall:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
     name: CTOPROD

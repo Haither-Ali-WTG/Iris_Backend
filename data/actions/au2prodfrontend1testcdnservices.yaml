@@ -133,4 +133,4 @@ star_staging_transport_wisetechglobal_backend:
     Direct requests for star.staging.transport.wisetechglobal.com to OCP
   order: 80
   actions:
-    - use_backend star_staging_transport_wisetechglobal_catchall if star_staging_transport_wisetechglobal_com
+    - use_backend star-staging-transport-wisetechglobal-catchall if star_staging_transport_wisetechglobal_com

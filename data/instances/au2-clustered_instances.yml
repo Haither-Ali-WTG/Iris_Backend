@@ -801,6 +801,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Corp
         - name: star-wisetechacademy-com
           cms_resource_group: RG-AU-Prod
+        - name: star-staging-transport-wisetechglobal-com
+          cms_resource_group: RG-AU-Sand
       cipher:
         profiles:
           - best_practice_2023
