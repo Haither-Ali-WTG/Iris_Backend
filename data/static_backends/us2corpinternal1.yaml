@@ -353,9 +353,26 @@ usdocs.wtg.zone:
   http_health_check:
     enabled: false
   servers:
-    - name: us2co-sdoc-601
-      ip: 10.4.67.116
-      port: 80
+    - name: us2chl23991
+      ip: 10.4.239.91
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23992
+      ip: 10.4.239.92
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23993
+      ip: 10.4.239.93
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23994
+      ip: 10.4.239.94
+      port: 443
+      settings: check ssl verify none
+    - name: us2chl23995
+      ip: 10.4.239.95
+      port: 443
+      settings: check ssl verify none
 
 wtg-sw.sand.wtg.zone-us:
   clustered_instances: [us2corpinternal1]
