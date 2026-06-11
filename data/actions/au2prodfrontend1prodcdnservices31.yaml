@@ -126,7 +126,7 @@ star_transport_wisetechglobal_backend:
     Direct requests for star.transport.wisetechglobal.com to OCP
   order: 80
   actions:
-    - use_backend star_transport_wisetechglobal_backend if star_transport_wisetechglobal_com
+    - use_backend star_transport_wisetechglobal_catchall if star_transport_wisetechglobal_com
 
 tariff_management_portal_backend:
   description: |-

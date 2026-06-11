@@ -1280,7 +1280,7 @@ ocmbe-staging.wisegrid.net:
       ip: 10.2.214.19
       port: 30400
 
-star_staging_transport_wisetechglobal_backend:
+star_staging_transport_wisetechglobal_catchall:
   clustered_instances: [au2prodfrontend1testcdnservices]
   cookie:
     name: CTOTEST
