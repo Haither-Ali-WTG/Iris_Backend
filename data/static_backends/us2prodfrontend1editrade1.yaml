@@ -8,30 +8,25 @@ test-canasta.editrade.cl:
     method: GET
     http_path: /healthz/ready
     check_expect: '200'
-  default_server: inter 10s fall 3 rise 2
+  default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.us2prod1
       ip: 10.4.237.15
-      port: 30400
+      port: 30401
       check_port: 30500
-      settings: check ssl send-proxy-v2
     - name: w2.us2prod1
       ip: 10.4.237.16
-      port: 30400
+      port: 30401
       check_port: 30500
-      settings: check ssl send-proxy-v2
     - name: w3.us2prod1
       ip: 10.4.237.17
-      port: 30400
+      port: 30401
       check_port: 30500
-      settings: check ssl send-proxy-v2
     - name: w4.us2prod1
       ip: 10.4.237.18
-      port: 30400
+      port: 30401
       check_port: 30500
-      settings: check ssl send-proxy-v2
     - name: w5.us2prod1
       ip: 10.4.237.19
-      port: 30400
+      port: 30401
       check_port: 30500
-      settings: check ssl send-proxy-v2
