@@ -340,17 +340,29 @@ peppol-inbound-prod.wisetechglobal.com:
 
 gssportal.wtg.zone:
   clustered_instances: [au2prodinternal1services30]
-  full_override: |
-    backend gssportal_wtg_zone
-    option httpchk
-    http-check send meth HEAD uri /wtg/ready ver HTTP/1.1 hdr Host gssportal.wtg.zone
-    http-check expect rstatus 200
-    cookie gssp insert indirect nocache dynamic
-    server w1.au2prod1 10.2.213.15:30100 check ssl send-proxy-v2
-    server w2.au2prod1 10.2.213.16:30100 check ssl send-proxy-v2
-    server w3.au2prod1 10.2.213.17:30100 check ssl send-proxy-v2
-    server w4.au2prod1 10.2.213.18:30100 check ssl send-proxy-v2
-    server w5.au2prod1 10.2.213.19:30100 check ssl send-proxy-v2
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+    check_expect: '200'
+  cookie:
+    name: GSSP
+  default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod1
+      ip: 10.2.213.15
+      port: 30100
+    - name: w2.au2prod1
+      ip: 10.2.213.16
+      port: 30100
+    - name: w3.au2prod1
+      ip: 10.2.213.17
+      port: 30100
+    - name: w4.au2prod1
+      ip: 10.2.213.18
+      port: 30100
+    - name: w5.au2prod1
+      ip: 10.2.213.19
+      port: 30100
 
 au2prod1-prodinternal-ingress:
   clustered_instances: [au2prodinternal1services30]
