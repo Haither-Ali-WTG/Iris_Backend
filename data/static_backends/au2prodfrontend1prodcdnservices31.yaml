@@ -1378,40 +1378,6 @@ classificationassistant.cargowise.com:
       ip: 10.2.67.112
       port: 3000
 
-ausyd.transport.wisetechglobal.com-web:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  backend_name: ausyd.transport.web
-  cookie:
-    name: LB
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-    check_expect: '200'
-  servers:
-    - name: au2wp-sdkr-501b--web1
-      ip: 10.2.67.57
-      port: 3001
-    - name: au2wp-sdkr-501c--web2
-      ip: 10.2.67.58
-      port: 3001
-
-ausyd.transport.wisetechglobal.com-api:
-  clustered_instances: [au2prodfrontend1prodcdnservices31]
-  backend_name: ausyd.transport.api
-  cookie:
-    name: LB
-  http_health_check:
-    enabled: true
-    http_path: /wtg/ready
-    check_expect: '200'
-  servers:
-    - name: au2wp-sdkr-501b--api1
-      ip: 10.2.67.57
-      port: 3501
-    - name: au2wp-sdkr-501c--api2
-      ip: 10.2.67.58
-      port: 3501
-
 ocmbe.wisegrid.net:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
@@ -4083,6 +4049,31 @@ api-cpr.wisegrid.net:
   http_health_check:
     enabled: false
     http_path: /wtg/ready
+  default_server: check ssl inter 10s fall 3 rise 2
+  servers:
+    - name: w1.au2prod2
+      ip: 10.2.214.15
+      port: 30400
+    - name: w2.au2prod2
+      ip: 10.2.214.16
+      port: 30400
+    - name: w3.au2prod2
+      ip: 10.2.214.17
+      port: 30400
+    - name: w4.au2prod2
+      ip: 10.2.214.18
+      port: 30400
+    - name: w5.au2prod2
+      ip: 10.2.214.19
+      port: 30400
+
+star-transport-wisetechglobal-catchall:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  cookie:
+    name: CTOPROD
+  http_health_check:
+    enabled: false
+    http_path: /
   default_server: check ssl inter 10s fall 3 rise 2
   servers:
     - name: w1.au2prod2

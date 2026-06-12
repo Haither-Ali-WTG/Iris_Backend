@@ -127,3 +127,10 @@ https_redirect:
   actions:
     - redirect scheme https if star_wisegrid_net !{ ssl_fc }
     - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }
+
+star_staging_transport_wisetechglobal_backend:
+  description: |-
+    Direct requests for star.staging.transport.wisetechglobal.com to OCP
+  order: 80
+  actions:
+    - use_backend star-staging-transport-wisetechglobal-catchall if star_staging_transport_wisetechglobal_com

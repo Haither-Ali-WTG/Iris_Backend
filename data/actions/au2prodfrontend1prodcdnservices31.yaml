@@ -121,13 +121,12 @@ compliance_borderwise_backend:
   actions:
     - use_backend compliance-au_borderwise_com if compliance_borderwise_com
 
-ausyd_transport_backend:
+star_transport_wisetechglobal_backend:
   description: |-
-    Direct requests for ausyd.transport.wisetechglobal.com to the correct transport backend by path
+    Direct requests for star.transport.wisetechglobal.com to OCP
   order: 80
   actions:
-    - use_backend ausyd_transport_api if ausyd_transport_wisetechglobal_com transport_api_path
-    - use_backend ausyd_transport_web if ausyd_transport_wisetechglobal_com !transport_api_path
+    - use_backend star-transport-wisetechglobal-catchall if star_transport_wisetechglobal_com
 
 tariff_management_portal_backend:
   description: |-
