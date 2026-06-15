@@ -70,7 +70,7 @@ confluent-kafka==2.14.2
     # via -r requirements.in
 coverage[toml]==7.14.1
     # via pytest-cov
-cryptography==48.0.0
+cryptography==49.0.0
     # via
     #   ansible-core
     #   ansible-lint
@@ -90,7 +90,7 @@ dparse==0.6.4
     # via
     #   safety
     #   safety-schemas
-filelock==3.29.1
+filelock==3.29.4
     # via
     #   ansible-lint
     #   safety
@@ -189,11 +189,11 @@ pygments==2.20.0
     # via
     #   pytest
     #   rich
-pylint==4.0.5
+pylint==4.0.6
     # via -r requirements.in
 pyspnego==0.12.1
     # via requests-ntlm
-pytest==9.0.3
+pytest==9.1.0
     # via
     #   -r requirements.in
     #   pytest-cov
@@ -273,7 +273,7 @@ tomlkit==0.15.0
     #   pylint
     #   safety
     #   yq
-tqdm==4.68.1
+tqdm==4.68.2
     # via nltk
 truststore==0.10.4
     # via safety
