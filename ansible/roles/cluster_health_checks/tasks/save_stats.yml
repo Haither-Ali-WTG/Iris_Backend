@@ -12,7 +12,8 @@
           sub(/[[:space:]]+$/, "", status);
           split(status, parts, /[[:space:]]+/);
 
-          if (parts[1] == "UP" || parts[1] == "DOWN" || parts[1] == "MAINT" || parts[1] == "DRAIN" || parts[1] == "NOLB") {
+            if (parts[1] == "UP" || parts[1] == "DOWN" || parts[1] == "MAINT" ||
+              parts[1] == "DRAIN" || parts[1] == "NOLB") {
             return parts[1];
           }
 
