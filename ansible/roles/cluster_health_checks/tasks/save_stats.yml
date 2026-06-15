@@ -7,6 +7,17 @@
         BEGIN {
           col_pxname = col_svname = col_addr = col_status = -1;
         }
+        function normalize_status(status, parts) {
+          sub(/^[[:space:]]+/, "", status);
+          sub(/[[:space:]]+$/, "", status);
+          split(status, parts, /[[:space:]]+/);
+
+          if (parts[1] == "UP" || parts[1] == "DOWN" || parts[1] == "MAINT" || parts[1] == "DRAIN" || parts[1] == "NOLB") {
+            return parts[1];
+          }
+
+          return status;
+        }
         FNR==1 {
           # Find the positions of the needed columns
           for (i=1; i<=NF; i++) {
@@ -25,7 +36,7 @@
           }
         }
         FNR>1 {
-          printf("%s,%s,%s,%s\n", $col_pxname, $col_svname, $col_addr, $col_status);
+          printf("%s,%s,%s,%s\n", $col_pxname, $col_svname, $col_addr, normalize_status($col_status));
         }'
     executable: /bin/bash
   become: yes
