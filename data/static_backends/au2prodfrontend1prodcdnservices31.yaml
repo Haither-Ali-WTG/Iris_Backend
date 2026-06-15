@@ -3879,6 +3879,34 @@ www.e2open.com:
       ip: 10.2.69.37
       port: 80
 
+inttra.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.inttra.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
 wisetechacademy.com:
   clustered_instances: [au2prodfrontend1prodcdnservices31]
   cookie:
@@ -4091,3 +4119,59 @@ star-transport-wisetechglobal-catchall:
     - name: w5.au2prod2
       ip: 10.2.214.19
       port: 30400
+
+logistyx.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.logistyx.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+blujaysolutions.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
+
+www.blujaysolutions.com:
+  clustered_instances: [au2prodfrontend1prodcdnservices31]
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: AU2CO-SIIS-403A
+      ip: 10.2.69.36
+      port: 80
+    - name: AU2CO-SIIS-403B
+      ip: 10.2.69.37
+      port: 80
