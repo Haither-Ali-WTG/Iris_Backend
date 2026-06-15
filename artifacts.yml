@@ -7,12 +7,12 @@ variables:
   # 1b074c7283c6c736cd0928d972b1148096773ed0
   dante_build_id: '1725092'
 
-  # virgil 20260611.6
-  # Thu Jun 11 06:10:45 UTC 2026 -- Thu Jun 11 16:10:45 AEST 2026
+  # virgil 20260616.2
+  # Mon Jun 15 18:21:35 UTC 2026 -- Tue Jun 16 04:21:35 AEST 2026
   #
-  # Merged PR 51716: Add DNS for prod2 clusters
-  # 772685940771fa3ab2e00307eb4fdbf03f0933e1
-  virgil_build_id: '1725028'
+  # Merge pull request 51853 from virgil_python_upgrade into master
+  # 7de1246f7f173b61f0b66a44ca157e8f5e55ae28
+  virgil_build_id: '1728889'
 
   # sqlbilling 20260615.6
   # Mon Jun 15 11:33:10 UTC 2026 -- Mon Jun 15 21:33:10 AEST 2026
