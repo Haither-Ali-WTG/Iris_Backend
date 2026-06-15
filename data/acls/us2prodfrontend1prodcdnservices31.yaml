@@ -754,6 +754,7 @@ e2open_com_urls:
   description: "e2open.com and www.e2open.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?inttra\.com$
 
 addressvalidation-us2_wisegrid_net:
   description: "addressvalidation-us2.wisegrid.net address validation service"

@@ -744,6 +744,9 @@ group_wisetechglobal_com_certificate_covered_domains:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?editrade\.cl$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?openits\.co$
     - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?inttra\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?logistyx\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?blujaysolutions\.com$
 
 wpad_wisetechglobal_com_host:
   description: "WPAD proxy configuration host"
@@ -872,6 +875,7 @@ e2open_com_urls:
   description: "e2open.com and www.e2open.com"
   tests:
     - hdr(host),field(1,:) -m reg -i ^(www\.)?e2open\.com$
+    - hdr(host),field(1,:) -m reg -i ^(www\.)?inttra\.com$
 
 star_wisetechacademy_com:
   description: "*.wisetechacademy.com"

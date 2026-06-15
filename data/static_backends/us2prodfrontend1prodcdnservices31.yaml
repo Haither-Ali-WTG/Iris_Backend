@@ -1935,3 +1935,93 @@ e2open.com-us:
     http-check expect status 200
     server US2CO-SIIS-403A 10.4.67.38:80 check
     server US2CO-SIIS-403B 10.4.67.39:80 check
+
+inttra.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: inttra.com
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.inttra.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: www.inttra.com
+  http_health_check:
+    enabled: true
+    http_path: /healthcheck
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+logistyx.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: logistyx.com
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.logistyx.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: www.logistyx.com
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+blujaysolutions.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: blujaysolutions.com
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
+
+www.blujaysolutions.com-us:
+  clustered_instances: [us2prodfrontend1prodcdnservices31]
+  backend_name: www.blujaysolutions.com
+  http_health_check:
+    enabled: true
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: US2CO-SIIS-403A
+      ip: 10.4.67.38
+      port: 80
+    - name: US2CO-SIIS-403B
+      ip: 10.4.67.39
+      port: 80
