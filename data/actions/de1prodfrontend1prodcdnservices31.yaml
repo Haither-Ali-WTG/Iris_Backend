@@ -100,3 +100,10 @@ cmb_de_backend:
   order: 80
   actions:
     - use_backend cmb-de_wisegrid_net if cmb-de_wisegrid_net
+
+de1prod_ocp_backend_selection:
+  description: |-
+    Backend selection for de1prod OCP external production services
+  order: 80
+  actions:
+    - use_backend de1prod1-prodexternal-catchall if custom_external_de1prod1_ocp_wtg_ws

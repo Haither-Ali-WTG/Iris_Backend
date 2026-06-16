@@ -80,3 +80,8 @@ cmb-test-de_wisegrid_net:
   tests:
     - hdr(host),field(1,:) -i cmb-test-de.wisegrid.net
     - hdr(host),field(1,:) -i cmb-test.wisegrid.net
+
+custom_external_de1prod1_ocp_wtg_ws:
+  description: "Custom external de1prod1 OCP WTG WS hosts"
+  tests:
+    - hdr(host) -i registration-code-validation-stage.wisegrid.net
