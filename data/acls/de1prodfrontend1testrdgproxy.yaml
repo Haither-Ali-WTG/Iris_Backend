@@ -1,4 +1,4 @@
-----
+---
 rdg_rpc_path:
   description: RPC rdg path /rpc
   tests:
