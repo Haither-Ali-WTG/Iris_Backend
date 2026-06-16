@@ -2,103 +2,83 @@
 alpha-authservice.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
-    enabled: true
-    method: GET
-    http_path: /echo
-    check_expect: '200'
+    enabled: false
   servers:
     - name: au2a93dckl01a
       ip: 10.8.130.21
       port: 8029
-      settings: check
 
 s3docservicealpha.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
-    enabled: true
-    method: GET
-    http_path: /echo
-    check_expect: '200'
+    enabled: false
   servers:
     - name: au2a93dckl01a
       ip: 10.8.130.21
       port: 8029
-      settings: check
 
 alpha-docconverter.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
-    enabled: true
-    method: GET
-    http_path: /echo
-    check_expect: '200'
+    enabled: false
   servers:
     - name: au2a93docw01a
       ip: 10.8.130.11
       port: 5000
-      settings: check
 
 alphaoutputapi.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
     enabled: true
     method: GET
-    http_path: /echo
+    http_path: /
     check_expect: '200'
   servers:
     - name: au2a93webw01a
       ip: 10.8.127.31
       port: 80
-      settings: check
 
 listingalphaau.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
-    enabled: true
-    method: GET
-    http_path: /echo
-    check_expect: '200'
+    enabled: false
   servers:
     - name: au2a93dckl01a
       ip: 10.8.130.21
       port: 8029
-      settings: check
 
 alphaapi.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
     enabled: true
     method: GET
-    http_path: /echo
+    http_path: /
     check_expect: '200'
   servers:
     - name: au2a93webw01a
       ip: 10.8.127.31
       port: 80
-      settings: check
 
 alphaimport.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
     enabled: true
     method: GET
-    http_path: /echo
+    http_path: /
     check_expect: '200'
   servers:
     - name: au2a93webw01a
       ip: 10.8.127.31
       port: 80
-      settings: check
 
 alphaoutputreport.uat.ad.impexdocs.com:
   clustered_instances: [au2prodinternal1tenantservices]
   http_health_check:
     enabled: true
     method: GET
-    http_path: /echo
+    http_path: /
     check_expect: '200'
   servers:
     - name: au2a93webw01a
       ip: 10.8.127.31
       port: 80
-      settings: check
