@@ -295,6 +295,40 @@ de1prodfrontend1prodproxy.iris-stats.wtg.zone:
       ip: 10.3.64.23
       port: 2059
 
+de1prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2074
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2074
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2074
+
+de1prodfrontend1testrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [de1prodinternal1services30]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: de1lbl00306
+      ip: 10.3.64.21
+      port: 2076
+    - name: de1lbl00307
+      ip: 10.3.64.22
+      port: 2076
+    - name: de1lbl00387
+      ip: 10.3.64.23
+      port: 2076
+
 de1prodfrontend1sqltcp1.iris-stats.wtg.zone:
   clustered_instances: [de1prodinternal1services30]
   http_health_check:
