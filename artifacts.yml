@@ -14,9 +14,9 @@ variables:
   # 7de1246f7f173b61f0b66a44ca157e8f5e55ae28
   virgil_build_id: '1728889'
 
-  # sqlbilling 20260616.4
-  # Tue Jun 16 09:29:11 UTC 2026 -- Tue Jun 16 19:29:11 AEST 2026
+  # sqlbilling 20260617.1
+  # Tue Jun 16 15:44:00 UTC 2026 -- Wed Jun 17 01:44:00 AEST 2026
   #
-  # Updated us2-prod-frontend-1.yml
-  # 934d7182dc91824892f43d56cf4f1a7f2b3d4bc2
-  sqlbilling_build_id: '1729520'
+  # Merged PR 51920: CS02373863-Sql_readonly
+  # bf688b3afff0195b74ea01397733b46d87c92fcb
+  sqlbilling_build_id: '1729750'
