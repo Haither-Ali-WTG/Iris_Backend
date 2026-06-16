@@ -666,7 +666,7 @@ us2-cw1-test-token-rdg-rpc:
   cookie:
     name: RAPP
   balance: source
- fullconn: 56000
+  fullconn: 56000
   servers:
     - name: us2wt-srdg-407.test.wisecloud.zone
       ip: 10.4.76.27
