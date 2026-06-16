@@ -218,6 +218,10 @@ de1-cw1-prod-password-rdg-http:
   balance: random
   fullconn: 96000
   servers:
+    - name: de1wp-srdg-9.wisecloud.zone
+      ip: 10.3.68.19
+      port: 80
+      check_port: 5000
     - name: de1wp-srdg-10.wisecloud.zone
       ip: 10.3.68.20
       port: 80
@@ -228,10 +232,6 @@ de1-cw1-prod-password-rdg-http:
       check_port: 5000
     - name: de1wp-srdg-12.wisecloud.zone
       ip: 10.3.68.22
-      port: 80
-      check_port: 5000
-    - name: de1wp-srdg-9.wisecloud.zone
-      ip: 10.3.68.19
       port: 80
       check_port: 5000
     - name: de1wp-srdg-409.wisecloud.zone
