@@ -1,0 +1,15 @@
+---
+rdg_rpc_path:
+  description: RPC rdg path /rpc
+  tests:
+    - path_beg -i /rpc
+
+cw_test_password_rdg_host:
+  description: host address for password auth TEST RD Gateway
+  tests:
+    - hdr(host),field(1,:) -i rd-de1wt-pss-4-1.wisegrid.net
+
+cw_test_token_rdg_host:
+  description: host address for token auth TEST RD Gateway
+  tests:
+    - hdr(host),field(1,:) -i rd-de1wt-tkn-4-1.wisegrid.net
