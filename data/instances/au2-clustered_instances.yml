@@ -829,6 +829,8 @@ clustered_instances:
         - name: containerchain-com
         - name: star-certconnect-com-au
           cms_resource_group: RG-AU-Prod
+        - name: star-impexdocs-com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
@@ -953,6 +955,8 @@ clustered_instances:
       iis_servers: []
       certificates:
         - name: star-certconnect-com-au
+          cms_resource_group: RG-AU-Prod
+        - name: star-uat-ad-impexdocs-com
           cms_resource_group: RG-AU-Prod
       cipher:
         profiles:

@@ -1,2 +1,7 @@
 ---
-{}
+https_redirect:
+  description: |-
+    Redirect HTTP to HTTPS for internal impexdocs tenant domains
+  order: 79
+  actions:
+    - redirect scheme https if star_uat_ad_impexdocs_com !{ ssl_fc }

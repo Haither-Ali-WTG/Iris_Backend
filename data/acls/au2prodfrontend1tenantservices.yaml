@@ -83,3 +83,8 @@ rdg-test_containerchain_com_host:
   description: "rdg-test.containerchain.com"
   tests:
     - hdr(host) -i rdg-test.containerchain.com
+
+star_impexdocs_com:
+  description: "*.impexdocs.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?impexdocs\.com$

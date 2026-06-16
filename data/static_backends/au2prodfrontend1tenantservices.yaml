@@ -667,3 +667,81 @@ sso.containerchain.com:
       ip: 10.2.182.32
       port: 80
       settings: check
+
+id-alpha-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93dckl01a
+      ip: 10.8.130.21
+      port: 8080
+      settings: check
+
+alpha-authservice-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93dckl01a
+      ip: 10.8.130.21
+      port: 8029
+      settings: check
+
+app-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93dckl01a
+      ip: 10.8.130.21
+      port: 8081
+      settings: check
+
+alphabpanel-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93docw01a
+      ip: 10.8.130.11
+      port: 80
+      settings: check
+
+coreapialpha-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93dckl01a
+      ip: 10.8.130.21
+      port: 8057
+      settings: check
+
+alphaau-uat.impexdocs.com:
+  clustered_instances: [au2prodfrontend1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2a93webw01a
+      ip: 10.8.127.31
+      port: 80
+      settings: check

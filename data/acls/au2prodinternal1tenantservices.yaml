@@ -1,2 +1,5 @@
 ---
-{}
+star_uat_ad_impexdocs_com:
+  description: "*.uat.ad.impexdocs.com"
+  tests:
+    - hdr(host),field(1,:) -m reg -i ^([^\.]+\.)?uat\.ad\.impexdocs\.com$
