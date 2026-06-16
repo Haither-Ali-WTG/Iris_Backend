@@ -320,3 +320,89 @@ de1-cw1-prod-token-rdg-rpc:
       ip: 10.3.68.23
       port: 80
       check_port: 5000
+
+de1-cw1-test-password-rdg-http:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: de1wt-srdg-401.test.wisecloud.zone
+      ip: 10.3.76.21
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-402.test.wisecloud.zone
+      ip: 10.3.76.22
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-password-rdg-rpc:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-403.test.wisecloud.zone
+      ip: 10.3.76.23
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-404.test.wisecloud.zone
+      ip: 10.3.76.24
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-token-rdg-http:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-405.test.wisecloud.zone
+      ip: 10.3.76.25
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-406.test.wisecloud.zone
+      ip: 10.3.76.26
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-token-rdg-rpc:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-407.test.wisecloud.zone
+      ip: 10.3.76.27
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-408.test.wisecloud.zone
+      ip: 10.3.76.28
+      port: 80
+      check_port: 5000
