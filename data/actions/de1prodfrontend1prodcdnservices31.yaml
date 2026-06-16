@@ -101,4 +101,3 @@ cmb_de_backend:
   order: 80
   actions:
     - use_backend cmb-de_wisegrid_net if cmb-de_wisegrid_net
-
