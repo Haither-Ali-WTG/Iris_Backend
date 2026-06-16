@@ -1,26 +1,39 @@
 ---
 secure_cookie:
-  description: Set secure attribute
+  description: |-
+    Set secure attribute
   order: 60
   actions:
     - http-response replace-header Set-Cookie (.*) "\1; Secure" if https !secured_cookie
 
 cw_prod_password_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct RPC RDG connections to the CW PROD password RDG RPC backend
   order: 90
   actions:
     - use_backend cw1-prod-password-rdg-rpc if rdg_rpc_path cw_prod_password_rdg_host
 
 cw_prod_password_rdg_http:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct HTTP RDG connections to the CW PROD password RDG HTTP backend
   order: 91
   actions:
     - use_backend cw1-prod-password-rdg-http if !rdg_rpc_path cw_prod_password_rdg_host
 
 cw_prod_token_rdg_rpc:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct RPC RDG connections to the CW PROD token RDG RPC backend
   order: 92
   actions:
     - use_backend cw1-prod-token-rdg-rpc if rdg_rpc_path cw_prod_token_rdg_host
 
 cw_prod_token_rdg_http:
+  description: |-
+    RPC RDG connections need to be funnelled to separate backends, this will
+    direct HTTP RDG connections to the CW PROD token RDG HTTP backend
   order: 93
   actions:
     - use_backend cw1-prod-token-rdg-http if !rdg_rpc_path cw_prod_token_rdg_host
