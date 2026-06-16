@@ -35,6 +35,12 @@ de1-prod-frontend-1:
       preempt: true
       virtual_router_id: 15
       priority: [de1lbl00387, de1lbl00306, de1lbl00307]
+    - description: WiseCloud RDP (TEST)
+      ip: 10.3.64.141
+      vlan: 1064
+      preempt: false
+      virtual_router_id: 16
+      priority: [de1lbl00306, de1lbl00307, de1lbl00387]
 
 de1-prod-internal-1:
   machines:
