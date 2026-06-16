@@ -16,6 +16,9 @@ backend {{ (backend.backend_name | default(name, true)) | replace(".", "_") }}
 {%   endif %}
 {%   if backend.http_health_check.enabled %}
 option httpchk
+{%     if backend.http_health_check.connect is defined and backend.http_health_check.connect is not sameas false %}
+http-check connect{% if backend.http_health_check.connect is not sameas true and backend.http_health_check.connect %} {{ backend.http_health_check.connect }}{% endif %}
+{%     endif %}
 http-check send meth {{ backend.http_health_check.method | default('HEAD') }} uri {{ backend.http_health_check.http_path }} ver HTTP/1.1 hdr Host {{ name }}
 {%-    if backend.http_health_check.xforwardedproto_header | default(true) %} hdr X-Forwarded-Proto https
 {%     endif %}
