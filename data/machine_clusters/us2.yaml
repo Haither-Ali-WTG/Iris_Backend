@@ -35,6 +35,12 @@ us2-prod-frontend-1:
       preempt: true
       virtual_router_id: 16
       priority: [us2lbl00386, us2lbl00384, us2lbl00385]
+    - description: WiseCloud RDP (TEST)
+      ip: 10.4.64.141
+      vlan: 1064
+      preempt: false
+      virtual_router_id: 17
+      priority: [us2lbl00384, us2lbl00385, us2lbl00386]
 
 us2-prod-elastic-bunker-1:
   machines:
