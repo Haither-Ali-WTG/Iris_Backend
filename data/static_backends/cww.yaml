@@ -1537,6 +1537,9 @@ us.cww.wisegrid.net-catchall:
   - ip: 10.4.124.46
     name: US2WP-SRDH-436
     port: 80
+  - ip: 10.4.124.47
+    name: US2WP-SRDH-437
+    port: 80
   - ip: 10.4.124.45
     name: US2WP-SRDH-435
     port: 80
