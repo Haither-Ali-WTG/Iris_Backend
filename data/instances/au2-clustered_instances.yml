@@ -510,6 +510,8 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: trakit_logisteed_com
           cms_resource_group: RG-AU-Prod
+        - name: connect_hecksher_com
+          cms_resource_group: RG-AU-Prod
       cipher:
         profiles:
           - best_practice_2023
