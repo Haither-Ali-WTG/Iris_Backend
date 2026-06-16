@@ -118,7 +118,7 @@ de1prod1-testexternal-catchall:
     enabled: false
     http_path: /healthz/ready
     check_expect: '200'
-  balance: roundrobin
+  balance: random
   default_server: check ssl send-proxy-v2 inter 10s fall 3 rise 2
   servers:
     - name: w1.de1prod1
