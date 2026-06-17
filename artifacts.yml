@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260617.1
-  # Tue Jun 16 23:41:13 UTC 2026 -- Wed Jun 17 09:41:13 AEST 2026
+  # Dante Build Artifact 20260617.3
+  # Wed Jun 17 07:01:10 UTC 2026 -- Wed Jun 17 17:01:10 AEST 2026
   #
-  # Merge pull request 51867 from dante_artifact_upgrade into master
-  # cf80568905d097747f31ed1d622c2e307dc1e2bd
-  dante_build_id: '1730039'
+  # Merge pull request 51983 from dante_artifact_upgrade into master
+  # e387849e9a4380574a010ed9eab1d4339e7d0d25
+  dante_build_id: '1730434'
 
-  # virgil 20260616.2
-  # Mon Jun 15 18:21:35 UTC 2026 -- Tue Jun 16 04:21:35 AEST 2026
+  # virgil 20260617.4
+  # Wed Jun 17 06:11:41 UTC 2026 -- Wed Jun 17 16:11:41 AEST 2026
   #
-  # Merge pull request 51853 from virgil_python_upgrade into master
-  # 7de1246f7f173b61f0b66a44ca157e8f5e55ae28
-  virgil_build_id: '1728889'
+  # Merged PR 51953: BGW-Edge-Server-deployment
+  # 32f4fbd0969198cc9262982c5aa9797cffaf6a2a
+  virgil_build_id: '1730382'
 
   # sqlbilling 20260617.1
   # Tue Jun 16 15:44:00 UTC 2026 -- Wed Jun 17 01:44:00 AEST 2026
