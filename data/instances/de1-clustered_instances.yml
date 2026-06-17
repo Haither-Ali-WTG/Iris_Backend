@@ -197,6 +197,8 @@ clustered_instances:
           cms_resource_group: RG-EU-Prod
         - name: ev360_evcargo_net
           cms_resource_group: RG-EU-Prod
+        - name: connect_hecksher_com
+          cms_resource_group: RG-EU-Prod
       cipher:
         profiles:
           - best_practice_2023
