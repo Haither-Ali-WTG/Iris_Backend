@@ -109,3 +109,35 @@ peppol-smp-stage-de.wisegrid.net:
     - name: w5.de1prod1
       ip: 10.3.237.19
       port: 30400
+
+de1prod1-testexternal-catchall:
+  clustered_instances: [de1prodfrontend1testcdnservices]
+  cookie:
+    name: K8STEST
+  http_health_check:
+    enabled: true
+    http_path: /healthz/ready
+    check_expect: '200'
+  balance: random
+  default_server: check ssl inter 10s fall 3 rise 2
+  servers:
+    - name: w1.de1prod1
+      ip: 10.3.237.15
+      port: 30400
+      check_port: 30500
+    - name: w2.de1prod1
+      ip: 10.3.237.16
+      port: 30400
+      check_port: 30500
+    - name: w3.de1prod1
+      ip: 10.3.237.17
+      port: 30400
+      check_port: 30500
+    - name: w4.de1prod1
+      ip: 10.3.237.18
+      port: 30400
+      check_port: 30500
+    - name: w5.de1prod1
+      ip: 10.3.237.19
+      port: 30400
+      check_port: 30500

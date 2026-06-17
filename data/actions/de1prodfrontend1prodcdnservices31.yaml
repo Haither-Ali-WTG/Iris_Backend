@@ -87,12 +87,13 @@ proget_de_wisetechglobal_com_access_control:
   actions:
     - http-request deny if !wtg_src !azure_ext_controlled_src proget-de_wisetechglobal_com
 
-de1prod2_prodexternal_catchall_backend:
+de1prod1_prodexternal_catchall_backend:
   description: |-
-    Direct requests for the openshift
+    Backend selection for de1prod1 OCP external production services
   order: 80
   actions:
     - use_backend de1prod1-prodexternal-catchall if proget-de_wisetechglobal_com azure_ext_controlled_src wtg_src
+    - use_backend de1prod1-prodexternal-catchall if custom_external_de1prod1_ocp_wtg_ws
 
 cmb_de_backend:
   description: |-

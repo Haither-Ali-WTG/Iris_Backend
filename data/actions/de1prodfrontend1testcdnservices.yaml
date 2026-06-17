@@ -68,3 +68,10 @@ https_redirect:
   order: 80
   actions:
     - redirect scheme https if star_identity_wisetechglobal_com !{ ssl_fc }
+
+de1prod1_testexternal_catchall_backend:
+  description: |-
+    Backend selection for de1prod1 OCP external test services
+  order: 80
+  actions:
+    - use_backend de1prod1-testexternal-catchall if custom_external_de1prod1_ocp_wtg_ws
