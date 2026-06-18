@@ -28,6 +28,8 @@ iris_stats_urls:
     - hdr(host),field(1,:) -i au2sandinternal2testservices0.wtg.zone
     - hdr(host),field(1,:) -i au2sandinternalrdg.wtg.zone
     - hdr(host),field(1,:) -i au2sandinternaltcp.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1prodrdgproxy.wtg.zone
+    - hdr(host),field(1,:) -i au2prodfrontend1testrdgproxy.wtg.zone
 
 star_iris-stats_wtg_zone:
   description: "*.iris-stats.wtg.zone"

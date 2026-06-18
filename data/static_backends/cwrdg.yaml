@@ -172,6 +172,7 @@ au2-cw1-test-token-rdg-http:
   encryption: false
   cookie:
     name: RAPP
+    secure: true
   balance: random
   fullconn: 56000
   servers:
@@ -193,6 +194,7 @@ au2-cw1-test-token-rdg-rpc:
   encryption: false
   cookie:
     name: RAPP
+    secure: true
   balance: source
   fullconn: 56000
   servers:
@@ -202,5 +204,485 @@ au2-cw1-test-token-rdg-rpc:
       check_port: 5000
     - name: au2wt-srdg-408.test.wisecloud.zone
       ip: 10.2.76.28
+      port: 80
+      check_port: 5000
+
+de1-cw1-prod-password-rdg-http:
+  clustered_instances: [de1prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: de1wp-srdg-9.wisecloud.zone
+      ip: 10.3.68.19
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-10.wisecloud.zone
+      ip: 10.3.68.20
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-11.wisecloud.zone
+      ip: 10.3.68.21
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-12.wisecloud.zone
+      ip: 10.3.68.22
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-409.wisecloud.zone
+      ip: 10.3.68.35
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-410.wisecloud.zone
+      ip: 10.3.68.36
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-411.wisecloud.zone
+      ip: 10.3.68.37
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-412.wisecloud.zone
+      ip: 10.3.68.38
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-413.wisecloud.zone
+      ip: 10.3.68.39
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-414.wisecloud.zone
+      ip: 10.3.68.40
+      port: 80
+      check_port: 5000
+
+de1-cw1-prod-password-rdg-rpc:
+  clustered_instances: [de1prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wp-srdg-415.wisecloud.zone
+      ip: 10.3.68.41
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-416.wisecloud.zone
+      ip: 10.3.68.42
+      port: 80
+      check_port: 5000
+
+de1-cw1-prod-token-rdg-http:
+  clustered_instances: [de1prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: de1wp-srdg-401.wisecloud.zone
+      ip: 10.3.68.23
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-402.wisecloud.zone
+      ip: 10.3.68.24
+      port: 80
+      check_port: 5000
+
+de1-cw1-prod-token-rdg-rpc:
+  clustered_instances: [de1prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wp-srdg-401.wisecloud.zone
+      ip: 10.3.68.23
+      port: 80
+      check_port: 5000
+    - name: de1wp-srdg-402.wisecloud.zone
+      ip: 10.3.68.24
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-password-rdg-http:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: de1wt-srdg-401.test.wisecloud.zone
+      ip: 10.3.76.21
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-402.test.wisecloud.zone
+      ip: 10.3.76.22
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-password-rdg-rpc:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-403.test.wisecloud.zone
+      ip: 10.3.76.23
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-404.test.wisecloud.zone
+      ip: 10.3.76.24
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-token-rdg-http:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-405.test.wisecloud.zone
+      ip: 10.3.76.25
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-406.test.wisecloud.zone
+      ip: 10.3.76.26
+      port: 80
+      check_port: 5000
+
+de1-cw1-test-token-rdg-rpc:
+  clustered_instances: [de1prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: de1wt-srdg-407.test.wisecloud.zone
+      ip: 10.3.76.27
+      port: 80
+      check_port: 5000
+    - name: de1wt-srdg-408.test.wisecloud.zone
+      ip: 10.3.76.28
+      port: 80
+      check_port: 5000
+
+us2-cw1-prod-password-rdg-http:
+  clustered_instances: [us2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: us2wp-srdg-1.wisecloud.zone
+      ip: 10.4.68.11
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-2.wisecloud.zone
+      ip: 10.4.68.12
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-3.wisecloud.zone
+      ip: 10.4.68.13
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-4.wisecloud.zone
+      ip: 10.4.68.14
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-5.wisecloud.zone
+      ip: 10.4.68.15
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-6.wisecloud.zone
+      ip: 10.4.68.16
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-7.wisecloud.zone
+      ip: 10.4.68.17
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-8.wisecloud.zone
+      ip: 10.4.68.18
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-9.wisecloud.zone
+      ip: 10.4.68.19
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-10.wisecloud.zone
+      ip: 10.4.68.20
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-11.wisecloud.zone
+      ip: 10.4.68.21
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-12.wisecloud.zone
+      ip: 10.4.68.22
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-13.wisecloud.zone
+      ip: 10.4.68.23
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-14.wisecloud.zone
+      ip: 10.4.68.24
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-15.wisecloud.zone
+      ip: 10.4.68.25
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-16.wisecloud.zone
+      ip: 10.4.68.26
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-17.wisecloud.zone
+      ip: 10.4.68.27
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-18.wisecloud.zone
+      ip: 10.4.68.28
+      port: 80
+      check_port: 5000
+
+us2-cw1-prod-password-rdg-rpc:
+  clustered_instances: [us2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: us2wp-srdg-19.wisecloud.zone
+      ip: 10.4.68.29
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-20.wisecloud.zone
+      ip: 10.4.68.30
+      port: 80
+      check_port: 5000
+
+us2-cw1-prod-token-rdg-http:
+  clustered_instances: [us2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: us2wp-srdg-407.wisecloud.zone
+      ip: 10.4.68.39
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-408.wisecloud.zone
+      ip: 10.4.68.40
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-409.wisecloud.zone
+      ip: 10.4.68.41
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-410.wisecloud.zone
+      ip: 10.4.68.42
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-411.wisecloud.zone
+      ip: 10.4.68.43
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-412.wisecloud.zone
+      ip: 10.4.68.44
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-413.wisecloud.zone
+      ip: 10.4.68.45
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-414.wisecloud.zone
+      ip: 10.4.68.46
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-415.wisecloud.zone
+      ip: 10.4.68.47
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-416.wisecloud.zone
+      ip: 10.4.68.48
+      port: 80
+      check_port: 5000
+
+us2-cw1-prod-token-rdg-rpc:
+  clustered_instances: [us2prodfrontend1prodrdgproxy]
+  backend_name: cw1-prod-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: us2wp-srdg-401.wisecloud.zone
+      ip: 10.4.68.33
+      port: 80
+      check_port: 5000
+    - name: us2wp-srdg-402.wisecloud.zone
+      ip: 10.4.68.34
+      port: 80
+      check_port: 5000
+
+us2-cw1-test-password-rdg-http:
+  clustered_instances: [us2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 96000
+  servers:
+    - name: us2wt-srdg-401.test.wisecloud.zone
+      ip: 10.4.76.21
+      port: 80
+      check_port: 5000
+    - name: us2wt-srdg-402.test.wisecloud.zone
+      ip: 10.4.76.22
+      port: 80
+      check_port: 5000
+
+us2-cw1-test-password-rdg-rpc:
+  clustered_instances: [us2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-password-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: us2wt-srdg-403.test.wisecloud.zone
+      ip: 10.4.76.23
+      port: 80
+      check_port: 5000
+    - name: us2wt-srdg-404.test.wisecloud.zone
+      ip: 10.4.76.24
+      port: 80
+      check_port: 5000
+
+us2-cw1-test-token-rdg-http:
+  clustered_instances: [us2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-http
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: random
+  fullconn: 56000
+  servers:
+    - name: us2wt-srdg-405.test.wisecloud.zone
+      ip: 10.4.76.25
+      port: 80
+      check_port: 5000
+    - name: us2wt-srdg-406.test.wisecloud.zone
+      ip: 10.4.76.26
+      port: 80
+      check_port: 5000
+
+us2-cw1-test-token-rdg-rpc:
+  clustered_instances: [us2prodfrontend1testrdgproxy]
+  backend_name: cw1-test-token-rdg-rpc
+  http_health_check:
+    enabled: true
+    http_path: /wtg/ready
+  encryption: false
+  cookie:
+    name: RAPP
+    secure: true
+  balance: source
+  fullconn: 56000
+  servers:
+    - name: us2wt-srdg-407.test.wisecloud.zone
+      ip: 10.4.76.27
+      port: 80
+      check_port: 5000
+    - name: us2wt-srdg-408.test.wisecloud.zone
+      ip: 10.4.76.28
       port: 80
       check_port: 5000

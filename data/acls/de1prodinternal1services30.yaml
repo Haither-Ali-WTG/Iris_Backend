@@ -56,6 +56,8 @@ iris_stats_urls:
     - hdr(host),field(1,:) -i de1prodfrontend1sqltcp1.wtg.zone
     - hdr(host),field(1,:) -i de1prodfrontend1testcwservices27.wtg.zone
     - hdr(host),field(1,:) -i de1prodinternal1services30.wtg.zone
+    - hdr(host),field(1,:) -i de1prodfrontend1prodrdgproxy.wtg.zone
+    - hdr(host),field(1,:) -i de1prodfrontend1testrdgproxy.wtg.zone
 
 star_iris-stats_wtg_zone:
   description: "*.iris-stats.wtg.zone"

@@ -842,6 +842,40 @@ us2prodinternal1tenantservices.iris-stats.wtg.zone:
       ip: 10.4.83.26
       port: 2072
 
+us2prodfrontend1prodrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2131
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2131
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2131
+
+us2prodfrontend1testrdgproxy.iris-stats.wtg.zone:
+  clustered_instances: [us2corpinternal1]
+  http_health_check:
+    enabled: true
+    http_path: /
+  encryption: false
+  servers:
+    - name: us2lbl00384
+      ip: 10.4.64.21
+      port: 2133
+    - name: us2lbl00385
+      ip: 10.4.64.22
+      port: 2133
+    - name: us2lbl00386
+      ip: 10.4.64.23
+      port: 2133
+
 # end of iris-stats services
 
 rundeck-dev.wt-envaseconnect.cloud:
