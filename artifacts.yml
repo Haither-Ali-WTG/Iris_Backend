@@ -1,18 +1,18 @@
 ---
 variables:
-  # Dante Build Artifact 20260618.2
-  # Thu Jun 18 02:41:09 UTC 2026 -- Thu Jun 18 12:41:09 AEST 2026
+  # Dante Build Artifact 20260619.1
+  # Fri Jun 19 06:01:12 UTC 2026 -- Fri Jun 19 16:01:12 AEST 2026
   #
-  # Merge pull request 52045 from dante_artifact_upgrade into master
-  # 25d986976202abe6e3e44855e90d261f6e99d47e
-  dante_build_id: '1731219'
+  # Merge pull request 52117 from dante_artifact_upgrade into master
+  # 64d76a3dfa97e6b892a10c5ebef573972b8f6678
+  dante_build_id: '1732326'
 
-  # virgil 20260618.8
-  # Thu Jun 18 01:49:47 UTC 2026 -- Thu Jun 18 11:49:47 AEST 2026
+  # virgil 20260619.2
+  # Fri Jun 19 04:57:55 UTC 2026 -- Fri Jun 19 14:57:55 AEST 2026
   #
-  # Merged PR 52029: bgw-edge-server-vlan-update
-  # f45520cd7d34c6088dce6ac8b929daa5688e0060
-  virgil_build_id: '1731175'
+  # Merged PR 52111: add vlan 1031 to dat_vmware_profile for DE1
+  # e91145982ef2a36528f067f77afd6829bc3b2860
+  virgil_build_id: '1732260'
 
   # sqlbilling 20260619.6
   # Fri Jun 19 00:58:03 UTC 2026 -- Fri Jun 19 10:58:03 AEST 2026
