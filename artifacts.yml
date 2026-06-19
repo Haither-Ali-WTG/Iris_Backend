@@ -14,9 +14,9 @@ variables:
   # f45520cd7d34c6088dce6ac8b929daa5688e0060
   virgil_build_id: '1731175'
 
-  # sqlbilling 20260619.2
-  # Thu Jun 18 19:20:18 UTC 2026 -- Fri Jun 19 05:20:18 AEST 2026
+  # sqlbilling 20260619.6
+  # Fri Jun 19 00:58:03 UTC 2026 -- Fri Jun 19 10:58:03 AEST 2026
   #
-  # Updated de1-prod-frontend-1.yml
-  # b52b383ab814b0fdf5ff1f946597efade8f76f58
-  sqlbilling_build_id: '1731868'
+  # CS02375798: de-prod-frontend-1: CL7LIO: revert removal of 91.151.78.153
+  # c23f828e72d3504f87f64d1c45fdb9bea413d55c
+  sqlbilling_build_id: '1732088'
