@@ -679,6 +679,15 @@ au.cww.wisegrid.net-catchall:
   - ip: 10.2.124.146
     name: AU2WP-SRDH-612
     port: 80
+  - ip: 10.2.124.19
+    name: AU2WP-SRDH-409
+    port: 80
+  - ip: 10.2.124.27
+    name: AU2WP-SRDH-417
+    port: 80
+  - ip: 10.2.124.213
+    name: AU2WP-SRDH-443
+    port: 80
   user: haproxyadquerier-wisecloud
 blazor.sand.wtg.zone-catchall:
   DC: sand.wtg.zone
