@@ -1,0 +1,6 @@
+4 files changed +411 -0
+
+au2prodinternal1tenantservices.yaml  data\acls             +20  -0
+au2prodinternal1tenantservices.yaml  data\actions          +10  -0
+au2-clustered_instances.yml          data\instances        +5   -0
+au2prodinternal1tenantservices.yaml  data\static_backends  +376 -0
