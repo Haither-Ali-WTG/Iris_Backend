@@ -5,3 +5,13 @@ https_redirect:
   order: 79
   actions:
     - redirect scheme https if star_uat_ad_impexdocs_com !{ ssl_fc }
+
+https_redirect_cchain:
+  description: |-
+    Redirect HTTP to HTTPS for wtg.zone and cchain.local wildcard domains
+  order: 80
+  actions:
+    - redirect scheme https if star_wtg_zone !{ ssl_fc }
+    - redirect scheme https if star_cchain_local !{ ssl_fc }
+    - redirect scheme https if star_test_cchain_local !{ ssl_fc }
+    - redirect scheme https if star_sand_cchain_local !{ ssl_fc }

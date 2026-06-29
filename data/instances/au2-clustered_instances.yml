@@ -958,6 +958,11 @@ clustered_instances:
           cms_resource_group: RG-AU-Prod
         - name: star-uat-ad-impexdocs-com
           cms_resource_group: RG-AU-Prod
+        - name: star-wtg-zone
+          cms_resource_group: RG-AU-Corp
+        - name: star-cchain-local
+        - name: star-test-cchain-local
+        - name: star-sand-cchain-local
       cipher:
         profiles:
           - best_practice_2023

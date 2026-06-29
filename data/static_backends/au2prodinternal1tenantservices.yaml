@@ -82,3 +82,379 @@ alphaoutputreport.uat.ad.impexdocs.com:
     - name: au2a93webw01a
       ip: 10.8.127.31
       port: 80
+
+octopus.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2auloctw01p
+      ip: 10.2.185.14
+      port: 443
+
+jenkins.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2auljenw01p
+      ip: 10.2.185.17
+      port: 443
+
+nagios.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2aulmonw01p
+      ip: 10.2.184.11
+      port: 443
+
+proget.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2aulprow01p
+      ip: 10.2.185.21
+      port: 443
+
+seq.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2aullogw01p
+      ip: 10.2.184.14
+      port: 5341
+
+seq.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  encryption: true
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2auologw01t
+      ip: 10.2.219.11
+      port: 5341
+
+wtg-psatesttoolapi.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auowebw01t
+      ip: 10.2.210.11
+      port: 80
+    - name: au2auowebw02t
+      ip: 10.2.210.12
+      port: 80
+
+wtg-psatesttoolapp.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auowebw01t
+      ip: 10.2.210.11
+      port: 80
+    - name: au2auowebw02t
+      ip: 10.2.210.12
+      port: 80
+
+wtg-edi.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-edi-api.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-public-api-hub-simulator.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-public-api-hub.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-public-api-simulator.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+
+wtg-navissimulator.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-navissimulator-api.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-cdms-simulator.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+wtg-sso.test.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2auoapww01t
+      ip: 10.2.217.41
+      port: 80
+    - name: au2auoapww02t
+      ip: 10.2.217.42
+      port: 80
+
+alpha.certconnect.com.au:
+  clustered_instances: [au2prodinternal1tenantservices]
+  cookie:
+    name: CCT
+  default_server: inter 10000
+  http_health_check:
+    enabled: true
+    method: HEAD
+    http_path: /
+    check_expect: '200'
+  servers:
+    - name: au2cctsqlw01t
+      ip: 10.2.180.14
+      port: 80
+
+wtg-public-api-hub.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-edi.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-edi-api.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-cdms-simulator.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-navissimulator.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-navissimulator-api.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-public-api-hub-simulator.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
+wtg-public-api-simulator.sand.cchain.local:
+  clustered_instances: [au2prodinternal1tenantservices]
+  http_health_check:
+    enabled: true
+    method: GET
+    http_path: /echo
+    check_expect: '200'
+  servers:
+    - name: au2sg4apww01s
+      ip: 10.2.201.41
+      port: 80
+    - name: au2sg4apww02s
+      ip: 10.2.201.42
+      port: 80
+
